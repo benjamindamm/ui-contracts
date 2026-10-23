@@ -32,6 +32,8 @@ Abdeckung und Evidenzstufe folgen [METHODS.md](METHODS.md). Alle Quellenstände 
 
 ## C05
 
+**Fortschreibung vom 24. Oktober 2026:** Die damalige offene Frage ist durch [C133](#c133) im begrenzten Kern eingeordnet. Der folgende Text dokumentiert den früheren Prüfstand.
+
 - **Quelle:** [S02](SOURCES.md), E1; betrifft I02.
 - **Befund:** §10 empfiehlt Eventdokumentation, §7 definiert kein eigenes Event-/Payloadmodell.
 - **Bedeutung/Grenze:** U statt D: Empfehlung ist kein belastbarer Nachweis strukturierter öffentlicher Payloads.
@@ -66,6 +68,8 @@ Abdeckung und Evidenzstufe folgen [METHODS.md](METHODS.md). Alle Quellenstände 
 - **Nächste Prüfung:** Zusätzliche Layoutsprache prüfen; keine eigene Syntax als bestehend ausgeben.
 
 ## C10
+
+**Fortschreibung vom 24. Oktober 2026:** Die damalige offene Frage ist durch [C124](#c124) im begrenzten Kern eingeordnet. Der folgende Text dokumentiert den früheren Prüfstand.
 
 - **Quelle:** [S03](SOURCES.md), E1; betrifft X03.
 - **Befund:** Token References adressieren Werte im eigenen YAML-Baum.
@@ -609,4 +613,563 @@ Abgeschlossen am 24. Oktober 2026; Quellen am 23. Oktober gelesen. Alle 24 zuvor
 - **Befund:** Core-Typen und Ausführungsregeln betreffen Zustände, Events und Actors; sie definieren keine führende Quelle oder Konfliktprüfung fremder Interface-, Visual- und Accessibility-Artefakte.
 - **Bedeutung/Grenze:** N für paketweite fachliche Referenz-/Konfliktprüfung und Ownership. Eigene Typ-/Zustandsregeln sind davon verschieden.
 - **Offene Frage / weiterer Bedarf:** Zusätzliche Paketregeln erst aus nachgewiesenen Integrationsanforderungen ableiten.
+
+
+# Vertiefung ausschließlich Zag
+
+Am 24. Oktober 2026 wurden alle 25 zuvor offenen Zag-Zellen gegen offizielle Dokumentation und ausgewählte gepinnte Definitionen geprüft. 21 wurden eingeordnet; X01, X03, X04 und X06 bleiben U mit konkreter Frage. Die bisherige G02-Bewertung A bleibt unverändert. Untersuchungseinheit ist das Zag-Toolkit: generischer Core, konkrete Combobox und mitgelieferte Popper-/ScrollArea-/LiveRegion-Beiträge werden ausdrücklich unterschieden. Framework-Ausführung wurde exemplarisch im React-Quelltext gelesen; keine Vollprüfung aller Adapter. Kein Praxis-/Laufzeit-/Validatorversuch, keine Implementierung.
+
+## C85
+
+- **Quellen:** [S34](SOURCES.md), [S35](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft G01; **D**.
+- **Befund:** Machine<T> und MachineSchema definieren initialState, states, on, Transitionen und Implementierungen als dokumentierte TypeScript-Konfiguration. createMachine nimmt diese Konfiguration entgegen.
+- **Bedeutung/Grenze:** D für eine maschinenverarbeitbare Beschreibung des Behavior-Beitrags. MachineSchema ist eine TypeScript-Schnittstelle, kein nachgewiesenes JSON Schema. Funktionen in props, initialState, Context und Implementierungen bleiben Code.
+- **Offene Frage / weiterer Bedarf:** Die bestehende G02-Bewertung A bleibt erhalten: frameworkunabhängig bedeutet hier keine sprachneutrale ausführbare Semantik.
+
+## C86
+
+- **Quellen:** [S36](SOURCES.md), [S37](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft I01, I02; **D**.
+- **Befund:** ComboboxProps benennt unter anderem inputValue:string, value:string[], open:boolean und öffentliche Callbacks. onValueChange verweist auf ValueChangeDetails mit value und items, onInputValueChange auf inputValue und reason; weitere Details-Typen beschreiben Auswahl, Hervorhebung und Öffnung.
+- **Bedeutung/Grenze:** D in der Rolle einer typisierten TS-Toolkit-API. Callbackname und strukturierte Payload sind unabhängig vom konkreten Aufrufpunkt deklariert; interne Maschinenereignisse werden nicht mit öffentlichen Callbacks gleichgesetzt. Keine Runtime-Payloadvalidierung und kein plattformneutraler Eventbus folgen daraus.
+- **Offene Frage / weiterer Bedarf:** Komplexe generische Typen und spätere neutrale Abbildung weiterhin getrennt prüfen; keinerlei Callbacks ausgeführt.
+
+## C87
+
+- **Quellen:** [S36](SOURCES.md), [S38](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft I03, X02; **D**.
+- **Befund:** combobox.anatomy.ts benennt input, control, content, positioner, item, label und weitere Teile. ElementIds und combobox.dom.ts bilden id/ids auf explizite Teil-IDs ab. Die Kompositionsdokumentation verlangt eindeutige Maschinen-IDs und beschreibt gemeinsam verwendete Teil-IDs.
+- **Bedeutung/Grenze:** D für benannte UI-Teile und explizite Elementidentität im Webmodell. Mehrfachinstanz-Stabilität ist nur unter korrekter Vergabe eindeutiger IDs beabsichtigt und hier nicht praktisch belegt. IDs sind keine automatisch versionsstabilen domänenübergreifenden URNs.
+- **Offene Frage / weiterer Bedarf:** Custom IDs über ids setzen; manuelles Überschreiben eines DOM-id kann Beziehungen brechen. Rendern fehlender Ziele bleibt gesondert zu prüfen.
+
+## C88
+
+- **Quellen:** [S39](SOURCES.md), [S40](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft V01; **D**.
+- **Befund:** PositioningOptions typisiert gutter, shift und Achsenoffsets als Zahlen mit dokumentierter Abstandssemantik. Die Positionierung schreibt berechnete Dimensionen als CSS-Pixelwerte; ScrollArea liefert benannte Breiten-/Höhengrößen für Corner und Thumb.
+- **Bedeutung/Grenze:** D als eng begrenzter Dimensionsbeitrag des mitgelieferten Web-Positionierungs-/Scrollmodells. Kein allgemeines Design-Tokenformat, kein Typografie-/Farbsystem und keine DTCG-Konformität werden behauptet. Die vorhandene Farb-CSS-Variable allein wäre kein umfassender Typnachweis.
+- **Offene Frage / weiterer Bedarf:** Die Übertragung von Designsystem-Tokens in solche Dimensionsparameter ist nicht geprüft; Layoutsemantik bleibt webgebunden.
+
+## C89
+
+- **Quellen:** [S38](SOURCES.md), [S37](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft V02; **R**.
+- **Befund:** Zag erzeugt dokumentierte data-part/data-scope- und Zustandsattribute wie data-highlighted, data-state und data-disabled. Die Styling-Anleitung zeigt deren Verwendung in separaten CSS-Selektoren mit konkreten Deklarationen.
+- **Bedeutung/Grenze:** R über die dokumentierte Bindung benannter Teile/Zustände an ein externes CSS-Stylemodell. Zag liefert die Zustands-/Teilreferenz, CSS die strukturierten visuellen Werte. Keine eigenen fertigen Stylevarianten oder Tokenrezepte im Maschinenkern behaupten.
+- **Offene Frage / weiterer Bedarf:** Eine neutrale Variantenbibliothek oder die Verbindung mit separat gewähltem DESIGN.md ist damit nicht nachgewiesen; diese offene Paketbindung ist X03.
+
+## C90
+
+- **Quellen:** [S35](SOURCES.md), [S38](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft V03; **N**.
+- **Befund:** Die untersuchten Maschinen-/Konfigurationsmodelle definieren kein Themeverzeichnis mit Auswahl- oder Wertauflösungsregeln. Styling wird ausdrücklich dem Verbraucher überlassen.
+- **Bedeutung/Grenze:** N für eine eigene Theme-/Dark-Mode-Semantik im untersuchten Toolkitkern. Dass die Anwendung externes CSS oder ein Designsystem mit Themes verwenden kann, wird nicht bestritten und nicht als Zag-eigenes Themeformat gezählt.
+- **Offene Frage / weiterer Bedarf:** Andere Stylingwerkzeuge nicht ohne konkreten dokumentierten Beitrag in diese Spalte übernehmen.
+
+## C91
+
+- **Quellen:** [S37](SOURCES.md), [S39](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft V04; **D**.
+- **Befund:** ComboboxProps.positioning referenziert PositioningOptions. placement, gutter/offset und getAnchorElement bestimmen Platzierung, Abstand und Anker. Die Combobox bindet Control beziehungsweise Trigger als Anker und Positioner als Floating-Ziel an getPlacement.
+- **Bedeutung/Grenze:** D für definierte relative Web-Geometrie im gebündelten @zag-js/popper-Beitrag, der Floating UI nutzt. Die Bindung ist konkreter JS/DOM-Code, kein neutraler deklarativer Layoutstandard.
+- **Offene Frage / weiterer Bedarf:** Kollisionen, Umplatzierung, variable Größen und Zielplattformübertragung bleiben praktisch ungeprüft; acht Pixel sind weiterhin nur Beispielwert.
+
+## C92
+
+- **Quellen:** [S39](SOURCES.md), [S37](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft V05; **D**.
+- **Befund:** fitViewport und sizeMiddleware berechnen verfügbare Abmessungen anhand der definierten Boundary und overflowPadding. getPlacementStyles setzt bei fitViewport maxWidth auf --available-width und maxHeight auf --available-height; die Combobox verwendet die Floating-Styles am Positioner.
+- **Bedeutung/Grenze:** D für eine formal bestimmte maximale verfügbare Fläche des Popups im Positionierungsmodell. Keine automatische Begrenzung auf fünf sichtbare Zeilen und kein vollständiges frei parametrierbares Größenregelwerk nachgewiesen.
+- **Offene Frage / weiterer Bedarf:** Eine zusätzliche produktspezifische Zeilen-/Höhenbegrenzung und deren Zusammenspiel mit Content und Overflow müssten separat festgelegt werden.
+
+## C93
+
+- **Quellen:** [S40](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft V06; **D**.
+- **Befund:** ScrollArea ist ein separates Maschinenpaket für einen Overflow-Viewport. getViewportProps setzt overflow:auto; API und Dokumentation definieren horizontale/vertikale Overflowzustände, Scrollposition, scrollTo und scrollToEdge.
+- **Bedeutung/Grenze:** D im Web-ScrollArea-Beitrag; dieser gehört zum Toolkit, nicht zum generischen Zustandskern. Er liefert Scroll-/Overflowsemantik, jedoch weder die maximale Anzahl sichtbarer Zeilen noch eine nachgewiesene automatische Einbettung in ein fremdes Overlay.
+- **Offene Frage / weiterer Bedarf:** Die Einbettung und Verantwortlichkeit zweier Komponenten ist X04; keine ScrollArea-Instanz oder Gerätetests ausgeführt.
+
+## C94
+
+- **Quellen:** [S34](SOURCES.md), [S35](SOURCES.md), [S37](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft B01, B02, B03; **D**.
+- **Befund:** Machine/Transition definieren Zustände, Initialisierung, Ereignisziele, Guards, Actions und Effects; BindableContext sowie Params stellen Ereignis-/Kontextdaten bereit. Die gelesene React-Ausführung wählt die erste erfüllte Transition, führt benannte Implementierungen aus und behandelt Cleanup beim Verlassen. Konkrete Combobox-Guards und Aktionen sind vorhanden.
+- **Bedeutung/Grenze:** D im ausführbaren JS/TS-Maschinenmodell einschließlich seiner Framework-Laufzeitbindung. Semantik ist durch Code definiert, nicht durch freie Namen allein. Die im React-Adapter gelesene Scheduling-/Effektreihenfolge wird nicht ohne Prüfung auf jeden Adapter verallgemeinert.
+- **Offene Frage / weiterer Bedarf:** Kein SCXML-Anspruch: Die Einleitung grenzt sich ausdrücklich von SCXML ab. Die Erwähnung von XState in Paketmetadaten ist kein Kompatibilitätsnachweis. Keine Maschine ausgeführt.
+
+## C95
+
+- **Quellen:** [S37](SOURCES.md), [S35](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft B04; **D**.
+- **Befund:** combobox.connect.ts bindet onFocus/onBlur/onChange und Tastaturereignisse ausdrücklich an Maschinenereignisse wie INPUT.FOCUS und INPUT.ARROW_DOWN. Fokusaktionen adressieren DOM-Elemente über Scope und Teil-IDs; IME-Komposition wird in der Tastaturbehandlung berücksichtigt.
+- **Bedeutung/Grenze:** D für vorhandene Web-Eingabebindungen. connect liefert Props/Handler; normalizeProps und der Framework-Adapter übernehmen deren Form und Lifecycle, der Verbraucher muss die Props korrekt an gerenderte Elemente binden. Der generische Core allein liefert keine fertige UI.
+- **Offene Frage / weiterer Bedarf:** Andere Frameworks und native Plattformen sind nicht praktisch geprüft. Die vorhandene Bindung ist kein sprachneutraler Eingabevertrag.
+
+## C96
+
+- **Quellen:** [S37](SOURCES.md), [S38](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft A01, A02; **D**.
+- **Befund:** Die Combobox-Dokumentation referenziert das WAI-ARIA-APG-Comboboxmuster und beschreibt Tastaturinteraktionen. connect setzt konkrete Rollen und Beziehungen, darunter combobox/listbox/option, aria-expanded, aria-controls, aria-activedescendant und Label-IDs; DOM-Fokus bleibt entsprechend der gewählten Variante geführt.
+- **Bedeutung/Grenze:** D als referenzierter Web-Pattern- und Implementierungsbeitrag. Die Behauptung vollständiger APG-Konformität des Projekts wurde nicht unabhängig praktisch bestätigt. Inhalt, Label und gerenderte Teile bleiben Verantwortung der Integration; benutzerdefinierte ids können fehlende DOM-Ziele referenzieren.
+- **Offene Frage / weiterer Bedarf:** Keine allgemeine Accessibility-Konformität oder native Übertragbarkeit ableiten. Reale Tastatur-/Screenreader-Unterstützung und Produktprofil bleiben separat nachzuweisen.
+
+## C97
+
+- **Quellen:** [S37](SOURCES.md), [S41](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft A03; **D**.
+- **Befund:** Combobox beschreibt Ergebnis-, Leer- und Ladeansagen. translations definiert die Texte/Funktion, loading beeinflusst Nachricht und aria-busy. Die Maschine ruft eine polite Ergebnisregion nach einem definierten Ruheintervall auf; @zag-js/live-region erzeugt aria-live/aria-atomic und role=status oder alert und ersetzt ausstehende Nachrichten.
+- **Bedeutung/Grenze:** D für vorhandene, konkrete Web-Rückmeldungssemantik. Der gelesene Stand verwendet unter anderem 1000 ms für Ergebnisansagen; dies ist Implementierungsstand, keine universelle Produktpflicht. Echte Wahrnehmbarkeit mit assistiver Technik wurde nicht getestet.
+- **Offene Frage / weiterer Bedarf:** Auslöser, Texte und Warteverhalten mit dem Produktprofil abstimmen; native Ansage-APIs und vollständige Screenreader-Konformität bleiben unbewiesen.
+
+## C98
+
+- **Quellen:** [S34](SOURCES.md), [S35](SOURCES.md), [S37](SOURCES.md), [S38](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft X01; **U**.
+- **Befund:** Visuelle Styles können getrennt gepflegt werden, Maschinen und connect sind verschiedene Funktionen. Die mitgelieferten Maschinen-/connect-Dateien verbinden aber Behavior, DOM-Anatomie, Fokus, ARIA und teilweise Geometrie in ausführbarem Code.
+- **Bedeutung/Grenze:** Teilweise Trennung ist positiv belegt; vier unabhängig beschreibbare Originaldomänen ohne erzwungene fremde Fachdefinitionen sind nicht nachgewiesen. Funktions-/Dateigrenzen sind keine vollständigen Domänengrenzen.
+- **Offene Frage / weiterer Bedarf:** Offen: Kann Zag mit vier extern geführten Verträgen konsistent gebunden werden, ohne dass sein gebündeltes Fokus-/ARIA-/Geometrieverhalten zur zweiten führenden Quelle wird?
+
+## C99
+
+- **Quellen:** [S36](SOURCES.md), [S37](SOURCES.md), [S38](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft X03; **U**.
+- **Befund:** Teil-IDs, Scope und Zustandsattribute binden UI-Teile, DOM-ARIA-Ziele und separate CSS-Regeln. Diese Mechanismen sind reale Teilbeiträge und werden nicht als fehlend bewertet.
+- **Bedeutung/Grenze:** Ein gemeinsamer Referenzvertrag zu separat gewählten Interface-, Visual-, Behavior- und Accessibility-Originalartefakten ist damit nicht belegt. Ein CSS-Selektor oder DOM-id allein adressiert noch keinen typisierten Fachmodellknoten.
+- **Offene Frage / weiterer Bedarf:** Offen: Welche explizite Zuordnung erhält Zielart, Versionsstand und Bedeutung zwischen vier externen Verträgen und den vorhandenen Teil-/Zustands-/Callbackbindungen?
+
+## C100
+
+- **Quellen:** [S36](SOURCES.md), [S38](SOURCES.md), [S40](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft X04; **U**.
+- **Befund:** Importierte Maschinen werden mit eigenen props/id über useMachine instanziiert. Die Kompositionsanleitung beschreibt zwei Maschinen mit gemeinsamem Trigger über ids und das Zusammenführen von Props. ScrollArea existiert als eigenständiges Toolkitpaket.
+- **Bedeutung/Grenze:** Starker positiver Befund für echte wiederverwendbare UI-Maschinen und gemeinsame DOM-Teile. Ein deklarativ referenziertes Overlay mit unabhängiger ScrollArea samt Parametern, Ereignissen, eigenem Kontext und geklärten Fokus-/Scrollzuständigkeiten ist noch nicht nachgewiesen.
+- **Offene Frage / weiterer Bedarf:** Offen: Lassen sich genau diese unabhängigen Komponentenbindungen mit Originalmodellen ausdrücken und prüfen, oder bleibt ihre Komposition nur imperativer Anwendungscode? Kein Kompositionsversuch ausgeführt.
+
+## C101
+
+- **Quellen:** [S35](SOURCES.md), [S36](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft X05; **N**.
+- **Befund:** Die untersuchten Machine-/Service-Schnittstellen enthalten keine bibliotheksübergreifende versionierte Contract-Referenz oder deren Resolver. Maschinen werden aus JS-Paketen importiert; Paketmetadaten nennen Versionen und workspace-Abhängigkeiten.
+- **Bedeutung/Grenze:** N für einen eigenen Resolver reproduzierbar versionierter externer Teilmodelle im untersuchten Toolkitvertrag. Paketmanager und Lockdateien können Softwareversionen sichern, ersetzen aber keinen Zag-eigenen Fachmodellresolver.
+- **Offene Frage / weiterer Bedarf:** Keine allgemeine Nichtreproduzierbarkeit des Projekts behaupten; externe Paketverwaltung und Contract-Auflösung ausdrücklich unterscheiden.
+
+## C102
+
+- **Quellen:** [S35](SOURCES.md), [S36](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft X06; **U**.
+- **Befund:** MachineSchema und ComboboxProps sind echte TypeScript-Typen; Paketmetadaten nennen tsc --noEmit. createMachine baut einen Zustandsindex, der unter anderem doppelte Zustands-IDs und ungültige Initialknoten behandelt.
+- **Bedeutung/Grenze:** Positiver Nachweis statischer Typen und einzelner interner Strukturprüfungen, jedoch kein ausreichender Nachweis eines originalen separaten Schemas/Validators für ein eigenständig gespeichertes Domänenartefakt. Die Bezeichnung Schema allein ist kein JSON-Schema-/Runtime-Validierungsnachweis.
+- **Offene Frage / weiterer Bedarf:** Offen: Welches offiziell unterstützte Artefakt mit welchem Originalvalidator lässt sich unabhängig von Implementierungen prüfen, und welche Typ-/Referenz-/Semantikprüfungen umfasst das? Kein Typechecker oder Validator ausgeführt.
+
+## C103
+
+- **Quellen:** [S35](SOURCES.md), [S38](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft X07, X08; **N**.
+- **Befund:** Die definierten Core-Prüfungen betreffen Maschinenzustände; die Kompositionsdokumentation warnt ausdrücklich, dass konfigurierte ids auf nicht gerenderte DOM-Elemente zeigen können. Machine/Service und connect definieren keine führende Quelle oder Priorität zwischen vier externen Fachartefakten.
+- **Bedeutung/Grenze:** N für vollständige paketweite Referenz-/Konfliktprüfung und domänenübergreifende Ownership im untersuchten Umfang. Interne Zustandsprüfungen bleiben vorhanden; Props-Merging und gemeinsame IDs beweisen keine Abweisung widersprüchlicher Accessibility-/Behavior-/Designregeln.
+- **Offene Frage / weiterer Bedarf:** Zusätzliche Paketprüfung und Ownershipregeln wären eigenständige Integrationsarbeit; nicht aus DOM-Zielnamen oder einer erfolgreichen Typprüfung ableiten.
+
+
+# Zentrale Integration: Google DESIGN.md und OpenUI
+
+Stand 24. Oktober 2026. Grundlage sind zwei separate Rechercheberichte; ihre Einzelbewertungen wurden zentral gegen REQUIREMENTS/METHODS geprüft und wichtige Primärdefinitionen erneut gelesen. Beide vollständigen Formatspezifikationen, OpenUI-Interface/Schema-Beschreibung sowie Google Parser-/Modellgrenzen und der Linterpfad wurden abgeglichen. Berichtsinhalte sind keine eigenständigen technischen Primärnachweise. Keine Installation, Schemaausführung, Praxis- oder Laufzeitversuche. N gilt ausschließlich für die definierte Fachsemantik des geprüften Kerns, nicht für beliebige Erweiterungen oder natürlichsprachliche Anweisungen.
+
+## C104
+
+- **Kandidat / Anforderung:** Google DESIGN.md; G01; **D**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Design Tokens / Schema; PARSER, ParsedDesignSystem.
+- **Befund:** Normative visuelle Werte besitzen YAML-Syntax in Frontmatter oder interleavten Codeblöcken; Blöcke werden zu einem Tokenbaum vereinigt.
+- **Bedeutung/Grenze:** D im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Prosa bleibt informell.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C105
+
+- **Kandidat / Anforderung:** Google DESIGN.md; G02; **D**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema / Token References; MODEL, ResolvedValue.
+- **Befund:** Der visuelle Kern verwendet Werte, Einheiten und Pfadreferenzen ohne JS-/React-Funktionen. JS/TS implementiert nur die untersuchten Werkzeuge.
+- **Bedeutung/Grenze:** D im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; CSS-Farb-/Längensemantik bleibt fachliche Bindung, kein Nachweis aller nativen Zieladapter.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C106
+
+- **Kandidat / Anforderung:** Google DESIGN.md; I01; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Components / Component Property Tokens; MODEL, ComponentDef; PARSER, SCHEMA_KEYS.
+- **Befund:** Components beschreibt Style-Property-Tokens, nicht öffentliche Komponentenparameter mit explizitem API-Typvertrag.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; typisierte visuelle Werte erfüllen I01 nicht. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C107
+
+- **Kandidat / Anforderung:** Google DESIGN.md; I02; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema / Components; PARSER, ParsedDesignSystem; MODEL, ComponentDef.
+- **Befund:** Kein öffentliches Event-/Payload-Modell im definierten Token-/Komponentenmodell.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; frei hinzugefügte Schlüssel erhalten keine Eventsemantik. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C108
+
+- **Kandidat / Anforderung:** Google DESIGN.md; I03; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Components / Component Property Tokens; MODEL, ComponentDef.
+- **Befund:** Komponentenbezeichner adressieren Stylegruppen; keine strukturierte Anatomie-/Partsdeklaration innerhalb einer Komponente.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; ein zusätzlicher Stylegruppenname ist noch keine Teilebeziehung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C109
+
+- **Kandidat / Anforderung:** Google DESIGN.md; V01; **D**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema / Token References / Typography / Layout / Shapes; MODEL, ResolvedValue.
+- **Befund:** Farben, Typography, Spacing und Rounded besitzen definierte Werttypen/Einheiten; Referenzen auf zusammengesetzte Typographywerte sind in Components erlaubt.
+- **Bedeutung/Grenze:** D im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; manuelle Quellprüfung, keine vollständige Konformitätsprüfung.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C110
+
+- **Kandidat / Anforderung:** Google DESIGN.md; V02; **D**.
+- **Quellen:** [S42](SOURCES.md), [S44](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Components / Variants; HANDLER, Phase 3 Build components.
+- **Befund:** Benannte Stylegruppen wie button-primary-hover sind ausdrücklich als Varianten mit strukturierten Tokenwerten vorgesehen.
+- **Bedeutung/Grenze:** D im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Auswahl erfolgt laut Spec durch Agenten, keine externe Maschinenzustandsbindung.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C111
+
+- **Kandidat / Anforderung:** Google DESIGN.md; V03; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, vollständiges Schema / Colors / Components; PARSER, SCHEMA_KEYS; MODEL, DesignSystemState.
+- **Befund:** Der definierte Kern hat Paletten und Varianten, aber kein Modus-/Theme-Auswahl- oder Overlayauflösungsmodell.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Farbname dark oder handgeführte zweite Datei erzeugt diese Semantik nicht. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C112
+
+- **Kandidat / Anforderung:** Google DESIGN.md; V04; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Layout / Components / Component Property Tokens; MODEL, ComponentDef.
+- **Befund:** Layoutstrategie wird als Prosa formuliert; Spacing ist ein Wertvorrat ohne Anker/Ziel/Richtung.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Tooltips-Prosa mit positioning definiert kein geometrisches Modell. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C113
+
+- **Kandidat / Anforderung:** Google DESIGN.md; V05; **N**.
+- **Quellen:** [S42](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Layout / Component Property Tokens / Consumer Behavior for Unknown Content.
+- **Befund:** height/width sind Dimensionstokens, aber maxHeight, Flächenbegrenzung oder zeilenbasierte Höhenableitung besitzen im Kern keine definierte Geometriesemantik.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; unbekannter Propertyname wird höchstens akzeptiert, nicht semantisch spezifiziert. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C114
+
+- **Kandidat / Anforderung:** Google DESIGN.md; V06; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema / Component Property Tokens; MODEL, DesignSystemState / ComponentDef.
+- **Befund:** Kein formal definiertes Overflow-/Scrollmodell unter den Token- oder Component-Property-Typen.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Stylingwerte oder Scroll-Prosa sind kein Verhaltensmodell. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C115
+
+- **Kandidat / Anforderung:** Google DESIGN.md; B01; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Components / Variants; MODEL, ComponentDef.
+- **Befund:** Stylevarianten enthalten keine Initialzustände oder ereignisbestimmten Transition-Ziele.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; state in der Stylebeschreibung ist kein Automat. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C116
+
+- **Kandidat / Anforderung:** Google DESIGN.md; B02; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema / Components; PARSER, ParsedDesignSystem; MODEL, DesignSystemState.
+- **Befund:** Keine Guard-Auswertung oder Aktionsausführungssemantik im definierten Modell.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; natürlichsprachliche Do/Don't-Regeln sind keine Guards. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C117
+
+- **Kandidat / Anforderung:** Google DESIGN.md; B03; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema; MODEL, ResolvedValue / DesignSystemState.
+- **Befund:** Keine UX-Kontext-/Ereignisdatenverarbeitung; ResolvedValue beschreibt Designwerte.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; boolesche/numerische Komponentenwerte im Handler schaffen keine Datenlogik. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C118
+
+- **Kandidat / Anforderung:** Google DESIGN.md; B04; **N**.
+- **Quellen:** [S42](SOURCES.md), [S44](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Components / Component Property Tokens; HANDLER, Phase 3.
+- **Befund:** Keine Tastatur-/Fokus-/Eingabezuordnung zu UX-Aktionen; der bekannte Components-Kern verarbeitet Stylewerte.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Agenteninterpretation ersetzt keine Bindungssemantik. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C119
+
+- **Kandidat / Anforderung:** Google DESIGN.md; A01; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema / Components / Do's and Don'ts; MODEL, ComponentDef.
+- **Befund:** Kein Modell zugänglicher Rollen, Namen oder Zielbeziehungen.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Kontrastempfehlung und -prüfung tragen nicht Rollen-/Beziehungssemantik bei. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C120
+
+- **Kandidat / Anforderung:** Google DESIGN.md; A02; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, sämtliche Sections insbesondere Components / Do's and Don'ts; PARSER, SCHEMA_KEYS.
+- **Befund:** Keine referenzierbaren Fokus-/Tastaturinteraktionsmuster im Kern.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; zusätzliche freie Guidelines wären informell. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C121
+
+- **Kandidat / Anforderung:** Google DESIGN.md; A03; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema / Components; MODEL, DesignSystemState.
+- **Befund:** Keine Live-Region-/Announcement- oder andere zugängliche Aktualisierungssemantik.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; WCAG-Kontrastprüfung ist anderer Teilbereich. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C122
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X01; **U**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Sections / Omitted / Consumer Behavior for Unknown Content; PARSER, ParsedDesignSystem.
+- **Befund:** Visual kann separat geführt werden; zulässige ausgelassene Sections erzwingen keine UX-/API-Daten. Vollständige Bindung vier unabhängig geführter Originalmodelle ist hiermit noch nicht bewiesen.
+- **Bedeutung/Grenze:** U im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; offen: externes Bindungsmodell ohne fachliche Umdefinition und ohne stillen Schemaumbau festlegen.
+- **Offene Frage / weiterer Bedarf:** Welche externe Bindung verbindet vier unveränderte Originalmodelle ohne fachliche Umdefinition und doppelte führende Quellen?
+
+## C123
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X02; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Token References / Components; MODEL, symbolTable / ComponentDef.
+- **Befund:** Tokenpfade und Stylegruppenschlüssel identifizieren Werte/Definitionen, keine UI-Elemente oder Bindungs-IDs.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; keine Instanzidentität im begrenzten Modell. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C124
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X03; **N**.
+- **Quellen:** [S42](SOURCES.md), [S44](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Token References; HANDLER, symbolTable / Phase 3.
+- **Befund:** Der dokumentierte Referenzmechanismus zielt ausdrücklich auf einen Wert im selben YAML-Baum. Keine Adressierung separat geführter API-/Behavior-/A11y-Modelle.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; keine Aussage über eigene Integrationsschicht oder proprietäre Erweiterungen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C125
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X04; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md), [S44](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Components; MODEL, ComponentDef; HANDLER, Phase 3.
+- **Befund:** Components sind Property-Maps, ohne Definition/Use, Instanzkontext, Parameter oder Lebenszyklus für Unterkomponenten.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Tokenwiederverwendung ist keine Komponenteninstanziierung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C126
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X05; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md), [S44](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema / Token References; PARSER, version / SCHEMA_KEYS; HANDLER, symbolTable.
+- **Befund:** Lokale YAML-Pfade definieren keine externe Quelle oder reproduzierbare Versionsauflösung; version bezeichnet Dokumentformat.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Repository-Pinning durch uns ist keine im Format vorhandene Abhängigkeitssemantik. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C127
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X06; **U**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md), [S44](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema; PARSER, ParserInputSchema / ParsedDesignSystem; MODEL, VALIDATION HELPERS; LINT, lint; API, lint export.
+- **Befund:** Offizieller Original-Linter kann das eigenständige DESIGN.md-Artefakt verarbeiten. Ein unabhängig veröffentlichtes vollständiges Originalschema ist durch gelesene Pseudostruktur, TS-Interfaces und Zod-Eingabeschema jedoch nicht nachgewiesen.
+- **Bedeutung/Grenze:** U im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; offen: vollständiger Originalschema-Vertrag/Export und Umfang der Schema- gegenüber programmatischer Validierung. Kein N aus bloß fehlendem Schemafund.
+- **Offene Frage / weiterer Bedarf:** Welcher vollständige eigenständige Originalschema-Vertrag/Export besteht, und welche Regeln prüfen Schema und programmatischer Linter jeweils?
+
+## C128
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X07; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md), [S44](SOURCES.md); E2. Fundstelle im Primärquellenregister: README, Linting Rules; HANDLER, buildCollisionGuard / resolveReference; MODEL, DesignSystemState; LINT, lint.
+- **Befund:** Original-Linter prüft interne Tokenziele, Typwerte und einige Kollisionen, führt aber weder fremde Domänenmodelle noch UI-Instanzkonflikte zusammen.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; interne gebrochene Tokenreferenzen sind positiver Teilbeitrag, keine Paketprüfung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C129
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X08; **N**.
+- **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Einleitung Tokens normative / prose context; PARSER, SCHEMA_KEYS; MODEL, DesignSystemState.
+- **Befund:** Lokal gilt ausdrücklich Tokenwert vor Prosa; darüber hinaus existiert im definierten Modell keine Ownership-/Änderungsnachverfolgung zwischen vier Originalformaten und Integration.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; lokale Präzedenz erfüllt die gesamte paketweite Anforderung nicht. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
+
+## C130
+
+- **Kandidat / Anforderung:** OpenUI; G01; **D**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7, §8; F gesamtes Exportobjekt.
+- **Befund:** Komponenten und Props besitzen dokumentierte YAML-/JSON-Datensyntax.
+- **Bedeutung/Grenze:** D im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Maschinenlesbarkeit ist kein Beleg eines ausführbaren Validators. Bisherige D-Bewertung bleibt.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C131
+
+- **Kandidat / Anforderung:** OpenUI; G02; **D**.
+- **Quellen:** [S45](SOURCES.md); E1. Fundstelle im Primärquellenregister: S §6 Framework Agnosticism, §7–9.
+- **Befund:** Der begrenzte Props-Kern enthält Typmetadaten, Default, Enum und Required, ohne ausführbare React-/JS-Funktionen zu verlangen; YAML und JSON sind explizit erlaubt.
+- **Bedeutung/Grenze:** D im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Gilt für diesen fachlichen Kern, nicht universelle komplexe Typsemantik oder Codebeispiele; Zielcodeadapter unbewiesen.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C132
+
+- **Kandidat / Anforderung:** OpenUI; I01; **D**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7 Prop-Tabelle; T `components.*.props`.
+- **Befund:** Benannte öffentliche Props mit `type`, `description`, `default`, `enum`, `required` sind ausdrücklich beschrieben.
+- **Bedeutung/Grenze:** D im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). T weicht ab: verlangt u.a. `group` und `license`, kennt kein enum/required und beschränkt default. Komplexe Typdurchsetzung nicht nachgewiesen. Bisherige D-Bewertung bleibt.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C133
+
+- **Kandidat / Anforderung:** OpenUI; I02; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7, §10 Punkt Document Events; T und F vollständige Komponentenfelder.
+- **Befund:** Im vollständig definierten Komponenten-/Propmodell fehlt eine eigene Zuordnung öffentlicher Eventnamen zu strukturierten Payloadfeldern. §10 empfiehlt lediglich Eventdokumentation.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). N nur für diese definierte Kernsemantik; freie Callback-Typstrings oder Prosa ersetzen keinen Payloadvertrag. Frühere U-Frage nach einem Modell im Repo jetzt gegen T/F abgeglichen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C134
+
+- **Kandidat / Anforderung:** OpenUI; I03; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7 Komponentenfelder; T/F `components` und `props`.
+- **Befund:** Der Kern benennt Komponenten- und Propnamen, aber keine Anatomie-/Part-/Slotstruktur innerhalb einer Komponente.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Mehrere separat benannte Komponenten sind noch keine benannten Bestandteile oder anatomischen Beziehungen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C135
+
+- **Kandidat / Anforderung:** OpenUI; V01; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7 Prop-Tabelle; F vollständige Prop-Felder.
+- **Befund:** Primitive Prop-Typen definieren keine typisierte Farb-, Dimensions-, Einheiten- oder Typografiesemantik.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Ein Prop namens color mit type string wäre zulässige Beschreibung, aber kein im Standard festgelegter Designwerttyp. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C136
+
+- **Kandidat / Anforderung:** OpenUI; V02; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §9 variant/size; §7 vollständige Felder; F.
+- **Befund:** Das Variant-Enum im Beispiel benennt Ausprägungen, verknüpft sie jedoch weder mit strukturierten Styles noch Tokenreferenzen.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Bietet API-Auswahlmetadaten, keine eigene Stylezuordnung pro Zustand. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C137
+
+- **Kandidat / Anforderung:** OpenUI; V03; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7–9; F vollständiges Modell.
+- **Befund:** Weder Theme-/Modeauswahl noch Werteauflösungsregeln sind im Kern definiert.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Website-eigene dark-CSS-Klassen und mögliche library Props sind keine Semantik dieses Austauschformats. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C138
+
+- **Kandidat / Anforderung:** OpenUI; V04; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7; F vollständige Komponenten-/Propfelder.
+- **Befund:** Kein Anker, Bezugsziel, Positionsmodell oder geometrisch definierter Abstand ist vorgesehen.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Freie Props dürfen Beziehungen beschreiben, deren Bedeutung muss jedoch zusätzlich festgelegt werden. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C139
+
+- **Kandidat / Anforderung:** OpenUI; V05; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7; F vollständiges Modell.
+- **Befund:** Kein formales Flächen-/Maximalhöhenmodell mit geometrischer Semantik ist definiert.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). maxHeight als beliebiger Propname wäre nicht standardisierte Layoutbedeutung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C140
+
+- **Kandidat / Anforderung:** OpenUI; V06; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7; F vollständiges Modell.
+- **Befund:** Kein Overflow-/Scrollmodell ist im Contractkern definiert.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Die ScrollArea-Dependency der Website und deren Preview-CSS sind hiervon getrennt. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C141
+
+- **Kandidat / Anforderung:** OpenUI; B01; **N**.
+- **Quellen:** [S45](SOURCES.md); E1. Fundstelle im Primärquellenregister: S §11 Punkt Describing Component State and Lifecycle; §7.
+- **Befund:** Zustände, Lifecycle und komplexes State-Management sind explizit zukünftige Erweiterungen; kein Zustands-/Transitionsmodell im aktuellen Kern.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Bestehende N-Bewertung bestätigt; keine Aussage zu späteren Entwürfen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C142
+
+- **Kandidat / Anforderung:** OpenUI; B02; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7, §11; F.
+- **Befund:** Keine Guard-Auswertung oder Aktionsausführung im Kern; State-/Lifecycle-Unterstützung ist zukünftige Arbeit.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Prop-/Callback-Typstrings legen keine Auswertungssemantik fest. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C143
+
+- **Kandidat / Anforderung:** OpenUI; B03; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7, §11; T/F.
+- **Befund:** Kein Maschinenkontext, kein formal verarbeiteter Eventdatenraum und keine Datenverarbeitungssemantik definiert.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Defaultwerte sind öffentliche Prop-Metadaten, kein veränderbarer Verhaltenskontext. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C144
+
+- **Kandidat / Anforderung:** OpenUI; B04; **N**.
+- **Quellen:** [S45](SOURCES.md); E1. Fundstelle im Primärquellenregister: S §7, §10 Document Events, §11.
+- **Befund:** Keine formale Zuordnung von Taste, Fokus oder Eingabe zu UX-Aktion/Maschinenereignis definiert.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Eventdokumentation ist Empfehlung; ein konkreter vorhandener Bindingmechanismus für A ist nicht belegt. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C145
+
+- **Kandidat / Anforderung:** OpenUI; A01; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §10 Punkt Emphasize Accessibility; §7; F.
+- **Befund:** Accessibility wird empfohlen, aber Rollen, Namen und zielgerichtete ARIA-/Native-Beziehungen erhalten im Kern kein eigenes Begriffs- oder Relationsmodell.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Accessibility-Properties können als gewöhnliche Props dokumentiert werden; ihre fremde Semantik ist kein dokumentierter normativer Referenzmechanismus (daher kein R). Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C146
+
+- **Kandidat / Anforderung:** OpenUI; A02; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §10 Emphasize Accessibility; §7; F.
+- **Befund:** Kein referenzierbares Fokus-/Tastaturmuster im spezifizierten Datenmodell.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Prosa-Guidelines bleiben möglich, aber kein formal adressierbares Bedienmuster gemäß Kriterium. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C147
+
+- **Kandidat / Anforderung:** OpenUI; A03; **N**.
+- **Quellen:** [S45](SOURCES.md); E1. Fundstelle im Primärquellenregister: S §7, §10 Emphasize Accessibility, §11 Complex UI Patterns.
+- **Befund:** Kein definiertes Modell für zugängliche dynamische Rückmeldungen oder deren Auslöser/Inhalte.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). aria-live als beliebiger Propname reicht nicht als eigene Standardspezifikation dynamischer Rückmeldung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C148
+
+- **Kandidat / Anforderung:** OpenUI; X01; **U**.
+- **Quellen:** [S45](SOURCES.md); E1. Fundstelle im Primärquellenregister: S §5 selbstenthaltende Datei, §7–8.
+- **Befund:** Der Entwurf kann den einfachen Interfacebeitrag separat liefern; er beschreibt jedoch keine Integration vier unabhängig geführter Fachartefakte.
+- **Bedeutung/Grenze:** U im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Offen: Kann ein Interfaceartefakt unverändert mit drei anderen Originalartefakten und einer expliziten Integrationsschicht verbunden werden, ohne Informationen doppelt zu führen? Kein Paketversuch durchgeführt.
+- **Offene Frage / weiterer Bedarf:** Kann das Interfaceartefakt unverändert mit drei Originaldomänen und einer expliziten Integrationsschicht verbunden werden, ohne Doppelpflege?
+
+## C149
+
+- **Kandidat / Anforderung:** OpenUI; X02; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7; T/F `components` und `props`.
+- **Befund:** Komponenten-/Propnamen sind Definitionsschlüssel; keine Elementinstanz-ID oder domänenübergreifend bindbare Instanzidentität.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Ein Komponentenname ist keine stabile Identität von Input und Overlay in mehreren Autocomplete-Instanzen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C150
+
+- **Kandidat / Anforderung:** OpenUI; X03; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7; F vollständige Felder.
+- **Befund:** Kein referenztypisiertes Feld oder Auflösungsmodell für separat beschriebene Domänen definiert.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). package nennt optional ein Modul, aber kein Visual-/Behavior-/Accessibility-Ziel mit semantischer Zuordnung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C151
+
+- **Kandidat / Anforderung:** OpenUI; X04; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7 Komponentenmodell, §9 Beispiel; T/F.
+- **Befund:** Collection unabhängiger Komponentendefinitionen, jedoch keine Instanziierungsrelation, eigene Parameterbindung oder Instanzkontexte.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). JSX im example ist ein undurchsichtiger String; Definitionen wie Button oder ScrollArea beweisen keine Contract-Komposition. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C152
+
+- **Kandidat / Anforderung:** OpenUI; X05; **N**.
+- **Quellen:** [S45](SOURCES.md); E1. Fundstelle im Primärquellenregister: S §7 Top-Level und package; §8 Discovery.
+- **Befund:** `version` bezeichnet die Bibliothek/den Komponentensatz; `package` bezeichnet ein optionales Modul. Keine externe versionierte Teilmodellreferenz mit definierter Auflösung.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Bibliotheksversion allein ist keine Bindung aller referenzierten Inhalte. Website-package-lock nicht dem Contract zurechnen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C153
+
+- **Kandidat / Anforderung:** OpenUI; X06; **U**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md), [S47](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §12 Validate; T vollständiges Interface; F vollständiges Schemaobjekt; Q Scripts/Dependencies; R.
+- **Befund:** Eigene Interfacebeschreibung wäre separat führbar, doch kein kanonisches ausführbares Originalschema/Validator nachgewiesen. T und F sind unterschiedliche Definitionen.
+- **Bedeutung/Grenze:** U im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Offen: Welches unveränderte offizielle Schema und welches Werkzeug validieren draft-01-Dokumente vollständig? Erst dessen Identität/Stand klären, dann gültige/ungültige Eingaben testen.
+- **Offene Frage / weiterer Bedarf:** Welches kanonische Originalschema und welches verfügbare Werkzeug validieren draft-01 vollständig trotz der dokumentierten Definitionsabweichungen?
+
+## C154
+
+- **Kandidat / Anforderung:** OpenUI; X07; **N**.
+- **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §7–8, §10–12; F vollständiges Modell.
+- **Befund:** Keine Paket-/Referenz-/Instanz- oder Konfliktprüfregeln zwischen vier Domänen definiert.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Die allgemeine Aufforderung zur Schema-Konformität ist keine domänenübergreifende Prüfung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+## C155
+
+- **Kandidat / Anforderung:** OpenUI; X08; **N**.
+- **Quellen:** [S45](SOURCES.md); E1. Fundstelle im Primärquellenregister: S §3 Ziel Efficiency, §5 selbstenthaltende Datei, §10 Keep Updated; §7.
+- **Befund:** Zentrale Referenz ist ein Ziel; §10 verlangt Aktualität. Der Kern definiert jedoch weder Feld-Ownership noch Vorrang-/Synchronisationsregeln zwischen Originalformaten und Integration.
+- **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Single-source-Ziel allein erfüllt keine dokumentierte Zuständigkeits-/Änderungssemantik für vier Fachquellen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
+- **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
 

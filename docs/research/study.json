@@ -234,48 +234,6 @@
     },
     {
       "requirement": "G01",
-      "candidate": "OpenUI",
-      "coverage": "D",
-      "claim": "C04"
-    },
-    {
-      "requirement": "I01",
-      "candidate": "OpenUI",
-      "coverage": "D",
-      "claim": "C04"
-    },
-    {
-      "requirement": "B01",
-      "candidate": "OpenUI",
-      "coverage": "N",
-      "claim": "C06"
-    },
-    {
-      "requirement": "G01",
-      "candidate": "Google DESIGN.md",
-      "coverage": "D",
-      "claim": "C07"
-    },
-    {
-      "requirement": "V01",
-      "candidate": "Google DESIGN.md",
-      "coverage": "D",
-      "claim": "C07"
-    },
-    {
-      "requirement": "V02",
-      "candidate": "Google DESIGN.md",
-      "coverage": "D",
-      "claim": "C08"
-    },
-    {
-      "requirement": "V04",
-      "candidate": "Google DESIGN.md",
-      "coverage": "N",
-      "claim": "C09"
-    },
-    {
-      "requirement": "G01",
       "candidate": "AgentsORG",
       "coverage": "D",
       "claim": "C11"
@@ -1023,6 +981,468 @@
       "candidate": "XState",
       "coverage": "N",
       "claim": "C84"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C85"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C86"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C86"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C87"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C87"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C88"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "Zag",
+      "coverage": "R",
+      "claim": "C89"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "Zag",
+      "coverage": "N",
+      "claim": "C90"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C91"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C92"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C93"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C94"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C94"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C94"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C95"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C96"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C96"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "Zag",
+      "coverage": "D",
+      "claim": "C97"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "Zag",
+      "coverage": "U",
+      "claim": "C98"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "Zag",
+      "coverage": "U",
+      "claim": "C99"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "Zag",
+      "coverage": "U",
+      "claim": "C100"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "Zag",
+      "coverage": "N",
+      "claim": "C101"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "Zag",
+      "coverage": "U",
+      "claim": "C102"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "Zag",
+      "coverage": "N",
+      "claim": "C103"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "Zag",
+      "coverage": "N",
+      "claim": "C103"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "D",
+      "claim": "C104"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "Google DESIGN.md",
+      "coverage": "D",
+      "claim": "C105"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C106"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C107"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C108"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "D",
+      "claim": "C109"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "Google DESIGN.md",
+      "coverage": "D",
+      "claim": "C110"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C111"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C112"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C113"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C114"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C115"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C116"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C117"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C118"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C119"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C120"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C121"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "U",
+      "claim": "C122"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C123"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C124"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C125"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C126"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "Google DESIGN.md",
+      "coverage": "U",
+      "claim": "C127"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C128"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C129"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "OpenUI",
+      "coverage": "D",
+      "claim": "C130"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "OpenUI",
+      "coverage": "D",
+      "claim": "C131"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "OpenUI",
+      "coverage": "D",
+      "claim": "C132"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C133"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C134"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C135"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C136"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C137"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C138"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C139"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C140"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C141"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C142"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C143"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C144"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C145"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C146"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C147"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "OpenUI",
+      "coverage": "U",
+      "claim": "C148"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C149"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C150"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C151"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C152"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "OpenUI",
+      "coverage": "U",
+      "claim": "C153"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C154"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C155"
     }
   ],
   "claims": [
@@ -1081,7 +1501,8 @@
       ],
       "finding": "§10 empfiehlt Eventdokumentation, §7 definiert kein eigenes Event-/Payloadmodell.",
       "interpretation": "U statt D: Empfehlung ist kein belastbarer Nachweis strukturierter öffentlicher Payloads.",
-      "next_check": "Repository/Schema nach Eventmodell prüfen."
+      "next_check": "Repository/Schema nach Eventmodell prüfen.",
+      "superseded_by": "C133"
     },
     {
       "id": "C06",
@@ -1137,7 +1558,8 @@
       ],
       "finding": "Token References adressieren Werte im eigenen YAML-Baum.",
       "interpretation": "U für vierformatige Domänenreferenzen: vorhandene interne Tokenverweise belegen dies nicht.",
-      "next_check": "Externe Referenzen und deren Prüfung separat untersuchen."
+      "next_check": "Externe Referenzen und deren Prüfung separat untersuchen.",
+      "superseded_by": "C124"
     },
     {
       "id": "C11",
@@ -2166,6 +2588,998 @@
       "finding": "Core-Typen und Ausführungsregeln betreffen Zustände, Events und Actors; sie definieren keine führende Quelle oder Konfliktprüfung fremder Interface-, Visual- und Accessibility-Artefakte.",
       "interpretation": "N für paketweite fachliche Referenz-/Konfliktprüfung und Ownership. Eigene Typ-/Zustandsregeln sind davon verschieden.",
       "next_check": "Zusätzliche Paketregeln erst aus nachgewiesenen Integrationsanforderungen ableiten."
+    },
+    {
+      "id": "C85",
+      "source": "S34",
+      "additional_sources": [
+        "S35"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "G01"
+      ],
+      "finding": "Machine<T> und MachineSchema definieren initialState, states, on, Transitionen und Implementierungen als dokumentierte TypeScript-Konfiguration. createMachine nimmt diese Konfiguration entgegen.",
+      "interpretation": "D für eine maschinenverarbeitbare Beschreibung des Behavior-Beitrags. MachineSchema ist eine TypeScript-Schnittstelle, kein nachgewiesenes JSON Schema. Funktionen in props, initialState, Context und Implementierungen bleiben Code.",
+      "next_check": "Die bestehende G02-Bewertung A bleibt erhalten: frameworkunabhängig bedeutet hier keine sprachneutrale ausführbare Semantik."
+    },
+    {
+      "id": "C86",
+      "source": "S36",
+      "additional_sources": [
+        "S37"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I01",
+        "I02"
+      ],
+      "finding": "ComboboxProps benennt unter anderem inputValue:string, value:string[], open:boolean und öffentliche Callbacks. onValueChange verweist auf ValueChangeDetails mit value und items, onInputValueChange auf inputValue und reason; weitere Details-Typen beschreiben Auswahl, Hervorhebung und Öffnung.",
+      "interpretation": "D in der Rolle einer typisierten TS-Toolkit-API. Callbackname und strukturierte Payload sind unabhängig vom konkreten Aufrufpunkt deklariert; interne Maschinenereignisse werden nicht mit öffentlichen Callbacks gleichgesetzt. Keine Runtime-Payloadvalidierung und kein plattformneutraler Eventbus folgen daraus.",
+      "next_check": "Komplexe generische Typen und spätere neutrale Abbildung weiterhin getrennt prüfen; keinerlei Callbacks ausgeführt."
+    },
+    {
+      "id": "C87",
+      "source": "S36",
+      "additional_sources": [
+        "S38"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I03",
+        "X02"
+      ],
+      "finding": "combobox.anatomy.ts benennt input, control, content, positioner, item, label und weitere Teile. ElementIds und combobox.dom.ts bilden id/ids auf explizite Teil-IDs ab. Die Kompositionsdokumentation verlangt eindeutige Maschinen-IDs und beschreibt gemeinsam verwendete Teil-IDs.",
+      "interpretation": "D für benannte UI-Teile und explizite Elementidentität im Webmodell. Mehrfachinstanz-Stabilität ist nur unter korrekter Vergabe eindeutiger IDs beabsichtigt und hier nicht praktisch belegt. IDs sind keine automatisch versionsstabilen domänenübergreifenden URNs.",
+      "next_check": "Custom IDs über ids setzen; manuelles Überschreiben eines DOM-id kann Beziehungen brechen. Rendern fehlender Ziele bleibt gesondert zu prüfen."
+    },
+    {
+      "id": "C88",
+      "source": "S39",
+      "additional_sources": [
+        "S40"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V01"
+      ],
+      "finding": "PositioningOptions typisiert gutter, shift und Achsenoffsets als Zahlen mit dokumentierter Abstandssemantik. Die Positionierung schreibt berechnete Dimensionen als CSS-Pixelwerte; ScrollArea liefert benannte Breiten-/Höhengrößen für Corner und Thumb.",
+      "interpretation": "D als eng begrenzter Dimensionsbeitrag des mitgelieferten Web-Positionierungs-/Scrollmodells. Kein allgemeines Design-Tokenformat, kein Typografie-/Farbsystem und keine DTCG-Konformität werden behauptet. Die vorhandene Farb-CSS-Variable allein wäre kein umfassender Typnachweis.",
+      "next_check": "Die Übertragung von Designsystem-Tokens in solche Dimensionsparameter ist nicht geprüft; Layoutsemantik bleibt webgebunden."
+    },
+    {
+      "id": "C89",
+      "source": "S38",
+      "additional_sources": [
+        "S37"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V02"
+      ],
+      "finding": "Zag erzeugt dokumentierte data-part/data-scope- und Zustandsattribute wie data-highlighted, data-state und data-disabled. Die Styling-Anleitung zeigt deren Verwendung in separaten CSS-Selektoren mit konkreten Deklarationen.",
+      "interpretation": "R über die dokumentierte Bindung benannter Teile/Zustände an ein externes CSS-Stylemodell. Zag liefert die Zustands-/Teilreferenz, CSS die strukturierten visuellen Werte. Keine eigenen fertigen Stylevarianten oder Tokenrezepte im Maschinenkern behaupten.",
+      "next_check": "Eine neutrale Variantenbibliothek oder die Verbindung mit separat gewähltem DESIGN.md ist damit nicht nachgewiesen; diese offene Paketbindung ist X03."
+    },
+    {
+      "id": "C90",
+      "source": "S35",
+      "additional_sources": [
+        "S38"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V03"
+      ],
+      "finding": "Die untersuchten Maschinen-/Konfigurationsmodelle definieren kein Themeverzeichnis mit Auswahl- oder Wertauflösungsregeln. Styling wird ausdrücklich dem Verbraucher überlassen.",
+      "interpretation": "N für eine eigene Theme-/Dark-Mode-Semantik im untersuchten Toolkitkern. Dass die Anwendung externes CSS oder ein Designsystem mit Themes verwenden kann, wird nicht bestritten und nicht als Zag-eigenes Themeformat gezählt.",
+      "next_check": "Andere Stylingwerkzeuge nicht ohne konkreten dokumentierten Beitrag in diese Spalte übernehmen."
+    },
+    {
+      "id": "C91",
+      "source": "S37",
+      "additional_sources": [
+        "S39"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V04"
+      ],
+      "finding": "ComboboxProps.positioning referenziert PositioningOptions. placement, gutter/offset und getAnchorElement bestimmen Platzierung, Abstand und Anker. Die Combobox bindet Control beziehungsweise Trigger als Anker und Positioner als Floating-Ziel an getPlacement.",
+      "interpretation": "D für definierte relative Web-Geometrie im gebündelten @zag-js/popper-Beitrag, der Floating UI nutzt. Die Bindung ist konkreter JS/DOM-Code, kein neutraler deklarativer Layoutstandard.",
+      "next_check": "Kollisionen, Umplatzierung, variable Größen und Zielplattformübertragung bleiben praktisch ungeprüft; acht Pixel sind weiterhin nur Beispielwert."
+    },
+    {
+      "id": "C92",
+      "source": "S39",
+      "additional_sources": [
+        "S37"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V05"
+      ],
+      "finding": "fitViewport und sizeMiddleware berechnen verfügbare Abmessungen anhand der definierten Boundary und overflowPadding. getPlacementStyles setzt bei fitViewport maxWidth auf --available-width und maxHeight auf --available-height; die Combobox verwendet die Floating-Styles am Positioner.",
+      "interpretation": "D für eine formal bestimmte maximale verfügbare Fläche des Popups im Positionierungsmodell. Keine automatische Begrenzung auf fünf sichtbare Zeilen und kein vollständiges frei parametrierbares Größenregelwerk nachgewiesen.",
+      "next_check": "Eine zusätzliche produktspezifische Zeilen-/Höhenbegrenzung und deren Zusammenspiel mit Content und Overflow müssten separat festgelegt werden."
+    },
+    {
+      "id": "C93",
+      "source": "S40",
+      "additional_sources": [],
+      "evidence": "E2",
+      "rows": [
+        "V06"
+      ],
+      "finding": "ScrollArea ist ein separates Maschinenpaket für einen Overflow-Viewport. getViewportProps setzt overflow:auto; API und Dokumentation definieren horizontale/vertikale Overflowzustände, Scrollposition, scrollTo und scrollToEdge.",
+      "interpretation": "D im Web-ScrollArea-Beitrag; dieser gehört zum Toolkit, nicht zum generischen Zustandskern. Er liefert Scroll-/Overflowsemantik, jedoch weder die maximale Anzahl sichtbarer Zeilen noch eine nachgewiesene automatische Einbettung in ein fremdes Overlay.",
+      "next_check": "Die Einbettung und Verantwortlichkeit zweier Komponenten ist X04; keine ScrollArea-Instanz oder Gerätetests ausgeführt."
+    },
+    {
+      "id": "C94",
+      "source": "S34",
+      "additional_sources": [
+        "S35",
+        "S37"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "finding": "Machine/Transition definieren Zustände, Initialisierung, Ereignisziele, Guards, Actions und Effects; BindableContext sowie Params stellen Ereignis-/Kontextdaten bereit. Die gelesene React-Ausführung wählt die erste erfüllte Transition, führt benannte Implementierungen aus und behandelt Cleanup beim Verlassen. Konkrete Combobox-Guards und Aktionen sind vorhanden.",
+      "interpretation": "D im ausführbaren JS/TS-Maschinenmodell einschließlich seiner Framework-Laufzeitbindung. Semantik ist durch Code definiert, nicht durch freie Namen allein. Die im React-Adapter gelesene Scheduling-/Effektreihenfolge wird nicht ohne Prüfung auf jeden Adapter verallgemeinert.",
+      "next_check": "Kein SCXML-Anspruch: Die Einleitung grenzt sich ausdrücklich von SCXML ab. Die Erwähnung von XState in Paketmetadaten ist kein Kompatibilitätsnachweis. Keine Maschine ausgeführt."
+    },
+    {
+      "id": "C95",
+      "source": "S37",
+      "additional_sources": [
+        "S35"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B04"
+      ],
+      "finding": "combobox.connect.ts bindet onFocus/onBlur/onChange und Tastaturereignisse ausdrücklich an Maschinenereignisse wie INPUT.FOCUS und INPUT.ARROW_DOWN. Fokusaktionen adressieren DOM-Elemente über Scope und Teil-IDs; IME-Komposition wird in der Tastaturbehandlung berücksichtigt.",
+      "interpretation": "D für vorhandene Web-Eingabebindungen. connect liefert Props/Handler; normalizeProps und der Framework-Adapter übernehmen deren Form und Lifecycle, der Verbraucher muss die Props korrekt an gerenderte Elemente binden. Der generische Core allein liefert keine fertige UI.",
+      "next_check": "Andere Frameworks und native Plattformen sind nicht praktisch geprüft. Die vorhandene Bindung ist kein sprachneutraler Eingabevertrag."
+    },
+    {
+      "id": "C96",
+      "source": "S37",
+      "additional_sources": [
+        "S38"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A01",
+        "A02"
+      ],
+      "finding": "Die Combobox-Dokumentation referenziert das WAI-ARIA-APG-Comboboxmuster und beschreibt Tastaturinteraktionen. connect setzt konkrete Rollen und Beziehungen, darunter combobox/listbox/option, aria-expanded, aria-controls, aria-activedescendant und Label-IDs; DOM-Fokus bleibt entsprechend der gewählten Variante geführt.",
+      "interpretation": "D als referenzierter Web-Pattern- und Implementierungsbeitrag. Die Behauptung vollständiger APG-Konformität des Projekts wurde nicht unabhängig praktisch bestätigt. Inhalt, Label und gerenderte Teile bleiben Verantwortung der Integration; benutzerdefinierte ids können fehlende DOM-Ziele referenzieren.",
+      "next_check": "Keine allgemeine Accessibility-Konformität oder native Übertragbarkeit ableiten. Reale Tastatur-/Screenreader-Unterstützung und Produktprofil bleiben separat nachzuweisen."
+    },
+    {
+      "id": "C97",
+      "source": "S37",
+      "additional_sources": [
+        "S41"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A03"
+      ],
+      "finding": "Combobox beschreibt Ergebnis-, Leer- und Ladeansagen. translations definiert die Texte/Funktion, loading beeinflusst Nachricht und aria-busy. Die Maschine ruft eine polite Ergebnisregion nach einem definierten Ruheintervall auf; @zag-js/live-region erzeugt aria-live/aria-atomic und role=status oder alert und ersetzt ausstehende Nachrichten.",
+      "interpretation": "D für vorhandene, konkrete Web-Rückmeldungssemantik. Der gelesene Stand verwendet unter anderem 1000 ms für Ergebnisansagen; dies ist Implementierungsstand, keine universelle Produktpflicht. Echte Wahrnehmbarkeit mit assistiver Technik wurde nicht getestet.",
+      "next_check": "Auslöser, Texte und Warteverhalten mit dem Produktprofil abstimmen; native Ansage-APIs und vollständige Screenreader-Konformität bleiben unbewiesen."
+    },
+    {
+      "id": "C98",
+      "source": "S34",
+      "additional_sources": [
+        "S35",
+        "S37",
+        "S38"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Visuelle Styles können getrennt gepflegt werden, Maschinen und connect sind verschiedene Funktionen. Die mitgelieferten Maschinen-/connect-Dateien verbinden aber Behavior, DOM-Anatomie, Fokus, ARIA und teilweise Geometrie in ausführbarem Code.",
+      "interpretation": "Teilweise Trennung ist positiv belegt; vier unabhängig beschreibbare Originaldomänen ohne erzwungene fremde Fachdefinitionen sind nicht nachgewiesen. Funktions-/Dateigrenzen sind keine vollständigen Domänengrenzen.",
+      "next_check": "Offen: Kann Zag mit vier extern geführten Verträgen konsistent gebunden werden, ohne dass sein gebündeltes Fokus-/ARIA-/Geometrieverhalten zur zweiten führenden Quelle wird?"
+    },
+    {
+      "id": "C99",
+      "source": "S36",
+      "additional_sources": [
+        "S37",
+        "S38"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X03"
+      ],
+      "finding": "Teil-IDs, Scope und Zustandsattribute binden UI-Teile, DOM-ARIA-Ziele und separate CSS-Regeln. Diese Mechanismen sind reale Teilbeiträge und werden nicht als fehlend bewertet.",
+      "interpretation": "Ein gemeinsamer Referenzvertrag zu separat gewählten Interface-, Visual-, Behavior- und Accessibility-Originalartefakten ist damit nicht belegt. Ein CSS-Selektor oder DOM-id allein adressiert noch keinen typisierten Fachmodellknoten.",
+      "next_check": "Offen: Welche explizite Zuordnung erhält Zielart, Versionsstand und Bedeutung zwischen vier externen Verträgen und den vorhandenen Teil-/Zustands-/Callbackbindungen?"
+    },
+    {
+      "id": "C100",
+      "source": "S36",
+      "additional_sources": [
+        "S38",
+        "S40"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X04"
+      ],
+      "finding": "Importierte Maschinen werden mit eigenen props/id über useMachine instanziiert. Die Kompositionsanleitung beschreibt zwei Maschinen mit gemeinsamem Trigger über ids und das Zusammenführen von Props. ScrollArea existiert als eigenständiges Toolkitpaket.",
+      "interpretation": "Starker positiver Befund für echte wiederverwendbare UI-Maschinen und gemeinsame DOM-Teile. Ein deklarativ referenziertes Overlay mit unabhängiger ScrollArea samt Parametern, Ereignissen, eigenem Kontext und geklärten Fokus-/Scrollzuständigkeiten ist noch nicht nachgewiesen.",
+      "next_check": "Offen: Lassen sich genau diese unabhängigen Komponentenbindungen mit Originalmodellen ausdrücken und prüfen, oder bleibt ihre Komposition nur imperativer Anwendungscode? Kein Kompositionsversuch ausgeführt."
+    },
+    {
+      "id": "C101",
+      "source": "S35",
+      "additional_sources": [
+        "S36"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "Die untersuchten Machine-/Service-Schnittstellen enthalten keine bibliotheksübergreifende versionierte Contract-Referenz oder deren Resolver. Maschinen werden aus JS-Paketen importiert; Paketmetadaten nennen Versionen und workspace-Abhängigkeiten.",
+      "interpretation": "N für einen eigenen Resolver reproduzierbar versionierter externer Teilmodelle im untersuchten Toolkitvertrag. Paketmanager und Lockdateien können Softwareversionen sichern, ersetzen aber keinen Zag-eigenen Fachmodellresolver.",
+      "next_check": "Keine allgemeine Nichtreproduzierbarkeit des Projekts behaupten; externe Paketverwaltung und Contract-Auflösung ausdrücklich unterscheiden."
+    },
+    {
+      "id": "C102",
+      "source": "S35",
+      "additional_sources": [
+        "S36"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "MachineSchema und ComboboxProps sind echte TypeScript-Typen; Paketmetadaten nennen tsc --noEmit. createMachine baut einen Zustandsindex, der unter anderem doppelte Zustands-IDs und ungültige Initialknoten behandelt.",
+      "interpretation": "Positiver Nachweis statischer Typen und einzelner interner Strukturprüfungen, jedoch kein ausreichender Nachweis eines originalen separaten Schemas/Validators für ein eigenständig gespeichertes Domänenartefakt. Die Bezeichnung Schema allein ist kein JSON-Schema-/Runtime-Validierungsnachweis.",
+      "next_check": "Offen: Welches offiziell unterstützte Artefakt mit welchem Originalvalidator lässt sich unabhängig von Implementierungen prüfen, und welche Typ-/Referenz-/Semantikprüfungen umfasst das? Kein Typechecker oder Validator ausgeführt."
+    },
+    {
+      "id": "C103",
+      "source": "S35",
+      "additional_sources": [
+        "S38"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X07",
+        "X08"
+      ],
+      "finding": "Die definierten Core-Prüfungen betreffen Maschinenzustände; die Kompositionsdokumentation warnt ausdrücklich, dass konfigurierte ids auf nicht gerenderte DOM-Elemente zeigen können. Machine/Service und connect definieren keine führende Quelle oder Priorität zwischen vier externen Fachartefakten.",
+      "interpretation": "N für vollständige paketweite Referenz-/Konfliktprüfung und domänenübergreifende Ownership im untersuchten Umfang. Interne Zustandsprüfungen bleiben vorhanden; Props-Merging und gemeinsame IDs beweisen keine Abweisung widersprüchlicher Accessibility-/Behavior-/Designregeln.",
+      "next_check": "Zusätzliche Paketprüfung und Ownershipregeln wären eigenständige Integrationsarbeit; nicht aus DOM-Zielnamen oder einer erfolgreichen Typprüfung ableiten."
+    },
+    {
+      "id": "C104",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "G01"
+      ],
+      "finding": "Normative visuelle Werte besitzen YAML-Syntax in Frontmatter oder interleavten Codeblöcken; Blöcke werden zu einem Tokenbaum vereinigt.",
+      "interpretation": "D im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Prosa bleibt informell.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C105",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "G02"
+      ],
+      "finding": "Der visuelle Kern verwendet Werte, Einheiten und Pfadreferenzen ohne JS-/React-Funktionen. JS/TS implementiert nur die untersuchten Werkzeuge.",
+      "interpretation": "D im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; CSS-Farb-/Längensemantik bleibt fachliche Bindung, kein Nachweis aller nativen Zieladapter.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C106",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I01"
+      ],
+      "finding": "Components beschreibt Style-Property-Tokens, nicht öffentliche Komponentenparameter mit explizitem API-Typvertrag.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; typisierte visuelle Werte erfüllen I01 nicht. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C107",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I02"
+      ],
+      "finding": "Kein öffentliches Event-/Payload-Modell im definierten Token-/Komponentenmodell.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; frei hinzugefügte Schlüssel erhalten keine Eventsemantik. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C108",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I03"
+      ],
+      "finding": "Komponentenbezeichner adressieren Stylegruppen; keine strukturierte Anatomie-/Partsdeklaration innerhalb einer Komponente.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; ein zusätzlicher Stylegruppenname ist noch keine Teilebeziehung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C109",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V01"
+      ],
+      "finding": "Farben, Typography, Spacing und Rounded besitzen definierte Werttypen/Einheiten; Referenzen auf zusammengesetzte Typographywerte sind in Components erlaubt.",
+      "interpretation": "D im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; manuelle Quellprüfung, keine vollständige Konformitätsprüfung.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C110",
+      "source": "S42",
+      "additional_sources": [
+        "S44"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V02"
+      ],
+      "finding": "Benannte Stylegruppen wie button-primary-hover sind ausdrücklich als Varianten mit strukturierten Tokenwerten vorgesehen.",
+      "interpretation": "D im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Auswahl erfolgt laut Spec durch Agenten, keine externe Maschinenzustandsbindung.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C111",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V03"
+      ],
+      "finding": "Der definierte Kern hat Paletten und Varianten, aber kein Modus-/Theme-Auswahl- oder Overlayauflösungsmodell.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Farbname dark oder handgeführte zweite Datei erzeugt diese Semantik nicht. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C112",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V04"
+      ],
+      "finding": "Layoutstrategie wird als Prosa formuliert; Spacing ist ein Wertvorrat ohne Anker/Ziel/Richtung.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Tooltips-Prosa mit positioning definiert kein geometrisches Modell. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C113",
+      "source": "S42",
+      "additional_sources": [],
+      "evidence": "E2",
+      "rows": [
+        "V05"
+      ],
+      "finding": "height/width sind Dimensionstokens, aber maxHeight, Flächenbegrenzung oder zeilenbasierte Höhenableitung besitzen im Kern keine definierte Geometriesemantik.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; unbekannter Propertyname wird höchstens akzeptiert, nicht semantisch spezifiziert. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C114",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V06"
+      ],
+      "finding": "Kein formal definiertes Overflow-/Scrollmodell unter den Token- oder Component-Property-Typen.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Stylingwerte oder Scroll-Prosa sind kein Verhaltensmodell. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C115",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B01"
+      ],
+      "finding": "Stylevarianten enthalten keine Initialzustände oder ereignisbestimmten Transition-Ziele.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; state in der Stylebeschreibung ist kein Automat. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C116",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B02"
+      ],
+      "finding": "Keine Guard-Auswertung oder Aktionsausführungssemantik im definierten Modell.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; natürlichsprachliche Do/Don't-Regeln sind keine Guards. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C117",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B03"
+      ],
+      "finding": "Keine UX-Kontext-/Ereignisdatenverarbeitung; ResolvedValue beschreibt Designwerte.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; boolesche/numerische Komponentenwerte im Handler schaffen keine Datenlogik. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C118",
+      "source": "S42",
+      "additional_sources": [
+        "S44"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B04"
+      ],
+      "finding": "Keine Tastatur-/Fokus-/Eingabezuordnung zu UX-Aktionen; der bekannte Components-Kern verarbeitet Stylewerte.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Agenteninterpretation ersetzt keine Bindungssemantik. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C119",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A01"
+      ],
+      "finding": "Kein Modell zugänglicher Rollen, Namen oder Zielbeziehungen.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Kontrastempfehlung und -prüfung tragen nicht Rollen-/Beziehungssemantik bei. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C120",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A02"
+      ],
+      "finding": "Keine referenzierbaren Fokus-/Tastaturinteraktionsmuster im Kern.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; zusätzliche freie Guidelines wären informell. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C121",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A03"
+      ],
+      "finding": "Keine Live-Region-/Announcement- oder andere zugängliche Aktualisierungssemantik.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; WCAG-Kontrastprüfung ist anderer Teilbereich. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C122",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Visual kann separat geführt werden; zulässige ausgelassene Sections erzwingen keine UX-/API-Daten. Vollständige Bindung vier unabhängig geführter Originalmodelle ist hiermit noch nicht bewiesen.",
+      "interpretation": "U im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; offen: externes Bindungsmodell ohne fachliche Umdefinition und ohne stillen Schemaumbau festlegen.",
+      "next_check": "Welche externe Bindung verbindet vier unveränderte Originalmodelle ohne fachliche Umdefinition und doppelte führende Quellen?"
+    },
+    {
+      "id": "C123",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X02"
+      ],
+      "finding": "Tokenpfade und Stylegruppenschlüssel identifizieren Werte/Definitionen, keine UI-Elemente oder Bindungs-IDs.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; keine Instanzidentität im begrenzten Modell. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C124",
+      "source": "S42",
+      "additional_sources": [
+        "S44"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X03"
+      ],
+      "finding": "Der dokumentierte Referenzmechanismus zielt ausdrücklich auf einen Wert im selben YAML-Baum. Keine Adressierung separat geführter API-/Behavior-/A11y-Modelle.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; keine Aussage über eigene Integrationsschicht oder proprietäre Erweiterungen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C125",
+      "source": "S42",
+      "additional_sources": [
+        "S43",
+        "S44"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X04"
+      ],
+      "finding": "Components sind Property-Maps, ohne Definition/Use, Instanzkontext, Parameter oder Lebenszyklus für Unterkomponenten.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Tokenwiederverwendung ist keine Komponenteninstanziierung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C126",
+      "source": "S42",
+      "additional_sources": [
+        "S43",
+        "S44"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "Lokale YAML-Pfade definieren keine externe Quelle oder reproduzierbare Versionsauflösung; version bezeichnet Dokumentformat.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; Repository-Pinning durch uns ist keine im Format vorhandene Abhängigkeitssemantik. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C127",
+      "source": "S42",
+      "additional_sources": [
+        "S43",
+        "S44"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "Offizieller Original-Linter kann das eigenständige DESIGN.md-Artefakt verarbeiten. Ein unabhängig veröffentlichtes vollständiges Originalschema ist durch gelesene Pseudostruktur, TS-Interfaces und Zod-Eingabeschema jedoch nicht nachgewiesen.",
+      "interpretation": "U im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; offen: vollständiger Originalschema-Vertrag/Export und Umfang der Schema- gegenüber programmatischer Validierung. Kein N aus bloß fehlendem Schemafund.",
+      "next_check": "Welcher vollständige eigenständige Originalschema-Vertrag/Export besteht, und welche Regeln prüfen Schema und programmatischer Linter jeweils?"
+    },
+    {
+      "id": "C128",
+      "source": "S42",
+      "additional_sources": [
+        "S43",
+        "S44"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X07"
+      ],
+      "finding": "Original-Linter prüft interne Tokenziele, Typwerte und einige Kollisionen, führt aber weder fremde Domänenmodelle noch UI-Instanzkonflikte zusammen.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; interne gebrochene Tokenreferenzen sind positiver Teilbeitrag, keine Paketprüfung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C129",
+      "source": "S42",
+      "additional_sources": [
+        "S43"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X08"
+      ],
+      "finding": "Lokal gilt ausdrücklich Tokenwert vor Prosa; darüber hinaus existiert im definierten Modell keine Ownership-/Änderungsnachverfolgung zwischen vier Originalformaten und Integration.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; lokale Präzedenz erfüllt die gesamte paketweite Anforderung nicht. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert."
+    },
+    {
+      "id": "C130",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "G01"
+      ],
+      "finding": "Komponenten und Props besitzen dokumentierte YAML-/JSON-Datensyntax.",
+      "interpretation": "D im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Maschinenlesbarkeit ist kein Beleg eines ausführbaren Validators. Bisherige D-Bewertung bleibt.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C131",
+      "source": "S45",
+      "additional_sources": [],
+      "evidence": "E1",
+      "rows": [
+        "G02"
+      ],
+      "finding": "Der begrenzte Props-Kern enthält Typmetadaten, Default, Enum und Required, ohne ausführbare React-/JS-Funktionen zu verlangen; YAML und JSON sind explizit erlaubt.",
+      "interpretation": "D im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Gilt für diesen fachlichen Kern, nicht universelle komplexe Typsemantik oder Codebeispiele; Zielcodeadapter unbewiesen.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C132",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I01"
+      ],
+      "finding": "Benannte öffentliche Props mit `type`, `description`, `default`, `enum`, `required` sind ausdrücklich beschrieben.",
+      "interpretation": "D im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). T weicht ab: verlangt u.a. `group` und `license`, kennt kein enum/required und beschränkt default. Komplexe Typdurchsetzung nicht nachgewiesen. Bisherige D-Bewertung bleibt.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C133",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I02"
+      ],
+      "finding": "Im vollständig definierten Komponenten-/Propmodell fehlt eine eigene Zuordnung öffentlicher Eventnamen zu strukturierten Payloadfeldern. §10 empfiehlt lediglich Eventdokumentation.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). N nur für diese definierte Kernsemantik; freie Callback-Typstrings oder Prosa ersetzen keinen Payloadvertrag. Frühere U-Frage nach einem Modell im Repo jetzt gegen T/F abgeglichen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C134",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I03"
+      ],
+      "finding": "Der Kern benennt Komponenten- und Propnamen, aber keine Anatomie-/Part-/Slotstruktur innerhalb einer Komponente.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Mehrere separat benannte Komponenten sind noch keine benannten Bestandteile oder anatomischen Beziehungen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C135",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V01"
+      ],
+      "finding": "Primitive Prop-Typen definieren keine typisierte Farb-, Dimensions-, Einheiten- oder Typografiesemantik.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Ein Prop namens color mit type string wäre zulässige Beschreibung, aber kein im Standard festgelegter Designwerttyp. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C136",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V02"
+      ],
+      "finding": "Das Variant-Enum im Beispiel benennt Ausprägungen, verknüpft sie jedoch weder mit strukturierten Styles noch Tokenreferenzen.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Bietet API-Auswahlmetadaten, keine eigene Stylezuordnung pro Zustand. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C137",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V03"
+      ],
+      "finding": "Weder Theme-/Modeauswahl noch Werteauflösungsregeln sind im Kern definiert.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Website-eigene dark-CSS-Klassen und mögliche library Props sind keine Semantik dieses Austauschformats. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C138",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V04"
+      ],
+      "finding": "Kein Anker, Bezugsziel, Positionsmodell oder geometrisch definierter Abstand ist vorgesehen.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Freie Props dürfen Beziehungen beschreiben, deren Bedeutung muss jedoch zusätzlich festgelegt werden. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C139",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V05"
+      ],
+      "finding": "Kein formales Flächen-/Maximalhöhenmodell mit geometrischer Semantik ist definiert.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). maxHeight als beliebiger Propname wäre nicht standardisierte Layoutbedeutung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C140",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V06"
+      ],
+      "finding": "Kein Overflow-/Scrollmodell ist im Contractkern definiert.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Die ScrollArea-Dependency der Website und deren Preview-CSS sind hiervon getrennt. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C141",
+      "source": "S45",
+      "additional_sources": [],
+      "evidence": "E1",
+      "rows": [
+        "B01"
+      ],
+      "finding": "Zustände, Lifecycle und komplexes State-Management sind explizit zukünftige Erweiterungen; kein Zustands-/Transitionsmodell im aktuellen Kern.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Bestehende N-Bewertung bestätigt; keine Aussage zu späteren Entwürfen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C142",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B02"
+      ],
+      "finding": "Keine Guard-Auswertung oder Aktionsausführung im Kern; State-/Lifecycle-Unterstützung ist zukünftige Arbeit.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Prop-/Callback-Typstrings legen keine Auswertungssemantik fest. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C143",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B03"
+      ],
+      "finding": "Kein Maschinenkontext, kein formal verarbeiteter Eventdatenraum und keine Datenverarbeitungssemantik definiert.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Defaultwerte sind öffentliche Prop-Metadaten, kein veränderbarer Verhaltenskontext. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C144",
+      "source": "S45",
+      "additional_sources": [],
+      "evidence": "E1",
+      "rows": [
+        "B04"
+      ],
+      "finding": "Keine formale Zuordnung von Taste, Fokus oder Eingabe zu UX-Aktion/Maschinenereignis definiert.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Eventdokumentation ist Empfehlung; ein konkreter vorhandener Bindingmechanismus für A ist nicht belegt. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C145",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A01"
+      ],
+      "finding": "Accessibility wird empfohlen, aber Rollen, Namen und zielgerichtete ARIA-/Native-Beziehungen erhalten im Kern kein eigenes Begriffs- oder Relationsmodell.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Accessibility-Properties können als gewöhnliche Props dokumentiert werden; ihre fremde Semantik ist kein dokumentierter normativer Referenzmechanismus (daher kein R). Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C146",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A02"
+      ],
+      "finding": "Kein referenzierbares Fokus-/Tastaturmuster im spezifizierten Datenmodell.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Prosa-Guidelines bleiben möglich, aber kein formal adressierbares Bedienmuster gemäß Kriterium. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C147",
+      "source": "S45",
+      "additional_sources": [],
+      "evidence": "E1",
+      "rows": [
+        "A03"
+      ],
+      "finding": "Kein definiertes Modell für zugängliche dynamische Rückmeldungen oder deren Auslöser/Inhalte.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). aria-live als beliebiger Propname reicht nicht als eigene Standardspezifikation dynamischer Rückmeldung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C148",
+      "source": "S45",
+      "additional_sources": [],
+      "evidence": "E1",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Der Entwurf kann den einfachen Interfacebeitrag separat liefern; er beschreibt jedoch keine Integration vier unabhängig geführter Fachartefakte.",
+      "interpretation": "U im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Offen: Kann ein Interfaceartefakt unverändert mit drei anderen Originalartefakten und einer expliziten Integrationsschicht verbunden werden, ohne Informationen doppelt zu führen? Kein Paketversuch durchgeführt.",
+      "next_check": "Kann das Interfaceartefakt unverändert mit drei Originaldomänen und einer expliziten Integrationsschicht verbunden werden, ohne Doppelpflege?"
+    },
+    {
+      "id": "C149",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X02"
+      ],
+      "finding": "Komponenten-/Propnamen sind Definitionsschlüssel; keine Elementinstanz-ID oder domänenübergreifend bindbare Instanzidentität.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Ein Komponentenname ist keine stabile Identität von Input und Overlay in mehreren Autocomplete-Instanzen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C150",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X03"
+      ],
+      "finding": "Kein referenztypisiertes Feld oder Auflösungsmodell für separat beschriebene Domänen definiert.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). package nennt optional ein Modul, aber kein Visual-/Behavior-/Accessibility-Ziel mit semantischer Zuordnung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C151",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X04"
+      ],
+      "finding": "Collection unabhängiger Komponentendefinitionen, jedoch keine Instanziierungsrelation, eigene Parameterbindung oder Instanzkontexte.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). JSX im example ist ein undurchsichtiger String; Definitionen wie Button oder ScrollArea beweisen keine Contract-Komposition. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C152",
+      "source": "S45",
+      "additional_sources": [],
+      "evidence": "E1",
+      "rows": [
+        "X05"
+      ],
+      "finding": "`version` bezeichnet die Bibliothek/den Komponentensatz; `package` bezeichnet ein optionales Modul. Keine externe versionierte Teilmodellreferenz mit definierter Auflösung.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Bibliotheksversion allein ist keine Bindung aller referenzierten Inhalte. Website-package-lock nicht dem Contract zurechnen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C153",
+      "source": "S45",
+      "additional_sources": [
+        "S46",
+        "S47"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "Eigene Interfacebeschreibung wäre separat führbar, doch kein kanonisches ausführbares Originalschema/Validator nachgewiesen. T und F sind unterschiedliche Definitionen.",
+      "interpretation": "U im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Offen: Welches unveränderte offizielle Schema und welches Werkzeug validieren draft-01-Dokumente vollständig? Erst dessen Identität/Stand klären, dann gültige/ungültige Eingaben testen.",
+      "next_check": "Welches kanonische Originalschema und welches verfügbare Werkzeug validieren draft-01 vollständig trotz der dokumentierten Definitionsabweichungen?"
+    },
+    {
+      "id": "C154",
+      "source": "S45",
+      "additional_sources": [
+        "S46"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X07"
+      ],
+      "finding": "Keine Paket-/Referenz-/Instanz- oder Konfliktprüfregeln zwischen vier Domänen definiert.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Die allgemeine Aufforderung zur Schema-Konformität ist keine domänenübergreifende Prüfung. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C155",
+      "source": "S45",
+      "additional_sources": [],
+      "evidence": "E1",
+      "rows": [
+        "X08"
+      ],
+      "finding": "Zentrale Referenz ist ein Ziel; §10 verlangt Aktualität. Der Kern definiert jedoch weder Feld-Ownership noch Vorrang-/Synchronisationsregeln zwischen Originalformaten und Integration.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Single-source-Ziel allein erfüllt keine dokumentierte Zuständigkeits-/Änderungssemantik für vier Fachquellen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
     }
   ],
   "candidate_reviews": [
@@ -2220,6 +3634,47 @@
         "X06"
       ],
       "format_scope": "XState core 5.33.3 at 8f25b68f3953a9dd3c146a76f1f4972aba092a3f; official rolling v5 docs retrieved 2026-10-23; no execution",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "Zag",
+      "date": "2026-10-24",
+      "previously_open": 25,
+      "reviewed": 25,
+      "resolved": 21,
+      "remaining_uncertain": [
+        "X01",
+        "X03",
+        "X04",
+        "X06"
+      ],
+      "format_scope": "Zag toolkit core/combobox 1.46.0 at cafda74ba915d5abc5abb20abdde3a719d8e4e9c; explicit popper, ScrollArea, LiveRegion and React adapter contributions; docs and selected source only",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "Google DESIGN.md",
+      "date": "2026-10-24",
+      "previously_open": 22,
+      "reviewed": 22,
+      "resolved": 20,
+      "remaining_uncertain": [
+        "X01",
+        "X06"
+      ],
+      "format_scope": "Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15; central source cross-check of separate report; docs/types only",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "OpenUI",
+      "date": "2026-10-24",
+      "previously_open": 23,
+      "reviewed": 23,
+      "resolved": 21,
+      "remaining_uncertain": [
+        "X01",
+        "X06"
+      ],
+      "format_scope": "OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9; central source cross-check of separate report; docs/types only",
       "runtime_trials": []
     }
   ]
