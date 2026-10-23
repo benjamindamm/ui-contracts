@@ -1,0 +1,2226 @@
+{
+  "study_date": "2026-10-23",
+  "evidence_levels_executed": [
+    "E1",
+    "E2"
+  ],
+  "runtime_trials": [],
+  "requirements": [
+    {
+      "id": "G01",
+      "domain": "Grundlagen",
+      "name": "Maschinenlesbare Beschreibung",
+      "criterion": "Dokumentierte Datensyntax für Komponenten oder den fachlichen Teilbeitrag; alleinige natürlichsprachliche Beschreibung genügt nicht.",
+      "origin": "O11, O15, O24, O42"
+    },
+    {
+      "id": "G02",
+      "domain": "Grundlagen",
+      "name": "Sprachneutrale fachliche Semantik",
+      "criterion": "Der bewertete Kern benötigt keine React-/JavaScript-Funktionen. Gleiche Serialisierung allein genügt nicht; konkrete Zieladapter sind separat zu prüfen.",
+      "origin": "O11, O50"
+    },
+    {
+      "id": "I01",
+      "domain": "Interface",
+      "name": "Öffentliche Eigenschaften mit Typangaben",
+      "criterion": "Benannte Properties mit ausdrücklichen Typmetadaten; Durchsetzung komplexer Typen wird separat geprüft.",
+      "origin": "O50; bestätigter Vorschlag O51–O56"
+    },
+    {
+      "id": "I02",
+      "domain": "Interface",
+      "name": "Öffentliche Ereignisse mit Payload",
+      "criterion": "Öffentlicher Eventname und strukturierte Payload-Felder sind im Modell zugeordnet, getrennt vom Auslösezeitpunkt. Interne Maschinenereignisse allein genügen nicht.",
+      "origin": "O50; O51–O56"
+    },
+    {
+      "id": "I03",
+      "domain": "Interface",
+      "name": "Benannte Komponentenbestandteile",
+      "criterion": "Anatomie oder Teile sind strukturiert benannt, sodass andere Beschreibungen auf sie bezogen werden können. Noch kein Nachweis instanzstabiler IDs.",
+      "origin": "O50; O51–O56"
+    },
+    {
+      "id": "V01",
+      "domain": "Visual",
+      "name": "Typisierte Designwerte",
+      "criterion": "Farben, Dimensionen oder Typografie sind als strukturierte Werte mit definierter Bedeutung beschreibbar.",
+      "origin": "O30, O32, O46"
+    },
+    {
+      "id": "V02",
+      "domain": "Visual",
+      "name": "Visuelle Zustandsvarianten",
+      "criterion": "Benannte visuelle Varianten besitzen strukturierte Styles oder Tokenreferenzen. Zuordnung zu einer externen UX-Maschine bleibt X03.",
+      "origin": "O32, O46; O55"
+    },
+    {
+      "id": "V03",
+      "domain": "Visual",
+      "name": "Themes und Dark Mode",
+      "criterion": "Modi besitzen dokumentierte Auswahl-/Auflösungsregeln für unterschiedliche Werte; nur ein Farbname dark genügt nicht.",
+      "origin": "O32"
+    },
+    {
+      "id": "V04",
+      "domain": "Visual",
+      "name": "Formale relative Geometrie",
+      "criterion": "Anker/Ziel, Richtung/Position und Abstand sind definierte Eigenschaften mit Semantik. Beispiel: Overlay relativ zum Input; acht Pixel sind nur ein Testwert.",
+      "origin": "O30, O36, O46"
+    },
+    {
+      "id": "V05",
+      "domain": "Visual",
+      "name": "Formale Flächenbegrenzung",
+      "criterion": "Maximale Fläche oder Höhe besitzt eine definierte geometrische Bedeutung. Beispiel: Höhe für fünf sichtbare Zeilen; variable Zeilenhöhen zusätzlich prüfen.",
+      "origin": "O38, O46"
+    },
+    {
+      "id": "V06",
+      "domain": "Visual",
+      "name": "Overflow und Scrollen",
+      "criterion": "Verhalten überlaufender Inhalte ist ausdrücklich und formal beschrieben; eine sichtbare Zeilenzahl wird daraus nicht allein abgeleitet.",
+      "origin": "O38, O46"
+    },
+    {
+      "id": "B01",
+      "domain": "Behavior",
+      "name": "Zustände und Ereignisübergänge",
+      "criterion": "Benannte Zustände, Initialzustand und durch Ereignisse bestimmte Übergangsziele sind beschrieben.",
+      "origin": "O38; O51–O56"
+    },
+    {
+      "id": "B02",
+      "domain": "Behavior",
+      "name": "Guards und Aktionen",
+      "criterion": "Bedingung und Aktion haben definierte Auswertungs-/Ausführungssemantik; freie Funktionsnamen allein reichen nicht.",
+      "origin": "O48; O55, O59"
+    },
+    {
+      "id": "B03",
+      "domain": "Behavior",
+      "name": "Ereignis- und Kontextdaten",
+      "criterion": "Zustandsdaten und Ereignisdaten können in der Logik ausdrücklich verarbeitet werden. Kein Ersatz für I02.",
+      "origin": "O38; O55"
+    },
+    {
+      "id": "B04",
+      "domain": "Behavior",
+      "name": "Bindung von Eingaben an UX-Aktionen",
+      "criterion": "Tastatur/Fokus/Eingabe lassen sich ausdrücklich auf Aktionen oder Maschinenereignisse abbilden.",
+      "origin": "O36, O38"
+    },
+    {
+      "id": "A01",
+      "domain": "Accessibility",
+      "name": "Rollen, Namen und Beziehungen",
+      "criterion": "Zugängliche Semantik hat definierte Begriffe und Zielbeziehungen. Metadatencontainer allein beweist keine Konformität.",
+      "origin": "O38; O51"
+    },
+    {
+      "id": "A02",
+      "domain": "Accessibility",
+      "name": "Fokus- und Tastaturanforderungen",
+      "criterion": "Ein referenzierbares Interaktionsmuster beschreibt Bedienung und Fokus. Ausführbare formale Prüfung zusätzlich erforderlich.",
+      "origin": "O38; O51–O56"
+    },
+    {
+      "id": "A03",
+      "domain": "Accessibility",
+      "name": "Dynamische Rückmeldungen",
+      "criterion": "Eine definierte Semantik für zugängliche Aktualisierungen ist vorhanden; produktbezogene Auslöser und Inhalte bleiben explizit.",
+      "origin": "O38"
+    },
+    {
+      "id": "X01",
+      "domain": "Integration",
+      "name": "Vier unabhängig beschreibbare Domänen",
+      "criterion": "Teilmodelle lassen sich ohne erzwungene fachfremde Definitionen führen; gemeinsame Dateien sind keine Voraussetzung.",
+      "origin": "O50; spätere Präzisierung P02"
+    },
+    {
+      "id": "X02",
+      "domain": "Integration",
+      "name": "Stabile Elementidentität",
+      "criterion": "Explizite Elementidentifikatoren oder Bindungs-IDs sind vorhanden. Stabilität bei mehreren Instanzen und Änderungen ist ein weiterer Nachweis. URN optional.",
+      "origin": "O51–O59; P02"
+    },
+    {
+      "id": "X03",
+      "domain": "Integration",
+      "name": "Domänenübergreifende Referenzen",
+      "criterion": "Ein Ziel aus einer separat beschriebenen Domäne wird eindeutig adressiert und semantisch zugeordnet; interne Tokenreferenzen allein genügen nicht.",
+      "origin": "O50; O51–O59; P02"
+    },
+    {
+      "id": "X04",
+      "domain": "Integration",
+      "name": "Wiederverwendbare Komponenteninstanzen",
+      "criterion": "Definition und Verwendung sind getrennt; referenzierte Komponente wird mit eigenem Instanzkontext/Parametern wiederverwendet. Beispiel: Overlay verwendet ScrollArea.",
+      "origin": "P02; Vorläufer Elementreferenzen O59"
+    },
+    {
+      "id": "X05",
+      "domain": "Integration",
+      "name": "Externe versionierte Abhängigkeiten",
+      "criterion": "Externe Komponenten-/Teilmodellreferenz enthält eine reproduzierbar gebundene Version und definierte Auflösung. Ein Dateipfad oder Versionsfeld allein genügt nicht.",
+      "origin": "O48; O51–O59; P02"
+    },
+    {
+      "id": "X06",
+      "domain": "Integration",
+      "name": "Eigene Schemavalidatoren erhalten",
+      "criterion": "Separates Domänenartefakt kann gegen sein Originalschema geprüft werden; keine stille Erweiterung desselben Formats.",
+      "origin": "O59; P02"
+    },
+    {
+      "id": "X07",
+      "domain": "Integration",
+      "name": "Referenz- und Konfliktprüfung des Pakets",
+      "criterion": "Fehlende/falsche Ziele, Instanzkollisionen und widersprüchliche Anforderungen verschiedener Domänen werden abgewiesen. Interne Tokenprüfung genügt nicht.",
+      "origin": "O50; O51–O59; P02"
+    },
+    {
+      "id": "X08",
+      "domain": "Integration",
+      "name": "Eindeutige führende Quelle",
+      "criterion": "Ownership und Vorrang sind je Information dokumentiert, Änderungen zwischen Originalformaten und Integrationsschicht nachvollziehbar.",
+      "origin": "O48, O50; O51–O59"
+    }
+  ],
+  "candidates": [
+    "CEM",
+    "OpenUI",
+    "Google DESIGN.md",
+    "AgentsORG",
+    "DTCG",
+    "UXSpec",
+    "SCXML",
+    "XState",
+    "Zag",
+    "Ark UI",
+    "Panda CSS",
+    "uSpec",
+    "OpenPencil",
+    "WAI-ARIA",
+    "APG",
+    "CSS Layout"
+  ],
+  "evaluations": [
+    {
+      "requirement": "G01",
+      "candidate": "CEM",
+      "coverage": "D",
+      "claim": "C01"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "CEM",
+      "coverage": "D",
+      "claim": "C01"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "CEM",
+      "coverage": "D",
+      "claim": "C02"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "CEM",
+      "coverage": "A",
+      "claim": "C03"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "OpenUI",
+      "coverage": "D",
+      "claim": "C04"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "OpenUI",
+      "coverage": "D",
+      "claim": "C04"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "OpenUI",
+      "coverage": "N",
+      "claim": "C06"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "D",
+      "claim": "C07"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "D",
+      "claim": "C07"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "Google DESIGN.md",
+      "coverage": "D",
+      "claim": "C08"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "Google DESIGN.md",
+      "coverage": "N",
+      "claim": "C09"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C11"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C11"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C12"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C12"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "DTCG",
+      "coverage": "D",
+      "claim": "C14"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "DTCG",
+      "coverage": "D",
+      "claim": "C14"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "DTCG",
+      "coverage": "D",
+      "claim": "C15"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C16"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C16"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C16"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C16"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C16"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C18"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C18"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C19"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C20"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "SCXML",
+      "coverage": "D",
+      "claim": "C22"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "SCXML",
+      "coverage": "D",
+      "claim": "C22"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "SCXML",
+      "coverage": "D",
+      "claim": "C22"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "SCXML",
+      "coverage": "D",
+      "claim": "C22"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "SCXML",
+      "coverage": "D",
+      "claim": "C22"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "XState",
+      "coverage": "D",
+      "claim": "C23"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "XState",
+      "coverage": "A",
+      "claim": "C24"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "Zag",
+      "coverage": "A",
+      "claim": "C25"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C27"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C27"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "Panda CSS",
+      "coverage": "D",
+      "claim": "C28"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "uSpec",
+      "coverage": "D",
+      "claim": "C29"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "OpenPencil",
+      "coverage": "D",
+      "claim": "C30"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "OpenPencil",
+      "coverage": "D",
+      "claim": "C30"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "WAI-ARIA",
+      "coverage": "D",
+      "claim": "C31"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "WAI-ARIA",
+      "coverage": "D",
+      "claim": "C31"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "APG",
+      "coverage": "D",
+      "claim": "C32"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "CSS Layout",
+      "coverage": "D",
+      "claim": "C33"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "CSS Layout",
+      "coverage": "D",
+      "claim": "C34"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "CEM",
+      "coverage": "U",
+      "claim": "C37"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "CEM",
+      "coverage": "R",
+      "claim": "C38"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C39"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C39"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C40"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C40"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C40"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C41"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C41"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C41"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C41"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C42"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C42"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C42"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "CEM",
+      "coverage": "U",
+      "claim": "C43"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C44"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C44"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C44"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C45"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "CEM",
+      "coverage": "D",
+      "claim": "C46"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C47"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "CEM",
+      "coverage": "N",
+      "claim": "C47"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "DTCG",
+      "coverage": "D",
+      "claim": "C48"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C49"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C49"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C49"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "DTCG",
+      "coverage": "D",
+      "claim": "C50"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C51"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C51"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C51"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C52"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C52"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C52"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C52"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C53"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C53"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C53"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "DTCG",
+      "coverage": "U",
+      "claim": "C54"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C55"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C55"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C55"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C56"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "DTCG",
+      "coverage": "D",
+      "claim": "C57"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C58"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "DTCG",
+      "coverage": "N",
+      "claim": "C58"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C59"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C59"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "SCXML",
+      "coverage": "U",
+      "claim": "C60"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C61"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C61"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C61"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C61"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C61"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C61"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "SCXML",
+      "coverage": "A",
+      "claim": "C62"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C63"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C63"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C63"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "SCXML",
+      "coverage": "U",
+      "claim": "C64"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C65"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C65"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "SCXML",
+      "coverage": "U",
+      "claim": "C66"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C67"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "SCXML",
+      "coverage": "D",
+      "claim": "C68"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C69"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "SCXML",
+      "coverage": "N",
+      "claim": "C69"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "XState",
+      "coverage": "D",
+      "claim": "C70"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "XState",
+      "coverage": "D",
+      "claim": "C71"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "XState",
+      "coverage": "D",
+      "claim": "C72"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C73"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C74"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C74"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C74"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C74"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C74"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C74"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "XState",
+      "coverage": "D",
+      "claim": "C75"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "XState",
+      "coverage": "D",
+      "claim": "C76"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "XState",
+      "coverage": "A",
+      "claim": "C77"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C78"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C78"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C78"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "XState",
+      "coverage": "U",
+      "claim": "C79"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C80"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C80"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "XState",
+      "coverage": "U",
+      "claim": "C81"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C82"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "XState",
+      "coverage": "U",
+      "claim": "C83"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C84"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "XState",
+      "coverage": "N",
+      "claim": "C84"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "source": "S01",
+      "evidence": "E2",
+      "rows": [
+        "G01",
+        "I01"
+      ],
+      "finding": "Package/CustomElement/ClassField und Type.text bilden Properties mit Typmetadaten ab.",
+      "interpretation": "Direkt für beschreibende Web-API-Metadaten. Type.text ist ein Typausdruck als String, kein neutraler Payload-Validator.",
+      "next_check": "Komplexe Typen und deren Übersetzung separat validieren."
+    },
+    {
+      "id": "C02",
+      "source": "S01",
+      "evidence": "E2",
+      "rows": [
+        "I03"
+      ],
+      "finding": "CustomElement besitzt benannte slots und cssParts.",
+      "interpretation": "Benannte Anatomie ist direkt beschrieben; das ist keine Instanz-ID oder beliebiger Komponentenbaum.",
+      "next_check": "Mehrfachinstanzen und Rollen von Slot versus internem Teil prüfen."
+    },
+    {
+      "id": "C03",
+      "source": "S01",
+      "evidence": "E2",
+      "rows": [
+        "G02"
+      ],
+      "finding": "Das Modell dokumentiert JavaScript-Module, Klassen, Attribute und Custom-Element-Events; Type.text darf sprachspezifische Syntax tragen.",
+      "interpretation": "Für einen sprachneutralen gemeinsamen Kern ist eine Abbildung erforderlich; CEM bleibt als Web-Beitrag brauchbar.",
+      "next_check": "Bubbling/Cancelation und Typverlust bei nativer Abbildung untersuchen."
+    },
+    {
+      "id": "C04",
+      "source": "S02",
+      "evidence": "E1",
+      "rows": [
+        "G01",
+        "I01"
+      ],
+      "finding": "§7 definiert YAML/JSON, components und props mit type/default/enum/required.",
+      "interpretation": "Direkt für einfache Property-Metadaten; keine durchgeführte Schemaprüfung.",
+      "next_check": "Maßgebliches Schema und Typregeln lokalisieren."
+    },
+    {
+      "id": "C05",
+      "source": "S02",
+      "evidence": "E1",
+      "rows": [
+        "I02"
+      ],
+      "finding": "§10 empfiehlt Eventdokumentation, §7 definiert kein eigenes Event-/Payloadmodell.",
+      "interpretation": "U statt D: Empfehlung ist kein belastbarer Nachweis strukturierter öffentlicher Payloads.",
+      "next_check": "Repository/Schema nach Eventmodell prüfen."
+    },
+    {
+      "id": "C06",
+      "source": "S02",
+      "evidence": "E1",
+      "rows": [
+        "B01"
+      ],
+      "finding": "§11 führt State/Lifecycle und komplexes State-Management als zukünftige Erweiterung.",
+      "interpretation": "N ausschließlich für ein spezifiziertes Zustandsübergangsmodell in draft-01; keine allgemeine Aussage über spätere Versionen.",
+      "next_check": "Neueren Entwurf und Repositorystand vergleichen."
+    },
+    {
+      "id": "C07",
+      "source": "S03",
+      "evidence": "E1",
+      "rows": [
+        "G01",
+        "V01"
+      ],
+      "finding": "DESIGN.md kombiniert Markdown mit maschinenlesbaren YAML-Tokens; Typen für Farben, Dimensionen und Typografie sind beschrieben.",
+      "interpretation": "Direkte strukturierte visuelle Werte; das gesamte Dokument ist keine vollständig formale UI-Beschreibung.",
+      "next_check": "Konkrete Positiv-/Negativfälle gegen Originalvalidator ausführen."
+    },
+    {
+      "id": "C08",
+      "source": "S03",
+      "evidence": "E1",
+      "rows": [
+        "V02"
+      ],
+      "finding": "Components erlaubt verwandte Schlüssel wie button-primary und button-primary-hover mit Property-Tokens.",
+      "interpretation": "Direkte benannte Stylevarianten; Zuordnung durch Namenskonvention/Agenten ist keine geprüfte externe Zustandsreferenz.",
+      "next_check": "Falschen Variantennamen und fehlende Zuordnung prüfen."
+    },
+    {
+      "id": "C09",
+      "source": "S03",
+      "evidence": "E1",
+      "rows": [
+        "V04"
+      ],
+      "finding": "Layout beschreibt Strategie in Prosa und Spacing-Tokens; Components ist eine flexible Tokenmap.",
+      "interpretation": "N für standardisierte relative Anker-/Abstandssemantik im geprüften Kern. Ein beliebiger Tokenname offset schafft diese Semantik nicht.",
+      "next_check": "Zusätzliche Layoutsprache prüfen; keine eigene Syntax als bestehend ausgeben."
+    },
+    {
+      "id": "C10",
+      "source": "S03",
+      "evidence": "E1",
+      "rows": [
+        "X03"
+      ],
+      "finding": "Token References adressieren Werte im eigenen YAML-Baum.",
+      "interpretation": "U für vierformatige Domänenreferenzen: vorhandene interne Tokenverweise belegen dies nicht.",
+      "next_check": "Externe Referenzen und deren Prüfung separat untersuchen."
+    },
+    {
+      "id": "C11",
+      "source": "S04",
+      "evidence": "E1",
+      "rows": [
+        "G01",
+        "V01"
+      ],
+      "finding": "§1 definiert YAML/JSON; §11 typisierte Tokenwerte und Referenzen.",
+      "interpretation": "Direkte visuelle Daten; keine ausgeführte Validierung.",
+      "next_check": "Originalschema und Linter auf falsche Dimensionen prüfen."
+    },
+    {
+      "id": "C12",
+      "source": "S04",
+      "evidence": "E1",
+      "rows": [
+        "V02",
+        "V03"
+      ],
+      "finding": "§13 hat variants/states und Tokenbags; §7.3 definiert Themes als pfadweise Overlays mit Defaultmodus.",
+      "interpretation": "Direkt für beschriebene Varianten und Modeauflösung; keine unabhängige Bestätigung der Exporte.",
+      "next_check": "Themewechsel und Vorrang mit einem minimalen Artefakt prüfen."
+    },
+    {
+      "id": "C13",
+      "source": "S04",
+      "evidence": "E1",
+      "rows": [
+        "X07"
+      ],
+      "finding": "§11.3/§19 fordern Fehler bei gebrochenen oder zyklischen Tokenreferenzen und Alias-Kollisionen.",
+      "interpretation": "U für Paketkonflikte: interne Regeln sind vorhanden, prüfen aber nicht automatisch Interface/Behavior/APG-Verknüpfungen.",
+      "next_check": "Interne Negativtests und anschließend domänenübergreifenden Konfliktfall prüfen."
+    },
+    {
+      "id": "C14",
+      "source": "S05",
+      "evidence": "E1",
+      "rows": [
+        "G01",
+        "V01"
+      ],
+      "finding": "Format Module definiert Tokenobjekte mit Typ und Wert sowie Dimensionstypen.",
+      "interpretation": "Direkt für Tokenwerte, keine vollständige Komponentengeometrie.",
+      "next_check": "Falsche Einheiten und ungültige Typ/Wert-Kombination prüfen."
+    },
+    {
+      "id": "C15",
+      "source": "S06",
+      "evidence": "E1",
+      "rows": [
+        "V03"
+      ],
+      "finding": "Resolver Module beschreibt Auflösung in mehreren Kontexten, ausdrücklich auch Light/Dark Mode.",
+      "interpretation": "Direkt innerhalb des Resolvermodells; Format Module allein wird nicht damit gleichgesetzt.",
+      "next_check": "Kontexte und deterministische Modusauswahl am konkreten Resolver testen."
+    },
+    {
+      "id": "C16",
+      "source": "S07",
+      "evidence": "E1",
+      "rows": [
+        "G01",
+        "G02",
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "finding": "UXSpec v0.2 beschreibt JSON, Context, Events, Transitions, Guard-Ausdrücke und definierte Action-Kinds.",
+      "interpretation": "Direkt dokumentiertes sprachneutrales Datenmodell. Behauptete SCJSON-Kompatibilität ist nicht durch Gleichheit mit SCXML oder Compilerlauf belegt.",
+      "next_check": "Ereignisfolge mit Guard/assign unabhängig vom visuellen Modell prüfen."
+    },
+    {
+      "id": "C17",
+      "source": "S08",
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "stateNode hat keine required-Liste für $visual; machine verlangt id/initial/states, nicht $visual; oberste Pflichtfelder sind $schema/$description/$machine.",
+      "interpretation": "Positiver Teilbefund für die eng begrenzte Frage eines Verhaltensdokuments ohne Visual auf Schemaebene. X01 bleibt insgesamt U, weil alle vier getrennten Teilmodelle verlangt sind. Vierformatige Integration, Compiler und Runtime bleiben ungeprüft.",
+      "next_check": "Visualfreies Minimaldokument gegen Schema und anschließend Compiler testen."
+    },
+    {
+      "id": "C18",
+      "source": "S07",
+      "evidence": "E1",
+      "rows": [
+        "V02",
+        "B04"
+      ],
+      "finding": "interactions definiert visuelle Style-Overrides; $visual.keyboard bildet Tasten auf Ereignisse ab.",
+      "interpretation": "Direkt beschrieben; Keyboard-Bindung liegt im visuellen Block und muss bei strikter Domänentrennung bewusst behandelt werden.",
+      "next_check": "Binding extrahieren/referenzieren, ohne unabhängige zweite Tastaturregeln einzuführen."
+    },
+    {
+      "id": "C19",
+      "source": "S07",
+      "evidence": "E1",
+      "rows": [
+        "X02"
+      ],
+      "finding": "testId ist als stabiler Testbezeichner dokumentiert; name und focus.target ermöglichen Elementbezug.",
+      "interpretation": "Direkt für explizite Elementkennzeichnung; globale/instanzübergreifende Eindeutigkeit nicht nachgewiesen.",
+      "next_check": "Zwei gleiche Komponenteninstanzen auf ID-Kollision prüfen."
+    },
+    {
+      "id": "C20",
+      "source": "S07",
+      "evidence": "E1",
+      "rows": [
+        "X04"
+      ],
+      "finding": "Element References verwendet $elements/$ref mit Instanz-Overrides und Inline-Expansion.",
+      "interpretation": "Direkte Wiederverwendung von Elementdefinitionen; autonomes ScrollArea-Verhalten und Instanzlebenszyklus noch nicht bewiesen.",
+      "next_check": "Wiederverwendbare Unterkomponente mit Parametern und Verhalten prüfen."
+    },
+    {
+      "id": "C21",
+      "source": "S08",
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "Das Schema erlaubt $imports.from und boolesche Teilimporte; machineInvoke verlangt kind/src/id.",
+      "interpretation": "U für versionierte externe Abhängigkeiten: Stringpfad und Import beweisen keine Versionbindung und keinen Lockmechanismus.",
+      "next_check": "Compilerauflösung, Namespaces, Zyklen und Versionsbindung untersuchen."
+    },
+    {
+      "id": "C22",
+      "source": "S09",
+      "evidence": "E1",
+      "rows": [
+        "G01",
+        "G02",
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "finding": "SCXML definiert XML-Zustandsmodell, event/cond/target, ausführbare Inhalte und Datenmodelle.",
+      "interpretation": "Direkt für Verhalten in gewähltem Datenmodell. Hostbindungen und native UI-Integration werden dadurch nicht geliefert.",
+      "next_check": "Konkretes Datenmodell und Interpreter festlegen, Trace gegen Erwartung prüfen."
+    },
+    {
+      "id": "C23",
+      "source": "S10",
+      "evidence": "E1",
+      "rows": [
+        "B01"
+      ],
+      "finding": "createMachine beschreibt initial/states/on/target und unabhängige Actorinstanzen.",
+      "interpretation": "Direkt dokumentierte Zustandsübergänge; kein Schema-/Runtimeversuch in dieser Studie.",
+      "next_check": "Konkreten Paketstand pinnen und Trace testen."
+    },
+    {
+      "id": "C24",
+      "source": "S10",
+      "evidence": "E1",
+      "rows": [
+        "G02"
+      ],
+      "finding": "Providing implementations beschreibt sprachspezifische Implementierungen für Actions, Actors und Guards.",
+      "interpretation": "A für den hier geforderten sprachneutralen, datenbasierten Kern: konkrete Implementierungen benötigen zusätzliche neutrale Semantik oder Bindungen.",
+      "next_check": "Serialisierbare Teilmenge und externe Implementierungsabhängigkeiten isolieren."
+    },
+    {
+      "id": "C25",
+      "source": "S11",
+      "evidence": "E1",
+      "rows": [
+        "G02"
+      ],
+      "finding": "Zag beschreibt JS-Frameworkadapter, Statecharts und eigene API; es erklärt ausdrücklich, SCXML nicht zu folgen.",
+      "interpretation": "A für neutralen Verhaltenstransfer; kein vorhandener SCXML-Export nachgewiesen.",
+      "next_check": "Quellmodell und Exportmöglichkeiten gezielt prüfen."
+    },
+    {
+      "id": "C26",
+      "source": "S11",
+      "evidence": "E1",
+      "rows": [
+        "A02"
+      ],
+      "finding": "Zag dokumentiert Umgang mit Tastatur, Fokus und ARIA als Teil der Bibliothek.",
+      "interpretation": "U für ein separates referenzierbares Anforderungsmodell: Bibliotheksfunktion ist kein Nachweis eines exportierten Contracts.",
+      "next_check": "Konkrete Komponentenmaschine und APG-Bindung untersuchen."
+    },
+    {
+      "id": "C27",
+      "source": "S12",
+      "evidence": "E1",
+      "rows": [
+        "X02",
+        "X04"
+      ],
+      "finding": "Ark dokumentiert ids sowie asChild-Komposition eigener Komponenten, einschließlich gemeinsamen IDs für Interaktion.",
+      "interpretation": "Direkt in der Ark-Laufzeitrolle; kein sprachneutraler Paketverweis und keine Versionsauflösung.",
+      "next_check": "Overlay/ScrollArea-Komposition mit zwei Instanzen und Fokus prüfen."
+    },
+    {
+      "id": "C28",
+      "source": "S13",
+      "evidence": "E1",
+      "rows": [
+        "V02"
+      ],
+      "finding": "Recipes definiert base, variants, defaultVariants und compoundVariants als strukturierte Maps.",
+      "interpretation": "Direkt für visuelle Varianten innerhalb Panda; Extraktion in ein neutrales Schema ist noch offen.",
+      "next_check": "Rezept und zustandsbezogene Tokenreferenzen am gepinnten Stand prüfen."
+    },
+    {
+      "id": "C29",
+      "source": "S14",
+      "evidence": "E1",
+      "rows": [
+        "G01"
+      ],
+      "finding": "uSpec dokumentiert kanonische .json-Komponentencontracts und daraus erzeugtes Markdown.",
+      "interpretation": "Direkter dokumentierter maschinenlesbarer Beitrag. Einzelne API-/Accessibility-Felder bleiben U bis zur Schemaprüfung.",
+      "next_check": "Kanonisches Schema und Beispielartefakt lokalisieren und prüfen."
+    },
+    {
+      "id": "C30",
+      "source": "S15",
+      "evidence": "E1",
+      "rows": [
+        "I03",
+        "X02"
+      ],
+      "finding": "OpenPencil bindet Werte/Slots per ID; Behaviour-Contracts benennen Parts und Zustandsvarianten.",
+      "interpretation": "Direkt für Anatomy und IDs im OpenPencil-Modell; beim .fig-Export werden IDs umbenannt. Universelle stabile Identität bleibt offen.",
+      "next_check": "Export/Import mit Identitätsabbildung und Mehrfachinstanzen prüfen."
+    },
+    {
+      "id": "C31",
+      "source": "S16",
+      "evidence": "E1",
+      "rows": [
+        "A01",
+        "A03"
+      ],
+      "finding": "ARIA definiert Rollen, Zustände, Eigenschaften, ID-Beziehungen und Live-Region-Semantik.",
+      "interpretation": "Direkt als Web-Semantikreferenz, nicht als ausführbarer neutraler Paketvalidator. Konkrete Ergebnisansage ist Produktregel.",
+      "next_check": "Auslöser/Inhalt und reale Assistive-Technology-Wahrnehmung separat testen."
+    },
+    {
+      "id": "C32",
+      "source": "S17",
+      "evidence": "E1",
+      "rows": [
+        "A02"
+      ],
+      "finding": "APG Combobox beschreibt Varianten, Tastatur und Fokus, einschließlich aria-activedescendant im Listbox-Fall.",
+      "interpretation": "Direkt als Interaktionsleitfaden; nicht als universell verpflichtende konkrete Produktvariante und nicht als maschinenlesbarer Automat.",
+      "next_check": "Gewählte Variante in Assertions übersetzen und manuell prüfen."
+    },
+    {
+      "id": "C33",
+      "source": "S18",
+      "evidence": "E1",
+      "rows": [
+        "V04"
+      ],
+      "finding": "CSS Anchor Positioning beschreibt Beziehung zu Ankerelementen und relative Größen/Positionen.",
+      "interpretation": "Direkt im CSS-Webmodell; kein neutraler Cross-Platform-Standard und kein Nachweis von Browserunterstützung.",
+      "next_check": "Abstand, Ankerbreite, Fallback und Namensräume in konkreten Umgebungen testen."
+    },
+    {
+      "id": "C34",
+      "source": "S19",
+      "evidence": "E1",
+      "rows": [
+        "V06"
+      ],
+      "finding": "CSS Overflow definiert Scroll-Overflow und overflow-Achsen.",
+      "interpretation": "Direkt für Overflow im CSS-Modell; exakte sichtbare Zeilenzahl verlangt zusätzlich Höhenmodell und darf nicht aus overflow allein gefolgert werden.",
+      "next_check": "Höhenbegrenzung mit variabler Typografie und Wiederverwendung einer ScrollArea prüfen."
+    },
+    {
+      "id": "C35",
+      "source": "S01",
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "Reference enthält name/package/module, aber keine Versionbindung an dieser Stelle.",
+      "interpretation": "Erster Teilbefund war U; die vollständige CEM-Kernprüfung präzisiert X05 zu N im Formatkern. Siehe C45. Externe Symbolnamen und eigenständige Versionsbindung sind zu unterscheiden.",
+      "next_check": "Paketmanifest/Lockdatei und Referenzsemantik gemeinsam prüfen."
+    },
+    {
+      "id": "C36",
+      "source": "S05",
+      "evidence": "E1",
+      "rows": [
+        "V01"
+      ],
+      "finding": "Tokenalias verweist auf einen anderen Tokenwert; Typ-/Wertregeln bleiben im Tokenmodell.",
+      "interpretation": "R für das Teilkriterium eines abgeleiteten Werts innerhalb V01; kein Beleg für Komponentenkomposition.",
+      "next_check": "Fehlendes/zyklisches Ziel als Negativfall prüfen."
+    },
+    {
+      "id": "C37",
+      "source": "S01",
+      "additional_sources": [
+        "S20"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I02"
+      ],
+      "finding": "Event hat name/type; Type enthält text und optionale TypeReference. Referenzen können auf Deklarationen mit members zeigen. Ein eigener payload-Feldkatalog oder eine vorgeschriebene Zuordnung von CustomEvent<T> zu dessen detail-Feldern ist nicht definiert.",
+      "interpretation": "Ereignisname und Typ sind abgedeckt. Die gesamte Anforderung strukturierter Payload-Felder bleibt U: Ein Typstring ist nicht derselbe Nachweis wie ein aufgelöstes, eindeutig zugeordnetes Payloadmodell. Die allgemeinen Klassen-/Typreferenzen könnten dazu beitragen; sie werden weder als unmöglich noch als fertige Lösung bewertet.",
+      "next_check": "Offene Frage: Kann eine dokumentierte Ereignistyp-/Payloaddeklaration allein mit Standardreferenzen eindeutig bis zu detail-Feldern verfolgt werden, auch für CustomEvent<T>, ohne frei gewählte Bindungskonvention? Zunächst offizielle Beispiele und Typreferenzkonventionen prüfen; nur bei verbleibender Unklarheit einen kleinen Typauflösungsversuch durchführen."
+    },
+    {
+      "id": "C38",
+      "source": "S01",
+      "additional_sources": [
+        "S20",
+        "S23"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V01"
+      ],
+      "finding": "CssCustomProperty enthält name, syntax und default. Der Kommentar verlangt für syntax die CSS-Syntaxstrings der Properties and Values API, etwa <color> oder <length> | <percentage>. Die externe CSS-Spezifikation definiert deren Bedeutung.",
+      "interpretation": "R für typisierte CSS-Designwerte: Name/Syntax/Standardwert sind strukturiert, die Wertsemantik wird aus dem benannten CSS-Modell übernommen. Das ist kein DTCG-Tokenmodell, keine Typografie-Komposition und keine automatische Durchsetzung: Im CEM-JSON-Schema bleiben syntax/default Strings; die CSS-Grammatik wird dort nicht als Validator implementiert. CEM registriert die CSS-Property auch nicht automatisch im Browser.",
+      "next_check": "Für eine spätere Validierungsbehauptung muss geprüft werden, welches konsumierende Werkzeug CSS-Syntax und Standardwert tatsächlich zusammen prüft. Für die dokumentierte Beschreibungsmöglichkeit ist kein Laufzeitversuch erforderlich."
+    },
+    {
+      "id": "C39",
+      "source": "S01",
+      "additional_sources": [
+        "S20"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V02",
+        "V03"
+      ],
+      "finding": "CssCustomState beschreibt name/summary/description/deprecated. CssCustomProperty beschreibt jeweils syntax/default. Das vollständig geprüfte Kernschema enthält weder Zustand-zu-Style-/Token-Zuordnungen noch Modusauswahl oder Theme-Overlay-Regeln.",
+      "interpretation": "N im CEM-Kern für strukturierte visuelle Zustandsvarianten und Themeauflösung. Benannte CSS-Zustände dokumentieren die Styling-Schnittstelle, nicht die Styles je Zustand. Ein Propertyname wie theme oder dark und eine Erklärung im description-Feld führen keine normierte Auflösungsregel ein.",
+      "next_check": "Kein Versuch nötig, um diesen begrenzten Modellumfang festzustellen. Falls später externe Styles referenziert werden sollen, muss deren eigenes Modell separat geprüft werden; keine Auswahl erfolgt hier."
+    },
+    {
+      "id": "C40",
+      "source": "S01",
+      "additional_sources": [
+        "S20"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V04",
+        "V05",
+        "V06"
+      ],
+      "finding": "Die vollständig gelesenen Definitionen von CustomElementDeclaration, CssPart, Slot und CssCustomProperty enthalten keine Layoutknoten, Ankerbeziehungen, Flächenbegrenzungen oder Overflow-Anweisungen mit Ausführungssemantik.",
+      "interpretation": "N im CEM-Kern für relative Geometrie, Flächenbegrenzung und Scrollregeln. Eine CSS-Custom-Property könnte einen Abstandswert oder ein Limit dokumentieren; CEM ordnet diesen Wert aber nicht formal einem bestimmten Elementlayout zu. CSS-Parts sind benannte Stylingziele, keine gespeicherten Stylesheets.",
+      "next_check": "Kein praktischer Versuch nötig: Gegenstand ist die deklarierte Formatsemantik, nicht die Fähigkeit einer bereits implementierten Web-Komponente zu layouten oder zu scrollen."
+    },
+    {
+      "id": "C41",
+      "source": "S01",
+      "additional_sources": [
+        "S20"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B01",
+        "B02",
+        "B03",
+        "B04"
+      ],
+      "finding": "Das Kernmodell beschreibt Events, Methoden, Parameter, Felder und CSS-State-Namen. Es definiert keine Initialzustände, Transitionen, Guards, Aktionsauswertung, Ereignisverarbeitung oder Tastatur-/Fokus-zu-Aktionsbindung.",
+      "interpretation": "N für die vier Behavior-Anforderungen im CEM-Kern. Öffentliches API-Inventar und Zustandsnamen sind keine Verhaltensmaschine. FunctionLike dokumentiert eine Methodensignatur; deren Aufrufbedingungen und Wirkung verbleiben im Implementierungscode beziehungsweise in Prosa.",
+      "next_check": "Keine Komponentenimplementierung erforderlich. Ein Analyzer kann Signaturen extrahieren; das erzeugt ohne zusätzliche Fachsemantik keinen UX-Automaten."
+    },
+    {
+      "id": "C42",
+      "source": "S01",
+      "additional_sources": [
+        "S20"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A01",
+        "A02",
+        "A03"
+      ],
+      "finding": "Keine Kerndefinition enthält Accessibility-Rollen-/Namensregeln, semantische IDREF-Beziehungen, Patternanforderungen, Tastatur-/Fokusregeln oder eine Ankündigungssemantik. Attribute und Properties sind allgemein beschreibbar, einschließlich möglicher ARIA-bezogener Namen.",
+      "interpretation": "N im CEM-Kern für die drei Accessibility-Anforderungen. Ein Attribut namens aria-label oder ein Textverweis auf ein Pattern ist noch kein Accessibility-Fachmodell. Dies sagt nichts über die tatsächliche Barrierefreiheit einer mit CEM dokumentierten Komponente aus.",
+      "next_check": "Für diesen Formatbefund ist kein Screenreadertest nötig. Zusätzliche Accessibility-Metadaten eines Plugins wären als eigenes Modell zu prüfen und nicht ungeprüft dem Standard zuzuschreiben."
+    },
+    {
+      "id": "C43",
+      "source": "S01",
+      "additional_sources": [
+        "S20"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Ein CEM-Dokument verlangt auf oberster Ebene nur schemaVersion und modules. Es verlangt keine visuellen Regeln und kein UX- oder Accessibility-Modell. Damit lässt sich der Interface-Beitrag eigenständig führen.",
+      "interpretation": "Positiver Teilbefund, aber U für die vollständige Vier-Domänen-Anforderung: CEM allein definiert weder die anderen drei Originalformate noch deren gemeinsame Paketbindung. Ohne diese Bindung ist vollständige Unabhängigkeit samt korrekten Beziehungen nicht entschieden. Eine fremde Zusatzstruktur innerhalb CEM wäre keine automatisch standardisierte Domäne.",
+      "next_check": "Offene Frage: Lassen sich die separat gewählten Domänenartefakte mit unverändertem CEM verbinden, ohne dort fachfremde Pflichtfelder oder doppelte Definitionen einzuführen? Diese Paketfrage erst nach Untersuchung der übrigen Kandidaten klären."
+    },
+    {
+      "id": "C44",
+      "source": "S01",
+      "additional_sources": [
+        "S20"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X02",
+        "X03",
+        "X04"
+      ],
+      "finding": "Reference benennt exportierte Symbole über name/package/module. SourceReference.href zeigt auf Quellcode. Slot/CssPart benennen APIs einer Deklaration. Der Kern enthält keine UI-Instanzknoten, instanzbezogenen Teile-IDs, Domänen-Zielarten oder Komponentenbaum-/Instanzbindungen.",
+      "interpretation": "N im CEM-Kern für elementbezogene Instanzidentität, vierformatige Domänenreferenzen und wiederverwendbare Komponenteninstanzen. Deklarationsreferenzen sind vorhanden, verweisen jedoch auf andere Zielarten. Slotannahme, Vererbung und Mixins sind kein Contract für ein Overlay, das eine ScrollArea mit eigenem Instanzkontext verwendet. Auch eine Quellcode-URL ist keine solche Bindung.",
+      "next_check": "Eine spätere Abbildung müsste Deklaration, UI-Instanz und Teilidentität ausdrücklich unterscheiden. Ein solcher Mechanismus wird in diesem Schritt weder entworfen noch als vorhandener Adapter behauptet."
+    },
+    {
+      "id": "C45",
+      "source": "S01",
+      "additional_sources": [
+        "S20",
+        "S21",
+        "S22"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "Reference hat name/package/module, aber keine Version-/Integritätsbindung. schemaVersion bezeichnet die Version des CEM-Schemas. Die README beschreibt Manifest-Discovery über package.json.customElements. Der Analyzer kann mit --dependencies Metadaten vorhandener Abhängigkeiten einbeziehen; das ist eine Werkzeugfunktion.",
+      "interpretation": "N für eigenständige reproduzierbare Versionsbindung externer Referenzen im CEM-Kern. Ein vorhandenes npm-Lockfile könnte den umgebenden Installationsstand fixieren, ist aber kein normierter Versionsresolver des CEM-Dokuments. Externe Symbole sind beschreibbar; ein standardisierter referenzlokaler Versions-/Integritätsvertrag ist damit nicht gegeben. C35 wird dadurch auf Grundlage der vertieften Prüfung präzisiert.",
+      "next_check": "Keine Paketinstallation nötig, um die Felder und ihre dokumentierte Bedeutung festzustellen. Ob ein zukünftiges Contract-Paket externes Locking übernimmt, bleibt außerhalb dieses Schritts offen."
+    },
+    {
+      "id": "C46",
+      "source": "S20",
+      "additional_sources": [
+        "S21"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "Das Formatprojekt veröffentlicht ein eigenständiges JSON Schema nach Draft-07. Root verlangt schemaVersion/modules; lokale Schema-$ref verweisen auf die mitgelieferten Definitionen. Die README zeigt den direkten Import dieses Schemas.",
+      "interpretation": "D für das Beibehalten der originalen CEM-Schemaprüfung eines separaten Interface-Artefakts. Hier wurde das Schema gelesen, kein Validator ausgeführt. Geprüft werden Datenform und Pflichtfelder, nicht automatisch Typstring-/CSS-Grammatik, UI-Referenzen oder das gesamte Vier-Domänen-Paket.",
+      "next_check": "Ein späterer Versuch kann einen Draft-07-Validator auf ein gültiges und ein strukturell falsches Manifest anwenden. Das ist für die dokumentierte Verfügbarkeit des unveränderten Schemas noch nicht nötig."
+    },
+    {
+      "id": "C47",
+      "source": "S01",
+      "additional_sources": [
+        "S20"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X07",
+        "X08"
+      ],
+      "finding": "Das JSON Schema prüft strukturelle Datentypen und Pflichtfelder. Die TypeScript-Kommentare nennen einzelne Konsistenzregeln, etwa korrespondierende Attribute oder gemeinsam vorkommende Referenz-Indizes. Es gibt aber keine paketweite Domänen-Ownership-/Vorrangregel und keine beschriebenen Cross-Domain-Konflikt-, Instanz- oder Zielauflösungsprüfungen.",
+      "interpretation": "N im CEM-Kern für die gesamte Paketkonfliktprüfung und eindeutige domänenübergreifende führende Quelle. Die Empfehlung eines kanonischen Exports betrifft Symbolidentität, nicht Ownership über alle Fachmodelle. Fehlendes additionalProperties:false in den geprüften Objekten bedeutet, dass zusätzliche Daten nicht allein deshalb scheitern; es verleiht ihnen keine definierte Semantik oder Prüfung.",
+      "next_check": "Plugins oder Verbraucher könnten zusätzliche Prüfungen implementieren. Solche Fähigkeiten dürfen erst nach eigener Prüfung bewertet werden; sie sind nicht automatisch Eigenschaften des CEM-Formats."
+    },
+    {
+      "id": "C48",
+      "source": "S05",
+      "additional_sources": [
+        "S06"
+      ],
+      "evidence": "E1",
+      "rows": [
+        "G02"
+      ],
+      "finding": "Format §4 legt JSON als Austauschformat fest; §8/9 definieren Werte und Typen. Resolver §3/5/6 legt JSON, JSON-serialisierbare Kontexteingaben und Auflösungsschritte fest, ohne JavaScript-/React-Funktionen im Dokument vorauszusetzen.",
+      "interpretation": "Direkt für den sprachneutralen Token-/Resolverkern. Plattformkonvertierung kann dennoch verlustbehaftet sein, etwa rem ohne entsprechendes Zielkonzept (Format §8.2). Kein Nachweis identischer Renderer oder universeller UI-Semantik.",
+      "next_check": "Für diese Modellfrage ist kein Laufzeitversuch nötig; spätere Zielformatkonvertierung gesondert prüfen."
+    },
+    {
+      "id": "C49",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S24",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I01",
+        "I02",
+        "I03"
+      ],
+      "finding": "Format modelliert Tokenwerte und beliebig benannte Gruppen. Resolver modelliert Token-Sets, Kontexte und Auflösungsreihenfolge. Weder öffentliches Komponenten-API-Modell mit Inputs/Outputs noch Event-Payloadmodell oder Komponenten-Anatomie ist darin definiert.",
+      "interpretation": "N im geprüften Format-/Resolverkern. Ein Token namens value oder eine Gruppe input ist kein öffentlicher Input beziehungsweise kein identifizierter UI-Teil. Format §3.7 verbietet gerade die Ableitung von Typ oder Zweck allein aus Gruppennamen. JSON-Typen für Designwerte erfüllen I01 nicht.",
+      "next_check": "Kein Implementierungsversuch nötig, um diese Fachmodellgrenze festzustellen. Erweiterungsdaten wären separat spezifizierte Semantik, keine bereits definierte Standardfähigkeit."
+    },
+    {
+      "id": "C50",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V02"
+      ],
+      "finding": "Format §6.4 definiert Gruppenvererbung mit lokalen Overrides. Resolver §4.1.5/§5/§6 definiert benannte Kontexte eines Modifiers mit Tokenquellen, Auswahl durch Input und eindeutiger Auflösungsreihenfolge.",
+      "interpretation": "Direkt für benannte visuelle Varianten auf Tokenebene: Unterschiedliche benannte Kontexte liefern unterschiedliche strukturierte Designwerte/Referenzen. Ein Zustandsname kann als Kontextwert verwendet werden; DTCG entscheidet jedoch nicht, wann dieser UX-Zustand eintritt oder welche Komponente den Wert anwendet. Die externe Bindung bleibt X03.",
+      "next_check": "Kein neuer Variantentyp wird erfunden. Später Kontextauswahl, Default und Überschreibungen gegen ein konkretes Resolverwerkzeug prüfen; hier kein Laufzeitnachweis."
+    },
+    {
+      "id": "C51",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S24",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V04",
+        "V05",
+        "V06"
+      ],
+      "finding": "Format §8.2 definiert Dimensionen als Wert/Einheit, §9 zusammengesetzte Stylewerte. Resolver verarbeitet diese Tokenstrukturen. Kein Kernmodell definiert UI-Anker-/Zielbeziehungen, die Anwendung einer Maximalhöhe auf eine Fläche oder Overflow-/Scrollverhalten.",
+      "interpretation": "N im Kern für Geometrie, Flächenbegrenzung und Overflow. Ein Abstand oder eine Maximalhöhe kann als Dimensionstoken gespeichert werden; der Tokenname allein bindet ihn nicht mit normierter Geometriesemantik an ein Element. Shadow.offsetX/offsetY beschreibt einen Schatten, keine allgemeine Overlayposition.",
+      "next_check": "Für die festgestellte Semantikgrenze ist kein praktischer Versuch nötig. Die spätere Anwendung der Werte gehört zu einem weiteren bereits separat zu prüfenden Modell."
+    },
+    {
+      "id": "C52",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S24",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B01",
+        "B02",
+        "B03",
+        "B04"
+      ],
+      "finding": "Format §9.5 transition enthält duration, delay und timingFunction. Resolver-Inputs wählen Kontexte; sie beschreiben keine Benutzerereignisfolge, Initialzustände, Guards/Aktionsmaschine oder Fokus-/Tastaturbindungen.",
+      "interpretation": "N für die vier UX-Verhaltensanforderungen im DTCG-Kern. Ein transition-Token ist ein Satz Animationsparameter, kein Zustandsübergang. Bedingte Tokenauswahl durch Modifier ist ebenfalls kein UX-Automat und verarbeitet keine UI-Event-/Kontextdaten nach einer solchen Maschine.",
+      "next_check": "Keine Komponentenimplementierung erforderlich. Für ein späteres Behavior-Modell bleibt nur zu klären, wie dessen Zustandsausgabe die dokumentierte Resolvereingabe liefert."
+    },
+    {
+      "id": "C53",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S24",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A01",
+        "A02",
+        "A03"
+      ],
+      "finding": "Die definierten Token-/Resolvermodelle enthalten keine Rollen-/Namensbeziehungen, Fokus-/Tastaturpatterns oder Live-Region-/Ankündigungssemantik. Farben und High-Contrast-Kontexte können zugängliche Gestaltung unterstützen.",
+      "interpretation": "N im Kern für die drei Accessibility-Anforderungen. Wahrnehmbare Designwerte oder ein Kontext namens highContrast sind kein vollständiges Accessibility-Fachmodell und kein Nachweis einer Screenreaderrückmeldung.",
+      "next_check": "Kein Screenreadertest nötig, um diese Formatgrenze einzuordnen. Tatsächliche Wahrnehmung und Accessibility-Bindungen sind hier nicht untersucht."
+    },
+    {
+      "id": "C54",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S24",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Token- und Resolverdokumente verlangen kein Komponenteninterface, kein UX-Verhaltensmodell und keine Accessibility-Definition. Sie können als eigenständiger Designwerte-Beitrag geführt werden.",
+      "interpretation": "Positiver Teilbefund; die vollständige Vier-Domänen-Anforderung bleibt U. Aus DTCG allein folgt nicht, dass die noch separat zu wählenden anderen Originalformate unverändert und widerspruchsfrei gemeinsam gebunden werden können.",
+      "next_check": "Konkrete offene Frage: Wie referenzieren die anderen Domänen die aufgelösten Tokens/gewählte Permutation, ohne Werte oder Zuständigkeiten doppelt zu definieren? Diese Paketbindung nach den weiteren Einzelprüfungen klären."
+    },
+    {
+      "id": "C55",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S24",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X02",
+        "X03",
+        "X04"
+      ],
+      "finding": "Format §6/7 definiert Token-/Gruppenpfade, Aliase, $extends und JSON-Pointer-Wertzugriff. Resolver §4.2 erlaubt Verweise auf Tokenquellen und Resolverstrukturen. Weder UI-Element-/Instanzidentität noch Zustands-/Event-/Accessibility-Zielarten oder wiederverwendbare Komponenteninstanzen sind standardisiert.",
+      "interpretation": "N im Kern für die drei UI-Integrationsanforderungen. Tokenidentität und Wiederverwendung von Gruppen sind echte Beiträge, aber keine Identität einer Inputinstanz oder Komposition einer ScrollArea. Die JSON-Pointer-Syntax macht das adressierte Objekt nicht automatisch zu einem UI-Element. $extensions kann fremde Metadaten tragen, deren Bedeutung bleibt außerhalb des Kerns.",
+      "next_check": "Für diesen begrenzten Befund keine neue Referenzsyntax und keinen Adapter entwerfen. Eine spätere domänenübergreifende Abbildung muss den Unterschied zwischen Wert, Definition und UI-Instanz ausdrücklich behandeln."
+    },
+    {
+      "id": "C56",
+      "source": "S06",
+      "additional_sources": [
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "Resolver §4.2 beschreibt lokale und externe URI-/Pointerreferenzen. Unterstützung von Referenzen im selben Dokument ist verpflichtend; Dateisystem- und Netzwerk-URIarten können Werkzeuge unterschiedlich unterstützen. version=2025.10 bezeichnet die Resolver-Spezifikation.",
+      "interpretation": "N im Kern für reproduzierbar versionierte externe Komponenten-/Teilmodellabhängigkeiten: Eine externe Tokenquelle ist beschreibbar, aber ein Versions-/Integritäts- oder Lockvertrag für deren Inhalt ist nicht definiert. Eine unveränderliche URL kann außerhalb des Formats gewählt werden; daraus folgt weder verpflichtende Remoteauflösung noch eigenes Versionsmanagement des Resolvers.",
+      "next_check": "Die konkrete externe URI-Unterstützung eines später ausgewählten Werkzeugs wäre bei Bedarf zu prüfen. Hier wird nicht behauptet, dass externe Referenzen generell unmöglich sind."
+    },
+    {
+      "id": "C57",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S24",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "Auf der offiziellen DTCG-Domain sind getrennte JSON-Schemata für Format und Resolver 2025.10 verfügbar, beide mit Draft-07-Schemadialekt. Resolver §4.4 nennt ausdrücklich sein Schema zur Editor-/Syntaxprüfung. Die Formatfassung enthält noch einen redaktionellen Hinweis zur Schemaarbeit.",
+      "interpretation": "D für die Beibehaltung veröffentlichter DTCG-Schemata eines separaten Domänenartefakts. Die Schemahilfen sind von der normativen Fachsemantik zu unterscheiden: Ein Schemaerfolg beweist keine korrekte Alias-/Vererbungs-/Resolverausführung. Kein Validator wurde ausgeführt, und vollständige Übereinstimmung von Schemata und Bericht wurde nicht bewiesen.",
+      "next_check": "Später bei tatsächlichem Werkzeugbedarf Schemaabhängigkeiten laden und Positiv-/Negativfälle prüfen. Semantische Prüfungen wie Zyklen und Kontextauflösung separat behandeln."
+    },
+    {
+      "id": "C58",
+      "source": "S05",
+      "additional_sources": [
+        "S06",
+        "S24",
+        "S25"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X07",
+        "X08"
+      ],
+      "finding": "Format §6.4/§6.7/§7 fordert Prüfung von Verweisen, Zyklen und Typen sowie definierte lokale Overrides. Resolver §4.2/§6 regelt ungültige Pointer, Eingaben und Reihenfolge; bei Tokenkonflikten gewinnt der spätere Eintrag.",
+      "interpretation": "N für die vollständige Paketkonfliktprüfung und domänenübergreifende Ownership. DTCG enthält bereits präzise interne Prioritäts- und Fehlerregeln; diese prüfen aber weder widersprüchliche UX-/Accessibility-Regeln noch UI-Instanzkollisionen oder führende Quellen fremder Fachmodelle. Nicht alle Konflikte werden abgewiesen: gewollte Tokenüberschreibungen sind definiertes Verhalten.",
+      "next_check": "Keine eigenen Konfliktregeln in diesem Schritt erfinden. Eine spätere Paketprüfung muss DTCGs interne Regeln erhalten und zusätzlich die noch zu definierenden Domänenbindungen prüfen."
+    },
+    {
+      "id": "C59",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I01",
+        "I03"
+      ],
+      "finding": "SCXML §3 definiert Zustände/Transitionen; §5 Daten und Parameter; §6 externe Kommunikation und Dienste. Die Standardsprache definiert kein öffentliches UI-Property-Typsystem und keine Komponenten-Anatomie mit Input/Popup/Slots. <data id> ist eine Datenmodellvariable; <param> übergibt Werte, nicht eine typisierte öffentliche Komponentenbeschreibung.",
+      "interpretation": "N im SCXML-1.0-Kern für I01 und I03. Zustand-ID, Dienstname oder frei benannte Datenvariable sind keine standardisierte UI-Property beziehungsweise kein UI-Teil. Die Wahl eines Datenmodells ist nicht mit einem öffentlichen Interfacevertrag gleichzusetzen.",
+      "next_check": "Die Fachmodellgrenze ist durch die Spezifikation bestimmbar; keine Komponentenimplementierung erforderlich. Ein späterer Interfacevertrag könnte Daten und Dienstparameter binden, wird hier aber nicht entworfen."
+    },
+    {
+      "id": "C60",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I02"
+      ],
+      "finding": "§5.7 und §6.2 definieren <send event> mit benannten <param>-Werten, namelist oder <content>. §5.10.1 definiert _event.data; §6.2.5 und Anhang C unterscheiden I/O-Prozessoren. Damit können Ereignisse einschließlich strukturierter Daten gesendet werden.",
+      "interpretation": "Positiver Teilbefund, aber U für einen vom Auslösezeitpunkt getrennten öffentlichen Event-/Payloadvertrag. <send> beschreibt ausführbare Kommunikation und kann Eventnamen/Werte dynamisch berechnen. Die genannte öffentliche Signatur als separat überprüfbare Beschreibung folgt daraus noch nicht. Das Versenden strukturierter Daten wird ausdrücklich nicht als fehlend bewertet.",
+      "next_check": "Offene Frage: Reicht eine klar abgegrenzte, dokumentierte SCXML-Teilmenge mit statischen Events und benannten Parametern aus, um die öffentlichen Payloadfelder eindeutig und unabhängig vom Sendepunkt zu bestimmen, oder ist eine separate Eventdeklaration nötig? In diesem Durchgang keine Praxisversuche."
+    },
+    {
+      "id": "C61",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "V01",
+        "V02",
+        "V03",
+        "V04",
+        "V05",
+        "V06"
+      ],
+      "finding": "Die SCXML-Kernelemente beschreiben Zustandslogik, Daten und Kommunikation. Kein definierter Element-/Attributsatz beschreibt Design-Tokentypen, visuelle Styles/Varianten, Themeauflösung, Layoutanker, Flächenbegrenzung oder Overflow. <content>/<data> dürfen fremde Inhalte enthalten; §4.10 erlaubt Erweiterungen ausführbarer Inhalte.",
+      "interpretation": "N für die sechs visuellen Anforderungen im SCXML-1.0-Kern. Werte oder XHTML/CSS lassen sich transportieren, erhalten dadurch aber keine SCXML-eigene Visual-/Layoutsemantik. Ein benannter Zustand wie dark oder highlighted definiert weder dessen Farben noch die Themeauflösung. Standarderweiterbarkeit ist kein Nachweis eines bestimmten vorhandenen visuellen Zusatzmodells.",
+      "next_check": "Keine visuelle Laufzeitprüfung nötig, um den Kernumfang abzugrenzen. Eine eventuelle externe Darstellungsspezifikation bleibt ein gesonderter Beitrag; keine zusätzliche Kandidatenbewertung erfolgt hier."
+    },
+    {
+      "id": "C62",
+      "source": "S09",
+      "additional_sources": [],
+      "evidence": "E1",
+      "rows": [
+        "B04"
+      ],
+      "finding": "§3.12/§3.13 verarbeiten anwendungsspezifische externe Ereignisse; §6 und Anhang C definieren Kommunikation über I/O-Prozessoren. Der SCXML-Kern definiert jedoch weder DOM-Key-/Fokusereignisse als Eingabequelle noch eine generische UI-focus-Aktion.",
+      "interpretation": "A mit konkret benanntem Abbildungsbedarf: Die Hostintegration muss etwa ein bestimmtes Tastatur-/Fokusereignis in ein SCXML-Ereignis mit passenden Daten übersetzen und eine ausgehende Fokusanforderung an die UI weitergeben. Die danach ausgeführte Ereignis-/Transitionslogik ist standardisiert. Es wird kein vorhandener universeller UI-Adapter behauptet.",
+      "next_check": "Welche Ereignisnamen, Elementidentitäten und Hostaktionen verwendet werden, ist später ausdrücklich zu binden. Kein Interpreter oder Adapter wurde installiert beziehungsweise getestet."
+    },
+    {
+      "id": "C63",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A01",
+        "A02",
+        "A03"
+      ],
+      "finding": "SCXML definiert weder Accessibility-Rollen-/Namensbeziehungen noch verpflichtende UI-Bedienmuster oder Live-Region-/Screenreader-Semantik. <log> erzeugt Debugausgabe; <send>/<invoke> kommuniziert mit Diensten. Optionale VoiceXML-Diensttypen sind keine allgemeine Accessibility-Spezifikation.",
+      "interpretation": "N für die drei Accessibility-Anforderungen im SCXML-1.0-Kern. Eine Maschine kann Aktionen zur Bedienbarkeit koordinieren, aber die Bedeutung und Anforderungen dieser Aktionen müssen aus einer anderen Quelle kommen. Sprach-/Audioausgabe eines Dienstes darf nicht pauschal mit Barrierefreiheit gleichgesetzt werden.",
+      "next_check": "Für die Formatabgrenzung ist kein Screenreadertest nötig. Spätere Bindungen an vereinbarte Accessibility-Regeln bleiben separat nachzuweisen."
+    },
+    {
+      "id": "C64",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Ein SCXML-Dokument kann gemäß §3/A.1 ohne visuelle Beschreibung, öffentliches UI-Interface oder Accessibility-Definition geführt werden. Ein eigenständiges Behavior-Artefakt ist damit möglich.",
+      "interpretation": "Positiver Teilbefund; U für das vollständige Vier-Domänen-Paket. Die Spezifikation allein bestimmt nicht, wie die separat gewählten Originalformate und dieselben UI-Elemente ohne widersprüchliche Definitionen verbunden werden. Erweiterungsnamespaces lösen diese Ownershipfrage nicht von selbst.",
+      "next_check": "Offene Frage: Welche Referenz-/Ereignisbindungen verbinden ein unverändertes SCXML-Verhaltensdokument mit den drei anderen Domänen, und bleiben dabei deren eigenen Validatoren und führenden Quellen erhalten? Keine Architekturentscheidung in diesem Schritt."
+    },
+    {
+      "id": "C65",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X02",
+        "X03"
+      ],
+      "finding": "§3.14 definiert innerhalb einer Session eindeutige IDs für SCXML-Elemente; für send/invoke können pro Ausführung neue IDs entstehen. §6 kennt URI-Dienstziele und invoke-IDs. Diese Kennungen adressieren Zustände, Sendevorgänge oder Dienste, nicht standardisierte UI-Elementinstanzen oder fremde Domänenknoten.",
+      "interpretation": "N im SCXML-Kern für die hier verlangte UI-Elementidentität und domänenübergreifende semantische Referenz. Vorhandene IDs sind ein echter Teilbeitrag, aber eine state-ID ist nicht automatisch die Identität eines Inputs. URI-Syntax und fremder Inlineinhalt definieren keine gemeinsame UI-/Design-/Accessibility-Zielart.",
+      "next_check": "Eine spätere Zuordnung müsste UI-Instanz, Teil-ID und Maschinen-/invoke-Identität ausdrücklich unterscheiden. Weder URN-Technik noch ein bestimmter Referenzresolver wird hier festgelegt."
+    },
+    {
+      "id": "C66",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X04"
+      ],
+      "finding": "§6.4 definiert invoke mit src/content, eigener Dienstinstanz, id/idlocation, Parameterübergabe, Abbruch und Abschlussereignis. §6.4.3 legt für aufgerufene SCXML-Sessions die Initialisierung passender Datenvariablen und Kommunikation fest. §6.4.4 beschreibt logische Datentrennung.",
+      "interpretation": "Starker positiver Teilbefund: wiederverwendbare Verhaltensmaschinen mit eigenem Instanzkontext und Lebenszyklus sind definiert. U bleibt für vollständige UI-Komponentenkomposition wie Overlay verwendet ScrollArea, weil Sichtstruktur, öffentliche UI-Schnittstelle, Elementidentität und deren Bindungen nicht durch invoke bestimmt werden. Weder vollständige UI-Komposition noch generelle Nichtunterstützung wird daraus abgeleitet.",
+      "next_check": "Offene Frage: Reicht invoke als Behavior-Beitrag für die Komposition autonomer UI-Unterkomponenten, wenn Identitäts-, Interface- und Darstellungsbindungen separat vorliegen? Konkrete Interpreter-/Hostfähigkeiten und Mehrfachinstanzen werden ausdrücklich nicht getestet."
+    },
+    {
+      "id": "C67",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "§6.4 erlaubt externe src-URIs für aufgerufene Dienste; §5.3 erlaubt externe Datenquellen. version=1.0 bezeichnet die SCXML-Sprache. Der Kern definiert keine bibliotheksbezogenen Versionsconstraints, Inhaltsintegrität oder Lockdatei-/Abhängigkeitsauflösung.",
+      "interpretation": "N für eine eigenständige reproduzierbare Versionsbindung externer Teilmodelle im SCXML-Kern. Ein Host kann eine unveränderliche Quell-URI oder ein externes Locking wählen; das ist kein standardisierter SCXML-Versionsresolver. Dienstaufruf und Versionsmanagement bleiben unterscheidbar.",
+      "next_check": "Keine externe Quelle wird zur Ausführung geladen. Später muss die konkrete Host-/Paketbindung für reproduzierbare Quellen ausdrücklich untersucht werden."
+    },
+    {
+      "id": "C68",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "Anhang E verweist auf eigenständige W3C-XSD-Schemata. Der gelesene scxml.xsd-Driver bindet Core-, Data- und External-Module ein; scxml-strict.xsd bindet separate strengere Module ein. Anhang E unterscheidet ein lockeres Schema-1.0- und ein strengeres Schema-1.1-Set.",
+      "interpretation": "D für das Beibehalten einer separaten originalen SCXML-Schemaprüfung. Anhang E ist informativ; das lockere Schema erzwingt ausdrücklich nicht sämtliche Spezifikationsbedingungen. A.1 verlangt zusätzliche syntaktische und datenmodellspezifische Regeln, A.2 fordert nicht bei jedem konformen Prozessor einen validierenden XML-Parser. Schemaerfolg und Interpreterkonformität sind daher verschieden.",
+      "next_check": "Es wurde kein XSD-Validator oder Interpreter ausgeführt. Die vollständigen Schemaabhängigkeiten, insbesondere die strengeren Module, wurden nicht als ausführbare Validierungskette getestet."
+    },
+    {
+      "id": "C69",
+      "source": "S09",
+      "additional_sources": [
+        "S26"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X07",
+        "X08"
+      ],
+      "finding": "§3.11/§3.14/A definieren gültige Zustandskonfigurationen, IDs und Dokumentkonformität; §3.13/D definieren Transitionsauswahl und Ausführung. Die Regeln betreffen SCXML-Zustände und Ereignisse, nicht Ownership oder semantische Konflikte zwischen Interface-, Design-, Behavior- und Accessibility-Artefakten.",
+      "interpretation": "N für die vollständige Paketkonfliktprüfung und domänenübergreifende führende Quelle im SCXML-Kern. Eigene Gültigkeits-/Prioritätsregeln bleiben vorhanden und müssen erhalten werden. Ein ungültiges Transitionziel oder ein Ausführungsfehler ist eine andere Prüfkategorie als widersprüchliche Tastatur- oder Darstellungsanforderungen fremder Domänen.",
+      "next_check": "Keine neue Konfliktarchitektur entwerfen. Später zusätzliche Paketregeln getrennt von SCXML-Konformität und konkreten Interpreterdiagnosen prüfen."
+    },
+    {
+      "id": "C70",
+      "source": "S28",
+      "additional_sources": [
+        "S29"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "G01"
+      ],
+      "finding": "MachineConfig und StateNodeConfig definieren strukturierte Zustände, Übergänge und benannte Implementierungen.",
+      "interpretation": "D für das dokumentierte Konfigurationsmodell, nicht für eine vollständig JSON-serialisierbare Maschine. Inlinefunktionen und externe Implementierungen bleiben ausführbarer JS/TS-Code.",
+      "next_check": "Keine vollständige sprachneutrale Serialisierung behaupten; G02 bleibt A."
+    },
+    {
+      "id": "C71",
+      "source": "S28",
+      "additional_sources": [
+        "S29"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I01"
+      ],
+      "finding": "setup.types.input deklariert typisierte Actor-Eingaben; createActor übergibt input, aus dem initialer context gebildet werden kann.",
+      "interpretation": "D im begrenzten Actor-Interface: typisierte öffentliche Eingabefelder. Kein allgemeiner Vertrag für beliebige veränderliche UI-Properties und keine Runtime-Schemavalidierung.",
+      "next_check": "Live-UI-Propertybindung separat untersuchen, wenn gefordert."
+    },
+    {
+      "id": "C72",
+      "source": "S28",
+      "additional_sources": [
+        "S32"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "I02"
+      ],
+      "finding": "setup.types.emitted deklariert eine öffentliche Eventunion einschließlich Payloadfeldern. emit erzeugt diese Ereignisse; actor.on hört darauf.",
+      "interpretation": "D für getrennt typisierte ausgegebene Actor-Events. Interne events und öffentliche emitted sind unterscheidbar; Auslösepunkt und Typdeklaration sind getrennt. TypeScript-Typen sind keine Runtime-Payloadprüfung.",
+      "next_check": "Eventreihenfolge und fachlicher Auslösezeitpunkt weiterhin ausdrücklich festlegen."
+    },
+    {
+      "id": "C73",
+      "source": "S28",
+      "additional_sources": [],
+      "evidence": "E2",
+      "rows": [
+        "I03"
+      ],
+      "finding": "StateNodeConfig definiert Zustandsknoten, invoke, transitions, tags und frei verwendbares meta; keine standardisierte UI-Anatomie mit Input, Popup oder Slots.",
+      "interpretation": "N im untersuchten XState-Core. Zustandsnamen und meta geben UI-Teilen keine standardisierte Bedeutung.",
+      "next_check": "Ein externer Anatomievertrag wäre ein gesonderter Beitrag."
+    },
+    {
+      "id": "C74",
+      "source": "S28",
+      "additional_sources": [],
+      "evidence": "E2",
+      "rows": [
+        "V01",
+        "V02",
+        "V03",
+        "V04",
+        "V05",
+        "V06"
+      ],
+      "finding": "Der gelesene Core-Konfigurationsumfang definiert kein Token-Typsystem, keine visuellen Stylevarianten oder Themeauflösung, Ankergeometrie, Flächenbegrenzung oder Overflow-Semantik.",
+      "interpretation": "N für diese visuellen Anforderungen im Core. Ein Zustand dark oder Farbwerte im context beschreiben noch keine formale Gestaltung. Beliebiges meta ist kein vorhandener Visualstandard.",
+      "next_check": "Externe Darstellung nicht pauschal dem Core zurechnen."
+    },
+    {
+      "id": "C75",
+      "source": "S28",
+      "additional_sources": [
+        "S30"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B02"
+      ],
+      "finding": "Guards sind synchrone reine Funktionen mit booleschem Ergebnis; die erste erfüllte bewachte Transition kann gewählt werden. Actions sind Effekte bei Übergängen oder Eintritt/Austritt; benannte parametrisierte Implementierungen und eingebaute Aktionen sind dokumentiert.",
+      "interpretation": "D für dokumentierte Ausführung samt konkreter JS/TS-Implementierung. Serialisierte Namen allein enthalten die Funktionssemantik nicht; Actions werden nicht als automatisch abgewartete asynchrone Aufgaben verstanden.",
+      "next_check": "Sprachneutralität bleibt eingeschränkt; keine Übersetzung zu SCXML behaupten."
+    },
+    {
+      "id": "C76",
+      "source": "S28",
+      "additional_sources": [
+        "S29",
+        "S30"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "B03"
+      ],
+      "finding": "context und Ereignispayloads werden von Guards/Actions verarbeitet; assign beschreibt Context-Updates. Initialer context kann pro Actor aus input erzeugt werden.",
+      "interpretation": "D für Datenverarbeitung im XState-Ausführungsmodell. Die Semantik benutzerdefinierter Ausdrücke hängt von JS/TS ab.",
+      "next_check": "Keine Laufzeitversuche durchgeführt."
+    },
+    {
+      "id": "C77",
+      "source": "S30",
+      "additional_sources": [
+        "S31"
+      ],
+      "evidence": "E1",
+      "rows": [
+        "B04"
+      ],
+      "finding": "actor.send nimmt Ereignisse entgegen; invoke dokumentiert unter anderem eine DOM-Ereignisquelle über Host-/Bibliothekscode. Actions können Hosteffekte auslösen.",
+      "interpretation": "A: Ein UI-Binding muss konkrete Tastatur-/Fokusereignisse auf Actor-Events und Fokusaktionen auf reale UI-Elemente abbilden. Keine universelle plattformneutrale Tastatur-/Fokusbindung im Core belegt.",
+      "next_check": "Elementidentitäten, Eingabeabbildungen und Hostaktionen ausdrücklich definieren."
+    },
+    {
+      "id": "C78",
+      "source": "S28",
+      "additional_sources": [
+        "S30"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "A01",
+        "A02",
+        "A03"
+      ],
+      "finding": "Die gelesenen Core-Typen und Aktionsmodelle definieren keine Accessibility-Rollen-/Namensbeziehungen, verpflichtende Bedienmuster oder zugängliche dynamische Ansagen.",
+      "interpretation": "N im Core; Effekte können eine Accessibility-Integration ausführen, liefern deren fachliche Regeln aber nicht selbst.",
+      "next_check": "Externe Patternanforderungen und Plattformsemantik getrennt nachweisen."
+    },
+    {
+      "id": "C79",
+      "source": "S28",
+      "additional_sources": [
+        "S29"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Eine XState-Verhaltensmaschine benötigt keine visuelle oder Accessibility-Datei. Eigenständiges Behavior ist möglich.",
+      "interpretation": "Positiver Teilbefund; die vollständige Verbindung vier separat geführter Originalmodelle ist damit nicht nachgewiesen.",
+      "next_check": "Offen: Welche Referenzbindungen erhalten unabhängige Validatoren und eindeutige führende Quellen aller vier Domänen?"
+    },
+    {
+      "id": "C80",
+      "source": "S28",
+      "additional_sources": [
+        "S31"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X02",
+        "X03"
+      ],
+      "finding": "Zustands-IDs adressieren Maschinenknoten; Actor-IDs/-Referenzen dienen Actor-Kommunikation und Lebenszyklen.",
+      "interpretation": "N für standardisierte UI-Elementidentität und fachliche Verweise zwischen den vier Modellen. Eine Zustands-ID ist nicht automatisch eine Input-Instanz; meta liefert keine definierte Zielsemantik.",
+      "next_check": "Eine spätere Abbildung muss UI-Teil, Komponenteninstanz, Actor und Zustand unterscheiden."
+    },
+    {
+      "id": "C81",
+      "source": "S28",
+      "additional_sources": [
+        "S31"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X04"
+      ],
+      "finding": "createActor erzeugt unabhängige Instanzen; invoke und spawn verwenden wiederverwendbare Actor-Logik mit eigenem Context und definierten Lebenszyklen. invoke folgt der Lebensdauer des aufrufenden Zustands.",
+      "interpretation": "Starker Teilbeitrag für wiederverwendbare Verhaltensinstanzen. Vollständige UI-Komposition wie Overlay verwendet ScrollArea einschließlich Interface, Darstellung und Elementidentität ist noch nicht belegt.",
+      "next_check": "Offen: Reicht Actor-Komposition als Behavior-Beitrag, wenn die übrigen Komponentenbindungen unabhängig beschrieben werden?"
+    },
+    {
+      "id": "C82",
+      "source": "S28",
+      "additional_sources": [
+        "S31"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "invoke.src referenziert registrierte Actor-Logik oder ein Logic-Objekt. Die Maschinenversion ist Metadatum; der untersuchte Core definiert keine externe Bibliotheksauflösung mit Versionsconstraints und Inhaltsintegrität.",
+      "interpretation": "N für einen Core-eigenen reproduzierbaren Resolver externer Fachmodelle. Ein Paketmanager kann JS-Abhängigkeiten pinnen; das ist ein gesonderter Mechanismus.",
+      "next_check": "Keinen Paket-Lockmechanismus aus einem version-Feld ableiten."
+    },
+    {
+      "id": "C83",
+      "source": "S28",
+      "additional_sources": [
+        "S33"
+      ],
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "TypeScript-Konfigurationstypen erlauben statische Prüfungen. StateMachine führt schemas als unknown. Persistierte Snapshots sind Zustandsdaten; sie ersetzen die separat benötigte Actor-Logik nicht.",
+      "interpretation": "Typebene ist positiv belegt, ein unterstütztes originales Runtime-Schema für ein eigenständiges neutrales Contract-Artefakt dagegen nicht. schemas: unknown ist kein Nachweis eines Validators und auch kein Beweis seiner Nichtexistenz.",
+      "next_check": "Offen: Welche offiziell unterstützte Artefakt-/Schemaform lässt sich unabhängig von ausführbaren Implementierungen validieren, und welche Semantik deckt sie ab?"
+    },
+    {
+      "id": "C84",
+      "source": "S28",
+      "additional_sources": [],
+      "evidence": "E2",
+      "rows": [
+        "X07",
+        "X08"
+      ],
+      "finding": "Core-Typen und Ausführungsregeln betreffen Zustände, Events und Actors; sie definieren keine führende Quelle oder Konfliktprüfung fremder Interface-, Visual- und Accessibility-Artefakte.",
+      "interpretation": "N für paketweite fachliche Referenz-/Konfliktprüfung und Ownership. Eigene Typ-/Zustandsregeln sind davon verschieden.",
+      "next_check": "Zusätzliche Paketregeln erst aus nachgewiesenen Integrationsanforderungen ableiten."
+    }
+  ],
+  "candidate_reviews": [
+    {
+      "candidate": "CEM",
+      "date": "2026-10-23",
+      "previously_open": 22,
+      "reviewed": 22,
+      "resolved": 20,
+      "remaining_uncertain": [
+        "I02",
+        "X01"
+      ],
+      "format_scope": "Complete schema.d.ts and schema.json at 2570079a0525c26296f9ec39944f0c6e0f0461af",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "DTCG",
+      "date": "2026-10-23",
+      "previously_open": 23,
+      "reviewed": 23,
+      "resolved": 22,
+      "remaining_uncertain": [
+        "X01"
+      ],
+      "format_scope": "DTCG Format Module 2025.10 and Resolver Module 2025.10, separately; published 2025.10 schema aids inspected",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "SCXML",
+      "date": "2026-10-23",
+      "previously_open": 21,
+      "reviewed": 21,
+      "resolved": 18,
+      "remaining_uncertain": [
+        "I02",
+        "X01",
+        "X04"
+      ],
+      "format_scope": "W3C SCXML 1.0 Recommendation 2015-09-01, errata, published XSD drivers and core/data/external modules; no interpreter trials",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "XState",
+      "date": "2026-10-24",
+      "previously_open": 24,
+      "reviewed": 24,
+      "resolved": 21,
+      "remaining_uncertain": [
+        "X01",
+        "X04",
+        "X06"
+      ],
+      "format_scope": "XState core 5.33.3 at 8f25b68f3953a9dd3c146a76f1f4972aba092a3f; official rolling v5 docs retrieved 2026-10-23; no execution",
+      "runtime_trials": []
+    }
+  ]
+}
