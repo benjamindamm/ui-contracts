@@ -63,3 +63,10 @@ Erst wenn die Einzelbeiträge und mindestens eine Referenz-/Kompositionskette ge
 3. **Reifegrad und Kompatibilität:** Draft, experimentell oder stabil jeweils anhand einer konkreten Quelle und Version festhalten. Spezifikation, Compiler, Validator und Laufzeit getrennt betrachten; dokumentierte Kompatibilitäts-/Migrationszusagen nennen. Fehlende Zusagen bleiben offen. Marketing und Unternehmensgröße ersetzen keinen Stabilitätsnachweis.
 
 **Erwartete Übergabe:** Pro untersuchtem Kandidaten ein kurzer belegter Befund zu diesen drei Kriterien, konkrete Lücken und Folgen für die spätere produktive Nutzung. Den erforderlichen Mindestgrad an Stabilität/Marktreife sichtbar offen halten, bis er vereinbart ist. Bestehende Bewertungen nur bei neuem Nachweis ändern. Keine neuen Skills, keine Technologieauswahl, keine Implementierung, keine Commits oder Pushes im Rahmen dieser Vormerkung.
+
+
+## Präzisierung nach dem Integrationsabgleich – 24. Oktober 2026
+
+Die oben stehende Erwartung, alle vier Domänenartefakte durch Originalvalidatoren akzeptieren zu lassen, setzt deren Existenz voraus. Das ist insbesondere für ein neutrales Accessibility-Artefakt noch nicht nachgewiesen. Im nächsten praktischen Prüfauftrag daher je gewähltem Originalformat Schema, Werkzeug, Hostbindung und manuelle Anforderungen getrennt erfassen. Zusätzliche Projektbeschreibungen erhalten keine erfundene Originalkonformität. Der Vorschlag steht ausführlich in [BINDINGS](BINDINGS.md#7-präzisierung-des-prüfungstors); bestehende Fachanforderungen und die Erhaltung verfügbarer Originalprüfungen bleiben bestehen. Keine praktische Prüfung wurde dadurch gestartet.
+
+Die nächste Recherche orientiert sich am [Register aller offenen Felder](OPEN-FIELDS.md). Ein Registereintrag ist keine gelöste Matrixzelle.

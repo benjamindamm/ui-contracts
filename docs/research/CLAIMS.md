@@ -3098,3 +3098,27 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 - **Befund:** spec.ts prüft bestimmte Propertynamen/-typen, Value-/Part-IDs und doppelte Slotbelegung. Boolean-Varianten werden gegen Optionen geprüft; resolveStates kombiniert heuristische Zustände und explizite Werte ohne dort entsprechenden vollständigen Optionsabgleich. behaviourToSpec lässt unauflösbare Namen/Bindungen aus.
 - **Bedeutung/Grenze:** E2 im gepinnten Scenegraph-Pfad. Keine vollständige Zustands-/Vier-Domänen-Prüfung und kein verlustfreier Roundtrip daraus ableiten. X06=D für den bestehenden Originalschema-Beitrag bleibt bestehen; keine automatische Änderung anderer Matrixzellen.
 - **Nächste Prüfung:** Ungültige Statewerte, entfernte Properties und doppelte Namen als getrennte negative Fälle ausarbeiten und später prüfen.
+
+## C394
+
+- **Gegenstand:** CEM und UXSpec: unterschiedliche Typziele; Anforderungen I01, I02, X03. Integrationsfolgeprüfung.
+- **Quelle:** [S58](SOURCES.md#s58); E2, begrenzte Primärquellenprüfung über BrowserOS neo.
+- **Befund:** CEM Event.type beschreibt das ganze Eventobjekt über Type.text und optionale Referenzen. UXSpec eventSpec.payload führt Felder über contextField; dessen Typenum enthält object/array, aber keinen rekursiven Properties-/Itemsvertrag in dieser Definition. Eine Emit-Aktion und gleichnamige Ereignisse definieren keine gemeinsame öffentliche Payloadprojektion.
+- **Bedeutung/Grenze:** Manuelle Prüfung gepinnter Originaldefinitionen. Einfache typgebundene Zuordnungen sind als Arbeitsfall möglich; allgemeine strukturelle Typkompatibilität und CustomEvent.detail-Abbildung sind nicht nachgewiesen. Keine neue Matrixbewertung.
+- **Nächste Prüfung:** Für ein einfaches öffentliches Auswahlereignis Quellwert, Zielpayload, Ereignisobjekt und Adapterkonvention ausdrücklich binden; komplexe Typen separat prüfen.
+
+## C395
+
+- **Gegenstand:** DTCG-Dimension und UXSpec-Auflösung: Einheit erhalten; Anforderungen V01, X03. Integrationsfolgeprüfung.
+- **Quelle:** [S58](SOURCES.md#s58); E2, begrenzte Primärquellenprüfung über BrowserOS neo.
+- **Befund:** DTCG Format 2025.10 §8.2 verlangt dimension mit numerischem value und unit px/rem. UXSpec resolveTokenValue reduziert im gelesenen Pfad ein Objekt mit genau numerischem value und String-unit auf die Zahl. Eine entsprechende Integration kann damit Einheiteninformation verlieren; ein eigenständiges DTCG-Rootdokument ist nicht allein aufgrund ähnlicher Tokenfelder ein UXSpec-Import.
+- **Bedeutung/Grenze:** E1 für DTCG-Regel, E2 für Resolver. Informationsverlust ist eine Ableitung aus dem Quellpfad, kein ausgeführter Import-/Runtimeversuch und kein pauschales Urteil über sämtliche Adapter. Keine neue Matrixbewertung.
+- **Nächste Prüfung:** Bei konkreter Importkette px/rem getrennt prüfen, Originaleinheit und Adapterumrechnung nachvollziehbar erhalten; Geometrieziel separat binden.
+
+## C396
+
+- **Gegenstand:** ARIA-/APG-Bindung: Zielrelation und Auswahlbegriffe; Anforderungen A01, A02, X03, X08. Integrationsfolgeprüfung.
+- **Quelle:** [S58](SOURCES.md#s58); E1, begrenzte Primärquellenprüfung über BrowserOS neo.
+- **Befund:** WAI-ARIA 1.2 aria-activedescendant verlangt zulässige Eigentums- beziehungsweise Kontrollbeziehungen und referenziert ein aktives Element; ein existierendes ID-Ziel allein genügt nicht. Das gelesene APG-Combobox-Muster führt DOM-Fokus, Popupbezug und aria-selected auf und beschreibt Auswahlfolge im Popup.
+- **Bedeutung/Grenze:** Semantik und Patternempfehlung getrennt. Für den vorgeschlagenen Webfall sind aktive Option, zugänglich gemeldete Popupauswahl und bestätigter Produktwert ausdrücklich zuzuordnen; keine automatische Aussage, Navigation habe keine Auswahlsemantik. Kein Browser-/Assistenztechniktest und keine neue Matrixbewertung.
+- **Nächste Prüfung:** Fachliche Teile auf echte Input-/Listbox-/Option-Elemente derselben Instanz abbilden; ARIA-Relationen, Produktbestätigung und Scrollzuständigkeit getrennt prüfen.

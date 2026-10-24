@@ -510,3 +510,19 @@ Die drei Berichte lagen unter /private/tmp/ui-contracts-{aria,apg,css-layout}-re
 | OP | [OpenPencil behaviours/spec.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/behaviours/spec.ts) | Vollständig: Value-/Partauflösung, Stateheuristik und Rückkonvertierung |
 
 Die hier gelesenen Funktionen zeigen begrenzte lokale Prüflogik. Andere Aufrufpfade werden nicht pauschal ausgeschlossen. Insbesondere sind Aussagen über nicht nachgewiesene Graph-/Zustandsprüfung keine behaupteten erfolgreichen Fehlerreproduktionen.
+
+
+## S58
+
+**Konkrete Feldbindungen – 24. Oktober 2026.** Gezielte erneute Primärquellenprüfung über BrowserOS neo. Bestehende Quellenstände bleiben gepinnt beziehungsweise ausdrücklich datiert. Die ausgewählten Abschnitte tragen C394–C396; kein vollständiger neuer Projektaudit, keine ausgeführten Validatoren und keine Laufzeitprüfung.
+
+| Quelle | Stand und gelesener Umfang |
+| --- | --- |
+| [CEM schema.d.ts](https://github.com/webcomponents/custom-elements-manifest/blob/2570079a0525c26296f9ec39944f0c6e0f0461af/schema.d.ts) | Gepinnter Originalstand; gezielt Reference, CustomElement, Event, Type, CssPart, Slot und Klassentypen im gespeicherten Vollauszug gelesen |
+| [UXSpec Originalschema](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json) | Vollständig erneut gelesen; contextField, eventSpec, actionSpec, machine/stateNode, invoke und elementBase |
+| [UXSpec resolve.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/resolve.ts) | Bereits in S57 vollständig gelesener Originalpfad erneut ausgewertet: resolveTokenValue und Behandlung von value/unit; in dieser Runde nicht neu abgerufen |
+| [DTCG Format 2025.10](https://www.designtokens.org/TR/2025.10/format/) | Gezielte erneute Lesung §6.6 und §8.2 einschließlich Dimensionvalidierung und Plattformhinweisen; kein neuer Resolveraudit |
+| [WAI-ARIA 1.2](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#aria-activedescendant) | Fester Recommendationstand; aria-activedescendant samt Bedingungen und ID-Referenzdefinition gezielt gelesen |
+| [APG Combobox](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) | Veränderliche Guide-Seite, Abruf 24. Oktober 2026; Listbox-Fokusnotiz sowie Roles/States/Properties einschließlich Auswahlfolge erneut gelesen. Verlinkte Editor-ARIA-Ziele nicht als neue normative Quelle übernommen |
+
+Neu abgerufen wurden fünf Dokumente; eine vorhandene Resolverlesung wurde erneut ausgewertet. Temporäre Browserauszüge sind kein Ersatz für die hier verlinkten Primärstände. Die neue Instanz-/Ownership-Regel und das präzisierte Prüfungstor bleiben Vorschläge des Projekts, keine Aussagen dieser Standards.

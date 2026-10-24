@@ -80,11 +80,13 @@ Bei UXSpec gilt der aktuelle 26-Zeilen-Katalog mit neun vorher bewerteten und si
 - [x] Ark-UI-Vorarbeit wiederfinden, verbleibende Prüfung abschließen und übernehmen.
 - [x] Panda CSS, uSpec und OpenPencil vertieft prüfen und übernehmen.
 - [x] Die letzten drei Kandidaten WAI-ARIA, APG und CSS Layout vertieft prüfen und übernehmen.
-- [ ] Konkrete U-Fragen je Kandidat priorisieren und gezielt nachprüfen; fehlende Integrationsnachweise von fachfremden Teilfragen unterscheiden.
+- [x] Alle 73 U-Zellen im [offenen Feldregister](docs/research/OPEN-FIELDS.md) einzeln mit Frage, Befund und vorgeschlagener Priorität führen: 45 Integrationsfelder, 28 weitere Felder. Triage abgeschlossen, keine automatische Neubewertung.
+- [ ] Priorisierte U-Fragen gezielt nachprüfen und nur bei ausreichendem neuen Nachweis in der Matrix neu bewerten.
 - [ ] Den vorgemerkten Zusatzvergleich zu **Originalschema und tatsächlichem Validierungstooling**, **Beschreibungsformat und zusätzlich nötigem Code** sowie **Reifegrad und Kompatibilität** vervollständigen. Kandidatenbezogene Teilbefunde liegen vor; dies ist noch kein abgeschlossener Vergleich aller Kandidaten.
 - [ ] Die beiden bestätigten Detailvergleiche gezielt vervollständigen: DESIGN.md gegen deklarative Layoutmodelle und UXSpec gegen SCXML.
 - [x] Gemeinsame Referenzen, Komponentenkomposition und Ownership als [Integrationsentwurf](docs/research/INTEGRATION.md) dokumentarisch zusammenführen; neue Regeln ausdrücklich als Vorschläge kennzeichnen.
 - [x] Ersten begrenzten [Integrationsabgleich und dokumentarischen Fall mit zwei Instanzen und ScrollArea](docs/research/INTEGRATION-REVIEW.md) speichern: sechs gepinnte Quellpfade erneut gelesen, C390–C393 ergänzt. Keine Laufzeitversuche und keine Änderung der Kandidatenzählung.
+- [x] Konkrete Originalfelder für Identität, Ereignisse, Werte und Accessibility abgleichen; drei dokumentarische [Bindungsketten](docs/research/BINDINGS.md) und alle acht Integrationszeilen einordnen. C394–C396 ergänzen Teilbefunde; keine Contract-/Laufzeitprüfung.
 - [ ] Eine vollständige Bindungskette zwischen konkreten Originalartefakten mit Typen, Instanzidentität und Unterkomponente nachweisen. Format, Resolver und technische Integration bleiben offen. Prioritäten stehen im Integrationsabgleich.
 
 Die Kandidatenrunde ist abgeschlossen. Die noch offenen Folgeaufgaben sind hier vorgemerkt; diese Liste startet nicht automatisch weitere Recherche, Implementierung, Tests oder Skill-Erstellung. Spätere praktische Versuche benötigen einen entsprechenden Arbeitsauftrag; bisherige Recherchebefunde sind keine Laufzeitnachweise. Weitere Einzelheiten stehen in der [Forschungsplanung](docs/research/RESEARCH-PLAN.md).

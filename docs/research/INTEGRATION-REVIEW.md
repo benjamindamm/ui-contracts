@@ -111,3 +111,8 @@ Dies sind erwartete Prüfergebnisse auf Papier. Keine Tabellenzeile bedeutet, da
 | 3 | Eigenes Integrationsformat | Weiterhin keine Auswahl | Erst nach konkreter Originalformatkette über notwendigen Zusatz entscheiden |
 
 **Zählweise:** Die acht Zeilen sind Arbeitsfragen, keine acht neuen Kandidaten und keine Zahl der verbleibenden U-Zellen. Alle sechzehn Kandidaten-Durchgänge bleiben abgeschlossen. Ihre Bewertungen werden durch diesen dokumentarischen Abgleich nicht automatisch geändert.
+
+
+## Fortsetzung: Originalfelder und vollständiges offenes Register
+
+Der [konkrete Feldabgleich](BINDINGS.md) präzisiert Typ-/Payloadabbildung, Einheiten und zugängliche Zielbeziehungen. Er unterscheidet aktive Option, zugänglich gemeldete Auswahl und bestätigten Produktwert. Das [offene Register](OPEN-FIELDS.md) zählt sämtliche U-Zellen: 73 insgesamt, davon 45 Integrationsfelder. Die acht priorisierten Arbeitsfragen oben sind damit keine alternative Matrixzählung.
