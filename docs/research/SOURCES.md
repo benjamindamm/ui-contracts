@@ -494,3 +494,19 @@ Das geometrische Modell ist deklarativ; CSS plus eine strukturierte Element-/Box
 **Zentrale G02/CSS-Korrektur:** Die Berichtstabelle schlug A vor, nennt selbst D als mögliche enge Lesart. Die gespeicherte Matrix verwendet D konsistent zum operationalisierten Kriterium ohne notwendige JS-/Reactfunktionen. CSS-Box-/Hostbindung bleibt eine eigene Grenze; daraus folgt kein neutraler oder nativer Renderer. Rohbericht und aktuelle Bewertung werden nicht still gleichgesetzt.
 
 Die drei Berichte lagen unter /private/tmp/ui-contracts-{aria,apg,css-layout}-review-current.md. CSS-Lesekopien/Hashmanifest unter /private/tmp/ui-contracts-css-layout-evidence/ beziehen sich auf extrahierte Lesefassungen, nicht originale HTML-Bytes. Dauerhafte Projektbelege sind die datierten/gepinnten Primärlinks und aktuellen Claims.
+
+
+## S57
+
+**Integrationsfolgeprüfung – 24. Oktober 2026.** Sechs bestehende Primärdateien erneut manuell über BrowserOS neo gelesen, unveränderte Snapshotbindung. Keine Ausführung, kein neuer Release-/Produktionsreifecheck. C390–C393 ergänzen die vorhandenen Befunde; keine Matrixbewertung geändert. Rohansichten wurden vollständig gelesen, längere Browserausgaben aus den lokal gespeicherten Vollauszügen. Die temporären Auszüge sind kein dauerhafter Quellenersatz.
+
+| Kürzel | Gepinnte Primärquelle | Umfang |
+| --- | --- | --- |
+| IR | [UXSpec import-resolver.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/import-resolver.ts) | Vollständig: lokale Pfade, Bereiche, Diagnosen, ancestorPaths |
+| BU | [UXSpec bundler.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/bundler.ts) | Vollständig: direkte Abhängigkeiten, erneute Importauflösung und Modulschlüssel |
+| RE | [UXSpec resolve.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/resolve.ts) | Vollständig: Tokenqualifizierung, Elementverzeichnis, Expansion und Parameter |
+| AC | [Ark use-combobox.ts](https://github.com/chakra-ui/ark/blob/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/react/src/components/combobox/use-combobox.ts) | Vollständig: useId, Field-IDs, Props-Reihenfolge und Maschinenkontext |
+| AS | [Ark use-scroll-area.ts](https://github.com/chakra-ui/ark/blob/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/react/src/components/scroll-area/use-scroll-area.ts) | Vollständig: eigene ID und eigener Maschinenkontext |
+| OP | [OpenPencil behaviours/spec.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/behaviours/spec.ts) | Vollständig: Value-/Partauflösung, Stateheuristik und Rückkonvertierung |
+
+Die hier gelesenen Funktionen zeigen begrenzte lokale Prüflogik. Andere Aufrufpfade werden nicht pauschal ausgeschlossen. Insbesondere sind Aussagen über nicht nachgewiesene Graph-/Zustandsprüfung keine behaupteten erfolgreichen Fehlerreproduktionen.

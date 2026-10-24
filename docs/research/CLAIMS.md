@@ -3066,3 +3066,35 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 - **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
 - **Offene Frage / weiterer Bedarf:** CSS-Reihenfolge/Scope oder Fallback sind keine nachgewiesene Ownership und Änderungsverfolgung zwischen Originalformaten. Frage: Welche Paketregel weist jeder Information eine führende Quelle und nachvollziehbare Änderungen zu?
 
+
+## C390
+
+- **Gegenstand:** UXSpec: Import- und Modulgrenzen; Anforderungen X03, X05, X07. Integrationsfolgeprüfung, keine neue Kandidatenbewertung.
+- **Quelle:** [S57](SOURCES.md#s57), gepinnte Primärdateien, manuell über BrowserOS neo gelesen.
+- **Befund:** Der gepinnte import-resolver.ts liest lokale JSON-Dateien und übernimmt angeforderte $tokens/$elements/$animations/$machine. Fehlt ein angeforderter Bereich, erzeugt diese Funktion dafür keine eigene Diagnose; eine spätere Verwendung kann scheitern. bundler.ts kompiliert direkte Maschinenabhängigkeiten und löst deren Imports auf, trägt Module aber ohne ausdrückliche Kollisionsabweisung nach Maschinen-ID ein. Die Aufrufe teilen keine durchgehende ancestorPaths-Menge; ein vollständiger transitiver Modulabschluss beziehungsweise allgemeine Zyklusprüfung ist dadurch nicht nachgewiesen.
+- **Bedeutung/Grenze:** E2 für diese Quellpfade; kein CLI-/Laufzeitversuch. Bestehendes X05=N und X07=N im begrenzten Originalkern werden präzisiert; X03 bleibt U. Eine vorhandene IMPORT_CYCLE-Diagnose darf nicht als vollständiger Graphnachweis gelten.
+- **Nächste Prüfung:** Doppelte Maschinen-IDs, A→B→A und A→B→C sowie angeforderte fehlende Bereiche bei gesondertem praktischem Auftrag prüfen.
+
+## C391
+
+- **Gegenstand:** UXSpec: Geltungsbereich verschachtelter Elementreferenzen; Anforderungen X03, X04, X07. Integrationsfolgeprüfung, keine neue Kandidatenbewertung.
+- **Quelle:** [S57](SOURCES.md#s57), gepinnte Primärdateien, manuell über BrowserOS neo gelesen.
+- **Befund:** resolve.ts qualifiziert in importierten Elementen unqualifizierte Tokenreferenzen mit dem Importalias. expandRefs übergibt nach importierter Elementexpansion jedoch weiterhin das lokale elements-Verzeichnis. Verschachtelte unqualifizierte Element-$ref werden dort lokal gesucht. Instanzargumente werden flach über die Basis gelegt; Parameterersetzung ist kein Nachweis eines eigenständigen Child-Machine-Lebenszyklus.
+- **Bedeutung/Grenze:** E2 Quellbefund. Ableitung: Ein importierter Unterverweis kann einen lokalen Namensvetter meinen; diese Folge wurde nicht ausgeführt. Bestehendes X04=D für parametrisierte Elemente bleibt bestehen, keine Aufwertung von X03.
+- **Nächste Prüfung:** Gleichnamige lokale/importierte Unterelemente und explizite Aliasbindung gegenüberstellen; resultierende Identität und Informationsverlust prüfen.
+
+## C392
+
+- **Gegenstand:** Ark UI: Kontext- und ID-Grenzen; Anforderungen X02, X04, X08. Integrationsfolgeprüfung, keine neue Kandidatenbewertung.
+- **Quelle:** [S57](SOURCES.md#s57), gepinnte Primärdateien, manuell über BrowserOS neo gelesen.
+- **Befund:** use-combobox.ts und use-scroll-area.ts erzeugen jeweils useId und einen eigenen useMachine-Kontext. Abschließendes ...props überschreibt vorherige Vorgaben. In use-combobox.ts ersetzt ein übergebenes ids-Objekt die vorher gesetzten Field-label/input-IDs ohne tiefe Zusammenführung in dieser Funktion.
+- **Bedeutung/Grenze:** E2 im React-Adapter am gepinnten Stand. Getrennte Kontexte und explizite IDs sind vorhanden; keine Garantie stabiler neutraler Contract-Identität oder konfliktfreier Overlay-/ScrollArea-Komposition. Bestehende Matrixbewertungen bleiben unverändert.
+- **Nächste Prüfung:** Explizite IDs für zwei Instanzen, Field-Verknüpfung, Umordnung und Overlay-/Viewport-Bindung bei gesondertem praktischem Auftrag prüfen.
+
+## C393
+
+- **Gegenstand:** OpenPencil: partielle Bindungsprüfung und Exportverlust; Anforderungen X03, X06, X07, X08. Integrationsfolgeprüfung, keine neue Kandidatenbewertung.
+- **Quelle:** [S57](SOURCES.md#s57), gepinnte Primärdateien, manuell über BrowserOS neo gelesen.
+- **Befund:** spec.ts prüft bestimmte Propertynamen/-typen, Value-/Part-IDs und doppelte Slotbelegung. Boolean-Varianten werden gegen Optionen geprüft; resolveStates kombiniert heuristische Zustände und explizite Werte ohne dort entsprechenden vollständigen Optionsabgleich. behaviourToSpec lässt unauflösbare Namen/Bindungen aus.
+- **Bedeutung/Grenze:** E2 im gepinnten Scenegraph-Pfad. Keine vollständige Zustands-/Vier-Domänen-Prüfung und kein verlustfreier Roundtrip daraus ableiten. X06=D für den bestehenden Originalschema-Beitrag bleibt bestehen; keine automatische Änderung anderer Matrixzellen.
+- **Nächste Prüfung:** Ungültige Statewerte, entfernte Properties und doppelte Namen als getrennte negative Fälle ausarbeiten und später prüfen.

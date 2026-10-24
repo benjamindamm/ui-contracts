@@ -17,6 +17,7 @@ Das erste Ziel ist ein **gemeinsames Contract-Paket aus bestehenden Beschreibung
 - [Begründungen und Grenzen der einzelnen Befunde](docs/research/CLAIMS.md)
 - [Forschungslücken und nächste überprüfbare Schritte](docs/research/RESEARCH-PLAN.md)
 - [Integrationsentwurf: Identität, Ownership, Komposition und Akzeptanzfälle](docs/research/INTEGRATION.md)
+- [Integrationsabgleich: vorhandene Mechanismen, zwei Instanzen und offene Bindungen](docs/research/INTEGRATION-REVIEW.md)
 
 ## Was wir erreichen wollen
 

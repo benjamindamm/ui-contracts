@@ -84,7 +84,8 @@ Bei UXSpec gilt der aktuelle 26-Zeilen-Katalog mit neun vorher bewerteten und si
 - [ ] Den vorgemerkten Zusatzvergleich zu **Originalschema und tatsächlichem Validierungstooling**, **Beschreibungsformat und zusätzlich nötigem Code** sowie **Reifegrad und Kompatibilität** vervollständigen. Kandidatenbezogene Teilbefunde liegen vor; dies ist noch kein abgeschlossener Vergleich aller Kandidaten.
 - [ ] Die beiden bestätigten Detailvergleiche gezielt vervollständigen: DESIGN.md gegen deklarative Layoutmodelle und UXSpec gegen SCXML.
 - [x] Gemeinsame Referenzen, Komponentenkomposition und Ownership als [Integrationsentwurf](docs/research/INTEGRATION.md) dokumentarisch zusammenführen; neue Regeln ausdrücklich als Vorschläge kennzeichnen.
-- [ ] Integrationsentwurf an konkreten Referenzmechanismen abgleichen und den dokumentarischen Fall mit zwei Instanzen und ScrollArea ausarbeiten. Format, Resolver und technische Integration bleiben offen.
+- [x] Ersten begrenzten [Integrationsabgleich und dokumentarischen Fall mit zwei Instanzen und ScrollArea](docs/research/INTEGRATION-REVIEW.md) speichern: sechs gepinnte Quellpfade erneut gelesen, C390–C393 ergänzt. Keine Laufzeitversuche und keine Änderung der Kandidatenzählung.
+- [ ] Eine vollständige Bindungskette zwischen konkreten Originalartefakten mit Typen, Instanzidentität und Unterkomponente nachweisen. Format, Resolver und technische Integration bleiben offen. Prioritäten stehen im Integrationsabgleich.
 
 Die Kandidatenrunde ist abgeschlossen. Die noch offenen Folgeaufgaben sind hier vorgemerkt; diese Liste startet nicht automatisch weitere Recherche, Implementierung, Tests oder Skill-Erstellung. Spätere praktische Versuche benötigen einen entsprechenden Arbeitsauftrag; bisherige Recherchebefunde sind keine Laufzeitnachweise. Weitere Einzelheiten stehen in der [Forschungsplanung](docs/research/RESEARCH-PLAN.md).
 

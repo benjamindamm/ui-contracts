@@ -108,8 +108,8 @@ Die vier spezialisierten Skills bleiben ein späteres Ziel. Dieser Ablauf erstel
 ## 10. Nächste Schritte und Entscheidungstor
 
 - [x] Integrationsproblem, Begriffe, Ownership-Vorschlag und Akzeptanzfälle dokumentarisch zusammenführen.
-- [ ] Vorschläge an den konkreten Referenzmechanismen der geeigneten Kandidaten abgleichen; notwendige Bindungen und nachweisbare Lücken einzeln zuordnen.
-- [ ] Minimalen dokumentarischen Referenzfall mit zwei Instanzen und ScrollArea ausarbeiten; offene Produktregeln sichtbar lassen.
+- [x] Ersten begrenzten [Abgleich der Referenzmechanismen](INTEGRATION-REVIEW.md) speichern; sechs Quellpfade erneut prüfen und offene Bindungen zuordnen. Keine vollständige Originalformatkette nachgewiesen.
+- [x] Minimalen [dokumentarischen Referenzfall mit zwei Instanzen und ScrollArea](INTEGRATION-REVIEW.md#4-referenzfall-ohne-neue-formatsprache) ausarbeiten; offene Produktregeln sichtbar lassen.
 - [ ] Anhand dieses Falls entscheiden, welche bestehenden Mechanismen genügen und welche Zusatzregeln tatsächlich nötig sind.
 - [ ] Erst danach über ein Integrationsartefakt, Identitätssyntax und Resolver entscheiden.
 - [ ] Bei gesondertem praktischem Auftrag Originalvalidatoren und positive/negative Verbindungen tatsächlich prüfen; Ergebnisse getrennt erfassen.
