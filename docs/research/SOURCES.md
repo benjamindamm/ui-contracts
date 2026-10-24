@@ -301,3 +301,196 @@ Ark React trägt im gepinnten Stand die reguläre Version 5.39.3 ohne alpha/beta
 
 
 Diese Ergänzungen sichern kandidatenbezogene Zusatzbefunde. Der vorgemerkte Gesamtvergleich zu Schema/Tooling, Sprache/Code und Reifegrad ist damit weiterhin nicht vollständig erledigt. Für alle drei: E1/E2, keine Installation oder ausgeführte Kandidaten-/Validator-/Laufzeitprüfung. Lokale Vorarbeiten lagen unter /private/tmp/ui-contracts-{agentsorg,uxspec,arkui}-review-current.md; die dauerhaften Nachweise sind nun die obigen Primärquellen und die verlinkten Claims.
+
+## Quellenrunde Panda CSS / uSpec / OpenPencil – 24. Oktober 2026
+
+Drei getrennte Recherche-Agenten prüften die folgenden offiziellen Quellen und Originaldefinitionen. Zentral wurden Berichte, Kriterien, Quellenrollen und bisherige Bewertungen abgeglichen; kein vollständiger unabhängiger zweiter Quellaudit behauptet. Die globalen Sammel-IDs lösen die lokalen Kürzel der Einzelbefunde vollständig auf. Alle Nachweise E1/E2; keine ausgeführten Kandidaten-/Validator-/Compiler-/Laufzeitversuche.
+
+## S51
+
+**Panda CSS: Primärquellen und lokale Fundstellenkürzel.**
+
+Alle Webquellen über BrowserOS neo gelesen. Aktueller Defaultbranch ist **v2**, nicht main. GitHub-API lieferte für main 422, also keinen fehlenden Projektstand daraus abgeleitet. **Pin P = 86f78a228204d63baa0b8bca2676d9f26190e449**, Commit 23.10.2026 20:21:05 UTC. [Commit](https://github.com/chakra-ui/panda/commit/86f78a228204d63baa0b8bca2676d9f26190e449). Dokumentationsseiten sind veränderlich; mehrere zeigen Aktualisierung 21.10.2026. Aktueller Repo-Paketstand @pandacss/dev **2.4.0**, Node >=22. Kein Registry-Tarball oder Installationsnachweis.
+
+- **P01** [Tokens](https://panda-css.com/docs/theming/tokens), [Token-TS-Typen am Pin](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/types/src/tokens.ts). value/description, TokenDataTypes, Border/Shadow/Gradient, SemanticTokens. Farben bleiben Strings; keine behauptete vollständige Einheiten-/Farbvalidierung. DTCG-Anlehnung der Dokumentation ist keine verifizierte vollständige DTCG-Konformität.
+- **P02** [Slot Recipes](https://panda-css.com/docs/recipes/slot-recipes), [Rezepttypen am Pin](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/types/src/recipe.ts). slots, per-slot base/variants/compoundVariants, RecipeSelection/RecipeVariantProps, Klassenmap. Vollständige Typdatei gelesen, keine Instanz-IDs daraus abgeleitet.
+- **P03** [Multiple Themes](https://panda-css.com/docs/theming/multiple-themes), [Conditional Styles](https://panda-css.com/docs/styling/conditional-styles). base/_dark, dark-Klasse im base preset, data-panda-theme, staticCss.themes für Ausgabe. SemanticTokens unterstützen at-rule-/parent-selector-Bedingungen, nicht beliebige Kind-/Pseudozustände. Alte /docs/theming/semantic-tokens liefert weiterhin 404; der Inhalt steht unter Tokens.
+- **P04** [Position Try](https://panda-css.com/docs/styling/position-try), [Layout](https://panda-css.com/docs/reference/layout), [Sizing](https://panda-css.com/docs/reference/sizing), [Patterns](https://panda-css.com/docs/theming/patterns), [Layout Patterns](https://panda-css.com/docs/styling/patterns). CSS anchor()/positionAnchor/positionTryFallbacks, inset/spacing, maxHeight/maxWidth, overflowX/Y auto/hidden im ScrollArea-Muster. Das Pattern benötigt eine JS-transform-Funktion. Float hat placement/offset relativ zum positionierten Elternteil. Native CSS-Bedeutung, keine neutrale Geometriesprache.
+- **P05** [JSON Spec](https://panda-css.com/docs/theming/json-spec), [Exporttypen am Pin](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/types.ts), [Reader am Pin](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/read.ts). DesignSystemSpec mit schemaVersion, tokens/values/conditions/themes sowie optionalen Rezept-/Pattern-/Quellentabellen; parseDesignSystem ausdrücklich flache Strukturprüfung, Zeilen werden vertraut.
+- **P06** [Presets](https://panda-css.com/docs/theming/presets), [Design Systems](https://panda-css.com/docs/design-systems/overview), [Headless Wrapping](https://panda-css.com/docs/design-systems/wrap-headless-libraries). Presetimporte, Merge-Reihenfolge; Komponenten plus Konfiguration über panda lib; Frameworkkomposition mit createSlotRecipeContext/withProvider/withContext und Ark-Komponenten. Frameworkkomponenten bleiben zusätzlicher Code.
+- **P07** [Diagnostics](https://panda-css.com/docs/reference/diagnostics), [Config](https://panda-css.com/docs/reference/config), [CLI-Flagschema am Pin](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/cli/src/schema.ts). validation none/warn/error; Token- und Designsystemfehler, Warnungen normalerweise kein Fehlerexit. Flagschema ist für CLI-Argumente, kein Contract-JSON-Schema.
+- **P08** [dev package am Pin](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/dev/package.json), [vollständiger Pfadbaum am Pin](https://api.github.com/repos/chakra-ui/panda/git/trees/86f78a228204d63baa0b8bca2676d9f26190e449?recursive=1). Tree truncated:false, Schema-/Designsystem-/Token-/Paketpfade gesichtet. Dies ist eine begrenzte Suchstrategie, kein Nachweis, dass nirgendwo ein JSON Schema existiert.
+
+
+## Schema, Tooling und Ausführung getrennt
+
+**Eingabe:** Panda-Konfiguration in TypeScript/JavaScript mit defineConfig; statische Objekte für Tokens/Rezepte, zusätzlich Funktionen etwa für Patterns und Wrapper. TS-Typen sind keine unabhängige JSON-Schema-Validierung. **Export:** codegen/build/lib --spec erzeugt DesignSystemSpec schemaVersion 1. Es ist ein normalisierter Dokumentations-/Toolingindex, kein verlustloses Originalformat: Recipe-Einträge enthalten Variantenmetadaten, nicht sämtliche base-/variant-CSS-Körper; Pattern-default-Funktionen und Regexmatcher besitzen keine vollständige Serialform, composition-Einträge nur Beschreibungsmetadaten. Eine Übernahme des Exports als vollständiges Visualcontract wäre deshalb verfrüht.
+
+**Reader E2:** parseDesignSystem prüft JSON-Parse, Rootobjekt, Vorhandensein categories/paths/tokens/values, Arrays für paths/values, numerisches schemaVersion und lehnt Versionen größer 1 ab. Er prüft weder jede Zeile noch Referenzintegrität, Geometrie, Payloadtypen oder Cross-Domain-Konflikte. Er akzeptiert auf Quelltextebene jede numerische Version <=1; daraus keine komplette historische Kompatibilitätsgarantie ableiten. Typen und Reader manuell gelesen, nicht ausgeführt.
+
+**Compiler-/Configdiagnosen E1:** validation default warn, none/warn/error konfigurierbar; fehlende Tokenwerte, fehlende/zyklische/self-Referenzen und Artefaktnamenkonflikte sind dokumentiert. Warnungen ändern regulär den Exitcode nicht, max-warnings kann CI-Grenze setzen. Dokumentation unterscheidet PostCSS von Vite (Vite meldet als Warnung und schlägt nicht fehl). Es gibt konkrete Werkzeuge, aber deren Existenz ist kein erfolgreicher Validatorversuch. CLI schema.ts beschreibt Flags, nicht das fachliche JSON-Artefakt.
+
+**Code/Ausgabe:** CSS-Ziel benötigt CSS-Engine/DOM, Buildtoolchain für Extraktion und Codegen. Statische CSS-Ausgabe benötigt nach Dokumentation nicht die JSON-Spec-Datei. Komponentenverhalten und Accessibility kommen im Wrapperbeispiel aus Ark, nicht aus Token-/Recipe-Dateien. Beschreibungsformat, Buildprogramm, Frameworkcode und Browsersemantik getrennt halten.
+
+## Reife und Kompatibilität
+
+Paketversion 2.4.0 ohne prerelease-Suffix ist konkreter Repo-Stand, keine unabhängige Produktionsreifezertifizierung. Neuer v2-Stand und Node >=22 bedeuten, dass ältere Panda-Aussagen/Beispiele nicht ungeprüft fortgeschrieben werden dürfen. Diagnostics nennt root hooks als in v2 entfernt sowie Designsystem-version_mismatch, peer_range_unsatisfied, buildinfo_stale und option_mismatch. Konkrete Kompatibilitätsmechanismen existieren, aber keine langfristige neutrale Contractformat-Stabilitätszusage nachgewiesen. Export schemaVersion 1 und Parsergrenze sind engere Zusagen als allgemeine SemVer-/Cross-Renderer-Kompatibilität. Zwei versuchte Migration-URLs waren 404; das ist nur Zugriffsgrenze, kein Nachweis fehlender Migrationsdokumentation.
+
+
+## S52
+
+**uSpec: Primärquellen und lokale Fundstellenkürzel.**
+
+Repository main beim Abruf: **1e25e9b8bc2e694689ba0489594f38807a341f14**, sichtbar 03.09.2026. S14s bee78db… ist der letzte README-Dateicommit, keine aktuelle Gesamtversion. Alle unten genannten Repositoryquellen auf denselben Snapshot gepinnt. Lokale Kürzel ausschließlich für diese Übergabe; keine globalen IDs vergeben.
+
+- **TREE** [vollständiger Pfadbaum](https://api.github.com/repos/redongreen/uSpec/git/trees/1e25e9b8bc2e694689ba0489594f38807a341f14?recursive=1), Antwort main mit identischer SHA, truncated:false; gezielt Schema-/Validator-/Contractdateien lokalisiert. Kein Beweis beliebiger externer Abwesenheit.
+- **DOC** [Component.MD](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/docs/specs/component-md.mdx), vollständig. JSON canonical, Markdown abgeleitet; Evidence → Interpretation → Reconciliation → Contract → Render; keine ausgeführte Zuverlässigkeitsprüfung.
+- **CON** [component-contract.ts](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/src/component-md/component-contract.ts), vollständig; tatsächlich implementiertes inline contractSchema, Ajv, load/build/validateCanonicalContract.
+- **TYP** [types.ts](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/src/component-md/types.ts), vollständig; BaseJson, TreeNode, EvidenceEnvelope, CanonicalComponentContract.
+- **CAC** [cache-validation.ts](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/src/component-md/cache-validation.ts), vollständig; manuelle Domänenchecks und Evidence-JSON-Pointer, keine Ausführung.
+- **BASE** [base-json-schema.md](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/figma-plugin/docs/base-json-schema.md), vollständig; dokumentierte JSONC-Form, Figma-Quellmodell, IDs, Variablen, Komposition, Ownership, Traversal-/Samplinggrenzen.
+- **BVAL** [validate-base.mjs](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/figma-plugin/scripts/validate-base.mjs), vollständig; weiteres inline Ajv-Schema, ausdrücklich pragmatischer Strukturcheck statt literal conversion der JSONC-Dokumentation; eigene CLI vorhanden, nicht ausgeführt.
+- **SAFE** [safe.ts](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/figma-plugin/src/safe.ts), vollständig; typed snapshotComponentProperties und Placement-Deduplikation.
+- **API** [API-Referenz](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/references/api/agent-api-instruction.md), gezielt Outputform, ApiDictionary, Subcomponent-/Slot-/Stateformen und Beispiele geprüft, kein Vollständigkeitsaudit aller Agentenanweisungen.
+- **STR** [Structure-Referenz](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/references/structure/agent-structure-instruction.md), gezielt Figma Properties Reference, Output Data Structure, target anchors, min/max, clipsContent und Tabellenregeln geprüft.
+- **COL** [Color-Referenz](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/references/color/agent-color-instruction.md), gezielt Data Structure, state tables, Variable Mode Colors und Token resolution per mode geprüft.
+- **VOI** [Screenreader-Referenz](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/references/screen-reader/agent-screenreader-instruction.md), gezielt Merge Analysis, FocusOrderData/StateData/TableData/PropertyItem, platform properties und Tab-/Errorbeispiele geprüft.
+- **PKG** [CLI package.json](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/package.json), vollständig; uspec-skills 0.3.3, Node >=18, Ajv ^8.17.1, TypeScript, bin dist/index.js.
+- **URL** [deklarierte Schema-URL](https://uspec.design/schemas/component-contract-1.0.json) am Abruf als Browserseite mit Text **Not Found**. Kein extern abrufbares Schema von dieser URL bestätigt. Das widerlegt nicht das in CON tatsächlich vorhandene Schema.
+
+
+## Originalschema und tatsächlich vorhandenes Tooling getrennt
+
+1. **Originales Schema existiert im Quelltext:** CON definiert contractSchema mit $id und $schema-Konstante component-contract-1.0.json und schemaVersion 1.0. Ajv compile wird tatsächlich aufgerufen. validateCanonicalContract wird von load und build verwendet. Kein bloßes README-Versprechen.
+2. **Externe Schemaadresse nicht verfügbar bestätigt:** URL lieferte Not Found; TREE enthält keine separate canonical .schema.json. Das ist eine begrenzte Veröffentlichungs-/Interoperabilitätslücke, keine Behauptung „kein Schema“ und kein Beweis nicht überprüfbarer extern angebotener Alternativen. contractSchema ist nicht exportiert; Validatorfunktion ist exportiert. Für einen unabhängigen Fremdvalidator wäre Extraktion/Veröffentlichung dieses Objekts nötig.
+3. **Schemaumfang eng:** Root additionalProperties:false und einige strengere Metadaten; variants.axes ohne items, default/anatomy Werte `{}`, api.mainTable.properties array ohne Elementdefinition, color nur componentName, accessibility.states array ohne items, sourceModel weite Objekte. In TYP Fachdomänen Record<string,any>. Somit keine vollständige Typ-, Referenz-, Accessibility-, Behavior- oder Layoutsemantikprüfung.
+4. **Separate Baseprüfung:** BVAL nutzt zweites inline Ajv-Schema mit eigenen Pflichtfeldern; JSONC-Datei BASE ist Dokumentation und nicht identisch damit. Viele Objekt-/Arrayinhalte bleiben offen. BVAL prüft zusätzlich rohe U+2028/U+2029-Transportzeichen. Keine Prüfung aller gemessenen Fachwerte daraus folgern.
+5. **Echte lokale Zusatzprüfungen:** CAC prüft JSON-Struktur, Zeitstempel, configurationExamples, Zeilenbreiten, not-measured-Werte, Farbstrategien/Arraylängen, drei Plattformsektionen, focusOrderIndex/layerName, Ledgerbekanntheit/-eindeutigkeit, unresolved/omitted must-emit, existierende JSON-Pointer, targetKind/field/equals/pattern und Evidenceabdeckung jeder semantischen Zeile. Bei vorhandenen Evidence-Dateien; fehlt diese ENOENT, kehrt validateEvidenceObligations ohne Fehler zurück. Domänenübergreifend: Achsennamen + fileKey/nodeId/componentSlug für structure/color/voice und componentName API/Dictionary. Das ist substanziell, aber keine vollständige fachliche Widerspruchsprüfung.
+6. **Build vs laden trennen:** build ruft validateCaches auf, checkt manifest/plan slug und baseSourceHash sowie renderer evidence hash; load eines fertigen Contracts macht nur validateCanonicalContract und liefert cacheValidations:[]. Ein korrekt geladenes JSON beweist daher keine nachträglich geprüfte Evidencekette.
+
+## Format/Sprache und zusätzlich nötiger Code
+
+JSON ist Originalaustausch; Markdown menschliche abgeleitete Sicht, JSONC in BASE beschreibende Dokumentation; kein YAML-Originalformat nachgewiesen. Fachliche Snapshots sind ohne JS-Funktionen lesbar. Herstellung erfordert Figma-Extraktion, LLM-Interpretation und TS/Node-CLI; PKG Node >=18, Ajv ^8.17.1. JSX Motion-Skripte gehören nicht automatisch zum Canonical-Behavior. DOC empfiehlt nachgelagerte LLM-Implementierung in React/SwiftUI/Compose; das sind Arbeitsmöglichkeiten, keine verifizierten vorhandenen Renderer oder portablen Laufzeitadapter. Für formale Behaviorlogik wäre ein weiteres Fachmodell/Adapter nötig; freier Text runtimeCondition reicht nicht.
+
+## Reifegrad und Kompatibilität
+
+Schema 1.0, Base schema 1, CLI-Paket 0.3.3 sind getrennte Versionsachsen; Repo-/Dokumentmarketing V2.7 nicht als Canonicalschemaversion verwenden. PKG belegt vorhandene Build-/typecheck-/Testskripte, kein bestandenes Test-/Publish-/Installationsresultat. BASE dokumentiert additive Vorbereitung älterer schema-v1 Exporte und legacy booleanOverrides; dedup fingerprint v1 ignoriert Text-/Instance-Swapunterschiede bewusst. DOC Troubleshooting verlangt abgestimmte Plugin-/Skillversion und warnt vor Drift; keine allgemeine langfristige Format-/Renderer-Kompatibilitätszusage daraus ableiten. Keine Produktionsreifeentscheidung, Marktanteilswertung oder Registryrelease behauptet.
+
+
+## S53
+
+**OpenPencil: Primärquellen und lokale Fundstellenkürzel.**
+
+Alle externen Quellen über BrowserOS neo gelesen. Code-Links sind gepinnt.
+
+- OPD: [aktuelle offizielle Entwicklungsdokumentation](https://openpencil.dev/development/behaviours-and-preview), vollständig gelesen, sichtbarer Seitenstand 14.10.2026. Kinds/Contracts, Storage, Values/States, Authoring, Preview und Export. Veränderliche Seite.
+- OPH: [Commit](https://github.com/open-pencil/open-pencil/commit/ab2875cc761ee6cff17d389ff1c85fedae50aeab).
+- OPS: [Originalschema schema.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/behaviours/schema.ts), vollständig. Valibot `behaviourSchema` und `behaviourSpecSchema`, keine bloße Toolbeschreibung.
+- OPK: [kinds.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/behaviours/kinds.ts), vollständig. 15 eingebaute Kinds; Typen boolean/text/number/choice; required values/parts; items/children; fünf Interaktionszustände.
+- OPM: [model.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/behaviours/model.ts), vollständig. behaviourOwner, behaviourProperties, missingBindings, ID-Umbenennung.
+- OPR: [spec.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/behaviours/spec.ts), vollständig. Namen/IDs, property type lookup, on/off guessing, numbers, part checks und Konvertierung zurück. Browser-Extraktion zeigte bei einer parallelen Navigation einen veralteten URL-Header schema.ts; der gelesene Inhalt ist anhand Funktionen/imports eindeutig spec.ts. Maßgeblich ist dieser gepinnte Originalpfad.
+- OPF: [plugin-data/field.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/plugin-data/field.ts), vollständig, plus [fields.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/plugin-data/fields.ts), vollständig. `behaviour` ist jsonPluginDataField mit Rolle content und Originalschema; decoder parseJson/safeParse, encoder JSON.stringify.
+- OPT: [Agenttools](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/core/src/tools/create/behaviours.ts), vollständig. set_behaviour/get_behaviour/create_slot, Valibot Toolinput; Agenttool-ID ist Zielkomponente, kein öffentliches UI-Ereignis.
+- OPV: [Preview controls/index.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/index.ts), [shared.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/shared.ts), [state.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/state.ts), vollständig. Vue/Reka-Primitives, modelValue/open callbacks, DOM pointer/focus handlers, Auswahl und instanzeigener State anhand Layerpfad.
+- OPP: [scene-graph package.json](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/package.json), Version/Exports gelesen; [behaviours/index.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/behaviours/index.ts) exportiert das Originalschema separat mit.
+- OPB: [gepinnter Pfadbaum](https://api.github.com/repos/open-pencil/open-pencil/git/trees/ab2875cc761ee6cff17d389ff1c85fedae50aeab?recursive=1), für relevante Behaviour-/Preview-/Schemaquellen gesichtet; keine pauschale Vollprüfung des Repositorycodes.
+
+
+## Originalschema und tatsächliches Tooling
+
+Originalschema ist **TypeScript/Valibot**, nicht ein hier gefundenes JSON Schema. OPS speichert kind, booleans/texts/numbers/parts/states; Spec schreibt Eigenschaften/Slots nach Namen. Schemas prüfen Shapes, bekannte Kinds und beim gespeicherten number range finite Zahlen sowie max>min/step>0. Aus dem Code folgt keine Prüfung default innerhalb min/max oder Stepausrichtung. Records lassen beliebige Schlüssel syntaktisch zu; zulässige Value-/Part-IDs werden erst teilweise in OPR anhand OPK geprüft. OPS kann allein die Existenz der String-IDs nicht beweisen.
+
+OPF verwendet parseJson plus safeParse tatsächlich im Dateidecoder. Ungültiger JSON-/Shapeinhalt wird als fehlend gelesen, nicht als paketweiter Fehler ausgegeben. encode verwendet JSON.stringify. OPR ist zusätzliche semantische Auflösung: vorhandener Propertyname/Typ, unterstützte Value-/Part-ID, explizite on/off-Optionen, Zahlenbereich, kein doppelter Slot für zwei Parts. `resolveStates` kombiniert geratenes Mapping mit expliziten Strings; hier kein vollständiger expliziter State-Optionscheck erkennbar. `missingBindings` prüft required Text/Boolean/Parts und eine verloren gegangene states-Property, keine beliebigen Cross-Domain-Referenzen. `behaviourToSpec` lässt unaufgelöste Bindungen aus. Diese Pfade nicht als garantiert verlustfreien Roundtrip ausgeben.
+
+OPT verwendet das Original-Specschema für Toolinput, delegiert an OpenPencilAPI und meldet fehlende Bindungen. Toolinput, Dateidecode, Specauflösung und vollständige Paketvalidierung sind unterschiedliche Prüfaufgaben. Es wurde keiner dieser Pfade ausgeführt.
+
+## Format, zusätzliche Sprache und Code
+
+Der Dateninhalt benötigt keine frei eingebetteten JS-Funktionen, wird als JSON im Pluginfeld serialisiert und kann von Skripting/Agenttools/Design-JSX erstellt werden. YAML ist nicht als Originalformat belegt. Das Schematooling ist TS/JS mit Valibot. Preview benötigt Scenegraph, Extraktion/private graph projection, dom-css, Vue und Reka UI. OPV zeigt feste Callback-/DOM-Handler; der Behaviourdatensatz ist weder eine allgemeine ausführbare Verhaltenssprache noch allein eine plattformneutrale UX-Maschine. Die eigene Implementierung neuer Kinds verlangt laut OPD Änderungen an Contracts, Preview, JSX/Export und UI-Labels. Ein neuer Kindname im JSON genügt nicht.
+
+## Reifegrad und Kompatibilität
+
+OPP zeigt Version 0.16.0 und einen öffentlichen behaviours-Export. OPD beschreibt konkretes vorhandenes Authoring/Preview/Codeexport und weist Testquellen aus; deren Vorhandensein wurde im Pfadbaum gesehen, nicht ihre erfolgreiche Ausführung verifiziert. Keine belastbare eigenständige Behaviour-Spezifikationsversion oder langfristige Format-/Migrations-/Crossplatform-Kompatibilitätszusage festgestellt. Keine Produktionsreifeentscheidung. `.fig`-Propertyumbenennung ist explizit unterstützt (OPM), aber Roundtripstabilität, Namenskollisionen bei Layerpfaden, Umbenennungen und externe Assetupdates bleiben ungeprüft.
+
+
+Diese Zusatzbefunde sind kandidatenbezogen. Der vorgemerkte Gesamtvergleich aller Kandidaten zu Schema/Tooling, Beschreibungssprache/Code und Reifegrad ist weiterhin nicht als erledigt markiert. Die Berichtsvorlagen lagen unter /private/tmp/ui-contracts-{panda,uspec,openpencil}-review-current.md; die obigen öffentlichen gepinnten Primärlinks und aktuellen Claims sichern den dauerhaften Projektstand.
+
+## Letzte Kandidatenrunde – 24. Oktober 2026
+
+Alle öffentlichen Quellen über BrowserOS neo konsultiert. WAI-ARIA/APG wurden nach Agenten-Kapazitätsfehlern zentral geprüft; der CSS-Agent lieferte einen getrennten Bericht mit datierten Quellen. Gegenprüfung und Rollenabgleich sind keine ausgeführten Konformitätsversuche. Keine zweite vollständige Auditprüfung sämtlicher Dokumente behauptet.
+
+## S54
+
+**WAI-ARIA: Primärquellen und Fundstellenkürzel.**
+
+
+
+- AR12: [WAI-ARIA 1.2 REC 06.06.2023](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/), aktueller TR-Endpunkt identischer Titel/Status. Gelesen: Scope/Hostrollen, §4.3 Fokus, Rollencharakteristika und combobox/listbox/option/spinbutton, §6 Typen/IDL/Attribute einschließlich live/controls/labelledby/activedescendant, §8 Hostintegration/CSS-Selektoren, §9 Fehlerbehandlung, Anhang A Typabbildungen. Keine Vollerhebung aller 744k Zeichen.
+- AR13: [WAI-ARIA 1.3 WD 04.06.2026](https://www.w3.org/TR/2026/WD-wai-aria-1.3-20260604/), Status/Änderungen gelesen; kein Ersatz der 1.2-REC-Baseline. ariaNotify nicht als 1.2-Fähigkeit ausgegeben.
+- AAM: [Core-AAM 1.2 CRD 21.10.2026](https://www.w3.org/TR/2026/CRD-core-aam-1.2-20261021/), aktueller TR-Status/Mappingrolle gelesen; kein unabhängiger Vollaudit sämtlicher Plattformmappings oder Implementierungsbericht.
+- NAME: [Accname 1.2 WD 21.10.2026](https://www.w3.org/TR/2026/WD-accname-1.2-20261021/), Status/Nameberechnungsrolle gelesen, kein REC-Status für diesen WD behauptet.
+
+
+## Zusatzkriterien und Grenzen
+
+Semantik wird über Hostmarkup/-attribute ausgedrückt; die Attributwerte besitzen dokumentierte generische Typen und Hostabbildungen. Keine JS-Funktionen sind nötig, um die Semantik zu deklarieren. Das bedeutet keine automatische tatsächliche Bedienlogik; Autoren müssen Interaktion und sichtbare Darstellung umsetzen.
+
+Anhang A ist eine Typabbildung zu HTML/XML Schema, kein Nachweis eines separat veröffentlichten vollständigen Schemaartefakts für das gewünschte Accessibility-Contractformat. §6.3 sagt, dass IDL-Getter nicht validieren; §9 begrenzt Browserlogik ausdrücklich. Ein ungültiger Wert kann als String zurückgegeben werden. Originalchecker/Toolversion und dessen vollständiger semantischer Prüfbereich bleiben X06-U; keine Browser-/Validatorausführung.
+
+1.2 ist eine W3C Recommendation; 1.3 bleibt WD, Core-AAM und Accname haben eigene oben genannte Stände. Das ist Normreife, keine bestätigte Unterstützung jedes Browsers/Screenreaders oder native Produktkonformität. Die frühe Agentenvorarbeit wurde zentral genutzt; nach Kapazitätsfehlern erfolgte die konkrete Quellenprüfung zentral erneut. Kein fehlgeschlagener Agentenstart wird als fertiger Nachweis gezählt.
+
+
+## S55
+
+**APG: Primärquellen und Fundstellenkürzel.**
+
+
+
+- AP0: [About/Introduction](https://www.w3.org/WAI/ARIA/apg/about/introduction/) und [Read Me First](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/), Zweck, nichtnormativer Status, fehlendes Konformitätsmodell, illustrative Beispiele und reale AT-Prüfgrenze gelesen.
+- AP1: [Combobox Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/), Varianten, Keyboard Interaction, Rollen/States/Properties vollständig fachlich gelesen.
+- AP2: [Developing a Keyboard Interface](https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/), Fokus/Selektion, tab/arrow-Konventionen, Fokusverwaltung und Auswirkungen visueller Reihenfolge gezielt gelesen.
+- AP3: [Alert Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/alert/), dynamische Meldungen/Fokus/Timing und Rollen gelesen.
+- AP4: [Editable Combobox with List Autocomplete Example](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/), Warnungen, Semantik, Fokus, Scrollen und Quellverweise gelesen.
+- AP5: [gepinnte Combobox-JS-Implementierung](https://github.com/w3c/aria-practices/blob/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/examples/js/combobox-autocomplete.js), Constructor, interne Zustandsvariablen, open/close/filter, Keyhandler und scrollIntoView manuell gelesen.
+- AP6: [gepinnte Beispiel-CSS](https://github.com/w3c/aria-practices/blob/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/examples/css/combobox-autocomplete.css), vollständig gelesen. Reale Styles enthalten feste Größen und Overflow; keine allgemeinen APG-Vertragspflichten daraus abgeleitet.
+- AP7: [Repository](https://github.com/w3c/aria-practices) und [Paket-/Toolskripte am Snapshot](https://github.com/w3c/aria-practices/blob/0f765e4dc33e966026114ac12a8380db1de3b787/package.json), Snapshot 0f765e4dc33e966026114ac12a8380db1de3b787 vom 30.09.2026 laut sichtbarem main-Stand. Lint: HTMLHint/vnu, CSS/JS-Lint, AVA/Selenium-Regressionspfad dokumentiert; kein Tool ausgeführt. Paket private/0.0.0 ist kein APG-Spezifikationsrelease.
+
+
+## Zusatzkriterien und Grenzen
+
+APG ist eine veränderliche informative Website mit HTML/CSS/JS-Beispielen, kein JSON-/YAML-Patternaustauschschema und keine W3C Recommendation mit eigenem Konformitätsmodell. Die Regeln sind unabhängig von einer bestimmten JS-Frameworksprache lesbar, die ausgewählten Referenzimplementierungen benötigen aber Web-/DOM-Code.
+
+Es existieren reale HTML-/JS-/CSS-Prüfwerkzeuge und Beispielregressionstests. Ihr Vorhandensein wird nicht als fehlend bewertet; sie prüfen ein anderes Artefakt als das gewünschte neutrale A11y-Contract. Ein vollständiges Originalschema und dessen Validator bleiben X06-U. Keine tatsächlich bestandenen Beispiel-, Browser- oder AT-Tests behauptet. APG fordert entsprechende Interoperabilitätsprüfung vor produktiver Nutzung ausdrücklich.
+
+Pattern und Beispiele besitzen verschiedene Rollen. Beispielspezifische CSS-Werte sind nicht allgemeine APG-Visualnormen; eine vollständige Nutzung der Beispielgestaltung würde einen separat gewählten CSS-Beitrag erfordern. Für Behavior dienen die tatsächlich vorhandenen JS-Handler als belegter Adapteransatz (A), nicht als neue APG-Maschinensprache. Die zentral übernommene Accessibility-Anforderungsquelle kann weiterhin getrennt geführt werden, ihre Vier-Domänen-Bindung ist aber noch offen.
+
+Der APG-Agent scheiterte vor Quellenarbeit am Kapazitätslimit; dieser Bericht stammt aus der zentralen Quellenprüfung. Er ist kein fingiertes Agentenergebnis.
+
+
+## S56
+
+**CSS Layout: Primärquellen und Fundstellenkürzel.**
+
+Lokale Kürzel dieses Berichts sind keine globalen Quellen-/Claim-IDs.
+
+- **ANCHOR**: [CSS Anchor Positioning 1, WD 27.03.2026](https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/), insbesondere §§1.1, 2.1–2.4, 3.1–3.2, 5, 6, 9 sowie Property/IDL Index und Conformance. Der aktuelle TR-Endpunkt lieferte diesen Stand. Entspricht vorhandener S18/C33, nicht S17.
+- **OVERFLOW**: [CSS Overflow 3, WD 07.10.2025](https://www.w3.org/TR/2025/WD-css-overflow-3-20251007/), insbesondere §§1.1–1.2, 2, 3, 4 und Conformance. Aktueller TR-Endpunkt lieferte diesen Stand. Entspricht vorhandener S19/C34. S17 im Repository ist APG und ist keine CSS-Quelle.
+- **SYNTAX**: [CSS Syntax 3, Candidate Recommendation Draft 01.10.2026](https://www.w3.org/TR/2026/CRD-css-syntax-3-20261001/), §§3, 4–5, insbesondere parse-stylesheet und consume-declaration. Dokumentierte Tokenisierung, Grammatik und Parseralgorithmen, kein JSON Schema.
+- **VALUES**: [CSS Values and Units 3, Candidate Recommendation Draft 22.03.2024](https://www.w3.org/TR/2024/CRD-css-values-3-20240322/), §§2, 5 und 8.1. ANCHOR/OVERFLOW §1.1 verweisen ausdrücklich normativ auf CSS-VALUES-3 für Wertsyntax und nicht lokal definierte Typen. Länge, Einheit, Prozent und calc() sind daher kein frei erfundenes Contractmodell. Values 4 [WD 12.03.2024](https://www.w3.org/TR/2024/WD-css-values-4-20240312/) zusätzlich zur Abgrenzung gelesen; keine pauschale Erweiterung auf dessen sämtliche Features.
+- **SIZING**: [CSS Box Sizing 3, WD 04.09.2026](https://www.w3.org/TR/2026/WD-css-sizing-3-20260904/), §§3.1.3 (max-width/max-height), 3.2 (Sizing Values), 3.3 (box-sizing). OVERFLOW verlinkt max-height ausdrücklich auf dieses Zielmodell und zeigt das Beispiel `overflow: auto; max-height: 5em`. ANCHOR referenziert Größenwerte/-eigenschaften; V05 wird hier als Referenzbeitrag ausgewiesen, nicht als in Overflow neu definierte Eigenschaft.
+
+**Editors gegenüber Publikation:** [Anchor-Editors-Endpunkt](https://drafts.csswg.org/css-anchor-position-1/) zeigte 06.09.2026 und bezeichnete sich im Kopf als WD; seine angebliche datierte „This version“-Adresse `https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260906/` lieferte bei direkter Prüfung 404. Daher kein nachgewiesener publizierter WD dieses Datums und keine Übernahme als neuer normativer Basissnapshot. [Overflow-Editors-Endpunkt](https://drafts.csswg.org/css-overflow-3/) zeigte Editor’s Draft 13.08.2026, veränderlich und nicht W3C-endorsed. Diese Editors-Texte wurden zur aktuellen Gegenprüfung gelesen, ihre Header und begrenzte Änderungen sind keine Browserunterstützungsnachweise. Keine Recommendation für die zwei Kernmodule behauptet. CRD der Syntax/Values macht Anchor/Overflow nicht zu CR oder Recommendation. Die verlinkten Test-/Implementierungsberichte wurden nicht ausgeführt und hier nicht als belegte Kompatibilität gewertet.
+
+
+## Syntax, Schema und reales Tooling getrennt
+
+Die Grammatik ist maschinenlesbare CSS-Syntax und enthält eigene Propertyproduktionen. SYNTAX spezifiziert Tokenizer/Parser und Conformance-Checker-Pflichten. Das ist weder ein JSON-Schema noch ein bereits nachgewiesenes, versionskompatibles Validierungswerkzeug. Ein Parser kann Syntax akzeptieren und dennoch keine richtige geometrische oder paketweite Bedeutung durchsetzen. Fehlende Anker können Fallback/ungültige Berechnung ergeben; mehrfach benannte Anker sind legal. Eine spätere Paketprüfung muss fehlende Zielbindungen, Instanzkollisionen und Domänenwidersprüche zusätzlich behandeln.
+
+## Beschreibung und zusätzlicher Code getrennt
+
+Das geometrische Modell ist deklarativ; CSS plus eine strukturierte Element-/Boxhierarchie reichen als Spezifikationsbeschreibung für die gelesenen Layoutbeziehungen. Beispielschema im Text, nicht getestet: `anchor-name: --input`, am positionierten Ziel `position-anchor: --input; top: calc(anchor(bottom) + 8px);`, kombiniert mit `max-height` und `overflow-y: auto`. Die Zahl 8 ist ein Testwert. Reale Zielrenderer benötigen Stylesheetanbindung, richtige Elementstruktur, Positionskontext und unterstützte Modulsemantik. Für native Swift-Ziele ist keine standardisierte Übersetzung nachgewiesen. UX-Logik, Eventpayloads, Komponenteninstanziierung und zugängliche Semantik entstehen nicht automatisch durch diese Deklarationen. Kein Polyfill oder Adapter wurde implementiert.
+
+
+**Zentrale G02/CSS-Korrektur:** Die Berichtstabelle schlug A vor, nennt selbst D als mögliche enge Lesart. Die gespeicherte Matrix verwendet D konsistent zum operationalisierten Kriterium ohne notwendige JS-/Reactfunktionen. CSS-Box-/Hostbindung bleibt eine eigene Grenze; daraus folgt kein neutraler oder nativer Renderer. Rohbericht und aktuelle Bewertung werden nicht still gleichgesetzt.
+
+Die drei Berichte lagen unter /private/tmp/ui-contracts-{aria,apg,css-layout}-review-current.md. CSS-Lesekopien/Hashmanifest unter /private/tmp/ui-contracts-css-layout-evidence/ beziehen sich auf extrahierte Lesefassungen, nicht originale HTML-Bytes. Dauerhafte Projektbelege sind die datierten/gepinnten Primärlinks und aktuellen Claims.

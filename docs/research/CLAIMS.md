@@ -1806,3 +1806,1263 @@ Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 
 - **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
 - **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
 
+
+# Nächste Drei-Agenten-Runde: Panda CSS, uSpec und OpenPencil
+
+Stand 24. Oktober 2026. Drei getrennte, ausdrücklich beauftragte Rechercheberichte wurden zentral gegen den aktuellen Anforderungskatalog, vorhandene Klassifizierungen und Evidenzrollen abgeglichen. Die Primärquellenprüfung ist im jeweiligen Bericht dokumentiert; kein unabhängiger zweiter Vollaudit behauptet. 54 zuvor offene Felder wurden eingeordnet, 20 bleiben mit konkretem Nachweisbedarf U. E1/E2, keine Installation, Kandidaten-, Compiler-, Validator- oder Laufzeitversuche. Editor-, Framework- und Werkzeugfähigkeiten werden nur im ausdrücklich bezeichneten Beitrag zugerechnet.
+
+## C234
+
+- **Kandidat / Anforderung:** Panda CSS; G01; **D**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P01/P02/P05 E1/E2: strukturierte Konfigurationsobjekte, TS-Typen und generiertes Designsystem-JSON sind maschinenlesbar. JSON-Export ist kein vollständiger Contract-Input.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C235
+
+- **Kandidat / Anforderung:** Panda CSS; G02; **A**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P01/P04/P05/P06 E1/E2: statische Token-/Stylewerte sind extrahierbar; CSS-Selektoren/-Werte und JS-transform/Frameworkwrapper benötigen Übersetzung für sprachneutrale Semantik. Kein Swift-/Angular-/Native-Nachweis.
+- **Bedeutung/Grenze:** A ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C236
+
+- **Kandidat / Anforderung:** Panda CSS; I01; **D**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05 E2: benannte Recipe-Variantprops mit Auswahltypen; Patternproperties besitzen enum/token/property/primitive-Typmetadaten. Direkt im Visual-API-Umfang, keine generische Interfacebeschreibung aller fachlichen Props.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C237
+
+- **Kandidat / Anforderung:** Panda CSS; I02; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05 E2: untersuchte Recipe-/Exporttypen modellieren keine öffentlichen UI-Ereignisse samt strukturierten Payloads. Callback-Props externer Headless-Komponenten sind nicht Panda-Contractfelder.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C238
+
+- **Kandidat / Anforderung:** Panda CSS; I03; **D**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05 E1/E2: slots:string[] und per-slot Styles benennen Teile. Weder anatomische DOM-Pflicht noch instanzstabile Identität folgt daraus.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C239
+
+- **Kandidat / Anforderung:** Panda CSS; V01; **D**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P01 E2: TokenDataTypes ordnet Kategorien Wertformen zu; Border/Shadow/Gradient strukturiert. Kategorie- und TS-Typen sind enger Nachweis; Stringfarbe keine vollständige formale Farbvalidierung.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C240
+
+- **Kandidat / Anforderung:** Panda CSS; V02; **D**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P03 E1/E2: base, variants, defaultVariants, compoundVariants und Bedingungen. Visuelle Auswahl ist kein Zustandsautomat. Vorhandenes C28 bestätigt.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C241
+
+- **Kandidat / Anforderung:** Panda CSS; V03; **D**.
+- **Quellen:** [S51](SOURCES.md#s51); E1. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P01/P03 E1: semanticTokens value base/_dark; Modus per dark-Klasse, Themes per data-panda-theme, explizite CSS-Ausgabeauswahl. Ohne base preset gibt es keine automatische dark-Bedingung.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C242
+
+- **Kandidat / Anforderung:** Panda CSS; V04; **R**.
+- **Quellen:** [S51](SOURCES.md#s51); E1. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P04 E1: dokumentierte Weitergabe an CSS Anchor Positioning über positionAnchor/anchor() und benannte positionTry-Fallbacks; CSS-Namensraum --trigger, Richtung/Insets/Spacing. Panda verwaltet anchor-name/position-anchor je Element ausdrücklich nicht selbst. Native CSS-Zielsemantik; keine rendererneutrale Ankerreferenz.
+- **Bedeutung/Grenze:** R ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C243
+
+- **Kandidat / Anforderung:** Panda CSS; V05; **D**.
+- **Quellen:** [S51](SOURCES.md#s51); E1. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P04 E1: maxHeight/maxH und maxWidth/maxW haben dokumentierte CSS-Geometriebedeutung. Token '5' ist eine Größenreferenz, nicht fünf Zeilen. Variable Zeilenhöhen benötigen zusätzliche Berechnung/Regel.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C244
+
+- **Kandidat / Anforderung:** Panda CSS; V06; **D**.
+- **Quellen:** [S51](SOURCES.md#s51); E1. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P04 E1: Styleobjekte und ScrollArea-Pattern setzen overflowX/overflowY auf auto/hidden. Browser-CSS-Scrollsemantik; keine daraus abgeleitete Zahl sichtbarer Einträge oder Fokusnavigation.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C245
+
+- **Kandidat / Anforderung:** Panda CSS; B01; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05 E2: begrenzter Style-/Rezeptkern besitzt keinen Initialzustand und keine Ereignis-Übergangsziele. data-state-Selektor beobachtet Zustand, definiert ihn nicht.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C246
+
+- **Kandidat / Anforderung:** Panda CSS; B02; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05 E2: compoundVariants und CSS-Bedingungen wählen Styles; keine UX-Guard-/Action-Ausführungssemantik im untersuchten Kern. Pattern-transform ist Code für Styles.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C247
+
+- **Kandidat / Anforderung:** Panda CSS; B03; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05 E2: kein UX-Kontext und keine Ereignispayload-Verarbeitung im begrenzten Datenmodell. Variantparameter sind kein Ersatz.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C248
+
+- **Kandidat / Anforderung:** Panda CSS; B04; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P03/P05 E1/E2: focus/hover/active selektieren Styles, binden jedoch keine Taste/Eingabe auf UX-Aktion. P06 delegiert Verhalten an Headless-Code.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C249
+
+- **Kandidat / Anforderung:** Panda CSS; A01; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05/P06 E1/E2: kein Rollen-/Accessible-name-/Beziehungsmodell im gelesenen visuellen Kern. Styling vorhandener ARIA-Attribute verleiht ihnen keine eigene Panda-Semantik.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C250
+
+- **Kandidat / Anforderung:** Panda CSS; A02; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P03/P05/P06 E1/E2: Fokusstyles sind keine Fokusführung/Tastaturpattern. Headless-Wrapper demonstriert externe Zuständigkeit, keine hier verifizierte ARIA/APG-Referenzkonformität.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C251
+
+- **Kandidat / Anforderung:** Panda CSS; A03; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05 E2: kein Live-Region-/Announcement-Modell im begrenzten Kern. Animation/Transition ist keine zugängliche Rückmeldung.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C252
+
+- **Kandidat / Anforderung:** Panda CSS; X01; **U**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P05/P06: Visual-Konfiguration lässt sich ablegen; vier unabhängige Originaldomänen samt gemeinsamen Bindungen nicht belegt. Frage: welche dokumentierte Paketgrenze erlaubt alle vier unveränderten Domänen mit separaten Validatoren?
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X01: P05/P06: Visual-Konfiguration lässt sich ablegen; vier unabhängige Originaldomänen samt gemeinsamen Bindungen nicht belegt. Frage: welche dokumentierte Paketgrenze erlaubt alle vier unveränderten Domänen mit separaten Validatoren?
+
+## C253
+
+- **Kandidat / Anforderung:** Panda CSS; X02; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P02/P05 E2: Slot-/Recipe-/Token-/Theme-Namen und Klassen sind Definitionen/Werte; kein Elementinstanz-ID-Modell im begrenzten Kern. CSS-anchor-name bleibt Autorverantwortung.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C254
+
+- **Kandidat / Anforderung:** Panda CSS; X03; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P01/P02/P05 E2: Tokenpfade und Quellenindex sind interne Visualreferenzen; keine fremden Interface-/Behavior-/A11y-Artefaktziele mit semantischer Zuordnung im gelesenen Kern. data-state-Bindung per Code müsste zusätzlich beschrieben werden.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C255
+
+- **Kandidat / Anforderung:** Panda CSS; X04; **A**.
+- **Quellen:** [S51](SOURCES.md#s51); E1. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P06 E1: wiederverwendbare Frameworkkomponenten und Headless-Teile mit eigenem Providerkontext/Props sind konkret; neutrale Definition/Instanzreferenz mit eigenem ID-/Eventkontext benötigt Adapter. Recipewiederverwendung allein wäre kein ausreichender Nachweis.
+- **Bedeutung/Grenze:** A ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C256
+
+- **Kandidat / Anforderung:** Panda CSS; X05; **A**.
+- **Quellen:** [S51](SOURCES.md#s51); E1. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P06/P07 E1: externes Designsystempaket wird installiert und über designSystem aufgelöst, Kompatibilitätsdiagnosen existieren. Reproduzierbare exakte Bindung benötigt Paketmanagerstand/Lock und Übersetzung in neutrale Paketabhängigkeit; ^1.0.0-Beispiel ist kein Pin. Kein D für versionierte Contractreferenzen.
+- **Bedeutung/Grenze:** A ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C257
+
+- **Kandidat / Anforderung:** Panda CSS; X06; **U**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P05/P07 E1/E2: TS-Eingabetypen, CLI-Flagschema, Configdiagnosen und flacher Exportreader vorhanden; vollständiges Originalschema/Originalvalidator für separates deklaratives Visualartefakt nicht nachgewiesen. Frage: welches vollständige offizielle Schema prüft das unveränderte Visualartefakt unabhängig vom Compiler?
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X06: P05/P07 E1/E2: TS-Eingabetypen, CLI-Flagschema, Configdiagnosen und flacher Exportreader vorhanden; vollständiges Originalschema/Originalvalidator für separates deklaratives Visualartefakt nicht nachgewiesen. Frage: welches vollständige offizielle Schema prüft das unveränderte Visualartefakt unabhängig vom Compiler?
+
+## C258
+
+- **Kandidat / Anforderung:** Panda CSS; X07; **N**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P05/P07 E1/E2: gelesener Exportreader/CLI-Diagnoseumfang prüft keine vierdomänigen Instanzkollisionen oder fachlichen Widersprüche. Tokenzyklen/fehlende Referenzen und Paketdiagnosen sind enger.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C259
+
+- **Kandidat / Anforderung:** Panda CSS; X08; **U**.
+- **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** P05/P06/P07: Panda-intern config-last-Vorrang und optionale sources-Provenienz belegt; Gesamtpaket-Ownership über vier Originalformate offen. Frage: welche führende Domäne entscheidet bei Konflikten zwischen Visual, Behavior und A11y, und wie bleiben Änderungen nachvollziehbar?
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X08: P05/P06/P07: Panda-intern config-last-Vorrang und optionale sources-Provenienz belegt; Gesamtpaket-Ownership über vier Originalformate offen. Frage: welche führende Domäne entscheidet bei Konflikten zwischen Visual, Behavior und A11y, und wie bleiben Änderungen nachvollziehbar?
+
+## C260
+
+- **Kandidat / Anforderung:** uSpec; G01; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CON/TYP/DOC: kanonisches JSON-Komponentenartefakt; Markdown daraus abgeleitet. E2.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C261
+
+- **Kandidat / Anforderung:** uSpec; G02; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CON/TYP/BASE: fachliche Daten benötigen keine eingebetteten JS-/Reactfunktionen. Strings und Figma-Konzepte sind beschreibend; keine portable ausführbare Verhaltenssprache. Generierung ist separat JS/TS-/Figma-/LLM-gebunden.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C262
+
+- **Kandidat / Anforderung:** uSpec; I01; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** BASE rawDefs.type und instance componentProperties type/value; SAFE bewahrt BOOLEAN/INSTANCE_SWAP/TEXT/VARIANT/SLOT explizit. API dokumentiert property/values/required/default sowie Dictionary. Typnachweis im extrahierten Quellmodell, keine vollständige Prüfung komplexer Laufzeittypen.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C263
+
+- **Kandidat / Anforderung:** uSpec; I02; **N**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CON/TYP/API-Output/Dictionary: Property-/State-/Slotdaten, keine definierte öffentliche Eventdeklaration mit strukturiertem Payloadschema im geprüften Kern. Freitextnotizen sind kein Eventmodell.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C264
+
+- **Kandidat / Anforderung:** uSpec; I03; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** anatomy.defaultTree/composition/subcomponents, TreeNode.name/id, childComposition und benannte API-Subcomponenttabellen. CON/TYP/BASE.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C265
+
+- **Kandidat / Anforderung:** uSpec; V01; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** BASE/TYP/STR: strukturierte Dimensionswerte {value,token,display}, Farbhex/-property, resolvedType und kind-bezogene Variablenwerte, Typografie; fachliche Werte sind vorhanden. Schemafelder sind teils offen und garantieren keine gültigen Einheiten/Farben.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C266
+
+- **Kandidat / Anforderung:** uSpec; V02; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** COL: Varianten/State-Spalten mit tokensByState; BASE variantProperties/colorWalk/stateComparison. Strukturierte visuelle Zustandswerte, keine UX-Transitionsbindung.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C267
+
+- **Kandidat / Anforderung:** uSpec; V03; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** COL Variable Mode Colors: modeId, Type×Mode-Abschnitte, modeTokenMap-Auflösung generischer zu semantischen Tokens, explizite Figma-Modeauswahl. BASE valuesByMode/collection modes. Direkt in Figma-/Dokumentationsrolle; keine bewiesene neutrale Theme-Laufzeit.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C268
+
+- **Kandidat / Anforderung:** uSpec; V04; **U**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** STR besitzt section._anchor mit layerId/variantId sowie Abstand/Layoutfelder. Das ist ein Mess-/Renderziel, kein ausreichender Beleg Overlay→Input mit definierter Richtung/Abstand und unabhängiger Layoutsemantik. Frage: Welche originale Felddefinition bindet Referenzziel + placement/side + offset als relative Geometrie?
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für V04: STR besitzt section._anchor mit layerId/variantId sowie Abstand/Layoutfelder. Das ist ein Mess-/Renderziel, kein ausreichender Beleg Overlay→Input mit definierter Richtung/Abstand und unabhängiger Layoutsemantik. Frage: Welche originale Felddefinition bindet Referenzziel + placement/side + offset als relative Geometrie?
+
+## C269
+
+- **Kandidat / Anforderung:** uSpec; V05; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** STR dokumentiert minHeight/maxHeight/minWidth/maxWidth mit Figma Frame Min/Max und begrenzt feste Messwerte auf FIXED-Container; BASE dimensions erhält Messdaten. Direkt als Figma-basierte maximale Abmessung, keine Ableitung fünf variabler Zeilen und kein neutraler Constraintsolver.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C270
+
+- **Kandidat / Anforderung:** uSpec; V06; **U**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** STR dokumentiert clipsContent true/false ausdrücklich als Clip content (overflow); BASE erwähnt Scrollwrapper. Clipping beweist kein formal beschriebenes Scrollverhalten/Achse. Frage: Wird overflowDirection/scrolling im Originalartefakt mit Semantik gespeichert oder braucht es neue Modellierung?
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für V06: STR dokumentiert clipsContent true/false ausdrücklich als Clip content (overflow); BASE erwähnt Scrollwrapper. Clipping beweist kein formal beschriebenes Scrollverhalten/Achse. Frage: Wird overflowDirection/scrolling im Originalartefakt mit Semantik gespeichert oder braucht es neue Modellierung?
+
+## C271
+
+- **Kandidat / Anforderung:** uSpec; B01; **N**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CON/TYP/API-Dictionary states speichern Zuordnung zu API-Werten/runtimeCondition als Prosa. Kein initial + event→target-Transitionsmodell im definierten Kern.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C272
+
+- **Kandidat / Anforderung:** uSpec; B02; **N**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** API kennt priorityOrder und textuelle Resolver-/runtimeCondition-Notizen; keine definierte Guardauswertung oder Actionausführung im Kern. CON/TYP/API.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C273
+
+- **Kandidat / Anforderung:** uSpec; B03; **N**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CON/TYP/BASE/API: Daten-Snapshots und Propertywerte, kein Kontext-/Ereignisdatenmodell für eine ausführbar definierte Behaviorlogik.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C274
+
+- **Kandidat / Anforderung:** uSpec; B04; **N**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** VOI beschreibt Tastatur/Fokus, aber keine strukturierte Input→UX-Aktion/Maschinenereignis-Bindung im geprüften Contractkern.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C275
+
+- **Kandidat / Anforderung:** uSpec; A01; **R**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** VOI benennt Plattformen und konkrete ARIA/VoiceOver/TalkBack-Eigenschaften, label-for/ID-/describedby-Zuordnung; PropertyItem.property/value/notes verweisen auf Plattformsemantik. Keine Konformitätsprüfung der Stringwerte oder Zielbeziehungen durch CON/CAC.
+- **Bedeutung/Grenze:** R ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C276
+
+- **Kandidat / Anforderung:** uSpec; A02; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** VOI: Mergeanalyse, referenzierbare Fokusreihenfolge, conditional focus stops und konkretes Tabpattern mit roving tabindex/Arrow keys. Direkt als dokumentiertes Interaktionsmuster, kein ausführbarer Keyboardprüfer.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C277
+
+- **Kandidat / Anforderung:** uSpec; A03; **R**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** VOI: live region von Fokusstopps getrennt, Fehlerbeispiele mit liveRegion:polite und iOS Notification; Semantik stammt aus den benannten Plattformen. Produkttrigger/Inhalt werden interpretiert; kein automatischer Nachweis tatsächlicher AT-Ansage.
+- **Bedeutung/Grenze:** R ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C278
+
+- **Kandidat / Anforderung:** uSpec; X01; **U**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Separate api/structure/color/voice Evidence-/Cachedateien tatsächlich vorhanden; CON erzwingt alle Bereiche plus SourceModel und kein separates Behavior. Frage: Können vier gewählte Fachartefakte unabhängig mit Originalschämata geführt werden, ohne uSpecs Pflichtcontainer neu zu modellieren? Vier Spezialisten sind nicht die gewünschten vier Domänen.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X01: Separate api/structure/color/voice Evidence-/Cachedateien tatsächlich vorhanden; CON erzwingt alle Bereiche plus SourceModel und kein separates Behavior. Frage: Können vier gewählte Fachartefakte unabhängig mit Originalschämata geführt werden, ohne uSpecs Pflichtcontainer neu zu modellieren? Vier Spezialisten sind nicht die gewünschten vier Domänen.
+
+## C279
+
+- **Kandidat / Anforderung:** uSpec; X02; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** BASE/TYP: Figma node IDs, fileKey, topLevelInstanceId, placementsByVariant.nodeIds und section anchor IDs. Direkt für Quell-/Placementidentität. Deduplizierung nach set/name und bool-Fingerprint limitiert Unterscheidung; Stabilität nach Designänderung/Export oder universelle URNs nicht bewiesen.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C280
+
+- **Kandidat / Anforderung:** uSpec; X03; **U**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CAC besitzt interne Evidence→Output-JSON-Pointer und gemeinsame Dictionaryvokabeln; STR `_anchor`/source IDs adressieren Figmaquellen. Nicht ausreichend für externe Interface/Behavior/Visual/A11y-Ziele. Frage: Welcher Resolver adressiert ein Originalartefakt anderer Domäne und definiert die semantische Bindung?
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X03: CAC besitzt interne Evidence→Output-JSON-Pointer und gemeinsame Dictionaryvokabeln; STR `_anchor`/source IDs adressieren Figmaquellen. Nicht ausreichend für externe Interface/Behavior/Visual/A11y-Ziele. Frage: Welcher Resolver adressiert ein Originalartefakt anderer Domäne und definiert die semantische Bindung?
+
+## C281
+
+- **Kandidat / Anforderung:** uSpec; X04; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** BASE: instanceConfig mit mainComponentId und variantProperties/booleanOverrides/instanceSwapOverrides/textOverrides; defaultChildren.contextualOverrides, Slots preferredInstances, genaue Placements. Direkt für dokumentierte Figma-Komponenteninstanzen/Parameter, keine runtimefähige Contractkomposition behauptet.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C282
+
+- **Kandidat / Anforderung:** uSpec; X05; **N**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CON/TYP/BASE: Figma IDs, componentKey, remote collections, hashes und schemaVersion, aber keine reproduzierbare externe Komponenten-/Teilmodellversion mit definierter Versionsauflösung im geprüften Kern. Hash der Extraktion ist keine Dependencyversion.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C283
+
+- **Kandidat / Anforderung:** uSpec; X06; **D**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CON validateCanonicalContract/Ajv prüft eigenes Canonicalartefakt unverändert; BVAL eigenes Baseartefakt separat. CAC prüft Spezialistencaches manuell, nicht gegen publizierte Fach-JSON-Schemas. D nur für eigene Originalformate; Erhalt vier fremder Validatoren nicht belegt.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C284
+
+- **Kandidat / Anforderung:** uSpec; X07; **N**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** CAC vollständige Funktion: Evidence-Ziele, Ledger, Achsen und Sourceidentität werden geprüft. Keine allgemeine Paketprüfung für fremde Domänen, Instanzkollisionen und widersprechende fachliche Anforderungen; CON nur Struktur/Hash/Slug. Kein pauschales „uSpec prüft keine Referenzen“.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C285
+
+- **Kandidat / Anforderung:** uSpec; X08; **U**.
+- **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** BASE Plugin sole writer of base, Interpretation read-only; DOC canonical JSON→Markdown und domain retries; reale interne Ownershipregeln. Frage: Gibt es eine normative per-information Vorrang-/Rückschreibregel zwischen unabhängigen Originalformaten und Integrationsschicht des gewünschten Pakets? Interne Pipelineownership allein klärt das nicht.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X08: BASE Plugin sole writer of base, Interpretation read-only; DOC canonical JSON→Markdown und domain retries; reale interne Ownershipregeln. Frage: Gibt es eine normative per-information Vorrang-/Rückschreibregel zwischen unabhängigen Originalformaten und Integrationsschicht des gewünschten Pakets? Interne Pipelineownership allein klärt das nicht.
+
+## C286
+
+- **Kandidat / Anforderung:** OpenPencil; G01; **D**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS/OPF: strukturierte JSON-Objekte im Pluginfeld; benannte Spec mit dokumentiertem Schema. Kein bloßer Freitext.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C287
+
+- **Kandidat / Anforderung:** OpenPencil; G02; **A**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS enthält datenförmige Bindungen ohne nutzereigene Funktionen; Kindsemantik und Interaktion werden aber durch Reka/Vue/DOM realisiert (OPD/OPV). Für neutralen fachlichen Kern müssen deren fest eingebaute Regeln explizit übertragen werden; kein Swift-/Angular-Nachweis.
+- **Bedeutung/Grenze:** A ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C288
+
+- **Kandidat / Anforderung:** OpenPencil; I01; **D**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPK typisiert benannte Controlwerte value/disabled/open/text als boolean/text/number/choice; OPS/OPR binden die vorhandenen Komponentenproperties nach Typ. Enger fester Controlvertrag, kein allgemeines öffentliches Prop-Typsystem.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C289
+
+- **Kandidat / Anforderung:** OpenPencil; I02; **N**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Vollständiger OPS/OPK-Kern enthält keine Deklaration öffentlicher Eventnamen mit Payloadfeldern. OPV modelValue/open-Callbacks sind Adapterimplementierung; OPT sind Agenttools, keine UI-Events.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C290
+
+- **Kandidat / Anforderung:** OpenPencil; I03; **D**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPK parts mit IDs, required/items/children, OPS parts zu Slotproperty-ID; reale strukturierte Anatomie.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C291
+
+- **Kandidat / Anforderung:** OpenPencil; V01; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Eigene numbers sind Controlwerte/-ranges, keine typisierten Designfarben/Dimensionen. Gesamter Editor-/Tokenkern nicht diesem Behaviour-Beitrag zugerechnet; gesondertes Visualmodell prüfen.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für V01: Eigene numbers sind Controlwerte/-ranges, keine typisierten Designfarben/Dimensionen. Gesamter Editor-/Tokenkern nicht diesem Behaviour-Beitrag zugerechnet; gesondertes Visualmodell prüfen.
+
+## C292
+
+- **Kandidat / Anforderung:** OpenPencil; V02; **A**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS states ordnet rest/hover/pressed/focus/disabled einer VARIANT-Property zu; OPD beschreibt Styles aus graphischen Varianten. Das Behaviour enthält keine Styles/Tokenreferenzen selbst. Scenegraph-/Variantbindung ist belegter Mechanismus, benötigt für externes Visualartefakt Übersetzung.
+- **Bedeutung/Grenze:** A ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C293
+
+- **Kandidat / Anforderung:** OpenPencil; V03; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Keine belastbare Themeauflösung für diesen Beitrag untersucht. Dokumentvariablen im Preview sind kein eigener Themevertrag. Separates Visualmodell prüfen.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für V03: Keine belastbare Themeauflösung für diesen Beitrag untersucht. Dokumentvariablen im Preview sind kein eigener Themevertrag. Separates Visualmodell prüfen.
+
+## C294
+
+- **Kandidat / Anforderung:** OpenPencil; V04; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Keine neutrale Anker-/Abstandssemantik des Behaviourbeitrags belegt; Slider-Thumb-Laufzeitposition ist kein allgemeiner Overlayvertrag. Renderer-/Layoutmodell separat prüfen.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für V04: Keine neutrale Anker-/Abstandssemantik des Behaviourbeitrags belegt; Slider-Thumb-Laufzeitposition ist kein allgemeiner Overlayvertrag. Renderer-/Layoutmodell separat prüfen.
+
+## C295
+
+- **Kandidat / Anforderung:** OpenPencil; V05; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Control min/max sind Wertebereiche, keine Flächenbegrenzung. Eigenes Layoutmodell und dynamische Zeilenhöhen separat prüfen.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für V05: Control min/max sind Wertebereiche, keine Flächenbegrenzung. Eigenes Layoutmodell und dynamische Zeilenhöhen separat prüfen.
+
+## C296
+
+- **Kandidat / Anforderung:** OpenPencil; V06; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Preview-Wheelweitergabe zum Canvas (OPD) ist kein formales Overflow-/ScrollArea-Modell des Contracts. Separates Modell prüfen.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für V06: Preview-Wheelweitergabe zum Canvas (OPD) ist kein formales Overflow-/ScrollArea-Modell des Contracts. Separates Modell prüfen.
+
+## C297
+
+- **Kandidat / Anforderung:** OpenPencil; B01; **N**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS/OPK nennen Interaktionszustandszeichnungen, aber keine deklarierte Initialzustands-/Event-/Transitiontarget-Tabelle. OPV enthält festen Code für Priorität disabled→pressed→hover→focus→rest; das ist kein vom Autor beschreibbares Maschinenmodell.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C298
+
+- **Kandidat / Anforderung:** OpenPencil; B02; **N**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS/OPK-Kern besitzt keine Guard-/Action-Ausdruckssyntax oder Ausführungsreihenfolge für fachliche Aktionen. Feste OPV-Funktionen sind Implementierung, kein Contractfeld.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C299
+
+- **Kandidat / Anforderung:** OpenPencil; B03; **N**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS/OPK enthalten Wertebindungen, aber keine Ereignispayload-/Contextreferenzen oder datenverarbeitende Logiksprache. OPV hält konkrete Werte und verarbeitet Callbacks in TS; das erweitert nicht die Originalsyntax.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C300
+
+- **Kandidat / Anforderung:** OpenPencil; B04; **A**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPV interaction bindet Pointer-/FocusEvents, Reka-Komponenten übernehmen Tastatur und Eingaben (OPD). Ein neutraler expliziter Input→UX-Action-Vertrag benötigt Extraktion/Hostbindung dieser vorhandenen Mechanismen.
+- **Bedeutung/Grenze:** A ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C301
+
+- **Kandidat / Anforderung:** OpenPencil; A01; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPV zeigt role=radio/aria-checked und Reka-Wrapper. Vollständige Rollen-/Namen-/Beziehungssemantik je Kind und benennbare externe Ziele nicht geprüft; keine automatische R-Zurechnung aller Reka-Fähigkeiten.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für A01: OPV zeigt role=radio/aria-checked und Reka-Wrapper. Vollständige Rollen-/Namen-/Beziehungssemantik je Kind und benennbare externe Ziele nicht geprüft; keine automatische R-Zurechnung aller Reka-Fähigkeiten.
+
+## C302
+
+- **Kandidat / Anforderung:** OpenPencil; A02; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPD delegiert Tastatur/Fokus an Browser/Reka; referenzierte einzelne Reka-Muster und ihr vollständiges Mapping wurden nicht auditiert. Kindname allein ist noch kein nachgewiesener neutraler Patternvertrag.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für A02: OPD delegiert Tastatur/Fokus an Browser/Reka; referenzierte einzelne Reka-Muster und ihr vollständiges Mapping wurden nicht auditiert. Kindname allein ist noch kein nachgewiesener neutraler Patternvertrag.
+
+## C303
+
+- **Kandidat / Anforderung:** OpenPencil; A03; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Kein Nachweis einer dynamischen zugänglichen Ergebnis-/Statusmeldung im Behaviourvertrag. Vollständige Reka-/Exportpfade wären gezielt zu untersuchen.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für A03: Kein Nachweis einer dynamischen zugänglichen Ergebnis-/Statusmeldung im Behaviourvertrag. Vollständige Reka-/Exportpfade wären gezielt zu untersuchen.
+
+## C304
+
+- **Kandidat / Anforderung:** OpenPencil; X01; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS ist als Submodell exportiert, wird aber auf Scenegraph-Properties/Slots aufgelöst. Vier unabhängig beschriebene Domänen mit getrennten Originalformaten nicht nachgewiesen. Paketkompositionsnachweis fehlt.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X01: OPS ist als Submodell exportiert, wird aber auf Scenegraph-Properties/Slots aufgelöst. Vier unabhängig beschriebene Domänen mit getrennten Originalformaten nicht nachgewiesen. Paketkompositionsnachweis fehlt.
+
+## C305
+
+- **Kandidat / Anforderung:** OpenPencil; X02; **D**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS propertyId/part bindings, OPM ownerbezogene Auflösung und renameBehaviourProperties sind explizit. Begrenzte D wie C30: kein Nachweis universeller Identität über Änderungen/Mehrfachinstanzen. OPD/OPV nutzen für Preview Layerpfade, weil Varianten neue Node-IDs erzeugen.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C306
+
+- **Kandidat / Anforderung:** OpenPencil; X03; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPR verbindet Behavior mit Properties/Slots desselben Scenegraphs. Das ist reale interne Bindung, jedoch kein Nachweis auf ein separat beschriebenes externes Interface-/Visual-/A11y-Artefakt mit Namensraum und semantischer Zuordnung. Genau diesen externen Bezug als Folgeprüfung spezifizieren.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X03: OPR verbindet Behavior mit Properties/Slots desselben Scenegraphs. Das ist reale interne Bindung, jedoch kein Nachweis auf ein separat beschriebenes externes Interface-/Visual-/A11y-Artefakt mit Namensraum und semantischer Zuordnung. Genau diesen externen Bezug als Folgeprüfung spezifizieren.
+
+## C307
+
+- **Kandidat / Anforderung:** OpenPencil; X04; **A**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPK items erlaubt Instanzen mit eigenem Verhalten; OPT create_slot erklärt instanzeigenen Slotinhalt, OPV State pro control.path/chooseItem. Konkrete Komposition ist belegt, Übersetzung in neutrales Komponentenpaket mit Parametern/Ereignisbindungen/Ownership fehlt. Kein pauschales D aus Editorinstanzen.
+- **Bedeutung/Grenze:** A ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C308
+
+- **Kandidat / Anforderung:** OpenPencil; X05; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS hat kein externes Dependency-/Versionsfeld. OPF zeigt separate libraryId/assetKey/revisionId-Buchhaltung; OPD sagt Behaviour reist mit Assets. Resolver, reproducible binding und Import-/Updatepfade für externes Fachmodell nicht geprüft; Versionsstrings allein reichen nicht für D/R/N.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X05: OPS hat kein externes Dependency-/Versionsfeld. OPF zeigt separate libraryId/assetKey/revisionId-Buchhaltung; OPD sagt Behaviour reist mit Assets. Resolver, reproducible binding und Import-/Updatepfade für externes Fachmodell nicht geprüft; Versionsstrings allein reichen nicht für D/R/N.
+
+## C309
+
+- **Kandidat / Anforderung:** OpenPencil; X06; **D**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPS ist originales separat exportiertes Valibot-Schema (OPP); OPF zeigt seine tatsächliche Verwendung bei JSON-decode. Dieses Subartefakt kann gegen Originalschema geprüft werden. Keine Behauptung eines Vier-Domänen-Paketvalidators oder erfolgreicher Probe.
+- **Bedeutung/Grenze:** D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C310
+
+- **Kandidat / Anforderung:** OpenPencil; X07; **N**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** Im begrenzten Behaviourkern OPS/OPM/OPR werden Propertytypen, bestimmte fehlende Bindungen und ein doppelt für Parts belegter Slot geprüft; keine Referenz-/Instanz-/Widerspruchsprüfung zwischen vier separaten Domänen. Dies ist die Grenze dieser konkreten Prüffunktionen, kein Audit sämtlicher Editortools.
+- **Bedeutung/Grenze:** N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
+
+## C311
+
+- **Kandidat / Anforderung:** OpenPencil; X08; **U**.
+- **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
+- **Befund:** OPM definiert lokalen behaviourOwner; OPF unterscheidet content/format/bookkeeping und OPD nennt ein Modell für alle Authoringsurfaces. Vorrang/Änderungsnachvollziehbarkeit zwischen vier Originalformaten und Integrationsschicht bleibt unbelegt.
+- **Bedeutung/Grenze:** U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Konkrete Nachweislücke für X08: OPM definiert lokalen behaviourOwner; OPF unterscheidet content/format/bookkeeping und OPD nennt ein Modell für alle Authoringsurfaces. Vorrang/Änderungsnachvollziehbarkeit zwischen vier Originalformaten und Integrationsschicht bleibt unbelegt.
+
+
+# Letzte Kandidatenrunde: WAI-ARIA, APG und CSS Layout
+
+Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht stammt vom getrennten Recherche-Agenten; WAI-ARIA/APG wurden nach Kapazitätsfehlern zentral anhand offizieller Quellen geprüft. Kein fehlgeschlagener Start wird als Nachweis ausgegeben. 47 der 73 zuvor offenen Felder geklärt; 26 U-Fragen verbleiben. Kein Kandidat installiert, keine Praxis-/Laufzeit-/Browser-/AT-/Validatorversuche. ARIA-Norm, informativer APG-Guide und CSS-Layoutmodule bleiben getrennte Rollen.
+
+**Methodische Zentralentscheidung G02/CSS:** D statt des konservativen A-Vorschlags im Bericht, weil das festgelegte Kriterium keine erforderlichen JS-/Reactfunktionen verlangt. CSS erfüllt dies im Fachmodell. Fehlende native/rendererneutrale Abbildung wird dadurch nicht behauptet oder gelöst. Keine heimliche Verschärfung des Kriteriums auf vollständige Plattformneutralität.
+
+## C312
+
+- **Kandidat / Anforderung:** WAI-ARIA; G01; **D**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §§5–6/8 definiert Rollen sowie maschinenlesbare Zustands-/Propertyattribute in Host-Markup, einschließlich Werttypen und Verarbeitung. Das ist A11y-Datensyntax, kein vollständiges JSON-Komponentenformat.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C313
+
+- **Kandidat / Anforderung:** WAI-ARIA; G02; **D**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §6.2.4/Anhang A trennt generische Werttypen von ihrer Hostrepräsentation; Semantik verlangt keine JS-/React-Funktionen. Web-/Hostbindung und native Umsetzung bleiben gesonderte Fragen.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C314
+
+- **Kandidat / Anforderung:** WAI-ARIA; I01; **D**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §6 definiert benannte öffentlich exponierte Accessibility-Properties mit ausdrücklichen Typen, etwa aria-expanded und IDREF-Werte. D nur für diese A11y-Schnittstelle, kein allgemeiner Komponenten-Propkatalog oder Runtime-Wertetest.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C315
+
+- **Kandidat / Anforderung:** WAI-ARIA; I02; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Im begrenzten Rollen-/Propertykern AR12 ist kein öffentlicher Komponenten-Eventkatalog mit strukturierten Payloaddeklarationen definiert. AAM-Ereignisse sind Plattformmeldungen, kein daraus abgeleiteter UI-API-Vertrag.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C316
+
+- **Kandidat / Anforderung:** WAI-ARIA; I03; **U**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 Required Context/Owned Elements beschreibt Rollenbeziehungen, aber keinen ausreichend nachgewiesenen benannten UI-Partkatalog. Frage: Wie wird konkrete Komponenten-Anatomie von Input/Popup/Slots mit diesen Rollen verbunden?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** AR12 Required Context/Owned Elements beschreibt Rollenbeziehungen, aber keinen ausreichend nachgewiesenen benannten UI-Partkatalog. Frage: Wie wird konkrete Komponenten-Anatomie von Input/Popup/Slots mit diesen Rollen verbunden?
+
+## C317
+
+- **Kandidat / Anforderung:** WAI-ARIA; V01; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 definiert semantische Werte, keine Designfarben, Typografie oder typisierten Geometriedimensionen. aria-valuenow bezeichnet Controlwerte, keine visuelle Größensprache.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C318
+
+- **Kandidat / Anforderung:** WAI-ARIA; V02; **R**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §8.7 verlangt Unterstützung von CSS-Attributselektoren und aktualisierte Präsentation bei ARIA-Änderungen. R für die ausdrücklich dokumentierte Bindung an externe CSS-Styledeklarationen, keine eigenen fertigen Styles/Designvarianten.
+- **Bedeutung/Grenze:** R im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C319
+
+- **Kandidat / Anforderung:** WAI-ARIA; V03; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Im AR12-Rollen-/Propertykern kein Theme-/Dark-Mode-Wertauflösungsmodell. Host-CSS und Betriebssystempräferenzen sind getrennte Beiträge.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C320
+
+- **Kandidat / Anforderung:** WAI-ARIA; V04; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12-Semantik definiert keinen geometrischen Anker, Position/Seite oder Pixelabstand. aria-controls/owns bezeichnet semantische Beziehungen, nicht Layoutanker.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C321
+
+- **Kandidat / Anforderung:** WAI-ARIA; V05; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** ARIA-Range-Minimum/Maximum beschreibt zulässige Controlwerte. Der definierte Kern enthält keine maximale Fläche/Höhe oder Zeilenableitung.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C322
+
+- **Kandidat / Anforderung:** WAI-ARIA; V06; **U**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Orientierung, Fokus-/Sichtbarkeitshinweise und Scrollbarkeit im Host sind kein geprüfter formaler Overflowvertrag. Frage: Welches getrennte Layout-/Scrollmodell bestimmt Clip, Scrollport und Begrenzung?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Orientierung, Fokus-/Sichtbarkeitshinweise und Scrollbarkeit im Host sind kein geprüfter formaler Overflowvertrag. Frage: Welches getrennte Layout-/Scrollmodell bestimmt Clip, Scrollport und Begrenzung?
+
+## C323
+
+- **Kandidat / Anforderung:** WAI-ARIA; B01; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Benannte ARIA-Zustandswerte sind keine Autorenmaschine mit Initialzustand und eventbestimmten Transitionzielen. AR12 §§1.2/4 weist tatsächliche Interaktion dem Autor/Host zu.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C324
+
+- **Kandidat / Anforderung:** WAI-ARIA; B02; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 beschreibt Pflichten/Attributbedeutungen, keine frei beschreibbare Guard-/Action-Ausführungssprache. Normative MUST-Regeln sind keine ausführbaren Guards.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C325
+
+- **Kandidat / Anforderung:** WAI-ARIA; B03; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Im begrenzten AR12-Kern kein Context-/Eventausdrucksmodell für Produktlogik; semantische Attribute ersetzen keine Datenverarbeitung.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C326
+
+- **Kandidat / Anforderung:** WAI-ARIA; B04; **A**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §4.3 beschreibt Fokusführung über Host-tabindex/DOM-Fokus und aria-activedescendant; Hostevents werden am fokussierten Element verarbeitet. Konkrete Tastenevents und Produktaktionen müssen durch Hostcode gebunden werden, keine universelle fertige UX-Bindung.
+- **Bedeutung/Grenze:** A im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C327
+
+- **Kandidat / Anforderung:** WAI-ARIA; A01; **D**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 Rollen, Accessible-Name-Anforderungen, aria-label/labelledby/describedby/controls/owns und IDREF-Typen sind ausdrücklich definiert. Accname/AAM sind getrennte ergänzende Quellen; keine echte Browser-/AT-Konformität daraus ableiten.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C328
+
+- **Kandidat / Anforderung:** WAI-ARIA; A02; **D**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §4.3 und Rollendefinitionen beschreiben referenzierbare Fokus-/Keyboardpflichten für Composite-Widgets; etwa Container-Tabstopp und Focusmanagement. D für diesen Normteil; konkrete vollständige Tastaturkonventionen werden durch APG ergänzt.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C329
+
+- **Kandidat / Anforderung:** WAI-ARIA; A03; **D**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 aria-live/atomic/relevant/busy und Rollen alert/status definieren zugängliche dynamische Aktualisierungssemantik. Produktauslöser, Inhalte und tatsächliche Ansage bleiben ausdrücklich gesondert.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C330
+
+- **Kandidat / Anforderung:** WAI-ARIA; X01; **U**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** ARIA-Markup kann als Accessibility-Beitrag referenziert werden. Frage: Wie bindet ein eigenständiges A11y-Artefakt vier unveränderte Originaldomänen mit getrennten führenden Quellen? Hostintegration allein beweist dies nicht.
+- **Bedeutung/Grenze:** U im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** ARIA-Markup kann als Accessibility-Beitrag referenziert werden. Frage: Wie bindet ein eigenständiges A11y-Artefakt vier unveränderte Originaldomänen mit getrennten führenden Quellen? Hostintegration allein beweist dies nicht.
+
+## C331
+
+- **Kandidat / Anforderung:** WAI-ARIA; X02; **R**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §6.2.4/Anhang A nutzt ausdrücklich IDs anderer Elemente desselben Dokuments; HTML-id/XML-IDREF sind benannte Host-Zielmodelle. R für konkrete Elementreferenz, keine dauerhafte komponentenübergreifende Instanz-/URN-Garantie.
+- **Bedeutung/Grenze:** R im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C332
+
+- **Kandidat / Anforderung:** WAI-ARIA; X03; **U**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** IDREF verbindet reale Hostelemente semantisch, keine nachgewiesenen externen Fachmodellknoten. Frage: Welcher Resolver bindet separate Interface-/Visual-/Behavior-Originalartefakte an diese Elementziele?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** IDREF verbindet reale Hostelemente semantisch, keine nachgewiesenen externen Fachmodellknoten. Frage: Welcher Resolver bindet separate Interface-/Visual-/Behavior-Originalartefakte an diese Elementziele?
+
+## C333
+
+- **Kandidat / Anforderung:** WAI-ARIA; X04; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12-Rollenhierarchie und owned elements sind semantische Struktur, keine Trennung von Komponentendefinition und parametrisierter Verwendung mit eigenem Instanzkontext.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C334
+
+- **Kandidat / Anforderung:** WAI-ARIA; X05; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Im definierten AR12-Attributkern kein versionierter externer Komponenten-/Teilmodellresolver. Datierte Norm-URLs versionieren die Quelle, nicht eine abhängige Komponenteninstanz.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C335
+
+- **Kandidat / Anforderung:** WAI-ARIA; X06; **U**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §8/Anhang A nennt Host-Wertabbildungen; kein vollständiges separates Originalschema samt konkret geprüftem neutralen A11y-Artefaktvalidator nachgewiesen. Frage: Welcher Originalchecker prüft welche Host-/ARIA-Version und welche semantischen Beziehungen?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** AR12 §8/Anhang A nennt Host-Wertabbildungen; kein vollständiges separates Originalschema samt konkret geprüftem neutralen A11y-Artefaktvalidator nachgewiesen. Frage: Welcher Originalchecker prüft welche Host-/ARIA-Version und welche semantischen Beziehungen?
+
+## C336
+
+- **Kandidat / Anforderung:** WAI-ARIA; X07; **N**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §9 begrenzt UA-Validierung ausdrücklich: unter anderem zirkuläre ownership, echte Checkboxfunktion und korrektes active-descendant-Ziel werden nicht logisch vollständig verifiziert. Keine Vier-Domänen-Paketkonfliktprüfung im definierten Kern.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C337
+
+- **Kandidat / Anforderung:** WAI-ARIA; X08; **U**.
+- **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AR12 §8 behandelt Vorrang nativer/Host-Semantik und ARIA-Konflikte. Das ist positiv, aber kein Quellen-/Änderungsmodell über vier Originalformate. Frage: Welche Paketregel legt die führende Quelle pro überlappender Information fest?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** AR12 §8 behandelt Vorrang nativer/Host-Semantik und ARIA-Konflikte. Das ist positiv, aber kein Quellen-/Änderungsmodell über vier Originalformate. Frage: Welche Paketregel legt die führende Quelle pro überlappender Information fest?
+
+## C338
+
+- **Kandidat / Anforderung:** APG; G01; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP0 definiert APG ausdrücklich als informativen Guide ohne Konformitätsmodell; im untersuchten Patternkern kein separates maschinenlesbares Komponenten-/Domänenaustauschschema. HTML/JS-Referenzbeispiele sind Implementierungen, kein dadurch vorhandenes APG-Contractformat.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C339
+
+- **Kandidat / Anforderung:** APG; G02; **D**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP0/AP1 beschreiben Tastatur-, Fokus- und Rollenregeln ohne erforderliche JS-/React-Funktionssprache. D in der Pattern-/Guidance-Rolle, keine neutral ausführbare Maschine oder native Konformität; Referenzimplementierung separat JS/DOM.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C340
+
+- **Kandidat / Anforderung:** APG; I01; **R**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP1 Roles/States/Properties ordnet konkret aria-expanded/controls/autocomplete und erlaubte Werte zu und verweist auf ARIA. R für externe semantische Propertytypen, kein allgemeiner öffentlicher API-Propkatalog.
+- **Bedeutung/Grenze:** R im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C341
+
+- **Kandidat / Anforderung:** APG; I02; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Der begrenzte APG-Patternumfang AP0/AP1 definiert keinen öffentlichen Eventnamen-/Payloadkatalog. Keydown im Beispiel ist Hostevent, keine allgemeine Komponenten-Eventdeklaration.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C342
+
+- **Kandidat / Anforderung:** APG; I03; **D**.
+- **Quellen:** [S55](SOURCES.md#s55); E2. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP1 und AP4 benennen Input, Popup/Listbox, Button und Optionen; AP5-Constructor bindet comboboxNode/buttonNode/listboxNode und Optionselemente. D für strukturiert benannte Beispiel-/Patternteile, kein universelles serialisiertes Anatomieschema.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C343
+
+- **Kandidat / Anforderung:** APG; V01; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** APG-Patternregeln definieren keinen eigenen Designwert-/Token-Typenkatalog. AP6 enthält echte CSS-Beispielwerte, die hier nicht als allgemeines APG-Designmodell zugerechnet werden.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C344
+
+- **Kandidat / Anforderung:** APG; V02; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Fokus-/Hoverdarstellung in AP6 ist illustrative CSS-Präsentation eines Beispiels. Der definierte Guide besitzt keine eigene Variantensprache mit verbindlichen Style-/Tokenmaps für Komponenten.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C345
+
+- **Kandidat / Anforderung:** APG; V03; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Im untersuchten APG-Patternkern kein eigener Theme-/Mode-Resolver. Hinweise zu High Contrast sind Accessibility-Anforderungen, kein vollständiges Token-Themeformat.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C346
+
+- **Kandidat / Anforderung:** APG; V04; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** APG definiert keine allgemeine formale Anker-/Abstandsnotation. AP6 verwendet konkrete CSS-Positionen; das ist kein vom Pattern vorgeschriebener geometrischer Contract.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C347
+
+- **Kandidat / Anforderung:** APG; V05; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP6 verwendet max-height:250px als illustrative Beispielentscheidung. AP0/AP1 definieren kein allgemeines maximales Flächen-/Zeilenmodell; keine Fünf-Zeilen-Regel ableiten.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C348
+
+- **Kandidat / Anforderung:** APG; V06; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP5/AP6 zeigen scrollIntoView und CSS-overflow im Beispiel. Keine eigene abstrakte Overflow-/Scrollsprache im definierten Guide; realer Beispielbeitrag wird ausdrücklich nicht mit einem APG-Layoutstandard gleichgesetzt.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C349
+
+- **Kandidat / Anforderung:** APG; B01; **A**.
+- **Quellen:** [S55](SOURCES.md#s55); E2. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP1 beschreibt Aktionen bei offenem/geschlossenem Popup; AP5 enthält open/close und konkrete Ereignishandler. Übertragung dieser vorhandenen Weblogik in eine formale neutrale Zustands-/Transitiondatei benötigt ein explizites Adaptermodell.
+- **Bedeutung/Grenze:** A im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C350
+
+- **Kandidat / Anforderung:** APG; B02; **A**.
+- **Quellen:** [S55](SOURCES.md#s55); E2. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP5 enthält tatsächliche Bedingungen etwa verfügbare Optionen/Fokus und Aktionen zur Auswahl/Öffnung, AP1 erläutert optionale Interaktionen. Konkrete JS-Implementierung vorhanden, kein generisches APG-Guard-/Actionformat; formale Übertragung nötig.
+- **Bedeutung/Grenze:** A im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C351
+
+- **Kandidat / Anforderung:** APG; B03; **A**.
+- **Quellen:** [S55](SOURCES.md#s55); E2. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP5 verarbeitet event.key, Filtertext, gefilterte Optionen und aktuellen Wert in JS. Dokumentierter Datenverarbeitungsmechanismus, aber kein sprachneutrales Context-/Eventdatenschema; für getrennten Behaviorvertrag zu übersetzen.
+- **Bedeutung/Grenze:** A im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C352
+
+- **Kandidat / Anforderung:** APG; B04; **D**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP1/AP2 verknüpfen Pfeile, Enter, Escape und Fokus ausdrücklich mit UI-Aktionen. D als dokumentierte Patternbindung; optionale Varianten vorher wählen und Beispielcode nicht pauschal als Produktprofil übernehmen.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C353
+
+- **Kandidat / Anforderung:** APG; A01; **R**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP1 Rollen-/State-/Propertyabschnitt übernimmt Bedeutung aus den verlinkten WAI-ARIA-Definitionen und konkretisiert Beziehungen im Pattern. R zeigt externe normative Semantik; Guide ist selbst kein normativer Rollenstandard.
+- **Bedeutung/Grenze:** R im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C354
+
+- **Kandidat / Anforderung:** APG; A02; **D**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP1/AP2 liefern referenzierbare Combobox- und Tastatur-/Fokusmuster. Bestehendes D bleibt; keine tatsächliche Konformitäts-/AT-Prüfung durch bloßen Verweis.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C355
+
+- **Kandidat / Anforderung:** APG; A03; **D**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP3 Alert Pattern beschreibt dynamische Meldung ohne Fokusübernahme sowie Grenzen bei initial vorhandenen Alerts und Unterbrechungshäufigkeit. Direkter Patternbeitrag, kein universeller Ergebnisansagen-Automat; echte Screenreaderunterstützung ungeprüft.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C356
+
+- **Kandidat / Anforderung:** APG; X01; **U**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** APG lässt sich als unabhängige Accessibility-Anforderungsquelle referenzieren. Frage: Wie werden vier getrennte Originalartefakte ohne doppelte Führung und stilles Umdefinieren der Patternvarianten verbunden?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** APG lässt sich als unabhängige Accessibility-Anforderungsquelle referenzieren. Frage: Wie werden vier getrennte Originalartefakte ohne doppelte Führung und stilles Umdefinieren der Patternvarianten verbunden?
+
+## C357
+
+- **Kandidat / Anforderung:** APG; X02; **D**.
+- **Quellen:** [S55](SOURCES.md#s55); E2. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP4/AP5 benutzen konkrete Element-/Option-IDs für aria-activedescendant und Beziehungselemente. D im ausgewählten Web-Referenzbeispiel, kein stabiler Mehrfachinstanz-/Export-/URN-Standard des gesamten Guides.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C358
+
+- **Kandidat / Anforderung:** APG; X03; **U**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Patternlinks und DOM-ID-Verweise sind konkrete Teilbindungen. Frage: Welches Paketprofil adressiert Ziele in separat beschriebenen Interface-/Visual-/Behavior-Artefakten semantisch und überprüfbar?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Patternlinks und DOM-ID-Verweise sind konkrete Teilbindungen. Frage: Welches Paketprofil adressiert Ziele in separat beschriebenen Interface-/Visual-/Behavior-Artefakten semantisch und überprüfbar?
+
+## C359
+
+- **Kandidat / Anforderung:** APG; X04; **U**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP1 verbindet Popupmuster mit Combobox und AP5 instanziiert eine JS-Beispielklasse. Frage: Wie werden autonome Unterkomponenten mit eigenen Parametern/Kontexten und versionierten Definitionen als Contract komponiert? Kein neutraler Overlay/ScrollArea-Nachweis.
+- **Bedeutung/Grenze:** U im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** AP1 verbindet Popupmuster mit Combobox und AP5 instanziiert eine JS-Beispielklasse. Frage: Wie werden autonome Unterkomponenten mit eigenen Parametern/Kontexten und versionierten Definitionen als Contract komponiert? Kein neutraler Overlay/ScrollArea-Nachweis.
+
+## C360
+
+- **Kandidat / Anforderung:** APG; X05; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Im definierten Pattern-/Beispielmodell kein externer versionierter Komponenten-/Teilmodellresolver. Gepinnter Git-Stand sichert die Quelle, keine APG-eigene Contract-Abhängigkeitsauflösung.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C361
+
+- **Kandidat / Anforderung:** APG; X06; **U**.
+- **Quellen:** [S55](SOURCES.md#s55); E2. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP7/Repository dokumentiert reale HTML-/CSS-/JS-Linter und Beispielregressionstests. Frage: Welches originale separate A11y-/Patternartefaktschema und Werkzeug prüft unveränderte Contractdateien? Beispielcodevalidierung ist keine Antwort auf diese Frage.
+- **Bedeutung/Grenze:** U im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** AP7/Repository dokumentiert reale HTML-/CSS-/JS-Linter und Beispielregressionstests. Frage: Welches originale separate A11y-/Patternartefaktschema und Werkzeug prüft unveränderte Contractdateien? Beispielcodevalidierung ist keine Antwort auf diese Frage.
+
+## C362
+
+- **Kandidat / Anforderung:** APG; X07; **N**.
+- **Quellen:** [S55](SOURCES.md#s55); E2. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP7 testet konkrete Beispiele und Quelltextqualität, keine gemeinsame Referenz-/Instanz-/fachliche Konfliktprüfung von vier externen Domänen. Nicht behaupten, dass APG keine Tests hat.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C363
+
+- **Kandidat / Anforderung:** APG; X08; **U**.
+- **Quellen:** [S55](SOURCES.md#s55); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** AP0 erklärt nichtnormativen Status und Beziehung zu ARIA/WCAG; dies klärt Quellenrollen teilweise. Frage: Welche per-information Ownership-/Änderungsregel verbindet Guide, Produktprofil und drei weitere Originalformate?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** AP0 erklärt nichtnormativen Status und Beziehung zu ARIA/WCAG; dies klärt Quellenrollen teilweise. Frage: Welche per-information Ownership-/Änderungsregel verbindet Guide, Produktprofil und drei weitere Originalformate?
+
+## C364
+
+- **Kandidat / Anforderung:** CSS Layout; G01; **D**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** SYNTAX §§3–5 definiert maschinenlesbare Stylesheets, Regeln und Deklarationen; ANCHOR/OVERFLOW besitzen formale Propertygrammatiken und Semantik. CSS als textuelle Sprache erfüllt die Datensyntax für den Fachbeitrag; JSON/YAML ist nicht erforderlich.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C365
+
+- **Kandidat / Anforderung:** CSS Layout; G02; **D**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Zentrale Einordnung nach G02: CSS-Wert-/Layoutsemantik verlangt keine React-/JavaScript-Funktionen. D gilt im deklarativen CSS-Fachbeitrag; fehlende rendererneutrale oder native Bindung bleibt ausdrücklich unbewiesen. Bericht schlug konservativ A vor; die reine Plattformfrage ist jedoch nicht mit dem definierten Sprachkriterium gleichzusetzen.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C366
+
+- **Kandidat / Anforderung:** CSS Layout; I01; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** CSS-Propertywerttypen sind keine nachgewiesenen öffentlichen Komponenten-API-Typmetadaten. Frage: Welches separat referenzierte Komponentenmodell definiert öffentliche Inputs und bindet sie an diese Deklarationen?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** CSS-Propertywerttypen sind keine nachgewiesenen öffentlichen Komponenten-API-Typmetadaten. Frage: Welches separat referenzierte Komponentenmodell definiert öffentliche Inputs und bindet sie an diese Deklarationen?
+
+## C367
+
+- **Kandidat / Anforderung:** CSS Layout; I02; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Kein ausreichender Nachweis öffentlicher Komponentenereignisse mit Payload in den gelesenen Layoutquellen. Frage: Welches Ereignisschema bindet den Layoutbeitrag an öffentliche Events?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Kein ausreichender Nachweis öffentlicher Komponentenereignisse mit Payload in den gelesenen Layoutquellen. Frage: Welches Ereignisschema bindet den Layoutbeitrag an öffentliche Events?
+
+## C368
+
+- **Kandidat / Anforderung:** CSS Layout; I03; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** anchor-name benennt Anker, keine geprüfte Komponenten-Anatomie. Frage: Wie werden Input/Overlay/ScrollArea als Komponentenbestandteile definiert und an CSS-Elemente gebunden?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** anchor-name benennt Anker, keine geprüfte Komponenten-Anatomie. Frage: Wie werden Input/Overlay/ScrollArea als Komponentenbestandteile definiert und an CSS-Elemente gebunden?
+
+## C369
+
+- **Kandidat / Anforderung:** CSS Layout; V01; **R**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** ANCHOR/OVERFLOW §1.1 referenzieren VALUES; VALUES §5 definiert dimensionierte Längen, relative/absolute Einheiten und Auflösung. Unterstützt typisierte Dimensionen, nicht automatisch ein vollständiges Design-Token-, Farb- oder Typografiemodell.
+- **Bedeutung/Grenze:** R im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C370
+
+- **Kandidat / Anforderung:** CSS Layout; V02; **N**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Im begrenzten ANCHOR/OVERFLOW-Kern keine benannten visuellen UX-Zustandsvarianten. ANCHOR §6 position-try/@position-try definiert geometrische Ausweichoptionen bei Überlauf, keine Zustandsvarianten einer UX-Maschine. Selektoren, Cascade- oder Animationsmodule wurden nicht zu diesem Kandidaten erweitert.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C371
+
+- **Kandidat / Anforderung:** CSS Layout; V03; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Theme-/Dark-Mode-Auswahl liegt außerhalb der geprüften Kernmodule. Frage: Soll ein separat zu prüfendes CSS-Modul für Modusauswahl eingebunden werden, und wie wäre dessen Bindung an Contract-Modi?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Theme-/Dark-Mode-Auswahl liegt außerhalb der geprüften Kernmodule. Frage: Soll ein separat zu prüfendes CSS-Modul für Modusauswahl eingebunden werden, und wie wäre dessen Bindung an Contract-Modi?
+
+## C372
+
+- **Kandidat / Anforderung:** CSS Layout; V04; **D**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** ANCHOR §§2.1–2.4: anchor-name, anchor-scope, position-anchor und Zielauflösung; §3.1 position-area; §3.2 anchor() mit Seite/Richtung und Länge; VALUES calc() erlaubt zusätzlichen Abstand. §5 anchor-size() liefert relative Größe. D innerhalb CSS-Boxmodell.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C373
+
+- **Kandidat / Anforderung:** CSS Layout; V05; **R**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** OVERFLOW referenziert max-height nach SIZING §3.1.3; SIZING §§3.2–3.3 definiert nichtnegative Größen und Content-/Border-Boxbezug. Maximalhöhe ist formal; fünf sichtbare Einträge bei variablen Zeilenhöhen folgen daraus nicht. Minimum/Maximum, Padding, Border, Schreibmodus und Prozentbasis gehören zur konkreten Bindung.
+- **Bedeutung/Grenze:** R im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C374
+
+- **Kandidat / Anforderung:** CSS Layout; V06; **D**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** OVERFLOW §§2–3 definiert scrollable overflow area/scrollport und overflow-x/-y: visible, hidden, clip, scroll, auto. hidden bleibt programmatisch scrollbar, clip verbietet Scrollen, auto hängt von tatsächlichem Overflow ab. Daraus folgt keine sichtbare Elementzahl.
+- **Bedeutung/Grenze:** D im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C375
+
+- **Kandidat / Anforderung:** CSS Layout; B01; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Positionierungsfallback ist keine geprüfte Ereigniszustandsmaschine. Frage: Welches Behavior-Modell liefert Initialzustand, Ereignisse und Übergangsziele und bindet Styles daran?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Positionierungsfallback ist keine geprüfte Ereigniszustandsmaschine. Frage: Welches Behavior-Modell liefert Initialzustand, Ereignisse und Übergangsziele und bindet Styles daran?
+
+## C376
+
+- **Kandidat / Anforderung:** CSS Layout; B02; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Geometrische Bedingungen/Ausweichregeln sind kein Nachweis von UX-Guards und Aktionen. Frage: Wo sind Auswertung und Ausführung der Contract-Aktionen definiert?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Geometrische Bedingungen/Ausweichregeln sind kein Nachweis von UX-Guards und Aktionen. Frage: Wo sind Auswertung und Ausführung der Contract-Aktionen definiert?
+
+## C377
+
+- **Kandidat / Anforderung:** CSS Layout; B03; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Keine ausreichende Zustands-/Ereignisdatenmodellierung für Produktlogik geprüft. Frage: Welche separat typisierten Kontext-/Eventdaten steuern die Bindung?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Keine ausreichende Zustands-/Ereignisdatenmodellierung für Produktlogik geprüft. Frage: Welche separat typisierten Kontext-/Eventdaten steuern die Bindung?
+
+## C378
+
+- **Kandidat / Anforderung:** CSS Layout; B04; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Scrollmechanismus ist keine ausdrückliche Abbildung von Tastatur/Fokus auf UX-Aktionen. Frage: Welches Input-/Behavior-Binding übernimmt diese Zuordnung?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Scrollmechanismus ist keine ausdrückliche Abbildung von Tastatur/Fokus auf UX-Aktionen. Frage: Welches Input-/Behavior-Binding übernimmt diese Zuordnung?
+
+## C379
+
+- **Kandidat / Anforderung:** CSS Layout; A01; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** ANCHOR §9 weist ausdrücklich darauf hin, dass visuelle Beziehung keine sinnvolle DOM-/zugängliche Beziehung erzeugt; verweist auf HTML/ARIA. Frage: Welches konkrete semantische Zielmodell und Mapping wird für das Paket gewählt? Fremdmodellreferenz allein wird nicht als vollständige Abdeckung gezählt.
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** ANCHOR §9 weist ausdrücklich darauf hin, dass visuelle Beziehung keine sinnvolle DOM-/zugängliche Beziehung erzeugt; verweist auf HTML/ARIA. Frage: Welches konkrete semantische Zielmodell und Mapping wird für das Paket gewählt? Fremdmodellreferenz allein wird nicht als vollständige Abdeckung gezählt.
+
+## C380
+
+- **Kandidat / Anforderung:** CSS Layout; A02; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** ANCHOR §9 erläutert Risiken nichtgrafischer Navigation, liefert kein vollständig geprüftes referenzierbares Interaktionsmuster. Frage: Welches APG-/plattformbezogene Muster bestimmt Fokus und Tasten?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** ANCHOR §9 erläutert Risiken nichtgrafischer Navigation, liefert kein vollständig geprüftes referenzierbares Interaktionsmuster. Frage: Welches APG-/plattformbezogene Muster bestimmt Fokus und Tasten?
+
+## C381
+
+- **Kandidat / Anforderung:** CSS Layout; A03; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Keine nachgewiesene Accessible-Update-Semantik im Layoutkern. Frage: Welche ARIA-/Plattformregel bindet Ereignis, Meldung und Zeitpunkt an zugängliche Rückmeldung?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Keine nachgewiesene Accessible-Update-Semantik im Layoutkern. Frage: Welche ARIA-/Plattformregel bindet Ereignis, Meldung und Zeitpunkt an zugängliche Rückmeldung?
+
+## C382
+
+- **Kandidat / Anforderung:** CSS Layout; X01; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** CSS kann den Visualteil als Stylesheet führen; damit sind noch keine vier unabhängigen Contractartefakte samt gemeinsamen Bindungen nachgewiesen. Frage: Welches Paketprofil erhält vier Domänen ohne versteckte fachfremde Pflichtdefinitionen?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** CSS kann den Visualteil als Stylesheet führen; damit sind noch keine vier unabhängigen Contractartefakte samt gemeinsamen Bindungen nachgewiesen. Frage: Welches Paketprofil erhält vier Domänen ohne versteckte fachfremde Pflichtdefinitionen?
+
+## C383
+
+- **Kandidat / Anforderung:** CSS Layout; X02; **A**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** ANCHOR §2.1 explizite anchor-name-Bindungsnamen und §2.2 anchor-scope liefern konkreten Referenzmechanismus. Namen müssen nicht eindeutig sein; §2.3 wählt über Scope, Akzeptabilität und Baumreihenfolge. Für instanzstabile gemeinsame Identität ist zusätzliches ID-/Scope-Mapping nötig. Kein direkter UI-Instanz-ID-Standard.
+- **Bedeutung/Grenze:** A im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C384
+
+- **Kandidat / Anforderung:** CSS Layout; X03; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Ankerreferenzen zielen auf Elemente im CSS-Baum, nicht auf separat beschriebene Behavior-/Interface-/A11y-Domänen. Frage: Welche dokumentierte externe Domänenbindung adressiert diese Ziele eindeutig?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** Ankerreferenzen zielen auf Elemente im CSS-Baum, nicht auf separat beschriebene Behavior-/Interface-/A11y-Domänen. Frage: Welche dokumentierte externe Domänenbindung adressiert diese Ziele eindeutig?
+
+## C385
+
+- **Kandidat / Anforderung:** CSS Layout; X04; **N**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** Vollständiger Property-/Regelkern von ANCHOR/OVERFLOW definiert geometrische Beziehungen und Ausweichdeklarationen, keine Trennung von Komponentendefinition und parametrisierter Instanziierung. Wiederbenutzte Ankernamen/-Scopes oder Styles erzeugen keine Komponente mit Instanzkontext. Nur Aussage über diesen Kern.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C386
+
+- **Kandidat / Anforderung:** CSS Layout; X05; **N**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** In ANCHOR/OVERFLOW kein Mechanismus für externe Komponenten-/Teilmodellreferenz mit gebundener Version und Auflösung. Spezifikations-URLs versionieren die Normlektüre, keine Abhängigkeit einer UI-Instanz. Stylesheetimport-/Paketverwaltung wurde nicht als zusätzliche Kandidatenfähigkeit unterstellt.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C387
+
+- **Kandidat / Anforderung:** CSS Layout; X06; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** SYNTAX §3 enthält Anforderungen an Parser und Conformance Checker, aber CSS hat hier kein JSON/XSD-Originalschema; reine Parserregeln belegen kein aktuelles Tool mit Unterstützung exakt dieser Anchor-/Overflow-Stände. Frage: Welcher konkrete Originalchecker kann getrennte Artefakte gegen welche Modulversionen prüfen? Kein Prüftool ausgeführt.
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** SYNTAX §3 enthält Anforderungen an Parser und Conformance Checker, aber CSS hat hier kein JSON/XSD-Originalschema; reine Parserregeln belegen kein aktuelles Tool mit Unterstützung exakt dieser Anchor-/Overflow-Stände. Frage: Welcher konkrete Originalchecker kann getrennte Artefakte gegen welche Modulversionen prüfen? Kein Prüftool ausgeführt.
+
+## C388
+
+- **Kandidat / Anforderung:** CSS Layout; X07; **N**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** ANCHOR §2.3/§3.2 regelt lokale Zielauflösung/ungelöste Funktionen und Fallback; SYNTAX behandelt Parsefehler. Mehrfachnamen sind erlaubt und werden aufgelöst statt als Instanzkollision abgewiesen. Keine Prüfung domänenübergreifender Vertragskonflikte im begrenzten Kern.
+- **Bedeutung/Grenze:** N im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.
+- **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
+
+## C389
+
+- **Kandidat / Anforderung:** CSS Layout; X08; **U**.
+- **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
+- **Befund:** CSS-Reihenfolge/Scope oder Fallback sind keine nachgewiesene Ownership und Änderungsverfolgung zwischen Originalformaten. Frage: Welche Paketregel weist jeder Information eine führende Quelle und nachvollziehbare Änderungen zu?
+- **Bedeutung/Grenze:** U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.
+- **Offene Frage / weiterer Bedarf:** CSS-Reihenfolge/Scope oder Fallback sind keine nachgewiesene Ownership und Änderungsverfolgung zwischen Originalformaten. Frage: Welche Paketregel weist jeder Information eine führende Quelle und nachvollziehbare Änderungen zu?
+

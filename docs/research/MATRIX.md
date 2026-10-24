@@ -103,6 +103,50 @@ Ark liefert typisierte Frameworkkomponenten, Props/Events, Teile, IDs, Providerk
 
 Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Originalschema/Artefaktvalidator bleiben ungeklärt. **API-Grenze:** Der geprüfte React-Root reicht loading nicht im Machine-Props-Split weiter, obwohl der referenzierte Zag-Typ es kennt; keine automatische Ladeansage über diesen Root behaupten. Stand: React-Paket 5.39.3, Ark-Commit `c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc`, dokumentierte Zag-Abhängigkeiten 1.46.0, 24. Oktober 2026. Quellpaketstand, kein Registry-/Runtime-/Gesamtadapteraudit.
 
+## Panda CSS auf einen Blick – vertieft geprüft
+
+**22 der 25 zuvor offenen Felder geklärt; X01/X06/X08 bleiben offen.** Verteilung D8/R1/A3/N11/U3. Vorhandenes V02/D bestätigt.
+
+Starker Visualbeitrag: typisierte Tokens, Slot-Rezepte, Varianten, Themes, Größen- und Overflowregeln. CSS Anchor Positioning ist als Referenzbeitrag R dokumentiert; Panda verwaltet Ankernamen nicht selbst. Frameworkwrapper und Designsystem-Paketauflösung bieten konkrete Adapteransätze, keine neutrale Komponenten-/Abhängigkeitssemantik. Kein UX-Automat oder eigenes Accessibility-Fachmodell im begrenzten Kern.
+
+**Neu belegter JSON-Spec-Export:** normalisierter Metadatenindex, kein verlustloses vollständiges Style-Original. Reader prüft flach und vertraut Zeilen; CLI-Flagschema ist kein fachliches Contractschema. Vollständiger unabhängiger Visualvalidator und vierdomänige Ownership bleiben ungeklärt. Quellenstand 24. Oktober 2026, Defaultbranch v2, Commit `86f78a228204d63baa0b8bca2676d9f26190e449`, @pandacss/dev 2.4.0 / Node >=22 laut Paketdatei. Keine Installation oder Ausführung.
+
+## uSpec auf einen Blick – vertieft geprüft
+
+**20 der 25 zuvor offenen Felder geklärt; V04/V06/X01/X03/X08 bleiben offen.** Verteilung D12/R2/N7/U5. Gemeint ist redongreen/uSpec, nicht UXSpec.
+
+Kanonisches JSON und abgeleitetes Markdown dokumentieren Figma-basierte Propertytypen, Anatomie, visuelle Zustands-/Modewerte, begrenzte Abmessungen, Quellidentität und Komponenteninstanzen. Benannte Plattform-Accessibility-Eigenschaften liefern Referenzbeiträge; Fokusmuster sind dokumentiert. Das sind beschreibende Quell-/Dokumentationsrollen, keine bewiesene neutrale Laufzeit oder UX-Ausführungssprache.
+
+**Schema und Veröffentlichung trennen:** inline Ajv-Originalschema samt verwendeter Validatorfunktion vorhanden; die deklarierte öffentliche Schemaadresse lieferte Not Found. Das Schema ist in vielen Fachfeldern permissiv. Basevalidator und Evidence-/Cacheprüfungen haben eigenen Umfang; fertiges Laden prüft nicht dieselbe Evidencekette wie Build. Kein vollständiger Vier-Bereiche-Konfliktvalidator. Quellenstand 24. Oktober 2026, Commit `1e25e9b8bc2e694689ba0489594f38807a341f14`, Canonicalschema 1.0 / CLI-Paket 0.3.3. Keine Ausführung.
+
+## OpenPencil auf einen Blick – vertieft geprüft
+
+**12 der 24 zuvor offenen Felder geklärt; 12 bleiben mit begrenzter Nachweislücke offen.** Verteilung D5/A4/N5/U12. Vorhandene D für Anatomie/Identität bleiben erhalten. Untersucht ist ausschließlich der Behaviour-Beitrag von open-pencil/open-pencil, nicht das gesamte Figma-/Editormodell.
+
+Benannte Controlwerte, Parts, IDs und das exportierte Original-Valibot-Schema sind konkret vorhanden. Der Dateidecoder verwendet das Schema tatsächlich; Specauflösung und Prüfung fehlender Bindungen sind separate Schritte. Variantenbindung, Eingabeverarbeitung und Instanzkomposition bieten Adapteransätze. Das begrenzte Modell enthält aber keinen allgemeinen Autorvertrag für Ereignispayloads, Automaten, Guards oder Contextausdrücke; Previewcode ersetzt ihn nicht.
+
+**Offen:** eigenständige Visual-/Layout-/Theme-/Scrollbeiträge, vollständige Accessibility-Bindungen, Vier-Domänen-Trennung/Referenzen, reproduzierbare externe Versionsauflösung und paketweite Ownership. Diese U wurden nicht zur Verringerung der Zahl negativ bewertet. Quellenstand 24. Oktober 2026, Commit `ab2875cc761ee6cff17d389ff1c85fedae50aeab`, @open-pencil/scene-graph 0.16.0. Keine Vorschau-, Import-/Export- oder Laufzeitprobe.
+
+## WAI-ARIA auf einen Blick – vertieft geprüft
+
+**18 der 24 zuvor offenen Felder geklärt; 6 bleiben U.** Verteilung D6/R2/A1/N11/U6. Eigener Beitrag: Rollen, typisierte Accessibility-Properties, Namen/Relationen, Fokuspflichten und dynamische Aktualisierungssemantik. Host-IDREF und CSS-Attributselektoren sind dokumentierte Referenzbeiträge, keine selbstständigen UI-Instanz-/Visualmodelle.
+
+ARIA erzeugt nicht automatisch richtige Interaktion. §9 begrenzt Browserprüfung ausdrücklich; etwa zyklische Ownership oder tatsächliche Checkboxfunktion werden nicht umfassend verifiziert. Ein vollständiger separater neutraler Artefaktvalidator und Vier-Domänen-Ownership bleiben offen. Baseline WAI-ARIA **1.2 REC 06.06.2023**; 1.3 **WD 04.06.2026** getrennt. Core-AAM 1.2 **CRD 21.10.2026** und Accname 1.2 **WD 21.10.2026** haben eigene Reifegrade. Kein Browser-/Screenreader-/Native-Konformitätsnachweis.
+
+## APG auf einen Blick – vertieft geprüft
+
+**20 der 25 zuvor offenen Felder geklärt; X01/X03/X04/X06/X08 bleiben offen.** Verteilung D6/R2/A3/N10/U5. APG liefert konkrete referenzierbare Bedien-/Fokusmuster, Teile eines ausgewählten Beispiels, Rollenverweise und Alert-Guidance. JS-Beispielcode ist ein konkreter Adapteransatz für einen späteren Behaviorvertrag, kein generisches APG-Automatenformat.
+
+**APG ist informativ und besitzt ausdrücklich kein eigenes Konformitätsmodell.** Die vorhandenen HTML-/CSS-/JS-Linter und Beispielregressionstests prüfen andere Artefakte als ein neutrales A11y-Contractschema. Illustrative CSS-Beispielwerte sind kein allgemeiner APG-Design-/Layoutstandard. Abruf 24. Oktober 2026, Referenzbeispiel-/Werkzeug-Snapshot `0f765e4dc33e966026114ac12a8380db1de3b787`; keine Praxis- oder AT-Prüfung. Produktionsnutzung verlangt zusätzliche konkrete Interoperabilitätsnachweise.
+
+## CSS Layout auf einen Blick – vertieft geprüft
+
+**9 der 24 zuvor offenen Felder geklärt; 15 konkrete Teilfragen bleiben U.** Zentrale Verteilung D4/R2/A1/N4/U15. G02 wird gemäß festgelegtem Sprachkriterium als D eingeordnet: keine JS-Funktionen für deklarative CSS-Semantik erforderlich. Das ist kein Nachweis neutraler/native Rendererbindung; der Bericht hatte diese Grenze vorsichtiger als A formuliert.
+
+Anchor Positioning definiert Anker-/Ziel-/Seiten-/Abstandsauflösung, Overflow definiert Scrollport und Overflowwerte. Dimensionen kommen über Values, maximale Höhe über ausdrücklich referenziertes Sizing (R). Mehrfachankernamen sind legal und benötigen für stabile Instanzen zusätzliches Mapping (A). Kein Komponenteninstanziierungs-, Versionsresolver- oder Vier-Domänen-Konfliktmodell im begrenzten Kern.
+
+Basis: Anchor **WD 27.03.2026**, Overflow **WD 07.10.2025**, Syntax **CRD 01.10.2026**, Values 3 **CRD 22.03.2024**, Sizing **WD 04.09.2026**. Neuere veränderliche Editors-Texte separat; eine angebliche datierte Anchor-WD-Adresse vom 06.09.2026 lieferte 404 und wird nicht als veröffentlichte Basis ausgegeben. Keine Browserlayout-/Validatorprobe oder Unterstützungsgarantie.
+
 ## Grundlagen
 
 ### Kandidatenblock 1
@@ -116,8 +160,8 @@ Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Origina
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| G01 Maschinenlesbare Beschreibung | [D/C85](CLAIMS.md#c85) | [D/C208](CLAIMS.md#c208) | U | [D/C29](CLAIMS.md#c29) | U | U | U | U |
-| G02 Sprachneutrale fachliche Semantik | [A/C25](CLAIMS.md#c25) | [A/C209](CLAIMS.md#c209) | U | U | U | U | U | U |
+| G01 Maschinenlesbare Beschreibung | [D/C85](CLAIMS.md#c85) | [D/C208](CLAIMS.md#c208) | [D/C234](CLAIMS.md#c234) | [D/C260](CLAIMS.md#c260) | [D/C286](CLAIMS.md#c286) | [D/C312](CLAIMS.md#c312) | [N/C338](CLAIMS.md#c338) | [D/C364](CLAIMS.md#c364) |
+| G02 Sprachneutrale fachliche Semantik | [A/C25](CLAIMS.md#c25) | [A/C209](CLAIMS.md#c209) | [A/C235](CLAIMS.md#c235) | [D/C261](CLAIMS.md#c261) | [A/C287](CLAIMS.md#c287) | [D/C313](CLAIMS.md#c313) | [D/C339](CLAIMS.md#c339) | [D/C365](CLAIMS.md#c365) |
 
 ## Interface
 
@@ -133,9 +177,9 @@ Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Origina
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| I01 Öffentliche Eigenschaften mit Typangaben | [D/C86](CLAIMS.md#c86) | [D/C210](CLAIMS.md#c210) | U | U | U | U | U | U |
-| I02 Öffentliche Ereignisse mit Payload | [D/C86](CLAIMS.md#c86) | [D/C211](CLAIMS.md#c211) | U | U | U | U | U | U |
-| I03 Benannte Komponentenbestandteile | [D/C87](CLAIMS.md#c87) | [D/C212](CLAIMS.md#c212) | U | U | [D/C30](CLAIMS.md#c30) | U | U | U |
+| I01 Öffentliche Eigenschaften mit Typangaben | [D/C86](CLAIMS.md#c86) | [D/C210](CLAIMS.md#c210) | [D/C236](CLAIMS.md#c236) | [D/C262](CLAIMS.md#c262) | [D/C288](CLAIMS.md#c288) | [D/C314](CLAIMS.md#c314) | [R/C340](CLAIMS.md#c340) | [U/C366](CLAIMS.md#c366) |
+| I02 Öffentliche Ereignisse mit Payload | [D/C86](CLAIMS.md#c86) | [D/C211](CLAIMS.md#c211) | [N/C237](CLAIMS.md#c237) | [N/C263](CLAIMS.md#c263) | [N/C289](CLAIMS.md#c289) | [N/C315](CLAIMS.md#c315) | [N/C341](CLAIMS.md#c341) | [U/C367](CLAIMS.md#c367) |
+| I03 Benannte Komponentenbestandteile | [D/C87](CLAIMS.md#c87) | [D/C212](CLAIMS.md#c212) | [D/C238](CLAIMS.md#c238) | [D/C264](CLAIMS.md#c264) | [D/C290](CLAIMS.md#c290) | [U/C316](CLAIMS.md#c316) | [D/C342](CLAIMS.md#c342) | [U/C368](CLAIMS.md#c368) |
 
 ## Visual
 
@@ -154,12 +198,12 @@ Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Origina
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| V01 Typisierte Designwerte | [D/C88](CLAIMS.md#c88) | [R/C213](CLAIMS.md#c213) | U | U | U | U | U | U |
-| V02 Visuelle Zustandsvarianten | [R/C89](CLAIMS.md#c89) | [R/C214](CLAIMS.md#c214) | [D/C28](CLAIMS.md#c28) | U | U | U | U | U |
-| V03 Themes und Dark Mode | [N/C90](CLAIMS.md#c90) | [N/C215](CLAIMS.md#c215) | U | U | U | U | U | U |
-| V04 Formale relative Geometrie | [D/C91](CLAIMS.md#c91) | [R/C216](CLAIMS.md#c216) | U | U | U | U | U | [D/C33](CLAIMS.md#c33) |
-| V05 Formale Flächenbegrenzung | [D/C92](CLAIMS.md#c92) | [R/C217](CLAIMS.md#c217) | U | U | U | U | U | U |
-| V06 Overflow und Scrollen | [D/C93](CLAIMS.md#c93) | [R/C218](CLAIMS.md#c218) | U | U | U | U | U | [D/C34](CLAIMS.md#c34) |
+| V01 Typisierte Designwerte | [D/C88](CLAIMS.md#c88) | [R/C213](CLAIMS.md#c213) | [D/C239](CLAIMS.md#c239) | [D/C265](CLAIMS.md#c265) | [U/C291](CLAIMS.md#c291) | [N/C317](CLAIMS.md#c317) | [N/C343](CLAIMS.md#c343) | [R/C369](CLAIMS.md#c369) |
+| V02 Visuelle Zustandsvarianten | [R/C89](CLAIMS.md#c89) | [R/C214](CLAIMS.md#c214) | [D/C240](CLAIMS.md#c240) | [D/C266](CLAIMS.md#c266) | [A/C292](CLAIMS.md#c292) | [R/C318](CLAIMS.md#c318) | [N/C344](CLAIMS.md#c344) | [N/C370](CLAIMS.md#c370) |
+| V03 Themes und Dark Mode | [N/C90](CLAIMS.md#c90) | [N/C215](CLAIMS.md#c215) | [D/C241](CLAIMS.md#c241) | [D/C267](CLAIMS.md#c267) | [U/C293](CLAIMS.md#c293) | [N/C319](CLAIMS.md#c319) | [N/C345](CLAIMS.md#c345) | [U/C371](CLAIMS.md#c371) |
+| V04 Formale relative Geometrie | [D/C91](CLAIMS.md#c91) | [R/C216](CLAIMS.md#c216) | [R/C242](CLAIMS.md#c242) | [U/C268](CLAIMS.md#c268) | [U/C294](CLAIMS.md#c294) | [N/C320](CLAIMS.md#c320) | [N/C346](CLAIMS.md#c346) | [D/C372](CLAIMS.md#c372) |
+| V05 Formale Flächenbegrenzung | [D/C92](CLAIMS.md#c92) | [R/C217](CLAIMS.md#c217) | [D/C243](CLAIMS.md#c243) | [D/C269](CLAIMS.md#c269) | [U/C295](CLAIMS.md#c295) | [N/C321](CLAIMS.md#c321) | [N/C347](CLAIMS.md#c347) | [R/C373](CLAIMS.md#c373) |
+| V06 Overflow und Scrollen | [D/C93](CLAIMS.md#c93) | [R/C218](CLAIMS.md#c218) | [D/C244](CLAIMS.md#c244) | [U/C270](CLAIMS.md#c270) | [U/C296](CLAIMS.md#c296) | [U/C322](CLAIMS.md#c322) | [N/C348](CLAIMS.md#c348) | [D/C374](CLAIMS.md#c374) |
 
 ## Behavior
 
@@ -176,10 +220,10 @@ Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Origina
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| B01 Zustände und Ereignisübergänge | [D/C94](CLAIMS.md#c94) | [R/C219](CLAIMS.md#c219) | U | U | U | U | U | U |
-| B02 Guards und Aktionen | [D/C94](CLAIMS.md#c94) | [R/C220](CLAIMS.md#c220) | U | U | U | U | U | U |
-| B03 Ereignis- und Kontextdaten | [D/C94](CLAIMS.md#c94) | [R/C221](CLAIMS.md#c221) | U | U | U | U | U | U |
-| B04 Bindung von Eingaben an UX-Aktionen | [D/C95](CLAIMS.md#c95) | [D/C222](CLAIMS.md#c222) | U | U | U | U | U | U |
+| B01 Zustände und Ereignisübergänge | [D/C94](CLAIMS.md#c94) | [R/C219](CLAIMS.md#c219) | [N/C245](CLAIMS.md#c245) | [N/C271](CLAIMS.md#c271) | [N/C297](CLAIMS.md#c297) | [N/C323](CLAIMS.md#c323) | [A/C349](CLAIMS.md#c349) | [U/C375](CLAIMS.md#c375) |
+| B02 Guards und Aktionen | [D/C94](CLAIMS.md#c94) | [R/C220](CLAIMS.md#c220) | [N/C246](CLAIMS.md#c246) | [N/C272](CLAIMS.md#c272) | [N/C298](CLAIMS.md#c298) | [N/C324](CLAIMS.md#c324) | [A/C350](CLAIMS.md#c350) | [U/C376](CLAIMS.md#c376) |
+| B03 Ereignis- und Kontextdaten | [D/C94](CLAIMS.md#c94) | [R/C221](CLAIMS.md#c221) | [N/C247](CLAIMS.md#c247) | [N/C273](CLAIMS.md#c273) | [N/C299](CLAIMS.md#c299) | [N/C325](CLAIMS.md#c325) | [A/C351](CLAIMS.md#c351) | [U/C377](CLAIMS.md#c377) |
+| B04 Bindung von Eingaben an UX-Aktionen | [D/C95](CLAIMS.md#c95) | [D/C222](CLAIMS.md#c222) | [N/C248](CLAIMS.md#c248) | [N/C274](CLAIMS.md#c274) | [A/C300](CLAIMS.md#c300) | [A/C326](CLAIMS.md#c326) | [D/C352](CLAIMS.md#c352) | [U/C378](CLAIMS.md#c378) |
 
 ## Accessibility
 
@@ -195,9 +239,9 @@ Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Origina
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| A01 Rollen, Namen und Beziehungen | [D/C96](CLAIMS.md#c96) | [D/C223](CLAIMS.md#c223) | U | U | U | [D/C31](CLAIMS.md#c31) | U | U |
-| A02 Fokus- und Tastaturanforderungen | [D/C96](CLAIMS.md#c96) | [D/C224](CLAIMS.md#c224) | U | U | U | U | [D/C32](CLAIMS.md#c32) | U |
-| A03 Dynamische Rückmeldungen | [D/C97](CLAIMS.md#c97) | [R/C225](CLAIMS.md#c225) | U | U | U | [D/C31](CLAIMS.md#c31) | U | U |
+| A01 Rollen, Namen und Beziehungen | [D/C96](CLAIMS.md#c96) | [D/C223](CLAIMS.md#c223) | [N/C249](CLAIMS.md#c249) | [R/C275](CLAIMS.md#c275) | [U/C301](CLAIMS.md#c301) | [D/C327](CLAIMS.md#c327) | [R/C353](CLAIMS.md#c353) | [U/C379](CLAIMS.md#c379) |
+| A02 Fokus- und Tastaturanforderungen | [D/C96](CLAIMS.md#c96) | [D/C224](CLAIMS.md#c224) | [N/C250](CLAIMS.md#c250) | [D/C276](CLAIMS.md#c276) | [U/C302](CLAIMS.md#c302) | [D/C328](CLAIMS.md#c328) | [D/C354](CLAIMS.md#c354) | [U/C380](CLAIMS.md#c380) |
+| A03 Dynamische Rückmeldungen | [D/C97](CLAIMS.md#c97) | [R/C225](CLAIMS.md#c225) | [N/C251](CLAIMS.md#c251) | [R/C277](CLAIMS.md#c277) | [U/C303](CLAIMS.md#c303) | [D/C329](CLAIMS.md#c329) | [D/C355](CLAIMS.md#c355) | [U/C381](CLAIMS.md#c381) |
 
 ## Integration
 
@@ -218,14 +262,14 @@ Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Origina
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| X01 Vier unabhängig beschreibbare Domänen | [U/C98](CLAIMS.md#c98) | [U/C226](CLAIMS.md#c226) | U | U | U | U | U | U |
-| X02 Stabile Elementidentität | [D/C87](CLAIMS.md#c87) | [D/C227](CLAIMS.md#c227) | U | U | [D/C30](CLAIMS.md#c30) | U | U | U |
-| X03 Domänenübergreifende Referenzen | [U/C99](CLAIMS.md#c99) | [U/C228](CLAIMS.md#c228) | U | U | U | U | U | U |
-| X04 Wiederverwendbare Komponenteninstanzen | [U/C100](CLAIMS.md#c100) | [D/C229](CLAIMS.md#c229) | U | U | U | U | U | U |
-| X05 Externe versionierte Abhängigkeiten | [N/C101](CLAIMS.md#c101) | [N/C230](CLAIMS.md#c230) | U | U | U | U | U | U |
-| X06 Eigene Schemavalidatoren erhalten | [U/C102](CLAIMS.md#c102) | [U/C231](CLAIMS.md#c231) | U | U | U | U | U | U |
-| X07 Referenz- und Konfliktprüfung des Pakets | [N/C103](CLAIMS.md#c103) | [N/C232](CLAIMS.md#c232) | U | U | U | U | U | U |
-| X08 Eindeutige führende Quelle | [N/C103](CLAIMS.md#c103) | [N/C233](CLAIMS.md#c233) | U | U | U | U | U | U |
+| X01 Vier unabhängig beschreibbare Domänen | [U/C98](CLAIMS.md#c98) | [U/C226](CLAIMS.md#c226) | [U/C252](CLAIMS.md#c252) | [U/C278](CLAIMS.md#c278) | [U/C304](CLAIMS.md#c304) | [U/C330](CLAIMS.md#c330) | [U/C356](CLAIMS.md#c356) | [U/C382](CLAIMS.md#c382) |
+| X02 Stabile Elementidentität | [D/C87](CLAIMS.md#c87) | [D/C227](CLAIMS.md#c227) | [N/C253](CLAIMS.md#c253) | [D/C279](CLAIMS.md#c279) | [D/C305](CLAIMS.md#c305) | [R/C331](CLAIMS.md#c331) | [D/C357](CLAIMS.md#c357) | [A/C383](CLAIMS.md#c383) |
+| X03 Domänenübergreifende Referenzen | [U/C99](CLAIMS.md#c99) | [U/C228](CLAIMS.md#c228) | [N/C254](CLAIMS.md#c254) | [U/C280](CLAIMS.md#c280) | [U/C306](CLAIMS.md#c306) | [U/C332](CLAIMS.md#c332) | [U/C358](CLAIMS.md#c358) | [U/C384](CLAIMS.md#c384) |
+| X04 Wiederverwendbare Komponenteninstanzen | [U/C100](CLAIMS.md#c100) | [D/C229](CLAIMS.md#c229) | [A/C255](CLAIMS.md#c255) | [D/C281](CLAIMS.md#c281) | [A/C307](CLAIMS.md#c307) | [N/C333](CLAIMS.md#c333) | [U/C359](CLAIMS.md#c359) | [N/C385](CLAIMS.md#c385) |
+| X05 Externe versionierte Abhängigkeiten | [N/C101](CLAIMS.md#c101) | [N/C230](CLAIMS.md#c230) | [A/C256](CLAIMS.md#c256) | [N/C282](CLAIMS.md#c282) | [U/C308](CLAIMS.md#c308) | [N/C334](CLAIMS.md#c334) | [N/C360](CLAIMS.md#c360) | [N/C386](CLAIMS.md#c386) |
+| X06 Eigene Schemavalidatoren erhalten | [U/C102](CLAIMS.md#c102) | [U/C231](CLAIMS.md#c231) | [U/C257](CLAIMS.md#c257) | [D/C283](CLAIMS.md#c283) | [D/C309](CLAIMS.md#c309) | [U/C335](CLAIMS.md#c335) | [U/C361](CLAIMS.md#c361) | [U/C387](CLAIMS.md#c387) |
+| X07 Referenz- und Konfliktprüfung des Pakets | [N/C103](CLAIMS.md#c103) | [N/C232](CLAIMS.md#c232) | [N/C258](CLAIMS.md#c258) | [N/C284](CLAIMS.md#c284) | [N/C310](CLAIMS.md#c310) | [N/C336](CLAIMS.md#c336) | [N/C362](CLAIMS.md#c362) | [N/C388](CLAIMS.md#c388) |
+| X08 Eindeutige führende Quelle | [N/C103](CLAIMS.md#c103) | [N/C233](CLAIMS.md#c233) | [U/C259](CLAIMS.md#c259) | [U/C285](CLAIMS.md#c285) | [U/C311](CLAIMS.md#c311) | [U/C337](CLAIMS.md#c337) | [U/C363](CLAIMS.md#c363) | [U/C389](CLAIMS.md#c389) |
 
 ## Einordnung der ersten Befunde
 
@@ -239,6 +283,6 @@ R ist keine pauschale Komplettbewertung: Ein dokumentierter Tokenalias erfüllt 
 
 ## Warum viele Zellen offen bleiben
 
-Diese Lieferung priorisiert belastbare Teilbefunde gegenüber flächendeckenden Vermutungen. Besonders X03/X05/X06/X07/X08 verlangen Prüfung der Verbindungen und konkreter Werkzeuge. Eine Übersichtsseite, ein Feld namens version oder ein vorhandenes JSON Schema beweisen diese Anforderungen nicht. uSpec, Panda, XState und OpenPencil benötigen vertiefte Schema-/Quelltextprüfung. Bei keinem Kandidaten wurde das gesamte Contract-Paket praktisch validiert.
+Diese Lieferung priorisiert belastbare Teilbefunde gegenüber flächendeckenden Vermutungen. Besonders X03/X05/X06/X07/X08 verlangen Prüfung der Verbindungen und konkreter Werkzeuge. Eine Übersichtsseite, ein Feld namens version oder ein vorhandenes JSON Schema beweisen diese Anforderungen nicht. Die inzwischen vertieften Kandidaten besitzen oben konkrete Quellenstände und verbleibende Folgefragen; weitere Prüfungen richten sich nach TASKS.md. Bei keinem Kandidaten wurde das gesamte Contract-Paket praktisch validiert.
 
 Die vorgeschlagene Eigenleistung ist daher **noch keine implementierte Architektur**: Möglicherweise werden Identitätsabbildung, externe Versionsauflösung, Domänenbindungen und Konfliktprüfung benötigt. Ob vorhandene Mechanismen ausreichen, bleibt anhand der folgenden Versuche zu klären: [RESEARCH-PLAN.md](RESEARCH-PLAN.md).

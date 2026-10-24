@@ -4,15 +4,15 @@ Stand: 24. Oktober 2026. Diese Liste ist die zentrale Übergabe für die weitere
 
 ## Aktueller Stand
 
-**10 von 16 Kandidatenprüfungen sind übernommen und abgehakt; 6 sind noch offen.** Die Drei-Agenten-Runde für AgentsORG, UXSpec und Ark UI ist abgeschlossen und zentral in Matrix, Begründungen, Quellen und Prüfregister gespeichert. Eine übernommene Prüfung kann weiterhin einzelne U-Fragen enthalten; sie ist kein Nachweis vollständiger Integration oder produktiver Eignung.
+**16 von 16 Kandidaten-Durchgängen sind übernommen und abgehakt. Keine Kandidaten-Erstprüfung ist mehr offen.** Alle Zeilen wurden im jeweiligen begrenzten Umfang geprüft; konkrete U-Fragen bleiben erhalten. Kandidatenabschluss bedeutet weder vollständige technische Klärung noch Integration, Technologieauswahl oder Produktionsreife.
 
 | Status | Anzahl | Bedeutung |
 | --- | ---: | --- |
-| Übernommen | 10 | Vertiefung mit Quellen, Begründungen und konkreten offenen Fragen im Projekt gespeichert |
-| Bericht vorhanden, Übernahme fehlt | 0 | Kein ausstehender Bericht dieser Runde |
+| Übernommen | 16 | Vertiefung mit Quellen, Begründungen und konkreten offenen Fragen gespeichert |
+| Bericht vorhanden, Übernahme fehlt | 0 | Kein ausstehender Bericht |
 | Begonnen, Abschluss fehlt | 0 | Keine verbleibende Kandidatenprüfung dieser Runde |
-| Offen | 6 | Vertiefte Kandidatenprüfung steht noch aus |
-| **Gesamt** | **16** | **6 Kandidaten benötigen noch Arbeit bis zur Übernahme** |
+| Offen, noch nicht begonnen | 0 | Alle Kandidaten-Durchgänge übernommen |
+| **Gesamt** | **16** | **Kandidatenphase abgeschlossen; Folgeaufgaben unten bleiben offen** |
 
 ## Abgeschlossene Drei-Agenten-Runde
 
@@ -23,6 +23,26 @@ Stand: 24. Oktober 2026. Diese Liste ist die zentrale Übergabe für die weitere
 | Ark UI | 21 von 24 offenen Feldern geklärt | X01, X03, X06 |
 
 Die Zahl der erledigten Kandidaten wurde erst nach tatsächlicher zentraler Übernahme erhöht. Es läuft keine weitere Kandidatenprüfung als Teil dieser Runde. Schema-/Linter-/Compilerbefunde sind Dokumenten-/Quelltextnachweise, keine Praxisversuche.
+
+## Abgeschlossene zweite Drei-Agenten-Runde
+
+| Kandidat | Ergebnis | Verbleibende U-Fragen |
+| --- | --- | --- |
+| Panda CSS | 22 von 25 offenen Feldern geklärt | X01, X06, X08 |
+| uSpec | 20 von 25 offenen Feldern geklärt | V04, V06, X01, X03, X08 |
+| OpenPencil | 12 von 24 offenen Feldern geklärt | V01, V03–V06, A01–A03, X01, X03, X05, X08 |
+
+Ergebnisse und Quellen wurden tatsächlich übernommen, danach erst die Kandidaten abgehakt. Beide abgeschlossenen Runden haben keine praktischen Versuche ausgeführt. Weder eine offene Fachfrage noch der noch ausstehende Gesamtvergleich wird durch den Kandidatenabschluss automatisch erledigt.
+
+## Abgeschlossene letzte Runde
+
+| Kandidat | Ergebnis | Verbleibende U-Fragen |
+| --- | --- | --- |
+| WAI-ARIA | 18 von 24 offenen Feldern geklärt | I03, V06, X01, X03, X06, X08 |
+| APG | 20 von 25 offenen Feldern geklärt | X01, X03, X04, X06, X08 |
+| CSS Layout | 9 von 24 offenen Feldern geklärt | I01–I03, V03, B01–B04, A01–A03, X01, X03, X06, X08 |
+
+Alle Ergebnisse sind tatsächlich in Matrix, Begründungen, Quellen und Prüfregister übernommen. ARIA/APG wurden nach Modellkapazitätsfehlern zentral anhand offizieller Quellen geprüft; CSS kam aus einem getrennten Recherchebericht. Keine erfundenen abgeschlossenen Agentenprüfungen, keine Praxisversuche. Die zentrale G02/CSS-Einordnung unterscheidet Sprachneutralität von nativer Übertragbarkeit.
 
 ## Kandidaten zum Abhaken
 
@@ -40,30 +60,32 @@ Die Reihenfolge entspricht der bestehenden Kandidatenliste. Ein Häkchen bedeute
 | [x] | XState | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
 | [x] | Zag | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
 | [x] | Ark UI | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
-| [ ] | Panda CSS | Offen | Vertiefte Prüfung der offenen Matrixfelder gegen Primärquellen |
-| [ ] | uSpec | Offen | Vertiefte Prüfung der offenen Matrixfelder gegen Primärquellen |
-| [ ] | OpenPencil | Offen | Vertiefte Prüfung des benannten Behaviour-Beitrags gegen Primärquellen |
-| [ ] | WAI-ARIA | Offen | Vertiefte Prüfung des Semantikbeitrags getrennt von APG |
-| [ ] | APG | Offen | Vertiefte Prüfung der Patternanforderungen getrennt von WAI-ARIA |
-| [ ] | CSS Layout | Offen | Anchor Positioning und Overflow als getrennte Beiträge vertieft prüfen |
+| [x] | Panda CSS | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
+| [x] | uSpec | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
+| [x] | OpenPencil | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
+| [x] | WAI-ARIA | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
+| [x] | APG | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
+| [x] | CSS Layout | Übernommen | Verbleibende U-Fragen nur bei gezieltem Folgeauftrag bearbeiten |
 
 ### Zählhistorie und gesicherte Vorarbeit
 
-Die frühere Meldung „zehn übernommen, sechs offen“ war damals verfrüht. Nach dem jetzigen Abschluss ist dieser Stand tatsächlich erreicht. AgentsORGs vorhandener Bericht wurde gezielt gegengeprüft; UXSpec-Vorarbeit gesichert und vervollständigt; für Ark UI war kein vorheriger vollständiger Webbericht belegt. Temporäre Berichtspfade sind keine Dauerablage: Primärquellen und Ergebnisse sind jetzt in den vorhandenen Forschungsdateien gesichert.
+Die frühere Meldung „zehn übernommen, sechs offen“ war damals verfrüht. Nach Abschluss der ersten Runde war dieser Stand tatsächlich erreicht; nach der zweiten Runde sind es jetzt dreizehn übernommene Kandidaten. AgentsORGs vorhandener Bericht wurde gezielt gegengeprüft; UXSpec-Vorarbeit gesichert und vervollständigt; für Ark UI war kein vorheriger vollständiger Webbericht belegt. Temporäre Berichtspfade sind keine Dauerablage: Primärquellen und Ergebnisse sind jetzt in den vorhandenen Forschungsdateien gesichert.
 
 Bei UXSpec gilt der aktuelle 26-Zeilen-Katalog mit neun vorher bewerteten und siebzehn zuvor offenen Feldern. Die ältere Chatangabe „19/27“ wurde korrigiert, nicht weitergezählt.
 
-## Nächste Arbeitsschritte
+## Offene Folgeaufgaben nach der Kandidatenphase
 
 - [x] AgentsORG-Bericht gegen Kriterien und Primärquellen prüfen und in die vorhandenen Forschungsdateien übernehmen.
 - [x] UXSpec-Vorarbeit wiederfinden, verbleibende Prüfung abschließen und übernehmen.
 - [x] Ark-UI-Vorarbeit wiederfinden, verbleibende Prüfung abschließen und übernehmen.
-- [ ] Danach die sechs noch offenen Kandidaten in der vorhandenen Reihenfolge bearbeiten.
-- [ ] Den vorgemerkten Zusatzvergleich zu **Originalschema und tatsächlichem Validierungstooling**, **Beschreibungsformat und zusätzlich nötigem Code** sowie **Reifegrad und Kompatibilität** vervollständigen. Teilbefunde für OpenUI, Google DESIGN.md, AgentsORG, UXSpec und Ark UI liegen vor; dies ist noch kein abgeschlossener Vergleich aller Kandidaten.
+- [x] Panda CSS, uSpec und OpenPencil vertieft prüfen und übernehmen.
+- [x] Die letzten drei Kandidaten WAI-ARIA, APG und CSS Layout vertieft prüfen und übernehmen.
+- [ ] Konkrete U-Fragen je Kandidat priorisieren und gezielt nachprüfen; fehlende Integrationsnachweise von fachfremden Teilfragen unterscheiden.
+- [ ] Den vorgemerkten Zusatzvergleich zu **Originalschema und tatsächlichem Validierungstooling**, **Beschreibungsformat und zusätzlich nötigem Code** sowie **Reifegrad und Kompatibilität** vervollständigen. Kandidatenbezogene Teilbefunde liegen vor; dies ist noch kein abgeschlossener Vergleich aller Kandidaten.
 - [ ] Die beiden bestätigten Detailvergleiche gezielt vervollständigen: DESIGN.md gegen deklarative Layoutmodelle und UXSpec gegen SCXML.
 - [ ] Gemeinsame Referenzen, Komponentenkomposition und Ownership anhand der verbleibenden Integrationsfragen zusammenführen.
 
-Diese Liste hält Aufgaben fest und startet keine Recherche, Implementierung, Tests oder Skill-Erstellung. Spätere praktische Versuche benötigen einen entsprechenden Arbeitsauftrag; bisherige Recherchebefunde sind keine Laufzeitnachweise. Weitere Einzelheiten stehen in der [Forschungsplanung](docs/research/RESEARCH-PLAN.md).
+Die Kandidatenrunde ist abgeschlossen. Die noch offenen Folgeaufgaben sind hier vorgemerkt; diese Liste startet nicht automatisch weitere Recherche, Implementierung, Tests oder Skill-Erstellung. Spätere praktische Versuche benötigen einen entsprechenden Arbeitsauftrag; bisherige Recherchebefunde sind keine Laufzeitnachweise. Weitere Einzelheiten stehen in der [Forschungsplanung](docs/research/RESEARCH-PLAN.md).
 
 ## Pflege bei jeder Fortsetzung
 
