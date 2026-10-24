@@ -69,7 +69,7 @@ Die Reihenfolge entspricht der bestehenden Kandidatenliste. Ein Häkchen bedeute
 
 ### Zählhistorie und gesicherte Vorarbeit
 
-Die frühere Meldung „zehn übernommen, sechs offen“ war damals verfrüht. Nach Abschluss der ersten Runde war dieser Stand tatsächlich erreicht; nach der zweiten Runde sind es jetzt dreizehn übernommene Kandidaten. AgentsORGs vorhandener Bericht wurde gezielt gegengeprüft; UXSpec-Vorarbeit gesichert und vervollständigt; für Ark UI war kein vorheriger vollständiger Webbericht belegt. Temporäre Berichtspfade sind keine Dauerablage: Primärquellen und Ergebnisse sind jetzt in den vorhandenen Forschungsdateien gesichert.
+Die frühere Meldung „zehn übernommen, sechs offen“ war damals verfrüht. Nach Abschluss der ersten Runde war dieser Stand tatsächlich erreicht; nach der zweiten Runde waren es dreizehn, nach der letzten Runde sechzehn übernommene Kandidaten. AgentsORGs vorhandener Bericht wurde gezielt gegengeprüft; UXSpec-Vorarbeit gesichert und vervollständigt; für Ark UI war kein vorheriger vollständiger Webbericht belegt. Temporäre Berichtspfade sind keine Dauerablage: Primärquellen und Ergebnisse sind jetzt in den vorhandenen Forschungsdateien gesichert.
 
 Bei UXSpec gilt der aktuelle 26-Zeilen-Katalog mit neun vorher bewerteten und siebzehn zuvor offenen Feldern. Die ältere Chatangabe „19/27“ wurde korrigiert, nicht weitergezählt.
 
@@ -83,7 +83,8 @@ Bei UXSpec gilt der aktuelle 26-Zeilen-Katalog mit neun vorher bewerteten und si
 - [ ] Konkrete U-Fragen je Kandidat priorisieren und gezielt nachprüfen; fehlende Integrationsnachweise von fachfremden Teilfragen unterscheiden.
 - [ ] Den vorgemerkten Zusatzvergleich zu **Originalschema und tatsächlichem Validierungstooling**, **Beschreibungsformat und zusätzlich nötigem Code** sowie **Reifegrad und Kompatibilität** vervollständigen. Kandidatenbezogene Teilbefunde liegen vor; dies ist noch kein abgeschlossener Vergleich aller Kandidaten.
 - [ ] Die beiden bestätigten Detailvergleiche gezielt vervollständigen: DESIGN.md gegen deklarative Layoutmodelle und UXSpec gegen SCXML.
-- [ ] Gemeinsame Referenzen, Komponentenkomposition und Ownership anhand der verbleibenden Integrationsfragen zusammenführen.
+- [x] Gemeinsame Referenzen, Komponentenkomposition und Ownership als [Integrationsentwurf](docs/research/INTEGRATION.md) dokumentarisch zusammenführen; neue Regeln ausdrücklich als Vorschläge kennzeichnen.
+- [ ] Integrationsentwurf an konkreten Referenzmechanismen abgleichen und den dokumentarischen Fall mit zwei Instanzen und ScrollArea ausarbeiten. Format, Resolver und technische Integration bleiben offen.
 
 Die Kandidatenrunde ist abgeschlossen. Die noch offenen Folgeaufgaben sind hier vorgemerkt; diese Liste startet nicht automatisch weitere Recherche, Implementierung, Tests oder Skill-Erstellung. Spätere praktische Versuche benötigen einen entsprechenden Arbeitsauftrag; bisherige Recherchebefunde sind keine Laufzeitnachweise. Weitere Einzelheiten stehen in der [Forschungsplanung](docs/research/RESEARCH-PLAN.md).
 

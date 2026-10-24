@@ -16,6 +16,7 @@ Das erste Ziel ist ein **gemeinsames Contract-Paket aus bestehenden Beschreibung
 - [Quellenregister mit geprüften Ständen](docs/research/SOURCES.md)
 - [Begründungen und Grenzen der einzelnen Befunde](docs/research/CLAIMS.md)
 - [Forschungslücken und nächste überprüfbare Schritte](docs/research/RESEARCH-PLAN.md)
+- [Integrationsentwurf: Identität, Ownership, Komposition und Akzeptanzfälle](docs/research/INTEGRATION.md)
 
 ## Was wir erreichen wollen
 
