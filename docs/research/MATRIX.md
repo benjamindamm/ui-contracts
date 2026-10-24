@@ -81,21 +81,43 @@ Stand: 24. Oktober 2026, Spezifikation **alpha**, CLI-/Librarypaket **0.4.0**, C
 
 Stand: 24. Oktober 2026, **draft-01**, Commit `09d39b211dcaa2e227ed38e312c8822e193cfea9`. Die Website verweist über die frühere specui/openui-Adresse auf ctate/openui. Websitepaket 0.1.0/private ist kein Validatorrelease. Kein Originalvalidator oder belastbare Kompatibilitätszusage nachgewiesen; kein Validatorversuch. Website-eigenes Dark Mode/Scrollen zählt nicht als Contractfähigkeit.
 
+## AgentsORG auf einen Blick – vertieft geprüft
+
+**20 der 22 zuvor offenen Felder geklärt; X01 und X08 bleiben offen.** Verteilung D7/N17/U2. Das Visualmodell bietet strukturierte Werte, Varianten, Theme-Overlays, benannte Anatomie und ein separates Originalschema. Ein realer Python-Linter verwendet das Schema und ergänzt lokale Prüfungen, deckt aber nicht jede Normforderung ab. Ein paketierter Standalone-Datei-CLI ist nicht belegt; der gelesene Einstieg scannt Repo-Beispiele.
+
+Kein eigenes öffentliches API-/UX-/Accessibility-Modell, keine formale Anker-/Flächen-/Overflowsemantik und kein versioniertes UI-Instanz-/Vier-Domänen-Prüfmodell im definierten Kern. Visual-Ownership ist ein realer Teilbeitrag; ihre Übertragung auf vier unabhängige führende Quellen bleibt offen. Stand: design.v1 / Vertrag 1.3, Commit `014a1864c641f8e9792ed76de93c95493489dd8c`, 24. Oktober 2026, E1/E2, keine Ausführung oder Produktionsreifeentscheidung.
+
+## UXSpec auf einen Blick – vertieft geprüft
+
+**12 der tatsächlich 17 zuvor offenen Felder geklärt; V04/V05/V06/X01/X03 bleiben offen.** Neun D waren bereits vorhanden; die frühere Chatangabe „19/27“ wird nicht übernommen. Verteilung D14/R2/N5/U5.
+
+UXSpec beschreibt JSON-Verhalten, typisierte Host-Eingaben und eingehende Ereignispayloads, strukturierte visuelle Werte/Varianten sowie parametrisierte Elemente. ARIA-Attribute und live:polite sind explizite Referenzbeiträge (R), kein eigenes vollständiges Accessibility-Patternmodell. `$visual` ist im Originalschema optional. Das beweist noch kein vollständiges getrenntes Vier-Domänen-Paket. Formale neutrale Overlay-/Flächen-/Overflowsemantik bleibt offen.
+
+**Schema, CLI validate und Compiler sind unterschiedliche Prüfpfade:** Originales JSON Schema vorhanden; CLI validate lädt es nicht, sondern prüft ausgewählte Regeln. compile ruft validateSpec nicht auf. Compilererfolg oder erzeugte Assertions beweisen deshalb keine Schema-/Accessibility-Konformität. Lokale Imports sind belegt, reproduzierbare externe Versionsauflösung im geprüften Importkern nicht. Stand: Dokument v0.2, Paket 0.2.3, Commit `20dfae0e7224d952e198afdf4ffed26d6fd67180`, 24. Oktober 2026. Keine Ausführung oder native Kompatibilität nachgewiesen.
+
+## Ark UI auf einen Blick – vertieft geprüft
+
+**21 der 24 zuvor offenen Felder geklärt; X01/X03/X06 bleiben offen.** Zwei vorhandene D für Identität/Komposition bleiben in enger Web-Komponentenrolle erhalten. Verteilung D9/R9/A1/N4/U3.
+
+Ark liefert typisierte Frameworkkomponenten, Props/Events, Teile, IDs, Providerkontexte und konkrete Web-Komposition. Verhaltens-, Daten-, Geometrie- und Scrollbeiträge sind über ausdrücklich belegte Zag-Maschinen-/Typ-/Connectorbindungen als R bewertet; CSS-Varianten ebenso über dokumentierte CSS-Bindung. Ark ist keine eigene neutrale Statechart-Sprache. Konkrete Eingabe-/ARIA-/APG-Bindungen sind dokumentiert, aber nicht praktisch auf Konformität getestet.
+
+Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Originalschema/Artefaktvalidator bleiben ungeklärt. **API-Grenze:** Der geprüfte React-Root reicht loading nicht im Machine-Props-Split weiter, obwohl der referenzierte Zag-Typ es kennt; keine automatische Ladeansage über diesen Root behaupten. Stand: React-Paket 5.39.3, Ark-Commit `c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc`, dokumentierte Zag-Abhängigkeiten 1.46.0, 24. Oktober 2026. Quellpaketstand, kein Registry-/Runtime-/Gesamtadapteraudit.
+
 ## Grundlagen
 
 ### Kandidatenblock 1
 
 | Anforderung | CEM | OpenUI | Google DESIGN.md | AgentsORG | DTCG | UXSpec | SCXML | XState |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| G01 Maschinenlesbare Beschreibung | [D/C01](CLAIMS.md#c01) | [D/C130](CLAIMS.md#c130) | [D/C104](CLAIMS.md#c104) | [D/C11](CLAIMS.md#c11) | [D/C14](CLAIMS.md#c14) | [D/C16](CLAIMS.md#c16) | [D/C22](CLAIMS.md#c22) | [D/C70](CLAIMS.md#c70) |
-| G02 Sprachneutrale fachliche Semantik | [A/C03](CLAIMS.md#c03) | [D/C131](CLAIMS.md#c131) | [D/C105](CLAIMS.md#c105) | U | [D/C48](CLAIMS.md#c48) | [D/C16](CLAIMS.md#c16) | [D/C22](CLAIMS.md#c22) | [A/C24](CLAIMS.md#c24) |
+| G01 Maschinenlesbare Beschreibung | [D/C01](CLAIMS.md#c01) | [D/C130](CLAIMS.md#c130) | [D/C104](CLAIMS.md#c104) | [D/C156](CLAIMS.md#c156) | [D/C14](CLAIMS.md#c14) | [D/C182](CLAIMS.md#c182) | [D/C22](CLAIMS.md#c22) | [D/C70](CLAIMS.md#c70) |
+| G02 Sprachneutrale fachliche Semantik | [A/C03](CLAIMS.md#c03) | [D/C131](CLAIMS.md#c131) | [D/C105](CLAIMS.md#c105) | [D/C157](CLAIMS.md#c157) | [D/C48](CLAIMS.md#c48) | [D/C183](CLAIMS.md#c183) | [D/C22](CLAIMS.md#c22) | [A/C24](CLAIMS.md#c24) |
 
 ### Kandidatenblock 2
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| G01 Maschinenlesbare Beschreibung | [D/C85](CLAIMS.md#c85) | U | U | [D/C29](CLAIMS.md#c29) | U | U | U | U |
-| G02 Sprachneutrale fachliche Semantik | [A/C25](CLAIMS.md#c25) | U | U | U | U | U | U | U |
+| G01 Maschinenlesbare Beschreibung | [D/C85](CLAIMS.md#c85) | [D/C208](CLAIMS.md#c208) | U | [D/C29](CLAIMS.md#c29) | U | U | U | U |
+| G02 Sprachneutrale fachliche Semantik | [A/C25](CLAIMS.md#c25) | [A/C209](CLAIMS.md#c209) | U | U | U | U | U | U |
 
 ## Interface
 
@@ -103,17 +125,17 @@ Stand: 24. Oktober 2026, **draft-01**, Commit `09d39b211dcaa2e227ed38e312c8822e1
 
 | Anforderung | CEM | OpenUI | Google DESIGN.md | AgentsORG | DTCG | UXSpec | SCXML | XState |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| I01 Öffentliche Eigenschaften mit Typangaben | [D/C01](CLAIMS.md#c01) | [D/C132](CLAIMS.md#c132) | [N/C106](CLAIMS.md#c106) | U | [N/C49](CLAIMS.md#c49) | U | [N/C59](CLAIMS.md#c59) | [D/C71](CLAIMS.md#c71) |
-| I02 Öffentliche Ereignisse mit Payload | [U/C37](CLAIMS.md#c37) | [N/C133](CLAIMS.md#c133) | [N/C107](CLAIMS.md#c107) | U | [N/C49](CLAIMS.md#c49) | U | [U/C60](CLAIMS.md#c60) | [D/C72](CLAIMS.md#c72) |
-| I03 Benannte Komponentenbestandteile | [D/C02](CLAIMS.md#c02) | [N/C134](CLAIMS.md#c134) | [N/C108](CLAIMS.md#c108) | U | [N/C49](CLAIMS.md#c49) | U | [N/C59](CLAIMS.md#c59) | [N/C73](CLAIMS.md#c73) |
+| I01 Öffentliche Eigenschaften mit Typangaben | [D/C01](CLAIMS.md#c01) | [D/C132](CLAIMS.md#c132) | [N/C106](CLAIMS.md#c106) | [N/C158](CLAIMS.md#c158) | [N/C49](CLAIMS.md#c49) | [D/C184](CLAIMS.md#c184) | [N/C59](CLAIMS.md#c59) | [D/C71](CLAIMS.md#c71) |
+| I02 Öffentliche Ereignisse mit Payload | [U/C37](CLAIMS.md#c37) | [N/C133](CLAIMS.md#c133) | [N/C107](CLAIMS.md#c107) | [N/C159](CLAIMS.md#c159) | [N/C49](CLAIMS.md#c49) | [D/C185](CLAIMS.md#c185) | [U/C60](CLAIMS.md#c60) | [D/C72](CLAIMS.md#c72) |
+| I03 Benannte Komponentenbestandteile | [D/C02](CLAIMS.md#c02) | [N/C134](CLAIMS.md#c134) | [N/C108](CLAIMS.md#c108) | [D/C160](CLAIMS.md#c160) | [N/C49](CLAIMS.md#c49) | [D/C186](CLAIMS.md#c186) | [N/C59](CLAIMS.md#c59) | [N/C73](CLAIMS.md#c73) |
 
 ### Kandidatenblock 2
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| I01 Öffentliche Eigenschaften mit Typangaben | [D/C86](CLAIMS.md#c86) | U | U | U | U | U | U | U |
-| I02 Öffentliche Ereignisse mit Payload | [D/C86](CLAIMS.md#c86) | U | U | U | U | U | U | U |
-| I03 Benannte Komponentenbestandteile | [D/C87](CLAIMS.md#c87) | U | U | U | [D/C30](CLAIMS.md#c30) | U | U | U |
+| I01 Öffentliche Eigenschaften mit Typangaben | [D/C86](CLAIMS.md#c86) | [D/C210](CLAIMS.md#c210) | U | U | U | U | U | U |
+| I02 Öffentliche Ereignisse mit Payload | [D/C86](CLAIMS.md#c86) | [D/C211](CLAIMS.md#c211) | U | U | U | U | U | U |
+| I03 Benannte Komponentenbestandteile | [D/C87](CLAIMS.md#c87) | [D/C212](CLAIMS.md#c212) | U | U | [D/C30](CLAIMS.md#c30) | U | U | U |
 
 ## Visual
 
@@ -121,23 +143,23 @@ Stand: 24. Oktober 2026, **draft-01**, Commit `09d39b211dcaa2e227ed38e312c8822e1
 
 | Anforderung | CEM | OpenUI | Google DESIGN.md | AgentsORG | DTCG | UXSpec | SCXML | XState |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| V01 Typisierte Designwerte | [R/C38](CLAIMS.md#c38) | [N/C135](CLAIMS.md#c135) | [D/C109](CLAIMS.md#c109) | [D/C11](CLAIMS.md#c11) | [D/C14](CLAIMS.md#c14) | U | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
-| V02 Visuelle Zustandsvarianten | [N/C39](CLAIMS.md#c39) | [N/C136](CLAIMS.md#c136) | [D/C110](CLAIMS.md#c110) | [D/C12](CLAIMS.md#c12) | [D/C50](CLAIMS.md#c50) | [D/C18](CLAIMS.md#c18) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
-| V03 Themes und Dark Mode | [N/C39](CLAIMS.md#c39) | [N/C137](CLAIMS.md#c137) | [N/C111](CLAIMS.md#c111) | [D/C12](CLAIMS.md#c12) | [D/C15](CLAIMS.md#c15) | U | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
-| V04 Formale relative Geometrie | [N/C40](CLAIMS.md#c40) | [N/C138](CLAIMS.md#c138) | [N/C112](CLAIMS.md#c112) | U | [N/C51](CLAIMS.md#c51) | U | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
-| V05 Formale Flächenbegrenzung | [N/C40](CLAIMS.md#c40) | [N/C139](CLAIMS.md#c139) | [N/C113](CLAIMS.md#c113) | U | [N/C51](CLAIMS.md#c51) | U | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
-| V06 Overflow und Scrollen | [N/C40](CLAIMS.md#c40) | [N/C140](CLAIMS.md#c140) | [N/C114](CLAIMS.md#c114) | U | [N/C51](CLAIMS.md#c51) | U | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V01 Typisierte Designwerte | [R/C38](CLAIMS.md#c38) | [N/C135](CLAIMS.md#c135) | [D/C109](CLAIMS.md#c109) | [D/C161](CLAIMS.md#c161) | [D/C14](CLAIMS.md#c14) | [D/C187](CLAIMS.md#c187) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V02 Visuelle Zustandsvarianten | [N/C39](CLAIMS.md#c39) | [N/C136](CLAIMS.md#c136) | [D/C110](CLAIMS.md#c110) | [D/C162](CLAIMS.md#c162) | [D/C50](CLAIMS.md#c50) | [D/C188](CLAIMS.md#c188) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V03 Themes und Dark Mode | [N/C39](CLAIMS.md#c39) | [N/C137](CLAIMS.md#c137) | [N/C111](CLAIMS.md#c111) | [D/C163](CLAIMS.md#c163) | [D/C15](CLAIMS.md#c15) | [N/C189](CLAIMS.md#c189) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V04 Formale relative Geometrie | [N/C40](CLAIMS.md#c40) | [N/C138](CLAIMS.md#c138) | [N/C112](CLAIMS.md#c112) | [N/C164](CLAIMS.md#c164) | [N/C51](CLAIMS.md#c51) | [U/C190](CLAIMS.md#c190) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V05 Formale Flächenbegrenzung | [N/C40](CLAIMS.md#c40) | [N/C139](CLAIMS.md#c139) | [N/C113](CLAIMS.md#c113) | [N/C165](CLAIMS.md#c165) | [N/C51](CLAIMS.md#c51) | [U/C191](CLAIMS.md#c191) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V06 Overflow und Scrollen | [N/C40](CLAIMS.md#c40) | [N/C140](CLAIMS.md#c140) | [N/C114](CLAIMS.md#c114) | [N/C166](CLAIMS.md#c166) | [N/C51](CLAIMS.md#c51) | [U/C192](CLAIMS.md#c192) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
 
 ### Kandidatenblock 2
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| V01 Typisierte Designwerte | [D/C88](CLAIMS.md#c88) | U | U | U | U | U | U | U |
-| V02 Visuelle Zustandsvarianten | [R/C89](CLAIMS.md#c89) | U | [D/C28](CLAIMS.md#c28) | U | U | U | U | U |
-| V03 Themes und Dark Mode | [N/C90](CLAIMS.md#c90) | U | U | U | U | U | U | U |
-| V04 Formale relative Geometrie | [D/C91](CLAIMS.md#c91) | U | U | U | U | U | U | [D/C33](CLAIMS.md#c33) |
-| V05 Formale Flächenbegrenzung | [D/C92](CLAIMS.md#c92) | U | U | U | U | U | U | U |
-| V06 Overflow und Scrollen | [D/C93](CLAIMS.md#c93) | U | U | U | U | U | U | [D/C34](CLAIMS.md#c34) |
+| V01 Typisierte Designwerte | [D/C88](CLAIMS.md#c88) | [R/C213](CLAIMS.md#c213) | U | U | U | U | U | U |
+| V02 Visuelle Zustandsvarianten | [R/C89](CLAIMS.md#c89) | [R/C214](CLAIMS.md#c214) | [D/C28](CLAIMS.md#c28) | U | U | U | U | U |
+| V03 Themes und Dark Mode | [N/C90](CLAIMS.md#c90) | [N/C215](CLAIMS.md#c215) | U | U | U | U | U | U |
+| V04 Formale relative Geometrie | [D/C91](CLAIMS.md#c91) | [R/C216](CLAIMS.md#c216) | U | U | U | U | U | [D/C33](CLAIMS.md#c33) |
+| V05 Formale Flächenbegrenzung | [D/C92](CLAIMS.md#c92) | [R/C217](CLAIMS.md#c217) | U | U | U | U | U | U |
+| V06 Overflow und Scrollen | [D/C93](CLAIMS.md#c93) | [R/C218](CLAIMS.md#c218) | U | U | U | U | U | [D/C34](CLAIMS.md#c34) |
 
 ## Behavior
 
@@ -145,19 +167,19 @@ Stand: 24. Oktober 2026, **draft-01**, Commit `09d39b211dcaa2e227ed38e312c8822e1
 
 | Anforderung | CEM | OpenUI | Google DESIGN.md | AgentsORG | DTCG | UXSpec | SCXML | XState |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| B01 Zustände und Ereignisübergänge | [N/C41](CLAIMS.md#c41) | [N/C141](CLAIMS.md#c141) | [N/C115](CLAIMS.md#c115) | U | [N/C52](CLAIMS.md#c52) | [D/C16](CLAIMS.md#c16) | [D/C22](CLAIMS.md#c22) | [D/C23](CLAIMS.md#c23) |
-| B02 Guards und Aktionen | [N/C41](CLAIMS.md#c41) | [N/C142](CLAIMS.md#c142) | [N/C116](CLAIMS.md#c116) | U | [N/C52](CLAIMS.md#c52) | [D/C16](CLAIMS.md#c16) | [D/C22](CLAIMS.md#c22) | [D/C75](CLAIMS.md#c75) |
-| B03 Ereignis- und Kontextdaten | [N/C41](CLAIMS.md#c41) | [N/C143](CLAIMS.md#c143) | [N/C117](CLAIMS.md#c117) | U | [N/C52](CLAIMS.md#c52) | [D/C16](CLAIMS.md#c16) | [D/C22](CLAIMS.md#c22) | [D/C76](CLAIMS.md#c76) |
-| B04 Bindung von Eingaben an UX-Aktionen | [N/C41](CLAIMS.md#c41) | [N/C144](CLAIMS.md#c144) | [N/C118](CLAIMS.md#c118) | U | [N/C52](CLAIMS.md#c52) | [D/C18](CLAIMS.md#c18) | [A/C62](CLAIMS.md#c62) | [A/C77](CLAIMS.md#c77) |
+| B01 Zustände und Ereignisübergänge | [N/C41](CLAIMS.md#c41) | [N/C141](CLAIMS.md#c141) | [N/C115](CLAIMS.md#c115) | [N/C167](CLAIMS.md#c167) | [N/C52](CLAIMS.md#c52) | [D/C193](CLAIMS.md#c193) | [D/C22](CLAIMS.md#c22) | [D/C23](CLAIMS.md#c23) |
+| B02 Guards und Aktionen | [N/C41](CLAIMS.md#c41) | [N/C142](CLAIMS.md#c142) | [N/C116](CLAIMS.md#c116) | [N/C168](CLAIMS.md#c168) | [N/C52](CLAIMS.md#c52) | [D/C194](CLAIMS.md#c194) | [D/C22](CLAIMS.md#c22) | [D/C75](CLAIMS.md#c75) |
+| B03 Ereignis- und Kontextdaten | [N/C41](CLAIMS.md#c41) | [N/C143](CLAIMS.md#c143) | [N/C117](CLAIMS.md#c117) | [N/C169](CLAIMS.md#c169) | [N/C52](CLAIMS.md#c52) | [D/C195](CLAIMS.md#c195) | [D/C22](CLAIMS.md#c22) | [D/C76](CLAIMS.md#c76) |
+| B04 Bindung von Eingaben an UX-Aktionen | [N/C41](CLAIMS.md#c41) | [N/C144](CLAIMS.md#c144) | [N/C118](CLAIMS.md#c118) | [N/C170](CLAIMS.md#c170) | [N/C52](CLAIMS.md#c52) | [D/C196](CLAIMS.md#c196) | [A/C62](CLAIMS.md#c62) | [A/C77](CLAIMS.md#c77) |
 
 ### Kandidatenblock 2
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| B01 Zustände und Ereignisübergänge | [D/C94](CLAIMS.md#c94) | U | U | U | U | U | U | U |
-| B02 Guards und Aktionen | [D/C94](CLAIMS.md#c94) | U | U | U | U | U | U | U |
-| B03 Ereignis- und Kontextdaten | [D/C94](CLAIMS.md#c94) | U | U | U | U | U | U | U |
-| B04 Bindung von Eingaben an UX-Aktionen | [D/C95](CLAIMS.md#c95) | U | U | U | U | U | U | U |
+| B01 Zustände und Ereignisübergänge | [D/C94](CLAIMS.md#c94) | [R/C219](CLAIMS.md#c219) | U | U | U | U | U | U |
+| B02 Guards und Aktionen | [D/C94](CLAIMS.md#c94) | [R/C220](CLAIMS.md#c220) | U | U | U | U | U | U |
+| B03 Ereignis- und Kontextdaten | [D/C94](CLAIMS.md#c94) | [R/C221](CLAIMS.md#c221) | U | U | U | U | U | U |
+| B04 Bindung von Eingaben an UX-Aktionen | [D/C95](CLAIMS.md#c95) | [D/C222](CLAIMS.md#c222) | U | U | U | U | U | U |
 
 ## Accessibility
 
@@ -165,17 +187,17 @@ Stand: 24. Oktober 2026, **draft-01**, Commit `09d39b211dcaa2e227ed38e312c8822e1
 
 | Anforderung | CEM | OpenUI | Google DESIGN.md | AgentsORG | DTCG | UXSpec | SCXML | XState |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| A01 Rollen, Namen und Beziehungen | [N/C42](CLAIMS.md#c42) | [N/C145](CLAIMS.md#c145) | [N/C119](CLAIMS.md#c119) | U | [N/C53](CLAIMS.md#c53) | U | [N/C63](CLAIMS.md#c63) | [N/C78](CLAIMS.md#c78) |
-| A02 Fokus- und Tastaturanforderungen | [N/C42](CLAIMS.md#c42) | [N/C146](CLAIMS.md#c146) | [N/C120](CLAIMS.md#c120) | U | [N/C53](CLAIMS.md#c53) | U | [N/C63](CLAIMS.md#c63) | [N/C78](CLAIMS.md#c78) |
-| A03 Dynamische Rückmeldungen | [N/C42](CLAIMS.md#c42) | [N/C147](CLAIMS.md#c147) | [N/C121](CLAIMS.md#c121) | U | [N/C53](CLAIMS.md#c53) | U | [N/C63](CLAIMS.md#c63) | [N/C78](CLAIMS.md#c78) |
+| A01 Rollen, Namen und Beziehungen | [N/C42](CLAIMS.md#c42) | [N/C145](CLAIMS.md#c145) | [N/C119](CLAIMS.md#c119) | [N/C171](CLAIMS.md#c171) | [N/C53](CLAIMS.md#c53) | [R/C197](CLAIMS.md#c197) | [N/C63](CLAIMS.md#c63) | [N/C78](CLAIMS.md#c78) |
+| A02 Fokus- und Tastaturanforderungen | [N/C42](CLAIMS.md#c42) | [N/C146](CLAIMS.md#c146) | [N/C120](CLAIMS.md#c120) | [N/C172](CLAIMS.md#c172) | [N/C53](CLAIMS.md#c53) | [N/C198](CLAIMS.md#c198) | [N/C63](CLAIMS.md#c63) | [N/C78](CLAIMS.md#c78) |
+| A03 Dynamische Rückmeldungen | [N/C42](CLAIMS.md#c42) | [N/C147](CLAIMS.md#c147) | [N/C121](CLAIMS.md#c121) | [N/C173](CLAIMS.md#c173) | [N/C53](CLAIMS.md#c53) | [R/C199](CLAIMS.md#c199) | [N/C63](CLAIMS.md#c63) | [N/C78](CLAIMS.md#c78) |
 
 ### Kandidatenblock 2
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| A01 Rollen, Namen und Beziehungen | [D/C96](CLAIMS.md#c96) | U | U | U | U | [D/C31](CLAIMS.md#c31) | U | U |
-| A02 Fokus- und Tastaturanforderungen | [D/C96](CLAIMS.md#c96) | U | U | U | U | U | [D/C32](CLAIMS.md#c32) | U |
-| A03 Dynamische Rückmeldungen | [D/C97](CLAIMS.md#c97) | U | U | U | U | [D/C31](CLAIMS.md#c31) | U | U |
+| A01 Rollen, Namen und Beziehungen | [D/C96](CLAIMS.md#c96) | [D/C223](CLAIMS.md#c223) | U | U | U | [D/C31](CLAIMS.md#c31) | U | U |
+| A02 Fokus- und Tastaturanforderungen | [D/C96](CLAIMS.md#c96) | [D/C224](CLAIMS.md#c224) | U | U | U | U | [D/C32](CLAIMS.md#c32) | U |
+| A03 Dynamische Rückmeldungen | [D/C97](CLAIMS.md#c97) | [R/C225](CLAIMS.md#c225) | U | U | U | [D/C31](CLAIMS.md#c31) | U | U |
 
 ## Integration
 
@@ -183,27 +205,27 @@ Stand: 24. Oktober 2026, **draft-01**, Commit `09d39b211dcaa2e227ed38e312c8822e1
 
 | Anforderung | CEM | OpenUI | Google DESIGN.md | AgentsORG | DTCG | UXSpec | SCXML | XState |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| X01 Vier unabhängig beschreibbare Domänen | [U/C43](CLAIMS.md#c43) | [U/C148](CLAIMS.md#c148) | [U/C122](CLAIMS.md#c122) | U | [U/C54](CLAIMS.md#c54) | U | [U/C64](CLAIMS.md#c64) | [U/C79](CLAIMS.md#c79) |
-| X02 Stabile Elementidentität | [N/C44](CLAIMS.md#c44) | [N/C149](CLAIMS.md#c149) | [N/C123](CLAIMS.md#c123) | U | [N/C55](CLAIMS.md#c55) | [D/C19](CLAIMS.md#c19) | [N/C65](CLAIMS.md#c65) | [N/C80](CLAIMS.md#c80) |
-| X03 Domänenübergreifende Referenzen | [N/C44](CLAIMS.md#c44) | [N/C150](CLAIMS.md#c150) | [N/C124](CLAIMS.md#c124) | U | [N/C55](CLAIMS.md#c55) | U | [N/C65](CLAIMS.md#c65) | [N/C80](CLAIMS.md#c80) |
-| X04 Wiederverwendbare Komponenteninstanzen | [N/C44](CLAIMS.md#c44) | [N/C151](CLAIMS.md#c151) | [N/C125](CLAIMS.md#c125) | U | [N/C55](CLAIMS.md#c55) | [D/C20](CLAIMS.md#c20) | [U/C66](CLAIMS.md#c66) | [U/C81](CLAIMS.md#c81) |
-| X05 Externe versionierte Abhängigkeiten | [N/C45](CLAIMS.md#c45) | [N/C152](CLAIMS.md#c152) | [N/C126](CLAIMS.md#c126) | U | [N/C56](CLAIMS.md#c56) | U | [N/C67](CLAIMS.md#c67) | [N/C82](CLAIMS.md#c82) |
-| X06 Eigene Schemavalidatoren erhalten | [D/C46](CLAIMS.md#c46) | [U/C153](CLAIMS.md#c153) | [U/C127](CLAIMS.md#c127) | U | [D/C57](CLAIMS.md#c57) | U | [D/C68](CLAIMS.md#c68) | [U/C83](CLAIMS.md#c83) |
-| X07 Referenz- und Konfliktprüfung des Pakets | [N/C47](CLAIMS.md#c47) | [N/C154](CLAIMS.md#c154) | [N/C128](CLAIMS.md#c128) | U | [N/C58](CLAIMS.md#c58) | U | [N/C69](CLAIMS.md#c69) | [N/C84](CLAIMS.md#c84) |
-| X08 Eindeutige führende Quelle | [N/C47](CLAIMS.md#c47) | [N/C155](CLAIMS.md#c155) | [N/C129](CLAIMS.md#c129) | U | [N/C58](CLAIMS.md#c58) | U | [N/C69](CLAIMS.md#c69) | [N/C84](CLAIMS.md#c84) |
+| X01 Vier unabhängig beschreibbare Domänen | [U/C43](CLAIMS.md#c43) | [U/C148](CLAIMS.md#c148) | [U/C122](CLAIMS.md#c122) | [U/C174](CLAIMS.md#c174) | [U/C54](CLAIMS.md#c54) | [U/C200](CLAIMS.md#c200) | [U/C64](CLAIMS.md#c64) | [U/C79](CLAIMS.md#c79) |
+| X02 Stabile Elementidentität | [N/C44](CLAIMS.md#c44) | [N/C149](CLAIMS.md#c149) | [N/C123](CLAIMS.md#c123) | [N/C175](CLAIMS.md#c175) | [N/C55](CLAIMS.md#c55) | [D/C201](CLAIMS.md#c201) | [N/C65](CLAIMS.md#c65) | [N/C80](CLAIMS.md#c80) |
+| X03 Domänenübergreifende Referenzen | [N/C44](CLAIMS.md#c44) | [N/C150](CLAIMS.md#c150) | [N/C124](CLAIMS.md#c124) | [N/C176](CLAIMS.md#c176) | [N/C55](CLAIMS.md#c55) | [U/C202](CLAIMS.md#c202) | [N/C65](CLAIMS.md#c65) | [N/C80](CLAIMS.md#c80) |
+| X04 Wiederverwendbare Komponenteninstanzen | [N/C44](CLAIMS.md#c44) | [N/C151](CLAIMS.md#c151) | [N/C125](CLAIMS.md#c125) | [N/C177](CLAIMS.md#c177) | [N/C55](CLAIMS.md#c55) | [D/C203](CLAIMS.md#c203) | [U/C66](CLAIMS.md#c66) | [U/C81](CLAIMS.md#c81) |
+| X05 Externe versionierte Abhängigkeiten | [N/C45](CLAIMS.md#c45) | [N/C152](CLAIMS.md#c152) | [N/C126](CLAIMS.md#c126) | [N/C178](CLAIMS.md#c178) | [N/C56](CLAIMS.md#c56) | [N/C204](CLAIMS.md#c204) | [N/C67](CLAIMS.md#c67) | [N/C82](CLAIMS.md#c82) |
+| X06 Eigene Schemavalidatoren erhalten | [D/C46](CLAIMS.md#c46) | [U/C153](CLAIMS.md#c153) | [U/C127](CLAIMS.md#c127) | [D/C179](CLAIMS.md#c179) | [D/C57](CLAIMS.md#c57) | [D/C205](CLAIMS.md#c205) | [D/C68](CLAIMS.md#c68) | [U/C83](CLAIMS.md#c83) |
+| X07 Referenz- und Konfliktprüfung des Pakets | [N/C47](CLAIMS.md#c47) | [N/C154](CLAIMS.md#c154) | [N/C128](CLAIMS.md#c128) | [N/C180](CLAIMS.md#c180) | [N/C58](CLAIMS.md#c58) | [N/C206](CLAIMS.md#c206) | [N/C69](CLAIMS.md#c69) | [N/C84](CLAIMS.md#c84) |
+| X08 Eindeutige führende Quelle | [N/C47](CLAIMS.md#c47) | [N/C155](CLAIMS.md#c155) | [N/C129](CLAIMS.md#c129) | [U/C181](CLAIMS.md#c181) | [N/C58](CLAIMS.md#c58) | [N/C207](CLAIMS.md#c207) | [N/C69](CLAIMS.md#c69) | [N/C84](CLAIMS.md#c84) |
 
 ### Kandidatenblock 2
 
 | Anforderung | Zag | Ark UI | Panda CSS | uSpec | OpenPencil | WAI-ARIA | APG | CSS Layout |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| X01 Vier unabhängig beschreibbare Domänen | [U/C98](CLAIMS.md#c98) | U | U | U | U | U | U | U |
-| X02 Stabile Elementidentität | [D/C87](CLAIMS.md#c87) | [D/C27](CLAIMS.md#c27) | U | U | [D/C30](CLAIMS.md#c30) | U | U | U |
-| X03 Domänenübergreifende Referenzen | [U/C99](CLAIMS.md#c99) | U | U | U | U | U | U | U |
-| X04 Wiederverwendbare Komponenteninstanzen | [U/C100](CLAIMS.md#c100) | [D/C27](CLAIMS.md#c27) | U | U | U | U | U | U |
-| X05 Externe versionierte Abhängigkeiten | [N/C101](CLAIMS.md#c101) | U | U | U | U | U | U | U |
-| X06 Eigene Schemavalidatoren erhalten | [U/C102](CLAIMS.md#c102) | U | U | U | U | U | U | U |
-| X07 Referenz- und Konfliktprüfung des Pakets | [N/C103](CLAIMS.md#c103) | U | U | U | U | U | U | U |
-| X08 Eindeutige führende Quelle | [N/C103](CLAIMS.md#c103) | U | U | U | U | U | U | U |
+| X01 Vier unabhängig beschreibbare Domänen | [U/C98](CLAIMS.md#c98) | [U/C226](CLAIMS.md#c226) | U | U | U | U | U | U |
+| X02 Stabile Elementidentität | [D/C87](CLAIMS.md#c87) | [D/C227](CLAIMS.md#c227) | U | U | [D/C30](CLAIMS.md#c30) | U | U | U |
+| X03 Domänenübergreifende Referenzen | [U/C99](CLAIMS.md#c99) | [U/C228](CLAIMS.md#c228) | U | U | U | U | U | U |
+| X04 Wiederverwendbare Komponenteninstanzen | [U/C100](CLAIMS.md#c100) | [D/C229](CLAIMS.md#c229) | U | U | U | U | U | U |
+| X05 Externe versionierte Abhängigkeiten | [N/C101](CLAIMS.md#c101) | [N/C230](CLAIMS.md#c230) | U | U | U | U | U | U |
+| X06 Eigene Schemavalidatoren erhalten | [U/C102](CLAIMS.md#c102) | [U/C231](CLAIMS.md#c231) | U | U | U | U | U | U |
+| X07 Referenz- und Konfliktprüfung des Pakets | [N/C103](CLAIMS.md#c103) | [N/C232](CLAIMS.md#c232) | U | U | U | U | U | U |
+| X08 Eindeutige führende Quelle | [N/C103](CLAIMS.md#c103) | [N/C233](CLAIMS.md#c233) | U | U | U | U | U | U |
 
 ## Einordnung der ersten Befunde
 

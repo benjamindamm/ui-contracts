@@ -8,6 +8,7 @@ Das erste Ziel ist ein **gemeinsames Contract-Paket aus bestehenden Beschreibung
 
 ## Einstieg
 
+- [Aufgaben und Fortschritt: erledigte, begonnene und offene Kandidaten](TASKS.md)
 - [Abdeckungsmatrix: Anforderungen links, Kandidaten als Spalten](docs/research/MATRIX.md)
 - [Anforderungen mit Herkunft und operationalisierten Kriterien](docs/research/REQUIREMENTS.md)
 - [Originalkontext und Entwicklung der Entscheidungen](docs/research/CONTEXT.md)

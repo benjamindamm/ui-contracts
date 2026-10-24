@@ -234,30 +234,6 @@
     },
     {
       "requirement": "G01",
-      "candidate": "AgentsORG",
-      "coverage": "D",
-      "claim": "C11"
-    },
-    {
-      "requirement": "V01",
-      "candidate": "AgentsORG",
-      "coverage": "D",
-      "claim": "C11"
-    },
-    {
-      "requirement": "V02",
-      "candidate": "AgentsORG",
-      "coverage": "D",
-      "claim": "C12"
-    },
-    {
-      "requirement": "V03",
-      "candidate": "AgentsORG",
-      "coverage": "D",
-      "claim": "C12"
-    },
-    {
-      "requirement": "G01",
       "candidate": "DTCG",
       "coverage": "D",
       "claim": "C14"
@@ -273,60 +249,6 @@
       "candidate": "DTCG",
       "coverage": "D",
       "claim": "C15"
-    },
-    {
-      "requirement": "G01",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C16"
-    },
-    {
-      "requirement": "G02",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C16"
-    },
-    {
-      "requirement": "B01",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C16"
-    },
-    {
-      "requirement": "B02",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C16"
-    },
-    {
-      "requirement": "B03",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C16"
-    },
-    {
-      "requirement": "V02",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C18"
-    },
-    {
-      "requirement": "B04",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C18"
-    },
-    {
-      "requirement": "X02",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C19"
-    },
-    {
-      "requirement": "X04",
-      "candidate": "UXSpec",
-      "coverage": "D",
-      "claim": "C20"
     },
     {
       "requirement": "G01",
@@ -375,18 +297,6 @@
       "candidate": "Zag",
       "coverage": "A",
       "claim": "C25"
-    },
-    {
-      "requirement": "X02",
-      "candidate": "Ark UI",
-      "coverage": "D",
-      "claim": "C27"
-    },
-    {
-      "requirement": "X04",
-      "candidate": "Ark UI",
-      "coverage": "D",
-      "claim": "C27"
     },
     {
       "requirement": "V02",
@@ -1443,6 +1353,474 @@
       "candidate": "OpenUI",
       "coverage": "N",
       "claim": "C155"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C156"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C157"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C158"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C159"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C160"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C161"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C162"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C163"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C164"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C165"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C166"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C167"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C168"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C169"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C170"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C171"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C172"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C173"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "AgentsORG",
+      "coverage": "U",
+      "claim": "C174"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C175"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C176"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C177"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C178"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "AgentsORG",
+      "coverage": "D",
+      "claim": "C179"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "AgentsORG",
+      "coverage": "N",
+      "claim": "C180"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "AgentsORG",
+      "coverage": "U",
+      "claim": "C181"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C182"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C183"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C184"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C185"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C186"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C187"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C188"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "UXSpec",
+      "coverage": "N",
+      "claim": "C189"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C190"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C191"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C192"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C193"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C194"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C195"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C196"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "UXSpec",
+      "coverage": "R",
+      "claim": "C197"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "UXSpec",
+      "coverage": "N",
+      "claim": "C198"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "UXSpec",
+      "coverage": "R",
+      "claim": "C199"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C200"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C201"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C202"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C203"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "UXSpec",
+      "coverage": "N",
+      "claim": "C204"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "UXSpec",
+      "coverage": "D",
+      "claim": "C205"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "UXSpec",
+      "coverage": "N",
+      "claim": "C206"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "UXSpec",
+      "coverage": "N",
+      "claim": "C207"
+    },
+    {
+      "requirement": "G01",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C208"
+    },
+    {
+      "requirement": "G02",
+      "candidate": "Ark UI",
+      "coverage": "A",
+      "claim": "C209"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C210"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C211"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C212"
+    },
+    {
+      "requirement": "V01",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C213"
+    },
+    {
+      "requirement": "V02",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C214"
+    },
+    {
+      "requirement": "V03",
+      "candidate": "Ark UI",
+      "coverage": "N",
+      "claim": "C215"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C216"
+    },
+    {
+      "requirement": "V05",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C217"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C218"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C219"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C220"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C221"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C222"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C223"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C224"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "Ark UI",
+      "coverage": "R",
+      "claim": "C225"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "Ark UI",
+      "coverage": "U",
+      "claim": "C226"
+    },
+    {
+      "requirement": "X02",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C227"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "Ark UI",
+      "coverage": "U",
+      "claim": "C228"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "Ark UI",
+      "coverage": "D",
+      "claim": "C229"
+    },
+    {
+      "requirement": "X05",
+      "candidate": "Ark UI",
+      "coverage": "N",
+      "claim": "C230"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "Ark UI",
+      "coverage": "U",
+      "claim": "C231"
+    },
+    {
+      "requirement": "X07",
+      "candidate": "Ark UI",
+      "coverage": "N",
+      "claim": "C232"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "Ark UI",
+      "coverage": "N",
+      "claim": "C233"
     }
   ],
   "claims": [
@@ -1594,7 +1972,8 @@
       ],
       "finding": "§11.3/§19 fordern Fehler bei gebrochenen oder zyklischen Tokenreferenzen und Alias-Kollisionen.",
       "interpretation": "U für Paketkonflikte: interne Regeln sind vorhanden, prüfen aber nicht automatisch Interface/Behavior/APG-Verknüpfungen.",
-      "next_check": "Interne Negativtests und anschließend domänenübergreifenden Konfliktfall prüfen."
+      "next_check": "Interne Negativtests und anschließend domänenübergreifenden Konfliktfall prüfen.",
+      "superseded_by": "C180"
     },
     {
       "id": "C14",
@@ -1688,7 +2067,8 @@
       ],
       "finding": "Das Schema erlaubt $imports.from und boolesche Teilimporte; machineInvoke verlangt kind/src/id.",
       "interpretation": "U für versionierte externe Abhängigkeiten: Stringpfad und Import beweisen keine Versionbindung und keinen Lockmechanismus.",
-      "next_check": "Compilerauflösung, Namespaces, Zyklen und Versionsbindung untersuchen."
+      "next_check": "Compilerauflösung, Namespaces, Zyklen und Versionsbindung untersuchen.",
+      "superseded_by": "C204"
     },
     {
       "id": "C22",
@@ -3580,6 +3960,864 @@
       "finding": "Zentrale Referenz ist ein Ziel; §10 verlangt Aktualität. Der Kern definiert jedoch weder Feld-Ownership noch Vorrang-/Synchronisationsregeln zwischen Originalformaten und Integration.",
       "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Single-source-Ziel allein erfüllt keine dokumentierte Zuständigkeits-/Änderungssemantik für vier Fachquellen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
       "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
+    },
+    {
+      "id": "C156",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "G01"
+      ],
+      "finding": "`.design` ist ein einzelnes Datenobjekt, bevorzugt YAML 1.2, JSON gleichwertig; konkrete Struktur und Schema existieren.",
+      "interpretation": "D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Prosa bleibt Kontext.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C157",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "G02"
+      ],
+      "finding": "Normativer Visual-Kern benötigt keine JS-/React-Funktionen; Werte, Themes und Tokenpfade sind Daten.",
+      "interpretation": "D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; optionale shadcn-Integration und Pythonwerkzeuge getrennt; natürlichsprachliche Regeln sind keine formale Programmiersprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C158",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "I01"
+      ],
+      "finding": "Components definiert Stylebags und Nutzungsmetadaten, keinen öffentlichen Parametervertrag mit API-Typmetadaten.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; visuelle Propertytypen erfüllen I01 nicht. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C159",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "I02"
+      ],
+      "finding": "Kein öffentlicher Eventname mit zugeordnetem strukturiertem Payloadvertrag im definierten Komponentenmodell.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Soundrollen und frei ergänzte Felder sind kein Event-API-Modell. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C160",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "I03"
+      ],
+      "finding": "`anatomy` ist eine strukturierte Liste benannter Slots innerhalb eines Komponentenfamilieneintrags.",
+      "interpretation": "D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; keine Aussage über instanzstabile Elementidentität.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C161",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "V01"
+      ],
+      "finding": "Definierte Color-, Dimension-, Typography-, Time-/Levelwerte und Tokenpfade; nackte Dimensionszahlen werden in bestimmten Gruppen als px interpretiert.",
+      "interpretation": "D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Schema ist teilweise permissiv und erzwingt nicht sämtliche Fachsemantik.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C162",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "V02"
+      ],
+      "finding": "Varianten/Zustände werden deklariert und besitzen strukturierte Tokenbags; flache Geschwistereinträge ebenfalls zulässig.",
+      "interpretation": "D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; keine externe UX-Maschinenbindung.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C163",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "V03"
+      ],
+      "finding": "Base-Tokens, benannte Mode-Overlays, pfadweises Überschreiben und aktive Auswahl via Präferenz/default sind definiert.",
+      "interpretation": "D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; CSS-Ausgabe und OS-/Toggleverhalten wurden nicht ausgeführt.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C164",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "V04"
+      ],
+      "finding": "Layout liegt in rationale.layout-Prosa; Gap/Spacingwerte besitzen keine Anker-, Ziel- und Positionsbeziehung.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; unbekannte Eigenschaftsnamen sind keine Geometriesprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C165",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "V05"
+      ],
+      "finding": "Height/Width sind Werte, kein definiertes Maximalflächen-/Maximalhöhenmodell oder Ableitung aus sichtbaren Zeilen.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; content-max-Tokenname definiert keine geometrische Anwendung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C166",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "V06"
+      ],
+      "finding": "Kein formal definiertes Overflow-/Scrollmodell unter den Kernfeldern und Propertytokens.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Scrollverbote für Sounds beschreiben keinen Scrollcontainer. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C167",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "B01"
+      ],
+      "finding": "states listet Stylezustände, aber weder Initialzustand noch Ereignisübergangsziel sind spezifiziert.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Dokumentlebenszyklus bootstrap/refine/lock/evolve betrifft Vertragsbearbeitung, nicht UI-Zustandsautomaten. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C168",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "B02"
+      ],
+      "finding": "decisions hat first-match-Ordnung, die Bedingungen sind aber freie Strings/Objekte ohne definierte Ausdrucks- oder Aktionsausführungssemantik.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Designentscheidungen durch Agenten erfüllen das operationalisierte Guard-/Actionkriterium nicht. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C169",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "B03"
+      ],
+      "finding": "Kein modellierter UX-Kontext oder Ereignisdatenzugriff; decisions beschreibt Designzuweisung, nicht Datenverarbeitung im Automaten.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Datencontainer oder Strings allein genügen nicht. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C170",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "B04"
+      ],
+      "finding": "Keine strukturierte Bindung von Tastatur/Fokus/Eingaben an Maschinenereignisse oder UX-Aktionen im Kern.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Agentenanweisungen zu Eingaben sind keine explizite UI-Bindung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C171",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "A01"
+      ],
+      "finding": "policy.accessibility enthält Richtlinien, kein definiertes Rollen-/Namens-/Zielbeziehungsmodell.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; offener Objectcontainer und Kontrastwerte belegen das Kriterium nicht. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C172",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "A02"
+      ],
+      "finding": "focus_visible und reduced_motion sind Richtlinien; kein referenzierbares komponentenspezifisches Fokus-/Tastaturinteraktionsmuster.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; optionale Craftverfahren ersetzen kein Muster im geprüften Formatkern. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C173",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "A03"
+      ],
+      "finding": "Kein definiertes Announcement-/Live-Region-Modell für zugängliche Aktualisierungen.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Sound-plus-visuelle-Rückmeldung und Fehlertextstil sind andere Teilbeiträge. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C174",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Eigenständiger Visualvertrag ohne erforderliche UI-Verhaltens-/API-Daten ist möglich; vollständige Bindung vier unverändert separat geführter Bereiche bleibt unbelegt.",
+      "interpretation": "U im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; offen: Bindung zu externen Interface-/Behavior-/Accessibility-Artefakten konkret festlegen.",
+      "next_check": "E1/E2; offen: Bindung zu externen Interface-/Behavior-/Accessibility-Artefakten konkret festlegen."
+    },
+    {
+      "id": "C175",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "X02"
+      ],
+      "finding": "Anatomy benennt Slots, Komponentenkeys benennen Katalogdefinitionen; keine explizite UI-Instanz-/Element-Bindungs-ID.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Figma-Dateiidentität ist keine Elementidentität. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C176",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "X03"
+      ],
+      "finding": "Definierte Tokenpfade adressieren Visualwerte im selben Dokument; Figma/shadcn-Brücken bilden Token-/Dateiwerte ab, keine separaten drei Domänenmodelle.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; lokale Komponentenreferenzwarnungen des Linters sind keine vierformatige semantische Zuordnung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C177",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "X04"
+      ],
+      "finding": "Katalogimport und Pattern-Rezepte fördern Wiederverwendung, definieren aber kein Use/Instanzmodell mit eigenen Parametern und Kontext.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; import-Modulpfad ist keine Contract-Instanziierung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C178",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "extends definiert lokale Pfad-/Namensauflösung und Overlayreihenfolge, aber keine gebundene Abhängigkeitsversion; Remote/Registry optional.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; version bezeichnet aktuellen Vertrag; keine reproduzierbare Version des Referenzziels. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C179",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "Eigenständiges `.design` kann unverändert gegen originales Draft-2020-12-Schema geprüft werden; Referenzlinter tut genau dies zusätzlich zu Fachprüfungen.",
+      "interpretation": "D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Existenz und Codepfad belegt, kein Validatorversuch und keine Vollkonformitätsgarantie.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C180",
+      "source": "S48",
+      "evidence": "E2",
+      "rows": [
+        "X07"
+      ],
+      "finding": "Interne Token-/Alias-/Tiefenprüfungen vorhanden, aber keine gemeinsame Prüfung fremder Domänenmodelle, UI-Instanzkollisionen oder domänenübergreifender Widersprüche.",
+      "interpretation": "N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; interne Prüfungen ausdrücklich positiver Teilbeitrag; extends-Zyklusprüfung wird normativ verlangt, im gelesenen Linter nicht implementiert. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C181",
+      "source": "S48",
+      "evidence": "E1",
+      "rows": [
+        "X08"
+      ],
+      "finding": "Starke vorhandene Regeln: `.design` repo-kanonisch, Tokens vor exportierten CSSwerten, Figma-Syncrichtung und Git-Audit. Übertragung auf unabhängige API-/Behavior-/A11y-Originale ist ungeklärt.",
+      "interpretation": "U im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1; offen: Ownership/Vorrang je Information über vier Bereiche ohne zweiten konkurrierenden Master definieren. Lokale Regeln werden nicht als vollständiger Paketnachweis ausgegeben.",
+      "next_check": "Wie bleibt jede der vier Originalquellen führend, während .design Visualwerte, Exporte und Synchronisationsrichtungen bestimmt?"
+    },
+    {
+      "id": "C182",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "G01"
+      ],
+      "finding": "JSON-Autorformat mit maschinenlesbaren Feldern und Originalschema. S File Format/Top-Level; J vollständig; T UXSpecDocument.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Strukturierter Teilbeitrag, keine Gleichsetzung von akzeptierten freien Feldern und definierter Semantik. Bestehendes D erhalten.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C183",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "G02"
+      ],
+      "finding": "Guards/Aktionen sind JSON-Kinds und S-Expressions mit dokumentierten Operatoren statt erforderlichen JS-Funktionen. S Actions, Effects, Dynamic Expressions; U.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Compiler TS/Node und Webrenderer React sind Werkzeug-/Adaptersprachen. Sprachneutrales Modell beweist keine identischen Ergebnisse in allen Zielsprachen; SCJSON-/SCXML-Kompatibilität bleibt Herstellerbehauptung ohne Konformitätsbeleg. Bestehendes D erhalten.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C184",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "I01"
+      ],
+      "finding": "`$context` benennt Felder mit sechs Typkategorien; `required:true` verlangt Versorgung durch den Host vor Start. S Context; J contextField; T ContextField.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Direkt für öffentliche Host-Eingaben/Initialdaten der Maschine, kein vollständiger Katalog beliebiger laufend setzbarer UI-Props. object/array sind keine tiefen Schemas. Werteprüfung separat.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C185",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "I02"
+      ],
+      "finding": "`$events` ist ein ausdrücklich deklarierter Katalog aller an die Maschine sendbaren Ereignisse, mit benannten typisierten Payload-Feldern und source; getrennt von transitions/onPress. S Events; J eventSpec; T EventSpec.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Öffentliche **eingehende** Maschinenereignisse; keine Behauptung eines eigenen ausgehenden Komponenten-Eventprotokolls. `emit` sendet laut S an dieselbe Maschine. Runtime-Payloadvalidierung nicht belegt.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C186",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "I03"
+      ],
+      "finding": "Benannte `$elements`, `slots` und Element-`name` beschreiben strukturierte Teile/Anatomie. S Elements/Visual/Element References; J elementBase/visual; F.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Der Teil ist im UXSpec-eigenen visuellen Modell beschrieben; keine importierte CEM-Anatomie oder instanzglobale Identität daraus ableiten.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C187",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "V01"
+      ],
+      "finding": "`$tokens` beschreibt `$type`/`$value`, Dimensionen mit value/unit, Farben und Fonts; strukturierte Stylewerte. S Tokens/Token References; F Tokens; R Auflösung.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Eigene dokumentierte Werte genügen dem Teilkriterium; vollumfängliche DTCG-2025.10-Konformität nicht belegt. Schema `$tokens` nur object; Hex-Farbbeispiele nicht als Beleg aller normativen DTCG-Typen ausgeben.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C188",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "V02"
+      ],
+      "finding": "`interactions` definiert hover/focus/press/disabled als rein visuelle Style-Overrides; zustandsbezogene `$visual`-Blöcke besitzen Vererbung/Slotsersetzung. S Interaction States/Slot Inheritance; F; K mergeVisual.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). D erhalten. Keine eigenständige externe UX-Zuordnung daraus ableiten; X03 bleibt offen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C189",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "V03"
+      ],
+      "finding": "Der begrenzte v0.2-Kern definiert Tokens, Visuals, Zustandsvererbung und Interaktionsstile, aber keine Theme-/Modusauswahl oder kontextabhängige Tokenauflösung. S vollständige Struktur; J vollständige properties/defs; T.",
+      "interpretation": "N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Gilt für die definierten Mechanismen, nicht für die Unmöglichkeit einer Erweiterung. Unterschiedlich benannte dark-Tokens oder frei erlaubte Felder erfüllen keine Theme-Semantik. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C190",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "V04"
+      ],
+      "finding": "Layoutprimitiven stack/grid/layer und offene container-/Elementobjekte sind belegt; ein normatives Anker-Ziel-Richtung-Abstand-Modell wurde nicht gefunden. S Layout/Visual; J visual.container/elementBase; W.",
+      "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Konkrete Frage: Welche originale dokumentierte Eigenschaft bindet ein Overlay geometrisch an ein benanntes anderes Element, mit Einheiten/Auflösung? Freie Felder und CSS des Webadapters reichen nicht für D; fehlender Fund allein führt nicht N.",
+      "next_check": "Konkrete Frage: Welche originale dokumentierte Eigenschaft bindet ein Overlay geometrisch an ein benanntes anderes Element, mit Einheiten/Auflösung? Freie Felder und CSS des Webadapters reichen nicht für D; fehlender Fund allein führt nicht N."
+    },
+    {
+      "id": "C191",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "V05"
+      ],
+      "finding": "Dimensionen und Elementgrößen sind strukturiert möglich; kein ausreichender Originalnachweis für formale maximale Höhe/Fläche. S/F; J offene Visualfelder; W mapSize.",
+      "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.",
+      "next_check": "Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen."
+    },
+    {
+      "id": "C192",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "V06"
+      ],
+      "finding": "Containerlayout und freie Zusatzfelder sind vorhanden; neutrale Overflow-/Scrollsemantik ist in den geprüften normativen Definitionen nicht hinreichend belegt. S Layout/Element Types; J; W.",
+      "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Welche originale Definition spezifiziert clip/scroll/auto und Scrollcontainer? Weboverflow oder erfundene Zusatzfelder nicht ohne dokumentierte Formatsemantik zurechnen.",
+      "next_check": "Welche originale Definition spezifiziert clip/scroll/auto und Scrollcontainer? Weboverflow oder erfundene Zusatzfelder nicht ohne dokumentierte Formatsemantik zurechnen."
+    },
+    {
+      "id": "C193",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "B01"
+      ],
+      "finding": "Machine id/initial/states, verschachtelte Zustände und event→target-Übergänge sind definiert. S Machine/Transitions; J; K.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D erhalten; kein SCXML-Kompatibilitätsnachweis.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C194",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "B02"
+      ],
+      "finding": "Definierte Guard-Ausdrücke, Operatoren, assign/emit/log und Entry/Exit-Ausführungsreihenfolge; benannte Effects mit Lebenszyklusanforderungen. S Actions/Effects/Transitions/Entry/Exit/Invoke; U; V.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D für dokumentierte Semantik erhalten. Nicht behaupten, alle Compiler-/Runtimepfade erzwingen jede normative Regel; insbesondere compile ruft validateSpec nicht auf.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C195",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "B03"
+      ],
+      "finding": "context.*, event.* und binding mit Ausdrücken sowie assign sind beschrieben. S Context/Events/Binding/Dynamic Expressions; U.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D erhalten. Event- und Context-Typdeklaration ist keine bewiesene Runtime-Typprüfung.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C196",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "B04"
+      ],
+      "finding": "`$visual.keyboard` ordnet Tasten Ereignissen zu; onEnter.focus, focus-effect, onPress/onChange bilden Eingaben auf Aktionen/Ereignisse ab. S Visual/Effects/Runtime Properties; F/U.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D erhalten. Keyboard/Fokus befinden sich teils im Visualblock; ihre getrennte führende Fachquelle und externe Bindung sind nicht dadurch gelöst.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C197",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "A01"
+      ],
+      "finding": "`aria` hat ausdrücklich auf ARIA-Attribute abgebildete Schlüssel, z.B. label. S Element Runtime Properties; U; J elementBase.",
+      "interpretation": "R im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Referenz auf **externe ARIA-Websemantik**, kein eigenes Rollen-/Relationsschema und kein Nachweis gültiger Kombinationen oder Native-A11y-Abbildung. Für konkrete Rollen/Relationen muss die WAI-ARIA-Quelle separat maßgeblich bleiben; generisches object allein wäre ungenügend, hier ist die Attributzuordnung ausdrücklich dokumentiert.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C198",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "A02"
+      ],
+      "finding": "Tastenzuordnung/Fokusaktionen sind im Kern Mechanismen für Verhalten; das definierte Modell enthält keinen referenzierbaren APG-/A11y-Patternvertrag mit Anforderungen an Bedienung und Fokus. S vollständige Runtime-/Visualbegriffe; J/T.",
+      "interpretation": "N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N für Pattern-Anforderungsmodell, nicht für die Möglichkeit zugänglicher Implementierungen. B04 nicht doppelt als Erfüllung von A02 zählen. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C199",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "A03"
+      ],
+      "finding": "Dokumentiertes aria-Beispiel `live:polite` verweist auf zugängliche ARIA-Aktualisierungssemantik. S Element Runtime Properties; U.",
+      "interpretation": "R im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Referenzbeitrag für Web, kein vollständiger Live-Region-Workflow: Auslöser, Inhalt, Regionidentität, Zeitpunkt und Screenreaderverhalten gesondert bestimmen. Kein Renderer-/AT-Test.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C200",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "Originalschema verlangt top-level `$schema`/`$description`/`$machine`; `$visual` ist auf machine und stateNode optional. Behavior ohne Visual ist daher **auf Schemaebene** möglich. J machine/stateNode; K mergeVisual mit undefined.",
+      "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Vier unabhängige Fachartefakte samt neutraler Interface-/A11y-Bindung bleiben ungeklärt. Keine falsche Aussage „UXSpec erzwingt Visual im Behavior“; auch reine Token-/Visualdateien ohne `$machine` wären nicht selbst schema-konforme UXSpec-Rootdokumente.",
+      "next_check": "Vier unabhängige Fachartefakte samt neutraler Interface-/A11y-Bindung bleiben ungeklärt. Keine falsche Aussage „UXSpec erzwingt Visual im Behavior“; auch reine Token-/Visualdateien ohne `$machine` wären nicht selbst schema-konforme UXSpec-Rootdokumente."
+    },
+    {
+      "id": "C201",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "X02"
+      ],
+      "finding": "testId ist ausdrücklich als stabiler Testidentifier definiert, auf Web data-testid oder Plattformäquivalent abzubilden; name/focus.target ermöglichen Elementbezug. S Runtime Properties; J; K collectTestIds.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). D erhalten für explizite Kennzeichnung. Compiler dedupliziert identische testIds für Assertions; das ist keine Abweisung instanzübergreifender Kollisionen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C202",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "X03"
+      ],
+      "finding": "Aliasqualifizierte Imports erschließen getrennte Token-/Element-/Maschinenquellen; konkrete Namensauflösung in I/R. S/F Referenzen, M Composability, J imports.",
+      "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Starker Teilbefund, aber bisher UXSpec-eigene Teile: kein ausreichender Nachweis, dass Ziele in **separaten originalen Interface-/Visual-/Behavior-/A11y-Domänen** semantisch adressiert werden. Welche Originalartefakte/Bindungen bleiben unverändert? Tokenreferenz allein erfüllt X03 nicht.",
+      "next_check": "Starker Teilbefund, aber bisher UXSpec-eigene Teile: kein ausreichender Nachweis, dass Ziele in **separaten originalen Interface-/Visual-/Behavior-/A11y-Domänen** semantisch adressiert werden. Welche Originalartefakte/Bindungen bleiben unverändert? Tokenreferenz allein erfüllt X03 nicht."
+    },
+    {
+      "id": "C203",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "X04"
+      ],
+      "finding": "`$elements` plus `$ref` trennen Definition/Verwendung, params/$bind und Instanz-Overrides sind konkret; R substituteParams/expandRefs. Zusätzlich machineInvoke mit src/id/input/onDone in J/T und I/K/B, Beispiel E.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D für parametrisierte Komponenten-/Elementinstanzen erhalten; keine Behauptung autonom funktionierender ScrollArea-Runtime. Separater Instanzkontext/Lebenszyklus und UI-Anatomie sind bei einer komplexen Unterkomponente weiter zu prüfen. Ein vollständiger Child-Machine-Renderer ist damit nicht nachgewiesen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C204",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "Definierte Importfelder sind from + boolesche Teilimporte; I löst from über lokalen node:path relativ zur Dokumentdatei auf und liest JSON. Kein Versions-/Hash-/Lockfeld und keine solche Auflösung im geprüften Importkern J/T/I.",
+      "interpretation": "N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N eng auf reproduzierbare externe Abhängigkeitsbindung im Originalkern. Ein Git-gepinntes Gesamtverzeichnis kann außerhalb des Formats Reproduzierbarkeit liefern, wäre eine zusätzliche Paketkonvention. `$version:0.2` der Ausgabe ist Formatversion. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C205",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "Eigenes unverändertes JSON Schema Draft 2020-12 existiert. Ein separat geführtes Behaviorartefakt ohne Visual kann an dessen Root-/Machine-Schema geprüft werden. J; S.",
+      "interpretation": "D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Direkter Schema-Beitrag, **nicht** Vollabdeckung aller vier Originalvalidatoren. Original-CLI ist ein anderer semantischer Prüfer und lädt J nicht. Tatsächlicher allgemeiner JSON-Schema-Validator wurde nicht ausgeführt; kein E3.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C206",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "X07"
+      ],
+      "finding": "Originalwerkzeuge prüfen ausgewählte interne Ziele/Operatoren/Referenzen. J/T/V/R/I/K/B definieren kein Vier-Domänen-Konfliktmodell mit Typkompatibilität, ID-Kollisionen und widersprüchlichen Fachanforderungen.",
+      "interpretation": "N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N nur für die Paketanforderung. Nicht behaupten „keine Referenzprüfung“: Token-/Element-/Zustands-/Importprüfungen sind vorhanden. Deduplizieren von Assertions und Überschreiben von Modulen ist keine Kollisionsabweisung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C207",
+      "source": "S49",
+      "evidence": "E2",
+      "rows": [
+        "X08"
+      ],
+      "finding": "README nennt ein einziges UXSpec-Dokument als führende Quelle. Originalmodell und Import-Overrides definieren keine Feld-Ownership/Vorrang-/Änderungssynchronisation zwischen vier externen Fachquellen. S/J/T/M, K/R.",
+      "interpretation": "N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N für vierfaches Ownershipmodell. Lokale Child-/Instanz-Override-Regeln sind belegt, genügen aber nicht der Paket-Governance. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C208",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "G01"
+      ],
+      "finding": "AR05/AR06, E2: strukturierte TS-Props/Emits sowie generiertes JSON mit Teilen, Typen, Defaults und Pflichtangaben. Maschinenlesbarer Interface-Teilbeitrag, kein vollständiges neutrales JSON-Laufzeitmodell.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C209",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "G02"
+      ],
+      "finding": "AR04/AR05/AR06, E1/E2: JS-Frameworkhooks, Funktionen, DOM-/Collectionobjekte und Zag-Ausführung. Die vorhandenen Props-/Event-Metadaten wären ein konkreter Extraktions-/Bindungsansatz; zusätzliche neutrale Beschreibung und Zieladapter nötig. Keine automatische Portierung nach Swift oder Angular nachgewiesen.",
+      "interpretation": "A im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C210",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "I01"
+      ],
+      "finding": "AR02/AR05/AR06, E1/E2: benannte Props etwa open:boolean, value:string[], collection:ListCollection<T>, Pflichtmetadaten. TS-Compiletime und Typstrings nicht mit Laufzeitvalidierung verwechseln; generische Items verlangen konkrete Typisierung.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C211",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "I02"
+      ],
+      "finding": "AR06/AR08, E2: Vue RootEmits: valueChange mit ValueChangeDetails<T>, inputValueChange mit InputValueChangeDetails, openChange mit OpenChangeDetails; zugehörige Felder value/items, inputValue/reason, open/reason/value im Zag-Typ. React bietet entsprechende typisierte on...-Callbacks. Deklaration getrennt von Aufrufstellen. Frameworkabhängige Namen, kein gemeinsamer neutraler Eventkatalog.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C212",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "I03"
+      ],
+      "finding": "AR02/AR05/AR06, E1/E2: benannte Root, Label, Control, Input, Positioner, Content, Item usw.; API-JSON pro Teil; comboboxAnatomy erweitert Zag-Anatomie um empty. Keine Gleichsetzung von Partname und Instanz-ID.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C213",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "V01"
+      ],
+      "finding": "AR02/AR08, E1/E2: vorhandenes PositioningOptions-Modell und dimensionierte CSS-Variablen als konkreter geometrischer Wertebeitrag. Stylingwerte für Farben/Typografie kommen aus externem CSS; kein eigener allgemeiner Design-Token-Typenkatalog. D wäre nur für die angebotenen Geometrieparameter begründbar, nicht für komplette Designwerte.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C214",
+      "source": "S50",
+      "evidence": "E1",
+      "rows": [
+        "V02"
+      ],
+      "finding": "AR01/AR02, E1: benannte Teile/Zustände über data-scope/data-part/data-state an separate CSS-Selektoren mit strukturierten Deklarationen gebunden. CSS liefert Styles, Ark liefert benannte Zustands-/Teilbindung. Keine eigene Recipe-/Variantensprache und kein externer UX-Contract-Mappingbeweis.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C215",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "V03"
+      ],
+      "finding": "AR01/AR04/AR05/AR06, E1/E2: definierter headless Kern liefert Funktionsstyles und Stylinghooks, überlässt Präsentation externer Lösung. Keine eigene Theme-/Dark-Mode-Auswahl-/Auflösung im geprüften API-/Adaptermodell. Externe CSS-/Designsystemthemes bleiben möglich.",
+      "interpretation": "N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C216",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "V04"
+      ],
+      "finding": "AR02/AR05/AR08, E1/E2: positioning-Prop geht an Zag; getAnchorElement/AnchorRect, placement, gutter/offset, Positioner und Control/Trigger als Standardanker. Vorhandenes Web-Popper-Zielmodell statt eigener sprachneutraler Geometriesprache. Keine praktische Positionsmessung.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C217",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "V05"
+      ],
+      "finding": "AR02/AR08, E1/E2: dokumentierte --available-height/--available-width und max-height:calc(...) in separatem CSS, außerdem referenziertes fitViewport. Formale Web-Flächenbegrenzung per CSS/Popper; exakt fünf variable Zeilen dadurch nicht automatisch definiert.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C218",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "V06"
+      ],
+      "finding": "AR03/AR07/AR08, E1/E2: eigenständige ScrollArea-Wrappingkette bis getViewportProps, `overflow:auto`, Achsen, Overflow-/Scrollbarzustände. Kein Neutralformat; die notwendige geometrische Begrenzung und dokumentierte Zusatzstyles müssen im Produkt ergänzt werden.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C219",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "B01"
+      ],
+      "finding": "AR01/AR05/AR08, E1/E2: konkrete Referenz auf combobox.machine mit initialState sowie closed/open-Subzuständen und ereignisbestimmten targets. Ark selbst ist kein Maschineneditor oder allgemeiner Statechart-Contract.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C220",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "B02"
+      ],
+      "finding": "AR05/AR08, E2: referenzierte Maschine enthält tatsächliche Guards/Actions, etwa openOnChange, restoreFocus, setInputValue und invokeOnOpen; nicht nur freie Namen. Ausführungssemantik kommt aus Zag/JS. Keine SCXML-Kompatibilität daraus ableiten.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C221",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "B03"
+      ],
+      "finding": "AR05/AR08, E2: useMachine erzeugt Service mit Props; referenzierte Maschine bindet value/inputValue/highlightedValue, verarbeitet Eventdaten und ruft typisierte öffentliche Callbackdetails auf. Gemeinsame portable Event-/Contextsprache nicht belegt.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C222",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "B04"
+      ],
+      "finding": "AR02/AR05/AR08, E1/E2: Ark Input integriert getInputProps samt onFocus/onBlur/onChange/onKeyDown; ArrowDown/Enter/Escape werden konkret in Maschinenereignisse übersetzt. Ark stellt diese Web-/Frameworkbindung bereit; keine Nachweise zu nativen Eingabesystemen.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C223",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "A01"
+      ],
+      "finding": "AR02/AR03/AR05/AR08, E1/E2: getInputProps/Label/Content-Verkettung liefert role=combobox, aria-controls/expanded/activedescendant/labelledby; Field ergänzt aria-describedby. ids-Sharing dokumentiert. Korrekte Elemente und Inhalte bleiben verantwortlich zu wählen, asChild kann Semantik beschädigen. Keine getestete Konformität.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C224",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "A02"
+      ],
+      "finding": "AR02/AR05/AR08, E1/E2: expliziter referenzierbarer APG-Combobox-Verweis und eigene Keyboard-Tabelle; Bindung im gerenderten Input belegt. Das erfüllt das Musterteilkriterium, nicht vollständige normative oder plattformübergreifende Konformität.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C225",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "A03"
+      ],
+      "finding": "AR02/AR05/AR08, E1/E2: translations wird an die referenzierte Maschine gegeben; resultsCount/noResults und polite Ergebnisregion mit verzögerter Ansage sind dort definiert, Highlightansage separat assertive/Apple-bedingt. Produkttexte, Trigger und Sprachen explizit festlegen. **Wichtige Grenze:** der gelesene Ark React Root-Split enthält loading nicht, obwohl der aktuelle Zag-Typ loading kennt. Deshalb keine ungeprüfte Garantie einer durch <Combobox.Root loading=...> gesteuerten Ladeansage. Der direkte Hook nimmt Zag-Props an; seine tatsächliche Laufzeit wurde nicht getestet.",
+      "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C226",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "X01"
+      ],
+      "finding": "AR01/AR05/AR08, E1/E2: externe Präsentation kann getrennt bleiben; Fokus, ARIA, UX und funktionale Geometrie sind in der ausführbaren Integration gekoppelt. Offen: Wie werden vier unabhängig führende externe Domänen ohne widersprechende zweite Definition gebunden?",
+      "interpretation": "U im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "AR01/AR05/AR08, E1/E2: externe Präsentation kann getrennt bleiben; Fokus, ARIA, UX und funktionale Geometrie sind in der ausführbaren Integration gekoppelt. Offen: Wie werden vier unabhängig führende externe Domänen ohne widersprechende zweite Definition gebunden?"
+    },
+    {
+      "id": "C227",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "X02"
+      ],
+      "finding": "AR02/AR03/AR05/AR07, E1/E2: explizite id/ids für Elemente, React useId als Default, dokumentiertes Sharing zwischen Tooltip-Trigger und Avatar-Root. Keine Garantie dauerhafter Identität über Neustarts, Umordnung, SSR oder mehrere unabhängige Roots; stabile Contract-IDs müssten explizit vergeben werden.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C228",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "X03"
+      ],
+      "finding": "AR01/AR03/AR05/AR06, E1/E2: IDs verbinden Komponenten und ARIA-Ziele; Part-/Stateattribute verbinden CSS. Offen: Wie adressiert Ark ein Ziel in einem separat definierten neutralen Interface-/UX-/A11y-Vertrag mit überprüfbarer semantischer Zuordnung? DOM-IDs und Importe reichen als Nachweis dafür nicht.",
+      "interpretation": "U im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "AR01/AR03/AR05/AR06, E1/E2: IDs verbinden Komponenten und ARIA-Ziele; Part-/Stateattribute verbinden CSS. Offen: Wie adressiert Ark ein Ziel in einem separat definierten neutralen Interface-/UX-/A11y-Vertrag mit überprüfbarer semantischer Zuordnung? DOM-IDs und Importe reichen als Nachweis dafür nicht."
+    },
+    {
+      "id": "C229",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "X04"
+      ],
+      "finding": "AR03/AR05/AR07, E1/E2: getrennte Komponentendefinition und Verwendung mit Props, per useCombobox/useScrollArea eigener Machine-/ID-Kontext, Root/RootProvider und Providerwerte; asChild und dokumentiertes Avatar/Tooltip-Beispiel zeigen konkrete Web-Komposition. D in der ausführbaren Frameworkrolle. Keine behauptete neutrale Overlay->ScrollArea-Vertragssyntax, Konfliktfreiheit oder Laufzeitprüfung; komplexe Focus-/Scroll-Ownership bleibt X01/X07.",
+      "interpretation": "D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C230",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "X05"
+      ],
+      "finding": "AR04/AR05/AR06, E2: geprüfte Props/Emits-/Root-/API-Metadaten kennen keinen eigenen versionierten externen Fachmodellresolver. Versionierte npm-Abhängigkeiten sind Softwaredistribution und sichern nicht automatisch referenzierte Contractartefakte. N nur für diesen definierten Ark-Vertragskern, nicht für die Existenz externer Paketmanager.",
+      "interpretation": "N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C231",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "X06"
+      ],
+      "finding": "AR04/AR06/AR09, E2: TS-Typen und API-JSON belegt, typecheck-Script vorhanden. Kein nachgewiesenes kanonisches Schema und ausführbares Validierungstooling für separate neutrale Domänenartefakte. Offen: Gibt es ein offizielles Originalschema und einen Validator, der Properties, Details und externe Referenzen solcher Artefakte prüft? JSON-Metadaten und tsc allein beweisen das nicht.",
+      "interpretation": "U im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
+      "next_check": "AR04/AR06/AR09, E2: TS-Typen und API-JSON belegt, typecheck-Script vorhanden. Kein nachgewiesenes kanonisches Schema und ausführbares Validierungstooling für separate neutrale Domänenartefakte. Offen: Gibt es ein offizielles Originalschema und einen Validator, der Properties, Details und externe Referenzen solcher Artefakte prüft? JSON-Metadaten und tsc allein beweisen das nicht."
+    },
+    {
+      "id": "C232",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "X07"
+      ],
+      "finding": "AR03/AR05/AR06, E1/E2: Props-/ID-Komposition und DOM-Bindung im geprüften Kern, keine gemeinsame vierdomänige Referenz-/Kollisions-/Widerspruchsprüfung. Nutzer muss korrekte IDs/Semantik wählen; keine Behauptung, alle internen Runtimeprüfungen fehlten.",
+      "interpretation": "N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
+    },
+    {
+      "id": "C233",
+      "source": "S50",
+      "evidence": "E2",
+      "rows": [
+        "X08"
+      ],
+      "finding": "AR01/AR03/AR05/AR06, E1/E2: Anleitung trennt funktionale und externe Präsentationsstyles und beschreibt Merging, aber kein führendes Quellen-/Vorrangmodell je Information zwischen vier Originalformaten und Integrationsschicht. N nur für diese geforderte paketweite Governance im geprüften Modell.",
+      "interpretation": "N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
     }
   ],
   "candidate_reviews": [
@@ -3675,6 +4913,49 @@
         "X06"
       ],
       "format_scope": "OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9; central source cross-check of separate report; docs/types only",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "AgentsORG",
+      "date": "2026-10-24",
+      "reviewed": 22,
+      "previously_open": 22,
+      "resolved": 20,
+      "remaining_uncertain": [
+        "X01",
+        "X08"
+      ],
+      "format_scope": "AgentsORG, commit 014a1864c641f8e9792ed76de93c95493489dd8c; separate report with central criteria/source-role review; no execution",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "UXSpec",
+      "date": "2026-10-24",
+      "reviewed": 17,
+      "previously_open": 17,
+      "resolved": 12,
+      "remaining_uncertain": [
+        "V04",
+        "V05",
+        "V06",
+        "X01",
+        "X03"
+      ],
+      "format_scope": "UXSpec, commit 20dfae0e7224d952e198afdf4ffed26d6fd67180; separate report with central criteria/source-role review; no execution",
+      "runtime_trials": []
+    },
+    {
+      "candidate": "Ark UI",
+      "date": "2026-10-24",
+      "reviewed": 24,
+      "previously_open": 24,
+      "resolved": 21,
+      "remaining_uncertain": [
+        "X01",
+        "X03",
+        "X06"
+      ],
+      "format_scope": "Ark UI, commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc; separate report with central criteria/source-role review; no execution",
       "runtime_trials": []
     }
   ]

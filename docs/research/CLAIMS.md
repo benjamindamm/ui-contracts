@@ -92,6 +92,8 @@ Abdeckung und Evidenzstufe folgen [METHODS.md](METHODS.md). Alle Quellenstände 
 
 ## C13
 
+**Fortschreibung vom 24. Oktober 2026:** [C180](#c180) ordnet die frühere offene Frage im begrenzten Kern ein; der folgende Wortlaut ist historischer Prüfstand.
+
 - **Quelle:** [S04](SOURCES.md), E1; betrifft X07.
 - **Befund:** §11.3/§19 fordern Fehler bei gebrochenen oder zyklischen Tokenreferenzen und Alias-Kollisionen.
 - **Bedeutung/Grenze:** U für Paketkonflikte: interne Regeln sind vorhanden, prüfen aber nicht automatisch Interface/Behavior/APG-Verknüpfungen.
@@ -147,6 +149,8 @@ Abdeckung und Evidenzstufe folgen [METHODS.md](METHODS.md). Alle Quellenstände 
 - **Nächste Prüfung:** Wiederverwendbare Unterkomponente mit Parametern und Verhalten prüfen.
 
 ## C21
+
+**Fortschreibung vom 24. Oktober 2026:** [C204](#c204) ordnet die frühere offene Frage im begrenzten Kern ein; der folgende Wortlaut ist historischer Prüfstand.
 
 - **Quelle:** [S08](SOURCES.md), E2; betrifft X05.
 - **Befund:** Das Schema erlaubt $imports.from und boolesche Teilimporte; machineInvoke verlangt kind/src/id.
@@ -1172,4 +1176,633 @@ Stand 24. Oktober 2026. Grundlage sind zwei separate Rechercheberichte; ihre Ein
 - **Befund:** Zentrale Referenz ist ein Ziel; §10 verlangt Aktualität. Der Kern definiert jedoch weder Feld-Ownership noch Vorrang-/Synchronisationsregeln zwischen Originalformaten und Integration.
 - **Bedeutung/Grenze:** N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Single-source-Ziel allein erfüllt keine dokumentierte Zuständigkeits-/Änderungssemantik für vier Fachquellen. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.
 - **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
+
+
+# Drei-Agenten-Runde: AgentsORG, UXSpec und Ark UI
+
+Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 26-Zeilen-Katalog, vorhandene Bewertungen und die Quellenrollen abgeglichen. Schema, Werkzeug und Laufzeitnachweis bleiben getrennt. AgentsORG-Vorarbeit wurde gezielt gegengeprüft; UXSpec-Vorarbeit gesichert und vervollständigt; für Ark UI war kein früherer Webbericht belegt. E1/E2, keine E3. Keine Installation, Praxis-/Laufzeitversuche oder Implementierung. N bezieht sich ausschließlich auf den jeweils definierten untersuchten Kern, nie auf einen bloßen fehlenden Fund.
+
+## C156
+
+- **Kandidat / Anforderung:** AgentsORG; G01; **D**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§1–3,7; SCHEMA root. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** `.design` ist ein einzelnes Datenobjekt, bevorzugt YAML 1.2, JSON gleichwertig; konkrete Struktur und Schema existieren.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Prosa bleibt Kontext.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C157
+
+- **Kandidat / Anforderung:** AgentsORG; G02; **D**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§1,7.3,11,13. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Normativer Visual-Kern benötigt keine JS-/React-Funktionen; Werte, Themes und Tokenpfade sind Daten.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; optionale shadcn-Integration und Pythonwerkzeuge getrennt; natürlichsprachliche Regeln sind keine formale Programmiersprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C158
+
+- **Kandidat / Anforderung:** AgentsORG; I01; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§13.2–13.3; SCHEMA $defs.component / componentPropertyBag. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Components definiert Stylebags und Nutzungsmetadaten, keinen öffentlichen Parametervertrag mit API-Typmetadaten.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; visuelle Propertytypen erfüllen I01 nicht. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C159
+
+- **Kandidat / Anforderung:** AgentsORG; I02; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§7,13; SCHEMA $defs.component. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Kein öffentlicher Eventname mit zugeordnetem strukturiertem Payloadvertrag im definierten Komponentenmodell.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Soundrollen und frei ergänzte Felder sind kein Event-API-Modell. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C160
+
+- **Kandidat / Anforderung:** AgentsORG; I03; **D**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §13.1–13.2; SCHEMA $defs.component.properties.anatomy. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** `anatomy` ist eine strukturierte Liste benannter Slots innerhalb eines Komponentenfamilieneintrags.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; keine Aussage über instanzstabile Elementidentität.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C161
+
+- **Kandidat / Anforderung:** AgentsORG; V01; **D**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §11.1–11.3; SCHEMA properties.tokens / $defs.tokenNode. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Definierte Color-, Dimension-, Typography-, Time-/Levelwerte und Tokenpfade; nackte Dimensionszahlen werden in bestimmten Gruppen als px interpretiert.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Schema ist teilweise permissiv und erzwingt nicht sämtliche Fachsemantik.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C162
+
+- **Kandidat / Anforderung:** AgentsORG; V02; **D**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§13.1–13.3,13.5; SCHEMA $defs.component. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Varianten/Zustände werden deklariert und besitzen strukturierte Tokenbags; flache Geschwistereinträge ebenfalls zulässig.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; keine externe UX-Maschinenbindung.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C163
+
+- **Kandidat / Anforderung:** AgentsORG; V03; **D**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §7.3; SCHEMA properties.themes. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Base-Tokens, benannte Mode-Overlays, pfadweises Überschreiben und aktive Auswahl via Präferenz/default sind definiert.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; CSS-Ausgabe und OS-/Toggleverhalten wurden nicht ausgeführt.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C164
+
+- **Kandidat / Anforderung:** AgentsORG; V04; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§11,13.3,13A,21; SCHEMA rationale.layout / componentPropertyBag. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Layout liegt in rationale.layout-Prosa; Gap/Spacingwerte besitzen keine Anker-, Ziel- und Positionsbeziehung.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; unbekannte Eigenschaftsnamen sind keine Geometriesprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C165
+
+- **Kandidat / Anforderung:** AgentsORG; V05; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §13.3,13A,21; SCHEMA componentPropertyBag. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Height/Width sind Werte, kein definiertes Maximalflächen-/Maximalhöhenmodell oder Ableitung aus sichtbaren Zeilen.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; content-max-Tokenname definiert keine geometrische Anwendung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C166
+
+- **Kandidat / Anforderung:** AgentsORG; V06; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§11,13–14,21; SCHEMA components/patterns. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Kein formal definiertes Overflow-/Scrollmodell unter den Kernfeldern und Propertytokens.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Scrollverbote für Sounds beschreiben keinen Scrollcontainer. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C167
+
+- **Kandidat / Anforderung:** AgentsORG; B01; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §13.2; SCHEMA $defs.component. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** states listet Stylezustände, aber weder Initialzustand noch Ereignisübergangsziel sind spezifiziert.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Dokumentlebenszyklus bootstrap/refine/lock/evolve betrifft Vertragsbearbeitung, nicht UI-Zustandsautomaten. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C168
+
+- **Kandidat / Anforderung:** AgentsORG; B02; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §15.2; SCHEMA properties.decisions. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** decisions hat first-match-Ordnung, die Bedingungen sind aber freie Strings/Objekte ohne definierte Ausdrucks- oder Aktionsausführungssemantik.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Designentscheidungen durch Agenten erfüllen das operationalisierte Guard-/Actionkriterium nicht. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C169
+
+- **Kandidat / Anforderung:** AgentsORG; B03; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§13,15.2; SCHEMA properties.decisions. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Kein modellierter UX-Kontext oder Ereignisdatenzugriff; decisions beschreibt Designzuweisung, nicht Datenverarbeitung im Automaten.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Datencontainer oder Strings allein genügen nicht. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C170
+
+- **Kandidat / Anforderung:** AgentsORG; B04; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§13,15; SCHEMA component/decisions/policy. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Keine strukturierte Bindung von Tastatur/Fokus/Eingaben an Maschinenereignisse oder UX-Aktionen im Kern.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Agentenanweisungen zu Eingaben sind keine explizite UI-Bindung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C171
+
+- **Kandidat / Anforderung:** AgentsORG; A01; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §15.1; SCHEMA properties.policy.properties.accessibility. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** policy.accessibility enthält Richtlinien, kein definiertes Rollen-/Namens-/Zielbeziehungsmodell.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; offener Objectcontainer und Kontrastwerte belegen das Kriterium nicht. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C172
+
+- **Kandidat / Anforderung:** AgentsORG; A02; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §15.1–15.1.1; SCHEMA policy.accessibility. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** focus_visible und reduced_motion sind Richtlinien; kein referenzierbares komponentenspezifisches Fokus-/Tastaturinteraktionsmuster.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; optionale Craftverfahren ersetzen kein Muster im geprüften Formatkern. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C173
+
+- **Kandidat / Anforderung:** AgentsORG; A03; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§11.6,15.1; SCHEMA policy/voice. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Kein definiertes Announcement-/Live-Region-Modell für zugängliche Aktualisierungen.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Sound-plus-visuelle-Rückmeldung und Fehlertextstil sind andere Teilbeiträge. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C174
+
+- **Kandidat / Anforderung:** AgentsORG; X01; **U**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§7,21; SCHEMA required. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Eigenständiger Visualvertrag ohne erforderliche UI-Verhaltens-/API-Daten ist möglich; vollständige Bindung vier unverändert separat geführter Bereiche bleibt unbelegt.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; offen: Bindung zu externen Interface-/Behavior-/Accessibility-Artefakten konkret festlegen.
+- **Offene Frage / weiterer Bedarf:** E1/E2; offen: Bindung zu externen Interface-/Behavior-/Accessibility-Artefakten konkret festlegen.
+
+## C175
+
+- **Kandidat / Anforderung:** AgentsORG; X02; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§13.1–13.2; SCHEMA $defs.component. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Anatomy benennt Slots, Komponentenkeys benennen Katalogdefinitionen; keine explizite UI-Instanz-/Element-Bindungs-ID.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Figma-Dateiidentität ist keine Elementidentität. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C176
+
+- **Kandidat / Anforderung:** AgentsORG; X03; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§7.1–7.2,11.3; SCHEMA figmaIntegration/shadcnIntegration. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Definierte Tokenpfade adressieren Visualwerte im selben Dokument; Figma/shadcn-Brücken bilden Token-/Dateiwerte ab, keine separaten drei Domänenmodelle.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; lokale Komponentenreferenzwarnungen des Linters sind keine vierformatige semantische Zuordnung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C177
+
+- **Kandidat / Anforderung:** AgentsORG; X04; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§13.2,14,21; SCHEMA component/patterns. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Katalogimport und Pattern-Rezepte fördern Wiederverwendung, definieren aber kein Use/Instanzmodell mit eigenen Parametern und Kontext.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; import-Modulpfad ist keine Contract-Instanziierung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C178
+
+- **Kandidat / Anforderung:** AgentsORG; X05; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§4.1,7,18,23; SCHEMA properties.extends. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** extends definiert lokale Pfad-/Namensauflösung und Overlayreihenfolge, aber keine gebundene Abhängigkeitsversion; Remote/Registry optional.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; version bezeichnet aktuellen Vertrag; keine reproduzierbare Version des Referenzziels. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C179
+
+- **Kandidat / Anforderung:** AgentsORG; X06; **D**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§3,19,24; SCHEMA root; LINT lint/main. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Eigenständiges `.design` kann unverändert gegen originales Draft-2020-12-Schema geprüft werden; Referenzlinter tut genau dies zusätzlich zu Fachprüfungen.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; Existenz und Codepfad belegt, kein Validatorversuch und keine Vollkonformitätsgarantie.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C180
+
+- **Kandidat / Anforderung:** AgentsORG; X07; **N**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §19; LINT lint/resolve_path; SCHEMA root. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Interne Token-/Alias-/Tiefenprüfungen vorhanden, aber keine gemeinsame Prüfung fremder Domänenmodelle, UI-Instanzkollisionen oder domänenübergreifender Widersprüche.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1/E2; interne Prüfungen ausdrücklich positiver Teilbeitrag; extends-Zyklusprüfung wird normativ verlangt, im gelesenen Linter nicht implementiert. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C181
+
+- **Kandidat / Anforderung:** AgentsORG; X08; **U**.
+- **Quellen:** [S48](SOURCES.md#s48); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Fundstelle: SPEC §§1,5,7.1–7.4,17–18. Lokale Quellenkürzel des Befunds sind unter S48 aufgelöst.
+- **Befund:** Starke vorhandene Regeln: `.design` repo-kanonisch, Tokens vor exportierten CSSwerten, Figma-Syncrichtung und Git-Audit. Übertragung auf unabhängige API-/Behavior-/A11y-Originale ist ungeklärt.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (AgentsORG am gepinnten Commit 014a1864c641f8e9792ed76de93c95493489dd8c). E1; offen: Ownership/Vorrang je Information über vier Bereiche ohne zweiten konkurrierenden Master definieren. Lokale Regeln werden nicht als vollständiger Paketnachweis ausgegeben.
+- **Offene Frage / weiterer Bedarf:** Wie bleibt jede der vier Originalquellen führend, während .design Visualwerte, Exporte und Synchronisationsrichtungen bestimmt?
+
+## C182
+
+- **Kandidat / Anforderung:** UXSpec; G01; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** JSON-Autorformat mit maschinenlesbaren Feldern und Originalschema. S File Format/Top-Level; J vollständig; T UXSpecDocument.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Strukturierter Teilbeitrag, keine Gleichsetzung von akzeptierten freien Feldern und definierter Semantik. Bestehendes D erhalten.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C183
+
+- **Kandidat / Anforderung:** UXSpec; G02; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Guards/Aktionen sind JSON-Kinds und S-Expressions mit dokumentierten Operatoren statt erforderlichen JS-Funktionen. S Actions, Effects, Dynamic Expressions; U.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Compiler TS/Node und Webrenderer React sind Werkzeug-/Adaptersprachen. Sprachneutrales Modell beweist keine identischen Ergebnisse in allen Zielsprachen; SCJSON-/SCXML-Kompatibilität bleibt Herstellerbehauptung ohne Konformitätsbeleg. Bestehendes D erhalten.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C184
+
+- **Kandidat / Anforderung:** UXSpec; I01; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** `$context` benennt Felder mit sechs Typkategorien; `required:true` verlangt Versorgung durch den Host vor Start. S Context; J contextField; T ContextField.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Direkt für öffentliche Host-Eingaben/Initialdaten der Maschine, kein vollständiger Katalog beliebiger laufend setzbarer UI-Props. object/array sind keine tiefen Schemas. Werteprüfung separat.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C185
+
+- **Kandidat / Anforderung:** UXSpec; I02; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** `$events` ist ein ausdrücklich deklarierter Katalog aller an die Maschine sendbaren Ereignisse, mit benannten typisierten Payload-Feldern und source; getrennt von transitions/onPress. S Events; J eventSpec; T EventSpec.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Öffentliche **eingehende** Maschinenereignisse; keine Behauptung eines eigenen ausgehenden Komponenten-Eventprotokolls. `emit` sendet laut S an dieselbe Maschine. Runtime-Payloadvalidierung nicht belegt.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C186
+
+- **Kandidat / Anforderung:** UXSpec; I03; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Benannte `$elements`, `slots` und Element-`name` beschreiben strukturierte Teile/Anatomie. S Elements/Visual/Element References; J elementBase/visual; F.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Der Teil ist im UXSpec-eigenen visuellen Modell beschrieben; keine importierte CEM-Anatomie oder instanzglobale Identität daraus ableiten.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C187
+
+- **Kandidat / Anforderung:** UXSpec; V01; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** `$tokens` beschreibt `$type`/`$value`, Dimensionen mit value/unit, Farben und Fonts; strukturierte Stylewerte. S Tokens/Token References; F Tokens; R Auflösung.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Eigene dokumentierte Werte genügen dem Teilkriterium; vollumfängliche DTCG-2025.10-Konformität nicht belegt. Schema `$tokens` nur object; Hex-Farbbeispiele nicht als Beleg aller normativen DTCG-Typen ausgeben.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C188
+
+- **Kandidat / Anforderung:** UXSpec; V02; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** `interactions` definiert hover/focus/press/disabled als rein visuelle Style-Overrides; zustandsbezogene `$visual`-Blöcke besitzen Vererbung/Slotsersetzung. S Interaction States/Slot Inheritance; F; K mergeVisual.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). D erhalten. Keine eigenständige externe UX-Zuordnung daraus ableiten; X03 bleibt offen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C189
+
+- **Kandidat / Anforderung:** UXSpec; V03; **N**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Der begrenzte v0.2-Kern definiert Tokens, Visuals, Zustandsvererbung und Interaktionsstile, aber keine Theme-/Modusauswahl oder kontextabhängige Tokenauflösung. S vollständige Struktur; J vollständige properties/defs; T.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Gilt für die definierten Mechanismen, nicht für die Unmöglichkeit einer Erweiterung. Unterschiedlich benannte dark-Tokens oder frei erlaubte Felder erfüllen keine Theme-Semantik. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C190
+
+- **Kandidat / Anforderung:** UXSpec; V04; **U**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Layoutprimitiven stack/grid/layer und offene container-/Elementobjekte sind belegt; ein normatives Anker-Ziel-Richtung-Abstand-Modell wurde nicht gefunden. S Layout/Visual; J visual.container/elementBase; W.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Konkrete Frage: Welche originale dokumentierte Eigenschaft bindet ein Overlay geometrisch an ein benanntes anderes Element, mit Einheiten/Auflösung? Freie Felder und CSS des Webadapters reichen nicht für D; fehlender Fund allein führt nicht N.
+- **Offene Frage / weiterer Bedarf:** Konkrete Frage: Welche originale dokumentierte Eigenschaft bindet ein Overlay geometrisch an ein benanntes anderes Element, mit Einheiten/Auflösung? Freie Felder und CSS des Webadapters reichen nicht für D; fehlender Fund allein führt nicht N.
+
+## C191
+
+- **Kandidat / Anforderung:** UXSpec; V05; **U**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Dimensionen und Elementgrößen sind strukturiert möglich; kein ausreichender Originalnachweis für formale maximale Höhe/Fläche. S/F; J offene Visualfelder; W mapSize.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.
+- **Offene Frage / weiterer Bedarf:** Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.
+
+## C192
+
+- **Kandidat / Anforderung:** UXSpec; V06; **U**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Containerlayout und freie Zusatzfelder sind vorhanden; neutrale Overflow-/Scrollsemantik ist in den geprüften normativen Definitionen nicht hinreichend belegt. S Layout/Element Types; J; W.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Welche originale Definition spezifiziert clip/scroll/auto und Scrollcontainer? Weboverflow oder erfundene Zusatzfelder nicht ohne dokumentierte Formatsemantik zurechnen.
+- **Offene Frage / weiterer Bedarf:** Welche originale Definition spezifiziert clip/scroll/auto und Scrollcontainer? Weboverflow oder erfundene Zusatzfelder nicht ohne dokumentierte Formatsemantik zurechnen.
+
+## C193
+
+- **Kandidat / Anforderung:** UXSpec; B01; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Machine id/initial/states, verschachtelte Zustände und event→target-Übergänge sind definiert. S Machine/Transitions; J; K.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D erhalten; kein SCXML-Kompatibilitätsnachweis.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C194
+
+- **Kandidat / Anforderung:** UXSpec; B02; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Definierte Guard-Ausdrücke, Operatoren, assign/emit/log und Entry/Exit-Ausführungsreihenfolge; benannte Effects mit Lebenszyklusanforderungen. S Actions/Effects/Transitions/Entry/Exit/Invoke; U; V.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D für dokumentierte Semantik erhalten. Nicht behaupten, alle Compiler-/Runtimepfade erzwingen jede normative Regel; insbesondere compile ruft validateSpec nicht auf.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C195
+
+- **Kandidat / Anforderung:** UXSpec; B03; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** context.*, event.* und binding mit Ausdrücken sowie assign sind beschrieben. S Context/Events/Binding/Dynamic Expressions; U.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D erhalten. Event- und Context-Typdeklaration ist keine bewiesene Runtime-Typprüfung.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C196
+
+- **Kandidat / Anforderung:** UXSpec; B04; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** `$visual.keyboard` ordnet Tasten Ereignissen zu; onEnter.focus, focus-effect, onPress/onChange bilden Eingaben auf Aktionen/Ereignisse ab. S Visual/Effects/Runtime Properties; F/U.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D erhalten. Keyboard/Fokus befinden sich teils im Visualblock; ihre getrennte führende Fachquelle und externe Bindung sind nicht dadurch gelöst.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C197
+
+- **Kandidat / Anforderung:** UXSpec; A01; **R**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** `aria` hat ausdrücklich auf ARIA-Attribute abgebildete Schlüssel, z.B. label. S Element Runtime Properties; U; J elementBase.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Referenz auf **externe ARIA-Websemantik**, kein eigenes Rollen-/Relationsschema und kein Nachweis gültiger Kombinationen oder Native-A11y-Abbildung. Für konkrete Rollen/Relationen muss die WAI-ARIA-Quelle separat maßgeblich bleiben; generisches object allein wäre ungenügend, hier ist die Attributzuordnung ausdrücklich dokumentiert.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C198
+
+- **Kandidat / Anforderung:** UXSpec; A02; **N**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Tastenzuordnung/Fokusaktionen sind im Kern Mechanismen für Verhalten; das definierte Modell enthält keinen referenzierbaren APG-/A11y-Patternvertrag mit Anforderungen an Bedienung und Fokus. S vollständige Runtime-/Visualbegriffe; J/T.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N für Pattern-Anforderungsmodell, nicht für die Möglichkeit zugänglicher Implementierungen. B04 nicht doppelt als Erfüllung von A02 zählen. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C199
+
+- **Kandidat / Anforderung:** UXSpec; A03; **R**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Dokumentiertes aria-Beispiel `live:polite` verweist auf zugängliche ARIA-Aktualisierungssemantik. S Element Runtime Properties; U.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Referenzbeitrag für Web, kein vollständiger Live-Region-Workflow: Auslöser, Inhalt, Regionidentität, Zeitpunkt und Screenreaderverhalten gesondert bestimmen. Kein Renderer-/AT-Test.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C200
+
+- **Kandidat / Anforderung:** UXSpec; X01; **U**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Originalschema verlangt top-level `$schema`/`$description`/`$machine`; `$visual` ist auf machine und stateNode optional. Behavior ohne Visual ist daher **auf Schemaebene** möglich. J machine/stateNode; K mergeVisual mit undefined.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Vier unabhängige Fachartefakte samt neutraler Interface-/A11y-Bindung bleiben ungeklärt. Keine falsche Aussage „UXSpec erzwingt Visual im Behavior“; auch reine Token-/Visualdateien ohne `$machine` wären nicht selbst schema-konforme UXSpec-Rootdokumente.
+- **Offene Frage / weiterer Bedarf:** Vier unabhängige Fachartefakte samt neutraler Interface-/A11y-Bindung bleiben ungeklärt. Keine falsche Aussage „UXSpec erzwingt Visual im Behavior“; auch reine Token-/Visualdateien ohne `$machine` wären nicht selbst schema-konforme UXSpec-Rootdokumente.
+
+## C201
+
+- **Kandidat / Anforderung:** UXSpec; X02; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** testId ist ausdrücklich als stabiler Testidentifier definiert, auf Web data-testid oder Plattformäquivalent abzubilden; name/focus.target ermöglichen Elementbezug. S Runtime Properties; J; K collectTestIds.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). D erhalten für explizite Kennzeichnung. Compiler dedupliziert identische testIds für Assertions; das ist keine Abweisung instanzübergreifender Kollisionen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C202
+
+- **Kandidat / Anforderung:** UXSpec; X03; **U**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Aliasqualifizierte Imports erschließen getrennte Token-/Element-/Maschinenquellen; konkrete Namensauflösung in I/R. S/F Referenzen, M Composability, J imports.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Starker Teilbefund, aber bisher UXSpec-eigene Teile: kein ausreichender Nachweis, dass Ziele in **separaten originalen Interface-/Visual-/Behavior-/A11y-Domänen** semantisch adressiert werden. Welche Originalartefakte/Bindungen bleiben unverändert? Tokenreferenz allein erfüllt X03 nicht.
+- **Offene Frage / weiterer Bedarf:** Starker Teilbefund, aber bisher UXSpec-eigene Teile: kein ausreichender Nachweis, dass Ziele in **separaten originalen Interface-/Visual-/Behavior-/A11y-Domänen** semantisch adressiert werden. Welche Originalartefakte/Bindungen bleiben unverändert? Tokenreferenz allein erfüllt X03 nicht.
+
+## C203
+
+- **Kandidat / Anforderung:** UXSpec; X04; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** `$elements` plus `$ref` trennen Definition/Verwendung, params/$bind und Instanz-Overrides sind konkret; R substituteParams/expandRefs. Zusätzlich machineInvoke mit src/id/input/onDone in J/T und I/K/B, Beispiel E.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Bestehendes D für parametrisierte Komponenten-/Elementinstanzen erhalten; keine Behauptung autonom funktionierender ScrollArea-Runtime. Separater Instanzkontext/Lebenszyklus und UI-Anatomie sind bei einer komplexen Unterkomponente weiter zu prüfen. Ein vollständiger Child-Machine-Renderer ist damit nicht nachgewiesen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C204
+
+- **Kandidat / Anforderung:** UXSpec; X05; **N**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Definierte Importfelder sind from + boolesche Teilimporte; I löst from über lokalen node:path relativ zur Dokumentdatei auf und liest JSON. Kein Versions-/Hash-/Lockfeld und keine solche Auflösung im geprüften Importkern J/T/I.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N eng auf reproduzierbare externe Abhängigkeitsbindung im Originalkern. Ein Git-gepinntes Gesamtverzeichnis kann außerhalb des Formats Reproduzierbarkeit liefern, wäre eine zusätzliche Paketkonvention. `$version:0.2` der Ausgabe ist Formatversion. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C205
+
+- **Kandidat / Anforderung:** UXSpec; X06; **D**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Eigenes unverändertes JSON Schema Draft 2020-12 existiert. Ein separat geführtes Behaviorartefakt ohne Visual kann an dessen Root-/Machine-Schema geprüft werden. J; S.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Direkter Schema-Beitrag, **nicht** Vollabdeckung aller vier Originalvalidatoren. Original-CLI ist ein anderer semantischer Prüfer und lädt J nicht. Tatsächlicher allgemeiner JSON-Schema-Validator wurde nicht ausgeführt; kein E3.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C206
+
+- **Kandidat / Anforderung:** UXSpec; X07; **N**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** Originalwerkzeuge prüfen ausgewählte interne Ziele/Operatoren/Referenzen. J/T/V/R/I/K/B definieren kein Vier-Domänen-Konfliktmodell mit Typkompatibilität, ID-Kollisionen und widersprüchlichen Fachanforderungen.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N nur für die Paketanforderung. Nicht behaupten „keine Referenzprüfung“: Token-/Element-/Zustands-/Importprüfungen sind vorhanden. Deduplizieren von Assertions und Überschreiben von Modulen ist keine Kollisionsabweisung. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C207
+
+- **Kandidat / Anforderung:** UXSpec; X08; **N**.
+- **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
+- **Befund:** README nennt ein einziges UXSpec-Dokument als führende Quelle. Originalmodell und Import-Overrides definieren keine Feld-Ownership/Vorrang-/Änderungssynchronisation zwischen vier externen Fachquellen. S/J/T/M, K/R.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N für vierfaches Ownershipmodell. Lokale Child-/Instanz-Override-Regeln sind belegt, genügen aber nicht der Paket-Governance. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C208
+
+- **Kandidat / Anforderung:** Ark UI; G01; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR05/AR06, E2: strukturierte TS-Props/Emits sowie generiertes JSON mit Teilen, Typen, Defaults und Pflichtangaben. Maschinenlesbarer Interface-Teilbeitrag, kein vollständiges neutrales JSON-Laufzeitmodell.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C209
+
+- **Kandidat / Anforderung:** Ark UI; G02; **A**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR04/AR05/AR06, E1/E2: JS-Frameworkhooks, Funktionen, DOM-/Collectionobjekte und Zag-Ausführung. Die vorhandenen Props-/Event-Metadaten wären ein konkreter Extraktions-/Bindungsansatz; zusätzliche neutrale Beschreibung und Zieladapter nötig. Keine automatische Portierung nach Swift oder Angular nachgewiesen.
+- **Bedeutung/Grenze:** A im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C210
+
+- **Kandidat / Anforderung:** Ark UI; I01; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR05/AR06, E1/E2: benannte Props etwa open:boolean, value:string[], collection:ListCollection<T>, Pflichtmetadaten. TS-Compiletime und Typstrings nicht mit Laufzeitvalidierung verwechseln; generische Items verlangen konkrete Typisierung.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C211
+
+- **Kandidat / Anforderung:** Ark UI; I02; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR06/AR08, E2: Vue RootEmits: valueChange mit ValueChangeDetails<T>, inputValueChange mit InputValueChangeDetails, openChange mit OpenChangeDetails; zugehörige Felder value/items, inputValue/reason, open/reason/value im Zag-Typ. React bietet entsprechende typisierte on...-Callbacks. Deklaration getrennt von Aufrufstellen. Frameworkabhängige Namen, kein gemeinsamer neutraler Eventkatalog.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C212
+
+- **Kandidat / Anforderung:** Ark UI; I03; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR05/AR06, E1/E2: benannte Root, Label, Control, Input, Positioner, Content, Item usw.; API-JSON pro Teil; comboboxAnatomy erweitert Zag-Anatomie um empty. Keine Gleichsetzung von Partname und Instanz-ID.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C213
+
+- **Kandidat / Anforderung:** Ark UI; V01; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR08, E1/E2: vorhandenes PositioningOptions-Modell und dimensionierte CSS-Variablen als konkreter geometrischer Wertebeitrag. Stylingwerte für Farben/Typografie kommen aus externem CSS; kein eigener allgemeiner Design-Token-Typenkatalog. D wäre nur für die angebotenen Geometrieparameter begründbar, nicht für komplette Designwerte.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C214
+
+- **Kandidat / Anforderung:** Ark UI; V02; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR01/AR02, E1: benannte Teile/Zustände über data-scope/data-part/data-state an separate CSS-Selektoren mit strukturierten Deklarationen gebunden. CSS liefert Styles, Ark liefert benannte Zustands-/Teilbindung. Keine eigene Recipe-/Variantensprache und kein externer UX-Contract-Mappingbeweis.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C215
+
+- **Kandidat / Anforderung:** Ark UI; V03; **N**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR01/AR04/AR05/AR06, E1/E2: definierter headless Kern liefert Funktionsstyles und Stylinghooks, überlässt Präsentation externer Lösung. Keine eigene Theme-/Dark-Mode-Auswahl-/Auflösung im geprüften API-/Adaptermodell. Externe CSS-/Designsystemthemes bleiben möglich.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C216
+
+- **Kandidat / Anforderung:** Ark UI; V04; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR05/AR08, E1/E2: positioning-Prop geht an Zag; getAnchorElement/AnchorRect, placement, gutter/offset, Positioner und Control/Trigger als Standardanker. Vorhandenes Web-Popper-Zielmodell statt eigener sprachneutraler Geometriesprache. Keine praktische Positionsmessung.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C217
+
+- **Kandidat / Anforderung:** Ark UI; V05; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR08, E1/E2: dokumentierte --available-height/--available-width und max-height:calc(...) in separatem CSS, außerdem referenziertes fitViewport. Formale Web-Flächenbegrenzung per CSS/Popper; exakt fünf variable Zeilen dadurch nicht automatisch definiert.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C218
+
+- **Kandidat / Anforderung:** Ark UI; V06; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR03/AR07/AR08, E1/E2: eigenständige ScrollArea-Wrappingkette bis getViewportProps, `overflow:auto`, Achsen, Overflow-/Scrollbarzustände. Kein Neutralformat; die notwendige geometrische Begrenzung und dokumentierte Zusatzstyles müssen im Produkt ergänzt werden.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C219
+
+- **Kandidat / Anforderung:** Ark UI; B01; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR01/AR05/AR08, E1/E2: konkrete Referenz auf combobox.machine mit initialState sowie closed/open-Subzuständen und ereignisbestimmten targets. Ark selbst ist kein Maschineneditor oder allgemeiner Statechart-Contract.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C220
+
+- **Kandidat / Anforderung:** Ark UI; B02; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR05/AR08, E2: referenzierte Maschine enthält tatsächliche Guards/Actions, etwa openOnChange, restoreFocus, setInputValue und invokeOnOpen; nicht nur freie Namen. Ausführungssemantik kommt aus Zag/JS. Keine SCXML-Kompatibilität daraus ableiten.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C221
+
+- **Kandidat / Anforderung:** Ark UI; B03; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR05/AR08, E2: useMachine erzeugt Service mit Props; referenzierte Maschine bindet value/inputValue/highlightedValue, verarbeitet Eventdaten und ruft typisierte öffentliche Callbackdetails auf. Gemeinsame portable Event-/Contextsprache nicht belegt.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C222
+
+- **Kandidat / Anforderung:** Ark UI; B04; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR05/AR08, E1/E2: Ark Input integriert getInputProps samt onFocus/onBlur/onChange/onKeyDown; ArrowDown/Enter/Escape werden konkret in Maschinenereignisse übersetzt. Ark stellt diese Web-/Frameworkbindung bereit; keine Nachweise zu nativen Eingabesystemen.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C223
+
+- **Kandidat / Anforderung:** Ark UI; A01; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR03/AR05/AR08, E1/E2: getInputProps/Label/Content-Verkettung liefert role=combobox, aria-controls/expanded/activedescendant/labelledby; Field ergänzt aria-describedby. ids-Sharing dokumentiert. Korrekte Elemente und Inhalte bleiben verantwortlich zu wählen, asChild kann Semantik beschädigen. Keine getestete Konformität.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C224
+
+- **Kandidat / Anforderung:** Ark UI; A02; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR05/AR08, E1/E2: expliziter referenzierbarer APG-Combobox-Verweis und eigene Keyboard-Tabelle; Bindung im gerenderten Input belegt. Das erfüllt das Musterteilkriterium, nicht vollständige normative oder plattformübergreifende Konformität.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C225
+
+- **Kandidat / Anforderung:** Ark UI; A03; **R**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR05/AR08, E1/E2: translations wird an die referenzierte Maschine gegeben; resultsCount/noResults und polite Ergebnisregion mit verzögerter Ansage sind dort definiert, Highlightansage separat assertive/Apple-bedingt. Produkttexte, Trigger und Sprachen explizit festlegen. **Wichtige Grenze:** der gelesene Ark React Root-Split enthält loading nicht, obwohl der aktuelle Zag-Typ loading kennt. Deshalb keine ungeprüfte Garantie einer durch <Combobox.Root loading=...> gesteuerten Ladeansage. Der direkte Hook nimmt Zag-Props an; seine tatsächliche Laufzeit wurde nicht getestet.
+- **Bedeutung/Grenze:** R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C226
+
+- **Kandidat / Anforderung:** Ark UI; X01; **U**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR01/AR05/AR08, E1/E2: externe Präsentation kann getrennt bleiben; Fokus, ARIA, UX und funktionale Geometrie sind in der ausführbaren Integration gekoppelt. Offen: Wie werden vier unabhängig führende externe Domänen ohne widersprechende zweite Definition gebunden?
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** AR01/AR05/AR08, E1/E2: externe Präsentation kann getrennt bleiben; Fokus, ARIA, UX und funktionale Geometrie sind in der ausführbaren Integration gekoppelt. Offen: Wie werden vier unabhängig führende externe Domänen ohne widersprechende zweite Definition gebunden?
+
+## C227
+
+- **Kandidat / Anforderung:** Ark UI; X02; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR02/AR03/AR05/AR07, E1/E2: explizite id/ids für Elemente, React useId als Default, dokumentiertes Sharing zwischen Tooltip-Trigger und Avatar-Root. Keine Garantie dauerhafter Identität über Neustarts, Umordnung, SSR oder mehrere unabhängige Roots; stabile Contract-IDs müssten explizit vergeben werden.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C228
+
+- **Kandidat / Anforderung:** Ark UI; X03; **U**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR01/AR03/AR05/AR06, E1/E2: IDs verbinden Komponenten und ARIA-Ziele; Part-/Stateattribute verbinden CSS. Offen: Wie adressiert Ark ein Ziel in einem separat definierten neutralen Interface-/UX-/A11y-Vertrag mit überprüfbarer semantischer Zuordnung? DOM-IDs und Importe reichen als Nachweis dafür nicht.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** AR01/AR03/AR05/AR06, E1/E2: IDs verbinden Komponenten und ARIA-Ziele; Part-/Stateattribute verbinden CSS. Offen: Wie adressiert Ark ein Ziel in einem separat definierten neutralen Interface-/UX-/A11y-Vertrag mit überprüfbarer semantischer Zuordnung? DOM-IDs und Importe reichen als Nachweis dafür nicht.
+
+## C229
+
+- **Kandidat / Anforderung:** Ark UI; X04; **D**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR03/AR05/AR07, E1/E2: getrennte Komponentendefinition und Verwendung mit Props, per useCombobox/useScrollArea eigener Machine-/ID-Kontext, Root/RootProvider und Providerwerte; asChild und dokumentiertes Avatar/Tooltip-Beispiel zeigen konkrete Web-Komposition. D in der ausführbaren Frameworkrolle. Keine behauptete neutrale Overlay->ScrollArea-Vertragssyntax, Konfliktfreiheit oder Laufzeitprüfung; komplexe Focus-/Scroll-Ownership bleibt X01/X07.
+- **Bedeutung/Grenze:** D im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C230
+
+- **Kandidat / Anforderung:** Ark UI; X05; **N**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR04/AR05/AR06, E2: geprüfte Props/Emits-/Root-/API-Metadaten kennen keinen eigenen versionierten externen Fachmodellresolver. Versionierte npm-Abhängigkeiten sind Softwaredistribution und sichern nicht automatisch referenzierte Contractartefakte. N nur für diesen definierten Ark-Vertragskern, nicht für die Existenz externer Paketmanager.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C231
+
+- **Kandidat / Anforderung:** Ark UI; X06; **U**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR04/AR06/AR09, E2: TS-Typen und API-JSON belegt, typecheck-Script vorhanden. Kein nachgewiesenes kanonisches Schema und ausführbares Validierungstooling für separate neutrale Domänenartefakte. Offen: Gibt es ein offizielles Originalschema und einen Validator, der Properties, Details und externe Referenzen solcher Artefakte prüft? JSON-Metadaten und tsc allein beweisen das nicht.
+- **Bedeutung/Grenze:** U im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.
+- **Offene Frage / weiterer Bedarf:** AR04/AR06/AR09, E2: TS-Typen und API-JSON belegt, typecheck-Script vorhanden. Kein nachgewiesenes kanonisches Schema und ausführbares Validierungstooling für separate neutrale Domänenartefakte. Offen: Gibt es ein offizielles Originalschema und einen Validator, der Properties, Details und externe Referenzen solcher Artefakte prüft? JSON-Metadaten und tsc allein beweisen das nicht.
+
+## C232
+
+- **Kandidat / Anforderung:** Ark UI; X07; **N**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR03/AR05/AR06, E1/E2: Props-/ID-Komposition und DOM-Bindung im geprüften Kern, keine gemeinsame vierdomänige Referenz-/Kollisions-/Widerspruchsprüfung. Nutzer muss korrekte IDs/Semantik wählen; keine Behauptung, alle internen Runtimeprüfungen fehlten.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
+
+## C233
+
+- **Kandidat / Anforderung:** Ark UI; X08; **N**.
+- **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
+- **Befund:** AR01/AR03/AR05/AR06, E1/E2: Anleitung trennt funktionale und externe Präsentationsstyles und beschreibt Merging, aber kein führendes Quellen-/Vorrangmodell je Information zwischen vier Originalformaten und Integrationsschicht. N nur für diese geforderte paketweite Governance im geprüften Modell.
+- **Bedeutung/Grenze:** N im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.
+- **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
 
