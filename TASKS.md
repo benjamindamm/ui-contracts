@@ -19,7 +19,7 @@ Stand: 24. Oktober 2026. Diese Liste ist die zentrale Übergabe für die weitere
 | Kandidat | Ergebnis | Verbleibende U-Fragen |
 | --- | --- | --- |
 | AgentsORG | 20 von 22 offenen Feldern geklärt | X01, X08 |
-| UXSpec | 12 von 17 offenen Feldern geklärt | V04, V05, V06, X01, X03 |
+| UXSpec | Erstrunde 12 von 17; nach Folgeprüfung 13 von 17 eingeordnet | V04, V06, X01, X03 |
 | Ark UI | 21 von 24 offenen Feldern geklärt | X01, X03, X06 |
 
 Die Zahl der erledigten Kandidaten wurde erst nach tatsächlicher zentraler Übernahme erhöht. Es läuft keine weitere Kandidatenprüfung als Teil dieser Runde. Schema-/Linter-/Compilerbefunde sind Dokumenten-/Quelltextnachweise, keine Praxisversuche.
@@ -73,6 +73,10 @@ Die frühere Meldung „zehn übernommen, sechs offen“ war damals verfrüht. N
 
 Bei UXSpec gilt der aktuelle 26-Zeilen-Katalog mit neun vorher bewerteten und siebzehn zuvor offenen Feldern. Die ältere Chatangabe „19/27“ wurde korrigiert, nicht weitergezählt.
 
+## Aktueller Stand der offenen Felder
+
+**72 U-Zellen verbleiben: 45 Integrationsfelder und 27 weitere Felder.** [UXSpec-Layoutfolgeprüfung](docs/research/FOLLOWUP-UXSPEC-LAYOUT.md): V04/V05/V06 erneut geprüft, V05 U→A; zwei Felder bleiben U. Die frühere Zahl 73 ist der Ausgangsstand vor dieser einen Neubewertung.
+
 ## Offene Folgeaufgaben nach der Kandidatenphase
 
 - [x] AgentsORG-Bericht gegen Kriterien und Primärquellen prüfen und in die vorhandenen Forschungsdateien übernehmen.
@@ -80,8 +84,10 @@ Bei UXSpec gilt der aktuelle 26-Zeilen-Katalog mit neun vorher bewerteten und si
 - [x] Ark-UI-Vorarbeit wiederfinden, verbleibende Prüfung abschließen und übernehmen.
 - [x] Panda CSS, uSpec und OpenPencil vertieft prüfen und übernehmen.
 - [x] Die letzten drei Kandidaten WAI-ARIA, APG und CSS Layout vertieft prüfen und übernehmen.
-- [x] Alle 73 U-Zellen im [offenen Feldregister](docs/research/OPEN-FIELDS.md) einzeln mit Frage, Befund und vorgeschlagener Priorität führen: 45 Integrationsfelder, 28 weitere Felder. Triage abgeschlossen, keine automatische Neubewertung.
-- [ ] Priorisierte U-Fragen gezielt nachprüfen und nur bei ausreichendem neuen Nachweis in der Matrix neu bewerten.
+- [x] Die ursprünglich 73 U-Zellen im [offenen Feldregister](docs/research/OPEN-FIELDS.md) einzeln mit Frage, Befund und vorgeschlagener Priorität erfassen. Aktuell verbleiben nach der UXSpec-Folgeprüfung 72: 45 Integrationsfelder und 27 weitere Felder. Triage abgeschlossen, keine automatische Neubewertung.
+- [x] UXSpec V04/V05/V06 gezielt nachprüfen und dokumentieren; ein Feld begründet U→A eingeordnet, zwei bleiben U.
+- [x] uSpec V04/V06 gezielt an Strukturreferenz und Basisextraktion nachprüfen; beide bleiben U mit genaueren Fragen (C400/C401).
+- [ ] Weitere priorisierte U-Fragen gezielt nachprüfen und nur bei ausreichendem neuen Nachweis in der Matrix neu bewerten.
 - [ ] Den vorgemerkten Zusatzvergleich zu **Originalschema und tatsächlichem Validierungstooling**, **Beschreibungsformat und zusätzlich nötigem Code** sowie **Reifegrad und Kompatibilität** vervollständigen. Kandidatenbezogene Teilbefunde liegen vor; dies ist noch kein abgeschlossener Vergleich aller Kandidaten.
 - [ ] Die beiden bestätigten Detailvergleiche gezielt vervollständigen: DESIGN.md gegen deklarative Layoutmodelle und UXSpec gegen SCXML.
 - [x] Gemeinsame Referenzen, Komponentenkomposition und Ownership als [Integrationsentwurf](docs/research/INTEGRATION.md) dokumentarisch zusammenführen; neue Regeln ausdrücklich als Vorschläge kennzeichnen.

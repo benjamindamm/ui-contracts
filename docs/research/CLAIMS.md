@@ -1456,6 +1456,8 @@ Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 
 
 ## C190
 
+**Historischer Befund; aktuelle Folgeprüfung: [C397](#c397).**
+
 - **Kandidat / Anforderung:** UXSpec; V04; **U**.
 - **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
 - **Befund:** Layoutprimitiven stack/grid/layer und offene container-/Elementobjekte sind belegt; ein normatives Anker-Ziel-Richtung-Abstand-Modell wurde nicht gefunden. S Layout/Visual; J visual.container/elementBase; W.
@@ -1464,6 +1466,8 @@ Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 
 
 ## C191
 
+**Historischer Befund; aktuelle Folgeprüfung: [C398](#c398).**
+
 - **Kandidat / Anforderung:** UXSpec; V05; **U**.
 - **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
 - **Befund:** Dimensionen und Elementgrößen sind strukturiert möglich; kein ausreichender Originalnachweis für formale maximale Höhe/Fläche. S/F; J offene Visualfelder; W mapSize.
@@ -1471,6 +1475,8 @@ Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 
 - **Offene Frage / weiterer Bedarf:** Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.
 
 ## C192
+
+**Historischer Befund; aktuelle Folgeprüfung: [C399](#c399).**
 
 - **Kandidat / Anforderung:** UXSpec; V06; **U**.
 - **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
@@ -2085,6 +2091,8 @@ Stand 24. Oktober 2026. Drei getrennte, ausdrücklich beauftragte Rechercheberic
 
 ## C268
 
+**Historischer Befund; aktuelle Folgeprüfung: [C400](#c400).**
+
 - **Kandidat / Anforderung:** uSpec; V04; **U**.
 - **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
 - **Befund:** STR besitzt section._anchor mit layerId/variantId sowie Abstand/Layoutfelder. Das ist ein Mess-/Renderziel, kein ausreichender Beleg Overlay→Input mit definierter Richtung/Abstand und unabhängiger Layoutsemantik. Frage: Welche originale Felddefinition bindet Referenzziel + placement/side + offset als relative Geometrie?
@@ -2100,6 +2108,8 @@ Stand 24. Oktober 2026. Drei getrennte, ausdrücklich beauftragte Rechercheberic
 - **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
 
 ## C270
+
+**Historischer Befund; aktuelle Folgeprüfung: [C401](#c401).**
 
 - **Kandidat / Anforderung:** uSpec; V06; **U**.
 - **Quellen:** [S52](SOURCES.md#s52); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
@@ -3122,3 +3132,43 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 - **Befund:** WAI-ARIA 1.2 aria-activedescendant verlangt zulässige Eigentums- beziehungsweise Kontrollbeziehungen und referenziert ein aktives Element; ein existierendes ID-Ziel allein genügt nicht. Das gelesene APG-Combobox-Muster führt DOM-Fokus, Popupbezug und aria-selected auf und beschreibt Auswahlfolge im Popup.
 - **Bedeutung/Grenze:** Semantik und Patternempfehlung getrennt. Für den vorgeschlagenen Webfall sind aktive Option, zugänglich gemeldete Popupauswahl und bestätigter Produktwert ausdrücklich zuzuordnen; keine automatische Aussage, Navigation habe keine Auswahlsemantik. Kein Browser-/Assistenztechniktest und keine neue Matrixbewertung.
 - **Nächste Prüfung:** Fachliche Teile auf echte Input-/Listbox-/Option-Elemente derselben Instanz abbilden; ARIA-Relationen, Produktbestätigung und Scrollzuständigkeit getrennt prüfen.
+
+## C397
+
+- **Kandidat / Anforderung:** UXSpec; V04; **U**. Ankergeometrie bleibt ungeklärt.
+- **Quelle:** [S59](SOURCES.md#s59); E1/E2, begrenzte manuelle Original-/Rendererprüfung.
+- **Befund:** SPEC und Formatreferenz definieren die Layoutprimitiven stack-h/stack-v/grid/layer. Der erneut vollständig gelesene Stylemapper bindet layer an relative Positionierung; LayerContainer setzt Kindwrapper absolut mit top/left/right/bottom 0. Das ist eine konkrete lokale Überlagerung, kein belegter Bezug auf ein separat benanntes Inputziel mit Richtung und Abstand.
+- **Bedeutung/Grenze:** Die zusätzlichen Rendererpfade präzisieren den Teilbeitrag. Kein N aus fehlendem Treffer, keine freie Ankereigenschaft als Standard ausgegeben und kein Praxisversuch.
+- **Nächste Prüfung:** Welche originale normative Eigenschaft oder dokumentierte Bindung ergänzt Zielidentität, Richtung und Abstand über die lokalen Layerwrapper hinaus? Andere Renderer/Erweiterungen gezielt und getrennt prüfen.
+
+## C398
+
+- **Kandidat / Anforderung:** UXSpec; V05; **A**. Maximale Größe über vorhandenen Webadapter.
+- **Quelle:** [S59](SOURCES.md#s59); E1/E2, begrenzte manuelle Original-/Rendererprüfung.
+- **Befund:** style-map.ts mapSize liest size.maxWidth und size.maxHeight und übersetzt sie über normalizeDimension in CSS maxWidth/maxHeight. mapContainerStyle und mapElementStyle verwenden mapSize; containers.tsx ruft beide auf und setzt das Ergebnis als style am gerenderten div. normalizeDimension verarbeitet Zahlen, Strings und value/unit-Objekte; Zahlen werden in diesem Pfad als px behandelt.
+- **Bedeutung/Grenze:** Gezielt erweiterter E2-Nachweis des Aufrufpfads, keine Ausführung. U wird zu A gemäß Methodenregel: vorhandener konkreter Mechanismus, zusätzliche Bindung für den neutralen Visualvertrag nötig. Kein D für eine vollständig typisierte normative Layoutsprache; beliebige Strings/any bleiben unzureichend validiert. Fünf variable Zeilen und native Geometrie sind nicht bewiesen.
+- **Nächste Prüfung:** Bei späterem praktischem Auftrag eine gültige/falsche Dimension und variable Zeilenhöhen prüfen; neutrales Visualfeld, Einheit, Containerziel und Adapter ausdrücklich binden.
+
+## C399
+
+- **Kandidat / Anforderung:** UXSpec; V06; **U**. Overflow und Scrollen bleiben ungeklärt.
+- **Quelle:** [S59](SOURCES.md#s59); E1/E2, begrenzte manuelle Original-/Rendererprüfung.
+- **Befund:** Die erneut gelesenen SPEC-/Formatreferenzdefinitionen liefern keinen hinreichenden formalen Overflowvertrag. Der vollständige Stylemapper setzt keine overflow-/overflowX-/overflowY-Eigenschaft. Die gelesenen Containerfunktionen geben keine solche Contracteigenschaft weiter. Maximale Höhe erzeugt allein keine definierte Scrollsemantik.
+- **Bedeutung/Grenze:** Auf diese Definitionen und Rendererpfade begrenzter E1/E2-Befund; keine Behauptung, im gesamten Repository gebe es nirgendwo scrollendes CSS oder andere Renderer. U bleibt bestehen.
+- **Nächste Prüfung:** Welche originale Definition benennt Scrollcontainer, Achse und clip/auto/scroll samt Semantik? Vorschau-/Host-CSS und eine mögliche zusätzliche Layoutbindung ausdrücklich getrennt prüfen.
+
+## C400
+
+- **Kandidat / Anforderung:** uSpec; V04; **U**. uSpec-Anker ist ein Mess-/Dokumentationsziel.
+- **Quelle:** [S60](SOURCES.md#s60); manuelle begrenzte E1/E2-Prüfung.
+- **Befund:** STR beschreibt section._anchor durch layerName/layerId/variantId/variantName/variantProperties und ordnet es je Abschnitt einem Figma-Quellknoten zu. phaseE.ts extrahiert Layout-/Maßdaten; treeFlat bildet absolute Koordinaten relativ zur Variantenwurzel als bbox ab. Das ist keine belegte dynamische Overlay→Input-Bindung mit Richtung und Abstand.
+- **Bedeutung/Grenze:** Gezielte E1/E2-Folgeprüfung. U bleibt bestehen: Quellknotenidentität, statische Messkoordinaten und relative Laufzeitgeometrie sind unterschiedliche Bedeutungen. Keine Ausführung oder pauschale Aussage über alle anderen uSpec-Pfade.
+- **Nächste Prüfung:** Welcher weitere originale Ausgabe-/Auswertungspfad bindet ein benanntes anderes UI-Ziel mit Richtung/Abstand? Vorhandene _anchor-Felder nicht dafür umdeuten; nötiges zusätzliches Layoutmodell explizit ausweisen.
+
+## C401
+
+- **Kandidat / Anforderung:** uSpec; V06; **U**. uSpec-Basisextraktion erhält Clipping, aber keine belegte Scrollachse.
+- **Quelle:** [S60](SOURCES.md#s60); manuelle begrenzte E1/E2-Prüfung.
+- **Befund:** phaseE.ts extractDims liest clipsContent und schreibt value/token/display; die gezielt vollständig gelesene Funktion extrahiert keine Scrollrichtung oder auto/scroll-Auswahl. BASE beschreibt erhaltene Wrapper mit Dimensionen/Clipping. STRs Overflowdefinition führt clipsContent true/false. Die konkrete Basisextraktion belegt damit Clipping, nicht eine vollständige Scrollcontainersemantik.
+- **Bedeutung/Grenze:** E1/E2 im beschriebenen Basis-/Strukturpfad. U bleibt für das gesamte V06-Kriterium bestehen; keine Behauptung, uSpec oder Figma könnten grundsätzlich nicht scrollen. Ein Variantenname overflow=scroll ersetzt keine fachliche Achsen-/Ausführungsdefinition.
+- **Nächste Prüfung:** Andere originale Speicher-/Rendererpfade gezielt auf Scrollrichtung und Scrollcontainer prüfen; falls ein Zusatzmodell nötig ist, Clippingbeitrag und neue Scrollsemantik getrennt dokumentieren.

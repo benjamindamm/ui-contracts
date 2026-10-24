@@ -1508,19 +1508,19 @@
       "requirement": "V04",
       "candidate": "UXSpec",
       "coverage": "U",
-      "claim": "C190"
+      "claim": "C397"
     },
     {
       "requirement": "V05",
       "candidate": "UXSpec",
-      "coverage": "U",
-      "claim": "C191"
+      "coverage": "A",
+      "claim": "C398"
     },
     {
       "requirement": "V06",
       "candidate": "UXSpec",
       "coverage": "U",
-      "claim": "C192"
+      "claim": "C399"
     },
     {
       "requirement": "B01",
@@ -1976,7 +1976,7 @@
       "requirement": "V04",
       "candidate": "uSpec",
       "coverage": "U",
-      "claim": "C268"
+      "claim": "C400"
     },
     {
       "requirement": "V05",
@@ -1988,7 +1988,7 @@
       "requirement": "V06",
       "candidate": "uSpec",
       "coverage": "U",
-      "claim": "C270"
+      "claim": "C401"
     },
     {
       "requirement": "B01",
@@ -5226,7 +5226,8 @@
       ],
       "finding": "Layoutprimitiven stack/grid/layer und offene container-/Elementobjekte sind belegt; ein normatives Anker-Ziel-Richtung-Abstand-Modell wurde nicht gefunden. S Layout/Visual; J visual.container/elementBase; W.",
       "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Konkrete Frage: Welche originale dokumentierte Eigenschaft bindet ein Overlay geometrisch an ein benanntes anderes Element, mit Einheiten/Auflösung? Freie Felder und CSS des Webadapters reichen nicht für D; fehlender Fund allein führt nicht N.",
-      "next_check": "Konkrete Frage: Welche originale dokumentierte Eigenschaft bindet ein Overlay geometrisch an ein benanntes anderes Element, mit Einheiten/Auflösung? Freie Felder und CSS des Webadapters reichen nicht für D; fehlender Fund allein führt nicht N."
+      "next_check": "Konkrete Frage: Welche originale dokumentierte Eigenschaft bindet ein Overlay geometrisch an ein benanntes anderes Element, mit Einheiten/Auflösung? Freie Felder und CSS des Webadapters reichen nicht für D; fehlender Fund allein führt nicht N.",
+      "superseded_by": "C397"
     },
     {
       "id": "C191",
@@ -5237,7 +5238,8 @@
       ],
       "finding": "Dimensionen und Elementgrößen sind strukturiert möglich; kein ausreichender Originalnachweis für formale maximale Höhe/Fläche. S/F; J offene Visualfelder; W mapSize.",
       "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.",
-      "next_check": "Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen."
+      "next_check": "Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.",
+      "superseded_by": "C398"
     },
     {
       "id": "C192",
@@ -5248,7 +5250,8 @@
       ],
       "finding": "Containerlayout und freie Zusatzfelder sind vorhanden; neutrale Overflow-/Scrollsemantik ist in den geprüften normativen Definitionen nicht hinreichend belegt. S Layout/Element Types; J; W.",
       "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Welche originale Definition spezifiziert clip/scroll/auto und Scrollcontainer? Weboverflow oder erfundene Zusatzfelder nicht ohne dokumentierte Formatsemantik zurechnen.",
-      "next_check": "Welche originale Definition spezifiziert clip/scroll/auto und Scrollcontainer? Weboverflow oder erfundene Zusatzfelder nicht ohne dokumentierte Formatsemantik zurechnen."
+      "next_check": "Welche originale Definition spezifiziert clip/scroll/auto und Scrollcontainer? Weboverflow oder erfundene Zusatzfelder nicht ohne dokumentierte Formatsemantik zurechnen.",
+      "superseded_by": "C399"
     },
     {
       "id": "C193",
@@ -6084,7 +6087,8 @@
       ],
       "finding": "STR besitzt section._anchor mit layerId/variantId sowie Abstand/Layoutfelder. Das ist ein Mess-/Renderziel, kein ausreichender Beleg Overlay→Input mit definierter Richtung/Abstand und unabhängiger Layoutsemantik. Frage: Welche originale Felddefinition bindet Referenzziel + placement/side + offset als relative Geometrie?",
       "interpretation": "U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
-      "next_check": "Konkrete Nachweislücke für V04: STR besitzt section._anchor mit layerId/variantId sowie Abstand/Layoutfelder. Das ist ein Mess-/Renderziel, kein ausreichender Beleg Overlay→Input mit definierter Richtung/Abstand und unabhängiger Layoutsemantik. Frage: Welche originale Felddefinition bindet Referenzziel + placement/side + offset als relative Geometrie?"
+      "next_check": "Konkrete Nachweislücke für V04: STR besitzt section._anchor mit layerId/variantId sowie Abstand/Layoutfelder. Das ist ein Mess-/Renderziel, kein ausreichender Beleg Overlay→Input mit definierter Richtung/Abstand und unabhängiger Layoutsemantik. Frage: Welche originale Felddefinition bindet Referenzziel + placement/side + offset als relative Geometrie?",
+      "superseded_by": "C400"
     },
     {
       "id": "C269",
@@ -6106,7 +6110,8 @@
       ],
       "finding": "STR dokumentiert clipsContent true/false ausdrücklich als Clip content (overflow); BASE erwähnt Scrollwrapper. Clipping beweist kein formal beschriebenes Scrollverhalten/Achse. Frage: Wird overflowDirection/scrolling im Originalartefakt mit Semantik gespeichert oder braucht es neue Modellierung?",
       "interpretation": "U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
-      "next_check": "Konkrete Nachweislücke für V06: STR dokumentiert clipsContent true/false ausdrücklich als Clip content (overflow); BASE erwähnt Scrollwrapper. Clipping beweist kein formal beschriebenes Scrollverhalten/Achse. Frage: Wird overflowDirection/scrolling im Originalartefakt mit Semantik gespeichert oder braucht es neue Modellierung?"
+      "next_check": "Konkrete Nachweislücke für V06: STR dokumentiert clipsContent true/false ausdrücklich als Clip content (overflow); BASE erwähnt Scrollwrapper. Clipping beweist kein formal beschriebenes Scrollverhalten/Achse. Frage: Wird overflowDirection/scrolling im Originalartefakt mit Semantik gespeichert oder braucht es neue Modellierung?",
+      "superseded_by": "C401"
     },
     {
       "id": "C271",
@@ -7508,6 +7513,61 @@
       "finding": "WAI-ARIA 1.2 aria-activedescendant verlangt zulässige Eigentums- beziehungsweise Kontrollbeziehungen und referenziert ein aktives Element; ein existierendes ID-Ziel allein genügt nicht. Das gelesene APG-Combobox-Muster führt DOM-Fokus, Popupbezug und aria-selected auf und beschreibt Auswahlfolge im Popup.",
       "interpretation": "Semantik und Patternempfehlung getrennt. Für den vorgeschlagenen Webfall sind aktive Option, zugänglich gemeldete Popupauswahl und bestätigter Produktwert ausdrücklich zuzuordnen; keine automatische Aussage, Navigation habe keine Auswahlsemantik. Kein Browser-/Assistenztechniktest und keine neue Matrixbewertung.",
       "next_check": "Fachliche Teile auf echte Input-/Listbox-/Option-Elemente derselben Instanz abbilden; ARIA-Relationen, Produktbestätigung und Scrollzuständigkeit getrennt prüfen."
+    },
+    {
+      "id": "C397",
+      "source": "S59",
+      "evidence": "E2",
+      "rows": [
+        "V04"
+      ],
+      "finding": "SPEC und Formatreferenz definieren die Layoutprimitiven stack-h/stack-v/grid/layer. Der erneut vollständig gelesene Stylemapper bindet layer an relative Positionierung; LayerContainer setzt Kindwrapper absolut mit top/left/right/bottom 0. Das ist eine konkrete lokale Überlagerung, kein belegter Bezug auf ein separat benanntes Inputziel mit Richtung und Abstand.",
+      "interpretation": "Die zusätzlichen Rendererpfade präzisieren den Teilbeitrag. Kein N aus fehlendem Treffer, keine freie Ankereigenschaft als Standard ausgegeben und kein Praxisversuch.",
+      "next_check": "Welche originale normative Eigenschaft oder dokumentierte Bindung ergänzt Zielidentität, Richtung und Abstand über die lokalen Layerwrapper hinaus? Andere Renderer/Erweiterungen gezielt und getrennt prüfen."
+    },
+    {
+      "id": "C398",
+      "source": "S59",
+      "evidence": "E2",
+      "rows": [
+        "V05"
+      ],
+      "finding": "style-map.ts mapSize liest size.maxWidth und size.maxHeight und übersetzt sie über normalizeDimension in CSS maxWidth/maxHeight. mapContainerStyle und mapElementStyle verwenden mapSize; containers.tsx ruft beide auf und setzt das Ergebnis als style am gerenderten div. normalizeDimension verarbeitet Zahlen, Strings und value/unit-Objekte; Zahlen werden in diesem Pfad als px behandelt.",
+      "interpretation": "Gezielt erweiterter E2-Nachweis des Aufrufpfads, keine Ausführung. U wird zu A gemäß Methodenregel: vorhandener konkreter Mechanismus, zusätzliche Bindung für den neutralen Visualvertrag nötig. Kein D für eine vollständig typisierte normative Layoutsprache; beliebige Strings/any bleiben unzureichend validiert. Fünf variable Zeilen und native Geometrie sind nicht bewiesen.",
+      "next_check": "Bei späterem praktischem Auftrag eine gültige/falsche Dimension und variable Zeilenhöhen prüfen; neutrales Visualfeld, Einheit, Containerziel und Adapter ausdrücklich binden."
+    },
+    {
+      "id": "C399",
+      "source": "S59",
+      "evidence": "E2",
+      "rows": [
+        "V06"
+      ],
+      "finding": "Die erneut gelesenen SPEC-/Formatreferenzdefinitionen liefern keinen hinreichenden formalen Overflowvertrag. Der vollständige Stylemapper setzt keine overflow-/overflowX-/overflowY-Eigenschaft. Die gelesenen Containerfunktionen geben keine solche Contracteigenschaft weiter. Maximale Höhe erzeugt allein keine definierte Scrollsemantik.",
+      "interpretation": "Auf diese Definitionen und Rendererpfade begrenzter E1/E2-Befund; keine Behauptung, im gesamten Repository gebe es nirgendwo scrollendes CSS oder andere Renderer. U bleibt bestehen.",
+      "next_check": "Welche originale Definition benennt Scrollcontainer, Achse und clip/auto/scroll samt Semantik? Vorschau-/Host-CSS und eine mögliche zusätzliche Layoutbindung ausdrücklich getrennt prüfen."
+    },
+    {
+      "id": "C400",
+      "source": "S60",
+      "evidence": "E2",
+      "rows": [
+        "V04"
+      ],
+      "finding": "STR beschreibt section._anchor durch layerName/layerId/variantId/variantName/variantProperties und ordnet es je Abschnitt einem Figma-Quellknoten zu. phaseE.ts extrahiert Layout-/Maßdaten; treeFlat bildet absolute Koordinaten relativ zur Variantenwurzel als bbox ab. Das ist keine belegte dynamische Overlay→Input-Bindung mit Richtung und Abstand.",
+      "interpretation": "Gezielte E1/E2-Folgeprüfung. U bleibt bestehen: Quellknotenidentität, statische Messkoordinaten und relative Laufzeitgeometrie sind unterschiedliche Bedeutungen. Keine Ausführung oder pauschale Aussage über alle anderen uSpec-Pfade.",
+      "next_check": "Welcher weitere originale Ausgabe-/Auswertungspfad bindet ein benanntes anderes UI-Ziel mit Richtung/Abstand? Vorhandene _anchor-Felder nicht dafür umdeuten; nötiges zusätzliches Layoutmodell explizit ausweisen."
+    },
+    {
+      "id": "C401",
+      "source": "S60",
+      "evidence": "E2",
+      "rows": [
+        "V06"
+      ],
+      "finding": "phaseE.ts extractDims liest clipsContent und schreibt value/token/display; die gezielt vollständig gelesene Funktion extrahiert keine Scrollrichtung oder auto/scroll-Auswahl. BASE beschreibt erhaltene Wrapper mit Dimensionen/Clipping. STRs Overflowdefinition führt clipsContent true/false. Die konkrete Basisextraktion belegt damit Clipping, nicht eine vollständige Scrollcontainersemantik.",
+      "interpretation": "E1/E2 im beschriebenen Basis-/Strukturpfad. U bleibt für das gesamte V06-Kriterium bestehen; keine Behauptung, uSpec oder Figma könnten grundsätzlich nicht scrollen. Ein Variantenname overflow=scroll ersetzt keine fachliche Achsen-/Ausführungsdefinition.",
+      "next_check": "Andere originale Speicher-/Rendererpfade gezielt auf Scrollrichtung und Scrollcontainer prüfen; falls ein Zusatzmodell nötig ist, Clippingbeitrag und neue Scrollsemantik getrennt dokumentieren."
     }
   ],
   "candidate_reviews": [
@@ -7623,16 +7683,26 @@
       "date": "2026-10-24",
       "reviewed": 17,
       "previously_open": 17,
-      "resolved": 12,
+      "resolved": 13,
       "remaining_uncertain": [
         "V04",
-        "V05",
         "V06",
         "X01",
         "X03"
       ],
       "format_scope": "UXSpec, commit 20dfae0e7224d952e198afdf4ffed26d6fd67180; separate report with central criteria/source-role review; no execution",
-      "runtime_trials": []
+      "runtime_trials": [],
+      "initial_review_summary": {
+        "resolved": 12,
+        "remaining_uncertain": [
+          "V04",
+          "V05",
+          "V06",
+          "X01",
+          "X03"
+        ]
+      },
+      "followup_note": "24. Oktober 2026: V04/V05/V06 gezielt nachgeprüft; V05 U→A durch erweiterten Web-Renderer-Aufrufnachweis C398. Keine Ausführung."
     },
     {
       "candidate": "Ark UI",
@@ -7676,7 +7746,8 @@
         "X08"
       ],
       "format_scope": "Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen; commit 1e25e9b8bc2e694689ba0489594f38807a341f14; documented E1/E2 source review, no execution",
-      "runtime_trials": []
+      "runtime_trials": [],
+      "followup_note": "24. Oktober 2026: V04/V06 anhand Strukturreferenz, Basismodell und konkreter Phase-E-Extraktion nachgeprüft; beide bleiben U (C400/C401). Keine Ausführung."
     },
     {
       "candidate": "OpenPencil",

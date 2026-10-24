@@ -19,7 +19,9 @@ Das erste Ziel ist ein **gemeinsames Contract-Paket aus bestehenden Beschreibung
 - [Integrationsentwurf: Identität, Ownership, Komposition und Akzeptanzfälle](docs/research/INTEGRATION.md)
 - [Integrationsabgleich: vorhandene Mechanismen, zwei Instanzen und offene Bindungen](docs/research/INTEGRATION-REVIEW.md)
 - [Konkrete Feldbindungen und verbleibende Integrationsfragen](docs/research/BINDINGS.md)
-- [Register aller 73 offenen Matrixfelder mit Prioritäten](docs/research/OPEN-FIELDS.md)
+- [Register der aktuell 72 offenen Matrixfelder mit Prioritäten](docs/research/OPEN-FIELDS.md)
+- [Gezielte Folgeprüfung: UXSpecs drei offene Layoutfelder](docs/research/FOLLOWUP-UXSPEC-LAYOUT.md)
+- [Gezielte Folgeprüfung: uSpecs Anker- und Scrollfelder](docs/research/FOLLOWUP-USPEC-LAYOUT.md)
 
 ## Was wir erreichen wollen
 

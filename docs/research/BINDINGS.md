@@ -4,9 +4,9 @@ Stand: 24. Oktober 2026. Fortsetzung des [Integrationsabgleichs](INTEGRATION-REV
 
 ## 1. Verlässliche Zählung
 
-Die Matrix enthält weiterhin **73 U-Zellen**: **45 in X01–X08**, **28 in anderen Anforderungen**. Das sind offene Nachweise je Kandidat und Anforderung, keine Zahl fehlender Komponenten oder unabhängiger Probleme. Alle 16 Kandidaten-Durchgänge sind abgeschlossen. Eine zusätzliche Quellprüfung hebt eine U-Zelle nicht automatisch auf.
+Die Matrix enthält weiterhin **72 U-Zellen**: **45 in X01–X08**, **27 in anderen Anforderungen**. Das sind offene Nachweise je Kandidat und Anforderung, keine Zahl fehlender Komponenten oder unabhängiger Probleme. Alle 16 Kandidaten-Durchgänge sind abgeschlossen. Eine zusätzliche Quellprüfung hebt eine U-Zelle nicht automatisch auf.
 
-Das vollständige [Register der offenen Felder](OPEN-FIELDS.md) hält jede U-Zelle mit Befund, Frage, Priorität und nächstem Schritt fest. Es wurde aus dem gespeicherten Prüfregister abgeleitet. Triage bedeutet Einordnung, keine abgeschlossene Nachprüfung aller 73 Fragen.
+Das vollständige [Register der offenen Felder](OPEN-FIELDS.md) hält jede U-Zelle mit Befund, Frage, Priorität und nächstem Schritt fest. Es wurde aus dem gespeicherten Prüfregister abgeleitet. Triage bedeutet Einordnung, keine abgeschlossene Nachprüfung aller ursprünglichen 73 Fragen. Danach wurde UXSpec V05 gezielt als A eingeordnet; siehe [Layoutfolgeprüfung](FOLLOWUP-UXSPEC-LAYOUT.md).
 
 ## 2. Originalfelder und notwendige Bindung
 

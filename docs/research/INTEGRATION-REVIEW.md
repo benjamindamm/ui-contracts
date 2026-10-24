@@ -115,4 +115,4 @@ Dies sind erwartete Prüfergebnisse auf Papier. Keine Tabellenzeile bedeutet, da
 
 ## Fortsetzung: Originalfelder und vollständiges offenes Register
 
-Der [konkrete Feldabgleich](BINDINGS.md) präzisiert Typ-/Payloadabbildung, Einheiten und zugängliche Zielbeziehungen. Er unterscheidet aktive Option, zugänglich gemeldete Auswahl und bestätigten Produktwert. Das [offene Register](OPEN-FIELDS.md) zählt sämtliche U-Zellen: 73 insgesamt, davon 45 Integrationsfelder. Die acht priorisierten Arbeitsfragen oben sind damit keine alternative Matrixzählung.
+Der [konkrete Feldabgleich](BINDINGS.md) präzisiert Typ-/Payloadabbildung, Einheiten und zugängliche Zielbeziehungen. Er unterscheidet aktive Option, zugänglich gemeldete Auswahl und bestätigten Produktwert. Das [offene Register](OPEN-FIELDS.md) zählt sämtliche U-Zellen: ursprünglich 73 insgesamt, nach der UXSpec-Layoutfolgeprüfung aktuell 72, davon unverändert 45 Integrationsfelder. Die acht priorisierten Arbeitsfragen oben sind damit keine alternative Matrixzählung.

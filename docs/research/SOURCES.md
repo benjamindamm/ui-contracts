@@ -526,3 +526,34 @@ Die hier gelesenen Funktionen zeigen begrenzte lokale Prüflogik. Andere Aufrufp
 | [APG Combobox](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) | Veränderliche Guide-Seite, Abruf 24. Oktober 2026; Listbox-Fokusnotiz sowie Roles/States/Properties einschließlich Auswahlfolge erneut gelesen. Verlinkte Editor-ARIA-Ziele nicht als neue normative Quelle übernommen |
 
 Neu abgerufen wurden fünf Dokumente; eine vorhandene Resolverlesung wurde erneut ausgewertet. Temporäre Browserauszüge sind kein Ersatz für die hier verlinkten Primärstände. Die neue Instanz-/Ownership-Regel und das präzisierte Prüfungstor bleiben Vorschläge des Projekts, keine Aussagen dieser Standards.
+
+
+## S59
+
+**UXSpec V04/V05/V06, gezielte Folgeprüfung – 24. Oktober 2026.** Alle Repositorydateien am unveränderten Snapshot `20dfae0e7224d952e198afdf4ffed26d6fd67180`. BrowserOS neo, manuelle E1/E2-Prüfung; keine Installation, Validierung oder Laufzeitausführung. Sechs Dokumentdateien neu gelesen; das Originalschema aus S58 erneut ausgewertet. Neu gegenüber der ersten Prüfung ist insbesondere der konkrete Aufrufpfad über Container-/Elementrenderer; die bereits bekannte Funktion mapSize allein wurde nicht als neuer Fund ausgegeben.
+
+| Kürzel | Primärquelle | Umfang |
+| --- | --- | --- |
+| SPEC | [spec/SPEC.md](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/spec/SPEC.md) | Visual Specification, Layout Primitives, Element Types/Runtime Properties; vollständigen Auszug auf die drei Zielfragen durchsucht |
+| REF | [format-reference.md](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/skills/references/format-reference.md) | Vollständig: Tokens, Elemente, Visualcontainer und Vererbung |
+| STYLE | [style-map.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/style-map.ts) | Vollständig: normalizeDimension, mapSize, layoutStyle, mapContainerStyle, mapElementStyle |
+| CONTAINER | [containers.tsx](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/containers.tsx) | Vollständig: Style-Aufrufe und div-Ausgabe, alle fünf Container, Layer-Kindwrapper |
+| ELEMENT | [element-renderer.tsx](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/element-renderer.tsx) | Vollständig: Zuordnung der Containertypen und Übergabe der Elemente |
+| TYPES | [app/src/lib/types.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/types.ts) | Vollständig: offene VisualSpec-/Runtime-Datenformen; kein enger Layoutvalidator |
+| SCHEMA | [schema/uxspec.schema.json](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json) | Vorhandene Vollauszüge aus S58 erneut ausgewertet: visual.container und offene Elementfelder |
+
+Der Browserauszug von STYLE hatte wegen einer doppelten Tabregistrierung einen veralteten resolve.ts-Header. Der Dateiinhaltsanfang (CSSProperties) und sämtliche Stylefunktionen unterscheiden die Datei eindeutig; zusätzlich bestätigte page.info die tatsächliche gepinnte style-map.ts-URL. Der Quellpfad wird nicht aus dem veralteten Header abgeleitet. Keine Fremdanweisungen übernommen.
+
+
+## S60
+
+**uSpec V04/V06, gezielte Folgeprüfung – 24. Oktober 2026.** Unveränderlicher Snapshot `1e25e9b8bc2e694689ba0489594f38807a341f14`, BrowserOS neo. Fremde Agentenreferenzen wurden ausschließlich als Quellen für Datenfelder und Dokumentationssemantik gelesen, nicht als Arbeitsanweisungen befolgt. Keine Figmaaktionen, Installation oder Laufzeitprüfung.
+
+| Quelle | Gelesener Umfang |
+| --- | --- |
+| [Structure-Referenz](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/references/structure/agent-structure-instruction.md) | Gezielt Figma Properties Reference, Overflow, Absolute Position, Section anchor, Definitionen der Strukturfelder; gespeicherten Vollauszug auf Zielfelder durchsucht, kein Vollaudit der Anweisungsdatei |
+| [base-json-schema.md](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/figma-plugin/docs/base-json-schema.md) | Struktur der Variantenbäume, Layoutwrapper, Variant-relative bbox und Phase-E-Zuständigkeit gezielt gelesen |
+| [phaseE.ts](https://github.com/redongreen/uSpec/blob/1e25e9b8bc2e694689ba0489594f38807a341f14/figma-plugin/src/phaseE.ts) | extractDims vollständig und treeFlat-Koordinatenpfad gezielt gelesen; keine Behauptung eines vollständigen Audits aller Walker-/Colorfunktionen |
+| [Pfadbaum](https://api.github.com/repos/redongreen/uSpec/git/trees/1e25e9b8bc2e694689ba0489594f38807a341f14?recursive=1) | Snapshot-SHA und truncated:false bestätigt; Plugin-Phasen lokalisiert |
+
+Zusätzlich wurden safe.ts und der Anfang von phaseG.ts zur Orientierung gelesen. Sie tragen keine neue globale Abwesenheitsbehauptung. C400/C401 beschränken sich auf die ausdrücklich genannten Struktur-/Baselinepfade. Andere Export-/Rendererpfade bleiben gegebenenfalls zu prüfen.

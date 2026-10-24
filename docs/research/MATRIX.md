@@ -1,12 +1,14 @@
 # Anforderungsorientierte Abdeckungsmatrix
 
-Stand: 23. Oktober 2026. **Erste Untersuchung mit bewusst offenen Zellen.** Anforderungen stehen links, Kandidaten als Spalten. Zwei Spaltenblöcke je Abschnitt dienen nur der Lesbarkeit; dieselbe Anforderung gilt in beiden Blöcken. Die Kandidaten sind Beiträge unterschiedlicher Art, keine gleichartigen Komplettlösungen.
+Stand: 24. Oktober 2026. **Kandidaten-Durchgänge und gezielte Folgeprüfungen, weiterhin mit offenen Zellen.** Anforderungen stehen links, Kandidaten als Spalten. Zwei Spaltenblöcke je Abschnitt dienen nur der Lesbarkeit; dieselbe Anforderung gilt in beiden Blöcken. Die Kandidaten sind Beiträge unterschiedlicher Art, keine gleichartigen Komplettlösungen.
 
 Vor Verwendung lesen: [Kriterien und Herkunft](REQUIREMENTS.md), [Methode](METHODS.md), [Quellenstände](SOURCES.md), [Begründungen](CLAIMS.md).
 
 **D** direkt · **R** über Referenz · **A** Adapter erforderlich · **N** im geprüften Umfang nicht abgedeckt · **U** ungeprüft. Ein Link wie D/C07 enthält Befund, Evidenzstufe und Grenze. Alle Bewertungen sind E1 oder E2, keine E3. U bedeutet fehlende Untersuchung, keine negative Eigenschaft. Es ist kein Kandidat bereits als Gesamtlösung ausgewählt.
 
 Bei DTCG umfasst die Spalte Format **und** separat belegtes Resolver Module 2025.10. CSS Layout umfasst die getrennten Quellen zu Anchor Positioning und Overflow. Die Verknüpfung beider ist nicht getestet. OpenPencil bezeichnet nur den untersuchten Behaviour-Beitrag. Bei D in einem spezialisierten Modell bleibt dessen technische Bindung bestehen; daraus folgt keine Abdeckung von G02 oder X03.
+
+**Aktueller Reststand:** 72 U-Zellen, davon 45 Integration und 27 weitere. Die gezielte Layoutfolgeprüfung hat fünf Felder nachgeprüft und UXSpec V05 von U auf A eingeordnet; keine Laufzeitversuche. [Offenes Register](OPEN-FIELDS.md).
 
 ## CEM auf einen Blick – vertieft geprüft
 
@@ -89,7 +91,7 @@ Kein eigenes öffentliches API-/UX-/Accessibility-Modell, keine formale Anker-/F
 
 ## UXSpec auf einen Blick – vertieft geprüft
 
-**12 der tatsächlich 17 zuvor offenen Felder geklärt; V04/V05/V06/X01/X03 bleiben offen.** Neun D waren bereits vorhanden; die frühere Chatangabe „19/27“ wird nicht übernommen. Verteilung D14/R2/N5/U5.
+**Nach gezielter Folgeprüfung sind 13 der tatsächlich 17 zuvor offenen Felder eingeordnet; V04/V06/X01/X03 bleiben U.** Die erste Runde hatte 12 geklärt. V05 ist jetzt A: Der konkrete Webadapterpfad für size.maxHeight/maxWidth ist belegt, eine neutrale Bindung bleibt nötig (C398). Neun D waren bereits vorhanden; die frühere Chatangabe „19/27“ wird nicht übernommen. Aktuelle Verteilung D14/R2/A1/N5/U4.
 
 UXSpec beschreibt JSON-Verhalten, typisierte Host-Eingaben und eingehende Ereignispayloads, strukturierte visuelle Werte/Varianten sowie parametrisierte Elemente. ARIA-Attribute und live:polite sind explizite Referenzbeiträge (R), kein eigenes vollständiges Accessibility-Patternmodell. `$visual` ist im Originalschema optional. Das beweist noch kein vollständiges getrenntes Vier-Domänen-Paket. Formale neutrale Overlay-/Flächen-/Overflowsemantik bleibt offen.
 
@@ -190,9 +192,9 @@ Basis: Anchor **WD 27.03.2026**, Overflow **WD 07.10.2025**, Syntax **CRD 01.10.
 | V01 Typisierte Designwerte | [R/C38](CLAIMS.md#c38) | [N/C135](CLAIMS.md#c135) | [D/C109](CLAIMS.md#c109) | [D/C161](CLAIMS.md#c161) | [D/C14](CLAIMS.md#c14) | [D/C187](CLAIMS.md#c187) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
 | V02 Visuelle Zustandsvarianten | [N/C39](CLAIMS.md#c39) | [N/C136](CLAIMS.md#c136) | [D/C110](CLAIMS.md#c110) | [D/C162](CLAIMS.md#c162) | [D/C50](CLAIMS.md#c50) | [D/C188](CLAIMS.md#c188) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
 | V03 Themes und Dark Mode | [N/C39](CLAIMS.md#c39) | [N/C137](CLAIMS.md#c137) | [N/C111](CLAIMS.md#c111) | [D/C163](CLAIMS.md#c163) | [D/C15](CLAIMS.md#c15) | [N/C189](CLAIMS.md#c189) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
-| V04 Formale relative Geometrie | [N/C40](CLAIMS.md#c40) | [N/C138](CLAIMS.md#c138) | [N/C112](CLAIMS.md#c112) | [N/C164](CLAIMS.md#c164) | [N/C51](CLAIMS.md#c51) | [U/C190](CLAIMS.md#c190) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
-| V05 Formale Flächenbegrenzung | [N/C40](CLAIMS.md#c40) | [N/C139](CLAIMS.md#c139) | [N/C113](CLAIMS.md#c113) | [N/C165](CLAIMS.md#c165) | [N/C51](CLAIMS.md#c51) | [U/C191](CLAIMS.md#c191) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
-| V06 Overflow und Scrollen | [N/C40](CLAIMS.md#c40) | [N/C140](CLAIMS.md#c140) | [N/C114](CLAIMS.md#c114) | [N/C166](CLAIMS.md#c166) | [N/C51](CLAIMS.md#c51) | [U/C192](CLAIMS.md#c192) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V04 Formale relative Geometrie | [N/C40](CLAIMS.md#c40) | [N/C138](CLAIMS.md#c138) | [N/C112](CLAIMS.md#c112) | [N/C164](CLAIMS.md#c164) | [N/C51](CLAIMS.md#c51) | [U/C397](CLAIMS.md#c397) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V05 Formale Flächenbegrenzung | [N/C40](CLAIMS.md#c40) | [N/C139](CLAIMS.md#c139) | [N/C113](CLAIMS.md#c113) | [N/C165](CLAIMS.md#c165) | [N/C51](CLAIMS.md#c51) | [A/C398](CLAIMS.md#c398) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
+| V06 Overflow und Scrollen | [N/C40](CLAIMS.md#c40) | [N/C140](CLAIMS.md#c140) | [N/C114](CLAIMS.md#c114) | [N/C166](CLAIMS.md#c166) | [N/C51](CLAIMS.md#c51) | [U/C399](CLAIMS.md#c399) | [N/C61](CLAIMS.md#c61) | [N/C74](CLAIMS.md#c74) |
 
 ### Kandidatenblock 2
 
@@ -201,9 +203,9 @@ Basis: Anchor **WD 27.03.2026**, Overflow **WD 07.10.2025**, Syntax **CRD 01.10.
 | V01 Typisierte Designwerte | [D/C88](CLAIMS.md#c88) | [R/C213](CLAIMS.md#c213) | [D/C239](CLAIMS.md#c239) | [D/C265](CLAIMS.md#c265) | [U/C291](CLAIMS.md#c291) | [N/C317](CLAIMS.md#c317) | [N/C343](CLAIMS.md#c343) | [R/C369](CLAIMS.md#c369) |
 | V02 Visuelle Zustandsvarianten | [R/C89](CLAIMS.md#c89) | [R/C214](CLAIMS.md#c214) | [D/C240](CLAIMS.md#c240) | [D/C266](CLAIMS.md#c266) | [A/C292](CLAIMS.md#c292) | [R/C318](CLAIMS.md#c318) | [N/C344](CLAIMS.md#c344) | [N/C370](CLAIMS.md#c370) |
 | V03 Themes und Dark Mode | [N/C90](CLAIMS.md#c90) | [N/C215](CLAIMS.md#c215) | [D/C241](CLAIMS.md#c241) | [D/C267](CLAIMS.md#c267) | [U/C293](CLAIMS.md#c293) | [N/C319](CLAIMS.md#c319) | [N/C345](CLAIMS.md#c345) | [U/C371](CLAIMS.md#c371) |
-| V04 Formale relative Geometrie | [D/C91](CLAIMS.md#c91) | [R/C216](CLAIMS.md#c216) | [R/C242](CLAIMS.md#c242) | [U/C268](CLAIMS.md#c268) | [U/C294](CLAIMS.md#c294) | [N/C320](CLAIMS.md#c320) | [N/C346](CLAIMS.md#c346) | [D/C372](CLAIMS.md#c372) |
+| V04 Formale relative Geometrie | [D/C91](CLAIMS.md#c91) | [R/C216](CLAIMS.md#c216) | [R/C242](CLAIMS.md#c242) | [U/C400](CLAIMS.md#c400) | [U/C294](CLAIMS.md#c294) | [N/C320](CLAIMS.md#c320) | [N/C346](CLAIMS.md#c346) | [D/C372](CLAIMS.md#c372) |
 | V05 Formale Flächenbegrenzung | [D/C92](CLAIMS.md#c92) | [R/C217](CLAIMS.md#c217) | [D/C243](CLAIMS.md#c243) | [D/C269](CLAIMS.md#c269) | [U/C295](CLAIMS.md#c295) | [N/C321](CLAIMS.md#c321) | [N/C347](CLAIMS.md#c347) | [R/C373](CLAIMS.md#c373) |
-| V06 Overflow und Scrollen | [D/C93](CLAIMS.md#c93) | [R/C218](CLAIMS.md#c218) | [D/C244](CLAIMS.md#c244) | [U/C270](CLAIMS.md#c270) | [U/C296](CLAIMS.md#c296) | [U/C322](CLAIMS.md#c322) | [N/C348](CLAIMS.md#c348) | [D/C374](CLAIMS.md#c374) |
+| V06 Overflow und Scrollen | [D/C93](CLAIMS.md#c93) | [R/C218](CLAIMS.md#c218) | [D/C244](CLAIMS.md#c244) | [U/C401](CLAIMS.md#c401) | [U/C296](CLAIMS.md#c296) | [U/C322](CLAIMS.md#c322) | [N/C348](CLAIMS.md#c348) | [D/C374](CLAIMS.md#c374) |
 
 ## Behavior
 
