@@ -54,3 +54,17 @@ iOS, Android und weitere native Ziele sind nach Nutzerfestlegung Zukunftsmusik. 
 [Abschlussübersicht mit Lesereihenfolge und Datenzuordnung](docs/research/RESEARCH-CLOSEOUT.md).
 
 Auf Nutzerauftrag abgeschlossen: gemeinsame Vorschläge, statische Bindung, Lifecyclefolgevarianten und konkreter Browserlauf sind gesichert und abgeglichen. Es startet keine weitere Runde. Die zwei Originalklärungen und stärkere universelle/native/Assistenztechnik-Nachweise bleiben als Grenzen offen; sie sind nicht als erledigt markiert. [Abschlussbericht](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md) · [Ziel und Einschätzung](docs/research/ARCHITECTURE-DIRECTION.md). Abschlussstand auf Nutzerauftrag zur Versionierung und Übertragung auf origin/main freigegeben.
+
+## Neue Anwendungsphase: Definitionsbibliothek
+
+Die abgeschlossene Recherche wird nicht umgeschrieben. Die neue Phase beginnt mit Komponentenbeschreibungen unter components/; HTML/TypeScript und OpenPencil sind abgeleitete Ziele.
+
+- [x] Autocomplete mit getrennten Interface-/Visual-/Behavior-/Accessibilityquellen und wiederverwendbaren Overlay-/ScrollArea-Definitionen anlegen.
+- [x] Den Definitionsstand vor dem unabhängigen Export einfrieren und Originalschema-Vorläufe dokumentieren.
+- [x] Ein Agent ohne übernommenen Gesprächskontext erzeugt nur aus der Definition ein editierbares OpenPencil-Design.
+- [x] Originaldatei, Zustände und Maße unabhängig gegen den eingefrorenen Stand prüfen; Lücken erhalten. [Ergebnis](examples/autocomplete/review/REPORT.md): zehn Fälle, 164 Originalreader-Knoten; strukturelle Prüfungen erfüllt.
+- [ ] Popup-Meldungspadding und den Zeilenzählfehler ausdrücklich in einer neuen Definitionsrevision klären. Erste Version unverändert erhalten.
+- [ ] Sichtbare Desktop-GUI-Öffnung bei verfügbarem entsperrtem Gerät nachholen; Originalparser-Reimport und PNG-Export bereits erfolgt.
+- [ ] Anschließend HTML-/TypeScript-Ausgabe aus demselben Definitionsstand erstellen und gemeinsame Änderungen vergleichen.
+
+Erster OpenPencil-Umfang: editierbares Design, ausdrücklich keine interaktive Combobox-Preview.

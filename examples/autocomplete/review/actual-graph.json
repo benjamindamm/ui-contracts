@@ -1,0 +1,4390 @@
+{
+  "pages": [
+    {
+      "id": "0:3",
+      "name": "Autocomplete · Definitionsbibliothek"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "0:1",
+      "name": "Document",
+      "type": "FRAME",
+      "parentId": null,
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:3",
+      "name": "Autocomplete · Definitionsbibliothek",
+      "type": "CANVAS",
+      "parentId": "0:1",
+      "x": 0,
+      "y": 0,
+      "width": 100,
+      "height": 100,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:4",
+      "name": "Autocomplete — zehn benannte Fälle",
+      "type": "FRAME",
+      "parentId": "0:3",
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 1640,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:5",
+      "name": "Seitentitel",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 24,
+      "width": 1100,
+      "height": 20,
+      "visible": true,
+      "text": "Autocomplete · 0.1.0",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:6",
+      "name": "Hinweis",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 48,
+      "width": 1100,
+      "height": 20,
+      "visible": true,
+      "text": "Editierbare Zustände aus components/ · statische Darstellung",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:7",
+      "name": "Falltitel / closed",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 110,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "closed",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:8",
+      "name": "Autocomplete / closed",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 142,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:9",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:8",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:10",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:8",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.7960784435272217,
+            "g": 0.8352941274642944,
+            "b": 0.8823529481887817,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:11",
+      "name": "placeholder",
+      "type": "TEXT",
+      "parentId": "0:10",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt suchen …",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:12",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:8",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 32,
+      "visible": false,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:13",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:12",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:14",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:13",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:15",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:14",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 0,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:16",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:8",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:17",
+      "name": "Falltitel / opening",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 440,
+      "y": 110,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "opening",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:18",
+      "name": "Autocomplete / opening",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 440,
+      "y": 142,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:19",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:18",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:20",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:18",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.14509804546833038,
+            "g": 0.38823530077934265,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:21",
+      "name": "placeholder",
+      "type": "TEXT",
+      "parentId": "0:20",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt suchen …",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:22",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:18",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 32,
+      "visible": false,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:23",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:22",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:24",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:23",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:25",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:24",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 0,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:26",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:18",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Suche wird geöffnet.",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:27",
+      "name": "Falltitel / loading",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 840,
+      "y": 110,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "loading",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:28",
+      "name": "Autocomplete / loading",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 840,
+      "y": 142,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:29",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:28",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:30",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:28",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.14509804546833038,
+            "g": 0.38823530077934265,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:31",
+      "name": "query",
+      "type": "TEXT",
+      "parentId": "0:30",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Be",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:32",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:28",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:33",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:32",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:34",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:33",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:35",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:34",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 0,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:36",
+      "name": "popup.message",
+      "type": "TEXT",
+      "parentId": "0:34",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Städte werden geladen.",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:37",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:28",
+      "x": 0,
+      "y": 120,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Städte werden geladen.",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:38",
+      "name": "Falltitel / ready",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 490,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "ready",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:39",
+      "name": "Autocomplete / ready",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 522,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:40",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:39",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:41",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:39",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.14509804546833038,
+            "g": 0.38823530077934265,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:42",
+      "name": "placeholder",
+      "type": "TEXT",
+      "parentId": "0:41",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt suchen …",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:43",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:39",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 160,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:44",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:43",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 160,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:45",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:44",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:46",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:45",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:47",
+      "name": "option / berlin · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:46",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:48",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:47",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Berlin",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:49",
+      "name": "option / hamburg · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:46",
+      "x": 0,
+      "y": 32,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:50",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:49",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Hamburg",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:51",
+      "name": "option / muenchen · selected=false · disabled=true",
+      "type": "FRAME",
+      "parentId": "0:46",
+      "x": 0,
+      "y": 64,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:52",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:51",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "München",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.6392157077789307,
+            "b": 0.7215686440467834,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:53",
+      "name": "option / dresden · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:46",
+      "x": 0,
+      "y": 96,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:54",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:53",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Dresden",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:55",
+      "name": "option / koeln · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:46",
+      "x": 0,
+      "y": 128,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:56",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:55",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Köln",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:57",
+      "name": "option / wien · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:46",
+      "x": 0,
+      "y": 160,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:58",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:57",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Wien",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:59",
+      "name": "option / zuerich · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:46",
+      "x": 0,
+      "y": 192,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:60",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:59",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Zürich",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:61",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:39",
+      "x": 0,
+      "y": 248,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "7 Städte verfügbar.",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:62",
+      "name": "Falltitel / active",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 440,
+      "y": 490,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "active",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:63",
+      "name": "Autocomplete / active",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 440,
+      "y": 522,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:64",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:63",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:65",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:63",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.14509804546833038,
+            "g": 0.38823530077934265,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:66",
+      "name": "placeholder",
+      "type": "TEXT",
+      "parentId": "0:65",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt suchen …",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:67",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:63",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 160,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:68",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:67",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 160,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:69",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:68",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:70",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:69",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:71",
+      "name": "option / berlin · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:70",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:72",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:71",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Berlin",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:73",
+      "name": "option / hamburg · selected=true · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:70",
+      "x": 0,
+      "y": 32,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.9176470637321472,
+            "g": 0.9490196108818054,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:74",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:73",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Hamburg",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:75",
+      "name": "option / muenchen · selected=false · disabled=true",
+      "type": "FRAME",
+      "parentId": "0:70",
+      "x": 0,
+      "y": 64,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:76",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:75",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "München",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.6392157077789307,
+            "b": 0.7215686440467834,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:77",
+      "name": "option / dresden · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:70",
+      "x": 0,
+      "y": 96,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:78",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:77",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Dresden",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:79",
+      "name": "option / koeln · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:70",
+      "x": 0,
+      "y": 128,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:80",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:79",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Köln",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:81",
+      "name": "option / wien · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:70",
+      "x": 0,
+      "y": 160,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:82",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:81",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Wien",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:83",
+      "name": "option / zuerich · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:70",
+      "x": 0,
+      "y": 192,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:84",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:83",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Zürich",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:85",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:63",
+      "x": 0,
+      "y": 248,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "7 Städte verfügbar.",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:86",
+      "name": "Falltitel / scroll-end",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 840,
+      "y": 490,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "scroll-end",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:87",
+      "name": "Autocomplete / scroll-end",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 840,
+      "y": 522,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:88",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:87",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:89",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:87",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.14509804546833038,
+            "g": 0.38823530077934265,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:90",
+      "name": "placeholder",
+      "type": "TEXT",
+      "parentId": "0:89",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt suchen …",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:91",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:87",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 160,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:92",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:91",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 160,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:93",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:92",
+      "x": 0,
+      "y": -64,
+      "width": 320,
+      "height": 224,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:94",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:93",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:95",
+      "name": "option / berlin · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:94",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:96",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:95",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Berlin",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:97",
+      "name": "option / hamburg · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:94",
+      "x": 0,
+      "y": 32,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:98",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:97",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Hamburg",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:99",
+      "name": "option / muenchen · selected=false · disabled=true",
+      "type": "FRAME",
+      "parentId": "0:94",
+      "x": 0,
+      "y": 64,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:100",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:99",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "München",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.6392157077789307,
+            "b": 0.7215686440467834,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:101",
+      "name": "option / dresden · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:94",
+      "x": 0,
+      "y": 96,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:102",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:101",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Dresden",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:103",
+      "name": "option / koeln · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:94",
+      "x": 0,
+      "y": 128,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:104",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:103",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Köln",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:105",
+      "name": "option / wien · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:94",
+      "x": 0,
+      "y": 160,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:106",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:105",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Wien",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:107",
+      "name": "option / zuerich · selected=true · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:94",
+      "x": 0,
+      "y": 192,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.9176470637321472,
+            "g": 0.9490196108818054,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:108",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:107",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Zürich",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:109",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:87",
+      "x": 0,
+      "y": 248,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "7 Städte verfügbar.",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:110",
+      "name": "Falltitel / selected",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 870,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "selected",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:111",
+      "name": "Autocomplete / selected",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 902,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:112",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:111",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:113",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:111",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.7960784435272217,
+            "g": 0.8352941274642944,
+            "b": 0.8823529481887817,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:114",
+      "name": "query",
+      "type": "TEXT",
+      "parentId": "0:113",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Berlin",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:115",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:111",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 32,
+      "visible": false,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:116",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:115",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:117",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:116",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:118",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:117",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:119",
+      "name": "option / berlin · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:118",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:120",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:119",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Berlin",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:121",
+      "name": "option / hamburg · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:118",
+      "x": 0,
+      "y": 32,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:122",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:121",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Hamburg",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:123",
+      "name": "option / muenchen · selected=false · disabled=true",
+      "type": "FRAME",
+      "parentId": "0:118",
+      "x": 0,
+      "y": 64,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:124",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:123",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "München",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.6392157077789307,
+            "b": 0.7215686440467834,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:125",
+      "name": "option / dresden · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:118",
+      "x": 0,
+      "y": 96,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:126",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:125",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Dresden",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:127",
+      "name": "option / koeln · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:118",
+      "x": 0,
+      "y": 128,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:128",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:127",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Köln",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:129",
+      "name": "option / wien · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:118",
+      "x": 0,
+      "y": 160,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:130",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:129",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Wien",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:131",
+      "name": "option / zuerich · selected=false · disabled=false",
+      "type": "FRAME",
+      "parentId": "0:118",
+      "x": 0,
+      "y": 192,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:132",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:131",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Zürich",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:133",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:111",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Ausgewählt: Berlin.",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:134",
+      "name": "Falltitel / empty",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 440,
+      "y": 870,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "empty",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:135",
+      "name": "Autocomplete / empty",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 440,
+      "y": 902,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:136",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:135",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:137",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:135",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.14509804546833038,
+            "g": 0.38823530077934265,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:138",
+      "name": "query",
+      "type": "TEXT",
+      "parentId": "0:137",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Atlantis",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:139",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:135",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:140",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:139",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:141",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:140",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:142",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:141",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 0,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:143",
+      "name": "popup.message",
+      "type": "TEXT",
+      "parentId": "0:141",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Keine Städte gefunden.",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:144",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:135",
+      "x": 0,
+      "y": 120,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Keine Städte gefunden.",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:145",
+      "name": "Falltitel / error",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 840,
+      "y": 870,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "error",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:146",
+      "name": "Autocomplete / error",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 840,
+      "y": 902,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:147",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:146",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:148",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:146",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.14509804546833038,
+            "g": 0.38823530077934265,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:149",
+      "name": "query",
+      "type": "TEXT",
+      "parentId": "0:148",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Be",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:150",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:146",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:151",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:150",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:152",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:151",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:153",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:152",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 0,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:154",
+      "name": "popup.message",
+      "type": "TEXT",
+      "parentId": "0:152",
+      "x": 12,
+      "y": 6,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Städte konnten nicht geladen werden.",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:155",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:146",
+      "x": 0,
+      "y": 120,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Städte konnten nicht geladen werden.",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.7254902124404907,
+            "g": 0.10980392247438431,
+            "b": 0.10980392247438431,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:156",
+      "name": "Falltitel / disabled",
+      "type": "TEXT",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 1250,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "disabled",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:157",
+      "name": "Autocomplete / disabled",
+      "type": "FRAME",
+      "parentId": "0:4",
+      "x": 40,
+      "y": 1282,
+      "width": 320,
+      "height": 300,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:158",
+      "name": "label",
+      "type": "TEXT",
+      "parentId": "0:157",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt auswählen",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.09019608050584793,
+            "g": 0.16862745583057404,
+            "b": 0.3019607961177826,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:159",
+      "name": "input · role=combobox",
+      "type": "FRAME",
+      "parentId": "0:157",
+      "x": 0,
+      "y": 28,
+      "width": 320,
+      "height": 44,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.7960784435272217,
+            "g": 0.8352941274642944,
+            "b": 0.8823529481887817,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "weight": 1,
+          "align": "INSIDE",
+          "cap": "NONE",
+          "join": "MITER",
+          "dashPattern": []
+        }
+      ],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:160",
+      "name": "placeholder",
+      "type": "TEXT",
+      "parentId": "0:159",
+      "x": 12,
+      "y": 12,
+      "width": 296,
+      "height": 20,
+      "visible": true,
+      "text": "Stadt suchen …",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:161",
+      "name": "overlay.surface",
+      "type": "FRAME",
+      "parentId": "0:157",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 32,
+      "visible": false,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 8,
+      "clipsContent": false
+    },
+    {
+      "id": "0:162",
+      "name": "overlay.scroll.viewport · clipped",
+      "type": "FRAME",
+      "parentId": "0:161",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": true
+    },
+    {
+      "id": "0:163",
+      "name": "overlay.scroll.content",
+      "type": "FRAME",
+      "parentId": "0:162",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 32,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:164",
+      "name": "list · role=listbox",
+      "type": "FRAME",
+      "parentId": "0:163",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 0,
+      "visible": true,
+      "text": "",
+      "fontSize": 14,
+      "fontFamily": "Inter",
+      "fills": [],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    },
+    {
+      "id": "0:165",
+      "name": "status · role=status · aria-live=polite",
+      "type": "TEXT",
+      "parentId": "0:157",
+      "x": 0,
+      "y": 80,
+      "width": 320,
+      "height": 20,
+      "visible": true,
+      "text": "",
+      "fontSize": 12,
+      "fontFamily": "Inter",
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.45490196347236633,
+            "b": 0.545098066329956,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL"
+        }
+      ],
+      "strokes": [],
+      "cornerRadius": 0,
+      "clipsContent": false
+    }
+  ]
+}

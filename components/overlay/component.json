@@ -1,0 +1,23 @@
+{
+  "format": "ui-contract-component-draft",
+  "id": "ui-contracts:Overlay",
+  "version": "0.1.0",
+  "status": "supporting-definition",
+  "domains": {
+    "interface": "interface.json",
+    "visual": {
+      "tokens": "../tokens.json",
+      "css": "layout.css"
+    },
+    "behavior": "behavior.scxml",
+    "accessibility": {
+      "html": "accessibility.html"
+    }
+  },
+  "responsibility": "Popup surface and its own ScrollArea lifecycle; no independent search/selection state.",
+  "composition": {
+    "scroll": {
+      "component": "../scroll-area/component.json"
+    }
+  }
+}

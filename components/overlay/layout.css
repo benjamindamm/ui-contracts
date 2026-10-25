@@ -1,0 +1,13 @@
+/* Anchor is the owning Autocomplete input; resolve --ac-* from the shared tokens. */
+[data-part="surface"] {
+  position: absolute;
+  top: anchor(bottom);
+  left: anchor(left);
+  width: anchor-size(width);
+  margin-top: var(--ac-gap);
+  background: var(--ac-surface);
+  border: 0;
+  border-radius: var(--ac-radius);
+  box-shadow: 0 2px 8px #0003;
+  z-index: 10;
+}

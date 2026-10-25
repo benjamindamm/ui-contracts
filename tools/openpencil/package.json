@@ -1,0 +1,27 @@
+{
+  "name": "ui-contracts-openpencil-toolchain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pinned local tooling for exporting editable OpenPencil documents.",
+  "scripts": {
+    "openpencil": "openpencil"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.12.1",
+    "@open-pencil/cli": "0.16.0",
+    "@open-pencil/core": "0.16.0",
+    "@open-pencil/dom-css": "0.16.0",
+    "@open-pencil/scene-graph": "0.16.0",
+    "@scion-scxml/scxml": "4.3.28"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.6",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "@open-pencil/core": "0.16.0",
+    "@open-pencil/dom-css": "0.16.0",
+    "@open-pencil/scene-graph": "0.16.0"
+  }
+}

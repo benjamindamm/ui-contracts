@@ -1,0 +1,15 @@
+{
+  "kind": "ui-contract-library-draft",
+  "name": "UI Contracts",
+  "version": "0.1.0",
+  "status": "first-authoring-proof",
+  "components": {
+    "Autocomplete": "autocomplete/component.json",
+    "Overlay": "overlay/component.json",
+    "ScrollArea": "scroll-area/component.json"
+  },
+  "targets": {
+    "openpencil": "Editable design states first; interactive preview is outside this proof.",
+    "web": "HTML and TypeScript generated from these same definitions in a later comparison."
+  }
+}

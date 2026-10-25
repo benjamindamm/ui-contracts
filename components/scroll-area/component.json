@@ -1,0 +1,18 @@
+{
+  "format": "ui-contract-component-draft",
+  "id": "ui-contracts:ScrollArea",
+  "version": "0.1.0",
+  "status": "supporting-definition",
+  "domains": {
+    "interface": "interface.json",
+    "visual": {
+      "tokens": "../tokens.json",
+      "css": "layout.css"
+    },
+    "behavior": "behavior.scxml",
+    "accessibility": {
+      "html": "accessibility.html"
+    }
+  },
+  "responsibility": "Clipping/scroll viewport and actual reveal measurement; no independent choice or commit."
+}

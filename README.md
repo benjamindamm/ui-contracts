@@ -117,6 +117,8 @@ Die vollständige Recherche liegt in **[`docs/research/`](docs/research/)**. Akt
 
 ## Weiterarbeit
 
+**Erster Bibliothekseintrag:** Die [Definitionsbibliothek](components/README.md) beginnt mit [Autocomplete](components/autocomplete/README.md), Overlay und ScrollArea. Ein [eigenständiger Design-Proof](examples/autocomplete/README.md) hat einen neuen Agenten ohne übernommenen Gesprächsverlauf daraus ein editierbares OpenPencil-Dokument erstellen lassen. Die Originaldatei wurde unabhängig geprüft; aufgedeckte Definitionslücken bleiben dokumentiert. Die Definitionen führen; Zielartefakte werden daraus erzeugt.
+
 Die Forschungsgrundlage, konkrete Referenzdateien und ein ausgeführter Webforschungs-Host liegen vor. Eine produktive Komponentenbibliothek ist noch nicht umgesetzt. Vor der Produktumsetzung sind insbesondere Bindungssyntax, allgemeiner Resolver und der verbindliche fachliche Umfang festzulegen.
 
 Später können spezialisierte Skills die vier Domänen bearbeiten. Sie sollen Quellführung und Konfliktregeln respektieren; Stabilität und Reifegrad der gewählten Beiträge bleiben Auswahlkriterien. Solche Skills sind hier noch nicht erstellt.

@@ -1,0 +1,19 @@
+{
+  "agentTask": "/root/cold_openpencil_autocomplete",
+  "historyInheritance": "none",
+  "permittedDefinitionRoot": "components/",
+  "permittedTechnicalInputs": "Original OpenPencil documentation and tools/openpencil dependencies",
+  "excludedInputs": [
+    "docs/research/",
+    "previous renderings",
+    "previous web research host",
+    "other example files",
+    "review files"
+  ],
+  "outputRoot": "examples/autocomplete/output/openpencil/",
+  "definitionEditsAllowed": false,
+  "interactivePreviewRequired": false,
+  "filesystemSandboxEnforced": false,
+  "actualAgentSourceList": "../output/openpencil/verification.json",
+  "independentReview": "independent-results.json"
+}
