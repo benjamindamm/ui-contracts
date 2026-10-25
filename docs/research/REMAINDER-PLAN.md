@@ -1,6 +1,6 @@
 # Aktuelle Restplanqueue
 
-Stand:25. Oktober2026. **2 offene Zellen**, 543 Claims, 641 Bedingungen/102 Gruppen. Diese Tabellen werden ausschließlich aus den aktuellen U-Schlüsseln in study.json und REMAINDER-PLAN.json abgeleitet.
+Stand:25. Oktober2026. **2 offene Zellen**, 543 Claims, 702 Bedingungen/106 Gruppen. Diese Tabellen werden ausschließlich aus den aktuellen U-Schlüsseln in study.json und REMAINDER-PLAN.json abgeleitet.
 
 0 unabhängig untersuchbare Fragen,2 konkrete Originalklärungen; keine Zusage, dass die Untersuchung positiv schließen wird. Die [46er Baseline](REMAINDER-BASELINE.md) und [historischen Zwischenstände](REMAINDER-PLAN-HISTORY.md) sind separat erhalten.
 

@@ -1,0 +1,144 @@
+{
+  "status": "preregistered-before-execution",
+  "scope": "Static four-domain research package with three definitions; no full host/runtime acceptance",
+  "cases": [
+    {
+      "id": "ST-01",
+      "mutation": "baseline",
+      "expected": "ACCEPT"
+    },
+    {
+      "id": "ST-02",
+      "mutation": "valid-values",
+      "expected": "ACCEPT"
+    },
+    {
+      "id": "ST-03",
+      "mutation": "omit-optionals",
+      "expected": "ACCEPT"
+    },
+    {
+      "id": "ST-04",
+      "mutation": "missing-label",
+      "expected": "TYPE_MISMATCH"
+    },
+    {
+      "id": "ST-05",
+      "mutation": "wrong-query-type",
+      "expected": "TYPE_MISMATCH"
+    },
+    {
+      "id": "ST-06",
+      "mutation": "null-optional-value",
+      "expected": "TYPE_MISMATCH"
+    },
+    {
+      "id": "ST-07",
+      "mutation": "duplicate-keys",
+      "expected": "DATA_KEY_CONFLICT"
+    },
+    {
+      "id": "ST-08",
+      "mutation": "nonfinite-number",
+      "expected": "TYPE_MISMATCH"
+    },
+    {
+      "id": "ST-09",
+      "mutation": "missing-target",
+      "expected": "TARGET_MISSING"
+    },
+    {
+      "id": "ST-10",
+      "mutation": "foreign-instance",
+      "expected": "INSTANCE_MISMATCH"
+    },
+    {
+      "id": "ST-11",
+      "mutation": "wrong-namespace",
+      "expected": "DEFINITION_MISMATCH"
+    },
+    {
+      "id": "ST-12",
+      "mutation": "wrong-source-hash",
+      "expected": "SOURCE_MISMATCH"
+    },
+    {
+      "id": "ST-13",
+      "mutation": "unsupported-version",
+      "expected": "UNSUPPORTED"
+    },
+    {
+      "id": "ST-14",
+      "mutation": "event-type-conflict",
+      "expected": "TYPE_BINDING_CONFLICT"
+    },
+    {
+      "id": "ST-15",
+      "mutation": "recursive-use",
+      "expected": "UNSUPPORTED"
+    },
+    {
+      "id": "ST-16",
+      "mutation": "unsupported-type",
+      "expected": "UNSUPPORTED"
+    },
+    {
+      "id": "ST-17",
+      "mutation": "wrong-target-kind",
+      "expected": "TARGET_KIND_MISMATCH"
+    },
+    {
+      "id": "ST-18",
+      "mutation": "invalid-original-cem",
+      "expected": "ORIGINAL_INVALID"
+    },
+    {
+      "id": "ST-19",
+      "mutation": "invalid-original-scxml",
+      "expected": "ORIGINAL_INVALID"
+    },
+    {
+      "id": "ST-20",
+      "mutation": "unsupported-token-unit",
+      "expected": "UNSUPPORTED"
+    },
+    {
+      "id": "ST-21",
+      "mutation": "wrong-default-type",
+      "expected": "TYPE_MISMATCH"
+    },
+    {
+      "id": "ST-22",
+      "mutation": "token-alias-cycle",
+      "expected": "TOKEN_ALIAS_CYCLE"
+    },
+    {
+      "id": "ST-23",
+      "mutation": "missing-relation",
+      "expected": "BINDING_INCOMPLETE"
+    },
+    {
+      "id": "ST-24",
+      "mutation": "unexpected-record-field",
+      "expected": "TYPE_MISMATCH"
+    },
+    {
+      "id": "ST-25",
+      "mutation": "target-revision-mismatch",
+      "expected": "REVISION_MISMATCH"
+    },
+    {
+      "id": "ST-26",
+      "mutation": "missing-visual-token-target",
+      "expected": "TARGET_MISSING"
+    },
+    {
+      "id": "ST-27",
+      "mutation": "visual-css-conflict",
+      "expected": "VISUAL_BINDING_CONFLICT"
+    }
+  ],
+  "integrity": "All semantic mutations receive recomputed file hashes and resolved bundle revision. ST-12 alone intentionally retains an incorrect source hash. Each case is a mutation of the same baseline closure.",
+  "late_registration": "ST-25 registered before its first execution to separate a semantic target-revision mismatch from ST-12 source-integrity failure; 24 original expectations unchanged.",
+  "visual_registration": "ST-26/ST-27 registered before first execution after adding explicit DTCG-to-CSS-declaration relationships; no native layout claim."
+}

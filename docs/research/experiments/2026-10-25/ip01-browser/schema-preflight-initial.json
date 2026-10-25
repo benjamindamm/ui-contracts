@@ -1,0 +1,44 @@
+[
+  {
+    "file": "host/sources/error-relay.scxml",
+    "kind": "original SCXML XSD",
+    "accepted": true,
+    "errors": ""
+  },
+  {
+    "file": "host/sources/autocomplete/behavior.scxml",
+    "kind": "original SCXML XSD",
+    "accepted": false,
+    "errors": "work/ip01-browser/host/sources/autocomplete/behavior.scxml:3:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element '{http://www.w3.org/2005/07/scxml}transition': This element is not expected."
+  },
+  {
+    "file": "host/sources/scroll-area/behavior.scxml",
+    "kind": "original SCXML XSD",
+    "accepted": true,
+    "errors": ""
+  },
+  {
+    "file": "host/sources/overlay/behavior.scxml",
+    "kind": "original SCXML XSD",
+    "accepted": true,
+    "errors": ""
+  },
+  {
+    "file": "host/sources/autocomplete/interface.json",
+    "kind": "original CEM schema",
+    "accepted": true,
+    "errors": []
+  },
+  {
+    "file": "host/sources/scroll-area/interface.json",
+    "kind": "original CEM schema",
+    "accepted": true,
+    "errors": []
+  },
+  {
+    "file": "host/sources/overlay/interface.json",
+    "kind": "original CEM schema",
+    "accepted": true,
+    "errors": []
+  }
+]

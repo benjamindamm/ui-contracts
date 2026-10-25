@@ -1,0 +1,2296 @@
+{
+  "name": "BR-12",
+  "payload": {
+    "checks": {
+      "noInterimRequest": true,
+      "noCommit": true,
+      "queryDraft": true,
+      "finalQuery": true,
+      "oneFinalRequest": true,
+      "ready": true
+    },
+    "eventOrigin": "synthetic composition events; native provider signal awaited; no real IME tested"
+  },
+  "snapshot": {
+    "focus": "A-input",
+    "events": {
+      "A": [
+        {
+          "name": "value-change",
+          "detail": {
+            "value": "A-7"
+          },
+          "bubbles": true,
+          "isTrusted": false,
+          "focus": "A-input"
+        }
+      ],
+      "B": []
+    },
+    "requests": [
+      {
+        "owner": "A",
+        "epoch": 1,
+        "seq": 1,
+        "query": "",
+        "id": "A:1:1"
+      },
+      {
+        "owner": "B",
+        "epoch": 1,
+        "seq": 1,
+        "query": "",
+        "id": "B:1:1"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 2,
+        "query": "old",
+        "id": "A:2:2"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 3,
+        "query": "new",
+        "id": "A:2:3"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 4,
+        "query": "empty",
+        "id": "A:2:4"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 5,
+        "query": "error",
+        "id": "A:2:5"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 6,
+        "query": "invalid",
+        "id": "A:2:6"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 7,
+        "query": "duplicate",
+        "id": "A:2:7"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 8,
+        "query": "漢字",
+        "id": "A:2:8"
+      }
+    ],
+    "diagnostics": [
+      {
+        "rule": "program.value",
+        "owner": "A"
+      },
+      {
+        "rule": "provider.type",
+        "owner": "A",
+        "id": "A:2:6"
+      },
+      {
+        "rule": "provider.type",
+        "owner": "A",
+        "id": "A:2:7"
+      }
+    ],
+    "errors": [],
+    "actors": [
+      {
+        "owner": "A",
+        "epoch": 1,
+        "level": "overlay",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": true,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "scrollId": "active.invokeid_0"
+        }
+      },
+      {
+        "owner": "A",
+        "epoch": 1,
+        "level": "scroll-area",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": true,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "A",
+          "epoch": 1
+        }
+      },
+      {
+        "owner": "B",
+        "epoch": 1,
+        "level": "overlay",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": true,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "B",
+          "epoch": 1,
+          "scrollId": "active.invokeid_0"
+        }
+      },
+      {
+        "owner": "B",
+        "epoch": 1,
+        "level": "scroll-area",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": true,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "B",
+          "epoch": 1
+        }
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "level": "overlay",
+        "nativeId": "active.invokeid_1",
+        "relay": false,
+        "final": false,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "scrollId": "active.invokeid_0"
+        }
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "level": "scroll-area",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": false,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "A",
+          "epoch": 2
+        }
+      }
+    ],
+    "A": {
+      "phase": "ready",
+      "data": {
+        "owner": "A",
+        "epoch": 2,
+        "query": "漢字",
+        "value": "A-2",
+        "results": [
+          {
+            "key": "ime",
+            "label": "漢字"
+          }
+        ],
+        "reqSeq": 8,
+        "revealSeq": 7,
+        "overlayId": "active.invokeid_1",
+        "intent": 0,
+        "composing": false,
+        "stale": 1,
+        "foreign": 0,
+        "fault": "",
+        "visible": false
+      },
+      "expanded": "true",
+      "busy": "false",
+      "activeDescendant": null,
+      "controls": "A-list-2",
+      "inputValue": "漢字",
+      "status": "1 Ergebnisse.",
+      "viewport": {
+        "scrollTop": 0,
+        "clientHeight": 32,
+        "scrollHeight": 32
+      },
+      "options": [
+        {
+          "id": "A-option-2-ime",
+          "key": "ime",
+          "selected": "false",
+          "disabled": "false"
+        }
+      ]
+    },
+    "B": {
+      "phase": "closed",
+      "data": {
+        "owner": "B",
+        "epoch": 1,
+        "query": "",
+        "results": [
+          {
+            "key": "B-1",
+            "label": "Ergebnis B 1"
+          },
+          {
+            "key": "B-2",
+            "label": "Ergebnis B 2"
+          },
+          {
+            "key": "B-3",
+            "label": "Ergebnis B 3",
+            "disabled": true
+          },
+          {
+            "key": "B-4",
+            "label": "Ergebnis B 4"
+          },
+          {
+            "key": "B-5",
+            "label": "Ergebnis B 5"
+          },
+          {
+            "key": "B-6",
+            "label": "Ergebnis B 6"
+          },
+          {
+            "key": "B-7",
+            "label": "Ergebnis B 7"
+          }
+        ],
+        "reqSeq": 1,
+        "revealSeq": 1,
+        "overlayId": "active.invokeid_0",
+        "intent": 1,
+        "composing": false,
+        "stale": 0,
+        "foreign": 0,
+        "fault": "",
+        "visible": false
+      },
+      "expanded": "false",
+      "busy": "false",
+      "activeDescendant": null,
+      "controls": null,
+      "inputValue": "",
+      "status": "",
+      "viewport": null,
+      "options": []
+    }
+  },
+  "journal": [
+    {
+      "sequence": 1,
+      "type": "host.ready",
+      "revision": "ca9d2f71727b8942a203777b108a858e819d177e4f78d810866d0e9ae9cbe499"
+    },
+    {
+      "sequence": 2,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 3,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 4,
+      "type": "child.start",
+      "owner": "A",
+      "epoch": 1,
+      "level": "overlay",
+      "relay": false,
+      "nativeId": "active.invokeid_0"
+    },
+    {
+      "sequence": 5,
+      "type": "child.start",
+      "owner": "A",
+      "epoch": 1,
+      "level": "scroll-area",
+      "relay": false,
+      "nativeId": "active.invokeid_0"
+    },
+    {
+      "sequence": 6,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.ready",
+        "data": {
+          "owner": "A",
+          "epoch": 1
+        },
+        "origin": "#_scxml_6",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 7,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.ready",
+        "data": {
+          "owner": "A",
+          "epoch": 1
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 8,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 1,
+      "seq": 1,
+      "query": "",
+      "id": "A:1:1"
+    },
+    {
+      "sequence": 9,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "seq": 1,
+          "query": "",
+          "id": "A:1:1",
+          "results": [
+            {
+              "key": "A-1",
+              "label": "Ergebnis A 1"
+            },
+            {
+              "key": "A-2",
+              "label": "Ergebnis A 2"
+            },
+            {
+              "key": "A-3",
+              "label": "Ergebnis A 3",
+              "disabled": true
+            },
+            {
+              "key": "A-4",
+              "label": "Ergebnis A 4"
+            },
+            {
+              "key": "A-5",
+              "label": "Ergebnis A 5"
+            },
+            {
+              "key": "A-6",
+              "label": "Ergebnis A 6"
+            },
+            {
+              "key": "A-7",
+              "label": "Ergebnis A 7"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 10,
+      "type": "provider.deliver",
+      "id": "A:1:1",
+      "owner": "A",
+      "epoch": 1,
+      "seq": 1,
+      "event": "DATA"
+    },
+    {
+      "sequence": 11,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-1",
+          "requestId": 1
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 12,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-1",
+          "requestId": 1
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 13,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-1",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 251.8125,
+        "bottom": 411.8125,
+        "height": 160
+      },
+      "option": {
+        "top": 251.8125,
+        "bottom": 283.8125
+      }
+    },
+    {
+      "sequence": 14,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 15,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_6",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 16,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 17,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 18,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 19,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-2",
+          "requestId": 2
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 20,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-2",
+          "requestId": 2
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 21,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-2",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 251.8125,
+        "bottom": 411.8125,
+        "height": 160
+      },
+      "option": {
+        "top": 283.8125,
+        "bottom": 315.8125
+      }
+    },
+    {
+      "sequence": 22,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-2",
+          "requestId": 2,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 23,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-2",
+          "requestId": 2,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_6",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 24,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-2",
+          "requestId": 2,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 25,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 26,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 27,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-4",
+          "requestId": 3
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 28,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-4",
+          "requestId": 3
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 29,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-4",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 251.8125,
+        "bottom": 411.8125,
+        "height": 160
+      },
+      "option": {
+        "top": 347.8125,
+        "bottom": 379.8125
+      }
+    },
+    {
+      "sequence": 30,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-4",
+          "requestId": 3,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 31,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-4",
+          "requestId": 3,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_6",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 32,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-4",
+          "requestId": 3,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 33,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 34,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 35,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-5",
+          "requestId": 4
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 36,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-5",
+          "requestId": 4
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 37,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-5",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 251.8125,
+        "bottom": 411.8125,
+        "height": 160
+      },
+      "option": {
+        "top": 379.8125,
+        "bottom": 411.8125
+      }
+    },
+    {
+      "sequence": 38,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-5",
+          "requestId": 4,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 39,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-5",
+          "requestId": 4,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_6",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 40,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-5",
+          "requestId": 4,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 41,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 42,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 43,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-6",
+          "requestId": 5
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 44,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-6",
+          "requestId": 5
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 45,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-6",
+      "offset": 32,
+      "visible": true,
+      "viewport": {
+        "top": 251.8125,
+        "bottom": 411.8125,
+        "height": 160
+      },
+      "option": {
+        "top": 379.8125,
+        "bottom": 411.8125
+      }
+    },
+    {
+      "sequence": 46,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-6",
+          "requestId": 5,
+          "visible": true,
+          "offset": 32
+        }
+      }
+    },
+    {
+      "sequence": 47,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-6",
+          "requestId": 5,
+          "visible": true,
+          "offset": 32
+        },
+        "origin": "#_scxml_6",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 48,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-6",
+          "requestId": 5,
+          "visible": true,
+          "offset": 32
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 49,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 50,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 51,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 6
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 52,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 6
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 53,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-7",
+      "offset": 64,
+      "visible": true,
+      "viewport": {
+        "top": 251.8125,
+        "bottom": 411.8125,
+        "height": 160
+      },
+      "option": {
+        "top": 379.8125,
+        "bottom": 411.8125
+      }
+    },
+    {
+      "sequence": 54,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-7",
+          "requestId": 6,
+          "visible": true,
+          "offset": 64
+        }
+      }
+    },
+    {
+      "sequence": 55,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 6,
+          "visible": true,
+          "offset": 64
+        },
+        "origin": "#_scxml_6",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 56,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 6,
+          "visible": true,
+          "offset": 64
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 57,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 58,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 59,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 7
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 60,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 7
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 61,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-7",
+      "offset": 64,
+      "visible": true,
+      "viewport": {
+        "top": 251.8125,
+        "bottom": 411.8125,
+        "height": 160
+      },
+      "option": {
+        "top": 379.8125,
+        "bottom": 411.8125
+      }
+    },
+    {
+      "sequence": 62,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-7",
+          "requestId": 7,
+          "visible": true,
+          "offset": 64
+        }
+      }
+    },
+    {
+      "sequence": 63,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 7,
+          "visible": true,
+          "offset": 64
+        },
+        "origin": "#_scxml_6",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 64,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 7,
+          "visible": true,
+          "offset": 64
+        },
+        "origin": "#_scxml_5",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 65,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "Enter",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 66,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "ENTER"
+      }
+    },
+    {
+      "sequence": 67,
+      "type": "public.event",
+      "owner": "A",
+      "name": "value-change",
+      "detail": {
+        "value": "A-7"
+      }
+    },
+    {
+      "sequence": 68,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "BLUR"
+      }
+    },
+    {
+      "sequence": 69,
+      "type": "dom.key",
+      "owner": "B",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 70,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 71,
+      "type": "child.start",
+      "owner": "B",
+      "epoch": 1,
+      "level": "overlay",
+      "relay": false,
+      "nativeId": "active.invokeid_0"
+    },
+    {
+      "sequence": 72,
+      "type": "child.start",
+      "owner": "B",
+      "epoch": 1,
+      "level": "scroll-area",
+      "relay": false,
+      "nativeId": "active.invokeid_0"
+    },
+    {
+      "sequence": 73,
+      "type": "native.event",
+      "owner": "B",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.ready",
+        "data": {
+          "owner": "B",
+          "epoch": 1
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 74,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.ready",
+        "data": {
+          "owner": "B",
+          "epoch": 1
+        },
+        "origin": "#_scxml_7",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 75,
+      "type": "provider.request",
+      "owner": "B",
+      "epoch": 1,
+      "seq": 1,
+      "query": "",
+      "id": "B:1:1"
+    },
+    {
+      "sequence": 76,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "B",
+          "epoch": 1,
+          "seq": 1,
+          "query": "",
+          "id": "B:1:1",
+          "results": [
+            {
+              "key": "B-1",
+              "label": "Ergebnis B 1"
+            },
+            {
+              "key": "B-2",
+              "label": "Ergebnis B 2"
+            },
+            {
+              "key": "B-3",
+              "label": "Ergebnis B 3",
+              "disabled": true
+            },
+            {
+              "key": "B-4",
+              "label": "Ergebnis B 4"
+            },
+            {
+              "key": "B-5",
+              "label": "Ergebnis B 5"
+            },
+            {
+              "key": "B-6",
+              "label": "Ergebnis B 6"
+            },
+            {
+              "key": "B-7",
+              "label": "Ergebnis B 7"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 77,
+      "type": "provider.deliver",
+      "id": "B:1:1",
+      "owner": "B",
+      "epoch": 1,
+      "seq": 1,
+      "event": "DATA"
+    },
+    {
+      "sequence": 78,
+      "type": "native.event",
+      "owner": "B",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "B",
+          "epoch": 1,
+          "key": "B-1",
+          "requestId": 1
+        },
+        "origin": "#_scxml_4",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 79,
+      "type": "native.event",
+      "owner": "B",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "B",
+          "epoch": 1,
+          "key": "B-1",
+          "requestId": 1
+        },
+        "origin": "#_scxml_7",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 80,
+      "type": "host.measure",
+      "owner": "B",
+      "epoch": 1,
+      "key": "B-1",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 251.8125,
+        "bottom": 411.8125,
+        "height": 160
+      },
+      "option": {
+        "top": 251.8125,
+        "bottom": 283.8125
+      }
+    },
+    {
+      "sequence": 81,
+      "type": "native.event",
+      "owner": "B",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "B-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 82,
+      "type": "native.event",
+      "owner": "B",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "B",
+          "epoch": 1,
+          "key": "B-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 83,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "B",
+          "epoch": 1,
+          "key": "B-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_7",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 84,
+      "type": "dom.key",
+      "owner": "B",
+      "key": "Escape",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 85,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "CLOSE"
+      }
+    },
+    {
+      "sequence": 86,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "SET_VALUE",
+        "data": {
+          "value": "A-2"
+        }
+      }
+    },
+    {
+      "sequence": 87,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "BLUR"
+      }
+    },
+    {
+      "sequence": 88,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 89,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "old"
+        }
+      }
+    },
+    {
+      "sequence": 90,
+      "type": "child.start",
+      "owner": "A",
+      "epoch": 2,
+      "level": "overlay",
+      "relay": false,
+      "nativeId": "active.invokeid_1"
+    },
+    {
+      "sequence": 91,
+      "type": "child.start",
+      "owner": "A",
+      "epoch": 2,
+      "level": "scroll-area",
+      "relay": false,
+      "nativeId": "active.invokeid_0"
+    },
+    {
+      "sequence": 92,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 2,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.ready",
+        "data": {
+          "owner": "A",
+          "epoch": 2
+        },
+        "origin": "#_scxml_10",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 93,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.ready",
+        "data": {
+          "owner": "A",
+          "epoch": 2
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_1"
+      }
+    },
+    {
+      "sequence": 94,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 2,
+      "query": "old",
+      "id": "A:2:2"
+    },
+    {
+      "sequence": 95,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 96,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "new"
+        }
+      }
+    },
+    {
+      "sequence": 97,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 3,
+      "query": "new",
+      "id": "A:2:3"
+    },
+    {
+      "sequence": 98,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 3,
+          "query": "new",
+          "id": "A:2:3",
+          "results": [
+            {
+              "key": "n1",
+              "label": "Neu Eins"
+            },
+            {
+              "key": "n2",
+              "label": "Neu Zwei"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 99,
+      "type": "provider.deliver",
+      "id": "A:2:3",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 3,
+      "event": "DATA"
+    },
+    {
+      "sequence": 100,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 2,
+          "query": "old",
+          "id": "A:2:2",
+          "results": [
+            {
+              "key": "old",
+              "label": "Veraltet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 101,
+      "type": "provider.deliver",
+      "id": "A:2:2",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 2,
+      "event": "DATA"
+    },
+    {
+      "sequence": 102,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 103,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "empty"
+        }
+      }
+    },
+    {
+      "sequence": 104,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 4,
+      "query": "empty",
+      "id": "A:2:4"
+    },
+    {
+      "sequence": 105,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 4,
+          "query": "empty",
+          "id": "A:2:4",
+          "results": []
+        }
+      }
+    },
+    {
+      "sequence": 106,
+      "type": "provider.deliver",
+      "id": "A:2:4",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 4,
+      "event": "DATA"
+    },
+    {
+      "sequence": 107,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 108,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "error"
+        }
+      }
+    },
+    {
+      "sequence": 109,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 5,
+      "query": "error",
+      "id": "A:2:5"
+    },
+    {
+      "sequence": 110,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "FAILURE",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 5,
+          "query": "error",
+          "id": "A:2:5",
+          "message": "Kontrollierter Providerfehler"
+        }
+      }
+    },
+    {
+      "sequence": 111,
+      "type": "provider.deliver",
+      "id": "A:2:5",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 5,
+      "event": "FAILURE"
+    },
+    {
+      "sequence": 112,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 113,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "invalid"
+        }
+      }
+    },
+    {
+      "sequence": 114,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 6,
+      "query": "invalid",
+      "id": "A:2:6"
+    },
+    {
+      "sequence": 115,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "FAILURE",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 6,
+          "query": "invalid",
+          "id": "A:2:6",
+          "message": "Ungültige Ergebnisdaten."
+        }
+      }
+    },
+    {
+      "sequence": 116,
+      "type": "provider.deliver",
+      "id": "A:2:6",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 6,
+      "event": "FAILURE"
+    },
+    {
+      "sequence": 117,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 118,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "duplicate"
+        }
+      }
+    },
+    {
+      "sequence": 119,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 7,
+      "query": "duplicate",
+      "id": "A:2:7"
+    },
+    {
+      "sequence": 120,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "FAILURE",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 7,
+          "query": "duplicate",
+          "id": "A:2:7",
+          "message": "Ungültige Ergebnisdaten."
+        }
+      }
+    },
+    {
+      "sequence": 121,
+      "type": "provider.deliver",
+      "id": "A:2:7",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 7,
+      "event": "FAILURE"
+    },
+    {
+      "sequence": 122,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "COMPOSITION_START"
+      }
+    },
+    {
+      "sequence": 123,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": false,
+      "composing": true
+    },
+    {
+      "sequence": 124,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "漢字"
+        }
+      }
+    },
+    {
+      "sequence": 125,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "Enter",
+      "isTrusted": false,
+      "isComposing": true
+    },
+    {
+      "sequence": 126,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "ENTER"
+      }
+    },
+    {
+      "sequence": 127,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": false,
+      "isComposing": true
+    },
+    {
+      "sequence": 128,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 129,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "COMPOSITION_END"
+      }
+    },
+    {
+      "sequence": 130,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 8,
+      "query": "漢字",
+      "id": "A:2:8"
+    },
+    {
+      "sequence": 131,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 8,
+          "query": "漢字",
+          "id": "A:2:8",
+          "results": [
+            {
+              "key": "ime",
+              "label": "漢字"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 132,
+      "type": "provider.deliver",
+      "id": "A:2:8",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 8,
+      "event": "DATA"
+    }
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "platform": "MacIntel",
+    "language": "en-US"
+  },
+  "sourceRevision": "ca9d2f71727b8942a203777b108a858e819d177e4f78d810866d0e9ae9cbe499"
+}

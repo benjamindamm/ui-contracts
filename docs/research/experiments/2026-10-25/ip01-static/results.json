@@ -1,0 +1,3012 @@
+{
+  "kind": "static-research-reference-package",
+  "cases": [
+    {
+      "id": "ST-01",
+      "mutation": "baseline",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "expectationMet": true,
+      "detail": null,
+      "revision": "dde26ea34c76ffbc4f917bedbe8d527f0e0976b534fc30a7ef236a6d639a9f95",
+      "resolvedRecord": "runs/ST-01/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ],
+      "witnesses": [
+        {
+          "relation": "A.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "input",
+          "hostId": "A-input"
+        },
+        {
+          "relation": "A.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "list",
+          "hostId": "A-list"
+        },
+        {
+          "relation": "A.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "option",
+          "hostId": "A-option"
+        },
+        {
+          "relation": "A.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "status",
+          "hostId": "A-status"
+        },
+        {
+          "relation": "A.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "A",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "A-overlay"
+        },
+        {
+          "relation": "A.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "A",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "A-viewport"
+        },
+        {
+          "relation": "B.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "input",
+          "hostId": "B-input"
+        },
+        {
+          "relation": "B.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "list",
+          "hostId": "B-list"
+        },
+        {
+          "relation": "B.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "option",
+          "hostId": "B-option"
+        },
+        {
+          "relation": "B.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "status",
+          "hostId": "B-status"
+        },
+        {
+          "relation": "B.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "B",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "B-overlay"
+        },
+        {
+          "relation": "B.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "B",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "B-viewport"
+        }
+      ],
+      "types": {
+        "typescript": "5.9.3",
+        "members": {
+          "query": {
+            "kind": "string"
+          },
+          "value": {
+            "kind": "optional",
+            "item": {
+              "kind": "string"
+            }
+          },
+          "results": {
+            "kind": "array",
+            "item": {
+              "kind": "record",
+              "fields": {
+                "key": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "label": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "disabled": {
+                  "type": {
+                    "kind": "boolean"
+                  },
+                  "optional": true
+                }
+              }
+            }
+          },
+          "enabled": {
+            "kind": "boolean"
+          },
+          "limit": {
+            "kind": "number"
+          }
+        },
+        "events": {
+          "value-change": {
+            "kind": "event",
+            "payload": {
+              "kind": "record",
+              "fields": {
+                "value": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "visual": {
+        "gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "maxHeight": {
+          "value": 160,
+          "unit": "px"
+        },
+        "rowHeight": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "additionalScope": "bounded static resolver/type/default/dimension checks; HTML parsed but no original ARIA validator, DOM runtime, CSS evaluation or AT"
+    },
+    {
+      "id": "ST-02",
+      "mutation": "valid-values",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "expectationMet": true,
+      "detail": null,
+      "revision": "999386a9743a0adb6fc13b11127ddef5999e2219f4860e9c5cfe76ebb0a9b7f5",
+      "resolvedRecord": "runs/ST-02/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ],
+      "witnesses": [
+        {
+          "relation": "A.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "input",
+          "hostId": "A-input"
+        },
+        {
+          "relation": "A.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "list",
+          "hostId": "A-list"
+        },
+        {
+          "relation": "A.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "option",
+          "hostId": "A-option"
+        },
+        {
+          "relation": "A.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "status",
+          "hostId": "A-status"
+        },
+        {
+          "relation": "A.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "A",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "A-overlay"
+        },
+        {
+          "relation": "A.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "A",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "A-viewport"
+        },
+        {
+          "relation": "B.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "input",
+          "hostId": "B-input"
+        },
+        {
+          "relation": "B.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "list",
+          "hostId": "B-list"
+        },
+        {
+          "relation": "B.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "option",
+          "hostId": "B-option"
+        },
+        {
+          "relation": "B.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "status",
+          "hostId": "B-status"
+        },
+        {
+          "relation": "B.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "B",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "B-overlay"
+        },
+        {
+          "relation": "B.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "B",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "B-viewport"
+        }
+      ],
+      "types": {
+        "typescript": "5.9.3",
+        "members": {
+          "query": {
+            "kind": "string"
+          },
+          "value": {
+            "kind": "optional",
+            "item": {
+              "kind": "string"
+            }
+          },
+          "results": {
+            "kind": "array",
+            "item": {
+              "kind": "record",
+              "fields": {
+                "key": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "label": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "disabled": {
+                  "type": {
+                    "kind": "boolean"
+                  },
+                  "optional": true
+                }
+              }
+            }
+          },
+          "enabled": {
+            "kind": "boolean"
+          },
+          "limit": {
+            "kind": "number"
+          }
+        },
+        "events": {
+          "value-change": {
+            "kind": "event",
+            "payload": {
+              "kind": "record",
+              "fields": {
+                "value": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "visual": {
+        "gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "maxHeight": {
+          "value": 160,
+          "unit": "px"
+        },
+        "rowHeight": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "additionalScope": "bounded static resolver/type/default/dimension checks; HTML parsed but no original ARIA validator, DOM runtime, CSS evaluation or AT"
+    },
+    {
+      "id": "ST-03",
+      "mutation": "omit-optionals",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "expectationMet": true,
+      "detail": null,
+      "revision": "363fb1c2ca10e39a5274a30c57fa671509941338bd969ab1587caa66884e4a7b",
+      "resolvedRecord": "runs/ST-03/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ],
+      "witnesses": [
+        {
+          "relation": "A.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "input",
+          "hostId": "A-input"
+        },
+        {
+          "relation": "A.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "list",
+          "hostId": "A-list"
+        },
+        {
+          "relation": "A.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "option",
+          "hostId": "A-option"
+        },
+        {
+          "relation": "A.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "status",
+          "hostId": "A-status"
+        },
+        {
+          "relation": "A.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "A",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "A-overlay"
+        },
+        {
+          "relation": "A.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "A",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "A-viewport"
+        },
+        {
+          "relation": "B.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "input",
+          "hostId": "B-input"
+        },
+        {
+          "relation": "B.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "list",
+          "hostId": "B-list"
+        },
+        {
+          "relation": "B.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "option",
+          "hostId": "B-option"
+        },
+        {
+          "relation": "B.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "status",
+          "hostId": "B-status"
+        },
+        {
+          "relation": "B.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "B",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "B-overlay"
+        },
+        {
+          "relation": "B.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "B",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "B-viewport"
+        }
+      ],
+      "types": {
+        "typescript": "5.9.3",
+        "members": {
+          "query": {
+            "kind": "string"
+          },
+          "value": {
+            "kind": "optional",
+            "item": {
+              "kind": "string"
+            }
+          },
+          "results": {
+            "kind": "array",
+            "item": {
+              "kind": "record",
+              "fields": {
+                "key": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "label": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "disabled": {
+                  "type": {
+                    "kind": "boolean"
+                  },
+                  "optional": true
+                }
+              }
+            }
+          },
+          "enabled": {
+            "kind": "boolean"
+          },
+          "limit": {
+            "kind": "number"
+          }
+        },
+        "events": {
+          "value-change": {
+            "kind": "event",
+            "payload": {
+              "kind": "record",
+              "fields": {
+                "value": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "visual": {
+        "gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "maxHeight": {
+          "value": 160,
+          "unit": "px"
+        },
+        "rowHeight": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "additionalScope": "bounded static resolver/type/default/dimension checks; HTML parsed but no original ARIA validator, DOM runtime, CSS evaluation or AT"
+    },
+    {
+      "id": "ST-04",
+      "mutation": "missing-label",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/results/0/label",
+      "revision": "d24474a220877e801e5e445ca11ddc79eae781a06e2031d51375398ec3c7d635",
+      "resolvedRecord": "runs/ST-04/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ST-05",
+      "mutation": "wrong-query-type",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/query",
+      "revision": "790533f8ab4d26abbf63f274d9390e303825a90a29e383c7091b4603546e5ec3",
+      "resolvedRecord": "runs/ST-05/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ST-06",
+      "mutation": "null-optional-value",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/value",
+      "revision": "3fa6bf0c132666ab20076699d8b69b3881c0823a20983dbe0d6ffb94074777de",
+      "resolvedRecord": "runs/ST-06/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ST-07",
+      "mutation": "duplicate-keys",
+      "expected": "DATA_KEY_CONFLICT",
+      "actual": "DATA_KEY_CONFLICT",
+      "expectationMet": true,
+      "detail": "results keys",
+      "revision": "674819c96250fe221bf2765ad042ec771c2dca0d584310a1eb11f726311e6848",
+      "resolvedRecord": "runs/ST-07/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ST-08",
+      "mutation": "nonfinite-number",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/limit",
+      "revision": "dde26ea34c76ffbc4f917bedbe8d527f0e0976b534fc30a7ef236a6d639a9f95",
+      "resolvedRecord": "runs/ST-08/resolved.json",
+      "apiInput": "limit=positive infinity (in-memory value, not JSON transport)",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ST-09",
+      "mutation": "missing-target",
+      "expected": "TARGET_MISSING",
+      "actual": "TARGET_MISSING",
+      "expectationMet": true,
+      "detail": "/modules/0/declarations/0/cssParts/99",
+      "revision": "ed725ca4cd2350546844988c7898fb6b3c687428a0089af833197a0cd7fe64f5",
+      "resolvedRecord": "runs/ST-09/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-10",
+      "mutation": "foreign-instance",
+      "expected": "INSTANCE_MISMATCH",
+      "actual": "INSTANCE_MISMATCH",
+      "expectationMet": true,
+      "detail": "A.input",
+      "revision": "1685f9be17c2bfdf8bb5bece6541b8355b4d4656372fa16236c42059ffeaf85f",
+      "resolvedRecord": "runs/ST-10/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ST-11",
+      "mutation": "wrong-namespace",
+      "expected": "DEFINITION_MISMATCH",
+      "actual": "DEFINITION_MISMATCH",
+      "expectationMet": true,
+      "detail": "other:Autocomplete",
+      "revision": "a8d7317bac5c15eaa021e08e626863c1bfd22541a83ccf6663a13b000431c429",
+      "resolvedRecord": "runs/ST-11/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-12",
+      "mutation": "wrong-source-hash",
+      "expected": "SOURCE_MISMATCH",
+      "actual": "SOURCE_MISMATCH",
+      "expectationMet": true,
+      "detail": "autocomplete.interface",
+      "revision": "00cdb9e65f3b6fe54c4eb5f8e8ebd64a0356338608eaa4b8496c5173321588d9",
+      "resolvedRecord": "runs/ST-12/resolved.json",
+      "originalChecks": []
+    },
+    {
+      "id": "ST-13",
+      "mutation": "unsupported-version",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "expectationMet": true,
+      "detail": "autocomplete.interface version",
+      "revision": "52484f66668b9a4cd6f311e09ed68f82d4725ad9fd953536ba6fdd8b72de92a9",
+      "resolvedRecord": "runs/ST-13/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-14",
+      "mutation": "event-type-conflict",
+      "expected": "TYPE_BINDING_CONFLICT",
+      "actual": "TYPE_BINDING_CONFLICT",
+      "expectationMet": true,
+      "detail": "event.value",
+      "revision": "f27e9ab2043fb5f8a2aed3b5863e18715e4c84c6eb317c5f250b82d15d6a4480",
+      "resolvedRecord": "runs/ST-14/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ST-15",
+      "mutation": "recursive-use",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "expectationMet": true,
+      "detail": "recursive component expansion",
+      "revision": "eb552ddf0bf3f64d1adf7fd2c6a85255beffe5573d65d34d51e257f1aaeac4ad",
+      "resolvedRecord": "runs/ST-15/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-16",
+      "mutation": "unsupported-type",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "expectationMet": true,
+      "detail": {
+        "error": "Error: UNSUPPORTED: UnionType"
+      },
+      "revision": "fc02c1591f1e713cad29c9118f2af4b3e48ff36d77c460649bd241a20b400c33",
+      "resolvedRecord": "runs/ST-16/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-17",
+      "mutation": "wrong-target-kind",
+      "expected": "TARGET_KIND_MISMATCH",
+      "actual": "TARGET_KIND_MISMATCH",
+      "expectationMet": true,
+      "detail": "A.input",
+      "revision": "e9356ad4b58b39242df9486de8284661b70efc5012a44776ee18f40ac02a8ff1",
+      "resolvedRecord": "runs/ST-17/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ST-18",
+      "mutation": "invalid-original-cem",
+      "expected": "ORIGINAL_INVALID",
+      "actual": "ORIGINAL_INVALID",
+      "expectationMet": true,
+      "detail": {
+        "source": "autocomplete.interface",
+        "message": "{'name': 'Autocomplete', 'customElement': True, 'members': [{'kind': 'field', 'name': 'query', 'type': {'text': 'string'}, 'default': '\"\"'}, {'kind': 'field', 'name': 'value', 'type': {'text': 'string | undefined'}}, {'kind': 'field', 'name': 'results', 'type': {'text': 'Array<{ key: string; label: string; disabled?: boolean }>'}, 'default': '[]'}, {'kind': 'field', 'name': 'enabled', 'type': {'text': 'boolean'}, 'default': 'true'}, {'kind': 'field', 'name': 'limit', 'type': {'text': 'number'}, 'default': '7'}], 'events': [{'name': 'value-change', 'type': {'text': 'CustomEvent<{value:string}>'}}], 'cssParts': [{'name': 'input'}, {'name': 'list'}, {'name': 'option'}, {'name': 'status'}]} is not valid under any of the given schemas"
+      },
+      "revision": "099d506ca8245de29e32a6b2496403b5c74c4107a73826c354e658a66f5ea0e5",
+      "resolvedRecord": "runs/ST-18/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "id": "ST-19",
+      "mutation": "invalid-original-scxml",
+      "expected": "ORIGINAL_INVALID",
+      "actual": "ORIGINAL_INVALID",
+      "expectationMet": true,
+      "detail": {
+        "source": "autocomplete.behavior",
+        "message": "<string>:1:0:ERROR:SCHEMASV:SCHEMAV_CVC_AU: Element '{http://www.w3.org/2005/07/scxml}scxml', attribute 'version': The value '2.0' does not match the fixed value constraint '1.0'."
+      },
+      "revision": "9e2c3d127e3e296689f0f68d10dd03fb57e7fd3abe84d8e8846e4e3db3a48d67",
+      "resolvedRecord": "runs/ST-19/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "id": "ST-20",
+      "mutation": "unsupported-token-unit",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "expectationMet": true,
+      "detail": "base.gap",
+      "revision": "060cb285075b85f661a24a925090e1093229cc435dd6330c833261f469209d8b",
+      "resolvedRecord": "runs/ST-20/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ST-21",
+      "mutation": "wrong-default-type",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "default/query",
+      "revision": "1c6e9ecd621e70e52c1107f620f86310c0419bf540cafb54dbfb742a73a57ea8",
+      "resolvedRecord": "runs/ST-21/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ST-22",
+      "mutation": "token-alias-cycle",
+      "expected": "TOKEN_ALIAS_CYCLE",
+      "actual": "TOKEN_ALIAS_CYCLE",
+      "expectationMet": true,
+      "detail": "autocomplete.gap",
+      "revision": "539229eb47aeebbebd467bc0a53da34ace8cead4d603bfcc4b6983ed95caea43",
+      "resolvedRecord": "runs/ST-22/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ST-23",
+      "mutation": "missing-relation",
+      "expected": "BINDING_INCOMPLETE",
+      "actual": "BINDING_INCOMPLETE",
+      "expectationMet": true,
+      "detail": "required relations",
+      "revision": "cd275e365a0156972387e9c15870eacc547a7e4c3fa208612233781748ecb895",
+      "resolvedRecord": "runs/ST-23/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ST-24",
+      "mutation": "unexpected-record-field",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/results/0",
+      "revision": "f187d2774c435cd97a7cdcd8a6d6e13862150f8cc872ac14e06ad9112c9ed2df",
+      "resolvedRecord": "runs/ST-24/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "visualBindings": [
+        {
+          "relation": "visual.gap",
+          "token": "autocomplete.gap",
+          "value": {
+            "value": 8,
+            "unit": "px"
+          },
+          "cssSource": "overlay.visual",
+          "variable": "--gap",
+          "declaration": {
+            "property": "margin-top",
+            "value": "var(--gap)"
+          }
+        },
+        {
+          "relation": "visual.maxHeight",
+          "token": "autocomplete.maxHeight",
+          "value": {
+            "value": 160,
+            "unit": "px"
+          },
+          "cssSource": "scroll-area.visual",
+          "variable": "--max-height",
+          "declaration": {
+            "property": "max-height",
+            "value": "var(--max-height)"
+          }
+        },
+        {
+          "relation": "visual.rowHeight",
+          "token": "autocomplete.rowHeight",
+          "value": {
+            "value": 32,
+            "unit": "px"
+          },
+          "cssSource": "autocomplete.visual",
+          "variable": "--row-height",
+          "declaration": {
+            "property": "min-height",
+            "value": "var(--row-height)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ST-25",
+      "mutation": "target-revision-mismatch",
+      "expected": "REVISION_MISMATCH",
+      "actual": "REVISION_MISMATCH",
+      "expectationMet": true,
+      "detail": "autocomplete.input",
+      "revision": "8e9477b59f4729152999f70c363eab05a0ed6fa850b1cc67614f759cabbe891a",
+      "resolvedRecord": "runs/ST-25/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-26",
+      "mutation": "missing-visual-token-target",
+      "expected": "TARGET_MISSING",
+      "actual": "TARGET_MISSING",
+      "expectationMet": true,
+      "detail": "autocomplete.missing",
+      "revision": "546de17b53fa5094fc1b5bb60dc4e529900ec726aafbbe634f527ca1f26e1bba",
+      "resolvedRecord": "runs/ST-26/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--gap)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ST-27",
+      "mutation": "visual-css-conflict",
+      "expected": "VISUAL_BINDING_CONFLICT",
+      "actual": "VISUAL_BINDING_CONFLICT",
+      "expectationMet": true,
+      "detail": "visual.gap",
+      "revision": "bcaae8c425cf1d51874cd095e51769da816d78a33ccd574cd0f834bbe149286f",
+      "resolvedRecord": "runs/ST-27/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "additionalCssSyntax": {
+        "version": "3.2.1",
+        "cases": [
+          {
+            "file": "autocomplete/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "min-height",
+                "value": "var(--row-height)"
+              },
+              {
+                "property": "flex-shrink",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "file": "overlay/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "position",
+                "value": "absolute"
+              },
+              {
+                "property": "top",
+                "value": "anchor(bottom)"
+              },
+              {
+                "property": "margin-top",
+                "value": "var(--unbound)"
+              }
+            ]
+          },
+          {
+            "file": "scroll-area/layout.css",
+            "syntaxParsed": true,
+            "declarations": [
+              {
+                "property": "max-height",
+                "value": "var(--max-height)"
+              },
+              {
+                "property": "overflow-y",
+                "value": "auto"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "new_conditions": 27,
+  "full_runtime_executed": false,
+  "product_format_selected": false
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "parent.scxml",
+    "valid": true,
+    "errors": ""
+  },
+  {
+    "file": "overlay.scxml",
+    "valid": true,
+    "errors": ""
+  },
+  {
+    "file": "scroll.scxml",
+    "valid": true,
+    "errors": ""
+  }
+]

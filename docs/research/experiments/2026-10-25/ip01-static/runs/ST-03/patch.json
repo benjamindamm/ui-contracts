@@ -1,0 +1,3 @@
+{
+  "values.json": "{\n  \"query\": \"abc\",\n  \"results\": [\n    {\n      \"key\": \"x\",\n      \"label\": \"X\"\n    }\n  ],\n  \"enabled\": true,\n  \"limit\": 7\n}\n"
+}

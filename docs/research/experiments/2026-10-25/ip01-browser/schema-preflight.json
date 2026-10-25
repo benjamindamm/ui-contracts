@@ -1,0 +1,51 @@
+[
+  {
+    "file": "host/sources/error-relay.scxml",
+    "sha256": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+    "kind": "original SCXML XSD",
+    "accepted": true,
+    "errors": ""
+  },
+  {
+    "file": "host/sources/autocomplete/behavior.scxml",
+    "sha256": "c180fbd3e53aba40e27b67cc5c84bb4fea699046483c3b6324f7ab6541152b74",
+    "kind": "original SCXML XSD",
+    "accepted": true,
+    "errors": ""
+  },
+  {
+    "file": "host/sources/scroll-area/behavior.scxml",
+    "sha256": "206f9020a1ba41cb0af096f2f1aac5fbba94f92d81b58089cc32f148f785810f",
+    "kind": "original SCXML XSD",
+    "accepted": true,
+    "errors": ""
+  },
+  {
+    "file": "host/sources/overlay/behavior.scxml",
+    "sha256": "6130e6edd034c4fbbd1bfe94237780ecfbd9fd6731880b2137089fe449f7f8ef",
+    "kind": "original SCXML XSD",
+    "accepted": true,
+    "errors": ""
+  },
+  {
+    "file": "host/sources/autocomplete/interface.json",
+    "sha256": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+    "kind": "original CEM schema",
+    "accepted": true,
+    "errors": []
+  },
+  {
+    "file": "host/sources/scroll-area/interface.json",
+    "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "kind": "original CEM schema",
+    "accepted": true,
+    "errors": []
+  },
+  {
+    "file": "host/sources/overlay/interface.json",
+    "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "kind": "original CEM schema",
+    "accepted": true,
+    "errors": []
+  }
+]

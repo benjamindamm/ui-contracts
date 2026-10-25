@@ -1,37 +1,27 @@
 # UI Contracts
 
-**Aktueller Stand,25. Oktober2026:** 16/16 Erstdurchgänge abgeschlossen;2 offene Nachweise (2 Integration,0 weitere),641 Bedingungen/102 Gruppen. Vollständige Integration bleibt unbelegt. [Zwei fehlende Originalklärungen](docs/research/REMAINING-2.md), [aktive Aufgaben](TASKS.md), [historische Fortschrittsnotizen](docs/research/README-PROGRESS-HISTORY.md).
+**Aktueller Stand,25. Oktober2026:** 16/16 Erstdurchgänge abgeschlossen;2 offene Nachweise (2 Integration,0 weitere),702 Bedingungen/106 Gruppen. Ein konkreter gemeinsamer Webreferenzlauf ist begrenzt belegt; universelle/native/AT-Integration bleibt unbelegt. [Zwei fehlende Originalklärungen](docs/research/REMAINING-2.md), [aktive Aufgaben](TASKS.md), [historische Fortschrittsnotizen](docs/research/README-PROGRESS-HISTORY.md).
 
 
-**Über die Matrix hinaus offen:** Die konkrete gemeinsame Integration, vollständige Unterkomposition und durchgängige Abnahme sind noch nicht fertig. [Projektlücken und nächste Arbeit](docs/research/PROJECT-GAPS.md).
+**Gemeinsamer Vorschlag:** [Integrationsprofil IP-01](docs/research/INTEGRATION-PROFILE.md) führt die bisherigen Ergebnisse zusammen; ein [gemeinsamer Browserprüfblock](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md) ist mit 20 erfüllten Erwartungen abgeschlossen. Die gesamte IP-Abnahme und Übertragung auf native Ziele bleiben offen. [Projektlücken und nächste Arbeit](docs/research/PROJECT-GAPS.md).
 
 UI Contracts untersucht, wie sich **UI-Komponenten maschinenlesbar und technologieunabhängig beschreiben** lassen, damit Menschen und Agenten dieselben eindeutigen Informationen über Schnittstelle, Gestaltung, Verhalten und Accessibility verwenden können.
 
 Das erste Ziel ist ein **gemeinsames Contract-Paket aus bestehenden Beschreibungsansätzen**. Wir untersuchen, welche Anforderungen vorhandene Standards und Projekte abdecken, wo sie sich überschneiden und welche Verbindungen oder Ergänzungen fehlen. Die Auswahl bestimmter Renderer steht noch nicht im Vordergrund.
 
-**Stand: 23. Oktober 2026 – Konzept und erste Quellenuntersuchung.** Es gibt keine Komponentenimplementierung und keine nachgewiesene universelle Integration. Dieses Repository ist eine Informations- und Forschungsgrundlage für die spätere Weiterarbeit mit einem Coding-Agenten.
+**Ursprünglicher Projektstart: 23. Oktober 2026. Rechercheabschluss: 25. Oktober 2026.** Dieses Repository enthält die Forschungsgrundlage, konkrete Referenzartefakte und einen geprüften eigenen Webforschungs-Host. Eine produktive Komponentenbibliothek ist noch nicht umgesetzt. iOS/Android sind spätere Perspektiven und keine Voraussetzung dieses Rechercheabschlusses.
+
+**Recherche-/Testrunde abgeschlossen:** [Gemeinsamer Browserlauf](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md) mit tatsächlichen Events, Fokus, Scrollmessung und Accessibility-Bäumen. [Einordnung des Ziels Web/iOS/Android](docs/research/ARCHITECTURE-DIRECTION.md). Kein beschlossenes Produktformat und keine allgemeine Plattformfreigabe.
 
 ## Einstieg
 
-- [Aufgaben und Fortschritt: erledigte, begonnene und offene Kandidaten](TASKS.md)
-- [Abdeckungsmatrix: Anforderungen links, Kandidaten als Spalten](docs/research/MATRIX.md)
-- [Anforderungen mit Herkunft und operationalisierten Kriterien](docs/research/REQUIREMENTS.md)
-- [Originalkontext und Entwicklung der Entscheidungen](docs/research/CONTEXT.md)
-- [Methode und Bewertungslegende](docs/research/METHODS.md)
-- [Quellenregister mit geprüften Ständen](docs/research/SOURCES.md)
-- [Begründungen und Grenzen der einzelnen Befunde](docs/research/CLAIMS.md)
-- [Forschungslücken und nächste überprüfbare Schritte](docs/research/RESEARCH-PLAN.md)
-- [Integrationsentwurf: Identität, Ownership, Komposition und Akzeptanzfälle](docs/research/INTEGRATION.md)
-- [Integrationsabgleich: vorhandene Mechanismen, zwei Instanzen und offene Bindungen](docs/research/INTEGRATION-REVIEW.md)
-- [Konkrete Feldbindungen und verbleibende Integrationsfragen](docs/research/BINDINGS.md)
-- [Register der aktuell 41 offenen Matrixfelder mit Prioritäten](docs/research/OPEN-FIELDS.md)
-- [Gezielte Folgeprüfung: UXSpecs drei offene Layoutfelder](docs/research/FOLLOWUP-UXSPEC-LAYOUT.md)
-- [Gezielte Folgeprüfung: uSpecs Anker- und Scrollfelder](docs/research/FOLLOWUP-USPEC-LAYOUT.md)
-- [Gezielte Folgeprüfung: Originalschema und Werkzeug bei OpenUI, DESIGN.md und Panda](docs/research/FOLLOWUP-VALIDATION.md)
-- [Werkzeug-, Sprach- und Reifevergleich aller 16 Kandidaten](docs/research/TOOLING-COMPARISON.md)
-- [Gesamtprüfung aller 72 Ausgangsfelder: fünf Neubewertungen, 67 Nachweise offen](docs/research/ALL-FIELDS-REVIEW.md)
-- [Detailvergleich UXSpec / SCXML](docs/research/COMPARE-UXSPEC-SCXML.md)
-- [Detailvergleich DESIGN.md / deklarative Layoutmodelle](docs/research/COMPARE-DESIGN-LAYOUT.md)
+- [Rechercheabschluss und empfohlene Lesereihenfolge](docs/research/RESEARCH-CLOSEOUT.md)
+- [Gemeinsamer Integrationsvorschlag IP-01](docs/research/INTEGRATION-PROFILE.md)
+- [Tatsächlich geprüfter Browserlauf](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md)
+- [Übergabe für die spätere Umsetzung](docs/research/IMPLEMENTATION-HANDOFF.md)
+- [Alle Dokumente](docs/research/DOCUMENT-INDEX.md) und [alle 106 Prüfgruppen](docs/research/experiments/INDEX.md)
+- [Matrix](docs/research/MATRIX.md), [begründete Befunde](docs/research/CLAIMS.md) und [Quellen](docs/research/SOURCES.md)
+- [Aktueller Status](docs/research/CURRENT-STATUS.md) und [Aufgaben](TASKS.md)
 
 ## Was wir erreichen wollen
 

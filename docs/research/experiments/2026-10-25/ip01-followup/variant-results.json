@@ -1,0 +1,3665 @@
+{
+  "kind": "ip01-specific-lifecycle-variants",
+  "package": "@scion-scxml/scxml",
+  "version": "4.3.28",
+  "node": "v24.13.1",
+  "new_conditions": 6,
+  "regressions_counted_again": 0,
+  "cases": [
+    {
+      "id": "F-01",
+      "variant": "drain",
+      "expected": "Queue reopen until held overlay initialization has resolved and native cancellation drained; same local invoke ID remains routable afterward; B unchanged",
+      "checks": {
+        "reopenWaited": true,
+        "oldChainFinal": true,
+        "sameLocalNativeId": true,
+        "routeWorks": true,
+        "bUnchanged": true,
+        "noUnhandledRejection": true
+      },
+      "expectationMet": true,
+      "observed": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "ready": 1,
+              "reports": 1,
+              "rejected": 0,
+              "lastOffset": 5,
+              "errors": 0
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [],
+            "data": {
+              "owner": "A",
+              "epoch": 1
+            }
+          },
+          {
+            "id": "A/overlay@2",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@2/scroll@2",
+            "parent": "A/overlay@2",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 5
+            }
+          }
+        ]
+      },
+      "journal": [
+        {
+          "seq": 1,
+          "type": "entry",
+          "session": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 2,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "seq": 3,
+          "type": "entry",
+          "session": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 4,
+          "type": "entry",
+          "session": "B",
+          "state": "closed"
+        },
+        {
+          "seq": 5,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 6,
+          "type": "entry",
+          "session": "B",
+          "state": "open"
+        },
+        {
+          "seq": 7,
+          "type": "invoke.begin",
+          "parent": "B",
+          "localId": "overlay",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 8,
+          "type": "start.allowed",
+          "parent": "B",
+          "localId": "overlay",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 9,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 10,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "active"
+        },
+        {
+          "seq": 11,
+          "type": "invoke.begin",
+          "parent": "B/overlay@1",
+          "localId": "scroll",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 12,
+          "type": "start.allowed",
+          "parent": "B/overlay@1",
+          "localId": "scroll",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 13,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 14,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "active"
+        },
+        {
+          "seq": 15,
+          "type": "event",
+          "session": "B/overlay@1",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_4",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "scroll"
+          }
+        },
+        {
+          "seq": 16,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_3",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "overlay"
+          }
+        },
+        {
+          "seq": 17,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 18,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 19,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 20,
+          "type": "test.barrier.reached",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 21,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "CLOSE"
+          }
+        },
+        {
+          "seq": 22,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "type": "host.reopen.queued",
+          "epoch": 1
+        },
+        {
+          "seq": 23,
+          "type": "start.cancelled",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "type": "host.drain.complete",
+          "epoch": 1
+        },
+        {
+          "seq": 24,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 25,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 26,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 27,
+          "type": "start.allowed",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 28,
+          "type": "entry",
+          "session": "A/overlay@2",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 29,
+          "type": "entry",
+          "session": "A/overlay@2",
+          "state": "active"
+        },
+        {
+          "seq": 30,
+          "type": "invoke.begin",
+          "parent": "A/overlay@2",
+          "localId": "scroll",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 31,
+          "type": "start.allowed",
+          "parent": "A/overlay@2",
+          "localId": "scroll",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 32,
+          "type": "entry",
+          "session": "A/overlay@2/scroll@2",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 33,
+          "type": "entry",
+          "session": "A/overlay@2/scroll@2",
+          "state": "active"
+        },
+        {
+          "seq": 34,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "A",
+              "epoch": 2
+            },
+            "origin": "#_scxml_7",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "scroll"
+          }
+        },
+        {
+          "seq": 35,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "A",
+              "epoch": 2
+            },
+            "origin": "#_scxml_6",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "overlay"
+          }
+        },
+        {
+          "seq": 36,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "SCROLL",
+            "data": {
+              "offset": 5
+            }
+          }
+        },
+        {
+          "seq": 37,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_overlay",
+            "name": "SCROLL",
+            "data": {
+              "offset": 5
+            },
+            "origin": "#_scxml_1",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external"
+          }
+        },
+        {
+          "seq": 38,
+          "type": "event",
+          "session": "A/overlay@2/scroll@2",
+          "event": {
+            "target": "#_scroll",
+            "name": "SCROLL",
+            "data": {
+              "offset": 5
+            },
+            "origin": "#_scxml_6",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external"
+          }
+        },
+        {
+          "seq": 39,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.report",
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 5
+            },
+            "origin": "#_scxml_7",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "scroll"
+          }
+        },
+        {
+          "seq": 40,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.report",
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 5
+            },
+            "origin": "#_scxml_6",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "overlay"
+          }
+        }
+      ],
+      "cleanup": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "ready": 1,
+              "reports": 1,
+              "rejected": 0,
+              "lastOffset": 5,
+              "errors": 0
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [],
+            "data": {
+              "owner": "A",
+              "epoch": 1
+            }
+          },
+          {
+            "id": "A/overlay@2",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@2/scroll@2",
+            "parent": "A/overlay@2",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 5
+            }
+          }
+        ]
+      },
+      "unhandledRejections": []
+    },
+    {
+      "id": "F-02",
+      "variant": "drain",
+      "expected": "Queue reopen until held nested scroll initialization and both levels have drained; no old child active and new route works; B unchanged",
+      "checks": {
+        "reopenWaited": true,
+        "oldChainFinal": true,
+        "sameLocalNativeId": true,
+        "routeWorks": true,
+        "bUnchanged": true,
+        "noUnhandledRejection": true
+      },
+      "expectationMet": true,
+      "observed": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "ready": 1,
+              "reports": 1,
+              "rejected": 0,
+              "lastOffset": 5,
+              "errors": 0
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@1/scroll@1",
+            "parent": "A/overlay@1",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [],
+            "data": {
+              "owner": "A",
+              "epoch": 1
+            }
+          },
+          {
+            "id": "A/overlay@2",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@2/scroll@2",
+            "parent": "A/overlay@2",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 5
+            }
+          }
+        ]
+      },
+      "journal": [
+        {
+          "seq": 1,
+          "type": "entry",
+          "session": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 2,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "seq": 3,
+          "type": "entry",
+          "session": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 4,
+          "type": "entry",
+          "session": "B",
+          "state": "closed"
+        },
+        {
+          "seq": 5,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 6,
+          "type": "entry",
+          "session": "B",
+          "state": "open"
+        },
+        {
+          "seq": 7,
+          "type": "invoke.begin",
+          "parent": "B",
+          "localId": "overlay",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 8,
+          "type": "start.allowed",
+          "parent": "B",
+          "localId": "overlay",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 9,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 10,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "active"
+        },
+        {
+          "seq": 11,
+          "type": "invoke.begin",
+          "parent": "B/overlay@1",
+          "localId": "scroll",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 12,
+          "type": "start.allowed",
+          "parent": "B/overlay@1",
+          "localId": "scroll",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 13,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 14,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "active"
+        },
+        {
+          "seq": 15,
+          "type": "event",
+          "session": "B/overlay@1",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_11",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "scroll"
+          }
+        },
+        {
+          "seq": 16,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_10",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "overlay"
+          }
+        },
+        {
+          "seq": 17,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 18,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 19,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 20,
+          "type": "start.allowed",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 21,
+          "type": "entry",
+          "session": "A/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 22,
+          "type": "entry",
+          "session": "A/overlay@1",
+          "state": "active"
+        },
+        {
+          "seq": 23,
+          "type": "invoke.begin",
+          "parent": "A/overlay@1",
+          "localId": "scroll",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 24,
+          "type": "test.barrier.reached",
+          "parent": "A/overlay@1",
+          "localId": "scroll",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 25,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "CLOSE"
+          }
+        },
+        {
+          "seq": 26,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "type": "host.reopen.queued",
+          "epoch": 1
+        },
+        {
+          "seq": 27,
+          "type": "start.cancelled",
+          "parent": "A/overlay@1",
+          "localId": "scroll",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "type": "host.drain.complete",
+          "epoch": 1
+        },
+        {
+          "seq": 28,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 29,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 30,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 31,
+          "type": "start.allowed",
+          "parent": "A",
+          "localId": "overlay",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 32,
+          "type": "entry",
+          "session": "A/overlay@2",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 33,
+          "type": "entry",
+          "session": "A/overlay@2",
+          "state": "active"
+        },
+        {
+          "seq": 34,
+          "type": "invoke.begin",
+          "parent": "A/overlay@2",
+          "localId": "scroll",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 35,
+          "type": "start.allowed",
+          "parent": "A/overlay@2",
+          "localId": "scroll",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 36,
+          "type": "entry",
+          "session": "A/overlay@2/scroll@2",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 37,
+          "type": "entry",
+          "session": "A/overlay@2/scroll@2",
+          "state": "active"
+        },
+        {
+          "seq": 38,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "A",
+              "epoch": 2
+            },
+            "origin": "#_scxml_15",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "scroll"
+          }
+        },
+        {
+          "seq": 39,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "A",
+              "epoch": 2
+            },
+            "origin": "#_scxml_14",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "overlay"
+          }
+        },
+        {
+          "seq": 40,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "SCROLL",
+            "data": {
+              "offset": 5
+            }
+          }
+        },
+        {
+          "seq": 41,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_overlay",
+            "name": "SCROLL",
+            "data": {
+              "offset": 5
+            },
+            "origin": "#_scxml_8",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external"
+          }
+        },
+        {
+          "seq": 42,
+          "type": "event",
+          "session": "A/overlay@2/scroll@2",
+          "event": {
+            "target": "#_scroll",
+            "name": "SCROLL",
+            "data": {
+              "offset": 5
+            },
+            "origin": "#_scxml_14",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external"
+          }
+        },
+        {
+          "seq": 43,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.report",
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 5
+            },
+            "origin": "#_scxml_15",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "scroll"
+          }
+        },
+        {
+          "seq": 44,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.report",
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 5
+            },
+            "origin": "#_scxml_14",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "overlay"
+          }
+        }
+      ],
+      "cleanup": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "ready": 1,
+              "reports": 1,
+              "rejected": 0,
+              "lastOffset": 5,
+              "errors": 0
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@1/scroll@1",
+            "parent": "A/overlay@1",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [],
+            "data": {
+              "owner": "A",
+              "epoch": 1
+            }
+          },
+          {
+            "id": "A/overlay@2",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "overlay",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@2/scroll@2",
+            "parent": "A/overlay@2",
+            "level": "scroll",
+            "nativeId": "scroll",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 5
+            }
+          }
+        ]
+      },
+      "unhandledRejections": []
+    },
+    {
+      "id": "F-03",
+      "variant": "unique",
+      "expected": "Reopen before releasing old overlay; distinct generation-native IDs keep fresh route working after old cleanup; stable logical overlay/scroll paths; B unchanged",
+      "checks": {
+        "reopenedBeforeRelease": true,
+        "differentNativeIds": true,
+        "stableLogicalPath": true,
+        "oldFinal": true,
+        "currentStillOpen": true,
+        "routeWorks": true,
+        "bUnchanged": true,
+        "noUnhandledRejection": true
+      },
+      "expectationMet": true,
+      "observed": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "overlayNativeId": "open.invokeid_1",
+              "owner": "A",
+              "epoch": 2,
+              "ready": 1,
+              "reports": 1,
+              "rejected": 0,
+              "lastOffset": 9,
+              "errors": 0
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@2",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_1",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "A",
+              "epoch": 2,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@2/scroll@2",
+            "parent": "A/overlay@2",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 9
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [],
+            "data": {
+              "owner": "A",
+              "epoch": 1
+            }
+          }
+        ]
+      },
+      "journal": [
+        {
+          "seq": 1,
+          "type": "entry",
+          "session": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 2,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "seq": 3,
+          "type": "entry",
+          "session": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 4,
+          "type": "entry",
+          "session": "B",
+          "state": "closed"
+        },
+        {
+          "seq": 5,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 6,
+          "type": "entry",
+          "session": "B",
+          "state": "open"
+        },
+        {
+          "seq": 7,
+          "type": "invoke.begin",
+          "parent": "B",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 8,
+          "type": "start.allowed",
+          "parent": "B",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 9,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 10,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "active"
+        },
+        {
+          "seq": 11,
+          "type": "invoke.begin",
+          "parent": "B/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 12,
+          "type": "start.allowed",
+          "parent": "B/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 13,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 14,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "active"
+        },
+        {
+          "seq": 15,
+          "type": "event",
+          "session": "B/overlay@1",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_19",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 16,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_18",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_0"
+          }
+        },
+        {
+          "seq": 17,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 18,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 19,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 20,
+          "type": "test.barrier.reached",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 21,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "CLOSE"
+          }
+        },
+        {
+          "seq": 22,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "seq": 23,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 24,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 25,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "open.invokeid_1",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 26,
+          "type": "start.allowed",
+          "parent": "A",
+          "localId": "open.invokeid_1",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 27,
+          "type": "entry",
+          "session": "A/overlay@2",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 28,
+          "type": "entry",
+          "session": "A/overlay@2",
+          "state": "active"
+        },
+        {
+          "seq": 29,
+          "type": "invoke.begin",
+          "parent": "A/overlay@2",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 30,
+          "type": "start.allowed",
+          "parent": "A/overlay@2",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 31,
+          "type": "entry",
+          "session": "A/overlay@2/scroll@2",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 32,
+          "type": "entry",
+          "session": "A/overlay@2/scroll@2",
+          "state": "active"
+        },
+        {
+          "seq": 33,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "A",
+              "epoch": 2
+            },
+            "origin": "#_scxml_21",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 34,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "A",
+              "epoch": 2
+            },
+            "origin": "#_scxml_20",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_1"
+          }
+        },
+        {
+          "seq": 35,
+          "type": "start.cancelled",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 36,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "SCROLL",
+            "data": {
+              "offset": 9
+            }
+          }
+        },
+        {
+          "seq": 37,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_open.invokeid_1",
+            "name": "SCROLL",
+            "data": {
+              "offset": 9
+            },
+            "origin": "#_scxml_16",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external"
+          }
+        },
+        {
+          "seq": 38,
+          "type": "event",
+          "session": "A/overlay@2/scroll@2",
+          "event": {
+            "target": "#_active.invokeid_0",
+            "name": "SCROLL",
+            "data": {
+              "offset": 9
+            },
+            "origin": "#_scxml_20",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external"
+          }
+        },
+        {
+          "seq": 39,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.report",
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 9
+            },
+            "origin": "#_scxml_21",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 40,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.report",
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 9
+            },
+            "origin": "#_scxml_20",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_1"
+          }
+        }
+      ],
+      "cleanup": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "overlayNativeId": "open.invokeid_1",
+              "owner": "A",
+              "epoch": 2,
+              "ready": 1,
+              "reports": 1,
+              "rejected": 0,
+              "lastOffset": 9,
+              "errors": 0
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@2",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_1",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "A",
+              "epoch": 2,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@2/scroll@2",
+            "parent": "A/overlay@2",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 9
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [],
+            "data": {
+              "owner": "A",
+              "epoch": 1
+            }
+          }
+        ]
+      },
+      "unhandledRejections": []
+    },
+    {
+      "id": "F-04",
+      "variant": "unique",
+      "expected": "Actual malformed overlay preparation becomes an explicit error relay to correct current parent; no READY, full A chain final, B unchanged, diagnostic retained and no unhandled rejection",
+      "checks": {
+        "realParserFailure": true,
+        "relayExplicit": true,
+        "correctRootClosed": true,
+        "allAffectedFinal": true,
+        "noFalseReady": true,
+        "faultAtRoot": true,
+        "bUnchanged": true,
+        "noUnhandledRejection": true
+      },
+      "expectationMet": true,
+      "observed": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "closed"
+            ],
+            "final": false,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "A",
+              "epoch": 1,
+              "ready": 0,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 1
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": true,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "reporting"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+            }
+          }
+        ]
+      },
+      "journal": [
+        {
+          "seq": 1,
+          "type": "entry",
+          "session": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 2,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "seq": 3,
+          "type": "entry",
+          "session": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 4,
+          "type": "entry",
+          "session": "B",
+          "state": "closed"
+        },
+        {
+          "seq": 5,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 6,
+          "type": "entry",
+          "session": "B",
+          "state": "open"
+        },
+        {
+          "seq": 7,
+          "type": "invoke.begin",
+          "parent": "B",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 8,
+          "type": "start.allowed",
+          "parent": "B",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 9,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 10,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "active"
+        },
+        {
+          "seq": 11,
+          "type": "invoke.begin",
+          "parent": "B/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 12,
+          "type": "start.allowed",
+          "parent": "B/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 13,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 14,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "active"
+        },
+        {
+          "seq": 15,
+          "type": "event",
+          "session": "B/overlay@1",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_26",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 16,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_25",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_0"
+          }
+        },
+        {
+          "seq": 17,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 18,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 19,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 20,
+          "type": "test.barrier.reached",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 21,
+          "type": "init.error",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          },
+          "error": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+        },
+        {
+          "seq": 22,
+          "type": "error-relay.start",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 23,
+          "type": "entry",
+          "session": "A/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 24,
+          "type": "entry",
+          "session": "A/overlay@1",
+          "state": "reporting"
+        },
+        {
+          "seq": 25,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "init.failed",
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+            },
+            "origin": "#_scxml_27",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_0"
+          }
+        },
+        {
+          "seq": 26,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        }
+      ],
+      "cleanup": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "closed"
+            ],
+            "final": true,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "A",
+              "epoch": 1,
+              "ready": 0,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 1
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": true,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "reporting"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+            }
+          }
+        ]
+      },
+      "unhandledRejections": []
+    },
+    {
+      "id": "F-05",
+      "variant": "unique",
+      "expected": "Actual malformed nested scroll preparation propagates through overlay to correct current root, cancels existing children, B unchanged, no READY or unhandled rejection",
+      "checks": {
+        "realParserFailure": true,
+        "relayExplicit": true,
+        "correctRootClosed": true,
+        "allAffectedFinal": true,
+        "noFalseReady": true,
+        "faultAtRoot": true,
+        "bUnchanged": true,
+        "noUnhandledRejection": true
+      },
+      "expectationMet": true,
+      "observed": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "closed"
+            ],
+            "final": false,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "A",
+              "epoch": 1,
+              "ready": 0,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 1
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "A",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@1/scroll@1",
+            "parent": "A/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": true,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "reporting"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+            }
+          }
+        ]
+      },
+      "journal": [
+        {
+          "seq": 1,
+          "type": "entry",
+          "session": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 2,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "seq": 3,
+          "type": "entry",
+          "session": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 4,
+          "type": "entry",
+          "session": "B",
+          "state": "closed"
+        },
+        {
+          "seq": 5,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 6,
+          "type": "entry",
+          "session": "B",
+          "state": "open"
+        },
+        {
+          "seq": 7,
+          "type": "invoke.begin",
+          "parent": "B",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 8,
+          "type": "start.allowed",
+          "parent": "B",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 9,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 10,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "active"
+        },
+        {
+          "seq": 11,
+          "type": "invoke.begin",
+          "parent": "B/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 12,
+          "type": "start.allowed",
+          "parent": "B/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 13,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 14,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "active"
+        },
+        {
+          "seq": 15,
+          "type": "event",
+          "session": "B/overlay@1",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_31",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 16,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_30",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_0"
+          }
+        },
+        {
+          "seq": 17,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 18,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 19,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 20,
+          "type": "start.allowed",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 21,
+          "type": "entry",
+          "session": "A/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 22,
+          "type": "entry",
+          "session": "A/overlay@1",
+          "state": "active"
+        },
+        {
+          "seq": 23,
+          "type": "invoke.begin",
+          "parent": "A/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 24,
+          "type": "test.barrier.reached",
+          "parent": "A/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 25,
+          "type": "init.error",
+          "parent": "A/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          },
+          "error": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+        },
+        {
+          "seq": 26,
+          "type": "error-relay.start",
+          "parent": "A/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 27,
+          "type": "entry",
+          "session": "A/overlay@1/scroll@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 28,
+          "type": "entry",
+          "session": "A/overlay@1/scroll@1",
+          "state": "reporting"
+        },
+        {
+          "seq": 29,
+          "type": "event",
+          "session": "A/overlay@1",
+          "event": {
+            "target": "#_parent",
+            "name": "init.failed",
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+            },
+            "origin": "#_scxml_33",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 30,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "init.failed",
+            "data": {
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: ",
+              "owner": "A",
+              "epoch": 1
+            },
+            "origin": "#_scxml_32",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_0"
+          }
+        },
+        {
+          "seq": 31,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        }
+      ],
+      "cleanup": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "closed"
+            ],
+            "final": true,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "A",
+              "epoch": 1,
+              "ready": 0,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 1
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "A",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@1/scroll@1",
+            "parent": "A/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": true,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "reporting"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+            }
+          }
+        ]
+      },
+      "unhandledRejections": []
+    },
+    {
+      "id": "F-06",
+      "variant": "unique",
+      "expected": "Old held overlay fails after new generation ready; diagnostic retained but old relay cannot close new generation or alter B; new route still works",
+      "checks": {
+        "reopenedBeforeRelease": true,
+        "differentNativeIds": true,
+        "stableLogicalPath": true,
+        "oldFinal": true,
+        "currentStillOpen": true,
+        "errorRetained": true,
+        "oldErrorRelay": true,
+        "routeWorks": true,
+        "bUnchanged": true,
+        "noUnhandledRejection": true
+      },
+      "expectationMet": true,
+      "observed": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "overlayNativeId": "open.invokeid_1",
+              "owner": "A",
+              "epoch": 2,
+              "ready": 1,
+              "reports": 1,
+              "rejected": 0,
+              "lastOffset": 9,
+              "errors": 0
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": false,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@2",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_1",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "A",
+              "epoch": 2,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@2/scroll@2",
+            "parent": "A/overlay@2",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": false,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 9
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": true,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [],
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+            }
+          }
+        ]
+      },
+      "journal": [
+        {
+          "seq": 1,
+          "type": "entry",
+          "session": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 2,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "seq": 3,
+          "type": "entry",
+          "session": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 4,
+          "type": "entry",
+          "session": "B",
+          "state": "closed"
+        },
+        {
+          "seq": 5,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 6,
+          "type": "entry",
+          "session": "B",
+          "state": "open"
+        },
+        {
+          "seq": 7,
+          "type": "invoke.begin",
+          "parent": "B",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 8,
+          "type": "start.allowed",
+          "parent": "B",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 9,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 10,
+          "type": "entry",
+          "session": "B/overlay@1",
+          "state": "active"
+        },
+        {
+          "seq": 11,
+          "type": "invoke.begin",
+          "parent": "B/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 12,
+          "type": "start.allowed",
+          "parent": "B/overlay@1",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "B",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 13,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 14,
+          "type": "entry",
+          "session": "B/overlay@1/scroll@1",
+          "state": "active"
+        },
+        {
+          "seq": 15,
+          "type": "event",
+          "session": "B/overlay@1",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_37",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 16,
+          "type": "event",
+          "session": "B",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "B",
+              "epoch": 1
+            },
+            "origin": "#_scxml_36",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_0"
+          }
+        },
+        {
+          "seq": 17,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 18,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 19,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 20,
+          "type": "test.barrier.reached",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 21,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "CLOSE"
+          }
+        },
+        {
+          "seq": 22,
+          "type": "entry",
+          "session": "A",
+          "state": "closed"
+        },
+        {
+          "seq": 23,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "OPEN"
+          }
+        },
+        {
+          "seq": 24,
+          "type": "entry",
+          "session": "A",
+          "state": "open"
+        },
+        {
+          "seq": 25,
+          "type": "invoke.begin",
+          "parent": "A",
+          "localId": "open.invokeid_1",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 26,
+          "type": "start.allowed",
+          "parent": "A",
+          "localId": "open.invokeid_1",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 27,
+          "type": "entry",
+          "session": "A/overlay@2",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 28,
+          "type": "entry",
+          "session": "A/overlay@2",
+          "state": "active"
+        },
+        {
+          "seq": 29,
+          "type": "invoke.begin",
+          "parent": "A/overlay@2",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 30,
+          "type": "start.allowed",
+          "parent": "A/overlay@2",
+          "localId": "active.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 2
+          }
+        },
+        {
+          "seq": 31,
+          "type": "entry",
+          "session": "A/overlay@2/scroll@2",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "seq": 32,
+          "type": "entry",
+          "session": "A/overlay@2/scroll@2",
+          "state": "active"
+        },
+        {
+          "seq": 33,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.ready",
+            "data": {
+              "owner": "A",
+              "epoch": 2
+            },
+            "origin": "#_scxml_39",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 34,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.ready",
+            "data": {
+              "owner": "A",
+              "epoch": 2
+            },
+            "origin": "#_scxml_38",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_1"
+          }
+        },
+        {
+          "seq": 35,
+          "type": "init.error",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          },
+          "error": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+        },
+        {
+          "seq": 36,
+          "type": "start.cancelled",
+          "parent": "A",
+          "localId": "open.invokeid_0",
+          "params": {
+            "owner": "A",
+            "epoch": 1
+          }
+        },
+        {
+          "seq": 37,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "name": "SCROLL",
+            "data": {
+              "offset": 9
+            }
+          }
+        },
+        {
+          "seq": 38,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_open.invokeid_1",
+            "name": "SCROLL",
+            "data": {
+              "offset": 9
+            },
+            "origin": "#_scxml_34",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external"
+          }
+        },
+        {
+          "seq": 39,
+          "type": "event",
+          "session": "A/overlay@2/scroll@2",
+          "event": {
+            "target": "#_active.invokeid_0",
+            "name": "SCROLL",
+            "data": {
+              "offset": 9
+            },
+            "origin": "#_scxml_38",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external"
+          }
+        },
+        {
+          "seq": 40,
+          "type": "event",
+          "session": "A/overlay@2",
+          "event": {
+            "target": "#_parent",
+            "name": "scroll.report",
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 9
+            },
+            "origin": "#_scxml_39",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "active.invokeid_0"
+          }
+        },
+        {
+          "seq": 41,
+          "type": "event",
+          "session": "A",
+          "event": {
+            "target": "#_parent",
+            "name": "overlay.report",
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 9
+            },
+            "origin": "#_scxml_38",
+            "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+            "type": "external",
+            "invokeid": "open.invokeid_1"
+          }
+        }
+      ],
+      "cleanup": {
+        "roots": {
+          "A": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "overlayNativeId": "open.invokeid_1",
+              "owner": "A",
+              "epoch": 2,
+              "ready": 1,
+              "reports": 1,
+              "rejected": 0,
+              "lastOffset": 9,
+              "errors": 0
+            }
+          },
+          "B": {
+            "configuration": [
+              "open"
+            ],
+            "final": true,
+            "data": {
+              "overlayNativeId": "open.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "ready": 1,
+              "reports": 0,
+              "rejected": 0,
+              "lastOffset": -1,
+              "errors": 0
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "B/overlay@1",
+            "parent": "B",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "B",
+              "epoch": 1,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "B/overlay@1/scroll@1",
+            "parent": "B/overlay@1",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "B",
+            "epoch": 1,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "B",
+              "epoch": 1,
+              "offset": 0
+            }
+          },
+          {
+            "id": "A/overlay@2",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_1",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "scrollNativeId": "active.invokeid_0",
+              "owner": "A",
+              "epoch": 2,
+              "rejected": 0
+            }
+          },
+          {
+            "id": "A/overlay@2/scroll@2",
+            "parent": "A/overlay@2",
+            "level": "scroll",
+            "nativeId": "active.invokeid_0",
+            "relay": false,
+            "owner": "A",
+            "epoch": 2,
+            "final": true,
+            "configuration": [
+              "active"
+            ],
+            "data": {
+              "owner": "A",
+              "epoch": 2,
+              "offset": 9
+            }
+          },
+          {
+            "id": "A/overlay@1",
+            "parent": "A",
+            "level": "overlay",
+            "nativeId": "open.invokeid_0",
+            "relay": true,
+            "owner": "A",
+            "epoch": 1,
+            "final": true,
+            "configuration": [],
+            "data": {
+              "owner": "A",
+              "epoch": 1,
+              "fault": "Error: Unexpected end\nLine: 1\nColumn: 0\nChar: "
+            }
+          }
+        ]
+      },
+      "unhandledRejections": []
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "kind": "research-binding-fixture",
+  "version": "0.1-research",
+  "status": "provisional-static-only",
+  "namespace": "reference",
+  "sources": [
+    {
+      "id": "autocomplete.interface",
+      "definition": "reference:Autocomplete",
+      "domain": "interface",
+      "format": "cem",
+      "path": "autocomplete/interface.json",
+      "formatVersion": "2.1.0",
+      "sha256": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f"
+    },
+    {
+      "id": "autocomplete.behavior",
+      "definition": "reference:Autocomplete",
+      "domain": "behavior",
+      "format": "scxml",
+      "path": "autocomplete/behavior.scxml",
+      "formatVersion": "1.0",
+      "sha256": "0fa5805928e199a794cb5255381e75714ce269ce5e50612aacefb6b595719fef"
+    },
+    {
+      "id": "autocomplete.accessibility",
+      "definition": "reference:Autocomplete",
+      "domain": "accessibility",
+      "format": "html",
+      "path": "autocomplete/accessibility.html",
+      "formatVersion": "html-host-fixture",
+      "sha256": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578"
+    },
+    {
+      "id": "autocomplete.visual",
+      "definition": "reference:Autocomplete",
+      "domain": "visual",
+      "format": "css",
+      "path": "autocomplete/layout.css",
+      "formatVersion": "pinned-partial-web-css",
+      "sha256": "0b35c46f2603501adef53c74296809c9dc8e025b1b3e685d6a6db781ed9f4461"
+    },
+    {
+      "id": "overlay.interface",
+      "definition": "reference:Overlay",
+      "domain": "interface",
+      "format": "cem",
+      "path": "overlay/interface.json",
+      "formatVersion": "2.1.0",
+      "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0"
+    },
+    {
+      "id": "overlay.behavior",
+      "definition": "reference:Overlay",
+      "domain": "behavior",
+      "format": "scxml",
+      "path": "overlay/behavior.scxml",
+      "formatVersion": "1.0",
+      "sha256": "d4061ec0b448776b9ed366579d8a37c071f5643d5351dcf166bdc4d8a1d4c84f"
+    },
+    {
+      "id": "overlay.accessibility",
+      "definition": "reference:Overlay",
+      "domain": "accessibility",
+      "format": "html",
+      "path": "overlay/accessibility.html",
+      "formatVersion": "html-host-fixture",
+      "sha256": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037"
+    },
+    {
+      "id": "overlay.visual",
+      "definition": "reference:Overlay",
+      "domain": "visual",
+      "format": "css",
+      "path": "overlay/layout.css",
+      "formatVersion": "pinned-partial-web-css",
+      "sha256": "2156b889363bbc9efc00dd3c8047f586971e237b832953fd60372fff6ff337a2"
+    },
+    {
+      "id": "scroll-area.interface",
+      "definition": "reference:ScrollArea",
+      "domain": "interface",
+      "format": "cem",
+      "path": "scroll-area/interface.json",
+      "formatVersion": "2.1.0",
+      "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d"
+    },
+    {
+      "id": "scroll-area.behavior",
+      "definition": "reference:ScrollArea",
+      "domain": "behavior",
+      "format": "scxml",
+      "path": "scroll-area/behavior.scxml",
+      "formatVersion": "1.0",
+      "sha256": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d"
+    },
+    {
+      "id": "scroll-area.accessibility",
+      "definition": "reference:ScrollArea",
+      "domain": "accessibility",
+      "format": "html",
+      "path": "scroll-area/accessibility.html",
+      "formatVersion": "html-host-fixture",
+      "sha256": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3"
+    },
+    {
+      "id": "scroll-area.visual",
+      "definition": "reference:ScrollArea",
+      "domain": "visual",
+      "format": "css",
+      "path": "scroll-area/layout.css",
+      "formatVersion": "pinned-partial-web-css",
+      "sha256": "ecd9b281b7ea5c03e32b9a2949b187ddfc78669284ff5cb177925ce258a7c1aa"
+    },
+    {
+      "id": "tokens",
+      "definition": null,
+      "domain": "visual",
+      "format": "dtcg",
+      "formatVersion": "2025.10",
+      "path": "visual/tokens.json",
+      "sha256": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "reference:Autocomplete",
+      "sources": [
+        "autocomplete.interface",
+        "autocomplete.behavior",
+        "autocomplete.accessibility",
+        "autocomplete.visual"
+      ]
+    },
+    {
+      "id": "reference:Overlay",
+      "sources": [
+        "overlay.interface",
+        "overlay.behavior",
+        "overlay.accessibility",
+        "overlay.visual"
+      ]
+    },
+    {
+      "id": "reference:ScrollArea",
+      "sources": [
+        "scroll-area.interface",
+        "scroll-area.behavior",
+        "scroll-area.accessibility",
+        "scroll-area.visual"
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "autocomplete.input",
+      "source": "autocomplete.interface",
+      "definition": "reference:Autocomplete",
+      "kind": "part",
+      "locator": "/modules/0/declarations/0/cssParts/0",
+      "revision": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f"
+    },
+    {
+      "id": "autocomplete.list",
+      "source": "autocomplete.interface",
+      "definition": "reference:Autocomplete",
+      "kind": "part",
+      "locator": "/modules/0/declarations/0/cssParts/1",
+      "revision": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f"
+    },
+    {
+      "id": "autocomplete.option",
+      "source": "autocomplete.interface",
+      "definition": "reference:Autocomplete",
+      "kind": "part",
+      "locator": "/modules/0/declarations/0/cssParts/2",
+      "revision": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f"
+    },
+    {
+      "id": "autocomplete.status",
+      "source": "autocomplete.interface",
+      "definition": "reference:Autocomplete",
+      "kind": "part",
+      "locator": "/modules/0/declarations/0/cssParts/3",
+      "revision": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f"
+    },
+    {
+      "id": "overlay.surface",
+      "source": "overlay.interface",
+      "definition": "reference:Overlay",
+      "kind": "part",
+      "locator": "/modules/0/declarations/0/cssParts/0",
+      "revision": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0"
+    },
+    {
+      "id": "overlay.content",
+      "source": "overlay.interface",
+      "definition": "reference:Overlay",
+      "kind": "part",
+      "locator": "/modules/0/declarations/0/cssParts/1",
+      "revision": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0"
+    },
+    {
+      "id": "scroll-area.viewport",
+      "source": "scroll-area.interface",
+      "definition": "reference:ScrollArea",
+      "kind": "part",
+      "locator": "/modules/0/declarations/0/cssParts/0",
+      "revision": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d"
+    },
+    {
+      "id": "scroll-area.content",
+      "source": "scroll-area.interface",
+      "definition": "reference:ScrollArea",
+      "kind": "part",
+      "locator": "/modules/0/declarations/0/cssParts/1",
+      "revision": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d"
+    }
+  ],
+  "uses": [
+    {
+      "path": [
+        "A"
+      ],
+      "definition": "reference:Autocomplete"
+    },
+    {
+      "path": [
+        "A",
+        "overlay"
+      ],
+      "definition": "reference:Overlay"
+    },
+    {
+      "path": [
+        "A",
+        "overlay",
+        "scroll"
+      ],
+      "definition": "reference:ScrollArea"
+    },
+    {
+      "path": [
+        "B"
+      ],
+      "definition": "reference:Autocomplete"
+    },
+    {
+      "path": [
+        "B",
+        "overlay"
+      ],
+      "definition": "reference:Overlay"
+    },
+    {
+      "path": [
+        "B",
+        "overlay",
+        "scroll"
+      ],
+      "definition": "reference:ScrollArea"
+    }
+  ],
+  "relations": [
+    {
+      "id": "A.input",
+      "kind": "host-part",
+      "target": "autocomplete.input",
+      "use": [
+        "A"
+      ],
+      "hostId": "A-input",
+      "role": "combobox"
+    },
+    {
+      "id": "A.list",
+      "kind": "host-part",
+      "target": "autocomplete.list",
+      "use": [
+        "A"
+      ],
+      "hostId": "A-list",
+      "role": "listbox"
+    },
+    {
+      "id": "A.option",
+      "kind": "host-part",
+      "target": "autocomplete.option",
+      "use": [
+        "A"
+      ],
+      "hostId": "A-option",
+      "role": "option"
+    },
+    {
+      "id": "A.status",
+      "kind": "host-part",
+      "target": "autocomplete.status",
+      "use": [
+        "A"
+      ],
+      "hostId": "A-status",
+      "role": "status"
+    },
+    {
+      "id": "A.overlay",
+      "kind": "host-part",
+      "target": "overlay.surface",
+      "use": [
+        "A",
+        "overlay"
+      ],
+      "hostId": "A-overlay",
+      "role": null
+    },
+    {
+      "id": "A.viewport",
+      "kind": "host-part",
+      "target": "scroll-area.viewport",
+      "use": [
+        "A",
+        "overlay",
+        "scroll"
+      ],
+      "hostId": "A-viewport",
+      "role": null
+    },
+    {
+      "id": "B.input",
+      "kind": "host-part",
+      "target": "autocomplete.input",
+      "use": [
+        "B"
+      ],
+      "hostId": "B-input",
+      "role": "combobox"
+    },
+    {
+      "id": "B.list",
+      "kind": "host-part",
+      "target": "autocomplete.list",
+      "use": [
+        "B"
+      ],
+      "hostId": "B-list",
+      "role": "listbox"
+    },
+    {
+      "id": "B.option",
+      "kind": "host-part",
+      "target": "autocomplete.option",
+      "use": [
+        "B"
+      ],
+      "hostId": "B-option",
+      "role": "option"
+    },
+    {
+      "id": "B.status",
+      "kind": "host-part",
+      "target": "autocomplete.status",
+      "use": [
+        "B"
+      ],
+      "hostId": "B-status",
+      "role": "status"
+    },
+    {
+      "id": "B.overlay",
+      "kind": "host-part",
+      "target": "overlay.surface",
+      "use": [
+        "B",
+        "overlay"
+      ],
+      "hostId": "B-overlay",
+      "role": null
+    },
+    {
+      "id": "B.viewport",
+      "kind": "host-part",
+      "target": "scroll-area.viewport",
+      "use": [
+        "B",
+        "overlay",
+        "scroll"
+      ],
+      "hostId": "B-viewport",
+      "role": null
+    },
+    {
+      "id": "event.value",
+      "kind": "event-type",
+      "interfaceSource": "autocomplete.interface",
+      "event": "value-change",
+      "behaviorSource": "autocomplete.behavior",
+      "locator": "//s:send[@event='value-change']/s:param[@name='value']",
+      "field": "value"
+    },
+    {
+      "id": "visual.gap",
+      "kind": "token-css",
+      "tokenSource": "tokens",
+      "tokenPath": "autocomplete.gap",
+      "cssSource": "overlay.visual",
+      "variable": "--gap",
+      "property": "margin-top"
+    },
+    {
+      "id": "visual.maxHeight",
+      "kind": "token-css",
+      "tokenSource": "tokens",
+      "tokenPath": "autocomplete.maxHeight",
+      "cssSource": "scroll-area.visual",
+      "variable": "--max-height",
+      "property": "max-height"
+    },
+    {
+      "id": "visual.rowHeight",
+      "kind": "token-css",
+      "tokenSource": "tokens",
+      "tokenPath": "autocomplete.rowHeight",
+      "cssSource": "autocomplete.visual",
+      "variable": "--row-height",
+      "property": "min-height"
+    }
+  ],
+  "host": "host.html",
+  "requiredRelations": [
+    "A.input",
+    "A.list",
+    "A.option",
+    "A.status",
+    "A.overlay",
+    "A.viewport",
+    "B.input",
+    "B.list",
+    "B.option",
+    "B.status",
+    "B.overlay",
+    "B.viewport",
+    "event.value",
+    "visual.gap",
+    "visual.maxHeight",
+    "visual.rowHeight"
+  ],
+  "policy": {
+    "types": "T0-plus-T1-closed-record",
+    "allowedRecursiveUses": false,
+    "allowedDimensionUnits": [
+      "px",
+      "rem"
+    ],
+    "extraRecordFields": "reject",
+    "runtimeCandidate": "native-idlocation-plus-explicit-error-relay-not-executed-here"
+  },
+  "runtimeCandidate": {
+    "package": "@scion-scxml/scxml",
+    "version": "4.3.28",
+    "adapter": "../../ip01-followup/adapter.cjs",
+    "adapterSha256": "c2d4d936ce3d90f7d397597edd0842d8a638aefb4646d30f5dc304cf9866b7bb",
+    "usage": "provenance-only; existing adapter whitelist does not accept this new static package; no runtime execution claimed"
+  }
+}

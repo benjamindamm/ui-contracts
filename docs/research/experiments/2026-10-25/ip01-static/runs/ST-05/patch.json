@@ -1,0 +1,3 @@
+{
+  "values.json": "{\n  \"query\": 42,\n  \"value\": \"k1\",\n  \"results\": [\n    {\n      \"key\": \"k1\",\n      \"label\": \"One\"\n    },\n    {\n      \"key\": \"k2\",\n      \"label\": \"Two\",\n      \"disabled\": true\n    }\n  ],\n  \"enabled\": true,\n  \"limit\": 7\n}\n"
+}

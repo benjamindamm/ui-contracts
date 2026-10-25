@@ -1,0 +1,37 @@
+[
+  {
+    "file": "drain/overlay.scxml",
+    "valid": true,
+    "errors": ""
+  },
+  {
+    "file": "drain/parent.scxml",
+    "valid": true,
+    "errors": ""
+  },
+  {
+    "file": "drain/scroll.scxml",
+    "valid": true,
+    "errors": ""
+  },
+  {
+    "file": "error-relay.scxml",
+    "valid": true,
+    "errors": ""
+  },
+  {
+    "file": "unique/overlay.scxml",
+    "valid": true,
+    "errors": ""
+  },
+  {
+    "file": "unique/parent.scxml",
+    "valid": true,
+    "errors": ""
+  },
+  {
+    "file": "unique/scroll.scxml",
+    "valid": true,
+    "errors": ""
+  }
+]

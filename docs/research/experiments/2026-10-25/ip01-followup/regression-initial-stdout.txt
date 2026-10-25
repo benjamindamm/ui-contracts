@@ -1,0 +1,82 @@
+[
+  {
+    "id": "LC-01",
+    "checks": {
+      "fourChildren": true,
+      "distinctObjects": true,
+      "parameters": true,
+      "parentContexts": true,
+      "sameLocalIds": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "LC-02",
+    "checks": {
+      "aUpdated": true,
+      "bUnchanged": true,
+      "noBReport": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "LC-03",
+    "checks": {
+      "nativeLocalReports": true,
+      "additionalForeignGuards": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "LC-04",
+    "checks": {
+      "aClosed": true,
+      "allAFinal": true,
+      "noLateReady": true,
+      "bUnchanged": true,
+      "noLateDescendant": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "LC-05",
+    "checks": {
+      "aClosed": true,
+      "allAFinal": true,
+      "noLateReady": true,
+      "bUnchanged": true,
+      "noLateDescendant": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "LC-06",
+    "checks": {
+      "newEpoch": true,
+      "oldChildFinal": true,
+      "staleRejected": true,
+      "newRoute": true,
+      "bUnchanged": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "LC-07",
+    "checks": {
+      "overlayFailurePropagated": false,
+      "scrollFailurePropagated": false,
+      "noFalseReady": true,
+      "bUnchanged": true
+    },
+    "expectationMet": false
+  },
+  {
+    "id": "LC-08",
+    "checks": {
+      "stableClosed": true,
+      "allAFinal": true,
+      "bUnchanged": true
+    },
+    "expectationMet": true
+  }
+]

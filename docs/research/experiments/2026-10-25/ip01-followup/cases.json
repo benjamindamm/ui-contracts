@@ -1,0 +1,12 @@
+{
+ "status":"preregistered-before-execution",
+ "new_cases":[
+  {"id":"F-01","variant":"drain","expected":"Queue reopen until held overlay initialization has resolved and native cancellation drained; same local invoke ID remains routable afterward; B unchanged"},
+  {"id":"F-02","variant":"drain","expected":"Queue reopen until held nested scroll initialization and both levels have drained; no old child active and new route works; B unchanged"},
+  {"id":"F-03","variant":"unique","expected":"Reopen before releasing old overlay; distinct generation-native IDs keep fresh route working after old cleanup; stable logical overlay/scroll paths; B unchanged"},
+  {"id":"F-04","variant":"unique","expected":"Actual malformed overlay preparation becomes an explicit error relay to correct current parent; no READY, full A chain final, B unchanged, diagnostic retained and no unhandled rejection"},
+  {"id":"F-05","variant":"unique","expected":"Actual malformed nested scroll preparation propagates through overlay to correct current root, cancels existing children, B unchanged, no READY or unhandled rejection"},
+  {"id":"F-06","variant":"unique","expected":"Old held overlay fails after new generation ready; diagnostic retained but old relay cannot close new generation or alter B; new route still works"}
+ ],
+ "regression":"LC-01 through LC-08 repeated for unique-native-ID variant; not counted again; same pre-existing expected behavior, logical level vs native ID recorded explicitly"
+}

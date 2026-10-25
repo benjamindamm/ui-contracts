@@ -1,10 +1,25 @@
 # Aktueller Nachweisstand
 
+**Recherche abgeschlossen:** [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md). iOS/Android sind spätere Perspektiven und keine Abschlussbedingung dieser Phase.
+
+
 Stand: 25. Oktober 2026. Mit study.json und dem offenen Register abgeglichen. Historische Zahlen und widerlegte Erwartungen bleiben in ihren jeweiligen Berichten.
 
-**2 offene Zellen: 2 Integration und 0 weitere. 641 unterschiedliche Bedingungen in 102 Gruppen.** 16/16 Kandidaten-Erstdurchgänge abgeschlossen. Vollständige Vier-Domänen-Integration bleibt unbelegt. Dokumentationsstand auf ausdrücklichen Nutzerauftrag lokal versioniert; kein Push.
+**2 offene Zellen: 2 Integration und 0 weitere. 702 unterschiedliche Bedingungen in 106 Gruppen.** 16/16 Kandidaten-Erstdurchgänge abgeschlossen. Ein ausgewählter Vier-Domänen-Webreferenzlauf ist begrenzt belegt; universelle Integration und vollständige IP-/native-/AT-Abnahme bleiben unbelegt. Abschlussstand auf Nutzerauftrag zur Versionierung und Übertragung auf origin/main freigegeben.
+
+## Gemeinsamer Integrationsvorschlag
+
+[IP-01](INTEGRATION-PROFILE.md) konsolidiert Rollen, Referenzen, Quellführung, Typ-/Event-/Zustandsbindung und die vollständige A/B→Overlay→ScrollArea-Komposition als Vorschlag. [Abnahmeplan](INTEGRATION-ACCEPTANCE.md) und [Belegindex](INTEGRATION-PROFILE-EVIDENCE.json) liegen vor. [Minimaler Bindungsentwurf](INTEGRATION-BINDING-DRAFT.md) und [konkrete Umsetzungsübergabe](IMPLEMENTATION-HANDOFF.md) ergänzen Zielarten, Instanzprüfung, Diagnosen und einen vorab spezifizierten Lifecyclekern. Der ursprüngliche Vorschlag ist Dokumentationsarbeit ohne neue Matrixbewertungen. Der ergänzende Lifecycleversuch ist unten separat gezählt; das T1-Datenmodell ist inzwischen statisch geprüft; der ausgewählte gemeinsame Hostablauf mit Events/Fokus/Scroll-/AX-Folge ist inzwischen konkret ausgeführt. Allgemeiner deklarativer Resolver, vollständige IP-Abnahme und native/AT-Übertragung bleiben offen. Versionierung des Abschlussstands auf Nutzerauftrag freigegeben.
 
 ## Belegte Nachweisblöcke, aktuellster zuerst
+
+[Gemeinsamer Browserlauf abgeschlossen](experiments/2026-10-25/ip01-browser/REPORT.md): 20 vorregistrierte Bedingungen erfüllt. Original-SCXML-Interpreter, tatsächliche Events/Fokus/Scrollmessungen und echte Chromium-AX-Zustände in einer gepinnten Quellenrevision; eigener Invoker/Fehlerrelay/Hostadapter sichtbar. Eigene Erstfehler erhalten und voller finaler Block nach Korrektur wiederholt. Keine echte IME-/Screenreader-/Native-Abnahme. Die beauftragte Runde ist abgeschlossen; es läuft keine weitere Forschungs-/Testrunde.
+
+[Gemeinsames statisches IP-01-Referenzpaket](experiments/2026-10-25/ip01-static/REPORT.md): drei Definitionen und vier Domänen an einem konkreten Quellenabschluss; 27 vorregistrierte Erwartungen erfüllt. Original-CEM-/SCXML-Schemas, tatsächlicher TypeScript-AST und zusätzliche Typ-/Wert-/Referenz-/Instanz-/Revisions-/Token-CSS-Bindungen getrennt. Statische Anteile A01–A04/A15 konkret, vollständige Gates und Hostlauf weiterhin offen.
+
+[Gezielte Lifecyclefolgevarianten](experiments/2026-10-25/ip01-followup/REPORT.md): sechs neue vorregistrierte Bedingungen erfüllt; acht LC-Erwartungen als nicht erneut gezählte Regression erfüllt. Drain und native idlocation getrennt geprüft; expliziter Fehlerrelay leitet echte Parserfehler an die aktuelle Sitzung weiter. Die zwei vorherigen Original-/Adaptergegenbefunde bleiben erhalten. Kein vollständiges IP-Gate abgenommen.
+
+[Zweistufiger IP-01-Lifecyclekern](experiments/2026-10-25/ip01-lifecycle/REPORT.md): acht vorregistrierte Bedingungen tatsächlich ausgeführt, sechs erfüllt und zwei verletzt. LC-06 verliert beim sofortigen Reopen nach alter Bereinigung die neue Invoke-Route; LC-07 leitet Initialisierungsfehler nicht an den richtigen Root weiter. IP-A05/A06 nur teilweise untersucht und weiterhin offen. Keine Matrixbewertung geändert.
 
 [Acht autonome Restfragen konkret ausgeführt](AUTONOMOUS-8-REVIEW.md):38 neue Bedingungen in7 Gruppen, alle final erfüllt. uSpec-Fremdreferenz/Quellführung, zwei getrennte Fachbeiträge und vier zusätzliche Layoutbindungen jeweils A/C536–C543. Initialer Flex-/Zeilen-Erwartungsfehler erhalten. [Zwei konkret fehlende Originalklärungen](REMAINING-2.md); keine neue Frage an Autoren und keine volle Gesamtintegration behauptet.
 

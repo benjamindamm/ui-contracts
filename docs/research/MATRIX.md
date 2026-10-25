@@ -1,6 +1,6 @@
 # Anforderungsorientierte Abdeckungsmatrix
 
-**Aktueller Stand,25. Oktober2026:** 16/16 Erstdurchgänge abgeschlossen;2 offene Nachweise (2 Integration,0 weitere),641 Bedingungen/102 Gruppen. Vollständige Integration bleibt unbelegt. [Aktueller Status](CURRENT-STATUS.md), [29er-Abgleich](REMAINING-29-REVIEW.md), [historische Notizen](MATRIX-PROGRESS-HISTORY.md).
+**Aktueller Stand,25. Oktober2026:** 16/16 Erstdurchgänge abgeschlossen;2 offene Nachweise (2 Integration,0 weitere),702 Bedingungen/106 Gruppen. Begrenzter gemeinsamer Webreferenzlauf belegt; universelle Integration bleibt unbelegt. [Aktueller Status](CURRENT-STATUS.md), [29er-Abgleich](REMAINING-29-REVIEW.md), [historische Notizen](MATRIX-PROGRESS-HISTORY.md).
 
 
 Stand: 25. Oktober 2026. **Kandidaten-Durchgänge und gezielte Folgeprüfungen, weiterhin mit offenen Zellen.** Anforderungen stehen links, Kandidaten als Spalten. Zwei Spaltenblöcke je Abschnitt dienen nur der Lesbarkeit; dieselbe Anforderung gilt in beiden Blöcken. Die Kandidaten sind Beiträge unterschiedlicher Art, keine gleichartigen Komplettlösungen.

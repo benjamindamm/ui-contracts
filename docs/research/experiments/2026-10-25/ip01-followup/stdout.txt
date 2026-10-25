@@ -1,0 +1,84 @@
+[
+  {
+    "id": "F-01",
+    "expectationMet": true,
+    "checks": {
+      "reopenWaited": true,
+      "oldChainFinal": true,
+      "sameLocalNativeId": true,
+      "routeWorks": true,
+      "bUnchanged": true,
+      "noUnhandledRejection": true
+    }
+  },
+  {
+    "id": "F-02",
+    "expectationMet": true,
+    "checks": {
+      "reopenWaited": true,
+      "oldChainFinal": true,
+      "sameLocalNativeId": true,
+      "routeWorks": true,
+      "bUnchanged": true,
+      "noUnhandledRejection": true
+    }
+  },
+  {
+    "id": "F-03",
+    "expectationMet": true,
+    "checks": {
+      "reopenedBeforeRelease": true,
+      "differentNativeIds": true,
+      "stableLogicalPath": true,
+      "oldFinal": true,
+      "currentStillOpen": true,
+      "routeWorks": true,
+      "bUnchanged": true,
+      "noUnhandledRejection": true
+    }
+  },
+  {
+    "id": "F-04",
+    "expectationMet": true,
+    "checks": {
+      "realParserFailure": true,
+      "relayExplicit": true,
+      "correctRootClosed": true,
+      "allAffectedFinal": true,
+      "noFalseReady": true,
+      "faultAtRoot": true,
+      "bUnchanged": true,
+      "noUnhandledRejection": true
+    }
+  },
+  {
+    "id": "F-05",
+    "expectationMet": true,
+    "checks": {
+      "realParserFailure": true,
+      "relayExplicit": true,
+      "correctRootClosed": true,
+      "allAffectedFinal": true,
+      "noFalseReady": true,
+      "faultAtRoot": true,
+      "bUnchanged": true,
+      "noUnhandledRejection": true
+    }
+  },
+  {
+    "id": "F-06",
+    "expectationMet": true,
+    "checks": {
+      "reopenedBeforeRelease": true,
+      "differentNativeIds": true,
+      "stableLogicalPath": true,
+      "oldFinal": true,
+      "currentStillOpen": true,
+      "errorRetained": true,
+      "oldErrorRelay": true,
+      "routeWorks": true,
+      "bUnchanged": true,
+      "noUnhandledRejection": true
+    }
+  }
+]

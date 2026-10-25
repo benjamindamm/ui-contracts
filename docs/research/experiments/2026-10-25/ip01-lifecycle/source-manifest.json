@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-25",
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_code_modified": false,
+  "original_files": [
+    {
+      "file": "work/scxml-runtime/tool/package-lock.json",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-runtime/tool/package-lock.json",
+      "sha256": "2d23cda3e0d12a9f05545ad0d9f2415241a2c66546ab9516a6de3a2503b1712c"
+    },
+    {
+      "file": "work/scxml-runtime/tool/node_modules/@scion-scxml/scxml/lib/runtime/invokers.js",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-runtime/tool/node_modules/@scion-scxml/scxml/lib/runtime/invokers.js",
+      "sha256": "1c7c71727607349b7e760d8d6586519ec53faccff5a35f3e0798fc0f69e9a0bf"
+    },
+    {
+      "file": "work/scxml-runtime/tool/node_modules/@scion-scxml/core-base/lib/scion-core-base.js",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-runtime/tool/node_modules/@scion-scxml/core-base/lib/scion-core-base.js",
+      "sha256": "34a6220d4b11ef2c0437f43357dbcb4b093d06e79e72a0d0b571667c81b2a2b2"
+    },
+    {
+      "file": "work/scxml-runtime/tool/node_modules/@scion-scxml/scxml/package.json",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-runtime/tool/node_modules/@scion-scxml/scxml/package.json",
+      "sha256": "77ed2c74421b3f60db090f4659059953e5424403734f2b2e5a69b297009b7779"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-module-external.xsd",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-probes/sources/scxml-module-external.xsd",
+      "sha256": "899b13488332a6b37700ea53766e16d39b1b4f38fb829d0d3b12f0955a08057d"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml.xsd",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-probes/sources/scxml.xsd",
+      "sha256": "98e14d0e03d5f9bb49b03fe4a2c24d72c165789d68fe93eee24fc403e4b23b48"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-contentmodels.xsd",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-probes/sources/scxml-contentmodels.xsd",
+      "sha256": "704baaf6e19c480fa76039390dc0a0e045f5544b5f68ec294c47fe51d40d0053"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-module-core.xsd",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-probes/sources/scxml-module-core.xsd",
+      "sha256": "cbe0cde7a2cc165b84263e0dad45abd74296ed99a9196611e4b0c98b494222e4"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-attribs.xsd",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-probes/sources/scxml-attribs.xsd",
+      "sha256": "b74de05e9e8d86123a4e8cca6655761fae78009e8d63b95cc27ae38222a2de01"
+    },
+    {
+      "file": "work/scxml-probes/sources/xml.xsd",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-probes/sources/xml.xsd",
+      "sha256": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-datatypes.xsd",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-probes/sources/scxml-datatypes.xsd",
+      "sha256": "51036cac697db9be6f92ad853215dc3166990ca292786fed1612d0666932163b"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-module-data.xsd",
+      "local_provenance_path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/scxml-probes/sources/scxml-module-data.xsd",
+      "sha256": "c34438431aa5d9815a63a64415e3127b832abd451ca509ff79a89d529dddba47"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "97895b05699790b23ba1c507e398302c77e6d773a240f17485d9f8cf3ff449ee"
+    },
+    {
+      "file": "adapter.cjs",
+      "sha256": "14889f9644c24b6a3d4b93e90c5cf0b763f619a4dd1ddb2c8d07a07cae5254a5"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "5c9b39005fbc65e9ddf10281831e6ddf6a0dabbe2acf74512150465dc66e04cf"
+    },
+    {
+      "file": "overlay.scxml",
+      "sha256": "c1337eb6b389592fdc321a5aed29777df9ed98f6df6e702c59846d850bc3aaa7"
+    },
+    {
+      "file": "parent.scxml",
+      "sha256": "84038ca2499ba058df033d8d0bef05f54b677387e5593ca6a119aec4c1a812f4"
+    },
+    {
+      "file": "results-initial.json",
+      "sha256": "69ede022b865af2d776caccbf76e71705100814d7d39604ff596f8c0d3e9c944"
+    },
+    {
+      "file": "results.json",
+      "sha256": "f27e932c48ead843b75d96e3987d2d8b0954061a5e19102e70994d1fb3380b6f"
+    },
+    {
+      "file": "run-initial.cjs",
+      "sha256": "a16be2168403c82654e72293c856c1180c05513bee28b6f1076fcd4d13ab0822"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "d731fa5931142a469d87db44dce43d4e670be9bb922cd58caa4628c46ae0c1be"
+    },
+    {
+      "file": "schema-preflight.json",
+      "sha256": "d6043ba726577b2440cb356f9f4819bf3ec8e3de9ceeb96b6a37c8e09f83456c"
+    },
+    {
+      "file": "scroll.scxml",
+      "sha256": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d"
+    },
+    {
+      "file": "stderr-initial.txt",
+      "sha256": "3116718e0bfe68ce01baf4918a88aaa5da858ce1508e70426e0f440862d6ec04"
+    },
+    {
+      "file": "stderr.txt",
+      "sha256": "47ae999443fc9137c8ffd7fb59b083f5d4925fc5f0b3f0b0ffe0b6d997f489a9"
+    },
+    {
+      "file": "stdout-initial.txt",
+      "sha256": "769a38b34355e4aa11acf7083d1616fd3322294546a78783259beaacdc28106c"
+    },
+    {
+      "file": "stdout.txt",
+      "sha256": "769a38b34355e4aa11acf7083d1616fd3322294546a78783259beaacdc28106c"
+    },
+    {
+      "file": "verify_export.py",
+      "sha256": "cb75f01d9bc4532124a336c669249fa3749b2c61727e484cc73ac54aa7691cdd"
+    }
+  ],
+  "scope": "Eight conditions; six met and two violated; no full IP gate passed; baseline and rerun are counted once."
+}

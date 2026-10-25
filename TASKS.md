@@ -1,6 +1,6 @@
 # Aufgaben und Fortschritt
 
-Stand:25. Oktober2026. **2 offene Nachweise:Google DESIGN.md X06 und OpenUI X06.**16/16 Erstdurchgänge,641 Bedingungen/102 Gruppen,543 Claims. Alle27 anderen Zellen des29er-Ausgangsstands sind inzwischen im jeweils dokumentierten begrenzten Umfang eingeordnet; vollständige universelle Integration bleibt unbelegt.
+Stand:25. Oktober2026. **2 offene Nachweise:Google DESIGN.md X06 und OpenUI X06.**16/16 Erstdurchgänge,702 Bedingungen/106 Gruppen,543 Claims. Alle27 anderen Zellen des29er-Ausgangsstands sind inzwischen im jeweils dokumentierten begrenzten Umfang eingeordnet; vollständige universelle Integration bleibt unbelegt.
 
 ## Abgeschlossen
 
@@ -19,23 +19,38 @@ Stand:25. Oktober2026. **2 offene Nachweise:Google DESIGN.md X06 und OpenUI X06.
 
 [Genau fehlende Originalinformation und bereits ausgeschöpfte Pfade](docs/research/REMAINING-2.md). Keine Autorenanfrage wurde versandt.0 weitere autonom offene Matrixzellen ist kein Nachweis einer fertigen universellen Produktsprache, jeder Kandidatenkombination, vollständiger Produktions-/Lifecycle- oder Crossplattform-/AT-Konformität.
 
-## Offene gemeinsame Integrationsarbeit
+## Integrationsbefunde und spätere Umsetzung
 
-Diese Aufgaben sind **zusätzlich zu den zwei Matrixzellen** offen; sie verändern deren Zählung nicht. [Belegter Projektlückenabgleich](docs/research/PROJECT-GAPS.md).
+Die angehakten Punkte sind abgeschlossene Forschungsbeiträge. Die nicht angehakten Punkte sind **spätere Umsetzung oder stärkere Validierung**, keine Blocker für den aktuellen Rechercheabschluss; sie verändern die Zahl der Matrixzellen nicht. [Belegter Projektlückenabgleich](docs/research/PROJECT-GAPS.md).
 
-- [ ] Konkrete Kombination und Versionen der Originalartefakte sowie Rollen je Domäne begründet festlegen.
-- [ ] Gemeinsames Integrationsprofil für Definitionen, Instanzen, Teile, Typen/Events/Zustände, führende Quellen und Konflikte konsolidieren; Bedarf eines eigenen Artefakts erst daraus ableiten.
-- [ ] Vollständige Autocomplete-A/B→Overlay→ScrollArea-Komposition mit Parametern, Ereignissen, Fokus/Scrollen und Lebenszyklus beschreiben und anschließend zusammen prüfen.
-- [ ] Benötigten Typumfang, Versions-/Migrations-/Namespace-/Zyklusregeln und noch offene Beispielabläufe festlegen.
-- [ ] Einen durchgängigen positiven/negativen Akzeptanzlauf für dasselbe gewählte Paket ableiten; einzelne Forschungsgruppen nicht als Gesamtprüfung zählen.
-- [ ] Für die spätere Umsetzung Zielplattformen, Assistenztechnikabnahme, Mindest-Reifegrad und ausführbare Agenten-/Skillübergabe getrennt planen.
+- [x] Gemeinsamen [Integrationsvorschlag IP-01](docs/research/INTEGRATION-PROFILE.md) mit gepinnten Rollen, Definition/Instanz/Teil, Quellführung, Typen, Zuständen und Versionsregeln konsolidieren.
+- [x] Vollständige A/B→Overlay→ScrollArea-Komposition und fachliche Beispielabläufe als Vorschlag beschreiben.
+- [x] [Gemeinsame positive und negative Abnahme](docs/research/INTEGRATION-ACCEPTANCE.md) für dieselbe Paketrevision planen; vorhandene Belege und Gegenbefunde im [Belegindex](docs/research/INTEGRATION-PROFILE-EVIDENCE.json) binden.
+- [x] [Minimalen Bindungsentwurf](docs/research/INTEGRATION-BINDING-DRAFT.md) und [Coding-Agenten-Übergabe](docs/research/IMPLEMENTATION-HANDOFF.md) mit priorisiertem Lifecyclekern und fachlichen Randfällen dokumentieren.
+- [ ] Referenzkombination, konkrete Bindungssyntax und fachlichen Profilumfang anhand des Vorschlags prüfen und für die Umsetzung festlegen.
+- [x] Den begrenzten zweistufigen [Lifecyclekern](docs/research/experiments/2026-10-25/ip01-lifecycle/REPORT.md) tatsächlich ausführen und alle acht Ergebnisse erhalten: sechs erfüllt, zwei verletzt.
+- [x] [LC-06-/LC-07-Folgevarianten](docs/research/experiments/2026-10-25/ip01-followup/REPORT.md) vorregistrieren und ausführen: sechs neue Bedingungen und acht nicht erneut gezählte Regressionen erfüllt; native idlocation und expliziter Fehlerrelay als begrenzter Forschungskandidat. Originalgegenbefunde erhalten.
+- [x] [Gemeinsames statisches Forschungsreferenzpaket](docs/research/experiments/2026-10-25/ip01-static/REPORT.md) mit drei Definitionen, vier Domänen, tatsächlichen Dateien und 27 erfüllten vorregistrierten Bedingungen erstellen; T0/T1/Optionalität/Defaults und semantische Gegenfälle konkret prüfen.
+- [x] Einen [gemeinsamen eigenen Webforschungs-Host](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md) tatsächlich ausführen: 20 vorregistrierte Bedingungen für öffentliche Events, Fokus/Scrollsichtbarkeit, Lifecycle, Provider-/Kompositionsfälle und AX-Zustandsfolge erfüllt; neue eigene Behavior-/Hostquellen und Adapterbindung explizit gepinnt.
+- [ ] Allgemeinen deklarativen Runtime-Resolver, vollständige IP-Gates und sämtliche öffentlichen API-/Theme-/Änderungsvarianten abnehmen; der konkrete Hostcode ersetzt diese Nachweise nicht.
+- [ ] Spätere Produktvalidierung und ausführbare Agenten-/Skillübergabe planen.
+
+## Zukunftsperspektive außerhalb dieser Recherche
+
+iOS, Android und weitere native Ziele sind nach Nutzerfestlegung Zukunftsmusik. Sie sind keine offene Testpflicht und keine Abschlussbedingung der aktuellen Recherche. Echte Assistenztechnik-/IME- und weitergehende Produktnachweise sind bei späteren entsprechenden Zusagen getrennt einzuplanen.
 
 ## Arbeitsregeln
 
 - Zusammenhängende Arbeitspakete ohne Rückfragen nach jedem kleinen Schritt.
-- Keine Zwischen-Commits, kein Push.
+- Keine Zwischen-Commits; Commit und Push erfolgen auf ausdrücklichen Nutzerauftrag.
 - Original, zusätzlicher Adapter, Vorschlag und fehlender Beleg bleiben getrennt.
 - Wiederholungen nicht zusätzlich zählen; gemeinsame Bedingungen können mehrere einzeln begründete Kriterien stützen.
 - Fehlende Originalinformation nicht durch eigene Formatwahl oder pauschalen Negativbeweis ersetzen.
 
 [Aktueller Status](docs/research/CURRENT-STATUS.md) · [Acht tatsächliche Folgebeiträge](docs/research/AUTONOMOUS-8-REVIEW.md) · [Restqueue](docs/research/REMAINDER-PLAN.md) · [Historische10er-Aufgaben](docs/research/TASKS-10-HISTORY.md)
+
+## Abschluss dieser Recherche- und Testrunde
+
+[Abschlussübersicht mit Lesereihenfolge und Datenzuordnung](docs/research/RESEARCH-CLOSEOUT.md).
+
+Auf Nutzerauftrag abgeschlossen: gemeinsame Vorschläge, statische Bindung, Lifecyclefolgevarianten und konkreter Browserlauf sind gesichert und abgeglichen. Es startet keine weitere Runde. Die zwei Originalklärungen und stärkere universelle/native/Assistenztechnik-Nachweise bleiben als Grenzen offen; sie sind nicht als erledigt markiert. [Abschlussbericht](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md) · [Ziel und Einschätzung](docs/research/ARCHITECTURE-DIRECTION.md). Abschlussstand auf Nutzerauftrag zur Versionierung und Übertragung auf origin/main freigegeben.

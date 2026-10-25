@@ -1,0 +1,5 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" name="ResearchScroll" datamodel="ecmascript" initial="active">
+<datamodel><data id="owner" expr="'unset'"/><data id="epoch" expr="0"/><data id="offset" expr="0"/></datamodel>
+<state id="active"><onentry><send event="scroll.ready" target="#_parent"><param name="owner" expr="owner"/><param name="epoch" expr="epoch"/></send></onentry>
+<transition event="SCROLL"><assign location="offset" expr="_event.data.offset"/><send event="scroll.report" target="#_parent"><param name="owner" expr="owner"/><param name="epoch" expr="epoch"/><param name="offset" expr="offset"/></send></transition>
+</state></scxml>

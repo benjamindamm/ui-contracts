@@ -1,5 +1,8 @@
 **Einordnung dieses Entwurfs:** Die folgenden Zahlen und „noch nicht ausgeführt“-Aussagen bewahren frühere Prüfrunden. Aktuelle Matrixnachweise stehen in [CURRENT-STATUS](CURRENT-STATUS.md); zusätzlich offene gemeinsame Integrationsarbeit in [PROJECT-GAPS](PROJECT-GAPS.md). Die begrenzten späteren Adapterversuche ersetzen noch keine fertige gemeinsame Architektur.
 
+**Konsolidierter Vorschlag vom 25. Oktober 2026:** [IP-01](INTEGRATION-PROFILE.md) mit [geplanter Gesamt-Abnahme](INTEGRATION-ACCEPTANCE.md). Der folgende Text bewahrt den historischen Arbeitsstand.
+
+
 **Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
 
 **Typisierte Referenzbindung geprüft:** [ARIA-Host → externe CEM-/SCXML-Knoten](experiments/2026-10-25/typed-references/REPORT.md), 16 Erwartungen erfüllt, Original-CEM/SCXML-Schemas separat akzeptiert. WAI-ARIA X03 begrenzt A/C462 durch Zusatzresolver; keine native ARIA-Modellreferenz. Aktuell 54 U, 299 Bedingungen/36 Gruppen.

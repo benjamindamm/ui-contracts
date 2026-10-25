@@ -1,0 +1,1508 @@
+{
+  "kind": "static-research-reference-package",
+  "cases": [
+    {
+      "id": "ST-01",
+      "mutation": "baseline",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "expectationMet": true,
+      "detail": null,
+      "revision": "26ec76d995f26c6b4b4f4cf8e331ed8ad09aa9e61761f2960d13719b83aba991",
+      "resolvedRecord": "runs/ST-01/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "witnesses": [
+        {
+          "relation": "A.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "input",
+          "hostId": "A-input"
+        },
+        {
+          "relation": "A.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "list",
+          "hostId": "A-list"
+        },
+        {
+          "relation": "A.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "option",
+          "hostId": "A-option"
+        },
+        {
+          "relation": "A.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "status",
+          "hostId": "A-status"
+        },
+        {
+          "relation": "A.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "A",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "A-overlay"
+        },
+        {
+          "relation": "A.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "A",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "A-viewport"
+        },
+        {
+          "relation": "B.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "input",
+          "hostId": "B-input"
+        },
+        {
+          "relation": "B.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "list",
+          "hostId": "B-list"
+        },
+        {
+          "relation": "B.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "option",
+          "hostId": "B-option"
+        },
+        {
+          "relation": "B.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "status",
+          "hostId": "B-status"
+        },
+        {
+          "relation": "B.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "B",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "B-overlay"
+        },
+        {
+          "relation": "B.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "B",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "B-viewport"
+        }
+      ],
+      "types": {
+        "typescript": "5.9.3",
+        "members": {
+          "query": {
+            "kind": "string"
+          },
+          "value": {
+            "kind": "optional",
+            "item": {
+              "kind": "string"
+            }
+          },
+          "results": {
+            "kind": "array",
+            "item": {
+              "kind": "record",
+              "fields": {
+                "key": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "label": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "disabled": {
+                  "type": {
+                    "kind": "boolean"
+                  },
+                  "optional": true
+                }
+              }
+            }
+          },
+          "enabled": {
+            "kind": "boolean"
+          },
+          "limit": {
+            "kind": "number"
+          }
+        },
+        "events": {
+          "value-change": {
+            "kind": "event",
+            "payload": {
+              "kind": "record",
+              "fields": {
+                "value": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "visual": {
+        "gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "maxHeight": {
+          "value": 160,
+          "unit": "px"
+        },
+        "rowHeight": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "additionalScope": "bounded static resolver/type/default/dimension checks; HTML parsed but no original ARIA validator, DOM runtime, CSS evaluation or AT"
+    },
+    {
+      "id": "ST-02",
+      "mutation": "valid-values",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "expectationMet": true,
+      "detail": null,
+      "revision": "26ec76d995f26c6b4b4f4cf8e331ed8ad09aa9e61761f2960d13719b83aba991",
+      "resolvedRecord": "runs/ST-02/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "witnesses": [
+        {
+          "relation": "A.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "input",
+          "hostId": "A-input"
+        },
+        {
+          "relation": "A.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "list",
+          "hostId": "A-list"
+        },
+        {
+          "relation": "A.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "option",
+          "hostId": "A-option"
+        },
+        {
+          "relation": "A.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "status",
+          "hostId": "A-status"
+        },
+        {
+          "relation": "A.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "A",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "A-overlay"
+        },
+        {
+          "relation": "A.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "A",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "A-viewport"
+        },
+        {
+          "relation": "B.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "input",
+          "hostId": "B-input"
+        },
+        {
+          "relation": "B.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "list",
+          "hostId": "B-list"
+        },
+        {
+          "relation": "B.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "option",
+          "hostId": "B-option"
+        },
+        {
+          "relation": "B.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "status",
+          "hostId": "B-status"
+        },
+        {
+          "relation": "B.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "B",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "B-overlay"
+        },
+        {
+          "relation": "B.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "B",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "B-viewport"
+        }
+      ],
+      "types": {
+        "typescript": "5.9.3",
+        "members": {
+          "query": {
+            "kind": "string"
+          },
+          "value": {
+            "kind": "optional",
+            "item": {
+              "kind": "string"
+            }
+          },
+          "results": {
+            "kind": "array",
+            "item": {
+              "kind": "record",
+              "fields": {
+                "key": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "label": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "disabled": {
+                  "type": {
+                    "kind": "boolean"
+                  },
+                  "optional": true
+                }
+              }
+            }
+          },
+          "enabled": {
+            "kind": "boolean"
+          },
+          "limit": {
+            "kind": "number"
+          }
+        },
+        "events": {
+          "value-change": {
+            "kind": "event",
+            "payload": {
+              "kind": "record",
+              "fields": {
+                "value": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "visual": {
+        "gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "maxHeight": {
+          "value": 160,
+          "unit": "px"
+        },
+        "rowHeight": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "additionalScope": "bounded static resolver/type/default/dimension checks; HTML parsed but no original ARIA validator, DOM runtime, CSS evaluation or AT"
+    },
+    {
+      "id": "ST-03",
+      "mutation": "omit-optionals",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "expectationMet": true,
+      "detail": null,
+      "revision": "b76e180810b0533e61f29b6c6126a5dff188dca43a08d88075ac62b6383978b9",
+      "resolvedRecord": "runs/ST-03/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ],
+      "witnesses": [
+        {
+          "relation": "A.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "input",
+          "hostId": "A-input"
+        },
+        {
+          "relation": "A.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "list",
+          "hostId": "A-list"
+        },
+        {
+          "relation": "A.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "option",
+          "hostId": "A-option"
+        },
+        {
+          "relation": "A.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "A"
+          ],
+          "part": "status",
+          "hostId": "A-status"
+        },
+        {
+          "relation": "A.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "A",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "A-overlay"
+        },
+        {
+          "relation": "A.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "A",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "A-viewport"
+        },
+        {
+          "relation": "B.input",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "input",
+          "hostId": "B-input"
+        },
+        {
+          "relation": "B.list",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "list",
+          "hostId": "B-list"
+        },
+        {
+          "relation": "B.option",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "option",
+          "hostId": "B-option"
+        },
+        {
+          "relation": "B.status",
+          "definition": "reference:Autocomplete",
+          "instance": [
+            "B"
+          ],
+          "part": "status",
+          "hostId": "B-status"
+        },
+        {
+          "relation": "B.overlay",
+          "definition": "reference:Overlay",
+          "instance": [
+            "B",
+            "overlay"
+          ],
+          "part": "surface",
+          "hostId": "B-overlay"
+        },
+        {
+          "relation": "B.viewport",
+          "definition": "reference:ScrollArea",
+          "instance": [
+            "B",
+            "overlay",
+            "scroll"
+          ],
+          "part": "viewport",
+          "hostId": "B-viewport"
+        }
+      ],
+      "types": {
+        "typescript": "5.9.3",
+        "members": {
+          "query": {
+            "kind": "string"
+          },
+          "value": {
+            "kind": "optional",
+            "item": {
+              "kind": "string"
+            }
+          },
+          "results": {
+            "kind": "array",
+            "item": {
+              "kind": "record",
+              "fields": {
+                "key": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "label": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                },
+                "disabled": {
+                  "type": {
+                    "kind": "boolean"
+                  },
+                  "optional": true
+                }
+              }
+            }
+          },
+          "enabled": {
+            "kind": "boolean"
+          },
+          "limit": {
+            "kind": "number"
+          }
+        },
+        "events": {
+          "value-change": {
+            "kind": "event",
+            "payload": {
+              "kind": "record",
+              "fields": {
+                "value": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "optional": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "visual": {
+        "gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "maxHeight": {
+          "value": 160,
+          "unit": "px"
+        },
+        "rowHeight": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "additionalScope": "bounded static resolver/type/default/dimension checks; HTML parsed but no original ARIA validator, DOM runtime, CSS evaluation or AT"
+    },
+    {
+      "id": "ST-04",
+      "mutation": "missing-label",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/results/0/label",
+      "revision": "ba217ac9de0cc3c59f3258962420bc0e253ece01592aa9bb2b930d43d5092ad9",
+      "resolvedRecord": "runs/ST-04/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-05",
+      "mutation": "wrong-query-type",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/query",
+      "revision": "a9966e8620cc97177c3d93f004c40b82c2cdcab75ff906e6ea7de4c7f487ca40",
+      "resolvedRecord": "runs/ST-05/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-06",
+      "mutation": "null-optional-value",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/value",
+      "revision": "0261059fa20a18f7c74c4f4a21cf325cfc0b54894ee25696c594e7907b46a58e",
+      "resolvedRecord": "runs/ST-06/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-07",
+      "mutation": "duplicate-keys",
+      "expected": "DATA_KEY_CONFLICT",
+      "actual": "DATA_KEY_CONFLICT",
+      "expectationMet": true,
+      "detail": "results keys",
+      "revision": "680855720763c74d4a6d94d751f79f4c885f15eecee4df1b58ef8c489a1bfb49",
+      "resolvedRecord": "runs/ST-07/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-08",
+      "mutation": "nonfinite-number",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/limit",
+      "revision": "26ec76d995f26c6b4b4f4cf8e331ed8ad09aa9e61761f2960d13719b83aba991",
+      "resolvedRecord": "runs/ST-08/resolved.json",
+      "apiInput": "limit=positive infinity (in-memory value, not JSON transport)",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-09",
+      "mutation": "missing-target",
+      "expected": "TARGET_MISSING",
+      "actual": "TARGET_MISSING",
+      "expectationMet": true,
+      "detail": "/modules/0/declarations/0/cssParts/99",
+      "revision": "6f78d28b8ad815884f016aadc19268e0c32db2ac0c96cf1f18fbb947a8616469",
+      "resolvedRecord": "runs/ST-09/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-10",
+      "mutation": "foreign-instance",
+      "expected": "INSTANCE_MISMATCH",
+      "actual": "INSTANCE_MISMATCH",
+      "expectationMet": true,
+      "detail": "A.input",
+      "revision": "55daa38c5c0ba93a2ef23d661f69cfc902c9216e35512c71ec1e849f5cf7565f",
+      "resolvedRecord": "runs/ST-10/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-11",
+      "mutation": "wrong-namespace",
+      "expected": "DEFINITION_MISMATCH",
+      "actual": "DEFINITION_MISMATCH",
+      "expectationMet": true,
+      "detail": "other:Autocomplete",
+      "revision": "8a7c27743b9119ec7b48ffd75d0f0b185f5a53ed7084b5be631460f327b831c6",
+      "resolvedRecord": "runs/ST-11/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-12",
+      "mutation": "wrong-source-hash",
+      "expected": "SOURCE_MISMATCH",
+      "actual": "SOURCE_MISMATCH",
+      "expectationMet": true,
+      "detail": "autocomplete.interface",
+      "revision": "bd0a5cd934d7282ca4991adf28dc04893a5649e1cb86be6116715b2759cb04a6",
+      "resolvedRecord": "runs/ST-12/resolved.json"
+    },
+    {
+      "id": "ST-13",
+      "mutation": "unsupported-version",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "expectationMet": true,
+      "detail": "autocomplete.interface version",
+      "revision": "0a553e53e226b0f8124226250e5f7a3f500dec28369b0e82199ed7133c58c2df",
+      "resolvedRecord": "runs/ST-13/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-14",
+      "mutation": "event-type-conflict",
+      "expected": "TYPE_BINDING_CONFLICT",
+      "actual": "TYPE_BINDING_CONFLICT",
+      "expectationMet": true,
+      "detail": "event.value",
+      "revision": "e18628cd58c28f290f46c930baeea3c6feb5680c0a74f8d533c93d8dbcddcb2e",
+      "resolvedRecord": "runs/ST-14/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-15",
+      "mutation": "recursive-use",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "expectationMet": true,
+      "detail": "recursive component expansion",
+      "revision": "b82478500e5bca7347bd1a187b36a4e00299077c7dbe1651d5fbf26fdb1b4352",
+      "resolvedRecord": "runs/ST-15/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-16",
+      "mutation": "unsupported-type",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "expectationMet": true,
+      "detail": {
+        "error": "Error: UNSUPPORTED: UnionType"
+      },
+      "revision": "62d83ad9f2386e421406b0b52ba707cec8f51e5da9b535ef85f392b31e64cce8",
+      "resolvedRecord": "runs/ST-16/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-17",
+      "mutation": "wrong-target-kind",
+      "expected": "TARGET_KIND_MISMATCH",
+      "actual": "TARGET_KIND_MISMATCH",
+      "expectationMet": true,
+      "detail": "A.input",
+      "revision": "601794203e17af521003cdae4a697526a02f0186376fb8be30eb2c7e70e52233",
+      "resolvedRecord": "runs/ST-17/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-18",
+      "mutation": "invalid-original-cem",
+      "expected": "ORIGINAL_INVALID",
+      "actual": "ORIGINAL_INVALID",
+      "expectationMet": true,
+      "detail": {
+        "source": "autocomplete.interface",
+        "message": "{'name': 'Autocomplete', 'customElement': True, 'members': [{'kind': 'field', 'name': 'query', 'type': {'text': 'string'}, 'default': '\"\"'}, {'kind': 'field', 'name': 'value', 'type': {'text': 'string | undefined'}}, {'kind': 'field', 'name': 'results', 'type': {'text': 'Array<{ key: string; label: string; disabled?: boolean }>'}, 'default': '[]'}, {'kind': 'field', 'name': 'enabled', 'type': {'text': 'boolean'}, 'default': 'true'}, {'kind': 'field', 'name': 'limit', 'type': {'text': 'number'}, 'default': '7'}], 'events': [{'name': 'value-change', 'type': {'text': 'CustomEvent<{value:string}>'}}], 'cssParts': [{'name': 'input'}, {'name': 'list'}, {'name': 'option'}, {'name': 'status'}]} is not valid under any of the given schemas"
+      },
+      "revision": "69e3f4261cdb419d5b7c8c7687a22ee667b80ae9dd51088baeaa7a18c7dc592f",
+      "resolvedRecord": "runs/ST-18/resolved.json"
+    },
+    {
+      "id": "ST-19",
+      "mutation": "invalid-original-scxml",
+      "expected": "ORIGINAL_INVALID",
+      "actual": "ORIGINAL_INVALID",
+      "expectationMet": true,
+      "detail": {
+        "source": "autocomplete.behavior",
+        "message": "<string>:1:0:ERROR:SCHEMASV:SCHEMAV_CVC_AU: Element '{http://www.w3.org/2005/07/scxml}scxml', attribute 'version': The value '2.0' does not match the fixed value constraint '1.0'."
+      },
+      "revision": "8c3bc25175d5382f39bb211a1fc7de0a4ce9e589b8be421eb010a410d0c23be4",
+      "resolvedRecord": "runs/ST-19/resolved.json"
+    },
+    {
+      "id": "ST-20",
+      "mutation": "unsupported-token-unit",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "expectationMet": true,
+      "detail": "base.gap",
+      "revision": "201849aaba20c34fddeda43481969c4df1f96a09527afbe893a4d8a45d973436",
+      "resolvedRecord": "runs/ST-20/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-21",
+      "mutation": "wrong-default-type",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "default/query",
+      "revision": "6e6818948f21dfb0d9c7df8ebe2ce4d87737ff201e0f6615ae3eb4aa54c83583",
+      "resolvedRecord": "runs/ST-21/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-22",
+      "mutation": "token-alias-cycle",
+      "expected": "TOKEN_ALIAS_CYCLE",
+      "actual": "TOKEN_ALIAS_CYCLE",
+      "expectationMet": true,
+      "detail": "autocomplete.gap",
+      "revision": "66567db05208c3fc073aea21c16dae422bdb2cf0f317c3a18b008e3f985afaec",
+      "resolvedRecord": "runs/ST-22/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-23",
+      "mutation": "missing-relation",
+      "expected": "BINDING_INCOMPLETE",
+      "actual": "BINDING_INCOMPLETE",
+      "expectationMet": true,
+      "detail": "required relations",
+      "revision": "a59a8730e89f69babb2e3dc7327e40dcff6382da141402504c7fc5150f7b3137",
+      "resolvedRecord": "runs/ST-23/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": "ST-24",
+      "mutation": "unexpected-record-field",
+      "expected": "TYPE_MISMATCH",
+      "actual": "TYPE_MISMATCH",
+      "expectationMet": true,
+      "detail": "values/results/0",
+      "revision": "9a3e6e5d9c371a3fb8e1dfd438a2b549068dcbecffcced30eb9dad0b7976f649",
+      "resolvedRecord": "runs/ST-24/resolved.json",
+      "originalChecks": [
+        {
+          "source": "autocomplete.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "autocomplete.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "overlay.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "overlay.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.interface",
+          "validator": "original CEM schema",
+          "accepted": true
+        },
+        {
+          "source": "scroll-area.behavior",
+          "validator": "original SCXML XSD",
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "new_conditions": 24,
+  "full_runtime_executed": false,
+  "product_format_selected": false
+}

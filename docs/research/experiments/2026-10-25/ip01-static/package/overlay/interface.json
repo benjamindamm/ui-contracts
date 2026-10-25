@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "overlay.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "Overlay",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "owner",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "epoch",
+              "type": {
+                "text": "number"
+              }
+            }
+          ],
+          "events": [],
+          "cssParts": [
+            {
+              "name": "surface"
+            },
+            {
+              "name": "content"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

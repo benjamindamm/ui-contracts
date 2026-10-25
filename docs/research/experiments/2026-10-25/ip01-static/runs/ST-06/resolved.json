@@ -1,0 +1,21 @@
+{
+  "files": {
+    "autocomplete/accessibility.html": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578",
+    "autocomplete/behavior.scxml": "0fa5805928e199a794cb5255381e75714ce269ce5e50612aacefb6b595719fef",
+    "autocomplete/interface.json": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+    "autocomplete/layout.css": "0b35c46f2603501adef53c74296809c9dc8e025b1b3e685d6a6db781ed9f4461",
+    "bindings.json": "adfa18cbf98dd2082f1770b5f1a213cb5c087625007398e37c10d77bf8a901de",
+    "host.html": "023ab480139434d95e7da560d65984bc4d55bc0fc8adff8d02830aa819696620",
+    "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "overlay/behavior.scxml": "d4061ec0b448776b9ed366579d8a37c071f5643d5351dcf166bdc4d8a1d4c84f",
+    "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "overlay/layout.css": "2156b889363bbc9efc00dd3c8047f586971e237b832953fd60372fff6ff337a2",
+    "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "scroll-area/behavior.scxml": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d",
+    "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "scroll-area/layout.css": "ecd9b281b7ea5c03e32b9a2949b187ddfc78669284ff5cb177925ce258a7c1aa",
+    "values.json": "7e34c7882cebceb1c9cccc48b5bc43dece99090ae523dd70919d813bd4e58ebf",
+    "visual/tokens.json": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412"
+  },
+  "revision": "3fa6bf0c132666ab20076699d8b69b3881c0823a20983dbe0d6ffb94074777de"
+}

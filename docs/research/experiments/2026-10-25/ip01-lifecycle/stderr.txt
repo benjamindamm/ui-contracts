@@ -1,0 +1,5 @@
+(node:92026) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:92026) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:92026) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 2)
+(node:92026) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 4)

@@ -1,0 +1,14 @@
+{
+  "status": "preregistered-before-execution",
+  "scope": "Controlled two-level local research models; pinned original interpreter with additional fresh-prepare invoker; no DOM or product package",
+  "cases": [
+    {"id":"LC-01","expected":"Same overlay/scroll sources and local IDs produce separate A/B parameters, mutable data and parent sessions"},
+    {"id":"LC-02","expected":"A scroll mutation and report leave B and B event stream unchanged"},
+    {"id":"LC-03","expected":"Native parent routing remains local; a deliberately foreign owner/epoch report is rejected by explicit SCXML guards"},
+    {"id":"LC-04","expected":"Closing A before overlay initialization resolves leaves no active late overlay or grandchild, B unchanged"},
+    {"id":"LC-05","expected":"Closing A before scroll initialization resolves leaves both levels final, B unchanged"},
+    {"id":"LC-06","expected":"Immediate reopening while old overlay initialization is held yields fresh generation; released old child and delayed report have no effect; new routing still works"},
+    {"id":"LC-07","expected":"Separate overlay and scroll initialization failures reach the correct root, close the affected chain and leave B unchanged without false READY"},
+    {"id":"LC-08","expected":"Normal and repeated CLOSE finalize all A children without later effective state changes; B remains active"}
+  ]
+}

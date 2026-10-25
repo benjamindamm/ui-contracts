@@ -1,0 +1,234 @@
+[
+  {
+    "id": "BR-01",
+    "checks": {
+      "allOriginalPreflights": true,
+      "browserHashesVerified": true,
+      "sameSourceRevision": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-02",
+    "checks": {
+      "bothClosed": true,
+      "noEvents": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-03",
+    "checks": {
+      "ready": true,
+      "focus": true,
+      "first": true,
+      "twoChildren": true,
+      "bClosed": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-04",
+    "checks": {
+      "last": true,
+      "scrolled": true,
+      "height": true,
+      "visible": true,
+      "noDisabledActive": true,
+      "disabledSkippedInActualMeasurements": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-05",
+    "checks": {
+      "twoNamedComboboxes": true,
+      "aExpandedBClosed": true,
+      "activeSelectedActualNode": true,
+      "politeAtomic": true,
+      "statusTextObserved": true,
+      "noContainerTabstop": true,
+      "focus": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-06",
+    "checks": {
+      "oneEvent": true,
+      "payload": true,
+      "label": true,
+      "closed": true,
+      "focus": true,
+      "noActive": true,
+      "bUnchanged": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-07",
+    "checks": {
+      "bClosed": true,
+      "noExtraCommit": true,
+      "aUnchanged": true,
+      "bChildrenFinal": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-08",
+    "checks": {
+      "accepted": true,
+      "rejected": true,
+      "label": true,
+      "value": true,
+      "noExtraEvent": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-09",
+    "checks": {
+      "distinctRequests": true,
+      "ready": true,
+      "newQuery": true,
+      "newRows": true,
+      "staleIncremented": true,
+      "statusUnchanged": true,
+      "valueRetained": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-10",
+    "checks": {
+      "empty": true,
+      "emptyText": true,
+      "error": true,
+      "errorText": true,
+      "committedRetained": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-11",
+    "checks": {
+      "invalidDiagnosed": true,
+      "invalidError": true,
+      "duplicateDiagnosed": true,
+      "noPartialRows": true,
+      "error": true,
+      "noExtraEvent": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-12",
+    "checks": {
+      "noInterimRequest": true,
+      "noCommit": true,
+      "queryDraft": true,
+      "finalQuery": true,
+      "oneFinalRequest": true,
+      "ready": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-13",
+    "checks": {
+      "closed": true,
+      "noExtraCommit": true,
+      "noDangling": true,
+      "focusMoved": true,
+      "textRetained": true,
+      "clearedLoading": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-14",
+    "checks": {
+      "freshEpoch": true,
+      "oldFinal": true,
+      "ready": true,
+      "newRoute": true,
+      "bUnchanged": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-15",
+    "checks": {
+      "closed": true,
+      "status": true,
+      "relay": true,
+      "allChildrenFinal": true,
+      "diagnostic": true,
+      "bUnchanged": true,
+      "noExtraCommit": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-16",
+    "checks": {
+      "aGap": true,
+      "aAlignment": true,
+      "bOwnAnchor": true,
+      "variableRows": true,
+      "actualReveal": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-17",
+    "checks": {
+      "newEpoch": true,
+      "staleIncremented": true,
+      "rowsUnchanged": true,
+      "statusUnchanged": true,
+      "valueUnchanged": true,
+      "noExtraEvent": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-18",
+    "checks": {
+      "foreignCount": true,
+      "activeUnchanged": true,
+      "optionsUnchanged": true,
+      "statusUnchanged": true,
+      "eventsUnchanged": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-19",
+    "checks": {
+      "loadingActualBusy": true,
+      "errorNotBusy": true,
+      "closedCollapsed": true,
+      "noStaleActiveInLoadingErrorClosed": true,
+      "readyHasActive": true,
+      "loadingText": true,
+      "errorText": true,
+      "closedLoadingCleared": true,
+      "noClosedOptions": true,
+      "noSpeechClaim": true
+    },
+    "expectationMet": true
+  },
+  {
+    "id": "BR-20",
+    "checks": {
+      "sourcesUnchanged": true,
+      "noUnexpectedErrors": true,
+      "allChildrenFinal": true,
+      "onePublicCommit": true,
+      "trustedBrowserKeys": true
+    },
+    "expectationMet": true
+  }
+]

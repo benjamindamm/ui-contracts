@@ -1,0 +1,260 @@
+{
+  "kind": "documentation-evidence-index",
+  "date": "2026-10-25",
+  "not_an_executable_package_manifest": true,
+  "profile": "IP-01",
+  "new_executed_conditions": 61,
+  "existing_research": {
+    "evaluations": 416,
+    "claims": 543,
+    "conditions": 702,
+    "groups": 106,
+    "unresolved_matrix_cells": 2
+  },
+  "scope": "Hashes identifizieren die referenzierten lokalen Dokumente. Normfassungen und Original-/Adaptergrenzen stehen in deren Berichten und Manifesten. Der Index ist kein gemeinsamer Laufzeitnachweis.",
+  "entries": [
+    {
+      "path": "experiments/2026-10-25/four-domain/REPORT.md",
+      "sha256": "ab18cbec47085b88b4e27c407ec7d6f7b75a3828d1e4c6f212d7afbd6baa63b7",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/dtcg-binding/REPORT.md",
+      "sha256": "97f5d2da0204202bb3a390d60a55e96afbc4193de9ba5a5e42801478de208ac2",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/scxml-runtime/REPORT.md",
+      "sha256": "48a144be3fd204b1d60864b68d71d5e441dcded1b93b1b935d3025246f97df10",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/scxml-invoke/REPORT.md",
+      "sha256": "e83094e6e930677ad510d543888e0f6e08cd616860eee6e7e47636e61f095c13",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/typed-references/REPORT.md",
+      "sha256": "f2f8b0b7be0cf63ba9e31d767ecfba4740994d9e7e2651e1521a5b8f94a9b3de",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/css-semantic-anchors/REPORT.md",
+      "sha256": "0dd5946a75616a67e0f7e0eeb95ebdb18f3db1612815f184691a01f5de199b65",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/css-original-grammar/REPORT.md",
+      "sha256": "cee8c7a4a90226656a5475fb368bfd34d6bb99928fb7e497512af201f5decd37",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/ownership-conflicts/REPORT.md",
+      "sha256": "88204dcd8f054e06d4431e82fd3ee6b57f1064273e0749d1ecb97e171ef8307e",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/css-complement-runtime/REPORT.md",
+      "sha256": "64df27ddfe564fa52258e0fbf28c79b39c9d6d233d290a2767ba6734d17c9311",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/layout-final-bindings/REPORT.md",
+      "sha256": "929034512e6bc4b746bbd705d7db811a27ff995a54d7703a04cbcc525955f63d",
+      "role": "Früherer begrenzter Teilversuch; keine Abnahme des vollständigen IP-01-Pakets"
+    },
+    {
+      "path": "experiments/2026-10-25/scxml-invoke/isolated-invoker.cjs",
+      "sha256": "ca16959b35db065f5126db115d0ed56c95a4bc0b80043fe1edd293f0832aabed",
+      "role": "Dokumentations-/Provenienzverweis; bestehender Adapter nur für dokumentierten engen Umfang"
+    },
+    {
+      "path": "experiments/2026-10-25/scxml-invoke/results.json",
+      "sha256": "4b2836f690c1c5f96d774242ecea397ae79b8372a6537b2de400ebc04ad4a64d",
+      "role": "Dokumentations-/Provenienzverweis; bestehender Adapter nur für dokumentierten engen Umfang"
+    },
+    {
+      "path": "experiments/2026-10-25/scxml-invoke/adapter-results.json",
+      "sha256": "89dc4e1588f865ce0e5b9f2f4b28de3022f47f08d71b8ee53b33f0d35c5b92f9",
+      "role": "Dokumentations-/Provenienzverweis; bestehender Adapter nur für dokumentierten engen Umfang"
+    },
+    {
+      "path": "experiments/2026-10-25/scxml-runtime/tool/package-lock.json",
+      "sha256": "2d23cda3e0d12a9f05545ad0d9f2415241a2c66546ab9516a6de3a2503b1712c",
+      "role": "Gepinnte Provenienz oder noch nicht ausgeführter Integrationsentwurf"
+    },
+    {
+      "path": "experiments/2026-10-25/dtcg-binding/source-manifest.json",
+      "sha256": "d576e1cd58ae01d36770e11448ba09aef0912f1b723e7714e1f1a206f67a2085",
+      "role": "Gepinnte Provenienz oder noch nicht ausgeführter Integrationsentwurf"
+    },
+    {
+      "path": "experiments/2026-10-25/css-original-grammar/source-manifest.json",
+      "sha256": "6b13b40fd31a840c667b251455fee5ce80eedfd6b191636a58005ad6f40e575c",
+      "role": "Gepinnte Provenienz oder noch nicht ausgeführter Integrationsentwurf"
+    },
+    {
+      "path": "experiments/2026-10-24/source-manifest.json",
+      "sha256": "ca07b5d6cf0a5ca68d902b51994df031dafec8f0cdefe9874ca60066ee2510e4",
+      "role": "Gepinnte Provenienz oder noch nicht ausgeführter Integrationsentwurf"
+    },
+    {
+      "path": "INTEGRATION-PROFILE.md",
+      "sha256": "e2175836d764e0cf35ff6d3440bfcfedca9b3f45e75e65e78a2d15d099535777",
+      "role": "Gepinnte Provenienz oder noch nicht ausgeführter Integrationsentwurf"
+    },
+    {
+      "path": "INTEGRATION-ACCEPTANCE.md",
+      "sha256": "175ba8ef5961da1efc870bc9b7b8bdbf0703f40d4ff0321ae39f9b8e680d0b41",
+      "role": "Gepinnte Provenienz oder noch nicht ausgeführter Integrationsentwurf"
+    },
+    {
+      "path": "INTEGRATION-BINDING-DRAFT.md",
+      "sha256": "d123d2e4023fef3a93d68baacb87ebe1ef40913d23830417916ad9541c1b5552",
+      "role": "Noch nicht ausgeführter Bindungs-/Umsetzungsentwurf; keine Runtimeevidenz"
+    },
+    {
+      "path": "IMPLEMENTATION-HANDOFF.md",
+      "sha256": "4ae42f37b4ac84eb5694177f90c6f474e8aa5634eebf33e41a7a43fe9e4def38",
+      "role": "Noch nicht ausgeführter Bindungs-/Umsetzungsentwurf; keine Runtimeevidenz"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-lifecycle/REPORT.md",
+      "sha256": "97895b05699790b23ba1c507e398302c77e6d773a240f17485d9f8cf3ff449ee",
+      "role": "Ausgeführter enger Lifecycleteilversuch: sechs erfüllt, zwei verletzt; keine vollständige IP-Abnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-lifecycle/results.json",
+      "sha256": "f27e932c48ead843b75d96e3987d2d8b0954061a5e19102e70994d1fb3380b6f",
+      "role": "Ausgeführter enger Lifecycleteilversuch: sechs erfüllt, zwei verletzt; keine vollständige IP-Abnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-lifecycle/source-manifest.json",
+      "sha256": "e870de5c873ed1860f563eba134e4cfff7eae2e1f28d02dd7ab286691c3ddeff",
+      "role": "Ausgeführter enger Lifecycleteilversuch: sechs erfüllt, zwei verletzt; keine vollständige IP-Abnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-lifecycle/cases.json",
+      "sha256": "5c9b39005fbc65e9ddf10281831e6ddf6a0dabbe2acf74512150465dc66e04cf",
+      "role": "Ausgeführter enger Lifecycleteilversuch: sechs erfüllt, zwei verletzt; keine vollständige IP-Abnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-followup/REPORT.md",
+      "sha256": "e78c441a6dcefb7f2c15877e4418e03184796694610568988de6d1952d6df395",
+      "role": "Gezielte lokale Lifecyclefolgevarianten; sechs neue Bedingungen und acht nicht erneut gezählte Regressionen erfüllt; keine vollständige Hostabnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-followup/cases.json",
+      "sha256": "7fecfd43eafc451d90e7c3292431235cf726c7eaa681cb341005ef32383aac91",
+      "role": "Gezielte lokale Lifecyclefolgevarianten; sechs neue Bedingungen und acht nicht erneut gezählte Regressionen erfüllt; keine vollständige Hostabnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-followup/variant-results.json",
+      "sha256": "57eef0f7e9dea5ecc844bbaf2fa30f1fc3ed185a49c70524c51b7b47d6350621",
+      "role": "Gezielte lokale Lifecyclefolgevarianten; sechs neue Bedingungen und acht nicht erneut gezählte Regressionen erfüllt; keine vollständige Hostabnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-followup/results.json",
+      "sha256": "0c1c18784458f07ed926080fd40bacd68bd7a8a43d88bbecf4a0f0ac9db9b7fd",
+      "role": "Gezielte lokale Lifecyclefolgevarianten; sechs neue Bedingungen und acht nicht erneut gezählte Regressionen erfüllt; keine vollständige Hostabnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-followup/source-manifest.json",
+      "sha256": "b92509fa29adb6af3335ff8219127d097fb3589f4cd18872c16c4279d2e59547",
+      "role": "Gezielte lokale Lifecyclefolgevarianten; sechs neue Bedingungen und acht nicht erneut gezählte Regressionen erfüllt; keine vollständige Hostabnahme"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-static/REPORT.md",
+      "sha256": "021cbcf035feb30e4f3d20eee05d004830a6e430db8955ef533be00c1d69083b",
+      "role": "Gemeinsames statisches Forschungsreferenzpaket: 27 erfüllte Bedingungen; kein vollständiger Host-/Runtimeversuch"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-static/cases.json",
+      "sha256": "be065af341bb0d6c8d9b3e7619bfff9e9b88f662d5059651ce48f2a9339c08e7",
+      "role": "Gemeinsames statisches Forschungsreferenzpaket: 27 erfüllte Bedingungen; kein vollständiger Host-/Runtimeversuch"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-static/results.json",
+      "sha256": "d4fb04b8a0dbe69d8ece0261c09e0149872d9d9b52073555da44289042a99691",
+      "role": "Gemeinsames statisches Forschungsreferenzpaket: 27 erfüllte Bedingungen; kein vollständiger Host-/Runtimeversuch"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-static/reference/bindings.json",
+      "sha256": "adfa18cbf98dd2082f1770b5f1a213cb5c087625007398e37c10d77bf8a901de",
+      "role": "Gemeinsames statisches Forschungsreferenzpaket: 27 erfüllte Bedingungen; kein vollständiger Host-/Runtimeversuch"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-static/reference/resolved.json",
+      "sha256": "81aae7e869852f574cf810285da5f6ac560b36adb3fd9c8197207a418d513ef7",
+      "role": "Gemeinsames statisches Forschungsreferenzpaket: 27 erfüllte Bedingungen; kein vollständiger Host-/Runtimeversuch"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-static/source-manifest.json",
+      "sha256": "c908648dfefbc86df259da8b4cca56450616a576a329860e5b498c693dd0c7c9",
+      "role": "Gemeinsames statisches Forschungsreferenzpaket: 27 erfüllte Bedingungen; kein vollständiger Host-/Runtimeversuch"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-browser/REPORT.md",
+      "sha256": "a5fccd23f7bfde207fd4b883b997cc30947c922dfd148139b23902165bfda925",
+      "role": "Abgeschlossener begrenzter gemeinsamer Browserlauf: 20 erfüllte Bedingungen, Original-SCXML/Events/Fokus/Scroll/AX, keine native oder AT-/universelle Freigabe"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-browser/cases.json",
+      "sha256": "1a55cbffed1656e47e3aec60415d633a4cd20dc18367c5367d083b9497b95f28",
+      "role": "Abgeschlossener begrenzter gemeinsamer Browserlauf: 20 erfüllte Bedingungen, Original-SCXML/Events/Fokus/Scroll/AX, keine native oder AT-/universelle Freigabe"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-browser/results.json",
+      "sha256": "2812e1360e5befae6ab2c1893c47c14e4c3116a9f8dc34cb952daee19d91d32b",
+      "role": "Abgeschlossener begrenzter gemeinsamer Browserlauf: 20 erfüllte Bedingungen, Original-SCXML/Events/Fokus/Scroll/AX, keine native oder AT-/universelle Freigabe"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-browser/host/manifest.json",
+      "sha256": "60e69359d5b0369335b2c5e50104093b92ddc328ac0313eaab6b1d4e83ef8110",
+      "role": "Abgeschlossener begrenzter gemeinsamer Browserlauf: 20 erfüllte Bedingungen, Original-SCXML/Events/Fokus/Scroll/AX, keine native oder AT-/universelle Freigabe"
+    },
+    {
+      "path": "experiments/2026-10-25/ip01-browser/source-manifest.json",
+      "sha256": "4c00a80e554310b890125bb1b67445906188629a319556922227ae9deea67d0e",
+      "role": "Abgeschlossener begrenzter gemeinsamer Browserlauf: 20 erfüllte Bedingungen, Original-SCXML/Events/Fokus/Scroll/AX, keine native oder AT-/universelle Freigabe"
+    }
+  ],
+  "scoped_lifecycle_experiment": {
+    "executed": true,
+    "cases": 8,
+    "expectations_met": 6,
+    "expectations_violated": 2,
+    "complete_profile_passed": false,
+    "record": "experiments/2026-10-25/ip01-lifecycle/results.json"
+  },
+  "complete_profile_runtime_executed": false,
+  "scoped_lifecycle_followup": {
+    "executed": true,
+    "new_cases": 6,
+    "new_expectations_met": 6,
+    "regressions": 8,
+    "regressions_met": 8,
+    "regressions_counted_again": 0,
+    "original_counterexamples_preserved": true,
+    "complete_profile_passed": false,
+    "record": "experiments/2026-10-25/ip01-followup/variant-results.json"
+  },
+  "scoped_static_package": {
+    "executed": true,
+    "conditions": 27,
+    "expectations_met": 27,
+    "full_runtime_executed": false,
+    "record": "experiments/2026-10-25/ip01-static/results.json"
+  },
+  "bounded_browser_reference_run": {
+    "executed": true,
+    "conditions": 20,
+    "expectations_met": 20,
+    "source_revision": "ca9d2f71727b8942a203777b108a858e819d177e4f78d810866d0e9ae9cbe499",
+    "full_ip_profile_passed": false,
+    "screen_reader_tested": false,
+    "native_platforms_tested": false,
+    "round_closed": true,
+    "record": "experiments/2026-10-25/ip01-browser/results.json"
+  }
+}

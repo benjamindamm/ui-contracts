@@ -1,0 +1,9 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" name="ResearchOverlay" datamodel="ecmascript" initial="active">
+<datamodel><data id="owner" expr="'unset'"/><data id="epoch" expr="0"/><data id="rejected" expr="0"/></datamodel>
+<state id="active"><invoke id="scroll" type="scxml" src="scroll.scxml"><param name="owner" expr="owner"/><param name="epoch" expr="epoch"/></invoke>
+<transition event="scroll.ready" cond="_event.data.owner===owner &amp;&amp; _event.data.epoch===epoch"><send event="overlay.ready" target="#_parent"><param name="owner" expr="owner"/><param name="epoch" expr="epoch"/></send></transition>
+<transition event="scroll.report" cond="_event.data.owner===owner &amp;&amp; _event.data.epoch===epoch"><send event="overlay.report" target="#_parent"><param name="owner" expr="owner"/><param name="epoch" expr="epoch"/><param name="offset" expr="_event.data.offset"/></send></transition>
+<transition event="scroll.ready scroll.report"><assign location="rejected" expr="rejected+1"/></transition>
+<transition event="SCROLL"><send event="SCROLL" target="#_scroll"><param name="offset" expr="_event.data.offset"/></send></transition>
+<transition event="init.failed"><send event="init.failed" target="#_parent"><param name="owner" expr="owner"/><param name="epoch" expr="epoch"/></send></transition>
+</state></scxml>

@@ -1,0 +1,26 @@
+{
+ "status":"preregistered-before-execution",
+ "scope":"One pinned local four-domain research host; original browser SCXML runtime plus explicit adapters; native browser keyboard actions and separately labelled synthetic composition/control cases",
+ "cases":[
+  {"id":"BR-01","expected":"Original schemas and exact browser-loaded source/dependency hashes verified for the common closure"},
+  {"id":"BR-02","expected":"A/B start closed, named and independent without dangling active descendant or unexpected public event"},
+  {"id":"BR-03","expected":"Browser ArrowDown opens A through real overlay/scroll children; input keeps focus and first enabled result becomes active"},
+  {"id":"BR-04","expected":"Navigation skips disabled entries, reaches last result without wrapping, and actually scrolls it into the 160px viewport"},
+  {"id":"BR-05","expected":"Actual browser AX tree exposes distinct combobox names, expanded relation, active option, polite atomic status and no added container tabstop"},
+  {"id":"BR-06","expected":"Browser Enter emits exactly one declared value-change payload, sets label/key, closes views, clears active relation, keeps input focus and leaves B unchanged"},
+  {"id":"BR-07","expected":"Opening and Escape on B produce no extra commit or A mutation; B children are cancelled"},
+  {"id":"BR-08","expected":"Programmatic known value updates label/key without user commit; unknown key rejected"},
+  {"id":"BR-09","expected":"Input creates loading/current request; reverse-order replies only accept newest generation and do not announce stale results"},
+  {"id":"BR-10","expected":"Empty and provider failure yield actual empty/error states, no active target, correct busy/status and retained committed value"},
+  {"id":"BR-11","expected":"Invalid T1/duplicate-key provider data is diagnosed before partial rendering and reaches controlled error state"},
+  {"id":"BR-12","expected":"Synthetic composition input suppresses Enter/navigation and interim provider requests; compositionend requests the final query"},
+  {"id":"BR-13","expected":"Browser Tab/focus loss closes without commit and removes stale relations; native text editing remains available"},
+  {"id":"BR-14","expected":"Held child initialization followed by close/reopen cannot revive old view or break new native route; B stays unchanged"},
+  {"id":"BR-15","expected":"Actual malformed child source becomes explicit error relay, closes affected children and exposes accessible status without altering B"},
+  {"id":"BR-16","expected":"A/B overlays follow their own input bottom with 8px gap after input geometry changes; variable rows still reveal active result"},
+  {"id":"BR-17","expected":"Late provider reply after close/reopen is rejected without state, public-event or status changes"},
+  {"id":"BR-18","expected":"Foreign native report is delivered but rejected by explicit instance/epoch guards, leaving actual view and selection unchanged"},
+  {"id":"BR-19","expected":"Actual browser AX snapshots reflect loading/error/closed changes without stale active option and distinguish observed AX text from untested speech"},
+  {"id":"BR-20","expected":"Final original sources unchanged, live/runtime/errors/cancel journals and browser environment captured; no unexpected unhandled errors"}
+ ]
+}

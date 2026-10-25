@@ -1,0 +1,17 @@
+{
+  "query": "abc",
+  "value": "k1",
+  "results": [
+    {
+      "key": "k1",
+      "label": "One"
+    },
+    {
+      "key": "k2",
+      "label": "Two",
+      "disabled": true
+    }
+  ],
+  "enabled": true,
+  "limit": 7
+}
