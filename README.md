@@ -124,3 +124,5 @@ Die Forschungsgrundlage, konkrete Referenzdateien und ein ausgeführter Webforsc
 Später können spezialisierte Skills die vier Domänen bearbeiten. Sie sollen Quellführung und Konfliktregeln respektieren; Stabilität und Reifegrad der gewählten Beiträge bleiben Auswahlkriterien. Solche Skills sind hier noch nicht erstellt.
 
 Die Recherche ist abgeschlossen. Für eine spätere Fortsetzung stehen der [Abnahmeplan](docs/research/INTEGRATION-ACCEPTANCE.md), die [Umsetzungsübergabe](docs/research/IMPLEMENTATION-HANDOFF.md) und die [Einordnung des plattformübergreifenden Ziels](docs/research/ARCHITECTURE-DIRECTION.md) bereit.
+
+[Studie AC-R01](docs/research/studies/AC-R01/README.md): Zwei getrennte Agenten erzeugen aus derselben Autocomplete-Definition Designs mit gleichen gemessenen Komponentenwerten, aber demselben Farbfehler. Vollständige Definitionstreue ist in diesem Versuch nicht erreicht.

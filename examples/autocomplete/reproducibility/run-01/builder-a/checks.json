@@ -1,0 +1,101 @@
+{
+  "writer": "@open-pencil/core exportFigFile 0.16.0",
+  "reader": "parseFigFile populate=all",
+  "bytes": 31310,
+  "nodes": 127,
+  "editableTextNodes": 65,
+  "checks": [
+    "closed passed",
+    "opening passed",
+    "loading passed",
+    "ready passed",
+    "active passed",
+    "scroll-end passed",
+    "selected passed",
+    "empty passed",
+    "error passed",
+    "disabled passed"
+  ],
+  "expectations": [
+    {
+      "id": "closed",
+      "inputY": 28,
+      "popupVisible": false,
+      "statusY": 80,
+      "message": "",
+      "options": 0
+    },
+    {
+      "id": "opening",
+      "inputY": 28,
+      "popupVisible": false,
+      "statusY": 80,
+      "message": "Suche wird geöffnet.",
+      "options": 0
+    },
+    {
+      "id": "loading",
+      "inputY": 28,
+      "popupVisible": true,
+      "statusY": 120,
+      "message": "Städte werden geladen.",
+      "options": 0
+    },
+    {
+      "id": "ready",
+      "inputY": 28,
+      "popupVisible": true,
+      "statusY": 248,
+      "message": "7 Städte verfügbar.",
+      "options": 7
+    },
+    {
+      "id": "active",
+      "inputY": 28,
+      "popupVisible": true,
+      "statusY": 248,
+      "message": "7 Städte verfügbar.",
+      "options": 7
+    },
+    {
+      "id": "scroll-end",
+      "inputY": 28,
+      "popupVisible": true,
+      "statusY": 248,
+      "message": "7 Städte verfügbar.",
+      "options": 7
+    },
+    {
+      "id": "selected",
+      "inputY": 28,
+      "popupVisible": false,
+      "statusY": 80,
+      "message": "Ausgewählt: Berlin.",
+      "options": 0
+    },
+    {
+      "id": "empty",
+      "inputY": 28,
+      "popupVisible": true,
+      "statusY": 120,
+      "message": "Keine Städte gefunden.",
+      "options": 0
+    },
+    {
+      "id": "error",
+      "inputY": 28,
+      "popupVisible": true,
+      "statusY": 120,
+      "message": "Städte konnten nicht geladen werden.",
+      "options": 0
+    },
+    {
+      "id": "disabled",
+      "inputY": 28,
+      "popupVisible": false,
+      "statusY": 80,
+      "message": "",
+      "options": 0
+    }
+  ]
+}

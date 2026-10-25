@@ -1,0 +1,194 @@
+{
+  "preregistration_version": 1,
+  "phase": "PREPARATION_ONLY",
+  "created_utc": "2026-10-25T21:09:19.908460+00:00",
+  "inputs_read": "Only components/ library; no builder outputs, examples, research, previous designs or peer reviews read.",
+  "verdicts": {
+    "PASS": "Direct evidence satisfies a cited unambiguous requirement.",
+    "FAIL": "Direct evidence contradicts a cited unambiguous requirement or required artifact cannot be read.",
+    "UNSPECIFIED": "Definition leaves choice open, conflicting, or observation insufficient; record reason and do not turn into failure.",
+    "OUT_OF_SCOPE": "Execution/behavior beyond static editable OpenPencil design or expressly free artifact properties."
+  },
+  "evidence_policy": {
+    "order": [
+      "Read saved original designs using unmodified original OpenPencil reader",
+      "Inspect native graph and render/visible geometry",
+      "Then read builder reports",
+      "Compare independently against these criteria, then compare normalized results with one another"
+    ],
+    "numeric_tolerance": "Graph measurements target exact source values; <=0.01px arithmetic/serialization noise and <=1/255 channel rounding allowed. Larger deviations need explicit explanation. Raster glyph bounds/antialiasing are not numerical geometry evidence.",
+    "overall": "PASS only if all applicable hard criteria pass. Any hard FAIL => FAIL. Explicit unmeasurable requirements => unresolved/UNSPECIFIED rather than assumed PASS. Record per-artifact and cross-artifact results separately."
+  },
+  "criteria": [
+    {
+      "id": "artifact",
+      "requirement": "Saved file opens with unmodified original OpenPencil reader; editable design rather than raster or renamed arbitrary JSON.",
+      "sources": [
+        "components/autocomplete/README.md#Exportrahmen"
+      ],
+      "check": "Read original saved file before reports; inspect native graph and editable text/shapes; opening failure is FAIL."
+    },
+    {
+      "id": "coverage",
+      "requirement": "One clear page contains ten separately named component/frame groups: closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled.",
+      "sources": [
+        "components/autocomplete/README.md#Exportrahmen",
+        "components/autocomplete/stories.json"
+      ],
+      "check": "Match by story name, not generated ID or outer position. All ten required."
+    },
+    {
+      "id": "anatomy",
+      "requirement": "Label, input, visible overlay surface, clipped viewport, listbox, individual keyed options, and status remain separate, understandable editable parts. Listbox, viewport and surface are distinct.",
+      "sources": [
+        "components/autocomplete/component.json#anatomy",
+        "components/autocomplete/README.md#Exportrahmen",
+        "components/overlay/component.json",
+        "components/scroll-area/component.json"
+      ],
+      "check": "Check node hierarchy/names and independent editable geometry/text. Do not require a particular naming syntax or native reusable-component mechanism. Hidden popup parts may be absent in closed variants."
+    },
+    {
+      "id": "fixtures",
+      "requirement": "Each case uses exact inputs/results/activeKey/value of its stories.json entry; seven result labels/order Berlin,Hamburg,München,Dresden,Köln,Wien,Zürich; only München disabled. active=hamburg, scroll-end=zuerich, selected value=berlin/query Berlin.",
+      "sources": [
+        "components/autocomplete/stories.json",
+        "components/autocomplete/component.json#viewSemantics"
+      ],
+      "check": "Compare visible text and structural keyed option identity; active is not a committed value. Absence of optional value is distinct from null if represented as data; native metadata schema is unspecified."
+    },
+    {
+      "id": "visibility",
+      "requirement": "Popup hidden and takes no space for closed/opening/selected/disabled; visible for loading/ready/active/scroll-end/empty/error.",
+      "sources": [
+        "components/autocomplete/accessibility.rules.json#projections",
+        "components/autocomplete/README.md#Sichtbare Geometrie"
+      ],
+      "check": "Check rendering and visible bounds; hidden retained nodes acceptable. Opening uses focus border despite hidden popup."
+    },
+    {
+      "id": "geometry",
+      "requirement": "Component/input width 320; label height 20; labelGap 8; input height 44; popup same left/width as input and top=input bottom+8. Visible list viewport min(count*32,160); rows fixed 32; loading/empty/error popup one 32px message row. Status height20 and top=visible popup bottom+8 else=input bottom+8.",
+      "sources": [
+        "components/tokens.json",
+        "components/autocomplete/layout.css",
+        "components/autocomplete/README.md#Sichtbare Geometrie",
+        "components/overlay/layout.css",
+        "components/scroll-area/layout.css"
+      ],
+      "check": "Normalize to component label/input local origin. Input border-box; input inline padding12, border1,radius8; options vertical padding6/inline12; no list/content margin/padding or list bullets. Check values from original graph; distinguish node line box from glyph ink bounds."
+    },
+    {
+      "id": "visual",
+      "requirement": "Inter, font14,lineHeight20; status font12,lineHeight20. Surface white; text #172B4D; muted #64748B; border #CBD5E1; focus #2563EB; highlight #EAF2FF; disabled #94A3B8; error #B91C1C. Input surface white border1 radius8; popup white border0 radius8 shadow 0 2px 8px #0003.",
+      "sources": [
+        "components/tokens.json",
+        "components/autocomplete/layout.css",
+        "components/overlay/layout.css"
+      ],
+      "check": "Check exact sRGB values modulo lossless color conversion; native equivalent shadow acceptable. Focus border in opening/loading/ready/empty/error (including active/scroll-end); normal border closed/selected/disabled. Placeholder muted; disabled input text disabled; disabled München text disabled; active only highlighted; status muted except error red."
+    },
+    {
+      "id": "messages",
+      "requirement": "Label Stadt auswählen; empty query shows placeholder Stadt suchen …; other input text exact query. Status: closed/disabled empty; opening Suche wird geöffnet.; loading Städte werden geladen.; ready/active/scroll-end 7 Städte verfügbar.; selected Ausgewählt: Berlin.; empty Keine Städte gefunden.; error Städte konnten nicht geladen werden. Loading/empty/error repeat their status as popup message.",
+      "sources": [
+        "components/autocomplete/stories.json",
+        "components/autocomplete/accessibility.rules.json#messages",
+        "components/autocomplete/README.md#Sichtbare Geometrie"
+      ],
+      "check": "Compare Unicode strings including ellipsis, umlauts and punctuation; ignore descriptive annotations outside component. Status remains named even when empty."
+    },
+    {
+      "id": "clipping",
+      "requirement": "Results viewport clips overflow; all seven result layers remain editable. scroll-end must actually show final active Zürich within viewport, using a content offset if needed; rows must not shrink.",
+      "sources": [
+        "components/autocomplete/README.md#Sichtbare Geometrie",
+        "components/scroll-area/layout.css"
+      ],
+      "check": "Inspect original clip settings, content bounds and rendered image. Seven*32=224 vs160 viewport. At scroll-end an ordinary fully bottom-aligned list has offset64, but exact offset is not mandatory if final row is visible and no other hard rule is violated. Hidden rows may not be deleted."
+    },
+    {
+      "id": "semantic-design",
+      "requirement": "Represent label,status,active and disabled styles; semantic listbox/options belong to Autocomplete, overlay/scroll have no independent selection.",
+      "sources": [
+        "components/autocomplete/accessibility.rules.json#designTarget",
+        "components/autocomplete/component.json",
+        "components/autocomplete/README.md#Fachliche Regeln"
+      ],
+      "check": "Inspect understandable layer annotations/structure; active Hamburg or Zürich highlighted and München disabled; no obligation for executing ARIA on canvas."
+    },
+    {
+      "id": "source-integrity",
+      "requirement": "Definitions must remain unchanged; exporter records necessary missing or contradictory specification instead of silently inventing it.",
+      "sources": [
+        "components/README.md",
+        "components/autocomplete/README.md#Exportrahmen"
+      ],
+      "check": "Compare preregistered SHA256s after creation; read builder reports only after direct artifact inspection. A report claim cannot override artifact evidence."
+    }
+  ],
+  "ambiguities": [
+    {
+      "topic": "Typography",
+      "decision": "Font weight/style, exact glyph baseline/input vertical centering and font file/version are not explicitly fixed. Do not invent exact baselines or pixel-identical glyph rasterization."
+    },
+    {
+      "topic": "Disabled placeholder",
+      "decision": "CSS placeholder muted and disabled input color disabled coexist. Placeholder stays muted under ordinary CSS; do not require disabled-placeholder recoloring absent a rule."
+    },
+    {
+      "topic": "Popup message row",
+      "decision": "Height/content mandated; precise text inset/color beyond inherited component styles not explicitly specified as option. Report variations without inventing option styling."
+    },
+    {
+      "topic": "Scroll presentation",
+      "decision": "No scrollbar appearance/width specified. Default ready/active scroll offset not numerically fixed; normal document flow starts at top, but only scroll-end explicit reveal is a hard endpoint constraint."
+    },
+    {
+      "topic": "Native semantic encoding",
+      "decision": "No OpenPencil metadata schema, exact node type, key-name syntax, component-instance type, or complete hidden-popup retained structure mandated. Must remain understandable/editable and preserve result identities."
+    },
+    {
+      "topic": "Status inherited line height",
+      "decision": "Explicit token20 applies to status even at font12. Empty status has empty text; native lack of drawable empty text node may be represented by named group/part."
+    },
+    {
+      "topic": "Popup rounded clipping",
+      "decision": "Viewport overflow clipping mandated; popup radius8 mandated. Definition does not explicitly require overflow hidden on surface or a particular clipping shape."
+    }
+  ],
+  "out_of_scope": [
+    "Interactive combobox preview; runtime keyboard/input/IME/provider sequencing; ARIA execution/screenreader behavior; web/HTML/TypeScript implementation",
+    "Free outside arrangement, page title, descriptive annotations",
+    "Generated technical IDs, byte equality, archive ordering/timestamps, implementation helper scripts"
+  ],
+  "cross_artifact_comparison": {
+    "normalization": "Match ten story names; compare component-local geometry, parts, text, visible styling, clipping and editability. Ignore exterior translation/arrangement, descriptions, technical IDs and representation details with equivalent editable semantics.",
+    "classifications": "For each difference: source-constrained divergence (which artifact fails), unspecified design/adapter choice, out-of-scope difference, or unresolved observation. Matching artifacts do not prove source compliance; differing artifacts do not automatically fail reproducibility.",
+    "reproducibility": "Report whether all source-determined observable properties agree and satisfy the definition, plus explicit open choices. Do not require byte equality."
+  },
+  "source_sha256": {
+    "components/README.md": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+    "components/autocomplete/README.md": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+    "components/autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+    "components/autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+    "components/autocomplete/behavior.scxml": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+    "components/autocomplete/component.json": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+    "components/autocomplete/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+    "components/autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+    "components/autocomplete/layout.css": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+    "components/autocomplete/stories.json": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+    "components/library.json": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+    "components/overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "components/overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+    "components/overlay/component.json": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+    "components/overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "components/overlay/layout.css": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+    "components/scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "components/scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+    "components/scroll-area/component.json": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+    "components/scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "components/scroll-area/layout.css": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+    "components/tokens.json": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+  }
+}

@@ -103,3 +103,7 @@ Einzelne A/R/D-Befunde ersetzen keine universelle Interoperabilität oder fertig
 - [X06-Originalumfänge](experiments/2026-10-25/final-x06-scope/REPORT.md): aktueller Stand8 D,2 A, 4 begrenzte N,2 U; Subjekte/Originalmodelle getrennt.
 
 Alle Bedingungen, Grenzen und historischen Gegenfälle im [Experimentindex](experiments/INDEX.md). Es gibt keine universelle Bestenliste und keine vollständige Produktkonformitätszusage.
+
+## Nachfolgende Studie AC-R01
+
+[AC-R01](studies/AC-R01/README.md) ist abgeschlossen: zwei getrennte Erzeugungen, unabhängige Kriterienprüfung, gleiche erfasste Komponentenwerte und derselbe Farbverstoß in beiden Designs. Beide Gesamturteile sind FAIL. Diese Studie hat eigene Artefakte und verändert weder die Kandidatenmatrix noch deren 702 Bedingungen/106 Gruppen. Keine interaktive oder native Plattformabnahme.

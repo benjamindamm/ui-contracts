@@ -1,0 +1,708 @@
+{
+  "closed": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Stadt suchen …",
+      "color": "64748b"
+    },
+    "status": {
+      "box": [
+        0,
+        80,
+        320,
+        20
+      ],
+      "text": "",
+      "color": "64748b"
+    },
+    "popup": null,
+    "viewport": null,
+    "options": []
+  },
+  "opening": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Stadt suchen …",
+      "color": "64748b"
+    },
+    "status": {
+      "box": [
+        0,
+        80,
+        320,
+        20
+      ],
+      "text": "Suche wird geöffnet.",
+      "color": "64748b"
+    },
+    "popup": null,
+    "viewport": null,
+    "options": []
+  },
+  "loading": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Be",
+      "color": "172b4d"
+    },
+    "status": {
+      "box": [
+        0,
+        120,
+        320,
+        20
+      ],
+      "text": "Städte werden geladen.",
+      "color": "64748b"
+    },
+    "popup": [
+      0,
+      80,
+      320,
+      32
+    ],
+    "viewport": [
+      0,
+      0,
+      320,
+      32
+    ],
+    "options": []
+  },
+  "ready": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Stadt suchen …",
+      "color": "64748b"
+    },
+    "status": {
+      "box": [
+        0,
+        248,
+        320,
+        20
+      ],
+      "text": "7 Städte verfügbar.",
+      "color": "64748b"
+    },
+    "popup": [
+      0,
+      80,
+      320,
+      160
+    ],
+    "viewport": [
+      0,
+      0,
+      320,
+      160
+    ],
+    "options": [
+      {
+        "key": "berlin",
+        "viewport_y": 0,
+        "box": [
+          0,
+          0,
+          320,
+          32
+        ],
+        "text": "Berlin",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "hamburg",
+        "viewport_y": 32,
+        "box": [
+          0,
+          32,
+          320,
+          32
+        ],
+        "text": "Hamburg",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "muenchen",
+        "viewport_y": 64,
+        "box": [
+          0,
+          64,
+          320,
+          32
+        ],
+        "text": "München",
+        "textColor": "94a3b8",
+        "fill": null
+      },
+      {
+        "key": "dresden",
+        "viewport_y": 96,
+        "box": [
+          0,
+          96,
+          320,
+          32
+        ],
+        "text": "Dresden",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "koeln",
+        "viewport_y": 128,
+        "box": [
+          0,
+          128,
+          320,
+          32
+        ],
+        "text": "Köln",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "wien",
+        "viewport_y": 160,
+        "box": [
+          0,
+          160,
+          320,
+          32
+        ],
+        "text": "Wien",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "zuerich",
+        "viewport_y": 192,
+        "box": [
+          0,
+          192,
+          320,
+          32
+        ],
+        "text": "Zürich",
+        "textColor": "172b4d",
+        "fill": null
+      }
+    ]
+  },
+  "active": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Stadt suchen …",
+      "color": "64748b"
+    },
+    "status": {
+      "box": [
+        0,
+        248,
+        320,
+        20
+      ],
+      "text": "7 Städte verfügbar.",
+      "color": "64748b"
+    },
+    "popup": [
+      0,
+      80,
+      320,
+      160
+    ],
+    "viewport": [
+      0,
+      0,
+      320,
+      160
+    ],
+    "options": [
+      {
+        "key": "berlin",
+        "viewport_y": 0,
+        "box": [
+          0,
+          0,
+          320,
+          32
+        ],
+        "text": "Berlin",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "hamburg",
+        "viewport_y": 32,
+        "box": [
+          0,
+          32,
+          320,
+          32
+        ],
+        "text": "Hamburg",
+        "textColor": "172b4d",
+        "fill": "eaf2ff"
+      },
+      {
+        "key": "muenchen",
+        "viewport_y": 64,
+        "box": [
+          0,
+          64,
+          320,
+          32
+        ],
+        "text": "München",
+        "textColor": "94a3b8",
+        "fill": null
+      },
+      {
+        "key": "dresden",
+        "viewport_y": 96,
+        "box": [
+          0,
+          96,
+          320,
+          32
+        ],
+        "text": "Dresden",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "koeln",
+        "viewport_y": 128,
+        "box": [
+          0,
+          128,
+          320,
+          32
+        ],
+        "text": "Köln",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "wien",
+        "viewport_y": 160,
+        "box": [
+          0,
+          160,
+          320,
+          32
+        ],
+        "text": "Wien",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "zuerich",
+        "viewport_y": 192,
+        "box": [
+          0,
+          192,
+          320,
+          32
+        ],
+        "text": "Zürich",
+        "textColor": "172b4d",
+        "fill": null
+      }
+    ]
+  },
+  "scroll-end": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Stadt suchen …",
+      "color": "64748b"
+    },
+    "status": {
+      "box": [
+        0,
+        248,
+        320,
+        20
+      ],
+      "text": "7 Städte verfügbar.",
+      "color": "64748b"
+    },
+    "popup": [
+      0,
+      80,
+      320,
+      160
+    ],
+    "viewport": [
+      0,
+      0,
+      320,
+      160
+    ],
+    "options": [
+      {
+        "key": "berlin",
+        "viewport_y": -64,
+        "box": [
+          0,
+          0,
+          320,
+          32
+        ],
+        "text": "Berlin",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "hamburg",
+        "viewport_y": -32,
+        "box": [
+          0,
+          32,
+          320,
+          32
+        ],
+        "text": "Hamburg",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "muenchen",
+        "viewport_y": 0,
+        "box": [
+          0,
+          64,
+          320,
+          32
+        ],
+        "text": "München",
+        "textColor": "94a3b8",
+        "fill": null
+      },
+      {
+        "key": "dresden",
+        "viewport_y": 32,
+        "box": [
+          0,
+          96,
+          320,
+          32
+        ],
+        "text": "Dresden",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "koeln",
+        "viewport_y": 64,
+        "box": [
+          0,
+          128,
+          320,
+          32
+        ],
+        "text": "Köln",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "wien",
+        "viewport_y": 96,
+        "box": [
+          0,
+          160,
+          320,
+          32
+        ],
+        "text": "Wien",
+        "textColor": "172b4d",
+        "fill": null
+      },
+      {
+        "key": "zuerich",
+        "viewport_y": 128,
+        "box": [
+          0,
+          192,
+          320,
+          32
+        ],
+        "text": "Zürich",
+        "textColor": "172b4d",
+        "fill": "eaf2ff"
+      }
+    ]
+  },
+  "selected": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Berlin",
+      "color": "172b4d"
+    },
+    "status": {
+      "box": [
+        0,
+        80,
+        320,
+        20
+      ],
+      "text": "Ausgewählt: Berlin.",
+      "color": "64748b"
+    },
+    "popup": null,
+    "viewport": null,
+    "options": []
+  },
+  "empty": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Atlantis",
+      "color": "172b4d"
+    },
+    "status": {
+      "box": [
+        0,
+        120,
+        320,
+        20
+      ],
+      "text": "Keine Städte gefunden.",
+      "color": "64748b"
+    },
+    "popup": [
+      0,
+      80,
+      320,
+      32
+    ],
+    "viewport": [
+      0,
+      0,
+      320,
+      32
+    ],
+    "options": []
+  },
+  "error": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Be",
+      "color": "172b4d"
+    },
+    "status": {
+      "box": [
+        0,
+        120,
+        320,
+        20
+      ],
+      "text": "Städte konnten nicht geladen werden.",
+      "color": "b91c1c"
+    },
+    "popup": [
+      0,
+      80,
+      320,
+      32
+    ],
+    "viewport": [
+      0,
+      0,
+      320,
+      32
+    ],
+    "options": []
+  },
+  "disabled": {
+    "label": [
+      0,
+      0,
+      320,
+      20
+    ],
+    "input": [
+      0,
+      28,
+      320,
+      44
+    ],
+    "inputText": {
+      "box": [
+        12,
+        12,
+        296,
+        20
+      ],
+      "text": "Stadt suchen …",
+      "color": "94a3b8"
+    },
+    "status": {
+      "box": [
+        0,
+        80,
+        320,
+        20
+      ],
+      "text": "",
+      "color": "64748b"
+    },
+    "popup": null,
+    "viewport": null,
+    "options": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "ok\nreturn: {\n  \"page\": 301,\n  \"value\": {\n    \"css\": \"/* Leading visual rules. --ac-* resolves from ../tokens.json autocomplete.*. */\\n[data-component=\\\"Autocomplete\\\"] {\\n  width: var(--ac-width);\\n  font-family: var(--ac-font-family);\\n  font-size: var(--ac-font-size);\\n  line-height: var(--ac-line-height);\\n  color: var(--ac-text);\\n}\\n[data-part=\\\"label\\\"] {\\n  display: block;\\n  height: var(--ac-line-height);\\n  margin-bottom: var(--ac-label-gap);\\n}\\n[data-part=\\\"input\\\"] {\\n  box-sizing: border-box;\\n  width: 100%;\\n  height: var(--ac-input-height);\\n  padding: 0 var(--ac-padding-inline);\\n  border: var(--ac-border-width) solid var(--ac-border);\\n  border-radius: var(--ac-radius);\\n  background: var(--ac-surface);\\n  color: var(--ac-text);\\n  font: inherit;\\n}\\n[data-state=\\\"opening\\\"] [data-part=\\\"input\\\"],\\n[data-state=\\\"loading\\\"] [data-part=\\\"input\\\"],\\n[data-state=\\\"ready\\\"] [data-part=\\\"input\\\"],\\n[data-state=\\\"empty\\\"] [data-part=\\\"input\\\"],\\n[data-state=\\\"error\\\"] [data-part=\\\"input\\\"] {\\n  border-color: var(--ac-focus);\\n}\\n[data-part=\\\"input\\\"]::placeholder { color: var(--ac-muted); }\\n[data-part=\\\"input\\\"]:disabled { color: var(--ac-disabled); border-color: var(--ac-border); }\\n[data-part=\\\"option\\\"] {\\n  box-sizing: border-box;\\n  height: var(--ac-row-height);\\n  min-height: var(--ac-row-height);\\n  padding: 6px var(--ac-padding-inline);\\n  flex-shrink: 0;\\n}\\n[data-part=\\\"option\\\"][aria-selected=\\\"true\\\"] { background: var(--ac-highlight); }\\n[data-part=\\\"option\\\"][aria-disabled=\\\"true\\\"] { color: var(--ac-disabled); }\\n[data-part=\\\"status\\\"] {\\n  height: var(--ac-line-height);\\n  margin-top: var(--ac-status-gap);\\n  font-size: var(--ac-status-font-size);\\n  color: var(--ac-muted);\\n}\\n[data-state=\\\"error\\\"] [data-part=\\\"status\\\"] { color: var(--ac-error); }\\n\",\n    \"disabled\": true,\n    \"inputColor\": \"rgb(148, 163, 184)\",\n    \"kind\": \"post-review-native-css-control\",\n    \"placeholderColor\": \"rgb(100, 116, 139)\",\n    \"placeholderOpacity\": \"1\",\n    \"userAgent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36\"\n  }\n}"
+    },
+    {
+      "type": "text",
+      "text": "Tip: this session is \"codex/sunny-capybara\" — rename it with name_session name=\"<2-3 word task label>\""
+    }
+  ],
+  "structuredContent": {
+    "logs": [],
+    "ok": true,
+    "value": {
+      "page": 301,
+      "value": {
+        "css": "/* Leading visual rules. --ac-* resolves from ../tokens.json autocomplete.*. */\n[data-component=\"Autocomplete\"] {\n  width: var(--ac-width);\n  font-family: var(--ac-font-family);\n  font-size: var(--ac-font-size);\n  line-height: var(--ac-line-height);\n  color: var(--ac-text);\n}\n[data-part=\"label\"] {\n  display: block;\n  height: var(--ac-line-height);\n  margin-bottom: var(--ac-label-gap);\n}\n[data-part=\"input\"] {\n  box-sizing: border-box;\n  width: 100%;\n  height: var(--ac-input-height);\n  padding: 0 var(--ac-padding-inline);\n  border: var(--ac-border-width) solid var(--ac-border);\n  border-radius: var(--ac-radius);\n  background: var(--ac-surface);\n  color: var(--ac-text);\n  font: inherit;\n}\n[data-state=\"opening\"] [data-part=\"input\"],\n[data-state=\"loading\"] [data-part=\"input\"],\n[data-state=\"ready\"] [data-part=\"input\"],\n[data-state=\"empty\"] [data-part=\"input\"],\n[data-state=\"error\"] [data-part=\"input\"] {\n  border-color: var(--ac-focus);\n}\n[data-part=\"input\"]::placeholder { color: var(--ac-muted); }\n[data-part=\"input\"]:disabled { color: var(--ac-disabled); border-color: var(--ac-border); }\n[data-part=\"option\"] {\n  box-sizing: border-box;\n  height: var(--ac-row-height);\n  min-height: var(--ac-row-height);\n  padding: 6px var(--ac-padding-inline);\n  flex-shrink: 0;\n}\n[data-part=\"option\"][aria-selected=\"true\"] { background: var(--ac-highlight); }\n[data-part=\"option\"][aria-disabled=\"true\"] { color: var(--ac-disabled); }\n[data-part=\"status\"] {\n  height: var(--ac-line-height);\n  margin-top: var(--ac-status-gap);\n  font-size: var(--ac-status-font-size);\n  color: var(--ac-muted);\n}\n[data-state=\"error\"] [data-part=\"status\"] { color: var(--ac-error); }\n",
+        "disabled": true,
+        "inputColor": "rgb(148, 163, 184)",
+        "kind": "post-review-native-css-control",
+        "placeholderColor": "rgb(100, 116, 139)",
+        "placeholderOpacity": "1",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      }
+    }
+  },
+  "isError": false
+}

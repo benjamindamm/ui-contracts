@@ -68,3 +68,9 @@ Die abgeschlossene Recherche wird nicht umgeschrieben. Die neue Phase beginnt mi
 - [ ] Anschließend HTML-/TypeScript-Ausgabe aus demselben Definitionsstand erstellen und gemeinsame Änderungen vergleichen.
 
 Erster OpenPencil-Umfang: editierbares Design, ausdrücklich keine interaktive Combobox-Preview.
+
+## Studie AC-R01
+
+- [x] Zwei Builds mit leerem Gesprächskontext und unabhängige Prüfung gegen vorab gespeicherte Kriterien abschließen.
+- [x] [Studie, Originalartefakte und Rohmessungen](docs/research/studies/AC-R01/README.md) sichern: gemessene Paarübereinstimmung, beide FAIL wegen Platzhalterfarbe.
+- [ ] Eine mögliche neue Definitionsversion und Folgestudie separat beschließen; eingefrorene Eingabe und Ausgaben bleiben unverändert.

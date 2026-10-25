@@ -1,0 +1,188 @@
+{
+  "toolVersion": "0.16.0",
+  "savedFileBytes": 31456,
+  "reimportNodes": 136,
+  "checks": {
+    "tenCases": true,
+    "twentyOneEditableOptions": true,
+    "inputGeometry": true,
+    "scrollEndClippingAndOffset": true,
+    "originalReaderReimport": true,
+    "pngFromReimport": true
+  },
+  "cases": [
+    {
+      "id": "closed",
+      "phase": "closed",
+      "componentId": "702044447:6",
+      "popupVisible": false,
+      "viewportHeight": 0,
+      "statusY": 80
+    },
+    {
+      "id": "opening",
+      "phase": "opening",
+      "componentId": "702044447:12",
+      "popupVisible": false,
+      "viewportHeight": 0,
+      "statusY": 80
+    },
+    {
+      "id": "loading",
+      "phase": "loading",
+      "componentId": "702044447:18",
+      "popupVisible": true,
+      "viewportHeight": 32,
+      "statusY": 120
+    },
+    {
+      "id": "ready",
+      "phase": "ready",
+      "componentId": "702044447:30",
+      "popupVisible": true,
+      "viewportHeight": 160,
+      "statusY": 248
+    },
+    {
+      "id": "active",
+      "phase": "ready",
+      "componentId": "702044447:54",
+      "popupVisible": true,
+      "viewportHeight": 160,
+      "statusY": 248,
+      "activeKey": "hamburg"
+    },
+    {
+      "id": "scroll-end",
+      "phase": "ready",
+      "componentId": "702044447:78",
+      "popupVisible": true,
+      "viewportHeight": 160,
+      "statusY": 248,
+      "activeKey": "zuerich"
+    },
+    {
+      "id": "selected",
+      "phase": "closed",
+      "componentId": "702044447:102",
+      "popupVisible": false,
+      "viewportHeight": 0,
+      "statusY": 80,
+      "value": "berlin"
+    },
+    {
+      "id": "empty",
+      "phase": "empty",
+      "componentId": "702044447:108",
+      "popupVisible": true,
+      "viewportHeight": 32,
+      "statusY": 120
+    },
+    {
+      "id": "error",
+      "phase": "error",
+      "componentId": "702044447:120",
+      "popupVisible": true,
+      "viewportHeight": 32,
+      "statusY": 120
+    },
+    {
+      "id": "disabled",
+      "phase": "closed",
+      "componentId": "702044447:132",
+      "popupVisible": false,
+      "viewportHeight": 0,
+      "statusY": 80
+    }
+  ],
+  "sources": [
+    {
+      "source": "components/README.md",
+      "sha256": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894"
+    },
+    {
+      "source": "components/autocomplete/README.md",
+      "sha256": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3"
+    },
+    {
+      "source": "components/autocomplete/accessibility.html",
+      "sha256": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470"
+    },
+    {
+      "source": "components/autocomplete/accessibility.rules.json",
+      "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+    },
+    {
+      "source": "components/autocomplete/behavior.scxml",
+      "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+    },
+    {
+      "source": "components/autocomplete/component.json",
+      "sha256": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63"
+    },
+    {
+      "source": "components/autocomplete/error-relay.scxml",
+      "sha256": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312"
+    },
+    {
+      "source": "components/autocomplete/interface.json",
+      "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+    },
+    {
+      "source": "components/autocomplete/layout.css",
+      "sha256": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42"
+    },
+    {
+      "source": "components/autocomplete/stories.json",
+      "sha256": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d"
+    },
+    {
+      "source": "components/library.json",
+      "sha256": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29"
+    },
+    {
+      "source": "components/overlay/accessibility.html",
+      "sha256": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037"
+    },
+    {
+      "source": "components/overlay/behavior.scxml",
+      "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8"
+    },
+    {
+      "source": "components/overlay/component.json",
+      "sha256": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a"
+    },
+    {
+      "source": "components/overlay/interface.json",
+      "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0"
+    },
+    {
+      "source": "components/overlay/layout.css",
+      "sha256": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6"
+    },
+    {
+      "source": "components/scroll-area/accessibility.html",
+      "sha256": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3"
+    },
+    {
+      "source": "components/scroll-area/behavior.scxml",
+      "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8"
+    },
+    {
+      "source": "components/scroll-area/component.json",
+      "sha256": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01"
+    },
+    {
+      "source": "components/scroll-area/interface.json",
+      "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d"
+    },
+    {
+      "source": "components/scroll-area/layout.css",
+      "sha256": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7"
+    },
+    {
+      "source": "components/tokens.json",
+      "sha256": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+    }
+  ]
+}

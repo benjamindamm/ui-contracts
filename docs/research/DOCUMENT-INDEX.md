@@ -1,6 +1,6 @@
 # Dokumentenindex
 
-Stand: 25. Oktober 2026. Vollständiges Verzeichnis der 40 Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
+Stand: 25. Oktober 2026. Vollständiges Verzeichnis der 41 Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
 
 Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; maßgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.
 
@@ -61,6 +61,7 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 | [REMAINING-10.md](REMAINING-10.md) | Genau verbleibende10 Nachweise |
 | [REMAINING-29-REVIEW.md](REMAINING-29-REVIEW.md) | Zusammenhängender Abgleich der29 offenen Ausgangszellen |
 | [RESEARCH-PLAN.md](RESEARCH-PLAN.md) | Forschungslücken und nächste validierbare Prüfungen |
+| [STUDIES.md](STUDIES.md) | Studien |
 | [TASKS-10-HISTORY.md](TASKS-10-HISTORY.md) | Historische10er-Aufgabenliste |
 | [TASKS-HISTORY.md](TASKS-HISTORY.md) | Historische Aufgaben- und Fortschrittsstände |
 
@@ -136,6 +137,9 @@ Die einzelnen Berichte sind hier zusätzlich vollständig nach Pfad auffindbar; 
 | [experiments/2026-10-25/zag-ark-references/REPORT.md](experiments/2026-10-25/zag-ark-references/REPORT.md) | Zag und Ark UI: getrennte tatsächliche Referenzpfade |
 | [experiments/2026-10-25/zag-ark-validation/REPORT.md](experiments/2026-10-25/zag-ark-validation/REPORT.md) | Zag und Ark: vorhandene Originalprüfungen und ungelöste X06-Artefaktfrage |
 | [experiments/INDEX.md](experiments/INDEX.md) | Index aller ausgeführten Nachweise |
+| [studies/AC-R01/AGENT-GUIDE.md](studies/AC-R01/AGENT-GUIDE.md) | AC-R01 · Einstieg für weiterarbeitende Agenten |
+| [studies/AC-R01/PROTOCOL.md](studies/AC-R01/PROTOCOL.md) | AC-R01 · Studienprotokoll |
+| [studies/AC-R01/README.md](studies/AC-R01/README.md) | AC-R01 · Reproduzierbarkeit einer Autocomplete-Definition |
 
 ## Maschinenlesbare Daten und Prüfarbeitsstände
 

@@ -1,0 +1,143 @@
+{
+  "studyId": "AC-R01",
+  "hashAlgorithm": "SHA-256",
+  "scope": "Final study corpus, excluding this manifest; paths relative to repository root. Frozen input hashes are in run.json.",
+  "files": {
+    "docs/research/studies/AC-R01/AGENT-GUIDE.md": {
+      "bytes": 9770,
+      "sha256": "7210b6d788616c8911870f83dec732d12d0f1e7f0f7ae08ebf34b1a33dfca1fe"
+    },
+    "docs/research/studies/AC-R01/PROTOCOL.md": {
+      "bytes": 7658,
+      "sha256": "6e6cd57d4b2b43435e44224c96cc83f9b59fd6d6d91995d583ce96f7d63ae315"
+    },
+    "docs/research/studies/AC-R01/README.md": {
+      "bytes": 8232,
+      "sha256": "271240a5635060b4f6c7dbfdf0b7e3bf3b96affbbc7a48aaafcfc44e526cc2ad"
+    },
+    "docs/research/studies/AC-R01/native-css-control.json": {
+      "bytes": 4824,
+      "sha256": "bf6439806de4627c74f3753f7aa39b5fd0c57ae63e877d443a68645063e0b032"
+    },
+    "examples/autocomplete/reproducibility/run-01/README.md": {
+      "bytes": 1948,
+      "sha256": "027fadcd444c9b336874c0efd035935953c758a28ef4c6b86463acad5b335cb1"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-a/REPORT.md": {
+      "bytes": 5893,
+      "sha256": "2c819818dfb65bfa1ae81390fe1fa80ae679320cfd5a51bc70c597cf340e86d2"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-a/autocomplete.fig": {
+      "bytes": 31310,
+      "sha256": "ee9fb3b011ac0e5b43059a5ca23f4134c3d73ff37d211a17298e46a818de828f"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-a/checks.json": {
+      "bytes": 2061,
+      "sha256": "138587a22bbfe1ba556b3f8282a3b5b45dafef5076eab69e8933b81828870243"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-a/generate.mjs": {
+      "bytes": 6338,
+      "sha256": "6af0cbb3c5b0f7e974a647d02142c19bca405c28bc51dae883675a573e196279"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-a/preview.png": {
+      "bytes": 89399,
+      "sha256": "411ac9fe98c7fdf724db7e8b257eefe9aa5e6e4e212a9c9c1c16ed8eb400ddf3"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-a/source-sha256.json": {
+      "bytes": 2393,
+      "sha256": "efad5a27473e620d3e211a77f8b2474311b77139b7bc6dccc6a1784fac412156"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-b/REPORT.md": {
+      "bytes": 5903,
+      "sha256": "1180cfe5a85c93de65bcf7aec30a5336b25da8b2f0cda4df7dfb6ff695322199"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-b/autocomplete.fig": {
+      "bytes": 31456,
+      "sha256": "23e81fbacdc12d4f3e783e001cad0955b96f046891511b25c0d0530e174ff380"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-b/checks.json": {
+      "bytes": 5472,
+      "sha256": "3fb5b7d370ac61f12486a0204b12cf83eb67bb57cf4f98fd57da556d33d69498"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-b/generate.mjs": {
+      "bytes": 6899,
+      "sha256": "f898ba2d60b5cb9aceb2574bcbd1ad5b7fbf92ba618ce821ee7f84fd660fbd7e"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-b/preview.png": {
+      "bytes": 83283,
+      "sha256": "5c9ed20642df3116ce275e2d2598fbb8a360b2fbc09c83d76e65314f5664e304"
+    },
+    "examples/autocomplete/reproducibility/run-01/builder-b/preview.svg": {
+      "bytes": 15952,
+      "sha256": "eebfb82efe8c617de15a6081729cf412ecff2ab355754428bb8f0eca1efa1f09"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/REVIEW.md": {
+      "bytes": 11261,
+      "sha256": "a5741c00510a7a1fe622e42812c8b6f74416cc2f25ac5e41950a1d963c2256ce"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/hashes.json": {
+      "bytes": 3805,
+      "sha256": "03846d8e5b35f4ce43773e661df9cd579c7b0c105b19a5f8f524d2a99c28428a"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/inspect-original.mjs": {
+      "bytes": 822,
+      "sha256": "22d93ea5d18613821dc42580137456bed51f9bbe5d7733e5d7aa495ab2a967b4"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/native-checks.json": {
+      "bytes": 255454,
+      "sha256": "d8c01fb5efa5da1a09e3da2457c8616fad35515b3a9f3a5ab24c1a7c5a046a34"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/normalized-a.json": {
+      "bytes": 10424,
+      "sha256": "27f2e6d63efdd8cdf1ebb570691eb9814c44d76052a2ac3835ae7b0d10f82ce6"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/normalized-b.json": {
+      "bytes": 10424,
+      "sha256": "27f2e6d63efdd8cdf1ebb570691eb9814c44d76052a2ac3835ae7b0d10f82ce6"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/original-a.json": {
+      "bytes": 885165,
+      "sha256": "16312acf6a992912cfa2e6dfc49c342ab73daef7e51fa3feaec4ca96ddfe0949"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/original-b.json": {
+      "bytes": 933242,
+      "sha256": "fba378390d43b6eb88ede79f7f50afb057d34cc756f2bd369a732f0f8660763b"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/preregistered.json": {
+      "bytes": 14070,
+      "sha256": "d7bdb23d59cabe25bd73b35fe21a7ef3f5b35eb219ee8df8b315f704110c120b"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/preregistered.md": {
+      "bytes": 1699,
+      "sha256": "2099f6c975ef27eda29e87362b215fb926175eb4bf6e3d36302e9e8cd3416257"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/preregistration-seal.json": {
+      "bytes": 264,
+      "sha256": "e872784844b734d7c01ea9fb05bbb4b69cc926d60c416c07e4d471beb2777cac"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/render-a.png": {
+      "bytes": 89399,
+      "sha256": "411ac9fe98c7fdf724db7e8b257eefe9aa5e6e4e212a9c9c1c16ed8eb400ddf3"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/render-b.png": {
+      "bytes": 83283,
+      "sha256": "5c9ed20642df3116ce275e2d2598fbb8a360b2fbc09c83d76e65314f5664e304"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/render-original.mjs": {
+      "bytes": 748,
+      "sha256": "9b2a233167877694ed01a6939990a1b23b268e43165517c0a5faff034413d3ea"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/results.json": {
+      "bytes": 260016,
+      "sha256": "c241e24c9a2b3c567261016f41f32b49bd3739e97bfbc0cdd900d237cbbb9570"
+    },
+    "examples/autocomplete/reproducibility/run-01/review/verify.py": {
+      "bytes": 7985,
+      "sha256": "0fcba173ca5ceccfd4bdddb57c439f3e94fe50051a6226e2128e1a1287e8dec5"
+    },
+    "examples/autocomplete/reproducibility/run-01/run.json": {
+      "bytes": 5609,
+      "sha256": "fbe040aa4543b1b7c19f57b06d2c7da1b662e85be3b39c6e668c558e417af6d9"
+    }
+  }
+}

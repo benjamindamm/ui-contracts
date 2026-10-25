@@ -1,0 +1,93 @@
+{
+  "run": "autocomplete-reproducibility-01",
+  "status": "completed",
+  "date": "2026-10-25",
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "definitionFiles": {
+    "README.md": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+    "autocomplete/README.md": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+    "autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+    "autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+    "autocomplete/behavior.scxml": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+    "autocomplete/component.json": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+    "autocomplete/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+    "autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+    "autocomplete/layout.css": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+    "autocomplete/stories.json": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+    "library.json": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+    "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+    "overlay/component.json": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+    "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "overlay/layout.css": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+    "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+    "scroll-area/component.json": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+    "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "scroll-area/layout.css": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+    "tokens.json": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+  },
+  "sourceCommit": "e1903e1b25b2a518c3f7a4ed7c1d010a923f950b",
+  "toolchainPackageLockSha256": "ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6",
+  "builderHistoryInheritance": "none for both builders",
+  "reviewerHistoryInheritance": "none",
+  "allowedSemanticInputs": "components/ only",
+  "technicalInputs": "Original OpenPencil documentation and pinned tools/openpencil dependencies",
+  "outputDirectories": [
+    "builder-a/",
+    "builder-b/",
+    "review/"
+  ],
+  "priorDesignsAllowed": false,
+  "sharedBuilderOutputsAllowed": false,
+  "independenceLimit": "Separate conversation contexts with access instructions; no separate filesystem sandbox, no statistical model-independence claim.",
+  "comparison": "Definition conformity first; then semantic/component-level differences. Free page layout, generated IDs and bytewise file identity are not required to match.",
+  "reviewPrerequisites": "Reviewer derives and saves criteria from definition before reading builder outputs; actual comparison only after both builders finish.",
+  "agents": {
+    "builderA": "/root/repro_builder_a",
+    "builderB": "/root/repro_builder_b",
+    "reviewer": "/root/repro_independent_reviewer"
+  },
+  "studyId": "AC-R01",
+  "criteriaFiles": {
+    "review/preregistered.json": "d7bdb23d59cabe25bd73b35fe21a7ef3f5b35eb219ee8df8b315f704110c120b",
+    "review/preregistered.md": "2099f6c975ef27eda29e87362b215fb926175eb4bf6e3d36302e9e8cd3416257"
+  },
+  "buildersCompleted": {
+    "A": true,
+    "B": true
+  },
+  "studyFraming": "User requested study documentation after builders started; no retrospective change to input or preregistered criteria.",
+  "builderDeliveries": {
+    "builder-a": {
+      "completed": true,
+      "files": {
+        "REPORT.md": "2c819818dfb65bfa1ae81390fe1fa80ae679320cfd5a51bc70c597cf340e86d2",
+        "autocomplete.fig": "ee9fb3b011ac0e5b43059a5ca23f4134c3d73ff37d211a17298e46a818de828f",
+        "checks.json": "138587a22bbfe1ba556b3f8282a3b5b45dafef5076eab69e8933b81828870243",
+        "generate.mjs": "6af0cbb3c5b0f7e974a647d02142c19bca405c28bc51dae883675a573e196279",
+        "preview.png": "411ac9fe98c7fdf724db7e8b257eefe9aa5e6e4e212a9c9c1c16ed8eb400ddf3",
+        "source-sha256.json": "efad5a27473e620d3e211a77f8b2474311b77139b7bc6dccc6a1784fac412156"
+      }
+    },
+    "builder-b": {
+      "completed": true,
+      "files": {
+        "REPORT.md": "1180cfe5a85c93de65bcf7aec30a5336b25da8b2f0cda4df7dfb6ff695322199",
+        "autocomplete.fig": "23e81fbacdc12d4f3e783e001cad0955b96f046891511b25c0d0530e174ff380",
+        "checks.json": "3fb5b7d370ac61f12486a0204b12cf83eb67bb57cf4f98fd57da556d33d69498",
+        "generate.mjs": "f898ba2d60b5cb9aceb2574bcbd1ad5b7fbf92ba618ce821ee7f84fd660fbd7e",
+        "preview.png": "5c9ed20642df3116ce275e2d2598fbb8a360b2fbc09c83d76e65314f5664e304",
+        "preview.svg": "eebfb82efe8c617de15a6081729cf412ecff2ab355754428bb8f0eca1efa1f09"
+      }
+    }
+  },
+  "outcome": {
+    "study": "docs/research/studies/AC-R01/README.md",
+    "builderA": "FAIL",
+    "builderB": "FAIL",
+    "measuredPairAgreement": true,
+    "sharedViolation": "disabled placeholder #94A3B8 instead of #64748B",
+    "definitionChanged": false
+  }
+}
