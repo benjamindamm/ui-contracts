@@ -1,0 +1,110 @@
+{
+  "scope": "Actual original SCXML4.3.28 with native parent delivery, additional CEM/TypeScript-signature/DOM/CSS/ARIA mapping; native geometry/focus/synthetic keyboard and accessibility tree; no native CSS UX machine, ARIA scroll policy, production component, physical key or AT speech",
+  "criterion": "B04",
+  "cases": [
+    {
+      "additionalHostCode": true,
+      "criterion": "B04",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "AState": "open",
+        "BState": "closed",
+        "active": "option-a-1",
+        "focus": "input-a"
+      },
+      "id": "keyboard-actions-own-context",
+      "observed": {
+        "AState": "open",
+        "BState": "closed",
+        "active": "option-a-1",
+        "focus": "input-a"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "B04",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "AState": "closed",
+        "BState": "open",
+        "focus": "input-b"
+      },
+      "id": "keyboard-other-instance",
+      "observed": {
+        "AState": "closed",
+        "BState": "open",
+        "focus": "input-b"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "open"
+        }
+      ]
+    }
+  ]
+}

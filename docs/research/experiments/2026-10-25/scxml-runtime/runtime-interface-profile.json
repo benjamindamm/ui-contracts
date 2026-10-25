@@ -1,0 +1,10 @@
+{
+  "publicEvent": "value-change",
+  "properties": {
+    "value": {
+      "type": "StringKeyword",
+      "required": true
+    }
+  },
+  "route": "actual native #_parent to original Statechart parent; own interface-derived allowlist after receipt"
+}

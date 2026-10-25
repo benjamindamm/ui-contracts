@@ -1,0 +1,72 @@
+[
+  {
+    "id": "control",
+    "mutation": "none",
+    "expected": "bound"
+  },
+  {
+    "id": "consistent-name-change",
+    "mutation": "rename",
+    "expected": "bound"
+  },
+  {
+    "id": "foreign-instance-name",
+    "mutation": "foreign",
+    "expected": "foreign-anchor-part"
+  },
+  {
+    "id": "missing-name",
+    "mutation": "missing",
+    "expected": "missing-css-anchor"
+  },
+  {
+    "id": "duplicate-name",
+    "mutation": "duplicate",
+    "expected": "nonunique-css-anchor"
+  },
+  {
+    "id": "wrong-component-part",
+    "mutation": "part",
+    "expected": "foreign-anchor-part"
+  },
+  {
+    "id": "stale-css-source",
+    "mutation": "revision",
+    "expected": "source-revision"
+  },
+  {
+    "id": "variable-anchor",
+    "mutation": "variable",
+    "expected": "unsupported-value"
+  },
+  {
+    "id": "class-selector",
+    "mutation": "selector",
+    "expected": "unsupported-selector"
+  },
+  {
+    "id": "conditional-anchor",
+    "mutation": "nested",
+    "expected": "unsupported-nesting"
+  },
+  {
+    "id": "explicit-anchor-scope",
+    "mutation": "scope",
+    "expected": "unsupported-scope"
+  },
+  {
+    "id": "implicit-keyword",
+    "mutation": "keyword",
+    "expected": "unsupported-value"
+  },
+  {
+    "id": "later-position-reset",
+    "mutation": "reset",
+    "expected": "unsupported-reset"
+  },
+  {
+    "id": "named-function-override",
+    "mutation": "named-function",
+    "expected": "unsupported-named-function"
+  }
+]

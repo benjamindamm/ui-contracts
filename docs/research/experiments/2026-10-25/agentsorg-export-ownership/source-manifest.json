@@ -1,0 +1,256 @@
+{
+  "revision": "014a1864c641f8e9792ed76de93c95493489dd8c",
+  "original_sources": [
+    {
+      "file": "sources/diff_design.py",
+      "url": "https://raw.githubusercontent.com/AgentsORG/DESIGN/014a1864c641f8e9792ed76de93c95493489dd8c/scripts/diff_design.py",
+      "sha256": "6870be9beaf55ac7021fa50aa3e3c6babce63b2558fef45eeb1d3b12ff0a862e"
+    },
+    {
+      "file": "sources/export_design.py",
+      "url": "https://raw.githubusercontent.com/AgentsORG/DESIGN/014a1864c641f8e9792ed76de93c95493489dd8c/scripts/export_design.py",
+      "sha256": "e8823f9930382e8fd8eea5d482f266af56bcbd323050b9ba0440f286c9d317b7"
+    },
+    {
+      "file": "sources/SPEC.md",
+      "url": "https://raw.githubusercontent.com/AgentsORG/DESIGN/014a1864c641f8e9792ed76de93c95493489dd8c/SPEC.md",
+      "sha256": "5b52095a89395bb2e80be438104d4aa5a42a1b7d6fafab575a0d1c44230f30a6"
+    },
+    {
+      "file": "sources/design.v1.schema.json",
+      "url": "https://raw.githubusercontent.com/AgentsORG/DESIGN/014a1864c641f8e9792ed76de93c95493489dd8c/schema/design.v1.schema.json",
+      "sha256": "9c8b5556bc10c51a0938eb0edc239a685e73e91a7b30bfc756db81140a943edb"
+    }
+  ],
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_scripts_modified": false,
+  "pyyaml": "6.0.3",
+  "jsonschema": "4.25.1",
+  "conditions": 8,
+  "whole_pipeline_executed": false,
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "af03c2381fb47ba2532d41199c04d7802d19f49b81d2e8460e5571d903edb917"
+    },
+    {
+      "file": "baseline.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "af142fd18ef616fbc9c7a625fe5ba83c6702cb986787bbbcc2636549c2fa59dc"
+    },
+    {
+      "file": "change-record.json",
+      "sha256": "3297274a4ef3d32a79ca8ce091a4a4b81090b600c2d6f2454c8eb1d9acde00a2"
+    },
+    {
+      "file": "fixtures/baseline-css/new.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/baseline-css/old.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/baseline-css/out/tokens.css",
+      "sha256": "67155b5c74823233dccb72e9c63465b2e2a1b4432a123ad30cbf9c184d7995ab"
+    },
+    {
+      "file": "fixtures/default-theme-value/new.design",
+      "sha256": "d967de965349c7ee4440efbc5493914e05a839c7b1d95528364daf55e4f99565"
+    },
+    {
+      "file": "fixtures/default-theme-value/old.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/default-theme-value/out/tokens.css",
+      "sha256": "2eb7f018037788d44a53051909d85cc1aa51157fad55c0c22a562a4bc285a518"
+    },
+    {
+      "file": "fixtures/informational-diff-default/new.design",
+      "sha256": "9cd6f1469a4874de7fe30bd35f3d3d9a4ffde6f55d74c4e62c782aaaf5dbba67"
+    },
+    {
+      "file": "fixtures/informational-diff-default/old.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/locked-entry-removed/new.design",
+      "sha256": "0ff1459a96387b98f36cd554c22f5ef6eff76bfe5cd4f49582961025d697d8d8"
+    },
+    {
+      "file": "fixtures/locked-entry-removed/old.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/regenerate-tampered-output/new.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/regenerate-tampered-output/old.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/regenerate-tampered-output/out/tokens.css",
+      "sha256": "67155b5c74823233dccb72e9c63465b2e2a1b4432a123ad30cbf9c184d7995ab"
+    },
+    {
+      "file": "fixtures/shadcn-mismatch/new.design",
+      "sha256": "0354c7abbacc6136ab24872fa38ca5cf1e0d7abfbfdf7c0ad5dd4c618a47e3eb"
+    },
+    {
+      "file": "fixtures/shadcn-mismatch/old.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/shadcn-mismatch/out/theme.json",
+      "sha256": "cdf5aac44078acec98783d3f0b1de70dd27ba5d69f03c1a142400c07c4b2c406"
+    },
+    {
+      "file": "fixtures/token-update-and-diff/new.design",
+      "sha256": "9cd6f1469a4874de7fe30bd35f3d3d9a4ffde6f55d74c4e62c782aaaf5dbba67"
+    },
+    {
+      "file": "fixtures/token-update-and-diff/old.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/token-update-and-diff/out/tokens.css",
+      "sha256": "2eb7f018037788d44a53051909d85cc1aa51157fad55c0c22a562a4bc285a518"
+    },
+    {
+      "file": "fixtures/version-bump-still-regression/new.design",
+      "sha256": "6dc50999be4f0b2d8269e79fa4c916a6f1b41c3a64c5872f17838517be4b7e45"
+    },
+    {
+      "file": "fixtures/version-bump-still-regression/old.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "initial-unmapped-input-results.json",
+      "sha256": "8099852c58a8d0029bfce880a87da8bb529bd644563635be4a184369335a960f"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "50c178f882d7e4cef8fdb071e93bc44596cc8bb4dfce856fdb0f44b10b27326d"
+    },
+    {
+      "file": "results.json",
+      "sha256": "1e54c3baef7292d2c4b39607219e609a1d5d4c67329c7703d026848fce6deebf"
+    },
+    {
+      "file": "run.py",
+      "sha256": "1e7f41b47678f50f5e8e02419d7e3cf6aa39178b15455bc672e78892a3af2497"
+    }
+  ],
+  "dependency_files": [
+    {
+      "file": "tool/_yaml/__init__.py",
+      "sha256": "d3801eff9a2cc5a8692476b75c165401fe308ba5d7df6811f03e97ea9eb81840"
+    },
+    {
+      "file": "tool/pyyaml-6.0.3.dist-info/INSTALLER",
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "file": "tool/pyyaml-6.0.3.dist-info/METADATA",
+      "sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34"
+    },
+    {
+      "file": "tool/pyyaml-6.0.3.dist-info/RECORD",
+      "sha256": "1b027d69a740b3a21d87fface6ac135c2f3af43b8e3c79ce7eee228a1e7297ca"
+    },
+    {
+      "file": "tool/pyyaml-6.0.3.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "tool/pyyaml-6.0.3.dist-info/WHEEL",
+      "sha256": "57596843a4e9c4006ed403d48343284d104ecd2293e7155cdec922cd7fa8bc25"
+    },
+    {
+      "file": "tool/pyyaml-6.0.3.dist-info/licenses/LICENSE",
+      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+    },
+    {
+      "file": "tool/pyyaml-6.0.3.dist-info/top_level.txt",
+      "sha256": "ae98f42153138ac02387fd6f1b709c7fdbf98e9090c00cfa703d48554e597614"
+    },
+    {
+      "file": "tool/yaml/__init__.py",
+      "sha256": "b19dfcc333d6a75dfd73073901164507252f271b41d3b5f7d85510033a0547a7"
+    },
+    {
+      "file": "tool/yaml/_yaml.cpython-312-darwin.so",
+      "sha256": "e22e20c9ba0922aea16158d839a651b58226eb0e86544879b7d5f5229135d928"
+    },
+    {
+      "file": "tool/yaml/composer.py",
+      "sha256": "fcaa37d16afa783594794a5ab94193dcb720f503c19ce3d59539c8311189f453"
+    },
+    {
+      "file": "tool/yaml/constructor.py",
+      "sha256": "90d8247da78b524c10618fd0e857f54f3d97570fe91b5c5513d024ef3faf88b0"
+    },
+    {
+      "file": "tool/yaml/cyaml.py",
+      "sha256": "e99ac01bd7c062f7557b614aff0d21997a06ed962ca185306a91bc0a20bbd87d"
+    },
+    {
+      "file": "tool/yaml/dumper.py",
+      "sha256": "3cb72d66563064ba7b5e679477046ebf89d8399d940670c8532f3e94a7cb17ea"
+    },
+    {
+      "file": "tool/yaml/emitter.py",
+      "sha256": "8e086d694ede170837d5b1b407b45979aff6f40762f422a65eafd08e04290a44"
+    },
+    {
+      "file": "tool/yaml/error.py",
+      "sha256": "021f73fada072546c4f63f8cf18a7181244ce4280b09cc15cc980b2d1176171a"
+    },
+    {
+      "file": "tool/yaml/events.py",
+      "sha256": "e74fd392c810884e2ea7e94aa3f57e9c1cbeb402319083d0c58e6a0e1282787c"
+    },
+    {
+      "file": "tool/yaml/loader.py",
+      "sha256": "5156becc8aa6905482218abf3e04869b835226db4763645fff3438fdbd5f1cdd"
+    },
+    {
+      "file": "tool/yaml/nodes.py",
+      "sha256": "80f28d8fca4a09d87677882bde021820d9cf39a3b11a12405226211919cf13ce"
+    },
+    {
+      "file": "tool/yaml/parser.py",
+      "sha256": "8a55a9e6fbe0a07146cef3990c8b45a068c3e83e369e1959ad9ca30306b4a09a"
+    },
+    {
+      "file": "tool/yaml/reader.py",
+      "sha256": "d1d9b38ab3a20c6e17a38d519ee412ecaf6b918df18c78956ac7c330d4ea08dc"
+    },
+    {
+      "file": "tool/yaml/representer.py",
+      "sha256": "22e58ff9c016f6c1ca1274b4802a926bcf78935060e1c813c5a0f021c6d143e6"
+    },
+    {
+      "file": "tool/yaml/resolver.py",
+      "sha256": "f4bf9561f9b89961f1503d558385fbae30d12bfed565de9bf76c33abb63620a6"
+    },
+    {
+      "file": "tool/yaml/scanner.py",
+      "sha256": "60433788b652690c17710460da5d91e0c753d3318fd85f5e1e42862a71f25906"
+    },
+    {
+      "file": "tool/yaml/serializer.py",
+      "sha256": "0a1b85826854d35863e31808f0668abfabdf33606e8f06bd8bb7761401e3edc0"
+    },
+    {
+      "file": "tool/yaml/tokens.py",
+      "sha256": "953408cd2570f0c83dc2fe39f7e4e388e41eeb05738aa69196a5f6ffcf6ba79e"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "logs": [],
+  "ok": true,
+  "value": {
+    "page": 283,
+    "ready": {
+      "matched": true
+    },
+    "result": {
+      "page": 283,
+      "value": {
+        "cases": [
+          {
+            "id": "different-original-parameters",
+            "observed": {
+              "AList": true,
+              "BNone": true,
+              "differentOptionArrays": true,
+              "distinctInstances": true,
+              "sharedDefinition": true
+            }
+          },
+          {
+            "id": "typed-external-field-references",
+            "observed": {
+              "accepted": true,
+              "instances": [
+                "A",
+                "B"
+              ],
+              "references": [
+                {
+                  "actualField": "comboboxNode",
+                  "actualNodeId": "input-a",
+                  "className": "ComboboxAutocomplete",
+                  "controlledListId": "list-a",
+                  "instance": "A",
+                  "interfacePointer": "/modules/0/declarations/0/members/0",
+                  "method": "additional CEM typed object-reference binding, not native APG metadata support",
+                  "nativeType": "HTMLInputElement",
+                  "sourceMetadata": {
+                    "interfaceSha256": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057",
+                    "originalRevision": "0f765e4dc33e966026114ac12a8380db1de3b787",
+                    "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+                    "wrongTypeInterfaceSha256": "7974f3ffee2e6cb3c58824b055d2d296e5af75353cb2a055bc77026439e017b2"
+                  }
+                },
+                {
+                  "actualField": "comboboxNode",
+                  "actualNodeId": "input-b",
+                  "className": "ComboboxAutocomplete",
+                  "controlledListId": "list-b",
+                  "instance": "B",
+                  "interfacePointer": "/modules/0/declarations/0/members/0",
+                  "method": "additional CEM typed object-reference binding, not native APG metadata support",
+                  "nativeType": "HTMLInputElement",
+                  "sourceMetadata": {
+                    "interfaceSha256": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057",
+                    "originalRevision": "0f765e4dc33e966026114ac12a8380db1de3b787",
+                    "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+                    "wrongTypeInterfaceSha256": "7974f3ffee2e6cb3c58824b055d2d296e5af75353cb2a055bc77026439e017b2"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "original-A-value-and-filter",
+            "observed": {
+              "AOptions": [
+                "Alabama",
+                "Alaska"
+              ],
+              "AValue": "Al",
+              "BValue": ""
+            }
+          },
+          {
+            "id": "original-B-value-with-own-mode",
+            "observed": {
+              "AValue": "Al",
+              "BFilter": "",
+              "BOptions": [
+                "Berlin",
+                "Bremen"
+              ],
+              "BValue": "Br"
+            }
+          },
+          {
+            "id": "original-A-option-click",
+            "observed": {
+              "AExpanded": "false",
+              "AValue": "Alaska",
+              "BExpanded": "true",
+              "BValue": "Br"
+            }
+          },
+          {
+            "id": "wrong-external-field-type",
+            "observed": {
+              "error": "field-type-mismatch"
+            }
+          },
+          {
+            "id": "foreign-instance-reference",
+            "observed": {
+              "error": "instance-scope"
+            }
+          },
+          {
+            "id": "missing-external-field-target",
+            "observed": {
+              "error": "missing-field-target"
+            }
+          }
+        ],
+        "explicitOriginalInstances": [
+          "A",
+          "B"
+        ],
+        "originalBootstrapMatched": 0,
+        "sourceMetadata": {
+          "interfaceSha256": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057",
+          "originalRevision": "0f765e4dc33e966026114ac12a8380db1de3b787",
+          "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+          "wrongTypeInterfaceSha256": "7974f3ffee2e6cb3c58824b055d2d296e5af75353cb2a055bc77026439e017b2"
+        }
+      }
+    }
+  }
+}

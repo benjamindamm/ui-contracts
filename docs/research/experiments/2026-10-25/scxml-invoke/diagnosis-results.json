@@ -1,0 +1,24 @@
+{
+  "method": "Original default invoker; byte-identical child copies with different source cache keys. Diagnostic control, not selected deployment strategy.",
+  "cases": [
+    {
+      "id": "distinct-source-uri-control",
+      "expected": {
+        "ownerA": "A",
+        "ownerB": "B",
+        "offsetA": 40,
+        "offsetB": 0,
+        "reportOwnerA": "A"
+      },
+      "criterion": "Byte-identical child definitions at distinct file URIs; original default invoker, separately prepared parent sources; inspect data and routing after SCROLL A",
+      "observed": {
+        "ownerA": "A",
+        "ownerB": "B",
+        "offsetA": 40,
+        "offsetB": 0,
+        "reportOwnerA": "A"
+      },
+      "expectationMet": true
+    }
+  ]
+}

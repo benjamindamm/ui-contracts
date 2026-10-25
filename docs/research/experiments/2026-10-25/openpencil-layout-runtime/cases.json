@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fixed-hidden",
+    "kind": "scroll",
+    "clip": true,
+    "height": 60,
+    "maxHeight": null,
+    "expectedOverflow": "hidden",
+    "expectedClientHeight": 60,
+    "expectedScroll": [
+      80,
+      80
+    ]
+  },
+  {
+    "id": "fixed-visible",
+    "kind": "scroll",
+    "clip": false,
+    "height": 60,
+    "maxHeight": null,
+    "expectedOverflow": "visible",
+    "expectedClientHeight": 60,
+    "expectedScroll": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "maxheight-hidden",
+    "kind": "scroll",
+    "clip": true,
+    "height": 300,
+    "maxHeight": 60,
+    "expectedOverflow": "hidden",
+    "expectedClientHeight": 60,
+    "expectedScroll": [
+      80,
+      80
+    ]
+  },
+  {
+    "id": "relative-baseline",
+    "kind": "geometry",
+    "inputHeight": 20,
+    "parentX": 0,
+    "parentY": 0,
+    "popupY": 28,
+    "desiredGap": 8,
+    "expectedGap": 8,
+    "expectedDesiredRelationSatisfied": true
+  },
+  {
+    "id": "input-height-growth",
+    "kind": "geometry",
+    "inputHeight": 40,
+    "parentX": 0,
+    "parentY": 0,
+    "popupY": 28,
+    "desiredGap": 8,
+    "expectedGap": -12,
+    "expectedDesiredRelationSatisfied": false
+  },
+  {
+    "id": "parent-coordinate-move",
+    "kind": "geometry",
+    "inputHeight": 20,
+    "parentX": 50,
+    "parentY": 50,
+    "popupY": 28,
+    "desiredGap": 8,
+    "expectedGap": 8,
+    "expectedDesiredRelationSatisfied": true
+  }
+]

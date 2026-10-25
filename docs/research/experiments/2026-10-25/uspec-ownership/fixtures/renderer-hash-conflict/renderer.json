@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "baseSourceHash": "sha256:foreign"
+  },
+  "data": {
+    "source": {},
+    "component": {},
+    "variantAxes": [],
+    "defaultVariant": {
+      "id": "v1",
+      "name": "default",
+      "variantProperties": {}
+    },
+    "defaultTree": {
+      "id": "v1",
+      "children": [
+        {
+          "id": "input-1",
+          "name": "Input",
+          "dimensions": {
+            "height": 20
+          }
+        }
+      ]
+    },
+    "propertyDefinitions": {},
+    "childComposition": {}
+  }
+}

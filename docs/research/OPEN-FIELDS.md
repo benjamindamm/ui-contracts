@@ -1,110 +1,67 @@
 # Register der offenen Matrixfelder
 
-Stand: 24. Oktober 2026. **72 offene Nachweise: 45 Integrationsfelder und 27 weitere Felder.** Ausgangsstand vor der Layoutfolgeprüfung: 73; UXSpec V05 wurde mit C398 als A eingeordnet. Abgeleitet aus `study.json`; ein Eintrag entspricht genau einer U-Zelle. Alle 16 Kandidaten-Durchgänge bleiben abgeschlossen. Die folgende Priorisierung ist ein Arbeitsvorschlag, keine Änderung der Abdeckungsmatrix und keine Behauptung, sämtliche Fragen seien erneut extern geprüft worden.
+Stand: 25. Oktober 2026. **2 offene Nachweise: 2 Integrationsfelder und 0 weitere Felder.** Nach dem Ausgangsstand 73 wurde UXSpec V05 eingeordnet; die anschließende Gesamtprüfung aller 72 Restzellen hat fünf weitere Neubewertungen erbracht. [Vollständiges 72-Zellen-Protokoll](ALL-FIELDS-REVIEW.md). Eine dokumentarische Prüfung ist nicht gleich einem geschlossenen technischen Nachweis.
 
-P1: für die konkrete Vier-Domänen-Verbindung beziehungsweise Auswahl-/Accessibility-Kette vorrangig. P2: vertiefender Fach-, Plattform- oder Werkzeugvergleich. Eine hohe Priorität sagt nichts über die Eignung des Kandidaten aus. Bei neuen Nachweisen müssen Matrix, Befund und dieses Register gemeinsam aktualisiert werden.
+Alle 16 Kandidaten-Durchgänge bleiben abgeschlossen. Dieses Register enthält exakt die aktuellen U-Zellen aus study.json. Alte Claims und frühere Zahlen bleiben im Verlauf erkennbar; aktuelle Zahlen werden nicht aus Gesprächserinnerung geschätzt. P1 priorisiert Integration/Signaturen/A11y, P2 übrige Fachbeiträge.
 
 ## Kontrollzahlen je Integrationsfeld
 
 | Feld | U-Zellen |
 | --- | ---: |
-| X01 | 16 |
+| X01 | 0 |
 | X02 | 0 |
-| X03 | 8 |
-| X04 | 4 |
-| X05 | 1 |
-| X06 | 9 |
+| X03 | 0 |
+| X04 | 0 |
+| X05 | 0 |
+| X06 | 2 |
 | X07 | 0 |
-| X08 | 7 |
+| X08 | 0 |
 
-## Konkrete Fragen
+## Aktuelle Fragen und Grenzen nach den E3-Proben und der statischen Signaturbindung
 
-Die Fragen sind aus den bestehenden Befunden übernommen. Gleiche Paketfragen können bei mehreren Kandidaten vorkommen und werden nicht als jeweils unabhängig erfundene Probleme gezählt. Aktuelle gemeinsame Folgerungen stehen in [Feldbindungen](BINDINGS.md).
-
-| Priorität | Kandidat | Feld | Befund | Offene Frage / nächster Nachweis |
+| Priorität | Kandidat | Feld | Befund | Nachprüfung / weiterhin nötiger Nachweis |
 | --- | --- | --- | --- | --- |
-| P1 | CEM | I02 | [C37](CLAIMS.md#c37) | Offene Frage: Kann eine dokumentierte Ereignistyp-/Payloaddeklaration allein mit Standardreferenzen eindeutig bis zu detail-Feldern verfolgt werden, auch für CustomEvent<T>, ohne frei gewählte Bindungskonvention? Zunächst offizielle Beispiele und Typreferenzkonventionen prüfen; nur bei verbleibender Unklarheit einen kleinen Typauflösungsversuch durchführen. |
-| P1 | CEM | X01 | [C43](CLAIMS.md#c43) | Offene Frage: Lassen sich die separat gewählten Domänenartefakte mit unverändertem CEM verbinden, ohne dort fachfremde Pflichtfelder oder doppelte Definitionen einzuführen? Diese Paketfrage erst nach Untersuchung der übrigen Kandidaten klären. |
-| P1 | DTCG | X01 | [C54](CLAIMS.md#c54) | Konkrete offene Frage: Wie referenzieren die anderen Domänen die aufgelösten Tokens/gewählte Permutation, ohne Werte oder Zuständigkeiten doppelt zu definieren? Diese Paketbindung nach den weiteren Einzelprüfungen klären. |
-| P1 | SCXML | I02 | [C60](CLAIMS.md#c60) | Offene Frage: Reicht eine klar abgegrenzte, dokumentierte SCXML-Teilmenge mit statischen Events und benannten Parametern aus, um die öffentlichen Payloadfelder eindeutig und unabhängig vom Sendepunkt zu bestimmen, oder ist eine separate Eventdeklaration nötig? In diesem Durchgang keine Praxisversuche. |
-| P1 | SCXML | X01 | [C64](CLAIMS.md#c64) | Offene Frage: Welche Referenz-/Ereignisbindungen verbinden ein unverändertes SCXML-Verhaltensdokument mit den drei anderen Domänen, und bleiben dabei deren eigenen Validatoren und führenden Quellen erhalten? Keine Architekturentscheidung in diesem Schritt. |
-| P1 | SCXML | X04 | [C66](CLAIMS.md#c66) | Offene Frage: Reicht invoke als Behavior-Beitrag für die Komposition autonomer UI-Unterkomponenten, wenn Identitäts-, Interface- und Darstellungsbindungen separat vorliegen? Konkrete Interpreter-/Hostfähigkeiten und Mehrfachinstanzen werden ausdrücklich nicht getestet. |
-| P1 | XState | X01 | [C79](CLAIMS.md#c79) | Offen: Welche Referenzbindungen erhalten unabhängige Validatoren und eindeutige führende Quellen aller vier Domänen? |
-| P1 | XState | X04 | [C81](CLAIMS.md#c81) | Offen: Reicht Actor-Komposition als Behavior-Beitrag, wenn die übrigen Komponentenbindungen unabhängig beschrieben werden? |
-| P1 | XState | X06 | [C83](CLAIMS.md#c83) | Offen: Welche offiziell unterstützte Artefakt-/Schemaform lässt sich unabhängig von ausführbaren Implementierungen validieren, und welche Semantik deckt sie ab? |
-| P1 | Zag | X01 | [C98](CLAIMS.md#c98) | Offen: Kann Zag mit vier extern geführten Verträgen konsistent gebunden werden, ohne dass sein gebündeltes Fokus-/ARIA-/Geometrieverhalten zur zweiten führenden Quelle wird? |
-| P1 | Zag | X03 | [C99](CLAIMS.md#c99) | Offen: Welche explizite Zuordnung erhält Zielart, Versionsstand und Bedeutung zwischen vier externen Verträgen und den vorhandenen Teil-/Zustands-/Callbackbindungen? |
-| P1 | Zag | X04 | [C100](CLAIMS.md#c100) | Offen: Lassen sich genau diese unabhängigen Komponentenbindungen mit Originalmodellen ausdrücken und prüfen, oder bleibt ihre Komposition nur imperativer Anwendungscode? Kein Kompositionsversuch ausgeführt. |
-| P1 | Zag | X06 | [C102](CLAIMS.md#c102) | Offen: Welches offiziell unterstützte Artefakt mit welchem Originalvalidator lässt sich unabhängig von Implementierungen prüfen, und welche Typ-/Referenz-/Semantikprüfungen umfasst das? Kein Typechecker oder Validator ausgeführt. |
-| P1 | Google DESIGN.md | X01 | [C122](CLAIMS.md#c122) | Welche externe Bindung verbindet vier unveränderte Originalmodelle ohne fachliche Umdefinition und doppelte führende Quellen? |
-| P1 | Google DESIGN.md | X06 | [C127](CLAIMS.md#c127) | Welcher vollständige eigenständige Originalschema-Vertrag/Export besteht, und welche Regeln prüfen Schema und programmatischer Linter jeweils? |
-| P1 | OpenUI | X01 | [C148](CLAIMS.md#c148) | Kann das Interfaceartefakt unverändert mit drei Originaldomänen und einer expliziten Integrationsschicht verbunden werden, ohne Doppelpflege? |
-| P1 | OpenUI | X06 | [C153](CLAIMS.md#c153) | Welches kanonische Originalschema und welches verfügbare Werkzeug validieren draft-01 vollständig trotz der dokumentierten Definitionsabweichungen? |
-| P1 | AgentsORG | X01 | [C174](CLAIMS.md#c174) | E1/E2; offen: Bindung zu externen Interface-/Behavior-/Accessibility-Artefakten konkret festlegen. |
-| P1 | AgentsORG | X08 | [C181](CLAIMS.md#c181) | Wie bleibt jede der vier Originalquellen führend, während .design Visualwerte, Exporte und Synchronisationsrichtungen bestimmt? |
-| P2 | UXSpec | V04 | [C397](CLAIMS.md#c397) | Welche originale normative Eigenschaft oder dokumentierte Bindung ergänzt Zielidentität, Richtung und Abstand über die lokalen Layerwrapper hinaus? Andere Renderer/Erweiterungen gezielt und getrennt prüfen. |
-| P2 | UXSpec | V06 | [C399](CLAIMS.md#c399) | Welche originale Definition benennt Scrollcontainer, Achse und clip/auto/scroll samt Semantik? Vorschau-/Host-CSS und eine mögliche zusätzliche Layoutbindung ausdrücklich getrennt prüfen. |
-| P1 | UXSpec | X01 | [C200](CLAIMS.md#c200) | Vier unabhängige Fachartefakte samt neutraler Interface-/A11y-Bindung bleiben ungeklärt. Keine falsche Aussage „UXSpec erzwingt Visual im Behavior“; auch reine Token-/Visualdateien ohne `$machine` wären nicht selbst schema-konforme UXSpec-Rootdokumente. |
-| P1 | UXSpec | X03 | [C202](CLAIMS.md#c202) | Starker Teilbefund, aber bisher UXSpec-eigene Teile: kein ausreichender Nachweis, dass Ziele in **separaten originalen Interface-/Visual-/Behavior-/A11y-Domänen** semantisch adressiert werden. Welche Originalartefakte/Bindungen bleiben unverändert? Tokenreferenz allein erfüllt X03 nicht. |
-| P1 | Ark UI | X01 | [C226](CLAIMS.md#c226) | AR01/AR05/AR08, E1/E2: externe Präsentation kann getrennt bleiben; Fokus, ARIA, UX und funktionale Geometrie sind in der ausführbaren Integration gekoppelt. Offen: Wie werden vier unabhängig führende externe Domänen ohne widersprechende zweite Definition gebunden? |
-| P1 | Ark UI | X03 | [C228](CLAIMS.md#c228) | AR01/AR03/AR05/AR06, E1/E2: IDs verbinden Komponenten und ARIA-Ziele; Part-/Stateattribute verbinden CSS. Offen: Wie adressiert Ark ein Ziel in einem separat definierten neutralen Interface-/UX-/A11y-Vertrag mit überprüfbarer semantischer Zuordnung? DOM-IDs und Importe reichen als Nachweis dafür nicht. |
-| P1 | Ark UI | X06 | [C231](CLAIMS.md#c231) | AR04/AR06/AR09, E2: TS-Typen und API-JSON belegt, typecheck-Script vorhanden. Kein nachgewiesenes kanonisches Schema und ausführbares Validierungstooling für separate neutrale Domänenartefakte. Offen: Gibt es ein offizielles Originalschema und einen Validator, der Properties, Details und externe Referenzen solcher Artefakte prüft? JSON-Metadaten und tsc allein beweisen das nicht. |
-| P1 | Panda CSS | X01 | [C252](CLAIMS.md#c252) | Konkrete Nachweislücke für X01: P05/P06: Visual-Konfiguration lässt sich ablegen; vier unabhängige Originaldomänen samt gemeinsamen Bindungen nicht belegt. Frage: welche dokumentierte Paketgrenze erlaubt alle vier unveränderten Domänen mit separaten Validatoren? |
-| P1 | Panda CSS | X06 | [C257](CLAIMS.md#c257) | Konkrete Nachweislücke für X06: P05/P07 E1/E2: TS-Eingabetypen, CLI-Flagschema, Configdiagnosen und flacher Exportreader vorhanden; vollständiges Originalschema/Originalvalidator für separates deklaratives Visualartefakt nicht nachgewiesen. Frage: welches vollständige offizielle Schema prüft das unveränderte Visualartefakt unabhängig vom Compiler? |
-| P1 | Panda CSS | X08 | [C259](CLAIMS.md#c259) | Konkrete Nachweislücke für X08: P05/P06/P07: Panda-intern config-last-Vorrang und optionale sources-Provenienz belegt; Gesamtpaket-Ownership über vier Originalformate offen. Frage: welche führende Domäne entscheidet bei Konflikten zwischen Visual, Behavior und A11y, und wie bleiben Änderungen nachvollziehbar? |
-| P2 | uSpec | V04 | [C400](CLAIMS.md#c400) | Welcher weitere originale Ausgabe-/Auswertungspfad bindet ein benanntes anderes UI-Ziel mit Richtung/Abstand? Vorhandene _anchor-Felder nicht dafür umdeuten; nötiges zusätzliches Layoutmodell explizit ausweisen. |
-| P2 | uSpec | V06 | [C401](CLAIMS.md#c401) | Andere originale Speicher-/Rendererpfade gezielt auf Scrollrichtung und Scrollcontainer prüfen; falls ein Zusatzmodell nötig ist, Clippingbeitrag und neue Scrollsemantik getrennt dokumentieren. |
-| P1 | uSpec | X01 | [C278](CLAIMS.md#c278) | Konkrete Nachweislücke für X01: Separate api/structure/color/voice Evidence-/Cachedateien tatsächlich vorhanden; CON erzwingt alle Bereiche plus SourceModel und kein separates Behavior. Frage: Können vier gewählte Fachartefakte unabhängig mit Originalschämata geführt werden, ohne uSpecs Pflichtcontainer neu zu modellieren? Vier Spezialisten sind nicht die gewünschten vier Domänen. |
-| P1 | uSpec | X03 | [C280](CLAIMS.md#c280) | Konkrete Nachweislücke für X03: CAC besitzt interne Evidence→Output-JSON-Pointer und gemeinsame Dictionaryvokabeln; STR `_anchor`/source IDs adressieren Figmaquellen. Nicht ausreichend für externe Interface/Behavior/Visual/A11y-Ziele. Frage: Welcher Resolver adressiert ein Originalartefakt anderer Domäne und definiert die semantische Bindung? |
-| P1 | uSpec | X08 | [C285](CLAIMS.md#c285) | Konkrete Nachweislücke für X08: BASE Plugin sole writer of base, Interpretation read-only; DOC canonical JSON→Markdown und domain retries; reale interne Ownershipregeln. Frage: Gibt es eine normative per-information Vorrang-/Rückschreibregel zwischen unabhängigen Originalformaten und Integrationsschicht des gewünschten Pakets? Interne Pipelineownership allein klärt das nicht. |
-| P2 | OpenPencil | V01 | [C291](CLAIMS.md#c291) | Konkrete Nachweislücke für V01: Eigene numbers sind Controlwerte/-ranges, keine typisierten Designfarben/Dimensionen. Gesamter Editor-/Tokenkern nicht diesem Behaviour-Beitrag zugerechnet; gesondertes Visualmodell prüfen. |
-| P2 | OpenPencil | V03 | [C293](CLAIMS.md#c293) | Konkrete Nachweislücke für V03: Keine belastbare Themeauflösung für diesen Beitrag untersucht. Dokumentvariablen im Preview sind kein eigener Themevertrag. Separates Visualmodell prüfen. |
-| P2 | OpenPencil | V04 | [C294](CLAIMS.md#c294) | Konkrete Nachweislücke für V04: Keine neutrale Anker-/Abstandssemantik des Behaviourbeitrags belegt; Slider-Thumb-Laufzeitposition ist kein allgemeiner Overlayvertrag. Renderer-/Layoutmodell separat prüfen. |
-| P2 | OpenPencil | V05 | [C295](CLAIMS.md#c295) | Konkrete Nachweislücke für V05: Control min/max sind Wertebereiche, keine Flächenbegrenzung. Eigenes Layoutmodell und dynamische Zeilenhöhen separat prüfen. |
-| P2 | OpenPencil | V06 | [C296](CLAIMS.md#c296) | Konkrete Nachweislücke für V06: Preview-Wheelweitergabe zum Canvas (OPD) ist kein formales Overflow-/ScrollArea-Modell des Contracts. Separates Modell prüfen. |
-| P1 | OpenPencil | A01 | [C301](CLAIMS.md#c301) | Konkrete Nachweislücke für A01: OPV zeigt role=radio/aria-checked und Reka-Wrapper. Vollständige Rollen-/Namen-/Beziehungssemantik je Kind und benennbare externe Ziele nicht geprüft; keine automatische R-Zurechnung aller Reka-Fähigkeiten. |
-| P1 | OpenPencil | A02 | [C302](CLAIMS.md#c302) | Konkrete Nachweislücke für A02: OPD delegiert Tastatur/Fokus an Browser/Reka; referenzierte einzelne Reka-Muster und ihr vollständiges Mapping wurden nicht auditiert. Kindname allein ist noch kein nachgewiesener neutraler Patternvertrag. |
-| P1 | OpenPencil | A03 | [C303](CLAIMS.md#c303) | Konkrete Nachweislücke für A03: Kein Nachweis einer dynamischen zugänglichen Ergebnis-/Statusmeldung im Behaviourvertrag. Vollständige Reka-/Exportpfade wären gezielt zu untersuchen. |
-| P1 | OpenPencil | X01 | [C304](CLAIMS.md#c304) | Konkrete Nachweislücke für X01: OPS ist als Submodell exportiert, wird aber auf Scenegraph-Properties/Slots aufgelöst. Vier unabhängig beschriebene Domänen mit getrennten Originalformaten nicht nachgewiesen. Paketkompositionsnachweis fehlt. |
-| P1 | OpenPencil | X03 | [C306](CLAIMS.md#c306) | Konkrete Nachweislücke für X03: OPR verbindet Behavior mit Properties/Slots desselben Scenegraphs. Das ist reale interne Bindung, jedoch kein Nachweis auf ein separat beschriebenes externes Interface-/Visual-/A11y-Artefakt mit Namensraum und semantischer Zuordnung. Genau diesen externen Bezug als Folgeprüfung spezifizieren. |
-| P1 | OpenPencil | X05 | [C308](CLAIMS.md#c308) | Konkrete Nachweislücke für X05: OPS hat kein externes Dependency-/Versionsfeld. OPF zeigt separate libraryId/assetKey/revisionId-Buchhaltung; OPD sagt Behaviour reist mit Assets. Resolver, reproducible binding und Import-/Updatepfade für externes Fachmodell nicht geprüft; Versionsstrings allein reichen nicht für D/R/N. |
-| P1 | OpenPencil | X08 | [C311](CLAIMS.md#c311) | Konkrete Nachweislücke für X08: OPM definiert lokalen behaviourOwner; OPF unterscheidet content/format/bookkeeping und OPD nennt ein Modell für alle Authoringsurfaces. Vorrang/Änderungsnachvollziehbarkeit zwischen vier Originalformaten und Integrationsschicht bleibt unbelegt. |
-| P2 | WAI-ARIA | I03 | [C316](CLAIMS.md#c316) | AR12 Required Context/Owned Elements beschreibt Rollenbeziehungen, aber keinen ausreichend nachgewiesenen benannten UI-Partkatalog. Frage: Wie wird konkrete Komponenten-Anatomie von Input/Popup/Slots mit diesen Rollen verbunden? |
-| P2 | WAI-ARIA | V06 | [C322](CLAIMS.md#c322) | Orientierung, Fokus-/Sichtbarkeitshinweise und Scrollbarkeit im Host sind kein geprüfter formaler Overflowvertrag. Frage: Welches getrennte Layout-/Scrollmodell bestimmt Clip, Scrollport und Begrenzung? |
-| P1 | WAI-ARIA | X01 | [C330](CLAIMS.md#c330) | ARIA-Markup kann als Accessibility-Beitrag referenziert werden. Frage: Wie bindet ein eigenständiges A11y-Artefakt vier unveränderte Originaldomänen mit getrennten führenden Quellen? Hostintegration allein beweist dies nicht. |
-| P1 | WAI-ARIA | X03 | [C332](CLAIMS.md#c332) | IDREF verbindet reale Hostelemente semantisch, keine nachgewiesenen externen Fachmodellknoten. Frage: Welcher Resolver bindet separate Interface-/Visual-/Behavior-Originalartefakte an diese Elementziele? |
-| P1 | WAI-ARIA | X06 | [C335](CLAIMS.md#c335) | AR12 §8/Anhang A nennt Host-Wertabbildungen; kein vollständiges separates Originalschema samt konkret geprüftem neutralen A11y-Artefaktvalidator nachgewiesen. Frage: Welcher Originalchecker prüft welche Host-/ARIA-Version und welche semantischen Beziehungen? |
-| P1 | WAI-ARIA | X08 | [C337](CLAIMS.md#c337) | AR12 §8 behandelt Vorrang nativer/Host-Semantik und ARIA-Konflikte. Das ist positiv, aber kein Quellen-/Änderungsmodell über vier Originalformate. Frage: Welche Paketregel legt die führende Quelle pro überlappender Information fest? |
-| P1 | APG | X01 | [C356](CLAIMS.md#c356) | APG lässt sich als unabhängige Accessibility-Anforderungsquelle referenzieren. Frage: Wie werden vier getrennte Originalartefakte ohne doppelte Führung und stilles Umdefinieren der Patternvarianten verbunden? |
-| P1 | APG | X03 | [C358](CLAIMS.md#c358) | Patternlinks und DOM-ID-Verweise sind konkrete Teilbindungen. Frage: Welches Paketprofil adressiert Ziele in separat beschriebenen Interface-/Visual-/Behavior-Artefakten semantisch und überprüfbar? |
-| P1 | APG | X04 | [C359](CLAIMS.md#c359) | AP1 verbindet Popupmuster mit Combobox und AP5 instanziiert eine JS-Beispielklasse. Frage: Wie werden autonome Unterkomponenten mit eigenen Parametern/Kontexten und versionierten Definitionen als Contract komponiert? Kein neutraler Overlay/ScrollArea-Nachweis. |
-| P1 | APG | X06 | [C361](CLAIMS.md#c361) | AP7/Repository dokumentiert reale HTML-/CSS-/JS-Linter und Beispielregressionstests. Frage: Welches originale separate A11y-/Patternartefaktschema und Werkzeug prüft unveränderte Contractdateien? Beispielcodevalidierung ist keine Antwort auf diese Frage. |
-| P1 | APG | X08 | [C363](CLAIMS.md#c363) | AP0 erklärt nichtnormativen Status und Beziehung zu ARIA/WCAG; dies klärt Quellenrollen teilweise. Frage: Welche per-information Ownership-/Änderungsregel verbindet Guide, Produktprofil und drei weitere Originalformate? |
-| P2 | CSS Layout | I01 | [C366](CLAIMS.md#c366) | CSS-Propertywerttypen sind keine nachgewiesenen öffentlichen Komponenten-API-Typmetadaten. Frage: Welches separat referenzierte Komponentenmodell definiert öffentliche Inputs und bindet sie an diese Deklarationen? |
-| P1 | CSS Layout | I02 | [C367](CLAIMS.md#c367) | Kein ausreichender Nachweis öffentlicher Komponentenereignisse mit Payload in den gelesenen Layoutquellen. Frage: Welches Ereignisschema bindet den Layoutbeitrag an öffentliche Events? |
-| P2 | CSS Layout | I03 | [C368](CLAIMS.md#c368) | anchor-name benennt Anker, keine geprüfte Komponenten-Anatomie. Frage: Wie werden Input/Overlay/ScrollArea als Komponentenbestandteile definiert und an CSS-Elemente gebunden? |
-| P2 | CSS Layout | V03 | [C371](CLAIMS.md#c371) | Theme-/Dark-Mode-Auswahl liegt außerhalb der geprüften Kernmodule. Frage: Soll ein separat zu prüfendes CSS-Modul für Modusauswahl eingebunden werden, und wie wäre dessen Bindung an Contract-Modi? |
-| P2 | CSS Layout | B01 | [C375](CLAIMS.md#c375) | Positionierungsfallback ist keine geprüfte Ereigniszustandsmaschine. Frage: Welches Behavior-Modell liefert Initialzustand, Ereignisse und Übergangsziele und bindet Styles daran? |
-| P2 | CSS Layout | B02 | [C376](CLAIMS.md#c376) | Geometrische Bedingungen/Ausweichregeln sind kein Nachweis von UX-Guards und Aktionen. Frage: Wo sind Auswertung und Ausführung der Contract-Aktionen definiert? |
-| P2 | CSS Layout | B03 | [C377](CLAIMS.md#c377) | Keine ausreichende Zustands-/Ereignisdatenmodellierung für Produktlogik geprüft. Frage: Welche separat typisierten Kontext-/Eventdaten steuern die Bindung? |
-| P2 | CSS Layout | B04 | [C378](CLAIMS.md#c378) | Scrollmechanismus ist keine ausdrückliche Abbildung von Tastatur/Fokus auf UX-Aktionen. Frage: Welches Input-/Behavior-Binding übernimmt diese Zuordnung? |
-| P1 | CSS Layout | A01 | [C379](CLAIMS.md#c379) | ANCHOR §9 weist ausdrücklich darauf hin, dass visuelle Beziehung keine sinnvolle DOM-/zugängliche Beziehung erzeugt; verweist auf HTML/ARIA. Frage: Welches konkrete semantische Zielmodell und Mapping wird für das Paket gewählt? Fremdmodellreferenz allein wird nicht als vollständige Abdeckung gezählt. |
-| P1 | CSS Layout | A02 | [C380](CLAIMS.md#c380) | ANCHOR §9 erläutert Risiken nichtgrafischer Navigation, liefert kein vollständig geprüftes referenzierbares Interaktionsmuster. Frage: Welches APG-/plattformbezogene Muster bestimmt Fokus und Tasten? |
-| P1 | CSS Layout | A03 | [C381](CLAIMS.md#c381) | Keine nachgewiesene Accessible-Update-Semantik im Layoutkern. Frage: Welche ARIA-/Plattformregel bindet Ereignis, Meldung und Zeitpunkt an zugängliche Rückmeldung? |
-| P1 | CSS Layout | X01 | [C382](CLAIMS.md#c382) | CSS kann den Visualteil als Stylesheet führen; damit sind noch keine vier unabhängigen Contractartefakte samt gemeinsamen Bindungen nachgewiesen. Frage: Welches Paketprofil erhält vier Domänen ohne versteckte fachfremde Pflichtdefinitionen? |
-| P1 | CSS Layout | X03 | [C384](CLAIMS.md#c384) | Ankerreferenzen zielen auf Elemente im CSS-Baum, nicht auf separat beschriebene Behavior-/Interface-/A11y-Domänen. Frage: Welche dokumentierte externe Domänenbindung adressiert diese Ziele eindeutig? |
-| P1 | CSS Layout | X06 | [C387](CLAIMS.md#c387) | SYNTAX §3 enthält Anforderungen an Parser und Conformance Checker, aber CSS hat hier kein JSON/XSD-Originalschema; reine Parserregeln belegen kein aktuelles Tool mit Unterstützung exakt dieser Anchor-/Overflow-Stände. Frage: Welcher konkrete Originalchecker kann getrennte Artefakte gegen welche Modulversionen prüfen? Kein Prüftool ausgeführt. |
-| P1 | CSS Layout | X08 | [C389](CLAIMS.md#c389) | CSS-Reihenfolge/Scope oder Fallback sind keine nachgewiesene Ownership und Änderungsverfolgung zwischen Originalformaten. Frage: Welche Paketregel weist jeder Information eine führende Quelle und nachvollziehbare Änderungen zu? |
+| P1 | Google DESIGN.md | X06 | [C483](CLAIMS.md#c483) | Original-Konfigurationsschema mit sechs Gegenfällen belegt; Subjekt ist Redaktionskonfiguration, nicht Dokumentdaten. **Externe Originalklärung (T):** Benannter Dokument-Schemaeinstieg und Ergebnisbedeutung für Roottypen/Optionalität fehlen. Keine eigene Prosaabbildung als Original ausgeben. |
+| P1 | OpenUI | X06 | [C484](CLAIMS.md#c484) | Entwurf/Katalog und Spec.ts weichen bei license/group, Stringprops, enum/required und default konkret ab. **Externe Originalklärung (T):** Maßgebliche Definition und gebundenen Originalvalidator benötigen. Kein eigener Reparaturtyp und keine Nutzerentscheidung über technische Wahrheit. |
 
-## Nachweislücken und Bearbeitungsstand
+## Historische Fortschreibungen
 
-- Referenz- und Instanzfelder: [Integrationsabgleich](INTEGRATION-REVIEW.md) und [konkrete Feldbindungen](BINDINGS.md) enthalten neue begrenzte Quellbefunde. Eine vollständige Originalformatkette ist noch nicht nachgewiesen.
-- Visuelle Anker-/Flächen-/Overflowfragen: weiter im bestätigten Layoutvergleich führen; Maße eines Controls sind keine Geometriesemantik des Overlays.
-- Accessibility außerhalb des Webprofils: native Zielquellen und genaue Abbildungen bleiben offen.
-- Originalschema/Tooling/Reifegrad: der vorgemerkte Gesamtvergleich ist nicht durch diese Triage abgeschlossen.
+Die folgenden Notizen enthalten frühere Zwischenstände und sind keine aktuelle Queue. Die2 aktuellen Tabellenzeilen oben sind maßgeblich.
 
-**Zählregel:** Eine geplante Prüfung, eine konzeptionelle Lösung oder ein hinzugefügter Registereintrag reduziert die U-Zellen nicht. Erst ein ausreichender neuer Nachweis mit dokumentierter Neubewertung ändert die Zahl.
+Die damals41 offenen Einträge waren keine41 unabhängigen Produktfehler. Gemeinsame Paketfragen treten bei mehreren Kandidaten auf. Originalschema, tatsächliches Tooling, praktische Integration und Produktionsreife bleiben getrennte Nachweisgegenstände.
 
-## Gezielte Layoutfolgeprüfungen
+**E3-Fortschreibung:** CEM I02 ist nun A/C421. UXSpec-Anker-/Overflowgrenzen und WAI-ARIA-Checkergrenzen sind konkret geprüft, ihre vollständigen Nachweise bleiben U. [Ergebnisse und Grenzen](experiments/2026-10-24/REPORT.md).
 
-Fünf offene Felder wurden nach der Triage gezielt geprüft: UXSpec V04/V05/V06 und uSpec V04/V06. UXSpec V05 ist nun A; die vier anderen bleiben U mit präzisierten Nachweisgrenzen. Aktuell 72 U-Zellen, davon 45 Integration und 27 weitere. Das ist kein Abschluss aller restlichen Nachprüfungen.
+**Weitere E3-Fortschreibung:** SCXML I02 ist A/C425 für das begrenzte zusätzliche Referenzprofil. Original-XSD und statische Payloadbindung sind getrennt geprüft; keine öffentliche Hostroute implementiert. [SCXML-Bericht](experiments/2026-10-24/scxml/REPORT.md).
+
+**Referenz-Folgeprüfung:** 14 Originalpfad-Erkundungen sind gespeichert. Schema-konforme doppelte Maschinen-IDs werden still überschrieben; ein Token verliert seine Einheit. Andere Referenz-/Rekursionsfälle scheitern separat am Originalschema und werden entsprechend begrenzt interpretiert. X03 bleibt U, Gesamtzahl unverändert 65. [Befunde](experiments/2026-10-24/references/REPORT.md).
+
+**Visual-Fortschreibung:** OpenPencil V01/V03 sind nach ausdrücklich erweitertem Untersuchungsumfang D/C432 und D/C433. Somit aktuell 63 U; frühere 65-Zahlen oben beschreiben den Verlauf. [Bericht](experiments/2026-10-24/openpencil-visual/REPORT.md).
+
+**Layoutfortschreibung:** OpenPencil V05 nun A/C436 für vorhandene geometrische CSS-Abbildung. V04/V06 bleiben U; weitere Felder unverändert. Aktuell 62 U (41 Integration, 21 weitere).
+
+**25.10.2026 – Accessibility-Fortschreibung:** A02 bei OpenPencil nun R/C439 für einen konkreten referenzierten Switch-Webbeitrag; A01/A03 bleiben offen. Aktuell 61 U. [Begründung](experiments/2026-10-25/openpencil-a11y/REPORT.md).
+
+**25.10.2026 – begrenzter Vier-Domänen-Nachweis:** Vier X01-Zellen nun A/C447, nur für CEM/SCXML/CSS/WAI-ARIA im ausgeführten zusätzlichen Webprofil. Aktuell 57 U (37 Integration, 20 weitere). Andere Kandidaten und dynamische Gesamtintegration bleiben getrennt offen.
+
+**Endlicher offizieller X06-Umfang:** [Acht Ausgangsfragen mit Originalpin, bereits geprüftem Beitrag und genauem Restzugriff](experiments/2026-10-25/x06-official-scope/REPORT.md). WAI-ARIA 1.2 ist aufgrund ausdrücklicher Modell-/Hostsprachenabgrenzung N/C471; sieben X06-U bleiben. Externe Plugins und zukünftige Releases sind keine pauschale Abschlussbedingung.
+
+**Ark-Originalpfad abgeschlossen:** [Types-Collection-Schema gefunden und ausgeführt](experiments/2026-10-25/ark-mcp-scope/REPORT.md). API-JSON als eigener Originalartefaktgegenstand, nicht nur MCP-Anfrageparameter/SDK-Typen. Ark X06 D/C474; nun sechs X06-U.
+
+**Panda-Originaldatenmodell geklärt:** [Versionierter Originalexport und zusätzliche Originaltypbindung](experiments/2026-10-25/panda-original-scope/REPORT.md). X06 A/C477 für tatsächlichen Adapterbedarf, kein nativer Original-JSON-Schemavalidator. Vorhandene P42-Evidenz wiederverwendet, keine neuen Fälle gezählt; fünf X06-U bleiben.
+
+**CSS-Originalgrammatikbindung:** [Vier Properties mit unveränderten Originalsyntaxstrings](experiments/2026-10-25/css-original-grammar/REPORT.md), X06 A/C479. Keine pauschale Gesamt-Draft-/DOM-Prüfung; unsupported_scope/unsupported_value bleiben sichtbar. Vier X06-U verbleiben.
+
+**Letzte vier endliche X06-Zugriffe durchgeführt:** [Originalmodellgrenzen und zwei externe Originalklärungen](experiments/2026-10-25/final-x06-scope/REPORT.md). Zag und APG begrenzt N/C481/C482; Google und OpenUI bleiben U/C483/C484. Andere unabhängige Nachweise bleiben bearbeitbar.
+
+**CSS X03 zusätzlicher statischer Referenzbeleg:** [14 Bedingungen](experiments/2026-10-25/css-semantic-anchors/REPORT.md), A/C485. Original-CSS-Ankerdeklaration an CEM-Teil und richtige A/B-Hostinstanz gebunden; native Zielwahl/Kaskade/Layout und Accessibility bleiben getrennt. 46 U, davon 26 Integration und 20 weitere.
+
+**OpenPencil V06 nachgeprüft, weiter offen:** [Zwölf Originalfragment- und drei native CSS-Bedingungen](experiments/2026-10-25/openpencil-overflow-import/REPORT.md). Konkrete semantische Verluststelle belegt, keine künstliche Schließung der U-Zelle. Weiter 41 U (26 Integration, 15 weitere), 383 Bedingungen/48 Gruppen.
+
+**Endlicher Restplan:** [41 U-Zellen in priorisierten Paketen](REMAINDER-PLAN.md): 39 unabhängig untersuchbare Fragen, 2 konkrete Originalklärungen, 0 ausschließlich produkt-/umgebungsbedingt blockierte aktuelle Matrixzellen. Native/AT-/Produktabnahme bleibt separat offen. Planung ist keine Umbewertung.
+
+**I03 getrennt nachgewiesen:** [Vorhandene Teilbinder kriteriumsbezogen bewertet](experiments/2026-10-25/named-parts-review/REPORT.md). CSS Layout A/C492 und WAI-ARIA A/C493 ausschließlich mit zusätzlicher CEM-/Hostbindung; keine native Anatomiesprache und keine neuen Bedingungen. Aktuell 44 U: 26 Integration, 18 weitere.
+
+**Originaler Switch-Namens-/Updatepfad nachgewiesen:** [Publizierter Graph bis Vue/Reka/Host](experiments/2026-10-25/openpencil-projection-origin/REPORT.md), A01 R/C494 und A03 R/C495 im begrenzten Switch-Webprofil. Allgemeine Meldungen, fremde Widgetbeziehungen, Neutralität und Gesamtintegration nicht mitbehauptet. Aktuell 42 U: 26 Integration, 16 weitere; 423 Bedingungen/54 Gruppen, zwei anfängliche Namensprüferwartungen erhalten.
+
+**Eigene feste Original-Overflowpolitik ausgeführt:** [Vollständige Originalexporte und native Hosts](experiments/2026-10-25/openpencil-layout-runtime/REPORT.md), OpenPencil V06 A/C498 im begrenzten hidden-/visible-Webadapterumfang. Importverluste und nicht unterstützte Scrollpolitiken bleiben erhalten. V04 U/C499 mit explizitem unerfülltem Input-Ankergegenfall. Aktuell 41 U: 26 Integration, 15 weitere; 435 Bedingungen/56 Gruppen.

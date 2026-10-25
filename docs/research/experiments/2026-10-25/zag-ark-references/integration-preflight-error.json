@@ -1,0 +1,6 @@
+{
+  "phase": "own original-file inventory preparation, before study mutation",
+  "error": "Assumed @zag-js/react/dist/use-machine.js; actual distribution declares implementation in dist/machine.js and dist/machine.mjs",
+  "originalSsrCasesUnaffected": 8,
+  "countedAsNewCondition": false
+}

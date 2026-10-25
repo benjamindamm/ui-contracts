@@ -1,0 +1,412 @@
+{
+  "validator": "python-jsonschema 4.25.1 Draft202012Validator",
+  "schema_source": "original UXSpec snapshot 20dfae0e7224d952e198afdf4ffed26d6fd67180",
+  "note": "Separate fixture preflight, not invoked by the original resolver/bundler; counted as stages of the 14 cases, not extra probe cases",
+  "files": [
+    {
+      "input": "fixtures/bundle-01-unique-ids/a.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-01-unique-ids/app.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-01-unique-ids/b.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-02-duplicate-child-id/a.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-02-duplicate-child-id/app.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-02-duplicate-child-id/b.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-03-entry-id-collision/a.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-03-entry-id-collision/app.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-04-transitive-child/app.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/bundle-04-transitive-child/child.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$machine",
+            "states",
+            "idle",
+            "invoke",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "states",
+            "additionalProperties",
+            "properties",
+            "invoke",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'kind': 'machine', 'src': 'grand', 'id': 'grand-use'} is valid under each of {'type': 'object'}, {'$ref': '#/$defs/machineInvoke'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/bundle-04-transitive-child/grand.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/ref-01-local-control/app.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$elements",
+            "Outer"
+          ],
+          "schema_path": [
+            "properties",
+            "$elements",
+            "additionalProperties",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'type': 'group', 'children': [{'$ref': 'Inner'}]} is not valid under any of the given schemas"
+        },
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'Outer'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/ref-02-imported-shadowing/app.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'lib:Outer'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/ref-02-imported-shadowing/library.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$elements",
+            "Outer"
+          ],
+          "schema_path": [
+            "properties",
+            "$elements",
+            "additionalProperties",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'type': 'group', 'children': [{'$ref': 'Inner'}]} is not valid under any of the given schemas"
+        },
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'Outer'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/ref-03-imported-no-local/app.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'lib:Outer'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/ref-03-imported-no-local/library.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$elements",
+            "Outer"
+          ],
+          "schema_path": [
+            "properties",
+            "$elements",
+            "additionalProperties",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'type': 'group', 'children': [{'$ref': 'Inner'}]} is not valid under any of the given schemas"
+        },
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'Outer'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/ref-04-missing-import-area/app.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/ref-04-missing-import-area/empty.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/ref-05-missing-file-control/app.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/ref-06-original-cem-target/app.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'api:Autocomplete'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/ref-07-unit-value/app.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "input": "fixtures/ref-08-separate-expansions/app.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'Label', 'label': 'A'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        },
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            1
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'Label', 'label': 'B'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/ref-09-element-cycle/app.json",
+      "valid": false,
+      "errors": [
+        {
+          "path": [
+            "$elements",
+            "Self"
+          ],
+          "schema_path": [
+            "properties",
+            "$elements",
+            "additionalProperties",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'Self'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        },
+        {
+          "path": [
+            "$machine",
+            "$visual",
+            "slots",
+            "content",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "$visual",
+            "properties",
+            "slots",
+            "additionalProperties",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'$ref': 'Self'} is valid under each of {'$ref': '#/$defs/leafElement'}, {'$ref': '#/$defs/refElement'}, {'$ref': '#/$defs/containerElement'}"
+        }
+      ]
+    },
+    {
+      "input": "fixtures/ref-10-file-self-cycle-control/app.json",
+      "valid": true,
+      "errors": []
+    }
+  ]
+}

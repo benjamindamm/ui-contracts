@@ -1,0 +1,26 @@
+{
+  "id": "accepted-revision-consistency",
+  "expected": true,
+  "criterion": "Every accepted revision must use the same canonical file-hash plus policy-hash algorithm as the pinned baseline revision; unchanged baseline must retain its revision.",
+  "observed": [
+    {
+      "id": "baseline-no-change",
+      "expectedRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "actualRevision": "ff6c7f91eb7aef3ae9d5451b2653e9f038b117753e8d0440b14e2f774b6da4cc",
+      "matches": false
+    },
+    {
+      "id": "leading-token-change",
+      "expectedRevision": "7fa3c8bfe519eed47203ba223accae5e3d1ef51d87f1f72fedd6d0965e039619",
+      "actualRevision": "08e38d6af6d37f8b6dc46983dfd8387445a5bd8a50f4c4a76dc825a48d985b23",
+      "matches": false
+    },
+    {
+      "id": "coordinated-public-name-change",
+      "expectedRevision": "ef0dd2fba4f6cd5e2fe6423bed4d6972b09c3c3f449537a8ce98f4a227f78152",
+      "actualRevision": "73707998da0a90a9058bd9788a165c0274c1d5efe12c03f5569ece9d741c4f13",
+      "matches": false
+    }
+  ],
+  "expectationMet": false
+}

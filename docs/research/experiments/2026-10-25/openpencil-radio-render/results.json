@@ -1,0 +1,430 @@
+{
+  "node": "v24.22.1",
+  "typescript": "5.9.3",
+  "vue": "3.5.41",
+  "scope": "Original radio root/renderElement/renderNode/state lookup/disabled/interaction/reset declarations in isolation; actual Vue VNode and server renderer; supplied role/element/state fixtures, no full graph/role classification/editor/browser/AT execution",
+  "originalDeclarationsModified": false,
+  "roleClassifierExecuted": false,
+  "wholeOpenPencilBuild": false,
+  "liveDomRendered": false,
+  "physicalInputTested": false,
+  "atTested": false,
+  "cases": [
+    {
+      "id": "two-islands-same-path",
+      "mutation": "control",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "explicit-name",
+      "mutation": "label",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": "Explizit A",
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": "Explizit A",
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" aria-label=\"Explizit A\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "label-reference",
+      "mutation": "labelledby",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": "external-label-a",
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": null,
+        "labelledby": "external-label-a",
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" aria-labelledby=\"external-label-a\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "role-source-conflict",
+      "mutation": "role",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" role=\"radio\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" aria-checked=\"false\">Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "checked-source-conflict",
+      "mutation": "checked",
+      "expected": {
+        "role": "radio",
+        "checkedA": true,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": true,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": true,
+        "stateB": false,
+        "before": {
+          "A": true,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" aria-checked=\"true\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\">Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "internal-node-id",
+      "mutation": "metadata",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "callback-isolation",
+      "mutation": "click",
+      "expected": {
+        "role": "radio",
+        "checkedA": true,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": true,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": true,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"true\">Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "state-disabled",
+      "mutation": "disabled",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": true,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": true,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\" disabled>Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "designed-disabled",
+      "mutation": "designed",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": true,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": true,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\" disabled>Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\" disabled>Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-control-state",
+      "mutation": "missing",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": true,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": false
+      },
+      "observed": {
+        "threw": true,
+        "error": "Error: No state for control same-path"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "unnamed-control",
+      "mutation": "unnamed",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": null,
+        "labelledby": null,
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\"></button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "unresolved-label-reference",
+      "mutation": "unresolved",
+      "expected": {
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "throws": false,
+        "explicitLabel": null,
+        "labelledby": "missing-label",
+        "internalIdPresent": false,
+        "renderSucceeds": true
+      },
+      "observed": {
+        "threw": false,
+        "role": "radio",
+        "checkedA": false,
+        "checkedB": false,
+        "disabledA": false,
+        "explicitLabel": null,
+        "labelledby": "missing-label",
+        "internalIdPresent": false,
+        "idA": "radio-a",
+        "idB": "radio-b",
+        "stateA": false,
+        "stateB": false,
+        "before": {
+          "A": false,
+          "B": false
+        },
+        "htmlA": "<button id=\"radio-a\" aria-labelledby=\"missing-label\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option A</button>",
+        "htmlB": "<button id=\"radio-b\" data-layer=\"same-path\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;\" type=\"button\" role=\"radio\" aria-checked=\"false\">Option B</button>"
+      },
+      "expectationMet": true
+    }
+  ]
+}

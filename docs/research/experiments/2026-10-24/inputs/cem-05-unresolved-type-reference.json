@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "autocomplete.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "customElement": true,
+          "name": "Autocomplete",
+          "events": [
+            {
+              "name": "value-change",
+              "type": {
+                "text": "CustomEvent<MissingPayload>",
+                "references": [
+                  {
+                    "name": "MissingPayload",
+                    "module": "missing.js"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

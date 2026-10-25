@@ -1,0 +1,129 @@
+{
+  "additionalTranslator": true,
+  "cases": [
+    {
+      "expectationMet": true,
+      "expected": {
+        "gapPx": 8,
+        "heightPx": 160,
+        "rowHeightPx": 32,
+        "scrollHeightPx": 224
+      },
+      "id": "px-a",
+      "instance": "a",
+      "observed": {
+        "allRowHeights": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "gapPx": 8,
+        "heightPx": 160,
+        "maxHeight": "160px",
+        "overflowY": "auto",
+        "rowHeightPx": 32,
+        "scrollHeightPx": 224
+      },
+      "tolerancePx": 1,
+      "variant": "px"
+    },
+    {
+      "expectationMet": true,
+      "expected": {
+        "gapPx": 8,
+        "heightPx": 160,
+        "rowHeightPx": 32,
+        "scrollHeightPx": 224
+      },
+      "id": "px-b",
+      "instance": "b",
+      "observed": {
+        "allRowHeights": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "gapPx": 8,
+        "heightPx": 160,
+        "maxHeight": "160px",
+        "overflowY": "auto",
+        "rowHeightPx": 32,
+        "scrollHeightPx": 224
+      },
+      "tolerancePx": 1,
+      "variant": "px"
+    },
+    {
+      "expectationMet": true,
+      "expected": {
+        "gapPx": 8,
+        "heightPx": 160,
+        "rowHeightPx": 32,
+        "scrollHeightPx": 224
+      },
+      "id": "rem-a",
+      "instance": "a",
+      "observed": {
+        "allRowHeights": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "gapPx": 8,
+        "heightPx": 160,
+        "maxHeight": "160px",
+        "overflowY": "auto",
+        "rowHeightPx": 32,
+        "scrollHeightPx": 224
+      },
+      "tolerancePx": 1,
+      "variant": "rem"
+    },
+    {
+      "expectationMet": true,
+      "expected": {
+        "gapPx": 8,
+        "heightPx": 160,
+        "rowHeightPx": 32,
+        "scrollHeightPx": 224
+      },
+      "id": "rem-b",
+      "instance": "b",
+      "observed": {
+        "allRowHeights": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "gapPx": 8,
+        "heightPx": 160,
+        "maxHeight": "160px",
+        "overflowY": "auto",
+        "rowHeightPx": 32,
+        "scrollHeightPx": 224
+      },
+      "tolerancePx": 1,
+      "variant": "rem"
+    }
+  ],
+  "originalDtcgValidator": false,
+  "rootFontSize": "16px",
+  "staticHostOnly": true,
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

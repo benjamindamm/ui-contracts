@@ -1,0 +1,332 @@
+{
+  "date": "2026-10-25",
+  "source": "S122",
+  "original_code_modified": false,
+  "original_files": [
+    {
+      "local_provenance_path": "work/uspec-ownership/compiled/cache-validation.js",
+      "sha256": "f1f3c717376f09c57f5d297408941634f645b541347d4d92060a882e1bcbcff5"
+    },
+    {
+      "local_provenance_path": "work/uspec-ownership/sources/cache-validation.ts",
+      "sha256": "6a19c72ca3f7932494a83e7c1f448d7ba9a03bdfb2816a1f2fef651f0abf8382"
+    },
+    {
+      "local_provenance_path": "work/validation-probes/sources/cem.schema.json",
+      "sha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "6d1ae38937d0d4dbb50f66cf598507d3cd821aedecc314a740bf0f7757e72351"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "83a1a3ee0fcb15f78df056af3f475092cd03f051a6f6d45c044a09e6019a9f24"
+    },
+    {
+      "file": "fixtures/control/binding.json",
+      "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+    },
+    {
+      "file": "fixtures/control/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/control/journal.json",
+      "sha256": "2a27bd5abce609d4f4ddbb0cdc577df831f5581fa21cbc27e4b4ca419688d6a5"
+    },
+    {
+      "file": "fixtures/control/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/control/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/coordinated-derived-edit/binding.json",
+      "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+    },
+    {
+      "file": "fixtures/coordinated-derived-edit/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/coordinated-derived-edit/journal.json",
+      "sha256": "9f18ceae93336579d938f3b6e9f6908b7df452adc4dca2ce644f0d64d62a50e8"
+    },
+    {
+      "file": "fixtures/coordinated-derived-edit/research-api.json",
+      "sha256": "3f406326205df05ccc8d3adfb37bb620f36428faeca51b74b21e90fd26401391"
+    },
+    {
+      "file": "fixtures/coordinated-derived-edit/research-evidence-api.json",
+      "sha256": "c2b03c6b8e8bc47fbc23f270a0accbd8f9f64e3486798f401d787af06f4193ce"
+    },
+    {
+      "file": "fixtures/evidence-sourcepath-conflict/binding.json",
+      "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+    },
+    {
+      "file": "fixtures/evidence-sourcepath-conflict/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/evidence-sourcepath-conflict/journal.json",
+      "sha256": "6f25c9db4580e1e99aa91dfc127e6adf275135ef269141f3ce89df7a8e63de41"
+    },
+    {
+      "file": "fixtures/evidence-sourcepath-conflict/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/evidence-sourcepath-conflict/research-evidence-api.json",
+      "sha256": "5d329b3062e79b64d99957d06ebb0629d39091f901afd2ab50d8a76c3a6274e7"
+    },
+    {
+      "file": "fixtures/fact-updated-output-stale/binding.json",
+      "sha256": "6525e275352d205c45ea419d6821accbb11d9914272a73bee8bf2bb1bb4d7b7e"
+    },
+    {
+      "file": "fixtures/fact-updated-output-stale/foreign-cem.json",
+      "sha256": "fb96da4b4e5d51e7145bcd1ad35898007afdb5fe53aceae487d09d801f4b4860"
+    },
+    {
+      "file": "fixtures/fact-updated-output-stale/journal.json",
+      "sha256": "336c5f81b5953f739b383e5f819bd8740caf7af041635b84627681857cbb4227"
+    },
+    {
+      "file": "fixtures/fact-updated-output-stale/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/fact-updated-output-stale/research-evidence-api.json",
+      "sha256": "c2b03c6b8e8bc47fbc23f270a0accbd8f9f64e3486798f401d787af06f4193ce"
+    },
+    {
+      "file": "fixtures/missing-external-file/binding.json",
+      "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+    },
+    {
+      "file": "fixtures/missing-external-file/journal.json",
+      "sha256": "a2d229062b7535950971eca86953512b75671ea3d41c0ffda76623474ee94640"
+    },
+    {
+      "file": "fixtures/missing-external-file/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/missing-external-file/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/missing-external-pointer/binding.json",
+      "sha256": "66a60a837b1ae927e93e48b626ab6d2ceac021841c0a3227e6218c59e075e1ae"
+    },
+    {
+      "file": "fixtures/missing-external-pointer/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/missing-external-pointer/journal.json",
+      "sha256": "6532bc3dcefe5bc59d02676e7f869acaaaf1efc1306d8d69650ae57996a38324"
+    },
+    {
+      "file": "fixtures/missing-external-pointer/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/missing-external-pointer/research-evidence-api.json",
+      "sha256": "255bdef26742499831fd39680d66b4d268feb85c6f587fd46be42b80b22b0be0"
+    },
+    {
+      "file": "fixtures/property-renamed-explicit-rebind/binding.json",
+      "sha256": "1d44c84bc232f04ec87671736fbeb6e6853796c37a4df46bcf5ddbcec47136c4"
+    },
+    {
+      "file": "fixtures/property-renamed-explicit-rebind/foreign-cem.json",
+      "sha256": "0da2123856ba61c1db8dd4704a4c5e66bc8221fb13a5fb4cb39b58f2d9c6eac6"
+    },
+    {
+      "file": "fixtures/property-renamed-explicit-rebind/journal.json",
+      "sha256": "2f407037a0e453384a8a24423eb9900ae8d9dca6a9ade3e2cec0d975b7da5103"
+    },
+    {
+      "file": "fixtures/property-renamed-explicit-rebind/research-api.json",
+      "sha256": "6e9b1c02b5b04f18c876208cc4ad885d286f2dcdee076aa1c5eba5d19f25c824"
+    },
+    {
+      "file": "fixtures/property-renamed-explicit-rebind/research-evidence-api.json",
+      "sha256": "4585359b2201fe2e7abcf7db85009e927affa233e480c3a51e36ce4c48220937"
+    },
+    {
+      "file": "fixtures/property-renamed-without-rebind/binding.json",
+      "sha256": "62c0ff7c47f0004d603affb3f896261648d8abf49055e4275785f54f1cd98e2b"
+    },
+    {
+      "file": "fixtures/property-renamed-without-rebind/foreign-cem.json",
+      "sha256": "0da2123856ba61c1db8dd4704a4c5e66bc8221fb13a5fb4cb39b58f2d9c6eac6"
+    },
+    {
+      "file": "fixtures/property-renamed-without-rebind/journal.json",
+      "sha256": "bdffeb09eed377b80ff1a0fe15d3f9db460dec87bd6808671ec293585b1f489a"
+    },
+    {
+      "file": "fixtures/property-renamed-without-rebind/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/property-renamed-without-rebind/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/same-name-wrong-definition/binding.json",
+      "sha256": "6f79659bf1d454ade0bc4b32b3af0a7cf1000cc5947bc68fbb6613af7b330541"
+    },
+    {
+      "file": "fixtures/same-name-wrong-definition/foreign-cem.json",
+      "sha256": "c5d6ff23e687a9d886a41ea71673dcc5a1632b4107a060fde440c78e528c07e8"
+    },
+    {
+      "file": "fixtures/same-name-wrong-definition/journal.json",
+      "sha256": "31c46e0c358f7926a91bf621b45922a1ae339758dccbf5ed58862b82870005db"
+    },
+    {
+      "file": "fixtures/same-name-wrong-definition/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/same-name-wrong-definition/research-evidence-api.json",
+      "sha256": "828a9bbac9b22e26c07610c448ad4701b492322c05ed5e87675e3399be28df76"
+    },
+    {
+      "file": "fixtures/source-revision-rederived/binding.json",
+      "sha256": "6525e275352d205c45ea419d6821accbb11d9914272a73bee8bf2bb1bb4d7b7e"
+    },
+    {
+      "file": "fixtures/source-revision-rederived/foreign-cem.json",
+      "sha256": "fb96da4b4e5d51e7145bcd1ad35898007afdb5fe53aceae487d09d801f4b4860"
+    },
+    {
+      "file": "fixtures/source-revision-rederived/journal.json",
+      "sha256": "cd660092eba950bd37c8e784c843a8b07f6cffc44ad54ca2a937400b1b2333e2"
+    },
+    {
+      "file": "fixtures/source-revision-rederived/research-api.json",
+      "sha256": "3f406326205df05ccc8d3adfb37bb620f36428faeca51b74b21e90fd26401391"
+    },
+    {
+      "file": "fixtures/source-revision-rederived/research-evidence-api.json",
+      "sha256": "c2b03c6b8e8bc47fbc23f270a0accbd8f9f64e3486798f401d787af06f4193ce"
+    },
+    {
+      "file": "fixtures/source-revision-stale-facts/binding.json",
+      "sha256": "6525e275352d205c45ea419d6821accbb11d9914272a73bee8bf2bb1bb4d7b7e"
+    },
+    {
+      "file": "fixtures/source-revision-stale-facts/foreign-cem.json",
+      "sha256": "fb96da4b4e5d51e7145bcd1ad35898007afdb5fe53aceae487d09d801f4b4860"
+    },
+    {
+      "file": "fixtures/source-revision-stale-facts/journal.json",
+      "sha256": "d60b2e225725fab92ad7d06a02e7d0364658c9e381f5112ccccc1a1b2c5c4720"
+    },
+    {
+      "file": "fixtures/source-revision-stale-facts/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/source-revision-stale-facts/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/source-revision-stale-hash/binding.json",
+      "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+    },
+    {
+      "file": "fixtures/source-revision-stale-hash/foreign-cem.json",
+      "sha256": "fb96da4b4e5d51e7145bcd1ad35898007afdb5fe53aceae487d09d801f4b4860"
+    },
+    {
+      "file": "fixtures/source-revision-stale-hash/journal.json",
+      "sha256": "cb642bf7da5ebff61d1937557dbdd907ec38f14d2f6a913728910be2dbcdc67f"
+    },
+    {
+      "file": "fixtures/source-revision-stale-hash/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/source-revision-stale-hash/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/unsupported-semantic-type/binding.json",
+      "sha256": "8c8e452c9966e5aa6265025fa482768998039fcecd0abe80f6cf70614f80f042"
+    },
+    {
+      "file": "fixtures/unsupported-semantic-type/foreign-cem.json",
+      "sha256": "4bab6e2fb51ae245d4b16da7cd7d51e14018c7aefe15b39b9c3cd7f51f4660f4"
+    },
+    {
+      "file": "fixtures/unsupported-semantic-type/journal.json",
+      "sha256": "f7ad9069382a0e021eaae775501e753ba4db8e18ba1fc9322c2e4832ffbed837"
+    },
+    {
+      "file": "fixtures/unsupported-semantic-type/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/unsupported-semantic-type/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/wrong-external-target-kind/binding.json",
+      "sha256": "151451be30e0e5c62fa63a4a6db8861bb2428122adbb529de491135adf0d1dfa"
+    },
+    {
+      "file": "fixtures/wrong-external-target-kind/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/wrong-external-target-kind/journal.json",
+      "sha256": "24ee1e4739f9f5d365e6943f2d7ce098a8107af46235e8ab6325191167386e7f"
+    },
+    {
+      "file": "fixtures/wrong-external-target-kind/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/wrong-external-target-kind/research-evidence-api.json",
+      "sha256": "4a890e10be4afad35c0d6bf29416e3083553abad7755ba264d19a193633d8a75"
+    },
+    {
+      "file": "initial-literal-derivation-run.cjs",
+      "sha256": "8105f423a7d322f8f53be202930ee5b6fbd9d7e9c99b7957afe483cd1cf520e8"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "b021dae0e9d9648cbd5a7688b83b167f7f871defde9475bcea68b5b32dd2fb1b"
+    },
+    {
+      "file": "results.json",
+      "sha256": "5e192e88f24932a12592e7d6205cf8a04a3a99d2ae8e96bfae3852fab44440b7"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "7f130ab5096976d4be7dfecd69427fbf3ce1344afeb32124cd13e3d980f2b829"
+    },
+    {
+      "file": "schema-results.json",
+      "sha256": "1ff2391a8b73a674f4e07d93b7f3683bb94a2793ece12f185eac96b730dc8020"
+    }
+  ],
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "production_component_implemented": false,
+  "original_module_initialization_scope": "Full original cache/builder/compiler APIs; original Vue/extractDims declarations isolated exactly as separately documented, no whole editor or Figma SDK",
+  "reproduction_note": "Provide pinned original sibling files/dependencies at documented paths. Original modules/transpiled map not redistributed as own implementation."
+}

@@ -1,6 +1,6 @@
 # Claim- und Befundregister
 
-Abdeckung und Evidenzstufe folgen [METHODS.md](METHODS.md). Alle Quellenstände stehen in [SOURCES.md](SOURCES.md). Die Matrix verweist auf diese IDs; Interpretation und nächster Versuch sind Teil jedes Befunds. **Kein Eintrag behauptet einen ausgeführten Compiler-, Validator- oder Laufzeitversuch.**
+Abdeckung und Evidenzstufe folgen [METHODS.md](METHODS.md). Alle Quellenstände stehen in [SOURCES.md](SOURCES.md). Die Matrix verweist auf diese IDs; Interpretation und nächster Versuch sind Teil jedes Befunds. **C01–C417 dokumentieren den historischen E1/E2-Stand. C418–C431 enthalten nun begrenzte ausgeführte E3-Prüfungen; keine vollständige UI-/AT-/Integrationsprüfung.**
 
 ## C01
 
@@ -269,6 +269,8 @@ Alle 22 zuvor offenen CEM-Zellen wurden am 23. Oktober 2026 geprüft. 20 wurden 
 
 ## C37
 
+**Fortschreibung der Gesamtprüfung:** Aktueller Befund [C413](#c413); der folgende Text dokumentiert den früheren Stand.
+
 - **Quelle:** [S01](SOURCES.md), [S20](SOURCES.md); CEM-Schema-/Typprüfung E2. Betrifft I02; Bewertung **U**.
 - **Befund:** Event hat name/type; Type enthält text und optionale TypeReference. Referenzen können auf Deklarationen mit members zeigen. Ein eigener payload-Feldkatalog oder eine vorgeschriebene Zuordnung von CustomEvent<T> zu dessen detail-Feldern ist nicht definiert.
 - **Bedeutung/Grenze:** Ereignisname und Typ sind abgedeckt. Die gesamte Anforderung strukturierter Payload-Felder bleibt U: Ein Typstring ist nicht derselbe Nachweis wie ein aufgelöstes, eindeutig zugeordnetes Payloadmodell. Die allgemeinen Klassen-/Typreferenzen könnten dazu beitragen; sie werden weder als unmöglich noch als fertige Lösung bewertet.
@@ -331,6 +333,8 @@ Alle 22 zuvor offenen CEM-Zellen wurden am 23. Oktober 2026 geprüft. 20 wurden 
 - **Offene Frage / weiterer Bedarf:** Keine Paketinstallation nötig, um die Felder und ihre dokumentierte Bedeutung festzustellen. Ob ein zukünftiges Contract-Paket externes Locking übernimmt, bleibt außerhalb dieses Schritts offen.
 
 ## C46
+
+**E3-Fortschreibung:** aktueller Befund [C419](#c419); folgender Text dokumentiert den früheren Stand.
 
 - **Quelle:** [S20](SOURCES.md), [S21](SOURCES.md); CEM-Schema-/Typprüfung E2; ergänzende Dokumentation E1. Betrifft X06; Bewertung **D**.
 - **Befund:** Das Formatprojekt veröffentlicht ein eigenständiges JSON Schema nach Draft-07. Root verlangt schemaVersion/modules; lokale Schema-$ref verweisen auf die mitgelieferten Definitionen. Die README zeigt den direkten Import dieses Schemas.
@@ -440,6 +444,8 @@ Alle 21 zuvor offenen SCXML-Zellen wurden am 23. Oktober 2026 gegen die W3C Reco
 
 ## C60
 
+**Fortschreibung der Gesamtprüfung:** Aktueller Befund [C414](#c414); der folgende Text dokumentiert den früheren Stand.
+
 - **Quellen:** [S09](SOURCES.md), [S26](SOURCES.md); E1 mit ergänzender XSD-Sichtprüfung E2. Betrifft I02; Bewertung **U**.
 - **Befund:** §5.7 und §6.2 definieren <send event> mit benannten <param>-Werten, namelist oder <content>. §5.10.1 definiert _event.data; §6.2.5 und Anhang C unterscheiden I/O-Prozessoren. Damit können Ereignisse einschließlich strukturierter Daten gesendet werden.
 - **Bedeutung/Grenze:** Positiver Teilbefund, aber U für einen vom Auslösezeitpunkt getrennten öffentlichen Event-/Payloadvertrag. <send> beschreibt ausführbare Kommunikation und kann Eventnamen/Werte dynamisch berechnen. Die genannte öffentliche Signatur als separat überprüfbare Beschreibung folgt daraus noch nicht. Das Versenden strukturierter Daten wird ausdrücklich nicht als fehlend bewertet.
@@ -482,6 +488,8 @@ Alle 21 zuvor offenen SCXML-Zellen wurden am 23. Oktober 2026 gegen die W3C Reco
 
 ## C66
 
+**Fortschreibung der Gesamtprüfung:** Aktueller Befund [C408](#c408); der folgende Text dokumentiert den früheren Stand.
+
 - **Quellen:** [S09](SOURCES.md), [S26](SOURCES.md); E1 mit ergänzender XSD-Sichtprüfung E2. Betrifft X04; Bewertung **U**.
 - **Befund:** §6.4 definiert invoke mit src/content, eigener Dienstinstanz, id/idlocation, Parameterübergabe, Abbruch und Abschlussereignis. §6.4.3 legt für aufgerufene SCXML-Sessions die Initialisierung passender Datenvariablen und Kommunikation fest. §6.4.4 beschreibt logische Datentrennung.
 - **Bedeutung/Grenze:** Starker positiver Teilbefund: wiederverwendbare Verhaltensmaschinen mit eigenem Instanzkontext und Lebenszyklus sind definiert. U bleibt für vollständige UI-Komponentenkomposition wie Overlay verwendet ScrollArea, weil Sichtstruktur, öffentliche UI-Schnittstelle, Elementidentität und deren Bindungen nicht durch invoke bestimmt werden. Weder vollständige UI-Komposition noch generelle Nichtunterstützung wird daraus abgeleitet.
@@ -495,6 +503,8 @@ Alle 21 zuvor offenen SCXML-Zellen wurden am 23. Oktober 2026 gegen die W3C Reco
 - **Offene Frage / weiterer Bedarf:** Keine externe Quelle wird zur Ausführung geladen. Später muss die konkrete Host-/Paketbindung für reproduzierbare Quellen ausdrücklich untersucht werden.
 
 ## C68
+
+**E3-Fortschreibung:** [aktueller Befund C424](#c424); folgender Text ist der frühere Stand.
 
 - **Quellen:** [S09](SOURCES.md), [S26](SOURCES.md); E1 mit ergänzender XSD-Sichtprüfung E2. Betrifft X06; Bewertung **D**.
 - **Befund:** Anhang E verweist auf eigenständige W3C-XSD-Schemata. Der gelesene scxml.xsd-Driver bindet Core-, Data- und External-Module ein; scxml-strict.xsd bindet separate strengere Module ein. Anhang E unterscheidet ein lockeres Schema-1.0- und ein strengeres Schema-1.1-Set.
@@ -592,6 +602,8 @@ Abgeschlossen am 24. Oktober 2026; Quellen am 23. Oktober gelesen. Alle 24 zuvor
 
 ## C81
 
+**Fortschreibung der Gesamtprüfung:** Aktueller Befund [C409](#c409); der folgende Text dokumentiert den früheren Stand.
+
 - **Quellen:** [S28](SOURCES.md), [S31](SOURCES.md); E1 und ergänzende manuelle Typ-/Quelltextsichtprüfung E2. Betrifft X04; **U**.
 - **Befund:** createActor erzeugt unabhängige Instanzen; invoke und spawn verwenden wiederverwendbare Actor-Logik mit eigenem Context und definierten Lebenszyklen. invoke folgt der Lebensdauer des aufrufenden Zustands.
 - **Bedeutung/Grenze:** Starker Teilbeitrag für wiederverwendbare Verhaltensinstanzen. Vollständige UI-Komposition wie Overlay verwendet ScrollArea einschließlich Interface, Darstellung und Elementidentität ist noch nicht belegt.
@@ -605,6 +617,8 @@ Abgeschlossen am 24. Oktober 2026; Quellen am 23. Oktober gelesen. Alle 24 zuvor
 - **Offene Frage / weiterer Bedarf:** Keinen Paket-Lockmechanismus aus einem version-Feld ableiten.
 
 ## C83
+
+**Historischer Befund; aktuelle Werkzeugfolgeprüfung: [C405](#c405).**
 
 - **Quellen:** [S28](SOURCES.md), [S33](SOURCES.md); E1 und ergänzende manuelle Typ-/Quelltextsichtprüfung E2. Betrifft X06; **U**.
 - **Befund:** TypeScript-Konfigurationstypen erlauben statische Prüfungen. StateMachine führt schemas als unknown. Persistierte Snapshots sind Zustandsdaten; sie ersetzen die separat benötigte Actor-Logik nicht.
@@ -730,6 +744,8 @@ Am 24. Oktober 2026 wurden alle 25 zuvor offenen Zag-Zellen gegen offizielle Dok
 
 ## C100
 
+**Fortschreibung der Gesamtprüfung:** Aktueller Befund [C410](#c410); der folgende Text dokumentiert den früheren Stand.
+
 - **Quellen:** [S36](SOURCES.md), [S38](SOURCES.md), [S40](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft X04; **U**.
 - **Befund:** Importierte Maschinen werden mit eigenen props/id über useMachine instanziiert. Die Kompositionsanleitung beschreibt zwei Maschinen mit gemeinsamem Trigger über ids und das Zusammenführen von Props. ScrollArea existiert als eigenständiges Toolkitpaket.
 - **Bedeutung/Grenze:** Starker positiver Befund für echte wiederverwendbare UI-Maschinen und gemeinsame DOM-Teile. Ein deklarativ referenziertes Overlay mit unabhängiger ScrollArea samt Parametern, Ereignissen, eigenem Kontext und geklärten Fokus-/Scrollzuständigkeiten ist noch nicht nachgewiesen.
@@ -743,6 +759,8 @@ Am 24. Oktober 2026 wurden alle 25 zuvor offenen Zag-Zellen gegen offizielle Dok
 - **Offene Frage / weiterer Bedarf:** Keine allgemeine Nichtreproduzierbarkeit des Projekts behaupten; externe Paketverwaltung und Contract-Auflösung ausdrücklich unterscheiden.
 
 ## C102
+
+**Historischer Befund; aktuelle Werkzeugfolgeprüfung: [C406](#c406).**
 
 - **Quellen:** [S35](SOURCES.md), [S36](SOURCES.md); E1/E2 (Dokumentation und manuelle Definitionenprüfung, keine Ausführung). Betrifft X06; **U**.
 - **Befund:** MachineSchema und ComboboxProps sind echte TypeScript-Typen; Paketmetadaten nennen tsc --noEmit. createMachine baut einen Zustandsindex, der unter anderem doppelte Zustands-IDs und ungültige Initialknoten behandelt.
@@ -946,6 +964,8 @@ Stand 24. Oktober 2026. Grundlage sind zwei separate Rechercheberichte; ihre Ein
 - **Offene Frage / weiterer Bedarf:** Konkrete Formatgrenze festgehalten; keine Ausführung. Offene weiterführende Integrations-/Werkzeugfragen bleiben gesondert.
 
 ## C127
+
+**Historischer Befund; aktuelle Werkzeugfolgeprüfung: [C403](#c403).**
 
 - **Kandidat / Anforderung:** Google DESIGN.md; X06; **U**.
 - **Quellen:** [S42](SOURCES.md), [S43](SOURCES.md), [S44](SOURCES.md); E2. Fundstelle im Primärquellenregister: SPEC, Schema; PARSER, ParserInputSchema / ParsedDesignSystem; MODEL, VALIDATION HELPERS; LINT, lint; API, lint export.
@@ -1154,6 +1174,8 @@ Stand 24. Oktober 2026. Grundlage sind zwei separate Rechercheberichte; ihre Ein
 - **Offene Frage / weiterer Bedarf:** Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen.
 
 ## C153
+
+**Historischer Befund; aktuelle Werkzeugfolgeprüfung: [C402](#c402).**
 
 - **Kandidat / Anforderung:** OpenUI; X06; **U**.
 - **Quellen:** [S45](SOURCES.md), [S46](SOURCES.md), [S47](SOURCES.md); E2. Fundstelle im Primärquellenregister: S §12 Validate; T vollständiges Interface; F vollständiges Schemaobjekt; Q Scripts/Dependencies; R.
@@ -1558,6 +1580,8 @@ Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 
 
 ## C202
 
+**Weitere E3-Fortschreibung:** [C426](#c426) ergänzt die tatsächliche Folgeprüfung; der folgende Text ist ein früherer Stand.
+
 - **Kandidat / Anforderung:** UXSpec; X03; **U**.
 - **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
 - **Befund:** Aliasqualifizierte Imports erschließen getrennte Token-/Element-/Maschinenquellen; konkrete Namensauflösung in I/R. S/F Referenzen, M Composability, J imports.
@@ -1565,6 +1589,8 @@ Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 
 - **Offene Frage / weiterer Bedarf:** Starker Teilbefund, aber bisher UXSpec-eigene Teile: kein ausreichender Nachweis, dass Ziele in **separaten originalen Interface-/Visual-/Behavior-/A11y-Domänen** semantisch adressiert werden. Welche Originalartefakte/Bindungen bleiben unverändert? Tokenreferenz allein erfüllt X03 nicht.
 
 ## C203
+
+**Weitere E3-Fortschreibung:** [C430](#c430) ergänzt die tatsächliche Folgeprüfung; der folgende Text ist ein früherer Stand.
 
 - **Kandidat / Anforderung:** UXSpec; X04; **D**.
 - **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
@@ -1581,6 +1607,8 @@ Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 
 - **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
 
 ## C205
+
+**E3-Fortschreibung:** aktueller Befund [C418](#c418); folgender Text dokumentiert den früheren Stand.
 
 - **Kandidat / Anforderung:** UXSpec; X06; **D**.
 - **Quellen:** [S49](SOURCES.md#s49); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S49 aufgelöst.
@@ -1789,6 +1817,8 @@ Stand 24. Oktober 2026. Die drei getrennten Berichte wurden gegen den aktuellen 
 - **Offene Frage / weiterer Bedarf:** Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen.
 
 ## C231
+
+**Historischer Befund; aktuelle Werkzeugfolgeprüfung: [C407](#c407).**
 
 - **Kandidat / Anforderung:** Ark UI; X06; **U**.
 - **Quellen:** [S50](SOURCES.md#s50); E1/E2, manuell gelesene Primärdefinitionen, keine Ausführung. Lokale Quellenkürzel des Befunds sind unter S50 aufgelöst.
@@ -2002,6 +2032,8 @@ Stand 24. Oktober 2026. Drei getrennte, ausdrücklich beauftragte Rechercheberic
 - **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten.
 
 ## C257
+
+**Historischer Befund; aktuelle Werkzeugfolgeprüfung: [C404](#c404).**
 
 - **Kandidat / Anforderung:** Panda CSS; X06; **U**.
 - **Quellen:** [S51](SOURCES.md#s51); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
@@ -2415,6 +2447,8 @@ Stand 24. Oktober 2026. Drei getrennte, ausdrücklich beauftragte Rechercheberic
 
 ## C308
 
+**Fortschreibung der Gesamtprüfung:** Aktueller Befund [C411](#c411); der folgende Text dokumentiert den früheren Stand.
+
 - **Kandidat / Anforderung:** OpenPencil; X05; **U**.
 - **Quellen:** [S53](SOURCES.md#s53); E2. Lokale Quellenkürzel im Befund sind dort auf gepinnte Primärquellen aufgelöst.
 - **Befund:** OPS hat kein externes Dependency-/Versionsfeld. OPF zeigt separate libraryId/assetKey/revisionId-Buchhaltung; OPD sagt Behaviour reist mit Assets. Resolver, reproducible binding und Import-/Updatepfade für externes Fachmodell nicht geprüft; Versionsstrings allein reichen nicht für D/R/N.
@@ -2637,6 +2671,8 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 - **Offene Frage / weiterer Bedarf:** Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis.
 
 ## C335
+
+**E3-Fortschreibung:** aktueller Befund [C422](#c422); folgender Text dokumentiert den früheren Stand.
 
 - **Kandidat / Anforderung:** WAI-ARIA; X06; **U**.
 - **Quellen:** [S54](SOURCES.md#s54); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
@@ -2926,6 +2962,8 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 
 ## C371
 
+**Fortschreibung der Gesamtprüfung:** Aktueller Befund [C412](#c412); der folgende Text dokumentiert den früheren Stand.
+
 - **Kandidat / Anforderung:** CSS Layout; V03; **U**.
 - **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
 - **Befund:** Theme-/Dark-Mode-Auswahl liegt außerhalb der geprüften Kernmodule. Frage: Soll ein separat zu prüfendes CSS-Modul für Modusauswahl eingebunden werden, und wie wäre dessen Bindung an Contract-Modi?
@@ -3054,6 +3092,8 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 
 ## C387
 
+**E3-Fortschreibung:** [C423](#c423) enthält die tatsächliche Checkerprobe; folgender Text ist der frühere Stand.
+
 - **Kandidat / Anforderung:** CSS Layout; X06; **U**.
 - **Quellen:** [S56](SOURCES.md#s56); E1. Lokale Kürzel im Befund sind dort vollständig aufgelöst.
 - **Befund:** SYNTAX §3 enthält Anforderungen an Parser und Conformance Checker, aber CSS hat hier kein JSON/XSD-Originalschema; reine Parserregeln belegen kein aktuelles Tool mit Unterstützung exakt dieser Anchor-/Overflow-Stände. Frage: Welcher konkrete Originalchecker kann getrennte Artefakte gegen welche Modulversionen prüfen? Kein Prüftool ausgeführt.
@@ -3135,6 +3175,8 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 
 ## C397
 
+**E3-Fortschreibung:** aktueller Befund [C420](#c420); folgender Text dokumentiert den früheren Stand.
+
 - **Kandidat / Anforderung:** UXSpec; V04; **U**. Ankergeometrie bleibt ungeklärt.
 - **Quelle:** [S59](SOURCES.md#s59); E1/E2, begrenzte manuelle Original-/Rendererprüfung.
 - **Befund:** SPEC und Formatreferenz definieren die Layoutprimitiven stack-h/stack-v/grid/layer. Der erneut vollständig gelesene Stylemapper bindet layer an relative Positionierung; LayerContainer setzt Kindwrapper absolut mit top/left/right/bottom 0. Das ist eine konkrete lokale Überlagerung, kein belegter Bezug auf ein separat benanntes Inputziel mit Richtung und Abstand.
@@ -3150,6 +3192,8 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 - **Nächste Prüfung:** Bei späterem praktischem Auftrag eine gültige/falsche Dimension und variable Zeilenhöhen prüfen; neutrales Visualfeld, Einheit, Containerziel und Adapter ausdrücklich binden.
 
 ## C399
+
+**E3-Fortschreibung:** aktueller Befund [C420](#c420); folgender Text dokumentiert den früheren Stand.
 
 - **Kandidat / Anforderung:** UXSpec; V06; **U**. Overflow und Scrollen bleiben ungeklärt.
 - **Quelle:** [S59](SOURCES.md#s59); E1/E2, begrenzte manuelle Original-/Rendererprüfung.
@@ -3172,3 +3216,1058 @@ Stand 24. Oktober 2026. Alle 26 Kriterien je Kandidat betrachtet. CSS-Bericht st
 - **Befund:** phaseE.ts extractDims liest clipsContent und schreibt value/token/display; die gezielt vollständig gelesene Funktion extrahiert keine Scrollrichtung oder auto/scroll-Auswahl. BASE beschreibt erhaltene Wrapper mit Dimensionen/Clipping. STRs Overflowdefinition führt clipsContent true/false. Die konkrete Basisextraktion belegt damit Clipping, nicht eine vollständige Scrollcontainersemantik.
 - **Bedeutung/Grenze:** E1/E2 im beschriebenen Basis-/Strukturpfad. U bleibt für das gesamte V06-Kriterium bestehen; keine Behauptung, uSpec oder Figma könnten grundsätzlich nicht scrollen. Ein Variantenname overflow=scroll ersetzt keine fachliche Achsen-/Ausführungsdefinition.
 - **Nächste Prüfung:** Andere originale Speicher-/Rendererpfade gezielt auf Scrollrichtung und Scrollcontainer prüfen; falls ein Zusatzmodell nötig ist, Clippingbeitrag und neue Scrollsemantik getrennt dokumentieren.
+
+## C402
+
+- **Kandidat / Anforderung:** OpenUI; X06; **U**. lib/schema.ts ist ein Feldkatalog, Spec.ts ein abweichender TS-Typ.
+- **Quelle:** [S61](SOURCES.md#s61); E2, manuelle gezielte Prüfung ohne Ausführung.
+- **Befund:** lib/schema.ts definiert eine Map von Feldbeschreibungen. schema-table.tsx erwartet Record<string,SchemaProperty> und rendert diese rekursiv als HTML-Tabelle; es validiert dort kein Contractdokument. Spec.ts verlangt license und component.group, die im Katalog nicht entsprechend geführt werden; enum/required aus dem Katalog fehlen im Typ. Das Paket stellt Next-dev/build/start/lint bereit, keinen in dieser Paketdatei ausgewiesenen Contract-Validator.
+- **Bedeutung/Grenze:** Gezielte E2-Prüfung der Originaldateien, kein globaler Beweis fehlender externer Werkzeuge. Ein Feldkatalog ist nicht automatisch ein kanonisches ausführbares JSON Schema. Die frühere Fundstellenangabe §12 Validate wird nicht weitergeführt: Im erneut gelesenen draft-01 heißt §12 Contributing. X06 bleibt U.
+- **Nächste Prüfung:** Zuerst die maßgebliche übereinstimmende Originaldefinition und einen offiziellen Validator identifizieren. Ein selbst repariertes Schema wäre eine neue Ergänzung mit offengelegter Abweichung, kein unverändertes Originalschema.
+
+## C403
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X06; **U**. Original-Linter ist verfügbar; Eingabeschema prüft nur den Textwrapper.
+- **Quelle:** [S61](SOURCES.md#s61); E2, manuelle gezielte Prüfung ohne Ausführung.
+- **Befund:** parser/spec.ts ParserInputSchema prüft content als nichtleeren String. ParsedDesignSystem ist ein TypeScript-Interface mit offenen Fachobjekten. lint.ts ruft Parser, Modellauflösung, runLinter und Ausgabehandler auf; bei recoverable Parsefehler liefert die Library einen Bericht mit Warnung und leerem Modell. index.ts exportiert lint und Regeln.
+- **Bedeutung/Grenze:** E2 für diesen Librarypfad. Eine regulär zurückkehrende API oder summary.errors=0 ist nicht gleich vollständige Originalschemakonformität. Daraus folgt kein nachgewiesener CLI-Exitcode. Ein vollständiges unabhängiges Originalartefaktschema bleibt unbestätigt; X06 bleibt U.
+- **Nächste Prüfung:** Vollständige fachliche Originalschemaidentität getrennt vom Textwrapper klären und konkrete Pflichtfelder/Regelabdeckung dokumentieren; später Warnungs-/Fehlerpolitik und gültige/ungültige Artefakte praktisch prüfen.
+
+## C404
+
+- **Kandidat / Anforderung:** Panda CSS; X06; **U**. Exportreader prüft ausgewählte Rootformen und vertraut Tabellenzeilen.
+- **Quelle:** [S61](SOURCES.md#s61); E2, manuelle gezielte Prüfung ohne Ausführung.
+- **Befund:** parseDesignSystem prüft Rootobjekt, nicht-null categories/paths/tokens/values, Arrays für paths/values und numerische schemaVersion mit Obergrenze 1. categories/tokens werden hier nicht vollständig typgeprüft, Zeilen und Referenzintegrität nicht validiert. Der Code nennt die Prüfung ausdrücklich flach.
+- **Bedeutung/Grenze:** E2, kein ausgeführter Parser. Aus dem gelesenen Kontrollfluss folgt für einen gezielt beschädigten Root mit categories=7, tokens=false, paths=[], values=[], schemaVersion=1 die Erwartung ok:true; dies ist eine manuelle Ableitung und kein E3-Test. Das belegt die Grenze dieses Readers, nicht die Abwesenheit anderer Validatoren. X06 bleibt U.
+- **Nächste Prüfung:** Ein vollständiges offizielles Schema/Prüfwerkzeug für das separate deklarative Visualartefakt identifizieren; Quellkonfiguration und normalisierten Export unterscheiden. Später ungültige Tabellen und Versionen als getrennte Negativfälle ausführen.
+
+## C405
+
+- **Kandidat / Anforderung:** XState; X06; **U**. Schemas, Definition und Snapshot sind getrennte Gegenstände.
+- **Quelle:** [S62](SOURCES.md#s62); manuelle E2-Prüfung am gepinnten Originalstand.
+- **Befund:** Der gelesene StateMachine-Konstruktor nimmt schemas?:unknown entgegen und weist config.schemas unverändert this.schemas zu. toJSON liefert this.definition. restoreSnapshot greift für Child-Actors auf vorhandene oder referenzierte Actorlogik der Maschine zu.
+- **Bedeutung/Grenze:** E2 gezielt im gepinnten Konstruktor-/Serialisierungs-/Restorepfad. Das Schemafeld belegt keine eigene Runtime-Validierung und ein exportierter Gegenstand keine vollständige unabhängige neutrale Logik. Andere Validatoren außerhalb dieser Pfade nicht ausgeschlossen; X06 bleibt U.
+- **Nächste Prüfung:** Offiziellen separaten Artefakt-/Schemaeinstieg mit tatsächlicher Prüfsemantik identifizieren; Snapshot, Definition, Implementierungen und Maschineninput für spätere Versuche getrennt festhalten.
+
+## C406
+
+- **Kandidat / Anforderung:** Zag; X06; **U**. Interne Zustandsprüfungen sind teilweise vom Produktionsmodus abhängig.
+- **Quelle:** [S62](SOURCES.md#s62); manuelle E2-Prüfung am gepinnten Originalstand.
+- **Befund:** state.ts ruft invariant bei doppelten Zustands-IDs und ungültiger initial-Kindzuordnung auf. Die über @zag-js/utils exportierte Funktion aus utilities/core/src/warning.ts wirft nur bei process.env.NODE_ENV !== production; ensure wirft bei null/undefined ohne diese Modusbedingung. Package-/Indexdatei bestätigen Name und Export.
+- **Bedeutung/Grenze:** Neuer E2-Befund zur bisher nicht explizit geprüften Hilfsfunktion; kein ausgeführter Entwicklungs-/Produktionsversuch. Interne Prüflogik ist real, aber keine universelle Abweisungsgarantie. Kein neutraler Originalartefaktvalidator daraus; X06 bleibt U.
+- **Nächste Prüfung:** Bei späterem praktischem Auftrag doppelten State-ID-/Initialziel-Fall unter explizitem Entwicklungs-/Produktionsbuild vergleichen. Unabhängiges Originalartefakt und Validator weiterhin gesondert identifizieren.
+
+## C407
+
+- **Kandidat / Anforderung:** Ark UI; X06; **U**. API-JSON sind Typmetadaten, kein nachgewiesenes neutrales Prüfschema.
+- **Quelle:** [S62](SOURCES.md#s62); manuelle E2-Prüfung am gepinnten Originalstand.
+- **Befund:** Das gepinnte generierte Combobox-API-JSON enthält Props mit type/isRequired/defaultValue/description, unter anderem ListCollection<T> und Callback-Typausdrücke als Strings. Boolean-Defaults sind teilweise als Stringtexte gespeichert.
+- **Bedeutung/Grenze:** E2 an den relevanten API-JSON-Einträgen. Diese Metadaten lassen sich lesen, führen aber keine fachliche Typprüfung aus. Ein daraus erzeugter neutraler Validator müsste zusätzliche Typ-/Default-/Referenzsemantik definieren. Keine pauschale Abwesenheitsbehauptung und keine Änderung von X06=U.
+- **Nächste Prüfung:** Vorhandenen offiziellen Runtime-/Contractschemaeinstieg nachweisen oder eine neue Metadatenübersetzung samt Informationsverlust ausdrücklich als Ergänzung abgrenzen.
+
+## C408
+
+- **Quelle:** [S63](SOURCES.md#s63), E1; betrifft X04.
+- **Befund:** SCXML §6.4 definiert neue logische Dienstinstanzen, invoke-ID, Parameterinitialisierung eigener Daten und zustandsgebundenen Abbruch. Die erneute Prüfung bestätigt Definition/Verwendung und eigenen Lebenszyklus.
+- **Bedeutung/Grenze:** X04 U→A: vorhandene Verhaltenskomposition ist ein konkreter Beitrag; UI-Anatomie, Host und ScrollArea-Bindung benötigen Übersetzung. Die frühere U-Einordnung verlangte hier bereits die vollständige Vier-Domänen-Kette; diese bleibt X01/X03/X07. Keine UI-Komposition ausgeführt.
+- **Nächste Prüfung:** Eigenen Child-Kontext samt UI-Anatomie und getrennten Instanzen in einem späteren Hostversuch binden.
+
+## C409
+
+- **Quelle:** [S63](SOURCES.md#s63), E1; betrifft X04.
+- **Befund:** Offizielle XState-invoke-Dokumentation beschreibt referenzierte Actorlogik, eigenen Input, innerhalb des Elternteils eindeutige IDs sowie Start/Stop beim Zustandswechsel.
+- **Bedeutung/Grenze:** X04 U→A für diesen Behavior-Beitrag. Definition/Verwendung und eigener Kontext sind belegt; UI-Unterkomponentenstruktur und Domänenbindung bleiben zusätzlich. Datierte Dokumentation ist keine gepinnte Runtimeausführung.
+- **Nächste Prüfung:** Actor-/UI-Instanz und Ereignisweitergabe explizit zuordnen; zwei Instanzen und Abbruch praktisch prüfen.
+
+## C410
+
+- **Quelle:** [S63](SOURCES.md#s63), E1; betrifft X04.
+- **Befund:** Die erneut gelesene Zag-Kompositionsanleitung zeigt getrennte useMachine-Aufrufe referenzierter Maschinen, eigene Props/IDs und das bewusste Teilen eines Triggerziels mittels ids und mergeProps.
+- **Bedeutung/Grenze:** X04 U→A: reale Instanzkomposition vorhanden, neutrale deklarative Unterkomponentenbindung zusätzlich nötig. Keine pauschale formale ScrollArea-Komposition oder konfliktfreie Mehrfachinstanz belegt. Die bisherige U-Begründung forderte mehr als diesen begrenzten vorhandenen Beitrag.
+- **Nächste Prüfung:** Eigene Child-ID/Props, gemeinsame Teile, Fokus-/Scrollzuständigkeit und Eventmerging ausdrücklich in einer zusätzlichen Bindung festhalten.
+
+## C411
+
+- **Quelle:** [S64](SOURCES.md#s64), E2; betrifft X05.
+- **Befund:** OpenPencil LibraryCatalog löst libraryId plus explizite revisionId auf. Revisionen besitzen contentbasierte IDs; Snapshot/Hashpfad erhält Behaviour-Plugininhalt, Serialisierung klont ihn, Materialisierung verwendet assetKey und revisionId und schreibt librarySource-Identität.
+- **Bedeutung/Grenze:** X05 U→A für den Behaviour-Beitrag über das zusätzlich geprüfte Bibliothekssubsystem. Konkreter Resolver und Version sind nun mehr als Strings; latest ohne revisionId ist nicht reproduzierbar gebunden. Keine externe neutrale Fachmodellauflösung oder verlustfreier Roundtrip nachgewiesen.
+- **Nächste Prüfung:** Explizite Revision festschreiben, Datenintegrität prüfen, zwei Versionen/Assets und Exporterhalt praktisch vergleichen. Keine Migration aus contentHash ableiten.
+
+## C412
+
+- **Quelle:** [S65](SOURCES.md#s65), E1; betrifft V03.
+- **Befund:** Media Queries Level 5 WD 19.02.2026 §12.5 definiert prefers-color-scheme mit light/dark, einschließlich light bei fehlender aktiver Präferenz, und bedingter Styleauswahl.
+- **Bedeutung/Grenze:** V03 U→D ausschließlich nach ausdrücklich dokumentierter Ergänzung des CSS-Untersuchungsumfangs um dieses Modul. Anchor/Overflow allein liefern diesen Nachweis nicht. Keine Aussage über manuellen Produktoverride, native Themes oder getesteten Browsersupport.
+- **Nächste Prüfung:** Modul-/Browserstand und eigenes Overrideprofil vor praktischer Nutzung festhalten; Light/Dark ohne aktive Präferenz gesondert prüfen.
+
+## C413
+
+**E3-Fortschreibung:** aktueller Befund [C421](#c421); folgender Text dokumentiert den früheren Stand.
+
+- **Quelle:** [S63](SOURCES.md#s63), E2; betrifft I02.
+- **Befund:** CEM Event.name/type und Type.text/references wurden erneut gelesen; das offizielle simple-element-Beispiel beschreibt disabled-changed als Event. Typreferenzen können externe Deklarationen adressieren, definieren aber keine allgemeine CustomEvent<T>→detail-Projektion.
+- **Bedeutung/Grenze:** CEM I02 bleibt U. Generische Typtexte könnten durch einen gewählten Typsystemresolver erschlossen werden; dieser ist hier nicht bewiesen. Weder ein unmöglicher Payloadvertrag noch eine freie Auflösungskonvention wird behauptet.
+- **Nächste Prüfung:** Typsystem und Eventobjekt/Payloadprojektion explizit auswählen; dasselbe externe Eventpayload mit positivem und falschem Typziel nachvollziehen.
+
+## C414
+
+**E3-Fortschreibung:** [aktueller Befund C425](#c425); folgender Text ist der frühere Stand.
+
+- **Quelle:** [S63](SOURCES.md#s63), E1; betrifft I02.
+- **Befund:** SCXML send/param/content und _event.data sind normiert. Erneute Prüfung trennt send-Ausführung und öffentlich deklarierten Signaturkatalog; Eventnamen und Daten können dynamisch erzeugt werden.
+- **Bedeutung/Grenze:** SCXML I02 bleibt U für das vollständige Kriterium. Statische send-Aufrufe bilden keine automatisch vollständige, vom Sendepunkt unabhängige öffentliche API. Ein eigenes Signaturprofil wäre zusätzliche Arbeit.
+- **Nächste Prüfung:** Öffentlichen Interfacevertrag getrennt festlegen und send/event/data daran binden, statt eine originale Eventregistry zu erfinden.
+
+## C415
+
+- **Quelle:** [S63](SOURCES.md#s63), E2; betrifft B01, B02, B03, X04.
+- **Befund:** UXSpecs gelesener App-Interpreter verarbeitet send mit exit/actions/entry/always/notify und danach rekursivem Send emittierter Namen; die always-Schleife ist begrenzt. enterState/exitState richten keine allgemeinen state.invoke-Dienste ein/ab. Initialisierung kann bei fehlendem Visualinhalt automatisch Mockevents planen.
+- **Bedeutung/Grenze:** Gezielter Quellbefund zum Apppfad, keine Ausführung und keine globale Abwesenheitsbehauptung über alle Engines. Formatnorm, CLI und Vorschauimplementierung dürfen nicht gleichgesetzt werden. Bestehende sprachbezogene Bewertungen ändern sich dadurch nicht automatisch.
+- **Nächste Prüfung:** Für einen neutralen Äquivalenzversuch Engine und Simulationsmodus kontrollieren; Invoke-Abbruch und Ereignisordnung eigens protokollieren.
+
+## C416
+
+- **Quelle:** [S63](SOURCES.md#s63), E2; betrifft X06, X04.
+- **Befund:** Im originalen UXSpec-Schema erlaubt stateNode.invoke.items.oneOf sowohl machineInvoke als auch das allgemeine Schema type:object. Ein Objekt, das machineInvoke erfüllt, erfüllt auch den zweiten Zweig.
+- **Bedeutung/Grenze:** Manuell folgt ein oneOf-Mehrfachtreffer für solche Objekte; keine ausgeführte Validierung oder Fehlermeldung. Die Existenz des Originalschemas bleibt X06=D; seine vollständige Konsistenz ist damit nicht belegt. Keine stille Schemareparatur.
+- **Nächste Prüfung:** Minimalen machineInvoke mit Schema-Draft und Originalvalidator prüfen; erwartete Mehrfachtreffer und reale Ausgabe getrennt speichern.
+
+## C417
+
+- **Quelle:** [S63](SOURCES.md#s63), E1; betrifft V04, V05, V06, X03.
+- **Befund:** Die erneut gelesene DESIGN.md-Spezifikation beschreibt spacing und bekannte Komponentenstylefelder; die geprüften CSS-Anchor-Abschnitte definieren benannte Boxziele und anchor-scope im Elementteilbaum. Gleiche Namen sind zulässig.
+- **Bedeutung/Grenze:** Dokumentarischer Layoutvergleich: Werte, relative Geometrie und Overflow haben verschiedene Semantik. Ein optionales Textfeld ist keine ursprüngliche Ankersprache; ein gültiger CSS-Ankername beweist keine richtige Instanz-/Domänenbindung. Keine Grafik oder Browserprüfung.
+- **Nächste Prüfung:** Vergleichsfall mit zwei Instanzen, Portal, variablen Zeilenhöhen und fehlendem Anker anhand expliziter Erwartungen ausführen.
+
+## C418
+
+**Weitere E3-Fortschreibung:** [C429](#c429) ergänzt die tatsächliche Folgeprüfung; der folgende Text ist ein früherer Stand.
+
+- **Quelle:** [S66](SOURCES.md#s66), E3; betrifft X06, X04.
+- **Befund:** Neun UXSpec-Fälle wurden gegen das unveränderte Originalschema mit python-jsonschema 4.25.1 Draft202012Validator ausgeführt. Vollständiges machineInvoke trifft beide oneOf-Zweige und wird abgewiesen; der Eintrag ohne id passiert den allgemeinen Objektzweig. Fehlender Übergangszielzustand, unbekannter Operator und falsch typisierter Default werden strukturell akzeptiert.
+- **Bedeutung/Grenze:** Tatsächliche Schemaausgaben, keine Runtime-/CLI-Gleichsetzung und keine Reparatur. X06 bleibt D für das Originalschema, mit belegter Fachgrenze. Die frühere manuelle invoke-Ableitung ist bestätigt.
+- **Nächste Prüfung:** CLI, Compiler und kontrollierte Engine auf dieselben Eingaben vergleichen; Format-/Schemadifferenz und genaue Version beibehalten.
+
+## C419
+
+- **Quelle:** [S66](SOURCES.md#s66), E3; betrifft I02, X06.
+- **Befund:** CEM-Gesamtschema akzeptiert die synthetische CustomElement-Klassendeklaration mit numerischem Eventnamen. Gegenprüfungen der unveränderten Definitionen weisen den Wert unter Event und CustomElementDeclaration ab, akzeptieren die Deklaration aber unter ClassDeclaration. Das Modul-anyOf kann damit über den allgemeinen Klassenzweig passieren.
+- **Bedeutung/Grenze:** Die zunächst erwartete Abweisung blieb als Erwartungsabweichung gespeichert. Zusätzliche Diagnosewrapper sind keine Änderung des Originalschemas. X06 bleibt D für einen realen Originalschema-Beitrag, ohne vollständige Eventfachprüfung zu versprechen.
+- **Nächste Prüfung:** Gewählte Deklarationsart separat prüfen; bei späterer Nutzung keine vollständige Eventvalidierung aus Root-Schemaerfolg ableiten.
+
+## C420
+
+- **Quelle:** [S66](SOURCES.md#s66), E3; betrifft V04, V05, V06.
+- **Befund:** Sechs Aufrufe der unveränderten UXSpec-Webmapperfunktionen wurden mit Node 24.22.1 ausgeführt: maxHeight=160 erzeugt 160px, value/unit erzeugt 5rem; zusätzliche anchorTarget/placement/offset sowie overflow-/Styleangaben erzeugen in diesen Pfaden keine entsprechenden CSS-Eigenschaften.
+- **Bedeutung/Grenze:** Konkreter Funktionsnachweis, kein Rendering. Die erste Harness-Erwartung hatte Standardlayoutwerte übersehen; Original und korrigierte Erwartungen sind erhalten. V04/V06 bleiben U für das vollständige Kriterium, V05 bleibt A; andere Renderer/Hostregeln nicht ausgeschlossen.
+- **Nächste Prüfung:** Einen vorhandenen formalen Anker-/Scrollbeitrag und dessen tatsächliche Hostbindung identifizieren; Schemaakzeptanz freier Felder nicht als Umsetzung ausgeben.
+
+## C421
+
+- **Quelle:** [S67](SOURCES.md#s67), E3; betrifft I02.
+- **Befund:** TypeScript 5.9.3 löst den tatsächlichen CEM-Eventtyptext CustomEvent<{value:string}> auf und erschließt detail als Payload mit value:string. Ein zweiter Fall erhält optionale verschachtelte Typmetadaten. Ungültiger Typtext, fehlende Typdefinition, Event ohne detail sowie falscher Eventname werden im begrenzten Versuch jeweils unterschieden.
+- **Bedeutung/Grenze:** CEM I02 U→A ausschließlich für ausdrücklich als TypeScript interpretierte Web-Typtexte plus explizite CustomEvent.detail-Projektion. Compiler und Projektion sind zusätzliche Bindung, keine automatische CEM-Originalvalidierung und keine generelle Auflösung aller Typnotationen/externer Pakete. Kein öffentlicher Auslösezeitpunkt muss in diesem Typmodell enthalten sein.
+- **Nächste Prüfung:** Weitere konkrete Typnotationen und Paket-/Modulauflösung separat prüfen; Adapterregel für Eventobjekt/Payload und Eingangsprüfung sichtbar halten.
+
+## C422
+
+- **Quelle:** [S68](SOURCES.md#s68), E3; betrifft X06, X07, A01.
+- **Befund:** Fünf synthetische HTML-Fälle wurden im W3C Nu Html Checker geprüft, Ergebnisansicht vnu 26.10.18. Ungültiges aria-expanded und doppelte ID erzeugen Fehler. Fehlendes aria-controls-Ziel und falsche aktive Option aus zweiter Listbox erzeugen gegenüber der bestehenden descendant/aria-owns-Warnung des Kontrollfalls keine weitere Diagnose.
+- **Bedeutung/Grenze:** Reales Webtool mit begrenzter nachgewiesener Reichweite. Kein vollständiger neutraler ARIA-Artefaktvalidator, kein lokaler Versionspin und keine assistive Prüfung. WAI-ARIA X06 bleibt U; bloßes Bestehen einer Hostprüfung belegt keine Instanz-/Referenzkonsistenz.
+- **Nächste Prüfung:** Norm-/Hostprofil und vollständige konkrete Referenzprüfung bestimmen; Kontrollwarnung fachlich gegen ARIA/APG prüfen, nicht durch Zusatzattribute nur unterdrücken.
+
+## C423
+
+**Weitere E3-Fortschreibung:** [C431](#c431) ergänzt die lokal gebundenen CSS-Prüferstände; der folgende Nu-Befund bleibt gültig.
+
+- **Quelle:** [S69](SOURCES.md#s69), E3; betrifft X06.
+- **Befund:** Vier CSS-Proben im Nu-Dienst vnu 26.10.18: Basis-CSS mit Größenbegrenzung, overflow-y und prefers-color-scheme passiert; ungültiger Overflowwert und unbekannte Längeneinheit werden beanstandet. Anchor-scope/name, position-anchor und Anchorfunktionen werden hingegen als unbekannt oder unzulässig abgewiesen.
+- **Bedeutung/Grenze:** CSS X06 bleibt U für einen geeigneten Checker der gespeicherten Modulstände. Der konkrete Dienst unterstützt diese Kombination nicht ausreichend; das ist kein Beweis fehlender CSS- oder Browserfähigkeit. Keine Layoutausführung.
+- **Nächste Prüfung:** Checker mit nachgewiesener Grammatikunterstützung der relevanten Anchor-/Overflow-/Media-Queries-Stände identifizieren; nicht den erfolgreichen Basis-CSS-Fall verallgemeinern.
+
+## C424
+
+- **Quelle:** [S70](SOURCES.md#s70), E3; betrifft X06.
+- **Befund:** Offizielle SCXML-XSD-1.0-Kette aus acht Originaldateien lokal kompiliert und sechs Fälle mit lxml 6.1.1/libxml2 2.14.6 geprüft. Zweizustands- und send/param-Fall akzeptiert; fehlende Version und doppelte Zustands-ID abgewiesen. Fehlender Zielzustand und ungültiger ECMAScript-Ausdruck werden von dieser Kombination akzeptiert.
+- **Bedeutung/Grenze:** SCXML X06 bleibt D, nun mit tatsächlicher begrenzter Originalschema-Prüfung. Kein Interpreter oder striktes XSD-1.1-Set geprüft. Die unerwartete Zielakzeptanz bleibt mit Erwartung und Exitstatus 1 erhalten; kein allgemeiner Befund über alle XSD-/SCXML-Implementierungen.
+- **Nächste Prüfung:** Genau diese Fälle gegen kontrollierten Interpreter beziehungsweise strengeren Originalschema-Pfad prüfen; Host-/Ausdruckssemantik nicht aus XSD-Erfolg ableiten.
+
+## C425
+
+- **Quelle:** [S71](SOURCES.md#s71), E3; betrifft I02.
+- **Befund:** Vier getrennte CEM-/SCXML-Bindungsfälle geprüft: alle SCXML-Eingaben bestehen Original-XSD, während eine zusätzliche statische Regel falschen Ausgabenamen, falschen Parameternamen und numerischen Wert gegen die öffentliche CEM-TypeScript-Signatur erkennt. Der korrekte statische value-change/value-Stringfall ist kompatibel.
+- **Bedeutung/Grenze:** SCXML I02 U→A für statisches send/param plus separat geführte öffentliche CEM-Signatur und explizite zusätzliche Web-/Typbindung. Die Bindung ist ein Forschungsprofil, keine native SCXML-Signaturregistry oder implementierte öffentliche Hostroute. Keine Interpreterausführung, dynamische Ausdrücke und andere I/O-Prozessoren nicht abgedeckt.
+- **Nächste Prüfung:** Hosttransport, tatsächlichen Dispatch und Instanzen separat prüfen; für weitere Typ-/Ausdrucksformen den nachgewiesenen Profilumfang explizit erweitern.
+
+## C426
+
+- **Quelle:** [S72](SOURCES.md#s72), E3; betrifft X03.
+- **Befund:** Originale UXSpec-Import-/Resolvefunktionen explorativ ausgeführt: importierter Unterverweis löst bei gleichnamigem Appziel APP statt LIBRARY auf, ohne lokales Ziel UNKNOWN_ELEMENT_REFERENCE. Angeforderter fehlender Tokenbereich erzeugt keine Importdiagnose; fehlende Datei und direkter Datei-Selbstimport werden erkannt. Fremdes CEM liefert keinen UXSpec-Elementbereich.
+- **Bedeutung/Grenze:** X03 bleibt U für unabhängige Originaldomänen. Referenzfälle sind Compilerpfad-Erkundungen; ihre normalen $ref-Objekte scheitern separat am Originalschema. Fehlender-Bereich-/Datei-/Selbstimportkontrollen sind schema-konform. Kein garantierter gültiger UI-Gegenfall und kein zugesagter CEM-Import behauptet.
+- **Nächste Prüfung:** Original-Schemareferenzform, Namespaceherkunft und externe Zielarten gemeinsam klären; Alias oder erfolgreiche Dateilesung nicht als semantische Bindung ausgeben.
+
+## C427
+
+- **Quelle:** [S72](SOURCES.md#s72), E3; betrifft X02, X04, X07.
+- **Befund:** Originaler Bundler gibt bei zwei schema-konformen Kinddateien mit gleicher Maschinen-ID ok=true zurück und enthält nur die zuletzt zugewiesene Definition. Eine Kind-ID gleich der Eintritts-ID ersetzt ebenso das Eintrittsmodul ohne Diagnose. Der positive Drei-ID-Fall enthält alle drei Module.
+- **Bedeutung/Grenze:** Konkreter E3-Befund zu globalen Maschinen-IDs und Modulzuweisung, keine ausgeführte Actor-/UI-Instanz. Vorhandene X02-/X04-Beiträge beweisen weiterhin keine konfliktfreie Paketidentität; X07 bleibt N im bisherigen Vier-Domänen-Umfang.
+- **Nächste Prüfung:** Vor Bundleverwendung Kollisionen und Definition/Instanz trennen; ein zusätzlicher Konfliktcheck wäre neue Projektlogik, kein vorhandener Originalnachweis.
+
+## C428
+
+- **Quelle:** [S72](SOURCES.md#s72), E3; betrifft V01, V05, X03.
+- **Befund:** Ein schema-konformer UXSpec-Token mit $value={value:1,unit:rem} wird durch resolveDocument an einer Paddingreferenz auf die Zahl 1 reduziert, ohne Diagnose.
+- **Bedeutung/Grenze:** Bestätigt den zuvor gelesenen Einheitenverlustpfad. Es wurde ein originales UXSpec-Tokenobjekt geprüft, kein automatischer Import einer unveränderten DTCG-Datei. Neue Format-/Zieladapter müssen Einheit und Bedeutung erhalten.
+- **Nächste Prüfung:** Werte-/Einheitenbindung ausdrücklich prüfen, bevor neutrale Tokenquellen und Zielrenderer als gleichwertig gelten.
+
+## C429
+
+- **Quelle:** [S72](SOURCES.md#s72), E3; betrifft X06, X04.
+- **Befund:** Die getrennte Originalschema-Vorprüfung der 24 beteiligten UXSpec-Dateien akzeptiert 15 und weist neun ab. Normale $ref-Objekte treffen mehrere element-oneOf-Zweige gleichzeitig; die tatsächliche Diagnose nennt Container/Leaf/Ref. Compilerfunktionen verarbeiten solche Eingaben dennoch.
+- **Bedeutung/Grenze:** X06 bleibt D für ein tatsächlich vorhandenes/geprüftes Originalschema, mit zusätzlicher belegter Referenzgrenze. Compilerpfad-Ergebnisse sind nicht pauschal Ergebnisse gültiger Originalschemadokumente. Keine Schemareparatur und keine komplette Originalformat-Gleichheit behauptet.
+- **Nächste Prüfung:** Dokumentierte Referenzsyntax, Originalschema und tatsächlichen Compilepfad gemeinsam prüfen; eine eigene korrigierte Schemafassung ausdrücklich als Änderung kennzeichnen.
+
+## C430
+
+- **Quelle:** [S72](SOURCES.md#s72), E3; betrifft X04.
+- **Befund:** Zwei statische Elementexpansionen werden mit getrennten Parameterwerten kopiert; Änderung der ersten Kopie lässt die zweite unverändert. In einem explorativen Kind/Großkindfall enthält das Bundle dagegen nur Eltern- und Kindmodul, obwohl die Kindabhängigkeit auf die Großkinddatei zeigt. Elementrekursion führt zu RangeError statt strukturierter Resolverdiagnose.
+- **Bedeutung/Grenze:** Positiver statischer Kopiernachweis ist keine Actor-/UI-Kontextisolierung. Referenz- und Invoke-Dateien dieser explorativen Fälle bestehen das Originalschema nicht; Transitivitäts-/Rekursionsbefunde werden daher nicht als garantierte schema-konforme UI-Gegenfälle verallgemeinert. X04 bleibt D im beschriebenen Teilbeitrag, keine vollständige Kompositionsfreigabe.
+- **Nächste Prüfung:** Gültige Originalartefaktkette, vollständigen Modulabschluss und tatsächliche getrennte Laufzeitkontexte gemeinsam nachweisen.
+
+## C431
+
+- **Quelle:** [S73](SOURCES.md#s73), E3; betrifft X06.
+- **Befund:** Je 17 Deklarationsfälle gegen css-tree 3.1.0/mdn-data 2.12.2 und 3.2.1/mdn-data 2.27.1 ausgeführt. 3.2.1 unterstützt direktes anchor() und anchor-size() besser. Beide akzeptieren jedoch ein ungültiges Anchorargument innerhalb calc, kennen die originalen position-anchor-Werte normal/match-parent nicht und unterstützen var()-Matching ausdrücklich nicht.
+- **Bedeutung/Grenze:** CSS X06 bleibt U für die vollständige gespeicherte Draftkombination. Reales lokales Tooling und positive/negative Teilprüfungen sind belegt; Match ist keine Garantie aller verschachtelten Regeln, DOM-Ziele oder Variablenauflösung. Kein eigenes Grammatikpaket oder CSS-Format ergänzt.
+- **Nächste Prüfung:** Erforderliches Prüfprofil und exakte Modulgrammatiken samt verschachtelten Funktionen, Variablen und Hostreferenzen binden; neue Konfiguration ausdrücklich als Ergänzung kennzeichnen.
+
+## C432
+
+- **Quelle:** [S74](SOURCES.md#s74), E2.
+- **Befund:** Zusätzlich zum Behaviour-Beitrag sind originale Scenegraph-Variablen mit COLOR/FLOAT/STRING/BOOLEAN, Einheiten, Aliaswerten und CSS-Ausgabe belegt. Keine vollständige Composite-Typografie oder DTCG-Konformität.
+- **Grenze:** D ausschließlich für den ausdrücklich erweiterten Visualbeitrag. Keine vollständige Behaviour-/Visual-/Interface-/A11y-Bindung oder ausgeführte Export-/Browserintegration. Loose-Originalschema und Einzel-Featureparser ersetzen keine vollständige semantische Validierung.
+- **Nächste Prüfung:** Konkrete getrennte Originalartefakte und ihre Instanz-/Versionsbindung prüfen; Visualsyntax und gerenderte Wirkung getrennt validieren.
+
+## C433
+
+- **Quelle:** [S74](SOURCES.md#s74), E2.
+- **Befund:** Zusätzlich untersuchte Variablenauflösung besitzt aktive/Standard- und geerbte Knotenmodi; der originale Tokenexport schreibt Standardwerte und Modusbedingungen per Selektor oder CSS-Bedingung.
+- **Grenze:** D ausschließlich für den ausdrücklich erweiterten Visualbeitrag. Keine vollständige Behaviour-/Visual-/Interface-/A11y-Bindung oder ausgeführte Export-/Browserintegration. Loose-Originalschema und Einzel-Featureparser ersetzen keine vollständige semantische Validierung.
+- **Nächste Prüfung:** Konkrete getrennte Originalartefakte und ihre Instanz-/Versionsbindung prüfen; Visualsyntax und gerenderte Wirkung getrennt validieren.
+
+## C434
+
+- **Quelle:** [S75](SOURCES.md#s75), E3.
+- **Befund:** 15 Fälle gegen originale OpenPencil-Valibot-Schemata ausgeführt. Pflicht-ID und Name werden geprüft, fachliche Typ-/Werte-/Einheiten-/Alias-/Moduskonsistenz nicht umfassend. valuesByMode als Array wird unerwartet angenommen und als Objekt mit Indexschlüssel ausgegeben; die unveränderte Voraberwartung schlägt fehl. COMPOSE_COLOR prüft eigene Struktur, aber keine Opacityobergrenze oder Graphauflösung.
+- **Bedeutung/Grenze:** Reales Originalschema-Tooling, keine vollständige semantische Visualvalidierung. Ergebnisse gelten für die aufgerufenen Exporte, nicht automatisch den kompletten Import-/Editorpfad. V01 bleibt D als Modellbeitrag; keine weitere U-Zelle geschlossen.
+- **Nächste Prüfung:** Getrennte Typ-/Wertebereich-/Modus-/Referenzprüfungen des vollständigen Import- und Exportpfads nachweisen.
+
+## C435
+
+- **Quelle:** [S75](SOURCES.md#s75), E3.
+- **Befund:** 16 Fälle gegen originalen CSSOM-Tokenvalidator ausgeführt: Werte einschließlich var() und komplexere Bedingungen werden angenommen, zusätzliche Deklarationen/Regeln und unzulässige Namen/At-Rules abgewiesen. Custom-Property-Texte banana/16bananas und unbekannter Mediafeaturewert werden ebenfalls angenommen.
+- **Bedeutung/Grenze:** Sichere CSS-Ausgabeform ist ein anderer Prüfumfang als fachliche Typ-/Eigenschafts-/Featurekonformität. Keine belegte generelle Unfähigkeit, Werte oder Variablen zu übernehmen; keine behauptete neu gefundene vollständige Alternative. V03 bleibt D für Modusmodell und Exportabbildung.
+- **Nächste Prüfung:** Anwendungsziel und aufgelöste Werte getrennt validieren, bevor ein Tokenstrom als gültiger Farb-/Dimensionswert gilt.
+
+## C436
+
+- **Quelle:** [S76](SOURCES.md#s76), E2.
+- **Befund:** SceneNode und Layoutfelder führen min/maxWidth/Height; originale dom-css-Projektion schreibt nicht-null Grenzen über Pixel-/Tokenabbildung nach CSS und wird vom Design-/HTML-Ausgabepfad verwendet.
+- **Bedeutung/Grenze:** Konkreter bestehender Webadapter, wie bei UXSpec V05 als A eingeordnet. Keine gemessene Geometrie, keine variable Zeilenhöhenbindung oder native Abbildung.
+- **Nächste Prüfung:** Originalfeld, ausgewählten Zielrenderer und Instanzbindung gemeinsam prüfen; Geometrie-/Scrollwirkung und variable Zeilenhöhen später praktisch nachweisen.
+
+## C437
+
+- **Quelle:** [S76](SOURCES.md#s76), E2.
+- **Befund:** Originale Projektion schreibt absolute x/y-Koordinaten im Elternkontext oder richtet einen relativen Elterncontainer ein.
+- **Bedeutung/Grenze:** Belegte Positionierung ist kein vollständiger dynamischer Input-Overlay-Anker mit Richtung und Abstand. V04 bleibt U; andere Pfade nicht ausgeschlossen.
+- **Nächste Prüfung:** Originalfeld, ausgewählten Zielrenderer und Instanzbindung gemeinsam prüfen; Geometrie-/Scrollwirkung und variable Zeilenhöhen später praktisch nachweisen.
+
+## C438
+
+- **Quelle:** [S76](SOURCES.md#s76), E2.
+- **Befund:** Originale Projektion übersetzt clipsContent nach overflow:hidden. Der vollständig gelesene Feldpfad bietet keine auto/scroll- oder achsenspezifische Scrollauswahl.
+- **Bedeutung/Grenze:** Clippingbeitrag ist real, aber keine vollständige Scrollcontainersemantik für überlaufende Optionen. V06 bleibt U.
+- **Nächste Prüfung:** Originalfeld, ausgewählten Zielrenderer und Instanzbindung gemeinsam prüfen; Geometrie-/Scrollwirkung und variable Zeilenhöhen später praktisch nachweisen.
+
+## C439
+
+- **Quelle:** [S77](SOURCES.md#s77), E2 mit E1-Musterabgleich.
+- **Befund:** OpenPencil switch-Kind wird im gepinnten Vue-Preview konkret auf Reka SwitchRoot mit Buttonbasis, Booleanmodell und disabled abgebildet. Die innerhalb des deklarierten Bereichs liegende Reka-2.10.5-Quelle und deren Dokumentation definieren Switch-Rolle, Zustand, Space-/Enterbedienung und APG-Musterbezug.
+- **Bedeutung/Grenze:** R nur für diesen vorhandenen referenzierten Switch-Webbeitrag. Keine neue Bedeutung erfunden, aber weder vollständige Prüfung aller Kinds noch Autocomplete-, native oder Browser-/AT-Konformität. Versionsbereich nicht als nachgewiesenen tatsächlichen Lockstand ausgeben.
+- **Nächste Prüfung:** Gewählten Controlpfad, tatsächlichen Abhängigkeitsstand und alle Namen-/Relations-/Meldebindungen nachvollziehbar verbinden; später gerenderte Tastatur-/Fokus-/AT-Fälle gesondert ausführen.
+
+## C440
+
+- **Quelle:** [S77](SOURCES.md#s77), E2 mit E1-Musterabgleich.
+- **Befund:** Reka SwitchRoot besitzt konkrete Rollen-/Zustands- und Labelmechanismen; OpenPencil verwendet diesen Wrapper und übernimmt Hostattribute. Vollständig gelesene Fieldpfade können Text auf input/textarea/Placeholder abbilden.
+- **Bedeutung/Grenze:** Positive Mechanismen sind belegt, aber eine vollständige Behaviour-zu-Name-/Beziehungsbindung, stabile Labels und getrennte externe Ziele aller nötigen Teile bleiben unbewiesen. Placeholder oder importierter Komponentenname genügen hierfür nicht.
+- **Nächste Prüfung:** Gewählten Controlpfad, tatsächlichen Abhängigkeitsstand und alle Namen-/Relations-/Meldebindungen nachvollziehbar verbinden; später gerenderte Tastatur-/Fokus-/AT-Fälle gesondert ausführen.
+
+## C441
+
+- **Quelle:** [S77](SOURCES.md#s77), E2 mit E1-Musterabgleich.
+- **Befund:** Switchzustand und Progresswert werden im vorhandenen Preview weitergegeben. Die gelesenen Control-/Field-/Renderpfade belegen keinen vollständigen allgemeinen Ergebnis-/Fehler-/Lademeldevertrag mit Auslöser, Inhalt, Ziel und Zeitpunkt.
+- **Bedeutung/Grenze:** A03 bleibt U. Aktualisierte Zustandsattribute sind nicht automatisch eine definierte Produktansage. Keine pauschale Negativaussage über Reka oder andere noch ungeprüfte Exportpfade.
+- **Nächste Prüfung:** Gewählten Controlpfad, tatsächlichen Abhängigkeitsstand und alle Namen-/Relations-/Meldebindungen nachvollziehbar verbinden; später gerenderte Tastatur-/Fokus-/AT-Fälle gesondert ausführen.
+
+## C442
+
+- **Quelle:** [S78](SOURCES.md#s78), E3.
+- **Befund:** 14 Eingabe- und vier Indexabfragefälle am originalen Panda-read.ts ausgeführt. Root-/Array-/Versionsobergrenzen prüfen ausgewählte Formen. Falsche categories/tokens, null-Zeile, negative/gebrochene Version und fehlende conditions/themes werden angenommen. Doppelte Basiswerte liefern den ersten Treffer, fehlende Referenzziele werden indiziert, null-Zeile scheitert erst beim Indexaufbau.
+- **Bedeutung/Grenze:** 18/18 vorher gespeicherte Erwartungen bestätigt; kein vollständiger fachlicher Originalvalidator daraus ableitbar. Reader vertraut laut Originalkommentar erzeugten Zeilen. X06 bleibt U, ohne andere Panda-Prüfungen oder Generatorgarantien auszuschließen.
+- **Nächste Prüfung:** Gewählten Originalgegenstand und Validatorumfang vollständig binden; externen Export vor Abfragen unabhängig auf Tabellen-, Zeilen-, Versions- und Referenzkonsistenz prüfen, eigene Ergänzungen offen kennzeichnen.
+
+## C443
+
+- **Quelle:** [S79](SOURCES.md#s79), E3.
+- **Befund:** Veröffentlichten Google DESIGN.md Linter 0.4.0 mit 16 gespeicherten Hauptfällen ausgeführt. Farben und Rundungsdimensionen werden konkret geprüft; leeres/fehlendes/kaputtes/dupliziertes YAML erzeugt Warnungsreports mit leerem Modell. Falsches spacing, numerische colors und YAML-Rootliste können ohne fachlichen Fehler bleiben. Vier Voraberwartungen widerlegt, unverändert gespeichert.
+- **Bedeutung/Grenze:** Reales ausführbares Originaltool belegt, vollständiges separates Original-Dokumentschema weiterhin nicht. X06 bleibt U. PaketgitHead 9bf8eae... ist vom früheren Quellencommit 6e5da538... getrennt; zwei verglichene Quelldateien identisch, keine pauschale Repoidentität.
+- **Nächste Prüfung:** Unverarbeitetes YAML, erwartete Modellinhalte, fachliche Dimensionen und Referenzintegrität zusätzlich prüfen; eigenes Abnahmeprofil offen kennzeichnen.
+
+## C444
+
+- **Quelle:** [S79](SOURCES.md#s79), E3.
+- **Befund:** Vier zusätzliche Diagnosefälle desselben Original-Linters: unbenutzte fehlende/zyklische Farbtoken bleiben ohne Diagnose im Hauptlauf; Komponentenverbrauch erzeugt unresolvedRef-Fehler. Gültiger Alias funktioniert, fehlerhaftes spacing bleibt auch als Component-Padding ohne Dimensionsfehler.
+- **Bedeutung/Grenze:** Selektive Komponentenreferenzprüfung ist kein Nachweis vollständiger Token-/Domänengraphvalidierung. Keine Veränderung der übrigen Abdeckungswerte; Befund ist eine Präzisierung des gebundenen Originalwerkzeugs.
+- **Nächste Prüfung:** Alle relevanten Graphkanten und erwarteten fachlichen Zieltypen einzeln mit positiven/negativen Fällen prüfen, bevor Fehlerfreiheit oder Verlustfreiheit behauptet wird.
+
+## C445
+
+- **Quelle:** [S80](SOURCES.md#s80), E3.
+- **Befund:** Zehn statische Zwei-Instanz-HTML-Fixtures im Browser gegen neun explizite Originalregeln von axe-core 4.14.0 ausgeführt. Fehlende aktive/offene Popupziele, ungültiges aria-expanded und fehlender Name werden diagnostiziert. Doppelte referenzierte ID liefert incomplete statt sicherer violation. Vorhandene instanzfremde Ziele bleiben unter diesen Regeln ohne Diagnose.
+- **Bedeutung/Grenze:** Original-Hosttooling ist praktisch belegt; die Kontrolle besteht im begrenzten Regelsatz. Keine vollständige ARIA-/WCAG-/AT-Konformität oder neutrales Original-A11y-Artefaktschema. X06 bleibt U. Frühere Nu-Befunde bleiben gültig und werden um andere konkrete Abdeckung ergänzt.
+- **Nächste Prüfung:** Originalchecker mit erwarteter fachlicher Ziel-/Instanzzuordnung und gerenderten Bedien-/Meldeabläufen verbinden; incomplete manuell prüfen.
+
+## C446
+
+- **Quelle:** [S80](SOURCES.md#s80), E3.
+- **Befund:** Zusätzliches ausdrücklich eigenes Instanzprofil A/B auf dieselben zehn statischen Fixtures angewendet. Feste erwartete Input-/Listen-/Optionsziele erkennen alle instanzfremden Bezüge sowie fehlende/mehrdeutige Ziele. Namen und Booleanwerte werden von diesem Zusatzschritt nicht geprüft.
+- **Bedeutung/Grenze:** Positiver begrenzter Zusatznachweis für explizite semantische Zielbindung, keine ursprüngliche ARIA- oder axe-Fähigkeit. Mapping stammt aus Testtabelle, nicht aus vollständig verbundenen vier Originalartefakten; WAI-ARIA X03 bleibt U. Keine Formatwahl oder Produktkomponente.
+- **Nächste Prüfung:** Mapping aus führenden Originaldomänen mit Version und Instanzidentität nachvollziehbar herleiten; danach denselben Gegenfallkatalog gegen die vollständige Kette prüfen.
+
+## C447
+
+- **Quelle:** [S81](SOURCES.md#s81), E3.
+- **Befund:** Vier eigene Prüfarbeitsdateien in unveränderten Originalsprachen CEM/SCXML/CSS/HTML getrennt erstellt und geprüft; zusätzliche externe Forschungstabelle verbindet dieselben Teile zweier Instanzen. Originaldateien erzwingen keine fremden API-/UX-/Visual-/A11y-Fachdefinitionen. CEM/SCXML-Schemata, CSS-Eigenschaftsgrammatiken und ausgewählte HTML-Hostregeln sind ausgeführt.
+- **Bedeutung/Grenze:** X01 bei CEM, SCXML, CSS Layout und WAI-ARIA nun A, ausschließlich für diesen begrenzten Webreferenzfall mit expliziter zusätzlicher Bindung. Keine Produktformatwahl, neutrale A11y-Sprache, Actor-/Hostlaufzeit, native oder vollständige interaktive Gesamtintegration daraus ableiten.
+- **Nächste Prüfung:** Verhalten tatsächlich mit Hostupdates verbinden, Unterkomponenten-/Instanzlebenszyklus und vollständige Typ-/Melde-/Plattformabbildung separat nachweisen.
+
+## C448
+
+- **Quelle:** [S81](SOURCES.md#s81), E3.
+- **Befund:** 13 eigene statische Bindungsbedingungen inklusive Kontrollfall und zwölf Gegenfällen ausgeführt: Hash, deklarierte Teile, Verhaltensdefinition, Zustand, Instanzziele, Anker, Einheit, Ereignisname, Payloadtyp, führende Quelle und doppelte Teile werden unterschieden. Alle Voraberwartungen erfüllt; der Typfall nutzt tatsächlichen TypeScript-Check gegen CEM-CustomEvent.detail.
+- **Bedeutung/Grenze:** Zusätzliches Forschungsprofil ist praktisch prüfbar, aber keine ursprüngliche Referenz-/Konfliktfähigkeit aller Kandidaten. Ownership ist weiterhin ein vorgeschlagenes Profil. Keine allgemeine Umwertung von X03/X08 oder vollwertige öffentliche Eventroute.
+- **Nächste Prüfung:** Mapping und Provenienz für reale Produktartefakte verbindlich herleiten; Änderungen, Rundlauf und ausführbare Semantik prüfen.
+
+## C449
+
+- **Quelle:** [S81](SOURCES.md#s81), E3.
+- **Befund:** Zwei getrennte HTML-/CSS-Instanzen im Chrome-155-Browser gemessen: je 8px Abstand zum eigenen Input, links an dessen Kante, Popup-/Clienthöhe 160px, Scrollinhalt 224px, sieben Zeilen je 32px und overflow-y:auto. Beide vorab definierten Geometriefälle erfüllt.
+- **Bedeutung/Grenze:** Konkreter statischer Web-Layoutnachweis mit unterstützten Ankern; kein Crossbrowser-/Native-/Bedien- oder vollständiger ScrollArea-Kompositionsnachweis. Bestehende CSS-Abdeckungswerte bleiben erhalten.
+- **Nächste Prüfung:** Resize, Scroll-/Portal-/Fallbacksituationen und aktive Option bei wirklicher Navigation getrennt prüfen.
+
+## C450
+
+- **Quelle:** [S81](SOURCES.md#s81), E3.
+- **Befund:** Separate CSS-Variante mit Zeilenhöhen 24/48/36/24/60/28/40px an beiden Instanzen ausgeführt. Scrollinhalt 260px, Popup weiterhin 160px und 8px Abstand, aber nur vier vollständige Zeilen sichtbar. Beide vorher festgelegten Erwartungen erfüllt.
+- **Bedeutung/Grenze:** Geometrische Maximalhöhe garantiert bei variablen Zeilenhöhen nicht fünf vollständig sichtbare Einträge. Keine Produktregel dafür erfunden; Visualvariante als eigene Datei und eigener Fall protokolliert.
+- **Nächste Prüfung:** Explizite Produktanforderung für sichtbare Zeilen, partielle Zeilen und variable Inhalte festlegen und dynamisch prüfen.
+
+## C451
+
+- **Quelle:** [S82](SOURCES.md), E3; betrifft B01, B02, I02.
+- **Befund:** Originaler SCION-SCXML-Interpreter 4.3.28 führt unveränderte Kontrollquelle aus: OPEN/COMMIT, ereignisloser Rücksprung und natives #_parent-send mit value-change/{value:alpha}. Zehn Voraberwartungen ausgeführt, neun erfüllt. Negativfälle für fehlendes Ziel, falschen Eventnamen, numerischen Payload, falschen Parent und fehlenden Parent protokolliert.
+- **Bedeutung/Grenze:** Die zusätzliche Host-Allowlist prüft nur die aus CEM abgeleitete einfache Stringsignatur und Instanzroute. Keine vollständige Typprüfung oder universelle SCXML-Konformitätsprüfung.
+- **Nächste Prüfung:** Invoke-Lebenszyklus und stärkere Payload-/Ereignisverträge getrennt prüfen.
+
+## C452
+
+- **Quelle:** [S82](SOURCES.md), E3; betrifft X04, X05.
+- **Befund:** Bei gemeinsam vorbereiteter Factory senden beide Instanzen beta-B trotz Parametern alpha-A/beta-B: ursprüngliche Isolationserwartung verletzt. Zwei getrennt vorregistrierte Diagnosefälle bestehen: einmal kompilieren und je Instanz prepare sowie separat kompilieren und vorbereiten.
+- **Bedeutung/Grenze:** Getrennte Zustandskonfigurationen allein belegen keine getrennten Datenkontexte. Die geprüfte SCION-prepare-Grenze erzeugt die notwendigen separaten Ausführungskontexte. Kein genereller Fehlerbefund zu SCXML als Standard.
+- **Nächste Prüfung:** Echte invoke-Unterkomposition mit unabhängigen Kontexten prüfen.
+
+## C453
+
+- **Quelle:** [S82](SOURCES.md), E3; betrifft B04, I02, A02.
+- **Befund:** Fünf Browser-Hostfälle erfüllen die gespeicherten Erwartungen: zwei anfangs geschlossene Instanzen, programmgesteuerter Fokus öffnet nur A, synthetisches Escape schließt A, Enter führt native SCXML-Sendung und echtes bubbling DOM-CustomEvent am Forschungscontainer aus, anschließend öffnet Fokus nur B. Originalquelle unverändert, prepare pro Instanz.
+- **Bedeutung/Grenze:** Interaktive Forschungs-Hostfixture mit explizitem Zusatzcode, keine CEM-Produktionskomponente. Programmatischer DOM-Fokus und synthetische KeyboardEvents sind keine physische Tastatur-/AT-Prüfung. Vollständige Navigation, Async-Daten und dynamische Ansagen fehlen.
+- **Nächste Prüfung:** Navigation, Scroll-to-active, Ansagen und native Zielprofile separat nachweisen.
+
+## C454
+
+- **Quelle:** [S83](SOURCES.md), E3; betrifft X01.
+- **Befund:** Eigenständige DTCG-dimension-/Alias-Tokendatei und separate CSS-Layoutdatei mit bytegleichen CEM-, SCXML- und HTML/ARIA-Artefakten verbunden. Zusätzliches Profil benennt Quelle, Hash, Instanzen A/B, Tokenpfad, Selektor, Eigenschaft und Visualzuständigkeit. Zwölf vorher definierte Übersetzungs-/Bindungsbedingungen erfüllen ihre Erwartungen.
+- **Bedeutung/Grenze:** X01 nun A im begrenzten Webreferenzfall: zusätzlicher Adapter erforderlich. Eigener Übersetzer prüft nur explizit typisierte dimension-/Curly-Alias-Teilmenge, kein Original- oder vollständiger DTCG-Validator. Keine fremde Domäne in Tokens definiert.
+- **Nächste Prüfung:** Weitere Tokenarten, Resolverkontexte, Schriftgrößenänderungen und Versions-/Ownershipkonflikte separat prüfen.
+
+## C455
+
+- **Quelle:** [S83](SOURCES.md), E3; betrifft V01, V05, V06.
+- **Befund:** Vier Browserbedingungen: Instanzen A/B jeweils mit px- und rem-Tokens bei 16px Rootschriftgröße. Alle ergeben 8px Abstand, 160px Popuphöhe, sieben 32px-Zeilen, 224px Scrollinhalt und Overflow auto.
+- **Bedeutung/Grenze:** Zusätzliche Übersetzung in CSS-Variablen und tatsächliches Browserlayout nachgewiesen. Keine generelle Gleichheit von rem und px, keine DTCG-Scrollsemantik, keine Navigation oder Assistenzprüfung.
+- **Nächste Prüfung:** Rootschriftänderung und zusätzliche Token-/Layoutvarianten mit expliziten Erwartungen prüfen.
+
+## C456
+
+- **Quelle:** [S84](SOURCES.md), E3; betrifft X04, X05.
+- **Befund:** Echter Default-src-invoke desselben Childartefakts an zwei separat vorbereiteten Eltern erzeugt unterschiedliche Kindobjekte, aber gekoppelte Datensnapshots: owner A wird nach Start B zu B; SCROLL A setzt auch Bs offset auf 40; Wiederöffnung A überschreibt Bs owner. Drei der sechs ursprünglichen Erwartungen verletzt.
+- **Bedeutung/Grenze:** Originalinvoker cached vorbereitete Modellfunktionen nach Quelladresse. Getrennte Elternvorbereitung allein garantiert deshalb keine unabhängigen Childdaten in dieser Runtimeversion. Zustands-/Objekttrennung und richtige Parentroute sind keine Datenisolation. Kein allgemeiner Fehlerbefund gegen SCXML als Standard.
+- **Nächste Prüfung:** Geeignete instanzgetrennte Invokerbindung beziehungsweise Runtimealternative separat prüfen, ohne ursprüngliche Fehler zu überschreiben.
+
+## C457
+
+- **Quelle:** [S84](SOURCES.md), E3; betrifft X04.
+- **Befund:** Von sechs Defaultinvoke-Bedingungen bestehen Initialstart A, CLOSE-A-Kindcancel bei weiter aktivem B und Parentcancel B mit finalem Kind. Ein separat vorregistrierter Diagnosefall mit bytegleichen Kinddateien unter unterschiedlichen URIs zeigt owner A/B und offset 40/0 korrekt.
+- **Bedeutung/Grenze:** Begrenzter tatsächlicher Lebenszyklus belegt. URI-Kontrolle stützt Cachegrenze, ist keine gewählte Bereitstellungsstrategie. Eigenes ResearchScrollArea-Modell enthält nur owner/offset/Ereignisse, keinen vollständigen visuellen oder zugänglichen Scrollvertrag.
+- **Nächste Prüfung:** Datenisolation mit gleicher fachlicher Definition und belastbarem Instanzkontext sowie vollständige UI-Scrollbindung nachweisen.
+
+## C458
+
+- **Quelle:** [S84](SOURCES.md), E3; betrifft X04.
+- **Befund:** Zusätzlicher eigener Invokeradapter führt dieselbe kontrollierte Childdatei je Instanz über originale documentStringToModel/prepare/Statechart-APIs mit frischem Ausführungskontext aus. Alle sechs separat gespeicherten Adaptererwartungen erfüllt: owner/offset und Parentereignisse getrennt, Close/Reopen/Cancel wie erwartet.
+- **Bedeutung/Grenze:** Begrenzter tatsächlicher Adapterpfad für unabhängige Kindkontexte. Kein Original-Defaultinvoker-Erfolg, keine gewählte Produktlösung oder generische Runtimeabsicherung. Unterstützt ausschließlich die kontrollierte lokale Datei; Initialisierungsrennen, Fehlerpropagation, weitere Invokertypen und tiefere Hierarchien ungeprüft. Die drei Originalverletzungen bleiben erhalten.
+- **Nächste Prüfung:** Cancel-während-Initialisierung, Fehlerpfade und vollständigen UI-Scrollvertrag gesondert prüfen.
+
+## C459
+
+- **Quelle:** [S85](SOURCES.md), E3; betrifft X08, X07.
+- **Befund:** Zusätzliches Forschungsprofil benennt zwei führende Originalinformationen und ihre Ableitungen: DTCG-Maximalhöhe → CSS-Variable, CEM-Eventname → SCXML-send/Integrationsprofil. 15 vorab gespeicherte Änderungs-/Konfliktfälle bestehen; Journal bindet Herkunft, Informationspfad, Vorher-/Nachherhashes und Policyrevision. Konflikte/veraltete Quellen/unerlaubte Seiteneffekte werden verworfen.
+- **Bedeutung/Grenze:** CSS Layout X08 nun A für die konkrete zusätzliche Visualwert-/Ableitungskette; keine native CSS-Ownershipfunktion oder Abdeckung aller Informationen. In-Memory-Staging und deklarierte Agentenrollen sind kein Nachweis persistenter Transaktionsatomarität oder authentifizierter Identität.
+- **Nächste Prüfung:** Andere Informationsarten und A11y-Ownership, Schema-/Versionsmigration sowie persistente Konfliktbehandlung separat prüfen.
+
+## C460
+
+- **Quelle:** [S85](SOURCES.md), E3; betrifft X05, X08.
+- **Befund:** Separat vorregistrierte Revisionskonsistenz-Erwartung verletzt im eigenen Ausgangsprüfer: neue Revision verwendet anderen Algorithmus und lässt Policyhash weg. Originalfehlbefund samt Skript/Outputs erhalten. Korrigierte Fassung verwendet dieselbe kanonische Dateihash-/Policyhashableitung wie Baseline; Kontrollfall und beide angenommene Änderungen stimmen nun überein.
+- **Bedeutung/Grenze:** Fehler und Korrektur im zusätzlichen Forschungsprüfer, kein Originalstandardfehler. Regression der ursprünglichen 15 Fälle besteht und zählt nicht als zusätzliche 15 Bedingungen. Hashbindung ist keine Signatur oder manipulationssichere Speicherung.
+- **Nächste Prüfung:** Mehrstufige Revisionen, Policyänderungen und konkurrierende persistente Aktualisierungen getrennt prüfen.
+
+## C461
+
+- **Quelle:** [S85](SOURCES.md), E3; betrifft X08, X06, I02, V05.
+- **Befund:** Tatsächlich angenommene Änderungen gegengeprüft: beide Browserinstanzen zeigen 192px Höhe/8px Abstand/224px Inhalt; Original-SCXML-Interpreter sendet nach gemeinsamer Namensänderung selection-change mit value=alpha und invokeid=A; geändertes CEM/SCXML werden von ihren unveränderten Originalschemata akzeptiert. Vier praktische Gegenbedingungen erfüllt.
+- **Bedeutung/Grenze:** Konkrete Quelldelta-/Ableitungskette desselben Pakets, keine generische Vier-Domänen-/Typ-/AT-Konformität. Originalschemaakzeptanz ist getrennt von zusätzlicher Ownershipprüfung und Runtimeverhalten.
+- **Nächste Prüfung:** Weitere überlappende Felder, Migrationen und Zielplattformen eigenständig prüfen.
+
+## C462
+
+- **Quelle:** [S86](SOURCES.md), E3; betrifft X03.
+- **Befund:** Eigener zusätzlicher Resolver verbindet ARIA-Hostinstanzen A/B mit separat beschriebenen CEM-Klassenteilen und SCXML-Zuständen über Quellhash, konkrete JSON-Pointer/namespace-gebundene XPaths und geprüfte Zielarten/Definitionszugehörigkeit. 16 vorab definierte Fälle erfüllen ihre Erwartungen; eine zweite gleichnamige Klasse wird über explizite Adresse unterschieden.
+- **Bedeutung/Grenze:** WAI-ARIA X03 A für die begrenzte zusätzliche statische Host-/Originalmodellbindung. Native IDREF bleibt DOM-Referenz; keine neutrale Original-ARIA-Modellsprache oder generische Livebindung behauptet. Partnamen und Komponenten-/Maschinennamenpaar sind explizite Zusatzbedingungen dieses Beispiels.
+- **Nächste Prüfung:** Weitere Referenzformen, Liveinstanzzustände, A11y-Originalschema sowie Schema-/Versionsmigration getrennt prüfen.
+
+## C463
+
+- **Quelle:** [S86](SOURCES.md), E3; betrifft X03, X06, X07.
+- **Befund:** Alle 16 erzeugten CEM-/SCXML-Varianten werden von den gepinnten Originalschemata akzeptiert, während der Zusatzresolver falsche Zielart, fremde Klassenteile, fehlende/mehrdeutige Ziele, veraltete Quellen und falsche Hostinstanzbeziehungen abweist. Pro Fall Schemaergebnis, Quellhash und Auflösungszeugen gespeichert.
+- **Bedeutung/Grenze:** Formale Originalschemaakzeptanz und domänenübergreifende Zielbedeutung sind getrennte Nachweise. Keine Aussage, dass alle mutierten HTML-Fälle native ARIA-Regeln bestehen; kein zusätzlicher Browser-/axe-/Interpreter-/AT-Lauf in diesem Paket.
+- **Nächste Prüfung:** Auflösungszeugen mit weiteren tatsächlich gewählten Zielprofilen verknüpfen, ohne andere Kandidaten pauschal aufzuwerten.
+
+## C464
+
+- **Quelle:** [S87](SOURCES.md), E3; betrifft X06.
+- **Befund:** Veröffentlichter xstate-Core 5.33.3 mit 132/132 inventarisierten Dateien, öffentlichen Exporten und relevantem Originaldatenfluss abgegrenzt. schemas wird als unknown-Metadatum durchgereicht/gespeichert; false und ein parse-Hook werden nicht als Originalartefaktprüfung ausgeführt. Kontextzahl 42 trotz beigefügter String-Schemavorgabe akzeptiert; ungültiges Transitionsziel durch echten Graphaufbau abgewiesen.
+- **Bedeutung/Grenze:** X06 N im ausdrücklich geprüften Coreumfang für den getrennten neutralen Maschinenartefakt-/Originalschema-Pfad. Keine Aussage, dass XState generell ohne Typ-/Runtimeprüfung oder alle Stately-/externen Werkzeuge ohne Validator seien. Abgrenzung beruht auf Originaldistributions-/APIrolle und Gegenkontrollen, nicht fehlendem Fund allein.
+- **Nächste Prüfung:** Gesamtpaketvalidierung durch eigenständig identifizierte andere Originalartefakte oder explizite Zusatzbindung untersuchen; SDK/Schema/Snapshot getrennt halten.
+
+## C465
+
+- **Quelle:** [S87](SOURCES.md), E3; betrifft X06, I01, I02.
+- **Befund:** Originale XState-SDK-Deklarationen mit TypeScript 5.9.3: gültige Stringkonfiguration ohne Diagnose, falscher Kontext- und Eventpayloadtyp jeweils TS2322. Separater Original-Snapshotrestore über vorhandene Maschine akzeptiert geänderten numerischen Kontext. Sechs API- und drei SDK-Bedingungen erfüllen ihre Voraberwartungen.
+- **Bedeutung/Grenze:** Vorhandener SDK-Typprüfpfad, Graphkonsistenz und Snapshotwiederherstellung sind echte, aber unterschiedliche Nachweise. Keiner wird zum unabhängigen neutralen JSON-Artefaktschema umgedeutet. Keine ungeprüfte Gleichsetzung der NPM-Bytes mit dem früheren gleichversionierten Repositorysnapshot.
+- **Nächste Prüfung:** Andere Validatorrollen und neutrale Originalartefaktidentitäten bei den noch offenen X06-Kandidaten prüfen.
+
+## C466
+
+- **Quelle:** [S88](SOURCES.md), E3; betrifft X06.
+- **Befund:** Original @zag-js/core 1.46.0 mit tatsächlichen utils/dom-query 1.46.0 in getrennten development-/production-Prozessen geprüft. Doppelte Zustands-IDs und ungültige Compound-initial-Kinder werden nur in development abgewiesen; fehlendes Compound-initial in beiden Modi. createMachine akzeptiert auch ein Objekt ohne obligatorische Root-initialState-Funktion und gibt das Objekt zurück. Zehn Voraberwartungen erfüllt.
+- **Bedeutung/Grenze:** Begrenzte interne Aufbauprüfung, kein vollständiger Shape-/neutraler Originalartefaktvalidator. X06 bleibt U für die ausdrücklich breitere Zag-Toolkit-Spalte; Corebefund nicht ohne Nachweis auf alle Komponenten/Hilfsartefakte oder Arks andere ausgelieferte Coreversion übertragen. Kein Service/UI-Lauf.
+- **Nächste Prüfung:** Konkretes neutrales Originalartefakt-/Schema-/Validatorpaar im definierten Toolkitumfang oder eine abschließend belegte Modellgrenze dieses gesamten Gegenstands identifizieren.
+
+## C467
+
+- **Quelle:** [S88](SOURCES.md), E3; betrifft X06.
+- **Befund:** Separater originaler Ark-API-Metadatensatz liefert Typausdrücke, required-Metadaten, Callbacktexte und Stringdefaults. Tatsächlich veröffentlichtes React-SDK 5.39.3 mit TypeScript 5.9.3: open=true akzeptiert, open als String TS2322, einfache Array-collection TS2740. Drei Voraberwartungen erfüllt.
+- **Bedeutung/Grenze:** Vorhandener ausgewählter SDK-Typpfad; Metadaten sind nicht von selbst ein ausführbares neutrales Originalschema. X06 bleibt U für den breiteren Ark-Kandidatenumfang. Kein Frameworkrender oder Runtime-Propsvalidator ausgeführt; kein Ersatzschema aus Typstrings gebaut.
+- **Nächste Prüfung:** Eigenständigen Original-Contractgegenstand mit eigener Schemaidentität und tatsächlichem Aufruf/Regelumfang identifizieren; SDK-/Generator-/Metadatenrollen getrennt halten.
+
+## C468
+
+- **Quelle:** [S88](SOURCES.md), E2; betrifft X05, X06.
+- **Befund:** Exakte Registry-/Lock-/Installationsauflösung unterscheidet Ark-Stände: veröffentlichtes @ark-ui/react 5.39.3 führt Zag-Core/Combobox/Reactbindung 1.45.0 und RegistrygitHead 90eb2125a9ac6a8225b2e4053484da08cbb68a54. Früherer Repositorysnapshot c7af88a… nennt ebenfalls Ark 5.39.3, aber Zag-Paketangaben 1.46.0. Paketdateizahlen 35/3874 und Dateihashes inventarisiert.
+- **Bedeutung/Grenze:** Versionszeichenfolge allein beweist keine Byte-/Abhängigkeitsidentität. Direkte Core-1.46.0-Proben gelten nicht automatisch für Arks ausgelieferten 1.45.0-Pfad; historische Repositorybefunde bleiben als eigener Originalstand erhalten. Inventar ist kein Vollcodeaudit.
+- **Nächste Prüfung:** Jede weitere Ark-/Zag-Prüfung an der tatsächlich relevanten Originalrevision und aufgelösten Abhängigkeit binden.
+
+## C469
+
+- **Quelle:** [S89](SOURCES.md), E3; betrifft X06.
+- **Befund:** Original-Panda-Exporttyp DesignSystemSpec und unveränderter JSON-Reader am Commit 86f78a… mit neun identischen kontrollierten Eingaben gegengeprüft. Zusätzliche Literal-/Originaltypzuweisung erkennt categories-Zahl, tokens-Boolean, null-Wertzeile, fehlende conditions/themes und numerisches value; derselbe Originalreader akzeptiert diese Fälle. Alle Voraberwartungen erfüllt.
+- **Bedeutung/Grenze:** Reale Originalartefakt-Shapeinformation ist vorhanden; Leser prüft sie nicht vollständig. Zusätzliche statische Typanbindung ist kein originales neutrales Runtime-JSON-Schema/Validatorpaar. X06 bleibt U im definierten Panda-Umfang; keine negative Aussage über alle Pakete/Plugins aus diesem begrenzten Befund.
+- **Nächste Prüfung:** Konkrete Originalschema-/Validatoridentität mit tatsächlichem Aufruf und Regelumfang oder abschließend belegte Modellgrenze des gesamten Kandidatengegenstands identifizieren.
+
+## C470
+
+- **Quelle:** [S89](SOURCES.md), E3; betrifft X06, X07.
+- **Befund:** Originalreader und zusätzliche Originaltypzuweisung akzeptieren beide eine refs-Kante auf fehlenden Token, einen Kategorienbereich über paths hinaus und schemaVersion=-1. Originaltyp beschreibt diese als Stringliste, Zahlentupel beziehungsweise number; keine Originaldefinition verschärft.
+- **Bedeutung/Grenze:** Shape-/Typakzeptanz allein belegt keine referentielle Bereichs-/Ziel-/Versionskonsistenz. Kein Befund, dass der reguläre Generator solche Daten erzeugt; Generator und Compilerbuild wurden nicht ausgeführt. Fehlende semantische Regelabdeckung allein widerlegt nicht die Existenz anderer Originalschemas.
+- **Nächste Prüfung:** Originale referentielle Prüfpfade beziehungsweise erforderliche explizite Zusatzregeln getrennt identifizieren.
+
+## C471
+
+- **Quelle:** [S90](SOURCES.md), E1; betrifft X06.
+- **Befund:** WAI-ARIA 1.2 Recommendation §8 grenzt Rollen/Zustände/Eigenschaften ausdrücklich von einem vollständigen Format ab und verlangt Hostsprachenintegration als Attribute. §3.4 beschreibt Dokumentkonformitätsprüfer; Anhang A ist eine nichtnormative Datentypabbildung, kein eigenständiges Komponenten-A11y-Contractschema. Erneute gezielte Auswertung des bekannten Standards, keine neue Version oder Laufzeitprüfung.
+- **Bedeutung/Grenze:** X06 N für die Recommendation 1.2 als eigenen neutralen Artefaktschema-Beitrag. Positive Modell-/Hostsprachenabgrenzung statt Negativschluss aus Nichtfinden. Keine Aussage gegen ARIA-Konformitätsregeln, Hostschemas oder Accessibilitywerkzeuge; eigene neutrale Contract-/Schemaschicht wäre zusätzliche Beschreibung.
+- **Nächste Prüfung:** Konkrete zusätzliche A11y-Contract-/Hostprüfprofile separat identifizieren; deren ursprüngliche Identität nicht WAI-ARIA allein zuschreiben.
+
+## C472
+
+- **Quelle:** [S90](SOURCES.md), E1; betrifft X06.
+- **Befund:** Die acht bisherigen X06-U-Fragen sind in einem endlichen offiziellen Umfangsregister nach Originalpin, öffentlicher Werkzeugoberfläche, bereits geprüftem Beitrag und konkretem nächsten Originalzugriff abgegrenzt. Zukünftige Releases oder beliebige externe Plugins sind keine Abschlussvoraussetzung. Nach WAI-ARIA-Modellgrenze sieben X06-U-Fragen.
+- **Bedeutung/Grenze:** Kein Kriteriumswechsel und keine Suche über einen unendlichen hypothetischen Markt. Für einen begrenzten Originalschema-Beitrag wird kein vollständiger semantischer Allvalidator verlangt; SDK-/Transport-/Dokumentationsschemas bleiben eigene Gegenstände. Keine neue Produktentscheidung des Nutzers nötig, um die dokumentierten Originalzugriffe auszuführen.
+- **Nächste Prüfung:** Die benannten offiziellen Restzugriffe gezielt abschließen, ohne erneute illustrative Tests desselben bereits geklärten Teilpfads.
+
+## C473
+
+- **Quelle:** [S91](SOURCES.md), E2; betrifft X06.
+- **Befund:** Ark-Root-/Scripts-Manifeste am Commit c7af88a… führen document:types auf scripts/src/generate-type-docs.ts zurück. Vollständig gelesener Generator extrahiert mit TypeScript-Typechecker SDK-Propertytypen/JSDoc/Pflicht-/Defaultmetadaten und schreibt frameworkbezogene *.types.json in website/src/content/types. Pipeline ist Dokumentationsextraktion, kein neutraler Original-Contractvalidierungsaufruf.
+- **Bedeutung/Grenze:** Konkreter ursprünglicher API-Metadaten-Producer geklärt, kein Generator ausgeführt oder neue Runtimebedingung gezählt. Ark X06 bleibt U für den verbleibenden endlichen offiziellen Artefaktanspruch; tatsächliche NPM-SDK-Typprüfung C467 und Repo-/Releaseunterschied bleiben getrennt erhalten.
+- **Nächste Prüfung:** packages/mcp/package.json und dessen deklarierte öffentliche Tool-/Schemaentrypoints am selben Pin gezielt abgleichen: Dokumenttransport oder eigener Original-Contractgegenstand?
+
+## C474
+
+- **Quelle:** [S92](SOURCES.md), E3; betrifft X06.
+- **Befund:** Originale website/velite.config.ts am Ark-Pin c7af88a… definiert ein konkretes Collection-Schema für erzeugte types/**/*.json. Unveränderte Originaldeklarationen per AST isoliert, mit tatsächlichem velite 0.4.0 über types.schema.safeParse samt Originalmetadatentransformation ausgeführt. Sechs Voraberwartungen erfüllt: Original-API-JSON akzeptiert; fehlerhafte type/isRequired/defaultValue-Felder und fehlendes props abgewiesen.
+- **Bedeutung/Grenze:** X06 D für den separaten originalen API-Metadaten-JSON-Beitrag und sein Originalschema. Kein neuer SDK-Typcheck als Schema ausgegeben, keine reimplementierten Regeln. Ausgeführter Kontrollgegenstand React-Combobox; kein Vollwebsitebuild, keine Prüfung aller Frameworkdateien oder vollständigen UI-/Behavior-/A11y-Contractsemantik.
+- **Nächste Prüfung:** Weiterhin offene Ark-Integrationszellen separat nachweisen; Schemaexistenz/-Shape von Typausdrucksauflösung und konkreter Runtime-/Plattformsemantik trennen.
+
+## C475
+
+- **Quelle:** [S92](SOURCES.md), E2; betrifft X06.
+- **Befund:** Offizieller MCP-Registryeintrag am selben Repo-Pin enthält sieben gelesene Dokumentations-/Beispiel-/Propsabfragetools. inputSchema prüft Framework/Komponentenname/Beispiel-ID/Suchtext/Slug. Get-component-props liest Website-API parts; Fetch nutzt JSON und TypeScript-Zusage, nicht die Collection-Schema-Runtimeprüfung. Tatsächlicher serverseitiger Metadatentyp stammt aus der separaten Types-Collection.
+- **Bedeutung/Grenze:** MCP-Anfragevalidierung, ursprüngliche Metadaten-Artifactprüfung, SDK-Deklarationen und Live-APIantworten sind getrennte Gegenstände. Kein MCP-Server oder Live-APIaufruf ausgeführt; kein Validierungsbeweis allein aus Toolnamen/Zod-Abhängigkeit.
+- **Nächste Prüfung:** Jeden späteren Tool-/Schemaeinsatz an seinen tatsächlichen Eingabe- und Ausgabegegenstand und Originalpin binden.
+
+## C476
+
+- **Quelle:** [S92](SOURCES.md), E3; betrifft X06, I01.
+- **Befund:** Absichtlich erfundener Typausdruck TotallyInvalid<unknown> bleibt als String im ursprünglichen API-Metadatenschema akzeptiert; Originalkontrolle liefert component combobox, framework react und 16 Teile. Originalschema prüft Struktur/Metadaten, keine fachliche TypeScript-Typausdruckssemantik oder wirklichen open-/collection-Werte.
+- **Bedeutung/Grenze:** Begrenzte Originalschema-Regelabdeckung ist explizit; keine Forderung universeller Semantik als Voraussetzung des D-Beitrags. Repo-/NPM-Arkstände und SDK-1.45/1.46-Abhängigkeiten bleiben getrennt; Velite-Transitivauflösung nicht mit ursprünglichem Bunbuild gleichgesetzt.
+- **Nächste Prüfung:** Typtexte und externe SDK-/Eventreferenzen in konkreten Integrationsprofilen separat auswerten.
+
+## C477
+
+- **Quelle:** [S93](SOURCES.md), E3; betrifft X06.
+- **Befund:** Original-Rustexporter und offizielle JSON-Spec-Beschreibung bestätigen den eigenständigen versionierten JSON-Datenartefaktgegenstand zur vorhandenen DesignSystemSpec. Die bereits ausgeführte P42-Bindung an diesen unveränderten Originaltyp prüft dessen Shapeconstraints über zusätzliche Literal-/Compileranbindung; neun gespeicherte Ergebnisse wiederverwendet, keine neue Ausführung gezählt.
+- **Bedeutung/Grenze:** X06 A für das konkret definierte Original-JSON-Spec-Shapemodell: tatsächlicher zusätzlicher Prüfbindungsbedarf, kein nativer Original-Runtime-JSON-Validator und keine eigene Ersatzschemasemantik. Datenartefakttyp von beliebigen funktionalen SDK-Konfigurationen unterscheiden. Reader-/Typ-/Referenzgrenzen bleiben unverändert sichtbar.
+- **Nächste Prüfung:** Verbleibende Panda-Integrationsfragen getrennt nachweisen; eventuelle produktive Import-/Compilerbrücke und referentielle Regeln ausdrücklich als weitere Anbindung behandeln.
+
+## C478
+
+- **Quelle:** [S93](SOURCES.md), E2; betrifft X06, X07.
+- **Befund:** Gezielt gelesener Rustproducer erzeugt Kategorienbereiche aus dem paths-Vektor, schreibt Versionskonstante 1 und filtert token_refs über bekannten Pfadbestand. Referenzierte Design-Notiz beschreibt Löschung des alten Studio-Zod-Schemas zugunsten des gemeinsamen Readers; teils zukünftige Rezept-/Patternaussagen werden durch aktuellen Code bereits überholt.
+- **Bedeutung/Grenze:** Begrenzte Originalproducer-/Migrationsrollen, kein Rustbuild oder Generatortest. Plausible Producerkonstruktion ersetzt keine Prüfung externer importierter Daten; Reader-/Typ-Gegenfälle werden dadurch nicht widerlegt. Alte Notiz nicht als vollständige aktuelle normative Schemapublikation ausgeben.
+- **Nächste Prüfung:** Bei weiterer Untersuchung Producer-, Importprüfer- und Referenzsemantik jeweils am konkreten Originalstand getrennt halten.
+
+## C479
+
+- **Quelle:** [S94](SOURCES.md), E3; betrifft X06.
+- **Befund:** Vier exakte Originalgrammatiken aus Anchor-WD27.03.2026 und Overflow-WD07.10.2025 sowie originaler anchor-name-Typalias an den vorhandenen css-tree3.2.1-createLexer-Einstieg gebunden. Zwölf vorab gespeicherte Stylesheetbedingungen erfüllen Erwartungen. Normale native Ablehnung von normal/match-parent bleibt gespeichert, zusätzliche Originalgrammatikbindung akzeptiert beide.
+- **Bedeutung/Grenze:** X06 A für diesen konkreten vier-Property-Originalgrammatik-/Checkeradapter. Keine Modifikation des ursprünglichen Paketwörterbuchs, keine neu erfundene Standardsyntax, kein vollständiger Gesamt-Draftvalidator. Unbekannte Properties und nicht unterstützte Werte nicht als gültige vollständige Datei ausgeben.
+- **Nächste Prüfung:** Weitere Originalregeln nur unter eigenem genauem Profil-/Versionsnachweis ergänzen; verbleibende CSS-DOM-/Instanzsemantik separat prüfen.
+
+## C480
+
+- **Quelle:** [S94](SOURCES.md), E3; betrifft X06, X03.
+- **Befund:** Zusätzlicher Checker weist falschen Ankernamen, Overflowwert und angehängten Wert ab; gemischte unbekannte Property, top und max-height bleiben unsupported_scope, var-Matching unsupported_value. Syntaktischer Verweis auf --missing bleibt akzeptiert, da kein DOM-/Instanzkontext ausgeführt wird.
+- **Bedeutung/Grenze:** Syntaxbeitrag getrennt von Substitution, Referenzbedeutung und Layout. Zuvor beobachtete calc-/var-/Versionslücken nicht überschrieben und nicht als gelöst ausgegeben. Kein Browser-/Geometrie-/AT-Lauf in diesem Paket.
+- **Nächste Prüfung:** CSS X03 und weitere offene Domänenfragen mit tatsächlichem Modell-/Hostkontext nachweisen.
+
+## C481
+
+- **Kandidat / Anforderung:** Zag; X06; **N**.
+- **Quelle:** [S95](SOURCES.md#s95), E2.
+- **Befund:** Originalanleitung, Introduction, öffentliche Core-/Combobox-/ScrollArea-Exports, Machine-/MachineSchema-Typen und Factory am cafda74-Pin abschließend gelesen. Originalmodell verlangt initialState-Funktion und weitere Service-/Hostfunktionen; Autorenpfad erzeugt und konsumiert ein SDK-Maschinenprogramm. Introduction grenzt SCXML ausdrücklich ab.
+- **Bedeutung/Grenze:** N im endlichen benannten offiziellen Modellumfang für den eigenen unabhängigen neutralen Contractdatenschema-Beitrag. SDK-Typen, echte interne Prüfungen und gespeicherte Development-/Production-Gegenfälle bleiben positive Beiträge. Kein globaler Ausschluss späterer anderer Werkzeuge.
+- **Nächste Prüfung:** Neue Original-Datendateisprache nur als neuen Gegenstand prüfen; vorhandene SDK-/Host-/Referenzfragen unabhängig bearbeiten.
+
+## C482
+
+- **Kandidat / Anforderung:** APG; X06; **N**.
+- **Quelle:** [S95](SOURCES.md#s95), E2.
+- **Befund:** Original-Introduction/Combobox-Pattern, README/package.json, ariaTest-Runner und Combobox-Autocomplete-both-Test am 0f765e-Pin gelesen. Guide grenzt eigenen Konformitätsanspruch ab; tatsächlicher Runner erhält HTML-Beispielpfad, data-test-id und ausführbare Testfunktion, öffnet die Seite und prüft konkrete Demonstration.
+- **Bedeutung/Grenze:** N für den eigenen neutralen Pattern-Contractschema-Beitrag dieses Guide-/Beispieltestpfads. Positive Bestimmung des echten Prüfgegenstands zusätzlich zur Guideabgrenzung; nicht aus informativer Natur allein gefolgert. HTML-/Codeprüfung, Beispielregression und fachliche Empfehlungen bleiben erhalten. Kein Lauf/AT-Test behauptet.
+- **Nächste Prüfung:** Fachliche Patternauswahl und Host-/Praxisprüfung separat nachweisen; eigene Contractableitung wäre Zusatzprofil.
+
+## C483
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X06; **U**.
+- **Quelle:** [S95](SOURCES.md#s95), E3.
+- **Befund:** Mitgelieferte Spec/Config und öffentliche Linter-/Outputdefinitionen von @google/design.md0.4.0 abschließend abgeglichen. Originales ConfigSchema mit sechs vorab gesetzten Gegenfällen ausgeführt: Originalconfig angenommen, drei Shapeverletzungen und Dokumentdaten abgewiesen, erfundener Typname als String angenommen.
+- **Bedeutung/Grenze:** Echtes Zod-Schema für Redaktions-/Spezifikationskonfiguration belegt, kein Inhaltsschema für eingereichte DESIGN.md-Dateien. Keine Forderung eines vollständigen semantischen Allzweckvalidators. X06 U bleibt wegen fehlender eindeutiger Originalbindung zwischen Dokumentdatenmodell und Schemaentscheidung; vorhandene Prosa und selektive Lintregeln bleiben positive Beiträge.
+- **Nächste Prüfung:** Externe Originalklärung des benannten Dokument-Schemaeinstiegs und seiner Ergebnisbedeutung, Roottypen und Optionalität. Eigene ausführbare Prosaabbildung nur als zusätzliches Profil; keine Autorenanfrage versandt.
+
+## C484
+
+- **Kandidat / Anforderung:** OpenUI; X06; **U**.
+- **Quelle:** [S95](SOURCES.md#s95), E2.
+- **Befund:** README/draft-01, lib/schema.ts, tatsächliches interfaces/Spec.ts und Tabellenrenderer am 09d39b-Pin abgeglichen. Rootlicense/Komponentengroup, String-Propform, enum/required und Defaulttypen weichen konkret ab; gelesene Publikationen liefern keine Vorrangregel. Fehlzugriff lib/Spec.ts mit 404 erhalten, danach tatsächlicher Pfad erfolgreich.
+- **Bedeutung/Grenze:** X06 U mit präziser externer Autorenklärung der kanonischen Originaldefinition; keine eigene Reparatur oder Wahl des Nutzers über technische Wahrheit. Renderer beschreibt Felder statt Contractdateiprüfung. Kein globaler Negativbeweis für alle Werkzeuge.
+- **Nächste Prüfung:** Offizielle Vorrang-/Synchronisationsregel und gebundenen Originalvalidator für die konkret widersprüchlichen Formen benötigen; keine Nachricht an Autoren versandt.
+
+## C485
+
+- **Quelle:** [S96](SOURCES.md#s96), E3; betrifft X03.
+- **Befund:** Zusätzlichen statischen CSS-Ankerresolver am bytegleichen CEM/SCXML/CSS/HTML-Basispaket ausgeführt. Reale CSS-AST und Originalwertgrammatik, CEM-Komponenten-/Partpointer, Sourcehash und A/B-Hostzugehörigkeit verbunden. 14 unterschiedliche Bedingungen, alle Erwartungen erfüllt; passende Umbenennung bleibt gültig, instanzfremde/falsche/fehlende deklarierte Ziele werden abgewiesen.
+- **Bedeutung/Grenze:** CSS Layout X03 A für diese zusätzliche deklarierte Originalmodell-/Hostbindung. bound ist kein nativer Anchorlookup-/Kaskaden-/Layout-/Accessibility-Nachweis. Originalformate unverändert; zusätzliche Zielarten-/Instanzregeln offen ausgewiesen.
+- **Nächste Prüfung:** Nicht unterstützte Scopes, Ankerfunktionen, Variablen und native Box-/Kaskadensemantik separat prüfen; CSS-fremde Domänenfelder nicht automatisch umbewerten.
+
+## C486
+
+- **Quelle:** [S96](SOURCES.md#s96), E2/E3; betrifft X03, A01.
+- **Befund:** Original-WD §§2.1–2.4 erlaubt gleichnamige Anker und bestimmt native Auswahl über Scope/Zulässigkeit/Baumreihenfolge; §7 trennt Accessibilitybeziehungen. Zusätzliches enges Profil meldet Mehrdeutigkeit als eigene Bindungsverletzung und Scope/Nesting/Variablen/implizite Anker/spätere position-Resets/explizite andere anchor()-Namen als unsupported.
+- **Bedeutung/Grenze:** Gültige CSS-Sprache ist nicht automatisch durch diesen Zusatzresolver unterstützt. Eindeutigkeitsforderung ist zusätzliche Profilregel, keine erfundene CSS-Normpflicht; sichtbare oder zugängliche Beziehung wird daraus nicht abgeleitet. Erstlauf13 und Folgelauf14 erhalten, nur14 unterschiedliche Bedingungen gezählt.
+- **Nächste Prüfung:** Für echte native/AT-Abnahme reale Zielumgebungen und Zustands-/Boxzulässigkeit nachweisen; bestehende Begrenzungen nicht als Sprachfehler oder erfüllte Konformität ausgeben.
+
+## C487
+
+- **Quelle:** [S97](SOURCES.md#s97), E3; betrifft V06.
+- **Befund:** Zwölf vorab gespeicherte Gegenfälle an unveränderten isolierten Originalanweisungen des OpenPencil-Dom-CSS-Overflowfeldpfads ausgeführt. hidden und clip werden zu clipsContent:true und danach hidden; auto/scroll und reine Achsenwerte erhalten in diesem Fragment keine Scrollangabe. Alle Erwartungen erfüllt.
+- **Bedeutung/Grenze:** OpenPencil V06 bleibt U: konkreter Verlust der ursprünglichen Scrollpolitik im benannten Originalfeldpfad, kein positiver vollständiger Scrollvertrag. Originalfragmente, eigene Aufrufrahmen und nicht ausgeführter Gesamtimport/-export ausdrücklich getrennt. Kein globaler Negativbefund für alle OpenPencil-Beiträge.
+- **Nächste Prüfung:** Konkret benannte Originalrepräsentation oder ausdrücklich zusätzliche Bindung für Achse/Scrollpolitik/Clipping mit tatsächlichem vollständigem Import-/Host-/Exportpfad nachweisen.
+
+## C488
+
+- **Quelle:** [S97](SOURCES.md#s97), E2/E3; betrifft V06.
+- **Befund:** Original-mergedStyle mit computedStyle nach inlineStyle tatsächlich ausgeführt: computed hidden beziehungsweise auto entscheidet die beiden Kontrollfälle. Ein isolierter Setteraufruf bei zuvor true und visible löscht das Feld nicht; gelesener normaler createElementNode-Pfad initialisiert es hingegen mit false.
+- **Bedeutung/Grenze:** Kein behaupteter fehlerhafter In-place-Updatepfad und keine Ausführung kompletter Style-/Layoutnormalisierung. Eigenen AST-Harnischfehler vor jeder Fallausführung dokumentiert und korrigiert; keine Originalquelle oder Erwartung geändert.
+- **Nächste Prüfung:** Vollständige Originalnormalisierung und tatsächlich verwendete Styleeingaben getrennt prüfen, bevor Rohobjektfälle auf jeden Browserimport übertragen werden.
+
+## C489
+
+- **Quelle:** [S97](SOURCES.md#s97), E2/E3; betrifft V06.
+- **Befund:** Originale CSS-Overflow-Wertdefinitionen unterscheiden hidden mit programmgesteuertem Scrollen von clip ohne Scrollen. Drei eigene native CSS-Browserfixtures bestätigen bei 60px Fenster/300px Inhalt: scrollTop80 bleibt bei clip0, bei hidden80; der aus der Originalfeldprobe projizierte clip-Wert hidden liefert ebenfalls80.
+- **Bedeutung/Grenze:** Konkrete native semantische Folge der Feldzusammenführung belegt, kein gerenderter OpenPencil-Build oder vollständiger Roundtrip. Keine physische Eingabe, Assistenztechnik, allgemeine Achsen-/Scrollbar-/Formatting-Context-Konformität daraus ableiten.
+- **Nächste Prüfung:** Tatsächliche Gesamtpipeline und weitere Original-Scrollrepräsentationen prüfen; separate native/AT-Zielnachweise weiterhin offen halten.
+
+## C490
+
+- **Quelle:** [S98](SOURCES.md#s98), E3; betrifft A01.
+- **Befund:** Zwölf vorab gespeicherte Bedingungen am isolierten originalen Radio-/Render-/Statepfad mit Vue3.5.41 und tatsächlicher SSR-Ausgabe ausgeführt. Explizite Namens-/Labelreferenzattribute bleiben erhalten; ursprüngliche role/checked-Overrides gewinnen, öffentliche IDs und getrennte Islandkontexte bleiben korrekt. Unbenanntes Control und nicht aufgelöstes labelledby-Ziel werden ebenfalls ausgegeben.
+- **Bedeutung/Grenze:** OpenPencil A01 bleibt U: konkreter Attribut-/Instanztransport ausgeführt, nicht der vollständige Ursprung der semantischen Modellbindungen oder berechnete zugängliche Name. Roleclassifier, Scenegraphprojektion, Editor und Reka nicht ausgeführt; keine Fälle künstlich auf volle Konformität erweitert.
+- **Nächste Prüfung:** Originalprojektion/Roleklassifizierung bis zu Namen und externen Beziehungszielen verfolgen und tatsächliche Host-/Zielauflösung prüfen; identische reine Renderattribute nicht erneut zählen.
+
+## C491
+
+- **Quelle:** [S98](SOURCES.md#s98), E3; betrifft A03.
+- **Befund:** Direkter originaler Radio-A-Callback ändert dessen eigenen State; erneute tatsächliche Vue-SSR gibt aria-checked=true aus, während B unverändert false bleibt. Fehlender State wirft den originalen Fehler. Insgesamt zwölf Erwartungen erfüllt.
+- **Bedeutung/Grenze:** A03 bleibt U: kein lebender DOM-/Accessibility-Updatepfad oder ursprünglicher Ergebnis-/Meldungsvertrag ausgeführt. Zustand, Namensbindung und Meldungsinhalt getrennt. Das unveränderte Kriterium wird nicht um eine allgemeine Live-Region-/AT-Pflicht für jeden Teilbeitrag verschärft.
+- **Nächste Prüfung:** Originalen lebenden Host-/Accessibility-Updatepfad beziehungsweise konkrete ursprüngliche Meldungsbindung gezielt prüfen; SSR-Neuausgabe und direkter Handleraufruf nicht als physische oder AT-Interaktion ausgeben.
+
+## C492
+
+- **Quelle:** [S99](SOURCES.md#s99), vorhandene E3-Ergebnisse kriteriumsbezogen erneut ausgewertet; betrifft I03.
+- **Befund:** CSS-P46-Ergebnisse gesondert gegen I03 ausgewertet: tatsächlicher CSS-Anker-/Selektorbeitrag ist über den zusätzlichen Binder an benannte ursprüngliche CEM-input/popup-Teile derselben Komponentendefinition und A/B-Hostinstanz gebunden. Kontroll-/Umbenennungsfälle gültig, falscher Teil und fremde Instanz abgewiesen.
+- **Bedeutung/Grenze:** CSS Layout I03 A für diesen konkret ausgeführten zusätzlichen Teilbinder. Anatomie stammt aus dem getrennten CEM-Modell, nicht aus einer behaupteten nativen CSS-Teilesprache. Separater kriteriumsbezogener Beleg, keine automatische Übertragung von X03 und keine neue Bedingung gezählt.
+- **Nächste Prüfung:** Andere domänenfremde Felder brauchen ihren eigenen Nachweis; native CSS-Kaskade/Boxzulässigkeit und allgemeine Komponenten bleiben separat.
+
+## C493
+
+- **Quelle:** [S99](SOURCES.md#s99), vorhandene E3-Ergebnisse kriteriumsbezogen erneut ausgewertet; betrifft I03.
+- **Befund:** ARIA-P36-Ergebnisse gesondert gegen I03 ausgewertet: vier benannte ursprüngliche CEM-Teile werden mit typisierten Pointern/Definitionsmitgliedschaft den Hostteilen beider ARIA-Instanzen zugeordnet. Fremder gleichnamiger Part, falsche Zielart/falscher Partname und fremdes Hostziel werden tatsächlich abgewiesen.
+- **Bedeutung/Grenze:** WAI-ARIA I03 A für den zusätzlichen CEM-/ARIA-Host-Teilbinder. ARIA bleibt für Rollen/Hostbeziehungen, CEM für die Anatomie zuständig; der Adapter leistet die Zuordnung. Kein nativer ARIA-Anatomiekatalog, kein Live-/AT-Nachweis und keine neuen Versuchsfälle.
+- **Nächste Prüfung:** WAI-ARIA V06/X08 und sonstige CSS-/ARIA-Felder separat weiterprüfen; keine automatische Fremdmodellzurechnung.
+
+## C494
+
+- **Quelle:** [S100](SOURCES.md#s100), E3; betrifft A01.
+- **Befund:** Öffentliche Original-Szene/Komponenteninstanziierung, Projektion, Behaviour-/Roleklassifizierung und ursprüngliche Vue-Statefactory bis Reka SwitchRoot/Host ausgeführt. TEXT-Inhalt erzeugt den tatsächlichen benannten Switch; bloßer Knotenname tut dies nicht. Passende Original-Namensregel und Browser-Accessibility-Snapshots bestätigen die benannten Instanzen und zeigen die negativen Namensfälle.
+- **Bedeutung/Grenze:** OpenPencil A01 R ausschließlich für diesen gebundenen Switch-Webpreview-/Namensinhaltbeitrag. Vorhandene ReKa/HTML/ARIA-Referenzsemantik, keine neue neutrale Anatomie-/Accessibility-Dateisprache und keine Behauptung beliebiger externer Widgetbeziehungen. Graphtext/Name bleibt gekoppelt; X01/X08 nicht dadurch erledigt.
+- **Nächste Prüfung:** Andere Kinds, externe Label-/Fehler-/Controlziele, unabhängige Namensownership und native/AT-Zielabnahmen getrennt behandeln.
+
+## C495
+
+- **Quelle:** [S100](SOURCES.md#s100), E3; betrifft A03.
+- **Befund:** Sechs gespeicherte Browser-Liveschritte verbinden ursprünglichen Switch-Controlstate über Vue/Reka mit genau dessen aria-checked: A/B getrennt ein/aus, Namen stabil, disabled-A blockiert nativen programmgesteuerten Click. WAI-ARIA1.2 definiert diese on/off-Werte; Modell-/DOM- und Snapshotbeobachtungen erhalten.
+- **Bedeutung/Grenze:** OpenPencil A03 R für diese definierte zugängliche Switch-Zustandsrückmeldung. Kein allgemeiner Suchergebnis-/Fehler-/Ladeansagevertrag, keine Live-Region-Pflicht für jedes Widget und keine behauptete Screenreader-, physische Tastatur-, Editor- oder Graphpersistenzabnahme.
+- **Nächste Prüfung:** Produktspezifische Meldungen und weitergehende Plattform-/AT-Abnahmen separat konkretisieren; keine Ausweitung des begrenzten Switchbeitrags auf alle Komponenten.
+
+## C496
+
+- **Quelle:** [S100](SOURCES.md#s100), E3; betrifft A01.
+- **Befund:** Erste drei axe-Bedingungen mit aria-toggle-field-name auf nativen Buttons ergeben keine anwendbaren Prüfknoten; zwei Diagnoseerwartungen widerlegt, alle Ausgangsergebnisse erhalten. Originalmatcher überspringt native Benennungsmethoden. Danach passende button-name-Regel: drei Radio- und vier Switchbedingungen mit tatsächlichen Pass-/Violationknoten erfüllen sämtliche gezielten Erwartungen.
+- **Bedeutung/Grenze:** Leeres Originalcheckergebnis ist kein positiver Namensnachweis. Unterschiedliche Regelsubjekte/Anwendbarkeit und vollständige Conformance getrennt; ursprüngliche Fehlwahl nicht verborgen und nicht als Produktfehler erklärt.
+- **Nächste Prüfung:** Vor Namens-/Semantikabnahme immer tatsächliche Regelanwendbarkeit und Zielknoten prüfen; nicht aus null Violations auf universelle Konformität schließen.
+
+## C497
+
+- **Quelle:** [S100](SOURCES.md#s100), E2/E3; betrifft A01, A03.
+- **Befund:** Veröffentlichte dom-css/scene-graph0.16.0 ohne RegistrygitHead separat gepinnt. Source-Map-Projektion hat gegenüber Repo-ab2875 andere Importpfade, sämtliche Nicht-Import-Deklarationen dieser Datei textgleich. Vierzehn unveränderte Repo-Vue-Deklarationen an tatsächliche Originalpakete gebunden; eigener API-/Buildharnisch repariert und Protokolle erhalten.
+- **Bedeutung/Grenze:** Konkretes gebundenes Laufzeitprofil, keine globale Repo-/Releaseidentität. Unbenutzter Node-Dateiexport nach ausdrücklicher Buildkonfiguration vollständig aus Browserbundle entfernt, keine Bibliotheksattrappe. Zwölf Graphbedingungen plus drei ursprüngliche und sieben passende Namensbedingungen plus sechs Liveschritte zählen28 unterschiedliche Bedingungen, Wiederholungen nicht zusätzlich.
+- **Nächste Prüfung:** Andere Originalmodule und Gesamtbuilds separat binden; festgestellte Scope-/Buildgrenzen und historische Fehlversuche sichtbar erhalten.
+
+## C498
+
+- **Quelle:** [S101](SOURCES.md#s101), E3; betrifft V06.
+- **Befund:** Vollständige ursprüngliche Graph→DesignDocument→HTML-Projektion und nativer Host mit begrenztem Frame/300px-Kind ausgeführt. clipsContent:true erzeugt feste hidden-Politik beider Achsen; Scrollpositionen80/80 funktionieren. false erzeugt visible/0/0. maxHeight60 begrenzt einen ursprünglich300px-hohen Frame tatsächlich auf60px bei derselben programmierten Scrollpolitik.
+- **Bedeutung/Grenze:** OpenPencil V06 A für die konkret ausgeführte feste Zielpolitik des bestehenden Webadapters. Originales Clippingboolean, tatsächliche Übersetzung und CSS-Plattformsemantik getrennt. Kein frei wählbarer auto-/Scrollbar-/Wheelmodus, kein neutraler universeller Scrollvertrag und keine Behauptung verlustfreien Fremd-CSS-Imports.
+- **Nächste Prüfung:** Bei künftigem neutralem Visualprofil diese konkrete Policybindung explizit erhalten; andere Scrollpolitiken/Zielplattformen und UX-Eingabeabbildung brauchen eigene Nachweise.
+
+## C499
+
+- **Quelle:** [S101](SOURCES.md#s101), E3; betrifft V04.
+- **Befund:** Drei vollständige Original-Koordinatenexporte im Browser gemessen: Input20/Popup-y28 ergibt Abstand8; Inputwachstum auf40 bei unverändertem Popup-y28 ergibt Abstand-12 und verletzt die gewünschte8px-Ankerrelation. Bewegung des gemeinsamen Parents50/50 bewegt beide gemeinsam und erhält Abstand8.
+- **Bedeutung/Grenze:** OpenPencil V04 bleibt U. Definierter Parentkoordinatenbezug ist positiv belegt, aber keine Relation zur Unterkante des anderen Inputs. Gewünschte Beziehung im Gegenfall ausdrücklich false; erfüllte Beobachtungserwartungen nicht zu erfüllten Produktanforderungen umgedeutet. Kein pauschaler Editor-/Constraint-Fehlerbefund.
+- **Nächste Prüfung:** Benannten Originalziel-/Abstandspfad oder ausdrücklich zusätzlichen Ankerbinder mit Größen-/Änderungssemantik nachweisen; statische Koordinaten allein nicht erneut als Ankerprobe zählen.
+
+## C500
+
+- **Quelle:** [S101](SOURCES.md#s101), E3; betrifft V04, V06.
+- **Befund:** Sechs vollständige Originalexporte plus sechs native Messbedingungen mit allen Beobachtungserwartungen erfüllt; ursprüngliche Größen-/Clippingfelder unverändert genutzt, keine neue Layoutbibliothek oder Policygrammatik eingeführt. Dynamische Input-Ankerakzeptanz bleibt im Wachstumsfall unerfüllt.
+- **Bedeutung/Grenze:** Neuer positiver Beleg der eigenen festen Overflow-Outputpolitik hebt den früheren clip/auto/scroll-Importverlust nicht auf. Vollständiger öffentlicher Export, isolierte frühere Fragmente, fester Webhost und nicht ausgeführter Editor-/Resize-/AT-Pfad bleiben getrennt. Kriterien/Methodik unverändert.
+- **Nächste Prüfung:** UXSpec/uSpec und alternative Originalmodelle nur mit ihren eigenen tatsächlichen Einstiegen prüfen; kein pauschaler Fähigkeitsübertrag aus diesem Originaladapter.
+
+## C501
+
+- **Kandidat / Anforderung:** XState; X01; **A**.
+- **Quellen:** [S102](SOURCES.md#s102), ergänzend S28/S29/S81; E3.
+- **Befund:** Eigenständige XState-SDK-Konfiguration mit drei bytegleichen ursprünglichen Fachartefakten und explizitem zusätzlichem Quellen-/Instanzbinder; acht Bedingungen erfüllt. Zwei Actors bleiben unabhängig, echte CSS-Änderung erfordert keinen Behaviorumbau, drei falsche Profile werden erkannt.
+- **Bedeutung/Grenze:** A für den begrenzten SDK-Webbeitrag. Kein neutrales XState-Schema und keine vollständige Autocomplete-/Emissions-/Host-/AT-Integration; X06 N/C464 bleibt bestehen.
+- **Weiterer Bedarf:** Andere Kandidatenpflichten und gesonderte Emissions-/Typbindungen prüfen. [Gespeicherter Bericht](experiments/2026-10-25/xstate-independence/REPORT.md).
+
+## C502
+
+- **Kandidat / Anforderung:** uSpec; X08; **U**.
+- **Quellen:** [S103](SOURCES.md#s103), S52; E3.
+- **Befund:** Vollständiger Originalbuilder und Cache-/Zielvalidator mit zehn Gegenfällen ausgeführt: Plan-/Rendererhash und konkrete Identitätskonflikte werden zurückgewiesen; abweichender Spezialistenhash und widersprechende Höhenwerte im Pfad ohne Domain-Evidence akzeptiert. Separate Ausgabe, Quellcaches bei normalizeCaches:false unverändert.
+- **Bedeutung/Grenze:** U für die nach wie vor fehlende unabhängige Vier-Domänen-/Ownershipbindung. Tatsächliche Originalmechanismen und begrenzte akzeptierte Gegenfälle anerkannt; kein globales Versagen aus minimalen Fixtures ohne Obligation-Evidence ableiten.
+- **Weiterer Bedarf:** Nur konkrete zusätzliche Originalevidence-/Ownershipbindung oder benannten anderen Pfad bearbeiten; keine Wiederholung derselben Root-/Hashproben. [Bericht](experiments/2026-10-25/uspec-ownership/REPORT.md).
+
+## C503
+
+- **Kandidat / Anforderung:** uSpec; X01; **U**.
+- **Quellen:** [S103](SOURCES.md#s103), S52; E3.
+- **Befund:** Originalbuilder verarbeitet getrennte API-/Dictionary-/Structure-/Color-/Voice-Caches und erzeugt daraus Canonical-JSON. Die tatsächliche Trennung und gemeinsame Pflichtausgabe sind ausgeführt; der Schnitt ist nicht der gewünschte Vier-Domänen-Schnitt, externer Behaviorvertrag weiterhin ungebunden.
+- **Bedeutung/Grenze:** U für die nach wie vor fehlende unabhängige Vier-Domänen-/Ownershipbindung. Tatsächliche Originalmechanismen und begrenzte akzeptierte Gegenfälle anerkannt; kein globales Versagen aus minimalen Fixtures ohne Obligation-Evidence ableiten.
+- **Weiterer Bedarf:** Nur konkrete zusätzliche Originalevidence-/Ownershipbindung oder benannten anderen Pfad bearbeiten; keine Wiederholung derselben Root-/Hashproben. [Bericht](experiments/2026-10-25/uspec-ownership/REPORT.md).
+
+## C504
+
+- **Kandidat / Anforderung:** WAI-ARIA; X08; **A**.
+- **Quellen:** [S104](SOURCES.md#s104), S54/S81/S85; E3.
+- **Befund:** Genau eine zusätzliche Namens-Ownershipkette von Accessibility-HTML/list-a/aria-label zur getrennten Hostableitung; Vorher-/Nachherhashes und Revisionen dokumentiert. Zehn Konflikt-/Bindungsfälle und zwei native listbox-Namenspaare erfüllen Erwartungen. Andere drei Fachartefakte bytegleich.
+- **Bedeutung/Grenze:** Eigene zusätzliche Ownershipregel; WAI-ARIA1.2 liefert die Rollen-/Namenssemantik. Keine native ARIA-Governance, Live-DOM-/AT-/persistente Atomaritäts-/APG-Zusage. Konkurrierendes aria-labelledby ist ein eigener nicht abgedeckter Bindingpfad.
+- **Weiterer Bedarf:** Andere konkrete Informationen separat binden. [Bericht](experiments/2026-10-25/aria-ownership/REPORT.md).
+
+## C505
+
+- **Kandidat / Anforderung:** OpenPencil; X03; **A**.
+- **Quellen:** [S105](SOURCES.md#s105), S53/S100; E3.
+- **Befund:** Ursprünglicher Switch-Booleanwert bindet über expliziten zusätzlichen Pointer-/Owner-/ID-/Hashbinder auf ein separat beschriebenes CEM-checked-Feld. Elf Referenzbedingungen und zwei CEM-Schemafälle erfüllt; ursprüngliche Property-ID bleibt bei Rename erhalten, Instanzwerte A/B getrennt.
+- **Bedeutung/Grenze:** Zusatzbinder statt nativer CEM-Unterstützung. Primitive Boolean- und Ausschnittsrevisionbindung; kein Universalresolver, keine Library-/Gesamtfigversion oder automatische X01-/X08-/A11y-Abdeckung. Originalresolver nimmt bei gleichnamigen Properties ersten Treffer; Zusatzbinder weist dies ab.
+- **Weiterer Bedarf:** Andere konkrete Informationsarten/Referenzmechanismen separat prüfen. [Bericht](experiments/2026-10-25/op-external-reference/REPORT.md).
+
+## C506
+
+- **Kandidat / Anforderung:** Panda CSS; X08; **A**.
+- **Quellen:** [S106](SOURCES.md#s106), S51/S93; E3.
+- **Befund:** Ursprüngliches Merge/Tracking/Spec-Source-Annotation liefert die konkrete führende Wertquelle, einschließlich Beschreibungserweiterung und DEFAULT-Normalisierung. Neun Bedingungen erfüllt; eigener Zusatzbinder bindet Valuepointer/Quellhash an CSS-Ableitung und dokumentiert160→192px.
+- **Bedeutung/Grenze:** A für genau diese Provenienz-/Ableitungskette; eigene Spec-Fixture und Zusatzjournal, keine Rust-/Gesamtcompilerprüfung oder allgemeine Vier-Domänen-Paketgovernance. X01 unverändert offen.
+- **Weiterer Bedarf:** Andere tatsächlich benannte Informationsarten separat. [Bericht](experiments/2026-10-25/panda-source-ownership/REPORT.md).
+
+## C507
+
+- **Kandidat / Anforderung:** AgentsORG; X08; **A**.
+- **Quellen:** [S107](SOURCES.md#s107), S48; E3.
+- **Befund:** Vollständiger Original-CSS-Exporter und Originaldiff mit acht originalschemafähigen eigenen Fällen ausgeführt. .design-Token führt160→192px, tatsächliche Regeneration überschreibt manipuliertes generiertes CSS ohne Quellrückschreibung. Pointer-/Quell-/Exporthashes im Zusatzjournal.
+- **Bedeutung/Grenze:** A nur für diese Tokenquelle/CSS-Kette. Konkreter shadcn-Gegenfall trotz map_from_tokens bleibt widersprüchlicher Literalexport; kein allgemeines Governance-, Freigabe-, SemVer-, Figma-/UI-/AT-Versprechen. X01 unverändert offen.
+- **Weiterer Bedarf:** Andere konkrete Original-/Bindungsbeiträge separat prüfen. [Bericht](experiments/2026-10-25/agentsorg-export-ownership/REPORT.md).
+
+## C508
+
+- **Kandidat / Anforderung:** AgentsORG; X01; **A**.
+- **Quellen:** [S108](SOURCES.md#s108), S107/S81; E3.
+- **Befund:** Schemafähiger eigenständiger Visualvertrag mit tatsächlichen Original-CSS-Exporten an drei bytegleiche Fachartefakte und vorhandene A/B-Partziele gebunden. Zwei tatsächliche ursprüngliche SCXML-Instanzen open; native Popuphöhen192→160 bei unveränderten anderen Quellen. Vier neue Beobachtungserwartungen erfüllt.
+- **Bedeutung/Grenze:** Zusätzliche begrenzte Webbindung, statische Hosts; kein genereller Eventadapter, keine portable Produktsprache oder Gesamt-Autocomplete-/AT-Konformität. Frühere Schema-/Exportfälle nicht doppelt gezählt, shadcn-Gegenbefund unverändert.
+- **Weiterer Bedarf:** Übrige Kandidaten separat. [Bericht](experiments/2026-10-25/agentsorg-independence/REPORT.md).
+
+## C509
+
+- **Kandidat / Anforderung:** UXSpec; X03; **A**.
+- **Quellen:** [S109](SOURCES.md#s109), S49; E3.
+- **Befund:** Separater DTCG-duration-Originalwert via expliziter Zusatzprojektion an ursprünglichen Import/Compiler und extractMs gebunden:1s/1000ms→1000. Zehn Referenz-/zwei Originalschemabedingungen erfüllen Beobachtungserwartungen; umhüllter unveränderter Originalwert bleibt akzeptiert mit falschem Zeitwert1 statt1000.
+- **Bedeutung/Grenze:** Gewählte Forschungsbeziehung Visualzeit→UX-Timereingang, keine beschlossene Produktkopplung/native DTCG-Konformität. Projektionsbibliothek mit explizitem generiertem, nicht ausgeführtem Maschinenpflichtgerüst; kein tatsächlicher Hook/Timer/Interpreter/UI/AT oder X01-Nachweis.
+- **Weiterer Bedarf:** Übrige konkrete Referenzarten separat. [Bericht](experiments/2026-10-25/uxspec-duration-reference/REPORT.md).
+
+## C510
+
+- **Kandidat / Anforderung:** Zag; X03; **A**.
+- **Quellen:** [S110](SOURCES.md#s110), S81; E3.
+- **Befund:** Tatsächlicher ursprünglicher Combobox1.45.0-React-useMachine/Connect-Pfad mit zwei Instanzen und benannten Root-ID-Änderungen an separate CEM-Partknoten und HTML/ARIA-Zielrollen/-beziehungen zusätzlich gebunden. Vier Zagfälle erfüllen Erwartungen; ursprünglicher Renderpfad akzeptiert kollidierende IDs, Zusatzbinder weist ab.
+- **Bedeutung/Grenze:** X03 A nur für den jeweiligen tatsächlich ausgeführten ursprünglichen SSR-Beitrag und zusätzliche CEM-Part-/HTML-Rollen-/Relationsbindung. Keine native CEM-/Universalresolverfähigkeit; ursprüngliche Akzeptanz der Gegenfälle erhalten. Kein DOMmount, Interaktions-/AT-/X01-/X08-Nachweis oder globale Repo-/Distributionsidentität.
+- **Weiterer Bedarf:** Verbleibende X01-/Ownershipfragen und andere tatsächliche Zielarten separat, keine erneute identische ID-/SSR-Probe. [Bericht](experiments/2026-10-25/zag-ark-references/REPORT.md).
+
+## C511
+
+- **Kandidat / Anforderung:** Ark UI; X03; **A**.
+- **Quellen:** [S110](SOURCES.md#s110), S81; E3.
+- **Befund:** Tatsächlicher ursprünglicher Ark5.39.3-Root-/Context-/Komponentenpfad mit zwei Instanzen an separate CEM-/HTML/ARIA-Ziele gebunden. Vier Arkfälle erfüllen Erwartungen; Root-ids konsistent, einzelne Input.id-/Content.id-Overrides brechen ursprüngliche Zielbeziehungen im SSR, erst Zusatzbinder weist ab.
+- **Bedeutung/Grenze:** X03 A nur für den jeweiligen tatsächlich ausgeführten ursprünglichen SSR-Beitrag und zusätzliche CEM-Part-/HTML-Rollen-/Relationsbindung. Keine native CEM-/Universalresolverfähigkeit; ursprüngliche Akzeptanz der Gegenfälle erhalten. Kein DOMmount, Interaktions-/AT-/X01-/X08-Nachweis oder globale Repo-/Distributionsidentität.
+- **Weiterer Bedarf:** Verbleibende X01-/Ownershipfragen und andere tatsächliche Zielarten separat, keine erneute identische ID-/SSR-Probe. [Bericht](experiments/2026-10-25/zag-ark-references/REPORT.md).
+
+## C512
+
+- **Kandidat / Anforderung:** uSpec; X03; **U**.
+- **Quellen:** [S111](SOURCES.md#s111), S52/S103; E3.
+- **Befund:** Vollständiger ursprünglicher Cachevalidator mit vorhandener Evidence prüft lokale Outputpointer/Zielart/Feldtyp, löst fremde Datei-/Fragmenttargets nicht auf. sourcePaths darf im Test nicht existieren; geänderte tatsächliche Fremdquelle bleibt bei eingefrorenen Facts/Outputs unbemerkt. Acht Beobachtungserwartungen erfüllt.
+- **Bedeutung/Grenze:** Lokale Originalfähigkeit anerkannt; kein ausreichender externer Domänenreferenznachweis. Keine globale N-Behauptung oder neuer Universaladapter.
+- **Weiterer Bedarf:** Konkreter ursprünglicher oder zusätzlicher Fremdmodell-/Revisions-/Instanzbinder. [Bericht](experiments/2026-10-25/uspec-external-reference/REPORT.md).
+
+## C513
+
+- **Kandidat / Anforderung:** APG; X03; **A**.
+- **Quellen:** [S112](SOURCES.md#s112), S55; E3.
+- **Befund:** Tatsächliche unveränderte APG-Beispielklasse auf zwei Native-DOM-Kontexten mit zusätzlichem CEM-Pointer-/Klassenfeld-/Native-Typ-/Instanzbinder auf comboboxNode gebunden. Falscher HTMLDivElement-Typ, falscher Instanzkontext und fehlender CEM-Zielknoten werden zusätzlich abgewiesen; Original-CEM-Schema allein akzeptiert die Typmetadaten.
+- **Bedeutung/Grenze:** A nur für den konkret ausgeführten ursprünglichen Referenzbeispielbeitrag samt zusätzlicher Host-/Interfacebindung. Kein normativer/stabiler APG-APIvertrag, neutraler allgemeiner Komponenten-/Fremdmodellstandard, Keyboard-/AT-/Lifecycle- oder X01-/X08-Nachweis.
+- **Weiterer Bedarf:** Übrige unabhängige Ownership-/X01-Fragen; andere Klassenfelder und Interaktionen nicht automatisch übertragen, diesen unveränderten Fall nicht erneut ohne neuen Originalbeitrag zählen. [Bericht](experiments/2026-10-25/apg-original-reference/REPORT.md).
+
+## C514
+
+- **Kandidat / Anforderung:** APG; X04; **A**.
+- **Quellen:** [S112](SOURCES.md#s112), S55; E3.
+- **Befund:** Dieselbe tatsächliche unveränderte APG-Konstruktordefinition erzeugt zwei unterschiedliche Originalinstanzen mit eigenen list/none-Parametern und Optionsarrays. Ursprüngliche setValue/open-Methoden und nativer synthetischer Optionklick zeigen eigene A/B-Daten und Zustände in der gespeicherten Folge.
+- **Bedeutung/Grenze:** A nur für den konkret ausgeführten ursprünglichen Referenzbeispielbeitrag samt zusätzlicher Host-/Interfacebindung. Kein normativer/stabiler APG-APIvertrag, neutraler allgemeiner Komponenten-/Fremdmodellstandard, Keyboard-/AT-/Lifecycle- oder X01-/X08-Nachweis.
+- **Weiterer Bedarf:** Übrige unabhängige Ownership-/X01-Fragen; andere Klassenfelder und Interaktionen nicht automatisch übertragen, diesen unveränderten Fall nicht erneut ohne neuen Originalbeitrag zählen. [Bericht](experiments/2026-10-25/apg-original-reference/REPORT.md).
+
+## C515
+
+- **Kandidat / Anforderung:** OpenPencil; X08; **A**.
+- **Quellen:** [S113](SOURCES.md#s113), S100/S105; E3.
+- **Befund:** Ursprüngliche behaviourOwner-/Property-Vorrangregeln und tatsächliche behaviourControls-Projektion ausgeführt: Component Set führt vor Variante, explizite Instanzzuweisung vor Default. Nichtführende Änderung bleibt ohne Wirkung, führende Änderung erreicht den Consumer; zusätzliche Quelle/Ableitung-Hashes dokumentieren die Änderung.
+- **Bedeutung/Grenze:** A nur für diese konkrete ursprüngliche Behavior-/Boolean-Quellkette mit zusätzlichem Änderungsjournal. Gespeicherte Konflikte werden priorisiert, nicht allgemein abgewiesen; keine signierte Provenienz, vollständige Graphpersistenz, universelle Governance oder Vier-Domänen-Integration.
+- **Weiterer Bedarf:** X01 und andere Domänen-/Informationsarten separat prüfen; diesen Originalpfad ohne neue entscheidende Frage nicht erneut zählen. [Bericht](experiments/2026-10-25/op-owner-precedence/REPORT.md).
+
+## C516
+
+- **Kandidat / Anforderung:** uSpec; X08; **U**.
+- **Quellen:** [S114](SOURCES.md#s114), S103; E3.
+- **Befund:** Vollständiger ursprünglicher Normalisierer löst unbekannte Variant-ID per Fallback auf und markiert falsche Layerzugehörigkeit unresolved bei weiterhin geliefertem Builderergebnis. Zurückgegebener Anchor und sourceModel teilen variantProperties per Objektalias; JSON-Neuladen trennt sie, Quelldateien bleiben unverändert.
+- **Bedeutung/Grenze:** Fünf Beobachtungserwartungen erfüllt, aber kein unabhängiges führendes Domänenartefakt-/Änderungs-/Konfliktmodell belegt. Rückgabealias ist keine behauptete Verletzung zugesicherter API-Unveränderlichkeit.
+- **Weiterer Bedarf:** Neuer tatsächlicher Fremddomänen-Quellführungspfad. [Bericht](experiments/2026-10-25/uspec-normalizer-ownership/REPORT.md).
+
+## C517
+
+- **Kandidat / Anforderung:** APG; X08; **A**.
+- **Quellen:** [S115](SOURCES.md#s115); E3.
+- **Befund:** HTML-Modusattribut führt bei ursprünglicher Konstruktion die Flags und Filterung; zusätzliche Konsistenz-/Änderungsbindung weist Quell-/Flagkonflikte ab. Frischer Kontext folgt geänderter Quelle, keine native Livesynchronisation.
+- **Bedeutung/Grenze:** Nur ein Konstruktor-Snapshot mit zusätzlichem Journal/Guard; keine allgemeine APG-Governance.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/apg-mode-ownership/REPORT.md).
+
+## C518
+
+- **Kandidat / Anforderung:** Zag; X01; **A**.
+- **Quellen:** [S116](SOURCES.md#s116); E3.
+- **Befund:** Tatsächlicher ursprünglicher Machine/connect-SSR-Beitrag mit eigenständigen Props neben CEM-Anatomie/Inputtyp, CSS und HTML/ARIA geführt. Unabhängige Visualrevision lässt drei andere Quellen und ursprünglichen Consumer zulässig.
+- **Bedeutung/Grenze:** Kandidatenspezifisches zusätzliches semantisches Binding, keine montierten Interaktionen oder Gesamt-Contractkonformität.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/domain-independence-final/REPORT.md).
+
+## C519
+
+- **Kandidat / Anforderung:** Ark UI; X01; **A**.
+- **Quellen:** [S116](SOURCES.md#s116); E3.
+- **Befund:** Tatsächlicher ursprünglicher Root-/Komponenten-/Context-SSR-Pfad mit eigener Propsquelle neben CEM, CSS und HTML/ARIA; getrennte Visualrevision geprüft.
+- **Bedeutung/Grenze:** Eigener Ark-Pfad, keine automatische Übertragung aus Zag; keine DOM-/Event-/AT-Gesamtzusage.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/domain-independence-final/REPORT.md).
+
+## C520
+
+- **Kandidat / Anforderung:** UXSpec; X01; **A**.
+- **Quellen:** [S116](SOURCES.md#s116); E3.
+- **Befund:** Ursprünglicher Compiler verarbeitet ein originalschemafähiges Behaviorroot ohne fremde Fachdefinitionen; zusätzliche Zustands-/Teilbindung auf getrenntes CEM/CSS/HTML. Visualrevision ohne Änderung der drei übrigen Quellen.
+- **Bedeutung/Grenze:** Kein eigenständiges Visual-only-UXSpec-Root, keine Interpreter-/Timer-/Payloadruntime oder Reparatur des früheren Zeitverlusts.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/domain-independence-final/REPORT.md).
+
+## C521
+
+- **Kandidat / Anforderung:** Panda CSS; X01; **A**.
+- **Quellen:** [S116](SOURCES.md#s116); E3.
+- **Befund:** Eigenständiges Original-DesignSystemSpec-JSON wird vom tatsächlichen Originalreader/index.resolve als Visualbeitrag verarbeitet; konkrete zusätzliche CSS-Projektion auf separate CEM/SCXML/HTML-Teile.
+- **Bedeutung/Grenze:** Eigene Originalformat-Fixture, kein Rustgenerator/gesamter Konfigurationscompiler; flacher Reader bleibt begrenzt.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/domain-independence-final/REPORT.md).
+
+## C522
+
+- **Kandidat / Anforderung:** APG; X01; **A**.
+- **Quellen:** [S117](SOURCES.md#s117); E3.
+- **Befund:** Vollständige ursprüngliche Beispielklasse neben getrenntem tatsächlichem CEM-Feldtyp, CSS und HTML/ARIA: native Visualrevision160→192 und separate Labelrevision bei unveränderten übrigen Quellen/Filterung.
+- **Bedeutung/Grenze:** Nur illustrativer ursprünglicher Implementierungsbeitrag mit zusätzlicher Hostbindung; keine neutrale normative APG-API oder AT-Prüfung.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/apg-independence/REPORT.md).
+
+## C523
+
+- **Kandidat / Anforderung:** Google DESIGN.md; X01; **A**.
+- **Quellen:** [S118](SOURCES.md#s118); E3.
+- **Befund:** Tatsächlicher Original-lint-Coloroutput aus separatem DESIGN.md an explizite CSS-Foregroundziele im getrennten HTML/CEM/SCXML-Profil gebunden; Quellrevision erreicht Ableitung, drei andere Fachquellen bytegleich.
+- **Bedeutung/Grenze:** Zusätzliche Projektion verwendet originales hex; kein Dokument-Schemaentscheid, X06 U unverändert.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/google-independence/REPORT.md).
+
+## C524
+
+- **Kandidat / Anforderung:** OpenUI; X01; **A**.
+- **Quellen:** [S119](SOURCES.md#s119); E3.
+- **Befund:** Einfacher String-Propertybeitrag des unveränderten tatsächlichen interfaces/Spec.ts per zusätzlicher Literal-/Originaltypbindung neben eigenständigem SCXML/CSS/HTML geführt; Interface-Beschreibungsrevision ohne Fremdquelländerung.
+- **Bedeutung/Grenze:** Nur benannter Originaltypgegenstand, keine kanonische Vorrangentscheidung oder ursprüngliche JSON-Schemavalidierung; X06 U bleibt.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/openui-independence/REPORT.md).
+
+## C525
+
+- **Kandidat / Anforderung:** OpenPencil; V04; **R**.
+- **Quellen:** [S120](SOURCES.md#s120); E3.
+- **Befund:** Ursprüngliche Slider-SLOT-/Behavior-/Vue-Generatorkette verweist tatsächlich auf Reka-Parts. Referenzierte Root-/Startkanten-/Contain-Offsetsemantik nativ bei25/75 und Rootbreiten200/300 gemessen.
+- **Bedeutung/Grenze:** Nur SliderRoot→Thumb-Geometrie. Zwei ursprüngliche SSR-Thumb-Erwartungen widerlegt erhalten; dritter nativer Host eigene CSS-Rootrevision. Frühere Popup/Inputankerrelation bleibt unerfüllt.
+- **Weiterer Bedarf:** Stärkere vollständige Integration bleibt separat. [Bericht](experiments/2026-10-25/op-slider-geometry/REPORT.md).
+
+## C526
+
+- **Kandidat / Anforderung:** CSS Layout; I01; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** CEM-maxHeight:number ist konkret an px und den tatsächlichen CSS-Maximalhöhenparameter gebunden: A192/B160 bei Inhaltshöhe224. Falscher Werttyp, Einheit und abgeleiteter Propertytyp werden zusätzlich abgewiesen.
+- **Bedeutung/Grenze:** Keine native CSS-Komponenten-API; enger zusätzlicher primitiver Typ-/Einheitsbinder.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C527
+
+- **Kandidat / Anforderung:** CSS Layout; I02; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Tatsächlicher ursprünglicher SCXML-Parentsend liefert value-change/value/query; zusätzliche CEM-/Instanzprüfung routet das öffentliche Hostevent bei tatsächlich geschlossenem CSS-Zustand. Ursprünglich geliefertes query42 und fremder Parent werden zusätzlich abgewiesen.
+- **Bedeutung/Grenze:** Eventziel ist die eigene Forschungssection, kein implementiertes Custom Element. Originale CEM-/SCXML-Prüfer übernehmen keine Zusatzpayload- oder CSSrouteprüfung.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C528
+
+- **Kandidat / Anforderung:** CSS Layout; B01; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Tatsächliche ursprüngliche closed→open→closed-Folge ist mit CSS none→block→none gebunden; B bleibt closed. CSS führt die Displayregel, der Binder nur den tatsächlichen Zustandsmarker.
+- **Bedeutung/Grenze:** Kein CSS-eigener UX-Automat oder allgemeiner Layoutfallback als UX-Logik.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C529
+
+- **Kandidat / Anforderung:** CSS Layout; B02; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Tatsächliche ursprüngliche SET_ENABLED-Assign-/cond=enabled-Auswertung blockiert OPEN bei false; true erlaubt open und tatsächliches CSS-block.
+- **Bedeutung/Grenze:** Guard-/Aktionssemantik kommt aus dem ausgewiesenen externen Original-SCXML; Zusatzbinder wertet Guard nicht selbst aus.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C530
+
+- **Kandidat / Anforderung:** CSS Layout; B03; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Ereignisquery wird durch ursprüngliches Assign im Kontext gehalten und neben dem bestätigten value per ursprünglichem Parentsend ausgegeben. Falscher öffentlicher Inputtyp wird zusätzlich abgewiesen.
+- **Bedeutung/Grenze:** Primitiver CEM-Datenbinder, kein vollständiger TypeScriptwertvalidator; akzeptierter interner query42-Bypass bleibt als Originalgrenze sichtbar.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C531
+
+- **Kandidat / Anforderung:** CSS Layout; B04; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Synthetische native Input-ArrowDown-Events durchlaufen ausdrücklich zusätzlichen Keyrouter, steuern tatsächliche ursprüngliche Maschine und CSS-Ausgabe; A/B-Zustand und DOM-Fokus separat beobachtet.
+- **Bedeutung/Grenze:** Zusatzrouter statt nativer CSS-/SCXML-Keysemantik, keine physischen vertrauenswürdigen Tasten oder AT-Prüfung.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C532
+
+- **Kandidat / Anforderung:** CSS Layout; A01; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Konkrete CSS-Popupziele sind an richtige HTML/ARIA-Listbox-/Namens-/Kontrollziele gebunden. Falscher Labeltext und fremdes Controls-Ziel werden erkannt; tatsächlicher Browser-AX-Baum bestätigt Search A/B und Results A.
+- **Bedeutung/Grenze:** Enger expliziter Zusatzbinder, keine automatische Erzeugung zugänglicher Semantik durch CSS-Nähe oder allgemeine Accname-Konformität.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C533
+
+- **Kandidat / Anforderung:** CSS Layout; A02; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Gepinnter APG-Combobox-Listboxbezug bestimmt zusätzlichen endlichen Keypfad: Escape schließt bei erhaltenem Inputfokus, Enter übernimmt aktive Option und schließt. Abweichende abgeleitete Keyroute wird abgewiesen.
+- **Bedeutung/Grenze:** ArrowDown-/Instanzfolge separat P91; nicht doppelt gezählt. Keine vollständige APG-Optionaltasten-/Popup-/Plattform-/AT-Konformität.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C534
+
+- **Kandidat / Anforderung:** CSS Layout; A03; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Tatsächliches bestätigtes Originalevent ist an eigene status/polite/atomic-Region gebunden; Präfix führt HTML, native AX-Region bestätigt Eigenschaften und Text. CSS-only-Änderung bleibt ohne Meldung; falsches live wird abgewiesen.
+- **Bedeutung/Grenze:** Explizite zusätzliche Ereignis-/A11y-Bindung statt CSS-Meldungssprache; native AX-Beobachtung bestätigt keine Screenreader-Sprachausgabe.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C535
+
+- **Kandidat / Anforderung:** WAI-ARIA; V06; **A**.
+- **Quellen:** [S121](SOURCES.md#s121); E3.
+- **Befund:** Tatsächliche aria-controls-Liste ist an ihren richtigen CSS-Scrollport gebunden.7×32px in160px, aktive7. Option sichtbar bei scrollTop64. Fremde Liste und clip-Variante mit unsichtbarer aktiver Option liefern eigene Bindungskonflikte.
+- **Bedeutung/Grenze:** ARIA definiert keine eigene CSS-Overflowpolitik. clip ist gültiges CSS und scheitert nur am konkret verlangten Sichtbarkeitsprofil; keine universelle Scroller-/AT-Zusage.
+- **Weiterer Bedarf:** Vollständige Integration bleibt separat. [Eigener kriteriumsbezogener Nachweis](experiments/2026-10-25/css-complement-runtime/REPORT.md).
+
+## C536
+
+- **Kandidat / Anforderung:** uSpec; X03; **A**.
+- **Quellen:** [S122](SOURCES.md#s122); E3.
+- **Befund:** Tatsächliche externe CEM-Datei/Pointer/Field-/Modul-/Definitions-/Typ-/Revisionsauflösung an ursprünglichen Evidence-Fact/sourcePaths und tatsächlichen lokalen APIoutput gebunden; gezielte fremde/missing/stale Targets abgewiesen.
+- **Bedeutung/Grenze:** Zusätzlicher eng begrenzter Definitionsresolver, keine native uSpec-Fremdauflösung oder erfundene konkrete UI-Instanzreferenz.
+- **Weiterer Bedarf:** Globale Integration bleibt stärkerer separater Gegenstand. [Nachweis](experiments/2026-10-25/uspec-cem-ownership/REPORT.md).
+
+## C537
+
+- **Kandidat / Anforderung:** uSpec; X08; **A**.
+- **Quellen:** [S122](SOURCES.md#s122); E3.
+- **Befund:** CEM-Propertyname/-Typ führt ausdrücklich Fact/equals/APIoutput. Tatsächliche Quellenrevision und erneutes Dateilesen zur Ableitung werden samt Konflikten und vorher/nachher-Journal dem Originalvalidator zugeführt.
+- **Bedeutung/Grenze:** Zusätzliches per-information-Ownershipjournal, kein originales allgemeines Governance-/Rechte-/Transaktionssystem. Dieselben14 Bedingungen wie X03 nur einmal gezählt.
+- **Weiterer Bedarf:** Globale Integration bleibt stärkerer separater Gegenstand. [Nachweis](experiments/2026-10-25/uspec-cem-ownership/REPORT.md).
+
+## C538
+
+- **Kandidat / Anforderung:** uSpec; X01; **A**.
+- **Quellen:** [S123](SOURCES.md#s123); E3.
+- **Befund:** Tatsächlich eigenständig prüfbarer ursprünglicher APIcache mit Evidence neben separatem SCXML/CSS/HTML; CEM führt Interface, Cache/Fact sind Ableitung. Visualrevision und tatsächliche ursprüngliche SCXML-Publicwertrevision ohne Fremdmasteränderung.
+- **Bedeutung/Grenze:** Nur ursprünglicher APIcache-Teilgegenstand, kein unabhängig ladbarer partieller Canonical-Gesamtroot oder vollständige Autocomplete-/Figma-Pipeline.
+- **Weiterer Bedarf:** Globale Integration bleibt stärkerer separater Gegenstand. [Nachweis](experiments/2026-10-25/uspec-api-independence/REPORT.md).
+
+## C539
+
+- **Kandidat / Anforderung:** OpenPencil; X01; **A**.
+- **Quellen:** [S124](SOURCES.md#s124); E3.
+- **Befund:** Vier tatsächliche CEM/OPS/CSS/HTML-Master erzeugen den Scenegraph ausdrücklich als Ableitung. Original-SG/OPS/Instanz/Control/Projektions- und unveränderte isolierte Vue-/Reka-SSR-Kette folgt getrennten Visual-/Namens-/Defaultrevisionen; Behavior/A11y-Rollenkonflikt zusätzlich erkannt.
+- **Bedeutung/Grenze:** Kein zweiter Graphmaster, universeller Importer oder ganzer Editor. Exakte A/B-Namen und aria-checked im tatsächlichen Original-SSR geprüft; keine native UI-/AT-Abnahme.
+- **Weiterer Bedarf:** Globale Integration bleibt stärkerer separater Gegenstand. [Nachweis](experiments/2026-10-25/op-four-masters/REPORT.md).
+
+## C540
+
+- **Kandidat / Anforderung:** UXSpec; V04; **A**.
+- **Quellen:** [S125](SOURCES.md#s125); E3.
+- **Befund:** Tatsächlich kompilierter ursprünglicher Visualslot an separates CEM-/DOM-Ziel und eigene explizite CSS-Ankerrelation gebunden. Abstand8 bleibt bei Input20→40; fremde/fehlende Ziele und nicht unterstützte Einheit abgewiesen.
+- **Bedeutung/Grenze:** Zusätzliche Ziel-/Richtungs-/Abstandssemantik, keine native UXSpec-Inputankerfähigkeit. Original-Runner/React-Renderer nicht ausgeführt.
+- **Weiterer Bedarf:** Globale Integration bleibt stärkerer separater Gegenstand. [Nachweis](experiments/2026-10-25/layout-final-bindings/REPORT.md).
+
+## C541
+
+- **Kandidat / Anforderung:** UXSpec; V06; **A**.
+- **Quellen:** [S125](SOURCES.md#s125); E3.
+- **Befund:** Tatsächlicher Originalcompiler/Stylemapper liefert Slot/160px, ignoriert ursprüngliches overflow weiterhin. Explizite zusätzliche auto-/feste-Zeilenpolitik ergibt native160/224/64; fehlende Politik/fremder Port abgewiesen.
+- **Bedeutung/Grenze:** A nur mit zusätzlichem Overflow-/Zeilensizing. Initiale eigene Erwartung scheiterte an tatsächlicher Original-Flexschrumpfung und bleibt erhalten; Originalmapper unverändert.
+- **Weiterer Bedarf:** Globale Integration bleibt stärkerer separater Gegenstand. [Nachweis](experiments/2026-10-25/layout-final-bindings/REPORT.md).
+
+## C542
+
+- **Kandidat / Anforderung:** uSpec; V04; **A**.
+- **Quellen:** [S125](SOURCES.md#s125); E3.
+- **Befund:** Tatsächlich vom Originalbuilder normalisierter Section-Messanker an richtigen CEM-/DOM-Instanzkontext und zusätzliche native CSS-Zielkantenrelation gebunden. Abstand8 bleibt20→40; fremder und tatsächlich unresolved ausgegebener Anker abgewiesen.
+- **Bedeutung/Grenze:** Messanker bleibt ursprüngliche Messidentität, Runtimegeometrie ist Zusatzbinding. Keine behauptete eigene ursprüngliche Overlay-/Targetsemantik.
+- **Weiterer Bedarf:** Globale Integration bleibt stärkerer separater Gegenstand. [Nachweis](experiments/2026-10-25/layout-final-bindings/REPORT.md).
+
+## C543
+
+- **Kandidat / Anforderung:** uSpec; V06; **A**.
+- **Quellen:** [S125](SOURCES.md#s125); E3.
+- **Befund:** Vollständige unveränderte ursprüngliche extractDims/sg-Funktion erhält clipsContent auf clipping-only Minimalnodes; Originalbuilder bewahrt den Beleg. Zusatzmapping true→CSSclip/false→visible nativ anhand letzter gemalter Zeile geprüft; fehlender/untypisierter Beleg abgewiesen.
+- **Bedeutung/Grenze:** Kein Figma-SDK oder ausgeführter numerischer Bindingbranch. Kein auto/scroll aus Clipping erfunden; feste zusätzliche Clip/Visible-Politik und Testviewport, kein universeller Scrollvertrag.
+- **Weiterer Bedarf:** Globale Integration bleibt stärkerer separater Gegenstand. [Nachweis](experiments/2026-10-25/layout-final-bindings/REPORT.md).

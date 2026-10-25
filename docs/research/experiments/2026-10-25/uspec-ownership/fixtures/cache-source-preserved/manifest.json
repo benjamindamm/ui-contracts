@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "componentSlug": "autocomplete",
+    "baseSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "preparedAt": "2026-10-25T17:00:00Z"
+  },
+  "paths": {
+    "cachePath": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved",
+    "evidence": {
+      "renderer": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved/renderer.json"
+    },
+    "contractPath": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved/contract.json"
+  },
+  "source": {
+    "fileKey": "research-file",
+    "nodeId": "root",
+    "figmaUrl": "https://example.invalid/research",
+    "extractionSource": null
+  },
+  "summaries": {
+    "componentName": "Autocomplete"
+  }
+}

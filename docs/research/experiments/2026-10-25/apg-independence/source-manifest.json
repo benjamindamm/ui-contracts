@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-25",
+  "source_id": "S117",
+  "original_code_modified": false,
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_files": [
+    {
+      "local_provenance_path": "work/apg-original-reference/combobox-autocomplete.js",
+      "sha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "b7cd7591192e1e0407727667df02c1e0e2ab7f4d8049cfae426b25e868ea444f"
+    },
+    {
+      "file": "browser-capture.json",
+      "sha256": "4a58f0f5d3b5cb05a92dace9c18cec3582ab1d5e09e4b95e4740bf0aaa52645a"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "5faa98a63e19c4d67fb2ab81e909f0ebabf22483ce72e12d1334306fddae9230"
+    },
+    {
+      "file": "host/accessibility-revision/accessibility.html",
+      "sha256": "dd23aa51d0ee94c943c335a5d1ffd00217552a86a0862f753732184971dbfc7a"
+    },
+    {
+      "file": "host/accessibility-revision/interface.json",
+      "sha256": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057"
+    },
+    {
+      "file": "host/accessibility-revision/visual.css",
+      "sha256": "073d3ee624dd54b0e3e5373b93c853401685c62d0eb7540f32f5b2e2c0c6f444"
+    },
+    {
+      "file": "host/base/accessibility.html",
+      "sha256": "8ae5dc948d4ad846e3fc67d70e81c787f54579475b6c87325398b9561d9f7506"
+    },
+    {
+      "file": "host/base/interface.json",
+      "sha256": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057"
+    },
+    {
+      "file": "host/base/visual.css",
+      "sha256": "073d3ee624dd54b0e3e5373b93c853401685c62d0eb7540f32f5b2e2c0c6f444"
+    },
+    {
+      "file": "host/harness.js",
+      "sha256": "d0a6f556053e2b3e9b17e279ffbd38ec936e405ed41944664a731a64eecb4660"
+    },
+    {
+      "file": "host/interface.json",
+      "sha256": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057"
+    },
+    {
+      "file": "host/visual-revision/accessibility.html",
+      "sha256": "8ae5dc948d4ad846e3fc67d70e81c787f54579475b6c87325398b9561d9f7506"
+    },
+    {
+      "file": "host/visual-revision/interface.json",
+      "sha256": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057"
+    },
+    {
+      "file": "host/visual-revision/visual.css",
+      "sha256": "d21c7c29e44fd411fcf04d5ddc75c6977c3c792ae1c4d178b11eeb83219f49e3"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "a44dd2264298c1530c15bdfb4bc000a7c811ea9f563d01f908438314ef1e2f74"
+    },
+    {
+      "file": "results.json",
+      "sha256": "59c93492223497c940482b4a76abcf58467c09aa4ba61da23d58c34a57f846cc"
+    }
+  ],
+  "generated_third_party_bundles": [],
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "reproduction_originals": "Provide pinned original files/dependencies at the documented workspace sibling paths; originals and bundled third-party code not redistributed as own implementation",
+  "original_url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/examples/js/combobox-autocomplete.js",
+  "original_revision": "0f765e4dc33e966026114ac12a8380db1de3b787"
+}

@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-25",
+  "source": "S123",
+  "original_code_modified": false,
+  "original_files": [
+    {
+      "local_provenance_path": "work/uspec-ownership/compiled/cache-validation.js",
+      "sha256": "f1f3c717376f09c57f5d297408941634f645b541347d4d92060a882e1bcbcff5"
+    },
+    {
+      "local_provenance_path": "work/uspec-ownership/sources/cache-validation.ts",
+      "sha256": "6a19c72ca3f7932494a83e7c1f448d7ba9a03bdfb2816a1f2fef651f0abf8382"
+    },
+    {
+      "local_provenance_path": "work/scxml-runtime/tool/node_modules/@scion-scxml/scxml/package.json",
+      "sha256": "77ed2c74421b3f60db090f4659059953e5424403734f2b2e5a69b297009b7779"
+    },
+    {
+      "local_provenance_path": "work/scxml-runtime/source-manifest.json",
+      "sha256": "cfec2dbc6256d25dafd5cd69d8270022b7ddd163a3e1b20a354c9745d7bb1e35"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "12c65fd2a487676b0de86776d9bf8912053d19d9c266d19172aa1d29cfaed9e9"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "42be44332d9239f2c20799f41c8dc33ad7c044381ebf66f6d7a18dd223b2b021"
+    },
+    {
+      "file": "fixtures/behavior-revision/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/behavior-revision/behavior.scxml",
+      "sha256": "9c6ed888a078fbe1bbe60f87749faae8fb307c9f71d820135948d34b095fd367"
+    },
+    {
+      "file": "fixtures/behavior-revision/binding.json",
+      "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+    },
+    {
+      "file": "fixtures/behavior-revision/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/behavior-revision/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/behavior-revision/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/behavior-revision/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "fixtures/control/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/control/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/control/binding.json",
+      "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+    },
+    {
+      "file": "fixtures/control/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/control/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/control/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/control/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "fixtures/visual-revision/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/visual-revision/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/visual-revision/binding.json",
+      "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+    },
+    {
+      "file": "fixtures/visual-revision/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/visual-revision/research-api.json",
+      "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+    },
+    {
+      "file": "fixtures/visual-revision/research-evidence-api.json",
+      "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+    },
+    {
+      "file": "fixtures/visual-revision/visual.css",
+      "sha256": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "2cba95574e0ea3c74cc7bd3129fa68d3332ddc2cec17788d465c2868968e11c9"
+    },
+    {
+      "file": "results.json",
+      "sha256": "02a43aa28b598937445fd35500350bb94ac67694a130e0c77af852c0d7ac6ebb"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "1b869ef3e0b3bfadc585d45f0df05632e6e7f3779a6c0de8bb27eb5e29a16c3b"
+    }
+  ],
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "production_component_implemented": false,
+  "original_module_initialization_scope": "Full original cache/builder/compiler APIs; original Vue/extractDims declarations isolated exactly as separately documented, no whole editor or Figma SDK",
+  "reproduction_note": "Provide pinned original sibling files/dependencies at documented paths. Original modules/transpiled map not redistributed as own implementation."
+}

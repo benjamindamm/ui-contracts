@@ -1,0 +1,308 @@
+[
+  {
+    "name": "@open-pencil/dom-css",
+    "version": "0.16.0",
+    "gitHead": null,
+    "dist": {
+      "attestations": {
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        },
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@open-pencil%2fdom-css@0.16.0"
+      },
+      "fileCount": 131,
+      "integrity": "sha512-B08y96dEbmEacM82jPBGLT/XlayF9ScjXzRIRsllLyG3AW0ax3qs5quz1PgB1eEu5mvD/Bau8RClgU84luKyMg==",
+      "shasum": "c5f6bb571e7be2acd203adf4ea2718afc462a8e1",
+      "signatures": [
+        {
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+          "sig": "MEUCIQD3hItY5L4UPosMhrLGnRDVHLwRkPfVUFwMtPVV5Qh7MwIgK24vxJo6Q2UGwqdae0GwrAk6+T2Ojjf5TcCChRQQ9e8="
+        },
+        {
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+          "sig": "MEUCIQDWXXDBUzbMLOlllR0iD0Kn1RUjhLY4sHW2w1zFOfFJEwIgA9rhQJxY6NPQkkkjXymwAZ19gO40zoC2eG/MB/jwBac="
+        }
+      ],
+      "tarball": "https://registry.npmjs.org/@open-pencil/dom-css/-/dom-css-0.16.0.tgz",
+      "unpackedSize": 1360898
+    },
+    "exports": {
+      ".": {
+        "bun": "./src/index.ts",
+        "default": "./dist/index.js",
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./browser": {
+        "bun": "./src/browser.ts",
+        "default": "./dist/browser.js",
+        "import": "./dist/browser.js",
+        "types": "./dist/browser.d.ts"
+      },
+      "./export": {
+        "bun": "./src/export/index.ts",
+        "default": "./dist/export.js",
+        "import": "./dist/export.js",
+        "types": "./dist/export.d.ts"
+      },
+      "./jsx-dev-runtime": {
+        "bun": "./src/import/jsx/dev-runtime.ts",
+        "default": "./dist/jsx-dev-runtime.js",
+        "import": "./dist/jsx-dev-runtime.js",
+        "types": "./dist/jsx-dev-runtime.d.ts"
+      },
+      "./jsx-runtime": {
+        "bun": "./src/import/jsx/runtime.ts",
+        "default": "./dist/jsx-runtime.js",
+        "import": "./dist/jsx-runtime.js",
+        "types": "./dist/jsx-runtime.d.ts"
+      },
+      "./scene-graph": {
+        "bun": "./src/import/scene-graph.ts",
+        "default": "./dist/scene-graph.js",
+        "import": "./dist/scene-graph.js",
+        "types": "./dist/scene-graph.d.ts"
+      }
+    },
+    "peerDependencies": {
+      "@open-pencil/scene-graph": "^0.16.0"
+    },
+    "repositoryCommitIdentityClaimed": false
+  },
+  {
+    "name": "@open-pencil/scene-graph",
+    "version": "0.16.0",
+    "gitHead": null,
+    "dist": {
+      "attestations": {
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        },
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@open-pencil%2fscene-graph@0.16.0"
+      },
+      "fileCount": 267,
+      "integrity": "sha512-o7mRz8tXyRO6fgizBUSqJJhKI4b1uzWMCw3o/reJZAWq+m6lDlzgxGvR4xhCWurl70eDQcDTRyGr8aVHcAe5jg==",
+      "shasum": "5df6b909003d3b8b48bf0e9cbee4842c8785e23e",
+      "signatures": [
+        {
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+          "sig": "MEUCIAWYy2nSNNCjGsJDQHy5t+hpIJvYnFUzha4m0b1elXn9AiEA8eVeE92OdKa5N92eccG8RDCU+lAO0WB5kwbJ3T3sdJE="
+        },
+        {
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+          "sig": "MEQCIFFaMANLaYg7nzoqCk1nsfwOkS4DEBZ3x3cGJqjGfNLYAiAvZ119ze3g1Q58I3/8vrv1t4OACYywKxEpUuavy42Rsw=="
+        }
+      ],
+      "tarball": "https://registry.npmjs.org/@open-pencil/scene-graph/-/scene-graph-0.16.0.tgz",
+      "unpackedSize": 1892395
+    },
+    "exports": {
+      ".": {
+        "bun": "./src/index.ts",
+        "default": "./dist/index.js",
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./arrow-caps": {
+        "bun": "./src/arrow-caps.ts",
+        "default": "./dist/arrow-caps.js",
+        "import": "./dist/arrow-caps.js",
+        "types": "./dist/arrow-caps.d.ts"
+      },
+      "./color": {
+        "bun": "./src/color/index.ts",
+        "default": "./dist/color.js",
+        "import": "./dist/color.js",
+        "types": "./dist/color.d.ts"
+      },
+      "./constants": {
+        "bun": "./src/constants.ts",
+        "default": "./dist/constants.js",
+        "import": "./dist/constants.js",
+        "types": "./dist/constants.d.ts"
+      },
+      "./coordinate": {
+        "bun": "./src/coordinate.ts",
+        "default": "./dist/coordinate.js",
+        "import": "./dist/coordinate.js",
+        "types": "./dist/coordinate.d.ts"
+      },
+      "./copy": {
+        "bun": "./src/copy.ts",
+        "default": "./dist/copy.js",
+        "import": "./dist/copy.js",
+        "types": "./dist/copy.d.ts"
+      },
+      "./css": {
+        "bun": "./src/css/index.ts",
+        "default": "./dist/css.js",
+        "import": "./dist/css.js",
+        "types": "./dist/css.d.ts"
+      },
+      "./geometry": {
+        "bun": "./src/geometry.ts",
+        "default": "./dist/geometry.js",
+        "import": "./dist/geometry.js",
+        "types": "./dist/geometry.d.ts"
+      },
+      "./gradient": {
+        "bun": "./src/gradient.ts",
+        "default": "./dist/gradient.js",
+        "import": "./dist/gradient.js",
+        "types": "./dist/gradient.d.ts"
+      },
+      "./guides": {
+        "bun": "./src/guides.ts",
+        "default": "./dist/guides.js",
+        "import": "./dist/guides.js",
+        "types": "./dist/guides.d.ts"
+      },
+      "./hit-test": {
+        "bun": "./src/hit-test.ts",
+        "default": "./dist/hit-test.js",
+        "import": "./dist/hit-test.js",
+        "types": "./dist/hit-test.d.ts"
+      },
+      "./images": {
+        "bun": "./src/images.ts",
+        "default": "./dist/images.js",
+        "import": "./dist/images.js",
+        "types": "./dist/images.d.ts"
+      },
+      "./instances": {
+        "bun": "./src/instances.ts",
+        "default": "./dist/instances.js",
+        "import": "./dist/instances.js",
+        "types": "./dist/instances.d.ts"
+      },
+      "./layout": {
+        "bun": "./src/layout/index.ts",
+        "default": "./dist/layout.js",
+        "import": "./dist/layout.js",
+        "types": "./dist/layout.d.ts"
+      },
+      "./matrix": {
+        "bun": "./src/matrix.ts",
+        "default": "./dist/matrix.js",
+        "import": "./dist/matrix.js",
+        "types": "./dist/matrix.d.ts"
+      },
+      "./node-defaults": {
+        "bun": "./src/node-defaults.ts",
+        "default": "./dist/node-defaults.js",
+        "import": "./dist/node-defaults.js",
+        "types": "./dist/node-defaults.d.ts"
+      },
+      "./order-keys": {
+        "bun": "./src/order-keys.ts",
+        "default": "./dist/order-keys.js",
+        "import": "./dist/order-keys.js",
+        "types": "./dist/order-keys.d.ts"
+      },
+      "./parse-path": {
+        "bun": "./src/parse-path.ts",
+        "default": "./dist/parse-path.js",
+        "import": "./dist/parse-path.js",
+        "types": "./dist/parse-path.d.ts"
+      },
+      "./polygon": {
+        "bun": "./src/polygon.ts",
+        "default": "./dist/polygon.js",
+        "import": "./dist/polygon.js",
+        "types": "./dist/polygon.d.ts"
+      },
+      "./preview": {
+        "bun": "./src/preview.ts",
+        "default": "./dist/preview.js",
+        "import": "./dist/preview.js",
+        "types": "./dist/preview.d.ts"
+      },
+      "./primitives": {
+        "bun": "./src/primitives.ts",
+        "default": "./dist/primitives.js",
+        "import": "./dist/primitives.js",
+        "types": "./dist/primitives.d.ts"
+      },
+      "./random": {
+        "bun": "./src/random.ts",
+        "default": "./dist/random.js",
+        "import": "./dist/random.js",
+        "types": "./dist/random.d.ts"
+      },
+      "./resize": {
+        "bun": "./src/resize.ts",
+        "default": "./dist/resize.js",
+        "import": "./dist/resize.js",
+        "types": "./dist/resize.d.ts"
+      },
+      "./snap": {
+        "bun": "./src/snap.ts",
+        "default": "./dist/snap.js",
+        "import": "./dist/snap.js",
+        "types": "./dist/snap.d.ts"
+      },
+      "./source-metadata": {
+        "bun": "./src/source-metadata.ts",
+        "default": "./dist/source-metadata.js",
+        "import": "./dist/source-metadata.js",
+        "types": "./dist/source-metadata.d.ts"
+      },
+      "./text": {
+        "bun": "./src/text/index.ts",
+        "default": "./dist/text.js",
+        "import": "./dist/text.js",
+        "types": "./dist/text.d.ts"
+      },
+      "./text-direction": {
+        "bun": "./src/text/direction.ts",
+        "default": "./dist/text-direction.js",
+        "import": "./dist/text-direction.js",
+        "types": "./dist/text-direction.d.ts"
+      },
+      "./text-picture": {
+        "bun": "./src/text/picture.ts",
+        "default": "./dist/text-picture.js",
+        "import": "./dist/text-picture.js",
+        "types": "./dist/text-picture.d.ts"
+      },
+      "./types": {
+        "bun": "./src/types.ts",
+        "default": "./dist/types.js",
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      },
+      "./undo": {
+        "bun": "./src/undo.ts",
+        "default": "./dist/undo.js",
+        "import": "./dist/undo.js",
+        "types": "./dist/undo.d.ts"
+      },
+      "./variables": {
+        "bun": "./src/variables.ts",
+        "default": "./dist/variables.js",
+        "import": "./dist/variables.js",
+        "types": "./dist/variables.d.ts"
+      },
+      "./variant-name": {
+        "bun": "./src/variant-name.ts",
+        "default": "./dist/variant-name.js",
+        "import": "./dist/variant-name.js",
+        "types": "./dist/variant-name.d.ts"
+      },
+      "./variant-properties": {
+        "bun": "./src/variant-properties.ts",
+        "default": "./dist/variant-properties.js",
+        "import": "./dist/variant-properties.js",
+        "types": "./dist/variant-properties.d.ts"
+      },
+      "./vector-network": {
+        "bun": "./src/vector-network.ts",
+        "default": "./dist/vector-network.js",
+        "import": "./dist/vector-network.js",
+        "types": "./dist/vector-network.d.ts"
+      }
+    },
+    "peerDependencies": null,
+    "repositoryCommitIdentityClaimed": false
+  }
+]

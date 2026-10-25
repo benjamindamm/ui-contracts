@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-25",
+  "source": "S101",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "5c248ca1c1526fe7a98bba2fba0803576a54e50314aef7367b3c560c3eb87cf7"
+    },
+    {
+      "file": "run.mjs",
+      "sha256": "05f7bd9d47cb79f55c44b64735849ca43e251070846c15a4f25283f7ae37e3e0"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "5a2e89fac21968dc730738ca1cdb888ca1c350b70a1b1b7ea40ad38aa4b8bc3c"
+    },
+    {
+      "file": "results.json",
+      "sha256": "e589a7a9faaabf513f8213d1e633f29b66bb40581479ad32408db0b54d8adde0"
+    },
+    {
+      "file": "browser-run.js",
+      "sha256": "83fe16d7f60dfc714d9731c5b295df81624bb7209e8ae0719ba669d3237ebfb5"
+    },
+    {
+      "file": "browser-results.json",
+      "sha256": "a3cd776b96674d4fe48d8db8942d9e14fbfa3c3e77311ad14a11913e0a695175"
+    },
+    {
+      "file": "browser-tab-continuity-error.json",
+      "sha256": "40eb5d6af1fbb2ef4364734040c967dd09b0add773dd26a6fb789a20dc765bb3"
+    },
+    {
+      "file": "host/index.html",
+      "sha256": "f774163ea9dc0f252b54004851ecdf3525df227571999bec7c783c4a84c4286c"
+    }
+  ],
+  "original_and_prior_inputs": [
+    {
+      "file": "../op-projection-origin/tool/package-lock.json",
+      "sha256": "3362b420d56cae5579fef1dbe9a8c5a8b8cda5a3a98c7574b75a6bf9fd6e9391"
+    },
+    {
+      "file": "../op-projection-origin/tool-inventory.json",
+      "sha256": "ce880bf2622ec8f06eb0626117bcec22cd4d9b88285277cbb01288c10399ae8d"
+    },
+    {
+      "file": "../op-projection-origin/version-comparison.json",
+      "sha256": "1a5300a6bc9ad7c27e2605e53744ca6299d03412b66f4485cb700689ad0d956e"
+    },
+    {
+      "file": "../op-overflow-import/overflow-source-notes.json",
+      "sha256": "2e4a20692e397ab633b107ca18cc17371e98faa44fd555d74bbddb09446e0b18"
+    },
+    {
+      "file": "../op-projection-origin/tool/node_modules/@open-pencil/scene-graph/dist/index.js",
+      "sha256": "40a1bb3531af3721817cd61a4752fbb1f46c8af8785160780c4244274275b3c3"
+    },
+    {
+      "file": "../op-projection-origin/tool/node_modules/@open-pencil/scene-graph/dist/chunks/index.js",
+      "sha256": "6f1e2821f8bbd7beec6de2f40934d136d7b1aa05331d617dc7955bba7cc63fca"
+    },
+    {
+      "file": "../op-projection-origin/tool/node_modules/@open-pencil/dom-css/dist/export.js",
+      "sha256": "04571b4b80fb028395438acd54763913b415fb94b1ceceba41e7b60c55b056d6"
+    },
+    {
+      "file": "../op-projection-origin/tool/node_modules/@open-pencil/dom-css/dist/chunks/behaviours/states/layers.js",
+      "sha256": "845edc10bedcd52b90e914d7e3719ffc094f231a39e3ddcecc065e38df12246d"
+    },
+    {
+      "file": "../op-projection-origin/tool/node_modules/@open-pencil/dom-css/dist/chunks/behaviours/states/tailwind.js",
+      "sha256": "8f6cba6e69f7742826f797cc38c6d34b6b44121bd6e75d0c37e067e10dab1a68"
+    }
+  ],
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "methods_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "new_conditions": 12,
+  "new_groups": 2,
+  "original_code_modified": false,
+  "full_original_projection_and_html_serialization_executed": true,
+  "fixed_policy_only": true,
+  "auto_scrollbar_or_wheel_policy_claimed": false,
+  "input_bottom_anchor_relation_satisfied": false,
+  "physical_keyboard_tested": false,
+  "at_tested": false
+}

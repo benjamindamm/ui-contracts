@@ -1,0 +1,7 @@
+[
+ {"id":"valid-machine","kind":"valid","expectedDevelopment":true,"expectedProduction":true},
+ {"id":"missing-root-initial-function","kind":"root","expectedDevelopment":true,"expectedProduction":true},
+ {"id":"duplicate-state-ids","kind":"duplicate","expectedDevelopment":false,"expectedProduction":true},
+ {"id":"invalid-compound-initial","kind":"invalid-initial","expectedDevelopment":false,"expectedProduction":true},
+ {"id":"missing-compound-initial","kind":"missing-initial","expectedDevelopment":false,"expectedProduction":false}
+]

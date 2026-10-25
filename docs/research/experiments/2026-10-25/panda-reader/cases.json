@@ -1,0 +1,349 @@
+[
+  {
+    "id": "parse-empty",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "conditions": {},
+      "themes": {},
+      "values": []
+    },
+    "expectedAccepted": true,
+    "criterion": "Valid empty document envelope"
+  },
+  {
+    "id": "parse-populated",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.surface"
+      ],
+      "tokens": {
+        "colors.surface": {
+          "category": "colors"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.surface",
+          "value": "#fff"
+        }
+      ]
+    },
+    "expectedAccepted": true,
+    "criterion": "Conforming minimal color token"
+  },
+  {
+    "id": "parse-bad-json",
+    "input": "{",
+    "expectedAccepted": false,
+    "criterion": "JSON syntax"
+  },
+  {
+    "id": "parse-array",
+    "input": [],
+    "expectedAccepted": false,
+    "criterion": "Root must not be array"
+  },
+  {
+    "id": "parse-missing-table",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "conditions": {},
+      "themes": {}
+    },
+    "expectedAccepted": false,
+    "criterion": "Required table"
+  },
+  {
+    "id": "parse-paths-object",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {},
+      "paths": {},
+      "tokens": {},
+      "conditions": {},
+      "themes": {},
+      "values": []
+    },
+    "expectedAccepted": false,
+    "criterion": "Paths array"
+  },
+  {
+    "id": "parse-values-object",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "conditions": {},
+      "themes": {},
+      "values": {}
+    },
+    "expectedAccepted": false,
+    "criterion": "Values array"
+  },
+  {
+    "id": "parse-future-version",
+    "input": {
+      "schemaVersion": 2,
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "conditions": {},
+      "themes": {},
+      "values": []
+    },
+    "expectedAccepted": false,
+    "criterion": "Version upper bound"
+  },
+  {
+    "id": "parse-string-version",
+    "input": {
+      "schemaVersion": "1",
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "conditions": {},
+      "themes": {},
+      "values": []
+    },
+    "expectedAccepted": false,
+    "criterion": "Version numeric"
+  },
+  {
+    "id": "parse-malformed-tables",
+    "input": {
+      "schemaVersion": 1,
+      "categories": 7,
+      "paths": [],
+      "tokens": false,
+      "conditions": {},
+      "themes": {},
+      "values": []
+    },
+    "expectedAccepted": true,
+    "criterion": "Shallow reader checks presence, not types"
+  },
+  {
+    "id": "parse-null-row",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "conditions": {},
+      "themes": {},
+      "values": [
+        null
+      ]
+    },
+    "expectedAccepted": true,
+    "criterion": "Rows trusted"
+  },
+  {
+    "id": "parse-negative-version",
+    "input": {
+      "schemaVersion": -1,
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "conditions": {},
+      "themes": {},
+      "values": []
+    },
+    "expectedAccepted": true,
+    "criterion": "No lower bound check in this reader"
+  },
+  {
+    "id": "parse-fraction-version",
+    "input": {
+      "schemaVersion": 0.5,
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "conditions": {},
+      "themes": {},
+      "values": []
+    },
+    "expectedAccepted": true,
+    "criterion": "No integer check in this reader"
+  },
+  {
+    "id": "parse-missing-metadata",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {},
+      "paths": [],
+      "tokens": {},
+      "values": []
+    },
+    "expectedAccepted": true,
+    "criterion": "Declared fields not checked by this reader"
+  },
+  {
+    "id": "query-control",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.surface"
+      ],
+      "tokens": {
+        "colors.surface": {
+          "category": "colors"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.surface",
+          "value": "#fff"
+        }
+      ]
+    },
+    "method": "resolve",
+    "args": [
+      "colors.surface"
+    ],
+    "expectedValue": {
+      "token": "colors.surface",
+      "value": "#fff"
+    },
+    "expectedError": false,
+    "criterion": "Original index resolves valid base row"
+  },
+  {
+    "id": "query-duplicate",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.surface"
+      ],
+      "tokens": {
+        "colors.surface": {
+          "category": "colors"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.surface",
+          "value": "#fff"
+        },
+        {
+          "token": "colors.surface",
+          "value": "#000"
+        }
+      ]
+    },
+    "method": "resolve",
+    "args": [
+      "colors.surface"
+    ],
+    "expectedValue": {
+      "token": "colors.surface",
+      "value": "#fff"
+    },
+    "expectedError": false,
+    "criterion": "First matching duplicate wins; not a conflict validator"
+  },
+  {
+    "id": "query-missing-reference",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.surface"
+      ],
+      "tokens": {
+        "colors.surface": {
+          "category": "colors"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.surface",
+          "value": "var(--missing)",
+          "refs": [
+            "colors.missing"
+          ]
+        }
+      ]
+    },
+    "method": "referencesTo",
+    "args": [
+      "colors.missing"
+    ],
+    "expectedValue": [
+      "colors.surface"
+    ],
+    "expectedError": false,
+    "criterion": "Reverse edge exists without target validation"
+  },
+  {
+    "id": "query-null-row",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.surface"
+      ],
+      "tokens": {
+        "colors.surface": {
+          "category": "colors"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        null
+      ]
+    },
+    "method": "valuesFor",
+    "args": [
+      "colors.surface"
+    ],
+    "expectedValue": null,
+    "expectedError": true,
+    "criterion": "Trusted malformed row reaches later index and throws"
+  }
+]

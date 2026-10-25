@@ -1,0 +1,415 @@
+{
+  "scope": "Browser UI automation on own research host with original graph/projection/classifier/state/Vue/Reka chain; final step native programmatic disabled click, no physical keyboard/AT",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "originalGraphProjectionRoleStateChain": true,
+  "originalVueRekaControlChain": true,
+  "ownResearchBootstrap": true,
+  "physicalKeyboardTested": false,
+  "atTested": false,
+  "wholeEditorTested": false,
+  "graphPersistenceOrVariantRoundtripTested": false,
+  "cases": [
+    {
+      "id": "initial",
+      "expectedChecked": [
+        false,
+        false
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false,
+      "observed": {
+        "controls": [
+          {
+            "kind": "switch",
+            "path": "Switch A",
+            "state": {
+              "disabled": false,
+              "value": false
+            }
+          },
+          {
+            "kind": "switch",
+            "path": "Switch B",
+            "state": {
+              "disabled": false,
+              "value": false
+            }
+          }
+        ],
+        "hosts": [
+          {
+            "checked": "false",
+            "disabled": false,
+            "name": "Option A",
+            "path": "Switch A"
+          },
+          {
+            "checked": "false",
+            "disabled": false,
+            "name": "Option B",
+            "path": "Switch B"
+          }
+        ]
+      },
+      "accessibilitySnapshot": {
+        "refs": [
+          {
+            "backendNodeId": 309,
+            "name": "Option A",
+            "nth": 0,
+            "ref": "e1",
+            "role": "switch"
+          },
+          {
+            "backendNodeId": 311,
+            "name": "Option B",
+            "nth": 0,
+            "ref": "e2",
+            "role": "switch"
+          }
+        ],
+        "text": "- heading \"Begrenzte Original-Switch-Liveprobe\" [level=1]\n- main\n  - switch \"Option A\" [ref=e1]\n  - switch \"Option B\" [ref=e2]",
+        "url": "http://127.0.0.1:51480/live.html"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "toggle-a-on",
+      "expectedChecked": [
+        true,
+        false
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false,
+      "observed": {
+        "controls": [
+          {
+            "kind": "switch",
+            "path": "Switch A",
+            "state": {
+              "disabled": false,
+              "value": true
+            }
+          },
+          {
+            "kind": "switch",
+            "path": "Switch B",
+            "state": {
+              "disabled": false,
+              "value": false
+            }
+          }
+        ],
+        "hosts": [
+          {
+            "checked": "true",
+            "disabled": false,
+            "name": "Option A",
+            "path": "Switch A"
+          },
+          {
+            "checked": "false",
+            "disabled": false,
+            "name": "Option B",
+            "path": "Switch B"
+          }
+        ]
+      },
+      "accessibilitySnapshot": {
+        "refs": [
+          {
+            "backendNodeId": 309,
+            "name": "Option A",
+            "nth": 0,
+            "ref": "e1",
+            "role": "switch"
+          },
+          {
+            "backendNodeId": 311,
+            "name": "Option B",
+            "nth": 0,
+            "ref": "e2",
+            "role": "switch"
+          }
+        ],
+        "text": "- heading \"Begrenzte Original-Switch-Liveprobe\" [level=1]\n- main\n  - switch \"Option A\" [ref=e1]\n  - switch \"Option B\" [ref=e2]",
+        "url": "http://127.0.0.1:51480/live.html"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "toggle-b-on",
+      "expectedChecked": [
+        true,
+        true
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false,
+      "observed": {
+        "controls": [
+          {
+            "kind": "switch",
+            "path": "Switch A",
+            "state": {
+              "disabled": false,
+              "value": true
+            }
+          },
+          {
+            "kind": "switch",
+            "path": "Switch B",
+            "state": {
+              "disabled": false,
+              "value": true
+            }
+          }
+        ],
+        "hosts": [
+          {
+            "checked": "true",
+            "disabled": false,
+            "name": "Option A",
+            "path": "Switch A"
+          },
+          {
+            "checked": "true",
+            "disabled": false,
+            "name": "Option B",
+            "path": "Switch B"
+          }
+        ]
+      },
+      "accessibilitySnapshot": {
+        "refs": [
+          {
+            "backendNodeId": 309,
+            "name": "Option A",
+            "nth": 0,
+            "ref": "e1",
+            "role": "switch"
+          },
+          {
+            "backendNodeId": 311,
+            "name": "Option B",
+            "nth": 0,
+            "ref": "e2",
+            "role": "switch"
+          }
+        ],
+        "text": "- heading \"Begrenzte Original-Switch-Liveprobe\" [level=1]\n- main\n  - switch \"Option A\" [ref=e1]\n  - switch \"Option B\" [ref=e2]",
+        "url": "http://127.0.0.1:51480/live.html"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "toggle-a-off",
+      "expectedChecked": [
+        false,
+        true
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false,
+      "observed": {
+        "controls": [
+          {
+            "kind": "switch",
+            "path": "Switch A",
+            "state": {
+              "disabled": false,
+              "value": false
+            }
+          },
+          {
+            "kind": "switch",
+            "path": "Switch B",
+            "state": {
+              "disabled": false,
+              "value": true
+            }
+          }
+        ],
+        "hosts": [
+          {
+            "checked": "false",
+            "disabled": false,
+            "name": "Option A",
+            "path": "Switch A"
+          },
+          {
+            "checked": "true",
+            "disabled": false,
+            "name": "Option B",
+            "path": "Switch B"
+          }
+        ]
+      },
+      "accessibilitySnapshot": {
+        "refs": [
+          {
+            "backendNodeId": 309,
+            "name": "Option A",
+            "nth": 0,
+            "ref": "e1",
+            "role": "switch"
+          },
+          {
+            "backendNodeId": 311,
+            "name": "Option B",
+            "nth": 0,
+            "ref": "e2",
+            "role": "switch"
+          }
+        ],
+        "text": "- heading \"Begrenzte Original-Switch-Liveprobe\" [level=1]\n- main\n  - switch \"Option A\" [ref=e1]\n  - switch \"Option B\" [ref=e2]",
+        "url": "http://127.0.0.1:51480/live.html"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "toggle-b-off",
+      "expectedChecked": [
+        false,
+        false
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false,
+      "observed": {
+        "controls": [
+          {
+            "kind": "switch",
+            "path": "Switch A",
+            "state": {
+              "disabled": false,
+              "value": false
+            }
+          },
+          {
+            "kind": "switch",
+            "path": "Switch B",
+            "state": {
+              "disabled": false,
+              "value": false
+            }
+          }
+        ],
+        "hosts": [
+          {
+            "checked": "false",
+            "disabled": false,
+            "name": "Option A",
+            "path": "Switch A"
+          },
+          {
+            "checked": "false",
+            "disabled": false,
+            "name": "Option B",
+            "path": "Switch B"
+          }
+        ]
+      },
+      "accessibilitySnapshot": {
+        "refs": [
+          {
+            "backendNodeId": 309,
+            "name": "Option A",
+            "nth": 0,
+            "ref": "e1",
+            "role": "switch"
+          },
+          {
+            "backendNodeId": 311,
+            "name": "Option B",
+            "nth": 0,
+            "ref": "e2",
+            "role": "switch"
+          }
+        ],
+        "text": "- heading \"Begrenzte Original-Switch-Liveprobe\" [level=1]\n- main\n  - switch \"Option A\" [ref=e1]\n  - switch \"Option B\" [ref=e2]",
+        "url": "http://127.0.0.1:51480/live.html"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "disabled-a-programmatic-click",
+      "expectedChecked": [
+        false,
+        false
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": true,
+      "observed": {
+        "controls": [
+          {
+            "kind": "switch",
+            "path": "Switch A",
+            "state": {
+              "disabled": true,
+              "value": false
+            }
+          },
+          {
+            "kind": "switch",
+            "path": "Switch B",
+            "state": {
+              "disabled": false,
+              "value": false
+            }
+          }
+        ],
+        "hosts": [
+          {
+            "checked": "false",
+            "disabled": true,
+            "name": "Option A",
+            "path": "Switch A"
+          },
+          {
+            "checked": "false",
+            "disabled": false,
+            "name": "Option B",
+            "path": "Switch B"
+          }
+        ]
+      },
+      "accessibilitySnapshot": {
+        "refs": [
+          {
+            "backendNodeId": 309,
+            "name": "Option A",
+            "nth": 0,
+            "ref": "e1",
+            "role": "switch"
+          },
+          {
+            "backendNodeId": 311,
+            "name": "Option B",
+            "nth": 0,
+            "ref": "e2",
+            "role": "switch"
+          }
+        ],
+        "text": "- heading \"Begrenzte Original-Switch-Liveprobe\" [level=1]\n- main\n  - switch \"Option A\" [disabled] [ref=e1]\n  - switch \"Option B\" [ref=e2]",
+        "url": "http://127.0.0.1:51480/live.html"
+      },
+      "expectationMet": true
+    }
+  ]
+}

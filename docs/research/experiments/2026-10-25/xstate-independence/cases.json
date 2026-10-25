@@ -1,0 +1,34 @@
+[
+  {
+    "id": "separate-original-inputs",
+    "expected": "all four separate hashes, CEM declaration and actual SDK root/state map bind"
+  },
+  {
+    "id": "actor-initial",
+    "expected": "separate actors both closed"
+  },
+  {
+    "id": "open-A",
+    "expected": "A open; B closed"
+  },
+  {
+    "id": "open-B-close-A",
+    "expected": "A closed; B open"
+  },
+  {
+    "id": "visual-change-independent",
+    "expected": "only own CSS copy changed; SDK config and all other source hashes unchanged"
+  },
+  {
+    "id": "foreign-domain-alias",
+    "expected": "profile claiming visual file as behavior rejected before SDK"
+  },
+  {
+    "id": "stale-behavior-hash",
+    "expected": "profile with stale behavior hash rejected"
+  },
+  {
+    "id": "foreign-instance-part",
+    "expected": "A popup redirected to B rejected"
+  }
+]

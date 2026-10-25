@@ -1,0 +1,937 @@
+{
+  "date": "2026-10-25",
+  "baseline_claims": 489,
+  "baseline_conditions": 383,
+  "baseline_groups": 48,
+  "remaining_cells": 2,
+  "class_counts": {
+    "a": 0,
+    "b": 2,
+    "c": 0
+  },
+  "meaning_a": "independently investigable, not promised to become positive or closed",
+  "no_criterion_change": true,
+  "no_author_messages_sent": true,
+  "cells": [
+    {
+      "requirement": "X06",
+      "candidate": "Google DESIGN.md",
+      "coverage": "U",
+      "claim": "C483",
+      "plan_class": "b",
+      "group": "ORIGINAL",
+      "priority": 8,
+      "question": "Google: offizielles Dokument-Schema-/Ergebnisbinding. OpenUI: kanonische Vorrangregel zwischen konkret widersprüchlichen Originaldefinitionen.",
+      "stop_criterion": "Erst neue belastbare Herausgeberinformation oder ein bisher nicht gelesener tatsächlich benannter Originaleinstieg eröffnet diese Frage erneut. Keine identischen Parser-/Katalogproben im Kreis und keine Abstimmung des Nutzers über technische Wahrheit.",
+      "source_scope": "C483/C484; final-x06-scope. Keine Autorenanfrage versandt.",
+      "current_claim": "C483",
+      "latest_overall_review": "REMAINING-2.md",
+      "review_state": "named original clarification required; no repeat of exhausted parser/schema scope",
+      "next_missing_assertion": "Originales ConfigSchema validiert Redaktionskonfiguration, nicht eindeutig den eingereichten DESIGN.md-Dokumentgegenstand. Eigenes Colorbinding beantwortet diese Originalschemafrage nicht.",
+      "reviewed_current_claim": "C483",
+      "next_named_path": "Neue belastbare Originalfestlegung des Dokumentdatenmodell-/Schema-/Ergebnisbindings einschließlich Root-/Optionalitätsbedeutung. Bisherige Config-/Parserproben oder eigene zusätzliche Prosaabbildung entscheiden das nicht.",
+      "reopen_condition": "Neue konkret benannte Originalinformation erforderlich; keine Autorenanfrage versandt."
+    },
+    {
+      "requirement": "X06",
+      "candidate": "OpenUI",
+      "coverage": "U",
+      "claim": "C484",
+      "plan_class": "b",
+      "group": "ORIGINAL",
+      "priority": 8,
+      "question": "Google: offizielles Dokument-Schema-/Ergebnisbinding. OpenUI: kanonische Vorrangregel zwischen konkret widersprüchlichen Originaldefinitionen.",
+      "stop_criterion": "Erst neue belastbare Herausgeberinformation oder ein bisher nicht gelesener tatsächlich benannter Originaleinstieg eröffnet diese Frage erneut. Keine identischen Parser-/Katalogproben im Kreis und keine Abstimmung des Nutzers über technische Wahrheit.",
+      "source_scope": "C483/C484; final-x06-scope. Keine Autorenanfrage versandt.",
+      "current_claim": "C484",
+      "latest_overall_review": "REMAINING-2.md",
+      "review_state": "named original clarification required; no repeat of exhausted parser/schema scope",
+      "next_missing_assertion": "Die konkret widersprüchlichen Root-/enum-/required-/Defaultformen der Originaldefinitionen bleiben ohne kanonische Vorrangregel. Der einfache Originaltyp-Teilbeitrag umgeht diese Entscheidung ausdrücklich.",
+      "reviewed_current_claim": "C484",
+      "next_named_path": "Neue Herausgeber-Vorrang-/Synchronisationsregel samt an dieselbe Definition gebundenem Originalprüfpaar. Eigener TypeScriptcheck gegen einen selbst gewählten Stand wäre keine solche Entscheidung.",
+      "reopen_condition": "Neue konkret benannte Originalinformation erforderlich; keine Autorenanfrage versandt."
+    }
+  ],
+  "latest_progress": {
+    "claims": 500,
+    "conditions": 435,
+    "groups": 56,
+    "report": "experiments/2026-10-25/openpencil-layout-runtime/REPORT.md",
+    "runtime_conditions_added": 12,
+    "desired_input_anchor_growth_relation_satisfied": false
+  },
+  "baseline_cells": [
+    {
+      "requirement": "X01",
+      "candidate": "XState",
+      "coverage": "U",
+      "claim": "C79",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C79"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "Zag",
+      "coverage": "U",
+      "claim": "C98",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C98"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "Zag",
+      "coverage": "U",
+      "claim": "C99",
+      "plan_class": "a",
+      "group": "REFERENCES",
+      "priority": 4,
+      "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
+      "current_claim": "C99"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "Google DESIGN.md",
+      "coverage": "U",
+      "claim": "C122",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C122"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "Google DESIGN.md",
+      "coverage": "U",
+      "claim": "C483",
+      "plan_class": "b",
+      "group": "ORIGINAL",
+      "priority": 8,
+      "question": "Google: offizielles Dokument-Schema-/Ergebnisbinding. OpenUI: kanonische Vorrangregel zwischen konkret widersprüchlichen Originaldefinitionen.",
+      "stop_criterion": "Erst neue belastbare Herausgeberinformation oder ein bisher nicht gelesener tatsächlich benannter Originaleinstieg eröffnet diese Frage erneut. Keine identischen Parser-/Katalogproben im Kreis und keine Abstimmung des Nutzers über technische Wahrheit.",
+      "source_scope": "C483/C484; final-x06-scope. Keine Autorenanfrage versandt.",
+      "current_claim": "C483"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "OpenUI",
+      "coverage": "U",
+      "claim": "C148",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C148"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "OpenUI",
+      "coverage": "U",
+      "claim": "C484",
+      "plan_class": "b",
+      "group": "ORIGINAL",
+      "priority": 8,
+      "question": "Google: offizielles Dokument-Schema-/Ergebnisbinding. OpenUI: kanonische Vorrangregel zwischen konkret widersprüchlichen Originaldefinitionen.",
+      "stop_criterion": "Erst neue belastbare Herausgeberinformation oder ein bisher nicht gelesener tatsächlich benannter Originaleinstieg eröffnet diese Frage erneut. Keine identischen Parser-/Katalogproben im Kreis und keine Abstimmung des Nutzers über technische Wahrheit.",
+      "source_scope": "C483/C484; final-x06-scope. Keine Autorenanfrage versandt.",
+      "current_claim": "C484"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "AgentsORG",
+      "coverage": "U",
+      "claim": "C174",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C174"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "AgentsORG",
+      "coverage": "U",
+      "claim": "C181",
+      "plan_class": "a",
+      "group": "OWNERSHIP",
+      "priority": 6,
+      "question": "Pro Kandidat konkrete ursprüngliche Information, führende Quelle, zulässige Ableitung und Änderung am vorhandenen Referenzfall verfolgen.",
+      "stop_criterion": "Mindestens ein neuer kandidatenspezifischer Änderungs-/Konfliktpfad muss seinen Originalbezug nachweisen. Vorhandene generische Konfliktproben nicht erneut zählen oder ungeprüft auf andere Modelle übertragen.",
+      "source_scope": "Bestehendes Ownershippaket und jeweilige Originalquellen/Versionsbindung; eigene Regeln sichtbar als Ergänzung.",
+      "current_claim": "C181"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C420",
+      "plan_class": "a",
+      "group": "LAYOUT",
+      "priority": 2,
+      "question": "Pro Originalmodell Schema/Typ, zugehörigen konkreten Import-/Renderer-/Exportpfad und formale Ziel-/Scrollbedeutung gemeinsam abgleichen. Bestehende OpenPencil-Feldverlustprobe nicht wiederholen.",
+      "stop_criterion": "Nur ein neuer vollständiger Originalpfad oder eine konkret neue Modellbindung kann den bereits bekannten Befund erweitern. Nach benanntem Schema-/Einstiegsabgleich Ergebnis oder präzise fehlenden Originalpfad festhalten; keine Suche über beliebige künftige Werkzeuge.",
+      "source_scope": "UXSpec/uSpec/OpenPencil-Pins und gespeicherte Layoutfolgeprüfungen; unveränderte Originaldateien vor neuem Lauf identifizieren.",
+      "current_claim": "C420"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C420",
+      "plan_class": "a",
+      "group": "LAYOUT",
+      "priority": 2,
+      "question": "Pro Originalmodell Schema/Typ, zugehörigen konkreten Import-/Renderer-/Exportpfad und formale Ziel-/Scrollbedeutung gemeinsam abgleichen. Bestehende OpenPencil-Feldverlustprobe nicht wiederholen.",
+      "stop_criterion": "Nur ein neuer vollständiger Originalpfad oder eine konkret neue Modellbindung kann den bereits bekannten Befund erweitern. Nach benanntem Schema-/Einstiegsabgleich Ergebnis oder präzise fehlenden Originalpfad festhalten; keine Suche über beliebige künftige Werkzeuge.",
+      "source_scope": "UXSpec/uSpec/OpenPencil-Pins und gespeicherte Layoutfolgeprüfungen; unveränderte Originaldateien vor neuem Lauf identifizieren.",
+      "current_claim": "C420"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C200",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C200"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "UXSpec",
+      "coverage": "U",
+      "claim": "C426",
+      "plan_class": "a",
+      "group": "REFERENCES",
+      "priority": 4,
+      "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
+      "current_claim": "C426"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "Ark UI",
+      "coverage": "U",
+      "claim": "C226",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C226"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "Ark UI",
+      "coverage": "U",
+      "claim": "C228",
+      "plan_class": "a",
+      "group": "REFERENCES",
+      "priority": 4,
+      "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
+      "current_claim": "C228"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "Panda CSS",
+      "coverage": "U",
+      "claim": "C252",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C252"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "Panda CSS",
+      "coverage": "U",
+      "claim": "C259",
+      "plan_class": "a",
+      "group": "OWNERSHIP",
+      "priority": 6,
+      "question": "Pro Kandidat konkrete ursprüngliche Information, führende Quelle, zulässige Ableitung und Änderung am vorhandenen Referenzfall verfolgen.",
+      "stop_criterion": "Mindestens ein neuer kandidatenspezifischer Änderungs-/Konfliktpfad muss seinen Originalbezug nachweisen. Vorhandene generische Konfliktproben nicht erneut zählen oder ungeprüft auf andere Modelle übertragen.",
+      "source_scope": "Bestehendes Ownershippaket und jeweilige Originalquellen/Versionsbindung; eigene Regeln sichtbar als Ergänzung.",
+      "current_claim": "C259"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "uSpec",
+      "coverage": "U",
+      "claim": "C400",
+      "plan_class": "a",
+      "group": "LAYOUT",
+      "priority": 2,
+      "question": "Pro Originalmodell Schema/Typ, zugehörigen konkreten Import-/Renderer-/Exportpfad und formale Ziel-/Scrollbedeutung gemeinsam abgleichen. Bestehende OpenPencil-Feldverlustprobe nicht wiederholen.",
+      "stop_criterion": "Nur ein neuer vollständiger Originalpfad oder eine konkret neue Modellbindung kann den bereits bekannten Befund erweitern. Nach benanntem Schema-/Einstiegsabgleich Ergebnis oder präzise fehlenden Originalpfad festhalten; keine Suche über beliebige künftige Werkzeuge.",
+      "source_scope": "UXSpec/uSpec/OpenPencil-Pins und gespeicherte Layoutfolgeprüfungen; unveränderte Originaldateien vor neuem Lauf identifizieren.",
+      "current_claim": "C400"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "uSpec",
+      "coverage": "U",
+      "claim": "C401",
+      "plan_class": "a",
+      "group": "LAYOUT",
+      "priority": 2,
+      "question": "Pro Originalmodell Schema/Typ, zugehörigen konkreten Import-/Renderer-/Exportpfad und formale Ziel-/Scrollbedeutung gemeinsam abgleichen. Bestehende OpenPencil-Feldverlustprobe nicht wiederholen.",
+      "stop_criterion": "Nur ein neuer vollständiger Originalpfad oder eine konkret neue Modellbindung kann den bereits bekannten Befund erweitern. Nach benanntem Schema-/Einstiegsabgleich Ergebnis oder präzise fehlenden Originalpfad festhalten; keine Suche über beliebige künftige Werkzeuge.",
+      "source_scope": "UXSpec/uSpec/OpenPencil-Pins und gespeicherte Layoutfolgeprüfungen; unveränderte Originaldateien vor neuem Lauf identifizieren.",
+      "current_claim": "C401"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "uSpec",
+      "coverage": "U",
+      "claim": "C278",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C278"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "uSpec",
+      "coverage": "U",
+      "claim": "C280",
+      "plan_class": "a",
+      "group": "REFERENCES",
+      "priority": 4,
+      "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
+      "current_claim": "C280"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "uSpec",
+      "coverage": "U",
+      "claim": "C285",
+      "plan_class": "a",
+      "group": "OWNERSHIP",
+      "priority": 6,
+      "question": "Pro Kandidat konkrete ursprüngliche Information, führende Quelle, zulässige Ableitung und Änderung am vorhandenen Referenzfall verfolgen.",
+      "stop_criterion": "Mindestens ein neuer kandidatenspezifischer Änderungs-/Konfliktpfad muss seinen Originalbezug nachweisen. Vorhandene generische Konfliktproben nicht erneut zählen oder ungeprüft auf andere Modelle übertragen.",
+      "source_scope": "Bestehendes Ownershippaket und jeweilige Originalquellen/Versionsbindung; eigene Regeln sichtbar als Ergänzung.",
+      "current_claim": "C285"
+    },
+    {
+      "requirement": "V04",
+      "candidate": "OpenPencil",
+      "coverage": "U",
+      "claim": "C437",
+      "plan_class": "a",
+      "group": "LAYOUT",
+      "priority": 2,
+      "question": "Pro Originalmodell Schema/Typ, zugehörigen konkreten Import-/Renderer-/Exportpfad und formale Ziel-/Scrollbedeutung gemeinsam abgleichen. Bestehende OpenPencil-Feldverlustprobe nicht wiederholen.",
+      "stop_criterion": "Nur ein neuer vollständiger Originalpfad oder eine konkret neue Modellbindung kann den bereits bekannten Befund erweitern. Nach benanntem Schema-/Einstiegsabgleich Ergebnis oder präzise fehlenden Originalpfad festhalten; keine Suche über beliebige künftige Werkzeuge.",
+      "source_scope": "UXSpec/uSpec/OpenPencil-Pins und gespeicherte Layoutfolgeprüfungen; unveränderte Originaldateien vor neuem Lauf identifizieren.",
+      "current_claim": "C437"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "OpenPencil",
+      "coverage": "U",
+      "claim": "C487",
+      "plan_class": "a",
+      "group": "LAYOUT",
+      "priority": 2,
+      "question": "Pro Originalmodell Schema/Typ, zugehörigen konkreten Import-/Renderer-/Exportpfad und formale Ziel-/Scrollbedeutung gemeinsam abgleichen. Bestehende OpenPencil-Feldverlustprobe nicht wiederholen.",
+      "stop_criterion": "Nur ein neuer vollständiger Originalpfad oder eine konkret neue Modellbindung kann den bereits bekannten Befund erweitern. Nach benanntem Schema-/Einstiegsabgleich Ergebnis oder präzise fehlenden Originalpfad festhalten; keine Suche über beliebige künftige Werkzeuge.",
+      "source_scope": "UXSpec/uSpec/OpenPencil-Pins und gespeicherte Layoutfolgeprüfungen; unveränderte Originaldateien vor neuem Lauf identifizieren.",
+      "current_claim": "C487"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "OpenPencil",
+      "coverage": "U",
+      "claim": "C440",
+      "plan_class": "a",
+      "group": "ACCESS",
+      "priority": 1,
+      "question": "Originalen Role-/Render-/Statepfad am bekannten Pin mit zwei Instanzen prüfen; Rollen/Namen/Zielbeziehungen und zugänglichen Zustand getrennt von frei formulierter Ergebnisansage erfassen.",
+      "stop_criterion": "Begrenzte Eingaben und erwartete Hostattribute/Instanzzugehörigkeit vorab festlegen; Originalpfad oder klar benannte originale Teilfunktionen ausführen. Zuschreibung R/A/D nur im tatsächlich nachgewiesenen Umfang. Fehlende Namens-/Meldungsherkunft exakt erhalten.",
+      "source_scope": "OpenPencil ab2875c; bekannte Reka-Quelle a1d44a8 als eigener Beitrag, Vue-Peerstand nur für ausgewiesene Runtimeprobe.",
+      "current_claim": "C490"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "OpenPencil",
+      "coverage": "U",
+      "claim": "C441",
+      "plan_class": "a",
+      "group": "ACCESS",
+      "priority": 1,
+      "question": "Originalen Role-/Render-/Statepfad am bekannten Pin mit zwei Instanzen prüfen; Rollen/Namen/Zielbeziehungen und zugänglichen Zustand getrennt von frei formulierter Ergebnisansage erfassen.",
+      "stop_criterion": "Begrenzte Eingaben und erwartete Hostattribute/Instanzzugehörigkeit vorab festlegen; Originalpfad oder klar benannte originale Teilfunktionen ausführen. Zuschreibung R/A/D nur im tatsächlich nachgewiesenen Umfang. Fehlende Namens-/Meldungsherkunft exakt erhalten.",
+      "source_scope": "OpenPencil ab2875c; bekannte Reka-Quelle a1d44a8 als eigener Beitrag, Vue-Peerstand nur für ausgewiesene Runtimeprobe.",
+      "current_claim": "C491"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "OpenPencil",
+      "coverage": "U",
+      "claim": "C304",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C304"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "OpenPencil",
+      "coverage": "U",
+      "claim": "C306",
+      "plan_class": "a",
+      "group": "REFERENCES",
+      "priority": 4,
+      "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
+      "current_claim": "C306"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "OpenPencil",
+      "coverage": "U",
+      "claim": "C311",
+      "plan_class": "a",
+      "group": "OWNERSHIP",
+      "priority": 6,
+      "question": "Pro Kandidat konkrete ursprüngliche Information, führende Quelle, zulässige Ableitung und Änderung am vorhandenen Referenzfall verfolgen.",
+      "stop_criterion": "Mindestens ein neuer kandidatenspezifischer Änderungs-/Konfliktpfad muss seinen Originalbezug nachweisen. Vorhandene generische Konfliktproben nicht erneut zählen oder ungeprüft auf andere Modelle übertragen.",
+      "source_scope": "Bestehendes Ownershippaket und jeweilige Originalquellen/Versionsbindung; eigene Regeln sichtbar als Ergänzung.",
+      "current_claim": "C311"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "WAI-ARIA",
+      "coverage": "U",
+      "claim": "C316",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C316"
+    },
+    {
+      "requirement": "V06",
+      "candidate": "WAI-ARIA",
+      "coverage": "U",
+      "claim": "C322",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C322"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "WAI-ARIA",
+      "coverage": "U",
+      "claim": "C337",
+      "plan_class": "a",
+      "group": "OWNERSHIP",
+      "priority": 6,
+      "question": "Pro Kandidat konkrete ursprüngliche Information, führende Quelle, zulässige Ableitung und Änderung am vorhandenen Referenzfall verfolgen.",
+      "stop_criterion": "Mindestens ein neuer kandidatenspezifischer Änderungs-/Konfliktpfad muss seinen Originalbezug nachweisen. Vorhandene generische Konfliktproben nicht erneut zählen oder ungeprüft auf andere Modelle übertragen.",
+      "source_scope": "Bestehendes Ownershippaket und jeweilige Originalquellen/Versionsbindung; eigene Regeln sichtbar als Ergänzung.",
+      "current_claim": "C337"
+    },
+    {
+      "requirement": "X01",
+      "candidate": "APG",
+      "coverage": "U",
+      "claim": "C356",
+      "plan_class": "a",
+      "group": "INDEPENDENCE",
+      "priority": 5,
+      "question": "Für den jeweiligen Originalgegenstand feststellen, ob vier fachlich unabhängige Beiträge ohne fremde Pflichtdefinition geführt werden können; tatsächliche API-/Dateipflichten statt Werbeaussagen prüfen.",
+      "stop_criterion": "Die konkrete Viererbelegung muss mit Originalpflichten vereinbar sein oder eine belegte Modellgrenze beziehungsweise präzise fehlende Originalinformation dokumentiert werden. Aus vier Dateinamen allein folgt keine Abdeckung.",
+      "source_scope": "Bereits gepinnte Kandidatenmodelle; bestehendes Forschungsprofil ist keine Produktformatentscheidung.",
+      "current_claim": "C356"
+    },
+    {
+      "requirement": "X03",
+      "candidate": "APG",
+      "coverage": "U",
+      "claim": "C358",
+      "plan_class": "a",
+      "group": "REFERENCES",
+      "priority": 4,
+      "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
+      "current_claim": "C358"
+    },
+    {
+      "requirement": "X04",
+      "candidate": "APG",
+      "coverage": "U",
+      "claim": "C359",
+      "plan_class": "a",
+      "group": "COMPOSITION",
+      "priority": 7,
+      "question": "Benannte Combobox-/Popup-Beispielkomposition gegen Definition/Verwendung, eigenen Kontext und Parameter-/Lifecyclebindung abgleichen.",
+      "stop_criterion": "Belegten ursprünglichen Kompositionsgegenstand bestimmen; Beispiel-HTML nicht als schon vorhandenen neutralen Childvertrag ausgeben. Ohne neues Originalmodell keine neue frei erfundene APG-Dateisprache.",
+      "source_scope": "APG 0f765e4; vorhandene Pattern-/Beispielquellen, SCXML-invoke nur als getrennter Vergleich.",
+      "current_claim": "C359"
+    },
+    {
+      "requirement": "X08",
+      "candidate": "APG",
+      "coverage": "U",
+      "claim": "C363",
+      "plan_class": "a",
+      "group": "OWNERSHIP",
+      "priority": 6,
+      "question": "Pro Kandidat konkrete ursprüngliche Information, führende Quelle, zulässige Ableitung und Änderung am vorhandenen Referenzfall verfolgen.",
+      "stop_criterion": "Mindestens ein neuer kandidatenspezifischer Änderungs-/Konfliktpfad muss seinen Originalbezug nachweisen. Vorhandene generische Konfliktproben nicht erneut zählen oder ungeprüft auf andere Modelle übertragen.",
+      "source_scope": "Bestehendes Ownershippaket und jeweilige Originalquellen/Versionsbindung; eigene Regeln sichtbar als Ergänzung.",
+      "current_claim": "C363"
+    },
+    {
+      "requirement": "I01",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C366",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C366"
+    },
+    {
+      "requirement": "I02",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C367",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C367"
+    },
+    {
+      "requirement": "I03",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C368",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C368"
+    },
+    {
+      "requirement": "B01",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C375",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C375"
+    },
+    {
+      "requirement": "B02",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C376",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C376"
+    },
+    {
+      "requirement": "B03",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C377",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C377"
+    },
+    {
+      "requirement": "B04",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C378",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C378"
+    },
+    {
+      "requirement": "A01",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C379",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C379"
+    },
+    {
+      "requirement": "A02",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C380",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C380"
+    },
+    {
+      "requirement": "A03",
+      "candidate": "CSS Layout",
+      "coverage": "U",
+      "claim": "C381",
+      "plan_class": "a",
+      "group": "COMPLEMENT",
+      "priority": 3,
+      "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
+      "current_claim": "C381"
+    }
+  ],
+  "baseline_remaining_cells": 46,
+  "baseline_class_counts": {
+    "a": 44,
+    "b": 2,
+    "c": 0
+  },
+  "closed_since_baseline": [
+    {
+      "candidate": "CSS Layout",
+      "requirement": "I03",
+      "coverage": "A",
+      "claim": "C492"
+    },
+    {
+      "candidate": "WAI-ARIA",
+      "requirement": "I03",
+      "coverage": "A",
+      "claim": "C493"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "A01",
+      "coverage": "R",
+      "claim": "C494"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "A03",
+      "coverage": "R",
+      "claim": "C495"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "V06",
+      "coverage": "A",
+      "claim": "C498"
+    },
+    {
+      "candidate": "XState",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C501"
+    },
+    {
+      "candidate": "WAI-ARIA",
+      "requirement": "X08",
+      "coverage": "A",
+      "claim": "C504"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "X03",
+      "coverage": "A",
+      "claim": "C505"
+    },
+    {
+      "candidate": "Panda CSS",
+      "requirement": "X08",
+      "coverage": "A",
+      "claim": "C506"
+    },
+    {
+      "candidate": "AgentsORG",
+      "requirement": "X08",
+      "coverage": "A",
+      "claim": "C507"
+    },
+    {
+      "candidate": "AgentsORG",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C508"
+    },
+    {
+      "candidate": "UXSpec",
+      "requirement": "X03",
+      "coverage": "A",
+      "claim": "C509"
+    },
+    {
+      "candidate": "Zag",
+      "requirement": "X03",
+      "coverage": "A",
+      "claim": "C510"
+    },
+    {
+      "candidate": "Ark UI",
+      "requirement": "X03",
+      "coverage": "A",
+      "claim": "C511"
+    },
+    {
+      "candidate": "APG",
+      "requirement": "X03",
+      "coverage": "A",
+      "claim": "C513"
+    },
+    {
+      "candidate": "APG",
+      "requirement": "X04",
+      "coverage": "A",
+      "claim": "C514"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "X08",
+      "coverage": "A",
+      "claim": "C515"
+    },
+    {
+      "candidate": "APG",
+      "requirement": "X08",
+      "coverage": "A",
+      "claim": "C517"
+    },
+    {
+      "candidate": "Zag",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C518"
+    },
+    {
+      "candidate": "Ark UI",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C519"
+    },
+    {
+      "candidate": "UXSpec",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C520"
+    },
+    {
+      "candidate": "Panda CSS",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C521"
+    },
+    {
+      "candidate": "APG",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C522"
+    },
+    {
+      "candidate": "Google DESIGN.md",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C523"
+    },
+    {
+      "candidate": "OpenUI",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C524"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "V04",
+      "coverage": "R",
+      "claim": "C525"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "I01",
+      "coverage": "A",
+      "claim": "C526"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "I02",
+      "coverage": "A",
+      "claim": "C527"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "B01",
+      "coverage": "A",
+      "claim": "C528"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "B02",
+      "coverage": "A",
+      "claim": "C529"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "B03",
+      "coverage": "A",
+      "claim": "C530"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "B04",
+      "coverage": "A",
+      "claim": "C531"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "A01",
+      "coverage": "A",
+      "claim": "C532"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "A02",
+      "coverage": "A",
+      "claim": "C533"
+    },
+    {
+      "candidate": "CSS Layout",
+      "requirement": "A03",
+      "coverage": "A",
+      "claim": "C534"
+    },
+    {
+      "candidate": "WAI-ARIA",
+      "requirement": "V06",
+      "coverage": "A",
+      "claim": "C535"
+    },
+    {
+      "candidate": "UXSpec",
+      "requirement": "V04",
+      "coverage": "A",
+      "claim": "C540"
+    },
+    {
+      "candidate": "UXSpec",
+      "requirement": "V06",
+      "coverage": "A",
+      "claim": "C541"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "V04",
+      "coverage": "A",
+      "claim": "C542"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "V06",
+      "coverage": "A",
+      "claim": "C543"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C538"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X03",
+      "coverage": "A",
+      "claim": "C536"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X08",
+      "coverage": "A",
+      "claim": "C537"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C539"
+    }
+  ],
+  "next_independent_group": "INDEPENDENCE",
+  "last_complete_queue_review": "REMAINING-2.md"
+}

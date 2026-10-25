@@ -1,0 +1,357 @@
+{
+  "scope": "Four separately assessed original contributions with additional four-domain bindings, original SSR/compiler/reader; no mounted interaction, actual timer, Rust generator, browser or AT",
+  "cases": [
+    {
+      "id": "uxspec-base",
+      "candidate": "UXSpec",
+      "revision": "base",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "compiled": {
+          "$format": "uxspec-compiled",
+          "$version": "0.2",
+          "initial": "closed",
+          "contextSchema": {},
+          "eventSchema": {
+            "OPEN": {
+              "source": "user"
+            },
+            "CLOSE": {
+              "source": "user"
+            }
+          },
+          "states": {
+            "closed": {
+              "path": "closed",
+              "visual": {},
+              "transitions": [
+                {
+                  "event": "OPEN",
+                  "target": "open",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            },
+            "open": {
+              "path": "open",
+              "visual": {},
+              "transitions": [
+                {
+                  "event": "CLOSE",
+                  "target": "closed",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            }
+          },
+          "assertions": []
+        },
+        "originalCompilation": {
+          "ok": true,
+          "compiled": {
+            "$format": "uxspec-compiled",
+            "$version": "0.2",
+            "initial": "closed",
+            "contextSchema": {},
+            "eventSchema": {
+              "OPEN": {
+                "source": "user"
+              },
+              "CLOSE": {
+                "source": "user"
+              }
+            },
+            "states": {
+              "closed": {
+                "path": "closed",
+                "visual": {},
+                "transitions": [
+                  {
+                    "event": "OPEN",
+                    "target": "open",
+                    "guard": null,
+                    "actions": []
+                  }
+                ],
+                "entry": [],
+                "exit": [],
+                "invoke": []
+              },
+              "open": {
+                "path": "open",
+                "visual": {},
+                "transitions": [
+                  {
+                    "event": "CLOSE",
+                    "target": "closed",
+                    "guard": null,
+                    "actions": []
+                  }
+                ],
+                "entry": [],
+                "exit": [],
+                "invoke": []
+              }
+            },
+            "assertions": []
+          },
+          "issues": [],
+          "trace": [
+            {
+              "phase": "state-paths",
+              "kind": "initial",
+              "path": "$machine.initial",
+              "input": "closed",
+              "output": "closed",
+              "status": "ok"
+            },
+            {
+              "phase": "state-paths",
+              "kind": "target",
+              "path": "$machine.states.closed.on.OPEN",
+              "input": "open",
+              "output": "open",
+              "status": "ok"
+            },
+            {
+              "phase": "state-paths",
+              "kind": "target",
+              "path": "$machine.states.open.on.CLOSE",
+              "input": "closed",
+              "output": "closed",
+              "status": "ok"
+            }
+          ]
+        },
+        "semanticBinding": "closed/open states -> own stateView of separate popup; interface CEM parts and HTML role targets resolved by additional binder",
+        "sourceHasNoVisualInterfaceOrAccessibilityDefinition": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "570d72c6689a9884659ca88be1dda2e4859ac43c8336bbda452431742100b57f",
+          "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": {
+          "closed": {
+            "popupVisible": false
+          },
+          "open": {
+            "popupVisible": true
+          }
+        },
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalUxspecSchema": true,
+        "actualCompiledStateBinding": true,
+        "separateVisualTargets": true
+      }
+    },
+    {
+      "id": "uxspec-visual-revision",
+      "candidate": "UXSpec",
+      "revision": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "compiled": {
+          "$format": "uxspec-compiled",
+          "$version": "0.2",
+          "initial": "closed",
+          "contextSchema": {},
+          "eventSchema": {
+            "OPEN": {
+              "source": "user"
+            },
+            "CLOSE": {
+              "source": "user"
+            }
+          },
+          "states": {
+            "closed": {
+              "path": "closed",
+              "visual": {},
+              "transitions": [
+                {
+                  "event": "OPEN",
+                  "target": "open",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            },
+            "open": {
+              "path": "open",
+              "visual": {},
+              "transitions": [
+                {
+                  "event": "CLOSE",
+                  "target": "closed",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            }
+          },
+          "assertions": []
+        },
+        "originalCompilation": {
+          "ok": true,
+          "compiled": {
+            "$format": "uxspec-compiled",
+            "$version": "0.2",
+            "initial": "closed",
+            "contextSchema": {},
+            "eventSchema": {
+              "OPEN": {
+                "source": "user"
+              },
+              "CLOSE": {
+                "source": "user"
+              }
+            },
+            "states": {
+              "closed": {
+                "path": "closed",
+                "visual": {},
+                "transitions": [
+                  {
+                    "event": "OPEN",
+                    "target": "open",
+                    "guard": null,
+                    "actions": []
+                  }
+                ],
+                "entry": [],
+                "exit": [],
+                "invoke": []
+              },
+              "open": {
+                "path": "open",
+                "visual": {},
+                "transitions": [
+                  {
+                    "event": "CLOSE",
+                    "target": "closed",
+                    "guard": null,
+                    "actions": []
+                  }
+                ],
+                "entry": [],
+                "exit": [],
+                "invoke": []
+              }
+            },
+            "assertions": []
+          },
+          "issues": [],
+          "trace": [
+            {
+              "phase": "state-paths",
+              "kind": "initial",
+              "path": "$machine.initial",
+              "input": "closed",
+              "output": "closed",
+              "status": "ok"
+            },
+            {
+              "phase": "state-paths",
+              "kind": "target",
+              "path": "$machine.states.closed.on.OPEN",
+              "input": "open",
+              "output": "open",
+              "status": "ok"
+            },
+            {
+              "phase": "state-paths",
+              "kind": "target",
+              "path": "$machine.states.open.on.CLOSE",
+              "input": "closed",
+              "output": "closed",
+              "status": "ok"
+            }
+          ]
+        },
+        "semanticBinding": "closed/open states -> own stateView of separate popup; interface CEM parts and HTML role targets resolved by additional binder",
+        "sourceHasNoVisualInterfaceOrAccessibilityDefinition": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "570d72c6689a9884659ca88be1dda2e4859ac43c8336bbda452431742100b57f",
+          "visual": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": {
+          "closed": {
+            "popupVisible": false
+          },
+          "open": {
+            "popupVisible": true
+          }
+        },
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalUxspecSchema": true,
+        "actualCompiledStateBinding": true,
+        "separateVisualTargets": true
+      }
+    }
+  ]
+}

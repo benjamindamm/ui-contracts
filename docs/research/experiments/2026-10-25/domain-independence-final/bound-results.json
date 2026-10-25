@@ -1,0 +1,739 @@
+{
+  "scope": "Four separately assessed original contributions with additional four-domain bindings, original SSR/compiler/reader; no mounted interaction, actual timer, Rust generator, browser or AT",
+  "cases": [
+    {
+      "id": "zag-base",
+      "candidate": "Zag",
+      "revision": "base",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalCandidate": "Zag",
+        "ssr": "<main><div data-scope=\"combobox\" data-part=\"root\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Suche A</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"></div></div></div><div data-scope=\"combobox\" data-part=\"root\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Suche B</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"></div></div></div></main>",
+        "declaredInput": {
+          "kind": "field",
+          "name": "inputValue",
+          "type": {
+            "text": "string"
+          }
+        },
+        "semanticBinding": "inputValue string -> original input defaultValue; input/popup ids -> separate CEM parts and HTML combobox/listbox roles; visual max-height -> same contextual popup id",
+        "originalInputHasNoForeignDomainDefinitions": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a",
+          "behavior": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8",
+          "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true,
+        "contextualRelationBinding": "Original content popup-a/b is the listbox; external accessibility list-a/b is the listbox. Additional role/controls mapping explicitly maps popup-a\u2192list-a and popup-b\u2192list-b; source IDs need not be equal."
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalInputValueMapsToSeparateTypedInterface": true,
+        "originalIdsAndRolesMappedToExternalContext": true,
+        "visualTargetExistsInActualOutput": true,
+        "originalRenderedNamesDerivedFromLeadingAccessibilitySource": true
+      }
+    },
+    {
+      "id": "zag-visual-revision",
+      "candidate": "Zag",
+      "revision": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalCandidate": "Zag",
+        "ssr": "<main><div data-scope=\"combobox\" data-part=\"root\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Suche A</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"></div></div></div><div data-scope=\"combobox\" data-part=\"root\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Suche B</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"></div></div></div></main>",
+        "declaredInput": {
+          "kind": "field",
+          "name": "inputValue",
+          "type": {
+            "text": "string"
+          }
+        },
+        "semanticBinding": "inputValue string -> original input defaultValue; input/popup ids -> separate CEM parts and HTML combobox/listbox roles; visual max-height -> same contextual popup id",
+        "originalInputHasNoForeignDomainDefinitions": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a",
+          "behavior": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8",
+          "visual": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true,
+        "contextualRelationBinding": "Original content popup-a/b is the listbox; external accessibility list-a/b is the listbox. Additional role/controls mapping explicitly maps popup-a\u2192list-a and popup-b\u2192list-b; source IDs need not be equal."
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalInputValueMapsToSeparateTypedInterface": true,
+        "originalIdsAndRolesMappedToExternalContext": true,
+        "visualTargetExistsInActualOutput": true,
+        "originalRenderedNamesDerivedFromLeadingAccessibilitySource": true
+      }
+    },
+    {
+      "id": "ark-ui-base",
+      "candidate": "Ark UI",
+      "revision": "base",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalCandidate": "Ark UI",
+        "ssr": "<main><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Suche A</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-a\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"></div></div></div><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Suche B</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-b\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"></div></div></div></main>",
+        "declaredInput": {
+          "kind": "field",
+          "name": "inputValue",
+          "type": {
+            "text": "string"
+          }
+        },
+        "semanticBinding": "inputValue string -> original input defaultValue; input/popup ids -> separate CEM parts and HTML combobox/listbox roles; visual max-height -> same contextual popup id",
+        "originalInputHasNoForeignDomainDefinitions": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a",
+          "behavior": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8",
+          "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true,
+        "contextualRelationBinding": "Original content popup-a/b is the listbox; external accessibility list-a/b is the listbox. Additional role/controls mapping explicitly maps popup-a\u2192list-a and popup-b\u2192list-b; source IDs need not be equal."
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalInputValueMapsToSeparateTypedInterface": true,
+        "originalIdsAndRolesMappedToExternalContext": true,
+        "visualTargetExistsInActualOutput": true,
+        "originalRenderedNamesDerivedFromLeadingAccessibilitySource": true
+      }
+    },
+    {
+      "id": "ark-ui-visual-revision",
+      "candidate": "Ark UI",
+      "revision": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalCandidate": "Ark UI",
+        "ssr": "<main><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Suche A</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-a\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"></div></div></div><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Suche B</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-b\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"></div></div></div></main>",
+        "declaredInput": {
+          "kind": "field",
+          "name": "inputValue",
+          "type": {
+            "text": "string"
+          }
+        },
+        "semanticBinding": "inputValue string -> original input defaultValue; input/popup ids -> separate CEM parts and HTML combobox/listbox roles; visual max-height -> same contextual popup id",
+        "originalInputHasNoForeignDomainDefinitions": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a",
+          "behavior": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8",
+          "visual": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true,
+        "contextualRelationBinding": "Original content popup-a/b is the listbox; external accessibility list-a/b is the listbox. Additional role/controls mapping explicitly maps popup-a\u2192list-a and popup-b\u2192list-b; source IDs need not be equal."
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalInputValueMapsToSeparateTypedInterface": true,
+        "originalIdsAndRolesMappedToExternalContext": true,
+        "visualTargetExistsInActualOutput": true,
+        "originalRenderedNamesDerivedFromLeadingAccessibilitySource": true
+      }
+    },
+    {
+      "id": "uxspec-base",
+      "candidate": "UXSpec",
+      "revision": "base",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "compiled": {
+          "$format": "uxspec-compiled",
+          "$version": "0.2",
+          "initial": "closed",
+          "contextSchema": {},
+          "eventSchema": {
+            "OPEN": {
+              "source": "user"
+            },
+            "CLOSE": {
+              "source": "user"
+            }
+          },
+          "states": {
+            "closed": {
+              "path": "closed",
+              "visual": {},
+              "transitions": [
+                {
+                  "event": "OPEN",
+                  "target": "open",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            },
+            "open": {
+              "path": "open",
+              "visual": {},
+              "transitions": [
+                {
+                  "event": "CLOSE",
+                  "target": "closed",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            }
+          },
+          "assertions": []
+        },
+        "originalCompilation": {
+          "ok": true,
+          "compiled": {
+            "$format": "uxspec-compiled",
+            "$version": "0.2",
+            "initial": "closed",
+            "contextSchema": {},
+            "eventSchema": {
+              "OPEN": {
+                "source": "user"
+              },
+              "CLOSE": {
+                "source": "user"
+              }
+            },
+            "states": {
+              "closed": {
+                "path": "closed",
+                "visual": {},
+                "transitions": [
+                  {
+                    "event": "OPEN",
+                    "target": "open",
+                    "guard": null,
+                    "actions": []
+                  }
+                ],
+                "entry": [],
+                "exit": [],
+                "invoke": []
+              },
+              "open": {
+                "path": "open",
+                "visual": {},
+                "transitions": [
+                  {
+                    "event": "CLOSE",
+                    "target": "closed",
+                    "guard": null,
+                    "actions": []
+                  }
+                ],
+                "entry": [],
+                "exit": [],
+                "invoke": []
+              }
+            },
+            "assertions": []
+          },
+          "issues": [],
+          "trace": [
+            {
+              "phase": "state-paths",
+              "kind": "initial",
+              "path": "$machine.initial",
+              "input": "closed",
+              "output": "closed",
+              "status": "ok"
+            },
+            {
+              "phase": "state-paths",
+              "kind": "target",
+              "path": "$machine.states.closed.on.OPEN",
+              "input": "open",
+              "output": "open",
+              "status": "ok"
+            },
+            {
+              "phase": "state-paths",
+              "kind": "target",
+              "path": "$machine.states.open.on.CLOSE",
+              "input": "closed",
+              "output": "closed",
+              "status": "ok"
+            }
+          ]
+        },
+        "semanticBinding": "closed/open states -> own stateView of separate popup; interface CEM parts and HTML role targets resolved by additional binder",
+        "sourceHasNoVisualInterfaceOrAccessibilityDefinition": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "570d72c6689a9884659ca88be1dda2e4859ac43c8336bbda452431742100b57f",
+          "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": {
+          "closed": {
+            "popupVisible": false
+          },
+          "open": {
+            "popupVisible": true
+          }
+        },
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalUxspecSchema": true,
+        "actualCompiledStateBinding": true,
+        "separateVisualTargets": true
+      }
+    },
+    {
+      "id": "uxspec-visual-revision",
+      "candidate": "UXSpec",
+      "revision": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "compiled": {
+          "$format": "uxspec-compiled",
+          "$version": "0.2",
+          "initial": "closed",
+          "contextSchema": {},
+          "eventSchema": {
+            "OPEN": {
+              "source": "user"
+            },
+            "CLOSE": {
+              "source": "user"
+            }
+          },
+          "states": {
+            "closed": {
+              "path": "closed",
+              "visual": {},
+              "transitions": [
+                {
+                  "event": "OPEN",
+                  "target": "open",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            },
+            "open": {
+              "path": "open",
+              "visual": {},
+              "transitions": [
+                {
+                  "event": "CLOSE",
+                  "target": "closed",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            }
+          },
+          "assertions": []
+        },
+        "originalCompilation": {
+          "ok": true,
+          "compiled": {
+            "$format": "uxspec-compiled",
+            "$version": "0.2",
+            "initial": "closed",
+            "contextSchema": {},
+            "eventSchema": {
+              "OPEN": {
+                "source": "user"
+              },
+              "CLOSE": {
+                "source": "user"
+              }
+            },
+            "states": {
+              "closed": {
+                "path": "closed",
+                "visual": {},
+                "transitions": [
+                  {
+                    "event": "OPEN",
+                    "target": "open",
+                    "guard": null,
+                    "actions": []
+                  }
+                ],
+                "entry": [],
+                "exit": [],
+                "invoke": []
+              },
+              "open": {
+                "path": "open",
+                "visual": {},
+                "transitions": [
+                  {
+                    "event": "CLOSE",
+                    "target": "closed",
+                    "guard": null,
+                    "actions": []
+                  }
+                ],
+                "entry": [],
+                "exit": [],
+                "invoke": []
+              }
+            },
+            "assertions": []
+          },
+          "issues": [],
+          "trace": [
+            {
+              "phase": "state-paths",
+              "kind": "initial",
+              "path": "$machine.initial",
+              "input": "closed",
+              "output": "closed",
+              "status": "ok"
+            },
+            {
+              "phase": "state-paths",
+              "kind": "target",
+              "path": "$machine.states.closed.on.OPEN",
+              "input": "open",
+              "output": "open",
+              "status": "ok"
+            },
+            {
+              "phase": "state-paths",
+              "kind": "target",
+              "path": "$machine.states.open.on.CLOSE",
+              "input": "closed",
+              "output": "closed",
+              "status": "ok"
+            }
+          ]
+        },
+        "semanticBinding": "closed/open states -> own stateView of separate popup; interface CEM parts and HTML role targets resolved by additional binder",
+        "sourceHasNoVisualInterfaceOrAccessibilityDefinition": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "570d72c6689a9884659ca88be1dda2e4859ac43c8336bbda452431742100b57f",
+          "visual": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": {
+          "closed": {
+            "popupVisible": false
+          },
+          "open": {
+            "popupVisible": true
+          }
+        },
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalUxspecSchema": true,
+        "actualCompiledStateBinding": true,
+        "separateVisualTargets": true
+      }
+    },
+    {
+      "id": "panda-css-base",
+      "candidate": "Panda CSS",
+      "revision": "base",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalReaderResult": {
+          "ok": true,
+          "value": {
+            "schemaVersion": 1,
+            "categories": {
+              "sizes": [
+                0,
+                1
+              ]
+            },
+            "paths": [
+              "sizes.popup"
+            ],
+            "tokens": {
+              "sizes.popup": {
+                "category": "sizes",
+                "cssVar": "--popup-max-height"
+              }
+            },
+            "conditions": {},
+            "themes": {},
+            "values": [
+              {
+                "token": "sizes.popup",
+                "value": "160px"
+              }
+            ]
+          }
+        },
+        "originalResolvedRow": {
+          "token": "sizes.popup",
+          "value": "160px"
+        },
+        "semanticBinding": "original sizes.popup row -> explicitly additional CSS variable on external contextual popup parts; CEM/SCXML/HTML unchanged",
+        "additionalCssProjection": true,
+        "noRustGeneratorExecuted": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.scxml",
+          "visual": "visual.json",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual": "2a9e437de404d9f0a4c338c874b0ba8e75bce6a0159675b1474da71ce9e02b5d",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalScxmlSyntaxAndOwnBehaviorStates": true,
+        "pandaNoForeignRootDefinitions": true,
+        "explicitAdditionalProjectionTargets": true
+      }
+    },
+    {
+      "id": "panda-css-visual-revision",
+      "candidate": "Panda CSS",
+      "revision": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalReaderResult": {
+          "ok": true,
+          "value": {
+            "schemaVersion": 1,
+            "categories": {
+              "sizes": [
+                0,
+                1
+              ]
+            },
+            "paths": [
+              "sizes.popup"
+            ],
+            "tokens": {
+              "sizes.popup": {
+                "category": "sizes",
+                "cssVar": "--popup-max-height"
+              }
+            },
+            "conditions": {},
+            "themes": {},
+            "values": [
+              {
+                "token": "sizes.popup",
+                "value": "192px"
+              }
+            ]
+          }
+        },
+        "originalResolvedRow": {
+          "token": "sizes.popup",
+          "value": "192px"
+        },
+        "semanticBinding": "original sizes.popup row -> explicitly additional CSS variable on external contextual popup parts; CEM/SCXML/HTML unchanged",
+        "additionalCssProjection": true,
+        "noRustGeneratorExecuted": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.scxml",
+          "visual": "visual.json",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual": "fd35d89c103e04f285778ad63aecdc645893070766d05c480b7d610fc1c30b9f",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalScxmlSyntaxAndOwnBehaviorStates": true,
+        "pandaNoForeignRootDefinitions": true,
+        "explicitAdditionalProjectionTargets": true
+      }
+    }
+  ]
+}

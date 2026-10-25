@@ -1,0 +1,62 @@
+{
+  "pin": "20dfae0e7224d952e198afdf4ffed26d6fd67180",
+  "kind": "bounded original-source review, no additional runtime conditions",
+  "sources": [
+    {
+      "path": "app/src/lib/render/containers.tsx",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/containers.tsx",
+      "sha256_captured_body": "01b5a4e34db6960d85a71035f74c43a9569dc6f49ded08260f6c72c244512503",
+      "characters": 5373
+    },
+    {
+      "path": "app/src/lib/render/element-renderer.tsx",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/element-renderer.tsx",
+      "sha256_captured_body": "bc1f514f9b69cfbfa0bc1faf5d0c2b0c5099ef69b1126a2f22747268affb4103",
+      "characters": 4112
+    },
+    {
+      "path": "app/src/lib/types.ts",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/types.ts",
+      "sha256_captured_body": "35a4e13d383db2a697c95c7727cf9064595ad1eeff5b93d1b0524cdc30c41c5b",
+      "characters": 2167
+    },
+    {
+      "path": "app/src/lib/render/ux-runner.tsx",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/ux-runner.tsx",
+      "sha256_captured_body": "81afe6965e10ca8880b0505f30e8e6424c99e6fc2ee607eda4aad0978d03cf0d",
+      "characters": 2254
+    },
+    {
+      "path": "app/src/lib/render/slot-renderer.tsx",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/slot-renderer.tsx",
+      "sha256_captured_body": "612f6a38f63a0cb0f8b847b0c0221325002b731053615ca89ca498b02791cefe",
+      "characters": 1108
+    },
+    {
+      "path": "spec/SPEC.md",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/spec/SPEC.md",
+      "sha256_captured_body": "d1c4319755107779c1ab79557b02e40dbfea3d6e464fda99f96c1e7b19848a6f",
+      "characters": 19337
+    },
+    {
+      "path": "skills/references/format-reference.md",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/skills/references/format-reference.md",
+      "sha256_captured_body": "44830995ffb71020b9fc2bb7323103999a00bb57935c95f8c19b9633fdd9a7b9",
+      "characters": 3449
+    },
+    {
+      "local_original_copy": "work/validation-probes/sources/style-map.mts",
+      "sha256": "b4d41e51aaf19e95258cf13fb41b3686d5787082d5a28ba5351df55d937c3bf2"
+    },
+    {
+      "local_original_copy": "work/validation-probes/sources/uxspec.schema.json",
+      "sha256": "3e2819b844c8b4f5fb03f18bb49ee9f87396bc6e7ad0e04482d3217389574bf7"
+    }
+  ],
+  "unchanged_cells": [
+    "UXSpec/V04/U/C420",
+    "UXSpec/V06/U/C420"
+  ],
+  "new_runtime_conditions": 0,
+  "new_coverage_closures": 0
+}

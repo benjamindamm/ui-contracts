@@ -1,0 +1,11 @@
+{
+  "repoPin": "ab2875cc761ee6cff17d389ff1c85fedae50aeab",
+  "publishedDomCss": "0.16.0",
+  "registryGitHeadAbsent": true,
+  "wholeRepositoryIdentityClaimed": false,
+  "repoProjectionSha256": "ee25955a9b83f6ca119b2eb65ee843e3dd894ecf5b018f6d72ec773294101c7f",
+  "publishedSourceMapProjectionSha256": "973e8a8746c88ebc40648dce46d079115f0c65000ff335ab105cacaeba46db6c",
+  "allNonImportDeclarationsTextEqual": true,
+  "nonImportDeclarationsSha256": "63887bb11ab7266ef125d9129a851eca4eae9e0df12f173d2867f7b1acf40e0e",
+  "difference": "Imports move from split scene-graph subpaths to public root/text-direction; no identity assertion about other modules or dependencies"
+}

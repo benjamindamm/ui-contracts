@@ -1,0 +1,246 @@
+[
+  {
+    "id": "external-boolean-reference",
+    "met": true,
+    "observation": {
+      "accepted": true,
+      "errorClass": null,
+      "resolved": {
+        "interface": {
+          "file": "interface.json",
+          "pointer": "/modules/0/declarations/0/members/0",
+          "member": "checked",
+          "type": "boolean",
+          "sha256": "6c81a88642980279aa63f6d116ce417e90776f7061b97b168e3139916d6fbeea"
+        },
+        "graph": {
+          "ownerId": "reference-4",
+          "propertyId": "selected-id",
+          "originalPropertyName": "Selected",
+          "type": "BOOLEAN",
+          "sha256": "8e01c7bfa074088600084460780d41b96b0f19d01ddafa511c22e78e1885bc8b"
+        },
+        "semanticMapping": "original switch boolean value ↔ external CEM boolean checked; own explicit binding"
+      },
+      "binding": {
+        "status": "Additional bounded typed reference, no product format",
+        "interface": {
+          "file": "interface.json",
+          "sha256": "6c81a88642980279aa63f6d116ce417e90776f7061b97b168e3139916d6fbeea",
+          "pointer": "/modules/0/declarations/0/members/0"
+        },
+        "graph": {
+          "ownerId": "reference-4",
+          "propertyId": "selected-id",
+          "sha256": "8e01c7bfa074088600084460780d41b96b0f19d01ddafa511c22e78e1885bc8b"
+        }
+      },
+      "roundtrip": {
+        "kind": "switch",
+        "values": {
+          "value": "Selected"
+        }
+      },
+      "missingBindings": [],
+      "projected": [
+        {
+          "path": "Switch A",
+          "kind": "switch",
+          "propertyId": "selected-id",
+          "designed": true
+        },
+        {
+          "path": "Switch B",
+          "kind": "switch",
+          "propertyId": "selected-id",
+          "designed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "wrong-target-kind",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "interface-target-kind",
+      "detail": "Error: interface-target-kind",
+      "originalTrace": {
+        "resolvedPropertyId": "selected-id",
+        "definedPropertyNames": [
+          "Selected"
+        ]
+      }
+    }
+  },
+  {
+    "id": "wrong-interface-type",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "interface-boolean-type",
+      "detail": "Error: interface-boolean-type",
+      "originalTrace": {
+        "resolvedPropertyId": "selected-id",
+        "definedPropertyNames": [
+          "Selected"
+        ]
+      }
+    }
+  },
+  {
+    "id": "stale-interface-revision",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "stale-interface",
+      "detail": "Error: stale-interface",
+      "originalTrace": {
+        "resolvedPropertyId": "selected-id",
+        "definedPropertyNames": [
+          "Selected"
+        ]
+      }
+    }
+  },
+  {
+    "id": "foreign-owner",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "owner-scope",
+      "detail": "Error: owner-scope",
+      "originalTrace": {
+        "resolvedPropertyId": "selected-id",
+        "definedPropertyNames": [
+          "Selected"
+        ]
+      }
+    }
+  },
+  {
+    "id": "wrong-original-property-type",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "original-resolver",
+      "detail": "Error: value needs a VARIANT or BOOLEAN property named \"Selected\"; the component has none",
+      "originalTrace": {}
+    }
+  },
+  {
+    "id": "missing-original-property",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "original-resolver",
+      "detail": "Error: value needs a VARIANT or BOOLEAN property named \"Selected\"; the component has none",
+      "originalTrace": {}
+    }
+  },
+  {
+    "id": "ambiguous-original-property-name",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "ambiguous-original-name",
+      "detail": "Error: ambiguous-original-name",
+      "originalTrace": {
+        "resolvedPropertyId": "selected-id",
+        "definedPropertyNames": [
+          "Selected",
+          "Selected"
+        ]
+      }
+    }
+  },
+  {
+    "id": "removed-stored-binding",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "missing-original-binding",
+      "detail": "Error: missing-original-binding",
+      "originalTrace": {
+        "resolvedPropertyId": "selected-id",
+        "definedPropertyNames": [
+          "Selected"
+        ]
+      }
+    }
+  },
+  {
+    "id": "renamed-original-property",
+    "met": true,
+    "observation": {
+      "accepted": true,
+      "errorClass": null,
+      "resolved": {
+        "interface": {
+          "file": "interface.json",
+          "pointer": "/modules/0/declarations/0/members/0",
+          "member": "checked",
+          "type": "boolean",
+          "sha256": "6c81a88642980279aa63f6d116ce417e90776f7061b97b168e3139916d6fbeea"
+        },
+        "graph": {
+          "ownerId": "reference-4",
+          "propertyId": "selected-id",
+          "originalPropertyName": "Is Selected",
+          "type": "BOOLEAN",
+          "sha256": "d1c5d01859c508065275bc74294288ae774ed3bdf281499e70f6dd3186296ead"
+        },
+        "semanticMapping": "original switch boolean value ↔ external CEM boolean checked; own explicit binding"
+      },
+      "binding": {
+        "status": "Additional bounded typed reference, no product format",
+        "interface": {
+          "file": "interface.json",
+          "sha256": "6c81a88642980279aa63f6d116ce417e90776f7061b97b168e3139916d6fbeea",
+          "pointer": "/modules/0/declarations/0/members/0"
+        },
+        "graph": {
+          "ownerId": "reference-4",
+          "propertyId": "selected-id",
+          "sha256": "d1c5d01859c508065275bc74294288ae774ed3bdf281499e70f6dd3186296ead"
+        }
+      },
+      "roundtrip": {
+        "kind": "switch",
+        "values": {
+          "value": "Is Selected"
+        }
+      },
+      "missingBindings": [],
+      "projected": [
+        {
+          "path": "Switch A",
+          "kind": "switch",
+          "propertyId": "selected-id",
+          "designed": true
+        },
+        {
+          "path": "Switch B",
+          "kind": "switch",
+          "propertyId": "selected-id",
+          "designed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "stale-graph-revision",
+    "met": true,
+    "observation": {
+      "accepted": false,
+      "errorClass": "stale-graph",
+      "detail": "Error: stale-graph",
+      "originalTrace": {
+        "resolvedPropertyId": "selected-id",
+        "definedPropertyNames": [
+          "Selected"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,6 @@
+section { margin-bottom:260px; }
+[role="option"] { height:32px; box-sizing:border-box; }
+#input-a {anchor-name:--input-a;}
+#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:var(--spacing-popup-max-height);overflow-y:auto;}
+#input-b {anchor-name:--input-b;}
+#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:var(--spacing-popup-max-height);overflow-y:auto;}

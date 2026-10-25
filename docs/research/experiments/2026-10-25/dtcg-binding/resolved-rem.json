@@ -1,0 +1,14 @@
+{
+  "--autocomplete-gap": {
+    "value": 0.5,
+    "unit": "rem"
+  },
+  "--autocomplete-max-height": {
+    "value": 10.0,
+    "unit": "rem"
+  },
+  "--autocomplete-option-height": {
+    "value": 2.0,
+    "unit": "rem"
+  }
+}

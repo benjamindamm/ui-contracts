@@ -1,0 +1,220 @@
+[
+  {
+    "id": "public-height-number",
+    "criterion": "I01",
+    "expected": {
+      "height": 192,
+      "scrollHeight": 224,
+      "BHeight": 160
+    }
+  },
+  {
+    "id": "public-height-wrong-type",
+    "criterion": "I01",
+    "expected": {
+      "error": "public-property-type"
+    }
+  },
+  {
+    "id": "public-height-wrong-unit",
+    "criterion": "I01",
+    "expected": {
+      "error": "geometry-unit"
+    }
+  },
+  {
+    "id": "public-property-metadata-conflict",
+    "criterion": "I01",
+    "expected": {
+      "error": "public-type-layout-binding"
+    }
+  },
+  {
+    "id": "public-event-and-css-state",
+    "criterion": "I02",
+    "expected": {
+      "publicEvents": 1,
+      "value": "Alpha A 1",
+      "query": "Alpha",
+      "AState": "closed",
+      "ADisplay": "none",
+      "BEvents": 0
+    }
+  },
+  {
+    "id": "public-payload-type-conflict",
+    "criterion": "I02",
+    "expected": {
+      "error": "public-payload-type",
+      "publicEvents": 0,
+      "rawQueryType": "number"
+    }
+  },
+  {
+    "id": "public-event-foreign-parent",
+    "criterion": "I02",
+    "expected": {
+      "error": "public-instance-route",
+      "BEvents": 0
+    }
+  },
+  {
+    "id": "states-to-css-display",
+    "criterion": "B01",
+    "expected": {
+      "sequence": [
+        "closed:none",
+        "open:block",
+        "closed:none"
+      ],
+      "BState": "closed"
+    }
+  },
+  {
+    "id": "original-guard-false-then-true",
+    "criterion": "B02",
+    "expected": {
+      "blocked": "closed:none",
+      "allowed": "open:block"
+    }
+  },
+  {
+    "id": "original-event-context-data",
+    "criterion": "B03",
+    "expected": {
+      "query": "Alpha A",
+      "value": "Alpha A 2",
+      "publicEvents": 1
+    }
+  },
+  {
+    "id": "input-query-wrong-type",
+    "criterion": "B03",
+    "expected": {
+      "error": "public-property-type"
+    }
+  },
+  {
+    "id": "keyboard-actions-own-context",
+    "criterion": "B04",
+    "expected": {
+      "AState": "open",
+      "BState": "closed",
+      "focus": "input-a",
+      "active": "option-a-1"
+    }
+  },
+  {
+    "id": "keyboard-other-instance",
+    "criterion": "B04",
+    "expected": {
+      "AState": "closed",
+      "BState": "open",
+      "focus": "input-b"
+    }
+  },
+  {
+    "id": "accessible-role-name-relations",
+    "criterion": "A01",
+    "expected": {
+      "inputRole": "combobox",
+      "name": "Search A",
+      "listName": "Results A",
+      "controls": "list-a"
+    }
+  },
+  {
+    "id": "accessible-name-conflict",
+    "criterion": "A01",
+    "expected": {
+      "error": "accessible-name-source-conflict"
+    }
+  },
+  {
+    "id": "accessible-foreign-controls",
+    "criterion": "A01",
+    "expected": {
+      "error": "accessible-instance-relation"
+    }
+  },
+  {
+    "id": "pattern-escape-focus",
+    "criterion": "A02",
+    "expected": {
+      "AState": "closed",
+      "expanded": "false",
+      "focus": "input-a",
+      "active": null
+    }
+  },
+  {
+    "id": "pattern-commit-selection",
+    "criterion": "A02",
+    "expected": {
+      "value": "Alpha A 2",
+      "focus": "input-a",
+      "expanded": "false"
+    }
+  },
+  {
+    "id": "pattern-key-route-conflict",
+    "criterion": "A02",
+    "expected": {
+      "error": "pattern-key-route"
+    }
+  },
+  {
+    "id": "accessible-update-from-public-event",
+    "criterion": "A03",
+    "expected": {
+      "status": "Selected Alpha A 1",
+      "BStatus": "",
+      "role": "status",
+      "live": "polite"
+    }
+  },
+  {
+    "id": "css-change-without-live-message",
+    "criterion": "A03",
+    "expected": {
+      "status": "",
+      "BStatus": "",
+      "publicEvents": 0
+    }
+  },
+  {
+    "id": "live-region-semantic-conflict",
+    "criterion": "A03",
+    "expected": {
+      "error": "live-region-source-conflict"
+    }
+  },
+  {
+    "id": "aria-controlled-scrollport",
+    "criterion": "V06",
+    "expected": {
+      "scrollTop": 64,
+      "height": 160,
+      "scrollHeight": 224,
+      "active": "option-a-6",
+      "activeVisible": true,
+      "controls": "list-a"
+    }
+  },
+  {
+    "id": "aria-scroll-foreign-list",
+    "criterion": "V06",
+    "expected": {
+      "error": "scroll-instance-target"
+    }
+  },
+  {
+    "id": "aria-scroll-clip-conflict",
+    "criterion": "V06",
+    "expected": {
+      "error": "active-option-not-visible",
+      "overflow": "clip",
+      "activeVisible": false
+    }
+  }
+]

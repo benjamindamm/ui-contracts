@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/import/scene-graph.ts",
+    "file": "sources/packages/dom-css/src/import/scene-graph.ts",
+    "sha256": "570c00814bc8205eddddc476251215d55261c17b3c15592c34c55fba5ae09438"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/import/css-values.ts",
+    "file": "sources/packages/dom-css/src/import/css-values.ts",
+    "sha256": "514f2b2f31576d48c4567b5e7490bb65a732c0f81e9a8199d91ddce71a6eb5e4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/import/flow.ts",
+    "file": "sources/packages/dom-css/src/import/flow.ts",
+    "sha256": "28a39751ea2d8ce20980e1ef21f798a74cc5db7230b16f522b8c2dd854882bc3"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/export/projection.ts",
+    "file": "sources/packages/dom-css/src/export/projection.ts",
+    "sha256": "ee25955a9b83f6ca119b2eb65ee843e3dd894ecf5b018f6d72ec773294101c7f",
+    "reused_original": true
+  }
+]

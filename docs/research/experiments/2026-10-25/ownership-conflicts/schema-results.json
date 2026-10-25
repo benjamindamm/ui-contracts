@@ -1,0 +1,38 @@
+{
+  "method": "Previously pinned original schemas, newly changed accepted source artifacts",
+  "cases": [
+    {
+      "id": "changed-original-artifact-schemas",
+      "expected": {
+        "cem": true,
+        "scxml": true
+      },
+      "criterion": "Validate the actually accepted CEM and SCXML renamed artifacts against the previously pinned original CEM JSON Schema and W3C SCXML XSD; no extra schema keys added.",
+      "observed": {
+        "cem": true,
+        "scxml": true
+      },
+      "expectationMet": true,
+      "cemErrors": [],
+      "scxmlErrors": ""
+    }
+  ],
+  "schemaHashes": {
+    "work/validation-probes/sources/cem.schema.json": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+    "work/scxml-probes/sources/scxml-attribs.xsd": "b74de05e9e8d86123a4e8cca6655761fae78009e8d63b95cc27ae38222a2de01",
+    "work/scxml-probes/sources/scxml-contentmodels.xsd": "704baaf6e19c480fa76039390dc0a0e045f5544b5f68ec294c47fe51d40d0053",
+    "work/scxml-probes/sources/scxml-datatypes.xsd": "51036cac697db9be6f92ad853215dc3166990ca292786fed1612d0666932163b",
+    "work/scxml-probes/sources/scxml-module-core.xsd": "cbe0cde7a2cc165b84263e0dad45abd74296ed99a9196611e4b0c98b494222e4",
+    "work/scxml-probes/sources/scxml-module-data.xsd": "c34438431aa5d9815a63a64415e3127b832abd451ca509ff79a89d529dddba47",
+    "work/scxml-probes/sources/scxml-module-external.xsd": "899b13488332a6b37700ea53766e16d39b1b4f38fb829d0d3b12f0955a08057d",
+    "work/scxml-probes/sources/scxml.xsd": "98e14d0e03d5f9bb49b03fe4a2c24d72c165789d68fe93eee24fc403e4b23b48",
+    "work/scxml-probes/sources/xml.xsd": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c"
+  },
+  "jsonschemaVersion": "4.25.1",
+  "lxmlVersion": [
+    6,
+    1,
+    1,
+    0
+  ]
+}

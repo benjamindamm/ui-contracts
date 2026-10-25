@@ -1,0 +1,44 @@
+{
+  "rule": "button-name",
+  "sourceResultsFile": "results.json",
+  "sourceResultsSha256": "c35d6500ad4a5e39156186886b7b0c132d07e5b2e6ae046d68beb0f6ea5cd91a",
+  "cases": [
+    {
+      "id": "switch-drawn-text",
+      "expectedViolations": 0,
+      "expectedPasses": 1,
+      "expectedChecked": [
+        "false"
+      ],
+      "expectedIncomplete": 0
+    },
+    {
+      "id": "switch-node-name-only",
+      "expectedViolations": 1,
+      "expectedPasses": 0,
+      "expectedChecked": [
+        "false"
+      ],
+      "expectedIncomplete": 0
+    },
+    {
+      "id": "switch-checked-property",
+      "expectedViolations": 0,
+      "expectedPasses": 1,
+      "expectedChecked": [
+        "true"
+      ],
+      "expectedIncomplete": 0
+    },
+    {
+      "id": "switch-duplicate-layer-names",
+      "expectedViolations": 0,
+      "expectedPasses": 2,
+      "expectedChecked": [
+        "false",
+        "false"
+      ],
+      "expectedIncomplete": 0
+    }
+  ]
+}

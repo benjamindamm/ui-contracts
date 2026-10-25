@@ -1,0 +1,1 @@
+{"id":"accepted-revision-consistency","expected":true,"criterion":"Every accepted revision must use the same canonical file-hash plus policy-hash algorithm as the pinned baseline revision; unchanged baseline must retain its revision."}

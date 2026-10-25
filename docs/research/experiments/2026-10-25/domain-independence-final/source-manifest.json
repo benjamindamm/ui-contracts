@@ -1,0 +1,279 @@
+{
+  "date": "2026-10-25",
+  "source_id": "S116",
+  "original_code_modified": false,
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_files": [
+    {
+      "local_provenance_path": "work/reference-probes/sources/compile.ts",
+      "sha256": "f5274688d0e3b749fde1b270db960a3c865af7d3e522f69d66778689d55fbab6"
+    },
+    {
+      "local_provenance_path": "work/reference-probes/build/compile.js",
+      "sha256": "eba451728631dba5b73b9c2ffe393e0d2cb8b72ef341170ede05f299eea51e59"
+    },
+    {
+      "local_provenance_path": "work/panda-reader/read.cjs",
+      "sha256": "59358b994f0dc8fddc2b5b0d6dba96a159becc953e0c65ec384dd9ac36d5548b"
+    },
+    {
+      "local_provenance_path": "work/panda-reader/sources/panda/packages/compiler-shared/src/design-system-spec/types.ts",
+      "sha256": "05c7388cbdfc35eba9c9bf2eeb4b85269e8c0af4746b1669a72b794761a7613a"
+    },
+    {
+      "local_provenance_path": "work/zag-ark-references/tool-inventory.json",
+      "sha256": "591ced0a150f256f6851074f4fdfac34d9dda16af39d4db971296b3d17251b8e"
+    },
+    {
+      "local_provenance_path": "work/validation-probes/sources/uxspec.schema.json",
+      "sha256": "3e2819b844c8b4f5fb03f18bb49ee9f87396bc6e7ad0e04482d3217389574bf7"
+    },
+    {
+      "local_provenance_path": "work/validation-probes/sources/cem.schema.json",
+      "sha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "5c539b909bb19a8345233e79e3a961f1dd313c6c030c5515fa9e09ee7a174b15"
+    },
+    {
+      "file": "ark-results.json",
+      "sha256": "9ab8dab49e584080d7c47aaeb55a5d9493c7938ccacc540a47bf25b30815c780"
+    },
+    {
+      "file": "bound-results.json",
+      "sha256": "ea622ea8a185e4f5c08ac2811f2fe16ebce16620894975ef9a974b872d41f153"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "50eba8d6a70c183117023076a358db8343f38f9cf44441217efea71119bf012a"
+    },
+    {
+      "file": "check_bindings.py",
+      "sha256": "e05fd72e5bbb904c6c9a38322cc4b77c2e25d908ec623ab1353988fbbb910236"
+    },
+    {
+      "file": "fixtures/ark-ui-base/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/ark-ui-base/actual.html",
+      "sha256": "438b8d49c1f668d0cb5eae9bb962737a3c1e7c9fcc4392b4ef82b35cc6f2a7c8"
+    },
+    {
+      "file": "fixtures/ark-ui-base/behavior.json",
+      "sha256": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8"
+    },
+    {
+      "file": "fixtures/ark-ui-base/interface.json",
+      "sha256": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a"
+    },
+    {
+      "file": "fixtures/ark-ui-base/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "fixtures/ark-ui-visual-revision/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/ark-ui-visual-revision/actual.html",
+      "sha256": "438b8d49c1f668d0cb5eae9bb962737a3c1e7c9fcc4392b4ef82b35cc6f2a7c8"
+    },
+    {
+      "file": "fixtures/ark-ui-visual-revision/behavior.json",
+      "sha256": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8"
+    },
+    {
+      "file": "fixtures/ark-ui-visual-revision/interface.json",
+      "sha256": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a"
+    },
+    {
+      "file": "fixtures/ark-ui-visual-revision/visual.css",
+      "sha256": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a"
+    },
+    {
+      "file": "fixtures/panda-css-base/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/panda-css-base/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/panda-css-base/derived.css",
+      "sha256": "d6bb684926d66b73d278bb8695f5e25eb9def8db74a420fb6796b0b9a40c261c"
+    },
+    {
+      "file": "fixtures/panda-css-base/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/panda-css-base/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "fixtures/panda-css-base/visual.json",
+      "sha256": "2a9e437de404d9f0a4c338c874b0ba8e75bce6a0159675b1474da71ce9e02b5d"
+    },
+    {
+      "file": "fixtures/panda-css-visual-revision/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/panda-css-visual-revision/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/panda-css-visual-revision/derived.css",
+      "sha256": "e3b77d6a59e3b1d457cfeaa206be9e138dd6d22aaea1727ad3c629be7c41669b"
+    },
+    {
+      "file": "fixtures/panda-css-visual-revision/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/panda-css-visual-revision/visual.css",
+      "sha256": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a"
+    },
+    {
+      "file": "fixtures/panda-css-visual-revision/visual.json",
+      "sha256": "fd35d89c103e04f285778ad63aecdc645893070766d05c480b7d610fc1c30b9f"
+    },
+    {
+      "file": "fixtures/uxspec-base/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/uxspec-base/behavior.json",
+      "sha256": "570d72c6689a9884659ca88be1dda2e4859ac43c8336bbda452431742100b57f"
+    },
+    {
+      "file": "fixtures/uxspec-base/compiled.json",
+      "sha256": "b3071d4361c66e20adc839a48e7b4f7ee64337f455c3ace50da342a29a8af64b"
+    },
+    {
+      "file": "fixtures/uxspec-base/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/uxspec-base/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "fixtures/uxspec-visual-revision/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/uxspec-visual-revision/behavior.json",
+      "sha256": "570d72c6689a9884659ca88be1dda2e4859ac43c8336bbda452431742100b57f"
+    },
+    {
+      "file": "fixtures/uxspec-visual-revision/compiled.json",
+      "sha256": "b3071d4361c66e20adc839a48e7b4f7ee64337f455c3ace50da342a29a8af64b"
+    },
+    {
+      "file": "fixtures/uxspec-visual-revision/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/uxspec-visual-revision/visual.css",
+      "sha256": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a"
+    },
+    {
+      "file": "fixtures/zag-base/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/zag-base/actual.html",
+      "sha256": "93290cc4b06e85c60df80e1e23b4223191a3b50991105a377988772dca3d8d59"
+    },
+    {
+      "file": "fixtures/zag-base/behavior.json",
+      "sha256": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8"
+    },
+    {
+      "file": "fixtures/zag-base/interface.json",
+      "sha256": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a"
+    },
+    {
+      "file": "fixtures/zag-base/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "fixtures/zag-visual-revision/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/zag-visual-revision/actual.html",
+      "sha256": "93290cc4b06e85c60df80e1e23b4223191a3b50991105a377988772dca3d8d59"
+    },
+    {
+      "file": "fixtures/zag-visual-revision/behavior.json",
+      "sha256": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8"
+    },
+    {
+      "file": "fixtures/zag-visual-revision/interface.json",
+      "sha256": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a"
+    },
+    {
+      "file": "fixtures/zag-visual-revision/visual.css",
+      "sha256": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a"
+    },
+    {
+      "file": "initial-label-projection-results.json",
+      "sha256": "2599262e3802104871a418649ff6dc22e9e860de81618e15e3732d519f2e3832"
+    },
+    {
+      "file": "initial-label-projection-run.mjs",
+      "sha256": "9ea3169e2aaab92cdea3eac69b949d916ee68d82f7e8afc9cafcec790fb5c824"
+    },
+    {
+      "file": "initial-module-path-error.json",
+      "sha256": "5c55e9c0764f4c72e237094d4472591790693c3e66d0cbc6abf70609b3c8451f"
+    },
+    {
+      "file": "initial-prepare.py",
+      "sha256": "cb7c4947bd7a5a37de78a6a9cb492d74e538bc7e78a938cd6ec2db0c3a3de340"
+    },
+    {
+      "file": "initial-python-runtime-error.json",
+      "sha256": "51530d2695252a0c782b252611ebde50f98407f2325c0a5673b889b86ba6df86"
+    },
+    {
+      "file": "initial-schema-mismatch-results.json",
+      "sha256": "42bc54560fdf41a19d6b9156f906ac4ab876ebb25e9e5ef494286e8a10db205e"
+    },
+    {
+      "file": "panda-results.json",
+      "sha256": "d4b7d0ddcc27f23d0c2ec18eb7c35cbd24d287c4a054411dee0b428d3738b919"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "f161b06814ac058033b1ac20a48610f9f615619ba9c95a049b8a631f318431b8"
+    },
+    {
+      "file": "results.json",
+      "sha256": "2bf68d4e891ea30f9bc773358446da33de772be1fa89940ed781aff6022fa7cf"
+    },
+    {
+      "file": "run.mjs",
+      "sha256": "74ff74bc040380685b05b615cc1159cc7276573ae90cebd418387bb73443371f"
+    },
+    {
+      "file": "uxspec-results.json",
+      "sha256": "9e08b17068849451ecc791d1890be1f3f3b7d3970cc25f07a05c18669e0450eb"
+    },
+    {
+      "file": "zag-results.json",
+      "sha256": "eed7cf20b3fd6f7e3902d5524f7378494928c82223addb22bbaeebdf7c65adb9"
+    }
+  ],
+  "generated_third_party_bundles": [],
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "reproduction_originals": "Provide pinned original files/dependencies at the documented workspace sibling paths; originals and bundled third-party code not redistributed as own implementation"
+}

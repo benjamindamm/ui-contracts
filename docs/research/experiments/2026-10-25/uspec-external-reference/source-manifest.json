@@ -1,0 +1,133 @@
+{
+  "revision": "1e25e9b8bc2e694689ba0489594f38807a341f14",
+  "original_source": {
+    "file": "work/uspec-ownership/sources/cache-validation.ts",
+    "sha256": "6a19c72ca3f7932494a83e7c1f448d7ba9a03bdfb2816a1f2fef651f0abf8382"
+  },
+  "original_executed_module": {
+    "file": "work/uspec-ownership/compiled/cache-validation.js",
+    "sha256": "f1f3c717376f09c57f5d297408941634f645b541347d4d92060a882e1bcbcff5"
+  },
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "new_conditions": 8,
+  "coverage_changed": false,
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "01572a739e28e412e731fcb227f36c68dc95b0513e8c410c6e66dcb34b630a6e"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "3b1884f97b6e2dd39a3ea957aaf693eb1a3578ddb17f837789cb3b104fa64b68"
+    },
+    {
+      "file": "fixtures/changed-external-source/foreign-cem.json",
+      "sha256": "fb96da4b4e5d51e7145bcd1ad35898007afdb5fe53aceae487d09d801f4b4860"
+    },
+    {
+      "file": "fixtures/changed-external-source/research-api.json",
+      "sha256": "1e12e6b12d0e62e5fa834b581c6f125f94b4884db97951582398236d2877c5fa"
+    },
+    {
+      "file": "fixtures/changed-external-source/research-evidence-api.json",
+      "sha256": "85139cb25b12c320fe825491daa3b57564619e57aaf441d7936050f55c910a49"
+    },
+    {
+      "file": "fixtures/external-output-uri/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/external-output-uri/research-api.json",
+      "sha256": "3877ca0e3351600df56026b54039a6ae5aa682820a4e5d42c4eb17a637e70367"
+    },
+    {
+      "file": "fixtures/external-output-uri/research-evidence-api.json",
+      "sha256": "85139cb25b12c320fe825491daa3b57564619e57aaf441d7936050f55c910a49"
+    },
+    {
+      "file": "fixtures/local-output-control/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/local-output-control/research-api.json",
+      "sha256": "1e12e6b12d0e62e5fa834b581c6f125f94b4884db97951582398236d2877c5fa"
+    },
+    {
+      "file": "fixtures/local-output-control/research-evidence-api.json",
+      "sha256": "85139cb25b12c320fe825491daa3b57564619e57aaf441d7936050f55c910a49"
+    },
+    {
+      "file": "fixtures/missing-output-target/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/missing-output-target/research-api.json",
+      "sha256": "7f980a9ebfe5afb31646d05f5056b41e57814b3ba0674951fdce44970e03ea2f"
+    },
+    {
+      "file": "fixtures/missing-output-target/research-evidence-api.json",
+      "sha256": "85139cb25b12c320fe825491daa3b57564619e57aaf441d7936050f55c910a49"
+    },
+    {
+      "file": "fixtures/missing-source-file-uri/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/missing-source-file-uri/research-api.json",
+      "sha256": "1e12e6b12d0e62e5fa834b581c6f125f94b4884db97951582398236d2877c5fa"
+    },
+    {
+      "file": "fixtures/missing-source-file-uri/research-evidence-api.json",
+      "sha256": "0ef4d0f0d2be2c4900d6c3e5c3b9cdc4df474ea7452c1a2eff6bde4ccc1a0c39"
+    },
+    {
+      "file": "fixtures/output-semantic-type-conflict/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/output-semantic-type-conflict/research-api.json",
+      "sha256": "bc35d48ab95be007604a1d69e79ef282e16c5e1c2b1a79e6c5e620edfca6819d"
+    },
+    {
+      "file": "fixtures/output-semantic-type-conflict/research-evidence-api.json",
+      "sha256": "85139cb25b12c320fe825491daa3b57564619e57aaf441d7936050f55c910a49"
+    },
+    {
+      "file": "fixtures/unknown-source-path/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/unknown-source-path/research-api.json",
+      "sha256": "1e12e6b12d0e62e5fa834b581c6f125f94b4884db97951582398236d2877c5fa"
+    },
+    {
+      "file": "fixtures/unknown-source-path/research-evidence-api.json",
+      "sha256": "c4ad7aaf3a4e0e2d4236c74fe69870e049f8fa1b509c3a12b4295b1de11ca7b4"
+    },
+    {
+      "file": "fixtures/wrong-output-kind/foreign-cem.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/wrong-output-kind/research-api.json",
+      "sha256": "1e12e6b12d0e62e5fa834b581c6f125f94b4884db97951582398236d2877c5fa"
+    },
+    {
+      "file": "fixtures/wrong-output-kind/research-evidence-api.json",
+      "sha256": "a51420acfb313b45bd31b1029a26048589e3fe5d7ae9fd3c68ef11405047fcbc"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "c1fc10fb282b70fed341db213989cfca76b6602e512aafc2718ad4065c46f2b3"
+    },
+    {
+      "file": "results.json",
+      "sha256": "da435a47c846784d977aad8d2f1a37cfbc8c88a46a00fe925e94714d3b010b15"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "57fbebaaa962258ab4bb947b8ae178ab03ec7529af41a7ea94551aef774863c4"
+    }
+  ]
+}

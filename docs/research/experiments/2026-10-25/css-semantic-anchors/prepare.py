@@ -1,0 +1,12 @@
+from pathlib import Path
+import json,hashlib
+w=Path(__file__).parent;b=w/'../typed-references';a=json.loads((b/'artifacts.json').read_text());p=json.loads((b/'profile.json').read_text())
+p['status']='Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation'
+p['version']='css-semantic-anchors-1'
+p['visualBindings']={k:{'definition':v['uses'],'inputPart':'input','popupPart':'popup','inputSelector':'#'+v['host']['input'],'popupSelector':'#'+v['host']['popup']} for k,v in p['instances'].items()}
+cases=[('control','none','bound'),('consistent-name-change','rename','bound'),('foreign-instance-name','foreign','foreign-anchor-part'),('missing-name','missing','missing-css-anchor'),('duplicate-name','duplicate','nonunique-css-anchor'),('wrong-component-part','part','foreign-anchor-part'),('stale-css-source','revision','source-revision'),('variable-anchor','variable','unsupported-value'),('class-selector','selector','unsupported-selector'),('conditional-anchor','nested','unsupported-nesting'),('explicit-anchor-scope','scope','unsupported-scope'),('implicit-keyword','keyword','unsupported-value'),('later-position-reset','reset','unsupported-reset')]
+cases.append(('named-function-override','named-function','unsupported-named-function'))
+(w/'artifacts.json').write_text(json.dumps(a,ensure_ascii=False,indent=2)+'\n');(w/'profile.json').write_text(json.dumps(p,ensure_ascii=False,indent=2)+'\n');(w/'cases.json').write_text(json.dumps([{'id':i,'mutation':m,'expected':e} for i,m,e in cases],indent=2)+'\n')
+capture=json.loads((w/'source-capture.json').read_text())['value'];txt=Path(capture['sections']['path']).read_text();body=txt.split('\n',1)[1].rsplit('\n[END_UNTRUSTED_PAGE_CONTENT',1)[0];sections=json.loads(body)
+notes={'url':capture['url'],'sections':[{'id':s['id'],'read_text_sha256':hashlib.sha256(s['text'].encode()).hexdigest(),'chars':len(s['text'])} for s in sections],'findings':['Anchor names need not be unique; CSS chooses an eligible nearest ancestor or last element in tree order.','Scope and layout eligibility participate in native resolution.','position-anchor is a reset-only sub-property of position.','Section 7 explicitly separates visual anchoring from accessibility relations.'],'scope':'Static declaration-to-model binding only; no native box eligibility, layout or accessibility conformance claimed'}
+(w/'source-notes.json').write_text(json.dumps(notes,indent=2)+'\n');print({'cases_preregistered':len(cases),'fixture_sources':len(a),'source_sections_read':len(sections)})

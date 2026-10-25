@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "autocomplete.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "customElement": true,
+          "name": "Autocomplete",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "value-change",
+              "type": {
+                "text": "CustomEvent<{value:string}>"
+              }
+            }
+          ],
+          "cssParts": [
+            {
+              "name": "input"
+            },
+            {
+              "name": "popup"
+            },
+            {
+              "name": "list"
+            },
+            {
+              "name": "option"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "foreign-context.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "customElement": true,
+          "name": "Autocomplete",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "value-change",
+              "type": {
+                "text": "CustomEvent<{value:string}>"
+              }
+            }
+          ],
+          "cssParts": [
+            {
+              "name": "input"
+            },
+            {
+              "name": "popup"
+            },
+            {
+              "name": "list"
+            },
+            {
+              "name": "option"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

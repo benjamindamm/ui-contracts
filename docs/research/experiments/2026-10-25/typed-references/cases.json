@@ -1,0 +1,110 @@
+[
+  {
+    "id": "control",
+    "mutation": "none",
+    "expectedRules": []
+  },
+  {
+    "id": "duplicate-name-explicit-address",
+    "mutation": "duplicate-name",
+    "expectedRules": []
+  },
+  {
+    "id": "part-from-other-component",
+    "mutation": "foreign-part",
+    "expectedRules": [
+      "foreign-component-part"
+    ]
+  },
+  {
+    "id": "part-addresses-behavior",
+    "mutation": "foreign-kind",
+    "expectedRules": [
+      "reference-kind"
+    ]
+  },
+  {
+    "id": "missing-part-pointer",
+    "mutation": "missing",
+    "expectedRules": [
+      "missing-target"
+    ]
+  },
+  {
+    "id": "list-part-used-as-input",
+    "mutation": "wrong-part",
+    "expectedRules": [
+      "part-name"
+    ]
+  },
+  {
+    "id": "nonunique-state-locator",
+    "mutation": "ambiguous",
+    "expectedRules": [
+      "nonunique-target"
+    ]
+  },
+  {
+    "id": "data-addressed-as-state",
+    "mutation": "data-as-state",
+    "expectedRules": [
+      "target-kind"
+    ]
+  },
+  {
+    "id": "stale-artifact-revision",
+    "mutation": "revision",
+    "expectedRules": [
+      "source-revision"
+    ]
+  },
+  {
+    "id": "existing-other-instance-list",
+    "mutation": "cross-list",
+    "expectedRules": [
+      "same-instance-relation"
+    ]
+  },
+  {
+    "id": "wrong-target-host-role",
+    "mutation": "role",
+    "expectedRules": [
+      "host-role"
+    ]
+  },
+  {
+    "id": "duplicate-host-id",
+    "mutation": "duplicate-id",
+    "expectedRules": [
+      "host-unique-target"
+    ]
+  },
+  {
+    "id": "state-projection-disagrees",
+    "mutation": "state-view",
+    "expectedRules": [
+      "state-projection"
+    ]
+  },
+  {
+    "id": "foreign-machine-name",
+    "mutation": "machine",
+    "expectedRules": [
+      "machine-component-binding"
+    ]
+  },
+  {
+    "id": "unsupported-locator-kind",
+    "mutation": "locator",
+    "expectedRules": [
+      "locator-kind"
+    ]
+  },
+  {
+    "id": "missing-definition",
+    "mutation": "definition",
+    "expectedRules": [
+      "undefined-definition"
+    ]
+  }
+]

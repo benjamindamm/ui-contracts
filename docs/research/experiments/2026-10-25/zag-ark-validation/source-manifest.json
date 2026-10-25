@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-25",
+  "scope": [
+    "@zag-js/core@1.46.0 and actual resolved utils/dom-query",
+    "@ark-ui/react@5.39.3 selected published SDK declarations",
+    "separate Ark repository API metadata at c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc"
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "c539ca40c9a3e5f231b252141cb73ed018a91fd3aab7e8cd62299ca31d4f7023"
+    },
+    {
+      "file": "api-observations.json",
+      "sha256": "2c6bb5c08a7312d05fd876680935293a89c49f1e51d7c64cc9c7bee7d36a4096"
+    },
+    {
+      "file": "ark-invalid-collection.ts",
+      "sha256": "8ee439d7744bae83bec5ec37bac8570c1bf90968fdb025ee77fb856823bd46db"
+    },
+    {
+      "file": "ark-invalid-open.ts",
+      "sha256": "cc6242f0c400fa446cf215151944bfb615c82522761d6749e5fa8a2715407938"
+    },
+    {
+      "file": "ark-type-results.json",
+      "sha256": "663d65f73a2f3e9c3cf87e36ee568783665d12c3eb3d6f199ce478fa6a8f9fb2"
+    },
+    {
+      "file": "ark-valid.ts",
+      "sha256": "3e3ad7f132cd22dcd41c3f391b300850933c2523509a11843748e85cbef8bb50"
+    },
+    {
+      "file": "audit.py",
+      "sha256": "8894dc7e70d5c3a8c6b397ee74ab541a921dadf5acf2ca146f9d0a3d8694200a"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "cb90b3c538238e91a1162a2a8cc564b5c45fef7db239e4ff3560a689982ff63b"
+    },
+    {
+      "file": "check-types.cjs",
+      "sha256": "40c84effe037ed6be164c5e52ddbf7445690cb96bb1f484e93abfb5f74c57343"
+    },
+    {
+      "file": "package-inventory.json",
+      "sha256": "40ab82ace0baaf16f3fb18a16b2c65e95510174be8b7762287b7b415a4835008"
+    },
+    {
+      "file": "package-resolutions.json",
+      "sha256": "528b1ba13322e0f9dd141baa22456bf94b4b9657831a9ee4969c552a77710cbf"
+    },
+    {
+      "file": "registry-pins.json",
+      "sha256": "83230b7cc774f9013dc00839e5ef55f6d37270d5531130c33d0cf20642f74811"
+    },
+    {
+      "file": "resolutions.cjs",
+      "sha256": "ef3f4d431ca96ac9071a72d752baee4b2fc6ac775fca66fb73eac0eb4feafdfe"
+    },
+    {
+      "file": "run-zag.cjs",
+      "sha256": "611873280789b7eaaabc0a755b0016fd4dba359f4a21c8a4c3f4e685078cc19a"
+    },
+    {
+      "file": "type-expectations.json",
+      "sha256": "770dfd96343cfd45ea07e8247b614112aadaec2e92a80795f8b92e58b07892e1"
+    },
+    {
+      "file": "zag-development-results.json",
+      "sha256": "6951802ea3cb0b897f9c68c666aafe20242d054be22d8081838783f309e526b5"
+    },
+    {
+      "file": "zag-production-results.json",
+      "sha256": "3c84586b881293a16f73948cdd98e7afbcfb1b7ea7685a183dac9e79c6ba22fc"
+    }
+  ],
+  "tool_files": [
+    {
+      "file": "tool/package.json",
+      "sha256": "f2373a5eb7d8cbb18b5377a9985a0ba564d66ed0284738105407684818039b86"
+    },
+    {
+      "file": "tool/package-lock.json",
+      "sha256": "9af36fa12f873bffb01894a08747e4c490702fdf94bdeddd13c971cd8265cd5c"
+    }
+  ],
+  "resolved_packages": [
+    {
+      "file": "tool/node_modules/@zag-js/core/package.json",
+      "sha256": "8b53cc7a5f6bee9be0e559b61e704fcd4b50e88543af23ee3103a6308ff3049f"
+    },
+    {
+      "file": "tool/node_modules/@zag-js/core/node_modules/@zag-js/utils/package.json",
+      "sha256": "49f4026c5e18b9f0957c8aedd22ad8353065f8f50f3ae826e179de46f6f8d23f"
+    },
+    {
+      "file": "tool/node_modules/@zag-js/core/node_modules/@zag-js/dom-query/package.json",
+      "sha256": "42a92ad5e83a8ca48ce5f13d8da07e8396bf31f3fc67a6bed08902f9865f9a99"
+    },
+    {
+      "file": "tool/node_modules/@ark-ui/react/node_modules/@zag-js/core/package.json",
+      "sha256": "6b6d07cb66c0a56d05fdec0a77f38e54c01fd67d048206c4712034f369155ad9"
+    },
+    {
+      "file": "tool/node_modules/@zag-js/combobox/package.json",
+      "sha256": "2156a87852e5e4df86770c781c126cdefa8ccc70a3d730b656935c769e3e108d"
+    },
+    {
+      "file": "tool/node_modules/@zag-js/react/package.json",
+      "sha256": "fd1380e15c7903548190044b87de496d3e5c2ee80065c5df4b28c10f30d714cd"
+    }
+  ],
+  "typescript": "5.9.3",
+  "node": "v24.22.1",
+  "original_artifact_schema_created": false,
+  "component_rendered": false,
+  "x06_coverage_changed": false,
+  "conditions": 13
+}

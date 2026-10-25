@@ -1,0 +1,72 @@
+[
+  {
+    "candidate": "CSS Layout",
+    "requirement": "I01",
+    "coverage": "A",
+    "claim": "C526",
+    "previous_claim": "C366"
+  },
+  {
+    "candidate": "CSS Layout",
+    "requirement": "I02",
+    "coverage": "A",
+    "claim": "C527",
+    "previous_claim": "C367"
+  },
+  {
+    "candidate": "CSS Layout",
+    "requirement": "B01",
+    "coverage": "A",
+    "claim": "C528",
+    "previous_claim": "C375"
+  },
+  {
+    "candidate": "CSS Layout",
+    "requirement": "B02",
+    "coverage": "A",
+    "claim": "C529",
+    "previous_claim": "C376"
+  },
+  {
+    "candidate": "CSS Layout",
+    "requirement": "B03",
+    "coverage": "A",
+    "claim": "C530",
+    "previous_claim": "C377"
+  },
+  {
+    "candidate": "CSS Layout",
+    "requirement": "B04",
+    "coverage": "A",
+    "claim": "C531",
+    "previous_claim": "C378"
+  },
+  {
+    "candidate": "CSS Layout",
+    "requirement": "A01",
+    "coverage": "A",
+    "claim": "C532",
+    "previous_claim": "C379"
+  },
+  {
+    "candidate": "CSS Layout",
+    "requirement": "A02",
+    "coverage": "A",
+    "claim": "C533",
+    "previous_claim": "C380"
+  },
+  {
+    "candidate": "CSS Layout",
+    "requirement": "A03",
+    "coverage": "A",
+    "claim": "C534",
+    "previous_claim": "C381"
+  },
+  {
+    "candidate": "WAI-ARIA",
+    "requirement": "V06",
+    "coverage": "A",
+    "claim": "C535",
+    "previous_claim": "C322"
+  }
+]

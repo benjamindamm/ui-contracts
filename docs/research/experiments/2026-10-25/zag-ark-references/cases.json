@@ -1,0 +1,74 @@
+[
+  {
+    "id": "zag-original-connect",
+    "candidate": "zag",
+    "kind": "base",
+    "expected": {
+      "accepted": true,
+      "error": null
+    }
+  },
+  {
+    "id": "zag-custom-root-ids",
+    "candidate": "zag",
+    "kind": "rename",
+    "expected": {
+      "accepted": true,
+      "error": null
+    }
+  },
+  {
+    "id": "zag-colliding-content-ids",
+    "candidate": "zag",
+    "kind": "collision",
+    "expected": {
+      "accepted": false,
+      "error": "duplicate-host-id"
+    }
+  },
+  {
+    "id": "zag-external-role-conflict",
+    "candidate": "zag",
+    "kind": "role",
+    "expected": {
+      "accepted": false,
+      "error": "external-role-conflict"
+    }
+  },
+  {
+    "id": "ark-original-context",
+    "candidate": "ark",
+    "kind": "base",
+    "expected": {
+      "accepted": true,
+      "error": null
+    }
+  },
+  {
+    "id": "ark-custom-root-ids",
+    "candidate": "ark",
+    "kind": "rename",
+    "expected": {
+      "accepted": true,
+      "error": null
+    }
+  },
+  {
+    "id": "ark-input-prop-id-override",
+    "candidate": "ark",
+    "kind": "input-override",
+    "expected": {
+      "accepted": false,
+      "error": "missing-controlled-input"
+    }
+  },
+  {
+    "id": "ark-content-prop-id-override",
+    "candidate": "ark",
+    "kind": "content-override",
+    "expected": {
+      "accepted": false,
+      "error": "missing-controls-target"
+    }
+  }
+]

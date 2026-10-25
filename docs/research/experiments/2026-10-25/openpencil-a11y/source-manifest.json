@@ -1,0 +1,58 @@
+[
+  {
+    "file": "sources/reka-ui/packages/core/src/Switch/SwitchRoot.vue",
+    "url": "https://raw.githubusercontent.com/unovue/reka-ui/a1d44a823240769cfd401a8e6589abc1e5d763e2/packages/core/src/Switch/SwitchRoot.vue",
+    "sha256": "55e726dcff56d23c2b0644626c09764e3d15767259beefa8618704d4b8b4c3cf",
+    "capture": "Full BrowserOS neo code block",
+    "read_date": "2026-10-25"
+  },
+  {
+    "file": "sources/reka-ui/docs/content/docs/components/switch.md",
+    "url": "https://raw.githubusercontent.com/unovue/reka-ui/a1d44a823240769cfd401a8e6589abc1e5d763e2/docs/content/docs/components/switch.md",
+    "sha256": "0b6bb19cc8880507e8d9273f8d5fb81616d471522e8053e2c6649b05c8081f13",
+    "capture": "Full BrowserOS neo code block",
+    "read_date": "2026-10-25"
+  },
+  {
+    "file": "sources/open-pencil/packages/vue/src/canvas/islands/controls/index.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/index.ts",
+    "sha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953",
+    "capture": "Full BrowserOS neo code block",
+    "read_date": "2026-10-25"
+  },
+  {
+    "file": "sources/open-pencil/packages/vue/src/canvas/islands/controls/fields.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/fields.ts",
+    "sha256": "8b3adc1c471aae04cc1d6b9e0ae2f710304b300479f112ac6bb617fa7d522c1e",
+    "capture": "Full BrowserOS neo code block",
+    "read_date": "2026-10-25"
+  },
+  {
+    "file": "sources/open-pencil/packages/vue/src/canvas/islands/render.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/render.ts",
+    "sha256": "9f8b3c79a4bbfbc3c3d7f91fdf524b4398eab040f4414ebde2b16f3dd03d65a9",
+    "capture": "Full BrowserOS neo code block",
+    "read_date": "2026-10-25"
+  },
+  {
+    "file": "sources/metadata/reka-ui-2.10.5.json",
+    "url": "https://registry.npmjs.org/reka-ui/2.10.5",
+    "sha256": "ffaf1800a0e25a2e72afc9962bfd4f0deba2190bc242735de65fed9cefab4188",
+    "read_date": "2026-10-25",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/metadata/open-pencil-vue-package.json",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/package.json",
+    "sha256": "acab87edc6aa07d058b2ffe2a5b72086e04d899a5d47b7ffbef1d20a28f03499",
+    "read_date": "2026-10-25",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "url": "https://www.w3.org/WAI/ARIA/apg/patterns/switch/",
+    "sha256_read_capture": "34dca2b8474659db5af8bb26153d1396dacd0a9a4fa13d7dbda10bd6e5b2b10a",
+    "read_date": "2026-10-25",
+    "mutable": true,
+    "capture": "Complete BrowserOS neo text capture, hash includes capture envelope; not HTML source hash"
+  }
+]

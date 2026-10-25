@@ -1,0 +1,20 @@
+[
+  {
+    "id": "base",
+    "expected": {
+      "accepted": true,
+      "color": "#112233",
+      "otherDomainsByteIdentical": true,
+      "originalErrors": 0
+    }
+  },
+  {
+    "id": "visual-revision",
+    "expected": {
+      "accepted": true,
+      "color": "#445566",
+      "otherDomainsByteIdentical": true,
+      "originalErrors": 0
+    }
+  }
+]

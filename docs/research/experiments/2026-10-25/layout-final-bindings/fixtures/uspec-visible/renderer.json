@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "baseSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "data": {
+    "source": {},
+    "component": {},
+    "variantAxes": [],
+    "defaultVariant": {
+      "id": "v1",
+      "name": "default",
+      "variantProperties": {}
+    },
+    "defaultTree": {
+      "id": "v1",
+      "children": [
+        {
+          "id": "input-1",
+          "name": "Input",
+          "dimensions": {
+            "height": 20
+          }
+        },
+        {
+          "id": "popup-1",
+          "name": "Popup",
+          "dimensions": {
+            "clipsContent": {
+              "value": false,
+              "token": null,
+              "display": "false"
+            }
+          },
+          "children": [
+            {
+              "id": "result-0",
+              "text": "Result 1"
+            },
+            {
+              "id": "result-1",
+              "text": "Result 2"
+            },
+            {
+              "id": "result-2",
+              "text": "Result 3"
+            },
+            {
+              "id": "result-3",
+              "text": "Result 4"
+            },
+            {
+              "id": "result-4",
+              "text": "Result 5"
+            },
+            {
+              "id": "result-5",
+              "text": "Result 6"
+            },
+            {
+              "id": "result-6",
+              "text": "Result 7"
+            }
+          ]
+        }
+      ]
+    },
+    "propertyDefinitions": {},
+    "childComposition": {}
+  }
+}

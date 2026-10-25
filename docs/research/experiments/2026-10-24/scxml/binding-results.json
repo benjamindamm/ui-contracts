@@ -1,0 +1,139 @@
+{
+  "typescript": "5.9.3",
+  "node": "v24.22.1",
+  "additional_binding_policy": true,
+  "original_schemas_modified": false,
+  "scope": "Static named send + param, literal ECMAScript/TypeScript subset, external CEM public event, explicit Web CustomEvent.detail route; no interpreter or runtime host dispatch",
+  "cases": [
+    {
+      "id": "binding-01-match",
+      "scxml": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" datamodel=\"ecmascript\" initial=\"selected\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry></state></scxml>\n",
+      "public_event": {
+        "name": "value-change",
+        "type": {
+          "text": "CustomEvent<{value:string}>"
+        }
+      },
+      "send_event": "value-change",
+      "send_target": "#_parent",
+      "declarations": [
+        {
+          "id": "value",
+          "expr": "'alpha'"
+        }
+      ],
+      "params": [
+        {
+          "name": "value",
+          "expr": "value"
+        }
+      ],
+      "expected": "compatible",
+      "typescript_input": "type PublicEvent = CustomEvent<{value:string}>;\nconst value = 'alpha';\nconst publicPayload: PublicEvent['detail'] = {\"value\": value};\n",
+      "diagnostics": [],
+      "status": "compatible",
+      "original_scxml_xsd_valid": true
+    },
+    {
+      "id": "binding-02-wrong-event",
+      "scxml": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" datamodel=\"ecmascript\" initial=\"selected\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"selected\"><onentry><send event=\"other-event\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry></state></scxml>\n",
+      "public_event": {
+        "name": "value-change",
+        "type": {
+          "text": "CustomEvent<{value:string}>"
+        }
+      },
+      "send_event": "other-event",
+      "send_target": "#_parent",
+      "declarations": [
+        {
+          "id": "value",
+          "expr": "'alpha'"
+        }
+      ],
+      "params": [
+        {
+          "name": "value",
+          "expr": "value"
+        }
+      ],
+      "expected": "event-name-mismatch",
+      "status": "event-name-mismatch",
+      "additional_policy": "Explicit static route to the separately declared public event",
+      "original_scxml_xsd_valid": true
+    },
+    {
+      "id": "binding-03-wrong-field",
+      "scxml": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" datamodel=\"ecmascript\" initial=\"selected\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"wrong\" expr=\"value\"/></send></onentry></state></scxml>\n",
+      "public_event": {
+        "name": "value-change",
+        "type": {
+          "text": "CustomEvent<{value:string}>"
+        }
+      },
+      "send_event": "value-change",
+      "send_target": "#_parent",
+      "declarations": [
+        {
+          "id": "value",
+          "expr": "'alpha'"
+        }
+      ],
+      "params": [
+        {
+          "name": "wrong",
+          "expr": "value"
+        }
+      ],
+      "expected": "payload-type-error",
+      "typescript_input": "type PublicEvent = CustomEvent<{value:string}>;\nconst value = 'alpha';\nconst publicPayload: PublicEvent['detail'] = {\"wrong\": value};\n",
+      "diagnostics": [
+        {
+          "code": 2353,
+          "message": "Object literal may only specify known properties, and '\"wrong\"' does not exist in type '{ value: string; }'."
+        }
+      ],
+      "status": "payload-type-error",
+      "original_scxml_xsd_valid": true
+    },
+    {
+      "id": "binding-04-wrong-type",
+      "scxml": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" datamodel=\"ecmascript\" initial=\"selected\"><datamodel><data id=\"value\" expr=\"42\"/></datamodel><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry></state></scxml>\n",
+      "public_event": {
+        "name": "value-change",
+        "type": {
+          "text": "CustomEvent<{value:string}>"
+        }
+      },
+      "send_event": "value-change",
+      "send_target": "#_parent",
+      "declarations": [
+        {
+          "id": "value",
+          "expr": "42"
+        }
+      ],
+      "params": [
+        {
+          "name": "value",
+          "expr": "value"
+        }
+      ],
+      "expected": "payload-type-error",
+      "typescript_input": "type PublicEvent = CustomEvent<{value:string}>;\nconst value = 42;\nconst publicPayload: PublicEvent['detail'] = {\"value\": value};\n",
+      "diagnostics": [
+        {
+          "code": 2322,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ],
+      "status": "payload-type-error",
+      "original_scxml_xsd_valid": true
+    }
+  ],
+  "schema_validation_stage": {
+    "original_schema_modified": false,
+    "network_disabled": true,
+    "lxml": "6.1.1.0"
+  }
+}

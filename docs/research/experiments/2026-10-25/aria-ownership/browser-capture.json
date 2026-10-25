@@ -1,0 +1,306 @@
+{
+  "logs": [],
+  "ok": true,
+  "value": [
+    {
+      "dom": {
+        "page": 257,
+        "value": [
+          {
+            "id": "list-a",
+            "label": "Ergebnisse A",
+            "role": "listbox"
+          },
+          {
+            "id": "list-b",
+            "label": "Ergebnisse B",
+            "role": "listbox"
+          }
+        ]
+      },
+      "id": "before",
+      "snapshot": {
+        "refs": [
+          {
+            "backendNodeId": 1,
+            "name": "Suche A",
+            "nth": 0,
+            "ref": "e1",
+            "role": "combobox"
+          },
+          {
+            "backendNodeId": 30,
+            "name": "Ergebnisse A",
+            "nth": 0,
+            "ref": "e2",
+            "role": "listbox"
+          },
+          {
+            "backendNodeId": 31,
+            "name": "Ergebnis A 1",
+            "nth": 0,
+            "ref": "e3",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 32,
+            "name": "Ergebnis A 2",
+            "nth": 0,
+            "ref": "e4",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 33,
+            "name": "Ergebnis A 3",
+            "nth": 0,
+            "ref": "e5",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 34,
+            "name": "Ergebnis A 4",
+            "nth": 0,
+            "ref": "e6",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 35,
+            "name": "Ergebnis A 5",
+            "nth": 0,
+            "ref": "e7",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 36,
+            "name": "Ergebnis A 6",
+            "nth": 0,
+            "ref": "e8",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 37,
+            "name": "Ergebnis A 7",
+            "nth": 0,
+            "ref": "e9",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 18,
+            "name": "Suche B",
+            "nth": 0,
+            "ref": "e10",
+            "role": "combobox"
+          },
+          {
+            "backendNodeId": 42,
+            "name": "Ergebnisse B",
+            "nth": 0,
+            "ref": "e11",
+            "role": "listbox"
+          },
+          {
+            "backendNodeId": 43,
+            "name": "Ergebnis B 1",
+            "nth": 0,
+            "ref": "e12",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 44,
+            "name": "Ergebnis B 2",
+            "nth": 0,
+            "ref": "e13",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 45,
+            "name": "Ergebnis B 3",
+            "nth": 0,
+            "ref": "e14",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 46,
+            "name": "Ergebnis B 4",
+            "nth": 0,
+            "ref": "e15",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 47,
+            "name": "Ergebnis B 5",
+            "nth": 0,
+            "ref": "e16",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 48,
+            "name": "Ergebnis B 6",
+            "nth": 0,
+            "ref": "e17",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 49,
+            "name": "Ergebnis B 7",
+            "nth": 0,
+            "ref": "e18",
+            "role": "option"
+          }
+        ],
+        "text": "- main\n  - LabelText\n  - combobox \"Suche A\" [expanded] [ref=e1]\n  - listbox \"Ergebnisse A\" [ref=e2]\n    - option \"Ergebnis A 1\" [selected] [ref=e3]\n    - option \"Ergebnis A 2\" [ref=e4]\n    - option \"Ergebnis A 3\" [ref=e5]\n    - option \"Ergebnis A 4\" [ref=e6]\n    - option \"Ergebnis A 5\" [ref=e7]\n    - option \"Ergebnis A 6\" [ref=e8]\n    - option \"Ergebnis A 7\" [ref=e9]\n  - LabelText\n  - combobox \"Suche B\" [expanded] [ref=e10]\n  - listbox \"Ergebnisse B\" [ref=e11]\n    - option \"Ergebnis B 1\" [selected] [ref=e12]\n    - option \"Ergebnis B 2\" [ref=e13]\n    - option \"Ergebnis B 3\" [ref=e14]\n    - option \"Ergebnis B 4\" [ref=e15]\n    - option \"Ergebnis B 5\" [ref=e16]\n    - option \"Ergebnis B 6\" [ref=e17]\n    - option \"Ergebnis B 7\" [ref=e18]",
+        "url": "http://127.0.0.1:51480/aria-ownership-before.html"
+      }
+    },
+    {
+      "dom": {
+        "page": 257,
+        "value": [
+          {
+            "id": "list-a",
+            "label": "Suchergebnisse A",
+            "role": "listbox"
+          },
+          {
+            "id": "list-b",
+            "label": "Ergebnisse B",
+            "role": "listbox"
+          }
+        ]
+      },
+      "id": "after",
+      "snapshot": {
+        "refs": [
+          {
+            "backendNodeId": 114,
+            "name": "Suche A",
+            "nth": 0,
+            "ref": "e1",
+            "role": "combobox"
+          },
+          {
+            "backendNodeId": 168,
+            "name": "Suchergebnisse A",
+            "nth": 0,
+            "ref": "e2",
+            "role": "listbox"
+          },
+          {
+            "backendNodeId": 169,
+            "name": "Ergebnis A 1",
+            "nth": 0,
+            "ref": "e3",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 170,
+            "name": "Ergebnis A 2",
+            "nth": 0,
+            "ref": "e4",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 171,
+            "name": "Ergebnis A 3",
+            "nth": 0,
+            "ref": "e5",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 172,
+            "name": "Ergebnis A 4",
+            "nth": 0,
+            "ref": "e6",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 173,
+            "name": "Ergebnis A 5",
+            "nth": 0,
+            "ref": "e7",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 174,
+            "name": "Ergebnis A 6",
+            "nth": 0,
+            "ref": "e8",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 175,
+            "name": "Ergebnis A 7",
+            "nth": 0,
+            "ref": "e9",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 131,
+            "name": "Suche B",
+            "nth": 0,
+            "ref": "e10",
+            "role": "combobox"
+          },
+          {
+            "backendNodeId": 180,
+            "name": "Ergebnisse B",
+            "nth": 0,
+            "ref": "e11",
+            "role": "listbox"
+          },
+          {
+            "backendNodeId": 181,
+            "name": "Ergebnis B 1",
+            "nth": 0,
+            "ref": "e12",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 182,
+            "name": "Ergebnis B 2",
+            "nth": 0,
+            "ref": "e13",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 183,
+            "name": "Ergebnis B 3",
+            "nth": 0,
+            "ref": "e14",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 184,
+            "name": "Ergebnis B 4",
+            "nth": 0,
+            "ref": "e15",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 185,
+            "name": "Ergebnis B 5",
+            "nth": 0,
+            "ref": "e16",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 186,
+            "name": "Ergebnis B 6",
+            "nth": 0,
+            "ref": "e17",
+            "role": "option"
+          },
+          {
+            "backendNodeId": 187,
+            "name": "Ergebnis B 7",
+            "nth": 0,
+            "ref": "e18",
+            "role": "option"
+          }
+        ],
+        "text": "- main\n  - LabelText\n  - combobox \"Suche A\" [expanded] [ref=e1]\n  - listbox \"Suchergebnisse A\" [ref=e2]\n    - option \"Ergebnis A 1\" [selected] [ref=e3]\n    - option \"Ergebnis A 2\" [ref=e4]\n    - option \"Ergebnis A 3\" [ref=e5]\n    - option \"Ergebnis A 4\" [ref=e6]\n    - option \"Ergebnis A 5\" [ref=e7]\n    - option \"Ergebnis A 6\" [ref=e8]\n    - option \"Ergebnis A 7\" [ref=e9]\n  - LabelText\n  - combobox \"Suche B\" [expanded] [ref=e10]\n  - listbox \"Ergebnisse B\" [ref=e11]\n    - option \"Ergebnis B 1\" [selected] [ref=e12]\n    - option \"Ergebnis B 2\" [ref=e13]\n    - option \"Ergebnis B 3\" [ref=e14]\n    - option \"Ergebnis B 4\" [ref=e15]\n    - option \"Ergebnis B 5\" [ref=e16]\n    - option \"Ergebnis B 6\" [ref=e17]\n    - option \"Ergebnis B 7\" [ref=e18]",
+        "url": "http://127.0.0.1:51480/aria-ownership-after.html"
+      }
+    }
+  ]
+}

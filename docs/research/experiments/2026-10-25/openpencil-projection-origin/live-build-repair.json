@@ -1,0 +1,9 @@
+{
+  "stage": "Own research browser bundle before any live condition execution",
+  "initial_failure": "Could not resolve installed packages from entry outside tool/node_modules ancestor",
+  "repair": "Supply isolated installed tool/node_modules via esbuild nodePaths; no externals or library replacements",
+  "original_code_changed": false,
+  "conditions_executed_before_repair": 0,
+  "second_failure": "Unused exportHTMLBundle/Tailwind exporter contains original @vite-ignore dynamic node:fs/promises import; esbuild attempted resolution",
+  "second_resolution": "Mark that Node-only import external, then require tree-shaken browser output to contain no node:fs/promises; no stub or original function replacement"
+}

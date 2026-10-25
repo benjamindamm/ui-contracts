@@ -1,0 +1,347 @@
+{
+  "scope": "Additional CEM part and external HTML/ARIA semantic relation binding over actual original SSR; original renderer does not reject these four negative inputs",
+  "cases": [
+    {
+      "id": "ark-original-context",
+      "candidate": "ark",
+      "kind": "base",
+      "expected": {
+        "accepted": true,
+        "error": null
+      },
+      "observed": {
+        "accepted": true,
+        "error": null,
+        "originalSsrAccepted": true,
+        "resolved": [
+          {
+            "instance": "a",
+            "originalPart": "input",
+            "actualId": "input-a",
+            "actualRole": "combobox",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/0",
+              "name": "input",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-original-context/accessibility.html",
+              "id": "input-a",
+              "role": "combobox"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b",
+              "actualSsrSha256": "913e2a92dbeb7ed0a53bdf5bb11ce040d0af26b98c3323326a68be45eae08df1"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "a",
+            "originalPart": "content",
+            "actualId": "popup-a",
+            "actualRole": "listbox",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/1",
+              "name": "popup",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-original-context/accessibility.html",
+              "id": "popup-a",
+              "role": "listbox"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b",
+              "actualSsrSha256": "913e2a92dbeb7ed0a53bdf5bb11ce040d0af26b98c3323326a68be45eae08df1"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "a",
+            "originalPart": "item",
+            "actualId": "option-a-alpha",
+            "actualRole": "option",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/3",
+              "name": "option",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-original-context/accessibility.html",
+              "id": "option-a-alpha",
+              "role": "option"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b",
+              "actualSsrSha256": "913e2a92dbeb7ed0a53bdf5bb11ce040d0af26b98c3323326a68be45eae08df1"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "b",
+            "originalPart": "input",
+            "actualId": "input-b",
+            "actualRole": "combobox",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/0",
+              "name": "input",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-original-context/accessibility.html",
+              "id": "input-b",
+              "role": "combobox"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b",
+              "actualSsrSha256": "913e2a92dbeb7ed0a53bdf5bb11ce040d0af26b98c3323326a68be45eae08df1"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "b",
+            "originalPart": "content",
+            "actualId": "popup-b",
+            "actualRole": "listbox",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/1",
+              "name": "popup",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-original-context/accessibility.html",
+              "id": "popup-b",
+              "role": "listbox"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b",
+              "actualSsrSha256": "913e2a92dbeb7ed0a53bdf5bb11ce040d0af26b98c3323326a68be45eae08df1"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "b",
+            "originalPart": "item",
+            "actualId": "option-b-alpha",
+            "actualRole": "option",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/3",
+              "name": "option",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-original-context/accessibility.html",
+              "id": "option-b-alpha",
+              "role": "option"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b",
+              "actualSsrSha256": "913e2a92dbeb7ed0a53bdf5bb11ce040d0af26b98c3323326a68be45eae08df1"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "ark-custom-root-ids",
+      "candidate": "ark",
+      "kind": "rename",
+      "expected": {
+        "accepted": true,
+        "error": null
+      },
+      "observed": {
+        "accepted": true,
+        "error": null,
+        "originalSsrAccepted": true,
+        "resolved": [
+          {
+            "instance": "a",
+            "originalPart": "input",
+            "actualId": "input-a-v2",
+            "actualRole": "combobox",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/0",
+              "name": "input",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-custom-root-ids/accessibility.html",
+              "id": "input-a-v2",
+              "role": "combobox"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "70dc12f117b63c18f48a1f48d7aaaae4383a52b262878734e2ce980fa54f8cc4",
+              "actualSsrSha256": "cd68393708d88a9efd8f6386d3a50e85d2a687549b7be7929a4ce49516442f65"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "a",
+            "originalPart": "content",
+            "actualId": "popup-a-v2",
+            "actualRole": "listbox",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/1",
+              "name": "popup",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-custom-root-ids/accessibility.html",
+              "id": "popup-a-v2",
+              "role": "listbox"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "70dc12f117b63c18f48a1f48d7aaaae4383a52b262878734e2ce980fa54f8cc4",
+              "actualSsrSha256": "cd68393708d88a9efd8f6386d3a50e85d2a687549b7be7929a4ce49516442f65"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "a",
+            "originalPart": "item",
+            "actualId": "option-a-alpha-v2",
+            "actualRole": "option",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/3",
+              "name": "option",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-custom-root-ids/accessibility.html",
+              "id": "option-a-alpha-v2",
+              "role": "option"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "70dc12f117b63c18f48a1f48d7aaaae4383a52b262878734e2ce980fa54f8cc4",
+              "actualSsrSha256": "cd68393708d88a9efd8f6386d3a50e85d2a687549b7be7929a4ce49516442f65"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "b",
+            "originalPart": "input",
+            "actualId": "input-b-v2",
+            "actualRole": "combobox",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/0",
+              "name": "input",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-custom-root-ids/accessibility.html",
+              "id": "input-b-v2",
+              "role": "combobox"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "70dc12f117b63c18f48a1f48d7aaaae4383a52b262878734e2ce980fa54f8cc4",
+              "actualSsrSha256": "cd68393708d88a9efd8f6386d3a50e85d2a687549b7be7929a4ce49516442f65"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "b",
+            "originalPart": "content",
+            "actualId": "popup-b-v2",
+            "actualRole": "listbox",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/1",
+              "name": "popup",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-custom-root-ids/accessibility.html",
+              "id": "popup-b-v2",
+              "role": "listbox"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "70dc12f117b63c18f48a1f48d7aaaae4383a52b262878734e2ce980fa54f8cc4",
+              "actualSsrSha256": "cd68393708d88a9efd8f6386d3a50e85d2a687549b7be7929a4ce49516442f65"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          },
+          {
+            "instance": "b",
+            "originalPart": "item",
+            "actualId": "option-b-alpha-v2",
+            "actualRole": "option",
+            "interfaceTarget": {
+              "file": "interface.json",
+              "pointer": "/modules/0/declarations/0/cssParts/3",
+              "name": "option",
+              "contextualNodeType": "CEM cssParts entry"
+            },
+            "accessibilityTarget": {
+              "file": "fixtures/ark-custom-root-ids/accessibility.html",
+              "id": "option-b-alpha-v2",
+              "role": "option"
+            },
+            "sources": {
+              "interfaceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+              "accessibilitySha256": "70dc12f117b63c18f48a1f48d7aaaae4383a52b262878734e2ce980fa54f8cc4",
+              "actualSsrSha256": "cd68393708d88a9efd8f6386d3a50e85d2a687549b7be7929a4ce49516442f65"
+            },
+            "method": "additional typed part/role/relation binder; not a native CEM reader"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "ark-input-prop-id-override",
+      "candidate": "ark",
+      "kind": "input-override",
+      "expected": {
+        "accepted": false,
+        "error": "missing-controlled-input"
+      },
+      "observed": {
+        "accepted": false,
+        "error": "missing-controlled-input",
+        "originalSsrAccepted": true,
+        "resolved": []
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "ark-content-prop-id-override",
+      "candidate": "ark",
+      "kind": "content-override",
+      "expected": {
+        "accepted": false,
+        "error": "missing-controls-target"
+      },
+      "observed": {
+        "accepted": false,
+        "error": "missing-controls-target",
+        "originalSsrAccepted": true,
+        "resolved": []
+      },
+      "expectationMet": true
+    }
+  ]
+}

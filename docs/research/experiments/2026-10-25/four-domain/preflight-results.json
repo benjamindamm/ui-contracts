@@ -1,0 +1,29 @@
+{
+  "cases": [
+    {
+      "id": "original-cem-control",
+      "tool": "jsonschema 4.25.1, original CEM schema",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "original-scxml-control",
+      "tool": "lxml 6.1.1.0 / libxml2 2.14.6, original SCXML XSD include chain",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "original-css-control",
+      "tool": "css-tree 3.2.1 original property grammars",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "original-html-host-control",
+      "tool": "axe-core 4.14.0, nine explicit original rules",
+      "expected": true,
+      "actual": true
+    }
+  ],
+  "scope": "Each control is its own original-syntax fixture. HTML host rules are not a neutral accessibility artifact schema; CSS property matching is not full draft conformance."
+}

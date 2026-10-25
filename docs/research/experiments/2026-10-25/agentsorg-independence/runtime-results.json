@@ -1,0 +1,25 @@
+{
+  "original": "@scion-scxml/scxml@4.3.28, independent preparation per instance",
+  "cases": [
+    {
+      "id": "original-scxml-two-open-instances",
+      "expected": {
+        "A": [
+          "open"
+        ],
+        "B": [
+          "open"
+        ]
+      },
+      "observed": {
+        "A": [
+          "open"
+        ],
+        "B": [
+          "open"
+        ]
+      },
+      "expectationMet": true
+    }
+  ]
+}

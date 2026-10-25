@@ -1,0 +1,5 @@
+{
+  "error": "System Python3.9 cannot load rpds extension installed for bundled Python3.12",
+  "stage": "own checker startup, no case observations",
+  "correction": "use pinned bundled Python3.12 with existing dependencies"
+}

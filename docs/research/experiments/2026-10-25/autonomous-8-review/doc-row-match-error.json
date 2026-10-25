@@ -1,0 +1,6 @@
+{
+  "stage": "documentation synchronization after claims/trials/manifests were saved",
+  "error": "row matcher assumed requirement ID was alone in first cell; matrix includes ID plus label",
+  "correction": "match ID and following space, then prior claim; resumed documentation-only tail without appending duplicate claims or recounting probes",
+  "runtime_results_unchanged": true
+}

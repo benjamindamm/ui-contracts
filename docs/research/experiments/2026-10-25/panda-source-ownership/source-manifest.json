@@ -1,0 +1,93 @@
+{
+  "revision": "86f78a228204d63baa0b8bca2676d9f26190e449",
+  "originals": [
+    {
+      "file": "specs.rs",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/crates/pandacss_codegen/src/artifacts/specs.rs",
+      "sha256": "0014ee05ec5df2cf0e1735b770672dd8050c3135537e5af335d12c14fc30ceff"
+    },
+    {
+      "file": "design-system-spec.md",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/design-notes/design-system-spec.md",
+      "sha256": "6da763330bc7f41f2064243829ad5144f82b66eeb44c55041da96f1d75ee23c0"
+    },
+    {
+      "file": "sources.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/sources.ts",
+      "sha256": "159e1c88669f68199ec0efd9fd009ebd6f8b08fcb6dc068692eb9b7de124e656"
+    },
+    {
+      "file": "index.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/index.ts",
+      "sha256": "2fc6fdec0b71271cfeb6e31f578079c51e4b8e08678aef80e7507a4ce9033cc2"
+    },
+    {
+      "file": "design-system-spec.test.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/__tests__/design-system-spec.test.ts",
+      "sha256": "074221bc38adcdfa9657b951581c9dc0bb36f46fd026ecae62c7ab568748e7db"
+    },
+    {
+      "file": "config/sources.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/config/src/sources.ts",
+      "sha256": "1f08ae7725a54575d68cf564010401128df3ef69141ba5e313b32747b8efc413"
+    },
+    {
+      "file": "config/merge.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/config/src/merge.ts",
+      "sha256": "b39ba877c09a7c9e4bef59e9b1fa2affa87aa3804ccbcd5cbac38c88526052ef"
+    },
+    {
+      "file": "config/resolve.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/config/src/resolve.ts",
+      "sha256": "6b57705aca758145fe3289c17b6e0c3b58fa7736ec1ed6ebeb3ee1e147576906"
+    },
+    {
+      "file": "config/shared.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/config/src/shared.ts",
+      "sha256": "e30b84fefbf07d6b12170e9917ce1448db4a24dca291e1859b58207bcd80b39b"
+    },
+    {
+      "file": "config/error.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/config/src/error.ts",
+      "sha256": "e5cb93e7b9410169b4d02c95a5dec08b44585965970c4df37f67e0a49bf90e6c"
+    }
+  ],
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_modules_modified": false,
+  "rust_compiler_executed": false,
+  "config_loader_executed": false,
+  "typescript": "5.9.3",
+  "typescript_js_sha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675",
+  "new_conditions": 9,
+  "own_files": [
+    {
+      "file": "prepare.cjs",
+      "sha256": "ea9b5c9eca0bca9d002a8c3ae0283ee92af1ca2932c8c8f3839f03f4895fba54"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "c36e6535bacb090ca03b26ceebe3e3feedf1183b66fdbb9fad6094e2743dd862"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "17201c5e7f43c1f5a732927c196c18a13f46bf3d73cde14a6d1910adeb97754b"
+    },
+    {
+      "file": "results.json",
+      "sha256": "71bb73e2f2ffe92c960f8630f0d9390bd9f64e120f3104c1693ced559b7dfba6"
+    },
+    {
+      "file": "initial-journal-key-results.json",
+      "sha256": "be5ea4a22677bd8347008e7599f6a511191ad7c82106bf0c44eb16168d2e6ab5"
+    },
+    {
+      "file": "change-record.json",
+      "sha256": "5b7f187637c4502a0f9674e033ec52353f0fc5820e5dc0957229bd88ec3e188a"
+    },
+    {
+      "file": "REPORT.md",
+      "sha256": "e64b4a6a23e1f61053d91f49d757a5412cbb2208d0ab026f9434d9c2b69bfda5"
+    }
+  ]
+}

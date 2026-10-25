@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cem-native-field-types",
+    "file": "interface.json",
+    "expected": true
+  },
+  {
+    "id": "cem-wrong-native-type-still-structural",
+    "file": "wrong-type-interface.json",
+    "expected": true
+  }
+]

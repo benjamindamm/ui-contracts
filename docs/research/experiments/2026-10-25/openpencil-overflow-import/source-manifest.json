@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-25",
+  "source": "S97",
+  "original_pin": "ab2875cc761ee6cff17d389ff1c85fedae50aeab",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "1f752133c0847beecd12a8b6b4aa5694c22288e54a1e43d4b3db0d48aa95b47d"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "03a3a407240a642101216e52b67f2f443b695a20b8f77fc73e86cdcfc4df0841"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "183710da97214dd5c1fe5923f78c3ee18a9c57e41d5256f75a7211c03b88b242"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "8942784c7ce3b038b4e654c0ace28fe940792c6038373d2c8effed79c6f97928"
+    },
+    {
+      "file": "extraction.json",
+      "sha256": "b9f8734d5e0ccd5291cbbd206023164d8ede4da5b635fc061bf244619bba24c8"
+    },
+    {
+      "file": "harness-repair.json",
+      "sha256": "1110d0d1f1ac987c2b52ec8b6aa288aadfb99c0ff9f14d47ecfca937ad8deefa"
+    },
+    {
+      "file": "results.json",
+      "sha256": "01002b1933e28f75e74b8712a4001915c988c7b618399e62f9ee788c6ec225ff"
+    },
+    {
+      "file": "source-notes.json",
+      "sha256": "a8ee2eedecb305fb70376e5c2bc7d2db832a39dec65d55946ea401e72e501ce5"
+    },
+    {
+      "file": "overflow-source-notes.json",
+      "sha256": "2e4a20692e397ab633b107ca18cc17371e98faa44fd555d74bbddb09446e0b18"
+    },
+    {
+      "file": "browser-expectations.json",
+      "sha256": "5dba439ef024543f5c41f6608e73f2199c42139f3712918af38adb8f59085076"
+    },
+    {
+      "file": "browser-run.js",
+      "sha256": "f418d18340a45e8aebe02a075566d94f9eb96fd7e74788eb40fa9a285f1c4a73"
+    },
+    {
+      "file": "browser-results.json",
+      "sha256": "d7bdfb8d340e67ffc268a0d84f8ef120a66738730e17949d7a0e8af67b738da4"
+    },
+    {
+      "file": "host/index.html",
+      "sha256": "8d3c3e3d6ca2d09616600506bc999712cc398180e50596be0f360cea0151c1f6"
+    }
+  ],
+  "original_and_tool_files": [
+    {
+      "file": "sources/packages/dom-css/src/import/scene-graph.ts",
+      "sha256": "570c00814bc8205eddddc476251215d55261c17b3c15592c34c55fba5ae09438"
+    },
+    {
+      "file": "sources/packages/dom-css/src/import/css-values.ts",
+      "sha256": "514f2b2f31576d48c4567b5e7490bb65a732c0f81e9a8199d91ddce71a6eb5e4"
+    },
+    {
+      "file": "sources/packages/dom-css/src/import/flow.ts",
+      "sha256": "28a39751ea2d8ce20980e1ef21f798a74cc5db7230b16f522b8c2dd854882bc3"
+    },
+    {
+      "file": "sources/packages/dom-css/src/export/projection.ts",
+      "sha256": "ee25955a9b83f6ca119b2eb65ee843e3dd894ecf5b018f6d72ec773294101c7f"
+    },
+    {
+      "file": "../validation-probes/ts-tool/node_modules/typescript/package.json",
+      "sha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6"
+    },
+    {
+      "file": "../validation-probes/ts-tool/node_modules/typescript/lib/typescript.js",
+      "sha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675"
+    }
+  ],
+  "field_fragment_conditions": 12,
+  "native_css_conditions": 3,
+  "whole_importer_executed": false,
+  "whole_exporter_executed": false,
+  "openpencil_build_rendered": false,
+  "native_css_fixture_rendered": true,
+  "original_fragments_modified": false,
+  "physical_input_tested": false,
+  "at_tested": false
+}

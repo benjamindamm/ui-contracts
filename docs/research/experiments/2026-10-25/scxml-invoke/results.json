@@ -1,0 +1,142 @@
+{
+  "package": "@scion-scxml/scxml",
+  "version": "4.3.28",
+  "node": "v24.22.1",
+  "method": "Original default file-src invoker; no custom invoker or send override; parent prepare separate for A/B; snapshots via original public API",
+  "cases": [
+    {
+      "id": "invoke-start-a",
+      "expected": {
+        "childCountA": 1,
+        "parentStateA": "open",
+        "ownerA": "A",
+        "offsetA": 0
+      },
+      "observed": {
+        "childCountA": 1,
+        "parentStateA": "open",
+        "ownerA": "A",
+        "offsetA": 0
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "invoke-parameter-isolation",
+      "expected": {
+        "ownerA": "A",
+        "ownerB": "B",
+        "offsetA": 0,
+        "offsetB": 0
+      },
+      "observed": {
+        "ownerA": "B",
+        "ownerB": "B",
+        "offsetA": 0,
+        "offsetB": 0
+      },
+      "expectationMet": false
+    },
+    {
+      "id": "invoke-event-route-isolation",
+      "expected": {
+        "reportOwnerA": "A",
+        "reportOffsetA": 40,
+        "reportCountB": 0,
+        "offsetA": 40,
+        "offsetB": 0
+      },
+      "observed": {
+        "reportOwnerA": "B",
+        "reportOffsetA": 40,
+        "reportCountB": 0,
+        "offsetA": 40,
+        "offsetB": 40
+      },
+      "expectationMet": false
+    },
+    {
+      "id": "invoke-close-cancels-child",
+      "expected": {
+        "parentStateA": "closed",
+        "oldChildFinalA": true,
+        "childFinalB": false
+      },
+      "observed": {
+        "parentStateA": "closed",
+        "oldChildFinalA": true,
+        "childFinalB": false
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "invoke-reopen-fresh-child",
+      "expected": {
+        "childCountA": 2,
+        "newChildObject": true,
+        "ownerA": "A",
+        "ownerB": "B",
+        "offsetA": 0,
+        "offsetB": 0
+      },
+      "observed": {
+        "childCountA": 2,
+        "newChildObject": true,
+        "ownerA": "A",
+        "ownerB": "A",
+        "offsetA": 0,
+        "offsetB": 0
+      },
+      "expectationMet": false
+    },
+    {
+      "id": "invoke-parent-cancel",
+      "expected": {
+        "parentFinalB": true,
+        "childFinalB": true
+      },
+      "observed": {
+        "parentFinalB": true,
+        "childFinalB": true
+      },
+      "expectationMet": true
+    }
+  ],
+  "rawParentEvents": {
+    "A": [
+      {
+        "name": "child.ready",
+        "data": {
+          "owner": "A",
+          "offset": 0
+        },
+        "invokeid": "scroll"
+      },
+      {
+        "name": "child.report",
+        "data": {
+          "owner": "B",
+          "offset": 40
+        },
+        "invokeid": "scroll"
+      },
+      {
+        "name": "child.ready",
+        "data": {
+          "owner": "A",
+          "offset": 0
+        },
+        "invokeid": "scroll"
+      }
+    ],
+    "B": [
+      {
+        "name": "child.ready",
+        "data": {
+          "owner": "B",
+          "offset": 0
+        },
+        "invokeid": "scroll"
+      }
+    ]
+  }
+}

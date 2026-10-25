@@ -1,0 +1,18 @@
+[
+  {
+    "id": "changed-height-a",
+    "instance": "a",
+    "heightPx": 192,
+    "gapPx": 8,
+    "scrollHeightPx": 224,
+    "tolerancePx": 1
+  },
+  {
+    "id": "changed-height-b",
+    "instance": "b",
+    "heightPx": 192,
+    "gapPx": 8,
+    "scrollHeightPx": 224,
+    "tolerancePx": 1
+  }
+]

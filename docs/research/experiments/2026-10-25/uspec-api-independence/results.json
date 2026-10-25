@@ -1,0 +1,389 @@
+{
+  "scope": "Original independent uSpec APIcache validation with actual Evidence next to separate original SCXML/CSS/HTML; original SCXML parent emission, no full canonical builder/whole pipeline/browser/AT",
+  "cases": [
+    {
+      "id": "control",
+      "expected": {
+        "originalApiAccepted": true,
+        "publicValue": "alpha",
+        "height": 160,
+        "unchangedOtherDomains": true,
+        "ownApiScopeOnly": true
+      },
+      "observed": {
+        "originalApiAccepted": true,
+        "publicValue": "alpha",
+        "height": 160,
+        "unchangedOtherDomains": true,
+        "ownApiScopeOnly": true
+      },
+      "details": {
+        "sourceFiles": {
+          "interface": [
+            "foreign-cem.json",
+            "research-api.json",
+            "research-evidence-api.json",
+            "binding.json"
+          ],
+          "visual": [
+            "visual.css"
+          ],
+          "behavior": [
+            "behavior.scxml"
+          ],
+          "accessibility": [
+            "accessibility.html"
+          ]
+        },
+        "hashes": {
+          "interface": [
+            {
+              "file": "foreign-cem.json",
+              "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+            },
+            {
+              "file": "research-api.json",
+              "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+            },
+            {
+              "file": "research-evidence-api.json",
+              "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+            },
+            {
+              "file": "binding.json",
+              "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+            }
+          ],
+          "visual": [
+            {
+              "file": "visual.css",
+              "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+            }
+          ],
+          "behavior": [
+            {
+              "file": "behavior.scxml",
+              "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+            }
+          ],
+          "accessibility": [
+            {
+              "file": "accessibility.html",
+              "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+            }
+          ]
+        },
+        "interfaceRow": {
+          "name": "value",
+          "type": "string"
+        },
+        "leadingInterfaceField": {
+          "kind": "field",
+          "name": "value",
+          "type": {
+            "text": "string"
+          }
+        },
+        "actualOriginalCacheValidation": {
+          "domain": "api",
+          "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-api-independence/fixtures/control/research-api.json",
+          "ok": true,
+          "normalized": 0,
+          "bytes": 807,
+          "errors": []
+        },
+        "actualOriginalScxml": {
+          "open": [
+            "open"
+          ],
+          "final": [
+            "closed"
+          ],
+          "parentEvents": [
+            {
+              "name": "value-change",
+              "data": {
+                "value": "alpha"
+              },
+              "invokeid": "A"
+            }
+          ]
+        },
+        "publicTypeMatches": true,
+        "anatomy": {
+          "cemParts": [
+            "input",
+            "popup",
+            "list",
+            "option"
+          ],
+          "htmlTargets": [
+            "input-a",
+            "popup-a",
+            "list-a",
+            "option-a-0"
+          ]
+        },
+        "additionalBinding": "API property value:string -> original SCXML public value-change detail.value; original CEM parts -> separate CSS/HTML context; CEM leading, cache/fact derived within Interface domain",
+        "canonicalRootLoaded": false
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "visual-revision",
+      "expected": {
+        "originalApiAccepted": true,
+        "publicValue": "alpha",
+        "height": 192,
+        "unchangedOtherDomains": true,
+        "ownApiScopeOnly": true
+      },
+      "observed": {
+        "originalApiAccepted": true,
+        "publicValue": "alpha",
+        "height": 192,
+        "unchangedOtherDomains": true,
+        "ownApiScopeOnly": true
+      },
+      "details": {
+        "sourceFiles": {
+          "interface": [
+            "foreign-cem.json",
+            "research-api.json",
+            "research-evidence-api.json",
+            "binding.json"
+          ],
+          "visual": [
+            "visual.css"
+          ],
+          "behavior": [
+            "behavior.scxml"
+          ],
+          "accessibility": [
+            "accessibility.html"
+          ]
+        },
+        "hashes": {
+          "interface": [
+            {
+              "file": "foreign-cem.json",
+              "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+            },
+            {
+              "file": "research-api.json",
+              "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+            },
+            {
+              "file": "research-evidence-api.json",
+              "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+            },
+            {
+              "file": "binding.json",
+              "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+            }
+          ],
+          "visual": [
+            {
+              "file": "visual.css",
+              "sha256": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a"
+            }
+          ],
+          "behavior": [
+            {
+              "file": "behavior.scxml",
+              "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+            }
+          ],
+          "accessibility": [
+            {
+              "file": "accessibility.html",
+              "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+            }
+          ]
+        },
+        "interfaceRow": {
+          "name": "value",
+          "type": "string"
+        },
+        "leadingInterfaceField": {
+          "kind": "field",
+          "name": "value",
+          "type": {
+            "text": "string"
+          }
+        },
+        "actualOriginalCacheValidation": {
+          "domain": "api",
+          "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-api-independence/fixtures/visual-revision/research-api.json",
+          "ok": true,
+          "normalized": 0,
+          "bytes": 807,
+          "errors": []
+        },
+        "actualOriginalScxml": {
+          "open": [
+            "open"
+          ],
+          "final": [
+            "closed"
+          ],
+          "parentEvents": [
+            {
+              "name": "value-change",
+              "data": {
+                "value": "alpha"
+              },
+              "invokeid": "A"
+            }
+          ]
+        },
+        "publicTypeMatches": true,
+        "anatomy": {
+          "cemParts": [
+            "input",
+            "popup",
+            "list",
+            "option"
+          ],
+          "htmlTargets": [
+            "input-a",
+            "popup-a",
+            "list-a",
+            "option-a-0"
+          ]
+        },
+        "additionalBinding": "API property value:string -> original SCXML public value-change detail.value; original CEM parts -> separate CSS/HTML context; CEM leading, cache/fact derived within Interface domain",
+        "canonicalRootLoaded": false
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "behavior-revision",
+      "expected": {
+        "originalApiAccepted": true,
+        "publicValue": "beta",
+        "height": 160,
+        "unchangedOtherDomains": true,
+        "ownApiScopeOnly": true
+      },
+      "observed": {
+        "originalApiAccepted": true,
+        "publicValue": "beta",
+        "height": 160,
+        "unchangedOtherDomains": true,
+        "ownApiScopeOnly": true
+      },
+      "details": {
+        "sourceFiles": {
+          "interface": [
+            "foreign-cem.json",
+            "research-api.json",
+            "research-evidence-api.json",
+            "binding.json"
+          ],
+          "visual": [
+            "visual.css"
+          ],
+          "behavior": [
+            "behavior.scxml"
+          ],
+          "accessibility": [
+            "accessibility.html"
+          ]
+        },
+        "hashes": {
+          "interface": [
+            {
+              "file": "foreign-cem.json",
+              "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+            },
+            {
+              "file": "research-api.json",
+              "sha256": "943f6f937ea7ec57d4cfdb96e06d33caa489c05cf2bbedebcd9bff6e3c77f7f3"
+            },
+            {
+              "file": "research-evidence-api.json",
+              "sha256": "d6075efae4a9bd1ed8bb070551d978de17994cedac16fa52d2ef3cf51c670fd3"
+            },
+            {
+              "file": "binding.json",
+              "sha256": "8ad692ee2a2c5b14fbe6f3c01969afda35559f6213eac02b51758371c2ff1167"
+            }
+          ],
+          "visual": [
+            {
+              "file": "visual.css",
+              "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+            }
+          ],
+          "behavior": [
+            {
+              "file": "behavior.scxml",
+              "sha256": "9c6ed888a078fbe1bbe60f87749faae8fb307c9f71d820135948d34b095fd367"
+            }
+          ],
+          "accessibility": [
+            {
+              "file": "accessibility.html",
+              "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+            }
+          ]
+        },
+        "interfaceRow": {
+          "name": "value",
+          "type": "string"
+        },
+        "leadingInterfaceField": {
+          "kind": "field",
+          "name": "value",
+          "type": {
+            "text": "string"
+          }
+        },
+        "actualOriginalCacheValidation": {
+          "domain": "api",
+          "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-api-independence/fixtures/behavior-revision/research-api.json",
+          "ok": true,
+          "normalized": 0,
+          "bytes": 807,
+          "errors": []
+        },
+        "actualOriginalScxml": {
+          "open": [
+            "open"
+          ],
+          "final": [
+            "closed"
+          ],
+          "parentEvents": [
+            {
+              "name": "value-change",
+              "data": {
+                "value": "beta"
+              },
+              "invokeid": "A"
+            }
+          ]
+        },
+        "publicTypeMatches": true,
+        "anatomy": {
+          "cemParts": [
+            "input",
+            "popup",
+            "list",
+            "option"
+          ],
+          "htmlTargets": [
+            "input-a",
+            "popup-a",
+            "list-a",
+            "option-a-0"
+          ]
+        },
+        "additionalBinding": "API property value:string -> original SCXML public value-change detail.value; original CEM parts -> separate CSS/HTML context; CEM leading, cache/fact derived within Interface domain",
+        "canonicalRootLoaded": false
+      },
+      "expectationMet": true
+    }
+  ]
+}

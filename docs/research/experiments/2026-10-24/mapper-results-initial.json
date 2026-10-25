@@ -1,0 +1,114 @@
+{
+  "kind": "original-function-execution",
+  "node": "v24.22.1",
+  "rendered": false,
+  "source_modified": false,
+  "type_syntax_erasure": "Node native TypeScript support; runtime source body unchanged",
+  "cases": [
+    {
+      "id": "mapper-01-height-control",
+      "fn": "container",
+      "input": {
+        "layout": "layer",
+        "size": {
+          "maxHeight": 160
+        }
+      },
+      "expected": {
+        "position": "relative",
+        "maxHeight": "160px"
+      },
+      "output": {
+        "display": "flex",
+        "position": "relative",
+        "maxHeight": "160px"
+      },
+      "expectation_met": false
+    },
+    {
+      "id": "mapper-02-foreign-anchor",
+      "fn": "container",
+      "input": {
+        "layout": "layer",
+        "anchorTarget": "input-A",
+        "placement": "bottom",
+        "offset": {
+          "value": 8,
+          "unit": "px"
+        }
+      },
+      "expected": {
+        "position": "relative"
+      },
+      "output": {
+        "display": "flex",
+        "position": "relative"
+      },
+      "expectation_met": false
+    },
+    {
+      "id": "mapper-03-container-overflow",
+      "fn": "container",
+      "input": {
+        "layout": "layer",
+        "overflowY": "auto"
+      },
+      "expected": {
+        "position": "relative"
+      },
+      "output": {
+        "display": "flex",
+        "position": "relative"
+      },
+      "expectation_met": false
+    },
+    {
+      "id": "mapper-04-nested-style-overflow",
+      "fn": "element",
+      "input": {
+        "style": {
+          "overflowY": "auto",
+          "positionAnchor": "--input",
+          "top": "anchor(bottom)"
+        }
+      },
+      "expected": {},
+      "output": {},
+      "expectation_met": true
+    },
+    {
+      "id": "mapper-05-element-overflow",
+      "fn": "element",
+      "input": {
+        "overflow": "auto",
+        "overflowX": "hidden",
+        "overflowY": "scroll"
+      },
+      "expected": {},
+      "output": {},
+      "expectation_met": true
+    },
+    {
+      "id": "mapper-06-relative-unit",
+      "fn": "container",
+      "input": {
+        "size": {
+          "maxHeight": {
+            "value": 5,
+            "unit": "rem"
+          }
+        }
+      },
+      "expected": {
+        "maxHeight": "5rem"
+      },
+      "output": {
+        "display": "flex",
+        "flexDirection": "column",
+        "maxHeight": "5rem"
+      },
+      "expectation_met": false
+    }
+  ],
+  "all_expectations_met": false
+}

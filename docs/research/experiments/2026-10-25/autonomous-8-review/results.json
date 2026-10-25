@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-25",
+  "baseline_remaining": 10,
+  "autonomous_cells": 8,
+  "closed_scoped_cells": 8,
+  "remaining_u": 2,
+  "remaining_integration_u": 2,
+  "remaining_other_u": 0,
+  "new_conditions": 38,
+  "new_groups": 7,
+  "claims": 543,
+  "all_final_expectations_met": true,
+  "initial_own_scroll_expectation_failure_preserved": true,
+  "original_modules_modified": false,
+  "whole_four_domain_integration_proven": false,
+  "new_product_format_selected": false,
+  "authors_contacted": false,
+  "cells": [
+    {
+      "candidate": "UXSpec",
+      "requirement": "V04",
+      "coverage": "A",
+      "claim": "C540",
+      "previous_claim": "C420",
+      "finding": "Tatsächlich kompilierter ursprünglicher Visualslot an separates CEM-/DOM-Ziel und eigene explizite CSS-Ankerrelation gebunden. Abstand8 bleibt bei Input20→40; fremde/fehlende Ziele und nicht unterstützte Einheit abgewiesen.",
+      "limit": "Zusätzliche Ziel-/Richtungs-/Abstandssemantik, keine native UXSpec-Inputankerfähigkeit. Original-Runner/React-Renderer nicht ausgeführt.",
+      "report": "experiments/2026-10-25/layout-final-bindings/REPORT.md",
+      "report_sha256": "929034512e6bc4b746bbd705d7db811a27ff995a54d7703a04cbcc525955f63d"
+    },
+    {
+      "candidate": "UXSpec",
+      "requirement": "V06",
+      "coverage": "A",
+      "claim": "C541",
+      "previous_claim": "C420",
+      "finding": "Tatsächlicher Originalcompiler/Stylemapper liefert Slot/160px, ignoriert ursprüngliches overflow weiterhin. Explizite zusätzliche auto-/feste-Zeilenpolitik ergibt native160/224/64; fehlende Politik/fremder Port abgewiesen.",
+      "limit": "A nur mit zusätzlichem Overflow-/Zeilensizing. Initiale eigene Erwartung scheiterte an tatsächlicher Original-Flexschrumpfung und bleibt erhalten; Originalmapper unverändert.",
+      "report": "experiments/2026-10-25/layout-final-bindings/REPORT.md",
+      "report_sha256": "929034512e6bc4b746bbd705d7db811a27ff995a54d7703a04cbcc525955f63d"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "V04",
+      "coverage": "A",
+      "claim": "C542",
+      "previous_claim": "C400",
+      "finding": "Tatsächlich vom Originalbuilder normalisierter Section-Messanker an richtigen CEM-/DOM-Instanzkontext und zusätzliche native CSS-Zielkantenrelation gebunden. Abstand8 bleibt20→40; fremder und tatsächlich unresolved ausgegebener Anker abgewiesen.",
+      "limit": "Messanker bleibt ursprüngliche Messidentität, Runtimegeometrie ist Zusatzbinding. Keine behauptete eigene ursprüngliche Overlay-/Targetsemantik.",
+      "report": "experiments/2026-10-25/layout-final-bindings/REPORT.md",
+      "report_sha256": "929034512e6bc4b746bbd705d7db811a27ff995a54d7703a04cbcc525955f63d"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "V06",
+      "coverage": "A",
+      "claim": "C543",
+      "previous_claim": "C401",
+      "finding": "Vollständige unveränderte ursprüngliche extractDims/sg-Funktion erhält clipsContent auf clipping-only Minimalnodes; Originalbuilder bewahrt den Beleg. Zusatzmapping true→CSSclip/false→visible nativ anhand letzter gemalter Zeile geprüft; fehlender/untypisierter Beleg abgewiesen.",
+      "limit": "Kein Figma-SDK oder ausgeführter numerischer Bindingbranch. Kein auto/scroll aus Clipping erfunden; feste zusätzliche Clip/Visible-Politik und Testviewport, kein universeller Scrollvertrag.",
+      "report": "experiments/2026-10-25/layout-final-bindings/REPORT.md",
+      "report_sha256": "929034512e6bc4b746bbd705d7db811a27ff995a54d7703a04cbcc525955f63d"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C538",
+      "previous_claim": "C503",
+      "finding": "Tatsächlich eigenständig prüfbarer ursprünglicher APIcache mit Evidence neben separatem SCXML/CSS/HTML; CEM führt Interface, Cache/Fact sind Ableitung. Visualrevision und tatsächliche ursprüngliche SCXML-Publicwertrevision ohne Fremdmasteränderung.",
+      "limit": "Nur ursprünglicher APIcache-Teilgegenstand, kein unabhängig ladbarer partieller Canonical-Gesamtroot oder vollständige Autocomplete-/Figma-Pipeline.",
+      "report": "experiments/2026-10-25/uspec-api-independence/REPORT.md",
+      "report_sha256": "12c65fd2a487676b0de86776d9bf8912053d19d9c266d19172aa1d29cfaed9e9"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X03",
+      "coverage": "A",
+      "claim": "C536",
+      "previous_claim": "C512",
+      "finding": "Tatsächliche externe CEM-Datei/Pointer/Field-/Modul-/Definitions-/Typ-/Revisionsauflösung an ursprünglichen Evidence-Fact/sourcePaths und tatsächlichen lokalen APIoutput gebunden; gezielte fremde/missing/stale Targets abgewiesen.",
+      "limit": "Zusätzlicher eng begrenzter Definitionsresolver, keine native uSpec-Fremdauflösung oder erfundene konkrete UI-Instanzreferenz.",
+      "report": "experiments/2026-10-25/uspec-cem-ownership/REPORT.md",
+      "report_sha256": "6d1ae38937d0d4dbb50f66cf598507d3cd821aedecc314a740bf0f7757e72351"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X08",
+      "coverage": "A",
+      "claim": "C537",
+      "previous_claim": "C516",
+      "finding": "CEM-Propertyname/-Typ führt ausdrücklich Fact/equals/APIoutput. Tatsächliche Quellenrevision und erneutes Dateilesen zur Ableitung werden samt Konflikten und vorher/nachher-Journal dem Originalvalidator zugeführt.",
+      "limit": "Zusätzliches per-information-Ownershipjournal, kein originales allgemeines Governance-/Rechte-/Transaktionssystem. Dieselben14 Bedingungen wie X03 nur einmal gezählt.",
+      "report": "experiments/2026-10-25/uspec-cem-ownership/REPORT.md",
+      "report_sha256": "6d1ae38937d0d4dbb50f66cf598507d3cd821aedecc314a740bf0f7757e72351"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "X01",
+      "coverage": "A",
+      "claim": "C539",
+      "previous_claim": "C304",
+      "finding": "Vier tatsächliche CEM/OPS/CSS/HTML-Master erzeugen den Scenegraph ausdrücklich als Ableitung. Original-SG/OPS/Instanz/Control/Projektions- und unveränderte isolierte Vue-/Reka-SSR-Kette folgt getrennten Visual-/Namens-/Defaultrevisionen; Behavior/A11y-Rollenkonflikt zusätzlich erkannt.",
+      "limit": "Kein zweiter Graphmaster, universeller Importer oder ganzer Editor. Exakte A/B-Namen und aria-checked im tatsächlichen Original-SSR geprüft; keine native UI-/AT-Abnahme.",
+      "report": "experiments/2026-10-25/op-four-masters/REPORT.md",
+      "report_sha256": "95687a1d7f048e2ab5d464804bc434db557d554916e65cc936293730194489d0"
+    }
+  ],
+  "remaining_cells": [
+    {
+      "requirement": "X06",
+      "candidate": "Google DESIGN.md",
+      "coverage": "U",
+      "claim": "C483"
+    },
+    {
+      "requirement": "X06",
+      "candidate": "OpenUI",
+      "coverage": "U",
+      "claim": "C484"
+    }
+  ]
+}

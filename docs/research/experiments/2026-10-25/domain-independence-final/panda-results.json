@@ -1,0 +1,163 @@
+{
+  "scope": "Four separately assessed original contributions with additional four-domain bindings, original SSR/compiler/reader; no mounted interaction, actual timer, Rust generator, browser or AT",
+  "cases": [
+    {
+      "id": "panda-css-base",
+      "candidate": "Panda CSS",
+      "revision": "base",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalReaderResult": {
+          "ok": true,
+          "value": {
+            "schemaVersion": 1,
+            "categories": {
+              "sizes": [
+                0,
+                1
+              ]
+            },
+            "paths": [
+              "sizes.popup"
+            ],
+            "tokens": {
+              "sizes.popup": {
+                "category": "sizes",
+                "cssVar": "--popup-max-height"
+              }
+            },
+            "conditions": {},
+            "themes": {},
+            "values": [
+              {
+                "token": "sizes.popup",
+                "value": "160px"
+              }
+            ]
+          }
+        },
+        "originalResolvedRow": {
+          "token": "sizes.popup",
+          "value": "160px"
+        },
+        "semanticBinding": "original sizes.popup row -> explicitly additional CSS variable on external contextual popup parts; CEM/SCXML/HTML unchanged",
+        "additionalCssProjection": true,
+        "noRustGeneratorExecuted": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.scxml",
+          "visual": "visual.json",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual": "2a9e437de404d9f0a4c338c874b0ba8e75bce6a0159675b1474da71ce9e02b5d",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalScxmlSyntaxAndOwnBehaviorStates": true,
+        "pandaNoForeignRootDefinitions": true,
+        "explicitAdditionalProjectionTargets": true
+      }
+    },
+    {
+      "id": "panda-css-visual-revision",
+      "candidate": "Panda CSS",
+      "revision": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalReaderResult": {
+          "ok": true,
+          "value": {
+            "schemaVersion": 1,
+            "categories": {
+              "sizes": [
+                0,
+                1
+              ]
+            },
+            "paths": [
+              "sizes.popup"
+            ],
+            "tokens": {
+              "sizes.popup": {
+                "category": "sizes",
+                "cssVar": "--popup-max-height"
+              }
+            },
+            "conditions": {},
+            "themes": {},
+            "values": [
+              {
+                "token": "sizes.popup",
+                "value": "192px"
+              }
+            ]
+          }
+        },
+        "originalResolvedRow": {
+          "token": "sizes.popup",
+          "value": "192px"
+        },
+        "semanticBinding": "original sizes.popup row -> explicitly additional CSS variable on external contextual popup parts; CEM/SCXML/HTML unchanged",
+        "additionalCssProjection": true,
+        "noRustGeneratorExecuted": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.scxml",
+          "visual": "visual.json",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual": "fd35d89c103e04f285778ad63aecdc645893070766d05c480b7d610fc1c30b9f",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalScxmlSyntaxAndOwnBehaviorStates": true,
+        "pandaNoForeignRootDefinitions": true,
+        "explicitAdditionalProjectionTargets": true
+      }
+    }
+  ]
+}

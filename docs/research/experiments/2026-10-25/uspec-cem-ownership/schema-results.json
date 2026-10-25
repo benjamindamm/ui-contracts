@@ -1,0 +1,71 @@
+{
+  "scope": "Original CEM shape preflight for13 existing originals,14th deliberately missing; no additional test-count inflation",
+  "schemaSha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+  "cases": [
+    {
+      "case": "control",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "coordinated-derived-edit",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "evidence-sourcepath-conflict",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "fact-updated-output-stale",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "missing-external-pointer",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "property-renamed-explicit-rebind",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "property-renamed-without-rebind",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "same-name-wrong-definition",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "source-revision-rederived",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "source-revision-stale-facts",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "source-revision-stale-hash",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "unsupported-semantic-type",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "case": "wrong-external-target-kind",
+      "valid": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "standalone-owner",
+    "kind": "standalone",
+    "expected": {
+      "ownerType": "COMPONENT",
+      "kind": "switch"
+    }
+  },
+  {
+    "id": "component-set-owner",
+    "kind": "set",
+    "expected": {
+      "ownerType": "COMPONENT_SET",
+      "kind": "switch",
+      "rawChildKind": "radio"
+    }
+  },
+  {
+    "id": "nonleading-child-edit",
+    "kind": "child-edit",
+    "expected": {
+      "kindBefore": "switch",
+      "kindAfter": "switch",
+      "rawChildKindAfter": "button"
+    }
+  },
+  {
+    "id": "leading-owner-edit",
+    "kind": "owner-edit",
+    "expected": {
+      "kindBefore": "switch",
+      "kindAfter": "radio",
+      "instanceIdPreserved": true
+    }
+  },
+  {
+    "id": "no-variant-fallback",
+    "kind": "owner-remove",
+    "expected": {
+      "controls": 0,
+      "rawChildKind": "radio",
+      "ownerType": "COMPONENT_SET"
+    }
+  },
+  {
+    "id": "owner-property-definition-first",
+    "kind": "definition",
+    "expected": {
+      "effectiveDefault": "false",
+      "rawChildDefault": "true"
+    }
+  },
+  {
+    "id": "instance-assignment-over-default",
+    "kind": "assignment",
+    "expected": {
+      "effectiveDefault": "true",
+      "assignment": "false",
+      "designed": false
+    }
+  },
+  {
+    "id": "frame-is-not-behaviour-owner",
+    "kind": "frame",
+    "expected": {
+      "ownerType": null,
+      "rawFrameKind": "switch",
+      "controls": 0
+    }
+  }
+]

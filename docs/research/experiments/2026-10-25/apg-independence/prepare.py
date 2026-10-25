@@ -1,0 +1,8 @@
+from pathlib import Path
+import json,shutil
+w=Path(__file__).parent;h=w/'host';h.mkdir(exist_ok=True);shutil.copyfile('work/apg-original-reference/combobox-autocomplete.js',h/'behavior.js');shutil.copyfile('work/apg-original-reference/interface.json',h/'interface.json')
+base='''<!doctype html><html lang="en"><meta charset="utf-8"><title>APG independent domains research</title><link rel="stylesheet" href="STYLE"><body><label for="input-a">LABEL</label><input id="input-a" role="combobox" aria-autocomplete="list" aria-controls="list-a" aria-expanded="false"><button id="button-a" type="button">Open</button><ul id="list-a" role="listbox" aria-label="Results A"><li id="option-a-0" role="option">Alabama</li><li id="option-a-1" role="option">Alaska</li></ul><script src="behavior.js"></script><script src="harness.js"></script></body></html>'''
+for id,height,label in [('base',160,'Search A'),('visual-revision',192,'Search A'),('accessibility-revision',160,'Find A')]:
+ d=h/id;d.mkdir(exist_ok=True);(d/'accessibility.html').write_text(base.replace('STYLE','visual.css').replace('LABEL',label).replace('src="','src="../'));(d/'visual.css').write_text(f'#list-a{{max-height:{height}px;overflow-y:auto;}}\n')
+ for filename in ['behavior.js','interface.json']:shutil.copyfile(h/filename,d/filename)
+cases=[{'id':id,'expected':{'height':height,'label':label,'options':['Alaska'],'nativeType':'HTMLInputElement','className':'ComboboxAutocomplete','fourDistinctSources':True}}for id,height,label in [('base',160,'Search A'),('visual-revision',192,'Search A'),('accessibility-revision',160,'Find A')]];(w/'cases.json').write_text(json.dumps(cases,indent=2)+'\n')

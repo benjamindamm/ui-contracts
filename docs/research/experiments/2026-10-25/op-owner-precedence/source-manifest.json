@@ -1,0 +1,379 @@
+{
+  "packages": [
+    "@open-pencil/scene-graph@0.16.0",
+    "@open-pencil/dom-css@0.16.0"
+  ],
+  "newConditions": 8,
+  "originalCodeModified": false,
+  "sourceReview": "Complete original published API execution; selected graph metadata source snapshot only",
+  "original_files": [
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/arrow-caps.js",
+      "sha256": "411d522ba789d5b0738c507c4ed1ab50dbbbcd32a36f09b07268d2e054fffe2e"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/asset-keys.js",
+      "sha256": "c2fec616946750dd5063e0edf8e1a9c8c1732e7077fbc19d89dcc067ec3a1508"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/behaviours/kinds.js",
+      "sha256": "9d80871081054bbe5c5d079bd7dce51e5b9da9fa0f6346b4350dcf05f4188cfd"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/behaviours/layers.js",
+      "sha256": "2ffbe387dab5411047ea2ddf43a738cfde3fb143e5586d045fc446fd0c7e3781"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/behaviours/spec.js",
+      "sha256": "48efd14a1591e6c385bece64405b76a9c9ea0d34c8f76fe511e53d2eb7c18633"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/bindings.js",
+      "sha256": "df7ea7fb7aa5d79f456c1e66f3482ac17cad49f0acc58dad8e808eec9b77e5a2"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/buffered-events.js",
+      "sha256": "d7a0911a180b40a3494f695db417a3d9184c5acdc9ac02160522dd53dac8f2f6"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/checkpoint.js",
+      "sha256": "f3b1f3447db938c4299f0a5de2d396d830b5bcf7a11cbb5d12f609ad389b113f"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/color/contrast.js",
+      "sha256": "6a1a9fc5830334a6af95100e6bd15686627fa7ccdc77e8805a42c8a5076668a4"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/color/index.js",
+      "sha256": "11a9b3937044998bfcac8fce23db56aa7b7af1b0c42bfb26610bfa59062e9427"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/comments/document.js",
+      "sha256": "2a7062c6a7c74959b2f205633c70cacc60afd63fc8b4a006f4f3daee9fd04e20"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/comments/list.js",
+      "sha256": "374167963f7cf1aba030acecd7d84afadbcb589b67ab91738b4137af804b97e7"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/comments/merge.js",
+      "sha256": "fef0156b414e0651d17865656a296b609934c7cb536ee05950769b3d3651281f"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/components/exposure.js",
+      "sha256": "54829a568ddb155f5043585719462c2fe871cd421fe9bc02787480853f869c8e"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/components/variants.js",
+      "sha256": "4a71249db7575780ebd75133fdf0eb4b5b0508334aecec5a1b2f3e545dbe6ad8"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/coordinate.js",
+      "sha256": "9a297797f45a00b0f0bb29058f539740e9668c7022a6670d539195122caa16a8"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/css/grid.js",
+      "sha256": "d0dff38b9fca55b389ab6aa0e3aed9692de887c3bf3668e7bcb734fd0c0c9906"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/css/index.js",
+      "sha256": "933ed495947a61119ea271eb3c13627d75d23dc68e8c2b56633da751372ca64c"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/events.js",
+      "sha256": "dc59324e87260dc550c0838dd2ba217dcb781923a8730df80dbcf54871777bca"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/fields/geometry.js",
+      "sha256": "95cfcddde01fce7e89d88833c700bf608eab23f1cf56464d4baedb5ce73b1b35"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/font-style.js",
+      "sha256": "304c99beb2490f3f7a85355d7694be5a63bbb14fcedc31b59c870113869660b5"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/group-bounds.js",
+      "sha256": "cd10402ed567024fdb969d634bdc6c37808c88175042c4a25c8574143c5d54d4"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/icons/glyph.js",
+      "sha256": "8bd6afbfd306fee54c411091278a9adec84c7c2e14153c0c415596d9626a58b0"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/chunks/index.js",
+      "sha256": "6f1e2821f8bbd7beec6de2f40934d136d7b1aa05331d617dc7955bba7cc63fca"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/color.js",
+      "sha256": "5ca507ecea896a63a08ec400dc5bdbe834cd5648fe9a5181ddb9c95a051b5b19"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/constants.js",
+      "sha256": "2614bcd44cd8af10323ddc245d492b112d99e53ff30a711e6ed13a2870d01a87"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/coordinate.js",
+      "sha256": "90b151728b5e0113d29e87cd2e798919148ac2df9046fee3f02b9bc832f9c7a9"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/copy.js",
+      "sha256": "1f2c797e022fc291626f54632c268f96eb7ce67f0a224531878ee034beeb5310"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/css.js",
+      "sha256": "30ac44ff3d407b72ec3076f145eefd76b1b6b85b68d59826a5adfce6329325f7"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/geometry.js",
+      "sha256": "5333b4ce6ebfbfd0dbbc26ac7933b9a3efd670e7f5087c12dd8c246ae9672a35"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/gradient.js",
+      "sha256": "7bba334883795eba96aa8ec0a14654ae690f98253b801d2fe19a0db89146557b"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/guides.js",
+      "sha256": "85dcd07bec5f78d378a1ba78e75621d94879a9f0b71a2efeab9684bca724e7fd"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/hit-test.js",
+      "sha256": "9690524629b0e5130d99960f907a81423481fefee1d1cdf29a77c28027cb7c51"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/images.js",
+      "sha256": "2e5296a2058d83f924819862d78ecd0198d478c0034bcefbad51d65dd4fa562a"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/index.js",
+      "sha256": "40a1bb3531af3721817cd61a4752fbb1f46c8af8785160780c4244274275b3c3"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/instances.js",
+      "sha256": "fa7f48ad7f8784869ec4d2bf70f035fc89157f1097490fc7e8dd3072d22a1b3e"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/layout.js",
+      "sha256": "98628697511835783755288d426af5056a74194b3849f06dfbb77b9e94912bcd"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/matrix.js",
+      "sha256": "a0f51cf241f43d3ff2abf0a4edb6fb68d6ef95eb9f7743177ad5edd25f708608"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/node-defaults.js",
+      "sha256": "704ea5df9bcbff50a51ea5b891f5c5bdc692074eab67f0a37c54b9b445ee6828"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/order-keys.js",
+      "sha256": "469ef16e290290b9ddc8d30270f8e3d623204020905c735bf4ada57b6fa6e47f"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/parse-path.js",
+      "sha256": "f31b85560c9cec2d3f604f99fd692b582847448898b7556b8d2ca9797ce6d547"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/polygon.js",
+      "sha256": "8c304a5b7d9fb29421261ccfb7954575abb8e2b892eebc18ca9a2a2528c05939"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/preview.js",
+      "sha256": "08ebf5d7b6c67a4b1c1b8b38fc063e5309b1f01ec90b21bc84a03d6ff74cd4c0"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/primitives.js",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/random.js",
+      "sha256": "252f2874c91bd04218693fa7b94e9077883b4eb61000997906c672788bc75a5b"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/resize.js",
+      "sha256": "ab3e6e55229e96d5c6ffa8f72a336a9649b88f2b17836980295051381ae5eaa7"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/snap.js",
+      "sha256": "1f4f1be25576de628c3b29a173f5b08fe33ff38441a8514f8b3b065d59d25096"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/source-metadata.js",
+      "sha256": "26d17f3010d3eee085d103feec76c98617c3e637af200b4756ebae05a85ddaf6"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/text-direction.js",
+      "sha256": "5673cf21dd6467b9436301d6515522d1ee5e8a47279e17ce473ba7bc791b4816"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/text-picture.js",
+      "sha256": "1f63ab2dbb4b18f9d928a85cb870dd9a2ac6f2b1b6a22b50f35414fc7a575cc0"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/text.js",
+      "sha256": "bd986ba5a19311f6d99aa690785bc40d8995a45dc185225d13d9cb51950ab80e"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/types.js",
+      "sha256": "78fbfebba1006ea64b52d0c60dbb562d1223638a6e31983dd1e304aa65309de8"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/undo.js",
+      "sha256": "9526c662ce1a19d99dfa3e894207b48862c416f4c0d65b8803c2d13c21c10d4e"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/variables.js",
+      "sha256": "43e88c6096b9b85f99a5add73308512f07bb1b414b1566db6151e7799a56a45a"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/variant-name.js",
+      "sha256": "8228df4e9361899e553a1d916427220f82fb79b19341b8721ff2cd5f78e7d6fb"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/variant-properties.js",
+      "sha256": "6c01707e495e901cffd7b396b29d4dc43d108ea638e40e1b41300aced8494376"
+    },
+    {
+      "file": "node_modules/@open-pencil/scene-graph/dist/vector-network.js",
+      "sha256": "a925f0b862e222db88e440cedfbdafc6df936131f415df9181c498f7b4f9496a"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/browser.js",
+      "sha256": "6052024d90b4bba8b01394f89ae0f423988957f77281852a52776dd523fd0fee"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/args.js",
+      "sha256": "1263a705f053858e9be2c324187778190daca600afab16c6ee33132bdc836bbd"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/controls.js",
+      "sha256": "910fe6763688331ca285f231b6d07abee1c5eb8d50340f6def24de56f9b38031"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/reset.js",
+      "sha256": "32f53a958e774c18d80b5fb4fdc2d967cf4342fa858f87c1a0b23b25bc74cb71"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/roles.js",
+      "sha256": "5075d0f6e4f0967190aca6446faa1fcc0dd2bf33cc81150b23304ffa9007da10"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/states/conditions.js",
+      "sha256": "438c70eccb044d3b0250f92911ad055e08548de7f2a38629ac942d9e4542f422"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/states/css.js",
+      "sha256": "39dbd95563592a0b56893fc79e03f1e927502a6ab6f3b9b18484af9bb22bdac5"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/states/layers.js",
+      "sha256": "845edc10bedcd52b90e914d7e3719ffc094f231a39e3ddcecc065e38df12246d"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/states/model.js",
+      "sha256": "a6a6c22d64dba88c49cd33a025ab5c544cd2db0c04e85e8e9dade7992675ce75"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/behaviours/states/tailwind.js",
+      "sha256": "8f6cba6e69f7742826f797cc38c6d34b6b44121bd6e75d0c37e067e10dab1a68"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/browser.js",
+      "sha256": "56528cdf75e75dc29c53481d1aaa46737264ea6c37d7c35ecd5897182ab743cd"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/export/bundle.js",
+      "sha256": "a58a4f7fbb010fd5d0ae2696e89b9c4642937d95f818d972f4931896e2bb55ed"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/export/components/drawn.js",
+      "sha256": "4cf1ef1b453dc0d06fc4293ab91c6dd80a4c88a2916741746cb7cffd30b3389d"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/export/components/fields.js",
+      "sha256": "7ccb992e842b3e34b5313c9e7bbdcdaf1f04ceb00d2fb01ea6a28003d23e12e5"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/export/components/groups.js",
+      "sha256": "c04128cb2c4367fb1d85de363978b041d746a15c9ad2d07d2001e6a51cc78df0"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/export/components/layers.js",
+      "sha256": "6ba89693f390b084699fa84b664cc385c60fc1b1d2b1156dfb91caf7764bafee"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/export/index.js",
+      "sha256": "da2788d8995141f2b3dc90c3a523061a1910f0de4015a34e749c1c082a0de41b"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/export/storybook/component.js",
+      "sha256": "23b34e9b383c8f836414c91e5c2b21213acb4d13baf2745017ebaffbe1fdc8e6"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/export/storybook/export.js",
+      "sha256": "22d069f1b43e78fbda9cf0ffe2c30923de5ef78f459a75fc875c00c1c921f580"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/import/html.js",
+      "sha256": "eb1558794526be2d4019316dc07b8f76a6a61120cef5c789d20ba462879a34a8"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/import/jsx/dev-runtime.js",
+      "sha256": "9a406c4287c71b1daaa8f67d0afdd4a2f39ad086268b6d81d685e1d9d14b928a"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/chunks/tokens/cssom-validator.js",
+      "sha256": "83072211c03fbeb8acf91ee094abad8f054f7677b70110ee603703ab4767c65b"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/export.js",
+      "sha256": "04571b4b80fb028395438acd54763913b415fb94b1ceceba41e7b60c55b056d6"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/index.js",
+      "sha256": "60e458f4f70aaa80387982e1cb20febddb0ede873f76dd63976a94486c7234d0"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/jsx-dev-runtime.js",
+      "sha256": "a80d4c096eb67fcf99b3e9fd6e77dbe5354988f442cba976b0ab16f4800a8317"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/jsx-runtime.js",
+      "sha256": "e617d514f9adcf81492bde41b374a2ea8e18a5ae0e33f9d9227a5e52097bf2bb"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/rolldown-runtime.js",
+      "sha256": "1b10431e13b4eb349c329aba7d2beb6e6c224de569eac52966731c8239a941c9"
+    },
+    {
+      "file": "node_modules/@open-pencil/dom-css/dist/scene-graph.js",
+      "sha256": "2fcb65da1ef2e36568c841e2155e898fb50a2c2de7884e5a4f6c392ca943330f"
+    }
+  ],
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "ce90a9113191a1c4b6cfc76bc6125816d36e6a79c63257d5b070cff380847381"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "c40f5cb0b317259969265211a4f1ea1659361c5fa2d145ae91f8b4439abfba90"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "3362b420d56cae5579fef1dbe9a8c5a8b8cda5a3a98c7574b75a6bf9fd6e9391"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "586cef18559c13ccfa1ddd16fb69ea90b425e0ad419a8faea7adddb6e4209e11"
+    },
+    {
+      "file": "results.json",
+      "sha256": "bff36ac33507a876a2f50597ad6e89c377e502200e42ecdc9fa04cbb30c1e898"
+    },
+    {
+      "file": "run.mjs",
+      "sha256": "3d81510f545ce05118b54587dd37f4357c2192ba77d8bef8996e62e504b6ef08"
+    }
+  ]
+}

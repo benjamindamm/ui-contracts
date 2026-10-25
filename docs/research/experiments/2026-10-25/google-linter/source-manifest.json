@@ -1,0 +1,82 @@
+[
+  {
+    "file": "sources/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/parser/spec.ts",
+    "url": "https://raw.githubusercontent.com/google-labs-code/design.md/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/parser/spec.ts",
+    "sha256": "c7da37d641173e9d27b63722ff2140471fd8ea280e4218c2c41b8cc705301340",
+    "read_date": "2026-10-25",
+    "capture": "Complete BrowserOS neo code block"
+  },
+  {
+    "file": "sources/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/lint.ts",
+    "url": "https://raw.githubusercontent.com/google-labs-code/design.md/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/lint.ts",
+    "sha256": "7d69afb0efaeeb61e4b02fcaf23c1ecbfc02cd897dc8238a7ad5adf4a4f84060",
+    "read_date": "2026-10-25",
+    "capture": "Complete BrowserOS neo code block"
+  },
+  {
+    "file": "sources/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/package.json",
+    "url": "https://raw.githubusercontent.com/google-labs-code/design.md/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/package.json",
+    "sha256": "9cd26dae8342295b88dad6df3432f732f38c215f401f49af61068211cf2015b9",
+    "read_date": "2026-10-25",
+    "capture": "Complete BrowserOS neo code block"
+  },
+  {
+    "file": "sources/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/index.ts",
+    "url": "https://raw.githubusercontent.com/google-labs-code/design.md/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/index.ts",
+    "sha256": "b1675fa5cdb8fe89c0fcdd22f3e39cbfce08e0ba5838a43b3a58b6c24aa9f590",
+    "read_date": "2026-10-25",
+    "capture": "Complete BrowserOS neo code block"
+  },
+  {
+    "file": "sources/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/lint.ts",
+    "url": "https://raw.githubusercontent.com/google-labs-code/design.md/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/lint.ts",
+    "sha256": "7d69afb0efaeeb61e4b02fcaf23c1ecbfc02cd897dc8238a7ad5adf4a4f84060",
+    "read_date": "2026-10-25",
+    "capture": "Complete BrowserOS neo code block"
+  },
+  {
+    "file": "sources/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/parser/spec.ts",
+    "url": "https://raw.githubusercontent.com/google-labs-code/design.md/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/parser/spec.ts",
+    "sha256": "c7da37d641173e9d27b63722ff2140471fd8ea280e4218c2c41b8cc705301340",
+    "read_date": "2026-10-25",
+    "capture": "Complete BrowserOS neo code block"
+  },
+  {
+    "file": "sources/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/parser/handler.ts",
+    "url": "https://raw.githubusercontent.com/google-labs-code/design.md/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/parser/handler.ts",
+    "sha256": "09ef806f0bed632d8ffff063a6976625b6147db2e23cf453111a54e07e8ccf3d",
+    "read_date": "2026-10-25",
+    "capture": "Complete BrowserOS neo code block"
+  },
+  {
+    "file": "sources/registry/design-md-0.4.0.json",
+    "url": "https://registry.npmjs.org/@google%2fdesign.md/0.4.0",
+    "sha256": "742f4217a76cd7ec4868914d494ca0ec12f99c478f8d705bc1edb338e6a538ff",
+    "read_date": "2026-10-25",
+    "capture": "Complete BrowserOS neo code block"
+  },
+  {
+    "installed_file": "tool/node_modules/@google/design.md/dist/linter/index.js",
+    "package": "@google/design.md@0.4.0",
+    "sha256": "a76ab9c2ee8a1bc6ad709167c3c7f06e64a5e2253d9718d3c2a8c51824272423",
+    "origin": "npm package pinned by package-lock.json"
+  },
+  {
+    "installed_file": "tool/node_modules/@google/design.md/dist/linter/spec.md",
+    "package": "@google/design.md@0.4.0",
+    "sha256": "8f297a7bd38cf08bde06c96f5eea2ebfcd9930a8bc1dfe964f8e8dec894e691a",
+    "origin": "npm package pinned by package-lock.json"
+  },
+  {
+    "installed_file": "tool/node_modules/@google/design.md/dist/linter/spec-config.yaml",
+    "package": "@google/design.md@0.4.0",
+    "sha256": "6244e829849e63b55316258f32e1110833d193b79943ec79f245b33ebeec2ef8",
+    "origin": "npm package pinned by package-lock.json"
+  },
+  {
+    "installed_file": "tool/node_modules/@google/design.md/package.json",
+    "package": "@google/design.md@0.4.0",
+    "sha256": "9cd26dae8342295b88dad6df3432f732f38c215f401f49af61068211cf2015b9",
+    "origin": "npm package pinned by package-lock.json"
+  }
+]

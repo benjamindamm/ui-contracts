@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+  "$description": "Own minimal original visual contribution for explicit additional layout binding",
+  "$machine": {
+    "id": "LayoutResearch",
+    "initial": "open",
+    "states": {
+      "open": {
+        "$visual": {
+          "container": {
+            "size": {
+              "maxHeight": 160
+            },
+            "overflow": "scroll"
+          },
+          "slots": {
+            "results": [
+              {
+                "type": "text",
+                "text": "Result 1"
+              },
+              {
+                "type": "text",
+                "text": "Result 2"
+              },
+              {
+                "type": "text",
+                "text": "Result 3"
+              },
+              {
+                "type": "text",
+                "text": "Result 4"
+              },
+              {
+                "type": "text",
+                "text": "Result 5"
+              },
+              {
+                "type": "text",
+                "text": "Result 6"
+              },
+              {
+                "type": "text",
+                "text": "Result 7"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

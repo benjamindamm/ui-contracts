@@ -1,0 +1,20 @@
+{
+  "node": "v24.22.1",
+  "final": [
+    "closed"
+  ],
+  "events": [
+    {
+      "target": "#_parent",
+      "name": "value-change",
+      "data": {
+        "value": "alpha"
+      },
+      "origin": "#_scxml_2",
+      "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+      "type": "external",
+      "invokeid": "A"
+    }
+  ],
+  "errors": []
+}

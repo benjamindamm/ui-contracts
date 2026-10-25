@@ -1,0 +1,80 @@
+[
+  {
+    "id": "control",
+    "mutation": "none",
+    "expectedRules": []
+  },
+  {
+    "id": "alias-chain",
+    "mutation": "chain",
+    "expectedRules": []
+  },
+  {
+    "id": "missing-token",
+    "mutation": "missing",
+    "expectedRules": [
+      "missing-token"
+    ]
+  },
+  {
+    "id": "alias-cycle",
+    "mutation": "cycle",
+    "expectedRules": [
+      "alias-cycle"
+    ]
+  },
+  {
+    "id": "unitless-value",
+    "mutation": "unitless",
+    "expectedRules": [
+      "dimension-value"
+    ]
+  },
+  {
+    "id": "unsupported-unit",
+    "mutation": "unit",
+    "expectedRules": [
+      "dimension-unit"
+    ]
+  },
+  {
+    "id": "string-number",
+    "mutation": "number",
+    "expectedRules": [
+      "dimension-value"
+    ]
+  },
+  {
+    "id": "wrong-type",
+    "mutation": "type",
+    "expectedRules": [
+      "dimension-type"
+    ]
+  },
+  {
+    "id": "wrong-owner",
+    "mutation": "owner",
+    "expectedRules": [
+      "leading-source"
+    ]
+  },
+  {
+    "id": "unknown-target",
+    "mutation": "target",
+    "expectedRules": [
+      "target-binding"
+    ]
+  },
+  {
+    "id": "stale-token-hash",
+    "mutation": "hash",
+    "expectedRules": [
+      "source-integrity"
+    ]
+  },
+  {
+    "id": "rem-values",
+    "mutation": "rem",
+    "expectedRules": []
+  }
+]

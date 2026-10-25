@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "schemaVersion": "1",
+    "generatedAt": "2026-10-25T17:00:00Z",
+    "fileKey": "foreign-file",
+    "nodeId": "root",
+    "componentSlug": "autocomplete",
+    "baseSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "data": {
+    "_deltaExtractions": [],
+    "_extractionArtifacts": {
+      "obligationLedger": [],
+      "variantAxes": []
+    },
+    "componentName": "Autocomplete",
+    "renderingStrategy": "A",
+    "variants": []
+  }
+}

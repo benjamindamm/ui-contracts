@@ -1,0 +1,18 @@
+{
+  "declarations": [
+    {
+      "file": "../uspec-layout-scope/safe.ts",
+      "name": "sg",
+      "sourceSha256": "6aba8c5203e1f5623b01775d83283cbeaee396d221930cfccc3f98d6f210ee69",
+      "declarationSha256": "c331013d7dae4c3042992cca3e2183d84f457b4961ff4cc2308cd3f6514116f4"
+    },
+    {
+      "file": "../uspec-layout-scope/phaseE.ts",
+      "name": "extractDims",
+      "sourceSha256": "3d3370fc87d9a1035c1223380924da33400ca051cdf1f9c3b6943443d0e89a3a",
+      "declarationSha256": "7f6fe0be973c71abc498642afc740fe01fbb347a2118168c839c3d62cf33c968"
+    }
+  ],
+  "originalDeclarationsModified": false,
+  "scope": "Complete original extractDims and original sg on clipping-only minimal node; all numeric/paint/Figma API branches absent, no mocked figma or resolveBinding helpers supplied"
+}

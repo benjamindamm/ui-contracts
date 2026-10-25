@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cem-valid-boolean-field",
+    "type": "boolean",
+    "expectedValid": true
+  },
+  {
+    "id": "cem-valid-string-field-needs-extra-binder",
+    "type": "string",
+    "expectedValid": true
+  }
+]

@@ -1,0 +1,176 @@
+[
+  {
+    "id": "drawn-text",
+    "mutation": "text",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": true,
+      "roles": "radio",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "node-name-only",
+    "mutation": "name",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": false,
+      "roles": "radio",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "hidden-text",
+    "mutation": "hidden",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": false,
+      "roles": "radio",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "duplicate-layer-names",
+    "mutation": "duplicate",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 2,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": true,
+      "roles": "radio",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "checked-property",
+    "mutation": "checked",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": true,
+      "missingBindings": [],
+      "textPresent": true,
+      "roles": "radio",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "missing-required-binding",
+    "mutation": "missing",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": false,
+      "missingBindings": [
+        "value"
+      ],
+      "textPresent": true,
+      "roles": "radio",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "tokens-enabled",
+    "mutation": "text",
+    "tokens": true,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": true,
+      "roles": "radio",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "source-ids-disabled",
+    "mutation": "text",
+    "tokens": false,
+    "includeSourceIds": false,
+    "expected": {
+      "controls": 1,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": true,
+      "roles": "radio",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "switch-drawn-text",
+    "kind": "switch",
+    "mutation": "text",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": true,
+      "roles": "switch",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "switch-node-name-only",
+    "kind": "switch",
+    "mutation": "name",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": false,
+      "roles": "switch",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "switch-checked-property",
+    "kind": "switch",
+    "mutation": "checked",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 1,
+      "checked": true,
+      "missingBindings": [],
+      "textPresent": true,
+      "roles": "switch",
+      "pathsDistinct": true
+    }
+  },
+  {
+    "id": "switch-duplicate-layer-names",
+    "kind": "switch",
+    "mutation": "duplicate",
+    "tokens": false,
+    "includeSourceIds": true,
+    "expected": {
+      "controls": 2,
+      "checked": false,
+      "missingBindings": [],
+      "textPresent": true,
+      "roles": "switch",
+      "pathsDistinct": true
+    }
+  }
+]

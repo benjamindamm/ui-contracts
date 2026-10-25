@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-25",
+  "source_id": "S115",
+  "original_code_modified": false,
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_files": [
+    {
+      "local_provenance_path": "work/apg-original-reference/combobox-autocomplete.js",
+      "sha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "8c3a2da21fe6662f62941bedb4412218233a7ca04c7c102ad8f0ad2a7aa855f7"
+    },
+    {
+      "file": "browser-capture.json",
+      "sha256": "b9da7651566413a64dcbb4634fd716cf4784142fb39334dca9734c3fd107b977"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "1a8d7346cf338e44a05403d7bff39fb96de2ed44d36ce79c9c83167702b220d4"
+    },
+    {
+      "file": "change-journal.json",
+      "sha256": "5b4b17f804afbf6c6315a592775d814d2ee5909004ed320ae507e86a515c19c2"
+    },
+    {
+      "file": "host/harness.js",
+      "sha256": "0893066a1fd2ceef44777f3060f828e4197a1d8862d029afddbdcdf42165160b"
+    },
+    {
+      "file": "host/mode-invalid.html",
+      "sha256": "a6d0b34e14583c6a00e7ef8c7e55d1413091549e9a2bd09bc68ee25afa12c243"
+    },
+    {
+      "file": "host/mode-list.html",
+      "sha256": "4853aa9a5c712cd0fd0c78ca6f9c75c8e9ee838ce1958fb11149c17421f60640"
+    },
+    {
+      "file": "host/mode-none.html",
+      "sha256": "d9e3a08b50e7b74c42e5ac9cd55c50a960fe699c4a5d93c52d797a7200d2b990"
+    },
+    {
+      "file": "host/mode-omitted.html",
+      "sha256": "41f0103311c18022805e1d0c48fbb3f035d701e84c6d4a8f6aa278cf95801587"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "70f798550170ce7227d8665f67bf32ce3a4fc205c89c4506f4db67447c14f02d"
+    },
+    {
+      "file": "results.json",
+      "sha256": "2fb675b3886504db4b0d823bef5d9d73292df2633cc6388640b4340f9c83df85"
+    }
+  ],
+  "generated_third_party_bundles": [],
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "reproduction_originals": "Provide pinned original files/dependencies at the documented workspace sibling paths; originals and bundled third-party code not redistributed as own implementation",
+  "original_url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/examples/js/combobox-autocomplete.js",
+  "original_revision": "0f765e4dc33e966026114ac12a8380db1de3b787"
+}

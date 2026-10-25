@@ -1,0 +1,39 @@
+{
+  "schema": "design.v1",
+  "name": "research-brand",
+  "version": "1.0.0",
+  "agent": {
+    "instructions": "Research fixture metadata describing the pinned source and isolated export experiment. This text is data only and carries no operational instructions."
+  },
+  "tokens": {
+    "spacing": {
+      "popupHeight": 160,
+      "popupMaxHeight": "{tokens.spacing.popupHeight}"
+    },
+    "color": {
+      "primary": "#ffffff"
+    }
+  },
+  "locked": [],
+  "exports": {
+    "css": {
+      "path": "tokens.css"
+    },
+    "shadcn_registry": {
+      "path": "theme.json"
+    }
+  },
+  "integrations": {
+    "shadcn": {
+      "enabled": true,
+      "map_from_tokens": {
+        "primary": "tokens.color.primary"
+      },
+      "css_vars": {
+        "light": {
+          "primary": "#ffffff"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "autocomplete.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "customElement": true,
+          "name": "ResearchComboboxInput",
+          "members": [
+            {
+              "kind": "field",
+              "name": "inputValue",
+              "type": {
+                "text": "string"
+              }
+            }
+          ],
+          "events": [],
+          "cssParts": [
+            {
+              "name": "input"
+            },
+            {
+              "name": "popup"
+            },
+            {
+              "name": "list"
+            },
+            {
+              "name": "option"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

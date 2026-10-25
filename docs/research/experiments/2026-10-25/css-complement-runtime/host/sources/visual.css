@@ -1,0 +1,1 @@
+section{position:relative;margin-bottom:280px;}[data-part="popup"]{display:none;position:absolute;top:28px;left:0;width:240px;max-height:var(--popup-max-height,160px);overflow:auto;}section[data-machine-state="open"] [data-part="popup"]{display:block;}[role="option"]{height:32px;box-sizing:border-box;}[role="listbox"]{padding:0;margin:0;}[role="status"]{margin-top:250px;}

@@ -1,0 +1,12 @@
+[
+ {"id":"runtime-two-instance-states","kind":"isolation","expected":{"A":"closed","B":"open","parentAEvents":0,"parentBEvents":0},"criterion":"Same original model factory, separate instance state; OPEN A, OPEN B, CLOSE A"},
+ {"id":"runtime-original-public-send","kind":"commit","expected":{"A":"closed","B":"closed","parentAEvents":1,"parentBEvents":0,"publicAEvents":1,"value":"alpha"},"criterion":"Original COMMIT enters selected, eventless transition closes, native parent send carries declared data"},
+ {"id":"runtime-unknown-event","kind":"unknown","expected":{"A":"closed","publicAEvents":0},"criterion":"An unhandled event leaves original state unchanged"},
+ {"id":"runtime-commit-closed","kind":"commit-closed","expected":{"A":"closed","publicAEvents":0},"criterion":"COMMIT has no transition from closed"},
+ {"id":"runtime-parameter-isolation","kind":"params","expected":{"parentAValue":"alpha-A","parentBValue":"beta-B","publicAEvents":1,"publicBEvents":1},"criterion":"Documented interpreter params initialize per-instance value on unchanged SCXML bytes"},
+ {"id":"runtime-missing-target","kind":"missing-target","expected":{"rejected":true},"criterion":"Original interpreter compilation/initialization rejects nonexistent transition target; no own transition engine"},
+ {"id":"runtime-number-payload","kind":"number-payload","expected":{"rawValueType":"number","publicAEvents":0,"diagnostic":"payload-type"},"criterion":"Original runtime executes numeric variant; additional CEM-derived host policy rejects public payload"},
+ {"id":"runtime-wrong-public-event","kind":"wrong-event","expected":{"rawName":"other-event","publicAEvents":0,"diagnostic":"event-not-declared"},"criterion":"Native parent routing occurs, additional interface binding rejects undeclared public name"},
+ {"id":"runtime-cross-parent","kind":"cross-parent","expected":{"parentAEvents":0,"parentBEvents":1,"publicAEvents":0,"publicBEvents":0,"diagnostic":"instance-route"},"criterion":"Wrong runtime parent binding reaches B; explicit expected invoke/instance route rejects projection"},
+ {"id":"runtime-no-parent","kind":"no-parent","expected":{"parentAEvents":0,"publicAEvents":0,"runtimeError":true},"criterion":"Original #_parent send without actual parent is an error; no fabricated host delivery"}
+]

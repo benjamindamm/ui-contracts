@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+  "$description": "Independent behavior contribution research fixture",
+  "$machine": {
+    "id": "Autocomplete",
+    "initial": "closed",
+    "states": {
+      "closed": {
+        "on": {
+          "OPEN": "open"
+        }
+      },
+      "open": {
+        "on": {
+          "CLOSE": "closed"
+        }
+      }
+    }
+  },
+  "$events": {
+    "OPEN": {
+      "source": "user"
+    },
+    "CLOSE": {
+      "source": "user"
+    }
+  }
+}

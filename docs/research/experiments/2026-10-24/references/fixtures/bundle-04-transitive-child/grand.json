@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+  "$description": "Isolated reference proof fixture",
+  "$machine": {
+    "id": "grand",
+    "initial": "idle",
+    "states": {
+      "idle": {}
+    }
+  }
+}

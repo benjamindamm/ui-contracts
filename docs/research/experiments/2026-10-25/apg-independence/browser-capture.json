@@ -1,0 +1,68 @@
+{
+  "cases": [
+    {
+      "id": "base",
+      "result": {
+        "page": 285,
+        "value": {
+          "actualList": "list-a",
+          "className": "ComboboxAutocomplete",
+          "controlledList": "list-a",
+          "fourDistinctSources": true,
+          "height": 160,
+          "isList": true,
+          "label": "Search A",
+          "nativeType": "HTMLInputElement",
+          "options": [
+            "Alaska"
+          ],
+          "originalBootstrapMatches": 0,
+          "sourceField": "input-a"
+        }
+      }
+    },
+    {
+      "id": "visual-revision",
+      "result": {
+        "page": 285,
+        "value": {
+          "actualList": "list-a",
+          "className": "ComboboxAutocomplete",
+          "controlledList": "list-a",
+          "fourDistinctSources": true,
+          "height": 192,
+          "isList": true,
+          "label": "Search A",
+          "nativeType": "HTMLInputElement",
+          "options": [
+            "Alaska"
+          ],
+          "originalBootstrapMatches": 0,
+          "sourceField": "input-a"
+        }
+      }
+    },
+    {
+      "id": "accessibility-revision",
+      "result": {
+        "page": 285,
+        "value": {
+          "actualList": "list-a",
+          "className": "ComboboxAutocomplete",
+          "controlledList": "list-a",
+          "fourDistinctSources": true,
+          "height": 160,
+          "isList": true,
+          "label": "Find A",
+          "nativeType": "HTMLInputElement",
+          "options": [
+            "Alaska"
+          ],
+          "originalBootstrapMatches": 0,
+          "sourceField": "input-a"
+        }
+      }
+    }
+  ],
+  "pageId": 285
+}

@@ -1,0 +1,23 @@
+{
+  "anchorNameType": [
+    {
+      "id": "typedef-anchor-name",
+      "text": "<anchor-name> = <dashed-ident>\n"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "",
+      "text": "Name:\tanchor-name\nValue:\tnone | <anchor-name>#\nInitial:\tnone\nApplies to:\tall elements that generate a principal box\nInherited:\tno\nPercentages:\tn/a\nComputed value:\tas specified\nCanonical order:\tper grammar\nAnimation type:\tdiscrete"
+    },
+    {
+      "id": "",
+      "text": "Name:\tanchor-scope\nValue:\tnone | all | <anchor-name>#\nInitial:\tnone\nApplies to:\tall elements\nInherited:\tno\nPercentages:\tn/a\nComputed value:\tas specified\nCanonical order:\tper grammar\nAnimation type:\tdiscrete"
+    },
+    {
+      "id": "",
+      "text": "Name:\tposition-anchor\nValue:\tnormal | none | auto | <anchor-name> | match-parent\nInitial:\tnormal\nApplies to:\tabsolutely positioned boxes\nInherited:\tno\nPercentages:\tn/a\nComputed value:\tas specified\nCanonical order:\tper grammar\nAnimation type:\tdiscrete"
+    }
+  ],
+  "url": "https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/"
+}

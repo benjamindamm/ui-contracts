@@ -1,0 +1,295 @@
+[
+  {
+    "id": "baseline-no-change",
+    "request": {
+      "id": "baseline-no-change",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": []
+    },
+    "expectedRules": []
+  },
+  {
+    "id": "leading-token-change",
+    "request": {
+      "id": "leading-token-change",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "tokens.json",
+          "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+          "newContent": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 8,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 192,\n        \"unit\": \"px\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+          "actor": "visual-agent",
+          "information": "popupMaxHeight"
+        }
+      ]
+    },
+    "expectedRules": []
+  },
+  {
+    "id": "derived-css-direct-edit",
+    "request": {
+      "id": "derived-css-direct-edit",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "generated-vars.css",
+          "beforeSha256": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589",
+          "newContent": ":root{--autocomplete-max-height:184px;}",
+          "actor": "visual-agent",
+          "information": "popupMaxHeight"
+        }
+      ]
+    },
+    "expectedRules": [
+      "non-leading-target"
+    ]
+  },
+  {
+    "id": "concurrent-source-conflict",
+    "request": {
+      "id": "concurrent-source-conflict",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "tokens.json",
+          "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+          "newContent": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 8,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 192,\n        \"unit\": \"px\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+          "actor": "visual-agent",
+          "information": "popupMaxHeight"
+        },
+        {
+          "artifact": "tokens.json",
+          "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+          "newContent": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 8,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 224,\n        \"unit\": \"px\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+          "actor": "visual-agent",
+          "information": "popupMaxHeight"
+        }
+      ]
+    },
+    "expectedRules": [
+      "concurrent-source-conflict"
+    ]
+  },
+  {
+    "id": "stale-base-revision",
+    "request": {
+      "id": "stale-base-revision",
+      "baseRevision": "0000000000000000000000000000000000000000000000000000000000000000",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": []
+    },
+    "expectedRules": [
+      "stale-base"
+    ]
+  },
+  {
+    "id": "stale-source-revision",
+    "request": {
+      "id": "stale-source-revision",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "tokens.json",
+          "beforeSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "newContent": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 8,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 192,\n        \"unit\": \"px\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+          "actor": "visual-agent",
+          "information": "popupMaxHeight"
+        }
+      ]
+    },
+    "expectedRules": [
+      "stale-source"
+    ]
+  },
+  {
+    "id": "missing-change-origin",
+    "request": {
+      "id": "missing-change-origin",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "tokens.json",
+          "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+          "newContent": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 8,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 192,\n        \"unit\": \"px\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+          "information": "popupMaxHeight"
+        }
+      ]
+    },
+    "expectedRules": [
+      "missing-origin"
+    ]
+  },
+  {
+    "id": "wrong-domain-actor",
+    "request": {
+      "id": "wrong-domain-actor",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "tokens.json",
+          "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+          "newContent": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 8,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 192,\n        \"unit\": \"px\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+          "actor": "interface-agent",
+          "information": "popupMaxHeight"
+        }
+      ]
+    },
+    "expectedRules": [
+      "wrong-role"
+    ]
+  },
+  {
+    "id": "coordinated-public-name-change",
+    "request": {
+      "id": "coordinated-public-name-change",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "interface.json",
+          "beforeSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "newContent": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"selection-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+          "actor": "interface-agent",
+          "information": "publicEventName"
+        },
+        {
+          "artifact": "behavior.scxml",
+          "beforeSha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "newContent": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"selection-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+          "actor": "interface-agent",
+          "information": "publicEventName",
+          "derivedFrom": "publicEventName"
+        },
+        {
+          "artifact": "profile.json",
+          "beforeSha256": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+          "newContent": "{\n  \"status\": \"Additional experimental research binding, no selected product format\",\n  \"artifacts\": {\n    \"interface\": {\n      \"file\": \"interface.json\",\n      \"sha256\": \"d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7\"\n    },\n    \"behavior\": {\n      \"file\": \"behavior.scxml\",\n      \"sha256\": \"f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a\"\n    },\n    \"visual\": {\n      \"file\": \"tokens.json\",\n      \"sha256\": \"781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee\"\n    },\n    \"accessibility\": {\n      \"file\": \"accessibility.html\",\n      \"sha256\": \"e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b\"\n    }\n  },\n  \"instances\": {\n    \"A\": {\n      \"interfaceDeclaration\": \"Autocomplete\",\n      \"behaviorDefinition\": \"Autocomplete\",\n      \"snapshotState\": \"open\",\n      \"parts\": {\n        \"input\": \"input-a\",\n        \"popup\": \"popup-a\",\n        \"list\": \"list-a\",\n        \"option\": \"option-a-0\"\n      },\n      \"anchorName\": \"--input-a\"\n    },\n    \"B\": {\n      \"interfaceDeclaration\": \"Autocomplete\",\n      \"behaviorDefinition\": \"Autocomplete\",\n      \"snapshotState\": \"open\",\n      \"parts\": {\n        \"input\": \"input-b\",\n        \"popup\": \"popup-b\",\n        \"list\": \"list-b\",\n        \"option\": \"option-b-0\"\n      },\n      \"anchorName\": \"--input-b\"\n    }\n  },\n  \"stateView\": {\n    \"closed\": {\n      \"expanded\": false,\n      \"popupVisible\": false\n    },\n    \"open\": {\n      \"expanded\": true,\n      \"popupVisible\": true\n    },\n    \"selected\": {\n      \"expanded\": false,\n      \"popupVisible\": false\n    }\n  },\n  \"publicEvent\": \"selection-change\",\n  \"ownership\": {\n    \"publicSignature\": \"interface\",\n    \"stateAndEmission\": \"behavior\",\n    \"geometry\": \"visual\",\n    \"rolesNamesRelations\": \"accessibility\",\n    \"crossArtifactMapping\": \"additional-profile\"\n  },\n  \"visualLayout\": {\n    \"file\": \"layout.css\",\n    \"sha256\": \"828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8\"\n  },\n  \"tokenBindings\": [\n    {\n      \"path\": \"autocomplete.gap\",\n      \"type\": \"dimension\",\n      \"cssVariable\": \"--autocomplete-gap\",\n      \"targets\": [\n        \"#popup-a\",\n        \"#popup-b\"\n      ],\n      \"property\": \"margin-top\",\n      \"owner\": \"visual\"\n    },\n    {\n      \"path\": \"autocomplete.popupMaxHeight\",\n      \"type\": \"dimension\",\n      \"cssVariable\": \"--autocomplete-max-height\",\n      \"targets\": [\n        \"#popup-a\",\n        \"#popup-b\"\n      ],\n      \"property\": \"max-height\",\n      \"owner\": \"visual\"\n    },\n    {\n      \"path\": \"autocomplete.optionHeight\",\n      \"type\": \"dimension\",\n      \"cssVariable\": \"--autocomplete-option-height\",\n      \"targets\": [\n        \"[role=\\\"option\\\"]\"\n      ],\n      \"property\": \"height\",\n      \"owner\": \"visual\"\n    }\n  ],\n  \"version\": \"research-dtcg-binding-1\"\n}\n",
+          "actor": "interface-agent",
+          "information": "publicEventName",
+          "derivedFrom": "publicEventName"
+        }
+      ]
+    },
+    "expectedRules": []
+  },
+  {
+    "id": "unpropagated-public-name-change",
+    "request": {
+      "id": "unpropagated-public-name-change",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "interface.json",
+          "beforeSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "newContent": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"selection-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+          "actor": "interface-agent",
+          "information": "publicEventName"
+        }
+      ]
+    },
+    "expectedRules": [
+      "public-event-conflict"
+    ]
+  },
+  {
+    "id": "behavior-unilateral-name-change",
+    "request": {
+      "id": "behavior-unilateral-name-change",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "behavior.scxml",
+          "beforeSha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "newContent": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"selection-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+          "actor": "behavior-agent",
+          "information": "publicEventName"
+        }
+      ]
+    },
+    "expectedRules": [
+      "non-leading-target"
+    ]
+  },
+  {
+    "id": "forged-derivation-without-leading-change",
+    "request": {
+      "id": "forged-derivation-without-leading-change",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "behavior.scxml",
+          "beforeSha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "newContent": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"selection-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+          "actor": "interface-agent",
+          "information": "publicEventName",
+          "derivedFrom": "publicEventName"
+        }
+      ]
+    },
+    "expectedRules": [
+      "missing-leading-change"
+    ]
+  },
+  {
+    "id": "policy-revision-mismatch",
+    "request": {
+      "id": "policy-revision-mismatch",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "edits": []
+    },
+    "expectedRules": [
+      "policy-revision"
+    ]
+  },
+  {
+    "id": "undeclared-side-effect",
+    "request": {
+      "id": "undeclared-side-effect",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "tokens.json",
+          "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+          "newContent": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 99,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 192,\n        \"unit\": \"px\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+          "actor": "visual-agent",
+          "information": "popupMaxHeight"
+        }
+      ]
+    },
+    "expectedRules": [
+      "undeclared-edit"
+    ]
+  },
+  {
+    "id": "invalid-dimension-unit",
+    "request": {
+      "id": "invalid-dimension-unit",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "edits": [
+        {
+          "artifact": "tokens.json",
+          "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+          "newContent": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 8,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 12,\n        \"unit\": \"em\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+          "actor": "visual-agent",
+          "information": "popupMaxHeight"
+        }
+      ]
+    },
+    "expectedRules": [
+      "dimension-unit"
+    ]
+  }
+]

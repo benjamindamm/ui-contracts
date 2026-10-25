@@ -1,0 +1,13 @@
+# APG: führender Moduseingang und tatsächlicher Konstruktorstand
+
+25. Oktober2026. **X08 A/C517**, nur für input-a/@aria-autocomplete → ursprüngliche isNone/isList/isBoth → tatsächliche Filterung, ergänzt um eigene Konsistenz- und Änderungsbindung. Sechs vorab gespeicherte native Bedingungen erfüllt.
+
+Die vollständige unveränderte ursprüngliche Beispielklasse am Pin0f765e4dc33e966026114ac12a8380db1de3b787 wird geladen. Ihr ursprünglicher Seitenscan findet null eigene .combobox-list-Wrapper; der eigene Initialisierer erzeugt einen echten Konstruktor. Im list-Modus liefert setValue('Alas') Alaska. Bei frischem none-Host bleiben Alabama/Alaska und leerer Filter. Ohne Attribut setzt der Originalkonstruktor selbst none als Default.
+
+Die HTML-Quelle führt diesen einen Moduseingang bei Konstruktion. Originalflags sind eine Ableitung mit Snapshotsemantik. Eine nachträgliche HTML-Änderung list→none aktualisiert sie nicht: Der ursprüngliche Filter bleibt list. Ebenso widerspricht eine eigene direkte Flagmutation der unveränderten list-Quelle. Ein ungültiger Originalmodus lässt alle drei Flags false; der ursprüngliche Konstruktor meldet keinen Enumfehler. Diese drei Konflikte werden vom ausdrücklich **zusätzlichen** Guard abgewiesen, nicht von einem erfundenen Originalvalidator.
+
+[Erwartungen](cases.json), [Originalbeobachtungen](results.json), [zusätzliches source/derived-Änderungsjournal](change-journal.json). Die zwei frischen positiven HTML-Dateien unterscheiden sich ausschließlich im Modusattribut; ursprünglicher JS-Hash bleibt gleich. Das Journal dokumentiert Quelle, Konstruktorstand, abgeleitete Flags/Filter und eigene Konfliktentscheidung. Es ist keine native APG-Provenienzfunktion.
+
+Änderungsstrategie des eigenen Hosts: Quelle ändern, neuen Kontext/Konstruktor laden, Konsistenz prüfen. Kein behaupteter ursprünglicher Modussetter, Listenerabbau oder Lifecyclevertrag. Nicht automatisch jede spätere DOM-Änderung als Fehler behandeln: Abgewiesen wird nur die explizit in diesem Profil verlangte Übereinstimmung mit der aktuellen Quelle. X08 A gilt für diese dokumentierte Information mit Zusatzbindung, nicht für allgemeine normative APG-Governance, beliebige Zustandskonflikte, eine Produktmoduswahl oder Vier-Domänen-Gesamtkonformität. Kein Keyboard-/AT-Nachweis.
+
+Reproduktion: prepare.py schreibt die vorher festgelegten Quellen/Erwartungen. Unveränderten Originalcode gemäß Manifest als host/original-combobox.js bereitstellen. Eigenen lokalen HTTP-Server für host starten. Pro cases.json-Mode eine frische Seite öffnen, auf body[data-ready=true] warten und modeResearch.probe(mutation) lesen. browser-capture.json ist die tatsächliche BrowserOS-Aufzeichnung. Originalcode wird nicht als eigene Implementierung verteilt.

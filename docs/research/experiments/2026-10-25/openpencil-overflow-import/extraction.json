@@ -1,0 +1,38 @@
+{
+  "sources": {
+    "sources/packages/dom-css/src/import/scene-graph.ts": "570c00814bc8205eddddc476251215d55261c17b3c15592c34c55fba5ae09438",
+    "sources/packages/dom-css/src/import/css-values.ts": "514f2b2f31576d48c4567b5e7490bb65a732c0f81e9a8199d91ddce71a6eb5e4",
+    "sources/packages/dom-css/src/export/projection.ts": "ee25955a9b83f6ca119b2eb65ee843e3dd894ecf5b018f6d72ec773294101c7f"
+  },
+  "originalFragments": [
+    {
+      "sourceFile": "sources/packages/dom-css/src/import/css-values.ts",
+      "startLine": 22,
+      "sha256": "4d5d360153e24e8417c86e6f2f1ffcf3016dadbf7b461b9e5604f857ad5b09d3"
+    },
+    {
+      "sourceFile": "sources/packages/dom-css/src/import/css-values.ts",
+      "startLine": 26,
+      "sha256": "85a7cb3f885efb65f40169dfc6584a5189a3484113c20477b664320dfc0cc915"
+    },
+    {
+      "sourceFile": "sources/packages/dom-css/src/import/scene-graph.ts",
+      "startLine": 338,
+      "sha256": "2f398f4f6e7faa41e7621d72731b1129bc47028ec7d3b3c27303c5ec5cf624b3"
+    },
+    {
+      "sourceFile": "sources/packages/dom-css/src/import/scene-graph.ts",
+      "startLine": 339,
+      "sha256": "19ec318a4cad424fe6b1eff6a035fd3ca0bd88ed10e75fd5225acad16df36ce4"
+    },
+    {
+      "sourceFile": "sources/packages/dom-css/src/export/projection.ts",
+      "startLine": 317,
+      "sha256": "fe7bc2f4905632668f253e85b8407cf3531e3f2abb292a827b0bf50698fda195"
+    }
+  ],
+  "statementsChanged": false,
+  "wholeImporterExecuted": false,
+  "wholeExporterExecuted": false,
+  "additionalWrappers": true
+}

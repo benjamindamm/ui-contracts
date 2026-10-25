@@ -1,0 +1,49 @@
+[
+  {
+    "id": "normalized-source-control",
+    "expected": {
+      "accepted": true,
+      "variantId": "vA",
+      "layerId": "input-1",
+      "sourceUnchanged": true
+    }
+  },
+  {
+    "id": "unknown-explicit-id-fallback",
+    "expected": {
+      "accepted": true,
+      "variantId": "vA",
+      "layerId": "input-1",
+      "invalidVariant": null
+    }
+  },
+  {
+    "id": "wrong-variant-membership",
+    "expected": {
+      "accepted": true,
+      "variantId": "vA",
+      "layerId": null,
+      "disposition": "unresolved",
+      "invalidLayer": "input-2"
+    }
+  },
+  {
+    "id": "returned-object-alias",
+    "expected": {
+      "accepted": true,
+      "alias": true,
+      "returnedSourceSize": "tampered",
+      "serializedSourceSize": "small",
+      "sourceUnchanged": true
+    }
+  },
+  {
+    "id": "serialized-object-separation",
+    "expected": {
+      "accepted": true,
+      "alias": false,
+      "returnedSourceSize": "small",
+      "sourceUnchanged": true
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "requirement": "X06",
+    "candidate": "Google DESIGN.md",
+    "coverage": "U",
+    "claim": "C483"
+  },
+  {
+    "requirement": "X06",
+    "candidate": "OpenUI",
+    "coverage": "U",
+    "claim": "C484"
+  },
+  {
+    "requirement": "V04",
+    "candidate": "UXSpec",
+    "coverage": "U",
+    "claim": "C420"
+  },
+  {
+    "requirement": "V06",
+    "candidate": "UXSpec",
+    "coverage": "U",
+    "claim": "C420"
+  },
+  {
+    "requirement": "V04",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C400"
+  },
+  {
+    "requirement": "V06",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C401"
+  },
+  {
+    "requirement": "X01",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C503"
+  },
+  {
+    "requirement": "X03",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C512"
+  },
+  {
+    "requirement": "X08",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C516"
+  },
+  {
+    "requirement": "X01",
+    "candidate": "OpenPencil",
+    "coverage": "U",
+    "claim": "C304"
+  },
+  {
+    "requirement": "V06",
+    "candidate": "WAI-ARIA",
+    "coverage": "U",
+    "claim": "C322"
+  },
+  {
+    "requirement": "I01",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C366"
+  },
+  {
+    "requirement": "I02",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C367"
+  },
+  {
+    "requirement": "B01",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C375"
+  },
+  {
+    "requirement": "B02",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C376"
+  },
+  {
+    "requirement": "B03",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C377"
+  },
+  {
+    "requirement": "B04",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C378"
+  },
+  {
+    "requirement": "A01",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C379"
+  },
+  {
+    "requirement": "A02",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C380"
+  },
+  {
+    "requirement": "A03",
+    "candidate": "CSS Layout",
+    "coverage": "U",
+    "claim": "C381"
+  }
+]

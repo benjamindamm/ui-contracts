@@ -1,0 +1,27 @@
+{
+  "status": "Additional bounded research policy, no product format",
+  "version": "aria-name-ownership-1",
+  "information": "resultListAccessibleName/A",
+  "leading": {
+    "domain": "accessibility",
+    "file": "accessibility.html",
+    "targetId": "list-a",
+    "attribute": "aria-label",
+    "role": "listbox"
+  },
+  "sourceDefinition": "WAI-ARIA1.2 listbox Name From author; aria-labelledby takes precedence if supplied",
+  "derived": {
+    "file": "host.html",
+    "targetId": "list-a",
+    "attribute": "aria-label"
+  },
+  "allowedActorRole": "accessibility-author",
+  "baselineHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+  "otherDomainHashes": {
+    "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+    "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+    "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+  },
+  "identityAuthenticationTested": false,
+  "persistentAtomicityTested": false
+}

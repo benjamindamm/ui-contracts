@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "_from": "file:../../../../_temp/changeset-pack-12103574267-1792247369089/packages/xstate-5.33.3.tgz",
+    "_hasShrinkwrap": false,
+    "_id": "xstate@5.33.3",
+    "_integrity": "sha512-AnDRjS/GyKHmbA1PyhVCYBqYsA7EGe3KGgeD0ht3NFsXzoz7leX/HQDFX9QlHFJ/ltLHPsgChJYwPzRvB/0b4g==",
+    "_nodeVersion": "24.16.0",
+    "_npmOperationalInternal": {
+      "host": "s3://npm-registry-packages-npm-production",
+      "tmp": "tmp/xstate_5.33.3_1792247434068_0.15900027374121706"
+    },
+    "_npmUser": {
+      "email": "npm-oidc-no-reply@github.com",
+      "name": "GitHub Actions",
+      "trustedPublisher": {
+        "id": "github",
+        "oidcConfigId": "8cf39b74-8b65-44d2-9de7-e505312ef257"
+      }
+    },
+    "_npmVersion": "11.13.0",
+    "_resolved": "/home/runner/work/_temp/changeset-pack-12103574267-1792247369089/packages/xstate-5.33.3.tgz",
+    "author": {
+      "email": "davidkpiano@gmail.com",
+      "name": "David Khourshid"
+    },
+    "bugs": {
+      "url": "https://github.com/statelyai/xstate/issues"
+    },
+    "description": "Finite State Machines and Statecharts for the Modern Web.",
+    "devDependencies": {
+      "@scion-scxml/test-framework": "^2.0.15",
+      "ajv": "^8.12.0",
+      "pkg-up": "^3.1.0",
+      "rxjs": "^7.8.1",
+      "xml-js": "^1.6.11"
+    },
+    "directories": {},
+    "dist": {
+      "attestations": {
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        },
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/xstate@5.33.3"
+      },
+      "fileCount": 132,
+      "integrity": "sha512-AnDRjS/GyKHmbA1PyhVCYBqYsA7EGe3KGgeD0ht3NFsXzoz7leX/HQDFX9QlHFJ/ltLHPsgChJYwPzRvB/0b4g==",
+      "shasum": "6dc145fea93544377056cdb3f2958ef97bd99ad1",
+      "signatures": [
+        {
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+          "sig": "MEUCIQCM15tILDUqNHXjc3XiWIJtm2to6DYXcEIUP+sIKocTxgIgcDRwzzXnzQEZM6xiQKH/DKMySHlYey84ni4tsQctxVk="
+        },
+        {
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+          "sig": "MEYCIQCRKH8Uetn9WOoSpdl9+FrZF7VY6pdyEDaDmZp2TmfGJQIhANcKd2bWgzOKJcBdz2PHmhIRbp0tFvj+XOsyiZp8sfiR"
+        }
+      ],
+      "tarball": "https://registry.npmjs.org/xstate/-/xstate-5.33.3.tgz",
+      "unpackedSize": 2313880
+    },
+    "exports": {
+      ".": {
+        "default": "./dist/xstate.cjs.js",
+        "development": {
+          "default": "./dist/xstate.development.cjs.js",
+          "import": "./dist/xstate.development.cjs.mjs",
+          "module": "./dist/xstate.development.esm.js"
+        },
+        "import": "./dist/xstate.cjs.mjs",
+        "module": "./dist/xstate.esm.js",
+        "types": {
+          "default": "./dist/xstate.cjs.js",
+          "import": "./dist/xstate.cjs.mjs"
+        }
+      },
+      "./actions": {
+        "default": "./dist/xstate-actions.cjs.js",
+        "development": {
+          "default": "./dist/xstate-actions.development.cjs.js",
+          "import": "./dist/xstate-actions.development.cjs.mjs",
+          "module": "./dist/xstate-actions.development.esm.js"
+        },
+        "import": "./dist/xstate-actions.cjs.mjs",
+        "module": "./dist/xstate-actions.esm.js",
+        "types": {
+          "default": "./dist/xstate-actions.cjs.js",
+          "import": "./dist/xstate-actions.cjs.mjs"
+        }
+      },
+      "./actors": {
+        "default": "./dist/xstate-actors.cjs.js",
+        "development": {
+          "default": "./dist/xstate-actors.development.cjs.js",
+          "import": "./dist/xstate-actors.development.cjs.mjs",
+          "module": "./dist/xstate-actors.development.esm.js"
+        },
+        "import": "./dist/xstate-actors.cjs.mjs",
+        "module": "./dist/xstate-actors.esm.js",
+        "types": {
+          "default": "./dist/xstate-actors.cjs.js",
+          "import": "./dist/xstate-actors.cjs.mjs"
+        }
+      },
+      "./dev": {
+        "default": "./dist/xstate-dev.cjs.js",
+        "development": {
+          "default": "./dist/xstate-dev.development.cjs.js",
+          "import": "./dist/xstate-dev.development.cjs.mjs",
+          "module": "./dist/xstate-dev.development.esm.js"
+        },
+        "import": "./dist/xstate-dev.cjs.mjs",
+        "module": "./dist/xstate-dev.esm.js",
+        "types": {
+          "default": "./dist/xstate-dev.cjs.js",
+          "import": "./dist/xstate-dev.cjs.mjs"
+        }
+      },
+      "./graph": {
+        "default": "./dist/xstate-graph.cjs.js",
+        "development": {
+          "default": "./dist/xstate-graph.development.cjs.js",
+          "import": "./dist/xstate-graph.development.cjs.mjs",
+          "module": "./dist/xstate-graph.development.esm.js"
+        },
+        "import": "./dist/xstate-graph.cjs.mjs",
+        "module": "./dist/xstate-graph.esm.js",
+        "types": {
+          "default": "./dist/xstate-graph.cjs.js",
+          "import": "./dist/xstate-graph.cjs.mjs"
+        }
+      },
+      "./guards": {
+        "default": "./dist/xstate-guards.cjs.js",
+        "development": {
+          "default": "./dist/xstate-guards.development.cjs.js",
+          "import": "./dist/xstate-guards.development.cjs.mjs",
+          "module": "./dist/xstate-guards.development.esm.js"
+        },
+        "import": "./dist/xstate-guards.cjs.mjs",
+        "module": "./dist/xstate-guards.esm.js",
+        "types": {
+          "default": "./dist/xstate-guards.cjs.js",
+          "import": "./dist/xstate-guards.cjs.mjs"
+        }
+      },
+      "./package.json": "./package.json"
+    },
+    "funding": {
+      "type": "opencollective",
+      "url": "https://opencollective.com/xstate"
+    },
+    "homepage": "https://github.com/statelyai/xstate/tree/main/packages/core#readme",
+    "imports": {
+      "#is-development": {
+        "default": "./src/false.ts",
+        "development": "./src/true.ts"
+      }
+    },
+    "keywords": [
+      "statechart",
+      "state machine",
+      "finite state machine",
+      "finite automata",
+      "scxml",
+      "state",
+      "interpreter",
+      "graph"
+    ],
+    "license": "MIT",
+    "main": "dist/xstate.cjs.js",
+    "maintainers": [
+      {
+        "email": "davidkpiano@gmail.com",
+        "name": "davidkpiano"
+      },
+      {
+        "email": "mateuszburzynski@gmail.com",
+        "name": "andarist"
+      },
+      {
+        "email": "david@stately.ai",
+        "name": "xstate-release-bot"
+      }
+    ],
+    "module": "dist/xstate.esm.js",
+    "name": "xstate",
+    "preconstruct": {
+      "entrypoints": [
+        "./index.ts",
+        "./actions.ts",
+        "./actors/index.ts",
+        "./guards.ts",
+        "./dev/index.ts",
+        "./graph/index.ts"
+      ],
+      "umdName": "XState"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/statelyai/xstate.git"
+    },
+    "scripts": {},
+    "sideEffects": false,
+    "types": "./dist/xstate.cjs.d.ts",
+    "umd:main": "dist/xstate.umd.min.js",
+    "version": "5.33.3"
+  },
+  "url": "https://registry.npmjs.org/xstate/5.33.3"
+}

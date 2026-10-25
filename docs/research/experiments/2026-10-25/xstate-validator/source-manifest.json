@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-25",
+  "registry_url": "https://registry.npmjs.org/xstate/5.33.3",
+  "package": "xstate@5.33.3",
+  "original_distribution_file_count": 132,
+  "gitHead": null,
+  "source_audit": "source-audit.json",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "d2de9814895c405ad385401d724b74473eabaa60eed0b26e87f933f2afedba05"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "834a8e21610028ab0cac2fb32eb4dfbd19f0f957123bd0db18818ce4d5fe1d1c"
+    },
+    {
+      "file": "check-types.cjs",
+      "sha256": "610dbc40550b2ff4664b40c4302ecda4a39d1aed4431b2a0b630da040a385184"
+    },
+    {
+      "file": "invalid-context-sdk.ts",
+      "sha256": "0247787a8a344454f1df85cbda31667635f63057a034755ebd54b644b76f9f15"
+    },
+    {
+      "file": "invalid-event-sdk.ts",
+      "sha256": "75d16945f1a934c2112be7fd601c2c12067189976e966b3b802a454544855a13"
+    },
+    {
+      "file": "machine.json",
+      "sha256": "4c68d4222e7fa6dcf01c0bc5e1b61d8fdba4dceba16af03a48f76001912f30b5"
+    },
+    {
+      "file": "registry-capture.json",
+      "sha256": "663c1631b5a2821e409b52729088643de94b00be104d32036caf77fadc567586"
+    },
+    {
+      "file": "results.json",
+      "sha256": "eac2302eec427775c64e0a73242850b360c2838aace35349622e62d8296fbf2b"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "ff2afc7a54ae565aad00917d0ae85722618bf2d7cc810262e57ae4009229df21"
+    },
+    {
+      "file": "source-audit.json",
+      "sha256": "f799e8f7d563b3bca6e601baf95ecc57966e5110a3c3b0dd734a0e6fd44d434c"
+    },
+    {
+      "file": "type-expectations.json",
+      "sha256": "ede8401aace1f354938fe8ada8092aedbd679fbb6d25aebb57b59cb949bdc61a"
+    },
+    {
+      "file": "type-results.json",
+      "sha256": "e10e8fa76b29c1d0f972d3612ea97129ab4578b1eb7efaec9493657dc6f6edb7"
+    },
+    {
+      "file": "valid-sdk.ts",
+      "sha256": "b32183e571aa0aeef0cb65349b759634f96e956e8d1fcdebefd8426cafe76871"
+    }
+  ],
+  "tool_files": [
+    {
+      "file": "tool/package.json",
+      "sha256": "c0270dcb2e680e4aa69476ddf99c1a66011fe24fa85936916f9dee03dc017f78"
+    },
+    {
+      "file": "tool/package-lock.json",
+      "sha256": "7aae40fa539d178b7d264e5a46cadfc0eb57d152ffdf6ee3badd7da4b0cc9bd6"
+    }
+  ],
+  "typescript": "5.9.3",
+  "node": "v24.22.1",
+  "selected_build": "default CommonJS; no development condition",
+  "new_original_schema_created": false
+}

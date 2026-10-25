@@ -1,0 +1,59 @@
+[
+  {
+    "id": "baseline-css",
+    "expected": {
+      "cssValue": "160px"
+    }
+  },
+  {
+    "id": "token-update-and-diff",
+    "expected": {
+      "cssValue": "192px",
+      "diffExit": 2,
+      "regression": true
+    }
+  },
+  {
+    "id": "default-theme-value",
+    "expected": {
+      "cssValue": "192px"
+    }
+  },
+  {
+    "id": "regenerate-tampered-output",
+    "expected": {
+      "cssValue": "160px",
+      "sourceUnchanged": true,
+      "originalOutputRestored": true
+    }
+  },
+  {
+    "id": "shadcn-mismatch",
+    "expected": {
+      "registryPrimary": "#000000",
+      "sourcePrimary": "#ffffff"
+    }
+  },
+  {
+    "id": "locked-entry-removed",
+    "expected": {
+      "diffExit": 2,
+      "regression": true
+    }
+  },
+  {
+    "id": "informational-diff-default",
+    "expected": {
+      "diffExit": 0,
+      "regression": true
+    }
+  },
+  {
+    "id": "version-bump-still-regression",
+    "expected": {
+      "diffExit": 2,
+      "regression": true,
+      "versionReported": true
+    }
+  }
+]

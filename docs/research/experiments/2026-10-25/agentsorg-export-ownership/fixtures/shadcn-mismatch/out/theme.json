@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "research-brand-theme",
+  "type": "registry:theme",
+  "title": "research-brand theme",
+  "description": "",
+  "cssVars": {
+    "light": {
+      "primary": "#000000"
+    }
+  }
+}

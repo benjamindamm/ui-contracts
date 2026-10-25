@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+  "$description": "Own isolated generated research projection or consumer; not a selected product contract",
+  "$machine": {
+    "id": "generated-duration-library",
+    "initial": "namespace",
+    "states": {
+      "namespace": {}
+    }
+  },
+  "$tokens": {
+    "delay": {
+      "$type": "number",
+      "$value": 1000
+    }
+  }
+}

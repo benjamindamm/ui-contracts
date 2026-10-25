@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-25",
+  "status": "Own bounded research policy, not original standard tooling",
+  "reused_sources": [
+    "S66",
+    "S70",
+    "S82",
+    "S83"
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "88204dcd8f054e06d4431e82fd3ee6b57f1064273e0749d1ecb97e171ef8307e"
+    },
+    {
+      "file": "accepted-coordinated-public-name-change.json",
+      "sha256": "ccb9b2529a6b4c42561263822a92c7bae5d09550065ac309101aa17377188ec5"
+    },
+    {
+      "file": "accepted-leading-token-change.json",
+      "sha256": "fb08478c320428a77ca84fec8affcffeea1a59148476682faa5843313265f0df"
+    },
+    {
+      "file": "baseline.json",
+      "sha256": "5de8c7ba9141db609980a68f14f492578644cd06f5188fa3c78fffcc705fb69e"
+    },
+    {
+      "file": "browser-expectations.json",
+      "sha256": "26a924968631f7b4d69eba08522591221becd4ceadbaf2d3f0c2d04e1a7f2386"
+    },
+    {
+      "file": "browser-function.js",
+      "sha256": "cd65ace2f8a292865cdbbd0c4f349d6b6663caf5b90035a1ad6f05a52970b484"
+    },
+    {
+      "file": "browser-results.json",
+      "sha256": "22407a1b85bdba36e4ebc189a06aa059494d61296fd009bce4ef6969925c7ec4"
+    },
+    {
+      "file": "browser-run.js",
+      "sha256": "62eb7bef403f47fd594bedb5e396183e1dad7415a1bc95bb841c1d59ae87cc31"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "e9753458bb7f68c979a52824f5076af680e916d956b704c3ab13c74063a3c3e2"
+    },
+    {
+      "file": "check_revision.py",
+      "sha256": "1e47f3267ad059004817c04668aac5907423a5a15af957dc88dc5461f4a8efa0"
+    },
+    {
+      "file": "check_schemas.py",
+      "sha256": "bf6bd1e6eafe5ef3e3f60966d86606b8013e7ed893d62abaf0681c272f1e6ebb"
+    },
+    {
+      "file": "initial-results.json",
+      "sha256": "462faaf44e962ba2b01ec03c77e8c166bb14bffa68584c7eba21febb27becac8"
+    },
+    {
+      "file": "native-event.cjs",
+      "sha256": "7cd4ac91b771dbf79f1d6bf2b5c455e96af07ea24a61590082fd2b7119c20ca5"
+    },
+    {
+      "file": "policy.json",
+      "sha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "2dda8b2143c893d5afbab890d7ba56dee6d539c3169db1baa63b9b65ec5f03f6"
+    },
+    {
+      "file": "results.json",
+      "sha256": "d7dfb56e9c7dd23585c3b1c4cdbd8328d709cb860d1af1107500dc5068a42baa"
+    },
+    {
+      "file": "revision-expectation.json",
+      "sha256": "b31a2777e6f114885a0dc144a15df5a212c24169e591dee29c07a55c6f415cac"
+    },
+    {
+      "file": "revision-initial-results.json",
+      "sha256": "73520584b37a3b3345675b0f2f9279b5242dd2893061a09362f3c8d854ed404c"
+    },
+    {
+      "file": "revision-results.json",
+      "sha256": "6ca14176b89f023ca9501c7b40b74d976c85f760abf6ee6124fcce4e56b24c9f"
+    },
+    {
+      "file": "revision.json",
+      "sha256": "73467fd6e4a876a9011ea40a03441a91531f56444584bb3b44f2ba73a2db85bb"
+    },
+    {
+      "file": "run-initial.py",
+      "sha256": "04811608161d6869c46124eb29597431988a1b56823d25ae52da2deef12096dc"
+    },
+    {
+      "file": "run.py",
+      "sha256": "f34b171360ce73c20dece54285ecbd0d9b765eaa49c2f1bec121913905b3c941"
+    },
+    {
+      "file": "runtime-expectation.json",
+      "sha256": "ea8b37feb4c4680c92336eefa7e94ff75012e417b31996b2599a3db065d79038"
+    },
+    {
+      "file": "runtime-results.json",
+      "sha256": "20c8e2c15cc05e4c806676d3eb2ea57bf40922d2f8d1dc5d35fc1f39e59f3da0"
+    },
+    {
+      "file": "schema-expectation.json",
+      "sha256": "18f75961cb5f0bebc1ca1d2fdebf0a737a2e336c10e33c652f57522df9d9a00f"
+    },
+    {
+      "file": "schema-results.json",
+      "sha256": "cac6b38c47dca93dfb8aa8bb01aabc3851602cff085c221727c4e38bf0c77c28"
+    }
+  ],
+  "original_schema_hashes": {
+    "work/validation-probes/sources/cem.schema.json": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+    "work/scxml-probes/sources/scxml-attribs.xsd": "b74de05e9e8d86123a4e8cca6655761fae78009e8d63b95cc27ae38222a2de01",
+    "work/scxml-probes/sources/scxml-contentmodels.xsd": "704baaf6e19c480fa76039390dc0a0e045f5544b5f68ec294c47fe51d40d0053",
+    "work/scxml-probes/sources/scxml-datatypes.xsd": "51036cac697db9be6f92ad853215dc3166990ca292786fed1612d0666932163b",
+    "work/scxml-probes/sources/scxml-module-core.xsd": "cbe0cde7a2cc165b84263e0dad45abd74296ed99a9196611e4b0c98b494222e4",
+    "work/scxml-probes/sources/scxml-module-data.xsd": "c34438431aa5d9815a63a64415e3127b832abd451ca509ff79a89d529dddba47",
+    "work/scxml-probes/sources/scxml-module-external.xsd": "899b13488332a6b37700ea53766e16d39b1b4f38fb829d0d3b12f0955a08057d",
+    "work/scxml-probes/sources/scxml.xsd": "98e14d0e03d5f9bb49b03fe4a2c24d72c165789d68fe93eee24fc403e4b23b48",
+    "work/scxml-probes/sources/xml.xsd": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c"
+  },
+  "original_scxml_package": "@scion-scxml/scxml@4.3.28",
+  "source_artifacts_unchanged": {
+    "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+    "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+    "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+    "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+    "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+    "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b"
+  },
+  "conditions_count": 20,
+  "repeated_regressions_counted_again": false
+}

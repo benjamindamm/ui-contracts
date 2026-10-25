@@ -1,0 +1,79 @@
+{
+  "kind": "original-definition-projection",
+  "original_root_changed": false,
+  "wrapper_is_additional_test_harness": true,
+  "results": [
+    {
+      "id": "event-definition",
+      "diagnostic_wrapper": true,
+      "original_definition": "Event",
+      "input": {
+        "name": 7,
+        "type": {
+          "text": "CustomEvent<{value:string}>"
+        }
+      },
+      "expected_valid": false,
+      "actual_valid": false,
+      "errors": [
+        {
+          "path": [
+            "name"
+          ],
+          "message": "7 is not of type 'string'"
+        }
+      ]
+    },
+    {
+      "id": "custom-element-definition",
+      "diagnostic_wrapper": true,
+      "original_definition": "CustomElementDeclaration",
+      "input": {
+        "kind": "class",
+        "customElement": true,
+        "name": "Autocomplete",
+        "events": [
+          {
+            "name": 7,
+            "type": {
+              "text": "CustomEvent<{value:string}>"
+            }
+          }
+        ]
+      },
+      "expected_valid": false,
+      "actual_valid": false,
+      "errors": [
+        {
+          "path": [
+            "events",
+            0,
+            "name"
+          ],
+          "message": "7 is not of type 'string'"
+        }
+      ]
+    },
+    {
+      "id": "class-definition",
+      "diagnostic_wrapper": true,
+      "original_definition": "ClassDeclaration",
+      "input": {
+        "kind": "class",
+        "customElement": true,
+        "name": "Autocomplete",
+        "events": [
+          {
+            "name": 7,
+            "type": {
+              "text": "CustomEvent<{value:string}>"
+            }
+          }
+        ]
+      },
+      "expected_valid": true,
+      "actual_valid": true,
+      "errors": []
+    }
+  ]
+}

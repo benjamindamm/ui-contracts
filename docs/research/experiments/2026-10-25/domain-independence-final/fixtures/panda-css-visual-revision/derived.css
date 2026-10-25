@@ -1,0 +1,2 @@
+:root{--popup-max-height:192px;}
+#popup-a,#popup-b{max-height:var(--popup-max-height);}

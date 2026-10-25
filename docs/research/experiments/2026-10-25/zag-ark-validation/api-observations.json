@@ -1,0 +1,25 @@
+{
+  "source": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/src/content/types/react/combobox.types.json",
+  "sourceCaptureSha256": "be9b4d42a4ad4ab058ca1d352d4538936fdc7e1bbd115f4fe70180cd96fad8d4",
+  "sourceObjectCanonicalSha256": "b78e10b812f648af8cc426b4fcf82f14c927f5433919812a8cd4754ce75564b8",
+  "rootSelectedMetadata": {
+    "collection": {
+      "type": "ListCollection<T>",
+      "isRequired": true
+    },
+    "open": {
+      "type": "boolean",
+      "isRequired": false
+    },
+    "onValueChange": {
+      "type": "(details: ValueChangeDetails<T>) => void",
+      "isRequired": false
+    },
+    "alwaysSubmitOnEnter": {
+      "type": "boolean",
+      "defaultValue": "false",
+      "isRequired": false
+    }
+  },
+  "interpretation": "Original SDK/API documentation metadata. Type expressions and default strings are not by themselves executable neutral JSON-schema semantics. Not asserted byte-identical to NPM 5.39.3."
+}

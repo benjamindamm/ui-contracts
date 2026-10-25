@@ -1,0 +1,16 @@
+[
+  {
+    "id": "baseline-native-name",
+    "expectedNames": [
+      "Ergebnisse A",
+      "Ergebnisse B"
+    ]
+  },
+  {
+    "id": "changed-native-name",
+    "expectedNames": [
+      "Suchergebnisse A",
+      "Ergebnisse B"
+    ]
+  }
+]

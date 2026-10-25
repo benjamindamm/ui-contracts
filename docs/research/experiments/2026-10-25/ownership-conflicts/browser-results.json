@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "expectationMet": true,
+      "gapPx": 8,
+      "heightPx": 192,
+      "id": "changed-height-a",
+      "instance": "a",
+      "observed": {
+        "gapPx": 8,
+        "heightPx": 192,
+        "scrollHeightPx": 224
+      },
+      "scrollHeightPx": 224,
+      "tolerancePx": 1
+    },
+    {
+      "expectationMet": true,
+      "gapPx": 8,
+      "heightPx": 192,
+      "id": "changed-height-b",
+      "instance": "b",
+      "observed": {
+        "gapPx": 8,
+        "heightPx": 192,
+        "scrollHeightPx": 224
+      },
+      "scrollHeightPx": 224,
+      "tolerancePx": 1
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

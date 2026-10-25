@@ -1,0 +1,37 @@
+{
+  "paths": [
+    {
+      "path": "website/src/app/api/types",
+      "sha": "698c27dcb1a09ddc2c41911863aeb2f725f21ce2",
+      "type": "tree"
+    },
+    {
+      "path": "website/src/app/api/types/[framework]",
+      "sha": "97708e9741da8bba223c6c5901394167c8b0dd4f",
+      "type": "tree"
+    },
+    {
+      "path": "website/src/app/api/types/[framework]/[component]",
+      "sha": "d1112b323b405c2048607be5867bd422373876d5",
+      "type": "tree"
+    },
+    {
+      "path": "website/src/app/api/types/[framework]/[component]/route.ts",
+      "sha": "f1e90a3ea0b5111620bb8ab7afc9f55ce8801ab5",
+      "type": "blob"
+    },
+    {
+      "path": "website/src/app/api/types/[framework]/route.ts",
+      "sha": "510573295c76f039c703830aa80c94530654d67b",
+      "type": "blob"
+    },
+    {
+      "path": "website/velite.config.ts",
+      "sha": "1cd417c730ed91b4fca51e6485d80fbe8571e998",
+      "type": "blob"
+    }
+  ],
+  "sha": "c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc",
+  "truncated": false,
+  "url": "https://api.github.com/repos/chakra-ui/ark/git/trees/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc?recursive=1"
+}

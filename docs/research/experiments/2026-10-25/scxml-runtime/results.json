@@ -1,0 +1,706 @@
+{
+  "node": "v24.22.1",
+  "package": "@scion-scxml/scxml",
+  "version": "4.3.28",
+  "scxmlSha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+  "originalBytesUsedExceptNamedNegativeVariants": true,
+  "additionalHostPolicy": {
+    "publicEvent": "value-change",
+    "properties": {
+      "value": {
+        "type": "StringKeyword",
+        "required": true
+      }
+    },
+    "route": "actual native #_parent to original Statechart parent; own interface-derived allowlist after receipt"
+  },
+  "cases": [
+    {
+      "id": "runtime-two-instance-states",
+      "kind": "isolation",
+      "expected": {
+        "A": "closed",
+        "B": "open",
+        "parentAEvents": 0,
+        "parentBEvents": 0
+      },
+      "criterion": "Same original model factory, separate instance state; OPEN A, OPEN B, CLOSE A",
+      "observed": {
+        "A": "closed",
+        "B": "open",
+        "parentAEvents": 0,
+        "parentBEvents": 0,
+        "publicAEvents": 0,
+        "publicBEvents": 0,
+        "rawValueType": "undefined",
+        "runtimeError": false,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "projectedPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "diagnostics": [],
+      "runtimeErrors": [],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:OPEN",
+          "A": [
+            "open"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "B:OPEN",
+          "A": [
+            "open"
+          ],
+          "B": [
+            "open"
+          ]
+        },
+        {
+          "command": "A:CLOSE",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "open"
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "runtime-original-public-send",
+      "kind": "commit",
+      "expected": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 1,
+        "parentBEvents": 0,
+        "publicAEvents": 1,
+        "value": "alpha"
+      },
+      "criterion": "Original COMMIT enters selected, eventless transition closes, native parent send carries declared data",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 1,
+        "parentBEvents": 0,
+        "publicAEvents": 1,
+        "publicBEvents": 0,
+        "value": "alpha",
+        "parentAValue": "alpha",
+        "rawValueType": "string",
+        "rawName": "value-change",
+        "runtimeError": false,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [
+          {
+            "name": "value-change",
+            "data": {
+              "value": "alpha"
+            },
+            "invokeid": "A",
+            "target": "#_parent",
+            "type": "external"
+          }
+        ],
+        "B": []
+      },
+      "projectedPublicBoundary": {
+        "A": [
+          {
+            "name": "value-change",
+            "detail": {
+              "value": "alpha"
+            }
+          }
+        ],
+        "B": []
+      },
+      "diagnostics": [],
+      "runtimeErrors": [],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:OPEN",
+          "A": [
+            "open"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:COMMIT",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "runtime-unknown-event",
+      "kind": "unknown",
+      "expected": {
+        "A": "closed",
+        "publicAEvents": 0
+      },
+      "criterion": "An unhandled event leaves original state unchanged",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 0,
+        "parentBEvents": 0,
+        "publicAEvents": 0,
+        "publicBEvents": 0,
+        "rawValueType": "undefined",
+        "runtimeError": false,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "projectedPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "diagnostics": [],
+      "runtimeErrors": [],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:NOT_DECLARED",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "runtime-commit-closed",
+      "kind": "commit-closed",
+      "expected": {
+        "A": "closed",
+        "publicAEvents": 0
+      },
+      "criterion": "COMMIT has no transition from closed",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 0,
+        "parentBEvents": 0,
+        "publicAEvents": 0,
+        "publicBEvents": 0,
+        "rawValueType": "undefined",
+        "runtimeError": false,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "projectedPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "diagnostics": [],
+      "runtimeErrors": [],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:COMMIT",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "runtime-parameter-isolation",
+      "kind": "params",
+      "expected": {
+        "parentAValue": "alpha-A",
+        "parentBValue": "beta-B",
+        "publicAEvents": 1,
+        "publicBEvents": 1
+      },
+      "criterion": "Documented interpreter params initialize per-instance value on unchanged SCXML bytes",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 1,
+        "parentBEvents": 1,
+        "publicAEvents": 1,
+        "publicBEvents": 1,
+        "value": "beta-B",
+        "parentAValue": "beta-B",
+        "parentBValue": "beta-B",
+        "rawValueType": "string",
+        "rawName": "value-change",
+        "runtimeError": false,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [
+          {
+            "name": "value-change",
+            "data": {
+              "value": "beta-B"
+            },
+            "invokeid": "A",
+            "target": "#_parent",
+            "type": "external"
+          }
+        ],
+        "B": [
+          {
+            "name": "value-change",
+            "data": {
+              "value": "beta-B"
+            },
+            "invokeid": "B",
+            "target": "#_parent",
+            "type": "external"
+          }
+        ]
+      },
+      "projectedPublicBoundary": {
+        "A": [
+          {
+            "name": "value-change",
+            "detail": {
+              "value": "beta-B"
+            }
+          }
+        ],
+        "B": [
+          {
+            "name": "value-change",
+            "detail": {
+              "value": "beta-B"
+            }
+          }
+        ]
+      },
+      "diagnostics": [],
+      "runtimeErrors": [],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:OPEN",
+          "A": [
+            "open"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:COMMIT",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "B:OPEN",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "open"
+          ]
+        },
+        {
+          "command": "B:COMMIT",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        }
+      ],
+      "expectationMet": false
+    },
+    {
+      "id": "runtime-missing-target",
+      "kind": "missing-target",
+      "expected": {
+        "rejected": true
+      },
+      "criterion": "Original interpreter compilation/initialization rejects nonexistent transition target; no own transition engine",
+      "observed": {
+        "rejected": true,
+        "error": "Error: Unable to find target state with id missing"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "runtime-number-payload",
+      "kind": "number-payload",
+      "expected": {
+        "rawValueType": "number",
+        "publicAEvents": 0,
+        "diagnostic": "payload-type"
+      },
+      "criterion": "Original runtime executes numeric variant; additional CEM-derived host policy rejects public payload",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 1,
+        "parentBEvents": 0,
+        "publicAEvents": 0,
+        "publicBEvents": 0,
+        "parentAValue": 42,
+        "rawValueType": "number",
+        "rawName": "value-change",
+        "diagnostic": "payload-type",
+        "runtimeError": false,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [
+          {
+            "name": "value-change",
+            "data": {
+              "value": 42
+            },
+            "invokeid": "A",
+            "target": "#_parent",
+            "type": "external"
+          }
+        ],
+        "B": []
+      },
+      "projectedPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "diagnostics": [
+        "payload-type"
+      ],
+      "runtimeErrors": [],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:OPEN",
+          "A": [
+            "open"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:COMMIT",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "runtime-wrong-public-event",
+      "kind": "wrong-event",
+      "expected": {
+        "rawName": "other-event",
+        "publicAEvents": 0,
+        "diagnostic": "event-not-declared"
+      },
+      "criterion": "Native parent routing occurs, additional interface binding rejects undeclared public name",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 1,
+        "parentBEvents": 0,
+        "publicAEvents": 0,
+        "publicBEvents": 0,
+        "parentAValue": "alpha",
+        "rawValueType": "string",
+        "rawName": "other-event",
+        "diagnostic": "event-not-declared",
+        "runtimeError": false,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [
+          {
+            "name": "other-event",
+            "data": {
+              "value": "alpha"
+            },
+            "invokeid": "A",
+            "target": "#_parent",
+            "type": "external"
+          }
+        ],
+        "B": []
+      },
+      "projectedPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "diagnostics": [
+        "event-not-declared"
+      ],
+      "runtimeErrors": [],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:OPEN",
+          "A": [
+            "open"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:COMMIT",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "runtime-cross-parent",
+      "kind": "cross-parent",
+      "expected": {
+        "parentAEvents": 0,
+        "parentBEvents": 1,
+        "publicAEvents": 0,
+        "publicBEvents": 0,
+        "diagnostic": "instance-route"
+      },
+      "criterion": "Wrong runtime parent binding reaches B; explicit expected invoke/instance route rejects projection",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 0,
+        "parentBEvents": 1,
+        "publicAEvents": 0,
+        "publicBEvents": 0,
+        "parentBValue": "alpha",
+        "rawValueType": "undefined",
+        "diagnostic": "instance-route",
+        "runtimeError": false,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [],
+        "B": [
+          {
+            "name": "value-change",
+            "data": {
+              "value": "alpha"
+            },
+            "invokeid": "A",
+            "target": "#_parent",
+            "type": "external"
+          }
+        ]
+      },
+      "projectedPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "diagnostics": [
+        "instance-route"
+      ],
+      "runtimeErrors": [],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:OPEN",
+          "A": [
+            "open"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:COMMIT",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "runtime-no-parent",
+      "kind": "no-parent",
+      "expected": {
+        "parentAEvents": 0,
+        "publicAEvents": 0,
+        "runtimeError": true
+      },
+      "criterion": "Original #_parent send without actual parent is an error; no fabricated host delivery",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "parentAEvents": 0,
+        "parentBEvents": 0,
+        "publicAEvents": 0,
+        "publicBEvents": 0,
+        "rawValueType": "undefined",
+        "runtimeError": true,
+        "rejected": false
+      },
+      "rawPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "projectedPublicBoundary": {
+        "A": [],
+        "B": []
+      },
+      "diagnostics": [],
+      "runtimeErrors": [
+        {
+          "instance": "A",
+          "error": {
+            "name": "error.communication",
+            "data": "Parent session not specified",
+            "type": "platform"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "command": "start",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:OPEN",
+          "A": [
+            "open"
+          ],
+          "B": [
+            "closed"
+          ]
+        },
+        {
+          "command": "A:COMMIT",
+          "A": [
+            "closed"
+          ],
+          "B": [
+            "closed"
+          ]
+        }
+      ],
+      "expectationMet": true
+    }
+  ]
+}

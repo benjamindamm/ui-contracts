@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "baseSourceHash": "source-snapshot"
+  },
+  "data": {
+    "obligations": [
+      {
+        "id": "public-value",
+        "domain": "api",
+        "kind": "public-property",
+        "label": "value",
+        "policy": "must-emit",
+        "sourcePaths": [
+          "foreign-cem.json#/modules/0/declarations/0/members/99"
+        ],
+        "facts": {
+          "name": "value",
+          "type": "string"
+        },
+        "representation": {
+          "targetKind": "api-property",
+          "field": "type",
+          "equals": "string"
+        }
+      }
+    ]
+  }
+}

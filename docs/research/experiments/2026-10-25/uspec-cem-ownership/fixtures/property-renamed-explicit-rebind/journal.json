@@ -1,0 +1,59 @@
+{
+  "kind": "Additional source/fact/output change provenance, not original uSpec ownership service",
+  "information": "public-property-name-and-type",
+  "leading": "foreign CEM member; Evidence fact and local API row are derived",
+  "before": {
+    "source": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+    "fact": "17ab4d927c6dbd992513ceb97e39691dca5061be67c0514aff6aecb42a28e194",
+    "output": "17ab4d927c6dbd992513ceb97e39691dca5061be67c0514aff6aecb42a28e194"
+  },
+  "after": {
+    "source": "0da2123856ba61c1db8dd4704a4c5e66bc8221fb13a5fb4cb39b58f2d9c6eac6",
+    "fact": "3a8a717a06f2b95bef28c4150b80d64c71f227140040ed86c1eea3a481e08eec",
+    "output": "3a8a717a06f2b95bef28c4150b80d64c71f227140040ed86c1eea3a481e08eec"
+  },
+  "sourceChanged": true,
+  "factChanged": true,
+  "outputChanged": true,
+  "originalValidation": true,
+  "additionalDecision": "bound",
+  "resolved": {
+    "source": {
+      "file": "foreign-cem.json",
+      "pointer": "/modules/0/declarations/0/members/0",
+      "module": "autocomplete.js",
+      "declaration": "Autocomplete",
+      "member": "selectedValue",
+      "kind": "field",
+      "type": "string",
+      "sha256": "0da2123856ba61c1db8dd4704a4c5e66bc8221fb13a5fb4cb39b58f2d9c6eac6"
+    },
+    "fact": {
+      "file": "research-evidence-api.json",
+      "id": "public-value",
+      "sourcePaths": [
+        "foreign-cem.json#/modules/0/declarations/0/members/0"
+      ],
+      "facts": {
+        "name": "selectedValue",
+        "type": "string"
+      },
+      "representation": {
+        "targetKind": "api-property",
+        "field": "type",
+        "equals": "string"
+      },
+      "sha256": "4585359b2201fe2e7abcf7db85009e927affa233e480c3a51e36ce4c48220937"
+    },
+    "output": {
+      "file": "research-api.json",
+      "pointer": "/data/mainTable/properties/0",
+      "row": {
+        "name": "selectedValue",
+        "type": "string"
+      },
+      "sha256": "6e9b1c02b5b04f18c876208cc4ad885d286f2dcdee076aa1c5eba5d19f25c824"
+    },
+    "leading": "foreign CEM member; Evidence fact and local API row are derived"
+  }
+}

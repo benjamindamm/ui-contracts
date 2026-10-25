@@ -1,0 +1,28 @@
+{
+  "scope": "Two additional native browser accessibility-tree snapshots, no assistive-technology speech test",
+  "cases": [
+    {
+      "id": "native-accessible-name-tree",
+      "criterion": "A01",
+      "prerequisite": "aria-controlled-scrollport",
+      "expectedNames": [
+        "Search A",
+        "Search B",
+        "Results A"
+      ],
+      "expectedRoles": [
+        "combobox",
+        "listbox"
+      ]
+    },
+    {
+      "id": "native-status-update-tree",
+      "criterion": "A03",
+      "prerequisite": "accessible-update-from-public-event",
+      "expectedText": "Selected Alpha A 1",
+      "expectedRoles": [
+        "status"
+      ]
+    }
+  ]
+}

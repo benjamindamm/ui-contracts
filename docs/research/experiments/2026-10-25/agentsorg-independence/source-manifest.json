@@ -1,0 +1,101 @@
+{
+  "source_visual_revision": "014a1864c641f8e9792ed76de93c95493489dd8c",
+  "reused_schema_and_export_proof": "S107/P64, source hashes matched exactly",
+  "original_scxml_package": "@scion-scxml/scxml@4.3.28",
+  "prior_scxml_manifest_sha256": "cfec2dbc6256d25dafd5cd69d8270022b7ddd163a3e1b20a354c9745d7bb1e35",
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "new_conditions": 4,
+  "original_schema_conditions_counted_again": 0,
+  "static_host_only": true,
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "d0211a4fce2c0871716f16fa255559f1c3e532e7efff134d33ba0f3469db3f50"
+    },
+    {
+      "file": "binding-expectation.json",
+      "sha256": "29a9656e70441e73c322c69392a58780499eec5344ce34baf8df5a163f1ac96f"
+    },
+    {
+      "file": "binding-results.json",
+      "sha256": "5c311c2ba680cf0dbfedf185a80ef638cc4d76412ce5a4b91f9f00205a3b8cd9"
+    },
+    {
+      "file": "browser-capture.json",
+      "sha256": "46bb973bd3259bb079cdbbe94e1d98977cdfddd918394b51a642079884e288b9"
+    },
+    {
+      "file": "browser-expectations.json",
+      "sha256": "74ac52515011c9a45b8fb588b0ceb0e17718cbfe0738293d5a5c189d273b4f67"
+    },
+    {
+      "file": "browser-results.json",
+      "sha256": "fd35846d91d1ec0531d02973f08e586cc243215a112eb20b256e6ab4dc54b433"
+    },
+    {
+      "file": "fixtures/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/layout.css",
+      "sha256": "0b64ede827ab27650552d1c7ddf4c212c477e1a1d6fe866828c77a5bae54b15d"
+    },
+    {
+      "file": "fixtures/tokens-160.css",
+      "sha256": "67155b5c74823233dccb72e9c63465b2e2a1b4432a123ad30cbf9c184d7995ab"
+    },
+    {
+      "file": "fixtures/tokens-192.css",
+      "sha256": "2eb7f018037788d44a53051909d85cc1aa51157fad55c0c22a562a4bc285a518"
+    },
+    {
+      "file": "fixtures/visual-160.design",
+      "sha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a"
+    },
+    {
+      "file": "fixtures/visual-192.design",
+      "sha256": "9cd6f1469a4874de7fe30bd35f3d3d9a4ffde6f55d74c4e62c782aaaf5dbba67"
+    },
+    {
+      "file": "host-160.html",
+      "sha256": "a03b32dd75539951cea121398e448ffa154f57d67c9976facfbc04d15668e5d1"
+    },
+    {
+      "file": "host-192.html",
+      "sha256": "07a95f0f8ec2dcbbf6bdfd3aac9f10843e4595e71615bf11f481fab05cca00c1"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "113adfb0eb92965490646220eb91765aa26bb7615b8d71ef9be6ce9a98e11f6a"
+    },
+    {
+      "file": "profile.json",
+      "sha256": "73a8eb6e3c67b58a60d31044272b6141778e8fed1fe1534d70c86e9003f6aebc"
+    },
+    {
+      "file": "results.json",
+      "sha256": "7b425774f2ef94a478f99ec2997622ef5b6c6fe8a66c9654788b960c2d5d091d"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "1f010bb4e1251f3f4db56aea5d71a898a40782c31b5f8b567be9b77eafbf08d7"
+    },
+    {
+      "file": "runtime-expectation.json",
+      "sha256": "088b41024c279a96cd69356efd2bee9538bfb9478a4aae11a7ccb7beb9223ca1"
+    },
+    {
+      "file": "runtime-results.json",
+      "sha256": "b6c8bad0ad0291f1ba7fe5680d39071f9f755ddeeb058b3530dd5f3bf46d9502"
+    }
+  ]
+}

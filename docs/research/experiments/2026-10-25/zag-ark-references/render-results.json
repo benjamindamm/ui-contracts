@@ -1,0 +1,110 @@
+{
+  "react": "19.2.0",
+  "scope": "Actual original React useMachine/connect and original Ark Root/Context/components SSR; no fake service, effect mounting, event sequence or DOM/AT",
+  "cases": [
+    {
+      "id": "zag-original-connect",
+      "candidate": "zag",
+      "kind": "base",
+      "expected": {
+        "accepted": true,
+        "error": null
+      },
+      "actual": "fixtures/zag-original-connect/actual.html",
+      "external": "fixtures/zag-original-connect/accessibility.html",
+      "html": "<main><div data-scope=\"combobox\" data-part=\"root\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Search a</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"item\" id=\"option-a-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\">Alpha</div></div></div></div><div data-scope=\"combobox\" data-part=\"root\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Search b</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"item\" id=\"option-b-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\">Alpha</div></div></div></div></main>",
+      "executionError": null
+    },
+    {
+      "id": "zag-custom-root-ids",
+      "candidate": "zag",
+      "kind": "rename",
+      "expected": {
+        "accepted": true,
+        "error": null
+      },
+      "actual": "fixtures/zag-custom-root-ids/actual.html",
+      "external": "fixtures/zag-custom-root-ids/accessibility.html",
+      "html": "<main><div data-scope=\"combobox\" data-part=\"root\" id=\"root-a-v2\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-a-v2\" id=\"label-a-v2\" data-focus=\"\">Search a</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a-v2\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a-v2\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-a-v2\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a-v2\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a-v2\"><div data-scope=\"combobox\" data-part=\"item\" id=\"option-a-alpha-v2\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\">Alpha</div></div></div></div><div data-scope=\"combobox\" data-part=\"root\" id=\"root-b-v2\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-b-v2\" id=\"label-b-v2\" data-focus=\"\">Search b</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b-v2\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b-v2\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-b-v2\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b-v2\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b-v2\"><div data-scope=\"combobox\" data-part=\"item\" id=\"option-b-alpha-v2\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\">Alpha</div></div></div></div></main>",
+      "executionError": null
+    },
+    {
+      "id": "zag-colliding-content-ids",
+      "candidate": "zag",
+      "kind": "collision",
+      "expected": {
+        "accepted": false,
+        "error": "duplicate-host-id"
+      },
+      "actual": "fixtures/zag-colliding-content-ids/actual.html",
+      "external": "fixtures/zag-colliding-content-ids/accessibility.html",
+      "html": "<main><div data-scope=\"combobox\" data-part=\"root\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Search a</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"item\" id=\"option-a-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\">Alpha</div></div></div></div><div data-scope=\"combobox\" data-part=\"root\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Search b</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"item\" id=\"option-b-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\">Alpha</div></div></div></div></main>",
+      "executionError": null
+    },
+    {
+      "id": "zag-external-role-conflict",
+      "candidate": "zag",
+      "kind": "role",
+      "expected": {
+        "accepted": false,
+        "error": "external-role-conflict"
+      },
+      "actual": "fixtures/zag-external-role-conflict/actual.html",
+      "external": "fixtures/zag-external-role-conflict/accessibility.html",
+      "html": "<main><div data-scope=\"combobox\" data-part=\"root\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Search a</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"item\" id=\"option-a-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\">Alpha</div></div></div></div><div data-scope=\"combobox\" data-part=\"root\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Search b</label><input data-scope=\"combobox\" data-part=\"input\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/><div data-scope=\"combobox\" data-part=\"content\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"item\" id=\"option-b-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\">Alpha</div></div></div></div></main>",
+      "executionError": null
+    },
+    {
+      "id": "ark-original-context",
+      "candidate": "ark",
+      "kind": "base",
+      "expected": {
+        "accepted": true,
+        "error": null
+      },
+      "actual": "fixtures/ark-original-context/actual.html",
+      "external": "fixtures/ark-original-context/accessibility.html",
+      "html": "<main><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Search a</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-a\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"item\" dir=\"ltr\" id=\"option-a-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\"><span data-scope=\"combobox\" data-part=\"item-text\" dir=\"ltr\" data-state=\"unchecked\">Alpha</span></div></div></div></div><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Search b</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-b\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"item\" dir=\"ltr\" id=\"option-b-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\"><span data-scope=\"combobox\" data-part=\"item-text\" dir=\"ltr\" data-state=\"unchecked\">Alpha</span></div></div></div></div></main>",
+      "executionError": null
+    },
+    {
+      "id": "ark-custom-root-ids",
+      "candidate": "ark",
+      "kind": "rename",
+      "expected": {
+        "accepted": true,
+        "error": null
+      },
+      "actual": "fixtures/ark-custom-root-ids/actual.html",
+      "external": "fixtures/ark-custom-root-ids/accessibility.html",
+      "html": "<main><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-a-v2\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-a-v2\" id=\"label-a-v2\" data-focus=\"\">Search a</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-a-v2\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a-v2\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a-v2\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-a-v2\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a-v2\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a-v2\"><div data-scope=\"combobox\" data-part=\"item\" dir=\"ltr\" id=\"option-a-alpha-v2\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\"><span data-scope=\"combobox\" data-part=\"item-text\" dir=\"ltr\" data-state=\"unchecked\">Alpha</span></div></div></div></div><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-b-v2\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-b-v2\" id=\"label-b-v2\" data-focus=\"\">Search b</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-b-v2\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b-v2\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b-v2\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-b-v2\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b-v2\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b-v2\"><div data-scope=\"combobox\" data-part=\"item\" dir=\"ltr\" id=\"option-b-alpha-v2\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\"><span data-scope=\"combobox\" data-part=\"item-text\" dir=\"ltr\" data-state=\"unchecked\">Alpha</span></div></div></div></div></main>",
+      "executionError": null
+    },
+    {
+      "id": "ark-input-prop-id-override",
+      "candidate": "ark",
+      "kind": "input-override",
+      "expected": {
+        "accepted": false,
+        "error": "missing-controlled-input"
+      },
+      "actual": "fixtures/ark-input-prop-id-override/actual.html",
+      "external": "fixtures/ark-input-prop-id-override/accessibility.html",
+      "html": "<main><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Search a</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-a\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"override-input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"item\" dir=\"ltr\" id=\"option-a-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\"><span data-scope=\"combobox\" data-part=\"item-text\" dir=\"ltr\" data-state=\"unchecked\">Alpha</span></div></div></div></div><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Search b</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-b\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"item\" dir=\"ltr\" id=\"option-b-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\"><span data-scope=\"combobox\" data-part=\"item-text\" dir=\"ltr\" data-state=\"unchecked\">Alpha</span></div></div></div></div></main>",
+      "executionError": null
+    },
+    {
+      "id": "ark-content-prop-id-override",
+      "candidate": "ark",
+      "kind": "content-override",
+      "expected": {
+        "accepted": false,
+        "error": "missing-controls-target"
+      },
+      "actual": "fixtures/ark-content-prop-id-override/actual.html",
+      "external": "fixtures/ark-content-prop-id-override/accessibility.html",
+      "html": "<main><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Search a</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-a\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"override-popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"item\" dir=\"ltr\" id=\"option-a-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\"><span data-scope=\"combobox\" data-part=\"item-text\" dir=\"ltr\" data-state=\"unchecked\">Alpha</span></div></div></div></div><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Search b</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-b\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"item\" dir=\"ltr\" id=\"option-b-alpha\" role=\"option\" tabindex=\"-1\" data-state=\"unchecked\" data-value=\"alpha\"><span data-scope=\"combobox\" data-part=\"item-text\" dir=\"ltr\" data-state=\"unchecked\">Alpha</span></div></div></div></div></main>",
+      "executionError": null
+    }
+  ]
+}

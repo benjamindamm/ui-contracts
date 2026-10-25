@@ -1,0 +1,26 @@
+{
+  "@ark-ui/react": {
+    "version": "5.39.3",
+    "packageSha256": "aa4d5d53676dac085f08ce283620d35709d25887d28b14e5a06dcd7f1ac50a12"
+  },
+  "@zag-js/combobox": {
+    "version": "1.45.0",
+    "packageSha256": "2156a87852e5e4df86770c781c126cdefa8ccc70a3d730b656935c769e3e108d"
+  },
+  "@zag-js/react": {
+    "version": "1.45.0",
+    "packageSha256": "fd1380e15c7903548190044b87de496d3e5c2ee80065c5df4b28c10f30d714cd"
+  },
+  "@zag-js/core": {
+    "version": "1.45.0",
+    "packageSha256": "6b6d07cb66c0a56d05fdec0a77f38e54c01fd67d048206c4712034f369155ad9"
+  },
+  "react": {
+    "version": "19.2.0",
+    "packageSha256": "6029fda5e660da53952cf5ddcd1e8568fc8dc0c6dcb9deaf7667fdc4c7f5a113"
+  },
+  "react-dom": {
+    "version": "19.2.0",
+    "packageSha256": "5b479c8bdbdda7bbf6709bb4213aa8e2e1a391d79aa57ca84bc63be17bb2f727"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-25",
+  "source": "S96",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "0dd5946a75616a67e0f7e0eeb95ebdb18f3db1612815f184691a01f5de199b65"
+    },
+    {
+      "file": "artifacts.json",
+      "sha256": "3c0c03b540e6b49fb9eef338b294c7e2a3ece0c036aea2dd5611d12767c9b2bb"
+    },
+    {
+      "file": "profile.json",
+      "sha256": "b59e7eb19bedfe0cbec34d9c0926211410591ff73642282251008d3a449d6836"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "536259a33c145fcc69a9029e0b265bc1c58c45e0ea44109daf5f8aada267c953"
+    },
+    {
+      "file": "parse-css.cjs",
+      "sha256": "12016d6e844caa1a4fc51a0cb2a4eb4935f7389b784632896f0845d31a1801e5"
+    },
+    {
+      "file": "run.py",
+      "sha256": "23273161fff2ce4be6a5f15fdf3c5a7d867b8d1ad31891f05d4d8c4e8797bba1"
+    },
+    {
+      "file": "source-notes.json",
+      "sha256": "b085f411761173d801c23e3adf014bebda0fe1e63cc30456dc8ff131a09d3278"
+    },
+    {
+      "file": "results.json",
+      "sha256": "9bec5af766befaf65b71bbebb1fd3f977293812e7a78fc0685351bd3414adb10"
+    },
+    {
+      "file": "initial-13-results.json",
+      "sha256": "6be1e52e974ccc23db535cf4d4b3fd94d1d3e0579f5b39bd683cf0d21f4659cc"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "d7e079d78df6f012cf01b5c2947df9b29b8f963b086cc94d8773a3914ed5ba40"
+    }
+  ],
+  "original_and_prior_inputs": [
+    {
+      "file": "../typed-references/artifacts.json",
+      "sha256": "3c0c03b540e6b49fb9eef338b294c7e2a3ece0c036aea2dd5611d12767c9b2bb"
+    },
+    {
+      "file": "../typed-references/profile.json",
+      "sha256": "100ca0281815e3327354f75a05801de0ec2d0e97a5f89518874fe4450adef577"
+    },
+    {
+      "file": "../css-original-grammar/profile.json",
+      "sha256": "d72689895eeb76c34e09c10d32bcc28044ba8e33abca09410fa1f0d48c97244c"
+    },
+    {
+      "file": "../validation-probes/sources/cem.schema.json",
+      "sha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410"
+    },
+    {
+      "file": "../css-grammar/tool-current/node_modules/css-tree/package.json",
+      "sha256": "bd734f2de92e7a254bd05970fa83b30f8be9ed73e33577065a1529e59843cfd4"
+    },
+    {
+      "file": "../css-grammar/tool-current/node_modules/css-tree/lib/syntax/create.js",
+      "sha256": "6b17b6b6f894e565124a378788928db01661067059c1a34a0daf929d53019dae"
+    },
+    {
+      "file": "../css-grammar/tool-current/node_modules/css-tree/lib/lexer/Lexer.js",
+      "sha256": "818e6d0d35dbfa8d1f4c9a34634c7f1d73dbcef9fc97ec25e599b55ee68e71af"
+    }
+  ],
+  "fixture_hashes": {
+    "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+    "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+    "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+    "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+  },
+  "conditions": 14,
+  "groups": 1,
+  "initial_13_run_counted_again": false,
+  "additional_resolver": true,
+  "native_lookup_executed": false,
+  "original_dictionary_modified": false,
+  "browser_layout_executed": false,
+  "at_tested": false
+}

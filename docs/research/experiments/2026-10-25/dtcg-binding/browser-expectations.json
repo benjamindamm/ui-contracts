@@ -1,0 +1,50 @@
+[
+  {
+    "id": "px-a",
+    "variant": "px",
+    "instance": "a",
+    "expected": {
+      "gapPx": 8,
+      "heightPx": 160,
+      "rowHeightPx": 32,
+      "scrollHeightPx": 224
+    },
+    "tolerancePx": 1
+  },
+  {
+    "id": "px-b",
+    "variant": "px",
+    "instance": "b",
+    "expected": {
+      "gapPx": 8,
+      "heightPx": 160,
+      "rowHeightPx": 32,
+      "scrollHeightPx": 224
+    },
+    "tolerancePx": 1
+  },
+  {
+    "id": "rem-a",
+    "variant": "rem",
+    "instance": "a",
+    "expected": {
+      "gapPx": 8,
+      "heightPx": 160,
+      "rowHeightPx": 32,
+      "scrollHeightPx": 224
+    },
+    "tolerancePx": 1
+  },
+  {
+    "id": "rem-b",
+    "variant": "rem",
+    "instance": "b",
+    "expected": {
+      "gapPx": 8,
+      "heightPx": 160,
+      "rowHeightPx": 32,
+      "scrollHeightPx": 224
+    },
+    "tolerancePx": 1
+  }
+]

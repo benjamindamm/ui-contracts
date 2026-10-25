@@ -1,0 +1,10 @@
+const fs=require('fs');
+const ts=require('../validation-probes/ts-tool/node_modules/typescript');
+const path=require('path');
+const src='sources/packages/dom-css/src/tokens/conditions.ts';
+fs.writeFileSync(path.join(__dirname,'conditions.cjs'),ts.transpileModule(fs.readFileSync(path.join(__dirname,src),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText);
+const original=require('./conditions.cjs');
+const inputs=['@media (prefers-color-scheme: dark)','@MEDIA /*comment*/ (prefers-color-scheme: DARK)','@container (min-width: 640px)','[data-theme="dark"]','@media screen and (prefers-color-scheme: dark)','@media (min-width: 640px) and (prefers-color-scheme: dark)','@media (prefers-color-scheme: banana)','@media (min-width: 640bananas)','@supports (display: grid)','@media (width >= 640px)'];
+const cases=inputs.map((input,i)=>{try {const parsed=original.parseFeatureCondition(input);return {id:`op-condition-${i+1}`,input,parsed:parsed??null,serialized:parsed?original.featureConditionCSS(parsed):null};}catch(e){return {id:`op-condition-${i+1}`,input,error:e.message}}});
+fs.writeFileSync(path.join(__dirname,'results.json'),JSON.stringify({method:'Exploratory execution of original module; no preregistered expected results; shape parser, not CSS semantic validator',node:process.version,typescript:ts.version,cssTree:require('css-tree/package.json').version,cases},null,2)+'\n');
+console.log(JSON.stringify(cases,null,2));

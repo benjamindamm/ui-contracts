@@ -1,0 +1,40 @@
+{
+  "scope": "Programmatic scrollTop in fixed native CSS fixtures; not whole OpenPencil import/export or physical keyboard/AT",
+  "nativeCssFixtureRendered": true,
+  "wholeOpenPencilPipelineExecuted": false,
+  "physicalInputTested": false,
+  "atTested": false,
+  "projectionSourceCase": "clip",
+  "projectionResultsSha256": "01002b1933e28f75e74b8712a4001915c988c7b618399e62f9ee788c6ec225ff",
+  "cases": [
+    {
+      "after": 0,
+      "before": 0,
+      "clientHeight": 60,
+      "computedOverflow": "clip",
+      "id": "original-clip",
+      "scrollHeight": 300,
+      "expectationMet": true
+    },
+    {
+      "after": 80,
+      "before": 0,
+      "clientHeight": 60,
+      "computedOverflow": "hidden",
+      "id": "original-hidden",
+      "scrollHeight": 300,
+      "expectationMet": true
+    },
+    {
+      "after": 80,
+      "before": 0,
+      "clientHeight": 60,
+      "computedOverflow": "hidden",
+      "id": "projected-clip",
+      "scrollHeight": 300,
+      "expectationMet": true
+    }
+  ],
+  "url": "http://127.0.0.1:50335/",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

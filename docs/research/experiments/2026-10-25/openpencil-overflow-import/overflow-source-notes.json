@@ -1,0 +1,22 @@
+{
+  "url": "https://www.w3.org/TR/2025/WD-css-overflow-3-20251007/",
+  "definitions": [
+    {
+      "id": "valdef-overflow-hidden",
+      "read_text_sha256": "a2777bfd71565308cf9d72e446f1b49fc84f6fb7195c5755be852f2a123056eb"
+    },
+    {
+      "id": "valdef-overflow-clip",
+      "read_text_sha256": "9a23f01ea591ee1b12093dbdc6c6e127b5f8b9ad8cb73ef9b43b1746a0a7f03d"
+    },
+    {
+      "id": "valdef-overflow-scroll",
+      "read_text_sha256": "dea7331ad8f6c94e393eba0d1f50ff7ee8cedcd23270e51678b04a4c901f74b2"
+    },
+    {
+      "id": "valdef-overflow-auto",
+      "read_text_sha256": "aa51a0b25f8d503408fd7e6ae275952ce4316e0f108ee0b4263835eb69e399c9"
+    }
+  ],
+  "finding": "Original hidden permits programmatic scrolling and is a scroll container; clip forbids scrolling and is not a scroll container. scroll and auto specify further distinct policies."
+}

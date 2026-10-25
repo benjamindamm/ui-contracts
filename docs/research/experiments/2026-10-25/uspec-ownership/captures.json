@@ -1,0 +1,36 @@
+{
+  "logs": [],
+  "ok": true,
+  "value": [
+    {
+      "path": "packages/cli/src/component-md/target-identity.ts",
+      "text": {
+        "contentLength": 9462,
+        "page": 254,
+        "path": "/Users/kcnpxcp/.browseros/tool-output/evaluate-1792946127128-5fa8ff9f-9971-44a0-b292-d42039e91030.txt",
+        "writtenToFile": true
+      },
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/src/component-md/target-identity.ts"
+    },
+    {
+      "path": "packages/cli/src/component-md/cache-validation.ts",
+      "text": {
+        "contentLength": 27743,
+        "page": 255,
+        "path": "/Users/kcnpxcp/.browseros/tool-output/evaluate-1792946127276-39ff0f02-b95c-47e3-b578-f467e8643da4.txt",
+        "writtenToFile": true
+      },
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/src/component-md/cache-validation.ts"
+    },
+    {
+      "path": "docs/specs/component-md.mdx",
+      "text": {
+        "contentLength": 16236,
+        "page": 256,
+        "path": "/Users/kcnpxcp/.browseros/tool-output/evaluate-1792946127278-4036b538-0dac-4e29-9797-06bec9fe8a82.txt",
+        "writtenToFile": true
+      },
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/docs/specs/component-md.mdx"
+    }
+  ]
+}

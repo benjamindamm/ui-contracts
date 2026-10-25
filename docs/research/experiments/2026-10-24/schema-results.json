@@ -1,0 +1,232 @@
+{
+  "kind": "original-schema-validation",
+  "python": "3.12.14",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "validator": "python-jsonschema",
+  "validator_version": "4.25.1",
+  "dependencies": {
+    "attrs": "26.1.0",
+    "jsonschema-specifications": "2025.9.1",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.9.1",
+    "typing-extensions": "4.16.0"
+  },
+  "network_during_validation": false,
+  "candidate_runtime_executed": false,
+  "cases": [
+    {
+      "id": "ux-01-valid",
+      "schema": "uxspec",
+      "input": "inputs/ux-01-valid.json",
+      "expected_valid": true,
+      "question": "Originalschema akzeptiert isoliertes Behavior ohne Visual",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "ux-02-missing-machine",
+      "schema": "uxspec",
+      "input": "inputs/ux-02-missing-machine.json",
+      "expected_valid": false,
+      "question": "Strukturelle Pflichtverletzung",
+      "actual_valid": false,
+      "expectation_met": true,
+      "errors": [
+        {
+          "path": [],
+          "schema_path": [
+            "required"
+          ],
+          "validator": "required",
+          "message": "'$machine' is a required property",
+          "context": []
+        }
+      ]
+    },
+    {
+      "id": "ux-03-bad-context-type",
+      "schema": "uxspec",
+      "input": "inputs/ux-03-bad-context-type.json",
+      "expected_valid": false,
+      "question": "Nicht erlaubter primitiver Typ",
+      "actual_valid": false,
+      "expectation_met": true,
+      "errors": [
+        {
+          "path": [
+            "$context",
+            "value",
+            "type"
+          ],
+          "schema_path": [
+            "properties",
+            "$context",
+            "additionalProperties",
+            "properties",
+            "type",
+            "enum"
+          ],
+          "validator": "enum",
+          "message": "'imaginary' is not one of ['string', 'number', 'boolean', 'object', 'array', 'null']",
+          "context": []
+        }
+      ]
+    },
+    {
+      "id": "ux-04-missing-target",
+      "schema": "uxspec",
+      "input": "inputs/ux-04-missing-target.json",
+      "expected_valid": true,
+      "question": "Existenz des referenzierten Zielzustands ist keine Schemaformprüfung",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "ux-05-unknown-operator",
+      "schema": "uxspec",
+      "input": "inputs/ux-05-unknown-operator.json",
+      "expected_valid": true,
+      "question": "Unbekannter Ausdrucksoperator strukturell erlaubt",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "ux-06-wrong-default",
+      "schema": "uxspec",
+      "input": "inputs/ux-06-wrong-default.json",
+      "expected_valid": true,
+      "question": "Default wird nicht gegen den daneben genannten Feldtyp geprüft",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "ux-07-machine-invoke",
+      "schema": "uxspec",
+      "input": "inputs/ux-07-machine-invoke.json",
+      "expected_valid": false,
+      "question": "Originales machineInvoke-Objekt trifft beide oneOf-Zweige",
+      "actual_valid": false,
+      "expectation_met": true,
+      "errors": [
+        {
+          "path": [
+            "$machine",
+            "states",
+            "closed",
+            "invoke",
+            0
+          ],
+          "schema_path": [
+            "properties",
+            "$machine",
+            "properties",
+            "states",
+            "additionalProperties",
+            "properties",
+            "invoke",
+            "items",
+            "oneOf"
+          ],
+          "validator": "oneOf",
+          "message": "{'kind': 'machine', 'src': 'child', 'id': 'child-1'} is valid under each of {'type': 'object'}, {'$ref': '#/$defs/machineInvoke'}",
+          "context": []
+        }
+      ]
+    },
+    {
+      "id": "ux-08-incomplete-machine-invoke",
+      "schema": "uxspec",
+      "input": "inputs/ux-08-incomplete-machine-invoke.json",
+      "expected_valid": true,
+      "question": "Objekt ohne erforderliche machineInvoke-ID passiert allgemeinen Objektzweig",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "ux-09-foreign-geometry",
+      "schema": "uxspec",
+      "input": "inputs/ux-09-foreign-geometry.json",
+      "expected_valid": true,
+      "question": "Freies Visual-Containerobjekt akzeptiert zusätzliche Anker-/Overflowfelder ohne eigene Bedeutungsprüfung",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "cem-01-valid",
+      "schema": "cem",
+      "input": "inputs/cem-01-valid.json",
+      "expected_valid": true,
+      "question": "Typtext einer öffentlichen CustomEvent-Signatur ist darstellbar",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "cem-02-missing-modules",
+      "schema": "cem",
+      "input": "inputs/cem-02-missing-modules.json",
+      "expected_valid": false,
+      "question": "Pflichtstruktur",
+      "actual_valid": false,
+      "expectation_met": true,
+      "errors": [
+        {
+          "path": [],
+          "schema_path": [
+            "required"
+          ],
+          "validator": "required",
+          "message": "'modules' is a required property",
+          "context": []
+        }
+      ]
+    },
+    {
+      "id": "cem-03-invalid-event-name",
+      "schema": "cem",
+      "input": "inputs/cem-03-invalid-event-name.json",
+      "expected_valid": false,
+      "question": "Eventname muss String sein",
+      "actual_valid": true,
+      "expectation_met": false,
+      "errors": []
+    },
+    {
+      "id": "cem-04-unparseable-type",
+      "schema": "cem",
+      "input": "inputs/cem-04-unparseable-type.json",
+      "expected_valid": true,
+      "question": "Schema parst keinen TypeScript-Typtext",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "cem-05-unresolved-type-reference",
+      "schema": "cem",
+      "input": "inputs/cem-05-unresolved-type-reference.json",
+      "expected_valid": true,
+      "question": "Referenzexistenz wird nicht durch Manifest-Shapeprüfung erzwungen",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    },
+    {
+      "id": "cem-06-foreign-payload-key",
+      "schema": "cem",
+      "input": "inputs/cem-06-foreign-payload-key.json",
+      "expected_valid": true,
+      "question": "Zusätzlicher eigener Payloadschlüssel ist kein Nachweis standardisierter Interpretation",
+      "actual_valid": true,
+      "expectation_met": true,
+      "errors": []
+    }
+  ],
+  "all_expectations_met": false
+}

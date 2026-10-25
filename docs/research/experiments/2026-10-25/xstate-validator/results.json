@@ -1,0 +1,172 @@
+{
+  "package": "xstate@5.33.3",
+  "node": "v24.22.1",
+  "resolvedEntry": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/xstate-validator/tool/node_modules/xstate/dist/xstate.cjs.js",
+  "selectedBuild": "default CommonJS export, no development condition",
+  "originalExports": [
+    "Actor",
+    "SimulatedClock",
+    "SpecialTargets",
+    "StateMachine",
+    "StateNode",
+    "__unsafe_getAllOwnEventDescriptors",
+    "and",
+    "assertEvent",
+    "assign",
+    "cancel",
+    "createActor",
+    "createEmptyActor",
+    "createMachine",
+    "emit",
+    "enqueueActions",
+    "forwardTo",
+    "fromCallback",
+    "fromEventObservable",
+    "fromObservable",
+    "fromPromise",
+    "fromTransition",
+    "getInitialMicrosteps",
+    "getInitialSnapshot",
+    "getMicrosteps",
+    "getNextSnapshot",
+    "getNextTransitions",
+    "getStateNodes",
+    "initialTransition",
+    "interpret",
+    "isMachineSnapshot",
+    "log",
+    "mapState",
+    "matchesState",
+    "not",
+    "or",
+    "pathToStateValue",
+    "raise",
+    "sendParent",
+    "sendTo",
+    "setup",
+    "spawnChild",
+    "stateIn",
+    "stop",
+    "stopChild",
+    "toObserver",
+    "toPromise",
+    "transition",
+    "waitFor"
+  ],
+  "cases": [
+    {
+      "id": "json-machine-control",
+      "kind": "control",
+      "expected": {
+        "accepted": true,
+        "initialState": "closed"
+      },
+      "observed": {
+        "accepted": true,
+        "initialState": "closed",
+        "initialValue": "alpha",
+        "initialValueType": "string",
+        "schemasPreserved": true,
+        "parserCalls": 0
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "schemas-false-is-metadata",
+      "kind": "false",
+      "expected": {
+        "accepted": true,
+        "schemasPreserved": true
+      },
+      "observed": {
+        "accepted": true,
+        "initialState": "closed",
+        "initialValue": "alpha",
+        "initialValueType": "string",
+        "schemasPreserved": true,
+        "parserCalls": 0
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "schemas-parser-not-invoked",
+      "kind": "hook",
+      "expected": {
+        "accepted": true,
+        "parserCalls": 0,
+        "schemasPreserved": true
+      },
+      "observed": {
+        "accepted": true,
+        "initialState": "closed",
+        "initialValue": "alpha",
+        "initialValueType": "string",
+        "schemasPreserved": true,
+        "parserCalls": 0
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "context-violates-supplied-json-schema",
+      "kind": "context",
+      "expected": {
+        "accepted": true,
+        "initialValueType": "number",
+        "initialValue": 42
+      },
+      "observed": {
+        "accepted": true,
+        "initialState": "closed",
+        "initialValue": 42,
+        "initialValueType": "number",
+        "schemasPreserved": true,
+        "parserCalls": 0
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "invalid-target-original-graph-check",
+      "kind": "target",
+      "expected": {
+        "accepted": false
+      },
+      "observed": {
+        "accepted": false,
+        "error": "Error: Invalid transition definition for state node 'ResearchAutocomplete.closed':\nChild state 'missing-state' does not exist on 'ResearchAutocomplete'"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "restore-snapshot-context-is-not-source-schema",
+      "kind": "snapshot",
+      "expected": {
+        "accepted": true,
+        "restoredValueType": "number",
+        "restoredValue": 42
+      },
+      "observed": {
+        "accepted": true,
+        "initialState": "closed",
+        "initialValue": "alpha",
+        "initialValueType": "string",
+        "schemasPreserved": true,
+        "parserCalls": 0,
+        "restoredValue": 42,
+        "restoredValueType": "number"
+      },
+      "snapshotObservation": {
+        "snapshotInput": {
+          "status": "active",
+          "value": "closed",
+          "historyValue": {},
+          "context": {
+            "value": 42
+          },
+          "children": {}
+        },
+        "requiresExistingMachineObject": true
+      },
+      "expectationMet": true
+    }
+  ]
+}

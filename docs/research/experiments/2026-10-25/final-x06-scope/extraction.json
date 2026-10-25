@@ -1,0 +1,22 @@
+{
+  "sourceSha256": "f743d14c7d48e828c2d50c8ee0c16180a128c1a35dbad6bab57158a0c9f28841",
+  "originalDeclarations": [
+    {
+      "name": "PropertyDefSchema",
+      "sha256": "d94f1bd4c631c503b289c735c4933a90f05cf2010f22c13fce81ba98c3e07333",
+      "startLine": 35
+    },
+    {
+      "name": "TypeDefSchema",
+      "sha256": "b93938a90486fa3dd3b0ddb6cd80ca3eb1c28fe6e18fe0aa27cbe79b0fb2f4e9",
+      "startLine": 41
+    },
+    {
+      "name": "ConfigSchema",
+      "sha256": "c241e51249e504f7bb3d3924d53d83eacdce2aee4d38c2fdde1547deb66eba15",
+      "startLine": 49
+    }
+  ],
+  "schemaModified": false,
+  "method": "Original declarations isolated by AST, TypeScript transpilation, original Zod dependency; loader and module side effects not executed"
+}

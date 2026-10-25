@@ -1,0 +1,22 @@
+{
+  "originalSchemaSha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+  "kind": "Original CEM structural validation, not cross-domain type binding",
+  "cases": [
+    {
+      "id": "cem-valid-boolean-field",
+      "type": "boolean",
+      "expectedValid": true,
+      "valid": true,
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "cem-valid-string-field-needs-extra-binder",
+      "type": "string",
+      "expectedValid": true,
+      "valid": true,
+      "errors": [],
+      "expectationMet": true
+    }
+  ]
+}

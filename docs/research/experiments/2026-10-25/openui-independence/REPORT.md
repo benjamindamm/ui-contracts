@@ -1,0 +1,11 @@
+# OpenUI: unabhängiger einfacher Interface-Teilbeitrag
+
+25. Oktober2026. **X01 A/C524**, eng begrenzt auf den einfachen String-Property-Beitrag des tatsächlichen interfaces/Spec.ts am Pin09d39b211dcaa2e227ed38e312c8822e193cfea9. **X06/C484 bleibt U**: Der Versuch entscheidet keine kanonische Vorrangregel zwischen den widersprüchlichen Originaldefinitionen.
+
+Die frühere tatsächlich gelesene unveränderte Originaltypdefinition wird vollständig als Importtyp verwendet. Eigene JSON-Literalrepräsentationen enthalten name/version/description/license und Input.description/group/props.value mit type/default/description. Zusatzbindung über TypeScript5.9.3, kein nativer ursprünglicher JSON-Validator. Die einfachen Stringfelder werden genutzt; umstrittene enum/required-Sonderformen werden nicht repariert oder als kanonisch ausgewählt. Der Nachweis ist für den ausdrücklich benannten originalen Typgegenstand, keine Aussage über jede OpenUI-Publikation.
+
+Vier getrennte Originalsyntaxartefakte: OpenUI-Interface, SCXML-Behavior, CSS-Visual und HTML/ARIA-Accessibility. Der zusätzliche Binder ordnet /components/Input/props/value string/default alpha dem tatsächlichen SCXML-Datamodelinitialwert alpha sowie dem eigenen A/B-Inputkontext zu. CSS führt Popupteile/Geometrie, HTML die Rollen/Namen/Beziehungen. group/description sind Interface-Metadaten; es werden keine fremden Zustands-/Style-/A11y-Masterdefinitionen gefordert.
+
+Kontrolle und alleinige Interface-Beschreibungsrevision bestehen beide die zusätzliche Bindung an den unveränderten Originaltyp. Die drei anderen Fachquellen bleiben bytegleich; Initialwert und Typbezug bleiben erhalten. [Erwartungen](cases.json), [Ergebnisse](results.json). Das ist eine statische gemeinsame Beschreibung, keine öffentliche Eventroute, tatsächliche Widgetausführung, Originalschemavalidierung oder DOM-/AT-Prüfung.
+
+Reproduktion: prepare.py gewinnt den tatsächlich früher gelesenen Originaltext aus der erhaltenen Originalcapture; run.cjs bindet zwei Literale an genau diesen Originaltyp. Originaltyp nicht als eigene Implementierung verteilen; der Manifesthash und ursprüngliche URL erlauben die Bereitstellung. Keine stillschweigende Reparatur oder Herausgeberentscheidung, kein Commit/Push.

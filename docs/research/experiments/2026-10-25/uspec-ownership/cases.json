@@ -1,0 +1,62 @@
+[
+  {
+    "id": "baseline",
+    "expected": {
+      "accepted": true
+    }
+  },
+  {
+    "id": "renderer-hash-conflict",
+    "expected": {
+      "accepted": false
+    }
+  },
+  {
+    "id": "plan-hash-conflict",
+    "expected": {
+      "accepted": false
+    }
+  },
+  {
+    "id": "plan-slug-conflict",
+    "expected": {
+      "accepted": false
+    }
+  },
+  {
+    "id": "cross-specialist-identity",
+    "expected": {
+      "accepted": false
+    }
+  },
+  {
+    "id": "api-dictionary-name-conflict",
+    "expected": {
+      "accepted": false
+    }
+  },
+  {
+    "id": "specialist-hash-drift",
+    "expected": {
+      "accepted": true
+    }
+  },
+  {
+    "id": "measured-value-conflict",
+    "expected": {
+      "bothValuesRetained": true
+    }
+  },
+  {
+    "id": "cache-source-preserved",
+    "expected": {
+      "unchanged": true
+    }
+  },
+  {
+    "id": "canonical-load-after-cache-change",
+    "expected": {
+      "accepted": true
+    }
+  }
+]

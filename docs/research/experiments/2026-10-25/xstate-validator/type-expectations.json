@@ -1,0 +1,1 @@
+[{"id":"sdk-valid-types","file":"valid-sdk.ts","expectedDiagnostics":0},{"id":"sdk-wrong-context-type","file":"invalid-context-sdk.ts","expectedCodes":[2322]},{"id":"sdk-wrong-event-payload","file":"invalid-event-sdk.ts","expectedCodes":[2322]}]

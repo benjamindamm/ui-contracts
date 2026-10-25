@@ -1,0 +1,1180 @@
+{
+  "node": "v24.22.1",
+  "typescript": "5.9.3",
+  "sourceModified": false,
+  "transpilation": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "files": [
+      "bundler.ts",
+      "compile.ts",
+      "diagnostics.ts",
+      "import-resolver.ts",
+      "resolve.ts",
+      "state-paths.ts"
+    ],
+    "semantic_typecheck": false
+  },
+  "pathNormalization": "Absolute fixture-root paths replaced with <probe-root> in recorded output; contents and diagnostics otherwise preserved",
+  "uiRendered": false,
+  "actorRuntimeExecuted": false,
+  "cases": [
+    {
+      "id": "ref-01-local-control",
+      "inputs": [
+        "fixtures/ref-01-local-control/app.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "library",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            },
+            "$visual": {
+              "slots": {
+                "content": [
+                  {
+                    "type": "group",
+                    "children": [
+                      {
+                        "type": "text",
+                        "content": "LIBRARY"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "$elements": {
+            "Outer": {
+              "type": "group",
+              "children": [
+                {
+                  "type": "text",
+                  "content": "LIBRARY"
+                }
+              ]
+            },
+            "Inner": {
+              "type": "text",
+              "content": "LIBRARY"
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "resolve",
+            "kind": "ref",
+            "path": "$.$machine.$visual.slots.content[0]",
+            "input": "Outer"
+          },
+          {
+            "phase": "resolve",
+            "kind": "ref",
+            "path": "$.$machine.$visual.slots.content[0].children[0]",
+            "input": "Inner"
+          },
+          {
+            "phase": "resolve",
+            "kind": "ref",
+            "path": "$.$elements.Outer.children[0]",
+            "input": "Inner"
+          }
+        ],
+        "namespaces": {}
+      },
+      "observation": {
+        "childContent": "LIBRARY",
+        "issueCodes": []
+      },
+      "criterion": "Lokale Unterreferenz erhält LIBRARY",
+      "criterion_met": true,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-01-local-control/app.json",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "id": "ref-02-imported-shadowing",
+      "inputs": [
+        "fixtures/ref-02-imported-shadowing/app.json",
+        "fixtures/ref-02-imported-shadowing/library.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "app",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            },
+            "$visual": {
+              "slots": {
+                "content": [
+                  {
+                    "type": "group",
+                    "children": [
+                      {
+                        "type": "text",
+                        "content": "APP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "$imports": {
+            "lib": {
+              "from": "./library.json",
+              "elements": true,
+              "tokens": true
+            }
+          },
+          "$elements": {
+            "Inner": {
+              "type": "text",
+              "content": "APP"
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.lib",
+            "input": "./library.json",
+            "output": "<probe-root>/fixtures/ref-02-imported-shadowing/library.json",
+            "status": "ok"
+          },
+          {
+            "phase": "resolve",
+            "kind": "ref",
+            "path": "$.$machine.$visual.slots.content[0]",
+            "input": "lib:Outer"
+          },
+          {
+            "phase": "resolve",
+            "kind": "ref",
+            "path": "$.$machine.$visual.slots.content[0].children[0]",
+            "input": "Inner"
+          }
+        ],
+        "namespaces": {
+          "lib": {
+            "alias": "lib",
+            "sourcePath": "<probe-root>/fixtures/ref-02-imported-shadowing/library.json",
+            "elements": {
+              "Outer": {
+                "type": "group",
+                "children": [
+                  {
+                    "$ref": "Inner"
+                  }
+                ]
+              },
+              "Inner": {
+                "type": "text",
+                "content": "LIBRARY"
+              }
+            }
+          }
+        }
+      },
+      "observation": {
+        "childContent": "APP",
+        "issueCodes": []
+      },
+      "criterion": "Importierte Unterreferenz behält Bibliotheksziel trotz gleichnamigem Appziel",
+      "criterion_met": false,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-02-imported-shadowing/app.json",
+          "valid": false
+        },
+        {
+          "input": "fixtures/ref-02-imported-shadowing/library.json",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "id": "ref-03-imported-no-local",
+      "inputs": [
+        "fixtures/ref-03-imported-no-local/app.json",
+        "fixtures/ref-03-imported-no-local/library.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "app",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            },
+            "$visual": {
+              "slots": {
+                "content": [
+                  {
+                    "type": "group",
+                    "children": [
+                      {
+                        "$ref": "Inner"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "$imports": {
+            "lib": {
+              "from": "./library.json",
+              "elements": true,
+              "tokens": true
+            }
+          }
+        },
+        "issues": [
+          {
+            "code": "UNKNOWN_ELEMENT_REFERENCE",
+            "message": "Unknown element reference: Inner",
+            "path": "$.$machine.$visual.slots.content[0].children[0]",
+            "phase": "resolve"
+          }
+        ],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.lib",
+            "input": "./library.json",
+            "output": "<probe-root>/fixtures/ref-03-imported-no-local/library.json",
+            "status": "ok"
+          },
+          {
+            "phase": "resolve",
+            "kind": "ref",
+            "path": "$.$machine.$visual.slots.content[0]",
+            "input": "lib:Outer"
+          }
+        ],
+        "namespaces": {
+          "lib": {
+            "alias": "lib",
+            "sourcePath": "<probe-root>/fixtures/ref-03-imported-no-local/library.json",
+            "elements": {
+              "Outer": {
+                "type": "group",
+                "children": [
+                  {
+                    "$ref": "Inner"
+                  }
+                ]
+              },
+              "Inner": {
+                "type": "text",
+                "content": "LIBRARY"
+              }
+            }
+          }
+        }
+      },
+      "observation": {
+        "childContent": null,
+        "issueCodes": [
+          "UNKNOWN_ELEMENT_REFERENCE"
+        ]
+      },
+      "criterion": "Importierte Unterreferenz wird in ihrer Bibliothek aufgelöst",
+      "criterion_met": false,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-03-imported-no-local/app.json",
+          "valid": false
+        },
+        {
+          "input": "fixtures/ref-03-imported-no-local/library.json",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "id": "ref-04-missing-import-area",
+      "inputs": [
+        "fixtures/ref-04-missing-import-area/app.json",
+        "fixtures/ref-04-missing-import-area/empty.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "app",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            }
+          },
+          "$imports": {
+            "lib": {
+              "from": "./empty.json",
+              "tokens": true
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.lib",
+            "input": "./empty.json",
+            "output": "<probe-root>/fixtures/ref-04-missing-import-area/empty.json",
+            "status": "ok"
+          }
+        ],
+        "namespaces": {
+          "lib": {
+            "alias": "lib",
+            "sourcePath": "<probe-root>/fixtures/ref-04-missing-import-area/empty.json"
+          }
+        }
+      },
+      "observation": {
+        "issueCodes": [],
+        "namespaceHasTokens": false
+      },
+      "criterion": "Angeforderter, fehlender Bereich wird diagnostiziert",
+      "criterion_met": false,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-04-missing-import-area/app.json",
+          "valid": true
+        },
+        {
+          "input": "fixtures/ref-04-missing-import-area/empty.json",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "ref-05-missing-file-control",
+      "inputs": [
+        "fixtures/ref-05-missing-file-control/app.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "app",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            }
+          },
+          "$imports": {
+            "lib": {
+              "from": "./missing.json",
+              "tokens": true
+            }
+          }
+        },
+        "issues": [
+          {
+            "code": "IMPORT_NOT_FOUND",
+            "message": "Cannot read import \"lib\": ENOENT: no such file or directory, open '<probe-root>/fixtures/ref-05-missing-file-control/missing.json'",
+            "path": "$imports.lib.from",
+            "phase": "import"
+          }
+        ],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.lib.from",
+            "input": "./missing.json",
+            "code": "IMPORT_NOT_FOUND",
+            "detail": "ENOENT: no such file or directory, open '<probe-root>/fixtures/ref-05-missing-file-control/missing.json'",
+            "status": "error"
+          }
+        ],
+        "namespaces": {}
+      },
+      "observation": {
+        "issueCodes": [
+          "IMPORT_NOT_FOUND"
+        ]
+      },
+      "criterion": "Fehlende Datei erzeugt IMPORT_NOT_FOUND",
+      "criterion_met": true,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-05-missing-file-control/app.json",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "ref-06-original-cem-target",
+      "inputs": [
+        "fixtures/ref-06-original-cem-target/app.json",
+        "fixtures/ref-06-original-cem-target/cem.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "app",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            },
+            "$visual": {
+              "slots": {
+                "content": [
+                  {
+                    "$ref": "api:Autocomplete"
+                  }
+                ]
+              }
+            }
+          },
+          "$imports": {
+            "api": {
+              "from": "./cem.json",
+              "elements": true
+            }
+          }
+        },
+        "issues": [
+          {
+            "code": "UNKNOWN_IMPORTED_ELEMENT_REFERENCE",
+            "message": "Unknown imported element reference: api:Autocomplete",
+            "path": "$.$machine.$visual.slots.content[0]",
+            "phase": "resolve"
+          }
+        ],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.api",
+            "input": "./cem.json",
+            "output": "<probe-root>/fixtures/ref-06-original-cem-target/cem.json",
+            "status": "ok"
+          }
+        ],
+        "namespaces": {
+          "api": {
+            "alias": "api",
+            "sourcePath": "<probe-root>/fixtures/ref-06-original-cem-target/cem.json"
+          }
+        }
+      },
+      "observation": {
+        "issueCodes": [
+          "UNKNOWN_IMPORTED_ELEMENT_REFERENCE"
+        ],
+        "namespaceHasElements": false
+      },
+      "criterion": "Grenzfall: originales Fremdformat wird nicht ohne Adapter als UXSpec-Element aufgelöst",
+      "criterion_met": true,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-06-original-cem-target/app.json",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "id": "ref-07-unit-value",
+      "inputs": [
+        "fixtures/ref-07-unit-value/app.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "app",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            },
+            "$visual": {
+              "container": {
+                "padding": 1
+              }
+            }
+          },
+          "$tokens": {
+            "gap": {
+              "$type": "dimension",
+              "$value": {
+                "value": 1,
+                "unit": "rem"
+              }
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "resolve",
+            "kind": "token",
+            "path": "$.$machine.$visual.container.padding",
+            "input": "{gap}",
+            "output": "1"
+          }
+        ],
+        "namespaces": {}
+      },
+      "observation": {
+        "resolvedPadding": 1,
+        "issueCodes": []
+      },
+      "criterion": "Bedeutungstragende Einheit bleibt bei der Tokenauflösung erhalten",
+      "criterion_met": false,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-07-unit-value/app.json",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "ref-08-separate-expansions",
+      "inputs": [
+        "fixtures/ref-08-separate-expansions/app.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "app",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            },
+            "$visual": {
+              "slots": {
+                "content": [
+                  {
+                    "type": "text",
+                    "content": "changed-A",
+                    "label": "A"
+                  },
+                  {
+                    "type": "text",
+                    "content": "B",
+                    "label": "B"
+                  }
+                ]
+              }
+            }
+          },
+          "$elements": {
+            "Label": {
+              "type": "text",
+              "params": [
+                "label"
+              ],
+              "content": [
+                "param",
+                "label"
+              ]
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "resolve",
+            "kind": "ref",
+            "path": "$.$machine.$visual.slots.content[0]",
+            "input": "Label"
+          },
+          {
+            "phase": "resolve",
+            "kind": "ref",
+            "path": "$.$machine.$visual.slots.content[1]",
+            "input": "Label"
+          }
+        ],
+        "namespaces": {},
+        "before": [
+          {
+            "type": "text",
+            "content": "A",
+            "label": "A"
+          },
+          {
+            "type": "text",
+            "content": "B",
+            "label": "B"
+          }
+        ],
+        "after": [
+          {
+            "type": "text",
+            "content": "changed-A",
+            "label": "A"
+          },
+          {
+            "type": "text",
+            "content": "B",
+            "label": "B"
+          }
+        ]
+      },
+      "observation": {
+        "before": [
+          {
+            "type": "text",
+            "content": "A",
+            "label": "A"
+          },
+          {
+            "type": "text",
+            "content": "B",
+            "label": "B"
+          }
+        ],
+        "after": [
+          {
+            "type": "text",
+            "content": "changed-A",
+            "label": "A"
+          },
+          {
+            "type": "text",
+            "content": "B",
+            "label": "B"
+          }
+        ],
+        "issueCodes": []
+      },
+      "criterion": "Statische Expansionen A/B besitzen getrennte kopierte Werte",
+      "criterion_met": true,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-08-separate-expansions/app.json",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "id": "bundle-01-unique-ids",
+      "inputs": [
+        "fixtures/bundle-01-unique-ids/app.json",
+        "fixtures/bundle-01-unique-ids/a.json",
+        "fixtures/bundle-01-unique-ids/b.json"
+      ],
+      "output": {
+        "ok": true,
+        "bundled": {
+          "$format": "uxspec-bundled",
+          "$version": "0.2",
+          "entry": "root",
+          "modules": {
+            "root": {
+              "$format": "uxspec-compiled",
+              "$version": "0.2",
+              "initial": "idle",
+              "contextSchema": {},
+              "eventSchema": {},
+              "states": {
+                "idle": {
+                  "path": "idle",
+                  "visual": {},
+                  "transitions": [],
+                  "entry": [],
+                  "exit": [],
+                  "invoke": []
+                }
+              },
+              "assertions": []
+            },
+            "child-a": {
+              "$format": "uxspec-compiled",
+              "$version": "0.2",
+              "initial": "idle",
+              "contextSchema": {
+                "label": {
+                  "type": "string",
+                  "default": "A"
+                }
+              },
+              "eventSchema": {},
+              "states": {
+                "idle": {
+                  "path": "idle",
+                  "visual": {},
+                  "transitions": [],
+                  "entry": [],
+                  "exit": [],
+                  "invoke": []
+                }
+              },
+              "assertions": []
+            },
+            "child-b": {
+              "$format": "uxspec-compiled",
+              "$version": "0.2",
+              "initial": "idle",
+              "contextSchema": {
+                "label": {
+                  "type": "string",
+                  "default": "B"
+                }
+              },
+              "eventSchema": {},
+              "states": {
+                "idle": {
+                  "path": "idle",
+                  "visual": {},
+                  "transitions": [],
+                  "entry": [],
+                  "exit": [],
+                  "invoke": []
+                }
+              },
+              "assertions": []
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.a",
+            "input": "./a.json",
+            "output": "<probe-root>/fixtures/bundle-01-unique-ids/a.json",
+            "status": "ok"
+          },
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.b",
+            "input": "./b.json",
+            "output": "<probe-root>/fixtures/bundle-01-unique-ids/b.json",
+            "status": "ok"
+          }
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "moduleIds": [
+          "root",
+          "child-a",
+          "child-b"
+        ],
+        "issueCodes": []
+      },
+      "criterion": "Drei unterschiedliche Module bleiben vollständig enthalten",
+      "criterion_met": true,
+      "schema_preflight": [
+        {
+          "input": "fixtures/bundle-01-unique-ids/app.json",
+          "valid": true
+        },
+        {
+          "input": "fixtures/bundle-01-unique-ids/a.json",
+          "valid": true
+        },
+        {
+          "input": "fixtures/bundle-01-unique-ids/b.json",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "bundle-02-duplicate-child-id",
+      "inputs": [
+        "fixtures/bundle-02-duplicate-child-id/app.json",
+        "fixtures/bundle-02-duplicate-child-id/a.json",
+        "fixtures/bundle-02-duplicate-child-id/b.json"
+      ],
+      "output": {
+        "ok": true,
+        "bundled": {
+          "$format": "uxspec-bundled",
+          "$version": "0.2",
+          "entry": "root",
+          "modules": {
+            "root": {
+              "$format": "uxspec-compiled",
+              "$version": "0.2",
+              "initial": "idle",
+              "contextSchema": {},
+              "eventSchema": {},
+              "states": {
+                "idle": {
+                  "path": "idle",
+                  "visual": {},
+                  "transitions": [],
+                  "entry": [],
+                  "exit": [],
+                  "invoke": []
+                }
+              },
+              "assertions": []
+            },
+            "shared": {
+              "$format": "uxspec-compiled",
+              "$version": "0.2",
+              "initial": "idle",
+              "contextSchema": {
+                "label": {
+                  "type": "string",
+                  "default": "B"
+                }
+              },
+              "eventSchema": {},
+              "states": {
+                "idle": {
+                  "path": "idle",
+                  "visual": {},
+                  "transitions": [],
+                  "entry": [],
+                  "exit": [],
+                  "invoke": []
+                }
+              },
+              "assertions": []
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.a",
+            "input": "./a.json",
+            "output": "<probe-root>/fixtures/bundle-02-duplicate-child-id/a.json",
+            "status": "ok"
+          },
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.b",
+            "input": "./b.json",
+            "output": "<probe-root>/fixtures/bundle-02-duplicate-child-id/b.json",
+            "status": "ok"
+          }
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "moduleIds": [
+          "root",
+          "shared"
+        ],
+        "sharedDefault": "B",
+        "issueCodes": []
+      },
+      "criterion": "Doppelte Maschinen-IDs werden abgewiesen statt still überschrieben",
+      "criterion_met": false,
+      "schema_preflight": [
+        {
+          "input": "fixtures/bundle-02-duplicate-child-id/app.json",
+          "valid": true
+        },
+        {
+          "input": "fixtures/bundle-02-duplicate-child-id/a.json",
+          "valid": true
+        },
+        {
+          "input": "fixtures/bundle-02-duplicate-child-id/b.json",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "bundle-03-entry-id-collision",
+      "inputs": [
+        "fixtures/bundle-03-entry-id-collision/app.json",
+        "fixtures/bundle-03-entry-id-collision/a.json"
+      ],
+      "output": {
+        "ok": true,
+        "bundled": {
+          "$format": "uxspec-bundled",
+          "$version": "0.2",
+          "entry": "shared",
+          "modules": {
+            "shared": {
+              "$format": "uxspec-compiled",
+              "$version": "0.2",
+              "initial": "idle",
+              "contextSchema": {
+                "label": {
+                  "type": "string",
+                  "default": "A"
+                }
+              },
+              "eventSchema": {},
+              "states": {
+                "idle": {
+                  "path": "idle",
+                  "visual": {},
+                  "transitions": [],
+                  "entry": [],
+                  "exit": [],
+                  "invoke": []
+                }
+              },
+              "assertions": []
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.a",
+            "input": "./a.json",
+            "output": "<probe-root>/fixtures/bundle-03-entry-id-collision/a.json",
+            "status": "ok"
+          }
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "entry": "shared",
+        "moduleIds": [
+          "shared"
+        ],
+        "entryDefault": "A",
+        "issueCodes": []
+      },
+      "criterion": "Eintrittsmodul kann nicht still durch gleichnamige Abhängigkeit ersetzt werden",
+      "criterion_met": false,
+      "schema_preflight": [
+        {
+          "input": "fixtures/bundle-03-entry-id-collision/app.json",
+          "valid": true
+        },
+        {
+          "input": "fixtures/bundle-03-entry-id-collision/a.json",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "bundle-04-transitive-child",
+      "inputs": [
+        "fixtures/bundle-04-transitive-child/app.json",
+        "fixtures/bundle-04-transitive-child/child.json",
+        "fixtures/bundle-04-transitive-child/grand.json"
+      ],
+      "output": {
+        "ok": true,
+        "bundled": {
+          "$format": "uxspec-bundled",
+          "$version": "0.2",
+          "entry": "parent",
+          "modules": {
+            "parent": {
+              "$format": "uxspec-compiled",
+              "$version": "0.2",
+              "initial": "idle",
+              "contextSchema": {},
+              "eventSchema": {},
+              "states": {
+                "idle": {
+                  "path": "idle",
+                  "visual": {},
+                  "transitions": [],
+                  "entry": [],
+                  "exit": [],
+                  "invoke": []
+                }
+              },
+              "assertions": []
+            },
+            "child": {
+              "$format": "uxspec-compiled",
+              "$version": "0.2",
+              "initial": "idle",
+              "contextSchema": {},
+              "eventSchema": {},
+              "states": {
+                "idle": {
+                  "path": "idle",
+                  "visual": {},
+                  "transitions": [],
+                  "entry": [],
+                  "exit": [],
+                  "invoke": [
+                    {
+                      "kind": "machine",
+                      "src": "grand",
+                      "id": "grand-use"
+                    }
+                  ]
+                }
+              },
+              "assertions": [],
+              "dependencies": {
+                "grand-use": {
+                  "from": "<probe-root>/fixtures/bundle-04-transitive-child/grand.json",
+                  "kind": "machine"
+                }
+              }
+            }
+          }
+        },
+        "issues": [],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.child",
+            "input": "./child.json",
+            "output": "<probe-root>/fixtures/bundle-04-transitive-child/child.json",
+            "status": "ok"
+          }
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "moduleIds": [
+          "parent",
+          "child"
+        ],
+        "childDependencies": {
+          "grand-use": {
+            "from": "<probe-root>/fixtures/bundle-04-transitive-child/grand.json",
+            "kind": "machine"
+          }
+        },
+        "issueCodes": []
+      },
+      "criterion": "Tatsächlich referenzierte Großkindmaschine bleibt im Bundle auflösbar",
+      "criterion_met": false,
+      "schema_preflight": [
+        {
+          "input": "fixtures/bundle-04-transitive-child/app.json",
+          "valid": true
+        },
+        {
+          "input": "fixtures/bundle-04-transitive-child/child.json",
+          "valid": false
+        },
+        {
+          "input": "fixtures/bundle-04-transitive-child/grand.json",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "ref-09-element-cycle",
+      "inputs": [
+        "fixtures/ref-09-element-cycle/app.json"
+      ],
+      "output": {
+        "thrown": {
+          "name": "RangeError",
+          "message": "Maximum call stack size exceeded"
+        }
+      },
+      "observation": {
+        "thrown": {
+          "name": "RangeError",
+          "message": "Maximum call stack size exceeded"
+        }
+      },
+      "criterion": "Unauflösbare Elementrekursion ergibt strukturierte Diagnose statt Stackfehler",
+      "criterion_met": false,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-09-element-cycle/app.json",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "id": "ref-10-file-self-cycle-control",
+      "inputs": [
+        "fixtures/ref-10-file-self-cycle-control/app.json"
+      ],
+      "output": {
+        "resolved": {
+          "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+          "$description": "Isolated reference proof fixture",
+          "$machine": {
+            "id": "app",
+            "initial": "idle",
+            "states": {
+              "idle": {}
+            }
+          },
+          "$imports": {
+            "self": {
+              "from": "./app.json",
+              "machine": true
+            }
+          }
+        },
+        "issues": [
+          {
+            "code": "IMPORT_CYCLE",
+            "message": "Import cycle detected: \"self\" (./app.json)",
+            "path": "$imports.self",
+            "phase": "import"
+          }
+        ],
+        "trace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.self",
+            "input": "./app.json",
+            "code": "IMPORT_CYCLE",
+            "detail": "Cycle: file already in ancestor chain",
+            "status": "error"
+          }
+        ],
+        "namespaces": {}
+      },
+      "observation": {
+        "issueCodes": [
+          "IMPORT_CYCLE"
+        ]
+      },
+      "criterion": "Direkter Datei-Selbstimport wird als IMPORT_CYCLE erkannt",
+      "criterion_met": true,
+      "schema_preflight": [
+        {
+          "input": "fixtures/ref-10-file-self-cycle-control/app.json",
+          "valid": true
+        }
+      ]
+    }
+  ],
+  "assessment_note": "Explorative Ausführung; die Akzeptanzkriterien wurden anschließend explizit gegen die gespeicherten Outputs ausgewertet. Keine unabhängige Replikation und keine nachträglich behauptete Präregistrierung. Die vorangehenden E2-Befunde C390/C391/C395 enthalten bereits Hypothesen für Teilfälle.",
+  "criteria_met": 6,
+  "criteria_not_met": 8
+}

@@ -1,0 +1,88 @@
+{
+  "axeVersion": "4.14.0",
+  "cssSupportsAnchor": true,
+  "geometry": [
+    {
+      "expectationMet": true,
+      "gapPx": 8,
+      "input": {
+        "bottom": 29.5,
+        "height": 21.5,
+        "left": 61.78125,
+        "top": 8,
+        "width": 147
+      },
+      "instance": "a",
+      "maxHeight": "160px",
+      "overflowY": "auto",
+      "popup": {
+        "clientHeight": 160,
+        "height": 160,
+        "left": 61.78125,
+        "scrollHeight": 224,
+        "top": 37.5,
+        "width": 82.3984375
+      },
+      "rowHeights": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "expectationMet": true,
+      "gapPx": 8,
+      "input": {
+        "bottom": 311,
+        "height": 21.5,
+        "left": 61.7734375,
+        "top": 289.5,
+        "width": 147
+      },
+      "instance": "b",
+      "maxHeight": "160px",
+      "overflowY": "auto",
+      "popup": {
+        "clientHeight": 160,
+        "height": 160,
+        "left": 61.7734375,
+        "scrollHeight": 224,
+        "top": 319,
+        "width": 83.265625
+      },
+      "rowHeights": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ]
+    }
+  ],
+  "host": {
+    "expectationMet": true,
+    "inapplicable": [
+      "aria-input-field-name"
+    ],
+    "incomplete": [],
+    "passes": [
+      "aria-allowed-attr",
+      "aria-required-attr",
+      "aria-required-children",
+      "aria-required-parent",
+      "aria-valid-attr-value",
+      "aria-valid-attr",
+      "duplicate-id-aria",
+      "label"
+    ],
+    "violations": []
+  },
+  "limits": "Static snapshot only. No event dispatch, actor, keyboard, focus, screenreader or native platform test.",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

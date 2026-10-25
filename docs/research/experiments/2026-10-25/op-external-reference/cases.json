@@ -1,0 +1,90 @@
+[
+  {
+    "id": "external-boolean-reference",
+    "mutation": "none",
+    "expected": {
+      "accepted": true,
+      "errorClass": null
+    }
+  },
+  {
+    "id": "wrong-target-kind",
+    "mutation": "target",
+    "expected": {
+      "accepted": false,
+      "errorClass": "interface-target-kind"
+    }
+  },
+  {
+    "id": "wrong-interface-type",
+    "mutation": "type",
+    "expected": {
+      "accepted": false,
+      "errorClass": "interface-boolean-type"
+    }
+  },
+  {
+    "id": "stale-interface-revision",
+    "mutation": "stale",
+    "expected": {
+      "accepted": false,
+      "errorClass": "stale-interface"
+    }
+  },
+  {
+    "id": "foreign-owner",
+    "mutation": "owner",
+    "expected": {
+      "accepted": false,
+      "errorClass": "owner-scope"
+    }
+  },
+  {
+    "id": "wrong-original-property-type",
+    "mutation": "graph-type",
+    "expected": {
+      "accepted": false,
+      "errorClass": "original-resolver"
+    }
+  },
+  {
+    "id": "missing-original-property",
+    "mutation": "missing",
+    "expected": {
+      "accepted": false,
+      "errorClass": "original-resolver"
+    }
+  },
+  {
+    "id": "ambiguous-original-property-name",
+    "mutation": "ambiguous",
+    "expected": {
+      "accepted": false,
+      "errorClass": "ambiguous-original-name"
+    }
+  },
+  {
+    "id": "removed-stored-binding",
+    "mutation": "removed",
+    "expected": {
+      "accepted": false,
+      "errorClass": "missing-original-binding"
+    }
+  },
+  {
+    "id": "renamed-original-property",
+    "mutation": "rename",
+    "expected": {
+      "accepted": true,
+      "errorClass": null
+    }
+  },
+  {
+    "id": "stale-graph-revision",
+    "mutation": "stale-graph",
+    "expected": {
+      "accepted": false,
+      "errorClass": "stale-graph"
+    }
+  }
+]

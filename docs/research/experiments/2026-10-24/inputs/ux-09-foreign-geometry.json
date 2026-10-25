@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+  "$description": "Isolated original-schema probe",
+  "$context": {
+    "value": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "$machine": {
+    "id": "probe",
+    "initial": "closed",
+    "states": {
+      "closed": {
+        "on": {
+          "OPEN": {
+            "target": "open"
+          }
+        }
+      },
+      "open": {}
+    },
+    "$visual": {
+      "container": {
+        "layout": "layer",
+        "anchorTarget": "missing-input",
+        "placement": "bottom",
+        "offset": {
+          "value": 8,
+          "unit": "px"
+        },
+        "overflowY": "auto",
+        "size": {
+          "maxHeight": 160
+        }
+      }
+    }
+  }
+}

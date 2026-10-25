@@ -1,0 +1,370 @@
+{
+  "scope": "Unmodified published original SceneGraph updates and complete sceneNodeToDesignDocument/serializeHTML APIs; fixed clip/geometry policies, no anchor relation invented",
+  "sourcePackages": [
+    "@open-pencil/scene-graph@0.16.0",
+    "@open-pencil/dom-css@0.16.0"
+  ],
+  "originalCodeModified": false,
+  "fullOriginalProjectionExecuted": true,
+  "fullOriginalHTMLSerializerExecuted": true,
+  "fullEditorOrLayoutResizeEngineExecuted": false,
+  "cases": [
+    {
+      "id": "fixed-hidden",
+      "kind": "scroll",
+      "clip": true,
+      "height": 60,
+      "maxHeight": null,
+      "expectedOverflow": "hidden",
+      "expectedClientHeight": 60,
+      "expectedScroll": [
+        80,
+        80
+      ],
+      "nodes": {
+        "root": "case-3",
+        "content": "case-4"
+      },
+      "projected": {
+        "root": {
+          "sourceSceneNodeId": "case-3",
+          "attrs": {
+            "data-open-pencil-node-id": "case-3"
+          },
+          "style": {
+            "width": "180px",
+            "height": "60px",
+            "position": "relative",
+            "overflow": "hidden"
+          }
+        },
+        "content": {
+          "sourceSceneNodeId": "case-4",
+          "attrs": {
+            "data-open-pencil-node-id": "case-4"
+          },
+          "style": {
+            "width": "300px",
+            "height": "300px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        }
+      },
+      "html": "<div data-open-pencil-node-id=\"case-3\" style=\"width: 180px; height: 60px; position: relative; overflow: hidden\"><div data-open-pencil-node-id=\"case-4\" style=\"width: 300px; height: 300px; position: absolute; left: 0px; top: 0px\"></div></div>",
+      "htmlSha256": "d3de87a8e362aa4f98e5de27d739ccb4e03eb11b8340e11b7aa1997d9a51e806",
+      "expectationMet": true
+    },
+    {
+      "id": "fixed-visible",
+      "kind": "scroll",
+      "clip": false,
+      "height": 60,
+      "maxHeight": null,
+      "expectedOverflow": "visible",
+      "expectedClientHeight": 60,
+      "expectedScroll": [
+        0,
+        0
+      ],
+      "nodes": {
+        "root": "case-3",
+        "content": "case-4"
+      },
+      "projected": {
+        "root": {
+          "sourceSceneNodeId": "case-3",
+          "attrs": {
+            "data-open-pencil-node-id": "case-3"
+          },
+          "style": {
+            "width": "180px",
+            "height": "60px",
+            "position": "relative"
+          }
+        },
+        "content": {
+          "sourceSceneNodeId": "case-4",
+          "attrs": {
+            "data-open-pencil-node-id": "case-4"
+          },
+          "style": {
+            "width": "300px",
+            "height": "300px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        }
+      },
+      "html": "<div data-open-pencil-node-id=\"case-3\" style=\"width: 180px; height: 60px; position: relative\"><div data-open-pencil-node-id=\"case-4\" style=\"width: 300px; height: 300px; position: absolute; left: 0px; top: 0px\"></div></div>",
+      "htmlSha256": "9d91bbafeb4a0b0c2927f1a819caf05d6581e492230d8fb6620f98edd35d7eb4",
+      "expectationMet": true
+    },
+    {
+      "id": "maxheight-hidden",
+      "kind": "scroll",
+      "clip": true,
+      "height": 300,
+      "maxHeight": 60,
+      "expectedOverflow": "hidden",
+      "expectedClientHeight": 60,
+      "expectedScroll": [
+        80,
+        80
+      ],
+      "nodes": {
+        "root": "case-3",
+        "content": "case-4"
+      },
+      "projected": {
+        "root": {
+          "sourceSceneNodeId": "case-3",
+          "attrs": {
+            "data-open-pencil-node-id": "case-3"
+          },
+          "style": {
+            "width": "180px",
+            "height": "300px",
+            "position": "relative",
+            "max-height": "60px",
+            "overflow": "hidden"
+          }
+        },
+        "content": {
+          "sourceSceneNodeId": "case-4",
+          "attrs": {
+            "data-open-pencil-node-id": "case-4"
+          },
+          "style": {
+            "width": "300px",
+            "height": "300px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        }
+      },
+      "html": "<div data-open-pencil-node-id=\"case-3\" style=\"width: 180px; height: 300px; position: relative; max-height: 60px; overflow: hidden\"><div data-open-pencil-node-id=\"case-4\" style=\"width: 300px; height: 300px; position: absolute; left: 0px; top: 0px\"></div></div>",
+      "htmlSha256": "33346e3103e37e37a4d39d42f8dfe714107d5d3d607148f783536517d71b87b1",
+      "expectationMet": true
+    },
+    {
+      "id": "relative-baseline",
+      "kind": "geometry",
+      "inputHeight": 20,
+      "parentX": 0,
+      "parentY": 0,
+      "popupY": 28,
+      "desiredGap": 8,
+      "expectedGap": 8,
+      "expectedDesiredRelationSatisfied": true,
+      "nodes": {
+        "root": "case-3",
+        "stage": "case-4",
+        "input": "case-5",
+        "popup": "case-6"
+      },
+      "projected": {
+        "root": {
+          "sourceSceneNodeId": "case-3",
+          "attrs": {
+            "data-open-pencil-node-id": "case-3"
+          },
+          "style": {
+            "width": "280px",
+            "height": "220px",
+            "position": "relative"
+          }
+        },
+        "stage": {
+          "sourceSceneNodeId": "case-4",
+          "attrs": {
+            "data-open-pencil-node-id": "case-4"
+          },
+          "style": {
+            "width": "180px",
+            "height": "120px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        },
+        "input": {
+          "sourceSceneNodeId": "case-5",
+          "attrs": {
+            "data-open-pencil-node-id": "case-5"
+          },
+          "style": {
+            "width": "140px",
+            "height": "20px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        },
+        "popup": {
+          "sourceSceneNodeId": "case-6",
+          "attrs": {
+            "data-open-pencil-node-id": "case-6"
+          },
+          "style": {
+            "width": "140px",
+            "height": "60px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "28px"
+          }
+        }
+      },
+      "html": "<div data-open-pencil-node-id=\"case-3\" style=\"width: 280px; height: 220px; position: relative\"><div data-open-pencil-node-id=\"case-4\" style=\"width: 180px; height: 120px; position: absolute; left: 0px; top: 0px\"><div data-open-pencil-node-id=\"case-5\" style=\"width: 140px; height: 20px; position: absolute; left: 0px; top: 0px\"></div><div data-open-pencil-node-id=\"case-6\" style=\"width: 140px; height: 60px; position: absolute; left: 0px; top: 28px\"></div></div></div>",
+      "htmlSha256": "94d020eab8fd5fd7b270e741f894ce47e40998e18ed7cc9d9d04a7cbab8405de",
+      "expectationMet": true
+    },
+    {
+      "id": "input-height-growth",
+      "kind": "geometry",
+      "inputHeight": 40,
+      "parentX": 0,
+      "parentY": 0,
+      "popupY": 28,
+      "desiredGap": 8,
+      "expectedGap": -12,
+      "expectedDesiredRelationSatisfied": false,
+      "nodes": {
+        "root": "case-3",
+        "stage": "case-4",
+        "input": "case-5",
+        "popup": "case-6"
+      },
+      "projected": {
+        "root": {
+          "sourceSceneNodeId": "case-3",
+          "attrs": {
+            "data-open-pencil-node-id": "case-3"
+          },
+          "style": {
+            "width": "280px",
+            "height": "220px",
+            "position": "relative"
+          }
+        },
+        "stage": {
+          "sourceSceneNodeId": "case-4",
+          "attrs": {
+            "data-open-pencil-node-id": "case-4"
+          },
+          "style": {
+            "width": "180px",
+            "height": "120px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        },
+        "input": {
+          "sourceSceneNodeId": "case-5",
+          "attrs": {
+            "data-open-pencil-node-id": "case-5"
+          },
+          "style": {
+            "width": "140px",
+            "height": "40px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        },
+        "popup": {
+          "sourceSceneNodeId": "case-6",
+          "attrs": {
+            "data-open-pencil-node-id": "case-6"
+          },
+          "style": {
+            "width": "140px",
+            "height": "60px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "28px"
+          }
+        }
+      },
+      "html": "<div data-open-pencil-node-id=\"case-3\" style=\"width: 280px; height: 220px; position: relative\"><div data-open-pencil-node-id=\"case-4\" style=\"width: 180px; height: 120px; position: absolute; left: 0px; top: 0px\"><div data-open-pencil-node-id=\"case-5\" style=\"width: 140px; height: 40px; position: absolute; left: 0px; top: 0px\"></div><div data-open-pencil-node-id=\"case-6\" style=\"width: 140px; height: 60px; position: absolute; left: 0px; top: 28px\"></div></div></div>",
+      "htmlSha256": "b4175349271b7c511baaefdbdaf3bc2a201478c30f98f04715ed05aa7f799834",
+      "expectationMet": true
+    },
+    {
+      "id": "parent-coordinate-move",
+      "kind": "geometry",
+      "inputHeight": 20,
+      "parentX": 50,
+      "parentY": 50,
+      "popupY": 28,
+      "desiredGap": 8,
+      "expectedGap": 8,
+      "expectedDesiredRelationSatisfied": true,
+      "nodes": {
+        "root": "case-3",
+        "stage": "case-4",
+        "input": "case-5",
+        "popup": "case-6"
+      },
+      "projected": {
+        "root": {
+          "sourceSceneNodeId": "case-3",
+          "attrs": {
+            "data-open-pencil-node-id": "case-3"
+          },
+          "style": {
+            "width": "280px",
+            "height": "220px",
+            "position": "relative"
+          }
+        },
+        "stage": {
+          "sourceSceneNodeId": "case-4",
+          "attrs": {
+            "data-open-pencil-node-id": "case-4"
+          },
+          "style": {
+            "width": "180px",
+            "height": "120px",
+            "position": "absolute",
+            "left": "50px",
+            "top": "50px"
+          }
+        },
+        "input": {
+          "sourceSceneNodeId": "case-5",
+          "attrs": {
+            "data-open-pencil-node-id": "case-5"
+          },
+          "style": {
+            "width": "140px",
+            "height": "20px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        },
+        "popup": {
+          "sourceSceneNodeId": "case-6",
+          "attrs": {
+            "data-open-pencil-node-id": "case-6"
+          },
+          "style": {
+            "width": "140px",
+            "height": "60px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "28px"
+          }
+        }
+      },
+      "html": "<div data-open-pencil-node-id=\"case-3\" style=\"width: 280px; height: 220px; position: relative\"><div data-open-pencil-node-id=\"case-4\" style=\"width: 180px; height: 120px; position: absolute; left: 50px; top: 50px\"><div data-open-pencil-node-id=\"case-5\" style=\"width: 140px; height: 20px; position: absolute; left: 0px; top: 0px\"></div><div data-open-pencil-node-id=\"case-6\" style=\"width: 140px; height: 60px; position: absolute; left: 0px; top: 28px\"></div></div></div>",
+      "htmlSha256": "35a7b8d9d18f63eabdad5bc5ad56eb91c9fc7a6a3bd868c60ef12a5f351d24ad",
+      "expectationMet": true
+    }
+  ]
+}

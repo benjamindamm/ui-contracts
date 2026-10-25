@@ -1,0 +1,174 @@
+{
+  "scope": "Actual original SCXML4.3.28 with native parent delivery, additional CEM/TypeScript-signature/DOM/CSS/ARIA mapping; native geometry/focus/synthetic keyboard and accessibility tree; no native CSS UX machine, ARIA scroll policy, production component, physical key or AT speech",
+  "criterion": "A01",
+  "cases": [
+    {
+      "additionalHostCode": true,
+      "criterion": "A01",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "controls": "list-a",
+        "inputRole": "combobox",
+        "listName": "Results A",
+        "name": "Search A"
+      },
+      "id": "accessible-role-name-relations",
+      "observed": {
+        "controls": "list-a",
+        "inputRole": "combobox",
+        "listName": "Results A",
+        "name": "Search A"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "A01",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "error": "accessible-name-source-conflict"
+      },
+      "id": "accessible-name-conflict",
+      "observed": {
+        "error": "accessible-name-source-conflict"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "A01",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "error": "accessible-instance-relation"
+      },
+      "id": "accessible-foreign-controls",
+      "observed": {
+        "error": "accessible-instance-relation"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "id": "native-accessible-name-tree",
+      "criterion": "A01",
+      "prerequisite": "aria-controlled-scrollport",
+      "expectedNames": [
+        "Search A",
+        "Search B",
+        "Results A"
+      ],
+      "expectedRoles": [
+        "combobox",
+        "listbox"
+      ],
+      "observed": {
+        "names": [
+          "Search A",
+          "Search B",
+          "Results A"
+        ],
+        "roles": [
+          "combobox",
+          "listbox"
+        ],
+        "actualComboboxNames": [
+          "Search A",
+          "Search B"
+        ],
+        "actualListboxNames": [
+          "Results A"
+        ]
+      },
+      "expectationMet": true
+    }
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "revision": "1e25e9b8bc2e694689ba0489594f38807a341f14",
+  "scope": "Complete original cache-validation module with actual obligation-evidence files; no additional external resolver; accepted sourcePath probes are limits, not external-reference successes",
+  "cases": [
+    {
+      "id": "local-output-control",
+      "kind": "control",
+      "expectedOk": true,
+      "observed": {
+        "domain": "api",
+        "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-external-reference/fixtures/local-output-control/research-api.json",
+        "ok": true,
+        "normalized": 0,
+        "bytes": 807,
+        "errors": []
+      },
+      "sourcePath": "foreign-cem.json#/modules/0/declarations/0/members/0",
+      "outputTarget": "/data/mainTable/properties/0",
+      "actualExternalSource": {
+        "schemaVersion": "2.1.0",
+        "modules": [
+          {
+            "kind": "javascript-module",
+            "path": "autocomplete.js",
+            "declarations": [
+              {
+                "kind": "class",
+                "customElement": true,
+                "name": "Autocomplete",
+                "members": [
+                  {
+                    "kind": "field",
+                    "name": "value",
+                    "type": {
+                      "text": "string"
+                    }
+                  }
+                ],
+                "events": [
+                  {
+                    "name": "value-change",
+                    "type": {
+                      "text": "CustomEvent<{value:string}>"
+                    }
+                  }
+                ],
+                "cssParts": [
+                  {
+                    "name": "input"
+                  },
+                  {
+                    "name": "popup"
+                  },
+                  {
+                    "name": "list"
+                  },
+                  {
+                    "name": "option"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "externalSourceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+      "evidenceFacts": {
+        "name": "value",
+        "type": "string"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-output-target",
+      "kind": "missing-output",
+      "expectedOk": false,
+      "observed": {
+        "domain": "api",
+        "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-external-reference/fixtures/missing-output-target/research-api.json",
+        "ok": false,
+        "normalized": 0,
+        "bytes": 808,
+        "errors": [
+          "obligation public-value has unresolved output target /data/mainTable/properties/99",
+          "semantic output /data/mainTable/properties/0 has no evidence obligation"
+        ]
+      },
+      "sourcePath": "foreign-cem.json#/modules/0/declarations/0/members/0",
+      "outputTarget": "/data/mainTable/properties/99",
+      "actualExternalSource": {
+        "schemaVersion": "2.1.0",
+        "modules": [
+          {
+            "kind": "javascript-module",
+            "path": "autocomplete.js",
+            "declarations": [
+              {
+                "kind": "class",
+                "customElement": true,
+                "name": "Autocomplete",
+                "members": [
+                  {
+                    "kind": "field",
+                    "name": "value",
+                    "type": {
+                      "text": "string"
+                    }
+                  }
+                ],
+                "events": [
+                  {
+                    "name": "value-change",
+                    "type": {
+                      "text": "CustomEvent<{value:string}>"
+                    }
+                  }
+                ],
+                "cssParts": [
+                  {
+                    "name": "input"
+                  },
+                  {
+                    "name": "popup"
+                  },
+                  {
+                    "name": "list"
+                  },
+                  {
+                    "name": "option"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "externalSourceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+      "evidenceFacts": {
+        "name": "value",
+        "type": "string"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-output-kind",
+      "kind": "wrong-kind",
+      "expectedOk": false,
+      "observed": {
+        "domain": "api",
+        "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-external-reference/fixtures/wrong-output-kind/research-api.json",
+        "ok": false,
+        "normalized": 0,
+        "bytes": 807,
+        "errors": [
+          "obligation public-value target /data/mainTable/properties/0 must be a voice-record"
+        ]
+      },
+      "sourcePath": "foreign-cem.json#/modules/0/declarations/0/members/0",
+      "outputTarget": "/data/mainTable/properties/0",
+      "actualExternalSource": {
+        "schemaVersion": "2.1.0",
+        "modules": [
+          {
+            "kind": "javascript-module",
+            "path": "autocomplete.js",
+            "declarations": [
+              {
+                "kind": "class",
+                "customElement": true,
+                "name": "Autocomplete",
+                "members": [
+                  {
+                    "kind": "field",
+                    "name": "value",
+                    "type": {
+                      "text": "string"
+                    }
+                  }
+                ],
+                "events": [
+                  {
+                    "name": "value-change",
+                    "type": {
+                      "text": "CustomEvent<{value:string}>"
+                    }
+                  }
+                ],
+                "cssParts": [
+                  {
+                    "name": "input"
+                  },
+                  {
+                    "name": "popup"
+                  },
+                  {
+                    "name": "list"
+                  },
+                  {
+                    "name": "option"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "externalSourceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+      "evidenceFacts": {
+        "name": "value",
+        "type": "string"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "external-output-uri",
+      "kind": "external-output",
+      "expectedOk": false,
+      "observed": {
+        "domain": "api",
+        "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-external-reference/fixtures/external-output-uri/research-api.json",
+        "ok": false,
+        "normalized": 0,
+        "bytes": 831,
+        "errors": [
+          "obligation public-value has unresolved output target foreign-cem.json#/modules/0/declarations/0/members/0",
+          "semantic output /data/mainTable/properties/0 has no evidence obligation"
+        ]
+      },
+      "sourcePath": "foreign-cem.json#/modules/0/declarations/0/members/0",
+      "outputTarget": "foreign-cem.json#/modules/0/declarations/0/members/0",
+      "actualExternalSource": {
+        "schemaVersion": "2.1.0",
+        "modules": [
+          {
+            "kind": "javascript-module",
+            "path": "autocomplete.js",
+            "declarations": [
+              {
+                "kind": "class",
+                "customElement": true,
+                "name": "Autocomplete",
+                "members": [
+                  {
+                    "kind": "field",
+                    "name": "value",
+                    "type": {
+                      "text": "string"
+                    }
+                  }
+                ],
+                "events": [
+                  {
+                    "name": "value-change",
+                    "type": {
+                      "text": "CustomEvent<{value:string}>"
+                    }
+                  }
+                ],
+                "cssParts": [
+                  {
+                    "name": "input"
+                  },
+                  {
+                    "name": "popup"
+                  },
+                  {
+                    "name": "list"
+                  },
+                  {
+                    "name": "option"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "externalSourceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+      "evidenceFacts": {
+        "name": "value",
+        "type": "string"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "unknown-source-path",
+      "kind": "missing-source",
+      "expectedOk": true,
+      "observed": {
+        "domain": "api",
+        "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-external-reference/fixtures/unknown-source-path/research-api.json",
+        "ok": true,
+        "normalized": 0,
+        "bytes": 807,
+        "errors": []
+      },
+      "sourcePath": "/does/not/exist",
+      "outputTarget": "/data/mainTable/properties/0",
+      "actualExternalSource": {
+        "schemaVersion": "2.1.0",
+        "modules": [
+          {
+            "kind": "javascript-module",
+            "path": "autocomplete.js",
+            "declarations": [
+              {
+                "kind": "class",
+                "customElement": true,
+                "name": "Autocomplete",
+                "members": [
+                  {
+                    "kind": "field",
+                    "name": "value",
+                    "type": {
+                      "text": "string"
+                    }
+                  }
+                ],
+                "events": [
+                  {
+                    "name": "value-change",
+                    "type": {
+                      "text": "CustomEvent<{value:string}>"
+                    }
+                  }
+                ],
+                "cssParts": [
+                  {
+                    "name": "input"
+                  },
+                  {
+                    "name": "popup"
+                  },
+                  {
+                    "name": "list"
+                  },
+                  {
+                    "name": "option"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "externalSourceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+      "evidenceFacts": {
+        "name": "value",
+        "type": "string"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-source-file-uri",
+      "kind": "missing-file",
+      "expectedOk": true,
+      "observed": {
+        "domain": "api",
+        "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-external-reference/fixtures/missing-source-file-uri/research-api.json",
+        "ok": true,
+        "normalized": 0,
+        "bytes": 807,
+        "errors": []
+      },
+      "sourcePath": "missing-cem.json#/modules/0/declarations/0/members/0",
+      "outputTarget": "/data/mainTable/properties/0",
+      "actualExternalSource": {
+        "schemaVersion": "2.1.0",
+        "modules": [
+          {
+            "kind": "javascript-module",
+            "path": "autocomplete.js",
+            "declarations": [
+              {
+                "kind": "class",
+                "customElement": true,
+                "name": "Autocomplete",
+                "members": [
+                  {
+                    "kind": "field",
+                    "name": "value",
+                    "type": {
+                      "text": "string"
+                    }
+                  }
+                ],
+                "events": [
+                  {
+                    "name": "value-change",
+                    "type": {
+                      "text": "CustomEvent<{value:string}>"
+                    }
+                  }
+                ],
+                "cssParts": [
+                  {
+                    "name": "input"
+                  },
+                  {
+                    "name": "popup"
+                  },
+                  {
+                    "name": "list"
+                  },
+                  {
+                    "name": "option"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "externalSourceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+      "evidenceFacts": {
+        "name": "value",
+        "type": "string"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "changed-external-source",
+      "kind": "changed-source",
+      "expectedOk": true,
+      "observed": {
+        "domain": "api",
+        "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-external-reference/fixtures/changed-external-source/research-api.json",
+        "ok": true,
+        "normalized": 0,
+        "bytes": 807,
+        "errors": []
+      },
+      "sourcePath": "foreign-cem.json#/modules/0/declarations/0/members/0",
+      "outputTarget": "/data/mainTable/properties/0",
+      "actualExternalSource": {
+        "schemaVersion": "2.1.0",
+        "modules": [
+          {
+            "kind": "javascript-module",
+            "path": "autocomplete.js",
+            "declarations": [
+              {
+                "kind": "class",
+                "customElement": true,
+                "name": "Autocomplete",
+                "members": [
+                  {
+                    "kind": "field",
+                    "name": "value",
+                    "type": {
+                      "text": "number"
+                    }
+                  }
+                ],
+                "events": [
+                  {
+                    "name": "value-change",
+                    "type": {
+                      "text": "CustomEvent<{value:string}>"
+                    }
+                  }
+                ],
+                "cssParts": [
+                  {
+                    "name": "input"
+                  },
+                  {
+                    "name": "popup"
+                  },
+                  {
+                    "name": "list"
+                  },
+                  {
+                    "name": "option"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "externalSourceSha256": "fb96da4b4e5d51e7145bcd1ad35898007afdb5fe53aceae487d09d801f4b4860",
+      "evidenceFacts": {
+        "name": "value",
+        "type": "string"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "output-semantic-type-conflict",
+      "kind": "wrong-type",
+      "expectedOk": false,
+      "observed": {
+        "domain": "api",
+        "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-external-reference/fixtures/output-semantic-type-conflict/research-api.json",
+        "ok": false,
+        "normalized": 0,
+        "bytes": 807,
+        "errors": [
+          "obligation public-value target /data/mainTable/properties/0.type must equal string"
+        ]
+      },
+      "sourcePath": "foreign-cem.json#/modules/0/declarations/0/members/0",
+      "outputTarget": "/data/mainTable/properties/0",
+      "actualExternalSource": {
+        "schemaVersion": "2.1.0",
+        "modules": [
+          {
+            "kind": "javascript-module",
+            "path": "autocomplete.js",
+            "declarations": [
+              {
+                "kind": "class",
+                "customElement": true,
+                "name": "Autocomplete",
+                "members": [
+                  {
+                    "kind": "field",
+                    "name": "value",
+                    "type": {
+                      "text": "string"
+                    }
+                  }
+                ],
+                "events": [
+                  {
+                    "name": "value-change",
+                    "type": {
+                      "text": "CustomEvent<{value:string}>"
+                    }
+                  }
+                ],
+                "cssParts": [
+                  {
+                    "name": "input"
+                  },
+                  {
+                    "name": "popup"
+                  },
+                  {
+                    "name": "list"
+                  },
+                  {
+                    "name": "option"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "externalSourceSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+      "evidenceFacts": {
+        "name": "value",
+        "type": "string"
+      },
+      "expectationMet": true
+    }
+  ]
+}

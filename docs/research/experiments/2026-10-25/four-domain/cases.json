@@ -1,0 +1,91 @@
+[
+  {
+    "id": "four-control",
+    "mutation": null,
+    "expected": []
+  },
+  {
+    "id": "wrong-source-hash",
+    "mutation": "hash",
+    "expected": [
+      "source-integrity"
+    ]
+  },
+  {
+    "id": "missing-part-name",
+    "mutation": "part-name",
+    "expected": [
+      "declared-part"
+    ]
+  },
+  {
+    "id": "wrong-machine-name",
+    "mutation": "machine-name",
+    "expected": [
+      "behavior-definition"
+    ]
+  },
+  {
+    "id": "missing-state",
+    "mutation": "state",
+    "expected": [
+      "state-reference"
+    ]
+  },
+  {
+    "id": "cross-list",
+    "mutation": "list",
+    "expected": [
+      "same-instance-relation"
+    ]
+  },
+  {
+    "id": "cross-option",
+    "mutation": "option",
+    "expected": [
+      "same-instance-relation"
+    ]
+  },
+  {
+    "id": "cross-anchor",
+    "mutation": "anchor",
+    "expected": [
+      "same-instance-anchor"
+    ]
+  },
+  {
+    "id": "wrong-unit",
+    "mutation": "unit",
+    "expected": [
+      "geometry-unit"
+    ]
+  },
+  {
+    "id": "wrong-event",
+    "mutation": "event",
+    "expected": [
+      "public-event-route"
+    ]
+  },
+  {
+    "id": "wrong-payload",
+    "mutation": "payload",
+    "expected": [
+      "public-payload-type"
+    ]
+  },
+  {
+    "id": "wrong-owner",
+    "mutation": "owner",
+    "expected": [
+      "leading-source"
+    ]
+  },
+  {
+    "id": "duplicate-instance-part",
+    "mutation": "duplicate",
+    "expected": [
+      "unique-instance-part"
+    ]
+  }
+]

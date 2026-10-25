@@ -1,0 +1,414 @@
+{
+  "schema": [
+    {
+      "id": "variable-valid",
+      "schema": "variableSchema",
+      "input": {
+        "id": "v1",
+        "name": "surface",
+        "type": "COLOR",
+        "collectionId": "c1",
+        "valuesByMode": {
+          "light": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      "expectedAccepted": true,
+      "criterion": "Required envelope with typed-looking color"
+    },
+    {
+      "id": "variable-missing-id",
+      "schema": "variableSchema",
+      "input": {
+        "name": "surface",
+        "type": "COLOR",
+        "collectionId": "c1",
+        "valuesByMode": {
+          "light": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      "expectedAccepted": false,
+      "criterion": "Required identity"
+    },
+    {
+      "id": "variable-wrong-name",
+      "schema": "variableSchema",
+      "input": {
+        "id": "v1",
+        "name": 7,
+        "type": "COLOR",
+        "collectionId": "c1",
+        "valuesByMode": {
+          "light": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      "expectedAccepted": false,
+      "criterion": "Name string"
+    },
+    {
+      "id": "variable-wrong-enum",
+      "schema": "variableSchema",
+      "input": {
+        "id": "v1",
+        "name": "surface",
+        "type": "BANANA",
+        "collectionId": "c1",
+        "valuesByMode": {
+          "light": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      },
+      "expectedAccepted": true,
+      "criterion": "Loose envelope only requires string type"
+    },
+    {
+      "id": "variable-wrong-color",
+      "schema": "variableSchema",
+      "input": {
+        "id": "v1",
+        "name": "surface",
+        "type": "COLOR",
+        "collectionId": "c1",
+        "valuesByMode": {
+          "light": "red"
+        }
+      },
+      "expectedAccepted": true,
+      "criterion": "Mode values unknown; no declared-type correlation"
+    },
+    {
+      "id": "variable-wrong-unit",
+      "schema": "variableSchema",
+      "input": {
+        "id": "v1",
+        "name": "surface",
+        "type": "COLOR",
+        "collectionId": "c1",
+        "valuesByMode": {
+          "light": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        },
+        "unit": "bananas"
+      },
+      "expectedAccepted": true,
+      "criterion": "Extra field passes through"
+    },
+    {
+      "id": "variable-dangling-alias",
+      "schema": "variableSchema",
+      "input": {
+        "id": "v1",
+        "name": "surface",
+        "type": "COLOR",
+        "collectionId": "c1",
+        "valuesByMode": {
+          "light": {
+            "aliasId": "missing"
+          }
+        }
+      },
+      "expectedAccepted": true,
+      "criterion": "No graph available to schema"
+    },
+    {
+      "id": "variable-value-array",
+      "schema": "variableSchema",
+      "input": {
+        "id": "v1",
+        "name": "surface",
+        "type": "COLOR",
+        "collectionId": "c1",
+        "valuesByMode": [
+          "red"
+        ]
+      },
+      "expectedAccepted": false,
+      "criterion": "Record shape required"
+    },
+    {
+      "id": "variable-empty-values",
+      "schema": "variableSchema",
+      "input": {
+        "id": "v1",
+        "name": "surface",
+        "type": "COLOR",
+        "collectionId": "c1",
+        "valuesByMode": {}
+      },
+      "expectedAccepted": true,
+      "criterion": "No mandatory value or default mode in variable envelope"
+    },
+    {
+      "id": "collection-inconsistent",
+      "schema": "variableCollectionSchema",
+      "input": {
+        "id": "c1",
+        "name": "Theme",
+        "defaultModeId": "missing",
+        "modes": [
+          7,
+          {
+            "id": "dark",
+            "name": "Dark"
+          },
+          {
+            "id": "dark",
+            "name": "Again"
+          }
+        ],
+        "variableIds": [
+          "v1",
+          7,
+          "missing"
+        ]
+      },
+      "expectedAccepted": true,
+      "criterion": "Unknown array members; no default target/duplicate/referential checks"
+    },
+    {
+      "id": "compose-valid",
+      "schema": "variableColorExpressionSchema",
+      "input": {
+        "expression": "COMPOSE_COLOR",
+        "color": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "opacity": 0.5
+      },
+      "expectedAccepted": true,
+      "criterion": "Literal finite color and opacity"
+    },
+    {
+      "id": "compose-wrong-color",
+      "schema": "variableColorExpressionSchema",
+      "input": {
+        "expression": "COMPOSE_COLOR",
+        "color": "red",
+        "opacity": 0.5
+      },
+      "expectedAccepted": false,
+      "criterion": "Specific compose schema validates color structure"
+    },
+    {
+      "id": "compose-wrong-opacity",
+      "schema": "variableColorExpressionSchema",
+      "input": {
+        "expression": "COMPOSE_COLOR",
+        "color": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "opacity": "half"
+      },
+      "expectedAccepted": false,
+      "criterion": "Opacity finite number or alias"
+    },
+    {
+      "id": "compose-out-of-range",
+      "schema": "variableColorExpressionSchema",
+      "input": {
+        "expression": "COMPOSE_COLOR",
+        "color": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "opacity": 2
+      },
+      "expectedAccepted": true,
+      "criterion": "Finite value alone does not enforce opacity range"
+    },
+    {
+      "id": "compose-dangling-alias",
+      "schema": "variableColorExpressionSchema",
+      "input": {
+        "expression": "COMPOSE_COLOR",
+        "color": {
+          "aliasId": "missing"
+        },
+        "opacity": 0.5
+      },
+      "expectedAccepted": true,
+      "criterion": "Alias identifier shape without graph resolution"
+    }
+  ],
+  "css": [
+    {
+      "id": "css-value-px",
+      "method": "declaration",
+      "args": [
+        "size",
+        "16px"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Single value roundtrips"
+    },
+    {
+      "id": "css-value-var",
+      "method": "declaration",
+      "args": [
+        "size",
+        "var(--other)"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Unresolved variable is a token stream, not a resolved numeric value"
+    },
+    {
+      "id": "css-value-invalid-unit",
+      "method": "declaration",
+      "args": [
+        "size",
+        "16bananas"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Custom property permits token stream; no consumer-property grammar"
+    },
+    {
+      "id": "css-value-arbitrary",
+      "method": "declaration",
+      "args": [
+        "color",
+        "banana"
+      ],
+      "expectedAccepted": true,
+      "criterion": "No declared COLOR semantic input to validator"
+    },
+    {
+      "id": "css-value-injection",
+      "method": "declaration",
+      "args": [
+        "size",
+        "16px;--extra:1"
+      ],
+      "expectedAccepted": false,
+      "criterion": "Extra declaration must be rejected"
+    },
+    {
+      "id": "css-name-valid",
+      "method": "name",
+      "args": [
+        "surface-dark"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Simple name"
+    },
+    {
+      "id": "css-name-invalid",
+      "method": "name",
+      "args": [
+        "bad name"
+      ],
+      "expectedAccepted": false,
+      "criterion": "Whitespace separates tokenizer nodes"
+    },
+    {
+      "id": "css-name-leading-dash",
+      "method": "name",
+      "args": [
+        "-bad"
+      ],
+      "expectedAccepted": false,
+      "criterion": "Explicit naming policy"
+    },
+    {
+      "id": "css-selector",
+      "method": "condition",
+      "args": [
+        "[data-theme=\"dark\"]"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Valid selector condition"
+    },
+    {
+      "id": "css-media-dark",
+      "method": "condition",
+      "args": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Grouping condition"
+    },
+    {
+      "id": "css-media-invalid-value",
+      "method": "condition",
+      "args": [
+        "@media (prefers-color-scheme: banana)"
+      ],
+      "expectedAccepted": true,
+      "criterion": "CSSOM preserves unknown feature value without semantic validation"
+    },
+    {
+      "id": "css-media-compound",
+      "method": "condition",
+      "args": [
+        "@media screen and (min-width: 640px)"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Full export validator broader than single-feature helper"
+    },
+    {
+      "id": "css-container",
+      "method": "condition",
+      "args": [
+        "@container (min-width: 640px)"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Container grouping condition"
+    },
+    {
+      "id": "css-supports",
+      "method": "condition",
+      "args": [
+        "@supports (display: grid)"
+      ],
+      "expectedAccepted": true,
+      "criterion": "Supported grouping condition"
+    },
+    {
+      "id": "css-condition-injection",
+      "method": "condition",
+      "args": [
+        "[data-theme=\"dark\"]{--a:0} body"
+      ],
+      "expectedAccepted": false,
+      "criterion": "Multiple rules fail wrapper cardinality"
+    },
+    {
+      "id": "css-disallowed-import",
+      "method": "condition",
+      "args": [
+        "@import \"theme.css\""
+      ],
+      "expectedAccepted": false,
+      "criterion": "Only three at-rule wrappers allowed"
+    }
+  ]
+}

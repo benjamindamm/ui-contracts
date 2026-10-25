@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-25",
+  "source": "S100",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "80ac650080bd62043b3d796acef88760f6cd8885f6e5d3d47b92ef3f770133ac"
+    },
+    {
+      "file": "run.mjs",
+      "sha256": "0a6abf4ed02b37b42d199111e2ca4d23632e23cfa10cbf2f9d07768c2fc9c484"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "529f0f1f2e15da960e179207c11d9637945e18c2983860df1d0249acb97073a4"
+    },
+    {
+      "file": "extraction.json",
+      "sha256": "fd4eab0ca0e69951d824fcfbb25ae3582d68f6aed973df13f87b72ef31fadd22"
+    },
+    {
+      "file": "results.json",
+      "sha256": "c35d6500ad4a5e39156186886b7b0c132d07e5b2e6ae046d68beb0f6ea5cd91a"
+    },
+    {
+      "file": "initial-eight-success-results.json",
+      "sha256": "8195a0142fababd99d39dfe2fe6e40349f50c3265aa81b2e4690556bdb440e48"
+    },
+    {
+      "file": "initial-api-path-error.json",
+      "sha256": "254d83eb6ff374f2a7d70e5e3378d32d888d4ac441755a489170725f4c2a7664"
+    },
+    {
+      "file": "harness-repair.json",
+      "sha256": "237f518b71c929e60d6506d2e4bf8ef205130afe859920bc136ce499a0faffee"
+    },
+    {
+      "file": "published-pins.json",
+      "sha256": "fdaf41b026eecc12991c3485925a34d34d82732395035e25e44c28daf7da400e"
+    },
+    {
+      "file": "version-comparison.json",
+      "sha256": "1a5300a6bc9ad7c27e2605e53744ca6299d03412b66f4485cb700689ad0d956e"
+    },
+    {
+      "file": "repo-source-notes.json",
+      "sha256": "de6175da6cfb8314a39f355362efe189a7ccfb2b90a1551ce8e83f39a311ccbd"
+    },
+    {
+      "file": "aria-switch-notes.json",
+      "sha256": "9c2e92ccb00c80879c10fdf8589c22ceed1830e3010ab60b6c79a5a6d42a60f5"
+    },
+    {
+      "file": "browser-expectations.json",
+      "sha256": "527d7fe89cede2a430fec2b605a826abf4a7809b61611744b6eafec27c75a66d"
+    },
+    {
+      "file": "browser-run.js",
+      "sha256": "9643d7123d0ce74b4b214d960be7f373a33bdcb7d38b60b975720fa79b0d9149"
+    },
+    {
+      "file": "browser-results.json",
+      "sha256": "c92919848eec2718006740c1f624d57b0db378ca114e1d09b7ef3a98948ca993"
+    },
+    {
+      "file": "browser-diagnosis-expectations.json",
+      "sha256": "f9dfab8474c0408736542767096c3a7a053bd7e3a8ef207d11e551fa74f03de3"
+    },
+    {
+      "file": "browser-diagnosis-run.js",
+      "sha256": "6e0e757b8e2c4730b532434434c8ae577a32771ba7ca65c7bd4257d165292305"
+    },
+    {
+      "file": "browser-diagnosis-results.json",
+      "sha256": "20a3fad17f938404f5d11f2ffa54980c2b1cb31d7fdbae6aae983cca7cd73c03"
+    },
+    {
+      "file": "switch-browser-expectations.json",
+      "sha256": "a5603e67fb4ff8d4b591844389b653d65541685588480b458271245a1c2a06aa"
+    },
+    {
+      "file": "switch-browser-run.js",
+      "sha256": "c28e735b63079160a9b4971fa0d01a6001ba419d59c4b31d3ed9c0e14f1c54fe"
+    },
+    {
+      "file": "switch-browser-results.json",
+      "sha256": "aa492923f7fe3c50925031b2b02e2870d7e2c15c7266a0ab3baa7d7c57767143"
+    },
+    {
+      "file": "prepare-live.cjs",
+      "sha256": "7403f94e1ab1957c3265f3354ae8f79ffd1b51c3d696b0c2002948de69f9afc4"
+    },
+    {
+      "file": "live-build-repair.json",
+      "sha256": "c0115cd72decd6a9efe7ff5577509d46a6d26b08d3e27f54c8420f117b81a96a"
+    },
+    {
+      "file": "live-expectations.json",
+      "sha256": "b2cfcd748847f2a97977546ebc7281787e2744e808fbcf68c3f1b42647fe4956"
+    },
+    {
+      "file": "live-browser-run.js",
+      "sha256": "0826a6b8f558c8642001c470c92256ef220950df07a596f3c62bf5bcbfff24fa"
+    },
+    {
+      "file": "live-results.json",
+      "sha256": "6215cff41f91d9ca148fdf02300917868982f9eeef7f6838c7a976a7121f9dcf"
+    },
+    {
+      "file": "host/index.html",
+      "sha256": "bdabbb44fde5ee67c78bf8e1a2d4a3168217a8cdf9a97fa2636c0325c77693c6"
+    },
+    {
+      "file": "host/live.html",
+      "sha256": "e2d5a29b3d5da43721c6b04f0bb9f86b34d007d3661b62cebed6a994f49e119a"
+    },
+    {
+      "file": "tool/package.json",
+      "sha256": "2ad81b0f13bb5d5d16bfa77047f508617324edfa182e3832bc51ff93495a8f76"
+    },
+    {
+      "file": "tool/package-lock.json",
+      "sha256": "3362b420d56cae5579fef1dbe9a8c5a8b8cda5a3a98c7574b75a6bf9fd6e9391"
+    },
+    {
+      "file": "tool-inventory.json",
+      "sha256": "ce880bf2622ec8f06eb0626117bcec22cd4d9b88285277cbb01288c10399ae8d"
+    }
+  ],
+  "local_generated_and_original_files": [
+    {
+      "file": "host/live.js",
+      "sha256": "75c287710956eb0cd87e0c90e9bdf0fdb466fdcd9b95ffa1ec027fd096c684a2",
+      "distributed": false
+    },
+    {
+      "file": "host/axe.min.js",
+      "sha256": "20c09fe157a8a34a30e241aaa1fcdade657734f08ab379ecfbeb7d45cc46e878",
+      "distributed": false
+    },
+    {
+      "file": "live-entry.js",
+      "sha256": "6d2ae03298fc0c025f95869083ecfe6d20cd5e3e337ca357772589be64b44a00",
+      "distributed": false
+    },
+    {
+      "file": "published-sources/export/projection.ts",
+      "sha256": "973e8a8746c88ebc40648dce46d079115f0c65000ff335ab105cacaeba46db6c",
+      "distributed": false
+    },
+    {
+      "file": "published-sources/behaviours/controls.ts",
+      "sha256": "99dfc1276673092a00dad79efa9b6a0f9d28769ee97138457671e5585757b43b",
+      "distributed": false
+    },
+    {
+      "file": "published-sources/behaviours/roles.ts",
+      "sha256": "19a6fd29d82f20073cba30c6d966613576e6ab43c2f7d8476ca39954cf5c45df",
+      "distributed": false
+    },
+    {
+      "file": "published-sources/tokens/references.ts",
+      "sha256": "f3b6229ddf1b973665a823ce656c31c4b2cb01f9dd7c532766e381cb2cd98956",
+      "distributed": false
+    },
+    {
+      "file": "../aria-axe/tool/node_modules/axe-core/axe.js",
+      "sha256": "aae0b8b36278089962105b2351ea64f4da7d3d440b54e162e21616d597aa0d6f",
+      "distributed": false
+    },
+    {
+      "file": "../validation-probes/ts-tool/node_modules/typescript/lib/typescript.js",
+      "sha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675",
+      "distributed": false
+    }
+  ],
+  "original_repo_inputs": [
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "sha256": "89981b668b43475f96e050fa267b51bb3eeac4ad43dc2e95418d127fe8890259",
+      "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/shared.ts"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/state.ts",
+      "sha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963",
+      "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/state.ts"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "sha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953",
+      "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/index.ts"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/render.ts",
+      "sha256": "9f8b3c79a4bbfbc3c3d7f91fdf524b4398eab040f4414ebde2b16f3dd03d65a9",
+      "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/render.ts"
+    }
+  ],
+  "published_versions": [
+    "@open-pencil/dom-css@0.16.0",
+    "@open-pencil/scene-graph@0.16.0",
+    "vue@3.5.41",
+    "reka-ui@2.10.5"
+  ],
+  "published_repo_commit_identity_claimed": false,
+  "conditions_added": 28,
+  "groups_added": 5,
+  "initial_name_expectation_mismatches_preserved": 2,
+  "own_api_and_build_repairs_preserved": true,
+  "original_code_modified": false,
+  "whole_editor_tested": false,
+  "physical_keyboard_tested": false,
+  "at_tested": false
+}

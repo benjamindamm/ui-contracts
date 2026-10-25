@@ -1,0 +1,31 @@
+{
+  "source": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Suchergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n",
+  "host": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Suchergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n",
+  "journal": [
+    {
+      "information": "resultListAccessibleName/A",
+      "actorLabel": "synthetic-a11y-agent",
+      "declaredRole": "accessibility-author",
+      "source": {
+        "domain": "accessibility",
+        "file": "accessibility.html",
+        "targetId": "list-a",
+        "attribute": "aria-label",
+        "role": "listbox"
+      },
+      "target": {
+        "file": "host.html",
+        "targetId": "list-a",
+        "attribute": "aria-label"
+      },
+      "sourceBefore": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "sourceAfter": "3646a59abe9053c5d4fc929de1de99d004275ac2f6f22de1c3e46d7473bec2d2",
+      "hostBefore": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "hostAfter": "3646a59abe9053c5d4fc929de1de99d004275ac2f6f22de1c3e46d7473bec2d2",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "revisionBefore": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+      "revisionAfter": "99d485d840316a6b882303dd8281b1f1bc170d6a97e1ce6b89293ee8b20d528d",
+      "kind": "authored source and declared derived host copy"
+    }
+  ]
+}

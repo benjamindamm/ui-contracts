@@ -1,0 +1,269 @@
+[
+  {
+    "id": "valid-export",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": {
+        "colors.red": {
+          "category": "colors",
+          "cssVar": "--colors-red"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.red",
+          "value": "#f00"
+        }
+      ]
+    },
+    "expectedTypedAccepted": true,
+    "expectedReaderAccepted": true
+  },
+  {
+    "id": "categories-number",
+    "input": {
+      "schemaVersion": 1,
+      "categories": 7,
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": {
+        "colors.red": {
+          "category": "colors",
+          "cssVar": "--colors-red"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.red",
+          "value": "#f00"
+        }
+      ]
+    },
+    "expectedTypedAccepted": false,
+    "expectedReaderAccepted": true
+  },
+  {
+    "id": "tokens-boolean",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": false,
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.red",
+          "value": "#f00"
+        }
+      ]
+    },
+    "expectedTypedAccepted": false,
+    "expectedReaderAccepted": true
+  },
+  {
+    "id": "null-value-row",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": {
+        "colors.red": {
+          "category": "colors",
+          "cssVar": "--colors-red"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        null
+      ]
+    },
+    "expectedTypedAccepted": false,
+    "expectedReaderAccepted": true
+  },
+  {
+    "id": "missing-conditions-themes",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": {
+        "colors.red": {
+          "category": "colors",
+          "cssVar": "--colors-red"
+        }
+      },
+      "values": [
+        {
+          "token": "colors.red",
+          "value": "#f00"
+        }
+      ]
+    },
+    "expectedTypedAccepted": false,
+    "expectedReaderAccepted": true
+  },
+  {
+    "id": "numeric-value-string-field",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": {
+        "colors.red": {
+          "category": "colors",
+          "cssVar": "--colors-red"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.red",
+          "value": 42
+        }
+      ]
+    },
+    "expectedTypedAccepted": false,
+    "expectedReaderAccepted": true
+  },
+  {
+    "id": "missing-reference-target",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": {
+        "colors.red": {
+          "category": "colors",
+          "cssVar": "--colors-red"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.red",
+          "value": "#f00",
+          "refs": [
+            "colors.missing"
+          ]
+        }
+      ]
+    },
+    "expectedTypedAccepted": true,
+    "expectedReaderAccepted": true
+  },
+  {
+    "id": "category-range-outside-paths",
+    "input": {
+      "schemaVersion": 1,
+      "categories": {
+        "colors": [
+          0,
+          999
+        ]
+      },
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": {
+        "colors.red": {
+          "category": "colors",
+          "cssVar": "--colors-red"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.red",
+          "value": "#f00"
+        }
+      ]
+    },
+    "expectedTypedAccepted": true,
+    "expectedReaderAccepted": true
+  },
+  {
+    "id": "negative-schema-number",
+    "input": {
+      "schemaVersion": -1,
+      "categories": {
+        "colors": [
+          0,
+          1
+        ]
+      },
+      "paths": [
+        "colors.red"
+      ],
+      "tokens": {
+        "colors.red": {
+          "category": "colors",
+          "cssVar": "--colors-red"
+        }
+      },
+      "conditions": {},
+      "themes": {},
+      "values": [
+        {
+          "token": "colors.red",
+          "value": "#f00"
+        }
+      ]
+    },
+    "expectedTypedAccepted": true,
+    "expectedReaderAccepted": true
+  }
+]

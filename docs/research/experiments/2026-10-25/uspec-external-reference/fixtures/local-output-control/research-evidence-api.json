@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "baseSourceHash": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+  },
+  "data": {
+    "obligations": [
+      {
+        "id": "public-value",
+        "domain": "api",
+        "kind": "public-property",
+        "label": "value",
+        "policy": "must-emit",
+        "sourcePaths": [
+          "foreign-cem.json#/modules/0/declarations/0/members/0"
+        ],
+        "facts": {
+          "name": "value",
+          "type": "string"
+        },
+        "representation": {
+          "targetKind": "api-property",
+          "field": "type",
+          "equals": "string"
+        }
+      }
+    ]
+  }
+}

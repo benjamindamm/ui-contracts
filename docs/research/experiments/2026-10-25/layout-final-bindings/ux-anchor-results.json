@@ -1,0 +1,113 @@
+{
+  "scope": "Actual original UXSpec compiler/full style-map or uSpec canonical builder/full original clipping-function output mapped through explicit extra CEM/context/anchor/overflow/fixed-row policy to native own DOM; no original UX Runner/editor/Figma SDK or platform renderer claimed",
+  "cases": [
+    {
+      "action": "base",
+      "additionalDomCssBinding": true,
+      "candidate": "UXSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "gap": 8
+      },
+      "id": "ux-anchor-control",
+      "model": "uxspec",
+      "observed": {
+        "gap": 8,
+        "height": 160,
+        "inputHeight": 20,
+        "originalAnchor": null,
+        "originalMapperInterpretsOverflow": false,
+        "overflow": "auto",
+        "scrollHeight": 224,
+        "scrollTop": 0,
+        "sourceFingerprint": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "grow",
+      "additionalDomCssBinding": true,
+      "candidate": "UXSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "gap": 8,
+        "inputHeight": 40
+      },
+      "id": "ux-anchor-grown-input",
+      "model": "uxspec",
+      "observed": {
+        "gap": 8,
+        "height": 160,
+        "inputHeight": 40,
+        "originalAnchor": null,
+        "originalMapperInterpretsOverflow": false,
+        "overflow": "auto",
+        "scrollHeight": 224,
+        "scrollTop": 0,
+        "sourceFingerprint": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "foreign-input",
+      "additionalDomCssBinding": true,
+      "candidate": "UXSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "error": "foreign-instance-input"
+      },
+      "id": "ux-anchor-foreign-instance",
+      "model": "uxspec",
+      "observed": {
+        "error": "foreign-instance-input",
+        "originalAnchor": null,
+        "sourceFingerprint": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "missing-input",
+      "additionalDomCssBinding": true,
+      "candidate": "UXSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "error": "missing-native-input"
+      },
+      "id": "ux-anchor-missing-target",
+      "model": "uxspec",
+      "observed": {
+        "error": "missing-native-input",
+        "originalAnchor": null,
+        "sourceFingerprint": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "wrong-unit",
+      "additionalDomCssBinding": true,
+      "candidate": "UXSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "error": "unsupported-gap-unit"
+      },
+      "id": "ux-anchor-wrong-unit",
+      "model": "uxspec",
+      "observed": {
+        "error": "unsupported-gap-unit",
+        "originalAnchor": null,
+        "sourceFingerprint": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    }
+  ]
+}

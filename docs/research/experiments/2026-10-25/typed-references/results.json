@@ -1,0 +1,2796 @@
+{
+  "method": "Own bounded typed cross-model reference adapter; original CEM/SCXML schemas checked separately; no original neutral ARIA model resolver claimed",
+  "cases": [
+    {
+      "id": "control",
+      "mutation": "none",
+      "expectedRules": [],
+      "actualRules": [],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": [
+        {
+          "definition": "autocomplete",
+          "component": {
+            "artifact": "interface",
+            "kind": "cem.custom-element-class",
+            "locator": {
+              "pointer": "/modules/0/declarations/0"
+            }
+          },
+          "componentName": "Autocomplete",
+          "machine": {
+            "artifact": "behavior",
+            "kind": "scxml.machine",
+            "locator": {
+              "xpath": "."
+            }
+          },
+          "machineName": "Autocomplete",
+          "parts": {
+            "input": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/0"
+              }
+            },
+            "popup": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/1"
+              }
+            },
+            "list": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/2"
+              }
+            },
+            "option": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/3"
+              }
+            }
+          },
+          "states": {
+            "open": {
+              "artifact": "behavior",
+              "kind": "scxml.state",
+              "locator": {
+                "xpath": "./s:state[@id=\"open\"]"
+              }
+            }
+          }
+        },
+        {
+          "instance": "A",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        },
+        {
+          "instance": "B",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        }
+      ]
+    },
+    {
+      "id": "duplicate-name-explicit-address",
+      "mutation": "duplicate-name",
+      "expectedRules": [],
+      "actualRules": [],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "a99950abcbfe95cc22cf1d884e2e95d510b346091b188797c455e2ebd0eb4dab",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "a99950abcbfe95cc22cf1d884e2e95d510b346091b188797c455e2ebd0eb4dab"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": [
+        {
+          "definition": "autocomplete",
+          "component": {
+            "artifact": "interface",
+            "kind": "cem.custom-element-class",
+            "locator": {
+              "pointer": "/modules/0/declarations/0"
+            }
+          },
+          "componentName": "Autocomplete",
+          "machine": {
+            "artifact": "behavior",
+            "kind": "scxml.machine",
+            "locator": {
+              "xpath": "."
+            }
+          },
+          "machineName": "Autocomplete",
+          "parts": {
+            "input": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/0"
+              }
+            },
+            "popup": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/1"
+              }
+            },
+            "list": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/2"
+              }
+            },
+            "option": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/3"
+              }
+            }
+          },
+          "states": {
+            "open": {
+              "artifact": "behavior",
+              "kind": "scxml.state",
+              "locator": {
+                "xpath": "./s:state[@id=\"open\"]"
+              }
+            }
+          }
+        },
+        {
+          "instance": "A",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        },
+        {
+          "instance": "B",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        }
+      ]
+    },
+    {
+      "id": "part-from-other-component",
+      "mutation": "foreign-part",
+      "expectedRules": [
+        "foreign-component-part"
+      ],
+      "actualRules": [
+        "foreign-component-part"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "a99950abcbfe95cc22cf1d884e2e95d510b346091b188797c455e2ebd0eb4dab",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "a99950abcbfe95cc22cf1d884e2e95d510b346091b188797c455e2ebd0eb4dab"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/1/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "part-addresses-behavior",
+      "mutation": "foreign-kind",
+      "expectedRules": [
+        "reference-kind"
+      ],
+      "actualRules": [
+        "reference-kind"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "missing-part-pointer",
+      "mutation": "missing",
+      "expectedRules": [
+        "missing-target"
+      ],
+      "actualRules": [
+        "missing-target"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/999"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "list-part-used-as-input",
+      "mutation": "wrong-part",
+      "expectedRules": [
+        "part-name"
+      ],
+      "actualRules": [
+        "part-name"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "nonunique-state-locator",
+      "mutation": "ambiguous",
+      "expectedRules": [
+        "nonunique-target"
+      ],
+      "actualRules": [
+        "nonunique-target"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "data-addressed-as-state",
+      "mutation": "data-as-state",
+      "expectedRules": [
+        "target-kind"
+      ],
+      "actualRules": [
+        "target-kind"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:datamodel/s:data"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "stale-artifact-revision",
+      "mutation": "revision",
+      "expectedRules": [
+        "source-revision"
+      ],
+      "actualRules": [
+        "source-revision"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "0dfa6c435df7215a69afbc4314c8adc9f7c2f0749ca1a18785cbd8dfc8d0251f",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "existing-other-instance-list",
+      "mutation": "cross-list",
+      "expectedRules": [
+        "same-instance-relation"
+      ],
+      "actualRules": [
+        "same-instance-relation"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "fc4a9f9e53597614c9f0c8ab5134c2858e1687036f625e93bd2bd1f5840b6e19"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "fc4a9f9e53597614c9f0c8ab5134c2858e1687036f625e93bd2bd1f5840b6e19"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": [
+        {
+          "definition": "autocomplete",
+          "component": {
+            "artifact": "interface",
+            "kind": "cem.custom-element-class",
+            "locator": {
+              "pointer": "/modules/0/declarations/0"
+            }
+          },
+          "componentName": "Autocomplete",
+          "machine": {
+            "artifact": "behavior",
+            "kind": "scxml.machine",
+            "locator": {
+              "xpath": "."
+            }
+          },
+          "machineName": "Autocomplete",
+          "parts": {
+            "input": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/0"
+              }
+            },
+            "popup": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/1"
+              }
+            },
+            "list": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/2"
+              }
+            },
+            "option": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/3"
+              }
+            }
+          },
+          "states": {
+            "open": {
+              "artifact": "behavior",
+              "kind": "scxml.state",
+              "locator": {
+                "xpath": "./s:state[@id=\"open\"]"
+              }
+            }
+          }
+        },
+        {
+          "instance": "B",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        }
+      ]
+    },
+    {
+      "id": "wrong-target-host-role",
+      "mutation": "role",
+      "expectedRules": [
+        "host-role"
+      ],
+      "actualRules": [
+        "host-role"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "34ed14a7a77b240cf7a9e3b3418d7ea5c0d56ffe6585b267f30e35ed27e824f3"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "34ed14a7a77b240cf7a9e3b3418d7ea5c0d56ffe6585b267f30e35ed27e824f3"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": [
+        {
+          "definition": "autocomplete",
+          "component": {
+            "artifact": "interface",
+            "kind": "cem.custom-element-class",
+            "locator": {
+              "pointer": "/modules/0/declarations/0"
+            }
+          },
+          "componentName": "Autocomplete",
+          "machine": {
+            "artifact": "behavior",
+            "kind": "scxml.machine",
+            "locator": {
+              "xpath": "."
+            }
+          },
+          "machineName": "Autocomplete",
+          "parts": {
+            "input": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/0"
+              }
+            },
+            "popup": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/1"
+              }
+            },
+            "list": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/2"
+              }
+            },
+            "option": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/3"
+              }
+            }
+          },
+          "states": {
+            "open": {
+              "artifact": "behavior",
+              "kind": "scxml.state",
+              "locator": {
+                "xpath": "./s:state[@id=\"open\"]"
+              }
+            }
+          }
+        },
+        {
+          "instance": "B",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        }
+      ]
+    },
+    {
+      "id": "duplicate-host-id",
+      "mutation": "duplicate-id",
+      "expectedRules": [
+        "host-unique-target"
+      ],
+      "actualRules": [
+        "host-unique-target"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "551a09feb33792b25b2e15adc7adde0a644f378f6d8187a8910b8c29a85d29a8"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "551a09feb33792b25b2e15adc7adde0a644f378f6d8187a8910b8c29a85d29a8"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": [
+        {
+          "definition": "autocomplete",
+          "component": {
+            "artifact": "interface",
+            "kind": "cem.custom-element-class",
+            "locator": {
+              "pointer": "/modules/0/declarations/0"
+            }
+          },
+          "componentName": "Autocomplete",
+          "machine": {
+            "artifact": "behavior",
+            "kind": "scxml.machine",
+            "locator": {
+              "xpath": "."
+            }
+          },
+          "machineName": "Autocomplete",
+          "parts": {
+            "input": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/0"
+              }
+            },
+            "popup": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/1"
+              }
+            },
+            "list": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/2"
+              }
+            },
+            "option": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/3"
+              }
+            }
+          },
+          "states": {
+            "open": {
+              "artifact": "behavior",
+              "kind": "scxml.state",
+              "locator": {
+                "xpath": "./s:state[@id=\"open\"]"
+              }
+            }
+          }
+        },
+        {
+          "instance": "B",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        }
+      ]
+    },
+    {
+      "id": "state-projection-disagrees",
+      "mutation": "state-view",
+      "expectedRules": [
+        "state-projection"
+      ],
+      "actualRules": [
+        "state-projection"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "20bf01757d0daacf6403bb64016527c72534c5282132af752c71c2f64d4acef6"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "20bf01757d0daacf6403bb64016527c72534c5282132af752c71c2f64d4acef6"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": [
+        {
+          "definition": "autocomplete",
+          "component": {
+            "artifact": "interface",
+            "kind": "cem.custom-element-class",
+            "locator": {
+              "pointer": "/modules/0/declarations/0"
+            }
+          },
+          "componentName": "Autocomplete",
+          "machine": {
+            "artifact": "behavior",
+            "kind": "scxml.machine",
+            "locator": {
+              "xpath": "."
+            }
+          },
+          "machineName": "Autocomplete",
+          "parts": {
+            "input": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/0"
+              }
+            },
+            "popup": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/1"
+              }
+            },
+            "list": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/2"
+              }
+            },
+            "option": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/3"
+              }
+            }
+          },
+          "states": {
+            "open": {
+              "artifact": "behavior",
+              "kind": "scxml.state",
+              "locator": {
+                "xpath": "./s:state[@id=\"open\"]"
+              }
+            }
+          }
+        },
+        {
+          "instance": "B",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        }
+      ]
+    },
+    {
+      "id": "foreign-machine-name",
+      "mutation": "machine",
+      "expectedRules": [
+        "machine-component-binding"
+      ],
+      "actualRules": [
+        "machine-component-binding"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "9c62d7a8d5a3c7cf75bbd1e694a4e5b519a9bde37b0a3b4595d8a43c57ab9256",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "9c62d7a8d5a3c7cf75bbd1e694a4e5b519a9bde37b0a3b4595d8a43c57ab9256"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "unsupported-locator-kind",
+      "mutation": "locator",
+      "expectedRules": [
+        "locator-kind"
+      ],
+      "actualRules": [
+        "locator-kind"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "nameSearch": "input"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": []
+    },
+    {
+      "id": "missing-definition",
+      "mutation": "definition",
+      "expectedRules": [
+        "undefined-definition"
+      ],
+      "actualRules": [
+        "undefined-definition"
+      ],
+      "expectationMet": true,
+      "originalSchemas": {
+        "cem": true,
+        "scxml": true
+      },
+      "sourceHashes": {
+        "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+        "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+      },
+      "profile": {
+        "status": "Additional typed research reference profile, not original ARIA/CEM/SCXML syntax",
+        "version": "typed-references-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "missing-definition",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        }
+      },
+      "witnesses": [
+        {
+          "definition": "autocomplete",
+          "component": {
+            "artifact": "interface",
+            "kind": "cem.custom-element-class",
+            "locator": {
+              "pointer": "/modules/0/declarations/0"
+            }
+          },
+          "componentName": "Autocomplete",
+          "machine": {
+            "artifact": "behavior",
+            "kind": "scxml.machine",
+            "locator": {
+              "xpath": "."
+            }
+          },
+          "machineName": "Autocomplete",
+          "parts": {
+            "input": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/0"
+              }
+            },
+            "popup": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/1"
+              }
+            },
+            "list": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/2"
+              }
+            },
+            "option": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/3"
+              }
+            }
+          },
+          "states": {
+            "open": {
+              "artifact": "behavior",
+              "kind": "scxml.state",
+              "locator": {
+                "xpath": "./s:state[@id=\"open\"]"
+              }
+            }
+          }
+        },
+        {
+          "instance": "B",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        }
+      ]
+    }
+  ]
+}

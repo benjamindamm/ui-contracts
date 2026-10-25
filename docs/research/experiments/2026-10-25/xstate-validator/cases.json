@@ -1,0 +1,8 @@
+[
+ {"id":"json-machine-control","kind":"control","expected":{"accepted":true,"initialState":"closed"}},
+ {"id":"schemas-false-is-metadata","kind":"false","expected":{"accepted":true,"schemasPreserved":true}},
+ {"id":"schemas-parser-not-invoked","kind":"hook","expected":{"accepted":true,"parserCalls":0,"schemasPreserved":true}},
+ {"id":"context-violates-supplied-json-schema","kind":"context","expected":{"accepted":true,"initialValueType":"number","initialValue":42}},
+ {"id":"invalid-target-original-graph-check","kind":"target","expected":{"accepted":false}},
+ {"id":"restore-snapshot-context-is-not-source-schema","kind":"snapshot","expected":{"accepted":true,"restoredValueType":"number","restoredValue":42}}
+]

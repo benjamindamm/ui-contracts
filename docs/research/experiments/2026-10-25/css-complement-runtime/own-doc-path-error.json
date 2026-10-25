@@ -1,0 +1,5 @@
+{
+  "stage": "documentation maintenance after all runtime results and remainder output were saved",
+  "error": "TASKS.md looked up under docs/research instead of repository root",
+  "correction": "root path corrected; runtime cases and original sources unchanged; task-only tail completed"
+}

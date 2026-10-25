@@ -1,0 +1,2 @@
+import type {Spec} from "../../original-Spec";
+const value:Spec={"name": "ResearchInput", "version": "0.0.0-research", "description": "Own common-subset fixture for original OpenUI Spec type, not canonical format choice", "license": "UNLICENSED", "components": {"Input": {"description": "Input contribution", "group": "research", "props": {"value": {"type": "string", "default": "alpha", "description": "Public committed value; original type unchanged"}}}}};

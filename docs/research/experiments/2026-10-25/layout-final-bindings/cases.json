@@ -1,0 +1,172 @@
+[
+  {
+    "id": "ux-anchor-control",
+    "candidate": "UXSpec",
+    "criterion": "V04",
+    "model": "uxspec",
+    "action": "base",
+    "expected": {
+      "gap": 8
+    }
+  },
+  {
+    "id": "ux-anchor-grown-input",
+    "candidate": "UXSpec",
+    "criterion": "V04",
+    "model": "uxspec",
+    "action": "grow",
+    "expected": {
+      "gap": 8,
+      "inputHeight": 40
+    }
+  },
+  {
+    "id": "ux-anchor-foreign-instance",
+    "candidate": "UXSpec",
+    "criterion": "V04",
+    "model": "uxspec",
+    "action": "foreign-input",
+    "expected": {
+      "error": "foreign-instance-input"
+    }
+  },
+  {
+    "id": "ux-anchor-missing-target",
+    "candidate": "UXSpec",
+    "criterion": "V04",
+    "model": "uxspec",
+    "action": "missing-input",
+    "expected": {
+      "error": "missing-native-input"
+    }
+  },
+  {
+    "id": "ux-anchor-wrong-unit",
+    "candidate": "UXSpec",
+    "criterion": "V04",
+    "model": "uxspec",
+    "action": "wrong-unit",
+    "expected": {
+      "error": "unsupported-gap-unit"
+    }
+  },
+  {
+    "id": "ux-scroll-additional-policy",
+    "candidate": "UXSpec",
+    "criterion": "V06",
+    "model": "uxspec",
+    "action": "scroll",
+    "expected": {
+      "height": 160,
+      "scrollHeight": 224,
+      "scrollTop": 64,
+      "originalMapperInterpretsOverflow": false,
+      "overflow": "auto"
+    }
+  },
+  {
+    "id": "ux-scroll-missing-policy",
+    "candidate": "UXSpec",
+    "criterion": "V06",
+    "model": "uxspec",
+    "action": "no-scroll-policy",
+    "expected": {
+      "error": "missing-additional-overflow-policy"
+    }
+  },
+  {
+    "id": "ux-scroll-foreign-port",
+    "candidate": "UXSpec",
+    "criterion": "V06",
+    "model": "uxspec",
+    "action": "foreign-popup",
+    "expected": {
+      "error": "foreign-instance-popup"
+    }
+  },
+  {
+    "id": "us-anchor-control",
+    "candidate": "uSpec",
+    "criterion": "V04",
+    "model": "uspec",
+    "action": "base",
+    "expected": {
+      "gap": 8
+    }
+  },
+  {
+    "id": "us-anchor-grown-input",
+    "candidate": "uSpec",
+    "criterion": "V04",
+    "model": "uspec",
+    "action": "grow",
+    "expected": {
+      "gap": 8,
+      "inputHeight": 40
+    }
+  },
+  {
+    "id": "us-anchor-foreign-instance",
+    "candidate": "uSpec",
+    "criterion": "V04",
+    "model": "uspec",
+    "action": "foreign-input",
+    "expected": {
+      "error": "foreign-instance-input"
+    }
+  },
+  {
+    "id": "us-anchor-unresolved-original",
+    "candidate": "uSpec",
+    "criterion": "V04",
+    "model": "uspec-unresolved",
+    "action": "base",
+    "expected": {
+      "error": "unresolved-original-anchor"
+    }
+  },
+  {
+    "id": "us-overflow-clipped",
+    "candidate": "uSpec",
+    "criterion": "V06",
+    "model": "uspec",
+    "action": "clip",
+    "expected": {
+      "overflow": "clip",
+      "lastPainted": false,
+      "scrollTop": 0
+    }
+  },
+  {
+    "id": "us-overflow-visible",
+    "candidate": "uSpec",
+    "criterion": "V06",
+    "model": "uspec-visible",
+    "action": "clip",
+    "expected": {
+      "overflow": "visible",
+      "lastPainted": true,
+      "scrollTop": 0
+    }
+  },
+  {
+    "id": "us-overflow-untyped-original",
+    "candidate": "uSpec",
+    "criterion": "V06",
+    "model": "uspec-invalid-clip",
+    "action": "clip",
+    "expected": {
+      "error": "unsupported-original-clipping-value"
+    }
+  },
+  {
+    "id": "us-overflow-missing-original",
+    "candidate": "uSpec",
+    "criterion": "V06",
+    "model": "uspec-missing-clip",
+    "action": "clip",
+    "expected": {
+      "error": "missing-original-clipping-value"
+    }
+  }
+]

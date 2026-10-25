@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-25",
+  "original_revision": "86f78a228204d63baa0b8bca2676d9f26190e449",
+  "original_files": [
+    {
+      "file": "../panda-reader/sources/panda/packages/compiler-shared/src/design-system-spec/read.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/read.ts",
+      "sha256": "7b82843edd25a4794fdc0f9ba279b577d9eb82283e35b5f6be652bf4044bef63"
+    },
+    {
+      "file": "../panda-reader/sources/panda/packages/compiler-shared/src/design-system-spec/types.ts",
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/types.ts",
+      "sha256": "05c7388cbdfc35eba9c9bf2eeb4b85269e8c0af4746b1669a72b794761a7613a"
+    }
+  ],
+  "transpiled_original_reader": {
+    "file": "../panda-reader/read.cjs",
+    "sha256": "59358b994f0dc8fddc2b5b0d6dba96a159becc953e0c65ec384dd9ac36d5548b"
+  },
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "be2e240b0be220e9250112ac34c4d08172d76e17f0a3a733dc1f88377b595486"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "d5918c1cb47f0d1631fb9d6bf9a9c5082313ff47a6452c19f59a50e6feb470bf"
+    },
+    {
+      "file": "categories-number.ts",
+      "sha256": "a4f389e9cbace3b79eb11a2405a9b9a87e08094e922bf7d23fb390434492c1c5"
+    },
+    {
+      "file": "category-range-outside-paths.ts",
+      "sha256": "493679bb2e9140f801aa306b52e9f9216716172ac0fbb7ef072f4917f91fee13"
+    },
+    {
+      "file": "missing-conditions-themes.ts",
+      "sha256": "ec8efee84adc6ee43a0c0f07efb092fdb72cb1932fc033f62e03eac99ed6208d"
+    },
+    {
+      "file": "missing-reference-target.ts",
+      "sha256": "91992ef0340a77c47fd233860e124d78de6e3089df2a08e0108f0f5874276639"
+    },
+    {
+      "file": "negative-schema-number.ts",
+      "sha256": "f78fcc69ca149747870ca2095f8fa479258a5d36f927f171542b932ad2e2eba6"
+    },
+    {
+      "file": "null-value-row.ts",
+      "sha256": "dd17eada32d0b174b9dfa59031252504fd34cc0815371f8a72cb7b667fadb4a9"
+    },
+    {
+      "file": "numeric-value-string-field.ts",
+      "sha256": "1956b66914f32f6df642a32aea7cdd46c883487ecefc9789adfa679cc6e1ed03"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "8c10a60fbda4098cce72db5fc83b1ab0d4d6ffe41e0b6ae43d33e322d9bdb413"
+    },
+    {
+      "file": "results.json",
+      "sha256": "2b0f7dca99e20f127b94592913def9f98d40903767cf799a3e87c41577cdb5dd"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "de8174bd84089e4185504995a0249e1cf84b220e47a03f6f937039d8445a8dfd"
+    },
+    {
+      "file": "tokens-boolean.ts",
+      "sha256": "e8aa5e22614e1cf4120ebfdb33c24d2c7be5a6dca6f8596799a498e197bc88e7"
+    },
+    {
+      "file": "valid-export.ts",
+      "sha256": "5db65934e4f028e66087e139b75a4e74a6a91513d900e787b58c6639005b76f2"
+    }
+  ],
+  "typescript": "5.9.3",
+  "node": "v24.22.1",
+  "additional_binding": "controlled JSON literal to original DesignSystemSpec static assignment",
+  "original_json_schema_created": false,
+  "conditions": 9
+}

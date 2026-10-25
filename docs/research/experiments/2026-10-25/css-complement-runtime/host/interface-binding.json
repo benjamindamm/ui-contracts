@@ -1,0 +1,28 @@
+{
+  "sourceSha256": "ee9d7406e6ac9dd1189296da53baf86fabd7a3d0201d32269241cd8f1f7f4614",
+  "declaration": "ResearchCombobox",
+  "properties": {
+    "maxHeight": "number",
+    "enabled": "boolean",
+    "query": "string"
+  },
+  "parts": [
+    "input",
+    "popup",
+    "list",
+    "option"
+  ],
+  "publicEvent": "value-change",
+  "payload": {
+    "value": {
+      "type": "StringKeyword",
+      "required": true
+    },
+    "query": {
+      "type": "StringKeyword",
+      "required": true
+    }
+  },
+  "originalSignature": "CustomEvent<{value:string;query:string}>",
+  "method": "Additional bounded interpretation of original CEM TypeScript metadata by actual TypeScript AST; no native CEM-to-DOM router"
+}

@@ -1,0 +1,502 @@
+{
+  "node": "v24.22.1",
+  "package": "@google/design.md",
+  "version": "0.4.0",
+  "caseFileSha256": "dee98e902885583f818deb4011f88ddf83004fd2bbd20a6fee68ba152eb91b2f",
+  "bundleSha256": "a76ab9c2ee8a1bc6ad709167c3c7f06e64a5e2253d9718d3c2a8c51824272423",
+  "method": "Published original linter public API with default rules, no wrapper monkeypatching or custom rules. Expectations saved before execution.",
+  "cases": [
+    {
+      "id": "missing-reference-used",
+      "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.missing}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.primary}\"\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": true
+      },
+      "criterion": "Missing reference consumed by component is collected as unresolvedRef",
+      "observations": {
+        "returned": true,
+        "errors": 1,
+        "warnings": 0,
+        "primary": null,
+        "findings": [
+          {
+            "severity": "error",
+            "path": "components.button",
+            "message": "Reference {colors.primary} does not resolve to any defined token.",
+            "rule": "broken-ref"
+          },
+          {
+            "severity": "info",
+            "message": "Design system defines 1 component.",
+            "rule": "token-summary"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {
+            "button": {
+              "properties": {
+                "backgroundColor": "{colors.primary}"
+              },
+              "unresolvedRefs": [
+                "{colors.primary}"
+              ]
+            }
+          },
+          "symbolTable": {
+            "colors.primary": "{colors.missing}"
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "error",
+            "path": "components.button",
+            "message": "Reference {colors.primary} does not resolve to any defined token.",
+            "rule": "broken-ref"
+          },
+          {
+            "severity": "info",
+            "message": "Design system defines 1 component.",
+            "rule": "token-summary"
+          }
+        ],
+        "summary": {
+          "errors": 1,
+          "warnings": 0,
+          "infos": 1
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.missing}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.primary}\"\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "reference-cycle-used",
+      "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.secondary}\"\n  secondary: \"{colors.primary}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.primary}\"\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": true
+      },
+      "criterion": "Cycle consumed by component cannot resolve",
+      "observations": {
+        "returned": true,
+        "errors": 1,
+        "warnings": 0,
+        "primary": null,
+        "findings": [
+          {
+            "severity": "error",
+            "path": "components.button",
+            "message": "Reference {colors.primary} does not resolve to any defined token.",
+            "rule": "broken-ref"
+          },
+          {
+            "severity": "info",
+            "message": "Design system defines 1 component.",
+            "rule": "token-summary"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {
+            "button": {
+              "properties": {
+                "backgroundColor": "{colors.primary}"
+              },
+              "unresolvedRefs": [
+                "{colors.primary}"
+              ]
+            }
+          },
+          "symbolTable": {
+            "colors.primary": "{colors.secondary}",
+            "colors.secondary": "{colors.primary}"
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "error",
+            "path": "components.button",
+            "message": "Reference {colors.primary} does not resolve to any defined token.",
+            "rule": "broken-ref"
+          },
+          {
+            "severity": "info",
+            "message": "Design system defines 1 component.",
+            "rule": "token-summary"
+          }
+        ],
+        "summary": {
+          "errors": 1,
+          "warnings": 0,
+          "infos": 1
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.secondary}\"\n  secondary: \"{colors.primary}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.primary}\"\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "valid-alias-used",
+      "content": "---\nname: Probe\ncolors:\n  primary: \"#000\"\n  secondary: \"{colors.primary}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.secondary}\"\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": false
+      },
+      "criterion": "Valid typed reference control",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": {
+          "type": "color",
+          "hex": "#000000",
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "luminance": 0
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 2 colors, 1 component.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {
+            "primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            },
+            "secondary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {
+            "button": {
+              "properties": {
+                "backgroundColor": {
+                  "type": "color",
+                  "hex": "#000000",
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "luminance": 0
+                }
+              },
+              "unresolvedRefs": []
+            }
+          },
+          "symbolTable": {
+            "colors.primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            },
+            "colors.secondary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 2 colors, 1 component.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 3
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {
+                  "primary": "#000000",
+                  "secondary": "#000000"
+                },
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\ncolors:\n  primary: \"#000\"\n  secondary: \"{colors.primary}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.secondary}\"\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "invalid-spacing-used",
+      "content": "---\nname: Probe\ncolors:\n  primary: \"#000\"\nspacing:\n  md: 16bananas\ncomponents:\n  button:\n    padding: \"{spacing.md}\"\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": false
+      },
+      "criterion": "Raw spacing resolved into component is not dimensional schema validation",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": {
+          "type": "color",
+          "hex": "#000000",
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "luminance": 0
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color, 1 component.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {
+            "primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {
+            "button": {
+              "properties": {
+                "padding": "16bananas"
+              },
+              "unresolvedRefs": []
+            }
+          },
+          "symbolTable": {
+            "colors.primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            },
+            "spacing.md": "16bananas"
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color, 1 component.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 3
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {
+                  "primary": "#000000"
+                },
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\ncolors:\n  primary: \"#000\"\nspacing:\n  md: 16bananas\ncomponents:\n  button:\n    padding: \"{spacing.md}\"\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "scope": "Browser UI automation on own research host with original graph/projection/classifier/state/Vue/Reka chain; final step native programmatic disabled click, no physical keyboard/AT",
+  "cases": [
+    {
+      "id": "initial",
+      "expectedChecked": [
+        false,
+        false
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false
+    },
+    {
+      "id": "toggle-a-on",
+      "expectedChecked": [
+        true,
+        false
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false
+    },
+    {
+      "id": "toggle-b-on",
+      "expectedChecked": [
+        true,
+        true
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false
+    },
+    {
+      "id": "toggle-a-off",
+      "expectedChecked": [
+        false,
+        true
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false
+    },
+    {
+      "id": "toggle-b-off",
+      "expectedChecked": [
+        false,
+        false
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": false
+    },
+    {
+      "id": "disabled-a-programmatic-click",
+      "expectedChecked": [
+        false,
+        false
+      ],
+      "expectedNames": [
+        "Option A",
+        "Option B"
+      ],
+      "expectedDisabledA": true
+    }
+  ]
+}

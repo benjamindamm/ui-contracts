@@ -1,0 +1,21 @@
+{
+  "heightsPx": [
+    24,
+    48,
+    36,
+    24,
+    60,
+    28,
+    40
+  ],
+  "scrollHeightPx": 260,
+  "maxHeightPx": 160,
+  "fullyVisibleRows": 4,
+  "gapPx": 8,
+  "tolerancePx": 1,
+  "instances": [
+    "a",
+    "b"
+  ],
+  "scope": "Additional visual variant; five equal rows are not inferred for variable heights"
+}

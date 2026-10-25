@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-25",
+  "source": "S124",
+  "original_code_modified": false,
+  "original_files": [
+    {
+      "local_provenance_path": "work/op-projection-origin/tool-inventory.json",
+      "sha256": "ce880bf2622ec8f06eb0626117bcec22cd4d9b88285277cbb01288c10399ae8d"
+    },
+    {
+      "local_provenance_path": "work/op-radio-names/sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "sha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953"
+    },
+    {
+      "local_provenance_path": "work/op-radio-names/sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "sha256": "89981b668b43475f96e050fa267b51bb3eeac4ad43dc2e95418d127fe8890259"
+    },
+    {
+      "local_provenance_path": "work/op-radio-names/sources/packages/vue/src/canvas/islands/state.ts",
+      "sha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963"
+    },
+    {
+      "local_provenance_path": "work/op-radio-names/sources/packages/vue/src/canvas/islands/render.ts",
+      "sha256": "9f8b3c79a4bbfbc3c3d7f91fdf524b4398eab040f4414ebde2b16f3dd03d65a9"
+    },
+    {
+      "local_provenance_path": "work/validation-probes/sources/cem.schema.json",
+      "sha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "95687a1d7f048e2ab5d464804bc434db557d554916e65cc936293730194489d0"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "4f62d20995a83f2b222454da90aeff6fd06995226d3b8f63c5f1039373ce2bed"
+    },
+    {
+      "file": "extraction.json",
+      "sha256": "79511d680a9f7cafb0500d7e70c2f8440d0378fb997fcbd8efb4c5e8c2f1ebe5"
+    },
+    {
+      "file": "fixtures/accessibility-revision/accessibility.html",
+      "sha256": "2949357fd4aa87ba33499151f4c6154c67fd73bbe9fb8d20fd7889ff2da59ab2"
+    },
+    {
+      "file": "fixtures/accessibility-revision/actual.html",
+      "sha256": "672759c86e1931cb0d4254483903045b14bdc54408f4e9daaeae9a35ef1e4c30"
+    },
+    {
+      "file": "fixtures/accessibility-revision/behavior.json",
+      "sha256": "a656dd6e9bbf9efede6d1957107d494e40fa2c6f4af9db329ea5aeb66d463113"
+    },
+    {
+      "file": "fixtures/accessibility-revision/interface.json",
+      "sha256": "6d36454540c9e1c22b60f612fb5e7a4b53d4c9def2ae383fdb9931269f2238ef"
+    },
+    {
+      "file": "fixtures/accessibility-revision/visual.css",
+      "sha256": "f56c4b3d1eba00d777642a56ed2fcfc204462e9d5045a273765a30374622efbc"
+    },
+    {
+      "file": "fixtures/behavior-role-conflict/accessibility.html",
+      "sha256": "063bf19f14d6af9f877a04db091a3c8272df0ed36834feb55c084c8880f954a9"
+    },
+    {
+      "file": "fixtures/behavior-role-conflict/actual.html",
+      "sha256": "4d1594e6461c979b775eb82443557df9dadc44c68749612ea135ce913fb4abe9"
+    },
+    {
+      "file": "fixtures/behavior-role-conflict/behavior.json",
+      "sha256": "f3d703bfea5e064e1dbfcbf3e71e8f4fb79ac4f35ca955c839ac17bea3d2bcc9"
+    },
+    {
+      "file": "fixtures/behavior-role-conflict/interface.json",
+      "sha256": "6d36454540c9e1c22b60f612fb5e7a4b53d4c9def2ae383fdb9931269f2238ef"
+    },
+    {
+      "file": "fixtures/behavior-role-conflict/visual.css",
+      "sha256": "f56c4b3d1eba00d777642a56ed2fcfc204462e9d5045a273765a30374622efbc"
+    },
+    {
+      "file": "fixtures/control/accessibility.html",
+      "sha256": "063bf19f14d6af9f877a04db091a3c8272df0ed36834feb55c084c8880f954a9"
+    },
+    {
+      "file": "fixtures/control/actual.html",
+      "sha256": "0ff71d2b21106d2fe27c0951dd8f40ed65e2e271c2f68e504321ea513eedb1b6"
+    },
+    {
+      "file": "fixtures/control/behavior.json",
+      "sha256": "a656dd6e9bbf9efede6d1957107d494e40fa2c6f4af9db329ea5aeb66d463113"
+    },
+    {
+      "file": "fixtures/control/interface.json",
+      "sha256": "6d36454540c9e1c22b60f612fb5e7a4b53d4c9def2ae383fdb9931269f2238ef"
+    },
+    {
+      "file": "fixtures/control/visual.css",
+      "sha256": "f56c4b3d1eba00d777642a56ed2fcfc204462e9d5045a273765a30374622efbc"
+    },
+    {
+      "file": "fixtures/interface-default-revision/accessibility.html",
+      "sha256": "063bf19f14d6af9f877a04db091a3c8272df0ed36834feb55c084c8880f954a9"
+    },
+    {
+      "file": "fixtures/interface-default-revision/actual.html",
+      "sha256": "b8763e6636013919b657bb4c247b49414e0f476e5dd842e63d4eddad25366292"
+    },
+    {
+      "file": "fixtures/interface-default-revision/behavior.json",
+      "sha256": "a656dd6e9bbf9efede6d1957107d494e40fa2c6f4af9db329ea5aeb66d463113"
+    },
+    {
+      "file": "fixtures/interface-default-revision/interface.json",
+      "sha256": "56763df957ff0cc6b9738560e1bdcf18bd31e518043329957b79a6643cb7b178"
+    },
+    {
+      "file": "fixtures/interface-default-revision/visual.css",
+      "sha256": "f56c4b3d1eba00d777642a56ed2fcfc204462e9d5045a273765a30374622efbc"
+    },
+    {
+      "file": "fixtures/visual-revision/accessibility.html",
+      "sha256": "063bf19f14d6af9f877a04db091a3c8272df0ed36834feb55c084c8880f954a9"
+    },
+    {
+      "file": "fixtures/visual-revision/actual.html",
+      "sha256": "fee258d80be811546656676ebf6d443a49ad1bd64e58499f23a61c954bedbd28"
+    },
+    {
+      "file": "fixtures/visual-revision/behavior.json",
+      "sha256": "a656dd6e9bbf9efede6d1957107d494e40fa2c6f4af9db329ea5aeb66d463113"
+    },
+    {
+      "file": "fixtures/visual-revision/interface.json",
+      "sha256": "6d36454540c9e1c22b60f612fb5e7a4b53d4c9def2ae383fdb9931269f2238ef"
+    },
+    {
+      "file": "fixtures/visual-revision/visual.css",
+      "sha256": "dac32dd219c675e95a8a5cd33d9afb49d157645fdd2ed0074369c27f8686268b"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "ec09ac5135752988c5892d427e71070a53ff08103da9a8f869a96a7a318d52cd"
+    },
+    {
+      "file": "rendered-source-check.json",
+      "sha256": "5bf566ce389433590a2c31e986a82b35802bef8bc586215c9e0d48607bb301d5"
+    },
+    {
+      "file": "results.json",
+      "sha256": "104f7641a2217307d037694982c6450a0d8e2b85b5cb124f06b3f306b30c3746"
+    },
+    {
+      "file": "run.mjs",
+      "sha256": "cbf8315cd3e98c3b31e9f3f1472e45ade9699bfa3b3c9e7052c6f1ff5e86c4b5"
+    }
+  ],
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "production_component_implemented": false,
+  "original_module_initialization_scope": "Full original cache/builder/compiler APIs; original Vue/extractDims declarations isolated exactly as separately documented, no whole editor or Figma SDK",
+  "reproduction_note": "Provide pinned original sibling files/dependencies at documented paths. Original modules/transpiled map not redistributed as own implementation."
+}

@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "schemaVersion": "1",
+    "generatedAt": "2026-10-25T17:00:00Z",
+    "fileKey": "research-file",
+    "nodeId": "root",
+    "componentSlug": "autocomplete",
+    "baseSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "data": {
+    "componentName": "Foreign",
+    "axes": [],
+    "booleanProps": [],
+    "states": [],
+    "slots": []
+  }
+}

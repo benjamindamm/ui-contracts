@@ -1,0 +1,55 @@
+{
+  "kind": "native static host geometry using actual prior original CSS export; not an interactive component",
+  "cases": [
+    {
+      "id": "original-export-192-native",
+      "value": 192,
+      "expectedHeights": [
+        192,
+        192
+      ],
+      "observed": [
+        {
+          "expanded": "true",
+          "height": 192,
+          "id": "popup-a",
+          "maxHeight": "192px",
+          "token": "192px"
+        },
+        {
+          "expanded": "true",
+          "height": 192,
+          "id": "popup-b",
+          "maxHeight": "192px",
+          "token": "192px"
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "independent-visual-revision-160-native",
+      "value": 160,
+      "expectedHeights": [
+        160,
+        160
+      ],
+      "observed": [
+        {
+          "expanded": "true",
+          "height": 160,
+          "id": "popup-a",
+          "maxHeight": "160px",
+          "token": "160px"
+        },
+        {
+          "expanded": "true",
+          "height": 160,
+          "id": "popup-b",
+          "maxHeight": "160px",
+          "token": "160px"
+        }
+      ],
+      "expectationMet": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ui-contracts-original-scene-projection-research",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "@open-pencil/dom-css": "0.16.0",
+    "@open-pencil/scene-graph": "0.16.0",
+    "vue": "3.5.41",
+    "reka-ui": "2.10.5"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.6"
+  }
+}

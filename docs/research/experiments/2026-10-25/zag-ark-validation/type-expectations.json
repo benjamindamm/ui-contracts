@@ -1,0 +1,1 @@
+[{"id":"ark-sdk-valid-boolean","file":"ark-valid.ts","expectedAccepted":true},{"id":"ark-sdk-invalid-open-string","file":"ark-invalid-open.ts","expectedAccepted":false},{"id":"ark-sdk-invalid-plain-array-collection","file":"ark-invalid-collection.ts","expectedAccepted":false}]

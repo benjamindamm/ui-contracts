@@ -1,0 +1,116 @@
+{
+  "scope": "Actual unchanged original APG example class with own four-domain sources; actual native max-height and label text, no actual accessible-name/AT or full keyboard test",
+  "cases": [
+    {
+      "id": "base",
+      "expected": {
+        "height": 160,
+        "label": "Search A",
+        "options": [
+          "Alaska"
+        ],
+        "nativeType": "HTMLInputElement",
+        "className": "ComboboxAutocomplete",
+        "fourDistinctSources": true
+      },
+      "observed": {
+        "actualList": "list-a",
+        "className": "ComboboxAutocomplete",
+        "controlledList": "list-a",
+        "fourDistinctSources": true,
+        "height": 160,
+        "isList": true,
+        "label": "Search A",
+        "nativeType": "HTMLInputElement",
+        "options": [
+          "Alaska"
+        ],
+        "originalBootstrapMatches": 0,
+        "sourceField": "input-a",
+        "interfaceTypeBound": true,
+        "otherSourcesByteIdentical": true
+      },
+      "sourceHashes": {
+        "interface.json": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057",
+        "behavior.js": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+        "visual.css": "073d3ee624dd54b0e3e5373b93c853401685c62d0eb7540f32f5b2e2c0c6f444",
+        "accessibility.html": "8ae5dc948d4ad846e3fc67d70e81c787f54579475b6c87325398b9561d9f7506"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "visual-revision",
+      "expected": {
+        "height": 192,
+        "label": "Search A",
+        "options": [
+          "Alaska"
+        ],
+        "nativeType": "HTMLInputElement",
+        "className": "ComboboxAutocomplete",
+        "fourDistinctSources": true
+      },
+      "observed": {
+        "actualList": "list-a",
+        "className": "ComboboxAutocomplete",
+        "controlledList": "list-a",
+        "fourDistinctSources": true,
+        "height": 192,
+        "isList": true,
+        "label": "Search A",
+        "nativeType": "HTMLInputElement",
+        "options": [
+          "Alaska"
+        ],
+        "originalBootstrapMatches": 0,
+        "sourceField": "input-a",
+        "interfaceTypeBound": true,
+        "otherSourcesByteIdentical": true
+      },
+      "sourceHashes": {
+        "interface.json": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057",
+        "behavior.js": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+        "visual.css": "d21c7c29e44fd411fcf04d5ddc75c6977c3c792ae1c4d178b11eeb83219f49e3",
+        "accessibility.html": "8ae5dc948d4ad846e3fc67d70e81c787f54579475b6c87325398b9561d9f7506"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "accessibility-revision",
+      "expected": {
+        "height": 160,
+        "label": "Find A",
+        "options": [
+          "Alaska"
+        ],
+        "nativeType": "HTMLInputElement",
+        "className": "ComboboxAutocomplete",
+        "fourDistinctSources": true
+      },
+      "observed": {
+        "actualList": "list-a",
+        "className": "ComboboxAutocomplete",
+        "controlledList": "list-a",
+        "fourDistinctSources": true,
+        "height": 160,
+        "isList": true,
+        "label": "Find A",
+        "nativeType": "HTMLInputElement",
+        "options": [
+          "Alaska"
+        ],
+        "originalBootstrapMatches": 0,
+        "sourceField": "input-a",
+        "interfaceTypeBound": true,
+        "otherSourcesByteIdentical": true
+      },
+      "sourceHashes": {
+        "interface.json": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057",
+        "behavior.js": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+        "visual.css": "073d3ee624dd54b0e3e5373b93c853401685c62d0eb7540f32f5b2e2c0c6f444",
+        "accessibility.html": "dd23aa51d0ee94c943c335a5d1ffd00217552a86a0862f753732184971dbfc7a"
+      },
+      "expectationMet": true
+    }
+  ]
+}

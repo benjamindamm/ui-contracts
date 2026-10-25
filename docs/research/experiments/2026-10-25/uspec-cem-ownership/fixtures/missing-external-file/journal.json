@@ -1,0 +1,21 @@
+{
+  "kind": "Additional source/fact/output change provenance, not original uSpec ownership service",
+  "information": "public-property-name-and-type",
+  "leading": "foreign CEM member; Evidence fact and local API row are derived",
+  "before": {
+    "source": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+    "fact": "17ab4d927c6dbd992513ceb97e39691dca5061be67c0514aff6aecb42a28e194",
+    "output": "17ab4d927c6dbd992513ceb97e39691dca5061be67c0514aff6aecb42a28e194"
+  },
+  "after": {
+    "source": null,
+    "fact": "17ab4d927c6dbd992513ceb97e39691dca5061be67c0514aff6aecb42a28e194",
+    "output": "17ab4d927c6dbd992513ceb97e39691dca5061be67c0514aff6aecb42a28e194"
+  },
+  "sourceChanged": true,
+  "factChanged": false,
+  "outputChanged": false,
+  "originalValidation": true,
+  "additionalDecision": "missing-external-artifact",
+  "resolved": null
+}

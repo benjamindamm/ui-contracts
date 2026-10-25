@@ -1,0 +1,297 @@
+{
+  "$schema": "https://uspec.design/schemas/component-contract-1.0.json",
+  "accessibility": {
+    "_deltaExtractions": [],
+    "_extractionArtifacts": {
+      "variantAxes": []
+    },
+    "componentName": "Autocomplete",
+    "states": [
+      {
+        "name": "default",
+        "sections": [
+          {
+            "tables": [],
+            "title": "ARIA (Web)"
+          },
+          {
+            "tables": [],
+            "title": "TalkBack (Android)"
+          },
+          {
+            "tables": [],
+            "title": "VoiceOver (iOS)"
+          }
+        ]
+      }
+    ]
+  },
+  "anatomy": {
+    "composition": {},
+    "defaultTree": {
+      "children": [
+        {
+          "dimensions": {
+            "height": 20
+          },
+          "id": "input-1",
+          "name": "Input"
+        },
+        {
+          "children": [
+            {
+              "id": "result-0",
+              "text": "Result 1"
+            },
+            {
+              "id": "result-1",
+              "text": "Result 2"
+            },
+            {
+              "id": "result-2",
+              "text": "Result 3"
+            },
+            {
+              "id": "result-3",
+              "text": "Result 4"
+            },
+            {
+              "id": "result-4",
+              "text": "Result 5"
+            },
+            {
+              "id": "result-5",
+              "text": "Result 6"
+            },
+            {
+              "id": "result-6",
+              "text": "Result 7"
+            }
+          ],
+          "dimensions": {
+            "clipsContent": {
+              "display": "true",
+              "token": null,
+              "value": true
+            }
+          },
+          "id": "popup-1",
+          "name": "Popup"
+        }
+      ],
+      "id": "v1"
+    },
+    "subcomponents": null
+  },
+  "api": {
+    "_deltaExtractions": [],
+    "_extractionArtifacts": {
+      "variantAxes": []
+    },
+    "componentName": "Autocomplete",
+    "configurationExamples": [
+      {
+        "properties": [],
+        "title": "Default"
+      }
+    ],
+    "mainTable": {
+      "properties": []
+    },
+    "subComponentTables": []
+  },
+  "color": {
+    "_deltaExtractions": [],
+    "_extractionArtifacts": {
+      "variantAxes": []
+    },
+    "componentName": "Autocomplete",
+    "renderingStrategy": "A",
+    "variants": []
+  },
+  "component": {
+    "name": "Autocomplete",
+    "slug": "autocomplete"
+  },
+  "dictionary": {
+    "axes": [],
+    "booleanProps": [],
+    "componentName": "Autocomplete",
+    "slots": [],
+    "states": []
+  },
+  "generatedAt": "2026-10-25T17:00:00Z",
+  "provenance": {
+    "obligationCoverage": {
+      "api": {
+        "emitted": 0,
+        "merged": 0,
+        "omitted": 0,
+        "total": 0,
+        "unresolved": 0
+      },
+      "color": {
+        "emitted": 0,
+        "merged": 0,
+        "omitted": 0,
+        "total": 0,
+        "unresolved": 0
+      },
+      "structure": {
+        "emitted": 0,
+        "merged": 0,
+        "omitted": 0,
+        "total": 0,
+        "unresolved": 0
+      },
+      "voice": {
+        "emitted": 0,
+        "merged": 0,
+        "omitted": 0,
+        "total": 0,
+        "unresolved": 0
+      }
+    },
+    "preparedAt": "2026-10-25T17:00:00Z"
+  },
+  "reconciliations": {
+    "autoReconciled": [],
+    "retries": [],
+    "reviewedBenign": [],
+    "unresolved": []
+  },
+  "schemaVersion": "1.0",
+  "source": {
+    "baseSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "extractionSource": null,
+    "figmaUrl": "https://example.invalid/research",
+    "fileKey": "research-file",
+    "nodeId": "root"
+  },
+  "sourceModel": {
+    "childComposition": {},
+    "component": {},
+    "defaultTree": {
+      "children": [
+        {
+          "dimensions": {
+            "height": 20
+          },
+          "id": "input-1",
+          "name": "Input"
+        },
+        {
+          "children": [
+            {
+              "id": "result-0",
+              "text": "Result 1"
+            },
+            {
+              "id": "result-1",
+              "text": "Result 2"
+            },
+            {
+              "id": "result-2",
+              "text": "Result 3"
+            },
+            {
+              "id": "result-3",
+              "text": "Result 4"
+            },
+            {
+              "id": "result-4",
+              "text": "Result 5"
+            },
+            {
+              "id": "result-5",
+              "text": "Result 6"
+            },
+            {
+              "id": "result-6",
+              "text": "Result 7"
+            }
+          ],
+          "dimensions": {
+            "clipsContent": {
+              "display": "true",
+              "token": null,
+              "value": true
+            }
+          },
+          "id": "popup-1",
+          "name": "Popup"
+        }
+      ],
+      "id": "v1"
+    },
+    "defaultVariant": {
+      "id": "v1",
+      "name": "default",
+      "variantProperties": {}
+    },
+    "propertyDefinitions": {},
+    "source": {},
+    "variantAxes": []
+  },
+  "structure": {
+    "_deltaExtractions": [],
+    "_extractionArtifacts": {
+      "coverageMatrix": {
+        "complete": true
+      },
+      "variantAxes": []
+    },
+    "componentName": "Autocomplete",
+    "sections": [
+      {
+        "_anchor": {
+          "_targetDisposition": "resolved",
+          "layerId": "input-1",
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "columns": [
+          "Property",
+          "Description",
+          "Default"
+        ],
+        "rows": [
+          {
+            "_layerId": "input-1",
+            "_layerName": "Input",
+            "_targetDisposition": "resolved",
+            "_targetScope": "parent",
+            "_targetVariantId": "v1",
+            "_targetVariantName": "default",
+            "_targetVariantProperties": {},
+            "provenance": "measured",
+            "spec": "height",
+            "values": [
+              "20"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "confidence": {
+      "api": "high",
+      "color": "high",
+      "structure": "high",
+      "voice": "high"
+    },
+    "overview": "Own minimal research fixture"
+  },
+  "variants": {
+    "axes": [],
+    "default": {
+      "id": "v1",
+      "name": "default",
+      "variantProperties": {}
+    }
+  }
+}

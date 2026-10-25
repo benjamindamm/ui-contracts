@@ -1,0 +1,21 @@
+{
+  "originalSchemaSha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+  "cases": [
+    {
+      "id": "cem-native-field-types",
+      "file": "interface.json",
+      "expected": true,
+      "valid": true,
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "cem-wrong-native-type-still-structural",
+      "file": "wrong-type-interface.json",
+      "expected": true,
+      "valid": true,
+      "errors": [],
+      "expectationMet": true
+    }
+  ]
+}

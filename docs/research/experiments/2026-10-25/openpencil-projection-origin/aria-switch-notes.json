@@ -1,0 +1,10 @@
+{
+  "url": "https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#switch",
+  "readTextSha256": "7adea61395b75f435db233811ee875a682b449c4d8d1d855b65d90f79f0da959",
+  "findings": [
+    "Switch on/off is defined by aria-checked true/false.",
+    "Accessible name is required and may come from contents or author.",
+    "These are existing normative semantics, not a new status-message model."
+  ],
+  "browser_at_or_screenreader_execution_claimed": false
+}

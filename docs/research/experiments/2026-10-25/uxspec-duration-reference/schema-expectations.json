@@ -1,0 +1,12 @@
+[
+  {
+    "id": "consumer-original-uxspec-root",
+    "file": "fixtures/adapted-one-second/app.json",
+    "valid": true
+  },
+  {
+    "id": "generated-projection-original-uxspec-root",
+    "file": "fixtures/adapted-one-second/projection.json",
+    "valid": true
+  }
+]

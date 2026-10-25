@@ -1,0 +1,145 @@
+{
+  "scope": "Complete original SceneGraph slots/spec/controls and original Vue generator; actual referenced Reka Slider SSR separately composed, not generated Vue mounted, no native measured geometry",
+  "cases": [
+    {
+      "id": "quarter",
+      "value": 25,
+      "expected": {
+        "controls": 1,
+        "parts": 3,
+        "missingBindings": [],
+        "originalVueReferencesReka": true,
+        "thumbEdge": "calc(25% + 0px)"
+      },
+      "observed": {
+        "controls": 1,
+        "parts": 3,
+        "missingBindings": [],
+        "originalVueReferencesReka": true,
+        "thumbEdge": "calc(0% + 0px)"
+      },
+      "actual": {
+        "settings": {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 25
+        },
+        "roles": [
+          {
+            "path": "Slider A",
+            "type": "root"
+          },
+          {
+            "path": "Slider A/track",
+            "type": "part",
+            "part": "track"
+          },
+          {
+            "path": "Slider A/range",
+            "type": "part",
+            "part": "range"
+          },
+          {
+            "path": "Slider A/thumb",
+            "type": "part",
+            "part": "thumb"
+          }
+        ],
+        "generated": [
+          {
+            "name": "ResearchSlider",
+            "layerId": "slider-4",
+            "files": [
+              {
+                "path": "ResearchSlider.vue",
+                "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { SliderRange, SliderRoot, SliderThumb, SliderTrack } from 'reka-ui';\n\nconst value = defineModel<number>('value', { default: 25 });\n\nconst values = computed({\n  get: () => [value.value],\n  set: (next: number[] | undefined) => {\n    value.value = next?.[0] ?? value.value;\n  }\n});\n</script>\n\n<template>\n  <SliderRoot :min=\"0\" :max=\"100\" :step=\"1\" class=\"research-slider\" v-model=\"values\">\n    <SliderTrack class=\"research-slider__track\" />\n    <SliderRange class=\"research-slider__range\" />\n    <SliderThumb class=\"research-slider__thumb\" />\n  </SliderRoot>\n</template>\n\n<style scoped>\n.research-slider { box-sizing: border-box; width: 200px; height: 32px; position: relative; display: block; }\n.research-slider .research-slider__track { box-sizing: border-box; width: 200px; height: 16px; position: absolute; left: 0px; top: 0px; }\n.research-slider .research-slider__range { box-sizing: border-box; height: 16px; position: absolute; top: 0px; }\n.research-slider .research-slider__thumb { box-sizing: border-box; width: 16px; height: 16px; position: absolute; top: 0px; }\n</style>\n",
+                "layerIds": [
+                  null,
+                  null,
+                  "slider-4",
+                  "slider-5",
+                  "slider-6",
+                  "slider-7",
+                  null
+                ]
+              }
+            ]
+          }
+        ],
+        "referencedOriginalRekaHtml": "<span data-slider-impl dir=\"ltr\" data-orientation=\"horizontal\" style=\"--reka-slider-thumb-transform:translateX(-50%);\" aria-disabled=\"false\"><!--[--><!--[--><!--[--><span data-orientation=\"horizontal\" style=\"position:relative;width:200px;\"><!--[--><span data-orientation=\"horizontal\" style=\"left:0%;right:75%;\"><!--[--><!--]--></span><span data-reka-collection-item aria-label=\"Research value\" role=\"slider\" tabindex=\"0\" data-orientation=\"horizontal\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-orientation=\"horizontal\" style=\"transform:var(--reka-slider-thumb-transform);position:absolute;left:calc(0% + 0px);display:none;\"><!--[--><!--]--></span><!--]--></span><!--]--><!--v-if--><!--]--><!--]--></span>"
+      },
+      "expectationMet": false
+    },
+    {
+      "id": "three-quarters",
+      "value": 75,
+      "expected": {
+        "controls": 1,
+        "parts": 3,
+        "missingBindings": [],
+        "originalVueReferencesReka": true,
+        "thumbEdge": "calc(75% + 0px)"
+      },
+      "observed": {
+        "controls": 1,
+        "parts": 3,
+        "missingBindings": [],
+        "originalVueReferencesReka": true,
+        "thumbEdge": "calc(0% + 0px)"
+      },
+      "actual": {
+        "settings": {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 75
+        },
+        "roles": [
+          {
+            "path": "Slider A",
+            "type": "root"
+          },
+          {
+            "path": "Slider A/track",
+            "type": "part",
+            "part": "track"
+          },
+          {
+            "path": "Slider A/range",
+            "type": "part",
+            "part": "range"
+          },
+          {
+            "path": "Slider A/thumb",
+            "type": "part",
+            "part": "thumb"
+          }
+        ],
+        "generated": [
+          {
+            "name": "ResearchSlider",
+            "layerId": "slider-4",
+            "files": [
+              {
+                "path": "ResearchSlider.vue",
+                "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { SliderRange, SliderRoot, SliderThumb, SliderTrack } from 'reka-ui';\n\nconst value = defineModel<number>('value', { default: 75 });\n\nconst values = computed({\n  get: () => [value.value],\n  set: (next: number[] | undefined) => {\n    value.value = next?.[0] ?? value.value;\n  }\n});\n</script>\n\n<template>\n  <SliderRoot :min=\"0\" :max=\"100\" :step=\"1\" class=\"research-slider\" v-model=\"values\">\n    <SliderTrack class=\"research-slider__track\" />\n    <SliderRange class=\"research-slider__range\" />\n    <SliderThumb class=\"research-slider__thumb\" />\n  </SliderRoot>\n</template>\n\n<style scoped>\n.research-slider { box-sizing: border-box; width: 200px; height: 32px; position: relative; display: block; }\n.research-slider .research-slider__track { box-sizing: border-box; width: 200px; height: 16px; position: absolute; left: 0px; top: 0px; }\n.research-slider .research-slider__range { box-sizing: border-box; height: 16px; position: absolute; top: 0px; }\n.research-slider .research-slider__thumb { box-sizing: border-box; width: 16px; height: 16px; position: absolute; top: 0px; }\n</style>\n",
+                "layerIds": [
+                  null,
+                  null,
+                  "slider-4",
+                  "slider-5",
+                  "slider-6",
+                  "slider-7",
+                  null
+                ]
+              }
+            ]
+          }
+        ],
+        "referencedOriginalRekaHtml": "<span data-slider-impl dir=\"ltr\" data-orientation=\"horizontal\" style=\"--reka-slider-thumb-transform:translateX(-50%);\" aria-disabled=\"false\"><!--[--><!--[--><!--[--><span data-orientation=\"horizontal\" style=\"position:relative;width:200px;\"><!--[--><span data-orientation=\"horizontal\" style=\"left:0%;right:25%;\"><!--[--><!--]--></span><span data-reka-collection-item aria-label=\"Research value\" role=\"slider\" tabindex=\"0\" data-orientation=\"horizontal\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-orientation=\"horizontal\" style=\"transform:var(--reka-slider-thumb-transform);position:absolute;left:calc(0% + 0px);display:none;\"><!--[--><!--]--></span><!--]--></span><!--]--><!--v-if--><!--]--><!--]--></span>"
+      },
+      "expectationMet": false
+    }
+  ]
+}

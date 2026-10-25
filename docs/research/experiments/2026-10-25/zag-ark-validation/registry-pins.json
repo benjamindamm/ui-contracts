@@ -1,0 +1,29 @@
+[
+  {
+    "dependencies": {
+      "@zag-js/dom-query": "1.46.0",
+      "@zag-js/utils": "1.46.0"
+    },
+    "fileCount": 35,
+    "gitHead": null,
+    "integrity": "sha512-zwiTDz9iBi1a/CyzdaeI8TlBADmeLCDNONh930a7x32TpduN8LiY26X58zrgimvCowOu7YIFNzI/vqW7Wp1phA==",
+    "name": "@zag-js/core",
+    "url": "https://registry.npmjs.org/@zag-js%2fcore/1.46.0",
+    "version": "1.46.0"
+  },
+  {
+    "dependencies": {
+      "@zag-js/combobox": "1.45.0",
+      "@zag-js/core": "1.45.0",
+      "@zag-js/dom-query": "1.45.0",
+      "@zag-js/react": "1.45.0",
+      "@zag-js/utils": "1.45.0"
+    },
+    "fileCount": 3874,
+    "gitHead": "90eb2125a9ac6a8225b2e4053484da08cbb68a54",
+    "integrity": "sha512-8fx0mj1Ht51ElT9rGDSnX+oaBr++9zo//4E0xhXzB299XwHi0vXHXtTYzhpH/m6qb+R3fHz5flsMv1X0+fZvtQ==",
+    "name": "@ark-ui/react",
+    "url": "https://registry.npmjs.org/@ark-ui%2freact/5.39.3",
+    "version": "5.39.3"
+  }
+]

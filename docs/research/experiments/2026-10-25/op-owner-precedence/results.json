@@ -1,0 +1,1026 @@
+{
+  "originalPackages": [
+    "@open-pencil/scene-graph@0.16.0",
+    "@open-pencil/dom-css@0.16.0"
+  ],
+  "scope": "Full original graph, behaviour owner/read/property and control projection APIs; no UI/SSR/editor or new cross-domain policy",
+  "cases": [
+    {
+      "id": "standalone-owner",
+      "kind": "standalone",
+      "expected": {
+        "ownerType": "COMPONENT",
+        "kind": "switch"
+      },
+      "observed": {
+        "ownerType": "COMPONENT",
+        "kind": "switch",
+        "rawChildKind": "switch",
+        "kindBefore": "switch",
+        "kindAfter": "switch",
+        "rawChildKindAfter": "switch",
+        "instanceIdPreserved": true,
+        "controls": 1,
+        "effectiveDefault": "false",
+        "rawChildDefault": "false",
+        "assignment": null,
+        "designed": false,
+        "rawFrameKind": null
+      },
+      "before": {
+        "source": {
+          "componentId": "owner-4",
+          "parentSetId": null,
+          "componentBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "false",
+          "instanceId": "owner-5",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "after": {
+        "source": {
+          "componentId": "owner-4",
+          "parentSetId": null,
+          "componentBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "false",
+          "instanceId": "owner-5",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "journal": {
+        "kind": "Additional source/consumer projection record, not native signed provenance",
+        "originalOwnerId": "owner-4",
+        "originalOwnerType": "COMPONENT",
+        "information": "effective behaviour kind and boolean definition/assignment source",
+        "sourceBeforeSha256": "e527ef326904660e926fcbed48f39c5cfe398924b01668980b28103f149eb3ce",
+        "sourceAfterSha256": "e527ef326904660e926fcbed48f39c5cfe398924b01668980b28103f149eb3ce",
+        "consumerBeforeSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "consumerAfterSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "nativeOwnerSelection": "original behaviourOwner + readBehaviour + behaviourProperties",
+        "actualConsumer": "original dom-css behaviourControls",
+        "sourceSnapshotScope": "explicit graph metadata slice, not full .fig/library revision"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "component-set-owner",
+      "kind": "set",
+      "expected": {
+        "ownerType": "COMPONENT_SET",
+        "kind": "switch",
+        "rawChildKind": "radio"
+      },
+      "observed": {
+        "ownerType": "COMPONENT_SET",
+        "kind": "switch",
+        "rawChildKind": "radio",
+        "kindBefore": "switch",
+        "kindAfter": "switch",
+        "rawChildKindAfter": "radio",
+        "instanceIdPreserved": true,
+        "controls": 1,
+        "effectiveDefault": "false",
+        "rawChildDefault": "true",
+        "assignment": null,
+        "designed": false,
+        "rawFrameKind": null
+      },
+      "before": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "after": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "journal": {
+        "kind": "Additional source/consumer projection record, not native signed provenance",
+        "originalOwnerId": "owner-4",
+        "originalOwnerType": "COMPONENT_SET",
+        "information": "effective behaviour kind and boolean definition/assignment source",
+        "sourceBeforeSha256": "50ef3543509fa927218bec34b957f3687133e40e5aebf58a909ac77157c9fa62",
+        "sourceAfterSha256": "50ef3543509fa927218bec34b957f3687133e40e5aebf58a909ac77157c9fa62",
+        "consumerBeforeSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "consumerAfterSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "nativeOwnerSelection": "original behaviourOwner + readBehaviour + behaviourProperties",
+        "actualConsumer": "original dom-css behaviourControls",
+        "sourceSnapshotScope": "explicit graph metadata slice, not full .fig/library revision"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "nonleading-child-edit",
+      "kind": "child-edit",
+      "expected": {
+        "kindBefore": "switch",
+        "kindAfter": "switch",
+        "rawChildKindAfter": "button"
+      },
+      "observed": {
+        "ownerType": "COMPONENT_SET",
+        "kind": "switch",
+        "rawChildKind": "button",
+        "kindBefore": "switch",
+        "kindAfter": "switch",
+        "rawChildKindAfter": "button",
+        "instanceIdPreserved": true,
+        "controls": 1,
+        "effectiveDefault": "false",
+        "rawChildDefault": "true",
+        "assignment": null,
+        "designed": false,
+        "rawFrameKind": null
+      },
+      "before": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "after": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "button",
+            "booleans": {},
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "journal": {
+        "kind": "Additional source/consumer projection record, not native signed provenance",
+        "originalOwnerId": "owner-4",
+        "originalOwnerType": "COMPONENT_SET",
+        "information": "effective behaviour kind and boolean definition/assignment source",
+        "sourceBeforeSha256": "50ef3543509fa927218bec34b957f3687133e40e5aebf58a909ac77157c9fa62",
+        "sourceAfterSha256": "8dcd032f40618e47ba097e63c7953e1bf60346e2f97d4bba2564bf442ef611fa",
+        "consumerBeforeSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "consumerAfterSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "nativeOwnerSelection": "original behaviourOwner + readBehaviour + behaviourProperties",
+        "actualConsumer": "original dom-css behaviourControls",
+        "sourceSnapshotScope": "explicit graph metadata slice, not full .fig/library revision"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "leading-owner-edit",
+      "kind": "owner-edit",
+      "expected": {
+        "kindBefore": "switch",
+        "kindAfter": "radio",
+        "instanceIdPreserved": true
+      },
+      "observed": {
+        "ownerType": "COMPONENT_SET",
+        "kind": "radio",
+        "rawChildKind": "radio",
+        "kindBefore": "switch",
+        "kindAfter": "radio",
+        "rawChildKindAfter": "radio",
+        "instanceIdPreserved": true,
+        "controls": 1,
+        "effectiveDefault": "false",
+        "rawChildDefault": "true",
+        "assignment": null,
+        "designed": false,
+        "rawFrameKind": null
+      },
+      "before": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "after": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "radio",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "journal": {
+        "kind": "Additional source/consumer projection record, not native signed provenance",
+        "originalOwnerId": "owner-4",
+        "originalOwnerType": "COMPONENT_SET",
+        "information": "effective behaviour kind and boolean definition/assignment source",
+        "sourceBeforeSha256": "50ef3543509fa927218bec34b957f3687133e40e5aebf58a909ac77157c9fa62",
+        "sourceAfterSha256": "aa1989ff4caca57c854e47351e104ccfd724ca972ffd8bc6a5b757ffcdaa478c",
+        "consumerBeforeSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "consumerAfterSha256": "e8d125e279cb565f4ca99b22b048425f411c195d1834324f34a62ec63cf8cc30",
+        "nativeOwnerSelection": "original behaviourOwner + readBehaviour + behaviourProperties",
+        "actualConsumer": "original dom-css behaviourControls",
+        "sourceSnapshotScope": "explicit graph metadata slice, not full .fig/library revision"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "no-variant-fallback",
+      "kind": "owner-remove",
+      "expected": {
+        "controls": 0,
+        "rawChildKind": "radio",
+        "ownerType": "COMPONENT_SET"
+      },
+      "observed": {
+        "ownerType": "COMPONENT_SET",
+        "kind": null,
+        "rawChildKind": "radio",
+        "kindBefore": "switch",
+        "kindAfter": null,
+        "rawChildKindAfter": "radio",
+        "instanceIdPreserved": true,
+        "controls": 0,
+        "effectiveDefault": null,
+        "rawChildDefault": "true",
+        "assignment": null,
+        "designed": null,
+        "rawFrameKind": null
+      },
+      "before": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "after": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": null,
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": []
+      },
+      "journal": {
+        "kind": "Additional source/consumer projection record, not native signed provenance",
+        "originalOwnerId": "owner-4",
+        "originalOwnerType": "COMPONENT_SET",
+        "information": "effective behaviour kind and boolean definition/assignment source",
+        "sourceBeforeSha256": "50ef3543509fa927218bec34b957f3687133e40e5aebf58a909ac77157c9fa62",
+        "sourceAfterSha256": "17bbc4268c42095454f424266555004ad46a2ba39b96362ccf9caade9ca0d3a5",
+        "consumerBeforeSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "consumerAfterSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "nativeOwnerSelection": "original behaviourOwner + readBehaviour + behaviourProperties",
+        "actualConsumer": "original dom-css behaviourControls",
+        "sourceSnapshotScope": "explicit graph metadata slice, not full .fig/library revision"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "owner-property-definition-first",
+      "kind": "definition",
+      "expected": {
+        "effectiveDefault": "false",
+        "rawChildDefault": "true"
+      },
+      "observed": {
+        "ownerType": "COMPONENT_SET",
+        "kind": "switch",
+        "rawChildKind": "radio",
+        "kindBefore": "switch",
+        "kindAfter": "switch",
+        "rawChildKindAfter": "radio",
+        "instanceIdPreserved": true,
+        "controls": 1,
+        "effectiveDefault": "false",
+        "rawChildDefault": "true",
+        "assignment": null,
+        "designed": false,
+        "rawFrameKind": null
+      },
+      "before": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "after": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "false"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": null
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "false",
+            "designed": false
+          }
+        ]
+      },
+      "journal": {
+        "kind": "Additional source/consumer projection record, not native signed provenance",
+        "originalOwnerId": "owner-4",
+        "originalOwnerType": "COMPONENT_SET",
+        "information": "effective behaviour kind and boolean definition/assignment source",
+        "sourceBeforeSha256": "50ef3543509fa927218bec34b957f3687133e40e5aebf58a909ac77157c9fa62",
+        "sourceAfterSha256": "50ef3543509fa927218bec34b957f3687133e40e5aebf58a909ac77157c9fa62",
+        "consumerBeforeSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "consumerAfterSha256": "283eba1072c816611f58415d1b6b4d954d64ac5a9c4a9b410bbff57a7f5f387e",
+        "nativeOwnerSelection": "original behaviourOwner + readBehaviour + behaviourProperties",
+        "actualConsumer": "original dom-css behaviourControls",
+        "sourceSnapshotScope": "explicit graph metadata slice, not full .fig/library revision"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "instance-assignment-over-default",
+      "kind": "assignment",
+      "expected": {
+        "effectiveDefault": "true",
+        "assignment": "false",
+        "designed": false
+      },
+      "observed": {
+        "ownerType": "COMPONENT_SET",
+        "kind": "switch",
+        "rawChildKind": "radio",
+        "kindBefore": "switch",
+        "kindAfter": "switch",
+        "rawChildKindAfter": "radio",
+        "instanceIdPreserved": true,
+        "controls": 1,
+        "effectiveDefault": "true",
+        "rawChildDefault": "true",
+        "assignment": "false",
+        "designed": false,
+        "rawFrameKind": null
+      },
+      "before": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "true"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": "false"
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "true",
+            "designed": false
+          }
+        ]
+      },
+      "after": {
+        "source": {
+          "componentId": "owner-5",
+          "parentSetId": "owner-4",
+          "componentBehaviour": {
+            "kind": "radio",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": "owner-4",
+          "ownerType": "COMPONENT_SET",
+          "ownerBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerProperties": [
+            {
+              "id": "value-property",
+              "name": "Selected",
+              "type": "BOOLEAN",
+              "defaultValue": "true"
+            }
+          ],
+          "rawChildDefault": "true",
+          "instanceId": "owner-6",
+          "assignment": "false"
+        },
+        "models": [
+          {
+            "path": "View A",
+            "kind": "switch",
+            "default": "true",
+            "designed": false
+          }
+        ]
+      },
+      "journal": {
+        "kind": "Additional source/consumer projection record, not native signed provenance",
+        "originalOwnerId": "owner-4",
+        "originalOwnerType": "COMPONENT_SET",
+        "information": "effective behaviour kind and boolean definition/assignment source",
+        "sourceBeforeSha256": "9bf97337446d4a864438192fe5d85e7f97d8c2625a4ec181bacb0aa2cb095b6a",
+        "sourceAfterSha256": "9bf97337446d4a864438192fe5d85e7f97d8c2625a4ec181bacb0aa2cb095b6a",
+        "consumerBeforeSha256": "319c27649b951ba8a6851a1e0ba21a9477c4bea39a5fe2e12267806b54da5a59",
+        "consumerAfterSha256": "319c27649b951ba8a6851a1e0ba21a9477c4bea39a5fe2e12267806b54da5a59",
+        "nativeOwnerSelection": "original behaviourOwner + readBehaviour + behaviourProperties",
+        "actualConsumer": "original dom-css behaviourControls",
+        "sourceSnapshotScope": "explicit graph metadata slice, not full .fig/library revision"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "frame-is-not-behaviour-owner",
+      "kind": "frame",
+      "expected": {
+        "ownerType": null,
+        "rawFrameKind": "switch",
+        "controls": 0
+      },
+      "observed": {
+        "ownerType": null,
+        "kind": null,
+        "rawChildKind": "switch",
+        "kindBefore": null,
+        "kindAfter": null,
+        "rawChildKindAfter": "switch",
+        "instanceIdPreserved": true,
+        "controls": 0,
+        "effectiveDefault": null,
+        "rawChildDefault": null,
+        "assignment": null,
+        "designed": null,
+        "rawFrameKind": "switch"
+      },
+      "before": {
+        "source": {
+          "componentId": "owner-3",
+          "parentSetId": null,
+          "componentBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": null,
+          "ownerType": null,
+          "ownerBehaviour": null,
+          "ownerProperties": [],
+          "rawChildDefault": null,
+          "instanceId": null,
+          "assignment": null
+        },
+        "models": []
+      },
+      "after": {
+        "source": {
+          "componentId": "owner-3",
+          "parentSetId": null,
+          "componentBehaviour": {
+            "kind": "switch",
+            "booleans": {
+              "value": {
+                "propertyId": "value-property"
+              }
+            },
+            "texts": {},
+            "numbers": {},
+            "parts": {}
+          },
+          "ownerId": null,
+          "ownerType": null,
+          "ownerBehaviour": null,
+          "ownerProperties": [],
+          "rawChildDefault": null,
+          "instanceId": null,
+          "assignment": null
+        },
+        "models": []
+      },
+      "journal": {
+        "kind": "Additional source/consumer projection record, not native signed provenance",
+        "originalOwnerId": null,
+        "originalOwnerType": null,
+        "information": "effective behaviour kind and boolean definition/assignment source",
+        "sourceBeforeSha256": "7c1a4699d384a82056543590beea4a294b1dfe5ea38d6f3842c06b9cc1035fc6",
+        "sourceAfterSha256": "7c1a4699d384a82056543590beea4a294b1dfe5ea38d6f3842c06b9cc1035fc6",
+        "consumerBeforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "consumerAfterSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "nativeOwnerSelection": "original behaviourOwner + readBehaviour + behaviourProperties",
+        "actualConsumer": "original dom-css behaviourControls",
+        "sourceSnapshotScope": "explicit graph metadata slice, not full .fig/library revision"
+      },
+      "expectationMet": true
+    }
+  ]
+}

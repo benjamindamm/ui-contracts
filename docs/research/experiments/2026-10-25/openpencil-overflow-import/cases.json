@@ -1,0 +1,103 @@
+[
+  {
+    "id": "visible",
+    "inlineStyle": {
+      "overflow": "visible"
+    },
+    "expectedClip": false,
+    "expectedOverflow": null
+  },
+  {
+    "id": "hidden",
+    "inlineStyle": {
+      "overflow": "hidden"
+    },
+    "expectedClip": true,
+    "expectedOverflow": "hidden"
+  },
+  {
+    "id": "clip",
+    "inlineStyle": {
+      "overflow": "clip"
+    },
+    "expectedClip": true,
+    "expectedOverflow": "hidden"
+  },
+  {
+    "id": "auto",
+    "inlineStyle": {
+      "overflow": "auto"
+    },
+    "expectedClip": false,
+    "expectedOverflow": null
+  },
+  {
+    "id": "scroll",
+    "inlineStyle": {
+      "overflow": "scroll"
+    },
+    "expectedClip": false,
+    "expectedOverflow": null
+  },
+  {
+    "id": "axis-y-scroll",
+    "inlineStyle": {
+      "overflow-y": "scroll"
+    },
+    "expectedClip": false,
+    "expectedOverflow": null
+  },
+  {
+    "id": "axis-x-hidden",
+    "inlineStyle": {
+      "overflow-x": "hidden"
+    },
+    "expectedClip": false,
+    "expectedOverflow": null
+  },
+  {
+    "id": "two-keyword-overflow",
+    "inlineStyle": {
+      "overflow": "hidden scroll"
+    },
+    "expectedClip": false,
+    "expectedOverflow": null
+  },
+  {
+    "id": "computed-hidden",
+    "inlineStyle": {
+      "overflow": "auto"
+    },
+    "computedStyle": {
+      "overflow": "hidden"
+    },
+    "expectedClip": true,
+    "expectedOverflow": "hidden"
+  },
+  {
+    "id": "computed-auto",
+    "inlineStyle": {
+      "overflow": "hidden"
+    },
+    "computedStyle": {
+      "overflow": "auto"
+    },
+    "expectedClip": false,
+    "expectedOverflow": null
+  },
+  {
+    "id": "no-overflow",
+    "inlineStyle": {},
+    "expectedClip": false,
+    "expectedOverflow": null
+  },
+  {
+    "id": "preexisting-clip-not-cleared",
+    "inlineStyle": {
+      "overflow": "visible"
+    },
+    "initialClip": true,
+    "expectedClip": true,
+    "expectedOverflow": "hidden"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "original-config",
+    "mutation": "none",
+    "expectedAccepted": true
+  },
+  {
+    "id": "units-number",
+    "mutation": "units",
+    "expectedAccepted": false
+  },
+  {
+    "id": "type-label-number",
+    "mutation": "type-number",
+    "expectedAccepted": false
+  },
+  {
+    "id": "invented-type-label",
+    "mutation": "type-label",
+    "expectedAccepted": true
+  },
+  {
+    "id": "design-document-data",
+    "mutation": "document",
+    "expectedAccepted": false
+  },
+  {
+    "id": "example-color-number",
+    "mutation": "example-color",
+    "expectedAccepted": false
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "scope": "Actual original UXSpec compiler/full style-map or uSpec canonical builder/full original clipping-function output mapped through explicit extra CEM/context/anchor/overflow/fixed-row policy to native own DOM; no original UX Runner/editor/Figma SDK or platform renderer claimed",
+  "cases": [
+    {
+      "action": "scroll",
+      "additionalDomCssBinding": true,
+      "candidate": "UXSpec",
+      "criterion": "V06",
+      "expectationMet": true,
+      "expected": {
+        "height": 160,
+        "originalMapperInterpretsOverflow": false,
+        "overflow": "auto",
+        "scrollHeight": 224,
+        "scrollTop": 64
+      },
+      "id": "ux-scroll-additional-policy",
+      "model": "uxspec",
+      "observed": {
+        "gap": 8,
+        "height": 160,
+        "inputHeight": 20,
+        "originalAnchor": null,
+        "originalMapperInterpretsOverflow": false,
+        "overflow": "auto",
+        "scrollHeight": 224,
+        "scrollTop": 64,
+        "sourceFingerprint": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "no-scroll-policy",
+      "additionalDomCssBinding": true,
+      "candidate": "UXSpec",
+      "criterion": "V06",
+      "expectationMet": true,
+      "expected": {
+        "error": "missing-additional-overflow-policy"
+      },
+      "id": "ux-scroll-missing-policy",
+      "model": "uxspec",
+      "observed": {
+        "error": "missing-additional-overflow-policy",
+        "originalAnchor": null,
+        "sourceFingerprint": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "foreign-popup",
+      "additionalDomCssBinding": true,
+      "candidate": "UXSpec",
+      "criterion": "V06",
+      "expectationMet": true,
+      "expected": {
+        "error": "foreign-instance-popup"
+      },
+      "id": "ux-scroll-foreign-port",
+      "model": "uxspec",
+      "observed": {
+        "error": "foreign-instance-popup",
+        "originalAnchor": null,
+        "sourceFingerprint": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    }
+  ]
+}

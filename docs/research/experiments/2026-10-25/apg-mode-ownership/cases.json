@@ -1,0 +1,79 @@
+[
+  {
+    "id": "baseline-list",
+    "mode": "list",
+    "mutation": "none",
+    "expected": {
+      "accepted": true,
+      "isList": true,
+      "options": [
+        "Alaska"
+      ]
+    }
+  },
+  {
+    "id": "source-live-conflict",
+    "mode": "list",
+    "mutation": "source-none",
+    "expected": {
+      "accepted": false,
+      "error": "source-derived-mode-conflict",
+      "isList": true,
+      "options": [
+        "Alaska"
+      ]
+    }
+  },
+  {
+    "id": "fresh-none-source",
+    "mode": "none",
+    "mutation": "none",
+    "expected": {
+      "accepted": true,
+      "isNone": true,
+      "options": [
+        "Alabama",
+        "Alaska"
+      ]
+    }
+  },
+  {
+    "id": "omitted-source-default",
+    "mode": "omitted",
+    "mutation": "none",
+    "expected": {
+      "accepted": true,
+      "isNone": true,
+      "options": [
+        "Alabama",
+        "Alaska"
+      ]
+    }
+  },
+  {
+    "id": "unsupported-source",
+    "mode": "invalid",
+    "mutation": "none",
+    "expected": {
+      "accepted": false,
+      "error": "unsupported-source-mode",
+      "isNone": false,
+      "isList": false,
+      "isBoth": false
+    }
+  },
+  {
+    "id": "derived-live-conflict",
+    "mode": "list",
+    "mutation": "derived-none",
+    "expected": {
+      "accepted": false,
+      "error": "source-derived-mode-conflict",
+      "isNone": true,
+      "options": [
+        "Alabama",
+        "Alaska"
+      ]
+    }
+  }
+]

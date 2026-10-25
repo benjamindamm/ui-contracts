@@ -1,0 +1,29 @@
+{
+  "method": "Unchanged original source, separate original prepare API calls, no monkeypatching",
+  "cases": [
+    {
+      "id": "prepare-per-instance",
+      "mode": "prepare-per-instance",
+      "expectedA": "alpha-A",
+      "expectedB": "beta-B",
+      "criterion": "Compile original source once, call documented prepare separately for A/B, then create one interpreter per prepared factory",
+      "observed": {
+        "A": "alpha-A",
+        "B": "beta-B"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "compile-per-instance",
+      "mode": "compile-per-instance",
+      "expectedA": "alpha-A",
+      "expectedB": "beta-B",
+      "criterion": "Separate source compilation and preparation controls execution-context independence",
+      "observed": {
+        "A": "alpha-A",
+        "B": "beta-B"
+      },
+      "expectationMet": true
+    }
+  ]
+}

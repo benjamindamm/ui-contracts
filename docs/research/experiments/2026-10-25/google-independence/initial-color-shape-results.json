@@ -1,0 +1,34 @@
+{
+  "package": "@google/design.md@0.4.0",
+  "scope": "Original public linter and parsed color output with additional separate HTML/CEM/SCXML binding; no document schema or generated component",
+  "cases": [
+    {
+      "id": "base",
+      "expected": {
+        "accepted": true,
+        "color": "#112233",
+        "otherDomainsByteIdentical": true,
+        "originalErrors": 0
+      },
+      "observed": {
+        "accepted": false,
+        "error": "Error: unexpected-original-color-shape {\"type\":\"color\",\"hex\":\"#112233\",\"r\":17,\"g\":34,\"b\":51,\"luminance\":0.015022419420735887}"
+      },
+      "expectationMet": false
+    },
+    {
+      "id": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "color": "#445566",
+        "otherDomainsByteIdentical": true,
+        "originalErrors": 0
+      },
+      "observed": {
+        "accepted": false,
+        "error": "Error: unexpected-original-color-shape {\"type\":\"color\",\"hex\":\"#445566\",\"r\":68,\"g\":85,\"b\":102,\"luminance\":0.08685251911317972}"
+      },
+      "expectationMet": false
+    }
+  ]
+}

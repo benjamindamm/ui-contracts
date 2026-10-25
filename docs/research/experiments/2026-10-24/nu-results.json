@@ -1,0 +1,57 @@
+{
+  "checker": "Nu Html Checker",
+  "reported_version": "26.10.18",
+  "endpoint": "https://validator.w3.org/nu/",
+  "submitted_data": "synthetic HTML only",
+  "browser_rendered_candidate": false,
+  "cases": [
+    {
+      "id": "nu-01-baseline",
+      "input": "<!DOCTYPE html><html lang=\"de\"><head><meta charset=\"utf-8\"><title>ARIA-Prüffall</title></head><body><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"true\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-a\"><ul id=\"results-a\" role=\"listbox\" aria-label=\"Treffer A\"><li id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</li></ul></main></body></html>",
+      "expected": "no errors; record any warnings",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nUse the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.\nMessage Filtering\n\nWarning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns.\n\nFrom line 1, column 107; to line 1, column 269\n\nody><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"true\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-a\"><ul id\n\nDocument checking completed.\n\nUsed the HTML parser.\n\nTotal execution time 4 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": [
+        "Warning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns."
+      ]
+    },
+    {
+      "expected": "error for illegal ARIA value",
+      "id": "nu-02-bad-expanded",
+      "input": "<!DOCTYPE html><html lang=\"de\"><head><meta charset=\"utf-8\"><title>ARIA-Prüffall</title></head><body><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"banana\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-a\"><ul id=\"results-a\" role=\"listbox\" aria-label=\"Treffer A\"><li id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</li></ul></main></body></html>",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nUse the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.\nMessage Filtering\n\nError: Bad value banana for attribute aria-expanded on element input.\n\nFrom line 1, column 107; to line 1, column 271\n\nody><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"banana\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-a\"><ul id\n\nWarning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns.\n\nFrom line 1, column 107; to line 1, column 271\n\nody><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"banana\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-a\"><ul id\n\nDocument checking completed.\n\nUsed the HTML parser.\n\nTotal execution time 4 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": [
+        "Error: Bad value banana for attribute aria-expanded on element input.",
+        "Warning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns."
+      ]
+    },
+    {
+      "expected": "diagnostic for missing ID target",
+      "id": "nu-03-missing-controls-target",
+      "input": "<!DOCTYPE html><html lang=\"de\"><head><meta charset=\"utf-8\"><title>ARIA-Prüffall</title></head><body><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"true\" aria-autocomplete=\"list\" aria-controls=\"missing-results\" aria-activedescendant=\"option-a\"><ul id=\"results-a\" role=\"listbox\" aria-label=\"Treffer A\"><li id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</li></ul></main></body></html>",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nUse the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.\nMessage Filtering\n\nWarning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns.\n\nFrom line 1, column 107; to line 1, column 275\n\nody><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"true\" aria-autocomplete=\"list\" aria-controls=\"missing-results\" aria-activedescendant=\"option-a\"><ul id\n\nDocument checking completed.\n\nUsed the HTML parser.\n\nTotal execution time 3 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": [
+        "Warning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns."
+      ]
+    },
+    {
+      "expected": "additional diagnostic for active option outside controlled listbox",
+      "id": "nu-04-cross-instance",
+      "input": "<!DOCTYPE html><html lang=\"de\"><head><meta charset=\"utf-8\"><title>ARIA-Prüffall</title></head><body><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"true\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-b\"><ul id=\"results-a\" role=\"listbox\" aria-label=\"Treffer A\"><li id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</li></ul><ul id=\"results-b\" role=\"listbox\" aria-label=\"Treffer B\"><li id=\"option-b\" role=\"option\" aria-selected=\"false\">Beta</li></ul></main></body></html>",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nUse the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.\nMessage Filtering\n\nWarning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns.\n\nFrom line 1, column 107; to line 1, column 269\n\nody><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"true\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-b\"><ul id\n\nDocument checking completed.\n\nUsed the HTML parser.\n\nTotal execution time 22 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": [
+        "Warning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns."
+      ]
+    },
+    {
+      "expected": "duplicate ID error",
+      "id": "nu-05-duplicate-id",
+      "input": "<!DOCTYPE html><html lang=\"de\"><head><meta charset=\"utf-8\"><title>ARIA-Prüffall</title></head><body><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"true\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-a\"><ul id=\"results-a\" role=\"listbox\" aria-label=\"Treffer A\"><li id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</li></ul><span id=\"results-a\">duplicate</span></main></body></html>",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nUse the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.\nMessage Filtering\n\nWarning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns.\n\nFrom line 1, column 107; to line 1, column 269\n\nody><main><input id=\"search-a\" role=\"combobox\" aria-label=\"Suche A\" aria-expanded=\"true\" aria-autocomplete=\"list\" aria-controls=\"results-a\" aria-activedescendant=\"option-a\"><ul id\n\nError: Duplicate ID results-a.\n\nFrom line 1, column 395; to line 1, column 415\n\n</li></ul><span id=\"results-a\">duplic\n\nWarning: The first occurrence of ID results-a was here.\n\nFrom line 1, column 270; to line 1, column 326\n\noption-a\"><ul id=\"results-a\" role=\"listbox\" aria-label=\"Treffer A\"><li id\n\nDocument checking completed.\n\nUsed the HTML parser.\n\nTotal execution time 3 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": [
+        "Warning: Attribute aria-activedescendant value should either refer to a descendant element, or should be accompanied by attribute aria-owns.",
+        "Error: Duplicate ID results-a.",
+        "Warning: The first occurrence of ID results-a was here."
+      ]
+    }
+  ]
+}

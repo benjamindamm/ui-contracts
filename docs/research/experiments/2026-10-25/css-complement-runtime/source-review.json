@@ -1,0 +1,26 @@
+{
+  "apg": {
+    "url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/combobox-pattern.html",
+    "revision": "0f765e4dc33e966026114ac12a8380db1de3b787",
+    "capturedBodySha256": "c8aaf0f98655af5598eff0c3592dc55a6dd1cff4e7eb3e19a2960fa72dacc178",
+    "bounded_review": [
+      "Editable Combobox mit Listboxpopup als ausdrücklicher endlicher Forschungsfall.",
+      "ArrowDown kann das Popup öffnen; nachfolgende Navigation bewegt die aktive Option.",
+      "Escape schließt das Popup, Enter übernimmt die aktive vorgeschlagene Auswahl.",
+      "Bei dieser Listboxvariante bleibt der DOM-Fokus im Input; aria-activedescendant adressiert die aktive Option.",
+      "Inputrolle, kontrolliertes Popup, getrennt wahrnehmbarer Name und Wert sind eigene semantische Aussagen."
+    ],
+    "not_claimed": "Andere Popuptypen, sämtliche optionalen Keys und vollständige APG-Konformität sind nicht übertragen."
+  },
+  "aria_status": {
+    "url": "https://www.w3.org/TR/wai-aria-1.2/#status",
+    "capturedSectionSha256": "dd918bed7476add14c9ee4047a675bcc53f5994ded33340659b3bbad7f2a3eae",
+    "bounded_review": [
+      "Status hat festgelegte Live-Region-Semantik für beratende Aktualisierungen.",
+      "Die impliziten Eigenschaften sind polite und atomic=true; im eigenen HTML ausdrücklich gesetzt.",
+      "Statusänderung soll den Fokus nicht in die Statusregion verschieben.",
+      "AX-Rolle, Live-/Atomic-Eigenschaften und tatsächlicher Text werden separat vom hörbaren AT-Ergebnis geprüft."
+    ],
+    "not_claimed": "Keine vollständige Prüfung aller Autorenempfehlungen, Braille-/Sprachausgabe oder Plattformabbildungen."
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-25",
+  "repo_pin": "c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc",
+  "schema_url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/velite.config.ts",
+  "api_url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/src/content/types/react/combobox.types.json",
+  "original_inputs": [
+    {
+      "file": "sources/velite.config.ts",
+      "sha256": "ed0a93b90f048de57323697595aa9fc8cfd1d75725e5db31461f220f8c1a0179"
+    },
+    {
+      "file": "sources/combobox.types.json",
+      "sha256": "fc6632e2a4e603abe79ecd29939f411818cb01f3dcc06ae48bd9efd80364673c"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "c87d2fea7e3113533c03c33ec7e491e509e45bef4e4f5cdebc480faec02bc61c"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "6b65799e0e2f05eb1b867430e4b986f81afeb0919de74cf9e585c5fd33b0bcd6"
+    },
+    {
+      "file": "extraction.json",
+      "sha256": "91141e807e69926b548ed175a51e4771e64f2422d3e6c99d2cb6143924cbed0c"
+    },
+    {
+      "file": "original-source-notes.json",
+      "sha256": "d239dca0e9e775b3a0729d335ae7bcfa94f18cf3f487ac0d32ca49f88fe77a84"
+    },
+    {
+      "file": "results.json",
+      "sha256": "fbdb935a303722944b4f666b24c0aebdd1bf98294f037dad8f340ca87e4e6c39"
+    },
+    {
+      "file": "run-schema.cjs",
+      "sha256": "69d12ab660aba3871aebab86202e659a1dc53e4692d17001af6c24af72ca1e9c"
+    },
+    {
+      "file": "tree-filter.json",
+      "sha256": "a257453bf861c51dd87e1701ae1375cecf2af3dbdbdef269ce5bdf06873703e4"
+    },
+    {
+      "file": "velite-registry-pin.json",
+      "sha256": "e8f6e4bd9d9416c95291f68ec08c40f6f70d29379be1dfca22bdbe595708522a"
+    }
+  ],
+  "original_velite_files": [
+    {
+      "file": "tool/node_modules/velite/bin/velite.js",
+      "sha256": "2003747375e6e37981f5522bbc5af05cbb19da1dd847d4ac098a7c63defffa8f"
+    },
+    {
+      "file": "tool/node_modules/velite/dist/chunk-ODT43ZBV.js",
+      "sha256": "ae0cd64ced859db993e2c66e3de84e988682c514fa3a2984eda5f3196f1e302d"
+    },
+    {
+      "file": "tool/node_modules/velite/dist/chunk-ZWVIC74Y.js",
+      "sha256": "b3355b6a9b103d57a6235203957e9c09d9c064eafb9bf97bf348e5db773fe1eb"
+    },
+    {
+      "file": "tool/node_modules/velite/dist/cli.d.ts",
+      "sha256": "6caa0b04bdc10582a3729dae9244f21c5bec0b9ffe7e2a84999c2f868f5dd9be"
+    },
+    {
+      "file": "tool/node_modules/velite/dist/cli.js",
+      "sha256": "15f8170a9cb2562675442cb7a311503186f21d0c06dd4897c7b00311d6c7c329"
+    },
+    {
+      "file": "tool/node_modules/velite/dist/esm-MMOT7OJ2.js",
+      "sha256": "5893b0994c151430c54fd46b466eafd91aef5e8855240114a26c8869de39c43f"
+    },
+    {
+      "file": "tool/node_modules/velite/dist/index.d.ts",
+      "sha256": "0720233755665b99d7a5bdaae3082224db58259aa418cd29524172e05ae9735b"
+    },
+    {
+      "file": "tool/node_modules/velite/dist/index.js",
+      "sha256": "8fe73d4e0d40038a1f20e8a0cd67980eee88c459a8e7a9d28f82fa255fc81354"
+    },
+    {
+      "file": "tool/node_modules/velite/license",
+      "sha256": "02e42102d67eea84d90abad173bf8733ab822e40ba64e7d53f8a2190857ec8e4"
+    },
+    {
+      "file": "tool/node_modules/velite/package.json",
+      "sha256": "3176723cedce09402fbf3d1376bc92f82b0724a7a80314e4339f7c25b6ffc9b3"
+    },
+    {
+      "file": "tool/node_modules/velite/readme.md",
+      "sha256": "b5a50f1cd5b9767b35fd076ba1a615bb24c2c5d5613fc924b9675664f2f67f64"
+    }
+  ],
+  "velite_file_count": 11,
+  "tool_files": [
+    {
+      "file": "tool/package.json",
+      "sha256": "0e4991361aa2a9d83ff2510e4f25fc92956ed1b9d731a2c7cf9a68ca69307f5f"
+    },
+    {
+      "file": "tool/package-lock.json",
+      "sha256": "0a59ca1369e08315854d296fb433ff34c2210f2e0b0407a217e6d44fac5f55bd"
+    }
+  ],
+  "conditions": 6,
+  "mcp_server_executed": false,
+  "full_website_build_executed": false,
+  "original_schema_modified": false
+}

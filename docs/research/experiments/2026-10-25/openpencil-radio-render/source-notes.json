@@ -1,0 +1,29 @@
+[
+  {
+    "file": "sources/packages/vue/src/canvas/islands/controls/shared.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/shared.ts",
+    "sha256": "89981b668b43475f96e050fa267b51bb3eeac4ad43dc2e95418d127fe8890259"
+  },
+  {
+    "file": "sources/packages/vue/src/canvas/islands/state.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/state.ts",
+    "sha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963"
+  },
+  {
+    "file": "sources/packages/dom-css/src/behaviours/reset.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/behaviours/reset.ts",
+    "sha256": "8287f6b8c37cd320864336ba96e50d9eeca0464d64fe1f06d98e196ad22a5722"
+  },
+  {
+    "file": "sources/packages/vue/src/canvas/islands/render.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/render.ts",
+    "sha256": "9f8b3c79a4bbfbc3c3d7f91fdf524b4398eab040f4414ebde2b16f3dd03d65a9",
+    "reused": true
+  },
+  {
+    "file": "sources/packages/vue/src/canvas/islands/controls/index.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/index.ts",
+    "sha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953",
+    "reused": true
+  }
+]

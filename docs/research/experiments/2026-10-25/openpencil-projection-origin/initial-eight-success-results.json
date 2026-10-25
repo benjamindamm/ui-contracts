@@ -1,0 +1,514 @@
+{
+  "node": "v24.22.1",
+  "vue": "3.5.41",
+  "typescript": "5.9.3",
+  "scope": "Published original SceneGraph/component instantiation/behaviour classification/projection/controlRoles APIs plus isolated unchanged repo Vue createIslandState/renderNode/root chain and actual SSR; explicit mixed pinned runtime profile, not entire repo/editor/live DOM/AT",
+  "originalPublishedApisModified": false,
+  "originalVueDeclarationsModified": false,
+  "wholePublishedProjectionExecuted": true,
+  "originalRoleClassifierExecuted": true,
+  "originalIslandStateFactoryExecuted": true,
+  "wholeEditorExecuted": false,
+  "liveDomRendered": false,
+  "atTested": false,
+  "cases": [
+    {
+      "id": "drawn-text",
+      "mutation": "text",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "observed": {
+        "controls": 1,
+        "paths": [
+          "Repeated radio"
+        ],
+        "rootControls": [
+          {
+            "path": "Repeated radio",
+            "kind": "radio",
+            "booleanModel": {
+              "value": {
+                "definition": {
+                  "id": "value-property",
+                  "name": "Selected",
+                  "type": "BOOLEAN",
+                  "defaultValue": "false"
+                },
+                "designed": false
+              }
+            },
+            "stateValue": false,
+            "role": "root"
+          }
+        ],
+        "missingBindings": [],
+        "projected": [
+          {
+            "tagName": "div",
+            "attrs": {
+              "data-open-pencil-node-id": "research-6"
+            },
+            "sourceSceneNodeId": "research-6"
+          }
+        ],
+        "sourceInstanceIds": [
+          "research-6"
+        ],
+        "nodeCount": 7,
+        "texts": "Option A",
+        "html": "<main><button data-layer=\"Repeated radio\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"><span data-layer=\"Repeated radio/Drawn label\" style=\"width:100px;height:100px;position:absolute;left:0px;top:0px;color:#000000;font-family:Inter;font-size:14px;font-weight:400;white-space:pre-wrap;\">Option A</span></button></main>",
+        "radioRoleCount": 1,
+        "ariaLabelPresent": false,
+        "ariaLabelledbyPresent": false,
+        "pathDistinct": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "node-name-only",
+      "mutation": "name",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": false,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "observed": {
+        "controls": 1,
+        "paths": [
+          "Only graph name"
+        ],
+        "rootControls": [
+          {
+            "path": "Only graph name",
+            "kind": "radio",
+            "booleanModel": {
+              "value": {
+                "definition": {
+                  "id": "value-property",
+                  "name": "Selected",
+                  "type": "BOOLEAN",
+                  "defaultValue": "false"
+                },
+                "designed": false
+              }
+            },
+            "stateValue": false,
+            "role": "root"
+          }
+        ],
+        "missingBindings": [],
+        "projected": [
+          {
+            "tagName": "div",
+            "attrs": {
+              "data-open-pencil-node-id": "research-5"
+            },
+            "sourceSceneNodeId": "research-5"
+          }
+        ],
+        "sourceInstanceIds": [
+          "research-5"
+        ],
+        "nodeCount": 5,
+        "texts": "",
+        "html": "<main><button data-layer=\"Only graph name\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"></button></main>",
+        "radioRoleCount": 1,
+        "ariaLabelPresent": false,
+        "ariaLabelledbyPresent": false,
+        "pathDistinct": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "hidden-text",
+      "mutation": "hidden",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": false,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "observed": {
+        "controls": 1,
+        "paths": [
+          "Repeated radio"
+        ],
+        "rootControls": [
+          {
+            "path": "Repeated radio",
+            "kind": "radio",
+            "booleanModel": {
+              "value": {
+                "definition": {
+                  "id": "value-property",
+                  "name": "Selected",
+                  "type": "BOOLEAN",
+                  "defaultValue": "false"
+                },
+                "designed": false
+              }
+            },
+            "stateValue": false,
+            "role": "root"
+          }
+        ],
+        "missingBindings": [],
+        "projected": [
+          {
+            "tagName": "div",
+            "attrs": {
+              "data-open-pencil-node-id": "research-6"
+            },
+            "sourceSceneNodeId": "research-6"
+          }
+        ],
+        "sourceInstanceIds": [
+          "research-6"
+        ],
+        "nodeCount": 7,
+        "texts": "",
+        "html": "<main><button data-layer=\"Repeated radio\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"></button></main>",
+        "radioRoleCount": 1,
+        "ariaLabelPresent": false,
+        "ariaLabelledbyPresent": false,
+        "pathDistinct": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "duplicate-layer-names",
+      "mutation": "duplicate",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 2,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "observed": {
+        "controls": 2,
+        "paths": [
+          "Repeated radio#0",
+          "Repeated radio#1"
+        ],
+        "rootControls": [
+          {
+            "path": "Repeated radio#0",
+            "kind": "radio",
+            "booleanModel": {
+              "value": {
+                "definition": {
+                  "id": "value-property",
+                  "name": "Selected",
+                  "type": "BOOLEAN",
+                  "defaultValue": "false"
+                },
+                "designed": false
+              }
+            },
+            "stateValue": false,
+            "role": "root"
+          },
+          {
+            "path": "Repeated radio#1",
+            "kind": "radio",
+            "booleanModel": {
+              "value": {
+                "definition": {
+                  "id": "value-property",
+                  "name": "Selected",
+                  "type": "BOOLEAN",
+                  "defaultValue": "false"
+                },
+                "designed": false
+              }
+            },
+            "stateValue": false,
+            "role": "root"
+          }
+        ],
+        "missingBindings": [],
+        "projected": [
+          {
+            "tagName": "div",
+            "attrs": {
+              "data-open-pencil-node-id": "research-6"
+            },
+            "sourceSceneNodeId": "research-6"
+          },
+          {
+            "tagName": "div",
+            "attrs": {
+              "data-open-pencil-node-id": "research-8"
+            },
+            "sourceSceneNodeId": "research-8"
+          }
+        ],
+        "sourceInstanceIds": [
+          "research-6",
+          "research-8"
+        ],
+        "nodeCount": 9,
+        "texts": "Option AOption A",
+        "html": "<main><button data-layer=\"Repeated radio#0\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"><span data-layer=\"Repeated radio#0/Drawn label\" style=\"width:100px;height:100px;position:absolute;left:0px;top:0px;color:#000000;font-family:Inter;font-size:14px;font-weight:400;white-space:pre-wrap;\">Option A</span></button><button data-layer=\"Repeated radio#1\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"><span data-layer=\"Repeated radio#1/Drawn label\" style=\"width:100px;height:100px;position:absolute;left:0px;top:0px;color:#000000;font-family:Inter;font-size:14px;font-weight:400;white-space:pre-wrap;\">Option A</span></button></main>",
+        "radioRoleCount": 2,
+        "ariaLabelPresent": false,
+        "ariaLabelledbyPresent": false,
+        "pathDistinct": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "checked-property",
+      "mutation": "checked",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": true,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "observed": {
+        "controls": 1,
+        "paths": [
+          "Repeated radio"
+        ],
+        "rootControls": [
+          {
+            "path": "Repeated radio",
+            "kind": "radio",
+            "booleanModel": {
+              "value": {
+                "definition": {
+                  "id": "value-property",
+                  "name": "Selected",
+                  "type": "BOOLEAN",
+                  "defaultValue": "false"
+                },
+                "designed": true
+              }
+            },
+            "stateValue": true,
+            "role": "root"
+          }
+        ],
+        "missingBindings": [],
+        "projected": [
+          {
+            "tagName": "div",
+            "attrs": {
+              "data-open-pencil-node-id": "research-6"
+            },
+            "sourceSceneNodeId": "research-6"
+          }
+        ],
+        "sourceInstanceIds": [
+          "research-6"
+        ],
+        "nodeCount": 7,
+        "texts": "Option A",
+        "html": "<main><button data-layer=\"Repeated radio\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"true\"><span data-layer=\"Repeated radio/Drawn label\" style=\"width:100px;height:100px;position:absolute;left:0px;top:0px;color:#000000;font-family:Inter;font-size:14px;font-weight:400;white-space:pre-wrap;\">Option A</span></button></main>",
+        "radioRoleCount": 1,
+        "ariaLabelPresent": false,
+        "ariaLabelledbyPresent": false,
+        "pathDistinct": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-required-binding",
+      "mutation": "missing",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [
+          "value"
+        ],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "observed": {
+        "controls": 1,
+        "paths": [
+          "Repeated radio"
+        ],
+        "rootControls": [
+          {
+            "path": "Repeated radio",
+            "kind": "radio",
+            "booleanModel": {},
+            "stateValue": false,
+            "role": "root"
+          }
+        ],
+        "missingBindings": [
+          "value"
+        ],
+        "projected": [
+          {
+            "tagName": "div",
+            "attrs": {
+              "data-open-pencil-node-id": "research-6"
+            },
+            "sourceSceneNodeId": "research-6"
+          }
+        ],
+        "sourceInstanceIds": [
+          "research-6"
+        ],
+        "nodeCount": 7,
+        "texts": "Option A",
+        "html": "<main><button data-layer=\"Repeated radio\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"><span data-layer=\"Repeated radio/Drawn label\" style=\"width:100px;height:100px;position:absolute;left:0px;top:0px;color:#000000;font-family:Inter;font-size:14px;font-weight:400;white-space:pre-wrap;\">Option A</span></button></main>",
+        "radioRoleCount": 1,
+        "ariaLabelPresent": false,
+        "ariaLabelledbyPresent": false,
+        "pathDistinct": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "tokens-enabled",
+      "mutation": "text",
+      "tokens": true,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "observed": {
+        "controls": 1,
+        "paths": [
+          "Repeated radio"
+        ],
+        "rootControls": [
+          {
+            "path": "Repeated radio",
+            "kind": "radio",
+            "booleanModel": {
+              "value": {
+                "definition": {
+                  "id": "value-property",
+                  "name": "Selected",
+                  "type": "BOOLEAN",
+                  "defaultValue": "false"
+                },
+                "designed": false
+              }
+            },
+            "stateValue": false,
+            "role": "root"
+          }
+        ],
+        "missingBindings": [],
+        "projected": [
+          {
+            "tagName": "div",
+            "attrs": {
+              "data-open-pencil-node-id": "research-6"
+            },
+            "sourceSceneNodeId": "research-6"
+          }
+        ],
+        "sourceInstanceIds": [
+          "research-6"
+        ],
+        "nodeCount": 7,
+        "texts": "Option A",
+        "html": "<main><button data-layer=\"Repeated radio\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"><span data-layer=\"Repeated radio/Drawn label\" style=\"width:100px;height:100px;position:absolute;left:0px;top:0px;color:#000000;font-family:Inter;font-size:14px;font-weight:400;white-space:pre-wrap;\">Option A</span></button></main>",
+        "radioRoleCount": 1,
+        "ariaLabelPresent": false,
+        "ariaLabelledbyPresent": false,
+        "pathDistinct": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "source-ids-disabled",
+      "mutation": "text",
+      "tokens": false,
+      "includeSourceIds": false,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "observed": {
+        "controls": 1,
+        "paths": [
+          "Repeated radio"
+        ],
+        "rootControls": [
+          {
+            "path": "Repeated radio",
+            "kind": "radio",
+            "booleanModel": {
+              "value": {
+                "definition": {
+                  "id": "value-property",
+                  "name": "Selected",
+                  "type": "BOOLEAN",
+                  "defaultValue": "false"
+                },
+                "designed": false
+              }
+            },
+            "stateValue": false,
+            "role": "root"
+          }
+        ],
+        "missingBindings": [],
+        "projected": [
+          {
+            "tagName": "div",
+            "attrs": {},
+            "sourceSceneNodeId": "research-6"
+          }
+        ],
+        "sourceInstanceIds": [
+          "research-6"
+        ],
+        "nodeCount": 7,
+        "texts": "Option A",
+        "html": "<main><button data-layer=\"Repeated radio\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"><span data-layer=\"Repeated radio/Drawn label\" style=\"width:100px;height:100px;position:absolute;left:0px;top:0px;color:#000000;font-family:Inter;font-size:14px;font-weight:400;white-space:pre-wrap;\">Option A</span></button></main>",
+        "radioRoleCount": 1,
+        "ariaLabelPresent": false,
+        "ariaLabelledbyPresent": false,
+        "pathDistinct": true
+      },
+      "expectationMet": true
+    }
+  ]
+}

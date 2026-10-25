@@ -1,0 +1,50 @@
+[
+  {
+    "file": "sources/packages/scene-graph/src/color/schema.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/color/schema.ts",
+    "sha256": "0b74502f6f02f7d85f6dc7c7cfa1ca80c8e7380a37e6e16c18f8ddb261314a8f",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/scene-graph/src/primitives/schema.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/primitives/schema.ts",
+    "sha256": "4b0c07040b0290fb975134b12faf826ed569ed76d75a20b26c95a6a506fea34e",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/registry/valibot.json",
+    "url": "https://registry.npmjs.org/valibot/1.5.0",
+    "sha256": "797e803f2f1ae6208a35ad9507196a30ed558523e8de2810ec43ee25030735b1",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/registry/postcss-value-parser.json",
+    "url": "https://registry.npmjs.org/postcss-value-parser/4.2.0",
+    "sha256": "730ef567c9c2b21a5a0402cbbd813e7aca8f3ccbef2db457256f2491cbd70a3a",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/registry/@acemir-cssom.json",
+    "url": "https://registry.npmjs.org/@acemir%2fcssom/0.9.31",
+    "sha256": "e140f2d56119b670e8cf886b482627d047c7cf40fd840e5a126786e4279c74bf",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/scene-graph/src/variables/schema.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/variables/schema.ts",
+    "sha256": "7a21da812d03acf6bf2a4ff07c69fa7d2956e5b4883fcf5a6ea568a823b2397c",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/dom-css/src/tokens/validate.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/validate.ts",
+    "sha256": "ded28e3f4cbbee9be08e4e59a9d2c6a6c42362341cf589a2a973c92b9cf7a74f",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/dom-css/src/tokens/cssom-validator.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/cssom-validator.ts",
+    "sha256": "7c1649d27cd285d52507ce2d6ad3eb0e0c75c7a1a73cb803495b9206630c0c0c",
+    "capture": "Full BrowserOS neo code block"
+  }
+]

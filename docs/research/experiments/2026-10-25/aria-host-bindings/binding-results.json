@@ -1,0 +1,144 @@
+{
+  "cases": [
+    {
+      "diagnostic": false,
+      "errors": [],
+      "expectationMet": true,
+      "expected": false,
+      "id": "host-control"
+    },
+    {
+      "diagnostic": true,
+      "errors": [
+        {
+          "actual": "missing",
+          "expected": "list-a",
+          "instance": "A",
+          "rule": "controlled-part-same-instance"
+        }
+      ],
+      "expectationMet": true,
+      "expected": true,
+      "id": "missing-controls-open"
+    },
+    {
+      "diagnostic": true,
+      "errors": [
+        {
+          "actual": "missing",
+          "expected": "list-a",
+          "instance": "A",
+          "rule": "controlled-part-same-instance"
+        }
+      ],
+      "expectationMet": true,
+      "expected": true,
+      "id": "missing-controls-closed"
+    },
+    {
+      "diagnostic": true,
+      "errors": [
+        {
+          "actual": "option-b",
+          "expected": "option-a",
+          "instance": "A",
+          "rule": "active-part-same-instance"
+        }
+      ],
+      "expectationMet": true,
+      "expected": true,
+      "id": "active-option-other-instance"
+    },
+    {
+      "diagnostic": true,
+      "errors": [
+        {
+          "actual": "list-b",
+          "expected": "list-a",
+          "instance": "A",
+          "rule": "controlled-part-same-instance"
+        }
+      ],
+      "expectationMet": true,
+      "expected": true,
+      "id": "controlled-list-other-instance"
+    },
+    {
+      "diagnostic": true,
+      "errors": [
+        {
+          "actual": "list-b",
+          "expected": "list-a",
+          "instance": "A",
+          "rule": "controlled-part-same-instance"
+        },
+        {
+          "actual": "option-b",
+          "expected": "option-a",
+          "instance": "A",
+          "rule": "active-part-same-instance"
+        }
+      ],
+      "expectationMet": true,
+      "expected": true,
+      "id": "coherent-cross-instance"
+    },
+    {
+      "diagnostic": true,
+      "errors": [
+        {
+          "actual": "missing",
+          "expected": "option-a",
+          "instance": "A",
+          "rule": "active-part-same-instance"
+        }
+      ],
+      "expectationMet": true,
+      "expected": true,
+      "id": "missing-active-option"
+    },
+    {
+      "diagnostic": true,
+      "errors": [
+        {
+          "id": "option-a",
+          "rule": "unique-target"
+        },
+        {
+          "instance": "B",
+          "rule": "required-part-target"
+        }
+      ],
+      "expectationMet": true,
+      "expected": true,
+      "id": "duplicate-aria-id"
+    },
+    {
+      "diagnostic": false,
+      "errors": [],
+      "expectationMet": true,
+      "expected": false,
+      "id": "invalid-expanded"
+    },
+    {
+      "diagnostic": false,
+      "errors": [],
+      "expectationMet": true,
+      "expected": false,
+      "id": "missing-input-name"
+    }
+  ],
+  "profile": {
+    "A": {
+      "input": "input-a",
+      "list": "list-a",
+      "option": "option-a"
+    },
+    "B": {
+      "input": "input-b",
+      "list": "list-b",
+      "option": "option-b"
+    }
+  },
+  "status": "Additional experimental project rules, not original ARIA/axe validation or selected package format"
+}

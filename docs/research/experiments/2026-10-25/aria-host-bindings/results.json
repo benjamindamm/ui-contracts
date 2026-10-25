@@ -1,0 +1,438 @@
+{
+  "cases": [
+    {
+      "criterion": "Two correctly labelled original HTML host relations; selected rules only",
+      "diagnostic": false,
+      "expectationMet": true,
+      "expectedDiagnostic": false,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "host-control",
+      "inapplicable": [
+        "aria-input-field-name"
+      ],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": []
+    },
+    {
+      "criterion": "Open combobox references nonexistent popup",
+      "diagnostic": true,
+      "expectationMet": true,
+      "expectedDiagnostic": true,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"missing\" aria-activedescendant=\"option-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "missing-controls-open",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-input-field-name",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": [
+        {
+          "description": "Ensure all ARIA attributes have valid values",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": [
+            {
+              "all": [
+                {
+                  "data": [
+                    "aria-controls=\"missing\""
+                  ],
+                  "id": "aria-valid-attr-value",
+                  "impact": "critical",
+                  "message": "Invalid ARIA attribute value: aria-controls=\"missing\"",
+                  "relatedNodes": []
+                }
+              ],
+              "any": [],
+              "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"missing\"",
+              "html": "<input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"missing\" aria-activedescendant=\"option-a\">",
+              "none": [],
+              "target": [
+                "#input-a"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "criterion": "Closed popup target may be deferred; do not generalize open/closed checks",
+      "diagnostic": false,
+      "expectationMet": true,
+      "expectedDiagnostic": false,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-controls=\"missing\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "missing-controls-closed",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-input-field-name",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": []
+    },
+    {
+      "criterion": "Target exists but belongs to B; exploratory expected boundary of generic host rules",
+      "diagnostic": false,
+      "expectationMet": true,
+      "expectedDiagnostic": false,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-b\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "active-option-other-instance",
+      "inapplicable": [
+        "aria-input-field-name"
+      ],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": []
+    },
+    {
+      "criterion": "Target exists but external contract instance differs",
+      "diagnostic": false,
+      "expectationMet": true,
+      "expectedDiagnostic": false,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "controlled-list-other-instance",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-input-field-name",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": []
+    },
+    {
+      "criterion": "Valid host-level target pair can still violate experiment A/B contract ownership",
+      "diagnostic": false,
+      "expectationMet": true,
+      "expectedDiagnostic": false,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "coherent-cross-instance",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-input-field-name",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": []
+    },
+    {
+      "criterion": "Missing active target",
+      "diagnostic": true,
+      "expectationMet": true,
+      "expectedDiagnostic": true,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"missing\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "missing-active-option",
+      "inapplicable": [
+        "aria-input-field-name"
+      ],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": [
+        {
+          "description": "Ensure all ARIA attributes have valid values",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": [
+            {
+              "all": [
+                {
+                  "data": [
+                    "aria-activedescendant=\"missing\""
+                  ],
+                  "id": "aria-valid-attr-value",
+                  "impact": "critical",
+                  "message": "Invalid ARIA attribute value: aria-activedescendant=\"missing\"",
+                  "relatedNodes": []
+                }
+              ],
+              "any": [],
+              "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-activedescendant=\"missing\"",
+              "html": "<input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"missing\">",
+              "none": [],
+              "target": [
+                "#input-a"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "criterion": "Duplicate referenced ID may yield violation or incomplete review item",
+      "diagnostic": true,
+      "expectationMet": true,
+      "expectedDiagnostic": true,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-a\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "duplicate-aria-id",
+      "inapplicable": [
+        "aria-input-field-name"
+      ],
+      "incomplete": [
+        {
+          "description": "Ensure every id attribute value used in ARIA and in labels is unique",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/duplicate-id-aria?application=axeAPI",
+          "id": "duplicate-id-aria",
+          "impact": "critical",
+          "nodes": [
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": "option-a",
+                  "id": "duplicate-id-aria",
+                  "impact": "critical",
+                  "message": "Document has multiple elements referenced with ARIA with the same id attribute: option-a",
+                  "relatedNodes": [
+                    {
+                      "html": "<div id=\"option-a\" role=\"option\" aria-selected=\"true\">Beta</div>",
+                      "target": [
+                        "#list-b > div[role=\"option\"]"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: option-a",
+              "html": "<div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div>",
+              "none": [],
+              "target": [
+                "#list-a > div[role=\"option\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": []
+    },
+    {
+      "criterion": "ARIA Boolean value syntax",
+      "diagnostic": true,
+      "expectationMet": true,
+      "expectedDiagnostic": true,
+      "html": "<main><section data-contract-instance=\"A\"><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"banana\" aria-controls=\"list-a\" aria-activedescendant=\"option-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "invalid-expanded",
+      "inapplicable": [
+        "aria-input-field-name"
+      ],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": [
+        {
+          "description": "Ensure all ARIA attributes have valid values",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": [
+            {
+              "all": [
+                {
+                  "data": [
+                    "aria-expanded=\"banana\""
+                  ],
+                  "id": "aria-valid-attr-value",
+                  "impact": "critical",
+                  "message": "Invalid ARIA attribute value: aria-expanded=\"banana\"",
+                  "relatedNodes": []
+                }
+              ],
+              "any": [],
+              "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-expanded=\"banana\"",
+              "html": "<input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"banana\" aria-controls=\"list-a\" aria-activedescendant=\"option-a\">",
+              "none": [],
+              "target": [
+                "#input-a"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "criterion": "Combobox has no accessible label",
+      "diagnostic": true,
+      "expectationMet": true,
+      "expectedDiagnostic": true,
+      "html": "<main><section data-contract-instance=\"A\"><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a\" role=\"option\" aria-selected=\"true\">Alpha</div></div></section><section data-contract-instance=\"B\"><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b\" role=\"option\" aria-selected=\"true\">Beta</div></div></section></main>",
+      "id": "missing-input-name",
+      "inapplicable": [
+        "aria-input-field-name"
+      ],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "duplicate-id-aria",
+        "label"
+      ],
+      "violations": [
+        {
+          "description": "Ensure every form element has a label",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=axeAPI",
+          "id": "label",
+          "impact": "critical",
+          "nodes": [
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": null,
+                  "id": "implicit-label",
+                  "impact": "critical",
+                  "message": "Element does not have an implicit (wrapped) <label>",
+                  "relatedNodes": []
+                },
+                {
+                  "data": null,
+                  "id": "explicit-label",
+                  "impact": "critical",
+                  "message": "Element does not have an explicit <label>",
+                  "relatedNodes": []
+                },
+                {
+                  "data": null,
+                  "id": "aria-label",
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty",
+                  "relatedNodes": []
+                },
+                {
+                  "data": null,
+                  "id": "aria-labelledby",
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                  "relatedNodes": []
+                },
+                {
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "id": "non-empty-title",
+                  "impact": "critical",
+                  "message": "Element has no title attribute",
+                  "relatedNodes": []
+                },
+                {
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "id": "non-empty-placeholder",
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute",
+                  "relatedNodes": []
+                },
+                {
+                  "data": null,
+                  "id": "presentational-role",
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                  "relatedNodes": []
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "html": "<input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a\">",
+              "none": [],
+              "target": [
+                "#input-a"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ruleIds": [
+    "aria-allowed-attr",
+    "aria-required-attr",
+    "aria-required-children",
+    "aria-required-parent",
+    "aria-valid-attr",
+    "aria-valid-attr-value",
+    "aria-input-field-name",
+    "duplicate-id-aria",
+    "label"
+  ],
+  "tool": "4.14.0",
+  "url": "about:blank",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

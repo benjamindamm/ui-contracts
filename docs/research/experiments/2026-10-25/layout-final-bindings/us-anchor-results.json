@@ -1,0 +1,129 @@
+{
+  "scope": "Actual original UXSpec compiler/full style-map or uSpec canonical builder/full original clipping-function output mapped through explicit extra CEM/context/anchor/overflow/fixed-row policy to native own DOM; no original UX Runner/editor/Figma SDK or platform renderer claimed",
+  "cases": [
+    {
+      "action": "base",
+      "additionalDomCssBinding": true,
+      "candidate": "uSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "gap": 8
+      },
+      "id": "us-anchor-control",
+      "model": "uspec",
+      "observed": {
+        "gap": 8,
+        "height": 160,
+        "inputHeight": 20,
+        "originalAnchor": {
+          "_targetDisposition": "resolved",
+          "layerId": "input-1",
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "originalMapperInterpretsOverflow": null,
+        "overflow": "clip",
+        "scrollHeight": 224,
+        "scrollTop": 0,
+        "sourceFingerprint": "a38b69090bf7186536fea13c4f51e09082b2187afc12a040ce4acdbbbd1badee"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "grow",
+      "additionalDomCssBinding": true,
+      "candidate": "uSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "gap": 8,
+        "inputHeight": 40
+      },
+      "id": "us-anchor-grown-input",
+      "model": "uspec",
+      "observed": {
+        "gap": 8,
+        "height": 160,
+        "inputHeight": 40,
+        "originalAnchor": {
+          "_targetDisposition": "resolved",
+          "layerId": "input-1",
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "originalMapperInterpretsOverflow": null,
+        "overflow": "clip",
+        "scrollHeight": 224,
+        "scrollTop": 0,
+        "sourceFingerprint": "a38b69090bf7186536fea13c4f51e09082b2187afc12a040ce4acdbbbd1badee"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "foreign-input",
+      "additionalDomCssBinding": true,
+      "candidate": "uSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "error": "foreign-instance-input"
+      },
+      "id": "us-anchor-foreign-instance",
+      "model": "uspec",
+      "observed": {
+        "error": "foreign-instance-input",
+        "originalAnchor": {
+          "_targetDisposition": "resolved",
+          "layerId": "input-1",
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "sourceFingerprint": "a38b69090bf7186536fea13c4f51e09082b2187afc12a040ce4acdbbbd1badee"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "base",
+      "additionalDomCssBinding": true,
+      "candidate": "uSpec",
+      "criterion": "V04",
+      "expectationMet": true,
+      "expected": {
+        "error": "unresolved-original-anchor"
+      },
+      "id": "us-anchor-unresolved-original",
+      "model": "uspec-unresolved",
+      "observed": {
+        "error": "unresolved-original-anchor",
+        "originalAnchor": {
+          "_invalidLayerId": "missing",
+          "_invalidTargetVariantId": "v1",
+          "_targetDisposition": "unresolved",
+          "_targetReason": "Layer ID is not present in the declared parent variant tree.",
+          "layerId": null,
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "sourceFingerprint": "a38b69090bf7186536fea13c4f51e09082b2187afc12a040ce4acdbbbd1badee"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    }
+  ]
+}

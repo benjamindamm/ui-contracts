@@ -1,0 +1,21 @@
+{
+  "status": "Own bounded external source resolver and per-information ownership, not original uSpec feature",
+  "information": "public-property-name-and-type",
+  "leading": "foreign CEM member; Evidence fact and local API row are derived",
+  "source": {
+    "file": "foreign-cem.json",
+    "pointer": "/modules/0/declarations/0/members/0",
+    "sha256": "0da2123856ba61c1db8dd4704a4c5e66bc8221fb13a5fb4cb39b58f2d9c6eac6",
+    "module": "autocomplete.js",
+    "declaration": "Autocomplete",
+    "member": "value"
+  },
+  "evidence": {
+    "file": "research-evidence-api.json",
+    "obligationId": "public-value"
+  },
+  "output": {
+    "file": "research-api.json",
+    "pointer": "/data/mainTable/properties/0"
+  }
+}

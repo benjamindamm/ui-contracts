@@ -1,0 +1,128 @@
+[
+  {
+    "id": "control",
+    "kind": "control",
+    "expected": {
+      "accepted": true,
+      "originalAccepted": true,
+      "error": null
+    }
+  },
+  {
+    "id": "source-revision-stale-hash",
+    "kind": "stale",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "external-source-revision"
+    }
+  },
+  {
+    "id": "source-revision-stale-facts",
+    "kind": "stale-facts",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "fact-source-conflict"
+    }
+  },
+  {
+    "id": "source-revision-rederived",
+    "kind": "rederived",
+    "expected": {
+      "accepted": true,
+      "originalAccepted": true,
+      "error": null
+    }
+  },
+  {
+    "id": "coordinated-derived-edit",
+    "kind": "derived-edit",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "fact-source-conflict"
+    }
+  },
+  {
+    "id": "wrong-external-target-kind",
+    "kind": "kind",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "external-target-kind"
+    }
+  },
+  {
+    "id": "same-name-wrong-definition",
+    "kind": "definition",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "external-definition-context"
+    }
+  },
+  {
+    "id": "missing-external-file",
+    "kind": "missing-file",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "missing-external-artifact"
+    }
+  },
+  {
+    "id": "missing-external-pointer",
+    "kind": "missing-pointer",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "missing-external-target"
+    }
+  },
+  {
+    "id": "evidence-sourcepath-conflict",
+    "kind": "sourcepath",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "evidence-sourcepath-conflict"
+    }
+  },
+  {
+    "id": "unsupported-semantic-type",
+    "kind": "unsupported",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "unsupported-source-type"
+    }
+  },
+  {
+    "id": "fact-updated-output-stale",
+    "kind": "stale-output",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": false,
+      "error": "output-source-conflict"
+    }
+  },
+  {
+    "id": "property-renamed-without-rebind",
+    "kind": "rename-stale",
+    "expected": {
+      "accepted": false,
+      "originalAccepted": true,
+      "error": "external-definition-context"
+    }
+  },
+  {
+    "id": "property-renamed-explicit-rebind",
+    "kind": "rename-rebound",
+    "expected": {
+      "accepted": true,
+      "originalAccepted": true,
+      "error": null
+    }
+  }
+]

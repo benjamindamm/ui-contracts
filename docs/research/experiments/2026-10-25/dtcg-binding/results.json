@@ -1,0 +1,1564 @@
+{
+  "method": "Own deliberately limited dimension/curly-alias translator and additional binding checks; not a DTCG original or complete validator",
+  "cases": [
+    {
+      "id": "control",
+      "mutation": "none",
+      "expectedRules": [],
+      "actualRules": [],
+      "resolved": {
+        "--autocomplete-gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "alias-chain",
+      "mutation": "chain",
+      "expectedRules": [],
+      "actualRules": [],
+      "resolved": {
+        "--autocomplete-gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "3fcc5b6a6e4058105ee272912d8edaea6c2ffb051c52ed5bfd7cde96a09137a7"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "missing-token",
+      "mutation": "missing",
+      "expectedRules": [
+        "missing-token"
+      ],
+      "actualRules": [
+        "missing-token"
+      ],
+      "resolved": {
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "31f2c698be03744ccf19c0228919789bdc9f82f92380aa4cca90196772cc6e22"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "alias-cycle",
+      "mutation": "cycle",
+      "expectedRules": [
+        "alias-cycle"
+      ],
+      "actualRules": [
+        "alias-cycle"
+      ],
+      "resolved": {
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "97017c48e1e1b47058e70d73658dcb25c9f7535b8dd427fb7d27c9e2fabe7656"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "unitless-value",
+      "mutation": "unitless",
+      "expectedRules": [
+        "dimension-value"
+      ],
+      "actualRules": [
+        "dimension-value"
+      ],
+      "resolved": {
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "db0326ac7310a4a2c5d6d6805c502532bf44882379e97a8b702e017adcfb7622"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "unsupported-unit",
+      "mutation": "unit",
+      "expectedRules": [
+        "dimension-unit"
+      ],
+      "actualRules": [
+        "dimension-unit"
+      ],
+      "resolved": {
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "49362308988cc4ff963b9c5d55e40a2190fdcef1683e795ddb78392c2618c83d"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "string-number",
+      "mutation": "number",
+      "expectedRules": [
+        "dimension-value"
+      ],
+      "actualRules": [
+        "dimension-value"
+      ],
+      "resolved": {
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "41e3e0792b9dc70af0c2ed168803ce9104ddf65b40f022373f55b5bb853dcb72"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "wrong-type",
+      "mutation": "type",
+      "expectedRules": [
+        "dimension-type"
+      ],
+      "actualRules": [
+        "dimension-type"
+      ],
+      "resolved": {
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "5a03cd756a7d06217ec145ce076083590036fac8459ad53dcf023cd6a165022a"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "wrong-owner",
+      "mutation": "owner",
+      "expectedRules": [
+        "leading-source"
+      ],
+      "actualRules": [
+        "leading-source"
+      ],
+      "resolved": {
+        "--autocomplete-gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "behavior"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "unknown-target",
+      "mutation": "target",
+      "expectedRules": [
+        "target-binding"
+      ],
+      "actualRules": [
+        "target-binding"
+      ],
+      "resolved": {
+        "--autocomplete-gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-c"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "stale-token-hash",
+      "mutation": "hash",
+      "expectedRules": [
+        "source-integrity"
+      ],
+      "actualRules": [
+        "source-integrity"
+      ],
+      "resolved": {
+        "--autocomplete-gap": {
+          "value": 8,
+          "unit": "px"
+        },
+        "--autocomplete-max-height": {
+          "value": 160,
+          "unit": "px"
+        },
+        "--autocomplete-option-height": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    },
+    {
+      "id": "rem-values",
+      "mutation": "rem",
+      "expectedRules": [],
+      "actualRules": [],
+      "resolved": {
+        "--autocomplete-gap": {
+          "value": 0.5,
+          "unit": "rem"
+        },
+        "--autocomplete-max-height": {
+          "value": 10.0,
+          "unit": "rem"
+        },
+        "--autocomplete-option-height": {
+          "value": 2.0,
+          "unit": "rem"
+        }
+      },
+      "expectationMet": true,
+      "additionalProfile": {
+        "status": "Additional experimental research binding, no selected product format",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "tokens.json",
+            "sha256": "dd603ad3fc23bacd6d7b17318e00da24bc54dde9a67b0b3fd160e913e29515dd"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "instances": {
+          "A": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            },
+            "anchorName": "--input-a"
+          },
+          "B": {
+            "interfaceDeclaration": "Autocomplete",
+            "behaviorDefinition": "Autocomplete",
+            "snapshotState": "open",
+            "parts": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            },
+            "anchorName": "--input-b"
+          }
+        },
+        "stateView": {
+          "closed": {
+            "expanded": false,
+            "popupVisible": false
+          },
+          "open": {
+            "expanded": true,
+            "popupVisible": true
+          },
+          "selected": {
+            "expanded": false,
+            "popupVisible": false
+          }
+        },
+        "publicEvent": "value-change",
+        "ownership": {
+          "publicSignature": "interface",
+          "stateAndEmission": "behavior",
+          "geometry": "visual",
+          "rolesNamesRelations": "accessibility",
+          "crossArtifactMapping": "additional-profile"
+        },
+        "visualLayout": {
+          "file": "layout.css",
+          "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+        },
+        "tokenBindings": [
+          {
+            "path": "autocomplete.gap",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-gap",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "margin-top",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.popupMaxHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-max-height",
+            "targets": [
+              "#popup-a",
+              "#popup-b"
+            ],
+            "property": "max-height",
+            "owner": "visual"
+          },
+          {
+            "path": "autocomplete.optionHeight",
+            "type": "dimension",
+            "cssVariable": "--autocomplete-option-height",
+            "targets": [
+              "[role=\"option\"]"
+            ],
+            "property": "height",
+            "owner": "visual"
+          }
+        ],
+        "version": "research-dtcg-binding-1"
+      }
+    }
+  ]
+}

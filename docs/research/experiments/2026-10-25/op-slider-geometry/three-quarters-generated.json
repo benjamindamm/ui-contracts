@@ -1,0 +1,21 @@
+[
+  {
+    "name": "ResearchSlider",
+    "layerId": "slider-4",
+    "files": [
+      {
+        "path": "ResearchSlider.vue",
+        "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { SliderRange, SliderRoot, SliderThumb, SliderTrack } from 'reka-ui';\n\nconst value = defineModel<number>('value', { default: 75 });\n\nconst values = computed({\n  get: () => [value.value],\n  set: (next: number[] | undefined) => {\n    value.value = next?.[0] ?? value.value;\n  }\n});\n</script>\n\n<template>\n  <SliderRoot :min=\"0\" :max=\"100\" :step=\"1\" class=\"research-slider\" v-model=\"values\">\n    <SliderTrack class=\"research-slider__track\" />\n    <SliderRange class=\"research-slider__range\" />\n    <SliderThumb class=\"research-slider__thumb\" />\n  </SliderRoot>\n</template>\n\n<style scoped>\n.research-slider { box-sizing: border-box; width: 200px; height: 32px; position: relative; display: block; }\n.research-slider .research-slider__track { box-sizing: border-box; width: 200px; height: 16px; position: absolute; left: 0px; top: 0px; }\n.research-slider .research-slider__range { box-sizing: border-box; height: 16px; position: absolute; top: 0px; }\n.research-slider .research-slider__thumb { box-sizing: border-box; width: 16px; height: 16px; position: absolute; top: 0px; }\n</style>\n",
+        "layerIds": [
+          null,
+          null,
+          "slider-4",
+          "slider-5",
+          "slider-6",
+          "slider-7",
+          null
+        ]
+      }
+    ]
+  }
+]

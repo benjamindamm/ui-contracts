@@ -1,0 +1,202 @@
+{
+  "scope": "Actual original SCXML4.3.28 with native parent delivery, additional CEM/TypeScript-signature/DOM/CSS/ARIA mapping; native geometry/focus/synthetic keyboard and accessibility tree; no native CSS UX machine, ARIA scroll policy, production component, physical key or AT speech",
+  "criterion": "A03",
+  "cases": [
+    {
+      "additionalHostCode": true,
+      "criterion": "A03",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "BStatus": "",
+        "live": "polite",
+        "role": "status",
+        "status": "Selected Alpha A 1"
+      },
+      "id": "accessible-update-from-public-event",
+      "observed": {
+        "BStatus": "",
+        "live": "polite",
+        "role": "status",
+        "status": "Selected Alpha A 1"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [
+        {
+          "detail": {
+            "query": "Alpha",
+            "value": "Alpha A 1"
+          },
+          "instance": "A",
+          "name": "value-change"
+        }
+      ],
+      "rawOriginalParentEvents": [
+        {
+          "data": {
+            "query": "Alpha",
+            "value": "Alpha A 1"
+          },
+          "invokeid": "A",
+          "name": "value-change",
+          "receiver": "A"
+        }
+      ],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        },
+        {
+          "instance": "A",
+          "state": "selected"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "A03",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "BStatus": "",
+        "publicEvents": 0,
+        "status": ""
+      },
+      "id": "css-change-without-live-message",
+      "observed": {
+        "BStatus": "",
+        "publicEvents": 0,
+        "status": ""
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "A03",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "error": "live-region-source-conflict"
+      },
+      "id": "live-region-semantic-conflict",
+      "observed": {
+        "error": "live-region-source-conflict"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "id": "native-status-update-tree",
+      "criterion": "A03",
+      "prerequisite": "accessible-update-from-public-event",
+      "expectedText": "Selected Alpha A 1",
+      "expectedRoles": [
+        "status"
+      ],
+      "observed": {
+        "regions": [
+          {
+            "role": "status",
+            "live": "polite",
+            "atomic": true,
+            "text": "Selected Alpha A 1"
+          },
+          {
+            "role": "status",
+            "live": "polite",
+            "atomic": true,
+            "text": ""
+          }
+        ]
+      },
+      "expectationMet": true
+    }
+  ]
+}

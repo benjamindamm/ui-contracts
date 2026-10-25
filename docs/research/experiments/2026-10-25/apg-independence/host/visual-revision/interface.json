@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "combobox-autocomplete.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "ComboboxAutocomplete",
+          "members": [
+            {
+              "kind": "field",
+              "name": "comboboxNode",
+              "type": {
+                "text": "HTMLInputElement"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "buttonNode",
+              "type": {
+                "text": "HTMLButtonElement"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "listboxNode",
+              "type": {
+                "text": "HTMLUListElement"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

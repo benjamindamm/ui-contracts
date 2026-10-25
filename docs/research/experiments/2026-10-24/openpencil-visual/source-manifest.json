@@ -1,0 +1,80 @@
+[
+  {
+    "file": "sources/packages/scene-graph/src/variables/schema.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/variables/schema.ts",
+    "sha256": "7a21da812d03acf6bf2a4ff07c69fa7d2956e5b4883fcf5a6ea568a823b2397c",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/scene-graph/src/variables/resolution.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/variables/resolution.ts",
+    "sha256": "552c47a8a51d3804a55b9b80ffbfec5f4bbe5ed8705721d36a566ac3ed52eab6",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/dom-css/src/tokens/values.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/values.ts",
+    "sha256": "ff3ad8f37163807551ca32162f5d0617fea3bbd078024e4ce91cdd10cf96d39f",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/dom-css/src/tokens/conditions.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/conditions.ts",
+    "sha256": "06e869c01aa7812d8e9caaf20de4e9b850c120b302bdc82f08c0ceb10871fefc",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/dom-css/src/tokens/stylesheet.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/stylesheet.ts",
+    "sha256": "a9002b662c250e0d29d08e001a83cadd2f75a7f6a94692032de75a07dfe4112f",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/scene-graph/src/variables/units.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/variables/units.ts",
+    "sha256": "dd98881c76b1cdcb0f9f49701c6521d62b25b3c55bf0a6e79312aeade3ca3085",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/scene-graph/src/types.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/types.ts",
+    "sha256": "0043d4718f5d0376143b51ea74162636cf1af6538b42c1f6d778eddd44381d33",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/dom-css/src/tokens/names.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/names.ts",
+    "sha256": "128963074e23283aee32a1aac58c1e324eb70476f06f4cf66b48d6065392785d",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/dom-css/package.json",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/package.json",
+    "sha256": "5fe72913e5635dab51163979bbb89fc0bfe2d5747127f05c74a4208fd33095cb",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/scene-graph/package.json",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/package.json",
+    "sha256": "01b568fc8c9fe95f631d6737fed22483d96752eeef980a0f97b0014565f7e420",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/scene-graph/src/variables/token.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/variables/token.ts",
+    "sha256": "1a79362812b9cf98c83970ca69cc52cfaea8d029686f6e09db60dd308d58048e",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/scene-graph/src/variables/index.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/variables/index.ts",
+    "sha256": "ad4b5793fa73303b08805a1254bdb1dcea375e2db3d0246b579d05f3d202709d",
+    "capture": "Full BrowserOS neo code block"
+  },
+  {
+    "file": "sources/packages/dom-css/src/tokens/validate.ts",
+    "url": "https://raw.githubusercontent.com/open-pencil/open-pencil/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/validate.ts",
+    "sha256": "ded28e3f4cbbee9be08e4e59a9d2c6a6c42362341cf589a2a973c92b9cf7a74f",
+    "capture": "Full BrowserOS neo code block"
+  }
+]

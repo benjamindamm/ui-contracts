@@ -1,0 +1,400 @@
+{
+  "date": "2026-10-25",
+  "source": "S125",
+  "original_code_modified": false,
+  "original_files": [
+    {
+      "local_provenance_path": "work/reference-probes/build/compile.js",
+      "sha256": "eba451728631dba5b73b9c2ffe393e0d2cb8b72ef341170ede05f299eea51e59"
+    },
+    {
+      "local_provenance_path": "work/validation-probes/sources/style-map.mts",
+      "sha256": "b4d41e51aaf19e95258cf13fb41b3686d5787082d5a28ba5351df55d937c3bf2"
+    },
+    {
+      "local_provenance_path": "work/validation-probes/sources/uxspec.schema.json",
+      "sha256": "3e2819b844c8b4f5fb03f18bb49ee9f87396bc6e7ad0e04482d3217389574bf7"
+    },
+    {
+      "local_provenance_path": "work/uspec-ownership/compiled/component-contract.js",
+      "sha256": "bf42e98785f40d1ba09f3dc4d5f0463fb809967476a9938cee81542fe6c6d490"
+    },
+    {
+      "local_provenance_path": "work/uspec-ownership/compiled/cache-validation.js",
+      "sha256": "f1f3c717376f09c57f5d297408941634f645b541347d4d92060a882e1bcbcff5"
+    },
+    {
+      "local_provenance_path": "work/uspec-ownership/compiled/target-identity.js",
+      "sha256": "902a4bf27dfd0642a7ba83a95461e8f7f7a575cc4574ce3c1ce87168ba21121d"
+    },
+    {
+      "local_provenance_path": "work/uspec-layout-scope/phaseE.ts",
+      "sha256": "3d3370fc87d9a1035c1223380924da33400ca051cdf1f9c3b6943443d0e89a3a"
+    },
+    {
+      "local_provenance_path": "work/uspec-layout-scope/safe.ts",
+      "sha256": "6aba8c5203e1f5623b01775d83283cbeaee396d221930cfccc3f98d6f210ee69"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "929034512e6bc4b746bbd705d7db811a27ff995a54d7703a04cbcc525955f63d"
+    },
+    {
+      "file": "additional-row-policy.json",
+      "sha256": "f6a3c58bf478beed56db2a7e67e126da2791973f8d27d203e9f32062250a33c9"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "76040a743cab33133d69fcd74b3f7318e52fff7d48ab8dda566bc45ebf29b3cf"
+    },
+    {
+      "file": "check_results.py",
+      "sha256": "5811fc78f2f95f0e1931067e6209a156f9e54166857a0363b27870371d407c75"
+    },
+    {
+      "file": "extraction.json",
+      "sha256": "ae7a451cd48310610039819018cff5b1928f250543f50342d79dadcc5484724a"
+    },
+    {
+      "file": "fixtures/uspec/autocomplete-api-dictionary.json",
+      "sha256": "08f69291840043646ef62fb280990c281c2bc1e8fe60faac9a7df2b783d6df45"
+    },
+    {
+      "file": "fixtures/uspec/autocomplete-api.json",
+      "sha256": "4121f2a696dd2540a74abab9ef4c0c300afe164bdd18ff3681e15db269029b49"
+    },
+    {
+      "file": "fixtures/uspec/autocomplete-color.json",
+      "sha256": "9c15ad8aa74f1ece265ca61e139850462cb3606d12a6bccf758b6ee9ae7b5219"
+    },
+    {
+      "file": "fixtures/uspec/autocomplete-reconciliations.json",
+      "sha256": "1ac961ee67cd024557b5414cfe06f70e8461e27f14795fd5dafe1e98368e9a7d"
+    },
+    {
+      "file": "fixtures/uspec/autocomplete-structure.json",
+      "sha256": "5fb7a818e02d447e0f4c3276d89314c77384813d720491ab4e8e4ba0737fc03d"
+    },
+    {
+      "file": "fixtures/uspec/autocomplete-voice.json",
+      "sha256": "26ed25652e21fe7f4457df81cab16cd38d7ed4893053ab055f59bc448fb90320"
+    },
+    {
+      "file": "fixtures/uspec/canonical-observation.json",
+      "sha256": "0be7f933973b5e3dfa1a85d62946d50f2e97608129f86ee00a57b23bb7ea4007"
+    },
+    {
+      "file": "fixtures/uspec/clipping-node.json",
+      "sha256": "0d10549017a77821f3a7b953dcc4cfa296af523e272c51cd4615e71a08443b7f"
+    },
+    {
+      "file": "fixtures/uspec/clipping-original-output.json",
+      "sha256": "49c7ff5209859d90eb7fda90a31a01b796eb86b8bdad7cdba0c1edfc37793055"
+    },
+    {
+      "file": "fixtures/uspec/contract.json",
+      "sha256": "39d07639ad40772b1e00567916bdd5c7e6afc539821ebe5e76fb673ba032fbe9"
+    },
+    {
+      "file": "fixtures/uspec/manifest.json",
+      "sha256": "7a3ee47d53900341daf68c6097d5571062964436d57312bf675250735c9a805a"
+    },
+    {
+      "file": "fixtures/uspec/plan.json",
+      "sha256": "3bd510df4a162954b013c16212e75600177943f037f12fa25bb742d122808a8f"
+    },
+    {
+      "file": "fixtures/uspec/renderer.json",
+      "sha256": "a38b69090bf7186536fea13c4f51e09082b2187afc12a040ce4acdbbbd1badee"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/autocomplete-api-dictionary.json",
+      "sha256": "08f69291840043646ef62fb280990c281c2bc1e8fe60faac9a7df2b783d6df45"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/autocomplete-api.json",
+      "sha256": "4121f2a696dd2540a74abab9ef4c0c300afe164bdd18ff3681e15db269029b49"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/autocomplete-color.json",
+      "sha256": "9c15ad8aa74f1ece265ca61e139850462cb3606d12a6bccf758b6ee9ae7b5219"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/autocomplete-reconciliations.json",
+      "sha256": "1ac961ee67cd024557b5414cfe06f70e8461e27f14795fd5dafe1e98368e9a7d"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/autocomplete-structure.json",
+      "sha256": "5fb7a818e02d447e0f4c3276d89314c77384813d720491ab4e8e4ba0737fc03d"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/autocomplete-voice.json",
+      "sha256": "26ed25652e21fe7f4457df81cab16cd38d7ed4893053ab055f59bc448fb90320"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/canonical-observation.json",
+      "sha256": "d5a57c56905b5b81cbdfad645dc676e8cdfcc96e29b661a30d6326c2b8e37544"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/clipping-node.json",
+      "sha256": "40e6fe2c1a287808cfc25f77b5c51869228d2f498f19158447b337f4f40476b9"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/clipping-original-output.json",
+      "sha256": "297160a9ef4f1a0164e9808d53300bc1918479973f5bc86351fbd129f0c650d9"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/contract.json",
+      "sha256": "0528f41b1ad0c67c0c144f6028eb6ee6ae3d57ced0f4e5d06863ecca76ec3ac0"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/manifest.json",
+      "sha256": "84d2bacbbf94638cbb39068641df6b930635484c60046ea0f8f1b42d4b380e8c"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/plan.json",
+      "sha256": "3bd510df4a162954b013c16212e75600177943f037f12fa25bb742d122808a8f"
+    },
+    {
+      "file": "fixtures/uspec-invalid-clip/renderer.json",
+      "sha256": "d86669e18f6ab6f44583c637dcea4be696579b4462484edc0abb4d8ef17f7294"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/autocomplete-api-dictionary.json",
+      "sha256": "08f69291840043646ef62fb280990c281c2bc1e8fe60faac9a7df2b783d6df45"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/autocomplete-api.json",
+      "sha256": "4121f2a696dd2540a74abab9ef4c0c300afe164bdd18ff3681e15db269029b49"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/autocomplete-color.json",
+      "sha256": "9c15ad8aa74f1ece265ca61e139850462cb3606d12a6bccf758b6ee9ae7b5219"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/autocomplete-reconciliations.json",
+      "sha256": "1ac961ee67cd024557b5414cfe06f70e8461e27f14795fd5dafe1e98368e9a7d"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/autocomplete-structure.json",
+      "sha256": "5fb7a818e02d447e0f4c3276d89314c77384813d720491ab4e8e4ba0737fc03d"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/autocomplete-voice.json",
+      "sha256": "26ed25652e21fe7f4457df81cab16cd38d7ed4893053ab055f59bc448fb90320"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/canonical-observation.json",
+      "sha256": "74b11c48735862393f8243eaa92caefd51409e19dc2e8077382f692f674f7511"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/clipping-node.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/clipping-original-output.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/contract.json",
+      "sha256": "d0ab18d0e4d02a5e8fa5ddad550cb31fdc621c601a0b70890b38f16dfed514fd"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/manifest.json",
+      "sha256": "a97b49a5c6ed393e36fe1fe1871a1d5809f435ceb806661aa6743789fde74df2"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/plan.json",
+      "sha256": "3bd510df4a162954b013c16212e75600177943f037f12fa25bb742d122808a8f"
+    },
+    {
+      "file": "fixtures/uspec-missing-clip/renderer.json",
+      "sha256": "5ce8e1b02d9c6ef2e30cc7ae5c15567f714a4b894953541b3b91b5d9a51c6f4c"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/autocomplete-api-dictionary.json",
+      "sha256": "08f69291840043646ef62fb280990c281c2bc1e8fe60faac9a7df2b783d6df45"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/autocomplete-api.json",
+      "sha256": "4121f2a696dd2540a74abab9ef4c0c300afe164bdd18ff3681e15db269029b49"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/autocomplete-color.json",
+      "sha256": "9c15ad8aa74f1ece265ca61e139850462cb3606d12a6bccf758b6ee9ae7b5219"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/autocomplete-reconciliations.json",
+      "sha256": "1ac961ee67cd024557b5414cfe06f70e8461e27f14795fd5dafe1e98368e9a7d"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/autocomplete-structure.json",
+      "sha256": "c6d712030b9f007b1c8b20c0564a6e808ac5a08a03c8f85247abc1ebdd493451"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/autocomplete-voice.json",
+      "sha256": "26ed25652e21fe7f4457df81cab16cd38d7ed4893053ab055f59bc448fb90320"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/canonical-observation.json",
+      "sha256": "85ac17d9b4804de1e30732d24e8c8c622034ac40af3775537f115f9e04df5fec"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/clipping-node.json",
+      "sha256": "0d10549017a77821f3a7b953dcc4cfa296af523e272c51cd4615e71a08443b7f"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/clipping-original-output.json",
+      "sha256": "49c7ff5209859d90eb7fda90a31a01b796eb86b8bdad7cdba0c1edfc37793055"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/contract.json",
+      "sha256": "03762c3c3408452d3fd03af1c7841132129500d6272a7c05b10874acbb873fa8"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/manifest.json",
+      "sha256": "58fd2e77aa29e35a566fec2608d97502c27e9afc7fb5a764e04d3faa6af08bfd"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/plan.json",
+      "sha256": "3bd510df4a162954b013c16212e75600177943f037f12fa25bb742d122808a8f"
+    },
+    {
+      "file": "fixtures/uspec-unresolved/renderer.json",
+      "sha256": "a38b69090bf7186536fea13c4f51e09082b2187afc12a040ce4acdbbbd1badee"
+    },
+    {
+      "file": "fixtures/uspec-visible/autocomplete-api-dictionary.json",
+      "sha256": "08f69291840043646ef62fb280990c281c2bc1e8fe60faac9a7df2b783d6df45"
+    },
+    {
+      "file": "fixtures/uspec-visible/autocomplete-api.json",
+      "sha256": "4121f2a696dd2540a74abab9ef4c0c300afe164bdd18ff3681e15db269029b49"
+    },
+    {
+      "file": "fixtures/uspec-visible/autocomplete-color.json",
+      "sha256": "9c15ad8aa74f1ece265ca61e139850462cb3606d12a6bccf758b6ee9ae7b5219"
+    },
+    {
+      "file": "fixtures/uspec-visible/autocomplete-reconciliations.json",
+      "sha256": "1ac961ee67cd024557b5414cfe06f70e8461e27f14795fd5dafe1e98368e9a7d"
+    },
+    {
+      "file": "fixtures/uspec-visible/autocomplete-structure.json",
+      "sha256": "5fb7a818e02d447e0f4c3276d89314c77384813d720491ab4e8e4ba0737fc03d"
+    },
+    {
+      "file": "fixtures/uspec-visible/autocomplete-voice.json",
+      "sha256": "26ed25652e21fe7f4457df81cab16cd38d7ed4893053ab055f59bc448fb90320"
+    },
+    {
+      "file": "fixtures/uspec-visible/canonical-observation.json",
+      "sha256": "e8fd07b45a659127883e85f4ef50036907f9ada4f4fced9aaf653f4169d1fd6e"
+    },
+    {
+      "file": "fixtures/uspec-visible/clipping-node.json",
+      "sha256": "33b600bcf94e8c6f300ea4222179f3d4d7b032414b4a4e144a3ab449589b3e87"
+    },
+    {
+      "file": "fixtures/uspec-visible/clipping-original-output.json",
+      "sha256": "97470685ceb1780f7ced9c88ab0b25c503596d5f7bbdb5c2fe90911db7ea0183"
+    },
+    {
+      "file": "fixtures/uspec-visible/contract.json",
+      "sha256": "e240fd0fa6671e162c4b1310b241fb6b0eb91605f687788381ee216761fc4c47"
+    },
+    {
+      "file": "fixtures/uspec-visible/manifest.json",
+      "sha256": "14addea49d1a61672c10dd9a3e521d67cce54539448e9eb7f6caca8f3e86ff6e"
+    },
+    {
+      "file": "fixtures/uspec-visible/plan.json",
+      "sha256": "3bd510df4a162954b013c16212e75600177943f037f12fa25bb742d122808a8f"
+    },
+    {
+      "file": "fixtures/uspec-visible/renderer.json",
+      "sha256": "7fa5c481195d8ac0934b596f45053fa883a663735e2eba05be89bcd63aa252f9"
+    },
+    {
+      "file": "fixtures/uxspec/compiled.json",
+      "sha256": "21c7aa16f08f6e4f8eaf2b17499fdc6300bc9cfb117f331b406684a3c3bb6bf7"
+    },
+    {
+      "file": "fixtures/uxspec/source.json",
+      "sha256": "25191f5198d8dfc94a69dd1ad38f77ed7baa244ae3f188109c15e53bce24ae3a"
+    },
+    {
+      "file": "host/cases.json",
+      "sha256": "76040a743cab33133d69fcd74b3f7318e52fff7d48ab8dda566bc45ebf29b3cf"
+    },
+    {
+      "file": "host/harness.js",
+      "sha256": "282a1e01a20fc32672c3e3a717a86e7826452f05210153d89d4f8f5abc1698c1"
+    },
+    {
+      "file": "host/index.html",
+      "sha256": "9f09d8f225b6db38caa8bf64feeecd4f7440611e615102299e439006354a714d"
+    },
+    {
+      "file": "host/models.json",
+      "sha256": "db1176a86e079f48502fa02092f960ff437037027409dab61c2afa08b8a996be"
+    },
+    {
+      "file": "initial-brace-error-prepare.cjs",
+      "sha256": "69320b4add6ed54110703fd99e50cea0c802d919c52ed39d6442d4b7bfe90937"
+    },
+    {
+      "file": "initial-flex-shrink-host.html",
+      "sha256": "e235787d7e494e271ebf01ce6f9c8c889c37137a7895cb6fb1f8aaa90bc30540"
+    },
+    {
+      "file": "initial-native-capture.json",
+      "sha256": "bb4126e31b85d5f0be007e411901b10cd399265fe6af3ef22755bf4dd536f26b"
+    },
+    {
+      "file": "native-capture.json",
+      "sha256": "885090e4b65f7749fbc96495af6a88c57323f5c229a1c5728cbf0e70ea3b208a"
+    },
+    {
+      "file": "own-preflight-syntax-error.json",
+      "sha256": "aafa7b526b6ef52f0695115f976123910ec3728d75184f7082390ae596e05877"
+    },
+    {
+      "file": "prepare.cjs",
+      "sha256": "7acd228c1a66c93dc4c10d3da0eb697fa2a36b47053d51c20efa77f7ffe90a20"
+    },
+    {
+      "file": "results.json",
+      "sha256": "a9afa37cdc61ab2c65a9ed415742a12a9ad58cfe4da952265dc8b0af4610cfe9"
+    },
+    {
+      "file": "schema-results.json",
+      "sha256": "a52e1e71b8def848278c122da6256bb4bc624d2bc1fa84a84be12caef64778a2"
+    },
+    {
+      "file": "us-anchor-results.json",
+      "sha256": "a9038dfc1493e280b0b0fa36d628ba391bd71b0d25aaaaff06c6ea03f0f35f14"
+    },
+    {
+      "file": "us-overflow-results.json",
+      "sha256": "e8ff625486cb579faf6872344143a7d3575fbf8be20143f9e0e1b71c294e5356"
+    },
+    {
+      "file": "ux-anchor-results.json",
+      "sha256": "362d85f28a841afb09a45eaff7a11685da2db520dd1efb2a85d686eca6d5bd15"
+    },
+    {
+      "file": "ux-overflow-results.json",
+      "sha256": "c6eec617e1800b33f682d740c49cd891d2f819d96a0f0798c86457882f8dc107"
+    }
+  ],
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "production_component_implemented": false,
+  "original_module_initialization_scope": "Full original cache/builder/compiler APIs; original Vue/extractDims declarations isolated exactly as separately documented, no whole editor or Figma SDK",
+  "reproduction_note": "Provide pinned original sibling files/dependencies at documented paths. Original modules/transpiled map not redistributed as own implementation."
+}

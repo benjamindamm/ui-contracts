@@ -1,0 +1,98 @@
+{
+  "original_published_packages": [
+    "@open-pencil/scene-graph@0.16.0",
+    "@open-pencil/dom-css@0.16.0"
+  ],
+  "prior_original_inventory_sha256": "ce880bf2622ec8f06eb0626117bcec22cd4d9b88285277cbb01288c10399ae8d",
+  "prior_original_source": "S100",
+  "original_api_files": [
+    {
+      "file": "work/op-projection-origin/tool/node_modules/@open-pencil/scene-graph/dist/index.js",
+      "sha256": "40a1bb3531af3721817cd61a4752fbb1f46c8af8785160780c4244274275b3c3"
+    },
+    {
+      "file": "work/op-projection-origin/tool/node_modules/@open-pencil/scene-graph/dist/chunks/behaviours/spec.js",
+      "sha256": "48efd14a1591e6c385bece64405b76a9c9ea0d34c8f76fe511e53d2eb7c18633"
+    },
+    {
+      "file": "work/op-projection-origin/tool/node_modules/@open-pencil/scene-graph/dist/chunks/behaviours/layers.js",
+      "sha256": "2ffbe387dab5411047ea2ddf43a738cfde3fb143e5586d045fc446fd0c7e3781"
+    },
+    {
+      "file": "work/op-projection-origin/tool/node_modules/@open-pencil/scene-graph/dist/chunks/behaviours/kinds.js",
+      "sha256": "9d80871081054bbe5c5d079bd7dce51e5b9da9fa0f6346b4350dcf05f4188cfd"
+    },
+    {
+      "file": "work/op-projection-origin/tool/node_modules/@open-pencil/scene-graph/package.json",
+      "sha256": "b918321b3ad75edd9fbc114520559a1dc0f9bf2bad900e18fd5cfc9425b808fc"
+    },
+    {
+      "file": "work/op-projection-origin/tool/node_modules/@open-pencil/dom-css/dist/export.js",
+      "sha256": "04571b4b80fb028395438acd54763913b415fb94b1ceceba41e7b60c55b056d6"
+    },
+    {
+      "file": "work/op-projection-origin/tool/node_modules/@open-pencil/dom-css/package.json",
+      "sha256": "de09f680d774511228ee3d463d313415598267e9d4f9c056d5c5c5e7466f7b1a"
+    }
+  ],
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "whole_repo_identity_claimed": false,
+  "new_runtime_conditions": 13,
+  "schema_sha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "ff49247270d6575ff65ffe43983777fbd757e54c56bd67ae7fe632248107d542"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "6ba614b1ade7d1143620de070d9ceefdafe6ced9f7f9f0f85412011caef8cf52"
+    },
+    {
+      "file": "check_schema.py",
+      "sha256": "5b4719de984fe0be3b7b80031c2b68c0dd9074ee8871ec88ee22fb92087b2a56"
+    },
+    {
+      "file": "initial-ten-results.json",
+      "sha256": "5bf42f3b5d83bfdbe81149d1519da8910c9188d5adadb17a817ef9425a37cd57"
+    },
+    {
+      "file": "interface.json",
+      "sha256": "6c81a88642980279aa63f6d116ce417e90776f7061b97b168e3139916d6fbeea"
+    },
+    {
+      "file": "last-run-output.json",
+      "sha256": "4b801f200ddd6b7794ce57714c4af3fbc17e98dc6675f8a1eaa10d77fbb706ae"
+    },
+    {
+      "file": "original-tool-package-lock.json",
+      "sha256": "3362b420d56cae5579fef1dbe9a8c5a8b8cda5a3a98c7574b75a6bf9fd6e9391"
+    },
+    {
+      "file": "original-tool-package.json",
+      "sha256": "2ad81b0f13bb5d5d16bfa77047f508617324edfa182e3832bc51ff93495a8f76"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "3618507895375599a0c7edf1272447765f8da5ab649ba97f3978ba7a3f4490b3"
+    },
+    {
+      "file": "results.json",
+      "sha256": "ff6e422e90959b8259da3d8d7210e13505efebdefacdb4a69f3a7d42ff2dc065"
+    },
+    {
+      "file": "run.mjs",
+      "sha256": "7728ecccf39c41a4aad080519548628430d38d26eb11d6b5668f6e7dec74a1eb"
+    },
+    {
+      "file": "schema-expectations.json",
+      "sha256": "71f6d5d33577250ebec2b9429c6f2ac004cb3bda0bb441bbeb53d82c9c010040"
+    },
+    {
+      "file": "schema-results.json",
+      "sha256": "188a307621d0a399a91571cc66d404aea35c3aabed867c21cb73ebca9cb5e7cf"
+    }
+  ],
+  "prior_original_inventory_all_files_verified": 9941
+}

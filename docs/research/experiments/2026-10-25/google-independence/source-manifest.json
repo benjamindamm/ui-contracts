@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-25",
+  "source_id": "S118",
+  "original_code_modified": false,
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_files": [
+    {
+      "local_provenance_path": "work/google-linter/tool/node_modules/@google/design.md/dist/linter/index.js",
+      "sha256": "a76ab9c2ee8a1bc6ad709167c3c7f06e64a5e2253d9718d3c2a8c51824272423"
+    },
+    {
+      "local_provenance_path": "work/google-linter/tool/node_modules/@google/design.md/package.json",
+      "sha256": "9cd26dae8342295b88dad6df3432f732f38c215f401f49af61068211cf2015b9"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "4526635a0a8d9be931573fba694c6afa30d54b0ed0ebb0be414996dc0a1d0242"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "0783a1f8a19cb46b4b69fee920490140a2ecf504986c8c25de775003ebfe7f84"
+    },
+    {
+      "file": "fixtures/base/DESIGN.md",
+      "sha256": "8ab07b8549f4e5b4085fc64a089e05f56594c137b147d9c77950756f0bc01c00"
+    },
+    {
+      "file": "fixtures/base/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/base/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/base/derived.css",
+      "sha256": "db7aa1bb9ad1fad9cec6b812b896dfc51245e249798daf9b7be5c66b71b632d4"
+    },
+    {
+      "file": "fixtures/base/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/visual-revision/DESIGN.md",
+      "sha256": "e0d38f7713b738012afba116dc755a276bda120692d7c7d57f8ca49d52196331"
+    },
+    {
+      "file": "fixtures/visual-revision/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/visual-revision/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/visual-revision/derived.css",
+      "sha256": "4fcef205e140d167a23bbeb4bb73a5f4089b4955e4cc8ee17af835115738f698"
+    },
+    {
+      "file": "fixtures/visual-revision/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "initial-color-shape-results.json",
+      "sha256": "e1261d78f33342c921f86ebb0c4a5566ae51de9332e474bdce05433249ecf6b3"
+    },
+    {
+      "file": "initial-run.mjs",
+      "sha256": "7520ed618ce8055058ea2d11eaab4c63d0f43936d9ec0da14a7d86f25196d203"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "a3c7de64cd4a87b78d33837d5c7176443e57c61bdde8316f9423e52daa3942d6"
+    },
+    {
+      "file": "results.json",
+      "sha256": "187d6d15633979dc08853629d668c3aabb9f20cdc9827e44ee0d2a95e6554d37"
+    },
+    {
+      "file": "run.mjs",
+      "sha256": "62ac15325437b8b2039a7090de6624fde20b2add77088a461dcdf2b5cf4303e0"
+    }
+  ],
+  "generated_third_party_bundles": [],
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "reproduction_originals": "Provide pinned original files/dependencies at the documented workspace sibling paths; originals and bundled third-party code not redistributed as own implementation"
+}

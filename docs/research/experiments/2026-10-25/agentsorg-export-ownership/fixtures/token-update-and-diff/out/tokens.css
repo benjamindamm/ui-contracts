@@ -1,0 +1,7 @@
+/* generated from research-brand v1.0.0 — do not edit; the .design file is normative */
+
+:root {
+  --spacing-popup-height: 192px;
+  --spacing-popup-max-height: var(--spacing-popup-height);
+  --color-primary: #ffffff;
+}

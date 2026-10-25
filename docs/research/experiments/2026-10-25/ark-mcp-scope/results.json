@@ -1,0 +1,132 @@
+{
+  "node": "v24.22.1",
+  "typescript": "5.9.3",
+  "velite": "0.4.0",
+  "method": "Unmodified original PropDefintion/types/normalizePath declarations isolated by AST; actual Velite s/defineCollection/schema.safeParse including original metadata transform; no schema reimplementation or full website build",
+  "sourceSha256": "ed0a93b90f048de57323697595aa9fc8cfd1d75725e5db31461f220f8c1a0179",
+  "originalApiJsonSha256": "fc6632e2a4e603abe79ecd29939f411818cb01f3dcc06ae48bd9efd80364673c",
+  "cases": [
+    {
+      "id": "original-api-json-control",
+      "mutation": "none",
+      "expectedAccepted": true,
+      "inputSha256": "fe93a2a3da16093315f6a01a7d15926255201930a4e6b850fc0510b7719bfdf4",
+      "observed": {
+        "accepted": true,
+        "component": "combobox",
+        "framework": "react",
+        "openType": "boolean",
+        "parts": 16
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "required-flag-string",
+      "mutation": "required",
+      "expectedAccepted": false,
+      "inputSha256": "086d38775c678d93a9bc256dd6991e8be2f36749bd2e844bf5857f8fe8b8a41d",
+      "observed": {
+        "accepted": false,
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "boolean",
+            "received": "string",
+            "path": [
+              "Root",
+              "props",
+              "open",
+              "isRequired"
+            ],
+            "message": "Expected boolean, received string"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "type-number",
+      "mutation": "type",
+      "expectedAccepted": false,
+      "inputSha256": "bc790774dbf0dfa3d7d82a36c0efa1e3b191dc8bf017ff93b786deb7615e9383",
+      "observed": {
+        "accepted": false,
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "string",
+            "received": "number",
+            "path": [
+              "Root",
+              "props",
+              "open",
+              "type"
+            ],
+            "message": "Expected string, received number"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-part-props",
+      "mutation": "props",
+      "expectedAccepted": false,
+      "inputSha256": "f70ff57f704919fd7ebc20790dbdf229758de82647181ef6c6cc3d2b0ab99696",
+      "observed": {
+        "accepted": false,
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "object",
+            "received": "undefined",
+            "path": [
+              "Root",
+              "props"
+            ],
+            "message": "Required"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "boolean-default",
+      "mutation": "default",
+      "expectedAccepted": false,
+      "inputSha256": "cd26dd19cdac7ca028b99d1125cace7da94edd12d5f5702c2a40294ae1c607aa",
+      "observed": {
+        "accepted": false,
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "string",
+            "received": "boolean",
+            "path": [
+              "Root",
+              "props",
+              "open",
+              "defaultValue"
+            ],
+            "message": "Expected string, received boolean"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "opaque-type-expression",
+      "mutation": "opaque-type",
+      "expectedAccepted": true,
+      "inputSha256": "4aff6df8c9b6c35ff4d7a8f8fc16576ecfa1d4a3f54550cda988bde1f20e78b4",
+      "observed": {
+        "accepted": true,
+        "component": "combobox",
+        "framework": "react",
+        "openType": "TotallyInvalid<unknown>",
+        "parts": 16
+      },
+      "expectationMet": true
+    }
+  ]
+}

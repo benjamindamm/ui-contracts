@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@babel/polyfill": "7.12.1",
+    "@scion-scxml/scxml": "4.3.28"
+  }
+}

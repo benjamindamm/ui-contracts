@@ -1,0 +1,24 @@
+{
+  "package": "@scion-scxml/scxml@4.3.28",
+  "cemDeclaredEvent": "selection-change",
+  "profileEvent": "selection-change",
+  "cases": [
+    {
+      "id": "renamed-native-public-event",
+      "expected": {
+        "name": "selection-change",
+        "value": "alpha",
+        "invokeid": "A",
+        "finalState": "closed"
+      },
+      "criterion": "Execute the actually staged, jointly renamed CEM/SCXML/profile package with the pinned original SCXML interpreter and native parent send; observe renamed name and preserved payload.",
+      "observed": {
+        "name": "selection-change",
+        "value": "alpha",
+        "invokeid": "A",
+        "finalState": "closed"
+      },
+      "expectationMet": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "Additional candidate-specific identity/value binding using actual original exports, not new original semantics",
+  "cases": [
+    {
+      "id": "independent-original-contributions",
+      "observed": {
+        "originalRootsSeparate": true,
+        "partTargetsResolved": true,
+        "visualValues": [
+          160,
+          192
+        ],
+        "otherDomainsUnchanged": true
+      },
+      "expectationMet": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "url": "https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/",
+  "sections": [
+    {
+      "id": "name",
+      "read_text_sha256": "e78b96eed16e4e07d9f6fe619fc1aeb579a7c9a3ba0031efbdb2ee8e4eed7f1c",
+      "chars": 1894
+    },
+    {
+      "id": "anchor-scope",
+      "read_text_sha256": "c5eec501b6eaa9cc40aa4db1ead5e279a83c298d0a92b8ca0c98dbf653ce95c8",
+      "chars": 2500
+    },
+    {
+      "id": "target",
+      "read_text_sha256": "150a4af756fa27d14681c5c956026b3da285ff1796109ae99952c45959dfb60d",
+      "chars": 4002
+    },
+    {
+      "id": "position-anchor",
+      "read_text_sha256": "b8705ca709d36d9caf61cc8804d20b4291af3552ff74d41c500b0ba6faeb00a0",
+      "chars": 2130
+    },
+    {
+      "id": "accessibility",
+      "read_text_sha256": "d72163d02e6bcff288e120048b8c1367be669e8c258b88fca97ce6e1d4a50358",
+      "chars": 2375
+    }
+  ],
+  "findings": [
+    "Anchor names need not be unique; CSS chooses an eligible nearest ancestor or last element in tree order.",
+    "Scope and layout eligibility participate in native resolution.",
+    "position-anchor is a reset-only sub-property of position.",
+    "Section 7 explicitly separates visual anchoring from accessibility relations."
+  ],
+  "scope": "Static declaration-to-model binding only; no native box eligibility, layout or accessibility conformance claimed"
+}

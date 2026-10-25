@@ -1,0 +1,5 @@
+const fs=require('fs'),path=require('path'),ts=require('../validation-probes/ts-tool/node_modules/typescript');const w=__dirname;fs.mkdirSync(path.join(w,'compiled'),{recursive:true});
+for(const f of ['component-contract.ts','cache-validation.ts','target-identity.ts']){const source=fs.readFileSync(path.join(w,'sources',f),'utf8'),result=ts.transpileModule(source,{fileName:f,compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,esModuleInterop:true}});fs.writeFileSync(path.join(w,'compiled',f.replace(/\.ts$/,'.js')),result.outputText)}
+const cases=[
+ ['baseline','accepted',true],['renderer-hash-conflict','accepted',false],['plan-hash-conflict','accepted',false],['plan-slug-conflict','accepted',false],['cross-specialist-identity','accepted',false],['api-dictionary-name-conflict','accepted',false],['specialist-hash-drift','accepted',true],['measured-value-conflict','bothValuesRetained',true],['cache-source-preserved','unchanged',true],['canonical-load-after-cache-change','accepted',true]
+].map(([id,field,value])=>({id,expected:{[field]:value}}));fs.writeFileSync(path.join(w,'cases.json'),JSON.stringify(cases,null,2)+'\n');

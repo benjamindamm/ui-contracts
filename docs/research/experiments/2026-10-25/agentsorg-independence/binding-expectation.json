@@ -1,0 +1,12 @@
+{
+  "id": "independent-original-contributions",
+  "expected": {
+    "originalRootsSeparate": true,
+    "partTargetsResolved": true,
+    "visualValues": [
+      160,
+      192
+    ],
+    "otherDomainsUnchanged": true
+  }
+}

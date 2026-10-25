@@ -1,0 +1,729 @@
+{
+  "cases": [
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "I01",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "BHeight": 160,
+          "height": 192,
+          "scrollHeight": 224
+        },
+        "id": "public-height-number",
+        "observed": {
+          "BHeight": 160,
+          "height": 192,
+          "scrollHeight": 224
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          },
+          {
+            "instance": "A",
+            "state": "open"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "I01",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "error": "public-property-type"
+        },
+        "id": "public-height-wrong-type",
+        "observed": {
+          "error": "public-property-type"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "I01",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "error": "geometry-unit"
+        },
+        "id": "public-height-wrong-unit",
+        "observed": {
+          "error": "geometry-unit"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "I01",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "error": "public-type-layout-binding"
+        },
+        "id": "public-property-metadata-conflict",
+        "observed": {
+          "error": "public-type-layout-binding"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "I02",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "ADisplay": "none",
+          "AState": "closed",
+          "BEvents": 0,
+          "publicEvents": 1,
+          "query": "Alpha",
+          "value": "Alpha A 1"
+        },
+        "id": "public-event-and-css-state",
+        "observed": {
+          "ADisplay": "none",
+          "AState": "closed",
+          "BEvents": 0,
+          "publicEvents": 1,
+          "query": "Alpha",
+          "value": "Alpha A 1"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [
+          {
+            "detail": {
+              "query": "Alpha",
+              "value": "Alpha A 1"
+            },
+            "instance": "A",
+            "name": "value-change"
+          }
+        ],
+        "rawOriginalParentEvents": [
+          {
+            "data": {
+              "query": "Alpha",
+              "value": "Alpha A 1"
+            },
+            "invokeid": "A",
+            "name": "value-change",
+            "receiver": "A"
+          }
+        ],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          },
+          {
+            "instance": "A",
+            "state": "open"
+          },
+          {
+            "instance": "A",
+            "state": "selected"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "I02",
+        "diagnostics": [
+          "public-payload-type"
+        ],
+        "expectationMet": true,
+        "expected": {
+          "error": "public-payload-type",
+          "publicEvents": 0,
+          "rawQueryType": "number"
+        },
+        "id": "public-payload-type-conflict",
+        "observed": {
+          "error": "public-payload-type",
+          "publicEvents": 0,
+          "rawQueryType": "number"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [
+          {
+            "data": {
+              "query": 42,
+              "value": "Alpha A 1"
+            },
+            "invokeid": "A",
+            "name": "value-change",
+            "receiver": "A"
+          }
+        ],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          },
+          {
+            "instance": "A",
+            "state": "open"
+          },
+          {
+            "instance": "A",
+            "state": "selected"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "I02",
+        "diagnostics": [
+          "public-instance-route"
+        ],
+        "expectationMet": true,
+        "expected": {
+          "BEvents": 0,
+          "error": "public-instance-route"
+        },
+        "id": "public-event-foreign-parent",
+        "observed": {
+          "BEvents": 0,
+          "error": "public-instance-route"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [
+          {
+            "data": {
+              "query": "Alpha",
+              "value": "Alpha A 1"
+            },
+            "invokeid": "A",
+            "name": "value-change",
+            "receiver": "B"
+          }
+        ],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          },
+          {
+            "instance": "A",
+            "state": "open"
+          },
+          {
+            "instance": "A",
+            "state": "selected"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "B01",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "BState": "closed",
+          "sequence": [
+            "closed:none",
+            "open:block",
+            "closed:none"
+          ]
+        },
+        "id": "states-to-css-display",
+        "observed": {
+          "BState": "closed",
+          "sequence": [
+            "closed:none",
+            "open:block",
+            "closed:none"
+          ]
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          },
+          {
+            "instance": "A",
+            "state": "open"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "B02",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "allowed": "open:block",
+          "blocked": "closed:none"
+        },
+        "id": "original-guard-false-then-true",
+        "observed": {
+          "allowed": "open:block",
+          "blocked": "closed:none"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          },
+          {
+            "instance": "A",
+            "state": "open"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "B03",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "publicEvents": 1,
+          "query": "Alpha A",
+          "value": "Alpha A 2"
+        },
+        "id": "original-event-context-data",
+        "observed": {
+          "publicEvents": 1,
+          "query": "Alpha A",
+          "value": "Alpha A 2"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [
+          {
+            "detail": {
+              "query": "Alpha A",
+              "value": "Alpha A 2"
+            },
+            "instance": "A",
+            "name": "value-change"
+          }
+        ],
+        "rawOriginalParentEvents": [
+          {
+            "data": {
+              "query": "Alpha A",
+              "value": "Alpha A 2"
+            },
+            "invokeid": "A",
+            "name": "value-change",
+            "receiver": "A"
+          }
+        ],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          },
+          {
+            "instance": "A",
+            "state": "open"
+          },
+          {
+            "instance": "A",
+            "state": "selected"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "B03",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "error": "public-property-type"
+        },
+        "id": "input-query-wrong-type",
+        "observed": {
+          "error": "public-property-type"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          }
+        ]
+      }
+    },
+    {
+      "page": 287,
+      "value": {
+        "additionalHostCode": true,
+        "criterion": "B04",
+        "diagnostics": [],
+        "expectationMet": true,
+        "expected": {
+          "AState": "open",
+          "BState": "closed",
+          "active": "option-a-1",
+          "focus": "input-a"
+        },
+        "id": "keyboard-actions-own-context",
+        "observed": {
+          "AState": "open",
+          "BState": "closed",
+          "active": "option-a-1",
+          "focus": "input-a"
+        },
+        "originalScxmlExecuted": true,
+        "publicEvents": [],
+        "rawOriginalParentEvents": [],
+        "syntheticKeyboardOnly": true,
+        "trace": [
+          {
+            "instance": "A",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "A",
+            "state": "ready"
+          },
+          {
+            "instance": "A",
+            "state": "closed"
+          },
+          {
+            "instance": "B",
+            "state": "$generated-scxml-0"
+          },
+          {
+            "instance": "B",
+            "state": "ready"
+          },
+          {
+            "instance": "B",
+            "state": "closed"
+          },
+          {
+            "instance": "A",
+            "state": "open"
+          }
+        ]
+      }
+    }
+  ],
+  "pageId": 287
+}

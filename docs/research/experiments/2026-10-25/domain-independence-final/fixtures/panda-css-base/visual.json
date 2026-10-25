@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "categories": {
+    "sizes": [
+      0,
+      1
+    ]
+  },
+  "paths": [
+    "sizes.popup"
+  ],
+  "tokens": {
+    "sizes.popup": {
+      "category": "sizes",
+      "cssVar": "--popup-max-height"
+    }
+  },
+  "conditions": {},
+  "themes": {},
+  "values": [
+    {
+      "token": "sizes.popup",
+      "value": "160px"
+    }
+  ]
+}

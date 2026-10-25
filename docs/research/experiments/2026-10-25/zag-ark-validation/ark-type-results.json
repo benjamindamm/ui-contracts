@@ -1,0 +1,39 @@
+{
+  "typescript": "5.9.3",
+  "method": "Actual published Ark React UseComboboxProps declarations, selected original properties; no framework render or neutral JSON schema validation",
+  "cases": [
+    {
+      "id": "ark-sdk-valid-boolean",
+      "file": "ark-valid.ts",
+      "expectedAccepted": true,
+      "diagnostics": [],
+      "expectationMet": true
+    },
+    {
+      "id": "ark-sdk-invalid-open-string",
+      "file": "ark-invalid-open.ts",
+      "expectedAccepted": false,
+      "diagnostics": [
+        {
+          "code": 2322,
+          "file": "ark-invalid-open.ts",
+          "message": "Type 'string' is not assignable to type 'boolean | undefined'."
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "ark-sdk-invalid-plain-array-collection",
+      "file": "ark-invalid-collection.ts",
+      "expectedAccepted": false,
+      "diagnostics": [
+        {
+          "code": 2740,
+          "file": "ark-invalid-collection.ts",
+          "message": "Type 'never[]' is missing the following properties from type 'ListCollection<{ label: string; value: string; }>': options, items, indexMap, copy, and 37 more."
+        }
+      ],
+      "expectationMet": true
+    }
+  ]
+}

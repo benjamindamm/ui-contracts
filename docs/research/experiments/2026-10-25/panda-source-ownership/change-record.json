@@ -1,0 +1,52 @@
+{
+  "status": "Additional research change record, not native Panda journal",
+  "information": "popupMaxHeight",
+  "before": {
+    "information": "popupMaxHeight",
+    "originalSourceEntry": {
+      "kind": "config",
+      "file": "panda.config.json"
+    },
+    "originalSourceIndex": 1,
+    "sourcePointer": "/theme/tokens/sizes/popup/value",
+    "sourceSha256": "4a81e4de8e378fc817ff747d205870c94055c0b696350d2e6edbe05c591b37d8",
+    "mergedValue": "160px",
+    "exportedValue": "160px",
+    "derivedArtifact": "research-vars.css",
+    "derivedField": "--popup-max-height",
+    "derivedSha256": "79f952dd1687d5c297d7b39607a9af642160866d37b9c2b3b60d7c2fe96b29b7",
+    "scope": "Additional original-source-to-CSS record, original modules supply merge and source annotation",
+    "configFileHashes": {
+      "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+      "panda.config.json": "4a81e4de8e378fc817ff747d205870c94055c0b696350d2e6edbe05c591b37d8"
+    }
+  },
+  "after": {
+    "information": "popupMaxHeight",
+    "originalSourceEntry": {
+      "kind": "config",
+      "file": "panda.config.json"
+    },
+    "originalSourceIndex": 1,
+    "sourcePointer": "/theme/tokens/sizes/popup/value",
+    "sourceSha256": "3389aae7feb7dca6ef7f00e5c5be5d252b4ed6c1f871ef3e56f5c55ec3f9c7f6",
+    "mergedValue": "192px",
+    "exportedValue": "192px",
+    "derivedArtifact": "research-vars.css",
+    "derivedField": "--popup-max-height",
+    "derivedSha256": "7519846ce347baa75fe4f0a334a8781c3e515a619260cf2039166c594f3519f1",
+    "scope": "Additional original-source-to-CSS record, original modules supply merge and source annotation",
+    "configFileHashes": {
+      "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+      "panda.config.json": "3389aae7feb7dca6ef7f00e5c5be5d252b4ed6c1f871ef3e56f5c55ec3f9c7f6"
+    }
+  },
+  "sourceValueBefore": "160px",
+  "sourceValueAfter": "192px",
+  "originalPresetHashUnchanged": true,
+  "otherOriginalDomainHashes": {
+    "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+    "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+    "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+  }
+}

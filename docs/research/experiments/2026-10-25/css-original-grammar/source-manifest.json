@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-25",
+  "sources": [
+    "https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/",
+    "https://www.w3.org/TR/2025/WD-css-overflow-3-20251007/"
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "cee8c7a4a90226656a5475fb368bfd34d6bb99928fb7e497512af201f5decd37"
+    },
+    {
+      "file": "anchor-source.json",
+      "sha256": "258d3e3b621de1cbc6d65a1a030899d5e8126b504455287074e38866cb0decd7"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "72b8ec3df3871c02055cd3af9029472a54a35c7947e3bb9a6d0f0c823f9630aa"
+    },
+    {
+      "file": "overflow-source.json",
+      "sha256": "2592d008c37679c25862852c02b306297d59aefe47c8a8d98c8252c0e2a2e579"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "b4e112c6cfeb3c64f5c1cf4a416a6749a805d59f439073bd99b5290c6bab90d9"
+    },
+    {
+      "file": "profile.json",
+      "sha256": "d72689895eeb76c34e09c10d32bcc28044ba8e33abca09410fa1f0d48c97244c"
+    },
+    {
+      "file": "results.json",
+      "sha256": "4889bc1cdcccac66b798b9fe4b98ac3c008623a036be11ca50c8b4d5b21b42f0"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "c3758f547c8e6b44a181f99f483863fb450c2b2b4e5e36c4d41c3e55ebcf8fb6"
+    }
+  ],
+  "original_tool_files": [
+    {
+      "file": "../css-grammar/tool-current/package-lock.json",
+      "sha256": "a0dad510efe1369c76d411db612a94646095d1b66b563b6c5f8d2f9874791ed3"
+    },
+    {
+      "file": "../css-grammar/tool-current/node_modules/css-tree/package.json",
+      "sha256": "bd734f2de92e7a254bd05970fa83b30f8be9ed73e33577065a1529e59843cfd4"
+    },
+    {
+      "file": "../css-grammar/tool-current/node_modules/css-tree/lib/lexer/Lexer.js",
+      "sha256": "818e6d0d35dbfa8d1f4c9a34634c7f1d73dbcef9fc97ec25e599b55ee68e71af"
+    },
+    {
+      "file": "../css-grammar/tool-current/node_modules/css-tree/lib/lexer/generic.js",
+      "sha256": "d3e66172510a6057879885aaf4ffd77944e598f9262aab369216de7bfd222daf"
+    },
+    {
+      "file": "../css-grammar/tool-current/node_modules/css-tree/lib/lexer/generic-const.js",
+      "sha256": "72896ada1af386326bbc053bc1302c51739c928e90f7e57d2024b9cee72c5e2b"
+    },
+    {
+      "file": "../css-grammar/tool-current/node_modules/css-tree/lib/syntax/create.js",
+      "sha256": "6b17b6b6f894e565124a378788928db01661067059c1a34a0daf929d53019dae"
+    }
+  ],
+  "backend": "css-tree@3.2.1",
+  "original_bundled_dictionary_modified": false,
+  "additional_profile": true,
+  "properties": [
+    "anchor-name",
+    "anchor-scope",
+    "position-anchor",
+    "overflow-y"
+  ],
+  "full_module_conformance_claimed": false,
+  "conditions": 12
+}

@@ -1,0 +1,90 @@
+{
+  "revision": "09d39b211dcaa2e227ed38e312c8822e193cfea9",
+  "scope": "Original interfaces/Spec.ts type, compatible simple string-property subset, additional static literal binding and independent SCXML/CSS/HTML source mapping; no canonical validator or rendered widget",
+  "cases": [
+    {
+      "id": "base",
+      "expected": {
+        "accepted": true,
+        "typedAccepted": true,
+        "type": "string",
+        "initialValue": "alpha",
+        "otherDomainsByteIdentical": true
+      },
+      "observed": {
+        "accepted": true,
+        "typedAccepted": true,
+        "type": "string",
+        "initialValue": "alpha",
+        "otherDomainsByteIdentical": true
+      },
+      "diagnostics": [],
+      "additionalBinding": {
+        "sourcePointer": "/components/Input/props/value",
+        "sourceFieldType": "string",
+        "originalType": "Spec.components[string].props[string]",
+        "behaviorTarget": "SCXML datamodel value initialization",
+        "instanceTargets": [
+          "input-a",
+          "input-b"
+        ],
+        "visualTargets": [
+          "popup-a",
+          "popup-b"
+        ],
+        "accessibilityTarget": "HTML input role=combobox, aria-controls list-a/list-b",
+        "sourceHashes": {
+          "interface": "2bff6b7fabd6f752b15830bd6c0c15c9fc92ab24b119907e904291269a188142",
+          "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "originalTypeCompilerIsAdditional": true,
+        "originalCanonicalityDecided": false
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "interface-revision",
+      "expected": {
+        "accepted": true,
+        "typedAccepted": true,
+        "type": "string",
+        "initialValue": "alpha",
+        "otherDomainsByteIdentical": true
+      },
+      "observed": {
+        "accepted": true,
+        "typedAccepted": true,
+        "type": "string",
+        "initialValue": "alpha",
+        "otherDomainsByteIdentical": true
+      },
+      "diagnostics": [],
+      "additionalBinding": {
+        "sourcePointer": "/components/Input/props/value",
+        "sourceFieldType": "string",
+        "originalType": "Spec.components[string].props[string]",
+        "behaviorTarget": "SCXML datamodel value initialization",
+        "instanceTargets": [
+          "input-a",
+          "input-b"
+        ],
+        "visualTargets": [
+          "popup-a",
+          "popup-b"
+        ],
+        "accessibilityTarget": "HTML input role=combobox, aria-controls list-a/list-b",
+        "sourceHashes": {
+          "interface": "aa858d6d8657ef53994f39d614bfe42ddcd334d6e58f8dc9fe1495c3bc24b625",
+          "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "originalTypeCompilerIsAdditional": true,
+        "originalCanonicalityDecided": false
+      },
+      "expectationMet": true
+    }
+  ]
+}

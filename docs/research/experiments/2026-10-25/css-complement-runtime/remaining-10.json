@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-25",
+  "remaining_u": 10,
+  "remaining_integration": 6,
+  "remaining_layout": 4,
+  "independently_investigable": 8,
+  "named_original_clarifications": 2,
+  "overall_integration_proven": false,
+  "cells": [
+    {
+      "candidate": "Google DESIGN.md",
+      "requirement": "X06",
+      "claim": "C483",
+      "coverage": "U",
+      "plan_class": "b",
+      "missing_assertion": "Originales ConfigSchema validiert Redaktionskonfiguration, nicht eindeutig den eingereichten DESIGN.md-Dokumentgegenstand. Eigenes Colorbinding beantwortet diese Originalschemafrage nicht.",
+      "actual_next_possible_step": "Neue belastbare Originalfestlegung des Dokumentdatenmodell-/Schema-/Ergebnisbindings einschließlich Root-/Optionalitätsbedeutung. Bisherige Config-/Parserproben oder eigene zusätzliche Prosaabbildung entscheiden das nicht.",
+      "no_repeat_boundary": "Neue konkret benannte Originalinformation erforderlich; keine Autorenanfrage versandt.",
+      "evidence_report": "experiments/2026-10-25/final-x06-scope/REPORT.md",
+      "evidence_report_sha256": "7cda825fe28928d0305ee1f48a6c33909ffc0db64d52e0f78890eb97db2558f5"
+    },
+    {
+      "candidate": "OpenUI",
+      "requirement": "X06",
+      "claim": "C484",
+      "coverage": "U",
+      "plan_class": "b",
+      "missing_assertion": "Die konkret widersprüchlichen Root-/enum-/required-/Defaultformen der Originaldefinitionen bleiben ohne kanonische Vorrangregel. Der einfache Originaltyp-Teilbeitrag umgeht diese Entscheidung ausdrücklich.",
+      "actual_next_possible_step": "Neue Herausgeber-Vorrang-/Synchronisationsregel samt an dieselbe Definition gebundenem Originalprüfpaar. Eigener TypeScriptcheck gegen einen selbst gewählten Stand wäre keine solche Entscheidung.",
+      "no_repeat_boundary": "Neue konkret benannte Originalinformation erforderlich; keine Autorenanfrage versandt.",
+      "evidence_report": "experiments/2026-10-25/final-x06-scope/REPORT.md",
+      "evidence_report_sha256": "7cda825fe28928d0305ee1f48a6c33909ffc0db64d52e0f78890eb97db2558f5"
+    },
+    {
+      "candidate": "UXSpec",
+      "requirement": "V04",
+      "claim": "C420",
+      "coverage": "U",
+      "plan_class": "a",
+      "missing_assertion": "Zusätzliche Bindung an tatsächlich erzeugte Runtime-Ziele fehlt. Original-Layerparent/absolute Kindwrapper werden nicht in fremde Inputanker umgedeutet.",
+      "actual_next_possible_step": "Original kompilierten Visual-Slotnamen an ausdrücklich zusätzlichen CEM-/DOM-Wrapperkontext binden; dessen CSS-Anker auf das tatsächliche Inputziel setzen. Danach Inputhöhe ändern und die Zielkante/Abstandsrelation nativ messen, einschließlich fehlendem/fremdem Ziel.",
+      "no_repeat_boundary": "Neue konkrete Slot→Runtime-Ziel-/Ankerbindung. Der alte Stylemapperlauf ohne diese Beziehung wird nicht wiederholt.",
+      "evidence_report": "experiments/2026-10-25/uxspec-layout-scope/REPORT.md",
+      "evidence_report_sha256": "f8636bd587660832f222f423538100aad0ddf19084a282149989e0970d331009"
+    },
+    {
+      "candidate": "UXSpec",
+      "requirement": "V06",
+      "claim": "C420",
+      "coverage": "U",
+      "plan_class": "a",
+      "missing_assertion": "Offene JSON-Felder sind keine ausgeführte Overflowpolitik; ursprünglicher Mapper reicht sie nicht beliebig durch.",
+      "actual_next_possible_step": "Am selben tatsächlich gebundenen Originalslot eine ausdrücklich zusätzliche CSS-Scrollpolitik aus eigener Quelle auswerten; tatsächlichen Überlauf, Clip/Scrollunterschied und zuständige Originalquelle prüfen. Kein neues frei benanntes UXSpec-Originalfeld erfinden.",
+      "no_repeat_boundary": "Neue konkrete Slot→Scrollport-/Politikbindung, getrennt von ursprünglichem V05-Maximalgrößenbeitrag.",
+      "evidence_report": "experiments/2026-10-25/uxspec-layout-scope/REPORT.md",
+      "evidence_report_sha256": "f8636bd587660832f222f423538100aad0ddf19084a282149989e0970d331009"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "V04",
+      "claim": "C400",
+      "coverage": "U",
+      "plan_class": "a",
+      "missing_assertion": "Section._anchor bleibt Figma-Messknotenidentität statt Runtime-Zielkante; aktuelle Normalisierung liefert diese fehlende Bedeutung nicht.",
+      "actual_next_possible_step": "Den tatsächlich normalisierten _anchor-Layer explizit einem separaten CEM-/DOM-Part und richtiger Instanz zuordnen. Zusatzlayout muss Richtung/Abstand zur benannten Inputkante sowie Neuauswertung unter Größenänderung ausführen.",
+      "no_repeat_boundary": "Neuer Messknoten→Runtime-Ziel-Binder mit eigener geometrischer Semantik, kein erneuter Namens-/Variant-Fallbacktest.",
+      "evidence_report": "experiments/2026-10-25/uspec-layout-scope/REPORT.md",
+      "evidence_report_sha256": "b05c6185309125f9c3941a9cee81cd2b228df1496ec502b6dbbd2583a891cf16"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "V06",
+      "claim": "C401",
+      "coverage": "U",
+      "plan_class": "a",
+      "missing_assertion": "clipsContent und Dimensionen sind echte Originalbelege; ihre tatsächliche gebundene Webinterpretation fehlt weiterhin.",
+      "actual_next_possible_step": "Vollständigen benannten ursprünglichen extractDims-Pfad auf eigenen minimalen Designdaten ausführen und dessen tatsächliches clipsContent-Ergebnis/Layerscope an explizite CSS-Clip/Visible-Politik binden. Falls Scrollen zusätzlich gewählt wird, eigene Achse/auto/scroll-Regel getrennt ausweisen; niemals true in auto umdeuten.",
+      "no_repeat_boundary": "Neuer tatsächlicher ursprünglicher Feld→Politik→Native-Ausgabepfad. Einzelnes erneutes Lesen des gleichen Clippingfelds erweitert nichts.",
+      "evidence_report": "experiments/2026-10-25/uspec-layout-scope/REPORT.md",
+      "evidence_report_sha256": "b05c6185309125f9c3941a9cee81cd2b228df1496ec502b6dbbd2583a891cf16"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X01",
+      "claim": "C503",
+      "coverage": "U",
+      "plan_class": "a",
+      "missing_assertion": "Gemeinsamer Canonical-Root und getrennte Caches sind ausgeführt, ein unabhängig führbarer Original-APIcache als Teilbeitrag neben drei Fachquellen jedoch noch nicht konkret gebunden.",
+      "actual_next_possible_step": "Original-APIcache-/Evidencevalidator gezielt als eigenständigen Interfacebeitrag verwenden; konkrete Property-/Anatomieziele an separates SCXML/CSS/HTML binden und eine unabhängige Fremddomänenrevision nachweisen. Diesen Cachegegenstand nicht als unabhängig ladbaren gesamten Canonical-Root ausgeben.",
+      "no_repeat_boundary": "Neuer konkreter APIcache-Viererbeitrag statt Wiederholung aller Rootpflichten oder Builderhashes.",
+      "evidence_report": "experiments/2026-10-25/uspec-ownership/REPORT.md",
+      "evidence_report_sha256": "3d8fb11f5d4693dee9daaddedaeb911caa9cf7d9b8242ecfbbe442d15e096fab"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X03",
+      "claim": "C512",
+      "coverage": "U",
+      "plan_class": "a",
+      "missing_assertion": "Originale lokale Obligation-Outputpointer erkennen nicht die Revision einer tatsächlich fremden CEM-Quelle.",
+      "actual_next_possible_step": "Zusätzlichen eng begrenzten CEM-Datei/Pointer/Typ-/Revisionsbinder an einen konkret vorhandenen Evidence-Fact/sourcePaths-Eintrag und ursprünglichen lokalen Outputpointer anschließen. Tatsächliche Fremdquellenänderung, falscher Knoten/Typ und falscher Definitionskontext müssen scheitern; Instanzkontext nur dort behaupten, wo tatsächlich gebunden.",
+      "no_repeat_boundary": "Neuer Fremdquellenresolver/-binder auf vorhandenen Originalfact, kein erneuter lokaler Evidencepointerlauf ohne tatsächliche Fremdquelle.",
+      "evidence_report": "experiments/2026-10-25/uspec-external-reference/REPORT.md",
+      "evidence_report_sha256": "01572a739e28e412e731fcb227f36c68dc95b0513e8c410c6e66dcb34b630a6e"
+    },
+    {
+      "candidate": "uSpec",
+      "requirement": "X08",
+      "claim": "C516",
+      "coverage": "U",
+      "plan_class": "a",
+      "missing_assertion": "Quelle/Facts/Output werden ohne externe per-information-Führung nicht zu einem gemeinsamen Mastermodell; Rückgabealias ist eine andere Frage.",
+      "actual_next_possible_step": "Dieselbe konkret gebundene CEM-Information ausdrücklich als führend und den ursprünglichen APIcache-/Factwert als Ableitung behandeln. Vorher/nachher anhand der tatsächlichen Dateien protokollieren, stale CEM-/Cachekonflikt abweisen und erneuerte Ableitung dem unveränderten ursprünglichen Validator zuführen.",
+      "no_repeat_boundary": "Neue tatsächliche führende Information→Originalcache-Ableitung samt Konflikt/Änderung. Kein erneuter Alias-/Hashvergleich ohne fachliche Quelle.",
+      "evidence_report": "experiments/2026-10-25/uspec-normalizer-ownership/REPORT.md",
+      "evidence_report_sha256": "aaa8e5d93bc3b671f38aab039c90bb52fe053280e121696bffec82ca7ec5a1a3"
+    },
+    {
+      "candidate": "OpenPencil",
+      "requirement": "X01",
+      "claim": "C304",
+      "coverage": "U",
+      "plan_class": "a",
+      "missing_assertion": "Graph/Slots/Properties/Controls sind ursprünglich ausgeführt. Ein gemeinsamer Graph kann abgeleitete IR sein; bisher fehlt die konkrete Vier-Master→Graphbindung, nicht ein Beweis prinzipieller Untrennbarkeit.",
+      "actual_next_possible_step": "CEM-Boolean-/Defaultmetadaten, OPS-Behavior-Spec, eigenständige CSS-Geometrie und HTML-A11y-Namen getrennt führen. Den Graph ausdrücklich daraus erzeugte Ableitung behandeln: Properties aus CEM, Behavior aus tatsächlichem behaviourFromSpec, Maße aus Visual, Labeltext aus A11y. Tatsächliche Originalinstanziierung/Controls/Reka und unabhängige Einzelquellrevision prüfen; keine zweite führende Graphdefinition.",
+      "no_repeat_boundary": "Neuer expliziter Vier-Master→ursprüngliche-Graph-/Control-Kette. Vorhandene Switch-/Slider-/Ownerfälle ohne diese Herkunftsbindung nicht erneut zählen.",
+      "evidence_report": "experiments/2026-10-25/op-owner-precedence/REPORT.md",
+      "evidence_report_sha256": "ce90a9113191a1c4b6cfc76bc6125816d36e6a79c63257d5b070cff380847381"
+    }
+  ]
+}

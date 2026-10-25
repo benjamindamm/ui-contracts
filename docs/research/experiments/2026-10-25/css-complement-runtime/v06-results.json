@@ -1,0 +1,167 @@
+{
+  "scope": "Actual original SCXML4.3.28 with native parent delivery, additional CEM/TypeScript-signature/DOM/CSS/ARIA mapping; native geometry/focus/synthetic keyboard and accessibility tree; no native CSS UX machine, ARIA scroll policy, production component, physical key or AT speech",
+  "criterion": "V06",
+  "cases": [
+    {
+      "additionalHostCode": true,
+      "criterion": "V06",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "active": "option-a-6",
+        "activeVisible": true,
+        "controls": "list-a",
+        "height": 160,
+        "scrollHeight": 224,
+        "scrollTop": 64
+      },
+      "id": "aria-controlled-scrollport",
+      "observed": {
+        "active": "option-a-6",
+        "activeVisible": true,
+        "controls": "list-a",
+        "height": 160,
+        "overflow": "auto",
+        "scrollHeight": 224,
+        "scrollTop": 64
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "V06",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "error": "scroll-instance-target"
+      },
+      "id": "aria-scroll-foreign-list",
+      "observed": {
+        "error": "scroll-instance-target"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "V06",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "activeVisible": false,
+        "error": "active-option-not-visible",
+        "overflow": "clip"
+      },
+      "id": "aria-scroll-clip-conflict",
+      "observed": {
+        "active": "option-a-6",
+        "activeVisible": false,
+        "controls": "list-a",
+        "error": "active-option-not-visible",
+        "height": 160,
+        "overflow": "clip",
+        "scrollHeight": 224,
+        "scrollTop": 0
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        }
+      ]
+    }
+  ]
+}

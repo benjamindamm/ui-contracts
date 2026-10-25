@@ -1,0 +1,174 @@
+[
+  {
+    "id": "accepted-source-change",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-a",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": []
+    },
+    "expectedErrors": []
+  },
+  {
+    "id": "host-only-edit",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-a",
+      "sourceLabel": "Ergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": []
+    },
+    "expectedErrors": [
+      "non-leading-edit"
+    ]
+  },
+  {
+    "id": "stale-source",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "stale",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-a",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": []
+    },
+    "expectedErrors": [
+      "stale-source"
+    ]
+  },
+  {
+    "id": "stale-policy",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "stale",
+      "targetId": "list-a",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": []
+    },
+    "expectedErrors": [
+      "stale-policy"
+    ]
+  },
+  {
+    "id": "wrong-owner",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "visual-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-a",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": []
+    },
+    "expectedErrors": [
+      "wrong-owner"
+    ]
+  },
+  {
+    "id": "foreign-instance",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-b",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": []
+    },
+    "expectedErrors": [
+      "foreign-instance"
+    ]
+  },
+  {
+    "id": "unrelated-edit",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-a",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": [
+        "visual.css"
+      ]
+    },
+    "expectedErrors": [
+      "unrelated-edit"
+    ]
+  },
+  {
+    "id": "competing-label-reference",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-a",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": [],
+      "addLabelledby": "option-a-0"
+    },
+    "expectedErrors": [
+      "unsupported-name-precedence"
+    ]
+  },
+  {
+    "id": "mismatched-derived-label",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-a",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Andere Ergebnisse A",
+      "otherEdits": []
+    },
+    "expectedErrors": [
+      "derived-conflict"
+    ]
+  },
+  {
+    "id": "concurrent-leading-values",
+    "request": {
+      "actorLabel": "synthetic-a11y-agent",
+      "actorRole": "accessibility-author",
+      "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+      "targetId": "list-a",
+      "sourceLabel": "Suchergebnisse A",
+      "hostLabel": "Suchergebnisse A",
+      "otherEdits": [],
+      "competingSourceLabel": "Weitere Ergebnisse A"
+    },
+    "expectedErrors": [
+      "source-conflict"
+    ]
+  }
+]

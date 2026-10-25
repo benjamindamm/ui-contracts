@@ -1,0 +1,22 @@
+[
+  {
+    "id": "base",
+    "expected": {
+      "accepted": true,
+      "typedAccepted": true,
+      "type": "string",
+      "initialValue": "alpha",
+      "otherDomainsByteIdentical": true
+    }
+  },
+  {
+    "id": "interface-revision",
+    "expected": {
+      "accepted": true,
+      "typedAccepted": true,
+      "type": "string",
+      "initialValue": "alpha",
+      "otherDomainsByteIdentical": true
+    }
+  }
+]

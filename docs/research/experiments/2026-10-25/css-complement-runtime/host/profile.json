@@ -1,0 +1,88 @@
+{
+  "status": "Own bounded experimental source binding; no product format, native CSS behavior engine or ARIA scroll language",
+  "sources": {
+    "interface": {
+      "file": "interface.json",
+      "sha256": "ee9d7406e6ac9dd1189296da53baf86fabd7a3d0201d32269241cd8f1f7f4614"
+    },
+    "behavior": {
+      "file": "behavior.scxml",
+      "sha256": "ad663901558ee6a79817851b62d42a8390bbe8b243eb831c63492b7c381a5db9"
+    },
+    "visual": {
+      "file": "visual.css",
+      "sha256": "18c566aad6d4c238f975b3daa22184faed74cc49d93d8fae069b28fc934741cb"
+    },
+    "accessibility": {
+      "file": "accessibility.html",
+      "sha256": "b54443983b29e035d748cd135f49ae2f809602bca958db727ceb356473da7942"
+    }
+  },
+  "owners": {
+    "publicTypesAndPayload": "interface",
+    "statesGuardDataActionsAndEmission": "behavior",
+    "geometryOverflowDisplay": "visual",
+    "rolesNamesRelationshipsAndMessagePrefix": "accessibility",
+    "mappingAndValidation": "additionalResearchBinding"
+  },
+  "layoutInput": {
+    "member": "maxHeight",
+    "cssProperty": "max-height",
+    "cssVariable": "--popup-max-height",
+    "unit": "px",
+    "valueType": "number"
+  },
+  "stateView": {
+    "closed": {
+      "expanded": false
+    },
+    "open": {
+      "expanded": true
+    },
+    "selected": {
+      "expanded": false
+    }
+  },
+  "keys": {
+    "ArrowDown": "OPEN_OR_NEXT",
+    "Escape": "CLOSE",
+    "Enter": "COMMIT"
+  },
+  "pattern": "Additional finite manual-selection combobox mapping, DOM focus on input with aria-activedescendant; based on APG combobox keyboard pattern, not an APG validator",
+  "instances": {
+    "A": {
+      "root": "instance-a",
+      "input": "input-a",
+      "popup": "popup-a",
+      "list": "list-a",
+      "label": "label-a",
+      "status": "status-a",
+      "options": [
+        "option-a-0",
+        "option-a-1",
+        "option-a-2",
+        "option-a-3",
+        "option-a-4",
+        "option-a-5",
+        "option-a-6"
+      ]
+    },
+    "B": {
+      "root": "instance-b",
+      "input": "input-b",
+      "popup": "popup-b",
+      "list": "list-b",
+      "label": "label-b",
+      "status": "status-b",
+      "options": [
+        "option-b-0",
+        "option-b-1",
+        "option-b-2",
+        "option-b-3",
+        "option-b-4",
+        "option-b-5",
+        "option-b-6"
+      ]
+    }
+  }
+}

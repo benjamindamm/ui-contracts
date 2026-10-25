@@ -1,0 +1,201 @@
+{
+  "versions": {
+    "@ark-ui/react": {
+      "version": "5.39.3",
+      "packageSha256": "aa4d5d53676dac085f08ce283620d35709d25887d28b14e5a06dcd7f1ac50a12"
+    },
+    "@zag-js/combobox": {
+      "version": "1.45.0",
+      "packageSha256": "2156a87852e5e4df86770c781c126cdefa8ccc70a3d730b656935c769e3e108d"
+    },
+    "@zag-js/react": {
+      "version": "1.45.0",
+      "packageSha256": "fd1380e15c7903548190044b87de496d3e5c2ee80065c5df4b28c10f30d714cd"
+    },
+    "@zag-js/core": {
+      "version": "1.45.0",
+      "packageSha256": "6b6d07cb66c0a56d05fdec0a77f38e54c01fd67d048206c4712034f369155ad9"
+    },
+    "react": {
+      "version": "19.2.0",
+      "packageSha256": "6029fda5e660da53952cf5ddcd1e8568fc8dc0c6dcb9deaf7667fdc4c7f5a113"
+    },
+    "react-dom": {
+      "version": "19.2.0",
+      "packageSha256": "5b479c8bdbdda7bbf6709bb4213aa8e2e1a391d79aa57ca84bc63be17bb2f727"
+    }
+  },
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_module_paths": [
+    {
+      "file": "tool/node_modules/@zag-js/combobox/dist/combobox.connect.js",
+      "sha256": "492decadb49ae78bcd797688a2fb6b8641ae7e05d1897f61d3997f8da1d1a4e3"
+    },
+    {
+      "file": "tool/node_modules/@zag-js/combobox/dist/combobox.machine.js",
+      "sha256": "f9fb71f6e63a6a8a5454e3cec20c3e814cf8750a111fcef8a8c6103e9ebb1940"
+    },
+    {
+      "file": "tool/node_modules/@zag-js/combobox/dist/combobox.dom.js",
+      "sha256": "ca01bc01bda3521c679f97055c8a25c84b8da65fd5f5ea7fc41cb7949ee7feb9"
+    },
+    {
+      "file": "tool/node_modules/@zag-js/react/dist/machine.js",
+      "sha256": "8c68156cfafa47684cc0735d6b9cd69c20735b3825ee4ad6734c95b0ea04a6dd"
+    },
+    {
+      "file": "tool/node_modules/@zag-js/react/dist/machine.mjs",
+      "sha256": "a7499c9a80c88b3b306d6ed7eb6e7164bf65eb79e0675a8cfe7b7246879c03e0"
+    },
+    {
+      "file": "tool/node_modules/@ark-ui/react/dist/components/combobox/use-combobox.js",
+      "sha256": "fea638ed4b76f597d7083667997a391b7659fedc02b29ffc0b3866648bdf39e3"
+    },
+    {
+      "file": "tool/node_modules/@ark-ui/react/dist/components/combobox/combobox-root.js",
+      "sha256": "d06f9d28c6827205ce2e68280db27fbebd15ca513c94b6bc7f81fe3b6f55bd31"
+    },
+    {
+      "file": "tool/node_modules/@ark-ui/react/dist/components/combobox/combobox-input.js",
+      "sha256": "e3c9489025d19f101587595a9d5402ae34d24b391729e330587bca48dea72b27"
+    },
+    {
+      "file": "tool/node_modules/@ark-ui/react/dist/components/combobox/combobox-content.js",
+      "sha256": "f26d9746ef9d861e3a0a4da91ea48ea40ba2a0fc797ba8bb0ac60da17d52fc50"
+    }
+  ],
+  "original_modules_modified": false,
+  "service_stubs_used": false,
+  "ssr_rendered": true,
+  "dom_mounted": false,
+  "at_tested": false,
+  "new_conditions": 8,
+  "original_renderer_accepts_four_negative_inputs": true,
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "f28d852e1d97c5cf05dd709fb31f1135dea39010c46cfae9eeda3dbbdfe29d91"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "7743fb88b3d810b3807df9662fb5b4e8df685d70cef61da6fd14c645aad988eb"
+    },
+    {
+      "file": "check.py",
+      "sha256": "0d87fbe3cf0bf9a9cd6c8a2c830e0c724e99d710e9fb993a91572f8e664e47d7"
+    },
+    {
+      "file": "fixtures/ark-content-prop-id-override/accessibility.html",
+      "sha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b"
+    },
+    {
+      "file": "fixtures/ark-content-prop-id-override/actual.html",
+      "sha256": "4d19d21a561caba5017ce4b60933ac0742047f980f886e4643a9e00ae5b44dee"
+    },
+    {
+      "file": "fixtures/ark-custom-root-ids/accessibility.html",
+      "sha256": "70dc12f117b63c18f48a1f48d7aaaae4383a52b262878734e2ce980fa54f8cc4"
+    },
+    {
+      "file": "fixtures/ark-custom-root-ids/actual.html",
+      "sha256": "cd68393708d88a9efd8f6386d3a50e85d2a687549b7be7929a4ce49516442f65"
+    },
+    {
+      "file": "fixtures/ark-input-prop-id-override/accessibility.html",
+      "sha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b"
+    },
+    {
+      "file": "fixtures/ark-input-prop-id-override/actual.html",
+      "sha256": "b57a0d27a2d8527c7ba61eaff611d6f3bbe5e2b62431c57f44f3bd36cff7fd92"
+    },
+    {
+      "file": "fixtures/ark-original-context/accessibility.html",
+      "sha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b"
+    },
+    {
+      "file": "fixtures/ark-original-context/actual.html",
+      "sha256": "913e2a92dbeb7ed0a53bdf5bb11ce040d0af26b98c3323326a68be45eae08df1"
+    },
+    {
+      "file": "fixtures/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/zag-colliding-content-ids/accessibility.html",
+      "sha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b"
+    },
+    {
+      "file": "fixtures/zag-colliding-content-ids/actual.html",
+      "sha256": "b989eaa28729ff48c78d9f5a5fde14d21ff267ea916a4b9b0d65bd74f3f46f70"
+    },
+    {
+      "file": "fixtures/zag-custom-root-ids/accessibility.html",
+      "sha256": "70dc12f117b63c18f48a1f48d7aaaae4383a52b262878734e2ce980fa54f8cc4"
+    },
+    {
+      "file": "fixtures/zag-custom-root-ids/actual.html",
+      "sha256": "e28c312ca062ed572a1afc2445c13a025a604f274e8821dbf312bf9ec495358e"
+    },
+    {
+      "file": "fixtures/zag-external-role-conflict/accessibility.html",
+      "sha256": "f60bb2cf5d8318ce18dbb6ea7adbd3566e802235c47d3b0bb55220f2fbee3523"
+    },
+    {
+      "file": "fixtures/zag-external-role-conflict/actual.html",
+      "sha256": "562470e01fd781c5aec448230e256eeac064cabd75c683a1e21f41de67344fd4"
+    },
+    {
+      "file": "fixtures/zag-original-connect/accessibility.html",
+      "sha256": "c39d2f34f9bebe3cbe1e9a5e12b892d70c348ce7f04d2bda30c6078fa080bc2b"
+    },
+    {
+      "file": "fixtures/zag-original-connect/actual.html",
+      "sha256": "562470e01fd781c5aec448230e256eeac064cabd75c683a1e21f41de67344fd4"
+    },
+    {
+      "file": "integration-preflight-error.json",
+      "sha256": "c9f3f4bd4154b4742bb78a93e4d0e066bd80095180acfae852147421a90d9255"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "572f71129b99d3405eef60124c57d6132216b6a4db010d459638dee7f9efa7aa"
+    },
+    {
+      "file": "render-results.json",
+      "sha256": "2aa6e8e846d1505f6c2775adf26744be4135b4562305591bfe228c9615cebc9a"
+    },
+    {
+      "file": "render.mjs",
+      "sha256": "e4cfa6e94aa7a6f43030ffa6925d5ef0c3df507dfcbe0c9e404fe76ecadd8667"
+    },
+    {
+      "file": "results.json",
+      "sha256": "e8b980e807a1c73aed71f2e0186277bbdd3acb3e40b955ba66ce6c7b62430992"
+    },
+    {
+      "file": "tool/package-lock.json",
+      "sha256": "95f4612893a47e4a9bdf2eb35ba7e65d512d8dc469b79a0532649b103d282b64"
+    },
+    {
+      "file": "tool/package.json",
+      "sha256": "4d1e16fd963178092eff643738447e69c6c8aa297e2ae4d22457baead88288b7"
+    },
+    {
+      "file": "tool-inventory.json",
+      "sha256": "591ced0a150f256f6851074f4fdfac34d9dda16af39d4db971296b3d17251b8e"
+    },
+    {
+      "file": "versions.json",
+      "sha256": "df8e216a34759be7f35e5d951285425e7d494434dbee8757675536287a098f31"
+    },
+    {
+      "file": "zag-results.json",
+      "sha256": "84e2fe4b410f855f8edf254fc7f6c5f7792fde658c36ec1391da24eecc3290d5"
+    },
+    {
+      "file": "ark-results.json",
+      "sha256": "815807010fb725b0fb4556d83b16fa905e2f6e49c9f7bb7aa4561cf4920aa378"
+    }
+  ]
+}

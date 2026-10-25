@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "schemaVersion": "1",
+    "generatedAt": "2026-10-25T20:00:00Z",
+    "fileKey": "research-file",
+    "nodeId": "research-node",
+    "componentSlug": "research"
+  },
+  "data": {
+    "componentName": "Autocomplete",
+    "mainTable": {
+      "properties": [
+        {
+          "name": "selectedValue",
+          "type": "string"
+        }
+      ]
+    },
+    "subComponentTables": [],
+    "configurationExamples": [
+      {
+        "title": "Default",
+        "properties": []
+      }
+    ],
+    "_deltaExtractions": [],
+    "_extractionArtifacts": {
+      "obligationLedger": [
+        {
+          "obligationId": "public-value",
+          "disposition": "emitted",
+          "targets": [
+            "/data/mainTable/properties/0"
+          ],
+          "reason": ""
+        }
+      ]
+    }
+  }
+}

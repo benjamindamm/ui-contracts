@@ -1,0 +1,38 @@
+[
+  {
+    "id": "quarter",
+    "value": 25,
+    "width": 200,
+    "center": 54,
+    "expected": {
+      "value": "25",
+      "width": 200,
+      "center": 54,
+      "thumbWidth": 16
+    }
+  },
+  {
+    "id": "three-quarters",
+    "value": 75,
+    "width": 200,
+    "center": 146,
+    "expected": {
+      "value": "75",
+      "width": 200,
+      "center": 146,
+      "thumbWidth": 16
+    }
+  },
+  {
+    "id": "quarter-wider-root",
+    "value": 25,
+    "width": 300,
+    "center": 79,
+    "expected": {
+      "value": "25",
+      "width": 300,
+      "center": 79,
+      "thumbWidth": 16
+    }
+  }
+]

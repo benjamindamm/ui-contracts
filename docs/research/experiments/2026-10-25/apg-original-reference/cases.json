@@ -1,0 +1,72 @@
+[
+  {
+    "id": "different-original-parameters",
+    "expected": {
+      "AList": true,
+      "BNone": true,
+      "differentOptionArrays": true,
+      "sharedDefinition": true,
+      "distinctInstances": true
+    }
+  },
+  {
+    "id": "typed-external-field-references",
+    "expected": {
+      "accepted": true,
+      "instances": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  {
+    "id": "original-A-value-and-filter",
+    "expected": {
+      "AValue": "Al",
+      "BValue": "",
+      "AOptions": [
+        "Alabama",
+        "Alaska"
+      ]
+    }
+  },
+  {
+    "id": "original-B-value-with-own-mode",
+    "expected": {
+      "AValue": "Al",
+      "BValue": "Br",
+      "BOptions": [
+        "Berlin",
+        "Bremen"
+      ],
+      "BFilter": ""
+    }
+  },
+  {
+    "id": "original-A-option-click",
+    "expected": {
+      "AValue": "Alaska",
+      "BValue": "Br",
+      "AExpanded": "false",
+      "BExpanded": "true"
+    }
+  },
+  {
+    "id": "wrong-external-field-type",
+    "expected": {
+      "error": "field-type-mismatch"
+    }
+  },
+  {
+    "id": "foreign-instance-reference",
+    "expected": {
+      "error": "instance-scope"
+    }
+  },
+  {
+    "id": "missing-external-field-target",
+    "expected": {
+      "error": "missing-field-target"
+    }
+  }
+]

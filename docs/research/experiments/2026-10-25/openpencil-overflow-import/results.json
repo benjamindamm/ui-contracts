@@ -1,0 +1,228 @@
+{
+  "node": "v24.22.1",
+  "typescript": "5.9.3",
+  "scope": "Unmodified original field-level import/export statements and original style merge/pick helpers only; no whole-pipeline roundtrip",
+  "wholeImporterExecuted": false,
+  "wholeExporterExecuted": false,
+  "originalFragmentsChanged": false,
+  "additionalWrappers": true,
+  "browserRendered": false,
+  "atTested": false,
+  "cases": [
+    {
+      "id": "visible",
+      "inlineStyle": {
+        "overflow": "visible"
+      },
+      "expectedClip": false,
+      "expectedOverflow": null,
+      "observed": {
+        "mergedStyle": {
+          "overflow": "visible"
+        },
+        "clipsContent": false,
+        "projectedOverflow": null,
+        "projectedStyle": {}
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "hidden",
+      "inlineStyle": {
+        "overflow": "hidden"
+      },
+      "expectedClip": true,
+      "expectedOverflow": "hidden",
+      "observed": {
+        "mergedStyle": {
+          "overflow": "hidden"
+        },
+        "clipsContent": true,
+        "projectedOverflow": "hidden",
+        "projectedStyle": {
+          "overflow": "hidden"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "clip",
+      "inlineStyle": {
+        "overflow": "clip"
+      },
+      "expectedClip": true,
+      "expectedOverflow": "hidden",
+      "observed": {
+        "mergedStyle": {
+          "overflow": "clip"
+        },
+        "clipsContent": true,
+        "projectedOverflow": "hidden",
+        "projectedStyle": {
+          "overflow": "hidden"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "auto",
+      "inlineStyle": {
+        "overflow": "auto"
+      },
+      "expectedClip": false,
+      "expectedOverflow": null,
+      "observed": {
+        "mergedStyle": {
+          "overflow": "auto"
+        },
+        "clipsContent": false,
+        "projectedOverflow": null,
+        "projectedStyle": {}
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "scroll",
+      "inlineStyle": {
+        "overflow": "scroll"
+      },
+      "expectedClip": false,
+      "expectedOverflow": null,
+      "observed": {
+        "mergedStyle": {
+          "overflow": "scroll"
+        },
+        "clipsContent": false,
+        "projectedOverflow": null,
+        "projectedStyle": {}
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "axis-y-scroll",
+      "inlineStyle": {
+        "overflow-y": "scroll"
+      },
+      "expectedClip": false,
+      "expectedOverflow": null,
+      "observed": {
+        "mergedStyle": {
+          "overflow-y": "scroll"
+        },
+        "clipsContent": false,
+        "projectedOverflow": null,
+        "projectedStyle": {}
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "axis-x-hidden",
+      "inlineStyle": {
+        "overflow-x": "hidden"
+      },
+      "expectedClip": false,
+      "expectedOverflow": null,
+      "observed": {
+        "mergedStyle": {
+          "overflow-x": "hidden"
+        },
+        "clipsContent": false,
+        "projectedOverflow": null,
+        "projectedStyle": {}
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "two-keyword-overflow",
+      "inlineStyle": {
+        "overflow": "hidden scroll"
+      },
+      "expectedClip": false,
+      "expectedOverflow": null,
+      "observed": {
+        "mergedStyle": {
+          "overflow": "hidden scroll"
+        },
+        "clipsContent": false,
+        "projectedOverflow": null,
+        "projectedStyle": {}
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "computed-hidden",
+      "inlineStyle": {
+        "overflow": "auto"
+      },
+      "computedStyle": {
+        "overflow": "hidden"
+      },
+      "expectedClip": true,
+      "expectedOverflow": "hidden",
+      "observed": {
+        "mergedStyle": {
+          "overflow": "hidden"
+        },
+        "clipsContent": true,
+        "projectedOverflow": "hidden",
+        "projectedStyle": {
+          "overflow": "hidden"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "computed-auto",
+      "inlineStyle": {
+        "overflow": "hidden"
+      },
+      "computedStyle": {
+        "overflow": "auto"
+      },
+      "expectedClip": false,
+      "expectedOverflow": null,
+      "observed": {
+        "mergedStyle": {
+          "overflow": "auto"
+        },
+        "clipsContent": false,
+        "projectedOverflow": null,
+        "projectedStyle": {}
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "no-overflow",
+      "inlineStyle": {},
+      "expectedClip": false,
+      "expectedOverflow": null,
+      "observed": {
+        "mergedStyle": {},
+        "clipsContent": false,
+        "projectedOverflow": null,
+        "projectedStyle": {}
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "preexisting-clip-not-cleared",
+      "inlineStyle": {
+        "overflow": "visible"
+      },
+      "initialClip": true,
+      "expectedClip": true,
+      "expectedOverflow": "hidden",
+      "observed": {
+        "mergedStyle": {
+          "overflow": "visible"
+        },
+        "clipsContent": true,
+        "projectedOverflow": "hidden",
+        "projectedStyle": {
+          "overflow": "hidden"
+        }
+      },
+      "expectationMet": true
+    }
+  ]
+}

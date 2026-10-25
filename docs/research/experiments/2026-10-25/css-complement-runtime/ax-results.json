@@ -1,0 +1,64 @@
+{
+  "scope": "Actual browser accessibility tree via CDP on own host; SDK compact snapshot omitted static status descendants, raw AX tree verifies live/atomic properties and child StaticText; no screenreader speech or trusted keyboard",
+  "cases": [
+    {
+      "id": "native-accessible-name-tree",
+      "criterion": "A01",
+      "prerequisite": "aria-controlled-scrollport",
+      "expectedNames": [
+        "Search A",
+        "Search B",
+        "Results A"
+      ],
+      "expectedRoles": [
+        "combobox",
+        "listbox"
+      ],
+      "observed": {
+        "names": [
+          "Search A",
+          "Search B",
+          "Results A"
+        ],
+        "roles": [
+          "combobox",
+          "listbox"
+        ],
+        "actualComboboxNames": [
+          "Search A",
+          "Search B"
+        ],
+        "actualListboxNames": [
+          "Results A"
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "native-status-update-tree",
+      "criterion": "A03",
+      "prerequisite": "accessible-update-from-public-event",
+      "expectedText": "Selected Alpha A 1",
+      "expectedRoles": [
+        "status"
+      ],
+      "observed": {
+        "regions": [
+          {
+            "role": "status",
+            "live": "polite",
+            "atomic": true,
+            "text": "Selected Alpha A 1"
+          },
+          {
+            "role": "status",
+            "live": "polite",
+            "atomic": true,
+            "text": ""
+          }
+        ]
+      },
+      "expectationMet": true
+    }
+  ]
+}

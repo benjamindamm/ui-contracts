@@ -1,0 +1,83 @@
+{
+  "original_spec": "https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/",
+  "original_sections": [
+    "listbox",
+    "aria-label"
+  ],
+  "norm_capture_sha256": "2da8de53aa38d23fbd285650bb3b085cd261c90630d61d9aad912e636b2d8320",
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "additional_research_policy": true,
+  "not_a_native_standard_feature": true,
+  "prior_related_ownership_claim": "C459/S85",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "ba71b3fa9986eaf9f7fbcc77a5ecd910ccc0f943bae648219085a635d8199962"
+    },
+    {
+      "file": "accepted.json",
+      "sha256": "57d479ed8c39fa4c05c80e591ee272b959414ad943e37d95d511cec45ba2dca3"
+    },
+    {
+      "file": "browser-capture.json",
+      "sha256": "062a8da4d8224ee6b603762a0d72f4ff38cad9527dacac3d4611e3c4949c936d"
+    },
+    {
+      "file": "browser-expectations.json",
+      "sha256": "540b9f99a55243c198ea0e97ed8aa26003de0514c64a3fcdd2251773edef0240"
+    },
+    {
+      "file": "browser-results.json",
+      "sha256": "4943dc8055e586619e64417db8e01aa8c8ad772b26cd8db1ca8f8c3f31a6c6dd"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "0bedcd890b619e48e60059a33d982b5f7f32036bbfce425848508b3368f16161"
+    },
+    {
+      "file": "fixtures/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "host-after.html",
+      "sha256": "283d1a64c37f6bc00ed4d808dd92f44311f85f27ad4228587b4962426240113e"
+    },
+    {
+      "file": "host-before.html",
+      "sha256": "5e7d3cfc5481b358fc80a5440e20c7dac0dbcc2e4e1e46e4ca53fb690c438e16"
+    },
+    {
+      "file": "norm-capture.json",
+      "sha256": "2da8de53aa38d23fbd285650bb3b085cd261c90630d61d9aad912e636b2d8320"
+    },
+    {
+      "file": "policy.json",
+      "sha256": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "c933d9eaa6468f4b7574e2c550270dc2fffd9a01454af2bad6c1b6ceac99e527"
+    },
+    {
+      "file": "results.json",
+      "sha256": "69a7b9352840ca81a2561f7f02f0d5cb92390a67fd32f61d9ba1c6744f33dae7"
+    },
+    {
+      "file": "run.py",
+      "sha256": "9126091652fe8681dcd97c18f8b99f7c3c669fd25312ec7bb73747c0752a6b73"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "mode": "development",
+  "package": "@zag-js/core@1.46.0",
+  "resolvedCore": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/zag-ark-validation/tool/node_modules/@zag-js/core/dist/index.js",
+  "resolvedUtils": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/zag-ark-validation/tool/node_modules/@zag-js/core/node_modules/@zag-js/utils/package.json",
+  "utilsVersion": "1.46.0",
+  "method": "Original createMachine/ensureStateIndex; no custom validator; construction only, no UI service execution",
+  "cases": [
+    {
+      "id": "development:valid-machine",
+      "kind": "valid",
+      "expectedDevelopment": true,
+      "expectedProduction": true,
+      "expectedAccepted": true,
+      "observed": {
+        "accepted": true,
+        "sameObject": true,
+        "rootInitialFunctionPresent": true,
+        "indexedStates": [
+          "closed",
+          "open"
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "development:missing-root-initial-function",
+      "kind": "root",
+      "expectedDevelopment": true,
+      "expectedProduction": true,
+      "expectedAccepted": true,
+      "observed": {
+        "accepted": true,
+        "sameObject": true,
+        "rootInitialFunctionPresent": false,
+        "indexedStates": [
+          "closed",
+          "open"
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "development:duplicate-state-ids",
+      "kind": "duplicate",
+      "expectedDevelopment": false,
+      "expectedProduction": true,
+      "expectedAccepted": false,
+      "observed": {
+        "accepted": false,
+        "error": "Error: [zag-js] Duplicate state id: \"same\""
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "development:invalid-compound-initial",
+      "kind": "invalid-initial",
+      "expectedDevelopment": false,
+      "expectedProduction": true,
+      "expectedAccepted": false,
+      "observed": {
+        "accepted": false,
+        "error": "Error: [zag-js] Compound state \"parent\" has initial \"missing\" which is not a child state"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "development:missing-compound-initial",
+      "kind": "missing-initial",
+      "expectedDevelopment": false,
+      "expectedProduction": false,
+      "expectedAccepted": false,
+      "observed": {
+        "accepted": false,
+        "error": "Error: [zag-js] Compound state \"parent\" has child states but no \"initial\" property"
+      },
+      "expectationMet": true
+    }
+  ]
+}

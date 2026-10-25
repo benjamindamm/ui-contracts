@@ -1,0 +1,19 @@
+{
+  "kind": "Additional source/export change record, not native signed journal",
+  "information": "popupHeight",
+  "sourcePointer": "/tokens/spacing/popupHeight",
+  "sourceBeforeSha256": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a",
+  "sourceAfterSha256": "9cd6f1469a4874de7fe30bd35f3d3d9a4ffde6f55d74c4e62c782aaaf5dbba67",
+  "sourceValueBefore": 160,
+  "sourceValueAfter": 192,
+  "derivedProperty": "--spacing-popup-height",
+  "derivedBeforeSha256": "67155b5c74823233dccb72e9c63465b2e2a1b4432a123ad30cbf9c184d7995ab",
+  "derivedAfterSha256": "2eb7f018037788d44a53051909d85cc1aa51157fad55c0c22a562a4bc285a518",
+  "originalExporterSha256": "e8823f9930382e8fd8eea5d482f266af56bcbd323050b9ba0440f286c9d317b7",
+  "originalRevision": "014a1864c641f8e9792ed76de93c95493489dd8c",
+  "otherDomainHashes": {
+    "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+    "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+    "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+  }
+}

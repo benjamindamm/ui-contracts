@@ -1,0 +1,220 @@
+{
+  "scope": "Actual complete original APG class, constructor source snapshot and additional consistency guard; fresh context reload is own host strategy, no native live update or lifecycle promise",
+  "cases": [
+    {
+      "id": "baseline-list",
+      "mode": "list",
+      "mutation": "none",
+      "expected": {
+        "accepted": true,
+        "isList": true,
+        "options": [
+          "Alaska"
+        ]
+      },
+      "observed": {
+        "accepted": true,
+        "before": {
+          "flags": [
+            false,
+            true,
+            false
+          ],
+          "source": "list"
+        },
+        "bootstrapMatches": 0,
+        "filter": "Alas",
+        "isBoth": false,
+        "isList": true,
+        "isNone": false,
+        "options": [
+          "Alaska"
+        ],
+        "originalClass": "ComboboxAutocomplete",
+        "source": "list"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "source-live-conflict",
+      "mode": "list",
+      "mutation": "source-none",
+      "expected": {
+        "accepted": false,
+        "error": "source-derived-mode-conflict",
+        "isList": true,
+        "options": [
+          "Alaska"
+        ]
+      },
+      "observed": {
+        "accepted": false,
+        "before": {
+          "flags": [
+            false,
+            true,
+            false
+          ],
+          "source": "list"
+        },
+        "bootstrapMatches": 0,
+        "error": "source-derived-mode-conflict",
+        "filter": "Alas",
+        "isBoth": false,
+        "isList": true,
+        "isNone": false,
+        "options": [
+          "Alaska"
+        ],
+        "originalClass": "ComboboxAutocomplete",
+        "source": "none"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "fresh-none-source",
+      "mode": "none",
+      "mutation": "none",
+      "expected": {
+        "accepted": true,
+        "isNone": true,
+        "options": [
+          "Alabama",
+          "Alaska"
+        ]
+      },
+      "observed": {
+        "accepted": true,
+        "before": {
+          "flags": [
+            true,
+            false,
+            false
+          ],
+          "source": "none"
+        },
+        "bootstrapMatches": 0,
+        "filter": "",
+        "isBoth": false,
+        "isList": false,
+        "isNone": true,
+        "options": [
+          "Alabama",
+          "Alaska"
+        ],
+        "originalClass": "ComboboxAutocomplete",
+        "source": "none"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "omitted-source-default",
+      "mode": "omitted",
+      "mutation": "none",
+      "expected": {
+        "accepted": true,
+        "isNone": true,
+        "options": [
+          "Alabama",
+          "Alaska"
+        ]
+      },
+      "observed": {
+        "accepted": true,
+        "before": {
+          "flags": [
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        "bootstrapMatches": 0,
+        "filter": "",
+        "isBoth": false,
+        "isList": false,
+        "isNone": true,
+        "options": [
+          "Alabama",
+          "Alaska"
+        ],
+        "originalClass": "ComboboxAutocomplete",
+        "source": null
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "unsupported-source",
+      "mode": "invalid",
+      "mutation": "none",
+      "expected": {
+        "accepted": false,
+        "error": "unsupported-source-mode",
+        "isNone": false,
+        "isList": false,
+        "isBoth": false
+      },
+      "observed": {
+        "accepted": false,
+        "before": {
+          "flags": [
+            false,
+            false,
+            false
+          ],
+          "source": "invalid"
+        },
+        "bootstrapMatches": 0,
+        "error": "unsupported-source-mode",
+        "filter": "Alas",
+        "isBoth": false,
+        "isList": false,
+        "isNone": false,
+        "options": [
+          "Alaska"
+        ],
+        "originalClass": "ComboboxAutocomplete",
+        "source": "invalid"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "derived-live-conflict",
+      "mode": "list",
+      "mutation": "derived-none",
+      "expected": {
+        "accepted": false,
+        "error": "source-derived-mode-conflict",
+        "isNone": true,
+        "options": [
+          "Alabama",
+          "Alaska"
+        ]
+      },
+      "observed": {
+        "accepted": false,
+        "before": {
+          "flags": [
+            false,
+            true,
+            false
+          ],
+          "source": "list"
+        },
+        "bootstrapMatches": 0,
+        "error": "source-derived-mode-conflict",
+        "filter": "",
+        "isBoth": false,
+        "isList": false,
+        "isNone": true,
+        "options": [
+          "Alabama",
+          "Alaska"
+        ],
+        "originalClass": "ComboboxAutocomplete",
+        "source": "list"
+      },
+      "expectationMet": true
+    }
+  ]
+}

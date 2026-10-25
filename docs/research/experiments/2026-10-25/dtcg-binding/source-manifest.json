@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-25",
+  "source": "https://www.designtokens.org/TR/2025.10/format/",
+  "version": "2025.10",
+  "sections": [
+    "7.2.2",
+    "7.2.3",
+    "8.2"
+  ],
+  "browser_read_sha256": "2b7a4fe0d8cb2c017f9dad961c3567eb24d8e4d5d36e059fb5c57b0e692de452",
+  "original_artifacts_unchanged": [
+    {
+      "file": "interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+      "predecessor": "../four-domain/fixtures/interface.json"
+    },
+    {
+      "file": "behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+      "predecessor": "../four-domain/fixtures/behavior.scxml"
+    },
+    {
+      "file": "accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+      "predecessor": "../four-domain/fixtures/accessibility.html"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "browser-expectations.json",
+      "sha256": "3d33a0f91e7a10963c461237aae9e09797ef96b2399903618bd678b27e5ba639"
+    },
+    {
+      "file": "browser-function.js",
+      "sha256": "7a9e95ce0d3f9aecacc86b8ba7b0f4b2ba4d12d9da65a0e66d85099c5aee4b9d"
+    },
+    {
+      "file": "browser-results.json",
+      "sha256": "1e97f1dc95830aadf66b58d1e2460757e13f882634de41a87940a41749103328"
+    },
+    {
+      "file": "browser-run.js",
+      "sha256": "4370fbd756d849de379b8b98c47e8955058babf2584b03f488394270189a73d5"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "79f8fb3dede5fdecc6500fbfcf84f24bc41c0847eda1526427e1bc22585ac9b0"
+    },
+    {
+      "file": "interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "layout.css",
+      "sha256": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "8a215196035ecd935a81ae1c2d9850c325042232be60cb8925d6682adf16df37"
+    },
+    {
+      "file": "profile.json",
+      "sha256": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b"
+    },
+    {
+      "file": "resolved-px.json",
+      "sha256": "26888fc9fd2b201e9315b00689bca24ea1d5f4748fbd6331f15bf4ed966cd656"
+    },
+    {
+      "file": "resolved-rem.json",
+      "sha256": "163a1a17d112208817e280a541227d932abdc5efd7d4fecaf5c1d714f4b7aa34"
+    },
+    {
+      "file": "results.json",
+      "sha256": "e4469399eb12c63ba3cb24c4eec664d53e4701e78e534cc8a4f05b7327800d8b"
+    },
+    {
+      "file": "run.py",
+      "sha256": "b086ca8025320578734fdd267809c56d70ebf60e2b6dd860204f553aa7096507"
+    },
+    {
+      "file": "tokens.json",
+      "sha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee"
+    }
+  ],
+  "original_validator_executed": false,
+  "additional_subset_translator": true
+}

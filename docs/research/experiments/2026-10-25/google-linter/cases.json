@@ -1,0 +1,154 @@
+[
+  {
+    "id": "valid-control",
+    "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\n\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": false,
+      "primaryExists": true
+    },
+    "criterion": "Minimal valid color is resolved; ancillary warnings allowed"
+  },
+  {
+    "id": "no-yaml",
+    "content": "# Probe\n## Colors\nNo machine-readable data.",
+    "expected": {
+      "returned": true,
+      "errors": 0,
+      "hasWarning": true,
+      "primaryExists": false
+    },
+    "criterion": "Recoverable missing YAML becomes warning report, not successful populated model"
+  },
+  {
+    "id": "empty-content",
+    "content": "",
+    "expected": {
+      "returned": true,
+      "errors": 0,
+      "hasWarning": true
+    },
+    "criterion": "Public lint path differs from ParserInputSchema min length"
+  },
+  {
+    "id": "bad-yaml",
+    "content": "---\nname: Probe\ncolors: [\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "errors": 0,
+      "hasWarning": true
+    },
+    "criterion": "Recoverable syntax failure"
+  },
+  {
+    "id": "duplicate-sections",
+    "content": "```yaml\ncolors:\n  primary: \"#000\"\n```\n```yaml\ncolors:\n  secondary: \"#fff\"\n```",
+    "expected": {
+      "returned": true,
+      "errors": 0,
+      "hasWarning": true,
+      "primaryExists": false
+    },
+    "criterion": "Duplicate section returns recoverable warning with empty model"
+  },
+  {
+    "id": "invalid-color",
+    "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"banana\"\n\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": true
+    },
+    "criterion": "Model detects invalid color"
+  },
+  {
+    "id": "invalid-rounded",
+    "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\nrounded:\n  md: 16bananas\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": true
+    },
+    "criterion": "Rounded dimensional error"
+  },
+  {
+    "id": "invalid-spacing",
+    "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\nspacing:\n  md: 16bananas\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": false
+    },
+    "criterion": "Unparsed spacing retained without matching rounded check"
+  },
+  {
+    "id": "missing-reference",
+    "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.missing}\"\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": true
+    },
+    "criterion": "Broken token reference diagnosed"
+  },
+  {
+    "id": "reference-cycle",
+    "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.secondary}\"\n  secondary: \"{colors.primary}\"\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": true
+    },
+    "criterion": "Reference cycle diagnosed"
+  },
+  {
+    "id": "unknown-key-typo",
+    "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\ncolourz:\n  extra: \"#fff\"\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasWarning": true
+    },
+    "criterion": "Unknown token-like or typo key warning"
+  },
+  {
+    "id": "wrong-name-type",
+    "content": "---\nname: 7\nversion: alpha\ncolors:\n  primary: \"#000000\"\n\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": false
+    },
+    "criterion": "Nonstring name is not formal schema rejection on public path"
+  },
+  {
+    "id": "wrong-colors-type",
+    "content": "---\nname: Probe\ncolors: 7\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": false
+    },
+    "criterion": "Numeric container examined as possible structural coverage gap"
+  },
+  {
+    "id": "root-array",
+    "content": "---\n- name\n- colors\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": false
+    },
+    "criterion": "Nonmapping YAML examined independently from syntax validity"
+  },
+  {
+    "id": "unknown-component-property",
+    "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\ncomponents:\n  button:\n    banana: 12px\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": true
+    },
+    "criterion": "Original broken-ref rule checks component property vocabulary"
+  },
+  {
+    "id": "name-only",
+    "content": "---\nname: Probe\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": false,
+      "hasWarning": true
+    },
+    "criterion": "Missing sections reported as recommendations, not full schema rejection"
+  }
+]

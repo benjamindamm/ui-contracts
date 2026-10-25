@@ -1,0 +1,45 @@
+{
+  "status": "Additional bounded research policy, not a chosen product format or original standard feature",
+  "version": "ownership-research-1",
+  "authority": {
+    "popupMaxHeight": {
+      "artifact": "tokens.json",
+      "pointer": "/base/maxHeight/$value",
+      "actorRole": "visual-author",
+      "derivedTargets": [
+        "generated-vars.css:--autocomplete-max-height"
+      ]
+    },
+    "publicEventName": {
+      "artifact": "interface.json",
+      "pointer": "/modules/0/declarations/0/events/0/name",
+      "actorRole": "interface-author",
+      "derivedTargets": [
+        "behavior.scxml:send/@event",
+        "profile.json:/publicEvent"
+      ]
+    }
+  },
+  "roles": {
+    "visual-agent": [
+      "visual-author"
+    ],
+    "interface-agent": [
+      "interface-author"
+    ],
+    "behavior-agent": [
+      "behavior-author"
+    ]
+  },
+  "baselineHashes": {
+    "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+    "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+    "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+    "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+    "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+    "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+    "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+  },
+  "identityAuthenticationTested": false,
+  "transactionStorageAtomicityTested": false
+}

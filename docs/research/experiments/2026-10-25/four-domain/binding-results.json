@@ -1,0 +1,310 @@
+{
+  "method": "Additional static research profile; actual CEM/SCXML original schemas, original css-tree property matcher, separate TypeScript public event detail check; no actors or runtime dispatch",
+  "cases": [
+    {
+      "id": "four-control",
+      "mutation": null,
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [],
+      "actualRules": [],
+      "expectedRules": [],
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-source-hash",
+      "mutation": "hash",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "source-integrity",
+          "domain": "interface"
+        }
+      ],
+      "actualRules": [
+        "source-integrity"
+      ],
+      "expectedRules": [
+        "source-integrity"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "missing-part-name",
+      "mutation": "part-name",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "declared-part",
+          "instance": "A",
+          "part": "input"
+        },
+        {
+          "rule": "declared-part",
+          "instance": "B",
+          "part": "input"
+        }
+      ],
+      "actualRules": [
+        "declared-part"
+      ],
+      "expectedRules": [
+        "declared-part"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-machine-name",
+      "mutation": "machine-name",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "behavior-definition",
+          "instance": "A"
+        },
+        {
+          "rule": "behavior-definition",
+          "instance": "B"
+        }
+      ],
+      "actualRules": [
+        "behavior-definition"
+      ],
+      "expectedRules": [
+        "behavior-definition"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "missing-state",
+      "mutation": "state",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "state-reference",
+          "instance": "A"
+        }
+      ],
+      "actualRules": [
+        "state-reference"
+      ],
+      "expectedRules": [
+        "state-reference"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "cross-list",
+      "mutation": "list",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "same-instance-relation",
+          "instance": "A"
+        }
+      ],
+      "actualRules": [
+        "same-instance-relation"
+      ],
+      "expectedRules": [
+        "same-instance-relation"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "cross-option",
+      "mutation": "option",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "same-instance-relation",
+          "instance": "A"
+        }
+      ],
+      "actualRules": [
+        "same-instance-relation"
+      ],
+      "expectedRules": [
+        "same-instance-relation"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "cross-anchor",
+      "mutation": "anchor",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "same-instance-anchor",
+          "instance": "A"
+        }
+      ],
+      "actualRules": [
+        "same-instance-anchor"
+      ],
+      "expectedRules": [
+        "same-instance-anchor"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-unit",
+      "mutation": "unit",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": false,
+      "errors": [
+        {
+          "rule": "geometry-unit",
+          "instance": "A"
+        }
+      ],
+      "actualRules": [
+        "geometry-unit"
+      ],
+      "expectedRules": [
+        "geometry-unit"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-event",
+      "mutation": "event",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "public-event-route"
+        }
+      ],
+      "actualRules": [
+        "public-event-route"
+      ],
+      "expectedRules": [
+        "public-event-route"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-payload",
+      "mutation": "payload",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "public-payload-type"
+        }
+      ],
+      "actualRules": [
+        "public-payload-type"
+      ],
+      "expectedRules": [
+        "public-payload-type"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-owner",
+      "mutation": "owner",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "leading-source",
+          "field": "geometry"
+        }
+      ],
+      "actualRules": [
+        "leading-source"
+      ],
+      "expectedRules": [
+        "leading-source"
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "duplicate-instance-part",
+      "mutation": "duplicate",
+      "schema": {
+        "cem": true,
+        "scxml": true
+      },
+      "cssGrammarAllMatched": true,
+      "errors": [
+        {
+          "rule": "unique-instance-part",
+          "instance": "B",
+          "target": "input-a",
+          "previous": "A"
+        },
+        {
+          "rule": "unique-instance-part",
+          "instance": "B",
+          "target": "popup-a",
+          "previous": "A"
+        },
+        {
+          "rule": "unique-instance-part",
+          "instance": "B",
+          "target": "list-a",
+          "previous": "A"
+        },
+        {
+          "rule": "unique-instance-part",
+          "instance": "B",
+          "target": "option-a-0",
+          "previous": "A"
+        }
+      ],
+      "actualRules": [
+        "unique-instance-part"
+      ],
+      "expectedRules": [
+        "unique-instance-part"
+      ],
+      "expectationMet": true
+    }
+  ]
+}

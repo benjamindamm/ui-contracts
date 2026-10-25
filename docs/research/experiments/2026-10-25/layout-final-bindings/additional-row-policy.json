@@ -1,0 +1,8 @@
+{
+  "status": "Own explicit additional layout constraint, not original UXSpec property",
+  "rowHeightPx": 32,
+  "flexShrink": 0,
+  "reason": "Actual original mapper defaults to column flex. Initial own row fixture shrank7 rows to fit160, so expected overflow did not occur. Preserve initial failure; explicit fixed-row sizing supplies the research premise.",
+  "originalMapperUnchanged": true,
+  "repeatedCasesNotCountedAgain": true
+}

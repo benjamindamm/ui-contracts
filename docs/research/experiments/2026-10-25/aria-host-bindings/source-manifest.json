@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-25",
+  "registry_url": "https://registry.npmjs.org/axe-core/4.14.0",
+  "registry_sha256": "79f070112b27d63fddd79257adb52c878dbc78951ea4653c9deb8b5b4d0a8f06",
+  "package": "axe-core@4.14.0",
+  "registry_integrity": "sha512-9WTZxEjsZ7b13TH8JPmbV2z8CHbl80/2hm3XPEG4JgNdQLK81IBRXmSxHfMAOkSqQeRxT/0dwNDz2GOm3zzpcQ==",
+  "browser_script_url": "https://unpkg.com/axe-core@4.14.0/axe.min.js",
+  "browser_script_sri": "sha384-lFUXB8tI4BaTE1bqxH9eeAXON2NH1qsdAhs7S5L++nUNP5QOy+hwr0C3TYEJUEl0",
+  "installed_files": [
+    {
+      "file": "tool/node_modules/axe-core/axe.min.js",
+      "sha256": "20c09fe157a8a34a30e241aaa1fcdade657734f08ab379ecfbeb7d45cc46e878"
+    },
+    {
+      "file": "tool/node_modules/axe-core/axe.js",
+      "sha256": "aae0b8b36278089962105b2351ea64f4da7d3d440b54e162e21616d597aa0d6f"
+    },
+    {
+      "file": "tool/node_modules/axe-core/README.md",
+      "sha256": "b994303ff0df0a44d9bd2fb0faf2ff49670844379f3796047f48e8cb8b9edfaf"
+    },
+    {
+      "file": "tool/node_modules/axe-core/package.json",
+      "sha256": "486715407f3c8c7d1de882bacc2622acb0adf1ec0f21807fc1251aed64bf9001"
+    }
+  ],
+  "cases_sha256": "fbbccc41fdc9b0214fcd8b5ca5371cd2b46fd21faee099a58441d6e15c6b0865"
+}

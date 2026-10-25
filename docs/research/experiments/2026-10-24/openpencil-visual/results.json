@@ -1,0 +1,105 @@
+{
+  "method": "Exploratory execution of original module; no preregistered expected results; shape parser, not CSS semantic validator",
+  "node": "v24.22.1",
+  "typescript": "5.9.3",
+  "cssTree": "3.2.1",
+  "cases": [
+    {
+      "id": "op-condition-1",
+      "input": "@media (prefers-color-scheme: dark)",
+      "parsed": {
+        "rule": "media",
+        "feature": "prefers-color-scheme",
+        "value": {
+          "type": "keyword",
+          "name": "dark"
+        }
+      },
+      "serialized": "@media (prefers-color-scheme: dark)"
+    },
+    {
+      "id": "op-condition-2",
+      "input": "@MEDIA /*comment*/ (prefers-color-scheme: DARK)",
+      "parsed": {
+        "rule": "media",
+        "feature": "prefers-color-scheme",
+        "value": {
+          "type": "keyword",
+          "name": "dark"
+        }
+      },
+      "serialized": "@media (prefers-color-scheme: dark)"
+    },
+    {
+      "id": "op-condition-3",
+      "input": "@container (min-width: 640px)",
+      "parsed": {
+        "rule": "container",
+        "feature": "min-width",
+        "value": {
+          "type": "dimension",
+          "value": 640,
+          "unit": "px"
+        }
+      },
+      "serialized": "@container (min-width: 640px)"
+    },
+    {
+      "id": "op-condition-4",
+      "input": "[data-theme=\"dark\"]",
+      "parsed": null,
+      "serialized": null
+    },
+    {
+      "id": "op-condition-5",
+      "input": "@media screen and (prefers-color-scheme: dark)",
+      "parsed": null,
+      "serialized": null
+    },
+    {
+      "id": "op-condition-6",
+      "input": "@media (min-width: 640px) and (prefers-color-scheme: dark)",
+      "parsed": null,
+      "serialized": null
+    },
+    {
+      "id": "op-condition-7",
+      "input": "@media (prefers-color-scheme: banana)",
+      "parsed": {
+        "rule": "media",
+        "feature": "prefers-color-scheme",
+        "value": {
+          "type": "keyword",
+          "name": "banana"
+        }
+      },
+      "serialized": "@media (prefers-color-scheme: banana)"
+    },
+    {
+      "id": "op-condition-8",
+      "input": "@media (min-width: 640bananas)",
+      "parsed": {
+        "rule": "media",
+        "feature": "min-width",
+        "value": {
+          "type": "dimension",
+          "value": 640,
+          "unit": "bananas"
+        }
+      },
+      "serialized": "@media (min-width: 640bananas)"
+    },
+    {
+      "id": "op-condition-9",
+      "input": "@supports (display: grid)",
+      "parsed": null,
+      "serialized": null
+    },
+    {
+      "id": "op-condition-10",
+      "input": "@media (width >= 640px)",
+      "parsed": null,
+      "serialized": null
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "scope": "Native measurements of actual complete original SceneGraph-to-HTML exports; programmatic scroll only, no direct user scroll/physical keyboard/AT",
+  "sourceResultsSha256": "e589a7a9faaabf513f8213d1e633f29b66bb40581479ad32408db0b54d8adde0",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "cases": [
+    {
+      "id": "fixed-hidden",
+      "kind": "scroll",
+      "clip": true,
+      "height": 60,
+      "maxHeight": null,
+      "expectedOverflow": "hidden",
+      "expectedClientHeight": 60,
+      "expectedScroll": [
+        80,
+        80
+      ],
+      "observed": {
+        "computedOverflow": "hidden",
+        "height": 60,
+        "id": "fixed-hidden",
+        "scroll": [
+          80,
+          80
+        ],
+        "scrollHeight": 300,
+        "scrollWidth": 300,
+        "width": 180
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "fixed-visible",
+      "kind": "scroll",
+      "clip": false,
+      "height": 60,
+      "maxHeight": null,
+      "expectedOverflow": "visible",
+      "expectedClientHeight": 60,
+      "expectedScroll": [
+        0,
+        0
+      ],
+      "observed": {
+        "computedOverflow": "visible",
+        "height": 60,
+        "id": "fixed-visible",
+        "scroll": [
+          0,
+          0
+        ],
+        "scrollHeight": 300,
+        "scrollWidth": 300,
+        "width": 180
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "maxheight-hidden",
+      "kind": "scroll",
+      "clip": true,
+      "height": 300,
+      "maxHeight": 60,
+      "expectedOverflow": "hidden",
+      "expectedClientHeight": 60,
+      "expectedScroll": [
+        80,
+        80
+      ],
+      "observed": {
+        "computedOverflow": "hidden",
+        "height": 60,
+        "id": "maxheight-hidden",
+        "scroll": [
+          80,
+          80
+        ],
+        "scrollHeight": 300,
+        "scrollWidth": 300,
+        "width": 180
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "relative-baseline",
+      "kind": "geometry",
+      "inputHeight": 20,
+      "parentX": 0,
+      "parentY": 0,
+      "popupY": 28,
+      "desiredGap": 8,
+      "expectedGap": 8,
+      "expectedDesiredRelationSatisfied": true,
+      "observed": {
+        "gap": 8,
+        "id": "relative-baseline",
+        "inputHeight": 20,
+        "inputRelative": [
+          0,
+          0
+        ],
+        "parentRelative": [
+          0,
+          0
+        ],
+        "popupHeight": 60,
+        "popupRelative": [
+          0,
+          28
+        ],
+        "desiredRelationSatisfied": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "input-height-growth",
+      "kind": "geometry",
+      "inputHeight": 40,
+      "parentX": 0,
+      "parentY": 0,
+      "popupY": 28,
+      "desiredGap": 8,
+      "expectedGap": -12,
+      "expectedDesiredRelationSatisfied": false,
+      "observed": {
+        "gap": -12,
+        "id": "input-height-growth",
+        "inputHeight": 40,
+        "inputRelative": [
+          0,
+          0
+        ],
+        "parentRelative": [
+          0,
+          0
+        ],
+        "popupHeight": 60,
+        "popupRelative": [
+          0,
+          28
+        ],
+        "desiredRelationSatisfied": false
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parent-coordinate-move",
+      "kind": "geometry",
+      "inputHeight": 20,
+      "parentX": 50,
+      "parentY": 50,
+      "popupY": 28,
+      "desiredGap": 8,
+      "expectedGap": 8,
+      "expectedDesiredRelationSatisfied": true,
+      "observed": {
+        "gap": 8,
+        "id": "parent-coordinate-move",
+        "inputHeight": 20,
+        "inputRelative": [
+          0,
+          0
+        ],
+        "parentRelative": [
+          50,
+          50
+        ],
+        "popupHeight": 60,
+        "popupRelative": [
+          0,
+          28
+        ],
+        "desiredRelationSatisfied": true
+      },
+      "expectationMet": true
+    }
+  ]
+}

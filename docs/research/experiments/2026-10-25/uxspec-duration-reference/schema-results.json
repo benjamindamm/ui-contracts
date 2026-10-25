@@ -1,0 +1,21 @@
+{
+  "originalSchemaSha256": "3e2819b844c8b4f5fb03f18bb49ee9f87396bc6e7ad0e04482d3217389574bf7",
+  "cases": [
+    {
+      "id": "consumer-original-uxspec-root",
+      "file": "fixtures/adapted-one-second/app.json",
+      "valid": true,
+      "observedValid": true,
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "generated-projection-original-uxspec-root",
+      "file": "fixtures/adapted-one-second/projection.json",
+      "valid": true,
+      "observedValid": true,
+      "errors": [],
+      "expectationMet": true
+    }
+  ]
+}

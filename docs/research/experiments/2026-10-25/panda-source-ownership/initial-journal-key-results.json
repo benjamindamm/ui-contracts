@@ -1,0 +1,939 @@
+{
+  "revision": "86f78a228204d63baa0b8bca2676d9f26190e449",
+  "node": "v24.13.1",
+  "scope": "Complete original merge/source-tracker/shared/error/applySpecSources modules, own ordered config inputs and own DesignSystemSpec row fixture; no Rust compiler/config loader or whole export pipeline",
+  "cases": [
+    {
+      "id": "config-last",
+      "kind": "base",
+      "expected": {
+        "accepted": true,
+        "source": 1,
+        "value": "160px"
+      },
+      "observed": {
+        "accepted": true,
+        "source": 1,
+        "value": "160px",
+        "css": ":root{--popup-max-height:160px;}\n",
+        "journal": {
+          "information": "popupMaxHeight",
+          "originalSourceEntry:": {
+            "kind": "config",
+            "file": "panda.config.json"
+          },
+          "originalSourceIndex": 1,
+          "sourcePointer": "/theme/tokens/sizes/popup/value",
+          "sourceSha256": "4a81e4de8e378fc817ff747d205870c94055c0b696350d2e6edbe05c591b37d8",
+          "mergedValue": "160px",
+          "exportedValue": "160px",
+          "derivedArtifact": "research-vars.css",
+          "derivedField": "--popup-max-height",
+          "derivedSha256": "79f952dd1687d5c297d7b39607a9af642160866d37b9c2b3b60d7c2fe96b29b7",
+          "scope": "Additional original-source-to-CSS record, original modules supply merge and source annotation",
+          "configFileHashes": {
+            "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+            "panda.config.json": "4a81e4de8e378fc817ff747d205870c94055c0b696350d2e6edbe05c591b37d8"
+          }
+        }
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "value": "160px"
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            },
+            {
+              "kind": "config",
+              "file": "panda.config.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": 1,
+            "theme.tokens.sizes.popup.value": 1
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height",
+              "source": 1
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "160px"
+            }
+          ],
+          "sources": {
+            "entries": [
+              {
+                "kind": "preset",
+                "name": "research-base",
+                "file": "preset.json"
+              },
+              {
+                "kind": "config",
+                "file": "panda.config.json"
+              }
+            ]
+          }
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n",
+        "panda.config.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"160px\"\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+        "panda.config.json": "4a81e4de8e378fc817ff747d205870c94055c0b696350d2e6edbe05c591b37d8"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "preset-alone",
+      "kind": "preset",
+      "expected": {
+        "accepted": true,
+        "source": 0,
+        "value": "120px"
+      },
+      "observed": {
+        "accepted": true,
+        "source": 0,
+        "value": "120px",
+        "css": ":root{--popup-max-height:120px;}\n",
+        "journal": {
+          "information": "popupMaxHeight",
+          "originalSourceEntry:": {
+            "kind": "preset",
+            "name": "research-base",
+            "file": "preset.json"
+          },
+          "originalSourceIndex": 0,
+          "sourcePointer": "/theme/tokens/sizes/popup/value",
+          "sourceSha256": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+          "mergedValue": "120px",
+          "exportedValue": "120px",
+          "derivedArtifact": "research-vars.css",
+          "derivedField": "--popup-max-height",
+          "derivedSha256": "ed0d816317278ee404029f1a766469f6eae0317cea877bafda2e305e68ba6bbd",
+          "scope": "Additional original-source-to-CSS record, original modules supply merge and source annotation",
+          "configFileHashes": {
+            "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297"
+          }
+        }
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "value": "120px"
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": 0,
+            "theme.tokens.sizes.popup.value": 0
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height",
+              "source": 0
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "120px"
+            }
+          ],
+          "sources": {
+            "entries": [
+              {
+                "kind": "preset",
+                "name": "research-base",
+                "file": "preset.json"
+              }
+            ]
+          }
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "config-value-change",
+      "kind": "changed",
+      "expected": {
+        "accepted": true,
+        "source": 1,
+        "value": "192px"
+      },
+      "observed": {
+        "accepted": true,
+        "source": 1,
+        "value": "192px",
+        "css": ":root{--popup-max-height:192px;}\n",
+        "journal": {
+          "information": "popupMaxHeight",
+          "originalSourceEntry:": {
+            "kind": "config",
+            "file": "panda.config.json"
+          },
+          "originalSourceIndex": 1,
+          "sourcePointer": "/theme/tokens/sizes/popup/value",
+          "sourceSha256": "3389aae7feb7dca6ef7f00e5c5be5d252b4ed6c1f871ef3e56f5c55ec3f9c7f6",
+          "mergedValue": "192px",
+          "exportedValue": "192px",
+          "derivedArtifact": "research-vars.css",
+          "derivedField": "--popup-max-height",
+          "derivedSha256": "7519846ce347baa75fe4f0a334a8781c3e515a619260cf2039166c594f3519f1",
+          "scope": "Additional original-source-to-CSS record, original modules supply merge and source annotation",
+          "configFileHashes": {
+            "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+            "panda.config.json": "3389aae7feb7dca6ef7f00e5c5be5d252b4ed6c1f871ef3e56f5c55ec3f9c7f6"
+          }
+        }
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "value": "192px"
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            },
+            {
+              "kind": "config",
+              "file": "panda.config.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": 1,
+            "theme.tokens.sizes.popup.value": 1
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height",
+              "source": 1
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "192px"
+            }
+          ],
+          "sources": {
+            "entries": [
+              {
+                "kind": "preset",
+                "name": "research-base",
+                "file": "preset.json"
+              },
+              {
+                "kind": "config",
+                "file": "panda.config.json"
+              }
+            ]
+          }
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n",
+        "panda.config.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"192px\"\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+        "panda.config.json": "3389aae7feb7dca6ef7f00e5c5be5d252b4ed6c1f871ef3e56f5c55ec3f9c7f6"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "description-extend",
+      "kind": "description",
+      "expected": {
+        "accepted": true,
+        "source": 0,
+        "value": "120px"
+      },
+      "observed": {
+        "accepted": true,
+        "source": 0,
+        "value": "120px",
+        "css": ":root{--popup-max-height:120px;}\n",
+        "journal": {
+          "information": "popupMaxHeight",
+          "originalSourceEntry:": {
+            "kind": "preset",
+            "name": "research-base",
+            "file": "preset.json"
+          },
+          "originalSourceIndex": 0,
+          "sourcePointer": "/theme/tokens/sizes/popup/value",
+          "sourceSha256": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+          "mergedValue": "120px",
+          "exportedValue": "120px",
+          "derivedArtifact": "research-vars.css",
+          "derivedField": "--popup-max-height",
+          "derivedSha256": "ed0d816317278ee404029f1a766469f6eae0317cea877bafda2e305e68ba6bbd",
+          "scope": "Additional original-source-to-CSS record, original modules supply merge and source annotation",
+          "configFileHashes": {
+            "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+            "panda.config.json": "6161ce5537186444f9d4170835c375ad136329d623aeb39266cae2b4107b2de0"
+          }
+        }
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "value": "120px",
+                  "description": "Own extended description"
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            },
+            {
+              "kind": "config",
+              "file": "panda.config.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": [
+              0,
+              1
+            ],
+            "theme.tokens.sizes.popup.value": 0,
+            "theme.tokens.sizes.popup.description": 1
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height",
+              "source": 0
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "120px"
+            }
+          ],
+          "sources": {
+            "entries": [
+              {
+                "kind": "preset",
+                "name": "research-base",
+                "file": "preset.json"
+              },
+              {
+                "kind": "config",
+                "file": "panda.config.json"
+              }
+            ]
+          }
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n",
+        "panda.config.json": "{\n  \"theme\": {\n    \"extend\": {\n      \"tokens\": {\n        \"sizes\": {\n          \"popup\": {\n            \"description\": \"Own extended description\"\n          }\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+        "panda.config.json": "6161ce5537186444f9d4170835c375ad136329d623aeb39266cae2b4107b2de0"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "default-token-hoist",
+      "kind": "default",
+      "expected": {
+        "accepted": true,
+        "source": 1,
+        "value": "160px"
+      },
+      "observed": {
+        "accepted": true,
+        "source": 1,
+        "value": "160px",
+        "css": ":root{--popup-max-height:160px;}\n",
+        "journal": {
+          "information": "popupMaxHeight",
+          "originalSourceEntry:": {
+            "kind": "config",
+            "file": "panda.config.json"
+          },
+          "originalSourceIndex": 1,
+          "sourcePointer": "/theme/tokens/sizes/popup/value",
+          "sourceSha256": "50a1189258c358abf63f06012eed5330300c8707871cc35a448baeed844cf13b",
+          "mergedValue": "160px",
+          "exportedValue": "160px",
+          "derivedArtifact": "research-vars.css",
+          "derivedField": "--popup-max-height",
+          "derivedSha256": "79f952dd1687d5c297d7b39607a9af642160866d37b9c2b3b60d7c2fe96b29b7",
+          "scope": "Additional original-source-to-CSS record, original modules supply merge and source annotation",
+          "configFileHashes": {
+            "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+            "panda.config.json": "50a1189258c358abf63f06012eed5330300c8707871cc35a448baeed844cf13b"
+          }
+        }
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "sm": {
+                    "value": "80px"
+                  },
+                  "DEFAULT": {
+                    "value": "160px"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            },
+            {
+              "kind": "config",
+              "file": "panda.config.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": 1,
+            "theme.tokens.sizes.popup.sm": 1,
+            "theme.tokens.sizes.popup.sm.value": 1,
+            "theme.tokens.sizes.popup.DEFAULT.value": 1
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height",
+              "source": 1
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "160px"
+            }
+          ],
+          "sources": {
+            "entries": [
+              {
+                "kind": "preset",
+                "name": "research-base",
+                "file": "preset.json"
+              },
+              {
+                "kind": "config",
+                "file": "panda.config.json"
+              }
+            ]
+          }
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n",
+        "panda.config.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"160px\",\n          \"sm\": {\n            \"value\": \"80px\"\n          }\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+        "panda.config.json": "50a1189258c358abf63f06012eed5330300c8707871cc35a448baeed844cf13b"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "tracking-absent",
+      "kind": "absent",
+      "expected": {
+        "accepted": false,
+        "error": "missing-token-source"
+      },
+      "observed": {
+        "accepted": false,
+        "error": "missing-token-source"
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "value": "160px"
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            },
+            {
+              "kind": "config",
+              "file": "panda.config.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": 1,
+            "theme.tokens.sizes.popup.value": 1
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "160px"
+            }
+          ]
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n",
+        "panda.config.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"160px\"\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+        "panda.config.json": "4a81e4de8e378fc817ff747d205870c94055c0b696350d2e6edbe05c591b37d8"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "source-index-out-of-range",
+      "kind": "index",
+      "expected": {
+        "accepted": false,
+        "error": "source-index"
+      },
+      "observed": {
+        "accepted": false,
+        "error": "source-index"
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "value": "160px"
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            },
+            {
+              "kind": "config",
+              "file": "panda.config.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": 1,
+            "theme.tokens.sizes.popup.value": 1
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height",
+              "source": 99
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "160px"
+            }
+          ],
+          "sources": {
+            "entries": [
+              {
+                "kind": "preset",
+                "name": "research-base",
+                "file": "preset.json"
+              },
+              {
+                "kind": "config",
+                "file": "panda.config.json"
+              }
+            ]
+          }
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n",
+        "panda.config.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"160px\"\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+        "panda.config.json": "4a81e4de8e378fc817ff747d205870c94055c0b696350d2e6edbe05c591b37d8"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "export-value-disagrees",
+      "kind": "value",
+      "expected": {
+        "accepted": false,
+        "error": "export-value-conflict"
+      },
+      "observed": {
+        "accepted": false,
+        "error": "export-value-conflict"
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "value": "160px"
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            },
+            {
+              "kind": "config",
+              "file": "panda.config.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": 1,
+            "theme.tokens.sizes.popup.value": 1
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height",
+              "source": 1
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "999px"
+            }
+          ],
+          "sources": {
+            "entries": [
+              {
+                "kind": "preset",
+                "name": "research-base",
+                "file": "preset.json"
+              },
+              {
+                "kind": "config",
+                "file": "panda.config.json"
+              }
+            ]
+          }
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n",
+        "panda.config.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"160px\"\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+        "panda.config.json": "4a81e4de8e378fc817ff747d205870c94055c0b696350d2e6edbe05c591b37d8"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "stale-source-file",
+      "kind": "stale",
+      "expected": {
+        "accepted": false,
+        "error": "stale-source"
+      },
+      "observed": {
+        "accepted": false,
+        "error": "stale-source"
+      },
+      "original": {
+        "mergedConfig": {
+          "theme": {
+            "tokens": {
+              "sizes": {
+                "popup": {
+                  "value": "160px"
+                }
+              }
+            }
+          }
+        },
+        "tracking": {
+          "entries": [
+            {
+              "kind": "preset",
+              "name": "research-base",
+              "file": "preset.json"
+            },
+            {
+              "kind": "config",
+              "file": "panda.config.json"
+            }
+          ],
+          "paths": {
+            "theme.tokens.sizes.popup": 1,
+            "theme.tokens.sizes.popup.value": 1
+          }
+        },
+        "annotatedSpec": {
+          "schemaVersion": 1,
+          "categories": {
+            "sizes": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "sizes.popup"
+          ],
+          "tokens": {
+            "sizes.popup": {
+              "category": "sizes",
+              "cssVar": "--popup-max-height",
+              "source": 1
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "sizes.popup",
+              "value": "160px"
+            }
+          ],
+          "sources": {
+            "entries": [
+              {
+                "kind": "preset",
+                "name": "research-base",
+                "file": "preset.json"
+              },
+              {
+                "kind": "config",
+                "file": "panda.config.json"
+              }
+            ]
+          }
+        },
+        "unannotatedSpecHadSource": false
+      },
+      "sourceFiles": {
+        "preset.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"120px\"\n        }\n      }\n    }\n  }\n}\n",
+        "panda.config.json": "{\n  \"theme\": {\n    \"tokens\": {\n      \"sizes\": {\n        \"popup\": {\n          \"value\": \"160px\"\n        }\n      }\n    }\n  }\n}\n"
+      },
+      "sourcePins": {
+        "preset.json": "e391200767eb53b6619aaf85cbb313ec3bc857fcdd98dc9995ecd52287ba6297",
+        "panda.config.json": "stale"
+      },
+      "expectationMet": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rule": "aria-toggle-field-name",
+  "axe": "4.14.0",
+  "scope": "Name-rule check of actual scene-graph-to-SSR outputs, not full conformance/live editor",
+  "sourceResultsSha256": "8195a0142fababd99d39dfe2fe6e40349f50c3265aa81b2e4690556bdb440e48",
+  "axeSri": "sha384-lFUXB8tI4BaTE1bqxH9eeAXON2NH1qsdAhs7S5L++nUNP5QOy+hwr0C3TYEJUEl0",
+  "cases": [
+    {
+      "id": "drawn-text",
+      "expectedViolations": 0,
+      "expectedIncomplete": 0
+    },
+    {
+      "id": "node-name-only",
+      "expectedViolations": 1,
+      "expectedIncomplete": 0
+    },
+    {
+      "id": "hidden-text",
+      "expectedViolations": 1,
+      "expectedIncomplete": 0
+    }
+  ]
+}

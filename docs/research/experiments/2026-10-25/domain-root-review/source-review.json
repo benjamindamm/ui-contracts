@@ -1,0 +1,27 @@
+{
+  "kind": "bounded source review, no runtime condition",
+  "uspec_revision": "1e25e9b8bc2e694689ba0489594f38807a341f14",
+  "sources": [
+    {
+      "path": "packages/cli/src/component-md/component-contract.ts",
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/src/component-md/component-contract.ts",
+      "sha256": "ea765027d09f644f26e8e9f683e02cae850d1cd818f49eab2ceffc7bce981105"
+    },
+    {
+      "path": "packages/cli/src/component-md/types.ts",
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/src/component-md/types.ts",
+      "sha256": "bd1e770b3d0ef71b9715b73f6a1d2ef79959c2764168226b79ad6c793a606ccc"
+    }
+  ],
+  "uxspec_schema": {
+    "revision": "20dfae0e7224d952e198afdf4ffed26d6fd67180",
+    "sha256": "3e2819b844c8b4f5fb03f18bb49ee9f87396bc6e7ad0e04482d3217389574bf7",
+    "required": [
+      "$schema",
+      "$description",
+      "$machine"
+    ]
+  },
+  "coverage_changes": 0,
+  "conditions_added": 0
+}

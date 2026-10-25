@@ -1,0 +1,62 @@
+{
+  "sourceHashes": {
+    "sources/packages/vue/src/canvas/islands/controls/shared.ts": "89981b668b43475f96e050fa267b51bb3eeac4ad43dc2e95418d127fe8890259",
+    "sources/packages/vue/src/canvas/islands/state.ts": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963",
+    "sources/packages/dom-css/src/behaviours/reset.ts": "8287f6b8c37cd320864336ba96e50d9eeca0464d64fe1f06d98e196ad22a5722",
+    "sources/packages/vue/src/canvas/islands/render.ts": "9f8b3c79a4bbfbc3c3d7f91fdf524b4398eab040f4414ebde2b16f3dd03d65a9",
+    "sources/packages/vue/src/canvas/islands/controls/index.ts": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953"
+  },
+  "declarations": [
+    {
+      "file": "sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "name": "stateOf",
+      "sha256": "28e3e396a81a5658ed68b5df65a78adf0674aba005cea00dbf9f2cc7fa050979",
+      "startLine": 16
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "name": "disabled",
+      "sha256": "411918102f169a6b50e4bfd6e88fbc4ae365de1ef74e4418932f3f8a804029d3",
+      "startLine": 22
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "name": "interaction",
+      "sha256": "d3c55bac454fc905603b14ce0913defb1ccbdedfa96f9214613a21528f78bc54",
+      "startLine": 30
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/state.ts",
+      "name": "isDisabled",
+      "sha256": "9ae2f909cb2e53863b4a2f5af9d3dd12b916095474c9fd4d37d2546a66e8c38b",
+      "startLine": 69
+    },
+    {
+      "file": "sources/packages/dom-css/src/behaviours/reset.ts",
+      "name": "BUTTON_RESET",
+      "sha256": "aa322c36f1a9e43fe715a63bd0abda74ec37cb3710ced76341dfec1e35a1b347",
+      "startLine": 5
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/render.ts",
+      "name": "renderElement",
+      "sha256": "99088731dabb97b9a2bc23067103eaebdfd1dabdf73bf87b1119d36ee2b9e8c2",
+      "startLine": 45
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/render.ts",
+      "name": "renderNode",
+      "sha256": "dc48f7ee661086b1083d0a5d6e33f6b2bc8727aa9abd36c4d42e69965734c37f",
+      "startLine": 81
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "name": "root",
+      "sha256": "cab32235bdb6d1d99ac2a00c0ffbe69dfd5837131d0f11e90a36d69a92fc551c",
+      "startLine": 46
+    }
+  ],
+  "originalDeclarationsModified": false,
+  "wholeOpenPencilBuild": false,
+  "originalRoleClassifierExecuted": false
+}

@@ -1,0 +1,53 @@
+{
+  "endpoint": "https://validator.w3.org/nu/",
+  "mode": "check as CSS",
+  "reported_version": "26.10.18",
+  "candidate_ui_rendered": false,
+  "cases": [
+    {
+      "expected": "record module support and diagnostics",
+      "id": "css-01-layout",
+      "input": ".instance { anchor-scope: --input; }\n.input { anchor-name: --input; }\n.popup { position: absolute; position-anchor: --input; top: calc(anchor(bottom) + 8px); left: anchor(left); width: anchor-size(width); max-height: 160px; overflow-y: auto; }\n@media (prefers-color-scheme: dark) { .popup { background: #171717; } }",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nUse the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.\nMessage Filtering\n\nError: anchor-scope: Property anchor-scope doesn't exist.\n\nFrom line 1, column 27; to line 1, column 33\n\n.instance { anchor-scope: --input; }↩.i\n\nError: anchor-name: Property anchor-name doesn't exist.\n\nFrom line 2, column 23; to line 2, column 29\n\nnput; }↩.input { anchor-name: --input; }↩.p\n\nError: position-anchor: Property position-anchor doesn't exist.\n\nFrom line 3, column 47; to line 3, column 53\n\nn: absolute; position-anchor: --input; top:\n\nError: top: Parse Error.\n\nAt line 3, column 86\n\nr(bottom) + 8px); left: anchor\n\nError: left: anchor(left) is not a left value.\n\nAt line 3, column 106\n\nft: anchor(left); width: ancho\n\nError: width: anchor-size(width) is not a width value.\n\nAt line 3, column 133\n\nchor-size(width); max-height: \n\nDocument checking completed.\n\nTotal execution time 2 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": [
+        "Error: anchor-scope: Property anchor-scope doesn't exist.",
+        "Error: anchor-name: Property anchor-name doesn't exist.",
+        "Error: position-anchor: Property position-anchor doesn't exist.",
+        "Error: top: Parse Error.",
+        "Error: left: anchor(left) is not a left value.",
+        "Error: width: anchor-size(width) is not a width value."
+      ]
+    },
+    {
+      "expected": "invalid overflow value rejected",
+      "id": "css-02-invalid-overflow",
+      "input": ".instance { anchor-scope: --input; }\n.input { anchor-name: --input; }\n.popup { position: absolute; position-anchor: --input; top: calc(anchor(bottom) + 8px); left: anchor(left); width: anchor-size(width); max-height: 160px; overflow-y: banana; }\n@media (prefers-color-scheme: dark) { .popup { background: #171717; } }",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nUse the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.\nMessage Filtering\n\nError: anchor-scope: Property anchor-scope doesn't exist.\n\nFrom line 1, column 27; to line 1, column 33\n\n.instance { anchor-scope: --input; }↩.i\n\nError: anchor-name: Property anchor-name doesn't exist.\n\nFrom line 2, column 23; to line 2, column 29\n\nnput; }↩.input { anchor-name: --input; }↩.p\n\nError: position-anchor: Property position-anchor doesn't exist.\n\nFrom line 3, column 47; to line 3, column 53\n\nn: absolute; position-anchor: --input; top:\n\nError: top: Parse Error.\n\nAt line 3, column 86\n\nr(bottom) + 8px); left: anchor\n\nError: left: anchor(left) is not a left value.\n\nAt line 3, column 106\n\nft: anchor(left); width: ancho\n\nError: width: anchor-size(width) is not a width value.\n\nAt line 3, column 133\n\nchor-size(width); max-height: \n\nError: overflow-y: banana is not a overflow-y value.\n\nFrom line 3, column 167; to line 3, column 172\n\nax-height: 160px; overflow-y: banana; }↩@m\n\nDocument checking completed.\n\nTotal execution time 2 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": [
+        "Error: anchor-scope: Property anchor-scope doesn't exist.",
+        "Error: anchor-name: Property anchor-name doesn't exist.",
+        "Error: position-anchor: Property position-anchor doesn't exist.",
+        "Error: top: Parse Error.",
+        "Error: left: anchor(left) is not a left value.",
+        "Error: width: anchor-size(width) is not a width value.",
+        "Error: overflow-y: banana is not a overflow-y value."
+      ]
+    },
+    {
+      "expected": "basic CSS control accepted",
+      "id": "css-03-basic-control",
+      "input": ".popup { max-height: 160px; overflow-y: auto; }\n@media (prefers-color-scheme: dark) { .popup { background: #171717; } }",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nDocument checking completed. No errors or warnings to show.\n\nTotal execution time 2 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": []
+    },
+    {
+      "expected": "invalid length unit rejected",
+      "id": "css-04-invalid-unit",
+      "input": ".popup { max-height: 160bananas; overflow-y: auto; }\n@media (prefers-color-scheme: dark) { .popup { background: #171717; } }",
+      "output": "Nu Html Checker\n\nThis tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change\n\nShowing results for contents of text-input area (checked with vnu 26.10.18)\nChecker Input\n\nShow\nsource\noutline\nimage report\nerrors & warnings only\n\nCheck by\naddress\nfile upload\ntext input\ncheck as CSS\n\nUse the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.\nMessage Filtering\n\nError: max-height: Unknown dimension.\n\nFrom line 1, column 22; to line 1, column 31\n\n.popup { max-height: 160bananas; over\n\nDocument checking completed.\n\nTotal execution time 1 milliseconds.\n\nAbout this checker • Report an issue",
+      "messages": [
+        "Error: max-height: Unknown dimension."
+      ]
+    }
+  ]
+}

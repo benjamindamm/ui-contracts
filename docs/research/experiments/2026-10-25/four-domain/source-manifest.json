@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-25",
+  "own_fixture_files": [
+    {
+      "file": "fixtures/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    {
+      "file": "fixtures/visual-variable.css",
+      "sha256": "e84910b171cc556cc78a217e7a2dfb258330a0e836f08d4c987b8a95ba7e4c30"
+    },
+    {
+      "file": "fixtures/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    }
+  ],
+  "original_tool_sources": {
+    "cem": [
+      {
+        "file": "sources/cem.schema.json",
+        "source_url": "https://raw.githubusercontent.com/webcomponents/custom-elements-manifest/2570079a0525c26296f9ec39944f0c6e0f0461af/schema.json",
+        "sha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+        "capture": "UTF-8 code block extracted from full BrowserOS neo read; not asserted byte-identical to HTTP response"
+      },
+      {
+        "file": "sources/uxspec.schema.json",
+        "source_url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+        "sha256": "3e2819b844c8b4f5fb03f18bb49ee9f87396bc6e7ad0e04482d3217389574bf7",
+        "capture": "UTF-8 code block extracted from full BrowserOS neo read; not asserted byte-identical to HTTP response"
+      },
+      {
+        "file": "sources/style-map.mts",
+        "source_url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/style-map.ts",
+        "sha256": "b4d41e51aaf19e95258cf13fb41b3686d5787082d5a28ba5351df55d937c3bf2",
+        "capture": "UTF-8 code block extracted from full BrowserOS neo read; not asserted byte-identical to HTTP response"
+      }
+    ],
+    "scxml": [
+      {
+        "file": "sources/scxml.xsd",
+        "url": "https://www.w3.org/2011/04/SCXML/scxml.xsd",
+        "sha256": "98e14d0e03d5f9bb49b03fe4a2c24d72c165789d68fe93eee24fc403e4b23b48",
+        "capture": "BrowserOS neo page-context fetch response.text; original XML instead of browser XML/XSL presentation"
+      },
+      {
+        "file": "sources/scxml-module-core.xsd",
+        "url": "https://www.w3.org/2011/04/SCXML/scxml-module-core.xsd",
+        "sha256": "cbe0cde7a2cc165b84263e0dad45abd74296ed99a9196611e4b0c98b494222e4",
+        "capture": "BrowserOS neo page-context fetch response.text; original XML instead of browser XML/XSL presentation"
+      },
+      {
+        "file": "sources/scxml-module-data.xsd",
+        "url": "https://www.w3.org/2011/04/SCXML/scxml-module-data.xsd",
+        "sha256": "c34438431aa5d9815a63a64415e3127b832abd451ca509ff79a89d529dddba47",
+        "capture": "BrowserOS neo page-context fetch response.text; original XML instead of browser XML/XSL presentation"
+      },
+      {
+        "file": "sources/scxml-module-external.xsd",
+        "url": "https://www.w3.org/2011/04/SCXML/scxml-module-external.xsd",
+        "sha256": "899b13488332a6b37700ea53766e16d39b1b4f38fb829d0d3b12f0955a08057d",
+        "capture": "BrowserOS neo page-context fetch response.text; original XML instead of browser XML/XSL presentation"
+      },
+      {
+        "file": "sources/scxml-datatypes.xsd",
+        "url": "https://www.w3.org/2011/04/SCXML/scxml-datatypes.xsd",
+        "sha256": "51036cac697db9be6f92ad853215dc3166990ca292786fed1612d0666932163b",
+        "capture": "BrowserOS neo page-context fetch response.text; original XML instead of browser XML/XSL presentation"
+      },
+      {
+        "file": "sources/scxml-attribs.xsd",
+        "url": "https://www.w3.org/2011/04/SCXML/scxml-attribs.xsd",
+        "sha256": "b74de05e9e8d86123a4e8cca6655761fae78009e8d63b95cc27ae38222a2de01",
+        "capture": "BrowserOS neo page-context fetch response.text; original XML instead of browser XML/XSL presentation"
+      },
+      {
+        "file": "sources/scxml-contentmodels.xsd",
+        "url": "https://www.w3.org/2011/04/SCXML/scxml-contentmodels.xsd",
+        "sha256": "704baaf6e19c480fa76039390dc0a0e045f5544b5f68ec294c47fe51d40d0053",
+        "capture": "BrowserOS neo page-context fetch response.text; original XML instead of browser XML/XSL presentation"
+      },
+      {
+        "file": "sources/xml.xsd",
+        "url": "https://www.w3.org/2001/xml.xsd",
+        "sha256": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c",
+        "capture": "BrowserOS neo page-context fetch response.text; original XML instead of browser XML/XSL presentation"
+      }
+    ],
+    "css": "S73: css-tree 3.2.1 + mdn-data 2.27.1, unchanged original grammars",
+    "html": "S80: axe-core 4.14.0, pinned package and browser-enforced SRI"
+  },
+  "additional_code": "Own research binding/profile rules are not original candidate features or a selected product format",
+  "profile_sha256": "ddcd9c655cc379d6b507bf941cd04e560be08c6371bc26a926fb49a45654619e"
+}

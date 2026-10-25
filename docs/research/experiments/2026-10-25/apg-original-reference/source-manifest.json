@@ -1,0 +1,82 @@
+{
+  "originalSource": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/examples/js/combobox-autocomplete.js",
+  "originalRevision": "0f765e4dc33e966026114ac12a8380db1de3b787",
+  "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+  "originalClassModified": false,
+  "originalWholeFileLoaded": true,
+  "originalPageBootstrapMatches": 0,
+  "explicitOriginalInstances": 2,
+  "originalClassDefinitionShared": true,
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "schemaSha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+  "newConditions": 10,
+  "physicalKeyboardTested": false,
+  "atTested": false,
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "face53173acc443c37275605bd98fdbe251d7a9b0a74e7b5a7e59716c0c38fec"
+    },
+    {
+      "file": "browser-capture.json",
+      "sha256": "5389c6277596c1ea841de74fe8ed209960392b6d48a47504fa43bd807a49c495"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "5af403ea01936f95521375fd7f0cbf4640f2d462b75f718b70241fd9ee738255"
+    },
+    {
+      "file": "check_schema.py",
+      "sha256": "1ade5d7ee585f9fcf2d95053bb3b665d7d9dd6c7adb1f66e08b3c69dc1c1e6fe"
+    },
+    {
+      "file": "host/harness.js",
+      "sha256": "754735813c96acba8765e8ffdbd4aee6bac97e3bb9fa40d109f2bba104ab8cf8"
+    },
+    {
+      "file": "host/index.html",
+      "sha256": "0ccd1b21ec31c71a5a0f2302b596fac49be7a308b5a8c29a9606e7b4064e0f31"
+    },
+    {
+      "file": "initial-host.html",
+      "sha256": "f22bb805bdaf7d585501615bd21f6cfd0ad87b02cf9028271318bbad38089f75"
+    },
+    {
+      "file": "initial-unlabelled-host-capture.json",
+      "sha256": "46313fa8d4c0ef3527f55c4f108e3482d7f961fc1409223de6821512ce995712"
+    },
+    {
+      "file": "interface.json",
+      "sha256": "e38f26317cf870a19cc10e24208a7664a4966b4853155383add404bfdac6f057"
+    },
+    {
+      "file": "own-capture-write-error.json",
+      "sha256": "f3bda8b5b4ec70b7c7cad737fcbd31c5c591766bdef4f5026d121844dcf2452d"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "2e71743d8396f526b1a7e5c8dd06d492d6a833535a5e3d748d158790e69e5a56"
+    },
+    {
+      "file": "results.json",
+      "sha256": "0323ba3aa3f0520897e7b97569728b300507b1fb4eb6966e7f0b2ecdecc937c0"
+    },
+    {
+      "file": "schema-expectations.json",
+      "sha256": "a2db2a7ad4451756ced1f57ae5ad5be91c8276a247153cd3c304a8fc9add07f5"
+    },
+    {
+      "file": "schema-results.json",
+      "sha256": "6b0396d328865d6d3b791ac6702885731f4a4124c64b37d147bd134852bcc55b"
+    },
+    {
+      "file": "structural-capture.json",
+      "sha256": "a3b656fd21b135d0d3396aa45514fd80672600f31f137e0b6311c4846f27c360"
+    },
+    {
+      "file": "wrong-type-interface.json",
+      "sha256": "7974f3ffee2e6cb3c58824b055d2d296e5af75353cb2a055bc77026439e017b2"
+    }
+  ]
+}

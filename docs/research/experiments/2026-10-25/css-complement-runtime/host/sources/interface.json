@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "autocomplete.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "customElement": true,
+          "name": "ResearchCombobox",
+          "members": [
+            {
+              "kind": "field",
+              "name": "maxHeight",
+              "type": {
+                "text": "number"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "enabled",
+              "type": {
+                "text": "boolean"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "query",
+              "type": {
+                "text": "string"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "value-change",
+              "type": {
+                "text": "CustomEvent<{value:string;query:string}>"
+              }
+            }
+          ],
+          "cssParts": [
+            {
+              "name": "input"
+            },
+            {
+              "name": "popup"
+            },
+            {
+              "name": "list"
+            },
+            {
+              "name": "option"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

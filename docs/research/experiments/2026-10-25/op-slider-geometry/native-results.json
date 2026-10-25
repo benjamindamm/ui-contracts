@@ -1,0 +1,71 @@
+{
+  "scope": "Original generated Vue SFC compiled with original Vue compiler and mounted with actual Reka; third host is explicit own post-generation CSS root-width revision, track stays200, no pointer/keyboard/AT or general popup anchoring",
+  "cases": [
+    {
+      "id": "quarter",
+      "value": 25,
+      "width": 200,
+      "center": 54,
+      "expected": {
+        "value": "25",
+        "width": 200,
+        "center": 54,
+        "thumbWidth": 16
+      },
+      "observed": {
+        "center": 54,
+        "display": "block",
+        "left": "54px",
+        "sourceFormula": "calc(25% + 4px)",
+        "thumbWidth": 16,
+        "value": "25",
+        "width": 200
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "three-quarters",
+      "value": 75,
+      "width": 200,
+      "center": 146,
+      "expected": {
+        "value": "75",
+        "width": 200,
+        "center": 146,
+        "thumbWidth": 16
+      },
+      "observed": {
+        "center": 146,
+        "display": "block",
+        "left": "146px",
+        "sourceFormula": "calc(75% - 4px)",
+        "thumbWidth": 16,
+        "value": "75",
+        "width": 200
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "quarter-wider-root",
+      "value": 25,
+      "width": 300,
+      "center": 79,
+      "expected": {
+        "value": "25",
+        "width": 300,
+        "center": 79,
+        "thumbWidth": 16
+      },
+      "observed": {
+        "center": 79,
+        "display": "block",
+        "left": "79px",
+        "sourceFormula": "calc(25% + 4px)",
+        "thumbWidth": 16,
+        "value": "25",
+        "width": 300
+      },
+      "expectationMet": true
+    }
+  ]
+}

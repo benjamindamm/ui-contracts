@@ -1,0 +1,80 @@
+[
+  {
+    "id": "raw-original-dtcg",
+    "kind": "raw",
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "id": "wrapped-original-duration",
+    "kind": "wrapped",
+    "expected": {
+      "ok": true,
+      "ms": 1
+    }
+  },
+  {
+    "id": "adapted-one-second",
+    "kind": "seconds",
+    "expected": {
+      "ok": true,
+      "ms": 1000
+    }
+  },
+  {
+    "id": "adapted-thousand-ms",
+    "kind": "milliseconds",
+    "expected": {
+      "ok": true,
+      "ms": 1000
+    }
+  },
+  {
+    "id": "missing-original-pointer",
+    "kind": "pointer",
+    "expected": {
+      "ok": false,
+      "error": "missing-duration"
+    }
+  },
+  {
+    "id": "wrong-original-token-type",
+    "kind": "type",
+    "expected": {
+      "ok": false,
+      "error": "duration-type"
+    }
+  },
+  {
+    "id": "unsupported-original-unit",
+    "kind": "unit",
+    "expected": {
+      "ok": false,
+      "error": "duration-unit"
+    }
+  },
+  {
+    "id": "stale-original-source",
+    "kind": "stale",
+    "expected": {
+      "ok": false,
+      "error": "stale-source"
+    }
+  },
+  {
+    "id": "missing-imported-target",
+    "kind": "target",
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "id": "changed-derived-projection",
+    "kind": "projection",
+    "expected": {
+      "ok": false,
+      "error": "stale-projection"
+    }
+  }
+]

@@ -1,0 +1,1 @@
+[{"id":"quarter","value":25,"expected":{"controls":1,"parts":3,"missingBindings":[],"originalVueReferencesReka":true,"thumbEdge":"calc(25% + 0px)"}},{"id":"three-quarters","value":75,"expected":{"controls":1,"parts":3,"missingBindings":[],"originalVueReferencesReka":true,"thumbEdge":"calc(75% + 0px)"}}]

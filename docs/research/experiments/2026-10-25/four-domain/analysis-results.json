@@ -1,0 +1,2300 @@
+{
+  "node": "v24.22.1",
+  "typescript": "5.9.3",
+  "cssTree": "3.2.1",
+  "cases": [
+    {
+      "id": "four-control",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "wrong-source-hash",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "missing-part-name",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "wrong-machine-name",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "missing-state",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "cross-list",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "cross-option",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "cross-anchor",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "wrong-unit",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8",
+          "matched": false,
+          "error": "Mismatch\n  syntax: <length-percentage> | auto | <anchor-size()>\n   value: 8\n  --------^"
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "wrong-event",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "wrong-payload",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value=42;\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [
+          {
+            "code": 2322,
+            "message": "Type 'number' is not assignable to type 'string'."
+          }
+        ],
+        "compatible": false
+      }
+    },
+    {
+      "id": "wrong-owner",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    },
+    {
+      "id": "duplicate-instance-part",
+      "cssRules": {
+        "section": {
+          "margin-bottom": "260px"
+        },
+        "[role=\"option\"]": {
+          "height": "32px",
+          "box-sizing": "border-box"
+        },
+        "#input-a": {
+          "anchor-name": "--input-a"
+        },
+        "#popup-a": {
+          "position": "absolute",
+          "position-anchor": "--input-a",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        },
+        "#input-b": {
+          "anchor-name": "--input-b"
+        },
+        "#popup-b": {
+          "position": "absolute",
+          "position-anchor": "--input-b",
+          "top": "anchor(bottom)",
+          "left": "anchor(left)",
+          "margin-top": "8px",
+          "max-height": "160px",
+          "overflow-y": "auto"
+        }
+      },
+      "grammar": [
+        {
+          "selector": "section",
+          "property": "margin-bottom",
+          "value": "260px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "height",
+          "value": "32px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "[role=\"option\"]",
+          "property": "box-sizing",
+          "value": "border-box",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-a",
+          "property": "anchor-name",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "position-anchor",
+          "value": "--input-a",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-a",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#input-b",
+          "property": "anchor-name",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position",
+          "value": "absolute",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "position-anchor",
+          "value": "--input-b",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "top",
+          "value": "anchor(bottom)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "left",
+          "value": "anchor(left)",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "margin-top",
+          "value": "8px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "max-height",
+          "value": "160px",
+          "matched": true,
+          "error": null
+        },
+        {
+          "selector": "#popup-b",
+          "property": "overflow-y",
+          "value": "auto",
+          "matched": true,
+          "error": null
+        }
+      ],
+      "payload": {
+        "source": "type PublicEvent=CustomEvent<{value:string}>;\nconst value='alpha';\nconst payload:PublicEvent['detail']={\"value\":value};\n",
+        "diagnostics": [],
+        "compatible": true
+      }
+    }
+  ]
+}

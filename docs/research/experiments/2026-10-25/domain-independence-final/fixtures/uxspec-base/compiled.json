@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "compiled": {
+    "$format": "uxspec-compiled",
+    "$version": "0.2",
+    "initial": "closed",
+    "contextSchema": {},
+    "eventSchema": {
+      "OPEN": {
+        "source": "user"
+      },
+      "CLOSE": {
+        "source": "user"
+      }
+    },
+    "states": {
+      "closed": {
+        "path": "closed",
+        "visual": {},
+        "transitions": [
+          {
+            "event": "OPEN",
+            "target": "open",
+            "guard": null,
+            "actions": []
+          }
+        ],
+        "entry": [],
+        "exit": [],
+        "invoke": []
+      },
+      "open": {
+        "path": "open",
+        "visual": {},
+        "transitions": [
+          {
+            "event": "CLOSE",
+            "target": "closed",
+            "guard": null,
+            "actions": []
+          }
+        ],
+        "entry": [],
+        "exit": [],
+        "invoke": []
+      }
+    },
+    "assertions": []
+  },
+  "issues": [],
+  "trace": [
+    {
+      "phase": "state-paths",
+      "kind": "initial",
+      "path": "$machine.initial",
+      "input": "closed",
+      "output": "closed",
+      "status": "ok"
+    },
+    {
+      "phase": "state-paths",
+      "kind": "target",
+      "path": "$machine.states.closed.on.OPEN",
+      "input": "open",
+      "output": "open",
+      "status": "ok"
+    },
+    {
+      "phase": "state-paths",
+      "kind": "target",
+      "path": "$machine.states.open.on.CLOSE",
+      "input": "closed",
+      "output": "closed",
+      "status": "ok"
+    }
+  ]
+}

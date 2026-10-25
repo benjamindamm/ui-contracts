@@ -1,0 +1,16 @@
+[
+  {
+    "file": "sources/panda/packages/compiler-shared/src/design-system-spec/read.ts",
+    "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/read.ts",
+    "sha256": "7b82843edd25a4794fdc0f9ba279b577d9eb82283e35b5f6be652bf4044bef63",
+    "capture": "Full BrowserOS neo code block",
+    "read_date": "2026-10-25"
+  },
+  {
+    "file": "sources/panda/packages/compiler-shared/src/design-system-spec/types.ts",
+    "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/types.ts",
+    "sha256": "05c7388cbdfc35eba9c9bf2eeb4b85269e8c0af4746b1669a72b794761a7613a",
+    "capture": "Full BrowserOS neo code block",
+    "read_date": "2026-10-25"
+  }
+]

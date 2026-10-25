@@ -1,3 +1,9 @@
+**Einordnung dieses Entwurfs:** Die folgenden Zahlen und „noch nicht ausgeführt“-Aussagen bewahren frühere Prüfrunden. Aktuelle Matrixnachweise stehen in [CURRENT-STATUS](CURRENT-STATUS.md); zusätzlich offene gemeinsame Integrationsarbeit in [PROJECT-GAPS](PROJECT-GAPS.md). Die begrenzten späteren Adapterversuche ersetzen noch keine fertige gemeinsame Architektur.
+
+**Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
+
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+
 # Integrationsabgleich und dokumentarischer Referenzfall
 
 Stand: 24. Oktober 2026. **Dokumentarische Prüfung, keine Implementierung, keine ausgeführten Contract- oder Laufzeittests.** Dieser Abgleich bearbeitet die Referenz- und Kompositionsfragen aus dem [Integrationsentwurf](INTEGRATION.md). Er schließt weder sämtliche U-Felder noch die beiden vorgemerkten Detailvergleiche ab.

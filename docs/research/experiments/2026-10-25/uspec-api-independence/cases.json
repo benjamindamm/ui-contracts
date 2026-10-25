@@ -1,0 +1,32 @@
+[
+  {
+    "id": "control",
+    "expected": {
+      "originalApiAccepted": true,
+      "publicValue": "alpha",
+      "height": 160,
+      "unchangedOtherDomains": true,
+      "ownApiScopeOnly": true
+    }
+  },
+  {
+    "id": "visual-revision",
+    "expected": {
+      "originalApiAccepted": true,
+      "publicValue": "alpha",
+      "height": 192,
+      "unchangedOtherDomains": true,
+      "ownApiScopeOnly": true
+    }
+  },
+  {
+    "id": "behavior-revision",
+    "expected": {
+      "originalApiAccepted": true,
+      "publicValue": "beta",
+      "height": 160,
+      "unchangedOtherDomains": true,
+      "ownApiScopeOnly": true
+    }
+  }
+]

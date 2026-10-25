@@ -1,0 +1,98 @@
+{
+  "kind": "uspec-invalid-clip",
+  "anchor": {
+    "layerName": "Input",
+    "layerId": "input-1",
+    "variantId": "v1",
+    "variantName": "default",
+    "variantProperties": {},
+    "sourceScope": "parent",
+    "_targetDisposition": "resolved"
+  },
+  "sourceLayerIds": [
+    "input-1",
+    "popup-1"
+  ],
+  "originalClipping": {
+    "clipsContent": {
+      "value": "auto",
+      "token": null,
+      "display": "auto"
+    }
+  },
+  "rows": [
+    "Result 1",
+    "Result 2",
+    "Result 3",
+    "Result 4",
+    "Result 5",
+    "Result 6",
+    "Result 7"
+  ],
+  "extraBinding": {
+    "sourceInputLayer": "input-1",
+    "sourcePopupLayer": "popup-1",
+    "externalInputPart": "input",
+    "externalPopupPart": "popup",
+    "gap": {
+      "value": 8,
+      "unit": "px"
+    },
+    "clippingMapping": {
+      "true": "clip",
+      "false": "visible"
+    },
+    "viewportHeight": 160
+  },
+  "originalBuilderCacheValidation": [
+    {
+      "domain": "api",
+      "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/layout-final-bindings/fixtures/uspec-invalid-clip/autocomplete-api.json",
+      "ok": true,
+      "normalized": 0,
+      "bytes": 636,
+      "errors": []
+    },
+    {
+      "domain": "api-dictionary",
+      "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/layout-final-bindings/fixtures/uspec-invalid-clip/autocomplete-api-dictionary.json",
+      "ok": true,
+      "normalized": 0,
+      "bytes": 405,
+      "errors": []
+    },
+    {
+      "domain": "structure",
+      "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/layout-final-bindings/fixtures/uspec-invalid-clip/autocomplete-structure.json",
+      "ok": true,
+      "normalized": 0,
+      "bytes": 1021,
+      "errors": []
+    },
+    {
+      "domain": "color",
+      "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/layout-final-bindings/fixtures/uspec-invalid-clip/autocomplete-color.json",
+      "ok": true,
+      "normalized": 0,
+      "bytes": 500,
+      "errors": []
+    },
+    {
+      "domain": "voice",
+      "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/layout-final-bindings/fixtures/uspec-invalid-clip/autocomplete-voice.json",
+      "ok": true,
+      "normalized": 0,
+      "bytes": 815,
+      "errors": []
+    },
+    {
+      "domain": "reconciliations",
+      "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/layout-final-bindings/fixtures/uspec-invalid-clip/autocomplete-reconciliations.json",
+      "ok": true,
+      "normalized": 0,
+      "bytes": 386,
+      "errors": []
+    }
+  ],
+  "sourceSha256": "d86669e18f6ab6f44583c637dcea4be696579b4462484edc0abb4d8ef17f7294"
+}

@@ -1,0 +1,103 @@
+{
+  "declarations": [
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "name": "stateOf",
+      "sourceSha256": "89981b668b43475f96e050fa267b51bb3eeac4ad43dc2e95418d127fe8890259",
+      "sha256": "28e3e396a81a5658ed68b5df65a78adf0674aba005cea00dbf9f2cc7fa050979"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "name": "disabled",
+      "sourceSha256": "89981b668b43475f96e050fa267b51bb3eeac4ad43dc2e95418d127fe8890259",
+      "sha256": "411918102f169a6b50e4bfd6e88fbc4ae365de1ef74e4418932f3f8a804029d3"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "name": "interaction",
+      "sourceSha256": "89981b668b43475f96e050fa267b51bb3eeac4ad43dc2e95418d127fe8890259",
+      "sha256": "d3c55bac454fc905603b14ce0913defb1ccbdedfa96f9214613a21528f78bc54"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/state.ts",
+      "name": "TEXT_INPUTS",
+      "sourceSha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963",
+      "sha256": "3861dc224375f767810468c8e6114888604a02749e4cd4bd3be13d730c58a81c"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/state.ts",
+      "name": "initialChoice",
+      "sourceSha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963",
+      "sha256": "1d27e2bf5d8281c524b622967ac5a83fad26d5254f6b3f6a7a6c74da0bdb5fd6"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/state.ts",
+      "name": "initialTexts",
+      "sourceSha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963",
+      "sha256": "fa8d3a3ab5913af0b86fc9d93a7004e5bc94ccd6e308a745a2b152b82cb3ef7b"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/state.ts",
+      "name": "createIslandState",
+      "sourceSha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963",
+      "sha256": "4b29037a4d81b4b693811a7513847064f0a8293bc3f049f6cbf16147b6abf76e"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/state.ts",
+      "name": "isDisabled",
+      "sourceSha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963",
+      "sha256": "9ae2f909cb2e53863b4a2f5af9d3dd12b916095474c9fd4d37d2546a66e8c38b"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "name": "asChild",
+      "sourceSha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953",
+      "sha256": "3a287aa0825f3bc21cf03e4ab78d03ab40bc60585fd91e81a261cf6d231bd9e6"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "name": "ON_OFF",
+      "sourceSha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953",
+      "sha256": "a173a2465a7e885dbe217b1b9ac988be0df0ae85944350db4ad5a5953d14159e"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "name": "root",
+      "sourceSha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953",
+      "sha256": "cab32235bdb6d1d99ac2a00c0ffbe69dfd5837131d0f11e90a36d69a92fc551c"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "name": "wrapRole",
+      "sourceSha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953",
+      "sha256": "184d7a9f361bdf3f67bb14ed78d636adb9219605dc9dc99dc5938743a178d966"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/render.ts",
+      "name": "renderElement",
+      "sourceSha256": "9f8b3c79a4bbfbc3c3d7f91fdf524b4398eab040f4414ebde2b16f3dd03d65a9",
+      "sha256": "99088731dabb97b9a2bc23067103eaebdfd1dabdf73bf87b1119d36ee2b9e8c2"
+    },
+    {
+      "file": "../op-radio-names/sources/packages/vue/src/canvas/islands/render.ts",
+      "name": "renderNode",
+      "sourceSha256": "9f8b3c79a4bbfbc3c3d7f91fdf524b4398eab040f4414ebde2b16f3dd03d65a9",
+      "sha256": "dc48f7ee661086b1083d0a5d6e33f6b2bc8727aa9abd36c4d42e69965734c37f"
+    }
+  ],
+  "originalDeclarationsModified": false,
+  "publishedApis": [
+    "SceneGraph",
+    "SceneGraph.createInstance",
+    "emptyBehaviour",
+    "withBehaviour",
+    "missingBindings",
+    "sceneGraphToDesignDocument",
+    "behaviourControls",
+    "controlRoles"
+  ],
+  "repoVuePin": "ab2875cc761ee6cff17d389ff1c85fedae50aeab",
+  "publishedDomCss": "0.16.0",
+  "publishedSceneGraph": "0.16.0",
+  "wholeRepoIdentityClaimed": false
+}

@@ -1,0 +1,182 @@
+{
+  "node": "v24.22.1",
+  "typescript": "5.9.3",
+  "zod": "3.25.76",
+  "schemaSourceSha256": "f743d14c7d48e828c2d50c8ee0c16180a128c1a35dbad6bab57158a0c9f28841",
+  "configSha256": "6244e829849e63b55316258f32e1110833d193b79943ec79f245b33ebeec2ef8",
+  "schemaSubject": "Specification-authoring configuration, not a DESIGN.md token document",
+  "additionalHarness": true,
+  "originalSchemaModified": false,
+  "cases": [
+    {
+      "id": "original-config",
+      "mutation": "none",
+      "expectedAccepted": true,
+      "inputSha256": "c32b23972daab87af50e2034e90ff0302b3a6f13774e260443a89014186c8352",
+      "accepted": true,
+      "issues": [],
+      "expectationMet": true
+    },
+    {
+      "id": "units-number",
+      "mutation": "units",
+      "expectedAccepted": false,
+      "inputSha256": "c0f0e17df685ad9c67fbb7d147e84846a45732ef652e9d1f08a101caba964e28",
+      "accepted": false,
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "array",
+          "received": "number",
+          "path": [
+            "units"
+          ],
+          "message": "Expected array, received number"
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "type-label-number",
+      "mutation": "type-number",
+      "expectedAccepted": false,
+      "inputSha256": "47c43db201a78fc6cd5b195a88d00feb670dbdf6c4d88e7d1766368e3f6bbe1a",
+      "accepted": false,
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "typography_properties",
+            0,
+            "type"
+          ],
+          "message": "Expected string, received number"
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "invented-type-label",
+      "mutation": "type-label",
+      "expectedAccepted": true,
+      "inputSha256": "a366753ef1730c522f87d781b4a7ec2030dd051b677ec8ceeeac26925337472b",
+      "accepted": true,
+      "issues": [],
+      "expectationMet": true
+    },
+    {
+      "id": "design-document-data",
+      "mutation": "document",
+      "expectedAccepted": false,
+      "inputSha256": "8afccfab13ed98537bddc83d3dbbc5b9e4c32844d34f5212b307667c1c6e8e52",
+      "accepted": false,
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "undefined",
+          "path": [
+            "version"
+          ],
+          "message": "Required"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "array",
+          "received": "undefined",
+          "path": [
+            "units"
+          ],
+          "message": "Required"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "object",
+          "received": "undefined",
+          "path": [
+            "types"
+          ],
+          "message": "Required"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "array",
+          "received": "undefined",
+          "path": [
+            "sections"
+          ],
+          "message": "Required"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "array",
+          "received": "undefined",
+          "path": [
+            "typography_properties"
+          ],
+          "message": "Required"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "array",
+          "received": "undefined",
+          "path": [
+            "component_sub_tokens"
+          ],
+          "message": "Required"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "array",
+          "received": "undefined",
+          "path": [
+            "color_roles"
+          ],
+          "message": "Required"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "object",
+          "received": "undefined",
+          "path": [
+            "recommended_tokens"
+          ],
+          "message": "Required"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "object",
+          "received": "undefined",
+          "path": [
+            "examples"
+          ],
+          "message": "Required"
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "example-color-number",
+      "mutation": "example-color",
+      "expectedAccepted": false,
+      "inputSha256": "159549fd847b0e445013e424246e93a4ab613f2e890655bf40291865a5738178",
+      "accepted": false,
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "examples",
+            "colors",
+            "primary"
+          ],
+          "message": "Expected string, received number"
+        }
+      ],
+      "expectationMet": true
+    }
+  ]
+}

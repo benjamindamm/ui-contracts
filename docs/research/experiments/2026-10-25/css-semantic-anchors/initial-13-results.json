@@ -1,0 +1,3162 @@
+{
+  "scope": "Additional static CSS declaration-to-CEM/host-instance binding, not native anchor lookup/cascade/layout/a11y conformance",
+  "cssTree": "3.2.1",
+  "originalCemSchemaAccepted": true,
+  "originalCemSchemaSha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+  "newConditions": 13,
+  "nativeLookupExecuted": false,
+  "browserExecuted": false,
+  "atTested": false,
+  "cases": [
+    {
+      "id": "control",
+      "mutation": "none",
+      "expected": "bound",
+      "observed": "bound",
+      "issues": [],
+      "expectationMet": true,
+      "sourceSha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 308,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": [
+        {
+          "instance": "A",
+          "sourceSha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        },
+        {
+          "instance": "B",
+          "sourceSha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        }
+      ]
+    },
+    {
+      "id": "consistent-name-change",
+      "mutation": "rename",
+      "expected": "bound",
+      "observed": "bound",
+      "issues": [],
+      "expectationMet": true,
+      "sourceSha256": "10cd32f2e497605632a411611db99ff9c14a0169d66be670d71e78bf4fdcf327",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "10cd32f2e497605632a411611db99ff9c14a0169d66be670d71e78bf4fdcf327"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--research-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 136,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--research-a",
+            "important": false,
+            "location": {
+              "offset": 154,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 280,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 314,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 332,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": [
+        {
+          "instance": "A",
+          "sourceSha256": "10cd32f2e497605632a411611db99ff9c14a0169d66be670d71e78bf4fdcf327",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--research-a",
+            "important": false,
+            "location": {
+              "offset": 154,
+              "line": 4,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--research-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        },
+        {
+          "instance": "B",
+          "sourceSha256": "10cd32f2e497605632a411611db99ff9c14a0169d66be670d71e78bf4fdcf327",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 332,
+              "line": 6,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 280,
+              "line": 5,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        }
+      ]
+    },
+    {
+      "id": "foreign-instance-name",
+      "mutation": "foreign",
+      "expected": "foreign-anchor-part",
+      "observed": "foreign-anchor-part",
+      "issues": [
+        "foreign-anchor-part"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "b7c837a6e8fc4bc7c8cc6963491cfee5c7bc047ebc9ba7ebf7ce2a1955ee3aba",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "b7c837a6e8fc4bc7c8cc6963491cfee5c7bc047ebc9ba7ebf7ce2a1955ee3aba"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 308,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": [
+        {
+          "instance": "B",
+          "sourceSha256": "b7c837a6e8fc4bc7c8cc6963491cfee5c7bc047ebc9ba7ebf7ce2a1955ee3aba",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        }
+      ]
+    },
+    {
+      "id": "missing-name",
+      "mutation": "missing",
+      "expected": "missing-css-anchor",
+      "observed": "missing-css-anchor",
+      "issues": [
+        "missing-css-anchor"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "6207ba84f0332bb16e7e5e70bc493817a4961c6bf97b8d10d93edd44eb5d2f39",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "6207ba84f0332bb16e7e5e70bc493817a4961c6bf97b8d10d93edd44eb5d2f39"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--not-present",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 278,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 312,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 330,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": [
+        {
+          "instance": "B",
+          "sourceSha256": "6207ba84f0332bb16e7e5e70bc493817a4961c6bf97b8d10d93edd44eb5d2f39",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 330,
+              "line": 6,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 278,
+              "line": 5,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        }
+      ]
+    },
+    {
+      "id": "duplicate-name",
+      "mutation": "duplicate",
+      "expected": "nonunique-css-anchor",
+      "observed": "nonunique-css-anchor",
+      "issues": [
+        "nonunique-css-anchor",
+        "missing-css-anchor"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "f879851261da534cc0409bfc1211f2d5c326a5666cbcc773e1ace93f537decaa",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "f879851261da534cc0409bfc1211f2d5c326a5666cbcc773e1ace93f537decaa"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 308,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": []
+    },
+    {
+      "id": "wrong-component-part",
+      "mutation": "part",
+      "expected": "foreign-anchor-part",
+      "observed": "foreign-anchor-part",
+      "issues": [
+        "foreign-anchor-part"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "55776265045c99806249a53513cd051da23a0ae4c85a7826764ff3ca5fa1bea4",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "55776265045c99806249a53513cd051da23a0ae4c85a7826764ff3ca5fa1bea4"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [],
+        "rows": [
+          {
+            "selector": "#list-a",
+            "hostId": "list-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 98,
+              "line": 3,
+              "column": 10
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 132,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 150,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 273,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 307,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 325,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": [
+        {
+          "instance": "B",
+          "sourceSha256": "55776265045c99806249a53513cd051da23a0ae4c85a7826764ff3ca5fa1bea4",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 325,
+              "line": 6,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 273,
+              "line": 5,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        }
+      ]
+    },
+    {
+      "id": "stale-css-source",
+      "mutation": "revision",
+      "expected": "source-revision",
+      "observed": "source-revision",
+      "issues": [
+        "source-revision"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "d48a8444dd67171d17fe919cd04c784f315e84baedaa3d86c2aa8ce461c2d262",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 308,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": []
+    },
+    {
+      "id": "variable-anchor",
+      "mutation": "variable",
+      "expected": "unsupported-value",
+      "observed": "unsupported-value",
+      "issues": [
+        "unsupported-value"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "9cb5157f3b3ad2ee33ca0c106615b12ab0c316b56c84c808daa72b34a9da5374",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "9cb5157f3b3ad2ee33ca0c106615b12ab0c316b56c84c808daa72b34a9da5374"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [
+          "unsupported-value"
+        ],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "var(--target)",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 278,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 312,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 330,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": []
+    },
+    {
+      "id": "class-selector",
+      "mutation": "selector",
+      "expected": "unsupported-selector",
+      "observed": "unsupported-selector",
+      "issues": [
+        "unsupported-selector"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "2523e24d5ec58c7b3c93662166d459394434fef273f871337c3a7d40407ff2a7",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "2523e24d5ec58c7b3c93662166d459394434fef273f871337c3a7d40407ff2a7"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [
+          "unsupported-selector"
+        ],
+        "rows": [
+          {
+            "selector": ".input-a",
+            "hostId": null,
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 308,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": []
+    },
+    {
+      "id": "conditional-anchor",
+      "mutation": "nested",
+      "expected": "unsupported-nesting",
+      "observed": "unsupported-nesting",
+      "issues": [
+        "unsupported-nesting"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "dcb752a4b86c3191d3d66bca5f8782bee327aa02fde3f4128a79f4fbb3343e31",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "dcb752a4b86c3191d3d66bca5f8782bee327aa02fde3f4128a79f4fbb3343e31"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [
+          "unsupported-nesting"
+        ],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 122,
+              "line": 3,
+              "column": 34
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 157,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 175,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 298,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 332,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 350,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": []
+    },
+    {
+      "id": "explicit-anchor-scope",
+      "mutation": "scope",
+      "expected": "unsupported-scope",
+      "observed": "unsupported-scope",
+      "issues": [
+        "unsupported-selector",
+        "unsupported-scope"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "dcdc92074cfdc307792dcc27f0977c2606d519790f9c1bb373dd3581981f5932",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "dcdc92074cfdc307792dcc27f0977c2606d519790f9c1bb373dd3581981f5932"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [
+          "unsupported-selector",
+          "unsupported-scope"
+        ],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 308,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          },
+          {
+            "selector": "section",
+            "hostId": null,
+            "property": "anchor-scope",
+            "value": "all",
+            "important": false,
+            "location": {
+              "offset": 448,
+              "line": 7,
+              "column": 10
+            }
+          }
+        ]
+      },
+      "witnesses": []
+    },
+    {
+      "id": "implicit-keyword",
+      "mutation": "keyword",
+      "expected": "unsupported-value",
+      "observed": "unsupported-value",
+      "issues": [
+        "unsupported-value"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "ea6d3dc5ca5fa4f2ae24c092040319eb36659fa8cc04e1a932e9b1b62e7561c6",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "ea6d3dc5ca5fa4f2ae24c092040319eb36659fa8cc04e1a932e9b1b62e7561c6"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [
+          "unsupported-value"
+        ],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "auto",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 269,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 303,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 321,
+              "line": 6,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "witnesses": []
+    },
+    {
+      "id": "later-position-reset",
+      "mutation": "reset",
+      "expected": "unsupported-reset",
+      "observed": "unsupported-reset",
+      "issues": [
+        "unsupported-reset"
+      ],
+      "expectationMet": true,
+      "sourceSha256": "da838e034d16389c504d22c50e9cd5a432c27e6406a52051ccd7dec99d9e22f7",
+      "profile": {
+        "status": "Additional static CSS anchor-to-original-CEM/host binding; not native CSS lookup or an accessibility relation",
+        "version": "css-semantic-anchors-1",
+        "artifacts": {
+          "interface": {
+            "file": "interface.json",
+            "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+          },
+          "behavior": {
+            "file": "behavior.scxml",
+            "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+          },
+          "visual": {
+            "file": "visual.css",
+            "sha256": "da838e034d16389c504d22c50e9cd5a432c27e6406a52051ccd7dec99d9e22f7"
+          },
+          "accessibility": {
+            "file": "accessibility.html",
+            "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+          }
+        },
+        "definitions": {
+          "autocomplete": {
+            "component": {
+              "artifact": "interface",
+              "kind": "cem.custom-element-class",
+              "locator": {
+                "pointer": "/modules/0/declarations/0"
+              }
+            },
+            "parts": {
+              "input": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/0"
+                }
+              },
+              "popup": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/1"
+                }
+              },
+              "list": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/2"
+                }
+              },
+              "option": {
+                "artifact": "interface",
+                "kind": "cem.css-part",
+                "locator": {
+                  "pointer": "/modules/0/declarations/0/cssParts/3"
+                }
+              }
+            },
+            "machine": {
+              "artifact": "behavior",
+              "kind": "scxml.machine",
+              "locator": {
+                "xpath": "."
+              }
+            },
+            "states": {
+              "open": {
+                "artifact": "behavior",
+                "kind": "scxml.state",
+                "locator": {
+                  "xpath": "./s:state[@id=\"open\"]"
+                }
+              }
+            }
+          }
+        },
+        "instances": {
+          "A": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-a",
+              "popup": "popup-a",
+              "list": "list-a",
+              "option": "option-a-0"
+            }
+          },
+          "B": {
+            "uses": "autocomplete",
+            "snapshotState": "open",
+            "host": {
+              "input": "input-b",
+              "popup": "popup-b",
+              "list": "list-b",
+              "option": "option-b-0"
+            }
+          }
+        },
+        "stateProjection": {
+          "open": {
+            "expanded": true
+          }
+        },
+        "requiredPartNames": {
+          "input": "input",
+          "popup": "popup",
+          "list": "list",
+          "option": "option"
+        },
+        "requiredHostRoles": {
+          "input": "combobox",
+          "list": "listbox",
+          "option": "option"
+        },
+        "visualBindings": {
+          "A": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-a",
+            "popupSelector": "#popup-a"
+          },
+          "B": {
+            "definition": "autocomplete",
+            "inputPart": "input",
+            "popupPart": "popup",
+            "inputSelector": "#input-b",
+            "popupSelector": "#popup-b"
+          }
+        }
+      },
+      "cssObservation": {
+        "issues": [
+          "unsupported-reset"
+        ],
+        "rows": [
+          {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 133,
+              "line": 4,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 308,
+              "line": 6,
+              "column": 11
+            }
+          },
+          {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          },
+          {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position",
+            "value": "absolute",
+            "important": false,
+            "location": {
+              "offset": 449,
+              "line": 7,
+              "column": 11
+            }
+          }
+        ]
+      },
+      "witnesses": []
+    }
+  ]
+}

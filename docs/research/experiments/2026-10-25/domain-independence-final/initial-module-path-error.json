@@ -1,0 +1,5 @@
+{
+  "stage": "own harness preflight before any original case execution",
+  "error": "createRequire based at zag-ark tool resolved sibling research modules relative to tool; MODULE_NOT_FOUND compile.js",
+  "correction": "absolute paths resolved from experiment directory; unchanged original code"
+}

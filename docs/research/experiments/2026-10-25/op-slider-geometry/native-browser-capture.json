@@ -1,0 +1,50 @@
+{
+  "cases": [
+    {
+      "id": "quarter",
+      "result": {
+        "page": 286,
+        "value": {
+          "center": 54,
+          "display": "block",
+          "left": "54px",
+          "sourceFormula": "calc(25% + 4px)",
+          "thumbWidth": 16,
+          "value": "25",
+          "width": 200
+        }
+      }
+    },
+    {
+      "id": "three-quarters",
+      "result": {
+        "page": 286,
+        "value": {
+          "center": 146,
+          "display": "block",
+          "left": "146px",
+          "sourceFormula": "calc(75% - 4px)",
+          "thumbWidth": 16,
+          "value": "75",
+          "width": 200
+        }
+      }
+    },
+    {
+      "id": "quarter-wider-root",
+      "result": {
+        "page": 286,
+        "value": {
+          "center": 79,
+          "display": "block",
+          "left": "79px",
+          "sourceFormula": "calc(25% + 4px)",
+          "thumbWidth": 16,
+          "value": "25",
+          "width": 300
+        }
+      }
+    }
+  ],
+  "pageId": 286
+}

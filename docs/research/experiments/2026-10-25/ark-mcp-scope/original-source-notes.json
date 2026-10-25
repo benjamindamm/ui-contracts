@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/package.json",
+    "readCodeSha256": "f53673f154100d84b5a8b1d5beb2b3b0b5a323921c4673e77096cc4bf3194cb8",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/http.ts",
+    "readCodeSha256": "ed4cd3a7a3d8223a4bf27dc9e574b43c7cb364dce78e93c8477c2d75acc3947d",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/tools/index.ts",
+    "readCodeSha256": "c1b1335a197c0a863456564c1364d69654f8fa026f05e0fc4a3b3d820ca2405a",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/server.ts",
+    "readCodeSha256": "3e699127085256c9df7d3c8f32a60af1d7a78d2c49d9749dd1438e21923ba233",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/tools/get-component-props.ts",
+    "readCodeSha256": "73a49f6dd0f5a173fd81938c1cf596fa58386f9816ecf4493f2f35843dd4cc36",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/tools/list-components.ts",
+    "readCodeSha256": "a0df6a2194dddcde9f4caf6ec0e52df6b370f116d521d9ff308d59e26fe454aa",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/tools/get-example.ts",
+    "readCodeSha256": "b8b6650b97791256035691b99271dec3ef88a70256b34e493949c586303cbb15",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/lib/types.ts",
+    "readCodeSha256": "c81376782bf6a7bdb4df57d0b7a998300874498bc2975f8b828ec752bb87d94e",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/tools/get-docs.ts",
+    "readCodeSha256": "b53751566a0a4146ef925a66a6ddc4f051243712e88fdac3a562e51bb9779d4d",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/tools/list-examples.ts",
+    "readCodeSha256": "adb2689b6a9790630271a12c273bd77ae767fc57581b2ce65ee524197d21ad09",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/tools/search-docs.ts",
+    "readCodeSha256": "345524dfc2af792dbe36b73a3ad572c92cba5fa172840ceaf7891168b24bf1d2",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/tools/styling-guide.ts",
+    "readCodeSha256": "d6201cecf73c268358cbeb0d8e360651b8c936af98b8f32ea61602d45adc6cb4",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/src/app/api/types/[framework]/[component]/route.ts",
+    "readCodeSha256": "2d3fe821c1328f93260961ef48cb600033604c40782e7a8274a020af2287915c",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/src/app/api/types/[framework]/route.ts",
+    "readCodeSha256": "4e9421d1338ceed44073ea548ee9f24d78a5c071a1014449c67f0dcc3daaa407",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/velite.config.ts",
+    "readCodeSha256": "ed0a93b90f048de57323697595aa9fc8cfd1d75725e5db31461f220f8c1a0179",
+    "readScope": "Full source code, no MCP execution"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/src/lib/fetch.ts",
+    "readCodeSha256": "d6489156c6dd66bef01d6de54ea2b2fb18f0d27d0281877cfbb649504bc7aa6a",
+    "readScope": "Full source code, no MCP execution"
+  }
+]

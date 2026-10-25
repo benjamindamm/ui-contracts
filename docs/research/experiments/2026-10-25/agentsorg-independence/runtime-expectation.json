@@ -1,0 +1,11 @@
+{
+  "id": "original-scxml-two-open-instances",
+  "expected": {
+    "A": [
+      "open"
+    ],
+    "B": [
+      "open"
+    ]
+  }
+}

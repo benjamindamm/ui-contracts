@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-25",
+  "no_new_runtime_conditions_for_this_summary": true,
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "own_files": [
+    {
+      "file": "baseline-10.json",
+      "sha256": "e791af5ae86d29b08e2a4acf310c2405419263526002f7562d6983dec0f3e6de"
+    },
+    {
+      "file": "closed-8.json",
+      "sha256": "a68d0567b4f7978fdabfc104b6562996835a54a47d88d47c2abcefe1a7fb011a"
+    },
+    {
+      "file": "results.json",
+      "sha256": "73bc4bbc0f1a7f2c32828194b2e93a4c3390dc48924a73d55f0abbead1d2208b"
+    },
+    {
+      "file": "doc-row-match-error.json",
+      "sha256": "1e59328bb346de48d38066ea84deca0c194f50b0d2d1242d6db228951a682cf0"
+    }
+  ]
+}

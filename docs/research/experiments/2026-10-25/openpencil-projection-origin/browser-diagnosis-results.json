@@ -1,0 +1,71 @@
+{
+  "rule": "button-name",
+  "sourceResultsSha256": "8195a0142fababd99d39dfe2fe6e40349f50c3265aa81b2e4690556bdb440e48",
+  "sourceResultsFile": "initial-eight-success-results.json",
+  "axe": "4.14.0",
+  "cases": [
+    {
+      "id": "drawn-text",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [
+        {
+          "id": "button-name",
+          "nodes": [
+            {
+              "html": "<button data-layer=\"Repeated radio\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\">",
+              "target": [
+                "#drawn-text > main > button[data-layer=\"Repeated radio\"][role=\"radio\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "violations": [],
+      "expectationMet": true
+    },
+    {
+      "id": "node-name-only",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [],
+      "violations": [
+        {
+          "id": "button-name",
+          "nodes": [
+            {
+              "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "html": "<button data-layer=\"Only graph name\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"></button>",
+              "target": [
+                "button[data-layer=\"Only graph name\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "hidden-text",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [],
+      "violations": [
+        {
+          "id": "button-name",
+          "nodes": [
+            {
+              "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "html": "<button data-layer=\"Repeated radio\" style=\"border:none;padding:0;margin:0;background:none;font:inherit;color:inherit;text-align:inherit;cursor:pointer;width:100px;height:100px;position:absolute;left:0px;top:0px;\" type=\"button\" role=\"radio\" aria-checked=\"false\"></button>",
+              "target": [
+                "#hidden-text > main > button[data-layer=\"Repeated radio\"][role=\"radio\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "expectationMet": true
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

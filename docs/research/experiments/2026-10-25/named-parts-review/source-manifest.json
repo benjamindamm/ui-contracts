@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-25",
+  "source": "S99",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "d37279be54a1c8fea7bb5865ef2876b61d75ebc1a331821ce1d76e4003a4611b"
+    },
+    {
+      "file": "audit.json",
+      "sha256": "d97faf7521405ff339932bbe9ae0f3c91dbee9ba4832e8ec05c07b528a7c92ff"
+    }
+  ],
+  "reused_results": [
+    {
+      "file": "../typed-references/results.json",
+      "sha256": "8304aea450c1114535a8f724d43679f903c3f7b950833286cf5f5a5afac36130"
+    },
+    {
+      "file": "../css-semantic-anchors/results.json",
+      "sha256": "9bec5af766befaf65b71bbebb1fd3f977293812e7a78fc0685351bd3414adb10"
+    }
+  ],
+  "runtime_conditions_added": 0,
+  "groups_added": 0,
+  "criterion_changed": false,
+  "new_schema_or_product_language": false
+}

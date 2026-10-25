@@ -1,0 +1,85 @@
+{
+  "scope": "Same5 conditions: original CEM schema plus exact original rendered names/aria-checked/instance contexts; no additional counted cases",
+  "cases": [
+    {
+      "control": [
+        {
+          "role": "switch",
+          "path": "Instance A",
+          "checked": "false",
+          "name": "Choice A"
+        },
+        {
+          "role": "switch",
+          "path": "Instance B",
+          "checked": "false",
+          "name": "Choice B"
+        }
+      ]
+    },
+    {
+      "visual-revision": [
+        {
+          "role": "switch",
+          "path": "Instance A",
+          "checked": "false",
+          "name": "Choice A"
+        },
+        {
+          "role": "switch",
+          "path": "Instance B",
+          "checked": "false",
+          "name": "Choice B"
+        }
+      ]
+    },
+    {
+      "accessibility-revision": [
+        {
+          "role": "switch",
+          "path": "Instance A",
+          "checked": "false",
+          "name": "Changed A"
+        },
+        {
+          "role": "switch",
+          "path": "Instance B",
+          "checked": "false",
+          "name": "Choice B"
+        }
+      ]
+    },
+    {
+      "interface-default-revision": [
+        {
+          "role": "switch",
+          "path": "Instance A",
+          "checked": "true",
+          "name": "Choice A"
+        },
+        {
+          "role": "switch",
+          "path": "Instance B",
+          "checked": "true",
+          "name": "Choice B"
+        }
+      ]
+    },
+    {
+      "behavior-role-conflict": [
+        {
+          "role": "radio",
+          "path": "Instance A",
+          "checked": "false",
+          "name": "Choice A"
+        },
+        {
+          "role": "radio",
+          "path": "Instance B",
+          "checked": "false",
+          "name": "Choice B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "file": "packages/cli/src/linter/lint.ts",
+    "same_utf8_capture": true
+  },
+  {
+    "file": "packages/cli/src/linter/parser/spec.ts",
+    "same_utf8_capture": true
+  }
+]

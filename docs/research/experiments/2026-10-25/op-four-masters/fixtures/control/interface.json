@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "research-switch.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "ResearchSwitch",
+          "members": [
+            {
+              "kind": "field",
+              "name": "Selected",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            }
+          ],
+          "cssParts": [
+            {
+              "name": "root"
+            },
+            {
+              "name": "label"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

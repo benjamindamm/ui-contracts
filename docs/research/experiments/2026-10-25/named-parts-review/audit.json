@@ -1,0 +1,226 @@
+{
+  "date": "2026-10-25",
+  "criterion": "I03",
+  "criterion_file_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "method_file_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "criterion_changed": false,
+  "runtime_conditions_added": 0,
+  "groups_added": 0,
+  "evidence_reused": [
+    {
+      "group": "P36",
+      "file": "../typed-references/results.json",
+      "sha256": "8304aea450c1114535a8f724d43679f903c3f7b950833286cf5f5a5afac36130",
+      "positive_cases": [
+        "control",
+        "duplicate-name-explicit-address"
+      ],
+      "negative_cases": [
+        "part-from-other-component",
+        "part-addresses-behavior",
+        "missing-part-pointer",
+        "list-part-used-as-input",
+        "existing-other-instance-list",
+        "wrong-target-host-role"
+      ],
+      "witness": [
+        {
+          "definition": "autocomplete",
+          "component": {
+            "artifact": "interface",
+            "kind": "cem.custom-element-class",
+            "locator": {
+              "pointer": "/modules/0/declarations/0"
+            }
+          },
+          "componentName": "Autocomplete",
+          "machine": {
+            "artifact": "behavior",
+            "kind": "scxml.machine",
+            "locator": {
+              "xpath": "."
+            }
+          },
+          "machineName": "Autocomplete",
+          "parts": {
+            "input": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/0"
+              }
+            },
+            "popup": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/1"
+              }
+            },
+            "list": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/2"
+              }
+            },
+            "option": {
+              "artifact": "interface",
+              "kind": "cem.css-part",
+              "locator": {
+                "pointer": "/modules/0/declarations/0/cssParts/3"
+              }
+            }
+          },
+          "states": {
+            "open": {
+              "artifact": "behavior",
+              "kind": "scxml.state",
+              "locator": {
+                "xpath": "./s:state[@id=\"open\"]"
+              }
+            }
+          }
+        },
+        {
+          "instance": "A",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        },
+        {
+          "instance": "B",
+          "definition": "autocomplete",
+          "resolvedState": {
+            "artifact": "behavior",
+            "kind": "scxml.state",
+            "locator": {
+              "xpath": "./s:state[@id=\"open\"]"
+            }
+          },
+          "hostParts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "relation": "input.controls -> own list; active descendant -> own option; explicit open-state projection"
+        }
+      ]
+    },
+    {
+      "group": "P46",
+      "file": "../css-semantic-anchors/results.json",
+      "sha256": "9bec5af766befaf65b71bbebb1fd3f977293812e7a78fc0685351bd3414adb10",
+      "positive_cases": [
+        "control",
+        "consistent-name-change"
+      ],
+      "negative_cases": [
+        "foreign-instance-name",
+        "wrong-component-part",
+        "missing-name"
+      ],
+      "witness": [
+        {
+          "instance": "A",
+          "sourceSha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-a",
+            "hostId": "popup-a",
+            "property": "position-anchor",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 151,
+              "line": 4,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-a",
+            "hostId": "input-a",
+            "property": "anchor-name",
+            "value": "--input-a",
+            "important": false,
+            "location": {
+              "offset": 99,
+              "line": 3,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        },
+        {
+          "instance": "B",
+          "sourceSha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "componentPointer": "/modules/0/declarations/0",
+          "inputPartPointer": "/modules/0/declarations/0/cssParts/0",
+          "popupPartPointer": "/modules/0/declarations/0/cssParts/1",
+          "reference": {
+            "selector": "#popup-b",
+            "hostId": "popup-b",
+            "property": "position-anchor",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 326,
+              "line": 6,
+              "column": 29
+            }
+          },
+          "target": {
+            "selector": "#input-b",
+            "hostId": "input-b",
+            "property": "anchor-name",
+            "value": "--input-b",
+            "important": false,
+            "location": {
+              "offset": 274,
+              "line": 5,
+              "column": 11
+            }
+          },
+          "nativeLookupExecuted": false
+        }
+      ]
+    }
+  ],
+  "candidate_assessments": [
+    {
+      "candidate": "CSS Layout",
+      "coverage": "A",
+      "subject": "two named external CEM parts bound through actual CSS anchor declaration/selector mechanism to own host instance",
+      "own_native_anatomy_claimed": false,
+      "additional_binding_required": true
+    },
+    {
+      "candidate": "WAI-ARIA",
+      "coverage": "A",
+      "subject": "four named external CEM parts bound to the roles/relations of own ARIA host instance",
+      "own_native_anatomy_claimed": false,
+      "additional_binding_required": true
+    }
+  ],
+  "not_concluded": [
+    "all other foreign-domain criteria",
+    "complete four-domain integration",
+    "native CSS anchor selection",
+    "live accessibility or assistive-technology conformance"
+  ]
+}

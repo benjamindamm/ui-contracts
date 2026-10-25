@@ -1,0 +1,38 @@
+[
+  {
+    "id": "missing-reference-used",
+    "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.missing}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.primary}\"\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": true
+    },
+    "criterion": "Missing reference consumed by component is collected as unresolvedRef"
+  },
+  {
+    "id": "reference-cycle-used",
+    "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.secondary}\"\n  secondary: \"{colors.primary}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.primary}\"\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": true
+    },
+    "criterion": "Cycle consumed by component cannot resolve"
+  },
+  {
+    "id": "valid-alias-used",
+    "content": "---\nname: Probe\ncolors:\n  primary: \"#000\"\n  secondary: \"{colors.primary}\"\ncomponents:\n  button:\n    backgroundColor: \"{colors.secondary}\"\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": false
+    },
+    "criterion": "Valid typed reference control"
+  },
+  {
+    "id": "invalid-spacing-used",
+    "content": "---\nname: Probe\ncolors:\n  primary: \"#000\"\nspacing:\n  md: 16bananas\ncomponents:\n  button:\n    padding: \"{spacing.md}\"\n---\n# Probe\n",
+    "expected": {
+      "returned": true,
+      "hasError": false
+    },
+    "criterion": "Raw spacing resolved into component is not dimensional schema validation"
+  }
+]

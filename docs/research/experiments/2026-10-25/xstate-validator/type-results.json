@@ -1,0 +1,45 @@
+{
+  "typescript": "5.9.3",
+  "method": "Original XState SDK declarations with TypeScript strict/noEmit/skipLibCheck; no serialized JSON artifact schema validation",
+  "cases": [
+    {
+      "id": "sdk-valid-types",
+      "file": "valid-sdk.ts",
+      "expectedDiagnostics": 0,
+      "diagnostics": [],
+      "expectationMet": true
+    },
+    {
+      "id": "sdk-wrong-context-type",
+      "file": "invalid-context-sdk.ts",
+      "expectedCodes": [
+        2322
+      ],
+      "diagnostics": [
+        {
+          "code": 2322,
+          "file": "invalid-context-sdk.ts",
+          "line": 2,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "id": "sdk-wrong-event-payload",
+      "file": "invalid-event-sdk.ts",
+      "expectedCodes": [
+        2322
+      ],
+      "diagnostics": [
+        {
+          "code": 2322,
+          "file": "invalid-event-sdk.ts",
+          "line": 3,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ],
+      "expectationMet": true
+    }
+  ]
+}

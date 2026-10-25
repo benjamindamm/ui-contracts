@@ -1,0 +1,18 @@
+[
+  {
+    "id": "original-export-192-native",
+    "value": 192,
+    "expectedHeights": [
+      192,
+      192
+    ]
+  },
+  {
+    "id": "independent-visual-revision-160-native",
+    "value": 160,
+    "expectedHeights": [
+      160,
+      160
+    ]
+  }
+]

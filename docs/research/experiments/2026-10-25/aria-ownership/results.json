@@ -1,0 +1,371 @@
+{
+  "scope": "Additional explicit ARIA-name research ownership policy; source/host staged in memory, role labels not authenticated; no universal standard feature",
+  "cases": [
+    {
+      "id": "accepted-source-change",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-a",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": []
+      },
+      "expectedErrors": [],
+      "observed": {
+        "errors": [],
+        "accepted": true,
+        "journal": [
+          {
+            "information": "resultListAccessibleName/A",
+            "actorLabel": "synthetic-a11y-agent",
+            "declaredRole": "accessibility-author",
+            "source": {
+              "domain": "accessibility",
+              "file": "accessibility.html",
+              "targetId": "list-a",
+              "attribute": "aria-label",
+              "role": "listbox"
+            },
+            "target": {
+              "file": "host.html",
+              "targetId": "list-a",
+              "attribute": "aria-label"
+            },
+            "sourceBefore": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+            "sourceAfter": "3646a59abe9053c5d4fc929de1de99d004275ac2f6f22de1c3e46d7473bec2d2",
+            "hostBefore": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+            "hostAfter": "3646a59abe9053c5d4fc929de1de99d004275ac2f6f22de1c3e46d7473bec2d2",
+            "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+            "revisionBefore": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+            "revisionAfter": "99d485d840316a6b882303dd8281b1f1bc170d6a97e1ce6b89293ee8b20d528d",
+            "kind": "authored source and declared derived host copy"
+          }
+        ],
+        "revision": "99d485d840316a6b882303dd8281b1f1bc170d6a97e1ce6b89293ee8b20d528d",
+        "sourceHash": "3646a59abe9053c5d4fc929de1de99d004275ac2f6f22de1c3e46d7473bec2d2",
+        "hostHash": "3646a59abe9053c5d4fc929de1de99d004275ac2f6f22de1c3e46d7473bec2d2",
+        "rejectedPreservesSourceAndHost": false,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "host-only-edit",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-a",
+        "sourceLabel": "Ergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": []
+      },
+      "expectedErrors": [
+        "non-leading-edit"
+      ],
+      "observed": {
+        "errors": [
+          "non-leading-edit"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "stale-source",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "stale",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-a",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": []
+      },
+      "expectedErrors": [
+        "stale-source"
+      ],
+      "observed": {
+        "errors": [
+          "stale-source"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "stale-policy",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "stale",
+        "targetId": "list-a",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": []
+      },
+      "expectedErrors": [
+        "stale-policy"
+      ],
+      "observed": {
+        "errors": [
+          "stale-policy"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-owner",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "visual-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-a",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": []
+      },
+      "expectedErrors": [
+        "wrong-owner"
+      ],
+      "observed": {
+        "errors": [
+          "wrong-owner"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "foreign-instance",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-b",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": []
+      },
+      "expectedErrors": [
+        "foreign-instance"
+      ],
+      "observed": {
+        "errors": [
+          "foreign-instance"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "unrelated-edit",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-a",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": [
+          "visual.css"
+        ]
+      },
+      "expectedErrors": [
+        "unrelated-edit"
+      ],
+      "observed": {
+        "errors": [
+          "unrelated-edit"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "competing-label-reference",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-a",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": [],
+        "addLabelledby": "option-a-0"
+      },
+      "expectedErrors": [
+        "unsupported-name-precedence"
+      ],
+      "observed": {
+        "errors": [
+          "unsupported-name-precedence"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "mismatched-derived-label",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-a",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Andere Ergebnisse A",
+        "otherEdits": []
+      },
+      "expectedErrors": [
+        "derived-conflict"
+      ],
+      "observed": {
+        "errors": [
+          "derived-conflict"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "concurrent-leading-values",
+      "request": {
+        "actorLabel": "synthetic-a11y-agent",
+        "actorRole": "accessibility-author",
+        "beforeSourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "beforeHostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "policyHash": "8fd66803a892698ec7c95fb53b175cd8f79ab5329bbd7dedfabc208ef3218986",
+        "targetId": "list-a",
+        "sourceLabel": "Suchergebnisse A",
+        "hostLabel": "Suchergebnisse A",
+        "otherEdits": [],
+        "competingSourceLabel": "Weitere Ergebnisse A"
+      },
+      "expectedErrors": [
+        "source-conflict"
+      ],
+      "observed": {
+        "errors": [
+          "source-conflict"
+        ],
+        "accepted": false,
+        "journal": [],
+        "revision": "61a9baf3e68cf5cfb0900de97f023b8d4da20d8c867ff9e6d430f5de98fb6ab2",
+        "sourceHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "hostHash": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "rejectedPreservesSourceAndHost": true,
+        "otherDomainHashes": {
+          "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual.css": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        }
+      },
+      "expectationMet": true
+    }
+  ]
+}

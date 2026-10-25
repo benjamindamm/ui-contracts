@@ -1,0 +1,204 @@
+{
+  "tool": "css-tree",
+  "version": "3.2.1",
+  "npm_manifest": "https://registry.npmjs.org/css-tree/3.2.1",
+  "mdn_data": "2.27.1",
+  "node": "v24.22.1",
+  "css_grammar_modified": false,
+  "dom_context_available": false,
+  "rendered": false,
+  "scope": "Original installed property dictionaries and lexer; no assertion of complete W3C draft-version equivalence",
+  "cases": [
+    {
+      "id": "cssg-01-anchor-name",
+      "property": "anchor-name",
+      "value": "--input",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "none | <dashed-ident>#",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-02-anchor-scope",
+      "property": "anchor-scope",
+      "value": "--input",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "none | all | <dashed-ident>#",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-03-position-anchor",
+      "property": "position-anchor",
+      "value": "--input",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "auto | none | <anchor-name>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-04-relative-inset",
+      "property": "top",
+      "value": "calc(anchor(bottom) + 8px)",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "auto | <length-percentage> | <anchor()> | <anchor-size()>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-05-anchor-width",
+      "property": "width",
+      "value": "anchor-size(width)",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content( <length-percentage [0,∞]> ) | <calc-size()> | <anchor-size()> | stretch | <-non-standard-size>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-06-height-control",
+      "property": "max-height",
+      "value": "160px",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content( <length-percentage [0,∞]> ) | <calc-size()> | <anchor-size()> | stretch | <-non-standard-size>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-07-bad-length",
+      "property": "max-height",
+      "value": "160bananas",
+      "expected": "mismatch",
+      "status": "mismatch",
+      "error": {
+        "name": "SyntaxMatchError",
+        "message": "Mismatch\n  syntax: none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content( <length-percentage [0,∞]> ) | <calc-size()> | <anchor-size()> | stretch | <-non-standard-size>\n   value: 160bananas\n  --------^"
+      },
+      "grammar": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content( <length-percentage [0,∞]> ) | <calc-size()> | <anchor-size()> | stretch | <-non-standard-size>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-08-scroll-control",
+      "property": "overflow-y",
+      "value": "auto",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "visible | hidden | clip | scroll | auto | <-non-standard-overflow>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-09-bad-overflow",
+      "property": "overflow-y",
+      "value": "banana",
+      "expected": "mismatch",
+      "status": "mismatch",
+      "error": {
+        "name": "SyntaxMatchError",
+        "message": "Mismatch\n  syntax: visible | hidden | clip | scroll | auto | <-non-standard-overflow>\n   value: banana\n  --------^"
+      },
+      "grammar": "visible | hidden | clip | scroll | auto | <-non-standard-overflow>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-10-bad-anchor-side",
+      "property": "top",
+      "value": "anchor(banana)",
+      "expected": "mismatch",
+      "status": "mismatch",
+      "error": {
+        "name": "SyntaxMatchError",
+        "message": "Mismatch\n  syntax: auto | <length-percentage> | <anchor()> | <anchor-size()>\n   value: anchor(banana)\n  ---------------^"
+      },
+      "grammar": "auto | <length-percentage> | <anchor()> | <anchor-size()>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-11-bad-anchor-name",
+      "property": "anchor-name",
+      "value": "banana",
+      "expected": "mismatch",
+      "status": "mismatch",
+      "error": {
+        "name": "SyntaxMatchError",
+        "message": "Mismatch\n  syntax: none | <dashed-ident>#\n   value: banana\n  --------^"
+      },
+      "grammar": "none | <dashed-ident>#",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-12-missing-anchor-syntactic",
+      "property": "position-anchor",
+      "value": "--missing",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "auto | none | <anchor-name>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-14-invalid-nested-anchor",
+      "property": "top",
+      "value": "calc(anchor(banana) + 8px)",
+      "expected": "mismatch",
+      "status": "match",
+      "error": null,
+      "grammar": "auto | <length-percentage> | <anchor()> | <anchor-size()>",
+      "expected_met": false
+    },
+    {
+      "id": "cssg-15-direct-anchor",
+      "property": "top",
+      "value": "anchor(bottom)",
+      "expected": "match",
+      "status": "match",
+      "error": null,
+      "grammar": "auto | <length-percentage> | <anchor()> | <anchor-size()>",
+      "expected_met": true
+    },
+    {
+      "id": "cssg-16-normal-keyword",
+      "property": "position-anchor",
+      "value": "normal",
+      "expected": "match",
+      "status": "mismatch",
+      "error": {
+        "name": "SyntaxMatchError",
+        "message": "Mismatch\n  syntax: auto | none | <anchor-name>\n   value: normal\n  --------^"
+      },
+      "grammar": "auto | none | <anchor-name>",
+      "expected_met": false
+    },
+    {
+      "id": "cssg-17-match-parent-keyword",
+      "property": "position-anchor",
+      "value": "match-parent",
+      "expected": "match",
+      "status": "mismatch",
+      "error": {
+        "name": "SyntaxMatchError",
+        "message": "Mismatch\n  syntax: auto | none | <anchor-name>\n   value: match-parent\n  --------^"
+      },
+      "grammar": "auto | none | <anchor-name>",
+      "expected_met": false
+    },
+    {
+      "id": "cssg-13-variable-value",
+      "property": "max-height",
+      "value": "var(--max-height)",
+      "expected": "record",
+      "status": "mismatch",
+      "error": {
+        "name": "Error",
+        "message": "Matching for a tree with var() is not supported"
+      },
+      "grammar": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content( <length-percentage [0,∞]> ) | <calc-size()> | <anchor-size()> | stretch | <-non-standard-size>",
+      "expected_met": null
+    }
+  ]
+}

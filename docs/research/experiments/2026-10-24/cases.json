@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ux-01-valid",
+    "schema": "uxspec",
+    "input": "inputs/ux-01-valid.json",
+    "expected_valid": true,
+    "question": "Originalschema akzeptiert isoliertes Behavior ohne Visual"
+  },
+  {
+    "id": "ux-02-missing-machine",
+    "schema": "uxspec",
+    "input": "inputs/ux-02-missing-machine.json",
+    "expected_valid": false,
+    "question": "Strukturelle Pflichtverletzung"
+  },
+  {
+    "id": "ux-03-bad-context-type",
+    "schema": "uxspec",
+    "input": "inputs/ux-03-bad-context-type.json",
+    "expected_valid": false,
+    "question": "Nicht erlaubter primitiver Typ"
+  },
+  {
+    "id": "ux-04-missing-target",
+    "schema": "uxspec",
+    "input": "inputs/ux-04-missing-target.json",
+    "expected_valid": true,
+    "question": "Existenz des referenzierten Zielzustands ist keine Schemaformpr\u00fcfung"
+  },
+  {
+    "id": "ux-05-unknown-operator",
+    "schema": "uxspec",
+    "input": "inputs/ux-05-unknown-operator.json",
+    "expected_valid": true,
+    "question": "Unbekannter Ausdrucksoperator strukturell erlaubt"
+  },
+  {
+    "id": "ux-06-wrong-default",
+    "schema": "uxspec",
+    "input": "inputs/ux-06-wrong-default.json",
+    "expected_valid": true,
+    "question": "Default wird nicht gegen den daneben genannten Feldtyp gepr\u00fcft"
+  },
+  {
+    "id": "ux-07-machine-invoke",
+    "schema": "uxspec",
+    "input": "inputs/ux-07-machine-invoke.json",
+    "expected_valid": false,
+    "question": "Originales machineInvoke-Objekt trifft beide oneOf-Zweige"
+  },
+  {
+    "id": "ux-08-incomplete-machine-invoke",
+    "schema": "uxspec",
+    "input": "inputs/ux-08-incomplete-machine-invoke.json",
+    "expected_valid": true,
+    "question": "Objekt ohne erforderliche machineInvoke-ID passiert allgemeinen Objektzweig"
+  },
+  {
+    "id": "ux-09-foreign-geometry",
+    "schema": "uxspec",
+    "input": "inputs/ux-09-foreign-geometry.json",
+    "expected_valid": true,
+    "question": "Freies Visual-Containerobjekt akzeptiert zus\u00e4tzliche Anker-/Overflowfelder ohne eigene Bedeutungspr\u00fcfung"
+  },
+  {
+    "id": "cem-01-valid",
+    "schema": "cem",
+    "input": "inputs/cem-01-valid.json",
+    "expected_valid": true,
+    "question": "Typtext einer \u00f6ffentlichen CustomEvent-Signatur ist darstellbar"
+  },
+  {
+    "id": "cem-02-missing-modules",
+    "schema": "cem",
+    "input": "inputs/cem-02-missing-modules.json",
+    "expected_valid": false,
+    "question": "Pflichtstruktur"
+  },
+  {
+    "id": "cem-03-invalid-event-name",
+    "schema": "cem",
+    "input": "inputs/cem-03-invalid-event-name.json",
+    "expected_valid": false,
+    "question": "Eventname muss String sein"
+  },
+  {
+    "id": "cem-04-unparseable-type",
+    "schema": "cem",
+    "input": "inputs/cem-04-unparseable-type.json",
+    "expected_valid": true,
+    "question": "Schema parst keinen TypeScript-Typtext"
+  },
+  {
+    "id": "cem-05-unresolved-type-reference",
+    "schema": "cem",
+    "input": "inputs/cem-05-unresolved-type-reference.json",
+    "expected_valid": true,
+    "question": "Referenzexistenz wird nicht durch Manifest-Shapepr\u00fcfung erzwungen"
+  },
+  {
+    "id": "cem-06-foreign-payload-key",
+    "schema": "cem",
+    "input": "inputs/cem-06-foreign-payload-key.json",
+    "expected_valid": true,
+    "question": "Zus\u00e4tzlicher eigener Payloadschl\u00fcssel ist kein Nachweis standardisierter Interpretation"
+  }
+]

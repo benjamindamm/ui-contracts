@@ -1,0 +1,186 @@
+{
+  "scope": "Actual original SCXML4.3.28 with native parent delivery, additional CEM/TypeScript-signature/DOM/CSS/ARIA mapping; native geometry/focus/synthetic keyboard and accessibility tree; no native CSS UX machine, ARIA scroll policy, production component, physical key or AT speech",
+  "criterion": "I01",
+  "cases": [
+    {
+      "additionalHostCode": true,
+      "criterion": "I01",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "BHeight": 160,
+        "height": 192,
+        "scrollHeight": 224
+      },
+      "id": "public-height-number",
+      "observed": {
+        "BHeight": 160,
+        "height": 192,
+        "scrollHeight": 224
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "I01",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "error": "public-property-type"
+      },
+      "id": "public-height-wrong-type",
+      "observed": {
+        "error": "public-property-type"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "I01",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "error": "geometry-unit"
+      },
+      "id": "public-height-wrong-unit",
+      "observed": {
+        "error": "geometry-unit"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "I01",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "error": "public-type-layout-binding"
+      },
+      "id": "public-property-metadata-conflict",
+      "observed": {
+        "error": "public-type-layout-binding"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    }
+  ]
+}

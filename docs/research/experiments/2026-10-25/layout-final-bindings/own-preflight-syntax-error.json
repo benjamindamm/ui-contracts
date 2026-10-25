@@ -1,0 +1,5 @@
+{
+  "stage": "own script parse, before any original case execution",
+  "error": "missing closing object brace in own UXSpec fixture declaration",
+  "correction": "closed own doc object, no original source changed"
+}

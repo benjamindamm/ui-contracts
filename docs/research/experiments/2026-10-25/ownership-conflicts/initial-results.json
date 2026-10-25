@@ -1,0 +1,442 @@
+{
+  "method": "Additional research policy; in-memory staging and provenance assertions, no filesystem/database atomic commit, no authenticated identity",
+  "cases": [
+    {
+      "id": "baseline-no-change",
+      "expectedRules": [],
+      "actualRules": [],
+      "expectationMet": true,
+      "accepted": true,
+      "rollbackPreservesAllBaselineBytes": false,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "ff6c7f91eb7aef3ae9d5451b2653e9f038b117753e8d0440b14e2f774b6da4cc"
+    },
+    {
+      "id": "leading-token-change",
+      "expectedRules": [],
+      "actualRules": [],
+      "expectationMet": true,
+      "accepted": true,
+      "rollbackPreservesAllBaselineBytes": false,
+      "ledger": [
+        {
+          "transaction": "leading-token-change",
+          "actorRole": "visual-author",
+          "actorLabel": "visual-agent",
+          "information": "popupMaxHeight",
+          "source": {
+            "artifact": "tokens.json",
+            "pointer": "/base/maxHeight/$value"
+          },
+          "changedArtifact": "tokens.json",
+          "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+          "afterSha256": "427902ff756de7c460a69f252c96f56d9b2420097e40e2a76c3c614b3a582b75",
+          "changeKind": "leading",
+          "derivedFrom": null,
+          "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+          "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+        },
+        {
+          "transaction": "leading-token-change",
+          "information": "popupMaxHeight",
+          "source": {
+            "artifact": "tokens.json",
+            "pointer": "/base/maxHeight/$value"
+          },
+          "changedArtifact": "generated-vars.css",
+          "beforeSha256": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589",
+          "afterSha256": "db697bd9842f903fc80e5c22b837fc9590540cb7b8ffbfe5579eac4cdb2ea72c",
+          "changeKind": "derived",
+          "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+          "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+        },
+        {
+          "transaction": "leading-token-change",
+          "information": "revision-pins",
+          "changedArtifact": "profile.json",
+          "changeKind": "derived-hash-refresh",
+          "beforeSha256": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+          "afterSha256": "714b139c56d14799183f72e627c6a3cb996e12ade6f88937ea56e52e3e604f2e",
+          "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+          "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+        }
+      ],
+      "resultHashes": {
+        "tokens.json": "427902ff756de7c460a69f252c96f56d9b2420097e40e2a76c3c614b3a582b75",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "714b139c56d14799183f72e627c6a3cb996e12ade6f88937ea56e52e3e604f2e",
+        "generated-vars.css": "db697bd9842f903fc80e5c22b837fc9590540cb7b8ffbfe5579eac4cdb2ea72c"
+      },
+      "newRevision": "08e38d6af6d37f8b6dc46983dfd8387445a5bd8a50f4c4a76dc825a48d985b23"
+    },
+    {
+      "id": "derived-css-direct-edit",
+      "expectedRules": [
+        "non-leading-target"
+      ],
+      "actualRules": [
+        "non-leading-target"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "concurrent-source-conflict",
+      "expectedRules": [
+        "concurrent-source-conflict"
+      ],
+      "actualRules": [
+        "concurrent-source-conflict"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "stale-base-revision",
+      "expectedRules": [
+        "stale-base"
+      ],
+      "actualRules": [
+        "stale-base"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "stale-source-revision",
+      "expectedRules": [
+        "stale-source"
+      ],
+      "actualRules": [
+        "stale-source"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "missing-change-origin",
+      "expectedRules": [
+        "missing-origin"
+      ],
+      "actualRules": [
+        "missing-origin"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "wrong-domain-actor",
+      "expectedRules": [
+        "wrong-role"
+      ],
+      "actualRules": [
+        "wrong-role"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "coordinated-public-name-change",
+      "expectedRules": [],
+      "actualRules": [],
+      "expectationMet": true,
+      "accepted": true,
+      "rollbackPreservesAllBaselineBytes": false,
+      "ledger": [
+        {
+          "transaction": "coordinated-public-name-change",
+          "actorRole": "interface-author",
+          "actorLabel": "interface-agent",
+          "information": "publicEventName",
+          "source": {
+            "artifact": "interface.json",
+            "pointer": "/modules/0/declarations/0/events/0/name"
+          },
+          "changedArtifact": "interface.json",
+          "beforeSha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "afterSha256": "57b2e06990225e84c830a6ba91b053eb7f9164f7d93cab85ae1db9dd3f28fb5e",
+          "changeKind": "leading",
+          "derivedFrom": null,
+          "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+          "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+        },
+        {
+          "transaction": "coordinated-public-name-change",
+          "actorRole": "interface-author",
+          "actorLabel": "interface-agent",
+          "information": "publicEventName",
+          "source": {
+            "artifact": "interface.json",
+            "pointer": "/modules/0/declarations/0/events/0/name"
+          },
+          "changedArtifact": "behavior.scxml",
+          "beforeSha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "afterSha256": "db33e51e13c89c0bc4aca7e43f6a4b035f6e0dee16b4ab9da3304635ceb31b4e",
+          "changeKind": "derived",
+          "derivedFrom": "publicEventName",
+          "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+          "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+        },
+        {
+          "transaction": "coordinated-public-name-change",
+          "actorRole": "interface-author",
+          "actorLabel": "interface-agent",
+          "information": "publicEventName",
+          "source": {
+            "artifact": "interface.json",
+            "pointer": "/modules/0/declarations/0/events/0/name"
+          },
+          "changedArtifact": "profile.json",
+          "beforeSha256": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+          "afterSha256": "29ee94e74491a91b472e45a5ce555eb125bb4335a5ce6519310f28a2d0e72c70",
+          "changeKind": "derived",
+          "derivedFrom": "publicEventName",
+          "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+          "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+        },
+        {
+          "transaction": "coordinated-public-name-change",
+          "information": "revision-pins",
+          "changedArtifact": "profile.json",
+          "changeKind": "derived-hash-refresh",
+          "beforeSha256": "29ee94e74491a91b472e45a5ce555eb125bb4335a5ce6519310f28a2d0e72c70",
+          "afterSha256": "92991556cdea82d28756b4f144623f50d6bc74babc0c31203a7e9f19f2dd5997",
+          "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+          "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+        }
+      ],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "57b2e06990225e84c830a6ba91b053eb7f9164f7d93cab85ae1db9dd3f28fb5e",
+        "behavior.scxml": "db33e51e13c89c0bc4aca7e43f6a4b035f6e0dee16b4ab9da3304635ceb31b4e",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "92991556cdea82d28756b4f144623f50d6bc74babc0c31203a7e9f19f2dd5997",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "73707998da0a90a9058bd9788a165c0274c1d5efe12c03f5569ece9d741c4f13"
+    },
+    {
+      "id": "unpropagated-public-name-change",
+      "expectedRules": [
+        "public-event-conflict"
+      ],
+      "actualRules": [
+        "public-event-conflict"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "behavior-unilateral-name-change",
+      "expectedRules": [
+        "non-leading-target"
+      ],
+      "actualRules": [
+        "non-leading-target"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "forged-derivation-without-leading-change",
+      "expectedRules": [
+        "missing-leading-change"
+      ],
+      "actualRules": [
+        "missing-leading-change"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "policy-revision-mismatch",
+      "expectedRules": [
+        "policy-revision"
+      ],
+      "actualRules": [
+        "policy-revision"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "undeclared-side-effect",
+      "expectedRules": [
+        "undeclared-edit"
+      ],
+      "actualRules": [
+        "undeclared-edit"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "id": "invalid-dimension-unit",
+      "expectedRules": [
+        "dimension-unit"
+      ],
+      "actualRules": [
+        "dimension-unit"
+      ],
+      "expectationMet": true,
+      "accepted": false,
+      "rollbackPreservesAllBaselineBytes": true,
+      "ledger": [],
+      "resultHashes": {
+        "tokens.json": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+        "interface.json": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+        "behavior.scxml": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+        "accessibility.html": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b",
+        "layout.css": "828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8",
+        "profile.json": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+        "generated-vars.css": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589"
+      },
+      "newRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    }
+  ]
+}

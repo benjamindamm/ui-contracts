@@ -1,0 +1,38 @@
+[
+  {
+    "file": "sources/compile.ts",
+    "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/compile.ts",
+    "sha256": "f5274688d0e3b749fde1b270db960a3c865af7d3e522f69d66778689d55fbab6",
+    "capture": "Full BrowserOS neo code block; not asserted byte-identical HTTP body"
+  },
+  {
+    "file": "sources/diagnostics.ts",
+    "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/diagnostics.ts",
+    "sha256": "43550af45feb0aa6994a37346a70d7370f5bd627f8318604674ba0c67d1b2c5c",
+    "capture": "Full BrowserOS neo code block; not asserted byte-identical HTTP body"
+  },
+  {
+    "file": "sources/import-resolver.ts",
+    "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/import-resolver.ts",
+    "sha256": "b6b3b46585c4b4a1c6995d6fe255111bb5725bb28efd2e3a812ba31e01c75378",
+    "capture": "Full BrowserOS neo code block; not asserted byte-identical HTTP body"
+  },
+  {
+    "file": "sources/bundler.ts",
+    "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/bundler.ts",
+    "sha256": "7f88f9d2bd336b0073f5ce2544a2efecb91b3b5896330bc88563d30eb7057503",
+    "capture": "Full BrowserOS neo code block; not asserted byte-identical HTTP body"
+  },
+  {
+    "file": "sources/state-paths.ts",
+    "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/state-paths.ts",
+    "sha256": "4cd31c06e5fd3306d52639f9bb2838c79b01e0c9ed49e7f1e1a0132cfc8ba24d",
+    "capture": "Full BrowserOS neo code block; not asserted byte-identical HTTP body"
+  },
+  {
+    "file": "sources/resolve.ts",
+    "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/resolve.ts",
+    "sha256": "aa264486803b32cca958600670dfad4f307bc66708ac168ea562e4e3c3d1025d",
+    "capture": "Full BrowserOS neo code block; not asserted byte-identical HTTP body"
+  }
+]

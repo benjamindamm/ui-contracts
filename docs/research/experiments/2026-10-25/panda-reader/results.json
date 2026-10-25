@@ -1,0 +1,523 @@
+{
+  "node": "v24.22.1",
+  "typescript": "5.9.3",
+  "sourceSha256": "7b82843edd25a4794fdc0f9ba279b577d9eb82283e35b5f6be652bf4044bef63",
+  "caseFileSha256": "b24d21ed8feaa29ae6a65f021babea2e66c7f927f749a295fd937d6b9d1b2087",
+  "method": "Expectations saved before execution; original full read module transpiled, type-only import removed by compiler; no stubs or additional validator",
+  "cases": [
+    {
+      "id": "parse-empty",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "conditions": {},
+        "themes": {},
+        "values": []
+      },
+      "expectedAccepted": true,
+      "criterion": "Valid empty document envelope",
+      "result": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {},
+          "paths": [],
+          "tokens": {},
+          "conditions": {},
+          "themes": {},
+          "values": []
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-populated",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.surface"
+        ],
+        "tokens": {
+          "colors.surface": {
+            "category": "colors"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.surface",
+            "value": "#fff"
+          }
+        ]
+      },
+      "expectedAccepted": true,
+      "criterion": "Conforming minimal color token",
+      "result": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {
+            "colors": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "colors.surface"
+          ],
+          "tokens": {
+            "colors.surface": {
+              "category": "colors"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "colors.surface",
+              "value": "#fff"
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-bad-json",
+      "input": "{",
+      "expectedAccepted": false,
+      "criterion": "JSON syntax",
+      "result": {
+        "ok": false,
+        "error": "Not valid JSON."
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-array",
+      "input": [],
+      "expectedAccepted": false,
+      "criterion": "Root must not be array",
+      "result": {
+        "ok": false,
+        "error": "Expected a design-system document object."
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-missing-table",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "conditions": {},
+        "themes": {}
+      },
+      "expectedAccepted": false,
+      "criterion": "Required table",
+      "result": {
+        "ok": false,
+        "error": "Expected a \"values\" table."
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-paths-object",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {},
+        "paths": {},
+        "tokens": {},
+        "conditions": {},
+        "themes": {},
+        "values": []
+      },
+      "expectedAccepted": false,
+      "criterion": "Paths array",
+      "result": {
+        "ok": false,
+        "error": "Expected \"paths\" to be an array."
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-values-object",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "conditions": {},
+        "themes": {},
+        "values": {}
+      },
+      "expectedAccepted": false,
+      "criterion": "Values array",
+      "result": {
+        "ok": false,
+        "error": "Expected \"values\" to be an array."
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-future-version",
+      "input": {
+        "schemaVersion": 2,
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "conditions": {},
+        "themes": {},
+        "values": []
+      },
+      "expectedAccepted": false,
+      "criterion": "Version upper bound",
+      "result": {
+        "ok": false,
+        "error": "Document is schemaVersion 2; this build reads 1. Upgrade @pandacss/compiler-shared."
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-string-version",
+      "input": {
+        "schemaVersion": "1",
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "conditions": {},
+        "themes": {},
+        "values": []
+      },
+      "expectedAccepted": false,
+      "criterion": "Version numeric",
+      "result": {
+        "ok": false,
+        "error": "Expected a numeric \"schemaVersion\"."
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-malformed-tables",
+      "input": {
+        "schemaVersion": 1,
+        "categories": 7,
+        "paths": [],
+        "tokens": false,
+        "conditions": {},
+        "themes": {},
+        "values": []
+      },
+      "expectedAccepted": true,
+      "criterion": "Shallow reader checks presence, not types",
+      "result": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": 7,
+          "paths": [],
+          "tokens": false,
+          "conditions": {},
+          "themes": {},
+          "values": []
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-null-row",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "conditions": {},
+        "themes": {},
+        "values": [
+          null
+        ]
+      },
+      "expectedAccepted": true,
+      "criterion": "Rows trusted",
+      "result": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {},
+          "paths": [],
+          "tokens": {},
+          "conditions": {},
+          "themes": {},
+          "values": [
+            null
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-negative-version",
+      "input": {
+        "schemaVersion": -1,
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "conditions": {},
+        "themes": {},
+        "values": []
+      },
+      "expectedAccepted": true,
+      "criterion": "No lower bound check in this reader",
+      "result": {
+        "ok": true,
+        "value": {
+          "schemaVersion": -1,
+          "categories": {},
+          "paths": [],
+          "tokens": {},
+          "conditions": {},
+          "themes": {},
+          "values": []
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-fraction-version",
+      "input": {
+        "schemaVersion": 0.5,
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "conditions": {},
+        "themes": {},
+        "values": []
+      },
+      "expectedAccepted": true,
+      "criterion": "No integer check in this reader",
+      "result": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 0.5,
+          "categories": {},
+          "paths": [],
+          "tokens": {},
+          "conditions": {},
+          "themes": {},
+          "values": []
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "parse-missing-metadata",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {},
+        "paths": [],
+        "tokens": {},
+        "values": []
+      },
+      "expectedAccepted": true,
+      "criterion": "Declared fields not checked by this reader",
+      "result": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {},
+          "paths": [],
+          "tokens": {},
+          "values": []
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "query-control",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.surface"
+        ],
+        "tokens": {
+          "colors.surface": {
+            "category": "colors"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.surface",
+            "value": "#fff"
+          }
+        ]
+      },
+      "method": "resolve",
+      "args": [
+        "colors.surface"
+      ],
+      "expectedValue": {
+        "token": "colors.surface",
+        "value": "#fff"
+      },
+      "expectedError": false,
+      "criterion": "Original index resolves valid base row",
+      "result": {
+        "ok": true,
+        "value": {
+          "token": "colors.surface",
+          "value": "#fff"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "query-duplicate",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.surface"
+        ],
+        "tokens": {
+          "colors.surface": {
+            "category": "colors"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.surface",
+            "value": "#fff"
+          },
+          {
+            "token": "colors.surface",
+            "value": "#000"
+          }
+        ]
+      },
+      "method": "resolve",
+      "args": [
+        "colors.surface"
+      ],
+      "expectedValue": {
+        "token": "colors.surface",
+        "value": "#fff"
+      },
+      "expectedError": false,
+      "criterion": "First matching duplicate wins; not a conflict validator",
+      "result": {
+        "ok": true,
+        "value": {
+          "token": "colors.surface",
+          "value": "#fff"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "query-missing-reference",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.surface"
+        ],
+        "tokens": {
+          "colors.surface": {
+            "category": "colors"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.surface",
+            "value": "var(--missing)",
+            "refs": [
+              "colors.missing"
+            ]
+          }
+        ]
+      },
+      "method": "referencesTo",
+      "args": [
+        "colors.missing"
+      ],
+      "expectedValue": [
+        "colors.surface"
+      ],
+      "expectedError": false,
+      "criterion": "Reverse edge exists without target validation",
+      "result": {
+        "ok": true,
+        "value": [
+          "colors.surface"
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "query-null-row",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.surface"
+        ],
+        "tokens": {
+          "colors.surface": {
+            "category": "colors"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          null
+        ]
+      },
+      "method": "valuesFor",
+      "args": [
+        "colors.surface"
+      ],
+      "expectedValue": null,
+      "expectedError": true,
+      "criterion": "Trusted malformed row reaches later index and throws",
+      "error": "Cannot read properties of null (reading 'token')",
+      "expectationMet": true
+    }
+  ]
+}

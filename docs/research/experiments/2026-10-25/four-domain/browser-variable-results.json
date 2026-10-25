@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "clientHeight": 160,
+      "expectationMet": true,
+      "fullyVisibleRows": 4,
+      "gapPx": 8,
+      "instance": "a",
+      "popupHeight": 160,
+      "rowHeights": [
+        24,
+        48,
+        36,
+        24,
+        60,
+        28,
+        40
+      ],
+      "scrollHeight": 260
+    },
+    {
+      "clientHeight": 160,
+      "expectationMet": true,
+      "fullyVisibleRows": 4,
+      "gapPx": 8,
+      "instance": "b",
+      "popupHeight": 160,
+      "rowHeights": [
+        24,
+        48,
+        36,
+        24,
+        60,
+        28,
+        40
+      ],
+      "scrollHeight": 260
+    }
+  ],
+  "expectations": {
+    "fullyVisibleRows": 4,
+    "gapPx": 8,
+    "heightsPx": [
+      24,
+      48,
+      36,
+      24,
+      60,
+      28,
+      40
+    ],
+    "instances": [
+      "a",
+      "b"
+    ],
+    "maxHeightPx": 160,
+    "scope": "Additional visual variant; five equal rows are not inferred for variable heights",
+    "scrollHeightPx": 260,
+    "tolerancePx": 1
+  },
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

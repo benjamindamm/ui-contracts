@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "filename": "https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js",
+      "line": 1,
+      "message": "Uncaught ReferenceError: regeneratorRuntime is not defined",
+      "stack": "ReferenceError: regeneratorRuntime is not defined\n    at Object.<anonymous> (https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:1:6489)\n    at 2.../constants (https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:1:28306)\n    at o (https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:1:685)\n    at https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:1:736\n    at 8.../compiler/scjson-to-module (https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:2:17502)\n    at o (https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:1:685)\n    at https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:1:736\n    at 10.../util (https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:2:18792)\n    at o (https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:1:685)\n    at https://unpkg.com/@scion-scxml/scxml@4.3.28/dist/scxml.min.js:1:736"
+    }
+  ],
+  "scxmlAvailable": false
+}

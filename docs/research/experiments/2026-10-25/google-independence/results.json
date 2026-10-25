@@ -1,0 +1,152 @@
+{
+  "package": "@google/design.md@0.4.0",
+  "scope": "Original public linter and parsed color output with additional separate HTML/CEM/SCXML binding; no document schema or generated component",
+  "cases": [
+    {
+      "id": "base",
+      "expected": {
+        "accepted": true,
+        "color": "#112233",
+        "otherDomainsByteIdentical": true,
+        "originalErrors": 0
+      },
+      "observed": {
+        "accepted": true,
+        "color": "#112233",
+        "otherDomainsByteIdentical": true,
+        "originalErrors": 0
+      },
+      "details": {
+        "originalPrimary": {
+          "type": "color",
+          "hex": "#112233",
+          "r": 17,
+          "g": 34,
+          "b": 51,
+          "luminance": 0.015022419420735887
+        },
+        "originalWarnings": 1,
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.scxml",
+          "visual": "DESIGN.md",
+          "accessibility": "accessibility.html"
+        },
+        "hashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual": "8ab07b8549f4e5b4085fc64a089e05f56594c137b147d9c77950756f0bc01c00",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "additionalBinding": {
+          "source": "DESIGN.md frontmatter colors.primary",
+          "originalConsumer": "lint().designSystem.colors.get(primary)",
+          "derivedTarget": "list-a/list-b color",
+          "meaning": "foreground color on named external HTML listbox targets",
+          "derivedCssSha256": "db7aa1bb9ad1fad9cec6b812b896dfc51245e249798daf9b7be5c66b71b632d4",
+          "nativeCssOrATTested": false
+        },
+        "originalDoesNotReadForeignFiles": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "color": "#445566",
+        "otherDomainsByteIdentical": true,
+        "originalErrors": 0
+      },
+      "observed": {
+        "accepted": true,
+        "color": "#445566",
+        "otherDomainsByteIdentical": true,
+        "originalErrors": 0
+      },
+      "details": {
+        "originalPrimary": {
+          "type": "color",
+          "hex": "#445566",
+          "r": 68,
+          "g": 85,
+          "b": 102,
+          "luminance": 0.08685251911317972
+        },
+        "originalWarnings": 1,
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.scxml",
+          "visual": "DESIGN.md",
+          "accessibility": "accessibility.html"
+        },
+        "hashes": {
+          "interface": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7",
+          "behavior": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a",
+          "visual": "e0d38f7713b738012afba116dc755a276bda120692d7c7d57f8ca49d52196331",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "additionalBinding": {
+          "source": "DESIGN.md frontmatter colors.primary",
+          "originalConsumer": "lint().designSystem.colors.get(primary)",
+          "derivedTarget": "list-a/list-b color",
+          "meaning": "foreground color on named external HTML listbox targets",
+          "derivedCssSha256": "4fcef205e140d167a23bbeb4bb73a5f4089b4955e4cc8ee17af835115738f698",
+          "nativeCssOrATTested": false
+        },
+        "originalDoesNotReadForeignFiles": true
+      },
+      "expectationMet": true
+    }
+  ]
+}

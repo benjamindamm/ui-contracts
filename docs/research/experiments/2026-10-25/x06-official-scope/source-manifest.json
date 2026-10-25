@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-25",
+  "kind": "finite original scope and source-role review; no new runtime conditions",
+  "original_sources": [
+    "https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#host_languages",
+    "https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#conformance_checkers",
+    "https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#typemapping",
+    "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/scripts/src/generate-type-docs.ts"
+  ],
+  "own_evidence_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "483fb5eb368206dd3bfbaecca6d3d25a66c23c0dd8eb47f947bba516ce6078c6"
+    },
+    {
+      "file": "aria-sections.json",
+      "sha256": "74e2f8e501923b77de28ffe2f680d8b654085d4f42f41d642f2857eea283f7a9"
+    },
+    {
+      "file": "ark-generator-notes.json",
+      "sha256": "8cc530cf2b6bb2b0ecc4056d25340cc15557347a824a46ea56476fc7b84d10ea"
+    },
+    {
+      "file": "ark-manifests.json",
+      "sha256": "d808d601697782aeb627e78d68d5f4783f397d9d2596c38f2ec1b116a7ae06e3"
+    }
+  ],
+  "runtime_conditions_added": 0,
+  "coverage_changes": [
+    {
+      "candidate": "WAI-ARIA",
+      "requirement": "X06",
+      "before": "U",
+      "after": "N",
+      "scope": "WAI-ARIA 1.2 Recommendation as own independent neutral artifact schema"
+    }
+  ]
+}

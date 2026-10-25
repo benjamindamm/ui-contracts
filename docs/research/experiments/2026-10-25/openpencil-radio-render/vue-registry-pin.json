@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@vue/compiler-dom": "3.5.41",
+    "@vue/compiler-sfc": "3.5.41",
+    "@vue/runtime-dom": "3.5.41",
+    "@vue/server-renderer": "3.5.41",
+    "@vue/shared": "3.5.41"
+  },
+  "dist": {
+    "attestations": {
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      },
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/vue@3.5.41"
+    },
+    "fileCount": 37,
+    "integrity": "sha512-2laE0p+aK+/AOPG/XL/WepOs/GlK755LJ1XECi9kDUrz1FKNw8rb2Xzlw9JS1rqEV55nb0ttsKxVlTCcd+R5cg==",
+    "shasum": "8864bddfe59ce128a28c9bad219cd9248916af73",
+    "signatures": [
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEUCIQCTNxqpiPS6Np89Z7Cr/idqoPp80lqAvPyPHdGcGLpmhgIgBziJ4AsUGrp/Xaa31/dsjMcPDmYrs3w1kdBkroD6e7E="
+      },
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEUCIQCnPM4dJjwB1RvRH5wDUIG/8TnYoNidJqf662V+KQaphQIgMtsI/7wbeQoDcdM7LksYNano3BYi4OtrPC3QNg/PWM0="
+      }
+    ],
+    "tarball": "https://registry.npmjs.org/vue/-/vue-3.5.41.tgz",
+    "unpackedSize": 2527322
+  },
+  "name": "vue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/core.git"
+  },
+  "version": "3.5.41"
+}

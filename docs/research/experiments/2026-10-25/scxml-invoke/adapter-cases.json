@@ -1,0 +1,56 @@
+[
+  {
+    "id": "adapter-invoke-start-a",
+    "expected": {
+      "childCountA": 1,
+      "parentStateA": "open",
+      "ownerA": "A",
+      "offsetA": 0
+    }
+  },
+  {
+    "id": "adapter-invoke-parameter-isolation",
+    "expected": {
+      "ownerA": "A",
+      "ownerB": "B",
+      "offsetA": 0,
+      "offsetB": 0
+    }
+  },
+  {
+    "id": "adapter-invoke-event-route-isolation",
+    "expected": {
+      "reportOwnerA": "A",
+      "reportOffsetA": 40,
+      "reportCountB": 0,
+      "offsetA": 40,
+      "offsetB": 0
+    }
+  },
+  {
+    "id": "adapter-invoke-close-cancels-child",
+    "expected": {
+      "parentStateA": "closed",
+      "oldChildFinalA": true,
+      "childFinalB": false
+    }
+  },
+  {
+    "id": "adapter-invoke-reopen-fresh-child",
+    "expected": {
+      "childCountA": 2,
+      "newChildObject": true,
+      "ownerA": "A",
+      "ownerB": "B",
+      "offsetA": 0,
+      "offsetB": 0
+    }
+  },
+  {
+    "id": "adapter-invoke-parent-cancel",
+    "expected": {
+      "parentFinalB": true,
+      "childFinalB": true
+    }
+  }
+]

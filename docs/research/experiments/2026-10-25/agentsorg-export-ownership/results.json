@@ -1,0 +1,276 @@
+{
+  "revision": "014a1864c641f8e9792ed76de93c95493489dd8c",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "pyyaml": "6.0.3",
+  "scope": "Complete original export_design.py and diff_design.py CLI on own schema-valid fixtures; no Figma sync, locked edit authorization or complete normative validator",
+  "cases": [
+    {
+      "id": "baseline-css",
+      "expected": {
+        "cssValue": "160px"
+      },
+      "observed": {
+        "originalSchemaValid": true,
+        "cssValue": "160px",
+        "aliasPreserved": true,
+        "normativeHeader": true
+      },
+      "calls": [
+        {
+          "args": [
+            "export_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/baseline-css/new.design",
+            "--only",
+            "css",
+            "--out-dir",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/baseline-css/out"
+          ],
+          "exit": 0,
+          "stdout": "wrote css              /Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/baseline-css/out/tokens.css\n",
+          "stderr": ""
+        }
+      ],
+      "originalSchemaErrors": [],
+      "sourceHash": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a",
+      "expectationMet": true
+    },
+    {
+      "id": "token-update-and-diff",
+      "expected": {
+        "cssValue": "192px",
+        "diffExit": 2,
+        "regression": true
+      },
+      "observed": {
+        "originalSchemaValid": true,
+        "cssValue": "192px",
+        "aliasPreserved": true,
+        "normativeHeader": true,
+        "diffExit": 2,
+        "regression": true
+      },
+      "calls": [
+        {
+          "args": [
+            "export_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/token-update-and-diff/new.design",
+            "--only",
+            "css",
+            "--out-dir",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/token-update-and-diff/out"
+          ],
+          "exit": 0,
+          "stdout": "wrote css              /Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/token-update-and-diff/out/tokens.css\n",
+          "stderr": ""
+        },
+        {
+          "args": [
+            "diff_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/token-update-and-diff/old.design",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/token-update-and-diff/new.design",
+            "--fail-on-regression"
+          ],
+          "exit": 2,
+          "stdout": "diff old.design -> new.design\n  tokens.spacing: modified 1\n    ~ spacing.popupHeight\n  regression: YES\n  note: regression without a version bump — SPEC §18 expects MAJOR/MINOR SemVer movement\n",
+          "stderr": ""
+        }
+      ],
+      "originalSchemaErrors": [],
+      "sourceHash": "9cd6f1469a4874de7fe30bd35f3d3d9a4ffde6f55d74c4e62c782aaaf5dbba67",
+      "expectationMet": true
+    },
+    {
+      "id": "default-theme-value",
+      "expected": {
+        "cssValue": "192px"
+      },
+      "observed": {
+        "originalSchemaValid": true,
+        "cssValue": "192px",
+        "aliasPreserved": true,
+        "normativeHeader": true
+      },
+      "calls": [
+        {
+          "args": [
+            "export_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/default-theme-value/new.design",
+            "--only",
+            "css",
+            "--out-dir",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/default-theme-value/out"
+          ],
+          "exit": 0,
+          "stdout": "wrote css              /Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/default-theme-value/out/tokens.css\n",
+          "stderr": ""
+        }
+      ],
+      "originalSchemaErrors": [],
+      "sourceHash": "d967de965349c7ee4440efbc5493914e05a839c7b1d95528364daf55e4f99565",
+      "expectationMet": true
+    },
+    {
+      "id": "regenerate-tampered-output",
+      "expected": {
+        "cssValue": "160px",
+        "sourceUnchanged": true,
+        "originalOutputRestored": true
+      },
+      "observed": {
+        "originalSchemaValid": true,
+        "cssValue": "160px",
+        "aliasPreserved": true,
+        "normativeHeader": true,
+        "sourceUnchanged": true,
+        "originalOutputRestored": true
+      },
+      "calls": [
+        {
+          "args": [
+            "export_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/regenerate-tampered-output/new.design",
+            "--only",
+            "css",
+            "--out-dir",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/regenerate-tampered-output/out"
+          ],
+          "exit": 0,
+          "stdout": "wrote css              /Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/regenerate-tampered-output/out/tokens.css\n",
+          "stderr": ""
+        },
+        {
+          "args": [
+            "export_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/regenerate-tampered-output/new.design",
+            "--only",
+            "css",
+            "--out-dir",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/regenerate-tampered-output/out"
+          ],
+          "exit": 0,
+          "stdout": "wrote css              /Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/regenerate-tampered-output/out/tokens.css\n",
+          "stderr": ""
+        }
+      ],
+      "originalSchemaErrors": [],
+      "sourceHash": "4568e543e7ef15892fb339bfde014d1aff80935184a03e3674e6287378ff1a4a",
+      "expectationMet": true
+    },
+    {
+      "id": "shadcn-mismatch",
+      "expected": {
+        "registryPrimary": "#000000",
+        "sourcePrimary": "#ffffff"
+      },
+      "observed": {
+        "originalSchemaValid": true,
+        "registryPrimary": "#000000",
+        "sourcePrimary": "#ffffff",
+        "declaredMapping": "tokens.color.primary"
+      },
+      "calls": [
+        {
+          "args": [
+            "export_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/shadcn-mismatch/new.design",
+            "--only",
+            "shadcn_registry",
+            "--out-dir",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/shadcn-mismatch/out"
+          ],
+          "exit": 0,
+          "stdout": "wrote shadcn_registry  /Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/shadcn-mismatch/out/theme.json\n",
+          "stderr": ""
+        }
+      ],
+      "originalSchemaErrors": [],
+      "sourceHash": "0354c7abbacc6136ab24872fa38ca5cf1e0d7abfbfdf7c0ad5dd4c618a47e3eb",
+      "expectationMet": true
+    },
+    {
+      "id": "locked-entry-removed",
+      "expected": {
+        "diffExit": 2,
+        "regression": true
+      },
+      "observed": {
+        "originalSchemaValid": true,
+        "diffExit": 2,
+        "regression": true
+      },
+      "calls": [
+        {
+          "args": [
+            "diff_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/locked-entry-removed/old.design",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/locked-entry-removed/new.design",
+            "--fail-on-regression"
+          ],
+          "exit": 2,
+          "stdout": "diff old.design -> new.design\n  tokens: no changes\n  locked: - tokens.spacing.popupHeight\n  regression: YES\n  note: regression without a version bump — SPEC §18 expects MAJOR/MINOR SemVer movement\n",
+          "stderr": ""
+        }
+      ],
+      "originalSchemaErrors": [],
+      "sourceHash": "0ff1459a96387b98f36cd554c22f5ef6eff76bfe5cd4f49582961025d697d8d8",
+      "expectationMet": true
+    },
+    {
+      "id": "informational-diff-default",
+      "expected": {
+        "diffExit": 0,
+        "regression": true
+      },
+      "observed": {
+        "originalSchemaValid": true,
+        "diffExit": 0,
+        "regression": true
+      },
+      "calls": [
+        {
+          "args": [
+            "diff_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/informational-diff-default/old.design",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/informational-diff-default/new.design"
+          ],
+          "exit": 0,
+          "stdout": "diff old.design -> new.design\n  tokens.spacing: modified 1\n    ~ spacing.popupHeight\n  regression: YES\n  note: regression without a version bump — SPEC §18 expects MAJOR/MINOR SemVer movement\n",
+          "stderr": ""
+        }
+      ],
+      "originalSchemaErrors": [],
+      "sourceHash": "9cd6f1469a4874de7fe30bd35f3d3d9a4ffde6f55d74c4e62c782aaaf5dbba67",
+      "expectationMet": true
+    },
+    {
+      "id": "version-bump-still-regression",
+      "expected": {
+        "diffExit": 2,
+        "regression": true,
+        "versionReported": true
+      },
+      "observed": {
+        "originalSchemaValid": true,
+        "diffExit": 2,
+        "regression": true,
+        "versionReported": true
+      },
+      "calls": [
+        {
+          "args": [
+            "diff_design.py",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/version-bump-still-regression/old.design",
+            "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/agentsorg-export-ownership/fixtures/version-bump-still-regression/new.design",
+            "--fail-on-regression"
+          ],
+          "exit": 2,
+          "stdout": "diff old.design -> new.design\n  tokens.spacing: modified 1\n    ~ spacing.popupHeight\n  version: 1.0.0 -> 1.1.0\n  regression: YES\n",
+          "stderr": ""
+        }
+      ],
+      "originalSchemaErrors": [],
+      "sourceHash": "6dc50999be4f0b2d8269e79fa4c916a6f1b41c3a64c5872f17838517be4b7e45",
+      "expectationMet": true
+    }
+  ]
+}

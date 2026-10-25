@@ -1,0 +1,82 @@
+{
+  "python": "3.12.14",
+  "lxml": "6.1.1.0",
+  "libxml": "2.14.6",
+  "schema_entry": "sources/scxml.xsd",
+  "schema_compiled": true,
+  "network_disabled": true,
+  "scxml_interpreter_executed": false,
+  "ui_rendered": false,
+  "cases": [
+    {
+      "id": "xsd-01-valid",
+      "input": "inputs/xsd-01-valid.scxml",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expectation_met": true,
+      "question": "Own comparison fixture against full original XSD include/import chain",
+      "errors": []
+    },
+    {
+      "id": "xsd-02-no-version",
+      "input": "inputs/xsd-02-no-version.scxml",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expectation_met": true,
+      "question": "required attribute",
+      "errors": [
+        {
+          "line": 1,
+          "column": 0,
+          "domain": "SCHEMASV",
+          "type": "SCHEMAV_CVC_COMPLEX_TYPE_4",
+          "message": "Element '{http://www.w3.org/2005/07/scxml}scxml': The attribute 'version' is required but missing."
+        }
+      ]
+    },
+    {
+      "id": "xsd-03-duplicate-state-id",
+      "input": "inputs/xsd-03-duplicate-state-id.scxml",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expectation_met": true,
+      "question": "duplicate XML ID",
+      "errors": [
+        {
+          "line": 1,
+          "column": 0,
+          "domain": "SCHEMASV",
+          "type": "SCHEMAV_CVC_DATATYPE_VALID_1_2_1",
+          "message": "Element '{http://www.w3.org/2005/07/scxml}state', attribute 'id': 'closed' is not a valid value of the atomic type 'xs:ID'."
+        }
+      ]
+    },
+    {
+      "id": "xsd-04-missing-target",
+      "input": "inputs/xsd-04-missing-target.scxml",
+      "expected_valid": false,
+      "actual_valid": true,
+      "expectation_met": false,
+      "question": "reference target existence expectation",
+      "errors": []
+    },
+    {
+      "id": "xsd-05-invalid-expression",
+      "input": "inputs/xsd-05-invalid-expression.scxml",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expectation_met": true,
+      "question": "XSD does not parse ECMAScript expressions",
+      "errors": []
+    },
+    {
+      "id": "xsd-06-static-send",
+      "input": "inputs/xsd-06-static-send.scxml",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expectation_met": true,
+      "question": "Static named event and parameter, separate from public signature",
+      "errors": []
+    }
+  ]
+}

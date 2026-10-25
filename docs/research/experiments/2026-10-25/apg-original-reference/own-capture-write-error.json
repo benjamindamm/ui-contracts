@@ -1,0 +1,6 @@
+{
+  "phase": "own capture persistence after fixture label repair",
+  "error": "apply_patch rejected delete/add of the same path in one patch; native result was not saved",
+  "originalClassFailure": false,
+  "response": "repeat existing eight scenarios after reload and persist via update patch; count no new conditions"
+}

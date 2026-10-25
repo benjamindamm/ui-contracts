@@ -1,0 +1,88 @@
+{
+  "package": "xstate@5.33.3",
+  "node": "v24.13.1",
+  "scope": "SDK behavior contribution with byte-identical CEM/CSS/HTML fixtures; additional own binding; no neutral XState schema, UI/AT or complete autocomplete contract",
+  "cases": [
+    {
+      "id": "separate-original-inputs",
+      "expected": "all four separate hashes, CEM declaration and actual SDK root/state map bind",
+      "observation": {
+        "domains": [
+          "interface",
+          "visual",
+          "accessibility",
+          "behavior"
+        ],
+        "machineId": "Autocomplete",
+        "behaviorForeignImports": false
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "actor-initial",
+      "expected": "separate actors both closed",
+      "observation": {
+        "A": "closed",
+        "B": "closed"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "open-A",
+      "expected": "A open; B closed",
+      "observation": {
+        "A": "open",
+        "B": "closed"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "open-B-close-A",
+      "expected": "A closed; B open",
+      "observation": {
+        "A": "closed",
+        "B": "open"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "visual-change-independent",
+      "expected": "only own CSS copy changed; SDK config and all other source hashes unchanged",
+      "observation": {
+        "onlyVisualHashChanged": true,
+        "initial": "closed"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "foreign-domain-alias",
+      "expected": "profile claiming visual file as behavior rejected before SDK",
+      "observation": {
+        "rejected": true,
+        "error": "domain-file-alias",
+        "checker": "additional own research binder"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "stale-behavior-hash",
+      "expected": "profile with stale behavior hash rejected",
+      "observation": {
+        "rejected": true,
+        "error": "stale-behavior",
+        "checker": "additional own research binder"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "foreign-instance-part",
+      "expected": "A popup redirected to B rejected",
+      "observation": {
+        "rejected": true,
+        "error": "instance-part-mismatch",
+        "checker": "additional own research binder"
+      },
+      "expectationMet": true
+    }
+  ]
+}

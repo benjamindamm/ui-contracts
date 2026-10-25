@@ -1,0 +1,67 @@
+{
+  "scope": "Actual original SCXML4.3.28 with native parent delivery, additional CEM/TypeScript-signature/DOM/CSS/ARIA mapping; native geometry/focus/synthetic keyboard and accessibility tree; no native CSS UX machine, ARIA scroll policy, production component, physical key or AT speech",
+  "criterion": "B01",
+  "cases": [
+    {
+      "additionalHostCode": true,
+      "criterion": "B01",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "BState": "closed",
+        "sequence": [
+          "closed:none",
+          "open:block",
+          "closed:none"
+        ]
+      },
+      "id": "states-to-css-display",
+      "observed": {
+        "BState": "closed",
+        "sequence": [
+          "closed:none",
+          "open:block",
+          "closed:none"
+        ]
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        }
+      ]
+    }
+  ]
+}

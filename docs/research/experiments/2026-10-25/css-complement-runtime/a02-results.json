@@ -1,0 +1,184 @@
+{
+  "scope": "Actual original SCXML4.3.28 with native parent delivery, additional CEM/TypeScript-signature/DOM/CSS/ARIA mapping; native geometry/focus/synthetic keyboard and accessibility tree; no native CSS UX machine, ARIA scroll policy, production component, physical key or AT speech",
+  "criterion": "A02",
+  "cases": [
+    {
+      "additionalHostCode": true,
+      "criterion": "A02",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "AState": "closed",
+        "active": null,
+        "expanded": "false",
+        "focus": "input-a"
+      },
+      "id": "pattern-escape-focus",
+      "observed": {
+        "AState": "closed",
+        "active": null,
+        "expanded": "false",
+        "focus": "input-a"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "A02",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "expanded": "false",
+        "focus": "input-a",
+        "value": "Alpha A 2"
+      },
+      "id": "pattern-commit-selection",
+      "observed": {
+        "expanded": "false",
+        "focus": "input-a",
+        "value": "Alpha A 2"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [
+        {
+          "detail": {
+            "query": "",
+            "value": "Alpha A 2"
+          },
+          "instance": "A",
+          "name": "value-change"
+        }
+      ],
+      "rawOriginalParentEvents": [
+        {
+          "data": {
+            "query": "",
+            "value": "Alpha A 2"
+          },
+          "invokeid": "A",
+          "name": "value-change",
+          "receiver": "A"
+        }
+      ],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        },
+        {
+          "instance": "A",
+          "state": "open"
+        },
+        {
+          "instance": "A",
+          "state": "selected"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "additionalHostCode": true,
+      "criterion": "A02",
+      "diagnostics": [],
+      "expectationMet": true,
+      "expected": {
+        "error": "pattern-key-route"
+      },
+      "id": "pattern-key-route-conflict",
+      "observed": {
+        "error": "pattern-key-route"
+      },
+      "originalScxmlExecuted": true,
+      "publicEvents": [],
+      "rawOriginalParentEvents": [],
+      "syntheticKeyboardOnly": true,
+      "trace": [
+        {
+          "instance": "A",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "A",
+          "state": "ready"
+        },
+        {
+          "instance": "A",
+          "state": "closed"
+        },
+        {
+          "instance": "B",
+          "state": "$generated-scxml-0"
+        },
+        {
+          "instance": "B",
+          "state": "ready"
+        },
+        {
+          "instance": "B",
+          "state": "closed"
+        }
+      ]
+    }
+  ]
+}

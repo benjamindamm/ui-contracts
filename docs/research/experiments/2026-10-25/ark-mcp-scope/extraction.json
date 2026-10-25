@@ -1,0 +1,22 @@
+{
+  "sourceSha256": "ed0a93b90f048de57323697595aa9fc8cfd1d75725e5db31461f220f8c1a0179",
+  "originalDeclarations": [
+    {
+      "name": "normalizePath",
+      "sha256": "54883cf175484c1f829c65a5c288c68a41315be45485fa2a87c4f7444d3b65a6",
+      "startLine": 17
+    },
+    {
+      "name": "PropDefintion",
+      "sha256": "8f50567f7748c8b83ae26d47bde0770749a38ba89f6e134ae87ca28298a66d61",
+      "startLine": 102
+    },
+    {
+      "name": "types",
+      "sha256": "1bcf7212da63d6c840e00b4534da7ab4e29a5caaa43ba4a7c373a716da40c42b",
+      "startLine": 109
+    }
+  ],
+  "exportOnlyAdaptation": true,
+  "validatorReplaced": false
+}

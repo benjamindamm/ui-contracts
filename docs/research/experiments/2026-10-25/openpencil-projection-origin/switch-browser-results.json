@@ -1,0 +1,109 @@
+{
+  "rule": "button-name",
+  "sourceResultsSha256": "c35d6500ad4a5e39156186886b7b0c132d07e5b2e6ae046d68beb0f6ea5cd91a",
+  "sourceResultsFile": "results.json",
+  "axe": "4.14.0",
+  "cases": [
+    {
+      "checked": [
+        "false"
+      ],
+      "id": "switch-drawn-text",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [
+        {
+          "id": "button-name",
+          "nodes": [
+            {
+              "html": "<button role=\"switch\" type=\"button\" value=\"on\" aria-checked=\"false\" aria-required=\"false\" data-state=\"unchecked\" data-layer=\"Repeated radio\" style=\"border:none;padding:...\">",
+              "target": [
+                "button[data-state=\"unchecked\"][data-layer=\"Repeated radio\"][role=\"switch\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "violations": [],
+      "expectationMet": true
+    },
+    {
+      "checked": [
+        "false"
+      ],
+      "id": "switch-node-name-only",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [],
+      "violations": [
+        {
+          "id": "button-name",
+          "nodes": [
+            {
+              "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "html": "<button role=\"switch\" type=\"button\" value=\"on\" aria-checked=\"false\" aria-required=\"false\" data-state=\"unchecked\" data-layer=\"Only graph name\" style=\"border:none;padding:...\">",
+              "target": [
+                "button[data-layer=\"Only graph name\"][data-state=\"unchecked\"][role=\"switch\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "expectationMet": true
+    },
+    {
+      "checked": [
+        "true"
+      ],
+      "id": "switch-checked-property",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [
+        {
+          "id": "button-name",
+          "nodes": [
+            {
+              "html": "<button role=\"switch\" type=\"button\" value=\"on\" aria-checked=\"true\" aria-required=\"false\" data-state=\"checked\" data-layer=\"Repeated radio\" style=\"border:none;padding:...\">",
+              "target": [
+                "button[data-state=\"checked\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "violations": [],
+      "expectationMet": true
+    },
+    {
+      "checked": [
+        "false",
+        "false"
+      ],
+      "id": "switch-duplicate-layer-names",
+      "inapplicable": [],
+      "incomplete": [],
+      "passes": [
+        {
+          "id": "button-name",
+          "nodes": [
+            {
+              "html": "<button role=\"switch\" type=\"button\" value=\"on\" aria-checked=\"false\" aria-required=\"false\" data-state=\"unchecked\" data-layer=\"Repeated radio#0\" style=\"border:none;padding:...\">",
+              "target": [
+                "button[data-layer=\"Repeated radio#0\"]"
+              ]
+            },
+            {
+              "html": "<button role=\"switch\" type=\"button\" value=\"on\" aria-checked=\"false\" aria-required=\"false\" data-state=\"unchecked\" data-layer=\"Repeated radio#1\" style=\"border:none;padding:...\">",
+              "target": [
+                "button[data-layer=\"Repeated radio#1\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "violations": [],
+      "expectationMet": true
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

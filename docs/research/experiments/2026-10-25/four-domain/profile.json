@@ -1,0 +1,69 @@
+{
+  "status": "Additional experimental research binding, no selected product format",
+  "artifacts": {
+    "interface": {
+      "file": "interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    "behavior": {
+      "file": "behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    "visual": {
+      "file": "visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    "accessibility": {
+      "file": "accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    }
+  },
+  "instances": {
+    "A": {
+      "interfaceDeclaration": "Autocomplete",
+      "behaviorDefinition": "Autocomplete",
+      "snapshotState": "open",
+      "parts": {
+        "input": "input-a",
+        "popup": "popup-a",
+        "list": "list-a",
+        "option": "option-a-0"
+      },
+      "anchorName": "--input-a"
+    },
+    "B": {
+      "interfaceDeclaration": "Autocomplete",
+      "behaviorDefinition": "Autocomplete",
+      "snapshotState": "open",
+      "parts": {
+        "input": "input-b",
+        "popup": "popup-b",
+        "list": "list-b",
+        "option": "option-b-0"
+      },
+      "anchorName": "--input-b"
+    }
+  },
+  "stateView": {
+    "closed": {
+      "expanded": false,
+      "popupVisible": false
+    },
+    "open": {
+      "expanded": true,
+      "popupVisible": true
+    },
+    "selected": {
+      "expanded": false,
+      "popupVisible": false
+    }
+  },
+  "publicEvent": "value-change",
+  "ownership": {
+    "publicSignature": "interface",
+    "stateAndEmission": "behavior",
+    "geometry": "visual",
+    "rolesNamesRelations": "accessibility",
+    "crossArtifactMapping": "additional-profile"
+  }
+}

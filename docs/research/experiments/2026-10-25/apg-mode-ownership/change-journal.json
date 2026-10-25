@@ -1,0 +1,188 @@
+[
+  {
+    "id": "baseline-list",
+    "information": "input-a/@aria-autocomplete interpreted by original constructor",
+    "leadingSource": "authored HTML attribute; omitted attribute uses original constructor default",
+    "originalSource": "host/mode-list.html",
+    "originalSourceSha256": "4853aa9a5c712cd0fd0c78ca6f9c75c8e9ee838ce1958fb11149c17421f60640",
+    "constructorSnapshot": {
+      "flags": [
+        false,
+        true,
+        false
+      ],
+      "source": "list"
+    },
+    "derivedAfter": {
+      "source": "list",
+      "isNone": false,
+      "isList": true,
+      "isBoth": false,
+      "options": [
+        "Alaska"
+      ]
+    },
+    "additionalConsistencyDecision": {
+      "accepted": true
+    },
+    "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+    "updateMechanism": "fresh host/context reload for authored changes, not native in-place setter",
+    "journalRole": "own observation/source binding, no signed native provenance"
+  },
+  {
+    "id": "source-live-conflict",
+    "information": "input-a/@aria-autocomplete interpreted by original constructor",
+    "leadingSource": "authored HTML attribute; omitted attribute uses original constructor default",
+    "originalSource": "host/mode-list.html",
+    "originalSourceSha256": "4853aa9a5c712cd0fd0c78ca6f9c75c8e9ee838ce1958fb11149c17421f60640",
+    "constructorSnapshot": {
+      "flags": [
+        false,
+        true,
+        false
+      ],
+      "source": "list"
+    },
+    "derivedAfter": {
+      "source": "none",
+      "isNone": false,
+      "isList": true,
+      "isBoth": false,
+      "options": [
+        "Alaska"
+      ]
+    },
+    "additionalConsistencyDecision": {
+      "accepted": false,
+      "error": "source-derived-mode-conflict"
+    },
+    "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+    "updateMechanism": "fresh host/context reload for authored changes, not native in-place setter",
+    "journalRole": "own observation/source binding, no signed native provenance"
+  },
+  {
+    "id": "fresh-none-source",
+    "information": "input-a/@aria-autocomplete interpreted by original constructor",
+    "leadingSource": "authored HTML attribute; omitted attribute uses original constructor default",
+    "originalSource": "host/mode-none.html",
+    "originalSourceSha256": "d9e3a08b50e7b74c42e5ac9cd55c50a960fe699c4a5d93c52d797a7200d2b990",
+    "constructorSnapshot": {
+      "flags": [
+        true,
+        false,
+        false
+      ],
+      "source": "none"
+    },
+    "derivedAfter": {
+      "source": "none",
+      "isNone": true,
+      "isList": false,
+      "isBoth": false,
+      "options": [
+        "Alabama",
+        "Alaska"
+      ]
+    },
+    "additionalConsistencyDecision": {
+      "accepted": true
+    },
+    "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+    "updateMechanism": "fresh host/context reload for authored changes, not native in-place setter",
+    "journalRole": "own observation/source binding, no signed native provenance"
+  },
+  {
+    "id": "omitted-source-default",
+    "information": "input-a/@aria-autocomplete interpreted by original constructor",
+    "leadingSource": "authored HTML attribute; omitted attribute uses original constructor default",
+    "originalSource": "host/mode-omitted.html",
+    "originalSourceSha256": "41f0103311c18022805e1d0c48fbb3f035d701e84c6d4a8f6aa278cf95801587",
+    "constructorSnapshot": {
+      "flags": [
+        true,
+        false,
+        false
+      ],
+      "source": null
+    },
+    "derivedAfter": {
+      "source": null,
+      "isNone": true,
+      "isList": false,
+      "isBoth": false,
+      "options": [
+        "Alabama",
+        "Alaska"
+      ]
+    },
+    "additionalConsistencyDecision": {
+      "accepted": true
+    },
+    "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+    "updateMechanism": "fresh host/context reload for authored changes, not native in-place setter",
+    "journalRole": "own observation/source binding, no signed native provenance"
+  },
+  {
+    "id": "unsupported-source",
+    "information": "input-a/@aria-autocomplete interpreted by original constructor",
+    "leadingSource": "authored HTML attribute; omitted attribute uses original constructor default",
+    "originalSource": "host/mode-invalid.html",
+    "originalSourceSha256": "a6d0b34e14583c6a00e7ef8c7e55d1413091549e9a2bd09bc68ee25afa12c243",
+    "constructorSnapshot": {
+      "flags": [
+        false,
+        false,
+        false
+      ],
+      "source": "invalid"
+    },
+    "derivedAfter": {
+      "source": "invalid",
+      "isNone": false,
+      "isList": false,
+      "isBoth": false,
+      "options": [
+        "Alaska"
+      ]
+    },
+    "additionalConsistencyDecision": {
+      "accepted": false,
+      "error": "unsupported-source-mode"
+    },
+    "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+    "updateMechanism": "fresh host/context reload for authored changes, not native in-place setter",
+    "journalRole": "own observation/source binding, no signed native provenance"
+  },
+  {
+    "id": "derived-live-conflict",
+    "information": "input-a/@aria-autocomplete interpreted by original constructor",
+    "leadingSource": "authored HTML attribute; omitted attribute uses original constructor default",
+    "originalSource": "host/mode-list.html",
+    "originalSourceSha256": "4853aa9a5c712cd0fd0c78ca6f9c75c8e9ee838ce1958fb11149c17421f60640",
+    "constructorSnapshot": {
+      "flags": [
+        false,
+        true,
+        false
+      ],
+      "source": "list"
+    },
+    "derivedAfter": {
+      "source": "list",
+      "isNone": true,
+      "isList": false,
+      "isBoth": false,
+      "options": [
+        "Alabama",
+        "Alaska"
+      ]
+    },
+    "additionalConsistencyDecision": {
+      "accepted": false,
+      "error": "source-derived-mode-conflict"
+    },
+    "originalScriptSha256": "dea008a5eb8e6d62d81fe774df8c7fb1160d14dcd522841b26ad6143df770041",
+    "updateMechanism": "fresh host/context reload for authored changes, not native in-place setter",
+    "journalRole": "own observation/source binding, no signed native provenance"
+  }
+]

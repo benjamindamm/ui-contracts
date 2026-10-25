@@ -1,0 +1,9 @@
+{
+  "error": "sg.createInstance is not a function",
+  "cause": "Own harness used a non-exported standalone declaration; original SceneGraph class exposes createInstance method",
+  "repair": "Use graph.createInstance with documented class signature",
+  "original_package_modified": false,
+  "expectations_changed": false,
+  "initial_output_preserved": "initial-api-path-error.json",
+  "count_duplicate_cases": false
+}

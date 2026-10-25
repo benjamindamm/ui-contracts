@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "four-control",
+    "mutation": null,
+    "expected": [],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "wrong-source-hash",
+    "mutation": "hash",
+    "expected": [
+      "source-integrity"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "missing-part-name",
+    "mutation": "part-name",
+    "expected": [
+      "declared-part"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"not-input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "fdee3a32d67270de900187c11ee97139ae95f4c8902fffa5aed80b188713b5e5"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "wrong-machine-name",
+    "mutation": "machine-name",
+    "expected": [
+      "behavior-definition"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"DifferentMachine\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "ec5ae514f2026e04c695b8602d10a240995bf39307980b3360ddf2143051ab06"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "missing-state",
+    "mutation": "state",
+    "expected": [
+      "state-reference"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "missing",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "cross-list",
+    "mutation": "list",
+    "expected": [
+      "same-instance-relation"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "fc4a9f9e53597614c9f0c8ab5134c2858e1687036f625e93bd2bd1f5840b6e19"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "cross-option",
+    "mutation": "option",
+    "expected": [
+      "same-instance-relation"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-b-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "394294eed48a78ba7a164ffafea4771b3675c7ffa915b8e8a8208877d4081f2f"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "cross-anchor",
+    "mutation": "anchor",
+    "expected": [
+      "same-instance-anchor"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "b7c837a6e8fc4bc7c8cc6963491cfee5c7bc047ebc9ba7ebf7ce2a1955ee3aba"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "wrong-unit",
+    "mutation": "unit",
+    "expected": [
+      "geometry-unit"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "d811265c6f5ec90b4c7889972980db79d06fa20c7d8ed8264c095be96d43571b"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "wrong-event",
+    "mutation": "event",
+    "expected": [
+      "public-event-route"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"different-event\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "a669d17f6e2a72580a63c32afa9e2f4ec510c3cfff6e31aa4491b69cc87dced5"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "different-event"
+  },
+  {
+    "id": "wrong-payload",
+    "mutation": "payload",
+    "expected": [
+      "public-payload-type"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"42\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "efd7af8642944d7700eeda93a6d17bb23fa673236fb52c7d0a6535ca713d6598"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "42",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "wrong-owner",
+    "mutation": "owner",
+    "expected": [
+      "leading-source"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-b",
+            "popup": "popup-b",
+            "list": "list-b",
+            "option": "option-b-0"
+          },
+          "anchorName": "--input-b"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "behavior",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  },
+  {
+    "id": "duplicate-instance-part",
+    "mutation": "duplicate",
+    "expected": [
+      "unique-instance-part"
+    ],
+    "artifacts": {
+      "interface": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+      "behavior": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+      "visual": "section { margin-bottom:260px; }\n[role=\"option\"] { height:32px; box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:8px;max-height:160px;overflow-y:auto;}\n",
+      "accessibility": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n"
+    },
+    "profile": {
+      "status": "Additional experimental research binding, no selected product format",
+      "artifacts": {
+        "interface": {
+          "file": "interface.json",
+          "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+        },
+        "behavior": {
+          "file": "behavior.scxml",
+          "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+        },
+        "visual": {
+          "file": "visual.css",
+          "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+        },
+        "accessibility": {
+          "file": "accessibility.html",
+          "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        }
+      },
+      "instances": {
+        "A": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        },
+        "B": {
+          "interfaceDeclaration": "Autocomplete",
+          "behaviorDefinition": "Autocomplete",
+          "snapshotState": "open",
+          "parts": {
+            "input": "input-a",
+            "popup": "popup-a",
+            "list": "list-a",
+            "option": "option-a-0"
+          },
+          "anchorName": "--input-a"
+        }
+      },
+      "stateView": {
+        "closed": {
+          "expanded": false,
+          "popupVisible": false
+        },
+        "open": {
+          "expanded": true,
+          "popupVisible": true
+        },
+        "selected": {
+          "expanded": false,
+          "popupVisible": false
+        }
+      },
+      "publicEvent": "value-change",
+      "ownership": {
+        "publicSignature": "interface",
+        "stateAndEmission": "behavior",
+        "geometry": "visual",
+        "rolesNamesRelations": "accessibility",
+        "crossArtifactMapping": "additional-profile"
+      }
+    },
+    "publicType": "CustomEvent<{value:string}>",
+    "dataExpression": "'alpha'",
+    "paramName": "value",
+    "paramExpression": "value",
+    "schema": {
+      "cem": true,
+      "scxml": true
+    },
+    "sendEvent": "value-change"
+  }
+]

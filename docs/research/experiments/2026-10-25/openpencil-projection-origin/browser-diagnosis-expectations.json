@@ -1,0 +1,25 @@
+{
+  "rule": "button-name",
+  "sourceResultsSha256": "8195a0142fababd99d39dfe2fe6e40349f50c3265aa81b2e4690556bdb440e48",
+  "cases": [
+    {
+      "id": "drawn-text",
+      "expectedViolations": 0,
+      "expectedPasses": 1,
+      "expectedIncomplete": 0
+    },
+    {
+      "id": "node-name-only",
+      "expectedViolations": 1,
+      "expectedPasses": 0,
+      "expectedIncomplete": 0
+    },
+    {
+      "id": "hidden-text",
+      "expectedViolations": 1,
+      "expectedPasses": 0,
+      "expectedIncomplete": 0
+    }
+  ],
+  "sourceResultsFile": "initial-eight-success-results.json"
+}

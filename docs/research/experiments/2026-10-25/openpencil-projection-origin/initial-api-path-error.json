@@ -1,0 +1,154 @@
+{
+  "node": "v24.22.1",
+  "vue": "3.5.41",
+  "typescript": "5.9.3",
+  "scope": "Published original SceneGraph/component instantiation/behaviour classification/projection/controlRoles APIs plus isolated unchanged repo Vue createIslandState/renderNode/root chain and actual SSR; explicit mixed pinned runtime profile, not entire repo/editor/live DOM/AT",
+  "originalPublishedApisModified": false,
+  "originalVueDeclarationsModified": false,
+  "wholePublishedProjectionExecuted": true,
+  "originalRoleClassifierExecuted": true,
+  "originalIslandStateFactoryExecuted": true,
+  "wholeEditorExecuted": false,
+  "liveDomRendered": false,
+  "atTested": false,
+  "cases": [
+    {
+      "id": "drawn-text",
+      "mutation": "text",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "executionError": "TypeError: sg.createInstance is not a function",
+      "stack": "TypeError: sg.createInstance is not a function\n    at file:///Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/op-projection-origin/run.mjs:11:100",
+      "expectationMet": false
+    },
+    {
+      "id": "node-name-only",
+      "mutation": "name",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": false,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "executionError": "TypeError: sg.createInstance is not a function",
+      "stack": "TypeError: sg.createInstance is not a function\n    at file:///Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/op-projection-origin/run.mjs:11:100",
+      "expectationMet": false
+    },
+    {
+      "id": "hidden-text",
+      "mutation": "hidden",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": false,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "executionError": "TypeError: sg.createInstance is not a function",
+      "stack": "TypeError: sg.createInstance is not a function\n    at file:///Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/op-projection-origin/run.mjs:11:100",
+      "expectationMet": false
+    },
+    {
+      "id": "duplicate-layer-names",
+      "mutation": "duplicate",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 2,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "executionError": "TypeError: sg.createInstance is not a function",
+      "stack": "TypeError: sg.createInstance is not a function\n    at file:///Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/op-projection-origin/run.mjs:11:100",
+      "expectationMet": false
+    },
+    {
+      "id": "checked-property",
+      "mutation": "checked",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": true,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "executionError": "TypeError: sg.createInstance is not a function",
+      "stack": "TypeError: sg.createInstance is not a function\n    at file:///Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/op-projection-origin/run.mjs:11:100",
+      "expectationMet": false
+    },
+    {
+      "id": "missing-required-binding",
+      "mutation": "missing",
+      "tokens": false,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [
+          "value"
+        ],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "executionError": "TypeError: sg.createInstance is not a function",
+      "stack": "TypeError: sg.createInstance is not a function\n    at file:///Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/op-projection-origin/run.mjs:11:100",
+      "expectationMet": false
+    },
+    {
+      "id": "tokens-enabled",
+      "mutation": "text",
+      "tokens": true,
+      "includeSourceIds": true,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "executionError": "TypeError: sg.createInstance is not a function",
+      "stack": "TypeError: sg.createInstance is not a function\n    at file:///Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/op-projection-origin/run.mjs:11:100",
+      "expectationMet": false
+    },
+    {
+      "id": "source-ids-disabled",
+      "mutation": "text",
+      "tokens": false,
+      "includeSourceIds": false,
+      "expected": {
+        "controls": 1,
+        "checked": false,
+        "missingBindings": [],
+        "textPresent": true,
+        "roles": "radio",
+        "pathsDistinct": true
+      },
+      "executionError": "TypeError: sg.createInstance is not a function",
+      "stack": "TypeError: sg.createInstance is not a function\n    at file:///Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/op-projection-origin/run.mjs:11:100",
+      "expectationMet": false
+    }
+  ]
+}

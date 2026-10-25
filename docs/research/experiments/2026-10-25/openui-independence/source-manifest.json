@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-25",
+  "source_id": "S119",
+  "original_code_modified": false,
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_files": [
+    {
+      "local_provenance_path": "work/openui-independence/original-Spec.ts",
+      "sha256": "68fabe6c16b31af40bf2f50d4cadbb4817c92bd2e364792d0216867d1290ec98"
+    },
+    {
+      "local_provenance_path": "work/final-x06-scope/fourth-captures.json",
+      "sha256": "36c056e11a62e2ff89688311baf70134a01fc566063ba4e18e83e307a9d8c1f5"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "57b79a2fce8a89dbc28a3165e500a516ad7553f5c5060cc397a5a4fd1a3f1469"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "4eb35dd17ac90b0bc3222eb4e7055dac913e7476cc1193474220ec6b6f5075de"
+    },
+    {
+      "file": "fixtures/base/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/base/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/base/interface.json",
+      "sha256": "2bff6b7fabd6f752b15830bd6c0c15c9fc92ab24b119907e904291269a188142"
+    },
+    {
+      "file": "fixtures/base/typed.ts",
+      "sha256": "e243aa3bd4824dc65dd06f35b3469e1a7f82d43fbc176b3cd3460d4e5bbf349c"
+    },
+    {
+      "file": "fixtures/base/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "fixtures/interface-revision/accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    },
+    {
+      "file": "fixtures/interface-revision/behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    {
+      "file": "fixtures/interface-revision/interface.json",
+      "sha256": "aa858d6d8657ef53994f39d614bfe42ddcd334d6e58f8dc9fe1495c3bc24b625"
+    },
+    {
+      "file": "fixtures/interface-revision/typed.ts",
+      "sha256": "2b3798f39d820cd448ea44cceab50779bb60e6f6f0c63eb5dbc974b7c0093f7f"
+    },
+    {
+      "file": "fixtures/interface-revision/visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "4c4380ad852204da82400dc3412094a3f637244e3d818d9661ffde8ddd2b879d"
+    },
+    {
+      "file": "results.json",
+      "sha256": "514bc2ac8b4e192929ea9ff5c05911d5b503b035a16d25715eba2e2833935e1e"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "37431f68ca5f6ad8b82f7029827b7a1a3b97e7835f57ff5d31b5ba846b9516b3"
+    }
+  ],
+  "generated_third_party_bundles": [],
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "reproduction_originals": "Provide pinned original files/dependencies at the documented workspace sibling paths; originals and bundled third-party code not redistributed as own implementation",
+  "original_url": "https://raw.githubusercontent.com/ctate/openui/09d39b211dcaa2e227ed38e312c8822e193cfea9/interfaces/Spec.ts"
+}

@@ -1,0 +1,210 @@
+{
+  "uxspec_revision": "20dfae0e7224d952e198afdf4ffed26d6fd67180",
+  "dtcg_original": "https://www.designtokens.org/TR/2025.10/format/#duration",
+  "dtcg_section_sha256": "9b051fa63ba3ebc809ca8e66460d17faabad2ed30c5569cca9e150bcd743604b",
+  "original_reference_modules": [
+    {
+      "file": "work/reference-probes/sources/compile.ts",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/compile.ts",
+      "sha256": "f5274688d0e3b749fde1b270db960a3c865af7d3e522f69d66778689d55fbab6"
+    },
+    {
+      "file": "work/reference-probes/sources/diagnostics.ts",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/diagnostics.ts",
+      "sha256": "43550af45feb0aa6994a37346a70d7370f5bd627f8318604674ba0c67d1b2c5c"
+    },
+    {
+      "file": "work/reference-probes/sources/import-resolver.ts",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/import-resolver.ts",
+      "sha256": "b6b3b46585c4b4a1c6995d6fe255111bb5725bb28efd2e3a812ba31e01c75378"
+    },
+    {
+      "file": "work/reference-probes/sources/bundler.ts",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/bundler.ts",
+      "sha256": "7f88f9d2bd336b0073f5ce2544a2efecb91b3b5896330bc88563d30eb7057503"
+    },
+    {
+      "file": "work/reference-probes/sources/state-paths.ts",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/state-paths.ts",
+      "sha256": "4cd31c06e5fd3306d52639f9bb2838c79b01e0c9ed49e7f1e1a0132cfc8ba24d"
+    },
+    {
+      "file": "work/reference-probes/sources/resolve.ts",
+      "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/resolve.ts",
+      "sha256": "aa264486803b32cca958600670dfad4f307bc66708ac168ea562e4e3c3d1025d"
+    }
+  ],
+  "original_compiled_modules": [
+    {
+      "file": "work/reference-probes/build/bundler.js",
+      "sha256": "b772b40d2def58ec8f5a1fe6e7813e6f55ccf8a2c90143dd3c8318f4a9be0a51"
+    },
+    {
+      "file": "work/reference-probes/build/compile.js",
+      "sha256": "eba451728631dba5b73b9c2ffe393e0d2cb8b72ef341170ede05f299eea51e59"
+    },
+    {
+      "file": "work/reference-probes/build/diagnostics.js",
+      "sha256": "1f1c78dfc2ea4acc0fabacb81b3a3119958d0816f6d570275888056a5c6a8c5c"
+    },
+    {
+      "file": "work/reference-probes/build/import-resolver.js",
+      "sha256": "ae2a6a57647666d7135d73ed566eb2a9fc52c9a2e20cba5717080e64029aba5b"
+    },
+    {
+      "file": "work/reference-probes/build/resolve.js",
+      "sha256": "2ec92a9de272a3477a9584d12fe731c2bcc74132e8e2d8fdc0e1216bd9c0b396"
+    },
+    {
+      "file": "work/reference-probes/build/state-paths.js",
+      "sha256": "58b214701182384b337720d06819913329e0b6b7305dec2dd7a78313c7f3405c"
+    }
+  ],
+  "original_hook": {
+    "url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/hooks/use-auto-dismiss.ts",
+    "sha256": "46083885084b5d6640e92149ae7ebe9b2470815a9150888a4d4be940c0b59c4f",
+    "function_executed": "extractMs only",
+    "hook_executed": false
+  },
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "new_conditions": 12,
+  "preserved_original_time_mismatch_cases": 1,
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "b13b389001ea61e6be0861965ddcef5d37399e981215aa962c4f113cf01c2cea"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "5d59e74e050b4a63f5ac823cc3e9cf0bfdda3d681d9fd865d1cd9efe0bc05994"
+    },
+    {
+      "file": "check_schema.py",
+      "sha256": "391cf1eaa4656734fcc8bc952a3fea65742d8e781749f9d7cb8ffef279c9f428"
+    },
+    {
+      "file": "duration-norm-capture.json",
+      "sha256": "c1f04569af8a1975f61514c85956ba653bc5dff5de5bdfed8f60795e1c5a1ea0"
+    },
+    {
+      "file": "duration-norm-section.json",
+      "sha256": "9b051fa63ba3ebc809ca8e66460d17faabad2ed30c5569cca9e150bcd743604b"
+    },
+    {
+      "file": "fixtures/adapted-one-second/app.json",
+      "sha256": "e6edc273d079c9f3de9e2ef1fdaef4f4ee1a6e2f04b453ba152991a6afc66234"
+    },
+    {
+      "file": "fixtures/adapted-one-second/projection.json",
+      "sha256": "89899c4064782f1f80b65fa2bc2cb6cb9fd97c1fda585291b141cc468e33d729"
+    },
+    {
+      "file": "fixtures/adapted-one-second/tokens.json",
+      "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28"
+    },
+    {
+      "file": "fixtures/adapted-thousand-ms/app.json",
+      "sha256": "e6edc273d079c9f3de9e2ef1fdaef4f4ee1a6e2f04b453ba152991a6afc66234"
+    },
+    {
+      "file": "fixtures/adapted-thousand-ms/projection.json",
+      "sha256": "89899c4064782f1f80b65fa2bc2cb6cb9fd97c1fda585291b141cc468e33d729"
+    },
+    {
+      "file": "fixtures/adapted-thousand-ms/tokens.json",
+      "sha256": "13edf1a44d8e556c85ed51a3ea7b9f6b9d6babb078d6465ccde5599450f275a9"
+    },
+    {
+      "file": "fixtures/changed-derived-projection/app.json",
+      "sha256": "e6edc273d079c9f3de9e2ef1fdaef4f4ee1a6e2f04b453ba152991a6afc66234"
+    },
+    {
+      "file": "fixtures/changed-derived-projection/projection.json",
+      "sha256": "dac1b6fc9d90cf245e6aa6d1713a96d2a2e1c7a9c6ade3ef56473b314b8defd9"
+    },
+    {
+      "file": "fixtures/changed-derived-projection/tokens.json",
+      "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28"
+    },
+    {
+      "file": "fixtures/missing-imported-target/app.json",
+      "sha256": "f1750fab1b28035a230f51549088e312cfa595c322a2876ff3e6c9d5fe51868c"
+    },
+    {
+      "file": "fixtures/missing-imported-target/projection.json",
+      "sha256": "89899c4064782f1f80b65fa2bc2cb6cb9fd97c1fda585291b141cc468e33d729"
+    },
+    {
+      "file": "fixtures/missing-imported-target/tokens.json",
+      "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28"
+    },
+    {
+      "file": "fixtures/missing-original-pointer/tokens.json",
+      "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28"
+    },
+    {
+      "file": "fixtures/raw-original-dtcg/app.json",
+      "sha256": "e6edc273d079c9f3de9e2ef1fdaef4f4ee1a6e2f04b453ba152991a6afc66234"
+    },
+    {
+      "file": "fixtures/raw-original-dtcg/projection.json",
+      "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28"
+    },
+    {
+      "file": "fixtures/raw-original-dtcg/tokens.json",
+      "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28"
+    },
+    {
+      "file": "fixtures/stale-original-source/tokens.json",
+      "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28"
+    },
+    {
+      "file": "fixtures/unsupported-original-unit/tokens.json",
+      "sha256": "2a0316c7671bc45c50983f08084d1db3649abeb48fed2439bed867610e406ac3"
+    },
+    {
+      "file": "fixtures/wrapped-original-duration/app.json",
+      "sha256": "e6edc273d079c9f3de9e2ef1fdaef4f4ee1a6e2f04b453ba152991a6afc66234"
+    },
+    {
+      "file": "fixtures/wrapped-original-duration/projection.json",
+      "sha256": "577500db36f43e1a19841a5eea78d654d0a092c21bd930bc46c6e41bdf6fdc8c"
+    },
+    {
+      "file": "fixtures/wrapped-original-duration/tokens.json",
+      "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28"
+    },
+    {
+      "file": "fixtures/wrong-original-token-type/tokens.json",
+      "sha256": "60813f983fc6611475e233023061cd0c9978398ac4086bc8182f83e8bb0c6159"
+    },
+    {
+      "file": "prepare.cjs",
+      "sha256": "f05a0e51ddc66d17ca9e94a7350063cbde2147a50aa409fb9922dcdd4742f885"
+    },
+    {
+      "file": "results.json",
+      "sha256": "29a36050732d3c79027f41f91a17e63aa79817440c37cc8294f8a8df282bb355"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "f71f8b877cb560ec990fb4b8904108d742ad9f785d6958d77e1aeea3754f3d2e"
+    },
+    {
+      "file": "schema-expectations.json",
+      "sha256": "7a36c4c135e0de707dcedd51be2b1c360a574bd1e1d421890e2905f31c21c322"
+    },
+    {
+      "file": "schema-results.json",
+      "sha256": "c218477295a87c7573ce1a9bbce6f561b67da7ea8ad10fae8f7da1bda0b7711f"
+    }
+  ],
+  "reproduction_layout": {
+    "execution_root": "research workspace with sibling work/* folders, as recorded; not an automatic repo-root command",
+    "source_preparation": "provide pinned original use-auto-dismiss.ts in sources/ using manifest URL/hash; local hook-capture.json fallback optional",
+    "required_sibling_original_modules": "../reference-probes/build with six original modules rebuilt from the recorded pinned sources",
+    "required_typescript": "../validation-probes/ts-tool/node_modules/typescript@5.9.3",
+    "required_schema": "work/validation-probes/sources/uxspec.schema.json relative to research workspace"
+  }
+}

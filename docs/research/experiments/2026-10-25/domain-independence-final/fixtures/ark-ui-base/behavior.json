@@ -1,0 +1,28 @@
+{
+  "instances": {
+    "a": {
+      "id": "research-a",
+      "inputValue": "Al",
+      "open": true,
+      "ids": {
+        "root": "root-a",
+        "label": "label-a",
+        "input": "input-a",
+        "control": "control-a",
+        "content": "popup-a"
+      }
+    },
+    "b": {
+      "id": "research-b",
+      "inputValue": "Al",
+      "open": true,
+      "ids": {
+        "root": "root-b",
+        "label": "label-b",
+        "input": "input-b",
+        "control": "control-b",
+        "content": "popup-b"
+      }
+    }
+  }
+}

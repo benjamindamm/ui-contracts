@@ -1,0 +1,117 @@
+{
+  "scope": "Four separately assessed original contributions with additional four-domain bindings, original SSR/compiler/reader; no mounted interaction, actual timer, Rust generator, browser or AT",
+  "cases": [
+    {
+      "id": "ark-ui-base",
+      "candidate": "Ark UI",
+      "revision": "base",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 160,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalCandidate": "Ark UI",
+        "ssr": "<main><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Suche A</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-a\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"></div></div></div><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Suche B</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-b\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"></div></div></div></main>",
+        "declaredInput": {
+          "kind": "field",
+          "name": "inputValue",
+          "type": {
+            "text": "string"
+          }
+        },
+        "semanticBinding": "inputValue string -> original input defaultValue; input/popup ids -> separate CEM parts and HTML combobox/listbox roles; visual max-height -> same contextual popup id",
+        "originalInputHasNoForeignDomainDefinitions": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a",
+          "behavior": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8",
+          "visual": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true,
+        "contextualRelationBinding": "Original content popup-a/b is the listbox; external accessibility list-a/b is the listbox. Additional role/controls mapping explicitly maps popup-a\u2192list-a and popup-b\u2192list-b; source IDs need not be equal."
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalInputValueMapsToSeparateTypedInterface": true,
+        "originalIdsAndRolesMappedToExternalContext": true,
+        "visualTargetExistsInActualOutput": true,
+        "originalRenderedNamesDerivedFromLeadingAccessibilitySource": true
+      }
+    },
+    {
+      "id": "ark-ui-visual-revision",
+      "candidate": "Ark UI",
+      "revision": "visual-revision",
+      "expected": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "observed": {
+        "accepted": true,
+        "maxHeight": 192,
+        "otherDomainsByteIdentical": true,
+        "originalContributionIndependent": true
+      },
+      "details": {
+        "originalCandidate": "Ark UI",
+        "ssr": "<main><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-a\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-a\" id=\"label-a\" data-focus=\"\">Suche A</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-a\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-a\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-a\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-a\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-a\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-a\"></div></div></div><div data-scope=\"combobox\" data-part=\"root\" dir=\"ltr\" id=\"root-b\"><label data-scope=\"combobox\" data-part=\"label\" dir=\"ltr\" for=\"input-b\" id=\"label-b\" data-focus=\"\">Suche B</label><div data-scope=\"combobox\" data-part=\"control\" dir=\"ltr\" id=\"control-b\" data-state=\"open\" data-focus=\"\"><input data-scope=\"combobox\" data-part=\"input\" dir=\"ltr\" autoComplete=\"off\" autoCorrect=\"off\" autoCapitalize=\"none\" spellCheck=\"false\" id=\"input-b\" type=\"text\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"popup-b\" aria-expanded=\"true\" data-state=\"open\" value=\"Al\"/></div><div data-scope=\"combobox\" data-part=\"content\" dir=\"ltr\" id=\"popup-b\" role=\"listbox\" tabindex=\"-1\" data-state=\"open\" aria-labelledby=\"label-b\"><div data-scope=\"combobox\" data-part=\"list\" aria-labelledby=\"label-b\"></div></div></div></main>",
+        "declaredInput": {
+          "kind": "field",
+          "name": "inputValue",
+          "type": {
+            "text": "string"
+          }
+        },
+        "semanticBinding": "inputValue string -> original input defaultValue; input/popup ids -> separate CEM parts and HTML combobox/listbox roles; visual max-height -> same contextual popup id",
+        "originalInputHasNoForeignDomainDefinitions": true,
+        "domains": {
+          "interface": "interface.json",
+          "behavior": "behavior.json",
+          "visual": "visual.css",
+          "accessibility": "accessibility.html"
+        },
+        "sourceHashes": {
+          "interface": "90551c0b685fd5060ad02f4c581979e67dd72c60f1b4bd0b6882addc70cd3d1a",
+          "behavior": "8900b40cb6d62ab9fe2d0eda4ab99f6949545588980b97379c9b0f6beeb7cdf8",
+          "visual": "c40078593ded3afed84d77390eb2cc9bac30b4553b0e6c5a7fc0528c6292c73a",
+          "accessibility": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+        },
+        "stateView": null,
+        "originalSourceAndDerivedRoles": "Own binding links separate original syntax artifacts; original SDK/compiler/reader does not parse foreign master files",
+        "noCompleteRuntimeClaim": true,
+        "contextualRelationBinding": "Original content popup-a/b is the listbox; external accessibility list-a/b is the listbox. Additional role/controls mapping explicitly maps popup-a\u2192list-a and popup-b\u2192list-b; source IDs need not be equal."
+      },
+      "expectationMet": true,
+      "additionalBindingChecks": {
+        "originalCemSchema": true,
+        "externalInputPopupParts": true,
+        "externalNamesRolesAndRelations": true,
+        "originalInputValueMapsToSeparateTypedInterface": true,
+        "originalIdsAndRolesMappedToExternalContext": true,
+        "visualTargetExistsInActualOutput": true,
+        "originalRenderedNamesDerivedFromLeadingAccessibilitySource": true
+      }
+    }
+  ]
+}

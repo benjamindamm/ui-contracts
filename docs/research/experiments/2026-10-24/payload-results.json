@@ -1,0 +1,144 @@
+{
+  "typescript": "5.9.3",
+  "node": "v24.22.1",
+  "policy_is_additional": true,
+  "manifest_source": "inputs/cem-01-valid.json",
+  "scope": "Explicit TypeScript type.text and DOM CustomEvent.detail only; no generic resolver for every CEM type syntax or external package",
+  "cases": [
+    {
+      "id": "payload-01-from-cem",
+      "event": {
+        "name": "value-change",
+        "type": {
+          "text": "CustomEvent<{value:string}>"
+        }
+      },
+      "expected": "resolved",
+      "fields": [
+        [
+          "value",
+          "string",
+          false
+        ]
+      ],
+      "status": "resolved",
+      "typescript_input": "type EventContract = CustomEvent<{value:string}>;\n",
+      "projection": "CustomEvent.detail (explicit Web/TypeScript adapter policy)",
+      "payload_type": "{ value: string; }",
+      "resolved_fields": [
+        [
+          "value",
+          "string",
+          false
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "id": "payload-02-nested-optional",
+      "event": {
+        "name": "select",
+        "type": {
+          "text": "CustomEvent<{value:string; metadata?: {id:number}}>"
+        }
+      },
+      "expected": "resolved",
+      "status": "resolved",
+      "typescript_input": "type EventContract = CustomEvent<{value:string; metadata?: {id:number}}>;\n",
+      "projection": "CustomEvent.detail (explicit Web/TypeScript adapter policy)",
+      "payload_type": "{ value: string; metadata?: { id: number; } | undefined; }",
+      "resolved_fields": [
+        [
+          "value",
+          "string",
+          false
+        ],
+        [
+          "metadata",
+          "{ id: number; } | undefined",
+          true
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "id": "payload-03-malformed-type",
+      "event": {
+        "name": "select",
+        "type": {
+          "text": "CustomEvent<!!!not-a-type"
+        }
+      },
+      "expected": "type-error",
+      "status": "type-error",
+      "typescript_input": "type EventContract = CustomEvent<!!!not-a-type;\n",
+      "diagnostics": [
+        {
+          "code": 2304,
+          "message": "Cannot find name 'not'."
+        },
+        {
+          "code": 1005,
+          "message": "'>' expected."
+        },
+        {
+          "code": 2304,
+          "message": "Cannot find name 'a'."
+        },
+        {
+          "code": 2304,
+          "message": "Cannot find name 'type'."
+        }
+      ]
+    },
+    {
+      "id": "payload-04-missing-type",
+      "event": {
+        "name": "select",
+        "type": {
+          "text": "CustomEvent<MissingPayload>",
+          "references": [
+            {
+              "name": "MissingPayload",
+              "module": "missing.js"
+            }
+          ]
+        }
+      },
+      "expected": "type-error",
+      "status": "type-error",
+      "typescript_input": "type EventContract = CustomEvent<MissingPayload>;\n",
+      "diagnostics": [
+        {
+          "code": 2304,
+          "message": "Cannot find name 'MissingPayload'."
+        }
+      ]
+    },
+    {
+      "id": "payload-05-no-detail",
+      "event": {
+        "name": "select",
+        "type": {
+          "text": "Event"
+        }
+      },
+      "expected": "missing-payload-projection",
+      "status": "missing-payload-projection",
+      "typescript_input": "type EventContract = Event;\n",
+      "diagnostics": []
+    },
+    {
+      "id": "payload-06-invalid-name",
+      "event": {
+        "name": 7,
+        "type": {
+          "text": "CustomEvent<{value:string}>"
+        }
+      },
+      "expected": "invalid-public-name",
+      "status": "invalid-public-name",
+      "policy": "Additional adapter input guard; not claimed to be original CEM root validation"
+    }
+  ]
+}

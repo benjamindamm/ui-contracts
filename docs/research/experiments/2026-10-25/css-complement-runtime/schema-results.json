@@ -1,0 +1,9 @@
+{
+  "originalCemSchemaSha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+  "originalScxmlSchemaSha256": "98e14d0e03d5f9bb49b03fe4a2c24d72c165789d68fe93eee24fc403e4b23b48",
+  "cemValid": true,
+  "cemErrors": [],
+  "scxmlValid": true,
+  "scxmlErrors": "",
+  "scope": "Original schemas on exact fixtures; preflight source validity, not counted as additional runtime conditions"
+}

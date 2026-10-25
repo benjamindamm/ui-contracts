@@ -1,0 +1,9 @@
+{
+  "initial_run_exit": 1,
+  "stage": "AST selection before any condition execution",
+  "error": "TypeError: Cannot read properties of undefined (reading getText)",
+  "cause": "Own harness used condition instead of expression for TypeScript IfStatement",
+  "repair": "Use original TypeScript AST expression property; source fragments and expectations unchanged",
+  "original_product_failure": false,
+  "conditions_executed_before_repair": 0
+}

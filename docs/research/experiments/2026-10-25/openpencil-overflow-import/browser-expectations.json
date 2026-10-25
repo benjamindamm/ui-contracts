@@ -1,0 +1,21 @@
+{
+  "scope": "Programmatic scrollTop in fixed native CSS fixtures; not whole OpenPencil import/export or physical keyboard/AT",
+  "scrollTopAssigned": 80,
+  "cases": [
+    {
+      "id": "original-clip",
+      "overflow": "clip",
+      "expectedScrollTop": 0
+    },
+    {
+      "id": "original-hidden",
+      "overflow": "hidden",
+      "expectedScrollTop": 80
+    },
+    {
+      "id": "projected-clip",
+      "overflow": "hidden",
+      "expectedScrollTop": 80
+    }
+  ]
+}

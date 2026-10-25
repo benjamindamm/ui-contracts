@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-25",
+  "status": "Additional typed research profile and resolver; no original neutral ARIA model resolver",
+  "original_sources": [
+    "S66",
+    "S70",
+    "S81"
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "f2f8b0b7be0cf63ba9e31d767ecfba4740994d9e7e2651e1521a5b8f94a9b3de"
+    },
+    {
+      "file": "artifacts.json",
+      "sha256": "3c0c03b540e6b49fb9eef338b294c7e2a3ece0c036aea2dd5611d12767c9b2bb"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "d2f2ef30affaa07e97d766c6789c5704e94f89104427146ce3cb3653d58756fe"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "44d64a2ef9ca6b08ef63f9f343eb989b8f1c0018049ddf9a357baae3e85fc1f9"
+    },
+    {
+      "file": "profile.json",
+      "sha256": "100ca0281815e3327354f75a05801de0ec2d0e97a5f89518874fe4450adef577"
+    },
+    {
+      "file": "results.json",
+      "sha256": "8304aea450c1114535a8f724d43679f903c3f7b950833286cf5f5a5afac36130"
+    },
+    {
+      "file": "run.py",
+      "sha256": "9a55772a0f466f9864acde3ed035a78d02e21e71e1380e3962ef458e1e9c940e"
+    }
+  ],
+  "schema_files": [
+    {
+      "file": "work/validation-probes/sources/cem.schema.json",
+      "sha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-attribs.xsd",
+      "sha256": "b74de05e9e8d86123a4e8cca6655761fae78009e8d63b95cc27ae38222a2de01"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-contentmodels.xsd",
+      "sha256": "704baaf6e19c480fa76039390dc0a0e045f5544b5f68ec294c47fe51d40d0053"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-datatypes.xsd",
+      "sha256": "51036cac697db9be6f92ad853215dc3166990ca292786fed1612d0666932163b"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-module-core.xsd",
+      "sha256": "cbe0cde7a2cc165b84263e0dad45abd74296ed99a9196611e4b0c98b494222e4"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-module-data.xsd",
+      "sha256": "c34438431aa5d9815a63a64415e3127b832abd451ca509ff79a89d529dddba47"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml-module-external.xsd",
+      "sha256": "899b13488332a6b37700ea53766e16d39b1b4f38fb829d0d3b12f0955a08057d"
+    },
+    {
+      "file": "work/scxml-probes/sources/scxml.xsd",
+      "sha256": "98e14d0e03d5f9bb49b03fe4a2c24d72c165789d68fe93eee24fc403e4b23b48"
+    },
+    {
+      "file": "work/scxml-probes/sources/xml.xsd",
+      "sha256": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c"
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "jsonschema": "4.25.1",
+    "lxml": "6.1.1"
+  },
+  "source_artifacts": {
+    "interface": {
+      "file": "interface.json",
+      "sha256": "d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7"
+    },
+    "behavior": {
+      "file": "behavior.scxml",
+      "sha256": "f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a"
+    },
+    "visual": {
+      "file": "visual.css",
+      "sha256": "3860bf386d018e1f506fc62c96626fc1a5f514c84db5a37db0d19b703a965945"
+    },
+    "accessibility": {
+      "file": "accessibility.html",
+      "sha256": "e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b"
+    }
+  },
+  "conditions": 16,
+  "runtime_or_browser_executed": false
+}

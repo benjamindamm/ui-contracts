@@ -1,0 +1,298 @@
+{
+  "cssTree": "3.2.1",
+  "node": "v24.22.1",
+  "originalBundledDictionaryModified": false,
+  "additionalProfile": true,
+  "sourceGrammarTextPreserved": true,
+  "domChecked": false,
+  "variableSubstitution": false,
+  "fullModuleConformance": false,
+  "profileSha256": "d72689895eeb76c34e09c10d32bcc28044ba8e33abca09410fa1f0d48c97244c",
+  "cases": [
+    {
+      "id": "normal-keyword",
+      "css": "x{position-anchor:normal}",
+      "expectedStatus": "valid",
+      "status": "valid",
+      "observations": [
+        {
+          "property": "position-anchor",
+          "value": "normal",
+          "status": "valid",
+          "nativeMatched": false,
+          "nativeError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: auto | none | <anchor-name>\n   value: normal\n  --------^"
+          },
+          "boundError": null,
+          "originalGrammar": "normal | none | auto | <anchor-name> | match-parent"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "match-parent-keyword",
+      "css": "x{position-anchor:match-parent}",
+      "expectedStatus": "valid",
+      "status": "valid",
+      "observations": [
+        {
+          "property": "position-anchor",
+          "value": "match-parent",
+          "status": "valid",
+          "nativeMatched": false,
+          "nativeError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: auto | none | <anchor-name>\n   value: match-parent\n  --------^"
+          },
+          "boundError": null,
+          "originalGrammar": "normal | none | auto | <anchor-name> | match-parent"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "four-property-control",
+      "css": "#a{anchor-name:--a;anchor-scope:all}#p{position-anchor:--a;overflow-y:auto}",
+      "expectedStatus": "valid",
+      "status": "valid",
+      "observations": [
+        {
+          "property": "anchor-name",
+          "value": "--a",
+          "status": "valid",
+          "nativeMatched": true,
+          "nativeError": null,
+          "boundError": null,
+          "originalGrammar": "none | <anchor-name>#"
+        },
+        {
+          "property": "anchor-scope",
+          "value": "all",
+          "status": "valid",
+          "nativeMatched": true,
+          "nativeError": null,
+          "boundError": null,
+          "originalGrammar": "none | all | <anchor-name>#"
+        },
+        {
+          "property": "position-anchor",
+          "value": "--a",
+          "status": "valid",
+          "nativeMatched": true,
+          "nativeError": null,
+          "boundError": null,
+          "originalGrammar": "normal | none | auto | <anchor-name> | match-parent"
+        },
+        {
+          "property": "overflow-y",
+          "value": "auto",
+          "status": "valid",
+          "nativeMatched": true,
+          "nativeError": null,
+          "boundError": null,
+          "originalGrammar": "visible | hidden | clip | scroll | auto"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "comma-anchor-list",
+      "css": "x{anchor-name:--a,--b}",
+      "expectedStatus": "valid",
+      "status": "valid",
+      "observations": [
+        {
+          "property": "anchor-name",
+          "value": "--a,--b",
+          "status": "valid",
+          "nativeMatched": true,
+          "nativeError": null,
+          "boundError": null,
+          "originalGrammar": "none | <anchor-name>#"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "bad-anchor-identifier",
+      "css": "x{anchor-name:banana}",
+      "expectedStatus": "invalid",
+      "status": "invalid",
+      "observations": [
+        {
+          "property": "anchor-name",
+          "value": "banana",
+          "status": "invalid",
+          "nativeMatched": false,
+          "nativeError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: none | <dashed-ident>#\n   value: banana\n  --------^"
+          },
+          "boundError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: none | <anchor-name>#\n   value: banana\n  --------^"
+          },
+          "originalGrammar": "none | <anchor-name>#"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "bad-overflow",
+      "css": "x{overflow-y:banana}",
+      "expectedStatus": "invalid",
+      "status": "invalid",
+      "observations": [
+        {
+          "property": "overflow-y",
+          "value": "banana",
+          "status": "invalid",
+          "nativeMatched": false,
+          "nativeError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: visible | hidden | clip | scroll | auto | <-non-standard-overflow>\n   value: banana\n  --------^"
+          },
+          "boundError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: visible | hidden | clip | scroll | auto\n   value: banana\n  --------^"
+          },
+          "originalGrammar": "visible | hidden | clip | scroll | auto"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "trailing-value",
+      "css": "x{position-anchor:normal banana}",
+      "expectedStatus": "invalid",
+      "status": "invalid",
+      "observations": [
+        {
+          "property": "position-anchor",
+          "value": "normal banana",
+          "status": "invalid",
+          "nativeMatched": false,
+          "nativeError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: auto | none | <anchor-name>\n   value: normal banana\n  --------^"
+          },
+          "boundError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: normal | none | auto | <anchor-name> | match-parent\n   value: normal banana\n  ---------------^"
+          },
+          "originalGrammar": "normal | none | auto | <anchor-name> | match-parent"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "unsupported-property-mixed",
+      "css": "x{position-anchor:normal;unknown:thing}",
+      "expectedStatus": "unsupported_scope",
+      "status": "unsupported_scope",
+      "observations": [
+        {
+          "property": "position-anchor",
+          "value": "normal",
+          "status": "valid",
+          "nativeMatched": false,
+          "nativeError": {
+            "name": "SyntaxMatchError",
+            "message": "Mismatch\n  syntax: auto | none | <anchor-name>\n   value: normal\n  --------^"
+          },
+          "boundError": null,
+          "originalGrammar": "normal | none | auto | <anchor-name> | match-parent"
+        },
+        {
+          "property": "unknown",
+          "value": "thing",
+          "status": "unsupported_scope"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "missing-dom-anchor",
+      "css": "x{position-anchor:--missing}",
+      "expectedStatus": "valid",
+      "status": "valid",
+      "observations": [
+        {
+          "property": "position-anchor",
+          "value": "--missing",
+          "status": "valid",
+          "nativeMatched": true,
+          "nativeError": null,
+          "boundError": null,
+          "originalGrammar": "normal | none | auto | <anchor-name> | match-parent"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "variable-substitution",
+      "css": "x{position-anchor:var(--a)}",
+      "expectedStatus": "unsupported_value",
+      "status": "unsupported_value",
+      "observations": [
+        {
+          "property": "position-anchor",
+          "value": "var(--a)",
+          "status": "unsupported_value",
+          "nativeMatched": false,
+          "nativeError": {
+            "name": "Error",
+            "message": "Matching for a tree with var() is not supported"
+          },
+          "boundError": {
+            "name": "Error",
+            "message": "Matching for a tree with var() is not supported"
+          },
+          "originalGrammar": "normal | none | auto | <anchor-name> | match-parent"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "nested-anchor-outside-scope",
+      "css": "x{top:calc(anchor(banana) + 8px)}",
+      "expectedStatus": "unsupported_scope",
+      "status": "unsupported_scope",
+      "observations": [
+        {
+          "property": "top",
+          "value": "calc(anchor(banana) + 8px)",
+          "status": "unsupported_scope"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    },
+    {
+      "id": "max-height-outside-scope",
+      "css": "x{max-height:160px}",
+      "expectedStatus": "unsupported_scope",
+      "status": "unsupported_scope",
+      "observations": [
+        {
+          "property": "max-height",
+          "value": "160px",
+          "status": "unsupported_scope"
+        }
+      ],
+      "errors": [],
+      "expectationMet": true
+    }
+  ]
+}

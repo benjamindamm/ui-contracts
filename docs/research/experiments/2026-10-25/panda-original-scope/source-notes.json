@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-25",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/crates/pandacss_codegen/src/artifacts/specs.rs",
+      "captureSha256": "b676d0cf5269efff6ed3a5941ef21bb7041b068ee8e566a9d0338c284c6cce3a",
+      "readScope": "Selected generate/build/version/token_refs sections"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/design-notes/design-system-spec.md",
+      "captureSha256": "4687ecc72cc3dbee95939936e9b224fe66adc65a7e36fefba042da1d3ff3584a",
+      "readScope": "Model and migration sections; not assumed fully current over code"
+    },
+    {
+      "url": "https://panda-css.com/docs/theming/json-spec",
+      "captureSha256": "b46e7affac31712add458f73353b480007c083ab4f4dfc45a575ee4d90165675",
+      "readScope": "Generated artifact purpose, public reader and opt-in output"
+    }
+  ],
+  "reused_evidence": {
+    "record": "../panda-artifact-types/results.json",
+    "sha256": "2b0f7dca99e20f127b94592913def9f98d40903767cf799a3e87c41577cdb5dd",
+    "group": "P42",
+    "conditions_counted_again": false
+  },
+  "new_runtime_conditions": 0
+}

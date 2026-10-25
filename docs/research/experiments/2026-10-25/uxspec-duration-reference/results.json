@@ -1,0 +1,553 @@
+{
+  "revision": "20dfae0e7224d952e198afdf4ffed26d6fd67180",
+  "node": "v24.13.1",
+  "scope": "Complete original import/resolve/compiler modules plus isolated original extractMs function; additional DTCG-duration-to-millisecond projection, no useEffect/timer/interpreter/UI/AT execution",
+  "cases": [
+    {
+      "id": "raw-original-dtcg",
+      "kind": "raw",
+      "expected": {
+        "ok": false
+      },
+      "observation": {
+        "ok": false,
+        "ms": null,
+        "desiredSourceTimePreserved": false,
+        "importIssues": [],
+        "compileIssues": [
+          {
+            "code": "UNKNOWN_IMPORTED_TOKEN_REFERENCE",
+            "message": "Unknown imported token reference: clock:delay",
+            "path": "$.$machine.states.active.$visual.autoDismiss",
+            "phase": "resolve"
+          }
+        ],
+        "importTrace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.clock",
+            "input": "./projection.json",
+            "output": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uxspec-duration-reference/fixtures/raw-original-dtcg/projection.json",
+            "status": "ok"
+          }
+        ],
+        "compileTrace": [],
+        "compiled": null,
+        "sourceUnchanged": true,
+        "additionalBinding": {
+          "status": "Additional bounded research relation, no product choice: use a visual duration as UX timer input",
+          "source": {
+            "file": "tokens.json",
+            "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28",
+            "pointer": "/motion/animationDuration"
+          },
+          "target": {
+            "importAlias": "clock",
+            "token": "delay",
+            "consumer": "$machine.states.active.$visual.autoDismiss",
+            "semantics": "positive finite milliseconds expected by original timer consumer"
+          }
+        },
+        "additionalProjectionRecord": null
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "wrapped-original-duration",
+      "kind": "wrapped",
+      "expected": {
+        "ok": true,
+        "ms": 1
+      },
+      "observation": {
+        "ok": true,
+        "ms": 1,
+        "desiredSourceTimePreserved": false,
+        "importIssues": [],
+        "compileIssues": [],
+        "importTrace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.clock",
+            "input": "./projection.json",
+            "output": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uxspec-duration-reference/fixtures/wrapped-original-duration/projection.json",
+            "status": "ok"
+          }
+        ],
+        "compileTrace": [
+          {
+            "phase": "resolve",
+            "kind": "token",
+            "path": "$.$machine.states.active.$visual.autoDismiss",
+            "input": "{clock:delay}",
+            "output": "1"
+          },
+          {
+            "phase": "state-paths",
+            "kind": "initial",
+            "path": "$machine.initial",
+            "input": "active",
+            "output": "active",
+            "status": "ok"
+          },
+          {
+            "phase": "state-paths",
+            "kind": "target",
+            "path": "$machine.states.active.on.AUTO_DISMISS",
+            "input": "done",
+            "output": "done",
+            "status": "ok"
+          }
+        ],
+        "compiled": {
+          "$format": "uxspec-compiled",
+          "$version": "0.2",
+          "initial": "active",
+          "contextSchema": {},
+          "eventSchema": {
+            "AUTO_DISMISS": {
+              "source": "timer"
+            }
+          },
+          "states": {
+            "active": {
+              "path": "active",
+              "visual": {
+                "autoDismiss": 1
+              },
+              "transitions": [
+                {
+                  "event": "AUTO_DISMISS",
+                  "target": "done",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            },
+            "done": {
+              "path": "done",
+              "visual": {},
+              "transitions": [],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            }
+          },
+          "assertions": []
+        },
+        "sourceUnchanged": true,
+        "additionalBinding": {
+          "status": "Additional bounded research relation, no product choice: use a visual duration as UX timer input",
+          "source": {
+            "file": "tokens.json",
+            "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28",
+            "pointer": "/motion/animationDuration"
+          },
+          "target": {
+            "importAlias": "clock",
+            "token": "delay",
+            "consumer": "$machine.states.active.$visual.autoDismiss",
+            "semantics": "positive finite milliseconds expected by original timer consumer"
+          }
+        },
+        "additionalProjectionRecord": null
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "adapted-one-second",
+      "kind": "seconds",
+      "expected": {
+        "ok": true,
+        "ms": 1000
+      },
+      "observation": {
+        "ok": true,
+        "ms": 1000,
+        "desiredSourceTimePreserved": true,
+        "importIssues": [],
+        "compileIssues": [],
+        "importTrace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.clock",
+            "input": "./projection.json",
+            "output": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uxspec-duration-reference/fixtures/adapted-one-second/projection.json",
+            "status": "ok"
+          }
+        ],
+        "compileTrace": [
+          {
+            "phase": "resolve",
+            "kind": "token",
+            "path": "$.$machine.states.active.$visual.autoDismiss",
+            "input": "{clock:delay}",
+            "output": "1000"
+          },
+          {
+            "phase": "state-paths",
+            "kind": "initial",
+            "path": "$machine.initial",
+            "input": "active",
+            "output": "active",
+            "status": "ok"
+          },
+          {
+            "phase": "state-paths",
+            "kind": "target",
+            "path": "$machine.states.active.on.AUTO_DISMISS",
+            "input": "done",
+            "output": "done",
+            "status": "ok"
+          }
+        ],
+        "compiled": {
+          "$format": "uxspec-compiled",
+          "$version": "0.2",
+          "initial": "active",
+          "contextSchema": {},
+          "eventSchema": {
+            "AUTO_DISMISS": {
+              "source": "timer"
+            }
+          },
+          "states": {
+            "active": {
+              "path": "active",
+              "visual": {
+                "autoDismiss": 1000
+              },
+              "transitions": [
+                {
+                  "event": "AUTO_DISMISS",
+                  "target": "done",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            },
+            "done": {
+              "path": "done",
+              "visual": {},
+              "transitions": [],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            }
+          },
+          "assertions": []
+        },
+        "sourceUnchanged": true,
+        "additionalBinding": {
+          "status": "Additional bounded research relation, no product choice: use a visual duration as UX timer input",
+          "source": {
+            "file": "tokens.json",
+            "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28",
+            "pointer": "/motion/animationDuration"
+          },
+          "target": {
+            "importAlias": "clock",
+            "token": "delay",
+            "consumer": "$machine.states.active.$visual.autoDismiss",
+            "semantics": "positive finite milliseconds expected by original timer consumer"
+          }
+        },
+        "additionalProjectionRecord": {
+          "source": {
+            "file": "tokens.json",
+            "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28",
+            "pointer": "/motion/animationDuration"
+          },
+          "sourceType": "duration",
+          "sourceValue": {
+            "value": 1,
+            "unit": "s"
+          },
+          "target": {
+            "importAlias": "clock",
+            "token": "delay",
+            "consumer": "$machine.states.active.$visual.autoDismiss",
+            "semantics": "positive finite milliseconds expected by original timer consumer"
+          },
+          "projectedType": "number",
+          "projectedValue": 1000,
+          "conversion": "multiply seconds by 1000",
+          "generatedLibraryMachineUsed": false
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "adapted-thousand-ms",
+      "kind": "milliseconds",
+      "expected": {
+        "ok": true,
+        "ms": 1000
+      },
+      "observation": {
+        "ok": true,
+        "ms": 1000,
+        "desiredSourceTimePreserved": true,
+        "importIssues": [],
+        "compileIssues": [],
+        "importTrace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.clock",
+            "input": "./projection.json",
+            "output": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uxspec-duration-reference/fixtures/adapted-thousand-ms/projection.json",
+            "status": "ok"
+          }
+        ],
+        "compileTrace": [
+          {
+            "phase": "resolve",
+            "kind": "token",
+            "path": "$.$machine.states.active.$visual.autoDismiss",
+            "input": "{clock:delay}",
+            "output": "1000"
+          },
+          {
+            "phase": "state-paths",
+            "kind": "initial",
+            "path": "$machine.initial",
+            "input": "active",
+            "output": "active",
+            "status": "ok"
+          },
+          {
+            "phase": "state-paths",
+            "kind": "target",
+            "path": "$machine.states.active.on.AUTO_DISMISS",
+            "input": "done",
+            "output": "done",
+            "status": "ok"
+          }
+        ],
+        "compiled": {
+          "$format": "uxspec-compiled",
+          "$version": "0.2",
+          "initial": "active",
+          "contextSchema": {},
+          "eventSchema": {
+            "AUTO_DISMISS": {
+              "source": "timer"
+            }
+          },
+          "states": {
+            "active": {
+              "path": "active",
+              "visual": {
+                "autoDismiss": 1000
+              },
+              "transitions": [
+                {
+                  "event": "AUTO_DISMISS",
+                  "target": "done",
+                  "guard": null,
+                  "actions": []
+                }
+              ],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            },
+            "done": {
+              "path": "done",
+              "visual": {},
+              "transitions": [],
+              "entry": [],
+              "exit": [],
+              "invoke": []
+            }
+          },
+          "assertions": []
+        },
+        "sourceUnchanged": true,
+        "additionalBinding": {
+          "status": "Additional bounded research relation, no product choice: use a visual duration as UX timer input",
+          "source": {
+            "file": "tokens.json",
+            "sha256": "13edf1a44d8e556c85ed51a3ea7b9f6b9d6babb078d6465ccde5599450f275a9",
+            "pointer": "/motion/animationDuration"
+          },
+          "target": {
+            "importAlias": "clock",
+            "token": "delay",
+            "consumer": "$machine.states.active.$visual.autoDismiss",
+            "semantics": "positive finite milliseconds expected by original timer consumer"
+          }
+        },
+        "additionalProjectionRecord": {
+          "source": {
+            "file": "tokens.json",
+            "sha256": "13edf1a44d8e556c85ed51a3ea7b9f6b9d6babb078d6465ccde5599450f275a9",
+            "pointer": "/motion/animationDuration"
+          },
+          "sourceType": "duration",
+          "sourceValue": {
+            "value": 1000,
+            "unit": "ms"
+          },
+          "target": {
+            "importAlias": "clock",
+            "token": "delay",
+            "consumer": "$machine.states.active.$visual.autoDismiss",
+            "semantics": "positive finite milliseconds expected by original timer consumer"
+          },
+          "projectedType": "number",
+          "projectedValue": 1000,
+          "conversion": "milliseconds unchanged",
+          "generatedLibraryMachineUsed": false
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-original-pointer",
+      "kind": "pointer",
+      "expected": {
+        "ok": false,
+        "error": "missing-duration"
+      },
+      "observation": {
+        "ok": false,
+        "error": "missing-duration"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-original-token-type",
+      "kind": "type",
+      "expected": {
+        "ok": false,
+        "error": "duration-type"
+      },
+      "observation": {
+        "ok": false,
+        "error": "duration-type"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "unsupported-original-unit",
+      "kind": "unit",
+      "expected": {
+        "ok": false,
+        "error": "duration-unit"
+      },
+      "observation": {
+        "ok": false,
+        "error": "duration-unit"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "stale-original-source",
+      "kind": "stale",
+      "expected": {
+        "ok": false,
+        "error": "stale-source"
+      },
+      "observation": {
+        "ok": false,
+        "error": "stale-source"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-imported-target",
+      "kind": "target",
+      "expected": {
+        "ok": false
+      },
+      "observation": {
+        "ok": false,
+        "ms": null,
+        "desiredSourceTimePreserved": false,
+        "importIssues": [],
+        "compileIssues": [
+          {
+            "code": "UNKNOWN_IMPORTED_TOKEN_REFERENCE",
+            "message": "Unknown token reference: clock:missing",
+            "path": "$.$machine.states.active.$visual.autoDismiss",
+            "phase": "resolve"
+          }
+        ],
+        "importTrace": [
+          {
+            "phase": "import",
+            "kind": "import",
+            "path": "$imports.clock",
+            "input": "./projection.json",
+            "output": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uxspec-duration-reference/fixtures/missing-imported-target/projection.json",
+            "status": "ok"
+          }
+        ],
+        "compileTrace": [],
+        "compiled": null,
+        "sourceUnchanged": true,
+        "additionalBinding": {
+          "status": "Additional bounded research relation, no product choice: use a visual duration as UX timer input",
+          "source": {
+            "file": "tokens.json",
+            "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28",
+            "pointer": "/motion/animationDuration"
+          },
+          "target": {
+            "importAlias": "clock",
+            "token": "delay",
+            "consumer": "$machine.states.active.$visual.autoDismiss",
+            "semantics": "positive finite milliseconds expected by original timer consumer"
+          }
+        },
+        "additionalProjectionRecord": {
+          "source": {
+            "file": "tokens.json",
+            "sha256": "d566baa73e8563be3eedbf8fbae7ab5fe061b795b8dac14304dffb2e370a0a28",
+            "pointer": "/motion/animationDuration"
+          },
+          "sourceType": "duration",
+          "sourceValue": {
+            "value": 1,
+            "unit": "s"
+          },
+          "target": {
+            "importAlias": "clock",
+            "token": "delay",
+            "consumer": "$machine.states.active.$visual.autoDismiss",
+            "semantics": "positive finite milliseconds expected by original timer consumer"
+          },
+          "projectedType": "number",
+          "projectedValue": 1000,
+          "conversion": "multiply seconds by 1000",
+          "generatedLibraryMachineUsed": false
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "changed-derived-projection",
+      "kind": "projection",
+      "expected": {
+        "ok": false,
+        "error": "stale-projection"
+      },
+      "observation": {
+        "ok": false,
+        "error": "stale-projection"
+      },
+      "expectationMet": true
+    }
+  ]
+}

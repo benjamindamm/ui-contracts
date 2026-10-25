@@ -1,0 +1,99 @@
+{
+  "nameTree": {
+    "refs": [
+      {
+        "backendNodeId": 1462,
+        "name": "Search A",
+        "nth": 0,
+        "ref": "e1",
+        "role": "combobox"
+      },
+      {
+        "backendNodeId": 1464,
+        "name": "Results A",
+        "nth": 0,
+        "ref": "e2",
+        "role": "listbox"
+      },
+      {
+        "backendNodeId": 1465,
+        "name": "Alpha A 1",
+        "nth": 0,
+        "ref": "e3",
+        "role": "option"
+      },
+      {
+        "backendNodeId": 1466,
+        "name": "Alpha A 2",
+        "nth": 0,
+        "ref": "e4",
+        "role": "option"
+      },
+      {
+        "backendNodeId": 1467,
+        "name": "Alpha A 3",
+        "nth": 0,
+        "ref": "e5",
+        "role": "option"
+      },
+      {
+        "backendNodeId": 1468,
+        "name": "Alpha A 4",
+        "nth": 0,
+        "ref": "e6",
+        "role": "option"
+      },
+      {
+        "backendNodeId": 1469,
+        "name": "Alpha A 5",
+        "nth": 0,
+        "ref": "e7",
+        "role": "option"
+      },
+      {
+        "backendNodeId": 1470,
+        "name": "Alpha A 6",
+        "nth": 0,
+        "ref": "e8",
+        "role": "option"
+      },
+      {
+        "backendNodeId": 1471,
+        "name": "Alpha A 7",
+        "nth": 0,
+        "ref": "e9",
+        "role": "option"
+      },
+      {
+        "backendNodeId": 1475,
+        "name": "Search B",
+        "nth": 0,
+        "ref": "e10",
+        "role": "combobox"
+      }
+    ],
+    "text": "- main\n  - LabelText\n  - combobox \"Search A\" [expanded] [ref=e1]\n  - listbox \"Results A\" [ref=e2]\n    - option \"Alpha A 1\" [ref=e3]\n    - option \"Alpha A 2\" [ref=e4]\n    - option \"Alpha A 3\" [ref=e5]\n    - option \"Alpha A 4\" [ref=e6]\n    - option \"Alpha A 5\" [ref=e7]\n    - option \"Alpha A 6\" [ref=e8]\n    - option \"Alpha A 7\" [selected] [ref=e9]\n  - status\n  - LabelText\n  - combobox \"Search B\" [collapsed] [ref=e10]\n  - status",
+    "url": "http://127.0.0.1:54143/"
+  },
+  "pageId": 287,
+  "statusTree": {
+    "refs": [
+      {
+        "backendNodeId": 1514,
+        "name": "Search A",
+        "nth": 0,
+        "ref": "e11",
+        "role": "combobox"
+      },
+      {
+        "backendNodeId": 1527,
+        "name": "Search B",
+        "nth": 0,
+        "ref": "e12",
+        "role": "combobox"
+      }
+    ],
+    "text": "- main\n  - LabelText\n  - combobox \"Search A\" [collapsed] [ref=e11]: \"Alpha A 1\"\n  - status\n  - LabelText\n  - combobox \"Search B\" [collapsed] [ref=e12]\n  - status",
+    "url": "http://127.0.0.1:54143/"
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "base",
+    "expected": {
+      "height": 160,
+      "label": "Search A",
+      "options": [
+        "Alaska"
+      ],
+      "nativeType": "HTMLInputElement",
+      "className": "ComboboxAutocomplete",
+      "fourDistinctSources": true
+    }
+  },
+  {
+    "id": "visual-revision",
+    "expected": {
+      "height": 192,
+      "label": "Search A",
+      "options": [
+        "Alaska"
+      ],
+      "nativeType": "HTMLInputElement",
+      "className": "ComboboxAutocomplete",
+      "fourDistinctSources": true
+    }
+  },
+  {
+    "id": "accessibility-revision",
+    "expected": {
+      "height": 160,
+      "label": "Find A",
+      "options": [
+        "Alaska"
+      ],
+      "nativeType": "HTMLInputElement",
+      "className": "ComboboxAutocomplete",
+      "fourDistinctSources": true
+    }
+  }
+]

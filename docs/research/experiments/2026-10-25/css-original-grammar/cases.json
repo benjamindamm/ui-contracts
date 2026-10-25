@@ -1,0 +1,62 @@
+[
+  {
+    "id": "normal-keyword",
+    "css": "x{position-anchor:normal}",
+    "expectedStatus": "valid"
+  },
+  {
+    "id": "match-parent-keyword",
+    "css": "x{position-anchor:match-parent}",
+    "expectedStatus": "valid"
+  },
+  {
+    "id": "four-property-control",
+    "css": "#a{anchor-name:--a;anchor-scope:all}#p{position-anchor:--a;overflow-y:auto}",
+    "expectedStatus": "valid"
+  },
+  {
+    "id": "comma-anchor-list",
+    "css": "x{anchor-name:--a,--b}",
+    "expectedStatus": "valid"
+  },
+  {
+    "id": "bad-anchor-identifier",
+    "css": "x{anchor-name:banana}",
+    "expectedStatus": "invalid"
+  },
+  {
+    "id": "bad-overflow",
+    "css": "x{overflow-y:banana}",
+    "expectedStatus": "invalid"
+  },
+  {
+    "id": "trailing-value",
+    "css": "x{position-anchor:normal banana}",
+    "expectedStatus": "invalid"
+  },
+  {
+    "id": "unsupported-property-mixed",
+    "css": "x{position-anchor:normal;unknown:thing}",
+    "expectedStatus": "unsupported_scope"
+  },
+  {
+    "id": "missing-dom-anchor",
+    "css": "x{position-anchor:--missing}",
+    "expectedStatus": "valid"
+  },
+  {
+    "id": "variable-substitution",
+    "css": "x{position-anchor:var(--a)}",
+    "expectedStatus": "unsupported_value"
+  },
+  {
+    "id": "nested-anchor-outside-scope",
+    "css": "x{top:calc(anchor(banana) + 8px)}",
+    "expectedStatus": "unsupported_scope"
+  },
+  {
+    "id": "max-height-outside-scope",
+    "css": "x{max-height:160px}",
+    "expectedStatus": "unsupported_scope"
+  }
+]

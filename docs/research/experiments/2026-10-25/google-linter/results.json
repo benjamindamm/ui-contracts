@@ -1,0 +1,1522 @@
+{
+  "node": "v24.22.1",
+  "package": "@google/design.md",
+  "version": "0.4.0",
+  "caseFileSha256": "09a21a45401ff5c8326d06acc7b647a9dd5e31329ad653c968d8bf2791d70c26",
+  "bundleSha256": "a76ab9c2ee8a1bc6ad709167c3c7f06e64a5e2253d9718d3c2a8c51824272423",
+  "method": "Published original linter public API with default rules, no wrapper monkeypatching or custom rules. Expectations saved before execution.",
+  "cases": [
+    {
+      "id": "valid-control",
+      "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\n\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": false,
+        "primaryExists": true
+      },
+      "criterion": "Minimal valid color is resolved; ancillary warnings allowed",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": {
+          "type": "color",
+          "hex": "#000000",
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "luminance": 0
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {
+            "primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {
+            "colors.primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 3
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {
+                  "primary": "#000000"
+                },
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\n\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "no-yaml",
+      "content": "# Probe\n## Colors\nNo machine-readable data.",
+      "expected": {
+        "returned": true,
+        "errors": 0,
+        "hasWarning": true,
+        "primaryExists": false
+      },
+      "criterion": "Recoverable missing YAML becomes warning report, not successful populated model",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": null,
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "No YAML content found. Expected frontmatter (---) or fenced yaml code blocks."
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {},
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "No YAML content found. Expected frontmatter (---) or fenced yaml code blocks."
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [
+          "Colors"
+        ],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "# Probe"
+          },
+          {
+            "heading": "Colors",
+            "content": "## Colors\nNo machine-readable data."
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "empty-content",
+      "content": "",
+      "expected": {
+        "returned": true,
+        "errors": 0,
+        "hasWarning": true
+      },
+      "criterion": "Public lint path differs from ParserInputSchema min length",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": null,
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "No YAML content found. Expected frontmatter (---) or fenced yaml code blocks."
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {},
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "No YAML content found. Expected frontmatter (---) or fenced yaml code blocks."
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": ""
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "bad-yaml",
+      "content": "---\nname: Probe\ncolors: [\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "errors": 0,
+        "hasWarning": true
+      },
+      "criterion": "Recoverable syntax failure",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": null,
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "Flow sequence in block collection must be sufficiently indented and end with a ] at line 2, column 10:\n\ncolors: [\n         ^\n"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {},
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "Flow sequence in block collection must be sufficiently indented and end with a ] at line 2, column 10:\n\ncolors: [\n         ^\n"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\ncolors: [\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "duplicate-sections",
+      "content": "```yaml\ncolors:\n  primary: \"#000\"\n```\n```yaml\ncolors:\n  secondary: \"#fff\"\n```",
+      "expected": {
+        "returned": true,
+        "errors": 0,
+        "hasWarning": true,
+        "primaryExists": false
+      },
+      "criterion": "Duplicate section returns recoverable warning with empty model",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": null,
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "Section 'colors' is defined in both code block 1 and code block 2."
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {},
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "Section 'colors' is defined in both code block 1 and code block 2."
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "```yaml\ncolors:\n  primary: \"#000\"\n```\n```yaml\ncolors:\n  secondary: \"#fff\"\n```"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "invalid-color",
+      "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"banana\"\n\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": true
+      },
+      "criterion": "Model detects invalid color",
+      "observations": {
+        "returned": true,
+        "errors": 1,
+        "warnings": 0,
+        "primary": null,
+        "findings": [
+          {
+            "severity": "error",
+            "path": "colors.primary",
+            "message": "'banana' is not a valid color. Expected a CSS color value (e.g., #ffffff, rgb(0 0 0), oklch(0.5 0.2 240))."
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {
+            "colors.primary": "banana"
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "error",
+            "path": "colors.primary",
+            "message": "'banana' is not a valid color. Expected a CSS color value (e.g., #ffffff, rgb(0 0 0), oklch(0.5 0.2 240))."
+          }
+        ],
+        "summary": {
+          "errors": 1,
+          "warnings": 0,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"banana\"\n\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "invalid-rounded",
+      "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\nrounded:\n  md: 16bananas\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": true
+      },
+      "criterion": "Rounded dimensional error",
+      "observations": {
+        "returned": true,
+        "errors": 1,
+        "warnings": 1,
+        "primary": {
+          "type": "color",
+          "hex": "#000000",
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "luminance": 0
+        },
+        "findings": [
+          {
+            "severity": "error",
+            "path": "rounded.md",
+            "message": "'16bananas' is not a valid dimension."
+          },
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {
+            "primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {
+            "colors.primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            },
+            "rounded.md": "16bananas"
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "error",
+            "path": "rounded.md",
+            "message": "'16bananas' is not a valid dimension."
+          },
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "summary": {
+          "errors": 1,
+          "warnings": 1,
+          "infos": 3
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {
+                  "primary": "#000000"
+                },
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\nrounded:\n  md: 16bananas\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "invalid-spacing",
+      "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\nspacing:\n  md: 16bananas\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": false
+      },
+      "criterion": "Unparsed spacing retained without matching rounded check",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": {
+          "type": "color",
+          "hex": "#000000",
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "luminance": 0
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {
+            "primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {
+            "colors.primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            },
+            "spacing.md": "16bananas"
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 3
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {
+                  "primary": "#000000"
+                },
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\nspacing:\n  md: 16bananas\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-reference",
+      "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.missing}\"\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": true
+      },
+      "criterion": "Broken token reference diagnosed",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 0,
+        "primary": null,
+        "findings": []
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {
+            "colors.primary": "{colors.missing}"
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [],
+        "summary": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.missing}\"\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": false
+    },
+    {
+      "id": "reference-cycle",
+      "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.secondary}\"\n  secondary: \"{colors.primary}\"\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": true
+      },
+      "criterion": "Reference cycle diagnosed",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 0,
+        "primary": null,
+        "findings": []
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {
+            "colors.primary": "{colors.secondary}",
+            "colors.secondary": "{colors.primary}"
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [],
+        "summary": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\ncolors:\n  primary: \"{colors.secondary}\"\n  secondary: \"{colors.primary}\"\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": false
+    },
+    {
+      "id": "unknown-key-typo",
+      "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\ncolourz:\n  extra: \"#fff\"\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasWarning": true
+      },
+      "criterion": "Unknown token-like or typo key warning",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 3,
+        "primary": {
+          "type": "color",
+          "hex": "#000000",
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "luminance": 0
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          },
+          {
+            "severity": "warning",
+            "path": "colourz",
+            "message": "Unknown key \"colourz\" — did you mean \"colors\"?",
+            "rule": "unknown-key"
+          },
+          {
+            "severity": "warning",
+            "path": "colourz",
+            "message": "\"colourz\" looks like a design-token map but is not a recognized schema key (colors, typography, spacing, rounded, components). It will be silently ignored by export commands. Rename it to a supported key or move its values under a recognized section.",
+            "rule": "token-like-ignored"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {
+            "primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {
+            "colors.primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "sections": [],
+          "unknownKeys": [
+            "colourz"
+          ],
+          "unknownKeyValues": {
+            "colourz": {
+              "extra": "#fff"
+            }
+          }
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          },
+          {
+            "severity": "warning",
+            "path": "colourz",
+            "message": "Unknown key \"colourz\" — did you mean \"colors\"?",
+            "rule": "unknown-key"
+          },
+          {
+            "severity": "warning",
+            "path": "colourz",
+            "message": "\"colourz\" looks like a design-token map but is not a recognized schema key (colors, typography, spacing, rounded, components). It will be silently ignored by export commands. Rename it to a supported key or move its values under a recognized section.",
+            "rule": "token-like-ignored"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 3,
+          "infos": 3
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {
+                  "primary": "#000000"
+                },
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\ncolourz:\n  extra: \"#fff\"\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-name-type",
+      "content": "---\nname: 7\nversion: alpha\ncolors:\n  primary: \"#000000\"\n\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": false
+      },
+      "criterion": "Nonstring name is not formal schema rejection on public path",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 1,
+        "primary": {
+          "type": "color",
+          "hex": "#000000",
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "luminance": 0
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "colors": {
+            "primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {
+            "colors.primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 1,
+          "infos": 3
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {
+                  "primary": "#000000"
+                },
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: 7\nversion: alpha\ncolors:\n  primary: \"#000000\"\n\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-colors-type",
+      "content": "---\nname: Probe\ncolors: 7\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": false
+      },
+      "criterion": "Numeric container examined as possible structural coverage gap",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 0,
+        "primary": null,
+        "findings": []
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {},
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [],
+        "summary": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\ncolors: 7\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "root-array",
+      "content": "---\n- name\n- colors\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": false
+      },
+      "criterion": "Nonmapping YAML examined independently from syntax validity",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 0,
+        "primary": null,
+        "findings": []
+      },
+      "report": {
+        "designSystem": {
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {},
+          "sections": [],
+          "unknownKeys": [
+            "0",
+            "1"
+          ],
+          "unknownKeyValues": {
+            "0": "name",
+            "1": "colors"
+          }
+        },
+        "findings": [],
+        "summary": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\n- name\n- colors\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "unknown-component-property",
+      "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\ncomponents:\n  button:\n    banana: 12px\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": true
+      },
+      "criterion": "Original broken-ref rule checks component property vocabulary",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 2,
+        "primary": {
+          "type": "color",
+          "hex": "#000000",
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "luminance": 0
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "path": "components.button.banana",
+            "message": "'banana' is not a recognized component sub-token. Valid sub-tokens: backgroundColor, textColor, typography, rounded, padding, size, height, width.",
+            "rule": "broken-ref"
+          },
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color, 1 component.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ]
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {
+            "primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {
+            "button": {
+              "properties": {
+                "banana": {
+                  "type": "dimension",
+                  "value": 12,
+                  "unit": "px"
+                }
+              },
+              "unresolvedRefs": []
+            }
+          },
+          "symbolTable": {
+            "colors.primary": {
+              "type": "color",
+              "hex": "#000000",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "luminance": 0
+            }
+          },
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "path": "components.button.banana",
+            "message": "'banana' is not a recognized component sub-token. Valid sub-tokens: backgroundColor, textColor, typography, rounded, padding, size, height, width.",
+            "rule": "broken-ref"
+          },
+          {
+            "severity": "info",
+            "message": "Design system defines 1 color, 1 component.",
+            "rule": "token-summary"
+          },
+          {
+            "severity": "info",
+            "path": "spacing",
+            "message": "No 'spacing' section defined. Layout spacing will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "info",
+            "path": "rounded",
+            "message": "No 'rounded' section defined. Corner rounding will fall back to agent defaults.",
+            "rule": "missing-sections"
+          },
+          {
+            "severity": "warning",
+            "path": "typography",
+            "message": "No typography tokens defined. Agents will use default font choices, reducing your control over the design system's typographic identity.",
+            "rule": "missing-typography"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 2,
+          "infos": 3
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {
+                  "primary": "#000000"
+                },
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\nversion: alpha\ncolors:\n  primary: \"#000000\"\ncomponents:\n  button:\n    banana: 12px\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": false
+    },
+    {
+      "id": "name-only",
+      "content": "---\nname: Probe\n---\n# Probe\n",
+      "expected": {
+        "returned": true,
+        "hasError": false,
+        "hasWarning": true
+      },
+      "criterion": "Missing sections reported as recommendations, not full schema rejection",
+      "observations": {
+        "returned": true,
+        "errors": 0,
+        "warnings": 0,
+        "primary": null,
+        "findings": []
+      },
+      "report": {
+        "designSystem": {
+          "name": "Probe",
+          "colors": {},
+          "typography": {},
+          "rounded": {},
+          "spacing": {},
+          "components": {},
+          "symbolTable": {},
+          "sections": [],
+          "unknownKeys": [],
+          "unknownKeyValues": {}
+        },
+        "findings": [],
+        "summary": {
+          "errors": 0,
+          "warnings": 0,
+          "infos": 0
+        },
+        "tailwindConfig": {
+          "success": true,
+          "data": {
+            "theme": {
+              "extend": {
+                "colors": {},
+                "fontFamily": {},
+                "fontSize": {},
+                "borderRadius": {},
+                "spacing": {}
+              }
+            }
+          }
+        },
+        "sections": [],
+        "documentSections": [
+          {
+            "heading": "",
+            "content": "---\nname: Probe\n---\n# Probe\n"
+          }
+        ]
+      },
+      "expectationMet": false
+    }
+  ]
+}

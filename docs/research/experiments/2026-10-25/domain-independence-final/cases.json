@@ -1,0 +1,90 @@
+[
+  {
+    "id": "zag-base",
+    "candidate": "Zag",
+    "revision": "base",
+    "expected": {
+      "accepted": true,
+      "maxHeight": 160,
+      "otherDomainsByteIdentical": true,
+      "originalContributionIndependent": true
+    }
+  },
+  {
+    "id": "zag-visual-revision",
+    "candidate": "Zag",
+    "revision": "visual-revision",
+    "expected": {
+      "accepted": true,
+      "maxHeight": 192,
+      "otherDomainsByteIdentical": true,
+      "originalContributionIndependent": true
+    }
+  },
+  {
+    "id": "ark-ui-base",
+    "candidate": "Ark UI",
+    "revision": "base",
+    "expected": {
+      "accepted": true,
+      "maxHeight": 160,
+      "otherDomainsByteIdentical": true,
+      "originalContributionIndependent": true
+    }
+  },
+  {
+    "id": "ark-ui-visual-revision",
+    "candidate": "Ark UI",
+    "revision": "visual-revision",
+    "expected": {
+      "accepted": true,
+      "maxHeight": 192,
+      "otherDomainsByteIdentical": true,
+      "originalContributionIndependent": true
+    }
+  },
+  {
+    "id": "uxspec-base",
+    "candidate": "UXSpec",
+    "revision": "base",
+    "expected": {
+      "accepted": true,
+      "maxHeight": 160,
+      "otherDomainsByteIdentical": true,
+      "originalContributionIndependent": true
+    }
+  },
+  {
+    "id": "uxspec-visual-revision",
+    "candidate": "UXSpec",
+    "revision": "visual-revision",
+    "expected": {
+      "accepted": true,
+      "maxHeight": 192,
+      "otherDomainsByteIdentical": true,
+      "originalContributionIndependent": true
+    }
+  },
+  {
+    "id": "panda-css-base",
+    "candidate": "Panda CSS",
+    "revision": "base",
+    "expected": {
+      "accepted": true,
+      "maxHeight": 160,
+      "otherDomainsByteIdentical": true,
+      "originalContributionIndependent": true
+    }
+  },
+  {
+    "id": "panda-css-visual-revision",
+    "candidate": "Panda CSS",
+    "revision": "visual-revision",
+    "expected": {
+      "accepted": true,
+      "maxHeight": 192,
+      "otherDomainsByteIdentical": true,
+      "originalContributionIndependent": true
+    }
+  }
+]

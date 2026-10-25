@@ -557,3 +557,333 @@ Der Browserauszug von STYLE hatte wegen einer doppelten Tabregistrierung einen v
 | [Pfadbaum](https://api.github.com/repos/redongreen/uSpec/git/trees/1e25e9b8bc2e694689ba0489594f38807a341f14?recursive=1) | Snapshot-SHA und truncated:false bestätigt; Plugin-Phasen lokalisiert |
 
 Zusätzlich wurden safe.ts und der Anfang von phaseG.ts zur Orientierung gelesen. Sie tragen keine neue globale Abwesenheitsbehauptung. C400/C401 beschränken sich auf die ausdrücklich genannten Struktur-/Baselinepfade. Andere Export-/Rendererpfade bleiben gegebenenfalls zu prüfen.
+
+
+## S61
+
+**X06-Werkzeugfolgeprüfung – 24. Oktober 2026.** BrowserOS neo, neun gepinnte Originaldateien gezielt gelesen; kein Kandidat installiert, kein Schema-/Compiler-/Runtimeversuch. Diese Runde prüft drei Zellen und schließt den vollständigen Werkzeugvergleich aller Kandidaten nicht ab.
+
+| Kandidat | Quellen und Stand | Gelesener Umfang |
+| --- | --- | --- |
+| OpenUI | [lib/schema.ts](https://github.com/ctate/openui/blob/09d39b211dcaa2e227ed38e312c8822e193cfea9/lib/schema.ts), [Spec.ts](https://github.com/ctate/openui/blob/09d39b211dcaa2e227ed38e312c8822e193cfea9/interfaces/Spec.ts), [schema-table.tsx](https://github.com/ctate/openui/blob/09d39b211dcaa2e227ed38e312c8822e193cfea9/components/schema-table.tsx), [package.json](https://github.com/ctate/openui/blob/09d39b211dcaa2e227ed38e312c8822e193cfea9/package.json), [draft-01.md](https://github.com/ctate/openui/blob/09d39b211dcaa2e227ed38e312c8822e193cfea9/versions/draft-01.md) | Vier Code-/Paketdateien vollständig; Entwurfsstruktur, Format und Validierungs-/Werkzeughinweise gezielt im Vollauszug geprüft. Der Entwurf enthält keinen als §12 Validate bezeichneten Abschnitt; §12 ist Contributing |
+| Google DESIGN.md | [parser/spec.ts](https://github.com/google-labs-code/design.md/blob/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/parser/spec.ts), [lint.ts](https://github.com/google-labs-code/design.md/blob/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/lint.ts), [index.ts](https://github.com/google-labs-code/design.md/blob/6e5da5382f41edbba9d73b2c62f33f32e9971f15/packages/cli/src/linter/index.ts) | Vollständig: Textwrapperschema, offene TS-Ausgabeform, Libraryaufrufkette, recoverable Fehler und öffentliche Exporte |
+| Panda CSS | [design-system-spec/read.ts](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/read.ts) | parseDesignSystem vollständig, restlicher Index als Kontext; kein Vollaudit aller Queryfunktionen |
+
+Der Browserauszug von Googles parser/spec.ts hatte erneut einen veralteten Tab-Header. Die angeforderte gepinnte URL und der Inhalt mit ParserInputSchema/ParsedDesignSystem sind eindeutig; wie bei S59 wurde die tatsächliche Seitenadresse zusätzlich geprüft. Der Tabellenrenderer OpenUIs wird als Renderer untersucht, nicht als Schemaausführung. Manuell abgeleitete Panda-Negativfälle sind ausdrücklich keine ausgeführten Versuche.
+
+
+## S62
+
+**Werkzeugvergleich und XState/Zag/Ark-Folgeprüfung – 24. Oktober 2026.** BrowserOS neo; sechs neue gezielte Dateilesungen am jeweils bereits gespeicherten Snapshot. Kein vollständiger neuer Projektaudit und keine Ausführung. Die Gesamttabellen in TOOLING-COMPARISON werten im Übrigen die bestehenden Quellen S01–S61 aus, ohne einen frischen Abruf aller Kandidaten vorzugeben.
+
+| Quelle | Umfang und Grenze |
+| --- | --- |
+| [XState StateMachine.ts](https://github.com/statelyai/xstate/blob/8f25b68f3953a9dd3c146a76f1f4972aba092a3f/packages/core/src/StateMachine.ts) | Gezielt Konstruktor/schemas, toJSON/definition, getPersistedSnapshot und restoreSnapshot; kein Audit aller Zustandsalgorithmen |
+| [Zag state.ts](https://github.com/chakra-ui/zag/blob/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/core/src/state.ts) | buildStateIndex, ensureStateIndex und Zielauflösung gezielt; exakte helper-Aufrufe, keine ausgeführte Fehlerprobe |
+| [Zag warning.ts](https://github.com/chakra-ui/zag/blob/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/utilities/core/src/warning.ts) | Vollständig: warn/invariant nur außerhalb production, ensure/ensureProps separat |
+| [Utils package.json](https://github.com/chakra-ui/zag/blob/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/utilities/core/package.json) | Vollständig: Paketname @zag-js/utils, Version 1.46.0, Typecheckskript und Einstieg |
+| [Utils index.ts](https://github.com/chakra-ui/zag/blob/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/utilities/core/src/index.ts) | Vollständig: Export von warning.ts; Zuordnung zu state.ts bestätigt |
+| [Ark Combobox API-JSON](https://github.com/chakra-ui/ark/blob/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/src/content/types/react/combobox.types.json) | Gezielt Root-/Item-Metadaten, ListCollection<T>, Callback-/Defaultdarstellungen; kein Vollvergleich sämtlicher Komponenten |
+
+Ein vermuteter Zag-Pfad packages/utilities/utils/src lieferte 404. Der tatsächliche Pfad wurde über die gepinnten Verzeichnisansichten packages → utilities → core → src gefunden. Die 404 begründet keine Bewertung. C406 präzisiert die ältere allgemeine Beschreibung interner Prüfungen; der Fehlerwurf wird nicht mehr pauschal als produktionsunabhängig beschrieben.
+
+## S63
+
+**Gesamtprüfung und beide Detailvergleiche – 24. Oktober 2026.** BrowserOS neo. Neue gezielte Lesungen sowie erneute manuelle Auswertung der gespeicherten Originalbefunde; kein frischer Vollabruf sämtlicher Kandidaten und keine Ausführung. Folgende Quellen tragen die neuen Befunde C408–C410, C413–C417:
+
+| Originalquelle / Stand | Gelesener Umfang und Grenze |
+| --- | --- |
+| [SCXML 1.0 REC 2015](https://www.w3.org/TR/2015/REC-scxml-20150901/) | Erneut §§3.13, 5.7, 5.10.1, 6.2, 6.4 und Ausführungsalgorithmus gezielt: param/send, Ereignisdaten, Reihenfolge, Dienstinstanz, Abbruch. Kein Interpreter gewählt |
+| [XState invoke](https://stately.ai/docs/invoke) | Offizielle veränderliche v5-Dokumentation, datierter Abruf: ID/Input, Start/Stop, Reentry, initiales Ereignis. Kein neuer gepinnter Coreaudit |
+| [Zag Composition](https://zagjs.com/guides/composition) | Offizielle veränderliche Dokumentation, erneut ID-/Eventkomposition mit useMachine, ids und mergeProps; kein Kompositionsversuch. Die zunächst versuchte overview/composition-Seite zeigte einen Ladefehler, nicht einen Fähigkeitsbeweis |
+| [CEM schema.d.ts](https://github.com/webcomponents/custom-elements-manifest/blob/2570079a0525c26296f9ec39944f0c6e0f0461af/schema.d.ts), [Originalbeispiel](https://github.com/webcomponents/custom-elements-manifest/blob/2570079a0525c26296f9ec39944f0c6e0f0461af/examples/simple-element.json) | Event, Type, Reference und TypeReference sowie Ereignis im Beispiel; Typauflösung nicht ausgeführt |
+| [Google DESIGN.md spec](https://github.com/google-labs-code/design.md/blob/6e5da5382f41edbba9d73b2c62f33f32e9971f15/docs/spec.md) | Erneut Layout/spacing, components, Varianten und Tokenreferenzen; keine globale Behauptung über alle Erweiterungen |
+| [UXSpec SPEC](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/spec/SPEC.md), [Originalschema](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json) | Gespeicherte Vollauszüge gezielt erneut ausgewertet: Kontext/Event/Aktion, invoke, expr und oneOf. Logischer Mehrfachtreffer abgeleitet, kein Schema ausgeführt |
+| [UXSpec App-Interpreter](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/engine/interpreter.ts) | Vollständig erneut gelesen: send, enter/exit, always, Initialisierung und Mockevent-Autosimulation; andere Engines nicht ausgeschlossen |
+| [UXSpec validate.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/validate.ts) | Operator-/Variablen-/Zielprüfungen und tatsächliche Rückgabe; kein CLI-Aufruf |
+| [CSS Anchor Positioning WD 27.03.2026](https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/) | Erneut §§2.1/2.2, Ankerauflösung und §9; Gleichnamigkeit, Elementteilbaum, implizite Anker und Accessibility-Grenze |
+| [OpenPencil Behaviour-Schema](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/behaviours/schema.ts), [Controlpreview](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/index.ts), [Fields](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/fields.ts) | Erneut eigene Behaviourfelder sowie konkrete Radio-/Reka-/Slider-/Numberfieldbindungen; weder vollständiger Editor noch sämtliche Reka-Patterns auditiert |
+
+Die übrigen Zellen in ALL-FIELDS-REVIEW nutzen die bereits dokumentierten Quellen S01–S62. Jede davon wurde gegen das gespeicherte Kriterium erneut eingeordnet, aber nicht als neue externe Entdeckung ausgegeben. Die Primärtexte wurden als Daten behandelt, nicht als Arbeitsanweisungen.
+
+## S64
+
+**OpenPencil X05: tatsächlicher Bibliotheksresolver – 24. Oktober 2026.** BrowserOS neo, unveränderlicher Snapshot `ab2875cc761ee6cff17d389ff1c85fedae50aeab`. Neue Scopeergänzung: Das bislang auf Behaviour begrenzte Modell wird für diese eine Bindungsfrage durch das originale Bibliothekssubsystem ergänzt. Andere Editorfunktionen werden dadurch nicht pauschal zugerechnet.
+
+| Pfad | Gelesener Umfang |
+| --- | --- |
+| [library/types.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/core/src/library/types.ts) | Manifest, Revision, Catalog, libraryId/revisionId/assetKey vollständig |
+| [library/registry.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/core/src/library/registry.ts) | Explizite Revision vs latest, Kopieren per Serialisierung, Publishkonflikte |
+| [library/revision.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/core/src/library/revision.ts) | Erzeugung von Snapshot und contentbasierter Revisions-ID |
+| [library/snapshot.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/core/src/library/snapshot.ts) | Vollständig: Closure, ID-Remapping, Plugininhalt und kanonischer Hashgegenstand |
+| [library/materialize.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/core/src/library/materialize.ts) | Vollständig: Abhängigkeiten, Wiederverwendung per Revision, librarySource, Kopierpfad |
+| [library/serialization.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/core/src/library/serialization.ts) | Vollständig: Manifest/Graphkopie, Wiederaufbau und Instanzindex |
+| [library/validation.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/core/src/library/validation.ts) | Vollständig: Größenlimits, Assetkeys, Quellknoten, Typ-/Content-/Revisionshashprüfungen. Vorhandene Funktion ist kein Nachweis ihres Aufrufs in jedem Importpfad |
+| [scene-graph/copy.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/copy.ts) | cloneNodeProps gezielt, insbesondere Erhalt von pluginData; kein Voll-Audit aller Geometriehelfer |
+
+C411 folgt aus konkreter Auflösung und Verwendung einer expliziten Revision. Ein Aufruf ohne revisionId darf latest wählen und ist deshalb kein gleichwertiger reproduzierbarer Pin. Nicht geprüft wurden tatsächlicher Import/Update, Hashstabilität über Implementierungsstände, Signaturauthentizität, neutraler Fremdmodellresolver oder vollständiger Export-/Roundtrip. Ein Inhaltshash ist keine Migrationsstrategie.
+
+## S65
+
+**CSS-Modusauswahl – 24. Oktober 2026.** [Media Queries Level 5, Working Draft vom 19. Februar 2026, §12.5](https://www.w3.org/TR/2026/WD-mediaqueries-5-20260219/#prefers-color-scheme), über BrowserOS neo gelesen. Das Dokument besitzt Draftstatus; kein unterstützender Browser oder Checker wurde ausgeführt.
+
+Geprüft: Grammatik light|dark und Bedeutung beider Präferenzen einschließlich light ohne aktive Präferenz; bedingte Styleauswahl. Diese Scopeergänzung begründet allein C412/V03. Manuelle Produktüberschreibung, beliebige Designsystemmodi, native Themes, tatsächliche Browserkonformität und Vier-Domänen-Bindung sind nicht Teil dieses Nachweises. Anchor/Overflow bleiben getrennte Module.
+
+## S66
+
+**Ausgeführte Originalschema-/Funktionsproben – 24. Oktober 2026, E3.** Exakte Quelldaten und Hashes der Browser-Lesefassungen stehen im [Versuchsmanifest](experiments/2026-10-24/source-manifest.json); vollständige Originaltexte bleiben bei ihren Quellen. Alle Eingaben, Erwartungen und Ausgaben sind im [Versuchsordner](experiments/2026-10-24/REPORT.md) gespeichert.
+
+| Quelle / Stand | Tatsächlich geprüft |
+| --- | --- |
+| [CEM schema.json, Snapshot 2570079](https://github.com/webcomponents/custom-elements-manifest/blob/2570079a0525c26296f9ec39944f0c6e0f0461af/schema.json) | Sechs Root-Fälle; zusätzlich drei Diagnosewrapper um unveränderte Originaldefinitionen. Numerischer Eventname passiert Root über allgemeinen ClassDeclaration-Zweig |
+| [UXSpec Originalschema, Snapshot 20dfae0](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json) | Neun Schemafälle, insbesondere machineInvoke-oneOf, fehlender Zielzustand, unbekannter Operator, Default und freie Visualfelder |
+| [UXSpec style-map.ts, derselbe Snapshot](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/style-map.ts) | Sechs ausgeführte Originalfunktionsaufrufe; Inhalt unverändert, Dateiendung .mts für Node-Modulmodus, native TypeScript-Typentfernung. Kein React-/Browserrendering |
+| [python-jsonschema 4.25.1](https://pypi.org/project/jsonschema/4.25.1/) | Version vor Bereitstellung geprüft; Draft7Validator und Draft202012Validator, check_schema und iter_errors. Python 3.12.14, aufgelöste Abhängigkeiten gespeichert |
+
+Der Schemafall mit falschem CEM-Eventnamen erfüllte die erwartete Abweisung nicht; der erste Lauf endete deshalb mit Exitstatus 1. Dieser Befund ist erhalten und durch die getrennten Definitionen eingegrenzt. Der erste Mapperlauf enthielt unvollständige Harness-Erwartungen; ursprüngliche und korrigierte Ergebnisse sind getrennt erhalten. Keine stille Originalschema-/Quelltextreparatur und keine angebliche grüne Gesamtprüfung.
+
+## S67
+
+**CEM-Payloadauflösung mit TypeScript – 24. Oktober 2026, E3.** [TypeScript 5.9.3 Paketmetadaten](https://github.com/microsoft/TypeScript/blob/v5.9.3/package.json) und offizielle [Compiler-API-Dokumentation](https://github.com/microsoft/TypeScript/wiki/Using-the-Compiler-API), über BrowserOS neo gelesen. Dokumentation zu Program/TypeChecker gezielt ausgewertet; keine neue allgemeine Garantie der Compiler-API-Stabilität abgeleitet.
+
+Sechs gespeicherte Fälle verwenden tatsächlich TypeScript 5.9.3 mit DOM-Bibliothek und getTypeFromTypeNode/getPropertyOfType/getTypeOfSymbolAtLocation/getPropertiesOfType. Der CEM-Typtext eines synthetischen öffentlichen Events wird auf CustomEvent.detail projiziert. Diese explizite Web-/TypeScript-Regel ist eine zusätzliche Adapterentscheidung, kein impliziter Standard für jede CEM-Typnotation. Paketpin und Integrität stehen in typescript-package-lock.json; tatsächliche Daten und Diagnostik in payload-results.json. Keine emittierte oder ausgeführte Komponentenimplementierung.
+
+## S68
+
+**Praktische HTML-/ARIA-Hostprüfung – 24. Oktober 2026, E3.** Öffentlicher [W3C Nu Html Checker](https://validator.w3.org/nu/), Text-input-Modus über BrowserOS neo. Ergebnisansicht meldet **vnu 26.10.18**. Fünf selbst erzeugte vollständige HTML-Eingaben, exakte Antworten und Erwartungen stehen in nu-results.json.
+
+Geprüft: Kontrollfall mit combobox/controls/activedescendant, ungültiges expanded, fehlendes controls-Ziel, falsche aktive Option einer zweiten Listbox und doppelte ID. Der Kontrollfall hat eine descendant/aria-owns-Warnung. Fehlendes controls-Ziel und falsche Instanz erzeugen keine zusätzliche Diagnose; falscher ARIA-Wert und doppelte ID werden beanstandet. Kein vollständiger ARIA-/APG-Konformitätsbeweis und keine Forderung, die Kontrollwarnung ohne fachliche Prüfung durch zusätzliche aria-owns-Angaben zu unterdrücken. Der Dienst ist veränderlich; angezeigte Version ist kein lokal reproduzierbarer Binärpin oder Nachweis seiner exakten normativen ARIA-Fassung. Die Prüffälle wurden nicht als UI gerendert oder mit assistiver Technik bedient.
+
+## S69
+
+**CSS-Checkergrenze – 24. Oktober 2026, E3.** Derselbe [W3C Nu-Dienst](https://validator.w3.org/nu/), Ergebnisansicht vnu 26.10.18, Text-input-Modus mit tatsächlich aktiviertem check as CSS. Vier selbst erzeugte Eingaben und vollständige Antworten in css-checker-results.json. Keine zusätzlichen Dokumentdaten, kein Layout-/Browserrendering. Basisgrößen/Overflow/Medienbedingung als Kontrolle, falscher Overflowwert und falsche Einheit als Negativfälle; Anchorbeitrag als Unterstützungsprobe. Der Dienst weist die untersuchte Anchor-Syntax zurück und ist damit kein geeigneter positiver Nachweis der vollständigen gespeicherten Draftkombination. Andere Checker oder Browser werden dadurch nicht bewertet.
+
+## S70
+
+**Originale SCXML-XSD-Prüfung – 24. Oktober 2026, E3.** Offizieller [SCXML-XSD-Driver](https://www.w3.org/2011/04/SCXML/scxml.xsd), Core/Data/External und Datatypes/Attribs/Contentmodels im gleichen W3C-Verzeichnis sowie [XML-Namensraumschema](https://www.w3.org/2001/xml.xsd). Acht Originalantworten über BrowserOS neo gelesen; für exakten XML-Quelltext Browserkontext statt transformierter XSL-Darstellung verwendet. Quellen und Text-Hashes in scxml/source-manifest.json. Während der lokalen Prüfung sind Netzwerk und Entitätsauflösung deaktiviert.
+
+Original-XSD-1.0-Kette mit lxml 6.1.1 / libxml2 2.14.6 kompiliert; sechs eigene Eingaben geprüft. Fehlende Version und doppelte ID abgewiesen; fehlendes Ziel unerwartet akzeptiert. Ungültiger Ausdruck passiert die Strukturprüfung. Originalschema, Voraberwartung und Ergebnis bleiben getrennt; kein Schema repariert, kein strenger XSD-1.1-Validator und kein SCXML-Interpreter ausgeführt. Ergebnisse in scxml/results.json, Bericht in scxml/REPORT.md.
+
+## S71
+
+**Getrennte öffentliche CEM-/SCXML-Signaturbindung – 24. Oktober 2026, E3.** Verwendet die Originalstände S66/S67/S70. Keine neue externe Standardbehauptung: Die betrachtete Route, namensgleiche Zuordnung und TypeScript-/CustomEvent.detail-Projektion sind ausdrücklich zusätzliche Forschungsregeln. Vier eigene SCXML-Varianten bestehen alle das Original-XSD; die zusätzliche statische Prüfung erkennt falschen Ausgabenamen, falschen Parameternamen und falschen Werttyp gegen das separate öffentliche CEM-Modell. Positiver Fall kompatibel. TypeScript 5.9.3, noEmit, enge gemeinsame Ausdrucks-/Literalteilmenge. Tatsächliche Eingaben, erzeugte Prüftexte und Diagnostik in scxml/binding-results.json. Kein Host-Dispatch, Interpreter oder UI implementiert.
+
+## S72
+
+**Ausgeführte UXSpec-Referenz-/Bündelprüfung – 24. Oktober 2026, E3.** Unveränderter Snapshot `20dfae0e7224d952e198afdf4ffed26d6fd67180`. Sechs über BrowserOS neo frisch gelesene Originaldateien: [resolve.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/resolve.ts), [import-resolver.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/import-resolver.ts), [bundler.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/bundler.ts), [compile.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/compile.ts), [diagnostics.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/diagnostics.ts), [state-paths.ts](https://github.com/johnlindquist/uxspec/blob/20dfae0e7224d952e198afdf4ffed26d6fd67180/src/compiler/state-paths.ts). Vollständige Browsercodeblöcke und Text-Hashes, keine behauptete HTTP-Byteidentität. Ein Browserkontext-Fetch auf raw.githubusercontent.com schlug fehl; die Dateien wurden stattdessen regulär in eigenen Tabs gelesen, keine Sicherheitsumgehung.
+
+TypeScript 5.9.3 transpiliert die unveränderten Texte nach CommonJS/ES2022 mit esModuleInterop; keine Kandidaten-Projekttypprüfung. Node 24.22.1 führt die Originalfunktionen gegen 14 eigene Fixturesätze aus. Ergebnisse und Quelldaten im references-Unterordner der Experimente. Getrennte Originalschema-Vorprüfung: 15 von 24 UXSpec-Dateien akzeptiert, neun abgewiesen. Die Kriterienauswertung erfolgte ausdrücklich nach dem explorativen Lauf; keine unabhängige Replikation oder Präregistrierung. Gleichnamige Kind- und Eintrittsmaschinen werden auch bei schema-konformen Eingaben still überschrieben. Referenz-/Invoke-Explorationen mit separat abgewiesenen Originalschemaeingaben sind entsprechend begrenzt, kein verallgemeinerter gültiger UI-Gegenfall. Keine Originaldatei repariert, keine UI-/Actor-Laufzeit oder Vier-Domänen-Integration ausgeführt.
+
+## S73
+
+**Gebundene CSS-Grammatikprüfer – 24. Oktober 2026, E3.** Primäre Registrymetadaten [css-tree 3.1.0](https://registry.npmjs.org/css-tree/3.1.0), [css-tree 3.2.1](https://registry.npmjs.org/css-tree/3.2.1), über BrowserOS neo gelesen. Der datierte latest-Abruf ergab 3.2.1; kein unveränderlicher Latestanspruch. Installierte Originalreadmes und Lexer-/Wörterbuchdefinitionen zusätzlich lokal gelesen. README beschreibt MDN-Daten als Basis und begrenzt den Lexer auf Werte/At-Rules. Paketlocks und konkrete Abhängigkeiten sind gespeichert; keine Grammatik geändert.
+
+Je 17 Fälle mit matchProperty/getProperty gegen unveränderte Definitionen ausgeführt. MDN-Datenstände 2.12.2 und 2.27.1. Getestete Original-W3C-Zielgrammatik: bereits gespeicherter [Anchor-WD 27.03.2026](https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/), insbesondere position-anchor §2.4 und Anchor-Seiten. Beide Checkerdefinitionen unterscheiden sich von dessen normal/match-parent-Werten. Verschachtelte ungültige Funktion innerhalb calc wird akzeptiert; var-Matching meldet ausdrücklich fehlende Unterstützung. Ergebnisse, Propertygrammatiken, Paketpins und Reproduktion im css-grammar-Unterordner der Experimente. Keine DOM-/Browser-/AT-Prüfung und kein eigener Originalvalidator behauptet.
+
+## S74
+
+OpenPencil Originalrevision ab2875cc761ee6cff17d389ff1c85fedae50aeab, über BrowserOS neo gelesen: Scenegraph variables/schema.ts, resolution.ts, token.ts, index.ts und types.ts sowie dom-css tokens/values.ts, conditions.ts, stylesheet.ts und validate.ts. [Original Variablenauflösung](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/variables/resolution.ts), [Original Tokenexport](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/stylesheet.ts). Einzelquellen und Hashes im [Manifest](experiments/2026-10-24/openpencil-visual/source-manifest.json). E2 für Modell/Exportpfad, E3 ausschließlich für zehn ausgeführte Einzel-Featureparserfälle; kein gesamter Exportlauf. [Bericht](experiments/2026-10-24/openpencil-visual/REPORT.md).
+
+## S75
+
+OpenPencil Originalrevision ab2875cc761ee6cff17d389ff1c85fedae50aeab, erneut über BrowserOS neo: [Variablenschema](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/variables/schema.ts), dessen originale color/primitives-Schemata, [CSSOM-Pfad](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/tokens/cssom-validator.ts) und validate.ts. Primäre Registrymetadaten der exakt installierten Originalabhängigkeiten valibot 1.5.0, postcss-value-parser 4.2.0 und @acemir/cssom 0.9.31 per Browser gelesen. Ausführung E3, keine veränderten Originalfunktionen oder Ersatzparser. 15 Schema- und 16 CSSOM-Fälle, gemeinsame Ausführung Status 1 wegen vorab erwarteter Ablehnung eines tatsächlich akzeptierten Arrays. [Manifest, Pins, Fälle, Ergebnisse und Reproduktion](experiments/2026-10-24/openpencil-validation/REPORT.md).
+
+## S76
+
+OpenPencil zusätzliche Layoutquellen der Revision ab2875cc761ee6cff17d389ff1c85fedae50aeab: SceneNode in types.ts, [fields/layout.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/scene-graph/src/fields/layout.ts), [dom-css/export/projection.ts](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/export/projection.ts) und HTML-Serializer. BrowserOS neo, vollständige Dateilesefassungen mit gepinnten URLs und Hashes. E2, kein Ausführungstest. [Layoutbericht und Manifest](experiments/2026-10-24/openpencil-layout/REPORT.md).
+
+## S77
+
+25. Oktober 2026, BrowserOS neo. OpenPencil ab2875cc761ee6cff17d389ff1c85fedae50aeab: [Preview-Controlpfad](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/vue/src/canvas/islands/controls/index.ts), fields.ts, render.ts und vue/package.json vollständig gelesen. Das Paket verlangt reka-ui ^2.10.5. [Originale Registrymetadaten 2.10.5](https://registry.npmjs.org/reka-ui/2.10.5) nennen gitHead a1d44a823240769cfd401a8e6589abc1e5d763e2. Genau dort [SwitchRoot.vue](https://github.com/unovue/reka-ui/blob/a1d44a823240769cfd401a8e6589abc1e5d763e2/packages/core/src/Switch/SwitchRoot.vue) und [Switch-Dokumentation](https://github.com/unovue/reka-ui/blob/a1d44a823240769cfd401a8e6589abc1e5d763e2/docs/content/docs/components/switch.md) gelesen. Ergänzender datierter [APG-Switch-Abruf](https://www.w3.org/WAI/ARIA/apg/patterns/switch/), veränderlicher informativer Guide. E1/E2, kein installierter oder gerenderter Integrationsversuch. [Befund und Manifest](experiments/2026-10-25/openpencil-a11y/REPORT.md).
+
+## S78
+
+25. Oktober 2026, BrowserOS neo: Panda Originalrevision 86f78a228204d63baa0b8bca2676d9f26190e449, [read.ts](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/read.ts) und [types.ts](https://github.com/chakra-ui/panda/blob/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/types.ts) vollständig gelesen. Originalmodule mit TypeScript 5.9.3 transpiliert; 18 gespeicherte Eingabe-/Abfragefälle mit Node 24.22.1, ohne Projektbuild oder Ersatzfunktionen. E3, begrenzter Exportreader-/Indexversuch. [Quellenmanifest und reproduzierbarer Bericht](experiments/2026-10-25/panda-reader/REPORT.md).
+
+## S79
+
+25. Oktober 2026, BrowserOS neo: Google DESIGN.md Originalparser-Spec, lint.ts, index.ts und Paketdefinition am bisherigen Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15 erneut gelesen. [Primäre Registrymetadaten 0.4.0](https://registry.npmjs.org/@google%2fdesign.md/0.4.0) nennen dagegen gitHead 9bf8eae67128b6cc55ad9bf86665767deb4c11cd. Dort [lint.ts](https://github.com/google-labs-code/design.md/blob/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/lint.ts), [Parserhandler](https://github.com/google-labs-code/design.md/blob/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/parser/handler.ts) und parser/spec.ts vollständig gelesen. Installierte Originaldistribution samt mitgelieferter Spec/Config und gebündeltem Modell-/Regelcode lokal geprüft. Zwei dateibezogene Quellenvergleiche positiv, keine Gesamtidentität behauptet. 20 Original-Libraryfälle mit Standardregeln und Node 24.22.1; keine Schema-/Regelersatzfunktion. [Versionsbindung, Fälle, Outputs und Grenzen](experiments/2026-10-25/google-linter/REPORT.md).
+
+## S80
+
+25. Oktober 2026, BrowserOS neo und isolierte Originalpaketinstallation: [Primäre axe-core-4.14.0-Metadaten](https://registry.npmjs.org/axe-core/4.14.0), Paketlock, Original-README/API-/Regeldefinitionen im installierten axe.js. Paket ist eine automatische HTML-Accessibility-Prüfbibliothek, keine vollständige Konformitätsgarantie. Datierter latest-Abruf ergab 4.14.0; ausgeführt ist die feste Version. Browsercode über [festen Distributionspfad](https://unpkg.com/axe-core@4.14.0/axe.min.js) mit browserseitig erzwungenem SHA-384 der installierten Originaldatei geladen. Chrome 155, eigener about:blank-Prüftab. Zehn Originalregel-Fixtures und dieselben zehn Fixtures gegen ausdrücklich eigene zusätzliche Instanzregeln; keine Keyboard-/Fokus-/AT-Ausführung und kein Produkt. [Vollständiger Bericht, SRI, Hashes, Regeln, Original-/Zusatzoutputs](experiments/2026-10-25/aria-host-bindings/REPORT.md).
+
+## S81
+
+25. Oktober 2026: eigener begrenzter Vier-Domänen-Forschungsfall mit selbst erstellten CEM-/SCXML-/CSS-/HTML-Prüfarbeitsdateien, keine übernommenen Fremdkomponenten. Bestehende unveränderte Originalquellen/-werkzeuge aus S66 (CEM-Schema), S70 (SCXML-XSD-Kette), S73 (css-tree 3.2.1), S80 (axe-core 4.14.0) wiederverwendet; kein erneuter vollständiger Quellenaudit behauptet. Zusätzlicher eigener Bindungschecker getrennt ausgewiesen, TypeScript 5.9.3 für den begrenzten öffentlichen Detailtyp. BrowserOS neo/Chrome 155 für HTML-Hostregeln sowie zwei feste und zwei variable Layoutmessungen. [Eigene Fixtures, Quellen-/Hashmanifest, vier Originalkontrollen, 13 Bindungsfälle, vier Browsermessfälle und Abgrenzung](experiments/2026-10-25/four-domain/REPORT.md). E3, keine Actor-/Keyboard-/Fokus-/AT-Ausführung oder Produktformatwahl.
+
+## S82 – tatsächliche SCXML-Ausführung und zusätzlicher Browser-Host
+
+Abruf/Versuch: 25.10.2026. Originalpaket [@scion-scxml/scxml 4.3.28](https://registry.npmjs.org/@scion-scxml%2fscxml/4.3.28), gitHead ce920c0df2cbf1e96b0ebafa658c1019c43f81d7; [@babel/polyfill 7.12.1](https://registry.npmjs.org/@babel%2fpolyfill/7.12.1). Original-README, Typen, documentStringToModel/prepare, Statechart und natives Parent-send selektiv gelesen; Node-Lock und Browser-SRI getrennt gebunden. [Manifest](experiments/2026-10-25/scxml-runtime/source-manifest.json), [Bericht](experiments/2026-10-25/scxml-runtime/REPORT.md). 10+2+5 Bedingungen, ursprünglicher Datenisolationsfehler erhalten. Zusatzhost ist eigene Forschung, keine Originalstandardfunktion.
+
+## S83 – getrennte DTCG-Visualquelle mit zusätzlichem Webadapter
+
+[DTCG Format Module 2025.10](https://www.designtokens.org/TR/2025.10/format/) erneut am 25.10.2026 über BrowserOS gelesen: §7.2.2, §7.2.3 und §8.2. Community Group Report, keine W3C Recommendation. [Manifest](experiments/2026-10-25/dtcg-binding/source-manifest.json), [Bericht](experiments/2026-10-25/dtcg-binding/REPORT.md). Eigene dimension-/Alias-Teilmenge und zusätzlicher Bindungsprüfer, zwölf Fälle; vier Browserbedingungen mit px/rem. Kein Original-DTCG-Validator ausgeführt.
+
+## S84 – Original-Defaultinvoker und Unterkomponenten-Lebenszyklus
+
+25.10.2026, dieselbe Distribution @scion-scxml/scxml 4.3.28 / core-base 1.0.26 wie S82. Selektiv Originaldatei lib/runtime/invokers.js und invoke/cancelInvoke/getSnapshot/isFinal aus core-base gelesen. [Manifest](experiments/2026-10-25/scxml-invoke/source-manifest.json), [Bericht](experiments/2026-10-25/scxml-invoke/REPORT.md). Sechs Ausgangsbedingungen (drei verletzt), ein Diagnosefall erfüllt. Original-Default-Dateiinvoker; neue eigene kleine Forschungsmodelle, kein Hersteller-ScrollArea-Modell.
+
+## S85 – eigene informationsbezogene Ownership-/Konfliktprüfung
+
+25.10.2026. Eigene Zusatzpolicy am unveränderten Ausgangspaket aus S83, keine neue Originalstandardquelle. Originalschemata aus S66/S70 sowie @scion-scxml/scxml 4.3.28 aus S82 erneut an tatsächlich angenommenen Änderungen ausgeführt. [Manifest](experiments/2026-10-25/ownership-conflicts/source-manifest.json), [Bericht](experiments/2026-10-25/ownership-conflicts/REPORT.md). 15 Transaktionsfälle, eine Revisionskonsistenzbedingung mit erhaltenem Ausgangsfehler und Korrektur, vier praktische Gegenbedingungen. Wiederholte Regression zählt nicht zusätzlich. Deklarierte Rollen/Hashjournale sind keine Identitätsauthentifizierung oder persistente Transaktionsgarantie.
+
+## S86 – eigene typisierte Originalmodell-/Hostreferenzen
+
+25.10.2026. Eigener statischer Zusatzresolver mit vier getrennten Originalformat-Fixtures des Basispakets S81. Gepinnte Originalschemas aus S66/S70 erneut je Variante geprüft; keine neue Original-ARIA-Modellsprache behauptet. [Manifest](experiments/2026-10-25/typed-references/source-manifest.json), [Bericht](experiments/2026-10-25/typed-references/REPORT.md). 16 vorab benannte Bedingungen, tatsächliche Zielart-/Definitions-/Instanzprüfung und Auflösungszeugen. Kein neuer Browser-, Interpreter-, axe- oder AT-Lauf.
+
+## S87 – XState-Core 5.33.3: konkrete X06-Grenze
+
+25.10.2026. [Exakte NPM-Metadaten](https://registry.npmjs.org/xstate/5.33.3) über BrowserOS gelesen; keine gitHead-Angabe, daher keine ungeprüfte Bytegleichsetzung mit früherem Repositorysnapshot. Original-NPM-Distribution gepinnt, 132 Dateien vollständig inventarisiert; relevante Export-/setup/createMachine-/StateMachine-/schemas-/restore-/SDK-Pfade selektiv gelesen. [Manifest](experiments/2026-10-25/xstate-validator/source-manifest.json), [Inventur](experiments/2026-10-25/xstate-validator/source-audit.json), [Bericht](experiments/2026-10-25/xstate-validator/REPORT.md). Sechs tatsächliche Core-API-Fälle, drei SDK-Typfälle mit TypeScript 5.9.3. Kein eigenes Originalschema erfunden; kein Audit anderer Stately-Produkte oder externer Validatoren.
+
+## S88 – Zag-/Ark-X06: Originalwerkzeugrollen und reale Paketidentität
+
+25.10.2026, BrowserOS: [@zag-js/core 1.46.0](https://registry.npmjs.org/@zag-js%2fcore/1.46.0), [@ark-ui/react 5.39.3](https://registry.npmjs.org/@ark-ui%2freact/5.39.3) und separat [gepinntes Combobox-API-JSON](https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/src/content/types/react/combobox.types.json). Tatsächliche Pakete/Abhängigkeiten mit Lock gebunden; selektiv createMachine/state/invariant/ensure/MachineSchema und Ark UseComboboxProps gelesen. [Manifest](experiments/2026-10-25/zag-ark-validation/source-manifest.json), [Inventur](experiments/2026-10-25/zag-ark-validation/package-inventory.json), [Auflösung](experiments/2026-10-25/zag-ark-validation/package-resolutions.json), [Bericht](experiments/2026-10-25/zag-ark-validation/REPORT.md). Zehn Original-Core-Modusbedingungen und drei SDK-Typfälle, keine Schemakette daraus erfunden. Ark-NPM bindet Zag 1.45.0, früherer gleichversionierter Repositorysnapshot 1.46.0; unterschiedliche Originalstände, keine ungeprüfte Übertragung.
+
+## S89 – Panda-Originalexporttyp und Reader, gepaarte Gegenprüfung
+
+25.10.2026; vorhandene vollständige Original-Lesefassungen am Commit 86f78a228204d63baa0b8bca2676d9f26190e449 wiederverwendet, kein behaupteter neuer Webabruf: [types.ts](https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/types.ts), [read.ts](https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/packages/compiler-shared/src/design-system-spec/read.ts). [Manifest](experiments/2026-10-25/panda-artifact-types/source-manifest.json), [Bericht](experiments/2026-10-25/panda-artifact-types/REPORT.md). Neun identische Eingaben am Originalreader und über zusätzliche statische Literalzuweisung am Originalartefakttyp, TypeScript 5.9.3. Kein neutrales Original-JSON-Schema daraus erfunden, kein Generator-/Compilerbuild.
+
+## S90 – endlicher X06-Umfang und WAI-ARIA-Originalmodellgrenze
+
+25.10.2026, BrowserOS: bekannte [WAI-ARIA-1.2-Recommendation, §8](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#host_languages), [§3.4](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#conformance_checkers), [Anhang A](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#typemapping) gezielt neu ausgewertet. Explizite Hostsprachen-/Formatgrenze und nichtnormative Typabbildung, keine neue Version oder Laufzeitprobe. [Manifest](experiments/2026-10-25/x06-official-scope/source-manifest.json), [Originalabschnitte](experiments/2026-10-25/x06-official-scope/aria-sections.json), [endliches Register und Bewertung](experiments/2026-10-25/x06-official-scope/REPORT.md).
+
+## S91 – ursprüngliche Ark-Dokumentationsextraktion
+
+25.10.2026, BrowserOS am unveränderten c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc: [Rootmanifest](https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/package.json), [Scriptsmanifest](https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/scripts/package.json), [vollständiger generate-type-docs.ts](https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/scripts/src/generate-type-docs.ts). SDK-Typechecker/JSDoc → Website-API-JSON; keine Ausführung. [Beobachtete Manifeste](experiments/2026-10-25/x06-official-scope/ark-manifests.json), [Generatornotizen/Hash](experiments/2026-10-25/x06-official-scope/ark-generator-notes.json). Keine Schemafähigkeit allein aus Abhängigkeitsnamen oder Scriptnamen abgeleitet.
+
+## S92 – Ark-Originalschema für API-JSON und MCP-Gegenstand
+
+25.10.2026, BrowserOS am c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc. Vollständiger Originalbaum truncated:false zur Pfadauflösung, [MCP-Manifest](https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/packages/mcp/package.json), HTTP-/Toolregistry, alle sieben Toolhandler, Fetch-/Antworttypen und Website-Types-Routen gelesen. Entscheidender Fund: [Original-velite.config.ts](https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/velite.config.ts), Collectionschema für types/**/*.json; [Original-Combobox-API-JSON](https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/website/src/content/types/react/combobox.types.json). Tatsächliches [Velite0.4.0](https://registry.npmjs.org/velite/0.4.0) gemäß Websitepaket gebunden, Originalschema mit Metadatentransformation ausgeführt. [Manifest](experiments/2026-10-25/ark-mcp-scope/source-manifest.json), [Quellorte/Hashnotizen](experiments/2026-10-25/ark-mcp-scope/original-source-notes.json), [Bericht](experiments/2026-10-25/ark-mcp-scope/REPORT.md). Sechs Originalschema-Bedingungen, kein Schemaersatz, MCP-Server oder vollständiger Websitebuild.
+
+## S93 – Panda-Originaldatengegenstand und erforderliche Prüfbindung
+
+25.10.2026, BrowserOS: am unveränderten 86f78a228204d63baa0b8bca2676d9f26190e449 gezielt [Rust-specs.rs](https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/crates/pandacss_codegen/src/artifacts/specs.rs) und das referenzierte [Design-Dokument](https://raw.githubusercontent.com/chakra-ui/panda/86f78a228204d63baa0b8bca2676d9f26190e449/design-notes/design-system-spec.md); zusätzlich separat datierte [öffentliche JSON-Spec-Beschreibung](https://panda-css.com/docs/theming/json-spec). Originaldatenartefakt/Producer/Readerrollen und Notizmigration gegengeprüft. Bestehende P42-E3-Originaltypbindung aus S89 wiederverwendet, nicht als neue Ausführung gezählt. [Notizen/Quellhashes](experiments/2026-10-25/panda-original-scope/source-notes.json), [Bericht](experiments/2026-10-25/panda-original-scope/REPORT.md). Kein Rust-/Generatorlauf und kein Schemaersatz.
+
+## S94 – vier ursprüngliche CSS-Propertygrammatiken mit zusätzlicher Lexerbindung
+
+25.10.2026, BrowserOS: [Anchor Positioning WD27.03.2026](https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/) Propertydefinitionen anchor-name/anchor-scope/position-anchor und Typalias anchor-name, [Overflow WD07.10.2025](https://www.w3.org/TR/2025/WD-css-overflow-3-20251007/) overflow-y-Valuegrammar gezielt erneut gelesen. Vorhandenes css-tree3.2.1 und originale createLexer/matchProperty-/Generikquellen lokal geprüft und gebunden. [Manifest](experiments/2026-10-25/css-original-grammar/source-manifest.json), [Originaldefinitionen](experiments/2026-10-25/css-original-grammar/anchor-source.json), [Zusatzprofil](experiments/2026-10-25/css-original-grammar/profile.json), [Bericht](experiments/2026-10-25/css-original-grammar/REPORT.md). Zwölf tatsächliche Bedingungen; Originalpaketwörterbuch unverändert, keine vollständige Modul-/DOM-/Browserkonformität behauptet.
+
+## S95 – letzte vier endliche X06-Originalzugriffe
+
+25.10.2026, BrowserOS: Zag cafda74ba915d5abc5abb20abdde3a719d8e4e9c Introduction/Building Machines und öffentliche Core-/Combobox-/ScrollArea-Einstiege, Coretypen/Factory; APG 0f765e4dc33e966026114ac12a8380db1de3b787 README/package/Introduction/Combobox-Pattern und tatsächlicher ariaTest-/Autocomplete-both-Pfad; OpenUI 09d39b211dcaa2e227ed38e312c8822e193cfea9 README/draft-01/interfaces/Spec.ts/lib/schema.ts/Renderer. [Genaue Quellen-URLs und Lesehashes](experiments/2026-10-25/final-x06-scope/source-access.json), einschließlich fehlgeschlagenem und korrigiertem Spec-Pfad. Google @google/design.md0.4.0/9bf8eae67128b6cc55ad9bf86665767deb4c11cd: veröffentlichte Original-Spec/Config/Outputdateien und [spec-config.ts](https://github.com/google-labs-code/design.md/blob/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/spec-config.ts). Original-Konfigurationsschema mit sechs Bedingungen ausgeführt; andere Zugriffe E2, keine APG-/Zag-Laufzeitreruns. [Bericht](experiments/2026-10-25/final-x06-scope/REPORT.md), [Manifest](experiments/2026-10-25/final-x06-scope/source-manifest.json).
+
+## S96 – CSS-Ankerdeklarationen auf Originalteile und Hostinstanzen binden
+
+25.10.2026, BrowserOS: [CSS Anchor Positioning WD27.03.2026](https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/) §§2.1–2.4 (name/anchor-scope/target/position-anchor) und §7 (accessibility) gezielt erneut gelesen. [Abschnittshashes und eigene Befunde](experiments/2026-10-25/css-semantic-anchors/source-notes.json). Bereits gebundene Original-CEM-Schema-/css-tree3.2.1-/P44-Originalgrammatikdateien unverändert verwendet; bestehendes Vier-Domänen-Fixture bytegleich übernommen. [Manifest](experiments/2026-10-25/css-semantic-anchors/source-manifest.json), [Bericht](experiments/2026-10-25/css-semantic-anchors/REPORT.md), [14 Bedingungen](experiments/2026-10-25/css-semantic-anchors/results.json). Eigener statischer Resolver, kein nativer CSS-Targetlookup, Browser-/AT-Lauf oder Gesamt-Konformitätsnachweis.
+
+## S97 – OpenPencil-Overflowimport und native hidden/clip-Grenze
+
+25.10.2026, BrowserOS: OpenPencil ab2875cc761ee6cff17d389ff1c85fedae50aeab [Import-/Aufrufkontext](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/import/scene-graph.ts), [Stylehelfer](https://github.com/open-pencil/open-pencil/blob/ab2875cc761ee6cff17d389ff1c85fedae50aeab/packages/dom-css/src/import/css-values.ts), flow.ts ergänzend lokalisiert/gelesen; bekannte Originalprojektion unverändert wiederverwendet. [Quellidentitäten](experiments/2026-10-25/openpencil-overflow-import/source-notes.json). [CSS Overflow WD07.10.2025](https://www.w3.org/TR/2025/WD-css-overflow-3-20251007/) Definitionen hidden/clip/scroll/auto gezielt gelesen; [Fundstellenhashes/eigener Befund](experiments/2026-10-25/openpencil-overflow-import/overflow-source-notes.json). Zwölf Originalfragmentbedingungen und drei eigene native CSS-Boxen ausgeführt; kein Gesamtimport/-export oder OpenPencil-Build. [Bericht](experiments/2026-10-25/openpencil-overflow-import/REPORT.md), [Manifest](experiments/2026-10-25/openpencil-overflow-import/source-manifest.json).
+
+## S98 – originaler OpenPencil-Radiopfad mit tatsächlicher Vue-SSR
+
+25.10.2026. Bestehende render.ts/controls/index.ts bytegleich, neu über BrowserOS controls/shared.ts, state.ts und dom-css/behaviours/reset.ts am OpenPencil-Pin ab2875cc761ee6cff17d389ff1c85fedae50aeab gelesen. [Exakte URLs/Quellhashes](experiments/2026-10-25/openpencil-radio-render/source-notes.json). Offizielle Registry Vue3.5.41 geöffnet, exakt im deklarierten Peerbereich isoliert installiert; [Registry-Pin](experiments/2026-10-25/openpencil-radio-render/vue-registry-pin.json), Paketlock und Inventar erhalten. Acht unveränderte Originaldeklarationen, zwölf Bedingungen, tatsächlicher Vue-VNode-/Serverrenderpfad. Kein kompletter Editor, ursprünglicher Roleclassifier, Reka, lebender DOM- oder AT-Lauf. [Bericht](experiments/2026-10-25/openpencil-radio-render/REPORT.md), [Manifest](experiments/2026-10-25/openpencil-radio-render/source-manifest.json).
+
+## S99 – gesonderte I03-Auswertung vorhandener Teilebinder
+
+25.10.2026. Keine neuen Webabrufe oder Laufzeitfälle: gespeicherte [P36-Originalmodell-/ARIA-Bindung](experiments/2026-10-25/typed-references/REPORT.md) und [P46-CSS-/CEM-Instanzbindung](experiments/2026-10-25/css-semantic-anchors/REPORT.md) kriteriumsbezogen gegen I03 geprüft. [Konkrete Fall-IDs, Quell-/Methodenhashes und tatsächliche Zeugen](experiments/2026-10-25/named-parts-review/audit.json), [Abgrenzung je Kandidat](experiments/2026-10-25/named-parts-review/REPORT.md), [Manifest](experiments/2026-10-25/named-parts-review/source-manifest.json). Zwei zusätzliche A-Beiträge; keine native Anatomiesprache zugeschrieben, keine fachfremden U pauschal zu N, keine Bedingungen doppelt gezählt.
+
+## S100 – Original-Scenegraph bis zum benannten und aktualisierten Switchhost
+
+25.10.2026. Offizielle Registry: [dom-css0.16.0](https://registry.npmjs.org/@open-pencil%2fdom-css/0.16.0), [scene-graph0.16.0](https://registry.npmjs.org/@open-pencil%2fscene-graph/0.16.0), exakt isoliert installiert; [Pins](experiments/2026-10-25/openpencil-projection-origin/published-pins.json), Paketlock und Originalinventar. RegistrygitHead fehlt; [präziser Projektionquellvergleich](experiments/2026-10-25/openpencil-projection-origin/version-comparison.json), keine globale Repoidentität. Ursprüngliche Vue-Islandfunktionen am ab2875cc761ee6cff17d389ff1c85fedae50aeab [mit Quell-URLs/Hashes](experiments/2026-10-25/openpencil-projection-origin/repo-source-notes.json), tatsächliches Vue3.5.41/Reka2.10.5. [WAI-ARIA1.2-Switchdefinition](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#switch) gezielt über BrowserOS gelesen. [Bericht](experiments/2026-10-25/openpencil-projection-origin/REPORT.md), [Manifest](experiments/2026-10-25/openpencil-projection-origin/source-manifest.json). Original-APIs, acht plus vier Graphbedingungen, erhaltene Prüferfehlwahl, passende Namenprüfungen und sechs native Liveschritte; kein vollständiger Editor oder AT-Lauf.
+
+## S101 – vollständiger Originalframeexport: feste Scrollpolitik und Koordinatengrenze
+
+25.10.2026. Bereits gebundene öffentliche @open-pencil/scene-graph0.16.0-/dom-css0.16.0-APIs und unverändertes [Originalinventar/Paketlock](experiments/2026-10-25/openpencil-projection-origin/source-manifest.json). Keine neue Bibliothek oder globale Repoidentität. Originale addPositioning-/styleFromSceneNode-/Maximalgrößenprojektion erneut gezielt ausgewertet; vollständige öffentliche Graph→DesignDocument→HTML-APIs tatsächlich ausgeführt. CSS-Overflow-WD07.10.2025-hidden-/visible-Bedeutung aus den bereits gelesenen Originaldefinitionen; keine neue Normversion behauptet. [Zwölf Bedingungen und Feldgrenzen](experiments/2026-10-25/openpencil-layout-runtime/REPORT.md), [Manifest](experiments/2026-10-25/openpencil-layout-runtime/source-manifest.json). Feste Programmscrollpolitik nachgewiesen, Input-Unterkantenrelation im Wachstumsfall unerfüllt; weder allgemeiner Auto-/Wheel-/Editor-/AT-Nachweis noch neue Layoutsprache.
+
+## S102
+
+**XState-X01: ursprüngliches SDK und getrennte Beiträge, 25. Oktober 2026.** Gepinnter [Originaldistributionsstand xstate@5.33.3](https://registry.npmjs.org/xstate/5.33.3), unveränderte bereits isolierte Installation aus S87; tatsächliche createMachine/createActor/getInitialSnapshot-Ausführung. CEM/CSS/HTML-Fixtures aus S81 bytegleich wiederverwendet; keine neue Einzelvalidatorprüfung gezählt. Acht Bedingungen mit eigenem zusätzlichem Hash-/Instanzbinder. [Bericht und Originalinventar](experiments/2026-10-25/xstate-independence/REPORT.md). Eigene behavior.cjs ist eine SDK-Konfiguration, kein Original-JSON-Schema.
+
+## S103
+
+**uSpec-Originalbuilder und Ownership, 25. Oktober 2026.** Revision1e25e9b8bc2e694689ba0489594f38807a341f14; vollständige component-contract.ts/cache-validation.ts/target-identity.ts aus S52 über BrowserOS gelesen beziehungsweise aus gespeicherter identischer Lesekopie übernommen; vollständige drei Module transpiliert und ausgeführt. Echte Ajv8.17.1-Installation, TypeScript5.9.3. Zehn eigene minimale Dateifälle; Domain-Obligation-Evidence ausdrücklich nicht vorhanden, daher keine vollständige Evidence-/Figma-Pipeline. [Quell-URLs, Hashes, Locks und Bericht](experiments/2026-10-25/uspec-ownership/REPORT.md). Kein eigener Validator als Original ausgegeben.
+
+## S104
+
+**ARIA-Namens-Ownership, 25. Oktober 2026.** [WAI-ARIA1.2 REC20230606 listbox](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#listbox) und [aria-label](https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/#aria-label) über BrowserOS gezielt vollständig als Abschnitte gelesen. Originalnorm definiert Rollen-/Namensbeitrag; zusätzlicher eigener Ownershipprüfer baut auf S85s ausdrücklich offenem A11y-Beitrag auf. Zehn vorab benannte Bindungsbedingungen und zwei native zugängliche Host-Namenspaare. Kein AT-/Live-DOM-/vollständiger Normvalidator. [Quell-/Inputhashes und Bericht](experiments/2026-10-25/aria-ownership/REPORT.md).
+
+## S105
+
+**OpenPencil externer Boolean-Referenzfall,25. Oktober2026.** Unveränderte gepinnte Distributionen @open-pencil/scene-graph0.16.0 und @open-pencil/dom-css0.16.0 aus S100. Ursprüngliche veröffentlichte spec.js/layers.js/kinds.js konkret gelesen; vollständige öffentliche Behaviour-/Graph-/Control-APIs ausgeführt. Keine globale Identität mit dem früheren Repo-Snapshot behauptet. Zusätzlich eigene externe CEM-Fixture mit zuvor gepinntem Original-CEM-Schema aus S81 geprüft; Strukturvalidierung und Zusatztypbindung getrennt. [Originaldateihashes, Locks, Fälle und Bericht](experiments/2026-10-25/op-external-reference/REPORT.md). Elf API-/Bindungsfälle und zwei CEM-Schemafälle, keine UI-/AT-Prüfung.
+
+## S106
+
+**Panda-Originalquellführung,25. Oktober2026.** Revision86f78a228204d63baa0b8bca2676d9f26190e449; vollständige ursprüngliche packages/config/src/merge.ts/sources.ts/shared.ts/error.ts und compiler-shared/src/design-system-spec/sources.ts über BrowserOS gelesen und mit TypeScript5.9.3 unverändert transpiliert/ausgeführt. Index-/Typdatei, ursprünglicher Rust-Specgenerator und Designnote zur Abgrenzung gelesen; Rust-/Gesamtcompiler und Configloader nicht ausgeführt. [Original-URLs, Hashes und Bericht](experiments/2026-10-25/panda-source-ownership/REPORT.md). Neun eigene Konfigurations-/Provenienzfälle, zusätzlicher CSS-/Hashbinder getrennt vom Original.
+
+## S107
+
+**AgentsORG-CSS-Quellführung und Diff,25. Oktober2026.** Revision014a1864c641f8e9792ed76de93c95493489dd8c; vollständige scripts/export_design.py und scripts/diff_design.py sowie Originalschema über BrowserOS gelesen und unverändert ausgeführt/geprüft. SPEC-Abschnitte Quellrichtung/Tokens/Theme/shadcn/Version/locked gezielt abgeglichen. PyYAML6.0.3 isoliert; jsonschema4.25.1, Python3.12. Acht eigene schemafähige Fälle mit tatsächlichen CLI-Dateiausgaben und Exitstatus; Figma-/Linter-/Freigabe-/Gesamtpipeline nicht ausgeführt. [URLs, Hashes und Bericht](experiments/2026-10-25/agentsorg-export-ownership/REPORT.md). Tatsächlicher shadcn-Literalvorrang trotz Mapping als Gegenbefund erhalten.
+
+## S108
+
+**AgentsORG unabhängiger Viererbeitrag,25. Oktober2026.** Unveränderliche tatsächliche Source-/Originalexportausgaben aus S107 am Hash mit den dortigen Originalschema-Beobachtungen gebunden. Bytegleiche CEM-/SCXML-/HTML-Artefakte aus S81, tatsächliche ursprüngliche SCXML4.3.28-Instanzen und zwei native statische Browsermessungen. Keine neuen Schema-/Exportaufrufe gezählt, keine native AgentsORG-Cross-Domain-Funktion behauptet. [Hashes und Bericht](experiments/2026-10-25/agentsorg-independence/REPORT.md). Vier neue Bedingungen, zusätzliches eigenes Profil und Layoutbindung ausdrücklich getrennt.
+
+## S109
+
+**UXSpec externer DTCG-Zeitbezug,25. Oktober2026.** [DTCG Format2025.10 Duration§8.5/8.5.1](https://www.designtokens.org/TR/2025.10/format/#duration) über BrowserOS gezielt vollständig gelesen, Community-Group-Report. UXSpec-Revision20dfae0e7224d952e198afdf4ffed26d6fd67180: vorhandene vollständige Originalreferenz-/Compilermodule am Hash abgeglichen, ursprüngliche [Timerfunktion](https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/hooks/use-auto-dismiss.ts) gelesen und extractMs unverändert isoliert ausgeführt. Hook/Timeout nicht ausgeführt. Zehn Referenz-/Konversionsfälle mit expliziter Zusatzprojektion und zwei Original-UXSpec-Schemafälle. [Hashes, Inputs und Bericht](experiments/2026-10-25/uxspec-duration-reference/REPORT.md). Originalzeitverlust und generierter Maschinenpflichtroot ausdrücklich erhalten.
+
+## S110
+
+**Zag-/Ark-spezifische externe Referenzpfade,25. Oktober2026.** Tatsächlich isolierte Distributionen @zag-js/combobox/@zag-js/react/@zag-js/core1.45.0, @ark-ui/react5.39.3 und React/ReactDOM19.2.0. Ursprüngliche Connect-/Machine-/DOM-/React-/Ark-Context-/Input-/Contentpfade gelesen und unverändert mit tatsächlichem SSR ausgeführt; keine Services nachgebaut, kein DOMmount. Separater ursprünglicher CEM-Fixturestand aus S81 und eigene HTML/ARIA-Quellfixtures über ausdrücklich zusätzlichen Part-/Rollen-/Relationsbinder geprüft. Acht kandidatenspezifische Fälle; echte ursprüngliche Akzeptanz der vier Gegenfälle erhalten. [Exakte Versionen, Lock, Originalpfade, Hashes und Bericht](experiments/2026-10-25/zag-ark-references/REPORT.md). Keine Gleichsetzung mit dem früheren direkt untersuchten Zag-Core1.46.0 oder früheren Repocommits.
+
+## S111
+
+**uSpec lokaler Evidence-/externer Quellenbezug,25. Oktober2026.** Unveränderte vollständige cache-validation.ts am Pin1e25e9b8bc2e694689ba0489594f38807a341f14 und ihre gespeicherte vollständige Transpilation aus S103 verwendet. Neu ist die tatsächlich vorhandene Obligation-Evidence-Datei; originale lokale Pointer-/Zielart-/Feldtypchecks sowie externe Datei-/SourcePath-Grenzen mit acht eigenen Dateifällen ausgeführt. [Hashes und Bericht](experiments/2026-10-25/uspec-external-reference/REPORT.md). Kein neuer Resolver oder Fremdmodellformat eingeführt.
+
+## S112
+
+**APG ursprüngliche Klasse, Feldreferenzen und Kontexte,25. Oktober2026.** [Vollständige ursprüngliche combobox-autocomplete.js](https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/examples/js/combobox-autocomplete.js) über BrowserOS vollständig gelesen und unverändert im nativen eigenen Host geladen. Zwei explizite tatsächliche Originalkonstruktorverwendungen; ursprünglicher Seitenscan findet null eigene Wrapper, keine Originalklasse verändert. Acht native Parameter-/Operations-/Zusatzreferenzbedingungen und zwei gepinnte Original-CEM-Schemabedingungen. Eigene Interfacebeschreibung des tatsächlich sichtbaren Beispielsfelds, kein publizierter APG-APIvertrag. [Quellen-/Host-/Methodenhashes und Bericht](experiments/2026-10-25/apg-original-reference/REPORT.md). Synthetischer nativer LI-Klick, keine physische Tastatur oder AT.
+
+## S113
+
+**OpenPencil ursprüngliche Quellführung,25. Oktober2026.** Unveränderte veröffentlichte @open-pencil/scene-graph@0.16.0 und @open-pencil/dom-css@0.16.0 aus dem eingefrorenen Bestand S100/S105. Acht echte Graph-/Instanz-/Owner-/Projektionsfälle mit eigenem Änderungsjournal. [Bericht und Hashmanifest](experiments/2026-10-25/op-owner-precedence/REPORT.md). Kein vollständiger Editor, keine neue normative Governance.
+
+## S114
+
+**uSpec ursprüngliche Identitätsnormalisierung und Objektalias,25. Oktober2026.** Unveränderte vollständige ursprüngliche Module aus S103 am Pin1e25e9b8bc2e694689ba0489594f38807a341f14 mit tatsächlichem Ajv8.17.1, fünf eigene vorbereitete Bedingungen. [Bericht/Manifest](experiments/2026-10-25/uspec-normalizer-ownership/REPORT.md). Keine vollständige Pipeline oder Obligation-Evidence.
+
+## S115
+
+**apg-mode-ownership,25. Oktober2026.** [Originalgegenstand, eigene Zusatzrollen, tatsächliche Ergebnisse und Grenzen](experiments/2026-10-25/apg-mode-ownership/REPORT.md). [Original-/Eigenartefakt-/Methodenhashmanifest](experiments/2026-10-25/apg-mode-ownership/source-manifest.json). Gepinnte Originale unverändert; keine vollständige Plattform-/AT- oder Produktkonformität. Gegenfälle und eigene Korrekturen bleiben im Bericht sichtbar.
+
+## S116
+
+**domain-independence-final,25. Oktober2026.** [Originalgegenstand, eigene Zusatzrollen, tatsächliche Ergebnisse und Grenzen](experiments/2026-10-25/domain-independence-final/REPORT.md). [Original-/Eigenartefakt-/Methodenhashmanifest](experiments/2026-10-25/domain-independence-final/source-manifest.json). Gepinnte Originale unverändert; keine vollständige Plattform-/AT- oder Produktkonformität. Gegenfälle und eigene Korrekturen bleiben im Bericht sichtbar.
+
+## S117
+
+**apg-independence,25. Oktober2026.** [Originalgegenstand, eigene Zusatzrollen, tatsächliche Ergebnisse und Grenzen](experiments/2026-10-25/apg-independence/REPORT.md). [Original-/Eigenartefakt-/Methodenhashmanifest](experiments/2026-10-25/apg-independence/source-manifest.json). Gepinnte Originale unverändert; keine vollständige Plattform-/AT- oder Produktkonformität. Gegenfälle und eigene Korrekturen bleiben im Bericht sichtbar.
+
+## S118
+
+**google-independence,25. Oktober2026.** [Originalgegenstand, eigene Zusatzrollen, tatsächliche Ergebnisse und Grenzen](experiments/2026-10-25/google-independence/REPORT.md). [Original-/Eigenartefakt-/Methodenhashmanifest](experiments/2026-10-25/google-independence/source-manifest.json). Gepinnte Originale unverändert; keine vollständige Plattform-/AT- oder Produktkonformität. Gegenfälle und eigene Korrekturen bleiben im Bericht sichtbar.
+
+## S119
+
+**openui-independence,25. Oktober2026.** [Originalgegenstand, eigene Zusatzrollen, tatsächliche Ergebnisse und Grenzen](experiments/2026-10-25/openui-independence/REPORT.md). [Original-/Eigenartefakt-/Methodenhashmanifest](experiments/2026-10-25/openui-independence/source-manifest.json). Gepinnte Originale unverändert; keine vollständige Plattform-/AT- oder Produktkonformität. Gegenfälle und eigene Korrekturen bleiben im Bericht sichtbar.
+
+## S120
+
+**op-slider-geometry,25. Oktober2026.** [Originalgegenstand, eigene Zusatzrollen, tatsächliche Ergebnisse und Grenzen](experiments/2026-10-25/op-slider-geometry/REPORT.md). [Original-/Eigenartefakt-/Methodenhashmanifest](experiments/2026-10-25/op-slider-geometry/source-manifest.json). Gepinnte Originale unverändert; keine vollständige Plattform-/AT- oder Produktkonformität. Gegenfälle und eigene Korrekturen bleiben im Bericht sichtbar.
+
+## S121
+
+**Kriteriumsbezogene zusätzliche CSS/Interface/Behavior/A11y-Laufzeitbindungen,25. Oktober2026.**27 Bedingungen/10 Gruppen mit tatsächlichem unverändertem @scion-scxml/scxml4.3.28, ursprünglichen CEM-/SCXML-Schemas, tatsächlichem TypeScript5.9.3-AST sowie nativer CSS-/DOM-/Fokus-/AX-Beobachtung. [Original-APG-Comboboxpattern am Pin0f765e4](https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/combobox-pattern.html) und [WAI-ARIA1.2 status](https://www.w3.org/TR/wai-aria-1.2/#status) gezielt über BrowserOS als Daten gelesen, eigene begrenzte Paraphrasen und Hashes gesichert. Originalruntime liefert query42/fremden Parent tatsächlich; eigene Checks weisen sie ab. Kein nativer CSS-UX-Automat oder ARIA-Scrollmodell. [Bericht](experiments/2026-10-25/css-complement-runtime/REPORT.md), [Quellen-/Eigenartefakthashes](experiments/2026-10-25/css-complement-runtime/source-manifest.json). Keine physische Tastatur, AT-Sprachausgabe oder Produktionskomponente.
+
+## S122
+
+**uspec-cem-ownership,25. Oktober2026.** [Tatsächlich ausgeführter Originalpfad, zusätzlicher Adapter und begrenzter semantischer Nachweis](experiments/2026-10-25/uspec-cem-ownership/REPORT.md). [Quellen-/Deklarations-/Eigenartefakthashes](experiments/2026-10-25/uspec-cem-ownership/source-manifest.json). Keine veränderten Originalmodule, neue Produktsprache, gesamte Editor-/Figma-/Plattform- oder AT-Abnahme. Eigene Erstbefunde und ursprüngliche Grenzen bleiben explizit.
+
+## S123
+
+**uspec-api-independence,25. Oktober2026.** [Tatsächlich ausgeführter Originalpfad, zusätzlicher Adapter und begrenzter semantischer Nachweis](experiments/2026-10-25/uspec-api-independence/REPORT.md). [Quellen-/Deklarations-/Eigenartefakthashes](experiments/2026-10-25/uspec-api-independence/source-manifest.json). Keine veränderten Originalmodule, neue Produktsprache, gesamte Editor-/Figma-/Plattform- oder AT-Abnahme. Eigene Erstbefunde und ursprüngliche Grenzen bleiben explizit.
+
+## S124
+
+**op-four-masters,25. Oktober2026.** [Tatsächlich ausgeführter Originalpfad, zusätzlicher Adapter und begrenzter semantischer Nachweis](experiments/2026-10-25/op-four-masters/REPORT.md). [Quellen-/Deklarations-/Eigenartefakthashes](experiments/2026-10-25/op-four-masters/source-manifest.json). Keine veränderten Originalmodule, neue Produktsprache, gesamte Editor-/Figma-/Plattform- oder AT-Abnahme. Eigene Erstbefunde und ursprüngliche Grenzen bleiben explizit.
+
+## S125
+
+**layout-final-bindings,25. Oktober2026.** [Tatsächlich ausgeführter Originalpfad, zusätzlicher Adapter und begrenzter semantischer Nachweis](experiments/2026-10-25/layout-final-bindings/REPORT.md). [Quellen-/Deklarations-/Eigenartefakthashes](experiments/2026-10-25/layout-final-bindings/source-manifest.json). Keine veränderten Originalmodule, neue Produktsprache, gesamte Editor-/Figma-/Plattform- oder AT-Abnahme. Eigene Erstbefunde und ursprüngliche Grenzen bleiben explizit.

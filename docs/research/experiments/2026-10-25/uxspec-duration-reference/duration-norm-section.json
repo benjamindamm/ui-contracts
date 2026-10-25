@@ -1,0 +1,12 @@
+{
+  "logs": [],
+  "ok": true,
+  "value": {
+    "page": 255,
+    "value": {
+      "id": "duration",
+      "tag": "SECTION",
+      "text": "8.5 Duration\n\nRepresents the length of time in milliseconds an animation or animation cycle takes to complete, such as 200 milliseconds. The $type property MUST be set to the string duration. The value MUST be an object containing a numeric value (either integer or floating-point) and a unit of milliseconds (\"ms\") or seconds (\"s\"). A millisecond is a unit of time equal to one thousandth of a second.\n\nKey\tType\tRequired\tDescription\nvalue\tnumber\tY\tAn integer or floating-point value representing the numeric value.\nunit\tstring\tY\tUnit of time. Supported values: \"ms\" (millisecond), \"s\"(second).\n\nFor example:\n\nEXAMPLE 42\n{\n  \"Duration-Quick\": {\n    \"$value\": {\n      \"value\": 100,\n      \"unit\": \"ms\"\n    },\n    \"$type\": \"duration\"\n  },\n  \"Duration-Long\": {\n    \"$value\": { \"value\": 1.5, \"unit\": \"s\" },\n    \"$type\": \"duration\"\n  }\n}\n\n8.5.1 Validation\n$value.unit may only be \"ms\" or \"s\""
+    }
+  }
+}

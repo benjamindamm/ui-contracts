@@ -1,0 +1,32 @@
+{
+  "directCore": {
+    "name": "@zag-js/core",
+    "version": "1.46.0",
+    "packageFile": "tool/node_modules/@zag-js/core/package.json"
+  },
+  "coreUtils": {
+    "name": "@zag-js/utils",
+    "version": "1.46.0",
+    "packageFile": "tool/node_modules/@zag-js/core/node_modules/@zag-js/utils/package.json"
+  },
+  "coreDomQuery": {
+    "name": "@zag-js/dom-query",
+    "version": "1.46.0",
+    "packageFile": "tool/node_modules/@zag-js/core/node_modules/@zag-js/dom-query/package.json"
+  },
+  "arkCore": {
+    "name": "@zag-js/core",
+    "version": "1.45.0",
+    "packageFile": "tool/node_modules/@ark-ui/react/node_modules/@zag-js/core/package.json"
+  },
+  "arkCombobox": {
+    "name": "@zag-js/combobox",
+    "version": "1.45.0",
+    "packageFile": "tool/node_modules/@zag-js/combobox/package.json"
+  },
+  "arkReactBinding": {
+    "name": "@zag-js/react",
+    "version": "1.45.0",
+    "packageFile": "tool/node_modules/@zag-js/react/package.json"
+  }
+}

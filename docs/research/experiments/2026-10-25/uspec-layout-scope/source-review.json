@@ -1,0 +1,46 @@
+{
+  "revision": "1e25e9b8bc2e694689ba0489594f38807a341f14",
+  "sources": [
+    {
+      "path": "references/structure/agent-structure-instruction.md",
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/references/structure/agent-structure-instruction.md",
+      "sha256": "644b5659f240e78557ed27dbf003d21ab68b000fd1c2216df5bd668c2fc490e9"
+    },
+    {
+      "path": "figma-plugin/docs/base-json-schema.md",
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/figma-plugin/docs/base-json-schema.md",
+      "sha256": "46fbf644a210d5be8e0c1b0ca001976ab866bc2cb22ee3e19bb2f4b01598f3b6"
+    },
+    {
+      "path": "figma-plugin/src/phaseE.ts",
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/figma-plugin/src/phaseE.ts",
+      "sha256": "3d3370fc87d9a1035c1223380924da33400ca051cdf1f9c3b6943443d0e89a3a"
+    },
+    {
+      "path": "figma-plugin/src/safe.ts",
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/figma-plugin/src/safe.ts",
+      "sha256": "6aba8c5203e1f5623b01775d83283cbeaee396d221930cfccc3f98d6f210ee69"
+    },
+    {
+      "path": "packages/cli/src/component-md/evidence-structure.ts",
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/packages/cli/src/component-md/evidence-structure.ts",
+      "sha256": "3be2f9e2c4fd50e0bd16baae00c6e77cdebcd34642a55b394b9c1fa05073a9e7"
+    },
+    {
+      "path": "docs/specs/structure.mdx",
+      "url": "https://raw.githubusercontent.com/redongreen/uSpec/1e25e9b8bc2e694689ba0489594f38807a341f14/docs/specs/structure.mdx",
+      "sha256": "4ad3465bf2648f5ff1c69e088f7158d9e92de7f1eb070f207321de17fafb955a"
+    }
+  ],
+  "tree_truncated": false,
+  "kind": "bounded source review",
+  "unchanged_cells": [
+    "uSpec/V04/U/C400",
+    "uSpec/V06/U/C401"
+  ],
+  "new_runtime_conditions": 0,
+  "missing_binding": {
+    "V04": "runtime target identity, direction and distance; measurement-section anchor alone does not supply this",
+    "V06": "runtime overflow/scroll policy; clipping values and a variant label do not supply this"
+  }
+}

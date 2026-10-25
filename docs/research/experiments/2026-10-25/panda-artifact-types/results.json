@@ -1,0 +1,610 @@
+{
+  "typescript": "5.9.3",
+  "node": "v24.22.1",
+  "originalTypesSha256": "05c7388cbdfc35eba9c9bf2eeb4b85269e8c0af4746b1669a72b794761a7613a",
+  "originalReaderSourceSha256": "7b82843edd25a4794fdc0f9ba279b577d9eb82283e35b5f6be652bf4044bef63",
+  "transpiledOriginalReaderSha256": "59358b994f0dc8fddc2b5b0d6dba96a159becc953e0c65ec384dd9ac36d5548b",
+  "method": "Nine paired original JSON reader/original artifact TypeScript interface comparisons. Additional literal-to-type binding; no authored JSON schema, no runtime TypeScript value validation.",
+  "cases": [
+    {
+      "id": "valid-export",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": {
+          "colors.red": {
+            "category": "colors",
+            "cssVar": "--colors-red"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.red",
+            "value": "#f00"
+          }
+        ]
+      },
+      "expectedTypedAccepted": true,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": true,
+        "readerAccepted": true
+      },
+      "diagnostics": [],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {
+            "colors": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": {
+            "colors.red": {
+              "category": "colors",
+              "cssVar": "--colors-red"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "colors.red",
+              "value": "#f00"
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "categories-number",
+      "input": {
+        "schemaVersion": 1,
+        "categories": 7,
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": {
+          "colors.red": {
+            "category": "colors",
+            "cssVar": "--colors-red"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.red",
+            "value": "#f00"
+          }
+        ]
+      },
+      "expectedTypedAccepted": false,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": false,
+        "readerAccepted": true
+      },
+      "diagnostics": [
+        {
+          "code": 2322,
+          "file": "categories-number.ts",
+          "message": "Type 'number' is not assignable to type 'Record<string, [number, number]>'."
+        }
+      ],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": 7,
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": {
+            "colors.red": {
+              "category": "colors",
+              "cssVar": "--colors-red"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "colors.red",
+              "value": "#f00"
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "tokens-boolean",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": false,
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.red",
+            "value": "#f00"
+          }
+        ]
+      },
+      "expectedTypedAccepted": false,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": false,
+        "readerAccepted": true
+      },
+      "diagnostics": [
+        {
+          "code": 2322,
+          "file": "tokens-boolean.ts",
+          "message": "Type 'boolean' is not assignable to type 'Record<string, DesignSystemToken>'."
+        }
+      ],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {
+            "colors": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": false,
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "colors.red",
+              "value": "#f00"
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "null-value-row",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": {
+          "colors.red": {
+            "category": "colors",
+            "cssVar": "--colors-red"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          null
+        ]
+      },
+      "expectedTypedAccepted": false,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": false,
+        "readerAccepted": true
+      },
+      "diagnostics": [
+        {
+          "code": 2322,
+          "file": "null-value-row.ts",
+          "message": "Type 'null' is not assignable to type 'DesignSystemValue'."
+        }
+      ],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {
+            "colors": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": {
+            "colors.red": {
+              "category": "colors",
+              "cssVar": "--colors-red"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            null
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-conditions-themes",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": {
+          "colors.red": {
+            "category": "colors",
+            "cssVar": "--colors-red"
+          }
+        },
+        "values": [
+          {
+            "token": "colors.red",
+            "value": "#f00"
+          }
+        ]
+      },
+      "expectedTypedAccepted": false,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": false,
+        "readerAccepted": true
+      },
+      "diagnostics": [
+        {
+          "code": 2739,
+          "file": "missing-conditions-themes.ts",
+          "message": "Type '{ schemaVersion: number; categories: { colors: [number, number]; }; paths: string[]; tokens: { \"colors.red\": { category: string; cssVar: string; }; }; values: { token: string; value: string; }[]; }' is missing the following properties from type 'DesignSystemSpec': conditions, themes"
+        }
+      ],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {
+            "colors": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": {
+            "colors.red": {
+              "category": "colors",
+              "cssVar": "--colors-red"
+            }
+          },
+          "values": [
+            {
+              "token": "colors.red",
+              "value": "#f00"
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "numeric-value-string-field",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": {
+          "colors.red": {
+            "category": "colors",
+            "cssVar": "--colors-red"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.red",
+            "value": 42
+          }
+        ]
+      },
+      "expectedTypedAccepted": false,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": false,
+        "readerAccepted": true
+      },
+      "diagnostics": [
+        {
+          "code": 2322,
+          "file": "numeric-value-string-field.ts",
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {
+            "colors": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": {
+            "colors.red": {
+              "category": "colors",
+              "cssVar": "--colors-red"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "colors.red",
+              "value": 42
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "missing-reference-target",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": {
+          "colors.red": {
+            "category": "colors",
+            "cssVar": "--colors-red"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.red",
+            "value": "#f00",
+            "refs": [
+              "colors.missing"
+            ]
+          }
+        ]
+      },
+      "expectedTypedAccepted": true,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": true,
+        "readerAccepted": true
+      },
+      "diagnostics": [],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {
+            "colors": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": {
+            "colors.red": {
+              "category": "colors",
+              "cssVar": "--colors-red"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "colors.red",
+              "value": "#f00",
+              "refs": [
+                "colors.missing"
+              ]
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "category-range-outside-paths",
+      "input": {
+        "schemaVersion": 1,
+        "categories": {
+          "colors": [
+            0,
+            999
+          ]
+        },
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": {
+          "colors.red": {
+            "category": "colors",
+            "cssVar": "--colors-red"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.red",
+            "value": "#f00"
+          }
+        ]
+      },
+      "expectedTypedAccepted": true,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": true,
+        "readerAccepted": true
+      },
+      "diagnostics": [],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": 1,
+          "categories": {
+            "colors": [
+              0,
+              999
+            ]
+          },
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": {
+            "colors.red": {
+              "category": "colors",
+              "cssVar": "--colors-red"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "colors.red",
+              "value": "#f00"
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "negative-schema-number",
+      "input": {
+        "schemaVersion": -1,
+        "categories": {
+          "colors": [
+            0,
+            1
+          ]
+        },
+        "paths": [
+          "colors.red"
+        ],
+        "tokens": {
+          "colors.red": {
+            "category": "colors",
+            "cssVar": "--colors-red"
+          }
+        },
+        "conditions": {},
+        "themes": {},
+        "values": [
+          {
+            "token": "colors.red",
+            "value": "#f00"
+          }
+        ]
+      },
+      "expectedTypedAccepted": true,
+      "expectedReaderAccepted": true,
+      "observed": {
+        "typedAccepted": true,
+        "readerAccepted": true
+      },
+      "diagnostics": [],
+      "readerResult": {
+        "ok": true,
+        "value": {
+          "schemaVersion": -1,
+          "categories": {
+            "colors": [
+              0,
+              1
+            ]
+          },
+          "paths": [
+            "colors.red"
+          ],
+          "tokens": {
+            "colors.red": {
+              "category": "colors",
+              "cssVar": "--colors-red"
+            }
+          },
+          "conditions": {},
+          "themes": {},
+          "values": [
+            {
+              "token": "colors.red",
+              "value": "#f00"
+            }
+          ]
+        }
+      },
+      "expectationMet": true
+    }
+  ]
+}

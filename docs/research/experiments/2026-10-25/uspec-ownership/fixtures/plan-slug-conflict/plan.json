@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "componentSlug": "foreign",
+    "baseSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "generatedAt": "2026-10-25T17:00:00Z"
+  },
+  "data": {
+    "overviewParagraph": "Own minimal research fixture"
+  }
+}

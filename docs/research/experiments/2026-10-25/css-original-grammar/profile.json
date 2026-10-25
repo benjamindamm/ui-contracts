@@ -1,0 +1,34 @@
+{
+  "status": "Explicit additional original-grammar checker binding; not modified standard or native bundled css-tree dictionary",
+  "properties": {
+    "anchor-name": {
+      "grammar": "none | <anchor-name>#",
+      "source": "https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/"
+    },
+    "anchor-scope": {
+      "grammar": "none | all | <anchor-name>#",
+      "source": "https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/"
+    },
+    "position-anchor": {
+      "grammar": "normal | none | auto | <anchor-name> | match-parent",
+      "source": "https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/"
+    },
+    "overflow-y": {
+      "grammar": "visible | hidden | clip | scroll | auto",
+      "source": "https://www.w3.org/TR/2025/WD-css-overflow-3-20251007/"
+    }
+  },
+  "types": {
+    "anchor-name": {
+      "grammar": "<dashed-ident>",
+      "source": "https://www.w3.org/TR/2026/WD-css-anchor-position-1-20260327/#typedef-anchor-name"
+    }
+  },
+  "backend": "css-tree@3.2.1 with original generic token types",
+  "limits": [
+    "Only listed declaration properties",
+    "No DOM anchor existence or instance relation",
+    "No variable substitution",
+    "No full module or platform conformance"
+  ]
+}

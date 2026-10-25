@@ -1,0 +1,56 @@
+[
+  {
+    "candidate": "APG",
+    "requirement": "X08",
+    "coverage": "A",
+    "claim": "C517"
+  },
+  {
+    "candidate": "Zag",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C518"
+  },
+  {
+    "candidate": "Ark UI",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C519"
+  },
+  {
+    "candidate": "UXSpec",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C520"
+  },
+  {
+    "candidate": "Panda CSS",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C521"
+  },
+  {
+    "candidate": "APG",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C522"
+  },
+  {
+    "candidate": "Google DESIGN.md",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C523"
+  },
+  {
+    "candidate": "OpenUI",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C524"
+  },
+  {
+    "candidate": "OpenPencil",
+    "requirement": "V04",
+    "coverage": "R",
+    "claim": "C525"
+  }
+]

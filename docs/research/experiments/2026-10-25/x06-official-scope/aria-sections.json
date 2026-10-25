@@ -1,0 +1,22 @@
+{
+  "conformance": [
+    {
+      "id": "conformance_checkers",
+      "text": "3.4 Conformance Checkers\n\nAny application or script verifying document conformance or validity SHOULD include a test for all of the normative author requirements in this specification. If testing for a given requirement, conformance checkers MUST issue an error if an author \"MUST\" requirement isn't met, and MUST issue a warning if an author \"SHOULD\" requirement isn't met."
+    }
+  ],
+  "hostOpening": [
+    "8. Implementation in Host Languages",
+    "The roles, state, and properties defined in this specification do not form a complete web language or format. They are intended to be used in the context of a host language. This section discusses how host languages are to implement WAI-ARIA, to ensure that the markup specified here will integrate smoothly and effectively with the host language markup.",
+    "Although markup languages look alike superficially, they do not share language definition infrastructure. To accommodate differences in language-building approaches, the requirements are both general and modularization-specific. While allowing for differences in how the specifications are written, the intent is to maintain consistency in how the WAI-ARIA information looks to authors and how it is manipulated in the DOM by scripts.",
+    "WAI-ARIA roles, states, and properties are implemented as attributes of elements. Roles are applied by placing their names among the tokens appearing in the value of a host-language-provided role attribute. States and properties each get their own attribute, with values as defined for each particular state or property in this specification. The name of the attribute is the aria-prefixed name of the state or property.",
+    "8.1 Role Attribute"
+  ],
+  "mapping": [
+    {
+      "id": "typemapping",
+      "text": "A. Mapping WAI-ARIA Value types to languages\n\nThis section is non-normative.\n\nNOTE\n\nThe HTML column of the table below is advisory. Guidance on use of WAI-ARIA state and properties in HTML is provided in Allowed ARIA roles, states and properties ([HTML-ARIA].\n\nNOTE\n\nThe suggested mappings for true/false values in HTML use Keyword and enumerated attributes with allowed values of true and false, instead of using the HTML boolean value type.\n\nThe table below provides recommended mappings between WAI-ARIA state and property types and attribute types from [HTML], XML Schema Datatypes [XMLSCHEMA11-2], [SVG2], and SGML.\n\nLanguages not listed below might have appropriate value types defined in the language. If they do not, we recommend XML Schema Datatypes for general purpose XML languages. Documents using DTDs instead of schemas will not be able to validate automatically and require additional processing on WAI-ARIA attributes.\n\nWAI-ARIA type\tHTML\tXML Schema\ntrue/false\tKeyword and enumerated attributes with allowed values of \"true\" and \"false\"\tboolean\ntrue/false/undefined\tKeyword and enumerated attributes with allowed values of true, false, and undefined\tNMTOKEN with an enumeration constraint allowing values of true, false, and undefined\ntristate\tKeyword and enumerated attributes with allowed values of \"true\", \"false\", and \"mixed\"\tNMTOKEN with an enumeration constraint allowing values of \"true\", \"false\", and \"mixed\"\nnumber\tFloating-point numbers\tdecimal\ninteger\tNon-negative integer\tinteger\ntoken\tKeyword and enumerated attributes\tNMTOKEN with an enumeration constraint allowing values listed in the state or property definition\ntoken list\tSpace-separated tokens\tNMTOKENS with an enumeration constraint allowing values listed in the state or property definition\nID reference\tThe value of a defined id attribute on another element\tIDREF\nID reference list\tThe value of one or more defined id attributes on other element(s), represented as Space-separated tokens\tIDREFS\nstring\tNo value constraints\tstring"
+    }
+  ],
+  "url": "https://www.w3.org/TR/2023/REC-wai-aria-1.2-20230606/"
+}

@@ -1,0 +1,8 @@
+{
+  "definitions": [
+    "Name:\toverflow-x, overflow-y, overflow-block, overflow-inline\nValue:\tvisible | hidden | clip | scroll | auto\nInitial:\tvisible\nApplies to:\tblock containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]\nInherited:\tno\nPercentages:\tN/A\nComputed value:\tusually specified value, but see text\nCanonical order:\tper grammar\nAnimation type:\tdiscrete\nLogical property group:\toverflow",
+    "Name:\toverflow\nValue:\t<'overflow-block'>{1,2}\nInitial:\tvisible\nApplies to:\tblock containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]\nInherited:\tno\nPercentages:\tN/A\nComputed value:\tsee individual properties\nAnimation type:\tdiscrete\nCanonical order:\tper grammar",
+    "Name:\toverflow-clip-margin\nValue:\t<visual-box> || <length [0,∞]>\nInitial:\t0px\nApplies to:\tboxes to which overflow applies\nInherited:\tno\nPercentages:\tn/a\nComputed value:\tthe computed <length> and a <visual-box> keyword\nCanonical order:\tper grammar\nAnimation type:\tper computed value if the <visual-box> values match; otherwise discrete"
+  ],
+  "url": "https://www.w3.org/TR/2025/WD-css-overflow-3-20251007/"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "candidate": "UXSpec",
+    "requirement": "V04",
+    "coverage": "A",
+    "claim": "C540",
+    "previous_claim": "C420"
+  },
+  {
+    "candidate": "UXSpec",
+    "requirement": "V06",
+    "coverage": "A",
+    "claim": "C541",
+    "previous_claim": "C420"
+  },
+  {
+    "candidate": "uSpec",
+    "requirement": "V04",
+    "coverage": "A",
+    "claim": "C542",
+    "previous_claim": "C400"
+  },
+  {
+    "candidate": "uSpec",
+    "requirement": "V06",
+    "coverage": "A",
+    "claim": "C543",
+    "previous_claim": "C401"
+  },
+  {
+    "candidate": "uSpec",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C538",
+    "previous_claim": "C503"
+  },
+  {
+    "candidate": "uSpec",
+    "requirement": "X03",
+    "coverage": "A",
+    "claim": "C536",
+    "previous_claim": "C512"
+  },
+  {
+    "candidate": "uSpec",
+    "requirement": "X08",
+    "coverage": "A",
+    "claim": "C537",
+    "previous_claim": "C516"
+  },
+  {
+    "candidate": "OpenPencil",
+    "requirement": "X01",
+    "coverage": "A",
+    "claim": "C539",
+    "previous_claim": "C304"
+  }
+]

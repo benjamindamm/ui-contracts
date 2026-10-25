@@ -1,0 +1,112 @@
+{
+  "revision": "1e25e9b8bc2e694689ba0489594f38807a341f14",
+  "scope": "Full original builder normalizer on minimal own caches; no obligation evidence, Figma, whole pipeline, or new external binder",
+  "cases": [
+    {
+      "id": "normalized-source-control",
+      "expected": {
+        "accepted": true,
+        "variantId": "vA",
+        "layerId": "input-1",
+        "sourceUnchanged": true
+      },
+      "observation": {
+        "accepted": true,
+        "variantId": "vA",
+        "layerId": "input-1",
+        "invalidVariant": null,
+        "invalidLayer": null,
+        "disposition": "resolved",
+        "alias": true,
+        "sourceUnchanged": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "unknown-explicit-id-fallback",
+      "expected": {
+        "accepted": true,
+        "variantId": "vA",
+        "layerId": "input-1",
+        "invalidVariant": null
+      },
+      "observation": {
+        "accepted": true,
+        "variantId": "vA",
+        "layerId": "input-1",
+        "invalidVariant": null,
+        "invalidLayer": null,
+        "disposition": "resolved",
+        "alias": true,
+        "sourceUnchanged": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "wrong-variant-membership",
+      "expected": {
+        "accepted": true,
+        "variantId": "vA",
+        "layerId": null,
+        "disposition": "unresolved",
+        "invalidLayer": "input-2"
+      },
+      "observation": {
+        "accepted": true,
+        "variantId": "vA",
+        "layerId": null,
+        "invalidVariant": "vA",
+        "invalidLayer": "input-2",
+        "disposition": "unresolved",
+        "alias": true,
+        "sourceUnchanged": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "returned-object-alias",
+      "expected": {
+        "accepted": true,
+        "alias": true,
+        "returnedSourceSize": "tampered",
+        "serializedSourceSize": "small",
+        "sourceUnchanged": true
+      },
+      "observation": {
+        "accepted": true,
+        "variantId": "vA",
+        "layerId": "input-1",
+        "invalidVariant": null,
+        "invalidLayer": null,
+        "disposition": "resolved",
+        "alias": true,
+        "returnedSourceSize": "tampered",
+        "serializedSourceSize": "small",
+        "sourceUnchanged": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "serialized-object-separation",
+      "expected": {
+        "accepted": true,
+        "alias": false,
+        "returnedSourceSize": "small",
+        "sourceUnchanged": true
+      },
+      "observation": {
+        "accepted": true,
+        "variantId": "vA",
+        "layerId": "input-1",
+        "invalidVariant": null,
+        "invalidLayer": null,
+        "disposition": "resolved",
+        "alias": false,
+        "returnedSourceSize": "small",
+        "serializedSourceSize": "small",
+        "sourceUnchanged": true
+      },
+      "expectationMet": true
+    }
+  ]
+}

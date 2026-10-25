@@ -1,0 +1,1 @@
+{"id":"ResearchAutocomplete","initial":"closed","context":{"value":"alpha"},"states":{"closed":{"on":{"OPEN":"open"}},"open":{"on":{"CLOSE":"closed"}}}}

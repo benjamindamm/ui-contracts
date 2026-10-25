@@ -1,0 +1,173 @@
+{
+  "cases": [
+    {
+      "id": "baseline-list",
+      "result": {
+        "page": 284,
+        "value": {
+          "accepted": true,
+          "before": {
+            "flags": [
+              false,
+              true,
+              false
+            ],
+            "source": "list"
+          },
+          "bootstrapMatches": 0,
+          "filter": "Alas",
+          "isBoth": false,
+          "isList": true,
+          "isNone": false,
+          "options": [
+            "Alaska"
+          ],
+          "originalClass": "ComboboxAutocomplete",
+          "source": "list"
+        }
+      }
+    },
+    {
+      "id": "source-live-conflict",
+      "result": {
+        "page": 284,
+        "value": {
+          "accepted": false,
+          "before": {
+            "flags": [
+              false,
+              true,
+              false
+            ],
+            "source": "list"
+          },
+          "bootstrapMatches": 0,
+          "error": "source-derived-mode-conflict",
+          "filter": "Alas",
+          "isBoth": false,
+          "isList": true,
+          "isNone": false,
+          "options": [
+            "Alaska"
+          ],
+          "originalClass": "ComboboxAutocomplete",
+          "source": "none"
+        }
+      }
+    },
+    {
+      "id": "fresh-none-source",
+      "result": {
+        "page": 284,
+        "value": {
+          "accepted": true,
+          "before": {
+            "flags": [
+              true,
+              false,
+              false
+            ],
+            "source": "none"
+          },
+          "bootstrapMatches": 0,
+          "filter": "",
+          "isBoth": false,
+          "isList": false,
+          "isNone": true,
+          "options": [
+            "Alabama",
+            "Alaska"
+          ],
+          "originalClass": "ComboboxAutocomplete",
+          "source": "none"
+        }
+      }
+    },
+    {
+      "id": "omitted-source-default",
+      "result": {
+        "page": 284,
+        "value": {
+          "accepted": true,
+          "before": {
+            "flags": [
+              true,
+              false,
+              false
+            ],
+            "source": null
+          },
+          "bootstrapMatches": 0,
+          "filter": "",
+          "isBoth": false,
+          "isList": false,
+          "isNone": true,
+          "options": [
+            "Alabama",
+            "Alaska"
+          ],
+          "originalClass": "ComboboxAutocomplete",
+          "source": null
+        }
+      }
+    },
+    {
+      "id": "unsupported-source",
+      "result": {
+        "page": 284,
+        "value": {
+          "accepted": false,
+          "before": {
+            "flags": [
+              false,
+              false,
+              false
+            ],
+            "source": "invalid"
+          },
+          "bootstrapMatches": 0,
+          "error": "unsupported-source-mode",
+          "filter": "Alas",
+          "isBoth": false,
+          "isList": false,
+          "isNone": false,
+          "options": [
+            "Alaska"
+          ],
+          "originalClass": "ComboboxAutocomplete",
+          "source": "invalid"
+        }
+      }
+    },
+    {
+      "id": "derived-live-conflict",
+      "result": {
+        "page": 284,
+        "value": {
+          "accepted": false,
+          "before": {
+            "flags": [
+              false,
+              true,
+              false
+            ],
+            "source": "list"
+          },
+          "bootstrapMatches": 0,
+          "error": "source-derived-mode-conflict",
+          "filter": "",
+          "isBoth": false,
+          "isList": false,
+          "isNone": true,
+          "options": [
+            "Alabama",
+            "Alaska"
+          ],
+          "originalClass": "ComboboxAutocomplete",
+          "source": "list"
+        }
+      }
+    }
+  ],
+  "pageId": 284
+}

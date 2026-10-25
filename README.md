@@ -1,5 +1,10 @@
 # UI Contracts
 
+**Aktueller Stand,25. Oktober2026:** 16/16 Erstdurchgänge abgeschlossen;2 offene Nachweise (2 Integration,0 weitere),641 Bedingungen/102 Gruppen. Vollständige Integration bleibt unbelegt. [Zwei fehlende Originalklärungen](docs/research/REMAINING-2.md), [aktive Aufgaben](TASKS.md), [historische Fortschrittsnotizen](docs/research/README-PROGRESS-HISTORY.md).
+
+
+**Über die Matrix hinaus offen:** Die konkrete gemeinsame Integration, vollständige Unterkomposition und durchgängige Abnahme sind noch nicht fertig. [Projektlücken und nächste Arbeit](docs/research/PROJECT-GAPS.md).
+
 UI Contracts untersucht, wie sich **UI-Komponenten maschinenlesbar und technologieunabhängig beschreiben** lassen, damit Menschen und Agenten dieselben eindeutigen Informationen über Schnittstelle, Gestaltung, Verhalten und Accessibility verwenden können.
 
 Das erste Ziel ist ein **gemeinsames Contract-Paket aus bestehenden Beschreibungsansätzen**. Wir untersuchen, welche Anforderungen vorhandene Standards und Projekte abdecken, wo sie sich überschneiden und welche Verbindungen oder Ergänzungen fehlen. Die Auswahl bestimmter Renderer steht noch nicht im Vordergrund.
@@ -19,9 +24,14 @@ Das erste Ziel ist ein **gemeinsames Contract-Paket aus bestehenden Beschreibung
 - [Integrationsentwurf: Identität, Ownership, Komposition und Akzeptanzfälle](docs/research/INTEGRATION.md)
 - [Integrationsabgleich: vorhandene Mechanismen, zwei Instanzen und offene Bindungen](docs/research/INTEGRATION-REVIEW.md)
 - [Konkrete Feldbindungen und verbleibende Integrationsfragen](docs/research/BINDINGS.md)
-- [Register der aktuell 72 offenen Matrixfelder mit Prioritäten](docs/research/OPEN-FIELDS.md)
+- [Register der aktuell 41 offenen Matrixfelder mit Prioritäten](docs/research/OPEN-FIELDS.md)
 - [Gezielte Folgeprüfung: UXSpecs drei offene Layoutfelder](docs/research/FOLLOWUP-UXSPEC-LAYOUT.md)
 - [Gezielte Folgeprüfung: uSpecs Anker- und Scrollfelder](docs/research/FOLLOWUP-USPEC-LAYOUT.md)
+- [Gezielte Folgeprüfung: Originalschema und Werkzeug bei OpenUI, DESIGN.md und Panda](docs/research/FOLLOWUP-VALIDATION.md)
+- [Werkzeug-, Sprach- und Reifevergleich aller 16 Kandidaten](docs/research/TOOLING-COMPARISON.md)
+- [Gesamtprüfung aller 72 Ausgangsfelder: fünf Neubewertungen, 67 Nachweise offen](docs/research/ALL-FIELDS-REVIEW.md)
+- [Detailvergleich UXSpec / SCXML](docs/research/COMPARE-UXSPEC-SCXML.md)
+- [Detailvergleich DESIGN.md / deklarative Layoutmodelle](docs/research/COMPARE-DESIGN-LAYOUT.md)
 
 ## Was wir erreichen wollen
 
@@ -101,10 +111,10 @@ Für die spätere Auswahl sind Stabilität und Marktreife notwendig; die konkret
 
 Zuerst Anforderungen, Methode und offene Zellen lesen; historische Chatbehauptungen nicht als technische Fakten übernehmen. Anschließend konkrete Quellenstände pinnen und kleine positive sowie negative Contract-Prüffälle erstellen. Gemeinsame Referenzen und die Wiederverwendung einer Unterkomponente ausdrücklich prüfen.
 
-Die im Original bestätigten Detailvergleiche bleiben erhalten:
+Die im Original bestätigten Detailvergleiche sind dokumentarisch ausgearbeitet, mit eigenen ungetesteten Prüffällen und offengelegten Grenzen:
 
-1. **DESIGN.md gegen bestehende deklarative Layoutmodelle** – formale Werte, Geometrie, Begrenzung und Overflow.
-2. **UXSpec gegen SCXML** – isoliertes Verhalten, Semantik und eigenständige Validierung.
+1. [DESIGN.md gegen bestehende deklarative Layoutmodelle](docs/research/COMPARE-DESIGN-LAYOUT.md) – formale Werte, Geometrie, Begrenzung und Overflow.
+2. [UXSpec gegen SCXML](docs/research/COMPARE-UXSPEC-SCXML.md) – isoliertes Verhalten, Semantik und eigenständige Validierung.
 
 Diese Vergleiche sind Teil der anforderungsorientierten Untersuchung, keine Vorentscheidung für bestimmte Formate. Die spätere Plattformübertragung kann etwa Swift/SwiftUI, TypeScript, Angular, React und weitere Systeme betreffen. Ein erfolgreiches Web-Beispiel beweist keine native Kompatibilität. Zunächst steht das konsistente Contract-Paket im Vordergrund.
 
@@ -115,3 +125,29 @@ Grundlage ist das vollständig als Text gelesene [Gespräch „Open Design erkl�
 Die erste README entstand aus einem begrenzten Gesprächsausschnitt. Nach dem Vollabgleich wurden zwei Zuordnungen korrigiert: OpenUI meint `openuispec.org`, nicht `open-ui.org`; Google DESIGN.md meint das eigene `design.md`-Projekt, nicht nur Stitch Skills. UXSpec ist eindeutig identifiziert. Die Beispielkomponente wird nun dem allgemeinen Forschungsziel untergeordnet.
 
 **Arbeitsstand:** Informationssammlung und erste qualitative Abdeckungsuntersuchung. Keine Komponente implementiert, kein universelles Format festgelegt, keine vollständige Standardkonformität behauptet.
+
+## Gesamtprüfung der verbliebenen Felder
+
+Alle 72 Ausgangszellen sind im [Einzelprotokoll](docs/research/ALL-FIELDS-REVIEW.md) dokumentarisch erneut ausgewertet. Fünf konnten begründet eingeordnet werden; **67 technische Nachweise bleiben offen (41 Integration, 26 weitere)**. Neue Befunde betreffen Instanzkomposition, OpenPencil-Libraryrevisionen, CSS-Modusauswahl sowie Grenzen der UXSpec-Vorschau und des Originalschemas. Die Prüfung wurde nicht mit einer abgeschlossenen technischen Integration verwechselt. Keine E3-Versuche, keine Implementierung, kein Commit oder Push in diesem Paket.
+
+## Erste tatsächlich ausgeführte Forschungsnachweise
+
+Nach der dokumentarischen Gesamtprüfung wurden [49 begrenzte Proben](docs/research/experiments/2026-10-24/REPORT.md) ausgeführt. CEM I02 ist für TypeScript-Typtexte plus explizite CustomEvent.detail-Projektion nun A; **aktuell verbleiben 65 U-Nachweise (41 Integration, 24 weitere)**. Das CEM-Gesamtschema lässt einen numerischen Eventnamen durch; UXSpecs vollständiger machineInvoke-Eintrag scheitert an oneOf, ein unvollständiger passiert. Der geprüfte Nu-Checker erkennt nicht alle Referenzfehler. Eingaben, Ausgaben, Werkzeugstände und unerwartete Ergebnisse sind gespeichert. Keine Komponente oder vollständige Integration implementiert, kein Commit oder Push. Frühere Aussagen ohne E3 gelten als historischer Stand.
+
+Zusätzlich ist [SCXML I02 als Adapterbeitrag](docs/research/experiments/2026-10-24/scxml/REPORT.md) eingeordnet: öffentliche CEM-Signatur bleibt getrennt, statische send/param-Bindung ist geprüft. Die Original-XSD-Kombination akzeptiert einen fehlenden Zielzustand; dies bleibt als unerwartetes Ergebnis dokumentiert. Aktueller Reststand: 65 U.
+
+**Referenz-Folgearbeit:** [14 explorative Prüfungen](docs/research/experiments/2026-10-24/references/REPORT.md) sind übernommen; jetzt insgesamt 63 Prüffälle, weiterhin 65 U. Neue konkrete Grenzen: stille Modulüberschreibung bei schema-konformen Maschinen-ID-Kollisionen, Einheitenverlust und Widerspruch zwischen Referenzschema und Compilerpfad. Keine UI-Komponente implementiert, kein Commit/Push.
+
+**CSS-Folgearbeit:** [Zwei gebundene Grammatikprüfer](docs/research/experiments/2026-10-24/css-grammar/REPORT.md) sind mit 34 Fall-/Versionspaaren übernommen. Insgesamt 97 benannte Prüfbedingungen, weiterhin 65 U. Vorhandene Teilunterstützung wird nicht mit vollständiger Draftkonformität gleichgesetzt. Kein Commit oder Push.
+
+**Originalvalidator-Folgeprüfung:** [OpenPencil: 31 Fälle](docs/research/experiments/2026-10-24/openpencil-validation/REPORT.md) trennen Variablendaten, sichere CSS-Ausgabe und fachliche Konformität. 30 von 31 vorher gespeicherten Erwartungen bestätigt; eine unerwartete Arrayannahme bleibt offen dokumentiert. Weiterhin 63 U.
+
+**Layoutfolgeprüfung:** [OpenPencils ursprüngliche Layoutfelder und Webprojektion](docs/research/experiments/2026-10-24/openpencil-layout/REPORT.md) belegen V05 als A; Positionierungs-/Scrollfragen bleiben differenziert offen. Aktuell 62 U.
+
+**25.10.2026:** [Konkreter Switch-Accessibility-Bezug](docs/research/experiments/2026-10-25/openpencil-a11y/REPORT.md) dokumentiert; A02 nun R. Keine zusätzliche E3-Probe gezählt. 61 offene Nachweise, weiterhin kein Commit/Push.
+
+**Historischer Teilabschluss vor SCXML-Laufzeit und DTCG:** [Getrennte Originalsprachen und zwei Instanzen](docs/research/experiments/2026-10-25/four-domain/REPORT.md) mit Originalprüfungen, statischen Gegenfällen und Browsergeometrie nachgewiesen. X01 bei vier Beiträgen U→A; insgesamt 57 offene Nachweise. 217 Bedingungen, keine vollständige interaktive Integration oder Produktformatwahl. Kein Commit oder Push.
+
+[Verbindlicher aktueller Nachweisstand und Abnahme dieses Pakets](docs/research/CURRENT-STATUS.md).
+
+[Alle ausgeführten Nachweisgruppen mit Outputs und Prüfgrenzen](docs/research/experiments/INDEX.md).

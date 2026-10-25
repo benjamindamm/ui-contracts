@@ -1,0 +1,365 @@
+{
+  "revision": "1e25e9b8bc2e694689ba0489594f38807a341f14",
+  "ajv": "8.17.1",
+  "node": "v24.13.1",
+  "scope": "Complete original contract, cache-validation and target-identity modules, own minimal file inputs, no obligation-evidence files present; no Figma or full pipeline",
+  "cases": [
+    {
+      "id": "baseline",
+      "expected": {
+        "accepted": true
+      },
+      "observation": {
+        "accepted": true,
+        "cacheValidations": [
+          {
+            "domain": "api",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/baseline/autocomplete-api.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 636,
+            "errors": []
+          },
+          {
+            "domain": "api-dictionary",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/baseline/autocomplete-api-dictionary.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 405,
+            "errors": []
+          },
+          {
+            "domain": "structure",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/baseline/autocomplete-structure.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 1021,
+            "errors": []
+          },
+          {
+            "domain": "color",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/baseline/autocomplete-color.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 500,
+            "errors": []
+          },
+          {
+            "domain": "voice",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/baseline/autocomplete-voice.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 815,
+            "errors": []
+          },
+          {
+            "domain": "reconciliations",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/baseline/autocomplete-reconciliations.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 386,
+            "errors": []
+          }
+        ],
+        "contractSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "sourceHeight": 20,
+        "structureHeight": "20",
+        "target": {
+          "layerName": "Input",
+          "layerId": "input-1",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {},
+          "sourceScope": "parent",
+          "_targetDisposition": "resolved"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "renderer-hash-conflict",
+      "expected": {
+        "accepted": false
+      },
+      "observation": {
+        "accepted": false,
+        "error": "Error: Renderer evidence hash does not match prepare manifest"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "plan-hash-conflict",
+      "expected": {
+        "accepted": false
+      },
+      "observation": {
+        "accepted": false,
+        "error": "Error: Render plan baseSourceHash does not match prepare manifest"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "plan-slug-conflict",
+      "expected": {
+        "accepted": false
+      },
+      "observation": {
+        "accepted": false,
+        "error": "Error: Render plan slug mismatch: foreign !== autocomplete"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "cross-specialist-identity",
+      "expected": {
+        "accepted": false
+      },
+      "observation": {
+        "accepted": false,
+        "error": "Error: Cache validation failed:\n  structure: fileKey, nodeId, or componentSlug disagrees across specialist caches\n  color: fileKey, nodeId, or componentSlug disagrees across specialist caches\n  voice: fileKey, nodeId, or componentSlug disagrees across specialist caches"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "api-dictionary-name-conflict",
+      "expected": {
+        "accepted": false
+      },
+      "observation": {
+        "accepted": false,
+        "error": "Error: Cache validation failed:\n  api: api and api-dictionary componentName must agree\n  api-dictionary: api and api-dictionary componentName must agree"
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "specialist-hash-drift",
+      "expected": {
+        "accepted": true
+      },
+      "observation": {
+        "accepted": true,
+        "cacheValidations": [
+          {
+            "domain": "api",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/specialist-hash-drift/autocomplete-api.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 636,
+            "errors": []
+          },
+          {
+            "domain": "api-dictionary",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/specialist-hash-drift/autocomplete-api-dictionary.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 405,
+            "errors": []
+          },
+          {
+            "domain": "structure",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/specialist-hash-drift/autocomplete-structure.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 1021,
+            "errors": []
+          },
+          {
+            "domain": "color",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/specialist-hash-drift/autocomplete-color.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 443,
+            "errors": []
+          },
+          {
+            "domain": "voice",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/specialist-hash-drift/autocomplete-voice.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 815,
+            "errors": []
+          },
+          {
+            "domain": "reconciliations",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/specialist-hash-drift/autocomplete-reconciliations.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 386,
+            "errors": []
+          }
+        ],
+        "contractSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "sourceHeight": 20,
+        "structureHeight": "20",
+        "target": {
+          "layerName": "Input",
+          "layerId": "input-1",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {},
+          "sourceScope": "parent",
+          "_targetDisposition": "resolved"
+        }
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "measured-value-conflict",
+      "expected": {
+        "bothValuesRetained": true
+      },
+      "observation": {
+        "accepted": true,
+        "cacheValidations": [
+          {
+            "domain": "api",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/measured-value-conflict/autocomplete-api.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 636,
+            "errors": []
+          },
+          {
+            "domain": "api-dictionary",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/measured-value-conflict/autocomplete-api-dictionary.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 405,
+            "errors": []
+          },
+          {
+            "domain": "structure",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/measured-value-conflict/autocomplete-structure.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 1021,
+            "errors": []
+          },
+          {
+            "domain": "color",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/measured-value-conflict/autocomplete-color.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 500,
+            "errors": []
+          },
+          {
+            "domain": "voice",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/measured-value-conflict/autocomplete-voice.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 815,
+            "errors": []
+          },
+          {
+            "domain": "reconciliations",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/measured-value-conflict/autocomplete-reconciliations.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 386,
+            "errors": []
+          }
+        ],
+        "contractSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "sourceHeight": 20,
+        "structureHeight": "80",
+        "target": {
+          "layerName": "Input",
+          "layerId": "input-1",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {},
+          "sourceScope": "parent",
+          "_targetDisposition": "resolved"
+        },
+        "bothValuesRetained": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "cache-source-preserved",
+      "expected": {
+        "unchanged": true
+      },
+      "observation": {
+        "accepted": true,
+        "cacheValidations": [
+          {
+            "domain": "api",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved/autocomplete-api.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 636,
+            "errors": []
+          },
+          {
+            "domain": "api-dictionary",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved/autocomplete-api-dictionary.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 405,
+            "errors": []
+          },
+          {
+            "domain": "structure",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved/autocomplete-structure.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 1021,
+            "errors": []
+          },
+          {
+            "domain": "color",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved/autocomplete-color.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 500,
+            "errors": []
+          },
+          {
+            "domain": "voice",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved/autocomplete-voice.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 815,
+            "errors": []
+          },
+          {
+            "domain": "reconciliations",
+            "path": "/Users/kcnpxcp/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/uspec-ownership/fixtures/cache-source-preserved/autocomplete-reconciliations.json",
+            "ok": true,
+            "normalized": 0,
+            "bytes": 386,
+            "errors": []
+          }
+        ],
+        "contractSourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "sourceHeight": 20,
+        "structureHeight": "20",
+        "target": {
+          "layerName": "Input",
+          "layerId": "input-1",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {},
+          "sourceScope": "parent",
+          "_targetDisposition": "resolved"
+        },
+        "unchanged": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "canonical-load-after-cache-change",
+      "expected": {
+        "accepted": true
+      },
+      "observation": {
+        "accepted": true,
+        "cacheValidationCount": 0,
+        "previouslyBuiltJSONLoaded": true
+      },
+      "expectationMet": true
+    }
+  ]
+}

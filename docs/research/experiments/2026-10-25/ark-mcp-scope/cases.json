@@ -1,0 +1,32 @@
+[
+  {
+    "id": "original-api-json-control",
+    "mutation": "none",
+    "expectedAccepted": true
+  },
+  {
+    "id": "required-flag-string",
+    "mutation": "required",
+    "expectedAccepted": false
+  },
+  {
+    "id": "type-number",
+    "mutation": "type",
+    "expectedAccepted": false
+  },
+  {
+    "id": "missing-part-props",
+    "mutation": "props",
+    "expectedAccepted": false
+  },
+  {
+    "id": "boolean-default",
+    "mutation": "default",
+    "expectedAccepted": false
+  },
+  {
+    "id": "opaque-type-expression",
+    "mutation": "opaque-type",
+    "expectedAccepted": true
+  }
+]

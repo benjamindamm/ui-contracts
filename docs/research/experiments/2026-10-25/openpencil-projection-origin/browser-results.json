@@ -1,0 +1,34 @@
+{
+  "rule": "aria-toggle-field-name",
+  "sourceResultsSha256": "8195a0142fababd99d39dfe2fe6e40349f50c3265aa81b2e4690556bdb440e48",
+  "scope": "Initial rule choice; no case has applicable pass/violation, not a positive name-conformance result",
+  "axe": "4.14.0",
+  "cases": [
+    {
+      "id": "drawn-text",
+      "incomplete": [],
+      "passes": [],
+      "violations": [],
+      "expectationMet": true,
+      "applicabilityDemonstrated": false
+    },
+    {
+      "id": "node-name-only",
+      "incomplete": [],
+      "passes": [],
+      "violations": [],
+      "expectationMet": false,
+      "applicabilityDemonstrated": false
+    },
+    {
+      "id": "hidden-text",
+      "incomplete": [],
+      "passes": [],
+      "violations": [],
+      "expectationMet": false,
+      "applicabilityDemonstrated": false
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "sourceResultsFile": "initial-eight-success-results.json"
+}

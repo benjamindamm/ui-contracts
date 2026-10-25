@@ -1,0 +1,131 @@
+{
+  "scope": "Actual original UXSpec compiler/full style-map or uSpec canonical builder/full original clipping-function output mapped through explicit extra CEM/context/anchor/overflow/fixed-row policy to native own DOM; no original UX Runner/editor/Figma SDK or platform renderer claimed",
+  "cases": [
+    {
+      "action": "clip",
+      "additionalDomCssBinding": true,
+      "candidate": "uSpec",
+      "criterion": "V06",
+      "expectationMet": true,
+      "expected": {
+        "lastPainted": false,
+        "overflow": "clip",
+        "scrollTop": 0
+      },
+      "id": "us-overflow-clipped",
+      "model": "uspec",
+      "observed": {
+        "gap": 8,
+        "height": 160,
+        "inputHeight": 20,
+        "lastPainted": false,
+        "originalAnchor": {
+          "_targetDisposition": "resolved",
+          "layerId": "input-1",
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "originalMapperInterpretsOverflow": null,
+        "overflow": "clip",
+        "scrollHeight": 224,
+        "scrollTop": 0,
+        "sourceFingerprint": "a38b69090bf7186536fea13c4f51e09082b2187afc12a040ce4acdbbbd1badee"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "clip",
+      "additionalDomCssBinding": true,
+      "candidate": "uSpec",
+      "criterion": "V06",
+      "expectationMet": true,
+      "expected": {
+        "lastPainted": true,
+        "overflow": "visible",
+        "scrollTop": 0
+      },
+      "id": "us-overflow-visible",
+      "model": "uspec-visible",
+      "observed": {
+        "gap": 8,
+        "height": 160,
+        "inputHeight": 20,
+        "lastPainted": true,
+        "originalAnchor": {
+          "_targetDisposition": "resolved",
+          "layerId": "input-1",
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "originalMapperInterpretsOverflow": null,
+        "overflow": "visible",
+        "scrollHeight": 224,
+        "scrollTop": 0,
+        "sourceFingerprint": "7fa5c481195d8ac0934b596f45053fa883a663735e2eba05be89bcd63aa252f9"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "clip",
+      "additionalDomCssBinding": true,
+      "candidate": "uSpec",
+      "criterion": "V06",
+      "expectationMet": true,
+      "expected": {
+        "error": "unsupported-original-clipping-value"
+      },
+      "id": "us-overflow-untyped-original",
+      "model": "uspec-invalid-clip",
+      "observed": {
+        "error": "unsupported-original-clipping-value",
+        "originalAnchor": {
+          "_targetDisposition": "resolved",
+          "layerId": "input-1",
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "sourceFingerprint": "d86669e18f6ab6f44583c637dcea4be696579b4462484edc0abb4d8ef17f7294"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    },
+    {
+      "action": "clip",
+      "additionalDomCssBinding": true,
+      "candidate": "uSpec",
+      "criterion": "V06",
+      "expectationMet": true,
+      "expected": {
+        "error": "missing-original-clipping-value"
+      },
+      "id": "us-overflow-missing-original",
+      "model": "uspec-missing-clip",
+      "observed": {
+        "error": "missing-original-clipping-value",
+        "originalAnchor": {
+          "_targetDisposition": "resolved",
+          "layerId": "input-1",
+          "layerName": "Input",
+          "sourceScope": "parent",
+          "variantId": "v1",
+          "variantName": "default",
+          "variantProperties": {}
+        },
+        "sourceFingerprint": "5ce8e1b02d9c6ef2e30cc7ae5c15567f714a4b894953541b3b91b5d9a51c6f4c"
+      },
+      "originalModelModified": false,
+      "originalNativeLayoutClaim": false
+    }
+  ]
+}

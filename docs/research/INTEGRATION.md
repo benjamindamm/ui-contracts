@@ -1,3 +1,17 @@
+**Einordnung dieses Entwurfs:** Die folgenden Zahlen und „noch nicht ausgeführt“-Aussagen bewahren frühere Prüfrunden. Aktuelle Matrixnachweise stehen in [CURRENT-STATUS](CURRENT-STATUS.md); zusätzlich offene gemeinsame Integrationsarbeit in [PROJECT-GAPS](PROJECT-GAPS.md). Die begrenzten späteren Adapterversuche ersetzen noch keine fertige gemeinsame Architektur.
+
+**Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
+
+**Typisierte Referenzbindung geprüft:** [ARIA-Host → externe CEM-/SCXML-Knoten](experiments/2026-10-25/typed-references/REPORT.md), 16 Erwartungen erfüllt, Original-CEM/SCXML-Schemas separat akzeptiert. WAI-ARIA X03 begrenzt A/C462 durch Zusatzresolver; keine native ARIA-Modellreferenz. Aktuell 54 U, 299 Bedingungen/36 Gruppen.
+
+**Neu: informationsbezogene Ownership geprüft.** [Originalpaket, Quelländerung und Konflikte](experiments/2026-10-25/ownership-conflicts/REPORT.md): zwei führende Informationen mit Ableitungen, 15 Änderungsfälle, eine erhaltene und korrigierte Revisionsverletzung sowie vier praktische Gegenbedingungen. CSS Layout X08 begrenzt A/C459; aktuell 41 U (26 Integration, 15 weitere), 283 Bedingungen in 35 Gruppen. Keine generische Ownership-/Transaktions-/Identitätsgarantie.
+
+**Neue Laufzeitgrenze:** [Original-Defaultinvoke](experiments/2026-10-25/scxml-invoke/REPORT.md) koppelt bei gleichem Child-src die Daten zweier Instanzen trotz separater Elternvorbereitung: drei von sechs Erwartungen verletzt. Cancel/Neustart als Lebenszyklus sind begrenzt ausgeführt; ein Diagnosefall mit unterschiedlichen URIs besteht. Keine gewählte Lösung. Zum damaligen Teilabschluss 56 U-Zellen; in jenem Lauf keine Neubewertung. Sechs zusätzliche Fälle mit eigenem instanzgetrenntem Invokeradapter bestehen; die Originalverletzungen bleiben erhalten (C458).
+
+**DTCG-Folgeprüfung:** [Getrennte Visualquelle mit zusätzlichem Webadapter](experiments/2026-10-25/dtcg-binding/REPORT.md), zwölf Bindungs-/Übersetzungsfälle und vier Browserbedingungen erfüllt. X01 DTCG A/C454 im begrenzten Referenzfall; zum damaligen Teilabschluss 56 U-Zellen. Kein vollständiger DTCG-Validator.
+
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+
 # Integrationskonzept: getrennte Verträge, gemeinsame Bezüge
 
 Stand: 24. Oktober 2026. **Diskussions- und Arbeitsentwurf, keine ausgewählte Technologie und kein implementiertes Paketformat.** Grundlage sind die abgeschlossenen Kandidatenprüfungen und die bereits bestätigten Projektanforderungen. Es wurden für diesen Entwurf keine neuen externen Quellen geprüft und keine Validatoren oder Laufzeiten ausgeführt.
@@ -115,3 +129,7 @@ Die vier spezialisierten Skills bleiben ein späteres Ziel. Dieser Ablauf erstel
 - [ ] Bei gesondertem praktischem Auftrag Originalvalidatoren und positive/negative Verbindungen tatsächlich prüfen; Ergebnisse getrennt erfassen.
 
 **Noch offen:** Formatwahl, vollständige Typabbildung, Versionierung/Migration, native Zielprofile, maschinelle Accessibility-Regeln, Grenze automatischer Konflikterkennung und produktiver Mindest-Reifegrad. Die bestehenden Detailvergleiche und verbleibenden U-Fragen werden durch diesen Entwurf nicht erledigt.
+
+## Ausgeführter begrenzter Webreferenzfall
+
+[21 Bedingungen](experiments/2026-10-25/four-domain/REPORT.md) belegen vier getrennte Dateien in Originalsprachen, explizite zusätzliche Instanz-/Bedeutungsbindung und gemessene eigene Popupanker/Begrenzung für A/B. Variable Zeilenhöhen unterscheiden geometrische Höhe von sichtbarer Zeilenzahl. Das Profil ist Forschungszusatz, keine beschlossene Produktarchitektur; dynamischer UX-/Hostlauf und native Abbildung bleiben offen. X01 ist für die vier konkret beteiligten Beiträge nun A.

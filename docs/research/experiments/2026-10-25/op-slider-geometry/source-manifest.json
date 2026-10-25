@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-25",
+  "source_id": "S120",
+  "original_code_modified": false,
+  "method_sha256": "a4ac199e1b72dbaa4b7dab05e34c4e1c9def32f2c6b766286038f12d497490a4",
+  "requirements_sha256": "8277ba4d3e91c081a76f0d37c26161340bdab32bf2df46a826d5916b3151afc0",
+  "original_files": [
+    {
+      "local_provenance_path": "work/op-projection-origin/tool-inventory.json",
+      "sha256": "ce880bf2622ec8f06eb0626117bcec22cd4d9b88285277cbb01288c10399ae8d"
+    },
+    {
+      "local_provenance_path": "work/op-radio-names/sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "sha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953"
+    },
+    {
+      "local_provenance_path": "work/op-projection-origin/tool/node_modules/reka-ui/dist/Slider/SliderThumbImpl.js",
+      "sha256": "7ae3616a90a63c08d7a27b6286b5f9b702acbf8637a892f6e14f9ee8ac23e4a6"
+    },
+    {
+      "local_provenance_path": "work/op-projection-origin/tool/node_modules/reka-ui/dist/Slider/SliderHorizontal.js",
+      "sha256": "ac38e10db7fa3bf99e14b75a20dfa78952c88df6cf1e320fd4a3e5181ade26e0"
+    },
+    {
+      "local_provenance_path": "work/op-projection-origin/tool/node_modules/reka-ui/dist/Slider/utils.js",
+      "sha256": "aafd2e6cda0a1c1a5215cc28b14b8cace7effb4e20bb988335af4191f140bf99"
+    },
+    {
+      "local_provenance_path": "work/op-projection-origin/tool/node_modules/@vue/compiler-sfc/package.json",
+      "sha256": "495a092a14febb0773f007171db74b92645828bf23fcfe9a1a93bd2d55f13536"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "e099b7234e6ba333e5faf9413268001bc69a4e23771236660190d436e37d6c82"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "61d85f56405db45cecf53f2e9699862bd982de2e502bc0994caa5f6ebec7c155"
+    },
+    {
+      "file": "host/quarter-wider-root.html",
+      "sha256": "4b697b3825c37e72241052567c9d5e1b85fc42114a90b4f5261e84a88a4d351d"
+    },
+    {
+      "file": "host/quarter.html",
+      "sha256": "7a7b0c710abd20a013ad27d6e6f71facb33bfe9527b579a5765ced37763db62b"
+    },
+    {
+      "file": "host/three-quarters.html",
+      "sha256": "ee835e05e6c1da278cf3d2e33cd308aedebcdc5ead4ba87a8f376158a526ae10"
+    },
+    {
+      "file": "initial-run.mjs",
+      "sha256": "8dcd3e432a6d480ec28911f4788cd26a395a43f2e335f287083892c7d99be13e"
+    },
+    {
+      "file": "initial-selector-results.json",
+      "sha256": "305cb37c780b528c4dc5d723aabed8b927195e3deae7d648aa71c060a992ee79"
+    },
+    {
+      "file": "native-browser-capture.json",
+      "sha256": "c9a101d479c6030a09c88b7dd77ad61045431e1ec2a11defa5a7209e4775f128"
+    },
+    {
+      "file": "native-cases.json",
+      "sha256": "f52d41b7951bd40bde6808ecabe6d45e897b62811e057c6b6386dfbd9afab320"
+    },
+    {
+      "file": "native-results.json",
+      "sha256": "86768d14a79215adbce4709764edaecba95291fac1ce77668616fe7b9ae975f2"
+    },
+    {
+      "file": "prepare-native.cjs",
+      "sha256": "ce5b5b2ef434ad21d8e76b083405953b7a0da99564ff972f8c299fc7216956e3"
+    },
+    {
+      "file": "quarter-compiled.ts",
+      "sha256": "4ecee88b918e6d987994d9f36dc504044decb39489b98bbc3fd368d49f22d0d5"
+    },
+    {
+      "file": "quarter-generated.json",
+      "sha256": "8bd12d9d15f802c820fafff48d6108a7428a1e3e0ffd5b0324759199ad7fecb0"
+    },
+    {
+      "file": "quarter-referenced-reka.html",
+      "sha256": "9991e89d5e7cb9ce59c99714d68dc1e0b4e84ec47ea7de455e8186add51d385e"
+    },
+    {
+      "file": "quarter-wider-root-compiled.ts",
+      "sha256": "296fa579fe22b77b4895a3f565fde4937fc155208af746725245c1e266975cb0"
+    },
+    {
+      "file": "results.json",
+      "sha256": "8d560454dbee7b6235792bce7960254f68d85ca632381df39b5a6a7d098fb162"
+    },
+    {
+      "file": "run.mjs",
+      "sha256": "c7d2dc8bea3db6db26e091bc691c3b885361b986e1641f3fc6662eada50505a1"
+    },
+    {
+      "file": "three-quarters-compiled.ts",
+      "sha256": "002f4eb0dc94bea9251010da41fce7b35966d126a015e426c82814815106f3c8"
+    },
+    {
+      "file": "three-quarters-generated.json",
+      "sha256": "af4f8ff92d629cc7b4e62c38aa227426e727efaaa9443a2dc482d228f8cf5783"
+    },
+    {
+      "file": "three-quarters-referenced-reka.html",
+      "sha256": "3912f18026dc8adb17bdef20a7584a853d8cf6084722140b9aa89b9f96c5ac84"
+    }
+  ],
+  "generated_third_party_bundles": [
+    {
+      "file": "host/quarter-wider-root.js",
+      "sha256": "9c0174036151a252131ee0c71b1ab843af14450db56a3057ffeb9cb009d5f8e9",
+      "distributed": false
+    },
+    {
+      "file": "host/quarter.js",
+      "sha256": "5c4878ab189b7e1cd05f7922c8865f8eae913e1d92273a7dea531179ecb4c20b",
+      "distributed": false
+    },
+    {
+      "file": "host/three-quarters.js",
+      "sha256": "e777d75d0809522011c5ecdd6a7c651981126232b2fdf768329426680b9710b3",
+      "distributed": false
+    }
+  ],
+  "physical_keyboard_tested": false,
+  "at_tested": false,
+  "reproduction_originals": "Provide pinned original files/dependencies at the documented workspace sibling paths; originals and bundled third-party code not redistributed as own implementation"
+}

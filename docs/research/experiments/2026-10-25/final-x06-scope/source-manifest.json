@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-25",
+  "source": "S95",
+  "accesses": "source-access.json",
+  "original_files": [
+    {
+      "file": "../google-linter/tool/node_modules/@google/design.md/package.json",
+      "sha256": "9cd26dae8342295b88dad6df3432f732f38c215f401f49af61068211cf2015b9"
+    },
+    {
+      "file": "../google-linter/tool/node_modules/@google/design.md/dist/spec.md",
+      "sha256": "8f297a7bd38cf08bde06c96f5eea2ebfcd9930a8bc1dfe964f8e8dec894e691a"
+    },
+    {
+      "file": "../google-linter/tool/node_modules/@google/design.md/dist/spec-config.yaml",
+      "sha256": "6244e829849e63b55316258f32e1110833d193b79943ec79f245b33ebeec2ef8"
+    },
+    {
+      "file": "../google-linter/tool/node_modules/@google/design.md/dist/linter/index.js",
+      "sha256": "a76ab9c2ee8a1bc6ad709167c3c7f06e64a5e2253d9718d3c2a8c51824272423"
+    },
+    {
+      "file": "../google-linter/tool/node_modules/@google/design.md/dist/linter/spec-config.d.ts",
+      "sha256": "714338ceb1f7ea86c1f2b23e1fbe72f74ddda21ac20b3141fd614018db08da36"
+    },
+    {
+      "file": "../google-linter/tool/node_modules/@google/design.md/dist/linter/lint.d.ts",
+      "sha256": "b2432d2cd6bad5a544ef72d038fcb6df1a1eb8413206cee418c6f007b3fe92af"
+    },
+    {
+      "file": "../google-linter/tool/node_modules/zod/package.json",
+      "sha256": "70eedbe34fd52385a4ae2f3e5759b19682189f0118ea73a6e7c32c677f61668e"
+    },
+    {
+      "file": "../google-linter/tool/node_modules/yaml/package.json",
+      "sha256": "1c6441703d8204a23ded0d37ddf57c3b69d821dc392f20852d1f605bb9b8861c"
+    },
+    {
+      "file": "sources/spec-config.ts",
+      "sha256": "f743d14c7d48e828c2d50c8ee0c16180a128c1a35dbad6bab57158a0c9f28841"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "7cda825fe28928d0305ee1f48a6c33909ffc0db64d52e0f78890eb97db2558f5"
+    },
+    {
+      "file": "source-access.json",
+      "sha256": "d5e8f36ca0db4a335238eded5d7c370982f9c0b85eb0eb0d08955a9030c6dde4"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "8957269e0aebd2b2af56995eac04b18964cd97b2f1de059afd444b0a8b577432"
+    },
+    {
+      "file": "run-config.cjs",
+      "sha256": "56a2223aefcfa912c6dbd2b2414f884145c448d442711c117452518a2c836889"
+    },
+    {
+      "file": "extraction.json",
+      "sha256": "20324da949e2d355f96c7776bd044a4564918bc50f776c2fdcbf92b198694df5"
+    },
+    {
+      "file": "results.json",
+      "sha256": "4f754611b177349962e41f522edea8228a43402c6fe8ee4a4bc9b382f9ac2948"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "b671b73ce91147a95f81283fc575db1cad971f5bd3f478d69d8a9d147a952d49"
+    }
+  ],
+  "runtime_groups_added": 1,
+  "conditions_added": 6,
+  "original_schema_modified": false,
+  "schema_subject": "specification-authoring configuration, not a DESIGN.md document",
+  "sources_redistributed": false
+}

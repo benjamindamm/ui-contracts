@@ -1,0 +1,38 @@
+{
+  "kind": "candidate-specific independent contribution binding and actual original SCXML state witnesses; no new original schema checks counted",
+  "cases": [
+    {
+      "id": "independent-original-contributions",
+      "observed": {
+        "originalRootsSeparate": true,
+        "partTargetsResolved": true,
+        "visualValues": [
+          160,
+          192
+        ],
+        "otherDomainsUnchanged": true
+      },
+      "expectationMet": true
+    },
+    {
+      "id": "original-scxml-two-open-instances",
+      "expected": {
+        "A": [
+          "open"
+        ],
+        "B": [
+          "open"
+        ]
+      },
+      "observed": {
+        "A": [
+          "open"
+        ],
+        "B": [
+          "open"
+        ]
+      },
+      "expectationMet": true
+    }
+  ]
+}

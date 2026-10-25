@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/zag/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/core/src/types.ts",
+    "sha256_read_body": "eda217bb1139a4b274b3a45ffd67feddceeeff0dc0157ec30885c14de4938031",
+    "chars": 9054,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/content/patterns/combobox/combobox-pattern.html",
+    "sha256_read_body": "c8aaf0f98655af5598eff0c3592dc55a6dd1cff4e7eb3e19a2960fa72dacc178",
+    "chars": 34543,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ctate/openui/09d39b211dcaa2e227ed38e312c8822e193cfea9/README.md",
+    "sha256_read_body": "b04f49175e15b1d36942a4d1cc3db122c2dc37b71ea31afefbdb2061e1e52028",
+    "chars": 14256,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/zag/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/website/data/guides/building-machines.mdx",
+    "sha256_read_body": "2f709ace1a2cdc6f260a2512872fa4f06dbfc30fe12ac7245323534dc1731e84",
+    "chars": 19022,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/package.json",
+    "sha256_read_body": "a4dee27f49433f83df91cdacbaeb4e39fa60fc0a777df2af4da8090a4356fafa",
+    "chars": 3335,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ctate/openui/09d39b211dcaa2e227ed38e312c8822e193cfea9/lib/schema.ts",
+    "sha256_read_body": "68f004f965aa075d5400f1efe2bf17679c4541487f433f61154f20e7f845a1d9",
+    "chars": 2114,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/zag/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/machines/scroll-area/src/index.ts",
+    "sha256_read_body": "87231d315a9c0c4f6406518cb04eac989a8a0ca967f7af8d570818e5d367839a",
+    "chars": 544,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/content/about/introduction/introduction.html",
+    "sha256_read_body": "e3b402666ec668dabbac1b027b9c49e7043756d9189b86022dd6c714350aaa12",
+    "chars": 13491,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ctate/openui/09d39b211dcaa2e227ed38e312c8822e193cfea9/interfaces/Spec.ts",
+    "sha256_read_body": "68fabe6c16b31af40bf2f50d4cadbb4817c92bd2e364792d0216867d1290ec98",
+    "chars": 369,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google-labs-code/design.md/9bf8eae67128b6cc55ad9bf86665767deb4c11cd/packages/cli/src/linter/spec-config.ts",
+    "sha256_read_body": "f743d14c7d48e828c2d50c8ee0c16180a128c1a35dbad6bab57158a0c9f28841",
+    "chars": 8208,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/zag/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/core/src/index.ts",
+    "sha256_read_body": "99d6497d55db536f81c3ed648eee4d9ca1657de822d28565c190a678a8aeb67c",
+    "chars": 192,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/test/tests/combobox_autocomplete-both.js",
+    "sha256_read_body": "24532c78649767d88e5f9a60bcc4bd72af9861c9a176446eca02cb34d6d66ea7",
+    "chars": 26877,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ctate/openui/09d39b211dcaa2e227ed38e312c8822e193cfea9/versions/draft-01.md",
+    "sha256_read_body": "011f5037eec8e3f066e5f1aaa84062624058b7091516d7a53aee2f4c060d8f2a",
+    "chars": 13939,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/zag/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/core/src/create-machine.ts",
+    "sha256_read_body": "c712ff1a65aec685e12c8a4803a09b651f0371bfb0fe35ddce9ca70793e49b7f",
+    "chars": 1182,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/README.md",
+    "sha256_read_body": "60e9518c4dba41cdf4ea211b70ef707fdcd6423780f8732a923bf6383fb81efb",
+    "chars": 5991,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ctate/openui/09d39b211dcaa2e227ed38e312c8822e193cfea9/components/schema-table.tsx",
+    "sha256_read_body": "c47dac4355facad12a20c77f6096f51dd38e89ee3526711679a03c997beaef86",
+    "chars": 2815,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/zag/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/website/data/overview/introduction.mdx",
+    "sha256_read_body": "d176331dab5db1a5dbae0c2938c3a4d65d545af2dfa21a62dcbf1d502f5dbb51",
+    "chars": 4995,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/chakra-ui/zag/cafda74ba915d5abc5abb20abdde3a719d8e4e9c/packages/machines/combobox/src/index.ts",
+    "sha256_read_body": "d8ad2071f3fa9979ce4ec2a9d2b6702ec8a841f4ee13e7d9c7faf9c12f842520",
+    "chars": 871,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/w3c/aria-practices/0f765e4dc33e966026114ac12a8380db1de3b787/test/index.js",
+    "sha256_read_body": "9de5c0e46f6c1e32cd1b68fffc16574a3b9dfa38551072db75744f9c51c39727",
+    "chars": 3105,
+    "access_failed": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ctate/openui/09d39b211dcaa2e227ed38e312c8822e193cfea9/lib/Spec.ts",
+    "sha256_read_body": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+    "chars": 14,
+    "access_failed": true
+  }
+]

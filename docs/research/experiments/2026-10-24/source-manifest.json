@@ -1,0 +1,20 @@
+[
+  {
+    "file": "sources/cem.schema.json",
+    "source_url": "https://raw.githubusercontent.com/webcomponents/custom-elements-manifest/2570079a0525c26296f9ec39944f0c6e0f0461af/schema.json",
+    "sha256": "8ea358b4913fbd13832d1e3f111a0af974aa1682fd80ccd697a3ce6b96a0d410",
+    "capture": "UTF-8 code block extracted from full BrowserOS neo read; not asserted byte-identical to HTTP response"
+  },
+  {
+    "file": "sources/uxspec.schema.json",
+    "source_url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/schema/uxspec.schema.json",
+    "sha256": "3e2819b844c8b4f5fb03f18bb49ee9f87396bc6e7ad0e04482d3217389574bf7",
+    "capture": "UTF-8 code block extracted from full BrowserOS neo read; not asserted byte-identical to HTTP response"
+  },
+  {
+    "file": "sources/style-map.mts",
+    "source_url": "https://raw.githubusercontent.com/johnlindquist/uxspec/20dfae0e7224d952e198afdf4ffed26d6fd67180/app/src/lib/render/style-map.ts",
+    "sha256": "b4d41e51aaf19e95258cf13fb41b3686d5787082d5a28ba5351df55d937c3bf2",
+    "capture": "UTF-8 code block extracted from full BrowserOS neo read; not asserted byte-identical to HTTP response"
+  }
+]

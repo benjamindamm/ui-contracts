@@ -1,0 +1,72 @@
+[
+  {
+    "id": "control",
+    "expected": {
+      "accepted": true,
+      "width": 100,
+      "names": [
+        "Choice A",
+        "Choice B"
+      ],
+      "checked": false,
+      "otherSourcesUnchanged": true,
+      "error": null
+    }
+  },
+  {
+    "id": "visual-revision",
+    "expected": {
+      "accepted": true,
+      "width": 120,
+      "names": [
+        "Choice A",
+        "Choice B"
+      ],
+      "checked": false,
+      "otherSourcesUnchanged": true,
+      "error": null
+    }
+  },
+  {
+    "id": "accessibility-revision",
+    "expected": {
+      "accepted": true,
+      "width": 100,
+      "names": [
+        "Changed A",
+        "Choice B"
+      ],
+      "checked": false,
+      "otherSourcesUnchanged": true,
+      "error": null
+    }
+  },
+  {
+    "id": "interface-default-revision",
+    "expected": {
+      "accepted": true,
+      "width": 100,
+      "names": [
+        "Choice A",
+        "Choice B"
+      ],
+      "checked": true,
+      "otherSourcesUnchanged": true,
+      "error": null
+    }
+  },
+  {
+    "id": "behavior-role-conflict",
+    "expected": {
+      "accepted": false,
+      "width": 100,
+      "names": [
+        "Choice A",
+        "Choice B"
+      ],
+      "checked": false,
+      "otherSourcesUnchanged": true,
+      "error": "a11y-behavior-role-conflict"
+    }
+  }
+]

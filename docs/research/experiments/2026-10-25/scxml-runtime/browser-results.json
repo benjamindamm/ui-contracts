@@ -1,0 +1,192 @@
+{
+  "additionalHostCode": true,
+  "cases": [
+    {
+      "expectationMet": true,
+      "expected": {
+        "A": "closed",
+        "B": "closed",
+        "expandedA": "false",
+        "expandedB": "false",
+        "hiddenA": true,
+        "hiddenB": true
+      },
+      "id": "host-initial",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "expandedA": "false",
+        "expandedB": "false",
+        "focus": "",
+        "hiddenA": true,
+        "hiddenB": true,
+        "publicAEvents": 0,
+        "publicBEvents": 0
+      }
+    },
+    {
+      "expectationMet": true,
+      "expected": {
+        "A": "open",
+        "B": "closed",
+        "expandedA": "true",
+        "expandedB": "false",
+        "focus": "input-a"
+      },
+      "id": "host-focus-a",
+      "observed": {
+        "A": "open",
+        "B": "closed",
+        "expandedA": "true",
+        "expandedB": "false",
+        "focus": "input-a",
+        "hiddenA": false,
+        "hiddenB": true,
+        "publicAEvents": 0,
+        "publicBEvents": 0
+      }
+    },
+    {
+      "expectationMet": true,
+      "expected": {
+        "A": "closed",
+        "B": "closed",
+        "expandedA": "false",
+        "focus": "input-a"
+      },
+      "id": "host-escape-a",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "expandedA": "false",
+        "expandedB": "false",
+        "focus": "input-a",
+        "hiddenA": true,
+        "hiddenB": true,
+        "publicAEvents": 0,
+        "publicBEvents": 0
+      }
+    },
+    {
+      "expectationMet": true,
+      "expected": {
+        "A": "closed",
+        "B": "closed",
+        "publicAEvents": 1,
+        "publicBEvents": 0,
+        "value": "alpha"
+      },
+      "id": "host-commit-a",
+      "observed": {
+        "A": "closed",
+        "B": "closed",
+        "expandedA": "false",
+        "expandedB": "false",
+        "focus": "input-a",
+        "hiddenA": true,
+        "hiddenB": true,
+        "publicAEvents": 1,
+        "publicBEvents": 0,
+        "value": "alpha"
+      }
+    },
+    {
+      "expectationMet": true,
+      "expected": {
+        "A": "closed",
+        "B": "open",
+        "expandedA": "false",
+        "expandedB": "true",
+        "focus": "input-b"
+      },
+      "id": "host-focus-b-after-a",
+      "observed": {
+        "A": "closed",
+        "B": "open",
+        "expandedA": "false",
+        "expandedB": "true",
+        "focus": "input-b",
+        "hiddenA": true,
+        "hiddenB": false,
+        "publicAEvents": 1,
+        "publicBEvents": 0,
+        "value": "alpha"
+      }
+    }
+  ],
+  "diagnostics": [],
+  "errors": [],
+  "eventTarget": "explicit research section container, not implemented CEM custom element",
+  "keyboardEventOrigin": "synthetic KeyboardEvent; no trusted physical key or screenreader test",
+  "originalSourceUnchanged": true,
+  "preparePerInstance": true,
+  "publicEvents": {
+    "A": [
+      {
+        "bubbles": true,
+        "detail": {
+          "value": "alpha"
+        },
+        "name": "value-change",
+        "targetInstance": "A"
+      }
+    ],
+    "B": []
+  },
+  "rawEvents": {
+    "A": [
+      {
+        "data": {
+          "value": "alpha"
+        },
+        "invokeid": "A",
+        "name": "value-change"
+      }
+    ],
+    "B": []
+  },
+  "realOriginalScxmlExecution": true,
+  "transitions": [
+    {
+      "entered": "$generated-scxml-0",
+      "id": "A"
+    },
+    {
+      "entered": "closed",
+      "id": "A"
+    },
+    {
+      "entered": "$generated-scxml-0",
+      "id": "B"
+    },
+    {
+      "entered": "closed",
+      "id": "B"
+    },
+    {
+      "entered": "open",
+      "id": "A"
+    },
+    {
+      "entered": "closed",
+      "id": "A"
+    },
+    {
+      "entered": "open",
+      "id": "A"
+    },
+    {
+      "entered": "selected",
+      "id": "A"
+    },
+    {
+      "entered": "closed",
+      "id": "A"
+    },
+    {
+      "entered": "open",
+      "id": "B"
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

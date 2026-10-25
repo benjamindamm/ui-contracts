@@ -1,0 +1,42 @@
+[
+  {
+    "id": "local-output-control",
+    "kind": "control",
+    "expectedOk": true
+  },
+  {
+    "id": "missing-output-target",
+    "kind": "missing-output",
+    "expectedOk": false
+  },
+  {
+    "id": "wrong-output-kind",
+    "kind": "wrong-kind",
+    "expectedOk": false
+  },
+  {
+    "id": "external-output-uri",
+    "kind": "external-output",
+    "expectedOk": false
+  },
+  {
+    "id": "unknown-source-path",
+    "kind": "missing-source",
+    "expectedOk": true
+  },
+  {
+    "id": "missing-source-file-uri",
+    "kind": "missing-file",
+    "expectedOk": true
+  },
+  {
+    "id": "changed-external-source",
+    "kind": "changed-source",
+    "expectedOk": true
+  },
+  {
+    "id": "output-semantic-type-conflict",
+    "kind": "wrong-type",
+    "expectedOk": false
+  }
+]

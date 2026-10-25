@@ -1,0 +1,17 @@
+{
+  "source": "https://raw.githubusercontent.com/chakra-ui/ark/c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc/scripts/src/generate-type-docs.ts",
+  "captureSha256": "cb6e5833083ec977bb8b806b7a07b29062a6535097817eb57cf8316cd9b6a364",
+  "sourceUtf8Sha256": "7cec608886ae71d1d921b36bb3e8d88e63656e3b2d15ab1835acc665a68892cb",
+  "readScope": "Full source, no execution",
+  "entrypoint": "document:types in scripts/package.json",
+  "input": "framework component .d.ts files and public type exports",
+  "operation": "TypeScript TypeChecker property/type/JSDoc extraction and documentation formatting",
+  "output": "website/src/content/types/<framework>/<component>.types.json",
+  "frameworks": [
+    "react",
+    "solid",
+    "vue",
+    "svelte"
+  ],
+  "originalValidatorExecuted": false
+}

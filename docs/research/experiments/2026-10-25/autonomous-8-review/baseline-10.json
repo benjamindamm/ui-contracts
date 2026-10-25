@@ -1,0 +1,62 @@
+[
+  {
+    "requirement": "X06",
+    "candidate": "Google DESIGN.md",
+    "coverage": "U",
+    "claim": "C483"
+  },
+  {
+    "requirement": "X06",
+    "candidate": "OpenUI",
+    "coverage": "U",
+    "claim": "C484"
+  },
+  {
+    "requirement": "V04",
+    "candidate": "UXSpec",
+    "coverage": "U",
+    "claim": "C420"
+  },
+  {
+    "requirement": "V06",
+    "candidate": "UXSpec",
+    "coverage": "U",
+    "claim": "C420"
+  },
+  {
+    "requirement": "V04",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C400"
+  },
+  {
+    "requirement": "V06",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C401"
+  },
+  {
+    "requirement": "X01",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C503"
+  },
+  {
+    "requirement": "X03",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C512"
+  },
+  {
+    "requirement": "X08",
+    "candidate": "uSpec",
+    "coverage": "U",
+    "claim": "C516"
+  },
+  {
+    "requirement": "X01",
+    "candidate": "OpenPencil",
+    "coverage": "U",
+    "claim": "C304"
+  }
+]

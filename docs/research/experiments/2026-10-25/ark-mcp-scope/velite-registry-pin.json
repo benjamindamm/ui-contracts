@@ -1,0 +1,8 @@
+{
+  "url": "https://registry.npmjs.org/velite/0.4.0",
+  "name": "velite",
+  "version": "0.4.0",
+  "fileCount": 11,
+  "integrity": "sha512-F7eatRsbm9RQ2d43YYufiS729USvE4BAkw9yNB4iuFUSfrY9bFGe6/lrY6OpgiyOL8BT9hVd1JoRfyotjPOGpQ==",
+  "source": "Selected fields from actual BrowserOS registry read; archive distribution pinned by package-lock."
+}

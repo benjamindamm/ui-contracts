@@ -1,0 +1,182 @@
+[
+  {
+    "id": "two-islands-same-path",
+    "mutation": "control",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "explicit-name",
+    "mutation": "label",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": "Explizit A",
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "label-reference",
+    "mutation": "labelledby",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": "external-label-a",
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "role-source-conflict",
+    "mutation": "role",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "checked-source-conflict",
+    "mutation": "checked",
+    "expected": {
+      "role": "radio",
+      "checkedA": true,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "internal-node-id",
+    "mutation": "metadata",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "callback-isolation",
+    "mutation": "click",
+    "expected": {
+      "role": "radio",
+      "checkedA": true,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "state-disabled",
+    "mutation": "disabled",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": true,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "designed-disabled",
+    "mutation": "designed",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": true,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "missing-control-state",
+    "mutation": "missing",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": true,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": false
+    }
+  },
+  {
+    "id": "unnamed-control",
+    "mutation": "unnamed",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": null,
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  },
+  {
+    "id": "unresolved-label-reference",
+    "mutation": "unresolved",
+    "expected": {
+      "role": "radio",
+      "checkedA": false,
+      "checkedB": false,
+      "disabledA": false,
+      "throws": false,
+      "explicitLabel": null,
+      "labelledby": "missing-label",
+      "internalIdPresent": false,
+      "renderSucceeds": true
+    }
+  }
+]

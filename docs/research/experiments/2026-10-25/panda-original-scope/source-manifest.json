@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-25",
+  "kind": "Original artifact identity review with reused E3 adapter evidence",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "07b6abc818de263763dfbde81fd9118cefddc692e053d5e7ec623af5f8ba5ff6"
+    },
+    {
+      "file": "source-notes.json",
+      "sha256": "52626954e90d250cddfa895ed4169558e4dc5ff66281cbe63b6cccbd489dce72"
+    }
+  ],
+  "new_runtime_conditions": 0,
+  "generator_executed": false,
+  "original_model_replaced": false
+}

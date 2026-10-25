@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-25",
+  "source": "S98",
+  "original_pin": "ab2875cc761ee6cff17d389ff1c85fedae50aeab",
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "222b853e60939e7431ca22c6ca5fcd3f8c87facb8e5fe9625e651bacf4780158"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "e879824e6faac89f2e0e96f8eba496dc089381684aa1a7347af9215e2bb4e52b"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "7b40c40b511b24fd3c0ae653661985481d65aa681d191d3682a2f71e74d2dc76"
+    },
+    {
+      "file": "source-notes.json",
+      "sha256": "788d50f2e39b9d384afa756af4f67f92b2cbbe65905109c0522fd698d3bc1b49"
+    },
+    {
+      "file": "extraction.json",
+      "sha256": "383be9d5e05bfb96a41153338bbaf978de944084c7ab05be39646dec0a7685c2"
+    },
+    {
+      "file": "results.json",
+      "sha256": "7761f681b61efc53f9814510a085d732fe62e0ba06f6a879038b017e9a423fb1"
+    },
+    {
+      "file": "vue-registry-pin.json",
+      "sha256": "00a23a9d9b226021da4cf2099dd4daeaa8a8d03d09302c74645d629b7cc76fa1"
+    },
+    {
+      "file": "tool/package.json",
+      "sha256": "cc25bba5133184798cf322bf1aaed98d85ae8c82c94f9620a921234fd7a975d3"
+    },
+    {
+      "file": "tool/package-lock.json",
+      "sha256": "e3dd1e632f6dcafedf6ecdd3ec6dd844f72338d37d6240ea4935e33ec1b7a92b"
+    },
+    {
+      "file": "tool-inventory.json",
+      "sha256": "430021cc17453c788a5923b2d874ae506ac3e1d6f0d43dc83831b99db216affb"
+    }
+  ],
+  "original_sources": [
+    {
+      "file": "sources/packages/vue/src/canvas/islands/controls/shared.ts",
+      "sha256": "89981b668b43475f96e050fa267b51bb3eeac4ad43dc2e95418d127fe8890259"
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/state.ts",
+      "sha256": "1cbe10e8ad1a552a2935213d931a4f860d5ef679e0f7cd7f12e8d6a4393d2963"
+    },
+    {
+      "file": "sources/packages/dom-css/src/behaviours/reset.ts",
+      "sha256": "8287f6b8c37cd320864336ba96e50d9eeca0464d64fe1f06d98e196ad22a5722"
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/render.ts",
+      "sha256": "9f8b3c79a4bbfbc3c3d7f91fdf524b4398eab040f4414ebde2b16f3dd03d65a9"
+    },
+    {
+      "file": "sources/packages/vue/src/canvas/islands/controls/index.ts",
+      "sha256": "818ea828fff5a5f5119fc037a6f6fe80fef77f85a1602afdff8838f91139e953"
+    }
+  ],
+  "typescript_file": {
+    "file": "../validation-probes/ts-tool/node_modules/typescript/lib/typescript.js",
+    "sha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675"
+  },
+  "runtime": "vue@3.5.41 with actual @vue/server-renderer@3.5.41",
+  "whole_build": false,
+  "role_classifier_executed": false,
+  "original_declarations_modified": false,
+  "conditions": 12
+}

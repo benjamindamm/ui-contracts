@@ -1,0 +1,1 @@
+{"id":"changed-original-artifact-schemas","expected":{"cem":true,"scxml":true},"criterion":"Validate the actually accepted CEM and SCXML renamed artifacts against the previously pinned original CEM JSON Schema and W3C SCXML XSD; no extra schema keys added."}

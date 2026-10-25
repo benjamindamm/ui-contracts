@@ -1,0 +1,54 @@
+{
+  "artifacts": {
+    "tokens.json": "{\n  \"base\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 8,\n        \"unit\": \"px\"\n      }\n    },\n    \"maxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 192,\n        \"unit\": \"px\"\n      }\n    },\n    \"rowHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 32,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"autocomplete\": {\n    \"gap\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.gap}\"\n    },\n    \"popupMaxHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.maxHeight}\"\n    },\n    \"optionHeight\": {\n      \"$type\": \"dimension\",\n      \"$value\": \"{base.rowHeight}\"\n    }\n  }\n}\n",
+    "interface.json": "{\n  \"schemaVersion\": \"2.1.0\",\n  \"modules\": [\n    {\n      \"kind\": \"javascript-module\",\n      \"path\": \"autocomplete.js\",\n      \"declarations\": [\n        {\n          \"kind\": \"class\",\n          \"customElement\": true,\n          \"name\": \"Autocomplete\",\n          \"members\": [\n            {\n              \"kind\": \"field\",\n              \"name\": \"value\",\n              \"type\": {\n                \"text\": \"string\"\n              }\n            }\n          ],\n          \"events\": [\n            {\n              \"name\": \"value-change\",\n              \"type\": {\n                \"text\": \"CustomEvent<{value:string}>\"\n              }\n            }\n          ],\n          \"cssParts\": [\n            {\n              \"name\": \"input\"\n            },\n            {\n              \"name\": \"popup\"\n            },\n            {\n              \"name\": \"list\"\n            },\n            {\n              \"name\": \"option\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+    "behavior.scxml": "<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" version=\"1.0\" name=\"Autocomplete\" datamodel=\"ecmascript\" initial=\"closed\"><datamodel><data id=\"value\" expr=\"'alpha'\"/></datamodel><state id=\"closed\"><transition event=\"OPEN\" target=\"open\"/></state><state id=\"open\"><transition event=\"CLOSE\" target=\"closed\"/><transition event=\"COMMIT\" target=\"selected\"/></state><state id=\"selected\"><onentry><send event=\"value-change\" target=\"#_parent\"><param name=\"value\" expr=\"value\"/></send></onentry><transition target=\"closed\"/></state></scxml>\n",
+    "accessibility.html": "<main><section><label for=\"input-a\">Suche A</label><input id=\"input-a\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-a\" aria-activedescendant=\"option-a-0\"><div id=\"popup-a\"><div id=\"list-a\" role=\"listbox\" aria-label=\"Ergebnisse A\"><div id=\"option-a-0\" role=\"option\" aria-selected=\"true\">Ergebnis A 1</div><div id=\"option-a-1\" role=\"option\" aria-selected=\"false\">Ergebnis A 2</div><div id=\"option-a-2\" role=\"option\" aria-selected=\"false\">Ergebnis A 3</div><div id=\"option-a-3\" role=\"option\" aria-selected=\"false\">Ergebnis A 4</div><div id=\"option-a-4\" role=\"option\" aria-selected=\"false\">Ergebnis A 5</div><div id=\"option-a-5\" role=\"option\" aria-selected=\"false\">Ergebnis A 6</div><div id=\"option-a-6\" role=\"option\" aria-selected=\"false\">Ergebnis A 7</div></div></div></section><section><label for=\"input-b\">Suche B</label><input id=\"input-b\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"list-b\" aria-activedescendant=\"option-b-0\"><div id=\"popup-b\"><div id=\"list-b\" role=\"listbox\" aria-label=\"Ergebnisse B\"><div id=\"option-b-0\" role=\"option\" aria-selected=\"true\">Ergebnis B 1</div><div id=\"option-b-1\" role=\"option\" aria-selected=\"false\">Ergebnis B 2</div><div id=\"option-b-2\" role=\"option\" aria-selected=\"false\">Ergebnis B 3</div><div id=\"option-b-3\" role=\"option\" aria-selected=\"false\">Ergebnis B 4</div><div id=\"option-b-4\" role=\"option\" aria-selected=\"false\">Ergebnis B 5</div><div id=\"option-b-5\" role=\"option\" aria-selected=\"false\">Ergebnis B 6</div><div id=\"option-b-6\" role=\"option\" aria-selected=\"false\">Ergebnis B 7</div></div></div></section></main>\n",
+    "layout.css": "section { margin-bottom:260px; }\n[role=\"option\"] { height:var(--autocomplete-option-height); box-sizing:border-box; }\n#input-a {anchor-name:--input-a;}\n#popup-a {position:absolute;position-anchor:--input-a;top:anchor(bottom);left:anchor(left);margin-top:var(--autocomplete-gap);max-height:var(--autocomplete-max-height);overflow-y:auto;}\n#input-b {anchor-name:--input-b;}\n#popup-b {position:absolute;position-anchor:--input-b;top:anchor(bottom);left:anchor(left);margin-top:var(--autocomplete-gap);max-height:var(--autocomplete-max-height);overflow-y:auto;}\n",
+    "profile.json": "{\n  \"status\": \"Additional experimental research binding, no selected product format\",\n  \"artifacts\": {\n    \"interface\": {\n      \"file\": \"interface.json\",\n      \"sha256\": \"d40ed4dc3b6f51b5ac8aad29c21b8a972b4f99fce6579e605f4a57a4f96591a7\"\n    },\n    \"behavior\": {\n      \"file\": \"behavior.scxml\",\n      \"sha256\": \"f30796022ba2e8bde7d8f80f4b8c4223e7ff89a8abf7ca2f8a48a48ceeebfa2a\"\n    },\n    \"visual\": {\n      \"file\": \"tokens.json\",\n      \"sha256\": \"427902ff756de7c460a69f252c96f56d9b2420097e40e2a76c3c614b3a582b75\"\n    },\n    \"accessibility\": {\n      \"file\": \"accessibility.html\",\n      \"sha256\": \"e12f7d526a611a481d5cbca93fe7ba0a74bd78bea42965745fc4c50bbbc4920b\"\n    }\n  },\n  \"instances\": {\n    \"A\": {\n      \"interfaceDeclaration\": \"Autocomplete\",\n      \"behaviorDefinition\": \"Autocomplete\",\n      \"snapshotState\": \"open\",\n      \"parts\": {\n        \"input\": \"input-a\",\n        \"popup\": \"popup-a\",\n        \"list\": \"list-a\",\n        \"option\": \"option-a-0\"\n      },\n      \"anchorName\": \"--input-a\"\n    },\n    \"B\": {\n      \"interfaceDeclaration\": \"Autocomplete\",\n      \"behaviorDefinition\": \"Autocomplete\",\n      \"snapshotState\": \"open\",\n      \"parts\": {\n        \"input\": \"input-b\",\n        \"popup\": \"popup-b\",\n        \"list\": \"list-b\",\n        \"option\": \"option-b-0\"\n      },\n      \"anchorName\": \"--input-b\"\n    }\n  },\n  \"stateView\": {\n    \"closed\": {\n      \"expanded\": false,\n      \"popupVisible\": false\n    },\n    \"open\": {\n      \"expanded\": true,\n      \"popupVisible\": true\n    },\n    \"selected\": {\n      \"expanded\": false,\n      \"popupVisible\": false\n    }\n  },\n  \"publicEvent\": \"value-change\",\n  \"ownership\": {\n    \"publicSignature\": \"interface\",\n    \"stateAndEmission\": \"behavior\",\n    \"geometry\": \"visual\",\n    \"rolesNamesRelations\": \"accessibility\",\n    \"crossArtifactMapping\": \"additional-profile\"\n  },\n  \"visualLayout\": {\n    \"file\": \"layout.css\",\n    \"sha256\": \"828f89fe00ae9940643ddf1af49a2a8aa229ff1700cea62bbb6858cc20a2f9c8\"\n  },\n  \"tokenBindings\": [\n    {\n      \"path\": \"autocomplete.gap\",\n      \"type\": \"dimension\",\n      \"cssVariable\": \"--autocomplete-gap\",\n      \"targets\": [\n        \"#popup-a\",\n        \"#popup-b\"\n      ],\n      \"property\": \"margin-top\",\n      \"owner\": \"visual\"\n    },\n    {\n      \"path\": \"autocomplete.popupMaxHeight\",\n      \"type\": \"dimension\",\n      \"cssVariable\": \"--autocomplete-max-height\",\n      \"targets\": [\n        \"#popup-a\",\n        \"#popup-b\"\n      ],\n      \"property\": \"max-height\",\n      \"owner\": \"visual\"\n    },\n    {\n      \"path\": \"autocomplete.optionHeight\",\n      \"type\": \"dimension\",\n      \"cssVariable\": \"--autocomplete-option-height\",\n      \"targets\": [\n        \"[role=\\\"option\\\"]\"\n      ],\n      \"property\": \"height\",\n      \"owner\": \"visual\"\n    }\n  ],\n  \"version\": \"research-dtcg-binding-1\"\n}\n",
+    "generated-vars.css": ":root{--autocomplete-gap:8px;--autocomplete-max-height:192px;--autocomplete-option-height:32px}\n"
+  },
+  "ledger": [
+    {
+      "transaction": "leading-token-change",
+      "actorRole": "visual-author",
+      "actorLabel": "visual-agent",
+      "information": "popupMaxHeight",
+      "source": {
+        "artifact": "tokens.json",
+        "pointer": "/base/maxHeight/$value"
+      },
+      "changedArtifact": "tokens.json",
+      "beforeSha256": "781d47d2ab89b1f98182c8c4e2bc52691eb8b74325426d34735e0b5db5e40fee",
+      "afterSha256": "427902ff756de7c460a69f252c96f56d9b2420097e40e2a76c3c614b3a582b75",
+      "changeKind": "leading",
+      "derivedFrom": null,
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "transaction": "leading-token-change",
+      "information": "popupMaxHeight",
+      "source": {
+        "artifact": "tokens.json",
+        "pointer": "/base/maxHeight/$value"
+      },
+      "changedArtifact": "generated-vars.css",
+      "beforeSha256": "50d3d9b2bda1243d6c71c020cff301d0cb4172c8eedd24d84ba6fe94c77ba589",
+      "afterSha256": "db697bd9842f903fc80e5c22b837fc9590540cb7b8ffbfe5579eac4cdb2ea72c",
+      "changeKind": "derived",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    },
+    {
+      "transaction": "leading-token-change",
+      "information": "revision-pins",
+      "changedArtifact": "profile.json",
+      "changeKind": "derived-hash-refresh",
+      "beforeSha256": "dda62ac2b5a89e363616b3a93e503428cf0aa664eacc024c9c2394b258c39c8b",
+      "afterSha256": "714b139c56d14799183f72e627c6a3cb996e12ade6f88937ea56e52e3e604f2e",
+      "policySha256": "f3c506fb18cebbfcb362d28dc9bd0fe99024dff6a3e49335d49efa413fd6025d",
+      "baseRevision": "c7a83bbe4601b30da9d746d1c023a02d0e73917610e683ce3861c3354b1694f9"
+    }
+  ]
+}

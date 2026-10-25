@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-25",
+  "original_package": "@scion-scxml/scxml@4.3.28",
+  "source_register": "S82",
+  "original_files": [
+    {
+      "file": "../scxml-runtime/tool/node_modules/@scion-scxml/scxml/lib/runtime/invokers.js",
+      "sha256": "1c7c71727607349b7e760d8d6586519ec53faccff5a35f3e0798fc0f69e9a0bf"
+    },
+    {
+      "file": "../scxml-runtime/tool/node_modules/@scion-scxml/core-base/lib/scion-core-base.js",
+      "sha256": "34a6220d4b11ef2c0437f43357dbcb4b093d06e79e72a0d0b571667c81b2a2b2"
+    },
+    {
+      "file": "../scxml-runtime/tool/package-lock.json",
+      "sha256": "2d23cda3e0d12a9f05545ad0d9f2415241a2c66546ab9516a6de3a2503b1712c"
+    }
+  ],
+  "own_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "e83094e6e930677ad510d543888e0f6e08cd616860eee6e7e47636e61f095c13"
+    },
+    {
+      "file": "adapter-cases.json",
+      "sha256": "10714f47374ff3905b0f16c95959ad1e3bfd1d9f50518f7b9621b3644cafb832"
+    },
+    {
+      "file": "adapter-results.json",
+      "sha256": "89dc4e1588f865ce0e5b9f2f4b28de3022f47f08d71b8ee53b33f0d35c5b92f9"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "8695f3cf760b270b5a8d8a4c4c2628d5f8a42da0db5801772364ab92bd7fd8f5"
+    },
+    {
+      "file": "child-A.scxml",
+      "sha256": "8393d0c78b26c1b466c7c89dca003a6b50f37bc22e24acedb741eb9c3dbd489d"
+    },
+    {
+      "file": "child-B.scxml",
+      "sha256": "8393d0c78b26c1b466c7c89dca003a6b50f37bc22e24acedb741eb9c3dbd489d"
+    },
+    {
+      "file": "child.scxml",
+      "sha256": "8393d0c78b26c1b466c7c89dca003a6b50f37bc22e24acedb741eb9c3dbd489d"
+    },
+    {
+      "file": "diagnose.cjs",
+      "sha256": "f307e9a5dbf399d0616c1b9f393c4919bcf9707be2f40c36bd33899fd9dac84a"
+    },
+    {
+      "file": "diagnosis-cases.json",
+      "sha256": "49483999a120477cb6fa092eaa45c57bbafff90b4f7f3a85a285315d8744df86"
+    },
+    {
+      "file": "diagnosis-results.json",
+      "sha256": "11337a8e092c73834a64b9b41835a4dafabac440b9212900c7189a462ee5ca06"
+    },
+    {
+      "file": "isolated-invoker.cjs",
+      "sha256": "ca16959b35db065f5126db115d0ed56c95a4bc0b80043fe1edd293f0832aabed"
+    },
+    {
+      "file": "parent.scxml",
+      "sha256": "3044363c3eb6a9d75443d272ee86ebc692bdf3ad9033054f845560654148be40"
+    },
+    {
+      "file": "results.json",
+      "sha256": "4b2836f690c1c5f96d774242ecea397ae79b8372a6537b2de400ebc04ad4a64d"
+    },
+    {
+      "file": "run-adapter.cjs",
+      "sha256": "04e908b3d97af52ebc709e2b1429bc62c9306ce7ba5ffbb974f08ea75772f8e1"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "42289f6cee1ac42091d64afe650ce04e063610c36902d617a36ca98e8a20fa5d"
+    }
+  ],
+  "child_copies_byte_identical": true,
+  "custom_invoker": false,
+  "custom_send": false,
+  "additional_invoker_adapter_executed": true,
+  "custom_invoker_scope": "Original cases use default; six explicitly additional adapter cases use own isolated invoker."
+}
