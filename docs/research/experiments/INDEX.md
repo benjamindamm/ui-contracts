@@ -2,7 +2,7 @@
 
 Stand: 25. Oktober 2026. **702 Bedingungen in 106 Gruppen; Recherchephase abgeschlossen.** Vollständig aus study.json abgeleitet. Auch verletzte Erwartungen und korrigierte eigene Erstläufe bleiben erhalten; die Summe ist kein Erfolgs- oder Konformitätszähler.
 
-[Abschluss und Lesereihenfolge](../RESEARCH-CLOSEOUT.md) · [Aktueller Status](../CURRENT-STATUS.md) · [Dokumentenindex](../DOCUMENT-INDEX.md) · [Historischer Index](../EXPERIMENT-INDEX-HISTORY.md)
+[Abschluss und Lesereihenfolge](../RESEARCH-CLOSEOUT.md) · [Aktueller Status](../CURRENT-STATUS.md) · [Dokumentenindex](../DOCUMENT-INDEX.md) · [Historischer Index](../archive/EXPERIMENT-INDEX-HISTORY.md)
 
 ## Jüngste gemeinsame Integrationsnachweise
 

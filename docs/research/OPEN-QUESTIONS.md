@@ -1,6 +1,6 @@
-# Zwei verbleibende Originalklärungen
+# Offene Forschungsfragen aus der Kandidatenrecherche
 
-Stand:25. Oktober2026. **2 U: beide X06, keine weiteren aktuellen Matrix-U-Zellen.**641 Bedingungen/102 Gruppen und543 Claims. Die zuletzt8 autonom untersuchbaren Nachweise wurden tatsächlich im jeweils dokumentierten Adapterumfang erbracht; keine weitere identische Originalprobe ist dafür offen. Das bedeutet weiterhin keine vollständige universelle Integration oder fertige Produktionsbibliothek.
+Stand: 25. Oktober 2026. **Zwei externe Originalklärungen bleiben offen, beide im Matrixfeld X06.** Die Recherchephase ist abgeschlossen. Maßgeblich für die Gesamtzahlen ist der [aktuelle Nachweisstand](CURRENT-STATUS.md). Die zuletzt8 autonom untersuchbaren Nachweise wurden tatsächlich im jeweils dokumentierten Adapterumfang erbracht; keine weitere identische Originalprobe ist dafür offen. Das bedeutet weiterhin keine vollständige universelle Integration oder fertige Produktionsbibliothek.
 
 ## Google DESIGN.md: C483
 
@@ -26,6 +26,16 @@ Stand:25. Oktober2026. **2 U: beide X06, keine weiteren aktuellen Matrix-U-Zelle
 
 Diese zwei Herausgeberinformationen lassen sich aus den vorhandenen Originaldateien nicht durch weitere gleichartige lokale Tests erzeugen. Die aktuelle U-Queue enthält deshalb0 weitere autonome Matrixfelder und2 präzise benannte Originalklärungen. Eigenständige künftige Integrationsentwürfe oder Produkt-/Plattformprüfungen sind mögliche Folgearbeit, aber kein Ersatzbeleg und in diesem Nachweisblock nicht implementiert.
 
-Die vier Domänen bleiben getrennte führende Beschreibungen; zusätzliche Referenz-/Änderungs-/Layout-/Hostbindungen sind ausdrücklich Forschung und Adapterbedarf. Kein neues Produktformat wurde ausgewählt. Kein Commit oder Push.
+Die vier Domänen bleiben getrennte führende Beschreibungen; zusätzliche Referenz-/Änderungs-/Layout-/Hostbindungen sind ausdrücklich Forschung und Adapterbedarf. Kein neues Produktformat wurde ausgewählt. 
 
-[Original-X06-Abgleich](experiments/2026-10-25/final-x06-scope/REPORT.md) · [Acht tatsächliche Folgebeiträge](AUTONOMOUS-8-REVIEW.md) · [Aktive Restqueue](REMAINDER-PLAN.md) · [Gesamtstatus](CURRENT-STATUS.md)
+[Original-X06-Abgleich](experiments/2026-10-25/final-x06-scope/REPORT.md) · [Acht tatsächliche Folgebeiträge](AUTONOMOUS-8-REVIEW.md) · [Technische Queue und Stopregeln](REMAINDER-PLAN.md) · [Gesamtstatus](CURRENT-STATUS.md)
+
+## Einordnung und führende Ablagen
+
+Dieses Dokument ist der führende lesbare Einstieg für die zwei offenen Originalklärungen der abgeschlossenen Kandidatenrecherche. Sie blockieren weder deren Abschluss noch die ausgewählte Webreferenz.
+
+- [Aktuelle Aufgaben](../../TASKS.md): Produktarbeit und Folgeversuche.
+- [Studien](STUDIES.md): eigenständige Versuche und deren Befunde, insbesondere AC-R01.
+- [OPEN-FIELDS](OPEN-FIELDS.md): technische Zwei-Zeilen-Sicht der Matrix.
+- [Queue](REMAINDER-PLAN.json): maschinenlesbare Schlüssel und Herkunft; [Stopregeln](REMAINDER-PLAN.md).
+- [Archiv](archive/README.md): frühere Restzahlen und Arbeitspläne, keine aktuelle Aufgabenliste.

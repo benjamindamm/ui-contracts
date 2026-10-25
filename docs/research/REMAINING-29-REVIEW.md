@@ -1,6 +1,6 @@
 # Zusammenhängender Abgleich der29 offenen Ausgangszellen
 
-**Historischer abgeschlossener29er-Arbeitsblock:** Die damaligen20 Restzellen sind nach dem nächsten CSS-Paket auf [10 aktuelle Nachweise](REMAINING-10.md) reduziert. Die Zahlen und Ergebnisse dieses Berichts bleiben als damaliger Stand erhalten.
+**Historischer abgeschlossener29er-Arbeitsblock:** Die damaligen20 Restzellen sind nach dem nächsten CSS-Paket auf [10 aktuelle Nachweise](archive/REMAINING-10.md) reduziert. Die Zahlen und Ergebnisse dieses Berichts bleiben als damaliger Stand erhalten.
 
 
 Stand:25. Oktober2026. **Neun begrenzte Neubewertungen;20 technische Nachweise bleiben offen (6 Integration,14 weitere).** 26 neue Bedingungen in10 Gruppen; insgesamt576 Bedingungen/85 Gruppen und525 Claims. Zwei ursprüngliche positive SSR-Thumb-Erwartungen bleiben widerlegt. Keine vollständige Integration, keine Produkt-/Plattform-/AT-Abnahme, kein Commit/Push.

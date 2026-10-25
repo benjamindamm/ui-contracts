@@ -35,7 +35,7 @@ Stand: 24. Oktober 2026. **Diskussions- und Arbeitsentwurf, keine ausgewählte T
 | Bedeutung der Beziehung | Wie wird ein Zustand, Ereignis oder Teil auf das andere Modell bezogen? | Gleich geschriebene Zustände können unterschiedliche Bedeutung haben |
 | Zuständigkeit | Welche Quelle definiert eine Information und wer konsumiert sie? | Zwei widersprüchliche Definitionen werden durch einen Verweis nicht konsistent |
 
-Ein gemeinsames ID-Format allein löst die letzten beiden Fragen nicht. Ein Verweis auf eine Schemadefinition ist außerdem keine Komponenteninstanz. Das ist bereits als Prüfgrenze in der [Forschungsplanung](RESEARCH-PLAN.md#1-gemeinsame-referenzen-und-komposition) festgehalten.
+Ein gemeinsames ID-Format allein löst die letzten beiden Fragen nicht. Ein Verweis auf eine Schemadefinition ist außerdem keine Komponenteninstanz. Das ist bereits als Prüfgrenze in der [Forschungsplanung](archive/RESEARCH-PLAN.md#1-gemeinsame-referenzen-und-komposition) festgehalten.
 
 ## 3. Identität und Komposition – vorgeschlagenes Begriffsmodell
 

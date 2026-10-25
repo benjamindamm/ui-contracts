@@ -29,13 +29,13 @@ Das gemeinsame statische Paket und der begrenzte gemeinsame Webreferenzlauf sind
 | Tatsächliche Browserereignisse und AX-Bäume | [Browserresultate](experiments/2026-10-25/ip01-browser/results.json) und deren Rohaufnahmen |
 | Nachvollziehbare Bezüge des Integrationsvorschlags | [Belegindex mit Dateihashes](INTEGRATION-PROFILE-EVIDENCE.json) |
 | Methodik und ursprüngliche Anforderungen | [Methode](METHODS.md), [Anforderungen](REQUIREMENTS.md) |
-| Entwicklung, frühere Zwischenzahlen und Gegenbefunde | [Kontext](CONTEXT.md), [vollständiges früheres README](README-RESEARCH-ARCHIVE.md), ausdrücklich historische Dokumente und Originalberichte |
+| Entwicklung, frühere Zwischenzahlen und Gegenbefunde | [Kontext](CONTEXT.md), [vollständiges früheres README](archive/README-RESEARCH-ARCHIVE.md), ausdrücklich historische Dokumente und Originalberichte |
 
 Die Zähler sind keine Behauptung, dass alle Erwartungen in allen historischen Versuchen erfüllt waren. Verletzungen und eigene Korrekturen bleiben erhalten. Aktuelle Zahlen werden aus study.json abgeleitet; ältere Angaben in archivierten Berichten beschreiben deren damaligen Stand.
 
 ## Grenzen ohne weitere Recherchepflicht
 
-**Zwei externe Originalklärungen bleiben offen:** Google DESIGN.md X06/C483 und OpenUI X06/C484. Die fehlenden Herausgeberinformationen sind [konkret dokumentiert](REMAINING-2.md); erneutes Zählen oder Wiederholen derselben Proben würde sie nicht lösen. Beide sind keine Voraussetzungen der ausgewählten Webreferenzkombination und blockieren den Rechercheabschluss nicht.
+**Zwei externe Originalklärungen bleiben offen:** Google DESIGN.md X06/C483 und OpenUI X06/C484. Die fehlenden Herausgeberinformationen sind [konkret dokumentiert](OPEN-QUESTIONS.md); erneutes Zählen oder Wiederholen derselben Proben würde sie nicht lösen. Beide sind keine Voraussetzungen der ausgewählten Webreferenzkombination und blockieren den Rechercheabschluss nicht.
 
 **Spätere Umsetzung:** produktive Bindungssyntax, allgemeiner Resolver, vollständige API-/Theme-/Änderungsvarianten und ausführbare spezialisierte Agenten-/Skillabläufe. Das sind weitere Projektarbeiten, keine vergessenen Rechercheergebnisse.
 

@@ -17,7 +17,7 @@ Stand:25. Oktober2026. **2 offene Nachweise:Google DESIGN.md X06 und OpenUI X06.
 - [ ] **Google DESIGN.md X06/C483:** Neue belastbare Original-Dokumentdatenmodell-/Schema-/Ergebniszuordnung einschließlich Root/Optionalität. Erschöpfte Config-/Parserproben nicht wiederholen.
 - [ ] **OpenUI X06/C484:** Offizielle kanonische Vorrang-/Synchronisationsregel der widersprüchlichen Originalformen samt gebundenem Prüfpaar. Keinen Typstand selbst zur technischen Wahrheit erklären.
 
-[Genau fehlende Originalinformation und bereits ausgeschöpfte Pfade](docs/research/REMAINING-2.md). Keine Autorenanfrage wurde versandt.0 weitere autonom offene Matrixzellen ist kein Nachweis einer fertigen universellen Produktsprache, jeder Kandidatenkombination, vollständiger Produktions-/Lifecycle- oder Crossplattform-/AT-Konformität.
+[Genau fehlende Originalinformation und bereits ausgeschöpfte Pfade](docs/research/OPEN-QUESTIONS.md). Keine Autorenanfrage wurde versandt.0 weitere autonom offene Matrixzellen ist kein Nachweis einer fertigen universellen Produktsprache, jeder Kandidatenkombination, vollständiger Produktions-/Lifecycle- oder Crossplattform-/AT-Konformität.
 
 ## Integrationsbefunde und spätere Umsetzung
 
@@ -47,7 +47,7 @@ iOS, Android und weitere native Ziele sind nach Nutzerfestlegung Zukunftsmusik. 
 - Wiederholungen nicht zusätzlich zählen; gemeinsame Bedingungen können mehrere einzeln begründete Kriterien stützen.
 - Fehlende Originalinformation nicht durch eigene Formatwahl oder pauschalen Negativbeweis ersetzen.
 
-[Aktueller Status](docs/research/CURRENT-STATUS.md) · [Acht tatsächliche Folgebeiträge](docs/research/AUTONOMOUS-8-REVIEW.md) · [Restqueue](docs/research/REMAINDER-PLAN.md) · [Historische10er-Aufgaben](docs/research/TASKS-10-HISTORY.md)
+[Aktueller Status](docs/research/CURRENT-STATUS.md) · [Acht tatsächliche Folgebeiträge](docs/research/AUTONOMOUS-8-REVIEW.md) · [Restqueue](docs/research/REMAINDER-PLAN.md) · [Historische10er-Aufgaben](docs/research/archive/TASKS-10-HISTORY.md)
 
 ## Abschluss dieser Recherche- und Testrunde
 

@@ -34,6 +34,6 @@ Frühere SSR-/Einheits-/Import-/Resolver-/Namens-/Alias-Gegenbefunde bleiben in 
 
 ## Genau zwei fehlende Aussagen
 
-[Google/OpenUI-X06-Originalinformation](REMAINING-2.md) ist präzise benannt. Keine der acht autonom untersuchten Zellen bleibt U. Alle anderen stärkeren Ziele – gemeinsame universelle Formatarchitektur, jede Kandidatenkombination, Produktionsqualität, Lifecycle und Crossplattform-/AT-Abnahme – werden hier nicht als erledigt behauptet.
+[Google/OpenUI-X06-Originalinformation](OPEN-QUESTIONS.md) ist präzise benannt. Keine der acht autonom untersuchten Zellen bleibt U. Alle anderen stärkeren Ziele – gemeinsame universelle Formatarchitektur, jede Kandidatenkombination, Produktionsqualität, Lifecycle und Crossplattform-/AT-Abnahme – werden hier nicht als erledigt behauptet.
 
 [Maschinenlesbarer Abgleich](experiments/2026-10-25/autonomous-8-review/results.json) · [Aktiver Status](CURRENT-STATUS.md) · [Restqueue](REMAINDER-PLAN.md)

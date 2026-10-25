@@ -1,6 +1,6 @@
 # Forschungslücken und nächste validierbare Prüfungen
 
-**Historischer Forschungsplan:** Aussagen über nicht ausgeführte Prüfungen gelten für die jeweils benannte frühere Runde. Aktuelle Matrixnachweise stehen in [CURRENT-STATUS](CURRENT-STATUS.md); die noch offene projektweite Integration in [PROJECT-GAPS](PROJECT-GAPS.md).
+**Historischer Forschungsplan:** Aussagen über nicht ausgeführte Prüfungen gelten für die jeweils benannte frühere Runde. Aktuelle Matrixnachweise stehen in [CURRENT-STATUS](../CURRENT-STATUS.md); die noch offene projektweite Integration in [PROJECT-GAPS](../PROJECT-GAPS.md).
 
 
 Plan angelegt am 23. Oktober 2026; Fortschreibung 24. Oktober. Dokumentarische Vergleiche sind inzwischen ausgearbeitet (siehe Abschlussabschnitt); keine der nachfolgenden praktischen Prüfungen wurde ausgeführt. Es geht zunächst um kleine Contract-Artefakte und deren Werkzeuge, nicht um eine Komponentenimplementierung.
@@ -70,21 +70,21 @@ Erst wenn die Einzelbeiträge und mindestens eine Referenz-/Kompositionskette ge
 
 ## Präzisierung nach dem Integrationsabgleich – 24. Oktober 2026
 
-Die oben stehende Erwartung, alle vier Domänenartefakte durch Originalvalidatoren akzeptieren zu lassen, setzt deren Existenz voraus. Das ist insbesondere für ein neutrales Accessibility-Artefakt noch nicht nachgewiesen. Im nächsten praktischen Prüfauftrag daher je gewähltem Originalformat Schema, Werkzeug, Hostbindung und manuelle Anforderungen getrennt erfassen. Zusätzliche Projektbeschreibungen erhalten keine erfundene Originalkonformität. Der Vorschlag steht ausführlich in [BINDINGS](BINDINGS.md#7-präzisierung-des-prüfungstors); bestehende Fachanforderungen und die Erhaltung verfügbarer Originalprüfungen bleiben bestehen. Keine praktische Prüfung wurde dadurch gestartet.
+Die oben stehende Erwartung, alle vier Domänenartefakte durch Originalvalidatoren akzeptieren zu lassen, setzt deren Existenz voraus. Das ist insbesondere für ein neutrales Accessibility-Artefakt noch nicht nachgewiesen. Im nächsten praktischen Prüfauftrag daher je gewähltem Originalformat Schema, Werkzeug, Hostbindung und manuelle Anforderungen getrennt erfassen. Zusätzliche Projektbeschreibungen erhalten keine erfundene Originalkonformität. Der Vorschlag steht ausführlich in [BINDINGS](../BINDINGS.md#7-präzisierung-des-prüfungstors); bestehende Fachanforderungen und die Erhaltung verfügbarer Originalprüfungen bleiben bestehen. Keine praktische Prüfung wurde dadurch gestartet.
 
-Die nächste Recherche orientiert sich am [Register aller offenen Felder](OPEN-FIELDS.md). Ein Registereintrag ist keine gelöste Matrixzelle.
+Die nächste Recherche orientiert sich am [Register aller offenen Felder](../OPEN-FIELDS.md). Ein Registereintrag ist keine gelöste Matrixzelle.
 
 
 ## Vergleichsstand nach der Werkzeugzusammenführung – 24. Oktober 2026
 
-Der [dokumentarische Vergleich aller 16 Kandidaten](TOOLING-COMPARISON.md) ist jetzt zusammengeführt. Die historische Vormerkung oben ist damit als Vergleichssicht bearbeitet. Offene Originalschemaidentitäten, tatsächliche Versuche, belastbare Kompatibilitätsnachweise und die Festlegung des produktiven Mindest-Reifegrads bleiben eigenständige Aufgaben im Feldregister und in TASKS. Keine Kandidatenauswahl oder Produktionsfreigabe.
+Der [dokumentarische Vergleich aller 16 Kandidaten](../TOOLING-COMPARISON.md) ist jetzt zusammengeführt. Die historische Vormerkung oben ist damit als Vergleichssicht bearbeitet. Offene Originalschemaidentitäten, tatsächliche Versuche, belastbare Kompatibilitätsnachweise und die Festlegung des produktiven Mindest-Reifegrads bleiben eigenständige Aufgaben im Feldregister und in TASKS. Keine Kandidatenauswahl oder Produktionsfreigabe.
 
 ## Gesamtprüfung und Detailvergleiche – 24. Oktober 2026
 
-Der Nutzerauftrag, alle verbleibenden Felder und beide Detailvergleiche zu bearbeiten, ist als dokumentarisches Gesamtpaket gespeichert: [72-Zellen-Protokoll](ALL-FIELDS-REVIEW.md), [UXSpec/SCXML](COMPARE-UXSPEC-SCXML.md), [DESIGN.md/Layout](COMPARE-DESIGN-LAYOUT.md). Fünf Neubewertungen sind übernommen; 67 technische Nachweise bleiben offen. Keine Ausführung, Implementierung oder Technologieauswahl.
+Der Nutzerauftrag, alle verbleibenden Felder und beide Detailvergleiche zu bearbeiten, ist als dokumentarisches Gesamtpaket gespeichert: [72-Zellen-Protokoll](../ALL-FIELDS-REVIEW.md), [UXSpec/SCXML](../COMPARE-UXSPEC-SCXML.md), [DESIGN.md/Layout](../COMPARE-DESIGN-LAYOUT.md). Fünf Neubewertungen sind übernommen; 67 technische Nachweise bleiben offen. Keine Ausführung, Implementierung oder Technologieauswahl.
 
 Die nächste technische Phase benötigt die im Register benannten Originalartefakt-/Host-/Patternentscheidungen und reproduzierbare Nachweise. Ein neu vorgeschlagenes Profil darf fehlende Originalunterstützung nicht rückwirkend ersetzen. Keine neuen Skills und kein Commit oder Push dieses Pakets.
 
 ## Erste E3-Nachweise
 
-Nach dem dokumentarischen Gesamtpaket wurden [49 begrenzte Forschungsproben](experiments/2026-10-24/REPORT.md) tatsächlich ausgeführt. CEM I02 ist im begrenzten TypeScript-/CustomEvent-Profil A; aktuell 66 U. Fehlende Instanz-/Referenzdiagnosen sind praktisch sichtbar, nicht durch die Existenz eines Checkers erledigt. Weitere Arbeit soll konkrete Originalpfade und zusätzliche Bindungsregeln getrennt prüfen. Kein Commit oder Push, keine UI-Komponente.
+Nach dem dokumentarischen Gesamtpaket wurden [49 begrenzte Forschungsproben](../experiments/2026-10-24/REPORT.md) tatsächlich ausgeführt. CEM I02 ist im begrenzten TypeScript-/CustomEvent-Profil A; aktuell 66 U. Fehlende Instanz-/Referenzdiagnosen sind praktisch sichtbar, nicht durch die Existenz eines Checkers erledigt. Weitere Arbeit soll konkrete Originalpfade und zusätzliche Bindungsregeln getrennt prüfen. Kein Commit oder Push, keine UI-Komponente.

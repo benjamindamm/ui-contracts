@@ -21,9 +21,9 @@ Stand: 25. Oktober 2026. Mit study.json und dem offenen Register abgeglichen. Hi
 
 [Zweistufiger IP-01-Lifecyclekern](experiments/2026-10-25/ip01-lifecycle/REPORT.md): acht vorregistrierte Bedingungen tatsächlich ausgeführt, sechs erfüllt und zwei verletzt. LC-06 verliert beim sofortigen Reopen nach alter Bereinigung die neue Invoke-Route; LC-07 leitet Initialisierungsfehler nicht an den richtigen Root weiter. IP-A05/A06 nur teilweise untersucht und weiterhin offen. Keine Matrixbewertung geändert.
 
-[Acht autonome Restfragen konkret ausgeführt](AUTONOMOUS-8-REVIEW.md):38 neue Bedingungen in7 Gruppen, alle final erfüllt. uSpec-Fremdreferenz/Quellführung, zwei getrennte Fachbeiträge und vier zusätzliche Layoutbindungen jeweils A/C536–C543. Initialer Flex-/Zeilen-Erwartungsfehler erhalten. [Zwei konkret fehlende Originalklärungen](REMAINING-2.md); keine neue Frage an Autoren und keine volle Gesamtintegration behauptet.
+[Acht autonome Restfragen konkret ausgeführt](AUTONOMOUS-8-REVIEW.md):38 neue Bedingungen in7 Gruppen, alle final erfüllt. uSpec-Fremdreferenz/Quellführung, zwei getrennte Fachbeiträge und vier zusätzliche Layoutbindungen jeweils A/C536–C543. Initialer Flex-/Zeilen-Erwartungsfehler erhalten. [Zwei konkret fehlende Originalklärungen](OPEN-QUESTIONS.md); keine neue Frage an Autoren und keine volle Gesamtintegration behauptet.
 
-[Zehn getrennte CSS-/ARIA-Ergänzungsbindungen](experiments/2026-10-25/css-complement-runtime/REPORT.md):27 Erwartungen in tatsächlicher Original-SCXML-Laufzeit, nativer CSS-/DOM-/Fokusfolge und echtem Browser-AX-Baum erfüllt. C526–C535 jeweils A nur mit eigener konkreter Zusatzbindung. Originale query42-Akzeptanz und gültige clip-Syntax mit unsichtbarer aktiver Option bleiben sichtbar. [Genau verbleibende10 Nachweise](REMAINING-10.md).
+[Zehn getrennte CSS-/ARIA-Ergänzungsbindungen](experiments/2026-10-25/css-complement-runtime/REPORT.md):27 Erwartungen in tatsächlicher Original-SCXML-Laufzeit, nativer CSS-/DOM-/Fokusfolge und echtem Browser-AX-Baum erfüllt. C526–C535 jeweils A nur mit eigener konkreter Zusatzbindung. Originale query42-Akzeptanz und gültige clip-Syntax mit unsichtbarer aktiver Option bleiben sichtbar. [Genau verbleibende10 Nachweise](archive/REMAINING-10.md).
 
 [Gesamter 29-Zellen-Arbeitsblock](REMAINING-29-REVIEW.md): neun begrenzte Neubewertungen,26 neue Bedingungen/10 Gruppen. Sieben getrennte X01-Beiträge, APG X08 und referenzierte OpenPencil-Slidergeometrie.20 Nachweise bleiben offen; zwei ursprüngliche SSR-Erwartungen bleiben widerlegt, eigene Fehler separat erhalten.
 
@@ -91,7 +91,7 @@ Die Liveschritte zeigen getrennte A/B-Werte, stabile Namen und passende aria-che
 
 Der [aktive Restplan](REMAINDER-PLAN.md) enthält genau2 U-Schlüssel, beide X06-Originalklärungen bei Google DESIGN.md und OpenUI. Keine der zuvor konkret benannten8 autonomen Restzellen bleibt U; ihre jeweils begrenzten Zusatzbindungen sind tatsächlich ausgeführt. Die46er Baseline und44 begrenzten Schließungen bleiben separat erhalten.
 
-[Genau fehlende Originalinformation](REMAINING-2.md): Dokument-Schema-/Ergebnisbinding bei Google und kanonische Vorrang-/Validierungsregel bei OpenUI. Bekannte Config-/Parser-/widersprüchliche Typstände entscheiden diese Herausgeberfragen nicht; keine identischen Proben ohne neue Originalinformation und keine Autorenanfrage. Das ist kein Beweis, dass künftig nie neue Information verfügbar wird.
+[Genau fehlende Originalinformation](OPEN-QUESTIONS.md): Dokument-Schema-/Ergebnisbinding bei Google und kanonische Vorrang-/Validierungsregel bei OpenUI. Bekannte Config-/Parser-/widersprüchliche Typstände entscheiden diese Herausgeberfragen nicht; keine identischen Proben ohne neue Originalinformation und keine Autorenanfrage. Das ist kein Beweis, dass künftig nie neue Information verfügbar wird.
 
 Einzelne A/R/D-Befunde ersetzen keine universelle Interoperabilität oder fertige Produktionsbibliothek. Gesamtformatwahl, alle Kandidatenkombinationen, Produktionsreife, Lifecycle und Crossplattform-/AT-Abnahme bleiben stärkere getrennte Ziele. Die vollständige Vier-Domänen-Gesamtintegration ist weiterhin nicht belegt.
 

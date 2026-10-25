@@ -4,7 +4,7 @@ Stand:25. Oktober2026. Abgleich von study.json, TASKS, REQUIREMENTS, INTEGRATION
 
 ## 1. Zwei fehlende Originalklärungen
 
-Unverändert offen: Google DESIGN.md X06/C483 und OpenUI X06/C484. Die genau fehlenden Herausgeberinformationen und ausgeschöpften Prüfpfade stehen in [REMAINING-2](REMAINING-2.md). Diese Fragen betreffen die jeweils untersuchten Originalstände; sie sind kein generelles Hindernis für jede mögliche Formatkombination.
+Unverändert offen: Google DESIGN.md X06/C483 und OpenUI X06/C484. Die genau fehlenden Herausgeberinformationen und ausgeschöpften Prüfpfade stehen in [REMAINING-2](OPEN-QUESTIONS.md). Diese Fragen betreffen die jeweils untersuchten Originalstände; sie sind kein generelles Hindernis für jede mögliche Formatkombination.
 
 ## Fortschritt: konsolidierter Vorschlag
 

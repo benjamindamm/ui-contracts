@@ -253,6 +253,6 @@ Ein Änderungspaket liest zuerst Pins und Zuständigkeiten, beschreibt die führ
 | D3: Runtimebindung | Frische ursprüngliche Vorbereitung und erweiterter isolierender lokaler Invoker | Andere Runtime/Hostkomposition nur mit neuer Semantik-/Lifecycleprüfung. Bestehenden Defaultinvoke-Gegenbefund nicht ignorieren. |
 | D4: Fachlicher Referenzumfang | Manuelle Listenauswahl, getrennte Query/Bestätigung, nichtzyklische Navigation, versionierte asynchrone Ergebnisse, T1-Resultrecords | Freitextbestätigung, automatische Auswahlrücknahme und andere Fokus-/Popupvarianten ändern den Vertrag und seine Tests. |
 
-Das sind reviewbare Vorschläge, keine Aufforderung zur Nutzerwahl über technische Wahrheit. Die technischen Abnahmetore sind unabhängig von einer fachlichen Zustimmung tatsächlich zu prüfen. Die zwei [Google/OpenUI-Originalklärungen](REMAINING-2.md) bleiben unverändert offen; IP-01 entscheidet sie nicht.
+Das sind reviewbare Vorschläge, keine Aufforderung zur Nutzerwahl über technische Wahrheit. Die technischen Abnahmetore sind unabhängig von einer fachlichen Zustimmung tatsächlich zu prüfen. Die zwei [Google/OpenUI-Originalklärungen](OPEN-QUESTIONS.md) bleiben unverändert offen; IP-01 entscheidet sie nicht.
 
 [Belegindex mit tatsächlichen Dateihashes](INTEGRATION-PROFILE-EVIDENCE.json) · [Geplante Abnahme](INTEGRATION-ACCEPTANCE.md) · [Offene Projektarbeit](PROJECT-GAPS.md) · [Historische Ausgangsbegriffe](INTEGRATION.md)

@@ -1,6 +1,6 @@
 # Anforderungsorientierte Abdeckungsmatrix
 
-**Aktueller Stand,25. Oktober2026:** 16/16 Erstdurchgänge abgeschlossen;2 offene Nachweise (2 Integration,0 weitere),702 Bedingungen/106 Gruppen. Begrenzter gemeinsamer Webreferenzlauf belegt; universelle Integration bleibt unbelegt. [Aktueller Status](CURRENT-STATUS.md), [29er-Abgleich](REMAINING-29-REVIEW.md), [historische Notizen](MATRIX-PROGRESS-HISTORY.md).
+**Aktueller Stand,25. Oktober2026:** 16/16 Erstdurchgänge abgeschlossen;2 offene Nachweise (2 Integration,0 weitere),702 Bedingungen/106 Gruppen. Begrenzter gemeinsamer Webreferenzlauf belegt; universelle Integration bleibt unbelegt. [Aktueller Status](CURRENT-STATUS.md), [29er-Abgleich](REMAINING-29-REVIEW.md), [historische Notizen](archive/MATRIX-PROGRESS-HISTORY.md).
 
 
 Stand: 25. Oktober 2026. **Kandidaten-Durchgänge und gezielte Folgeprüfungen, weiterhin mit offenen Zellen.** Anforderungen stehen links, Kandidaten als Spalten. Zwei Spaltenblöcke je Abschnitt dienen nur der Lesbarkeit; dieselbe Anforderung gilt in beiden Blöcken. Die Kandidaten sind Beiträge unterschiedlicher Art, keine gleichartigen Komplettlösungen.
@@ -299,7 +299,7 @@ R ist keine pauschale Komplettbewertung: Ein dokumentierter Tokenalias erfüllt 
 
 Diese Lieferung priorisiert belastbare Teilbefunde gegenüber flächendeckenden Vermutungen. Besonders X03/X05/X06/X07/X08 verlangen Prüfung der Verbindungen und konkreter Werkzeuge. Eine Übersichtsseite, ein Feld namens version oder ein vorhandenes JSON Schema beweisen diese Anforderungen nicht. Die inzwischen vertieften Kandidaten besitzen oben konkrete Quellenstände und verbleibende Folgefragen; weitere Prüfungen richten sich nach TASKS.md. Bei keinem Kandidaten wurde das gesamte Contract-Paket praktisch validiert.
 
-Die vorgeschlagene Eigenleistung ist daher **noch keine implementierte Architektur**: Möglicherweise werden Identitätsabbildung, externe Versionsauflösung, Domänenbindungen und Konfliktprüfung benötigt. Ob vorhandene Mechanismen ausreichen, bleibt anhand der folgenden Versuche zu klären: [RESEARCH-PLAN.md](RESEARCH-PLAN.md).
+Die vorgeschlagene Eigenleistung ist daher **noch keine implementierte Architektur**: Möglicherweise werden Identitätsabbildung, externe Versionsauflösung, Domänenbindungen und Konfliktprüfung benötigt. Ob vorhandene Mechanismen ausreichen, bleibt anhand der folgenden Versuche zu klären: [RESEARCH-PLAN.md](archive/RESEARCH-PLAN.md).
 
 ## Aktuelle E3-Fortschreibung
 

@@ -1,8 +1,10 @@
-# Aktuelle Restplanqueue
+# Technische Restqueue und Stopregeln
 
 Stand:25. Oktober2026. **2 offene Zellen**, 543 Claims, 702 Bedingungen/106 Gruppen. Diese Tabellen werden ausschließlich aus den aktuellen U-Schlüsseln in study.json und REMAINDER-PLAN.json abgeleitet.
 
-0 unabhängig untersuchbare Fragen,2 konkrete Originalklärungen; keine Zusage, dass die Untersuchung positiv schließen wird. Die [46er Baseline](REMAINDER-BASELINE.md) und [historischen Zwischenstände](REMAINDER-PLAN-HISTORY.md) sind separat erhalten.
+0 unabhängig untersuchbare Fragen,2 konkrete Originalklärungen; keine Zusage, dass die Untersuchung positiv schließen wird. Die [46er Baseline](archive/REMAINDER-BASELINE.md) und [historischen Zwischenstände](archive/REMAINDER-PLAN-HISTORY.md) sind separat erhalten.
+
+Führender fachlicher Einstieg: [Offene Forschungsfragen](OPEN-QUESTIONS.md). Diese Queue dokumentiert die technische Arbeitsklassifikation und Stopregeln.
 
 ## Aktuelle Pakete
 
@@ -16,8 +18,8 @@ Stand:25. Oktober2026. **2 offene Zellen**, 543 Claims, 702 Bedingungen/106 Grup
 
 | Kandidat | Feld | Aktueller Claim | Arbeitsklasse | Begrenzter Prüfpfad |
 | --- | --- | --- | --- | --- |
-| Google DESIGN.md | X06 | [C483](CLAIMS.md#c483) | b | [Bericht](REMAINING-2.md) |
-| OpenUI | X06 | [C484](CLAIMS.md#c484) | b | [Bericht](REMAINING-2.md) |
+| Google DESIGN.md | X06 | [C483](CLAIMS.md#c483) | b | [Bericht](OPEN-QUESTIONS.md) |
+| OpenUI | X06 | [C484](CLAIMS.md#c484) | b | [Bericht](OPEN-QUESTIONS.md) |
 
 ## Stopregeln und Herkunft
 
@@ -25,4 +27,4 @@ Ein verlinkter Originalpfad kann vollständig untersucht sein, während seine ko
 
 Nur neue entscheidende Originalpfade oder konkret begründete zusätzliche Bindungen eröffnen bereits begrenzt geprüfte Fragen erneut. Sachfremde Zellen bleiben U; keine automatische Zurechnung fremder Fähigkeiten. Eigene Policy, Adapter, Originalsemantik und tatsächlicher Ausführungsumfang bleiben getrennt. Vollständige Produkt-/Plattform-/AT-Abnahme ist ein stärkeres separates Ziel.
 
-Die zwei externen Originalklärungen werden ohne neue Originalinformation nicht erneut gleich geprüft. Keine Autorenanfrage wurde versandt. Untersuchung ist nicht gleich technische Schließung. Kein Commit/Push.
+Die zwei externen Originalklärungen werden ohne neue Originalinformation nicht erneut gleich geprüft. Keine Autorenanfrage wurde versandt. Untersuchung ist nicht gleich technische Schließung.

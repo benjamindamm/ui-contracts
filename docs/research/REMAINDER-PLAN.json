@@ -25,7 +25,7 @@
       "stop_criterion": "Erst neue belastbare Herausgeberinformation oder ein bisher nicht gelesener tatsächlich benannter Originaleinstieg eröffnet diese Frage erneut. Keine identischen Parser-/Katalogproben im Kreis und keine Abstimmung des Nutzers über technische Wahrheit.",
       "source_scope": "C483/C484; final-x06-scope. Keine Autorenanfrage versandt.",
       "current_claim": "C483",
-      "latest_overall_review": "REMAINING-2.md",
+      "latest_overall_review": "OPEN-QUESTIONS.md",
       "review_state": "named original clarification required; no repeat of exhausted parser/schema scope",
       "next_missing_assertion": "Originales ConfigSchema validiert Redaktionskonfiguration, nicht eindeutig den eingereichten DESIGN.md-Dokumentgegenstand. Eigenes Colorbinding beantwortet diese Originalschemafrage nicht.",
       "reviewed_current_claim": "C483",
@@ -44,7 +44,7 @@
       "stop_criterion": "Erst neue belastbare Herausgeberinformation oder ein bisher nicht gelesener tatsächlich benannter Originaleinstieg eröffnet diese Frage erneut. Keine identischen Parser-/Katalogproben im Kreis und keine Abstimmung des Nutzers über technische Wahrheit.",
       "source_scope": "C483/C484; final-x06-scope. Keine Autorenanfrage versandt.",
       "current_claim": "C484",
-      "latest_overall_review": "REMAINING-2.md",
+      "latest_overall_review": "OPEN-QUESTIONS.md",
       "review_state": "named original clarification required; no repeat of exhausted parser/schema scope",
       "next_missing_assertion": "Die konkret widersprüchlichen Root-/enum-/required-/Defaultformen der Originaldefinitionen bleiben ohne kanonische Vorrangregel. Der einfache Originaltyp-Teilbeitrag umgeht diese Entscheidung ausdrücklich.",
       "reviewed_current_claim": "C484",
@@ -933,5 +933,5 @@
     }
   ],
   "next_independent_group": "INDEPENDENCE",
-  "last_complete_queue_review": "REMAINING-2.md"
+  "last_complete_queue_review": "OPEN-QUESTIONS.md"
 }

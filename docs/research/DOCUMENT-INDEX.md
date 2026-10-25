@@ -1,6 +1,6 @@
 # Dokumentenindex
 
-Stand: 25. Oktober 2026. Vollständiges Verzeichnis der 41 Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
+Stand: 25. Oktober 2026. Vollständiges Verzeichnis der 31 Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
 
 Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; maßgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.
 
@@ -17,6 +17,8 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 | [ARCHITECTURE-DIRECTION.md](ARCHITECTURE-DIRECTION.md) | Einordnung: gemeinsame Bauanleitung für Web, iOS und Android |
 | [PROJECT-GAPS.md](PROJECT-GAPS.md) | Was dem Projekt nach den Einzelprüfungen noch fehlt |
 | [DOCUMENT-INDEX.md](DOCUMENT-INDEX.md) | Dokumentenindex |
+| [STUDIES.md](STUDIES.md) | Studien |
+| [archive/README.md](archive/README.md) | Archiv der Forschungsarbeitsstände |
 
 ## Methodik, Befunde und Vergleiche
 
@@ -37,8 +39,8 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 | Dokument | Inhalt |
 | --- | --- |
 | [OPEN-FIELDS.md](OPEN-FIELDS.md) | Register der offenen Matrixfelder |
-| [REMAINING-2.md](REMAINING-2.md) | Zwei verbleibende Originalklärungen |
-| [REMAINDER-PLAN.md](REMAINDER-PLAN.md) | Aktuelle Restplanqueue |
+| [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md) | Offene Forschungsfragen aus der Kandidatenrecherche |
+| [REMAINDER-PLAN.md](REMAINDER-PLAN.md) | Technische Restqueue und Stopregeln |
 
 ## Vertiefungen und historische Arbeitsstände
 
@@ -47,23 +49,12 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 | [ALL-FIELDS-REVIEW.md](ALL-FIELDS-REVIEW.md) | Gesamtprüfung der 72 zuvor offenen Felder |
 | [AUTONOMOUS-8-REVIEW.md](AUTONOMOUS-8-REVIEW.md) | Acht autonome Restfragen tatsächlich nachgewiesen |
 | [BINDINGS.md](BINDINGS.md) | Konkrete Feldbindungen und verbleibende Integrationsfragen |
-| [EXPERIMENT-INDEX-HISTORY.md](EXPERIMENT-INDEX-HISTORY.md) | Index der ausgeführten Nachweise |
 | [FOLLOWUP-USPEC-LAYOUT.md](FOLLOWUP-USPEC-LAYOUT.md) | uSpec: Folgeprüfung zweier offener Layoutfelder |
 | [FOLLOWUP-UXSPEC-LAYOUT.md](FOLLOWUP-UXSPEC-LAYOUT.md) | UXSpec: Folgeprüfung der drei offenen Layoutfelder |
 | [FOLLOWUP-VALIDATION.md](FOLLOWUP-VALIDATION.md) | Originalschema und Werkzeug: drei gezielte Folgeprüfungen |
 | [INTEGRATION-REVIEW.md](INTEGRATION-REVIEW.md) | Integrationsabgleich und dokumentarischer Referenzfall |
 | [INTEGRATION.md](INTEGRATION.md) | Integrationskonzept: getrennte Verträge, gemeinsame Bezüge |
-| [MATRIX-PROGRESS-HISTORY.md](MATRIX-PROGRESS-HISTORY.md) | Historische Fortschrittsnotizen |
-| [README-PROGRESS-HISTORY.md](README-PROGRESS-HISTORY.md) | Historische Fortschrittsnotizen |
-| [README-RESEARCH-ARCHIVE.md](README-RESEARCH-ARCHIVE.md) | Archiv der ausführlichen README |
-| [REMAINDER-BASELINE.md](REMAINDER-BASELINE.md) | Erhaltene 46-Zellen-Baseline |
-| [REMAINDER-PLAN-HISTORY.md](REMAINDER-PLAN-HISTORY.md) | Historischer Restplanverlauf |
-| [REMAINING-10.md](REMAINING-10.md) | Genau verbleibende10 Nachweise |
 | [REMAINING-29-REVIEW.md](REMAINING-29-REVIEW.md) | Zusammenhängender Abgleich der29 offenen Ausgangszellen |
-| [RESEARCH-PLAN.md](RESEARCH-PLAN.md) | Forschungslücken und nächste validierbare Prüfungen |
-| [STUDIES.md](STUDIES.md) | Studien |
-| [TASKS-10-HISTORY.md](TASKS-10-HISTORY.md) | Historische10er-Aufgabenliste |
-| [TASKS-HISTORY.md](TASKS-HISTORY.md) | Historische Aufgaben- und Fortschrittsstände |
 
 ## Dokumente in Unterordnern
 
@@ -71,6 +62,18 @@ Die einzelnen Berichte sind hier zusätzlich vollständig nach Pfad auffindbar; 
 
 | Dokument | Inhalt |
 | --- | --- |
+| [archive/EXPERIMENT-INDEX-HISTORY.md](archive/EXPERIMENT-INDEX-HISTORY.md) | Index der ausgeführten Nachweise |
+| [archive/MATRIX-PROGRESS-HISTORY.md](archive/MATRIX-PROGRESS-HISTORY.md) | Historische Fortschrittsnotizen |
+| [archive/OPEN-FIELDS-HISTORY.md](archive/OPEN-FIELDS-HISTORY.md) | Historische Fortschreibungen des offenen Feldregisters |
+| [archive/README-PROGRESS-HISTORY.md](archive/README-PROGRESS-HISTORY.md) | Historische Fortschrittsnotizen |
+| [archive/README-RESEARCH-ARCHIVE.md](archive/README-RESEARCH-ARCHIVE.md) | Archiv der ausführlichen README |
+| [archive/README.md](archive/README.md) | Archiv der Forschungsarbeitsstände |
+| [archive/REMAINDER-BASELINE.md](archive/REMAINDER-BASELINE.md) | Erhaltene 46-Zellen-Baseline |
+| [archive/REMAINDER-PLAN-HISTORY.md](archive/REMAINDER-PLAN-HISTORY.md) | Historischer Restplanverlauf |
+| [archive/REMAINING-10.md](archive/REMAINING-10.md) | Genau verbleibende10 Nachweise |
+| [archive/RESEARCH-PLAN.md](archive/RESEARCH-PLAN.md) | Forschungslücken und nächste validierbare Prüfungen |
+| [archive/TASKS-10-HISTORY.md](archive/TASKS-10-HISTORY.md) | Historische10er-Aufgabenliste |
+| [archive/TASKS-HISTORY.md](archive/TASKS-HISTORY.md) | Historische Aufgaben- und Fortschrittsstände |
 | [experiments/2026-10-24/REPORT.md](experiments/2026-10-24/REPORT.md) | Ausgeführte Nachweise: Originalschemata, Payload und Web-Mapper |
 | [experiments/2026-10-24/REPRODUCTION.md](experiments/2026-10-24/REPRODUCTION.md) | Reproduktion der begrenzten Forschungsproben |
 | [experiments/2026-10-24/css-grammar/REPORT.md](experiments/2026-10-24/css-grammar/REPORT.md) | CSS-Grammatik: zwei gebundene Prüferstände |
