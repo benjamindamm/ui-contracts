@@ -1,0 +1,17 @@
+# Betriebssystem-Metadaten
+.DS_Store
+._*
+.AppleDouble/
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Lokal installierte Abhängigkeiten und Python-Caches
+node_modules/
+__pycache__/
+*.py[cod]
+
+# Temporäre Editor-Dateien
+*.swp
+*.swo
+*~

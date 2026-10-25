@@ -1,6 +1,6 @@
 # Dokumentenindex
 
-Stand: 25. Oktober 2026. Vollständiges Verzeichnis der 39 Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
+Stand: 25. Oktober 2026. Vollständiges Verzeichnis der 40 Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
 
 Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; maßgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.
 
@@ -55,6 +55,7 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 | [INTEGRATION.md](INTEGRATION.md) | Integrationskonzept: getrennte Verträge, gemeinsame Bezüge |
 | [MATRIX-PROGRESS-HISTORY.md](MATRIX-PROGRESS-HISTORY.md) | Historische Fortschrittsnotizen |
 | [README-PROGRESS-HISTORY.md](README-PROGRESS-HISTORY.md) | Historische Fortschrittsnotizen |
+| [README-RESEARCH-ARCHIVE.md](README-RESEARCH-ARCHIVE.md) | Archiv der ausführlichen README |
 | [REMAINDER-BASELINE.md](REMAINDER-BASELINE.md) | Erhaltene 46-Zellen-Baseline |
 | [REMAINDER-PLAN-HISTORY.md](REMAINDER-PLAN-HISTORY.md) | Historischer Restplanverlauf |
 | [REMAINING-10.md](REMAINING-10.md) | Genau verbleibende10 Nachweise |

@@ -29,7 +29,7 @@ Das gemeinsame statische Paket und der begrenzte gemeinsame Webreferenzlauf sind
 | Tatsächliche Browserereignisse und AX-Bäume | [Browserresultate](experiments/2026-10-25/ip01-browser/results.json) und deren Rohaufnahmen |
 | Nachvollziehbare Bezüge des Integrationsvorschlags | [Belegindex mit Dateihashes](INTEGRATION-PROFILE-EVIDENCE.json) |
 | Methodik und ursprüngliche Anforderungen | [Methode](METHODS.md), [Anforderungen](REQUIREMENTS.md) |
-| Entwicklung, frühere Zwischenzahlen und Gegenbefunde | [Kontext](CONTEXT.md), ausdrücklich historische Dokumente und Originalberichte |
+| Entwicklung, frühere Zwischenzahlen und Gegenbefunde | [Kontext](CONTEXT.md), [vollständiges früheres README](README-RESEARCH-ARCHIVE.md), ausdrücklich historische Dokumente und Originalberichte |
 
 Die Zähler sind keine Behauptung, dass alle Erwartungen in allen historischen Versuchen erfüllt waren. Verletzungen und eigene Korrekturen bleiben erhalten. Aktuelle Zahlen werden aus study.json abgeleitet; ältere Angaben in archivierten Berichten beschreiben deren damaligen Stand.
 
