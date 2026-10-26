@@ -1,0 +1,67 @@
+{
+  "kind": "ui-contracts-skill-source-and-local-installation",
+  "date": "2026-10-26",
+  "source": "skills/ui-contracts",
+  "installedPath": "/Users/kcnpxcp/.codex/skills/ui-contracts",
+  "installedFiles": {
+    "SKILL.md": "423c09e243b89f041b0a2c39a83ee45ba1f19fbd7cd065e8cc95bdcee4391a34",
+    "references/authoring.md": "68843051990a89bd4008dfcccc128341e4a7fb9deddcc441f0b0c34df16c88de",
+    "references/validation.md": "26fd06d9a0dd6c6f5273d273b0375f67850a212ea4f5e3afc8a76a0ccea46a85",
+    "agents/openai.yaml": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d",
+    "scripts/contracts.py": "142147faf9e549cf787d0b05f33b5cc340e01e5ea8f69db484d0f953f38789c5"
+  },
+  "sourceMatchesInstalled": true,
+  "quickValidateSourceAndInstall": true,
+  "functionalCases": 18,
+  "allFunctionalExpectationsMet": true,
+  "independentAgentForwardTestPerformed": false,
+  "newBrowserExecutionClaimed": false,
+  "existingOriginalsAndStudyUnchanged": true,
+  "publicationPerformed": false,
+  "files": {
+    "skills/ui-contracts/SKILL.md": {
+      "bytes": 4991,
+      "sha256": "423c09e243b89f041b0a2c39a83ee45ba1f19fbd7cd065e8cc95bdcee4391a34"
+    },
+    "skills/ui-contracts/agents/openai.yaml": {
+      "bytes": 254,
+      "sha256": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d"
+    },
+    "skills/ui-contracts/references/authoring.md": {
+      "bytes": 3051,
+      "sha256": "68843051990a89bd4008dfcccc128341e4a7fb9deddcc441f0b0c34df16c88de"
+    },
+    "skills/ui-contracts/references/validation.md": {
+      "bytes": 4732,
+      "sha256": "26fd06d9a0dd6c6f5273d273b0375f67850a212ea4f5e3afc8a76a0ccea46a85"
+    },
+    "skills/ui-contracts/scripts/contracts.py": {
+      "bytes": 7787,
+      "sha256": "142147faf9e549cf787d0b05f33b5cc340e01e5ea8f69db484d0f953f38789c5"
+    },
+    "tools/skill-tests/ui-contracts/helper-initial.py": {
+      "bytes": 7633,
+      "sha256": "0a4a92aa38b471507ec9e84c56c2dd77c2c65bc0c8951e6a635399a950fe375d"
+    },
+    "tools/skill-tests/ui-contracts/initial.log": {
+      "bytes": 1046,
+      "sha256": "ade439731f9f71676af0fdb02a85da77925df17b37935b747740aff715c91ec9"
+    },
+    "tools/skill-tests/ui-contracts/quick-validation.json": {
+      "bytes": 346,
+      "sha256": "209fc7bd517f6f58e9de058b99e64d837661efd80b37330b641d19d940864b09"
+    },
+    "tools/skill-tests/ui-contracts/results-initial.json": {
+      "bytes": 279262,
+      "sha256": "cede77f4a2aacbff0a8ef41c5fe66891daf9a246e9f53b07975659de1c8ca127"
+    },
+    "tools/skill-tests/ui-contracts/results.json": {
+      "bytes": 280377,
+      "sha256": "d34665c48d0ffea855c555a6222f64f3a413fbce9b3b787600408c3f5b9c9557"
+    },
+    "tools/skill-tests/ui-contracts/test_skill.py": {
+      "bytes": 8641,
+      "sha256": "575023fd89f63961af632165afe3b8a374ac2933236d24d327a4fdf15f755ea5"
+    }
+  }
+}

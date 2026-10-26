@@ -1,0 +1,369 @@
+{
+  "kind": "bounded-joint-browser-reference-run",
+  "cases": [
+    {
+      "id": "BR-01",
+      "expected": "Original schemas and exact browser-loaded source/dependency hashes verified for the common closure",
+      "checks": {
+        "allOriginalPreflights": true,
+        "browserHashesVerified": true,
+        "sameSourceRevision": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-01.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-02",
+      "expected": "A/B start closed, named and independent without dangling active descendant or unexpected public event",
+      "checks": {
+        "bothClosed": true,
+        "noEvents": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-02.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-03",
+      "expected": "Browser ArrowDown opens A through real overlay/scroll children; input keeps focus and first enabled result becomes active",
+      "checks": {
+        "ready": true,
+        "focus": true,
+        "first": true,
+        "twoChildren": true,
+        "bClosed": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-03.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-04",
+      "expected": "Navigation skips disabled entries, reaches last result without wrapping, and actually scrolls it into the 160px viewport",
+      "checks": {
+        "last": true,
+        "scrolled": true,
+        "height": true,
+        "visible": true,
+        "noDisabledActive": true,
+        "disabledSkippedInActualMeasurements": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-04.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-05",
+      "expected": "Actual browser AX tree exposes distinct combobox names, expanded relation, active option, polite atomic status and no added container tabstop",
+      "checks": {
+        "twoNamedComboboxes": true,
+        "aExpandedBClosed": true,
+        "activeSelectedActualNode": true,
+        "politeAtomic": true,
+        "statusTextObserved": true,
+        "noContainerTabstop": true,
+        "focus": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-05.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-06",
+      "expected": "Browser Enter emits exactly one declared value-change payload, sets label/key, closes views, clears active relation, keeps input focus and leaves B unchanged",
+      "checks": {
+        "oneEvent": true,
+        "payload": true,
+        "label": true,
+        "closed": true,
+        "focus": true,
+        "noActive": true,
+        "bUnchanged": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-06.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-07",
+      "expected": "Opening and Escape on B produce no extra commit or A mutation; B children are cancelled",
+      "checks": {
+        "bClosed": true,
+        "noExtraCommit": true,
+        "aUnchanged": true,
+        "bChildrenFinal": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-07.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-08",
+      "expected": "Programmatic known value updates label/key without user commit; unknown key rejected",
+      "checks": {
+        "accepted": true,
+        "rejected": true,
+        "label": true,
+        "value": true,
+        "noExtraEvent": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-08.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-09",
+      "expected": "Input creates loading/current request; reverse-order replies only accept newest generation and do not announce stale results",
+      "checks": {
+        "distinctRequests": true,
+        "ready": true,
+        "newQuery": true,
+        "newRows": true,
+        "staleIncremented": true,
+        "statusUnchanged": true,
+        "valueRetained": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-09.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-10",
+      "expected": "Empty and provider failure yield actual empty/error states, no active target, correct busy/status and retained committed value",
+      "checks": {
+        "empty": true,
+        "emptyText": true,
+        "error": true,
+        "errorText": true,
+        "committedRetained": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-10.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-11",
+      "expected": "Invalid T1/duplicate-key provider data is diagnosed before partial rendering and reaches controlled error state",
+      "checks": {
+        "invalidDiagnosed": true,
+        "invalidError": true,
+        "duplicateDiagnosed": true,
+        "noPartialRows": true,
+        "error": true,
+        "noExtraEvent": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-11.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-12",
+      "expected": "Synthetic composition input suppresses Enter/navigation and interim provider requests; compositionend requests the final query",
+      "checks": {
+        "noInterimRequest": true,
+        "noCommit": true,
+        "queryDraft": true,
+        "finalQuery": true,
+        "oneFinalRequest": true,
+        "ready": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-12.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-13",
+      "expected": "Browser Tab/focus loss closes without commit and removes stale relations; native text editing remains available",
+      "checks": {
+        "closed": true,
+        "noExtraCommit": true,
+        "noDangling": true,
+        "focusMoved": true,
+        "textRetained": true,
+        "clearedLoading": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-13.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-14",
+      "expected": "Held child initialization followed by close/reopen cannot revive old view or break new native route; B stays unchanged",
+      "checks": {
+        "freshEpoch": true,
+        "oldFinal": true,
+        "ready": true,
+        "newRoute": true,
+        "bUnchanged": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-14.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-15",
+      "expected": "Actual malformed child source becomes explicit error relay, closes affected children and exposes accessible status without altering B",
+      "checks": {
+        "closed": true,
+        "status": true,
+        "relay": true,
+        "allChildrenFinal": true,
+        "diagnostic": true,
+        "bUnchanged": true,
+        "noExtraCommit": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-15.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-16",
+      "expected": "A/B overlays follow their own input bottom with 8px gap after input geometry changes; variable rows still reveal active result",
+      "checks": {
+        "aGap": true,
+        "aAlignment": true,
+        "bOwnAnchor": true,
+        "variableRows": true,
+        "actualReveal": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-16.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-17",
+      "expected": "Late provider reply after close/reopen is rejected without state, public-event or status changes",
+      "checks": {
+        "newEpoch": true,
+        "staleIncremented": true,
+        "rowsUnchanged": true,
+        "statusUnchanged": true,
+        "valueUnchanged": true,
+        "noExtraEvent": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-17.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-18",
+      "expected": "Foreign native report is delivered but rejected by explicit instance/epoch guards, leaving actual view and selection unchanged",
+      "checks": {
+        "foreignCount": true,
+        "activeUnchanged": true,
+        "optionsUnchanged": true,
+        "statusUnchanged": true,
+        "eventsUnchanged": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-18.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-19",
+      "expected": "Actual browser AX snapshots reflect loading/error/closed changes without stale active option and distinguish observed AX text from untested speech",
+      "checks": {
+        "loadingActualBusy": true,
+        "errorNotBusy": true,
+        "closedCollapsed": true,
+        "noStaleActiveInLoadingErrorClosed": true,
+        "readyHasActive": true,
+        "loadingText": true,
+        "errorText": true,
+        "closedLoadingCleared": true,
+        "noClosedOptions": true,
+        "noSpeechClaim": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-19.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    },
+    {
+      "id": "BR-20",
+      "expected": "Final original sources unchanged, live/runtime/errors/cancel journals and browser environment captured; no unexpected unhandled errors",
+      "checks": {
+        "sourcesUnchanged": true,
+        "noUnexpectedErrors": true,
+        "allChildrenFinal": true,
+        "onePublicCommit": true,
+        "trustedBrowserKeys": true
+      },
+      "expectationMet": true,
+      "record": "captures/BR-20.json",
+      "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    }
+  ],
+  "new_conditions": 20,
+  "group_count": 1,
+  "repeat_runs_counted_again": 0,
+  "browserVersion": {
+    "jsVersion": "15.5.35.14",
+    "product": "Chrome/155.0.8311.26",
+    "protocolVersion": "1.3",
+    "revision": "@16c3e55476d3564bea713314b2fff638749ce3e6",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9",
+  "original_schema_preflight": [
+    {
+      "file": "sources/autocomplete/behavior.scxml",
+      "sha256": "c180fbd3e53aba40e27b67cc5c84bb4fea699046483c3b6324f7ab6541152b74",
+      "kind": "original SCXML XSD",
+      "accepted": true,
+      "errors": ""
+    },
+    {
+      "file": "sources/autocomplete/interface.json",
+      "sha256": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+      "kind": "original CEM schema",
+      "accepted": true,
+      "errors": []
+    },
+    {
+      "file": "sources/error-relay.scxml",
+      "sha256": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+      "kind": "original SCXML XSD",
+      "accepted": true,
+      "errors": ""
+    },
+    {
+      "file": "sources/overlay/behavior.scxml",
+      "sha256": "6130e6edd034c4fbbd1bfe94237780ecfbd9fd6731880b2137089fe449f7f8ef",
+      "kind": "original SCXML XSD",
+      "accepted": true,
+      "errors": ""
+    },
+    {
+      "file": "sources/overlay/interface.json",
+      "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+      "kind": "original CEM schema",
+      "accepted": true,
+      "errors": []
+    },
+    {
+      "file": "sources/scroll-area/behavior.scxml",
+      "sha256": "206f9020a1ba41cb0af096f2f1aac5fbba94f92d81b58089cc32f148f785810f",
+      "kind": "original SCXML XSD",
+      "accepted": true,
+      "errors": ""
+    },
+    {
+      "file": "sources/scroll-area/interface.json",
+      "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+      "kind": "original CEM schema",
+      "accepted": true,
+      "errors": []
+    }
+  ],
+  "research_host_implemented": true,
+  "original_scxml_runtime_executed": true,
+  "browser_dom_focus_scroll_ax_executed": true,
+  "trusted_browser_keyboard_actions": true,
+  "physical_keyboard_tested": false,
+  "real_ime_tested": false,
+  "screen_reader_tested": false,
+  "native_platforms_tested": false,
+  "full_ip_profile_passed": false,
+  "original_counterexamples_and_own_initial_failures_preserved": true
+}

@@ -1,0 +1,865 @@
+{
+  "kind": "bounded-ip01-validation",
+  "reportVersion": "0.2.0",
+  "profile": "IP01-STATIC-BOUNDARY-1",
+  "profileSha256": "70c2b3ccdeeccdb19aa0f7a1a58ca7c1b4ee010c403c8f805557f008512208da",
+  "scope": "static",
+  "package": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/experiments/2026-10-25/ip01-static/reference",
+  "createdAt": "2026-10-26T09:07:38.710677+00:00",
+  "python": "3.9.6",
+  "stages": [
+    {
+      "id": 1,
+      "name": "profile-and-required-tools",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "dependency.lxml",
+          "version": "6.0.2"
+        },
+        {
+          "id": "dependency.jsonschema",
+          "version": "4.25.1"
+        },
+        {
+          "id": "dependency.node-packages",
+          "actual": {
+            "typescript": "5.9.3",
+            "css": "3.2.1"
+          },
+          "expected": {
+            "typescript": "5.9.3",
+            "css": "3.2.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "syntax-and-original-schemas",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "closure.files",
+          "actual": {
+            "autocomplete/accessibility.html": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578",
+            "autocomplete/behavior.scxml": "0fa5805928e199a794cb5255381e75714ce269ce5e50612aacefb6b595719fef",
+            "autocomplete/interface.json": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+            "autocomplete/layout.css": "0b35c46f2603501adef53c74296809c9dc8e025b1b3e685d6a6db781ed9f4461",
+            "bindings.json": "adfa18cbf98dd2082f1770b5f1a213cb5c087625007398e37c10d77bf8a901de",
+            "host.html": "023ab480139434d95e7da560d65984bc4d55bc0fc8adff8d02830aa819696620",
+            "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+            "overlay/behavior.scxml": "d4061ec0b448776b9ed366579d8a37c071f5643d5351dcf166bdc4d8a1d4c84f",
+            "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+            "overlay/layout.css": "2156b889363bbc9efc00dd3c8047f586971e237b832953fd60372fff6ff337a2",
+            "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+            "scroll-area/behavior.scxml": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d",
+            "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+            "scroll-area/layout.css": "ecd9b281b7ea5c03e32b9a2949b187ddfc78669284ff5cb177925ce258a7c1aa",
+            "values.json": "26595bca4e3611b15b138e2ba9486cefeddda59aa5cc8c6eaf5290772fcef5c8",
+            "visual/tokens.json": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412"
+          },
+          "expected": {
+            "autocomplete/accessibility.html": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578",
+            "autocomplete/behavior.scxml": "0fa5805928e199a794cb5255381e75714ce269ce5e50612aacefb6b595719fef",
+            "autocomplete/interface.json": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+            "autocomplete/layout.css": "0b35c46f2603501adef53c74296809c9dc8e025b1b3e685d6a6db781ed9f4461",
+            "bindings.json": "adfa18cbf98dd2082f1770b5f1a213cb5c087625007398e37c10d77bf8a901de",
+            "host.html": "023ab480139434d95e7da560d65984bc4d55bc0fc8adff8d02830aa819696620",
+            "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+            "overlay/behavior.scxml": "d4061ec0b448776b9ed366579d8a37c071f5643d5351dcf166bdc4d8a1d4c84f",
+            "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+            "overlay/layout.css": "2156b889363bbc9efc00dd3c8047f586971e237b832953fd60372fff6ff337a2",
+            "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+            "scroll-area/behavior.scxml": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d",
+            "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+            "scroll-area/layout.css": "ecd9b281b7ea5c03e32b9a2949b187ddfc78669284ff5cb177925ce258a7c1aa",
+            "values.json": "26595bca4e3611b15b138e2ba9486cefeddda59aa5cc8c6eaf5290772fcef5c8",
+            "visual/tokens.json": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412"
+          }
+        },
+        {
+          "id": "closure.revision",
+          "actual": "dde26ea34c76ffbc4f917bedbe8d527f0e0976b534fc30a7ef236a6d639a9f95",
+          "expected": "dde26ea34c76ffbc4f917bedbe8d527f0e0976b534fc30a7ef236a6d639a9f95"
+        },
+        {
+          "id": "profile.sources",
+          "actual": {
+            "autocomplete.interface": {
+              "definition": "reference:Autocomplete",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "autocomplete/interface.json"
+            },
+            "autocomplete.behavior": {
+              "definition": "reference:Autocomplete",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "autocomplete/behavior.scxml"
+            },
+            "autocomplete.accessibility": {
+              "definition": "reference:Autocomplete",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "autocomplete/accessibility.html"
+            },
+            "autocomplete.visual": {
+              "definition": "reference:Autocomplete",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "autocomplete/layout.css"
+            },
+            "overlay.interface": {
+              "definition": "reference:Overlay",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "overlay/interface.json"
+            },
+            "overlay.behavior": {
+              "definition": "reference:Overlay",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "overlay/behavior.scxml"
+            },
+            "overlay.accessibility": {
+              "definition": "reference:Overlay",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "overlay/accessibility.html"
+            },
+            "overlay.visual": {
+              "definition": "reference:Overlay",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "overlay/layout.css"
+            },
+            "scroll-area.interface": {
+              "definition": "reference:ScrollArea",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "scroll-area/interface.json"
+            },
+            "scroll-area.behavior": {
+              "definition": "reference:ScrollArea",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "scroll-area/behavior.scxml"
+            },
+            "scroll-area.accessibility": {
+              "definition": "reference:ScrollArea",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "scroll-area/accessibility.html"
+            },
+            "scroll-area.visual": {
+              "definition": "reference:ScrollArea",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "scroll-area/layout.css"
+            },
+            "tokens": {
+              "definition": null,
+              "domain": "visual",
+              "format": "dtcg",
+              "formatVersion": "2025.10",
+              "path": "visual/tokens.json"
+            }
+          },
+          "expected": {
+            "autocomplete.interface": {
+              "definition": "reference:Autocomplete",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "autocomplete/interface.json"
+            },
+            "autocomplete.behavior": {
+              "definition": "reference:Autocomplete",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "autocomplete/behavior.scxml"
+            },
+            "autocomplete.accessibility": {
+              "definition": "reference:Autocomplete",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "autocomplete/accessibility.html"
+            },
+            "autocomplete.visual": {
+              "definition": "reference:Autocomplete",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "autocomplete/layout.css"
+            },
+            "overlay.interface": {
+              "definition": "reference:Overlay",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "overlay/interface.json"
+            },
+            "overlay.behavior": {
+              "definition": "reference:Overlay",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "overlay/behavior.scxml"
+            },
+            "overlay.accessibility": {
+              "definition": "reference:Overlay",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "overlay/accessibility.html"
+            },
+            "overlay.visual": {
+              "definition": "reference:Overlay",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "overlay/layout.css"
+            },
+            "scroll-area.interface": {
+              "definition": "reference:ScrollArea",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "scroll-area/interface.json"
+            },
+            "scroll-area.behavior": {
+              "definition": "reference:ScrollArea",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "scroll-area/behavior.scxml"
+            },
+            "scroll-area.accessibility": {
+              "definition": "reference:ScrollArea",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "scroll-area/accessibility.html"
+            },
+            "scroll-area.visual": {
+              "definition": "reference:ScrollArea",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "scroll-area/layout.css"
+            },
+            "tokens": {
+              "definition": null,
+              "domain": "visual",
+              "format": "dtcg",
+              "formatVersion": "2025.10",
+              "path": "visual/tokens.json"
+            }
+          }
+        },
+        {
+          "id": "profile.requiredRelations",
+          "actual": [
+            "A.input",
+            "A.list",
+            "A.option",
+            "A.overlay",
+            "A.status",
+            "A.viewport",
+            "B.input",
+            "B.list",
+            "B.option",
+            "B.overlay",
+            "B.status",
+            "B.viewport",
+            "event.value",
+            "visual.gap",
+            "visual.maxHeight",
+            "visual.rowHeight"
+          ],
+          "expected": [
+            "A.input",
+            "A.list",
+            "A.option",
+            "A.overlay",
+            "A.status",
+            "A.viewport",
+            "B.input",
+            "B.list",
+            "B.option",
+            "B.overlay",
+            "B.status",
+            "B.viewport",
+            "event.value",
+            "visual.gap",
+            "visual.maxHeight",
+            "visual.rowHeight"
+          ]
+        },
+        {
+          "id": "profile.relations",
+          "actual": [
+            "A.input",
+            "A.list",
+            "A.option",
+            "A.overlay",
+            "A.status",
+            "A.viewport",
+            "B.input",
+            "B.list",
+            "B.option",
+            "B.overlay",
+            "B.status",
+            "B.viewport",
+            "event.value",
+            "visual.gap",
+            "visual.maxHeight",
+            "visual.rowHeight"
+          ],
+          "expected": [
+            "A.input",
+            "A.list",
+            "A.option",
+            "A.overlay",
+            "A.status",
+            "A.viewport",
+            "B.input",
+            "B.list",
+            "B.option",
+            "B.overlay",
+            "B.status",
+            "B.viewport",
+            "event.value",
+            "visual.gap",
+            "visual.maxHeight",
+            "visual.rowHeight"
+          ]
+        },
+        {
+          "id": "profile.definitions",
+          "actual": [
+            "reference:Autocomplete",
+            "reference:Overlay",
+            "reference:ScrollArea"
+          ],
+          "expected": [
+            "reference:Autocomplete",
+            "reference:Overlay",
+            "reference:ScrollArea"
+          ]
+        },
+        {
+          "id": "profile.targets",
+          "actual": [
+            "autocomplete.input",
+            "autocomplete.list",
+            "autocomplete.option",
+            "autocomplete.status",
+            "overlay.content",
+            "overlay.surface",
+            "scroll-area.content",
+            "scroll-area.viewport"
+          ],
+          "expected": [
+            "autocomplete.input",
+            "autocomplete.list",
+            "autocomplete.option",
+            "autocomplete.status",
+            "overlay.content",
+            "overlay.surface",
+            "scroll-area.content",
+            "scroll-area.viewport"
+          ]
+        },
+        {
+          "id": "profile.relationKinds",
+          "actual": {
+            "A.input": "host-part",
+            "A.list": "host-part",
+            "A.option": "host-part",
+            "A.status": "host-part",
+            "A.overlay": "host-part",
+            "A.viewport": "host-part",
+            "B.input": "host-part",
+            "B.list": "host-part",
+            "B.option": "host-part",
+            "B.status": "host-part",
+            "B.overlay": "host-part",
+            "B.viewport": "host-part",
+            "event.value": "event-type",
+            "visual.gap": "token-css",
+            "visual.maxHeight": "token-css",
+            "visual.rowHeight": "token-css"
+          },
+          "expected": {
+            "A.input": "host-part",
+            "A.list": "host-part",
+            "A.option": "host-part",
+            "A.status": "host-part",
+            "A.overlay": "host-part",
+            "A.viewport": "host-part",
+            "B.input": "host-part",
+            "B.list": "host-part",
+            "B.option": "host-part",
+            "B.status": "host-part",
+            "B.overlay": "host-part",
+            "B.viewport": "host-part",
+            "event.value": "event-type",
+            "visual.gap": "token-css",
+            "visual.maxHeight": "token-css",
+            "visual.rowHeight": "token-css"
+          }
+        },
+        {
+          "id": "profile.eventContracts",
+          "actual": {
+            "event.value": {
+              "event": "value-change",
+              "field": "value",
+              "interfaceSource": "autocomplete.interface",
+              "behaviorSource": "autocomplete.behavior",
+              "locator": "//s:send[@event='value-change']/s:param[@name='value']"
+            }
+          },
+          "expected": {
+            "event.value": {
+              "event": "value-change",
+              "field": "value",
+              "interfaceSource": "autocomplete.interface",
+              "behaviorSource": "autocomplete.behavior",
+              "locator": "//s:send[@event='value-change']/s:param[@name='value']"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "references-types-units-events-instances",
+      "status": "PASS",
+      "checks": []
+    },
+    {
+      "id": 4,
+      "name": "ownership-composition-static",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "ownership.interface-authority",
+          "actual": true,
+          "expected": true
+        },
+        {
+          "id": "composition.witness-count",
+          "actual": 12,
+          "expected": 12
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "live-behavior-events-focus-scroll-ax",
+      "status": "NOT_RUN",
+      "checks": [],
+      "reason": "outside-static-scope"
+    },
+    {
+      "id": 6,
+      "name": "report-and-release",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "release",
+          "actual": false,
+          "scope": "no-web-release",
+          "productionRelease": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "No full DTCG, CSS, HTML, ARIA or APG validator",
+    "No generic lifecycle resolver",
+    "Live browser evidence is a separate required gate in web scope",
+    "No native/AT/IME conformance",
+    "Historical browser captures are provenance, not a new run"
+  ],
+  "unverified": [
+    "Live lifecycle, events, focus, scrolling and browser AX",
+    "Full original DTCG/CSS/HTML/ARIA/APG coverage",
+    "Native targets, real IME and screenreader output"
+  ],
+  "release": false,
+  "passedScope": [
+    "Pinned IP-01 static fixture: original CEM/SCXML schema subset, closed T0/T1 values, references, instance projection, dimension aliases and token-CSS links, acyclic static composition"
+  ],
+  "checkerHashes": {
+    "browser_gate.py": "85878b133fe52bfcde8a18d75cc47c7e3a8304884f6f265f2c331f76f0996329",
+    "check.py": "88e1627064518e31bf6efb4d9568dc081789a7701b2aa03e342c85fece11fd9e",
+    "css.cjs": "07d73e6442ec344c6711003849bfec197e5199a15326a5fb94fb04447b315205",
+    "package-lock.json": "415149c62f7840de4e6209291dc458b854663b07e74fe29323b4a74b616dfb42",
+    "profile.json": "70c2b3ccdeeccdb19aa0f7a1a58ca7c1b4ee010c403c8f805557f008512208da",
+    "requirements.lock.txt": "3eb3b1463f55275ab481fb70e8acef567babc7629de93e3293be3c3aae31eac2",
+    "static_engine.py": "fb8328a8f8b09919ae9a71b1660f6de627233d5267f178b04f01cccd837b4286",
+    "test_browser_gate.py": "1fc88bbbbc5d19f87dce103f95d4544017a87d61d75b513ce1c903ae7d33b168",
+    "test_chain.py": "32cca2264987f9b1b62c91b8168d293046c74a36756381c1d00998a38e5c5982",
+    "types.cjs": "684efe148ff244fbb551c4a57df473cd2dfec101ea62f69d7d97a31f5ac8bc0b"
+  },
+  "overall": "PASS_LIMITED",
+  "proof": {
+    "originalChecks": [
+      {
+        "source": "autocomplete.interface",
+        "validator": "original CEM schema",
+        "accepted": true
+      },
+      {
+        "source": "autocomplete.behavior",
+        "validator": "original SCXML XSD",
+        "accepted": true
+      },
+      {
+        "source": "overlay.interface",
+        "validator": "original CEM schema",
+        "accepted": true
+      },
+      {
+        "source": "overlay.behavior",
+        "validator": "original SCXML XSD",
+        "accepted": true
+      },
+      {
+        "source": "scroll-area.interface",
+        "validator": "original CEM schema",
+        "accepted": true
+      },
+      {
+        "source": "scroll-area.behavior",
+        "validator": "original SCXML XSD",
+        "accepted": true
+      }
+    ],
+    "additionalCssSyntax": {
+      "version": "3.2.1",
+      "cases": [
+        {
+          "file": "autocomplete/layout.css",
+          "syntaxParsed": true,
+          "declarations": [
+            {
+              "property": "min-height",
+              "value": "var(--row-height)"
+            },
+            {
+              "property": "flex-shrink",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "file": "overlay/layout.css",
+          "syntaxParsed": true,
+          "declarations": [
+            {
+              "property": "position",
+              "value": "absolute"
+            },
+            {
+              "property": "top",
+              "value": "anchor(bottom)"
+            },
+            {
+              "property": "margin-top",
+              "value": "var(--gap)"
+            }
+          ]
+        },
+        {
+          "file": "scroll-area/layout.css",
+          "syntaxParsed": true,
+          "declarations": [
+            {
+              "property": "max-height",
+              "value": "var(--max-height)"
+            },
+            {
+              "property": "overflow-y",
+              "value": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "visualBindings": [
+      {
+        "relation": "visual.gap",
+        "token": "autocomplete.gap",
+        "value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "cssSource": "overlay.visual",
+        "variable": "--gap",
+        "declaration": {
+          "property": "margin-top",
+          "value": "var(--gap)"
+        }
+      },
+      {
+        "relation": "visual.maxHeight",
+        "token": "autocomplete.maxHeight",
+        "value": {
+          "value": 160,
+          "unit": "px"
+        },
+        "cssSource": "scroll-area.visual",
+        "variable": "--max-height",
+        "declaration": {
+          "property": "max-height",
+          "value": "var(--max-height)"
+        }
+      },
+      {
+        "relation": "visual.rowHeight",
+        "token": "autocomplete.rowHeight",
+        "value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "cssSource": "autocomplete.visual",
+        "variable": "--row-height",
+        "declaration": {
+          "property": "min-height",
+          "value": "var(--row-height)"
+        }
+      }
+    ],
+    "witnesses": [
+      {
+        "relation": "A.input",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "A"
+        ],
+        "part": "input",
+        "hostId": "A-input"
+      },
+      {
+        "relation": "A.list",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "A"
+        ],
+        "part": "list",
+        "hostId": "A-list"
+      },
+      {
+        "relation": "A.option",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "A"
+        ],
+        "part": "option",
+        "hostId": "A-option"
+      },
+      {
+        "relation": "A.status",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "A"
+        ],
+        "part": "status",
+        "hostId": "A-status"
+      },
+      {
+        "relation": "A.overlay",
+        "definition": "reference:Overlay",
+        "instance": [
+          "A",
+          "overlay"
+        ],
+        "part": "surface",
+        "hostId": "A-overlay"
+      },
+      {
+        "relation": "A.viewport",
+        "definition": "reference:ScrollArea",
+        "instance": [
+          "A",
+          "overlay",
+          "scroll"
+        ],
+        "part": "viewport",
+        "hostId": "A-viewport"
+      },
+      {
+        "relation": "B.input",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "B"
+        ],
+        "part": "input",
+        "hostId": "B-input"
+      },
+      {
+        "relation": "B.list",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "B"
+        ],
+        "part": "list",
+        "hostId": "B-list"
+      },
+      {
+        "relation": "B.option",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "B"
+        ],
+        "part": "option",
+        "hostId": "B-option"
+      },
+      {
+        "relation": "B.status",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "B"
+        ],
+        "part": "status",
+        "hostId": "B-status"
+      },
+      {
+        "relation": "B.overlay",
+        "definition": "reference:Overlay",
+        "instance": [
+          "B",
+          "overlay"
+        ],
+        "part": "surface",
+        "hostId": "B-overlay"
+      },
+      {
+        "relation": "B.viewport",
+        "definition": "reference:ScrollArea",
+        "instance": [
+          "B",
+          "overlay",
+          "scroll"
+        ],
+        "part": "viewport",
+        "hostId": "B-viewport"
+      }
+    ],
+    "types": {
+      "typescript": "5.9.3",
+      "members": {
+        "query": {
+          "kind": "string"
+        },
+        "value": {
+          "kind": "optional",
+          "item": {
+            "kind": "string"
+          }
+        },
+        "results": {
+          "kind": "array",
+          "item": {
+            "kind": "record",
+            "fields": {
+              "key": {
+                "type": {
+                  "kind": "string"
+                },
+                "optional": false
+              },
+              "label": {
+                "type": {
+                  "kind": "string"
+                },
+                "optional": false
+              },
+              "disabled": {
+                "type": {
+                  "kind": "boolean"
+                },
+                "optional": true
+              }
+            }
+          }
+        },
+        "enabled": {
+          "kind": "boolean"
+        },
+        "limit": {
+          "kind": "number"
+        }
+      },
+      "events": {
+        "value-change": {
+          "kind": "event",
+          "payload": {
+            "kind": "record",
+            "fields": {
+              "value": {
+                "type": {
+                  "kind": "string"
+                },
+                "optional": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "visual": {
+      "gap": {
+        "value": 8,
+        "unit": "px"
+      },
+      "maxHeight": {
+        "value": 160,
+        "unit": "px"
+      },
+      "rowHeight": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    "additionalScope": "bounded static resolver/type/default/dimension checks; HTML parsed but no original ARIA validator, DOM runtime, CSS evaluation or AT"
+  },
+  "inputHashes": {
+    "autocomplete/accessibility.html": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578",
+    "autocomplete/behavior.scxml": "0fa5805928e199a794cb5255381e75714ce269ce5e50612aacefb6b595719fef",
+    "autocomplete/interface.json": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+    "autocomplete/layout.css": "0b35c46f2603501adef53c74296809c9dc8e025b1b3e685d6a6db781ed9f4461",
+    "bindings.json": "adfa18cbf98dd2082f1770b5f1a213cb5c087625007398e37c10d77bf8a901de",
+    "host.html": "023ab480139434d95e7da560d65984bc4d55bc0fc8adff8d02830aa819696620",
+    "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "overlay/behavior.scxml": "d4061ec0b448776b9ed366579d8a37c071f5643d5351dcf166bdc4d8a1d4c84f",
+    "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "overlay/layout.css": "2156b889363bbc9efc00dd3c8047f586971e237b832953fd60372fff6ff337a2",
+    "resolved.json": "81aae7e869852f574cf810285da5f6ac560b36adb3fd9c8197207a418d513ef7",
+    "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "scroll-area/behavior.scxml": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d",
+    "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "scroll-area/layout.css": "ecd9b281b7ea5c03e32b9a2949b187ddfc78669284ff5cb177925ce258a7c1aa",
+    "values.json": "26595bca4e3611b15b138e2ba9486cefeddda59aa5cc8c6eaf5290772fcef5c8",
+    "visual/tokens.json": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412"
+  }
+}

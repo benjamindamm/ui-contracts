@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Contracts"
+  short_description: "Contractartefakte erstellen und begrenzt prüfen"
+  default_prompt: "Nutze $ui-contracts, um Contractartefakte zu bearbeiten und ihren tatsächlich unterstützten Prüfumfang nachzuweisen."

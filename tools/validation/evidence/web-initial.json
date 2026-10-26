@@ -1,0 +1,1508 @@
+{
+  "kind": "bounded-ip01-validation",
+  "reportVersion": "0.2.0",
+  "profile": "IP01-STATIC-BOUNDARY-1",
+  "profileSha256": "bfb5802f75536930e6fb8141bcb1be6c6a2916b1699a807cc223350396e2c88e",
+  "scope": "web",
+  "package": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/experiments/2026-10-25/ip01-static/reference",
+  "createdAt": "2026-10-26T09:04:02.529310+00:00",
+  "python": "3.9.6",
+  "stages": [
+    {
+      "id": 1,
+      "name": "profile-and-required-tools",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "dependency.lxml",
+          "version": "6.0.2"
+        },
+        {
+          "id": "dependency.jsonschema",
+          "version": "4.25.1"
+        },
+        {
+          "id": "dependency.node-packages",
+          "actual": {
+            "typescript": "5.9.3",
+            "css": "3.2.1"
+          },
+          "expected": {
+            "typescript": "5.9.3",
+            "css": "3.2.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "syntax-and-original-schemas",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "closure.files",
+          "actual": {
+            "autocomplete/accessibility.html": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578",
+            "autocomplete/behavior.scxml": "0fa5805928e199a794cb5255381e75714ce269ce5e50612aacefb6b595719fef",
+            "autocomplete/interface.json": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+            "autocomplete/layout.css": "0b35c46f2603501adef53c74296809c9dc8e025b1b3e685d6a6db781ed9f4461",
+            "bindings.json": "adfa18cbf98dd2082f1770b5f1a213cb5c087625007398e37c10d77bf8a901de",
+            "host.html": "023ab480139434d95e7da560d65984bc4d55bc0fc8adff8d02830aa819696620",
+            "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+            "overlay/behavior.scxml": "d4061ec0b448776b9ed366579d8a37c071f5643d5351dcf166bdc4d8a1d4c84f",
+            "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+            "overlay/layout.css": "2156b889363bbc9efc00dd3c8047f586971e237b832953fd60372fff6ff337a2",
+            "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+            "scroll-area/behavior.scxml": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d",
+            "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+            "scroll-area/layout.css": "ecd9b281b7ea5c03e32b9a2949b187ddfc78669284ff5cb177925ce258a7c1aa",
+            "values.json": "26595bca4e3611b15b138e2ba9486cefeddda59aa5cc8c6eaf5290772fcef5c8",
+            "visual/tokens.json": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412"
+          },
+          "expected": {
+            "autocomplete/accessibility.html": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578",
+            "autocomplete/behavior.scxml": "0fa5805928e199a794cb5255381e75714ce269ce5e50612aacefb6b595719fef",
+            "autocomplete/interface.json": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+            "autocomplete/layout.css": "0b35c46f2603501adef53c74296809c9dc8e025b1b3e685d6a6db781ed9f4461",
+            "bindings.json": "adfa18cbf98dd2082f1770b5f1a213cb5c087625007398e37c10d77bf8a901de",
+            "host.html": "023ab480139434d95e7da560d65984bc4d55bc0fc8adff8d02830aa819696620",
+            "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+            "overlay/behavior.scxml": "d4061ec0b448776b9ed366579d8a37c071f5643d5351dcf166bdc4d8a1d4c84f",
+            "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+            "overlay/layout.css": "2156b889363bbc9efc00dd3c8047f586971e237b832953fd60372fff6ff337a2",
+            "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+            "scroll-area/behavior.scxml": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d",
+            "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+            "scroll-area/layout.css": "ecd9b281b7ea5c03e32b9a2949b187ddfc78669284ff5cb177925ce258a7c1aa",
+            "values.json": "26595bca4e3611b15b138e2ba9486cefeddda59aa5cc8c6eaf5290772fcef5c8",
+            "visual/tokens.json": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412"
+          }
+        },
+        {
+          "id": "closure.revision",
+          "actual": "dde26ea34c76ffbc4f917bedbe8d527f0e0976b534fc30a7ef236a6d639a9f95",
+          "expected": "dde26ea34c76ffbc4f917bedbe8d527f0e0976b534fc30a7ef236a6d639a9f95"
+        },
+        {
+          "id": "profile.sources",
+          "actual": {
+            "autocomplete.interface": {
+              "definition": "reference:Autocomplete",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "autocomplete/interface.json"
+            },
+            "autocomplete.behavior": {
+              "definition": "reference:Autocomplete",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "autocomplete/behavior.scxml"
+            },
+            "autocomplete.accessibility": {
+              "definition": "reference:Autocomplete",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "autocomplete/accessibility.html"
+            },
+            "autocomplete.visual": {
+              "definition": "reference:Autocomplete",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "autocomplete/layout.css"
+            },
+            "overlay.interface": {
+              "definition": "reference:Overlay",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "overlay/interface.json"
+            },
+            "overlay.behavior": {
+              "definition": "reference:Overlay",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "overlay/behavior.scxml"
+            },
+            "overlay.accessibility": {
+              "definition": "reference:Overlay",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "overlay/accessibility.html"
+            },
+            "overlay.visual": {
+              "definition": "reference:Overlay",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "overlay/layout.css"
+            },
+            "scroll-area.interface": {
+              "definition": "reference:ScrollArea",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "scroll-area/interface.json"
+            },
+            "scroll-area.behavior": {
+              "definition": "reference:ScrollArea",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "scroll-area/behavior.scxml"
+            },
+            "scroll-area.accessibility": {
+              "definition": "reference:ScrollArea",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "scroll-area/accessibility.html"
+            },
+            "scroll-area.visual": {
+              "definition": "reference:ScrollArea",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "scroll-area/layout.css"
+            },
+            "tokens": {
+              "definition": null,
+              "domain": "visual",
+              "format": "dtcg",
+              "formatVersion": "2025.10",
+              "path": "visual/tokens.json"
+            }
+          },
+          "expected": {
+            "autocomplete.interface": {
+              "definition": "reference:Autocomplete",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "autocomplete/interface.json"
+            },
+            "autocomplete.behavior": {
+              "definition": "reference:Autocomplete",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "autocomplete/behavior.scxml"
+            },
+            "autocomplete.accessibility": {
+              "definition": "reference:Autocomplete",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "autocomplete/accessibility.html"
+            },
+            "autocomplete.visual": {
+              "definition": "reference:Autocomplete",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "autocomplete/layout.css"
+            },
+            "overlay.interface": {
+              "definition": "reference:Overlay",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "overlay/interface.json"
+            },
+            "overlay.behavior": {
+              "definition": "reference:Overlay",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "overlay/behavior.scxml"
+            },
+            "overlay.accessibility": {
+              "definition": "reference:Overlay",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "overlay/accessibility.html"
+            },
+            "overlay.visual": {
+              "definition": "reference:Overlay",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "overlay/layout.css"
+            },
+            "scroll-area.interface": {
+              "definition": "reference:ScrollArea",
+              "domain": "interface",
+              "format": "cem",
+              "formatVersion": "2.1.0",
+              "path": "scroll-area/interface.json"
+            },
+            "scroll-area.behavior": {
+              "definition": "reference:ScrollArea",
+              "domain": "behavior",
+              "format": "scxml",
+              "formatVersion": "1.0",
+              "path": "scroll-area/behavior.scxml"
+            },
+            "scroll-area.accessibility": {
+              "definition": "reference:ScrollArea",
+              "domain": "accessibility",
+              "format": "html",
+              "formatVersion": "html-host-fixture",
+              "path": "scroll-area/accessibility.html"
+            },
+            "scroll-area.visual": {
+              "definition": "reference:ScrollArea",
+              "domain": "visual",
+              "format": "css",
+              "formatVersion": "pinned-partial-web-css",
+              "path": "scroll-area/layout.css"
+            },
+            "tokens": {
+              "definition": null,
+              "domain": "visual",
+              "format": "dtcg",
+              "formatVersion": "2025.10",
+              "path": "visual/tokens.json"
+            }
+          }
+        },
+        {
+          "id": "profile.requiredRelations",
+          "actual": [
+            "A.input",
+            "A.list",
+            "A.option",
+            "A.overlay",
+            "A.status",
+            "A.viewport",
+            "B.input",
+            "B.list",
+            "B.option",
+            "B.overlay",
+            "B.status",
+            "B.viewport",
+            "event.value",
+            "visual.gap",
+            "visual.maxHeight",
+            "visual.rowHeight"
+          ],
+          "expected": [
+            "A.input",
+            "A.list",
+            "A.option",
+            "A.overlay",
+            "A.status",
+            "A.viewport",
+            "B.input",
+            "B.list",
+            "B.option",
+            "B.overlay",
+            "B.status",
+            "B.viewport",
+            "event.value",
+            "visual.gap",
+            "visual.maxHeight",
+            "visual.rowHeight"
+          ]
+        },
+        {
+          "id": "profile.relations",
+          "actual": [
+            "A.input",
+            "A.list",
+            "A.option",
+            "A.overlay",
+            "A.status",
+            "A.viewport",
+            "B.input",
+            "B.list",
+            "B.option",
+            "B.overlay",
+            "B.status",
+            "B.viewport",
+            "event.value",
+            "visual.gap",
+            "visual.maxHeight",
+            "visual.rowHeight"
+          ],
+          "expected": [
+            "A.input",
+            "A.list",
+            "A.option",
+            "A.overlay",
+            "A.status",
+            "A.viewport",
+            "B.input",
+            "B.list",
+            "B.option",
+            "B.overlay",
+            "B.status",
+            "B.viewport",
+            "event.value",
+            "visual.gap",
+            "visual.maxHeight",
+            "visual.rowHeight"
+          ]
+        },
+        {
+          "id": "profile.definitions",
+          "actual": [
+            "reference:Autocomplete",
+            "reference:Overlay",
+            "reference:ScrollArea"
+          ],
+          "expected": [
+            "reference:Autocomplete",
+            "reference:Overlay",
+            "reference:ScrollArea"
+          ]
+        },
+        {
+          "id": "profile.targets",
+          "actual": [
+            "autocomplete.input",
+            "autocomplete.list",
+            "autocomplete.option",
+            "autocomplete.status",
+            "overlay.content",
+            "overlay.surface",
+            "scroll-area.content",
+            "scroll-area.viewport"
+          ],
+          "expected": [
+            "autocomplete.input",
+            "autocomplete.list",
+            "autocomplete.option",
+            "autocomplete.status",
+            "overlay.content",
+            "overlay.surface",
+            "scroll-area.content",
+            "scroll-area.viewport"
+          ]
+        },
+        {
+          "id": "profile.relationKinds",
+          "actual": {
+            "A.input": "host-part",
+            "A.list": "host-part",
+            "A.option": "host-part",
+            "A.status": "host-part",
+            "A.overlay": "host-part",
+            "A.viewport": "host-part",
+            "B.input": "host-part",
+            "B.list": "host-part",
+            "B.option": "host-part",
+            "B.status": "host-part",
+            "B.overlay": "host-part",
+            "B.viewport": "host-part",
+            "event.value": "event-type",
+            "visual.gap": "token-css",
+            "visual.maxHeight": "token-css",
+            "visual.rowHeight": "token-css"
+          },
+          "expected": {
+            "A.input": "host-part",
+            "A.list": "host-part",
+            "A.option": "host-part",
+            "A.status": "host-part",
+            "A.overlay": "host-part",
+            "A.viewport": "host-part",
+            "B.input": "host-part",
+            "B.list": "host-part",
+            "B.option": "host-part",
+            "B.status": "host-part",
+            "B.overlay": "host-part",
+            "B.viewport": "host-part",
+            "event.value": "event-type",
+            "visual.gap": "token-css",
+            "visual.maxHeight": "token-css",
+            "visual.rowHeight": "token-css"
+          }
+        },
+        {
+          "id": "profile.eventContracts",
+          "actual": {
+            "event.value": {
+              "event": "value-change",
+              "field": "value",
+              "interfaceSource": "autocomplete.interface",
+              "behaviorSource": "autocomplete.behavior",
+              "locator": "//s:send[@event='value-change']/s:param[@name='value']"
+            }
+          },
+          "expected": {
+            "event.value": {
+              "event": "value-change",
+              "field": "value",
+              "interfaceSource": "autocomplete.interface",
+              "behaviorSource": "autocomplete.behavior",
+              "locator": "//s:send[@event='value-change']/s:param[@name='value']"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "references-types-units-events-instances",
+      "status": "PASS",
+      "checks": []
+    },
+    {
+      "id": 4,
+      "name": "ownership-composition-static",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "ownership.interface-authority",
+          "actual": true,
+          "expected": true
+        },
+        {
+          "id": "composition.witness-count",
+          "actual": 12,
+          "expected": 12
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "live-behavior-events-focus-scroll-ax",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "BR-01",
+          "expected": "Original schemas and exact browser-loaded source/dependency hashes verified for the common closure",
+          "checks": {
+            "allOriginalPreflights": true,
+            "browserHashesVerified": true,
+            "sameSourceRevision": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-01.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-02",
+          "expected": "A/B start closed, named and independent without dangling active descendant or unexpected public event",
+          "checks": {
+            "bothClosed": true,
+            "noEvents": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-02.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-03",
+          "expected": "Browser ArrowDown opens A through real overlay/scroll children; input keeps focus and first enabled result becomes active",
+          "checks": {
+            "ready": true,
+            "focus": true,
+            "first": true,
+            "twoChildren": true,
+            "bClosed": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-03.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-04",
+          "expected": "Navigation skips disabled entries, reaches last result without wrapping, and actually scrolls it into the 160px viewport",
+          "checks": {
+            "last": true,
+            "scrolled": true,
+            "height": true,
+            "visible": true,
+            "noDisabledActive": true,
+            "disabledSkippedInActualMeasurements": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-04.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-05",
+          "expected": "Actual browser AX tree exposes distinct combobox names, expanded relation, active option, polite atomic status and no added container tabstop",
+          "checks": {
+            "twoNamedComboboxes": true,
+            "aExpandedBClosed": true,
+            "activeSelectedActualNode": true,
+            "politeAtomic": true,
+            "statusTextObserved": true,
+            "noContainerTabstop": true,
+            "focus": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-05.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-06",
+          "expected": "Browser Enter emits exactly one declared value-change payload, sets label/key, closes views, clears active relation, keeps input focus and leaves B unchanged",
+          "checks": {
+            "oneEvent": true,
+            "payload": true,
+            "label": true,
+            "closed": true,
+            "focus": true,
+            "noActive": true,
+            "bUnchanged": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-06.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-07",
+          "expected": "Opening and Escape on B produce no extra commit or A mutation; B children are cancelled",
+          "checks": {
+            "bClosed": true,
+            "noExtraCommit": true,
+            "aUnchanged": true,
+            "bChildrenFinal": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-07.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-08",
+          "expected": "Programmatic known value updates label/key without user commit; unknown key rejected",
+          "checks": {
+            "accepted": true,
+            "rejected": true,
+            "label": true,
+            "value": true,
+            "noExtraEvent": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-08.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-09",
+          "expected": "Input creates loading/current request; reverse-order replies only accept newest generation and do not announce stale results",
+          "checks": {
+            "distinctRequests": true,
+            "ready": true,
+            "newQuery": true,
+            "newRows": true,
+            "staleIncremented": true,
+            "statusUnchanged": true,
+            "valueRetained": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-09.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-10",
+          "expected": "Empty and provider failure yield actual empty/error states, no active target, correct busy/status and retained committed value",
+          "checks": {
+            "empty": true,
+            "emptyText": true,
+            "error": true,
+            "errorText": true,
+            "committedRetained": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-10.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-11",
+          "expected": "Invalid T1/duplicate-key provider data is diagnosed before partial rendering and reaches controlled error state",
+          "checks": {
+            "invalidDiagnosed": true,
+            "invalidError": true,
+            "duplicateDiagnosed": true,
+            "noPartialRows": true,
+            "error": true,
+            "noExtraEvent": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-11.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-12",
+          "expected": "Synthetic composition input suppresses Enter/navigation and interim provider requests; compositionend requests the final query",
+          "checks": {
+            "noInterimRequest": true,
+            "noCommit": true,
+            "queryDraft": true,
+            "finalQuery": true,
+            "oneFinalRequest": true,
+            "ready": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-12.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-13",
+          "expected": "Browser Tab/focus loss closes without commit and removes stale relations; native text editing remains available",
+          "checks": {
+            "closed": true,
+            "noExtraCommit": true,
+            "noDangling": true,
+            "focusMoved": true,
+            "textRetained": true,
+            "clearedLoading": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-13.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-14",
+          "expected": "Held child initialization followed by close/reopen cannot revive old view or break new native route; B stays unchanged",
+          "checks": {
+            "freshEpoch": true,
+            "oldFinal": true,
+            "ready": true,
+            "newRoute": true,
+            "bUnchanged": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-14.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-15",
+          "expected": "Actual malformed child source becomes explicit error relay, closes affected children and exposes accessible status without altering B",
+          "checks": {
+            "closed": true,
+            "status": true,
+            "relay": true,
+            "allChildrenFinal": true,
+            "diagnostic": true,
+            "bUnchanged": true,
+            "noExtraCommit": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-15.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-16",
+          "expected": "A/B overlays follow their own input bottom with 8px gap after input geometry changes; variable rows still reveal active result",
+          "checks": {
+            "aGap": true,
+            "aAlignment": true,
+            "bOwnAnchor": true,
+            "variableRows": true,
+            "actualReveal": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-16.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-17",
+          "expected": "Late provider reply after close/reopen is rejected without state, public-event or status changes",
+          "checks": {
+            "newEpoch": true,
+            "staleIncremented": true,
+            "rowsUnchanged": true,
+            "statusUnchanged": true,
+            "valueUnchanged": true,
+            "noExtraEvent": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-17.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-18",
+          "expected": "Foreign native report is delivered but rejected by explicit instance/epoch guards, leaving actual view and selection unchanged",
+          "checks": {
+            "foreignCount": true,
+            "activeUnchanged": true,
+            "optionsUnchanged": true,
+            "statusUnchanged": true,
+            "eventsUnchanged": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-18.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-19",
+          "expected": "Actual browser AX snapshots reflect loading/error/closed changes without stale active option and distinguish observed AX text from untested speech",
+          "checks": {
+            "loadingActualBusy": true,
+            "errorNotBusy": true,
+            "closedCollapsed": true,
+            "noStaleActiveInLoadingErrorClosed": true,
+            "readyHasActive": true,
+            "loadingText": true,
+            "errorText": true,
+            "closedLoadingCleared": true,
+            "noClosedOptions": true,
+            "noSpeechClaim": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-19.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        },
+        {
+          "id": "BR-20",
+          "expected": "Final original sources unchanged, live/runtime/errors/cancel journals and browser environment captured; no unexpected unhandled errors",
+          "checks": {
+            "sourcesUnchanged": true,
+            "noUnexpectedErrors": true,
+            "allChildrenFinal": true,
+            "onePublicCommit": true,
+            "trustedBrowserKeys": true
+          },
+          "expectationMet": true,
+          "record": "captures/BR-20.json",
+          "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "report-and-release",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "release",
+          "actual": true,
+          "scope": "exact-pinned-bounded-web-reference-only",
+          "productionRelease": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "No full DTCG, CSS, HTML, ARIA or APG validator",
+    "No generic lifecycle resolver",
+    "No native/AT/IME conformance",
+    "Historical browser captures are provenance, not a new run"
+  ],
+  "unverified": [
+    "Full original DTCG/CSS/HTML/ARIA/APG coverage",
+    "Native targets, real IME and screenreader output"
+  ],
+  "release": true,
+  "passedScope": [
+    "Pinned IP-01 static fixture: original CEM/SCXML schema subset, closed T0/T1 values, references, instance projection, dimension aliases and token-CSS links, acyclic static composition",
+    "Exact static baseline -> explicitly pinned research host; no generic host generation, full T0 API/theme/native/AT coverage"
+  ],
+  "checkerHashes": {
+    "browser_gate.py": "099e85c3df5516d1dac1f174a4d626b782adc3f0c27986c9f69344d5402d0472",
+    "check.py": "5bf9233c122edc1802872fc5b357b60e6ce3a7c33b1d2d8be0a666ccae1ebc1c",
+    "css.cjs": "07d73e6442ec344c6711003849bfec197e5199a15326a5fb94fb04447b315205",
+    "package-lock.json": "415149c62f7840de4e6209291dc458b854663b07e74fe29323b4a74b616dfb42",
+    "profile.json": "bfb5802f75536930e6fb8141bcb1be6c6a2916b1699a807cc223350396e2c88e",
+    "requirements.lock.txt": "3eb3b1463f55275ab481fb70e8acef567babc7629de93e3293be3c3aae31eac2",
+    "static_engine.py": "fb8328a8f8b09919ae9a71b1660f6de627233d5267f178b04f01cccd837b4286",
+    "test_chain.py": "32cca2264987f9b1b62c91b8168d293046c74a36756381c1d00998a38e5c5982",
+    "types.cjs": "684efe148ff244fbb551c4a57df473cd2dfec101ea62f69d7d97a31f5ac8bc0b"
+  },
+  "overall": "PASS_LIMITED",
+  "browser": {
+    "status": "PASS",
+    "profileId": "IP01-BOUND-WEB-1",
+    "runId": "42ebe5ce2c085a53d660784379138414",
+    "ageSeconds": 38.21844696998596,
+    "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9",
+    "packageRevision": "dde26ea34c76ffbc4f917bedbe8d527f0e0976b534fc30a7ef236a6d639a9f95",
+    "checkerRevision": "22284499748dc7096f5850895dd0623e59de2da1d0671efab56857a84b02260a",
+    "cases": [
+      {
+        "id": "BR-01",
+        "expected": "Original schemas and exact browser-loaded source/dependency hashes verified for the common closure",
+        "checks": {
+          "allOriginalPreflights": true,
+          "browserHashesVerified": true,
+          "sameSourceRevision": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-01.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-02",
+        "expected": "A/B start closed, named and independent without dangling active descendant or unexpected public event",
+        "checks": {
+          "bothClosed": true,
+          "noEvents": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-02.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-03",
+        "expected": "Browser ArrowDown opens A through real overlay/scroll children; input keeps focus and first enabled result becomes active",
+        "checks": {
+          "ready": true,
+          "focus": true,
+          "first": true,
+          "twoChildren": true,
+          "bClosed": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-03.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-04",
+        "expected": "Navigation skips disabled entries, reaches last result without wrapping, and actually scrolls it into the 160px viewport",
+        "checks": {
+          "last": true,
+          "scrolled": true,
+          "height": true,
+          "visible": true,
+          "noDisabledActive": true,
+          "disabledSkippedInActualMeasurements": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-04.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-05",
+        "expected": "Actual browser AX tree exposes distinct combobox names, expanded relation, active option, polite atomic status and no added container tabstop",
+        "checks": {
+          "twoNamedComboboxes": true,
+          "aExpandedBClosed": true,
+          "activeSelectedActualNode": true,
+          "politeAtomic": true,
+          "statusTextObserved": true,
+          "noContainerTabstop": true,
+          "focus": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-05.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-06",
+        "expected": "Browser Enter emits exactly one declared value-change payload, sets label/key, closes views, clears active relation, keeps input focus and leaves B unchanged",
+        "checks": {
+          "oneEvent": true,
+          "payload": true,
+          "label": true,
+          "closed": true,
+          "focus": true,
+          "noActive": true,
+          "bUnchanged": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-06.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-07",
+        "expected": "Opening and Escape on B produce no extra commit or A mutation; B children are cancelled",
+        "checks": {
+          "bClosed": true,
+          "noExtraCommit": true,
+          "aUnchanged": true,
+          "bChildrenFinal": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-07.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-08",
+        "expected": "Programmatic known value updates label/key without user commit; unknown key rejected",
+        "checks": {
+          "accepted": true,
+          "rejected": true,
+          "label": true,
+          "value": true,
+          "noExtraEvent": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-08.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-09",
+        "expected": "Input creates loading/current request; reverse-order replies only accept newest generation and do not announce stale results",
+        "checks": {
+          "distinctRequests": true,
+          "ready": true,
+          "newQuery": true,
+          "newRows": true,
+          "staleIncremented": true,
+          "statusUnchanged": true,
+          "valueRetained": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-09.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-10",
+        "expected": "Empty and provider failure yield actual empty/error states, no active target, correct busy/status and retained committed value",
+        "checks": {
+          "empty": true,
+          "emptyText": true,
+          "error": true,
+          "errorText": true,
+          "committedRetained": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-10.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-11",
+        "expected": "Invalid T1/duplicate-key provider data is diagnosed before partial rendering and reaches controlled error state",
+        "checks": {
+          "invalidDiagnosed": true,
+          "invalidError": true,
+          "duplicateDiagnosed": true,
+          "noPartialRows": true,
+          "error": true,
+          "noExtraEvent": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-11.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-12",
+        "expected": "Synthetic composition input suppresses Enter/navigation and interim provider requests; compositionend requests the final query",
+        "checks": {
+          "noInterimRequest": true,
+          "noCommit": true,
+          "queryDraft": true,
+          "finalQuery": true,
+          "oneFinalRequest": true,
+          "ready": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-12.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-13",
+        "expected": "Browser Tab/focus loss closes without commit and removes stale relations; native text editing remains available",
+        "checks": {
+          "closed": true,
+          "noExtraCommit": true,
+          "noDangling": true,
+          "focusMoved": true,
+          "textRetained": true,
+          "clearedLoading": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-13.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-14",
+        "expected": "Held child initialization followed by close/reopen cannot revive old view or break new native route; B stays unchanged",
+        "checks": {
+          "freshEpoch": true,
+          "oldFinal": true,
+          "ready": true,
+          "newRoute": true,
+          "bUnchanged": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-14.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-15",
+        "expected": "Actual malformed child source becomes explicit error relay, closes affected children and exposes accessible status without altering B",
+        "checks": {
+          "closed": true,
+          "status": true,
+          "relay": true,
+          "allChildrenFinal": true,
+          "diagnostic": true,
+          "bUnchanged": true,
+          "noExtraCommit": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-15.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-16",
+        "expected": "A/B overlays follow their own input bottom with 8px gap after input geometry changes; variable rows still reveal active result",
+        "checks": {
+          "aGap": true,
+          "aAlignment": true,
+          "bOwnAnchor": true,
+          "variableRows": true,
+          "actualReveal": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-16.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-17",
+        "expected": "Late provider reply after close/reopen is rejected without state, public-event or status changes",
+        "checks": {
+          "newEpoch": true,
+          "staleIncremented": true,
+          "rowsUnchanged": true,
+          "statusUnchanged": true,
+          "valueUnchanged": true,
+          "noExtraEvent": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-17.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-18",
+        "expected": "Foreign native report is delivered but rejected by explicit instance/epoch guards, leaving actual view and selection unchanged",
+        "checks": {
+          "foreignCount": true,
+          "activeUnchanged": true,
+          "optionsUnchanged": true,
+          "statusUnchanged": true,
+          "eventsUnchanged": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-18.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-19",
+        "expected": "Actual browser AX snapshots reflect loading/error/closed changes without stale active option and distinguish observed AX text from untested speech",
+        "checks": {
+          "loadingActualBusy": true,
+          "errorNotBusy": true,
+          "closedCollapsed": true,
+          "noStaleActiveInLoadingErrorClosed": true,
+          "readyHasActive": true,
+          "loadingText": true,
+          "errorText": true,
+          "closedLoadingCleared": true,
+          "noClosedOptions": true,
+          "noSpeechClaim": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-19.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      },
+      {
+        "id": "BR-20",
+        "expected": "Final original sources unchanged, live/runtime/errors/cancel journals and browser environment captured; no unexpected unhandled errors",
+        "checks": {
+          "sourcesUnchanged": true,
+          "noUnexpectedErrors": true,
+          "allChildrenFinal": true,
+          "onePublicCommit": true,
+          "trustedBrowserKeys": true
+        },
+        "expectationMet": true,
+        "record": "captures/BR-20.json",
+        "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+      }
+    ],
+    "rawChecks": {
+      "actualFocusAndNavigation": true,
+      "actualScroll": true,
+      "actualPublicEvent": true,
+      "actualFinalLifecycle": true,
+      "actualTrustedInputJournal": true,
+      "actualEventRetainedExactlyOnce": true
+    },
+    "captureHashes": {
+      "BR-01": "4965a322c46f7505ed76faad2c24222aad098f1af59715601e1b6160f3fa8880",
+      "BR-02": "f4124e74566125c2e8059a3e3ff06acc02aaa226ce5fc614a4289c9021e0b972",
+      "BR-03": "ad6f0d14e7ba12de83284458d59784aec7bbecc2aa3911cb80e0a3fe13f7d648",
+      "BR-04": "28ce27083680f8fdc6b7be0356004d0c722def781e5533f5fb874055982e3328",
+      "BR-05": "0b51b925d144fc850d053d4e553ca9ff3ad8d4cd257caf9891db37fb530bab09",
+      "BR-06": "6879c9c8dc1c4743aabbecd52ff3eb801100eac4c33475d818fe1166ddae3b85",
+      "BR-07": "beee09e32a70cefc75753ffdd3e550557e88956925237167a2624adf3d5b33e8",
+      "BR-08": "cf4a49c2f51b9a69a0cba3127646e0a2ad5e3172fa34460251546f13576cc1b6",
+      "AX-loading": "bd6f4f3e802ba0f14c2c830a0f7ce48ac3e62954fdcbb8a1f581c2fbdeea3f67",
+      "BR-09": "3003eb184d8893f6fb756b2ae8b059c3135c1f55e715227af4e049a4e08c74e9",
+      "BR-10": "f4b2234f3b68b4f8ef76496053e0cac22053a6d4806a852d595e0837bc368091",
+      "AX-error": "b62d42e7bd6285d3adf0fded944dd439d11230c290083111d55470b74861c6f0",
+      "BR-11": "dbdb961b267a03b85d46cba08f85ddbd8c5fd54805130220b832fa88c7f94fcd",
+      "BR-12": "cb2ace777360b89e89a71caf938edf4568f7b0cca87b408c1275d9369b52bac8",
+      "BR-13": "1ced27b89ad9e5653266d1f87ce37135b288c7cd88df15f417e2a3cc7175c134",
+      "AX-closed": "ed6cd671eae78ea5b3eb8fe057948016f3ee5ee2079d37500dacb1dbb36ec0a4",
+      "BR-14": "f9a4697d2453f59b2268207b85eebce4d2e2bd56494121dc30d6ae6ae9351df3",
+      "BR-15": "a2ed55c799316757c1b16efbfac32858e6ced3582ed824ef70118735c9986ebd",
+      "BR-16": "04725df7d71117fdd4f5ac241727dc1ffeb37ba307a5248ae1bcf82eb3f43029",
+      "BR-17": "51de6e5242e20caf06db1ad2c999aa333ec59e24060cd56d4f400481d93ce584",
+      "BR-18": "6c1a8cf86db45e6555ea7f7c172b1fe269b7a0340b41d75a59a02fc8f48895be",
+      "AX-ready": "8664493b59e37e6b1a057075c7d1b63e246c8ab5ba8f4b23d97742be72de166e",
+      "BR-19": "e0e1472c5027a71a4566efccad3c5f637926b0abb89491e9e02fbee5248ba5eb",
+      "BR-20": "daac5a1502698222809fea441dc16464cdc7a1cc6c09283cb3b1b1f4aa4adc0b"
+    },
+    "browserVersion": {
+      "jsVersion": "15.5.35.14",
+      "product": "Chrome/155.0.8311.26",
+      "protocolVersion": "1.3",
+      "revision": "@16c3e55476d3564bea713314b2fff638749ce3e6",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "freshExecutionEvidence": true,
+    "scope": "Exact static baseline -> explicitly pinned research host; no generic host generation, full T0 API/theme/native/AT coverage",
+    "limitations": [
+      "Local collection hashes/challenge establish run binding, not independent cryptographic attestation of a hostile operator.",
+      "No real IME, screenreader or native platform test.",
+      "Only exact pinned static-to-host mapping; no generic generator or all API/theme variants."
+    ]
+  },
+  "releaseScope": "exact-pinned-bounded-web-reference-only",
+  "productionRelease": false,
+  "proof": {
+    "originalChecks": [
+      {
+        "source": "autocomplete.interface",
+        "validator": "original CEM schema",
+        "accepted": true
+      },
+      {
+        "source": "autocomplete.behavior",
+        "validator": "original SCXML XSD",
+        "accepted": true
+      },
+      {
+        "source": "overlay.interface",
+        "validator": "original CEM schema",
+        "accepted": true
+      },
+      {
+        "source": "overlay.behavior",
+        "validator": "original SCXML XSD",
+        "accepted": true
+      },
+      {
+        "source": "scroll-area.interface",
+        "validator": "original CEM schema",
+        "accepted": true
+      },
+      {
+        "source": "scroll-area.behavior",
+        "validator": "original SCXML XSD",
+        "accepted": true
+      }
+    ],
+    "additionalCssSyntax": {
+      "version": "3.2.1",
+      "cases": [
+        {
+          "file": "autocomplete/layout.css",
+          "syntaxParsed": true,
+          "declarations": [
+            {
+              "property": "min-height",
+              "value": "var(--row-height)"
+            },
+            {
+              "property": "flex-shrink",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "file": "overlay/layout.css",
+          "syntaxParsed": true,
+          "declarations": [
+            {
+              "property": "position",
+              "value": "absolute"
+            },
+            {
+              "property": "top",
+              "value": "anchor(bottom)"
+            },
+            {
+              "property": "margin-top",
+              "value": "var(--gap)"
+            }
+          ]
+        },
+        {
+          "file": "scroll-area/layout.css",
+          "syntaxParsed": true,
+          "declarations": [
+            {
+              "property": "max-height",
+              "value": "var(--max-height)"
+            },
+            {
+              "property": "overflow-y",
+              "value": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "visualBindings": [
+      {
+        "relation": "visual.gap",
+        "token": "autocomplete.gap",
+        "value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "cssSource": "overlay.visual",
+        "variable": "--gap",
+        "declaration": {
+          "property": "margin-top",
+          "value": "var(--gap)"
+        }
+      },
+      {
+        "relation": "visual.maxHeight",
+        "token": "autocomplete.maxHeight",
+        "value": {
+          "value": 160,
+          "unit": "px"
+        },
+        "cssSource": "scroll-area.visual",
+        "variable": "--max-height",
+        "declaration": {
+          "property": "max-height",
+          "value": "var(--max-height)"
+        }
+      },
+      {
+        "relation": "visual.rowHeight",
+        "token": "autocomplete.rowHeight",
+        "value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "cssSource": "autocomplete.visual",
+        "variable": "--row-height",
+        "declaration": {
+          "property": "min-height",
+          "value": "var(--row-height)"
+        }
+      }
+    ],
+    "witnesses": [
+      {
+        "relation": "A.input",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "A"
+        ],
+        "part": "input",
+        "hostId": "A-input"
+      },
+      {
+        "relation": "A.list",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "A"
+        ],
+        "part": "list",
+        "hostId": "A-list"
+      },
+      {
+        "relation": "A.option",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "A"
+        ],
+        "part": "option",
+        "hostId": "A-option"
+      },
+      {
+        "relation": "A.status",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "A"
+        ],
+        "part": "status",
+        "hostId": "A-status"
+      },
+      {
+        "relation": "A.overlay",
+        "definition": "reference:Overlay",
+        "instance": [
+          "A",
+          "overlay"
+        ],
+        "part": "surface",
+        "hostId": "A-overlay"
+      },
+      {
+        "relation": "A.viewport",
+        "definition": "reference:ScrollArea",
+        "instance": [
+          "A",
+          "overlay",
+          "scroll"
+        ],
+        "part": "viewport",
+        "hostId": "A-viewport"
+      },
+      {
+        "relation": "B.input",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "B"
+        ],
+        "part": "input",
+        "hostId": "B-input"
+      },
+      {
+        "relation": "B.list",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "B"
+        ],
+        "part": "list",
+        "hostId": "B-list"
+      },
+      {
+        "relation": "B.option",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "B"
+        ],
+        "part": "option",
+        "hostId": "B-option"
+      },
+      {
+        "relation": "B.status",
+        "definition": "reference:Autocomplete",
+        "instance": [
+          "B"
+        ],
+        "part": "status",
+        "hostId": "B-status"
+      },
+      {
+        "relation": "B.overlay",
+        "definition": "reference:Overlay",
+        "instance": [
+          "B",
+          "overlay"
+        ],
+        "part": "surface",
+        "hostId": "B-overlay"
+      },
+      {
+        "relation": "B.viewport",
+        "definition": "reference:ScrollArea",
+        "instance": [
+          "B",
+          "overlay",
+          "scroll"
+        ],
+        "part": "viewport",
+        "hostId": "B-viewport"
+      }
+    ],
+    "types": {
+      "typescript": "5.9.3",
+      "members": {
+        "query": {
+          "kind": "string"
+        },
+        "value": {
+          "kind": "optional",
+          "item": {
+            "kind": "string"
+          }
+        },
+        "results": {
+          "kind": "array",
+          "item": {
+            "kind": "record",
+            "fields": {
+              "key": {
+                "type": {
+                  "kind": "string"
+                },
+                "optional": false
+              },
+              "label": {
+                "type": {
+                  "kind": "string"
+                },
+                "optional": false
+              },
+              "disabled": {
+                "type": {
+                  "kind": "boolean"
+                },
+                "optional": true
+              }
+            }
+          }
+        },
+        "enabled": {
+          "kind": "boolean"
+        },
+        "limit": {
+          "kind": "number"
+        }
+      },
+      "events": {
+        "value-change": {
+          "kind": "event",
+          "payload": {
+            "kind": "record",
+            "fields": {
+              "value": {
+                "type": {
+                  "kind": "string"
+                },
+                "optional": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "visual": {
+      "gap": {
+        "value": 8,
+        "unit": "px"
+      },
+      "maxHeight": {
+        "value": 160,
+        "unit": "px"
+      },
+      "rowHeight": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    "additionalScope": "bounded static resolver/type/default/dimension checks; HTML parsed but no original ARIA validator, DOM runtime, CSS evaluation or AT"
+  },
+  "inputHashes": {
+    "autocomplete/accessibility.html": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578",
+    "autocomplete/behavior.scxml": "0fa5805928e199a794cb5255381e75714ce269ce5e50612aacefb6b595719fef",
+    "autocomplete/interface.json": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+    "autocomplete/layout.css": "0b35c46f2603501adef53c74296809c9dc8e025b1b3e685d6a6db781ed9f4461",
+    "bindings.json": "adfa18cbf98dd2082f1770b5f1a213cb5c087625007398e37c10d77bf8a901de",
+    "host.html": "023ab480139434d95e7da560d65984bc4d55bc0fc8adff8d02830aa819696620",
+    "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "overlay/behavior.scxml": "d4061ec0b448776b9ed366579d8a37c071f5643d5351dcf166bdc4d8a1d4c84f",
+    "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "overlay/layout.css": "2156b889363bbc9efc00dd3c8047f586971e237b832953fd60372fff6ff337a2",
+    "resolved.json": "81aae7e869852f574cf810285da5f6ac560b36adb3fd9c8197207a418d513ef7",
+    "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "scroll-area/behavior.scxml": "0b425a6af643d664fef4854ded068a5a7ec1ded39b163dfa198eaf3a21a8ca1d",
+    "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "scroll-area/layout.css": "ecd9b281b7ea5c03e32b9a2949b187ddfc78669284ff5cb177925ce258a7c1aa",
+    "values.json": "26595bca4e3611b15b138e2ba9486cefeddda59aa5cc8c6eaf5290772fcef5c8",
+    "visual/tokens.json": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412"
+  }
+}

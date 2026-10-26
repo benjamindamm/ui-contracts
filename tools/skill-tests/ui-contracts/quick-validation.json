@@ -1,0 +1,15 @@
+{
+  "validator": "skill-creator quick_validate.py",
+  "checks": [
+    {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/skills/ui-contracts",
+      "exitCode": 0,
+      "stdout": "Skill is valid!\n"
+    },
+    {
+      "path": "/Users/kcnpxcp/.codex/skills/ui-contracts",
+      "exitCode": 0,
+      "stdout": "Skill is valid!\n"
+    }
+  ]
+}

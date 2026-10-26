@@ -1,0 +1,1 @@
+[data-part="option"] { min-height:var(--row-height); height:var(--row-height); box-sizing:border-box; flex-shrink:0; padding:6px 10px; } [data-part="option"][aria-selected="true"] { background:#dceafe; } [data-part="option"][aria-disabled="true"] { color:#777; }

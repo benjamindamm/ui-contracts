@@ -1,0 +1,1 @@
+[data-part="viewport"] { max-height:var(--max-height); overflow-y:auto; } [data-part="list"] { display:flex; flex-direction:column; list-style:none; margin:0; padding:0; }

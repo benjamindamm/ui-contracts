@@ -1,0 +1,1095 @@
+{
+  "kind": "browser-gate-countercases",
+  "browserRunId": "e8d7f7ca6d76afb7cf3be99aec861b65",
+  "newBrowserExecutions": 0,
+  "rawEvidenceUnchanged": true,
+  "notNewCandidateMatrixEvaluations": true,
+  "cases": [
+    {
+      "id": "current-complete",
+      "expected": "PASS_LIMITED",
+      "actual": "PASS_LIMITED",
+      "expectedDiagnostic": null,
+      "diagnostic": null,
+      "release": true,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "PASS"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "checker-file-missing",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "REQUIRED_BROWSER_CHECKER_MISSING",
+      "diagnostic": "REQUIRED_BROWSER_CHECKER_MISSING",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "missing-result",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_RESULT_MISSING",
+      "diagnostic": "BROWSER_RESULT_MISSING",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 2,
+          "status": "NOT_RUN"
+        },
+        {
+          "id": 3,
+          "status": "NOT_RUN"
+        },
+        {
+          "id": 4,
+          "status": "NOT_RUN"
+        },
+        {
+          "id": 5,
+          "status": "NOT_RUN"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "missing-directory",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_RESULT_MISSING",
+      "diagnostic": "BROWSER_RESULT_MISSING",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "historical-captures",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_RESULT_MISSING",
+      "diagnostic": "BROWSER_RESULT_MISSING",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "stale",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_RUN_STALE",
+      "diagnostic": "BROWSER_RUN_STALE",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_RUN_STALE",
+      "diagnostic": "BROWSER_RUN_STALE",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "checker-changed",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_CHECKER_CHANGED",
+      "diagnostic": "BROWSER_CHECKER_CHANGED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "host-revision-changed",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_REVISION_MISMATCH",
+      "diagnostic": "BROWSER_REVISION_MISMATCH",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "request-tamper",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_REQUEST_CHANGED",
+      "diagnostic": "BROWSER_REQUEST_CHANGED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "not-sealed",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_RUN_INCOMPLETE",
+      "diagnostic": "BROWSER_RUN_INCOMPLETE",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "missing-operation",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_EXECUTION_INCOMPLETE_OR_FAILED",
+      "diagnostic": "BROWSER_EXECUTION_INCOMPLETE_OR_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "operation-failed",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_EXECUTION_INCOMPLETE_OR_FAILED",
+      "diagnostic": "BROWSER_EXECUTION_INCOMPLETE_OR_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "operation-script-changed",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_EXECUTION_RECEIPT_CHANGED",
+      "diagnostic": "BROWSER_EXECUTION_RECEIPT_CHANGED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "missing-capture",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_CAPTURE_MISSING",
+      "diagnostic": "BROWSER_CAPTURE_MISSING",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "changed-capture",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_CAPTURE_CHANGED",
+      "diagnostic": "BROWSER_CAPTURE_CHANGED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "foreign-run-capture",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_RUN_MISMATCH",
+      "diagnostic": "BROWSER_RUN_MISMATCH",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "foreign-source-capture",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_REVISION_MISMATCH",
+      "diagnostic": "BROWSER_REVISION_MISMATCH",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "missing-required-case",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_CASES_INCOMPLETE",
+      "diagnostic": "BROWSER_CASES_INCOMPLETE",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "host-source-tamper",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_SOURCE_CHANGED",
+      "diagnostic": "BROWSER_SOURCE_CHANGED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "criteria-tamper",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "BROWSER_CRITERIA_CHANGED",
+      "diagnostic": "BROWSER_CRITERIA_CHANGED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "schema-preflight-missing",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "HOST_SCHEMA_PREFLIGHT_INVALID",
+      "diagnostic": "HOST_SCHEMA_PREFLIGHT_INVALID",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "necessary-expectation-false",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "expectedDiagnostic": "BROWSER_EXPECTATION_FAILED",
+      "diagnostic": "BROWSER_EXPECTATION_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "FAIL"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "assertion-omitted",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "expectedDiagnostic": "BROWSER_EXPECTATION_FAILED",
+      "diagnostic": "BROWSER_EXPECTATION_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "FAIL"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "ax-selected-false",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "expectedDiagnostic": "BROWSER_EXPECTATION_FAILED",
+      "diagnostic": "BROWSER_EXPECTATION_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "FAIL"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "raw-focus-wrong",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "expectedDiagnostic": "BROWSER_RAW_EXPECTATION_FAILED",
+      "diagnostic": "BROWSER_RAW_EXPECTATION_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "FAIL"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "raw-scroll-zero",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "expectedDiagnostic": "BROWSER_RAW_EXPECTATION_FAILED",
+      "diagnostic": "BROWSER_RAW_EXPECTATION_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "FAIL"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "raw-duplicate-event",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "expectedDiagnostic": "BROWSER_RAW_EXPECTATION_FAILED",
+      "diagnostic": "BROWSER_RAW_EXPECTATION_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "FAIL"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "raw-lifecycle-not-final",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "expectedDiagnostic": "BROWSER_RAW_EXPECTATION_FAILED",
+      "diagnostic": "BROWSER_RAW_EXPECTATION_FAILED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "FAIL"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "result-file-ignored",
+      "expected": "PASS_LIMITED",
+      "actual": "PASS_LIMITED",
+      "expectedDiagnostic": null,
+      "diagnostic": null,
+      "release": true,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "PASS"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "different-valid-static-package",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "expectedDiagnostic": "PACKAGE_HOST_MAPPING_UNSUPPORTED",
+      "diagnostic": "PACKAGE_HOST_MAPPING_UNSUPPORTED",
+      "release": false,
+      "expectationMet": true,
+      "stages": [
+        {
+          "id": 1,
+          "status": "PASS"
+        },
+        {
+          "id": 2,
+          "status": "PASS"
+        },
+        {
+          "id": 3,
+          "status": "PASS"
+        },
+        {
+          "id": 4,
+          "status": "PASS"
+        },
+        {
+          "id": 5,
+          "status": "BLOCKED"
+        },
+        {
+          "id": 6,
+          "status": "PASS"
+        }
+      ]
+    }
+  ],
+  "allExpectationsMet": true
+}

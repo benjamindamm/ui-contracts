@@ -1,0 +1,143 @@
+{
+  "runId": "6922c334cc4aa34131d84aa6a88af6b7",
+  "requestSha256": "b25ee38276967b844ba8ba460d4317c9bf7d1d4b669cd4203a0043fd21f6e189",
+  "status": "SEALED",
+  "captures": {
+    "BR-01": {
+      "sha256": "c623914d23b47dcbae9532f808c891ee3a1f22287431f395fdca662cd8e8fb4d",
+      "receivedAt": 1793005518.4557178
+    },
+    "BR-02": {
+      "sha256": "9c9a6e30687b8d4f3bcbfeffb4e590c5d394aaca8c431a48f2651ea686c369cc",
+      "receivedAt": 1793005518.458837
+    },
+    "BR-03": {
+      "sha256": "252cd36239183112df885624096fd0943c61f819e048af7ecdadcf08b5e6e5f6",
+      "receivedAt": 1793005518.775397
+    },
+    "BR-04": {
+      "sha256": "7d5790e179c8cc8c1f2b4a12f2d9f99848427cfdeb3cc583c94d278bae0d01c1",
+      "receivedAt": 1793005519.204496
+    },
+    "BR-05": {
+      "sha256": "1bfba80bc00267f1b6af61d168755cfdd92cf02e2cc363dbe483002d37762a8f",
+      "receivedAt": 1793005519.315186
+    },
+    "BR-06": {
+      "sha256": "942a57753801c9fc8c0569a3e292b66fa236d93d221fd29ddd1df3d330df6305",
+      "receivedAt": 1793005519.472939
+    },
+    "BR-07": {
+      "sha256": "9d992154f5fbcc781448c067f9bc1bf1a29051e635a33a6323b867e197a48d80",
+      "receivedAt": 1793005519.874489
+    },
+    "BR-08": {
+      "sha256": "f5fcba457f7da7951e92acba9ed7fc92e0bbb2d63c1e3b66d5aac3fa2918bbca",
+      "receivedAt": 1793005519.879114
+    },
+    "AX-loading": {
+      "sha256": "675859d88ec43c2dad275ebc67378102d85e9923f1bbba3f28271dea82f97f96",
+      "receivedAt": 1793005520.3282292
+    },
+    "BR-09": {
+      "sha256": "c1dd37f2bfddc9754ed8a1e65b3e45cf4316234ed15b370da510abc4ba7afd3b",
+      "receivedAt": 1793005520.334303
+    },
+    "BR-10": {
+      "sha256": "8a4cf47641ddd90a17f9006786838231757bcdab12c367bde37eaed9f8d07407",
+      "receivedAt": 1793005523.7084858
+    },
+    "AX-error": {
+      "sha256": "f6bc0e1f842f0c04ac2d7c2b5016616670f49f344a375c4c290be1b7649cc337",
+      "receivedAt": 1793005523.8160121
+    },
+    "BR-11": {
+      "sha256": "b78e679b47b0341ebaccce0b2360d35120acaf872f317db199692f99195c54cd",
+      "receivedAt": 1793005524.3415139
+    },
+    "BR-12": {
+      "sha256": "4145ad4cc88418f9ea2187bb70415509cb2fed3423554ed2a23732aba4c9e150",
+      "receivedAt": 1793005524.3590348
+    },
+    "BR-13": {
+      "sha256": "f6332c5ceded61a43eeb84a7c21baa577f38562bfff49a2a6556753d81881854",
+      "receivedAt": 1793005524.507004
+    },
+    "AX-closed": {
+      "sha256": "910a08980185bf5568f310e30dab2acfb70d65faf5ab8193d76d39a2178dd6d3",
+      "receivedAt": 1793005524.61022
+    },
+    "BR-14": {
+      "sha256": "47b9f68fb47287612e8c6eb868cce5686e195d1e2c88dfc1b3297142ca8ae823",
+      "receivedAt": 1793005528.901324
+    },
+    "BR-15": {
+      "sha256": "f0575ca4e3b0dd1e4658280725158dd4dcf8a15ae79cfea12410e3b0e3896395",
+      "receivedAt": 1793005529.204193
+    },
+    "BR-16": {
+      "sha256": "f2c1343f34b28b9a7a8a1fb5eac69a7de5dd7e1bd07a962346fb1e669104243e",
+      "receivedAt": 1793005530.305675
+    },
+    "BR-17": {
+      "sha256": "a40caabc88fcc2481cadc538f32a79c3e8da96b9255b0922f47e9120f2f2e822",
+      "receivedAt": 1793005538.548948
+    },
+    "BR-18": {
+      "sha256": "715fdd0662144fed1f9863d8cddd73bce012697bb2d11fa2a7409e123595fad4",
+      "receivedAt": 1793005538.560766
+    },
+    "AX-ready": {
+      "sha256": "7df2575ae56ec735adbd329e032d99fec6d0bf39b237cd9f09e57f55f17a7bd3",
+      "receivedAt": 1793005538.683407
+    },
+    "BR-19": {
+      "sha256": "1e21f1dd6c6344831b371aebbda2f98d749ec78f73406737e8da35e2188f9db2",
+      "receivedAt": 1793005538.7030551
+    },
+    "BR-20": {
+      "sha256": "2f340ea99e137a142e837a5ec44f00cff3be071a07816c4aef6e304e3499648a",
+      "receivedAt": 1793005538.883274
+    }
+  },
+  "operations": {
+    "01": {
+      "operation": "01",
+      "scriptSha256": "5df99e3078edff93ba486f4eb83caefaf6f30eee4ce4feef737019241246fdc1",
+      "status": "PASS",
+      "error": null,
+      "runId": "6922c334cc4aa34131d84aa6a88af6b7",
+      "challenge": "5bd6ea408dbfbf47eaf5c072e057b8344fee5586ff06c82bb6149625afd639a4",
+      "receivedAt": 1793005520.438373
+    },
+    "02": {
+      "operation": "02",
+      "scriptSha256": "04cbf7d90882531104324ba443f547cf0dae5bd796b9ae983ff8a86d5af561e6",
+      "status": "PASS",
+      "error": null,
+      "runId": "6922c334cc4aa34131d84aa6a88af6b7",
+      "challenge": "5bd6ea408dbfbf47eaf5c072e057b8344fee5586ff06c82bb6149625afd639a4",
+      "receivedAt": 1793005524.705842
+    },
+    "03": {
+      "operation": "03",
+      "scriptSha256": "9f4fb77def9fc789610781f5bbe2daef1c88ea9b991e155a0065eb647900310d",
+      "status": "PASS",
+      "error": null,
+      "runId": "6922c334cc4aa34131d84aa6a88af6b7",
+      "challenge": "5bd6ea408dbfbf47eaf5c072e057b8344fee5586ff06c82bb6149625afd639a4",
+      "receivedAt": 1793005530.456277
+    },
+    "04": {
+      "operation": "04",
+      "scriptSha256": "cd3891bf9275ba32c7e23b9cf142d795f47eff6f121e6fd9d8ce2c19b5a40954",
+      "status": "PASS",
+      "error": null,
+      "runId": "6922c334cc4aa34131d84aa6a88af6b7",
+      "challenge": "5bd6ea408dbfbf47eaf5c072e057b8344fee5586ff06c82bb6149625afd639a4",
+      "receivedAt": 1793005538.990529
+    }
+  },
+  "startedAt": 1793005504.713226,
+  "sealedAt": 1793005539.174813
+}

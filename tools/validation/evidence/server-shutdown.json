@@ -1,0 +1,11 @@
+{
+  "kind": "local-test-servers-shutdown",
+  "requestedPids": [
+    25534,
+    26842,
+    29341
+  ],
+  "timestamp": 1793005986.073316,
+  "currentRun": "e8d7f7ca6d76afb7cf3be99aec861b65",
+  "historicalServerFilesRetainedAsProvenance": true
+}

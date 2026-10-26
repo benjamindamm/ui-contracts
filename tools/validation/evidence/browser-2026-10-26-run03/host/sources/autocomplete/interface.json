@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "autocomplete.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "Autocomplete",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "query",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string | undefined"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "results",
+              "type": {
+                "text": "Array<{ key: string; label: string; disabled?: boolean }>"
+              },
+              "default": "[]"
+            },
+            {
+              "kind": "field",
+              "name": "enabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "limit",
+              "type": {
+                "text": "number"
+              },
+              "default": "7"
+            }
+          ],
+          "events": [
+            {
+              "name": "value-change",
+              "type": {
+                "text": "CustomEvent<{value:string}>"
+              }
+            }
+          ],
+          "cssParts": [
+            {
+              "name": "input"
+            },
+            {
+              "name": "list"
+            },
+            {
+              "name": "option"
+            },
+            {
+              "name": "status"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+[data-part="surface"] { position:absolute; top:anchor(bottom); left:anchor(left); width:anchor-size(width); margin-top:var(--gap); background:white; border:0; box-shadow:0 2px 8px #0003; z-index:10; }

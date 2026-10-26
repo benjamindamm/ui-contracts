@@ -74,3 +74,13 @@ Erster OpenPencil-Umfang: editierbares Design, ausdrücklich keine interaktive C
 - [x] Zwei Builds mit leerem Gesprächskontext und unabhängige Prüfung gegen vorab gespeicherte Kriterien abschließen.
 - [x] [Studie, Originalartefakte und Rohmessungen](docs/research/studies/AC-R01/README.md) sichern: gemessene Paarübereinstimmung, beide FAIL wegen Platzhalterfarbe.
 - [ ] Eine mögliche neue Definitionsversion und Folgestudie separat beschließen; eingefrorene Eingabe und Ausgaben bleiben unverändert.
+
+## Gemeinsame Prüfkette und lokaler Agent-Skill
+
+- [x] Vorhandene Original- und Zusatzprüfer für das ausgewählte IP-01-Profil [inventarisieren](tools/validation/inventory.json).
+- [x] Reproduzierbaren statischen Prüfeinstieg mit Originalschema-, Typ-/Referenz-/Einheiten-/Event-/Instanz- und statischer Kompositionsprüfung bereitstellen; positive und negative Fälle einschließlich fehlender Prüfer ausführen.
+- [x] Freigabegrenze erhalten: statisch `PASS_LIMITED`/`release:false`; Web ohne aktuellen Lauf `BLOCKED`; mit aktuellem bestandenem Lauf nur begrenzte Freigabe für die exakte Forschungsreferenz, keine Produktionsfreigabe.
+- [x] Aktuellen Browserprüfer mit fester Quellen-/Hostbindung integrieren und alle 20 bestehenden Events-/Fokus-/Scroll-/AX-/Lifecyclefälle neu ausführen; 31 zusätzliche Browser-Gegenfälle und 47 Regressionen bestehen. Alte/fremde/fehlende Ergebnisse blockieren.
+- [x] [Agent-Skill `$ui-contracts`](docs/skills/README.md) mit Projektquelle und lokaler Installation erstellen; Strukturprüfung und 18 echte Funktionsfälle bestanden. Neue/geänderte Komponenten können keine feste Webreferenzfreigabe übernehmen. Keine Veröffentlichung.
+
+[Prüfkette: Einstieg und belegter Umfang](docs/validation/README.md). Eigener Werkzeugblock, keine Erweiterung der ursprünglichen Kandidatenmatrixzähler.

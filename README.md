@@ -113,6 +113,8 @@ Die vollständige Recherche liegt in **[`docs/research/`](docs/research/)**. Akt
 | Aussagen und Originalquellen nachvollziehen | [Befunde](docs/research/CLAIMS.md) · [Quellenregister](docs/research/SOURCES.md) |
 | Berichte, Versuche und Rohresultate finden | [Dokumentenindex](docs/research/DOCUMENT-INDEX.md) · [Experimentindex](docs/research/experiments/INDEX.md) |
 | Mit einem Coding-Agenten weiterarbeiten | [Umsetzungsübergabe](docs/research/IMPLEMENTATION-HANDOFF.md) · [Aufgaben](TASKS.md) |
+| Definitionen schrittweise prüfen | [Gemeinsame Prüfkette und ihre aktuellen Grenzen](docs/validation/README.md) |
+| Mit dem lokalen Contract-Skill arbeiten | [Skill und geprüfter Umfang](docs/skills/README.md) |
 | Frühere Entscheidungen und Zwischenstände lesen | [Originalkontext](docs/research/CONTEXT.md) · [Vollständiges README-Archiv](docs/research/archive/README-RESEARCH-ARCHIVE.md) |
 
 ## Weiterarbeit

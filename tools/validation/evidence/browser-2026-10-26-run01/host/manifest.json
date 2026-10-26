@@ -1,0 +1,30 @@
+{
+  "kind": "current-bounded-browser-closure",
+  "files": {
+    "host.js": "c6a551480f9abc1029b53bda4ce703e68d8e121332125d893c649e357f6122bf",
+    "index.html": "c77b139f6a955244dccb2784b1a625c28238dd98f44b7ec911202193383e19e9",
+    "interface-types.json": "dd0d867f8f08847c14b4b996df210c6f4ade0e03588ac2cce90aca6803b92db2",
+    "sources/autocomplete/accessibility.html": "c0d223b3fec713ed47cd7f40e4c5d92a63374aaac5d4f20535d183d2d485e578",
+    "sources/autocomplete/behavior.scxml": "c180fbd3e53aba40e27b67cc5c84bb4fea699046483c3b6324f7ab6541152b74",
+    "sources/autocomplete/interface.json": "49fc9965fb9f969ca97749bac601acdf4e70dabc2eabf16c5ee38636159c305f",
+    "sources/autocomplete/layout.css": "e4652e9e69eebdff82b8c42f140ba005042748e0374c2e76fd20b8156b1c8b3b",
+    "sources/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+    "sources/overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "sources/overlay/behavior.scxml": "6130e6edd034c4fbbd1bfe94237780ecfbd9fd6731880b2137089fe449f7f8ef",
+    "sources/overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "sources/overlay/layout.css": "7451167a7146c4033fe7d9cc8a257baa7b2f55f56da4de607b6a4aaaaae1b2ae",
+    "sources/scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "sources/scroll-area/behavior.scxml": "206f9020a1ba41cb0af096f2f1aac5fbba94f92d81b58089cc32f148f785810f",
+    "sources/scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "sources/scroll-area/layout.css": "4df6a520892e52b6e511b306b42ea8f117491b6e351fa9a6bc842172119afb54",
+    "sources/visual/tokens.json": "24806f2deee0b1ec32bc873d5c01ad9bca0a3a5f3e39d6e0fd1107e972097412",
+    "vendor/polyfill.js": "0cfe60c763e1913c287406bb509ffcfe9959794334cfc6c2b9c1c6e97cfc7e4e",
+    "vendor/scxml.js": "4349aea0b05f9d6860d70445186e63928a809ce6c032c6ed584a1eb657e3fcc2"
+  },
+  "revision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9",
+  "runId": "42ebe5ce2c085a53d660784379138414",
+  "challenge": "97a3941b51f0ebf77ef1205dc54f40523fb9124a68537651c5b2811d640d22d9",
+  "originalRuntime": "@scion-scxml/scxml 4.3.28",
+  "ownAdapter": true,
+  "productFormatSelected": false
+}

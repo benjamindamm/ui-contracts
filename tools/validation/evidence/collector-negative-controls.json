@@ -1,0 +1,10 @@
+{
+  "page": 305,
+  "value": {
+    "duplicateCaptureStatus": 400,
+    "expectationMet": true,
+    "kind": "live-collector-negative-controls",
+    "runId": "e8d7f7ca6d76afb7cf3be99aec861b65",
+    "wrongChallengeStatus": 400
+  }
+}

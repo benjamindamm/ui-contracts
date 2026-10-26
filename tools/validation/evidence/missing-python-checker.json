@@ -1,0 +1,92 @@
+{
+  "kind": "bounded-ip01-validation",
+  "reportVersion": "0.2.0",
+  "profile": "IP01-STATIC-BOUNDARY-1",
+  "profileSha256": "70c2b3ccdeeccdb19aa0f7a1a58ca7c1b4ee010c403c8f805557f008512208da",
+  "scope": "web",
+  "package": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/experiments/2026-10-25/ip01-static/reference",
+  "createdAt": "2026-10-26T09:12:35.785277+00:00",
+  "python": "3.9.6",
+  "stages": [
+    {
+      "id": 1,
+      "name": "profile-and-required-tools",
+      "status": "BLOCKED",
+      "checks": [],
+      "diagnostic": {
+        "code": "REQUIRED_CHECKER_MISSING",
+        "detail": "lxml"
+      }
+    },
+    {
+      "id": 2,
+      "name": "syntax-and-original-schemas",
+      "status": "NOT_RUN",
+      "checks": [],
+      "reason": "blocked-by-prerequisite"
+    },
+    {
+      "id": 3,
+      "name": "references-types-units-events-instances",
+      "status": "NOT_RUN",
+      "checks": [],
+      "reason": "blocked-by-prerequisite"
+    },
+    {
+      "id": 4,
+      "name": "ownership-composition-static",
+      "status": "NOT_RUN",
+      "checks": [],
+      "reason": "blocked-by-prerequisite"
+    },
+    {
+      "id": 5,
+      "name": "live-behavior-events-focus-scroll-ax",
+      "status": "NOT_RUN",
+      "checks": [],
+      "reason": "blocked-by-prerequisite"
+    },
+    {
+      "id": 6,
+      "name": "report-and-release",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "release",
+          "actual": false,
+          "scope": "no-web-release",
+          "productionRelease": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "No full DTCG, CSS, HTML, ARIA or APG validator",
+    "No generic lifecycle resolver",
+    "Live browser evidence is a separate required gate in web scope",
+    "No native/AT/IME conformance",
+    "Historical browser captures are provenance, not a new run"
+  ],
+  "unverified": [
+    "Live lifecycle, events, focus, scrolling and browser AX",
+    "Full original DTCG/CSS/HTML/ARIA/APG coverage",
+    "Native targets, real IME and screenreader output"
+  ],
+  "release": false,
+  "passedScope": [],
+  "checkerHashes": {
+    "browser_gate.py": "85878b133fe52bfcde8a18d75cc47c7e3a8304884f6f265f2c331f76f0996329",
+    "check.py": "88e1627064518e31bf6efb4d9568dc081789a7701b2aa03e342c85fece11fd9e",
+    "css.cjs": "07d73e6442ec344c6711003849bfec197e5199a15326a5fb94fb04447b315205",
+    "package-lock.json": "415149c62f7840de4e6209291dc458b854663b07e74fe29323b4a74b616dfb42",
+    "profile.json": "70c2b3ccdeeccdb19aa0f7a1a58ca7c1b4ee010c403c8f805557f008512208da",
+    "requirements.lock.txt": "3eb3b1463f55275ab481fb70e8acef567babc7629de93e3293be3c3aae31eac2",
+    "static_engine.py": "fb8328a8f8b09919ae9a71b1660f6de627233d5267f178b04f01cccd837b4286",
+    "test_browser_gate.py": "c6de472d8370b9f2889b0ad412ef65a603a8fc55892bb5a8b896622e969c4b2e",
+    "test_chain.py": "32cca2264987f9b1b62c91b8168d293046c74a36756381c1d00998a38e5c5982",
+    "types.cjs": "684efe148ff244fbb551c4a57df473cd2dfec101ea62f69d7d97a31f5ac8bc0b"
+  },
+  "overall": "BLOCKED",
+  "proof": {},
+  "inputHashes": {}
+}

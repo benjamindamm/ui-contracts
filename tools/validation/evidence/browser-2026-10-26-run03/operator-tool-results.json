@@ -1,0 +1,210 @@
+{
+  "tool": "BrowserOS neo run",
+  "operations": [
+    {
+      "part": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "ok\nreturn: {\n  \"completed\": \"BR-01 through BR-09\",\n  \"snapshot\": {\n    \"refs\": [\n      {\n        \"backendNodeId\": 94,\n        \"name\": \"Suche A\",\n        \"nth\": 0,\n        \"ref\": \"e1\",\n        \"role\": \"combobox\"\n      },\n      {\n        \"backendNodeId\": 189,\n        \"name\": \"Suche A\",\n        \"nth\": 0,\n        \"ref\": \"e4\",\n        \"role\": \"listbox\"\n      },\n      {\n        \"backendNodeId\": 192,\n        \"name\": \"Neu Eins\",\n        \"nth\": 0,\n        \"ref\": \"e5\",\n        \"role\": \"option\"\n      },\n      {\n        \"backendNodeId\": 193,\n        \"name\": \"Neu Zwei\",\n        \"nth\": 0,\n        \"ref\": \"e6\",\n        \"role\": \"option\"\n      },\n      {\n        \"backendNodeId\": 105,\n        \"name\": \"Suche B\",\n        \"nth\": 0,\n        \"ref\": \"e2\",\n        \"role\": \"combobox\"\n      },\n      {\n        \"backendNodeId\": 46,\n        \"name\": \"Außerhalb der Suche\",\n        \"nth\": 0,\n        \"ref\": \"e3\",\n        \"role\": \"button\"\n      }\n    ],\n    \"text\": \"- heading \\\"UI Contracts\\\" [level=1]\\n- paragraph\\n- main\\n  - heading \\\"Suche A\\\" [level=2]\\n  - LabelText\\n  - combobox \\\"Suche A\\\" [expanded] [ref=e1]: \\\"new\\\"\\n  - status\\n  - listbox \\\"Suche A\\\" [ref=e4]\\n    - option \\\"Neu Eins\\\" [ref=e5]\\n    - option \\\"Neu Zwei\\\" [ref=e6]\\n  - heading \\\"Suche B\\\" [level=2]\\n  - LabelText\\n  - combobox \\\"Suche B\\\" [collapsed] [ref=e2]\\n  - status\\n- button \\\"Außerhalb der Suche\\\" [ref=e3]\",\n    \"url\": \"http://127.0.0.1:55570/\"\n  }\n}"
+          }
+        ],
+        "structuredContent": {
+          "logs": [],
+          "ok": true,
+          "value": {
+            "completed": "BR-01 through BR-09",
+            "snapshot": {
+              "refs": [
+                {
+                  "backendNodeId": 94,
+                  "name": "Suche A",
+                  "nth": 0,
+                  "ref": "e1",
+                  "role": "combobox"
+                },
+                {
+                  "backendNodeId": 189,
+                  "name": "Suche A",
+                  "nth": 0,
+                  "ref": "e4",
+                  "role": "listbox"
+                },
+                {
+                  "backendNodeId": 192,
+                  "name": "Neu Eins",
+                  "nth": 0,
+                  "ref": "e5",
+                  "role": "option"
+                },
+                {
+                  "backendNodeId": 193,
+                  "name": "Neu Zwei",
+                  "nth": 0,
+                  "ref": "e6",
+                  "role": "option"
+                },
+                {
+                  "backendNodeId": 105,
+                  "name": "Suche B",
+                  "nth": 0,
+                  "ref": "e2",
+                  "role": "combobox"
+                },
+                {
+                  "backendNodeId": 46,
+                  "name": "Außerhalb der Suche",
+                  "nth": 0,
+                  "ref": "e3",
+                  "role": "button"
+                }
+              ],
+              "text": "- heading \"UI Contracts\" [level=1]\n- paragraph\n- main\n  - heading \"Suche A\" [level=2]\n  - LabelText\n  - combobox \"Suche A\" [expanded] [ref=e1]: \"new\"\n  - status\n  - listbox \"Suche A\" [ref=e4]\n    - option \"Neu Eins\" [ref=e5]\n    - option \"Neu Zwei\" [ref=e6]\n  - heading \"Suche B\" [level=2]\n  - LabelText\n  - combobox \"Suche B\" [collapsed] [ref=e2]\n  - status\n- button \"Außerhalb der Suche\" [ref=e3]",
+              "url": "http://127.0.0.1:55570/"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "part": 2,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "ok\nreturn: {\n  \"completed\": \"BR-10 through BR-13\",\n  \"snapshot\": {\n    \"refs\": [\n      {\n        \"backendNodeId\": 94,\n        \"name\": \"Suche A\",\n        \"nth\": 0,\n        \"ref\": \"e1\",\n        \"role\": \"combobox\"\n      },\n      {\n        \"backendNodeId\": 105,\n        \"name\": \"Suche B\",\n        \"nth\": 0,\n        \"ref\": \"e2\",\n        \"role\": \"combobox\"\n      },\n      {\n        \"backendNodeId\": 46,\n        \"name\": \"Außerhalb der Suche\",\n        \"nth\": 0,\n        \"ref\": \"e3\",\n        \"role\": \"button\"\n      }\n    ],\n    \"text\": \"- heading \\\"UI Contracts\\\" [level=1]\\n- paragraph\\n- main\\n  - heading \\\"Suche A\\\" [level=2]\\n  - LabelText\\n  - combobox \\\"Suche A\\\" [collapsed] [ref=e1]: \\\"漢字\\\"\\n  - status\\n  - heading \\\"Suche B\\\" [level=2]\\n  - LabelText\\n  - combobox \\\"Suche B\\\" [collapsed] [ref=e2]\\n  - status\\n- button \\\"Außerhalb der Suche\\\" [ref=e3]\",\n    \"url\": \"http://127.0.0.1:55570/\"\n  }\n}"
+          }
+        ],
+        "structuredContent": {
+          "logs": [],
+          "ok": true,
+          "value": {
+            "completed": "BR-10 through BR-13",
+            "snapshot": {
+              "refs": [
+                {
+                  "backendNodeId": 94,
+                  "name": "Suche A",
+                  "nth": 0,
+                  "ref": "e1",
+                  "role": "combobox"
+                },
+                {
+                  "backendNodeId": 105,
+                  "name": "Suche B",
+                  "nth": 0,
+                  "ref": "e2",
+                  "role": "combobox"
+                },
+                {
+                  "backendNodeId": 46,
+                  "name": "Außerhalb der Suche",
+                  "nth": 0,
+                  "ref": "e3",
+                  "role": "button"
+                }
+              ],
+              "text": "- heading \"UI Contracts\" [level=1]\n- paragraph\n- main\n  - heading \"Suche A\" [level=2]\n  - LabelText\n  - combobox \"Suche A\" [collapsed] [ref=e1]: \"漢字\"\n  - status\n  - heading \"Suche B\" [level=2]\n  - LabelText\n  - combobox \"Suche B\" [collapsed] [ref=e2]\n  - status\n- button \"Außerhalb der Suche\" [ref=e3]",
+              "url": "http://127.0.0.1:55570/"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "part": 3,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "ok\nreturn: {\n  \"completed\": \"BR-14 through BR-16\",\n  \"snapshot\": {\n    \"refs\": [\n      {\n        \"backendNodeId\": 94,\n        \"name\": \"Suche A\",\n        \"nth\": 0,\n        \"ref\": \"e1\",\n        \"role\": \"combobox\"\n      },\n      {\n        \"backendNodeId\": 105,\n        \"name\": \"Suche B\",\n        \"nth\": 0,\n        \"ref\": \"e2\",\n        \"role\": \"combobox\"\n      },\n      {\n        \"backendNodeId\": 46,\n        \"name\": \"Außerhalb der Suche\",\n        \"nth\": 0,\n        \"ref\": \"e3\",\n        \"role\": \"button\"\n      }\n    ],\n    \"text\": \"- heading \\\"UI Contracts\\\" [level=1]\\n- paragraph\\n- main\\n  - heading \\\"Suche A\\\" [level=2]\\n  - LabelText\\n  - combobox \\\"Suche A\\\" [collapsed] [ref=e1]: \\\"漢字\\\"\\n  - status\\n  - heading \\\"Suche B\\\" [level=2]\\n  - LabelText\\n  - combobox \\\"Suche B\\\" [collapsed] [ref=e2]\\n  - status\\n- button \\\"Außerhalb der Suche\\\" [ref=e3]\",\n    \"url\": \"http://127.0.0.1:55570/\"\n  }\n}"
+          }
+        ],
+        "structuredContent": {
+          "logs": [],
+          "ok": true,
+          "value": {
+            "completed": "BR-14 through BR-16",
+            "snapshot": {
+              "refs": [
+                {
+                  "backendNodeId": 94,
+                  "name": "Suche A",
+                  "nth": 0,
+                  "ref": "e1",
+                  "role": "combobox"
+                },
+                {
+                  "backendNodeId": 105,
+                  "name": "Suche B",
+                  "nth": 0,
+                  "ref": "e2",
+                  "role": "combobox"
+                },
+                {
+                  "backendNodeId": 46,
+                  "name": "Außerhalb der Suche",
+                  "nth": 0,
+                  "ref": "e3",
+                  "role": "button"
+                }
+              ],
+              "text": "- heading \"UI Contracts\" [level=1]\n- paragraph\n- main\n  - heading \"Suche A\" [level=2]\n  - LabelText\n  - combobox \"Suche A\" [collapsed] [ref=e1]: \"漢字\"\n  - status\n  - heading \"Suche B\" [level=2]\n  - LabelText\n  - combobox \"Suche B\" [collapsed] [ref=e2]\n  - status\n- button \"Außerhalb der Suche\" [ref=e3]",
+              "url": "http://127.0.0.1:55570/"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "part": 4,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "ok\nreturn: {\n  \"completed\": \"BR-17 through BR-20\",\n  \"snapshot\": {\n    \"refs\": [\n      {\n        \"backendNodeId\": 94,\n        \"name\": \"Suche A\",\n        \"nth\": 0,\n        \"ref\": \"e1\",\n        \"role\": \"combobox\"\n      },\n      {\n        \"backendNodeId\": 105,\n        \"name\": \"Suche B\",\n        \"nth\": 0,\n        \"ref\": \"e2\",\n        \"role\": \"combobox\"\n      },\n      {\n        \"backendNodeId\": 46,\n        \"name\": \"Außerhalb der Suche\",\n        \"nth\": 0,\n        \"ref\": \"e3\",\n        \"role\": \"button\"\n      }\n    ],\n    \"text\": \"- heading \\\"UI Contracts\\\" [level=1]\\n- paragraph\\n- main\\n  - heading \\\"Suche A\\\" [level=2]\\n  - LabelText\\n  - combobox \\\"Suche A\\\" [collapsed] [ref=e1]: \\\"late\\\"\\n  - status\\n  - heading \\\"Suche B\\\" [level=2]\\n  - LabelText\\n  - combobox \\\"Suche B\\\" [collapsed] [ref=e2]\\n  - status\\n- button \\\"Außerhalb der Suche\\\" [ref=e3]\",\n    \"url\": \"http://127.0.0.1:55570/\"\n  }\n}"
+          }
+        ],
+        "structuredContent": {
+          "logs": [],
+          "ok": true,
+          "value": {
+            "completed": "BR-17 through BR-20",
+            "snapshot": {
+              "refs": [
+                {
+                  "backendNodeId": 94,
+                  "name": "Suche A",
+                  "nth": 0,
+                  "ref": "e1",
+                  "role": "combobox"
+                },
+                {
+                  "backendNodeId": 105,
+                  "name": "Suche B",
+                  "nth": 0,
+                  "ref": "e2",
+                  "role": "combobox"
+                },
+                {
+                  "backendNodeId": 46,
+                  "name": "Außerhalb der Suche",
+                  "nth": 0,
+                  "ref": "e3",
+                  "role": "button"
+                }
+              ],
+              "text": "- heading \"UI Contracts\" [level=1]\n- paragraph\n- main\n  - heading \"Suche A\" [level=2]\n  - LabelText\n  - combobox \"Suche A\" [collapsed] [ref=e1]: \"late\"\n  - status\n  - heading \"Suche B\" [level=2]\n  - LabelText\n  - combobox \"Suche B\" [collapsed] [ref=e2]\n  - status\n- button \"Außerhalb der Suche\" [ref=e3]",
+              "url": "http://127.0.0.1:55570/"
+            }
+          }
+        },
+        "isError": false
+      }
+    }
+  ]
+}

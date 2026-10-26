@@ -1,0 +1,172 @@
+{
+  "id": "IP01-STATIC-BOUNDARY-1",
+  "version": "0.1.0",
+  "sourceFixture": "docs/research/experiments/2026-10-25/ip01-static/reference",
+  "formats": {
+    "cem": "2.1.0",
+    "scxml": "1.0",
+    "html": "html-host-fixture",
+    "css": "pinned-partial-web-css",
+    "dtcg": "2025.10"
+  },
+  "sources": {
+    "autocomplete.interface": {
+      "definition": "reference:Autocomplete",
+      "domain": "interface",
+      "format": "cem",
+      "formatVersion": "2.1.0",
+      "path": "autocomplete/interface.json"
+    },
+    "autocomplete.behavior": {
+      "definition": "reference:Autocomplete",
+      "domain": "behavior",
+      "format": "scxml",
+      "formatVersion": "1.0",
+      "path": "autocomplete/behavior.scxml"
+    },
+    "autocomplete.accessibility": {
+      "definition": "reference:Autocomplete",
+      "domain": "accessibility",
+      "format": "html",
+      "formatVersion": "html-host-fixture",
+      "path": "autocomplete/accessibility.html"
+    },
+    "autocomplete.visual": {
+      "definition": "reference:Autocomplete",
+      "domain": "visual",
+      "format": "css",
+      "formatVersion": "pinned-partial-web-css",
+      "path": "autocomplete/layout.css"
+    },
+    "overlay.interface": {
+      "definition": "reference:Overlay",
+      "domain": "interface",
+      "format": "cem",
+      "formatVersion": "2.1.0",
+      "path": "overlay/interface.json"
+    },
+    "overlay.behavior": {
+      "definition": "reference:Overlay",
+      "domain": "behavior",
+      "format": "scxml",
+      "formatVersion": "1.0",
+      "path": "overlay/behavior.scxml"
+    },
+    "overlay.accessibility": {
+      "definition": "reference:Overlay",
+      "domain": "accessibility",
+      "format": "html",
+      "formatVersion": "html-host-fixture",
+      "path": "overlay/accessibility.html"
+    },
+    "overlay.visual": {
+      "definition": "reference:Overlay",
+      "domain": "visual",
+      "format": "css",
+      "formatVersion": "pinned-partial-web-css",
+      "path": "overlay/layout.css"
+    },
+    "scroll-area.interface": {
+      "definition": "reference:ScrollArea",
+      "domain": "interface",
+      "format": "cem",
+      "formatVersion": "2.1.0",
+      "path": "scroll-area/interface.json"
+    },
+    "scroll-area.behavior": {
+      "definition": "reference:ScrollArea",
+      "domain": "behavior",
+      "format": "scxml",
+      "formatVersion": "1.0",
+      "path": "scroll-area/behavior.scxml"
+    },
+    "scroll-area.accessibility": {
+      "definition": "reference:ScrollArea",
+      "domain": "accessibility",
+      "format": "html",
+      "formatVersion": "html-host-fixture",
+      "path": "scroll-area/accessibility.html"
+    },
+    "scroll-area.visual": {
+      "definition": "reference:ScrollArea",
+      "domain": "visual",
+      "format": "css",
+      "formatVersion": "pinned-partial-web-css",
+      "path": "scroll-area/layout.css"
+    },
+    "tokens": {
+      "definition": null,
+      "domain": "visual",
+      "format": "dtcg",
+      "formatVersion": "2025.10",
+      "path": "visual/tokens.json"
+    }
+  },
+  "requiredRelations": [
+    "A.input",
+    "A.list",
+    "A.option",
+    "A.status",
+    "A.overlay",
+    "A.viewport",
+    "B.input",
+    "B.list",
+    "B.option",
+    "B.status",
+    "B.overlay",
+    "B.viewport",
+    "event.value",
+    "visual.gap",
+    "visual.maxHeight",
+    "visual.rowHeight"
+  ],
+  "definitionIds": [
+    "reference:Autocomplete",
+    "reference:Overlay",
+    "reference:ScrollArea"
+  ],
+  "targetIds": [
+    "autocomplete.input",
+    "autocomplete.list",
+    "autocomplete.option",
+    "autocomplete.status",
+    "overlay.surface",
+    "overlay.content",
+    "scroll-area.viewport",
+    "scroll-area.content"
+  ],
+  "limits": [
+    "No full DTCG, CSS, HTML, ARIA or APG validator",
+    "No generic lifecycle resolver",
+    "Live browser evidence is a separate required gate in web scope",
+    "No native/AT/IME conformance",
+    "Historical browser captures are provenance, not a new run"
+  ],
+  "relationKinds": {
+    "A.input": "host-part",
+    "A.list": "host-part",
+    "A.option": "host-part",
+    "A.status": "host-part",
+    "A.overlay": "host-part",
+    "A.viewport": "host-part",
+    "B.input": "host-part",
+    "B.list": "host-part",
+    "B.option": "host-part",
+    "B.status": "host-part",
+    "B.overlay": "host-part",
+    "B.viewport": "host-part",
+    "event.value": "event-type",
+    "visual.gap": "token-css",
+    "visual.maxHeight": "token-css",
+    "visual.rowHeight": "token-css"
+  },
+  "eventContracts": {
+    "event.value": {
+      "event": "value-change",
+      "field": "value",
+      "interfaceSource": "autocomplete.interface",
+      "behaviorSource": "autocomplete.behavior",
+      "locator": "//s:send[@event='value-change']/s:param[@name='value']"
+    }
+  }
+}

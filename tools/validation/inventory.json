@@ -1,0 +1,130 @@
+{
+  "kind": "validator-inventory",
+  "date": "2026-10-26",
+  "scope": "selected IP-01 web reference; not inventory of all candidate products",
+  "originalProvenance": "schemas/provenance.json",
+  "validators": [
+    {
+      "id": "cem-original",
+      "standard": "CEM 2.1.0",
+      "kind": "original-schema",
+      "engine": "jsonschema 4.25.1 / Draft 7",
+      "entry": "schemas/cem.schema.json",
+      "requiredFor": [
+        "static",
+        "web"
+      ],
+      "status": "implemented",
+      "limit": "Original shape acceptance is not complete CEM event/reference/type semantics"
+    },
+    {
+      "id": "scxml-original",
+      "standard": "SCXML 1.0 loose XSD",
+      "kind": "original-schema",
+      "engine": "lxml 6.0.2 / libxml2 XSD 1.0",
+      "entry": "schemas/scxml/scxml.xsd",
+      "requiredFor": [
+        "static",
+        "web"
+      ],
+      "status": "implemented",
+      "limit": "Not strict XSD 1.1 or complete Recommendation semantics"
+    },
+    {
+      "id": "typescript-types",
+      "standard": "CEM type.text bounded T0/T1",
+      "kind": "original-parser-plus-own-interpretation",
+      "engine": "TypeScript 5.9.3",
+      "entry": "types.cjs",
+      "requiredFor": [
+        "static",
+        "web"
+      ],
+      "status": "implemented",
+      "limit": "Only closed supported AST shapes and tested CustomEvent value payload"
+    },
+    {
+      "id": "css-syntax",
+      "standard": "pinned partial web CSS",
+      "kind": "additional-parser",
+      "engine": "css-tree 3.2.1",
+      "entry": "css.cjs",
+      "requiredFor": [
+        "static",
+        "web"
+      ],
+      "status": "implemented",
+      "limit": "Syntax/declarations, no native layout or full property grammar"
+    },
+    {
+      "id": "dtcg-dimensions",
+      "standard": "DTCG 2025.10 dimension subset",
+      "kind": "own-bounded-check",
+      "entry": "static_engine.py",
+      "requiredFor": [
+        "static",
+        "web"
+      ],
+      "status": "implemented",
+      "limit": "px/rem dimensions and curly aliases; no full original DTCG schema"
+    },
+    {
+      "id": "html-aria-bindings",
+      "standard": "HTML host / selected WAI-ARIA relations",
+      "kind": "own-bounded-check",
+      "entry": "static_engine.py",
+      "requiredFor": [
+        "static",
+        "web"
+      ],
+      "status": "implemented",
+      "limit": "Parsed host parts, roles and instance controls; no full ARIA/APG, HTML conformance or screenreader"
+    },
+    {
+      "id": "binding-and-ownership",
+      "standard": "own IP-01 static fixture 0.1-research",
+      "kind": "own-bounded-check",
+      "entry": "static_engine.py",
+      "requiredFor": [
+        "static",
+        "web"
+      ],
+      "status": "implemented",
+      "limit": "Pinned sources/relations/policy; acyclic use tree, no generic runtime resolver"
+    },
+    {
+      "id": "scion-runtime",
+      "standard": "SCXML ECMAScript runtime",
+      "kind": "original-runtime-plus-own-adapter",
+      "engine": "@scion-scxml/scxml 4.3.28",
+      "historicalEvidence": "../../docs/research/experiments/2026-10-25/ip01-browser/REPORT.md",
+      "requiredFor": [
+        "web"
+      ],
+      "status": "executed-in-current-bound-browser-host",
+      "limit": "Exact pinned host, explicit own invoker/error-relay; no generic runtime resolver",
+      "entry": "browser_gate.py"
+    },
+    {
+      "id": "live-browser",
+      "standard": "selected event/focus/scroll/Chromium-AX/lifecycle cases",
+      "kind": "own-execution-adapter",
+      "requiredFor": [
+        "web"
+      ],
+      "status": "integrated-requires-explicit-fresh-run",
+      "historicalEvidence": "../../docs/research/experiments/2026-10-25/ip01-browser/REPORT.md",
+      "limit": "Fresh run and exact package/host/checker binding required; old captures block; no AT/native/real IME",
+      "entry": "browser_gate.py"
+    }
+  ],
+  "fullOriginalValidatorsNotEstablished": [
+    "DTCG entire format",
+    "HTML full conformance",
+    "all CSS modules",
+    "WAI-ARIA logical behavior",
+    "APG and assistive technology"
+  ],
+  "historicalCounterexamplesPreserved": true,
+  "currentBrowserEvidence": "evidence/web-current.json"
+}

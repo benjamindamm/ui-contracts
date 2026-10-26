@@ -1,0 +1,154 @@
+{
+  "BR-01": [
+    "allOriginalPreflights",
+    "browserHashesVerified",
+    "sameSourceRevision"
+  ],
+  "BR-02": [
+    "bothClosed",
+    "noEvents"
+  ],
+  "BR-03": [
+    "bClosed",
+    "first",
+    "focus",
+    "ready",
+    "twoChildren"
+  ],
+  "BR-04": [
+    "disabledSkippedInActualMeasurements",
+    "height",
+    "last",
+    "noDisabledActive",
+    "scrolled",
+    "visible"
+  ],
+  "BR-05": [
+    "aExpandedBClosed",
+    "activeSelectedActualNode",
+    "focus",
+    "noContainerTabstop",
+    "politeAtomic",
+    "statusTextObserved",
+    "twoNamedComboboxes"
+  ],
+  "BR-06": [
+    "bUnchanged",
+    "closed",
+    "focus",
+    "label",
+    "noActive",
+    "oneEvent",
+    "payload"
+  ],
+  "BR-07": [
+    "aUnchanged",
+    "bChildrenFinal",
+    "bClosed",
+    "noExtraCommit"
+  ],
+  "BR-08": [
+    "accepted",
+    "label",
+    "noExtraEvent",
+    "rejected",
+    "value"
+  ],
+  "BR-09": [
+    "distinctRequests",
+    "newQuery",
+    "newRows",
+    "ready",
+    "staleIncremented",
+    "statusUnchanged",
+    "valueRetained"
+  ],
+  "BR-10": [
+    "committedRetained",
+    "empty",
+    "emptyText",
+    "error",
+    "errorText"
+  ],
+  "BR-11": [
+    "duplicateDiagnosed",
+    "error",
+    "invalidDiagnosed",
+    "invalidError",
+    "noExtraEvent",
+    "noPartialRows"
+  ],
+  "BR-12": [
+    "finalQuery",
+    "noCommit",
+    "noInterimRequest",
+    "oneFinalRequest",
+    "queryDraft",
+    "ready"
+  ],
+  "BR-13": [
+    "clearedLoading",
+    "closed",
+    "focusMoved",
+    "noDangling",
+    "noExtraCommit",
+    "textRetained"
+  ],
+  "BR-14": [
+    "bUnchanged",
+    "freshEpoch",
+    "newRoute",
+    "oldFinal",
+    "ready"
+  ],
+  "BR-15": [
+    "allChildrenFinal",
+    "bUnchanged",
+    "closed",
+    "diagnostic",
+    "noExtraCommit",
+    "relay",
+    "status"
+  ],
+  "BR-16": [
+    "aAlignment",
+    "aGap",
+    "actualReveal",
+    "bOwnAnchor",
+    "variableRows"
+  ],
+  "BR-17": [
+    "newEpoch",
+    "noExtraEvent",
+    "rowsUnchanged",
+    "staleIncremented",
+    "statusUnchanged",
+    "valueUnchanged"
+  ],
+  "BR-18": [
+    "activeUnchanged",
+    "eventsUnchanged",
+    "foreignCount",
+    "optionsUnchanged",
+    "statusUnchanged"
+  ],
+  "BR-19": [
+    "closedCollapsed",
+    "closedLoadingCleared",
+    "errorNotBusy",
+    "errorText",
+    "loadingActualBusy",
+    "loadingText",
+    "noClosedOptions",
+    "noSpeechClaim",
+    "noStaleActiveInLoadingErrorClosed",
+    "readyHasActive"
+  ],
+  "BR-20": [
+    "allChildrenFinal",
+    "noUnexpectedErrors",
+    "onePublicCommit",
+    "sourcesUnchanged",
+    "trustedBrowserKeys"
+  ]
+}

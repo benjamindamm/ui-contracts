@@ -1,0 +1,83 @@
+{
+  "runId": "42ebe5ce2c085a53d660784379138414",
+  "challenge": "97a3941b51f0ebf77ef1205dc54f40523fb9124a68537651c5b2811d640d22d9",
+  "name": "BR-01",
+  "payload": {
+    "browserSourceHashesVerified": true,
+    "runtimeApis": true
+  },
+  "snapshot": {
+    "focus": "",
+    "events": {
+      "A": [],
+      "B": []
+    },
+    "requests": [],
+    "diagnostics": [],
+    "errors": [],
+    "actors": [],
+    "A": {
+      "phase": "closed",
+      "data": {
+        "owner": "A",
+        "epoch": 0,
+        "query": "",
+        "results": [],
+        "reqSeq": 0,
+        "revealSeq": 0,
+        "intent": 0,
+        "composing": false,
+        "stale": 0,
+        "foreign": 0,
+        "fault": "",
+        "visible": false
+      },
+      "expanded": "false",
+      "busy": "false",
+      "activeDescendant": null,
+      "controls": null,
+      "inputValue": "",
+      "status": "",
+      "viewport": null,
+      "options": []
+    },
+    "B": {
+      "phase": "closed",
+      "data": {
+        "owner": "B",
+        "epoch": 0,
+        "query": "",
+        "results": [],
+        "reqSeq": 0,
+        "revealSeq": 0,
+        "intent": 0,
+        "composing": false,
+        "stale": 0,
+        "foreign": 0,
+        "fault": "",
+        "visible": false
+      },
+      "expanded": "false",
+      "busy": "false",
+      "activeDescendant": null,
+      "controls": null,
+      "inputValue": "",
+      "status": "",
+      "viewport": null,
+      "options": []
+    }
+  },
+  "journal": [
+    {
+      "sequence": 1,
+      "type": "host.ready",
+      "revision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+    }
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "platform": "MacIntel",
+    "language": "en-US"
+  },
+  "sourceRevision": "cc2168664e5b3eaf4c219e2244d68402410b4a5d27d363b30e4241476e7166d9"
+}
