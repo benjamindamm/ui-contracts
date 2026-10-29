@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-29",
+  "kind": "library migration functional verification",
+  "release": false,
+  "sourceRootBefore": "components",
+  "sourceRootAfter": "libraries/example",
+  "sourceFileCount": 22,
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "allSourceFilesByteIdentical": true,
+  "historicalTrackedFilesUnchanged": true,
+  "noLegacyDirectoryOrSymlink": true,
+  "selectedLibraryDiscovery": "explicit id; no implicit active library",
+  "tests": {
+    "libraryFunctionalTests": {
+      "count": 17,
+      "passed": true
+    },
+    "handoffSource": {
+      "count": 37,
+      "passed": true
+    },
+    "handoffInstalled": {
+      "count": 37,
+      "passed": true
+    },
+    "designCountercheckRegressions": {
+      "count": 12,
+      "passed": true
+    },
+    "processRegressions": {
+      "count": 7,
+      "passed": true
+    },
+    "entrypointGuard": "passed",
+    "skillStructureSource": "passed",
+    "skillStructureInstalled": "passed"
+  },
+  "run04Countercheck": {
+    "overall": "PASS_LIMITED",
+    "matchedPairValues": 572,
+    "comparedPairValues": 572,
+    "failures": 0,
+    "warnings": 0
+  },
+  "skillSourceMatchesInstalled": true,
+  "skillFileHashes": {
+    "SKILL.md": "2f79d3adea50fc3cf17ebed1682b4dc8f37c6a5ddef869d12f30b8764e8112bb",
+    "references/authoring.md": "2f3a57f4a35013b6e0b85c9f85e49a63f21732172fb0a11b0f00debb10299d3e",
+    "references/validation.md": "50c593a1249a3ce43982b75f0426e352d34fb497fe5905b01f36d8a15ca16d04",
+    "references/handoff-contract.md": "44b5ccfeffee56ad94b2ad404004aae8603aaa17d6fa4d984577307c6164448f",
+    "references/workflow.md": "f6645a04922e649551512d07d4eb75932b8c3a3a84c0400263abb7cf5d9434e9",
+    "references/reproducibility.md": "217a71ee1df961d188705828756a74ea881aaef61d7f9eb8aadc222aaca4cfb7",
+    "references/roles/reviewer.md": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7",
+    "references/roles/builder.md": "8497e2848ebe1858d0019909112fbbf257370b942c92f8eb173acd7e1e47921d",
+    "references/roles/repair.md": "0a443c7d85c92b474995ca2ad497deb5f6c6930fd0b0c6006ee40a28a7775fe7",
+    "references/roles/coordinator.md": "347b35781066e75b56471d4fe55d590247427795bc751a70248019344606aeeb",
+    "references/roles/mapper.md": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5",
+    "agents/openai.yaml": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d",
+    "scripts/contracts.py": "910ea10ac589f83699ab38ddb9c7e9092da3ffc27acd5fc35d36d92f4a39844c",
+    "scripts/handoffs.py": "5ee9b617299bd79214f2103dbf22e92b50eedcf64ee3cecbc4b2e3f7938ad241",
+    "assets/handoffs/handoff.json": "5a2d8e9904bd6ed04958e80faeaae0143a150364138878869fb7de852d27cd58",
+    "assets/handoffs/task.json": "79e5d0135b3f40f7b7b80e07c30ac8f529c0ae6b14d26fa6a0b7dabb4185931d"
+  },
+  "sourceFiles": {
+    "README.md": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+    "autocomplete/README.md": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+    "autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+    "autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+    "autocomplete/behavior.scxml": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+    "autocomplete/component.json": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+    "autocomplete/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+    "autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+    "autocomplete/layout.css": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+    "autocomplete/stories.json": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+    "library.json": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+    "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+    "overlay/component.json": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+    "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "overlay/layout.css": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+    "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+    "scroll-area/component.json": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+    "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "scroll-area/layout.css": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+    "tokens.json": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+  },
+  "limitations": [
+    "No new model generation or GUI/native/runtime run",
+    "No general library semantic approval",
+    "Unchanged historical generators with hard-coded components paths need their original checkout",
+    "Legacy path mapping preserves file hashes but never bypasses historical tool hashes"
+  ]
+}

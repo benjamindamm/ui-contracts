@@ -24,10 +24,14 @@ def digest(p):
 def load(p):
     return json.loads(p.read_text())
 
+def example_root(repo):
+    migrated = repo/'libraries/example'
+    return migrated if (migrated/'library.json').is_file() else repo/'components'
+
 def profile_gate(repo, profile):
     errors = []
     for name, expected in profile['definitionFiles'].items():
-        p = repo / 'components' / name
+        p = example_root(repo) / name
         if not p.is_file() or digest(p) != expected:
             errors.append('SOURCE_PROFILE_MISMATCH:' + name)
     lock = repo / 'tools/openpencil/package-lock.json'
@@ -203,7 +207,7 @@ def main():
     args = p.parse_args()
     repo, run = args.repo.resolve(), args.run.resolve()
     output = args.output.resolve()
-    if (output.is_relative_to(run) or output.is_relative_to(repo/'components') or
+    if (output.is_relative_to(run) or output.is_relative_to(repo/'components') or output.is_relative_to(repo/'libraries') or
             output.is_relative_to(repo/'examples/autocomplete/reproducibility')):
         p.error('Output must be outside the historical run and frozen definitions')
     profile = load(HERE/'profile.json')
@@ -211,13 +215,13 @@ def main():
     runmeta = load(run/'run.json')
     if runmeta['definitionFiles'] != profile['definitionFiles']:
         errors.append('RUN_INPUT_PROFILE_MISMATCH')
-    out = {'profile': profile['id'], 'release': False, 'scope': 'bounded-static-autocomplete-countercheck', 'blocked': errors}
+    out = {'profile': profile['id'], 'release': False, 'scope': 'bounded-static-autocomplete-countercheck', 'definitionRoot': str(example_root(repo)), 'sourceLocatorConvention': 'components/ locators retained from the frozen historical profile; see definitionRoot for current location', 'blocked': errors}
     if not errors:
         try:
-            stories_data = load(repo/'components/autocomplete/stories.json')
+            stories_data = load(example_root(repo)/'autocomplete/stories.json')
             stories = {s['id']: s for s in stories_data['stories']}
-            tokens = load(repo/'components/tokens.json')
-            rules = load(repo/'components/autocomplete/accessibility.rules.json')
+            tokens = load(example_root(repo)/'tokens.json')
+            rules = load(example_root(repo)/'autocomplete/accessibility.rules.json')
             out['designs'] = {}
             for x in 'ab':
                 fig = run/f'builder-{x}/autocomplete.fig'

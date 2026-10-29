@@ -10,7 +10,7 @@ Neue unabhängige Agenten ohne übernommene Gesprächshistorie starten. Beim hie
 
 ## Kontext nach Bedarf
 
-Ein Arbeitsauftrag ist eine Datei pro Rolle/Teilaufgabe. Übergeben werden Ziel, Definition/Version, ausgewählte Originalquellen mit Zweck, benötigte Vorgängerdateien, Schreibbereich, offene Fragen und Abnahmekriterien. Gesprächsverläufe und fremde Zwischenversuche sind keine Standardübergabe. Alle vier führenden Domänen bleiben über die Quellenkarte auffindbar; eine Rolle darf eine notwendige Querverbindung nachladen, statt aus einem zu engen Ausschnitt zu raten.
+Ein Arbeitsauftrag ist eine Datei pro Rolle/Teilaufgabe. Bibliotheks-ID ausdrücklich benennen; das gebundene Definitionsmanifest setzt `root: libraries/<id>`. Gleichnamige Komponenten verschiedener Bibliotheken sind keine identische Quelle. Keine impliziten Imports aus example. Übergeben werden Ziel, Definition/Version, ausgewählte Originalquellen mit Zweck, benötigte Vorgängerdateien, Schreibbereich, offene Fragen und Abnahmekriterien. Gesprächsverläufe und fremde Zwischenversuche sind keine Standardübergabe. Alle vier führenden Domänen bleiben über die Quellenkarte auffindbar; eine Rolle darf eine notwendige Querverbindung nachladen, statt aus einem zu engen Ausschnitt zu raten.
 
 Der Koordinator schneidet Aufgaben nach Abhängigkeiten, nicht starr nach Dateityp: gemeinsame Identität und Ownership zuerst; danach unabhängige Teile parallel; Zusammenführung nach deren Lieferung; unabhängige Prüfung; gezielte Reparatur. Nicht gleichzeitig denselben Teil oder dieselbe Übergabedatei schreiben. Änderungen am Interface oder an einer geteilten Annahme invalidieren davon abhängige Übergaben.
 

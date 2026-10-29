@@ -1,6 +1,6 @@
 # Autorenarbeit an Originalartefakten
 
-Im ausgewählten Repository zuerst `components/README.md`, `components/library.json` und die konkrete `component.json` lesen. Bestehende lokale Entscheidungen sind maßgeblich; die vorhandenen Komponenten sind Muster, kein Beleg für jede neue Komponente.
+Zuerst Bibliotheks-ID aus dem Auftrag auswählen, dann nur deren `libraries/<id>/library.json` und betroffene `component.json` lesen. Bibliotheken mit `tools/libraries/manage.py list` entdecken; `init ID` legt eine leere an. Ohne eindeutige Auswahl nicht stillschweigend example verwenden. `libraries/example/` enthält die erhaltene Forschungsbibliothek als gezielt nachladbare Orientierung. Eigene Bibliotheken erben weder Tokens noch Komponenten oder Prüffreigaben automatisch. Details: `libraries/README.md` im Zielrepository.
 
 | Führende Domäne | Originalformat und Aufgabe |
 | --- | --- |

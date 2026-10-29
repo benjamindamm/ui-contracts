@@ -8,7 +8,7 @@ def blocked(code,detail):return {'kind':'ui-contracts-skill-result','overall':'B
 def repository(explicit):
  if explicit:return explicit.resolve()
  for p in [Path.cwd(),*Path.cwd().parents]:
-  if(p/'tools/validation/check.py').is_file()and(p/'components/library.json').is_file():return p
+  if(p/'tools/validation/check.py').is_file()and((p/'libraries').is_dir()or(p/'components/library.json').is_file()):return p
  return None
 
 def inspect(repo,candidate):
@@ -62,12 +62,23 @@ def inspect(repo,candidate):
  return r
 
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('action',choices=['inspect','validate']);ap.add_argument('--repo',type=Path);ap.add_argument('--candidate',type=Path);ap.add_argument('--scope',choices=['static','web'],default='web');ap.add_argument('--browser-run',type=Path);ap.add_argument('--output',type=Path);a=ap.parse_args();repo=repository(a.repo)
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('action',choices=['inspect','validate']);ap.add_argument('--repo',type=Path);ap.add_argument('--candidate',type=Path);ap.add_argument('--library',help='Explicit library id under libraries/ (inspect only)');ap.add_argument('--scope',choices=['static','web'],default='web');ap.add_argument('--browser-run',type=Path);ap.add_argument('--output',type=Path);a=ap.parse_args();repo=repository(a.repo)
  candidate=a.candidate.resolve()if a.candidate else None
- protected=[SKILL]+([candidate]if candidate else[])+([repo/p for p in ['components','docs/research','tools/validation','skills','examples']]if repo else[])
+ selection_error=None
+ if a.library:
+  if a.action!='inspect' or a.candidate:
+   selection_error=blocked('LIBRARY_SELECTION_UNSUPPORTED','Use inspect --library ID without --candidate. validate remains an exact reference-package gate.')
+  elif repo:
+   import re
+   selected=repo/'libraries'/a.library
+   if not re.fullmatch(r'[a-z][a-z0-9]*(?:-[a-z0-9]+)*',a.library) or selected.is_symlink() or (repo/'libraries').is_symlink() or not selected.resolve().is_relative_to(repo) or not(selected/'library.json').is_file():
+    selection_error=blocked('LIBRARY_NOT_FOUND','Select an existing library under libraries/.')
+   else:candidate=selected.resolve()
+ protected=[SKILL]+([candidate]if candidate else[])+([repo/p for p in ['components','libraries','docs/research','tools/validation','skills','examples']]if repo else[])
  if a.output and any(a.output.resolve().is_relative_to(p.resolve())for p in protected):
   print(json.dumps(blocked('UNSAFE_REPORT_PATH','Reports must not overwrite candidate, checker, skill or historical evidence.')));return 2
- if not repo or not all((repo/p).is_file()for p in ['tools/validation/check.py','tools/validation/profile.json','components/library.json']):r=blocked('PROJECT_PREREQUISITE_MISSING','Select the UI-Contracts project with its existing validation tools and component library.')
+ if selection_error:r=selection_error
+ elif not repo or not all((repo/p).is_file()for p in ['tools/validation/check.py','tools/validation/profile.json'])or not((repo/'libraries').is_dir()or(repo/'components/library.json').is_file()):r=blocked('PROJECT_PREREQUISITE_MISSING','Select the UI-Contracts project with its existing validation tools and component library.')
  else:
   runtime=repo/'tools/validation/.venv/bin/python'
   if not runtime.is_file():r=blocked('REQUIRED_VALIDATION_RUNTIME_MISSING',str(runtime))

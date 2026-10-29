@@ -18,6 +18,7 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 | [PROJECT-GAPS.md](PROJECT-GAPS.md) | Was dem Projekt nach den Einzelprüfungen noch fehlt |
 | [DOCUMENT-INDEX.md](DOCUMENT-INDEX.md) | Dokumentenindex |
 | [STUDIES.md](STUDIES.md) | Studien |
+| [Mehrere Bibliotheken](../libraries/MIGRATION.md) | Beispielbibliothek nach libraries/example verschoben; neue Libraries leer anlegen, explizite Auswahl und historische Bindungen |
 | [AC-R03 · Modellherkunft](studies/AC-R03/MODEL-PROVENANCE.json) | Nachträgliche Nutzerangabe: qwen3.8-27B, FP8; Rollen-/Providerverifikation weiterhin offen |
 | [RD-001 · Gestufte Erzeugung](decisions/RD-001-STAGED-GENERATION.md) | Beschlossener nächster Forschungsschritt für zuverlässige Erzeugung mit kleineren Arbeitsaufträgen |
 | [Pilotprotokoll · Gestufte Autocomplete-Erzeugung](protocols/STAGED-GENERATION-PILOT.md) | Kontrollarm, Übergaben, Prüfgates, Reparaturrunden und noch offene Vorbereitung |

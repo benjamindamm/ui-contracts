@@ -42,6 +42,9 @@ def resolve(repo, value):
     string(value, 'path')
     p = Path(value)
     need(not p.is_absolute() and '..' not in p.parts, 'path: repository-relative without .. required')
+    # Historical manifests keep their original root; no visible legacy directory needed.
+    if p.parts and p.parts[0] == 'components' and not (repo/'components').exists() and (repo/'libraries/example/library.json').is_file():
+        p = Path('libraries/example').joinpath(*p.parts[1:])
     out = (repo/p).resolve()
     need(out.is_relative_to(repo), 'path: escapes repository')
     return out
@@ -120,6 +123,7 @@ def validate_task(repo, task, stack=()):
     outputs = [resolve(repo, p) for p in array(task.get('outputs'), 'outputs')]
     need(bool(outputs), 'output directory required')
     need(all(p != repo and not p.is_relative_to(root) and not root.is_relative_to(p) for p in outputs), 'output overlaps definition/root')
+    need(all(not p.is_relative_to(repo/'libraries') for p in outputs), 'outputs must not overwrite any library sources')
     inputs = unique(task.get('inputs'), 'inputs')
     dependencies = {}
     for item in inputs.values():
@@ -281,7 +285,7 @@ def main():
         # Never overwrite sources, artifacts or historical reproduction evidence.
         refs = [task['definition']['manifest']] + task['sources'] + task['inputs']
         need(out not in {bound(repo, ref) for ref in refs}, 'output overwrites an input')
-        need(not out.is_relative_to(repo/'components') and not out.is_relative_to(repo/'examples/autocomplete/reproducibility'), 'output in frozen/historical area')
+        need(not out.is_relative_to(repo/'components') and not out.is_relative_to(repo/'libraries') and not out.is_relative_to(repo/'examples/autocomplete/reproducibility'), 'output in frozen/historical area')
         if args.command == 'bootstrap':
             result.update(overall='BOOTSTRAP_READY', bootstrap=bootstrap_packet(repo, task_path))
         elif args.command == 'context':
@@ -293,7 +297,7 @@ def main():
     except (OSError, ValueError, TypeError, KeyError, RecursionError) as e:
         result.update(overall='BLOCKED', diagnostic=str(e))
     # Do not write a diagnostic over a protected file on invalid input either.
-    need(out not in protected and not out.is_relative_to(repo/'components') and not out.is_relative_to(repo/'examples/autocomplete/reproducibility'), 'unsafe output path')
+    need(out not in protected and not out.is_relative_to(repo/'components') and not out.is_relative_to(repo/'libraries') and not out.is_relative_to(repo/'examples/autocomplete/reproducibility'), 'unsafe output path')
     need(not out.exists(), 'output already exists; keep immutable receipts/use a new path')
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open('x', encoding='utf-8') as f:

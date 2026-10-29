@@ -19,7 +19,7 @@ def repin(p):
 def main():
  ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--skill',type=Path,default=Path(os.environ.get('CODEX_HOME',str(Path.home()/'.codex')))/'skills/ui-contracts');a=ap.parse_args();skill=a.skill.resolve();helper=skill/'scripts/contracts.py'
  source=ROOT/'skills/ui-contracts';source_hashes={str(p.relative_to(source)):h(p)for p in source.rglob('*')if p.is_file()};installed_hashes={str(p.relative_to(skill)):h(p)for p in skill.rglob('*')if p.is_file()};assert source_hashes==installed_hashes
- before={str(p):h(p)for root in [ROOT/'components',ROOT/'docs/research/studies',BASE]for p in root.rglob('*')if p.is_file()};rows=[]
+ before={str(p):h(p)for root in [ROOT/'libraries/example',ROOT/'docs/research/studies',BASE]for p in root.rglob('*')if p.is_file()};rows=[]
  with tempfile.TemporaryDirectory(prefix='ui-contracts-skill-test-')as temp:
   w=Path(temp)
   def run(id,args,expected,diag=None,release=False,repo=ROOT):
@@ -44,7 +44,7 @@ def main():
   r=run('new-original-artifacts-not-full-approval',['inspect','--candidate',str(new)],'BLOCKED','SEMANTIC_PROFILE_UNSUPPORTED');assert all(x['status']=='PASS_LIMITED'for x in r['artifacts']);assert any(c['checker'].startswith('original CEM')and c['accepted']for x in r['artifacts']for c in x['checks']);assert any(c['checker'].startswith('original loose SCXML')and c['accepted']for x in r['artifacts']for c in x['checks'])
   raw={str(p.relative_to(new)):p.read_text()for p in new.iterdir()}
   run('new-component-cannot-use-reference-profile',['validate','--candidate',str(new),'--browser-run',str(CURRENT)],'FAIL','MALFORMED_OR_UNSUPPORTED_INPUT')
-  run('existing-library-is-not-runtime-approval',['inspect','--candidate',str(ROOT/'components/overlay')],'BLOCKED','SEMANTIC_PROFILE_UNSUPPORTED')
+  run('existing-library-is-not-runtime-approval',['inspect','--candidate',str(ROOT/'libraries/example/overlay')],'BLOCKED','SEMANTIC_PROFILE_UNSUPPORTED')
   bad=w/'bad-json';bad.mkdir();(bad/'component.json').write_text('{"id":"one","id":"two"}');run('duplicate-json-rejected',['inspect','--candidate',str(bad)],'FAIL','ARTIFACT_CHECK_FAILED')
   bad=w/'bad-cem';bad.mkdir();broken=copy.deepcopy(cem);del broken['modules'][0]['declarations'][0]['kind'];write(bad/'interface.json',broken);run('original-cem-rejection',['inspect','--candidate',str(bad)],'FAIL','ARTIFACT_CHECK_FAILED')
   bad=w/'bad-scxml';bad.mkdir();(bad/'behavior.scxml').write_text(raw['behavior.scxml'].replace('version="1.0"','version="2.0"'));run('original-scxml-rejection',['inspect','--candidate',str(bad)],'FAIL','ARTIFACT_CHECK_FAILED')
@@ -55,7 +55,7 @@ def main():
   run('report-cannot-overwrite-schema',['validate','--output',str(ROOT/'tools/validation/schemas/cem.schema.json')],'BLOCKED','UNSAFE_REPORT_PATH')
   stale=w/'stale-browser';shutil.copytree(CURRENT,stale);request=json.loads((stale/'request.json').read_text());request['createdAt']-=86400;write(stale/'request.json',request);run('stale-browser-never-passes',['validate','--browser-run',str(stale)],'BLOCKED','BROWSER_RUN_STALE')
   run('historical-captures-not-current',['validate','--browser-run',str(ROOT/'docs/research/experiments/2026-10-25/ip01-browser')],'BLOCKED','BROWSER_RESULT_MISSING')
- assert before=={str(p):h(p)for root in [ROOT/'components',ROOT/'docs/research/studies',BASE]for p in root.rglob('*')if p.is_file()}
+ assert before=={str(p):h(p)for root in [ROOT/'libraries/example',ROOT/'docs/research/studies',BASE]for p in root.rglob('*')if p.is_file()}
  assert installed_hashes=={str(p.relative_to(skill)):h(p)for p in skill.rglob('*')if p.is_file()}
  out={'kind':'installed-ui-contracts-skill-functional-check','date':'2026-10-26','skillPath':str(skill),'sourceMatchesInstalled':True,'skillFileHashes':installed_hashes,'inputOriginalsUnchanged':True,'independentAgentForwardTestPerformed':False,'newBrowserExecutionClaimed':False,'existingBrowserEvidenceAgeAtTestSeconds':age,'newOriginalFormatFixture':raw,'cases':rows,'allExpectationsMet':all(r['expectationMet']for r in rows)};write(OUT/'results.json',out);print('TOTAL',len(rows),'MET',sum(r['expectationMet']for r in rows));return 0 if out['allExpectationsMet']else 1
 if __name__=='__main__':raise SystemExit(main())

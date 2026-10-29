@@ -2,7 +2,7 @@
 
 Stand: 25. Oktober 2026. **Dieser erste Cold-Context-Designstand wird als Referenz erhalten.** Definitionen und Ergebnis werden gemeinsam versioniert; spätere Klarstellungen oder Exporte sind neue Revisionen.
 
-- Führende [Definitionsbibliothek](../../components/README.md), vor dem Agentenstart mit allen 22 Dateihashes eingefroren.
+- Führende [Definitionsbibliothek](../../libraries/example/README.md), vor dem Agentenstart mit allen 22 Dateihashes eingefroren.
 - [Editierbare OpenPencil-Datei](output/openpencil/autocomplete.fig) mit zehn benannten Zuständen und 164 Originalreader-Knoten.
 - [Vorschau aus der gespeicherten Datei](output/openpencil/preview.png).
 - [Exportbericht](output/openpencil/REPORT.md) und [unabhängige Nachprüfung](review/REPORT.md).

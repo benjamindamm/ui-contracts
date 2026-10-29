@@ -1,6 +1,6 @@
 # UI Contracts · Agenteneinstieg
 
-Nur den konkreten Auftrag bearbeiten. Dieses Repository untersucht UI-Definitionen aus vier führenden Domänen: CEM, DTCG/CSS, SCXML und HTML/ARIA.
+Nur den konkreten Auftrag bearbeiten. Führende Domänen: CEM, DTCG/CSS, SCXML und HTML/ARIA. Bibliothek unter `libraries/<id>/` ausdrücklich aus dem Auftrag wählen. `example` nur bei Bedarf als Orientierung lesen, nicht automatisch übernehmen. [Bibliotheksauswahl](libraries/README.md).
 
 - Bei zugewiesener Rolle: zuerst Auftragsdatei und nur die passende Karte unter [Rollen](skills/ui-contracts/references/roles/) lesen. Quellen und benötigte Vorgängerartefakte danach schrittweise über deren Verweise laden. Abnahmekriterien und Schreibgrenzen vor Erstellung lesen.
 - Ohne Rollenauftrag: bei Contractarbeit den [Skill](skills/ui-contracts/SKILL.md) verwenden. Für Ablaufplanung den [Workflow](skills/ui-contracts/references/workflow.md), für Forschungsorientierung den [Index](docs/research/DOCUMENT-INDEX.md) gezielt nutzen. Links sind keine Aufforderung, alles zu lesen.

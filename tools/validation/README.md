@@ -27,7 +27,7 @@ tools/validation/.venv/bin/python tools/validation/check.py
 tools/validation/.venv/bin/python tools/validation/check.py --scope static --output /tmp/ip01-static.json
 ```
 
-`--package PFAD` erlaubt eine separate Kandidatenkopie des unterstützten Pakets mit `bindings.json`, `resolved.json`, Quellen und `values.json`. Dies ist keine allgemeine Prüfung der gesamten neuen `components/`-Bibliothek. Das Bindungsformat bleibt ein eigener Forschungsentwurf.
+`--package PFAD` erlaubt eine separate Kandidatenkopie des unterstützten Pakets mit `bindings.json`, `resolved.json`, Quellen und `values.json`. Dies ist keine allgemeine Prüfung beliebiger Bibliotheken unter `libraries/`. Das Bindungsformat bleibt ein eigener Forschungsentwurf.
 
 ## Einen neuen Browserlauf durchführen
 

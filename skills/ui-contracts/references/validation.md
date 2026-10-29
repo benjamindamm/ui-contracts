@@ -16,7 +16,7 @@ python3 "$SKILL/scripts/contracts.py" validate --repo "$REPO" --browser-run /tmp
 
 `inspect` nutzt die Projektlaufzeit und Originalschemas aus dem vorhandenen Werkzeugbestand. Es prüft striktes JSON, CEM 2.1.0 beziehungsweise SCXML 1.0, CSS-Syntax und HTML-Parsebarkeit soweit passend. Andere JSON-Dokumente bleiben Syntaxprüfungen. HTML-Parsebarkeit bedeutet keine HTML-/ARIA-Konformität. Kein generischer Behavior-/Kompositions-/Ownershipprüfer für neue Komponenten wird behauptet. Daher endet eine sonst gültige neue Komponente weiterhin mit `BLOCKED`/`SEMANTIC_PROFILE_UNSUPPORTED` und separat bestandenen Teilprüfungen.
 
-`validate` ruft unverändert `tools/validation/check.py` mit dem gewählten Paket/Umfang auf und übernimmt dessen Ergebnis. Die unterstützte Referenz liegt unter `docs/research/experiments/2026-10-25/ip01-static/reference/`; `--candidate` bedeutet hier eine Kopie dieses vollständigen Pakets. Die neue `components/`-Bibliothek ist ein anderes Autorenartefakt und darf nicht allein durch passende Ordnernamen zu diesem Profil erklärt werden.
+`validate` ruft unverändert `tools/validation/check.py` mit dem gewählten Paket/Umfang auf und übernimmt dessen Ergebnis. Die unterstützte Referenz liegt unter `docs/research/experiments/2026-10-25/ip01-static/reference/`; `--candidate` bedeutet hier eine Kopie dieses vollständigen Pakets. Eine Bibliothek unter `libraries/<id>/` ist ein anderes Autorenartefakt und darf nicht allein durch passende Ordnernamen zu diesem Profil erklärt werden.
 
 Fehlende Projektlaufzeit oder fehlende notwendige Prüfer blockieren. Abhängigkeiten nur nach der Projektanleitung bereitstellen; kein unbekanntes Werkzeug als Ersatzvalidator ausgeben.
 
@@ -45,3 +45,5 @@ Mit der Projektlaufzeit `tools/validation/.venv/bin/python`:
 Die Prüfkette akzeptiert nur den explizit übergebenen, frischen, vollständigen und quellen-/prüfergleichen Lauf. Die aktuelle maximale Gültigkeit steht im Browserprofil (derzeit zwei Stunden ab Vorbereitung). Keine alten Captures umbenennen, keinen Zeitstempel zurücksetzen und keinen fehlgeschlagenen Lauf teilweise weiterführen. Nach relevanter Reparatur einen neuen Lauf beginnen.
 
 Der zusätzliche Browserhost ist keine allgemeine Generierung aus jeder Definition. Eine statisch gültige Änderung braucht eine eigene begründete Host-/Profilabbildung und aktuelle Abnahme; der bestehende Skill stellt diese noch nicht bereit. Das ist ein blockierender Umfangsbefund, keine Aufforderung, die feste Profilbindung für die Reparatur zu lockern.
+
+Für Originalartefakte einer ausdrücklich ausgewählten Bibliothek: `inspect --library ID` ohne `--candidate`. Kein Default auf example. `validate --library` ist absichtlich nicht unterstützt; die Referenzpaketprüfung ist keine allgemeine Bibliotheksabnahme.

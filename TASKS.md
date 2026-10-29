@@ -59,7 +59,7 @@ Auf Nutzerauftrag abgeschlossen: gemeinsame Vorschläge, statische Bindung, Life
 
 ## Neue Anwendungsphase: Definitionsbibliothek
 
-Die abgeschlossene Recherche wird nicht umgeschrieben. Die neue Phase beginnt mit Komponentenbeschreibungen unter components/; HTML/TypeScript und OpenPencil sind abgeleitete Ziele.
+Die abgeschlossene Recherche wird nicht umgeschrieben. Komponentenbeschreibungen liegen in ausdrücklich gewählten Bibliotheken unter libraries/<id>/; die erhaltene Beispielbibliothek liegt unter libraries/example/. HTML/TypeScript und OpenPencil sind abgeleitete Ziele.
 
 - [x] Autocomplete mit getrennten Interface-/Visual-/Behavior-/Accessibilityquellen und wiederverwendbaren Overlay-/ScrollArea-Definitionen anlegen.
 - [x] Den Definitionsstand vor dem unabhängigen Export einfrieren und Originalschema-Vorläufe dokumentieren.

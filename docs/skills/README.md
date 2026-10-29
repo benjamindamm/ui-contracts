@@ -67,3 +67,7 @@ Der neue Helper erzeugt nur Kontextdateien und Prüfberichte. Er startet keine A
 [Separater Kontextaudit](../research/analyses/INITIAL-CONTEXT/README.md): neue Rollen starten mit `bootstrap` (nur hashgebundene Auftrags-/Rollenverweise); das erweiterte `context` wird erst bei Bedarf geladen. Originale und Nachweise bleiben erreichbar. Kein pauschales Einlesen aller verlinkten Dateien. Die Anfangsgröße des gesamten Modellrequests ist damit noch nicht gemessen.
 
 Aktueller zusätzlicher Nachweis: [37 Funktionstests Quelle](../../tools/skill-tests/ui-contracts/results-bootstrap-source.json) und [Installation](../../tools/skill-tests/ui-contracts/results-bootstrap-installed.json). Frühere 32-Test-Receipts und Workflow-Verifikation dokumentieren den Stand vor diesem Kontextaudit.
+
+## Mehrere Bibliotheken
+
+Bibliotheken liegen unter `libraries/<id>/`; die frühere Draftbibliothek heißt jetzt `example`. Jeder Autorenauftrag wählt seine Bibliothek explizit. [Leere Bibliothek anlegen, auswählen und historische Pfade einordnen](../../libraries/README.md). `inspect --library ID` unterstützt die begrenzte Originalformatprüfung; keine allgemeine semantische Bibliotheksfreigabe.

@@ -8,6 +8,16 @@ UI Contracts untersucht, wie sich Schnittstelle, Gestaltung, Verhalten und Acces
 
 [Das Prinzip](#das-prinzip) · [Architektur](#architektur) · [Nachweise](#nachweise) · [Dokumentation](#dokumentation) · [Weiterarbeit](#weiterarbeit)
 
+## Eigene Bibliothek starten
+
+Mehrere Bibliotheken liegen getrennt unter `libraries/`. Die bisherige Forschungsbibliothek ist [example](libraries/example/README.md) und bleibt als Orientierung erhalten. Für ein eigenes Projekt leer beginnen:
+
+```sh
+python3 tools/libraries/manage.py init meine-app --name "Meine App"
+```
+
+Der Agentenauftrag wählt `meine-app` ausdrücklich aus. Beispiele werden nicht automatisch gelesen oder übernommen. [Bibliotheken, Auswahl und Migration](libraries/README.md).
+
 ## Das Prinzip
 
 Ein Agent soll Properties, Layout, Zustände und Bedienregeln aus einer präzisen Beschreibung ableiten können. Dieselbe Information hat genau eine führende Quelle. So werden Entscheidungen nachvollziehbar, Widersprüche erkennbar und Komponenten wiederverwendbar.
@@ -122,7 +132,7 @@ Die vollständige Recherche liegt in **[`docs/research/`](docs/research/)**. Akt
 
 ## Weiterarbeit
 
-**Erster Bibliothekseintrag:** Die [Definitionsbibliothek](components/README.md) beginnt mit [Autocomplete](components/autocomplete/README.md), Overlay und ScrollArea. Ein [eigenständiger Design-Proof](examples/autocomplete/README.md) hat einen neuen Agenten ohne übernommenen Gesprächsverlauf daraus ein editierbares OpenPencil-Dokument erstellen lassen. Die Originaldatei wurde unabhängig geprüft; aufgedeckte Definitionslücken bleiben dokumentiert. Die Definitionen führen; Zielartefakte werden daraus erzeugt.
+**Erster Bibliothekseintrag:** Die [Definitionsbibliothek](libraries/example/README.md) beginnt mit [Autocomplete](libraries/example/autocomplete/README.md), Overlay und ScrollArea. Ein [eigenständiger Design-Proof](examples/autocomplete/README.md) hat einen neuen Agenten ohne übernommenen Gesprächsverlauf daraus ein editierbares OpenPencil-Dokument erstellen lassen. Die Originaldatei wurde unabhängig geprüft; aufgedeckte Definitionslücken bleiben dokumentiert. Die Definitionen führen; Zielartefakte werden daraus erzeugt.
 
 Die Forschungsgrundlage, konkrete Referenzdateien und ein ausgeführter Webforschungs-Host liegen vor. Eine produktive Komponentenbibliothek ist noch nicht umgesetzt. Vor der Produktumsetzung sind insbesondere Bindungssyntax, allgemeiner Resolver und der verbindliche fachliche Umfang festzulegen.
 

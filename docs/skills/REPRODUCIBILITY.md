@@ -65,3 +65,7 @@ Ein erfolgreicher Abschluss ist ein `complete`-Event, kein weiterer `stop`. Zwis
 Nur vorhandene, geprüfte Angaben eintragen; unbekannte Werte nicht zur erfolgreichen Metadatenprüfung erfinden. Zusätzlich nach Möglichkeit Zeit-/Tokenverbrauch und tatsächliche Skill-Read-/Zugriffsreceipts speichern. Der Prüfer bestätigt Datei-Integrität und Vollständigkeit dieser Mindestfelder, keine historische Wahrhaftigkeit, semantische Neutralität des Textes oder ausreichende technische Isolation. Eine Selbstangabe `semanticCoaching:false` muss beim Forschungsreview weiterhin am tatsächlichen Nachrichtentext geprüft werden.
 
 Für AC-R01/02 fehlen Teile dieser Angaben dauerhaft. Das neue Protokoll repariert die zukünftige Erfassung; die verlorene historische Provenienz lässt sich damit nicht zurückholen.
+
+## Bibliotheksauswahl
+
+Für neue Läufe die Bibliotheks-ID und den tatsächlichen Root `libraries/<id>/` vorab festhalten. Die bisherige Forschungsdefinition liegt bytegleich unter `libraries/example/`; alte Manifeste und deren components-Locators bleiben erhalten. Eigene Bibliotheken übernehmen keine Beispiele automatisch. Pro Lauf eine explizite Quellrevision; Details zur historischen Wiederholung in [Migration](../libraries/MIGRATION.md).

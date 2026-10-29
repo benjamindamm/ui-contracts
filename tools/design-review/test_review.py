@@ -10,9 +10,9 @@ import check
 class CountercheckTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.tokens = check.load(check.ROOT/'components/tokens.json')
-        cls.stories = {s['id']:s for s in check.load(check.ROOT/'components/autocomplete/stories.json')['stories']}
-        cls.rules = check.load(check.ROOT/'components/autocomplete/accessibility.rules.json')
+        cls.tokens = check.load(check.example_root(check.ROOT)/'tokens.json')
+        cls.stories = {s['id']:s for s in check.load(check.example_root(check.ROOT)/'autocomplete/stories.json')['stories']}
+        cls.rules = check.load(check.example_root(check.ROOT)/'autocomplete/accessibility.rules.json')
         fig = check.ROOT/'examples/autocomplete/reproducibility/run-02/builder-a/autocomplete.fig'
         p = subprocess.run(['node',str(check.HERE/'read-fig.mjs'),str(check.ROOT),str(fig)],capture_output=True,text=True,check=True)
         cls.delivered = json.loads(p.stdout)['nodes']

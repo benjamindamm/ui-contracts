@@ -10,7 +10,7 @@ python3 tools/design-review/test_review.py
 python3 tools/design-review/test_process.py
 ```
 
-Ausgaben nur außerhalb des untersuchten Laufordners und von `components/`. Der erste Befehl endet für die gelieferten Originale erwartungsgemäß mit Exitcode **1**, da ihre gemeinsame Platzhalterfarbe von der Quelle abweicht. Das ist kein Fehler der Ausführung. `0` bedeutet ausschließlich `PASS_LIMITED`, `2` bedeutet `BLOCKED`; `release:false` gilt immer.
+Ausgaben nur außerhalb des untersuchten Laufordners und aller `libraries/`-Quellen. Der erste Befehl endet für die gelieferten Originale erwartungsgemäß mit Exitcode **1**, da ihre gemeinsame Platzhalterfarbe von der Quelle abweicht. Das ist kein Fehler der Ausführung. `0` bedeutet ausschließlich `PASS_LIMITED`, `2` bedeutet `BLOCKED`; `release:false` gilt immer.
 
 ## Abdeckung und Grenzen
 
@@ -33,3 +33,7 @@ python3 tools/design-review/check_process.py --metadata PFAD/run-process.json --
 `METADATA_COMPLETE` / Exitcode 0 bestätigt vorhandene Angaben und Datei-Hashes, keine historische Authentizität oder Zugriffstrennung. Fehlende Angaben, nicht aufgelöste Stopps, falsche Hashes oder semantisches Nachcoaching ergeben `BLOCKED` / Exitcode 2 für den unveränderten Vergleichsanspruch. Artefakte bleiben separat prüfbar. Die sieben Regressionstests prüfen unter anderem diese Trennung.
 
 Neue Fälle oder Fehler erhalten zuerst eine ID im [Fehlerregister](../../docs/skills/ISSUES.md), dann einen isolierten Gegenfall und einen Reparaturnachweis. Ein alter Beleg wird nicht geändert, um den neuen Test erfolgreich zu machen.
+
+## Beispielbibliothek nach Migration
+
+Der aktuelle Prüfer liest die bytegleich erhaltenen Quellen aus `libraries/example/`. Das eingefrorene Profil und historische `components/`-Quellenlocators bleiben erhalten und werden im Ergebnis durch `definitionRoot` erklärt. Andere Bibliotheken erhalten dadurch kein Autocomplete-Prüfprofil. Alte Tasks mit Hashes der früheren Werkzeugversion benötigen diese Version; siehe [Migration](../../docs/libraries/MIGRATION.md).

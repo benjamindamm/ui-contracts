@@ -55,9 +55,9 @@ Pro Regel/Fall/Teil mindestens:
 
 ```json
 {
-  "source": {"path": "components/autocomplete/layout.css", "sha256": "HASH", "selector": "[data-part=\"input\"]::placeholder"},
+  "source": {"path": "libraries/example/autocomplete/layout.css", "sha256": "HASH", "selector": "[data-part=\"input\"]::placeholder"},
   "target": {"component": "ui-contracts:Autocomplete", "instance": "disabled", "part": "input", "facet": "placeholder.color"},
-  "valueFrom": "components/tokens.json#autocomplete.muted",
+  "valueFrom": "libraries/example/tokens.json#autocomplete.muted",
   "classification": "explicit",
   "openQuestion": null
 }
@@ -134,3 +134,5 @@ Kompositionsfälle aus den Verbindungen ableiten: Wer besitzt Zustand und Wert? 
 [Audit INITIAL-CONTEXT](../analyses/INITIAL-CONTEXT/README.md) ist Teil der Vorbereitung. Start- und Nachladestufen separat protokollieren: Historienübernahme, Plattform-/Toolvorgaben soweit verfügbar, aktiver Skill, Bootstrap, Auftrag/Rollenkarte, später gelesene Pfade und Werkzeugausgaben. Bootstrapgröße ist kein Gesamtrequestmaß. In beiden Armen dieselben gemeinsamen Mess-/Toolbedingungen wahren; die unterschiedliche Kontextaufteilung als Intervention dokumentieren. Fehlende Requestdaten als fehlend ausweisen.
 
 Host-Einstiege zusätzlich nach [ENTRYPOINTS](../analyses/INITIAL-CONTEXT/ENTRYPOINTS.md) prüfen: Agentenprogramm/Version, geladene Regeldateien, globale Erinnerungen, Imports und tatsächliches Initialset separat vom Modellnamen dokumentieren. Die neuen Repositorywegweiser sind statisch geprüft; Host-Laufzeittests bleiben Vorbereitung für P0.
+
+Pfadmigration: Die eingefrorenen 22 Quellen liegen jetzt bytegleich unter `libraries/example/`. Neue Aufträge binden diesen Root; historische Manifeste bleiben unverändert. [Migration](../../libraries/MIGRATION.md).

@@ -66,3 +66,13 @@ Zusätzlicher Hostbefund:
 | ID | Risiko | Gegenmaßnahme | Grenze |
 | --- | --- | --- | --- |
 | W02-004 | Unterschiedliche Hosts laden andere Projekt-/Globaldateien und Erinnerungen | Gemeinsame kurze AGENTS.md, dünne CLAUDE.md/GEMINI.md-Wegweiser ohne automatische Imports; [Host-Prüfverfahren](../research/analyses/INITIAL-CONTEXT/ENTRYPOINTS.md) | Statische Prüfung bestanden; reale Startladung und globale Regeln pro konkretem Host noch zu messen. |
+
+## L01 · Unabhängige Bibliotheken · 29. Oktober 2026
+
+| ID | Fehlerquelle | Reparatur | Nachweis / Grenze |
+| --- | --- | --- | --- |
+| L01-001 | components war zugleich Beispiel und implizite einzige Autorenbibliothek | Bytegleiche Migration nach libraries/example; Auswahl über libraries/ID, Leerstart per manage.py init | Leere Tokens/Komponenten, getrennte Libraries, unveränderte 22 Dateihashes getestet. |
+| L01-002 | Pfadmigration könnte alte Studien umschreiben oder ihre Hashbindung abschwächen | Alte Manifeste unverändert; explizite Legacy-Pfadauflösung mit weiterhin striktem Dateihash; Gegenprüfer bindet example | Legacy-/Stale-Hash-Tests und run-04-Gegenprüfung; alte Werkzeughashes bleiben an alte Revisionen gebunden. |
+| L01-003 | Ausgabe eines Rollenauftrags könnte Quellen einer anderen Library überschreiben | Quellen-/Receipt-Schutz auf alle libraries ausgedehnt; Handoff-Ausgabeordner darin abweisen | Negativer Cross-Library-Ausgabetest plus positiver eigener work-Ordner. Keine technische Zugriffssandbox. |
+
+[Migration, Dokumentationsumfang und Testbelege](../libraries/MIGRATION.md). Keine neue Modellgeneration oder allgemeine Komponentenfreigabe.

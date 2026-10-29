@@ -125,7 +125,7 @@ def main():
  a=ap.parse_args();report=run(a.package,a.scope,browser_run=a.browser_run);text=json.dumps(report,ensure_ascii=False,indent=2,allow_nan=False)+'\n'
  if a.output:
   target=a.output.resolve()
-  if target.is_relative_to(a.package.resolve()) or target.is_relative_to(TOOLS/'schemas') or (target.is_relative_to(TOOLS) and not target.is_relative_to(TOOLS/'evidence')) or target.is_relative_to(ROOT/'docs/research/experiments') or target.is_relative_to(ROOT/'examples/autocomplete/reproducibility') or target.is_relative_to(ROOT/'components'):ap.error('output must not overwrite package, checker criteria or historical evidence')
+  if target.is_relative_to(a.package.resolve()) or target.is_relative_to(TOOLS/'schemas') or (target.is_relative_to(TOOLS) and not target.is_relative_to(TOOLS/'evidence')) or target.is_relative_to(ROOT/'docs/research/experiments') or target.is_relative_to(ROOT/'examples/autocomplete/reproducibility') or target.is_relative_to(ROOT/'components') or target.is_relative_to(ROOT/'libraries'):ap.error('output must not overwrite package, checker criteria or historical evidence')
   target.parent.mkdir(parents=True,exist_ok=True);target.write_text(text)
  print(text,end='');return {'PASS_LIMITED':0,'FAIL':1,'BLOCKED':2}[report['overall']]
 if __name__=='__main__':sys.exit(main())
