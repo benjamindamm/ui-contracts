@@ -10,3 +10,7 @@ Ein neuer Agent ohne übernommenen Gesprächskontext hat aus diesen Definitionen
 Das lokale Originalwerkzeug liegt mit gepinnten Abhängigkeiten unter tools/openpencil/. Das Werkzeug enthält die OpenPencil-Implementierung, keine Komponentenlösung. Die abgeschlossene Recherche ist weiterhin unter docs/research/ archiviert; sie wird nicht durch diesen neuen Anwendungsproof umgeschrieben oder nachträglich erweitert.
 
 Die strukturelle Originaldatei-Prüfung ist erfüllt. Zwei konkrete Definitionslücken und die noch nicht bestätigte Desktop-GUI-Öffnung bleiben sichtbar im Bericht. Vor dem Zwei-Ziel-Vergleich folgt eine explizite Definitionsrevision; die erste eingefrorene Version wird nicht rückwirkend verändert.
+
+## Einheitliches Layout der Vorschau
+
+Neue native Ausgaben verwenden das [gemeinsame Layout](../../docs/skills/OPENPENCIL-PREVIEW.md); die gerenderte Datei heißt wie bisher `preview.png` neben `autocomplete.fig`. [Beide run-04-Proben im Komponenten-Ausgabebereich](output/openpencil/run-04/README.md) sind separate nachträgliche Ausgaben; die Forschungsoriginale bleiben unverändert.

@@ -100,7 +100,11 @@ Nachweis: 20 Font-/Integrationsregressionen einschließlich Lizenzmetadaten fehl
 | --- | --- | --- | --- |
 | P01-001 | Freie Seitengestaltung erzeugt Vergleichsrauschen trotz gleicher Werte | Gemeinsames versioniertes Layout-Werkzeug; Reihenfolge aus Stories; gleiche Rastergeometrie für A/B gemessen | Komponentendifferenzen bleiben ausdrücklich erhalten, keine allgemeine Pixelgleichheit. |
 | P01-002 | Raster könnte Overlays abschneiden oder Komponenten skalieren/umfärben | Native sichtbare Bounds, variable Kartenhöhe/-breite, keine neuen Clips; rekursive Eigenschaftshashes vor/nach Komposition, Export und Rendern | Nur dokumentierter Adapterumfang; gedrehte/gespiegelte Nodes und nicht unterstützte Referenzen blockieren. |
-| P01-003 | Nachträgliche Präsentation überschreibt Forschungseingaben | Eingabehash vor/nach Vorgang; neuer exklusiver Ausgabeordner und Schutz historischer Pfade; alle run-04-Dateien gegen HEAD geprüft | Die neuen Präsentationen sind eigene nachträgliche Beispiele, keine Ersatzresultate. |
+| P01-003 | Nachträgliche Präsentation überschreibt Forschungseingaben | Eingabehash vor/nach Vorgang; exklusive Zieldateien und Schutz historischer Pfade; alle run-04-Dateien gegen HEAD geprüft | Die neuen Präsentationen sind eigene nachträgliche Beispiele, keine Ersatzresultate. |
 | P01-004 | Ein Test verglich frisch erzeugte In-Memory-Defaults mit durch Export normalisierten nativen Eigenschaften | Synthetische Fixture zunächst wie echte Eingabe als FIG exportieren/einlesen, dann Präsentation vergleichen; kein Entfernen weiterer Invarianten | Rohimport-/Wiremetadaten und Renderer-Caches bleiben explizit außerhalb der Komponentenwertprüfung. |
 
-[Anleitung und vollständige Testverifikation](../presentation/README.md). Keine Änderung der alten Gestaltungsfreiheit in run-01 bis run-04.
+[Anleitung und vollständige Testverifikation](OPENPENCIL-PREVIEW.md). Keine Änderung der alten Gestaltungsfreiheit in run-01 bis run-04.
+
+## P01-005 · Vorlage nicht mit Ergebnisablage verwechseln
+
+Nutzerkorrektur vom 29. Oktober 2026: Kein zusätzlicher presentation-Ausgabebereich. Reparatur: normale Komponentenablage mit `<komponente>.fig`, `preview.png` und `preview-check.json`; Werkzeuge nach tools/openpencil integriert. Die wiederverwendbare Vorlage bleibt zentral als tools/openpencil/templates/presentation.json und wird im neuen Receipt gehasht. Vorhandene Arbeitsordner sind erlaubt, vorhandene Zieldateien und Forschungseingaben bleiben geschützt. Nachträgliche A/B-Proben lediglich verschoben/umbenannt, ihre FIG-/PNG-Bytes unverändert. 17 Layout-/Ablage-/Vorlagenregressionen bestanden; siehe [aktuellen Nachweis](openpencil-preview-verification.json).

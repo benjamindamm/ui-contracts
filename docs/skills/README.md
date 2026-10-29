@@ -72,6 +72,6 @@ Aktueller zusätzlicher Nachweis: [37 Funktionstests Quelle](../../tools/skill-t
 
 Bibliotheken liegen unter `libraries/<id>/`; die frühere Draftbibliothek heißt jetzt `example`. Jeder Autorenauftrag wählt seine Bibliothek explizit. [Leere Bibliothek anlegen, auswählen und historische Pfade einordnen](../../libraries/README.md). `inspect --library ID` unterstützt die begrenzte Originalformatprüfung; keine allgemeine semantische Bibliotheksfreigabe.
 
-## Einheitliche Zielpräsentation
+## Einheitliches Vorschau-Layout
 
-Für unterstützte native Zustandsübersichten das [gemeinsame Präsentationswerkzeug](../presentation/README.md) verwenden, statt Seitengestaltung pro Agent neu zu erfinden. Komponenten-FIG und Präsentation bleiben getrennte Dateien; keine historische Lieferung überschreiben. Der Helper setzt Originalgruppen unverändert in Karten und prüft dies per Readback.
+Für unterstützte native Zustandsübersichten das [gemeinsame Präsentationswerkzeug](OPENPENCIL-PREVIEW.md) verwenden, statt Seitengestaltung pro Agent neu zu erfinden. Die finale Komponenten-FIG und `preview.png` liegen gemeinsam im normalen Ergebnisordner; kein separater presentation-Bereich. Keine historische Lieferung überschreiben. Der Helper setzt Originalgruppen unverändert in Karten und prüft dies per Readback.

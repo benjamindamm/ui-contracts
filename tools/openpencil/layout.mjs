@@ -1,6 +1,17 @@
-// Native presentation only. No component values or internal coordinates are authored here.
-import {computeDescendantVisualBounds} from '../openpencil/node_modules/@open-pencil/scene-graph/dist/geometry.js';
-export const STYLE=Object.freeze({version:'native-presentation/1',columns:2,margin:32,gap:24,padding:24,captionHeight:20,captionGap:20,headerHeight:112,footerHeight:48,minCardWidth:400});
+// Shared presentation template only. No component values or internal coordinates are authored here.
+import {readFileSync} from 'node:fs';
+import {computeDescendantVisualBounds} from './node_modules/@open-pencil/scene-graph/dist/geometry.js';
+export const TEMPLATE_URL=new URL('./templates/presentation.json',import.meta.url);
+export function validateTemplate(value){
+ if(!value||value.version!=='native-presentation/1')throw Error('Unsupported presentation template version');
+ for(const key of ['columns','margin','gap','padding','captionHeight','captionGap','headerHeight','footerHeight','minCardWidth','cardRadius','borderWeight'])if(!Number.isFinite(value[key])||value[key]<=0)throw Error('Invalid presentation template: '+key);
+ if(!Number.isInteger(value.columns)||value.columns<1||value.columns>4)throw Error('Invalid column count');
+ for(const key of ['background','surface','border','text','muted'])if(!/^#[0-9A-F]{6}$/.test(value.colors?.[key]))throw Error('Invalid presentation color: '+key);
+ for(const key of ['titleSize','subtitleSize','captionSize','footerSize'])if(!Number.isFinite(value.typography?.[key])||value.typography[key]<=0)throw Error('Invalid presentation typography: '+key);
+ if(![400,700].includes(value.typography.titleWeight))throw Error('Unsupported title weight');
+ return Object.freeze({...value,colors:Object.freeze({...value.colors}),typography:Object.freeze({...value.typography})});
+}
+export const STYLE=validateTemplate(JSON.parse(readFileSync(TEMPLATE_URL,'utf8')));
 const omit=new Set(['id','parentId','childIds','source','derivedLayout','textPicture','derivedTextGlyphs','textPathData','textPathBox']);
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v;
 export function snapshot(graph,node,root=true){
@@ -44,17 +55,17 @@ export function apply(graph,cases,ids,layout,{title,subtitle,fontFamily}){
  const retained=new Set();const collect=n=>{retained.add(n.id);for(const id of n.childIds)collect(graph.getNode(id));};cases.forEach(collect);
  for(const id of retained){const n=graph.getNode(id);if(n.componentId&&!retained.has(n.componentId))throw Error('Component dependencies outside selected cases require a separate transfer adapter');}
  const solid=hex=>({type:'SOLID',color:{r:parseInt(hex.slice(1,3),16)/255,g:parseInt(hex.slice(3,5),16)/255,b:parseInt(hex.slice(5,7),16)/255,a:1},opacity:1,visible:true});
- const board=graph.createNode('FRAME',page.id,{name:'Presentation',x:0,y:0,width:layout.width,height:layout.height,fills:[solid('#F8FAFC')],clipsContent:false,layoutMode:'NONE'});
- const text=(parent,name,x,y,w,h,value,size,weight=400,color='#172B4D')=>graph.createNode('TEXT',parent,{name,x,y,width:w,height:h,text:value,fontFamily,fontWeight:weight,fontSize:size,lineHeight:Math.ceil(size*1.5),textAutoResize:'NONE',fills:[solid(color)]});
- text(board.id,'presentation/title',STYLE.margin,STYLE.margin,layout.width-STYLE.margin*2,44,title,28,700);
- text(board.id,'presentation/subtitle',STYLE.margin,STYLE.margin+52,layout.width-STYLE.margin*2,28,subtitle,13,400,'#64748B');
+ const board=graph.createNode('FRAME',page.id,{name:'Presentation',x:0,y:0,width:layout.width,height:layout.height,fills:[solid(STYLE.colors.background)],clipsContent:false,layoutMode:'NONE'});
+ const text=(parent,name,x,y,w,h,value,size,weight=400,color=STYLE.colors.text)=>graph.createNode('TEXT',parent,{name,x,y,width:w,height:h,text:value,fontFamily,fontWeight:weight,fontSize:size,lineHeight:Math.ceil(size*1.5),textAutoResize:'NONE',fills:[solid(color)]});
+ text(board.id,'presentation/title',STYLE.margin,STYLE.margin,layout.width-STYLE.margin*2,44,title,STYLE.typography.titleSize,STYLE.typography.titleWeight);
+ text(board.id,'presentation/subtitle',STYLE.margin,STYLE.margin+52,layout.width-STYLE.margin*2,28,subtitle,STYLE.typography.subtitleSize,400,STYLE.colors.muted);
  cases.forEach((node,i)=>{
   const c=layout.cards[i];const card=graph.createNode('FRAME',board.id,{name:'Case / '+ids[i],x:c.x,y:c.y,width:c.width,height:c.height,
-   fills:[solid('#FFFFFF')],strokes:[{...solid('#E2E8F0'),weight:1,align:'INSIDE'}],cornerRadius:12,clipsContent:false,layoutMode:'NONE'});
-  text(card.id,'presentation/caption',STYLE.padding,STYLE.padding,c.width-STYLE.padding*2,STYLE.captionHeight,`${String(i+1).padStart(2,'0')}  ${ids[i]}`,13,400,'#64748B');
+   fills:[solid(STYLE.colors.surface)],strokes:[{...solid(STYLE.colors.border),weight:STYLE.borderWeight,align:'INSIDE'}],cornerRadius:STYLE.cardRadius,clipsContent:false,layoutMode:'NONE'});
+  text(card.id,'presentation/caption',STYLE.padding,STYLE.padding,c.width-STYLE.padding*2,STYLE.captionHeight,`${String(i+1).padStart(2,'0')}  ${ids[i]}`,STYLE.typography.captionSize,400,STYLE.colors.muted);
   graph.reparentNode(node.id,card.id);graph.updateNode(node.id,{x:c.componentX,y:c.componentY});
  });
- text(board.id,'presentation/footer',STYLE.margin,layout.height-STYLE.margin-24,layout.width-STYLE.margin*2,24,`Statisches Design · Originalgröße 1:1 · ${STYLE.version}`,12,400,'#64748B');
+ text(board.id,'presentation/footer',STYLE.margin,layout.height-STYLE.margin-24,layout.width-STYLE.margin*2,24,`Statisches Design · Originalgröße 1:1 · ${STYLE.version}`,STYLE.typography.footerSize,400,STYLE.colors.muted);
  for(const id of oldChildren)if(!keep.has(id))graph.deleteNode(id);
  graph.updateNode(page.id,{name:title+' · Übersicht'});return board;
 }

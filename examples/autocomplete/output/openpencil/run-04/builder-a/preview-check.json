@@ -4,8 +4,8 @@
   "scope": "native-presentation-and-component-invariants",
   "style": "native-presentation/1",
   "input": {
-    "path": "examples/autocomplete/reproducibility/run-04/builder-b/autocomplete.fig",
-    "sha256": "4972198fe30b878f6e16733450c45acd9fbe4362235c590fce8016b40e6e47df"
+    "path": "examples/autocomplete/reproducibility/run-04/builder-a/autocomplete.fig",
+    "sha256": "974ecd154e27b816a0410c354e5d655eb4ca27d22a02f3b3de9d88a6e1eaf6dc"
   },
   "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
   "selectedLibrary": "example",
@@ -131,72 +131,72 @@
   "cases": [
     {
       "id": "closed",
-      "nodes": 10,
-      "beforeSha256": "185267439b210efbb4ab1fe01bb506c64afc11597dd597763d38074477610500",
-      "afterSha256": "185267439b210efbb4ab1fe01bb506c64afc11597dd597763d38074477610500",
+      "nodes": 8,
+      "beforeSha256": "bd0e4da265c231ccdf7d85bf319298f44460d44a8e395e1cb0f7f742c5e81f22",
+      "afterSha256": "bd0e4da265c231ccdf7d85bf319298f44460d44a8e395e1cb0f7f742c5e81f22",
       "unchanged": true
     },
     {
       "id": "opening",
-      "nodes": 10,
-      "beforeSha256": "11f57f724c5f89b32c974c8a229cb45d1437c17f1927835113dcd9eb643170f0",
-      "afterSha256": "11f57f724c5f89b32c974c8a229cb45d1437c17f1927835113dcd9eb643170f0",
+      "nodes": 8,
+      "beforeSha256": "be0d7b650fb7f9e1f8af7d10f23d919436ec3b536df240c4618123a1aaf76b6e",
+      "afterSha256": "be0d7b650fb7f9e1f8af7d10f23d919436ec3b536df240c4618123a1aaf76b6e",
       "unchanged": true
     },
     {
       "id": "loading",
-      "nodes": 12,
-      "beforeSha256": "3a804d8325cf7d4d8e288ed0d38f10c7aabf6b30bd1ff53cfa72776e2052906d",
-      "afterSha256": "3a804d8325cf7d4d8e288ed0d38f10c7aabf6b30bd1ff53cfa72776e2052906d",
+      "nodes": 10,
+      "beforeSha256": "12302f98b37ff005c01590263426b94b813d8be665078f65f934624c09c1715a",
+      "afterSha256": "12302f98b37ff005c01590263426b94b813d8be665078f65f934624c09c1715a",
       "unchanged": true
     },
     {
       "id": "ready",
-      "nodes": 24,
-      "beforeSha256": "92ae118cf204c38c40b6d59d7918846121ffb60ccbb8b045928c8b8c97ef8894",
-      "afterSha256": "92ae118cf204c38c40b6d59d7918846121ffb60ccbb8b045928c8b8c97ef8894",
+      "nodes": 22,
+      "beforeSha256": "5075a9f16d5d6b6e1a91a2ca7b87cda8a9dae8c93040f7e511d4d6c190973cf8",
+      "afterSha256": "5075a9f16d5d6b6e1a91a2ca7b87cda8a9dae8c93040f7e511d4d6c190973cf8",
       "unchanged": true
     },
     {
       "id": "active",
-      "nodes": 24,
-      "beforeSha256": "d160e2ed84a6b75839bc5b73ba11cf6bf0db7cec0bfc101f635e03a2f16f3202",
-      "afterSha256": "d160e2ed84a6b75839bc5b73ba11cf6bf0db7cec0bfc101f635e03a2f16f3202",
+      "nodes": 22,
+      "beforeSha256": "484159005fb566e1a51735f96e55fc6b58a62cbd8bdf513074788cae99511bcb",
+      "afterSha256": "484159005fb566e1a51735f96e55fc6b58a62cbd8bdf513074788cae99511bcb",
       "unchanged": true
     },
     {
       "id": "scroll-end",
-      "nodes": 24,
-      "beforeSha256": "e44190748ee7386a6e927e06ce1c7f2c5f485317ea73a55f5a2c48f8f780b9e8",
-      "afterSha256": "e44190748ee7386a6e927e06ce1c7f2c5f485317ea73a55f5a2c48f8f780b9e8",
+      "nodes": 22,
+      "beforeSha256": "b77bcd59b6d05fd6617cab9a5f20b81153a478ad240a27b29574177ce1ad08e9",
+      "afterSha256": "b77bcd59b6d05fd6617cab9a5f20b81153a478ad240a27b29574177ce1ad08e9",
       "unchanged": true
     },
     {
       "id": "selected",
-      "nodes": 24,
-      "beforeSha256": "a8df416be4500bbce3c240869acf3dcbf905071a8aa4b8ffe31d0f8362503b2f",
-      "afterSha256": "a8df416be4500bbce3c240869acf3dcbf905071a8aa4b8ffe31d0f8362503b2f",
+      "nodes": 22,
+      "beforeSha256": "c6aeddfec61350cef8b96a14cdb4c6888521b0fbd632b41e1dd2a7cba3d42e34",
+      "afterSha256": "c6aeddfec61350cef8b96a14cdb4c6888521b0fbd632b41e1dd2a7cba3d42e34",
       "unchanged": true
     },
     {
       "id": "empty",
-      "nodes": 12,
-      "beforeSha256": "dfc6fa89e09286a7c13a8e889f79d5f60e46995b44a9156e132d295af443f4c4",
-      "afterSha256": "dfc6fa89e09286a7c13a8e889f79d5f60e46995b44a9156e132d295af443f4c4",
+      "nodes": 10,
+      "beforeSha256": "2a7eaf171338975eb5a00a73b78e0c2397bda03deaf00b09324a64145ff64773",
+      "afterSha256": "2a7eaf171338975eb5a00a73b78e0c2397bda03deaf00b09324a64145ff64773",
       "unchanged": true
     },
     {
       "id": "error",
-      "nodes": 12,
-      "beforeSha256": "49320ee4f81a5b7260ceb46ee54556524a1687a720cc391a62d455331f628fcc",
-      "afterSha256": "49320ee4f81a5b7260ceb46ee54556524a1687a720cc391a62d455331f628fcc",
+      "nodes": 10,
+      "beforeSha256": "7c0c20f6e2e5e8dea59c31a7af51a00753039a026c909cdc530798dcec3ee2d3",
+      "afterSha256": "7c0c20f6e2e5e8dea59c31a7af51a00753039a026c909cdc530798dcec3ee2d3",
       "unchanged": true
     },
     {
       "id": "disabled",
-      "nodes": 10,
-      "beforeSha256": "ccd000de6cb95fcc50d393e9aa57ae81e71d637a672de30753f7a65fd535ce39",
-      "afterSha256": "ccd000de6cb95fcc50d393e9aa57ae81e71d637a672de30753f7a65fd535ce39",
+      "nodes": 8,
+      "beforeSha256": "c63b092ca93705124fa415903fa741c4e2ce0db87664f7ad705edfd8a996dc2f",
+      "afterSha256": "c63b092ca93705124fa415903fa741c4e2ce0db87664f7ad705edfd8a996dc2f",
       "unchanged": true
     }
   ],
@@ -251,13 +251,18 @@
     }
   ],
   "outputs": {
-    "presentation.fig": "b5d7d622d1d1ced53661075110c58470b392c60e23ca85f321b61ba64df181c8",
-    "presentation.png": "282e9b06aa39a420e8c7bcef02b9b2725b3e31e87ca61893d42c091cdd43ba4d"
+    "autocomplete.fig": "57f56e5e6c951656c465a84a90728519677e82fd61a306533cb23df764c5275a",
+    "preview.png": "1aee14ccad1f6590da5e632e48480b8ada6fe36b91a68ca66af667de89858314"
   },
   "notChecked": [
     "Runtime/ARIA",
     "Figma import metadata preservation",
     "Styled text runs, rotated/flipped nodes and multi-page input (blocked)",
     "Pixel equality between different source component structures"
-  ]
+  ],
+  "presentationTemplate": {
+    "path": "tools/openpencil/templates/presentation.json",
+    "sha256": "678049071fd1db1f4c39f0ee2be3907c1d165e504181995986c8fa1cccdc469f"
+  },
+  "templateBindingVerification": "Reexecuted template renders identical PNG and same component invariant hashes/layout; original FIG/PNG bytes retained."
 }

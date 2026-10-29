@@ -1,0 +1,28 @@
+{
+  "version": "native-presentation/1",
+  "columns": 2,
+  "margin": 32,
+  "gap": 24,
+  "padding": 24,
+  "captionHeight": 20,
+  "captionGap": 20,
+  "headerHeight": 112,
+  "footerHeight": 48,
+  "minCardWidth": 400,
+  "cardRadius": 12,
+  "borderWeight": 1,
+  "colors": {
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "border": "#E2E8F0",
+    "text": "#172B4D",
+    "muted": "#64748B"
+  },
+  "typography": {
+    "titleSize": 28,
+    "titleWeight": 700,
+    "subtitleSize": 13,
+    "captionSize": 13,
+    "footerSize": 12
+  }
+}

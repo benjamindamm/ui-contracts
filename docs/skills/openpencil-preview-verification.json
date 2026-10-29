@@ -5,9 +5,9 @@
   "scope": "Presentation wrapper, native invariants and preservation of historical inputs",
   "style": "native-presentation/1",
   "tests": {
-    "count": 14,
+    "count": 17,
     "passed": true,
-    "command": "node --test tools/presentation/test_presentation.mjs"
+    "command": "node --test tools/openpencil/test_layout.mjs"
   },
   "historicalRun04FilesUnchangedAgainstHEAD": true,
   "historicalFileSha256": {
@@ -66,9 +66,10 @@
   "sameLayoutPlan": true,
   "pngReexecutionsByteIdentical": true,
   "sourceFileSha256": {
-    "tools/presentation/layout.mjs": "9102fbdc264d4b5d13123858d9cfcbaf22987aaf4812f1141d34091a3efb81d4",
-    "tools/presentation/present.mjs": "19548b7e255068a092682756e709fa0545d4d645288edc8d00017bacef17b992",
-    "tools/presentation/test_presentation.mjs": "27862eee76c0bbdbd15615a0a5887d3b236afb80e874e7722cbce56b9f30a86f"
+    "tools/openpencil/layout.mjs": "f927f8a8cc59ed5ab3da0e73964064ad27079fd4dfc3aa440c361b768d505c32",
+    "tools/openpencil/preview.mjs": "55d4e594dff386a156a859054c3a4ccc1a5c6d0ec5dfd6974fde0bf6ccc84fa5",
+    "tools/openpencil/test_layout.mjs": "1cfc77f44edb923e5ec22de7cf9199d0da35b47ae083c7e2b625194486a895ef",
+    "tools/openpencil/templates/presentation.json": "678049071fd1db1f4c39f0ee2be3907c1d165e504181995986c8fa1cccdc469f"
   },
   "sourceRunManifest": {
     "path": "examples/autocomplete/reproducibility/run-04/run.json",
@@ -87,5 +88,36 @@
     "New model generation",
     "Pixel identity between different original component structures",
     "Live editor save/load"
-  ]
+  ],
+  "presentationTemplate": {
+    "path": "tools/openpencil/templates/presentation.json",
+    "sha256": "678049071fd1db1f4c39f0ee2be3907c1d165e504181995986c8fa1cccdc469f"
+  },
+  "renamedArtifacts": [
+    {
+      "from": "examples/presentation/autocomplete-run04/builder-a/presentation.fig",
+      "to": "examples/autocomplete/output/openpencil/run-04/builder-a/autocomplete.fig",
+      "sha256": "57f56e5e6c951656c465a84a90728519677e82fd61a306533cb23df764c5275a",
+      "bytesUnchanged": true
+    },
+    {
+      "from": "examples/presentation/autocomplete-run04/builder-a/presentation.png",
+      "to": "examples/autocomplete/output/openpencil/run-04/builder-a/preview.png",
+      "sha256": "1aee14ccad1f6590da5e632e48480b8ada6fe36b91a68ca66af667de89858314",
+      "bytesUnchanged": true
+    },
+    {
+      "from": "examples/presentation/autocomplete-run04/builder-b/presentation.fig",
+      "to": "examples/autocomplete/output/openpencil/run-04/builder-b/autocomplete.fig",
+      "sha256": "b5d7d622d1d1ced53661075110c58470b392c60e23ca85f321b61ba64df181c8",
+      "bytesUnchanged": true
+    },
+    {
+      "from": "examples/presentation/autocomplete-run04/builder-b/presentation.png",
+      "to": "examples/autocomplete/output/openpencil/run-04/builder-b/preview.png",
+      "sha256": "282e9b06aa39a420e8c7bcef02b9b2725b3e31e87ca61893d42c091cdd43ba4d",
+      "bytesUnchanged": true
+    }
+  ],
+  "outputConvention": "<component>.fig + preview.png + preview-check.json directly in the component output directory"
 }
