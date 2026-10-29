@@ -61,8 +61,16 @@ def validate(repo,name):
     repo=repo.resolve()
     root=library_root(repo,name);manifest=json.loads((root/'fonts.json').read_text());tokens=json.loads((root/'tokens.json').read_text())
     if manifest.get('format')!='ui-contracts-font-assets/1':raise ValueError('Unsupported asset manifest format')
-    _,license_data=asset(root,manifest['license'])
-    if not license_data.strip():raise ValueError('Empty license')
+    license_meta=manifest.get('license')
+    if license_meta is not None and not isinstance(license_meta,dict):raise ValueError('License metadata must be an object or null')
+    if license_meta and ('path' in license_meta or 'sha256' in license_meta):
+        _,license_data=asset(root,license_meta)
+        if not license_data.strip():raise ValueError('Empty declared license file')
+        license_evidence={'status':'file-present','fileIntegrity':'pass','rightsReview':'notChecked'}
+        warnings=[]
+    else:
+        license_evidence={'status':'notChecked','reason':'No separate license file provided','rightsReview':'notChecked'}
+        warnings=['No separate license file supplied. Technical font checks do not establish usage or redistribution rights.']
     families=manifest['families'];rows=[];keys=set();bound_tokens=set()
     if not families:raise ValueError('No font families bound')
     for family in families:
@@ -96,8 +104,8 @@ def validate(repo,name):
             rows.append({'family':fam,'style':face['style'],'weight':face['weight'],'openpencilStyle':face['openpencilStyle'],'ttfMetadata':metadata,'assets':assets})
     return {'overall':'PASS_LIMITED','release':False,'scope':'local-font-assets-and-token-binding','library':name,
             'manifestSha256':hashlib.sha256((root/'fonts.json').read_bytes()).hexdigest(),
-            'boundTokens':sorted(bound_tokens),'faces':rows,'license':manifest['license'],
-            'notChecked':['Full OpenType conformance','All Unicode coverage','Renderer/browser loading (separate evidence)','Native iOS/Android embedding']}
+            'boundTokens':sorted(bound_tokens),'faces':rows,'license':license_meta,'licenseEvidence':license_evidence,'warnings':warnings,
+            'notChecked':['Usage and redistribution rights','Full OpenType conformance','All Unicode coverage','Renderer/browser loading (separate evidence)','Native iOS/Android embedding']}
 
 
 def main():

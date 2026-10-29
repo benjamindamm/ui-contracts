@@ -16,7 +16,7 @@ Mehrere Bibliotheken liegen getrennt unter `libraries/`. Die bisherige Forschung
 python3 tools/libraries/manage.py init meine-app --name "Meine App"
 ```
 
-Der Agentenauftrag wählt `meine-app` ausdrücklich aus. Beispiele werden nicht automatisch gelesen oder übernommen. [Bibliotheken, Auswahl und Migration](libraries/README.md) · [Lokale Schriftdateien und validiertes Beispiel](docs/fonts/README.md).
+Der Agentenauftrag wählt `meine-app` ausdrücklich aus. Beispiele werden nicht automatisch gelesen oder übernommen. [Bibliotheken, Auswahl und Migration](libraries/README.md) · [Lokale Schriftdateien und validiertes Beispiel](docs/fonts/README.md) · [Einheitliche native Präsentation](docs/presentation/README.md).
 
 ## Das Prinzip
 

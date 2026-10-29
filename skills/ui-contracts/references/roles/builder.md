@@ -10,3 +10,5 @@ Auftrag: das vereinbarte Zielartefakt aus den Originalquellen und den tatsächli
 - Vor Limitstopp Checkpoint mit Artefakthashes, Restaufgaben und offenen Fragen. Jede Reparatur als eigene Revision; Erstlieferung bleibt erhalten.
 
 Übergabe: native Datei, nötiger Generator/Readback, kurz belegte Beobachtungen und Grenzen. `ready` sagt nur, dass die vereinbarte Lieferung bereitsteht; unabhängige Abnahme bleibt separat.
+
+Bei einer verlangten OpenPencil-Zustandsübersicht die gemeinsame native Präsentation unter `tools/presentation/present.mjs` nutzen, soweit der dokumentierte Umfang passt. Nur Bibliotheks-ID, Komponentenindexschlüssel, eigene Eingabe-FIG und einen neuen Ausgabeordner übergeben; Anleitung in `docs/presentation/README.md` gezielt nachladen. Präsentation ist keine Komponentenreparatur. Eigene Erstlieferung und historische Forschungsdateien nicht überschreiben; keine alten Beispielbilder als Vorlage nachladen.

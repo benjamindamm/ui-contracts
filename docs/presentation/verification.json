@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-29",
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "scope": "Presentation wrapper, native invariants and preservation of historical inputs",
+  "style": "native-presentation/1",
+  "tests": {
+    "count": 14,
+    "passed": true,
+    "command": "node --test tools/presentation/test_presentation.mjs"
+  },
+  "historicalRun04FilesUnchangedAgainstHEAD": true,
+  "historicalFileSha256": {
+    "examples/autocomplete/reproducibility/run-04/README.md": "ef0da97a962797a49eb863cf867b10deabc2af6aa350d77209418f307cde64ac",
+    "examples/autocomplete/reproducibility/run-04/builder-a/REPORT.md": "fa40a84f6ca21e22beec9a913ec0e3b337ab61f524cfb815f022ae79b963765a",
+    "examples/autocomplete/reproducibility/run-04/builder-a/autocomplete.fig": "974ecd154e27b816a0410c354e5d655eb4ca27d22a02f3b3de9d88a6e1eaf6dc",
+    "examples/autocomplete/reproducibility/run-04/builder-a/bootstrap.json": "3bcb3618bbb4f9816d8d1e39329c0d9f09ef9008f7f1dea6973a11f7593f0f3f",
+    "examples/autocomplete/reproducibility/run-04/builder-a/build-fig.mjs": "d463c18b26699e36276dcac9c08c049799a85026345c0959821515d3b3dd7680",
+    "examples/autocomplete/reproducibility/run-04/builder-a/check-receipt.json": "8dc7034f8e567bf9d6f7ecd8ec398433fe9e97bdb10ffa78492f348f0cf23daa",
+    "examples/autocomplete/reproducibility/run-04/builder-a/coordinator-check.json": "8dc7034f8e567bf9d6f7ecd8ec398433fe9e97bdb10ffa78492f348f0cf23daa",
+    "examples/autocomplete/reproducibility/run-04/builder-a/handoff-v1.json": "06c18fee9592256b345022d21246be51f63ed37915c1f8eae68cb3f106f0e5b3",
+    "examples/autocomplete/reproducibility/run-04/builder-a/readback.json": "01c729a2f24fbe0953aeb49532eabd8175718bc92944c4c2938c2ccb58cef6c3",
+    "examples/autocomplete/reproducibility/run-04/builder-a/readback.mjs": "cc770f5fd8e49873421da10a80af645efa83687b863820e86f98a073377a27be",
+    "examples/autocomplete/reproducibility/run-04/builder-a/task.json": "051a14745998d9fffba819666860e7c0718108180d0718ca5bd2bab98b1d9356",
+    "examples/autocomplete/reproducibility/run-04/builder-b/REPORT.md": "9d611f8656bdd70fd84344a1afc9e085f2e4549fd0ae76566ef463f81de099aa",
+    "examples/autocomplete/reproducibility/run-04/builder-b/autocomplete.fig": "4972198fe30b878f6e16733450c45acd9fbe4362235c590fce8016b40e6e47df",
+    "examples/autocomplete/reproducibility/run-04/builder-b/bootstrap.json": "939fe3f076a1d1e95ac58ff233081ad4489915cfa56d98b63495e75a1add179d",
+    "examples/autocomplete/reproducibility/run-04/builder-b/coordinator-check.json": "58eb865feb451692f6bfa4472bb48a1cbd2500dc9853612045e87c174f76134b",
+    "examples/autocomplete/reproducibility/run-04/builder-b/generate-fig.mjs": "d1ed3c6e0cca04d815f6c961443758b80144f99eb3410213bf6a31ba340c796d",
+    "examples/autocomplete/reproducibility/run-04/builder-b/handoff-check-receipt.json": "58eb865feb451692f6bfa4472bb48a1cbd2500dc9853612045e87c174f76134b",
+    "examples/autocomplete/reproducibility/run-04/builder-b/handoff-v1.json": "e519d69142cab7e4c90e5190e2bef92785b07b4abc7caf31b5614cd5ed1f325d",
+    "examples/autocomplete/reproducibility/run-04/builder-b/readback.json": "b817525e0cb81595b9ad757930e505b76b4e83f659847826f6e381180c5647c1",
+    "examples/autocomplete/reproducibility/run-04/builder-b/readback.mjs": "d3e810c847c5330bbac6c37f186a93f535662e9df4e802b345e1df02f0022ec9",
+    "examples/autocomplete/reproducibility/run-04/builder-b/task.json": "1dac121a371793add151e5126f6fc9b77b5f81eac7a67df7851d203b8f795f79",
+    "examples/autocomplete/reproducibility/run-04/coordinator-countercheck.json": "ca0b47ab5c6f02b82a76ae7318d3b159a8a9b6f75ec1c458ff95a609c95382d4",
+    "examples/autocomplete/reproducibility/run-04/input-manifest.json": "74aa9eabcfe7301a0845d230cc1ff4acd6ce14cf0435ec1ed0e6cba0b6e25eb2",
+    "examples/autocomplete/reproducibility/run-04/policy.json": "8656349c4af0ae48568e462bd481b257ec002968fd8b9cd5072c9f673c56fb98",
+    "examples/autocomplete/reproducibility/run-04/process-check-receipt.json": "361f8aec345574e7b760592a6985ff7f8b6e23e2224d533acc786e1de1645fb7",
+    "examples/autocomplete/reproducibility/run-04/prompts/builder-a.txt": "9a1e37973234feeca00a06569cac88b4548512bfb09c4227cc8b659cfbe956b3",
+    "examples/autocomplete/reproducibility/run-04/prompts/builder-b.txt": "aa0249bce4303db8d19ec6fa07ec8e5268a4f5b3aa5841a5a152aa270a1a8089",
+    "examples/autocomplete/reproducibility/run-04/prompts/reviewer-blind.txt": "ebb7ab9d54462abd7a5f85f46b82400c8e8f8420ba6efa66e21409cdc7ac8130",
+    "examples/autocomplete/reproducibility/run-04/prompts/reviewer-report.txt": "b14df1ebd2313368d4452b6d54b4d4a705737399650060786b35d43feee147c7",
+    "examples/autocomplete/reproducibility/run-04/review/bootstrap-blind.json": "990f76c52419f4346f3b4659f68acb681e7d64df7d95dc601d3c4f069c672b01",
+    "examples/autocomplete/reproducibility/run-04/review/bootstrap-report.json": "1124a8338824eea55ca172702dd080630b914e917102726f394d532a36ba6669",
+    "examples/autocomplete/reproducibility/run-04/review/coordinator-check-blind.json": "788dbb7933d1bf8ab7a3c8d4cfde4745eeb693cc38484a226d37e8ab48586e3f",
+    "examples/autocomplete/reproducibility/run-04/review/countercheck-receipt.json": "ca0b47ab5c6f02b82a76ae7318d3b159a8a9b6f75ec1c458ff95a609c95382d4",
+    "examples/autocomplete/reproducibility/run-04/review/first-review.json": "99a6589c83663bb6d37ab455a0feddc4bd272be4274f99674d1d321d727f148b",
+    "examples/autocomplete/reproducibility/run-04/review/handoff-blind-v1.json": "05cd0d2bd14a97f557524e0f7e583ba543cff378dd057abeabb74b2b949e22d1",
+    "examples/autocomplete/reproducibility/run-04/review/readback-reviewer.json": "4b80cc36d48889e660b6ec7a67b630b14e9e9c00cd8366c1fafa02df33494f3b",
+    "examples/autocomplete/reproducibility/run-04/review/report-check/REPORT.md": "05bb3c9a9b293cf1212067ff923136ae13e35b6c653bdc64cbd5a5d70d625cf2",
+    "examples/autocomplete/reproducibility/run-04/review/report-check/coordinator-check.json": "35505d9b38a1c5c4b409e3111c024f82a9993166ac84ab2a95a821ff6679c66d",
+    "examples/autocomplete/reproducibility/run-04/review/report-check/handoff-check-receipt.json": "35505d9b38a1c5c4b409e3111c024f82a9993166ac84ab2a95a821ff6679c66d",
+    "examples/autocomplete/reproducibility/run-04/review/report-check/handoff-report-v1.json": "72387f0e1cde7d40aad562c04b28182b75d0bd836f4918b8d240eaedbcd3af3b",
+    "examples/autocomplete/reproducibility/run-04/review/task-blind.json": "68faf096a29a353fe2a1aea0e7d1937db776b13d92c5291000c99828bbd2555b",
+    "examples/autocomplete/reproducibility/run-04/review/task-blind.spec.md": "f2abba270da301481473f4bb17ea1ba6fe49d4fdd642217b1e6fa27147c8d7c1",
+    "examples/autocomplete/reproducibility/run-04/review/task-report.json": "66397f4c846d7e34e7caa56c338ca9b2424920acf3b0adf18450140eb200117a",
+    "examples/autocomplete/reproducibility/run-04/review/task-report.spec.md": "35ebdf2bb5ce60f4c87cf3cdd17d4b6220608ff70578798599fd7b8ac9b74091",
+    "examples/autocomplete/reproducibility/run-04/run-process.json": "d149e36c6ad0c8327a8ff74da4e886c1e67146a799db9fdb3402f2d6b887839d",
+    "examples/autocomplete/reproducibility/run-04/run.json": "fdb5368d67034fa4e95f04056ab1b808d92a294a31ed04fd93568b2021214847",
+    "examples/autocomplete/reproducibility/run-04/runsheet-technical.md": "3ee3d5707c9271be61a5356ff676e34850f9d5b91c3010036ff1945198e7e496"
+  },
+  "componentNodes": {
+    "a": 142,
+    "b": 162
+  },
+  "sameLayoutPlan": true,
+  "pngReexecutionsByteIdentical": true,
+  "sourceFileSha256": {
+    "tools/presentation/layout.mjs": "9102fbdc264d4b5d13123858d9cfcbaf22987aaf4812f1141d34091a3efb81d4",
+    "tools/presentation/present.mjs": "19548b7e255068a092682756e709fa0545d4d645288edc8d00017bacef17b992",
+    "tools/presentation/test_presentation.mjs": "27862eee76c0bbdbd15615a0a5887d3b236afb80e874e7722cbce56b9f30a86f"
+  },
+  "sourceRunManifest": {
+    "path": "examples/autocomplete/reproducibility/run-04/run.json",
+    "sha256": "fdb5368d67034fa4e95f04056ab1b808d92a294a31ed04fd93568b2021214847"
+  },
+  "additionalCountercheck": {
+    "both": "PASS_LIMITED",
+    "failures": 0,
+    "warnings": 0,
+    "matchedPairValues": 572,
+    "comparedPairValues": 572
+  },
+  "notChecked": [
+    "Runtime/ARIA",
+    "Wire/import metadata equivalence",
+    "New model generation",
+    "Pixel identity between different original component structures",
+    "Live editor save/load"
+  ]
+}

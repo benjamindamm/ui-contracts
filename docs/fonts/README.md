@@ -21,7 +21,18 @@ libraries/meine-app/
     LICENSE.txt
 ```
 
-Eine Family nennt `tokenPaths` und je Schnitt `weight`, `style`, `openpencilStyle`, `postScriptName` sowie Datei-/Formathashes. Keine lokale Betriebssysteminstallation oder Onlineauflösung wird als Assetnachweis behandelt. Die Lizenz muss die beabsichtigte Nutzung und Weitergabe zulassen; Manifestangaben ersetzen keine Prüfung der tatsächlichen Lizenz.
+Eine Family nennt `tokenPaths` und je Schnitt `weight`, `style`, `openpencilStyle`, `postScriptName` sowie Datei-/Formathashes. Keine lokale Betriebssysteminstallation oder Onlineauflösung wird als Assetnachweis behandelt. Eine separate Lizenzdatei ist für technische Fonttests optional. Wenn sie vorliegt, kann sie mit Pfad und Hash gebunden werden. Andernfalls bleibt der Lizenznachweis ausdrücklich `notChecked`; Rendering und Dateiprüfung werden allein deshalb nicht blockiert. Eine vorhandene Datei oder Manifestangabe bestätigt keine Nutzungs-/Weitergaberechte.
+
+Ohne separate Datei kann `license` entfallen oder als reine Metadaten geführt werden:
+
+```json
+"license": {
+  "status": "unknown",
+  "note": "Für den Pilot liegt keine separate Lizenzdatei vor."
+}
+```
+
+Keine nicht vorhandenen `path`-/`sha256`-Felder eintragen: Eine ausdrücklich deklarierte, aber fehlende oder veränderte Datei bleibt eine fehlerhafte Referenz. Inter im Example behält seine mitgelieferte Original-Lizenz. `licenseEvidence.status` unterscheidet `file-present` von `notChecked`; `rightsReview` bleibt in beiden Fällen ungeprüft. Der technische Teilstatus `PASS_LIMITED` ist kein Lizenz- oder Veröffentlichungsentscheid.
 
 Aktuell unterstützt der begrenzte Adapter statische normale TrueType-Schnitte plus WOFF2. Variable Fonts, Italic, andere Formate und Fallbackketten sind nicht allgemein umgesetzt. Nicht unterstützte Angaben blockieren, statt still durch eine andere Schrift ersetzt zu werden. Ein neues `init` kopiert weiterhin keine Fonts aus example.
 
@@ -37,7 +48,7 @@ python3 tools/fonts/test_fonts.py
 
 Der Ausgabeordner der Vorschau muss neu oder leer sein; Libraries und historische Autocomplete-Ausgaben dürfen nicht überschrieben werden. `contracts.py inspect --library ID` führt diese zusätzliche Prüfung ebenfalls aus, wenn die ausgewählte Library eine `fonts.json` besitzt; beschädigte Fontassets führen dann zu FAIL, gültige Assets heben den allgemeinen semantischen BLOCKED-Status nicht auf.
 
-Der Validator prüft Dateihashes, Bibliotheksgrenzen, Lizenzdatei, Tokenbindung, TTF-Metadaten (Familie/PostScriptname/Gewicht/statisch) und WOFF2-Header. Das ist keine vollständige OpenType-Konformitätsprüfung oder vollständige WOFF2-Decodierung.
+Der Validator prüft Dateihashes, Bibliotheksgrenzen, eine ausdrücklich referenzierte Lizenzdatei, Tokenbindung, TTF-Metadaten (Familie/PostScriptname/Gewicht/statisch) und WOFF2-Header. Das ist keine vollständige OpenType-Konformitätsprüfung oder vollständige WOFF2-Decodierung.
 
 Die Vorschau lädt die hashgeprüften TTF-Bytes explizit über `fontManager.markLoaded` der gepinnten OpenPencil-Core-Version 0.16.0. CanvasKit muss die Familie erkennen und für den Probetext ausschließlich vorhandene Glyphen melden. Der Adapter exportiert ein FIG, liest die Text-/Familien-/Gewichtswerte zurück und rendert ein PNG. Netzwerk-Fetch ist dabei gesperrt; geladene Quellen werden nach dem Rendern erneut geprüft. CSS und HTML referenzieren ausschließlich die lokalen WOFF2-Dateien, ohne `local()`-Abkürzung.
 
@@ -57,10 +68,14 @@ Bei frei gewählten Vorschauordnern außerhalb des Repositories muss ein gemeins
 - Dateiprüfung: zwei statische Schnitte, vier passende Fontdateien, Lizenzhash und vorhandener Inter-Token.
 - OpenPencil/CanvasKit: beide Familien erkannt, alle 49 Zeichen des Probetexts je Schnitt abgedeckt; vier Textnodes mit je drei zurückgelesenen Sollwerten. PNG visuell kontrolliert, keine Netzwerk-Fetchversuche.
 - BrowserOS neo / Chromium: beide lokalen WOFF2-Dateien geladen; SHA-256 der Browserantworten stimmt mit dem Manifest überein. FontFace-Status `loaded` für 400 und 700. Die gemessenen Probetextbreiten unterscheiden sich: 613,88671875 bzw. 631,1015625 px bei 24 px Schriftgröße.
-- Fünfzehn positive/negative Prüferregressionen, unter anderem falscher Hash, fehlende Datei/Lizenz, falsches Gewicht/Familie, unlesbares TTF, falsche WOFF2-Länge, falscher Token und unsicherer Pfad.
+- Im ursprünglichen Inter-Nachweis: fünfzehn positive/negative Prüferregressionen, unter anderem falscher Hash, fehlende Datei/Lizenz, falsches Gewicht/Familie, unlesbares TTF, falsche WOFF2-Länge, falscher Token und unsicherer Pfad.
 
 Alle Ergebnisse sind `PASS_LIMITED`, `release:false`. Nicht nachgewiesen: vollständige Unicode-Abdeckung, identische Pixel auf allen Plattformen, automatische Bereitstellung im laufenden OpenPencil-Editor auf dem Server, Native-App-Einbettung oder allgemeine Accessibility-Konformität. Ein FIG-Familienname allein garantiert keine auf jedem Ziel vorhandenen identischen Fontbytes. Die Schriftdateien bleiben ausdrücklich bereitzustellende Assets.
 
 ## Revision und historische Forschung
 
 Die ursprünglichen 22 Definitionsdateien wurden nicht geändert; alte Studien und ihre eingegrenzten Prüfprofile behalten diese Quelle. Die zusätzlich aufgenommenen Assets und `fonts.json` ergeben jedoch eine **neue Gesamtbibliotheksrevision**. Neue Läufe müssen das vollständige aktuelle Librarymanifest einfrieren. Die alten 22-Datei-Nachweise werden dadurch nicht nachträglich zu Fontdatei-Nachweisen. [Bibliotheksmigration](../libraries/MIGRATION.md).
+
+## Korrektur der Dateipflicht
+
+Die ursprüngliche Implementierung verlangte immer eine separate Lizenzdatei. Das war eine zu enge Annahme aus dem Inter-Beispiel. Der technische Validator trennt jetzt Dateiintegrität und Tokenbindung von der Verfügbarkeit eines Lizenznachweises. [Korrektur und 20 Regressionstests](license-policy-update.json). Frühere Receipts in diesem Verzeichnis dokumentieren weiterhin den ursprünglichen Stand; sie wurden nicht überschrieben.

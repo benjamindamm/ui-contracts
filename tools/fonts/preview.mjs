@@ -59,7 +59,7 @@ await writeFile(join(output,'fonts.css'),css,{flag:'wx'});
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 const html=`<!doctype html><html lang="de"><meta charset="utf-8"><title>Lokale Library-Schriften</title><link rel="stylesheet" href="fonts.css"><style>body{padding:24px;background:white;color:#172b4d}p{font-size:24px;line-height:1.5}</style><h1>Lokale Schriftdateien</h1><div id="specimen">${assets.faces.map(f=>`<p data-family="${esc(f.family)}" data-weight="${f.weight}" style='font-family:${esc(JSON.stringify(f.family))};font-weight:${f.weight}'>${esc(f.family)} ${f.weight}: ${esc(sample)}</p>`).join('')}</div></html>`;
 await writeFile(join(output,'index.html'),html,{flag:'wx'});
-const receipt={overall:'PASS_LIMITED',release:false,library,scope:'local-TTF-registration-and-static-font-specimen',sample,fonts,networkAttempts,
+const receipt={overall:'PASS_LIMITED',release:false,library,scope:'local-TTF-registration-and-static-font-specimen',sample,fonts,networkAttempts,licenseEvidence:assets.licenseEvidence,warnings:assets.warnings,
  figReadback:{textNodes:textNodes.length,checks:expected.length*3,passed:true},
  outputs:Object.fromEntries(await Promise.all(['fonts.fig','fonts.png','fonts.css','index.html'].map(async f=>[f,sha(await readFile(join(output,f)))]))),
  notChecked:['Live editor import/font availability','Pixel identity across browsers/platforms','All Unicode glyphs','Native app embedding']};

@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-29",
+  "change": "Optional license file for technical font checks",
+  "previousImplementationCommit": "a85d5d1",
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "policy": {
+    "noSeparateFile": "Technical checks continue; licenseEvidence.status=notChecked",
+    "declaredFile": "Must exist and match hash; otherwise invalid reference",
+    "presentFile": "File integrity only; rightsReview remains notChecked"
+  },
+  "tests": {
+    "count": 20,
+    "passed": true,
+    "command": "python3 tools/fonts/test_fonts.py",
+    "newCases": [
+      "test_no_license_metadata_is_not_a_technical_blocker",
+      "test_external_license_note_does_not_require_a_file",
+      "test_present_license_never_establishes_rights_review",
+      "test_no_license_does_not_hide_font_corruption",
+      "test_library_inspection_without_license_file_still_checks_fonts"
+    ]
+  },
+  "exampleLicenseAndOriginalProofFilesUnchanged": true,
+  "currentExampleAssetCheck": {
+    "overall": "PASS_LIMITED",
+    "release": false,
+    "scope": "local-font-assets-and-token-binding",
+    "library": "example",
+    "manifestSha256": "d0a91c9985e3f9aeb515a0d23db14c4dbd3f1d0db3aa97ddd8031bfcceaa4217",
+    "boundTokens": [
+      "autocomplete.fontFamily"
+    ],
+    "faces": [
+      {
+        "family": "Inter",
+        "style": "normal",
+        "weight": 400,
+        "openpencilStyle": "Regular",
+        "ttfMetadata": {
+          "family": "Inter",
+          "postScriptName": "Inter-Regular",
+          "weight": 400,
+          "italic": false,
+          "glyphCount": 2937,
+          "version": "Version 4.001;git-9221beed3",
+          "variable": false
+        },
+        "assets": [
+          {
+            "path": "libraries/example/assets/fonts/Inter-Regular.ttf",
+            "format": "truetype",
+            "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+            "bytes": 411640
+          },
+          {
+            "path": "libraries/example/assets/fonts/Inter-Regular.woff2",
+            "format": "woff2",
+            "sha256": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085",
+            "bytes": 111268
+          }
+        ]
+      },
+      {
+        "family": "Inter",
+        "style": "normal",
+        "weight": 700,
+        "openpencilStyle": "Bold",
+        "ttfMetadata": {
+          "family": "Inter",
+          "postScriptName": "Inter-Bold",
+          "weight": 700,
+          "italic": false,
+          "glyphCount": 2937,
+          "version": "Version 4.001;git-9221beed3",
+          "variable": false
+        },
+        "assets": [
+          {
+            "path": "libraries/example/assets/fonts/Inter-Bold.ttf",
+            "format": "truetype",
+            "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+            "bytes": 420428
+          },
+          {
+            "path": "libraries/example/assets/fonts/Inter-Bold.woff2",
+            "format": "woff2",
+            "sha256": "fa888127b6da015b65569f0351f3b5c391ad928904951f1c20e9f8462a8d95ea",
+            "bytes": 114840
+          }
+        ]
+      }
+    ],
+    "license": {
+      "spdx": "OFL-1.1",
+      "path": "assets/fonts/LICENSE.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    "licenseEvidence": {
+      "status": "file-present",
+      "fileIntegrity": "pass",
+      "rightsReview": "notChecked"
+    },
+    "warnings": [],
+    "notChecked": [
+      "Usage and redistribution rights",
+      "Full OpenType conformance",
+      "All Unicode coverage",
+      "Renderer/browser loading (separate evidence)",
+      "Native iOS/Android embedding"
+    ]
+  },
+  "nativePreviewSmokeTest": {
+    "passed": true,
+    "networkAttempts": 0,
+    "pngMatchesOriginal": true,
+    "licenseEvidence": {
+      "status": "file-present",
+      "fileIntegrity": "pass",
+      "rightsReview": "notChecked"
+    }
+  },
+  "changedFileHashes": {
+    "tools/fonts/check.py": "d9d8605936b697aad6fad7e056e5a915bd50e485bbb3c2d09750da5182d7e6e1",
+    "tools/fonts/preview.mjs": "0c2773ba5db84de73b7f375e7b8c9d762fd1c35bbfd7a89e850091643a42b478",
+    "tools/fonts/test_fonts.py": "9d9be36fb308e7fb9f27445c40face0dbd2b3eaf225de318a45dc498367ca8ea",
+    "skills/ui-contracts/references/authoring.md": "689247d608bb14b960ce44a3fc34a1c20b47f8e5c8eb5a32f950642e58bf8517"
+  },
+  "legalOrDistributionApprovalClaimed": false
+}

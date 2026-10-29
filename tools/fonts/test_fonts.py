@@ -50,9 +50,29 @@ class FontsTests(unittest.TestCase):
         p=self.lib/'assets/fonts/Inter-Regular.woff2';p.write_bytes(p.read_bytes()[:-1])
         self.manifest['families'][0]['faces'][0]['assets'][1]['sha256']=hashlib.sha256(p.read_bytes()).hexdigest()
         with self.assertRaises(ValueError):self.validate()
-    def test_missing_license_blocked(self):
+    def test_declared_license_file_missing_blocked(self):
         (self.lib/'assets/fonts/LICENSE.txt').unlink()
         with self.assertRaises(OSError):self.validate()
+    def test_no_license_metadata_is_not_a_technical_blocker(self):
+        del self.manifest['license'];(self.lib/'assets/fonts/LICENSE.txt').unlink()
+        r=self.validate();self.assertEqual(r['overall'],'PASS_LIMITED')
+        self.assertEqual(r['licenseEvidence']['status'],'notChecked');self.assertTrue(r['warnings']);self.assertFalse(r['release'])
+    def test_external_license_note_does_not_require_a_file(self):
+        self.manifest['license']={'status':'unknown','note':'No separate file available for this pilot'}
+        r=self.validate();self.assertEqual(r['licenseEvidence']['status'],'notChecked')
+        self.assertEqual(r['license']['status'],'unknown')
+    def test_present_license_never_establishes_rights_review(self):
+        r=self.validate();self.assertEqual(r['licenseEvidence']['status'],'file-present')
+        self.assertEqual(r['licenseEvidence']['rightsReview'],'notChecked')
+    def test_no_license_does_not_hide_font_corruption(self):
+        del self.manifest['license'];(self.lib/'assets/fonts/Inter-Regular.ttf').write_bytes(b'broken')
+        with self.assertRaises(ValueError):self.validate()
+    def test_library_inspection_without_license_file_still_checks_fonts(self):
+        del self.manifest['license'];self.write_manifest();(self.lib/'assets/fonts/LICENSE.txt').unlink()
+        code,result=self.inspect_temporary_library(False)
+        self.assertEqual(code,2);self.assertEqual(result['overall'],'BLOCKED')
+        self.assertEqual(result['fontAssets']['overall'],'PASS_LIMITED')
+        self.assertEqual(result['fontAssets']['licenseEvidence']['status'],'notChecked')
     def test_path_escape_blocked(self):
         self.manifest['license']['path']='../../outside'
         with self.assertRaises(ValueError):self.validate()

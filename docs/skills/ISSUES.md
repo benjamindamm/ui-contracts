@@ -87,3 +87,20 @@ Zusätzlicher Hostbefund:
 | F01-004 | Zusätzliche Assets verändern die ganze Libraryrevision, auch ohne Änderung der alten 22 Dateien | Gesamtmanifest mit allen 28 Dateien neu berechnet; ursprüngliche 22 weiterhin exakt gegen historisches Profil geprüft | Aktuelle Fontprüfung getrennt von alten Studien. Deren Ergebnisse erhalten rückwirkend keinen Fontnachweis. |
 
 [Fontstruktur, Quellen, ausgeführte Prüfungen und Grenzen](../fonts/README.md). Kein allgemeines Komponentenrelease.
+
+## F01-005 · Separate Lizenzdatei fälschlich als technische Pflicht
+
+29. Oktober 2026, Rückmeldung eines Pilotkonsumenten: Für dessen Schriften liegt keine separate Lizenzdatei vor. Ursache: `fonts/check.py` übertrug die Inter-spezifische Lizenzbeilage ungeprüft auf jede Library (`manifest['license']` als Pflichtreferenz). Reparatur: Lizenzdatei optional; fehlender Nachweis als `licenseEvidence.status: notChecked` mit Hinweis, auch bei vorhandenem Dokument `rightsReview: notChecked`. Technische Fontfehler und ausdrücklich deklarierte, aber kaputte Dateiverweise bleiben Fehler. Rendering und Library-Inspect dürfen ohne Lizenzdatei technisch bestehen, niemals dadurch eine Freigabe ableiten.
+
+Nachweis: 20 Font-/Integrationsregressionen einschließlich Lizenzmetadaten fehlen, externe/ungeklärte Metadaten ohne Datei, vorhandene Datei ohne Rechteprüfung, korruptes Font trotz fehlender Lizenz und ganzer Library-Inspect ohne Lizenzdatei. Example-Lizenz und historische Fontreceipts unverändert. [Korrekturbeleg](../fonts/license-policy-update.json).
+
+## P01 · Gemeinsame native Präsentation · 29. Oktober 2026
+
+| ID | Fehlerquelle | Gegenmaßnahme und Test | Grenze |
+| --- | --- | --- | --- |
+| P01-001 | Freie Seitengestaltung erzeugt Vergleichsrauschen trotz gleicher Werte | Gemeinsames versioniertes Layout-Werkzeug; Reihenfolge aus Stories; gleiche Rastergeometrie für A/B gemessen | Komponentendifferenzen bleiben ausdrücklich erhalten, keine allgemeine Pixelgleichheit. |
+| P01-002 | Raster könnte Overlays abschneiden oder Komponenten skalieren/umfärben | Native sichtbare Bounds, variable Kartenhöhe/-breite, keine neuen Clips; rekursive Eigenschaftshashes vor/nach Komposition, Export und Rendern | Nur dokumentierter Adapterumfang; gedrehte/gespiegelte Nodes und nicht unterstützte Referenzen blockieren. |
+| P01-003 | Nachträgliche Präsentation überschreibt Forschungseingaben | Eingabehash vor/nach Vorgang; neuer exklusiver Ausgabeordner und Schutz historischer Pfade; alle run-04-Dateien gegen HEAD geprüft | Die neuen Präsentationen sind eigene nachträgliche Beispiele, keine Ersatzresultate. |
+| P01-004 | Ein Test verglich frisch erzeugte In-Memory-Defaults mit durch Export normalisierten nativen Eigenschaften | Synthetische Fixture zunächst wie echte Eingabe als FIG exportieren/einlesen, dann Präsentation vergleichen; kein Entfernen weiterer Invarianten | Rohimport-/Wiremetadaten und Renderer-Caches bleiben explizit außerhalb der Komponentenwertprüfung. |
+
+[Anleitung und vollständige Testverifikation](../presentation/README.md). Keine Änderung der alten Gestaltungsfreiheit in run-01 bis run-04.
