@@ -74,6 +74,9 @@ flowchart TB
 
 ## Nachweise
 
+[Pie-Chart-Proof: D3-Geometrie → SVG → editierbare OpenPencil-Vektoren](examples/charts/pie-chart/README.md) mit PNG, FIG und geometrischem Messbeleg.
+
+
 Ein Autocomplete dient als Referenzfall: zwei unabhängige Verwendungen, jeweils mit eigenem Overlay und eigener ScrollArea. Schnittstelle, Werte, Verhalten und zugängliche Beziehungen werden dabei gemeinsam betrachtet. Abstand und sichtbare Zeilenzahl sind Beispielwerte, keine allgemeinen Produktpflichten.
 
 Im gemeinsamen Browserlauf sind **20 von 20 finalen Prüferwartungen erfüllt**:

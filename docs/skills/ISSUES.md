@@ -108,3 +108,9 @@ Nachweis: 20 Font-/Integrationsregressionen einschließlich Lizenzmetadaten fehl
 ## P01-005 · Vorlage nicht mit Ergebnisablage verwechseln
 
 Nutzerkorrektur vom 29. Oktober 2026: Kein zusätzlicher presentation-Ausgabebereich. Reparatur: normale Komponentenablage mit `<komponente>.fig`, `preview.png` und `preview-check.json`; Werkzeuge nach tools/openpencil integriert. Die wiederverwendbare Vorlage bleibt zentral als tools/openpencil/templates/presentation.json und wird im neuen Receipt gehasht. Vorhandene Arbeitsordner sind erlaubt, vorhandene Zieldateien und Forschungseingaben bleiben geschützt. Nachträgliche A/B-Proben lediglich verschoben/umbenannt, ihre FIG-/PNG-Bytes unverändert. 17 Layout-/Ablage-/Vorlagenregressionen bestanden; siehe [aktuellen Nachweis](openpencil-preview-verification.json).
+
+## G01 · Chart-Sektoren als Vollkreise konstruiert
+
+Beobachtung: Die Nutzerreferenz eines misslungenen Pie-Versuchs zeigte überlappende Vollkreise statt proportionaler Sektoren. Die Ursache ist nicht als allgemeine Modellschwäche bewiesen; die Ausgabe belegt eine ungeeignete Geometriekonstruktion. Gegenmaßnahme: datenabhängige Sektoren durch D3-Shape berechnen lassen, einfache native Formen weiter direkt nutzen. Skill und Builderkarte verweisen bedarfsabhängig auf die [Geometriehilfe](../../skills/ui-contracts/references/geometry.md).
+
+[Reparatur und Nachweis](../../examples/charts/pie-chart/README.md): drei getrennte native Sektorvektoren, unabhängiger Flächen-/Grenzabgleich und 15 Regressionen einschließlich Vollkreis-Gegenfall. Der Proof bleibt unverändert. Restgrenze: kein vollständiger Donut-/beliebiger Chart- oder Live-Editor-Nachweis; kein empirischer Beleg, dass jedes Modell die neue Anleitung zuverlässig auswählt. Bei Wiederholung Eingabedaten, Generator, native Geometrie und Rendering getrennt vergleichen.

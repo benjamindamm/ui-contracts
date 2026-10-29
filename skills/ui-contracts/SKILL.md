@@ -27,6 +27,8 @@ Fehlende fachliche Regeln werden als offene Entscheidungen ausgewiesen. Ein tech
 
 Explizite Regeln nicht aus gestalterischer Plausibilität zu Wahlfreiheiten erklären. Element, Pseudoelement und geerbten Wert getrennt auswerten; ein eigener `::placeholder`-Wert wird nicht durch die Inputfarbe von `:disabled` ersetzt. Bewusste Quellabweichungen als solche melden. Neue belegte Fehler samt Gegenfall, Reparatur und Restgrenze im Projektregister `docs/skills/ISSUES.md` fortschreiben.
 
+Bei Designausgaben: einfache Rechtecke, abgerundete Buttons, Kreise und Ellipsen direkt mit nativen Primitiven erstellen. Für datenabhängige Sektoren, Bögen oder zusammengesetzte Kurven – typischerweise Charts – die [Geometriehilfe](references/geometry.md) gezielt laden, statt Pfadkoordinaten zu schätzen.
+
 ## Prüfen und gegebenenfalls korrigieren
 
 Lies [references/validation.md](references/validation.md) für die konkrete Prüfreihenfolge und den Browserablauf. Der portable Helper ist `scripts/contracts.py`; übergib `--repo` ausdrücklich, wenn das Arbeitsverzeichnis nicht im Zielrepository liegt.

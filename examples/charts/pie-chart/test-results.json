@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "tests": {
+    "count": 15,
+    "passed": true,
+    "command": "node --test tools/charts/test_pie.mjs"
+  },
+  "proofReceipt": "verification.json",
+  "proofReceiptSha256": "3c7aa704835c2c5e4ad20664053abe703f8fcc708f52adbc3bcdc3cf399c1e9a",
+  "referenceSha256": "0ffcee7af55ac62709446fcf17793799bdfea8e3fffe5f48447816ccb50dc6f1",
+  "historicalResearchAndLibrariesUnchanged": true,
+  "openPencilPackageLockUnchanged": true,
+  "sourceHashes": {
+    "tools/charts/proof.mjs": "07a5e3da38d68390843309f0cc9859ba1e70329bb5a1533393b7dd007593434c",
+    "tools/charts/pie.mjs": "b3d44cf02a0c110f84845017aced1ace6fcee062e860a3ddda156f2d19f76fef",
+    "tools/charts/test_pie.mjs": "47f6c67f62dc328ddbd06b0c76bbccf9bb4a83dbace99e8872b4df791d50331c",
+    "tools/charts/package.json": "a3901621a0e494af460ed50e4c21ed439555760048e6e380fa3c0017112d5d6c",
+    "tools/charts/package-lock.json": "b98c2419e568c3671b95368f88c3233fd8646b281f701d963f450814b565bd59"
+  }
+}

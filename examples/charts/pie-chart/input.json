@@ -1,0 +1,33 @@
+{
+  "title": "Pie Chart Title",
+  "provenance": {
+    "kind": "Screenshot-based test fixture, not a new component contract",
+    "reference": "reference.png",
+    "referenceSha256": "0ffcee7af55ac62709446fcf17793799bdfea8e3fffe5f48447816ccb50dc6f1",
+    "certainty": "Displayed values and labels transcribed; colors visually approximated; original fonts and source data unavailable.",
+    "rounding": "Displayed percentages sum to 100.01; geometry normalizes the three values, labels retain screenshot text."
+  },
+  "data": [
+    {
+      "id": "test-1",
+      "label": "Test 1",
+      "value": 62.64,
+      "displayValue": "62.64%",
+      "color": "#FFD54A"
+    },
+    {
+      "id": "test-2",
+      "label": "Test 2",
+      "value": 24.18,
+      "displayValue": "24.18%",
+      "color": "#1C5363"
+    },
+    {
+      "id": "test-3",
+      "label": "Test 3",
+      "value": 13.19,
+      "displayValue": "13.19%",
+      "color": "#8ABEC5"
+    }
+  ]
+}

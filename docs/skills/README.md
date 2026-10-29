@@ -75,3 +75,7 @@ Bibliotheken liegen unter `libraries/<id>/`; die frühere Draftbibliothek heißt
 ## Einheitliches Vorschau-Layout
 
 Für unterstützte native Zustandsübersichten das [gemeinsame Präsentationswerkzeug](OPENPENCIL-PREVIEW.md) verwenden, statt Seitengestaltung pro Agent neu zu erfinden. Die finale Komponenten-FIG und `preview.png` liegen gemeinsam im normalen Ergebnisordner; kein separater presentation-Bereich. Keine historische Lieferung überschreiben. Der Helper setzt Originalgruppen unverändert in Karten und prüft dies per Readback.
+
+## Berechnete Formen und Charts
+
+Die [Geometriehilfe für Builder](../../skills/ui-contracts/references/geometry.md) trennt native Grundformen von berechneten Pfaden. Für Pie-Sektoren steht [D3-Shape als gezieltes Werkzeug](../../tools/charts/README.md) bereit; Gestaltung und Legende bleiben frei. Weitere Chartfamilien benötigen eigene Adapter und Nachweise. Die Anleitung wird nur bei passender Aufgabe nachgeladen.

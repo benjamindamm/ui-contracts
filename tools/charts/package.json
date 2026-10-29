@@ -1,0 +1,8 @@
+{
+  "name": "ui-contracts-chart-geometry-proof",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated, pinned chart geometry dependencies; does not change the historical OpenPencil toolchain lock.",
+  "dependencies": {"d3-shape": "3.2.0"}
+}

@@ -1,0 +1,86 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "scope": "D3-to-SVG-to-editable-native-FIG roundtrip and render",
+  "input": {
+    "path": "examples/charts/pie-chart/input.json",
+    "sha256": "63725a878d9878a7df8e0fd35896f8603e8fb7b37597d20453e6d2c4e4ece1fe"
+  },
+  "provenance": {
+    "kind": "Screenshot-based test fixture, not a new component contract",
+    "reference": "reference.png",
+    "referenceSha256": "0ffcee7af55ac62709446fcf17793799bdfea8e3fffe5f48447816ccb50dc6f1",
+    "certainty": "Displayed values and labels transcribed; colors visually approximated; original fonts and source data unavailable.",
+    "rounding": "Displayed percentages sum to 100.01; geometry normalizes the three values, labels retain screenshot text."
+  },
+  "sourceTotal": 100.00999999999999,
+  "normalization": "Value/sum; labels retain supplied display strings",
+  "d3ShapeVersion": "3.2.0",
+  "openPencilVersion": "0.16.0",
+  "angleSumDegrees": 360.00000000000006,
+  "svgSegmentCount": 3,
+  "nativeVectorCount": 6,
+  "nativeTextCount": 7,
+  "slices": [
+    {
+      "id": "test-1",
+      "type": "VECTOR",
+      "editable": true,
+      "displayValue": "62.64%",
+      "proportion": 0.6263373662633738,
+      "angleDegrees": 225.48145185481454,
+      "color": "#FFD54A",
+      "centerAndBoundaryEndpointsMatch": true,
+      "nativeArea": 53575.61225303101,
+      "expectedCircleSectorArea": 53570.547245505855,
+      "relativeAreaError": 0.00009454836259077284
+    },
+    {
+      "id": "test-2",
+      "type": "VECTOR",
+      "editable": true,
+      "displayValue": "24.18%",
+      "proportion": 0.24177582241775825,
+      "angleDegrees": 87.03929607039295,
+      "color": "#1C5363",
+      "centerAndBoundaryEndpointsMatch": true,
+      "nativeArea": 20683.779947250732,
+      "expectedCircleSectorArea": 20679.052241320744,
+      "relativeAreaError": 0.0002286229501631471
+    },
+    {
+      "id": "test-3",
+      "type": "VECTOR",
+      "editable": true,
+      "displayValue": "13.19%",
+      "proportion": 0.13188681131886812,
+      "angleDegrees": 47.47925207479254,
+      "color": "#8ABEC5",
+      "centerAndBoundaryEndpointsMatch": true,
+      "nativeArea": 11280.327502109594,
+      "expectedCircleSectorArea": 11280.260507155526,
+      "relativeAreaError": 0.000005939131815743533
+    }
+  ],
+  "areaMethod": "Independent shoelace integration of native cubic Bezier contours (1000 samples per segment), tolerance 0.1% relative to analytic sector area",
+  "networkAttempts": 0,
+  "font": {
+    "path": "libraries/example/assets/fonts/Inter-Regular.ttf",
+    "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+  },
+  "scriptSha256": "07a5e3da38d68390843309f0cc9859ba1e70329bb5a1533393b7dd007593434c",
+  "geometryModuleSha256": "b3d44cf02a0c110f84845017aced1ace6fcee062e860a3ddda156f2d19f76fef",
+  "chartDependencyLockSha256": "b98c2419e568c3671b95368f88c3233fd8646b281f701d963f450814b565bd59",
+  "openPencilDependencyLockSha256": "ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6",
+  "outputs": {
+    "chart.svg": "018fc6f91c36a17bc29fc2ae43370305300bd51a19cda69ea31b6754b182d332",
+    "pie-chart.fig": "d3bf4211304a9e7ad923bbe4e31a013f0e5bf41665e180568eac5a302e9d3fe3",
+    "preview.png": "9653698d243747d3d0d38118b77f0cc61f2d54aed4c8eff397d77b75bc62b801"
+  },
+  "notChecked": [
+    "Exact original font/colorimetry and pixel equality",
+    "Original unrounded dataset unavailable",
+    "Live editor GUI roundtrip",
+    "Interactive chart behavior or accessibility"
+  ]
+}
