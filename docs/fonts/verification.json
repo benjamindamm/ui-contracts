@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-29",
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "library": "example",
+  "libraryManifest": {
+    "root": "libraries/example",
+    "files": {
+      "README.md": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+      "assets/fonts/Inter-Bold.ttf": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+      "assets/fonts/Inter-Bold.woff2": "fa888127b6da015b65569f0351f3b5c391ad928904951f1c20e9f8462a8d95ea",
+      "assets/fonts/Inter-Regular.ttf": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+      "assets/fonts/Inter-Regular.woff2": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085",
+      "assets/fonts/LICENSE.txt": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "autocomplete/README.md": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+      "autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+      "autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+      "autocomplete/behavior.scxml": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+      "autocomplete/component.json": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+      "autocomplete/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+      "autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+      "autocomplete/layout.css": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+      "autocomplete/stories.json": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+      "fonts.json": "d0a91c9985e3f9aeb515a0d23db14c4dbd3f1d0db3aa97ddd8031bfcceaa4217",
+      "library.json": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+      "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+      "overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+      "overlay/component.json": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+      "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+      "overlay/layout.css": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+      "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+      "scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+      "scroll-area/component.json": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+      "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+      "scroll-area/layout.css": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+      "tokens.json": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+    },
+    "revision": "3611a62340357d2ca27096e48e9548d1f7330dc82450ef25141fc10f7738a555"
+  },
+  "historical22FilesUnchanged": true,
+  "historicalRunAndResearchFilesUnchanged": true,
+  "source": {
+    "release": "Inter 4.1",
+    "releaseUrl": "https://github.com/rsms/inter/releases/tag/v4.1",
+    "archiveUrl": "https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip",
+    "releaseCommit": "e3a3d4c57d5ecc01453a575621882a384c1995a3",
+    "archiveSha256": "9883fdd4a49d4fb66bd8177ba6625ef9a64aa45899767dde3d36aa425756b11e",
+    "downloadedOn": "2026-10-29",
+    "modifiedFontFiles": false
+  },
+  "license": {
+    "spdx": "OFL-1.1",
+    "path": "assets/fonts/LICENSE.txt",
+    "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+  },
+  "tests": {
+    "fontAssetAndIntegrationRegressions": {
+      "count": 15,
+      "passed": true
+    },
+    "libraryRegressions": {
+      "count": 17,
+      "passed": true
+    },
+    "handoffRegressions": {
+      "count": 37,
+      "passed": true
+    },
+    "designCountercheckRegressions": {
+      "count": 12,
+      "passed": true
+    },
+    "sourceAndInstalledSkillStructure": "passed"
+  },
+  "browserWoff2HashesMatchManifest": true,
+  "repeatLocalRenderingPngByteIdentical": true,
+  "openpencil": {
+    "overall": "PASS_LIMITED",
+    "release": false,
+    "library": "example",
+    "scope": "local-TTF-registration-and-static-font-specimen",
+    "sample": "Stadt auswählen – ÄÖÜ äöü ß € … 0123456789 Zürich",
+    "fonts": [
+      {
+        "family": "Inter",
+        "weight": 400,
+        "style": "Regular",
+        "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+        "sampleGlyphCount": 49,
+        "missingGlyphs": 0
+      },
+      {
+        "family": "Inter",
+        "weight": 700,
+        "style": "Bold",
+        "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+        "sampleGlyphCount": 49,
+        "missingGlyphs": 0
+      }
+    ],
+    "networkAttempts": 0,
+    "figReadback": {
+      "textNodes": 4,
+      "checks": 12,
+      "passed": true
+    },
+    "outputs": {
+      "fonts.fig": "4d3bd5f829e5f82f596f006c1805ae5ee85e807042cd1db9974d4f5f2df1eb0a",
+      "fonts.png": "45b740d0ee55f73779f4c37637eb667e9a85cf0cef5939802027057eec3c987a",
+      "fonts.css": "8a2f1fe35f611ef86ccca58e05692f854710bd8eb0dc4b669981d8f9c00b98d3",
+      "index.html": "46ebdb740059b1d43c6cb1bfae220398e623277a70ac77a1a8bd8141da64426b"
+    },
+    "notChecked": [
+      "Live editor import/font availability",
+      "Pixel identity across browsers/platforms",
+      "All Unicode glyphs",
+      "Native app embedding"
+    ]
+  },
+  "assetCheckerSha256": "85066e977a54f767011248763a55d3829fda79811f2095e656425a10af6f62c6",
+  "previewGeneratorSha256": "22de5c403a73f0f7737fb3cb73aec7564725ac1aef54930b4d577a72cb1a7236",
+  "proofFiles": {
+    "examples/fonts/example/openpencil-receipt.json": "f0a73db01ab2e771adb75e3b3eb3bc7a1e83f4e280cbe264fe20a8a3e52cecee",
+    "examples/fonts/example/browser-receipt.json": "f5edbc0a6697710fd9c14a04d4ac785748d41c25c5123d537207de7415ee94cb",
+    "examples/fonts/example/index.html": "46ebdb740059b1d43c6cb1bfae220398e623277a70ac77a1a8bd8141da64426b",
+    "examples/fonts/example/README.md": "4ef93b7e723d9028456efe287b70c590c09a9bc6f1fe20b94856c4f75019ea8b",
+    "examples/fonts/example/fonts.png": "45b740d0ee55f73779f4c37637eb667e9a85cf0cef5939802027057eec3c987a",
+    "examples/fonts/example/fonts.fig": "4d3bd5f829e5f82f596f006c1805ae5ee85e807042cd1db9974d4f5f2df1eb0a",
+    "examples/fonts/example/fonts.css": "8a2f1fe35f611ef86ccca58e05692f854710bd8eb0dc4b669981d8f9c00b98d3"
+  },
+  "notChecked": [
+    "Full OpenType/WOFF2 conformance",
+    "All Unicode coverage",
+    "Live server/editor font provisioning",
+    "Native embedding",
+    "Other browsers/platforms"
+  ]
+}

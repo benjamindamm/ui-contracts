@@ -76,3 +76,14 @@ Zusätzlicher Hostbefund:
 | L01-003 | Ausgabe eines Rollenauftrags könnte Quellen einer anderen Library überschreiben | Quellen-/Receipt-Schutz auf alle libraries ausgedehnt; Handoff-Ausgabeordner darin abweisen | Negativer Cross-Library-Ausgabetest plus positiver eigener work-Ordner. Keine technische Zugriffssandbox. |
 
 [Migration, Dokumentationsumfang und Testbelege](../libraries/MIGRATION.md). Keine neue Modellgeneration oder allgemeine Komponentenfreigabe.
+
+## F01 · Lokale Fontdateien · 29. Oktober 2026
+
+| ID | Fehlerquelle | Gegenmaßnahme / Reparatur | Nachweis / Grenze |
+| --- | --- | --- | --- |
+| F01-001 | Ein Family-Token belegt keine vorhandene oder tatsächlich verwendete Fontdatei | Optionales fonts.json bindet Token an lokale TTF-/WOFF2-Bytes samt Lizenz-/Dateihash; Inter 4.1 unverändert aufgenommen | Native Registrierung, Glyphprobe, FIG-Readback, PNG und Browser-WOFF2-Hashprüfung. Kein Live-Editor-/Native-Nachweis. |
+| F01-002 | Falscher Dateiinhalts-, Familien-, Gewichts- oder Runtime-Stilbezug könnte Fallback/Synthese verbergen | Hash-, sfnt-Namens-/Gewichtsprüfung und Abgleich openpencilStyle gegen weight; tatsächlicher Runtime-Stil zusätzlich vor Registrierung geprüft | 15 positive/negative Regressionen einschließlich beschädigter Dateien und integrierter Libraryprüfung. Nur statische normale TTF plus WOFF2 unterstützt. |
+| F01-003 | /var- und /private/var-Aliase ließen zunächst valide Testpfade beim relativen Mapping scheitern | Reporoot vor Pfadverarbeitung kanonisieren; Ausgabepfad der Vorschau ebenfalls vor Quellschutz kanonisieren | Positiver Test mit temporärem Reporoot besteht. Fontsymlinks/Pfadausbrüche werden weiterhin abgewiesen. |
+| F01-004 | Zusätzliche Assets verändern die ganze Libraryrevision, auch ohne Änderung der alten 22 Dateien | Gesamtmanifest mit allen 28 Dateien neu berechnet; ursprüngliche 22 weiterhin exakt gegen historisches Profil geprüft | Aktuelle Fontprüfung getrennt von alten Studien. Deren Ergebnisse erhalten rückwirkend keinen Fontnachweis. |
+
+[Fontstruktur, Quellen, ausgeführte Prüfungen und Grenzen](../fonts/README.md). Kein allgemeines Komponentenrelease.

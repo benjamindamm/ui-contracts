@@ -32,10 +32,14 @@ IDs gelten im Kontext der Bibliothek: Bei mehreren Bibliotheken immer Bibliothek
 
 ## Migration und historische Nachweise
 
-Die bisherigen 22 Dateien wurden am 29. Oktober 2026 **bytegleich von `components/` nach `libraries/example/` verschoben**. Die Definitionsrevision bleibt `1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727`. Es gibt absichtlich keinen weiterhin sichtbaren components-Ordner oder Symlink.
+Die bisherigen 22 Dateien wurden am 29. Oktober 2026 **bytegleich von `components/` nach `libraries/example/` verschoben**. Die damalige 22-Datei-Definitionsrevision ist `1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727`; neue zusätzliche Assets fließen dagegen in die aktuelle Gesamtbibliotheksrevision ein. Es gibt absichtlich keinen weiterhin sichtbaren components-Ordner oder Symlink.
 
 Historische Runs, Manifeste, Reports und Messdaten werden nicht umgeschrieben. Ihre `components/...`-Locators meinen die damaligen Dateien, die jetzt unter `libraries/example/...` liegen. Der aktuelle Handoff-Resolver kann solche alten Referenzen auflösen und prüft weiterhin deren Dateihashes. Der aktuelle begrenzte Design-Gegenprüfer verwendet example, hält historische Quellenlocators aber ausdrücklich als solche kenntlich.
 
 Diese Kompatibilität ersetzt keine alte Werkzeugversion: Hashgebundene historische Tasks erkennen geänderte Prüfer-/Skilldateien weiter als veraltet. Unveränderte historische Generatoren/Prüfscripte mit festem components-Pfad benötigen den ursprünglichen Checkout (z. B. den erhaltenen Stand `8ca5678` in einem separaten Worktree mit den gepinnten Abhängigkeiten). Alte Receipts werden durch eine aktuelle Wiederholung nicht nachträglich neu bestätigt.
 
 [Migration und Tests](../docs/libraries/MIGRATION.md) · [Framework-Überblick](../README.md).
+
+## Schriftdateien
+
+Optional bindet `fonts.json` konkrete lokale Fontdateien an die Family-Tokens der ausgewählten Bibliothek. [Struktur, Inter-Beispiel und ausgeführte Fontprüfung](../docs/fonts/README.md). Die bestehenden 22 Beispieldateien bleiben erhalten; zusätzliche Fontassets bilden eine neue Gesamtbibliotheksrevision.

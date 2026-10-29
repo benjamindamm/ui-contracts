@@ -59,6 +59,16 @@ def inspect(repo,candidate):
  errors=[r for r in rows if r['status']=='FAIL'];r=blocked('SEMANTIC_PROFILE_UNSUPPORTED','Only syntax and the available original schemas were inspected. This candidate has no general semantic/profile/runtime acceptance through this helper.')
  if errors:r.update(overall='FAIL',diagnostic={'code':'ARTIFACT_CHECK_FAILED','detail':'Candidate syntax or an available original schema was rejected.'})
  r.update(kind='ui-contracts-original-artifact-inspection',candidate=str(candidate),artifacts=rows,passedScope=[{'file':r['file'],'checks':r['checks']}for r in rows if r['status']=='PASS_LIMITED'],warnings=['Original SCXML schema is loose; HTML parsing is not conformance.','DTCG/CSS/HTML/ARIA/APG are not fully original-validated.'],unverified=['General cross-file references, ownership and composition for this candidate','Runtime events, focus, scrolling, AX, lifecycle','Target generation, screenreader, real IME and native platforms'],productionRelease=False)
+ # Optional font asset manifest is a separate, bounded check for a whole library.
+ if candidate.is_dir() and(candidate/'library.json').is_file()and(candidate/'fonts.json').is_file():
+  if candidate.parent.resolve()!= (repo/'libraries').resolve():
+   r.update(overall='BLOCKED',diagnostic={'code':'FONT_LIBRARY_ROOT_UNSUPPORTED','detail':'Inspect registered library roots under libraries/.'})
+  else:
+   try:
+    proc=subprocess.run([sys.executable,str(repo/'tools/fonts/check.py'),'--repo',str(repo),'--library',candidate.name],capture_output=True,text=True,timeout=30)
+    fonts=json.loads(proc.stdout);r['fontAssets']=fonts
+    if proc.returncode or fonts.get('overall')!='PASS_LIMITED':r.update(overall='FAIL',diagnostic={'code':'FONT_ASSET_CHECK_FAILED','detail':'Declared font assets or token binding were rejected.'})
+   except Exception as e:r.update(overall='BLOCKED',diagnostic={'code':'FONT_CHECKER_UNAVAILABLE','detail':str(e)})
  return r
 
 def main():

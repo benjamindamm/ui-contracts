@@ -26,3 +26,7 @@ Aktuelle Navigation angepasst: Haupt-README, AGENTS.md, Bibliotheksanleitung, Sk
 [Maschinenlesbare Migrationsverifikation](verification.json) enthält Quellhashes, ausgeführte Regressionen und Grenzen. [Librarytests](../../tools/libraries/test_libraries.py) prüfen insbesondere Leerstart, getrennte Tokens, keine Überschreibung, sichere Pfade, Auswahl, Quellschutz und bytegleichen Umzug. Bestehende Handoff-, Design- und Prozessregressionen wurden ebenfalls ausgeführt. Die begrenzte run-04-Gegenprüfung besteht weiterhin mit 572/572 gleichen Paarwerten und ohne Fehler/Warnungen.
 
 Kein neuer Modelllauf, keine GUI-/Nativeprüfung und keine allgemeine semantische Freigabe neuer Bibliotheken. Bibliotheksübergreifende Abhängigkeiten haben noch keinen automatischen Resolver.
+
+## Nachfolgende Font-Ergänzung
+
+Die [Inter-Assets und Fontbindung](../fonts/README.md) ergänzen example, ohne die ursprünglichen 22 Dateien zu ändern. Der obige Migrationsbeleg dokumentiert den Stand vor dieser Ergänzung; neue vollständige Librarymanifeste enthalten auch die Fontdateien und haben eine andere Gesamtbibliotheksrevision. Historische Studien erhalten dadurch keine zusätzliche Fontprüfung.

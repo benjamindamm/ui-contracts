@@ -1,0 +1,37 @@
+{
+  "faces": [
+    {
+      "family": "Inter",
+      "sampleWidth": 613.88671875,
+      "status": "loaded",
+      "weight": "400"
+    },
+    {
+      "family": "Inter",
+      "sampleWidth": 631.1015625,
+      "status": "loaded",
+      "weight": "700"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 111268,
+      "path": "/libraries/example/assets/fonts/Inter-Regular.woff2",
+      "sha256": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085"
+    },
+    {
+      "bytes": 114840,
+      "path": "/libraries/example/assets/fonts/Inter-Bold.woff2",
+      "sha256": "fa888127b6da015b65569f0351f3b5c391ad928904951f1c20e9f8462a8d95ea"
+    }
+  ],
+  "notChecked": [
+    "All Unicode coverage",
+    "Other browsers/platforms",
+    "Live OpenPencil editor font loading"
+  ],
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "scope": "BrowserOS local WOFF2 font loading",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+}

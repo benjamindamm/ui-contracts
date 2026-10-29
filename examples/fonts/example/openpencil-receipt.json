@@ -1,0 +1,43 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "library": "example",
+  "scope": "local-TTF-registration-and-static-font-specimen",
+  "sample": "Stadt auswählen – ÄÖÜ äöü ß € … 0123456789 Zürich",
+  "fonts": [
+    {
+      "family": "Inter",
+      "weight": 400,
+      "style": "Regular",
+      "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+      "sampleGlyphCount": 49,
+      "missingGlyphs": 0
+    },
+    {
+      "family": "Inter",
+      "weight": 700,
+      "style": "Bold",
+      "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+      "sampleGlyphCount": 49,
+      "missingGlyphs": 0
+    }
+  ],
+  "networkAttempts": 0,
+  "figReadback": {
+    "textNodes": 4,
+    "checks": 12,
+    "passed": true
+  },
+  "outputs": {
+    "fonts.fig": "4d3bd5f829e5f82f596f006c1805ae5ee85e807042cd1db9974d4f5f2df1eb0a",
+    "fonts.png": "45b740d0ee55f73779f4c37637eb667e9a85cf0cef5939802027057eec3c987a",
+    "fonts.css": "8a2f1fe35f611ef86ccca58e05692f854710bd8eb0dc4b669981d8f9c00b98d3",
+    "index.html": "46ebdb740059b1d43c6cb1bfae220398e623277a70ac77a1a8bd8141da64426b"
+  },
+  "notChecked": [
+    "Live editor import/font availability",
+    "Pixel identity across browsers/platforms",
+    "All Unicode glyphs",
+    "Native app embedding"
+  ]
+}

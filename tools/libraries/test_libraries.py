@@ -48,9 +48,10 @@ class LibrariesTests(unittest.TestCase):
         self.assertNotEqual(m['revision'],manage.manifest(self.repo,'second')['revision'])
     def test_migration_preserves_all_22_historical_hashes(self):
         frozen=json.loads((ROOT/'tools/design-review/profile.json').read_text())['definitionFiles']
-        m=manage.manifest(ROOT,'example');self.assertEqual(m['files'],frozen)
-        self.assertEqual(len(m['files']),22)
-        self.assertEqual(m['revision'],'1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727')
+        m=manage.manifest(ROOT,'example');originals={name:m['files'][name] for name in frozen}
+        self.assertEqual(originals,frozen);self.assertEqual(len(originals),22)
+        historical_revision=hashlib.sha256(json.dumps(originals,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        self.assertEqual(historical_revision,'1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727')
         self.assertFalse((ROOT/'components').exists())
     def test_legacy_resolver_keeps_hash_verification(self):
         path=ROOT/'libraries/example/tokens.json'
