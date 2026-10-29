@@ -26,9 +26,14 @@ Ein fehlender notwendiger Prüfer oder fehlende erforderliche Abdeckung blockier
 | [references/authoring.md](../../skills/ui-contracts/references/authoring.md) | Originalformate, Quellführung und neue/geänderte Artefakte |
 | [references/validation.md](../../skills/ui-contracts/references/validation.md) | Reale Prüfeinstiege und Browserablauf |
 | [references/reproducibility.md](../../skills/ui-contracts/references/reproducibility.md) | Reproduktions-/Modellvergleich, Provenienz und externe Analyse |
+| [references/workflow.md](../../skills/ui-contracts/references/workflow.md) | Kontextauswahl, Abhängigkeiten und fokussierte Rollen |
+| [references/handoff-contract.md](../../skills/ui-contracts/references/handoff-contract.md) | Gemeinsames versioniertes Auftrags-/Übergabeformat |
+| [Rollen-Karten](../../skills/ui-contracts/references/roles/coordinator.md) | Koordination, Quellenzuordnung, Builder, Reviewer und Reparatur; aus workflow.md einzeln erschlossen |
+| [assets/handoffs/task.json](../../skills/ui-contracts/assets/handoffs/task.json), [handoff.json](../../skills/ui-contracts/assets/handoffs/handoff.json) | Auszufüllende Vorlagen für Arbeitsaufträge und Lieferungen |
+| [scripts/handoffs.py](../../skills/ui-contracts/scripts/handoffs.py) | Integritätsprüfung und kleines rollenbezogenes Kontextpaket; kein Agentenstart und keine Komponentenfreigabe |
 | [scripts/contracts.py](../../skills/ui-contracts/scripts/contracts.py) | Portabler Aufruf mit explizitem `--repo`, strukturierte Prüfung/Blockierung |
 
-Der installierte Bestand entspricht diesen sechs Dateien bytegenau. Ein Repositorypfad ist nicht fest in den Skill eingebaut; der Helper findet das ausgewählte Projekt im Arbeitsverzeichnis oder erhält es ausdrücklich über `--repo`. Abhängigkeiten und Laufzeit liegen weiterhin beim jeweiligen Projekt.
+Der installierte Bestand entspricht der versionierten Skillquelle bytegenau; der aktuelle [Workflow-Nachweis](../../tools/skill-tests/ui-contracts/workflow-verification.json) listet die Dateihashes. Ein Repositorypfad ist nicht fest in den Skill eingebaut; die Helper erhalten das Projekt ausdrücklich über `--repo` oder finden es wie dokumentiert im Arbeitsverzeichnis. Abhängigkeiten und Laufzeit liegen weiterhin beim jeweiligen Projekt.
 
 Die lokale Installation ist eine Kopie. Spätere Änderungen der Projektquelle aktualisieren sie nicht automatisch. Vor einem Update Identität und Änderungen prüfen; keinen anderen gleichnamigen Skill ungeprüft überschreiben.
 
@@ -48,3 +53,17 @@ Diese Tests prüfen den installierten Helper und seine realen Prüfeinstiege. Si
 Die [externe Analyse](../research/analyses/AC-R02/README.md) zeigt eine falsche Quellauslegung und Prüflücken. [Fehlerregister](ISSUES.md) und [Laufprotokollvertrag](REPRODUCIBILITY.md) halten jede Ursache, aktuelle Gegenmaßnahme, Regression und offene Grenze fest. Die neue Skillreferenz wird nur für diese Arbeitsart geladen. Eine tatsächliche Nutzung des bisherigen Skills durch die historischen Builder ist nicht belegt.
 
 Der [begrenzte native Gegenprüfer](../../tools/design-review/README.md) und der Metadatenprüfer haben eigene Regressionen; sie verändern weder den historischen run-02 noch die feste Webvalidierung. Die ursprünglichen 18 Helper-Testfälle und ihr damaliges Manifest bleiben historische Belege der damaligen Fassung; sie sind kein vollständiger Nachweis für die neuen Reviewfunktionen. Aktuelle Nachweise stehen separat unter [AC-R02 setup-verification.json](../research/analyses/AC-R02/setup-verification.json).
+
+## Fokussierte Rollen und Kontextmanagement
+
+Das eigentliche Entwicklungsziel aus [RD-001](../research/decisions/RD-001-STAGED-GENERATION.md) sind bessere Skills, nicht bloß weitere Wiederholungsläufe. Neue Rollen-Karten begrenzen fachlichen Auftrag und Kontext; ein gemeinsamer [Übergabevertrag](../../skills/ui-contracts/references/handoff-contract.md) hält die benötigten Ergebnisse separat und quellengebunden fest. Unabhängige Aufgaben dürfen parallel laufen, Verbraucher warten auf gültige benötigte Lieferungen. Prüfer sehen Buildererklärungen erst nach ihrer eingefrorenen Erstbewertung.
+
+Der neue Helper erzeugt nur Kontextdateien und Prüfberichte. Er startet keine Agenten, kontrolliert keinen Browser und erweitert keine Berechtigungen. Struktur-/Hashprüfungen verhindern versehentliche falsche Übergaben; sie beweisen keine sachliche Richtigkeit oder technische Abschottung.
+
+[32 funktionale Übergabetests](../../tools/skill-tests/ui-contracts/results-handoffs.json) prüfen die lokale Installation anhand temporärer Repositories und echter Dateien: gezielte Claimauswahl mit Quellverweisen, veraltete Abhängigkeiten, fehlende Belege, Status-/Freigabetrennung, Reviewerphasen, Kontextgrenzen und geschützte Eingaben. Das ist **kein** empirischer Nachweis, dass ein schwächeres Modell die Rollen bereits zuverlässig nutzt. Diesen Verhaltenseffekt soll der vorbereitete Pilot erst untersuchen. Originalbelege und damalige Testergebnisse bleiben erhalten.
+
+## Schlanker Einstieg und Kontexthygiene
+
+[Separater Kontextaudit](../research/analyses/INITIAL-CONTEXT/README.md): neue Rollen starten mit `bootstrap` (nur hashgebundene Auftrags-/Rollenverweise); das erweiterte `context` wird erst bei Bedarf geladen. Originale und Nachweise bleiben erreichbar. Kein pauschales Einlesen aller verlinkten Dateien. Die Anfangsgröße des gesamten Modellrequests ist damit noch nicht gemessen.
+
+Aktueller zusätzlicher Nachweis: [37 Funktionstests Quelle](../../tools/skill-tests/ui-contracts/results-bootstrap-source.json) und [Installation](../../tools/skill-tests/ui-contracts/results-bootstrap-installed.json). Frühere 32-Test-Receipts und Workflow-Verifikation dokumentieren den Stand vor diesem Kontextaudit.

@@ -1,0 +1,21 @@
+{
+  "run": "autocomplete-reproducibility-03",
+  "recordedOn": "2026-10-29",
+  "kind": "post-hoc-user-model-attribution",
+  "source": "Direct user statement in the project conversation",
+  "userStatement": "der war übrigens mit qwen3.8-27B in FP8 ... (gilt für run-03)",
+  "reportedModel": "qwen3.8-27B",
+  "reportedPrecision": "FP8",
+  "attributionScope": "run-level",
+  "verificationStatus": "user-reported; not independently confirmed from provider/runtime metadata",
+  "verifiedRoles": null,
+  "exactModelRevision": null,
+  "reasoningConfiguration": null,
+  "runtimeRecord": {
+    "path": "examples/autocomplete/reproducibility/run-03/run.json",
+    "sha256": "432685a00cfb2c6195a20033a5191b8a4148e26f281d0da85f8305c3b7e51e05",
+    "originalModelDescription": "Inherited OpenCode local:default; per-role model configuration unverified"
+  },
+  "interpretation": "This attribution identifies the model and precision reported by the user for run-03. It does not retrospectively verify each builder/reviewer session, resolve HTTP413 causes or change the recorded outcomes.",
+  "preservation": "Original run-03 files remain unchanged; this separate provenance supplement and the study registry record the new information."
+}

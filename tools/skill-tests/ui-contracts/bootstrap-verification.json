@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-29",
+  "scope": "Local bootstrap implementation and measurement; not an agent/model forward run",
+  "skillFiles": {
+    "SKILL.md": "cf93c12bd93a6e46b6ebf40432753c387837399ac9a571cf02e84e966917e921",
+    "references/authoring.md": "68843051990a89bd4008dfcccc128341e4a7fb9deddcc441f0b0c34df16c88de",
+    "references/validation.md": "c573f99b68c24e0d252adb92babbdb8fc4933c368a6e53e2dfe7d3a1dd247239",
+    "references/handoff-contract.md": "44b5ccfeffee56ad94b2ad404004aae8603aaa17d6fa4d984577307c6164448f",
+    "references/workflow.md": "024c5088e0ff3174fba6be236ba574b325781993172dcef87d99bdc00a795c6b",
+    "references/reproducibility.md": "217a71ee1df961d188705828756a74ea881aaef61d7f9eb8aadc222aaca4cfb7",
+    "references/roles/reviewer.md": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7",
+    "references/roles/builder.md": "8497e2848ebe1858d0019909112fbbf257370b942c92f8eb173acd7e1e47921d",
+    "references/roles/repair.md": "0a443c7d85c92b474995ca2ad497deb5f6c6930fd0b0c6006ee40a28a7775fe7",
+    "references/roles/coordinator.md": "347b35781066e75b56471d4fe55d590247427795bc751a70248019344606aeeb",
+    "references/roles/mapper.md": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5",
+    "agents/openai.yaml": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d",
+    "scripts/contracts.py": "142147faf9e549cf787d0b05f33b5cc340e01e5ea8f69db484d0f953f38789c5",
+    "scripts/handoffs.py": "15f692912d61d6cab294e8a1c0a99f581f1b3cf1bfd0802022505010771f1d75",
+    "assets/handoffs/handoff.json": "5a2d8e9904bd6ed04958e80faeaae0143a150364138878869fb7de852d27cd58",
+    "assets/handoffs/task.json": "79e5d0135b3f40f7b7b80e07c30ac8f529c0ae6b14d26fa6a0b7dabb4185931d"
+  },
+  "installedMatches": true,
+  "sourceAndInstalledTests": {
+    "countEach": 37,
+    "passed": true
+  },
+  "skillStructureChecks": {
+    "source": "passed",
+    "installed": "passed"
+  },
+  "checkedLocalLinks": "passed",
+  "componentsAndHistoricalRunsUnchangedSince": "58e4c88",
+  "fullProviderRequestCaptured": false,
+  "priorEvidence": "workflow-verification.json and results-handoffs.json retained without rewriting"
+}

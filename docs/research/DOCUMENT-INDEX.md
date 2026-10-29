@@ -1,6 +1,6 @@
 # Dokumentenindex
 
-Stand: 25. Oktober 2026. Vollständiges Verzeichnis der 31 Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
+Stand: 29. Oktober 2026. Die Stammübersicht der abgeschlossenen Kandidatenrecherche stammt vom 25. Oktober (31 Markdown-Dokumente); neue Anwendungsstudien und Forschungsentscheide sind separat verlinkt. Versuchsordner werden im [Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
 
 Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; maßgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.
 
@@ -18,6 +18,10 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 | [PROJECT-GAPS.md](PROJECT-GAPS.md) | Was dem Projekt nach den Einzelprüfungen noch fehlt |
 | [DOCUMENT-INDEX.md](DOCUMENT-INDEX.md) | Dokumentenindex |
 | [STUDIES.md](STUDIES.md) | Studien |
+| [AC-R03 · Modellherkunft](studies/AC-R03/MODEL-PROVENANCE.json) | Nachträgliche Nutzerangabe: qwen3.8-27B, FP8; Rollen-/Providerverifikation weiterhin offen |
+| [RD-001 · Gestufte Erzeugung](decisions/RD-001-STAGED-GENERATION.md) | Beschlossener nächster Forschungsschritt für zuverlässige Erzeugung mit kleineren Arbeitsaufträgen |
+| [Pilotprotokoll · Gestufte Autocomplete-Erzeugung](protocols/STAGED-GENERATION-PILOT.md) | Kontrollarm, Übergaben, Prüfgates, Reparaturrunden und noch offene Vorbereitung |
+| [Audit · Initialer Agentenkontext](analyses/INITIAL-CONTEXT/README.md) | Einstieg, nachladbare Referenzen, Bootstrapmessung und Grenzen der Requestmessung |
 | [archive/README.md](archive/README.md) | Archiv der Forschungsarbeitsstände |
 
 ## Methodik, Befunde und Vergleiche

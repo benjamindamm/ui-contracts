@@ -33,3 +33,36 @@ Führender Befund: [externe Analyse](../research/analyses/AC-R02/README.md), [re
 ## Neue oder wiederkehrende Fehler
 
 Bei neuem Befund mindestens festhalten: ID, Datum, betroffene Revision, exakter Beleg, führende Sollquelle, beobachtetes Ist, Ursache (belegt / Hypothese), Reproduktionsschritte, isolierter Gegenfall, Reparaturdateien, ausgeführter Nachweis und verbleibende Grenze. Bei Wiederauftreten den neuen Beleg ergänzen und die bisherige Gegenmaßnahme hinterfragen; frühere Ergebnisse nicht überschreiben. Fehlende Daten niemals als nachträglich verifiziert markieren.
+
+## W01 · Wissensübergaben und Kontext · 29. Oktober 2026
+
+Diese Einträge beschreiben präventive Gegenmaßnahmen zur beschlossenen Skillweiterentwicklung [RD-001](../research/decisions/RD-001-STAGED-GENERATION.md). Sie behaupten nicht, dass die genaue Ursache der HTTP-413-Abbrüche von run-03 bereits diagnostiziert oder behoben ist. Requestgrößen und vollständige Fehlerantworten fehlen weiterhin.
+
+| ID | Mögliche Fehlerquelle | Umgesetzte Gegenmaßnahme | Funktionaler Nachweis / Grenze |
+| --- | --- | --- | --- |
+| W01-001 | Zu breite Aufträge und komplette fremde Gesprächsverläufe überlasten den Kontext | Fünf selektiv geladene Rollen-Karten; Kontextpaket aus Auftrag, relevanten Quellen und ausgewählten Claims | `test_context_does_not_inline_source_or_artifact`, `test_only_selected_claims_transferred`; bessere Modellleistung noch nicht empirisch belegt. |
+| W01-002 | Verdichtete Vorgängerannahme wird zur scheinbaren Originalregel | `explicit/derived/assumption/observation`, Quellenlocator und Belegverweise; Originale führen | `test_rule_needs_original_source`, `test_assumption_stays_labeled`, `test_observation_needs_evidence`; keine automatische semantische Wahrheitsprüfung. |
+| W01-003 | Nachfolger konsumiert veraltete oder unvollständige Lieferung | Hashgebundener Produzentenauftrag, Quellrevision, Handoffrevision und Input-Receipts; partial blockiert benötigte Verbraucher | Tests für stale artifact/dependency, partial dependency und receipts; keine technische Zugriffssandbox. |
+| W01-004 | Erklärungen des Builders prägen das unabhängige Urteil vor | Blindphase ohne Handoffs/Reports; Reportabgleich als eigener Task nach hashgebundener Erstbewertung | `test_blind_reviewer_rejects_handoff`, `test_blind_reviewer_rejects_builder_report`, `test_report_check_requires_frozen_first_review`; falsch klassifizierte oder eingebettete Texte bleiben menschlich zu prüfen. |
+| W01-005 | Fertigmeldung ohne erforderlichen Nachweis | `ready` nur mit Artefakt, Pflichtchecks mit Beleg und ohne blockierende Frage; stets `release:false` | Positive/negative Status-, Beleg- und Frage-Tests; Beleginhalt und wirkliche Ausführung weiterhin separat prüfen. |
+| W01-006 | Große Übergabe wird unbemerkt abgeschnitten | Explizite Zeichenbudgets, Blockierung statt Trunkierung; Details bleiben nachladbar | `test_context_overflow_blocks_instead_of_truncation`, `test_handoff_overflow_blocks`; kein Nachweis einer sicheren HTTP-/Tokenobergrenze. |
+| W01-007 | Parallele Arbeit überschreibt Quellen, Fremdartefakte oder alte Receipts | Getrennte Schreibbereiche, Hashkontrolle, keine vorhandene Helperausgabe überschreiben | Output-/Pfad-/CLI-Tests; Koordinator muss Schreibbereiche verschiedener Tasks zusätzlich planen, der Helper sperrt Dateizugriffe nicht. |
+
+[32 Funktionstests](../../tools/skill-tests/ui-contracts/results-handoffs.json) · [Workflow-Verifikation](../../tools/skill-tests/ui-contracts/workflow-verification.json) · [Übergabevertrag](../../skills/ui-contracts/references/handoff-contract.md). Keine ursprünglichen Forschungsbedingungen hinzugezählt und keine alten Belege verändert.
+
+## W02 · Initialer Kontext · 29. Oktober 2026
+
+| ID | Befund / Risiko | Reparatur und Nachweis | Restgrenze |
+| --- | --- | --- | --- |
+| W02-001 | Rollenrouting konnte Workflow, Schema und eigene Karte vor Fachquellen auslösen; mögliche Kette 17.492 Zeichen | Direkter Rolleneinstieg, Bootstrap nur mit Pfaden/Hashes; [Audit](../research/analyses/INITIAL-CONTEXT/README.md) und fünf neue Funktionstests | Keine Messung des vollständigen tatsächlichen Modellrequests. |
+| W02-002 | Der verfügbare Delegationsaufruf übernimmt standardmäßig Elternhistorie | Workflow verlangt für unabhängige Worker explizit `fork_turns="none"` und Protokollierung | Kein technisches Dispatch-/Zugriffsgate; frühere Läufe dadurch nicht nachträglich als falsch bewertet. |
+| W02-003 | Ein Paketlimit kann irrtümlich als gesamtes Kontext-/Tokenlimit gelesen werden | Bootstraplimit auf komplette JSON-Datei getestet; Skill, spätere Dateilesungen und Plattformkontext ausdrücklich getrennt | Erweiterte Kontextpakete haben weiterhin ein Inhaltslimit; tatsächliche Tokens/Requestbytes im Pilot zusätzlich erheben. |
+
+Keine nachgewiesene Reparatur der HTTP-413-Ausfälle. Die ursprünglichen Studien und der bisherige 32-Test-Beleg bleiben erhalten.
+
+
+Zusätzlicher Hostbefund:
+
+| ID | Risiko | Gegenmaßnahme | Grenze |
+| --- | --- | --- | --- |
+| W02-004 | Unterschiedliche Hosts laden andere Projekt-/Globaldateien und Erinnerungen | Gemeinsame kurze AGENTS.md, dünne CLAUDE.md/GEMINI.md-Wegweiser ohne automatische Imports; [Host-Prüfverfahren](../research/analyses/INITIAL-CONTEXT/ENTRYPOINTS.md) | Statische Prüfung bestanden; reale Startladung und globale Regeln pro konkretem Host noch zu messen. |

@@ -1,5 +1,7 @@
 # Aufgaben und Fortschritt
 
+**Neue Forschungsphase, 29. Oktober 2026:** [RD-001 · Gestufte Erzeugung](docs/research/decisions/RD-001-STAGED-GENERATION.md) ist beschlossen; [Pilotvorgehen](docs/research/protocols/STAGED-GENERATION-PILOT.md) ist ausgearbeitet. Die nachfolgenden Matrixzahlen gehören weiterhin zum abgeschlossenen Kandidatenstand vom 25. Oktober. Aktuelle Aufgaben zur neuen Phase stehen am Dokumentende.
+
 Stand:25. Oktober2026. **2 offene Nachweise:Google DESIGN.md X06 und OpenUI X06.**16/16 Erstdurchgänge,702 Bedingungen/106 Gruppen,543 Claims. Alle27 anderen Zellen des29er-Ausgangsstands sind inzwischen im jeweils dokumentierten begrenzten Umfang eingeordnet; vollständige universelle Integration bleibt unbelegt.
 
 ## Abgeschlossen
@@ -84,3 +86,15 @@ Erster OpenPencil-Umfang: editierbares Design, ausdrücklich keine interaktive C
 - [x] [Agent-Skill `$ui-contracts`](docs/skills/README.md) mit Projektquelle und lokaler Installation erstellen; Strukturprüfung und 18 echte Funktionsfälle bestanden. Neue/geänderte Komponenten können keine feste Webreferenzfreigabe übernehmen. Keine Veröffentlichung.
 
 [Prüfkette: Einstieg und belegter Umfang](docs/validation/README.md). Eigener Werkzeugblock, keine Erweiterung der ursprünglichen Kandidatenmatrixzähler.
+
+## RD-001 · Gestufte Erzeugung und Skalierung · 29. Oktober 2026
+
+- [x] Bisherigen Stand einschließlich run-02/03 und externer Prüfverbesserungen lokal sichern: Commit `58e4c88`.
+- [x] [Forschungsentscheid](docs/research/decisions/RD-001-STAGED-GENERATION.md) festhalten: Teilverträge, explizite Komposition, persistierte Übergaben und unabhängige Reparaturrunden.
+- [x] [Operatives Pilotvorgehen](docs/research/protocols/STAGED-GENERATION-PILOT.md) ausarbeiten: Kontroll-/Stufenarm, vier Erstlieferungen, maximal zwei Reparaturrunden, gleiche Hilfsmittel/Prüfpolicy, Kontext-/Abbruchprotokoll und getrennte Erst-/Endbewertung.
+- [x] Wiederverwendbare Skillverbesserung umsetzen: fokussierte Rollen-Karten, versionierte Übergaben, gezieltes Quellen-Nachladen, geschützte Erstbewertung und getesteter Kontext-/Integritätshelper. [Einstieg](skills/ui-contracts/references/workflow.md).
+- [ ] Vollständigen gemeinsamen statischen Prüfumfang und neutrale technische Helper für Gate P0 bereitstellen; vorhandene begrenzte Gegenprüfung nicht als vollständige Abnahme verwenden.
+- [ ] Rollenmodelle, Gesamtbudgets, Aufträge, zulässige Übergaben und technische Anfragegrenzen vor Pilotbeginn einfrieren.
+- [ ] Pilot erst auf ausdrücklichen Ausführungsauftrag starten; keine historische Runde als neue Kontrollbedingung ausgeben.
+- [ ] Erst-/Endqualität, Aufwand, Abbrüche und Eskalationen auswerten; Befunde mit Regressionen im [Fehlerregister](docs/skills/ISSUES.md) weiterführen.
+- [ ] Danach eine komplexere zusammengesetzte Komponente auswählen und die Übertragbarkeit getrennt prüfen. iOS/Android bleiben Zukunftsperspektive.

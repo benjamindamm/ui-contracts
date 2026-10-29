@@ -2,6 +2,8 @@
 
 Gilt für künftige explizit beauftragte Reproduktions-/Modellvergleiche. Normale Komponentenarbeit muss nicht dieses vollständige Forschungsprotokoll führen. Herkunft: [AC-R02-Analyse](../research/analyses/AC-R02/README.md) und [Fehlerregister](ISSUES.md).
 
+Für die eigentliche Aufgabenzerlegung und Wissensübergabe gilt der [operative Skill-Workflow](../../skills/ui-contracts/references/workflow.md) mit [Auftrags-/Übergabevertrag](../../skills/ui-contracts/references/handoff-contract.md). Dieser funktioniert auch außerhalb einer Studie; das vorliegende Dokument ergänzt die Forschungsprovenienz. Übergaben sind kleine versionierte Ergebnisse mit Originalquellen und benötigten Artefakten, keine vollständigen fremden Gesprächsverläufe.
+
 ## Vor dem Lauf
 
 1. Zielumfang festlegen: statisches editierbares Design, ausführbares Webziel und native Plattformen sind verschiedene Prüfaufträge. Für ein statisches Design keine nicht vereinbarte ARIA-Laufzeitkonformität verlangen.

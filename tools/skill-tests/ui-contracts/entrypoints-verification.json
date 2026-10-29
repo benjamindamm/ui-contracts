@@ -1,0 +1,30 @@
+{
+  "scope": "Static repository entrypoint guard; no host startup/runtime test",
+  "passed": true,
+  "errors": [],
+  "files": {
+    "AGENTS.md": {
+      "characters": 1548,
+      "utf8Bytes": 1571,
+      "sha256": "9140fd7f0a177c05300ce970b3debdc31dd205cbf9866e2931e95fce12fc1121"
+    },
+    "CLAUDE.md": {
+      "characters": 321,
+      "utf8Bytes": 323,
+      "sha256": "4029ef5de3061c333eb4aeb8c29f859a031755634aa82cc1014d3e3ab76c19d9"
+    },
+    "GEMINI.md": {
+      "characters": 321,
+      "utf8Bytes": 323,
+      "sha256": "489a100d7837f9922d50f39123500c74557ec9182f3550de26e7a27df51c66d7"
+    }
+  },
+  "limitsInCharacters": {
+    "AGENTS.md": 1800,
+    "CLAUDE.md": 500,
+    "GEMINI.md": 500
+  },
+  "combinedCharacters": 2190,
+  "actualHostRecognitionVerified": false,
+  "globalMemoryInspected": false
+}

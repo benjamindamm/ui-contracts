@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-29",
+  "scope": "Local file/serialization audit; synthetic builder task, no model invocation or provider request capture.",
+  "units": "Unicode characters and UTF-8 bytes; not token counts.",
+  "baselineRoutingChain": {
+    "files": [
+      "SKILL.md",
+      "references/workflow.md",
+      "references/handoff-contract.md",
+      "references/roles/builder.md"
+    ],
+    "characters": 17492,
+    "qualification": "Possible eager reading chain, not observed automatic startup."
+  },
+  "skillFiles": {
+    "SKILL.md": {
+      "characters": 6244,
+      "utf8Bytes": 6343,
+      "sha256": "cf93c12bd93a6e46b6ebf40432753c387837399ac9a571cf02e84e966917e921"
+    },
+    "agents/openai.yaml": {
+      "characters": 250,
+      "utf8Bytes": 254,
+      "sha256": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d"
+    },
+    "assets/handoffs/handoff.json": {
+      "characters": 468,
+      "utf8Bytes": 468,
+      "sha256": "5a2d8e9904bd6ed04958e80faeaae0143a150364138878869fb7de852d27cd58"
+    },
+    "assets/handoffs/task.json": {
+      "characters": 914,
+      "utf8Bytes": 914,
+      "sha256": "79e5d0135b3f40f7b7b80e07c30ac8f529c0ae6b14d26fa6a0b7dabb4185931d"
+    },
+    "references/authoring.md": {
+      "characters": 3010,
+      "utf8Bytes": 3051,
+      "sha256": "68843051990a89bd4008dfcccc128341e4a7fb9deddcc441f0b0c34df16c88de"
+    },
+    "references/handoff-contract.md": {
+      "characters": 5199,
+      "utf8Bytes": 5251,
+      "sha256": "44b5ccfeffee56ad94b2ad404004aae8603aaa17d6fa4d984577307c6164448f"
+    },
+    "references/reproducibility.md": {
+      "characters": 2944,
+      "utf8Bytes": 2982,
+      "sha256": "217a71ee1df961d188705828756a74ea881aaef61d7f9eb8aadc222aaca4cfb7"
+    },
+    "references/roles/builder.md": {
+      "characters": 1550,
+      "utf8Bytes": 1580,
+      "sha256": "8497e2848ebe1858d0019909112fbbf257370b942c92f8eb173acd7e1e47921d"
+    },
+    "references/roles/coordinator.md": {
+      "characters": 1796,
+      "utf8Bytes": 1832,
+      "sha256": "347b35781066e75b56471d4fe55d590247427795bc751a70248019344606aeeb"
+    },
+    "references/roles/mapper.md": {
+      "characters": 1404,
+      "utf8Bytes": 1421,
+      "sha256": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5"
+    },
+    "references/roles/repair.md": {
+      "characters": 1164,
+      "utf8Bytes": 1189,
+      "sha256": "0a443c7d85c92b474995ca2ad497deb5f6c6930fd0b0c6006ee40a28a7775fe7"
+    },
+    "references/roles/reviewer.md": {
+      "characters": 1736,
+      "utf8Bytes": 1764,
+      "sha256": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7"
+    },
+    "references/validation.md": {
+      "characters": 5291,
+      "utf8Bytes": 5363,
+      "sha256": "c573f99b68c24e0d252adb92babbdb8fc4933c368a6e53e2dfe7d3a1dd247239"
+    },
+    "references/workflow.md": {
+      "characters": 6013,
+      "utf8Bytes": 6110,
+      "sha256": "024c5088e0ff3174fba6be236ba574b325781993172dcef87d99bdc00a795c6b"
+    },
+    "scripts/contracts.py": {
+      "characters": 7787,
+      "utf8Bytes": 7787,
+      "sha256": "142147faf9e549cf787d0b05f33b5cc340e01e5ea8f69db484d0f953f38789c5"
+    },
+    "scripts/handoffs.py": {
+      "characters": 17295,
+      "utf8Bytes": 17295,
+      "sha256": "15f692912d61d6cab294e8a1c0a99f581f1b3cf1bfd0802022505010771f1d75"
+    }
+  },
+  "syntheticBootstrapFile": {
+    "characters": 959,
+    "utf8Bytes": 959
+  },
+  "syntheticExpandedContextFile": {
+    "characters": 2440,
+    "utf8Bytes": 2440
+  },
+  "syntheticTaskFile": {
+    "characters": 1447,
+    "utf8Bytes": 1447
+  },
+  "nextReads": [
+    "Assigned role card",
+    "Task file",
+    "Only currently needed task sources/inputs and required cross-references"
+  ],
+  "bootstrapBudget": {
+    "characters": 2000,
+    "covers": "Entire helper JSON file with wrapper, indentation and newline; excludes skill, task reads and platform context."
+  },
+  "unknown": [
+    "Actual platform/system/developer/tool context size",
+    "Actual inherited conversation in previous runs",
+    "Model tokenizer and actual input token counts",
+    "Raw HTTP413 request/error payloads"
+  ],
+  "notProven": [
+    "Weaker-model quality improvement",
+    "Elimination of provider HTTP413",
+    "Actual agent follows the read policy"
+  ],
+  "officialReference": "https://learn.chatgpt.com/docs/build-skills"
+}

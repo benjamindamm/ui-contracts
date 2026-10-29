@@ -2,6 +2,8 @@
 
 Nur lesen, wenn der Auftrag solche Läufe oder deren Bewertung betrifft. Führende Projektdokumentation: `docs/skills/REPRODUCIBILITY.md`; bekannte Fehler und Regressionen: `docs/skills/ISSUES.md`. Nicht für jede normale Autorenänderung einen Forschungsprozess verlangen.
 
+Der wiederverwendbare operative Kern liegt in [workflow.md](workflow.md): fokussierte Rollen, versionierte Übergaben, gezieltes Nachladen und geschützte Erstbewertung. Die Forschung untersucht die Wirkung dieser Skillverbesserung; nicht jeder Rollenauftrag ist selbst eine neue Studie.
+
 - Vor einem neuen Vergleich dieselbe Definitionsrevision, Werkzeugbindung und einen gemeinsamen Prüfkern samt Toleranzen festlegen. Prüfer, die selbst Kriterien ableiten, liefern eine zusätzliche Versuchsvariable. Unterschiedliche Originalurteile unter unterschiedlichen Kriterien sind keine Modellrangfolge.
 - Modell/Revision/Reasoning, Harnessbudget, Kontextregel, Erstauftrag, geladene Skills und exakte Fortsetzungstexte je Rolle aufzeichnen. Unbekannt bleibt unbekannt; Sessionmodell nicht still auf Builder oder Prüfer übertragen. Nutzte ein alter Lauf den Skill nachweislich nicht, den Fehler nicht als empirisch belegtes Skillversagen darstellen.
 - Bei erlaubter Kontexttrennung ausschließlich die erlaubten Quellen benutzen. Erst ein minimales vollständiges Artefakt liefern, danach ausbauen. Vor einem Limitstopp Checkpoint schreiben; Resume möglichst neutral. Neue fachliche Hinweise als veränderte Bedingung dokumentieren. Erfolgreicher Abschluss ist kein weiterer Abbruch.

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-29",
+  "scope": "Local files before initial-context audit changes; character counts are not token counts. No actual provider request captured.",
+  "files": {
+    "SKILL.md": {
+      "chars": 6201,
+      "bytes": 6299,
+      "sha256": "34e025a6b45750a2d1d10a4e9aa0966ab4d68b67e2d3552f11630e28c2521502"
+    },
+    "references/workflow.md": {
+      "chars": 4542,
+      "bytes": 4611,
+      "sha256": "e5dd4c686a3aecf5289d788bb46c627a462ad174acb369017d10a6c52a0ac381"
+    },
+    "references/handoff-contract.md": {
+      "chars": 5199,
+      "bytes": 5251,
+      "sha256": "44b5ccfeffee56ad94b2ad404004aae8603aaa17d6fa4d984577307c6164448f"
+    },
+    "references/roles/builder.md": {
+      "chars": 1550,
+      "bytes": 1580,
+      "sha256": "8497e2848ebe1858d0019909112fbbf257370b942c92f8eb173acd7e1e47921d"
+    },
+    "references/reproducibility.md": {
+      "chars": 2944,
+      "bytes": 2982,
+      "sha256": "217a71ee1df961d188705828756a74ea881aaef61d7f9eb8aadc222aaca4cfb7"
+    },
+    "references/authoring.md": {
+      "chars": 3010,
+      "bytes": 3051,
+      "sha256": "68843051990a89bd4008dfcccc128341e4a7fb9deddcc441f0b0c34df16c88de"
+    },
+    "references/validation.md": {
+      "chars": 5291,
+      "bytes": 5363,
+      "sha256": "c573f99b68c24e0d252adb92babbdb8fc4933c368a6e53e2dfe7d3a1dd247239"
+    }
+  }
+}

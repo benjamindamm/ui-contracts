@@ -1,0 +1,17 @@
+{
+  "format": "ui-contracts-handoff/1",
+  "taskId": "REPLACE-task-id",
+  "taskRevision": 1,
+  "role": "mapper",
+  "revision": 1,
+  "definitionRevision": "REPLACE-with-definition-revision",
+  "status": "partial",
+  "summary": "REPLACE-with-short-delivery-summary",
+  "inputs": [],
+  "artifacts": [],
+  "claims": [],
+  "questions": [],
+  "checks": [],
+  "limitations": ["REPLACE-with-actual-unchecked-scope"],
+  "nextAction": "REPLACE-with-small-next-step-or-blocker"
+}

@@ -1,0 +1,23 @@
+{
+  "format": "ui-contracts-task/1",
+  "taskId": "REPLACE-task-id",
+  "revision": 1,
+  "role": "mapper",
+  "domain": "visual",
+  "phase": "normal",
+  "goal": "REPLACE-with-one-concrete-result",
+  "scope": "REPLACE-with-assigned-part-and-exclusions",
+  "definition": {
+    "revision": "REPLACE-with-SHA256-of-compact-sorted-manifest-files-map",
+    "manifest": {"path": "REPLACE/input-manifest.json", "sha256": "REPLACE-with-file-SHA256"}
+  },
+  "sources": [
+    {"id": "visual-source", "path": "REPLACE/original.css", "sha256": "REPLACE-with-file-SHA256", "kind": "original", "purpose": "REPLACE-with-why-this-task-needs-it"}
+  ],
+  "inputs": [],
+  "outputs": ["REPLACE/work/visual"],
+  "acceptance": [
+    {"id": "source-map-complete", "required": true, "description": "REPLACE-with-observable-delivery-criterion"}
+  ],
+  "context": {"maxBootstrapChars": 2000, "maxInlineChars": 8000, "maxHandoffChars": 16000}
+}

@@ -15,9 +15,11 @@ Bestimme aus dem Auftrag Komponente, Ziel, gewünschte Änderung und Prüfanspru
 
 Bei Reproduktionsläufen, Modellvergleichen oder der Analyse solcher Ergebnisse lies [references/reproducibility.md](references/reproducibility.md). Historische Ergebnisse von außen prüfen; identische Designs und identische Kriterienurteile sind getrennte Aussagen.
 
+Bei einem bereits zugewiesenen Rollenauftrag zuerst nur die zugehörige Karte unter `references/roles/` und die Auftragsdatei lesen. Vollständiger Workflow, Übergabeschema, Forschungsgeschichte und andere Rollenkarten gehören nicht automatisch in den Einstieg. Für Planung oder das Verfassen von Aufträgen/Übergaben lies [references/workflow.md](references/workflow.md); weitere Details nach Bedarf. Ein Verweis ist eine Nachlademöglichkeit, kein pauschaler Leseauftrag. Bei Reproduktionsaufträgen die oben genannte Reproduktionsreferenz zusätzlich nur für den eigenen Prüfumfang nutzen. Kleine Änderungen benötigen keinen mehrstufigen Forschungsablauf.
+
 ## Contractartefakte erstellen oder ändern
 
-Lies [references/authoring.md](references/authoring.md) sowie die betroffene Definition, bevor du Originalartefakte schreibst. Bewahre die vier getrennten führenden Domänen und explizite Verbindungen zwischen Definition, Instanz, Teil und Zustand. Erfinde keinen neuen Universalstandard und keine unabhängige Zielimplementierung als zusätzliche Wahrheit.
+Nur beim Schreiben führender Originalartefakte: Lies [references/authoring.md](references/authoring.md) sowie die betroffene Definition. Bewahre die vier getrennten führenden Domänen und explizite Verbindungen zwischen Definition, Instanz, Teil und Zustand. Erfinde keinen neuen Universalstandard und keine unabhängige Zielimplementierung als zusätzliche Wahrheit.
 
 Historische Forschungs-/Studienartefakte und eingefrorene Definitionen bleiben als Belege erhalten. Nutze für eine neue Revision eine eigene Kandidatenkopie beziehungsweise den vom Nutzer vorgesehenen neuen Bibliothekseintrag. Verändere bei einer eingefrorenen Eingabe weder Definition noch Erwartungen, um ein Zielbild nachträglich passend zu machen.
 
