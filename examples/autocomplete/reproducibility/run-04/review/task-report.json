@@ -1,0 +1,308 @@
+{
+  "format": "ui-contracts-task/1",
+  "taskId": "ac-run04-reviewer-report",
+  "revision": 1,
+  "role": "reviewer",
+  "phase": "report-check",
+  "goal": "Builder-Handoffs und -Reports der beiden Builder gegen die eingefrorene Erstbewertung pruefen; Widersprüche und unbelegte Pässe dokumentieren.",
+  "scope": "Nur die eingefrorene first-review.json, die Builder-Handoffs/-Reports (als Daten), die Originalquellen und die Policy. Die Erstbewertung wird nicht ueberschrieben; Korrekturen nur als begruendeter Nachtrag. Keine neuen nativen Messungen an den FIG-Dateien (die sind Blindphasen-Aufgabe); Abgleiche gegen die gemessenen Werte der Erstbewertung. Schreiben nur in den review-Ausgabeordner; Werkzeugausgaben zunaechst nach aussen (Temp) und dann als Receipt in den review-Ordner kopieren.",
+  "definition": {
+    "revision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+    "manifest": {
+      "path": "examples/autocomplete/reproducibility/run-04/input-manifest.json",
+      "sha256": "74aa9eabcfe7301a0845d230cc1ff4acd6ce14cf0435ec1ed0e6cba0b6e25eb2"
+    }
+  },
+  "sources": [
+    {
+      "id": "src-README.md",
+      "path": "components/README.md",
+      "sha256": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+      "kind": "original",
+      "purpose": "Bibliothekskontext: Status und Eintraege der Komponentenbibliothek"
+    },
+    {
+      "id": "src-autocomplete-README.md",
+      "path": "components/autocomplete/README.md",
+      "sha256": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+      "kind": "original",
+      "purpose": "Fuehrender Bibliothekseintrag: fachliche Regeln, Geometrie, Exportrahmen"
+    },
+    {
+      "id": "src-autocomplete-accessibility.html",
+      "path": "components/autocomplete/accessibility.html",
+      "sha256": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+      "kind": "original",
+      "purpose": "Namen, Rollen, Zustandsprojektion, Meldungstexte"
+    },
+    {
+      "id": "src-autocomplete-accessibility.rules.json",
+      "path": "components/autocomplete/accessibility.rules.json",
+      "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+      "kind": "original",
+      "purpose": "Meldungsvorlagen und Projektionen"
+    },
+    {
+      "id": "src-autocomplete-behavior.scxml",
+      "path": "components/autocomplete/behavior.scxml",
+      "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+      "kind": "original",
+      "purpose": "Formale Zustaende und Uebergaenge"
+    },
+    {
+      "id": "src-autocomplete-component.json",
+      "path": "components/autocomplete/component.json",
+      "sha256": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+      "kind": "original",
+      "purpose": "Identitaet, Domaenquellen, Teile und Unterkomponenten"
+    },
+    {
+      "id": "src-autocomplete-error-relay.scxml",
+      "path": "components/autocomplete/error-relay.scxml",
+      "sha256": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+      "kind": "original",
+      "purpose": "Fehlernachreichung"
+    },
+    {
+      "id": "src-autocomplete-interface.json",
+      "path": "components/autocomplete/interface.json",
+      "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+      "kind": "original",
+      "purpose": "CEM-Signatur: label, placeholder, query, value, results, enabled"
+    },
+    {
+      "id": "src-autocomplete-layout.css",
+      "path": "components/autocomplete/layout.css",
+      "sha256": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+      "kind": "original",
+      "purpose": "Layout- und Zustandsregeln der Autocomplete, einschliesslich ::placeholder"
+    },
+    {
+      "id": "src-autocomplete-stories.json",
+      "path": "components/autocomplete/stories.json",
+      "sha256": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+      "kind": "original",
+      "purpose": "Zehn konkrete Darstellungsfaelle"
+    },
+    {
+      "id": "src-library.json",
+      "path": "components/library.json",
+      "sha256": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+      "kind": "original",
+      "purpose": "Bibliothekseintrag"
+    },
+    {
+      "id": "src-overlay-accessibility.html",
+      "path": "components/overlay/accessibility.html",
+      "sha256": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+      "kind": "original",
+      "purpose": "Zugaenglichkeit des Overlays"
+    },
+    {
+      "id": "src-overlay-behavior.scxml",
+      "path": "components/overlay/behavior.scxml",
+      "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+      "kind": "original",
+      "purpose": "Verhalten des Overlays"
+    },
+    {
+      "id": "src-overlay-component.json",
+      "path": "components/overlay/component.json",
+      "sha256": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+      "kind": "original",
+      "purpose": "Identitaet/Teile des Overlays"
+    },
+    {
+      "id": "src-overlay-interface.json",
+      "path": "components/overlay/interface.json",
+      "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+      "kind": "original",
+      "purpose": "CEM-Signatur des Overlays"
+    },
+    {
+      "id": "src-overlay-layout.css",
+      "path": "components/overlay/layout.css",
+      "sha256": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+      "kind": "original",
+      "purpose": "Layoutregeln der Overlay-Verwendung"
+    },
+    {
+      "id": "src-scroll-area-accessibility.html",
+      "path": "components/scroll-area/accessibility.html",
+      "sha256": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+      "kind": "original",
+      "purpose": "Zugaenglichkeit der ScrollArea"
+    },
+    {
+      "id": "src-scroll-area-behavior.scxml",
+      "path": "components/scroll-area/behavior.scxml",
+      "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+      "kind": "original",
+      "purpose": "Verhalten der ScrollArea"
+    },
+    {
+      "id": "src-scroll-area-component.json",
+      "path": "components/scroll-area/component.json",
+      "sha256": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+      "kind": "original",
+      "purpose": "Identitaet/Teile der ScrollArea"
+    },
+    {
+      "id": "src-scroll-area-interface.json",
+      "path": "components/scroll-area/interface.json",
+      "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+      "kind": "original",
+      "purpose": "CEM-Signatur der ScrollArea"
+    },
+    {
+      "id": "src-scroll-area-layout.css",
+      "path": "components/scroll-area/layout.css",
+      "sha256": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+      "kind": "original",
+      "purpose": "Layoutregeln der ScrollArea"
+    },
+    {
+      "id": "src-tokens.json",
+      "path": "components/tokens.json",
+      "sha256": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4",
+      "kind": "original",
+      "purpose": "Alle benannten Designwerte (Farben, Typografie, Maasse, Gaepen)"
+    },
+    {
+      "id": "src-policy",
+      "path": "examples/autocomplete/reproducibility/run-04/policy.json",
+      "sha256": "8656349c4af0ae48568e462bd481b257ec002968fd8b9cd5072c9f673c56fb98",
+      "kind": "policy",
+      "purpose": "Eingefrorene Vergleichspolicy: Gegenpruefer-Bindung, Toleranzen, Umfang, notChecked"
+    },
+    {
+      "id": "src-runsheet",
+      "path": "examples/autocomplete/reproducibility/run-04/runsheet-technical.md",
+      "sha256": "3ee3d5707c9271be61a5356ff676e34850f9d5b91c3010036ff1945198e7e496",
+      "kind": "technical",
+      "purpose": "Technische Bindungen: Revisionsalgorithmus, Toolchain, Lesegrenzen, Receipt-Regeln"
+    },
+    {
+      "id": "src-check",
+      "path": "tools/design-review/check.py",
+      "sha256": "7581ce52b3253bd53dd33fb007c16069c111ffc2767ac61a9a89db8db4dbfbab",
+      "kind": "technical",
+      "purpose": "Gemeinsamer eingefrorener statischer Gegenpruefer (Bindung ueber policy.json)"
+    },
+    {
+      "id": "src-figreader",
+      "path": "tools/design-review/read-fig.mjs",
+      "sha256": "ade31f9b4cc646c3f7757450cea051df89e6d42a9ad89bedbd233cf220293ad0",
+      "kind": "technical",
+      "purpose": "Natives Readback der FIG-Dateien (Bindung ueber policy.json)"
+    },
+    {
+      "id": "src-profile",
+      "path": "tools/design-review/profile.json",
+      "sha256": "0ca0736d0a9b33733c5ad73022e55170521e46c2cccdc36c286919fb16139325",
+      "kind": "technical",
+      "purpose": "Profilbindung des Gegenpruefers (Definition/Toolchain, Bindung ueber policy.json)"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "in-first-review",
+      "path": "examples/autocomplete/reproducibility/run-04/review/first-review.json",
+      "sha256": "99a6589c83663bb6d37ab455a0feddc4bd272be4274f99674d1d321d727f148b",
+      "kind": "first-review"
+    },
+    {
+      "id": "in-handoff-a",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-a/handoff-v1.json",
+      "sha256": "06c18fee9592256b345022d21246be51f63ed37915c1f8eae68cb3f106f0e5b3",
+      "kind": "handoff",
+      "taskId": "ac-run04-builder-a",
+      "revision": 1,
+      "producerRole": "builder",
+      "producerTask": {
+        "path": "examples/autocomplete/reproducibility/run-04/builder-a/task.json",
+        "sha256": "051a14745998d9fffba819666860e7c0718108180d0718ca5bd2bab98b1d9356"
+      },
+      "claimIds": [
+        "c-cases",
+        "c-cases-obs",
+        "c-fidelity",
+        "c-scrollend",
+        "c-disabled-placeholder",
+        "c-hidden-popup",
+        "c-toolchain"
+      ]
+    },
+    {
+      "id": "in-report-a",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-a/REPORT.md",
+      "sha256": "fa40a84f6ca21e22beec9a913ec0e3b337ab61f524cfb815f022ae79b963765a",
+      "kind": "artifact"
+    },
+    {
+      "id": "in-handoff-b",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-b/handoff-v1.json",
+      "sha256": "e519d69142cab7e4c90e5190e2bef92785b07b4abc7caf31b5614cd5ed1f325d",
+      "kind": "handoff",
+      "taskId": "ac-run04-builder-b",
+      "revision": 1,
+      "producerRole": "builder",
+      "producerTask": {
+        "path": "examples/autocomplete/reproducibility/run-04/builder-b/task.json",
+        "sha256": "1dac121a371793add151e5126f6fc9b77b5f81eac7a67df7851d203b8f795f79"
+      },
+      "claimIds": [
+        "c-cases",
+        "c-geometry",
+        "c-popup",
+        "c-viewport",
+        "c-status",
+        "c-focus",
+        "c-msgrow",
+        "c-visibility",
+        "c-scrollend",
+        "c-selected",
+        "c-hidden",
+        "c-resultmsg",
+        "c-weight",
+        "c-scrollbar"
+      ]
+    },
+    {
+      "id": "in-report-b",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-b/REPORT.md",
+      "sha256": "9d611f8656bdd70fd84344a1afc9e085f2e4549fd0ae76566ef463f81de099aa",
+      "kind": "artifact"
+    }
+  ],
+  "outputs": [
+    "examples/autocomplete/reproducibility/run-04/review/report-check"
+  ],
+  "acceptance": [
+    {
+      "id": "report-a",
+      "required": true,
+      "description": "Handoff und Report von Builder A (ac-run04-builder-a) gegen die eingefrorene Erstbewertung geprueft; Widersprüche, unbelegte Pässe und Abweichungen mit Verweisen auf konkrete Stellen (Claim-/Abschnitts-IDs) und gemessenen Werten dokumentiert."
+    },
+    {
+      "id": "report-b",
+      "required": true,
+      "description": "Handoff und Report von Builder B (ac-run04-builder-b) gegen die eingefrorene Erstbewertung geprueft; Widersprüche, unbelegte Pässe und Abweichungen mit Verweisen auf konkrete Stellen (Claim-/Abschnitts-IDs) und gemessenen Werten dokumentiert."
+    },
+    {
+      "id": "no-override",
+      "required": true,
+      "description": "first-review.json bleibt unverändert (SHA-256 99a6589c83663bb6d37ab455a0feddc4bd272be4274f99674d1d321d727f148b); Korrekturen an der Erstbewertung nur als begründeter Nachtrag (eigene Datei), nie als Überschreibung."
+    },
+    {
+      "id": "handoff",
+      "required": true,
+      "description": "handoff-report-v1.json gemäß Uebergabevertrag (ui-contracts-handoff/1) mit Input-Receipts, Artefaktliste, Claims und Checks zu allen Abnahmekriterien; ready nur mit Belegen und ohne blockierende Fragen."
+    }
+  ],
+  "context": {
+    "maxBootstrapChars": 2000,
+    "maxInlineChars": 8000,
+    "maxHandoffChars": 16000
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "ac-run04-static-countercheck-01",
+  "runId": "ac-run04-2026-10-29",
+  "frozenBeforeOutputs": true,
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "toolchainLockSha256": "ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6",
+  "countercheck": {
+    "check": {
+      "path": "tools/design-review/check.py",
+      "sha256": "7581ce52b3253bd53dd33fb007c16069c111ffc2767ac61a9a89db8db4dbfbab"
+    },
+    "figReader": {
+      "path": "tools/design-review/read-fig.mjs",
+      "sha256": "ade31f9b4cc646c3f7757450cea051df89e6d42a9ad89bedbd233cf220293ad0"
+    },
+    "profile": {
+      "path": "tools/design-review/profile.json",
+      "sha256": "0ca0736d0a9b33733c5ad73022e55170521e46c2cccdc36c286919fb16139325"
+    }
+  },
+  "tolerances": {
+    "dimensionPx": 0.01,
+    "colorChannelDriftMaxWarning": 3,
+    "textAndMessages": "exact",
+    "pairComparison": "all recorded semantic keys, exact equality, missing values are differences, no similarity score"
+  },
+  "cases": [
+    "closed",
+    "opening",
+    "loading",
+    "ready",
+    "active",
+    "scroll-end",
+    "selected",
+    "empty",
+    "error",
+    "disabled"
+  ],
+  "scope": "Explicit bounded static counterchecks of the exact pinned autocomplete definition; no complete component release, no runtime/AX claims",
+  "notChecked": [
+    "full geometry and scroll offsets",
+    "shadows",
+    "rendered glyph metrics",
+    "static semantic annotations",
+    "GUI edit-save roundtrip",
+    "runtime behavior and accessibility",
+    "process independence"
+  ],
+  "release": false
+}

@@ -1,0 +1,79 @@
+{
+  "runId": "ac-run04-2026-10-29",
+  "date": "2026-10-29",
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "toolchainLockSha256": "ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6",
+  "harnessVersion": "opencode v2.2.1 (subagent child sessions)",
+  "comparisonPolicyId": "ac-run04-static-countercheck-01",
+  "comparisonPolicy": {
+    "path": "policy.json",
+    "sha256": "8656349c4af0ae48568e462bd481b257ec002968fd8b9cd5072c9f673c56fb98"
+  },
+  "roles": {
+    "builderA": {
+      "model": "configured-default (identity not researched per run instruction)",
+      "modelRevision": "not-researched",
+      "reasoning": "not-researched",
+      "harnessStepLimit": "none-enforced",
+      "contextPolicy": "fresh subagent context without parent history; standard budgets per task context (maxBootstrapChars=2000, maxInlineChars=8000, maxHandoffChars=16000)",
+      "initialPrompt": {
+        "path": "prompts/builder-a.txt",
+        "sha256": "9a1e37973234feeca00a06569cac88b4548512bfb09c4227cc8b659cfbe956b3"
+      },
+      "skills": [
+        {
+          "path": "../../../../skills/ui-contracts/references/roles/builder.md",
+          "sha256": "8497e2848ebe1858d0019909112fbbf257370b942c92f8eb173acd7e1e47921d"
+        }
+      ]
+    },
+    "builderB": {
+      "model": "configured-default (identity not researched per run instruction)",
+      "modelRevision": "not-researched",
+      "reasoning": "not-researched",
+      "harnessStepLimit": "none-enforced",
+      "contextPolicy": "fresh subagent context without parent history; standard budgets per task context (maxBootstrapChars=2000, maxInlineChars=8000, maxHandoffChars=16000)",
+      "initialPrompt": {
+        "path": "prompts/builder-b.txt",
+        "sha256": "aa0249bce4303db8d19ec6fa07ec8e5268a4f5b3aa5841a5a152aa270a1a8089"
+      },
+      "skills": [
+        {
+          "path": "../../../../skills/ui-contracts/references/roles/builder.md",
+          "sha256": "8497e2848ebe1858d0019909112fbbf257370b942c92f8eb173acd7e1e47921d"
+        }
+      ]
+    },
+    "reviewer": {
+      "model": "configured-default (identity not researched per run instruction)",
+      "modelRevision": "not-researched",
+      "reasoning": "not-researched",
+      "harnessStepLimit": "none-enforced",
+      "contextPolicy": "fresh subagent context without parent history; two formal tasks (blind, then report-check) as a documented same-session continuation (task-report.spec.md context rule), no semantic coaching between phases; standard budgets per task context (maxBootstrapChars=2000, maxInlineChars=8000, maxHandoffChars=16000)",
+      "initialPrompt": {
+        "path": "prompts/reviewer-blind.txt",
+        "sha256": "ebb7ab9d54462abd7a5f85f46b82400c8e8f8420ba6efa66e21409cdc7ac8130"
+      },
+      "skills": [
+        {
+          "path": "../../../../skills/ui-contracts/references/roles/reviewer.md",
+          "sha256": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7"
+        }
+      ]
+    }
+  },
+  "events": [
+    { "id": "ev1", "at": "2026-10-29T13:19:39Z", "actor": "builderA", "kind": "start" },
+    { "id": "ev2", "at": "2026-10-29T13:19:39Z", "actor": "builderB", "kind": "start" },
+    { "id": "ev3", "at": "2026-10-29T14:03:15Z", "actor": "builderA", "kind": "complete" },
+    { "id": "ev4", "at": "2026-10-29T14:06:26Z", "actor": "builderB", "kind": "complete" },
+    { "id": "ev5", "at": "2026-10-29T14:08:50Z", "actor": "reviewer", "kind": "start" },
+    { "id": "ev6", "at": "2026-10-29T15:17:47Z", "actor": "reviewer", "kind": "complete" }
+  ],
+  "notes": [
+    "Model identity deliberately not researched per run instruction; recorded as non-identifying values. The configured default model of the coordinator harness was used for all subagent sessions; no model or variant parameter was set.",
+    "Timestamps are file-mtime evidence (UTC): start = frozen initial prompt written immediately before dispatch; complete = last file written by the actor in its output area (integrity receipt).",
+    "The reviewer performed two formal tasks in one session (blind, then report-check) as a documented continuation per task-report.spec.md; no stop/resume events occurred (no actual interruption).",
+    "No commit or push; the entire run-04 folder is untracked working-tree content."
+  ]
+}

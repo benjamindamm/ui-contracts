@@ -1,0 +1,43 @@
+Du bist Builder A im Autocomplete-Reproduktionslauf run-04 im Repository /Users/kcnpxcp/Dev/GitHub/ui-contracts.
+
+Starteintrag (Bootstrap, vom Helper erzeugt, unveraendert uebernehmen):
+{
+  "overall": "BOOTSTRAP_READY",
+  "release": false,
+  "bootstrap": {
+    "format": "ui-contracts-bootstrap/1",
+    "taskId": "ac-run04-builder-a",
+    "taskRevision": 1,
+    "role": "builder",
+    "phase": "normal",
+    "taskReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/builder-a/task.json",
+      "sha256": "051a14745998d9fffba819666860e7c0718108180d0718ca5bd2bab98b1d9356"
+    },
+    "skillRoleReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/skills/ui-contracts/references/roles/builder.md",
+      "sha256": "8497e2848ebe1858d0019909112fbbf257370b942c92f8eb173acd7e1e47921d"
+    },
+    "loadOrder": [
+      "Read the role card and task first.",
+      "Load only task sources/inputs needed for the current step; follow cross-references when necessary.",
+      "Read acceptance and output boundaries before writing. Original sources lead; no component release."
+    ],
+    "release": false
+  }
+}
+
+Arbeitsauftrag (ergaenzt Bootstrap und Rollenkarte):
+1. Lies zuerst deine Rollenkarte und deine Auftragsdatei (Pfade und Hashes im Bootstrap). Lade danach nur die im Auftrag erlaubten Originalquellen und technischen Eingaben; bei Bedarf nach Verweisen.
+2. Erzeuge aus der eingefrorenen Definition ein editierbares OpenPencil-Design: eine Seite mit den zehn benannten Faelle-frames (geschlossene, oeffnende, lade-, bereit-, aktiv-, scroll-end-, ausgewaehlt-, leer-, fehler- und deaktiviert-Zustaende nach stories.json/README). Die Aussenanordnung der Faelle und Seitentitel sind frei; die Komponente selbst folgt den Quellen.
+3. Nutze ausschliesslich die gepinnte Toolchain unter tools/openpencil/ (CLI: npm run openpencil -- ...; Core-API: @open-pencil/core, exportFigFile/parseFigFile, vgl. technisches Laufblatt). Kein anderes Werkzeug, keine neuen Definitionswerte.
+4. Exportiere das Ergebnis als autocomplete.fig in deinen Ausgabeordner (siehe task outputs).
+5. Lies die exportierte Datei mit der gepinnten Toolchain zurueck und speichere ein Readback-Receipt als readback.json im Ausgabeordner (native Beobachtungen: Typ, Name, Maasse, Fills/Strokes, Texte, Editierbarkeit).
+6. Schreibe REPORT.md im Ausgabeordner: Erzeugungsweg, genutzte Quellen, dokumentierte Abweichungen/Definitionsluecken, Grenzen (inkl. nicht gepruefter Bereiche).
+7. Schreibe handoff-v1.json im Ausgabeordner nach dem Uebergabevertrag (format ui-contracts-handoff/1; Struktur und Regeln: skills/ui-contracts/references/handoff-contract.md, Vorlage: skills/ui-contracts/assets/handoffs/handoff.json). Status ready nur, wenn alle required-Abnahmekriterien mit belegtem pass abgedeckt sind und keine blockierende Frage offen ist; sonst partial/blocked mit Gruenden.
+
+Harte Grenzen:
+- Schreiben nur in deinen Ausgabeordner (bootstrap.json liegt bereits dort und bleibt unberuehrt).
+- Keine frueheren Laeufe, bereits erzeugten Designs oder Ausgaben lesen oder als Vorlage nutzen (keine run-01..03, keine examples/autocomplete/output oder review, keine docs/research).
+- Keine Webrecherche. Fehlt eine Angabe, dokumentiere sie als Luecke.
+- Keine Aenderungen an Definitionen, Profilen oder Werkzeugen. Kein Commit, kein Push.

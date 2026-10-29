@@ -1,0 +1,3218 @@
+{
+  "format": "ui-contracts-readback/1",
+  "createdAt": "2026-10-29T13:47:55.433Z",
+  "toolchain": {
+    "package": "@open-pencil/core",
+    "version": "0.16.0",
+    "api": "parseFigFile(arrayBuffer, { populate: \"all\" })"
+  },
+  "file": {
+    "path": "autocomplete.fig",
+    "bytes": 31501,
+    "sha256": "4972198fe30b878f6e16733450c45acd9fbe4362235c590fce8016b40e6e47df"
+  },
+  "definition": {
+    "revision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+    "manifest": {
+      "path": "examples/autocomplete/reproducibility/run-04/input-manifest.json",
+      "sha256": "74aa9eabcfe7301a0845d230cc1ff4acd6ce14cf0435ec1ed0e6cba0b6e25eb2"
+    },
+    "verifiedFiles": 22
+  },
+  "page": {
+    "name": "Autocomplete",
+    "width": 100,
+    "height": 100,
+    "topLevelChildren": 11,
+    "title": {
+      "name": "Seitentitel",
+      "text": "Autocomplete · 10 Fälle (stories.json, Definition 0.1.0)"
+    }
+  },
+  "editability": {
+    "rule": "Alle Layer sind normale FRAME/TEXT-Nodes des Dokuments (keine Instanzen), keiner ist locked; damit ist jeder Layer im OpenPencil-Editor einzeln anwählbar und editierbar.",
+    "typesUsed": [
+      "CANVAS",
+      "FRAME",
+      "TEXT"
+    ],
+    "allUnlocked": true,
+    "nodeCount": 165
+  },
+  "checks": [
+    {
+      "id": "readback",
+      "description": "autocomplete.fig öffnet sich als OpenPencil-Dokument (parseFigFile, populate:\"all\"); alle Layer sind normale, nicht gesperrte FRAME/TEXT-Layer.",
+      "status": "pass",
+      "evidence": "Seite \"Autocomplete\" 100×100; 165 Nodes; Typen: CANVAS, FRAME, TEXT; gesperrt: keine"
+    },
+    {
+      "id": "cases",
+      "description": "Genau zehn Fall-frames mit den Quellnamen closed…disabled, in stories.json-Reihenfolge, je FRAME, 320 px breit.",
+      "status": "pass",
+      "evidence": "Frame-Reihenfolge: closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled; Typen: FRAME; Breite: 320; freier Seitentitel: Autocomplete · 10 Fälle (stories.json, Definition 0.1.0)"
+    },
+    {
+      "id": "parts",
+      "description": "Innerhalb jedes Falls bleiben label, input, overlay/surface, overlay/content, scroll/viewport, scroll/content, list, option/<key>, message-row (falls definiert) und status als getrennte, benannte, nicht gesperrte Layer erhalten.",
+      "status": "pass",
+      "evidence": "Alle 10 Fälle enthalten alle Teil-Layer; keine gesperrten Layer; message-row nur in loading/empty/error; option-Zeilen mit Text-Kind."
+    },
+    {
+      "id": "fidelity",
+      "description": "Farben, Typografie, Maße und Meldungen stimmen mit den aus tokens.json/layout.css/stories.json/accessibility.rules.json berechneten Werten überein.",
+      "status": "pass",
+      "evidence": "Alle Geometrie-/Farb-/Text-/Meldungswerte identisch (Farben: surface #ffffff, text #172b4d, muted #64748b, border #cbd5e1, focus #2563eb, highlight #eaf2ff, disabled #94a3b8, error #b91c1c; Inter 14/12, lineHeight 20; Radius 8; Shadow 0 2 8 #00000033)."
+    },
+    {
+      "id": "scrollend",
+      "description": "scroll-end zeigt die aktive letzte Option (option/zuerich) im geclippten Viewport; Inhalt um -64 px versetzt; alle 7 Ergebnislayer erhalten.",
+      "status": "pass",
+      "evidence": "scroll/content y=-64 h=224 in viewport 320×160 (geclippt); 7 option/-Layer; option/zuerich fill #EAF2FF; letzte Option bei 128..160 (untere Viewportkante)."
+    }
+  ],
+  "cases": [
+    {
+      "name": "closed",
+      "x": 40,
+      "y": 120,
+      "frameH": 100,
+      "popupVisible": false,
+      "nodes": {
+        "path": "closed",
+        "name": "closed",
+        "type": "FRAME",
+        "x": 40,
+        "y": 120,
+        "width": 320,
+        "height": 100,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "closed/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "closed/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#cbd5e1",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "closed/input/input/placeholder",
+                "name": "input/placeholder",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#64748b"
+                  }
+                ],
+                "text": "Stadt suchen …",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "closed/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 0,
+            "visible": false,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "closed/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 0,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "closed/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 0,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "closed/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 0,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "closed/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 0,
+                            "visible": true,
+                            "locked": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "closed/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "opening",
+      "x": 480,
+      "y": 120,
+      "frameH": 100,
+      "popupVisible": false,
+      "nodes": {
+        "path": "opening",
+        "name": "opening",
+        "type": "FRAME",
+        "x": 480,
+        "y": 120,
+        "width": 320,
+        "height": 100,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "opening/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "opening/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#2563eb",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "opening/input/input/placeholder",
+                "name": "input/placeholder",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#64748b"
+                  }
+                ],
+                "text": "Stadt suchen …",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "opening/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 0,
+            "visible": false,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "opening/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 0,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "opening/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 0,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "opening/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 0,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "opening/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 0,
+                            "visible": true,
+                            "locked": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "opening/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "Suche wird geöffnet.",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "loading",
+      "x": 40,
+      "y": 440,
+      "frameH": 140,
+      "popupVisible": true,
+      "nodes": {
+        "path": "loading",
+        "name": "loading",
+        "type": "FRAME",
+        "x": 40,
+        "y": 440,
+        "width": 320,
+        "height": 140,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "loading/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "loading/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#2563eb",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "loading/input/input/query",
+                "name": "input/query",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#172b4d"
+                  }
+                ],
+                "text": "Be",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "loading/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 32,
+            "visible": true,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "loading/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 32,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "loading/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 32,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "loading/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 32,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "loading/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 32,
+                            "visible": true,
+                            "locked": false,
+                            "children": [
+                              {
+                                "path": "loading/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/message-row",
+                                "name": "message-row",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 0,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "loading/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/message-row/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Städte werden geladen.",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "loading/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 120,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "Städte werden geladen.",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ready",
+      "x": 480,
+      "y": 440,
+      "frameH": 268,
+      "popupVisible": true,
+      "nodes": {
+        "path": "ready",
+        "name": "ready",
+        "type": "FRAME",
+        "x": 480,
+        "y": 440,
+        "width": 320,
+        "height": 268,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "ready/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "ready/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#2563eb",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "ready/input/input/placeholder",
+                "name": "input/placeholder",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#64748b"
+                  }
+                ],
+                "text": "Stadt suchen …",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "ready/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 160,
+            "visible": true,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "ready/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 160,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "ready/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 160,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 224,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 224,
+                            "visible": true,
+                            "locked": false,
+                            "children": [
+                              {
+                                "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/berlin",
+                                "name": "option/berlin",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 0,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/berlin/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Berlin",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/hamburg",
+                                "name": "option/hamburg",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 32,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/hamburg/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Hamburg",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/muenchen",
+                                "name": "option/muenchen",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 64,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/muenchen/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#94a3b8"
+                                      }
+                                    ],
+                                    "text": "München",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/dresden",
+                                "name": "option/dresden",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 96,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/dresden/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Dresden",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/koeln",
+                                "name": "option/koeln",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 128,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/koeln/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Köln",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/wien",
+                                "name": "option/wien",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 160,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/wien/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Wien",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/zuerich",
+                                "name": "option/zuerich",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 192,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "ready/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/zuerich/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Zürich",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "ready/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 248,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "7 Städte verfügbar.",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "active",
+      "x": 40,
+      "y": 760,
+      "frameH": 268,
+      "popupVisible": true,
+      "nodes": {
+        "path": "active",
+        "name": "active",
+        "type": "FRAME",
+        "x": 40,
+        "y": 760,
+        "width": 320,
+        "height": 268,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "active/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "active/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#2563eb",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "active/input/input/placeholder",
+                "name": "input/placeholder",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#64748b"
+                  }
+                ],
+                "text": "Stadt suchen …",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "active/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 160,
+            "visible": true,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "active/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 160,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "active/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 160,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 224,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 224,
+                            "visible": true,
+                            "locked": false,
+                            "children": [
+                              {
+                                "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/berlin",
+                                "name": "option/berlin",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 0,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/berlin/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Berlin",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/hamburg",
+                                "name": "option/hamburg",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 32,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "fills": [
+                                  {
+                                    "type": "SOLID",
+                                    "hex": "#eaf2ff"
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/hamburg/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Hamburg",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/muenchen",
+                                "name": "option/muenchen",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 64,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/muenchen/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#94a3b8"
+                                      }
+                                    ],
+                                    "text": "München",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/dresden",
+                                "name": "option/dresden",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 96,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/dresden/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Dresden",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/koeln",
+                                "name": "option/koeln",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 128,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/koeln/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Köln",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/wien",
+                                "name": "option/wien",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 160,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/wien/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Wien",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/zuerich",
+                                "name": "option/zuerich",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 192,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "active/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/zuerich/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Zürich",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "active/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 248,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "7 Städte verfügbar.",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "scroll-end",
+      "x": 480,
+      "y": 760,
+      "frameH": 268,
+      "popupVisible": true,
+      "nodes": {
+        "path": "scroll-end",
+        "name": "scroll-end",
+        "type": "FRAME",
+        "x": 480,
+        "y": 760,
+        "width": 320,
+        "height": 268,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "scroll-end/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "scroll-end/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#2563eb",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "scroll-end/input/input/placeholder",
+                "name": "input/placeholder",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#64748b"
+                  }
+                ],
+                "text": "Stadt suchen …",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "scroll-end/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 160,
+            "visible": true,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "scroll-end/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 160,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 160,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": -64,
+                        "width": 320,
+                        "height": 224,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 224,
+                            "visible": true,
+                            "locked": false,
+                            "children": [
+                              {
+                                "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/berlin",
+                                "name": "option/berlin",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 0,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/berlin/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Berlin",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/hamburg",
+                                "name": "option/hamburg",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 32,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/hamburg/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Hamburg",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/muenchen",
+                                "name": "option/muenchen",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 64,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/muenchen/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#94a3b8"
+                                      }
+                                    ],
+                                    "text": "München",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/dresden",
+                                "name": "option/dresden",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 96,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/dresden/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Dresden",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/koeln",
+                                "name": "option/koeln",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 128,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/koeln/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Köln",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/wien",
+                                "name": "option/wien",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 160,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/wien/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Wien",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/zuerich",
+                                "name": "option/zuerich",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 192,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "fills": [
+                                  {
+                                    "type": "SOLID",
+                                    "hex": "#eaf2ff"
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "path": "scroll-end/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/zuerich/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Zürich",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "scroll-end/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 248,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "7 Städte verfügbar.",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "selected",
+      "x": 40,
+      "y": 1080,
+      "frameH": 100,
+      "popupVisible": false,
+      "nodes": {
+        "path": "selected",
+        "name": "selected",
+        "type": "FRAME",
+        "x": 40,
+        "y": 1080,
+        "width": 320,
+        "height": 100,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "selected/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "selected/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#cbd5e1",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "selected/input/input/query",
+                "name": "input/query",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#172b4d"
+                  }
+                ],
+                "text": "Berlin",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "selected/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 160,
+            "visible": false,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "selected/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 160,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "selected/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 160,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 224,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 224,
+                            "visible": true,
+                            "locked": false,
+                            "children": [
+                              {
+                                "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/berlin",
+                                "name": "option/berlin",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 0,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/berlin/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Berlin",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/hamburg",
+                                "name": "option/hamburg",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 32,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/hamburg/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Hamburg",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/muenchen",
+                                "name": "option/muenchen",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 64,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/muenchen/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#94a3b8"
+                                      }
+                                    ],
+                                    "text": "München",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/dresden",
+                                "name": "option/dresden",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 96,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/dresden/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Dresden",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/koeln",
+                                "name": "option/koeln",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 128,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/koeln/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Köln",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/wien",
+                                "name": "option/wien",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 160,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/wien/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Wien",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              },
+                              {
+                                "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/zuerich",
+                                "name": "option/zuerich",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 192,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "selected/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/option/zuerich/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Zürich",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "selected/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "Ausgewählt: Berlin.",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "empty",
+      "x": 480,
+      "y": 1080,
+      "frameH": 140,
+      "popupVisible": true,
+      "nodes": {
+        "path": "empty",
+        "name": "empty",
+        "type": "FRAME",
+        "x": 480,
+        "y": 1080,
+        "width": 320,
+        "height": 140,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "empty/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "empty/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#2563eb",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "empty/input/input/query",
+                "name": "input/query",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#172b4d"
+                  }
+                ],
+                "text": "Atlantis",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "empty/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 32,
+            "visible": true,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "empty/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 32,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "empty/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 32,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "empty/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 32,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "empty/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 32,
+                            "visible": true,
+                            "locked": false,
+                            "children": [
+                              {
+                                "path": "empty/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/message-row",
+                                "name": "message-row",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 0,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "empty/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/message-row/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Keine Städte gefunden.",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "empty/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 120,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "Keine Städte gefunden.",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "error",
+      "x": 40,
+      "y": 1400,
+      "frameH": 140,
+      "popupVisible": true,
+      "nodes": {
+        "path": "error",
+        "name": "error",
+        "type": "FRAME",
+        "x": 40,
+        "y": 1400,
+        "width": 320,
+        "height": 140,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "error/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "error/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#2563eb",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "error/input/input/query",
+                "name": "input/query",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#172b4d"
+                  }
+                ],
+                "text": "Be",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "error/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 32,
+            "visible": true,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "error/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 32,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "error/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 32,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "error/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 32,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "error/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 32,
+                            "visible": true,
+                            "locked": false,
+                            "children": [
+                              {
+                                "path": "error/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/message-row",
+                                "name": "message-row",
+                                "type": "FRAME",
+                                "x": 0,
+                                "y": 0,
+                                "width": 320,
+                                "height": 32,
+                                "visible": true,
+                                "locked": false,
+                                "children": [
+                                  {
+                                    "path": "error/overlay/surface/overlay/content/scroll/viewport/scroll/content/list/message-row/text",
+                                    "name": "text",
+                                    "type": "TEXT",
+                                    "x": 12,
+                                    "y": 6,
+                                    "width": 296,
+                                    "height": 20,
+                                    "visible": true,
+                                    "locked": false,
+                                    "fills": [
+                                      {
+                                        "type": "SOLID",
+                                        "hex": "#172b4d"
+                                      }
+                                    ],
+                                    "text": "Städte konnten nicht geladen werden.",
+                                    "fontSize": 14,
+                                    "fontFamily": "Inter",
+                                    "fontWeight": 400,
+                                    "lineHeight": 20,
+                                    "textAlignVertical": "CENTER"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "error/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 120,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#b91c1c"
+              }
+            ],
+            "text": "Städte konnten nicht geladen werden.",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    },
+    {
+      "name": "disabled",
+      "x": 480,
+      "y": 1400,
+      "frameH": 100,
+      "popupVisible": false,
+      "nodes": {
+        "path": "disabled",
+        "name": "disabled",
+        "type": "FRAME",
+        "x": 480,
+        "y": 1400,
+        "width": 320,
+        "height": 100,
+        "visible": true,
+        "locked": false,
+        "children": [
+          {
+            "path": "disabled/label",
+            "name": "label",
+            "type": "TEXT",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#172b4d"
+              }
+            ],
+            "text": "Stadt auswählen",
+            "fontSize": 14,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          },
+          {
+            "path": "disabled/input",
+            "name": "input",
+            "type": "FRAME",
+            "x": 0,
+            "y": 28,
+            "width": 320,
+            "height": 44,
+            "visible": true,
+            "locked": false,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#cbd5e1",
+                "weight": 1,
+                "align": "INSIDE"
+              }
+            ],
+            "children": [
+              {
+                "path": "disabled/input/input/placeholder",
+                "name": "input/placeholder",
+                "type": "TEXT",
+                "x": 12,
+                "y": 12,
+                "width": 296,
+                "height": 20,
+                "visible": true,
+                "locked": false,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#64748b"
+                  }
+                ],
+                "text": "Stadt suchen …",
+                "fontSize": 14,
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "textAlignVertical": "CENTER"
+              }
+            ]
+          },
+          {
+            "path": "disabled/overlay/surface",
+            "name": "overlay/surface",
+            "type": "FRAME",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 0,
+            "visible": false,
+            "locked": false,
+            "clipsContent": true,
+            "cornerRadius": 8,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff"
+              }
+            ],
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "hex": "#00000033",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "radius": 8
+              }
+            ],
+            "children": [
+              {
+                "path": "disabled/overlay/surface/overlay/content",
+                "name": "overlay/content",
+                "type": "FRAME",
+                "x": 0,
+                "y": 0,
+                "width": 320,
+                "height": 0,
+                "visible": true,
+                "locked": false,
+                "children": [
+                  {
+                    "path": "disabled/overlay/surface/overlay/content/scroll/viewport",
+                    "name": "scroll/viewport",
+                    "type": "FRAME",
+                    "x": 0,
+                    "y": 0,
+                    "width": 320,
+                    "height": 0,
+                    "visible": true,
+                    "locked": false,
+                    "clipsContent": true,
+                    "children": [
+                      {
+                        "path": "disabled/overlay/surface/overlay/content/scroll/viewport/scroll/content",
+                        "name": "scroll/content",
+                        "type": "FRAME",
+                        "x": 0,
+                        "y": 0,
+                        "width": 320,
+                        "height": 0,
+                        "visible": true,
+                        "locked": false,
+                        "children": [
+                          {
+                            "path": "disabled/overlay/surface/overlay/content/scroll/viewport/scroll/content/list",
+                            "name": "list",
+                            "type": "FRAME",
+                            "x": 0,
+                            "y": 0,
+                            "width": 320,
+                            "height": 0,
+                            "visible": true,
+                            "locked": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "disabled/status",
+            "name": "status",
+            "type": "TEXT",
+            "x": 0,
+            "y": 80,
+            "width": 320,
+            "height": 20,
+            "visible": true,
+            "locked": false,
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#64748b"
+              }
+            ],
+            "text": "",
+            "fontSize": 12,
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "textAlignVertical": "TOP"
+          }
+        ]
+      }
+    }
+  ]
+}

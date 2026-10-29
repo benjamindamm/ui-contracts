@@ -21,6 +21,7 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 | [AC-R03 · Modellherkunft](studies/AC-R03/MODEL-PROVENANCE.json) | Nachträgliche Nutzerangabe: qwen3.8-27B, FP8; Rollen-/Providerverifikation weiterhin offen |
 | [RD-001 · Gestufte Erzeugung](decisions/RD-001-STAGED-GENERATION.md) | Beschlossener nächster Forschungsschritt für zuverlässige Erzeugung mit kleineren Arbeitsaufträgen |
 | [Pilotprotokoll · Gestufte Autocomplete-Erzeugung](protocols/STAGED-GENERATION-PILOT.md) | Kontrollarm, Übergaben, Prüfgates, Reparaturrunden und noch offene Vorbereitung |
+| [AC-R04 · Externe Prüfung und PNGs](analyses/AC-R04/README.md) | Unveränderte Run-04-Artefakte erneut geprüft; PNGs ergänzt und Grenzen des Prozess-/Reportnachweises eingeordnet |
 | [Audit · Initialer Agentenkontext](analyses/INITIAL-CONTEXT/README.md) | Einstieg, nachladbare Referenzen, Bootstrapmessung und Grenzen der Requestmessung |
 | [archive/README.md](archive/README.md) | Archiv der Forschungsarbeitsstände |
 

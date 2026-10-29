@@ -1,0 +1,128 @@
+{
+  "format": "ui-contracts-handoff/1",
+  "taskId": "ac-run04-builder-a",
+  "taskRevision": 1,
+  "role": "builder",
+  "revision": 1,
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "status": "ready",
+  "summary": "autocomplete.fig mit den zehn Fäll-frames der eingefrorenen Definition, erzeugt und zurueckgelesen mit der gepinnten OpenPencil-Toolchain (Core-API exportFigFile/parseFigFile). Readback-Receipt mit 197 Fidelity-Stichproben und sechs durchgegangenen Checks, REPORT.md mit Erzeugungspfad, dokumentierten Designentscheidungen/Gruen und Grenzen; Erzeugungsskripte mitliegend. Alle sechs erforderlichen Abnahmekriterien mit hashgebundenen Belegen bestaetigt; keine blockierenden Fragen.",
+  "inputs": [],
+  "artifacts": [
+    {
+      "id": "a-fig",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-a/autocomplete.fig",
+      "sha256": "974ecd154e27b816a0410c354e5d655eb4ca27d22a02f3b3de9d88a6e1eaf6dc",
+      "kind": "design"
+    },
+    {
+      "id": "a-readback",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-a/readback.json",
+      "sha256": "01c729a2f24fbe0953aeb49532eabd8175718bc92944c4c2938c2ccb58cef6c3",
+      "kind": "readback-receipt"
+    },
+    {
+      "id": "a-report",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-a/REPORT.md",
+      "sha256": "fa40a84f6ca21e22beec9a913ec0e3b337ab61f524cfb815f022ae79b963765a",
+      "kind": "report"
+    },
+    {
+      "id": "a-build",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-a/build-fig.mjs",
+      "sha256": "d463c18b26699e36276dcac9c08c049799a85026345c0959821515d3b3dd7680",
+      "kind": "script"
+    },
+    {
+      "id": "a-readback-script",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-a/readback.mjs",
+      "sha256": "cc770f5fd8e49873421da10a80af645efa83687b863820e86f98a073377a27be",
+      "kind": "script"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c-cases",
+      "classification": "explicit",
+      "statement": "stories.json definiert genau die zehn Faelle closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled mit inputs (label, placeholder, query, inputs.enabled), Ergebnisrecords, activeKey und value.",
+      "sourceRefs": [
+        { "sourceId": "src-stories", "locator": "stories[*].id/inputs/results/activeKey/value" }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "c-cases-obs",
+      "classification": "observation",
+      "statement": "autocomplete.fig enthaelt auf der Seite 'Autocomplete' genau zehn benannte FRAMEs mit diesen Quellnamen; Readback-Check 'cases' = pass.",
+      "sourceRefs": [],
+      "evidenceRefs": ["a-fig", "a-readback"]
+    },
+    {
+      "id": "c-fidelity",
+      "classification": "derived",
+      "statement": "Farben, Typografie, Maesse, Raender und Meldungen sind aus tokens.json, den drei layout.css-Dateien und accessibility.rules.json abgeleitet (Geometrie-Konstanten mit Zeilenbezug in REPORT.md Abschnitt 3); 197 Readback-Stichproben zeigen 0 Abweichungen.",
+      "sourceRefs": [
+        { "sourceId": "src-tokens", "locator": "autocomplete.*" },
+        { "sourceId": "src-layout-ac", "locator": "Zeilen 9-49" },
+        { "sourceId": "src-layout-ov", "locator": "Zeilen 2-13" },
+        { "sourceId": "src-layout-sa", "locator": "Zeilen 1-9" },
+        { "sourceId": "src-a11y-rules", "locator": "messages/statusPlacement" }
+      ],
+      "evidenceRefs": ["a-readback", "a-fig"]
+    },
+    {
+      "id": "c-scrollend",
+      "classification": "derived",
+      "statement": "scroll-end: listbox mit y=-(7*32-160)=-64px versetzt (abgeleitet aus rowHeight=32, maxHeight=160 und 7 Ergebnissen); die aktive letzte Option zuerich liegt bei Viewport-y 128 im sichtbaren 160-px-Viewport; alle sieben option/*-Frames bleiben editierbaar erhalten.",
+      "sourceRefs": [
+        { "sourceId": "src-tokens", "locator": "autocomplete.rowHeight/autocomplete.maxHeight" },
+        { "sourceId": "src-stories", "locator": "stories[id=scroll-end].results/activeKey" },
+        { "sourceId": "src-readme-ac", "locator": "scroll-end-Regel (Exportrahmen)" }
+      ],
+      "evidenceRefs": ["a-readback", "a-fig"]
+    },
+    {
+      "id": "c-disabled-placeholder",
+      "classification": "derived",
+      "statement": "Im disabled-Fall (leerer Query) wird der Placeholder in muted #64748b gerendert: die explizite ::placeholder-Regel legt muted fest, die :disabled-Regel faerbt nur eingegebenen Text, der nicht existiert (CSS-Cascade); dokumentiert in REPORT.md Abschnitt 4.2.",
+      "sourceRefs": [
+        { "sourceId": "src-layout-ac", "locator": "Zeilen 32-33" }
+      ],
+      "evidenceRefs": ["a-fig", "a-readback", "a-report"]
+    },
+    {
+      "id": "c-hidden-popup",
+      "classification": "assumption",
+      "statement": "Designentscheid: In closed, opening, selected und disabled bleiben alle Popupteile als visible=false-Layer erhalten (editierbar, ohne Platzbelegung). Die Definition legt nicht fest, ob Teile verborgener Zustaende existieren sollen (README: 'verborgener Popup belegt keinen Platz').",
+      "sourceRefs": [
+        { "sourceId": "src-readme-ac", "locator": "Exportrahmen: verborgener Popup" }
+      ],
+      "evidenceRefs": ["a-fig", "a-readback"]
+    },
+    {
+      "id": "c-toolchain",
+      "classification": "observation",
+      "statement": "Fuer Generierung und Readback wurde ausschliesslich die gepinnte Toolchain verwendet (SceneGraph + exportFigFile/parseFigFile aus tools/openpencil/node_modules/@open-pencil, core/scene-graph 0.16.0, Lock ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6); die Skripte importieren nichts anderes.",
+      "sourceRefs": [
+        { "sourceId": "src-runsheet", "locator": "Gepinnte Toolchain" }
+      ],
+      "evidenceRefs": ["a-build", "a-readback-script", "a-fig", "a-readback"]
+    }
+  ],
+  "questions": [],
+  "checks": [
+    { "id": "cases", "status": "pass", "method": "automatic", "evidenceRefs": ["a-fig", "a-readback"] },
+    { "id": "parts", "status": "pass", "method": "automatic", "evidenceRefs": ["a-fig", "a-readback"] },
+    { "id": "fidelity", "status": "pass", "method": "automatic", "evidenceRefs": ["a-readback", "a-report"] },
+    { "id": "scrollend", "status": "pass", "method": "automatic", "evidenceRefs": ["a-readback", "a-fig"] },
+    { "id": "readback", "status": "pass", "method": "automatic", "evidenceRefs": ["a-readback"] },
+    { "id": "handoff", "status": "pass", "method": "automatic", "evidenceRefs": ["a-report"] }
+  ],
+  "limitations": [
+    "Statisches Design: kein Laufzeitverhalten (Fokus, Tastatur, SCXML-Uebergange, Error-Relay) ist im .fig pruefbar; ARIA-Rollen/-Namen sind nur als Layer-Namen, Texte und Sichtbarkeit repraesentiert (Toolchain ohne ARIA-Attribute).",
+    "exportFigFile ist nicht bytestabil (pro Lauf erzeugtes Dokument-Id in den Node-source-Records plus ZIP-Zeitstempel); der Inhalt ist strukturell reproduzierbar, Zuverlässigkeitsnachweis ist der Readback, nicht Bytegleichheit (REPORT.md Abschnitt 5).",
+    "Font Inter ist nicht eingebettet; die Darstellung setzt ihn beim Oeffnen voraus.",
+    "check-receipt.json (handoffs.py check) entsteht nach dem Handoff und referenziert es (handoffSha256); daher ist es kein deklarierbares Artefakt, siehe REPORT.md Abschnitt 8."
+  ],
+  "nextAction": "Reviewer kann den Lauf auf Basis von handoff-v1.json und check-receipt.json im Ausgabeordner aufnehmen; dokumentierte Designentscheidungen/Gruen in REPORT.md Abschnitt 4, Grenzen in Abschnitt 7."
+}

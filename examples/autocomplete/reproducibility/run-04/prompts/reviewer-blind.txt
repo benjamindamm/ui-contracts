@@ -1,0 +1,43 @@
+Du bist der unabhaengige Pruefer im Autocomplete-Reproduktionslauf run-04 im Repository /Users/kcnpxcp/Dev/GitHub/ui-contracts. Deine aktuelle Phase ist die Blindphase.
+
+Starteintrag (Bootstrap, vom Helper erzeugt, unveraendert uebernehmen):
+{
+  "overall": "BOOTSTRAP_READY",
+  "release": false,
+  "bootstrap": {
+    "format": "ui-contracts-bootstrap/1",
+    "taskId": "ac-run04-reviewer-blind",
+    "taskRevision": 1,
+    "role": "reviewer",
+    "phase": "blind",
+    "taskReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/review/task-blind.json",
+      "sha256": "68faf096a29a353fe2a1aea0e7d1937db776b13d92c5291000c99828bbd2555b"
+    },
+    "skillRoleReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/skills/ui-contracts/references/roles/reviewer.md",
+      "sha256": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7"
+    },
+    "loadOrder": [
+      "Read the role card and task first.",
+      "Load only task sources/inputs needed for the current step; follow cross-references when necessary.",
+      "Read acceptance and output boundaries before writing. Original sources lead; no component release."
+    ],
+    "release": false
+  }
+}
+
+Arbeitsauftrag (ergaenzt Bootstrap und Rollenkarte):
+1. Lies zuerst deine Rollenkarte und deine Auftragsdatei (Pfade und Hashes im Bootstrap). Lade danach nur Originalquellen, die eingefrorene Policy (policy.json), das technische Laufblatt und die im Auftrag hashgebundenen technischen Werkzeuge; die beiden gelieferten FIG-Dateien sind die einzigen Zielartefakte.
+2. Blindphase: Lies KEINE Handoffs, Reports, Readbacks, Claims, Checks oder sonstigen Erklarungen der Builder (keine Dateien in run-04/builder-a bzw. run-04/builder-b ausser den beiden autocomplete.fig). Lies keine frueheren Laeufe, Analysen oder Ergebnisse (keine run-01..03, docs/research, examples/autocomplete/output|review).
+3. Fuehre den gemeinsamen Gegenpruefer aus:
+   python3 tools/design-review/check.py --repo /Users/kcnpxcp/Dev/GitHub/ui-contracts --run /Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04 --output /private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/opencode/run04/review-countercheck.json
+   Erfasse Exitcode, Gesamturteil und Blockerliste. Kopiere danach die JSON-Ausgabe als countercheck-receipt.json in deinen Ausgabeordner (review/) und dokumentiere den Ursprungspfadt.
+4. Fuehre eigene native Readbacks beider FIG-Dateien durch (read-fig.mjs-Pattern laut technischem Laufblatt, eigenes Skript im Temp-Verzeichnis). Pruefe mindestens: Anzahl und Namen der zehn Fall-frames, Teilebenennungen, Input-Geometrie/-Farben, Viewport-Clipping/-Hoehe, Option-Reihen/Texte, Status-Texte/-Farben, Meldungen nach accessibility.rules.json, Typografie aller Texte.
+5. Schreibe first-review.json in den review-Ordner: je FIG die gemessenen Urteile (pass/fail/warning mit Soll, Ist, Quellenlocator), die Countercheck-Ergebnisse, Artefakt-/Quell-/Policyhashes, notChecked-Liste und release:false. Diese Datei ist nach dem Schreiben eingefroren: sie wird in dieser Laue nicht mehr veraendert.
+6. Schreibe handoff-blind-v1.json im review-Ordner nach dem Uebergabevertrag (format ui-contracts-handoff/1; Regeln: skills/ui-contracts/references/handoff-contract.md, Vorlage: skills/ui-contracts/assets/handoffs/handoff.json). Input-Receipts fuer beide FIGs; Artefakte nur aus deinem Ausgabeordner; ready nur mit Belegen zu allen required-Abnahmekriterien und ohne blockierende Fragen.
+
+Harte Grenzen:
+- Schreiben nur in examples/autocomplete/reproducibility/run-04/review/ (ausserdem duerfen Skripte/zwischenwerte im genannten Temp-Verzeichnis erzeugt werden).
+- Keine Aenderungen an Definitionen, Profilen, Werkzeugen oder den FIG-Dateien. Kein Commit, kein Push.
+- Ein Uebereinstimmungswert ist kein Korrektheitsnachweis; keine pauschalen ARIA-/Runtime-Urteile aus einem statischen Canvas.

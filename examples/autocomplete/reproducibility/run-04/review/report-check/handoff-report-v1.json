@@ -1,0 +1,86 @@
+{
+  "format": "ui-contracts-handoff/1",
+  "taskId": "ac-run04-reviewer-report",
+  "taskRevision": 1,
+  "role": "reviewer",
+  "revision": 1,
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "status": "ready",
+  "summary": "Report-Check abgeschlossen: Alle 7 ausgewaehlten Builder-A-Claims und alle 14 Builder-B-Claims sind mit der eingefrorenen Erstbewertung (364/364 Soll/Ist-Zeilen je Design, 449/449 Readback-Checks je FIG, Paar 572/572) und den Originalquellen konsistent; 0 Widersprueche, 0 unbelegte Pässe, 5 nicht-blockierende Anmerkungen. Deklarierte Gaps (A: 2, B: 7) sind quellenkonsistent und korrekt klassifiziert; q-msgrow-color bleibt offen ohne Blockierung (Quellen normieren keine Muted-Farbe fuer die Meldungszeile). first-review.json unveraendert (99a6589c…), keine Fehler in der Erstbewertung, kein Nachtrag erforderlich. Details in REPORT.md.",
+  "limitations": [
+    "Keine neuen nativen Messungen an den FIGs (Auftragsgrenze); alle Ist-Belege sind die eingefrorenen Messwerte der Erstbewertung",
+    "Builder-Skripte/-Readbacks sind keine Aufgabeingaben: deren Selbstchecks (197 bzw. 5) wurden nicht neu ausgefuehrt, die Substanz ist ueber die eingefrorenen unabhaengigen Messungen bestaetigt",
+    "Wertgleichheit ist kein Korrektheitsbeweis; Originalquellen fuehren. release bleibt false, kein Commit/Push"
+  ],
+  "nextAction": "Koordinator kann report-check als abgeschlossen aufnehmen; q-msgrow-color (Builder B, nicht blockierend) verbleibt dem Definitionseigentümer zur optionalen neuen Revisionsentscheidung.",
+  "inputs": [
+    { "id": "in-first-review", "sha256": "99a6589c83663bb6d37ab455a0feddc4bd272be4274f99674d1d321d727f148b" },
+    { "id": "in-handoff-a", "sha256": "06c18fee9592256b345022d21246be51f63ed37915c1f8eae68cb3f106f0e5b3", "taskId": "ac-run04-builder-a", "revision": 1 },
+    { "id": "in-report-a", "sha256": "fa40a84f6ca21e22beec9a913ec0e3b337ab61f524cfb815f022ae79b963765a" },
+    { "id": "in-handoff-b", "sha256": "e519d69142cab7e4c90e5190e2bef92785b07b4abc7caf31b5614cd5ed1f325d", "taskId": "ac-run04-builder-b", "revision": 1 },
+    { "id": "in-report-b", "sha256": "9d611f8656bdd70fd84344a1afc9e085f2e4549fd0ae76566ef463f81de099aa" }
+  ],
+  "artifacts": [
+    { "id": "report", "path": "examples/autocomplete/reproducibility/run-04/review/report-check/REPORT.md", "sha256": "05bb3c9a9b293cf1212067ff923136ae13e35b6c653bdc64cbd5a5d70d625cf2", "kind": "report" }
+  ],
+  "claims": [
+    {
+      "id": "rc-claims-a",
+      "classification": "derived",
+      "statement": "Alle 7 ausgewaehlten Builder-A-Claims (c-cases, c-cases-obs, c-fidelity, c-scrollend, c-disabled-placeholder, c-hidden-popup, c-toolchain) sind mit den eingefrorenen Messwerten und den Originalquellen konsistent; kein Widerspruch, keine unbelegten Pässe (Anmerkungen N2-N4, keine blockierend).",
+      "sourceRefs": [
+        { "sourceId": "src-autocomplete-stories.json", "locator": "stories (zehn Faelle, inputs inkl. enabled)" },
+        { "sourceId": "src-autocomplete-layout.css", "locator": "Zeilen 25-49 (Fokus, ::placeholder, :disabled, option, status)" },
+        { "sourceId": "src-tokens.json", "locator": "autocomplete.* und base.gap/max/row" },
+        { "sourceId": "src-runsheet", "locator": "Gepinnte Toolchain (Zeilen 11, 13-19)" }
+      ],
+      "evidenceRefs": ["report"]
+    },
+    {
+      "id": "rc-claims-b",
+      "classification": "derived",
+      "statement": "Alle 14 ausgewaehlten Builder-B-Claims (c-cases, c-geometry, c-popup, c-viewport, c-status, c-focus, c-msgrow, c-visibility, c-scrollend, c-selected, c-hidden, c-resultmsg, c-weight, c-scrollbar) sind mit den eingefrorenen Messwerten und den Originalquellen konsistent; kein Widerspruch, keine unbelegten Pässe.",
+      "sourceRefs": [
+        { "sourceId": "src-tokens.json", "locator": "autocomplete.*" },
+        { "sourceId": "src-overlay-layout.css", "locator": "[data-part=surface] (Zeilen 2-13)" },
+        { "sourceId": "src-scroll-area-layout.css", "locator": "Zeilen 1-9" },
+        { "sourceId": "src-autocomplete-accessibility.rules.json", "locator": "messages, projections, statusPlacement" },
+        { "sourceId": "src-autocomplete-README.md", "locator": "Sichtbare Geometrie / scroll-end (Zeilen 24, 26)" }
+      ],
+      "evidenceRefs": ["report"]
+    },
+    {
+      "id": "rc-gaps",
+      "classification": "derived",
+      "statement": "Alle deklarierten Gaps/Einschraenkungen sind quellenkonsistent und korrekt klassifiziert (A: exportFigFile-Byteinstabilitaet, enabled unter inputs.enabled; B: Meldungszeile ohne CSS-Regel, Font-weight, Scrollbar, verborgene Popups, leere Status-Texte, disabled-Platzhalter, Page 100x100). q-msgrow-color ist offen und nicht blockierend: die Quellen normieren keine Muted-Farbe fuer die Meldungszeile (gemessen #172B4D = geerbter text-Token ueber layout.css:7); eine Muted-Entscheidung waere eine neue Definitionsrevision.",
+      "sourceRefs": [
+        { "sourceId": "src-autocomplete-layout.css", "locator": "Zeile 7 (color: var(--ac-text)), Zeilen 32-33" },
+        { "sourceId": "src-autocomplete-accessibility.rules.json", "locator": "messages" },
+        { "sourceId": "src-runsheet", "locator": "Zeile 19 (Readback als Zuverlaessigkeitsnachweis)" },
+        { "sourceId": "src-autocomplete-README.md", "locator": "Zeile 32 (Exportrahmen, Seiteneinrichtung frei)" }
+      ],
+      "evidenceRefs": ["report"]
+    },
+    {
+      "id": "rc-no-override",
+      "classification": "observation",
+      "statement": "first-review.json ist unveraendert (gemessener SHA-256 99a6589c83663bb6d37ab455a0feddc4bd272be4274f99674d1d321d727f148b = Task-Input in-first-review); die eingefrorenen Messwerte wurden gegen Originalquellen und Reviewer-Readback gegengeprueft, keine Fehler gefunden, daher ist kein Nachtrag erforderlich (keine first-review-addendum.md).",
+      "sourceRefs": [],
+      "evidenceRefs": ["report"]
+    },
+    {
+      "id": "rc-nodecount-b",
+      "classification": "observation",
+      "statement": "Die Builder-B-Nodezahl 163 ist die CLI-Konvention (zaehlt Document-Root und Canvas nicht; parse-Level der Erstbewertung: 165); die Pro-Fall-Aufschluesselung (162) + 1 Seitentitel ergibt exakt 163. Keine Abweichung (Präzisionsanmerkung N1).",
+      "sourceRefs": [],
+      "evidenceRefs": ["report"]
+    }
+  ],
+  "questions": [],
+  "checks": [
+    { "id": "report-a", "status": "pass", "method": "manual", "evidenceRefs": ["report"] },
+    { "id": "report-b", "status": "pass", "method": "manual", "evidenceRefs": ["report"] },
+    { "id": "no-override", "status": "pass", "method": "automatic", "evidenceRefs": ["report"] },
+    { "id": "handoff", "status": "pass", "method": "manual", "evidenceRefs": ["report"] }
+  ]
+}

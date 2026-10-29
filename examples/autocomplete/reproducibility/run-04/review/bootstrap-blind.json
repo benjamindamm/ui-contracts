@@ -1,0 +1,25 @@
+{
+  "overall": "BOOTSTRAP_READY",
+  "release": false,
+  "bootstrap": {
+    "format": "ui-contracts-bootstrap/1",
+    "taskId": "ac-run04-reviewer-blind",
+    "taskRevision": 1,
+    "role": "reviewer",
+    "phase": "blind",
+    "taskReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/review/task-blind.json",
+      "sha256": "68faf096a29a353fe2a1aea0e7d1937db776b13d92c5291000c99828bbd2555b"
+    },
+    "skillRoleReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/skills/ui-contracts/references/roles/reviewer.md",
+      "sha256": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7"
+    },
+    "loadOrder": [
+      "Read the role card and task first.",
+      "Load only task sources/inputs needed for the current step; follow cross-references when necessary.",
+      "Read acceptance and output boundaries before writing. Original sources lead; no component release."
+    ],
+    "release": false
+  }
+}

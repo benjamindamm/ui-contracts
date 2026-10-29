@@ -1,0 +1,228 @@
+{
+  "format": "ui-contracts-handoff/1",
+  "taskId": "ac-run04-builder-b",
+  "taskRevision": 1,
+  "role": "builder",
+  "revision": 1,
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "status": "ready",
+  "summary": "OpenPencil-Design autocomplete.fig (1 Seite, 163 Nodes) mit den zehn benannten, editierbaren Fall-Frames aus den 22 hashgeprüften Originalquellen; Readback mit der gepinnten Core 0.16.0 liefert 5/5 Checks (readback, cases, parts, fidelity, scrollend); REPORT.md dokumentiert Ableitungen und sieben definierte Gaps.",
+  "inputs": [],
+  "artifacts": [
+    {
+      "id": "fig",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-b/autocomplete.fig",
+      "sha256": "4972198fe30b878f6e16733450c45acd9fbe4362235c590fce8016b40e6e47df",
+      "kind": "artifact"
+    },
+    {
+      "id": "readback",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-b/readback.json",
+      "sha256": "b817525e0cb81595b9ad757930e505b76b4e83f659847826f6e381180c5647c1",
+      "kind": "artifact"
+    },
+    {
+      "id": "report",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-b/REPORT.md",
+      "sha256": "9d611f8656bdd70fd84344a1afc9e085f2e4549fd0ae76566ef463f81de099aa",
+      "kind": "builder-report"
+    },
+    {
+      "id": "generator",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-b/generate-fig.mjs",
+      "sha256": "d1ed3c6e0cca04d815f6c961443758b80144f99eb3410213bf6a31ba340c796d",
+      "kind": "artifact"
+    },
+    {
+      "id": "readback-script",
+      "path": "examples/autocomplete/reproducibility/run-04/builder-b/readback.mjs",
+      "sha256": "d3e810c847c5330bbac6c37f186a93f535662e9df4e802b345e1df02f0022ec9",
+      "kind": "artifact"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c-cases",
+      "classification": "explicit",
+      "statement": "Die zehn Fall-Frames sind benannt und geordnet: closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled (je FRAME, 320 px breit, Reihenfolge aus der Stories-Datei).",
+      "sourceRefs": [
+        { "sourceId": "src-stories", "locator": "stories[].id in Datei-Reihenfolge" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-geometry",
+      "classification": "explicit",
+      "statement": "Maße, Radien, Abstände und Farben sind die Token-Werte aus autocomplete.*: Input 320×44, Radius 8, borderWidth 1 inside, paddingInline 12, labelGap/statusGap/gap 8, rowHeight 32, maxHeight 160; Farben surface #ffffff, text #172b4d, muted #64748b, border #cbd5e1, focus #2563eb, highlight #eaf2ff, disabled #94a3b8, error #b91c1c; Inter 14/12 px, lineHeight 20.",
+      "sourceRefs": [
+        { "sourceId": "src-tokens", "locator": "autocomplete.* (Dimensionen und Colors)" },
+        { "sourceId": "src-layout-ac", "locator": "[data-part=input], [data-part=option], [data-part=label], [data-part=status]" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-popup",
+      "classification": "explicit",
+      "statement": "Popup-Fläche: Oberkante an der Input-Unterseite plus gap (y = 20+8+44+8 = 80), Breite 320, linke Kante am Input, Radius 8, border 0, Hintergrund surface, Schatten 0 2px 8px #0003 (Export: Drop-Shadow (0,2) r8 #00000033).",
+      "sourceRefs": [
+        { "sourceId": "src-layout-ov", "locator": "[data-part=surface] (anchor bottom/left, margin-top var(--ac-gap), box-shadow)" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-viewport",
+      "classification": "explicit",
+      "statement": "Scrollviewport: max-height 160, overflow-y auto; Content und Liste ohne Margin/Padding (flex column).",
+      "sourceRefs": [
+        { "sourceId": "src-layout-sa", "locator": "[data-part=viewport], [data-part=content], [data-part=list]" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-status",
+      "classification": "explicit",
+      "statement": "Status steht nach statusGap unter dem sichtbaren Popup, sonst unter dem Input; Farbe muted, in error die error-Farbe; Meldetexte aus messages (de): opening/loading/empty/error/selected-Vorlagen, closed und disabled leer.",
+      "sourceRefs": [
+        { "sourceId": "src-a11y-rules", "locator": "statusPlacement, messages" },
+        { "sourceId": "src-layout-ac", "locator": "[data-part=status], [data-state=error] [data-part=status]" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-focus",
+      "classification": "explicit",
+      "statement": "Input-Border in den Phasen opening, loading, ready, empty, error hat die focus-Farbe, sonst die border-Farbe (1 px inside); Platzhalter in muted; deaktivierter Input mit border-Farbe und (bei vorhandenem Query) disabled-Textfarbe.",
+      "sourceRefs": [
+        { "sourceId": "src-layout-ac", "locator": "Zeilen 25-33 ([data-state=…] [data-part=input], ::placeholder, :disabled)" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-msgrow",
+      "classification": "derived",
+      "statement": "loading, empty und error zeigen im Popupinhalt eine Meldungszeile (Höhe rowHeight 32); der Status wiederholt den Text darunter. Da keine CSS-Regel für die Zeile existiert, sind Textposition (12,6) und Textfarbe (geerbter text-Token über die Wurzel-Regel) Ableitungen aus der Option-Regel bzw. der CSS-Kaskade (Gap 1 im Report).",
+      "sourceRefs": [
+        { "sourceId": "src-readme-ac", "locator": "„Sichtbare Geometrie“: Popupinhalt zeigt eine Zeile mit der Meldung, Zeilen bleiben rowHeight hoch" },
+        { "sourceId": "src-layout-ac", "locator": "[data-part=option] (padding 6px/12px), [data-component=Autocomplete] color" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-visibility",
+      "classification": "explicit",
+      "statement": "Popup-Sichtbarkeit folgt projections.popupVisible je Phase: loading/ready/empty/error sichtbar; closed/opening/selected/disabled verborgen (selected und disabled sind closed, active und scroll-end sind ready).",
+      "sourceRefs": [
+        { "sourceId": "src-a11y-rules", "locator": "projections" },
+        { "sourceId": "src-stories", "locator": "stories[].phase (active/scroll-end: ready, selected/disabled: closed)" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-scrollend",
+      "classification": "derived",
+      "statement": "scroll-end versetzt den 224-px-Content (7×32) im geclippten 160-px-Viewport um −64 px, sodass die aktive letzte Option zuerich sichtbar und highlighted ist; alle sieben Ergebnislayer bleiben editierbar erhalten. Statische Darstellung dieses Zustands, kein dynamisches Scrollen.",
+      "sourceRefs": [
+        { "sourceId": "src-readme-ac", "locator": "„Sichtbare Geometrie“ scroll-end-Absatz" },
+        { "sourceId": "src-stories", "locator": "stories[scroll-end].activeKey = zuerich" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-selected",
+      "classification": "explicit",
+      "statement": "selected = closed mit value berlin: das zu value gehörige Label „Berlin“ steht im Input, der Status nutzt die selected-Vorlage („Ausgewählt: Berlin.“), das Popup ist verborgen.",
+      "sourceRefs": [
+        { "sourceId": "src-stories", "locator": "stories[selected].value = berlin, inputs.query = Berlin" },
+        { "sourceId": "src-readme-ac", "locator": "„Sichtbare Geometrie“: bei selected Label im Input, Status mit selected-Vorlage" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-hidden",
+      "classification": "derived",
+      "statement": "Verborgene Fälle (closed/opening/selected/disabled) behalten den vollständigen Popup-Subbaum mit visible:false an overlay/surface, damit alle benannten Teile getrennt editierbar bleiben; die Frame-Höhen wachsen dadurch nicht, weil ein verborgener Popup keinen Platz belegt.",
+      "sourceRefs": [
+        { "sourceId": "src-readme-ac", "locator": "„Sichtbare Geometrie“ (verborgener Popup belegt keinen Platz), „Exportrahmen“ (Teile separat editierbar)" },
+        { "sourceId": "src-component", "locator": "anatomy (overlay.surface, overlay.scroll.viewport, list, option, status)" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-resultmsg",
+      "classification": "derived",
+      "statement": "ready, active und scroll-end zeigen den Status „7 Städte verfügbar.“ aus der results-Vorlage mit count = 7 Ergebnisrecords; ein eigener „ready“-Meldeschlüssel existiert in messages nicht.",
+      "sourceRefs": [
+        { "sourceId": "src-a11y-rules", "locator": "messages.results = \"{count} Städte verfügbar.\"" },
+        { "sourceId": "src-stories", "locator": "stories[ready|active|scroll-end].results (je 7 Records)" }
+      ],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-weight",
+      "classification": "assumption",
+      "statement": "font-weight ist in keiner Quelle definiert; alle Text-Layer verwenden den Renderer-Default 400 (im Readback vor und nach dem Export verifiziert).",
+      "sourceRefs": [],
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "c-scrollbar",
+      "classification": "assumption",
+      "statement": "Die Quellen definieren kein Scrollbar-Visual (nur overflow-y auto); keiner wurde eingefügt, das Clipping des Viewports trägt die Semantik des Abgriffs.",
+      "sourceRefs": [],
+      "evidenceRefs": ["readback"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-msgrow-color",
+      "question": "Die Quellen definieren keine eigene Farbe für die Meldungszeile (loading/empty/error); im Export erbt sie den text-Token über die CSS-Kaskade. Soll die Meldung stattdessen in muted (oder einem neu zu definierenden Token) gerendert werden? Keine Blockierung: der aktuelle Wert ist dokumentiert und checkbar.",
+      "blocking": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "cases",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "parts",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "fidelity",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": ["readback", "report"]
+    },
+    {
+      "id": "scrollend",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "readback",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": ["readback"]
+    },
+    {
+      "id": "handoff",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": ["report", "readback"]
+    }
+  ],
+  "limitations": [
+    "Statisches Design ohne Runtime: keine Interaktion, kein ARIA-Verhalten, kein SCXML-Ausführung; scroll-end ist ein statischer Endzustand (Quellen: targetScope/designTarget, README).",
+    "Font-Metriken sind viewer-abhängig: „Inter“ wird als Schriftname referenziert; Name, Größe, Gewicht und Zeilenhöhe sind im Readback verifiziert.",
+    "Node-IDs in readback.json sind an die Serialisierung von @open-pencil/core 0.16.0 gekoppelt; andere Exporter oder Versionen erzeugen andere IDs (Werte und Struktur sind checkbar identisch).",
+    "Der Page-Node exportiert 100×100 (OpenPencil-Page-Platzhalter); die Blatt-Ausdehnung ergibt sich aus den Frame-Positionen (Beobachtung, Report Gap 7).",
+    "Kein Komponenten-Release: die Fälle sind editierbare FRAME-Gruppen; release bleibt durchgehend false."
+  ],
+  "nextAction": "Reviewer prüft readback.json (5 Checks) und das Handoff-Receipt handoff-check-receipt.json gegen die Abnahmekriterien; keine offenen Builder-Schritte."
+}

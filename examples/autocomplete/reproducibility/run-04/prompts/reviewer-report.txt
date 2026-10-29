@@ -1,0 +1,47 @@
+Gleiche Pruefer-Session, neue formale Aufgabe (Fortsetzung der Blindphase). Deine aktuelle Phase ist die report-check.
+
+Starteintrag (Bootstrap, vom Helper erzeugt, unveraendert uebernehmen):
+{
+  "overall": "BOOTSTRAP_READY",
+  "release": false,
+  "bootstrap": {
+    "format": "ui-contracts-bootstrap/1",
+    "taskId": "ac-run04-reviewer-report",
+    "taskRevision": 1,
+    "role": "reviewer",
+    "phase": "report-check",
+    "taskReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/review/task-report.json",
+      "sha256": "66397f4c846d7e34e7caa56c338ca9b2424920acf3b0adf18450140eb200117a"
+    },
+    "skillRoleReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/skills/ui-contracts/references/roles/reviewer.md",
+      "sha256": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7"
+    },
+    "loadOrder": [
+      "Read the role card and task first.",
+      "Load only task sources/inputs needed for the current step; follow cross-references when necessary.",
+      "Read acceptance and output boundaries before writing. Original sources lead; no component release."
+    ],
+    "release": false
+  }
+}
+
+Arbeitsauftrag (ergaenzt Bootstrap und Rollenkarte):
+1. Lies zuerst deine Rollenkarte und deine Auftragsdatei (Pfade und Hashes im Bootstrap). Danach lies als Eingaben die eingefrorene first-review.json sowie die Handoffs und Reports beider Builder (als Daten).
+2. Pruefe die ausgewaehnten Claims aller Builder-Handoffs und die substantiellen Aussagen beider Builder-Reports gegen die gemessenen Werte der eingefrorenen Erstbewertung und die Originalquellen:
+   - Widersprueche zwischen Builderaussage und Messwert (mit Claim-/Abschnitts-Id, Soll, Ist, Quellenlocator).
+   - Pässe ohne Beleg, die sich aus der eingefrorenen Messung nicht bestaetigen lassen oder den Originalquellen widersprechen.
+   - Deklarierte Grenzen, Gaps und Fragen (u.a. Builder A: Nicht-Bytestabilitaet von exportFigFile, enabled unter inputs.enabled; Builder B: sieben Gaps, Frage q-msgrow-color): pruefe jede einzeln gegen Originalquellen und eingefrorene Messung.
+   - Keine neuen nativen Messungen an den FIG-Dateien (Blindphasen-Umfang); der Abgleich erfolgt ausnahmslos gegen die eingefrorene Erstbewertung, die Originalquellen und die Policy.
+3. first-review.json bleibt unveraendert (no-override). Stellst du einen Fehler in der eingefrorenen Erstbewertung fest, dokumentiere ihn als begruendeten Nachtrag first-review-addendum.md im Ausgabeordner (niemals als Ueberschreibung) und verweise im Handoff darauf.
+4. Schreibe REPORT.md in den Ausgabeordner: Pruefergebnis je Builder, Widerspruchstabelle (Aussage / Soll / Ist / Quelle), Nachtrag falls vorhanden, Grenzen.
+5. Schreibe handoff-report-v1.json im Ausgabeordner nach dem Uebergabevertrag (format ui-contracts-handoff/1): Input-Receipts fuer alle Auftragseingaben (Handoff-Receipts zusatzlich mit taskId und revision), Artefaktliste (nur Dateien aus dem Ausgabeordner), Claims mit Klassifizierung und Quellen-/Belegreferenzen, Checks zu allen vier Abnahmekriterien (report-a, report-b, no-override, handoff) mit Belegen; ready nur mit Belegen zu allen required-Kriterien und ohne blockierende Fragen.
+6. Fuehre am Ende den Integritaetslauf aus:
+   python3 skills/ui-contracts/scripts/handoffs.py check --repo /Users/kcnpxcp/Dev/GitHub/ui-contracts --task /Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/review/task-report.json --handoff /Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/review/report-check/handoff-report-v1.json --output /private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/opencode/run04/review-report-handoff-check.json
+   Kopiere die empfangene JSON als handoff-check-receipt.json in den Ausgabeordner.
+
+Harte Grenzen:
+- Schreiben nur in examples/autocomplete/reproducibility/run-04/review/report-check/ (Zwischenwerte im genannten Temp-Verzeichnis).
+- Keine Aenderungen an Definitionen, Profilen, Werkzeugen, FIG-Dateien oder eingefrorenen Dateien (first-review.json, handoff-blind-v1.json, countercheck-receipt.json, readback-reviewer.json, Task-/Bootstrap-Dateien). Kein Commit, kein Push.
+- Ein Uebereinstimmungswert ist kein Korrektheitsnachweis; die Originalquellen fuehren.

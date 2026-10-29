@@ -1,0 +1,205 @@
+{
+  "format": "ui-contracts-handoff/1",
+  "taskId": "ac-run04-reviewer-blind",
+  "taskRevision": 1,
+  "role": "reviewer",
+  "revision": 1,
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "status": "ready",
+  "summary": "Blindphase abgeschlossen: Beide FIGs bestehen die gemeinsame Countercheck (PASS_LIMITED, Exit 0, keine Blocker, Paar 572/572 exakt gleiche semantische Keys) und 449 eigenstaendige Readback-Pruefungen pro FIG (0 Failures, 0 Warnings). first-review.json ist eingefroren (frozen:true, release:false); Details nur in den Artefakten.",
+  "limitations": [
+    "Statisches Canvas: PASS_LIMITED ist ein begrenzter statischer Nachweis; keine ARIA-/Runtime-/Screenreader-Aussagen",
+    "UEbereinstimmung der beiden FIGs ist kein Korrektheitsnachweis; Korrektheit beruht auf den Soll/Ist-Vergleichen gegen Originalquellen",
+    "Zwischenwerte (Reviewer-Skripte, Probe-Outputs) verbleiben im Temp-Verzeichnis und sind keine Artefakte; Receipt-Origin-Pfade stehen in first-review.json#hashes.reviewOutputs"
+  ],
+  "nextAction": "report-check-Phase: Builder-Reports/-Readbacks einbinden, ihre Aussagen gegen first-review.json abgleichen (Korrekturen nur als begruendeter Nachtrag, first-review bleibt unveraendert)",
+  "inputs": [
+    {
+      "id": "in-fig-a",
+      "sha256": "974ecd154e27b816a0410c354e5d655eb4ca27d22a02f3b3de9d88a6e1eaf6dc"
+    },
+    {
+      "id": "in-fig-b",
+      "sha256": "4972198fe30b878f6e16733450c45acd9fbe4362235c590fce8016b40e6e47df"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "first-review",
+      "path": "examples/autocomplete/reproducibility/run-04/review/first-review.json",
+      "sha256": "99a6589c83663bb6d37ab455a0feddc4bd272be4274f99674d1d321d727f148b",
+      "kind": "first-review"
+    },
+    {
+      "id": "countercheck-receipt",
+      "path": "examples/autocomplete/reproducibility/run-04/review/countercheck-receipt.json",
+      "sha256": "ca0b47ab5c6f02b82a76ae7318d3b159a8a9b6f75ec1c458ff95a609c95382d4",
+      "kind": "receipt"
+    },
+    {
+      "id": "readback-receipt",
+      "path": "examples/autocomplete/reproducibility/run-04/review/readback-reviewer.json",
+      "sha256": "4b80cc36d48889e660b6ec7a67b630b14e9e9c00cd8366c1fafa02df33494f3b",
+      "kind": "receipt"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c-cases",
+      "classification": "explicit",
+      "statement": "Die Definition schreibt zehn benannte Faelle vor (closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled); beide FIGs enthalten genau je zehn Case-Frames mit diesen Namen.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-autocomplete-stories.json",
+          "locator": "stories (zehn Eintraege)"
+        },
+        {
+          "sourceId": "src-autocomplete-README.md",
+          "locator": "line 32 (\"die zehn benannten Faelle\")"
+        }
+      ],
+      "evidenceRefs": [
+        "readback-receipt",
+        "first-review"
+      ]
+    },
+    {
+      "id": "c-metrics",
+      "classification": "derived",
+      "statement": "Normative Geometrie/Farben/Typografie beider FIGs sind Soll-konform und identisch: width 320, inputHeight 44, rowHeight 32, maxHeight 160, Gaps 8, radius 8, borderWidth 1, Inter 14/20 (Status 12/20); Farben surface #FFFFFF, text #172B4D, muted #64748B, border #CBD5E1, focus #2563EB, highlight #EAF2FF, disabled #94A3B8, error #B91C1C.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-tokens.json",
+          "locator": "autocomplete.* (Farben, Maesse, Typografie)"
+        },
+        {
+          "sourceId": "src-autocomplete-layout.css",
+          "locator": "lines 2-49"
+        },
+        {
+          "sourceId": "src-autocomplete-README.md",
+          "locator": "line 24 (Sichtbare Geometrie)"
+        }
+      ],
+      "evidenceRefs": [
+        "first-review",
+        "readback-receipt"
+      ]
+    },
+    {
+      "id": "c-messages",
+      "classification": "explicit",
+      "statement": "Status- und Meldetexte folgen accessibility.rules.json#messages (results-Vorlage {count}=7, selected {label}=Berlin); bei loading/empty/error zeigt der Popupinhalt die Meldung als Zeile und die Statusregion wiederholt den Text - in beiden FIGs gemessen (Text, Sichtbarkeit, Typografie).",
+      "sourceRefs": [
+        {
+          "sourceId": "src-autocomplete-accessibility.rules.json",
+          "locator": "messages"
+        },
+        {
+          "sourceId": "src-autocomplete-README.md",
+          "locator": "line 24"
+        }
+      ],
+      "evidenceRefs": [
+        "first-review",
+        "readback-receipt"
+      ]
+    },
+    {
+      "id": "c-countercheck",
+      "classification": "observation",
+      "statement": "check.py (Profil ac-static-countercheck-01) lief Exit 0, overall PASS_LIMITED, release false, blocked []; 562 Checks pro FIG mit 0 Failures und 0 Warnings; Paar-Vergleich 572/572 exakt gleiche semantische Keys.",
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "countercheck-receipt",
+        "first-review"
+      ]
+    },
+    {
+      "id": "c-scope",
+      "classification": "derived",
+      "statement": "PASS_LIMITED ist ein begrenzter statischer Nachweis ohne ARIA-/Runtime-/Screenreader-Claims; die Definition beschreibt den Designexport als Darstellung der Zustaende, nicht als Plattformimplementierung; release bleibt false.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-autocomplete-README.md",
+          "locator": "line 18 (Designexport stellt Zustaende dar)"
+        },
+        {
+          "sourceId": "src-policy",
+          "locator": "scope, notChecked (policy.json)"
+        }
+      ],
+      "evidenceRefs": [
+        "first-review",
+        "countercheck-receipt"
+      ]
+    },
+    {
+      "id": "c-pair",
+      "classification": "observation",
+      "statement": "Beide FIGs weichen nur in nicht-normativen Details ab (Teilnamen, zusatzliche Zwischenebenen in fig b, Seiteneinrichtung, Aussenpositionen); alle normativen Ist-Werte sind identisch (364 Soll/Ist-Zeilen je FIG ohne Differenz, 572/572 Paar-Vergleich).",
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "first-review",
+        "readback-receipt",
+        "countercheck-receipt"
+      ]
+    },
+    {
+      "id": "c-blind-basis",
+      "classification": "observation",
+      "statement": "Blindphasen-Disziplin eingehalten: gelesen nur Auftragsdatei/Rollenkarte, policy.json, runsheet-technical.md, input-manifest.json, die 22 Originalquellen, hashgebundene Werkzeuge und die beiden FIGs; keine Builder-Dateien ausser den FIGs, keine fruheren Laeufe, keine docs/research, keine examples/autocomplete/output|review.",
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "first-review"
+      ]
+    }
+  ],
+  "questions": [],
+  "checks": [
+    {
+      "id": "blind-basis",
+      "status": "pass",
+      "method": "manual",
+      "evidenceRefs": [
+        "first-review"
+      ]
+    },
+    {
+      "id": "countercheck",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": [
+        "countercheck-receipt",
+        "first-review"
+      ]
+    },
+    {
+      "id": "soll-ist",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": [
+        "first-review",
+        "readback-receipt"
+      ]
+    },
+    {
+      "id": "freeze",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": [
+        "first-review"
+      ]
+    },
+    {
+      "id": "handoff",
+      "status": "pass",
+      "method": "manual",
+      "evidenceRefs": [
+        "first-review",
+        "countercheck-receipt",
+        "readback-receipt"
+      ]
+    }
+  ]
+}

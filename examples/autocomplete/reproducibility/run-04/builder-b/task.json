@@ -1,0 +1,220 @@
+{
+  "format": "ui-contracts-task/1",
+  "taskId": "ac-run04-builder-b",
+  "revision": 1,
+  "role": "builder",
+  "phase": "normal",
+  "goal": "Erzeuge aus der eingefrorenen Autocomplete-Definition ein editierbares OpenPencil-Design mit den zehn benannten Faelle-frames und exportiere es als autocomplete.fig in deinen Ausgabeordner.",
+  "scope": "Nur die hashgebundenen Originalquellen des Auftrags, das technische Laufblatt, das Skill-Hilfswerkzeug und die gepinnte Toolchain unter tools/openpencil/. Schreiben nur in deinen eigenen Ausgabeordner. Verboten: fruehere Laeufe oder bereits erzeugte Designs/Ausgaben (examples/autocomplete/output, examples/autocomplete/review, run-01 bis run-03, docs/research) zu lesen oder als Vorlage zu nutzen; Webrecherche; Aenderungen an Definitionen, Profilen oder Werkzeugen; Commit oder Push.",
+  "definition": {
+    "revision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+    "manifest": {
+      "path": "examples/autocomplete/reproducibility/run-04/input-manifest.json",
+      "sha256": "74aa9eabcfe7301a0845d230cc1ff4acd6ce14cf0435ec1ed0e6cba0b6e25eb2"
+    }
+  },
+  "sources": [
+    {
+      "id": "src-readme-lib",
+      "path": "components/README.md",
+      "sha256": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+      "kind": "original",
+      "purpose": "Bibliothekskontext: Status und Einträge der Komponentenbibliothek"
+    },
+    {
+      "id": "src-readme-ac",
+      "path": "components/autocomplete/README.md",
+      "sha256": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+      "kind": "original",
+      "purpose": "Fuehrender Bibliothekseintrag: Lesereihenfolge, fachliche Regeln, Geometrie, Exportrahmen"
+    },
+    {
+      "id": "src-a11y",
+      "path": "components/autocomplete/accessibility.html",
+      "sha256": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+      "kind": "original",
+      "purpose": "Namen, Rollen, Zustandsprojektion und Meldungstexte"
+    },
+    {
+      "id": "src-a11y-rules",
+      "path": "components/autocomplete/accessibility.rules.json",
+      "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+      "kind": "original",
+      "purpose": "Meldungsvorlagen inkl. results/selected/loading/empty/error"
+    },
+    {
+      "id": "src-behavior",
+      "path": "components/autocomplete/behavior.scxml",
+      "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+      "kind": "original",
+      "purpose": "Formale Zustaende und Uebergaenge; Grundlage der zehn Darstellungsfaelle"
+    },
+    {
+      "id": "src-component",
+      "path": "components/autocomplete/component.json",
+      "sha256": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+      "kind": "original",
+      "purpose": "Identitaet, Domaenquellen, Teile und Unterkomponenten"
+    },
+    {
+      "id": "src-error-relay",
+      "path": "components/autocomplete/error-relay.scxml",
+      "sha256": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+      "kind": "original",
+      "purpose": "Formales Fehlernachreichungs-Verhalten der Autocomplete"
+    },
+    {
+      "id": "src-interface",
+      "path": "components/autocomplete/interface.json",
+      "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+      "kind": "original",
+      "purpose": "CEM-Signatur: label, placeholder, query, value, results, enabled"
+    },
+    {
+      "id": "src-layout-ac",
+      "path": "components/autocomplete/layout.css",
+      "sha256": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+      "kind": "original",
+      "purpose": "Layout- und Zustandsregeln der Autocomplete, einschliesslich expliziter ::placeholder-Regel"
+    },
+    {
+      "id": "src-stories",
+      "path": "components/autocomplete/stories.json",
+      "sha256": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+      "kind": "original",
+      "purpose": "Zehn konkrete Darstellungsfaelle mit Inputs und Ergebnisrecords"
+    },
+    {
+      "id": "src-library",
+      "path": "components/library.json",
+      "sha256": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+      "kind": "original",
+      "purpose": "Bibliothekseintrag der Autocomplete"
+    },
+    {
+      "id": "src-ov-a11y",
+      "path": "components/overlay/accessibility.html",
+      "sha256": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+      "kind": "original",
+      "purpose": "Zugaenglichkeit des Overlays"
+    },
+    {
+      "id": "src-ov-behavior",
+      "path": "components/overlay/behavior.scxml",
+      "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+      "kind": "original",
+      "purpose": "Formales Verhalten des Overlays"
+    },
+    {
+      "id": "src-ov-component",
+      "path": "components/overlay/component.json",
+      "sha256": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+      "kind": "original",
+      "purpose": "Identitaet und Teile des Overlays"
+    },
+    {
+      "id": "src-ov-interface",
+      "path": "components/overlay/interface.json",
+      "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+      "kind": "original",
+      "purpose": "CEM-Signatur des Overlays"
+    },
+    {
+      "id": "src-layout-ov",
+      "path": "components/overlay/layout.css",
+      "sha256": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+      "kind": "original",
+      "purpose": "Layoutregeln der Overlay-Verwendung innerhalb der Autocomplete"
+    },
+    {
+      "id": "src-sa-a11y",
+      "path": "components/scroll-area/accessibility.html",
+      "sha256": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+      "kind": "original",
+      "purpose": "Zugaenglichkeit der ScrollArea"
+    },
+    {
+      "id": "src-sa-behavior",
+      "path": "components/scroll-area/behavior.scxml",
+      "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+      "kind": "original",
+      "purpose": "Formales Verhalten der ScrollArea"
+    },
+    {
+      "id": "src-sa-component",
+      "path": "components/scroll-area/component.json",
+      "sha256": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+      "kind": "original",
+      "purpose": "Identitaet und Teile der ScrollArea"
+    },
+    {
+      "id": "src-sa-interface",
+      "path": "components/scroll-area/interface.json",
+      "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+      "kind": "original",
+      "purpose": "CEM-Signatur der ScrollArea"
+    },
+    {
+      "id": "src-layout-sa",
+      "path": "components/scroll-area/layout.css",
+      "sha256": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+      "kind": "original",
+      "purpose": "Layoutregeln der ScrollArea innerhalb des Overlays"
+    },
+    {
+      "id": "src-tokens",
+      "path": "components/tokens.json",
+      "sha256": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4",
+      "kind": "original",
+      "purpose": "Alle benannten Designwerte (Farben, Typografie, Maasse, Gaepen)"
+    },
+    {
+      "id": "src-runsheet",
+      "path": "examples/autocomplete/reproducibility/run-04/runsheet-technical.md",
+      "sha256": "3ee3d5707c9271be61a5356ff676e34850f9d5b91c3010036ff1945198e7e496",
+      "kind": "technical",
+      "purpose": "Technische Bindungen: Revisionsalgorithmus, Toolchain, Lesegrenzen, Receipt-Regeln"
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "examples/autocomplete/reproducibility/run-04/builder-b"
+  ],
+  "acceptance": [
+    {
+      "id": "cases",
+      "required": true,
+      "description": "autocomplete.fig enthaelt genau zehn Faell-frames mit den Quellnamen closed, opening, loading, ready, active, scroll-end, selected, empty, error und disabled; jeder Fall ist eine benannte, editierbare Layergruppe (COMPONENT oder FRAME)."
+    },
+    {
+      "id": "parts",
+      "required": true,
+      "description": "Innerhalb jedes Falls bleiben Input, Overlayflaeche, Scrollviewport, Listbox, einzelne Optionen und Status als getrennt editierbare, verstaendlich benannte Layer erhalten."
+    },
+    {
+      "id": "fidelity",
+      "required": true,
+      "description": "Farben, Typografie, Maasse und Meldungen folgen den gepinnten Quellen (tokens.json, layout.css-Dateien, accessibility.rules.json, stories.json); Abweichungen und Definitionsluecken sind in REPORT.md dokumentiert, nicht versteckt."
+    },
+    {
+      "id": "scrollend",
+      "required": true,
+      "description": "Der Fall scroll-end zeigt die aktive letzte Option im sichtbaren Viewport (Inhalt entsprechend versetzt); alle sieben Ergebnislayer bleiben editierbar erhalten."
+    },
+    {
+      "id": "readback",
+      "required": true,
+      "description": "autocomplete.fig oeffnet sich als OpenPencil-Dokument und wurde mit der gepinnten Toolchain zurueckgelesen; das Readback-Receipt (JSON) liegt im Ausgabeordner."
+    },
+    {
+      "id": "handoff",
+      "required": true,
+      "description": "handoff-v1.json liegt im Ausgabeordner und fuehrt Receipts, Artefakte, klassifizierte Claims und Checks zu allen Abnahmekriterien nach dem Uebergabevertrag; ready nur mit Bestandsnachweisen und ohne blockierende Fragen."
+    }
+  ],
+  "context": {
+    "maxBootstrapChars": 2000,
+    "maxInlineChars": 8000,
+    "maxHandoffChars": 16000
+  }
+}

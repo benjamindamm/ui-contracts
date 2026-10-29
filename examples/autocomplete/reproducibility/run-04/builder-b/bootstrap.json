@@ -1,0 +1,25 @@
+{
+  "overall": "BOOTSTRAP_READY",
+  "release": false,
+  "bootstrap": {
+    "format": "ui-contracts-bootstrap/1",
+    "taskId": "ac-run04-builder-b",
+    "taskRevision": 1,
+    "role": "builder",
+    "phase": "normal",
+    "taskReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/builder-b/task.json",
+      "sha256": "1dac121a371793add151e5126f6fc9b77b5f81eac7a67df7851d203b8f795f79"
+    },
+    "skillRoleReference": {
+      "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/skills/ui-contracts/references/roles/builder.md",
+      "sha256": "8497e2848ebe1858d0019909112fbbf257370b942c92f8eb173acd7e1e47921d"
+    },
+    "loadOrder": [
+      "Read the role card and task first.",
+      "Load only task sources/inputs needed for the current step; follow cross-references when necessary.",
+      "Read acceptance and output boundaries before writing. Original sources lead; no component release."
+    ],
+    "release": false
+  }
+}
