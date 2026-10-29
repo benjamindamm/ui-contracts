@@ -1,0 +1,323 @@
+{
+ "total": 1208,
+ "equal": 1145,
+ "pct": 94.7848,
+ "band": "90–95 %",
+ "diffs": [
+  {
+   "path": "case.case",
+   "a": "closed",
+   "b": "Autocomplete/closed"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 104,
+   "b": 118
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.status.w",
+   "a": 0,
+   "b": 100
+  },
+  {
+   "path": "case.case",
+   "a": "opening",
+   "b": "Autocomplete/opening"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 104,
+   "b": 118
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.status.w",
+   "a": 119,
+   "b": 144
+  },
+  {
+   "path": "case.case",
+   "a": "loading",
+   "b": "Autocomplete/loading"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 18,
+   "b": 17
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.popup.listFrameInMessageCase",
+   "a": "Listbox",
+   "b": "—FEHLT—"
+  },
+  {
+   "path": "case.popup.surface.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.status.w",
+   "a": 135,
+   "b": 159
+  },
+  {
+   "path": "case.case",
+   "a": "ready",
+   "b": "Autocomplete/ready"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 104,
+   "b": 118
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.popup.surface.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.status.w",
+   "a": 109,
+   "b": 137
+  },
+  {
+   "path": "case.case",
+   "a": "active",
+   "b": "Autocomplete/active"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 104,
+   "b": 118
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.popup.surface.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.status.w",
+   "a": 109,
+   "b": 137
+  },
+  {
+   "path": "case.case",
+   "a": "scroll-end",
+   "b": "Autocomplete/scroll-end"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 104,
+   "b": 118
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.popup.surface.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.status.w",
+   "a": 109,
+   "b": 137
+  },
+  {
+   "path": "case.case",
+   "a": "selected",
+   "b": "Autocomplete/selected"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 38,
+   "b": 51
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.status.w",
+   "a": 110,
+   "b": 137
+  },
+  {
+   "path": "case.case",
+   "a": "empty",
+   "b": "Autocomplete/empty"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 49,
+   "b": 68
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.popup.listFrameInMessageCase",
+   "a": "Listbox",
+   "b": "—FEHLT—"
+  },
+  {
+   "path": "case.popup.surface.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.status.w",
+   "a": 133,
+   "b": 159
+  },
+  {
+   "path": "case.case",
+   "a": "error",
+   "b": "Autocomplete/error"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 18,
+   "b": 17
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.popup.listFrameInMessageCase",
+   "a": "Listbox",
+   "b": "—FEHLT—"
+  },
+  {
+   "path": "case.popup.surface.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.status.w",
+   "a": 215,
+   "b": 260
+  },
+  {
+   "path": "case.allTexts[1].color",
+   "a": "#64748b",
+   "b": "#94a3b8"
+  },
+  {
+   "path": "case.case",
+   "a": "disabled",
+   "b": "Autocomplete/disabled"
+  },
+  {
+   "path": "case.input.clipsContent",
+   "a": true,
+   "b": false
+  },
+  {
+   "path": "case.input.texts[0].color",
+   "a": "#64748b",
+   "b": "#94a3b8"
+  },
+  {
+   "path": "case.input.texts[0].colorToken",
+   "a": "muted",
+   "b": "disabled"
+  },
+  {
+   "path": "case.input.texts[0].w",
+   "a": 104,
+   "b": 118
+  },
+  {
+   "path": "case.label.w",
+   "a": 110,
+   "b": 126
+  },
+  {
+   "path": "case.status.w",
+   "a": 0,
+   "b": 100
+  },
+  {
+   "path": "doc.nodeCount",
+   "a": 136,
+   "b": 122
+  }
+ ]
+}

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1968" height="750" viewBox="0 0 1968 750">
+  <defs>
+    <clipPath id="clip0">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <clipPath id="clip1">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <clipPath id="clip2">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <filter id="fx3">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <clipPath id="clip4">
+      <rect width="320" height="32"/>
+    </clipPath>
+    <clipPath id="clip5">
+      <rect width="320" height="32"/>
+    </clipPath>
+    <clipPath id="clip6">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <filter id="fx7">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <clipPath id="clip8">
+      <rect width="320" height="160"/>
+    </clipPath>
+    <clipPath id="clip9">
+      <rect width="320" height="160"/>
+    </clipPath>
+    <clipPath id="clip10">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <filter id="fx11">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <clipPath id="clip12">
+      <rect width="320" height="160"/>
+    </clipPath>
+    <clipPath id="clip13">
+      <rect width="320" height="160"/>
+    </clipPath>
+    <clipPath id="clip14">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <filter id="fx15">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <clipPath id="clip16">
+      <rect width="320" height="160"/>
+    </clipPath>
+    <clipPath id="clip17">
+      <rect width="320" height="160"/>
+    </clipPath>
+    <clipPath id="clip18">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <clipPath id="clip19">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <filter id="fx20">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <clipPath id="clip21">
+      <rect width="320" height="32"/>
+    </clipPath>
+    <clipPath id="clip22">
+      <rect width="320" height="32"/>
+    </clipPath>
+    <clipPath id="clip23">
+      <rect width="320" height="44"/>
+    </clipPath>
+    <filter id="fx24">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <clipPath id="clip25">
+      <rect width="320" height="32"/>
+    </clipPath>
+    <clipPath id="clip26">
+      <rect width="320" height="32"/>
+    </clipPath>
+    <clipPath id="clip27">
+      <rect width="320" height="44"/>
+    </clipPath>
+  </defs>
+  <g>
+    <rect width="1968" height="750" fill="#F2F4F7"/>
+    <g transform="translate(40, 36)">
+      <text x="0" y="20" font-family="Inter" font-size="20" fill="#172B4D">Autocomplete — zehn benannte Zustände</text>
+    </g>
+    <g transform="translate(40, 68)">
+      <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B">ui-contracts:Autocomplete 0.1.0 · statische Darstellung aus components/** · editierbare Teile: label, input, overlay.surface, overlay.scroll.viewport, list, option, status</text>
+    </g>
+    <g transform="translate(40, 110)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#CBD5E2" stroke-width="1"/>
+        <g clip-path="url(#clip0)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#64748B">Stadt suchen …</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B"></text>
+      </g>
+    </g>
+    <g transform="translate(432, 110)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+        <g clip-path="url(#clip1)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#64748B">Stadt suchen …</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B">Suche wird geöffnet.</text>
+      </g>
+    </g>
+    <g transform="translate(824, 110)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+        <g clip-path="url(#clip2)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Be</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)" filter="url(#fx3)">
+        <rect width="320" height="32" rx="8" ry="8" fill="#FFFFFF"/>
+        <g clip-path="url(#clip4)">
+          <g clip-path="url(#clip5)">
+            <g transform="translate(12, 6)">
+              <text x="0" y="14" font-family="Inter" font-size="14" fill="#64748B">Städte werden geladen.</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 120)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B">Städte werden geladen.</text>
+      </g>
+    </g>
+    <g transform="translate(1216, 110)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+        <g clip-path="url(#clip6)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#64748B">Stadt suchen …</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)" filter="url(#fx7)">
+        <rect width="320" height="160" rx="8" ry="8" fill="#FFFFFF"/>
+        <g clip-path="url(#clip8)">
+          <g clip-path="url(#clip9)">
+            <g>
+              <g transform="translate(12, 6)">
+                <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Berlin</text>
+              </g>
+              <g transform="translate(0, 32)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Hamburg</text>
+                </g>
+              </g>
+              <g transform="translate(0, 64)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#94A3B8">München</text>
+                </g>
+              </g>
+              <g transform="translate(0, 96)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Dresden</text>
+                </g>
+              </g>
+              <g transform="translate(0, 128)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Köln</text>
+                </g>
+              </g>
+              <g transform="translate(0, 160)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Wien</text>
+                </g>
+              </g>
+              <g transform="translate(0, 192)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Zürich</text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 248)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B">7 Städte verfügbar.</text>
+      </g>
+    </g>
+    <g transform="translate(1608, 110)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+        <g clip-path="url(#clip10)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#64748B">Stadt suchen …</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)" filter="url(#fx11)">
+        <rect width="320" height="160" rx="8" ry="8" fill="#FFFFFF"/>
+        <g clip-path="url(#clip12)">
+          <g clip-path="url(#clip13)">
+            <g>
+              <g transform="translate(12, 6)">
+                <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Berlin</text>
+              </g>
+              <g transform="translate(0, 32)">
+                <rect width="320" height="32" fill="#EAF2FF"/>
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Hamburg</text>
+                </g>
+              </g>
+              <g transform="translate(0, 64)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#94A3B8">München</text>
+                </g>
+              </g>
+              <g transform="translate(0, 96)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Dresden</text>
+                </g>
+              </g>
+              <g transform="translate(0, 128)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Köln</text>
+                </g>
+              </g>
+              <g transform="translate(0, 160)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Wien</text>
+                </g>
+              </g>
+              <g transform="translate(0, 192)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Zürich</text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 248)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B">7 Städte verfügbar.</text>
+      </g>
+    </g>
+    <g transform="translate(40, 442)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+        <g clip-path="url(#clip14)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#64748B">Stadt suchen …</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)" filter="url(#fx15)">
+        <rect width="320" height="160" rx="8" ry="8" fill="#FFFFFF"/>
+        <g clip-path="url(#clip16)">
+          <g clip-path="url(#clip17)">
+            <g transform="translate(0, -64)">
+              <g transform="translate(12, 6)">
+                <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Berlin</text>
+              </g>
+              <g transform="translate(0, 32)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Hamburg</text>
+                </g>
+              </g>
+              <g transform="translate(0, 64)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#94A3B8">München</text>
+                </g>
+              </g>
+              <g transform="translate(0, 96)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Dresden</text>
+                </g>
+              </g>
+              <g transform="translate(0, 128)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Köln</text>
+                </g>
+              </g>
+              <g transform="translate(0, 160)">
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Wien</text>
+                </g>
+              </g>
+              <g transform="translate(0, 192)">
+                <rect width="320" height="32" fill="#EAF2FF"/>
+                <g transform="translate(12, 6)">
+                  <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Zürich</text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 248)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B">7 Städte verfügbar.</text>
+      </g>
+    </g>
+    <g transform="translate(432, 442)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#CBD5E2" stroke-width="1"/>
+        <g clip-path="url(#clip18)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Berlin</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B">Ausgewählt: Berlin.</text>
+      </g>
+    </g>
+    <g transform="translate(824, 442)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+        <g clip-path="url(#clip19)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Atlantis</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)" filter="url(#fx20)">
+        <rect width="320" height="32" rx="8" ry="8" fill="#FFFFFF"/>
+        <g clip-path="url(#clip21)">
+          <g clip-path="url(#clip22)">
+            <g transform="translate(12, 6)">
+              <text x="0" y="14" font-family="Inter" font-size="14" fill="#64748B">Keine Städte gefunden.</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 120)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B">Keine Städte gefunden.</text>
+      </g>
+    </g>
+    <g transform="translate(1216, 442)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+        <g clip-path="url(#clip23)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Be</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)" filter="url(#fx24)">
+        <rect width="320" height="32" rx="8" ry="8" fill="#FFFFFF"/>
+        <g clip-path="url(#clip25)">
+          <g clip-path="url(#clip26)">
+            <g transform="translate(12, 6)">
+              <text x="0" y="14" font-family="Inter" font-size="14" fill="#64748B">Städte konnten nicht geladen werden.</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 120)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#B91C1C">Städte konnten nicht geladen werden.</text>
+      </g>
+    </g>
+    <g transform="translate(1608, 442)">
+      <g>
+        <text x="0" y="14" font-family="Inter" font-size="14" fill="#172B4D">Stadt auswählen</text>
+      </g>
+      <g transform="translate(0, 28)">
+        <rect width="320" height="44" rx="8" ry="8" fill="#FFFFFF" stroke="#CBD5E2" stroke-width="1"/>
+        <g clip-path="url(#clip27)">
+          <g transform="translate(13, 12)">
+            <text x="0" y="14" font-family="Inter" font-size="14" fill="#94A3B8">Stadt suchen …</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 80)">
+        <text x="0" y="12" font-family="Inter" font-size="12" fill="#64748B"></text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -2,6 +2,8 @@
 
 Alle folgenden Projektpfade beziehen sich auf das ausgewählte Repository. Zuerst `docs/validation/README.md`, `tools/validation/inventory.json` und bei Ausführung `tools/validation/README.md` lesen. Diese Dateien führen tatsächliche Abdeckung, Abhängigkeiten und Aufrufe; der Skill dupliziert keine Erfolgskriterien.
 
+Für native statische Designausgaben ist diese Originalformat-/Webkette keine vollständige Abnahme. Der zusätzliche, exakt gebundene Gegenprüfer unter `tools/design-review/` prüft nur seinen dokumentierten `covered`-Umfang. Lies dessen README vor Ausführung. Keine historische Reviewerdatei im Originalpfad erneut ausführen, wenn sie Belege überschreibt; temporäre Kopie verwenden. Automatische Assertions, manuelle Einordnung und `notChecked` trennen. Eine Stichprobe oder ein konstanter Wahrheitswert darf nicht als Prüfung aller Elemente erscheinen; neue Prüflogik an gültigen und fehlerhaften Gegenfällen prüfen.
+
 ## Helper aufrufen
 
 `SKILL` bezeichnet den tatsächlichen Ordner dieses Skills; `REPO` den Repositorypfad, `CANDIDATE` die Datei/den Ordner der Originalartefakte. Ersetze diese Bezeichnungen durch konkrete Pfade, sie sind keine automatisch gesetzten Variablen.

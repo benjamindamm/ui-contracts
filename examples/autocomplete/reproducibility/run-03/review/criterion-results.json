@@ -1,0 +1,1418 @@
+{
+ "a": {
+  "E-001": {
+   "status": "erfüllt",
+   "obs": [
+    "Datei mit Original-Reader der gepinnten Umgebung vollständig eingelesen: figKiwiVersion=101, records=136, nodes=136, bytes=42176; render aus dem Wiedereingelesenen Graphen erfolgreich (render-a.png)"
+   ]
+  },
+  "E-002": {
+   "status": "erfüllt",
+   "obs": [
+    "1 Seite 'Autocomplete' mit 10 benannten Fall-Frames: closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled"
+   ]
+  },
+  "E-003": {
+   "status": "erfüllt",
+   "obs": [
+    "Außenanordnung frei (keine Beanstandung); beobachtet: 22 Top-Knoten der Seite"
+   ]
+  },
+  "E-004": {
+   "status": "erfüllt",
+   "obs": [
+    "22/22 Definitionsdateien auf Disk (frische SHA-256 berechnet); Manifest Builder A: 21 Einträge, 21 identisch; Abweichungen: keine; nicht vom Manifest abgedeckt: ['autocomplete/error-relay.scxml']",
+    "Lücken dokumentiert (REPORT.md, 19 Punkte, inkl. error-relay.scxml, Platzhalter/Disabled-Konflikt, Scroll-Offset); Definition selbst unverändert"
+   ]
+  },
+  "E-005": {
+   "status": "erfüllt",
+   "obs": [
+    "Fall-Namen: ['closed', 'opening', 'loading', 'ready', 'active', 'scroll-end', 'selected', 'empty', 'error', 'disabled']"
+   ]
+  },
+  "E-006": {
+   "status": "erfüllt",
+   "obs": [
+    "Jeder Fall ist ein eigener benannter FRAME mit eigener Teil-Hierarchie"
+   ]
+  },
+  "E-007": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "active: ready-Layout (Popup 320×160, 7 Optionen), Highlight-Optionen=['hamburg']",
+     "scroll-end: ready-Layout (Popup 320×160, 7 Optionen), Highlight-Optionen=['zuerich']"
+    ]
+   ]
+  },
+  "E-008": {
+   "status": "erfüllt",
+   "obs": [
+    "selected: Popup-Präsenz=False, Input-Texte=['Berlin'], Status='Ausgewählt: Berlin.'"
+   ]
+  },
+  "E-009": {
+   "status": "erfüllt",
+   "obs": [
+    "disabled: Popup-Präsenz=False, Rand-Token=border, Input-Texte=['Stadt suchen …'] (Farben ['muted'])"
+   ]
+  },
+  "D-001": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle 10 Fälle: Popup/Rand/Aktiv-Option/Status konsistent mit Zustand (closed; active/{opening,loading,ready,empty,error}; active & scroll-end = ready+activeKey; selected & disabled = closed-Varianten)"
+    ]
+   ]
+  },
+  "E-010": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle Teilarten (input, listbox/list, option, status, overlay.surface, overlay.scroll.viewport) als unterscheidbare benannte Knoten (Liste in den Listenfällen, Meldung in loading/empty/error); Meldungsfälle: Listbox-Rahmen vorhanden (A: 'Listbox' umschließt die Message Row)"
+    ]
+   ]
+  },
+  "E-011": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Popup = eigener Surface→Viewport→Content-Zweig; Listbox = Scrollinhalt (Kind von overlay.scroll.content), Eigentum der Autocomplete"
+    ]
+   ]
+  },
+  "E-012": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "label über Input; Surface am Input verankert (y=80); Viewport im Popup geclippt; List im Scrollinhalt; eine Option pro stabilem Key; Status unter Popup bzw. Input"
+    ]
+   ]
+  },
+  "E-013": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Optionen über fachliche Keys benannt (21 Optionen): ['Option: berlin', 'Option: dresden', 'Option: hamburg', 'Option: koeln', 'Option: muenchen', 'Option: wien', 'Option: zuerich']"
+    ]
+   ]
+  },
+  "E-014": {
+   "status": "erfüllt",
+   "obs": [
+    "Keine zweite Auswahlmaschine im Overlay: Surface/Viewport/Content tragen keine zusätzlichen Knoten, Annotationen oder Zustandsdaten (nur Strukturkinder)"
+   ]
+  },
+  "E-015": {
+   "status": "erfüllt",
+   "obs": [
+    "Teil-Layers einzeln vorhanden und verständlich benannt, z. B. ['Label', 'Input', 'Status', 'Label', 'Input', 'Status', 'Label', 'Input'] …"
+   ]
+  },
+  "E-016": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label 'Stadt auswählen' in allen 10 Fällen"
+    ]
+   ]
+  },
+  "E-017": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "'Stadt suchen …' (Ellipsenzeichen + Leerzeichen davor) in 6 Fällen mit leerem Query: ['closed', 'opening', 'ready', 'active', 'scroll-end', 'disabled']"
+    ]
+   ]
+  },
+  "E-018": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "7 Labels in der Reihenfolge ['Berlin', 'Hamburg', 'München', 'Dresden', 'Köln', 'Wien', 'Zürich'] in allen Listenfällen"
+    ]
+   ]
+  },
+  "E-019": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Key↔Label-Mapping korrekt; nur muenchen in disabled-Farbe (#94a3b8) markiert (alle 3 Listenfälle)"
+    ]
+   ]
+  },
+  "E-020": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status-Text exakt je Fall (10/10)"
+    ]
+   ]
+  },
+  "E-021": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Query-Texte exakt je Fall: loading/error='Be', empty='Atlantis', selected='Berlin', übrige leer → Platzhalter"
+    ]
+   ]
+  },
+  "E-022": {
+   "status": "erfüllt",
+   "obs": [
+    "selected-Input zeigt ['Berlin'] (kein Platzhalter)"
+   ]
+  },
+  "E-023": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle sichtbaren Texte der Fälle stammen aus Label/Placeholder/Query/Ergebnislabels/Statusmeldungen (stories.json, interface.json, accessibility.rules.json); Seitenmöbel (Titel/Captions) sind freie Anordnungshinweise (E-003)"
+    ]
+   ]
+  },
+  "D-002": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "leerer Query → Platzhalter; nicht leerer Query → Query-Text (10/10 Fälle konsistent)"
+    ]
+   ]
+  },
+  "E-024": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Komponentenbreite: 320 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-025": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Höhe: 44 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-026": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Breite: 320 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-027": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label-Höhe: 20 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-028": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status-Höhe: 20 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-029": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Optionen 32px hoch (21/21 in 3 Listenfällen)"
+    ]
+   ]
+  },
+  "E-030": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Viewport max-height 160px, geclippt: ['loading: 32px, geclippt', 'ready: 160px, geclippt', 'active: 160px, geclippt', 'scroll-end: 160px, geclippt', 'empty: 32px, geclippt', 'error: 32px, geclippt']"
+    ]
+   ]
+  },
+  "E-031": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input 1px-Rahmen (weight 1, INSIDE) in 10 Fällen; Overlayfläche border 0 (kein Stroke) in 6 Fällen"
+    ]
+   ]
+  },
+  "E-032": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Radius 8px an Input (10) und Overlayfläche (6)"
+    ]
+   ]
+  },
+  "D-003": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Viewport 160px = min(7×32, 160) in ready/active/scroll-end"
+    ]
+   ]
+  },
+  "D-004": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "maximal 5 Zeilen gleichzeitig sichtbar (160/32=5) in allen 3 Listenfällen"
+    ]
+   ]
+  },
+  "E-033": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label→Input = 8px in 10 Fällen"
+    ]
+   ]
+  },
+  "E-034": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input→Popup = 8px in 6 Fällen"
+    ]
+   ]
+  },
+  "E-035": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status-Abstand 8px zum Bezugselement (Popup bei 6, Input bei 4 Fällen)"
+    ]
+   ]
+  },
+  "E-036": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Text links bei x=12 in 10 Fällen; Rahmenschlagwörter (padding-Properties): [\"{'paddingTop': 0, 'paddingRight': 0, 'paddingBottom': 0, 'paddingLeft': 0}\"]; vertikale Textposition 12px (Zentrierung 44−20)/2 — CSS-Padding 0/12 realisiert als horizontale Textlage 12px + vertikal zentrierter Text"
+    ]
+   ]
+  },
+  "E-037": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Option-Text bei (12,6) in 21/21 Optionen = Padding 6px/12px"
+    ]
+   ]
+  },
+  "E-038": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle verwendeten Farben ⊆ ['#000000', '#172b4d', '#2563eb', '#64748b', '#94a3b8', '#b91c1c', '#cbd5e1', '#eaf2ff', '#ffffff'] + Schlagschatten #000000@α0.2; Fills={'#172b4d': 35, '#ffffff': 16, '#64748b': 15, '#94a3b8': 3, '#eaf2ff': 2, '#b91c1c': 1} Strokes={'#cbd5e1': 3, '#2563eb': 7} Effekte={'#00000033': 6}"
+    ]
+   ]
+  },
+  "E-039": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Hintergrund surface #ffffff (10); echte Query-Texte in #172b4d (loading/error/empty/selected); disabled-Fall hat nur Platzhalter (siehe E-041/Befund)"
+    ]
+   ]
+  },
+  "E-040": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Rand je Fall: ['closed=border', 'opening=focus', 'loading=focus', 'ready=focus', 'active=focus', 'scroll-end=focus', 'selected=border', 'empty=focus', 'error=focus', 'disabled=border']"
+    ]
+   ]
+  },
+  "E-041": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Platzhalter in #64748b: ['closed=#64748b', 'opening=#64748b', 'ready=#64748b', 'active=#64748b', 'scroll-end=#64748b', 'disabled=#64748b']"
+    ]
+   ]
+  },
+  "E-042": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Optionstext #172b4d; muenchen #94a3b8 (alle 3 Listenfälle)"
+    ]
+   ]
+  },
+  "E-043": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Aktive Option mit #eaf2ff (Hintergrund), Textfarbe unverändert: ['ready: highlight=[]', \"active: highlight=['hamburg']\", \"scroll-end: highlight=['zuerich']\"]"
+    ]
+   ]
+  },
+  "E-044": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status #64748b; nur error #b91c1c (10/10)"
+    ]
+   ]
+  },
+  "E-045": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Overlayfläche weiß, border 0, Radius 8, Schatten 0 2px 8px #00000033: ['loading: #00000033 offset(0,2) r=8', 'ready: #00000033 offset(0,2) r=8', 'active: #00000033 offset(0,2) r=8', 'scroll-end: #00000033 offset(0,2) r=8', 'empty: #00000033 offset(0,2) r=8', 'error: #00000033 offset(0,2) r=8']; z-Ordung: Surface-Knoten nach Input (später = darüber), z-Index als Property nicht darstellbar"
+    ]
+   ]
+  },
+  "E-046": {
+   "status": "erfüllt",
+   "obs": [
+    "alle Komponententexte (Label, Input, Optionen, Status, Meldung) fontFamily=Inter"
+   ]
+  },
+  "E-047": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label/Input/Optionen/Meldung 14px (alle Fälle)"
+    ]
+   ]
+  },
+  "E-048": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "line-height 20px an allen Komponententexten (Label/Input/Optionen/Status)"
+    ]
+   ]
+  },
+  "E-049": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status 12px in allen 10 Fällen"
+    ]
+   ]
+  },
+  "D-005": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label/Input/Optionen: Inter 14/20 #172b4d ohne eigene Overrides (muenchen-Ausnahme regelt E-042)"
+    ]
+   ]
+  },
+  "D-006": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Optionstext mittig: 6px + 20px + 6px = 32px Zeilenhöhe (21/21)"
+    ]
+   ]
+  },
+  "U-001": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "font-weight/letter-spacing/Transformation in der Definition nicht festgelegt; beobachtet: Builder A setzt fontWeight=400 an allen Komponententexten (erlaubt)"
+    ]
+   ]
+  },
+  "E-050": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label oben (0,0, h=20), Input darunter bei y=28 (10/10)"
+    ]
+   ]
+  },
+  "E-051": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Popup-Oberkante bei y=80 = Input-Unterkante 72 + 8 (6/6)"
+    ]
+   ]
+  },
+  "E-052": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Popup 320px breit, linke Kante fluchtet mit Input (x=0, 6/6)"
+    ]
+   ]
+  },
+  "E-053": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "closed/opening/selected/disabled: keine Popupteile, kein Layout-Platz, Status direkt unter Input (y=80)"
+    ]
+   ]
+  },
+  "D-007": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status nach 8px unter tatsächlich sichtbarem Popup bzw. Input"
+    ]
+   ]
+  },
+  "D-008": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status-Position je Fall korrekt: unter Popup in loading/ready/active/scroll-end/empty/error, unter Input in closed/opening/selected/disabled"
+    ]
+   ]
+  },
+  "U-007": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Existenz platzneutraler Popup-Layer in verborgenen Fällen nicht festgelegt; beobachtet: Builder A erzeugt in closed/opening/selected/disabled keine Overlay-Knoten (Variante 'nicht erzeugt' — zulässig)"
+    ]
+   ]
+  },
+  "E-054": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Viewport clippt seinen Inhalt (clipsContent=true, 6/6); Inhalt > 160px wird geclippt (Listefälle: 224px Inhalt)"
+    ]
+   ]
+  },
+  "E-055": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "scroll-end: Zürich abs. y 208…240 in Viewport 80…240 (vollständig sichtbar)"
+    ]
+   ]
+  },
+  "E-056": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Statischer Content-Versatz relativ zur Viewport-Oberkante: ['loading:0', 'ready:0', 'active:0', 'scroll-end:-64', 'empty:0', 'error:0'] (scroll-end -64 = 224−160, maximaler Scroll; letzte Zeile vollständig sichtbar; keine Scroll-Dynamik im Canvas)"
+    ]
+   ]
+  },
+  "E-057": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle 7 Ergebniszeilen als editierbare Layers in jedem Listenfall vorhanden, inkl. geclippter (wien/y=160, zuerich/y=192) — nichts gelöscht"
+    ]
+   ]
+  },
+  "D-009": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "ready/active (Scroll oben): sichtbar Berlin…Köln (5), geclippt wien+zuerich — beide vorhanden"
+    ]
+   ]
+  },
+  "U-002": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Scroll-Offset in scroll-end nicht numerisch festgelegt; beobachtet: Builder A wählt y=-64 (maximaler Scroll, 224−160=64); damit 2 Zeilen geclippt — Inkonsistenz README 'drei unsichtbare Daten' vs. Arithmetik (max. 2) bleibt Lücke der Definition, dokumentiert, nicht geahndet"
+    ]
+   ]
+  },
+  "E-058": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Popup sichtbar genau in loading/ready/active/scroll-end/empty/error; opening laut Projection popupVisible=false → kein Popup (beide Builder)"
+    ]
+   ]
+  },
+  "E-059": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "disabled: keine sichtbaren Popupteile (kein Surface-/Viewport-/List-Knoten)"
+    ]
+   ]
+  },
+  "E-060": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Meldungszeile im Popup wiederholt den Status-Text; beobachtete Zeilenhöhe {'loading': 32, 'empty': 32, 'error': 32} (U-003: exakte Höhe/Farbe nicht als Verletzung gewertet): {'loading': 'Städte werden geladen.', 'empty': 'Keine Städte gefunden.', 'error': 'Städte konnten nicht geladen werden.'}"
+    ]
+   ]
+  },
+  "D-010": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "genau 6 Fälle mit sichtbarem Popup, 4 ohne"
+    ]
+   ]
+  },
+  "U-003": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Höhe/Farbe der Meldungszeile nicht vollständig festgelegt; beobachtet: Builder A nutzt 32px (rowHeight) mit Textfarbe #172b4d — dokumentierte Annahme, nicht geahndet"
+    ]
+   ]
+  },
+  "E-061": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "editierbares OpenPencil-Design: 136 Vektor-/Text-Knoten mit editierbaren Properties (Fills/Strokes/Texte/Geometrie), benannte Hierarchie; keine Rasterkopie (0 IMAGE-Knoten), keine flache Abbildung"
+    ]
+   ]
+  },
+  "E-062": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Keine Interaktivität/ARIA-Ausführung/Canvas-Interaktion gefordert — nichts derartiges vorhanden, wird nicht beanstandet (erlaubte Freiheit)"
+    ]
+   ]
+  },
+  "E-063": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Rollen-Zuordnung über lesbare Namen: input=combobox: False; list=listbox: True; option: True; status: True. Teil-Namen im Dokument: ['Input', 'Label', 'Listbox', 'Message Row', 'Option: berlin', 'Option: dresden', 'Option: hamburg', 'Option: koeln', 'Option: muenchen', 'Option: wien', 'Option: zuerich', 'Overlay Scroll Content', 'Overlay Scroll Viewport', 'Overlay Surface'] …"
+    ]
+   ]
+  },
+  "E-064": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Wert 'aria-autocomplete=list' nicht ablesbar: keine aria-Annotation in Layer-Namen, Text, Captions oder pluginData (pluginData enthält nur Writer-Artefakte layoutDirection/textDirection)"
+    ]
+   ]
+  },
+  "E-065": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Werte false/true von aria-expanded nicht ablesbar (nirgends 'expanded'); A: Captions nennen Phase/SCXML-Pfad — Ableitung nur über externe accessibility.rules.json möglich"
+    ]
+   ]
+  },
+  "E-066": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "genau eine hervorgehobene (aria-selected-repräsentierende) Option pro Fall = die aktive; keine zweite; selected bestätigt keinen value (selected-Fall ohne Highlight)"
+    ]
+   ]
+  },
+  "E-067": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "active → hamburg hervorgehoben; scroll-end → zuerich; ready → keine; alle übrigen Fälle ohne Popup/Optionen"
+    ]
+   ]
+  },
+  "E-068": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "nur muenchen in disabled-Farbe (aria-disabled-Repräsentation); keine andere Option"
+    ]
+   ]
+  },
+  "E-069": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "muenchen in allen drei Sichtbarkeitsfällen (ready/active/scroll-end) disabled (#94a3b8)"
+    ]
+   ]
+  },
+  "E-070": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Attributwert 'aria-activedescendant' nicht ablesbar; A: Caption nennt 'aktiv: hamburg'/'aktiv: zuerich' (Key lesbar, Attribut selbst fehlt)"
+    ]
+   ]
+  },
+  "E-071": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Status-Region: Rolle 'status' lesbar via Layer-Name=True; aria-live='polite'=False; aria-atomic='true'=False — live/atomic-Werte in keinem Namen, Text, Caption oder pluginData vorhanden"
+    ]
+   ]
+  },
+  "E-072": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Namensquellen realisiert: Input-/List-Name aus Label 'Stadt auswählen' (Label-Knoten über Input); Option-Name = result.label; Platzhalter 'Stadt suchen …' aus interface.placeholder"
+    ]
+   ]
+  },
+  "E-073": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "keine zusätzlichen Fokus-/Tabstop-Annotationen an Popup/Viewport (negativer Check: nirgends tabindex/focus-Annotation); Input-Fokus semantisch im Input (Fokusrand), nicht im Overlay"
+    ]
+   ]
+  },
+  "E-074": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "ARIA-Werte nur als semantische Annotationen (benannte Teile, Label-, Status-, Aktiv-/Deaktiv-Stile); statisches Design ohne funktionales Screenreader-Verhalten — keine Behauptung über SR-Testbarkeit"
+    ]
+   ]
+  },
+  "U-004": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Darstellungsform der ARIA-Attribute nicht spezifiziert; beobachtet: Builder A = Layer-Namen + Captions mit Phase/SCXML-Pfad/aktiv-/value-Angaben; maschinenlesbare aria-*-Attribute in keinem Format vorhanden"
+    ]
+   ]
+  },
+  "U-005": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Pflicht eines leeren Status-Layers in closed/disabled offen; beobachtet: Builder A lässt Status-Knoten mit leerem Text vorhanden (closed: w=0, disabled: w=0)"
+    ]
+   ]
+  },
+  "U-006": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "error-relay.scxml keinem Designfall zugeordnet; beobachtet: kein Fall im Dokument; fehlt zusätzlich im Quell-Manifest des Builders (21/22 Dateien), im REPORT dokumentiert"
+    ]
+   ]
+  }
+ },
+ "b": {
+  "E-001": {
+   "status": "erfüllt",
+   "obs": [
+    "Datei mit Original-Reader der gepinnten Umgebung vollständig eingelesen: figKiwiVersion=101, records=122, nodes=122, bytes=31068; render aus dem Wiedereingelesenen Graphen erfolgreich (render-b.png)"
+   ]
+  },
+  "E-002": {
+   "status": "erfüllt",
+   "obs": [
+    "1 Seite 'Autocomplete' mit 10 benannten Fall-Frames: Autocomplete/closed, Autocomplete/opening, Autocomplete/loading, Autocomplete/ready, Autocomplete/active, Autocomplete/scroll-end, Autocomplete/selected, Autocomplete/empty, Autocomplete/error, Autocomplete/disabled"
+   ]
+  },
+  "E-003": {
+   "status": "erfüllt",
+   "obs": [
+    "Außenanordnung frei (keine Beanstandung); beobachtet: 11 Top-Knoten der Seite"
+   ]
+  },
+  "E-004": {
+   "status": "erfüllt",
+   "obs": [
+    "22/22 Definitionsdateien auf Disk (frische SHA-256 berechnet); Manifest Builder B: 22 Einträge, 22 identisch; Abweichungen: keine; nicht vom Manifest abgedeckt: keine",
+    "Lücken dokumentiert (REPORT.md, 18 Punkte); Definition unverändert; ACHTUNG: Report-Punkt 4 behauptet 'Platzhalter bleibt muted im disabled-Fall', das Artefakt zeigt aber #94a3b8 — Widerspruch Report↔Datei, s. REVIEW.md"
+   ]
+  },
+  "E-005": {
+   "status": "erfüllt",
+   "obs": [
+    "Fall-Namen: ['Autocomplete/closed', 'Autocomplete/opening', 'Autocomplete/loading', 'Autocomplete/ready', 'Autocomplete/active', 'Autocomplete/scroll-end', 'Autocomplete/selected', 'Autocomplete/empty', 'Autocomplete/error', 'Autocomplete/disabled']"
+   ]
+  },
+  "E-006": {
+   "status": "erfüllt",
+   "obs": [
+    "Jeder Fall ist ein eigener benannter FRAME mit eigener Teil-Hierarchie"
+   ]
+  },
+  "E-007": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "active: ready-Layout (Popup 320×160, 7 Optionen), Highlight-Optionen=['hamburg']",
+     "scroll-end: ready-Layout (Popup 320×160, 7 Optionen), Highlight-Optionen=['zuerich']"
+    ]
+   ]
+  },
+  "E-008": {
+   "status": "erfüllt",
+   "obs": [
+    "selected: Popup-Präsenz=False, Input-Texte=['Berlin'], Status='Ausgewählt: Berlin.'"
+   ]
+  },
+  "E-009": {
+   "status": "erfüllt",
+   "obs": [
+    "disabled: Popup-Präsenz=False, Rand-Token=border, Input-Texte=['Stadt suchen …'] (Farben ['disabled'])"
+   ]
+  },
+  "D-001": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle 10 Fälle: Popup/Rand/Aktiv-Option/Status konsistent mit Zustand (closed; active/{opening,loading,ready,empty,error}; active & scroll-end = ready+activeKey; selected & disabled = closed-Varianten)"
+    ]
+   ]
+  },
+  "E-010": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle Teilarten (input, listbox/list, option, status, overlay.surface, overlay.scroll.viewport) als unterscheidbare benannte Knoten (Liste in den Listenfällen, Meldung in loading/empty/error); Meldungsfälle: Listbox-Rahmen nicht erzeugt (B: Content → message direkt)"
+    ]
+   ]
+  },
+  "E-011": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Popup = eigener Surface→Viewport→Content-Zweig; Listbox = Scrollinhalt (Kind von overlay.scroll.content), Eigentum der Autocomplete"
+    ]
+   ]
+  },
+  "E-012": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "label über Input; Surface am Input verankert (y=80); Viewport im Popup geclippt; List im Scrollinhalt; eine Option pro stabilem Key; Status unter Popup bzw. Input"
+    ]
+   ]
+  },
+  "E-013": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Optionen über fachliche Keys benannt (21 Optionen): ['option/berlin', 'option/dresden', 'option/hamburg', 'option/koeln', 'option/muenchen', 'option/wien', 'option/zuerich']"
+    ]
+   ]
+  },
+  "E-014": {
+   "status": "erfüllt",
+   "obs": [
+    "Keine zweite Auswahlmaschine im Overlay: Surface/Viewport/Content tragen keine zusätzlichen Knoten, Annotationen oder Zustandsdaten (nur Strukturkinder)"
+   ]
+  },
+  "E-015": {
+   "status": "erfüllt",
+   "obs": [
+    "Teil-Layers einzeln vorhanden und verständlich benannt, z. B. ['label', 'input', 'status', 'label', 'input', 'status', 'label', 'input'] …"
+   ]
+  },
+  "E-016": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label 'Stadt auswählen' in allen 10 Fällen"
+    ]
+   ]
+  },
+  "E-017": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "'Stadt suchen …' (Ellipsenzeichen + Leerzeichen davor) in 6 Fällen mit leerem Query: ['closed', 'opening', 'ready', 'active', 'scroll-end', 'disabled']"
+    ]
+   ]
+  },
+  "E-018": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "7 Labels in der Reihenfolge ['Berlin', 'Hamburg', 'München', 'Dresden', 'Köln', 'Wien', 'Zürich'] in allen Listenfällen"
+    ]
+   ]
+  },
+  "E-019": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Key↔Label-Mapping korrekt; nur muenchen in disabled-Farbe (#94a3b8) markiert (alle 3 Listenfälle)"
+    ]
+   ]
+  },
+  "E-020": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status-Text exakt je Fall (10/10)"
+    ]
+   ]
+  },
+  "E-021": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Query-Texte exakt je Fall: loading/error='Be', empty='Atlantis', selected='Berlin', übrige leer → Platzhalter"
+    ]
+   ]
+  },
+  "E-022": {
+   "status": "erfüllt",
+   "obs": [
+    "selected-Input zeigt ['Berlin'] (kein Platzhalter)"
+   ]
+  },
+  "E-023": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle sichtbaren Texte der Fälle stammen aus Label/Placeholder/Query/Ergebnislabels/Statusmeldungen (stories.json, interface.json, accessibility.rules.json); Seitenmöbel (Titel/Captions) sind freie Anordnungshinweise (E-003)"
+    ]
+   ]
+  },
+  "D-002": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "leerer Query → Platzhalter; nicht leerer Query → Query-Text (10/10 Fälle konsistent)"
+    ]
+   ]
+  },
+  "E-024": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Komponentenbreite: 320 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-025": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Höhe: 44 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-026": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Breite: 320 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-027": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label-Höhe: 20 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-028": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status-Höhe: 20 in 10 Fällen"
+    ]
+   ]
+  },
+  "E-029": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Optionen 32px hoch (21/21 in 3 Listenfällen)"
+    ]
+   ]
+  },
+  "E-030": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Viewport max-height 160px, geclippt: ['loading: 32px, geclippt', 'ready: 160px, geclippt', 'active: 160px, geclippt', 'scroll-end: 160px, geclippt', 'empty: 32px, geclippt', 'error: 32px, geclippt']"
+    ]
+   ]
+  },
+  "E-031": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input 1px-Rahmen (weight 1, INSIDE) in 10 Fällen; Overlayfläche border 0 (kein Stroke) in 6 Fällen"
+    ]
+   ]
+  },
+  "E-032": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Radius 8px an Input (10) und Overlayfläche (6)"
+    ]
+   ]
+  },
+  "D-003": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Viewport 160px = min(7×32, 160) in ready/active/scroll-end"
+    ]
+   ]
+  },
+  "D-004": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "maximal 5 Zeilen gleichzeitig sichtbar (160/32=5) in allen 3 Listenfällen"
+    ]
+   ]
+  },
+  "E-033": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label→Input = 8px in 10 Fällen"
+    ]
+   ]
+  },
+  "E-034": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input→Popup = 8px in 6 Fällen"
+    ]
+   ]
+  },
+  "E-035": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status-Abstand 8px zum Bezugselement (Popup bei 6, Input bei 4 Fällen)"
+    ]
+   ]
+  },
+  "E-036": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Text links bei x=12 in 10 Fällen; Rahmenschlagwörter (padding-Properties): [\"{'paddingTop': 0, 'paddingRight': 0, 'paddingBottom': 0, 'paddingLeft': 0}\"]; vertikale Textposition 12px (Zentrierung 44−20)/2 — CSS-Padding 0/12 realisiert als horizontale Textlage 12px + vertikal zentrierter Text"
+    ]
+   ]
+  },
+  "E-037": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Option-Text bei (12,6) in 21/21 Optionen = Padding 6px/12px"
+    ]
+   ]
+  },
+  "E-038": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle verwendeten Farben ⊆ ['#000000', '#172b4d', '#2563eb', '#64748b', '#94a3b8', '#b91c1c', '#cbd5e1', '#eaf2ff', '#ffffff'] + Schlagschatten #000000@α0.2; Fills={'#172b4d': 35, '#ffffff': 16, '#64748b': 14, '#94a3b8': 4, '#eaf2ff': 2, '#b91c1c': 1} Strokes={'#cbd5e1': 3, '#2563eb': 7} Effekte={'#00000033': 6}"
+    ]
+   ]
+  },
+  "E-039": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Hintergrund surface #ffffff (10); echte Query-Texte in #172b4d (loading/error/empty/selected); disabled-Fall hat nur Platzhalter (siehe E-041/Befund)"
+    ]
+   ]
+  },
+  "E-040": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Input-Rand je Fall: ['closed=border', 'opening=focus', 'loading=focus', 'ready=focus', 'active=focus', 'scroll-end=focus', 'selected=border', 'empty=focus', 'error=focus', 'disabled=border']"
+    ]
+   ]
+  },
+  "E-041": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "disabled: #94a3b8 (disabled)"
+    ]
+   ]
+  },
+  "E-042": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Optionstext #172b4d; muenchen #94a3b8 (alle 3 Listenfälle)"
+    ]
+   ]
+  },
+  "E-043": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Aktive Option mit #eaf2ff (Hintergrund), Textfarbe unverändert: ['ready: highlight=[]', \"active: highlight=['hamburg']\", \"scroll-end: highlight=['zuerich']\"]"
+    ]
+   ]
+  },
+  "E-044": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status #64748b; nur error #b91c1c (10/10)"
+    ]
+   ]
+  },
+  "E-045": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Overlayfläche weiß, border 0, Radius 8, Schatten 0 2px 8px #00000033: ['loading: #00000033 offset(0,2) r=8', 'ready: #00000033 offset(0,2) r=8', 'active: #00000033 offset(0,2) r=8', 'scroll-end: #00000033 offset(0,2) r=8', 'empty: #00000033 offset(0,2) r=8', 'error: #00000033 offset(0,2) r=8']; z-Ordung: Surface-Knoten nach Input (später = darüber), z-Index als Property nicht darstellbar"
+    ]
+   ]
+  },
+  "E-046": {
+   "status": "erfüllt",
+   "obs": [
+    "alle Komponententexte (Label, Input, Optionen, Status, Meldung) fontFamily=Inter"
+   ]
+  },
+  "E-047": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label/Input/Optionen/Meldung 14px (alle Fälle)"
+    ]
+   ]
+  },
+  "E-048": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "line-height 20px an allen Komponententexten (Label/Input/Optionen/Status)"
+    ]
+   ]
+  },
+  "E-049": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status 12px in allen 10 Fällen"
+    ]
+   ]
+  },
+  "D-005": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label/Input/Optionen: Inter 14/20 #172b4d ohne eigene Overrides (muenchen-Ausnahme regelt E-042)"
+    ]
+   ]
+  },
+  "D-006": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Optionstext mittig: 6px + 20px + 6px = 32px Zeilenhöhe (21/21)"
+    ]
+   ]
+  },
+  "U-001": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "font-weight/letter-spacing/Transformation in der Definition nicht festgelegt; beobachtet: Builder B setzt fontWeight=400 an allen Komponententexten (erlaubt)"
+    ]
+   ]
+  },
+  "E-050": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Label oben (0,0, h=20), Input darunter bei y=28 (10/10)"
+    ]
+   ]
+  },
+  "E-051": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Popup-Oberkante bei y=80 = Input-Unterkante 72 + 8 (6/6)"
+    ]
+   ]
+  },
+  "E-052": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Popup 320px breit, linke Kante fluchtet mit Input (x=0, 6/6)"
+    ]
+   ]
+  },
+  "E-053": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "closed/opening/selected/disabled: keine Popupteile, kein Layout-Platz, Status direkt unter Input (y=80)"
+    ]
+   ]
+  },
+  "D-007": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status nach 8px unter tatsächlich sichtbarem Popup bzw. Input"
+    ]
+   ]
+  },
+  "D-008": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Status-Position je Fall korrekt: unter Popup in loading/ready/active/scroll-end/empty/error, unter Input in closed/opening/selected/disabled"
+    ]
+   ]
+  },
+  "U-007": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Existenz platzneutraler Popup-Layer in verborgenen Fällen nicht festgelegt; beobachtet: Builder B erzeugt in closed/opening/selected/disabled keine Overlay-Knoten (Variante 'nicht erzeugt' — zulässig)"
+    ]
+   ]
+  },
+  "E-054": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Viewport clippt seinen Inhalt (clipsContent=true, 6/6); Inhalt > 160px wird geclippt (Listefälle: 224px Inhalt)"
+    ]
+   ]
+  },
+  "E-055": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "scroll-end: Zürich abs. y 208…240 in Viewport 80…240 (vollständig sichtbar)"
+    ]
+   ]
+  },
+  "E-056": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Statischer Content-Versatz relativ zur Viewport-Oberkante: ['loading:0', 'ready:0', 'active:0', 'scroll-end:-64', 'empty:0', 'error:0'] (scroll-end -64 = 224−160, maximaler Scroll; letzte Zeile vollständig sichtbar; keine Scroll-Dynamik im Canvas)"
+    ]
+   ]
+  },
+  "E-057": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "alle 7 Ergebniszeilen als editierbare Layers in jedem Listenfall vorhanden, inkl. geclippter (wien/y=160, zuerich/y=192) — nichts gelöscht"
+    ]
+   ]
+  },
+  "D-009": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "ready/active (Scroll oben): sichtbar Berlin…Köln (5), geclippt wien+zuerich — beide vorhanden"
+    ]
+   ]
+  },
+  "U-002": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Scroll-Offset in scroll-end nicht numerisch festgelegt; beobachtet: Builder B wählt y=-64 (maximaler Scroll, 224−160=64); damit 2 Zeilen geclippt — Inkonsistenz README 'drei unsichtbare Daten' vs. Arithmetik (max. 2) bleibt Lücke der Definition, dokumentiert, nicht geahndet"
+    ]
+   ]
+  },
+  "E-058": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Popup sichtbar genau in loading/ready/active/scroll-end/empty/error; opening laut Projection popupVisible=false → kein Popup (beide Builder)"
+    ]
+   ]
+  },
+  "E-059": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "disabled: keine sichtbaren Popupteile (kein Surface-/Viewport-/List-Knoten)"
+    ]
+   ]
+  },
+  "E-060": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Meldungszeile im Popup wiederholt den Status-Text; beobachtete Zeilenhöhe {'loading': 32, 'empty': 32, 'error': 32} (U-003: exakte Höhe/Farbe nicht als Verletzung gewertet): {'loading': 'Städte werden geladen.', 'empty': 'Keine Städte gefunden.', 'error': 'Städte konnten nicht geladen werden.'}"
+    ]
+   ]
+  },
+  "D-010": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "genau 6 Fälle mit sichtbarem Popup, 4 ohne"
+    ]
+   ]
+  },
+  "U-003": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Höhe/Farbe der Meldungszeile nicht vollständig festgelegt; beobachtet: Builder B nutzt 32px (rowHeight) mit Textfarbe #172b4d — dokumentierte Annahme, nicht geahndet"
+    ]
+   ]
+  },
+  "E-061": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "editierbares OpenPencil-Design: 122 Vektor-/Text-Knoten mit editierbaren Properties (Fills/Strokes/Texte/Geometrie), benannte Hierarchie; keine Rasterkopie (0 IMAGE-Knoten), keine flache Abbildung"
+    ]
+   ]
+  },
+  "E-062": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Keine Interaktivität/ARIA-Ausführung/Canvas-Interaktion gefordert — nichts derartiges vorhanden, wird nicht beanstandet (erlaubte Freiheit)"
+    ]
+   ]
+  },
+  "E-063": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Rollen-Zuordnung über lesbare Namen: input=combobox: False; list=listbox: False; option: True; status: True. Teil-Namen im Dokument: ['Autocomplete/active', 'Autocomplete/closed', 'Autocomplete/disabled', 'Autocomplete/empty', 'Autocomplete/error', 'Autocomplete/loading', 'Autocomplete/opening', 'Autocomplete/ready', 'Autocomplete/scroll-end', 'Autocomplete/selected', 'input', 'label', 'list', 'message'] …"
+    ]
+   ]
+  },
+  "E-064": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Wert 'aria-autocomplete=list' nicht ablesbar: keine aria-Annotation in Layer-Namen, Text, Captions oder pluginData (es ist kein pluginData vorhanden)"
+    ]
+   ]
+  },
+  "E-065": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Werte false/true von aria-expanded nicht ablesbar (nirgends 'expanded'); B: Fall-Namen enthalten den Zustandsnamen; Werte selbst fehlen"
+    ]
+   ]
+  },
+  "E-066": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "genau eine hervorgehobene (aria-selected-repräsentierende) Option pro Fall = die aktive; keine zweite; selected bestätigt keinen value (selected-Fall ohne Highlight)"
+    ]
+   ]
+  },
+  "E-067": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "active → hamburg hervorgehoben; scroll-end → zuerich; ready → keine; alle übrigen Fälle ohne Popup/Optionen"
+    ]
+   ]
+  },
+  "E-068": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "nur muenchen in disabled-Farbe (aria-disabled-Repräsentation); keine andere Option"
+    ]
+   ]
+  },
+  "E-069": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "muenchen in allen drei Sichtbarkeitsfällen (ready/active/scroll-end) disabled (#94a3b8)"
+    ]
+   ]
+  },
+  "E-070": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Attributwert 'aria-activedescendant' nicht ablesbar; B: nur Highlight-Füllung, keine Annotation des Keys"
+    ]
+   ]
+  },
+  "E-071": {
+   "status": "verletzt",
+   "obs": [
+    [
+     "Status-Region: Rolle 'status' lesbar via Layer-Name=True; aria-live='polite'=False; aria-atomic='true'=False — live/atomic-Werte in keinem Namen, Text, Caption oder pluginData vorhanden"
+    ]
+   ]
+  },
+  "E-072": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "Namensquellen realisiert: Input-/List-Name aus Label 'Stadt auswählen' (Label-Knoten über Input); Option-Name = result.label; Platzhalter 'Stadt suchen …' aus interface.placeholder"
+    ]
+   ]
+  },
+  "E-073": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "keine zusätzlichen Fokus-/Tabstop-Annotationen an Popup/Viewport (negativer Check: nirgends tabindex/focus-Annotation); Input-Fokus semantisch im Input (Fokusrand), nicht im Overlay"
+    ]
+   ]
+  },
+  "E-074": {
+   "status": "erfüllt",
+   "obs": [
+    [
+     "ARIA-Werte nur als semantische Annotationen (benannte Teile, Label-, Status-, Aktiv-/Deaktiv-Stile); statisches Design ohne funktionales Screenreader-Verhalten — keine Behauptung über SR-Testbarkeit"
+    ]
+   ]
+  },
+  "U-004": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Darstellungsform der ARIA-Attribute nicht spezifiziert; beobachtet: Builder B = Layer-Namen (Anatomie-/Teil-Namen, ohne Captions); maschinenlesbare aria-*-Attribute in keinem Format vorhanden"
+    ]
+   ]
+  },
+  "U-005": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "Pflicht eines leeren Status-Layers in closed/disabled offen; beobachtet: Builder B lässt Status-Knoten mit leerem Text vorhanden (closed: w=100, disabled: w=100)"
+    ]
+   ]
+  },
+  "U-006": {
+   "status": "nicht anwendbar",
+   "obs": [
+    [
+     "error-relay.scxml keinem Designfall zugeordnet; beobachtet: kein Fall im Dokument; im Quell-Manifest erfasst (22/22), im REPORT als nicht repräsentiert dokumentiert"
+    ]
+   ]
+  }
+ }
+}

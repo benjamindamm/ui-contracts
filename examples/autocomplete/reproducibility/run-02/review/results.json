@@ -1,0 +1,1971 @@
+{
+  "run": "run-02",
+  "phase": "phase-2-review",
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "sealedCriteria": {
+    "file": "preregistered.json",
+    "count": 101,
+    "byClassification": {
+      "explicit": 67,
+      "derived": 22,
+      "underdetermined": 12
+    }
+  },
+  "method": {
+    "primaryEvidence": "builder-{a,b}/autocomplete.fig, gelesen mit @open-pencil/core 0.16.0 parseFigFile",
+    "renders": "render-a.png / render-b.png, headless aus den .fig-Dateien (CanvasKit, Scale 2)",
+    "measurementFiles": [
+      "original-a.json",
+      "original-b.json",
+      "normalized-a.json",
+      "normalized-b.json",
+      "native-checks.json",
+      "render-meta.json"
+    ],
+    "selfReportsUse": "nur fuer A09 (Offenlegung) und die Provenienz-/Grenzen-Einordnung; keine Messwerte uebernommen",
+    "toolchain": "tools/openpencil (gepinnt, 0.16.0), keine Netzwerkabhaengigkeit"
+  },
+  "designA": {
+    "design": "A",
+    "verdict": "PASS_MIT_ABWEICHUNGEN",
+    "gatesPassed": true,
+    "counts": {
+      "pass": 96,
+      "fail": 4,
+      "na": 1,
+      "explicit_fail": 0,
+      "derived_fail": 4
+    },
+    "byClassification": {
+      "explicit": {
+        "pass": 66,
+        "fail": 0,
+        "n/a": 1
+      },
+      "derived": {
+        "pass": 18,
+        "fail": 4,
+        "n/a": 0
+      },
+      "underdetermined": {
+        "pass": 12,
+        "fail": 0,
+        "n/a": 0
+      }
+    },
+    "deviations": [
+      "A11Y01",
+      "A11Y02",
+      "A11Y03",
+      "A11Y07"
+    ]
+  },
+  "designB": {
+    "design": "B",
+    "verdict": "PASS_MIT_ABWEICHUNGEN",
+    "gatesPassed": true,
+    "counts": {
+      "pass": 96,
+      "fail": 4,
+      "na": 1,
+      "explicit_fail": 0,
+      "derived_fail": 4
+    },
+    "byClassification": {
+      "explicit": {
+        "pass": 66,
+        "fail": 0,
+        "n/a": 1
+      },
+      "derived": {
+        "pass": 18,
+        "fail": 4,
+        "n/a": 0
+      },
+      "underdetermined": {
+        "pass": 12,
+        "fail": 0,
+        "n/a": 0
+      }
+    },
+    "deviations": [
+      "A11Y01",
+      "A11Y02",
+      "A11Y03",
+      "A11Y07"
+    ]
+  },
+  "criteria": [
+    {
+      "id": "A01",
+      "classification": "explicit",
+      "statement": "Das Ergebnis ist ein tatsächlich öffnbares OpenPencil-Dokument, keine umbenannte JSON-Datei und kein reiner Speichergraph.",
+      "a": {
+        "status": "pass",
+        "observed": "parseFigFile 0.16.0: ok; 129 Knoten, Seiten ['Autocomplete'], 60025 Bytes, SHA-256 f79ff07fd70d4775…",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "parseFigFile 0.16.0: ok; 122 Knoten, Seiten ['Page 1', 'Autocomplete'], 31306 Bytes, SHA-256 fbd3b9934a3e4f28…",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A02",
+      "classification": "explicit",
+      "statement": "Genau die zehn benannten Fälle sind als Gruppen vorhanden.",
+      "a": {
+        "status": "pass",
+        "observed": "10/10 Fallgruppen: Autocomplete / closed, Autocomplete / opening, Autocomplete / loading, Autocomplete / ready, Autocomplete / active, Autocomplete / scroll-end, Autocomplete / selected, Autocomplete / empty, Autocomplete / error, Autocomplete / disabled",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "10/10 Fallgruppen: Autocomplete / closed, Autocomplete / opening, Autocomplete / loading, Autocomplete / ready, Autocomplete / active, Autocomplete / scroll-end, Autocomplete / selected, Autocomplete / empty, Autocomplete / error, Autocomplete / disabled",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A03",
+      "classification": "explicit",
+      "statement": "active, scroll-end, selected und disabled sind keine zusätzlich unabhängig geführten SCXML-Zustände.",
+      "a": {
+        "status": "pass",
+        "observed": "keine zusätzliche Zustandsgruppe; Wrapper/Seiten: keine",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "keine zusätzliche Zustandsgruppe; Wrapper/Seiten: ['Page 1']",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A04",
+      "classification": "explicit",
+      "statement": "Jeder Fall ist als Komponenten-/Framelayergruppe benannt.",
+      "a": {
+        "status": "pass",
+        "observed": "10 benannte Container (FRAME) 'Autocomplete / <id>'",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "10 benannte Container (COMPONENT) 'Autocomplete / <id>'",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A05",
+      "classification": "explicit",
+      "statement": "Label, Input, Overlayfläche, Scrollviewport, Listbox, jede Option und Status bleiben separat editierbar und benannt.",
+      "a": {
+        "status": "pass",
+        "observed": "Pflichtteile vollständig; 21 Optionsknoten (7×3); keine Lücke",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Pflichtteile vollständig; 21 Optionsknoten (7×3); keine Lücke",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A06",
+      "classification": "explicit",
+      "statement": "Sichtbare Texte sind echte, editierbare Textknoten.",
+      "a": {
+        "status": "pass",
+        "observed": "65 TEXT-Knoten, editierbare Strings; AutoResize ['NONE']",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "56 TEXT-Knoten, editierbare Strings; AutoResize ['NONE']",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A07",
+      "classification": "explicit",
+      "statement": "Ein Bild oder eine bloße Bitmap genügt nicht.",
+      "a": {
+        "status": "pass",
+        "observed": "Bitmap-Fills 0, Vektornetze 0",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Bitmap-Fills 0, Vektornetze 0",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A08",
+      "classification": "explicit",
+      "statement": "Der Exporteur darf die Definitionsdateien nicht passend zum Ergebnis ändern.",
+      "a": {
+        "status": "pass",
+        "observed": "22/22 Dateihashes aus components/** stimmen mit beiden Builder-Manifesten und dem aktuellen Stand überein",
+        "note": "Das Revisionsschema von 1d83935f… ist aus den erlaubten Quellen nicht rekonstruierbar; geprüft wurde die Unverändertheit der 22 Dateien."
+      },
+      "b": {
+        "status": "pass",
+        "observed": "22/22 Dateihashes aus components/** stimmen mit beiden Builder-Manifesten und dem aktuellen Stand überein",
+        "note": "Das Revisionsschema von 1d83935f… ist aus den erlaubten Quellen nicht rekonstruierbar; geprüft wurde die Unverändertheit der 22 Dateien."
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A09",
+      "classification": "explicit",
+      "statement": "Fehlende Angaben werden als Lücke dokumentiert, nicht still ergänzt.",
+      "a": {
+        "status": "pass",
+        "observed": "REPORT A: 'Annahmen bei Mehrdeutigkeiten' 1–10 + 'Grenzen'; REPORT B: Annahmen 1–9 + Grenzen",
+        "note": "Beide offenbaren Kernentscheidungen (opening ohne Popup, Meldungszeile, disabled-Platzhalter, scroll-end-Offset); die 6/7-Alternative der Ergebniszahl wird von keinem erörtert."
+      },
+      "b": {
+        "status": "pass",
+        "observed": "REPORT A: 'Annahmen bei Mehrdeutigkeiten' 1–10 + 'Grenzen'; REPORT B: Annahmen 1–9 + Grenzen",
+        "note": "Beide offenbaren Kernentscheidungen (opening ohne Popup, Meldungszeile, disabled-Platzhalter, scroll-end-Offset); die 6/7-Alternative der Ergebniszahl wird von keinem erörtert."
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A10",
+      "classification": "derived",
+      "statement": "Teile sind verständlich benannt.",
+      "a": {
+        "status": "pass",
+        "observed": "Namen enthalten label/input/surface/viewport/list/option/status (A: 'overlay surface', 'scroll viewport'; B: 'overlay.surface', 'overlay.scroll.viewport')",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Namen enthalten label/input/surface/viewport/list/option/status (A: 'overlay surface', 'scroll viewport'; B: 'overlay.surface', 'overlay.scroll.viewport')",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A11",
+      "classification": "derived",
+      "statement": "Optionen sind über den fachlichen Key identifiziert, nicht über den Zeilenindex.",
+      "a": {
+        "status": "pass",
+        "observed": "Optionsnamen mit Key: ['berlin', 'hamburg', 'muenchen', 'dresden', 'koeln', 'wien', 'zuerich']",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Optionsnamen mit Key: ['berlin', 'hamburg', 'muenchen', 'dresden', 'koeln', 'wien', 'zuerich']",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A12",
+      "classification": "derived",
+      "statement": "Die Fallgruppe enthält die Komponente des Falls, keine fremden Komponentenkopien.",
+      "a": {
+        "status": "pass",
+        "observed": "je Fall maximal ein label/input/surface/list/status; Duplikate: keine",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "je Fall maximal ein label/input/surface/list/status; Duplikate: keine",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST01",
+      "classification": "explicit",
+      "statement": "closed: Popup nicht sichtbar, kein Platzverbrauch, Status ohne Meldung, Placeholder sichtbar.",
+      "a": {
+        "status": "pass",
+        "observed": "surface=False, status='', statusGap=8, input='Stadt suchen …', border=#CBD5E1",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "surface=False, status='', statusGap=8, input='Stadt suchen …', border=#CBD5E2",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST02",
+      "classification": "derived",
+      "statement": "opening: Popup geschlossen, aber Meldung „Suche wird geöffnet.“ im Status.",
+      "a": {
+        "status": "pass",
+        "observed": "surface=False, status='Suche wird geöffnet.', border=#2563EB",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "surface=False, status='Suche wird geöffnet.', border=#2563EB",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST03",
+      "classification": "explicit",
+      "statement": "loading: Popup sichtbar mit genau einer Meldungszeile, Status wiederholt den Text.",
+      "a": {
+        "status": "pass",
+        "observed": "options=0, message='Städte werden geladen.', status='Städte werden geladen.', input='Be', surface h=32",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "options=0, message='Städte werden geladen.', status='Städte werden geladen.', input='Be', surface h=32",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST04",
+      "classification": "explicit",
+      "statement": "ready: Popup mit 7 Ergebnissen, Viewport 160, keine aktive Option, Statusmeldung.",
+      "a": {
+        "status": "pass",
+        "observed": "options=7, viewport=160, sichtbar=5 voll/0 teil/2 außerhalb, highlight=keine, status='7 Städte verfügbar.', disabled=['muenchen']",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "options=7, viewport=160, sichtbar=5 voll/0 teil/2 außerhalb, highlight=keine, status='7 Städte verfügbar.', disabled=['muenchen']",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST05",
+      "classification": "explicit",
+      "statement": "active: genau Hamburg ist aktiv hervorgehoben.",
+      "a": {
+        "status": "pass",
+        "observed": "highlight=['hamburg'], Füllungen={'hamburg': ['#EAF2FF']}",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "highlight=['hamburg'], Füllungen={'hamburg': ['#EAF2FF']}",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST06",
+      "classification": "explicit",
+      "statement": "scroll-end: die aktive letzte Option ist tatsächlich im sichtbaren Viewport dargestellt.",
+      "a": {
+        "status": "pass",
+        "observed": "highlight=['zuerich'], Zürich full (128…160 im Viewport), options=7",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "highlight=['zuerich'], Zürich full (128…160 im Viewport), options=7",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST07",
+      "classification": "explicit",
+      "statement": "selected: geschlossen, Input zeigt das Label des Werts, Status nutzt die selected-Vorlage.",
+      "a": {
+        "status": "pass",
+        "observed": "surface=False, input='Berlin', status='Ausgewählt: Berlin.'",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "surface=False, input='Berlin', status='Ausgewählt: Berlin.'",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST08",
+      "classification": "explicit",
+      "statement": "empty: Popup mit Meldungszeile, Status wiederholt sie.",
+      "a": {
+        "status": "pass",
+        "observed": "options=0, message='Keine Städte gefunden.', input='Atlantis', status='Keine Städte gefunden.'",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "options=0, message='Keine Städte gefunden.', input='Atlantis', status='Keine Städte gefunden.'",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST09",
+      "classification": "explicit",
+      "statement": "error: Popup mit Fehlermeldung, Status wiederholt sie in Fehlerfarbe.",
+      "a": {
+        "status": "pass",
+        "observed": "message='Städte konnten nicht geladen werden.', status color=#B91C1C, input='Be'",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "message='Städte konnten nicht geladen werden.', status color=#B91C1C, input='Be'",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST10",
+      "classification": "explicit",
+      "statement": "disabled: deaktiviert, keine Popupteile sichtbar, kein Statustext.",
+      "a": {
+        "status": "pass",
+        "observed": "surface=False, status='', inputText=#94A3B8",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "surface=False, status='', inputText=#94A3B8",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST11",
+      "classification": "explicit",
+      "statement": "Die Fall-Phasen sind festgelegt: active/scroll-end = ready, selected/disabled = closed, übrige wie benannt.",
+      "a": {
+        "status": "pass",
+        "observed": "active/scroll-end erben ready-Fokus: True; Fokusfälle opening, loading, ready, active, scroll-end, empty, error",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "active/scroll-end erben ready-Fokus: True; Fokusfälle opening, loading, ready, active, scroll-end, empty, error",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "ST12",
+      "classification": "explicit",
+      "statement": "Sichtbarkeit von Popup und Expanded-Zustand folgt der Projektionstabelle.",
+      "a": {
+        "status": "pass",
+        "observed": "Popup sichtbar in ['loading', 'ready', 'active', 'scroll-end', 'empty', 'error']; Projektion erwartet ['loading', 'ready', 'active', 'scroll-end', 'empty', 'error']",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Popup sichtbar in ['loading', 'ready', 'active', 'scroll-end', 'empty', 'error']; Projektion erwartet ['loading', 'ready', 'active', 'scroll-end', 'empty', 'error']",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN01",
+      "classification": "explicit",
+      "statement": "Das Label steht sichtbar über dem Input.",
+      "a": {
+        "status": "pass",
+        "observed": "label.y=0 < input.y=28 in allen 10 Fällen; linke Kante jeweils 0",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "label.y=0 < input.y=28 in allen 10 Fällen; linke Kante jeweils 0",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN02",
+      "classification": "explicit",
+      "statement": "Der Input gehört zum Autocomplete und nimmt die Komponentenbreite ein.",
+      "a": {
+        "status": "pass",
+        "observed": "input 320×44, Fallbreite 320 (10/10)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "input 320×44, Fallbreite 320 (10/10)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN03",
+      "classification": "explicit",
+      "statement": "Listbox, Overlayfläche und Scrollviewport sind unterschiedliche Teile.",
+      "a": {
+        "status": "pass",
+        "observed": "surface, viewport und list sind drei verschiedene Knoten (6/6 Popup-Fälle)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "surface, viewport und list sind drei verschiedene Knoten (6/6 Popup-Fälle)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN04",
+      "classification": "derived",
+      "statement": "Das Popup enthält die ScrollArea; die Listbox liegt im Scrollinhalt.",
+      "a": {
+        "status": "pass",
+        "observed": "Kette option → list → scroll viewport → overlay surface → Fall (7/7 Optionen)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Kette option → list → scroll viewport → overlay surface → Fall (7/7 Optionen)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN05",
+      "classification": "explicit",
+      "statement": "Der Status steht außerhalb des Popups.",
+      "a": {
+        "status": "pass",
+        "observed": "status ist direkter Kindknoten des Fallcontainers, nicht der Surface",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "status ist direkter Kindknoten des Fallcontainers, nicht der Surface",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN06",
+      "classification": "explicit",
+      "statement": "Ein Overlay besitzt keine zweite Auswahlmaschine.",
+      "a": {
+        "status": "pass",
+        "observed": "genau eine list je Popup-Fall (6/6); keine zweite Auswahlmaschine",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "genau eine list je Popup-Fall (6/6); keine zweite Auswahlmaschine",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN07",
+      "classification": "derived",
+      "statement": "Die ScrollArea ist im Overlay verortet.",
+      "a": {
+        "status": "pass",
+        "observed": "viewport liegt deckungsgleich in der Surface (6/6)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "viewport liegt deckungsgleich in der Surface (6/6)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN08",
+      "classification": "derived",
+      "statement": "Die Optionen bilden eine vertikale Liste innerhalb der Listbox.",
+      "a": {
+        "status": "pass",
+        "observed": "alle 7 Optionen je Fall unter derselben list, in Ergebnisreihenfolge",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "alle 7 Optionen je Fall unter derselben list, in Ergebnisreihenfolge",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN09",
+      "classification": "explicit",
+      "statement": "Kein doppelter Optionssatz durch die Komposition.",
+      "a": {
+        "status": "pass",
+        "observed": "Optionszahlen: 7 in ready/active/scroll-end, 0 sonst",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Optionszahlen: 7 in ready/active/scroll-end, 0 sonst",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "AN10",
+      "classification": "derived",
+      "statement": "Eine Statusregion existiert auch ohne Meldung.",
+      "a": {
+        "status": "pass",
+        "observed": "Statusknoten in 10/10 Fällen vorhanden (Text in closed/disabled leer)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Statusknoten in 10/10 Fällen vorhanden (Text in closed/disabled leer)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX01",
+      "classification": "explicit",
+      "statement": "Jeder Fall zeigt das Label „Stadt auswählen“.",
+      "a": {
+        "status": "pass",
+        "observed": "label='Stadt auswählen' in 10/10 Fällen",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "label='Stadt auswählen' in 10/10 Fällen",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX02",
+      "classification": "explicit",
+      "statement": "Der Placeholder lautet exakt „Stadt suchen …“ und erscheint nur bei leerer Query.",
+      "a": {
+        "status": "pass",
+        "observed": "Placeholder 'Stadt suchen …' (U+2026), nur bei leerer Query: ['closed', 'opening', 'ready', 'active', 'scroll-end', 'disabled']",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Placeholder 'Stadt suchen …' (U+2026), nur bei leerer Query: ['closed', 'opening', 'ready', 'active', 'scroll-end', 'disabled']",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX03",
+      "classification": "explicit",
+      "statement": "Die Query-Anzeige entspricht den Story-Eingaben.",
+      "a": {
+        "status": "pass",
+        "observed": "Query-Anzeige je Fall: closed='Stadt suchen …', opening='Stadt suchen …', loading='Be', ready='Stadt suchen …', active='Stadt suchen …', scroll-end='Stadt suchen …', selected='Berlin', empty='Atlantis', error='Be', disabled='Stadt suchen …'",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Query-Anzeige je Fall: closed='Stadt suchen …', opening='Stadt suchen …', loading='Be', ready='Stadt suchen …', active='Stadt suchen …', scroll-end='Stadt suchen …', selected='Berlin', empty='Atlantis', error='Be', disabled='Stadt suchen …'",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX04",
+      "classification": "explicit",
+      "statement": "Die sieben Optionslabels lauten exakt wie definiert.",
+      "a": {
+        "status": "pass",
+        "observed": "7 Labels exakt: Berlin, Hamburg, München, Dresden, Köln, Wien, Zürich",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "7 Labels exakt: Berlin, Hamburg, München, Dresden, Köln, Wien, Zürich",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX05",
+      "classification": "explicit",
+      "statement": "Die Statustexte folgen den Meldungsvorlagen.",
+      "a": {
+        "status": "pass",
+        "observed": "Status: closed=''; opening='Suche wird geöffnet.'; loading='Städte werden geladen.'; ready='7 Städte verfügbar.'; active='7 Städte verfügbar.'; scroll-end='7 Städte verfügbar.'; selected='Ausgewählt: Berlin.'; empty='Keine Städte gefunden.'; error='Städte konnten nicht geladen werden.'; disabled=''",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Status: closed=''; opening='Suche wird geöffnet.'; loading='Städte werden geladen.'; ready='7 Städte verfügbar.'; active='7 Städte verfügbar.'; scroll-end='7 Städte verfügbar.'; selected='Ausgewählt: Berlin.'; empty='Keine Städte gefunden.'; error='Städte konnten nicht geladen werden.'; disabled=''",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX06",
+      "classification": "explicit",
+      "statement": "Bei loading, empty, error wiederholt die Statusregion den Text der Popupzeile.",
+      "a": {
+        "status": "pass",
+        "observed": "Popup-Meldung == Status in loading/empty/error",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Popup-Meldung == Status in loading/empty/error",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX07",
+      "classification": "derived",
+      "statement": "Sichtbare Texte stammen nur aus Inputs, Ergebnislabels und accessibility.rules.json.",
+      "a": {
+        "status": "pass",
+        "observed": "keine Zusatztexte in den Fallgruppen",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "keine Zusatztexte in den Fallgruppen",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX08",
+      "classification": "explicit",
+      "statement": "Umlaute und Ellipse bleiben unverändert.",
+      "a": {
+        "status": "pass",
+        "observed": "U+2026 in allen Placeholdern; München/Köln/Zürich mit Umlaut (Codepoints geprüft)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "U+2026 in allen Placeholdern; München/Köln/Zürich mit Umlaut (Codepoints geprüft)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TX09",
+      "classification": "explicit",
+      "statement": "Bei selected steht das Ergebnislabel zum Wert im Input.",
+      "a": {
+        "status": "pass",
+        "observed": "selected input='Berlin' (Label zu value=berlin)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "selected input='Berlin' (Label zu value=berlin)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO01",
+      "classification": "explicit",
+      "statement": "Die Komponente ist 320 px breit.",
+      "a": {
+        "status": "pass",
+        "observed": "Fallbreite 320 in 10/10",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Fallbreite 320 in 10/10",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO02",
+      "classification": "explicit",
+      "statement": "Der Input ist 44 px hoch.",
+      "a": {
+        "status": "pass",
+        "observed": "Inputhöhe 44 in 10/10",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Inputhöhe 44 in 10/10",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO03",
+      "classification": "explicit",
+      "statement": "Labelzeile 20 px hoch, darunter 8 px bis zum Input.",
+      "a": {
+        "status": "pass",
+        "observed": "label.h=20, labelGap=8 in 10/10",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "label.h=20, labelGap=8 in 10/10",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO04",
+      "classification": "explicit",
+      "statement": "Jede Optionszeile ist 32 px hoch und schrumpft nicht.",
+      "a": {
+        "status": "pass",
+        "observed": "Zeilenhöhen [32]",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Zeilenhöhen [32]",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO05",
+      "classification": "explicit",
+      "statement": "Die Viewporthöhe ist min(Ergebnisanzahl × 32, 160).",
+      "a": {
+        "status": "pass",
+        "observed": "Viewport 160 (Ergebnis), 32 (Meldung), keiner in closed-Fällen",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Viewport 160 (Ergebnis), 32 (Meldung), keiner in closed-Fällen",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO06",
+      "classification": "explicit",
+      "statement": "Das Popup sitzt mit Oberkante am Inputende + 8 px, gleicher Breite und linker Kante.",
+      "a": {
+        "status": "pass",
+        "observed": "surface.top−input.bottom=8, left=0, width=320 (6/6)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "surface.top−input.bottom=8, left=0, width=320 (6/6)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO07",
+      "classification": "explicit",
+      "statement": "Status: 8 px Abstand nach oben, Höhe 20 px.",
+      "a": {
+        "status": "pass",
+        "observed": "statusGap=8, Statushöhe=20 (10/10)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "statusGap=8, Statushöhe=20 (10/10)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO08",
+      "classification": "explicit",
+      "statement": "Input: 1 px Rahmen, Radius 8; Popup: kein Rahmen, Radius 8.",
+      "a": {
+        "status": "pass",
+        "observed": "Input radius 8, 1 px Stroke; Surface radius 8, 0 Strokes; Rahmenstärke 1",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Input radius 8, 1 px Stroke; Surface radius 8, 0 Strokes; Rahmenstärke 1",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO09",
+      "classification": "explicit",
+      "statement": "Der Status steht unter dem tatsächlich sichtbaren Popup, sonst unter dem Input.",
+      "a": {
+        "status": "pass",
+        "observed": "Status unter Popup bzw. unter Input; keine Überlappung",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Status unter Popup bzw. unter Input; keine Überlappung",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO10",
+      "classification": "explicit",
+      "statement": "Options-Innenabstand: 12 px horizontal, 6 px vertikal.",
+      "a": {
+        "status": "pass",
+        "observed": "Optionstext bei dx=12, dy=6 in 32-px-Zeile (7/7 je Fall)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Optionstext bei dx=12, dy=6 in 32-px-Zeile (7/7 je Fall)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO11",
+      "classification": "derived",
+      "statement": "Die Gesamthöhen folgen aus den Einzelmaßen.",
+      "a": {
+        "status": "pass",
+        "observed": "Fallhöhen: 100 / 140 / 268 px (Soll 100/124–144/268, ±4)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Fallhöhen: 100 / 140 / 268 px (Soll 100/124–144/268, ±4)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO12",
+      "classification": "explicit",
+      "statement": "Ein verborgener Popup belegt keinen Platz und überlappt den Input nicht.",
+      "a": {
+        "status": "pass",
+        "observed": "kein Reserveabstand: Status 8 px unter Input in closed/opening/selected/disabled",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "kein Reserveabstand: Status 8 px unter Input in closed/opening/selected/disabled",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "GEO13",
+      "classification": "explicit",
+      "statement": "Die Popupfläche trägt den definierten Schatten.",
+      "a": {
+        "status": "pass",
+        "observed": "DROP_SHADOW {'x': 0, 'y': 2} r=8 alpha=0.2",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "DROP_SHADOW {'x': 0, 'y': 2} r=8 alpha=0.2",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "CLIP01",
+      "classification": "derived",
+      "statement": "Ergebnis-Viewports clippen bei 160 px.",
+      "a": {
+        "status": "pass",
+        "observed": "ready/active/scroll-end: 5 volle Zeilen, 0 angeschnitten, 2 außerhalb",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "ready/active/scroll-end: 5 volle Zeilen, 0 angeschnitten, 2 außerhalb",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "CLIP02",
+      "classification": "explicit",
+      "statement": "Geclippte Ergebnislayer bleiben erhalten.",
+      "a": {
+        "status": "pass",
+        "observed": "7 Optionsknoten je Ergebnisfall, auch für Wien/Zürich (nicht gelöscht)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "7 Optionsknoten je Ergebnisfall, auch für Wien/Zürich (nicht gelöscht)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "CLIP03",
+      "classification": "explicit",
+      "statement": "In scroll-end ist die aktive letzte Option tatsächlich sichtbar.",
+      "a": {
+        "status": "pass",
+        "observed": "Zürich 128…160 (Viewport 0…160)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Zürich 128…160 (Viewport 0…160)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "CLIP04",
+      "classification": "derived",
+      "statement": "Kein Overscroll/Leerraum unter der letzten Zeile.",
+      "a": {
+        "status": "pass",
+        "observed": "letzte Zeile endet bei 160 px, kein Leerstreifen",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "letzte Zeile endet bei 160 px, kein Leerstreifen",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "CLIP05",
+      "classification": "explicit",
+      "statement": "Optionsinhalt ragt nicht sichtbar über Surface/Viewport hinaus.",
+      "a": {
+        "status": "pass",
+        "observed": "viewport.clipsContent=true (6/6); Surface clips=False",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "viewport.clipsContent=true (6/6); Surface clips=True",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "CLIP06",
+      "classification": "derived",
+      "statement": "Kein Label wird innerhalb einer Zeile abgeschnitten.",
+      "a": {
+        "status": "pass",
+        "observed": "Textbox 20 px in 32-px-Zeile (dy=6), vollständig innerhalb der Zeile; Rendering ohne Anschnitt",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Textbox 20 px in 32-px-Zeile (dy=6), vollständig innerhalb der Zeile; Rendering ohne Anschnitt",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "CLIP07",
+      "classification": "explicit",
+      "statement": "Das Popup wächst nicht über die maximale Höhe.",
+      "a": {
+        "status": "pass",
+        "observed": "Viewport ≤160 px in allen Popup-Fällen",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Viewport ≤160 px in allen Popup-Fällen",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "CLIP08",
+      "classification": "explicit",
+      "statement": "Der Status wird nicht vom Popup überdeckt.",
+      "a": {
+        "status": "pass",
+        "observed": "Status beginnt unterhalb der Surface (8 px), keine Überschneidung",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Status beginnt unterhalb der Surface (8 px), keine Überschneidung",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL01",
+      "classification": "explicit",
+      "statement": "Input- und Popupfläche sind weiß.",
+      "a": {
+        "status": "pass",
+        "observed": "Input und Surface #FFFFFF (10/10 bzw. 6/6)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Input und Surface #FFFFFF (10/10 bzw. 6/6)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL02",
+      "classification": "explicit",
+      "statement": "Label, Inputtext und Optionslabels nutzen die Textfarbe.",
+      "a": {
+        "status": "pass",
+        "observed": "Label #172B4D, Optionstext #172B4D, Inputtext (nicht Placeholder) #172B4D",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Label #172B4D, Optionstext #172B4D, Inputtext (nicht Placeholder) #172B4D",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL03",
+      "classification": "explicit",
+      "statement": "Der Placeholder ist gedämpft.",
+      "a": {
+        "status": "pass",
+        "observed": "Placeholder-Farben: closed=#64748B, opening=#64748B, ready=#64748B, active=#64748B, scroll-end=#64748B, disabled=#94A3B8 (disabled #94A3B8 laut AS15 zulässig)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Placeholder-Farben: closed=#64748B, opening=#64748B, ready=#64748B, active=#64748B, scroll-end=#64748B, disabled=#94A3B8 (disabled #94A3B8 laut AS15 zulässig)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL04",
+      "classification": "explicit",
+      "statement": "Ohne Fokuszustand ist der Input-Rahmen #CBD5E1.",
+      "a": {
+        "status": "pass",
+        "observed": "closed #CBD5E1, selected #CBD5E1 (Soll #CBD5E1)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "closed #CBD5E2, selected #CBD5E2 (Soll #CBD5E1)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL05",
+      "classification": "explicit",
+      "statement": "In opening, loading, ready, empty, error (inkl. active, scroll-end) ist der Input-Rahmen fokussiert.",
+      "a": {
+        "status": "pass",
+        "observed": "Fokus #2563EB in 7 Fällen, #CBD5E1 in closed/selected/disabled",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Fokus #2563EB in 7 Fällen, #CBD5E1 in closed/selected/disabled",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL06",
+      "classification": "explicit",
+      "statement": "Nur die aktive Option ist hervorgehoben.",
+      "a": {
+        "status": "pass",
+        "observed": "active ['hamburg'], scroll-end ['zuerich'], ready keine",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "active ['hamburg'], scroll-end ['zuerich'], ready keine",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL07",
+      "classification": "explicit",
+      "statement": "Deaktivierte Optionen sind farblich deaktiviert.",
+      "a": {
+        "status": "pass",
+        "observed": "München #94A3B8, andere Optionen #172B4D",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "München #94A3B8, andere Optionen #172B4D",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL08",
+      "classification": "explicit",
+      "statement": "Ein deaktivierter Input nutzt Disabled-Text und normalen Rahmen.",
+      "a": {
+        "status": "pass",
+        "observed": "disabled: text #94A3B8, Rahmen #CBD5E1",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "disabled: text #94A3B8, Rahmen #CBD5E2",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL09",
+      "classification": "explicit",
+      "statement": "Statusfarbe ist gedämpft, im Fehlerfall rot.",
+      "a": {
+        "status": "pass",
+        "observed": "Status #64748B, error #B91C1C",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Status #64748B, error #B91C1C",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL10",
+      "classification": "explicit",
+      "statement": "Die Popupfläche hat keine zusätzliche Kontur und keine abweichende Füllung.",
+      "a": {
+        "status": "pass",
+        "observed": "Surface: 0 Strokes, einfarbig weiß, kein Verlauf",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Surface: 0 Strokes, einfarbig weiß, kein Verlauf",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "COL11",
+      "classification": "derived",
+      "statement": "Es werden keine weiteren Farben still erfunden.",
+      "a": {
+        "status": "pass",
+        "observed": "alle Farben aus den acht Tokens (±3)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "alle Farben aus den acht Tokens (±3)",
+        "note": "B nutzt #CBD5E2 statt #CBD5E1 (Δ1, innerhalb Toleranz)"
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TY01",
+      "classification": "explicit",
+      "statement": "Die Komponente nutzt Inter.",
+      "a": {
+        "status": "pass",
+        "observed": "fonts=['Inter']",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "fonts=['Inter']",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TY02",
+      "classification": "explicit",
+      "statement": "Label, Input und Optionen sind 14 px groß.",
+      "a": {
+        "status": "pass",
+        "observed": "Label/Input/Option 14 px",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Label/Input/Option 14 px",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TY03",
+      "classification": "explicit",
+      "statement": "Der Status ist 12 px groß.",
+      "a": {
+        "status": "pass",
+        "observed": "Status 12 px",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Status 12 px",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TY04",
+      "classification": "explicit",
+      "statement": "Die Zeilenhöhe beträgt 20 px.",
+      "a": {
+        "status": "pass",
+        "observed": "lineHeight 20 für Label/Option/Status",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "lineHeight 20 für Label/Option/Status",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "TY05",
+      "classification": "derived",
+      "statement": "Kein Text wird durch zu große Schrift abgeschnitten oder umgebrochen.",
+      "a": {
+        "status": "pass",
+        "observed": "einseilige Texte, keine Truncation im Render; Textboxen 296 px bei 14 px Inter",
+        "note": "Glyphbreiten wurden nicht metrisch nachgerechnet; Render bestätigt volle Darstellung."
+      },
+      "b": {
+        "status": "pass",
+        "observed": "einseilige Texte, keine Truncation im Render; Textboxen 296 px bei 14 px Inter",
+        "note": "Glyphbreiten wurden nicht metrisch nachgerechnet; Render bestätigt volle Darstellung."
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A11Y01",
+      "classification": "derived",
+      "statement": "Der Input ist als Combobox ausgezeichnet.",
+      "a": {
+        "status": "fail",
+        "observed": "keine combobox-Rolle/-Annotation; Inputknoten heißt 'input'; pluginData nur layoutDirection/textDirection",
+        "note": ""
+      },
+      "b": {
+        "status": "fail",
+        "observed": "keine combobox-Rolle/-Annotation; Inputknoten heißt 'input'; pluginData nur layoutDirection/textDirection",
+        "note": ""
+      },
+      "pair": "beide fail"
+    },
+    {
+      "id": "A11Y02",
+      "classification": "derived",
+      "statement": "Die Listbox ist als solche benannt und trägt den Labelnamen.",
+      "a": {
+        "status": "fail",
+        "observed": "Listenknoten heißt 'list'/'overlay.scroll.viewport'; keine listbox-Annotation, kein zugänglicher Name 'Stadt auswählen'",
+        "note": ""
+      },
+      "b": {
+        "status": "fail",
+        "observed": "Listenknoten heißt 'list'/'overlay.scroll.viewport'; keine listbox-Annotation, kein zugänglicher Name 'Stadt auswählen'",
+        "note": ""
+      },
+      "pair": "beide fail"
+    },
+    {
+      "id": "A11Y03",
+      "classification": "derived",
+      "statement": "Optionen sind Optionen; aria-selected gilt nur der aktiven, aria-disabled folgt result.disabled.",
+      "a": {
+        "status": "fail",
+        "observed": "keine aria-selected/aria-disabled-Annotation; visuell: highlight=['hamburg'], disabled=['muenchen']",
+        "note": ""
+      },
+      "b": {
+        "status": "fail",
+        "observed": "keine aria-selected/aria-disabled-Annotation; visuell: highlight=['hamburg'], disabled=['muenchen']",
+        "note": ""
+      },
+      "pair": "beide fail"
+    },
+    {
+      "id": "A11Y04",
+      "classification": "derived",
+      "statement": "Der Status ist eine benannte Live-Region.",
+      "a": {
+        "status": "pass",
+        "observed": "Statusknoten heißt 'status'; Rolle/Live-Region nicht maschinenlesbar annotiert",
+        "note": "Namensbranch des Kriteriums erfüllt."
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Statusknoten heißt 'status'; Rolle/Live-Region nicht maschinenlesbar annotiert",
+        "note": "Namensbranch des Kriteriums erfüllt."
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A11Y05",
+      "classification": "explicit",
+      "statement": "Expanded folgt der Projektion.",
+      "a": {
+        "status": "pass",
+        "observed": "keine maschinenlesbare expanded-Annotation; Fallname (Autocomplete / <phase>) + Projektionstabelle bilden den Zustand ab",
+        "note": "Als 'dokumentierte Namenskonvention' gewertet, weil beide REPORTS die Konvention offenlegen (A Z.68, B Z.117); weiche Auslegung, siehe Grenzen."
+      },
+      "b": {
+        "status": "pass",
+        "observed": "keine maschinenlesbare expanded-Annotation; Fallname (Autocomplete / <phase>) + Projektionstabelle bilden den Zustand ab",
+        "note": "Als 'dokumentierte Namenskonvention' gewertet, weil beide REPORTS die Konvention offenlegen (A Z.68, B Z.117); weiche Auslegung, siehe Grenzen."
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A11Y06",
+      "classification": "derived",
+      "statement": "Popup und Viewport erhalten keine zusätzliche Rolle und keinen Tabstopp.",
+      "a": {
+        "status": "pass",
+        "observed": "keine Rollen am Viewport, keine zweite Combobox, keine zusätzlichen Tabstops",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "keine Rollen am Viewport, keine zweite Combobox, keine zusätzlichen Tabstops",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A11Y07",
+      "classification": "derived",
+      "statement": "Der zugängliche Name des Inputs stammt aus dem Label.",
+      "a": {
+        "status": "fail",
+        "observed": "Label ist Geschwistertext, keine Namensannotation/-verknüpfung am Input",
+        "note": ""
+      },
+      "b": {
+        "status": "fail",
+        "observed": "Label ist Geschwistertext, keine Namensannotation/-verknüpfung am Input",
+        "note": ""
+      },
+      "pair": "beide fail"
+    },
+    {
+      "id": "A11Y08",
+      "classification": "derived",
+      "statement": "Der Statustext ist sichtbar und nicht dekorativ versteckt.",
+      "a": {
+        "status": "pass",
+        "observed": "Statusknoten sichtbar (opacity 1), Text entspricht TX05",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Statusknoten sichtbar (opacity 1), Text entspricht TX05",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "A11Y09",
+      "classification": "explicit",
+      "statement": "Der Input behält den DOM-Fokus während der Tastaturnavigation.",
+      "a": {
+        "status": "n/a",
+        "observed": "statisch nicht prüfbar",
+        "note": ""
+      },
+      "b": {
+        "status": "n/a",
+        "observed": "statisch nicht prüfbar",
+        "note": ""
+      },
+      "pair": "n/a"
+    },
+    {
+      "id": "FREE01",
+      "classification": "underdetermined",
+      "statement": "Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei.",
+      "a": {
+        "status": "pass",
+        "observed": "Fälle in 2 Spalten (A) bzw. 5×2-Raster (B); Titel/Notizen nur außerhalb der Fallgruppen",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Fälle in 2 Spalten (A) bzw. 5×2-Raster (B); Titel/Notizen nur außerhalb der Fallgruppen",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE02",
+      "classification": "underdetermined",
+      "statement": "Namensstil der Ebenen ist frei.",
+      "a": {
+        "status": "pass",
+        "observed": "Namensstile 'overlay surface' vs. 'overlay.surface' – beide verständlich",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Namensstile 'overlay surface' vs. 'overlay.surface' – beide verständlich",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE03",
+      "classification": "underdetermined",
+      "statement": "Die Darstellung einer Scrollbar ist nicht festgelegt.",
+      "a": {
+        "status": "pass",
+        "observed": "keine Scrollbar gezeichnet (beide)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "keine Scrollbar gezeichnet (beide)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE04",
+      "classification": "underdetermined",
+      "statement": "Die Geometrie der Meldungszeile ist nicht im Detail festgelegt.",
+      "a": {
+        "status": "pass",
+        "observed": "Meldungszeile 32 px, Text bei dy=6, dx=12",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Meldungszeile 32 px, Text bei dy=6, dx=12",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE05",
+      "classification": "underdetermined",
+      "statement": "{count} ist nicht definiert (Ergebnisanzahl vs. auswählbare Anzahl).",
+      "a": {
+        "status": "pass",
+        "observed": "Status nutzt '7 Städte verfügbar.' (bevorzugter Wert)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Status nutzt '7 Städte verfügbar.' (bevorzugter Wert)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE06",
+      "classification": "underdetermined",
+      "statement": "Ob der Radius die Optionszeilen an den Ecken beschneidet, ist offen.",
+      "a": {
+        "status": "pass",
+        "observed": "A: Surface clipsContent=false; B: true (Radius beschneidet Zeilen)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "A: Surface clipsContent=false; B: true (Radius beschneidet Zeilen)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE07",
+      "classification": "underdetermined",
+      "statement": "Ein verborgener Popup kann als fehlender oder als unsichtbarer Knoten umgesetzt sein.",
+      "a": {
+        "status": "pass",
+        "observed": "verborgener Popup ist in closed/opening/selected/disabled nicht als Knoten vorhanden",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "verborgener Popup ist in closed/opening/selected/disabled nicht als Knoten vorhanden",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE08",
+      "classification": "underdetermined",
+      "statement": "Bei leerer Meldung ist der Statusinhalt leer; die Darstellung des leeren Knotens ist offen.",
+      "a": {
+        "status": "pass",
+        "observed": "leerer Statusknoten mit Höhe 20 in closed/disabled vorhanden",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "leerer Statusknoten mit Höhe 20 in closed/disabled vorhanden",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE09",
+      "classification": "underdetermined",
+      "statement": "Vertikale Textausrichtung in Input und Zeile ist nicht explizit.",
+      "a": {
+        "status": "pass",
+        "observed": "Inputtext dy=12, Optionstext dy=6, zentriert bzw. oberes Padding",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Inputtext dy=12, Optionstext dy=6, zentriert bzw. oberes Padding",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE10",
+      "classification": "underdetermined",
+      "statement": "Engine-Näherung des Schattens ist zulässig.",
+      "a": {
+        "status": "pass",
+        "observed": "Schatten exakt 0/2/8 bei Alpha 0.2",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Schatten exakt 0/2/8 bei Alpha 0.2",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE11",
+      "classification": "underdetermined",
+      "statement": "Die Meldungszeile kann im Viewport oder anstelle der Liste liegen.",
+      "a": {
+        "status": "pass",
+        "observed": "Meldungszeile liegt im Viewport (list/message-row)",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Meldungszeile liegt im Viewport (list/message-row)",
+        "note": ""
+      },
+      "pair": "beide pass"
+    },
+    {
+      "id": "FREE12",
+      "classification": "underdetermined",
+      "statement": "Seitenabstände zwischen Fällen sind frei; fallinterne Zusatzabstände sind nicht vorgesehen.",
+      "a": {
+        "status": "pass",
+        "observed": "Fallabstände frei; fallintern nur 8/20/32/44/160",
+        "note": ""
+      },
+      "b": {
+        "status": "pass",
+        "observed": "Fallabstände frei; fallintern nur 8/20/32/44/160",
+        "note": ""
+      },
+      "pair": "beide pass"
+    }
+  ],
+  "pairAgreement": {
+    "A_struct": 1.0,
+    "A_state": 1.0,
+    "A_vis": 1.0,
+    "score": 1.0,
+    "band": "hoch",
+    "weights": {
+      "struct": 0.3,
+      "state": 0.3,
+      "vis": 0.4
+    },
+    "featureCount": 199,
+    "mismatchedFeatures": [],
+    "subToleranceDifferences": [
+      {
+        "feature": "caseFrameType",
+        "a": "FRAME",
+        "b": "COMPONENT",
+        "note": "beide laut A04 zulässig"
+      },
+      {
+        "feature": "pages",
+        "a": [
+          "Autocomplete"
+        ],
+        "b": [
+          "Page 1",
+          "Autocomplete"
+        ],
+        "note": "B enthält zusätzlich eine leere Seite 'Page 1'"
+      },
+      {
+        "feature": "closed.inputStroke",
+        "a": "#CBD5E1",
+        "b": "#CBD5E2",
+        "note": "Δ1 pro Kanal"
+      },
+      {
+        "feature": "loading.surfaceClips",
+        "a": false,
+        "b": true,
+        "note": "FREE06/AS12: Radius-Clipping frei"
+      },
+      {
+        "feature": "ready.surfaceClips",
+        "a": false,
+        "b": true,
+        "note": "FREE06/AS12: Radius-Clipping frei"
+      },
+      {
+        "feature": "active.surfaceClips",
+        "a": false,
+        "b": true,
+        "note": "FREE06/AS12: Radius-Clipping frei"
+      },
+      {
+        "feature": "scroll-end.surfaceClips",
+        "a": false,
+        "b": true,
+        "note": "FREE06/AS12: Radius-Clipping frei"
+      },
+      {
+        "feature": "selected.inputStroke",
+        "a": "#CBD5E1",
+        "b": "#CBD5E2",
+        "note": "Δ1 pro Kanal"
+      },
+      {
+        "feature": "empty.surfaceClips",
+        "a": false,
+        "b": true,
+        "note": "FREE06/AS12: Radius-Clipping frei"
+      },
+      {
+        "feature": "error.surfaceClips",
+        "a": false,
+        "b": true,
+        "note": "FREE06/AS12: Radius-Clipping frei"
+      },
+      {
+        "feature": "disabled.inputStroke",
+        "a": "#CBD5E1",
+        "b": "#CBD5E2",
+        "note": "Δ1 pro Kanal"
+      },
+      {
+        "feature": "closed.inputTextX",
+        "a": 12,
+        "b": 13,
+        "note": "A 12 px, B 13 px (1-px-Rahmen); GEO10 regelt nur Optionen"
+      },
+      {
+        "feature": "closed.inputTextBoxW",
+        "a": 296,
+        "b": 294,
+        "note": "folgt aus dem 1-px-Rahmen"
+      },
+      {
+        "feature": "loading.inputTextX",
+        "a": 12,
+        "b": 13,
+        "note": "A 12 px, B 13 px (1-px-Rahmen); GEO10 regelt nur Optionen"
+      },
+      {
+        "feature": "loading.inputTextBoxW",
+        "a": 296,
+        "b": 294,
+        "note": "folgt aus dem 1-px-Rahmen"
+      },
+      {
+        "feature": "selected.inputTextX",
+        "a": 12,
+        "b": 13,
+        "note": "A 12 px, B 13 px (1-px-Rahmen); GEO10 regelt nur Optionen"
+      },
+      {
+        "feature": "selected.inputTextBoxW",
+        "a": 296,
+        "b": 294,
+        "note": "folgt aus dem 1-px-Rahmen"
+      },
+      {
+        "feature": "disabled.inputTextX",
+        "a": 12,
+        "b": 13,
+        "note": "A 12 px, B 13 px (1-px-Rahmen); GEO10 regelt nur Optionen"
+      },
+      {
+        "feature": "disabled.inputTextBoxW",
+        "a": 296,
+        "b": 294,
+        "note": "folgt aus dem 1-px-Rahmen"
+      },
+      {
+        "feature": "textAlignVertical",
+        "a": "TOP",
+        "b": "CENTER",
+        "note": "FREE09: vertikale Ausrichtung frei, Bounding-Box identisch"
+      }
+    ],
+    "jointlyFailed": [
+      "A11Y01",
+      "A11Y02",
+      "A11Y03",
+      "A11Y07"
+    ],
+    "asymmetric": [],
+    "convergentIncorrectness": false,
+    "interpretation": "Hohe Uebereinstimmung bedeutet gleiche Lesart der Definition, nicht Korrektheit. Freiheitsbereiche (Seitenlayout, Namensstil, Scrollbar, Radius-Clipping, Surface-Clip) sind ausgeschlossen."
+  },
+  "interruptions": {
+    "source": "Koordinator-Angabe (Provenienz-Metadaten), nicht aus Builder-Dateien rekonstruiert",
+    "builderA": [
+      {
+        "stop": 1,
+        "state": "nach reiner Analyse, nur _probe.mjs, keine Lieferung"
+      },
+      {
+        "stop": 2,
+        "state": "nach Erzeugung aller Artefakte ausser REPORT.md"
+      },
+      {
+        "stop": 3,
+        "state": "REPORT.md geschrieben, _probe.mjs entfernt"
+      }
+    ],
+    "builderB": [
+      {
+        "stop": 1,
+        "state": "nach reiner Analyse, keine Dateien"
+      },
+      {
+        "stop": 2,
+        "state": "6 von 7 Lieferungen plus Zwischenartefakt render-report.json"
+      },
+      {
+        "stop": 3,
+        "state": "REPORT.md geschrieben, Zwischenartefakt entfernt, generate.mjs erneut ausgefuehrt"
+      }
+    ],
+    "cause": "ausschliesslich Step-Limit des Agenten-Harness; keine verbotenen Eingaben",
+    "sessionContinuity": "jede Fortsetzung im eigenen vorherigen Kontext derselben Session",
+    "contextIsolation": "kein Builder sah den anderen, run-01 oder fruehere Ergebnisse; der Pruefer (Phase 1) war nicht betroffen",
+    "effectOnValidity": {
+      "holds": [
+        "Unabhaengigkeit der beiden Designs voneinander (getrennte Sessions, getrennte Kontexte)",
+        "Informationsgrenze: keine Hinweise auf verbotene Quellen in Dateien oder Berichten",
+        "Vergleichbarkeit: beide Ergebnisse entstanden aus derselben eingefrorenen Definition",
+        "pruefbare Artefakte: .fig, Renders und Messwerte existieren und sind reproduzierbar"
+      ],
+      "doesNotHold": [
+        "keine Behauptung eines ununterbrochenen Single-Shot-Laufs",
+        "keine Aussage ueber die Anzahl der tatsaechlich ausgefuehrten Zwischenschritte",
+        "keine Aussage darueber, ob ein einmaliger Lauf ohne Stop dasselbe Ergebnis erzeugt haette",
+        "A: _probe.mjs und B: render-report.json sind als Zwischenartefakte nicht mehr vorhanden und daher nicht pruefbar"
+      ],
+      "assessment": "Die Unterbrechungen mindern die Aussagekraft fuer Prozess-Reproduzierbarkeit (Single-Shot), nicht fuer die Bewertung der gelieferten Artefakte. Beide Laeufe bleiben kontextgetrennt; die Ergebnisse sind gueltige, aber nicht 'in einem Zug' entstandene Stichproben."
+    }
+  },
+  "builderSelfReports": {
+    "A": {
+      "report": "builder-a/REPORT.md",
+      "claimsChecked": {
+        "bytes": "60025 (bestaetigt)",
+        "nodes": "129 (bestaetigt)",
+        "textNodes": "65 (bestaetigt)",
+        "cases": "10 (bestaetigt)",
+        "allCasesMatch": "Selbstauskunft; unabhaengig nachgemessen",
+        "previewHash": "36a216a4… entspricht builder-a/preview.png; eigener Render (Scale 2) hat anderen Hash, s. Grenzen"
+      },
+      "disclosedLimits": [
+        "keine ARIA-Ausfuehrung",
+        "scroll-end statisch",
+        "Inter aus core/assets",
+        "Zeitstempel normalisiert"
+      ]
+    },
+    "B": {
+      "report": "builder-b/REPORT.md",
+      "claimsChecked": {
+        "bytes": "31306 (bestaetigt)",
+        "nodesOnPage": "119 (bestaetigt: totalNodes)",
+        "textNodes": "56 (bestaetigt)",
+        "optionNodes": "21 (bestaetigt)",
+        "inputBorder": "#CBD5E2 (bestaetigt, Δ1 zu Token #CBD5E1)",
+        "preview": "219034 Bytes; eigener Render ist byte-identisch (b6d935ee…)"
+      },
+      "disclosedLimits": [
+        "keine ARIA-Ausfuehrung",
+        "Renderer-Font-Fallback",
+        "ZIP-Zeitstempel -> Byte-Hash variiert",
+        "leere Seite Page 1"
+      ]
+    },
+    "discrepancies": [
+      "B: Input-Rahmen #CBD5E2 statt Token #CBD5E1 (Δ1, innerhalb Toleranz, in REPORT offengelegt)",
+      "B: leere Seite 'Page 1' im Dokument (kosmetisch, kein Kriterium)",
+      "B: Sheet 750 px hoch, scroll-end reicht 24 px darueber hinaus (Seitenlayout, frei)"
+    ]
+  },
+  "limits": [
+    "Der Revisionshash 1d83935f… ist mit den erlaubten Quellen nicht rekonstruierbar; geprueft wurde die Unveraendertheit der 22 Dateien gegen beide Manifeste und den aktuellen Stand.",
+    "ARIA-Rollen/Zustaende sind im .fig-Format dieser Toolchain nicht als Rollenfeld vorhanden; die Bewertung stuetzt sich auf Namen, Texte und visuelle Zustaende. Fehlende Annotationen sind als Abweichung ausgewiesen, nicht als Formatfehler.",
+    "A11Y05 wurde ueber die im REPORT offengelegte Namenskonvention (Fallname + Projektionstabelle) als erfuellt gewertet; das ist eine weiche Auslegung.",
+    "Schriftmetriken (Glyphbreiten) wurden nicht nachgerechnet; TY05 stuetzt sich auf den Render.",
+    "Die Renders nutzen die im System verfuegbare Inter-Aufloesung; minimale Glyphenabweichungen sind moeglich.",
+    "Visuelle Urteile (Schattenwirkung, Highlight-Wahrnehmung) sind am Render bei Scale 2 geprueft, nicht pixelmetrisch.",
+    "Die Unterbrechungen sind Koordinator-Angabe; Zwischenartefakte (_probe.mjs, render-report.json) sind nicht mehr vorhanden."
+  ],
+  "verdictSummary": {
+    "A": "PASS_MIT_ABWEICHUNGEN",
+    "B": "PASS_MIT_ABWEICHUNGEN",
+    "pairScore": 1.0,
+    "pairBand": "hoch"
+  }
+}

@@ -1,0 +1,800 @@
+{
+  "component": "Autocomplete 0.1.0 (ui-contracts:Autocomplete)",
+  "writer": "@open-pencil/core 0.16.0 · exportFigFile",
+  "reader": "@open-pencil/core 0.16.0 · parseFigFile",
+  "figFile": "autocomplete.fig",
+  "bytes": 60025,
+  "pageName": "Autocomplete",
+  "nodeCount": 129,
+  "pageCount": 1,
+  "frameCount": 10,
+  "textNodeCount": 65,
+  "editableTextNodeCount": 65,
+  "allTextNodesEditable": true,
+  "tokens": {
+    "width": 320,
+    "inputHeight": 44,
+    "rowHeight": 32,
+    "maxHeight": 160,
+    "gap": 8,
+    "labelGap": 8,
+    "statusGap": 8,
+    "lineHeight": 20,
+    "radius": 8,
+    "borderWidth": 1,
+    "paddingInline": 12,
+    "fontSize": 14,
+    "statusFontSize": 12,
+    "fontFamily": "Inter",
+    "colors": {
+      "surface": "#FFFFFF",
+      "text": "#172B4D",
+      "muted": "#64748B",
+      "border": "#CBD5E1",
+      "focus": "#2563EB",
+      "highlight": "#EAF2FF",
+      "disabled": "#94A3B8",
+      "error": "#B91C1C"
+    }
+  },
+  "cases": [
+    {
+      "id": "closed",
+      "frame": {
+        "name": "Autocomplete / closed",
+        "width": 320,
+        "height": 100
+      },
+      "popupVisible": false,
+      "popup": null,
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#CBD5E1",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Stadt suchen …",
+        "color": "#64748B",
+        "fontSize": 14,
+        "isPlaceholder": true
+      },
+      "viewport": null,
+      "contentOffsetY": null,
+      "contentHeight": null,
+      "options": [],
+      "messageRow": null,
+      "status": {
+        "characters": "",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 80,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": false,
+        "inputBorder": "#CBD5E1",
+        "inputText": "Stadt suchen …",
+        "status": "",
+        "statusColor": "#64748B",
+        "optionCount": null,
+        "activeOption": null,
+        "viewportHeight": null,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "opening",
+      "frame": {
+        "name": "Autocomplete / opening",
+        "width": 320,
+        "height": 100
+      },
+      "popupVisible": false,
+      "popup": null,
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#2563EB",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Stadt suchen …",
+        "color": "#64748B",
+        "fontSize": 14,
+        "isPlaceholder": true
+      },
+      "viewport": null,
+      "contentOffsetY": null,
+      "contentHeight": null,
+      "options": [],
+      "messageRow": null,
+      "status": {
+        "characters": "Suche wird geöffnet.",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 80,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": false,
+        "inputBorder": "#2563EB",
+        "inputText": "Stadt suchen …",
+        "status": "Suche wird geöffnet.",
+        "statusColor": "#64748B",
+        "optionCount": null,
+        "activeOption": null,
+        "viewportHeight": null,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "loading",
+      "frame": {
+        "name": "Autocomplete / loading",
+        "width": 320,
+        "height": 140
+      },
+      "popupVisible": true,
+      "popup": {
+        "width": 320,
+        "height": 32,
+        "y": 80,
+        "radius": 8,
+        "fill": "#FFFFFF",
+        "stroke": null
+      },
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#2563EB",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Be",
+        "color": "#172B4D",
+        "fontSize": 14,
+        "isPlaceholder": false
+      },
+      "viewport": {
+        "width": 320,
+        "height": 32,
+        "clip": true
+      },
+      "contentOffsetY": 0,
+      "contentHeight": 32,
+      "options": [],
+      "messageRow": {
+        "text": "Städte werden geladen.",
+        "height": 32
+      },
+      "status": {
+        "characters": "Städte werden geladen.",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 120,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": true,
+        "inputBorder": "#2563EB",
+        "inputText": "Be",
+        "status": "Städte werden geladen.",
+        "statusColor": "#64748B",
+        "optionCount": null,
+        "activeOption": null,
+        "viewportHeight": 32,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "ready",
+      "frame": {
+        "name": "Autocomplete / ready",
+        "width": 320,
+        "height": 268
+      },
+      "popupVisible": true,
+      "popup": {
+        "width": 320,
+        "height": 160,
+        "y": 80,
+        "radius": 8,
+        "fill": "#FFFFFF",
+        "stroke": null
+      },
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#2563EB",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Stadt suchen …",
+        "color": "#64748B",
+        "fontSize": 14,
+        "isPlaceholder": true
+      },
+      "viewport": {
+        "width": 320,
+        "height": 160,
+        "clip": true
+      },
+      "contentOffsetY": 0,
+      "contentHeight": 224,
+      "options": [
+        {
+          "name": "option berlin",
+          "key": "berlin",
+          "label": "Berlin",
+          "height": 32,
+          "y": 0,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option hamburg",
+          "key": "hamburg",
+          "label": "Hamburg",
+          "height": 32,
+          "y": 32,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option muenchen",
+          "key": "muenchen",
+          "label": "München",
+          "height": 32,
+          "y": 64,
+          "fill": null,
+          "textColor": "#94A3B8"
+        },
+        {
+          "name": "option dresden",
+          "key": "dresden",
+          "label": "Dresden",
+          "height": 32,
+          "y": 96,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option koeln",
+          "key": "koeln",
+          "label": "Köln",
+          "height": 32,
+          "y": 128,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option wien",
+          "key": "wien",
+          "label": "Wien",
+          "height": 32,
+          "y": 160,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option zuerich",
+          "key": "zuerich",
+          "label": "Zürich",
+          "height": 32,
+          "y": 192,
+          "fill": null,
+          "textColor": "#172B4D"
+        }
+      ],
+      "messageRow": null,
+      "status": {
+        "characters": "7 Städte verfügbar.",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 248,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": true,
+        "inputBorder": "#2563EB",
+        "inputText": "Stadt suchen …",
+        "status": "7 Städte verfügbar.",
+        "statusColor": "#64748B",
+        "optionCount": 7,
+        "activeOption": null,
+        "viewportHeight": 160,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "active",
+      "frame": {
+        "name": "Autocomplete / active",
+        "width": 320,
+        "height": 268
+      },
+      "popupVisible": true,
+      "popup": {
+        "width": 320,
+        "height": 160,
+        "y": 80,
+        "radius": 8,
+        "fill": "#FFFFFF",
+        "stroke": null
+      },
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#2563EB",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Stadt suchen …",
+        "color": "#64748B",
+        "fontSize": 14,
+        "isPlaceholder": true
+      },
+      "viewport": {
+        "width": 320,
+        "height": 160,
+        "clip": true
+      },
+      "contentOffsetY": 0,
+      "contentHeight": 224,
+      "options": [
+        {
+          "name": "option berlin",
+          "key": "berlin",
+          "label": "Berlin",
+          "height": 32,
+          "y": 0,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option hamburg",
+          "key": "hamburg",
+          "label": "Hamburg",
+          "height": 32,
+          "y": 32,
+          "fill": "#EAF2FF",
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option muenchen",
+          "key": "muenchen",
+          "label": "München",
+          "height": 32,
+          "y": 64,
+          "fill": null,
+          "textColor": "#94A3B8"
+        },
+        {
+          "name": "option dresden",
+          "key": "dresden",
+          "label": "Dresden",
+          "height": 32,
+          "y": 96,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option koeln",
+          "key": "koeln",
+          "label": "Köln",
+          "height": 32,
+          "y": 128,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option wien",
+          "key": "wien",
+          "label": "Wien",
+          "height": 32,
+          "y": 160,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option zuerich",
+          "key": "zuerich",
+          "label": "Zürich",
+          "height": 32,
+          "y": 192,
+          "fill": null,
+          "textColor": "#172B4D"
+        }
+      ],
+      "messageRow": null,
+      "status": {
+        "characters": "7 Städte verfügbar.",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 248,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": true,
+        "inputBorder": "#2563EB",
+        "inputText": "Stadt suchen …",
+        "status": "7 Städte verfügbar.",
+        "statusColor": "#64748B",
+        "optionCount": 7,
+        "activeOption": "hamburg",
+        "viewportHeight": 160,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "scroll-end",
+      "frame": {
+        "name": "Autocomplete / scroll-end",
+        "width": 320,
+        "height": 268
+      },
+      "popupVisible": true,
+      "popup": {
+        "width": 320,
+        "height": 160,
+        "y": 80,
+        "radius": 8,
+        "fill": "#FFFFFF",
+        "stroke": null
+      },
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#2563EB",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Stadt suchen …",
+        "color": "#64748B",
+        "fontSize": 14,
+        "isPlaceholder": true
+      },
+      "viewport": {
+        "width": 320,
+        "height": 160,
+        "clip": true
+      },
+      "contentOffsetY": -64,
+      "contentHeight": 224,
+      "options": [
+        {
+          "name": "option berlin",
+          "key": "berlin",
+          "label": "Berlin",
+          "height": 32,
+          "y": 0,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option hamburg",
+          "key": "hamburg",
+          "label": "Hamburg",
+          "height": 32,
+          "y": 32,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option muenchen",
+          "key": "muenchen",
+          "label": "München",
+          "height": 32,
+          "y": 64,
+          "fill": null,
+          "textColor": "#94A3B8"
+        },
+        {
+          "name": "option dresden",
+          "key": "dresden",
+          "label": "Dresden",
+          "height": 32,
+          "y": 96,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option koeln",
+          "key": "koeln",
+          "label": "Köln",
+          "height": 32,
+          "y": 128,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option wien",
+          "key": "wien",
+          "label": "Wien",
+          "height": 32,
+          "y": 160,
+          "fill": null,
+          "textColor": "#172B4D"
+        },
+        {
+          "name": "option zuerich",
+          "key": "zuerich",
+          "label": "Zürich",
+          "height": 32,
+          "y": 192,
+          "fill": "#EAF2FF",
+          "textColor": "#172B4D"
+        }
+      ],
+      "messageRow": null,
+      "status": {
+        "characters": "7 Städte verfügbar.",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 248,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": true,
+        "inputBorder": "#2563EB",
+        "inputText": "Stadt suchen …",
+        "status": "7 Städte verfügbar.",
+        "statusColor": "#64748B",
+        "optionCount": 7,
+        "activeOption": "zuerich",
+        "viewportHeight": 160,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "selected",
+      "frame": {
+        "name": "Autocomplete / selected",
+        "width": 320,
+        "height": 100
+      },
+      "popupVisible": false,
+      "popup": null,
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#CBD5E1",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Berlin",
+        "color": "#172B4D",
+        "fontSize": 14,
+        "isPlaceholder": false
+      },
+      "viewport": null,
+      "contentOffsetY": null,
+      "contentHeight": null,
+      "options": [],
+      "messageRow": null,
+      "status": {
+        "characters": "Ausgewählt: Berlin.",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 80,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": false,
+        "inputBorder": "#CBD5E1",
+        "inputText": "Berlin",
+        "status": "Ausgewählt: Berlin.",
+        "statusColor": "#64748B",
+        "optionCount": null,
+        "activeOption": null,
+        "viewportHeight": null,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "empty",
+      "frame": {
+        "name": "Autocomplete / empty",
+        "width": 320,
+        "height": 140
+      },
+      "popupVisible": true,
+      "popup": {
+        "width": 320,
+        "height": 32,
+        "y": 80,
+        "radius": 8,
+        "fill": "#FFFFFF",
+        "stroke": null
+      },
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#2563EB",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Atlantis",
+        "color": "#172B4D",
+        "fontSize": 14,
+        "isPlaceholder": false
+      },
+      "viewport": {
+        "width": 320,
+        "height": 32,
+        "clip": true
+      },
+      "contentOffsetY": 0,
+      "contentHeight": 32,
+      "options": [],
+      "messageRow": {
+        "text": "Keine Städte gefunden.",
+        "height": 32
+      },
+      "status": {
+        "characters": "Keine Städte gefunden.",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 120,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": true,
+        "inputBorder": "#2563EB",
+        "inputText": "Atlantis",
+        "status": "Keine Städte gefunden.",
+        "statusColor": "#64748B",
+        "optionCount": null,
+        "activeOption": null,
+        "viewportHeight": 32,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "error",
+      "frame": {
+        "name": "Autocomplete / error",
+        "width": 320,
+        "height": 140
+      },
+      "popupVisible": true,
+      "popup": {
+        "width": 320,
+        "height": 32,
+        "y": 80,
+        "radius": 8,
+        "fill": "#FFFFFF",
+        "stroke": null
+      },
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#2563EB",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Be",
+        "color": "#172B4D",
+        "fontSize": 14,
+        "isPlaceholder": false
+      },
+      "viewport": {
+        "width": 320,
+        "height": 32,
+        "clip": true
+      },
+      "contentOffsetY": 0,
+      "contentHeight": 32,
+      "options": [],
+      "messageRow": {
+        "text": "Städte konnten nicht geladen werden.",
+        "height": 32
+      },
+      "status": {
+        "characters": "Städte konnten nicht geladen werden.",
+        "fontSize": 12,
+        "color": "#B91C1C",
+        "y": 120,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": true,
+        "inputBorder": "#2563EB",
+        "inputText": "Be",
+        "status": "Städte konnten nicht geladen werden.",
+        "statusColor": "#B91C1C",
+        "optionCount": null,
+        "activeOption": null,
+        "viewportHeight": 32,
+        "frameWidth": 320
+      },
+      "match": true
+    },
+    {
+      "id": "disabled",
+      "frame": {
+        "name": "Autocomplete / disabled",
+        "width": 320,
+        "height": 100
+      },
+      "popupVisible": false,
+      "popup": null,
+      "input": {
+        "width": 320,
+        "height": 44,
+        "y": 28,
+        "borderColor": "#CBD5E1",
+        "strokeWeight": 1,
+        "radius": 8,
+        "fill": "#FFFFFF"
+      },
+      "inputText": {
+        "characters": "Stadt suchen …",
+        "color": "#94A3B8",
+        "fontSize": 14,
+        "isPlaceholder": true
+      },
+      "viewport": null,
+      "contentOffsetY": null,
+      "contentHeight": null,
+      "options": [],
+      "messageRow": null,
+      "status": {
+        "characters": "",
+        "fontSize": 12,
+        "color": "#64748B",
+        "y": 80,
+        "height": 20
+      },
+      "expectation": {
+        "popupVisible": false,
+        "inputBorder": "#CBD5E1",
+        "inputText": "Stadt suchen …",
+        "status": "",
+        "statusColor": "#64748B",
+        "optionCount": null,
+        "activeOption": null,
+        "viewportHeight": null,
+        "frameWidth": 320
+      },
+      "match": true
+    }
+  ],
+  "allCasesMatch": true
+}

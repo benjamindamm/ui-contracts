@@ -1,6 +1,6 @@
 # Lokaler Agent-Skill · UI Contracts
 
-Stand: 26. Oktober 2026. **`$ui-contracts` ist erstellt, lokal unter `~/.codex/skills/ui-contracts` verfügbar und geprüft.** Die wiederverwendbare Projektquelle liegt unter [skills/ui-contracts/](../../skills/ui-contracts/SKILL.md). Es wurde kein vorhandener fremder Skill überschrieben und nichts veröffentlicht.
+Stand: 29. Oktober 2026. **`$ui-contracts` ist erstellt, lokal unter `~/.codex/skills/ui-contracts` verfügbar und geprüft.** Die wiederverwendbare Projektquelle liegt unter [skills/ui-contracts/](../../skills/ui-contracts/SKILL.md). Es wurde kein vorhandener fremder Skill überschrieben und nichts veröffentlicht.
 
 Beispielauftrag:
 
@@ -25,9 +25,10 @@ Ein fehlender notwendiger Prüfer oder fehlende erforderliche Abdeckung blockier
 | [agents/openai.yaml](../../skills/ui-contracts/agents/openai.yaml) | UI-Metadaten und Beispielaufruf; automatische Auswahl bleibt im Standard erlaubt |
 | [references/authoring.md](../../skills/ui-contracts/references/authoring.md) | Originalformate, Quellführung und neue/geänderte Artefakte |
 | [references/validation.md](../../skills/ui-contracts/references/validation.md) | Reale Prüfeinstiege und Browserablauf |
+| [references/reproducibility.md](../../skills/ui-contracts/references/reproducibility.md) | Reproduktions-/Modellvergleich, Provenienz und externe Analyse |
 | [scripts/contracts.py](../../skills/ui-contracts/scripts/contracts.py) | Portabler Aufruf mit explizitem `--repo`, strukturierte Prüfung/Blockierung |
 
-Der installierte Bestand entspricht diesen fünf Dateien bytegenau. Ein Repositorypfad ist nicht fest in den Skill eingebaut; der Helper findet das ausgewählte Projekt im Arbeitsverzeichnis oder erhält es ausdrücklich über `--repo`. Abhängigkeiten und Laufzeit liegen weiterhin beim jeweiligen Projekt.
+Der installierte Bestand entspricht diesen sechs Dateien bytegenau. Ein Repositorypfad ist nicht fest in den Skill eingebaut; der Helper findet das ausgewählte Projekt im Arbeitsverzeichnis oder erhält es ausdrücklich über `--repo`. Abhängigkeiten und Laufzeit liegen weiterhin beim jeweiligen Projekt.
 
 Die lokale Installation ist eine Kopie. Spätere Änderungen der Projektquelle aktualisieren sie nicht automatisch. Vor einem Update Identität und Änderungen prüfen; keinen anderen gleichnamigen Skill ungeprüft überschreiben.
 
@@ -41,3 +42,9 @@ Die lokale Installation ist eine Kopie. Spätere Änderungen der Projektquelle a
 Diese Tests prüfen den installierten Helper und seine realen Prüfeinstiege. Sie sind kein unabhängiger Agenten-Forwardtest und keine allgemeine Aussage über Modellqualität. Es wurde kein neuer Browserlauf für die Skillerstellung behauptet: Der positive Webfall prüfte den unveränderten, zum Testzeitpunkt noch gültigen vorhandenen Lauf. Nach dessen Ablauf muss eine aktuelle Prüfung wieder blockieren und ein neuer Browserlauf erfolgen.
 
 [Integrität und Validierungsnachweise](../../tools/skill-tests/ui-contracts/manifest.json). Keine neuen Kandidatenmatrixbedingungen, keine Produktionskomponente und keine Veröffentlichung.
+
+## Aus AC-R02 abgeleitete Reparaturen
+
+Die [externe Analyse](../research/analyses/AC-R02/README.md) zeigt eine falsche Quellauslegung und Prüflücken. [Fehlerregister](ISSUES.md) und [Laufprotokollvertrag](REPRODUCIBILITY.md) halten jede Ursache, aktuelle Gegenmaßnahme, Regression und offene Grenze fest. Die neue Skillreferenz wird nur für diese Arbeitsart geladen. Eine tatsächliche Nutzung des bisherigen Skills durch die historischen Builder ist nicht belegt.
+
+Der [begrenzte native Gegenprüfer](../../tools/design-review/README.md) und der Metadatenprüfer haben eigene Regressionen; sie verändern weder den historischen run-02 noch die feste Webvalidierung. Die ursprünglichen 18 Helper-Testfälle und ihr damaliges Manifest bleiben historische Belege der damaligen Fassung; sie sind kein vollständiger Nachweis für die neuen Reviewfunktionen. Aktuelle Nachweise stehen separat unter [AC-R02 setup-verification.json](../research/analyses/AC-R02/setup-verification.json).

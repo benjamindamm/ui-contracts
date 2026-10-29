@@ -18,3 +18,6 @@ __pycache__/
 
 # Lokale Laufzeit der gemeinsamen Prüfkette
 .venv/
+
+# Lokales SSH-Tunnel-Skript
+/scripts/openpencil-storage-tunnel.sh

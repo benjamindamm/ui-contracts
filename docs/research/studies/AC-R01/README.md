@@ -10,7 +10,7 @@ Zwei neue Agenten ohne übernommenen Gesprächskontext erzeugten aus derselben e
 
 Kann eine gemeinsame Definition getrennte Agenten zu konformen und vergleichbaren Designs führen? Untersucht wurden **zwei Erzeugungen einer Komponente** mit je zehn statisch dargestellten Fällen. Die Definition umfasst 22 Dateien der Bibliothek `components/`, eingefroren auf Revision `1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727`. Beide Builder nutzten dieselbe gepinnte OpenPencil-Werkzeugbasis 0.16.0 und erhielten getrennte Ausgabeordner.
 
-Die Kontextübernahme war bei beiden Buildern und dem Prüfer deaktiviert. Frühere Designs und die jeweils andere Ausgabe waren keine erlaubten Eingaben. Diese Trennung beruhte auf Auftragsvorgaben; eine physische Dateisystemsandbox bestand nicht. Die genaue Modellrevision und Seeds wurden nicht erfasst. Unterschiedliche Modelle oder statistische Unabhängigkeit werden nicht behauptet.
+Die Kontextübernahme war bei beiden Buildern und dem Prüfer deaktiviert. Frühere Designs und die jeweils andere Ausgabe waren keine erlaubten Eingaben. Diese Trennung beruhte auf Auftragsvorgaben; eine physische Dateisystemsandbox bestand nicht. Als Modellkonfiguration für diesen Lauf ist **GPT-6.1 Sol · Reasoning: Medium** dokumentiert (nachträgliche Nutzerangabe vom 29. Oktober 2026). Diese Angabe wurde nicht aus damaligen Laufzeitprotokollen verifiziert; eine gesonderte Modellzuordnung pro Builder beziehungsweise Prüfer ist nicht belegt. Die genaue Modellrevision und Seeds wurden nicht erfasst. Unterschiedliche Modelle oder statistische Unabhängigkeit werden nicht behauptet.
 
 Der Prüfer leitete Kriterien ausschließlich aus der Definition ab. Ihre Hashes wurden vor seiner Einsicht in Builder-Ausgaben versiegelt. Dies ist eine lokale Vorabfestlegung, keine öffentliche Präregistrierung. Die Entscheidung, den Versuch als Studie zu dokumentieren, fiel nach Beginn der Builds; Eingaben und Kriterien wurden deswegen nicht geändert. Anschließend las und renderte der Prüfer zunächst die tatsächlichen FIG-Dateien mit den Originalwerkzeugen; erst danach las er die Builderberichte. Das [Studienprotokoll](PROTOCOL.md) beschreibt Ablauf, Forschungsfragen und Grenzen ausführlich.
 
@@ -61,6 +61,10 @@ Zwei Erzeugungen derselben Komponente und Werkzeug-/Modellkonfiguration erlauben
 - [Unabhängiger Prüfbericht](../../../../examples/autocomplete/reproducibility/run-01/review/REVIEW.md), [Ergebnisdaten](../../../../examples/autocomplete/reproducibility/run-01/review/results.json), [Einzelmessungen](../../../../examples/autocomplete/reproducibility/run-01/review/native-checks.json)
 - Unabhängige Originalrenders: [A](../../../../examples/autocomplete/reproducibility/run-01/review/render-a.png), [B](../../../../examples/autocomplete/reproducibility/run-01/review/render-b.png)
 - [Hashes der geprüften Artefakte und Review-Belege](../../../../examples/autocomplete/reproducibility/run-01/review/hashes.json); [ergänzendes Studienmanifest](evidence-manifest.json)
+
+## Vergleich über Modelle hinweg
+
+AC-R01 ist ein Ausgangspunkt für spätere Modellvergleiche, kein bereits ausgeführter Vergleich unterschiedlicher Modelle. Das [Studienregister](../../STUDIES.md) führt Modellkonfiguration und Ergebnis gemeinsam. Für weitere abgeschlossene Läufe sind Modell und Reasoning-Stufe je Builder und Prüfer, eingefrorene Definitionsrevision, Werkzeugstand, Kontextübernahme und Prüfkriterien festzuhalten. Definitionstreue und Paarübereinstimmung sind getrennt auszuwerten; Änderungen an Definition oder Werkzeugen müssen als mögliche Einflussfaktoren sichtbar bleiben.
 
 ## Folgestudie als Vorschlag
 

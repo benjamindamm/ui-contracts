@@ -6,6 +6,10 @@ Zwei neue Agenten bauen unabhängig voneinander ein editierbares OpenPencil-Desi
 
 [run.json](run.json) bindet alle 22 Definitionsdateien, die Definitionsrevision und den Werkzeug-Lock. Die Builder haben denselben Auftrag, jeweils einen eigenen Ausgabeordner und keinen Zugriff auf frühere Designs oder die Ausgabe des anderen im erlaubten Arbeitsumfang. Die Kontextübernahme ist bei allen drei Agenten deaktiviert. Die Dateigrenzen sind Auftragsvorgaben, keine zusätzliche Dateisystemsandbox. Gleiche Modelle können gemeinsame blinde Flecken haben; ein universeller statistischer Unabhängigkeitsnachweis wird nicht behauptet.
 
+## Modellkonfiguration
+
+**GPT-6.1 Sol · Reasoning: Medium**, nachträglich vom Nutzer am 29. Oktober 2026 angegeben. Die historischen Laufzeitprotokolle wurden hierfür nicht verifiziert; eine eigene Modellzuordnung je Builder und Prüfer sowie genaue Modellrevision und Seeds sind nicht belegt. Diese Ergänzung verändert weder die eingefrorenen Eingaben noch die ursprünglichen Prüfergebnisse. Modellkonfiguration und Ergebnis sind auch im [Studienregister](../../../../docs/research/STUDIES.md) aufgeführt. Ein Vergleich mit anderen Modellen steht noch aus.
+
 ## Ablauf
 
 1. Eingabeversion einfrieren und Hashes prüfen.

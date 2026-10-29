@@ -1,0 +1,1483 @@
+{
+  "run": "run-02",
+  "phase": "phase-1-preregistration",
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "status": "frozen-before-builder-outputs",
+  "permittedSources": [
+    "components/** (22 Dateien)",
+    "tools/openpencil/README.md",
+    "tools/openpencil/package.json"
+  ],
+  "excludedSources": [
+    "examples/autocomplete/reproducibility/run-01/**",
+    "examples/autocomplete/output/**",
+    "examples/autocomplete/review/**",
+    "examples/autocomplete/reference.json",
+    "docs/**",
+    "scripts/**",
+    "README.md (Repo-Root)",
+    "TASKS.md (Repo-Root)",
+    "Git-Historie"
+  ],
+  "derivedSollwerte": {
+    "tokens": {
+      "width": 320,
+      "inputHeight": 44,
+      "fontSize": 14,
+      "statusFontSize": 12,
+      "lineHeight": 20,
+      "labelGap": 8,
+      "gap": 8,
+      "statusGap": 8,
+      "rowHeight": 32,
+      "maxHeight": 160,
+      "radius": 8,
+      "borderWidth": 1,
+      "paddingInline": 12,
+      "fontFamily": "Inter"
+    },
+    "colorsHex": {
+      "surface": "#FFFFFF",
+      "text": "#172B4D",
+      "muted": "#64748B",
+      "border": "#CBD5E1",
+      "focus": "#2563EB",
+      "highlight": "#EAF2FF",
+      "disabled": "#94A3B8",
+      "error": "#B91C1C"
+    },
+    "shadow": {
+      "offsetX": 0,
+      "offsetY": 2,
+      "blur": 8,
+      "color": "#000000",
+      "alpha": 0.2,
+      "note": "aus #0003, overlay/layout.css"
+    },
+    "computed": {
+      "resultListContentHeight": 224,
+      "viewportHeightResultList": 160,
+      "fullyVisibleRows": 5,
+      "fullyClippedRows": 2,
+      "maxScrollOffset": 64,
+      "heightWithoutPopup": 100,
+      "heightWithResultPopup": 268,
+      "heightWithMessageRow": "124-144 (Standard 140 bei H=32)"
+    },
+    "results": [
+      {
+        "key": "berlin",
+        "label": "Berlin"
+      },
+      {
+        "key": "hamburg",
+        "label": "Hamburg"
+      },
+      {
+        "key": "muenchen",
+        "label": "München",
+        "disabled": true
+      },
+      {
+        "key": "dresden",
+        "label": "Dresden"
+      },
+      {
+        "key": "koeln",
+        "label": "Köln"
+      },
+      {
+        "key": "wien",
+        "label": "Wien"
+      },
+      {
+        "key": "zuerich",
+        "label": "Zürich"
+      }
+    ],
+    "caseMatrix": [
+      {
+        "case": "closed",
+        "phase": "closed",
+        "inputDisplay": "placeholder",
+        "popup": false,
+        "visibleRows": 0,
+        "activeKey": null,
+        "statusText": "",
+        "inputBorder": "#CBD5E1",
+        "statusColor": "#64748B"
+      },
+      {
+        "case": "opening",
+        "phase": "opening",
+        "inputDisplay": "placeholder",
+        "popup": false,
+        "visibleRows": 0,
+        "activeKey": null,
+        "statusText": "Suche wird geöffnet.",
+        "inputBorder": "#2563EB",
+        "statusColor": "#64748B"
+      },
+      {
+        "case": "loading",
+        "phase": "loading",
+        "inputDisplay": "Be",
+        "popup": true,
+        "visibleRows": 1,
+        "activeKey": null,
+        "statusText": "Städte werden geladen.",
+        "inputBorder": "#2563EB",
+        "statusColor": "#64748B"
+      },
+      {
+        "case": "ready",
+        "phase": "ready",
+        "inputDisplay": "placeholder",
+        "popup": true,
+        "visibleRows": 5,
+        "activeKey": null,
+        "statusText": "7 Städte verfügbar.",
+        "inputBorder": "#2563EB",
+        "statusColor": "#64748B"
+      },
+      {
+        "case": "active",
+        "phase": "ready",
+        "inputDisplay": "placeholder",
+        "popup": true,
+        "visibleRows": 5,
+        "activeKey": "hamburg",
+        "statusText": "7 Städte verfügbar.",
+        "inputBorder": "#2563EB",
+        "statusColor": "#64748B"
+      },
+      {
+        "case": "scroll-end",
+        "phase": "ready",
+        "inputDisplay": "placeholder",
+        "popup": true,
+        "visibleRows": 5,
+        "activeKey": "zuerich",
+        "statusText": "7 Städte verfügbar.",
+        "inputBorder": "#2563EB",
+        "statusColor": "#64748B"
+      },
+      {
+        "case": "selected",
+        "phase": "closed",
+        "inputDisplay": "Berlin",
+        "popup": false,
+        "visibleRows": 0,
+        "activeKey": null,
+        "statusText": "Ausgewählt: Berlin.",
+        "inputBorder": "#CBD5E1",
+        "statusColor": "#64748B"
+      },
+      {
+        "case": "empty",
+        "phase": "empty",
+        "inputDisplay": "Atlantis",
+        "popup": true,
+        "visibleRows": 1,
+        "activeKey": null,
+        "statusText": "Keine Städte gefunden.",
+        "inputBorder": "#2563EB",
+        "statusColor": "#64748B"
+      },
+      {
+        "case": "error",
+        "phase": "error",
+        "inputDisplay": "Be",
+        "popup": true,
+        "visibleRows": 1,
+        "activeKey": null,
+        "statusText": "Städte konnten nicht geladen werden.",
+        "inputBorder": "#2563EB",
+        "statusColor": "#B91C1C"
+      },
+      {
+        "case": "disabled",
+        "phase": "closed",
+        "inputDisplay": "placeholder",
+        "popup": false,
+        "visibleRows": 0,
+        "activeKey": null,
+        "statusText": "",
+        "inputBorder": "#CBD5E1",
+        "statusColor": "#64748B"
+      }
+    ]
+  },
+  "criteria": [
+    {
+      "id": "A01",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Exportrahmen (Z.32-34)",
+      "statement": "Das Ergebnis ist ein tatsächlich öffnbares OpenPencil-Dokument, keine umbenannte JSON-Datei und kein reiner Speichergraph.",
+      "expected": "Datei lädt mit @open-pencil/core 0.16.0; Szenengraph mit mindestens 10 Frames auslesbar; Loader-Fehler = Verstoß.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Dokument mit gepinnter Toolchain öffnen, Szenengraph traversieren, Fehler protokollieren."
+    },
+    {
+      "id": "A02",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.28; components/autocomplete/stories.json › stories[]",
+      "statement": "Genau die zehn benannten Fälle sind als Gruppen vorhanden.",
+      "expected": "10 Fallgruppen mit normalisierten Namen, die closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled enthalten; keine fehlt, keine elfte Zustandsgruppe.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Fallgruppen extrahieren, Namen normalisieren, Mengenvergleich mit den 10 IDs."
+    },
+    {
+      "id": "A03",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.28",
+      "statement": "active, scroll-end, selected und disabled sind keine zusätzlich unabhängig geführten SCXML-Zustände.",
+      "expected": "Keine Fallgruppe trägt einen erfundenen Zustandsnamen außerhalb der zehn IDs; Zusatzgruppen nur als frei dekorative Seitenelemente.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Gruppennamen und Metadaten gegen die zehn IDs und die SCXML-Zustandsliste prüfen."
+    },
+    {
+      "id": "A04",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Exportrahmen (Z.32)",
+      "statement": "Jeder Fall ist als Komponenten-/Framelayergruppe benannt.",
+      "expected": "Pro Fall ein Container-Knoten (Frame/Component/Group) mit Fall-ID im Namen, der die Fallinhalte enthält.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Für jede Fall-ID Container-Knoten und Vollständigkeit der Kindknoten prüfen."
+    },
+    {
+      "id": "A05",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.32; components/autocomplete/component.json › anatomy; components/autocomplete/interface.json › cssParts",
+      "statement": "Label, Input, Overlayfläche, Scrollviewport, Listbox, jede Option und Status bleiben separat editierbar und benannt.",
+      "expected": "Getrennte Knoten für label, input, surface (nur Popup-Fälle), viewport (nur Popup-Fälle), list (Ergebnis-/Meldungsfälle), je eine Option pro Ergebnis und status; kein Zusammenfall.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Knotenbaum je Fall auf Pflichtteile und deren Trennung prüfen."
+    },
+    {
+      "id": "A06",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.34; components/autocomplete/component.json › targetScope",
+      "statement": "Sichtbare Texte sind echte, editierbare Textknoten.",
+      "expected": "Jeder geforderte Text als Textobjekt mit editierbarem String; keine Vektorpfade, keine Outline-Konvertierung, kein eingebettetes Bild für Text.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Knotentyp und editierbares Textfeld je Textknoten prüfen."
+    },
+    {
+      "id": "A07",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.34",
+      "statement": "Ein Bild oder eine bloße Bitmap genügt nicht.",
+      "expected": "Kein Fall als Rasterbild/Screenshot; Bitmap-Anteil der Komponente 0 (Seitenhintergrund/Notizen ausgenommen).",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Image-/Bitmap-Knoten innerhalb der Fallgruppen zählen und deren Abdeckung prüfen."
+    },
+    {
+      "id": "A08",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.34; components/README.md › Z.20",
+      "statement": "Der Exporteur darf die Definitionsdateien nicht passend zum Ergebnis ändern.",
+      "expected": "SHA-256 über components/** entspricht der Revision 1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727; Abweichung = Verstoß.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Dateihashes über components/** bilden und mit der eingefrorenen Revision vergleichen."
+    },
+    {
+      "id": "A09",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.34; components/README.md › Z.20",
+      "statement": "Fehlende Angaben werden als Lücke dokumentiert, nicht still ergänzt.",
+      "expected": "Für jede einschlägige Unterbestimmtheit aus Abschnitt 6 existiert eine kurze schriftliche Offenlegung; stilles Erfinden = Verstoß.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Exportnotizen/README des Laufs gegen die Liste der Unterbestimmtheiten abgleichen."
+    },
+    {
+      "id": "A10",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.32",
+      "statement": "Teile sind verständlich benannt.",
+      "expected": "Normalisierter Knotenname enthält label, input, surface/popup, viewport/scroll, list/listbox, option oder status (deutsche Synonyme zulässig); Stil frei.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Namensnormalisierung und Token-Enthaltensein prüfen."
+    },
+    {
+      "id": "A11",
+      "group": "artefakt",
+      "source": "components/autocomplete/component.json › viewSemantics.repeatedPartIdentity; README Z.20",
+      "statement": "Optionen sind über den fachlichen Key identifiziert, nicht über den Zeilenindex.",
+      "expected": "Je Ergebnis genau ein Optionsknoten; Name/Metadatum enthält den Key oder ist eindeutig dem Label zuordenbar; keine reine row-1..7-Benennung.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Optionsknoten je Key zuordnen; Namensmuster prüfen."
+    },
+    {
+      "id": "A12",
+      "group": "artefakt",
+      "source": "components/autocomplete/README.md › Z.32",
+      "statement": "Die Fallgruppe enthält die Komponente des Falls, keine fremden Komponentenkopien.",
+      "expected": "Innerhalb einer Fallgruppe höchstens ein Label, ein Input, eine Popupfläche, eine Listbox, ein Status; freie Hinweise außerhalb.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Kindknoten der Fallgruppe zählen und duplizierte Pflichtteile finden."
+    },
+    {
+      "id": "ST01",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › closed; accessibility.rules.json › projections.closed; README Z.28",
+      "statement": "closed: Popup nicht sichtbar, kein Platzverbrauch, Status ohne Meldung, Placeholder sichtbar.",
+      "expected": "Keine sichtbare Popupfläche/Liste/Option; Status 8 px unter Input; Statustext leer; Input zeigt Placeholder; Rahmen #CBD5E1.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Sichtbarkeit der Popupteile, Statusabstand, Statustext und Rahmenfarbe prüfen."
+    },
+    {
+      "id": "ST02",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › opening; accessibility.rules.json › messages.opening, projections.opening; README Z.24",
+      "statement": "opening: Popup geschlossen, aber Meldung „Suche wird geöffnet.“ im Status.",
+      "expected": "Kein sichtbares Popup; Status unter dem Input mit Text Suche wird geöffnet.; Placeholder sichtbar; Rahmen #2563EB.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Popup-Sichtbarkeit, Statustext, Placeholder und Rahmenfarbe prüfen."
+    },
+    {
+      "id": "ST03",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › loading; accessibility.rules.json › messages.loading, projections.loading; README Z.24",
+      "statement": "loading: Popup sichtbar mit genau einer Meldungszeile, Status wiederholt den Text.",
+      "expected": "Popup mit einem Meldungstext Städte werden geladen.; keine Optionsknoten; Status darunter identisch; Input zeigt Be; Rahmen #2563EB.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Optionanzahl=0, Meldungstext im Popup, Statustext, Inputtext, Rahmenfarbe prüfen."
+    },
+    {
+      "id": "ST04",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › ready; accessibility.rules.json › projections.ready; tokens.json",
+      "statement": "ready: Popup mit 7 Ergebnissen, Viewport 160, keine aktive Option, Statusmeldung.",
+      "expected": "7 Optionsknoten; Viewport 160 px; 5 volle Zeilen sichtbar; keine Highlight-Fläche; Status „… Städte verfügbar.“; München disabled.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Optionsanzahl, Viewporthöhe, Highlight-Flächen, Statustext, Disabled-Markierung prüfen."
+    },
+    {
+      "id": "ST05",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › active (activeKey=hamburg); accessibility.rules.json › selection.ariaSelected; layout.css",
+      "statement": "active: genau Hamburg ist aktiv hervorgehoben.",
+      "expected": "Nur die Zeile Hamburg besitzt Füllung #EAF2FF; alle anderen Optionszeilen ohne Highlight; Status wie ready.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Highlight-Füllflächen je Option vergleichen; Anzahl=1 und Ziel=Hamburg."
+    },
+    {
+      "id": "ST06",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › scroll-end (activeKey=zuerich); README Z.26",
+      "statement": "scroll-end: die aktive letzte Option ist tatsächlich im sichtbaren Viewport dargestellt.",
+      "expected": "Zürich hervorgehoben und vollständig innerhalb der Viewportgrenzen; Inhalt max. 64 px versetzt; alle 7 Optionen vorhanden.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Highlight-Ziel, BBox von Zürich gegen Viewport-BBox, Optionsanzahl prüfen."
+    },
+    {
+      "id": "ST07",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › selected (value=berlin); README Z.28",
+      "statement": "selected: geschlossen, Input zeigt das Label des Werts, Status nutzt die selected-Vorlage.",
+      "expected": "Kein sichtbares Popup; Inputtext Berlin (kein Placeholder); Status Ausgewählt: Berlin.; Rahmen #CBD5E1.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Popup-Sichtbarkeit, Inputtext, Statustext, Rahmenfarbe prüfen."
+    },
+    {
+      "id": "ST08",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › empty; accessibility.rules.json › projections.empty; README Z.24",
+      "statement": "empty: Popup mit Meldungszeile, Status wiederholt sie.",
+      "expected": "Input Atlantis; Popup mit genau Keine Städte gefunden.; keine Optionsknoten; Status identisch; Rahmen #2563EB.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Inputtext, Meldungstext, Optionanzahl=0, Statustext, Rahmenfarbe prüfen."
+    },
+    {
+      "id": "ST09",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › error; accessibility.rules.json › messages.error; layout.css",
+      "statement": "error: Popup mit Fehlermeldung, Status wiederholt sie in Fehlerfarbe.",
+      "expected": "Input Be; Popup mit Städte konnten nicht geladen werden.; Status identisch in #B91C1C; keine Optionsknoten; Rahmen #2563EB.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Texte, Optionanzahl=0, Statusfarbe, Rahmenfarbe prüfen."
+    },
+    {
+      "id": "ST10",
+      "group": "zustand",
+      "source": "components/autocomplete/stories.json › disabled (enabled=false); accessibility.rules.json › messages.disabled, projections.closed",
+      "statement": "disabled: deaktiviert, keine Popupteile sichtbar, kein Statustext.",
+      "expected": "Keine sichtbare Popupfläche/Liste/Option; Input mit #94A3B8-Text und #CBD5E1-Rahmen; Statustext leer.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Popup-Sichtbarkeit, Inputfarben, Statustext prüfen."
+    },
+    {
+      "id": "ST11",
+      "group": "zustand",
+      "source": "components/autocomplete/README.md › Z.28",
+      "statement": "Die Fall-Phasen sind festgelegt: active/scroll-end = ready, selected/disabled = closed, übrige wie benannt.",
+      "expected": "Beobachtete Zustandsprojektion entspricht der Phase (z. B. Fokusrahmen bei active/scroll-end wie ready; kein Popup bei selected).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Projektionsmerkmale je Fall gegen die Phasenzuordnung prüfen."
+    },
+    {
+      "id": "ST12",
+      "group": "zustand",
+      "source": "components/autocomplete/accessibility.rules.json › projections",
+      "statement": "Sichtbarkeit von Popup und Expanded-Zustand folgt der Projektionstabelle.",
+      "expected": "closed/opening: popupVisible=false; loading/ready/empty/error: popupVisible=true; Abweichung = Verstoß.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Sichtbarkeit der Surface je Fall mit der Tabelle vergleichen."
+    },
+    {
+      "id": "AN01",
+      "group": "anatomie",
+      "source": "components/autocomplete/component.json › anatomy.label; layout.css › [data-part=label]",
+      "statement": "Das Label steht sichtbar über dem Input.",
+      "expected": "Label-Oberkante < Input-Oberkante; horizontal linksbündig zum Input (±1 px).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "BBoxen Label/Input vergleichen."
+    },
+    {
+      "id": "AN02",
+      "group": "anatomie",
+      "source": "components/autocomplete/component.json › anatomy.input; layout.css",
+      "statement": "Der Input gehört zum Autocomplete und nimmt die Komponentenbreite ein.",
+      "expected": "Input-Breite 320 px (±1) und gleich der Komponentenbreite; Input unter dem Label.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Input-BBox und Fallgruppenbreite messen."
+    },
+    {
+      "id": "AN03",
+      "group": "anatomie",
+      "source": "components/autocomplete/README.md › Z.20; overlay/interface.json › cssParts; scroll-area/interface.json › cssParts",
+      "statement": "Listbox, Overlayfläche und Scrollviewport sind unterschiedliche Teile.",
+      "expected": "Drei getrennte Knoten; keiner identisch mit einem anderen oder darin aufgegangen.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Knotenidentität und -grenzen der drei Teile prüfen."
+    },
+    {
+      "id": "AN04",
+      "group": "anatomie",
+      "source": "components/autocomplete/README.md › Z.20; component.json › composition; scroll-area/layout.css",
+      "statement": "Das Popup enthält die ScrollArea; die Listbox liegt im Scrollinhalt.",
+      "expected": "Hierarchie surface ⊃ viewport ⊃ (content) ⊃ list ⊃ option; Optionen nicht ohne Viewport/Liste an der Surface.",
+      "classification": "derived",
+      "severity": "critical",
+      "check": "Eltern-Kind-Kette je Option bis zur Surface prüfen."
+    },
+    {
+      "id": "AN05",
+      "group": "anatomie",
+      "source": "components/autocomplete/component.json › anatomy.status; accessibility.rules.json › statusPlacement",
+      "statement": "Der Status steht außerhalb des Popups.",
+      "expected": "Statusknoten ist kein Nachfahre von surface/viewport.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Vorfahrenkette des Statusknotens prüfen."
+    },
+    {
+      "id": "AN06",
+      "group": "anatomie",
+      "source": "components/autocomplete/README.md › Z.20; overlay/component.json › responsibility",
+      "statement": "Ein Overlay besitzt keine zweite Auswahlmaschine.",
+      "expected": "Pro Fall höchstens eine Listbox und ein Optionssatz; keine parallele versteckte zweite Liste.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Listbox-Knoten und Optionssätze je Fall zählen."
+    },
+    {
+      "id": "AN07",
+      "group": "anatomie",
+      "source": "components/autocomplete/component.json › composition.overlay.scroll",
+      "statement": "Die ScrollArea ist im Overlay verortet.",
+      "expected": "viewport innerhalb der Popupfläche; list innerhalb des Viewports.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "BBox-Enthaltensein viewport ⊂ surface und list ⊂ viewport prüfen."
+    },
+    {
+      "id": "AN08",
+      "group": "anatomie",
+      "source": "components/scroll-area/layout.css › [data-part=list]",
+      "statement": "Die Optionen bilden eine vertikale Liste innerhalb der Listbox.",
+      "expected": "Alle Optionen Kinder desselben Listencontainers, in Ergebnisreihenfolge, ohne abweichende Zwischengruppen-Semantik.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Elternknoten der Optionen und Reihenfolge prüfen."
+    },
+    {
+      "id": "AN09",
+      "group": "anatomie",
+      "source": "components/autocomplete/README.md › Z.20",
+      "statement": "Kein doppelter Optionssatz durch die Komposition.",
+      "expected": "Anzahl Optionsknoten im gesamten Fall = Anzahl Ergebnisse (7 bzw. 0), nicht 14.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Optionsknoten je Fall zählen."
+    },
+    {
+      "id": "AN10",
+      "group": "anatomie",
+      "source": "components/autocomplete/layout.css › [data-part=status]; README Z.24",
+      "statement": "Eine Statusregion existiert auch ohne Meldung.",
+      "expected": "Statusknoten in jedem Fall vorhanden (Text ggf. leer); Fehlen bei closed/disabled = minor-Abweichung (siehe FREE08).",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Statusknoten je Fall prüfen."
+    },
+    {
+      "id": "TX01",
+      "group": "text",
+      "source": "components/autocomplete/interface.json › label.default; stories.json; accessibility.html",
+      "statement": "Jeder Fall zeigt das Label „Stadt auswählen“.",
+      "expected": "Textinhalt des Labelknotens == Stadt auswählen (NFC, exakt).",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Textknoten des Labels extrahieren und stringgleich vergleichen."
+    },
+    {
+      "id": "TX02",
+      "group": "text",
+      "source": "components/autocomplete/interface.json › placeholder.default; layout.css › ::placeholder",
+      "statement": "Der Placeholder lautet exakt „Stadt suchen …“ und erscheint nur bei leerer Query.",
+      "expected": "Bei query=\"\" ist Stadt suchen … sichtbar (U+2026, Leerzeichen davor); bei nicht-leerer Query kein Placeholder.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Placeholder-Text und Sichtbarkeit je Fall prüfen."
+    },
+    {
+      "id": "TX03",
+      "group": "text",
+      "source": "components/autocomplete/stories.json › inputs.query",
+      "statement": "Die Query-Anzeige entspricht den Story-Eingaben.",
+      "expected": "closed/opening/ready/active/scroll-end/disabled: Placeholder; loading/error: Be; selected: Berlin; empty: Atlantis.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Angezeigten Inputtext je Fall gegen die Matrix vergleichen."
+    },
+    {
+      "id": "TX04",
+      "group": "text",
+      "source": "components/autocomplete/stories.json › results[].label",
+      "statement": "Die sieben Optionslabels lauten exakt wie definiert.",
+      "expected": "Berlin, Hamburg, München, Dresden, Köln, Wien, Zürich in dieser Reihenfolge; keine Zusätze.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Optionslabels in Reihenfolge extrahieren und vergleichen."
+    },
+    {
+      "id": "TX05",
+      "group": "text",
+      "source": "components/autocomplete/accessibility.rules.json › messages",
+      "statement": "Die Statustexte folgen den Meldungsvorlagen.",
+      "expected": "closed/disabled leer; opening Suche wird geöffnet.; loading Städte werden geladen.; ready/active/scroll-end „{count} Städte verfügbar.“; selected Ausgewählt: Berlin.; empty Keine Städte gefunden.; error Städte konnten nicht geladen werden.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Statustext je Fall stringgleich prüfen (count siehe FREE05)."
+    },
+    {
+      "id": "TX06",
+      "group": "text",
+      "source": "components/autocomplete/README.md › Z.24",
+      "statement": "Bei loading, empty, error wiederholt die Statusregion den Text der Popupzeile.",
+      "expected": "Statustext == Meldungstext der Popupzeile (zeichengleich).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Popup-Meldung und Statustext je Fall vergleichen."
+    },
+    {
+      "id": "TX07",
+      "group": "text",
+      "source": "components/autocomplete/README.md › Z.28",
+      "statement": "Sichtbare Texte stammen nur aus Inputs, Ergebnislabels und accessibility.rules.json.",
+      "expected": "Innerhalb der Fallgruppe kein zusätzlicher erfundener Text (z. B. „Ergebnisse“, „Tippen Sie…“, Zähler); Seitenhinweise außerhalb sind frei.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Alle Textknoten je Fall gegen die Solltextmenge abgleichen."
+    },
+    {
+      "id": "TX08",
+      "group": "text",
+      "source": "components/autocomplete/interface.json › defaults; stories.json",
+      "statement": "Umlaute und Ellipse bleiben unverändert.",
+      "expected": "Kein Munchen/Koeln/Zuerich/... als Ersatz für München/Köln/Zürich/…; keine Umschrift, keine Capitalization-Änderung.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Codepoint-Vergleich der kritischen Zeichen."
+    },
+    {
+      "id": "TX09",
+      "group": "text",
+      "source": "components/autocomplete/README.md › Z.28; behavior.scxml › SET_VALUE/ENTER",
+      "statement": "Bei selected steht das Ergebnislabel zum Wert im Input.",
+      "expected": "Inputtext == Berlin (Label zu value=berlin), nicht der Key.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Inputtext im Fall selected prüfen."
+    },
+    {
+      "id": "GEO01",
+      "group": "geometrie",
+      "source": "components/tokens.json › autocomplete.width; layout.css",
+      "statement": "Die Komponente ist 320 px breit.",
+      "expected": "Fallgruppenbreite = Komponentenbreite = 320 px (±1).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "BBox der Fallgruppe und der Komponententeile messen."
+    },
+    {
+      "id": "GEO02",
+      "group": "geometrie",
+      "source": "components/tokens.json › autocomplete.inputHeight",
+      "statement": "Der Input ist 44 px hoch.",
+      "expected": "Inputhöhe 44 px (±1).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Input-BBox messen."
+    },
+    {
+      "id": "GEO03",
+      "group": "geometrie",
+      "source": "components/autocomplete/layout.css › label; tokens lineHeight/labelGap",
+      "statement": "Labelzeile 20 px hoch, darunter 8 px bis zum Input.",
+      "expected": "Labelhöhe 20 (±1); Abstand Label-Unterkante zu Input-Oberkante 8 (±1).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "BBox-Abstände messen."
+    },
+    {
+      "id": "GEO04",
+      "group": "geometrie",
+      "source": "components/autocomplete/layout.css › option; tokens rowHeight",
+      "statement": "Jede Optionszeile ist 32 px hoch und schrumpft nicht.",
+      "expected": "Jede Optionszeile 32 px (±1); keine abweichende Zeilenhöhe.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Höhe aller Optionszeilen messen."
+    },
+    {
+      "id": "GEO05",
+      "group": "geometrie",
+      "source": "components/scroll-area/layout.css; tokens maxHeight; README Z.24",
+      "statement": "Die Viewporthöhe ist min(Ergebnisanzahl × 32, 160).",
+      "expected": "Ergebnislisten 160 px (±1); Meldungsfälle eine Zeile ≤40 px; popup-lose Fälle kein sichtbarer Viewport.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Viewport-BBox je Fall messen."
+    },
+    {
+      "id": "GEO06",
+      "group": "geometrie",
+      "source": "components/overlay/layout.css; README Z.24",
+      "statement": "Das Popup sitzt mit Oberkante am Inputende + 8 px, gleicher Breite und linker Kante.",
+      "expected": "surface.top − input.bottom = 8 (±2); surface.left = input.left (±1); surface.width = 320 (±1).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Relative BBoxen Input/Surface messen."
+    },
+    {
+      "id": "GEO07",
+      "group": "geometrie",
+      "source": "components/autocomplete/layout.css › status; tokens statusGap/lineHeight",
+      "statement": "Status: 8 px Abstand nach oben, Höhe 20 px.",
+      "expected": "status.top − (popup.bottom oder input.bottom) = 8 (±2); Statushöhe 20 (±1).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Status-BBox relativ zur Bezugskante messen."
+    },
+    {
+      "id": "GEO08",
+      "group": "geometrie",
+      "source": "components/autocomplete/layout.css; components/overlay/layout.css; tokens borderWidth/radius",
+      "statement": "Input: 1 px Rahmen, Radius 8; Popup: kein Rahmen, Radius 8.",
+      "expected": "Input-Rahmenstärke 1 (±0.5), Radius 8 (±1); Surface-Rahmen 0, Radius 8 (±1).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Stroke-Eigenschaften und Eckenradius auslesen."
+    },
+    {
+      "id": "GEO09",
+      "group": "geometrie",
+      "source": "components/autocomplete/README.md › Z.24; accessibility.rules.json › statusPlacement",
+      "statement": "Der Status steht unter dem tatsächlich sichtbaren Popup, sonst unter dem Input.",
+      "expected": "Popup-Fälle: Status unter Popup; popup-lose Fälle: Status unter Input; keine Überlappung.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Vertikale Reihenfolge der BBoxen prüfen."
+    },
+    {
+      "id": "GEO10",
+      "group": "geometrie",
+      "source": "components/autocomplete/layout.css › option",
+      "statement": "Options-Innenabstand: 12 px horizontal, 6 px vertikal.",
+      "expected": "Texteinsatz ≥12 px (±1) von links; Textblock mit ca. 6 px oben/unten (±2); kein Anschneiden.",
+      "classification": "explicit",
+      "severity": "minor",
+      "check": "Text-BBox gegen Options-BBox messen."
+    },
+    {
+      "id": "GEO11",
+      "group": "geometrie",
+      "source": "frisch abgeleitet aus 2.4 der Preregistrierung",
+      "statement": "Die Gesamthöhen folgen aus den Einzelmaßen.",
+      "expected": "Popup-lose Fälle ≈100 px; Ergebnisfälle ≈268 px; Meldungsfälle 124–144 px; Toleranz ±4 px.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Fallgruppenhöhe messen und mit der Rechnung vergleichen."
+    },
+    {
+      "id": "GEO12",
+      "group": "geometrie",
+      "source": "components/autocomplete/README.md › Z.24",
+      "statement": "Ein verborgener Popup belegt keinen Platz und überlappt den Input nicht.",
+      "expected": "Sichtbare Surface beginnt nicht über input.bottom; in popup-losen Fällen kein Reserveabstand >8 px zwischen Input und Status.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Abstand Input-Status in popup-losen Fällen messen."
+    },
+    {
+      "id": "GEO13",
+      "group": "geometrie",
+      "source": "components/overlay/layout.css › [data-part=surface]",
+      "statement": "Die Popupfläche trägt den definierten Schatten.",
+      "expected": "Schatten vorhanden, Versatz ≈(0,2), Blur ≈8 px, Schwarz mit Alpha 0.15–0.25; Engine-Näherung zulässig.",
+      "classification": "explicit",
+      "severity": "minor",
+      "check": "Shadow-Effekt der Surface auslesen bzw. im Render prüfen."
+    },
+    {
+      "id": "CLIP01",
+      "group": "clipping",
+      "source": "components/tokens.json › maxHeight,rowHeight; components/scroll-area/layout.css",
+      "statement": "Ergebnis-Viewports clippen bei 160 px.",
+      "expected": "In ready/active/scroll-end: genau 5 volle Optionszeilen innerhalb der Viewportgrenzen, 0 angeschnittene, 2 vollständig außerhalb.",
+      "classification": "derived",
+      "severity": "critical",
+      "check": "Schnittmengen der Options-BBoxen mit der Viewport-BBox je Fall zählen."
+    },
+    {
+      "id": "CLIP02",
+      "group": "clipping",
+      "source": "components/autocomplete/README.md › Z.26",
+      "statement": "Geclippte Ergebnislayer bleiben erhalten.",
+      "expected": "Alle 7 Optionen als Knoten vorhanden; Berlin und Hamburg dürfen außerhalb des Clips liegen, dürfen aber nicht gelöscht sein.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Optionsknoten vollständig zählen, auch außerhalb des Viewports."
+    },
+    {
+      "id": "CLIP03",
+      "group": "clipping",
+      "source": "components/autocomplete/README.md › Z.26",
+      "statement": "In scroll-end ist die aktive letzte Option tatsächlich sichtbar.",
+      "expected": "Rechteck von Zürich vollständig innerhalb der Viewportgrenzen (±1 px).",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "BBox-Enthaltensein Zürich ⊂ viewport prüfen."
+    },
+    {
+      "id": "CLIP04",
+      "group": "clipping",
+      "source": "Rechnung aus 2.4; components/scroll-area/layout.css",
+      "statement": "Kein Overscroll/Leerraum unter der letzten Zeile.",
+      "expected": "In scroll-end endet der sichtbare Inhalt spätestens an der Viewport-Unterkante; kein leerer Streifen >2 px unter Zürich innerhalb des Viewports.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Unterkante der letzten Zeile gegen Viewport-Unterkante messen."
+    },
+    {
+      "id": "CLIP05",
+      "group": "clipping",
+      "source": "components/scroll-area/layout.css › overflow-y; components/overlay/layout.css",
+      "statement": "Optionsinhalt ragt nicht sichtbar über Surface/Viewport hinaus.",
+      "expected": "Kein Optionsknoten bzw. dessen Füllung/Text außerhalb der Surface-Grenzen sichtbar; Überstand nur innerhalb des Clips.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Sichtbare Pixel/BBoxen außerhalb der Surface prüfen."
+    },
+    {
+      "id": "CLIP06",
+      "group": "clipping",
+      "source": "components/autocomplete/layout.css › option (feste Höhe)",
+      "statement": "Kein Label wird innerhalb einer Zeile abgeschnitten.",
+      "expected": "Jeder Options- und Meldungstext vollständig in seiner Zeile; keine horizontale/vertikale Textclipping-Kante.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Text-BBox ⊂ Zeilen-BBox prüfen."
+    },
+    {
+      "id": "CLIP07",
+      "group": "clipping",
+      "source": "components/scroll-area/layout.css",
+      "statement": "Das Popup wächst nicht über die maximale Höhe.",
+      "expected": "Surface-Innenhöhe (Viewport) ≤160 px in Ergebnisfällen; Gesamtpopup ≤160 px + Meldungszeile.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Viewport- und Surface-Höhe messen."
+    },
+    {
+      "id": "CLIP08",
+      "group": "clipping",
+      "source": "components/autocomplete/accessibility.rules.json › statusPlacement",
+      "statement": "Der Status wird nicht vom Popup überdeckt.",
+      "expected": "Statusrechteck schneidet das Surface-Rechteck nicht (Toleranz 0 px).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Rechteck-Schnittmenge Status/Surface prüfen."
+    },
+    {
+      "id": "COL01",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › input; components/overlay/layout.css › surface",
+      "statement": "Input- und Popupfläche sind weiß.",
+      "expected": "Füllung #FFFFFF (±3/Kanal) in allen Fällen.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Fill-Farbe der Flächen auslesen bzw. Pixelprobe prüfen."
+    },
+    {
+      "id": "COL02",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › Root; tokens text",
+      "statement": "Label, Inputtext und Optionslabels nutzen die Textfarbe.",
+      "expected": "#172B4D (±3/Kanal).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Textfarben der Knoten auslesen."
+    },
+    {
+      "id": "COL03",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › ::placeholder; tokens muted",
+      "statement": "Der Placeholder ist gedämpft.",
+      "expected": "#64748B (±3/Kanal), sofern Placeholder sichtbar.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Placeholder-Textfarbe prüfen."
+    },
+    {
+      "id": "COL04",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › input border; tokens border",
+      "statement": "Ohne Fokuszustand ist der Input-Rahmen #CBD5E1.",
+      "expected": "In closed/selected/disabled: #CBD5E1 (±3).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Stroke-Farbe des Inputs prüfen."
+    },
+    {
+      "id": "COL05",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › Fokusregeln; tokens focus",
+      "statement": "In opening, loading, ready, empty, error (inkl. active, scroll-end) ist der Input-Rahmen fokussiert.",
+      "expected": "Rahmen #2563EB (±3) in genau diesen Fällen; nicht in closed/selected/disabled.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Stroke-Farbe je Fall prüfen."
+    },
+    {
+      "id": "COL06",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › [aria-selected=true]; tokens highlight",
+      "statement": "Nur die aktive Option ist hervorgehoben.",
+      "expected": "Genau eine Optionszeile mit Füllung #EAF2FF (±3) in active/scroll-end; keine in ready.",
+      "classification": "explicit",
+      "severity": "critical",
+      "check": "Highlight-Füllungen zählen und Zielkey bestimmen."
+    },
+    {
+      "id": "COL07",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › [aria-disabled=true]; tokens disabled",
+      "statement": "Deaktivierte Optionen sind farblich deaktiviert.",
+      "expected": "München in ready/active/scroll-end mit Textfarbe #94A3B8 (±3); andere Optionen nicht.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Textfarben je Option prüfen."
+    },
+    {
+      "id": "COL08",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › :disabled",
+      "statement": "Ein deaktivierter Input nutzt Disabled-Text und normalen Rahmen.",
+      "expected": "In disabled: Textfarbe #94A3B8 (±3), Rahmen #CBD5E1 (±3).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Text- und Stroke-Farbe im Fall disabled prüfen."
+    },
+    {
+      "id": "COL09",
+      "group": "farbe",
+      "source": "components/autocomplete/layout.css › status; tokens muted,error",
+      "statement": "Statusfarbe ist gedämpft, im Fehlerfall rot.",
+      "expected": "#64748B in allen Statusfällen außer error; #B91C1C (±3) in error.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Statusfarbe je Fall prüfen."
+    },
+    {
+      "id": "COL10",
+      "group": "farbe",
+      "source": "components/overlay/layout.css",
+      "statement": "Die Popupfläche hat keine zusätzliche Kontur und keine abweichende Füllung.",
+      "expected": "Kein sichtbarer Rand/Stroke an der Surface; Füllung weiß; kein Farbverlauf.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Stroke und Fill-Typ der Surface prüfen."
+    },
+    {
+      "id": "COL11",
+      "group": "farbe",
+      "source": "components/tokens.json (abschließende Tokenliste)",
+      "statement": "Es werden keine weiteren Farben still erfunden.",
+      "expected": "Alle sichtbaren Füllungen/Konturen der Komponententeile stammen aus den acht Tokens; zusätzliche Farben = Verstoß (Schatten, Seitenhintergrund ausgenommen).",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Alle Fill/Stroke-Farben einsammeln und gegen die Tokenmenge prüfen."
+    },
+    {
+      "id": "TY01",
+      "group": "typografie",
+      "source": "components/tokens.json › autocomplete.fontFamily",
+      "statement": "Die Komponente nutzt Inter.",
+      "expected": "Font-Familie der Textknoten == Inter (case-insensitiv); dokumentierte Ersatzschrift = Abweichung, stillschweigende = Verstoß.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Font-Familie aller Pflichttexte auslesen."
+    },
+    {
+      "id": "TY02",
+      "group": "typografie",
+      "source": "components/tokens.json › fontSize; layout.css",
+      "statement": "Label, Input und Optionen sind 14 px groß.",
+      "expected": "Schriftgröße 14 px (±0.5) für diese Textknoten.",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Font-Size je Textknoten prüfen."
+    },
+    {
+      "id": "TY03",
+      "group": "typografie",
+      "source": "components/tokens.json › statusFontSize",
+      "statement": "Der Status ist 12 px groß.",
+      "expected": "Schriftgröße 12 px (±0.5).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Font-Size des Status prüfen."
+    },
+    {
+      "id": "TY04",
+      "group": "typografie",
+      "source": "components/tokens.json › lineHeight",
+      "statement": "Die Zeilenhöhe beträgt 20 px.",
+      "expected": "Zeilenhöhe 20 px (±1) für Label, Optionen, Status.",
+      "classification": "explicit",
+      "severity": "minor",
+      "check": "Line-Height-Attribut bzw. Text-BBox-Höhe prüfen."
+    },
+    {
+      "id": "TY05",
+      "group": "typografie",
+      "source": "frisch abgeleitet aus fester Breite/Höhe",
+      "statement": "Kein Text wird durch zu große Schrift abgeschnitten oder umgebrochen.",
+      "expected": "Jeder geforderte Text einzeilig; Stadt auswählen, Stadt suchen …, Städte konnten nicht geladen werden. passen ohne Truncation in 320 px bei 14/12 px Inter.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Text-BBox gegen 320-px-Breite und Zeilenhöhe prüfen; Zeilenanzahl=1."
+    },
+    {
+      "id": "A11Y01",
+      "group": "accessibility",
+      "source": "components/autocomplete/accessibility.html › role=combobox; rules › designTarget",
+      "statement": "Der Input ist als Combobox ausgezeichnet.",
+      "expected": "Rollen-/Semantikannotation combobox am Inputknoten oder, falls das Format keine Rollen trägt, Name enthält combobox; fehlend = Abweichung.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Metadaten/Name des Inputknotens prüfen."
+    },
+    {
+      "id": "A11Y02",
+      "group": "accessibility",
+      "source": "components/autocomplete/accessibility.html; rules › listNameSource",
+      "statement": "Die Listbox ist als solche benannt und trägt den Labelnamen.",
+      "expected": "Listenknoten mit listbox-Annotation/Name und zugänglichem Namen Stadt auswählen.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Annotation/Name des Listenknotens prüfen."
+    },
+    {
+      "id": "A11Y03",
+      "group": "accessibility",
+      "source": "components/autocomplete/accessibility.rules.json › selection",
+      "statement": "Optionen sind Optionen; aria-selected gilt nur der aktiven, aria-disabled folgt result.disabled.",
+      "expected": "Annotationen option; selected nur bei hamburg/zuerich; disabled bei muenchen; keine Selected-Markierung in ready.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Option-Metadaten je Fall prüfen."
+    },
+    {
+      "id": "A11Y04",
+      "group": "accessibility",
+      "source": "components/autocomplete/accessibility.html › role=status aria-live=polite aria-atomic=true",
+      "statement": "Der Status ist eine benannte Live-Region.",
+      "expected": "Statusknoten mit status/live-Annotation oder Name status; nicht als reiner Text ohne Region.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Statusknoten-Metadaten prüfen."
+    },
+    {
+      "id": "A11Y05",
+      "group": "accessibility",
+      "source": "components/autocomplete/accessibility.rules.json › projections.*.expanded",
+      "statement": "Expanded folgt der Projektion.",
+      "expected": "closed/opening: expanded=false; loading/ready/empty/error: expanded=true (Annotation oder dokumentierte Namenskonvention).",
+      "classification": "explicit",
+      "severity": "major",
+      "check": "Expanded-Annotation je Fall prüfen."
+    },
+    {
+      "id": "A11Y06",
+      "group": "accessibility",
+      "source": "rules › focus; overlay/scroll-area interface.json",
+      "statement": "Popup und Viewport erhalten keine zusätzliche Rolle und keinen Tabstopp.",
+      "expected": "Keine listbox-Rolle am Viewport, keine zweite Combobox, keine fokussierbaren Zusatzknoten.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Rollen und Fokus-Metadaten der Popupteile prüfen."
+    },
+    {
+      "id": "A11Y07",
+      "group": "accessibility",
+      "source": "rules › labelSource; component.json › anatomy.label",
+      "statement": "Der zugängliche Name des Inputs stammt aus dem Label.",
+      "expected": "Input-Name == Stadt auswählen (Annotation) oder eindeutige Label-Verknüpfung im Dokument.",
+      "classification": "derived",
+      "severity": "minor",
+      "check": "Name/Verlinkung des Inputs prüfen."
+    },
+    {
+      "id": "A11Y08",
+      "group": "accessibility",
+      "source": "README Z.24; rules › designTarget",
+      "statement": "Der Statustext ist sichtbar und nicht dekorativ versteckt.",
+      "expected": "Statusknoten sichtbar (nicht 0 % Opacity/off-canvas); Text entspricht TX05.",
+      "classification": "derived",
+      "severity": "major",
+      "check": "Sichtbarkeit und Text des Statusknotens prüfen."
+    },
+    {
+      "id": "A11Y09",
+      "group": "accessibility",
+      "source": "components/autocomplete/accessibility.rules.json › focus",
+      "statement": "Der Input behält den DOM-Fokus während der Tastaturnavigation.",
+      "expected": "Statisch nicht prüfbar; wird als n/a geführt und fließt nicht in Quoten ein; nur der Fokusrahmen (COL05) wird geprüft.",
+      "classification": "explicit",
+      "severity": "none",
+      "check": "n/a – nicht statisch prüfbar; dokumentiert."
+    },
+    {
+      "id": "FREE01",
+      "group": "freiheit",
+      "source": "components/autocomplete/README.md › Z.32",
+      "statement": "Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei.",
+      "expected": "Zulässig: beliebige Position/Reihenfolge/Raster auf einer oder mehreren Seiten; Titel/Notizen außerhalb der Fallgruppen; Hintergrund frei.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Nur prüfen, dass Fallgruppen nicht überlappen und Notizen außerhalb liegen; keine Anordnungswertung."
+    },
+    {
+      "id": "FREE02",
+      "group": "freiheit",
+      "source": "components/autocomplete/README.md › Z.32",
+      "statement": "Namensstil der Ebenen ist frei.",
+      "expected": "Zulässig: jede verständliche Benennung, die A10/A11 erfüllt (deutsch/englisch, Präfixe, Nummerierung).",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Nur A10/A11 prüfen, keinen Stil erzwingen."
+    },
+    {
+      "id": "FREE03",
+      "group": "freiheit",
+      "source": "components/scroll-area/layout.css › overflow-y:auto",
+      "statement": "Die Darstellung einer Scrollbar ist nicht festgelegt.",
+      "expected": "Zulässig: Scrollbar gezeichnet oder nicht; wenn gezeichnet, keine Überdeckung von Optionslabels und max. 12 px breit.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Scrollbar-Präsenz und Überdeckung prüfen; Abwesenheit nie abwerten."
+    },
+    {
+      "id": "FREE04",
+      "group": "freiheit",
+      "source": "components/autocomplete/README.md › Z.24",
+      "statement": "Die Geometrie der Meldungszeile ist nicht im Detail festgelegt.",
+      "expected": "Zulässig: Höhe 20–40 px, Text linksbündig mit ≥12 px Einsatz, vertikal zentriert oder ≤6 px Innenabstand; keine Option-Semantik nötig.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Höhe und Texteinsatz der Meldungszeile messen."
+    },
+    {
+      "id": "FREE05",
+      "group": "freiheit",
+      "source": "components/autocomplete/accessibility.rules.json › messages.results",
+      "statement": "{count} ist nicht definiert (Ergebnisanzahl vs. auswählbare Anzahl).",
+      "expected": "Zulässig: 7 Städte verfügbar. oder 6 Städte verfügbar.; jede andere Zahl = Verstoß. Bevorzugt 7 (= results.length).",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Statustext der ready-Fälle gegen {6,7} prüfen; andere Zahl als V-TEXT werten."
+    },
+    {
+      "id": "FREE06",
+      "group": "freiheit",
+      "source": "components/overlay/layout.css (kein overflow:hidden)",
+      "statement": "Ob der Radius die Optionszeilen an den Ecken beschneidet, ist offen.",
+      "expected": "Zulässig: Ecken der Zeilen scharf oder durch Radius 8 geclippt.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Nur Randpixel der ersten/letzten Zeile vergleichen; beide Varianten pass."
+    },
+    {
+      "id": "FREE07",
+      "group": "freiheit",
+      "source": "components/autocomplete/README.md › Z.24",
+      "statement": "Ein verborgener Popup kann als fehlender oder als unsichtbarer Knoten umgesetzt sein.",
+      "expected": "Zulässig: Knoten fehlt, visible=false, 0×0 oder vollständig transparent, solange kein Platz belegt und nichts sichtbar ist.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Sichtbarkeit und Platzverbrauch prüfen; Variante nicht werten."
+    },
+    {
+      "id": "FREE08",
+      "group": "freiheit",
+      "source": "components/autocomplete/layout.css › status; README Z.24",
+      "statement": "Bei leerer Meldung ist der Statusinhalt leer; die Darstellung des leeren Knotens ist offen.",
+      "expected": "Zulässig: leerer Textknoten, leerer Container oder fehlender Statusknoten, solange keine sichtbare Höhe >0 und kein Text erscheint; fehlender Knoten wird als minor-Abweichung zu AN10 notiert.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Sichtbaren Text und Höhe prüfen; Existenz separat für AN10 notieren."
+    },
+    {
+      "id": "FREE09",
+      "group": "freiheit",
+      "source": "components/autocomplete/layout.css › input/option",
+      "statement": "Vertikale Textausrichtung in Input und Zeile ist nicht explizit.",
+      "expected": "Zulässig: zentriert oder mit symmetrischem Innenabstand; Text vollständig sichtbar, ≥2 px Abstand zu allen Kanten.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Text-BBox gegen Zeilen-/Input-BBox messen."
+    },
+    {
+      "id": "FREE10",
+      "group": "freiheit",
+      "source": "components/overlay/layout.css › box-shadow",
+      "statement": "Engine-Näherung des Schattens ist zulässig.",
+      "expected": "Zulässig: Versatz 0–3 px, Blur 6–10 px, Alpha 0.15–0.25, keine harte Kante.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Shadow-Parameter auslesen bzw. Randverlauf im Render prüfen."
+    },
+    {
+      "id": "FREE11",
+      "group": "freiheit",
+      "source": "components/autocomplete/README.md › Z.24; scroll-area/layout.css",
+      "statement": "Die Meldungszeile kann im Viewport oder anstelle der Liste liegen.",
+      "expected": "Zulässig: ein Meldungstext innerhalb der Surface, im Viewport oder als dessen einziger Inhalt; keine zusätzliche Liste mit Optionen.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Genau einen Meldungstext lokalisieren; Platzierung nicht werten."
+    },
+    {
+      "id": "FREE12",
+      "group": "freiheit",
+      "source": "components/autocomplete/README.md › Z.32",
+      "statement": "Seitenabstände zwischen Fällen sind frei; fallinterne Zusatzabstände sind nicht vorgesehen.",
+      "expected": "Zulässig: Abstand zwischen Fallgruppen beliebig; innerhalb einer Fallgruppe nur die definierten 8/20/32/44/160-Werte.",
+      "classification": "underdetermined",
+      "severity": "none",
+      "check": "Nur fallinterne Maße gegen GEO prüfen."
+    }
+  ],
+  "comparisonProtocol": {
+    "tooling": {
+      "loader": "@open-pencil/core 0.16.0",
+      "cli": "@open-pencil/cli 0.16.0",
+      "sceneGraph": "@open-pencil/scene-graph 0.16.0",
+      "notes": "Szenengraph-Dump je Design: Pfad, Typ, Name, BBox, Text, Füllung, Kontur, Font, Sichtbarkeit. Screenshot je Fall nur unterstützend."
+    },
+    "order": [
+      "Definition-Hashes prüfen (A08)",
+      "Dokumente laden (A01)",
+      "Szenengraph dumpen",
+      "Fallgruppen zuordnen (A02-A04, A12)",
+      "Kriterien A/ST/AN/TX/GEO/CLIP/COL/TY/A11Y je Fall auswerten",
+      "Screenshots je Fall rendern und Clipping/Überlappung/Highlight bestätigen",
+      "Freiheiten FREE01-FREE12 erfassen und mit A09 abgleichen",
+      "Urteil je Design und Paarwert berechnen"
+    ],
+    "normalization": {
+      "units": "px; pro Kante ±1 px; kumulierte Offsets ±2 px; Gesamthöhen ±4 px; Radius ±1 px; Rahmenstärke ±0.5 px",
+      "colors": "sRGB 8 Bit; max. absoluter Kanalunterschied <= 3; Alpha ±0.02",
+      "typography": "Familie case-insensitiv; Größe ±0.5 px; Zeilenhöhe ±1 px; Schriftschnitt normal",
+      "text": "Unicode NFC; führende/abschließende Whitespaces entfernt; innere Leerzeichen, Satzzeichen und U+2026 signifikant; case-sensitiv",
+      "names": "lowercase; Nicht-Alphanumerisches zu Leerzeichen; Mehrfach-Leerzeichen kollabiert; Treffer über Token-Enthaltensein mit Synonymliste (label, input, surface/popup, viewport/scroll, list/listbox, option, status)",
+      "nodeKinds": "text muss editierbaren String tragen; frame/group/rect/ellipse = Container/Fläche; image/bitmap = Raster",
+      "ignored": "absolute Position der Fallgruppen, Seitenanzahl/-format, Titel, Notizen, Ebenen-IDs, Fallreihenfolge, Dateibytes, unsichtbare Hilfsknoten ohne Sichtwirkung"
+    },
+    "violationTypes": {
+      "V-EXPORT": "Dokument nicht ladbar / kein OpenPencil-Dokument",
+      "V-STRUCT": "fehlender, duplizierter oder falsch verschachtelter Pflichtteil; fehlender Fall",
+      "V-STATE": "falsche Zustandsprojektion",
+      "V-TEXT": "Text fehlt oder weicht ab",
+      "V-GEO": "Maß/Abstand/Ausrichtung außerhalb Toleranz",
+      "V-COLOR": "Farbe außerhalb Toleranz oder erfunden",
+      "V-TYPE": "Familie/Größe/Zeilenhöhe falsch",
+      "V-CLIP": "Clipping/Overflow falsch",
+      "V-EDIT": "nicht editierbar (Pfad, Bitmap, alles in einer Gruppe)",
+      "V-A11Y": "statische Semantik fehlt oder falsch",
+      "V-FREE": "zulässigen Freiheitsraum verlassen"
+    },
+    "notSuccessConditions": [
+      "byteweise oder strukturelle Dateigleichheit der beiden Designs",
+      "identische technische IDs, UUIDs, Ebenennamen oder Reihenfolge",
+      "gleiche Seitenanordnung, gleicher Seitentitel, gleiche Notizen",
+      "gleiche Anzahl Hilfsknoten oder Gruppierungstiefe, sofern Pflichtteile getrennt bleiben",
+      "identische Scrollbar-, Schatten- oder Anti-Aliasing-Darstellung",
+      "Rendering-Genauigkeit unterhalb der Toleranzen"
+    ],
+    "perCriterionOutcome": {
+      "values": [
+        "pass",
+        "fail",
+        "n/a"
+      ],
+      "naRule": "nur wenn der Fall nicht anwendbar ist oder das Kriterium als nicht statisch prüfbar markiert wurde (A11Y09); n/a zählt nicht in Quoten"
+    },
+    "pairAgreement": {
+      "separationFromCorrectness": "Die Paarübereinstimmung ist kein Korrektheitsmaß und wird getrennt vom Urteil berichtet.",
+      "featuresPerCase": [
+        "popupVisible",
+        "optionCount",
+        "optionLabels (geordnet)",
+        "activeKey (oder keiner)",
+        "inputDisplay (Text + Placeholder-Flag)",
+        "statusText",
+        "viewportHeight",
+        "surfaceTopGap",
+        "surfaceLeft",
+        "surfaceWidth",
+        "rowHeight",
+        "inputHeight",
+        "radius",
+        "borderWidth",
+        "fontFamily",
+        "fontSize",
+        "statusFontSize",
+        "lineHeight",
+        "colors {surface,text,muted,border,focus,highlight,disabled,error} (nur sichtbare)"
+      ],
+      "components": {
+        "A_struct": "Jaccard-Index über die Mengen vorhandener (Fall, Pflichtteil)-Paare und der Optionslabel-Mengen",
+        "A_state": "Anteil der Fälle, in denen popupVisible, activeKey, inputDisplay und statusText zwischen beiden Designs übereinstimmen",
+        "A_vis": "Anteil der Merkmale aus dem Vektor (Geometrie, Farbe, Typografie), die zwischen beiden Designs innerhalb der Toleranzen übereinstimmen"
+      },
+      "formula": "A = 0.30*A_struct + 0.30*A_state + 0.40*A_vis",
+      "weightsNote": "Gewichtung ist eine frische, offengelegte Annahme (assumptions AS13); Rohwerte A_struct, A_state, A_vis werden zusätzlich berichtet.",
+      "bands": {
+        "high": ">= 0.90",
+        "medium": ">= 0.75 und < 0.90",
+        "low": "< 0.75"
+      },
+      "mandatoryReports": [
+        "gemeinsam erfüllt / einseitig erfüllt / gemeinsam unzureichend je Kriterium",
+        "Liste der Kriterien, bei denen beide Designs scheitern",
+        "Liste der Kriterien, bei denen genau eines scheitert (Diskriminationskraft)",
+        "Hinweis 'Konvergenz ohne Korrektheit', wenn hohe Paarübereinstimmung bei FAIL beider Designs vorliegt"
+      ],
+      "freeAreasExcluded": "FREE01-FREE12 gehen nicht in A_vis ein; abweichende Seitenanordnung senkt die Paarübereinstimmung nicht."
+    }
+  },
+  "overallJudgementRule": {
+    "gates": [
+      "A01",
+      "A02",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08"
+    ],
+    "gateRule": "Schlägt ein Gate fehl, ist das Urteil FAIL, unabhängig von allen anderen Werten.",
+    "counts": {
+      "E": "Anzahl fail unter allen Kriterien der Klasse explicit (ohne n/a)",
+      "D": "Anzahl fail unter allen Kriterien der Klasse derived (ohne n/a)",
+      "U": "Anzahl der Freiheitskriterien, deren Raum verlassen wurde; jeweils zusätzlich als explicit-Verstoß der Oberkategorie gezählt"
+    },
+    "table": [
+      {
+        "condition": "Gate-Verstoß oder E >= 1 oder D >= 5",
+        "verdict": "FAIL"
+      },
+      {
+        "condition": "E = 0 und 2 <= D <= 4",
+        "verdict": "PASS_MIT_ABWEICHUNGEN"
+      },
+      {
+        "condition": "E = 0 und D <= 1",
+        "verdict": "PASS"
+      }
+    ],
+    "additionalOutputs": [
+      "Anzahl erfüllter/verfehlter Kriterien pro Gruppe",
+      "Liste aller fail-IDs mit Evidenz (Knotenpfad, gemessener Wert, Sollwert, Screenshot-Referenz)",
+      "Liste der in Anspruch genommenen Freiheiten (FREE-IDs)"
+    ],
+    "disclosureRule": "Ein Design, das eine Unterbestimmtheit nicht offenlegt (A09), kann maximal PASS_MIT_ABWEICHUNGEN erreichen.",
+    "explicitFailureNote": "Die expliziten Erwartungen sind bereits mit Toleranzen formuliert; ein einziges explizites Scheitern ist daher FAIL."
+  },
+  "assumptions": [
+    {
+      "id": "AS1",
+      "source": "components/autocomplete/README.md › Z.26",
+      "observation": "'die drei unsichtbaren Daten' passt nicht zur Rechnung: 7×32 = 224, Viewport 160 → 2 Zeilen (Berlin, Hamburg) geclippt.",
+      "assumption": "Die Zahl 'drei' wird als Redaktionsfehler behandelt; bindend ist 'Alle Ergebnislayer bleiben editierbar erhalten'. Geprüft werden 2 geclippte Zeilen; 3 werden nicht gefordert. Offenlegung im Export ist positiv, aber nicht Pflicht."
+    },
+    {
+      "id": "AS2",
+      "source": "components/autocomplete/accessibility.rules.json › messages.results",
+      "observation": "{count} ist nicht definiert (7 Ergebnisse inkl. disabled vs. 6 auswählbar).",
+      "assumption": "Beide Werte zulässig (FREE05), bevorzugt 7 = results.length; kein Abzug für 6 oder 7."
+    },
+    {
+      "id": "AS3",
+      "source": "rules › messages.opening + projections.opening",
+      "observation": "opening hat eine Meldung, aber popupVisible=false; README Z.24 nennt die Statuswiederholung nur für loading/empty/error.",
+      "assumption": "opening zeigt die Meldung nur im Status unter dem Input, nicht im Popup; eingestuft als derived (ST02)."
+    },
+    {
+      "id": "AS4",
+      "source": "components/autocomplete/layout.css › [data-state=...] vs. Story-IDs",
+      "observation": "active/scroll-end haben Phase ready, keinen eigenen data-state.",
+      "assumption": "data-state wird auf die Story-Phase abgebildet → Fokusrahmen auch in active/scroll-end."
+    },
+    {
+      "id": "AS5",
+      "source": "components/autocomplete/stories.json › ready",
+      "observation": "Ausgangs-Scrollposition ist nicht definiert.",
+      "assumption": "Ansicht am Listenanfang (scrollTop 0): Berlin…Köln sichtbar, Wien/Zürich geclippt. Nur diese Lage erfüllt CLIP01; eine andere Lage wäre eine stille Erfindung."
+    },
+    {
+      "id": "AS6",
+      "source": "components/autocomplete/README.md › Z.24",
+      "observation": "'eine Zeile' ist nicht tokenisiert.",
+      "assumption": "Meldungszeile 20–40 px; Standard 32 (= rowHeight); Gesamthöhe 124–144 px."
+    },
+    {
+      "id": "AS7",
+      "source": "components/autocomplete/layout.css › status; README Z.24",
+      "observation": "Status existiert immer, kann aber leer sein; Sichtbarkeit des leeren 20-px-Kastens ist offen.",
+      "assumption": "Fehlender Statusknoten bei leerem Text zulässig (FREE08), aber minor-Abweichung zu AN10; sichtbare Höhe >0 mit leerem Text ebenfalls zulässig."
+    },
+    {
+      "id": "AS8",
+      "source": "components/autocomplete/README.md › Z.24",
+      "observation": "'verborgener Popup' ist nicht als visible=false, 0×0 oder 'nicht vorhanden' festgelegt.",
+      "assumption": "Alle drei Varianten zulässig, solange nichts sichtbar ist und der Status nicht verschoben wird (FREE07, GEO12)."
+    },
+    {
+      "id": "AS9",
+      "source": "components/tokens.json › fontFamily",
+      "observation": "Verfügbarkeit von Inter im Export-/Prüfsystem ist nicht garantiert.",
+      "assumption": "Inter ist Soll; dokumentierte Ersatzschrift = major-Abweichung (TY01), kein Gate-Fail; stillschweigender Ersatz = Verstoß."
+    },
+    {
+      "id": "AS10",
+      "source": "components/overlay/layout.css › box-shadow",
+      "observation": "Canvas-Engines rendern Schatten unterschiedlich.",
+      "assumption": "Näherung mit Versatz 0–3 px, Blur 6–10 px, Alpha 0.15–0.25 zulässig (FREE10)."
+    },
+    {
+      "id": "AS11",
+      "source": "components/autocomplete/layout.css › input/option",
+      "observation": "Vertikale Textausrichtung ist nicht ausdrücklich geregelt.",
+      "assumption": "Zentriert oder symmetrisch mit ≥2 px Innenabstand; kein Anschneiden (FREE09)."
+    },
+    {
+      "id": "AS12",
+      "source": "components/scroll-area/layout.css",
+      "observation": "Kein overflow:hidden an der Surface → Radius-Clipping der Zeilen unklar.",
+      "assumption": "Beide Varianten zulässig (FREE06)."
+    },
+    {
+      "id": "AS13",
+      "source": "Vergleichsmetrik",
+      "observation": "Die Definition sagt nichts über Paar-Metriken.",
+      "assumption": "Gewichte 0.30/0.30/0.40 (Struktur/Zustand/Visuell) sind eine frische, offengelegte Annahme; Rohwerte werden zusätzlich berichtet."
+    },
+    {
+      "id": "AS14",
+      "source": "components/autocomplete/layout.css › [data-part=option]",
+      "observation": "Keine explizite Textfarbe für Optionen.",
+      "assumption": "Optionstext erbt --ac-text (#172B4D), außer bei disabled (#94A3B8)."
+    },
+    {
+      "id": "AS15",
+      "source": "components/autocomplete/layout.css › :disabled + ::placeholder",
+      "observation": "Vorrang von Placeholder-Farbe vs. Disabled-Farbe im Fall disabled ist offen.",
+      "assumption": "Beide zulässig: #64748B oder #94A3B8; kein Abzug."
+    },
+    {
+      "id": "AS16",
+      "source": "components/autocomplete/accessibility.rules.json › projections",
+      "observation": "Enthält nur fünf Zustände; selected/disabled fehlen (sie sind closed).",
+      "assumption": "selected/disabled erben closed (expanded=false, popupVisible=false)."
+    },
+    {
+      "id": "AS17",
+      "source": "rules › selection.ariaSelected",
+      "observation": "'True only for the active option' – im geschlossenen selected-Fall gibt es keine aktive Option.",
+      "assumption": "In selected/closed/disabled keine Selected-Markierung."
+    },
+    {
+      "id": "AS18",
+      "source": "components/overlay/interface.json › cssParts (content)",
+      "observation": "Ein zusätzlicher content-Knoten ist definiert, für die Darstellung aber nicht zwingend.",
+      "assumption": "content-Wrapper optional; Pflicht ist die Reihenfolge surface ⊃ viewport ⊃ list ⊃ options."
+    },
+    {
+      "id": "AS19",
+      "source": "components/autocomplete/README.md › Z.26",
+      "observation": "'statische Darstellung dieses Zustands, kein Versprechen dynamischen Scrollens'.",
+      "assumption": "Nur der statische Offset zählt; keine Scroll-Interaktion, keine Animation."
+    },
+    {
+      "id": "AS20",
+      "source": "components/autocomplete/README.md › Z.32",
+      "observation": "'übersichtliche Seite' ist nicht quantifiziert.",
+      "assumption": "Seitenlayout völlig frei (FREE01); nur Lesbarkeit und keine Überlappung der Fallgruppen werden verlangt."
+    }
+  ],
+  "changeRule": "Ab Einsicht in Builder-Ausgaben eingefroren. Zulässig sind nur Ausfüllen der Bewertungstabellen, Evidenzzitate, klar markierte nachträgliche Anmerkungen ohne Rückwirkung auf Urteile und das Protokollieren von Definitionslücken."
+}

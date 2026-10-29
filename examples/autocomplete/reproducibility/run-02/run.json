@@ -1,0 +1,159 @@
+{
+  "run": "autocomplete-reproducibility-02",
+  "status": "completed",
+  "date": "2026-10-29",
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "definitionFiles": {
+    "README.md": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+    "autocomplete/README.md": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+    "autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+    "autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+    "autocomplete/behavior.scxml": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+    "autocomplete/component.json": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+    "autocomplete/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+    "autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+    "autocomplete/layout.css": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+    "autocomplete/stories.json": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+    "library.json": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+    "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+    "overlay/component.json": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+    "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "overlay/layout.css": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+    "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+    "scroll-area/component.json": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+    "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "scroll-area/layout.css": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+    "tokens.json": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+  },
+  "sourceCommit": "700536f0525cd76c82778f22fe64dad2c12cbe61",
+  "toolchainPackageLockSha256": "ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6",
+  "builderHistoryInheritance": "none for both builders",
+  "reviewerHistoryInheritance": "none",
+  "allowedSemanticInputs": "components/ only",
+  "technicalInputs": "Original OpenPencil documentation and pinned tools/openpencil dependencies",
+  "outputDirectories": [
+    "builder-a/",
+    "builder-b/",
+    "review/"
+  ],
+  "priorDesignsAllowed": false,
+  "sharedBuilderOutputsAllowed": false,
+  "independenceLimit": "Separate conversation contexts with access instructions; no separate filesystem sandbox, no statistical model-independence claim.",
+  "comparison": "Definition conformity first; then semantic/component-level differences. Free page layout, generated IDs and bytewise file identity are not required to match.",
+  "reviewPrerequisites": "Reviewer derives and saves criteria from definition before reading builder outputs; actual comparison only after both builders finish.",
+  "studyId": "AC-R02",
+  "criteriaFiles": {
+    "review/preregistered.json": "d10761dede1ec7973461be1bdab25be573072ee240fa44954c482b3cee3b0dea",
+    "review/preregistered.md": "0c6d660f5a509935f1905fdd16bd2a9cbf1250101e5aabc20bbfc51647078458"
+  },
+  "buildersCompleted": {
+    "A": true,
+    "B": true
+  },
+  "inputFreeze": "Hashes recomputed independently from components/ at run start; revision derived as sha256 over compact, key-sorted path->sha256 JSON.",
+  "builderDeliveries": {
+    "builder-a": {
+      "completed": true,
+      "files": {
+        "REPORT.md": "b9e0e35492a3d66901946454e5e073370cecb7d529632de6ed7e217bfd4d503b",
+        "autocomplete.fig": "f79ff07fd70d4775c344b0d8b0da8d33be1bc0c355751b1bc8de33c61a6d7da0",
+        "checks.json": "f2834c1c844ba7f486f9815a0a13897ebffb8782eb1e11d5487aa801df74fca7",
+        "generate.mjs": "54d51ff7185634f24fcad825542f7f33d1cd750c32c4c967a1a5da38bcaceaad",
+        "preview.png": "36a216a4e62b4ed2610109de6e70d204e6dd6fdccf36939855af9a9c76ebf003",
+        "source-sha256.json": "f9337147f57a8417d231828ceddde57b93a512b61b6cee275ae12f17df0cf27c"
+      }
+    },
+    "builder-b": {
+      "completed": true,
+      "files": {
+        "REPORT.md": "aec5d7cf11b4f748a9594b343a0d027c3df5ac11ecf61d5ecd214965e3fc5379",
+        "autocomplete.fig": "fbd3b9934a3e4f28b665392f8fe053e1b896103f56e6cf2e355549b909459f0a",
+        "checks.json": "d1826ceef96b796fe9b304c2087320d341b9b1576fe553f615d7b1d33a30e728",
+        "generate.mjs": "5309bccb10dff6a338758fedb4b60ba85bcbc28ee1bf629eca639ab0c3290efb",
+        "preview.png": "b6d935eedd663a355dc7d1890a6ea26826c9916f18e10671e194d3a398f44aa0",
+        "preview.svg": "cbe15a869017f9adf507eed62d6c558842dab083481eeb065b467ce996d4ce0d",
+        "source-sha256.json": "f1d739f03bd8188099eca4bbb3d5ec1e6adee28852d9753d7a9e0cc1200ca8d4"
+      }
+    }
+  },
+  "interruptions": [
+    {
+      "actor": "builder-a",
+      "stage": "initial build",
+      "cause": "harness step limit",
+      "effect": "Session ended without a message. Checkpoint showed only builder-a/_probe.mjs; no deliverables.",
+      "recovery": "Resumed in the same session; it then produced all artifacts except REPORT.md.",
+      "evidence": [
+        "builder-a/_probe.mjs present at checkpoint",
+        "no other files in builder-a/ at checkpoint"
+      ]
+    },
+    {
+      "actor": "builder-a",
+      "stage": "report",
+      "cause": "harness step limit",
+      "effect": "Session ended without a message after autocomplete.fig, generate.mjs, preview.png, checks.json and source-sha256.json existed; REPORT.md missing.",
+      "recovery": "Resumed in the same session; REPORT.md written and _probe.mjs removed."
+    },
+    {
+      "actor": "builder-b",
+      "stage": "analysis",
+      "cause": "harness step limit",
+      "effect": "No files written. The session had read the definition and analysed the pinned toolchain and layout arithmetic.",
+      "recovery": "Resumed in the same session with its own prior reasoning; no input from builder-a or prior runs."
+    },
+    {
+      "actor": "builder-b",
+      "stage": "build",
+      "cause": "harness step limit",
+      "effect": "Session ended without a message. Six of seven deliverables plus an unrequested intermediate render-report.json existed; REPORT.md missing.",
+      "recovery": "Resumed in the same session; REPORT.md written, render-report.json removed, generate.mjs rerun so checks.json matches the delivered file."
+    }
+  ],
+  "interruptionImpact": "All interruptions were harness step limits, not access to forbidden inputs. Each builder resumed in its own session, so its own prior reasoning persisted; no builder saw the other builder, run-01, prior outputs or review artifacts. The run therefore remains a two-context comparison, but it is not a claim of uninterrupted single-shot generation. The reviewer is informed of these interruptions as coordination metadata; they must be recorded in the review result and its limitations.",
+  "reviewerInterruptions": "none during phase 1 (criteria derivation)",
+  "outcome": {
+    "study": null,
+    "studyDocumentation": "No study document was created for run-02 by request; artifacts live in this run folder.",
+    "builderA": "PASS_MIT_ABWEICHUNGEN",
+    "builderB": "PASS_MIT_ABWEICHUNGEN",
+    "measuredPairAgreement": true,
+    "pairAgreementScore": 1.0,
+    "pairAgreementBand": "hoch",
+    "criteriaCounts": {
+      "total": 101,
+      "explicit": 67,
+      "derived": 22,
+      "underdetermined": 12
+    },
+    "perDesignCounts": {
+      "pass": 96,
+      "fail": 4,
+      "na": 1,
+      "explicitFail": 0,
+      "derivedFail": 4
+    },
+    "sharedViolation": "Derived accessibility criteria A11Y01, A11Y02, A11Y03, A11Y07: no machine-readable ARIA annotations in this toolchain .fig format.",
+    "definitionChanged": false,
+    "criteriaChangedAfterSeal": false,
+    "sealVerifiedAtCompletion": true,
+    "inputHashesVerifiedAtCompletion": true
+  },
+  "layoutDeviationsFromRun01": {
+    "added": [
+      "builder-b/source-sha256.json: input provenance, same as builder-a",
+      "review/render-meta.json: render metadata referenced by the review scripts"
+    ],
+    "missing": [],
+    "note": "All run-01 paths are present; the two additions are documented in README.md."
+  },
+  "artifacts": {
+    "README.md": "68284298a94ad8e7a171651db67ea2c8628d26d8c2f91b26eed66707553f684b",
+    "builder-a/REPORT.md": "b9e0e35492a3d66901946454e5e073370cecb7d529632de6ed7e217bfd4d503b",
+    "builder-b/REPORT.md": "aec5d7cf11b4f748a9594b343a0d027c3df5ac11ecf61d5ecd214965e3fc5379",
+    "review/REVIEW.md": "de1b48bbfe5e1b791184bf1b3faf29f70dedf4d257c77051d3467a0c944bcb1a",
+    "review/results.json": "b055c5fb148282d33259517169f27b81913c50d20fec86193d8ac93c5ffc11d4"
+  }
+}

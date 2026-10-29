@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-29",
+  "tests": [
+    {
+      "command": [
+        "python3",
+        "tools/design-review/test_review.py"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "matched": true,
+      "stdout": "",
+      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.809s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/design-review/test_process.py"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "matched": true,
+      "stdout": "",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.007s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/design-review/check.py",
+        "--run",
+        "examples/autocomplete/reproducibility/run-01",
+        "--output",
+        "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/analyses/AC-R02/static-countercheck-run01.json"
+      ],
+      "expectedExit": 1,
+      "actualExit": 1,
+      "matched": true,
+      "stdout": "{\"overall\": \"FAIL\", \"release\": false, \"output\": \"/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/analyses/AC-R02/static-countercheck-run01.json\", \"blocked\": []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "tools/design-review/check.py",
+        "--run",
+        "examples/autocomplete/reproducibility/run-02",
+        "--output",
+        "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/analyses/AC-R02/static-countercheck-run02.json"
+      ],
+      "expectedExit": 1,
+      "actualExit": 1,
+      "matched": true,
+      "stdout": "{\"overall\": \"FAIL\", \"release\": false, \"output\": \"/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/analyses/AC-R02/static-countercheck-run02.json\", \"blocked\": []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/kcnpxcp/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        "skills/ui-contracts"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "matched": true,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/kcnpxcp/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        "/Users/kcnpxcp/.codex/skills/ui-contracts"
+      ],
+      "expectedExit": 0,
+      "actualExit": 0,
+      "matched": true,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    }
+  ],
+  "regressions": 19,
+  "run02Unchanged": true,
+  "run02FileCount": 32,
+  "installedSkillMatches": {
+    "SKILL.md": true,
+    "references/authoring.md": true,
+    "references/validation.md": true,
+    "references/reproducibility.md": true,
+    "agents/openai.yaml": true,
+    "scripts/contracts.py": true
+  },
+  "counterchecks": {
+    "01": {
+      "a": {
+        "overall": "FAIL",
+        "checkCount": 541,
+        "failures": [
+          "disabled.inputText.color"
+        ],
+        "warnings": []
+      },
+      "b": {
+        "overall": "FAIL",
+        "checkCount": 541,
+        "failures": [
+          "disabled.inputText.color"
+        ],
+        "warnings": []
+      }
+    },
+    "02": {
+      "a": {
+        "overall": "FAIL",
+        "checkCount": 541,
+        "failures": [
+          "disabled.inputText.color"
+        ],
+        "warnings": []
+      },
+      "b": {
+        "overall": "FAIL",
+        "checkCount": 541,
+        "failures": [
+          "disabled.inputText.color"
+        ],
+        "warnings": [
+          "closed.input.stroke.color",
+          "selected.input.stroke.color",
+          "disabled.input.stroke.color"
+        ]
+      }
+    }
+  },
+  "limits": [
+    "No independent agent forward-test",
+    "No full native/runtime/AX release",
+    "Historical missing provenance not reconstructed"
+  ],
+  "files": {
+    "tools/design-review/README.md": "9c47f8994533f49e188c64d2df5b6237a49024db4f167dd68515a4b36e29cd21",
+    "tools/design-review/check.py": "7581ce52b3253bd53dd33fb007c16069c111ffc2767ac61a9a89db8db4dbfbab",
+    "tools/design-review/check_process.py": "86fb6f0877fa1dc3bb235c617964b9f464441e0b83d895258531b0a7b5ce18a2",
+    "tools/design-review/profile.json": "0ca0736d0a9b33733c5ad73022e55170521e46c2cccdc36c286919fb16139325",
+    "tools/design-review/read-fig.mjs": "ade31f9b4cc646c3f7757450cea051df89e6d42a9ad89bedbd233cf220293ad0",
+    "tools/design-review/test_process.py": "f99a8aac86d765fafce0ef5688912350dc872bbf3a4c4280b1f5a34463781284",
+    "tools/design-review/test_review.py": "071af5dec3463c700248b6461217673b400c8b06da01f12b0dff335af57ea8ab",
+    "skills/ui-contracts/SKILL.md": "11f424f8345c01edbcdf776e63dcb9ac860954551a8f27defb016d61607fd88d",
+    "skills/ui-contracts/agents/openai.yaml": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d",
+    "skills/ui-contracts/references/authoring.md": "68843051990a89bd4008dfcccc128341e4a7fb9deddcc441f0b0c34df16c88de",
+    "skills/ui-contracts/references/reproducibility.md": "4043006e847151c6616724c0cf8f0364e5c3fb5f9b4e863f3fb11f52bcd798a8",
+    "skills/ui-contracts/references/validation.md": "c573f99b68c24e0d252adb92babbdb8fc4933c368a6e53e2dfe7d3a1dd247239",
+    "skills/ui-contracts/scripts/contracts.py": "142147faf9e549cf787d0b05f33b5cc340e01e5ea8f69db484d0f953f38789c5",
+    "docs/skills/ISSUES.md": "2aa2294eb4532a9c69c26e9cc5e1b4fb8c03b1f7cc435b5e37be2e9955781fe2",
+    "docs/skills/README.md": "50aabd74268fa9ad8c507a62f2dec09cd7ff7f79443910c5ed038769bd934385",
+    "docs/skills/REPRODUCIBILITY.md": "a648d99ec392d28744556159617cdc32ef57e59ba8fd6d4f9226bb7786ae844b"
+  }
+}

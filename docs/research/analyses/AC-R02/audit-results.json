@@ -1,0 +1,554 @@
+{
+  "auditDate": "2026-10-29",
+  "run": "AC-R02",
+  "model": {
+    "name": "DeepSeek V4.1 Flash",
+    "source": "user statement; absent from run-02 metadata",
+    "reasoning": null,
+    "perRoleConfiguration": "not recorded"
+  },
+  "method": "Read-only source audit; replay of historical tools in temporary copy; direct original-reader observation; in-memory counterexamples.",
+  "integrity": {
+    "reviewManifest": {
+      "review/preregistered.md": true,
+      "review/preregistered.json": true,
+      "review/preregistration-seal.json": true,
+      "review/original-a.json": true,
+      "review/original-b.json": true,
+      "review/normalized-a.json": true,
+      "review/normalized-b.json": true,
+      "review/native-checks.json": true,
+      "review/render-a.png": true,
+      "review/render-b.png": true,
+      "review/render-meta.json": true,
+      "review/inspect-original.mjs": true,
+      "review/render-original.mjs": true,
+      "review/verify.py": true,
+      "review/results.json": true,
+      "review/REVIEW.md": true,
+      "builder-a/autocomplete.fig": true,
+      "builder-a/REPORT.md": true,
+      "builder-a/checks.json": true,
+      "builder-a/source-sha256.json": true,
+      "builder-a/generate.mjs": true,
+      "builder-a/preview.png": true,
+      "builder-b/autocomplete.fig": true,
+      "builder-b/REPORT.md": true,
+      "builder-b/checks.json": true,
+      "builder-b/source-sha256.json": true,
+      "builder-b/generate.mjs": true,
+      "builder-b/preview.png": true,
+      "builder-b/preview.svg": true
+    },
+    "criteriaSeal": {
+      "review/preregistered.json": true,
+      "review/preregistered.md": true
+    },
+    "runArtifacts": {
+      "README.md": true,
+      "builder-a/REPORT.md": true,
+      "builder-b/REPORT.md": true,
+      "review/REVIEW.md": true,
+      "review/results.json": true
+    },
+    "builderDeliveries": {
+      "builder-a": {
+        "REPORT.md": true,
+        "autocomplete.fig": true,
+        "checks.json": true,
+        "generate.mjs": true,
+        "preview.png": true,
+        "source-sha256.json": true
+      },
+      "builder-b": {
+        "REPORT.md": true,
+        "autocomplete.fig": true,
+        "checks.json": true,
+        "generate.mjs": true,
+        "preview.png": true,
+        "preview.svg": true,
+        "source-sha256.json": true
+      }
+    },
+    "definitionFiles": {
+      "README.md": true,
+      "autocomplete/README.md": true,
+      "autocomplete/accessibility.html": true,
+      "autocomplete/accessibility.rules.json": true,
+      "autocomplete/behavior.scxml": true,
+      "autocomplete/component.json": true,
+      "autocomplete/error-relay.scxml": true,
+      "autocomplete/interface.json": true,
+      "autocomplete/layout.css": true,
+      "autocomplete/stories.json": true,
+      "library.json": true,
+      "overlay/accessibility.html": true,
+      "overlay/behavior.scxml": true,
+      "overlay/component.json": true,
+      "overlay/interface.json": true,
+      "overlay/layout.css": true,
+      "scroll-area/accessibility.html": true,
+      "scroll-area/behavior.scxml": true,
+      "scroll-area/component.json": true,
+      "scroll-area/interface.json": true,
+      "scroll-area/layout.css": true,
+      "tokens.json": true
+    },
+    "toolchainLock": true,
+    "definitionRevision": true,
+    "sameInputsAsRun01": true,
+    "sameToolchainAsRun01": true
+  },
+  "replay": {
+    "steps": [
+      {
+        "command": [
+          "node",
+          "examples/autocomplete/reproducibility/run-02/review/inspect-original.mjs"
+        ],
+        "exit": 0,
+        "stdout": "{\n  \"a\": {\n    \"nodes\": 129,\n    \"cases\": [\n      \"closed\",\n      \"opening\",\n      \"loading\",\n      \"ready\",\n      \"active\",\n      \"scroll-end\",\n      \"selected\",\n      \"empty\",\n      \"error\",\n      \"disabled\"\n    ],\n    \"bytes\": 60025,\n    \"sha\": \"f79ff07fd70d4775c344b0d8b0da8d33be1bc0c355751b1bc8de33c61a6d7da0\"\n  },\n  \"b\": {\n    \"nodes\": 122,\n    \"cases\": [\n      \"closed\",\n      \"opening\",\n      \"loading\",\n      \"ready\",\n      \"active\",\n      \"scroll-end\",\n      \"selected\",\n      \"empty\",\n      \"error\",\n      \"disabled\"\n    ],\n    \"bytes\": 31306,\n    \"sha\": \"fbd3b9934a3e4f28b665392f8fe053e1b896103f56e6cf2e355549b909459f0a\"\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "node",
+          "examples/autocomplete/reproducibility/run-02/review/render-original.mjs"
+        ],
+        "exit": 0,
+        "stdout": "{\n  \"a\": {\n    \"design\": \"A\",\n    \"file\": \"/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ac-r02-external-pvsyiixn/examples/autocomplete/reproducibility/run-02/builder-a/autocomplete.fig\",\n    \"pageId\": \"0:3\",\n    \"pageName\": \"Autocomplete\",\n    \"pages\": [\n      {\n        \"id\": \"0:3\",\n        \"name\": \"Autocomplete\",\n        \"children\": 21\n      }\n    ],\n    \"contentBounds\": {\n      \"x\": 0,\n      \"y\": -64,\n      \"w\": 980,\n      \"h\": 1504\n    },\n    \"scale\": 2,\n    \"pngBytes\": 286268,\n    \"pngSignature\": [\n      137,\n      80,\n      78,\n      71,\n      13,\n      10,\n      26,\n      10\n    ]\n  },\n  \"b\": {\n    \"design\": \"B\",\n    \"file\": \"/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ac-r02-external-pvsyiixn/examples/autocomplete/reproducibility/run-02/builder-b/autocomplete.fig\",\n    \"pageId\": \"0:4\",\n    \"pageName\": \"Autocomplete\",\n    \"pages\": [\n      {\n        \"id\": \"0:3\",\n        \"name\": \"Page 1\",\n        \"children\": 0\n      },\n      {\n        \"id\": \"0:4\",\n        \"name\": \"Autocomplete\",\n        \"children\": 1\n      }\n    ],\n    \"contentBounds\": {\n      \"x\": 0,\n      \"y\": -64,\n      \"w\": 1968,\n      \"h\": 814\n    },\n    \"scale\": 2,\n    \"pngBytes\": 219034,\n    \"pngSignature\": [\n      137,\n      80,\n      78,\n      71,\n      13,\n      10,\n      26,\n      10\n    ]\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "examples/autocomplete/reproducibility/run-02/review/verify.py",
+          "--native-only"
+        ],
+        "exit": 0,
+        "stdout": "{\n  \"native-checks\": \"/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ac-r02-external-pvsyiixn/examples/autocomplete/reproducibility/run-02/review/native-checks.json\",\n  \"aCases\": 10,\n  \"bCases\": 10\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "examples/autocomplete/reproducibility/run-02/review/verify.py"
+        ],
+        "exit": 0,
+        "stdout": "{\n  \"A\": \"PASS_MIT_ABWEICHUNGEN\",\n  \"B\": \"PASS_MIT_ABWEICHUNGEN\",\n  \"pairScore\": 1.0,\n  \"pairBand\": \"hoch\"\n}\nA counts {'pass': 96, 'fail': 4, 'na': 1, 'explicit_fail': 0, 'derived_fail': 4} B counts {'pass': 96, 'fail': 4, 'na': 1, 'explicit_fail': 0, 'derived_fail': 4}\njointly failed ['A11Y01', 'A11Y02', 'A11Y03', 'A11Y07']\n",
+        "stderr": ""
+      }
+    ],
+    "verdictSummary": {
+      "A": "PASS_MIT_ABWEICHUNGEN",
+      "B": "PASS_MIT_ABWEICHUNGEN",
+      "pairScore": 1.0,
+      "pairBand": "hoch"
+    },
+    "sameCriterionEvaluations": true,
+    "samePairAgreement": true,
+    "renderHashesMatch": {
+      "a": true,
+      "b": true
+    },
+    "sameNativeNodesA": true,
+    "sameNativeNodesB": true
+  },
+  "directReader": {
+    "a": {
+      "locked": [],
+      "caseFrames": 10,
+      "placeholderNodes": [
+        {
+          "id": "0:9",
+          "name": "input text",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:15",
+          "name": "input text",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:32",
+          "name": "input text",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:55",
+          "name": "input text",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:78",
+          "name": "input text",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:129",
+          "name": "input text",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.5803921818733215,
+                "g": 0.6392157077789307,
+                "b": 0.7215686440467834,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        }
+      ]
+    },
+    "b": {
+      "locked": [],
+      "caseFrames": 10,
+      "placeholderNodes": [
+        {
+          "id": "0:11",
+          "name": "input/placeholder",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:16",
+          "name": "input/placeholder",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:31",
+          "name": "input/placeholder",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:53",
+          "name": "input/placeholder",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:75",
+          "name": "input/placeholder",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3921568691730499,
+                "g": 0.45490196347236633,
+                "b": 0.545098066329956,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        },
+        {
+          "id": "0:122",
+          "name": "input/placeholder",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.5803921818733215,
+                "g": 0.6392157077789307,
+                "b": 0.7215686440467834,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sourceConformityCounterFinding": {
+    "A": {
+      "nodeId": "0:129",
+      "text": "Stadt suchen …",
+      "color": [
+        "#94A3B8"
+      ],
+      "expectedFromSource": "#64748B",
+      "sourceConformant": false
+    },
+    "B": {
+      "nodeId": "0:122",
+      "text": "Stadt suchen …",
+      "color": [
+        "#94A3B8"
+      ],
+      "expectedFromSource": "#64748B",
+      "sourceConformant": false
+    }
+  },
+  "checkerCounterexamples": [
+    {
+      "name": "source-correct disabled placeholder #64748B",
+      "kind": "in-memory counterexample, not an artifact finding",
+      "changedStatuses": {
+        "ST10": {
+          "before": "pass",
+          "after": "fail"
+        },
+        "COL08": {
+          "before": "pass",
+          "after": "fail"
+        }
+      },
+      "relatedCriteria": {
+        "ST10": {
+          "status": "fail",
+          "observed": "surface=False, status='', inputText=#64748B",
+          "note": ""
+        },
+        "COL03": {
+          "status": "pass",
+          "observed": "Placeholder-Farben: closed=#64748B, opening=#64748B, ready=#64748B, active=#64748B, scroll-end=#64748B, disabled=#64748B (disabled #94A3B8 laut AS15 zulässig)",
+          "note": ""
+        },
+        "COL08": {
+          "status": "fail",
+          "observed": "disabled: text #64748B, Rahmen #CBD5E1",
+          "note": ""
+        }
+      },
+      "pairScoreAfterProbe": 0.998
+    },
+    {
+      "name": "input stroke weight 9 instead of 1",
+      "kind": "in-memory counterexample, not an artifact finding",
+      "changedStatuses": {},
+      "relatedCriteria": {
+        "GEO08": {
+          "status": "pass",
+          "observed": "Input radius 8, 1 px Stroke; Surface radius 8, 0 Strokes; Rahmenstärke 1",
+          "note": ""
+        }
+      },
+      "pairScoreAfterProbe": 1.0
+    },
+    {
+      "name": "second ready option font size 28 instead of 14",
+      "kind": "in-memory counterexample, not an artifact finding",
+      "changedStatuses": {},
+      "relatedCriteria": {
+        "TY02": {
+          "status": "pass",
+          "observed": "Label/Input/Option 14 px",
+          "note": ""
+        }
+      },
+      "pairScoreAfterProbe": 1.0
+    },
+    {
+      "name": "loading input value colored error-red instead of text color",
+      "kind": "in-memory counterexample, not an artifact finding",
+      "changedStatuses": {},
+      "relatedCriteria": {
+        "COL02": {
+          "status": "pass",
+          "observed": "Label #172B4D, Optionstext #172B4D, Inputtext (nicht Placeholder) #B91C1C",
+          "note": ""
+        },
+        "COL11": {
+          "status": "pass",
+          "observed": "alle Farben aus den acht Tokens (±3)",
+          "note": ""
+        }
+      },
+      "pairScoreAfterProbe": 0.998
+    }
+  ],
+  "run02Before": {
+    "README.md": "68284298a94ad8e7a171651db67ea2c8628d26d8c2f91b26eed66707553f684b",
+    "builder-a/REPORT.md": "b9e0e35492a3d66901946454e5e073370cecb7d529632de6ed7e217bfd4d503b",
+    "builder-a/autocomplete.fig": "f79ff07fd70d4775c344b0d8b0da8d33be1bc0c355751b1bc8de33c61a6d7da0",
+    "builder-a/checks.json": "f2834c1c844ba7f486f9815a0a13897ebffb8782eb1e11d5487aa801df74fca7",
+    "builder-a/generate.mjs": "54d51ff7185634f24fcad825542f7f33d1cd750c32c4c967a1a5da38bcaceaad",
+    "builder-a/preview.png": "36a216a4e62b4ed2610109de6e70d204e6dd6fdccf36939855af9a9c76ebf003",
+    "builder-a/source-sha256.json": "f9337147f57a8417d231828ceddde57b93a512b61b6cee275ae12f17df0cf27c",
+    "builder-b/REPORT.md": "aec5d7cf11b4f748a9594b343a0d027c3df5ac11ecf61d5ecd214965e3fc5379",
+    "builder-b/autocomplete.fig": "fbd3b9934a3e4f28b665392f8fe053e1b896103f56e6cf2e355549b909459f0a",
+    "builder-b/checks.json": "d1826ceef96b796fe9b304c2087320d341b9b1576fe553f615d7b1d33a30e728",
+    "builder-b/generate.mjs": "5309bccb10dff6a338758fedb4b60ba85bcbc28ee1bf629eca639ab0c3290efb",
+    "builder-b/preview.png": "b6d935eedd663a355dc7d1890a6ea26826c9916f18e10671e194d3a398f44aa0",
+    "builder-b/preview.svg": "cbe15a869017f9adf507eed62d6c558842dab083481eeb065b467ce996d4ce0d",
+    "builder-b/source-sha256.json": "f1d739f03bd8188099eca4bbb3d5ec1e6adee28852d9753d7a9e0cc1200ca8d4",
+    "review/REVIEW.md": "de1b48bbfe5e1b791184bf1b3faf29f70dedf4d257c77051d3467a0c944bcb1a",
+    "review/hashes.json": "40205439039387ad30ea0e573f9a236c349b085aafcb065125a3b5f05902ed5b",
+    "review/inspect-original.mjs": "58861231b75f031d67e1db18562b58c9a89de3f17f07d1b6d3481b4eff81a45f",
+    "review/native-checks.json": "6863cb97c4836e7c2e5b8ef4ca396585ebf8d72db45d98fb38f8f57fb7c75540",
+    "review/normalized-a.json": "9d2eeb77fe0800bf61ca807a7821ea2e637fd798afc4dc54201edd548dd5dcae",
+    "review/normalized-b.json": "9b275a0b4b59cefb3cba51ae644a27067ab0060169919b1210f520c2d4ea25a3",
+    "review/original-a.json": "a1911c1f1ef823a1ca8e6db510acf4239dbcb725a42d334f441742abc013185c",
+    "review/original-b.json": "44a3fda4d590a6c7fe684dc798348e3fe3b07179fe423f27ec49dad07109ba18",
+    "review/preregistered.json": "d10761dede1ec7973461be1bdab25be573072ee240fa44954c482b3cee3b0dea",
+    "review/preregistered.md": "0c6d660f5a509935f1905fdd16bd2a9cbf1250101e5aabc20bbfc51647078458",
+    "review/preregistration-seal.json": "3d600b9e319eaab6c58dafced4f047611cb0187f3b55a41921a8414cf3cba720",
+    "review/render-a.png": "d26be652f34c8913acf6f395eebe4c406b687dca271fb48956f17f061312f179",
+    "review/render-b.png": "b6d935eedd663a355dc7d1890a6ea26826c9916f18e10671e194d3a398f44aa0",
+    "review/render-meta.json": "4b840f88b345eafa4bd561d1a2a821d7dbc10c3e535a9f9bd4a8fe8c37466c3f",
+    "review/render-original.mjs": "a6667e2c1e08bbd017dc64aa81943b3df969f12f396483382a4ce55fb7947792",
+    "review/results.json": "b055c5fb148282d33259517169f27b81913c50d20fec86193d8ac93c5ffc11d4",
+    "review/verify.py": "f3ccabd2a2d97ea71638c80351b56938afb79b9bac199bbe0caa2651f8e8d891",
+    "run.json": "798be53aaf13e2be152f98dbf2f9ba0fe06e0bfdcea2e834b443efa9f22d8717"
+  },
+  "run02After": {
+    "README.md": "68284298a94ad8e7a171651db67ea2c8628d26d8c2f91b26eed66707553f684b",
+    "builder-a/REPORT.md": "b9e0e35492a3d66901946454e5e073370cecb7d529632de6ed7e217bfd4d503b",
+    "builder-a/autocomplete.fig": "f79ff07fd70d4775c344b0d8b0da8d33be1bc0c355751b1bc8de33c61a6d7da0",
+    "builder-a/checks.json": "f2834c1c844ba7f486f9815a0a13897ebffb8782eb1e11d5487aa801df74fca7",
+    "builder-a/generate.mjs": "54d51ff7185634f24fcad825542f7f33d1cd750c32c4c967a1a5da38bcaceaad",
+    "builder-a/preview.png": "36a216a4e62b4ed2610109de6e70d204e6dd6fdccf36939855af9a9c76ebf003",
+    "builder-a/source-sha256.json": "f9337147f57a8417d231828ceddde57b93a512b61b6cee275ae12f17df0cf27c",
+    "builder-b/REPORT.md": "aec5d7cf11b4f748a9594b343a0d027c3df5ac11ecf61d5ecd214965e3fc5379",
+    "builder-b/autocomplete.fig": "fbd3b9934a3e4f28b665392f8fe053e1b896103f56e6cf2e355549b909459f0a",
+    "builder-b/checks.json": "d1826ceef96b796fe9b304c2087320d341b9b1576fe553f615d7b1d33a30e728",
+    "builder-b/generate.mjs": "5309bccb10dff6a338758fedb4b60ba85bcbc28ee1bf629eca639ab0c3290efb",
+    "builder-b/preview.png": "b6d935eedd663a355dc7d1890a6ea26826c9916f18e10671e194d3a398f44aa0",
+    "builder-b/preview.svg": "cbe15a869017f9adf507eed62d6c558842dab083481eeb065b467ce996d4ce0d",
+    "builder-b/source-sha256.json": "f1d739f03bd8188099eca4bbb3d5ec1e6adee28852d9753d7a9e0cc1200ca8d4",
+    "review/REVIEW.md": "de1b48bbfe5e1b791184bf1b3faf29f70dedf4d257c77051d3467a0c944bcb1a",
+    "review/hashes.json": "40205439039387ad30ea0e573f9a236c349b085aafcb065125a3b5f05902ed5b",
+    "review/inspect-original.mjs": "58861231b75f031d67e1db18562b58c9a89de3f17f07d1b6d3481b4eff81a45f",
+    "review/native-checks.json": "6863cb97c4836e7c2e5b8ef4ca396585ebf8d72db45d98fb38f8f57fb7c75540",
+    "review/normalized-a.json": "9d2eeb77fe0800bf61ca807a7821ea2e637fd798afc4dc54201edd548dd5dcae",
+    "review/normalized-b.json": "9b275a0b4b59cefb3cba51ae644a27067ab0060169919b1210f520c2d4ea25a3",
+    "review/original-a.json": "a1911c1f1ef823a1ca8e6db510acf4239dbcb725a42d334f441742abc013185c",
+    "review/original-b.json": "44a3fda4d590a6c7fe684dc798348e3fe3b07179fe423f27ec49dad07109ba18",
+    "review/preregistered.json": "d10761dede1ec7973461be1bdab25be573072ee240fa44954c482b3cee3b0dea",
+    "review/preregistered.md": "0c6d660f5a509935f1905fdd16bd2a9cbf1250101e5aabc20bbfc51647078458",
+    "review/preregistration-seal.json": "3d600b9e319eaab6c58dafced4f047611cb0187f3b55a41921a8414cf3cba720",
+    "review/render-a.png": "d26be652f34c8913acf6f395eebe4c406b687dca271fb48956f17f061312f179",
+    "review/render-b.png": "b6d935eedd663a355dc7d1890a6ea26826c9916f18e10671e194d3a398f44aa0",
+    "review/render-meta.json": "4b840f88b345eafa4bd561d1a2a821d7dbc10c3e535a9f9bd4a8fe8c37466c3f",
+    "review/render-original.mjs": "a6667e2c1e08bbd017dc64aa81943b3df969f12f396483382a4ce55fb7947792",
+    "review/results.json": "b055c5fb148282d33259517169f27b81913c50d20fec86193d8ac93c5ffc11d4",
+    "review/verify.py": "f3ccabd2a2d97ea71638c80351b56938afb79b9bac199bbe0caa2651f8e8d891",
+    "run.json": "798be53aaf13e2be152f98dbf2f9ba0fe06e0bfdcea2e834b443efa9f22d8717"
+  },
+  "run02Unchanged": true
+}

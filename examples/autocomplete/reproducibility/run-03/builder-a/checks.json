@@ -1,0 +1,3305 @@
+{
+  "component": "ui-contracts:Autocomplete v0.1.0",
+  "run": "autocomplete/reproducibility/run-03/builder-a",
+  "artifacts": {
+    "autocomplete.fig": 42176,
+    "preview.png": 327145,
+    "preview.svg": 18309
+  },
+  "nodeCount": 136,
+  "checks": [
+    {
+      "id": "d01",
+      "description": "autocomplete.fig existiert und ist nicht leer",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "d02",
+      "description": "fig-Dateigröße in Bytes",
+      "expected": 42176,
+      "actual": 42176,
+      "pass": true
+    },
+    {
+      "id": "d03",
+      "description": "genau eine sichtbare Seite",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "id": "d04",
+      "description": "Seitenname",
+      "expected": "Autocomplete",
+      "actual": "Autocomplete",
+      "pass": true
+    },
+    {
+      "id": "d05",
+      "description": "Knotenanzahl im wiedereingelesenen Graphen",
+      "expected": 136,
+      "actual": 136,
+      "pass": true
+    },
+    {
+      "id": "c01",
+      "description": "alle zehn Fälle als benannte Frames vorhanden",
+      "expected": [
+        "active",
+        "closed",
+        "disabled",
+        "empty",
+        "error",
+        "loading",
+        "opening",
+        "ready",
+        "scroll-end",
+        "selected"
+      ],
+      "actual": [
+        "active",
+        "closed",
+        "disabled",
+        "empty",
+        "error",
+        "loading",
+        "opening",
+        "ready",
+        "scroll-end",
+        "selected"
+      ],
+      "pass": true
+    },
+    {
+      "id": "c02",
+      "description": "Fallanzahl",
+      "expected": 10,
+      "actual": 10,
+      "pass": true
+    },
+    {
+      "id": "c03",
+      "description": "Fall-IDs entsprechen der README-Zählung",
+      "expected": [
+        "closed",
+        "opening",
+        "loading",
+        "ready",
+        "active",
+        "scroll-end",
+        "selected",
+        "empty",
+        "error",
+        "disabled"
+      ],
+      "actual": [
+        "closed",
+        "opening",
+        "loading",
+        "ready",
+        "active",
+        "scroll-end",
+        "selected",
+        "empty",
+        "error",
+        "disabled"
+      ],
+      "pass": true
+    },
+    {
+      "id": "r01",
+      "description": "Fokusborder-States laut autocomplete/layout.css",
+      "expected": [
+        "empty",
+        "error",
+        "loading",
+        "opening",
+        "ready"
+      ],
+      "actual": [
+        "empty",
+        "error",
+        "loading",
+        "opening",
+        "ready"
+      ],
+      "pass": true
+    },
+    {
+      "id": "r02",
+      "description": "Overlay-Anker laut overlay/layout.css",
+      "expected": {
+        "top": "anchor(bottom)",
+        "left": "anchor(left)",
+        "width": "anchor-size(width)"
+      },
+      "actual": {
+        "top": "anchor(bottom)",
+        "left": "anchor(left)",
+        "width": "anchor-size(width)"
+      },
+      "pass": true
+    },
+    {
+      "id": "r03",
+      "description": "Viewport-Clipping laut scroll-area/layout.css",
+      "expected": "auto",
+      "actual": "auto",
+      "pass": true
+    },
+    {
+      "id": "f01a",
+      "description": "closed: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f01b",
+      "description": "closed: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f01c",
+      "description": "closed: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f01d",
+      "description": "closed: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f01e",
+      "description": "closed: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f01f",
+      "description": "closed: Input-Randfarbe (border)",
+      "expected": {
+        "color": {
+          "r": 0.796078431372549,
+          "g": 0.8352941176470589,
+          "b": 0.8823529411764706,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.7960784435272217,
+          "g": 0.8352941274642944,
+          "b": 0.8823529481887817,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f01g",
+      "description": "closed: Input-Inhalt",
+      "expected": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f01h",
+      "description": "closed: Overlayfläche sichtbar",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "id": "f01t",
+      "description": "closed: Status-Text",
+      "expected": "",
+      "actual": "",
+      "pass": true
+    },
+    {
+      "id": "f01v",
+      "description": "closed: Status-Position und Farbe",
+      "expected": {
+        "y": 80,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 80,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f01w",
+      "description": "closed: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 100
+      },
+      "actual": {
+        "w": 320,
+        "h": 100
+      },
+      "pass": true
+    },
+    {
+      "id": "f02a",
+      "description": "opening: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f02b",
+      "description": "opening: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f02c",
+      "description": "opening: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f02d",
+      "description": "opening: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f02e",
+      "description": "opening: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f02f",
+      "description": "opening: Input-Randfarbe (focus)",
+      "expected": {
+        "color": {
+          "r": 0.1450980392156863,
+          "g": 0.38823529411764707,
+          "b": 0.9215686274509803,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.14509804546833038,
+          "g": 0.38823530077934265,
+          "b": 0.9215686321258545,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f02g",
+      "description": "opening: Input-Inhalt",
+      "expected": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f02h",
+      "description": "opening: Overlayfläche sichtbar",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "id": "f02t",
+      "description": "opening: Status-Text",
+      "expected": "Suche wird geöffnet.",
+      "actual": "Suche wird geöffnet.",
+      "pass": true
+    },
+    {
+      "id": "f02v",
+      "description": "opening: Status-Position und Farbe",
+      "expected": {
+        "y": 80,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 80,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f02w",
+      "description": "opening: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 100
+      },
+      "actual": {
+        "w": 320,
+        "h": 100
+      },
+      "pass": true
+    },
+    {
+      "id": "f03a",
+      "description": "loading: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f03b",
+      "description": "loading: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f03c",
+      "description": "loading: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f03d",
+      "description": "loading: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f03e",
+      "description": "loading: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f03f",
+      "description": "loading: Input-Randfarbe (focus)",
+      "expected": {
+        "color": {
+          "r": 0.1450980392156863,
+          "g": 0.38823529411764707,
+          "b": 0.9215686274509803,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.14509804546833038,
+          "g": 0.38823530077934265,
+          "b": 0.9215686321258545,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f03g",
+      "description": "loading: Input-Inhalt",
+      "expected": {
+        "name": "Query",
+        "chars": "Be",
+        "color": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Query",
+        "chars": "Be",
+        "color": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f03h",
+      "description": "loading: Overlayfläche sichtbar",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "f03i",
+      "description": "loading: Popup-Maße",
+      "expected": {
+        "w": 320,
+        "h": 32,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 32,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f03j",
+      "description": "loading: Popup-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f03k",
+      "description": "loading: Popup-Schatten (0 2px 8px #0003)",
+      "expected": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.2
+        }
+      },
+      "actual": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.20000000298023224
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f03l",
+      "description": "loading: Viewport (geclippt)",
+      "expected": {
+        "h": 32,
+        "clips": true
+      },
+      "actual": {
+        "h": 32,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f03m",
+      "description": "loading: Scrollinhalt-Versatz (scrollOffset)",
+      "expected": {
+        "y": 0,
+        "h": 32
+      },
+      "actual": {
+        "y": 0,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "f03u",
+      "description": "loading: Meldungszeile im Popup",
+      "expected": {
+        "name": "Message Row",
+        "h": 32,
+        "text": "Städte werden geladen."
+      },
+      "actual": {
+        "name": "Message Row",
+        "h": 32,
+        "text": "Städte werden geladen."
+      },
+      "pass": true
+    },
+    {
+      "id": "f03t",
+      "description": "loading: Status-Text",
+      "expected": "Städte werden geladen.",
+      "actual": "Städte werden geladen.",
+      "pass": true
+    },
+    {
+      "id": "f03v",
+      "description": "loading: Status-Position und Farbe",
+      "expected": {
+        "y": 120,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 120,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f03w",
+      "description": "loading: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 140
+      },
+      "actual": {
+        "w": 320,
+        "h": 140
+      },
+      "pass": true
+    },
+    {
+      "id": "f04a",
+      "description": "ready: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f04b",
+      "description": "ready: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f04c",
+      "description": "ready: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f04d",
+      "description": "ready: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f04e",
+      "description": "ready: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f04f",
+      "description": "ready: Input-Randfarbe (focus)",
+      "expected": {
+        "color": {
+          "r": 0.1450980392156863,
+          "g": 0.38823529411764707,
+          "b": 0.9215686274509803,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.14509804546833038,
+          "g": 0.38823530077934265,
+          "b": 0.9215686321258545,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f04g",
+      "description": "ready: Input-Inhalt",
+      "expected": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f04h",
+      "description": "ready: Overlayfläche sichtbar",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "f04i",
+      "description": "ready: Popup-Maße",
+      "expected": {
+        "w": 320,
+        "h": 160,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 160,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f04j",
+      "description": "ready: Popup-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f04k",
+      "description": "ready: Popup-Schatten (0 2px 8px #0003)",
+      "expected": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.2
+        }
+      },
+      "actual": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.20000000298023224
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f04l",
+      "description": "ready: Viewport (geclippt)",
+      "expected": {
+        "h": 160,
+        "clips": true
+      },
+      "actual": {
+        "h": 160,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f04m",
+      "description": "ready: Scrollinhalt-Versatz (scrollOffset)",
+      "expected": {
+        "y": 0,
+        "h": 224
+      },
+      "actual": {
+        "y": 0,
+        "h": 224
+      },
+      "pass": true
+    },
+    {
+      "id": "f04n",
+      "description": "ready: Optionen (Namen in Reihenfolge)",
+      "expected": [
+        "Option: berlin",
+        "Option: hamburg",
+        "Option: muenchen",
+        "Option: dresden",
+        "Option: koeln",
+        "Option: wien",
+        "Option: zuerich"
+      ],
+      "actual": [
+        "Option: berlin",
+        "Option: hamburg",
+        "Option: muenchen",
+        "Option: dresden",
+        "Option: koeln",
+        "Option: wien",
+        "Option: zuerich"
+      ],
+      "pass": true
+    },
+    {
+      "id": "f04o",
+      "description": "ready: Optionszeilen (Maße)",
+      "expected": [
+        {
+          "y": 0,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 32,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 64,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 96,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 128,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 160,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 192,
+          "h": 32,
+          "w": 320
+        }
+      ],
+      "actual": [
+        {
+          "y": 0,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 32,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 64,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 96,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 128,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 160,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 192,
+          "h": 32,
+          "w": 320
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f04p",
+      "description": "ready: Optionstexte",
+      "expected": [
+        "Berlin",
+        "Hamburg",
+        "München",
+        "Dresden",
+        "Köln",
+        "Wien",
+        "Zürich"
+      ],
+      "actual": [
+        "Berlin",
+        "Hamburg",
+        "München",
+        "Dresden",
+        "Köln",
+        "Wien",
+        "Zürich"
+      ],
+      "pass": true
+    },
+    {
+      "id": "f04q",
+      "description": "ready: aktive Option hervorgehoben",
+      "expected": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "pass": true
+    },
+    {
+      "id": "f04r",
+      "description": "ready: deaktivierte Option farblich gedimmt",
+      "expected": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "pass": true
+    },
+    {
+      "id": "f04t",
+      "description": "ready: Status-Text",
+      "expected": "7 Städte verfügbar.",
+      "actual": "7 Städte verfügbar.",
+      "pass": true
+    },
+    {
+      "id": "f04v",
+      "description": "ready: Status-Position und Farbe",
+      "expected": {
+        "y": 248,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 248,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f04w",
+      "description": "ready: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 268
+      },
+      "actual": {
+        "w": 320,
+        "h": 268
+      },
+      "pass": true
+    },
+    {
+      "id": "f05a",
+      "description": "active: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f05b",
+      "description": "active: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f05c",
+      "description": "active: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f05d",
+      "description": "active: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f05e",
+      "description": "active: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f05f",
+      "description": "active: Input-Randfarbe (focus)",
+      "expected": {
+        "color": {
+          "r": 0.1450980392156863,
+          "g": 0.38823529411764707,
+          "b": 0.9215686274509803,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.14509804546833038,
+          "g": 0.38823530077934265,
+          "b": 0.9215686321258545,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f05g",
+      "description": "active: Input-Inhalt",
+      "expected": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f05h",
+      "description": "active: Overlayfläche sichtbar",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "f05i",
+      "description": "active: Popup-Maße",
+      "expected": {
+        "w": 320,
+        "h": 160,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 160,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f05j",
+      "description": "active: Popup-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f05k",
+      "description": "active: Popup-Schatten (0 2px 8px #0003)",
+      "expected": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.2
+        }
+      },
+      "actual": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.20000000298023224
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f05l",
+      "description": "active: Viewport (geclippt)",
+      "expected": {
+        "h": 160,
+        "clips": true
+      },
+      "actual": {
+        "h": 160,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f05m",
+      "description": "active: Scrollinhalt-Versatz (scrollOffset)",
+      "expected": {
+        "y": 0,
+        "h": 224
+      },
+      "actual": {
+        "y": 0,
+        "h": 224
+      },
+      "pass": true
+    },
+    {
+      "id": "f05n",
+      "description": "active: Optionen (Namen in Reihenfolge)",
+      "expected": [
+        "Option: berlin",
+        "Option: hamburg",
+        "Option: muenchen",
+        "Option: dresden",
+        "Option: koeln",
+        "Option: wien",
+        "Option: zuerich"
+      ],
+      "actual": [
+        "Option: berlin",
+        "Option: hamburg",
+        "Option: muenchen",
+        "Option: dresden",
+        "Option: koeln",
+        "Option: wien",
+        "Option: zuerich"
+      ],
+      "pass": true
+    },
+    {
+      "id": "f05o",
+      "description": "active: Optionszeilen (Maße)",
+      "expected": [
+        {
+          "y": 0,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 32,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 64,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 96,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 128,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 160,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 192,
+          "h": 32,
+          "w": 320
+        }
+      ],
+      "actual": [
+        {
+          "y": 0,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 32,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 64,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 96,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 128,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 160,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 192,
+          "h": 32,
+          "w": 320
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f05p",
+      "description": "active: Optionstexte",
+      "expected": [
+        "Berlin",
+        "Hamburg",
+        "München",
+        "Dresden",
+        "Köln",
+        "Wien",
+        "Zürich"
+      ],
+      "actual": [
+        "Berlin",
+        "Hamburg",
+        "München",
+        "Dresden",
+        "Köln",
+        "Wien",
+        "Zürich"
+      ],
+      "pass": true
+    },
+    {
+      "id": "f05q",
+      "description": "active: aktive Option hervorgehoben",
+      "expected": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "pass": true
+    },
+    {
+      "id": "f05r",
+      "description": "active: deaktivierte Option farblich gedimmt",
+      "expected": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "pass": true
+    },
+    {
+      "id": "f05s",
+      "description": "active: aktive Zeile liegt im sichtbaren Viewport",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "f05t",
+      "description": "active: Status-Text",
+      "expected": "7 Städte verfügbar.",
+      "actual": "7 Städte verfügbar.",
+      "pass": true
+    },
+    {
+      "id": "f05v",
+      "description": "active: Status-Position und Farbe",
+      "expected": {
+        "y": 248,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 248,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f05w",
+      "description": "active: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 268
+      },
+      "actual": {
+        "w": 320,
+        "h": 268
+      },
+      "pass": true
+    },
+    {
+      "id": "f06a",
+      "description": "scroll-end: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f06b",
+      "description": "scroll-end: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f06c",
+      "description": "scroll-end: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f06d",
+      "description": "scroll-end: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f06e",
+      "description": "scroll-end: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f06f",
+      "description": "scroll-end: Input-Randfarbe (focus)",
+      "expected": {
+        "color": {
+          "r": 0.1450980392156863,
+          "g": 0.38823529411764707,
+          "b": 0.9215686274509803,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.14509804546833038,
+          "g": 0.38823530077934265,
+          "b": 0.9215686321258545,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f06g",
+      "description": "scroll-end: Input-Inhalt",
+      "expected": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f06h",
+      "description": "scroll-end: Overlayfläche sichtbar",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "f06i",
+      "description": "scroll-end: Popup-Maße",
+      "expected": {
+        "w": 320,
+        "h": 160,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 160,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f06j",
+      "description": "scroll-end: Popup-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f06k",
+      "description": "scroll-end: Popup-Schatten (0 2px 8px #0003)",
+      "expected": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.2
+        }
+      },
+      "actual": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.20000000298023224
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f06l",
+      "description": "scroll-end: Viewport (geclippt)",
+      "expected": {
+        "h": 160,
+        "clips": true
+      },
+      "actual": {
+        "h": 160,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f06m",
+      "description": "scroll-end: Scrollinhalt-Versatz (scrollOffset)",
+      "expected": {
+        "y": -64,
+        "h": 224
+      },
+      "actual": {
+        "y": -64,
+        "h": 224
+      },
+      "pass": true
+    },
+    {
+      "id": "f06n",
+      "description": "scroll-end: Optionen (Namen in Reihenfolge)",
+      "expected": [
+        "Option: berlin",
+        "Option: hamburg",
+        "Option: muenchen",
+        "Option: dresden",
+        "Option: koeln",
+        "Option: wien",
+        "Option: zuerich"
+      ],
+      "actual": [
+        "Option: berlin",
+        "Option: hamburg",
+        "Option: muenchen",
+        "Option: dresden",
+        "Option: koeln",
+        "Option: wien",
+        "Option: zuerich"
+      ],
+      "pass": true
+    },
+    {
+      "id": "f06o",
+      "description": "scroll-end: Optionszeilen (Maße)",
+      "expected": [
+        {
+          "y": 0,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 32,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 64,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 96,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 128,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 160,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 192,
+          "h": 32,
+          "w": 320
+        }
+      ],
+      "actual": [
+        {
+          "y": 0,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 32,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 64,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 96,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 128,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 160,
+          "h": 32,
+          "w": 320
+        },
+        {
+          "y": 192,
+          "h": 32,
+          "w": 320
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f06p",
+      "description": "scroll-end: Optionstexte",
+      "expected": [
+        "Berlin",
+        "Hamburg",
+        "München",
+        "Dresden",
+        "Köln",
+        "Wien",
+        "Zürich"
+      ],
+      "actual": [
+        "Berlin",
+        "Hamburg",
+        "München",
+        "Dresden",
+        "Köln",
+        "Wien",
+        "Zürich"
+      ],
+      "pass": true
+    },
+    {
+      "id": "f06q",
+      "description": "scroll-end: aktive Option hervorgehoben",
+      "expected": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "actual": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "pass": true
+    },
+    {
+      "id": "f06r",
+      "description": "scroll-end: deaktivierte Option farblich gedimmt",
+      "expected": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "pass": true
+    },
+    {
+      "id": "f06s",
+      "description": "scroll-end: aktive Zeile liegt im sichtbaren Viewport",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "f06t",
+      "description": "scroll-end: Status-Text",
+      "expected": "7 Städte verfügbar.",
+      "actual": "7 Städte verfügbar.",
+      "pass": true
+    },
+    {
+      "id": "f06v",
+      "description": "scroll-end: Status-Position und Farbe",
+      "expected": {
+        "y": 248,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 248,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f06w",
+      "description": "scroll-end: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 268
+      },
+      "actual": {
+        "w": 320,
+        "h": 268
+      },
+      "pass": true
+    },
+    {
+      "id": "f07a",
+      "description": "selected: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f07b",
+      "description": "selected: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f07c",
+      "description": "selected: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f07d",
+      "description": "selected: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f07e",
+      "description": "selected: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f07f",
+      "description": "selected: Input-Randfarbe (border)",
+      "expected": {
+        "color": {
+          "r": 0.796078431372549,
+          "g": 0.8352941176470589,
+          "b": 0.8823529411764706,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.7960784435272217,
+          "g": 0.8352941274642944,
+          "b": 0.8823529481887817,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f07g",
+      "description": "selected: Input-Inhalt",
+      "expected": {
+        "name": "Query",
+        "chars": "Berlin",
+        "color": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Query",
+        "chars": "Berlin",
+        "color": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f07h",
+      "description": "selected: Overlayfläche sichtbar",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "id": "f07t",
+      "description": "selected: Status-Text",
+      "expected": "Ausgewählt: Berlin.",
+      "actual": "Ausgewählt: Berlin.",
+      "pass": true
+    },
+    {
+      "id": "f07v",
+      "description": "selected: Status-Position und Farbe",
+      "expected": {
+        "y": 80,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 80,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f07w",
+      "description": "selected: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 100
+      },
+      "actual": {
+        "w": 320,
+        "h": 100
+      },
+      "pass": true
+    },
+    {
+      "id": "f08a",
+      "description": "empty: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f08b",
+      "description": "empty: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f08c",
+      "description": "empty: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f08d",
+      "description": "empty: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f08e",
+      "description": "empty: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f08f",
+      "description": "empty: Input-Randfarbe (focus)",
+      "expected": {
+        "color": {
+          "r": 0.1450980392156863,
+          "g": 0.38823529411764707,
+          "b": 0.9215686274509803,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.14509804546833038,
+          "g": 0.38823530077934265,
+          "b": 0.9215686321258545,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f08g",
+      "description": "empty: Input-Inhalt",
+      "expected": {
+        "name": "Query",
+        "chars": "Atlantis",
+        "color": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Query",
+        "chars": "Atlantis",
+        "color": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f08h",
+      "description": "empty: Overlayfläche sichtbar",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "f08i",
+      "description": "empty: Popup-Maße",
+      "expected": {
+        "w": 320,
+        "h": 32,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 32,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f08j",
+      "description": "empty: Popup-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f08k",
+      "description": "empty: Popup-Schatten (0 2px 8px #0003)",
+      "expected": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.2
+        }
+      },
+      "actual": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.20000000298023224
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f08l",
+      "description": "empty: Viewport (geclippt)",
+      "expected": {
+        "h": 32,
+        "clips": true
+      },
+      "actual": {
+        "h": 32,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f08m",
+      "description": "empty: Scrollinhalt-Versatz (scrollOffset)",
+      "expected": {
+        "y": 0,
+        "h": 32
+      },
+      "actual": {
+        "y": 0,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "f08u",
+      "description": "empty: Meldungszeile im Popup",
+      "expected": {
+        "name": "Message Row",
+        "h": 32,
+        "text": "Keine Städte gefunden."
+      },
+      "actual": {
+        "name": "Message Row",
+        "h": 32,
+        "text": "Keine Städte gefunden."
+      },
+      "pass": true
+    },
+    {
+      "id": "f08t",
+      "description": "empty: Status-Text",
+      "expected": "Keine Städte gefunden.",
+      "actual": "Keine Städte gefunden.",
+      "pass": true
+    },
+    {
+      "id": "f08v",
+      "description": "empty: Status-Position und Farbe",
+      "expected": {
+        "y": 120,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 120,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f08w",
+      "description": "empty: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 140
+      },
+      "actual": {
+        "w": 320,
+        "h": 140
+      },
+      "pass": true
+    },
+    {
+      "id": "f09a",
+      "description": "error: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f09b",
+      "description": "error: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f09c",
+      "description": "error: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f09d",
+      "description": "error: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f09e",
+      "description": "error: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f09f",
+      "description": "error: Input-Randfarbe (focus)",
+      "expected": {
+        "color": {
+          "r": 0.1450980392156863,
+          "g": 0.38823529411764707,
+          "b": 0.9215686274509803,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.14509804546833038,
+          "g": 0.38823530077934265,
+          "b": 0.9215686321258545,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f09g",
+      "description": "error: Input-Inhalt",
+      "expected": {
+        "name": "Query",
+        "chars": "Be",
+        "color": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Query",
+        "chars": "Be",
+        "color": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f09h",
+      "description": "error: Overlayfläche sichtbar",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "f09i",
+      "description": "error: Popup-Maße",
+      "expected": {
+        "w": 320,
+        "h": 32,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 32,
+        "y": 80,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f09j",
+      "description": "error: Popup-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f09k",
+      "description": "error: Popup-Schatten (0 2px 8px #0003)",
+      "expected": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.2
+        }
+      },
+      "actual": {
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "radius": 8,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.20000000298023224
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f09l",
+      "description": "error: Viewport (geclippt)",
+      "expected": {
+        "h": 32,
+        "clips": true
+      },
+      "actual": {
+        "h": 32,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f09m",
+      "description": "error: Scrollinhalt-Versatz (scrollOffset)",
+      "expected": {
+        "y": 0,
+        "h": 32
+      },
+      "actual": {
+        "y": 0,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "f09u",
+      "description": "error: Meldungszeile im Popup",
+      "expected": {
+        "name": "Message Row",
+        "h": 32,
+        "text": "Städte konnten nicht geladen werden."
+      },
+      "actual": {
+        "name": "Message Row",
+        "h": 32,
+        "text": "Städte konnten nicht geladen werden."
+      },
+      "pass": true
+    },
+    {
+      "id": "f09t",
+      "description": "error: Status-Text",
+      "expected": "Städte konnten nicht geladen werden.",
+      "actual": "Städte konnten nicht geladen werden.",
+      "pass": true
+    },
+    {
+      "id": "f09v",
+      "description": "error: Status-Position und Farbe",
+      "expected": {
+        "y": 120,
+        "size": 12,
+        "color": {
+          "r": 0.7254901960784313,
+          "g": 0.10980392156862745,
+          "b": 0.10980392156862745,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 120,
+        "size": 12,
+        "color": {
+          "r": 0.7254902124404907,
+          "g": 0.10980392247438431,
+          "b": 0.10980392247438431,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f09w",
+      "description": "error: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 140
+      },
+      "actual": {
+        "w": 320,
+        "h": 140
+      },
+      "pass": true
+    },
+    {
+      "id": "f10a",
+      "description": "disabled: Label-Text",
+      "expected": "Stadt auswählen",
+      "actual": "Stadt auswählen",
+      "pass": true
+    },
+    {
+      "id": "f10b",
+      "description": "disabled: Label-Typografie",
+      "expected": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "actual": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontFamily": "Inter",
+        "fontWeight": 400
+      },
+      "pass": true
+    },
+    {
+      "id": "f10c",
+      "description": "disabled: Label-Position und Farbe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019607843137255,
+          "g": 0.16862745098039217,
+          "b": 0.30196078431372547,
+          "a": 1
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "fill": {
+          "r": 0.09019608050584793,
+          "g": 0.16862745583057404,
+          "b": 0.3019607961177826,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f10d",
+      "description": "disabled: Input-Maße",
+      "expected": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "actual": {
+        "w": 320,
+        "h": 44,
+        "y": 28,
+        "radius": 8,
+        "clips": true
+      },
+      "pass": true
+    },
+    {
+      "id": "f10e",
+      "description": "disabled: Input-Füllung (surface)",
+      "expected": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "actual": [
+        {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "f10f",
+      "description": "disabled: Input-Randfarbe (border)",
+      "expected": {
+        "color": {
+          "r": 0.796078431372549,
+          "g": 0.8352941176470589,
+          "b": 0.8823529411764706,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "actual": {
+        "color": {
+          "r": 0.7960784435272217,
+          "g": 0.8352941274642944,
+          "b": 0.8823529481887817,
+          "a": 1
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "pass": true
+    },
+    {
+      "id": "f10g",
+      "description": "disabled: Input-Inhalt",
+      "expected": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        },
+        "x": 12
+      },
+      "actual": {
+        "name": "Placeholder",
+        "chars": "Stadt suchen …",
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        },
+        "x": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "f10h",
+      "description": "disabled: Overlayfläche sichtbar",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "id": "f10t",
+      "description": "disabled: Status-Text",
+      "expected": "",
+      "actual": "",
+      "pass": true
+    },
+    {
+      "id": "f10v",
+      "description": "disabled: Status-Position und Farbe",
+      "expected": {
+        "y": 80,
+        "size": 12,
+        "color": {
+          "r": 0.39215686274509803,
+          "g": 0.4549019607843137,
+          "b": 0.5450980392156862,
+          "a": 1
+        }
+      },
+      "actual": {
+        "y": 80,
+        "size": 12,
+        "color": {
+          "r": 0.3921568691730499,
+          "g": 0.45490196347236633,
+          "b": 0.545098066329956,
+          "a": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "f10w",
+      "description": "disabled: Fallrahmen-Maße",
+      "expected": {
+        "w": 320,
+        "h": 100
+      },
+      "actual": {
+        "w": 320,
+        "h": 100
+      },
+      "pass": true
+    },
+    {
+      "id": "p01",
+      "description": "preview.png existiert",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "p02",
+      "description": "preview.png ist aus dem wiedereingelesenen Graphen gerendert (Abmessungen = Inhaltsbereich × Skala)",
+      "expected": {
+        "w": 3816,
+        "h": 1528
+      },
+      "actual": {
+        "w": 3816,
+        "h": 1528
+      },
+      "pass": true
+    },
+    {
+      "id": "p03",
+      "description": "preview.svg existiert und ist SVG",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "x01",
+      "description": "zweiter Lauf: identischer wiedereingelesener Graph (Struktur-Dump)",
+      "expected": "[{\"i\":0,\"type\":\"FRAME\",\"name\":\"Document\",\"parent\":null,\"children\":[1],\"x\":0,\"y\":0,\"w\":0,\"h\":0,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":1,\"type\":\"CANVAS\",\"name\":\"Autocomplete\",\"parent\":0,\"children\":[2,3,4,9,10,15,16,27,28,51,52,75,76,99,100,105,106,117,118,129,130,135],\"x\":0,\"y\":0,\"w\":100,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":2,\"type\":\"TEXT\",\"name\":\"Titel\",\"parent\":1,\"children\":[],\"x\":64,\"y\":0,\"w\":317,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Autocomplete · 10 Zustände\",\"fontSize\":24,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":32,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":3,\"type\":\"TEXT\",\"name\":\"Quelle\",\"parent\":1,\"children\":[],\"x\":64,\"y\":32,\"w\":715,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Definition: components/ (stories.json · tokens.json · layout.css · accessibility.rules.json) · OpenPencil-Design, run-03/builder-a\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":4,\"type\":\"FRAME\",\"name\":\"closed\",\"parent\":1,\"children\":[5,6,8],\"x\":64,\"y\":108,\"w\":320,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":5,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":4,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":6,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":4,\"children\":[7],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.7961,\"g\":0.8353,\"b\":0.8824,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":7,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":6,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":8,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":4,\"children\":[],\"x\":0,\"y\":80,\"w\":0,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":9,\"type\":\"TEXT\",\"name\":\"Hinweis closed\",\"parent\":1,\"children\":[],\"x\":64,\"y\":220,\"w\":279,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"closed — Phase closed · SCXML machine/closed\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":10,\"type\":\"FRAME\",\"name\":\"opening\",\"parent\":1,\"children\":[11,12,14],\"x\":432,\"y\":108,\"w\":320,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":11,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":10,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":12,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":10,\"children\":[13],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":13,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":12,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":14,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":10,\"children\":[],\"x\":0,\"y\":80,\"w\":119,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Suche wird geöffnet.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":15,\"type\":\"TEXT\",\"name\":\"Hinweis opening\",\"parent\":1,\"children\":[],\"x\":432,\"y\":220,\"w\":289,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"opening — Phase opening · SCXML active/opening\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":16,\"type\":\"FRAME\",\"name\":\"loading\",\"parent\":1,\"children\":[17,18,20,26],\"x\":800,\"y\":108,\"w\":320,\"h\":140,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":17,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":16,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":18,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":16,\"children\":[19],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":19,\"type\":\"TEXT\",\"name\":\"Query\",\"parent\":18,\"children\":[],\"x\":12,\"y\":12,\"w\":18,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Be\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":20,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":16,\"children\":[21],\"x\":0,\"y\":80,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":21,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":20,\"children\":[22],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":22,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":21,\"children\":[23],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":23,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":22,\"children\":[24],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":24,\"type\":\"FRAME\",\"name\":\"Message Row\",\"parent\":23,\"children\":[25],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":25,\"type\":\"TEXT\",\"name\":\"Message\",\"parent\":24,\"children\":[],\"x\":12,\"y\":6,\"w\":158,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Städte werden geladen.\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":26,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":16,\"children\":[],\"x\":0,\"y\":120,\"w\":135,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Städte werden geladen.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":27,\"type\":\"TEXT\",\"name\":\"Hinweis loading\",\"parent\":1,\"children\":[],\"x\":800,\"y\":260,\"w\":276,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"loading — Phase loading · SCXML active/loading\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":28,\"type\":\"FRAME\",\"name\":\"ready\",\"parent\":1,\"children\":[29,30,32,50],\"x\":1168,\"y\":108,\"w\":320,\"h\":268,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":29,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":28,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":30,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":28,\"children\":[31],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":31,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":30,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":32,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":28,\"children\":[33],\"x\":0,\"y\":80,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":33,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":32,\"children\":[34],\"x\":0,\"y\":0,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":34,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":33,\"children\":[35],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":35,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":34,\"children\":[36,38,40,42,44,46,48],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":36,\"type\":\"FRAME\",\"name\":\"Option: berlin\",\"parent\":35,\"children\":[37],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":37,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":36,\"children\":[],\"x\":12,\"y\":6,\"w\":38,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Berlin\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":38,\"type\":\"FRAME\",\"name\":\"Option: hamburg\",\"parent\":35,\"children\":[39],\"x\":0,\"y\":32,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":39,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":38,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Hamburg\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":40,\"type\":\"FRAME\",\"name\":\"Option: muenchen\",\"parent\":35,\"children\":[41],\"x\":0,\"y\":64,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":41,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":40,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.5804,\"g\":0.6392,\"b\":0.7216,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"München\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":42,\"type\":\"FRAME\",\"name\":\"Option: dresden\",\"parent\":35,\"children\":[43],\"x\":0,\"y\":96,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":43,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":42,\"children\":[],\"x\":12,\"y\":6,\"w\":56,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Dresden\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":44,\"type\":\"FRAME\",\"name\":\"Option: koeln\",\"parent\":35,\"children\":[45],\"x\":0,\"y\":128,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":45,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":44,\"children\":[],\"x\":12,\"y\":6,\"w\":29,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Köln\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":46,\"type\":\"FRAME\",\"name\":\"Option: wien\",\"parent\":35,\"children\":[47],\"x\":0,\"y\":160,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":47,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":46,\"children\":[],\"x\":12,\"y\":6,\"w\":34,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Wien\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":48,\"type\":\"FRAME\",\"name\":\"Option: zuerich\",\"parent\":35,\"children\":[49],\"x\":0,\"y\":192,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":49,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":48,\"children\":[],\"x\":12,\"y\":6,\"w\":43,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Zürich\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":50,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":28,\"children\":[],\"x\":0,\"y\":248,\"w\":109,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"7 Städte verfügbar.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":51,\"type\":\"TEXT\",\"name\":\"Hinweis ready\",\"parent\":1,\"children\":[],\"x\":1168,\"y\":388,\"w\":332,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"ready — Phase ready · SCXML active/ready · 7 Ergebnisse\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":52,\"type\":\"FRAME\",\"name\":\"active\",\"parent\":1,\"children\":[53,54,56,74],\"x\":1536,\"y\":108,\"w\":320,\"h\":268,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":53,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":52,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":54,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":52,\"children\":[55],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":55,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":54,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":56,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":52,\"children\":[57],\"x\":0,\"y\":80,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":57,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":56,\"children\":[58],\"x\":0,\"y\":0,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":58,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":57,\"children\":[59],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":59,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":58,\"children\":[60,62,64,66,68,70,72],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":60,\"type\":\"FRAME\",\"name\":\"Option: berlin\",\"parent\":59,\"children\":[61],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":61,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":60,\"children\":[],\"x\":12,\"y\":6,\"w\":38,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Berlin\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":62,\"type\":\"FRAME\",\"name\":\"Option: hamburg\",\"parent\":59,\"children\":[63],\"x\":0,\"y\":32,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.9176,\"g\":0.949,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":63,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":62,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Hamburg\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":64,\"type\":\"FRAME\",\"name\":\"Option: muenchen\",\"parent\":59,\"children\":[65],\"x\":0,\"y\":64,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":65,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":64,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.5804,\"g\":0.6392,\"b\":0.7216,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"München\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":66,\"type\":\"FRAME\",\"name\":\"Option: dresden\",\"parent\":59,\"children\":[67],\"x\":0,\"y\":96,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":67,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":66,\"children\":[],\"x\":12,\"y\":6,\"w\":56,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Dresden\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":68,\"type\":\"FRAME\",\"name\":\"Option: koeln\",\"parent\":59,\"children\":[69],\"x\":0,\"y\":128,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":69,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":68,\"children\":[],\"x\":12,\"y\":6,\"w\":29,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Köln\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":70,\"type\":\"FRAME\",\"name\":\"Option: wien\",\"parent\":59,\"children\":[71],\"x\":0,\"y\":160,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":71,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":70,\"children\":[],\"x\":12,\"y\":6,\"w\":34,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Wien\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":72,\"type\":\"FRAME\",\"name\":\"Option: zuerich\",\"parent\":59,\"children\":[73],\"x\":0,\"y\":192,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":73,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":72,\"children\":[],\"x\":12,\"y\":6,\"w\":43,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Zürich\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":74,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":52,\"children\":[],\"x\":0,\"y\":248,\"w\":109,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"7 Städte verfügbar.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":75,\"type\":\"TEXT\",\"name\":\"Hinweis active\",\"parent\":1,\"children\":[],\"x\":1536,\"y\":388,\"w\":428,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"active — Phase ready · SCXML active/ready · aktiv: hamburg · 7 Ergebnisse\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":76,\"type\":\"FRAME\",\"name\":\"scroll-end\",\"parent\":1,\"children\":[77,78,80,98],\"x\":64,\"y\":464,\"w\":320,\"h\":268,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":77,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":76,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":78,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":76,\"children\":[79],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":79,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":78,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":80,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":76,\"children\":[81],\"x\":0,\"y\":80,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":81,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":80,\"children\":[82],\"x\":0,\"y\":0,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":82,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":81,\"children\":[83],\"x\":0,\"y\":-64,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":83,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":82,\"children\":[84,86,88,90,92,94,96],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":84,\"type\":\"FRAME\",\"name\":\"Option: berlin\",\"parent\":83,\"children\":[85],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":85,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":84,\"children\":[],\"x\":12,\"y\":6,\"w\":38,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Berlin\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":86,\"type\":\"FRAME\",\"name\":\"Option: hamburg\",\"parent\":83,\"children\":[87],\"x\":0,\"y\":32,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":87,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":86,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Hamburg\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":88,\"type\":\"FRAME\",\"name\":\"Option: muenchen\",\"parent\":83,\"children\":[89],\"x\":0,\"y\":64,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":89,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":88,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.5804,\"g\":0.6392,\"b\":0.7216,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"München\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":90,\"type\":\"FRAME\",\"name\":\"Option: dresden\",\"parent\":83,\"children\":[91],\"x\":0,\"y\":96,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":91,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":90,\"children\":[],\"x\":12,\"y\":6,\"w\":56,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Dresden\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":92,\"type\":\"FRAME\",\"name\":\"Option: koeln\",\"parent\":83,\"children\":[93],\"x\":0,\"y\":128,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":93,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":92,\"children\":[],\"x\":12,\"y\":6,\"w\":29,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Köln\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":94,\"type\":\"FRAME\",\"name\":\"Option: wien\",\"parent\":83,\"children\":[95],\"x\":0,\"y\":160,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":95,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":94,\"children\":[],\"x\":12,\"y\":6,\"w\":34,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Wien\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":96,\"type\":\"FRAME\",\"name\":\"Option: zuerich\",\"parent\":83,\"children\":[97],\"x\":0,\"y\":192,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.9176,\"g\":0.949,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":97,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":96,\"children\":[],\"x\":12,\"y\":6,\"w\":43,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Zürich\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":98,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":76,\"children\":[],\"x\":0,\"y\":248,\"w\":109,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"7 Städte verfügbar.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":99,\"type\":\"TEXT\",\"name\":\"Hinweis scroll-end\",\"parent\":1,\"children\":[],\"x\":64,\"y\":744,\"w\":443,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"scroll-end — Phase ready · SCXML active/ready · aktiv: zuerich · 7 Ergebnisse\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":100,\"type\":\"FRAME\",\"name\":\"selected\",\"parent\":1,\"children\":[101,102,104],\"x\":432,\"y\":464,\"w\":320,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":101,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":100,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":102,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":100,\"children\":[103],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.7961,\"g\":0.8353,\"b\":0.8824,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":103,\"type\":\"TEXT\",\"name\":\"Query\",\"parent\":102,\"children\":[],\"x\":12,\"y\":12,\"w\":38,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Berlin\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":104,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":100,\"children\":[],\"x\":0,\"y\":80,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Ausgewählt: Berlin.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":105,\"type\":\"TEXT\",\"name\":\"Hinweis selected\",\"parent\":1,\"children\":[],\"x\":432,\"y\":576,\"w\":452,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"selected — Phase closed · SCXML machine/closed · value: berlin · 7 Ergebnisse\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":106,\"type\":\"FRAME\",\"name\":\"empty\",\"parent\":1,\"children\":[107,108,110,116],\"x\":800,\"y\":464,\"w\":320,\"h\":140,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":107,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":106,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":108,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":106,\"children\":[109],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":109,\"type\":\"TEXT\",\"name\":\"Query\",\"parent\":108,\"children\":[],\"x\":12,\"y\":12,\"w\":49,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Atlantis\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":110,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":106,\"children\":[111],\"x\":0,\"y\":80,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":111,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":110,\"children\":[112],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":112,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":111,\"children\":[113],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":113,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":112,\"children\":[114],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":114,\"type\":\"FRAME\",\"name\":\"Message Row\",\"parent\":113,\"children\":[115],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":115,\"type\":\"TEXT\",\"name\":\"Message\",\"parent\":114,\"children\":[],\"x\":12,\"y\":6,\"w\":156,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Keine Städte gefunden.\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":116,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":106,\"children\":[],\"x\":0,\"y\":120,\"w\":133,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Keine Städte gefunden.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":117,\"type\":\"TEXT\",\"name\":\"Hinweis empty\",\"parent\":1,\"children\":[],\"x\":800,\"y\":616,\"w\":259,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"empty — Phase empty · SCXML active/empty\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":118,\"type\":\"FRAME\",\"name\":\"error\",\"parent\":1,\"children\":[119,120,122,128],\"x\":1168,\"y\":464,\"w\":320,\"h\":140,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":119,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":118,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":120,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":118,\"children\":[121],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":121,\"type\":\"TEXT\",\"name\":\"Query\",\"parent\":120,\"children\":[],\"x\":12,\"y\":12,\"w\":18,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Be\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":122,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":118,\"children\":[123],\"x\":0,\"y\":80,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":123,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":122,\"children\":[124],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":124,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":123,\"children\":[125],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":125,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":124,\"children\":[126],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":126,\"type\":\"FRAME\",\"name\":\"Message Row\",\"parent\":125,\"children\":[127],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":127,\"type\":\"TEXT\",\"name\":\"Message\",\"parent\":126,\"children\":[],\"x\":12,\"y\":6,\"w\":251,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Städte konnten nicht geladen werden.\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":128,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":118,\"children\":[],\"x\":0,\"y\":120,\"w\":215,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.7255,\"g\":0.1098,\"b\":0.1098,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Städte konnten nicht geladen werden.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":129,\"type\":\"TEXT\",\"name\":\"Hinweis error\",\"parent\":1,\"children\":[],\"x\":1168,\"y\":616,\"w\":235,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"error — Phase error · SCXML active/error\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":130,\"type\":\"FRAME\",\"name\":\"disabled\",\"parent\":1,\"children\":[131,132,134],\"x\":1536,\"y\":464,\"w\":320,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":131,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":130,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":132,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":130,\"children\":[133],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.7961,\"g\":0.8353,\"b\":0.8824,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":133,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":132,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":134,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":130,\"children\":[],\"x\":0,\"y\":80,\"w\":0,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":135,\"type\":\"TEXT\",\"name\":\"Hinweis disabled\",\"parent\":1,\"children\":[],\"x\":1536,\"y\":576,\"w\":380,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"disabled — Phase closed · SCXML machine/closed · enabled=false\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"}]",
+      "actual": "[{\"i\":0,\"type\":\"FRAME\",\"name\":\"Document\",\"parent\":null,\"children\":[1],\"x\":0,\"y\":0,\"w\":0,\"h\":0,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":1,\"type\":\"CANVAS\",\"name\":\"Autocomplete\",\"parent\":0,\"children\":[2,3,4,9,10,15,16,27,28,51,52,75,76,99,100,105,106,117,118,129,130,135],\"x\":0,\"y\":0,\"w\":100,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":2,\"type\":\"TEXT\",\"name\":\"Titel\",\"parent\":1,\"children\":[],\"x\":64,\"y\":0,\"w\":317,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Autocomplete · 10 Zustände\",\"fontSize\":24,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":32,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":3,\"type\":\"TEXT\",\"name\":\"Quelle\",\"parent\":1,\"children\":[],\"x\":64,\"y\":32,\"w\":715,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Definition: components/ (stories.json · tokens.json · layout.css · accessibility.rules.json) · OpenPencil-Design, run-03/builder-a\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":4,\"type\":\"FRAME\",\"name\":\"closed\",\"parent\":1,\"children\":[5,6,8],\"x\":64,\"y\":108,\"w\":320,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":5,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":4,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":6,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":4,\"children\":[7],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.7961,\"g\":0.8353,\"b\":0.8824,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":7,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":6,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":8,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":4,\"children\":[],\"x\":0,\"y\":80,\"w\":0,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":9,\"type\":\"TEXT\",\"name\":\"Hinweis closed\",\"parent\":1,\"children\":[],\"x\":64,\"y\":220,\"w\":279,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"closed — Phase closed · SCXML machine/closed\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":10,\"type\":\"FRAME\",\"name\":\"opening\",\"parent\":1,\"children\":[11,12,14],\"x\":432,\"y\":108,\"w\":320,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":11,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":10,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":12,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":10,\"children\":[13],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":13,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":12,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":14,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":10,\"children\":[],\"x\":0,\"y\":80,\"w\":119,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Suche wird geöffnet.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":15,\"type\":\"TEXT\",\"name\":\"Hinweis opening\",\"parent\":1,\"children\":[],\"x\":432,\"y\":220,\"w\":289,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"opening — Phase opening · SCXML active/opening\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":16,\"type\":\"FRAME\",\"name\":\"loading\",\"parent\":1,\"children\":[17,18,20,26],\"x\":800,\"y\":108,\"w\":320,\"h\":140,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":17,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":16,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":18,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":16,\"children\":[19],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":19,\"type\":\"TEXT\",\"name\":\"Query\",\"parent\":18,\"children\":[],\"x\":12,\"y\":12,\"w\":18,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Be\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":20,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":16,\"children\":[21],\"x\":0,\"y\":80,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":21,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":20,\"children\":[22],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":22,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":21,\"children\":[23],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":23,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":22,\"children\":[24],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":24,\"type\":\"FRAME\",\"name\":\"Message Row\",\"parent\":23,\"children\":[25],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":25,\"type\":\"TEXT\",\"name\":\"Message\",\"parent\":24,\"children\":[],\"x\":12,\"y\":6,\"w\":158,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Städte werden geladen.\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":26,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":16,\"children\":[],\"x\":0,\"y\":120,\"w\":135,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Städte werden geladen.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":27,\"type\":\"TEXT\",\"name\":\"Hinweis loading\",\"parent\":1,\"children\":[],\"x\":800,\"y\":260,\"w\":276,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"loading — Phase loading · SCXML active/loading\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":28,\"type\":\"FRAME\",\"name\":\"ready\",\"parent\":1,\"children\":[29,30,32,50],\"x\":1168,\"y\":108,\"w\":320,\"h\":268,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":29,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":28,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":30,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":28,\"children\":[31],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":31,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":30,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":32,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":28,\"children\":[33],\"x\":0,\"y\":80,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":33,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":32,\"children\":[34],\"x\":0,\"y\":0,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":34,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":33,\"children\":[35],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":35,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":34,\"children\":[36,38,40,42,44,46,48],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":36,\"type\":\"FRAME\",\"name\":\"Option: berlin\",\"parent\":35,\"children\":[37],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":37,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":36,\"children\":[],\"x\":12,\"y\":6,\"w\":38,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Berlin\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":38,\"type\":\"FRAME\",\"name\":\"Option: hamburg\",\"parent\":35,\"children\":[39],\"x\":0,\"y\":32,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":39,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":38,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Hamburg\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":40,\"type\":\"FRAME\",\"name\":\"Option: muenchen\",\"parent\":35,\"children\":[41],\"x\":0,\"y\":64,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":41,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":40,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.5804,\"g\":0.6392,\"b\":0.7216,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"München\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":42,\"type\":\"FRAME\",\"name\":\"Option: dresden\",\"parent\":35,\"children\":[43],\"x\":0,\"y\":96,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":43,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":42,\"children\":[],\"x\":12,\"y\":6,\"w\":56,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Dresden\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":44,\"type\":\"FRAME\",\"name\":\"Option: koeln\",\"parent\":35,\"children\":[45],\"x\":0,\"y\":128,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":45,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":44,\"children\":[],\"x\":12,\"y\":6,\"w\":29,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Köln\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":46,\"type\":\"FRAME\",\"name\":\"Option: wien\",\"parent\":35,\"children\":[47],\"x\":0,\"y\":160,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":47,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":46,\"children\":[],\"x\":12,\"y\":6,\"w\":34,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Wien\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":48,\"type\":\"FRAME\",\"name\":\"Option: zuerich\",\"parent\":35,\"children\":[49],\"x\":0,\"y\":192,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":49,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":48,\"children\":[],\"x\":12,\"y\":6,\"w\":43,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Zürich\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":50,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":28,\"children\":[],\"x\":0,\"y\":248,\"w\":109,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"7 Städte verfügbar.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":51,\"type\":\"TEXT\",\"name\":\"Hinweis ready\",\"parent\":1,\"children\":[],\"x\":1168,\"y\":388,\"w\":332,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"ready — Phase ready · SCXML active/ready · 7 Ergebnisse\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":52,\"type\":\"FRAME\",\"name\":\"active\",\"parent\":1,\"children\":[53,54,56,74],\"x\":1536,\"y\":108,\"w\":320,\"h\":268,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":53,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":52,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":54,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":52,\"children\":[55],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":55,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":54,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":56,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":52,\"children\":[57],\"x\":0,\"y\":80,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":57,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":56,\"children\":[58],\"x\":0,\"y\":0,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":58,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":57,\"children\":[59],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":59,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":58,\"children\":[60,62,64,66,68,70,72],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":60,\"type\":\"FRAME\",\"name\":\"Option: berlin\",\"parent\":59,\"children\":[61],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":61,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":60,\"children\":[],\"x\":12,\"y\":6,\"w\":38,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Berlin\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":62,\"type\":\"FRAME\",\"name\":\"Option: hamburg\",\"parent\":59,\"children\":[63],\"x\":0,\"y\":32,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.9176,\"g\":0.949,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":63,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":62,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Hamburg\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":64,\"type\":\"FRAME\",\"name\":\"Option: muenchen\",\"parent\":59,\"children\":[65],\"x\":0,\"y\":64,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":65,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":64,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.5804,\"g\":0.6392,\"b\":0.7216,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"München\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":66,\"type\":\"FRAME\",\"name\":\"Option: dresden\",\"parent\":59,\"children\":[67],\"x\":0,\"y\":96,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":67,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":66,\"children\":[],\"x\":12,\"y\":6,\"w\":56,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Dresden\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":68,\"type\":\"FRAME\",\"name\":\"Option: koeln\",\"parent\":59,\"children\":[69],\"x\":0,\"y\":128,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":69,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":68,\"children\":[],\"x\":12,\"y\":6,\"w\":29,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Köln\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":70,\"type\":\"FRAME\",\"name\":\"Option: wien\",\"parent\":59,\"children\":[71],\"x\":0,\"y\":160,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":71,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":70,\"children\":[],\"x\":12,\"y\":6,\"w\":34,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Wien\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":72,\"type\":\"FRAME\",\"name\":\"Option: zuerich\",\"parent\":59,\"children\":[73],\"x\":0,\"y\":192,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":73,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":72,\"children\":[],\"x\":12,\"y\":6,\"w\":43,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Zürich\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":74,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":52,\"children\":[],\"x\":0,\"y\":248,\"w\":109,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"7 Städte verfügbar.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":75,\"type\":\"TEXT\",\"name\":\"Hinweis active\",\"parent\":1,\"children\":[],\"x\":1536,\"y\":388,\"w\":428,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"active — Phase ready · SCXML active/ready · aktiv: hamburg · 7 Ergebnisse\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":76,\"type\":\"FRAME\",\"name\":\"scroll-end\",\"parent\":1,\"children\":[77,78,80,98],\"x\":64,\"y\":464,\"w\":320,\"h\":268,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":77,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":76,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":78,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":76,\"children\":[79],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":79,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":78,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":80,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":76,\"children\":[81],\"x\":0,\"y\":80,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":81,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":80,\"children\":[82],\"x\":0,\"y\":0,\"w\":320,\"h\":160,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":82,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":81,\"children\":[83],\"x\":0,\"y\":-64,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":83,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":82,\"children\":[84,86,88,90,92,94,96],\"x\":0,\"y\":0,\"w\":320,\"h\":224,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":84,\"type\":\"FRAME\",\"name\":\"Option: berlin\",\"parent\":83,\"children\":[85],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":85,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":84,\"children\":[],\"x\":12,\"y\":6,\"w\":38,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Berlin\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":86,\"type\":\"FRAME\",\"name\":\"Option: hamburg\",\"parent\":83,\"children\":[87],\"x\":0,\"y\":32,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":87,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":86,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Hamburg\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":88,\"type\":\"FRAME\",\"name\":\"Option: muenchen\",\"parent\":83,\"children\":[89],\"x\":0,\"y\":64,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":89,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":88,\"children\":[],\"x\":12,\"y\":6,\"w\":62,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.5804,\"g\":0.6392,\"b\":0.7216,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"München\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":90,\"type\":\"FRAME\",\"name\":\"Option: dresden\",\"parent\":83,\"children\":[91],\"x\":0,\"y\":96,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":91,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":90,\"children\":[],\"x\":12,\"y\":6,\"w\":56,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Dresden\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":92,\"type\":\"FRAME\",\"name\":\"Option: koeln\",\"parent\":83,\"children\":[93],\"x\":0,\"y\":128,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":93,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":92,\"children\":[],\"x\":12,\"y\":6,\"w\":29,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Köln\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":94,\"type\":\"FRAME\",\"name\":\"Option: wien\",\"parent\":83,\"children\":[95],\"x\":0,\"y\":160,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":95,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":94,\"children\":[],\"x\":12,\"y\":6,\"w\":34,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Wien\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":96,\"type\":\"FRAME\",\"name\":\"Option: zuerich\",\"parent\":83,\"children\":[97],\"x\":0,\"y\":192,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.9176,\"g\":0.949,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":97,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":96,\"children\":[],\"x\":12,\"y\":6,\"w\":43,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Zürich\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":98,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":76,\"children\":[],\"x\":0,\"y\":248,\"w\":109,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"7 Städte verfügbar.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":99,\"type\":\"TEXT\",\"name\":\"Hinweis scroll-end\",\"parent\":1,\"children\":[],\"x\":64,\"y\":744,\"w\":443,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"scroll-end — Phase ready · SCXML active/ready · aktiv: zuerich · 7 Ergebnisse\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":100,\"type\":\"FRAME\",\"name\":\"selected\",\"parent\":1,\"children\":[101,102,104],\"x\":432,\"y\":464,\"w\":320,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":101,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":100,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":102,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":100,\"children\":[103],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.7961,\"g\":0.8353,\"b\":0.8824,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":103,\"type\":\"TEXT\",\"name\":\"Query\",\"parent\":102,\"children\":[],\"x\":12,\"y\":12,\"w\":38,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Berlin\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":104,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":100,\"children\":[],\"x\":0,\"y\":80,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Ausgewählt: Berlin.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":105,\"type\":\"TEXT\",\"name\":\"Hinweis selected\",\"parent\":1,\"children\":[],\"x\":432,\"y\":576,\"w\":452,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"selected — Phase closed · SCXML machine/closed · value: berlin · 7 Ergebnisse\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":106,\"type\":\"FRAME\",\"name\":\"empty\",\"parent\":1,\"children\":[107,108,110,116],\"x\":800,\"y\":464,\"w\":320,\"h\":140,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":107,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":106,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":108,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":106,\"children\":[109],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":109,\"type\":\"TEXT\",\"name\":\"Query\",\"parent\":108,\"children\":[],\"x\":12,\"y\":12,\"w\":49,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Atlantis\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":110,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":106,\"children\":[111],\"x\":0,\"y\":80,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":111,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":110,\"children\":[112],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":112,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":111,\"children\":[113],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":113,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":112,\"children\":[114],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":114,\"type\":\"FRAME\",\"name\":\"Message Row\",\"parent\":113,\"children\":[115],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":115,\"type\":\"TEXT\",\"name\":\"Message\",\"parent\":114,\"children\":[],\"x\":12,\"y\":6,\"w\":156,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Keine Städte gefunden.\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":116,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":106,\"children\":[],\"x\":0,\"y\":120,\"w\":133,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Keine Städte gefunden.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":117,\"type\":\"TEXT\",\"name\":\"Hinweis empty\",\"parent\":1,\"children\":[],\"x\":800,\"y\":616,\"w\":259,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"empty — Phase empty · SCXML active/empty\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":118,\"type\":\"FRAME\",\"name\":\"error\",\"parent\":1,\"children\":[119,120,122,128],\"x\":1168,\"y\":464,\"w\":320,\"h\":140,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":119,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":118,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":120,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":118,\"children\":[121],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.1451,\"g\":0.3882,\"b\":0.9216,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":121,\"type\":\"TEXT\",\"name\":\"Query\",\"parent\":120,\"children\":[],\"x\":12,\"y\":12,\"w\":18,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Be\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":122,\"type\":\"FRAME\",\"name\":\"Overlay Surface\",\"parent\":118,\"children\":[123],\"x\":0,\"y\":80,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[{\"t\":\"DROP_SHADOW\",\"o\":{\"x\":0,\"y\":2},\"r\":8,\"c\":{\"a\":0.2},\"v\":true}],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":123,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Viewport\",\"parent\":122,\"children\":[124],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":true,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":124,\"type\":\"FRAME\",\"name\":\"Overlay Scroll Content\",\"parent\":123,\"children\":[125],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":125,\"type\":\"FRAME\",\"name\":\"Listbox\",\"parent\":124,\"children\":[126],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":126,\"type\":\"FRAME\",\"name\":\"Message Row\",\"parent\":125,\"children\":[127],\"x\":0,\"y\":0,\"w\":320,\"h\":32,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":127,\"type\":\"TEXT\",\"name\":\"Message\",\"parent\":126,\"children\":[],\"x\":12,\"y\":6,\"w\":251,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Städte konnten nicht geladen werden.\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":128,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":118,\"children\":[],\"x\":0,\"y\":120,\"w\":215,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.7255,\"g\":0.1098,\"b\":0.1098,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Städte konnten nicht geladen werden.\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":129,\"type\":\"TEXT\",\"name\":\"Hinweis error\",\"parent\":1,\"children\":[],\"x\":1168,\"y\":616,\"w\":235,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"error — Phase error · SCXML active/error\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":130,\"type\":\"FRAME\",\"name\":\"disabled\",\"parent\":1,\"children\":[131,132,134],\"x\":1536,\"y\":464,\"w\":320,\"h\":100,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":131,\"type\":\"TEXT\",\"name\":\"Label\",\"parent\":130,\"children\":[],\"x\":0,\"y\":0,\"w\":110,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.0902,\"g\":0.1686,\"b\":0.302,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt auswählen\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":132,\"type\":\"FRAME\",\"name\":\"Input\",\"parent\":130,\"children\":[133],\"x\":0,\"y\":28,\"w\":320,\"h\":44,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":8,\"clipsContent\":true,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[{\"c\":{\"r\":0.7961,\"g\":0.8353,\"b\":0.8824,\"a\":1},\"w\":1,\"al\":\"INSIDE\"}],\"effects\":[],\"text\":\"\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":null,\"textAutoResize\":\"NONE\"},{\"i\":133,\"type\":\"TEXT\",\"name\":\"Placeholder\",\"parent\":132,\"children\":[],\"x\":12,\"y\":12,\"w\":104,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"Stadt suchen …\",\"fontSize\":14,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":134,\"type\":\"TEXT\",\"name\":\"Status\",\"parent\":130,\"children\":[],\"x\":0,\"y\":80,\"w\":0,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"},{\"i\":135,\"type\":\"TEXT\",\"name\":\"Hinweis disabled\",\"parent\":1,\"children\":[],\"x\":1536,\"y\":576,\"w\":380,\"h\":20,\"rotation\":0,\"visible\":true,\"opacity\":1,\"cornerRadius\":0,\"clipsContent\":false,\"fills\":[{\"t\":\"SOLID\",\"c\":{\"r\":0.3922,\"g\":0.4549,\"b\":0.5451,\"a\":1},\"o\":1,\"v\":true}],\"strokes\":[],\"effects\":[],\"text\":\"disabled — Phase closed · SCXML machine/closed · enabled=false\",\"fontSize\":12,\"fontFamily\":\"Inter\",\"fontWeight\":400,\"lineHeight\":20,\"textAutoResize\":\"WIDTH_AND_HEIGHT\"}]",
+      "pass": true
+    },
+    {
+      "id": "x02",
+      "description": "zweiter Lauf: byteidentisches preview.png",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "s01",
+      "description": "source-sha256.json deckt alle gelesenen Definitionsdateien ab",
+      "expected": 21,
+      "actual": 21,
+      "pass": true
+    },
+    {
+      "id": "s02",
+      "description": "library.json verlinkt Autocomplete/Overlay/ScrollArea",
+      "expected": [
+        "autocomplete/component.json",
+        "overlay/component.json",
+        "scroll-area/component.json"
+      ],
+      "actual": [
+        "autocomplete/component.json",
+        "overlay/component.json",
+        "scroll-area/component.json"
+      ],
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 178,
+    "passed": 178,
+    "failed": 0
+  }
+}

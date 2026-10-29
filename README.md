@@ -115,6 +115,7 @@ Die vollständige Recherche liegt in **[`docs/research/`](docs/research/)**. Akt
 | Mit einem Coding-Agenten weiterarbeiten | [Umsetzungsübergabe](docs/research/IMPLEMENTATION-HANDOFF.md) · [Aufgaben](TASKS.md) |
 | Definitionen schrittweise prüfen | [Gemeinsame Prüfkette und ihre aktuellen Grenzen](docs/validation/README.md) |
 | Mit dem lokalen Contract-Skill arbeiten | [Skill und geprüfter Umfang](docs/skills/README.md) |
+| Reproduktionsfehler nachvollziehen und vermeiden | [Fehlerregister mit Reparaturen](docs/skills/ISSUES.md) · [Laufprotokoll](docs/skills/REPRODUCIBILITY.md) |
 | Frühere Entscheidungen und Zwischenstände lesen | [Originalkontext](docs/research/CONTEXT.md) · [Vollständiges README-Archiv](docs/research/archive/README-RESEARCH-ARCHIVE.md) |
 
 ## Weiterarbeit
@@ -128,3 +129,5 @@ Später können spezialisierte Skills die vier Domänen bearbeiten. Sie sollen Q
 Die Recherche ist abgeschlossen. Für eine spätere Fortsetzung stehen der [Abnahmeplan](docs/research/INTEGRATION-ACCEPTANCE.md), die [Umsetzungsübergabe](docs/research/IMPLEMENTATION-HANDOFF.md) und die [Einordnung des plattformübergreifenden Ziels](docs/research/ARCHITECTURE-DIRECTION.md) bereit.
 
 [Studie AC-R01](docs/research/studies/AC-R01/README.md): Zwei getrennte Agenten erzeugen aus derselben Autocomplete-Definition Designs mit gleichen gemessenen Komponentenwerten, aber demselben Farbfehler. Vollständige Definitionstreue ist in diesem Versuch nicht erreicht.
+
+[Externe Analyse von AC-R02](docs/research/analyses/AC-R02/README.md): Auch der Lauf mit DeepSeek V4.1 Flash liefert ähnliche statische Designs, aber die damalige Prüfung akzeptiert denselben Farbfehler. Eine gemeinsame begrenzte Gegenprüfung, Regressionstests und aktualisierte Skill-/Laufanweisungen halten die Reparaturen nachvollziehbar; beide historischen Läufe bleiben erhalten. [Läufe und Modellangaben](docs/research/STUDIES.md).

@@ -1,0 +1,846 @@
+{
+  "meta": {
+    "runId": "autocomplete-reproducibility-03",
+    "phase": "Phase 1 — Preregistration (Kriterienableitung aus der Definition; kein Vergleich)",
+    "date": "2026-10-29",
+    "allowedInputs": [
+      "components/** (vollständig gelesen: README.md, library.json, tokens.json; autocomplete/*; overlay/*; scroll-area/*)",
+      "examples/autocomplete/reproducibility/run-03/review/ (eigener Ausgabeordner)"
+    ],
+    "forbiddenPaths": [
+      "examples/** außer examples/autocomplete/reproducibility/run-03/review/",
+      "examples/autocomplete/reproducibility/run-03/builder-a/",
+      "examples/autocomplete/reproducibility/run-03/builder-b/",
+      "docs/**",
+      "scripts/**",
+      "skills/**",
+      "tools/**",
+      ".git",
+      "README.md (Repository-Root)",
+      "TASKS.md (Repository-Root)",
+      "jegliche Git-Befehle (log, show, diff, blame, status, Historie)"
+    ],
+    "note": "Kriterien wurden ausschließlich aus der eingefrorenen Definition unter components/ abgeleitet, bevor irgendeine Builder-Ausgabe gesehen wurde. Keine Prognosen oder Annahmen über künftige Builder-Outputs. Farben sind als HEX aus den sRGB-Komponenten in tokens.json berechnet (Komponente × 255)."
+  },
+  "criteria": [
+    {
+      "id": "E-001",
+      "category": "explicit",
+      "domain": "document",
+      "requirement": "Die erzeugte Datei muss sich tatsächlich als OpenPencil-Dokument öffnen lassen; ein Bild, eine umbenannte JSON-Datei oder ein nur im Speicher existierender Graph genügt nicht.",
+      "source": "components/autocomplete/README.md, Abschnitt 'Exportrahmen', letzte Absätze: 'Die erzeugte Datei muss sich tatsächlich als OpenPencil-Dokument öffnen lassen. Ein Bild, eine umbenannte JSON-Datei oder ein allein im Speicher existierender Graph genügt nicht.'",
+      "expectation": "Die Builder-Datei ist ein gültiges, editierbares OpenPencil-Dokument und lässt sich als solches öffnen.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-002",
+      "category": "explicit",
+      "domain": "document",
+      "requirement": "Das OpenPencil-Dokument enthält eine übersichtliche Seite mit den zehn benannten Fällen.",
+      "source": "components/autocomplete/README.md, 'Exportrahmen': 'Das OpenPencil-Dokument soll eine übersichtliche Seite mit den zehn benannten Fällen enthalten.'",
+      "expectation": "Alle zehn Fälle sind in einem OpenPencil-Dokument auf einer Seite vorhanden.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-003",
+      "category": "explicit",
+      "domain": "document",
+      "requirement": "Die Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei (keine Vorgabe, keine Pflicht).",
+      "source": "components/autocomplete/README.md, 'Exportrahmen': 'Die Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei; die Komponente selbst folgt den Quellen.'",
+      "expectation": "Abweichungen in Seitenanordnung, Seitentiteln oder Hinweistexten werden nicht beanstandet; sie sind erlaubte Freiheit.",
+      "deviationClass": "erlaubte Freiheit"
+    },
+    {
+      "id": "E-004",
+      "category": "explicit",
+      "domain": "document",
+      "requirement": "Der Builder darf die Definitionsdateien nicht ändern; der Export wird aus der unveränderten Definition erzeugt. Fehlende Angaben sind als Lücke zu dokumentieren, nicht still zu ergänzen.",
+      "source": "components/autocomplete/README.md, 'Exportrahmen': 'Er darf diese Definitionsdateien nicht passend zu seinem Ergebnis ändern.'; components/README.md, 'Unabhängiger erster Proof': 'Der Agent darf Definitionen nicht ändern. Fehlende oder widersprüchliche Angaben werden protokolliert und nicht still ergänzt.'",
+      "expectation": "Das Design ist konsistent mit der vorliegenden (unveränderten) Definition; es wurden keine Definitionen nachträglich an das Design angepasst. Identifizierte Definitionslücken sind im Export dokumentiert.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-005",
+      "category": "explicit",
+      "domain": "cases",
+      "requirement": "Es gibt genau die zehn benannten Fälle: closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Die zehn Fälle heißen closed, opening, loading, ready, active, scroll-end, selected, empty, error und disabled.'; components/autocomplete/stories.json, stories[].id (10 Einträge mit diesen ids)",
+      "expectation": "Alle zehn Fälle sind vorhanden und tragen diese Namen (bzw. klar darauf bezogene Namen).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-006",
+      "category": "explicit",
+      "domain": "cases",
+      "requirement": "Jeder Fall muss als Komponenten-/Framelayergruppe benannt sein.",
+      "source": "components/autocomplete/README.md, 'Exportrahmen': 'Jeder Fall muss als Komponenten-/Framelayergruppe benannt sein.'",
+      "expectation": "Jeder der zehn Fälle ist eine eigene, benannte Frame-/Komponentengruppe im Dokument.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-007",
+      "category": "explicit",
+      "domain": "cases",
+      "requirement": "active und scroll-end sind 'ready mit activeKey' (ableitbare Ansichten, keine zusätzlichen SCXML-Zustände).",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'active und scroll-end sind ready mit activeKey … Es sind keine zusätzlich unabhängig geführten SCXML-Zustände.'; components/autocomplete/stories.json, stories 'active'/'scroll-end' (phase 'ready' + activeKey); components/autocomplete/component.json viewSemantics.activeKey",
+      "expectation": "Die Fälle active und scroll-end zeigen das ready-Layout (7 Ergebniszeilen, sichtbares Popup) mit einer aktiven Option (bzw. aktiver letzter Option).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-008",
+      "category": "explicit",
+      "domain": "cases",
+      "requirement": "selected ist 'closed mit value' (ableitbarer closed-Zustand mit vorhandenem value).",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'selected ist closed mit value'; components/autocomplete/stories.json story 'selected' (phase 'closed', value 'berlin'); components/autocomplete/component.json viewSemantics.selectedView: 'Derived closed state with a present value; not an additional independent behavior variable.'",
+      "expectation": "Der Fall selected zeigt das closed-Layout (kein Popup) mit value vorhanden; im Input steht das zu value gehörige Label.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-009",
+      "category": "explicit",
+      "domain": "cases",
+      "requirement": "disabled ist 'closed mit enabled=false'.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'disabled ist closed mit enabled=false'; components/autocomplete/stories.json story 'disabled' (phase 'closed', enabled false)",
+      "expectation": "Der Fall disabled zeigt das closed-Layout mit deaktiviertem Input (keine Popupteile sichtbar).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-001",
+      "category": "derived",
+      "domain": "cases",
+      "requirement": "Die zehn Darstellungen entsprechen den formalen Zuständen: closed; active mit den Unterzuständen opening, loading, ready (inkl. active/scroll-end als ready+activeKey), empty, error; sowie closed-Varianten (selected, disabled).",
+      "source": "Ableitung aus: components/autocomplete/behavior.scxml (state machine → closed; state active initial='opening' mit opening/loading/ready/empty/error) + components/autocomplete/stories.json (Feld 'phase' pro Story) + components/autocomplete/README.md L28",
+      "expectation": "Die Fall-Zuordnung zu den sechs zugrundeliegenden Zuständen (closed, opening, loading, ready, empty, error) ist in den Darstellungen erkennbar konsistent (z. B. 'phase'-Semantik: opening/loading/ready/empty/error zeigen das active-Verhalten, closed/selected/disabled das closed-Verhalten).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-010",
+      "category": "explicit",
+      "domain": "anatomy",
+      "requirement": "Autocomplete besitzt Input, Listbox, Optionen und Status; Listbox, Overlayfläche und Scrollviewport sind unterschiedliche Teile.",
+      "source": "components/autocomplete/README.md, 'Fachliche Regeln': 'Autocomplete besitzt Input, Listbox, Optionen und Status. Das Popup ist die eigene Overlay-Verwendung; darin liegt die eigene ScrollArea. Listbox, Overlayfläche und Scrollviewport sind unterschiedliche Teile.'",
+      "expectation": "Im Aufbau sind Input, Listbox, einzelne Optionen, Status, Overlayfläche (surface) und Scrollviewport als unterscheidbare Teile erkennbar.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-011",
+      "category": "explicit",
+      "domain": "anatomy",
+      "requirement": "Das Popup ist die eigene Overlay-Verwendung (anchorPart 'input', contentOwner 'Autocomplete'); darin liegt die eigene ScrollArea (contentPart 'list').",
+      "source": "components/autocomplete/component.json, 'composition': overlay {component ../overlay/component.json, anchorPart 'input', contentOwner 'Autocomplete'}, overlay.scroll {component ../scroll-area/component.json, contentPart 'list'}",
+      "expectation": "Das Popup ist als eigene Overlay-Verwendung aufgebaut (nicht Teil des Inputs); die ScrollArea gehört zur Overlay-Verwendung; die Listbox ist der Scrollinhalt und verbleibt Eigentum der Autocomplete.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-012",
+      "category": "explicit",
+      "domain": "anatomy",
+      "requirement": "Anatomie (Teile und Eigentümerschaft): label = sichtbares Label über dem Input (zugänglicher Name des Inputs leitet sich vom Label ab); input = editierbarer Query, gehört zur Autocomplete; overlay.surface = eigene Popupfläche am Input verankert; overlay.scroll.viewport = eigener geclippter Scroll-Viewport im Popup; list = semantische Listbox im Scrollinhalt, gehört zur Autocomplete; option = ein wiederholter Ergebnisteil pro stabilem Key; status = sichtbarer Status unter dem Popup, wenn vorhanden, sonst unter dem Input.",
+      "source": "components/autocomplete/component.json, 'anatomy' (alle sieben Einträge)",
+      "expectation": "Alle sieben benannten Teile (label, input, overlay.surface, overlay.scroll.viewport, list, option, status) sind im Aufbau vorhanden und korrekt zugeordnet.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-013",
+      "category": "explicit",
+      "domain": "anatomy",
+      "requirement": "Die Option wird über den fachlichen Key identifiziert (wiederholte Teile: instance + option key, nie Zeilenindex).",
+      "source": "components/autocomplete/README.md, 'Fachliche Regeln': 'Die Option wird über den fachlichen Key identifiziert.'; components/autocomplete/component.json viewSemantics.repeatedPartIdentity: 'instance + option key, never row index.'",
+      "expectation": "Optionen sind mit ihrem fachlichen Key (berlin, hamburg, muenchen, dresden, koeln, wien, zuerich) verknüpft/benannt, nicht mit reinen Zeilenindizes.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-014",
+      "category": "explicit",
+      "domain": "anatomy",
+      "requirement": "Ein Overlay besitzt keine zweite Auswahlmaschine (keine eigenständige Such-/Auswahlstate).",
+      "source": "components/autocomplete/README.md, 'Fachliche Regeln': 'Ein Overlay besitzt keine zweite Auswahlmaschine.'; components/overlay/component.json 'responsibility': 'Popup surface and its own ScrollArea lifecycle; no independent search/selection state.'",
+      "expectation": "Die Overlay-/ScrollArea-Teile führen keine eigene Auswahl-, Wert- oder Suchlogik; die Auswahl gehört ausschließlich zur Autocomplete.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-015",
+      "category": "explicit",
+      "domain": "naming",
+      "requirement": "Input, Overlayfläche, Scrollviewport, Listbox, einzelne Optionen und Status sollen separat editierbar und verständlich benannt bleiben.",
+      "source": "components/autocomplete/README.md, 'Exportrahmen': 'Input, Overlayfläche, Scrollviewport, Listbox, einzelne Optionen und Status sollen separat editierbar und verständlich benannt bleiben.'",
+      "expectation": "Die genannten Teile sind eigene, einzeln bearbeitbare Layers mit klaren, nachvollziehbaren Namen (nicht zusammengebacken, nicht unlesbar generisch benannt).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-016",
+      "category": "explicit",
+      "domain": "text",
+      "requirement": "Der Label-Text lautet in allen Fällen 'Stadt auswählen'.",
+      "source": "components/autocomplete/interface.json, Member 'label' default '\"Stadt auswählen\"'; components/autocomplete/stories.json inputs.label in allen 10 Stories; components/autocomplete/accessibility.html <label data-part=\"label\">",
+      "expectation": "Der sichtbare Label-Text ist in allen zehn Fällen exakt 'Stadt auswählen'.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-017",
+      "category": "explicit",
+      "domain": "text",
+      "requirement": "Der Platzhalter lautet 'Stadt suchen …' (mit Ellipsenzeichen, Leervorzeichen davor).",
+      "source": "components/autocomplete/interface.json, Member 'placeholder' default '\"Stadt suchen …\"'; components/autocomplete/stories.json inputs.placeholder in allen 10 Stories; components/autocomplete/accessibility.html placeholder-Attribut",
+      "expectation": "Wo der Input leer ist (closed, opening, ready, active, scroll-end, disabled) ist der Platzhalter 'Stadt suchen …' sichtbar; der Text ist exakt (inkl. ' …').",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-018",
+      "category": "explicit",
+      "domain": "text",
+      "requirement": "Die sieben Ergebnislabels lauten in dieser Reihenfolge: Berlin, Hamburg, München, Dresden, Köln, Wien, Zürich.",
+      "source": "components/autocomplete/stories.json, stories 'ready'/'active'/'scroll-end'/'selected' results[].label (7 Einträge in dieser Reihenfolge)",
+      "expectation": "In ready, active, scroll-end und selected sind genau diese sieben Labels in dieser Reihenfolge sichtbar.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-019",
+      "category": "explicit",
+      "domain": "text",
+      "requirement": "Die sieben Ergebnis-Keys (fachliche Identität) sind berlin, hamburg, muenchen, dresden, koeln, wien, zuerich, jeweils eindeutig und nicht leer; 'muenchen' ist disabled=true, alle anderen ohne Angabe (disabled=false).",
+      "source": "components/autocomplete/stories.json results[].key/.disabled; components/autocomplete/README.md 'Fachliche Regeln': 'Jeder Ergebnisrecord hat einen eindeutigen nichtleeren key und label; disabled ist optional und bedeutet ohne Angabe false.'",
+      "expectation": "Die Key-Labels-Mapping ist korrekt (berlin→Berlin, hamburg→Hamburg, muenchen→München [disabled], dresden→Dresden, koeln→Köln, wien→Wien, zuerich→Zürich); 'München' trägt die disabled-Markierung.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-020",
+      "category": "explicit",
+      "domain": "text",
+      "requirement": "Der Status-Text pro Fall ist durch accessibility.rules.json.messages festgelegt: closed=''; opening='Suche wird geöffnet.'; loading='Städte werden geladen.'; ready/active/scroll-end='results'-Vorlage '{count} Städte verfügbar.' mit count=7 → '7 Städte verfügbar.'; selected='selected'-Vorlage 'Ausgewählt: {label}.' mit label='Berlin' → 'Ausgewählt: Berlin.'; empty='Keine Städte gefunden.'; error='Städte konnten nicht geladen werden.'; disabled=''.",
+      "source": "components/autocomplete/accessibility.rules.json 'messages' (closed, opening, loading, results, empty, error, selected, disabled); components/autocomplete/README.md 'Sichtbare Geometrie': 'Ohne Meldung ist sein Text leer.' und 'Bei selected … der Status nutzt die selected-Vorlage.'; components/autocomplete/stories.json (count=7 in ready/active/scroll-end; value=berlin→Berlin in selected)",
+      "expectation": "Der Status-Text in jedem Fall ist exakt: closed leer; opening 'Suche wird geöffnet.'; loading 'Städte werden geladen.'; ready '7 Städte verfügbar.'; active '7 Städte verfügbar.'; scroll-end '7 Städte verfügbar.'; selected 'Ausgewählt: Berlin.'; empty 'Keine Städte gefunden.'; error 'Städte konnten nicht geladen werden.'; disabled leer.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-021",
+      "category": "explicit",
+      "domain": "text",
+      "requirement": "Der Query-Text pro Fall: closed=''; opening=''; loading='Be'; ready=''; active=''; scroll-end=''; selected='Berlin'; empty='Atlantis'; error='Be'; disabled=''.",
+      "source": "components/autocomplete/stories.json inputs.query in den zehn Stories",
+      "expectation": "Der im Input sichtbare Text entspricht exakt den Query-Werten (bei leeren Queries statt der Query der Platzhalter, s. D-002).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-022",
+      "category": "explicit",
+      "domain": "text",
+      "requirement": "Bei selected steht das zu value gehörige Label ('Berlin') im Input.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Bei selected steht das zu value gehörige Label im Input, und der Status nutzt die selected-Vorlage.'; components/autocomplete/stories.json story 'selected' (query 'Berlin', value 'berlin')",
+      "expectation": "Im Fall selected zeigt der Input den Text 'Berlin' (kein Platzhalter).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-023",
+      "category": "explicit",
+      "domain": "text",
+      "requirement": "In allen Fällen kommen sichtbare Texte aus den Inputs, Ergebnislabels und accessibility.rules.json — keine frei erfundenen Texte.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'In allen Fällen kommen sichtbare Texte aus den Inputs, Ergebnislabels und accessibility.rules.json.'; 'Exportrahmen': 'Farbe, Typografie, Maße und Meldungen dürfen nicht still neu erfunden werden.'",
+      "expectation": "Jeder sichtbare Text im Design ist einem definierten Input-Wert, Ergebnislabel oder Meldetext zuordenbar.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-002",
+      "category": "derived",
+      "domain": "text",
+      "requirement": "Zeigt der Input einen leeren Query, ist der Platzhalter sichtbar; bei nicht leerem Query der Query-Text.",
+      "source": "Ableitung aus: components/autocomplete/interface.json (query default '', placeholder default 'Stadt suchen …') + components/autocomplete/layout.css [data-part=\"input\"]::placeholder + components/autocomplete/stories.json (query-Werte)",
+      "expectation": "closed, opening, ready, active, scroll-end, disabled: Platzhalter 'Stadt suchen …' sichtbar. loading: 'Be'. selected: 'Berlin'. empty: 'Atlantis'. error: 'Be'.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-024",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Die Gesamtbreite der Komponente beträgt 320px (autocomplete.width).",
+      "source": "components/tokens.json autocomplete.width (320px); components/autocomplete/layout.css [data-component=\"Autocomplete\"] { width: var(--ac-width) }",
+      "expectation": "Komponentenbreite (und damit Input- und Popup-Breite) = 320px in jedem Fall.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-025",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Die Input-Höhe beträgt 44px (inputHeight), box-sizing border-box.",
+      "source": "components/tokens.json autocomplete.inputHeight (44px); components/autocomplete/layout.css [data-part=\"input\"] { box-sizing: border-box; height: var(--ac-input-height) }",
+      "expectation": "Input-Höhe = 44px in allen Fällen.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-026",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Der Input hat die Breite 100% der Komponente (= 320px).",
+      "source": "components/autocomplete/layout.css [data-part=\"input\"] { width: 100% }",
+      "expectation": "Input-Breite = 320px (volle Komponentenbreite) in allen Fällen.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-027",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Die Label-Höhe beträgt 20px (= lineHeight).",
+      "source": "components/autocomplete/layout.css [data-part=\"label\"] { height: var(--ac-line-height) }; components/tokens.json autocomplete.lineHeight (20px)",
+      "expectation": "Label-Höhe = 20px in allen Fällen.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-028",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Die Status-Höhe beträgt 20px (= lineHeight).",
+      "source": "components/autocomplete/layout.css [data-part=\"status\"] { height: var(--ac-line-height) }; components/tokens.json autocomplete.lineHeight (20px)",
+      "expectation": "Status-Höhe = 20px in allen Fällen (in denen die Status-Region vorhanden ist).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-029",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Optionen (Zeilen) bleiben 32px hoch (rowHeight; height und min-height).",
+      "source": "components/tokens.json autocomplete.rowHeight (32px = base.row); components/autocomplete/layout.css [data-part=\"option\"] { height: var(--ac-row-height); min-height: var(--ac-row-height) }; components/autocomplete/README.md 'Sichtbare Geometrie': 'Zeilen bleiben rowHeight hoch.'",
+      "expectation": "Jede Ergebniszeile ist 32px hoch in allen Fällen.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-030",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Der Scroll-Viewport hat max-height 160px (maxHeight = base.max) und overflow-y auto.",
+      "source": "components/tokens.json autocomplete.maxHeight ({base.max} = 160px); components/scroll-area/layout.css [data-part=\"viewport\"] { max-height: var(--ac-max-height); overflow-y: auto }",
+      "expectation": "Viewport max-height = 160px; der Viewport clippt und scrollt (overflow-y auto).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-031",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Die Input-Rahmenbreite beträgt 1px (borderWidth), solid.",
+      "source": "components/tokens.json autocomplete.borderWidth (1px); components/autocomplete/layout.css [data-part=\"input\"] { border: var(--ac-border-width) solid var(--ac-border) }",
+      "expectation": "Der Input-Rahmen ist 1px breit in allen Fällen (außer wo explizit anders, z. B. surface hat border: 0).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-032",
+      "category": "explicit",
+      "domain": "dimensions",
+      "requirement": "Der Radius beträgt 8px (radius) für Input und Overlayfläche.",
+      "source": "components/tokens.json autocomplete.radius (8px); components/autocomplete/layout.css [data-part=\"input\"] { border-radius: var(--ac-radius) }; components/overlay/layout.css [data-part=\"surface\"] { border-radius: var(--ac-radius) }",
+      "expectation": "Input-Eckenradius = 8px; Overlayflächen-Eckenradius = 8px.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-003",
+      "category": "derived",
+      "domain": "dimensions",
+      "requirement": "Die Viewporthöhe bei Ergebnislisten ist min(Ergebnisanzahl × rowHeight, maxHeight). Für 7 Ergebnisse: min(7×32, 160) = 160px.",
+      "source": "Ableitung aus: components/autocomplete/README.md 'Sichtbare Geometrie': 'Die Viewporthöhe ist bei Ergebnislisten min(Ergebnisanzahl × rowHeight, maxHeight).' + components/tokens.json (rowHeight 32px, maxHeight 160px) + components/autocomplete/stories.json (7 Ergebnisse)",
+      "expectation": "In ready, active, scroll-end und selected ist der Viewport 160px hoch (7×32=224 > 160).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-004",
+      "category": "derived",
+      "domain": "dimensions",
+      "requirement": "Bei 160px Viewporthöhe und 32px Zeilenhöhe sind 5 Zeilen sichtbar (160/32 = 5).",
+      "source": "Ableitung aus: D-003 (Viewport 160px) + E-029 (Zeile 32px)",
+      "expectation": "In ready/active/scroll-end sind maximal 5 Ergebniszeilen gleichzeitig im Viewport sichtbar.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-033",
+      "category": "explicit",
+      "domain": "spacing",
+      "requirement": "Der Abstand Label→Input beträgt 8px (labelGap; Label margin-bottom).",
+      "source": "components/tokens.json autocomplete.labelGap (8px); components/autocomplete/layout.css [data-part=\"label\"] { margin-bottom: var(--ac-label-gap) }; components/autocomplete/README.md: 'Label oben, darunter nach labelGap der Input.'",
+      "expectation": "Zwischen Label-Unterkante und Input-Oberkante 8px in allen Fällen.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-034",
+      "category": "explicit",
+      "domain": "spacing",
+      "requirement": "Der Abstand Input→Popup (gap) beträgt 8px; die Popup-Oberkante liegt am Inputende plus gap.",
+      "source": "components/tokens.json autocomplete.gap ({base.gap} = 8px); components/overlay/layout.css [data-part=\"surface\"] { top: anchor(bottom); margin-top: var(--ac-gap) }; components/autocomplete/README.md: 'Das Popup richtet seine Oberkante am Inputende plus gap aus'",
+      "expectation": "Zwischen Input-Unterkante und Popup-Oberkante 8px in allen Fällen mit sichtbarem Popup.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-035",
+      "category": "explicit",
+      "domain": "spacing",
+      "requirement": "Der Abstand zum Status (statusGap) beträgt 8px (Status margin-top).",
+      "source": "components/tokens.json autocomplete.statusGap (8px); components/autocomplete/layout.css [data-part=\"status\"] { margin-top: var(--ac-status-gap) }; components/autocomplete/accessibility.rules.json statusPlacement: 'statusGap and lineHeight from tokens.'",
+      "expectation": "Zwischen dem Bezugselement (sichtbares Popup oder Input) und der Status-Oberkante 8px in allen Fällen mit Status-Region.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-036",
+      "category": "explicit",
+      "domain": "spacing",
+      "requirement": "Der Input hat padding 0 12px (paddingInline 12px links/rechts, 0 oben/unten).",
+      "source": "components/tokens.json autocomplete.paddingInline (12px); components/autocomplete/layout.css [data-part=\"input\"] { padding: 0 var(--ac-padding-inline) }",
+      "expectation": "Input-Innenabstand: links/rechts 12px, oben/unten 0px.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-037",
+      "category": "explicit",
+      "domain": "spacing",
+      "requirement": "Optionen haben padding 6px 12px (6px oben/unten, 12px links/rechts).",
+      "source": "components/autocomplete/layout.css [data-part=\"option\"] { padding: 6px var(--ac-padding-inline) }",
+      "expectation": "Option-Innenabstand: oben/unten 6px, links/rechts 12px.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-038",
+      "category": "explicit",
+      "domain": "color",
+      "requirement": "Die acht benannten Farbtokens haben diese exakten sRGB-Werte (HEX aus Komponenten×255): surface #FFFFFF; text #172B4D; muted #64748B; border #CBD5E1; focus #2563EB; highlight #EAF2FF; disabled #94A3B8; error #B91C1C (alle alpha 1).",
+      "source": "components/tokens.json, autocomplete: surface [1,1,1]; text [0.09019607843137255,0.16862745098039217,0.30196078431372547]; muted [0.39215686274509803,0.4549019607843137,0.5450980392156862]; border [0.796078431372549,0.8352941176470589,0.8823529411764706]; focus [0.1450980392156863,0.38823529411764707,0.9215686274509803]; highlight [0.9176470588235294,0.9490196078431372,1.0]; disabled [0.5803921568627451,0.6392156862745098,0.7215686274509804]; error [0.7254901960784313,0.10980392156862745,0.10980392156862745]",
+      "expectation": "Die im Design verwendeten Farben entsprechen exakt diesen Werten (keine still neu erfundenen Farben).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-039",
+      "category": "explicit",
+      "domain": "color",
+      "requirement": "Input: Hintergrund = surface (#FFFFFF); Textfarbe = text (#172B4D); im disabled-Zustand Textfarbe = disabled (#94A3B8).",
+      "source": "components/autocomplete/layout.css [data-part=\"input\"] { background: var(--ac-surface); color: var(--ac-text) }; [data-part=\"input\"]:disabled { color: var(--ac-disabled) }; components/tokens.json",
+      "expectation": "Input-Hintergrund weiß; Input-Text #172B4D; im Fall disabled Input-Text #94A3B8.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-040",
+      "category": "explicit",
+      "domain": "color",
+      "requirement": "Input-Rahmenfarbe: Standard = border (#CBD5E1); in den Zuständen opening, loading, ready, empty, error = focus (#2563EB); im disabled-Zustand = border (#CBD5E1).",
+      "source": "components/autocomplete/layout.css [data-part=\"input\"] { border: … var(--ac-border) }; [data-state=\"opening|loading|ready|empty|error\"] [data-part=\"input\"] { border-color: var(--ac-focus) }; [data-part=\"input\"]:disabled { border-color: var(--ac-border) }; components/tokens.json",
+      "expectation": "Rahmenfarbe je Fall: closed #CBD5E1; opening #2563EB; loading #2563EB; ready #2563EB; active #2563EB; scroll-end #2563EB; selected #CBD5E1; empty #2563EB; error #2563EB; disabled #CBD5E1.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-041",
+      "category": "explicit",
+      "domain": "color",
+      "requirement": "Platzhalterfarbe = muted (#64748B).",
+      "source": "components/autocomplete/layout.css [data-part=\"input\"]::placeholder { color: var(--ac-muted) }; components/tokens.json",
+      "expectation": "Der Platzhaltertext 'Stadt suchen …' ist in #64748B in allen Fällen mit leeren Query.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-042",
+      "category": "explicit",
+      "domain": "color",
+      "requirement": "Optionen: Textfarbe = text (#172B4D) per Vererbung; Option mit aria-disabled=true → Textfarbe disabled (#94A3B8).",
+      "source": "components/autocomplete/layout.css [data-component] { color: var(--ac-text) } (erbt); [data-part=\"option\"][aria-disabled=\"true\"] { color: var(--ac-disabled) }; components/tokens.json",
+      "expectation": "Normaler Optionstext #172B4D; 'München' (disabled) in #94A3B8 in allen Fällen, in denen es sichtbar ist.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-043",
+      "category": "explicit",
+      "domain": "color",
+      "requirement": "Aktive Option (aria-selected=true) hat Hintergrund = highlight (#EAF2FF); Textfarbe bleibt unverändert (nur Hintergrund).",
+      "source": "components/autocomplete/layout.css [data-part=\"option\"][aria-selected=\"true\"] { background: var(--ac-highlight) }; components/tokens.json",
+      "expectation": "Nur die aktive Option (active: 'Hamburg'; scroll-end: 'Zürich') hat den Hintergrund #EAF2FF; keine andere Option.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-044",
+      "category": "explicit",
+      "domain": "color",
+      "requirement": "Status: Textfarbe = muted (#64748B); im error-Zustand = error (#B91C1C).",
+      "source": "components/autocomplete/layout.css [data-part=\"status\"] { color: var(--ac-muted) }; [data-state=\"error\"] [data-part=\"status\"] { color: var(--ac-error) }; components/tokens.json",
+      "expectation": "Status-Text in #64748B, außer im Fall error: #B91C1C.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-045",
+      "category": "explicit",
+      "domain": "color",
+      "requirement": "Overlayfläche (surface): Hintergrund = surface (#FFFFFF); border 0 (kein Rahmen); box-shadow 0 2px 8px #0003 (= rgba(0,0,0,0.2)); z-index 10.",
+      "source": "components/overlay/layout.css [data-part=\"surface\"] { background: var(--ac-surface); border: 0; border-radius: var(--ac-radius); box-shadow: 0 2px 8px #0003; z-index: 10 }",
+      "expectation": "Die Popupfläche ist weiß, rahmenlos, mit 8px Radius und einem dezenten Schlagschatten (0, 2px, 8px, 20% Schwarz).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-046",
+      "category": "explicit",
+      "domain": "typography",
+      "requirement": "Die Schriftart ist Inter (fontFamily).",
+      "source": "components/tokens.json autocomplete.fontFamily ('Inter'); components/autocomplete/layout.css [data-component=\"Autocomplete\"] { font-family: var(--ac-font-family) }",
+      "expectation": "Alle Texte der Komponente nutzen die Schriftart Inter.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-047",
+      "category": "explicit",
+      "domain": "typography",
+      "requirement": "Die Basis-Größe ist 14px (fontSize) für Komponente/Input/Optionen/Label (per Vererbung).",
+      "source": "components/tokens.json autocomplete.fontSize (14px); components/autocomplete/layout.css [data-component=\"Autocomplete\"] { font-size: var(--ac-font-size) }; [data-part=\"input\"] { font: inherit }",
+      "expectation": "Label, Input, Optionen haben 14px Schriftgröße.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-048",
+      "category": "explicit",
+      "domain": "typography",
+      "requirement": "Der Zeilenabstand (line-height) ist 20px.",
+      "source": "components/tokens.json autocomplete.lineHeight (20px); components/autocomplete/layout.css [data-component=\"Autocomplete\"] { line-height: var(--ac-line-height) }",
+      "expectation": "line-height 20px für Komponententexte (auch Label- und Status-Höhe basieren darauf).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-049",
+      "category": "explicit",
+      "domain": "typography",
+      "requirement": "Der Status hat eine eigene Größe von 12px (statusFontSize).",
+      "source": "components/tokens.json autocomplete.statusFontSize (12px); components/autocomplete/layout.css [data-part=\"status\"] { font-size: var(--ac-status-font-size) }",
+      "expectation": "Status-Text in 12px (nicht 14px).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-005",
+      "category": "derived",
+      "domain": "typography",
+      "requirement": "Label, Input und Optionen erben Inter 14px, line-height 20px, Farbe text (#172B4D), da keine eigenen font/color-Overrides gesetzt sind.",
+      "source": "Ableitung aus: components/autocomplete/layout.css [data-component] (font-family/size/line-height/color) + [data-part=\"input\"] { font: inherit } + fehlende font-/color-Regeln für label/option + components/tokens.json",
+      "expectation": "Label, Inputtext und Optionstext: Inter, 14px, line-height 20px, #172B4D (außer disabled/hinweislich anders definiert).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-006",
+      "category": "derived",
+      "domain": "typography",
+      "requirement": "Der Optionstext ist in der 32px-Zeile vertikal zentriert, da 6px (top) + 20px (line-height) + 6px (bottom) = 32px exakt die Zeilenhöhe füllen.",
+      "source": "Ableitung aus: components/autocomplete/layout.css [data-part=\"option\"] { height: 32px; padding: 6px … } + components/tokens.json lineHeight 20px",
+      "expectation": "Optionstext sitzt mittig in der Zeile (kein Auf-/Unterabstand-Überschuss).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "U-001",
+      "category": "underdetermined",
+      "domain": "typography",
+      "requirement": "Die Schriftstärke (font-weight) ist in der Definition nirgends festgelegt (ebenso letter-spacing, Texttransformation, Gewichte für Label/Option/Status).",
+      "source": "Fehlen in: components/tokens.json (kein weight-Token), components/autocomplete/layout.css (kein font-weight), components/overlay/layout.css, components/scroll-area/layout.css",
+      "expectation": "Jegliche gewählte Schriftstärke (z. B. 400, 500, 600) ist zulässig und wird nicht als Verletzung gewertet; Abweichungen zwischen den beiden Builds nur dann relevant, wenn sie gegen eine explizite Regel verstoßen (keine vorhanden).",
+      "deviationClass": "unzureichend bestimmte Regel"
+    },
+    {
+      "id": "E-050",
+      "category": "explicit",
+      "domain": "geometry",
+      "requirement": "Das Label steht oben; der Input liegt darunter nach labelGap (8px).",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Label oben, darunter nach labelGap der Input.'; components/autocomplete/layout.css [data-part=\"label\"] (display block, margin-bottom)",
+      "expectation": "Vertikale Reihenfolge: Label → 8px → Input, in allen Fällen.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-051",
+      "category": "explicit",
+      "domain": "geometry",
+      "requirement": "Die Popup-Oberkante ist am Input-Ende plus gap (8px) ausgerichtet.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Das Popup richtet seine Oberkante am Inputende plus gap aus'; components/overlay/layout.css [data-part=\"surface\"] { top: anchor(bottom); margin-top: var(--ac-gap) }",
+      "expectation": "Popup-Oberkante = Input-Unterkante + 8px in allen Fällen mit sichtbarem Popup.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-052",
+      "category": "explicit",
+      "domain": "geometry",
+      "requirement": "Das Popup hat dieselbe Breite (320px) und dieselbe linke Kante wie der Input.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'hat dieselbe Breite und dieselbe linke Kante'; components/overlay/layout.css [data-part=\"surface\"] { left: anchor(left); width: anchor-size(width) }",
+      "expectation": "Popup-Breite = 320px; Popup linke Kante = Input linke Kante (fluchend).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-053",
+      "category": "explicit",
+      "domain": "geometry",
+      "requirement": "Ein verborgener Popup belegt keinen Platz (er beeinflusst die Anordnung nicht).",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Ein verborgener Popup belegt keinen Platz.'",
+      "expectation": "In closed, opening, selected, disabled nimmt das Popup keinen Layout-Platz ein; der Status folgt direkt dem Input (plus statusGap).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-007",
+      "category": "derived",
+      "domain": "geometry",
+      "requirement": "Der Status steht nach statusGap (8px) unter dem tatsächlich sichtbaren Popup; wenn kein Popup sichtbar ist, unter dem Input.",
+      "source": "Ableitung aus: components/autocomplete/README.md 'Sichtbare Geometrie': 'Der Status steht nach statusGap unter dem tatsächlich sichtbaren Popup, sonst unter dem Input.' + components/autocomplete/accessibility.rules.json statusPlacement + components/autocomplete/layout.css [data-part=\"status\"] { margin-top: var(--ac-status-gap) }",
+      "expectation": "Status-Referenzkante = Unterkante des sichtbaren Popups (bei sichtbarem Popup) bzw. Unterkante des Inputs (bei verborgenem Popup), jeweils + 8px.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-008",
+      "category": "derived",
+      "domain": "geometry",
+      "requirement": "Status-Position je Fall: unter dem Popup in loading, ready, active, scroll-end, empty, error; unter dem Input in closed, opening, selected, disabled.",
+      "source": "Ableitung aus: components/autocomplete/accessibility.rules.json projections (popupVisible) + D-007 + components/autocomplete/README.md (selected=closed, disabled=closed)",
+      "expectation": "loading/ready/active/scroll-end/empty/error: Status unter dem Popup. closed/opening/selected/disabled: Status direkt unter dem Input (kein Platz für Popup).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-054",
+      "category": "explicit",
+      "domain": "clipping-scroll",
+      "requirement": "Der Viewport clippt seinen Inhalt (overflow-y auto) bei max-height 160px.",
+      "source": "components/scroll-area/layout.css [data-part=\"viewport\"] { max-height: var(--ac-max-height); overflow-y: auto }; components/scroll-area/component.json 'responsibility': 'Clipping/scroll viewport and actual reveal measurement'",
+      "expectation": "Inhalt über 160px wird geclippt; der Viewport ist der Clipping-Grenzkader.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-055",
+      "category": "explicit",
+      "domain": "clipping-scroll",
+      "requirement": "Der Fall scroll-end muss die aktive letzte Option (zuerich) tatsächlich im sichtbaren Viewport darstellen.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Der Fall scroll-end muss die aktive letzte Option tatsächlich im sichtbaren Viewport darstellen.'; components/autocomplete/stories.json story 'scroll-end' (activeKey 'zuerich')",
+      "expectation": "In scroll-end ist die Zeile 'Zürich' (letzte, aktive Option) innerhalb des sichtbaren Viewportbereichs (nicht geclippt).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-056",
+      "category": "explicit",
+      "domain": "clipping-scroll",
+      "requirement": "Für das Design darf der Inhalt des geclippten Viewports entsprechend versetzt werden (statische Darstellung des gescrollten Zustands).",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Für das Design darf dazu der Inhalt des geclippten Viewports entsprechend versetzt werden. … Das ist eine statische Darstellung dieses Zustands, kein Versprechen dynamischen Scrollens im Canvas.'",
+      "expectation": "In scroll-end ist der Listeninhalt so versetzt, dass die letzte Zeile sichtbar ist (statische Scroll-Position), ohne dynamisches Scrollen zu behaupten.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-057",
+      "category": "explicit",
+      "domain": "clipping-scroll",
+      "requirement": "Alle Ergebnislayer bleiben editierbar erhalten; die unsichtbaren (geclippten) Daten werden nicht einfach gelöscht.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Alle Ergebnislayer bleiben editierbar erhalten; nicht einfach die drei unsichtbaren Daten löschen.'",
+      "expectation": "In scroll-end (und ready/active) sind alle sieben Ergebniszeilen als (auch geclippte) Layers vorhanden und editierbar, nicht nur die sichtbaren.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-009",
+      "category": "derived",
+      "domain": "clipping-scroll",
+      "requirement": "In ready und active (7 Zeilen à 32px, Viewport 160px) sind 5 Zeilen sichtbar und 2 geclippt; die sichtbaren Zeilen sind Berlin, Hamburg, München, Dresden, Köln (Zeilen 1–5); geclippt sind Wien, Zürich (Zeilen 6–7) bei Scroll-Position oben.",
+      "source": "Ableitung aus: D-003 (Viewport 160px) + E-029 (32px/Zeile) + components/autocomplete/stories.json (7 Ergebnisse in Reihenfolge Berlin…Zürich)",
+      "expectation": "ready/active: Sichtbereich umfasst die ersten fünf Zeilen (bei obiger Scroll-Position); Wien und Zürich sind außerhalb des Viewports (geclippt, aber vorhanden).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "U-002",
+      "category": "underdetermined",
+      "domain": "clipping-scroll",
+      "requirement": "Die exakte Scroll-Position (Offset) in scroll-end und damit die exakte Anzahl sichtbarer/geclippter Zeilen ist nicht festgelegt. Die Definition verlangt nur, dass die aktive letzte Option (Zürich) sichtbar ist und alle Zeilen erhalten bleiben. Hinzu kommt eine Inkonsistenz: Die README spricht von 'den drei unsichtbaren Daten', während die Arithmetik (7 Zeilen, 5-zeiliger Viewport) bei maximalem Scroll maximal 2 geclippte Zeilen ergibt.",
+      "source": "Fehlen einer Offset-Vorgabe in: components/autocomplete/README.md (nur 'entsprechend versetzt'), components/scroll-area/behavior.scxml (REVEAL ohne Ziel-Offset), components/scroll-area/layout.css; Inkonsistenz: components/autocomplete/README.md 'Sichtbare Geometrie' ('die drei unsichtbaren Daten') vs. tokens/stories-Arithmetik",
+      "expectation": "Jede Scroll-Position ist zulässig, bei der 'Zürich' vollständig sichtbar ist und alle 7 Zeilen als Layers existieren; die genaue Offset-Größe und die Zahl 'drei' vs. 'zwei' wird nicht als Verletzung gewertet, ist aber als dokumentierte Definitionslücke zu benennen.",
+      "deviationClass": "unzureichend bestimmte Regel"
+    },
+    {
+      "id": "E-058",
+      "category": "explicit",
+      "domain": "popup-visibility",
+      "requirement": "Popup-Sichtbarkeit (popupVisible) je Zustand: closed=false, opening=false, loading=true, ready=true, empty=true, error=true.",
+      "source": "components/autocomplete/accessibility.rules.json 'projections' (popupVisible pro Zustand)",
+      "expectation": "Sichtbares Popup nur in loading, ready (inkl. active/scroll-end), empty, error; kein Popup in closed und opening.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-059",
+      "category": "explicit",
+      "domain": "popup-visibility",
+      "requirement": "Im Fall disabled sind keine Popupteile sichtbar.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Bei disabled sind keine Popupteile sichtbar.'",
+      "expectation": "In disabled ist weder Overlayfläche, Viewport noch Listbox sichtbar.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "D-010",
+      "category": "derived",
+      "domain": "popup-visibility",
+      "requirement": "Popup-Sichtbarkeit je Fall: loading, ready, active, scroll-end, empty, error → sichtbar; closed, opening, selected, disabled → nicht sichtbar.",
+      "source": "Ableitung aus: E-058 (Projections) + E-008 (selected=closed) + E-009 (disabled=closed) + components/autocomplete/stories.json (phases)",
+      "expectation": "Sichtbares Popup in genau 6 Fällen (loading, ready, active, scroll-end, empty, error); kein sichtbares Popup in den übrigen 4.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-060",
+      "category": "explicit",
+      "domain": "popup-visibility",
+      "requirement": "Bei loading, empty und error zeigt der Popupinhalt eine Zeile mit der entsprechenden Meldung; die Statusregion wiederholt den Text als benannter Status darunter.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Bei loading, empty und error zeigt der Popupinhalt eine Zeile mit der entsprechenden Meldung; die Statusregion wiederholt den Text als benannter Status darunter.'; components/autocomplete/accessibility.rules.json messages (loading/empty/error)",
+      "expectation": "loading: Popup zeigt eine Zeile 'Städte werden geladen.' + Status wiederholt 'Städte werden geladen.'. empty: Popup-Zeile 'Keine Städte gefunden.' + Status 'Keine Städte gefunden.'. error: Popup-Zeile 'Städte konnten nicht geladen werden.' + Status 'Städte konnten nicht geladen werden.' (Status in error-Farbe #B91C1C).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "U-003",
+      "category": "underdetermined",
+      "domain": "popup-visibility",
+      "requirement": "Die exakte Höhe/Styling der Meldungszeile in loading/empty/error ist nicht vollständig festgelegt. Die Formel 'Viewporthöhe = min(Ergebnisanzahl × rowHeight, maxHeight)' gilt laut README nur 'bei Ergebnislisten'; für die Meldungszeile ist nicht explizit eine Höhe vorgegeben (vermutlich rowHeight 32px). Auch die Textfarbe der Meldungszeile ist nicht definiert.",
+      "source": "Fehlen in: components/autocomplete/README.md ('bei Ergebnislisten'), components/autocomplete/layout.css (keine eigene Regel für Meldungszeile), components/scroll-area/layout.css",
+      "expectation": "Eine Meldungszeile mit dem korrekten Text ist Pflicht; ihre genaue Höhe (z. B. 32px vs. 20px) und Textfarbe werden nicht als Verletzung gewertet, solange Text und Inhalt korrekt sind.",
+      "deviationClass": "unzureichend bestimmte Regel"
+    },
+    {
+      "id": "E-061",
+      "category": "explicit",
+      "domain": "editability",
+      "requirement": "Das Ergebnis ist ein editierbares OpenPencil-Design (keine nur statische Vorschau, kein interaktives Canvas gefordert).",
+      "source": "components/autocomplete/README.md L3: 'Der erste Export ist ein editierbares OpenPencil-Design; eine interaktive Canvas-Preview wird nicht gefordert.'; components/README.md: 'Ziel dieses Schritts ist ein editierbares Design mit allen benannten Zuständen.'; components/library.json targets.openpencil: 'Editable design states first; interactive preview is outside this proof.'",
+      "expectation": "Alle Layers sind im OpenPencil-Dokument editierbar (kein flaches Raster/Bild); die Zustände sind benannte, editierbare Komponenten.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-062",
+      "category": "explicit",
+      "domain": "editability",
+      "requirement": "Es wird keine interaktive Combobox-Verhalten, keine ARIA-Ausführung und keine dynamische Interaktion im Canvas gefordert (ausdrücklich ausgenommen).",
+      "source": "components/autocomplete/component.json targetScope.openpencil: 'Editable named component states. No interactive combobox behaviour or ARIA execution claimed.'; components/README.md: 'Interaktive Combobox-Preview in OpenPencil … sind separate Prüfumfänge.'",
+      "expectation": "Fehlende Interaktivität (Klicks, Live-Scroll, Fokus-Verhalten im Canvas) wird nicht beanstandet; es wird nur die statische, editierbare Darstellung der Zustände geprüft.",
+      "deviationClass": "erlaubte Freiheit"
+    },
+    {
+      "id": "E-063",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "Rollen: Input = combobox; List = listbox; Option = option; Status = status.",
+      "source": "components/autocomplete/accessibility.html: input role=\"combobox\"; ul role=\"listbox\"; li role=\"option\"; div role=\"status\"",
+      "expectation": "Die semantischen Rollen combobox (Input), listbox (Liste), option (Einträge), status (Status) sind den entsprechenden Teilen zugeordnet.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-064",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "Der Input trägt aria-autocomplete=\"list\".",
+      "source": "components/autocomplete/accessibility.html: <input … aria-autocomplete=\"list\">",
+      "expectation": "Die combobox-Annotation enthält aria-autocomplete=list.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-065",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "aria-expanded (Input) je Zustand: closed=false, opening=false, loading=true, ready=true, empty=true, error=true.",
+      "source": "components/autocomplete/accessibility.rules.json 'projections' (expanded); components/autocomplete/accessibility.html (Template-Wert false)",
+      "expectation": "aria-expanded=expanded-Wert je Fall: closed/opening → false; loading/ready/active/scroll-end/empty/error → true; selected/disabled → false (closed).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-066",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "aria-selected ist wahr nur für die aktive Option; dies bestätigt keinen value.",
+      "source": "components/autocomplete/accessibility.rules.json 'selection'.ariaSelected: 'True only for the active option; this does not commit value.'",
+      "expectation": "Pro Fall ist höchstens eine Option als selected markiert, und zwar genau die aktive; selected ≠ committed value.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-067",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "aria-selected je Fall: active → 'Hamburg' (activeKey hamburg); scroll-end → 'Zürich' (activeKey zuerich); alle übrigen Fälle → keine Option selected.",
+      "source": "components/autocomplete/stories.json (activeKey nur in active und scroll-end) + components/autocomplete/accessibility.rules.json selection.ariaSelected",
+      "expectation": "Nur in active ('Hamburg') und scroll-end ('Zürich') ist genau eine Option aria-selected=true; in closed/opening/loading/ready/selected/empty/error/disabled ist keine Option selected.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-068",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "aria-disabled einer Option entspricht result.disabled; disabled Optionen können nicht aktiv oder bestätigt werden.",
+      "source": "components/autocomplete/accessibility.rules.json 'selection'.ariaDisabled: 'Equals result.disabled; disabled options cannot become active or committed.'",
+      "expectation": "Optionen mit disabled=true (nur 'München') sind aria-disabled=true; keine andere Option.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-069",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "'München' (muenchen) ist in allen Fällen, in denen es sichtbar ist, disabled (aria-disabled=true).",
+      "source": "components/autocomplete/stories.json results (muenchen disabled:true in ready/active/scroll-end/selected) + E-068",
+      "expectation": "Die 'München'-Zeile ist in ready, active, scroll-end, selected als disabled markiert (und in #94A3B8 gerendert, s. E-042).",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-070",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "aria-activedescendant zeigt die aktuelle Option für activeKey; ohne aktive Option nicht vorhanden.",
+      "source": "components/autocomplete/accessibility.rules.json 'selection'.ariaActivedescendant: 'Current existing option for activeKey; absent without active option.'",
+      "expectation": "In active (hamburg) und scroll-end (zuerich) ist activedescendant auf die jeweilige Option gesetzt; in allen anderen Fällen nicht vorhanden.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-071",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "Der Status trägt role=status, aria-live=\"polite\", aria-atomic=\"true\".",
+      "source": "components/autocomplete/accessibility.html: <div data-part=\"status\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\">",
+      "expectation": "Die Status-Region ist mit role=status, aria-live=polite, aria-atomic=true annotiert.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-072",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "Namensquellen: Input-Zugangsname leitet sich vom Label ab; List-Name vom Label; Option-Name vom result.label; Platzhalter vom interface.placeholder.",
+      "source": "components/autocomplete/accessibility.rules.json: labelSource 'interface.label', placeholderSource 'interface.placeholder', optionNameSource 'result.label', listNameSource 'interface.label'; components/autocomplete/component.json anatomy.label: 'input accessible name derives from label.'",
+      "expectation": "Input- und List-Name = 'Stadt auswählen'; Optionennamen = die Ergebnislabels; Platzhalter = 'Stadt suchen …'.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-073",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "Fokus: Der Input behält während der Tastaturnavigation den DOM-Fokus; Popup/Viewport erhalten keine zusätzliche Rolle oder Tabstop.",
+      "source": "components/autocomplete/accessibility.rules.json 'focus': 'Input retains DOM focus during keyboard navigation. Popup/viewport get no extra role or tabstop.'",
+      "expectation": "Es gibt keine zusätzliche Fokus-/Tabstop-Annotation für Popup oder Viewport; der Fokus verbleibt konzeptionell am Input.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "E-074",
+      "category": "explicit",
+      "domain": "accessibility",
+      "requirement": "Die ARIA-Werte sind semantische Annotationen für das Design (benannte Teile, Label, Status-Text, active- und disabled-Stile), keine Behauptung eines Screenreader-Verhaltens auf der Design-Canvas.",
+      "source": "components/autocomplete/accessibility.rules.json 'designTarget': 'Represent the named parts, label, status text, active and disabled styles. These are semantic annotations, not a claim of screenreader behaviour on a design canvas.'",
+      "expectation": "Die ARIA-Attribute werden als semantische Annotationen (Labels/Notizen/Eigenschaften) im Design dargestellt; ein funktionaler Screenreader-Test wird nicht erwartet.",
+      "deviationClass": "Verletzung klarer Regel"
+    },
+    {
+      "id": "U-004",
+      "category": "underdetermined",
+      "domain": "accessibility",
+      "requirement": "Die genaue Darstellungsform der ARIA-Attribute im OpenPencil-Design (als Layer-Labels, Notizen, Eigenschafts-Felder oder Kommentare) ist nicht spezifiziert — es sind 'semantische Annotationen'.",
+      "source": "Fehlen einer Darstellungsverpflichtung in: components/autocomplete/accessibility.rules.json 'designTarget' (nur 'Represent … semantic annotations')",
+      "expectation": "Jede darstellerische Form (Label-Text, Notiz, Property) ist zulässig, solange die ARIA-Werte (Rollen, expanded, selected, disabled, activedescendant, live) korrekt und nachvollziehbar abbildbar sind.",
+      "deviationClass": "unzureichend bestimmte Regel"
+    },
+    {
+      "id": "U-005",
+      "category": "underdetermined",
+      "domain": "accessibility",
+      "requirement": "Ob die Status-Region in Fällen mit leerem Text (closed, disabled) als (leerer) Layer vorhanden sein muss oder weggelassen werden darf, ist nicht abschließend festgelegt. Die README sagt 'Ohne Meldung ist sein Text leer' (impliziert Vorhandensein mit leerem Text), aber ob ein leerer Layer Pflicht ist, bleibt offen.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Ohne Meldung ist sein Text leer.'; components/autocomplete/component.json anatomy.status; Fehlen einer expliziten Pflicht zur Anzeige eines leeren Status-Layers",
+      "expectation": "Ein leerer Status-Text in closed/disabled ist korrekt; ob zusätzlich ein (leerer) Status-Layer vorhanden ist, wird nicht als Verletzung gewertet.",
+      "deviationClass": "unzureichend bestimmte Regel"
+    },
+    {
+      "id": "U-006",
+      "category": "underdetermined",
+      "domain": "anatomy",
+      "requirement": "Die Datei error-relay.scxml ('ResearchErrorRelay') existiert im autocomplete/-Ordner, wird aber keiner der zehn Designfälle zugeordnet und hat keine klare Rolle im statischen Design. Ihr Einfluss auf den Export ist nicht definiert.",
+      "source": "components/autocomplete/error-relay.scxml (name 'ResearchErrorRelay', sendet init.failed); keine Referenz in component.json anatomy/stories oder README zu einem Designfall",
+      "expectation": "Das Vorhandensein oder Fehlen einer Darstellung für error-relay wird nicht als Verletzung gewertet; es ist kein Designfall.",
+      "deviationClass": "unzureichend bestimmte Regel"
+    },
+    {
+      "id": "U-007",
+      "category": "underdetermined",
+      "domain": "geometry",
+      "requirement": "Die Behandlung versteckter Popup-Layers in closed/opening/selected/disabled ist nicht vollständig festgelegt: ob sie als (versteckte, platzneutrale) Layer vorhanden sein sollen oder gar nicht erzeugt werden. Nur 'nicht sichtbar' und 'belegt keinen Platz' sind festgelegt.",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Ein verborgener Popup belegt keinen Platz.' / 'Bei disabled sind keine Popupteile sichtbar.'; Fehlen einer Vorgabe zur Existenz versteckter Popup-Layer",
+      "expectation": "Sowohl 'kein Popup-Layer' als auch 'vorhandener, aber platzneutral/verborgener Popup-Layer' sind zulässig, solange nichts sichtbar ist und der Status korrekt unter dem Input liegt.",
+      "deviationClass": "unzureichend bestimmte Regel"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "run": "autocomplete-reproducibility-03",
+  "status": "completed",
+  "date": "2026-10-29",
+  "definitionRevision": "1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727",
+  "definitionFiles": {
+    "README.md": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+    "autocomplete/README.md": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+    "autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+    "autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+    "autocomplete/behavior.scxml": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+    "autocomplete/component.json": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+    "autocomplete/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+    "autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+    "autocomplete/layout.css": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+    "autocomplete/stories.json": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+    "library.json": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+    "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+    "overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+    "overlay/component.json": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+    "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+    "overlay/layout.css": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+    "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+    "scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+    "scroll-area/component.json": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+    "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+    "scroll-area/layout.css": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+    "tokens.json": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+  },
+  "sourceCommit": "700536f0525cd76c82778f22fe64dad2c12cbe61",
+  "toolchainPackageLockSha256": "ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6",
+  "builderHistoryInheritance": "none for both builders",
+  "reviewerHistoryInheritance": "none",
+  "allowedSemanticInputs": "components/ only",
+  "technicalInputs": "Original OpenPencil documentation and pinned tools/openpencil dependencies",
+  "outputDirectories": [
+    "builder-a/",
+    "builder-b/",
+    "review/"
+  ],
+  "priorDesignsAllowed": false,
+  "sharedBuilderOutputsAllowed": false,
+  "independenceLimit": "Separate conversation contexts with access instructions; no separate filesystem sandbox, no statistical model-independence claim.",
+  "comparison": "Definition conformity first; then semantic/component-level differences. Free page layout, generated IDs and bytewise file identity are not required to match.",
+  "reviewPrerequisites": "Reviewer derives and saves criteria from definition before reading builder outputs; actual comparison only after both builders finish.",
+  "studyId": null,
+  "studyDocumentation": "No study document created for this run; artifacts live in this run folder.",
+  "inputFreeze": "Hashes recomputed independently from components/ at run start; revision derived as sha256 over compact, key-sorted path->sha256 JSON.",
+  "executionEnvironment": "Alle Rollen als frische OpenCode-Subagent-Sessions (Agent 'general') ohne Kontextübernahme; Modell-/Reasoning-Konfiguration des aufrufenden Systems (local:default) geerbt, je Rolle nicht verifiziert; exakte Modellrevision, Samplingparameter und Seeds nicht als Laufmetadaten verfügbar.",
+  "criteriaFiles": {
+    "review/preregistered.json": "2faa6a867ae24f1bd9bbc020259b3fa4b84336022768374e0ee417e887de012c",
+    "review/preregistered.md": "64f9604460374e9029f54310d57840619c7087caeea3d8b7e11e4aad8ff131fd",
+    "review/preregistration-seal.json": "45dd9987e6a76c3990f812b854033fb5a3344c11f9c899a37cc24ed256525eba"
+  },
+  "buildersCompleted": {
+    "A": true,
+    "B": true
+  },
+  "builderDeliveries": {
+    "builder-a": {
+      "completed": true,
+      "files": {
+        "REPORT.md": "34c9b31c14eeab1485aa972a871120ce0e70896f778164c3f0755789841a5a91",
+        "autocomplete.fig": "dc2e148cb9fa24a0dc4535eed225a398ba62af2ee9f1fd2d64e246a7e5a207fe",
+        "checks.json": "bd33ebb1f5bd693faea29cef1c574f5727d0abfea207f49c3707955fa225be21",
+        "generate.mjs": "23f25eb960c2a251188a3427473c35d42a59451aaffad9ccfd298e9a500c86a6",
+        "preview.png": "f8ff307d8af4b8c4e7d8bb0b145c114433238471b54990f6bc67ed34dae18b26",
+        "preview.svg": "7bb8a9411ca2b515a65e9e96b0d139c5a21ae1aa926ab634fdc4dbaae054355c",
+        "source-sha256.json": "2deb441536de11bdd49c830b2bde3ea31640e8bb3fa60d291d981266ae105d62"
+      }
+    },
+    "builder-b": {
+      "completed": true,
+      "files": {
+        "REPORT.md": "8d32ca0bf7de9df34fcb1c6109cdc5bec8eb1a68e5c785033868f566f5d3a17d",
+        "autocomplete.fig": "9dce7700ca697834725a9faaae7301d5c57e30b511b491434783d048361d0a48",
+        "checks.json": "56745113ac597a34469141040c57bcae41e750060ce41c7ea9726d4413d8ef7a",
+        "generate.mjs": "98227e8898c587d2cd427a50e7eb6b7a67eb1f2ae801a0b242591ec86c835603",
+        "preview.png": "f430d56d35be92a902b3f82c87384ad6d61b2cba05368ea1457511e429650643",
+        "preview.svg": "1d6b9c231255b3509ad69a2ae078d36e9fd757632667755094defe765bcb1a58",
+        "source-sha256.json": "6336f0b2356c0608aabbac23b9dbb0e96a4171251b4cf201dce54d76251b90eb"
+      }
+    }
+  },
+  "interruptions": [
+    {
+      "actor": "builder-a",
+      "stage": "initial build",
+      "cause": "provider error HTTP 413 (payload size)",
+      "effect": "Session ended at 11:08:34 after all six artifacts (autocomplete.fig, generate.mjs, checks.json, preview.png, preview.svg, source-sha256.json, all written 11:07) existed; REPORT.md missing.",
+      "recovery": "REPORT.md written 11:09-11:27 by a fresh session with access restricted to the existing artifacts, components/ and the pinned toolchain; no generate.mjs re-execution.",
+      "evidence": [
+        "artifact mtimes 11:07",
+        "session log (108 messages, last 11:08:34)",
+        "report session log (32 messages)"
+      ]
+    },
+    {
+      "actor": "reviewer",
+      "stage": "phase 2, attempt 1 (continuation of phase-1 session)",
+      "cause": "provider error HTTP 413 (payload size)",
+      "effect": "Session ended at 11:35:13 after creating and running inspect-original.mjs and render-original.mjs (original dumps and renders written, later superseded).",
+      "recovery": "Fresh phase-2 sessions; the pre-run scripts were audited by the final session against the sealed criteria set.",
+      "evidence": [
+        "session log (49 messages, last 11:35:13)",
+        "script mtimes 11:33"
+      ]
+    },
+    {
+      "actor": "reviewer",
+      "stage": "phase 2, attempt 2 (fresh session)",
+      "cause": "provider error HTTP 413 (payload size)",
+      "effect": "Session ended at 11:38:48 after reading builder reports and re-running the inspect/render scripts; no report written.",
+      "recovery": "Next fresh session.",
+      "evidence": [
+        "session log (15 messages)"
+      ]
+    },
+    {
+      "actor": "reviewer",
+      "stage": "phase 2, attempt 3 (fresh session)",
+      "cause": "provider error HTTP 413 (payload size)",
+      "effect": "Session ended at 12:17:45 after executing the full measurement chain (verify.py pre-run, criterion results, definition hash check); report not finished.",
+      "recovery": "Final session (12:18-12:45) audited the pre-run verify.py against the sealed criteria set (3 documented, judgment-neutral adjustments; pre-run version preserved as verify.py.prev-1216), re-executed the entire measurement chain with identical status (182/182), and wrote REVIEW.md, results.json, hashes.json.",
+      "evidence": [
+        "session log (71 messages)",
+        "verify.py.prev-1216 preserved",
+        "REVIEW.md limitation L3"
+      ]
+    }
+  ],
+  "interruptionImpact": "All interruptions were provider HTTP 413 failures, not access to forbidden inputs. No participant read prior runs, prior designs, research documents or git history (verified at path level from session logs). Each role resumed only in fresh sessions restricted to the same allowed inputs; the run therefore remains a two-builder, one-reviewer comparison, but it is not a claim of uninterrupted single-shot generation. Reviewer phase 1 and phase 2 ran in separate technical sessions; the final phase-2 session worked exclusively from the sealed criteria set. Builder A's REPORT.md is a reconstruction from artifacts by a second session; the reviewer independently verified every report claim against the artifacts.",
+  "reviewerInterruptions": "phase 1: none; phase 2: three HTTP 413 interruptions, final execution in a fresh session from the sealed criteria set",
+  "accessAudit": "Session logs of all subagent sessions checked at path level: only allowed paths (components/, tools/openpencil/, own output directories, /tmp scratch). No access to run-01/run-02, other examples/, docs/, .git, and no git commands. Single minor deviation: one 'ls tools/' in the reviewer phase-2 continuation listed the sibling directory name 'design-review' (name only, no content).",
+  "outcome": {
+    "study": null,
+    "builderA": "SUBSTANTIV_ERFUELLT",
+    "builderB": "SUBSTANTIV_ERFUELLT",
+    "verdictDetail": {
+      "a": "Substanziell erfüllt mit systematischer Lücke: alle geometrischen, typografischen, textlichen, farblichen und strukturellen Kriterien erfüllt; der Accessibility-Annotationsvertrag der Definition ist nicht als lesbare Annotation in das Artefakt übertragen (5 explizite Kriterien verletzt: E-063, E-064, E-065, E-070, E-071).",
+      "b": "Substanziell erfüllt mit systematischer Lücke: wie A (dieselben 5 Accessibility-Verletzungen) zusätzlich eine Farbabweichung im disabled-Fall (E-041: Platzhalter #94a3b8 statt muted #64748b), die zusätzlich dem eigenen REPORT (Punkt 4, dort 'bleibt muted') widerspricht — Report↔Artefakt-Widerspruch."
+    },
+    "criteriaCounts": {
+      "a": {
+        "total": {
+          "erfüllt": 79,
+          "verletzt": 5,
+          "nicht anwendbar": 7
+        },
+        "explicit": {
+          "erfüllt": 69,
+          "verletzt": 5,
+          "nicht anwendbar": 0
+        },
+        "derived": {
+          "erfüllt": 10,
+          "verletzt": 0,
+          "nicht anwendbar": 0
+        },
+        "underdetermined": {
+          "erfüllt": 0,
+          "verletzt": 0,
+          "nicht anwendbar": 7
+        }
+      },
+      "b": {
+        "total": {
+          "erfüllt": 78,
+          "verletzt": 6,
+          "nicht anwendbar": 7
+        },
+        "explicit": {
+          "erfüllt": 68,
+          "verletzt": 6,
+          "nicht anwendbar": 0
+        },
+        "derived": {
+          "erfüllt": 10,
+          "verletzt": 0,
+          "nicht anwendbar": 0
+        },
+        "underdetermined": {
+          "erfüllt": 0,
+          "verletzt": 0,
+          "nicht anwendbar": 7
+        }
+      }
+    },
+    "criteriaBasis": {
+      "total": 91,
+      "explicit": 74,
+      "derived": 10,
+      "underdetermined": 7
+    },
+    "sharedViolation": "E-063, E-064, E-065, E-070, E-071: ARIA values of the definition not present as readable annotations in either artifact",
+    "bOnlyViolation": "E-041: disabled placeholder #94A3B8 instead of muted #64748B (plus documented report<->artifact contradiction in builder-b REPORT.md)",
+    "measuredPairAgreement": "1145/1208 value pairs = 94.78 % (band 90-95 %); 100 % on criterion-relevant values with the single exception of the disabled placeholder color (B only)",
+    "definitionChanged": false,
+    "criteriaChangedAfterSeal": false,
+    "sealVerifiedAtCompletion": true,
+    "inputHashesVerifiedAtCompletion": true
+  },
+  "layoutDeviationsFromPriorRuns": {
+    "added": [
+      "builder-a/preview.svg",
+      "builder-b/source-sha256.json",
+      "review/PHASE2-TASK.md (phase-2 task stored as a file because the inline task exceeded the provider payload limit)",
+      "review/criterion-results.json",
+      "review/definition-hash-check.json",
+      "review/pair-comparison.json",
+      "review/verify.py.prev-1216 (audited pre-run version of verify.py)"
+    ],
+    "missing": [],
+    "note": "All prior-run paths are present; the additions are documented in README.md."
+  },
+  "artifacts": {
+    "README.md": "9befa41bacef42203cf8054819ab4a2d3859d2ec3c3c70ea674b38979a18a95c",
+    "builder-a/REPORT.md": "34c9b31c14eeab1485aa972a871120ce0e70896f778164c3f0755789841a5a91",
+    "builder-b/REPORT.md": "8d32ca0bf7de9df34fcb1c6109cdc5bec8eb1a68e5c785033868f566f5d3a17d",
+    "review/REVIEW.md": "207fc7700e6d95395624a353d619871e544606e984ef030f809ceee257c5eac7",
+    "review/results.json": "40610dc575fd8070670529c3d5e623e5e765b9f0bdad73e7bbb3a73d17c76424",
+    "review/hashes.json": "e5c6336bc84e23a42ba286d4a278dd047d786596b85d17f21a9dceb950256125"
+  }
+}

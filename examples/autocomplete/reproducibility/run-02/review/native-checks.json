@@ -1,0 +1,4827 @@
+{
+  "run": "run-02",
+  "stage": "native-measurement",
+  "note": "Erhoben ausschliesslich aus den .fig-Dateien mit @open-pencil/core 0.16.0; keine Builder-Selbstauskunft.",
+  "toolchain": {
+    "core": "0.16.0",
+    "cli": "0.16.0",
+    "sceneGraph": "0.16.0"
+  },
+  "tokenReference": {
+    "width": 320,
+    "inputHeight": 44,
+    "fontSize": 14,
+    "statusFontSize": 12,
+    "lineHeight": 20,
+    "labelGap": 8,
+    "gap": 8,
+    "statusGap": 8,
+    "rowHeight": 32,
+    "maxHeight": 160,
+    "radius": 8,
+    "borderWidth": 1,
+    "paddingInline": 12,
+    "colors": {
+      "surface": "#FFFFFF",
+      "text": "#172B4D",
+      "muted": "#64748B",
+      "border": "#CBD5E1",
+      "focus": "#2563EB",
+      "highlight": "#EAF2FF",
+      "disabled": "#94A3B8",
+      "error": "#B91C1C"
+    }
+  },
+  "a": {
+    "design": "A",
+    "fileSha256": "f79ff07fd70d4775c344b0d8b0da8d33be1bc0c355751b1bc8de33c61a6d7da0",
+    "fileBytes": 60025,
+    "document": {
+      "opens": true,
+      "pages": [
+        "Autocomplete"
+      ],
+      "nodeCount": 129,
+      "types": {
+        "FRAME": 63,
+        "CANVAS": 1,
+        "TEXT": 65
+      },
+      "fonts": [
+        "Inter"
+      ],
+      "textSizes": [
+        12,
+        14,
+        24
+      ],
+      "textNodes": 65,
+      "emptyTextNodes": 2,
+      "bitmapNodes": 0,
+      "vectorNodes": 0,
+      "hiddenNodes": 0,
+      "zeroOpacityNodes": 0,
+      "componentNodes": 0,
+      "frameNodes": 63,
+      "autoResize": [
+        "NONE"
+      ],
+      "maxLines": [
+        "None"
+      ]
+    },
+    "caseCount": 10,
+    "caseNames": [
+      "Autocomplete / closed",
+      "Autocomplete / opening",
+      "Autocomplete / loading",
+      "Autocomplete / ready",
+      "Autocomplete / active",
+      "Autocomplete / scroll-end",
+      "Autocomplete / selected",
+      "Autocomplete / empty",
+      "Autocomplete / error",
+      "Autocomplete / disabled"
+    ],
+    "cases": {
+      "closed": {
+        "present": true,
+        "frameName": "Autocomplete / closed",
+        "frame": {
+          "w": 320,
+          "h": 100,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 100,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": null,
+          "surfaceW": null,
+          "surfaceLeft": null,
+          "viewportH": null,
+          "viewportW": null,
+          "listH": null,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#CBD5E1",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": false,
+          "viewportVisible": false,
+          "listVisible": false,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": null,
+          "viewportClips": null
+        },
+        "radius": {
+          "input": 8,
+          "surface": null
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": null
+        },
+        "effects": [],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / closed",
+            "status": "Autocomplete / closed"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / closed",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / closed",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "opening": {
+        "present": true,
+        "frameName": "Autocomplete / opening",
+        "frame": {
+          "w": 320,
+          "h": 100,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 100,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": null,
+          "surfaceW": null,
+          "surfaceLeft": null,
+          "viewportH": null,
+          "viewportW": null,
+          "listH": null,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Suche wird geöffnet.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "Suche wird geöffnet.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": false,
+          "viewportVisible": false,
+          "listVisible": false,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": null,
+          "viewportClips": null
+        },
+        "radius": {
+          "input": 8,
+          "surface": null
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": null
+        },
+        "effects": [],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / opening",
+            "status": "Autocomplete / opening"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / opening",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / opening",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "loading": {
+        "present": true,
+        "frameName": "Autocomplete / loading",
+        "frame": {
+          "w": 320,
+          "h": 140,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 140,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 32,
+          "viewportW": 320,
+          "listH": 32,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#172B4D"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [
+            "#64748B"
+          ],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Be",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Städte werden geladen.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": {
+            "value": "Städte werden geladen.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          }
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Be",
+          "status": "Städte werden geladen.",
+          "message": "Städte werden geladen."
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": false,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / loading",
+            "surface": "Autocomplete / loading",
+            "viewport": "overlay surface",
+            "list": "scroll viewport",
+            "status": "Autocomplete / loading",
+            "message": "message row"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / loading",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / loading",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay surface",
+              "Autocomplete / loading",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / loading",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / loading",
+              "Autocomplete",
+              "Document"
+            ],
+            "message": [
+              "message row",
+              "list",
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / loading",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "ready": {
+        "present": true,
+        "frameName": "Autocomplete / ready",
+        "frame": {
+          "w": 320,
+          "h": 268,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 268,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 160,
+          "viewportW": 320,
+          "listH": 224,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [
+            32
+          ],
+          "optionTextOffsets": [
+            [
+              12,
+              6
+            ]
+          ]
+        },
+        "rows": {
+          "fullyVisible": 5,
+          "partial": 0,
+          "outside": 2,
+          "rows": [
+            {
+              "key": "berlin",
+              "label": "Berlin",
+              "topRelViewport": 0,
+              "bottomRelViewport": 32,
+              "state": "full"
+            },
+            {
+              "key": "hamburg",
+              "label": "Hamburg",
+              "topRelViewport": 32,
+              "bottomRelViewport": 64,
+              "state": "full"
+            },
+            {
+              "key": "muenchen",
+              "label": "München",
+              "topRelViewport": 64,
+              "bottomRelViewport": 96,
+              "state": "full"
+            },
+            {
+              "key": "dresden",
+              "label": "Dresden",
+              "topRelViewport": 96,
+              "bottomRelViewport": 128,
+              "state": "full"
+            },
+            {
+              "key": "koeln",
+              "label": "Köln",
+              "topRelViewport": 128,
+              "bottomRelViewport": 160,
+              "state": "full"
+            },
+            {
+              "key": "wien",
+              "label": "Wien",
+              "topRelViewport": 160,
+              "bottomRelViewport": 192,
+              "state": "outside"
+            },
+            {
+              "key": "zuerich",
+              "label": "Zürich",
+              "topRelViewport": 192,
+              "bottomRelViewport": 224,
+              "state": "outside"
+            }
+          ]
+        },
+        "optionCount": 7,
+        "optionKeys": [
+          "berlin",
+          "hamburg",
+          "muenchen",
+          "dresden",
+          "koeln",
+          "wien",
+          "zuerich"
+        ],
+        "optionLabels": [
+          "Berlin",
+          "Hamburg",
+          "München",
+          "Dresden",
+          "Köln",
+          "Wien",
+          "Zürich"
+        ],
+        "highlightKeys": [],
+        "disabledTextKeys": [
+          "muenchen"
+        ],
+        "optionFills": {
+          "berlin": [],
+          "hamburg": [],
+          "muenchen": [],
+          "dresden": [],
+          "koeln": [],
+          "wien": [],
+          "zuerich": []
+        },
+        "optionCornerRadius": [
+          0
+        ],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": [
+            {
+              "key": "berlin",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "hamburg",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "muenchen",
+              "fill": [],
+              "textColor": "#94A3B8"
+            },
+            {
+              "key": "dresden",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "koeln",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "wien",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "zuerich",
+              "fill": [],
+              "textColor": "#172B4D"
+            }
+          ]
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [
+            {
+              "family": "Inter",
+              "size": 14,
+              "weight": 400,
+              "lineHeight": 20
+            }
+          ],
+          "status": {
+            "value": "7 Städte verfügbar.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "7 Städte verfügbar.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": false,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / ready",
+            "surface": "Autocomplete / ready",
+            "viewport": "overlay surface",
+            "list": "scroll viewport",
+            "status": "Autocomplete / ready",
+            "option": "list"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / ready",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / ready",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay surface",
+              "Autocomplete / ready",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / ready",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / ready",
+              "Autocomplete",
+              "Document"
+            ],
+            "option": [
+              "list",
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / ready",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "active": {
+        "present": true,
+        "frameName": "Autocomplete / active",
+        "frame": {
+          "w": 320,
+          "h": 268,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 268,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 160,
+          "viewportW": 320,
+          "listH": 224,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [
+            32
+          ],
+          "optionTextOffsets": [
+            [
+              12,
+              6
+            ]
+          ]
+        },
+        "rows": {
+          "fullyVisible": 5,
+          "partial": 0,
+          "outside": 2,
+          "rows": [
+            {
+              "key": "berlin",
+              "label": "Berlin",
+              "topRelViewport": 0,
+              "bottomRelViewport": 32,
+              "state": "full"
+            },
+            {
+              "key": "hamburg",
+              "label": "Hamburg",
+              "topRelViewport": 32,
+              "bottomRelViewport": 64,
+              "state": "full"
+            },
+            {
+              "key": "muenchen",
+              "label": "München",
+              "topRelViewport": 64,
+              "bottomRelViewport": 96,
+              "state": "full"
+            },
+            {
+              "key": "dresden",
+              "label": "Dresden",
+              "topRelViewport": 96,
+              "bottomRelViewport": 128,
+              "state": "full"
+            },
+            {
+              "key": "koeln",
+              "label": "Köln",
+              "topRelViewport": 128,
+              "bottomRelViewport": 160,
+              "state": "full"
+            },
+            {
+              "key": "wien",
+              "label": "Wien",
+              "topRelViewport": 160,
+              "bottomRelViewport": 192,
+              "state": "outside"
+            },
+            {
+              "key": "zuerich",
+              "label": "Zürich",
+              "topRelViewport": 192,
+              "bottomRelViewport": 224,
+              "state": "outside"
+            }
+          ]
+        },
+        "optionCount": 7,
+        "optionKeys": [
+          "berlin",
+          "hamburg",
+          "muenchen",
+          "dresden",
+          "koeln",
+          "wien",
+          "zuerich"
+        ],
+        "optionLabels": [
+          "Berlin",
+          "Hamburg",
+          "München",
+          "Dresden",
+          "Köln",
+          "Wien",
+          "Zürich"
+        ],
+        "highlightKeys": [
+          "hamburg"
+        ],
+        "disabledTextKeys": [
+          "muenchen"
+        ],
+        "optionFills": {
+          "berlin": [],
+          "hamburg": [
+            "#EAF2FF"
+          ],
+          "muenchen": [],
+          "dresden": [],
+          "koeln": [],
+          "wien": [],
+          "zuerich": []
+        },
+        "optionCornerRadius": [
+          0
+        ],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": [
+            {
+              "key": "berlin",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "hamburg",
+              "fill": [
+                "#EAF2FF"
+              ],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "muenchen",
+              "fill": [],
+              "textColor": "#94A3B8"
+            },
+            {
+              "key": "dresden",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "koeln",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "wien",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "zuerich",
+              "fill": [],
+              "textColor": "#172B4D"
+            }
+          ]
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [
+            {
+              "family": "Inter",
+              "size": 14,
+              "weight": 400,
+              "lineHeight": 20
+            }
+          ],
+          "status": {
+            "value": "7 Städte verfügbar.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "7 Städte verfügbar.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": false,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / active",
+            "surface": "Autocomplete / active",
+            "viewport": "overlay surface",
+            "list": "scroll viewport",
+            "status": "Autocomplete / active",
+            "option": "list"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / active",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / active",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay surface",
+              "Autocomplete / active",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / active",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / active",
+              "Autocomplete",
+              "Document"
+            ],
+            "option": [
+              "list",
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / active",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "scroll-end": {
+        "present": true,
+        "frameName": "Autocomplete / scroll-end",
+        "frame": {
+          "w": 320,
+          "h": 268,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 268,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 160,
+          "viewportW": 320,
+          "listH": 224,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [
+            32
+          ],
+          "optionTextOffsets": [
+            [
+              12,
+              6
+            ]
+          ]
+        },
+        "rows": {
+          "fullyVisible": 5,
+          "partial": 0,
+          "outside": 2,
+          "rows": [
+            {
+              "key": "berlin",
+              "label": "Berlin",
+              "topRelViewport": -64,
+              "bottomRelViewport": -32,
+              "state": "outside"
+            },
+            {
+              "key": "hamburg",
+              "label": "Hamburg",
+              "topRelViewport": -32,
+              "bottomRelViewport": 0,
+              "state": "outside"
+            },
+            {
+              "key": "muenchen",
+              "label": "München",
+              "topRelViewport": 0,
+              "bottomRelViewport": 32,
+              "state": "full"
+            },
+            {
+              "key": "dresden",
+              "label": "Dresden",
+              "topRelViewport": 32,
+              "bottomRelViewport": 64,
+              "state": "full"
+            },
+            {
+              "key": "koeln",
+              "label": "Köln",
+              "topRelViewport": 64,
+              "bottomRelViewport": 96,
+              "state": "full"
+            },
+            {
+              "key": "wien",
+              "label": "Wien",
+              "topRelViewport": 96,
+              "bottomRelViewport": 128,
+              "state": "full"
+            },
+            {
+              "key": "zuerich",
+              "label": "Zürich",
+              "topRelViewport": 128,
+              "bottomRelViewport": 160,
+              "state": "full"
+            }
+          ]
+        },
+        "optionCount": 7,
+        "optionKeys": [
+          "berlin",
+          "hamburg",
+          "muenchen",
+          "dresden",
+          "koeln",
+          "wien",
+          "zuerich"
+        ],
+        "optionLabels": [
+          "Berlin",
+          "Hamburg",
+          "München",
+          "Dresden",
+          "Köln",
+          "Wien",
+          "Zürich"
+        ],
+        "highlightKeys": [
+          "zuerich"
+        ],
+        "disabledTextKeys": [
+          "muenchen"
+        ],
+        "optionFills": {
+          "berlin": [],
+          "hamburg": [],
+          "muenchen": [],
+          "dresden": [],
+          "koeln": [],
+          "wien": [],
+          "zuerich": [
+            "#EAF2FF"
+          ]
+        },
+        "optionCornerRadius": [
+          0
+        ],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": [
+            {
+              "key": "berlin",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "hamburg",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "muenchen",
+              "fill": [],
+              "textColor": "#94A3B8"
+            },
+            {
+              "key": "dresden",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "koeln",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "wien",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "zuerich",
+              "fill": [
+                "#EAF2FF"
+              ],
+              "textColor": "#172B4D"
+            }
+          ]
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [
+            {
+              "family": "Inter",
+              "size": 14,
+              "weight": 400,
+              "lineHeight": 20
+            }
+          ],
+          "status": {
+            "value": "7 Städte verfügbar.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "7 Städte verfügbar.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": false,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / scroll-end",
+            "surface": "Autocomplete / scroll-end",
+            "viewport": "overlay surface",
+            "list": "scroll viewport",
+            "status": "Autocomplete / scroll-end",
+            "option": "list"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / scroll-end",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / scroll-end",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay surface",
+              "Autocomplete / scroll-end",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / scroll-end",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / scroll-end",
+              "Autocomplete",
+              "Document"
+            ],
+            "option": [
+              "list",
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / scroll-end",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "selected": {
+        "present": true,
+        "frameName": "Autocomplete / selected",
+        "frame": {
+          "w": 320,
+          "h": 100,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 100,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": null,
+          "surfaceW": null,
+          "surfaceLeft": null,
+          "viewportH": null,
+          "viewportW": null,
+          "listH": null,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#CBD5E1",
+          "inputText": [
+            "#172B4D"
+          ],
+          "surfaceFill": [],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Berlin",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Ausgewählt: Berlin.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Berlin",
+          "status": "Ausgewählt: Berlin.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": false,
+          "viewportVisible": false,
+          "listVisible": false,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": null,
+          "viewportClips": null
+        },
+        "radius": {
+          "input": 8,
+          "surface": null
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": null
+        },
+        "effects": [],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / selected",
+            "status": "Autocomplete / selected"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / selected",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / selected",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "empty": {
+        "present": true,
+        "frameName": "Autocomplete / empty",
+        "frame": {
+          "w": 320,
+          "h": 140,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 140,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 32,
+          "viewportW": 320,
+          "listH": 32,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#172B4D"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [
+            "#64748B"
+          ],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Atlantis",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Keine Städte gefunden.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": {
+            "value": "Keine Städte gefunden.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          }
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Atlantis",
+          "status": "Keine Städte gefunden.",
+          "message": "Keine Städte gefunden."
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": false,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / empty",
+            "surface": "Autocomplete / empty",
+            "viewport": "overlay surface",
+            "list": "scroll viewport",
+            "status": "Autocomplete / empty",
+            "message": "message row"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / empty",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / empty",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay surface",
+              "Autocomplete / empty",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / empty",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / empty",
+              "Autocomplete",
+              "Document"
+            ],
+            "message": [
+              "message row",
+              "list",
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / empty",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "error": {
+        "present": true,
+        "frameName": "Autocomplete / error",
+        "frame": {
+          "w": 320,
+          "h": 140,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 140,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 32,
+          "viewportW": 320,
+          "listH": 32,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#172B4D"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#B91C1C"
+          ],
+          "message": [
+            "#64748B"
+          ],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Be",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Städte konnten nicht geladen werden.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": {
+            "value": "Städte konnten nicht geladen werden.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          }
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Be",
+          "status": "Städte konnten nicht geladen werden.",
+          "message": "Städte konnten nicht geladen werden."
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": false,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / error",
+            "surface": "Autocomplete / error",
+            "viewport": "overlay surface",
+            "list": "scroll viewport",
+            "status": "Autocomplete / error",
+            "message": "message row"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / error",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / error",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay surface",
+              "Autocomplete / error",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / error",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / error",
+              "Autocomplete",
+              "Document"
+            ],
+            "message": [
+              "message row",
+              "list",
+              "scroll viewport",
+              "overlay surface",
+              "Autocomplete / error",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "disabled": {
+        "present": true,
+        "frameName": "Autocomplete / disabled",
+        "frame": {
+          "w": 320,
+          "h": 100,
+          "type": "FRAME"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 100,
+            "type": "FRAME"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": null,
+          "surfaceW": null,
+          "surfaceLeft": null,
+          "viewportH": null,
+          "viewportW": null,
+          "listH": null,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#CBD5E1",
+          "inputText": [
+            "#94A3B8"
+          ],
+          "surfaceFill": [],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "TOP",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": false,
+          "viewportVisible": false,
+          "listVisible": false,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": null,
+          "viewportClips": null
+        },
+        "radius": {
+          "input": 8,
+          "surface": null
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": null
+        },
+        "effects": [],
+        "structure": {
+          "caseFrameType": "FRAME",
+          "parents": {
+            "input": "Autocomplete / disabled",
+            "status": "Autocomplete / disabled"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / disabled",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / disabled",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "b": {
+    "design": "B",
+    "fileSha256": "fbd3b9934a3e4f28b665392f8fe053e1b896103f56e6cf2e355549b909459f0a",
+    "fileBytes": 31306,
+    "document": {
+      "opens": true,
+      "pages": [
+        "Page 1",
+        "Autocomplete"
+      ],
+      "nodeCount": 122,
+      "types": {
+        "FRAME": 54,
+        "CANVAS": 2,
+        "TEXT": 56,
+        "COMPONENT": 10
+      },
+      "fonts": [
+        "Inter"
+      ],
+      "textSizes": [
+        12,
+        14,
+        20
+      ],
+      "textNodes": 56,
+      "emptyTextNodes": 2,
+      "bitmapNodes": 0,
+      "vectorNodes": 0,
+      "hiddenNodes": 0,
+      "zeroOpacityNodes": 0,
+      "componentNodes": 10,
+      "frameNodes": 54,
+      "autoResize": [
+        "NONE"
+      ],
+      "maxLines": [
+        "None"
+      ]
+    },
+    "caseCount": 10,
+    "caseNames": [
+      "Autocomplete / closed",
+      "Autocomplete / opening",
+      "Autocomplete / loading",
+      "Autocomplete / ready",
+      "Autocomplete / active",
+      "Autocomplete / scroll-end",
+      "Autocomplete / selected",
+      "Autocomplete / empty",
+      "Autocomplete / error",
+      "Autocomplete / disabled"
+    ],
+    "cases": {
+      "closed": {
+        "present": true,
+        "frameName": "Autocomplete / closed",
+        "frame": {
+          "w": 320,
+          "h": 100,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 100,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": null,
+          "surfaceW": null,
+          "surfaceLeft": null,
+          "viewportH": null,
+          "viewportW": null,
+          "listH": null,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#CBD5E2",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": false,
+          "viewportVisible": false,
+          "listVisible": false,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": null,
+          "viewportClips": null
+        },
+        "radius": {
+          "input": 8,
+          "surface": null
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": null
+        },
+        "effects": [],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / closed",
+            "status": "Autocomplete / closed"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / closed",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / closed",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "opening": {
+        "present": true,
+        "frameName": "Autocomplete / opening",
+        "frame": {
+          "w": 320,
+          "h": 100,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 100,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": null,
+          "surfaceW": null,
+          "surfaceLeft": null,
+          "viewportH": null,
+          "viewportW": null,
+          "listH": null,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Suche wird geöffnet.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "Suche wird geöffnet.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": false,
+          "viewportVisible": false,
+          "listVisible": false,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": null,
+          "viewportClips": null
+        },
+        "radius": {
+          "input": 8,
+          "surface": null
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": null
+        },
+        "effects": [],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / opening",
+            "status": "Autocomplete / opening"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / opening",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / opening",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "loading": {
+        "present": true,
+        "frameName": "Autocomplete / loading",
+        "frame": {
+          "w": 320,
+          "h": 140,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 140,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 32,
+          "viewportW": 320,
+          "listH": 32,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#172B4D"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [
+            "#64748B"
+          ],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Be",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Städte werden geladen.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": {
+            "value": "Städte werden geladen.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          }
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Be",
+          "status": "Städte werden geladen.",
+          "message": "Städte werden geladen."
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": true,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / loading",
+            "surface": "Autocomplete / loading",
+            "viewport": "overlay.surface",
+            "list": "overlay.scroll.viewport",
+            "status": "Autocomplete / loading",
+            "message": "list/message-row"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / loading",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / loading",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay.surface",
+              "Autocomplete / loading",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / loading",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / loading",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "message": [
+              "list/message-row",
+              "list",
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / loading",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "ready": {
+        "present": true,
+        "frameName": "Autocomplete / ready",
+        "frame": {
+          "w": 320,
+          "h": 268,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 268,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 160,
+          "viewportW": 320,
+          "listH": 224,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [
+            32
+          ],
+          "optionTextOffsets": [
+            [
+              12,
+              6
+            ]
+          ]
+        },
+        "rows": {
+          "fullyVisible": 5,
+          "partial": 0,
+          "outside": 2,
+          "rows": [
+            {
+              "key": "berlin",
+              "label": "Berlin",
+              "topRelViewport": 0,
+              "bottomRelViewport": 32,
+              "state": "full"
+            },
+            {
+              "key": "hamburg",
+              "label": "Hamburg",
+              "topRelViewport": 32,
+              "bottomRelViewport": 64,
+              "state": "full"
+            },
+            {
+              "key": "muenchen",
+              "label": "München",
+              "topRelViewport": 64,
+              "bottomRelViewport": 96,
+              "state": "full"
+            },
+            {
+              "key": "dresden",
+              "label": "Dresden",
+              "topRelViewport": 96,
+              "bottomRelViewport": 128,
+              "state": "full"
+            },
+            {
+              "key": "koeln",
+              "label": "Köln",
+              "topRelViewport": 128,
+              "bottomRelViewport": 160,
+              "state": "full"
+            },
+            {
+              "key": "wien",
+              "label": "Wien",
+              "topRelViewport": 160,
+              "bottomRelViewport": 192,
+              "state": "outside"
+            },
+            {
+              "key": "zuerich",
+              "label": "Zürich",
+              "topRelViewport": 192,
+              "bottomRelViewport": 224,
+              "state": "outside"
+            }
+          ]
+        },
+        "optionCount": 7,
+        "optionKeys": [
+          "berlin",
+          "hamburg",
+          "muenchen",
+          "dresden",
+          "koeln",
+          "wien",
+          "zuerich"
+        ],
+        "optionLabels": [
+          "Berlin",
+          "Hamburg",
+          "München",
+          "Dresden",
+          "Köln",
+          "Wien",
+          "Zürich"
+        ],
+        "highlightKeys": [],
+        "disabledTextKeys": [
+          "muenchen"
+        ],
+        "optionFills": {
+          "berlin": [],
+          "hamburg": [],
+          "muenchen": [],
+          "dresden": [],
+          "koeln": [],
+          "wien": [],
+          "zuerich": []
+        },
+        "optionCornerRadius": [
+          0
+        ],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": [
+            {
+              "key": "berlin",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "hamburg",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "muenchen",
+              "fill": [],
+              "textColor": "#94A3B8"
+            },
+            {
+              "key": "dresden",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "koeln",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "wien",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "zuerich",
+              "fill": [],
+              "textColor": "#172B4D"
+            }
+          ]
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [
+            {
+              "family": "Inter",
+              "size": 14,
+              "weight": 400,
+              "lineHeight": 20
+            }
+          ],
+          "status": {
+            "value": "7 Städte verfügbar.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "7 Städte verfügbar.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": true,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / ready",
+            "surface": "Autocomplete / ready",
+            "viewport": "overlay.surface",
+            "list": "overlay.scroll.viewport",
+            "status": "Autocomplete / ready",
+            "option": "list"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / ready",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / ready",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay.surface",
+              "Autocomplete / ready",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / ready",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / ready",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "option": [
+              "list",
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / ready",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "active": {
+        "present": true,
+        "frameName": "Autocomplete / active",
+        "frame": {
+          "w": 320,
+          "h": 268,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 268,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 160,
+          "viewportW": 320,
+          "listH": 224,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [
+            32
+          ],
+          "optionTextOffsets": [
+            [
+              12,
+              6
+            ]
+          ]
+        },
+        "rows": {
+          "fullyVisible": 5,
+          "partial": 0,
+          "outside": 2,
+          "rows": [
+            {
+              "key": "berlin",
+              "label": "Berlin",
+              "topRelViewport": 0,
+              "bottomRelViewport": 32,
+              "state": "full"
+            },
+            {
+              "key": "hamburg",
+              "label": "Hamburg",
+              "topRelViewport": 32,
+              "bottomRelViewport": 64,
+              "state": "full"
+            },
+            {
+              "key": "muenchen",
+              "label": "München",
+              "topRelViewport": 64,
+              "bottomRelViewport": 96,
+              "state": "full"
+            },
+            {
+              "key": "dresden",
+              "label": "Dresden",
+              "topRelViewport": 96,
+              "bottomRelViewport": 128,
+              "state": "full"
+            },
+            {
+              "key": "koeln",
+              "label": "Köln",
+              "topRelViewport": 128,
+              "bottomRelViewport": 160,
+              "state": "full"
+            },
+            {
+              "key": "wien",
+              "label": "Wien",
+              "topRelViewport": 160,
+              "bottomRelViewport": 192,
+              "state": "outside"
+            },
+            {
+              "key": "zuerich",
+              "label": "Zürich",
+              "topRelViewport": 192,
+              "bottomRelViewport": 224,
+              "state": "outside"
+            }
+          ]
+        },
+        "optionCount": 7,
+        "optionKeys": [
+          "berlin",
+          "hamburg",
+          "muenchen",
+          "dresden",
+          "koeln",
+          "wien",
+          "zuerich"
+        ],
+        "optionLabels": [
+          "Berlin",
+          "Hamburg",
+          "München",
+          "Dresden",
+          "Köln",
+          "Wien",
+          "Zürich"
+        ],
+        "highlightKeys": [
+          "hamburg"
+        ],
+        "disabledTextKeys": [
+          "muenchen"
+        ],
+        "optionFills": {
+          "berlin": [],
+          "hamburg": [
+            "#EAF2FF"
+          ],
+          "muenchen": [],
+          "dresden": [],
+          "koeln": [],
+          "wien": [],
+          "zuerich": []
+        },
+        "optionCornerRadius": [
+          0
+        ],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": [
+            {
+              "key": "berlin",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "hamburg",
+              "fill": [
+                "#EAF2FF"
+              ],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "muenchen",
+              "fill": [],
+              "textColor": "#94A3B8"
+            },
+            {
+              "key": "dresden",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "koeln",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "wien",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "zuerich",
+              "fill": [],
+              "textColor": "#172B4D"
+            }
+          ]
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [
+            {
+              "family": "Inter",
+              "size": 14,
+              "weight": 400,
+              "lineHeight": 20
+            }
+          ],
+          "status": {
+            "value": "7 Städte verfügbar.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "7 Städte verfügbar.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": true,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / active",
+            "surface": "Autocomplete / active",
+            "viewport": "overlay.surface",
+            "list": "overlay.scroll.viewport",
+            "status": "Autocomplete / active",
+            "option": "list"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / active",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / active",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay.surface",
+              "Autocomplete / active",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / active",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / active",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "option": [
+              "list",
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / active",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "scroll-end": {
+        "present": true,
+        "frameName": "Autocomplete / scroll-end",
+        "frame": {
+          "w": 320,
+          "h": 268,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 268,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 160,
+          "viewportW": 320,
+          "listH": 224,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [
+            32
+          ],
+          "optionTextOffsets": [
+            [
+              12,
+              6
+            ]
+          ]
+        },
+        "rows": {
+          "fullyVisible": 5,
+          "partial": 0,
+          "outside": 2,
+          "rows": [
+            {
+              "key": "berlin",
+              "label": "Berlin",
+              "topRelViewport": -64,
+              "bottomRelViewport": -32,
+              "state": "outside"
+            },
+            {
+              "key": "hamburg",
+              "label": "Hamburg",
+              "topRelViewport": -32,
+              "bottomRelViewport": 0,
+              "state": "outside"
+            },
+            {
+              "key": "muenchen",
+              "label": "München",
+              "topRelViewport": 0,
+              "bottomRelViewport": 32,
+              "state": "full"
+            },
+            {
+              "key": "dresden",
+              "label": "Dresden",
+              "topRelViewport": 32,
+              "bottomRelViewport": 64,
+              "state": "full"
+            },
+            {
+              "key": "koeln",
+              "label": "Köln",
+              "topRelViewport": 64,
+              "bottomRelViewport": 96,
+              "state": "full"
+            },
+            {
+              "key": "wien",
+              "label": "Wien",
+              "topRelViewport": 96,
+              "bottomRelViewport": 128,
+              "state": "full"
+            },
+            {
+              "key": "zuerich",
+              "label": "Zürich",
+              "topRelViewport": 128,
+              "bottomRelViewport": 160,
+              "state": "full"
+            }
+          ]
+        },
+        "optionCount": 7,
+        "optionKeys": [
+          "berlin",
+          "hamburg",
+          "muenchen",
+          "dresden",
+          "koeln",
+          "wien",
+          "zuerich"
+        ],
+        "optionLabels": [
+          "Berlin",
+          "Hamburg",
+          "München",
+          "Dresden",
+          "Köln",
+          "Wien",
+          "Zürich"
+        ],
+        "highlightKeys": [
+          "zuerich"
+        ],
+        "disabledTextKeys": [
+          "muenchen"
+        ],
+        "optionFills": {
+          "berlin": [],
+          "hamburg": [],
+          "muenchen": [],
+          "dresden": [],
+          "koeln": [],
+          "wien": [],
+          "zuerich": [
+            "#EAF2FF"
+          ]
+        },
+        "optionCornerRadius": [
+          0
+        ],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#64748B"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": [
+            {
+              "key": "berlin",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "hamburg",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "muenchen",
+              "fill": [],
+              "textColor": "#94A3B8"
+            },
+            {
+              "key": "dresden",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "koeln",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "wien",
+              "fill": [],
+              "textColor": "#172B4D"
+            },
+            {
+              "key": "zuerich",
+              "fill": [
+                "#EAF2FF"
+              ],
+              "textColor": "#172B4D"
+            }
+          ]
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [
+            {
+              "family": "Inter",
+              "size": 14,
+              "weight": 400,
+              "lineHeight": 20
+            }
+          ],
+          "status": {
+            "value": "7 Städte verfügbar.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "7 Städte verfügbar.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": true,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / scroll-end",
+            "surface": "Autocomplete / scroll-end",
+            "viewport": "overlay.surface",
+            "list": "overlay.scroll.viewport",
+            "status": "Autocomplete / scroll-end",
+            "option": "list"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / scroll-end",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / scroll-end",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay.surface",
+              "Autocomplete / scroll-end",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / scroll-end",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / scroll-end",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "option": [
+              "list",
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / scroll-end",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "selected": {
+        "present": true,
+        "frameName": "Autocomplete / selected",
+        "frame": {
+          "w": 320,
+          "h": 100,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 100,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": null,
+          "surfaceW": null,
+          "surfaceLeft": null,
+          "viewportH": null,
+          "viewportW": null,
+          "listH": null,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#CBD5E2",
+          "inputText": [
+            "#172B4D"
+          ],
+          "surfaceFill": [],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Berlin",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Ausgewählt: Berlin.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Berlin",
+          "status": "Ausgewählt: Berlin.",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": false,
+          "viewportVisible": false,
+          "listVisible": false,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": null,
+          "viewportClips": null
+        },
+        "radius": {
+          "input": 8,
+          "surface": null
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": null
+        },
+        "effects": [],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / selected",
+            "status": "Autocomplete / selected"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / selected",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / selected",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "empty": {
+        "present": true,
+        "frameName": "Autocomplete / empty",
+        "frame": {
+          "w": 320,
+          "h": 140,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 140,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 32,
+          "viewportW": 320,
+          "listH": 32,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#172B4D"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#64748B"
+          ],
+          "message": [
+            "#64748B"
+          ],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Atlantis",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Keine Städte gefunden.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": {
+            "value": "Keine Städte gefunden.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          }
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Atlantis",
+          "status": "Keine Städte gefunden.",
+          "message": "Keine Städte gefunden."
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": true,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / empty",
+            "surface": "Autocomplete / empty",
+            "viewport": "overlay.surface",
+            "list": "overlay.scroll.viewport",
+            "status": "Autocomplete / empty",
+            "message": "list/message-row"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / empty",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / empty",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay.surface",
+              "Autocomplete / empty",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / empty",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / empty",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "message": [
+              "list/message-row",
+              "list",
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / empty",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "error": {
+        "present": true,
+        "frameName": "Autocomplete / error",
+        "frame": {
+          "w": 320,
+          "h": 140,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 140,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": 8,
+          "surfaceW": 320,
+          "surfaceLeft": 0,
+          "viewportH": 32,
+          "viewportW": 320,
+          "listH": 32,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#2563EB",
+          "inputText": [
+            "#172B4D"
+          ],
+          "surfaceFill": [
+            "#FFFFFF"
+          ],
+          "status": [
+            "#B91C1C"
+          ],
+          "message": [
+            "#64748B"
+          ],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Be",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "Städte konnten nicht geladen werden.",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": {
+            "value": "Städte konnten nicht geladen werden.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          }
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Be",
+          "status": "Städte konnten nicht geladen werden.",
+          "message": "Städte konnten nicht geladen werden."
+        },
+        "visibility": {
+          "surfaceVisible": true,
+          "viewportVisible": true,
+          "listVisible": true,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": true,
+          "viewportClips": true
+        },
+        "radius": {
+          "input": 8,
+          "surface": 8
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": 0
+        },
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "color": {
+              "hex": "#000000",
+              "rgb": [
+                0,
+                0,
+                0
+              ],
+              "alpha": 0.2
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "radius": 8,
+            "spread": 0
+          }
+        ],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / error",
+            "surface": "Autocomplete / error",
+            "viewport": "overlay.surface",
+            "list": "overlay.scroll.viewport",
+            "status": "Autocomplete / error",
+            "message": "list/message-row"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / error",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "surface": [
+              "Autocomplete / error",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "viewport": [
+              "overlay.surface",
+              "Autocomplete / error",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "list": [
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / error",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / error",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "message": [
+              "list/message-row",
+              "list",
+              "overlay.scroll.viewport",
+              "overlay.surface",
+              "Autocomplete / error",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      },
+      "disabled": {
+        "present": true,
+        "frameName": "Autocomplete / disabled",
+        "frame": {
+          "w": 320,
+          "h": 100,
+          "type": "COMPONENT"
+        },
+        "geometry": {
+          "frame": {
+            "w": 320,
+            "h": 100,
+            "type": "COMPONENT"
+          },
+          "labelH": 20,
+          "labelGap": 8,
+          "inputH": 44,
+          "inputW": 320,
+          "surfaceGap": null,
+          "surfaceW": null,
+          "surfaceLeft": null,
+          "viewportH": null,
+          "viewportW": null,
+          "listH": null,
+          "statusGap": 8,
+          "statusH": 20,
+          "statusW": 320,
+          "rowHeights": [],
+          "optionTextOffsets": []
+        },
+        "rows": {
+          "fullyVisible": 0,
+          "partial": 0,
+          "outside": 0,
+          "rows": []
+        },
+        "optionCount": 0,
+        "optionKeys": [],
+        "optionLabels": [],
+        "highlightKeys": [],
+        "disabledTextKeys": [],
+        "optionFills": {},
+        "optionCornerRadius": [],
+        "colors": {
+          "label": [
+            "#172B4D"
+          ],
+          "inputFill": [
+            "#FFFFFF"
+          ],
+          "inputStroke": "#CBD5E2",
+          "inputText": [
+            "#94A3B8"
+          ],
+          "surfaceFill": [],
+          "status": [
+            "#64748B"
+          ],
+          "message": [],
+          "options": []
+        },
+        "typography": {
+          "label": {
+            "value": "Stadt auswählen",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "input": {
+            "value": "Stadt suchen …",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "options": [],
+          "status": {
+            "value": "",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "italic": false,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "align": "LEFT",
+            "alignVertical": "CENTER",
+            "autoResize": "NONE",
+            "maxLines": null,
+            "case": "ORIGINAL",
+            "styleRuns": 0
+          },
+          "message": null
+        },
+        "texts": {
+          "label": "Stadt auswählen",
+          "input": "Stadt suchen …",
+          "status": "",
+          "message": null
+        },
+        "visibility": {
+          "surfaceVisible": false,
+          "viewportVisible": false,
+          "listVisible": false,
+          "statusVisible": true,
+          "statusOpacity": 1
+        },
+        "clipping": {
+          "surfaceClips": null,
+          "viewportClips": null
+        },
+        "radius": {
+          "input": 8,
+          "surface": null
+        },
+        "strokeCount": {
+          "input": 1,
+          "surface": null
+        },
+        "effects": [],
+        "structure": {
+          "caseFrameType": "COMPONENT",
+          "parents": {
+            "input": "Autocomplete / disabled",
+            "status": "Autocomplete / disabled"
+          },
+          "ancestors": {
+            "input": [
+              "Autocomplete / disabled",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ],
+            "status": [
+              "Autocomplete / disabled",
+              "Autocomplete · Übersicht",
+              "Autocomplete",
+              "Document"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

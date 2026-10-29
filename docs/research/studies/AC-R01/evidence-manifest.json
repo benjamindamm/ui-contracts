@@ -12,16 +12,16 @@
       "sha256": "6e6cd57d4b2b43435e44224c96cc83f9b59fd6d6d91995d583ce96f7d63ae315"
     },
     "docs/research/studies/AC-R01/README.md": {
-      "bytes": 8232,
-      "sha256": "271240a5635060b4f6c7dbfdf0b7e3bf3b96affbbc7a48aaafcfc44e526cc2ad"
+      "bytes": 9148,
+      "sha256": "a1c5f25dc0fd7ecee0ccc114ab9dc8d420323048b5ed3872cb10211015fd902a"
     },
     "docs/research/studies/AC-R01/native-css-control.json": {
       "bytes": 4824,
       "sha256": "bf6439806de4627c74f3753f7aa39b5fd0c57ae63e877d443a68645063e0b032"
     },
     "examples/autocomplete/reproducibility/run-01/README.md": {
-      "bytes": 1948,
-      "sha256": "027fadcd444c9b336874c0efd035935953c758a28ef4c6b86463acad5b335cb1"
+      "bytes": 2515,
+      "sha256": "66e173c6d23471ce354728672203755a997b246f0e7899a30d56392fa02908d2"
     },
     "examples/autocomplete/reproducibility/run-01/builder-a/REPORT.md": {
       "bytes": 5893,

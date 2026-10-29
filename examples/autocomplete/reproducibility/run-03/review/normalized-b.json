@@ -1,0 +1,2221 @@
+{
+ "builder": "b",
+ "meta": {
+  "tool": "@open-pencil/fig 0.16.0 (pinned tools/openpencil) + @open-pencil/scene-graph 0.16.0",
+  "input": "../builder-b/autocomplete.fig",
+  "inputBytes": 31068,
+  "inputSha256": "9dce7700ca697834725a9faaae7301d5c57e30b511b491434783d048361d0a48",
+  "figKiwiVersion": 101,
+  "recordCount": 122,
+  "blobCount": 0,
+  "pageCount": 1,
+  "nodeCount": 122,
+  "materialized": 122
+ },
+ "page": "Autocomplete",
+ "nodeCount": 122,
+ "nodeTypes": {},
+ "cases": {
+  "closed": {
+   "case": "Autocomplete/closed",
+   "caseFrame": {
+    "name": "Autocomplete/closed",
+    "w": 320,
+    "h": 100,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "border"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Stadt suchen …",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 118,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "muted",
+      "color": "#64748b"
+     }
+    ]
+   },
+   "popup": null,
+   "status": {
+    "name": "status",
+    "text": "",
+    "pos": [
+     0,
+     80
+    ],
+    "w": 100,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:6",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:8",
+     "name": "input.query",
+     "text": "Stadt suchen …",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    },
+    {
+     "id": "0:9",
+     "name": "status",
+     "text": "",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  },
+  "opening": {
+   "case": "Autocomplete/opening",
+   "caseFrame": {
+    "name": "Autocomplete/opening",
+    "w": 320,
+    "h": 100,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "focus"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Stadt suchen …",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 118,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "muted",
+      "color": "#64748b"
+     }
+    ]
+   },
+   "popup": null,
+   "status": {
+    "name": "status",
+    "text": "Suche wird geöffnet.",
+    "pos": [
+     0,
+     80
+    ],
+    "w": 144,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:11",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:13",
+     "name": "input.query",
+     "text": "Stadt suchen …",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    },
+    {
+     "id": "0:14",
+     "name": "status",
+     "text": "Suche wird geöffnet.",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  },
+  "loading": {
+   "case": "Autocomplete/loading",
+   "caseFrame": {
+    "name": "Autocomplete/loading",
+    "w": 320,
+    "h": 140,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "focus"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Be",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 17,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "text",
+      "color": "#172b4d"
+     }
+    ]
+   },
+   "popup": {
+    "surface": {
+     "name": "overlay.surface",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "cornerRadius": 8,
+     "clipsContent": false,
+     "fillToken": "surface",
+     "hasStroke": false,
+     "shadow": {
+      "color": "#00000033",
+      "offset": {
+       "x": 0,
+       "y": 2
+      },
+      "radius": 8,
+      "spread": 0
+     }
+    },
+    "viewport": {
+     "name": "overlay.scroll.viewport",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "clipsContent": true
+    },
+    "content": {
+     "name": "overlay.scroll.content",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32
+    },
+    "message": {
+     "name": "message",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "text": "Städte werden geladen.",
+     "textToken": "text",
+     "textColor": "#172b4d",
+     "textPos": [
+      12,
+      86
+     ],
+     "textFontSize": 14
+    }
+   },
+   "status": {
+    "name": "status",
+    "text": "Städte werden geladen.",
+    "pos": [
+     0,
+     120
+    ],
+    "w": 159,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:16",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:18",
+     "name": "input.query",
+     "text": "Be",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:23",
+     "name": "label",
+     "text": "Städte werden geladen.",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:24",
+     "name": "status",
+     "text": "Städte werden geladen.",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  },
+  "ready": {
+   "case": "Autocomplete/ready",
+   "caseFrame": {
+    "name": "Autocomplete/ready",
+    "w": 320,
+    "h": 268,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "focus"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Stadt suchen …",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 118,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "muted",
+      "color": "#64748b"
+     }
+    ]
+   },
+   "popup": {
+    "surface": {
+     "name": "overlay.surface",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 160,
+     "cornerRadius": 8,
+     "clipsContent": false,
+     "fillToken": "surface",
+     "hasStroke": false,
+     "shadow": {
+      "color": "#00000033",
+      "offset": {
+       "x": 0,
+       "y": 2
+      },
+      "radius": 8,
+      "spread": 0
+     }
+    },
+    "viewport": {
+     "name": "overlay.scroll.viewport",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 160,
+     "clipsContent": true
+    },
+    "content": {
+     "name": "overlay.scroll.content",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 224
+    },
+    "list": {
+     "name": "list",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 224,
+     "optionCount": 7
+    },
+    "options": [
+     {
+      "name": "option/berlin",
+      "key": "berlin",
+      "pos": [
+       0,
+       80
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Berlin",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/hamburg",
+      "key": "hamburg",
+      "pos": [
+       0,
+       112
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Hamburg",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/muenchen",
+      "key": "muenchen",
+      "pos": [
+       0,
+       144
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "München",
+      "labelToken": "disabled",
+      "labelColor": "#94a3b8",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/dresden",
+      "key": "dresden",
+      "pos": [
+       0,
+       176
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Dresden",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/koeln",
+      "key": "koeln",
+      "pos": [
+       0,
+       208
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Köln",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/wien",
+      "key": "wien",
+      "pos": [
+       0,
+       240
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Wien",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/zuerich",
+      "key": "zuerich",
+      "pos": [
+       0,
+       272
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Zürich",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     }
+    ],
+    "visibleOptions": [
+     "berlin",
+     "hamburg",
+     "muenchen",
+     "dresden",
+     "koeln"
+    ],
+    "clippedOptions": [
+     "wien",
+     "zuerich"
+    ]
+   },
+   "status": {
+    "name": "status",
+    "text": "7 Städte verfügbar.",
+    "pos": [
+     0,
+     248
+    ],
+    "w": 137,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:26",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:28",
+     "name": "input.query",
+     "text": "Stadt suchen …",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    },
+    {
+     "id": "0:34",
+     "name": "label",
+     "text": "Berlin",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:36",
+     "name": "label",
+     "text": "Hamburg",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:38",
+     "name": "label",
+     "text": "München",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#94a3b8"
+    },
+    {
+     "id": "0:40",
+     "name": "label",
+     "text": "Dresden",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:42",
+     "name": "label",
+     "text": "Köln",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:44",
+     "name": "label",
+     "text": "Wien",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:46",
+     "name": "label",
+     "text": "Zürich",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:47",
+     "name": "status",
+     "text": "7 Städte verfügbar.",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  },
+  "active": {
+   "case": "Autocomplete/active",
+   "caseFrame": {
+    "name": "Autocomplete/active",
+    "w": 320,
+    "h": 268,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "focus"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Stadt suchen …",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 118,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "muted",
+      "color": "#64748b"
+     }
+    ]
+   },
+   "popup": {
+    "surface": {
+     "name": "overlay.surface",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 160,
+     "cornerRadius": 8,
+     "clipsContent": false,
+     "fillToken": "surface",
+     "hasStroke": false,
+     "shadow": {
+      "color": "#00000033",
+      "offset": {
+       "x": 0,
+       "y": 2
+      },
+      "radius": 8,
+      "spread": 0
+     }
+    },
+    "viewport": {
+     "name": "overlay.scroll.viewport",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 160,
+     "clipsContent": true
+    },
+    "content": {
+     "name": "overlay.scroll.content",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 224
+    },
+    "list": {
+     "name": "list",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 224,
+     "optionCount": 7
+    },
+    "options": [
+     {
+      "name": "option/berlin",
+      "key": "berlin",
+      "pos": [
+       0,
+       80
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Berlin",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/hamburg",
+      "key": "hamburg",
+      "pos": [
+       0,
+       112
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": "highlight",
+      "label": "Hamburg",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/muenchen",
+      "key": "muenchen",
+      "pos": [
+       0,
+       144
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "München",
+      "labelToken": "disabled",
+      "labelColor": "#94a3b8",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/dresden",
+      "key": "dresden",
+      "pos": [
+       0,
+       176
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Dresden",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/koeln",
+      "key": "koeln",
+      "pos": [
+       0,
+       208
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Köln",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/wien",
+      "key": "wien",
+      "pos": [
+       0,
+       240
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Wien",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/zuerich",
+      "key": "zuerich",
+      "pos": [
+       0,
+       272
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Zürich",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     }
+    ],
+    "visibleOptions": [
+     "berlin",
+     "hamburg",
+     "muenchen",
+     "dresden",
+     "koeln"
+    ],
+    "clippedOptions": [
+     "wien",
+     "zuerich"
+    ]
+   },
+   "status": {
+    "name": "status",
+    "text": "7 Städte verfügbar.",
+    "pos": [
+     0,
+     248
+    ],
+    "w": 137,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:49",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:51",
+     "name": "input.query",
+     "text": "Stadt suchen …",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    },
+    {
+     "id": "0:57",
+     "name": "label",
+     "text": "Berlin",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:59",
+     "name": "label",
+     "text": "Hamburg",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:61",
+     "name": "label",
+     "text": "München",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#94a3b8"
+    },
+    {
+     "id": "0:63",
+     "name": "label",
+     "text": "Dresden",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:65",
+     "name": "label",
+     "text": "Köln",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:67",
+     "name": "label",
+     "text": "Wien",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:69",
+     "name": "label",
+     "text": "Zürich",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:70",
+     "name": "status",
+     "text": "7 Städte verfügbar.",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  },
+  "scroll-end": {
+   "case": "Autocomplete/scroll-end",
+   "caseFrame": {
+    "name": "Autocomplete/scroll-end",
+    "w": 320,
+    "h": 268,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "focus"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Stadt suchen …",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 118,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "muted",
+      "color": "#64748b"
+     }
+    ]
+   },
+   "popup": {
+    "surface": {
+     "name": "overlay.surface",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 160,
+     "cornerRadius": 8,
+     "clipsContent": false,
+     "fillToken": "surface",
+     "hasStroke": false,
+     "shadow": {
+      "color": "#00000033",
+      "offset": {
+       "x": 0,
+       "y": 2
+      },
+      "radius": 8,
+      "spread": 0
+     }
+    },
+    "viewport": {
+     "name": "overlay.scroll.viewport",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 160,
+     "clipsContent": true
+    },
+    "content": {
+     "name": "overlay.scroll.content",
+     "pos": [
+      0,
+      16
+     ],
+     "w": 320,
+     "h": 224
+    },
+    "list": {
+     "name": "list",
+     "pos": [
+      0,
+      16
+     ],
+     "w": 320,
+     "h": 224,
+     "optionCount": 7
+    },
+    "options": [
+     {
+      "name": "option/berlin",
+      "key": "berlin",
+      "pos": [
+       0,
+       16
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Berlin",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/hamburg",
+      "key": "hamburg",
+      "pos": [
+       0,
+       48
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Hamburg",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/muenchen",
+      "key": "muenchen",
+      "pos": [
+       0,
+       80
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "München",
+      "labelToken": "disabled",
+      "labelColor": "#94a3b8",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/dresden",
+      "key": "dresden",
+      "pos": [
+       0,
+       112
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Dresden",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/koeln",
+      "key": "koeln",
+      "pos": [
+       0,
+       144
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Köln",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/wien",
+      "key": "wien",
+      "pos": [
+       0,
+       176
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": null,
+      "label": "Wien",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     },
+     {
+      "name": "option/zuerich",
+      "key": "zuerich",
+      "pos": [
+       0,
+       208
+      ],
+      "w": 320,
+      "h": 32,
+      "fillToken": "highlight",
+      "label": "Zürich",
+      "labelToken": "text",
+      "labelColor": "#172b4d",
+      "labelPos": [
+       12,
+       6
+      ],
+      "labelFontSize": 14,
+      "labelLineHeight": 20
+     }
+    ],
+    "visibleOptions": [
+     "muenchen",
+     "dresden",
+     "koeln",
+     "wien",
+     "zuerich"
+    ],
+    "clippedOptions": [
+     "berlin",
+     "hamburg"
+    ]
+   },
+   "status": {
+    "name": "status",
+    "text": "7 Städte verfügbar.",
+    "pos": [
+     0,
+     248
+    ],
+    "w": 137,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:72",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:74",
+     "name": "input.query",
+     "text": "Stadt suchen …",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    },
+    {
+     "id": "0:80",
+     "name": "label",
+     "text": "Berlin",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:82",
+     "name": "label",
+     "text": "Hamburg",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:84",
+     "name": "label",
+     "text": "München",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#94a3b8"
+    },
+    {
+     "id": "0:86",
+     "name": "label",
+     "text": "Dresden",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:88",
+     "name": "label",
+     "text": "Köln",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:90",
+     "name": "label",
+     "text": "Wien",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:92",
+     "name": "label",
+     "text": "Zürich",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:93",
+     "name": "status",
+     "text": "7 Städte verfügbar.",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  },
+  "selected": {
+   "case": "Autocomplete/selected",
+   "caseFrame": {
+    "name": "Autocomplete/selected",
+    "w": 320,
+    "h": 100,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "border"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Berlin",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 51,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "text",
+      "color": "#172b4d"
+     }
+    ]
+   },
+   "popup": null,
+   "status": {
+    "name": "status",
+    "text": "Ausgewählt: Berlin.",
+    "pos": [
+     0,
+     80
+    ],
+    "w": 137,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:95",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:97",
+     "name": "input.query",
+     "text": "Berlin",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:98",
+     "name": "status",
+     "text": "Ausgewählt: Berlin.",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  },
+  "empty": {
+   "case": "Autocomplete/empty",
+   "caseFrame": {
+    "name": "Autocomplete/empty",
+    "w": 320,
+    "h": 140,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "focus"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Atlantis",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 68,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "text",
+      "color": "#172b4d"
+     }
+    ]
+   },
+   "popup": {
+    "surface": {
+     "name": "overlay.surface",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "cornerRadius": 8,
+     "clipsContent": false,
+     "fillToken": "surface",
+     "hasStroke": false,
+     "shadow": {
+      "color": "#00000033",
+      "offset": {
+       "x": 0,
+       "y": 2
+      },
+      "radius": 8,
+      "spread": 0
+     }
+    },
+    "viewport": {
+     "name": "overlay.scroll.viewport",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "clipsContent": true
+    },
+    "content": {
+     "name": "overlay.scroll.content",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32
+    },
+    "message": {
+     "name": "message",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "text": "Keine Städte gefunden.",
+     "textToken": "text",
+     "textColor": "#172b4d",
+     "textPos": [
+      12,
+      86
+     ],
+     "textFontSize": 14
+    }
+   },
+   "status": {
+    "name": "status",
+    "text": "Keine Städte gefunden.",
+    "pos": [
+     0,
+     120
+    ],
+    "w": 159,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:100",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:102",
+     "name": "input.query",
+     "text": "Atlantis",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:107",
+     "name": "label",
+     "text": "Keine Städte gefunden.",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:108",
+     "name": "status",
+     "text": "Keine Städte gefunden.",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  },
+  "error": {
+   "case": "Autocomplete/error",
+   "caseFrame": {
+    "name": "Autocomplete/error",
+    "w": 320,
+    "h": 140,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "focus"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Be",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 17,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "text",
+      "color": "#172b4d"
+     }
+    ]
+   },
+   "popup": {
+    "surface": {
+     "name": "overlay.surface",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "cornerRadius": 8,
+     "clipsContent": false,
+     "fillToken": "surface",
+     "hasStroke": false,
+     "shadow": {
+      "color": "#00000033",
+      "offset": {
+       "x": 0,
+       "y": 2
+      },
+      "radius": 8,
+      "spread": 0
+     }
+    },
+    "viewport": {
+     "name": "overlay.scroll.viewport",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "clipsContent": true
+    },
+    "content": {
+     "name": "overlay.scroll.content",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32
+    },
+    "message": {
+     "name": "message",
+     "pos": [
+      0,
+      80
+     ],
+     "w": 320,
+     "h": 32,
+     "text": "Städte konnten nicht geladen werden.",
+     "textToken": "text",
+     "textColor": "#172b4d",
+     "textPos": [
+      12,
+      86
+     ],
+     "textFontSize": 14
+    }
+   },
+   "status": {
+    "name": "status",
+    "text": "Städte konnten nicht geladen werden.",
+    "pos": [
+     0,
+     120
+    ],
+    "w": 260,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "error",
+    "color": "#b91c1c"
+   },
+   "allTexts": [
+    {
+     "id": "0:110",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:112",
+     "name": "input.query",
+     "text": "Be",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:117",
+     "name": "label",
+     "text": "Städte konnten nicht geladen werden.",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:118",
+     "name": "status",
+     "text": "Städte konnten nicht geladen werden.",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  "disabled": {
+   "case": "Autocomplete/disabled",
+   "caseFrame": {
+    "name": "Autocomplete/disabled",
+    "w": 320,
+    "h": 100,
+    "layoutMode": "NONE"
+   },
+   "label": {
+    "name": "label",
+    "text": "Stadt auswählen",
+    "w": 126,
+    "h": 20,
+    "pos": [
+     0,
+     0
+    ],
+    "fontSize": 14,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "colorToken": "text",
+    "color": "#172b4d"
+   },
+   "input": {
+    "name": "input",
+    "pos": [
+     0,
+     28
+    ],
+    "w": 320,
+    "h": 44,
+    "cornerRadius": 8,
+    "clipsContent": false,
+    "layoutMode": "NONE",
+    "padding": {
+     "paddingTop": 0,
+     "paddingRight": 0,
+     "paddingBottom": 0,
+     "paddingLeft": 0
+    },
+    "fillToken": "surface",
+    "stroke": {
+     "weight": 1,
+     "align": "INSIDE",
+     "colorToken": "border"
+    },
+    "texts": [
+     {
+      "name": "input.query",
+      "text": "Stadt suchen …",
+      "pos": [
+       12,
+       12
+      ],
+      "w": 118,
+      "h": 20,
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontFamily": "Inter",
+      "colorToken": "disabled",
+      "color": "#94a3b8"
+     }
+    ]
+   },
+   "popup": null,
+   "status": {
+    "name": "status",
+    "text": "",
+    "pos": [
+     0,
+     80
+    ],
+    "w": 100,
+    "h": 20,
+    "fontSize": 12,
+    "lineHeight": 20,
+    "fontFamily": "Inter",
+    "colorToken": "muted",
+    "color": "#64748b"
+   },
+   "allTexts": [
+    {
+     "id": "0:120",
+     "name": "label",
+     "text": "Stadt auswählen",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#172b4d"
+    },
+    {
+     "id": "0:122",
+     "name": "input.query",
+     "text": "Stadt suchen …",
+     "fontSize": 14,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#94a3b8"
+    },
+    {
+     "id": "0:123",
+     "name": "status",
+     "text": "",
+     "fontSize": 12,
+     "lineHeight": 20,
+     "fontFamily": "Inter",
+     "color": "#64748b"
+    }
+   ]
+  }
+ },
+ "global": {
+  "allNodeColors": {
+   "#172b4d": 35,
+   "#ffffff": 16,
+   "#64748b": 14,
+   "#94a3b8": 4,
+   "#eaf2ff": 2,
+   "#b91c1c": 1
+  },
+  "allStrokeColors": {
+   "#cbd5e1": 3,
+   "#2563eb": 7
+  },
+  "allEffectColors": {
+   "#00000033": 6
+  },
+  "pageTopLevel": [
+   {
+    "id": "0:4",
+    "name": "page.title",
+    "type": "TEXT"
+   },
+   {
+    "id": "0:5",
+    "name": "Autocomplete/closed",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:10",
+    "name": "Autocomplete/opening",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:15",
+    "name": "Autocomplete/loading",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:25",
+    "name": "Autocomplete/ready",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:48",
+    "name": "Autocomplete/active",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:71",
+    "name": "Autocomplete/scroll-end",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:94",
+    "name": "Autocomplete/selected",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:99",
+    "name": "Autocomplete/empty",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:109",
+    "name": "Autocomplete/error",
+    "type": "FRAME"
+   },
+   {
+    "id": "0:119",
+    "name": "Autocomplete/disabled",
+    "type": "FRAME"
+   }
+  ],
+  "visibleFalse": [],
+  "pluginDataKeys": {},
+  "hiddenOrOrphan": [
+   {
+    "id": "0:1",
+    "name": "Document",
+    "type": "FRAME"
+   }
+  ]
+ }
+}

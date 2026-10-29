@@ -1,0 +1,11 @@
+{
+  "runId": "autocomplete-reproducibility-03",
+  "phase": "Phase 1 — Preregistration (Kriterien, kein Vergleich)",
+  "algorithm": "sha-256",
+  "sealedAt": "2026-10-29T09:29:20Z",
+  "files": {
+    "preregistered.json": "2faa6a867ae24f1bd9bbc020259b3fa4b84336022768374e0ee417e887de012c",
+    "preregistered.md": "64f9604460374e9029f54310d57840619c7087caeea3d8b7e11e4aad8ff131fd"
+  },
+  "note": "Hashes frisch aus den gespeicherten Bytes der zwei Dateien berechnet, bevor diese Seal-Datei geschrieben wurde."
+}

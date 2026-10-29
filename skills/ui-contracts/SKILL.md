@@ -13,6 +13,8 @@ Finde das vom Nutzer gemeinte UI-Contracts-Repository anhand von `tools/validati
 
 Bestimme aus dem Auftrag Komponente, Ziel, gewünschte Änderung und Prüfanspruch. Nutze vorhandene Entscheidungen; frage nur nach fachlich entscheidenden fehlenden Angaben. Autorenarbeit, editierbares Design und ausgeführte Webkomponente sind unterschiedliche Ziele. Kein Commit, Push, Deployment oder fremder Kontakt wird allein durch diesen Skill autorisiert.
 
+Bei Reproduktionsläufen, Modellvergleichen oder der Analyse solcher Ergebnisse lies [references/reproducibility.md](references/reproducibility.md). Historische Ergebnisse von außen prüfen; identische Designs und identische Kriterienurteile sind getrennte Aussagen.
+
 ## Contractartefakte erstellen oder ändern
 
 Lies [references/authoring.md](references/authoring.md) sowie die betroffene Definition, bevor du Originalartefakte schreibst. Bewahre die vier getrennten führenden Domänen und explizite Verbindungen zwischen Definition, Instanz, Teil und Zustand. Erfinde keinen neuen Universalstandard und keine unabhängige Zielimplementierung als zusätzliche Wahrheit.
@@ -20,6 +22,8 @@ Lies [references/authoring.md](references/authoring.md) sowie die betroffene Def
 Historische Forschungs-/Studienartefakte und eingefrorene Definitionen bleiben als Belege erhalten. Nutze für eine neue Revision eine eigene Kandidatenkopie beziehungsweise den vom Nutzer vorgesehenen neuen Bibliothekseintrag. Verändere bei einer eingefrorenen Eingabe weder Definition noch Erwartungen, um ein Zielbild nachträglich passend zu machen.
 
 Fehlende fachliche Regeln werden als offene Entscheidungen ausgewiesen. Ein technisch erzeugbares Dokument ist kein Nachweis seiner Interaktion, Accessibility oder Plattformgleichheit. Erzeuge Zielartefakte nur im angefragten Ziel und mit tatsächlich vorhandenem Adapter/Werkzeug; erfinde keine funktionierende generische Abbildung.
+
+Explizite Regeln nicht aus gestalterischer Plausibilität zu Wahlfreiheiten erklären. Element, Pseudoelement und geerbten Wert getrennt auswerten; ein eigener `::placeholder`-Wert wird nicht durch die Inputfarbe von `:disabled` ersetzt. Bewusste Quellabweichungen als solche melden. Neue belegte Fehler samt Gegenfall, Reparatur und Restgrenze im Projektregister `docs/skills/ISSUES.md` fortschreiben.
 
 ## Prüfen und gegebenenfalls korrigieren
 

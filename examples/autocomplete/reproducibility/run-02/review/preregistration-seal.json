@@ -1,0 +1,7 @@
+{
+  "phase": "before-reviewer-output-access",
+  "files": {
+    "review/preregistered.json": "d10761dede1ec7973461be1bdab25be573072ee240fa44954c482b3cee3b0dea",
+    "review/preregistered.md": "0c6d660f5a509935f1905fdd16bd2a9cbf1250101e5aabc20bbfc51647078458"
+  }
+}

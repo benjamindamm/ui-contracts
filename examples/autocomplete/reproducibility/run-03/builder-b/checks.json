@@ -1,0 +1,2041 @@
+{
+  "component": {
+    "id": "ui-contracts:Autocomplete",
+    "version": "0.1.0"
+  },
+  "tool": {
+    "versions": {
+      "@open-pencil/cli": "0.16.0",
+      "@open-pencil/core": "0.16.0",
+      "@open-pencil/dom-css": "0.16.0",
+      "@open-pencil/scene-graph": "0.16.0"
+    },
+    "writer": "exportFigFile (@open-pencil/core/io)",
+    "reader": "parseFigFile (@open-pencil/core/io, populate=all)"
+  },
+  "summary": {
+    "total": 109,
+    "passed": 109,
+    "failed": 0
+  },
+  "artifacts": {
+    "autocomplete.fig": "31068 Bytes",
+    "preview.png": "193917 Bytes",
+    "preview.svg": "13949 Zeichen"
+  },
+  "nodes": {
+    "written": 121,
+    "reimported": 121,
+    "frames": 65,
+    "texts": 55
+  },
+  "checks": [
+    {
+      "id": "fig.magic",
+      "description": "autocomplete.fig beginnt mit ZIP-Signatur (PK)",
+      "expected": "PK (0x50 0x4b)",
+      "actual": "PK (0x50 0x4b)",
+      "pass": true
+    },
+    {
+      "id": "fig.bytes",
+      "description": "autocomplete.fig nicht leer",
+      "expected": "> 0 Bytes",
+      "actual": "31068 Bytes",
+      "pass": true
+    },
+    {
+      "id": "reimport.pages",
+      "description": "Wiedereingelest: Seitenanzahl",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "id": "reimport.page-name",
+      "description": "Wiedereingelest: Seitename",
+      "expected": "Autocomplete",
+      "actual": "Autocomplete",
+      "pass": true
+    },
+    {
+      "id": "reimport.nodes",
+      "description": "Wiedereingelest: Knotenanzahl entspricht dem Schreibgraphen",
+      "expected": 121,
+      "actual": 121,
+      "pass": true
+    },
+    {
+      "id": "reimport.no-images",
+      "description": "Keine eingebetteten Rasternodes (echtes editierbares Design)",
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    {
+      "id": "reimport.types",
+      "description": "Design besteht aus Frames und Texten (editierbar)",
+      "expected": {
+        "FRAME": ">= 10",
+        "TEXT": ">= 20"
+      },
+      "actual": {
+        "FRAME": 65,
+        "TEXT": 55
+      },
+      "pass": true
+    },
+    {
+      "id": "case.closed.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 100,
+        "x": 48,
+        "y": 152
+      },
+      "actual": {
+        "w": 320,
+        "h": 100,
+        "x": 48,
+        "y": 152
+      },
+      "pass": true
+    },
+    {
+      "id": "case.closed.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.closed.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "203.0,213.0,225.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "203.0,213.0,225.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.closed.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.closed.no-popup",
+      "description": "Kein Popup in diesem Zustand (keine Popupteile)",
+      "expected": "keine Kinder surface",
+      "actual": "keine surface",
+      "pass": true
+    },
+    {
+      "id": "case.closed.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 80,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 80,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.opening.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 100,
+        "x": 432,
+        "y": 152
+      },
+      "actual": {
+        "w": 320,
+        "h": 100,
+        "x": 432,
+        "y": 152
+      },
+      "pass": true
+    },
+    {
+      "id": "case.opening.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.opening.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.opening.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.opening.no-popup",
+      "description": "Kein Popup in diesem Zustand (keine Popupteile)",
+      "expected": "keine Kinder surface",
+      "actual": "keine surface",
+      "pass": true
+    },
+    {
+      "id": "case.opening.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "Suche wird geöffnet.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 80,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "Suche wird geöffnet.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 80,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 140,
+        "x": 816,
+        "y": 152
+      },
+      "actual": {
+        "w": 320,
+        "h": 140,
+        "x": 816,
+        "y": 152
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Be",
+        "color": "23.0,43.0,77.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Be",
+        "color": "23.0,43.0,77.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.surface",
+      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "expected": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 32,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 32,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.viewport",
+      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "expected": {
+        "clips": true,
+        "w": 320,
+        "h": 32
+      },
+      "actual": {
+        "clips": true,
+        "w": 320,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.content",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 32
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.message",
+      "description": "Meldungszeile im Popup: Inhalt und Zeilenhöhe",
+      "expected": {
+        "text": "Städte werden geladen.",
+        "h": 32
+      },
+      "actual": {
+        "text": "Städte werden geladen.",
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.loading.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "Städte werden geladen.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 120,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "Städte werden geladen.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 120,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 268,
+        "x": 1200,
+        "y": 152
+      },
+      "actual": {
+        "w": 320,
+        "h": 268,
+        "x": 1200,
+        "y": 152
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.surface",
+      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "expected": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 160,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 160,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.viewport",
+      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "expected": {
+        "clips": true,
+        "w": 320,
+        "h": 160
+      },
+      "actual": {
+        "clips": true,
+        "w": 320,
+        "h": 160
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.content",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 224
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 224
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.list",
+      "description": "Listbox: Höhe = n × rowHeight, alle Optionen vorhanden (auch geclippte)",
+      "expected": {
+        "w": 320,
+        "h": 224,
+        "options": 7
+      },
+      "actual": {
+        "w": 320,
+        "h": 224,
+        "options": 7
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.option.berlin",
+      "description": "Option berlin: Position, keine Hervorhebung",
+      "expected": {
+        "y": 0,
+        "h": 32,
+        "text": "Berlin",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 0,
+        "h": 32,
+        "text": "Berlin",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.option.hamburg",
+      "description": "Option hamburg: Position, keine Hervorhebung",
+      "expected": {
+        "y": 32,
+        "h": 32,
+        "text": "Hamburg",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 32,
+        "h": 32,
+        "text": "Hamburg",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.option.muenchen",
+      "description": "Option muenchen: Position, keine Hervorhebung, deaktivierte Farbe",
+      "expected": {
+        "y": 64,
+        "h": 32,
+        "text": "München",
+        "fill": null,
+        "textColor": "148.0,163.0,184.0,255.0"
+      },
+      "actual": {
+        "y": 64,
+        "h": 32,
+        "text": "München",
+        "fill": null,
+        "textColor": "148.0,163.0,184.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.option.dresden",
+      "description": "Option dresden: Position, keine Hervorhebung",
+      "expected": {
+        "y": 96,
+        "h": 32,
+        "text": "Dresden",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 96,
+        "h": 32,
+        "text": "Dresden",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.option.koeln",
+      "description": "Option koeln: Position, keine Hervorhebung",
+      "expected": {
+        "y": 128,
+        "h": 32,
+        "text": "Köln",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 128,
+        "h": 32,
+        "text": "Köln",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.option.wien",
+      "description": "Option wien: Position, keine Hervorhebung",
+      "expected": {
+        "y": 160,
+        "h": 32,
+        "text": "Wien",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 160,
+        "h": 32,
+        "text": "Wien",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.option.zuerich",
+      "description": "Option zuerich: Position, keine Hervorhebung",
+      "expected": {
+        "y": 192,
+        "h": 32,
+        "text": "Zürich",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 192,
+        "h": 32,
+        "text": "Zürich",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.ready.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "7 Städte verfügbar.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 248,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "7 Städte verfügbar.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 248,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 268,
+        "x": 1584,
+        "y": 152
+      },
+      "actual": {
+        "w": 320,
+        "h": 268,
+        "x": 1584,
+        "y": 152
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.surface",
+      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "expected": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 160,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 160,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.viewport",
+      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "expected": {
+        "clips": true,
+        "w": 320,
+        "h": 160
+      },
+      "actual": {
+        "clips": true,
+        "w": 320,
+        "h": 160
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.content",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 224
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 224
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.list",
+      "description": "Listbox: Höhe = n × rowHeight, alle Optionen vorhanden (auch geclippte)",
+      "expected": {
+        "w": 320,
+        "h": 224,
+        "options": 7
+      },
+      "actual": {
+        "w": 320,
+        "h": 224,
+        "options": 7
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.option.berlin",
+      "description": "Option berlin: Position, keine Hervorhebung",
+      "expected": {
+        "y": 0,
+        "h": 32,
+        "text": "Berlin",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 0,
+        "h": 32,
+        "text": "Berlin",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.option.hamburg",
+      "description": "Option hamburg: Position, aktive Hervorhebung",
+      "expected": {
+        "y": 32,
+        "h": 32,
+        "text": "Hamburg",
+        "fill": "234.0,242.0,255.0,255.0",
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 32,
+        "h": 32,
+        "text": "Hamburg",
+        "fill": "234.0,242.0,255.0,255.0",
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.option.muenchen",
+      "description": "Option muenchen: Position, keine Hervorhebung, deaktivierte Farbe",
+      "expected": {
+        "y": 64,
+        "h": 32,
+        "text": "München",
+        "fill": null,
+        "textColor": "148.0,163.0,184.0,255.0"
+      },
+      "actual": {
+        "y": 64,
+        "h": 32,
+        "text": "München",
+        "fill": null,
+        "textColor": "148.0,163.0,184.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.option.dresden",
+      "description": "Option dresden: Position, keine Hervorhebung",
+      "expected": {
+        "y": 96,
+        "h": 32,
+        "text": "Dresden",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 96,
+        "h": 32,
+        "text": "Dresden",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.option.koeln",
+      "description": "Option koeln: Position, keine Hervorhebung",
+      "expected": {
+        "y": 128,
+        "h": 32,
+        "text": "Köln",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 128,
+        "h": 32,
+        "text": "Köln",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.option.wien",
+      "description": "Option wien: Position, keine Hervorhebung",
+      "expected": {
+        "y": 160,
+        "h": 32,
+        "text": "Wien",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 160,
+        "h": 32,
+        "text": "Wien",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.option.zuerich",
+      "description": "Option zuerich: Position, keine Hervorhebung",
+      "expected": {
+        "y": 192,
+        "h": 32,
+        "text": "Zürich",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 192,
+        "h": 32,
+        "text": "Zürich",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.active.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "7 Städte verfügbar.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 248,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "7 Städte verfügbar.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 248,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 268,
+        "x": 48,
+        "y": 484
+      },
+      "actual": {
+        "w": 320,
+        "h": 268,
+        "x": 48,
+        "y": 484
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Stadt suchen …",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.surface",
+      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "expected": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 160,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 160,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.viewport",
+      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "expected": {
+        "clips": true,
+        "w": 320,
+        "h": 160
+      },
+      "actual": {
+        "clips": true,
+        "w": 320,
+        "h": 160
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.content",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "expected": {
+        "x": 0,
+        "y": -64,
+        "w": 320,
+        "h": 224
+      },
+      "actual": {
+        "x": 0,
+        "y": -64,
+        "w": 320,
+        "h": 224
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.list",
+      "description": "Listbox: Höhe = n × rowHeight, alle Optionen vorhanden (auch geclippte)",
+      "expected": {
+        "w": 320,
+        "h": 224,
+        "options": 7
+      },
+      "actual": {
+        "w": 320,
+        "h": 224,
+        "options": 7
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.option.berlin",
+      "description": "Option berlin: Position, keine Hervorhebung",
+      "expected": {
+        "y": 0,
+        "h": 32,
+        "text": "Berlin",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 0,
+        "h": 32,
+        "text": "Berlin",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.option.hamburg",
+      "description": "Option hamburg: Position, keine Hervorhebung",
+      "expected": {
+        "y": 32,
+        "h": 32,
+        "text": "Hamburg",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 32,
+        "h": 32,
+        "text": "Hamburg",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.option.muenchen",
+      "description": "Option muenchen: Position, keine Hervorhebung, deaktivierte Farbe",
+      "expected": {
+        "y": 64,
+        "h": 32,
+        "text": "München",
+        "fill": null,
+        "textColor": "148.0,163.0,184.0,255.0"
+      },
+      "actual": {
+        "y": 64,
+        "h": 32,
+        "text": "München",
+        "fill": null,
+        "textColor": "148.0,163.0,184.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.option.dresden",
+      "description": "Option dresden: Position, keine Hervorhebung",
+      "expected": {
+        "y": 96,
+        "h": 32,
+        "text": "Dresden",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 96,
+        "h": 32,
+        "text": "Dresden",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.option.koeln",
+      "description": "Option koeln: Position, keine Hervorhebung",
+      "expected": {
+        "y": 128,
+        "h": 32,
+        "text": "Köln",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 128,
+        "h": 32,
+        "text": "Köln",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.option.wien",
+      "description": "Option wien: Position, keine Hervorhebung",
+      "expected": {
+        "y": 160,
+        "h": 32,
+        "text": "Wien",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 160,
+        "h": 32,
+        "text": "Wien",
+        "fill": null,
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.option.zuerich",
+      "description": "Option zuerich: Position, aktive Hervorhebung, im sichtbaren Viewport",
+      "expected": {
+        "y": 192,
+        "h": 32,
+        "text": "Zürich",
+        "fill": "234.0,242.0,255.0,255.0",
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "y": 192,
+        "h": 32,
+        "text": "Zürich",
+        "fill": "234.0,242.0,255.0,255.0",
+        "textColor": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.scroll-end.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "7 Städte verfügbar.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 248,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "7 Städte verfügbar.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 248,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.selected.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 100,
+        "x": 432,
+        "y": 484
+      },
+      "actual": {
+        "w": 320,
+        "h": 100,
+        "x": 432,
+        "y": 484
+      },
+      "pass": true
+    },
+    {
+      "id": "case.selected.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.selected.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "203.0,213.0,225.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "203.0,213.0,225.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.selected.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Berlin",
+        "color": "23.0,43.0,77.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Berlin",
+        "color": "23.0,43.0,77.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.selected.no-popup",
+      "description": "Kein Popup in diesem Zustand (keine Popupteile)",
+      "expected": "keine Kinder surface",
+      "actual": "keine surface",
+      "pass": true
+    },
+    {
+      "id": "case.selected.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "Ausgewählt: Berlin.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 80,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "Ausgewählt: Berlin.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 80,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 140,
+        "x": 816,
+        "y": 484
+      },
+      "actual": {
+        "w": 320,
+        "h": 140,
+        "x": 816,
+        "y": 484
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Atlantis",
+        "color": "23.0,43.0,77.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Atlantis",
+        "color": "23.0,43.0,77.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.surface",
+      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "expected": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 32,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 32,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.viewport",
+      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "expected": {
+        "clips": true,
+        "w": 320,
+        "h": 32
+      },
+      "actual": {
+        "clips": true,
+        "w": 320,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.content",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 32
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.message",
+      "description": "Meldungszeile im Popup: Inhalt und Zeilenhöhe",
+      "expected": {
+        "text": "Keine Städte gefunden.",
+        "h": 32
+      },
+      "actual": {
+        "text": "Keine Städte gefunden.",
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.empty.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "Keine Städte gefunden.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 120,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "Keine Städte gefunden.",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 120,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 140,
+        "x": 1200,
+        "y": 484
+      },
+      "actual": {
+        "w": 320,
+        "h": 140,
+        "x": 1200,
+        "y": 484
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "37.0,99.0,235.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Be",
+        "color": "23.0,43.0,77.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Be",
+        "color": "23.0,43.0,77.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.surface",
+      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "expected": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 32,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "actual": {
+        "x": 0,
+        "y": 80,
+        "w": 320,
+        "h": 32,
+        "radius": 8,
+        "fill": "255.0,255.0,255.0,255.0",
+        "shadow": {
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "color": "0.0,0.0,0.0,51.0"
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.viewport",
+      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "expected": {
+        "clips": true,
+        "w": 320,
+        "h": 32
+      },
+      "actual": {
+        "clips": true,
+        "w": 320,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.content",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 32
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.message",
+      "description": "Meldungszeile im Popup: Inhalt und Zeilenhöhe",
+      "expected": {
+        "text": "Städte konnten nicht geladen werden.",
+        "h": 32
+      },
+      "actual": {
+        "text": "Städte konnten nicht geladen werden.",
+        "h": 32
+      },
+      "pass": true
+    },
+    {
+      "id": "case.error.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "Städte konnten nicht geladen werden.",
+        "color": "185.0,28.0,28.0,255.0",
+        "x": 0,
+        "y": 120,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "Städte konnten nicht geladen werden.",
+        "color": "185.0,28.0,28.0,255.0",
+        "x": 0,
+        "y": 120,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.disabled.frame",
+      "description": "Fall-Frame: Größe und Position",
+      "expected": {
+        "w": 320,
+        "h": 100,
+        "x": 1584,
+        "y": 484
+      },
+      "actual": {
+        "w": 320,
+        "h": 100,
+        "x": 1584,
+        "y": 484
+      },
+      "pass": true
+    },
+    {
+      "id": "case.disabled.label",
+      "description": "Label: Text, Position, Typo, Farbe",
+      "expected": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "actual": {
+        "text": "Stadt auswählen",
+        "x": 0,
+        "y": 0,
+        "h": 20,
+        "fontSize": 14,
+        "fontFamily": "Inter",
+        "color": "23.0,43.0,77.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.disabled.input",
+      "description": "Input: Box, Randfarbe (Zustand), Radius, Füllung",
+      "expected": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "203.0,213.0,225.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "actual": {
+        "x": 0,
+        "y": 28,
+        "w": 320,
+        "h": 44,
+        "radius": 8,
+        "borderWidth": 1,
+        "borderColor": "203.0,213.0,225.0,255.0",
+        "fill": "255.0,255.0,255.0,255.0"
+      },
+      "pass": true
+    },
+    {
+      "id": "case.disabled.input.text",
+      "description": "Input-Text: Inhalt (Query oder Placeholder) und Farbe",
+      "expected": {
+        "text": "Stadt suchen …",
+        "color": "148.0,163.0,184.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "actual": {
+        "text": "Stadt suchen …",
+        "color": "148.0,163.0,184.0,255.0",
+        "x": 12,
+        "y": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "case.disabled.no-popup",
+      "description": "Kein Popup in diesem Zustand (keine Popupteile)",
+      "expected": "keine Kinder surface",
+      "actual": "keine surface",
+      "pass": true
+    },
+    {
+      "id": "case.disabled.status",
+      "description": "Status: Text (Meldung), Farbe, Position unter Popup bzw. Input",
+      "expected": {
+        "text": "",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 80,
+        "h": 20,
+        "fontSize": 12
+      },
+      "actual": {
+        "text": "",
+        "color": "100.0,116.0,139.0,255.0",
+        "x": 0,
+        "y": 80,
+        "h": 20,
+        "fontSize": 12
+      },
+      "pass": true
+    },
+    {
+      "id": "preview.png",
+      "description": "preview.png: PNG aus dem wiedereingelesenen Graphen (Scale 2)",
+      "expected": "PNG-Magic + > 0 Bytes",
+      "actual": "193917 Bytes",
+      "pass": true
+    },
+    {
+      "id": "preview.svg",
+      "description": "preview.svg: SVG-Render aus dem wiedereingelesenen Graphen",
+      "expected": "> 0 Zeichen",
+      "actual": "13949 Zeichen",
+      "pass": true
+    },
+    {
+      "id": "render.warnings",
+      "description": "renderJSX-Warnungen (unbekannte Props u. a.)",
+      "expected": "keine",
+      "actual": "keine",
+      "pass": true
+    }
+  ]
+}

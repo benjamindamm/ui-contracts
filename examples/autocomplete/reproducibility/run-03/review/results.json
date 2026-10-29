@@ -1,0 +1,117 @@
+{
+  "runId": "autocomplete-reproducibility-03",
+  "phase": "Phase 2 — Vergleich (frische Prüfer-Session)",
+  "date": "2026-10-29",
+  "reviewerProcedure": "Originaldateien zuerst selbst gemessen (inspect-original.mjs/render-original.mjs auf dem Original-Reader der gepinnten Umgebung @open-pencil 0.16.0); dann Builder-REPORTs/cheks.json gegen eigene Messungen eingeordnet; dann maschinelle Kriterienprüfung (verify.py, vor Ausführung gegen das versiegelte Kriterienset auditiert); dann A↔B-Vergleich; zuletzt Integritätsprüfung.",
+  "criterionBasis": {
+    "files": ["preregistered.json", "preregistered.md"],
+    "seal": "preregistration-seal.json (SHA-256) am Laufstart verifiziert und am Laufende erneut bestätigt — beide Hashes unverändert",
+    "totalCriteria": 91,
+    "byCategory": { "explicit": 74, "derived": 10, "underdetermined": 7 },
+    "modifiedByReviewer": false
+  },
+  "overallVerdict": {
+    "a": "Substanziell erfüllt mit systematischer Lücke: alle geometrischen, typografischen, textlichen, farblichen und strukturellen Kriterien erfüllt; der Accessibility-Annotationsvertrag der Definition ist nicht als lesbare Annotation in das Artefakt übertragen (5 explizite Kriterien verletzt: E-063, E-064, E-065, E-070, E-071).",
+    "b": "Substanziell erfüllt mit systematischer Lücke: wie A (dieselben 5 Accessibility-Verletzungen) zusätzlich eine Farbabweichung im disabled-Fall (E-041: Platzhalter #94a3b8 statt muted #64748b), die zusätzlich dem eigenen REPORT (Punkt 4, dort 'bleibt muted') widerspricht — Report↔Artefakt-Widerspruch."
+  },
+  "criteriaCounts": {
+    "a": {
+      "total": { "erfüllt": 79, "verletzt": 5, "nicht anwendbar": 7 },
+      "explicit": { "erfüllt": 69, "verletzt": 5, "nicht anwendbar": 0 },
+      "derived": { "erfüllt": 10, "verletzt": 0, "nicht anwendbar": 0 },
+      "underdetermined": { "erfüllt": 0, "verletzt": 0, "nicht anwendbar": 7 }
+    },
+    "b": {
+      "total": { "erfüllt": 78, "verletzt": 6, "nicht anwendbar": 7 },
+      "explicit": { "erfüllt": 68, "verletzt": 6, "nicht anwendbar": 0 },
+      "derived": { "erfüllt": 10, "verletzt": 0, "nicht anwendbar": 0 },
+      "underdetermined": { "erfüllt": 0, "verletzt": 0, "nicht anwendbar": 7 }
+    }
+  },
+  "violations": {
+    "a": ["E-063", "E-064", "E-065", "E-070", "E-071"],
+    "b": ["E-041", "E-063", "E-064", "E-065", "E-070", "E-071"],
+    "common": ["E-063", "E-064", "E-065", "E-070", "E-071"],
+    "commonDetail": "In keinem der beiden Artefakte sind die ARIA-Werte der Definition (accessibility.rules.json/accessibility.html) als lesbare Annotation vorhanden: 'combobox' fehlt in beiden (E-063; A hat 3/4 Rollen-Namen lesbar: Listbox/Option: */Status, B 2/4: option/*/status); 'aria-autocomplete=list' (E-064), 'aria-expanded' je Fall (E-065), 'aria-activedescendant' (E-070) und 'aria-live/aria-atomic' (E-071) sind in Layer-Namen, Text, Captions (A) oder pluginData in keiner Form ablesbar. U-004 lässt die Darstellungsform frei, verlangt aber korrekt und nachvollziehbar abbildbare Werte — diese sind nicht vorhanden.",
+    "bOnlyDetail": "E-041: Im disabled-Fall zeigt B den Platzhalter 'Stadt suchen …' in #94a3b8 (Token 'disabled'); die versiegelte Regel verlangt muted #64748b in allen Fällen mit leerem Query. A zeigt #64748b. B-REPORT Punkt 4 dokumentiert die gegenteilige Entscheidung ('Platzhalter bleibt muted') — Widerspruch zwischen Report und Artefakt. Hintergrund: Die Definition enthält das spannungsbehaftete CSS-Paar '::placeholder { color: muted }' vs. ':disabled { color: disabled }' (beide Builder haben den Konflikt dokumentiert; er ist in der Preregistrierung nicht als U-Kriterium erfasst)."
+  },
+  "pairAgreement": {
+    "measure": "Wert-für-Wert-Vergleich der normalisierten Komponentenwerte beider Designs (beide Read-back-Dumps, gleiche Extraktion): alle Teil-Attribute (Positionen, Maße, Radien, Clips, Fills/Strokes/Schatten-Token, Texte, Typografie, Keys, Labels, Scroll-Versatz, Sichtbarkeits-/Clipping-Fakten) pro Fall; Namen und generierte IDs sowie freie Seitenmöbel ausgeschlossen. Details: pair-comparison.json.",
+    "totalComparableValuePairs": 1208,
+    "identicalPairs": 1145,
+    "agreement": "1145/1208 = 94.78 %",
+    "band": "90–95 % (definierte Bänder: 100 % / 99–<100 % / 95–<99 % / 90–<95 % / <90 %)",
+    "agreementOnCriterionRelevantValues": "100 %, mit einer Ausnahme: disabled/Platzhalterfarbe (A muted vs. B disabled-Token) — die einzige kriterienrelevante Abweichung, realisiert als Verletzung E-041 nur bei B.",
+    "differenceClasses": {
+      "erlaubteFreiheit": [
+        "Fall-Frame-Namen: 'closed'… vs. 'Autocomplete/closed'… (10×)",
+        "Textbreiten (Label/Input/Status): A schmaler als B (30×) — unterschiedliche Textmetriken-Quellen (A: echte Inter-Metriken per CanvasKit; B: System-Fallback beim Messrender, B-REPORT Punkt 18); Textbreiten sind in der Definition nicht festgelegt",
+        "input.clipsContent: A=true, B=false (10×) — Input-Clipping nicht durch Kriterium festgelegt",
+        "popup surface.clipsContent: A=true, B=false (6×) — Surface-Clipping nicht festgelegt (das normative Viewport-Clipping ist bei beiden true)",
+        "Meldungsfälle: A umschließt die Message Row in einem Listbox-Frame, B hängt message direkt unter Content (3×)",
+        "leerer Status-Layer: A Breite 0, B Breite 100 (closed/disabled) — U-005, beide Layer vorhanden mit leerem Text"
+      ],
+      "unzureichendBestimmteRegel": [
+        "disabled-Platzhalterfarbe (E-039/E-041-Internal-Tension in der Definition; nicht als U-Kriterium in der Preregistrierung erfasst) — Auswirkung: B verletzt die als klar versiegelte E-041"
+      ],
+      "keineSondervorkommen": "Bytegleiche Dateien sind keine Erfolgsbedingung; beobachtet: die vom Prüfer neu aus den Originaldateien gerenderten PNGs sind byte-identisch zu den Builder-Previews (A: f8ff307d…, B: f430d56d…) — Reproduzierbarkeit des Read-back-Renders, keine Abwertung."
+    }
+  },
+  "commonStructuralFindings": [
+    "Beide: 1 Seite 'Autocomplete', 10 benannte Fall-Frames, exakt dieselbe Geometrie (Label 0,0/20; Input 0,28/320×44; Popup 0,80/320×160 bzw. ×32; Status y=80/120/248; Zeilen 32; scroll-end Content-Versatz -64 in beiden), Fokusrand-Regel, Schatten (0,2)/8/#00000033, Radius 8, Inter 14/20 und 12, Status-/Meldungstexte, Keys, Labels, Highlight nur aktiv, muenchen disabled — alle Kriterienwerte identisch.",
+    "Beide: Popup nur in loading/ready/active/scroll-end/empty/error (opening ohne Popup laut projection), selected mit 'Berlin' im Input und Status 'Ausgewählt: Berlin.', disabled mit leerem Query, keine Popupteile, Status unter Input.",
+    "Beide: Definition unverändert (22/22 frische SHA-256-Hashes; Manifeste: A 21/21 + error-relay.scxml nicht abgedeckt, B 22/22)."
+  ],
+  "provenanceAndLimitations": [
+    {
+      "id": "L1",
+      "limitation": "Prüfer-Phase 1 (Ableitung und Versiegelung der Kriterien) und Phase 2 (Vergleich) liefen in getrennten technischen Sessions; die Phase-1-Session ging durch einen Providerfehler (HTTP 413) verloren. Phase 2 arbeitet ausschließlich von den versiegelten Kriterien auf Datenträger.",
+      "effect": "Phase 2 kann die Kriterienableitung nicht aus der Definition nachvollziehen oder gegenprüfen; die Bindungswirkung des versiegelten Kriteriensets ist Prämissen-Limitation des Laufs. Abweichungen zwischen versiegeltem Set und Definition (z. B. die E-039/E-041-Platzhalter-Spannung ist nicht als U-Kriterium erfasst) können nicht rückwirkend korrigiert werden; sie wurden nur ausgewiesen."
+    },
+    {
+      "id": "L2",
+      "limitation": "Builder A: Die Erzeugungssession wurde nach dem Schreiben aller sechs Artefakte (11:07) durch denselben Providerfehler (HTTP 413) beendet, bevor REPORT.md existierte; Fortsetzung war unmöglich. REPORT.md stammt aus einer zweiten Session, die ausschließlich vorhandene Artefakte, components/ und die gepinnte Werkzeugumgebung las (kein Zugriff auf verbotene Eingaben durch beide Sessions).",
+      "effect": "REPORT.md (A) ist eine nachträgliche Rekonstruktion; ihre Aussagen wurden vom Prüfer eigenständig an den Originaldateien verifiziert (Read-back) — keine Aussage des Reports wurde ungeprüft übernommen. Auf die Artefakte selbst hat die Unterbrechung keine nachweisbare Auswirkung (Vollständigkeit und Konsistenz durch Read-back bestätigt)."
+    },
+    {
+      "id": "L3",
+      "limitation": "Zum Start der frischen Phase-2-Session befanden sich Artefakte eines unterbrochenen Phase-2-Vorlaufs im Ausgabeordner (Skripte und Zwischendateien, 11:34–12:16). Der Prüfer hat das vorhandene verify.py vor Ausführung gegen das versiegelte Kriterienset auditiert (3 dokumentierte, judgments-neutrale Anpassungen: E-056 Offset-Radius, E-060 Meldezeilenhöhe, E-064 obs-Text; Altfassung: verify.py.prev-1216) und die komplette Messkette neu ausgeführt.",
+      "effect": "Deterministische Kreuzvalidierung: die neu erzeugten original-*.json-Read-backs, Renders (byte-identisch zu den Builder-Previews) und normalized-*/native-checks.json sind mit dem Vorlauf byte-identisch; in criterion-results.json sind nur die drei dokumentierten obs-Texte geändert, alle 182 Kriterienstatus unverändert."
+    }
+  ],
+  "artifactHashes": {
+    "note": "SHA-256 frisch aus den Bytes berechnet; vollständige Liste aller Laufdateien in hashes.json.",
+    "builder-a": {
+      "autocomplete.fig": "dc2e148cb9fa24a0dc4535eed225a398ba62af2ee9f1fd2d64e246a7e5a207fe",
+      "preview.png": "f8ff307d8af4b8c4e7d8bb0b145c114433238471b54990f6bc67ed34dae18b26"
+    },
+    "builder-b": {
+      "autocomplete.fig": "9dce7700ca697834725a9faaae7301d5c57e30b511b491434783d048361d0a48",
+      "preview.png": "f430d56d35be92a902b3f82c87384ad6d61b2cba05368ea1457511e429650643"
+    },
+    "review": {
+      "original-a.json": "93022eddf5640c27d42488ad23261b3c4dc5152406f70e84c0d1c9b0b30e8f59",
+      "original-b.json": "8c344150028a6fe91545dcbac175c5c2f0b4d950338c06d1f228861cbb8731ed",
+      "render-a.png": "f8ff307d8af4b8c4e7d8bb0b145c114433238471b54990f6bc67ed34dae18b26",
+      "render-b.png": "f430d56d35be92a902b3f82c87384ad6d61b2cba05368ea1457511e429650643"
+    }
+  },
+  "integrity": {
+    "definitionFiles": {
+      "count": 22,
+      "recomputed": true,
+      "unchanged": true,
+      "crossCheck": "frische SHA-256 (Laufende, unabhängig berechnet) == definition-hash-check.json (verify.py) == Manifeste source-sha256.json (A: 21/21, error-relay.scxml nicht im Manifest; B: 22/22)"
+    },
+    "preregistrationSeal": {
+      "verifiedAtStart": true,
+      "reverifiedAtEnd": true,
+      "result": "beide SHA-256 (preregistered.json, preregistered.md) zum Laufstart und am Laufende mit preregistration-seal.json identisch — Kriterien unverändert"
+    }
+  },
+  "outputs": {
+    "measurement": ["inspect-original.mjs", "render-original.mjs", "original-a.json", "original-b.json", "render-a.png", "render-b.png"],
+    "verification": ["verify.py", "verify.py.prev-1216", "native-checks.json", "normalized-a.json", "normalized-b.json", "criterion-results.json", "definition-hash-check.json", "pair-comparison.json"],
+    "report": ["REVIEW.md", "results.json", "hashes.json"]
+  }
+}
