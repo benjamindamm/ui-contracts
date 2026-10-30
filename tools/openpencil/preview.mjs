@@ -4,13 +4,14 @@ import {resolve,dirname,relative,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
+import {resolveCaseThemes} from './themes.mjs';
 import {snapshot,selectCases,caseBounds,plan,apply,assertContained,STYLE,TEMPLATE_URL} from './layout.mjs';
 import * as core from './node_modules/@open-pencil/core/dist/index.js';
 import * as headless from './node_modules/@open-pencil/core/dist/io/formats/raster/headless.js';
 const repo=resolve(fileURLToPath(new URL('../../',import.meta.url))),sha=b=>createHash('sha256').update(b).digest('hex');
 const args=process.argv.slice(2),opt={};
-if(args.length%2)throw Error('Usage: node tools/openpencil/preview.mjs --library ID --component KEY --input FILE.fig --output NEW_DIR [--definition-revision LABEL]');
-for(let i=0;i<args.length;i+=2){if(!['--library','--component','--input','--output','--definition-revision'].includes(args[i])||opt[args[i]])throw Error('Unknown/duplicate option');opt[args[i]]=args[i+1];}
+if(args.length%2)throw Error('Usage: node tools/openpencil/preview.mjs --library ID --component KEY --input FILE.fig --output NEW_DIR [--definition-revision LABEL] [--case-themes FILE.json]');
+for(let i=0;i<args.length;i+=2){if(!['--library','--component','--input','--output','--definition-revision','--case-themes'].includes(args[i])||opt[args[i]])throw Error('Unknown/duplicate option');opt[args[i]]=args[i+1];}
 for(const k of ['--library','--component','--input','--output'])if(!opt[k])throw Error('Missing '+k);
 if(!/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(opt['--library']))throw Error('Invalid library id');
 const lib=join(repo,'libraries',opt['--library']);if(await realpath(lib)!==lib)throw Error('Symlink library roots are unsupported');
@@ -18,7 +19,16 @@ async function boundFile(base,rel){if(typeof rel!=='string'||rel.startsWith('/')
 const indexPath=await boundFile(lib,'library.json'),index=JSON.parse(await readFile(indexPath));
 const cp=await boundFile(lib,index.components[opt['--component']]);const component=JSON.parse(await readFile(cp));
 const storiesPath=await boundFile(dirname(cp),component.stories),stories=JSON.parse(await readFile(storiesPath));
-const ids=stories.stories.map(s=>s.id),input=await realpath(resolve(opt['--input']));let output=resolve(opt['--output']);
+const ids=stories.stories.map(s=>s.id);
+const themeBindings=[];let themeMapping={},themeTokens=null;
+if(opt['--case-themes']){
+ const themePath=await realpath(resolve(opt['--case-themes'])),tokensPath=await boundFile(lib,'tokens.json');
+ const themeBytes=await readFile(themePath),tokenBytes=await readFile(tokensPath);
+ themeMapping=JSON.parse(themeBytes);themeTokens=JSON.parse(tokenBytes);
+ themeBindings.push({path:relative(repo,themePath),sha256:sha(themeBytes)},{path:relative(repo,tokensPath),sha256:sha(tokenBytes)});
+}
+const caseThemes=resolveCaseThemes(ids,themeMapping,themeTokens,STYLE);
+const input=await realpath(resolve(opt['--input']));let output=resolve(opt['--output']);
 let ancestor=output;while(true){try{output=resolve(await realpath(ancestor),relative(ancestor,output));break;}catch(e){if(e.code!=='ENOENT')throw e;ancestor=dirname(ancestor);}}
 const within=(parent,p)=>p===parent||p.startsWith(parent+'/');
 if([join(repo,'libraries'),join(repo,'docs/research'),join(repo,'examples/autocomplete/reproducibility'),join(repo,'examples/autocomplete/review')].some(p=>within(p,output)))throw Error('Output must be separate from input, libraries and historical research');
@@ -36,8 +46,8 @@ const localFonts=JSON.parse(execFileSync('python3',[join(repo,'tools/fonts/check
 if(localFonts.overall!=='PASS_LIMITED')throw Error('A validated local fonts.json is required for reproducible rendering');
 const family=localFonts.faces[0].family;
 if(!localFonts.faces.some(f=>f.family===family&&f.weight===400)||!localFonts.faces.some(f=>f.family===family&&f.weight===700))throw Error('Presentation captions require local regular 400 and bold 700 faces');
-apply(graph,cases,ids,layout,{title:opt['--component'],subtitle:`${opt['--library']} · Definition ${opt['--definition-revision']??'nicht mitgeliefert'} · ${ids.length} Zustände`,fontFamily:family});
-const stable=v=>JSON.stringify(v),assertSame=(g,ns,stage)=>{for(let i=0;i<ns.length;i++)if(stable(before[i])!==stable(snapshot(g,ns[i])))throw Error('Component invariant changed at '+stage+': '+ids[i]);assertContained(g,ns,layout);};
+apply(graph,cases,ids,layout,{title:opt['--component'],subtitle:`${opt['--library']} · Definition ${opt['--definition-revision']??'nicht mitgeliefert'} · ${ids.length} Zustände`,fontFamily:family,caseThemes});
+const stable=v=>JSON.stringify(v),assertSame=(g,ns,stage)=>{for(let i=0;i<ns.length;i++)if(stable(before[i])!==stable(snapshot(g,ns[i])))throw Error('Component invariant changed at '+stage+': '+ids[i]);assertContained(g,ns,layout,caseThemes);};
 assertSame(graph,cases,'presentation composition');
 let networkAttempts=0;globalThis.fetch=async()=>{networkAttempts++;throw Error('Network disabled: fonts must be local');};
 const ck=await headless.initCanvasKit(),fontRecords=[];
@@ -57,17 +67,19 @@ if(!png||networkAttempts)throw Error('Render failed or attempted network access'
 for(const f of localFonts.faces){const a=f.assets.find(a=>a.format==='truetype');if(core.fontManager.loadedFontSource(f.family,f.openpencilStyle)!=='library-asset:'+a.sha256)throw Error('Font source changed');}
 await writeFile(join(output,'preview.png'),png,{flag:'wx'});
 if(sha(await readFile(input))!==sourceHash)throw Error('Input FIG changed during run');
+for(const b of themeBindings)if(sha(await readFile(resolve(repo,b.path)))!==b.sha256)throw Error('Theme input changed during run: '+b.path);
 const count=s=>1+s.children.reduce((n,c)=>n+count(c),0);
 const receipt={overall:'PASS_LIMITED',release:false,scope:'native-presentation-and-component-invariants',style:STYLE.version,
  input:{path:relative(repo,input),sha256:sourceHash},definitionRevision:opt['--definition-revision']??null,
  selectedLibrary:opt['--library'],component:component.id,bindings:[indexPath,cp,storiesPath].map(p=>({path:relative(repo,p)})),
+ caseThemes:ids.map((id,i)=>({id,...caseThemes[i]})),themeBindings,
  layout,presentationTemplate:{path:relative(repo,fileURLToPath(TEMPLATE_URL)),sha256:sha(await readFile(TEMPLATE_URL))},networkAttempts,licenseEvidence:localFonts.licenseEvidence,
  cases:ids.map((id,i)=>({id,nodes:count(before[i]),beforeSha256:sha(stable(before[i])),afterSha256:sha(stable(snapshot(parsed,outCases[i]))),unchanged:true})),
  comparedProperties:'All own native properties recursively except node ids, parent/child id bookkeeping, root x/y, source/import metadata and documented renderer caches; child order and relative descendant x/y retained',
  ignoredProperties:['id','parentId','childIds','source','derivedLayout','textPicture','derivedTextGlyphs','textPathData','textPathBox'],
  fonts:localFonts.faces.map(f=>({family:f.family,weight:f.weight,assets:f.assets})),
  outputs:{[figName]:sha(fig),'preview.png':sha(png)},
- notChecked:['Runtime/ARIA','Figma import metadata preservation','Styled text runs, rotated/flipped nodes and multi-page input (blocked)','Pixel equality between different source component structures']};
+ notChecked:['Runtime/ARIA','Figma import metadata preservation','Styled text runs, rotated/flipped nodes and multi-page input (blocked)','Pixel equality between different source component structures','Theme assignment correctness, contrast/accessibility and unsupplied theme definitions']};
 for(const b of receipt.bindings)b.sha256=sha(await readFile(join(repo,b.path)));
 await writeFile(join(output,'preview-check.json'),JSON.stringify(receipt,null,2)+'\n',{flag:'wx'});
 console.log(JSON.stringify({overall:receipt.overall,release:false,cases:ids.length,componentNodes:receipt.cases.reduce((n,c)=>n+c.nodes,0),output}));

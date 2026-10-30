@@ -1,0 +1,26 @@
+{
+  "status": "presentation-test-proposal-only",
+  "description": "Example has no normative dark theme. These new colors are a demonstration proposal; library sources and historical FIGs are unchanged.",
+  "tokens": {
+    "canvas": {
+      "light": {"$type": "color", "$value": "#FFFFFF"},
+      "dark": {"$type": "color", "$value": "#0F172A"}
+    },
+    "dark": {
+      "surface": "#1E293B",
+      "text": "#F1F5F9",
+      "muted": "#CBD5E1",
+      "border": "#475569",
+      "focus": "#60A5FA",
+      "highlight": "#334155",
+      "disabled": "#94A3B8",
+      "error": "#FCA5A5"
+    }
+  },
+  "cases": {
+    "light-ready": {"mode": "light", "backgroundToken": "canvas.light"},
+    "dark-ready": {"mode": "dark", "backgroundToken": "canvas.dark"},
+    "light-disabled": {"mode": "light", "backgroundToken": "canvas.light"},
+    "dark-disabled": {"mode": "dark", "backgroundToken": "canvas.dark"}
+  }
+}

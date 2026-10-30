@@ -1,0 +1,287 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "selectedLibrary": "example",
+  "scope": "separate-light-dark-presentation-proposal",
+  "inputs": [
+    {
+      "path": "examples/autocomplete/reproducibility/run-04/builder-a/autocomplete.fig",
+      "sha256": "974ecd154e27b816a0410c354e5d655eb4ca27d22a02f3b3de9d88a6e1eaf6dc"
+    },
+    {
+      "path": "libraries/example/tokens.json",
+      "sha256": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+    },
+    {
+      "path": "examples/autocomplete/output/openpencil/theme-preview/theme-proposal.json",
+      "sha256": "b345478629d54d79aedbe9ad9dd7dc169a207831375f5756e8449aaab8c3e731"
+    }
+  ],
+  "renderer": [
+    {
+      "path": "tools/openpencil/templates/presentation.json",
+      "sha256": "e5acc76498759b32ea10c1892cfe92244709cc3dd338d7d05d73b5b69a3d6217"
+    },
+    {
+      "path": "tools/openpencil/theme-example.mjs",
+      "sha256": "1181212d028678d19ea42499f841cd9fc1fbf0c434af7453ce75dd84086fff5f"
+    },
+    {
+      "path": "tools/openpencil/layout.mjs",
+      "sha256": "2d6c7df236f304c58f1c5dc8d626753de0185a0b7e9b0ae2b67acf207632fe97"
+    },
+    {
+      "path": "tools/openpencil/themes.mjs",
+      "sha256": "082379168a0f9d5f326c8a26851e0b6842d6131dd10a047649d6bdc1d1ae47b9"
+    }
+  ],
+  "caseThemes": [
+    {
+      "id": "light-ready",
+      "mode": "light",
+      "background": "#FFFFFF",
+      "caption": "#64748B",
+      "border": "#E2E8F0",
+      "backgroundToken": "canvas.light"
+    },
+    {
+      "id": "dark-ready",
+      "mode": "dark",
+      "background": "#0F172A",
+      "caption": "#CBD5E1",
+      "border": "#334155",
+      "backgroundToken": "canvas.dark"
+    },
+    {
+      "id": "light-disabled",
+      "mode": "light",
+      "background": "#FFFFFF",
+      "caption": "#64748B",
+      "border": "#E2E8F0",
+      "backgroundToken": "canvas.light"
+    },
+    {
+      "id": "dark-disabled",
+      "mode": "dark",
+      "background": "#0F172A",
+      "caption": "#CBD5E1",
+      "border": "#334155",
+      "backgroundToken": "canvas.dark"
+    }
+  ],
+  "layout": {
+    "style": "native-presentation/1",
+    "columns": 2,
+    "width": 888,
+    "height": 800,
+    "cards": [
+      {
+        "index": 0,
+        "x": 32,
+        "y": 144,
+        "width": 400,
+        "height": 360,
+        "componentX": 32,
+        "componentY": 64
+      },
+      {
+        "index": 1,
+        "x": 456,
+        "y": 144,
+        "width": 400,
+        "height": 360,
+        "componentX": 32,
+        "componentY": 64
+      },
+      {
+        "index": 2,
+        "x": 32,
+        "y": 528,
+        "width": 400,
+        "height": 192,
+        "componentX": 32,
+        "componentY": 64
+      },
+      {
+        "index": 3,
+        "x": 456,
+        "y": 528,
+        "width": 400,
+        "height": 192,
+        "componentX": 32,
+        "componentY": 64
+      }
+    ]
+  },
+  "intentionalProposalColorChanges": [
+    {
+      "case": "dark-ready",
+      "node": "label",
+      "field": "fills",
+      "from": "#172B4D",
+      "to": "#F1F5F9"
+    },
+    {
+      "case": "dark-ready",
+      "node": "input",
+      "field": "fills",
+      "from": "#FFFFFF",
+      "to": "#1E293B"
+    },
+    {
+      "case": "dark-ready",
+      "node": "input",
+      "field": "strokes",
+      "from": "#2563EB",
+      "to": "#60A5FA"
+    },
+    {
+      "case": "dark-ready",
+      "node": "input.text",
+      "field": "fills",
+      "from": "#64748B",
+      "to": "#CBD5E1"
+    },
+    {
+      "case": "dark-ready",
+      "node": "overlay.surface",
+      "field": "fills",
+      "from": "#FFFFFF",
+      "to": "#1E293B"
+    },
+    {
+      "case": "dark-ready",
+      "node": "option.text",
+      "field": "fills",
+      "from": "#172B4D",
+      "to": "#F1F5F9"
+    },
+    {
+      "case": "dark-ready",
+      "node": "option.text",
+      "field": "fills",
+      "from": "#172B4D",
+      "to": "#F1F5F9"
+    },
+    {
+      "case": "dark-ready",
+      "node": "option.text",
+      "field": "fills",
+      "from": "#94A3B8",
+      "to": "#94A3B8"
+    },
+    {
+      "case": "dark-ready",
+      "node": "option.text",
+      "field": "fills",
+      "from": "#172B4D",
+      "to": "#F1F5F9"
+    },
+    {
+      "case": "dark-ready",
+      "node": "option.text",
+      "field": "fills",
+      "from": "#172B4D",
+      "to": "#F1F5F9"
+    },
+    {
+      "case": "dark-ready",
+      "node": "option.text",
+      "field": "fills",
+      "from": "#172B4D",
+      "to": "#F1F5F9"
+    },
+    {
+      "case": "dark-ready",
+      "node": "option.text",
+      "field": "fills",
+      "from": "#172B4D",
+      "to": "#F1F5F9"
+    },
+    {
+      "case": "dark-ready",
+      "node": "status",
+      "field": "fills",
+      "from": "#64748B",
+      "to": "#CBD5E1"
+    },
+    {
+      "case": "dark-disabled",
+      "node": "label",
+      "field": "fills",
+      "from": "#172B4D",
+      "to": "#F1F5F9"
+    },
+    {
+      "case": "dark-disabled",
+      "node": "input",
+      "field": "fills",
+      "from": "#FFFFFF",
+      "to": "#1E293B"
+    },
+    {
+      "case": "dark-disabled",
+      "node": "input",
+      "field": "strokes",
+      "from": "#CBD5E1",
+      "to": "#475569"
+    },
+    {
+      "case": "dark-disabled",
+      "node": "input.text",
+      "field": "fills",
+      "from": "#64748B",
+      "to": "#CBD5E1"
+    },
+    {
+      "case": "dark-disabled",
+      "node": "overlay.surface",
+      "field": "fills",
+      "from": "#FFFFFF",
+      "to": "#1E293B"
+    },
+    {
+      "case": "dark-disabled",
+      "node": "status",
+      "field": "fills",
+      "from": "#64748B",
+      "to": "#CBD5E1"
+    }
+  ],
+  "cases": [
+    {
+      "id": "light-ready",
+      "beforeSha256": "b81d3d9763c07713abb1c081899130f392dc972a27d87ebe545287c8eb99d20c",
+      "afterSha256": "b81d3d9763c07713abb1c081899130f392dc972a27d87ebe545287c8eb99d20c",
+      "presentationUnchanged": true
+    },
+    {
+      "id": "dark-ready",
+      "beforeSha256": "786b4baf2946c9094ef36515c04a2388cd5467299161d72d8f8980e7f5522b09",
+      "afterSha256": "786b4baf2946c9094ef36515c04a2388cd5467299161d72d8f8980e7f5522b09",
+      "presentationUnchanged": true
+    },
+    {
+      "id": "light-disabled",
+      "beforeSha256": "faa3487dd4a0afcfb5ce1aa48a15e4e4820e20faff81e11fe8bcd350f1cf5238",
+      "afterSha256": "faa3487dd4a0afcfb5ce1aa48a15e4e4820e20faff81e11fe8bcd350f1cf5238",
+      "presentationUnchanged": true
+    },
+    {
+      "id": "dark-disabled",
+      "beforeSha256": "af3f52b7c2ac8483da6867f04745e3a9ea9d30999f0afc6a1a8ec2f8cb02766f",
+      "afterSha256": "af3f52b7c2ac8483da6867f04745e3a9ea9d30999f0afc6a1a8ec2f8cb02766f",
+      "presentationUnchanged": true
+    }
+  ],
+  "networkAttempts": 0,
+  "outputs": {
+    "autocomplete.fig": "5504bcb6903394ea20f29edbd1651d98c229a61ec604ab940700a0ced865ac10",
+    "preview.png": "dff78d3f1e4872bff4e2e0ced601f8d93fd458731f02c4750c5aa5cf59120ba6"
+  },
+  "notChecked": [
+    "Dark palette is a new proposal, not normative example definition",
+    "No runtime/ARIA or contrast certification",
+    "No live GUI roundtrip"
+  ]
+}

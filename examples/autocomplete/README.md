@@ -14,3 +14,7 @@ Die strukturelle Originaldatei-Prüfung ist erfüllt. Zwei konkrete Definitionsl
 ## Einheitliches Layout der Vorschau
 
 Neue native Ausgaben verwenden das [gemeinsame Layout](../../docs/skills/OPENPENCIL-PREVIEW.md); die gerenderte Datei heißt wie bisher `preview.png` neben `autocomplete.fig`. [Beide run-04-Proben im Komponenten-Ausgabebereich](output/openpencil/run-04/README.md) sind separate nachträgliche Ausgaben; die Forschungsoriginale bleiben unverändert.
+
+## Themeabhängige Präsentation
+
+[Light-/Darkmode-Vergleich](output/openpencil/theme-preview/README.md) mit ready und disabled. Separater Dark-Palettenvorschlag zum Test der Kartenhintergründe; keine Änderung der führenden example-Definition oder historischer Runs.

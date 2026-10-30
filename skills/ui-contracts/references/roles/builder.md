@@ -16,3 +16,5 @@ Bei einer verlangten OpenPencil-Zustandsübersicht die gemeinsame native Präsen
 Die gemeinsame Vorlage liegt zentral unter `tools/openpencil/templates/presentation.json`; sie wird vom Renderer gelesen und im Receipt per Hash gebunden. Keine Kopie der Vorlage pro Komponenten-Ergebnisordner anlegen.
 
 Bei berechneter Geometrie (besonders Chart-Sektoren und Kurven) die [Geometriehilfe](../geometry.md) nachladen. Einfache Buttons, Kreise und Ellipsen bleiben native Primitive; komplexe Pfade aus Daten berechnen lassen.
+
+Bei Darkmode-/Themeübersichten Karten explizit über `--case-themes` an den definierten Hintergrundtoken der gewählten Bibliothek binden; Details im oben verlinkten Vorschauleitfaden. Die FIG muss die jeweiligen Varianten bereits enthalten. Keine dunkle Hintergrundfarbe erfinden und keine Variante aus dem Namen erraten. Ohne Zuordnung ist die helle Standardkarte nur eine neutrale Präsentation, kein Darkmode-Nachweis.

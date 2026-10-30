@@ -24,5 +24,9 @@
     "subtitleSize": 13,
     "captionSize": 13,
     "footerSize": 12
+  },
+  "darkCard": {
+    "border": "#334155",
+    "caption": "#CBD5E1"
   }
 }
