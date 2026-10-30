@@ -1,0 +1,150 @@
+{
+  "id": "UX-RULES-01-cases",
+  "revision": 1,
+  "status": "research-fixtures-not-normative-library-rules",
+  "executionStatus": "not-run",
+  "ruleOrigin": "Own experimental requirements, not external UX evidence; no numerical option-count threshold or production eligibility rule is asserted.",
+  "cases": [
+    {
+      "id": "T01",
+      "title": "Eignung mit vollständigen Fakten",
+      "inputSketch": {
+        "existingEntriesOnly": true,
+        "singleSelection": true
+      },
+      "experimentalRule": "Experimental rule recommends considering Autocomplete when both stated facts are true.",
+      "expectedResearchObservation": "Recommendation plus rule ID, not obligation or automatic final selection.",
+      "status": "pending"
+    },
+    {
+      "id": "T02",
+      "title": "Bekannter Ausschluss",
+      "inputSketch": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "experimentalRule": "The experimental existing-entry-only candidate is unsuitable for a requirement to accept novel entries.",
+      "expectedResearchObservation": "Explicit unsuitable outcome, linked to the exclusion rule; no changed component behavior.",
+      "status": "pending"
+    },
+    {
+      "id": "T03",
+      "title": "Fehlende Voraussetzung",
+      "inputSketch": {
+        "singleSelection": true
+      },
+      "experimentalRule": "Same experimental rule as T01.",
+      "expectedResearchObservation": "Unknown fact reported; no silent unsuitable/suitable default.",
+      "status": "pending"
+    },
+    {
+      "id": "T04",
+      "title": "false und null unterscheiden",
+      "inputSketch": {
+        "valuesToProbe": [
+          false,
+          null,
+          "missing"
+        ]
+      },
+      "experimentalRule": "Same condition evaluated with each of the three distinct inputs.",
+      "expectedResearchObservation": "Input distinctions preserved or framework limitation/own mapping explicitly documented.",
+      "status": "pending"
+    },
+    {
+      "id": "T05",
+      "title": "Pflicht und Empfehlung",
+      "inputSketch": {
+        "mandatoryRequirement": "singleSelection",
+        "preference": "compactLayout"
+      },
+      "experimentalRule": "A recommendation must not silently relax the mandatory experimental prerequisite.",
+      "expectedResearchObservation": "Separate normative levels and explicit provenance of any added priority policy.",
+      "status": "pending"
+    },
+    {
+      "id": "T06",
+      "title": "Widerspruch und Ausnahme",
+      "inputSketch": {
+        "rules": [
+          "R-allow",
+          "R-exclude"
+        ],
+        "bothApply": true
+      },
+      "experimentalRule": "Opposite experimental rules target the same component; second variant adds an explicit scoped exception.",
+      "expectedResearchObservation": "Conflict reported or resolved by a declared policy; exception distinguishable from arbitrary rule order.",
+      "status": "pending"
+    },
+    {
+      "id": "T07",
+      "title": "Referenz auf Originaldomänen",
+      "inputSketch": {
+        "library": "example",
+        "component": "ui-contracts:Autocomplete"
+      },
+      "experimentalRule": "An experimental UX rule points to existing CEM, token/CSS, SCXML and accessibility anchors.",
+      "expectedResearchObservation": "All targets typed and revision-bound; no duplicated leading behavior or values.",
+      "status": "pending"
+    },
+    {
+      "id": "T08",
+      "title": "Zwei Bibliotheken",
+      "inputSketch": {
+        "libraryIds": [
+          "fixture-a",
+          "fixture-b"
+        ],
+        "componentId": "ui-contracts:Autocomplete"
+      },
+      "experimentalRule": "Same component ID occurs in two isolated temporary fixture libraries.",
+      "expectedResearchObservation": "Rule never applies to the other library merely because names match.",
+      "status": "pending"
+    },
+    {
+      "id": "T09",
+      "title": "Veraltete Revision",
+      "inputSketch": {
+        "mutation": "alter a referenced file in a temporary copy"
+      },
+      "experimentalRule": "Rule remains bound to the pre-mutation hash.",
+      "expectedResearchObservation": "Explicit stale binding; no automatic latest fallback.",
+      "status": "pending"
+    },
+    {
+      "id": "T10",
+      "title": "Fehlender oder falscher Anker",
+      "inputSketch": {
+        "mutations": [
+          "missing target",
+          "wrong target type"
+        ]
+      },
+      "experimentalRule": "Known library and component but invalid detailed anchor.",
+      "expectedResearchObservation": "Explicit binding error; file existence alone is insufficient.",
+      "status": "pending"
+    },
+    {
+      "id": "T11",
+      "title": "Gemeinsame und lokale Regeln",
+      "inputSketch": {
+        "sharedRule": "library-wide",
+        "localRule": "component-specific"
+      },
+      "experimentalRule": "Reuse one rule by reference and add a scoped local exception.",
+      "expectedResearchObservation": "No duplicated rule body; applicability/exception policy explicit; unrelated components unaffected.",
+      "status": "pending"
+    },
+    {
+      "id": "T12",
+      "title": "Gezieltes Nachladen und Belege",
+      "inputSketch": {
+        "requestedComponent": "Autocomplete",
+        "irrelevantComponent": "fixture-other"
+      },
+      "experimentalRule": "Retrieve only relevant rules, cited rationale and required dependencies.",
+      "expectedResearchObservation": "List actual files/bytes and missing evidence; no claim of measured model context or agent success without a separate model run.",
+      "status": "pending"
+    }
+  ]
+}

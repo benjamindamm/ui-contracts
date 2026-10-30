@@ -1,0 +1,2 @@
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" id="ux03" name="UX experiment" namespace="urn:ux-rules-03"><decision id="eligibility" name="eligibility"><variable id="v" name="eligibility"/><literalExpression id="expr"><text>if existingEntriesOnly = null or singleSelection = null then "unknown" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then "candidate" else "unsuitable") else "invalid-input"
+</text></literalExpression></decision></definitions>

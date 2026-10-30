@@ -1,0 +1,155 @@
+[
+  {
+    "id": "complete",
+    "input": {
+      "existingEntriesOnly": true,
+      "singleSelection": true
+    },
+    "process": {
+      "args": [
+        "/tmp/ui-contracts-ux-rules-runtime/opa",
+        "eval",
+        "--format=json",
+        "--data",
+        "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/01/fixtures/policy.rego",
+        "--stdin-input",
+        "data.uxprobe"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"candidate\": true,\n            \"conclusions\": [\n              \"exclude\",\n              \"recommend\"\n            ],\n            \"decision\": \"candidate\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    "value": {
+      "candidate": true,
+      "conclusions": [
+        "exclude",
+        "recommend"
+      ],
+      "decision": "candidate"
+    }
+  },
+  {
+    "id": "excluded",
+    "input": {
+      "existingEntriesOnly": false,
+      "singleSelection": true
+    },
+    "process": {
+      "args": [
+        "/tmp/ui-contracts-ux-rules-runtime/opa",
+        "eval",
+        "--format=json",
+        "--data",
+        "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/01/fixtures/policy.rego",
+        "--stdin-input",
+        "data.uxprobe"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"conclusions\": [],\n            \"decision\": \"unsuitable\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    "value": {
+      "conclusions": [],
+      "decision": "unsuitable"
+    }
+  },
+  {
+    "id": "missing",
+    "input": {
+      "singleSelection": true
+    },
+    "process": {
+      "args": [
+        "/tmp/ui-contracts-ux-rules-runtime/opa",
+        "eval",
+        "--format=json",
+        "--data",
+        "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/01/fixtures/policy.rego",
+        "--stdin-input",
+        "data.uxprobe"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"conclusions\": [],\n            \"decision\": \"unsuitable\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    "value": {
+      "conclusions": [],
+      "decision": "unsuitable"
+    }
+  },
+  {
+    "id": "explicit-null",
+    "input": {
+      "existingEntriesOnly": null,
+      "singleSelection": true
+    },
+    "process": {
+      "args": [
+        "/tmp/ui-contracts-ux-rules-runtime/opa",
+        "eval",
+        "--format=json",
+        "--data",
+        "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/01/fixtures/policy.rego",
+        "--stdin-input",
+        "data.uxprobe"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"conclusions\": [],\n            \"decision\": \"unknown\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    "value": {
+      "conclusions": [],
+      "decision": "unknown"
+    }
+  },
+  {
+    "id": "explicit-false",
+    "input": {
+      "existingEntriesOnly": false,
+      "singleSelection": true
+    },
+    "process": {
+      "args": [
+        "/tmp/ui-contracts-ux-rules-runtime/opa",
+        "eval",
+        "--format=json",
+        "--data",
+        "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/01/fixtures/policy.rego",
+        "--stdin-input",
+        "data.uxprobe"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"conclusions\": [],\n            \"decision\": \"unsuitable\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    "value": {
+      "conclusions": [],
+      "decision": "unsuitable"
+    }
+  },
+  {
+    "id": "wrong-type",
+    "input": {
+      "existingEntriesOnly": "true",
+      "singleSelection": true
+    },
+    "process": {
+      "args": [
+        "/tmp/ui-contracts-ux-rules-runtime/opa",
+        "eval",
+        "--format=json",
+        "--data",
+        "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/01/fixtures/policy.rego",
+        "--stdin-input",
+        "data.uxprobe"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"conclusions\": [],\n            \"decision\": \"unknown\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    "value": {
+      "conclusions": [],
+      "decision": "unknown"
+    }
+  }
+]

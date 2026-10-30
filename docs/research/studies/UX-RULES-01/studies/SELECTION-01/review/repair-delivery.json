@@ -1,0 +1,14 @@
+{
+  "scope": "Separate repair; first delivery hashes unchanged",
+  "files": {
+    "outputs/b-repair-01/REPORT.md": "650e9d2bee3929ef4e523b02629ad114df37cad7d8aaa007a657c0f6ed1cfc94",
+    "outputs/b-repair-01/SHA256SUMS.json": "91880ff3344488476ccbc4db398cd215a297557cd5a91df7b118610cb0054b72",
+    "outputs/b-repair-01/TRACE.json": "c7ddf1a7a99614f58ab1836a8bec80db4f3d9f13432ec83bebbdbf749f7a3e38",
+    "outputs/b-repair-01/decision.json": "b7fccf8c65dbfa2ec13e1fbc224014d16998ff093f8f688ae9d82d33baab595b",
+    "outputs/b-repair-01/form.js": "d237d69c308aa567510aadffa9b5fb83663f385efe273c82e261f203fb226681",
+    "outputs/b-repair-01/form.ts": "aa95abebccd4c6d2efec429fc3ffada72abe49880b27141ada148e1ac5985afe",
+    "outputs/b-repair-01/index.html": "2a1cbadb6622102202946d52f4c4681d76056107c462ca025a1e7b30f919392e",
+    "outputs/b-repair-01/policy-evaluation.json": "1859c6027015bfb892fffbe55de44dbcd7d771b9be2e2d14bc9da667440e41b8",
+    "outputs/b-repair-01/styles.css": "be2d73e3204b33fdde321231fb482be07edbb066066586e3e8d55409fb0d4201"
+  }
+}

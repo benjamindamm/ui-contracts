@@ -1,0 +1,101 @@
+[
+  {
+    "id": "complete",
+    "conforms": true,
+    "reports": [],
+    "text": "Validation Report\nConforms: True\n",
+    "projection": "own JSON facts -> RDF; explicit null represented by a dedicated IRI"
+  },
+  {
+    "id": "excluded",
+    "conforms": false,
+    "reports": [
+      {
+        "severity": "http://www.w3.org/ns/shacl#Violation",
+        "path": "urn:uxprobe:existingEntriesOnly",
+        "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+      }
+    ],
+    "text": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:boolean ; sh:hasValue Literal(\"true\" = True, datatype=xsd:boolean) ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path ex:existingEntriesOnly ]\n\tFocus Node: <urn:uxprobe:context>\n\tResult Path: ex:existingEntriesOnly\n\tMessage: Node <urn:uxprobe:context>->ex:existingEntriesOnly does not contain a value in the set: ['Literal(\"true\" = True, datatype=xsd:boolean)']\n",
+    "projection": "own JSON facts -> RDF; explicit null represented by a dedicated IRI"
+  },
+  {
+    "id": "missing",
+    "conforms": false,
+    "reports": [
+      {
+        "severity": "http://www.w3.org/ns/shacl#Violation",
+        "path": "urn:uxprobe:existingEntriesOnly",
+        "constraint": "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+      },
+      {
+        "severity": "http://www.w3.org/ns/shacl#Violation",
+        "path": "urn:uxprobe:existingEntriesOnly",
+        "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+      }
+    ],
+    "text": "Validation Report\nConforms: False\nResults (2):\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:boolean ; sh:hasValue Literal(\"true\" = True, datatype=xsd:boolean) ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path ex:existingEntriesOnly ]\n\tFocus Node: <urn:uxprobe:context>\n\tResult Path: ex:existingEntriesOnly\n\tMessage: Less than 1 values on <urn:uxprobe:context>->ex:existingEntriesOnly\nConstraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:boolean ; sh:hasValue Literal(\"true\" = True, datatype=xsd:boolean) ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path ex:existingEntriesOnly ]\n\tFocus Node: <urn:uxprobe:context>\n\tResult Path: ex:existingEntriesOnly\n\tMessage: Node <urn:uxprobe:context>->ex:existingEntriesOnly does not contain a value in the set: ['Literal(\"true\" = True, datatype=xsd:boolean)']\n",
+    "projection": "own JSON facts -> RDF; explicit null represented by a dedicated IRI"
+  },
+  {
+    "id": "explicit-null",
+    "conforms": false,
+    "reports": [
+      {
+        "severity": "http://www.w3.org/ns/shacl#Violation",
+        "path": "urn:uxprobe:existingEntriesOnly",
+        "constraint": "http://www.w3.org/ns/shacl#DatatypeConstraintComponent"
+      },
+      {
+        "severity": "http://www.w3.org/ns/shacl#Violation",
+        "path": "urn:uxprobe:existingEntriesOnly",
+        "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+      }
+    ],
+    "text": "Validation Report\nConforms: False\nResults (2):\nConstraint Violation in DatatypeConstraintComponent (http://www.w3.org/ns/shacl#DatatypeConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:boolean ; sh:hasValue Literal(\"true\" = True, datatype=xsd:boolean) ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path ex:existingEntriesOnly ]\n\tFocus Node: <urn:uxprobe:context>\n\tValue Node: <urn:uxprobe:explicit-null>\n\tResult Path: ex:existingEntriesOnly\n\tMessage: Value is not Literal with datatype xsd:boolean\nConstraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:boolean ; sh:hasValue Literal(\"true\" = True, datatype=xsd:boolean) ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path ex:existingEntriesOnly ]\n\tFocus Node: <urn:uxprobe:context>\n\tResult Path: ex:existingEntriesOnly\n\tMessage: Node <urn:uxprobe:context>->ex:existingEntriesOnly does not contain a value in the set: ['Literal(\"true\" = True, datatype=xsd:boolean)']\n",
+    "projection": "own JSON facts -> RDF; explicit null represented by a dedicated IRI"
+  },
+  {
+    "id": "explicit-false",
+    "conforms": false,
+    "reports": [
+      {
+        "severity": "http://www.w3.org/ns/shacl#Violation",
+        "path": "urn:uxprobe:existingEntriesOnly",
+        "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+      }
+    ],
+    "text": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:boolean ; sh:hasValue Literal(\"true\" = True, datatype=xsd:boolean) ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path ex:existingEntriesOnly ]\n\tFocus Node: <urn:uxprobe:context>\n\tResult Path: ex:existingEntriesOnly\n\tMessage: Node <urn:uxprobe:context>->ex:existingEntriesOnly does not contain a value in the set: ['Literal(\"true\" = True, datatype=xsd:boolean)']\n",
+    "projection": "own JSON facts -> RDF; explicit null represented by a dedicated IRI"
+  },
+  {
+    "id": "wrong-type",
+    "conforms": false,
+    "reports": [
+      {
+        "severity": "http://www.w3.org/ns/shacl#Violation",
+        "path": "urn:uxprobe:existingEntriesOnly",
+        "constraint": "http://www.w3.org/ns/shacl#DatatypeConstraintComponent"
+      },
+      {
+        "severity": "http://www.w3.org/ns/shacl#Violation",
+        "path": "urn:uxprobe:existingEntriesOnly",
+        "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+      }
+    ],
+    "text": "Validation Report\nConforms: False\nResults (2):\nConstraint Violation in DatatypeConstraintComponent (http://www.w3.org/ns/shacl#DatatypeConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:boolean ; sh:hasValue Literal(\"true\" = True, datatype=xsd:boolean) ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path ex:existingEntriesOnly ]\n\tFocus Node: <urn:uxprobe:context>\n\tValue Node: Literal(\"true\")\n\tResult Path: ex:existingEntriesOnly\n\tMessage: Value is not Literal with datatype xsd:boolean\nConstraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:boolean ; sh:hasValue Literal(\"true\" = True, datatype=xsd:boolean) ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:path ex:existingEntriesOnly ]\n\tFocus Node: <urn:uxprobe:context>\n\tResult Path: ex:existingEntriesOnly\n\tMessage: Node <urn:uxprobe:context>->ex:existingEntriesOnly does not contain a value in the set: ['Literal(\"true\" = True, datatype=xsd:boolean)']\n",
+    "projection": "own JSON facts -> RDF; explicit null represented by a dedicated IRI"
+  },
+  {
+    "id": "warning-allow-False",
+    "conforms": false,
+    "text": "Validation Report\nConforms: False\nResults (1):\nValidation Result in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n\tSeverity: sh:Warning\n\tSource Shape: ex:Warning\n\tFocus Node: ex:context\n\tValue Node: ex:context\n\tMessage: Value does not have class ex:RequiredButAbsent\n",
+    "allow_warnings": false
+  },
+  {
+    "id": "warning-allow-True",
+    "conforms": true,
+    "text": "Validation Report\nConforms: True\nResults (1):\nValidation Result in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n\tSeverity: sh:Warning\n\tSource Shape: ex:Warning\n\tFocus Node: ex:context\n\tValue Node: ex:context\n\tMessage: Value does not have class ex:RequiredButAbsent\n",
+    "allow_warnings": true
+  }
+]

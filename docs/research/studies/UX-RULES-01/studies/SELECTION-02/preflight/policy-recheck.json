@@ -1,0 +1,67 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "cases": [
+    {
+      "id": "few",
+      "expected": "Select",
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "reason": "simple-fixed-choice",
+          "searchNeed": "not-required",
+          "choice": "Select",
+          "Select": "eligible",
+          "SelectWithSearch": "eligible",
+          "Autocomplete": "incompatible-editing"
+        }
+      }
+    },
+    {
+      "id": "many",
+      "expected": "SelectWithSearch",
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "reason": "fixed-choice-with-separate-search-preferred-over-completion",
+          "searchNeed": "required",
+          "choice": "SelectWithSearch",
+          "Select": "incompatible-search",
+          "SelectWithSearch": "eligible",
+          "Autocomplete": "incompatible-editing"
+        }
+      }
+    },
+    {
+      "id": "no-search-input",
+      "expected": "no-defined-candidate",
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "reason": "resolve-constraints-or-missing-definition",
+          "searchNeed": "required",
+          "choice": "no-defined-candidate",
+          "Select": "incompatible-search-input",
+          "SelectWithSearch": "incompatible-search-input",
+          "Autocomplete": "incompatible-editing"
+        }
+      }
+    },
+    {
+      "id": "no-provider",
+      "expected": "no-defined-candidate",
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "reason": "resolve-constraints-or-missing-definition",
+          "searchNeed": "required",
+          "choice": "no-defined-candidate",
+          "Select": "incompatible-search",
+          "SelectWithSearch": "missing-filter-provider",
+          "Autocomplete": "incompatible-editing"
+        }
+      }
+    }
+  ],
+  "capabilitySourcesValidated": 4
+}

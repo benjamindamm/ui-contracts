@@ -1,0 +1,2 @@
+# Preserve downloaded normative schema bytes, including CRLF/BOM.
+*.xsd -text

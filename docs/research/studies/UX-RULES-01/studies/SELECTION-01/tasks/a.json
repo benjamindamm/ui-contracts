@@ -1,0 +1,53 @@
+{
+  "id": "SELECTION-01-a",
+  "role": "builder",
+  "goal": "Build a German personal-data form from the given component definitions and contextual UX policy.",
+  "fields": [
+    {
+      "key": "givenName",
+      "label": "Vorname",
+      "inputType": "text",
+      "autocompleteHint": "given-name"
+    },
+    {
+      "key": "familyName",
+      "label": "Nachname",
+      "inputType": "text",
+      "autocompleteHint": "family-name"
+    },
+    {
+      "key": "email",
+      "label": "E-Mail",
+      "inputType": "email",
+      "autocompleteHint": "email"
+    },
+    {
+      "key": "nationalNumber",
+      "label": "Rufnummer",
+      "inputType": "tel",
+      "autocompleteHint": "tel-national"
+    }
+  ],
+  "countrySelection": "Exactly one of the provided country keys; label includes dial prefix. Typed lookup is allowed, novel committed values are forbidden. Preserve supplied order.",
+  "library": "libraries/example",
+  "input": "docs/research/studies/UX-RULES-01/studies/SELECTION-01/inputs/a.json",
+  "output": "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/a",
+  "target": "Standalone HTML/CSS/TypeScript plus compiled JS, works locally without network/dependencies.",
+  "workflow": [
+    "Read only task, own input and relevant library/skill files; load only relevant definitions.",
+    "Use the capability profiles and project policy to choose the country control. Record decision.json before building the form; include source paths/context facts/reasons.",
+    "Implement the derived target faithfully; use Input for named free-text fields. A query-aware in-memory provider can be implemented over the provided list.",
+    "Use visible labels, stable unique IDs and meaningful keyboard behavior. Local validation only; no backend or external requests.",
+    "Save index.html, form.ts, form.js, styles.css, decision.json, REPORT.md and TRACE.json in own output directory. Report real checks and limitations."
+  ],
+  "allowedTechnicalTools": [
+    "tools/validation/node_modules/typescript/bin/tsc",
+    "tools/validation/.venv/bin/python docs/research/studies/UX-RULES-01/studies/SELECTION-01/evaluate.py docs/research/studies/UX-RULES-01/studies/SELECTION-01/inputs/a.json"
+  ],
+  "boundaries": [
+    "Do not read other inputs, outputs, study README/protocol/review/results or historical examples/research.",
+    "Do not change library, policy, input or prior files. Write only own output directory.",
+    "Do not spawn agents, commit/push, access native apps or research your model identity.",
+    "Do not use a not-yet-defined library variant. If requirements cannot be satisfied, document the gap."
+  ]
+}

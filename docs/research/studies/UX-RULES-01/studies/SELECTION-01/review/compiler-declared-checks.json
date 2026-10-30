@@ -1,0 +1,62 @@
+{
+  "note": "First coordinator command omitted DOM.Iterable used by repair author; initial result retained in compiler-checks.json. With declared/common DOM.Iterable lib all sources compile, no source change or assertion weakening.",
+  "rows": [
+    {
+      "arm": "a",
+      "args": [
+        "node",
+        "tools/validation/node_modules/typescript/bin/tsc",
+        "--target",
+        "ES2020",
+        "--lib",
+        "ES2020,DOM,DOM.Iterable",
+        "--strict",
+        "--outDir",
+        "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmpc5r2tqe_",
+        "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/a/form.ts"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "deliveredJsMatchesRecompiledTs": true
+    },
+    {
+      "arm": "b",
+      "args": [
+        "node",
+        "tools/validation/node_modules/typescript/bin/tsc",
+        "--target",
+        "ES2020",
+        "--lib",
+        "ES2020,DOM,DOM.Iterable",
+        "--strict",
+        "--outDir",
+        "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmperbpfenr",
+        "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/b/form.ts"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "deliveredJsMatchesRecompiledTs": true
+    },
+    {
+      "arm": "b-repair-01",
+      "args": [
+        "node",
+        "tools/validation/node_modules/typescript/bin/tsc",
+        "--target",
+        "ES2020",
+        "--lib",
+        "ES2020,DOM,DOM.Iterable",
+        "--strict",
+        "--outDir",
+        "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmp2fanyxbh",
+        "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/b-repair-01/form.ts"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "deliveredJsMatchesRecompiledTs": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "candidate": "DMN",
+    "originalSchemaAccepts": true,
+    "errors": "",
+    "scope": "XML only; FEEL interpreter separate, no complete DMN engine"
+  },
+  {
+    "candidate": "SBVR",
+    "originalSchemaCompiled": true,
+    "scope": "Schema compilation only; no SBVR semantic evaluator selected"
+  }
+]

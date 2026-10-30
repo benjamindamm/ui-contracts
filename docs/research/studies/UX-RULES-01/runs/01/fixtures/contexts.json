@@ -1,0 +1,49 @@
+[
+  {
+    "id": "complete",
+    "case": "T01",
+    "input": {
+      "existingEntriesOnly": true,
+      "singleSelection": true
+    }
+  },
+  {
+    "id": "excluded",
+    "case": "T02",
+    "input": {
+      "existingEntriesOnly": false,
+      "singleSelection": true
+    }
+  },
+  {
+    "id": "missing",
+    "case": "T03",
+    "input": {
+      "singleSelection": true
+    }
+  },
+  {
+    "id": "explicit-null",
+    "case": "T04",
+    "input": {
+      "existingEntriesOnly": null,
+      "singleSelection": true
+    }
+  },
+  {
+    "id": "explicit-false",
+    "case": "T04",
+    "input": {
+      "existingEntriesOnly": false,
+      "singleSelection": true
+    }
+  },
+  {
+    "id": "wrong-type",
+    "case": "T04",
+    "input": {
+      "existingEntriesOnly": "true",
+      "singleSelection": true
+    }
+  }
+]

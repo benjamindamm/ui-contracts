@@ -1,0 +1,528 @@
+[
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/eligibility.dmn",
+      "eligibility"
+    ],
+    "input": {
+      "existingEntriesOnly": true,
+      "singleSelection": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":\"candidate\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/eligibility.dmn",
+      "eligibility"
+    ],
+    "input": {
+      "existingEntriesOnly": false,
+      "singleSelection": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":\"unsuitable\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/eligibility.dmn",
+      "eligibility"
+    ],
+    "input": {
+      "singleSelection": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":\"unknown\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/eligibility.dmn",
+      "eligibility"
+    ],
+    "input": {
+      "existingEntriesOnly": null,
+      "singleSelection": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":\"unknown\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/eligibility.dmn",
+      "eligibility"
+    ],
+    "input": {
+      "existingEntriesOnly": false,
+      "singleSelection": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":\"unsuitable\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/eligibility.dmn",
+      "eligibility"
+    ],
+    "input": {
+      "existingEntriesOnly": "true",
+      "singleSelection": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":\"invalid-input\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/normative.dmn",
+      "normative"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":{\"applicable\":true,\"permitted\":true,\"requirement\":\"met\",\"recommendation\":\"met\"}}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "eval",
+      "--format=json",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/shared.rego",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/component.rego",
+      "--stdin-input",
+      "data.uxcomponent.assessment"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"applicable\": true,\n            \"permitted\": true,\n            \"recommendation\": \"met\",\n            \"requirement\": \"met\"\n          },\n          \"text\": \"data.uxcomponent.assessment\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/normative.dmn",
+      "normative"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":{\"applicable\":true,\"permitted\":true,\"requirement\":\"met\",\"recommendation\":\"unmet\"}}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "eval",
+      "--format=json",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/shared.rego",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/component.rego",
+      "--stdin-input",
+      "data.uxcomponent.assessment"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"applicable\": true,\n            \"permitted\": true,\n            \"recommendation\": \"unmet\",\n            \"requirement\": \"met\"\n          },\n          \"text\": \"data.uxcomponent.assessment\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/normative.dmn",
+      "normative"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": false,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":{\"applicable\":true,\"permitted\":false,\"requirement\":\"unmet\",\"recommendation\":\"met\"}}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "eval",
+      "--format=json",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/shared.rego",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/component.rego",
+      "--stdin-input",
+      "data.uxcomponent.assessment"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": false,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"applicable\": true,\n            \"permitted\": false,\n            \"recommendation\": \"met\",\n            \"requirement\": \"unmet\"\n          },\n          \"text\": \"data.uxcomponent.assessment\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/normative.dmn",
+      "normative"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":{\"applicable\":true,\"permitted\":true,\"requirement\":\"met\",\"recommendation\":\"excepted\"}}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "eval",
+      "--format=json",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/shared.rego",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/component.rego",
+      "--stdin-input",
+      "data.uxcomponent.assessment"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"applicable\": true,\n            \"permitted\": true,\n            \"recommendation\": \"excepted\",\n            \"requirement\": \"met\"\n          },\n          \"text\": \"data.uxcomponent.assessment\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/normative.dmn",
+      "normative"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Other"
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":{\"applicable\":true,\"permitted\":true,\"requirement\":\"met\",\"recommendation\":\"unmet\"}}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "eval",
+      "--format=json",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/shared.rego",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/component.rego",
+      "--stdin-input",
+      "data.uxcomponent.assessment"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Other"
+    },
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"applicable\": true,\n            \"permitted\": true,\n            \"recommendation\": \"unmet\",\n            \"requirement\": \"met\"\n          },\n          \"text\": \"data.uxcomponent.assessment\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/normative.dmn",
+      "normative"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": false,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":{\"applicable\":true,\"permitted\":false,\"requirement\":\"unmet\",\"recommendation\":\"excepted\"}}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "eval",
+      "--format=json",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/shared.rego",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/component.rego",
+      "--stdin-input",
+      "data.uxcomponent.assessment"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": false,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"applicable\": true,\n            \"permitted\": false,\n            \"recommendation\": \"excepted\",\n            \"requirement\": \"unmet\"\n          },\n          \"text\": \"data.uxcomponent.assessment\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/normative.dmn",
+      "normative"
+    ],
+    "input": {
+      "library": "other",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":{\"applicable\":false,\"permitted\":null,\"requirement\":\"not-applicable\",\"recommendation\":\"not-applicable\"}}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "eval",
+      "--format=json",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/shared.rego",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/component.rego",
+      "--stdin-input",
+      "data.uxcomponent.assessment"
+    ],
+    "input": {
+      "library": "other",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"applicable\": false,\n            \"permitted\": null,\n            \"recommendation\": \"not-applicable\",\n            \"requirement\": \"not-applicable\"\n          },\n          \"text\": \"data.uxcomponent.assessment\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/normative.dmn",
+      "normative"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Other",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":{\"applicable\":false,\"permitted\":null,\"requirement\":\"not-applicable\",\"recommendation\":\"not-applicable\"}}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "eval",
+      "--format=json",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/shared.rego",
+      "--data",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/component.rego",
+      "--stdin-input",
+      "data.uxcomponent.assessment"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Other",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"applicable\": false,\n            \"permitted\": null,\n            \"recommendation\": \"not-applicable\",\n            \"requirement\": \"not-applicable\"\n          },\n          \"text\": \"data.uxcomponent.assessment\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/conflict-unique.dmn",
+      "conflict"
+    ],
+    "input": {
+      "flag": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluation-error\",\"error\":\"EvalFailure(Failure(multiple values aren't allowed for UNIQUE hit policy. found: 'List(Map(outcome -> \\\"recommend\\\"), Map(outcome -> \\\"exclude\\\"))'),AuditLog(ParsedDmn(org.camunda.bpm.model.dmn.impl.DmnModelInstanceImpl@2416a51,List(ParsedDecision(conflict,conflict,ParsedDecisionTable(ArrayBuffer(ParsedInput(flag,null,FeelExpression(ParsedExpression(Ref(List(flag)),flag)))),ArrayBuffer(ParsedOutput(out,outcome,null,None,None)),ArrayBuffer(ParsedRule(recommend,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(recommend),\\\"recommend\\\"))))), ParsedRule(exclude,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(exclude),\\\"exclude\\\")))))),UNIQUE,null),conflict,None,List(),ArrayBuffer()))),List(AuditLogEntry(conflict,conflict,ParsedDecisionTable(ArrayBuffer(ParsedInput(flag,null,FeelExpression(ParsedExpression(Ref(List(flag)),flag)))),ArrayBuffer(ParsedOutput(out,outcome,null,None,None)),ArrayBuffer(ParsedRule(recommend,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(recommend),\\\"recommend\\\"))))), ParsedRule(exclude,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(exclude),\\\"exclude\\\")))))),UNIQUE,null),DecisionTableEvaluationResult(List(EvaluatedInput(ParsedInput(flag,null,FeelExpression(ParsedExpression(Ref(List(flag)),flag))),true)),List(EvaluatedRule(ParsedRule(recommend,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(recommend),\\\"recommend\\\"))))),List(EvaluatedOutput(ParsedOutput(out,outcome,null,None,None),\\\"recommend\\\"))), EvaluatedRule(ParsedRule(exclude,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(exclude),\\\"exclude\\\"))))),List(EvaluatedOutput(ParsedOutput(out,outcome,null,None,None),\\\"exclude\\\")))),error(\\\"multiple values aren't allowed for UNIQUE hit policy. found: 'List(Map(outcome -> \\\"recommend\\\"), Map(outcome -> \\\"exclude\\\"))'\\\"))))))\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/conflict-first.dmn",
+      "conflict"
+    ],
+    "input": {
+      "flag": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":\"recommend\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/conflict-collect.dmn",
+      "conflict"
+    ],
+    "input": {
+      "flag": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":[\"recommend\",\"exclude\"]}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  },
+  {
+    "args": [
+      "/opt/homebrew/opt/openjdk/bin/java",
+      "-cp",
+      "/tmp/ui-contracts-ux-rules-runtime/classes:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar:/tmp/ui-contracts-ux-rules-runtime/m2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar:/tmp/ui-contracts-ux-rules-runtime/m2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "DmnProbe",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/03/fixtures/eligibility.dmn",
+      "eligibility"
+    ],
+    "input": {
+      "existingEntriesOnly": true,
+      "singleSelection": true
+    },
+    "exitCode": 0,
+    "stdout": "{\"stage\":\"evaluated\",\"value\":\"candidate\"}\n",
+    "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+  }
+]

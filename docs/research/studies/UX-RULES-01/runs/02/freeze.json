@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "02/policy.rego": "32cd2e01212afab289f9e12f62c0a0971bb9b9c5953f4c8a9b2750bd28163da2",
+    "02/probe.py": "532332cee98c960b4d207eda0cf2acbf1629ed69d816f0dc4919e82bf5eb2f0b",
+    "01/fixtures/contexts.json": "fbaf4284d8ca3a600177e0bdc887f2c10c2db15823a0cdcec88ae4835825c802"
+  },
+  "expected": {
+    "complete": "candidate",
+    "excluded": "unsuitable",
+    "missing": "unknown",
+    "explicit-null": "unknown",
+    "explicit-false": "unsuitable",
+    "wrong-type": "invalid-input"
+  },
+  "scope": "Own Rego policy repair only, native engine unchanged"
+}

@@ -1,0 +1,48 @@
+{
+  "scenarioId": "SELECTION-02-a",
+  "library": "example",
+  "options": [
+    {
+      "key": "CH",
+      "country": "Schweiz",
+      "dialCode": "+41",
+      "label": "Schweiz (+41)"
+    },
+    {
+      "key": "DE",
+      "country": "Deutschland",
+      "dialCode": "+49",
+      "label": "Deutschland (+49)"
+    },
+    {
+      "key": "FR",
+      "country": "Frankreich",
+      "dialCode": "+33",
+      "label": "Frankreich (+33)"
+    }
+  ],
+  "facts": {
+    "fixedValuesRequired": true,
+    "queryEditingAllowed": true,
+    "filteringProviderAvailable": true,
+    "searchExplicitlyRequired": null,
+    "selectedLabelEditingAllowed": false
+  },
+  "orderingPolicy": {
+    "priorityKeys": [
+      "CH",
+      "DE",
+      "FR"
+    ],
+    "remaining": "numeric dialCode ascending, ties country key ascending",
+    "origin": "Supplied study/product preference; no geolocation inferred"
+  },
+  "source": {
+    "url": "https://raw.githubusercontent.com/google/libphonenumber/1ae0d623301b302f828628dfc368c983e8d27141/resources/PhoneNumberMetadata.xml",
+    "commit": "1ae0d623301b302f828628dfc368c983e8d27141",
+    "metadataSha256": "b6491939ddaeb9d585a34fe0f0ebd096e83c5ac9a1c5d6dddf38ba4b162b28ca",
+    "license": "Apache-2.0 upstream declaration; only selected fact pairs copied, labels are authored study fixtures",
+    "countryCountInStudy": 30,
+    "notCompleteWorldDataset": true
+  }
+}

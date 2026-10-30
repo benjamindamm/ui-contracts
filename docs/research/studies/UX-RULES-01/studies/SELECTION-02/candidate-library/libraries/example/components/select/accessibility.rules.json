@@ -1,0 +1,11 @@
+{
+  "format": "ui-contract-a11y-projection-draft",
+  "note": "Own binding rules, not an original WAI-ARIA schema.",
+  "instanceIdentity": "Replace instance-* placeholders with stable unique IDs per component instance.",
+  "label": "Visible label for control; placeholder never substitutes for it.",
+  "descriptions": "Reference only actually rendered nonempty hint/error IDs via aria-describedby.",
+  "invalid": "Set aria-invalid only for an actual host validation error.",
+  "nativeSemantics": "Use native select without custom role or tabindex; single selection, no multiple attribute. Native platform type-ahead is not a filtering/search-field guarantee.",
+  "enabled": "disabled equals !enabled",
+  "required": "Map to native required attribute; form validity is not proven by SCXML alone."
+}

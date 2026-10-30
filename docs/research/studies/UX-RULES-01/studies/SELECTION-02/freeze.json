@@ -1,0 +1,18 @@
+{
+  "stage": "before dispatch",
+  "createdAt": "2026-10-30T21:57:36.164480+00:00",
+  "libraryRevision": "2e7531d73f9a0e2e631b499dedee8f8fae3585212034d4264b6dd78918f5d2cb",
+  "files": {
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/PROTOCOL.md": "e7d9d47c34e135a7c681a5882c1fb2b45d8f2c2032b1fd49dfae8fa2272cbaf2",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/inputs/a.json": "f4277467277b9b25e5560d0768f13fa005cddef23e729893444c2888a0320a55",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/inputs/b.json": "90be2efbe2dd43ddd917deb787c8b9b770b7aaa34c0953a04992c8bbbd6372d7",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/library-manifest.json": "797abc17b3a4da6f1ac81e2d76b6038a269c7d81464c54d99f31c45ab2673300",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/review/criteria.json": "ebe6cc56be9c0afc43e6484a0669cc7bd10608197cc4dbe605774e082d40e3b8",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/tasks/a-prompt.txt": "0d644e0a880740446df327ec968063bbb4de33487ef7c7e0e3072e4776373137",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/tasks/a.json": "79650c3d67d0a3fb5f8d6461459e7eda1dc03a33e15b907d6934159c72ec6e96",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/tasks/b-prompt.txt": "6a5c3d7a06e28c4ba4a390f4c6912e5a46ed186bd8d92482503af0b54b0fd6d3",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/tasks/b.json": "74b8f3e268c9b40988828132018c789f2974aae2b19e5c0c54ad1719175c2d55",
+    "docs/ux/AUTOCOMPLETE.md": "0df7856dade17f8a6cf76b78a87fcd6e91aa601c4b2d951315aba117cb8834c6",
+    "skills/ui-contracts/references/roles/builder.md": "ab17dad12064bd1d3273549e17590b5ece25a575779ae36d7077a3c37f5b8d0a"
+  }
+}

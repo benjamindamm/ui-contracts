@@ -1,0 +1,263 @@
+{
+  "engine": "feelin",
+  "version": "8.2.0",
+  "scope": "FEEL interpreter only; XML schema probe is separate, no full DMN engine claim",
+  "calls": [
+    {
+      "id": "complete",
+      "case": "T01",
+      "kind": "raw-predicate",
+      "input": {
+        "existingEntriesOnly": true,
+        "singleSelection": true
+      },
+      "expression": "existingEntriesOnly and singleSelection",
+      "value": true,
+      "warnings": []
+    },
+    {
+      "id": "complete",
+      "case": "T01",
+      "kind": "explicit-policy",
+      "input": {
+        "existingEntriesOnly": true,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\"",
+      "value": "candidate",
+      "warnings": []
+    },
+    {
+      "id": "complete",
+      "case": "T01",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": true,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "candidate",
+      "warnings": []
+    },
+    {
+      "id": "excluded",
+      "case": "T02",
+      "kind": "raw-predicate",
+      "input": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "expression": "existingEntriesOnly and singleSelection",
+      "value": false,
+      "warnings": []
+    },
+    {
+      "id": "excluded",
+      "case": "T02",
+      "kind": "explicit-policy",
+      "input": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\"",
+      "value": "unsuitable",
+      "warnings": []
+    },
+    {
+      "id": "excluded",
+      "case": "T02",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "unsuitable",
+      "warnings": []
+    },
+    {
+      "id": "missing",
+      "case": "T03",
+      "kind": "raw-predicate",
+      "input": {
+        "singleSelection": true
+      },
+      "expression": "existingEntriesOnly and singleSelection",
+      "value": null,
+      "warnings": [
+        {
+          "type": "NO_VARIABLE_FOUND",
+          "message": "Variable 'existingEntriesOnly' not found",
+          "details": {
+            "template": "Variable 'existingEntriesOnly' not found",
+            "values": {}
+          },
+          "position": {
+            "from": 0,
+            "to": 19
+          }
+        }
+      ]
+    },
+    {
+      "id": "missing",
+      "case": "T03",
+      "kind": "explicit-policy",
+      "input": {
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\"",
+      "value": "unknown",
+      "warnings": [
+        {
+          "type": "NO_VARIABLE_FOUND",
+          "message": "Variable 'existingEntriesOnly' not found",
+          "details": {
+            "template": "Variable 'existingEntriesOnly' not found",
+            "values": {}
+          },
+          "position": {
+            "from": 3,
+            "to": 22
+          }
+        }
+      ]
+    },
+    {
+      "id": "missing",
+      "case": "T03",
+      "kind": "typed-policy",
+      "input": {
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "unknown",
+      "warnings": [
+        {
+          "type": "NO_VARIABLE_FOUND",
+          "message": "Variable 'existingEntriesOnly' not found",
+          "details": {
+            "template": "Variable 'existingEntriesOnly' not found",
+            "values": {}
+          },
+          "position": {
+            "from": 3,
+            "to": 22
+          }
+        }
+      ]
+    },
+    {
+      "id": "explicit-null",
+      "case": "T04",
+      "kind": "raw-predicate",
+      "input": {
+        "existingEntriesOnly": null,
+        "singleSelection": true
+      },
+      "expression": "existingEntriesOnly and singleSelection",
+      "value": null,
+      "warnings": []
+    },
+    {
+      "id": "explicit-null",
+      "case": "T04",
+      "kind": "explicit-policy",
+      "input": {
+        "existingEntriesOnly": null,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\"",
+      "value": "unknown",
+      "warnings": []
+    },
+    {
+      "id": "explicit-null",
+      "case": "T04",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": null,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "unknown",
+      "warnings": []
+    },
+    {
+      "id": "explicit-false",
+      "case": "T04",
+      "kind": "raw-predicate",
+      "input": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "expression": "existingEntriesOnly and singleSelection",
+      "value": false,
+      "warnings": []
+    },
+    {
+      "id": "explicit-false",
+      "case": "T04",
+      "kind": "explicit-policy",
+      "input": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\"",
+      "value": "unsuitable",
+      "warnings": []
+    },
+    {
+      "id": "explicit-false",
+      "case": "T04",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "unsuitable",
+      "warnings": []
+    },
+    {
+      "id": "wrong-type",
+      "case": "T04",
+      "kind": "raw-predicate",
+      "input": {
+        "existingEntriesOnly": "true",
+        "singleSelection": true
+      },
+      "expression": "existingEntriesOnly and singleSelection",
+      "value": null,
+      "warnings": []
+    },
+    {
+      "id": "wrong-type",
+      "case": "T04",
+      "kind": "explicit-policy",
+      "input": {
+        "existingEntriesOnly": "true",
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\"",
+      "value": "unsuitable",
+      "warnings": []
+    },
+    {
+      "id": "wrong-type",
+      "case": "T04",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": "true",
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "invalid-input",
+      "warnings": []
+    },
+    {
+      "id": "invalid-syntax",
+      "error": "Error: Unrecognized token <then> in <ParenthesizedExpression>"
+    }
+  ]
+}

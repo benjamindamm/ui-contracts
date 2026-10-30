@@ -1,0 +1,15 @@
+{
+  "phase": "before agent input freeze",
+  "issues": [
+    {
+      "id": "SEL-P01",
+      "cause": "Own SCXML draft reused enabled as both data ID and state ID; original XML Schema rejected duplicate xs:ID.",
+      "repair": "Rename state to interactive, preserve enabled data variable; refresh derived capability source hashes and rerun unchanged checks."
+    },
+    {
+      "id": "SEL-P02",
+      "cause": "Own behavior harness asserted parent events before SCION asynchronous dispatch.",
+      "repair": "Wait for the expected native events with a bounded failure timeout rather than one event-loop turn; assertions unchanged."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "strategy": "invalid",
+    "tripleCount": 10,
+    "encodingExpectationMet": true,
+    "parsedConflictTerm": "http://www.w3.org/ns/odrl/2/invalid",
+    "evaluationOutcome": null,
+    "nativeResolverOrConflictEvaluationExecuted": false
+  },
+  {
+    "strategy": "perm",
+    "tripleCount": 10,
+    "encodingExpectationMet": true,
+    "parsedConflictTerm": "http://www.w3.org/ns/odrl/2/perm",
+    "evaluationOutcome": null,
+    "nativeResolverOrConflictEvaluationExecuted": false
+  },
+  {
+    "strategy": "prohibit",
+    "tripleCount": 10,
+    "encodingExpectationMet": true,
+    "parsedConflictTerm": "http://www.w3.org/ns/odrl/2/prohibit",
+    "evaluationOutcome": null,
+    "nativeResolverOrConflictEvaluationExecuted": false
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "node": {
+    "args": [
+      "node",
+      "--version"
+    ],
+    "exitCode": 0,
+    "stdout": "v24.13.1\n",
+    "stderr": ""
+  },
+  "opa": {
+    "args": [
+      "/tmp/ui-contracts-ux-rules-runtime/opa",
+      "version"
+    ],
+    "exitCode": 0,
+    "stdout": "Version: 1.21.2\nBuild Commit: 3f7474e6b3c631821d8aac25ca444f7e75a56483\nBuild Timestamp: 2026-10-12T13:42:18Z\nBuild Hostname: \nGo Version: go1.27.2\nPlatform: darwin/arm64\nRego Version: v1\nWebAssembly: available\n",
+    "stderr": ""
+  },
+  "opaSha256": "e358121f0d96a41103499d878184e493cc5ab10956f98e835089b9de0ac2de62",
+  "packages": {
+    "pyshacl": "0.30.1",
+    "rdflib": "7.6.0",
+    "lxml": "6.0.2"
+  },
+  "pipFreeze": {
+    "args": [
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/01/.venv/bin/python",
+      "-m",
+      "pip",
+      "freeze"
+    ],
+    "exitCode": 0,
+    "stdout": "html5rdf==1.2.1\nimportlib_metadata==8.7.1\nisodate==0.7.2\nlxml==6.0.2\nowlrl==7.6.2\npackaging==26.3\nprettytable==3.16.0\npyparsing==3.3.3\npyshacl==0.30.1\nrdflib==7.6.0\nwcwidth==0.9.4\nzipp==3.23.1\n",
+    "stderr": ""
+  }
+}

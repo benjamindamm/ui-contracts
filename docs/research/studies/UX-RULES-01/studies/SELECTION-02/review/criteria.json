@@ -1,0 +1,26 @@
+{
+  "stage": "before dispatch",
+  "expectedPreferred": {
+    "a": "Select",
+    "b": "SelectWithSearch"
+  },
+  "checks": [
+    "defined choice matches fixed-choice intent and project preference",
+    "decision precedes UI (self report and file times only)",
+    "actual control architecture agrees with choice",
+    "all 3/30 supplied keys, stable order, CA and US distinct",
+    "only supplied enabled keys commit; no validator-only membership boundary",
+    "separate search cannot edit committed label/value",
+    "unknown filter yields no commit; Escape retains old selection",
+    "keyboard focus/navigation/selection/scroll obey projection",
+    "Input string events and leading zero preserved",
+    "all required and no stale success",
+    "local only and no invented country values"
+  ],
+  "limitations": [
+    "one builder per condition",
+    "coordinator review, not independent blind reviewer",
+    "changed policy and candidate set; no causal isolation from SELECTION-01",
+    "address free-text autocomplete is not implemented or validated"
+  ]
+}

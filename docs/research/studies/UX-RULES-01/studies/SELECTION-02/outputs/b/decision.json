@@ -1,0 +1,37 @@
+{
+  "scenarioId": "SELECTION-02-b",
+  "choice": "SelectWithSearch",
+  "personalFields": "Input",
+  "contextFacts": {
+    "optionCount": 30,
+    "searchExplicitlyRequired": null,
+    "searchRequiredAbove": 15,
+    "fixedValuesRequired": true,
+    "queryEditingAllowed": true,
+    "filteringProviderAvailable": true,
+    "selectedLabelEditingAllowed": false
+  },
+  "evaluation": {
+    "searchNeed": "required",
+    "Select": "incompatible-search",
+    "SelectWithSearch": "eligible",
+    "Autocomplete": "incompatible-editing"
+  },
+  "reasons": [
+    "30 > 15 requires search under this project policy, not a universal UX threshold.",
+    "SelectWithSearch preserves fixed supplied keys and order, and separates temporary query from noneditable selected label.",
+    "Implement a local case-insensitive substring provider over label and key.",
+    "Autocomplete exposes editable selected label and is incompatible."
+  ],
+  "sources": [
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/tasks/b.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/inputs/b.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/selection-policy.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/selection-policy.dmn",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/ux.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/ux.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/autocomplete/ux.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/ux.json"
+  ],
+  "recordedBeforeUI": true
+}

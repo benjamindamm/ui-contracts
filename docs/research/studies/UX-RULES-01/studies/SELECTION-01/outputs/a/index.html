@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Persönliche Angaben</title><link rel="stylesheet" href="styles.css"><script src="form.js" defer></script></head>
+<body><main><h1>Persönliche Angaben</h1><p>Alle Felder sind erforderlich. Ihre Angaben werden nur lokal geprüft.</p>
+<form id="personal-form">
+<div data-component="Input"><label for="givenName" data-part="label">Vorname</label><input id="givenName" name="givenName" data-part="control" type="text" autocomplete="given-name" required><p id="givenName-error" data-part="error" hidden></p></div>
+<div data-component="Input"><label for="familyName" data-part="label">Nachname</label><input id="familyName" name="familyName" data-part="control" type="text" autocomplete="family-name" required><p id="familyName-error" data-part="error" hidden></p></div>
+<div data-component="Input"><label for="email" data-part="label">E-Mail</label><input id="email" name="email" data-part="control" type="email" autocomplete="email" required><p id="email-error" data-part="error" hidden></p></div>
+<div data-component="Select"><label for="country" data-part="label">Land und Vorwahl</label><select id="country" name="country" data-part="control" required aria-describedby="country-hint"><option value="">Bitte wählen</option><option value="CH">Schweiz (+41)</option><option value="DE">Deutschland (+49)</option><option value="FR">Frankreich (+33)</option></select><p id="country-hint" data-part="hint">Wählen Sie das Land Ihrer Rufnummer.</p><p id="country-error" data-part="error" hidden></p></div>
+<div data-component="Input"><label for="nationalNumber" data-part="label">Rufnummer</label><input id="nationalNumber" name="nationalNumber" data-part="control" type="tel" autocomplete="tel-national" required aria-describedby="nationalNumber-hint"><p id="nationalNumber-hint" data-part="hint">Nationale Rufnummer. Die Vorwahl wählen Sie separat. Keine internationale Nummernprüfung.</p><p id="nationalNumber-error" data-part="error" hidden></p></div>
+<button type="submit">Angaben prüfen</button><p id="form-status" role="status" aria-live="polite"></p>
+</form><noscript>Bitte aktivieren Sie JavaScript für die lokale Prüfung. Es werden keine Angaben versendet.</noscript></main></body></html>

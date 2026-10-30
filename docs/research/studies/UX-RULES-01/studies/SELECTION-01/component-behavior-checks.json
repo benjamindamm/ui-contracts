@@ -1,0 +1,71 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "checks": [
+    {
+      "id": "Select preserves supplied order and duplicate calling-code labels do not merge keys",
+      "passed": true
+    },
+    {
+      "id": "Select accepts existing key",
+      "passed": true
+    },
+    {
+      "id": "Select rejects arbitrary key",
+      "passed": true
+    },
+    {
+      "id": "Select rejects disabled option",
+      "passed": true
+    },
+    {
+      "id": "Select rejects duplicate keys as a whole update",
+      "passed": true
+    },
+    {
+      "id": "Disabled Select ignores user changes",
+      "passed": true
+    },
+    {
+      "id": "Disabled Select permits controlled host update",
+      "passed": true
+    },
+    {
+      "id": "Removed selected option clears selection",
+      "passed": true
+    },
+    {
+      "id": "Required selection is not cleared by user action",
+      "passed": true
+    },
+    {
+      "id": "Input preserves leading zeros and spaces",
+      "passed": true
+    },
+    {
+      "id": "ReadOnly Input ignores user text",
+      "passed": true
+    },
+    {
+      "id": "ReadOnly Input accepts Unicode host update",
+      "passed": true
+    },
+    {
+      "id": "Input rejects numeric value instead of coercing",
+      "passed": true
+    },
+    {
+      "id": "Disabled Input ignores user changes",
+      "passed": true
+    },
+    {
+      "id": "Select emits options-change invalidation event",
+      "passed": true
+    },
+    {
+      "id": "Input emits original string value",
+      "passed": true
+    }
+  ],
+  "scope": "Native SCXML behavior only; no browser/AX qualification"
+}

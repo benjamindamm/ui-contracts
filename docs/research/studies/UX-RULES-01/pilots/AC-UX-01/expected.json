@@ -1,0 +1,60 @@
+{
+  "scope": "Predeclared pilot outcomes, not UX truth or independent blind review",
+  "cases": [
+    {
+      "id": "existing-single",
+      "context": "contexts/existing-single.json",
+      "expected": "compatible"
+    },
+    {
+      "id": "create-new",
+      "context": "contexts/create-new.json",
+      "expected": "incompatible"
+    },
+    {
+      "id": "select-many",
+      "context": "contexts/select-many.json",
+      "expected": "incompatible"
+    },
+    {
+      "id": "labels-unfamiliar",
+      "context": "contexts/labels-unfamiliar.json",
+      "expected": "compatible-with-guidance"
+    },
+    {
+      "id": "missing-creation",
+      "context": "contexts/missing-creation.json",
+      "expected": "undetermined"
+    },
+    {
+      "id": "null-creation",
+      "context": "contexts/null-creation.json",
+      "expected": "undetermined"
+    },
+    {
+      "id": "guidance-unknown",
+      "context": "contexts/guidance-unknown.json",
+      "expected": "compatible-guidance-unknown"
+    },
+    {
+      "id": "wrong-bool-type",
+      "context": "contexts/wrong-bool-type.json",
+      "expected": "invalid-input"
+    },
+    {
+      "id": "wrong-cardinality",
+      "context": "contexts/wrong-cardinality.json",
+      "expected": "invalid-input"
+    },
+    {
+      "id": "labels-wrong-type",
+      "context": "contexts/labels-wrong-type.json",
+      "expected": "invalid-input"
+    },
+    {
+      "id": "scoped-exception",
+      "context": "contexts/scoped-exception.json",
+      "expected": "compatible"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "outputs/b-repair-01/FONT-LICENSE.txt": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+    "outputs/b-repair-01/REPORT.md": "6f00019bc7f8ef334476926695ed1c0d973176de1969cb4eea19c15a08babf88",
+    "outputs/b-repair-01/TRACE.json": "49f147a902b2084f415d246959a5d8974fa728624b0eea3e51d2a5109b4c90e7",
+    "outputs/b-repair-01/decision.json": "647bf8587ec021c9cadd337cbfd1873387f2278dac297668c0f6688f86a19dd6",
+    "outputs/b-repair-01/form.js": "d828bb3b1ec3fd12e72a8e4ff4e7ec037ed9db5ff6ba93fa727c9b595465ae66",
+    "outputs/b-repair-01/form.ts": "6ffb985bfd26d615a8584759251cf03e5a41463b127e4940eb3b13b2289425bb",
+    "outputs/b-repair-01/index.html": "c933e011731ef20bfb8a115ad4f9b6c1489f7ebd99fb7668919c870913361b23",
+    "outputs/b-repair-01/styles.css": "964190a25e67bee2c7377128f213d9c01c765d39f3b5d43dd440380051d56c2f"
+  },
+  "firstFilesUnchanged": true,
+  "copiedBytesMatchFirst": {
+    "index.html": true,
+    "styles.css": true,
+    "decision.json": true
+  },
+  "sameBuilderContext": true,
+  "issue": "SEL2-B01"
+}

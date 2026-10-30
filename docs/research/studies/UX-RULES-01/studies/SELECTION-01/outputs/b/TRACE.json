@@ -1,0 +1,41 @@
+{
+  "scenarioId": "SELECTION-01-b",
+  "status": "ready",
+  "release": false,
+  "decisionBeforeUI": true,
+  "components": {
+    "country": "Autocomplete",
+    "givenName": "Input",
+    "familyName": "Input",
+    "email": "Input",
+    "nationalNumber": "Input"
+  },
+  "checks": {
+    "uniqueStaticIds": true,
+    "compiledJsPresent": true,
+    "fourInputComponents": true,
+    "declaredCombobox": true,
+    "noRemoteUrlsInDeliveredHtmlCssJs": true
+  },
+  "policyEvaluation": {
+    "reason": "required-search-with-fixed-commit",
+    "searchNeed": "required",
+    "choice": "Autocomplete",
+    "Select": "incompatible-search",
+    "Autocomplete": "eligible"
+  },
+  "limitations": [
+    "No browser or assistive technology run",
+    "Synchronous local derived implementation, not full SCXML runtime",
+    "Inter fallback if not locally installed"
+  ],
+  "sha256": {
+    "decision.json": "b7fccf8c65dbfa2ec13e1fbc224014d16998ff093f8f688ae9d82d33baab595b",
+    "index.html": "2a1cbadb6622102202946d52f4c4681d76056107c462ca025a1e7b30f919392e",
+    "form.ts": "b290c3344d7838902f728ffaa7ed390ae62ccfd60dbdb1366e9e63dd58adce60",
+    "form.js": "a90cbe5e79450d0bb49dae9b9b53187fb65b7c6e1296f4b02aaaa6c31db23b47",
+    "styles.css": "be2d73e3204b33fdde321231fb482be07edbb066066586e3e8d55409fb0d4201",
+    "REPORT.md": "41cd23f31063156aa27e7365d043df02aa3dca8dd13997648665df5f216977c9",
+    "policy-evaluation.json": "1859c6027015bfb892fffbe55de44dbcd7d771b9be2e2d14bc9da667440e41b8"
+  }
+}

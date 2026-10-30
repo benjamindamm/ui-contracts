@@ -1,0 +1,7 @@
+{
+  "kind": "own-probe-harness-error",
+  "phase": "exploratory before freeze",
+  "cause": "Invalid FEEL syntax deliberately raises SyntaxError; initial harness did not catch this negative case and exited before serializing results.",
+  "repair": "Catch negative-case exception and retain it as an expected observation; no policy/expectation relaxation.",
+  "initialProcessExitCode": 1
+}

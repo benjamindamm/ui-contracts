@@ -1,0 +1,22 @@
+{
+  "stage": "frozen before builder dispatch",
+  "expectedPreferred": {
+    "a": "Select",
+    "b": "Autocomplete"
+  },
+  "hardEligibility": "In A both defined choice components can fit; Select preference is distinct from hard validity. In B search requirement excludes plain Select.",
+  "checks": [
+    "decision-before-build reported and decision.json preserved",
+    "choice matches frozen project policy or explicit documented deviation classified",
+    "actual DOM/behavior implements claimed component",
+    "exact provided options, no fabricated keys",
+    "fixed committed key membership, no arbitrary country text",
+    "large list actually filters",
+    "country order preserved, priority explicit, remaining numeric and stable tie key",
+    "unique country keys even shared dialCode",
+    "Input-based personal fields and string phone number",
+    "visible names, IDs and bounded keyboard/ARIA checks",
+    "local only, no network submission",
+    "original independent outputs retained"
+  ]
+}

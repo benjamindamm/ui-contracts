@@ -20,3 +20,15 @@ Das Register dient auch dem künftigen Vergleich über Modelle hinweg. AC-R01 un
 [RD-001 · Gestufte Erzeugung mit prüfbaren Übergaben](decisions/RD-001-STAGED-GENERATION.md), beschlossen am 29. Oktober 2026: Komplexität über Teilverträge und explizite Komposition beherrschen; Erzeugung in persistierte Zwischenstände gliedern und unabhängige Prüfung mit begrenzten Reparaturrunden verbinden. Ziel ist zuverlässigere Arbeit auch mit weniger leistungsfähigen Modellen, keine bereits belegte Verbesserung.
 
 Das [Pilotprotokoll](protocols/STAGED-GENERATION-PILOT.md) sieht zuerst dieselbe eingefrorene Autocomplete-Definition, zwei Erzeugungen je Kontroll-/Stufenarm und eine gemeinsame Prüfpolicy vor. Modellkonfiguration, Budgets, Helper und vollständige Messabdeckung müssen vor Ausführung festgelegt werden. Eine komplexere Komponente folgt erst danach. Der Pilot ist geplant, nicht gestartet; historische Läufe und Forschungszähler bleiben unverändert.
+
+## UX-RULES-01 · Formales UX-Regelmodell
+
+[Neuer Forschungsstrang ab 30. Oktober 2026](studies/UX-RULES-01/README.md): Regeln pro Komponente, eindeutige Bibliotheks-/Revisions-/Contractbindung und formale Semantik statt Prosa in YAML. Erstvergleich, zusätzlicher Survey und zwei praktische Teilblöcke dokumentiert; eigener Rego-Fehler erhalten und separat korrigiert. Zwölf gemeinsame Fälle noch nicht vollständig abgedeckt; keine Formatentscheidung. Aufgaben und Zähler bleiben getrennt von den historischen Studien.
+
+UX-RULES-01-Folgeblock: [native DMN-/Regelzusammenspielproben](studies/UX-RULES-01/runs/03/README.md) und [bedingter Auswahlvorschlag](studies/UX-RULES-01/RECOMMENDATION.md) vorhanden; keine produktive Migration oder vollständige SBVR-Ausführung.
+
+[AC-UX-01 · erster komponentengebundener UX-Pilot](studies/UX-RULES-01/pilots/AC-UX-01/README.md): drei Regeln, native DMN-Zeilennachverfolgung, 43/43 Checks; keine Agentenstudie und keine Veränderung der ursprünglichen Reproduktionsläufe.
+
+## Auswahl von Komponenten
+
+[SELECTION-01](studies/UX-RULES-01/studies/SELECTION-01/README.md) belegt die Anwendung einer gesetzten Auswahlpolicy in zwei Fällen; zwei Implementierungsfehler sind erhalten und separat repariert. [SELECTION-02](studies/UX-RULES-01/studies/SELECTION-02/README.md) ergänzt auf Nutzerhinweis Select mit Suche. Beide Studien bleiben getrennt; gute Policyanwendung ist kein Nachweis optimaler UX.

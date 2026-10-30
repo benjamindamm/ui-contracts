@@ -1,0 +1,15 @@
+{
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "packages": {
+    "jsonschema": "4.25.1",
+    "lxml": "6.0.2"
+  },
+  "javaVersion": "openjdk version \"25.0.2\" 2026-01-20\nOpenJDK Runtime Environment Homebrew (build 25.0.2)\nOpenJDK 64-Bit Server VM Homebrew (build 25.0.2, mixed mode, sharing)\n",
+  "classSha256": "abf1d0851ea5949e7c45a0685c85777d7b5ff94f71ad86246f5fe494b2518dfd",
+  "classSourceSha256": "7fcd39d3cd8cd2b9e74820897496d2655984caa6295b3a52c8d9ab2c820574f2",
+  "inheritedJarManifest": {
+    "path": "../../runs/03/results/runtime.json",
+    "sha256": "17c986e512c34e5614f5f794bf077a5b044e60f0ab7b3a49a1a7b2c3db341fea"
+  },
+  "factTruthOrExceptionAuthorityVerified": false
+}

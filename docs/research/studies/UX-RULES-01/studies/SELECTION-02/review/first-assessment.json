@@ -1,0 +1,17 @@
+{
+  "recordedAt": "2026-10-30T22:00:00.896640+00:00",
+  "stage": "before repair request",
+  "primaryChoice": {
+    "a": "Select",
+    "b": "SelectWithSearch",
+    "bothMatchFrozenPolicy": true
+  },
+  "observedIssue": {
+    "id": "SEL2-B01",
+    "expected": "Clicking Schlie\u00dfen closes dialog and restores trigger focus",
+    "actual": "Pointerdown search focusout sees transient body focus, closes popup before close button can receive click; focus remains BODY. Reproduced twice with captured event trace.",
+    "evidence": "browser-first.json operations.closecheck and focusTrace",
+    "cause": "focusout callback reads document.activeElement during intermediate focus transfer; fails to consider relatedTarget inside popup"
+  },
+  "scope": "bounded coordinator browser observations; no full conformance"
+}

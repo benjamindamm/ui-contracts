@@ -1,0 +1,98 @@
+{
+  "scenarioId": "SELECTION-02-b",
+  "revision": "repair-01",
+  "issue": "SEL2-B01",
+  "status": "ready-for-coordinator-browser-check",
+  "change": "Replace queued activeElement focusout check with synchronous relatedTarget containment boundary check",
+  "sourceDelivery": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b",
+  "unchangedCopiedFiles": {
+    "index.html": true,
+    "styles.css": true,
+    "decision.json": true,
+    "FONT-LICENSE.txt": true
+  },
+  "checks": [
+    {
+      "name": "TypeScript strict compilation",
+      "tool": "tools/validation/node_modules/typescript/bin/tsc",
+      "args": "--target ES2020 --lib ES2020,DOM --strict",
+      "exitCode": 0
+    },
+    {
+      "name": "Compiled JavaScript readback",
+      "result": "relatedTarget containment guard present"
+    },
+    {
+      "name": "Unchanged copied artifacts SHA-256 comparison",
+      "result": "all equal"
+    }
+  ],
+  "notExecuted": [
+    "browser interaction verification",
+    "screenreader verification"
+  ],
+  "reportedEvidence": {
+    "source": "coordinator message",
+    "finding": "pointerdown country-close then search focusout with relatedTarget country-close; queued activeElement check prematurely closed picker"
+  },
+  "artifacts": [
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b-repair-01/index.html",
+      "sha256": "c933e011731ef20bfb8a115ad4f9b6c1489f7ebd99fb7668919c870913361b23"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b-repair-01/styles.css",
+      "sha256": "964190a25e67bee2c7377128f213d9c01c765d39f3b5d43dd440380051d56c2f"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b-repair-01/decision.json",
+      "sha256": "647bf8587ec021c9cadd337cbfd1873387f2278dac297668c0f6688f86a19dd6"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b-repair-01/form.ts",
+      "sha256": "6ffb985bfd26d615a8584759251cf03e5a41463b127e4940eb3b13b2289425bb"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b-repair-01/form.js",
+      "sha256": "d828bb3b1ec3fd12e72a8e4ff4e7ec037ed9db5ff6ba93fa727c9b595465ae66"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b-repair-01/FONT-LICENSE.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b-repair-01/REPORT.md",
+      "sha256": "6f00019bc7f8ef334476926695ed1c0d973176de1969cb4eea19c15a08babf88"
+    }
+  ],
+  "originalArtifactHashes": [
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b/index.html",
+      "sha256": "c933e011731ef20bfb8a115ad4f9b6c1489f7ebd99fb7668919c870913361b23"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b/styles.css",
+      "sha256": "964190a25e67bee2c7377128f213d9c01c765d39f3b5d43dd440380051d56c2f"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b/decision.json",
+      "sha256": "647bf8587ec021c9cadd337cbfd1873387f2278dac297668c0f6688f86a19dd6"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b/form.ts",
+      "sha256": "802787d337935d09c541606d82820dcb73e6f11bcc8c88ee27cb4cefc5bb2414"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b/form.js",
+      "sha256": "ba0e39ca66de23e0eacad81a983fa58af9024625a5a24f5cfbab37b4b29ac06c"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b/REPORT.md",
+      "sha256": "b3dcf89a60008e360f3271f9d2e93362384e895695b3c7d2529f087f623b960d"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b/TRACE.json",
+      "sha256": "d283ee19bd759fac2a3bcade1d55afb041a17899adbea12c70af1724b2e9746b"
+    }
+  ]
+}

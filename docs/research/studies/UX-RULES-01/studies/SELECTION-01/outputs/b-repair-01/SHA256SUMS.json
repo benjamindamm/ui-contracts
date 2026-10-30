@@ -1,0 +1,14 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "All repair files except this self-referential manifest",
+  "files": {
+    "REPORT.md": "650e9d2bee3929ef4e523b02629ad114df37cad7d8aaa007a657c0f6ed1cfc94",
+    "TRACE.json": "c7ddf1a7a99614f58ab1836a8bec80db4f3d9f13432ec83bebbdbf749f7a3e38",
+    "decision.json": "b7fccf8c65dbfa2ec13e1fbc224014d16998ff093f8f688ae9d82d33baab595b",
+    "form.js": "d237d69c308aa567510aadffa9b5fb83663f385efe273c82e261f203fb226681",
+    "form.ts": "aa95abebccd4c6d2efec429fc3ffada72abe49880b27141ada148e1ac5985afe",
+    "index.html": "2a1cbadb6622102202946d52f4c4681d76056107c462ca025a1e7b30f919392e",
+    "policy-evaluation.json": "1859c6027015bfb892fffbe55de44dbcd7d771b9be2e2d14bc9da667440e41b8",
+    "styles.css": "be2d73e3204b33fdde321231fb482be07edbb066066586e3e8d55409fb0d4201"
+  }
+}

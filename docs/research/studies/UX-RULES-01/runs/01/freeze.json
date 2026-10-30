@@ -1,0 +1,28 @@
+{
+  "phase": "after disclosed exploratory preparation, before measurement block; not a blind preregistration",
+  "files": {
+    "diagnostics/feel-initial.json": "2ba4d3dad70f0a80bcfcba4eecadcc01f15f261a1a14c10687b66310f982381f",
+    "fixtures/bindings.json": "3f5488e83357ef9553c070343be76279ab69157f5ea838a5f01c089f6b480051",
+    "fixtures/contexts.json": "fbaf4284d8ca3a600177e0bdc887f2c10c2db15823a0cdcec88ae4835825c802",
+    "fixtures/eligibility.dmn": "b038022ea7d40eac023228ef4646ad8c2f2fa38d3afc3de196864ce1c7f1d882",
+    "fixtures/eligibility.feel": "a9bc9dc99bf5c9fb7455714021be13743e0c4b2f4eb07dc65c1e7e317f1d297b",
+    "fixtures/policy.rego": "feb400fbe0ef0a3f5c65881a4718e3733cd4b601fe9355458932bf767b0c8350",
+    "fixtures/shapes.ttl": "1f65cb520b3dd6b876e2dbc6fbfde0b8e38ce3de715cfee2edacf1295db5fc3f",
+    "fixtures/typed-eligibility.feel": "996a2847b430e641f607a6d81a8a8f2ccc7b20e01d1964248ab89cd8f94b08d6",
+    "fixtures/warning.ttl": "a4ba0b8f9bdfbbcb416e8e51f168fe69a544708cde4b7358fde9ee7b7c3b5a6e",
+    "package-lock.json": "381ea726849d4b70f03f41630a63dbc894f54091fcbb291b51c2afc3bbae0b1d",
+    "package.json": "2a9cee7ed526beffff36f0ae228ccd2e0ff57d63503c8c3142333ca236a37673",
+    "preflight-issue.json": "035c9bc8deb2709e76bbcc125fb76df83852ad8e2923f1a2537c3f2a5ede37cc",
+    "probe.py": "c8fa072a96b371eb3aa4b3bd881fc2af12f3d56f8ef06f732627c4fab35c7ff9",
+    "probe_feel.mjs": "b8bc5b0aea5a8b90a447ec527b7830b066c2f89dbfa0d40ed101dfc9b22f67a8",
+    "schema-downloads.json": "6b1cdcc238088247c62892a6320012dea31fed818210a92f36f7bc1a37b69a2a",
+    "schemas/DC.xsd": "9f57b8e99b00163a65dfaf5de2a3e3ea4be041a1bb23228044c50693334d59e6",
+    "schemas/DI.xsd": "73a5908426f12021da85c9cce74ae70db5ddac1ebe9c9d28d8495f34bea60f07",
+    "schemas/DMN15.xsd": "3ffdbc068815b0d94094a43c5c26b1fa1151e09d4a6a83ac637f347c637181f1",
+    "schemas/DMNDI15.xsd": "6e78fe9621d7360c96609523afef3da5ba4fee6a2ad53ec4cd12d126c7795c50",
+    "schemas/SBVR.xsd": "1bbaeeb052f67752ff744676495968b9b6ffe8f811a4a2a95d64674668edc0cb",
+    "schemas/XMI.xsd": "3fa8078d15cb6a6684454e470df8895b9c38a9cd2bc9bec4b707fb0697b91d08"
+  },
+  "studyCasesSha256": "19b66514ca9edec47dce2981a3b7d823c1ff297a0f7c1def9b87101c54b23635",
+  "baselineSha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82"
+}

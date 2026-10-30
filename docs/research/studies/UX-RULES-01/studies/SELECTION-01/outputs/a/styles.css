@@ -1,0 +1,25 @@
+/* Resolved libraries/example/tokens.json: Input and Select reference autocomplete values. Inter is optional locally; no downloaded font. */
+:root { --input-width:320px; --select-width:320px; --input-font-family:Inter, sans-serif; --select-font-family:Inter, sans-serif; --input-font-size:14px; --select-font-size:14px; --input-text:#172b4d; --select-text:#172b4d; --input-label-gap:8px; --select-label-gap:8px; --input-input-height:44px; --select-input-height:44px; --input-padding-inline:12px; --select-padding-inline:12px; --input-border-width:1px; --select-border-width:1px; --input-border:#cbd5e1; --select-border:#cbd5e1; --input-radius:8px; --select-radius:8px; --input-surface:#fff; --select-surface:#fff; --input-focus:#2563eb; --select-focus:#2563eb; --input-disabled:#94a3b8; --select-disabled:#94a3b8; --input-muted:#64748b; --select-muted:#64748b; --input-error:#b91c1c; --select-error:#b91c1c; }
+body { margin:0; background:#fff; color:#172b4d; font-family:Inter,sans-serif; line-height:1.5; }
+main { width: min(100% - 32px, 560px); margin:40px auto; }
+h1 { font-size:26px; line-height:1.2; }
+form { display:grid; gap:24px; }
+[data-component] { max-width:100%; }
+[data-component="Input"] { width:var(--input-width); font-family:var(--input-font-family); font-size:var(--input-font-size); color:var(--input-text); }
+[data-component="Select"] { width:var(--select-width); font-family:var(--select-font-family); font-size:var(--select-font-size); color:var(--select-text); }
+[data-component="Input"] [data-part="label"] { display:block; margin-bottom:var(--input-label-gap); }
+[data-component="Select"] [data-part="label"] { display:block; margin-bottom:var(--select-label-gap); }
+[data-component="Input"] [data-part="control"] { box-sizing:border-box; width:100%; height:var(--input-input-height); padding:0 var(--input-padding-inline); border:var(--input-border-width) solid var(--input-border); border-radius:var(--input-radius); background:var(--input-surface); color:var(--input-text); font:inherit; }
+[data-component="Select"] [data-part="control"] { box-sizing:border-box; width:100%; height:var(--select-input-height); padding:0 var(--select-padding-inline); border:var(--select-border-width) solid var(--select-border); border-radius:var(--select-radius); background:var(--select-surface); color:var(--select-text); font:inherit; }
+[data-component="Input"] [data-part="control"]:focus-visible { outline:2px solid var(--input-focus); outline-offset:2px; }
+[data-component="Select"] [data-part="control"]:focus-visible { outline:2px solid var(--select-focus); outline-offset:2px; }
+[data-component="Input"] [data-part="control"]:disabled { color:var(--input-disabled); }
+[data-component="Select"] [data-part="control"]:disabled { color:var(--select-disabled); }
+[data-component="Input"] [data-part="hint"] { color:var(--input-muted); }
+[data-component="Select"] [data-part="hint"] { color:var(--select-muted); }
+[data-component="Input"] [data-part="error"] { color:var(--input-error); }
+[data-component="Select"] [data-part="error"] { color:var(--select-error); }
+[data-part="hint"], [data-part="error"] { margin:8px 0 0; }
+button { width:fit-content; border:1px solid #2563eb; border-radius:8px; background:#2563eb; color:#fff; padding:12px 18px; font:inherit; cursor:pointer; }
+button:focus-visible { outline:2px solid #2563eb; outline-offset:3px; }
+#form-status:empty { display:none; }

@@ -1,0 +1,10 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="Input" initial="machine">
+<datamodel><data id="value" expr="''"/><data id="enabled" expr="true"/><data id="readOnly" expr="false"/></datamodel>
+<state id="machine" initial="interactive">
+ <transition event="SET_VALUE" cond="_event.data &amp;&amp; typeof _event.data.value==='string'"><assign location="value" expr="_event.data.value"/></transition>
+ <transition event="SET_READ_ONLY" cond="_event.data &amp;&amp; typeof _event.data.readOnly==='boolean'"><assign location="readOnly" expr="_event.data.readOnly"/></transition>
+ <transition event="SET_ENABLED" cond="_event.data &amp;&amp; _event.data.enabled===false" target="disabled"><assign location="enabled" expr="false"/></transition>
+ <transition event="SET_ENABLED" cond="_event.data &amp;&amp; _event.data.enabled===true" target="interactive"><assign location="enabled" expr="true"/></transition>
+ <state id="interactive"><transition event="USER_INPUT" cond="!readOnly &amp;&amp; _event.data &amp;&amp; typeof _event.data.value==='string' &amp;&amp; value!==_event.data.value"><assign location="value" expr="_event.data.value"/><send event="value-change" target="#_parent"><param name="value" expr="value"/></send></transition></state>
+ <state id="disabled"/>
+</state></scxml>

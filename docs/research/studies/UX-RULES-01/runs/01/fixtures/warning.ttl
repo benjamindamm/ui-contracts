@@ -1,0 +1,4 @@
+@prefix ex: <urn:uxprobe:> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+ex:Warning a sh:NodeShape ; sh:targetNode ex:context ; sh:severity sh:Warning ;
+ sh:class ex:RequiredButAbsent .

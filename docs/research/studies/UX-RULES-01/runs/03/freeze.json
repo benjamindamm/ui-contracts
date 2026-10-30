@@ -1,0 +1,24 @@
+{
+  "phase": "after exploratory bridge setup; before measurement",
+  "files": {
+    "DmnProbe.java": "77af690df4042407790c3b585481e77cd7790cd2858708a76ab62187dbc6f171",
+    "fixtures/component.rego": "3b6cbde25457d8d00171cd347b6862637a89e24b2437175e8e9f4531b669023d",
+    "fixtures/conflict-collect.dmn": "fcad8c10908bbb81f069801efa89cd0377d90e4bd794cc6ec38baf7308b68774",
+    "fixtures/conflict-first.dmn": "0f606492bcd5f99f81ea4130012d3b560405b2cb84e4590aed4bb7fce4fbc9e3",
+    "fixtures/conflict-unique.dmn": "b05086e4ad83813e422537ff2520b4311e6f96e424d309cedd63f6ae651b0f22",
+    "fixtures/eligibility.dmn": "4d8de091329ef1d8cd7eb120d46f03cafda980b6f3f49778bd8733a4d73f4a1f",
+    "fixtures/normative-contexts.json": "5da163254b3ef47bf0d2c5546c2d996c4241b703444b78797f03c9aa0c7fa35c",
+    "fixtures/normative.dmn": "b2e443ba2a676fabb581bb9bb2d765d16c4e086188c24606259927f35f5b6d77",
+    "fixtures/shared.rego": "4e0a1da0c0a03d96aeaab4fd2f0e4d53ef9f500655da4cf07cf67f64e819284a",
+    "fixtures/unrelated.rego": "66a2ba2b46faa5d46b3f4613502cc7e3a7e4b330f76446914241011e83686859",
+    "pom.xml": "5575ff98cc9b5481c18e5b4d1bdf7c286888f60fa0383bcbe3c0c680a2894144",
+    "preflight.json": "55723dc7f912ca90ec49d88fa19f96a918e16b8785d3fd345c1870ca26da94b9",
+    "probe.py": "d36b4a2d85964018b1fd0e40adb435da2c6901c9b95ccf32c53556505e871488"
+  },
+  "priorRefs": {
+    "baseline.json": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+    "runs/01/fixtures/contexts.json": "fbaf4284d8ca3a600177e0bdc887f2c10c2db15823a0cdcec88ae4835825c802",
+    "runs/01/fixtures/bindings.json": "3f5488e83357ef9553c070343be76279ab69157f5ea838a5f01c089f6b480051",
+    "runs/01/probe.py": "c8fa072a96b371eb3aa4b3bd881fc2af12f3d56f8ef06f732627c4fab35c7ff9"
+  }
+}

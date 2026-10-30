@@ -1,0 +1,18 @@
+{
+  "phase": "exploratory tool selection, not candidate capability testing",
+  "packageLookups": [
+    {
+      "name": "@bpmn-io/dmn-evaluator",
+      "result": "npm E404"
+    },
+    {
+      "name": "dmn-eval-js",
+      "result": "npm E404"
+    }
+  ],
+  "selected": {
+    "feelin": "8.2.0",
+    "role": "FEEL interpreter only; no full DMN engine substitution claim"
+  },
+  "remaining": "Select and pin a complete DMN model evaluator; package lookup failure does not imply none exists."
+}

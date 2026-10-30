@@ -1,0 +1,137 @@
+[
+  {
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "cem",
+      "path": "components/autocomplete/interface.json",
+      "kind": "json-pointer",
+      "anchor": "/modules/0/declarations/0/name",
+      "expected": "Autocomplete"
+    },
+    "observed": "bound"
+  },
+  {
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "visual",
+      "path": "tokens.json",
+      "kind": "json-pointer",
+      "anchor": "/autocomplete/fontFamily/$value",
+      "expected": "Inter"
+    },
+    "observed": "bound"
+  },
+  {
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "behavior",
+      "path": "components/autocomplete/behavior.scxml",
+      "kind": "scxml-state",
+      "anchor": "closed"
+    },
+    "observed": "bound"
+  },
+  {
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "accessibility",
+      "path": "components/autocomplete/accessibility.html",
+      "kind": "html-part",
+      "anchor": "input",
+      "expected": "combobox"
+    },
+    "observed": "bound"
+  },
+  {
+    "id": "other-library",
+    "input": {
+      "library": "other",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "cem",
+      "path": "components/autocomplete/interface.json",
+      "kind": "json-pointer",
+      "anchor": "/modules/0/declarations/0/name",
+      "expected": "Autocomplete"
+    },
+    "observed": "wrong-library"
+  },
+  {
+    "id": "other-component",
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Other",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "cem",
+      "path": "components/autocomplete/interface.json",
+      "kind": "json-pointer",
+      "anchor": "/modules/0/declarations/0/name",
+      "expected": "Autocomplete"
+    },
+    "observed": "wrong-component"
+  },
+  {
+    "id": "other-revision",
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "0000000000000000000000000000000000000000000000000000000000000000",
+      "id": "cem",
+      "path": "components/autocomplete/interface.json",
+      "kind": "json-pointer",
+      "anchor": "/modules/0/declarations/0/name",
+      "expected": "Autocomplete"
+    },
+    "observed": "wrong-revision"
+  },
+  {
+    "id": "missing-anchor",
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "cem",
+      "path": "components/autocomplete/interface.json",
+      "kind": "json-pointer",
+      "anchor": "/does/not/exist",
+      "expected": "Autocomplete"
+    },
+    "observed": "missing-anchor"
+  },
+  {
+    "id": "wrong-type",
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "cem",
+      "path": "components/autocomplete/interface.json",
+      "kind": "json-pointer",
+      "anchor": "/modules/0/declarations/0/name",
+      "expected": "WrongClass"
+    },
+    "observed": "wrong-anchor-value"
+  },
+  {
+    "id": "path-escape",
+    "input": {
+      "library": "example",
+      "component": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "id": "cem",
+      "path": "../outside.json",
+      "kind": "json-pointer",
+      "anchor": "/modules/0/declarations/0/name",
+      "expected": "Autocomplete"
+    },
+    "observed": "unsafe-path"
+  }
+]

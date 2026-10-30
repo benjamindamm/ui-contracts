@@ -1,0 +1,39 @@
+{
+  "status": "candidate-local-vocabulary-not-external-standard",
+  "revision": 1,
+  "componentIntent": {
+    "operation": "select",
+    "valueDomain": "existing-record",
+    "cardinality": "one",
+    "inputMethod": "typed-query"
+  },
+  "facts": {
+    "requiresNewEntries": {
+      "type": "boolean",
+      "meaning": "The task requires confirming a value not present in the available result records directly with this control. False means no such creation capability is required; it does not assert UI quality.",
+      "assessment": "Task requirement, declared by user/product author."
+    },
+    "requiredCardinality": {
+      "type": "enum",
+      "values": [
+        "one",
+        "many"
+      ],
+      "meaning": "Maximum number of records the user must be able to confirm together through this component instance.",
+      "assessment": "Task requirement, declared by user/product author."
+    },
+    "resultLabelsFamiliar": {
+      "type": "boolean",
+      "meaning": "The intended audience can recognize the presented result labels in this task context.",
+      "assessment": "Human review or user research; never inferred merely from nonempty label strings."
+    }
+  },
+  "missingAndNull": "Both evaluate unknown; the wrapper preserves distinct missing and explicit-null diagnostics. Wrong types stay raw and are evaluated invalid-input, never coerced.",
+  "notModelled": [
+    "Option count thresholds",
+    "Full UI selection/ranking",
+    "Automatic fact extraction",
+    "Novel value creation via an additional component",
+    "Full accessibility conformance"
+  ]
+}

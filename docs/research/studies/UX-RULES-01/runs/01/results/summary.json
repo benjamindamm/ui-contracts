@@ -1,0 +1,28 @@
+{
+  "overall": "OBSERVATIONS_WITH_UNMET_EXPECTATIONS",
+  "release": false,
+  "checks": 39,
+  "expectationsMet": 38,
+  "schemas": [
+    {
+      "candidate": "DMN",
+      "originalSchemaAccepts": true,
+      "errors": "",
+      "scope": "XML only; FEEL interpreter separate, no complete DMN engine"
+    },
+    {
+      "candidate": "SBVR",
+      "originalSchemaCompiled": true,
+      "scope": "Schema compilation only; no SBVR semantic evaluator selected"
+    }
+  ],
+  "coverage": "T01-T04 partial across native engines; T06 partial in Rego; T07-T10 own binding adapter. T05/T11/T12 not yet executed. No full DMN or SBVR semantic runtime.",
+  "frozenInputsUnchanged": true,
+  "sourceBinding": "example read-only baseline",
+  "notChecked": [
+    "UX validity of experimental eligibility assumptions",
+    "General semantic conformance",
+    "Agent forward testing",
+    "Engine licensing audit beyond supplied metadata"
+  ]
+}

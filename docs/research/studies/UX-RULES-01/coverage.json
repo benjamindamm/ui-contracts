@@ -1,0 +1,78 @@
+{
+  "scope": "Coverage map, not pass/fail rating of all candidate frameworks",
+  "commonCaseFile": "cases.json",
+  "allCandidatesAllCasesComplete": false,
+  "cases": [
+    {
+      "id": "T01",
+      "status": "native-partial",
+      "evidence": "FEEL/Rego/DMN eligibility complete synthetic facts; SHACL constraint result differs in role."
+    },
+    {
+      "id": "T02",
+      "status": "native-partial",
+      "evidence": "Explicit unsuitable outcome tested in FEEL/Rego/DMN."
+    },
+    {
+      "id": "T03",
+      "status": "native-partial",
+      "evidence": "Missing fact observed in all selected engines; own Rego guard repaired separately."
+    },
+    {
+      "id": "T04",
+      "status": "native-partial",
+      "evidence": "Missing/null/false/wrong-type observations preserved; explicit type guards compared."
+    },
+    {
+      "id": "T05",
+      "status": "native-partial",
+      "evidence": "Own requirement/recommendation aggregation tested in DMN and Rego; facts pre-assessed, not derived from actual user research."
+    },
+    {
+      "id": "T06",
+      "status": "native-partial",
+      "evidence": "Explicit scoped recommendation exception, mandatory condition retained; native DMN hit policies compared. No general conflict solver."
+    },
+    {
+      "id": "T07",
+      "status": "own-adapter-plus-native",
+      "evidence": "Four native Contract anchors checked by own gate before DMN eligibility; no native hash/URI resolver claim."
+    },
+    {
+      "id": "T08",
+      "status": "own-adapter-plus-native",
+      "evidence": "Wrong library/component in own binder and explicit native policy scope tested."
+    },
+    {
+      "id": "T09",
+      "status": "own-adapter-plus-native",
+      "evidence": "Changed source/hash and wrong revision rejected by own binder; native call blocked on stale revision."
+    },
+    {
+      "id": "T10",
+      "status": "own-adapter-only",
+      "evidence": "Wrong/missing anchors and unsupported bindings rejected by own adapter."
+    },
+    {
+      "id": "T11",
+      "status": "native-partial",
+      "evidence": "Explicit shared DMN Decision / Rego module plus local exception; not all library dependency cases."
+    },
+    {
+      "id": "T12",
+      "status": "file-loading-only",
+      "evidence": "Relevant files and bytes measured, invalid unrelated module not loaded. No agent behavior or full request context measured."
+    }
+  ],
+  "unmeasured": [
+    "Semantic SBVR execution",
+    "ODRL evaluator",
+    "Agent forward-test",
+    "General matched-rule trace outside the three pilot rules"
+  ],
+  "componentPilot": {
+    "path": "pilots/AC-UX-01/README.md",
+    "status": "43/43 bounded checks",
+    "nativeTrace": "Three actual component rules with native matched row -> own evidence profile mapping"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "dmnEngine": "org.camunda.bpm.extension.dmn.scala:dmn-engine:1.12.6",
+  "java": "openjdk version \"25.0.2\" 2026-01-20\nOpenJDK Runtime Environment Homebrew (build 25.0.2)\nOpenJDK 64-Bit Server VM Homebrew (build 25.0.2, mixed mode, sharing)\n",
+  "bridgeSha256": "77af690df4042407790c3b585481e77cd7790cd2858708a76ab62187dbc6f171",
+  "bridgeClassSha256": "026da565e4bf20d247587256df8defa9556a987ef95ce0a2eef8b1cbbe71789d",
+  "jars": [
+    {
+      "coordinatePath": "org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar",
+      "sha256": "38b551db67451db60628c96c3453f21783ec4929300f8ec2a377f61aa1381ff2",
+      "bytes": 261966
+    },
+    {
+      "coordinatePath": "org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar",
+      "sha256": "27cac300665d723d3930c38b7520f7a9d869555d0e402b67742de6e94e612dc0",
+      "bytes": 1048244
+    },
+    {
+      "coordinatePath": "org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+      "bytes": 5940741
+    },
+    {
+      "coordinatePath": "com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar",
+      "sha256": "ff3f37dad0f89c9cff494cb984edc122a3c282f063790949e825ae039dcad9d5",
+      "bytes": 332554
+    },
+    {
+      "coordinatePath": "com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar",
+      "sha256": "7ce9b8c285a04280374d739d7b799408b2cfa40cc3173960848aec9ee8450fed",
+      "bytes": 119359
+    },
+    {
+      "coordinatePath": "com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar",
+      "sha256": "bd93f278047bb533da70b42d2b21dc297d946bab86a4fe844c200b4db8d174b5",
+      "bytes": 85575
+    },
+    {
+      "coordinatePath": "com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar",
+      "sha256": "5724d6a0f27db90d45af884f4520bce581f29eebe21840d07cae22b670bb8ebb",
+      "bytes": 57348
+    },
+    {
+      "coordinatePath": "com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar",
+      "sha256": "8b45753f2233bea70f9d7f8d5406fc007eb264f98366246f36cb98508ed67e75",
+      "bytes": 553656
+    },
+    {
+      "coordinatePath": "com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar",
+      "sha256": "a9df136f2e926b37a838a5b4e2227343c3a755d15724b3a8350b4aea4b158945",
+      "bytes": 37899
+    },
+    {
+      "coordinatePath": "org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar",
+      "sha256": "38f8c7e4889c8fa531d75c67ee0b9439b34d4d607edf0ab6bdbc71241d42ae73",
+      "bytes": 247615
+    },
+    {
+      "coordinatePath": "org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar",
+      "sha256": "5662dfb995780898ccd5ce648768604c5d939aaa1bbf378232fc763d2aac5508",
+      "bytes": 170453
+    },
+    {
+      "coordinatePath": "org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar",
+      "sha256": "7e1446499b359675d8aabe6af2de86b85e72ae8a2a932c0b40d0e5ba57097439",
+      "bytes": 70255
+    },
+    {
+      "coordinatePath": "com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar",
+      "sha256": "7dcd7e53bec1f56c7ad278bd1ca0840bebcc595d61ce44d6a8439abb75b965b2",
+      "bytes": 1706404
+    },
+    {
+      "coordinatePath": "com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar",
+      "sha256": "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0",
+      "bytes": 84211
+    },
+    {
+      "coordinatePath": "com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar",
+      "sha256": "941ff029bcdb93e83d209ce516c1a7fb8bbac07d0a2fa122f5bf194b2cd7b4f4",
+      "bytes": 594171
+    }
+  ],
+  "opaSha256": "e358121f0d96a41103499d878184e493cc5ab10956f98e835089b9de0ac2de62",
+  "runtimeDownloadAndCompilation": "outside Git; Maven classpath resolver, pinned pom and plugin documented in README"
+}

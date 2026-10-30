@@ -1,0 +1,41 @@
+[
+  {
+    "library": "example",
+    "component": "ui-contracts:Autocomplete",
+    "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+    "id": "cem",
+    "path": "components/autocomplete/interface.json",
+    "kind": "json-pointer",
+    "anchor": "/modules/0/declarations/0/name",
+    "expected": "Autocomplete"
+  },
+  {
+    "library": "example",
+    "component": "ui-contracts:Autocomplete",
+    "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+    "id": "visual",
+    "path": "tokens.json",
+    "kind": "json-pointer",
+    "anchor": "/autocomplete/fontFamily/$value",
+    "expected": "Inter"
+  },
+  {
+    "library": "example",
+    "component": "ui-contracts:Autocomplete",
+    "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+    "id": "behavior",
+    "path": "components/autocomplete/behavior.scxml",
+    "kind": "scxml-state",
+    "anchor": "closed"
+  },
+  {
+    "library": "example",
+    "component": "ui-contracts:Autocomplete",
+    "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+    "id": "accessibility",
+    "path": "components/autocomplete/accessibility.html",
+    "kind": "html-part",
+    "anchor": "input",
+    "expected": "combobox"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "scope": "Independent strict TypeScript recompile with ES2020/DOM/DOM.Iterable",
+  "checks": [
+    {
+      "output": "a",
+      "arguments": [
+        "node",
+        "tools/validation/node_modules/typescript/bin/tsc",
+        "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/form.ts",
+        "--target",
+        "ES2020",
+        "--lib",
+        "ES2020,DOM,DOM.Iterable",
+        "--strict",
+        "--outDir",
+        "<temporary-directory>",
+        "--pretty",
+        "false"
+      ],
+      "exit": 0,
+      "diagnostics": "",
+      "jsMatchesDelivered": true
+    },
+    {
+      "output": "b",
+      "arguments": [
+        "node",
+        "tools/validation/node_modules/typescript/bin/tsc",
+        "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b/form.ts",
+        "--target",
+        "ES2020",
+        "--lib",
+        "ES2020,DOM,DOM.Iterable",
+        "--strict",
+        "--outDir",
+        "<temporary-directory>",
+        "--pretty",
+        "false"
+      ],
+      "exit": 0,
+      "diagnostics": "",
+      "jsMatchesDelivered": true
+    },
+    {
+      "output": "b-repair-01",
+      "arguments": [
+        "node",
+        "tools/validation/node_modules/typescript/bin/tsc",
+        "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/b-repair-01/form.ts",
+        "--target",
+        "ES2020",
+        "--lib",
+        "ES2020,DOM,DOM.Iterable",
+        "--strict",
+        "--outDir",
+        "<temporary-directory>",
+        "--pretty",
+        "false"
+      ],
+      "exit": 0,
+      "diagnostics": "",
+      "jsMatchesDelivered": true
+    }
+  ]
+}

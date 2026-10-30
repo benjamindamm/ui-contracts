@@ -1,0 +1,11 @@
+{
+  "format": "ui-contract-a11y-projection-draft",
+  "note": "Own binding rules, not an original WAI-ARIA schema.",
+  "instanceIdentity": "Replace instance-* placeholders with stable unique IDs per component instance.",
+  "label": "Visible label for control; placeholder never substitutes for it.",
+  "descriptions": "Reference only actually rendered nonempty hint/error IDs via aria-describedby.",
+  "invalid": "Set aria-invalid only for an actual host validation error.",
+  "nativeSemantics": "Use native input with declared inputType, autocompleteHint, required, disabled and readOnly mappings. type=tel does not validate international numbers.",
+  "enabled": "disabled equals !enabled",
+  "required": "Map to native required attribute; form validity is not proven by SCXML alone."
+}

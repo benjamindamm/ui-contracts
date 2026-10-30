@@ -1,0 +1,98 @@
+{
+  "capturedAt": "2026-10-30T21:58:53.005278+00:00",
+  "phase": "before central browser review; builder final messages seen",
+  "files": {
+    "outputs/a/Inter-Bold.woff2": "fa888127b6da015b65569f0351f3b5c391ad928904951f1c20e9f8462a8d95ea",
+    "outputs/a/Inter-Regular.woff2": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085",
+    "outputs/a/LICENSE.txt": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+    "outputs/a/REPORT.md": "c03266a0cca486c133f9d14920510e6d70f5cd26e66fc5e1469dd9236f92772f",
+    "outputs/a/TRACE.json": "3feff866a53a77c4f6a95c633c5bb2bcc803df53c2591b0590a788034f2b38a2",
+    "outputs/a/decision.json": "4f2da01c8c7f8a3c8e687d4931d0a4bd5e5664104727df7657fc5d090797cc44",
+    "outputs/a/form.js": "0ebe95adc1ad36bf44f28ff023aeaa1cf22f8a8c90ffc3cef4d37c52bfdf8234",
+    "outputs/a/form.ts": "d6a295e70bbb9a96dda5dd1d81dc41ae448e68e1f1407a285ba6d863b1b3265d",
+    "outputs/a/index.html": "058c0ad1a1a08f2cd5daaaf826d65398f9b8c911aa9260ed3991b5d1fc78cb01",
+    "outputs/a/styles.css": "410fc9137ce7027048102b5dbcc799ad8556f76c701ea70a5ae3f786348d047f",
+    "outputs/b/FONT-LICENSE.txt": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+    "outputs/b/REPORT.md": "b3dcf89a60008e360f3271f9d2e93362384e895695b3c7d2529f087f623b960d",
+    "outputs/b/TRACE.json": "d283ee19bd759fac2a3bcade1d55afb041a17899adbea12c70af1724b2e9746b",
+    "outputs/b/decision.json": "647bf8587ec021c9cadd337cbfd1873387f2278dac297668c0f6688f86a19dd6",
+    "outputs/b/form.js": "ba0e39ca66de23e0eacad81a983fa58af9024625a5a24f5cfbab37b4b29ac06c",
+    "outputs/b/form.ts": "802787d337935d09c541606d82820dcb73e6f11bcc8c88ee27cb4cefc5bb2414",
+    "outputs/b/index.html": "c933e011731ef20bfb8a115ad4f9b6c1489f7ebd99fb7668919c870913361b23",
+    "outputs/b/styles.css": "964190a25e67bee2c7377128f213d9c01c765d39f3b5d43dd440380051d56c2f"
+  },
+  "filesystemTimes": {
+    "outputs/a/Inter-Bold.woff2": {
+      "birth": 1793397485.7138753,
+      "modified": 1793397485.7141557
+    },
+    "outputs/a/Inter-Regular.woff2": {
+      "birth": 1793397485.713431,
+      "modified": 1793397485.7137563
+    },
+    "outputs/a/LICENSE.txt": {
+      "birth": 1793397485.7142649,
+      "modified": 1793397485.7145474
+    },
+    "outputs/a/REPORT.md": {
+      "birth": 1793397509.8597183,
+      "modified": 1793397509.8599758
+    },
+    "outputs/a/TRACE.json": {
+      "birth": 1793397509.8619921,
+      "modified": 1793397509.8621223
+    },
+    "outputs/a/decision.json": {
+      "birth": 1793397474.940425,
+      "modified": 1793397474.9405189
+    },
+    "outputs/a/form.js": {
+      "birth": 1793397494.9983954,
+      "modified": 1793397494.999384
+    },
+    "outputs/a/form.ts": {
+      "birth": 1793397494.5035677,
+      "modified": 1793397494.5062263
+    },
+    "outputs/a/index.html": {
+      "birth": 1793397485.7146184,
+      "modified": 1793397485.7146814
+    },
+    "outputs/a/styles.css": {
+      "birth": 1793397485.715055,
+      "modified": 1793397485.715108
+    },
+    "outputs/b/FONT-LICENSE.txt": {
+      "birth": 1793397521.5946376,
+      "modified": 1793397521.5948343
+    },
+    "outputs/b/REPORT.md": {
+      "birth": 1793397521.5974226,
+      "modified": 1793397521.5974853
+    },
+    "outputs/b/TRACE.json": {
+      "birth": 1793397521.5972087,
+      "modified": 1793397521.5973778
+    },
+    "outputs/b/decision.json": {
+      "birth": 1793397477.5787296,
+      "modified": 1793397477.578809
+    },
+    "outputs/b/form.js": {
+      "birth": 1793397500.610191,
+      "modified": 1793397521.5232673
+    },
+    "outputs/b/form.ts": {
+      "birth": 1793397497.6836238,
+      "modified": 1793397521.0124736
+    },
+    "outputs/b/index.html": {
+      "birth": 1793397497.6823716,
+      "modified": 1793397497.6824853
+    },
+    "outputs/b/styles.css": {
+      "birth": 1793397497.683111,
+      "modified": 1793397497.683176
+    }
+  }
+}

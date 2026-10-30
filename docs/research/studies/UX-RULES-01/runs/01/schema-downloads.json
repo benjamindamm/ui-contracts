@@ -1,0 +1,49 @@
+[
+  {
+    "path": "schemas/DMN15.xsd",
+    "url": "https://www.omg.org/spec/DMN/20230324/DMN15.xsd",
+    "finalUrl": "https://www.omg.org/spec/DMN/20230324/DMN15.xsd",
+    "sha256": "3ffdbc068815b0d94094a43c5c26b1fa1151e09d4a6a83ac637f347c637181f1",
+    "bytes": 25973,
+    "status": "downloaded-original"
+  },
+  {
+    "path": "schemas/DMNDI15.xsd",
+    "url": "https://www.omg.org/spec/DMN/20230324/DMNDI15.xsd",
+    "finalUrl": "https://www.omg.org/spec/DMN/20230324/DMNDI15.xsd",
+    "sha256": "6e78fe9621d7360c96609523afef3da5ba4fee6a2ad53ec4cd12d126c7795c50",
+    "bytes": 4813,
+    "status": "downloaded-original"
+  },
+  {
+    "path": "schemas/DI.xsd",
+    "url": "https://www.omg.org/spec/DMN/20230324/DI.xsd",
+    "finalUrl": "https://www.omg.org/spec/DMN/20230324/DI.xsd",
+    "sha256": "73a5908426f12021da85c9cce74ae70db5ddac1ebe9c9d28d8495f34bea60f07",
+    "bytes": 4958,
+    "status": "downloaded-original"
+  },
+  {
+    "path": "schemas/DC.xsd",
+    "url": "https://www.omg.org/spec/DMN/20230324/DC.xsd",
+    "finalUrl": "https://www.omg.org/spec/DMN/20230324/DC.xsd",
+    "sha256": "9f57b8e99b00163a65dfaf5de2a3e3ea4be041a1bb23228044c50693334d59e6",
+    "bytes": 6085,
+    "status": "downloaded-original"
+  },
+  {
+    "path": "schemas/SBVR.xsd",
+    "url": "https://www.omg.org/spec/SBVR/20190601/SBVR-XML-Schema.xsd",
+    "finalUrl": "https://www.omg.org/spec/SBVR/20190601/SBVR-XML-Schema.xsd",
+    "sha256": "1bbaeeb052f67752ff744676495968b9b6ffe8f811a4a2a95d64674668edc0cb",
+    "bytes": 295464,
+    "status": "downloaded-original"
+  },
+  {
+    "path": "schemas/XMI.xsd",
+    "url": "https://www.omg.org/spec/XMI/20110701/XMI.xsd",
+    "sha256": "3fa8078d15cb6a6684454e470df8895b9c38a9cd2bc9bec4b707fb0697b91d08",
+    "bytes": 4718,
+    "status": "downloaded-original"
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "tool": "BrowserOS neo MCP",
+  "repair": {
+    "logs": [],
+    "ok": true,
+    "value": {
+      "clickClose": {
+        "changed": false,
+        "page": 68,
+        "settled": false,
+        "value": {
+          "expanded": "false",
+          "focus": "country-trigger"
+        }
+      },
+      "commit": {
+        "changed": false,
+        "page": 68,
+        "settled": false,
+        "value": {
+          "expanded": "false",
+          "focus": "country-trigger",
+          "key": "IN"
+        }
+      },
+      "escape": {
+        "changed": false,
+        "page": 68,
+        "settled": false,
+        "value": {
+          "expanded": "false",
+          "focus": "country-trigger",
+          "key": "IN",
+          "query": ""
+        }
+      },
+      "internal": {
+        "changed": false,
+        "page": 68,
+        "settled": false,
+        "value": {
+          "expanded": "true",
+          "focus": "country-option-IN",
+          "key": ""
+        }
+      },
+      "tabInside": {
+        "changed": false,
+        "page": 68,
+        "settled": false,
+        "value": {
+          "expanded": "true",
+          "focus": "country-options"
+        }
+      },
+      "tabOutside": {
+        "changed": false,
+        "page": 68,
+        "settled": false,
+        "value": {
+          "expanded": "true",
+          "focus": "Schließen",
+          "key": "IN"
+        }
+      }
+    }
+  },
+  "tabLeave": {
+    "logs": [],
+    "ok": true,
+    "value": {
+      "changed": false,
+      "page": 68,
+      "settled": false,
+      "value": {
+        "expanded": "false",
+        "focus": "Angaben lokal prüfen",
+        "key": "IN"
+      }
+    }
+  },
+  "note": "The key tabOutside in the first operation actually reached the internal Schließen button; the separate third Tab is the real external focus transition."
+}

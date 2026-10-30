@@ -1,0 +1,13 @@
+{
+  "phase": "exploratory preparation before measurement freeze",
+  "issues": [
+    {
+      "id": "UXP-007",
+      "cause": "Own Draft7 metadata schema required fields that were omitted from properties while additionalProperties was false.",
+      "observation": "Candidate blocked before native call.",
+      "repair": "Declare those metadata properties and their types; retain strict unknown-field rejection."
+    }
+  ],
+  "dependencyChoice": "Pilot evaluator uses existing lxml/jsonschema environment and focused own anchor checks, not unrelated earlier pySHACL probe imports.",
+  "agentSubprocesses": "None; native Java process only."
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "arm": "a",
+    "args": [
+      "node",
+      "tools/validation/node_modules/typescript/bin/tsc",
+      "--target",
+      "ES2020",
+      "--lib",
+      "ES2020,DOM",
+      "--strict",
+      "--outDir",
+      "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmpnfph0dng",
+      "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/a/form.ts"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "",
+    "deliveredJsMatchesRecompiledTs": true
+  },
+  {
+    "arm": "b",
+    "args": [
+      "node",
+      "tools/validation/node_modules/typescript/bin/tsc",
+      "--target",
+      "ES2020",
+      "--lib",
+      "ES2020,DOM",
+      "--strict",
+      "--outDir",
+      "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmpc9oto684",
+      "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/b/form.ts"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "",
+    "deliveredJsMatchesRecompiledTs": true
+  },
+  {
+    "arm": "b-repair-01",
+    "args": [
+      "node",
+      "tools/validation/node_modules/typescript/bin/tsc",
+      "--target",
+      "ES2020",
+      "--lib",
+      "ES2020,DOM",
+      "--strict",
+      "--outDir",
+      "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmproczaj91",
+      "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/b-repair-01/form.ts"
+    ],
+    "exitCode": 2,
+    "stdout": "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/b-repair-01/form.ts(13,23): error TS2488: Type 'NodeListOf<HTMLInputElement>' must have a '[Symbol.iterator]()' method that returns an iterator.\n",
+    "stderr": "",
+    "deliveredJsMatchesRecompiledTs": true
+  }
+]

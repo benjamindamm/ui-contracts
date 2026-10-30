@@ -1,0 +1,1256 @@
+[
+  {
+    "id": "other-library",
+    "request": {
+      "library": "other",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      }
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "wrong-library",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "other-component",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Other",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      }
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "wrong-component",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "wrong-revision",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "0000000000000000000000000000000000000000000000000000000000000000",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      }
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "wrong-revision",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "missing-fact-provenance",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      }
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "fact-provenance-required:requiresNewEntries",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "unknown-fact",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "unknownFact": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "negative"
+          }
+        }
+      }
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "unknown-fact",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "exception-cannot-change-capability",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      },
+      "exceptions": [
+        {
+          "ruleId": "AC-UX-001",
+          "library": "example",
+          "componentId": "ui-contracts:Autocomplete",
+          "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+          "reviewer": "research-author",
+          "rationale": "Controlled research fixture: domain abbreviations will be explained in the surrounding workflow; not a real approved product exception."
+        }
+      ]
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "exception-cannot-waive-capability",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "exception-wrong-component",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      },
+      "exceptions": [
+        {
+          "ruleId": "AC-UX-003",
+          "library": "example",
+          "componentId": "ui-contracts:Other",
+          "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+          "reviewer": "research-author",
+          "rationale": "Controlled research fixture: domain abbreviations will be explained in the surrounding workflow; not a real approved product exception."
+        }
+      ]
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "exception-scope-mismatch",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "exception-unlisted-reviewer",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      },
+      "exceptions": [
+        {
+          "ruleId": "AC-UX-003",
+          "library": "example",
+          "componentId": "ui-contracts:Autocomplete",
+          "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+          "reviewer": "unlisted",
+          "rationale": "Controlled research fixture: domain abbreviations will be explained in the surrounding workflow; not a real approved product exception."
+        }
+      ]
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "exception-review-required",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "exception-without-rationale",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      },
+      "exceptions": [
+        {
+          "ruleId": "AC-UX-003",
+          "library": "example",
+          "componentId": "ui-contracts:Autocomplete",
+          "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+          "reviewer": "research-author",
+          "rationale": ""
+        }
+      ]
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "exception-review-required",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "duplicate-exception",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      },
+      "exceptions": [
+        {
+          "ruleId": "AC-UX-003",
+          "library": "example",
+          "componentId": "ui-contracts:Autocomplete",
+          "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+          "reviewer": "research-author",
+          "rationale": "Controlled research fixture: domain abbreviations will be explained in the surrounding workflow; not a real approved product exception."
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "library": "example",
+          "componentId": "ui-contracts:Autocomplete",
+          "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+          "reviewer": "research-author",
+          "rationale": "Controlled research fixture: domain abbreviations will be explained in the surrounding workflow; not a real approved product exception."
+        }
+      ]
+    },
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "duplicate-exceptions",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "strength-logic-mismatch",
+    "request": null,
+    "modifiedProfile": {
+      "format": "ui-contracts-ux-pilot/0.1",
+      "status": "research-candidate-not-production",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "componentPath": "components/autocomplete/component.json",
+      "definition": {
+        "manifest": "../../../baseline.json",
+        "sha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+        "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336"
+      },
+      "logic": {
+        "file": "autocomplete-ux.dmn",
+        "sha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+        "decision": "assessment"
+      },
+      "vocabulary": {
+        "file": "context-vocabulary.json",
+        "sha256": "cc6174bd395da9c56fbad0d88291cd21128443e7796278c7ae70aac429cffc5f"
+      },
+      "sources": {
+        "file": "sources.json",
+        "sha256": "6bf4b707add06e41eae1a642e49c47b96a321b506ea4c28e316f0fd02a8044da"
+      },
+      "rules": [
+        {
+          "id": "AC-UX-001",
+          "decisionId": "creation",
+          "strength": "recommendation",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring this control to confirm newly created values.",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            "capability-text",
+            "interface",
+            "behavior"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-002",
+          "decisionId": "cardinality",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring simultaneous multiple committed selections.",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            "interface"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-003",
+          "decisionId": "labels",
+          "strength": "recommendation",
+          "status": "candidate",
+          "purpose": "Prefer result labels familiar to the intended users.",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            "USWDS-familiar-labels",
+            "accessibility"
+          ],
+          "exceptionsAllowed": true
+        }
+      ],
+      "nativeRows": {
+        "AC-UX-001_compatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "compatible"
+        },
+        "AC-UX-001_incompatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "incompatible"
+        },
+        "AC-UX-001_unknown": {
+          "ruleId": "AC-UX-001",
+          "outcome": "unknown"
+        },
+        "AC-UX-001_invalid_input": {
+          "ruleId": "AC-UX-001",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-002_compatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "compatible"
+        },
+        "AC-UX-002_incompatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "incompatible"
+        },
+        "AC-UX-002_unknown": {
+          "ruleId": "AC-UX-002",
+          "outcome": "unknown"
+        },
+        "AC-UX-002_invalid_input": {
+          "ruleId": "AC-UX-002",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-003_satisfied": {
+          "ruleId": "AC-UX-003",
+          "outcome": "satisfied"
+        },
+        "AC-UX-003_needs_review": {
+          "ruleId": "AC-UX-003",
+          "outcome": "needs-review"
+        },
+        "AC-UX-003_excepted": {
+          "ruleId": "AC-UX-003",
+          "outcome": "excepted"
+        },
+        "AC-UX-003_unknown": {
+          "ruleId": "AC-UX-003",
+          "outcome": "unknown"
+        },
+        "AC-UX-003_invalid_input": {
+          "ruleId": "AC-UX-003",
+          "outcome": "invalid-input"
+        }
+      },
+      "exceptionReviewers": [
+        "research-author"
+      ],
+      "exceptionPolicy": "Only AC-UX-003 can be excepted, with matching library/component/revision and nonempty rationale/reviewer. Declaration is not cryptographic authorization or verified research truth."
+    },
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "profile-schema:{'id': 'AC-UX-001', 'decisionId': 'creation', 'strength': 'recommendation', 'status': 'candidate', 'purpose': 'Exclude tasks requiring this control to confirm newly created values.', 'rationale': 'The existing definition commits a key from available results; free text is not a newly committed result.', 'evidence': ['capability-text', 'interface', 'behavior'], 'exceptionsAllowed': False} is not valid under any of the given schemas",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "changed-model",
+    "request": null,
+    "modifiedProfile": {
+      "format": "ui-contracts-ux-pilot/0.1",
+      "status": "research-candidate-not-production",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "componentPath": "components/autocomplete/component.json",
+      "definition": {
+        "manifest": "../../../baseline.json",
+        "sha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+        "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336"
+      },
+      "logic": {
+        "file": "autocomplete-ux.dmn",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "decision": "assessment"
+      },
+      "vocabulary": {
+        "file": "context-vocabulary.json",
+        "sha256": "cc6174bd395da9c56fbad0d88291cd21128443e7796278c7ae70aac429cffc5f"
+      },
+      "sources": {
+        "file": "sources.json",
+        "sha256": "6bf4b707add06e41eae1a642e49c47b96a321b506ea4c28e316f0fd02a8044da"
+      },
+      "rules": [
+        {
+          "id": "AC-UX-001",
+          "decisionId": "creation",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring this control to confirm newly created values.",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            "capability-text",
+            "interface",
+            "behavior"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-002",
+          "decisionId": "cardinality",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring simultaneous multiple committed selections.",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            "interface"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-003",
+          "decisionId": "labels",
+          "strength": "recommendation",
+          "status": "candidate",
+          "purpose": "Prefer result labels familiar to the intended users.",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            "USWDS-familiar-labels",
+            "accessibility"
+          ],
+          "exceptionsAllowed": true
+        }
+      ],
+      "nativeRows": {
+        "AC-UX-001_compatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "compatible"
+        },
+        "AC-UX-001_incompatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "incompatible"
+        },
+        "AC-UX-001_unknown": {
+          "ruleId": "AC-UX-001",
+          "outcome": "unknown"
+        },
+        "AC-UX-001_invalid_input": {
+          "ruleId": "AC-UX-001",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-002_compatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "compatible"
+        },
+        "AC-UX-002_incompatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "incompatible"
+        },
+        "AC-UX-002_unknown": {
+          "ruleId": "AC-UX-002",
+          "outcome": "unknown"
+        },
+        "AC-UX-002_invalid_input": {
+          "ruleId": "AC-UX-002",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-003_satisfied": {
+          "ruleId": "AC-UX-003",
+          "outcome": "satisfied"
+        },
+        "AC-UX-003_needs_review": {
+          "ruleId": "AC-UX-003",
+          "outcome": "needs-review"
+        },
+        "AC-UX-003_excepted": {
+          "ruleId": "AC-UX-003",
+          "outcome": "excepted"
+        },
+        "AC-UX-003_unknown": {
+          "ruleId": "AC-UX-003",
+          "outcome": "unknown"
+        },
+        "AC-UX-003_invalid_input": {
+          "ruleId": "AC-UX-003",
+          "outcome": "invalid-input"
+        }
+      },
+      "exceptionReviewers": [
+        "research-author"
+      ],
+      "exceptionPolicy": "Only AC-UX-003 can be excepted, with matching library/component/revision and nonempty rationale/reviewer. Declaration is not cryptographic authorization or verified research truth."
+    },
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "profile-artifact-stale:autocomplete-ux.dmn",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "duplicate-rule-id",
+    "request": null,
+    "modifiedProfile": {
+      "format": "ui-contracts-ux-pilot/0.1",
+      "status": "research-candidate-not-production",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "componentPath": "components/autocomplete/component.json",
+      "definition": {
+        "manifest": "../../../baseline.json",
+        "sha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+        "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336"
+      },
+      "logic": {
+        "file": "autocomplete-ux.dmn",
+        "sha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+        "decision": "assessment"
+      },
+      "vocabulary": {
+        "file": "context-vocabulary.json",
+        "sha256": "cc6174bd395da9c56fbad0d88291cd21128443e7796278c7ae70aac429cffc5f"
+      },
+      "sources": {
+        "file": "sources.json",
+        "sha256": "6bf4b707add06e41eae1a642e49c47b96a321b506ea4c28e316f0fd02a8044da"
+      },
+      "rules": [
+        {
+          "id": "AC-UX-001",
+          "decisionId": "creation",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring this control to confirm newly created values.",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            "capability-text",
+            "interface",
+            "behavior"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-001",
+          "decisionId": "creation",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring this control to confirm newly created values.",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            "capability-text",
+            "interface",
+            "behavior"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-003",
+          "decisionId": "labels",
+          "strength": "recommendation",
+          "status": "candidate",
+          "purpose": "Prefer result labels familiar to the intended users.",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            "USWDS-familiar-labels",
+            "accessibility"
+          ],
+          "exceptionsAllowed": true
+        }
+      ],
+      "nativeRows": {
+        "AC-UX-001_compatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "compatible"
+        },
+        "AC-UX-001_incompatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "incompatible"
+        },
+        "AC-UX-001_unknown": {
+          "ruleId": "AC-UX-001",
+          "outcome": "unknown"
+        },
+        "AC-UX-001_invalid_input": {
+          "ruleId": "AC-UX-001",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-002_compatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "compatible"
+        },
+        "AC-UX-002_incompatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "incompatible"
+        },
+        "AC-UX-002_unknown": {
+          "ruleId": "AC-UX-002",
+          "outcome": "unknown"
+        },
+        "AC-UX-002_invalid_input": {
+          "ruleId": "AC-UX-002",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-003_satisfied": {
+          "ruleId": "AC-UX-003",
+          "outcome": "satisfied"
+        },
+        "AC-UX-003_needs_review": {
+          "ruleId": "AC-UX-003",
+          "outcome": "needs-review"
+        },
+        "AC-UX-003_excepted": {
+          "ruleId": "AC-UX-003",
+          "outcome": "excepted"
+        },
+        "AC-UX-003_unknown": {
+          "ruleId": "AC-UX-003",
+          "outcome": "unknown"
+        },
+        "AC-UX-003_invalid_input": {
+          "ruleId": "AC-UX-003",
+          "outcome": "invalid-input"
+        }
+      },
+      "exceptionReviewers": [
+        "research-author"
+      ],
+      "exceptionPolicy": "Only AC-UX-003 can be excepted, with matching library/component/revision and nonempty rationale/reviewer. Declaration is not cryptographic authorization or verified research truth."
+    },
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "duplicate-rule-identity",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "incomplete-row-map",
+    "request": null,
+    "modifiedProfile": {
+      "format": "ui-contracts-ux-pilot/0.1",
+      "status": "research-candidate-not-production",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "componentPath": "components/autocomplete/component.json",
+      "definition": {
+        "manifest": "../../../baseline.json",
+        "sha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+        "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336"
+      },
+      "logic": {
+        "file": "autocomplete-ux.dmn",
+        "sha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+        "decision": "assessment"
+      },
+      "vocabulary": {
+        "file": "context-vocabulary.json",
+        "sha256": "cc6174bd395da9c56fbad0d88291cd21128443e7796278c7ae70aac429cffc5f"
+      },
+      "sources": {
+        "file": "sources.json",
+        "sha256": "6bf4b707add06e41eae1a642e49c47b96a321b506ea4c28e316f0fd02a8044da"
+      },
+      "rules": [
+        {
+          "id": "AC-UX-001",
+          "decisionId": "creation",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring this control to confirm newly created values.",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            "capability-text",
+            "interface",
+            "behavior"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-002",
+          "decisionId": "cardinality",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring simultaneous multiple committed selections.",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            "interface"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-003",
+          "decisionId": "labels",
+          "strength": "recommendation",
+          "status": "candidate",
+          "purpose": "Prefer result labels familiar to the intended users.",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            "USWDS-familiar-labels",
+            "accessibility"
+          ],
+          "exceptionsAllowed": true
+        }
+      ],
+      "nativeRows": {
+        "AC-UX-001_incompatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "incompatible"
+        },
+        "AC-UX-001_unknown": {
+          "ruleId": "AC-UX-001",
+          "outcome": "unknown"
+        },
+        "AC-UX-001_invalid_input": {
+          "ruleId": "AC-UX-001",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-002_compatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "compatible"
+        },
+        "AC-UX-002_incompatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "incompatible"
+        },
+        "AC-UX-002_unknown": {
+          "ruleId": "AC-UX-002",
+          "outcome": "unknown"
+        },
+        "AC-UX-002_invalid_input": {
+          "ruleId": "AC-UX-002",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-003_satisfied": {
+          "ruleId": "AC-UX-003",
+          "outcome": "satisfied"
+        },
+        "AC-UX-003_needs_review": {
+          "ruleId": "AC-UX-003",
+          "outcome": "needs-review"
+        },
+        "AC-UX-003_excepted": {
+          "ruleId": "AC-UX-003",
+          "outcome": "excepted"
+        },
+        "AC-UX-003_unknown": {
+          "ruleId": "AC-UX-003",
+          "outcome": "unknown"
+        },
+        "AC-UX-003_invalid_input": {
+          "ruleId": "AC-UX-003",
+          "outcome": "invalid-input"
+        }
+      },
+      "exceptionReviewers": [
+        "research-author"
+      ],
+      "exceptionPolicy": "Only AC-UX-003 can be excepted, with matching library/component/revision and nonempty rationale/reviewer. Declaration is not cryptographic authorization or verified research truth."
+    },
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "native-row-map-incomplete",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "missing-anchor",
+    "request": null,
+    "modifiedProfile": {
+      "format": "ui-contracts-ux-pilot/0.1",
+      "status": "research-candidate-not-production",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "componentPath": "components/autocomplete/component.json",
+      "definition": {
+        "manifest": "../../../baseline.json",
+        "sha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+        "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336"
+      },
+      "logic": {
+        "file": "autocomplete-ux.dmn",
+        "sha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+        "decision": "assessment"
+      },
+      "vocabulary": {
+        "file": "context-vocabulary.json",
+        "sha256": "cc6174bd395da9c56fbad0d88291cd21128443e7796278c7ae70aac429cffc5f"
+      },
+      "sources": {
+        "file": "negative/missing-anchor.json",
+        "sha256": "6baacc8f9e223f5531dafdcec1eefb156d433afbfad6363419725bedfad828b1"
+      },
+      "rules": [
+        {
+          "id": "AC-UX-001",
+          "decisionId": "creation",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring this control to confirm newly created values.",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            "capability-text",
+            "interface",
+            "behavior"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-002",
+          "decisionId": "cardinality",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring simultaneous multiple committed selections.",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            "interface"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-003",
+          "decisionId": "labels",
+          "strength": "recommendation",
+          "status": "candidate",
+          "purpose": "Prefer result labels familiar to the intended users.",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            "USWDS-familiar-labels",
+            "accessibility"
+          ],
+          "exceptionsAllowed": true
+        }
+      ],
+      "nativeRows": {
+        "AC-UX-001_compatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "compatible"
+        },
+        "AC-UX-001_incompatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "incompatible"
+        },
+        "AC-UX-001_unknown": {
+          "ruleId": "AC-UX-001",
+          "outcome": "unknown"
+        },
+        "AC-UX-001_invalid_input": {
+          "ruleId": "AC-UX-001",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-002_compatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "compatible"
+        },
+        "AC-UX-002_incompatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "incompatible"
+        },
+        "AC-UX-002_unknown": {
+          "ruleId": "AC-UX-002",
+          "outcome": "unknown"
+        },
+        "AC-UX-002_invalid_input": {
+          "ruleId": "AC-UX-002",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-003_satisfied": {
+          "ruleId": "AC-UX-003",
+          "outcome": "satisfied"
+        },
+        "AC-UX-003_needs_review": {
+          "ruleId": "AC-UX-003",
+          "outcome": "needs-review"
+        },
+        "AC-UX-003_excepted": {
+          "ruleId": "AC-UX-003",
+          "outcome": "excepted"
+        },
+        "AC-UX-003_unknown": {
+          "ruleId": "AC-UX-003",
+          "outcome": "unknown"
+        },
+        "AC-UX-003_invalid_input": {
+          "ruleId": "AC-UX-003",
+          "outcome": "invalid-input"
+        }
+      },
+      "exceptionReviewers": [
+        "research-author"
+      ],
+      "exceptionPolicy": "Only AC-UX-003 can be excepted, with matching library/component/revision and nonempty rationale/reviewer. Declaration is not cryptographic authorization or verified research truth."
+    },
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "'noSuchMember'",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "wrong-anchor-type",
+    "request": null,
+    "modifiedProfile": {
+      "format": "ui-contracts-ux-pilot/0.1",
+      "status": "research-candidate-not-production",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "componentPath": "components/autocomplete/component.json",
+      "definition": {
+        "manifest": "../../../baseline.json",
+        "sha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+        "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336"
+      },
+      "logic": {
+        "file": "autocomplete-ux.dmn",
+        "sha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+        "decision": "assessment"
+      },
+      "vocabulary": {
+        "file": "context-vocabulary.json",
+        "sha256": "cc6174bd395da9c56fbad0d88291cd21128443e7796278c7ae70aac429cffc5f"
+      },
+      "sources": {
+        "file": "negative/wrong-anchor-type.json",
+        "sha256": "8c1ab2322ea3d2709ca2fc7be1854556a73489739deeffae1e85d73e08ff5b92"
+      },
+      "rules": [
+        {
+          "id": "AC-UX-001",
+          "decisionId": "creation",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring this control to confirm newly created values.",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            "capability-text",
+            "interface",
+            "behavior"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-002",
+          "decisionId": "cardinality",
+          "strength": "capability-constraint",
+          "status": "candidate",
+          "purpose": "Exclude tasks requiring simultaneous multiple committed selections.",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            "interface"
+          ],
+          "exceptionsAllowed": false
+        },
+        {
+          "id": "AC-UX-003",
+          "decisionId": "labels",
+          "strength": "recommendation",
+          "status": "candidate",
+          "purpose": "Prefer result labels familiar to the intended users.",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            "USWDS-familiar-labels",
+            "accessibility"
+          ],
+          "exceptionsAllowed": true
+        }
+      ],
+      "nativeRows": {
+        "AC-UX-001_compatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "compatible"
+        },
+        "AC-UX-001_incompatible": {
+          "ruleId": "AC-UX-001",
+          "outcome": "incompatible"
+        },
+        "AC-UX-001_unknown": {
+          "ruleId": "AC-UX-001",
+          "outcome": "unknown"
+        },
+        "AC-UX-001_invalid_input": {
+          "ruleId": "AC-UX-001",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-002_compatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "compatible"
+        },
+        "AC-UX-002_incompatible": {
+          "ruleId": "AC-UX-002",
+          "outcome": "incompatible"
+        },
+        "AC-UX-002_unknown": {
+          "ruleId": "AC-UX-002",
+          "outcome": "unknown"
+        },
+        "AC-UX-002_invalid_input": {
+          "ruleId": "AC-UX-002",
+          "outcome": "invalid-input"
+        },
+        "AC-UX-003_satisfied": {
+          "ruleId": "AC-UX-003",
+          "outcome": "satisfied"
+        },
+        "AC-UX-003_needs_review": {
+          "ruleId": "AC-UX-003",
+          "outcome": "needs-review"
+        },
+        "AC-UX-003_excepted": {
+          "ruleId": "AC-UX-003",
+          "outcome": "excepted"
+        },
+        "AC-UX-003_unknown": {
+          "ruleId": "AC-UX-003",
+          "outcome": "unknown"
+        },
+        "AC-UX-003_invalid_input": {
+          "ruleId": "AC-UX-003",
+          "outcome": "invalid-input"
+        }
+      },
+      "exceptionReviewers": [
+        "research-author"
+      ],
+      "exceptionPolicy": "Only AC-UX-003 can be excepted, with matching library/component/revision and nonempty rationale/reviewer. Declaration is not cryptographic authorization or verified research truth."
+    },
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "anchor-value-mismatch:interface",
+      "nativeCalled": false
+    }
+  },
+  {
+    "id": "mutated-definition-copy",
+    "request": null,
+    "modifiedProfile": null,
+    "result": {
+      "overall": "BLOCKED",
+      "release": false,
+      "diagnostic": "source-stale:tokens.json",
+      "nativeCalled": false
+    }
+  }
+]

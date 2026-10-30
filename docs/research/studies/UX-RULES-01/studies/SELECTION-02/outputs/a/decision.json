@@ -1,0 +1,31 @@
+{
+  "task": "SELECTION-02-a",
+  "chosenComponent": "Select",
+  "decisionBeforeUI": true,
+  "facts": {
+    "optionCount": 3,
+    "searchRequiredAbove": 15,
+    "searchExplicitlyRequired": null,
+    "searchNeed": "not-required",
+    "fixedValuesRequired": true,
+    "selectedLabelEditingAllowed": false,
+    "queryEditingAllowed": true,
+    "filteringProviderAvailable": true
+  },
+  "candidates": {
+    "Select": "eligible; native fixed single choice, preserves order",
+    "SelectWithSearch": "eligible but unnecessary; policy prefers eligible Select first",
+    "Autocomplete": "incompatible-editing: valueDisplayEditable=true"
+  },
+  "reason": "simple-fixed-choice",
+  "sources": [
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/tasks/a.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/inputs/a.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/selection-policy.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/selection-policy.dmn",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/ux.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/ux.json",
+    "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/autocomplete/ux.json"
+  ],
+  "interpretation": "Threshold is this project policy only. Actual supplied options CH, DE, FR count as three; metadata countryCountInStudy is not optionCount. Original Select contract takes precedence over stale note about undefined searchable variant."
+}

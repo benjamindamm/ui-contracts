@@ -1,0 +1,77 @@
+{
+  "id": "SELECTION-01",
+  "status": "completed-bounded-with-preserved-first-defects-and-separate-repair",
+  "date": "2026-10-30",
+  "arms": {
+    "a": {
+      "options": 3,
+      "status": "first-delivery-reviewed",
+      "agentName": "/root/selection_builder_a",
+      "forkTurns": "none",
+      "dispatchObservedAt": "2026-10-30T21:46:46.510771+00:00",
+      "promptFile": "tasks/a-prompt.txt",
+      "sentPromptSha256": "e381d25ae242c460027d906f12506104dadfdff8ed084d8024a67bfbe3de7108",
+      "promptSerialization": "File contains one terminal newline; dispatched message omits that newline.",
+      "modelIdentity": "not exposed by collaboration tool response",
+      "completedObservedAt": "2026-10-30T21:54:00.675365+00:00",
+      "choice": "Select",
+      "hardEligibilityMet": true,
+      "projectPreferenceMet": true
+    },
+    "b": {
+      "options": 30,
+      "status": "first-delivery-reviewed",
+      "agentName": "/root/selection_builder_b",
+      "forkTurns": "none",
+      "dispatchObservedAt": "2026-10-30T21:46:46.510771+00:00",
+      "promptFile": "tasks/b-prompt.txt",
+      "sentPromptSha256": "63e31d791bed3b134ec0df3996ea103cead4eb496b89cae52ae9cc52cc72b472",
+      "promptSerialization": "File contains one terminal newline; dispatched message omits that newline.",
+      "modelIdentity": "not exposed by collaboration tool response",
+      "completedObservedAt": "2026-10-30T21:54:00.675365+00:00",
+      "choice": "Autocomplete",
+      "hardEligibilityMet": true,
+      "projectPreferenceMet": true
+    }
+  },
+  "model": "inherited default; identity not independently verified",
+  "freshContextsRequested": true,
+  "fullProcessIsolationProven": false,
+  "interruptions": [],
+  "release": false,
+  "repair": {
+    "arm": "b",
+    "path": "outputs/b-repair-01",
+    "sameBuilderContext": true,
+    "firstDeliveryUnchanged": true,
+    "issues": [
+      "SEL-B01",
+      "SEL-B02"
+    ],
+    "browserRegression": "passed in bounded checks"
+  },
+  "review": {
+    "criteria": "review/criteria.json",
+    "firstAssessment": "review/first-assessment.json",
+    "results": "review/results.json",
+    "browser": "BrowserOS neo over MCP; actual local pages, synthetic data",
+    "reviewer": "coordinator, no separate blind reviewer",
+    "independentFullAccessAudit": false
+  },
+  "interruptionEvidence": "No limit/provider interruption reported or observed in task notifications. Pre-delivery compiler corrections were reported by both builders; no claim about unknown internal provider events.",
+  "ancillaryAgent": {
+    "purpose": "README evolution and shorter diagram",
+    "agent": "/root/readme_evolution",
+    "notStudyBuilder": true,
+    "readStudyOutputs": false,
+    "source": "agent-reported boundary; not independently path-audited"
+  },
+  "limitations": [
+    "One builder per condition; no repeated trials or randomized/crossed assignment.",
+    "No ablation proving UX rules alone caused choices.",
+    "Search threshold is a declared study/product policy.",
+    "Requiredness and combined phone layout were not specified; host choices differ.",
+    "No full component API/SCXML, screenreader or native-platform qualification.",
+    "No exact model identity or complete independent access audit."
+  ]
+}

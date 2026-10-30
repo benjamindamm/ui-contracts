@@ -1,0 +1,442 @@
+[
+  {
+    "id": "feel-typed-complete",
+    "expectationMet": true,
+    "scope": "T01-T04 / FEEL with own explicit typed policy",
+    "actual": {
+      "id": "complete",
+      "case": "T01",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": true,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "candidate",
+      "warnings": []
+    }
+  },
+  {
+    "id": "feel-typed-excluded",
+    "expectationMet": true,
+    "scope": "T01-T04 / FEEL with own explicit typed policy",
+    "actual": {
+      "id": "excluded",
+      "case": "T02",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "unsuitable",
+      "warnings": []
+    }
+  },
+  {
+    "id": "feel-typed-missing",
+    "expectationMet": true,
+    "scope": "T01-T04 / FEEL with own explicit typed policy",
+    "actual": {
+      "id": "missing",
+      "case": "T03",
+      "kind": "typed-policy",
+      "input": {
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "unknown",
+      "warnings": [
+        {
+          "type": "NO_VARIABLE_FOUND",
+          "message": "Variable 'existingEntriesOnly' not found",
+          "details": {
+            "template": "Variable 'existingEntriesOnly' not found",
+            "values": {}
+          },
+          "position": {
+            "from": 3,
+            "to": 22
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "feel-typed-explicit-null",
+    "expectationMet": true,
+    "scope": "T01-T04 / FEEL with own explicit typed policy",
+    "actual": {
+      "id": "explicit-null",
+      "case": "T04",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": null,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "unknown",
+      "warnings": []
+    }
+  },
+  {
+    "id": "feel-typed-explicit-false",
+    "expectationMet": true,
+    "scope": "T01-T04 / FEEL with own explicit typed policy",
+    "actual": {
+      "id": "explicit-false",
+      "case": "T04",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": false,
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "unsuitable",
+      "warnings": []
+    }
+  },
+  {
+    "id": "feel-typed-wrong-type",
+    "expectationMet": true,
+    "scope": "T01-T04 / FEEL with own explicit typed policy",
+    "actual": {
+      "id": "wrong-type",
+      "case": "T04",
+      "kind": "typed-policy",
+      "input": {
+        "existingEntriesOnly": "true",
+        "singleSelection": true
+      },
+      "expression": "if existingEntriesOnly = null or singleSelection = null then \"unknown\" else if existingEntriesOnly instance of boolean and singleSelection instance of boolean then (if existingEntriesOnly and singleSelection then \"candidate\" else \"unsuitable\") else \"invalid-input\"",
+      "value": "invalid-input",
+      "warnings": []
+    }
+  },
+  {
+    "id": "feel-missing-has-warning",
+    "expectationMet": true,
+    "scope": "native diagnostic",
+    "actual": {
+      "id": "missing",
+      "case": "T03",
+      "kind": "raw-predicate",
+      "input": {
+        "singleSelection": true
+      },
+      "expression": "existingEntriesOnly and singleSelection",
+      "value": null,
+      "warnings": [
+        {
+          "type": "NO_VARIABLE_FOUND",
+          "message": "Variable 'existingEntriesOnly' not found",
+          "details": {
+            "template": "Variable 'existingEntriesOnly' not found",
+            "values": {}
+          },
+          "position": {
+            "from": 0,
+            "to": 19
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "feel-null-no-missing-warning",
+    "expectationMet": true,
+    "scope": "native diagnostic",
+    "actual": {
+      "id": "explicit-null",
+      "case": "T04",
+      "kind": "raw-predicate",
+      "input": {
+        "existingEntriesOnly": null,
+        "singleSelection": true
+      },
+      "expression": "existingEntriesOnly and singleSelection",
+      "value": null,
+      "warnings": []
+    }
+  },
+  {
+    "id": "feel-invalid-syntax",
+    "expectationMet": true,
+    "scope": "negative parser test",
+    "actual": {
+      "id": "invalid-syntax",
+      "error": "Error: Unrecognized token <then> in <ParenthesizedExpression>"
+    }
+  },
+  {
+    "id": "rego-complete",
+    "expectationMet": true,
+    "scope": "T01-T04 / own policy in native Rego",
+    "actual": {
+      "candidate": true,
+      "conclusions": [
+        "exclude",
+        "recommend"
+      ],
+      "decision": "candidate"
+    }
+  },
+  {
+    "id": "rego-conflicting-conclusions",
+    "expectationMet": true,
+    "scope": "T06 partial: native set retains both; conflict resolution not implemented",
+    "actual": [
+      "exclude",
+      "recommend"
+    ]
+  },
+  {
+    "id": "rego-excluded",
+    "expectationMet": true,
+    "scope": "T01-T04 / own policy in native Rego",
+    "actual": {
+      "conclusions": [],
+      "decision": "unsuitable"
+    }
+  },
+  {
+    "id": "rego-missing",
+    "expectationMet": false,
+    "scope": "T01-T04 / own policy in native Rego",
+    "actual": {
+      "conclusions": [],
+      "decision": "unsuitable"
+    }
+  },
+  {
+    "id": "rego-undefined-is-absent",
+    "expectationMet": true,
+    "scope": "native undefined observation",
+    "actual": {
+      "conclusions": [],
+      "decision": "unsuitable"
+    }
+  },
+  {
+    "id": "rego-explicit-null",
+    "expectationMet": true,
+    "scope": "T01-T04 / own policy in native Rego",
+    "actual": {
+      "conclusions": [],
+      "decision": "unknown"
+    }
+  },
+  {
+    "id": "rego-explicit-false",
+    "expectationMet": true,
+    "scope": "T01-T04 / own policy in native Rego",
+    "actual": {
+      "conclusions": [],
+      "decision": "unsuitable"
+    }
+  },
+  {
+    "id": "rego-wrong-type",
+    "expectationMet": true,
+    "scope": "T01-T04 / own policy in native Rego",
+    "actual": {
+      "conclusions": [],
+      "decision": "unknown"
+    }
+  },
+  {
+    "id": "shacl-complete",
+    "expectationMet": true,
+    "scope": "native validation; not UX eligibility or unknown classification",
+    "actual": {
+      "conforms": true,
+      "reports": []
+    }
+  },
+  {
+    "id": "shacl-excluded",
+    "expectationMet": true,
+    "scope": "native validation; not UX eligibility or unknown classification",
+    "actual": {
+      "conforms": false,
+      "reports": [
+        {
+          "severity": "http://www.w3.org/ns/shacl#Violation",
+          "path": "urn:uxprobe:existingEntriesOnly",
+          "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shacl-missing",
+    "expectationMet": true,
+    "scope": "native validation; not UX eligibility or unknown classification",
+    "actual": {
+      "conforms": false,
+      "reports": [
+        {
+          "severity": "http://www.w3.org/ns/shacl#Violation",
+          "path": "urn:uxprobe:existingEntriesOnly",
+          "constraint": "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        },
+        {
+          "severity": "http://www.w3.org/ns/shacl#Violation",
+          "path": "urn:uxprobe:existingEntriesOnly",
+          "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shacl-explicit-null",
+    "expectationMet": true,
+    "scope": "native validation; not UX eligibility or unknown classification",
+    "actual": {
+      "conforms": false,
+      "reports": [
+        {
+          "severity": "http://www.w3.org/ns/shacl#Violation",
+          "path": "urn:uxprobe:existingEntriesOnly",
+          "constraint": "http://www.w3.org/ns/shacl#DatatypeConstraintComponent"
+        },
+        {
+          "severity": "http://www.w3.org/ns/shacl#Violation",
+          "path": "urn:uxprobe:existingEntriesOnly",
+          "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shacl-explicit-false",
+    "expectationMet": true,
+    "scope": "native validation; not UX eligibility or unknown classification",
+    "actual": {
+      "conforms": false,
+      "reports": [
+        {
+          "severity": "http://www.w3.org/ns/shacl#Violation",
+          "path": "urn:uxprobe:existingEntriesOnly",
+          "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shacl-wrong-type",
+    "expectationMet": true,
+    "scope": "native validation; not UX eligibility or unknown classification",
+    "actual": {
+      "conforms": false,
+      "reports": [
+        {
+          "severity": "http://www.w3.org/ns/shacl#Violation",
+          "path": "urn:uxprobe:existingEntriesOnly",
+          "constraint": "http://www.w3.org/ns/shacl#DatatypeConstraintComponent"
+        },
+        {
+          "severity": "http://www.w3.org/ns/shacl#Violation",
+          "path": "urn:uxprobe:existingEntriesOnly",
+          "constraint": "http://www.w3.org/ns/shacl#HasValueConstraintComponent"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shacl-warning-False",
+    "expectationMet": true,
+    "scope": "pySHACL implementation option; distinct from normative rule strength",
+    "actual": false
+  },
+  {
+    "id": "shacl-warning-True",
+    "expectationMet": true,
+    "scope": "pySHACL implementation option; distinct from normative rule strength",
+    "actual": true
+  },
+  {
+    "id": "dmn-original-schema",
+    "expectationMet": true,
+    "scope": "XML schema",
+    "actual": ""
+  },
+  {
+    "id": "dmn-rejects-invalid-attribute",
+    "expectationMet": true,
+    "scope": "negative schema countercase",
+    "actual": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/runs/01/fixtures/eligibility.dmn:2:0:ERROR:SCHEMASV:SCHEMAV_CVC_COMPLEX_TYPE_3_2_2: Element '{https://www.omg.org/spec/DMN/20230324/MODEL/}definitions', attribute 'unexpectedAttribute': The attribute 'unexpectedAttribute' is not allowed."
+  },
+  {
+    "id": "sbvr-original-schema-compiles",
+    "expectationMet": true,
+    "scope": "schema availability only, no native rule execution",
+    "actual": true
+  },
+  {
+    "id": "binding-cem",
+    "expectationMet": true,
+    "scope": "T07 / own adapter, not native framework capability",
+    "actual": "bound"
+  },
+  {
+    "id": "binding-visual",
+    "expectationMet": true,
+    "scope": "T07 / own adapter, not native framework capability",
+    "actual": "bound"
+  },
+  {
+    "id": "binding-behavior",
+    "expectationMet": true,
+    "scope": "T07 / own adapter, not native framework capability",
+    "actual": "bound"
+  },
+  {
+    "id": "binding-accessibility",
+    "expectationMet": true,
+    "scope": "T07 / own adapter, not native framework capability",
+    "actual": "bound"
+  },
+  {
+    "id": "binding-other-library",
+    "expectationMet": true,
+    "scope": "T08-T10 / own adapter",
+    "actual": "wrong-library"
+  },
+  {
+    "id": "binding-other-component",
+    "expectationMet": true,
+    "scope": "T08-T10 / own adapter",
+    "actual": "wrong-component"
+  },
+  {
+    "id": "binding-other-revision",
+    "expectationMet": true,
+    "scope": "T08-T10 / own adapter",
+    "actual": "wrong-revision"
+  },
+  {
+    "id": "binding-missing-anchor",
+    "expectationMet": true,
+    "scope": "T08-T10 / own adapter",
+    "actual": "missing-anchor"
+  },
+  {
+    "id": "binding-wrong-type",
+    "expectationMet": true,
+    "scope": "T08-T10 / own adapter",
+    "actual": "wrong-anchor-value"
+  },
+  {
+    "id": "binding-path-escape",
+    "expectationMet": true,
+    "scope": "T08-T10 / own adapter",
+    "actual": "unsafe-path"
+  },
+  {
+    "id": "binding-mutated-source",
+    "expectationMet": true,
+    "scope": "T09 / own hash gate",
+    "actual": "stale-source"
+  }
+]

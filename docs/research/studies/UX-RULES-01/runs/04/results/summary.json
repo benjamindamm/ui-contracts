@@ -1,0 +1,8 @@
+{
+  "overall": "ENCODING_ONLY",
+  "release": false,
+  "encodingChecks": 3,
+  "expectationsMet": 3,
+  "policyEvaluations": 0,
+  "scope": "Native rdflib JSON-LD parse only; no automatic enforcement, component hash resolution, obligation or recommendation semantics"
+}

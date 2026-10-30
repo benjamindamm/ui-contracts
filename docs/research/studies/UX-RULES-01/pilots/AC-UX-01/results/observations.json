@@ -1,0 +1,2375 @@
+[
+  {
+    "id": "existing-single",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "existing-single"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "compatible",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "fe0e6be1487170d5112e28d6ba16217da6f18a3f384301732fed67d08b86383e",
+      "decision": {
+        "creation": "compatible",
+        "cardinality": "compatible",
+        "labels": "satisfied",
+        "overall": "compatible"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_satisfied",
+          "strength": "recommendation",
+          "outcome": "satisfied",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "existing-single"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "existing-single"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "existing-single"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "compatible",
+          "cardinality": "compatible",
+          "labels": "satisfied",
+          "overall": "compatible"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_compatible"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_satisfied"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "create-new",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "create-new"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "create-new"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "create-new"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "incompatible",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "66e8eb04f7772963dd774f92f9db8b8efadde2ed163bffedeb915ccaa2a52c37",
+      "decision": {
+        "creation": "incompatible",
+        "cardinality": "compatible",
+        "labels": "satisfied",
+        "overall": "incompatible"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_incompatible",
+          "strength": "capability-constraint",
+          "outcome": "incompatible",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_satisfied",
+          "strength": "recommendation",
+          "outcome": "satisfied",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "create-new"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "create-new"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "create-new"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "incompatible",
+          "cardinality": "compatible",
+          "labels": "satisfied",
+          "overall": "incompatible"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_incompatible"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_satisfied"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "select-many",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "select-many"
+          }
+        },
+        "requiredCardinality": {
+          "value": "many",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "select-many"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "select-many"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "incompatible",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "40c469e1f8f7d585bb8670bee400a380a703e319fd2ce9f999783416da040de6",
+      "decision": {
+        "creation": "compatible",
+        "cardinality": "incompatible",
+        "labels": "satisfied",
+        "overall": "incompatible"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_incompatible",
+          "strength": "capability-constraint",
+          "outcome": "incompatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_satisfied",
+          "strength": "recommendation",
+          "outcome": "satisfied",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "select-many"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "select-many"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "select-many"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "compatible",
+          "cardinality": "incompatible",
+          "labels": "satisfied",
+          "overall": "incompatible"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_compatible"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_incompatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_satisfied"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "labels-unfamiliar",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "labels-unfamiliar"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "labels-unfamiliar"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "labels-unfamiliar"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "compatible-with-guidance",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "8d66537c49a9ea3cb9bcf08226fda9a5a174f8a7f874834251395775003d6c53",
+      "decision": {
+        "creation": "compatible",
+        "cardinality": "compatible",
+        "labels": "needs-review",
+        "overall": "compatible-with-guidance"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_needs_review",
+          "strength": "recommendation",
+          "outcome": "needs-review",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "labels-unfamiliar"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "labels-unfamiliar"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "labels-unfamiliar"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "compatible",
+          "cardinality": "compatible",
+          "labels": "needs-review",
+          "overall": "compatible-with-guidance"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_compatible"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_needs_review"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "missing-creation",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "missing-creation"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "missing-creation"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "undetermined",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "b323a039facb2380b48026420a80fd775ed4a744efdad2e569e3177d57a7fad1",
+      "decision": {
+        "creation": "unknown",
+        "cardinality": "compatible",
+        "labels": "satisfied",
+        "overall": "undetermined"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_unknown",
+          "strength": "capability-constraint",
+          "outcome": "unknown",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_satisfied",
+          "strength": "recommendation",
+          "outcome": "satisfied",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "missing"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "missing-creation"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "missing-creation"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "unknown",
+          "cardinality": "compatible",
+          "labels": "satisfied",
+          "overall": "undetermined"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_unknown"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_satisfied"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "null-creation",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": null,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "null-creation"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "null-creation"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "null-creation"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "undetermined",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "a18f00d86c0435537e958814ebe3486a4ac9ea42e86b568e8f8f40ccb2e58926",
+      "decision": {
+        "creation": "unknown",
+        "cardinality": "compatible",
+        "labels": "satisfied",
+        "overall": "undetermined"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_unknown",
+          "strength": "capability-constraint",
+          "outcome": "unknown",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_satisfied",
+          "strength": "recommendation",
+          "outcome": "satisfied",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "explicit-null"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "null-creation"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "null-creation"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "null-creation"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "unknown",
+          "cardinality": "compatible",
+          "labels": "satisfied",
+          "overall": "undetermined"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_unknown"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_satisfied"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "guidance-unknown",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "guidance-unknown"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "guidance-unknown"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "compatible-guidance-unknown",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "8a52d3ec7da50dedde26fc03e9a03a69fee4031cc6e8e070a565665e7fd24735",
+      "decision": {
+        "creation": "compatible",
+        "cardinality": "compatible",
+        "labels": "unknown",
+        "overall": "compatible-guidance-unknown"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_unknown",
+          "strength": "recommendation",
+          "outcome": "unknown",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "missing"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "guidance-unknown"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "guidance-unknown"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "compatible",
+          "cardinality": "compatible",
+          "labels": "unknown",
+          "overall": "compatible-guidance-unknown"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_compatible"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_unknown"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "wrong-bool-type",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": "false",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "wrong-bool-type"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "wrong-bool-type"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "wrong-bool-type"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "invalid-input",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "8fd68d17a3707353e2400cf2a0ad55f5e9c728c5a2196ab92fcc036989cbacf6",
+      "decision": {
+        "creation": "invalid-input",
+        "cardinality": "compatible",
+        "labels": "satisfied",
+        "overall": "invalid-input"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_invalid_input",
+          "strength": "capability-constraint",
+          "outcome": "invalid-input",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_satisfied",
+          "strength": "recommendation",
+          "outcome": "satisfied",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "wrong-bool-type"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "wrong-bool-type"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "wrong-bool-type"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "invalid-input",
+          "cardinality": "compatible",
+          "labels": "satisfied",
+          "overall": "invalid-input"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_invalid_input"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_satisfied"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "wrong-cardinality",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "wrong-cardinality"
+          }
+        },
+        "requiredCardinality": {
+          "value": "some",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "wrong-cardinality"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": true,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "wrong-cardinality"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "invalid-input",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "559a7b221bad74e259460ce4db47f4534399960539cff8e29279f6f4f62baa7a",
+      "decision": {
+        "creation": "compatible",
+        "cardinality": "invalid-input",
+        "labels": "satisfied",
+        "overall": "invalid-input"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_invalid_input",
+          "strength": "capability-constraint",
+          "outcome": "invalid-input",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_satisfied",
+          "strength": "recommendation",
+          "outcome": "satisfied",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "wrong-cardinality"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "wrong-cardinality"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "wrong-cardinality"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "compatible",
+          "cardinality": "invalid-input",
+          "labels": "satisfied",
+          "overall": "invalid-input"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_compatible"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_invalid_input"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_satisfied"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "labels-wrong-type",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "labels-wrong-type"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "labels-wrong-type"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": 1,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "labels-wrong-type"
+          }
+        }
+      }
+    },
+    "result": {
+      "overall": "invalid-input",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "8c55fccf380b0600889c678b514ec8852052656ac9eab154cebaf71424a56abc",
+      "decision": {
+        "creation": "compatible",
+        "cardinality": "compatible",
+        "labels": "invalid-input",
+        "overall": "invalid-input"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_invalid_input",
+          "strength": "recommendation",
+          "outcome": "invalid-input",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "labels-wrong-type"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "labels-wrong-type"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "labels-wrong-type"
+        }
+      },
+      "declaredExceptions": [],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "compatible",
+          "cardinality": "compatible",
+          "labels": "invalid-input",
+          "overall": "invalid-input"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_compatible"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_invalid_input"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  },
+  {
+    "id": "scoped-exception",
+    "request": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "facts": {
+        "requiresNewEntries": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "scoped-exception"
+          }
+        },
+        "requiredCardinality": {
+          "value": "one",
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "scoped-exception"
+          }
+        },
+        "resultLabelsFamiliar": {
+          "value": false,
+          "source": {
+            "kind": "scenario-fixture",
+            "reference": "scoped-exception"
+          }
+        }
+      },
+      "exceptions": [
+        {
+          "ruleId": "AC-UX-003",
+          "library": "example",
+          "componentId": "ui-contracts:Autocomplete",
+          "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+          "reviewer": "research-author",
+          "rationale": "Controlled research fixture: domain abbreviations will be explained in the surrounding workflow; not a real approved product exception."
+        }
+      ]
+    },
+    "result": {
+      "overall": "compatible",
+      "release": false,
+      "scope": "research-candidate-compatibility-only",
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+      "profileSha256": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+      "logicSha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+      "contextSha256": "a39565871ef250f6cbf6cd6f19ad7e3c82fe5987533a47a9eba96e2475af04f5",
+      "decision": {
+        "creation": "compatible",
+        "cardinality": "compatible",
+        "labels": "excepted",
+        "overall": "compatible"
+      },
+      "rules": [
+        {
+          "ruleId": "AC-UX-001",
+          "nativeRowId": "AC-UX-001_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+          "evidence": [
+            {
+              "id": "capability-text",
+              "path": "components/autocomplete/README.md",
+              "kind": "literal-text",
+              "anchor": "Freier Text wird nicht als neuer Ergebniswert bestätigt.",
+              "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+            },
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            },
+            {
+              "id": "behavior",
+              "path": "components/autocomplete/behavior.scxml",
+              "kind": "scxml-state",
+              "anchor": "closed",
+              "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-002",
+          "nativeRowId": "AC-UX-002_compatible",
+          "strength": "capability-constraint",
+          "outcome": "compatible",
+          "status": "candidate",
+          "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+          "evidence": [
+            {
+              "id": "interface",
+              "path": "components/autocomplete/interface.json",
+              "kind": "json-pointer",
+              "anchor": "/modules/0/declarations/0/members/1/type/text",
+              "expected": "string | undefined",
+              "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+            }
+          ]
+        },
+        {
+          "ruleId": "AC-UX-003",
+          "nativeRowId": "AC-UX-003_excepted",
+          "strength": "recommendation",
+          "outcome": "excepted",
+          "status": "candidate",
+          "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+          "evidence": [
+            {
+              "id": "USWDS-familiar-labels",
+              "url": "https://designsystem.digital.gov/components/combo-box/",
+              "section": "Usability guidance / Use option strings familiar to users",
+              "checkedOn": "2026-10-30",
+              "status": "external recommendation adapted as proposal, not adopted as universal rule",
+              "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+            },
+            {
+              "id": "accessibility",
+              "path": "components/autocomplete/accessibility.rules.json",
+              "kind": "json-pointer",
+              "anchor": "/optionNameSource",
+              "expected": "result.label",
+              "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+            }
+          ]
+        }
+      ],
+      "factDiagnostics": [
+        {
+          "fact": "requiredCardinality",
+          "state": "provided"
+        },
+        {
+          "fact": "resultLabelsFamiliar",
+          "state": "provided"
+        },
+        {
+          "fact": "requiresNewEntries",
+          "state": "provided"
+        }
+      ],
+      "factEvidence": {
+        "requiredCardinality": {
+          "kind": "scenario-fixture",
+          "reference": "scoped-exception"
+        },
+        "resultLabelsFamiliar": {
+          "kind": "scenario-fixture",
+          "reference": "scoped-exception"
+        },
+        "requiresNewEntries": {
+          "kind": "scenario-fixture",
+          "reference": "scoped-exception"
+        }
+      },
+      "declaredExceptions": [
+        {
+          "ruleId": "AC-UX-003",
+          "library": "example",
+          "componentId": "ui-contracts:Autocomplete",
+          "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+          "reviewer": "research-author",
+          "rationale": "Controlled research fixture: domain abbreviations will be explained in the surrounding workflow; not a real approved product exception."
+        }
+      ],
+      "nativeCalled": true,
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "creation": "compatible",
+          "cardinality": "compatible",
+          "labels": "excepted",
+          "overall": "compatible"
+        },
+        "trace": [
+          {
+            "decisionId": "creationClassification",
+            "name": "creationClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "creation",
+            "name": "creation",
+            "matchedRowIds": [
+              "AC-UX-001_compatible"
+            ]
+          },
+          {
+            "decisionId": "cardinalityClassification",
+            "name": "cardinalityClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "cardinality",
+            "name": "cardinality",
+            "matchedRowIds": [
+              "AC-UX-002_compatible"
+            ]
+          },
+          {
+            "decisionId": "labelsClassification",
+            "name": "labelsClassification",
+            "matchedRowIds": []
+          },
+          {
+            "decisionId": "labels",
+            "name": "labels",
+            "matchedRowIds": [
+              "AC-UX-003_excepted"
+            ]
+          },
+          {
+            "decisionId": "assessment",
+            "name": "assessment",
+            "matchedRowIds": []
+          }
+        ]
+      },
+      "nativeStderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n",
+      "notChecked": [
+        "Factual truth of declared inputs",
+        "Identity/authority of declared exception reviewer",
+        "Full UX/accessibility quality",
+        "Agent comprehension",
+        "Production suitability"
+      ]
+    }
+  }
+]

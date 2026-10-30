@@ -1,0 +1,186 @@
+[
+  {
+    "id": "all-met",
+    "caseIds": [
+      "T05",
+      "T06",
+      "T08",
+      "T11"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "expected": {
+      "applicable": true,
+      "permitted": true,
+      "requirement": "met",
+      "recommendation": "met"
+    }
+  },
+  {
+    "id": "soft-unmet",
+    "caseIds": [
+      "T05",
+      "T06",
+      "T08",
+      "T11"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "expected": {
+      "applicable": true,
+      "permitted": true,
+      "requirement": "met",
+      "recommendation": "unmet"
+    }
+  },
+  {
+    "id": "hard-unmet",
+    "caseIds": [
+      "T05",
+      "T06",
+      "T08",
+      "T11"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": false,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "expected": {
+      "applicable": true,
+      "permitted": false,
+      "requirement": "unmet",
+      "recommendation": "met"
+    }
+  },
+  {
+    "id": "scoped-exception",
+    "caseIds": [
+      "T05",
+      "T06",
+      "T08",
+      "T11"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "expected": {
+      "applicable": true,
+      "permitted": true,
+      "requirement": "met",
+      "recommendation": "excepted"
+    }
+  },
+  {
+    "id": "wrong-exception-target",
+    "caseIds": [
+      "T05",
+      "T06",
+      "T08",
+      "T11"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Other"
+    },
+    "expected": {
+      "applicable": true,
+      "permitted": true,
+      "requirement": "met",
+      "recommendation": "unmet"
+    }
+  },
+  {
+    "id": "exception-cannot-waive-hard",
+    "caseIds": [
+      "T05",
+      "T06",
+      "T08",
+      "T11"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": false,
+      "preferenceMet": false,
+      "exceptionApproved": true,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "expected": {
+      "applicable": true,
+      "permitted": false,
+      "requirement": "unmet",
+      "recommendation": "excepted"
+    }
+  },
+  {
+    "id": "other-library",
+    "caseIds": [
+      "T05",
+      "T06",
+      "T08",
+      "T11"
+    ],
+    "input": {
+      "library": "other",
+      "componentId": "ui-contracts:Autocomplete",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "expected": {
+      "applicable": false,
+      "permitted": null,
+      "requirement": "not-applicable",
+      "recommendation": "not-applicable"
+    }
+  },
+  {
+    "id": "other-component",
+    "caseIds": [
+      "T05",
+      "T06",
+      "T08",
+      "T11"
+    ],
+    "input": {
+      "library": "example",
+      "componentId": "ui-contracts:Other",
+      "mandatoryMet": true,
+      "preferenceMet": true,
+      "exceptionApproved": false,
+      "exceptionComponent": "ui-contracts:Autocomplete"
+    },
+    "expected": {
+      "applicable": false,
+      "permitted": null,
+      "requirement": "not-applicable",
+      "recommendation": "not-applicable"
+    }
+  }
+]

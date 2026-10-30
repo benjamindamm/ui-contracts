@@ -1,0 +1,133 @@
+{
+  "logs": [],
+  "ok": true,
+  "value": {
+    "afterQuery": {
+      "changed": false,
+      "page": 65,
+      "settled": false,
+      "value": {
+        "keys": [
+          "CA",
+          "US"
+        ],
+        "status": ""
+      }
+    },
+    "changed": {
+      "changed": false,
+      "page": 65,
+      "settled": false,
+      "value": {
+        "audit": [
+          {
+            "detail": {
+              "value": "Ada"
+            },
+            "id": "givenName"
+          },
+          {
+            "detail": {
+              "value": "Beispiel"
+            },
+            "id": "familyName"
+          },
+          {
+            "detail": {
+              "value": "ada@example.test"
+            },
+            "id": "email"
+          },
+          {
+            "detail": {
+              "value": "0123 456789"
+            },
+            "id": "nationalNumber"
+          },
+          {
+            "detail": {
+              "value": "IN"
+            },
+            "id": "country-query"
+          },
+          {
+            "detail": {
+              "value": "Ada Neu"
+            },
+            "id": "givenName"
+          }
+        ],
+        "status": ""
+      }
+    },
+    "filtered": {
+      "changed": false,
+      "page": 65,
+      "settled": false,
+      "value": [
+        "IN"
+      ]
+    },
+    "selected": {
+      "changed": false,
+      "page": 65,
+      "settled": false,
+      "value": {
+        "key": "US",
+        "status": ""
+      }
+    },
+    "success": {
+      "changed": false,
+      "page": 65,
+      "settled": false,
+      "value": {
+        "audit": [
+          {
+            "detail": {
+              "value": "Ada"
+            },
+            "id": "givenName"
+          },
+          {
+            "detail": {
+              "value": "Beispiel"
+            },
+            "id": "familyName"
+          },
+          {
+            "detail": {
+              "value": "ada@example.test"
+            },
+            "id": "email"
+          },
+          {
+            "detail": {
+              "value": "0123 456789"
+            },
+            "id": "nationalNumber"
+          },
+          {
+            "detail": {
+              "value": "IN"
+            },
+            "id": "country-query"
+          }
+        ],
+        "key": "IN",
+        "phone": "0123 456789",
+        "status": "Angaben lokal geprüft. Es wurden keine Daten gesendet."
+      }
+    },
+    "synthetic": {
+      "changed": true,
+      "page": 65,
+      "settled": true,
+      "value": {
+        "disabledNoEvent": true,
+        "note": "Synthetic guard regression, not a real disabled user action",
+        "readOnlyNoEvent": true
+      }
+    }
+  }
+}

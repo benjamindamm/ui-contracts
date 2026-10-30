@@ -1,0 +1,195 @@
+{
+  "checkedOn": "2026-10-30",
+  "method": "Official specifications and author publications read; original XML schemas downloaded with hashes; selected implementations tested locally. Failed source access, schema-only evidence and native runtime observations remain separate.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "DMN 1.5 machine-readable artifacts",
+      "url": "https://www.omg.org/spec/DMN/1.5/About-DMN",
+      "kind": "Official specification index",
+      "versionScope": "1.5",
+      "observed": "Normative XML Schema, XMI and diagram-interchange artifacts listed; no local engine execution.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S02",
+      "title": "SBVR 1.5 machine-readable artifacts",
+      "url": "https://www.omg.org/spec/SBVR/1.5/About-SBVR",
+      "kind": "Official specification index",
+      "versionScope": "1.5",
+      "observed": "XMI-based XML Schema and model artifacts listed; semantic evaluator support remains untested.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S03",
+      "title": "Shapes Constraint Language",
+      "url": "https://www.w3.org/TR/shacl/",
+      "kind": "W3C Recommendation",
+      "versionScope": "2017 publication examined",
+      "observed": "RDF constraints and result severities; section 2.1.4 distinguishes severity from validation semantics.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S04",
+      "title": "OPA policy language",
+      "url": "https://www.openpolicyagent.org/docs/policy-language",
+      "kind": "Official implementation documentation",
+      "versionScope": "live documentation; runtime version not yet pinned",
+      "observed": "Rego evaluates structured documents; undefined values require explicit interpretation in a UX profile.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S05",
+      "title": "ODRL Information Model 2.2",
+      "url": "https://www.w3.org/TR/odrl-model/",
+      "kind": "W3C Recommendation",
+      "versionScope": "2.2 / 2018-02-15",
+      "observed": "Usage policies and conflict strategies, section 2.10; suitability as UX model untested.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S06",
+      "title": "MBUI Task Models",
+      "url": "https://www.w3.org/TR/task-models/",
+      "kind": "W3C Working Group Note, not Recommendation",
+      "versionScope": "2014-04-08",
+      "observed": "Task metamodel and XML interchange schema; current tool availability untested.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S07",
+      "title": "DMN overview",
+      "url": "https://www.omg.org/dmn/",
+      "kind": "Official standard overview",
+      "versionScope": "version-independent overview",
+      "observed": "Decision and business-rule modeling; not proof of UX-specific vocabulary.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S08",
+      "title": "OMG Business Process Management overview",
+      "url": "https://www.omg.org/bpm/",
+      "kind": "Official standard overview",
+      "versionScope": "version-independent overview",
+      "observed": "SBVR vocabulary and rule semantics overview; not proof of executable integration.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S09",
+      "title": "UGL authors publication",
+      "url": "https://dl.ifip.org/db/conf/ehci/ehci2007/ArrueVA07.pdf",
+      "kind": "Primary author publication",
+      "versionScope": "2007",
+      "observed": "XML guidelines with XQuery evaluation; current schema/tool availability unresolved.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S10",
+      "title": "Historical usability GDL original publication",
+      "url": "https://dial.uclouvain.be/pr/boreal/object/boreal%3A18267/datastream/PDF_01/view",
+      "kind": "Institutional original-paper location",
+      "versionScope": "historical; original contents not fully retrieved",
+      "observed": "Retrieval failed; bibliographic lead only, not verified original syntax.",
+      "evidenceLevel": "access-failed-lead"
+    },
+    {
+      "id": "S11",
+      "title": "ACT Rules Format 1.1",
+      "url": "https://www.w3.org/TR/act-rules-format/",
+      "kind": "Official W3C rule-format document",
+      "versionScope": "1.1 page examined",
+      "observed": "Rule structure, applicability, assumptions and outcomes; not executed.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S12",
+      "title": "EARL 1.0 Schema",
+      "url": "https://www.w3.org/TR/EARL10-Schema/",
+      "kind": "W3C Working Group Note",
+      "versionScope": "2017-02-02",
+      "observed": "RDF test-result vocabulary; distinct from rule evaluation language.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S13",
+      "title": "openEHR Guideline Definition Language",
+      "url": "https://specifications.openehr.org/releases/CDS/latest/GDL.html",
+      "kind": "Official domain specification",
+      "versionScope": "live document; not version-pinned",
+      "observed": "Clinical rule language; separate from historical usability GDL.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S14",
+      "title": "feelin",
+      "url": "https://github.com/nikku/feelin",
+      "kind": "Official implementation",
+      "versionScope": "npm 8.2.0 locally tested",
+      "observed": "FEEL interpreter; no full DMN engine or TCK conformance claimed.",
+      "evidenceLevel": "implementation-probed"
+    },
+    {
+      "id": "S15",
+      "title": "pySHACL",
+      "url": "https://github.com/RDFLib/pySHACL",
+      "kind": "Official implementation",
+      "versionScope": "0.30.1 locally tested",
+      "observed": "Local RDF validation; allow_warnings behavior observed.",
+      "evidenceLevel": "implementation-probed"
+    },
+    {
+      "id": "S16",
+      "title": "OPA release",
+      "url": "https://github.com/open-policy-agent/opa/releases/tag/v1.21.2",
+      "kind": "Official release",
+      "versionScope": "1.21.2 locally tested",
+      "observed": "macOS arm64 binary hash/version recorded; corrected custom policy tested.",
+      "evidenceLevel": "implementation-probed"
+    },
+    {
+      "id": "S17",
+      "title": "Camunda DMN Scala",
+      "url": "https://github.com/camunda/dmn-scala",
+      "kind": "Official implementation source",
+      "versionScope": "1.12.6 locally executed",
+      "observed": "Native parse/eval API and Apache-2.0 declaration; complete conformance not retested.",
+      "evidenceLevel": "implementation-probed"
+    },
+    {
+      "id": "S18",
+      "title": "DMN hit policies",
+      "url": "https://docs.camunda.io/docs/components/modeler/dmn/decision-table-hit-policy/",
+      "kind": "Official implementation documentation",
+      "versionScope": "live documentation; tested engine separately pinned",
+      "observed": "UNIQUE/FIRST/COLLECT compared in local native model execution.",
+      "evidenceLevel": "implementation-probed"
+    },
+    {
+      "id": "S19",
+      "title": "SBeaVeR project",
+      "url": "https://sourceforge.net/projects/sbeaver/",
+      "kind": "Original project page",
+      "versionScope": "page read 2026-10-30",
+      "observed": "Eclipse editor; page lists Pre-Alpha and last update 2013-03-22; not a claim about all SBVR tools.",
+      "evidenceLevel": "documented-only"
+    },
+    {
+      "id": "S20",
+      "title": "DMN Scala Maven metadata",
+      "url": "https://repo.maven.apache.org/maven2/org/camunda/bpm/extension/dmn/scala/dmn-engine/maven-metadata.xml",
+      "kind": "Official artifact metadata",
+      "versionScope": "1.12.6 selected",
+      "observed": "Coordinate version resolved; actual JAR bytes and full classpath hashes retained locally in report.",
+      "evidenceLevel": "implementation-probed"
+    },
+    {
+      "id": "S21",
+      "title": "USWDS Combo box usability guidance",
+      "url": "https://designsystem.digital.gov/components/combo-box/",
+      "kind": "Official design system guidance",
+      "versionScope": "page read 2026-10-30; remote content not archived",
+      "observed": "Familiar result labels inform a proposed recommendation in AC-UX-01. No option threshold, implementation-specific accessibility result or general component recommendation imported.",
+      "evidenceLevel": "documented-only; adaptation remains a candidate"
+    }
+  ]
+}

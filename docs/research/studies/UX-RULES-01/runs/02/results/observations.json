@@ -1,0 +1,92 @@
+[
+  {
+    "id": "complete",
+    "input": {
+      "existingEntriesOnly": true,
+      "singleSelection": true
+    },
+    "expected": "candidate",
+    "value": {
+      "candidate": true,
+      "decision": "candidate"
+    },
+    "met": true,
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"candidate\": true,\n            \"decision\": \"candidate\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "id": "excluded",
+    "input": {
+      "existingEntriesOnly": false,
+      "singleSelection": true
+    },
+    "expected": "unsuitable",
+    "value": {
+      "decision": "unsuitable"
+    },
+    "met": true,
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"decision\": \"unsuitable\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "id": "missing",
+    "input": {
+      "singleSelection": true
+    },
+    "expected": "unknown",
+    "value": {
+      "decision": "unknown"
+    },
+    "met": true,
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"decision\": \"unknown\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "id": "explicit-null",
+    "input": {
+      "existingEntriesOnly": null,
+      "singleSelection": true
+    },
+    "expected": "unknown",
+    "value": {
+      "decision": "unknown"
+    },
+    "met": true,
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"decision\": \"unknown\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "id": "explicit-false",
+    "input": {
+      "existingEntriesOnly": false,
+      "singleSelection": true
+    },
+    "expected": "unsuitable",
+    "value": {
+      "decision": "unsuitable"
+    },
+    "met": true,
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"decision\": \"unsuitable\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "id": "wrong-type",
+    "input": {
+      "existingEntriesOnly": "true",
+      "singleSelection": true
+    },
+    "expected": "invalid-input",
+    "value": {
+      "decision": "invalid-input"
+    },
+    "met": true,
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": [\n    {\n      \"expressions\": [\n        {\n          \"value\": {\n            \"decision\": \"invalid-input\"\n          },\n          \"text\": \"data.uxprobe\",\n          \"location\": {\n            \"row\": 1,\n            \"col\": 1\n          }\n        }\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  }
+]

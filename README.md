@@ -1,150 +1,127 @@
 # UI Contracts
 
-**Eine gemeinsame Bauanleitung für UI-Komponenten — für Menschen und Coding-Agenten.**
+**Eine prüfbare Bauanleitung für UI-Komponenten — für Menschen und Coding-Agenten.**
 
-UI Contracts untersucht, wie sich Schnittstelle, Gestaltung, Verhalten und Accessibility eindeutig beschreiben und zu einem gemeinsamen Contract-Paket verbinden lassen. Bestehende Standards behalten ihre Fachmodelle; gemeinsame Bindungen machen ihre Beziehungen prüfbar.
+UI Contracts beschreibt, **was eine Komponente kann, wie sie aussieht und wie sie sich bedienen lässt**. Verknüpfte Dateien bilden die gemeinsame Grundlage für Design, Implementierung und gezielte Prüfungen.
 
-**Recherche abgeschlossen** · **Webreferenz geprüft** · **Produktumsetzung offen**
+**Ziel:** Aus derselben Beschreibung Designs und Komponenten für Web, iOS und Android erstellen.
 
-[Das Prinzip](#das-prinzip) · [Architektur](#architektur) · [Nachweise](#nachweise) · [Dokumentation](#dokumentation) · [Weiterarbeit](#weiterarbeit)
+**Stand:** Forschungsprojekt mit konkreten Definitionen, Design-Proofs und geprüfter Webreferenz. Produktbibliothek, allgemeiner Generator und native Plattformadapter sind noch offen.
+
+[Ablauf](#wie-es-funktioniert) · [Komponentenaufbau](#was-in-einer-komponente-steckt) · [Starten](#eigene-bibliothek-starten) · [Nachweise](#was-bisher-geprüft-ist) · [Dokumentation](#weiterlesen)
+
+## Wie es funktioniert
+
+```mermaid
+flowchart TB
+  D["1 · Beschreiben<br/>API, Gestaltung, Verhalten, Accessibility"]
+  L["2 · Verknüpfen<br/>Welche Teile, Werte und Zustände gehören zusammen?"]
+  P["3 · Definition prüfen<br/>Dateiformate und unterstützte Beziehungen"]
+  E["4 · Umsetzen<br/>Mensch oder Coding-Agent mit Zielwerkzeugen"]
+  O["Editierbares Design"]
+  W["Webkomponente"]
+  T["5 · Ergebnis gegen Definition prüfen<br/>Je nach Ziel: Designwerte, Interaktion, Accessibility"]
+  D --> L --> P --> E
+  E --> O --> T
+  E --> W --> T
+  T -->|Abweichungen korrigieren| E
+
+  classDef definition fill:#edf3ff,stroke:#365f91,color:#163353;
+  classDef output fill:#eaf7ee,stroke:#287840,color:#143920;
+  class D,L,P definition;
+  class O,W,T output;
+```
+
+**Beispiel:** SCXML beschreibt, wann ein Popup offen ist. Verknüpfungsregeln ordnen diesen Zustand der sichtbaren Popupfläche und `aria-expanded` am Eingabefeld zu. Der Webadapter setzt diese Zuordnung um. Die Prüfung kontrolliert die erwartete Wirkung.
+
+Der Ablauf wurde in begrenzten Referenzfällen erprobt. Originalprüfer prüfen ihre Formate; Zusatzprüfungen kontrollieren unterstützte Verknüpfungen. Ein Designexport weist keine funktionierende Interaktion nach.
+
+## Was in einer Komponente steckt
+
+Am Beispiel **Autocomplete** aus der Forschungsbibliothek `example`:
+
+```mermaid
+flowchart LR
+  subgraph shared["Bibliothek"]
+    TK["Tokens"]
+    AS["Fonts · Icons · Bilder"]
+  end
+  C["Autocomplete"]
+  subgraph definition["Definition"]
+    I["Schnittstelle"]
+    V["Gestaltung"]
+    B["Verhalten"]
+    A["Accessibility"]
+  end
+  TK --> C
+  AS --> C
+  C --> I & V & B & A
+  C --> S["Beispielfälle"]
+  C --> U["Overlay → ScrollArea"]
+
+  classDef shared fill:#fff6e5,stroke:#98702a,color:#5a4017;
+  classDef source fill:#edf3ff,stroke:#365f91,color:#163353;
+  class TK,AS shared;
+  class C,I,V,B,A,S,U source;
+```
+
+`component.json` verknüpft die Quellen und Unterkomponenten. Tokens und Assets werden gemeinsam genutzt; `stories.json` liefert Beispielfälle. **Jede Information hat eine führende Quelle.** Die Originalstandards bleiben erhalten; Verknüpfungsregeln ergänzen ihre Beziehungen.
+
+| Frage | Führende Beschreibung |
+| --- | --- |
+| Was kann ich setzen und empfangen? | **CEM**: Properties, Typen, Events |
+| Wie sieht die Komponente aus? | **DTCG/CSS**: Tokens und Layoutregeln |
+| Was passiert bei Eingabe oder Zustandswechsel? | **SCXML**: Verhalten |
+| Wie wird sie zugänglich bedienbar? | **HTML/ARIA**, ergänzt durch APG-Bedienmuster |
+
+Zusätzlich wird erforscht, **wann eine Komponente zur Aufgabe passt**: `ux.json` beschreibt Fähigkeiten; Auswahlregeln vergleichen Kandidaten. Diese [UX-Forschung](docs/research/studies/UX-RULES-01/README.md) ergänzt die vier Domänen und ist noch keine festgelegte Formatentscheidung. Die [UX-Leitlinie für Autocomplete](docs/ux/AUTOCOMPLETE.md) trennt freie Schreibhilfe von verbindlicher Auswahl.
+
+[Autocomplete-Definition](libraries/example/components/autocomplete/README.md) · [Verknüpfungsregeln im Detail](docs/research/INTEGRATION-BINDING-DRAFT.md)
 
 ## Eigene Bibliothek starten
-
-Mehrere Bibliotheken liegen getrennt unter `libraries/`. Pro Bibliothek enthalten `components/` die Definitionen und `assets/` gemeinsame Dateien; `library.json`, `tokens.json` und die optionale `fonts.json` liegen am Bibliotheksroot. Die bisherige Forschungsbibliothek ist [example](libraries/example/README.md) und bleibt als Orientierung erhalten. Für ein eigenes Projekt leer beginnen:
 
 ```sh
 python3 tools/libraries/manage.py init meine-app --name "Meine App"
 ```
 
-Der Agentenauftrag wählt `meine-app` ausdrücklich aus. Beispiele werden nicht automatisch gelesen oder übernommen. [Bibliotheken, Auswahl und Migration](libraries/README.md) · [Lokale Schriftdateien und validiertes Beispiel](docs/fonts/README.md) · [Einheitliche native Präsentation](docs/skills/OPENPENCIL-PREVIEW.md).
+Legt eine leere Bibliothek unter `libraries/meine-app/` an. Komponenten kommen nach `components/`, gemeinsame Ressourcen nach `assets/`; `library.json` und `tokens.json` liegen am Bibliotheksroot. Ein Agentenauftrag benennt die Bibliothek und das gewünschte Ziel ausdrücklich. Inhalte aus `example` werden nicht automatisch übernommen.
 
-## Das Prinzip
+[Bibliotheksaufbau und Auswahl](libraries/README.md) · [Lokale Fonts](docs/fonts/README.md) · [Contract-Skill und Prüfumfang](docs/skills/README.md)
 
-Ein Agent soll Properties, Layout, Zustände und Bedienregeln aus einer präzisen Beschreibung ableiten können. Dieselbe Information hat genau eine führende Quelle. So werden Entscheidungen nachvollziehbar, Widersprüche erkennbar und Komponenten wiederverwendbar.
+## Was bisher geprüft ist
 
-Der konkrete **Integrationsvorschlag IP-01** verbindet vier getrennte Domänen:
+- **Webreferenz:** 20 von 20 finalen Prüferwartungen im dokumentierten Autocomplete-Browserlauf mit eigenem Adapter erfüllt: zwei unabhängige Instanzen mit Overlay und ScrollArea, Events, Fokus, Navigation, Scrollsichtbarkeit, Lade-/Fehlerzustände, verspätete Antworten, Lifecycle und zugängliche Beziehungen. [Browserbericht](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md) · [Statisches Referenzpaket](docs/research/experiments/2026-10-25/ip01-static/REPORT.md)
+- **Design-Proofs:** Editierbare OpenPencil-Ausgaben erstellt und unabhängig geprüft. Dabei wurden auch Definitionslücken und Reproduktionsfehler sichtbar. [Autocomplete-Proof](examples/autocomplete/README.md) · [Reproduktionsstudien](docs/research/STUDIES.md)
+- **Offen:** Produktformat der Verknüpfungsregeln, allgemeiner Resolver und Generator, iOS-/Android-Abbildungen sowie echte Screenreader- und IME-Abnahme. Die Referenzprüfungen sind keine allgemeine Produktfreigabe.
 
-| Domäne | Führende Informationen | Beitrag im Webvorschlag |
-| --- | --- | --- |
-| **Interface** | Properties, Typen, Events, Payloads und benannte Teile | **CEM** · JSON |
-| **Visual** | Tokens, Dimensionen, Varianten und Layoutregeln | **DTCG** · JSON; **CSS** ergänzt das Weblayout |
-| **Behavior** | Zustände, Übergänge, Guards, Aktionen und Interaktion | **SCXML** · XML |
-| **Accessibility** | Semantik, Namen, Beziehungen und zugängliche Rückmeldungen | **WAI-ARIA** im HTML-Host; **APG** ergänzt Bedienmuster |
+## Weiterentwicklung
 
-Die Formate müssen dafür nicht vereinheitlicht werden. Eine zusätzliche Bindung verbindet Definitionen, konkrete Instanzen, Teile und Zustände. Originalprüfer und begrenzte Zusatzprüfungen haben jeweils eine klar benannte Aufgabe. Vier logische Domänen können mehrere Dateien umfassen; die produktive Bindungssyntax ist noch nicht festgelegt.
-
-**Das spätere Ziel:** Aus derselben fachlichen Bauanleitung sollen Agenten Web-, iOS- und Android-Komponenten mit den vereinbarten visuellen und funktionalen Eigenschaften erstellen können. Native Plattformen sind Zukunftsperspektive. Ihre Abbildungen sind noch nicht nachgewiesen und gehören nicht zur abgeschlossenen Recherchephase.
-
-## Architektur
-
-```mermaid
-flowchart TB
-  subgraph package["Gemeinsames Contract-Paket · Integrationsvorschlag"]
-    I["Interface · CEM<br/>Properties, Events, Teile<br/>JSON"]
-    V["Visual · DTCG<br/>Tokens in JSON<br/>CSS ergänzt das Weblayout"]
-    B["Behavior · SCXML<br/>Zustände, Übergänge, Aktionen<br/>XML"]
-    A["Accessibility · WAI-ARIA<br/>Semantik im HTML-Host<br/>APG ergänzt Bedienregeln"]
-    L["Gemeinsame Bindungen<br/>Definitionen, Instanzen, Referenzen<br/>Typen, Zustände, Quellführung"]
-    I --- L
-    V --- L
-    B --- L
-    A --- L
-  end
-
-  L --> P["Forschungsprüfungen<br/>Originalprüfer und begrenzte Zusatzprüfungen"]
-  P --> H["Konkreter Web-Forschungsadapter<br/>DOM, CSS, Original-SCXML-Runtime"]
-  H --> W["Webreferenz tatsächlich geprüft<br/>Events, Fokus, Scrollen, Accessibility-Baum"]
-
-  L -. "Spätere Umsetzung" .-> G["Coding-Agent mit expliziten Plattformregeln<br/>Allgemeiner Erzeugungsweg noch offen"]
-  G -.-> FW["Generierte Webkomponente<br/>Zielbild"]
-  G -.-> IOS["iOS-Komponente<br/>Zukunftsperspektive"]
-  G -.-> AND["Android-Komponente<br/>Zukunftsperspektive"]
-
-  classDef proposal fill:#edf3ff,stroke:#365f91,color:#163353;
-  classDef proven fill:#eaf7ee,stroke:#287840,color:#143920;
-  classDef future fill:#f5f5f5,stroke:#888,color:#444,stroke-dasharray:5 5;
-  class I,V,B,A,L proposal;
-  class P,H,W proven;
-  class G,FW,IOS,AND future;
-```
-
-**Blau:** Integrationsvorschlag. **Grün:** im begrenzten Forschungsfall ausgeführt. **Gestrichelt:** späterer Erzeugungsweg. Der geprüfte Webadapter ist noch kein allgemeiner Generator oder deklarativer Runtime-Resolver.
-
-[Integrationsprofil und Zuständigkeiten](docs/research/INTEGRATION-PROFILE.md) · [Konkreter Bindungsentwurf](docs/research/INTEGRATION-BINDING-DRAFT.md)
-
-## Nachweise
-
-[Pie-Chart-Proof: D3-Geometrie → SVG → editierbare OpenPencil-Vektoren](examples/charts/pie-chart/README.md) mit PNG, FIG und geometrischem Messbeleg.
-
-
-Ein Autocomplete dient als Referenzfall: zwei unabhängige Verwendungen, jeweils mit eigenem Overlay und eigener ScrollArea. Schnittstelle, Werte, Verhalten und zugängliche Beziehungen werden dabei gemeinsam betrachtet. Abstand und sichtbare Zeilenzahl sind Beispielwerte, keine allgemeinen Produktpflichten.
-
-Im gemeinsamen Browserlauf sind **20 von 20 finalen Prüferwartungen erfüllt**:
-
-- Öffentliche Events und Payloads, Auswahl und unabhängige Instanzen.
-- Tatsächlicher Inputfokus, Navigation und Scrollsichtbarkeit.
-- Lade-, Leer- und Fehlerzustände sowie aktuelle und verspätete Antworten.
-- Child-Lifecycle, Abbruch und Wiederöffnung.
-- Tatsächliche Accessibility-Bäume, Beziehungen und Statusrückmeldungen.
-
-Der Nachweis gilt für den dokumentierten Webreferenzfall mit ausdrücklich ausgewiesenen eigenen Adaptern. Echte Screenreader- und IME-Abnahme sowie eine allgemeine Produkt- oder Plattformfreigabe folgen daraus nicht.
-
-[Browser-Abschlussbericht](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md) · [Statisches Referenzpaket](docs/research/experiments/2026-10-25/ip01-static/REPORT.md)
+**Nächster beschlossener Schritt:** [RD-001](docs/research/decisions/RD-001-STAGED-GENERATION.md) sieht einen Vergleich von direkter und gestufter Erzeugung vor. Der [Stufenpilot](docs/research/protocols/STAGED-GENERATION-PILOT.md) ist geplant, noch nicht gestartet; er ist von den Auswahlstudien getrennt.
 
 <details>
-<summary><strong>Forschungsumfang und verbleibende Originalfragen</strong></summary>
+<summary>Forschungsschritte und laufende Studien</summary>
 
-Stand: **25. Oktober 2026**. Projektstart: 23. Oktober 2026.
+Seit **Oktober 2026** wächst UI Contracts von der Standardsuche zu einem erprobbaren Arbeitsablauf. Die Schritte bauen aufeinander auf; jeder Nachweis hat seinen eigenen begrenzten Umfang.
 
-| Umfang | Dokumentierter Stand |
-| --- | ---: |
-| Untersuchte Kandidaten | 16 |
-| Bewertungen in der Matrix | 416 |
-| Begründete Befunde | 543 |
-| Quellenkennungen | S01–S129 |
-| Ausgeführte Prüfgruppen | 106 |
-| Unterschiedliche Prüfbedingungen | 702 |
-| Externe Originalklärungen | 2 |
+1. **Vier Domänen verbinden.** Die Recherche verglich 16 Kandidaten für Schnittstelle, Gestaltung, Verhalten und Accessibility. Daraus entstand [IP-01](docs/research/INTEGRATION-PROFILE.md): CEM, DTCG/CSS, SCXML und HTML/ARIA bleiben führend und werden über ausdrückliche Verknüpfungsregeln verbunden. Die Kandidatenrecherche wurde am 25. Oktober abgeschlossen.
+2. **Eine konkrete Komponente durchspielen.** [Autocomplete mit Overlay und ScrollArea](libraries/example/components/autocomplete/README.md) machte das Modell greifbar. Ein [Webreferenzlauf](docs/research/experiments/2026-10-25/ip01-browser/REPORT.md) prüfte Verhalten und zugängliche Beziehungen; ein separater [Design-Proof](examples/autocomplete/README.md) führte zur editierbaren OpenPencil-Datei und deckte Definitionslücken auf.
+3. **Unabhängig reproduzieren und Aufgaben fokussieren.** Weitere [Reproduktionsläufe](docs/research/STUDIES.md) trennten Übereinstimmung von Definitionstreue: ähnliche Designs konnten denselben Fehler enthalten. Daraus entstanden Reparaturen an Prüfhilfen sowie [fokussierte Rollen und quellengebundene Übergaben](skills/ui-contracts/references/workflow.md). Ihr allgemeiner Nutzen für zuverlässigere Erzeugung ist noch nicht belegt.
+4. **Bibliotheken und Ressourcen trennen.** Seit dem 29. Oktober können Projekte eigene [Bibliotheken](libraries/README.md) ausdrücklich auswählen. Komponenten und gemeinsame Assets sind getrennt; [lokale Fonts](docs/fonts/README.md) machen die Schriftgrundlage prüfbar. `example` bleibt Forschungsreferenz.
+5. **Ergebnisse sichtbar und messbar machen.** Eine [native OpenPencil-Präsentation](docs/skills/OPENPENCIL-PREVIEW.md) vereinheitlicht Vorschauen; explizite Theme-Zuordnungen ergänzen helle und dunkle Karten. Die [Geometriehilfe](skills/ui-contracts/references/geometry.md) unterstützt berechnete Formen, erprobt am [editierbaren Pie-Chart-Proof](examples/charts/pie-chart/README.md). Das sind begrenzte Werkzeugnachweise, keine allgemeine Designabnahme.
+6. **Von Eigenschaften zur begründeten Auswahl.** Seit dem 30. Oktober untersucht [UX-RULES-01](docs/research/studies/UX-RULES-01/README.md) formale Regeln für Eignung und Einsatzbedingungen. Ein [Autocomplete-Pilot](docs/research/studies/UX-RULES-01/pilots/AC-UX-01/README.md) erprobt DMN mit Regeltrace. Die neue [Studie SELECTION-01](docs/research/studies/UX-RULES-01/studies/SELECTION-01/README.md) ergänzt Select und Input und untersucht die Komponentenwahl für ein Personenformular mit drei bzw. 30 Ländervorwahlen. **Beide Builder folgen der damaligen Auswahlpolicy; zwei Implementierungsfehler wurden separat repariert.** Der [Folgelauf mit Select mit Suche](docs/research/studies/UX-RULES-01/studies/SELECTION-02/README.md) bestätigt die neue Auswahlpolicy mit vollständigerem Angebot; ein Fokusfehler wurde separat repariert. Die Suchgrenze von 15 Optionen ist Studienpolicy, kein allgemeines UX-Gesetz.
 
-Die 702 Bedingungen sind kein Erfolgszähler. Historische Verletzungen, unerwartete Ergebnisse und eigene Korrekturen bleiben erhalten; Wiederholungen werden nicht erneut gezählt. Originalfähigkeiten, zusätzliche Adapter und Vorschläge sind getrennt gekennzeichnet.
-
-Offen bleiben zwei konkret dokumentierte Herausgeberfragen zu **Google DESIGN.md X06** und **OpenUI X06**. Sie betreffen die geprüften Originalstände, sind keine Voraussetzungen der ausgewählten Webreferenz und blockieren den Rechercheabschluss nicht. Es wurden keine Autorenanfragen versandt.
-
-[Aktueller Nachweisstand](docs/research/CURRENT-STATUS.md) · [Die zwei Originalklärungen](docs/research/OPEN-QUESTIONS.md) · [Methodik](docs/research/METHODS.md)
+Zwei [Originalklärungen zu Google DESIGN.md und OpenUI](docs/research/OPEN-QUESTIONS.md) bleiben offen; sie blockieren weder den Rechercheabschluss noch die ausgewählte Webreferenz. Forschungszahlen und Grenzen stehen im [Nachweisstand](docs/research/CURRENT-STATUS.md), die Zählregeln in der [Methodik](docs/research/METHODS.md).
 
 </details>
 
-## Dokumentation
+## Weiterlesen
 
-Die vollständige Recherche liegt in **[`docs/research/`](docs/research/)**. Aktuelle Ergebnisse, Rohdaten und historische Zwischenstände sind dort erschlossen.
-
-| Du möchtest … | Einstieg |
+| Thema | Einstieg |
 | --- | --- |
-| Das Ergebnis und die Lesereihenfolge verstehen | [Rechercheabschluss](docs/research/RESEARCH-CLOSEOUT.md) |
-| Den gemeinsamen Vorschlag im Detail lesen | [Integrationsprofil IP-01](docs/research/INTEGRATION-PROFILE.md) |
-| Anforderungen und Kandidaten vergleichen | [Anforderungen](docs/research/REQUIREMENTS.md) · [Matrix](docs/research/MATRIX.md) |
-| Aussagen und Originalquellen nachvollziehen | [Befunde](docs/research/CLAIMS.md) · [Quellenregister](docs/research/SOURCES.md) |
-| Berichte, Versuche und Rohresultate finden | [Dokumentenindex](docs/research/DOCUMENT-INDEX.md) · [Experimentindex](docs/research/experiments/INDEX.md) |
-| Mit einem Coding-Agenten weiterarbeiten | [Umsetzungsübergabe](docs/research/IMPLEMENTATION-HANDOFF.md) · [Aufgaben](TASKS.md) |
-| Definitionen schrittweise prüfen | [Gemeinsame Prüfkette und ihre aktuellen Grenzen](docs/validation/README.md) |
-| Mit dem lokalen Contract-Skill arbeiten | [Skill und geprüfter Umfang](docs/skills/README.md) |
-| Aufgaben fokussieren und Wissen übergeben | [Rollen, Kontext und Übergaben](skills/ui-contracts/references/workflow.md) |
-| Reproduktionsfehler nachvollziehen und vermeiden | [Fehlerregister mit Reparaturen](docs/skills/ISSUES.md) · [Laufprotokoll](docs/skills/REPRODUCIBILITY.md) |
-| Den nächsten Forschungsansatz weiterentwickeln | [Entscheid RD-001](docs/research/decisions/RD-001-STAGED-GENERATION.md) · [Gestuftes Pilotvorgehen](docs/research/protocols/STAGED-GENERATION-PILOT.md) |
-| Frühere Entscheidungen und Zwischenstände lesen | [Originalkontext](docs/research/CONTEXT.md) · [Vollständiges README-Archiv](docs/research/archive/README-RESEARCH-ARCHIVE.md) |
-
-## Weiterarbeit
-
-**Erster Bibliothekseintrag:** Die [Definitionsbibliothek](libraries/example/README.md) beginnt mit [Autocomplete](libraries/example/components/autocomplete/README.md), Overlay und ScrollArea. Ein [eigenständiger Design-Proof](examples/autocomplete/README.md) hat einen neuen Agenten ohne übernommenen Gesprächsverlauf daraus ein editierbares OpenPencil-Dokument erstellen lassen. Die Originaldatei wurde unabhängig geprüft; aufgedeckte Definitionslücken bleiben dokumentiert. Die Definitionen führen; Zielartefakte werden daraus erzeugt.
-
-Die Forschungsgrundlage, konkrete Referenzdateien und ein ausgeführter Webforschungs-Host liegen vor. Eine produktive Komponentenbibliothek ist noch nicht umgesetzt. Vor der Produktumsetzung sind insbesondere Bindungssyntax, allgemeiner Resolver und der verbindliche fachliche Umfang festzulegen.
-
-Später können spezialisierte Skills die vier Domänen bearbeiten. Sie sollen Quellführung und Konfliktregeln respektieren; Stabilität und Reifegrad der gewählten Beiträge bleiben Auswahlkriterien. Solche Skills sind hier noch nicht erstellt.
-
-Die Recherche ist abgeschlossen. Für eine spätere Fortsetzung stehen der [Abnahmeplan](docs/research/INTEGRATION-ACCEPTANCE.md), die [Umsetzungsübergabe](docs/research/IMPLEMENTATION-HANDOFF.md) und die [Einordnung des plattformübergreifenden Ziels](docs/research/ARCHITECTURE-DIRECTION.md) bereit.
-
-[Studie AC-R01](docs/research/studies/AC-R01/README.md): Zwei getrennte Agenten erzeugen aus derselben Autocomplete-Definition Designs mit gleichen gemessenen Komponentenwerten, aber demselben Farbfehler. Vollständige Definitionstreue ist in diesem Versuch nicht erreicht.
-
-[Externe Analyse von AC-R02](docs/research/analyses/AC-R02/README.md): Auch der Lauf mit DeepSeek V4.1 Flash liefert ähnliche statische Designs, aber die damalige Prüfung akzeptiert denselben Farbfehler. Eine gemeinsame begrenzte Gegenprüfung, Regressionstests und aktualisierte Skill-/Laufanweisungen halten die Reparaturen nachvollziehbar; beide historischen Läufe bleiben erhalten. [Läufe und Modellangaben](docs/research/STUDIES.md).
-
-**Beschlossener nächster Schritt:** [RD-001](docs/research/decisions/RD-001-STAGED-GENERATION.md) strukturiert komplexe Komponenten über Teilverträge, prüfbare Übergaben und begrenzte Reparaturrunden. Zuerst wird das [gestufte Vorgehen an derselben Autocomplete-Definition untersucht](docs/research/protocols/STAGED-GENERATION-PILOT.md), anschließend an einer komplexeren Komponente. Das Vorgehen ist festgelegt; der neue Versuch ist noch nicht gestartet.
+| Architektur und Zuständigkeiten | [Integrationsprofil IP-01](docs/research/INTEGRATION-PROFILE.md) |
+| Standardsuche und Forschungsstand | [Rechercheabschluss](docs/research/RESEARCH-CLOSEOUT.md) · [Aktueller Nachweisstand](docs/research/CURRENT-STATUS.md) |
+| Anforderungen und Originalquellen | [Matrix](docs/research/MATRIX.md) · [Befunde](docs/research/CLAIMS.md) · [Quellenregister](docs/research/SOURCES.md) |
+| Definitionen und Ergebnisse prüfen | [Prüfkette und Grenzen](docs/validation/README.md) |
+| Mit Agenten arbeiten | [Rollen und Übergaben](skills/ui-contracts/references/workflow.md) · [Fehlerregister](docs/skills/ISSUES.md) |
+| Nächste Umsetzungsschritte | [Aufgaben](TASKS.md) · [Umsetzungsübergabe](docs/research/IMPLEMENTATION-HANDOFF.md) · [Abnahmeplan](docs/research/INTEGRATION-ACCEPTANCE.md) |
+| Quellen und historische Ergebnisse | [Dokumentenindex](docs/research/DOCUMENT-INDEX.md) · [README-Archiv](docs/research/archive/README-RESEARCH-ARCHIVE.md) |

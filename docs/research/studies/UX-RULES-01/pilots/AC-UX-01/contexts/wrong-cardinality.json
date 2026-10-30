@@ -1,0 +1,28 @@
+{
+  "library": "example",
+  "componentId": "ui-contracts:Autocomplete",
+  "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336",
+  "facts": {
+    "requiresNewEntries": {
+      "value": false,
+      "source": {
+        "kind": "scenario-fixture",
+        "reference": "wrong-cardinality"
+      }
+    },
+    "requiredCardinality": {
+      "value": "some",
+      "source": {
+        "kind": "scenario-fixture",
+        "reference": "wrong-cardinality"
+      }
+    },
+    "resultLabelsFamiliar": {
+      "value": true,
+      "source": {
+        "kind": "scenario-fixture",
+        "reference": "wrong-cardinality"
+      }
+    }
+  }
+}

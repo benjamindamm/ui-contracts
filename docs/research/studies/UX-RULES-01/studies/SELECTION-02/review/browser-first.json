@@ -1,0 +1,786 @@
+{
+  "tool": "BrowserOS neo MCP",
+  "scope": "Real UI interactions with synthetic data; DOM/event readback, not full AT/AX qualification",
+  "operations": {
+    "initial": {
+      "logs": [],
+      "ok": true,
+      "value": {
+        "a": {
+          "changed": false,
+          "page": 66,
+          "settled": false,
+          "value": {
+            "buttons": [
+              {
+                "expanded": null,
+                "id": "",
+                "popup": null
+              }
+            ],
+            "idsUnique": true,
+            "inputs": [
+              {
+                "component": "Input",
+                "id": "givenName-control",
+                "required": true,
+                "type": "text"
+              },
+              {
+                "component": "Input",
+                "id": "familyName-control",
+                "required": true,
+                "type": "text"
+              },
+              {
+                "component": "Input",
+                "id": "email-control",
+                "required": true,
+                "type": "email"
+              },
+              {
+                "component": "Input",
+                "id": "nationalNumber-control",
+                "required": true,
+                "type": "tel"
+              }
+            ],
+            "resources": [
+              "http://127.0.0.1:8767/a/styles.css",
+              "http://127.0.0.1:8767/a/form.js",
+              "http://127.0.0.1:8767/a/Inter-Regular.woff2",
+              "http://127.0.0.1:8767/a/Inter-Bold.woff2",
+              "http://127.0.0.1:8767/favicon.ico"
+            ],
+            "selects": [
+              {
+                "id": "country-control",
+                "keys": [
+                  "",
+                  "CH",
+                  "DE",
+                  "FR"
+                ]
+              }
+            ]
+          }
+        },
+        "aEmpty": {
+          "changed": false,
+          "page": 66,
+          "settled": false,
+          "value": {
+            "focus": "givenName-control",
+            "status": [
+              "givenName-control",
+              "familyName-control",
+              "email-control",
+              "nationalNumber-control",
+              "country-control"
+            ],
+            "text": "Persönliche Angaben\n\nAlle Felder sind Pflichtfelder. Ihre Angaben werden nur lokal geprüft.\n\nVorname\n\nBitte dieses Feld ausfüllen.\n\nNachname\n\nBitte dieses Feld ausfüllen.\n\nE-Mail\n\nBitte dieses Feld ausfüllen.\n\nRufnummer\n\nBitte dieses Feld ausfüllen.\n\nLändervorwahl\nBitte wählen\nSchweiz (+41)\nDeutschland (+49)\nFrankreich (+33)\n\nWählen Sie das Land Ihrer Rufnummer.\n\nBitte ein Land auswählen.\n\nAngaben prüfen"
+          }
+        },
+        "aFilled": {
+          "changed": false,
+          "page": 66,
+          "settled": false,
+          "value": {
+            "events": [
+              {
+                "component": null,
+                "detail": {
+                  "value": "Ada"
+                },
+                "id": "givenName-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "Beispiel"
+                },
+                "id": "familyName-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "ada@example.test"
+                },
+                "id": "email-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "0123 456789"
+                },
+                "id": "nationalNumber-control"
+              }
+            ],
+            "phone": "0123 456789"
+          }
+        },
+        "b": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "buttons": [
+              {
+                "expanded": "false",
+                "id": "country-trigger",
+                "popup": "dialog"
+              },
+              {
+                "expanded": null,
+                "id": "country-close",
+                "popup": null
+              },
+              {
+                "expanded": null,
+                "id": "",
+                "popup": null
+              }
+            ],
+            "idsUnique": true,
+            "inputs": [
+              {
+                "component": "Input",
+                "id": "person-givenName",
+                "required": true,
+                "type": "text"
+              },
+              {
+                "component": "Input",
+                "id": "person-familyName",
+                "required": true,
+                "type": "text"
+              },
+              {
+                "component": "Input",
+                "id": "person-email",
+                "required": true,
+                "type": "email"
+              },
+              {
+                "component": "Input",
+                "id": "person-nationalNumber",
+                "required": true,
+                "type": "tel"
+              },
+              {
+                "component": "SelectWithSearch",
+                "id": "country-search",
+                "required": false,
+                "type": "search"
+              },
+              {
+                "component": "SelectWithSearch",
+                "id": "country-key",
+                "required": false,
+                "type": "hidden"
+              }
+            ],
+            "resources": [
+              "http://127.0.0.1:8767/b/styles.css",
+              "http://127.0.0.1:8767/b/form.js"
+            ],
+            "selects": []
+          }
+        },
+        "bEmpty": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "focus": "person-givenName",
+            "status": [
+              "person-givenName",
+              "person-familyName",
+              "person-email",
+              "person-nationalNumber",
+              "country-trigger"
+            ],
+            "text": "Persönliche Angaben\n\nAlle Felder sind erforderlich. Ihre Angaben werden nur lokal geprüft.\n\nVorname\n\nBitte dieses Feld ausfüllen.\n\nNachname\n\nBitte dieses Feld ausfüllen.\n\nE-Mail\n\nBitte dieses Feld ausfüllen.\n\nRufnummer\n\nBitte dieses Feld ausfüllen.\n\nLändervorwahl\nBitte wählen ▾\n\nLand oder Vorwahl in der Suche eingeben.\n\nBitte eine Ländervorwahl wählen.\n\nAngaben lokal prüfen"
+          }
+        },
+        "bFilled": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "events": [
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "Ada"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "Beispiel"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "ada@example.test"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "0123 456789"
+                },
+                "id": ""
+              }
+            ],
+            "phone": "0123 456789"
+          }
+        }
+      }
+    },
+    "choice": {
+      "logs": [],
+      "ok": true,
+      "value": {
+        "aEdited": {
+          "changed": false,
+          "page": 66,
+          "settled": false,
+          "value": {
+            "events": [
+              {
+                "component": null,
+                "detail": {
+                  "value": "Ada"
+                },
+                "id": "givenName-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "Beispiel"
+                },
+                "id": "familyName-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "ada@example.test"
+                },
+                "id": "email-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "0123 456789"
+                },
+                "id": "nationalNumber-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "reason": "user",
+                  "value": "CH"
+                },
+                "id": "country-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "Ada Neu"
+                },
+                "id": "givenName-control"
+              }
+            ],
+            "status": ""
+          }
+        },
+        "aSuccess": {
+          "changed": false,
+          "page": 66,
+          "settled": false,
+          "value": {
+            "events": [
+              {
+                "component": null,
+                "detail": {
+                  "value": "Ada"
+                },
+                "id": "givenName-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "Beispiel"
+                },
+                "id": "familyName-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "ada@example.test"
+                },
+                "id": "email-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "value": "0123 456789"
+                },
+                "id": "nationalNumber-control"
+              },
+              {
+                "component": null,
+                "detail": {
+                  "reason": "user",
+                  "value": "CH"
+                },
+                "id": "country-control"
+              }
+            ],
+            "status": "Alle Pflichtangaben sind lokal geprüft. Es wurden keine Daten versendet.",
+            "value": "CH"
+          }
+        },
+        "escape": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "expanded": "false",
+            "focus": "country-trigger",
+            "key": "",
+            "query": ""
+          }
+        },
+        "opened": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "expanded": "true",
+            "focus": "country-search",
+            "keys": [
+              "CH",
+              "DE",
+              "FR",
+              "CA",
+              "US",
+              "GR",
+              "NL",
+              "BE",
+              "ES",
+              "HU",
+              "IT",
+              "AT",
+              "GB",
+              "DK",
+              "SE",
+              "NO",
+              "PL",
+              "AU",
+              "NZ",
+              "JP",
+              "TR",
+              "IN",
+              "PT",
+              "LU",
+              "IE",
+              "FI",
+              "HR",
+              "SI",
+              "CZ",
+              "SK"
+            ]
+          }
+        },
+        "unknown": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "display": "Bitte wählen",
+            "key": "",
+            "options": 0,
+            "status": "Keine Länder gefunden."
+          }
+        },
+        "unknownEnter": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "expanded": "true",
+            "key": ""
+          }
+        }
+      }
+    },
+    "filter": {
+      "logs": [],
+      "ok": true,
+      "value": {
+        "active": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "focus": "country-option-IN",
+            "key": "",
+            "selected": []
+          }
+        },
+        "committed": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "display": "Indien (+91)",
+            "events": [
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "Ada"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "Beispiel"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "ada@example.test"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "0123 456789"
+                },
+                "id": ""
+              },
+              {
+                "component": "SelectWithSearch",
+                "detail": {
+                  "reason": "user",
+                  "value": "IN"
+                },
+                "id": "country-control"
+              }
+            ],
+            "expanded": "false",
+            "focus": "country-trigger",
+            "key": "IN",
+            "query": ""
+          }
+        },
+        "filtered": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "display": "Bitte wählen",
+            "key": "",
+            "options": [
+              {
+                "key": "IN",
+                "selected": "false"
+              }
+            ]
+          }
+        },
+        "retained": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "display": "Indien (+91)",
+            "focus": "country-trigger",
+            "key": "IN",
+            "query": ""
+          }
+        },
+        "separate": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "display": "Indien (+91)",
+            "key": "IN",
+            "options": [
+              "CA",
+              "US"
+            ],
+            "status": ""
+          }
+        },
+        "success": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "key": "IN",
+            "phone": "0123 456789",
+            "status": "Ihre Angaben wurden lokal geprüft. Es wurden keine Daten versendet."
+          }
+        }
+      }
+    },
+    "scroll": {
+      "logs": [],
+      "ok": true,
+      "value": {
+        "closed": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "expanded": "false",
+            "focus": "",
+            "key": "US"
+          }
+        },
+        "edit": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "events": [
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "Ada"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "Beispiel"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "ada@example.test"
+                },
+                "id": ""
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "0123 456789"
+                },
+                "id": ""
+              },
+              {
+                "component": "SelectWithSearch",
+                "detail": {
+                  "reason": "user",
+                  "value": "IN"
+                },
+                "id": "country-control"
+              },
+              {
+                "component": "SelectWithSearch",
+                "detail": {
+                  "reason": "user",
+                  "value": "SK"
+                },
+                "id": "country-control"
+              },
+              {
+                "component": "SelectWithSearch",
+                "detail": {
+                  "reason": "user",
+                  "value": "US"
+                },
+                "id": "country-control"
+              },
+              {
+                "component": "Input",
+                "detail": {
+                  "value": "Ada Neu"
+                },
+                "id": ""
+              }
+            ],
+            "status": ""
+          }
+        },
+        "last": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "committed": "IN",
+            "focus": "country-option-SK",
+            "key": "SK",
+            "scrollTop": 830,
+            "selected": [
+              "IN"
+            ],
+            "visible": true
+          }
+        },
+        "shared": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "display": "Vereinigte Staaten (+1)",
+            "key": "US"
+          }
+        }
+      }
+    },
+    "closecheck": {
+      "logs": [],
+      "ok": true,
+      "value": {
+        "after": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "focus": "<body><main><h1>Persönliche Angaben</h1><p>Alle Felder sind erforderlich. Ihre Angaben werden nur lokal geprüft.</p><form id=\"personal-form\" novalidate=\"\"><div data-component=\"Input\"><label data-part=\"label\" for=\"person-givenName\">Vorname</label><input data-part=\"control\" id=\"person-givenName\" name=\"givenName\" type=\"text\" autocomplete=\"given-name\" required=\"\"><p data-part=\"error\" id=\"givenName-error\" hidden=\"\">Bitte dieses Feld ausfüllen.</p></div><div data-component=\"Input\"><label data-part=\"la",
+            "open": false
+          }
+        },
+        "before": {
+          "changed": false,
+          "page": 67,
+          "settled": false,
+          "value": {
+            "focus": "<input id=\"country-search\" data-part=\"search\" type=\"search\" autocomplete=\"off\" aria-controls=\"country-options\">",
+            "open": true
+          }
+        },
+        "snapshot": {
+          "refs": [
+            {
+              "backendNodeId": 2,
+              "name": "Vorname",
+              "nth": 0,
+              "ref": "e1",
+              "role": "textbox"
+            },
+            {
+              "backendNodeId": 3,
+              "name": "Nachname",
+              "nth": 0,
+              "ref": "e2",
+              "role": "textbox"
+            },
+            {
+              "backendNodeId": 4,
+              "name": "E-Mail",
+              "nth": 0,
+              "ref": "e3",
+              "role": "textbox"
+            },
+            {
+              "backendNodeId": 5,
+              "name": "Rufnummer",
+              "nth": 0,
+              "ref": "e4",
+              "role": "textbox"
+            },
+            {
+              "backendNodeId": 38,
+              "name": "Ländervorwahl Vereinigte Staaten (+1)",
+              "nth": 0,
+              "ref": "e5",
+              "role": "button"
+            },
+            {
+              "backendNodeId": 82,
+              "name": "Angaben lokal prüfen",
+              "nth": 0,
+              "ref": "e6",
+              "role": "button"
+            }
+          ],
+          "text": "- main\n  - heading \"Persönliche Angaben\" [level=1]\n  - form\n    - textbox \"Vorname\" [required] [ref=e1]: \"Ada Neu\"\n    - textbox \"Nachname\" [required] [ref=e2]: \"Beispiel\"\n    - textbox \"E-Mail\" [required] [ref=e3]: \"ada@example.test\"\n    - textbox \"Rufnummer\" [required] [ref=e4]: \"0123 456789\"\n    - button \"Ländervorwahl Vereinigte Staaten (+1)\" [collapsed] [ref=e5]\n    - button \"Angaben lokal prüfen\" [ref=e6]",
+          "url": "http://127.0.0.1:8767/b/index.html"
+        }
+      }
+    },
+    "focusTrace": {
+      "logs": [],
+      "ok": true,
+      "value": {
+        "changed": false,
+        "page": 67,
+        "settled": false,
+        "value": {
+          "focus": "BODY#",
+          "trace": [
+            {
+              "id": "country-value",
+              "related": null,
+              "type": "pointerdown"
+            },
+            {
+              "id": "country-trigger",
+              "related": null,
+              "type": "focusin"
+            },
+            {
+              "id": "country-value",
+              "related": null,
+              "type": "pointerup"
+            },
+            {
+              "id": "country-value",
+              "related": null,
+              "type": "click"
+            },
+            {
+              "id": "country-trigger",
+              "related": "country-search",
+              "type": "focusout"
+            },
+            {
+              "id": "country-search",
+              "related": "country-trigger",
+              "type": "focusin"
+            },
+            {
+              "id": "country-close",
+              "related": null,
+              "type": "pointerdown"
+            },
+            {
+              "id": "country-search",
+              "related": "country-close",
+              "type": "focusout"
+            },
+            {
+              "id": "country-trigger",
+              "related": null,
+              "type": "pointerup"
+            },
+            {
+              "id": "country-control",
+              "related": null,
+              "type": "click"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

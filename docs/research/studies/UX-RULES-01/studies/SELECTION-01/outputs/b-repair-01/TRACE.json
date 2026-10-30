@@ -1,0 +1,41 @@
+{
+  "scenarioId": "SELECTION-01-b",
+  "revision": "repair-01",
+  "fixes": [
+    "SEL-B01",
+    "SEL-B02"
+  ],
+  "release": false,
+  "compiler": {
+    "exitCode": 0,
+    "target": "ES2020",
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "strict": true
+  },
+  "copiedByteIdentical": {
+    "index.html": true,
+    "styles.css": true,
+    "decision.json": true,
+    "policy-evaluation.json": true
+  },
+  "originalHashes": {
+    "REPORT.md": "41cd23f31063156aa27e7365d043df02aa3dca8dd13997648665df5f216977c9",
+    "TRACE.json": "21c463a8fa90554e4f0f7b5c0414ccc4859fa97c2d704a5eeee29582167a881e",
+    "decision.json": "b7fccf8c65dbfa2ec13e1fbc224014d16998ff093f8f688ae9d82d33baab595b",
+    "form.js": "a90cbe5e79450d0bb49dae9b9b53187fb65b7c6e1296f4b02aaaa6c31db23b47",
+    "form.ts": "b290c3344d7838902f728ffaa7ed390ae62ccfd60dbdb1366e9e63dd58adce60",
+    "index.html": "2a1cbadb6622102202946d52f4c4681d76056107c462ca025a1e7b30f919392e",
+    "policy-evaluation.json": "1859c6027015bfb892fffbe55de44dbcd7d771b9be2e2d14bc9da667440e41b8",
+    "styles.css": "be2d73e3204b33fdde321231fb482be07edbb066066586e3e8d55409fb0d4201"
+  },
+  "browserTestPerformed": false,
+  "changedRuntimeSources": [
+    "form.ts",
+    "form.js"
+  ],
+  "sourceBinding": "Unchanged decision.json and policy-evaluation.json copied from sealed first delivery"
+}

@@ -1,0 +1,124 @@
+{
+  "format": "ui-contracts-ux-pilot/0.1",
+  "status": "research-candidate-not-production",
+  "library": "example",
+  "componentId": "ui-contracts:Autocomplete",
+  "componentPath": "components/autocomplete/component.json",
+  "definition": {
+    "manifest": "../../../baseline.json",
+    "sha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+    "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336"
+  },
+  "logic": {
+    "file": "autocomplete-ux.dmn",
+    "sha256": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+    "decision": "assessment"
+  },
+  "vocabulary": {
+    "file": "context-vocabulary.json",
+    "sha256": "cc6174bd395da9c56fbad0d88291cd21128443e7796278c7ae70aac429cffc5f"
+  },
+  "sources": {
+    "file": "sources.json",
+    "sha256": "6bf4b707add06e41eae1a642e49c47b96a321b506ea4c28e316f0fd02a8044da"
+  },
+  "rules": [
+    {
+      "id": "AC-UX-001",
+      "decisionId": "creation",
+      "strength": "capability-constraint",
+      "status": "candidate",
+      "purpose": "Exclude tasks requiring this control to confirm newly created values.",
+      "rationale": "The existing definition commits a key from available results; free text is not a newly committed result.",
+      "evidence": [
+        "capability-text",
+        "interface",
+        "behavior"
+      ],
+      "exceptionsAllowed": false
+    },
+    {
+      "id": "AC-UX-002",
+      "decisionId": "cardinality",
+      "strength": "capability-constraint",
+      "status": "candidate",
+      "purpose": "Exclude tasks requiring simultaneous multiple committed selections.",
+      "rationale": "The bound interface describes one string-valued committed key, not a collection.",
+      "evidence": [
+        "interface"
+      ],
+      "exceptionsAllowed": false
+    },
+    {
+      "id": "AC-UX-003",
+      "decisionId": "labels",
+      "strength": "recommendation",
+      "status": "candidate",
+      "purpose": "Prefer result labels familiar to the intended users.",
+      "rationale": "Typing and recognizing results depends on meaningful audience-specific labels; nonempty strings alone do not prove familiarity.",
+      "evidence": [
+        "USWDS-familiar-labels",
+        "accessibility"
+      ],
+      "exceptionsAllowed": true
+    }
+  ],
+  "nativeRows": {
+    "AC-UX-001_compatible": {
+      "ruleId": "AC-UX-001",
+      "outcome": "compatible"
+    },
+    "AC-UX-001_incompatible": {
+      "ruleId": "AC-UX-001",
+      "outcome": "incompatible"
+    },
+    "AC-UX-001_unknown": {
+      "ruleId": "AC-UX-001",
+      "outcome": "unknown"
+    },
+    "AC-UX-001_invalid_input": {
+      "ruleId": "AC-UX-001",
+      "outcome": "invalid-input"
+    },
+    "AC-UX-002_compatible": {
+      "ruleId": "AC-UX-002",
+      "outcome": "compatible"
+    },
+    "AC-UX-002_incompatible": {
+      "ruleId": "AC-UX-002",
+      "outcome": "incompatible"
+    },
+    "AC-UX-002_unknown": {
+      "ruleId": "AC-UX-002",
+      "outcome": "unknown"
+    },
+    "AC-UX-002_invalid_input": {
+      "ruleId": "AC-UX-002",
+      "outcome": "invalid-input"
+    },
+    "AC-UX-003_satisfied": {
+      "ruleId": "AC-UX-003",
+      "outcome": "satisfied"
+    },
+    "AC-UX-003_needs_review": {
+      "ruleId": "AC-UX-003",
+      "outcome": "needs-review"
+    },
+    "AC-UX-003_excepted": {
+      "ruleId": "AC-UX-003",
+      "outcome": "excepted"
+    },
+    "AC-UX-003_unknown": {
+      "ruleId": "AC-UX-003",
+      "outcome": "unknown"
+    },
+    "AC-UX-003_invalid_input": {
+      "ruleId": "AC-UX-003",
+      "outcome": "invalid-input"
+    }
+  },
+  "exceptionReviewers": [
+    "research-author"
+  ],
+  "exceptionPolicy": "Only AC-UX-003 can be excepted, with matching library/component/revision and nonempty rationale/reviewer. Declaration is not cryptographic authorization or verified research truth."
+}

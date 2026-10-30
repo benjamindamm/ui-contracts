@@ -1,0 +1,52 @@
+{
+  "external": [
+    {
+      "id": "USWDS-familiar-labels",
+      "url": "https://designsystem.digital.gov/components/combo-box/",
+      "section": "Usability guidance / Use option strings familiar to users",
+      "checkedOn": "2026-10-30",
+      "status": "external recommendation adapted as proposal, not adopted as universal rule",
+      "snapshot": "Remote source not archived; local record is an attributed research observation, not a frozen copy of the webpage."
+    }
+  ],
+  "localAnchors": [
+    {
+      "id": "interface",
+      "path": "components/autocomplete/interface.json",
+      "kind": "json-pointer",
+      "anchor": "/modules/0/declarations/0/noSuchMember",
+      "expected": "string | undefined",
+      "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+    },
+    {
+      "id": "visual",
+      "path": "tokens.json",
+      "kind": "json-pointer",
+      "anchor": "/autocomplete/fontFamily/$value",
+      "expected": "Inter",
+      "sha256": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+    },
+    {
+      "id": "behavior",
+      "path": "components/autocomplete/behavior.scxml",
+      "kind": "scxml-state",
+      "anchor": "closed",
+      "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+    },
+    {
+      "id": "accessibility",
+      "path": "components/autocomplete/accessibility.rules.json",
+      "kind": "json-pointer",
+      "anchor": "/optionNameSource",
+      "expected": "result.label",
+      "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+    },
+    {
+      "id": "capability-text",
+      "path": "components/autocomplete/README.md",
+      "kind": "literal-text",
+      "anchor": "Freier Text wird nicht als neuer Ergebniswert best\u00e4tigt.",
+      "sha256": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540"
+    }
+  ]
+}

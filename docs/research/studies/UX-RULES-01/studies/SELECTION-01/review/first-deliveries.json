@@ -1,0 +1,83 @@
+{
+  "capturedAt": "2026-10-30T21:48:04.199672+00:00",
+  "phase": "first deliveries before central browser review; agents final messages already received",
+  "files": {
+    "outputs/a/REPORT.md": "40dab73e87a03114394e118150d4f1e4c3deda55a32d99b2dbf93c9ab9e43551",
+    "outputs/a/TRACE.json": "50b511c1df6e2a8e937ffd9f6f0da38c356a9f933c60a894fe6da4d5daee2ed2",
+    "outputs/a/decision.json": "20d483f60890242be63ce37e851d31ecff6cea5401f417e402d8b67894d9bded",
+    "outputs/a/form.js": "82bda6732c338ed0d565bc4ccdbea3ab2b9aa7999b3da27f2d543a7f77e6f1e3",
+    "outputs/a/form.ts": "0624dcf773f846aab62f4d060a98e884fa380a524c9a2ee31404b0c07e5ec745",
+    "outputs/a/index.html": "e7e7b72f89d56a78dc66abd20945612b687df743a0f79e1b57a7cc62af6ad334",
+    "outputs/a/styles.css": "3fbdf1cc407677799804aa753a7f4d0a55c6239134dc48641bc542f5cdf3386d",
+    "outputs/b/REPORT.md": "41cd23f31063156aa27e7365d043df02aa3dca8dd13997648665df5f216977c9",
+    "outputs/b/TRACE.json": "21c463a8fa90554e4f0f7b5c0414ccc4859fa97c2d704a5eeee29582167a881e",
+    "outputs/b/decision.json": "b7fccf8c65dbfa2ec13e1fbc224014d16998ff093f8f688ae9d82d33baab595b",
+    "outputs/b/form.js": "a90cbe5e79450d0bb49dae9b9b53187fb65b7c6e1296f4b02aaaa6c31db23b47",
+    "outputs/b/form.ts": "b290c3344d7838902f728ffaa7ed390ae62ccfd60dbdb1366e9e63dd58adce60",
+    "outputs/b/index.html": "2a1cbadb6622102202946d52f4c4681d76056107c462ca025a1e7b30f919392e",
+    "outputs/b/policy-evaluation.json": "1859c6027015bfb892fffbe55de44dbcd7d771b9be2e2d14bc9da667440e41b8",
+    "outputs/b/styles.css": "be2d73e3204b33fdde321231fb482be07edbb066066586e3e8d55409fb0d4201"
+  },
+  "filesystemTimes": {
+    "outputs/a/REPORT.md": {
+      "birthTime": 1793396844.4764347,
+      "modifiedTime": 1793396844.478327
+    },
+    "outputs/a/TRACE.json": {
+      "birthTime": 1793396844.478528,
+      "modifiedTime": 1793396844.479977
+    },
+    "outputs/a/decision.json": {
+      "birthTime": 1793396804.8426216,
+      "modifiedTime": 1793396804.844635
+    },
+    "outputs/a/form.js": {
+      "birthTime": 1793396820.973135,
+      "modifiedTime": 1793396844.4705029
+    },
+    "outputs/a/form.ts": {
+      "birthTime": 1793396844.0074892,
+      "modifiedTime": 1793396844.0077567
+    },
+    "outputs/a/index.html": {
+      "birthTime": 1793396820.1541681,
+      "modifiedTime": 1793396820.1563556
+    },
+    "outputs/a/styles.css": {
+      "birthTime": 1793396820.1592453,
+      "modifiedTime": 1793396820.160827
+    },
+    "outputs/b/REPORT.md": {
+      "birthTime": 1793396853.573684,
+      "modifiedTime": 1793396853.5738065
+    },
+    "outputs/b/TRACE.json": {
+      "birthTime": 1793396853.5742073,
+      "modifiedTime": 1793396853.57426
+    },
+    "outputs/b/decision.json": {
+      "birthTime": 1793396808.1259608,
+      "modifiedTime": 1793396808.1277254
+    },
+    "outputs/b/form.js": {
+      "birthTime": 1793396824.900717,
+      "modifiedTime": 1793396836.230915
+    },
+    "outputs/b/form.ts": {
+      "birthTime": 1793396824.4481678,
+      "modifiedTime": 1793396835.7645113
+    },
+    "outputs/b/index.html": {
+      "birthTime": 1793396824.4479468,
+      "modifiedTime": 1793396824.4480488
+    },
+    "outputs/b/policy-evaluation.json": {
+      "birthTime": 1793396836.236556,
+      "modifiedTime": 1793396836.9252365
+    },
+    "outputs/b/styles.css": {
+      "birthTime": 1793396824.4483926,
+      "modifiedTime": 1793396835.7647896
+    }
+  }
+}

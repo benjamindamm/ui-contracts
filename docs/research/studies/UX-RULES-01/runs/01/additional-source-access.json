@@ -1,0 +1,12 @@
+[
+  {
+    "url": "http://sipt07.si.ehu.es/evalaccess3/ugl.xsd",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "interpretation": "Single retrieval failure, not proof of unavailable archives or an abandoned project."
+  },
+  {
+    "url": "https://dial.uclouvain.be/pr/boreal/object/boreal%3A18267/datastream/PDF_01/view",
+    "error": "<urlopen error timed out>",
+    "interpretation": "Single retrieval failure, not proof of unavailable archives or an abandoned project."
+  }
+]

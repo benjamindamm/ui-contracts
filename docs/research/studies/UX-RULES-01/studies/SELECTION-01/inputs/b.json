@@ -1,0 +1,209 @@
+{
+  "scenarioId": "SELECTION-01-b",
+  "library": "example",
+  "options": [
+    {
+      "key": "CH",
+      "country": "Schweiz",
+      "dialCode": "+41",
+      "label": "Schweiz (+41)"
+    },
+    {
+      "key": "DE",
+      "country": "Deutschland",
+      "dialCode": "+49",
+      "label": "Deutschland (+49)"
+    },
+    {
+      "key": "FR",
+      "country": "Frankreich",
+      "dialCode": "+33",
+      "label": "Frankreich (+33)"
+    },
+    {
+      "key": "CA",
+      "country": "Kanada",
+      "dialCode": "+1",
+      "label": "Kanada (+1)"
+    },
+    {
+      "key": "US",
+      "country": "Vereinigte Staaten",
+      "dialCode": "+1",
+      "label": "Vereinigte Staaten (+1)"
+    },
+    {
+      "key": "GR",
+      "country": "Griechenland",
+      "dialCode": "+30",
+      "label": "Griechenland (+30)"
+    },
+    {
+      "key": "NL",
+      "country": "Niederlande",
+      "dialCode": "+31",
+      "label": "Niederlande (+31)"
+    },
+    {
+      "key": "BE",
+      "country": "Belgien",
+      "dialCode": "+32",
+      "label": "Belgien (+32)"
+    },
+    {
+      "key": "ES",
+      "country": "Spanien",
+      "dialCode": "+34",
+      "label": "Spanien (+34)"
+    },
+    {
+      "key": "HU",
+      "country": "Ungarn",
+      "dialCode": "+36",
+      "label": "Ungarn (+36)"
+    },
+    {
+      "key": "IT",
+      "country": "Italien",
+      "dialCode": "+39",
+      "label": "Italien (+39)"
+    },
+    {
+      "key": "AT",
+      "country": "Österreich",
+      "dialCode": "+43",
+      "label": "Österreich (+43)"
+    },
+    {
+      "key": "GB",
+      "country": "Vereinigtes Königreich",
+      "dialCode": "+44",
+      "label": "Vereinigtes Königreich (+44)"
+    },
+    {
+      "key": "DK",
+      "country": "Dänemark",
+      "dialCode": "+45",
+      "label": "Dänemark (+45)"
+    },
+    {
+      "key": "SE",
+      "country": "Schweden",
+      "dialCode": "+46",
+      "label": "Schweden (+46)"
+    },
+    {
+      "key": "NO",
+      "country": "Norwegen",
+      "dialCode": "+47",
+      "label": "Norwegen (+47)"
+    },
+    {
+      "key": "PL",
+      "country": "Polen",
+      "dialCode": "+48",
+      "label": "Polen (+48)"
+    },
+    {
+      "key": "AU",
+      "country": "Australien",
+      "dialCode": "+61",
+      "label": "Australien (+61)"
+    },
+    {
+      "key": "NZ",
+      "country": "Neuseeland",
+      "dialCode": "+64",
+      "label": "Neuseeland (+64)"
+    },
+    {
+      "key": "JP",
+      "country": "Japan",
+      "dialCode": "+81",
+      "label": "Japan (+81)"
+    },
+    {
+      "key": "TR",
+      "country": "Türkei",
+      "dialCode": "+90",
+      "label": "Türkei (+90)"
+    },
+    {
+      "key": "IN",
+      "country": "Indien",
+      "dialCode": "+91",
+      "label": "Indien (+91)"
+    },
+    {
+      "key": "PT",
+      "country": "Portugal",
+      "dialCode": "+351",
+      "label": "Portugal (+351)"
+    },
+    {
+      "key": "LU",
+      "country": "Luxemburg",
+      "dialCode": "+352",
+      "label": "Luxemburg (+352)"
+    },
+    {
+      "key": "IE",
+      "country": "Irland",
+      "dialCode": "+353",
+      "label": "Irland (+353)"
+    },
+    {
+      "key": "FI",
+      "country": "Finnland",
+      "dialCode": "+358",
+      "label": "Finnland (+358)"
+    },
+    {
+      "key": "HR",
+      "country": "Kroatien",
+      "dialCode": "+385",
+      "label": "Kroatien (+385)"
+    },
+    {
+      "key": "SI",
+      "country": "Slowenien",
+      "dialCode": "+386",
+      "label": "Slowenien (+386)"
+    },
+    {
+      "key": "CZ",
+      "country": "Tschechien",
+      "dialCode": "+420",
+      "label": "Tschechien (+420)"
+    },
+    {
+      "key": "SK",
+      "country": "Slowakei",
+      "dialCode": "+421",
+      "label": "Slowakei (+421)"
+    }
+  ],
+  "facts": {
+    "fixedValuesRequired": true,
+    "queryEditingAllowed": true,
+    "filteringProviderAvailable": true,
+    "searchExplicitlyRequired": null
+  },
+  "orderingPolicy": {
+    "priorityKeys": [
+      "CH",
+      "DE",
+      "FR"
+    ],
+    "remaining": "numeric dialCode ascending, ties country key ascending",
+    "origin": "Supplied study/product preference; no geolocation inferred"
+  },
+  "source": {
+    "url": "https://raw.githubusercontent.com/google/libphonenumber/1ae0d623301b302f828628dfc368c983e8d27141/resources/PhoneNumberMetadata.xml",
+    "commit": "1ae0d623301b302f828628dfc368c983e8d27141",
+    "metadataSha256": "b6491939ddaeb9d585a34fe0f0ebd096e83c5ac9a1c5d6dddf38ba4b162b28ca",
+    "license": "Apache-2.0 upstream declaration; only selected fact pairs copied, labels are authored study fixtures",
+    "countryCountInStudy": 30,
+    "notCompleteWorldDataset": true
+  }
+}

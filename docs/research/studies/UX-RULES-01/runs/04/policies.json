@@ -1,0 +1,98 @@
+[
+  {
+    "@context": {
+      "odrl": "http://www.w3.org/ns/odrl/2/"
+    },
+    "@id": "urn:ux-probe:policy",
+    "@type": "odrl:Set",
+    "odrl:permission": [
+      {
+        "@type": "odrl:Permission",
+        "odrl:target": {
+          "@id": "urn:ui-contracts:example:Autocomplete"
+        },
+        "odrl:action": {
+          "@id": "odrl:use"
+        }
+      }
+    ],
+    "odrl:prohibition": [
+      {
+        "@type": "odrl:Prohibition",
+        "odrl:target": {
+          "@id": "urn:ui-contracts:example:Autocomplete"
+        },
+        "odrl:action": {
+          "@id": "odrl:use"
+        }
+      }
+    ],
+    "odrl:conflict": {
+      "@id": "odrl:invalid"
+    }
+  },
+  {
+    "@context": {
+      "odrl": "http://www.w3.org/ns/odrl/2/"
+    },
+    "@id": "urn:ux-probe:policy",
+    "@type": "odrl:Set",
+    "odrl:permission": [
+      {
+        "@type": "odrl:Permission",
+        "odrl:target": {
+          "@id": "urn:ui-contracts:example:Autocomplete"
+        },
+        "odrl:action": {
+          "@id": "odrl:use"
+        }
+      }
+    ],
+    "odrl:prohibition": [
+      {
+        "@type": "odrl:Prohibition",
+        "odrl:target": {
+          "@id": "urn:ui-contracts:example:Autocomplete"
+        },
+        "odrl:action": {
+          "@id": "odrl:use"
+        }
+      }
+    ],
+    "odrl:conflict": {
+      "@id": "odrl:perm"
+    }
+  },
+  {
+    "@context": {
+      "odrl": "http://www.w3.org/ns/odrl/2/"
+    },
+    "@id": "urn:ux-probe:policy",
+    "@type": "odrl:Set",
+    "odrl:permission": [
+      {
+        "@type": "odrl:Permission",
+        "odrl:target": {
+          "@id": "urn:ui-contracts:example:Autocomplete"
+        },
+        "odrl:action": {
+          "@id": "odrl:use"
+        }
+      }
+    ],
+    "odrl:prohibition": [
+      {
+        "@type": "odrl:Prohibition",
+        "odrl:target": {
+          "@id": "urn:ui-contracts:example:Autocomplete"
+        },
+        "odrl:action": {
+          "@id": "odrl:use"
+        }
+      }
+    ],
+    "odrl:conflict": {
+      "@id": "odrl:prohibit"
+    }
+  }
+]

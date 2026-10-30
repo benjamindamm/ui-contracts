@@ -1,0 +1,490 @@
+[
+  {
+    "id": "dmn-eligibility-complete",
+    "expectationMet": true,
+    "scope": "T01-T04 native XML model evaluation",
+    "actual": {
+      "stage": "evaluated",
+      "value": "candidate"
+    }
+  },
+  {
+    "id": "dmn-eligibility-excluded",
+    "expectationMet": true,
+    "scope": "T01-T04 native XML model evaluation",
+    "actual": {
+      "stage": "evaluated",
+      "value": "unsuitable"
+    }
+  },
+  {
+    "id": "dmn-eligibility-missing",
+    "expectationMet": true,
+    "scope": "T01-T04 native XML model evaluation",
+    "actual": {
+      "stage": "evaluated",
+      "value": "unknown"
+    }
+  },
+  {
+    "id": "dmn-eligibility-explicit-null",
+    "expectationMet": true,
+    "scope": "T01-T04 native XML model evaluation",
+    "actual": {
+      "stage": "evaluated",
+      "value": "unknown"
+    }
+  },
+  {
+    "id": "dmn-eligibility-explicit-false",
+    "expectationMet": true,
+    "scope": "T01-T04 native XML model evaluation",
+    "actual": {
+      "stage": "evaluated",
+      "value": "unsuitable"
+    }
+  },
+  {
+    "id": "dmn-eligibility-wrong-type",
+    "expectationMet": true,
+    "scope": "T01-T04 native XML model evaluation",
+    "actual": {
+      "stage": "evaluated",
+      "value": "invalid-input"
+    }
+  },
+  {
+    "id": "dmn-normative-all-met",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native DMN with shared decision",
+    "actual": {
+      "stage": "evaluated",
+      "value": {
+        "applicable": true,
+        "permitted": true,
+        "requirement": "met",
+        "recommendation": "met"
+      }
+    }
+  },
+  {
+    "id": "rego-normative-all-met",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native shared/component Rego modules",
+    "actual": {
+      "result": [
+        {
+          "expressions": [
+            {
+              "value": {
+                "applicable": true,
+                "permitted": true,
+                "recommendation": "met",
+                "requirement": "met"
+              },
+              "text": "data.uxcomponent.assessment",
+              "location": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dmn-normative-soft-unmet",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native DMN with shared decision",
+    "actual": {
+      "stage": "evaluated",
+      "value": {
+        "applicable": true,
+        "permitted": true,
+        "requirement": "met",
+        "recommendation": "unmet"
+      }
+    }
+  },
+  {
+    "id": "rego-normative-soft-unmet",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native shared/component Rego modules",
+    "actual": {
+      "result": [
+        {
+          "expressions": [
+            {
+              "value": {
+                "applicable": true,
+                "permitted": true,
+                "recommendation": "unmet",
+                "requirement": "met"
+              },
+              "text": "data.uxcomponent.assessment",
+              "location": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dmn-normative-hard-unmet",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native DMN with shared decision",
+    "actual": {
+      "stage": "evaluated",
+      "value": {
+        "applicable": true,
+        "permitted": false,
+        "requirement": "unmet",
+        "recommendation": "met"
+      }
+    }
+  },
+  {
+    "id": "rego-normative-hard-unmet",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native shared/component Rego modules",
+    "actual": {
+      "result": [
+        {
+          "expressions": [
+            {
+              "value": {
+                "applicable": true,
+                "permitted": false,
+                "recommendation": "met",
+                "requirement": "unmet"
+              },
+              "text": "data.uxcomponent.assessment",
+              "location": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dmn-normative-scoped-exception",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native DMN with shared decision",
+    "actual": {
+      "stage": "evaluated",
+      "value": {
+        "applicable": true,
+        "permitted": true,
+        "requirement": "met",
+        "recommendation": "excepted"
+      }
+    }
+  },
+  {
+    "id": "rego-normative-scoped-exception",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native shared/component Rego modules",
+    "actual": {
+      "result": [
+        {
+          "expressions": [
+            {
+              "value": {
+                "applicable": true,
+                "permitted": true,
+                "recommendation": "excepted",
+                "requirement": "met"
+              },
+              "text": "data.uxcomponent.assessment",
+              "location": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dmn-normative-wrong-exception-target",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native DMN with shared decision",
+    "actual": {
+      "stage": "evaluated",
+      "value": {
+        "applicable": true,
+        "permitted": true,
+        "requirement": "met",
+        "recommendation": "unmet"
+      }
+    }
+  },
+  {
+    "id": "rego-normative-wrong-exception-target",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native shared/component Rego modules",
+    "actual": {
+      "result": [
+        {
+          "expressions": [
+            {
+              "value": {
+                "applicable": true,
+                "permitted": true,
+                "recommendation": "unmet",
+                "requirement": "met"
+              },
+              "text": "data.uxcomponent.assessment",
+              "location": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dmn-normative-exception-cannot-waive-hard",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native DMN with shared decision",
+    "actual": {
+      "stage": "evaluated",
+      "value": {
+        "applicable": true,
+        "permitted": false,
+        "requirement": "unmet",
+        "recommendation": "excepted"
+      }
+    }
+  },
+  {
+    "id": "rego-normative-exception-cannot-waive-hard",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native shared/component Rego modules",
+    "actual": {
+      "result": [
+        {
+          "expressions": [
+            {
+              "value": {
+                "applicable": true,
+                "permitted": false,
+                "recommendation": "excepted",
+                "requirement": "unmet"
+              },
+              "text": "data.uxcomponent.assessment",
+              "location": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dmn-normative-other-library",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native DMN with shared decision",
+    "actual": {
+      "stage": "evaluated",
+      "value": {
+        "applicable": false,
+        "permitted": null,
+        "requirement": "not-applicable",
+        "recommendation": "not-applicable"
+      }
+    }
+  },
+  {
+    "id": "rego-normative-other-library",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native shared/component Rego modules",
+    "actual": {
+      "result": [
+        {
+          "expressions": [
+            {
+              "value": {
+                "applicable": false,
+                "permitted": null,
+                "recommendation": "not-applicable",
+                "requirement": "not-applicable"
+              },
+              "text": "data.uxcomponent.assessment",
+              "location": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dmn-normative-other-component",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native DMN with shared decision",
+    "actual": {
+      "stage": "evaluated",
+      "value": {
+        "applicable": false,
+        "permitted": null,
+        "requirement": "not-applicable",
+        "recommendation": "not-applicable"
+      }
+    }
+  },
+  {
+    "id": "rego-normative-other-component",
+    "expectationMet": true,
+    "scope": "T05/T06/T08/T11 own policy in native shared/component Rego modules",
+    "actual": {
+      "result": [
+        {
+          "expressions": [
+            {
+              "value": {
+                "applicable": false,
+                "permitted": null,
+                "recommendation": "not-applicable",
+                "requirement": "not-applicable"
+              },
+              "text": "data.uxcomponent.assessment",
+              "location": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dmn-hit-unique",
+    "expectationMet": true,
+    "scope": "Native hit policy; FIRST is order, not UX strength",
+    "actual": {
+      "stage": "evaluation-error",
+      "error": "EvalFailure(Failure(multiple values aren't allowed for UNIQUE hit policy. found: 'List(Map(outcome -> \"recommend\"), Map(outcome -> \"exclude\"))'),AuditLog(ParsedDmn(org.camunda.bpm.model.dmn.impl.DmnModelInstanceImpl@2416a51,List(ParsedDecision(conflict,conflict,ParsedDecisionTable(ArrayBuffer(ParsedInput(flag,null,FeelExpression(ParsedExpression(Ref(List(flag)),flag)))),ArrayBuffer(ParsedOutput(out,outcome,null,None,None)),ArrayBuffer(ParsedRule(recommend,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(recommend),\"recommend\"))))), ParsedRule(exclude,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(exclude),\"exclude\")))))),UNIQUE,null),conflict,None,List(),ArrayBuffer()))),List(AuditLogEntry(conflict,conflict,ParsedDecisionTable(ArrayBuffer(ParsedInput(flag,null,FeelExpression(ParsedExpression(Ref(List(flag)),flag)))),ArrayBuffer(ParsedOutput(out,outcome,null,None,None)),ArrayBuffer(ParsedRule(recommend,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(recommend),\"recommend\"))))), ParsedRule(exclude,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(exclude),\"exclude\")))))),UNIQUE,null),DecisionTableEvaluationResult(List(EvaluatedInput(ParsedInput(flag,null,FeelExpression(ParsedExpression(Ref(List(flag)),flag))),true)),List(EvaluatedRule(ParsedRule(recommend,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(recommend),\"recommend\"))))),List(EvaluatedOutput(ParsedOutput(out,outcome,null,None,None),\"recommend\"))), EvaluatedRule(ParsedRule(exclude,ArrayBuffer(FeelExpression(ParsedExpression(InputEqualTo(ConstBool(true)),true))),ArrayBuffer((outcome,FeelExpression(ParsedExpression(ConstString(exclude),\"exclude\"))))),List(EvaluatedOutput(ParsedOutput(out,outcome,null,None,None),\"exclude\")))),error(\"multiple values aren't allowed for UNIQUE hit policy. found: 'List(Map(outcome -> \"recommend\"), Map(outcome -> \"exclude\"))'\"))))))"
+    }
+  },
+  {
+    "id": "dmn-hit-first",
+    "expectationMet": true,
+    "scope": "Native hit policy; FIRST is order, not UX strength",
+    "actual": {
+      "stage": "evaluated",
+      "value": "recommend"
+    }
+  },
+  {
+    "id": "dmn-hit-collect",
+    "expectationMet": true,
+    "scope": "Native hit policy; FIRST is order, not UX strength",
+    "actual": {
+      "stage": "evaluated",
+      "value": [
+        "recommend",
+        "exclude"
+      ]
+    }
+  },
+  {
+    "id": "bound-native-positive",
+    "expectationMet": true,
+    "scope": "T07 own reference gate + native evaluation; not native URI/hash resolver",
+    "actual": {
+      "gates": [
+        "bound",
+        "bound",
+        "bound",
+        "bound"
+      ],
+      "result": {
+        "stage": "evaluated",
+        "value": "candidate"
+      }
+    }
+  },
+  {
+    "id": "bound-native-stale-blocks",
+    "expectationMet": true,
+    "scope": "T09 own reference gate",
+    "actual": {
+      "gates": [
+        "wrong-revision",
+        "bound",
+        "bound",
+        "bound"
+      ],
+      "nativeEngineNotCalled": true
+    }
+  },
+  {
+    "id": "schema-conflict-collect",
+    "expectationMet": true,
+    "scope": "Original DMN XSD; not engine conformance",
+    "actual": ""
+  },
+  {
+    "id": "schema-conflict-first",
+    "expectationMet": true,
+    "scope": "Original DMN XSD; not engine conformance",
+    "actual": ""
+  },
+  {
+    "id": "schema-conflict-unique",
+    "expectationMet": true,
+    "scope": "Original DMN XSD; not engine conformance",
+    "actual": ""
+  },
+  {
+    "id": "schema-eligibility",
+    "expectationMet": true,
+    "scope": "Original DMN XSD; not engine conformance",
+    "actual": ""
+  },
+  {
+    "id": "schema-normative",
+    "expectationMet": true,
+    "scope": "Original DMN XSD; not engine conformance",
+    "actual": ""
+  },
+  {
+    "id": "focused-lookup-does-not-load-unrelated",
+    "expectationMet": true,
+    "scope": "T12 technical loading only",
+    "actual": {
+      "requestedComponent": "example/Autocomplete",
+      "loadedRuleFiles": [
+        "runs/03/fixtures/component.rego",
+        "runs/03/fixtures/shared.rego",
+        "runs/01/fixtures/bindings.json"
+      ],
+      "loadedBytes": 2058,
+      "unrelatedFileExplicitlyExcluded": "runs/03/fixtures/unrelated.rego",
+      "dmnSingleFileBytes": 971,
+      "notMeasured": [
+        "Full agent request context",
+        "Token count",
+        "Agent understanding",
+        "Performance benchmark"
+      ],
+      "scope": "T12 file loading and byte sizes only; Rego calls succeed without loading deliberately invalid unrelated file"
+    }
+  }
+]

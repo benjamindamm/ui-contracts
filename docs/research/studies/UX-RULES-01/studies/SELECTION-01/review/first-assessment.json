@@ -1,0 +1,47 @@
+{
+  "phase": "first assessment before repair instruction",
+  "primarySelection": {
+    "a": {
+      "choice": "Select",
+      "hardEligible": true,
+      "projectPreferenceConform": true
+    },
+    "b": {
+      "choice": "Autocomplete",
+      "hardEligible": true,
+      "projectPreferenceConform": true
+    }
+  },
+  "browserObserved": [
+    "A native select with exactly three listed country keys",
+    "B query filters Indien to IN",
+    "B ArrowDown/Enter commits IN",
+    "B unknown initial query rejected at submit with empty committed key",
+    "B full list 30 in given order",
+    "B keyboard to final SK scrolls row into view",
+    "CA and US retain separate keys for +1",
+    "phone string 0123 456789 preserved in both"
+  ],
+  "firstDeliveryDefects": [
+    {
+      "id": "SEL-B01",
+      "arm": "b",
+      "finding": "Free-text Input fields emit no declared value-change event on native user input; country Autocomplete event does emit.",
+      "evidence": "browser-first.json firstActions and inputDefect; form.ts has no generic Input listener."
+    },
+    {
+      "id": "SEL-B02",
+      "arm": "b",
+      "finding": "Successful local-check status stays visible after user changes another field.",
+      "evidence": "browser-first.json inputDefect before/after."
+    }
+  ],
+  "firstOutcome": "Component selection demonstrated in both bounded cases; B target fidelity incomplete, repair required.",
+  "notChecked": [
+    "Full screenreader/IME/platform coverage",
+    "Exact upstream Autocomplete conformance",
+    "Complete independent filesystem access audit",
+    "Model identity"
+  ],
+  "reviewer": "Coordinator; criteria frozen before outputs, not an additional blind reviewer agent."
+}

@@ -1,6 +1,6 @@
 # Dokumentenindex
 
-Stand: 29. Oktober 2026. Die Stammübersicht der abgeschlossenen Kandidatenrecherche stammt vom 25. Oktober (31 Markdown-Dokumente); neue Anwendungsstudien und Forschungsentscheide sind separat verlinkt. Versuchsordner werden im [Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
+Stand: 30. Oktober 2026. Die Stammübersicht der abgeschlossenen Kandidatenrecherche stammt vom 25. Oktober (31 Markdown-Dokumente); neue Anwendungsstudien und Forschungsentscheide sind separat verlinkt. Versuchsordner werden im [Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
 
 Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; maßgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.
 
@@ -8,6 +8,9 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 
 | Dokument | Inhalt |
 | --- | --- |
+| [UX-Eignung · Autocomplete](../ux/AUTOCOMPLETE.md) | Schreibhilfe, feste Auswahl, Suchoberfläche und fachliche Beispiele |
+| [SELECTION-01/02](studies/UX-RULES-01/studies/SELECTION-02/README.md) | Kontrollierte Komponentenwahl und Folgelauf mit suchfähigem Select |
+| [UX-RULES-01 · Formale UX-Regeln](studies/UX-RULES-01/README.md) | Neue Forschung: Anforderungen, Komponentenbindung, Quellensurvey, native Teilproben und Autocomplete-UX-Kandidat mit Zeilentrace; vollständiger Frameworkvergleich noch offen |
 | [RESEARCH-CLOSEOUT.md](RESEARCH-CLOSEOUT.md) | Abschluss der Recherche |
 | [INTEGRATION-PROFILE.md](INTEGRATION-PROFILE.md) | Gemeinsames Integrationsprofil IP-01 |
 | [INTEGRATION-BINDING-DRAFT.md](INTEGRATION-BINDING-DRAFT.md) | IP-01: Entwurf der minimalen Bindungsbeschreibung |

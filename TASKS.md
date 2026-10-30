@@ -98,3 +98,20 @@ Erster OpenPencil-Umfang: editierbares Design, ausdrücklich keine interaktive C
 - [ ] Pilot erst auf ausdrücklichen Ausführungsauftrag starten; keine historische Runde als neue Kontrollbedingung ausgeben.
 - [ ] Erst-/Endqualität, Aufwand, Abbrüche und Eskalationen auswerten; Befunde mit Regressionen im [Fehlerregister](docs/skills/ISSUES.md) weiterführen.
 - [ ] Danach eine komplexere zusammengesetzte Komponente auswählen und die Übertragbarkeit getrennt prüfen. iOS/Android bleiben Zukunftsperspektive.
+
+## UX-RULES-01 · Formale UX-Regeln · 30. Oktober 2026
+
+Eigener Forschungsstrang; bestehende Kandidaten-/Studienzähler bleiben unverändert. [Einstieg](docs/research/studies/UX-RULES-01/README.md) · [führender Aufgabenstatus: 7 erledigt, 2 begonnen/offen](docs/research/studies/UX-RULES-01/tasks.json).
+
+- [x] Anforderungen, komponentengenaue Bindungsprobe, unveränderte example-Baseline und zwölf gemeinsame Fälle festhalten.
+- [x] Sechs Ansätze anhand offizieller Quellen zunächst einordnen; Fähigkeiten und eigene Eignungshypothesen trennen.
+- [x] Zusätzlichen begrenzten Quellensurvey zu UX-nahen Guideline-Modellen sowie ACT/EARL dokumentieren.
+- [ ] Begonnene Werkzeug-/Semantikproben und eigene Integrationsgegenfälle vervollständigen: [zwei Teilblöcke mit erhaltenem Fehlbefund und separater Reparatur](docs/research/studies/UX-RULES-01/FINDINGS.md) liegen vor; die verbleibenden Aufgaben stehen in tasks.json. Kein Gewinner gewählt.
+
+UX-RULES-01-Folgeblock: Native DMN-XML-Ausführung und Pflicht-/Empfehlungs-/Ausnahmelogik in DMN/Rego ergänzt, 33/33 Erwartungen erfüllt; ODRL getrennt nur kodierungsgeprüft. [Bedingter Vorschlag für die Integrationsprobe](docs/research/studies/UX-RULES-01/RECOMMENDATION.md), noch keine Frameworkübernahme.
+
+- [x] [AC-UX-01](docs/research/studies/UX-RULES-01/pilots/AC-UX-01/README.md): separaten Autocomplete-UX-Kandidaten mit drei Regeln und nativem DMN-Zeilentrace ausführen; 43/43 Checks erfüllt. Bestehende Bibliothek unverändert, keine Agenten-/Produktfreigabe.
+
+- [x] SELECTION-01: Select/Input definieren, zwei frische Builder prüfen, Erstfehler und separate Reparatur erhalten; begrenzter [Prüfbericht](docs/research/studies/UX-RULES-01/studies/SELECTION-01/review/REVIEW.md).
+- [x] Nutzeranforderungen zu freier Schreibhilfe vs. festen Werten in [UX-Dokumentation](docs/ux/AUTOCOMPLETE.md) aufnehmen.
+- [x] [SELECTION-02](docs/research/studies/UX-RULES-01/studies/SELECTION-02/README.md) abschließen: erwartete Wahl, 36/37 Erstchecks, Fokusfehler erhalten und separat repariert (10/10); keine rückwirkende Umwertung der ersten Studie.

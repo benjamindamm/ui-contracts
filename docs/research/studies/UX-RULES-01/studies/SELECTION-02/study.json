@@ -1,0 +1,56 @@
+{
+  "id": "SELECTION-02",
+  "status": "completed-bounded-with-preserved-first-defect-and-separate-repair",
+  "release": false,
+  "candidateLibrary": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example",
+  "libraryRevision": "2e7531d73f9a0e2e631b499dedee8f8fae3585212034d4264b6dd78918f5d2cb",
+  "freshContextsRequested": true,
+  "modelIdentity": "not researched or exposed; configured default",
+  "reviewer": "coordinator, not blind independent reviewer",
+  "arms": {
+    "a": {
+      "optionCount": 3,
+      "agent": "/root/selection02_builder_a",
+      "forkTurns": "none",
+      "sentPromptSha256": "db3aa5cb5f875baa225b92aa30f3a21ca6e868fb115a02b63a39dd3268b0ebbc",
+      "promptSerialization": "One terminal newline in file omitted in dispatched message",
+      "status": "first-reviewed",
+      "choice": "Select",
+      "policyPreferenceMet": true
+    },
+    "b": {
+      "optionCount": 30,
+      "agent": "/root/selection02_builder_b",
+      "forkTurns": "none",
+      "sentPromptSha256": "d6943767cd8a66236517347fb9c5a28948b404e48eaa42c5e0bd47c78991f483",
+      "promptSerialization": "One terminal newline in file omitted in dispatched message",
+      "status": "first-reviewed",
+      "choice": "SelectWithSearch",
+      "policyPreferenceMet": true
+    }
+  },
+  "limitations": [
+    "New candidate AND revised policy; no isolated causal comparison",
+    "One builder per arm; no UX usability trial",
+    "No new free-text address autocomplete implementation"
+  ],
+  "dispatchRecordedAt": "2026-10-30T21:58:23.545043+00:00",
+  "completedRecordedAt": "2026-10-30T22:02:15.558272+00:00",
+  "results": "review/results.json",
+  "review": "review/REVIEW.md",
+  "interruptions": [],
+  "interruptionEvidence": "None reported or observed in notifications; provider-internal events not audited",
+  "repair": {
+    "arm": "b",
+    "output": "outputs/b-repair-01",
+    "sameBuilderContext": true,
+    "firstOutputUnchanged": true,
+    "issue": "SEL2-B01",
+    "boundedBrowserChecksPassed": 10,
+    "prompt": "tasks/b-repair-01-prompt.txt",
+    "sentPromptSha256": "e8f6710edc626b9b5d3876509c643b9bc134ca67c20f91d25cbdda73ede258ff"
+  },
+  "documentationIssues": [
+    "SEL2-D01"
+  ]
+}

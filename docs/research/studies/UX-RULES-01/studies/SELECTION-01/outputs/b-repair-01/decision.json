@@ -1,0 +1,11 @@
+{
+  "scenarioId": "SELECTION-01-b",
+  "chosenComponent": "Autocomplete",
+  "choice": "Autocomplete",
+  "recordedBeforeUI": true,
+  "facts": {"optionCount":30,"fixedValuesRequired":true,"queryEditingAllowed":true,"filteringProviderAvailable":true,"searchExplicitlyRequired":null,"searchRequiredAbove":15,"completionAssistancePreferred":false},
+  "evaluation": {"searchNeed":"required","Select":"incompatible-search","Autocomplete":"eligible","reason":"required-search-with-fixed-commit"},
+  "sources": ["docs/research/studies/UX-RULES-01/studies/SELECTION-01/inputs/b.json","libraries/example/library.json","libraries/example/selection-policy.json","libraries/example/selection-policy.dmn","libraries/example/components/select/ux.json","libraries/example/components/autocomplete/ux.json","libraries/example/components/input/ux.json","libraries/example/components/autocomplete/component.json","libraries/example/components/autocomplete/interface.json","libraries/example/components/autocomplete/behavior.scxml","libraries/example/components/autocomplete/accessibility.rules.json"],
+  "reasons": ["30 actual options exceed the explicit project threshold of 15; this is a project policy, not a universal UX rule.","Select has no filtering contract. Autocomplete permits query editing while restricting committed values to listed keys.","An in-memory query-aware provider will preserve supplied order. No geographic inference is used.","Input is used for the four named free-text fields; browser autocomplete hints do not change their component type."],
+  "assumptions": ["The host requires a country selection; the four personal text fields remain optional because the task specifies no required flags."]
+}

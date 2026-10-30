@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-30",
+  "scope": "research-document-consistency-only",
+  "release": false,
+  "validJson": true,
+  "commonCases": 12,
+  "criteria": 13,
+  "candidateDocumentReviews": 6,
+  "frameworkRuntimeTestsExecuted": 0,
+  "tasks": {
+    "done": 2,
+    "pending": 6,
+    "total": 8
+  },
+  "baselineFilesVerified": 28,
+  "localLinksChecked": 217,
+  "existingDefinitionsToolsAndResearchEvidenceUnchanged": true,
+  "files": {
+    "BINDING.md": "ddfb9d90520c87ac555539a7baf21fc4102935f1793f40191072e7285ec6fa46",
+    "COMPARISON.md": "3383ff93f50f78a6dbfabec5cccaf3031b1e772e6424d5f9c3a9ba3713056b27",
+    "PROTOCOL.md": "be55de793da90dc6b51f17f4fc8cac48c13238ed703af5f88f89333beda4017f",
+    "README.md": "f4f3796092c54b172f3fc3b7af180deb879a9ad4bd1119d853e757d46117ca98",
+    "baseline.json": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+    "cases.json": "19b66514ca9edec47dce2981a3b7d823c1ff297a0f7c1def9b87101c54b23635",
+    "sources.json": "5e5eb83127912570b1ea862475badba074dc10dfd286e031c2f688f2c35b35a6",
+    "tasks.json": "75445347bdf4f1ff080f1ff32f89236be99b3e896f6ae071ced53c4596758002"
+  },
+  "notChecked": [
+    "Framework semantic conformance",
+    "Component integration runtime",
+    "Agent behavior",
+    "Complete candidate market survey"
+  ]
+}

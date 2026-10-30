@@ -1,0 +1,202 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "format",
+    "status",
+    "library",
+    "componentId",
+    "componentPath",
+    "definition",
+    "logic",
+    "vocabulary",
+    "sources",
+    "rules",
+    "nativeRows",
+    "exceptionReviewers",
+    "exceptionPolicy"
+  ],
+  "properties": {
+    "format": {
+      "const": "ui-contracts-ux-pilot/0.1"
+    },
+    "status": {
+      "const": "research-candidate-not-production"
+    },
+    "library": {
+      "const": "example"
+    },
+    "componentId": {
+      "const": "ui-contracts:Autocomplete"
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "const": "AC-UX-001"
+              },
+              "decisionId": {
+                "const": "creation"
+              },
+              "strength": {
+                "const": "capability-constraint"
+              },
+              "exceptionsAllowed": {
+                "const": false
+              },
+              "status": {
+                "const": "candidate"
+              },
+              "purpose": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "decisionId",
+              "strength",
+              "exceptionsAllowed",
+              "status",
+              "purpose",
+              "rationale",
+              "evidence"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "const": "AC-UX-002"
+              },
+              "decisionId": {
+                "const": "cardinality"
+              },
+              "strength": {
+                "const": "capability-constraint"
+              },
+              "exceptionsAllowed": {
+                "const": false
+              },
+              "status": {
+                "const": "candidate"
+              },
+              "purpose": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "decisionId",
+              "strength",
+              "exceptionsAllowed",
+              "status",
+              "purpose",
+              "rationale",
+              "evidence"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "const": "AC-UX-003"
+              },
+              "decisionId": {
+                "const": "labels"
+              },
+              "strength": {
+                "const": "recommendation"
+              },
+              "exceptionsAllowed": {
+                "const": true
+              },
+              "status": {
+                "const": "candidate"
+              },
+              "purpose": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "decisionId",
+              "strength",
+              "exceptionsAllowed",
+              "status",
+              "purpose",
+              "rationale",
+              "evidence"
+            ]
+          }
+        ]
+      }
+    },
+    "componentPath": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "object"
+    },
+    "logic": {
+      "type": "object"
+    },
+    "vocabulary": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "object"
+    },
+    "nativeRows": {
+      "type": "object"
+    },
+    "exceptionReviewers": {
+      "type": "array"
+    },
+    "exceptionPolicy": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,173 @@
+{
+  "task": "SELECTION-02-a",
+  "sources": [
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/tasks/a.json",
+      "sha256": "79650c3d67d0a3fb5f8d6461459e7eda1dc03a33e15b907d6934159c72ec6e96"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/inputs/a.json",
+      "sha256": "f4277467277b9b25e5560d0768f13fa005cddef23e729893444c2888a0320a55"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/library.json",
+      "sha256": "ad8a8956ee9f90c5d23d34ff752e3c616039320fe8d48bec83aaea4a79622bfd"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/selection-policy.json",
+      "sha256": "de1e0370441f91b5e703dd68422ddb1d07df9e9558fae479a36a9b7342e45c7f"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/selection-policy.dmn",
+      "sha256": "17566f4550660c6a70c73cc1c0baa435b01ddb805c87a8d01777bc1910b4aebc"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/tokens.json",
+      "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/fonts.json",
+      "sha256": "d0a91c9985e3f9aeb515a0d23db14c4dbd3f1d0db3aa97ddd8031bfcceaa4217"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/component.json",
+      "sha256": "34a4cd988008cedbfe1900959e98a2013b8a2cbf1e0b90e12c247198d919b330"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/interface.json",
+      "sha256": "ba6041dc6f2ff398cee7378169de364060275abb1cc81d6a039f68e64d7ed247"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/behavior.scxml",
+      "sha256": "32e70569a604817d433da99b5498ca4e759452aa4e838503d616d0ae172b3500"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/accessibility.html",
+      "sha256": "8fac6f8b94646b667f9c95c06de393cd39386e99d878a0585bb682a3e1f7c62f"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/accessibility.rules.json",
+      "sha256": "d073887defcc6fe104b9bfc242d25654b314df3c63ccb1c540e3748be04c7734"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/layout.css",
+      "sha256": "aec63397c409691ce4980869fbd19e2cf46eb9ee43f7705e648ea135ebaf1e78"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/README.md",
+      "sha256": "add4bd3fb2fa4eb24dc61f55e1631f6ce98c1c2f70564b6d6a9f8528f43884f0"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/stories.json",
+      "sha256": "255724a0a3206d318c60840a6228b0c6c2f276e3af9d30855a53e1833ad13be7"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/component.json",
+      "sha256": "317b8c2b688820bebb7e523ac1bde6524c5232bd1a0b94e026530e0f35f057ea"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/interface.json",
+      "sha256": "397e7a94050416f0753400b878eb3d720a90c68eb44b40529c1f0712016666d6"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/behavior.scxml",
+      "sha256": "19db620ce2008ff4bc2f4a8285be83e5160a3728edb6c130dc7bcc813649f10c"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/accessibility.html",
+      "sha256": "9e849d3bedf7b9010d728544b89c3abf4638b6a667a2d95e40bba95e154c4755"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/accessibility.rules.json",
+      "sha256": "4abba5c1eb56e0c27f4adce2d73f8af140f0fb9eba41eda8162b67475bfebc35"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/layout.css",
+      "sha256": "fbf5b91eccf63bfa85a311156745e48250e48761c69cbdef08b34d7c653a2a48"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/README.md",
+      "sha256": "194af29b0bf6f6915b246016615657e2ccd9eccb937a3387127e8899c244d6b3"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/input/stories.json",
+      "sha256": "87d251d788fa9d4752b2416fdba56ecb3a7cf6a0cdd0c19446c0d25170ebdf0d"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select/ux.json",
+      "sha256": "03818885f08a9b5f66dd9776a90fad7fb58dfe9992e004ddf8be8eabe5fda2b4"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/autocomplete/ux.json",
+      "sha256": "d37a950a6d34c3db03c62f807fc465ea2d1d634888c4a72dbe71f73a76c0235f"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/ux.json",
+      "sha256": "c66928f8597bd2e0d5389189e308c450934218b3e4ee9809f7121902f26af99b"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/Inter-Bold.woff2",
+      "sha256": "fa888127b6da015b65569f0351f3b5c391ad928904951f1c20e9f8462a8d95ea"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/Inter-Regular.woff2",
+      "sha256": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/LICENSE.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/REPORT.md",
+      "sha256": "c03266a0cca486c133f9d14920510e6d70f5cd26e66fc5e1469dd9236f92772f"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/decision.json",
+      "sha256": "4f2da01c8c7f8a3c8e687d4931d0a4bd5e5664104727df7657fc5d090797cc44"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/form.js",
+      "sha256": "0ebe95adc1ad36bf44f28ff023aeaa1cf22f8a8c90ffc3cef4d37c52bfdf8234"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/form.ts",
+      "sha256": "d6a295e70bbb9a96dda5dd1d81dc41ae448e68e1f1407a285ba6d863b1b3265d"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/index.html",
+      "sha256": "058c0ad1a1a08f2cd5daaaf826d65398f9b8c911aa9260ed3991b5d1fc78cb01"
+    },
+    {
+      "path": "docs/research/studies/UX-RULES-01/studies/SELECTION-02/outputs/a/styles.css",
+      "sha256": "410fc9137ce7027048102b5dbcc799ad8556f76c701ea70a5ae3f786348d047f"
+    }
+  ],
+  "checks": [
+    {
+      "kind": "TypeScript strict compilation",
+      "result": "pass"
+    },
+    {
+      "kind": "HTML static readback",
+      "result": "pass",
+      "assertions": [
+        "unique IDs",
+        "label targets exist",
+        "four required inputs",
+        "declared input types/autocomplete hints",
+        "exact option key order"
+      ]
+    }
+  ],
+  "notExecuted": [
+    "browser",
+    "visual QA",
+    "keyboard",
+    "assistive technology",
+    "dynamic event tests",
+    "SCXML interpreter",
+    "DMN engine"
+  ]
+}

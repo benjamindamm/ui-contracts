@@ -1,0 +1,756 @@
+{
+  "scope": "Two controlled selection cases plus bounded form/browser checks; not general conformance",
+  "release": false,
+  "primarySelection": {
+    "a": {
+      "expectedPreferred": "Select",
+      "actual": "Select",
+      "hardEligible": true,
+      "policyPreferenceMet": true
+    },
+    "b": {
+      "expectedPreferred": "Autocomplete",
+      "actual": "Autocomplete",
+      "hardEligible": true,
+      "policyPreferenceMet": true
+    }
+  },
+  "checks": [
+    {
+      "id": "choice-a",
+      "passed": true,
+      "evidence": {
+        "actual": "Select",
+        "expectedByFrozenProjectPolicy": "Select"
+      }
+    },
+    {
+      "id": "Input-types-a",
+      "passed": true,
+      "evidence": [
+        {
+          "autocomplete": "given-name",
+          "component": "Input",
+          "id": "givenName",
+          "name": "givenName",
+          "role": null,
+          "tag": "INPUT",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "autocomplete": "family-name",
+          "component": "Input",
+          "id": "familyName",
+          "name": "familyName",
+          "role": null,
+          "tag": "INPUT",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "autocomplete": "email",
+          "component": "Input",
+          "id": "email",
+          "name": "email",
+          "role": null,
+          "tag": "INPUT",
+          "type": "email",
+          "value": ""
+        },
+        {
+          "autocomplete": null,
+          "component": "Select",
+          "id": "country",
+          "name": "country",
+          "role": null,
+          "tag": "SELECT",
+          "type": "select-one",
+          "value": ""
+        },
+        {
+          "autocomplete": "tel-national",
+          "component": "Input",
+          "id": "nationalNumber",
+          "name": "nationalNumber",
+          "role": null,
+          "tag": "INPUT",
+          "type": "tel",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "unique-ids-a",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "id": "visible-labels-a",
+      "passed": true,
+      "evidence": [
+        {
+          "for": "givenName",
+          "text": "Vorname"
+        },
+        {
+          "for": "familyName",
+          "text": "Nachname"
+        },
+        {
+          "for": "email",
+          "text": "E-Mail"
+        },
+        {
+          "for": "country",
+          "text": "Land und Vorwahl"
+        },
+        {
+          "for": "nationalNumber",
+          "text": "Rufnummer"
+        }
+      ]
+    },
+    {
+      "id": "string-phone-a",
+      "passed": true,
+      "evidence": "0123 456789"
+    },
+    {
+      "id": "observed-resources-local-a",
+      "passed": true,
+      "evidence": [
+        "http://127.0.0.1:8766"
+      ]
+    },
+    {
+      "id": "choice-b",
+      "passed": true,
+      "evidence": {
+        "actual": "Autocomplete",
+        "expectedByFrozenProjectPolicy": "Autocomplete"
+      }
+    },
+    {
+      "id": "Input-types-b",
+      "passed": true,
+      "evidence": [
+        {
+          "autocomplete": "given-name",
+          "component": "Input",
+          "id": "givenName",
+          "name": "givenName",
+          "role": null,
+          "tag": "INPUT",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "autocomplete": "family-name",
+          "component": "Input",
+          "id": "familyName",
+          "name": "familyName",
+          "role": null,
+          "tag": "INPUT",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "autocomplete": "email",
+          "component": "Input",
+          "id": "email",
+          "name": "email",
+          "role": null,
+          "tag": "INPUT",
+          "type": "email",
+          "value": ""
+        },
+        {
+          "autocomplete": "tel-national",
+          "component": "Input",
+          "id": "nationalNumber",
+          "name": "nationalNumber",
+          "role": null,
+          "tag": "INPUT",
+          "type": "tel",
+          "value": ""
+        },
+        {
+          "autocomplete": "off",
+          "component": "Autocomplete",
+          "id": "country-query",
+          "name": "",
+          "role": "combobox",
+          "tag": "INPUT",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "autocomplete": null,
+          "component": "Autocomplete",
+          "id": "country-value",
+          "name": "country",
+          "role": null,
+          "tag": "INPUT",
+          "type": "hidden",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "unique-ids-b",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "id": "visible-labels-b",
+      "passed": true,
+      "evidence": [
+        {
+          "for": "givenName",
+          "text": "Vorname"
+        },
+        {
+          "for": "familyName",
+          "text": "Nachname"
+        },
+        {
+          "for": "email",
+          "text": "E-Mail"
+        },
+        {
+          "for": "nationalNumber",
+          "text": "Rufnummer"
+        },
+        {
+          "for": "country-query",
+          "text": "Land und Vorwahl"
+        }
+      ]
+    },
+    {
+      "id": "string-phone-b",
+      "passed": true,
+      "evidence": "0123 456789"
+    },
+    {
+      "id": "observed-resources-local-b",
+      "passed": true,
+      "evidence": [
+        "http://127.0.0.1:8766"
+      ]
+    },
+    {
+      "id": "three-native-select-options",
+      "passed": true,
+      "evidence": [
+        "CH",
+        "DE",
+        "FR"
+      ]
+    },
+    {
+      "id": "first-unknown-country-rejected",
+      "passed": true,
+      "evidence": {
+        "invalid": "true",
+        "message": "Bitte ein Land aus der Liste auswählen.",
+        "valid": false
+      }
+    },
+    {
+      "id": "actual-filter-Indien",
+      "passed": true,
+      "evidence": {
+        "expanded": "true",
+        "options": [
+          {
+            "key": "IN",
+            "text": "Indien (+91)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "keyboard-active-and-focus",
+      "passed": true,
+      "evidence": {
+        "active": "country-option-IN",
+        "focus": "country-query",
+        "selected": [
+          "IN"
+        ]
+      }
+    },
+    {
+      "id": "keyboard-commit-and-close",
+      "passed": true,
+      "evidence": {
+        "audit": [
+          {
+            "detail": {
+              "value": "IN"
+            },
+            "id": "country-query"
+          }
+        ],
+        "expanded": "false",
+        "phone": "0123 456789",
+        "query": "Indien (+91)",
+        "status": "Angaben lokal geprüft. Es wurden keine Daten gesendet.",
+        "value": "IN"
+      }
+    },
+    {
+      "id": "all-thirty-options-and-order",
+      "passed": true,
+      "evidence": [
+        {
+          "key": "CH",
+          "text": "Schweiz (+41)"
+        },
+        {
+          "key": "DE",
+          "text": "Deutschland (+49)"
+        },
+        {
+          "key": "FR",
+          "text": "Frankreich (+33)"
+        },
+        {
+          "key": "CA",
+          "text": "Kanada (+1)"
+        },
+        {
+          "key": "US",
+          "text": "Vereinigte Staaten (+1)"
+        },
+        {
+          "key": "GR",
+          "text": "Griechenland (+30)"
+        },
+        {
+          "key": "NL",
+          "text": "Niederlande (+31)"
+        },
+        {
+          "key": "BE",
+          "text": "Belgien (+32)"
+        },
+        {
+          "key": "ES",
+          "text": "Spanien (+34)"
+        },
+        {
+          "key": "HU",
+          "text": "Ungarn (+36)"
+        },
+        {
+          "key": "IT",
+          "text": "Italien (+39)"
+        },
+        {
+          "key": "AT",
+          "text": "Österreich (+43)"
+        },
+        {
+          "key": "GB",
+          "text": "Vereinigtes Königreich (+44)"
+        },
+        {
+          "key": "DK",
+          "text": "Dänemark (+45)"
+        },
+        {
+          "key": "SE",
+          "text": "Schweden (+46)"
+        },
+        {
+          "key": "NO",
+          "text": "Norwegen (+47)"
+        },
+        {
+          "key": "PL",
+          "text": "Polen (+48)"
+        },
+        {
+          "key": "AU",
+          "text": "Australien (+61)"
+        },
+        {
+          "key": "NZ",
+          "text": "Neuseeland (+64)"
+        },
+        {
+          "key": "JP",
+          "text": "Japan (+81)"
+        },
+        {
+          "key": "TR",
+          "text": "Türkei (+90)"
+        },
+        {
+          "key": "IN",
+          "text": "Indien (+91)"
+        },
+        {
+          "key": "PT",
+          "text": "Portugal (+351)"
+        },
+        {
+          "key": "LU",
+          "text": "Luxemburg (+352)"
+        },
+        {
+          "key": "IE",
+          "text": "Irland (+353)"
+        },
+        {
+          "key": "FI",
+          "text": "Finnland (+358)"
+        },
+        {
+          "key": "HR",
+          "text": "Kroatien (+385)"
+        },
+        {
+          "key": "SI",
+          "text": "Slowenien (+386)"
+        },
+        {
+          "key": "CZ",
+          "text": "Tschechien (+420)"
+        },
+        {
+          "key": "SK",
+          "text": "Slowakei (+421)"
+        }
+      ]
+    },
+    {
+      "id": "scroll-to-last-key",
+      "passed": true,
+      "evidence": {
+        "active": "SK",
+        "expanded": "true",
+        "focus": "country-query",
+        "rowVisible": true,
+        "scrollTop": 800
+      }
+    },
+    {
+      "id": "same-prefix-distinct-keys",
+      "passed": true,
+      "evidence": {
+        "filtered": [
+          {
+            "key": "CA",
+            "label": "Kanada (+1)"
+          },
+          {
+            "key": "US",
+            "label": "Vereinigte Staaten (+1)"
+          }
+        ],
+        "selected": {
+          "audit": [
+            {
+              "detail": {
+                "value": "IN"
+              },
+              "id": "country-query"
+            },
+            {
+              "detail": {
+                "value": "US"
+              },
+              "id": "country-query"
+            }
+          ],
+          "key": "US",
+          "label": "Vereinigte Staaten (+1)"
+        }
+      }
+    },
+    {
+      "id": "A-Input-events",
+      "passed": true,
+      "evidence": [
+        {
+          "detail": {
+            "value": "Ada"
+          },
+          "id": "givenName"
+        },
+        {
+          "detail": {
+            "value": "Beispiel"
+          },
+          "id": "familyName"
+        },
+        {
+          "detail": {
+            "value": "ada@example.test"
+          },
+          "id": "email"
+        },
+        {
+          "detail": {
+            "value": "0123 456789"
+          },
+          "id": "nationalNumber"
+        },
+        {
+          "detail": {
+            "reason": "user",
+            "value": "CH"
+          },
+          "id": "country"
+        }
+      ]
+    },
+    {
+      "id": "B-first-Input-events",
+      "passed": false,
+      "evidence": []
+    },
+    {
+      "id": "B-first-success-invalidated",
+      "passed": false,
+      "evidence": {
+        "after": {
+          "audit": [
+            {
+              "detail": {
+                "value": "IN"
+              },
+              "id": "country-query"
+            },
+            {
+              "detail": {
+                "value": "US"
+              },
+              "id": "country-query"
+            }
+          ],
+          "status": "Angaben lokal geprüft. Es wurden keine Daten gesendet."
+        },
+        "before": {
+          "audit": [
+            {
+              "detail": {
+                "value": "IN"
+              },
+              "id": "country-query"
+            },
+            {
+              "detail": {
+                "value": "US"
+              },
+              "id": "country-query"
+            }
+          ],
+          "status": "Angaben lokal geprüft. Es wurden keine Daten gesendet."
+        }
+      }
+    },
+    {
+      "id": "repair-Input-events",
+      "passed": true,
+      "evidence": [
+        {
+          "detail": {
+            "value": "Ada"
+          },
+          "id": "givenName"
+        },
+        {
+          "detail": {
+            "value": "Beispiel"
+          },
+          "id": "familyName"
+        },
+        {
+          "detail": {
+            "value": "ada@example.test"
+          },
+          "id": "email"
+        },
+        {
+          "detail": {
+            "value": "0123 456789"
+          },
+          "id": "nationalNumber"
+        },
+        {
+          "detail": {
+            "value": "IN"
+          },
+          "id": "country-query"
+        }
+      ]
+    },
+    {
+      "id": "repair-success-invalidated",
+      "passed": true,
+      "evidence": {
+        "audit": [
+          {
+            "detail": {
+              "value": "Ada"
+            },
+            "id": "givenName"
+          },
+          {
+            "detail": {
+              "value": "Beispiel"
+            },
+            "id": "familyName"
+          },
+          {
+            "detail": {
+              "value": "ada@example.test"
+            },
+            "id": "email"
+          },
+          {
+            "detail": {
+              "value": "0123 456789"
+            },
+            "id": "nationalNumber"
+          },
+          {
+            "detail": {
+              "value": "IN"
+            },
+            "id": "country-query"
+          },
+          {
+            "detail": {
+              "value": "Ada Neu"
+            },
+            "id": "givenName"
+          }
+        ],
+        "status": ""
+      }
+    },
+    {
+      "id": "repair-query-invalidates-success",
+      "passed": true,
+      "evidence": {
+        "keys": [
+          "CA",
+          "US"
+        ],
+        "status": ""
+      }
+    },
+    {
+      "id": "repair-guard-synthetic",
+      "passed": true,
+      "evidence": {
+        "disabledNoEvent": true,
+        "note": "Synthetic guard regression, not a real disabled user action",
+        "readOnlyNoEvent": true
+      }
+    },
+    {
+      "id": "repair-keeps-filter-and-key",
+      "passed": true,
+      "evidence": {
+        "key": "US",
+        "status": ""
+      }
+    },
+    {
+      "id": "typescript-a",
+      "passed": true,
+      "evidence": {
+        "arm": "a",
+        "args": [
+          "node",
+          "tools/validation/node_modules/typescript/bin/tsc",
+          "--target",
+          "ES2020",
+          "--lib",
+          "ES2020,DOM,DOM.Iterable",
+          "--strict",
+          "--outDir",
+          "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmpc5r2tqe_",
+          "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/a/form.ts"
+        ],
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "",
+        "deliveredJsMatchesRecompiledTs": true
+      }
+    },
+    {
+      "id": "typescript-b",
+      "passed": true,
+      "evidence": {
+        "arm": "b",
+        "args": [
+          "node",
+          "tools/validation/node_modules/typescript/bin/tsc",
+          "--target",
+          "ES2020",
+          "--lib",
+          "ES2020,DOM,DOM.Iterable",
+          "--strict",
+          "--outDir",
+          "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmperbpfenr",
+          "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/b/form.ts"
+        ],
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "",
+        "deliveredJsMatchesRecompiledTs": true
+      }
+    },
+    {
+      "id": "typescript-b-repair-01",
+      "passed": true,
+      "evidence": {
+        "arm": "b-repair-01",
+        "args": [
+          "node",
+          "tools/validation/node_modules/typescript/bin/tsc",
+          "--target",
+          "ES2020",
+          "--lib",
+          "ES2020,DOM,DOM.Iterable",
+          "--strict",
+          "--outDir",
+          "/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/tmp2fanyxbh",
+          "docs/research/studies/UX-RULES-01/studies/SELECTION-01/outputs/b-repair-01/form.ts"
+        ],
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "",
+        "deliveredJsMatchesRecompiledTs": true
+      }
+    },
+    {
+      "id": "first-deliveries-unchanged",
+      "passed": true,
+      "evidence": 15
+    }
+  ],
+  "checkCount": 32,
+  "passed": 30,
+  "retainedFirstFailures": [
+    "B-first-Input-events",
+    "B-first-success-invalidated"
+  ],
+  "repair": "Separate b-repair-01 passes affected regression checks; initial failures remain failures.",
+  "notChecked": [
+    "Full screenreader/IME",
+    "Full external component API/SCXML lifecycle",
+    "Independent complete access audit",
+    "Exact model identity",
+    "Causal effect of UX docs versus prior model knowledge",
+    "Population-level reliability"
+  ]
+}

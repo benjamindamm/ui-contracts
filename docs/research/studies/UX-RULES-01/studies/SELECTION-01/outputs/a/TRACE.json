@@ -1,0 +1,10 @@
+{
+  "task": "SELECTION-01-a", "status": "ready", "release": false,
+  "outputFiles": ["index.html", "form.ts", "form.js", "styles.css", "decision.json", "REPORT.md", "TRACE.json"],
+  "sequence": ["Read task and builder role", "Read own input, relevant library index, policy and capability profiles", "Read chosen Select/Input original domains and shared tokens", "Write decision.json before UI files", "Create native standalone form", "Compile, correct global status name conflict, recompile", "Run allowed selection policy evaluator", "Read back HTML and generated JavaScript", "Add required Select clear guard and recompile", "Write report and trace"],
+  "bindings": {"givenName": "Input:text:given-name", "familyName": "Input:text:family-name", "email": "Input:email:email", "nationalNumber": "Input:tel:tel-national", "country": "Select:CH,DE,FR"},
+  "checks": [{"tool": "tools/validation/node_modules/typescript/bin/tsc", "result": "PASS", "finalExitCode": 0, "options": ["--target ES2020", "--lib ES2020,DOM", "--strict"]}, {"tool": "tools/validation/.venv/bin/python docs/research/studies/UX-RULES-01/studies/SELECTION-01/evaluate.py docs/research/studies/UX-RULES-01/studies/SELECTION-01/inputs/a.json", "exitCode": 0, "overall": "PASS_LIMITED", "release": false, "scope": "bounded selection research policy", "assessment": {"searchNeed": "not-required", "Select": "eligible", "Autocomplete": "eligible", "choice": "Select", "reason": "project-preference-for-simple-fixed-choice"}, "libraryRevision": "625a1c73524c808a9007461a15b5caced56612125729990b491556347b58c497"}, {"method": "textual readback", "files": ["index.html", "form.js"], "result": "performed before final required-clear guard; guard subsequently compiled"}],
+  "unchecked": ["browser execution", "visual rendering", "screen reader", "real keyboard and IME", "international telephone validity", "general contract runtime compliance"],
+  "assumptions": ["All five fields required as host product decision"],
+  "limitations": ["Static form does not expose generic SET_VALUE/SET_OPTIONS API", "Font falls back to sans-serif if Inter unavailable"]
+}

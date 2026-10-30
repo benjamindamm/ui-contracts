@@ -1,0 +1,405 @@
+{
+  "release": false,
+  "scope": "Two policy choices and bounded actual browser observations; counts are checks, not statistical UX accuracy",
+  "checks": [
+    {
+      "id": "choice-a",
+      "passed": true,
+      "observed": "Select",
+      "expected": "Select"
+    },
+    {
+      "id": "choice-b",
+      "passed": true,
+      "observed": "SelectWithSearch",
+      "expected": "SelectWithSearch"
+    },
+    {
+      "id": "unique-ids-a",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "id": "four-required-Inputs-a",
+      "passed": true,
+      "observed": 4,
+      "expected": 4
+    },
+    {
+      "id": "real-Input-events-a",
+      "passed": true,
+      "observed": [
+        "Ada",
+        "Beispiel",
+        "ada@example.test",
+        "0123 456789"
+      ],
+      "expected": [
+        "Ada",
+        "Beispiel",
+        "ada@example.test",
+        "0123 456789"
+      ]
+    },
+    {
+      "id": "leading-zero-a",
+      "passed": true,
+      "observed": "0123 456789",
+      "expected": "0123 456789"
+    },
+    {
+      "id": "required-missing-a",
+      "passed": true,
+      "observed": 5,
+      "expected": 5
+    },
+    {
+      "id": "unique-ids-b",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "id": "four-required-Inputs-b",
+      "passed": true,
+      "observed": 4,
+      "expected": 4
+    },
+    {
+      "id": "real-Input-events-b",
+      "passed": true,
+      "observed": [
+        "Ada",
+        "Beispiel",
+        "ada@example.test",
+        "0123 456789"
+      ],
+      "expected": [
+        "Ada",
+        "Beispiel",
+        "ada@example.test",
+        "0123 456789"
+      ]
+    },
+    {
+      "id": "leading-zero-b",
+      "passed": true,
+      "observed": "0123 456789",
+      "expected": "0123 456789"
+    },
+    {
+      "id": "required-missing-b",
+      "passed": true,
+      "observed": 5,
+      "expected": 5
+    },
+    {
+      "id": "native-select-three",
+      "passed": true,
+      "observed": [
+        "",
+        "CH",
+        "DE",
+        "FR"
+      ],
+      "expected": [
+        "",
+        "CH",
+        "DE",
+        "FR"
+      ]
+    },
+    {
+      "id": "a-local-success",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "id": "a-edit-clears-success",
+      "passed": true,
+      "observed": "",
+      "expected": ""
+    },
+    {
+      "id": "thirty-order",
+      "passed": true,
+      "observed": [
+        "CH",
+        "DE",
+        "FR",
+        "CA",
+        "US",
+        "GR",
+        "NL",
+        "BE",
+        "ES",
+        "HU",
+        "IT",
+        "AT",
+        "GB",
+        "DK",
+        "SE",
+        "NO",
+        "PL",
+        "AU",
+        "NZ",
+        "JP",
+        "TR",
+        "IN",
+        "PT",
+        "LU",
+        "IE",
+        "FI",
+        "HR",
+        "SI",
+        "CZ",
+        "SK"
+      ],
+      "expected": [
+        "CH",
+        "DE",
+        "FR",
+        "CA",
+        "US",
+        "GR",
+        "NL",
+        "BE",
+        "ES",
+        "HU",
+        "IT",
+        "AT",
+        "GB",
+        "DK",
+        "SE",
+        "NO",
+        "PL",
+        "AU",
+        "NZ",
+        "JP",
+        "TR",
+        "IN",
+        "PT",
+        "LU",
+        "IE",
+        "FI",
+        "HR",
+        "SI",
+        "CZ",
+        "SK"
+      ]
+    },
+    {
+      "id": "open-search-focus",
+      "passed": true,
+      "observed": "country-search",
+      "expected": "country-search"
+    },
+    {
+      "id": "unknown-no-options",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "id": "unknown-no-commit",
+      "passed": true,
+      "observed": "",
+      "expected": ""
+    },
+    {
+      "id": "filter-Indien",
+      "passed": true,
+      "observed": [
+        "IN"
+      ],
+      "expected": [
+        "IN"
+      ]
+    },
+    {
+      "id": "active-is-not-selected",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "id": "focus-on-option",
+      "passed": true,
+      "observed": "country-option-IN",
+      "expected": "country-option-IN"
+    },
+    {
+      "id": "commit-IN",
+      "passed": true,
+      "observed": "IN",
+      "expected": "IN"
+    },
+    {
+      "id": "commit-restores-trigger",
+      "passed": true,
+      "observed": "country-trigger",
+      "expected": "country-trigger"
+    },
+    {
+      "id": "b-local-success",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "id": "search-keeps-selected-value",
+      "passed": true,
+      "observed": "IN",
+      "expected": "IN"
+    },
+    {
+      "id": "search-keeps-selected-label",
+      "passed": true,
+      "observed": "Indien (+91)",
+      "expected": "Indien (+91)"
+    },
+    {
+      "id": "shared-prefix-distinct",
+      "passed": true,
+      "observed": [
+        "CA",
+        "US"
+      ],
+      "expected": [
+        "CA",
+        "US"
+      ]
+    },
+    {
+      "id": "escape-retains-IN",
+      "passed": true,
+      "observed": "IN",
+      "expected": "IN"
+    },
+    {
+      "id": "search-clears-stale-success",
+      "passed": true,
+      "observed": "",
+      "expected": ""
+    },
+    {
+      "id": "last-option-visible",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "id": "last-option-actual-key",
+      "passed": true,
+      "observed": "SK",
+      "expected": "SK"
+    },
+    {
+      "id": "scroll-positive",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "id": "navigation-not-commit",
+      "passed": true,
+      "observed": "IN",
+      "expected": "IN"
+    },
+    {
+      "id": "US-distinct-commit",
+      "passed": true,
+      "observed": "US",
+      "expected": "US"
+    },
+    {
+      "id": "b-input-clears-success",
+      "passed": true,
+      "observed": "",
+      "expected": ""
+    },
+    {
+      "id": "SEL2-B01-close-restores-focus",
+      "passed": false,
+      "observed": false,
+      "expected": true
+    }
+  ],
+  "firstCheckCount": 37,
+  "firstPassed": 36,
+  "retainedFirstIssue": "SEL2-B01",
+  "repairChecks": [
+    {
+      "id": "close-focus",
+      "observed": "country-trigger",
+      "expected": "country-trigger",
+      "passed": true
+    },
+    {
+      "id": "internal-focus",
+      "observed": "country-option-IN",
+      "expected": "country-option-IN",
+      "passed": true
+    },
+    {
+      "id": "internal-stays-open",
+      "observed": "true",
+      "expected": "true",
+      "passed": true
+    },
+    {
+      "id": "commit",
+      "observed": "IN",
+      "expected": "IN",
+      "passed": true
+    },
+    {
+      "id": "commit-focus",
+      "observed": "country-trigger",
+      "expected": "country-trigger",
+      "passed": true
+    },
+    {
+      "id": "escape-focus",
+      "observed": "country-trigger",
+      "expected": "country-trigger",
+      "passed": true
+    },
+    {
+      "id": "escape-keeps-value",
+      "observed": "IN",
+      "expected": "IN",
+      "passed": true
+    },
+    {
+      "id": "escape-clears-query",
+      "observed": "",
+      "expected": "",
+      "passed": true
+    },
+    {
+      "id": "leave-closes",
+      "observed": "false",
+      "expected": "false",
+      "passed": true
+    },
+    {
+      "id": "leave-keeps-value",
+      "observed": "IN",
+      "expected": "IN",
+      "passed": true
+    }
+  ],
+  "repairPassed": 10,
+  "primaryChoicesMatch": true,
+  "notChecked": [
+    "Full API and SCXML equivalence",
+    "Full design geometry/theme/font conformance",
+    "Screenreader and real IME",
+    "Native platforms",
+    "Full independent agent access audit",
+    "Usability or statistical generalization"
+  ]
+}

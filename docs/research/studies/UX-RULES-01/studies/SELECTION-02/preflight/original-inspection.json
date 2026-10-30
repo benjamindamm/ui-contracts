@@ -1,0 +1,452 @@
+{
+  "kind": "ui-contracts-original-artifact-inspection",
+  "overall": "BLOCKED",
+  "release": false,
+  "diagnostic": {
+    "code": "SEMANTIC_PROFILE_UNSUPPORTED",
+    "detail": "Only syntax and the available original schemas were inspected. This candidate has no general semantic/profile/runtime acceptance through this helper."
+  },
+  "passedScope": [
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/accessibility.html",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/accessibility.rules.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/behavior.scxml",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/component.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/interface.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/layout.css",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--select-search-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--select-search-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--select-search-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--select-search-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--select-search-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--select-search-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--select-search-border-width) solid var(--select-search-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--select-search-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-search-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-search-focus)"
+                  },
+                  {
+                    "property": "outline-offset",
+                    "value": "2px"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-disabled)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-error)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-search-surface)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "1px solid var(--select-search-border)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "8px"
+                  },
+                  {
+                    "property": "max-height",
+                    "value": "160px"
+                  },
+                  {
+                    "property": "overflow-y",
+                    "value": "auto"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "8px"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-search-focus)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/stories.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/ux.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "candidate": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search",
+  "artifacts": [
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/accessibility.html",
+      "sha256": "172bfa29a28025066b1a7de9ff76d2aaedb7feadeb4e028f7180559e90ad8ab4",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "HTML/ARIA/APG conformance and runtime accessibility"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/accessibility.rules.json",
+      "sha256": "112be14e5556c8b6d705685a8e04f96d838376b17cfc475a606fb63330a64c32",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/behavior.scxml",
+      "sha256": "036d993ca97c0b5d83fce6fbfb11a4f4145af29898d27915670ed3495b65fae4",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/component.json",
+      "sha256": "036c3583114146e931cbca2a03059d84545df200a3cc62c014b7485545b0d350",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/interface.json",
+      "sha256": "b6ec24257c4deba283d0caf2bd2eddde3d825a1c2fad708d2080e1f000c6316b",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/layout.css",
+      "sha256": "2dedb22e611823ad91c628ea590841aec0bed60e5f5cef65a90e7ecf26cba1e1",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--select-search-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--select-search-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--select-search-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--select-search-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--select-search-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--select-search-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--select-search-border-width) solid var(--select-search-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--select-search-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-search-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-search-focus)"
+                  },
+                  {
+                    "property": "outline-offset",
+                    "value": "2px"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-disabled)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-error)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-search-surface)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "1px solid var(--select-search-border)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "8px"
+                  },
+                  {
+                    "property": "max-height",
+                    "value": "160px"
+                  },
+                  {
+                    "property": "overflow-y",
+                    "value": "auto"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "8px"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-search-focus)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/stories.json",
+      "sha256": "c1b6b0ccd41c9b29937db364d8b73c6fb5fc39340270470bac1d9cf94b17bb0d",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/studies/UX-RULES-01/studies/SELECTION-02/candidate-library/libraries/example/components/select-with-search/ux.json",
+      "sha256": "c66928f8597bd2e0d5389189e308c450934218b3e4ee9809f7121902f26af99b",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    }
+  ],
+  "warnings": [
+    "Original SCXML schema is loose; HTML parsing is not conformance.",
+    "DTCG/CSS/HTML/ARIA/APG are not fully original-validated."
+  ],
+  "unverified": [
+    "General cross-file references, ownership and composition for this candidate",
+    "Runtime events, focus, scrolling, AX, lifecycle",
+    "Target generation, screenreader, real IME and native platforms"
+  ],
+  "productionRelease": false,
+  "skill": {
+    "name": "ui-contracts",
+    "skillSha256": "7bfc4e54170ae9e23789f609a48b357d4d1130817395406b05a708d6fb26fb66",
+    "helperSha256": "7cb09067057dfae2f940b5cf2a4da00823094c20203b0ea4380882e95741e5dc"
+  }
+}

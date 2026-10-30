@@ -1,0 +1,1 @@
+if existingEntriesOnly = null or singleSelection = null then "unknown" else if existingEntriesOnly and singleSelection then "candidate" else "unsuitable"

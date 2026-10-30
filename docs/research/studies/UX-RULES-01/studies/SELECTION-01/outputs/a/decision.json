@@ -1,0 +1,12 @@
+{
+  "scenarioId": "SELECTION-01-a",
+  "library": "libraries/example",
+  "selectedComponent": "Select",
+  "choice": "Select",
+  "recordedBeforeUIBuild": true,
+  "facts": {"optionCount": 3, "searchExplicitlyRequired": null, "queryEditingAllowed": true, "fixedValuesRequired": true, "filteringProviderAvailable": true, "searchRequiredAbove": 15, "completionAssistancePreferred": false},
+  "evaluation": {"searchNeed": "not-required", "Select": "eligible", "Autocomplete": "eligible", "choice": "Select", "reason": "project-preference-for-simple-fixed-choice"},
+  "reasons": ["Three supplied options do not exceed the project threshold of 15; search is not required.", "Both candidates commit only listed keys and support exactly one selection. Editable queries are allowed, so Autocomplete is eligible, but not preferred by project policy.", "Select preserves supplied CH, DE, FR order and offers native keyboard interaction without inventing a searchable variant.", "The four named free-text fields use Input; nationalNumber remains a string."],
+  "sources": ["docs/research/studies/UX-RULES-01/studies/SELECTION-01/tasks/a.json", "docs/research/studies/UX-RULES-01/studies/SELECTION-01/inputs/a.json", "libraries/example/selection-policy.json", "libraries/example/selection-policy.dmn", "libraries/example/components/select/ux.json", "libraries/example/components/autocomplete/ux.json", "libraries/example/components/select/interface.json", "libraries/example/components/select/behavior.scxml", "libraries/example/components/select/accessibility.html", "libraries/example/components/input/component.json"],
+  "scope": "Manual application of supplied policy, not execution of a DMN engine; project-specific research threshold, not a universal UX rule."
+}

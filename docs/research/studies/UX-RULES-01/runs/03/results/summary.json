@@ -1,0 +1,17 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "checks": 33,
+  "expectationsMet": 33,
+  "nativeCalls": 26,
+  "frozenInputsUnchanged": true,
+  "notChecked": [
+    "Full SBVR execution",
+    "ODRL runtime",
+    "General UX validity",
+    "Agent forward test",
+    "Universal DMN conformance",
+    "All T01-T12 across every candidate"
+  ],
+  "scope": "Native DMN XML and Rego shared policies; own typed UX assumptions, own reference gate and file-level context measurement"
+}

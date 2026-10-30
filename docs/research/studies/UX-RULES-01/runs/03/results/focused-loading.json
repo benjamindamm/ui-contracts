@@ -1,0 +1,18 @@
+{
+  "requestedComponent": "example/Autocomplete",
+  "loadedRuleFiles": [
+    "runs/03/fixtures/component.rego",
+    "runs/03/fixtures/shared.rego",
+    "runs/01/fixtures/bindings.json"
+  ],
+  "loadedBytes": 2058,
+  "unrelatedFileExplicitlyExcluded": "runs/03/fixtures/unrelated.rego",
+  "dmnSingleFileBytes": 971,
+  "notMeasured": [
+    "Full agent request context",
+    "Token count",
+    "Agent understanding",
+    "Performance benchmark"
+  ],
+  "scope": "T12 file loading and byte sizes only; Rego calls succeed without loading deliberately invalid unrelated file"
+}

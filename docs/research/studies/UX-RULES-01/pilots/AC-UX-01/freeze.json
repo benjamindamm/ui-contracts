@@ -1,0 +1,30 @@
+{
+  "phase": "before measurement; after disclosed exploratory schema/bridge preparation, no blind agent review",
+  "files": {
+    "UxAuditProbe.java": "7fcd39d3cd8cd2b9e74820897496d2655984caa6295b3a52c8d9ab2c820574f2",
+    "candidate/autocomplete-ux.dmn": "75a73ed0a812af7fde23fa54697ec449d9cb54a8c0c11c94a0b344fdc73e2a84",
+    "candidate/context-vocabulary.json": "cc6174bd395da9c56fbad0d88291cd21128443e7796278c7ae70aac429cffc5f",
+    "candidate/negative/missing-anchor.json": "6baacc8f9e223f5531dafdcec1eefb156d433afbfad6363419725bedfad828b1",
+    "candidate/negative/wrong-anchor-type.json": "8c1ab2322ea3d2709ca2fc7be1854556a73489739deeffae1e85d73e08ff5b92",
+    "candidate/profile.schema.json": "0438e66718486d0a80817d1b098b6835e32b56236cbc81530137f3cb1047f9e1",
+    "candidate/sources.json": "6bf4b707add06e41eae1a642e49c47b96a321b506ea4c28e316f0fd02a8044da",
+    "candidate/ux-profile.json": "34b7459704efa787f54debbb2e1d1d96ba4e449603327b3447dc47e96b17ef95",
+    "contexts/create-new.json": "95ca96c6d92d1ee4487cad33150e6a2dc32adaa57be0ff30c34e8d1f0e9b5217",
+    "contexts/existing-single.json": "176c6d2dea842ff8a01f1b686d0b933afd6865c4ba44afef890663254ecbf816",
+    "contexts/guidance-unknown.json": "b8ffbac74e24fbf52e5dd554e5e58c95c4f40916148efdb6105876e683dec4d0",
+    "contexts/labels-unfamiliar.json": "45e1c23de5cd36af72b93c5406a5dc118d24d9a351522ab29006b1bdadb8fe03",
+    "contexts/labels-wrong-type.json": "59ad7425b74f9f13e4767394db47ebf2ba878cdbf709eaaa9778a7159225d5ab",
+    "contexts/missing-creation.json": "40b453fe83bb843035ebe882daa941518f29adb6876d1446c21b2f1645fc6637",
+    "contexts/null-creation.json": "69ca740d81d509c207ecc415e3a24c5f691aca596a9d28b93dcae5ee98278448",
+    "contexts/scoped-exception.json": "2afd49998bead1289d2a6aa45c4df67baccc87ef06aba0f1ea179681400436e2",
+    "contexts/select-many.json": "e59eebc5e1737a1b5d6e68af184b3daec9c94685b7680fb3114bccdff52ef7f3",
+    "contexts/wrong-bool-type.json": "99538585f18d179258a4988e0ec249a0a5a973a2a264ba792e588171e951124e",
+    "contexts/wrong-cardinality.json": "b65fec49733efe0498606846c01b8d5c633f4bb2c75edcbeaaea84a834baf8f5",
+    "evaluate.py": "0243ec04eaf44ee45610a25ef517e4c508c54edb0182b0b778c66881a493effc",
+    "expected.json": "62b1e3e1ef0d41553961f63b7559e62de0805a31f5f5ba3539c2066707fe2edf",
+    "preflight.json": "25e051baade517eb738574ebdae1ef14e36fbbf26b49403b36f0f3a20e3a4e73",
+    "probe.py": "604ad8f226592679305c491f8bd651e29101c202c1accb1e074833615d1fdbd2"
+  },
+  "baselineSha256": "0f908f42c7c7fc24940109d95f9ed1c3cc1214cb0c1df058e0e6537591eb8a82",
+  "previousRuntimeManifestSha256": "17c986e512c34e5614f5f794bf077a5b044e60f0ab7b3a49a1a7b2c3db341fea"
+}

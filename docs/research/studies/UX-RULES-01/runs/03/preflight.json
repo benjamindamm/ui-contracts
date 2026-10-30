@@ -1,0 +1,22 @@
+{
+  "phase": "before frozen measurement",
+  "issues": [
+    {
+      "id": "UXP-005",
+      "cause": "Own harness explicitly pinned Jackson Databind 2.19.2, incompatible with engine-transitive Scala module 2.22.1.",
+      "repair": "Align explicit Jackson Databind to 2.22.1; rebuild classpath before measuring.",
+      "engineFailureClaim": false
+    },
+    {
+      "id": "UXP-006",
+      "cause": "Python 3.9 tarfile has no extractall filter keyword.",
+      "repair": "Validate archive member paths and reject links before extraction; Maven stays in temporary runtime.",
+      "engineFailureClaim": false
+    }
+  ],
+  "warnings": [
+    "Maven on Java 25 emits deprecated Unsafe warning",
+    "Java bridge uses deprecated Scala Either accessors and unchecked Map conversion",
+    "No SLF4J provider configured; stdout JSON and stderr retained"
+  ]
+}

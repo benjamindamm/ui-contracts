@@ -1,0 +1,123 @@
+{
+  "format": "ui-contracts-ux-capabilities/0.2",
+  "status": "research-candidate-own-projection-not-an-external-standard",
+  "type": "object",
+  "required": [
+    "format",
+    "componentId",
+    "capabilities",
+    "sources"
+  ],
+  "properties": {
+    "format": {
+      "const": "ui-contracts-ux-capabilities/0.2"
+    },
+    "componentId": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "role",
+        "valueDomain",
+        "valueDisplayEditable",
+        "searchMode",
+        "selectionCardinality",
+        "preservesSuppliedOrder",
+        "completionMode",
+        "interactionIntent",
+        "querySurface",
+        "unknownInputPolicy"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "choice",
+            "input"
+          ]
+        },
+        "valueDomain": {
+          "enum": [
+            "listed-keys",
+            "free-text"
+          ]
+        },
+        "valueDisplayEditable": {
+          "type": "boolean"
+        },
+        "searchMode": {
+          "enum": [
+            "none",
+            "query-provider"
+          ]
+        },
+        "selectionCardinality": {
+          "enum": [
+            "one",
+            "not-applicable"
+          ]
+        },
+        "preservesSuppliedOrder": {
+          "type": "boolean"
+        },
+        "completionMode": {
+          "enum": [
+            "none",
+            "label-on-confirm"
+          ]
+        },
+        "interactionIntent": {
+          "enum": [
+            "fixed-choice",
+            "completion-assistance",
+            "text-entry"
+          ]
+        },
+        "querySurface": {
+          "enum": [
+            "none",
+            "value-editor",
+            "separate-filter"
+          ]
+        },
+        "unknownInputPolicy": {
+          "enum": [
+            "reject-commit",
+            "retain-text",
+            "not-applicable"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

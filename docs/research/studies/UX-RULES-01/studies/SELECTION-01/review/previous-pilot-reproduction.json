@@ -1,0 +1,26 @@
+{
+  "liveLibraryResult": {
+    "overall": "BLOCKED",
+    "diagnostic": "source-stale:README.md",
+    "nativeCalled": false
+  },
+  "snapshotResult": {
+    "overall": "compatible",
+    "nativeCalled": true,
+    "rules": [
+      {
+        "id": "AC-UX-001",
+        "row": "AC-UX-001_compatible"
+      },
+      {
+        "id": "AC-UX-002",
+        "row": "AC-UX-002_compatible"
+      },
+      {
+        "id": "AC-UX-003",
+        "row": "AC-UX-003_satisfied"
+      }
+    ]
+  },
+  "interpretation": "Live manifest is intentionally stale after authorized library extension; original snapshot reproduces an earlier positive pilot without changing its code, sources or receipts."
+}

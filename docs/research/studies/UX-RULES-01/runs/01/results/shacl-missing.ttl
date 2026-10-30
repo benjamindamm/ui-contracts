@@ -1,0 +1,5 @@
+@prefix ns1: <urn:uxprobe:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:context ns1:singleSelection true .
+

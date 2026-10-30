@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" id="uxprobe" name="UX eligibility experiment" namespace="urn:ui-contracts:ux-rules-01">
+ <decision id="eligibility" name="eligibility">
+  <variable id="output" name="eligibility" typeRef="string"/>
+  <literalExpression id="logic"><text>if existingEntriesOnly = null or singleSelection = null then "unknown" else if existingEntriesOnly and singleSelection then "candidate" else "unsuitable"</text></literalExpression>
+ </decision>
+</definitions>

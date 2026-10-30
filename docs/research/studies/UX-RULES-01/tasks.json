@@ -1,0 +1,101 @@
+{
+  "study": "UX-RULES-01",
+  "date": "2026-10-30",
+  "overall": "active-research-no-framework-selected",
+  "tasks": [
+    {
+      "id": "W01",
+      "status": "done",
+      "task": "Record user requirements, scope, read-only baseline and common cases."
+    },
+    {
+      "id": "W02",
+      "status": "done",
+      "task": "Initial official-source comparison of six starting approaches; documentary evidence only."
+    },
+    {
+      "id": "W03",
+      "status": "done",
+      "task": "Bounded additional search for UX-specific formal guideline/rationale models; record inclusion/exclusion reasons."
+    },
+    {
+      "id": "W04",
+      "status": "in_progress",
+      "task": "Pin usable local tools, original schemas/licenses and input artifacts for DMN, SBVR, SHACL and Rego.",
+      "note": "Native DMN Scala and Rego pinned/executed; SHACL executed; SBVR schema-only, bounded tool search leaves semantic runtime open."
+    },
+    {
+      "id": "W05",
+      "status": "in_progress",
+      "task": "Execute common positive/negative semantics and contract-binding probes; retain original outputs and own adapter code separately.",
+      "note": "run-03 covers normative/shared policies, reference gate + native DMN and file-level loading. No complete SBVR or every-candidate benchmark."
+    },
+    {
+      "id": "W06",
+      "status": "done",
+      "task": "Compare ODRL normative boundary cases; retain MBUI as later task-model reference.",
+      "note": "Documented ODRL conflict boundary plus three encoding-only checks; no ODRL policy runtime claim. MBUI retained as later reference."
+    },
+    {
+      "id": "W07",
+      "status": "done",
+      "task": "Measure maintained files/context payload, effort, limitations and required own semantics.",
+      "note": "Bounded measured bytes/JARs and observed integration work documented; no full agent-context or fair timing/maintenance benchmark."
+    },
+    {
+      "id": "W08",
+      "status": "done",
+      "task": "Propose a justified model/combination or minimal extension; no production migration without a subsequent decision.",
+      "note": "Conditional DMN-first integration-probe recommendation delivered; not adopted or migrated."
+    },
+    {
+      "id": "W09",
+      "status": "done",
+      "task": "Create and execute a separate component-bound Autocomplete UX candidate with native DMN row trace and evidence bindings.",
+      "note": "AC-UX-01: 43/43 expectations, 11 native evaluations, 17 pre-engine countercases. Candidate only; no agent trial or adoption."
+    }
+  ],
+  "counts": {
+    "done": 7,
+    "in_progress": 2,
+    "pending": 0,
+    "total": 9
+  },
+  "frameworkRuntimeTestsExecuted": 76,
+  "runtimeCountDefinition": "Previous 65 native engine calls plus 11 in component pilot AC-UX-01 = 76; repeated contexts are not independent requirement coverage. Encoding-only JSON-LD parses remain separate.",
+  "measurementBlocks": [
+    {
+      "run": "01",
+      "expectationsMet": 38,
+      "checks": 39,
+      "status": "contains-known-own-policy-failure"
+    },
+    {
+      "run": "02",
+      "expectationsMet": 6,
+      "checks": 6,
+      "status": "bounded-own-policy-repair"
+    },
+    {
+      "run": "03",
+      "expectationsMet": 33,
+      "checks": 33,
+      "status": "bounded-native-DMN-Rego-and-own-gates"
+    },
+    {
+      "run": "04",
+      "expectationsMet": 3,
+      "encodingChecks": 3,
+      "policyEvaluations": 0,
+      "status": "encoding-only-not-a-policy-runtime"
+    }
+  ],
+  "remaining": "SBVR semantic execution/tool fit and exhaustive cross-candidate coverage remain open. A bounded native matched-row/evidence trace exists for the three AC-UX-01 rules. Fact truth, reviewer identity/authority, independent agent reading and production adoption remain unverified.",
+  "componentPilot": {
+    "id": "AC-UX-01",
+    "checks": 43,
+    "expectationsMet": 43,
+    "nativeEvaluations": 11,
+    "status": "completed-bounded-candidate"
+  }
+}

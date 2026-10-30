@@ -20,3 +20,7 @@ Die Dateien beschreiben die Komponente; es gibt keine daneben gepflegte handgesc
 Ein neuer Agent erhält nur dieses Verzeichnis und normale OpenPencil-Dokumentation beziehungsweise die Originalwerkzeuge. Er soll daraus ohne Gesprächsverlauf, Rechercheordner, Webharness oder fertige Bilder ein editierbares OpenPencil-Dokument erzeugen. Der Agent darf Definitionen nicht ändern. Fehlende oder widersprüchliche Angaben werden protokolliert und nicht still ergänzt.
 
 Ziel dieses Schritts ist ein editierbares Design mit allen benannten Zuständen. Interaktive Combobox-Preview in OpenPencil und das spätere HTML-/TypeScript-Ziel sind separate Prüfumfänge. Die nachfolgende Prüfung vergleicht das Ergebnis mit diesen unveränderten Quellen, nicht mit einer nachträglich auf das Design zugeschnittenen Definition.
+
+## Neue Auswahl-/Formularstudie
+
+[Select](components/select/README.md) ergänzt die feste, nicht editierbare Einzelauswahl; [Input](components/input/README.md) die freie Eingabe von Personen- und Rufnummerndaten. Optionale ux.json-Dateien projizieren deklarierte Fähigkeiten mit Quellhashes; [Schema](ux-capabilities.schema.json) und [Auswahlpolicy](selection-policy.json) sind ausdrücklich eigene Forschungsentwürfe. Die auswertbaren Bedingungen stehen in selection-policy.dmn. Die Suchgrenze ist eine Studien-/Projektregel, kein universeller Standard. [Studie](../../docs/research/studies/UX-RULES-01/studies/SELECTION-01/README.md).

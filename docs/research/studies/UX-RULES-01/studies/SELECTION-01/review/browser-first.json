@@ -1,0 +1,600 @@
+{
+  "baseline": {
+    "logs": [],
+    "ok": true,
+    "value": [
+      {
+        "arm": "a",
+        "dom": {
+          "changed": false,
+          "page": 63,
+          "settled": false,
+          "value": {
+            "fields": [
+              {
+                "autocomplete": "given-name",
+                "component": "Input",
+                "id": "givenName",
+                "name": "givenName",
+                "role": null,
+                "tag": "INPUT",
+                "type": "text",
+                "value": ""
+              },
+              {
+                "autocomplete": "family-name",
+                "component": "Input",
+                "id": "familyName",
+                "name": "familyName",
+                "role": null,
+                "tag": "INPUT",
+                "type": "text",
+                "value": ""
+              },
+              {
+                "autocomplete": "email",
+                "component": "Input",
+                "id": "email",
+                "name": "email",
+                "role": null,
+                "tag": "INPUT",
+                "type": "email",
+                "value": ""
+              },
+              {
+                "autocomplete": null,
+                "component": "Select",
+                "id": "country",
+                "name": "country",
+                "role": null,
+                "tag": "SELECT",
+                "type": "select-one",
+                "value": ""
+              },
+              {
+                "autocomplete": "tel-national",
+                "component": "Input",
+                "id": "nationalNumber",
+                "name": "nationalNumber",
+                "role": null,
+                "tag": "INPUT",
+                "type": "tel",
+                "value": ""
+              }
+            ],
+            "idsUnique": true,
+            "labels": [
+              {
+                "for": "givenName",
+                "text": "Vorname"
+              },
+              {
+                "for": "familyName",
+                "text": "Nachname"
+              },
+              {
+                "for": "email",
+                "text": "E-Mail"
+              },
+              {
+                "for": "country",
+                "text": "Land und Vorwahl"
+              },
+              {
+                "for": "nationalNumber",
+                "text": "Rufnummer"
+              }
+            ],
+            "resourceOrigins": [
+              "http://127.0.0.1:8766"
+            ],
+            "title": "Persönliche Angaben"
+          }
+        }
+      },
+      {
+        "arm": "b",
+        "dom": {
+          "changed": false,
+          "page": 64,
+          "settled": false,
+          "value": {
+            "fields": [
+              {
+                "autocomplete": "given-name",
+                "component": "Input",
+                "id": "givenName",
+                "name": "givenName",
+                "role": null,
+                "tag": "INPUT",
+                "type": "text",
+                "value": ""
+              },
+              {
+                "autocomplete": "family-name",
+                "component": "Input",
+                "id": "familyName",
+                "name": "familyName",
+                "role": null,
+                "tag": "INPUT",
+                "type": "text",
+                "value": ""
+              },
+              {
+                "autocomplete": "email",
+                "component": "Input",
+                "id": "email",
+                "name": "email",
+                "role": null,
+                "tag": "INPUT",
+                "type": "email",
+                "value": ""
+              },
+              {
+                "autocomplete": "tel-national",
+                "component": "Input",
+                "id": "nationalNumber",
+                "name": "nationalNumber",
+                "role": null,
+                "tag": "INPUT",
+                "type": "tel",
+                "value": ""
+              },
+              {
+                "autocomplete": "off",
+                "component": "Autocomplete",
+                "id": "country-query",
+                "name": "",
+                "role": "combobox",
+                "tag": "INPUT",
+                "type": "text",
+                "value": ""
+              },
+              {
+                "autocomplete": null,
+                "component": "Autocomplete",
+                "id": "country-value",
+                "name": "country",
+                "role": null,
+                "tag": "INPUT",
+                "type": "hidden",
+                "value": ""
+              }
+            ],
+            "idsUnique": true,
+            "labels": [
+              {
+                "for": "givenName",
+                "text": "Vorname"
+              },
+              {
+                "for": "familyName",
+                "text": "Nachname"
+              },
+              {
+                "for": "email",
+                "text": "E-Mail"
+              },
+              {
+                "for": "nationalNumber",
+                "text": "Rufnummer"
+              },
+              {
+                "for": "country-query",
+                "text": "Land und Vorwahl"
+              }
+            ],
+            "resourceOrigins": [
+              "http://127.0.0.1:8766"
+            ],
+            "title": "Persönliche Angaben"
+          }
+        }
+      }
+    ]
+  },
+  "firstActions": {
+    "logs": [],
+    "ok": true,
+    "value": [
+      {
+        "arm": "a",
+        "result": {
+          "changed": false,
+          "page": 63,
+          "settled": false,
+          "value": {
+            "audit": [
+              {
+                "detail": {
+                  "value": "Ada"
+                },
+                "id": "givenName"
+              },
+              {
+                "detail": {
+                  "value": "Beispiel"
+                },
+                "id": "familyName"
+              },
+              {
+                "detail": {
+                  "value": "ada@example.test"
+                },
+                "id": "email"
+              },
+              {
+                "detail": {
+                  "value": "0123 456789"
+                },
+                "id": "nationalNumber"
+              },
+              {
+                "detail": {
+                  "reason": "user",
+                  "value": "CH"
+                },
+                "id": "country"
+              }
+            ],
+            "formStatus": "Die Angaben wurden lokal geprüft. Es wurden keine Daten versendet. Die Rufnummer wurde nicht auf internationale Gültigkeit geprüft.",
+            "queryValidity": null,
+            "values": [
+              [
+                "givenName",
+                "Ada"
+              ],
+              [
+                "familyName",
+                "Beispiel"
+              ],
+              [
+                "email",
+                "ada@example.test"
+              ],
+              [
+                "country",
+                "CH"
+              ],
+              [
+                "nationalNumber",
+                "0123 456789"
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "arm": "b",
+        "result": {
+          "changed": false,
+          "page": 64,
+          "settled": false,
+          "value": {
+            "audit": [],
+            "formStatus": "",
+            "queryValidity": {
+              "invalid": "true",
+              "message": "Bitte ein Land aus der Liste auswählen.",
+              "valid": false
+            },
+            "values": [
+              [
+                "givenName",
+                "Ada"
+              ],
+              [
+                "familyName",
+                "Beispiel"
+              ],
+              [
+                "email",
+                "ada@example.test"
+              ],
+              [
+                "nationalNumber",
+                "0123 456789"
+              ],
+              [
+                "country",
+                ""
+              ]
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "autocomplete": {
+    "logs": [],
+    "ok": true,
+    "value": {
+      "active": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": {
+          "active": "country-option-IN",
+          "focus": "country-query",
+          "selected": [
+            "IN"
+          ]
+        }
+      },
+      "all": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": {
+          "options": [
+            {
+              "key": "CH",
+              "text": "Schweiz (+41)"
+            },
+            {
+              "key": "DE",
+              "text": "Deutschland (+49)"
+            },
+            {
+              "key": "FR",
+              "text": "Frankreich (+33)"
+            },
+            {
+              "key": "CA",
+              "text": "Kanada (+1)"
+            },
+            {
+              "key": "US",
+              "text": "Vereinigte Staaten (+1)"
+            },
+            {
+              "key": "GR",
+              "text": "Griechenland (+30)"
+            },
+            {
+              "key": "NL",
+              "text": "Niederlande (+31)"
+            },
+            {
+              "key": "BE",
+              "text": "Belgien (+32)"
+            },
+            {
+              "key": "ES",
+              "text": "Spanien (+34)"
+            },
+            {
+              "key": "HU",
+              "text": "Ungarn (+36)"
+            },
+            {
+              "key": "IT",
+              "text": "Italien (+39)"
+            },
+            {
+              "key": "AT",
+              "text": "Österreich (+43)"
+            },
+            {
+              "key": "GB",
+              "text": "Vereinigtes Königreich (+44)"
+            },
+            {
+              "key": "DK",
+              "text": "Dänemark (+45)"
+            },
+            {
+              "key": "SE",
+              "text": "Schweden (+46)"
+            },
+            {
+              "key": "NO",
+              "text": "Norwegen (+47)"
+            },
+            {
+              "key": "PL",
+              "text": "Polen (+48)"
+            },
+            {
+              "key": "AU",
+              "text": "Australien (+61)"
+            },
+            {
+              "key": "NZ",
+              "text": "Neuseeland (+64)"
+            },
+            {
+              "key": "JP",
+              "text": "Japan (+81)"
+            },
+            {
+              "key": "TR",
+              "text": "Türkei (+90)"
+            },
+            {
+              "key": "IN",
+              "text": "Indien (+91)"
+            },
+            {
+              "key": "PT",
+              "text": "Portugal (+351)"
+            },
+            {
+              "key": "LU",
+              "text": "Luxemburg (+352)"
+            },
+            {
+              "key": "IE",
+              "text": "Irland (+353)"
+            },
+            {
+              "key": "FI",
+              "text": "Finnland (+358)"
+            },
+            {
+              "key": "HR",
+              "text": "Kroatien (+385)"
+            },
+            {
+              "key": "SI",
+              "text": "Slowenien (+386)"
+            },
+            {
+              "key": "CZ",
+              "text": "Tschechien (+420)"
+            },
+            {
+              "key": "SK",
+              "text": "Slowakei (+421)"
+            }
+          ],
+          "viewport": {
+            "height": 160,
+            "overflow": "auto",
+            "scrollHeight": 960
+          }
+        }
+      },
+      "committed": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": {
+          "audit": [
+            {
+              "detail": {
+                "value": "IN"
+              },
+              "id": "country-query"
+            }
+          ],
+          "expanded": "false",
+          "phone": "0123 456789",
+          "query": "Indien (+91)",
+          "status": "Angaben lokal geprüft. Es wurden keine Daten gesendet.",
+          "value": "IN"
+        }
+      },
+      "end": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": {
+          "active": "SK",
+          "expanded": "true",
+          "focus": "country-query",
+          "rowVisible": true,
+          "scrollTop": 800
+        }
+      },
+      "filtered": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": {
+          "expanded": "true",
+          "options": [
+            {
+              "key": "IN",
+              "text": "Indien (+91)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sharedPrefix": {
+    "logs": [],
+    "ok": true,
+    "value": {
+      "filtered": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": [
+          {
+            "key": "CA",
+            "label": "Kanada (+1)"
+          },
+          {
+            "key": "US",
+            "label": "Vereinigte Staaten (+1)"
+          }
+        ]
+      },
+      "selected": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": {
+          "audit": [
+            {
+              "detail": {
+                "value": "IN"
+              },
+              "id": "country-query"
+            },
+            {
+              "detail": {
+                "value": "US"
+              },
+              "id": "country-query"
+            }
+          ],
+          "key": "US",
+          "label": "Vereinigte Staaten (+1)"
+        }
+      }
+    }
+  },
+  "inputDefect": {
+    "logs": [],
+    "ok": true,
+    "value": {
+      "after": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": {
+          "audit": [
+            {
+              "detail": {
+                "value": "IN"
+              },
+              "id": "country-query"
+            },
+            {
+              "detail": {
+                "value": "US"
+              },
+              "id": "country-query"
+            }
+          ],
+          "status": "Angaben lokal geprüft. Es wurden keine Daten gesendet."
+        }
+      },
+      "before": {
+        "changed": false,
+        "page": 64,
+        "settled": false,
+        "value": {
+          "audit": [
+            {
+              "detail": {
+                "value": "IN"
+              },
+              "id": "country-query"
+            },
+            {
+              "detail": {
+                "value": "US"
+              },
+              "id": "country-query"
+            }
+          ],
+          "status": "Angaben lokal geprüft. Es wurden keine Daten gesendet."
+        }
+      }
+    }
+  }
+}

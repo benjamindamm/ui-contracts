@@ -1,0 +1,59 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "scope": "Actual SCION transitions/events, not browser/AT qualification",
+  "checks": [
+    {
+      "id": "search preserves committed CH",
+      "passed": true
+    },
+    {
+      "id": "separate query stored",
+      "passed": true
+    },
+    {
+      "id": "unknown key rejected without validator",
+      "passed": true
+    },
+    {
+      "id": "filtered-out existing key rejected",
+      "passed": true
+    },
+    {
+      "id": "focus activity does not select",
+      "passed": true
+    },
+    {
+      "id": "existing filtered key commits and closes",
+      "passed": true
+    },
+    {
+      "id": "Escape preserves selection and clears query",
+      "passed": true
+    },
+    {
+      "id": "disabled option rejected",
+      "passed": true
+    },
+    {
+      "id": "duplicate key update rejected",
+      "passed": true
+    },
+    {
+      "id": "disabled ignores user input",
+      "passed": true
+    },
+    {
+      "id": "host update allowed while disabled",
+      "passed": true
+    },
+    {
+      "id": "removed value clears",
+      "passed": true
+    },
+    {
+      "id": "native emitted keyed and invalidation events",
+      "passed": true
+    }
+  ]
+}

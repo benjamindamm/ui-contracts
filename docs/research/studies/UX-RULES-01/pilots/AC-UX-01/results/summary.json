@@ -1,0 +1,19 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "checks": 43,
+  "expectationsMet": 43,
+  "positiveAndSemanticContexts": 11,
+  "bindingAndMetadataCountercases": 17,
+  "nativeEvaluations": 11,
+  "candidateInputsUnchanged": true,
+  "originalLibraryFilesVerified": 28,
+  "matchedTableTrace": "Native engine row IDs mapped to bound rule/evidence metadata; not synthesized by evaluating conditions a second time",
+  "notChecked": [
+    "User research proving fact values",
+    "Authenticity of declared reviewer identity",
+    "Agent forward-test",
+    "Production rule adoption",
+    "General framework conformance"
+  ]
+}
