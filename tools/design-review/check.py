@@ -25,6 +25,9 @@ def load(p):
     return json.loads(p.read_text())
 
 def example_root(repo):
+    frozen = repo/'docs/libraries/frozen/example-v1'
+    if (frozen/'library.json').is_file():
+        return frozen
     migrated = repo/'libraries/example'
     return migrated if (migrated/'library.json').is_file() else repo/'components'
 

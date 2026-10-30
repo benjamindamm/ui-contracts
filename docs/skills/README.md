@@ -79,3 +79,5 @@ Für unterstützte native Zustandsübersichten das [gemeinsame Präsentationswer
 ## Berechnete Formen und Charts
 
 Die [Geometriehilfe für Builder](../../skills/ui-contracts/references/geometry.md) trennt native Grundformen von berechneten Pfaden. Für Pie-Sektoren steht [D3-Shape als gezieltes Werkzeug](../../tools/charts/README.md) bereit; Gestaltung und Legende bleiben frei. Weitere Chartfamilien benötigen eigene Adapter und Nachweise. Die Anleitung wird nur bei passender Aufgabe nachgeladen.
+
+Bibliothekslayout seit 30. Oktober: `components/` für Definitionen, `assets/` für gemeinsame Dateien, Tokens und Index am Root. [Migration, eingefrorenes Archiv und aktuelle Prüfungen](../libraries/LAYOUT.md). Frühere Skillhash-Receipts beschreiben ihre damalige Fassung; der installierte Skill wird mit der aktuellen Quelle synchronisiert.

@@ -1,10 +1,10 @@
 # Definitionsbibliothek
 
-Diese Bibliothek wird über Definitionen gepflegt. Die Dateien in autocomplete/, overlay/ und scroll-area/ sind die führenden Quellen. Erzeugte Zielartefakte gehören nicht hierher und werden nicht unabhängig nachbearbeitet.
+Diese Bibliothek wird über Definitionen gepflegt. Die Dateien in components/autocomplete/, components/overlay/ und components/scroll-area/ sind die führenden Quellen. Erzeugte Zielartefakte gehören nicht hierher und werden nicht unabhängig nachbearbeitet.
 
 ## Erster Baustein
 
-[Autocomplete](autocomplete/README.md) verwendet die separat beschriebenen Komponenten Overlay und ScrollArea. [library.json](library.json) ist der Index. component.json verbindet Originaldateien und konkrete Teile; diese kleine Bindungssyntax ist ein Arbeitsentwurf, kein bereits standardisiertes Produktformat.
+[Autocomplete](components/autocomplete/README.md) verwendet die separat beschriebenen Komponenten Overlay und ScrollArea. [library.json](library.json) ist der Index. component.json verbindet Originaldateien und konkrete Teile; diese kleine Bindungssyntax ist ein Arbeitsentwurf, kein bereits standardisiertes Produktformat.
 
 | Domäne | Quelle |
 | --- | --- |

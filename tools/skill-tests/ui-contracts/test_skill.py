@@ -44,7 +44,7 @@ def main():
   r=run('new-original-artifacts-not-full-approval',['inspect','--candidate',str(new)],'BLOCKED','SEMANTIC_PROFILE_UNSUPPORTED');assert all(x['status']=='PASS_LIMITED'for x in r['artifacts']);assert any(c['checker'].startswith('original CEM')and c['accepted']for x in r['artifacts']for c in x['checks']);assert any(c['checker'].startswith('original loose SCXML')and c['accepted']for x in r['artifacts']for c in x['checks'])
   raw={str(p.relative_to(new)):p.read_text()for p in new.iterdir()}
   run('new-component-cannot-use-reference-profile',['validate','--candidate',str(new),'--browser-run',str(CURRENT)],'FAIL','MALFORMED_OR_UNSUPPORTED_INPUT')
-  run('existing-library-is-not-runtime-approval',['inspect','--candidate',str(ROOT/'libraries/example/overlay')],'BLOCKED','SEMANTIC_PROFILE_UNSUPPORTED')
+  run('existing-library-is-not-runtime-approval',['inspect','--candidate',str(ROOT/'libraries/example/components/overlay')],'BLOCKED','SEMANTIC_PROFILE_UNSUPPORTED')
   bad=w/'bad-json';bad.mkdir();(bad/'component.json').write_text('{"id":"one","id":"two"}');run('duplicate-json-rejected',['inspect','--candidate',str(bad)],'FAIL','ARTIFACT_CHECK_FAILED')
   bad=w/'bad-cem';bad.mkdir();broken=copy.deepcopy(cem);del broken['modules'][0]['declarations'][0]['kind'];write(bad/'interface.json',broken);run('original-cem-rejection',['inspect','--candidate',str(bad)],'FAIL','ARTIFACT_CHECK_FAILED')
   bad=w/'bad-scxml';bad.mkdir();(bad/'behavior.scxml').write_text(raw['behavior.scxml'].replace('version="1.0"','version="2.0"'));run('original-scxml-rejection',['inspect','--candidate',str(bad)],'FAIL','ARTIFACT_CHECK_FAILED')

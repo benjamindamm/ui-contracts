@@ -1,6 +1,6 @@
 # Autorenarbeit an Originalartefakten
 
-Zuerst Bibliotheks-ID aus dem Auftrag auswählen, dann nur deren `libraries/<id>/library.json` und betroffene `component.json` lesen. Bibliotheken mit `tools/libraries/manage.py list` entdecken; `init ID` legt eine leere an. Ohne eindeutige Auswahl nicht stillschweigend example verwenden. `libraries/example/` enthält die erhaltene Forschungsbibliothek als gezielt nachladbare Orientierung. Eigene Bibliotheken erben weder Tokens noch Komponenten oder Prüffreigaben automatisch. Details: `libraries/README.md` im Zielrepository.
+Zuerst Bibliotheks-ID aus dem Auftrag auswählen, dann nur deren `libraries/<id>/library.json` und betroffene `components/<name>/component.json` lesen. Bibliotheken mit `tools/libraries/manage.py list` entdecken; `init ID` legt eine leere an. Ohne eindeutige Auswahl nicht stillschweigend example verwenden. `libraries/example/` enthält die erhaltene Forschungsbibliothek als gezielt nachladbare Orientierung. Eigene Bibliotheken erben weder Tokens noch Komponenten oder Prüffreigaben automatisch. Details: `libraries/README.md` im Zielrepository.
 
 | Führende Domäne | Originalformat und Aufgabe |
 | --- | --- |
@@ -30,3 +30,5 @@ Aus der abgeschlossenen Forschung bei Bedarf gezielt lesen: `docs/research/INTEG
 Bei tatsächlichen Schriftdateien die optionale `fonts.json` der ausgewählten Bibliothek gezielt lesen. Family-Tokens allein belegen keine geladenen Fontbytes. `tools/fonts/check.py --library ID` prüft die begrenzt unterstützten Assetbindungen; `tools/fonts/preview.mjs` liefert einen getrennten lokalen Renderingnachweis. Formate, Quell-/Lizenz-/Dateihashes und Grenzen stehen in `docs/fonts/README.md`; keine automatische Bereitstellung im Live-Editor behaupten.
 
 Eine separate Lizenzdatei für Fontassets ist keine technische Testvoraussetzung. Fehlt sie, den Nachweis als ungeprüft dokumentieren und technisch unabhängig weiterprüfen; keine Berechtigung erfinden oder deswegen eine zusätzliche Nutzerbestätigung verlangen. Ausdrücklich deklarierte Dateiverweise müssen dennoch stimmen.
+
+Bibliotheksweite Tokens bleiben in `tokens.json` am Root (von einer Komponente aus `../../tokens.json`). Gemeinsame Fonts, Icons und Bilder liegen unter `assets/`; relative Pfade stets vom bindenden Dokument auflösen. Komponentenübergreifende Verweise innerhalb derselben Bibliothek bleiben relativ zwischen ihren Unterordnern. `library.json` führt die Pfade `components/<name>/component.json`.

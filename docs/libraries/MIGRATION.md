@@ -1,5 +1,7 @@
 # Bibliotheken · Migration und Grenzen
 
+Aktuelle Ergänzung vom 30. Oktober 2026: [Trennung von components und assets](LAYOUT.md). Die folgenden Abschnitte dokumentieren die erste Migration vom 29. Oktober; deren damalige Receipts bleiben erhalten.
+
 29. Oktober 2026. Auf Nutzerentscheid: Die bisherige Draftbibliothek wird eine gleichberechtigte **Beispielbibliothek**, eigene Projekte beginnen separat und leer. [Bedienung und Architektur](../../libraries/README.md).
 
 ## Umsetzung

@@ -10,7 +10,7 @@ UI Contracts untersucht, wie sich Schnittstelle, Gestaltung, Verhalten und Acces
 
 ## Eigene Bibliothek starten
 
-Mehrere Bibliotheken liegen getrennt unter `libraries/`. Die bisherige Forschungsbibliothek ist [example](libraries/example/README.md) und bleibt als Orientierung erhalten. Für ein eigenes Projekt leer beginnen:
+Mehrere Bibliotheken liegen getrennt unter `libraries/`. Pro Bibliothek enthalten `components/` die Definitionen und `assets/` gemeinsame Dateien; `library.json`, `tokens.json` und die optionale `fonts.json` liegen am Bibliotheksroot. Die bisherige Forschungsbibliothek ist [example](libraries/example/README.md) und bleibt als Orientierung erhalten. Für ein eigenes Projekt leer beginnen:
 
 ```sh
 python3 tools/libraries/manage.py init meine-app --name "Meine App"
@@ -135,7 +135,7 @@ Die vollständige Recherche liegt in **[`docs/research/`](docs/research/)**. Akt
 
 ## Weiterarbeit
 
-**Erster Bibliothekseintrag:** Die [Definitionsbibliothek](libraries/example/README.md) beginnt mit [Autocomplete](libraries/example/autocomplete/README.md), Overlay und ScrollArea. Ein [eigenständiger Design-Proof](examples/autocomplete/README.md) hat einen neuen Agenten ohne übernommenen Gesprächsverlauf daraus ein editierbares OpenPencil-Dokument erstellen lassen. Die Originaldatei wurde unabhängig geprüft; aufgedeckte Definitionslücken bleiben dokumentiert. Die Definitionen führen; Zielartefakte werden daraus erzeugt.
+**Erster Bibliothekseintrag:** Die [Definitionsbibliothek](libraries/example/README.md) beginnt mit [Autocomplete](libraries/example/components/autocomplete/README.md), Overlay und ScrollArea. Ein [eigenständiger Design-Proof](examples/autocomplete/README.md) hat einen neuen Agenten ohne übernommenen Gesprächsverlauf daraus ein editierbares OpenPencil-Dokument erstellen lassen. Die Originaldatei wurde unabhängig geprüft; aufgedeckte Definitionslücken bleiben dokumentiert. Die Definitionen führen; Zielartefakte werden daraus erzeugt.
 
 Die Forschungsgrundlage, konkrete Referenzdateien und ein ausgeführter Webforschungs-Host liegen vor. Eine produktive Komponentenbibliothek ist noch nicht umgesetzt. Vor der Produktumsetzung sind insbesondere Bindungssyntax, allgemeiner Resolver und der verbindliche fachliche Umfang festzulegen.
 

@@ -23,6 +23,28 @@ class LibrariesTests(unittest.TestCase):
         manage.create(self.repo,'example'); manage.create(self.repo,'my-app','My App')
         self.assertEqual(json.loads((self.repo/'libraries/my-app/library.json').read_text())['components'],{})
         self.assertEqual(json.loads((self.repo/'libraries/my-app/tokens.json').read_text()),{})
+    def test_new_library_separates_components_and_assets(self):
+        manage.create(self.repo,'first')
+        root=self.repo/'libraries/first'
+        self.assertTrue((root/'components').is_dir())
+        self.assertTrue((root/'assets').is_dir())
+        self.assertEqual(list((root/'components').iterdir()),[])
+        self.assertEqual(list((root/'assets').iterdir()),[])
+    def test_current_component_references_resolve_inside_library(self):
+        root=ROOT/'libraries/example'
+        index=json.loads((root/'library.json').read_text())
+        for rel in index['components'].values():
+            self.assertTrue(rel.startswith('components/'))
+            p=root/rel;data=json.loads(p.read_text())
+            refs=[data['domains']['interface'],data['domains']['behavior']]
+            refs+=list(data['domains']['visual'].values())
+            refs+=list(data['domains']['accessibility'].values())
+            refs += [v['component'] for v in data.get('composition',{}).values()]
+            if 'stories' in data:refs.append(data['stories'])
+            for ref in refs:
+                target=(p.parent/ref).resolve()
+                self.assertTrue(target.is_relative_to(root.resolve()))
+                self.assertTrue(target.is_file(),str(target))
     def test_initializing_second_library_preserves_first(self):
         manage.create(self.repo,'first');first=self.repo/'libraries/first/tokens.json';first.write_text('{"unique":42}')
         manage.create(self.repo,'second');self.assertEqual(first.read_text(),'{"unique":42}')
@@ -48,13 +70,14 @@ class LibrariesTests(unittest.TestCase):
         self.assertNotEqual(m['revision'],manage.manifest(self.repo,'second')['revision'])
     def test_migration_preserves_all_22_historical_hashes(self):
         frozen=json.loads((ROOT/'tools/design-review/profile.json').read_text())['definitionFiles']
-        m=manage.manifest(ROOT,'example');originals={name:m['files'][name] for name in frozen}
+        archive=ROOT/'docs/libraries/frozen/example-v1'
+        originals={name:hashlib.sha256((archive/name).read_bytes()).hexdigest() for name in frozen}
         self.assertEqual(originals,frozen);self.assertEqual(len(originals),22)
         historical_revision=hashlib.sha256(json.dumps(originals,sort_keys=True,separators=(',',':')).encode()).hexdigest()
         self.assertEqual(historical_revision,'1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727')
         self.assertFalse((ROOT/'components').exists())
     def test_legacy_resolver_keeps_hash_verification(self):
-        path=ROOT/'libraries/example/tokens.json'
+        path=ROOT/'docs/libraries/frozen/example-v1/tokens.json'
         self.assertEqual(handoffs.resolve(ROOT,'components/tokens.json'),path)
         ref={'path':'components/tokens.json','sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
         self.assertEqual(handoffs.bound(ROOT,ref),path)

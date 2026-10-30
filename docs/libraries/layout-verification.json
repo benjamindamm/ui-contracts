@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-30",
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "currentLibrary": {
+    "root": "libraries/example",
+    "files": {
+      "README.md": "d2eda4238f256221d5ad5c1f6cfa3c6133d081a9deea1bc4d40e6bbf804a6b64",
+      "assets/fonts/Inter-Bold.ttf": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+      "assets/fonts/Inter-Bold.woff2": "fa888127b6da015b65569f0351f3b5c391ad928904951f1c20e9f8462a8d95ea",
+      "assets/fonts/Inter-Regular.ttf": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+      "assets/fonts/Inter-Regular.woff2": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085",
+      "assets/fonts/LICENSE.txt": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "components/autocomplete/README.md": "ecdd4a87f7beba8b499c33c5e2a90f051e162db858d77d2f0096a1694d0c4540",
+      "components/autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+      "components/autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+      "components/autocomplete/behavior.scxml": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+      "components/autocomplete/component.json": "70856d523b9e29ebf6ed7e9be55bd3e1023d202011cec1bb214a2b3187a44edc",
+      "components/autocomplete/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+      "components/autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+      "components/autocomplete/layout.css": "cdad62028b7213f9befa7b562ef1ddc38b5a75d8aa4bec099260c31fd254b15f",
+      "components/autocomplete/stories.json": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+      "components/overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+      "components/overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+      "components/overlay/component.json": "8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269",
+      "components/overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+      "components/overlay/layout.css": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+      "components/scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+      "components/scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+      "components/scroll-area/component.json": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff",
+      "components/scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+      "components/scroll-area/layout.css": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+      "fonts.json": "d0a91c9985e3f9aeb515a0d23db14c4dbd3f1d0db3aa97ddd8031bfcceaa4217",
+      "library.json": "79e87744e6174455209c842cece77d2d838fb3866477d4363b4e06037b8a0310",
+      "tokens.json": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+    },
+    "revision": "a65113074f3a02cb01b8ca7ca2b3e0b12156eeee847df190862dd2037f4bb336"
+  },
+  "historicalArchive": {
+    "root": "docs/libraries/frozen/example-v1",
+    "files": {
+      "README.md": "b87d16ec9caba56e9f1e1da9b7f93492fda7a2447802214f22747aeca5fa5894",
+      "autocomplete/README.md": "1f3e8de5630ee2393f3a081afd5c7c710234249ebadea08724899d8e028897d3",
+      "autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+      "autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+      "autocomplete/behavior.scxml": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+      "autocomplete/component.json": "feb6ffda90a142869e39bffdedfa67807b5fc60e50617adf3c7333812cb00d63",
+      "autocomplete/error-relay.scxml": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+      "autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+      "autocomplete/layout.css": "1f5a72dd6e5523c8aea78f87ae2888c7b980234c3c6b0a4f30558b6a77567d42",
+      "autocomplete/stories.json": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+      "library.json": "23619a328ab3586163ac03152b80c56c34f09c23703973c1d6371c0d9dfdaa29",
+      "overlay/accessibility.html": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+      "overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+      "overlay/component.json": "43772ab7aad26dc45c06aed8782908d0030914a4a734b9e7b00521b38fdac70a",
+      "overlay/interface.json": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+      "overlay/layout.css": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+      "scroll-area/accessibility.html": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+      "scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+      "scroll-area/component.json": "ac416fc44418d2abf3904b495432027dd4bd76608526459d53d8d14178c7fe01",
+      "scroll-area/interface.json": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+      "scroll-area/layout.css": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+      "tokens.json": "828c8296d729c7b6313123c2566f9bea29b4f6817dd1637845cfd6d70d9d37f4"
+    },
+    "hashesMatchFrozenProfile": true
+  },
+  "preservedTrackedEvidenceFiles": 1674,
+  "tests": [
+    {
+      "command": "python3 tools/libraries/test_libraries.py",
+      "passed": 19
+    },
+    {
+      "command": "python3 tools/fonts/test_fonts.py",
+      "passed": 20
+    },
+    {
+      "command": "python3 tools/design-review/test_review.py",
+      "passed": 12
+    },
+    {
+      "command": "python3 tools/design-review/test_process.py",
+      "passed": 7
+    },
+    {
+      "command": "python3 tools/skill-tests/ui-contracts/test_handoffs.py --skill skills/ui-contracts --output /tmp/ui-contracts-layout-handoffs.json",
+      "passed": 37
+    },
+    {
+      "command": "node --test tools/openpencil/test_layout.mjs",
+      "passed": 17
+    },
+    {
+      "command": "node --test tools/charts/test_pie.mjs",
+      "passed": 15
+    }
+  ],
+  "totalPassed": 127,
+  "skillValidation": "passed; source and installed files synchronized",
+  "historicalCountercheck": {
+    "profile": "ac-static-countercheck-01",
+    "release": false,
+    "scope": "bounded-static-autocomplete-countercheck",
+    "definitionRoot": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/libraries/frozen/example-v1",
+    "blocked": [],
+    "pair": {
+      "compared": 572,
+      "matched": 572,
+      "differences": [],
+      "meaning": "Exact equality of covered semantic observations only; missing fields are differences, not skipped. No overall similarity score."
+    },
+    "overall": "PASS_LIMITED"
+  },
+  "notChecked": [
+    "New model run",
+    "Live editor GUI roundtrip",
+    "General semantic or native-platform conformance"
+  ],
+  "changedToolHashes": {
+    "tools/libraries/manage.py": "d951be10a1c811091b4ab4cd098d4862c4c640897c3ee8c666f91476a894684d",
+    "tools/libraries/test_libraries.py": "38ee51f83b893d01196975cc5aa7832293a4dd26642c4d60f078d7cd61f59955",
+    "skills/ui-contracts/scripts/handoffs.py": "567bc9e943c416a839d5031e047b6a4ac0a8701a1b1db4a05915c728c898fad7",
+    "tools/design-review/check.py": "ed7c7be8d406be9c2462c4b551a06333fd4396b02990c5622afbe5cf700eba88"
+  }
+}

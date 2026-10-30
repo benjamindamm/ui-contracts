@@ -15,9 +15,9 @@ python3 tools/libraries/manage.py list
 python3 tools/libraries/manage.py show meine-app
 ```
 
-`init` legt `libraries/meine-app/library.json` mit leerem Komponentenindex und eine leere `tokens.json` an. Es kopiert weder Beispiele noch Tokens. Bestehende Verzeichnisse werden niemals überschrieben. Ein Agentenauftrag benennt danach ausdrücklich `library: meine-app` und das gewünschte Ziel. Diese Angabe ist ein Arbeitsauftrag, keine neue Definition fachlicher Komponentenwerte.
+`init` legt `libraries/meine-app/library.json` mit leerem Komponentenindex und eine leere `tokens.json` sowie die leeren Ordner `components/` und `assets/` an. Es kopiert weder Beispiele noch Tokens. Bestehende Verzeichnisse werden niemals überschrieben. Ein Agentenauftrag benennt danach ausdrücklich `library: meine-app` und das gewünschte Ziel. Diese Angabe ist ein Arbeitsauftrag, keine neue Definition fachlicher Komponentenwerte.
 
-Die Bibliothek enthält später beispielsweise `button/component.json` plus ihre führenden CEM-, DTCG/CSS-, SCXML- und HTML/ARIA-Dateien. Quellverweise bleiben relativ zum jeweiligen Bibliotheks-/Komponentenverzeichnis. Die vorhandene Bindungssyntax bleibt ein Arbeitsentwurf; `init` erstellt kein geprüftes Designsystem und keine Plattformimplementierung.
+Die Bibliothek enthält später beispielsweise `components/button/component.json` plus ihre führenden CEM-, DTCG/CSS-, SCXML- und HTML/ARIA-Dateien. Quellverweise bleiben relativ zum jeweiligen Bibliotheks-/Komponentenverzeichnis. Die vorhandene Bindungssyntax bleibt ein Arbeitsentwurf; `init` erstellt kein geprüftes Designsystem und keine Plattformimplementierung.
 
 ## Quellen einfrieren und prüfen
 
@@ -32,9 +32,27 @@ IDs gelten im Kontext der Bibliothek: Bei mehreren Bibliotheken immer Bibliothek
 
 ## Migration und historische Nachweise
 
-Die bisherigen 22 Dateien wurden am 29. Oktober 2026 **bytegleich von `components/` nach `libraries/example/` verschoben**. Die damalige 22-Datei-Definitionsrevision ist `1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727`; neue zusätzliche Assets fließen dagegen in die aktuelle Gesamtbibliotheksrevision ein. Es gibt absichtlich keinen weiterhin sichtbaren components-Ordner oder Symlink.
+Die erste Migration am 29. Oktober 2026 verschob die 22 Forschungsquellen bytegleich von `components/` nach `libraries/example/`. Seit der Trennung vom 30. Oktober liegen aktuelle Komponenten unter `libraries/example/components/`; Tokens und optionale Fontbindung bleiben am Bibliotheksroot, gemeinsame Dateien unter `assets/`.
 
-Historische Runs, Manifeste, Reports und Messdaten werden nicht umgeschrieben. Ihre `components/...`-Locators meinen die damaligen Dateien, die jetzt unter `libraries/example/...` liegen. Der aktuelle Handoff-Resolver kann solche alten Referenzen auflösen und prüft weiterhin deren Dateihashes. Der aktuelle begrenzte Design-Gegenprüfer verwendet example, hält historische Quellenlocators aber ausdrücklich als solche kenntlich.
+```text
+libraries/<id>/
+├── library.json
+├── tokens.json
+├── fonts.json        # optional
+├── components/
+│   └── <component>/
+│       └── component.json
+└── assets/
+    ├── fonts/
+    ├── icons/
+    └── images/
+```
+
+`init` erstellt nur die beiden leeren Hauptordner; Asset-Unterordner und `fonts.json` entstehen nach Bedarf. Der Komponentenindex verwendet beispielsweise `components/button/component.json`. Tokens werden aus einer Komponente über `../../tokens.json` referenziert; Verweise auf benachbarte Komponenten bleiben `../<name>/component.json`. Assets werden relativ zu der Datei referenziert, die sie bindet (etwa `assets/fonts/...` in fonts.json am Root).
+
+Historische Runs, Manifeste, Reports und Messdaten bleiben unverändert. Die ursprünglichen 22 Quelldateien sind bytegenau unter [frozen/example-v1](../docs/libraries/frozen/example-v1/README.md) erhalten; das ist ein Forschungsarchiv, keine zweite bearbeitbare Bibliothek. Ihre Definitionsrevision bleibt `1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727`. Der aktuelle Handoff-Resolver löst alte `components/...`-Locators in dieses Archiv auf, sofern kein alter Root existiert, und prüft weiterhin ihre Hashes. Auch der begrenzte historische Autocomplete-Gegenprüfer bleibt an das Archiv gebunden. Er prüft damit ausdrücklich nicht die aktuelle Bibliotheksrevision.
+
+Die aktuelle Bibliothek hat durch neue relative Pfade eine neue Revision. Alte, direkt an `libraries/example/` gebundene Gesamtmanifeste müssen im ursprünglichen Checkout verwendet werden; sie werden nicht still auf neue Dateien oder Hashes umgebogen.
 
 Diese Kompatibilität ersetzt keine alte Werkzeugversion: Hashgebundene historische Tasks erkennen geänderte Prüfer-/Skilldateien weiter als veraltet. Unveränderte historische Generatoren/Prüfscripte mit festem components-Pfad benötigen den ursprünglichen Checkout (z. B. den erhaltenen Stand `8ca5678` in einem separaten Worktree mit den gepinnten Abhängigkeiten). Alte Receipts werden durch eine aktuelle Wiederholung nicht nachträglich neu bestätigt.
 

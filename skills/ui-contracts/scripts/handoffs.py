@@ -44,7 +44,9 @@ def resolve(repo, value):
     need(not p.is_absolute() and '..' not in p.parts, 'path: repository-relative without .. required')
     # Historical manifests keep their original root; no visible legacy directory needed.
     if p.parts and p.parts[0] == 'components' and not (repo/'components').exists() and (repo/'libraries/example/library.json').is_file():
-        p = Path('libraries/example').joinpath(*p.parts[1:])
+        frozen = Path('docs/libraries/frozen/example-v1')
+        base = frozen if (repo/frozen/'library.json').is_file() else Path('libraries/example')
+        p = base.joinpath(*p.parts[1:])
     out = (repo/p).resolve()
     need(out.is_relative_to(repo), 'path: escapes repository')
     return out

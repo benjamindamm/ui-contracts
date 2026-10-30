@@ -46,6 +46,8 @@ def create(repo, name, title=None):
                  'version': '0.1.0', 'status': 'draft', 'components': {}, 'targets': {}}
         (root/'library.json').write_text(json.dumps(index, ensure_ascii=False, indent=2)+'\n')
         (root/'tokens.json').write_text('{}\n')
+        (root/'components').mkdir()
+        (root/'assets').mkdir()
     except Exception:
         shutil.rmtree(root)
         raise

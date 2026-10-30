@@ -36,4 +36,4 @@ Neue Fälle oder Fehler erhalten zuerst eine ID im [Fehlerregister](../../docs/s
 
 ## Beispielbibliothek nach Migration
 
-Der aktuelle Prüfer liest die bytegleich erhaltenen Quellen aus `libraries/example/`. Das eingefrorene Profil und historische `components/`-Quellenlocators bleiben erhalten und werden im Ergebnis durch `definitionRoot` erklärt. Andere Bibliotheken erhalten dadurch kein Autocomplete-Prüfprofil. Alte Tasks mit Hashes der früheren Werkzeugversion benötigen diese Version; siehe [Migration](../../docs/libraries/MIGRATION.md).
+Der aktuelle Prüfer liest die bytegleich erhaltenen Quellen aus `docs/libraries/frozen/example-v1/` (historische Revision; keine Prüfung der aktuellen Library). Das eingefrorene Profil und historische `components/`-Quellenlocators bleiben erhalten und werden im Ergebnis durch `definitionRoot` erklärt. Andere Bibliotheken erhalten dadurch kein Autocomplete-Prüfprofil. Alte Tasks mit Hashes der früheren Werkzeugversion benötigen diese Version; siehe [Migration](../../docs/libraries/MIGRATION.md).

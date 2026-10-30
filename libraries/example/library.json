@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "status": "first-authoring-proof",
   "components": {
-    "Autocomplete": "autocomplete/component.json",
-    "Overlay": "overlay/component.json",
-    "ScrollArea": "scroll-area/component.json"
+    "Autocomplete": "components/autocomplete/component.json",
+    "Overlay": "components/overlay/component.json",
+    "ScrollArea": "components/scroll-area/component.json"
   },
   "targets": {
     "openpencil": "Editable design states first; interactive preview is outside this proof.",
