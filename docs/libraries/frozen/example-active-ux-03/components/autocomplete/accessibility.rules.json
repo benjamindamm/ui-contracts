@@ -1,0 +1,35 @@
+{
+  "format": "ui-contract-a11y-projection-draft",
+  "note": "Own explicit projection rules; this is not an original WAI-ARIA schema.",
+  "locale": "de",
+  "labelSource": "interface.label",
+  "placeholderSource": "interface.placeholder",
+  "optionNameSource": "result.label",
+  "listNameSource": "interface.label",
+  "messages": {
+    "closed": "",
+    "opening": "Suche wird geöffnet.",
+    "loading": "Städte werden geladen.",
+    "results": "{count} Städte verfügbar.",
+    "empty": "Keine Städte gefunden.",
+    "error": "Städte konnten nicht geladen werden.",
+    "selected": "Ausgewählt: {label}.",
+    "disabled": ""
+  },
+  "projections": {
+    "closed": {"expanded": false, "busy": false, "popupVisible": false},
+    "opening": {"expanded": false, "busy": false, "popupVisible": false},
+    "loading": {"expanded": true, "busy": true, "popupVisible": true},
+    "ready": {"expanded": true, "busy": false, "popupVisible": true},
+    "empty": {"expanded": true, "busy": false, "popupVisible": true},
+    "error": {"expanded": true, "busy": false, "popupVisible": true}
+  },
+  "selection": {
+    "ariaActivedescendant": "Current existing option for activeKey; absent without active option.",
+    "ariaSelected": "True only for the active option; this does not commit value.",
+    "ariaDisabled": "Equals result.disabled; disabled options cannot become active or committed."
+  },
+  "focus": "Input retains DOM focus during keyboard navigation. Popup/viewport get no extra role or tabstop.",
+  "statusPlacement": "After visible popup, otherwise after input; statusGap and lineHeight from tokens.",
+  "designTarget": "Represent the named parts, label, status text, active and disabled styles. These are semantic annotations, not a claim of screenreader behaviour on a design canvas."
+}

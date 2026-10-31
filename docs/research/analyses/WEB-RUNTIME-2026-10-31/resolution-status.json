@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-31",
+  "startingAudit": "../FRAMEWORK-AUDIT-2026-10-31/findings.json",
+  "previousStatus": "../ACTIVE-UX-2026-10-31/resolution-status.json",
+  "verification": "verification.json",
+  "findings": {
+    "FW-004": {
+      "status": "mitigated-bounded",
+      "scope": "Pinned fresh local Python/Node/JAR provisioning demonstrated in clean working-tree export on this macOS host",
+      "remaining": [
+        "Other OS/JDK versions not executed",
+        "Host prerequisites must be installed",
+        "Not a HEAD clone; uncommitted source snapshot explicitly recorded"
+      ]
+    },
+    "FW-005": {
+      "status": "mitigated-bounded",
+      "scope": "Common test entrypoint exercised; CI definition added",
+      "remaining": [
+        "GitHub workflow not yet executed",
+        "Browser requires explicit live BrowserOS run"
+      ]
+    },
+    "FW-007": {
+      "status": "mitigated-for-current-supported-adapters",
+      "scope": "Current Input/Select/SelectWithSearch/composed-Autocomplete source-bound host; actual events/focus/scroll/AX cases",
+      "remaining": [
+        "No arbitrary target generator",
+        "No full visual implementation for three simple adapters",
+        "Original study outputs retain original defects/repairs"
+      ]
+    },
+    "FW-001": {
+      "status": "extended-bounded",
+      "scope": "Fourth native profile for composed autocomplete; disabled host-key regression added",
+      "remaining": [
+        "Finite probes cannot prove arbitrary programs",
+        "Declared interactionIntent is not runtime-proved"
+      ]
+    },
+    "FW-008-to-FW-012": {
+      "status": "not-closed-by-this-package",
+      "scope": "Further revision-impact/UX/process/model/coverage work retains original audit scope"
+    },
+    "FW-006": {
+      "status": "not-closed-by-this-package",
+      "scope": "Revision-impact and change propagation remain separate work"
+    }
+  },
+  "newIssues": [
+    "WR-001",
+    "WR-002",
+    "WR-003",
+    "WR-004",
+    "WR-005",
+    "WR-006"
+  ],
+  "release": false
+}

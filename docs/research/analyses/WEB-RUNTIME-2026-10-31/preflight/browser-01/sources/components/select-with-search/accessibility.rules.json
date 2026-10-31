@@ -1,0 +1,10 @@
+{
+  "format": "ui-contract-a11y-projection-draft",
+  "instanceIdentity": "Replace instance-* with unique stable per-instance IDs.",
+  "popup": "Trigger button controls labelled nonmodal dialog; aria-expanded mirrors open. Hidden when closed. Separate search input does NOT edit selected label.",
+  "focus": "Opening focuses search. ArrowDown from search focuses first enabled filtered option. Roving option tabindex; Up/Down move without selection and scroll into view. Home/End first/last; Enter/Space on focused option commits. Escape anywhere in dialog closes without changing value and restores trigger focus; Tab may leave dialog and closes it without commit.",
+  "selection": "aria-selected reflects committed key, NOT keyboard focus. Search text never enters hidden countryKey. Reject missing/disabled keys in component logic independently of form validation.",
+  "empty": "Show no-results status, no fabricated option. Required empty selection blocks host submission with visible error and focus trigger; hidden input alone has no native required enforcement.",
+  "disabled": "Disable trigger/search and close popup; ignore user interactions.",
+  "note": "Own host projection; HTML template is not a complete runtime or screenreader proof."
+}

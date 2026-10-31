@@ -1,0 +1,48 @@
+baseline PASS_LIMITED None OK
+document-version-mismatch BLOCKED UNSUPPORTED OK
+missing-invoke-source FAIL TARGET_MISSING OK
+missing-state-target FAIL TARGET_MISSING OK
+duplicate-state-id FAIL ORIGINAL_INVALID OK
+duplicate-api-member FAIL DUPLICATE_ID OK
+runtime-guard-unchecked PASS_LIMITED None OK
+valid-values PASS_LIMITED None OK
+omit-optionals PASS_LIMITED None OK
+missing-label FAIL TYPE_MISMATCH OK
+wrong-query-type FAIL TYPE_MISMATCH OK
+null-optional-value FAIL TYPE_MISMATCH OK
+duplicate-keys FAIL DATA_KEY_CONFLICT OK
+missing-target FAIL TARGET_MISSING OK
+foreign-instance FAIL INSTANCE_MISMATCH OK
+wrong-namespace FAIL profile.definitions OK
+unsupported-version FAIL profile.sources OK
+event-type-conflict FAIL TYPE_BINDING_CONFLICT OK
+recursive-use BLOCKED UNSUPPORTED OK
+unsupported-type BLOCKED UNSUPPORTED OK
+wrong-target-kind FAIL TARGET_KIND_MISMATCH OK
+invalid-original-cem FAIL ORIGINAL_INVALID OK
+invalid-original-scxml FAIL ORIGINAL_INVALID OK
+unsupported-token-unit BLOCKED UNSUPPORTED OK
+wrong-default-type FAIL TYPE_MISMATCH OK
+token-alias-cycle FAIL TOKEN_ALIAS_CYCLE OK
+missing-visual-token-target FAIL TARGET_MISSING OK
+visual-css-conflict FAIL VISUAL_BINDING_CONFLICT OK
+missing-relation FAIL profile.relations OK
+unexpected-record-field FAIL TYPE_MISMATCH OK
+weaken-policy FAIL POLICY_CONFLICT OK
+ownership-conflict FAIL profile.sources OK
+duplicate-target FAIL profile.targets OK
+duplicate-use FAIL INSTANCE_MISMATCH OK
+missing-parent FAIL INSTANCE_MISMATCH OK
+cross-instance-aria FAIL INSTANCE_MISMATCH OK
+target-revision-mismatch FAIL REVISION_MISMATCH OK
+wrong-source-hash FAIL SOURCE_MISMATCH OK
+source-tamper FAIL closure.files OK
+duplicate-json-key FAIL DUPLICATE_JSON_KEY OK
+nonfinite-json FAIL NONFINITE_JSON OK
+xml-entity FAIL XML_DTD_UNSUPPORTED OK
+web-browser-missing LIVE_BROWSER_CHECKER_MISSING OK
+schema-missing REQUIRED_SCHEMA_MISSING OK
+schema-changed SCHEMA_INTEGRITY_MISMATCH OK
+schema-unusable REQUIRED_CHECKER_UNUSABLE OK
+npm-checker-missing REQUIRED_CHECKER_MISSING OK
+TOTAL 47 MET 47

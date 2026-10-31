@@ -1,0 +1,47 @@
+{
+  "suites": [
+    {
+      "suite": "charts",
+      "count": 15,
+      "exit": 0
+    },
+    {
+      "suite": "presentation",
+      "count": 25,
+      "exit": 0
+    },
+    {
+      "suite": "libraries",
+      "count": 19,
+      "exit": 0
+    },
+    {
+      "suite": "handoffs",
+      "count": 37,
+      "exit": 0
+    },
+    {
+      "suite": "process",
+      "count": 7,
+      "exit": 0
+    },
+    {
+      "suite": "fonts",
+      "count": 20,
+      "exit": 0
+    },
+    {
+      "suite": "design-review",
+      "count": 12,
+      "exit": 0
+    }
+  ],
+  "sumTests": 135,
+  "installedSkillCompared": "/Users/kcnpxcp/.codex/skills/ui-contracts",
+  "installedSkillDrift": [],
+  "staticCountercases": {
+    "count": 47,
+    "met": 47
+  },
+  "totalRegressionExpectations": 182
+}

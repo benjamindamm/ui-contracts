@@ -32,3 +32,7 @@ Bei tatsächlichen Schriftdateien die optionale `fonts.json` der ausgewählten B
 Eine separate Lizenzdatei für Fontassets ist keine technische Testvoraussetzung. Fehlt sie, den Nachweis als ungeprüft dokumentieren und technisch unabhängig weiterprüfen; keine Berechtigung erfinden oder deswegen eine zusätzliche Nutzerbestätigung verlangen. Ausdrücklich deklarierte Dateiverweise müssen dennoch stimmen.
 
 Bibliotheksweite Tokens bleiben in `tokens.json` am Root (von einer Komponente aus `../../tokens.json`). Gemeinsame Fonts, Icons und Bilder liegen unter `assets/`; relative Pfade stets vom bindenden Dokument auflösen. Komponentenübergreifende Verweise innerhalb derselben Bibliothek bleiben relativ zwischen ihren Unterordnern. `library.json` führt die Pfade `components/<name>/component.json`.
+
+Explizite CSS-Regeln nicht zur Wahlfreiheit umdeuten: Element, Pseudoelement und Vererbung getrennt auswerten. Eine eigene `::placeholder`-Farbe wird nicht durch die Inputfarbe von `:disabled` überschrieben. Bewusste Quellenabweichungen melden. Statische OpenPencil-Zustände sind keine interaktive Combobox-Implementierung; nur tatsächlich vorhandene Zieladapter verwenden.
+
+Repository bei unklarem Arbeitsverzeichnis anhand `tools/validation/check.py`, `tools/validation/profile.json` und `libraries/` finden; alte Checkouts können `components/library.json` führen. Fehlen die benötigten Projektvoraussetzungen, als konkrete Blockierung melden statt einen zweiten Quelldatenbestand zu erfinden.

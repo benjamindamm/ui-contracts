@@ -1,0 +1,2642 @@
+{
+  "kind": "ui-contracts-original-artifact-inspection",
+  "overall": "BLOCKED",
+  "release": false,
+  "diagnostic": {
+    "code": "SEMANTIC_PROFILE_UNSUPPORTED",
+    "detail": "Only syntax and the available original schemas were inspected. This candidate has no general semantic/profile/runtime acceptance through this helper."
+  },
+  "passedScope": [
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/accessibility.html",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/accessibility.rules.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/behavior.scxml",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/component.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/error-relay.scxml",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/interface.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/layout.css",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--ac-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--ac-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--ac-font-size)"
+                  },
+                  {
+                    "property": "line-height",
+                    "value": "var(--ac-line-height)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--ac-line-height)"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--ac-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--ac-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--ac-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--ac-border-width) solid var(--ac-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--ac-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--ac-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "border-color",
+                    "value": "var(--ac-focus)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-disabled)"
+                  },
+                  {
+                    "property": "border-color",
+                    "value": "var(--ac-border)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--ac-row-height)"
+                  },
+                  {
+                    "property": "min-height",
+                    "value": "var(--ac-row-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "6px var(--ac-padding-inline)"
+                  },
+                  {
+                    "property": "flex-shrink",
+                    "value": "0"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--ac-highlight)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-disabled)"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--ac-line-height)"
+                  },
+                  {
+                    "property": "margin-top",
+                    "value": "var(--ac-status-gap)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--ac-status-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-error)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/stories.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/ux.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/accessibility.html",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/accessibility.rules.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/behavior.scxml",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/component.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/interface.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/layout.css",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--input-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--input-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--input-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--input-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--input-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--input-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--input-border-width) solid var(--input-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--input-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--input-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--input-focus)"
+                  },
+                  {
+                    "property": "outline-offset",
+                    "value": "2px"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-disabled)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-error)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/stories.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/ux.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/accessibility.html",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/behavior.scxml",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/component.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/interface.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/layout.css",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "position",
+                    "value": "absolute"
+                  },
+                  {
+                    "property": "top",
+                    "value": "anchor(bottom)"
+                  },
+                  {
+                    "property": "left",
+                    "value": "anchor(left)"
+                  },
+                  {
+                    "property": "width",
+                    "value": "anchor-size(width)"
+                  },
+                  {
+                    "property": "margin-top",
+                    "value": "var(--ac-gap)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--ac-surface)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "0"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--ac-radius)"
+                  },
+                  {
+                    "property": "box-shadow",
+                    "value": "0 2px 8px #0003"
+                  },
+                  {
+                    "property": "z-index",
+                    "value": "10"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/accessibility.html",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/behavior.scxml",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/component.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/interface.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/layout.css",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "max-height",
+                    "value": "var(--ac-max-height)"
+                  },
+                  {
+                    "property": "overflow-y",
+                    "value": "auto"
+                  },
+                  {
+                    "property": "margin",
+                    "value": "0"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0"
+                  },
+                  {
+                    "property": "display",
+                    "value": "flex"
+                  },
+                  {
+                    "property": "flex-direction",
+                    "value": "column"
+                  },
+                  {
+                    "property": "list-style",
+                    "value": "none"
+                  },
+                  {
+                    "property": "margin",
+                    "value": "0"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/accessibility.html",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/accessibility.rules.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/behavior.scxml",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/component.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/interface.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/layout.css",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--select-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--select-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--select-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--select-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--select-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--select-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--select-border-width) solid var(--select-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--select-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-focus)"
+                  },
+                  {
+                    "property": "outline-offset",
+                    "value": "2px"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-disabled)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-error)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/stories.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/ux.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/accessibility.html",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/accessibility.rules.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/behavior.scxml",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/component.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/interface.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/layout.css",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--select-search-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--select-search-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--select-search-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--select-search-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--select-search-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--select-search-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--select-search-border-width) solid var(--select-search-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--select-search-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-search-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-search-focus)"
+                  },
+                  {
+                    "property": "outline-offset",
+                    "value": "2px"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-disabled)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-error)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-search-surface)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "1px solid var(--select-search-border)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "8px"
+                  },
+                  {
+                    "property": "max-height",
+                    "value": "160px"
+                  },
+                  {
+                    "property": "overflow-y",
+                    "value": "auto"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "8px"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-search-focus)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/stories.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/ux.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/fonts.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/library.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/selection-policy.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/ux-capabilities.schema.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "candidate": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example",
+  "artifacts": [
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/accessibility.html",
+      "sha256": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "HTML/ARIA/APG conformance and runtime accessibility"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/accessibility.rules.json",
+      "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/behavior.scxml",
+      "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/component.json",
+      "sha256": "cb2dd273df46451979ba8e55b7b5fc26982e4945d0c79f5b2496c9ab7d05cafe",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/error-relay.scxml",
+      "sha256": "a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/interface.json",
+      "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/layout.css",
+      "sha256": "cdad62028b7213f9befa7b562ef1ddc38b5a75d8aa4bec099260c31fd254b15f",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--ac-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--ac-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--ac-font-size)"
+                  },
+                  {
+                    "property": "line-height",
+                    "value": "var(--ac-line-height)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--ac-line-height)"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--ac-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--ac-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--ac-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--ac-border-width) solid var(--ac-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--ac-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--ac-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "border-color",
+                    "value": "var(--ac-focus)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-disabled)"
+                  },
+                  {
+                    "property": "border-color",
+                    "value": "var(--ac-border)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--ac-row-height)"
+                  },
+                  {
+                    "property": "min-height",
+                    "value": "var(--ac-row-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "6px var(--ac-padding-inline)"
+                  },
+                  {
+                    "property": "flex-shrink",
+                    "value": "0"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--ac-highlight)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-disabled)"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--ac-line-height)"
+                  },
+                  {
+                    "property": "margin-top",
+                    "value": "var(--ac-status-gap)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--ac-status-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--ac-error)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/stories.json",
+      "sha256": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/ux.json",
+      "sha256": "f4ced3ca3447ea58ab7ba5e340b795c21423a23f84a6eae8c7aef3195543d898",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/accessibility.html",
+      "sha256": "9e849d3bedf7b9010d728544b89c3abf4638b6a667a2d95e40bba95e154c4755",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "HTML/ARIA/APG conformance and runtime accessibility"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/accessibility.rules.json",
+      "sha256": "4abba5c1eb56e0c27f4adce2d73f8af140f0fb9eba41eda8162b67475bfebc35",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/behavior.scxml",
+      "sha256": "19db620ce2008ff4bc2f4a8285be83e5160a3728edb6c130dc7bcc813649f10c",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/component.json",
+      "sha256": "cd8b55ba25bd8d5fe8f3a74f2700e2a8585967f31466f6a9e113c7c7940d40ff",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/interface.json",
+      "sha256": "397e7a94050416f0753400b878eb3d720a90c68eb44b40529c1f0712016666d6",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/layout.css",
+      "sha256": "fbf5b91eccf63bfa85a311156745e48250e48761c69cbdef08b34d7c653a2a48",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--input-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--input-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--input-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--input-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--input-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--input-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--input-border-width) solid var(--input-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--input-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--input-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--input-focus)"
+                  },
+                  {
+                    "property": "outline-offset",
+                    "value": "2px"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-disabled)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--input-error)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/stories.json",
+      "sha256": "87d251d788fa9d4752b2416fdba56ecb3a7cf6a0cdd0c19446c0d25170ebdf0d",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/ux.json",
+      "sha256": "1c11272ed4fd7486259d57439d62cf252cbf391b2085099693f59eb27007cac1",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/accessibility.html",
+      "sha256": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "HTML/ARIA/APG conformance and runtime accessibility"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/behavior.scxml",
+      "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/component.json",
+      "sha256": "8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/interface.json",
+      "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/layout.css",
+      "sha256": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "position",
+                    "value": "absolute"
+                  },
+                  {
+                    "property": "top",
+                    "value": "anchor(bottom)"
+                  },
+                  {
+                    "property": "left",
+                    "value": "anchor(left)"
+                  },
+                  {
+                    "property": "width",
+                    "value": "anchor-size(width)"
+                  },
+                  {
+                    "property": "margin-top",
+                    "value": "var(--ac-gap)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--ac-surface)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "0"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--ac-radius)"
+                  },
+                  {
+                    "property": "box-shadow",
+                    "value": "0 2px 8px #0003"
+                  },
+                  {
+                    "property": "z-index",
+                    "value": "10"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/accessibility.html",
+      "sha256": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "HTML/ARIA/APG conformance and runtime accessibility"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/behavior.scxml",
+      "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/component.json",
+      "sha256": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/interface.json",
+      "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/layout.css",
+      "sha256": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "max-height",
+                    "value": "var(--ac-max-height)"
+                  },
+                  {
+                    "property": "overflow-y",
+                    "value": "auto"
+                  },
+                  {
+                    "property": "margin",
+                    "value": "0"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0"
+                  },
+                  {
+                    "property": "display",
+                    "value": "flex"
+                  },
+                  {
+                    "property": "flex-direction",
+                    "value": "column"
+                  },
+                  {
+                    "property": "list-style",
+                    "value": "none"
+                  },
+                  {
+                    "property": "margin",
+                    "value": "0"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/accessibility.html",
+      "sha256": "8fac6f8b94646b667f9c95c06de393cd39386e99d878a0585bb682a3e1f7c62f",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "HTML/ARIA/APG conformance and runtime accessibility"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/accessibility.rules.json",
+      "sha256": "d073887defcc6fe104b9bfc242d25654b314df3c63ccb1c540e3748be04c7734",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/behavior.scxml",
+      "sha256": "32e70569a604817d433da99b5498ca4e759452aa4e838503d616d0ae172b3500",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/component.json",
+      "sha256": "5ef05663628c74c7276befe465c8f823bb4656c5d1487be672d45b00adfc2b63",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/interface.json",
+      "sha256": "ba6041dc6f2ff398cee7378169de364060275abb1cc81d6a039f68e64d7ed247",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/layout.css",
+      "sha256": "aec63397c409691ce4980869fbd19e2cf46eb9ee43f7705e648ea135ebaf1e78",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--select-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--select-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--select-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--select-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--select-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--select-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--select-border-width) solid var(--select-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--select-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-focus)"
+                  },
+                  {
+                    "property": "outline-offset",
+                    "value": "2px"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-disabled)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-error)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/stories.json",
+      "sha256": "255724a0a3206d318c60840a6228b0c6c2f276e3af9d30855a53e1833ad13be7",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/ux.json",
+      "sha256": "66b94e1fcd2b5f519d29bd0c577cd8dc2a4e795f1468e377841c0a9794aefef4",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/accessibility.html",
+      "sha256": "172bfa29a28025066b1a7de9ff76d2aaedb7feadeb4e028f7180559e90ad8ab4",
+      "checks": [
+        {
+          "checker": "recovering HTML parser; NOT a conformance validator",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "HTML/ARIA/APG conformance and runtime accessibility"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/accessibility.rules.json",
+      "sha256": "112be14e5556c8b6d705685a8e04f96d838376b17cfc475a606fb63330a64c32",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/behavior.scxml",
+      "sha256": "036d993ca97c0b5d83fce6fbfb11a4f4145af29898d27915670ed3495b65fae4",
+      "checks": [
+        {
+          "checker": "XML well-formedness without external entities",
+          "accepted": true
+        },
+        {
+          "checker": "original loose SCXML 1.0 XSD",
+          "accepted": true,
+          "errors": ""
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/component.json",
+      "sha256": "56c130f8c581de60b9e1a21f6be1f5d1a97621e69747a12d6b8084246dfde36c",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/interface.json",
+      "sha256": "b6ec24257c4deba283d0caf2bd2eddde3d825a1c2fad708d2080e1f000c6316b",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": true,
+          "errors": []
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/layout.css",
+      "sha256": "2dedb22e611823ad91c628ea590841aec0bed60e5f5cef65a90e7ecf26cba1e1",
+      "checks": [
+        {
+          "checker": "css-tree syntax, additional checker",
+          "accepted": true,
+          "evidence": {
+            "version": "3.2.1",
+            "cases": [
+              {
+                "file": "layout.css",
+                "syntaxParsed": true,
+                "declarations": [
+                  {
+                    "property": "width",
+                    "value": "var(--select-search-width)"
+                  },
+                  {
+                    "property": "font-family",
+                    "value": "var(--select-search-font-family)"
+                  },
+                  {
+                    "property": "font-size",
+                    "value": "var(--select-search-font-size)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-text)"
+                  },
+                  {
+                    "property": "display",
+                    "value": "block"
+                  },
+                  {
+                    "property": "margin-bottom",
+                    "value": "var(--select-search-label-gap)"
+                  },
+                  {
+                    "property": "box-sizing",
+                    "value": "border-box"
+                  },
+                  {
+                    "property": "width",
+                    "value": "100%"
+                  },
+                  {
+                    "property": "height",
+                    "value": "var(--select-search-input-height)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "0 var(--select-search-padding-inline)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "var(--select-search-border-width) solid var(--select-search-border)"
+                  },
+                  {
+                    "property": "border-radius",
+                    "value": "var(--select-search-radius)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-search-surface)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-text)"
+                  },
+                  {
+                    "property": "font",
+                    "value": "inherit"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-search-focus)"
+                  },
+                  {
+                    "property": "outline-offset",
+                    "value": "2px"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-disabled)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-muted)"
+                  },
+                  {
+                    "property": "color",
+                    "value": "var(--select-search-error)"
+                  },
+                  {
+                    "property": "background",
+                    "value": "var(--select-search-surface)"
+                  },
+                  {
+                    "property": "border",
+                    "value": "1px solid var(--select-search-border)"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "8px"
+                  },
+                  {
+                    "property": "max-height",
+                    "value": "160px"
+                  },
+                  {
+                    "property": "overflow-y",
+                    "value": "auto"
+                  },
+                  {
+                    "property": "padding",
+                    "value": "8px"
+                  },
+                  {
+                    "property": "outline",
+                    "value": "2px solid var(--select-search-focus)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "status": "PASS_LIMITED"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/stories.json",
+      "sha256": "c1b6b0ccd41c9b29937db364d8b73c6fb5fc39340270470bac1d9cf94b17bb0d",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/ux.json",
+      "sha256": "033f301825c777219643b157b313dca04e57fd95b92d8b1112e25e46678e384c",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/fonts.json",
+      "sha256": "d0a91c9985e3f9aeb515a0d23db14c4dbd3f1d0db3aa97ddd8031bfcceaa4217",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/library.json",
+      "sha256": "d1e005f71b4624ec65ebe533b07a2a77fb3669945558da73960205b314c9b9e1",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/selection-policy.json",
+      "sha256": "1d1914862babcbc14f398571e9a2892d4fbe10f1eab8e6d6295f9d9109af61c6",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+      "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/ux-capabilities.schema.json",
+      "sha256": "151af1ee9a5bbec71d32df06abf5e7fa26bf57df923025812e6a53bcbe078b3f",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    }
+  ],
+  "warnings": [
+    "Original SCXML schema is loose; HTML parsing is not conformance.",
+    "DTCG/CSS/HTML/ARIA/APG are not fully original-validated."
+  ],
+  "unverified": [
+    "General cross-file references, ownership and composition for this candidate",
+    "Runtime events, focus, scrolling, AX, lifecycle",
+    "Target generation, screenreader, real IME and native platforms"
+  ],
+  "productionRelease": false,
+  "bindings": {
+    "overall": "PASS_LIMITED",
+    "release": false,
+    "scope": "library-reference-identity-alias-and-selected-original-schema-checks",
+    "root": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example",
+    "componentCount": 6,
+    "errors": [],
+    "checks": [
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/component.json",
+        "sha256": "cb2dd273df46451979ba8e55b7b5fc26982e4945d0c79f5b2496c9ab7d05cafe"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/component.json",
+        "sha256": "8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/component.json",
+        "sha256": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/component.json",
+        "sha256": "5ef05663628c74c7276befe465c8f823bb4656c5d1487be672d45b00adfc2b63"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/component.json",
+        "sha256": "cd8b55ba25bd8d5fe8f3a74f2700e2a8585967f31466f6a9e113c7c7940d40ff"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/component.json",
+        "sha256": "56c130f8c581de60b9e1a21f6be1f5d1a97621e69747a12d6b8084246dfde36c"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/selection-policy.json",
+        "sha256": "1d1914862babcbc14f398571e9a2892d4fbe10f1eab8e6d6295f9d9109af61c6"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/ux-capabilities.schema.json",
+        "sha256": "151af1ee9a5bbec71d32df06abf5e7fa26bf57df923025812e6a53bcbe078b3f"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/interface.json",
+        "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/behavior.scxml",
+        "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/layout.css",
+        "sha256": "cdad62028b7213f9befa7b562ef1ddc38b5a75d8aa4bec099260c31fd254b15f"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/accessibility.html",
+        "sha256": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/accessibility.rules.json",
+        "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+      },
+      {
+        "kind": "token-alias-closure",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "tokens": 73
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/behavior.scxml",
+        "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/stories.json",
+        "sha256": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/ux.json",
+        "sha256": "f4ced3ca3447ea58ab7ba5e340b795c21423a23f84a6eae8c7aef3195543d898"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/component.json",
+        "sha256": "8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/component.json",
+        "sha256": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/interface.json",
+        "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/behavior.scxml",
+        "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/layout.css",
+        "sha256": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/accessibility.html",
+        "sha256": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037"
+      },
+      {
+        "kind": "token-alias-closure",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "tokens": 73
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/behavior.scxml",
+        "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/component.json",
+        "sha256": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/interface.json",
+        "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/behavior.scxml",
+        "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/layout.css",
+        "sha256": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/accessibility.html",
+        "sha256": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3"
+      },
+      {
+        "kind": "token-alias-closure",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "tokens": 73
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/interface.json",
+        "sha256": "ba6041dc6f2ff398cee7378169de364060275abb1cc81d6a039f68e64d7ed247"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/behavior.scxml",
+        "sha256": "32e70569a604817d433da99b5498ca4e759452aa4e838503d616d0ae172b3500"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/layout.css",
+        "sha256": "aec63397c409691ce4980869fbd19e2cf46eb9ee43f7705e648ea135ebaf1e78"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/accessibility.html",
+        "sha256": "8fac6f8b94646b667f9c95c06de393cd39386e99d878a0585bb682a3e1f7c62f"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/accessibility.rules.json",
+        "sha256": "d073887defcc6fe104b9bfc242d25654b314df3c63ccb1c540e3748be04c7734"
+      },
+      {
+        "kind": "token-alias-closure",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "tokens": 73
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/stories.json",
+        "sha256": "255724a0a3206d318c60840a6228b0c6c2f276e3af9d30855a53e1833ad13be7"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/ux.json",
+        "sha256": "66b94e1fcd2b5f519d29bd0c577cd8dc2a4e795f1468e377841c0a9794aefef4"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/interface.json",
+        "sha256": "397e7a94050416f0753400b878eb3d720a90c68eb44b40529c1f0712016666d6"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/behavior.scxml",
+        "sha256": "19db620ce2008ff4bc2f4a8285be83e5160a3728edb6c130dc7bcc813649f10c"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/layout.css",
+        "sha256": "fbf5b91eccf63bfa85a311156745e48250e48761c69cbdef08b34d7c653a2a48"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/accessibility.html",
+        "sha256": "9e849d3bedf7b9010d728544b89c3abf4638b6a667a2d95e40bba95e154c4755"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/accessibility.rules.json",
+        "sha256": "4abba5c1eb56e0c27f4adce2d73f8af140f0fb9eba41eda8162b67475bfebc35"
+      },
+      {
+        "kind": "token-alias-closure",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "tokens": 73
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/stories.json",
+        "sha256": "87d251d788fa9d4752b2416fdba56ecb3a7cf6a0cdd0c19446c0d25170ebdf0d"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/ux.json",
+        "sha256": "1c11272ed4fd7486259d57439d62cf252cbf391b2085099693f59eb27007cac1"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/interface.json",
+        "sha256": "b6ec24257c4deba283d0caf2bd2eddde3d825a1c2fad708d2080e1f000c6316b"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/behavior.scxml",
+        "sha256": "036d993ca97c0b5d83fce6fbfb11a4f4145af29898d27915670ed3495b65fae4"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/layout.css",
+        "sha256": "2dedb22e611823ad91c628ea590841aec0bed60e5f5cef65a90e7ecf26cba1e1"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/accessibility.html",
+        "sha256": "172bfa29a28025066b1a7de9ff76d2aaedb7feadeb4e028f7180559e90ad8ab4"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/accessibility.rules.json",
+        "sha256": "112be14e5556c8b6d705685a8e04f96d838376b17cfc475a606fb63330a64c32"
+      },
+      {
+        "kind": "token-alias-closure",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+        "tokens": 73
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/stories.json",
+        "sha256": "c1b6b0ccd41c9b29937db364d8b73c6fb5fc39340270470bac1d9cf94b17bb0d"
+      },
+      {
+        "kind": "reference",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/ux.json",
+        "sha256": "033f301825c777219643b157b313dca04e57fd95b92d8b1112e25e46678e384c"
+      }
+    ],
+    "notChecked": [
+      "Arbitrary TypeScript type semantics",
+      "SCXML guards/actions and runtime equivalence",
+      "CSS-to-token variable mapping and visual rendering",
+      "Accessibility conformance",
+      "Production release"
+    ]
+  },
+  "fontAssets": {
+    "overall": "PASS_LIMITED",
+    "release": false,
+    "scope": "local-font-assets-and-token-binding",
+    "library": "example",
+    "manifestSha256": "d0a91c9985e3f9aeb515a0d23db14c4dbd3f1d0db3aa97ddd8031bfcceaa4217",
+    "boundTokens": [
+      "autocomplete.fontFamily"
+    ],
+    "faces": [
+      {
+        "family": "Inter",
+        "style": "normal",
+        "weight": 400,
+        "openpencilStyle": "Regular",
+        "ttfMetadata": {
+          "family": "Inter",
+          "postScriptName": "Inter-Regular",
+          "weight": 400,
+          "italic": false,
+          "glyphCount": 2937,
+          "version": "Version 4.001;git-9221beed3",
+          "variable": false
+        },
+        "assets": [
+          {
+            "path": "libraries/example/assets/fonts/Inter-Regular.ttf",
+            "format": "truetype",
+            "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+            "bytes": 411640
+          },
+          {
+            "path": "libraries/example/assets/fonts/Inter-Regular.woff2",
+            "format": "woff2",
+            "sha256": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085",
+            "bytes": 111268
+          }
+        ]
+      },
+      {
+        "family": "Inter",
+        "style": "normal",
+        "weight": 700,
+        "openpencilStyle": "Bold",
+        "ttfMetadata": {
+          "family": "Inter",
+          "postScriptName": "Inter-Bold",
+          "weight": 700,
+          "italic": false,
+          "glyphCount": 2937,
+          "version": "Version 4.001;git-9221beed3",
+          "variable": false
+        },
+        "assets": [
+          {
+            "path": "libraries/example/assets/fonts/Inter-Bold.ttf",
+            "format": "truetype",
+            "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+            "bytes": 420428
+          },
+          {
+            "path": "libraries/example/assets/fonts/Inter-Bold.woff2",
+            "format": "woff2",
+            "sha256": "fa888127b6da015b65569f0351f3b5c391ad928904951f1c20e9f8462a8d95ea",
+            "bytes": 114840
+          }
+        ]
+      }
+    ],
+    "license": {
+      "spdx": "OFL-1.1",
+      "path": "assets/fonts/LICENSE.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    "licenseEvidence": {
+      "status": "file-present",
+      "fileIntegrity": "pass",
+      "rightsReview": "notChecked"
+    },
+    "warnings": [],
+    "notChecked": [
+      "Usage and redistribution rights",
+      "Full OpenType conformance",
+      "All Unicode coverage",
+      "Renderer/browser loading (separate evidence)",
+      "Native iOS/Android embedding"
+    ]
+  },
+  "skill": {
+    "name": "ui-contracts",
+    "skillSha256": "94788af438349357f79c5aaa517e9b24ec8240fc6e9ada81a6ca8c9ad9f7a889",
+    "helperSha256": "06552636c4cee503cd54acddd9d8de43fe8b26fed05dd0ffb52f926f9ce5fe9e"
+  }
+}

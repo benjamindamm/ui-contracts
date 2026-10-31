@@ -1,0 +1,21 @@
+{
+  "baselineSourcesStillMatch": true,
+  "historicalFilesAltered": false,
+  "findings": 13,
+  "priorities": {
+    "P1": 5,
+    "P2": 8
+  },
+  "regressionExpectations": 182,
+  "regressionExpectationsMet": 182,
+  "newProbeCount": 3,
+  "newProbes": [
+    "false capability claim changes actual decision",
+    "dangling references lack specific diagnostics while remaining blocked",
+    "schema FAIL masked by later fontroot BLOCKED"
+  ],
+  "newBrowserExecution": false,
+  "localLinksRechecked": 173,
+  "missingTargets": [],
+  "frameworkScope": "Framework-wide targeted audit; not exhaustive historical-line review or full security certification"
+}

@@ -1,0 +1,12 @@
+# Abschließender Gesamtabgleich
+
+Nur für Zusammenführung/Abnahme laden. „Gesamt“ meint den vereinbarten Auftrag und seine betroffenen Quellen/Verbindungen, nicht das vorsorgliche Einlesen des ganzen Repositorys.
+
+1. Aus Fachauftrag und `component.json` die benötigten Quellen verfolgen: führende Domänen, Komposition, geteilte Tokens/Assets und Regelbindungen. Daraus einen Prüfumfang mit Pfaden/Hashes erstellen. Benötigte fachliche Entscheidungen gezielt aus der UX-Dokumentation/Policy nachladen. Historische Forschungsbefunde nur bei passendem offenem Konflikt oder ausdrücklichem Auftrag heranziehen.
+2. Für jeden Bereich Sollquelle, konkrete Pflicht, Prüfmethode und Beleg nennen. Große Messdaten bleiben in Dateien. Befunde schrittweise prüfen; noch offene Bereiche bleiben im Plan stehen, statt beim Kontextwechsel verloren zu gehen.
+3. Den Zusammenhang prüfen: dieselbe Instanz und derselbe fachliche Key; Interface/Payload gegenüber Behavior; Query/aktive Option gegenüber Commitwert; Verhalten gegenüber Fokus/ARIA; Visualzustand gegenüber Tokens/CSS; Fehler-, Disabled-, Abbruch- und Scrollpfade, soweit gefordert. Eine isoliert gültige Datei belegt diese Beziehungen nicht.
+4. Ergebnisse als `pass`, `fail`, `not-checked` oder `undetermined` führen. Pass/Fail brauchen Sollquelle und Mess-/Beobachtungsbeleg. Nichtgeprüft/Unentscheidbar brauchen Grund und nächsten Schritt. Alle sechs Bereiche **Fachanforderungen/UX, Interface, Visual, Behavior, Accessibility und Integration** abgleichen oder ausdrücklich als ungeprüft führen. Das ist eine Abdeckungsübersicht, keine neue fünfte Domäne.
+5. Zielgerechte Prüfer verwenden, [Validierung](validation.md) nur für den betroffenen Pfad laden. PNG, native Designwerte, DOM/Events und reale Assistenzbedienung getrennt bewerten. Fehlender Zieladapter blockiert die zugehörige Aussage; nicht die Kriterien passend lockern.
+6. Erstbewertung an Ziel-/Quellhashes binden. Falls unabhängige Prüfung beauftragt ist, Buildererklärungen erst danach zum Reportabgleich freigeben. Erlaubte Gestaltung, Quellenabweichung und Reportwiderspruch getrennt halten. Nach Reparatur betroffene Prüfungen und Verbindungen wiederholen; ursprünglichen Befund bewahren.
+
+`tools/ux/workflow.py` unterstützt diese Abdeckungsfelder in seinem begrenzten Auswahlprofil. Andere Aufgaben können denselben Plan ohne diesen Adapter verwenden. Der Helper prüft Struktur und Bindungen, keine Wahrhaftigkeit eines Messbelegs oder Vollständigkeit beliebiger Fachregeln.

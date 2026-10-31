@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "files": [
+    "README.md",
+    "AGENTS.md",
+    "TASKS.md",
+    "docs/README.md",
+    "docs/ARCHITECTURE.md",
+    "docs/STATUS.md",
+    "docs/EVOLUTION.md",
+    "docs/skills/README.md",
+    "docs/research/README.md",
+    "tools/ux/WORKFLOW.md",
+    "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/README.md"
+  ],
+  "scope": "Maintained current Markdown routes; no recursive rewrite of historical links"
+}

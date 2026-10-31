@@ -1,0 +1,46 @@
+{
+  "format": "ui-contracts-ux-capabilities/0.3",
+  "componentId": "ui-contracts:SelectWithSearch",
+  "capabilities": {
+    "role": "choice",
+    "valueDomain": "listed-keys",
+    "valueDisplayEditable": false,
+    "searchMode": "query-provider",
+    "selectionCardinality": "one",
+    "preservesSuppliedOrder": true,
+    "completionMode": "none",
+    "interactionIntent": "fixed-choice",
+    "querySurface": "separate-filter",
+    "unknownInputPolicy": "reject-commit"
+  },
+  "sources": [
+    {
+      "path": "component.json",
+      "sha256": "56c130f8c581de60b9e1a21f6be1f5d1a97621e69747a12d6b8084246dfde36c"
+    },
+    {
+      "path": "interface.json",
+      "sha256": "b6ec24257c4deba283d0caf2bd2eddde3d825a1c2fad708d2080e1f000c6316b"
+    },
+    {
+      "path": "behavior.scxml",
+      "sha256": "036d993ca97c0b5d83fce6fbfb11a4f4145af29898d27915670ed3495b65fae4"
+    },
+    {
+      "path": "accessibility.html",
+      "sha256": "172bfa29a28025066b1a7de9ff76d2aaedb7feadeb4e028f7180559e90ad8ab4"
+    },
+    {
+      "path": "accessibility.rules.json",
+      "sha256": "112be14e5556c8b6d705685a8e04f96d838376b17cfc475a606fb63330a64c32"
+    }
+  ],
+  "notes": [
+    "Filter query is ephemeral and separate from the noneditable selected label. Only supplied enabled keys may be committed.",
+    "Case-insensitive substring filtering over label and key, stable supplied order. Query provider is part of the target; no backend dependency.",
+    "Search availability is not a universal option-count law."
+  ],
+  "verification": {
+    "profile": "separate-search-select/1"
+  }
+}

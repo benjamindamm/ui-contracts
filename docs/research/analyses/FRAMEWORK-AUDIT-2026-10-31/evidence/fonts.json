@@ -1,0 +1,17 @@
+{
+  "id": "fonts",
+  "command": [
+    "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/validation/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/fonts",
+    "-p",
+    "test_fonts.py"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 3.09,
+  "stdout": "",
+  "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 3.019s\n\nOK\n"
+}

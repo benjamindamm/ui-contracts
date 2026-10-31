@@ -1,5 +1,5 @@
 {
-  "format": "ui-contracts-ux-capabilities/0.1",
+  "format": "ui-contracts-ux-capabilities/0.3",
   "componentId": "ui-contracts:Input",
   "capabilities": {
     "role": "input",
@@ -8,12 +8,15 @@
     "searchMode": "none",
     "selectionCardinality": "not-applicable",
     "preservesSuppliedOrder": false,
-    "completionMode": "none"
+    "completionMode": "none",
+    "interactionIntent": "text-entry",
+    "querySurface": "none",
+    "unknownInputPolicy": "retain-text"
   },
   "sources": [
     {
       "path": "component.json",
-      "sha256": "317b8c2b688820bebb7e523ac1bde6524c5232bd1a0b94e026530e0f35f057ea"
+      "sha256": "cd8b55ba25bd8d5fe8f3a74f2700e2a8585967f31466f6a9e113c7c7940d40ff"
     },
     {
       "path": "interface.json",
@@ -26,11 +29,18 @@
     {
       "path": "accessibility.html",
       "sha256": "9e849d3bedf7b9010d728544b89c3abf4638b6a667a2d95e40bba95e154c4755"
+    },
+    {
+      "path": "accessibility.rules.json",
+      "sha256": "4abba5c1eb56e0c27f4adce2d73f8af140f0fb9eba41eda8162b67475bfebc35"
     }
   ],
   "notes": [
     "Use for personal data or the local telephone-number string, not as a fixed-list country selector.",
     "Browser autocomplete hints do not imply the Autocomplete component or enforce a value domain.",
     "type=tel provides input semantics, not E.164 or regional telephone-number validation."
-  ]
+  ],
+  "verification": {
+    "profile": "text-input/1"
+  }
 }

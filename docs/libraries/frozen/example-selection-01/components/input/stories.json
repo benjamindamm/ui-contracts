@@ -1,0 +1,48 @@
+{
+  "format": "ui-contract-stories-draft",
+  "stories": [
+    {
+      "id": "empty",
+      "inputs": {
+        "label": "Vorname",
+        "value": "",
+        "inputType": "text",
+        "autocompleteHint": "given-name"
+      }
+    },
+    {
+      "id": "filled",
+      "inputs": {
+        "label": "Familienname",
+        "value": "Müller",
+        "inputType": "text",
+        "autocompleteHint": "family-name"
+      }
+    },
+    {
+      "id": "telephone",
+      "inputs": {
+        "label": "Rufnummer",
+        "value": "0123 456789",
+        "inputType": "tel",
+        "autocompleteHint": "tel-national"
+      }
+    },
+    {
+      "id": "disabled",
+      "inputs": {
+        "label": "Vorname",
+        "value": "Anna",
+        "enabled": false
+      }
+    },
+    {
+      "id": "readonly",
+      "inputs": {
+        "label": "Vorname",
+        "value": "Anna",
+        "readOnly": true
+      }
+    }
+  ]
+}

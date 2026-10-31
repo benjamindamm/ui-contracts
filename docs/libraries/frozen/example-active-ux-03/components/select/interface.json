@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "select.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "Select",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "placeholder",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Bitte wählen\""
+            },
+            {
+              "kind": "field",
+              "name": "options",
+              "type": {
+                "text": "Array<{key:string;label:string;disabled?:boolean}>"
+              },
+              "default": "[]"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string | undefined"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "enabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            }
+          ],
+          "events": [
+            {
+              "name": "value-change",
+              "type": {
+                "text": "CustomEvent<{value:string | undefined;reason:\"user\" | \"options-change\"}>"
+              }
+            }
+          ],
+          "cssParts": [
+            {
+              "name": "label"
+            },
+            {
+              "name": "control"
+            },
+            {
+              "name": "hint"
+            },
+            {
+              "name": "error"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

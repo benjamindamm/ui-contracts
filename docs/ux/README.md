@@ -4,3 +4,5 @@ Fachliche Leitlinien ergänzen die formalen Contracts und verlinken ihre Forschu
 
 - [Autocomplete: Schreibhilfe, feste Auswahl und Select mit Suche](AUTOCOMPLETE.md) – Nutzeranforderungen, Beispiele Adresse/Ländervorwahl und daraus abgeleitete Auswahlfragen; allgemeine Namensbedeutung und konkrete Bibliotheksvariante bleiben getrennt.
 - [Formale UX-Regeln](../research/studies/UX-RULES-01/README.md) – Untersuchung maschinenlesbarer Bindungen und Regelmodelle.
+
+Für die tatsächliche Anwendung: [Fähigkeiten prüfen und feste Werte auswählen](../../tools/ux/README.md). Aktive Definitionen führen; eine Studienkopie ist keine implizite aktive Bibliothek.

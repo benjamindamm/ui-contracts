@@ -1,0 +1,105 @@
+{
+  "format": "ui-contracts-package-verification/1",
+  "date": "2026-10-31",
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "library": "example",
+  "libraryVersion": "0.4.0",
+  "libraryRevision": "ee738677b6197821d0278f986fb3efc8a388b29ce3f0aa29b59cddfa5e4fe172",
+  "testExecutions": 243,
+  "suites": [
+    {
+      "suite": "tools/libraries/test_*.py",
+      "testExecutions": 35
+    },
+    {
+      "suite": "tools/ux/test_*.py",
+      "testExecutions": 30
+    },
+    {
+      "suite": "tools/fonts/test_*.py",
+      "testExecutions": 21
+    },
+    {
+      "suite": "tools/design-review/test_*.py",
+      "testExecutions": 19
+    },
+    {
+      "suite": "tools/test_setup.py",
+      "testExecutions": 3
+    },
+    {
+      "suite": "static-countercases",
+      "testExecutions": 47
+    },
+    {
+      "suite": "handoffs",
+      "testExecutions": 37
+    },
+    {
+      "suite": "tools/web/test_web.py",
+      "testExecutions": 11
+    },
+    {
+      "suite": "tools/charts/test_pie.mjs",
+      "testExecutions": 15
+    },
+    {
+      "suite": "tools/openpencil/test_layout.mjs",
+      "testExecutions": 17
+    },
+    {
+      "suite": "tools/openpencil/test_themes.mjs",
+      "testExecutions": 8
+    }
+  ],
+  "browserCases": 17,
+  "browserAssertionsIncludingSourceBindings": 142,
+  "nativeAutocompleteCases": 16,
+  "independentModelStudy": false,
+  "commonTestResult": "evidence/complete-suites/results.json",
+  "browserResult": "evidence/browser-result.json",
+  "setupResult": "evidence/clean-setup.json",
+  "historicalIntegrity": "evidence/historical-integrity.json",
+  "ciExecution": "not-run",
+  "notChecked": [
+    "Real screenreader output",
+    "Real IME",
+    "Pixel fidelity",
+    "Other browsers/OS",
+    "General generator",
+    "Production release"
+  ],
+  "cleanEnvironmentTestResult": "evidence/clean-sealed-suites/results.json",
+  "sourceLayoutCountercases": 2,
+  "cleanEnvironmentTestExecutions": 234,
+  "cleanEnvironmentOverall": "PASS_LIMITED",
+  "browserExecution": {
+    "tool": "BrowserOS neo MCP",
+    "url": "http://127.0.0.1:8775/",
+    "scripts": [
+      {
+        "path": "evidence/browser/browseros/01-prepare.js",
+        "sha256": "6a69b4c26e95a55d62fbfb1c4fd263d204c47bd3dcab49bccb3858cd52358fa6"
+      },
+      {
+        "path": "evidence/browser/browseros/02-scroll-commit.js",
+        "sha256": "db1d11516c32c68b0033d68c50179f0e1f50e0661e59bc4e7b412531e54ab501"
+      },
+      {
+        "path": "evidence/browser/browseros/03-provider.js",
+        "sha256": "f5deef8b817512cfbbdef03944d2cb2961fe27c4bd4dca388e5cb6abd4d73edb"
+      },
+      {
+        "path": "evidence/browser/browseros/04-controls.js",
+        "sha256": "543294e590a083e712101d1b3b33dfe413e10f87dbbaa7e1b42b76852f6696e4"
+      },
+      {
+        "path": "evidence/browser/browseros/05-search.js",
+        "sha256": "db8cfd4f1c030aa3c64ef3b0864b2835d6f7f82fb01a7906aa0a450dc370d761"
+      }
+    ],
+    "urlSubstitution": "8770 -> 8775 only",
+    "recordBasis": "Coordinator record of actual browser SDK calls; not independent or cryptographically attested"
+  }
+}

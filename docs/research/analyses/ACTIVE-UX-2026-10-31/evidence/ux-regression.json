@@ -1,0 +1,18 @@
+{
+  "id": "ux",
+  "command": [
+    "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/validation/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/ux",
+    "-p",
+    "test_ux.py"
+  ],
+  "exitCode": 0,
+  "tests": 22,
+  "elapsedSeconds": 23.63,
+  "stdout": "",
+  "stderr": "......................\n----------------------------------------------------------------------\nRan 22 tests in 23.431s\n\nOK\n"
+}

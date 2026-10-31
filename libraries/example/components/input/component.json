@@ -1,7 +1,7 @@
 {
   "format": "ui-contract-component-draft",
   "id": "ui-contracts:Input",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "new-research-definition-not-runtime-qualified",
   "domains": {
     "interface": "interface.json",
@@ -25,5 +25,6 @@
   "targetScope": {
     "web": "Native semantic HTML, derived target implementation; browser/assistive technology behavior needs separate verification.",
     "openpencil": "Not produced by this definition addition."
-  }
+  },
+  "ux": "ux.json"
 }

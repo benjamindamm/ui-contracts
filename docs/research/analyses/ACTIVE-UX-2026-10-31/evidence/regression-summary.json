@@ -1,0 +1,68 @@
+[
+  {
+    "id": "libraries",
+    "exitCode": 0,
+    "tests": 19,
+    "elapsedSeconds": 0.46
+  },
+  {
+    "id": "bindings",
+    "exitCode": 0,
+    "tests": 16,
+    "elapsedSeconds": 1.71
+  },
+  {
+    "id": "ux",
+    "exitCode": 0,
+    "tests": 22,
+    "elapsedSeconds": 23.63
+  },
+  {
+    "id": "dmn",
+    "exitCode": 0,
+    "tests": 6,
+    "elapsedSeconds": 16.33
+  },
+  {
+    "id": "fonts",
+    "exitCode": 0,
+    "tests": 21,
+    "elapsedSeconds": 1.21
+  },
+  {
+    "id": "handoffs",
+    "exitCode": 0,
+    "tests": 37,
+    "elapsedSeconds": 0.43
+  },
+  {
+    "id": "handoffs-installed",
+    "exitCode": 0,
+    "tests": 37,
+    "elapsedSeconds": 0.37
+  },
+  {
+    "id": "design-review",
+    "exitCode": 0,
+    "tests": 12,
+    "elapsedSeconds": 0.85
+  },
+  {
+    "id": "process",
+    "exitCode": 0,
+    "tests": 7,
+    "elapsedSeconds": 0.06
+  },
+  {
+    "id": "charts",
+    "exitCode": 0,
+    "tests": 15,
+    "elapsedSeconds": 0.63
+  },
+  {
+    "id": "presentation",
+    "exitCode": 0,
+    "tests": 25,
+    "elapsedSeconds": 4.11
+  }
+]

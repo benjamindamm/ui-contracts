@@ -1,32 +1,49 @@
 {
-  "format": "ui-contracts-selection-policy-candidate/0.1",
-  "status": "research-policy-for-SELECTION-01-not-a-universal-UX-standard",
+  "format": "ui-contracts-selection-policy/0.3",
+  "status": "active-example-project-policy-not-a-universal-UX-standard",
   "logic": "selection-policy.dmn",
   "decision": "choice",
   "candidateComponents": [
     "Select",
+    "SelectWithSearch",
     "Autocomplete"
   ],
   "capabilityFile": "ux.json",
   "parameters": {
-    "searchRequiredAbove": 15,
-    "completionAssistancePreferred": false
+    "searchRequiredAbove": 15
   },
   "parameterOrigin": "Explicit study/product policy: more than 15 options require search in this task. Not a universally validated UX threshold; adjust deliberately for other projects.",
   "facts": {
     "optionCount": "Nonnegative integer count of actual provided options.",
     "searchExplicitlyRequired": "Boolean if explicitly required/forbidden by task; null defers to declared project threshold.",
-    "queryEditingAllowed": "Whether the displayed selection field may accept an editable query; not whether novel values may be committed.",
+    "queryEditingAllowed": "Whether temporary search input is allowed; selected value editing is a distinct capability.",
     "fixedValuesRequired": "Committed keys must come from the provided finite set.",
     "filteringProviderAvailable": "A declared query-aware in-memory/data provider exists or will be implemented in the derived target.",
-    "completionAssistancePreferred": "Project preference when both defined candidates are eligible. It is not inline-completion support."
+    "selectedLabelEditingAllowed": "Whether the chosen label may be directly edited. False for this fixed-choice study; separate queryEditingAllowed is true."
   },
-  "scope": "Single committed choice; Input is a free-text field, not a competing fixed-list choice control.",
+  "scope": "Fixed-key choice prefers fixed-choice intent; searchable Select precedes completion aid when search is required. Existing Autocomplete remains listed-key variant, not general free-text aid.",
   "limitations": [
     "No ranking of arbitrary components",
-    "No fabricated SelectWithSearch: it is not defined yet",
     "No automatic geographic inference",
     "No universal option-count threshold",
     "No recommendation without checking actual capabilities and original contracts"
+  ],
+  "verificationRequirement": "Decision-relevant capabilities must pass the current bounded contract profile. Declarations alone are not eligible.",
+  "candidateBindings": [
+    {
+      "component": "Select",
+      "capabilitiesInput": "selectCapabilities",
+      "verificationInput": "selectVerification"
+    },
+    {
+      "component": "SelectWithSearch",
+      "capabilitiesInput": "searchSelectCapabilities",
+      "verificationInput": "searchSelectVerification"
+    },
+    {
+      "component": "Autocomplete",
+      "capabilitiesInput": "autocompleteCapabilities",
+      "verificationInput": "autocompleteVerification"
+    }
   ]
 }

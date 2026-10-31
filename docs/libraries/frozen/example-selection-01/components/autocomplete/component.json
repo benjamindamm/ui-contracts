@@ -1,0 +1,37 @@
+{
+  "format": "ui-contract-component-draft",
+  "id": "ui-contracts:Autocomplete",
+  "version": "0.1.0",
+  "status": "cold-context-authoring-proof",
+  "domains": {
+    "interface": "interface.json",
+    "visual": {"tokens": "../../tokens.json", "css": "layout.css"},
+    "behavior": "behavior.scxml",
+    "accessibility": {"html": "accessibility.html", "rules": "accessibility.rules.json"}
+  },
+  "composition": {
+    "overlay": {"component": "../overlay/component.json", "anchorPart": "input", "contentOwner": "Autocomplete"},
+    "overlay.scroll": {"component": "../scroll-area/component.json", "contentPart": "list"}
+  },
+  "anatomy": {
+    "label": "Visible label above input; input accessible name derives from label.",
+    "input": "Editable query; belongs to Autocomplete.",
+    "overlay.surface": "Separate popup surface anchored to this input.",
+    "overlay.scroll.viewport": "Separate clipped scroll viewport within the popup.",
+    "list": "Semantic listbox within the scroll content; belongs to Autocomplete.",
+    "option": "One repeated result part per stable key.",
+    "status": "Visible status text below the popup when present, otherwise below the input."
+  },
+  "stories": "stories.json",
+  "viewSemantics": {
+    "activeKey": "Navigated option, not committed value.",
+    "value": "Last explicitly committed result key; absent means no selection, null is not an alias.",
+    "selectedView": "Derived closed state with a present value; not an additional independent behavior variable.",
+    "requestIdentity": "owner + epoch + seq; accept only current responses.",
+    "repeatedPartIdentity": "instance + option key, never row index."
+  },
+  "targetScope": {
+    "openpencil": "Editable named component states. No interactive combobox behaviour or ARIA execution claimed.",
+    "web": "Future HTML/TypeScript output; no hand-authored per-component implementation is a master source."
+  }
+}

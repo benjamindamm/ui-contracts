@@ -1,0 +1,43 @@
+{
+  "source": {
+    "SKILL.md": "94788af438349357f79c5aaa517e9b24ec8240fc6e9ada81a6ca8c9ad9f7a889",
+    "references/geometry.md": "216695de9372542bb178a8103b31c4d013f22534bd26c069341c715f72ef7fbc",
+    "references/authoring.md": "9a8402e4e36490a3daed143aec69c899fd9503a4e32003cefac368e6a2203acb",
+    "references/ux.md": "42482eff1ebf08aa31e5cea0a17871ce71bb90853f1af5f7948ddc8c5cc1a468",
+    "references/validation.md": "1a2a24e7102636565977fb3cf5543df48b0d972f2f47b7822e9868ed0c7ba02c",
+    "references/handoff-contract.md": "44b5ccfeffee56ad94b2ad404004aae8603aaa17d6fa4d984577307c6164448f",
+    "references/workflow.md": "f6645a04922e649551512d07d4eb75932b8c3a3a84c0400263abb7cf5d9434e9",
+    "references/reproducibility.md": "217a71ee1df961d188705828756a74ea881aaef61d7f9eb8aadc222aaca4cfb7",
+    "references/roles/reviewer.md": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7",
+    "references/roles/builder.md": "ab17dad12064bd1d3273549e17590b5ece25a575779ae36d7077a3c37f5b8d0a",
+    "references/roles/repair.md": "0a443c7d85c92b474995ca2ad497deb5f6c6930fd0b0c6006ee40a28a7775fe7",
+    "references/roles/coordinator.md": "347b35781066e75b56471d4fe55d590247427795bc751a70248019344606aeeb",
+    "references/roles/mapper.md": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5",
+    "agents/openai.yaml": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d",
+    "scripts/contracts.py": "06552636c4cee503cd54acddd9d8de43fe8b26fed05dd0ffb52f926f9ce5fe9e",
+    "scripts/handoffs.py": "567bc9e943c416a839d5031e047b6a4ac0a8701a1b1db4a05915c728c898fad7",
+    "assets/handoffs/handoff.json": "5a2d8e9904bd6ed04958e80faeaae0143a150364138878869fb7de852d27cd58",
+    "assets/handoffs/task.json": "79e5d0135b3f40f7b7b80e07c30ac8f529c0ae6b14d26fa6a0b7dabb4185931d"
+  },
+  "installed": {
+    "SKILL.md": "94788af438349357f79c5aaa517e9b24ec8240fc6e9ada81a6ca8c9ad9f7a889",
+    "references/geometry.md": "216695de9372542bb178a8103b31c4d013f22534bd26c069341c715f72ef7fbc",
+    "references/authoring.md": "9a8402e4e36490a3daed143aec69c899fd9503a4e32003cefac368e6a2203acb",
+    "references/ux.md": "42482eff1ebf08aa31e5cea0a17871ce71bb90853f1af5f7948ddc8c5cc1a468",
+    "references/validation.md": "1a2a24e7102636565977fb3cf5543df48b0d972f2f47b7822e9868ed0c7ba02c",
+    "references/handoff-contract.md": "44b5ccfeffee56ad94b2ad404004aae8603aaa17d6fa4d984577307c6164448f",
+    "references/workflow.md": "f6645a04922e649551512d07d4eb75932b8c3a3a84c0400263abb7cf5d9434e9",
+    "references/reproducibility.md": "217a71ee1df961d188705828756a74ea881aaef61d7f9eb8aadc222aaca4cfb7",
+    "references/roles/reviewer.md": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7",
+    "references/roles/builder.md": "ab17dad12064bd1d3273549e17590b5ece25a575779ae36d7077a3c37f5b8d0a",
+    "references/roles/repair.md": "0a443c7d85c92b474995ca2ad497deb5f6c6930fd0b0c6006ee40a28a7775fe7",
+    "references/roles/coordinator.md": "347b35781066e75b56471d4fe55d590247427795bc751a70248019344606aeeb",
+    "references/roles/mapper.md": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5",
+    "agents/openai.yaml": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d",
+    "scripts/contracts.py": "06552636c4cee503cd54acddd9d8de43fe8b26fed05dd0ffb52f926f9ce5fe9e",
+    "scripts/handoffs.py": "567bc9e943c416a839d5031e047b6a4ac0a8701a1b1db4a05915c728c898fad7",
+    "assets/handoffs/handoff.json": "5a2d8e9904bd6ed04958e80faeaae0143a150364138878869fb7de852d27cd58",
+    "assets/handoffs/task.json": "79e5d0135b3f40f7b7b80e07c30ac8f529c0ae6b14d26fa6a0b7dabb4185931d"
+  },
+  "equal": true
+}

@@ -1,0 +1,283 @@
+EEEEEEEEEE...EEEEEEEEEEEEEEEEEEEEEEEE
+======================================================================
+ERROR: test_assumption_stays_labeled (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 136, in test_assumption_stays_labeled
+    t=self.consumer();packet=MODULE.context_packet(self.repo,t)
+AttributeError: 'NoneType' object has no attribute 'context_packet'
+
+======================================================================
+ERROR: test_blind_reviewer_can_read_target (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 160, in test_blind_reviewer_can_read_target
+    self.assertEqual(MODULE.context_packet(self.repo,t)['phase'],'blind')
+AttributeError: 'NoneType' object has no attribute 'context_packet'
+
+======================================================================
+ERROR: test_blind_reviewer_rejects_builder_report (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 156, in test_blind_reviewer_rejects_builder_report
+    with self.assertRaises(MODULE.Invalid):MODULE.context_packet(self.repo,t)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_blind_reviewer_rejects_handoff (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 152, in test_blind_reviewer_rejects_handoff
+    with self.assertRaises(MODULE.Invalid):MODULE.context_packet(self.repo,t)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_blocking_question_prevents_ready (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 140, in test_blocking_question_prevents_ready
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_bootstrap_budget_counts_full_pretty_wrapper (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 72, in test_bootstrap_budget_counts_full_pretty_wrapper
+    packet=MODULE.bootstrap_packet(self.repo,path)
+AttributeError: 'NoneType' object has no attribute 'bootstrap_packet'
+
+======================================================================
+ERROR: test_bootstrap_checks_stale_dependency_even_without_inlining_it (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 69, in test_bootstrap_checks_stale_dependency_even_without_inlining_it
+    with self.assertRaises(MODULE.Invalid):MODULE.bootstrap_packet(self.repo,path)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_bootstrap_has_pointers_without_claims_or_file_bodies (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 59, in test_bootstrap_has_pointers_without_claims_or_file_bodies
+    packet=MODULE.bootstrap_packet(self.repo,path);raw=json.dumps(packet)
+AttributeError: 'NoneType' object has no attribute 'bootstrap_packet'
+
+======================================================================
+ERROR: test_bootstrap_rejects_invalid_budget (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 82, in test_bootstrap_rejects_invalid_budget
+    with self.assertRaises(MODULE.Invalid):MODULE.bootstrap_packet(self.repo,path)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_changed_definition_blocks (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 109, in test_changed_definition_blocks
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_context_does_not_inline_source_or_artifact (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 93, in test_context_does_not_inline_source_or_artifact
+    packet=MODULE.context_packet(self.repo,self.consumer())
+AttributeError: 'NoneType' object has no attribute 'context_packet'
+
+======================================================================
+ERROR: test_context_overflow_blocks_instead_of_truncation (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 170, in test_context_overflow_blocks_instead_of_truncation
+    with self.assertRaises(MODULE.Invalid):MODULE.context_packet(self.repo,t)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_context_points_to_selected_role_only (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 103, in test_context_points_to_selected_role_only
+    packet=MODULE.context_packet(self.repo,self.task)
+AttributeError: 'NoneType' object has no attribute 'context_packet'
+
+======================================================================
+ERROR: test_duplicate_ids_block (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 149, in test_duplicate_ids_block
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_foreign_output_blocks (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 176, in test_foreign_output_blocks
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_handoff_overflow_blocks (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 173, in test_handoff_overflow_blocks
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_observation_needs_evidence (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 130, in test_observation_needs_evidence
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_observation_with_evidence_allowed (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 133, in test_observation_with_evidence_allowed
+    self.assertEqual(self.check(),'HANDOFF_READY')
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 47, in check
+    def check(self):return MODULE.validate_handoff(self.repo,self.task,self.h)
+AttributeError: 'NoneType' object has no attribute 'validate_handoff'
+
+======================================================================
+ERROR: test_old_dependency_revision_blocks (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 118, in test_old_dependency_revision_blocks
+    with self.assertRaises(MODULE.Invalid):MODULE.context_packet(self.repo,t)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_only_selected_claims_transferred (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 100, in test_only_selected_claims_transferred
+    self.assertEqual(MODULE.context_packet(self.repo,t)['inputs'][0]['claims'],[])
+AttributeError: 'NoneType' object has no attribute 'context_packet'
+
+======================================================================
+ERROR: test_output_cannot_overlap_source (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 179, in test_output_cannot_overlap_source
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_partial_dependency_blocks_successor (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 124, in test_partial_dependency_blocks_successor
+    with self.assertRaises(MODULE.Invalid):MODULE.context_packet(self.repo,self.consumer())
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_partial_is_not_ready (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 121, in test_partial_is_not_ready
+    self.assertEqual(self.check(),'HANDOFF_PARTIAL')
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 47, in check
+    def check(self):return MODULE.validate_handoff(self.repo,self.task,self.h)
+AttributeError: 'NoneType' object has no attribute 'validate_handoff'
+
+======================================================================
+ERROR: test_pass_needs_receipt (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 143, in test_pass_needs_receipt
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_paths_do_not_escape_repo (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 189, in test_paths_do_not_escape_repo
+    with self.assertRaises(MODULE.Invalid):MODULE.resolve(self.repo,value)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_ready_is_not_release (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 91, in test_ready_is_not_release
+    def test_ready_is_not_release(self):self.assertEqual(self.check(),'HANDOFF_READY')
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 47, in check
+    def check(self):return MODULE.validate_handoff(self.repo,self.task,self.h)
+AttributeError: 'NoneType' object has no attribute 'validate_handoff'
+
+======================================================================
+ERROR: test_receipts_bound_to_inputs (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 183, in test_receipts_bound_to_inputs
+    with self.assertRaises(MODULE.Invalid):MODULE.validate_handoff(self.repo,t,h)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_report_check_after_first_review (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 167, in test_report_check_after_first_review
+    self.assertEqual(MODULE.context_packet(self.repo,t)['phase'],'report-check')
+AttributeError: 'NoneType' object has no attribute 'context_packet'
+
+======================================================================
+ERROR: test_report_check_requires_frozen_first_review (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 163, in test_report_check_requires_frozen_first_review
+    with self.assertRaises(MODULE.Invalid):MODULE.context_packet(self.repo,t)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_rule_needs_original_source (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 127, in test_rule_needs_original_source
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_stale_artifact_hash_blocks (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 112, in test_stale_artifact_hash_blocks
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_unchecked_required_criterion_prevents_ready (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 146, in test_unchecked_required_criterion_prevents_ready
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_unknown_requested_claim_blocks (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 186, in test_unknown_requested_claim_blocks
+    with self.assertRaises(MODULE.Invalid):MODULE.context_packet(self.repo,t)
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+======================================================================
+ERROR: test_wrong_definition_revision_blocks (test_handoffs.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/skill-tests/ui-contracts/test_handoffs.py", line 115, in test_wrong_definition_revision_blocks
+    with self.assertRaises(MODULE.Invalid):self.check()
+AttributeError: 'NoneType' object has no attribute 'Invalid'
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.238s
+
+FAILED (errors=34)

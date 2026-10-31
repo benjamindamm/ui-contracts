@@ -1,0 +1,93 @@
+FFF.FFFFF
+======================================================================
+FAIL: test_body_focus_fails (test_web.BrowserGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/web/test_web.py", line 23, in test_body_focus_fails
+    self.change('ac-scroll',lambda d:d['snapshot'].update(focus=''));self.assertEqual(gate.check(self.run)['overall'],'FAIL')
+AssertionError: 'BLOCKED' != 'FAIL'
+- BLOCKED
++ FAIL
+
+
+======================================================================
+FAIL: test_current_bound_capture_passes (test_web.BrowserGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/web/test_web.py", line 11, in test_current_bound_capture_passes
+    def test_current_bound_capture_passes(self):self.assertEqual(gate.check(self.run)['overall'],'PASS_LIMITED')
+AssertionError: 'BLOCKED' != 'PASS_LIMITED'
+- BLOCKED
++ PASS_LIMITED
+
+
+======================================================================
+FAIL: test_missing_actual_AX_fails (test_web.BrowserGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/web/test_web.py", line 25, in test_missing_actual_AX_fails
+    self.change('ac-scroll',lambda d:d['payload'].update(ax={'nodes':[]}));self.assertEqual(gate.check(self.run)['overall'],'FAIL')
+AssertionError: 'BLOCKED' != 'FAIL'
+- BLOCKED
++ FAIL
+
+
+======================================================================
+FAIL: test_replayed_challenge_fails (test_web.BrowserGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/web/test_web.py", line 15, in test_replayed_challenge_fails
+    self.change('initial',lambda d:d.update(challenge='previous-run'));self.assertEqual(gate.check(self.run)['overall'],'FAIL')
+AssertionError: 'BLOCKED' != 'FAIL'
+- BLOCKED
++ FAIL
+
+
+======================================================================
+FAIL: test_scroll_claim_without_geometry_fails (test_web.BrowserGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/web/test_web.py", line 19, in test_scroll_claim_without_geometry_fails
+    self.change('ac-scroll',lambda d:d.update(journal=[x for x in d['journal'] if x['type']!='host.measure']));self.assertEqual(gate.check(self.run)['overall'],'FAIL')
+AssertionError: 'BLOCKED' != 'FAIL'
+- BLOCKED
++ FAIL
+
+
+======================================================================
+FAIL: test_synthetic_key_journal_fails (test_web.BrowserGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/web/test_web.py", line 27, in test_synthetic_key_journal_fails
+    self.change('ac-scroll',lambda d:[x.update(isTrusted=False) for x in d['journal'] if x['type']=='dom.key']);self.assertEqual(gate.check(self.run)['overall'],'FAIL')
+AssertionError: 'BLOCKED' != 'FAIL'
+- BLOCKED
++ FAIL
+
+
+======================================================================
+FAIL: test_tampered_bound_host_fails (test_web.BrowserGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/web/test_web.py", line 17, in test_tampered_bound_host_fails
+    p=self.run/'host.js';p.write_text(p.read_text()+'\n//tamper');self.assertEqual(gate.check(self.run)['overall'],'FAIL')
+AssertionError: 'BLOCKED' != 'FAIL'
+- BLOCKED
++ FAIL
+
+
+======================================================================
+FAIL: test_wrong_event_payload_fails (test_web.BrowserGateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/web/test_web.py", line 21, in test_wrong_event_payload_fails
+    self.change('ac-commit',lambda d:d['snapshot']['events']['A'][0]['detail'].update(value='label-not-key'));self.assertEqual(gate.check(self.run)['overall'],'FAIL')
+AssertionError: 'BLOCKED' != 'FAIL'
+- BLOCKED
++ FAIL
+
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.377s
+
+FAILED (failures=8)

@@ -1,0 +1,13 @@
+{
+  "id": "charts",
+  "command": [
+    "node",
+    "--test",
+    "tools/charts/test_pie.mjs"
+  ],
+  "exitCode": 0,
+  "tests": 15,
+  "elapsedSeconds": 0.63,
+  "stdout": "\u2714 Screenshot values normalize to exactly one angular turn (1.562042ms)\n\u2714 Adjacent slices share boundaries without overlap or missing angles (0.146583ms)\n\u2714 Area fractions match numeric input fractions (0.116292ms)\n\u2714 Input order is preserved even when values ascend (0.136958ms)\n\u2714 Zero values do not create degenerate visible slices (0.111458ms)\n\u2714 A single positive value produces a closed full-circle path (0.239916ms)\n\u2714 Donut geometry has inner and outer arcs (0.12425ms)\n\u2714 Empty or all-zero datasets block (0.153833ms)\n\u2714 Negative, NaN, infinite and string values block (0.121208ms)\n\u2714 Invalid and self-intersecting radius choices block (0.131625ms)\n\u2714 Duplicate ids and invalid colors block (0.087958ms)\n\u2714 SVG helper returns paths only, without axes or automatic chart UI (0.152792ms)\n\u2714 Delivered files match the proof receipt (4.983583ms)\n\u2714 Native FIG retains three separate sector vectors and all legend labels (33.836ms)\n\u2714 The rejected whole-circle construction has no native sector center vertex (10.537833ms)\n\u2139 tests 15\n\u2139 suites 0\n\u2139 pass 15\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 593.217458\n",
+  "stderr": ""
+}

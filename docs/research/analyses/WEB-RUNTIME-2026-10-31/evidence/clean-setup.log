@@ -1,0 +1,20 @@
+Preparing isolated Python environment
+Installing locked Node dependencies: tools/validation
+Installing locked Node dependencies: tools/openpencil
+Installing locked Node dependencies: tools/charts
+Fetched pinned engine artifact: dmn-engine-1.12.6.jar
+Fetched pinned engine artifact: feel-engine-1.22.1.jar
+Fetched pinned engine artifact: scala-library-2.13.18.jar
+Fetched pinned engine artifact: fastparse_2.13-3.1.1.jar
+Fetched pinned engine artifact: sourcecode_2.13-0.4.0.jar
+Fetched pinned engine artifact: geny_2.13-1.1.0.jar
+Fetched pinned engine artifact: java-uuid-generator-5.2.0.jar
+Fetched pinned engine artifact: jackson-module-scala_2.13-2.22.1.jar
+Fetched pinned engine artifact: paranamer-2.8.3.jar
+Fetched pinned engine artifact: camunda-dmn-model-7.24.0.jar
+Fetched pinned engine artifact: camunda-xml-model-7.24.0.jar
+Fetched pinned engine artifact: slf4j-api-2.0.20.jar
+Fetched pinned engine artifact: jackson-databind-2.22.1.jar
+Fetched pinned engine artifact: jackson-annotations-2.22.jar
+Fetched pinned engine artifact: jackson-core-2.22.1.jar
+{"overall": "READY", "release": false, "receipt": "/private/tmp/ui-contracts-clean-package3/.runtime/setup.json"}

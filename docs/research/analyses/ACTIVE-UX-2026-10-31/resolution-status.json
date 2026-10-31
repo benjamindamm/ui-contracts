@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-31",
+  "startingAudit": "../FRAMEWORK-AUDIT-2026-10-31/findings.json",
+  "verification": "verification.json",
+  "findings": {
+    "FW-001": {
+      "status": "mitigated-bounded",
+      "scope": "Implemented source/type/native profiles; arbitrary programs and targets remain unproved"
+    },
+    "FW-002": {
+      "status": "resolved-for-active-example",
+      "activeLibraryVersion": "0.3.0",
+      "historicInputsPreserved": true
+    },
+    "FW-003": {
+      "status": "mitigated-bounded",
+      "scope": "Minimal schemas, references/identities/aliases/state targets/composition and selected types; full semantic profile not claimed"
+    },
+    "FW-013": {
+      "status": "resolved-with-regression",
+      "source": "evidence/schema-error-preserved.json"
+    },
+    "FW-004": {
+      "status": "partially-mitigated-configuration-only",
+      "remaining": "Runtime provisioning and fresh-clone test in package 3"
+    }
+  },
+  "otherAuditFindings": "Remain open for later packages; no implied closure."
+}

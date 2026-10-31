@@ -1,17 +1,30 @@
 {
   "format": "ui-contract-component-draft",
   "id": "ui-contracts:Autocomplete",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "status": "cold-context-authoring-proof",
   "domains": {
     "interface": "interface.json",
-    "visual": {"tokens": "../../tokens.json", "css": "layout.css"},
+    "visual": {
+      "tokens": "../../tokens.json",
+      "css": "layout.css"
+    },
     "behavior": "behavior.scxml",
-    "accessibility": {"html": "accessibility.html", "rules": "accessibility.rules.json"}
+    "accessibility": {
+      "html": "accessibility.html",
+      "rules": "accessibility.rules.json"
+    }
   },
   "composition": {
-    "overlay": {"component": "../overlay/component.json", "anchorPart": "input", "contentOwner": "Autocomplete"},
-    "overlay.scroll": {"component": "../scroll-area/component.json", "contentPart": "list"}
+    "overlay": {
+      "component": "../overlay/component.json",
+      "anchorPart": "input",
+      "contentOwner": "Autocomplete"
+    },
+    "overlay.scroll": {
+      "component": "../scroll-area/component.json",
+      "contentPart": "list"
+    }
   },
   "anatomy": {
     "label": "Visible label above input; input accessible name derives from label.",
@@ -33,5 +46,6 @@
   "targetScope": {
     "openpencil": "Editable named component states. No interactive combobox behaviour or ARIA execution claimed.",
     "web": "Future HTML/TypeScript output; no hand-authored per-component implementation is a master source."
-  }
+  },
+  "ux": "ux.json"
 }

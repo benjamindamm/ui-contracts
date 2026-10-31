@@ -1,0 +1,18 @@
+{
+  "id": "bindings",
+  "command": [
+    "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/validation/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/libraries",
+    "-p",
+    "test_check.py"
+  ],
+  "exitCode": 0,
+  "tests": 16,
+  "elapsedSeconds": 1.71,
+  "stdout": "",
+  "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 1.559s\n\nOK\n"
+}

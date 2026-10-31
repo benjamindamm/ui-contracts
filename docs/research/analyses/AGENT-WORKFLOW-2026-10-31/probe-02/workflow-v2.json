@@ -1,0 +1,90 @@
+{
+  "format": "ui-contracts-ux-workflow/1",
+  "id": "WF-UX-01",
+  "revision": 2,
+  "library": "example",
+  "target": "web",
+  "root": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02",
+  "definition": {
+    "revision": "ee738677b6197821d0278f986fb3efc8a388b29ce3f0aa29b59cddfa5e4fe172",
+    "manifest": {
+      "path": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/inputs/definition.json",
+      "sha256": "57e3e503f1e594617abceac9f1d832f88a18f9bba72161c6e59a6b71677fcd2b"
+    }
+  },
+  "sources": [
+    {
+      "path": "libraries/example/library.json",
+      "sha256": "dca80818a5d1992f19572489004fe90b34f81cdf742931bb790de03da645d7ff",
+      "id": "contract-0",
+      "kind": "original",
+      "purpose": "Relevant library/policy/capability entry; follow needed domain links"
+    },
+    {
+      "path": "libraries/example/selection-policy.json",
+      "sha256": "1d1914862babcbc14f398571e9a2892d4fbe10f1eab8e6d6295f9d9109af61c6",
+      "id": "contract-1",
+      "kind": "original",
+      "purpose": "Relevant library/policy/capability entry; follow needed domain links"
+    },
+    {
+      "path": "libraries/example/ux-capabilities.schema.json",
+      "sha256": "151af1ee9a5bbec71d32df06abf5e7fa26bf57df923025812e6a53bcbe078b3f",
+      "id": "contract-2",
+      "kind": "original",
+      "purpose": "Relevant library/policy/capability entry; follow needed domain links"
+    },
+    {
+      "path": "libraries/example/selection-policy.dmn",
+      "sha256": "cb0522c5192c7b4ab43e21b848da4738cd2bdbdd74f2edf0955f90402b78255d",
+      "id": "contract-3",
+      "kind": "original",
+      "purpose": "Relevant library/policy/capability entry; follow needed domain links"
+    }
+  ],
+  "sharedInputs": [
+    {
+      "path": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/inputs/context.json",
+      "sha256": "0cc3957b43948a735826934863d0c0786a895b0f6340683b7a24ace491f6aebe",
+      "id": "context",
+      "kind": "artifact"
+    },
+    {
+      "path": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/inputs/brief.json",
+      "sha256": "667fb15e9d68cdb49f1706804d45000d28f1411f1b3e6d97f0a37f1228927d0d",
+      "id": "brief",
+      "kind": "artifact"
+    }
+  ],
+  "activeStep": "build",
+  "completed": [
+    {
+      "step": "selection",
+      "handoff": {
+        "path": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/work/selection/handoff-v1.json",
+        "sha256": "70c0bc913c424a3a6d318c7d39b96bbff5c648fb378cb23e2c7c744958c95eac"
+      },
+      "status": "HANDOFF_READY"
+    }
+  ],
+  "tasks": {
+    "selection": {
+      "path": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/tasks/selection-v1.json",
+      "sha256": "2b5ada6814bd3e63661301d584c0313d481dfcb3f5f716119f7deab2c57bb736"
+    },
+    "build": {
+      "path": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/tasks/build-v1.json",
+      "sha256": "4f379e4f8cf2210d6b9e075e96baa7d64f5bf9d23ee5386f7c20afb6ad76eb54"
+    }
+  },
+  "researchMetadata": null,
+  "reviewGroups": [
+    "requirements-ux",
+    "interface",
+    "visual",
+    "behavior",
+    "accessibility",
+    "integration"
+  ],
+  "notice": "Research metadata is optional. Ready handoff/process completion is not a target-quality pass or model-performance guarantee."
+}

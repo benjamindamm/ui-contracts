@@ -1,0 +1,16 @@
+✔ Explicit dark/light cases resolve opaque background tokens and aliases (0.709917ms)
+✔ Unspecified mode remains the neutral default without claiming a theme (0.070834ms)
+✔ A dark case without an explicit valid background is rejected (0.168583ms)
+✔ Unknown case names, invalid maps and cyclic aliases are rejected (0.118542ms)
+✔ Non-color, transparent and out-of-range tokens never silently fall back (0.133917ms)
+✔ Dark caption palette must be valid in the central template (0.08475ms)
+✔ Mixed-theme native FIG roundtrip preserves component subtrees and card colors (107.774958ms)
+✔ CLI binds theme inputs, renders mixed cards, and blocks missing dark background (1339.947084ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1939.781959

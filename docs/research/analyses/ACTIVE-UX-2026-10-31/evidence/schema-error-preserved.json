@@ -1,0 +1,112 @@
+{
+  "kind": "ui-contracts-original-artifact-inspection",
+  "overall": "FAIL",
+  "release": false,
+  "diagnostic": {
+    "code": "ARTIFACT_CHECK_FAILED",
+    "detail": "Candidate syntax or an available original schema was rejected."
+  },
+  "passedScope": [
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-final-diagnostic-v3eb84y5/fonts.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-final-diagnostic-v3eb84y5/library.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "candidate": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-final-diagnostic-v3eb84y5",
+  "artifacts": [
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-final-diagnostic-v3eb84y5/fonts.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-final-diagnostic-v3eb84y5/interface.json",
+      "sha256": "a63d0891da5e250414cfe3e2395fa8e79be825275edd6fe489f1749dd7590c31",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": false,
+          "errors": [
+            "'kind' is a required property",
+            "'path' is a required property"
+          ]
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-final-diagnostic-v3eb84y5/library.json",
+      "sha256": "966d1befce097ad4af2e61f8e8914b84393410fb2de1f90d3d5df5a21630839f",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    }
+  ],
+  "warnings": [
+    "Original SCXML schema is loose; HTML parsing is not conformance.",
+    "DTCG/CSS/HTML/ARIA/APG are not fully original-validated."
+  ],
+  "unverified": [
+    "General cross-file references, ownership and composition for this candidate",
+    "Runtime events, focus, scrolling, AX, lifecycle",
+    "Target generation, screenreader, real IME and native platforms"
+  ],
+  "productionRelease": false,
+  "bindings": {
+    "overall": "PASS_LIMITED",
+    "release": false,
+    "scope": "library-reference-identity-alias-and-selected-original-schema-checks",
+    "root": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-final-diagnostic-v3eb84y5",
+    "componentCount": 0,
+    "errors": [],
+    "checks": [],
+    "notChecked": [
+      "Arbitrary TypeScript type semantics",
+      "SCXML guards/actions and runtime equivalence",
+      "CSS-to-token variable mapping and visual rendering",
+      "Accessibility conformance",
+      "Production release"
+    ]
+  },
+  "additionalDiagnostics": [
+    {
+      "code": "FONT_LIBRARY_ROOT_UNSUPPORTED",
+      "detail": "Inspect registered library roots under libraries/."
+    }
+  ],
+  "skill": {
+    "name": "ui-contracts",
+    "skillSha256": "94788af438349357f79c5aaa517e9b24ec8240fc6e9ada81a6ca8c9ad9f7a889",
+    "helperSha256": "06552636c4cee503cd54acddd9d8de43fe8b26fed05dd0ffb52f926f9ce5fe9e"
+  }
+}

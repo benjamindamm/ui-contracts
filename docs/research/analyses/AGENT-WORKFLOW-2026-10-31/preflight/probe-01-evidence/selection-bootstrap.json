@@ -1,0 +1,21 @@
+{
+  "format": "ui-contracts-bootstrap/1",
+  "taskId": "WF-UX-01-selection",
+  "taskRevision": 1,
+  "role": "mapper",
+  "phase": "normal",
+  "taskReference": {
+    "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe/tasks/selection-v1.json",
+    "sha256": "f74af17aa36241324e21c7885f6369ad1e6d836b8d2a912b8989c344264c13d0"
+  },
+  "skillRoleReference": {
+    "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/skills/ui-contracts/references/roles/mapper.md",
+    "sha256": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5"
+  },
+  "loadOrder": [
+    "Read the role card and task first.",
+    "Load only task sources/inputs needed for the current step; follow cross-references when necessary.",
+    "Read acceptance and output boundaries before writing. Original sources lead; no component release."
+  ],
+  "release": false
+}

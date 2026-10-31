@@ -1,0 +1,541 @@
+{
+  "overall": "FAIL",
+  "release": false,
+  "checks": [
+    {
+      "id": "current-library-revision",
+      "passed": true
+    },
+    {
+      "id": "bound-file:cases.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:controls.mjs",
+      "passed": true
+    },
+    {
+      "id": "bound-file:error-relay.scxml",
+      "passed": true
+    },
+    {
+      "id": "bound-file:host.js",
+      "passed": true
+    },
+    {
+      "id": "bound-file:index.html",
+      "passed": true
+    },
+    {
+      "id": "bound-file:provider.mjs",
+      "passed": true
+    },
+    {
+      "id": "bound-file:session.mjs",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/README.md",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/assets/fonts/Inter-Bold.ttf",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/assets/fonts/Inter-Bold.woff2",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/assets/fonts/Inter-Regular.ttf",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/assets/fonts/Inter-Regular.woff2",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/assets/fonts/LICENSE.txt",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/README.md",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/accessibility.html",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/accessibility.rules.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/behavior.scxml",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/component.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/error-relay.scxml",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/interface.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/layout.css",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/stories.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/autocomplete/ux.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/README.md",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/accessibility.html",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/accessibility.rules.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/behavior.scxml",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/component.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/interface.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/layout.css",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/stories.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/input/ux.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/overlay/accessibility.html",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/overlay/behavior.scxml",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/overlay/component.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/overlay/interface.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/overlay/layout.css",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/scroll-area/accessibility.html",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/scroll-area/behavior.scxml",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/scroll-area/component.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/scroll-area/interface.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/scroll-area/layout.css",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/README.md",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/accessibility.html",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/accessibility.rules.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/behavior.scxml",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/component.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/interface.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/layout.css",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/stories.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select/ux.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/README.md",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/accessibility.html",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/accessibility.rules.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/behavior.scxml",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/component.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/interface.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/layout.css",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/stories.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/components/select-with-search/ux.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/fonts.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/library.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/selection-policy.dmn",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/selection-policy.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/tokens.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:sources/ux-capabilities.schema.json",
+      "passed": true
+    },
+    {
+      "id": "bound-file:vendor/polyfill.js",
+      "passed": true
+    },
+    {
+      "id": "bound-file:vendor/scxml.js",
+      "passed": true
+    },
+    {
+      "id": "bound-tool:tools/web/prepare.py",
+      "passed": true
+    },
+    {
+      "id": "bound-tool:tools/web/serve.py",
+      "passed": true
+    },
+    {
+      "id": "bound-tool:tools/web/check.py",
+      "passed": true
+    },
+    {
+      "id": "bound-tool:tools/openpencil/package-lock.json",
+      "passed": true
+    },
+    {
+      "id": "initial:binding",
+      "passed": true
+    },
+    {
+      "id": "initial:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-loading:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-loading:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-ready:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-ready:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-scroll:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-scroll:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-commit:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-commit:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-isolation:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-isolation:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-stale:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-stale:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-empty:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-empty:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-invalid:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-invalid:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "ac-disabled:binding",
+      "passed": true
+    },
+    {
+      "id": "ac-disabled:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "input-edit:binding",
+      "passed": true
+    },
+    {
+      "id": "input-edit:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "input-readonly:binding",
+      "passed": true
+    },
+    {
+      "id": "input-readonly:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "select-commit:binding",
+      "passed": true
+    },
+    {
+      "id": "select-commit:no-runtime-errors",
+      "passed": true
+    },
+    {
+      "id": "search-navigation:binding",
+      "passed": true
+    },
+    {
+      "id": "search-navigation:no-runtime-errors",
+      "passed": false
+    },
+    {
+      "id": "search-commit:binding",
+      "passed": true
+    },
+    {
+      "id": "search-commit:no-runtime-errors",
+      "passed": false
+    },
+    {
+      "id": "search-escape:binding",
+      "passed": true
+    },
+    {
+      "id": "search-escape:no-runtime-errors",
+      "passed": false
+    },
+    {
+      "id": "initial-closed",
+      "passed": true
+    },
+    {
+      "id": "loading-busy",
+      "passed": true
+    },
+    {
+      "id": "provider-supplied-order",
+      "passed": true
+    },
+    {
+      "id": "ready-without-commit",
+      "passed": true
+    },
+    {
+      "id": "scroll-focus-retained",
+      "passed": false
+    },
+    {
+      "id": "actual-scroll-geometry",
+      "passed": false
+    },
+    {
+      "id": "actual-public-commit",
+      "passed": true
+    },
+    {
+      "id": "isolation",
+      "passed": true
+    },
+    {
+      "id": "stale-result-rejected",
+      "passed": true
+    },
+    {
+      "id": "empty",
+      "passed": true
+    },
+    {
+      "id": "invalid-provider",
+      "passed": true
+    },
+    {
+      "id": "disabled-closes",
+      "passed": true
+    },
+    {
+      "id": "input-preserves-text",
+      "passed": true
+    },
+    {
+      "id": "readonly",
+      "passed": true
+    },
+    {
+      "id": "native-select-commit",
+      "passed": true
+    },
+    {
+      "id": "search-navigates-uncommitted",
+      "passed": true
+    },
+    {
+      "id": "search-commit-restores-focus",
+      "passed": false
+    },
+    {
+      "id": "escape-keeps-selection",
+      "passed": true
+    },
+    {
+      "id": "browser-AX-combobox-present",
+      "passed": true
+    },
+    {
+      "id": "browser-AX-expanded-focused",
+      "passed": true
+    },
+    {
+      "id": "trusted-key-events",
+      "passed": true
+    },
+    {
+      "id": "trusted-input-events",
+      "passed": true
+    }
+  ],
+  "sourceRevision": "51f10b16631f7c36de92c61906ef83c513b3056f8b72060e9ef50a7ff50822fb",
+  "captureHashes": {
+    "initial": "6eb014561a9a73a3e13f33f6dad5f37831fc22ac4bf77d67c2815512adbffc5d",
+    "ac-loading": "509e7500adf4cbcdf31a822af8f31cabc77083dc5e1f08d2d9ab663bf6f0d790",
+    "ac-ready": "443f800b9f97d2d5b2a47330d78b8e4b8429cc89e9371fad1e91c3e9ba47c613",
+    "ac-scroll": "2629699ee47efcc055b431d7bba1ad12f03996295b3f5af579b58ce339052fe6",
+    "ac-commit": "d8e550f983726386ca871b79ee3418d037400fa392c32abf765b0e899a532ae7",
+    "ac-isolation": "8e2efaecc3384b6070d1162a3b96b69ee7d3c727c1ba07f8f8ff4500eb1181ed",
+    "ac-stale": "3de78c2958aa4021873dab5a6c6d8f9b363dbea38a090fbf12aea1b17a428118",
+    "ac-empty": "093c2c816c083c80357f2de26e2f6cc28cb94640be833b741877bcf4a7101951",
+    "ac-invalid": "5a7a407f7d9558e312afea5b9b03ab58547b627a7e4c4fa7c51cde72e80500a3",
+    "ac-disabled": "2b0b9050a6477c123d5863e6713ad52a839ee504e771b89c165d238e18ac51e1",
+    "input-edit": "ea411607550369576ed3c37b50b7d8aaa296095a88404abb2aba218376c8d5f5",
+    "input-readonly": "7da2e9954f4acc4c8c654c0c82c185ec59539e07d8e1ec2bb1ad9c5e481b1968",
+    "select-commit": "f6146b48fdb06d22c3af97351233a9429b44ae9e767567f7b117bdfd2bf42cf9",
+    "search-navigation": "c95e5b959ba9c01f53a8a7729850e187d0aacea2364120f095c0d12c18bc188b",
+    "search-commit": "d660a64918e2d0de9ced237e512db9be4a4e2da0c132c4e26b8bf24802e0e96b",
+    "search-escape": "71ce900499ac00695e9dd012dfdacb694e994a945c0b5816b3aa6b631a23ad77"
+  },
+  "notChecked": [
+    "Real IME",
+    "Screenreader output",
+    "Pixel fidelity",
+    "Mobile and other browsers",
+    "General arbitrary component rendering",
+    "Production release"
+  ]
+}

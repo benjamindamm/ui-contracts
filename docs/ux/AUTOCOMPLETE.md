@@ -48,3 +48,7 @@ Bei festen Werten im hier vereinbarten Projektprofil zuerst Select bzw. Select m
 [SELECTION-01](../research/studies/UX-RULES-01/studies/SELECTION-01/README.md) bot nur Select und ein auf vorhandene Ergebniskeys begrenztes Autocomplete an. Dessen Query ist editierbar; freie Texte werden jedoch nicht als neue Ergebniswerte bestätigt. Das ist **nicht** der oben beschriebene freie Adressmodus. Die damalige Wahl für 30 Einträge erfüllte die damalige Policy, beweist aber keine optimale Komponentenwahl bei vollständigerem Angebot.
 
 [SELECTION-02](../research/studies/UX-RULES-01/studies/SELECTION-02/README.md) ergänzt eine separate Kandidatenrevision mit Select mit Suche und expliziten Merkmalen für Interaktionszweck, Suchoberfläche und unbekannte Eingaben. Die erste Studie wird nicht nachträglich auf die neue Erwartung umbewertet. Ein Agentenlauf testet die Anwendung unserer Vorgaben, keine tatsächliche Benutzerfreundlichkeit im Nutzertest.
+
+## Übernahme in den aktiven Stand · 31. Oktober 2026
+
+Select mit Suche und die getrennten Merkmale für Zweck, Suchoberfläche und unbekannte Eingaben sind nun in libraries/example aktiv. Die [operative Prüfung](../../tools/ux/README.md) unterscheidet deklarierte von aktuell begrenzt nachgewiesenen Fähigkeiten. Die Studien bleiben eingefrorene Belege ihrer jeweiligen Eingaben; freie Adress-Schreibhilfe wird durch diese Übernahme nicht nachträglich implementiert.

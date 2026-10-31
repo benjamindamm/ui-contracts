@@ -1,0 +1,22 @@
+{
+  "kind": "ui-contract-library-draft",
+  "name": "UI Contracts",
+  "version": "0.4.0",
+  "status": "active-example-definitions-with-bounded-ux-checks-not-production-qualified",
+  "components": {
+    "Autocomplete": "components/autocomplete/component.json",
+    "Overlay": "components/overlay/component.json",
+    "ScrollArea": "components/scroll-area/component.json",
+    "Select": "components/select/component.json",
+    "Input": "components/input/component.json",
+    "SelectWithSearch": "components/select-with-search/component.json"
+  },
+  "targets": {
+    "openpencil": "Editable design states first; interactive preview is outside this proof.",
+    "web": "HTML and TypeScript generated from these same definitions in a later comparison."
+  },
+  "selection": {
+    "policy": "selection-policy.json",
+    "capabilitiesSchema": "ux-capabilities.schema.json"
+  }
+}

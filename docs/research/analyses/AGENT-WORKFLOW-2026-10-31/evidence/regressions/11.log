@@ -1,0 +1,23 @@
+✔ Screenshot values normalize to exactly one angular turn (1.401208ms)
+✔ Adjacent slices share boundaries without overlap or missing angles (0.124417ms)
+✔ Area fractions match numeric input fractions (0.108791ms)
+✔ Input order is preserved even when values ascend (0.126791ms)
+✔ Zero values do not create degenerate visible slices (0.095833ms)
+✔ A single positive value produces a closed full-circle path (0.092042ms)
+✔ Donut geometry has inner and outer arcs (0.089208ms)
+✔ Empty or all-zero datasets block (0.127459ms)
+✔ Negative, NaN, infinite and string values block (0.097625ms)
+✔ Invalid and self-intersecting radius choices block (0.115334ms)
+✔ Duplicate ids and invalid colors block (0.076959ms)
+✔ SVG helper returns paths only, without axes or automatic chart UI (0.113041ms)
+✔ Delivered files match the proof receipt (4.194875ms)
+✔ Native FIG retains three separate sector vectors and all legend labels (19.50425ms)
+✔ The rejected whole-circle construction has no native sector center vertex (4.927958ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 723.352208

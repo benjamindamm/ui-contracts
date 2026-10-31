@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UI Contracts minimal component bindings 1 (own convention)",
+  "type": "object",
+  "required": [
+    "format",
+    "id",
+    "domains"
+  ],
+  "properties": {
+    "format": {
+      "const": "ui-contract-component-draft"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domains": {
+      "type": "object",
+      "required": [
+        "interface",
+        "visual",
+        "behavior",
+        "accessibility"
+      ],
+      "properties": {
+        "interface": {
+          "type": "string",
+          "minLength": 1
+        },
+        "behavior": {
+          "type": "string",
+          "minLength": 1
+        },
+        "visual": {
+          "type": "object",
+          "required": [
+            "tokens",
+            "css"
+          ],
+          "properties": {
+            "tokens": {
+              "type": "string",
+              "minLength": 1
+            },
+            "css": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "accessibility": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "object",
+              "required": [
+                "html"
+              ],
+              "properties": {
+                "html": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rules": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "stories": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ux": {
+      "type": "string",
+      "minLength": 1
+    },
+    "composition": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "component"
+        ],
+        "properties": {
+          "component": {
+            "type": "string",
+            "minLength": 1
+          },
+          "anchorPart": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contentPart": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

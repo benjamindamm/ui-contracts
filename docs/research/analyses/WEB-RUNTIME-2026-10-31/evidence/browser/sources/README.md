@@ -1,0 +1,34 @@
+# Definitionsbibliothek
+
+Diese Bibliothek wird über Definitionen gepflegt. Die Dateien in components/autocomplete/, components/overlay/ und components/scroll-area/ sind die führenden Quellen. Erzeugte Zielartefakte gehören nicht hierher und werden nicht unabhängig nachbearbeitet.
+
+## Erster Baustein
+
+[Autocomplete](components/autocomplete/README.md) verwendet die separat beschriebenen Komponenten Overlay und ScrollArea. [library.json](library.json) ist der Index. component.json verbindet Originaldateien und konkrete Teile; diese kleine Bindungssyntax ist ein Arbeitsentwurf, kein bereits standardisiertes Produktformat.
+
+| Domäne | Quelle |
+| --- | --- |
+| Interface | CEM-JSON: Properties, Typen, Events, Teile. |
+| Visual | DTCG-Tokens und CSS-Regeln. CSS beschreibt hier Geometrie und visuelle Zustandsabbildungen; ein Canvasadapter muss diese explizit übertragen. |
+| Behavior | SCXML: Zustände, Aktionen und Übergänge. Die vorhandenen Guards/Ausdrücke verwenden ECMAScript. |
+| Accessibility | HTML-Semantik plus ergänzende, ausdrücklich eigene Projektions-/Meldungsregeln. Das ergänzende JSON ist kein WAI-ARIA-Originalschema. |
+
+Die Dateien beschreiben die Komponente; es gibt keine daneben gepflegte handgeschriebene TypeScript-Komponentenimplementierung. SCXML-Ausdrücke sind dennoch ausführbare Ausdrücke und keine Behauptung einer vollständig ausdrucksfreien Sprache. Wiederverwendbare technische Adapter und Compiler gehören nach tools/, Beispiele und erzeugte Dokumente nach examples/.
+
+## Unabhängiger erster Proof
+
+Ein neuer Agent erhält nur dieses Verzeichnis und normale OpenPencil-Dokumentation beziehungsweise die Originalwerkzeuge. Er soll daraus ohne Gesprächsverlauf, Rechercheordner, Webharness oder fertige Bilder ein editierbares OpenPencil-Dokument erzeugen. Der Agent darf Definitionen nicht ändern. Fehlende oder widersprüchliche Angaben werden protokolliert und nicht still ergänzt.
+
+Ziel dieses Schritts ist ein editierbares Design mit allen benannten Zuständen. Interaktive Combobox-Preview in OpenPencil und das spätere HTML-/TypeScript-Ziel sind separate Prüfumfänge. Die nachfolgende Prüfung vergleicht das Ergebnis mit diesen unveränderten Quellen, nicht mit einer nachträglich auf das Design zugeschnittenen Definition.
+
+## Neue Auswahl-/Formularstudie
+
+[Select mit Suche](components/select-with-search/README.md) trennt Filterquery und festen Auswahlwert. [Select](components/select/README.md) ergänzt die feste, nicht editierbare Einzelauswahl; [Input](components/input/README.md) die freie Eingabe von Personen- und Rufnummerndaten. Optionale ux.json-Dateien projizieren deklarierte Fähigkeiten mit Quellhashes; [Schema](ux-capabilities.schema.json) und [Auswahlpolicy](selection-policy.json) sind ausdrücklich eigene Forschungsentwürfe. Die auswertbaren Bedingungen stehen in selection-policy.dmn. Die Suchgrenze ist eine Studien-/Projektregel, kein universeller Standard. [Studie](../../docs/research/studies/UX-RULES-01/studies/SELECTION-01/README.md).
+
+## Aktiver UX-Stand · 0.4.0
+
+Die in SELECTION-02 untersuchte Suchvariante ist jetzt regulär indexiert. `component.json` verlinkt pro Komponente ihr `ux.json`; `library.json` führt Policy und Schema. Maßgeblich für die neue Auswahl ist der [operative UX-Prüfeinstieg](../../tools/ux/README.md), nicht ein historischer Studienpfad. Profile deklarieren einen Prüfplan; nur aktuelle tatsächlich ausgeführte Quellen-/SCXML-Prüfungen ergeben `verified-limited`. Autocomplete nutzt jetzt `composed-autocomplete/1`: tatsächliche verschachtelte Overlay-/ScrollArea-Maschinen, Providerreihenfolge, getrennte Instanzen, veraltete Antworten und deaktivierte Schlüssel werden aktuell nachgeprüft. Eine native synthetische Scrollbestätigung ist ausdrücklich kein DOM-Beleg. Der [gesonderte aktuelle Browserlauf](../../tools/web/README.md) prüft reale Events, Fokus, Scrollgeometrie und Browsersemantik; vorhandene alte Nachweise werden nicht pauschal übernommen.
+
+[UX-Leitlinie mit Adresse und Vorwahl](../../docs/ux/AUTOCOMPLETE.md) · [Übernahme und Grenzen](../../docs/research/analyses/ACTIVE-UX-2026-10-31/README.md). Die freie Adress-Schreibhilfe ist weiterhin eine andere, noch nicht implementierte Variante.
+
+Vor dieser Revision wurde der vollständige 59-Datei-Stand 0.3.0 unter [frozen/example-active-ux-03](../../docs/libraries/frozen/example-active-ux-03.json) bytegleich archiviert. Die einzige neue fachliche Verhaltenskorrektur: SET_VALUE akzeptiert keine deaktivierte Autocomplete-Option mehr.

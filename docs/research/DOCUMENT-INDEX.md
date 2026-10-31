@@ -1,6 +1,6 @@
 # Dokumentenindex
 
-Stand: 30. Oktober 2026. Die Stammübersicht der abgeschlossenen Kandidatenrecherche stammt vom 25. Oktober (31 Markdown-Dokumente); neue Anwendungsstudien und Forschungsentscheide sind separat verlinkt. Versuchsordner werden im [Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
+Stand: 31. Oktober 2026. Die Stammübersicht der abgeschlossenen Kandidatenrecherche stammt vom 25. Oktober (31 Markdown-Dokumente); neue Anwendungsstudien und Forschungsentscheide sind separat verlinkt. Versuchsordner werden im [Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
 
 Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; maßgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.
 
@@ -8,6 +8,10 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 
 | Dokument | Inhalt |
 | --- | --- |
+| [Agentenablauf und Informationsarchitektur · Paket 4](analyses/AGENT-WORKFLOW-2026-10-31/README.md) | Kurze Handlungsessenz, gezieltes Nachladen, gemeinsame v1-Übergaben, Abschlussabdeckung und optionale Modellforschung ([RD-002](decisions/RD-002-AGENT-WORKFLOW-SCOPE.md)) |
+| [Aktuelle Webprüfung · Paket 3](analyses/WEB-RUNTIME-2026-10-31/README.md) | Saubere Runtimeeinrichtung, gemeinsamer Testeinstieg, vier native Profile und tatsächliche Events/Fokus/Scroll-/AX-Browserfälle samt Fehlerhistorie |
+| [Aktive UX-Revision · 31. Oktober 2026](analyses/ACTIVE-UX-2026-10-31/README.md) | Übernahme von Select mit Suche, begrenzte Fähigkeitsnachweise, Quellenprüfungen und erhaltene historische Reproduktion |
+| [Framework-Audit · 31. Oktober 2026](analyses/FRAMEWORK-AUDIT-2026-10-31/README.md) | Frameworkweite Schwächen, 13 priorisierte Befunde, 182 erfüllte Regressionserwartungen und neue Gegenbeispiele |
 | [UX-Eignung · Autocomplete](../ux/AUTOCOMPLETE.md) | Schreibhilfe, feste Auswahl, Suchoberfläche und fachliche Beispiele |
 | [SELECTION-01/02](studies/UX-RULES-01/studies/SELECTION-02/README.md) | Kontrollierte Komponentenwahl und Folgelauf mit suchfähigem Select |
 | [UX-RULES-01 · Formale UX-Regeln](studies/UX-RULES-01/README.md) | Neue Forschung: Anforderungen, Komponentenbindung, Quellensurvey, native Teilproben und Autocomplete-UX-Kandidat mit Zeilentrace; vollständiger Frameworkvergleich noch offen |

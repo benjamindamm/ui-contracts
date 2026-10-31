@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-31",
+  "baselineCommit": "fe44c53876f4f77c3e95222ee5b1ea118eb87d76",
+  "release": false,
+  "scope": "Active example UX adoption, bounded source/native profiles and native DMN choice; not target qualification",
+  "activeLibraryVersion": "0.3.0",
+  "activeLibraryRevision": "71f5a62da091041d9ebe364dda357fa4eed6c62e2e2757896b5ed400cd763cea",
+  "regressionSuites": [
+    {
+      "id": "libraries",
+      "exitCode": 0,
+      "tests": 19,
+      "elapsedSeconds": 0.46
+    },
+    {
+      "id": "bindings",
+      "exitCode": 0,
+      "tests": 16,
+      "elapsedSeconds": 1.71
+    },
+    {
+      "id": "ux",
+      "exitCode": 0,
+      "tests": 22,
+      "elapsedSeconds": 23.63
+    },
+    {
+      "id": "dmn",
+      "exitCode": 0,
+      "tests": 6,
+      "elapsedSeconds": 16.33
+    },
+    {
+      "id": "fonts",
+      "exitCode": 0,
+      "tests": 21,
+      "elapsedSeconds": 1.21
+    },
+    {
+      "id": "handoffs",
+      "exitCode": 0,
+      "tests": 37,
+      "elapsedSeconds": 0.43
+    },
+    {
+      "id": "handoffs-installed",
+      "exitCode": 0,
+      "tests": 37,
+      "elapsedSeconds": 0.37
+    },
+    {
+      "id": "design-review",
+      "exitCode": 0,
+      "tests": 12,
+      "elapsedSeconds": 0.85
+    },
+    {
+      "id": "process",
+      "exitCode": 0,
+      "tests": 7,
+      "elapsedSeconds": 0.06
+    },
+    {
+      "id": "charts",
+      "exitCode": 0,
+      "tests": 15,
+      "elapsedSeconds": 0.63
+    },
+    {
+      "id": "presentation",
+      "exitCode": 0,
+      "tests": 25,
+      "elapsedSeconds": 4.11
+    }
+  ],
+  "regressionTestExecutions": 217,
+  "staticCountercases": {
+    "met": 47,
+    "total": 47
+  },
+  "functionalHelperCases": {
+    "met": 18,
+    "total": 18
+  },
+  "newFocusedSuites": {
+    "bindingCases": 16,
+    "uxCases": 22,
+    "nativeDmnCases": 6,
+    "note": "The DMN boundary case evaluates both 15 and 16; these are test expectations, not independent usability conditions."
+  },
+  "outcomes": {
+    "three": "Select",
+    "thirty": "SelectWithSearch",
+    "Autocomplete": "declared, excluded from evidenced eligibility"
+  },
+  "currentNativeContractChecks": {
+    "Autocomplete": 0,
+    "Select": 11,
+    "Input": 6,
+    "SelectWithSearch": 20
+  },
+  "historicTrackedFilesUnchanged": 733,
+  "preservedSelection01Files": 50,
+  "legacyReplayPassed": true,
+  "installedSkillMatchesSource": true,
+  "installedSkillFiles": {
+    "SKILL.md": "94788af438349357f79c5aaa517e9b24ec8240fc6e9ada81a6ca8c9ad9f7a889",
+    "references/geometry.md": "216695de9372542bb178a8103b31c4d013f22534bd26c069341c715f72ef7fbc",
+    "references/authoring.md": "9a8402e4e36490a3daed143aec69c899fd9503a4e32003cefac368e6a2203acb",
+    "references/ux.md": "f870818ea02d805a8bbaef853848349d791610909dea1063c1195a57f6ae98fe",
+    "references/validation.md": "e1821f9dc5142fb8480d3d9d4d97347659a0f24ede4a611b05f2c538f7f6e7dc",
+    "references/handoff-contract.md": "44b5ccfeffee56ad94b2ad404004aae8603aaa17d6fa4d984577307c6164448f",
+    "references/workflow.md": "f6645a04922e649551512d07d4eb75932b8c3a3a84c0400263abb7cf5d9434e9",
+    "references/reproducibility.md": "217a71ee1df961d188705828756a74ea881aaef61d7f9eb8aadc222aaca4cfb7",
+    "references/roles/reviewer.md": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7",
+    "references/roles/builder.md": "ab17dad12064bd1d3273549e17590b5ece25a575779ae36d7077a3c37f5b8d0a",
+    "references/roles/repair.md": "0a443c7d85c92b474995ca2ad497deb5f6c6930fd0b0c6006ee40a28a7775fe7",
+    "references/roles/coordinator.md": "347b35781066e75b56471d4fe55d590247427795bc751a70248019344606aeeb",
+    "references/roles/mapper.md": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5",
+    "agents/openai.yaml": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d",
+    "scripts/contracts.py": "06552636c4cee503cd54acddd9d8de43fe8b26fed05dd0ffb52f926f9ce5fe9e",
+    "scripts/handoffs.py": "567bc9e943c416a839d5031e047b6a4ac0a8701a1b1db4a05915c728c898fad7",
+    "assets/handoffs/handoff.json": "5a2d8e9904bd6ed04958e80faeaae0143a150364138878869fb7de852d27cd58",
+    "assets/handoffs/task.json": "79e5d0135b3f40f7b7b80e07c30ac8f529c0ae6b14d26fa6a0b7dabb4185931d"
+  },
+  "newBrowserRun": false,
+  "newAgentStudy": false,
+  "runtimeProvisioningCompleted": false,
+  "evidence": {
+    "bindings-regression.json": "eb33cd627bd5ec35fa4f405458995b7172378a1992af36d63fac7f5c633cdac4",
+    "charts-regression.json": "f13606f8594fb29d861cf43864ff6011c5d538d1c1b1037380dc595462d472dd",
+    "design-review-regression.json": "84c38ff3635243ab917dc7a1ca133ac386cd203a103fa80732d09ebe58993f96",
+    "dmn-regression.json": "663471e941b3207c600054d30cd258a7dd476a15cd08237b0b48388a01d9e3f1",
+    "false-capability-rejected.json": "16295c4235798273a40c20fa676ead0fabf18aa7ae6df0371b59fdbb171e16cc",
+    "final-inspection-current.json": "fb988dc0f8b1a360dc5866e567776ac7714839958bdfef7e2eaf999d45b0757f",
+    "final-structure-full.json": "860b5ff7614f167986caf693d91374df18a1b5b68ff4944428cbca90d4270022",
+    "final-thirty-full.json": "73bb939e629623b3a8ae70d725530c544605fad4282d03d85d8e0a184cb64b43",
+    "final-three-full.json": "fc23557ce4379881c9560002a4f7d84cfa0802485e1aa884fa1d1573c29f9819",
+    "final-ux-full.json": "c5a1fcf7a26687877264c9cbb1ec7e6f1f917754509d4ae88aea0e360e548d13",
+    "fonts-regression.json": "9e2ef4e1829f6a3f99e2bc90b29d87ca2b01e505d9ed6f27eee035d55f275e85",
+    "handoffs-installed-regression.json": "8ac3b880b306951d2635c7719645d6d8d1aed343340bfcde9dddd5b117eba402",
+    "handoffs-regression.json": "debac861f0b8ecac285d21e5add6e8741c86816480e16a9f92184831f4dc55e8",
+    "legacy-replay.json": "2abf28d9cac0b619ce112f397badc69295b85463df8807f8aeaf6592c5df8474",
+    "libraries-regression.json": "3843d14b74523175c19db2eeb5c67677e17dd6ab71199bd7fb0ff71aeed1f4ad",
+    "presentation-regression.json": "3c0d8796496407256f1876fea2a3412a41fe3f41e2a17d5d36df27c9a76a68fe",
+    "process-regression.json": "c001936c71f04ffb5c7912a5312171dad269214778150be76d11c8d3c30c9176",
+    "regression-summary.json": "36f3a1e65f52662a4cf1a84a590368acab3d60f711c5d826eb47817d9aeaeb35",
+    "schema-error-preserved.json": "b0073fef8db4fdc9f1dc48c0883f356a342f2093a60cc3c425b0cb6bb8877850",
+    "skill-functional.json": "5e257a3135c9b10341458fdb91811c46e7f40e038f88418bea92c972c093cb92",
+    "static-countercases.json": "6ce958a1dbee3de5c32a172881ed0e4d1b2d30cd13da7454e0f8d943187e0ef0",
+    "ux-regression.json": "57dc84612dd76fbd6f5d92980d4385988bf94ae9232aad53764ed0ed4428d8c3"
+  },
+  "totalCheckExecutions": 282,
+  "sourceFiles": {
+    "tools/libraries/check.py": "b31fec6947e29c2f6f21cae0bb3dacc12e5008ea1b979824944cdc1d9330b5be",
+    "tools/libraries/library_report.py": "a2f2049c3f45e67b9d5cc80d932e6ed9b4b94313200a18b889b155963cc9a2f1",
+    "tools/libraries/manage.py": "14ebda2fd39e1c83a7c4c8156562d20260b1cc339641fe3527c4a51bb3dc26c0",
+    "tools/libraries/test_check.py": "7d0aa8e446791294696bd8860ecf43b2b2e7d903c5fb3f4ab780d57d85f7dd53",
+    "tools/fonts/test_fonts.py": "b17be1acd87ff98b130856606be4e5ade4eba8247c0ff5d69dcbd8c661aaef88",
+    "tools/libraries/schemas/component.schema.json": "8b7c42fd11810fbf51ac509d58b6adc58673ff9fb16026fd948ffc9d6a92b2ac",
+    "tools/libraries/schemas/library.schema.json": "8aec14f1b71957689af20ded04395433fb2db59546ccc8a924e12572775fb34c",
+    "tools/ux/check.py": "4f09b68ecc90776d48e1d7763d991d1b1e22229ab780287f2e1ea815ee6da2cb",
+    "tools/ux/choose.py": "d19fab286b009a808268f4f726b8e1598ba8f4cd36bec3bcdf0e277117939897",
+    "tools/ux/test_dmn.py": "ecc6f9dc47547b02baec6b7a0ec05b8b59ccaf4754b504b29779ca751b2e92f0",
+    "tools/ux/test_ux.py": "b9a5bace67b5aefe024fe41e61068ee1311ef208d0cb842269a5a781e0527483",
+    "tools/ux/cem-profile.cjs": "b63ba41596c1882cc1680483a49b4e3b1d010e05e6be3b0ef659362f9cc38b19",
+    "tools/ux/contract-probe.cjs": "bc49b88f03ef6c4e47374eab756165af79a3312117b6e9b08df2ed22d3be5521",
+    "tools/ux/DmnProbe.java": "77af690df4042407790c3b585481e77cd7790cd2858708a76ab62187dbc6f171",
+    "tools/ux/runtime.lock.json": "84a61bdd34782ea49c416ff924ef20fb7bbcd2e0fd156bb9f960ac7cf9fba2d4"
+  },
+  "localMarkdownLinksVerified": 346
+}

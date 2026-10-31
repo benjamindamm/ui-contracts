@@ -1,0 +1,46 @@
+{
+  "format": "ui-contracts-ux-capabilities/0.3",
+  "componentId": "ui-contracts:Input",
+  "capabilities": {
+    "role": "input",
+    "valueDomain": "free-text",
+    "valueDisplayEditable": true,
+    "searchMode": "none",
+    "selectionCardinality": "not-applicable",
+    "preservesSuppliedOrder": false,
+    "completionMode": "none",
+    "interactionIntent": "text-entry",
+    "querySurface": "none",
+    "unknownInputPolicy": "retain-text"
+  },
+  "sources": [
+    {
+      "path": "component.json",
+      "sha256": "cd8b55ba25bd8d5fe8f3a74f2700e2a8585967f31466f6a9e113c7c7940d40ff"
+    },
+    {
+      "path": "interface.json",
+      "sha256": "397e7a94050416f0753400b878eb3d720a90c68eb44b40529c1f0712016666d6"
+    },
+    {
+      "path": "behavior.scxml",
+      "sha256": "19db620ce2008ff4bc2f4a8285be83e5160a3728edb6c130dc7bcc813649f10c"
+    },
+    {
+      "path": "accessibility.html",
+      "sha256": "9e849d3bedf7b9010d728544b89c3abf4638b6a667a2d95e40bba95e154c4755"
+    },
+    {
+      "path": "accessibility.rules.json",
+      "sha256": "4abba5c1eb56e0c27f4adce2d73f8af140f0fb9eba41eda8162b67475bfebc35"
+    }
+  ],
+  "notes": [
+    "Use for personal data or the local telephone-number string, not as a fixed-list country selector.",
+    "Browser autocomplete hints do not imply the Autocomplete component or enforce a value domain.",
+    "type=tel provides input semantics, not E.164 or regional telephone-number validation."
+  ],
+  "verification": {
+    "profile": "text-input/1"
+  }
+}

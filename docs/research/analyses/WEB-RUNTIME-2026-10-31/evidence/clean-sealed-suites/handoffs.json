@@ -1,0 +1,157 @@
+{
+  "skillPath": "/private/tmp/ui-contracts-clean-package3/skills/ui-contracts",
+  "helperSha256": "567bc9e943c416a839d5031e047b6a4ac0a8701a1b1db4a05915c728c898fad7",
+  "passed": true,
+  "count": 37,
+  "cases": [
+    {
+      "test": "__main__.HandoffTests.test_assumption_stays_labeled",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_blind_reviewer_can_read_target",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_blind_reviewer_rejects_builder_report",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_blind_reviewer_rejects_handoff",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_blocking_question_prevents_ready",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_bootstrap_budget_counts_full_pretty_wrapper",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_bootstrap_checks_stale_dependency_even_without_inlining_it",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_bootstrap_has_pointers_without_claims_or_file_bodies",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_bootstrap_rejects_invalid_budget",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_changed_definition_blocks",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_cli_bootstrap_within_actual_file_budget",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_cli_emits_context_and_no_release",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_cli_refuses_existing_output_without_modification",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_context_does_not_inline_source_or_artifact",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_context_overflow_blocks_instead_of_truncation",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_context_points_to_selected_role_only",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_duplicate_ids_block",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_foreign_output_blocks",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_handoff_overflow_blocks",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_observation_needs_evidence",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_observation_with_evidence_allowed",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_old_dependency_revision_blocks",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_only_selected_claims_transferred",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_output_cannot_overlap_source",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_partial_dependency_blocks_successor",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_partial_is_not_ready",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_pass_needs_receipt",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_paths_do_not_escape_repo",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_ready_is_not_release",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_receipts_bound_to_inputs",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_report_check_after_first_review",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_report_check_requires_frozen_first_review",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_rule_needs_original_source",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_stale_artifact_hash_blocks",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_unchecked_required_criterion_prevents_ready",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_unknown_requested_claim_blocks",
+      "status": "pass"
+    },
+    {
+      "test": "__main__.HandoffTests.test_wrong_definition_revision_blocks",
+      "status": "pass"
+    }
+  ],
+  "scope": "Functional data/context routing tests, not an independent model forward-test or a security sandbox."
+}

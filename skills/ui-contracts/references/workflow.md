@@ -46,3 +46,9 @@ Erweitertes Paket klein halten: Standard höchstens 16.000 Zeichen je Übergabe 
 Eine Übergabe nennt Aussagen als `explicit`, `derived`, `assumption` oder `observation`, jeweils mit nachvollziehbarer Quelle beziehungsweise Messbeleg. Verbindlich bleibt die führende Originaldatei. Nicht aus „Annahme des Vorgängers“ eine Regel machen. Bei Konflikt die konkreten Quellen und Folgen melden; zuerst unabhängig mögliche Arbeit fortsetzen, abhängige Schritte blockieren.
 
 Das Tool validiert Struktur, aktuelle Dateien/Hashes, Quellenbindung und deklarierte Zugriffsgrenzen. Es bestätigt keine fachliche Richtigkeit, tatsächliche Zugriffssperre oder Ausführung der berichteten Prüfungen. Der Koordinator muss Aussagen und Messbelege weiterhin sachlich prüfen. `HANDOFF_READY` bedeutet verwertbare Übergabe, keine Komponentenfreigabe.
+
+## Abschließende Integration und optionale Forschung
+
+Die kurze Handlungsessenz steht in SKILL.md. Beim Abschluss den [Gesamtabgleich](integration-review.md) laden: betroffene Regeln/Quellen und ihre Verbindungen schrittweise prüfen; offene Bereiche bleiben explizit im Abdeckungsplan. Das Gesamtwissen bleibt über Quellen und Verweise erreichbar, ohne pro Rolle vollständig in den Kontext zu wandern.
+
+Modell-/Tokenmetadaten und kontrollierte Vergleichsläufe sind optionale Forschungsaufträge, keine Voraussetzung normaler Arbeit oder Garantie guter Ergebnisse. Für künftige Auswahl-/UI-Aufträge bietet `tools/ux/workflow.py` im Repository einen Adapter zum vorhandenen Task-/Handoff-Vertrag; `tools/ux/WORKFLOW.md` nur beim Planen dieses konkreten Ablaufs laden. Er startet keine Agenten und gibt kein Ziel pauschal frei.

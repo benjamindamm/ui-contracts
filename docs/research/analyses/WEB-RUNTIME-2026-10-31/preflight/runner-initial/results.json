@@ -1,0 +1,76 @@
+{
+  "overall": "FAIL",
+  "release": false,
+  "scope": "unit-native-DMN-and-current-browser",
+  "suites": [
+    {
+      "suite": "tools/libraries/test_*.py",
+      "status": "PASS",
+      "log": "01.log",
+      "seconds": 1.67
+    },
+    {
+      "suite": "tools/ux/test_*.py",
+      "status": "PASS",
+      "log": "02.log",
+      "seconds": 52.62
+    },
+    {
+      "suite": "tools/fonts/test_*.py",
+      "status": "PASS",
+      "log": "03.log",
+      "seconds": 1.07
+    },
+    {
+      "suite": "tools/design-review/test_*.py",
+      "status": "PASS",
+      "log": "04.log",
+      "seconds": 0.84
+    },
+    {
+      "suite": "tools/skill-tests/ui-contracts/test_handoffs.py",
+      "status": "FAIL",
+      "log": "05.log",
+      "seconds": 0.29
+    },
+    {
+      "suite": "tools/test_setup.py",
+      "status": "PASS",
+      "log": "06.log",
+      "seconds": 0.08
+    },
+    {
+      "suite": "tools/web/test_web.py",
+      "status": "FAIL",
+      "log": "07.log",
+      "seconds": 0.43
+    },
+    {
+      "suite": "tools/charts/test_pie.mjs",
+      "status": "PASS",
+      "log": "08.log",
+      "seconds": 0.62
+    },
+    {
+      "suite": "tools/openpencil/test_layout.mjs",
+      "status": "PASS",
+      "log": "09.log",
+      "seconds": 3.28
+    },
+    {
+      "suite": "tools/openpencil/test_themes.mjs",
+      "status": "PASS",
+      "log": "10.log",
+      "seconds": 1.93
+    },
+    {
+      "suite": "browser",
+      "status": "BLOCKED"
+    }
+  ],
+  "notChecked": [
+    "Production release",
+    "Real screenreader output",
+    "Other operating systems/browsers"
+  ]
+}

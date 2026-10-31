@@ -1,6 +1,6 @@
 # Reale Prüfungen und begrenzte Abdeckung
 
-Alle folgenden Projektpfade beziehen sich auf das ausgewählte Repository. Zuerst `docs/validation/README.md`, `tools/validation/inventory.json` und bei Ausführung `tools/validation/README.md` lesen. Diese Dateien führen tatsächliche Abdeckung, Abhängigkeiten und Aufrufe; der Skill dupliziert keine Erfolgskriterien.
+Alle Projektpfade beziehen sich auf das ausgewählte Repository. Nur den benötigten Prüfweg nachladen: Originalartefakte/Bibliotheksreferenzen über `tools/libraries/check.py` und den Helper; UX-/Policy über `tools/ux/README.md`; aktuelle unterstützte Webprofile über `tools/web/README.md`; native Designs über `tools/design-review/README.md`. Nur für das historische IP01-Referenzpaket zusätzlich `docs/validation/README.md`, `tools/validation/inventory.json` und `tools/validation/README.md` laden. Der Skill dupliziert keine Erfolgskriterien.
 
 Für native statische Designausgaben ist diese Originalformat-/Webkette keine vollständige Abnahme. Der zusätzliche, exakt gebundene Gegenprüfer unter `tools/design-review/` prüft nur seinen dokumentierten `covered`-Umfang. Lies dessen README vor Ausführung. Keine historische Reviewerdatei im Originalpfad erneut ausführen, wenn sie Belege überschreibt; temporäre Kopie verwenden. Automatische Assertions, manuelle Einordnung und `notChecked` trennen. Eine Stichprobe oder ein konstanter Wahrheitswert darf nicht als Prüfung aller Elemente erscheinen; neue Prüflogik an gültigen und fehlerhaften Gegenfällen prüfen.
 
@@ -14,7 +14,7 @@ python3 "$SKILL/scripts/contracts.py" validate --repo "$REPO" --scope static --o
 python3 "$SKILL/scripts/contracts.py" validate --repo "$REPO" --browser-run /tmp/current-ui-run --output /tmp/contract-web.json
 ```
 
-`inspect` nutzt die Projektlaufzeit und Originalschemas aus dem vorhandenen Werkzeugbestand. Es prüft striktes JSON, CEM 2.1.0 beziehungsweise SCXML 1.0, CSS-Syntax und HTML-Parsebarkeit soweit passend. Andere JSON-Dokumente bleiben Syntaxprüfungen. HTML-Parsebarkeit bedeutet keine HTML-/ARIA-Konformität. Kein generischer Behavior-/Kompositions-/Ownershipprüfer für neue Komponenten wird behauptet. Daher endet eine sonst gültige neue Komponente weiterhin mit `BLOCKED`/`SEMANTIC_PROFILE_UNSUPPORTED` und separat bestandenen Teilprüfungen.
+`inspect` nutzt die Projektlaufzeit und Originalschemas aus dem vorhandenen Werkzeugbestand. Es prüft striktes JSON, CEM 2.1.0 beziehungsweise SCXML 1.0, CSS-Syntax und HTML-Parsebarkeit soweit passend. Für component.json/library.json ergänzen eigene Mindestschemas die begrenzte Referenz-/Identitäts-/Aliasprüfung. Andere JSON-Dokumente bleiben Syntaxprüfungen. HTML-Parsebarkeit bedeutet keine HTML-/ARIA-Konformität. Fehlende Quellziele, falsche Zielarten, doppelte Identitäten und Kompositionszyklen werden zusätzlich konkret geprüft. Guards, beliebige Typsemantik, CSS-Tokenabbildung und vollständige Ownership bleiben außerhalb dieser Teilprüfung. Daher endet eine sonst gültige neue Komponente weiterhin mit `BLOCKED`/`SEMANTIC_PROFILE_UNSUPPORTED` und separat bestandenen Teilprüfungen.
 
 `validate` ruft unverändert `tools/validation/check.py` mit dem gewählten Paket/Umfang auf und übernimmt dessen Ergebnis. Die unterstützte Referenz liegt unter `docs/research/experiments/2026-10-25/ip01-static/reference/`; `--candidate` bedeutet hier eine Kopie dieses vollständigen Pakets. Eine Bibliothek unter `libraries/<id>/` ist ein anderes Autorenartefakt und darf nicht allein durch passende Ordnernamen zu diesem Profil erklärt werden.
 
@@ -47,3 +47,15 @@ Die Prüfkette akzeptiert nur den explizit übergebenen, frischen, vollständige
 Der zusätzliche Browserhost ist keine allgemeine Generierung aus jeder Definition. Eine statisch gültige Änderung braucht eine eigene begründete Host-/Profilabbildung und aktuelle Abnahme; der bestehende Skill stellt diese noch nicht bereit. Das ist ein blockierender Umfangsbefund, keine Aufforderung, die feste Profilbindung für die Reparatur zu lockern.
 
 Für Originalartefakte einer ausdrücklich ausgewählten Bibliothek: `inspect --library ID` ohne `--candidate`. Kein Default auf example. `validate --library` ist absichtlich nicht unterstützt; die Referenzpaketprüfung ist keine allgemeine Bibliotheksabnahme.
+
+Für UX-Eignung bzw. Auswahl: [UX-Referenz](ux.md) gezielt laden. Die neuen Tools unter tools/libraries/check.py und tools/ux/ arbeiten mit der ausdrücklich gewählten Bibliothek; sie ersetzen weder das historische Referenzprofil noch die Zielabnahme. Fehler bleiben FAIL, auch wenn eine spätere Zusatzprüfung nicht unterstützt ist.
+
+## Aktuelle Bibliotheksprofile
+
+Für die vier aktuell unterstützten Profile gibt es zusätzlich den gezielt ladbaren Repository-Einstieg `tools/web/README.md`: `tools/web/prepare.py --library ID --out NEUER_ORDNER`, `serve.py`, fünf BrowserOS-Skripte und `tools/test.py --browser-run LAUF --out NEUER_ORDNER`. Er erzeugt eigene aktuelle Quellenbindungen und prüft reale Events, Fokus und Scrollgeometrie. Er erweitert **nicht** das historische IP01-Referenzprofil oder `validate --library`; beliebige neue Komponenten bleiben außerhalb seiner Abdeckung. Neue native Profile und Browseradapter benötigen eigene konkrete Gegenfälle.
+
+## Korrigieren und berichten
+
+Syntax-/Schema-/Bindungsfehler bleiben Fehler. Kandidatendaten dürfen repariert werden; danach betroffene Prüfungen erneut ausführen. Originalschemas, Assertions, Kriterien sowie Quell-/Zeitbindungen nicht passend lockern. Ein tatsächlich fehlerhafter Prüfer braucht einen eigenen belegten Gegenfall und eine nachvollziehbare neue Prüferrevision.
+
+Ergebnis mit Artefaktpfaden/Revision, tatsächlich ausgeführten Prüfungen und Belegdateien, bestandenem Umfang, Fehlern/Blockern, Warnungen und ungeprüften Teilen liefern. Helperberichte inhaltlich prüfen, nicht nur den Exitcode. Bei contracts.py: 0 für den ausdrücklich begrenzt bestandenen Umfang, 1 für Fehler, 2 für Blockierung. Ein blockierter Entwurf darf als Entwurf übergeben werden, nicht als freigegebene Komponente. Im historischen IP01-Webprofil bleibt `releaseScope:exact-pinned-bounded-web-reference-only` und `productionRelease:false`; diese Bindung nicht auf beliebige neue Ziele übertragen.

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "libraries",
+    "exitCode": 0,
+    "elapsedSeconds": 1.09
+  },
+  {
+    "id": "fonts",
+    "exitCode": 0,
+    "elapsedSeconds": 3.09
+  },
+  {
+    "id": "handoffs",
+    "exitCode": 0,
+    "elapsedSeconds": 0.34
+  },
+  {
+    "id": "design-review",
+    "exitCode": 0,
+    "elapsedSeconds": 0.99
+  },
+  {
+    "id": "process",
+    "exitCode": 0,
+    "elapsedSeconds": 0.06
+  },
+  {
+    "id": "charts",
+    "exitCode": 0,
+    "elapsedSeconds": 0.81
+  },
+  {
+    "id": "presentation",
+    "exitCode": 0,
+    "elapsedSeconds": 3.66
+  }
+]

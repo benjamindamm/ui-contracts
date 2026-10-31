@@ -1,0 +1,51 @@
+{
+  "SKILL.md": {
+    "beforeCharacters": 7246,
+    "afterCharacters": 2928,
+    "beforeSha256": "94788af438349357f79c5aaa517e9b24ec8240fc6e9ada81a6ca8c9ad9f7a889",
+    "afterSha256": "3f026b67262ca523522f88c8f67336e3296e6a7f150895c1daf885b6723d0d34"
+  },
+  "references/authoring.md": {
+    "beforeCharacters": 4489,
+    "afterCharacters": 5186,
+    "beforeSha256": "9a8402e4e36490a3daed143aec69c899fd9503a4e32003cefac368e6a2203acb",
+    "afterSha256": "ed7ed2d947a6323ceb79860d3bacbc5104a06a53d96c8938a7bdc82167a05855"
+  },
+  "references/validation.md": {
+    "beforeCharacters": 6770,
+    "afterCharacters": 7983,
+    "beforeSha256": "1a2a24e7102636565977fb3cf5543df48b0d972f2f47b7822e9868ed0c7ba02c",
+    "afterSha256": "d6cd126feb35ce0a0f67ede12116478d0d1d1eee16f386b13c4e4171dddf9886"
+  },
+  "references/workflow.md": {
+    "beforeCharacters": 6235,
+    "afterCharacters": 7060,
+    "beforeSha256": "f6645a04922e649551512d07d4eb75932b8c3a3a84c0400263abb7cf5d9434e9",
+    "afterSha256": "37e27c812afbcae117b0512be0ef898bf53c725db4a58540dfeea03bbaa3b5d9"
+  },
+  "references/roles/reviewer.md": {
+    "beforeCharacters": 1736,
+    "afterCharacters": 2023,
+    "beforeSha256": "50aee08af447ae9648afbb026fd0fb54d6d33e5c6b8d9806692c78ff33da8bc7",
+    "afterSha256": "19ac4faa7300b8c888e997bde95e881576cf4470d19e1f9f912794ee136e3d29"
+  },
+  "first-probe": {
+    "expandedContextCharacters": 7152,
+    "inlineSourceBodies": false,
+    "sourceReferenceCount": 14
+  },
+  "final-probe": {
+    "expandedContextCharacters": 4104,
+    "inlineSourceBodies": false,
+    "sourceReferenceCount": 4
+  },
+  "selection-bootstrap.json": {
+    "fileCharacters": 890,
+    "sha256": "7ed53b2819e0a72c43a3d27ee2f6ec8aaedea90c815831b8f1a5718ecc4a5f7d"
+  },
+  "build-bootstrap.json": {
+    "fileCharacters": 884,
+    "sha256": "d0639e62dcd116c7f0ef0e802c604eb3a5baa77f13799f10cbcd6ad720a86d48"
+  },
+  "scope": "Local Unicode characters and file/hash routing. No model token or provider request measurement."
+}

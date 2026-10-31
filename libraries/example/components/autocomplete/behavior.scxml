@@ -5,7 +5,7 @@
 <transition event="COMPOSITION_START"><assign location="composing" expr="true"/></transition>
 <transition event="COMPOSITION_END"><assign location="composing" expr="false"/><raise event="INPUT_FINAL"/></transition>
 <transition event="INPUT" cond="composing"><assign location="query" expr="_event.data.query"/></transition>
-<transition event="SET_VALUE" cond="results.some(function(x){return x.key===_event.data.value;})"><assign location="value" expr="_event.data.value"/><assign location="query" expr="results.filter(function(x){return x.key===value;})[0].label"/></transition>
+<transition event="SET_VALUE" cond="_event.data &amp;&amp; typeof _event.data.value==='string' &amp;&amp; results.some(function(x){return x.key===_event.data.value &amp;&amp; !x.disabled;})"><assign location="value" expr="_event.data.value"/><assign location="query" expr="results.filter(function(x){return x.key===value;})[0].label"/></transition>
 <state id="closed"><onentry><assign location="activeKey" expr="undefined"/><assign location="visible" expr="false"/></onentry>
  <transition event="NAV" cond="enabled &amp;&amp; !composing &amp;&amp; _event.data.direction===1" target="active"><assign location="epoch" expr="epoch+1"/><assign location="intent" expr="1"/></transition>
  <transition event="INPUT INPUT_FINAL" cond="enabled &amp;&amp; !composing" target="active"><assign location="query" expr="_event.data ? _event.data.query : query"/><assign location="epoch" expr="epoch+1"/><assign location="intent" expr="0"/></transition>

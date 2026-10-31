@@ -34,7 +34,8 @@ def describe(repo, name):
     return {'id': name, 'root': str(root.relative_to(repo.resolve())),
             'index': str((root/'library.json').relative_to(repo.resolve())),
             'name': data.get('name'), 'components': list(data['components']),
-            'purpose': 'example/reference' if name == 'example' else 'user-library'}
+            'purpose': 'example/reference' if name == 'example' else 'user-library',
+            'selection': data.get('selection')}
 
 
 def create(repo, name, title=None):

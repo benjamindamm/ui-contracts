@@ -1,4 +1,4 @@
-# Autocomplete · 0.1.0
+# Autocomplete · 0.2.0
 
 Ein editierbares Suchfeld mit manueller Listenauswahl. **Dies ist der führende Bibliothekseintrag**, kein Auftrag zu einer unabhängig gestalteten Komponente. Der erste Export ist ein editierbares OpenPencil-Design; eine interaktive Canvas-Preview wird nicht gefordert.
 
@@ -32,3 +32,7 @@ Die zehn Fälle heißen closed, opening, loading, ready, active, scroll-end, sel
 Das OpenPencil-Dokument soll eine übersichtliche Seite mit den zehn benannten Fällen enthalten. Die Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei; **die Komponente selbst** folgt den Quellen. Jeder Fall muss als Komponenten-/Framelayergruppe benannt sein. Input, Overlayfläche, Scrollviewport, Listbox, einzelne Optionen und Status sollen separat editierbar und verständlich benannt bleiben. Farbe, Typografie, Maße und Meldungen dürfen nicht still neu erfunden werden.
 
 Fehlt eine notwendige Angabe, dokumentiert der Exporteur sie als Lücke. Er darf diese Definitionsdateien nicht passend zu seinem Ergebnis ändern. Die erzeugte Datei muss sich tatsächlich als OpenPencil-Dokument öffnen lassen. Ein Bild, eine umbenannte JSON-Datei oder ein allein im Speicher existierender Graph genügt nicht.
+
+## UX-Eignung
+
+Diese Variante bestätigt ausschließlich vorhandene Ergebniskeys; sie ist keine freie Adress-Schreibhilfe. Für feste Werte mit Suchbedarf bevorzugt die aktive Beispielpolicy [Select mit Suche](../select-with-search/README.md). [Begründung und Fachbeispiele](../../../../docs/ux/AUTOCOMPLETE.md). Die Deklarationen in ux.json werden nicht allein durch ihren Quellenhash als Fähigkeit bewiesen.

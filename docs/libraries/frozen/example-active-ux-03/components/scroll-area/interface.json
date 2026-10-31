@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "scroll-area.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "ScrollArea",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "owner",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "epoch",
+              "type": {
+                "text": "number"
+              }
+            }
+          ],
+          "events": [],
+          "cssParts": [
+            {
+              "name": "viewport"
+            },
+            {
+              "name": "content"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

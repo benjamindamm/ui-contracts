@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "2.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "input.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "Input",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "placeholder",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "inputType",
+              "type": {
+                "text": "'text' | 'email' | 'tel'"
+              },
+              "default": "\"text\""
+            },
+            {
+              "kind": "field",
+              "name": "autocompleteHint",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"off\""
+            },
+            {
+              "kind": "field",
+              "name": "enabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "readOnly",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            }
+          ],
+          "events": [
+            {
+              "name": "value-change",
+              "type": {
+                "text": "CustomEvent<{value:string}>"
+              }
+            }
+          ],
+          "cssParts": [
+            {
+              "name": "label"
+            },
+            {
+              "name": "control"
+            },
+            {
+              "name": "hint"
+            },
+            {
+              "name": "error"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

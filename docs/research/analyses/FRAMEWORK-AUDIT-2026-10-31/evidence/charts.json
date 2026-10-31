@@ -1,0 +1,12 @@
+{
+  "id": "charts",
+  "command": [
+    "node",
+    "--test",
+    "tools/charts/test_pie.mjs"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 0.81,
+  "stdout": "✔ Screenshot values normalize to exactly one angular turn (2.599708ms)\n✔ Adjacent slices share boundaries without overlap or missing angles (0.195709ms)\n✔ Area fractions match numeric input fractions (0.130625ms)\n✔ Input order is preserved even when values ascend (0.153334ms)\n✔ Zero values do not create degenerate visible slices (0.114959ms)\n✔ A single positive value produces a closed full-circle path (0.10175ms)\n✔ Donut geometry has inner and outer arcs (0.153084ms)\n✔ Empty or all-zero datasets block (0.169125ms)\n✔ Negative, NaN, infinite and string values block (0.177916ms)\n✔ Invalid and self-intersecting radius choices block (1.02ms)\n✔ Duplicate ids and invalid colors block (0.153375ms)\n✔ SVG helper returns paths only, without axes or automatic chart UI (0.189625ms)\n✔ Delivered files match the proof receipt (10.231041ms)\n✔ Native FIG retains three separate sector vectors and all legend labels (23.992459ms)\n✔ The rejected whole-circle construction has no native sector center vertex (6.356667ms)\nℹ tests 15\nℹ suites 0\nℹ pass 15\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 764.80675\n",
+  "stderr": ""
+}

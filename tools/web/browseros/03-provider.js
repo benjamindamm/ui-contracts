@@ -1,0 +1,11 @@
+const p=browser.page((await browser.pages.list()).find(x=>x.url==='http://127.0.0.1:8770/').pageId);
+let s=await p.snapshot({mode:'interactive'});await p.fill(s.refs.find(x=>x.name==='Suche A'&&x.role==='combobox').ref,'old');
+await p.waitForSelector('[data-owner=A][data-phase=loading]');
+await p.evaluate(()=>{window.oldRequest=research.requests.at(-1).id;});
+s=await p.snapshot({mode:'interactive'});await p.fill(s.refs.find(x=>x.name==='Suche A'&&x.role==='combobox').ref,'new');
+await p.evaluate(async()=>{research.deliver(research.requests.at(-1).id,[{key:'fresh',label:'Neu'}]);research.deliver(window.oldRequest,[{key:'stale',label:'Alt'}]);await research.capture('ac-stale',{});});
+s=await p.snapshot({mode:'interactive'});await p.fill(s.refs.find(x=>x.name==='Suche A'&&x.role==='combobox').ref,'empty');
+await p.evaluate(async()=>{research.deliver(research.requests.at(-1).id,[]);await research.capture('ac-empty',{});});
+s=await p.snapshot({mode:'interactive'});await p.fill(s.refs.find(x=>x.name==='Suche A'&&x.role==='combobox').ref,'invalid');
+await p.evaluate(async()=>{research.deliver(research.requests.at(-1).id,[{key:'x',label:'X'},{key:'x',label:'Duplicate'}]);await research.capture('ac-invalid',{});research.roots.A.gen({name:'SET_ENABLED',data:{enabled:false}});await research.capture('ac-disabled',{disabled:document.querySelector('#A-input').disabled});});
+return (await p.snapshot({mode:'interactive'})).text;

@@ -1,0 +1,101 @@
+{
+  "format": "ui-contract-stories-draft",
+  "stories": [
+    {
+      "id": "empty",
+      "inputs": {
+        "label": "Ländervorwahl",
+        "enabled": true,
+        "options": []
+      }
+    },
+    {
+      "id": "ready",
+      "inputs": {
+        "label": "Ländervorwahl",
+        "enabled": true,
+        "options": [
+          {
+            "key": "CH",
+            "label": "Schweiz (+41)"
+          },
+          {
+            "key": "DE",
+            "label": "Deutschland (+49)"
+          },
+          {
+            "key": "FR",
+            "label": "Frankreich (+33)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "selected",
+      "inputs": {
+        "label": "Ländervorwahl",
+        "enabled": true,
+        "options": [
+          {
+            "key": "CH",
+            "label": "Schweiz (+41)"
+          },
+          {
+            "key": "DE",
+            "label": "Deutschland (+49)"
+          },
+          {
+            "key": "FR",
+            "label": "Frankreich (+33)"
+          }
+        ],
+        "value": "CH"
+      }
+    },
+    {
+      "id": "disabled",
+      "inputs": {
+        "label": "Ländervorwahl",
+        "enabled": false,
+        "options": [
+          {
+            "key": "CH",
+            "label": "Schweiz (+41)"
+          },
+          {
+            "key": "DE",
+            "label": "Deutschland (+49)"
+          },
+          {
+            "key": "FR",
+            "label": "Frankreich (+33)"
+          }
+        ],
+        "value": "CH"
+      }
+    },
+    {
+      "id": "invalid",
+      "inputs": {
+        "label": "Ländervorwahl",
+        "enabled": true,
+        "required": true,
+        "options": [
+          {
+            "key": "CH",
+            "label": "Schweiz (+41)"
+          },
+          {
+            "key": "DE",
+            "label": "Deutschland (+49)"
+          },
+          {
+            "key": "FR",
+            "label": "Frankreich (+33)"
+          }
+        ]
+      },
+      "hostError": "Bitte ein Land auswählen."
+    }
+  ]
+}

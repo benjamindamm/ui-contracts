@@ -1,5 +1,5 @@
 {
-  "format": "ui-contracts-ux-capabilities/0.1",
+  "format": "ui-contracts-ux-capabilities/0.3",
   "componentId": "ui-contracts:Select",
   "capabilities": {
     "role": "choice",
@@ -8,12 +8,15 @@
     "searchMode": "none",
     "selectionCardinality": "one",
     "preservesSuppliedOrder": true,
-    "completionMode": "none"
+    "completionMode": "none",
+    "interactionIntent": "fixed-choice",
+    "querySurface": "none",
+    "unknownInputPolicy": "reject-commit"
   },
   "sources": [
     {
       "path": "component.json",
-      "sha256": "34a4cd988008cedbfe1900959e98a2013b8a2cbf1e0b90e12c247198d919b330"
+      "sha256": "5ef05663628c74c7276befe465c8f823bb4656c5d1487be672d45b00adfc2b63"
     },
     {
       "path": "interface.json",
@@ -26,11 +29,18 @@
     {
       "path": "accessibility.html",
       "sha256": "8fac6f8b94646b667f9c95c06de393cd39386e99d878a0585bb682a3e1f7c62f"
+    },
+    {
+      "path": "accessibility.rules.json",
+      "sha256": "d073887defcc6fe104b9bfc242d25654b314df3c63ccb1c540e3748be04c7734"
     }
   ],
   "notes": [
     "Simple native single-select; no dedicated search field or filtering contract.",
     "Browser type-ahead may exist but is not treated as a filtering guarantee.",
-    "Searchable Select is a possible new variant, not an already defined component in this library."
-  ]
+    "SelectWithSearch is defined in this active library for fixed-key selection with separate filtering."
+  ],
+  "verification": {
+    "profile": "single-select/1"
+  }
 }

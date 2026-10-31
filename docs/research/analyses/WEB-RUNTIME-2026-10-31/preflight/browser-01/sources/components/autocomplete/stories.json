@@ -1,0 +1,239 @@
+{
+  "format": "ui-contract-stories-draft",
+  "purpose": "Usage fixtures and named design states; rules remain in the four domains.",
+  "stories": [
+    {
+      "id": "closed",
+      "phase": "closed",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": ""
+      },
+      "results": []
+    },
+    {
+      "id": "opening",
+      "phase": "opening",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": ""
+      },
+      "results": []
+    },
+    {
+      "id": "loading",
+      "phase": "loading",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": "Be"
+      },
+      "results": []
+    },
+    {
+      "id": "ready",
+      "phase": "ready",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": ""
+      },
+      "results": [
+        {
+          "key": "berlin",
+          "label": "Berlin"
+        },
+        {
+          "key": "hamburg",
+          "label": "Hamburg"
+        },
+        {
+          "key": "muenchen",
+          "label": "München",
+          "disabled": true
+        },
+        {
+          "key": "dresden",
+          "label": "Dresden"
+        },
+        {
+          "key": "koeln",
+          "label": "Köln"
+        },
+        {
+          "key": "wien",
+          "label": "Wien"
+        },
+        {
+          "key": "zuerich",
+          "label": "Zürich"
+        }
+      ]
+    },
+    {
+      "id": "active",
+      "phase": "ready",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": ""
+      },
+      "results": [
+        {
+          "key": "berlin",
+          "label": "Berlin"
+        },
+        {
+          "key": "hamburg",
+          "label": "Hamburg"
+        },
+        {
+          "key": "muenchen",
+          "label": "München",
+          "disabled": true
+        },
+        {
+          "key": "dresden",
+          "label": "Dresden"
+        },
+        {
+          "key": "koeln",
+          "label": "Köln"
+        },
+        {
+          "key": "wien",
+          "label": "Wien"
+        },
+        {
+          "key": "zuerich",
+          "label": "Zürich"
+        }
+      ],
+      "activeKey": "hamburg"
+    },
+    {
+      "id": "scroll-end",
+      "phase": "ready",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": ""
+      },
+      "results": [
+        {
+          "key": "berlin",
+          "label": "Berlin"
+        },
+        {
+          "key": "hamburg",
+          "label": "Hamburg"
+        },
+        {
+          "key": "muenchen",
+          "label": "München",
+          "disabled": true
+        },
+        {
+          "key": "dresden",
+          "label": "Dresden"
+        },
+        {
+          "key": "koeln",
+          "label": "Köln"
+        },
+        {
+          "key": "wien",
+          "label": "Wien"
+        },
+        {
+          "key": "zuerich",
+          "label": "Zürich"
+        }
+      ],
+      "activeKey": "zuerich"
+    },
+    {
+      "id": "selected",
+      "phase": "closed",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": "Berlin"
+      },
+      "results": [
+        {
+          "key": "berlin",
+          "label": "Berlin"
+        },
+        {
+          "key": "hamburg",
+          "label": "Hamburg"
+        },
+        {
+          "key": "muenchen",
+          "label": "München",
+          "disabled": true
+        },
+        {
+          "key": "dresden",
+          "label": "Dresden"
+        },
+        {
+          "key": "koeln",
+          "label": "Köln"
+        },
+        {
+          "key": "wien",
+          "label": "Wien"
+        },
+        {
+          "key": "zuerich",
+          "label": "Zürich"
+        }
+      ],
+      "value": "berlin"
+    },
+    {
+      "id": "empty",
+      "phase": "empty",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": "Atlantis"
+      },
+      "results": []
+    },
+    {
+      "id": "error",
+      "phase": "error",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": true,
+        "query": "Be"
+      },
+      "results": []
+    },
+    {
+      "id": "disabled",
+      "phase": "closed",
+      "inputs": {
+        "label": "Stadt auswählen",
+        "placeholder": "Stadt suchen …",
+        "enabled": false,
+        "query": ""
+      },
+      "results": []
+    }
+  ]
+}

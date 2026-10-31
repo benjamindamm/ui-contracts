@@ -140,3 +140,34 @@ Für neue Varianten: Fremdtext, Filterquery, aktiver Vorschlag und bestätigter 
 
 - **SEL2-B01:** Schließen-Button verliert Klick/Fokus durch zu frühen focusout-Microtask während eines internen Fokuswechsels. Führender [Event-/Prüfbeleg](../research/studies/UX-RULES-01/studies/SELECTION-02/review/REVIEW.md); Soll: Schließen und Triggerfokus, Ist: BODY. Separate b-repair-01 prüft relatedTarget auf Popupzugehörigkeit. Zehn tatsächlich ausgeführte Browserregressionen erfüllt, Erstlieferung bleibt unverändert. Wiedererkennung: Fokusübertragung innerhalb eines Popups darf nicht allein anhand eines vorübergehenden document.activeElement entschieden werden. Keine allgemeine AT-Freigabe.
 - **SEL2-D01:** Kopierte Komponentennotiz sagt „Suchvariante fehlt“, obwohl die neue Revision sie führt. Neue Definitionen brauchen einen Abgleich der Existenz-/Abhängigkeitsaussagen aller relevanten UX-Profile. [Externe Errata](../research/studies/UX-RULES-01/studies/SELECTION-02/ERRATA.md) korrigiert die Einordnung; die eingefrorenen Bytes bleiben erhalten. **Noch offen für die nächste aktive Definitionsrevision:** veraltete Fehlstellenhinweise entfernen, Quellenbindungen neu berechnen. Kein stilles Reparieren historischer Eingaben.
+
+## Framework-Audit · 31. Oktober 2026 · offene Gegenbefunde
+
+[Gesamtbericht und priorisierte Abnahmekriterien](../research/analyses/FRAMEWORK-AUDIT-2026-10-31/README.md). Historische Studien und Produktcode bleiben im Audit unverändert.
+
+- **FW-001 · offen:** Falsche Suchfähigkeitsangabe für Select wird nach ehrlicher neuer Hashbindung als zulässig ausgewertet und verändert die tatsächliche DMN-Empfehlung. Hashintegrität beweist keine Fähigkeit. Isolierter temporärer Gegenfall unter evidence/capability-counterexample.json; notwendige Gegenmaßnahme: quellen-/laufzeitgebundene Fähigkeiten und klarer Nachweisstatus. Kein Freigabebypass, beide Antworten release:false.
+- **FW-013 · offen:** Ungültiges CEM erzeugt Artefakt-FAIL; danach setzt die Fontroot-Grenze das Gesamtergebnis auf BLOCKED. Erhaltener temporärer Gegenfall unter evidence/error-precedence.json; notwendige Gegenmaßnahme: FAIL vor ergänzender Blockierung erhalten. Noch keine Reparatur ausgeführt.
+- Weitere belegte Integrations-/Abdeckungsgrenzen FW-002 bis FW-012 sind im maschinenlesbaren findings.json geführt; dokumentierte Einschränkungen werden nicht pauschal als Implementierungsfehler ausgegeben.
+
+## Fortschreibung · Paket 1/2 · 31. Oktober 2026
+
+[Umsetzung und konkrete Regressionen](../research/analyses/ACTIVE-UX-2026-10-31/README.md) · [Befundstatus](../research/analyses/ACTIVE-UX-2026-10-31/resolution-status.json).
+
+- **FW-001:** im unterstützten Quellen-/SCXML-Profil begrenzt mitigiert. Tatsächliche Gegenfälle erkennen falsche Suchbehauptung, bloß umbenanntes Profil, falsche Ereignissignatur, entfernten Membership-Guard und stilles Sortieren bei ehrlich erneuerten Quellenhashes. Kein universeller Beweis beliebigen Codes.
+- **FW-002 / SEL2-D01:** aktive example-Revision enthält SelectWithSearch und korrigierte Existenz-/UX-Aussagen; eingefrorene Studienkopie und ursprüngliche Errata bleiben erhalten.
+- **FW-003:** begrenzter allgemeiner Mindestprüfer umgesetzt; freie Typ-/Ownership-/CSS-Tokensemantik und Targetabnahme bleiben offen.
+- **FW-013:** repariert. Der erhaltene Fall hat Gesamt-FAIL und seine ursprüngliche Schemahauptdiagnose; Fontroot-Blockierung steht zusätzlich im Bericht.
+- **UX-I01:** Namenskollision eines neuen select.py mit dem Python-Standardmodul im ersten Implementierungsversuch; vor Veröffentlichung in choose.py korrigiert und durch tatsächliche CLI-Regressionsausführung abgesichert.
+- **UX-I02:** neue Quellenprüfung deckt einen unvollständigen kopierten Komponentenindex in einer Font-only-Testfixture auf. Die aktuelle Fixture benennt nur tatsächlich vorhandene Inhalte; zusätzlicher Negativfall erhält den fehlerhaften Index. Keine Kriterienabschwächung.
+
+Prüfprofilangaben sind Pläne, keine selbst attestierten Pass-Werte. Alte Receipts sind keine Eingabe für eine neue Entscheidung; der neue Checker führt die aktuellen Contractfälle erneut aus.
+
+## Paket 3 · Laufzeit und Browser
+
+[WR-001 bis WR-006 mit Fehlerursachen, Reparaturen und Originalbelegen](../research/analyses/WEB-RUNTIME-2026-10-31/README.md#neue-fehler-und-reparaturen): deaktivierter programmatischer Autocomplete-Wert, reentrante Reveal-Antwort, versehentlich zweiter Scrollcontainer, Fokuswechsel während Suchlistenrendering falscher Suite-Einstieg im Sammelrunner und mögliche stille Ersatzdateien bei umgeleiteten Domainpfaden. Für erneute ähnliche Fehler zuerst Quellenstand, native Ereignisphase und tatsächlichen DOM-Scrollowner prüfen; historische Artefakte bewahren. Die aktiven begrenzten Gegenfälle stehen unter tools/ux/test_ux.py und tools/web/test_web.py.
+
+## Paket 4 · Kontext und gemeinsamer Abschluss
+
+[IA-001 bis IA-004, WF-001/002](../research/analyses/AGENT-WORKFLOW-2026-10-31/README.md): zu umfangreicher Skillkern, pauschale historische Validierungslektüre, vermischte aktuelle/historische Navigation, überschreibender Altgenerator und unvereinheitlichte Auswahl-/Reviewübergaben. Essenz und Details sind getrennt; Quellenbindungen und Abdeckungsgruppen werden technisch geprüft. Tests erkennen aufgeblähten Einstieg, kaputte Routen, Eager-Import, unzulässige Fortschritte und fehlenden Gesamtbezug. Der Ablauf garantiert keine Modellleistung.
+
+**IA-005 · behoben mit dokumentierter Beleggrenze:** Beim Erstellen der neuen Archivübersicht kollidierte deren README mit der zuvor kopierten Root-README. Die Übersicht heißt nun INDEX.md; die alte Root-Fassung wurde aus der erhaltenen Arbeitskopie und dem dokumentierten letzten Zusatz wiederhergestellt. [Herkunft](../research/analyses/AGENT-WORKFLOW-2026-10-31/before/README-provenance.json) benennt ausdrücklich, dass kein unabhängiger Originalhash vorliegt. Historische Studien wurden nicht verändert. Künftige Archivübersichten erhalten einen eigenen Namen.

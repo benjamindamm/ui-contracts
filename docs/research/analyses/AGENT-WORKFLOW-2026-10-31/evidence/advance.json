@@ -1,0 +1,7 @@
+{
+  "overall": "TASK_READY",
+  "release": false,
+  "workflow": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/workflow-v2.json",
+  "activeStep": "build",
+  "targetApproval": "not-inferred"
+}

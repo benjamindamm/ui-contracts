@@ -1,0 +1,2791 @@
+{
+  "challenge": "f77436a0aa2f66d554e5ceb38ac484c3dd54281008344663",
+  "name": "ac-disabled",
+  "payload": {
+    "disabled": true
+  },
+  "snapshot": {
+    "focus": "A-input",
+    "events": {
+      "A": [
+        {
+          "name": "value-change",
+          "detail": {
+            "value": "A-12"
+          },
+          "bubbles": true,
+          "isTrusted": false,
+          "focus": "A-input"
+        }
+      ],
+      "B": []
+    },
+    "requests": [
+      {
+        "owner": "A",
+        "epoch": 1,
+        "seq": 1,
+        "query": "Stadt",
+        "id": "A:1:1"
+      },
+      {
+        "owner": "B",
+        "epoch": 1,
+        "seq": 1,
+        "query": "B",
+        "id": "B:1:1"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 2,
+        "query": "old",
+        "id": "A:2:2"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 3,
+        "query": "new",
+        "id": "A:2:3"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 4,
+        "query": "empty",
+        "id": "A:2:4"
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "seq": 5,
+        "query": "invalid",
+        "id": "A:2:5"
+      }
+    ],
+    "diagnostics": [
+      {
+        "rule": "provider.type",
+        "owner": "A",
+        "id": "A:2:5"
+      }
+    ],
+    "errors": [],
+    "actors": [
+      {
+        "owner": "A",
+        "epoch": 1,
+        "level": "overlay",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": true,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "scrollId": "active.invokeid_0"
+        }
+      },
+      {
+        "owner": "A",
+        "epoch": 1,
+        "level": "scroll-area",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": true,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "A",
+          "epoch": 1
+        }
+      },
+      {
+        "owner": "B",
+        "epoch": 1,
+        "level": "overlay",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": true,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "B",
+          "epoch": 1,
+          "scrollId": "active.invokeid_0"
+        }
+      },
+      {
+        "owner": "B",
+        "epoch": 1,
+        "level": "scroll-area",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": true,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "B",
+          "epoch": 1
+        }
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "level": "overlay",
+        "nativeId": "active.invokeid_1",
+        "relay": false,
+        "final": false,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "scrollId": "active.invokeid_0"
+        }
+      },
+      {
+        "owner": "A",
+        "epoch": 2,
+        "level": "scroll-area",
+        "nativeId": "active.invokeid_0",
+        "relay": false,
+        "final": false,
+        "configuration": [
+          "active"
+        ],
+        "data": {
+          "owner": "A",
+          "epoch": 2
+        }
+      }
+    ],
+    "A": {
+      "phase": "closed",
+      "data": {
+        "enabled": false,
+        "owner": "A",
+        "epoch": 2,
+        "query": "invalid",
+        "value": "A-12",
+        "results": [],
+        "reqSeq": 5,
+        "revealSeq": 11,
+        "overlayId": "active.invokeid_1",
+        "intent": 0,
+        "composing": false,
+        "stale": 1,
+        "foreign": 0,
+        "fault": "Ungültige Ergebnisdaten.",
+        "visible": false
+      },
+      "expanded": "false",
+      "busy": "false",
+      "activeDescendant": null,
+      "controls": null,
+      "inputValue": "invalid",
+      "status": "Suche fehlgeschlagen.",
+      "viewport": null,
+      "options": []
+    },
+    "B": {
+      "phase": "closed",
+      "data": {
+        "enabled": true,
+        "owner": "B",
+        "epoch": 1,
+        "query": "B",
+        "results": [
+          {
+            "key": "B-only",
+            "label": "Nur B"
+          }
+        ],
+        "reqSeq": 1,
+        "revealSeq": 0,
+        "overlayId": "active.invokeid_0",
+        "intent": 0,
+        "composing": false,
+        "stale": 0,
+        "foreign": 0,
+        "fault": "",
+        "visible": false
+      },
+      "expanded": "false",
+      "busy": "false",
+      "activeDescendant": null,
+      "controls": null,
+      "inputValue": "B",
+      "status": "",
+      "viewport": null,
+      "options": []
+    }
+  },
+  "controls": {
+    "events": {
+      "Input": [],
+      "Select": [],
+      "SelectWithSearch": []
+    },
+    "errors": [],
+    "states": {
+      "Input": {
+        "phase": "interactive",
+        "data": {
+          "value": "",
+          "enabled": true,
+          "readOnly": false
+        },
+        "focus": "A-input",
+        "value": "",
+        "readOnly": false,
+        "disabled": false,
+        "options": []
+      },
+      "Select": {
+        "phase": "interactive",
+        "data": {
+          "options": [
+            {
+              "key": "K1",
+              "label": "Land 01"
+            },
+            {
+              "key": "K2",
+              "label": "Land 02",
+              "disabled": true
+            },
+            {
+              "key": "K3",
+              "label": "Land 03"
+            }
+          ],
+          "enabled": true,
+          "required": false
+        },
+        "focus": "A-input",
+        "value": "",
+        "disabled": false,
+        "options": []
+      },
+      "SelectWithSearch": {
+        "phase": "closed",
+        "data": {
+          "options": [
+            {
+              "key": "K1",
+              "label": "Land 01"
+            },
+            {
+              "key": "K2",
+              "label": "Land 02",
+              "disabled": true
+            },
+            {
+              "key": "K3",
+              "label": "Land 03"
+            },
+            {
+              "key": "K4",
+              "label": "Land 04"
+            },
+            {
+              "key": "K5",
+              "label": "Land 05"
+            },
+            {
+              "key": "K6",
+              "label": "Land 06"
+            },
+            {
+              "key": "K7",
+              "label": "Land 07"
+            },
+            {
+              "key": "K8",
+              "label": "Land 08"
+            },
+            {
+              "key": "K9",
+              "label": "Land 09"
+            },
+            {
+              "key": "K10",
+              "label": "Land 10"
+            },
+            {
+              "key": "K11",
+              "label": "Land 11"
+            },
+            {
+              "key": "K12",
+              "label": "Land 12"
+            },
+            {
+              "key": "K13",
+              "label": "Land 13"
+            },
+            {
+              "key": "K14",
+              "label": "Land 14"
+            },
+            {
+              "key": "K15",
+              "label": "Land 15"
+            },
+            {
+              "key": "K16",
+              "label": "Land 16"
+            },
+            {
+              "key": "K17",
+              "label": "Land 17"
+            },
+            {
+              "key": "K18",
+              "label": "Land 18"
+            },
+            {
+              "key": "K19",
+              "label": "Land 19"
+            },
+            {
+              "key": "K20",
+              "label": "Land 20"
+            },
+            {
+              "key": "K21",
+              "label": "Land 21"
+            },
+            {
+              "key": "K22",
+              "label": "Land 22"
+            },
+            {
+              "key": "K23",
+              "label": "Land 23"
+            },
+            {
+              "key": "K24",
+              "label": "Land 24"
+            },
+            {
+              "key": "K25",
+              "label": "Land 25"
+            },
+            {
+              "key": "K26",
+              "label": "Land 26"
+            },
+            {
+              "key": "K27",
+              "label": "Land 27"
+            },
+            {
+              "key": "K28",
+              "label": "Land 28"
+            },
+            {
+              "key": "K29",
+              "label": "Land 29"
+            },
+            {
+              "key": "K30",
+              "label": "Land 30"
+            }
+          ],
+          "query": "",
+          "enabled": true,
+          "required": false
+        },
+        "focus": "A-input",
+        "value": "",
+        "disabled": false,
+        "expanded": "false",
+        "scrollTop": 0,
+        "options": [
+          {
+            "key": "K1",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K2",
+            "selected": "false",
+            "disabled": "true"
+          },
+          {
+            "key": "K3",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K4",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K5",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K6",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K7",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K8",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K9",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K10",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K11",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K12",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K13",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K14",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K15",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K16",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K17",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K18",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K19",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K20",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K21",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K22",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K23",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K24",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K25",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K26",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K27",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K28",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K29",
+            "selected": "false",
+            "disabled": "false"
+          },
+          {
+            "key": "K30",
+            "selected": "false",
+            "disabled": "false"
+          }
+        ]
+      }
+    }
+  },
+  "journal": [
+    {
+      "sequence": 1,
+      "type": "host.ready",
+      "revision": "ee738677b6197821d0278f986fb3efc8a388b29ce3f0aa29b59cddfa5e4fe172"
+    },
+    {
+      "sequence": 2,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 3,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "Stadt"
+        }
+      }
+    },
+    {
+      "sequence": 4,
+      "type": "child.created",
+      "owner": "A",
+      "epoch": 1,
+      "level": "overlay"
+    },
+    {
+      "sequence": 5,
+      "type": "child.started",
+      "owner": "A",
+      "epoch": 1,
+      "level": "overlay"
+    },
+    {
+      "sequence": 6,
+      "type": "child.created",
+      "owner": "A",
+      "epoch": 1,
+      "level": "scroll-area"
+    },
+    {
+      "sequence": 7,
+      "type": "child.started",
+      "owner": "A",
+      "epoch": 1,
+      "level": "scroll-area"
+    },
+    {
+      "sequence": 8,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.ready",
+        "data": {
+          "owner": "A",
+          "epoch": 1
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 9,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.ready",
+        "data": {
+          "owner": "A",
+          "epoch": 1
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 10,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 1,
+      "seq": 1,
+      "query": "Stadt",
+      "id": "A:1:1"
+    },
+    {
+      "sequence": 11,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "seq": 1,
+          "query": "Stadt",
+          "id": "A:1:1",
+          "results": [
+            {
+              "key": "A-1",
+              "label": "Stadt 1"
+            },
+            {
+              "key": "A-2",
+              "label": "Stadt 2"
+            },
+            {
+              "key": "A-3",
+              "label": "Stadt 3",
+              "disabled": true
+            },
+            {
+              "key": "A-4",
+              "label": "Stadt 4"
+            },
+            {
+              "key": "A-5",
+              "label": "Stadt 5"
+            },
+            {
+              "key": "A-6",
+              "label": "Stadt 6"
+            },
+            {
+              "key": "A-7",
+              "label": "Stadt 7"
+            },
+            {
+              "key": "A-8",
+              "label": "Stadt 8"
+            },
+            {
+              "key": "A-9",
+              "label": "Stadt 9"
+            },
+            {
+              "key": "A-10",
+              "label": "Stadt 10"
+            },
+            {
+              "key": "A-11",
+              "label": "Stadt 11"
+            },
+            {
+              "key": "A-12",
+              "label": "Stadt 12"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 12,
+      "type": "provider.deliver",
+      "id": "A:1:1",
+      "owner": "A",
+      "epoch": 1,
+      "seq": 1,
+      "event": "DATA"
+    },
+    {
+      "sequence": 13,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 14,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 15,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-1",
+          "requestId": 1
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 16,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-1",
+          "requestId": 1
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 17,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-1",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 261.296875,
+        "bottom": 293.296875
+      }
+    },
+    {
+      "sequence": 18,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 19,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 20,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-1",
+          "requestId": 1,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 21,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 22,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 23,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-2",
+          "requestId": 2
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 24,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-2",
+          "requestId": 2
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 25,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-2",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 293.296875,
+        "bottom": 325.296875
+      }
+    },
+    {
+      "sequence": 26,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-2",
+          "requestId": 2,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 27,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-2",
+          "requestId": 2,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 28,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-2",
+          "requestId": 2,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 29,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 30,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 31,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-4",
+          "requestId": 3
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 32,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-4",
+          "requestId": 3
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 33,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-4",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 357.296875,
+        "bottom": 389.296875
+      }
+    },
+    {
+      "sequence": 34,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-4",
+          "requestId": 3,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 35,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-4",
+          "requestId": 3,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 36,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-4",
+          "requestId": 3,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 37,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 38,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 39,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-5",
+          "requestId": 4
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 40,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-5",
+          "requestId": 4
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 41,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-5",
+      "offset": 0,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 389.296875,
+        "bottom": 421.296875
+      }
+    },
+    {
+      "sequence": 42,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-5",
+          "requestId": 4,
+          "visible": true,
+          "offset": 0
+        }
+      }
+    },
+    {
+      "sequence": 43,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-5",
+          "requestId": 4,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 44,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-5",
+          "requestId": 4,
+          "visible": true,
+          "offset": 0
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 45,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 46,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 47,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-6",
+          "requestId": 5
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 48,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-6",
+          "requestId": 5
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 49,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-6",
+      "offset": 32,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 389.296875,
+        "bottom": 421.296875
+      }
+    },
+    {
+      "sequence": 50,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-6",
+          "requestId": 5,
+          "visible": true,
+          "offset": 32
+        }
+      }
+    },
+    {
+      "sequence": 51,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-6",
+          "requestId": 5,
+          "visible": true,
+          "offset": 32
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 52,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-6",
+          "requestId": 5,
+          "visible": true,
+          "offset": 32
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 53,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 54,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 55,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 6
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 56,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 6
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 57,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-7",
+      "offset": 64,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 389.296875,
+        "bottom": 421.296875
+      }
+    },
+    {
+      "sequence": 58,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-7",
+          "requestId": 6,
+          "visible": true,
+          "offset": 64
+        }
+      }
+    },
+    {
+      "sequence": 59,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 6,
+          "visible": true,
+          "offset": 64
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 60,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-7",
+          "requestId": 6,
+          "visible": true,
+          "offset": 64
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 61,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 62,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 63,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-8",
+          "requestId": 7
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 64,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-8",
+          "requestId": 7
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 65,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-8",
+      "offset": 96,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 389.296875,
+        "bottom": 421.296875
+      }
+    },
+    {
+      "sequence": 66,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-8",
+          "requestId": 7,
+          "visible": true,
+          "offset": 96
+        }
+      }
+    },
+    {
+      "sequence": 67,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-8",
+          "requestId": 7,
+          "visible": true,
+          "offset": 96
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 68,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-8",
+          "requestId": 7,
+          "visible": true,
+          "offset": 96
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 69,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 70,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 71,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-9",
+          "requestId": 8
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 72,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-9",
+          "requestId": 8
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 73,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-9",
+      "offset": 128,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 389.296875,
+        "bottom": 421.296875
+      }
+    },
+    {
+      "sequence": 74,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-9",
+          "requestId": 8,
+          "visible": true,
+          "offset": 128
+        }
+      }
+    },
+    {
+      "sequence": 75,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-9",
+          "requestId": 8,
+          "visible": true,
+          "offset": 128
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 76,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-9",
+          "requestId": 8,
+          "visible": true,
+          "offset": 128
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 77,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 78,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 79,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-10",
+          "requestId": 9
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 80,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-10",
+          "requestId": 9
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 81,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-10",
+      "offset": 160,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 389.296875,
+        "bottom": 421.296875
+      }
+    },
+    {
+      "sequence": 82,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-10",
+          "requestId": 9,
+          "visible": true,
+          "offset": 160
+        }
+      }
+    },
+    {
+      "sequence": 83,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-10",
+          "requestId": 9,
+          "visible": true,
+          "offset": 160
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 84,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-10",
+          "requestId": 9,
+          "visible": true,
+          "offset": 160
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 85,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 86,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 87,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-11",
+          "requestId": 10
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 88,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-11",
+          "requestId": 10
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 89,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-11",
+      "offset": 192,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 389.296875,
+        "bottom": 421.296875
+      }
+    },
+    {
+      "sequence": 90,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-11",
+          "requestId": 10,
+          "visible": true,
+          "offset": 192
+        }
+      }
+    },
+    {
+      "sequence": 91,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-11",
+          "requestId": 10,
+          "visible": true,
+          "offset": 192
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 92,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-11",
+          "requestId": 10,
+          "visible": true,
+          "offset": 192
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 93,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "ArrowDown",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 94,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "NAV",
+        "data": {
+          "direction": 1
+        }
+      }
+    },
+    {
+      "sequence": 95,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-12",
+          "requestId": 11
+        },
+        "origin": "#_scxml_2",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 96,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "target": "#_active.invokeid_0",
+        "name": "REVEAL",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-12",
+          "requestId": 11
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external"
+      }
+    },
+    {
+      "sequence": 97,
+      "type": "host.measure",
+      "owner": "A",
+      "epoch": 1,
+      "key": "A-12",
+      "offset": 224,
+      "visible": true,
+      "viewport": {
+        "top": 261.296875,
+        "bottom": 421.296875,
+        "height": 160
+      },
+      "option": {
+        "top": 389.296875,
+        "bottom": 421.296875
+      }
+    },
+    {
+      "sequence": 98,
+      "type": "native.event",
+      "owner": "A",
+      "level": "scroll-area",
+      "epoch": 1,
+      "event": {
+        "name": "MEASURED",
+        "data": {
+          "key": "A-12",
+          "requestId": 11,
+          "visible": true,
+          "offset": 224
+        }
+      }
+    },
+    {
+      "sequence": 99,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-12",
+          "requestId": 11,
+          "visible": true,
+          "offset": 224
+        },
+        "origin": "#_scxml_9",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 100,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.revealed",
+        "data": {
+          "owner": "A",
+          "epoch": 1,
+          "key": "A-12",
+          "requestId": 11,
+          "visible": true,
+          "offset": 224
+        },
+        "origin": "#_scxml_8",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 101,
+      "type": "dom.key",
+      "owner": "A",
+      "key": "Enter",
+      "isTrusted": true,
+      "isComposing": false
+    },
+    {
+      "sequence": 102,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "ENTER"
+      }
+    },
+    {
+      "sequence": 103,
+      "type": "public.event",
+      "owner": "A",
+      "name": "value-change",
+      "detail": {
+        "value": "A-12"
+      }
+    },
+    {
+      "sequence": 104,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "BLUR"
+      }
+    },
+    {
+      "sequence": 105,
+      "type": "dom.input",
+      "owner": "B",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 106,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "B"
+        }
+      }
+    },
+    {
+      "sequence": 107,
+      "type": "child.created",
+      "owner": "B",
+      "epoch": 1,
+      "level": "overlay"
+    },
+    {
+      "sequence": 108,
+      "type": "child.started",
+      "owner": "B",
+      "epoch": 1,
+      "level": "overlay"
+    },
+    {
+      "sequence": 109,
+      "type": "child.created",
+      "owner": "B",
+      "epoch": 1,
+      "level": "scroll-area"
+    },
+    {
+      "sequence": 110,
+      "type": "child.started",
+      "owner": "B",
+      "epoch": 1,
+      "level": "scroll-area"
+    },
+    {
+      "sequence": 111,
+      "type": "native.event",
+      "owner": "B",
+      "level": "overlay",
+      "epoch": 1,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.ready",
+        "data": {
+          "owner": "B",
+          "epoch": 1
+        },
+        "origin": "#_scxml_11",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 112,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.ready",
+        "data": {
+          "owner": "B",
+          "epoch": 1
+        },
+        "origin": "#_scxml_10",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 113,
+      "type": "provider.request",
+      "owner": "B",
+      "epoch": 1,
+      "seq": 1,
+      "query": "B",
+      "id": "B:1:1"
+    },
+    {
+      "sequence": 114,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "B",
+          "epoch": 1,
+          "seq": 1,
+          "query": "B",
+          "id": "B:1:1",
+          "results": [
+            {
+              "key": "B-only",
+              "label": "Nur B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 115,
+      "type": "provider.deliver",
+      "id": "B:1:1",
+      "owner": "B",
+      "epoch": 1,
+      "seq": 1,
+      "event": "DATA"
+    },
+    {
+      "sequence": 116,
+      "type": "native.event",
+      "owner": "B",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "BLUR"
+      }
+    },
+    {
+      "sequence": 117,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 118,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "old"
+        }
+      }
+    },
+    {
+      "sequence": 119,
+      "type": "child.created",
+      "owner": "A",
+      "epoch": 2,
+      "level": "overlay"
+    },
+    {
+      "sequence": 120,
+      "type": "child.started",
+      "owner": "A",
+      "epoch": 2,
+      "level": "overlay"
+    },
+    {
+      "sequence": 121,
+      "type": "child.created",
+      "owner": "A",
+      "epoch": 2,
+      "level": "scroll-area"
+    },
+    {
+      "sequence": 122,
+      "type": "child.started",
+      "owner": "A",
+      "epoch": 2,
+      "level": "scroll-area"
+    },
+    {
+      "sequence": 123,
+      "type": "native.event",
+      "owner": "A",
+      "level": "overlay",
+      "epoch": 2,
+      "event": {
+        "target": "#_parent",
+        "name": "scroll.ready",
+        "data": {
+          "owner": "A",
+          "epoch": 2
+        },
+        "origin": "#_scxml_13",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_0"
+      }
+    },
+    {
+      "sequence": 124,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "target": "#_parent",
+        "name": "overlay.ready",
+        "data": {
+          "owner": "A",
+          "epoch": 2
+        },
+        "origin": "#_scxml_12",
+        "origintype": "http://www.w3.org/TR/scxml/#SCXMLEventProcessor",
+        "type": "external",
+        "invokeid": "active.invokeid_1"
+      }
+    },
+    {
+      "sequence": 125,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 2,
+      "query": "old",
+      "id": "A:2:2"
+    },
+    {
+      "sequence": 126,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 127,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "new"
+        }
+      }
+    },
+    {
+      "sequence": 128,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 3,
+      "query": "new",
+      "id": "A:2:3"
+    },
+    {
+      "sequence": 129,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 3,
+          "query": "new",
+          "id": "A:2:3",
+          "results": [
+            {
+              "key": "fresh",
+              "label": "Neu"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 130,
+      "type": "provider.deliver",
+      "id": "A:2:3",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 3,
+      "event": "DATA"
+    },
+    {
+      "sequence": 131,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 2,
+          "query": "old",
+          "id": "A:2:2",
+          "results": [
+            {
+              "key": "stale",
+              "label": "Alt"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sequence": 132,
+      "type": "provider.deliver",
+      "id": "A:2:2",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 2,
+      "event": "DATA"
+    },
+    {
+      "sequence": 133,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 134,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "empty"
+        }
+      }
+    },
+    {
+      "sequence": 135,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 4,
+      "query": "empty",
+      "id": "A:2:4"
+    },
+    {
+      "sequence": 136,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "DATA",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 4,
+          "query": "empty",
+          "id": "A:2:4",
+          "results": []
+        }
+      }
+    },
+    {
+      "sequence": 137,
+      "type": "provider.deliver",
+      "id": "A:2:4",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 4,
+      "event": "DATA"
+    },
+    {
+      "sequence": 138,
+      "type": "dom.input",
+      "owner": "A",
+      "isTrusted": true,
+      "composing": false
+    },
+    {
+      "sequence": 139,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "INPUT",
+        "data": {
+          "query": "invalid"
+        }
+      }
+    },
+    {
+      "sequence": 140,
+      "type": "provider.request",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 5,
+      "query": "invalid",
+      "id": "A:2:5"
+    },
+    {
+      "sequence": 141,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "FAILURE",
+        "data": {
+          "owner": "A",
+          "epoch": 2,
+          "seq": 5,
+          "query": "invalid",
+          "id": "A:2:5",
+          "message": "Ungültige Ergebnisdaten."
+        }
+      }
+    },
+    {
+      "sequence": 142,
+      "type": "provider.deliver",
+      "id": "A:2:5",
+      "owner": "A",
+      "epoch": 2,
+      "seq": 5,
+      "event": "FAILURE"
+    },
+    {
+      "sequence": 143,
+      "type": "native.event",
+      "owner": "A",
+      "level": "autocomplete",
+      "epoch": 0,
+      "event": {
+        "name": "SET_ENABLED",
+        "data": {
+          "enabled": false
+        }
+      }
+    }
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "platform": "MacIntel",
+    "language": "en-US"
+  },
+  "sourceRevision": "ee738677b6197821d0278f986fb3efc8a388b29ce3f0aa29b59cddfa5e4fe172"
+}

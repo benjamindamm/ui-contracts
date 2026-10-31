@@ -1,5 +1,18 @@
 # Aufgaben und Fortschritt
 
+**Aktueller Arbeitsstand · 31. Oktober 2026**
+
+- [x] [Paket 4 · Handlungsessenz, Kontext und Gesamtabgleich](docs/research/analyses/AGENT-WORKFLOW-2026-10-31/README.md): 262 technische Regressionserwartungen erfüllt; kein Modellvergleich erforderlich.
+- [ ] FW-006: Änderungen und Auswirkungen auf abhängige Quellen/Nachweise gezielt behandeln.
+- [ ] FW-008: UX-Regeln über die bisherigen fachlichen Fälle hinaus erweitern.
+- [ ] FW-011/012: Werkzeugfähigkeiten und weitergehende Accessibility-/IME-Abdeckung ergänzen.
+
+[Arbeitswege](docs/README.md) · [Aktueller Stand und Grenzen](docs/STATUS.md). Modellvergleiche sind [optionale Forschung](docs/research/decisions/RD-002-AGENT-WORKFLOW-SCOPE.md), kein hartes Framework-Einsatzkriterium.
+
+<details>
+<summary>Bisherige Arbeitspakete, Forschungsaufgaben und Herleitung</summary>
+
+
 **Neue Forschungsphase, 29. Oktober 2026:** [RD-001 · Gestufte Erzeugung](docs/research/decisions/RD-001-STAGED-GENERATION.md) ist beschlossen; [Pilotvorgehen](docs/research/protocols/STAGED-GENERATION-PILOT.md) ist ausgearbeitet. Die nachfolgenden Matrixzahlen gehören weiterhin zum abgeschlossenen Kandidatenstand vom 25. Oktober. Aktuelle Aufgaben zur neuen Phase stehen am Dokumentende.
 
 Stand:25. Oktober2026. **2 offene Nachweise:Google DESIGN.md X06 und OpenUI X06.**16/16 Erstdurchgänge,702 Bedingungen/106 Gruppen,543 Claims. Alle27 anderen Zellen des29er-Ausgangsstands sind inzwischen im jeweils dokumentierten begrenzten Umfang eingeordnet; vollständige universelle Integration bleibt unbelegt.
@@ -115,3 +128,16 @@ UX-RULES-01-Folgeblock: Native DMN-XML-Ausführung und Pflicht-/Empfehlungs-/Aus
 - [x] SELECTION-01: Select/Input definieren, zwei frische Builder prüfen, Erstfehler und separate Reparatur erhalten; begrenzter [Prüfbericht](docs/research/studies/UX-RULES-01/studies/SELECTION-01/review/REVIEW.md).
 - [x] Nutzeranforderungen zu freier Schreibhilfe vs. festen Werten in [UX-Dokumentation](docs/ux/AUTOCOMPLETE.md) aufnehmen.
 - [x] [SELECTION-02](docs/research/studies/UX-RULES-01/studies/SELECTION-02/README.md) abschließen: erwartete Wahl, 36/37 Erstchecks, Fokusfehler erhalten und separat repariert (10/10); keine rückwirkende Umwertung der ersten Studie.
+
+## Aktive UX-Revision und Absicherung · 31. Oktober 2026
+
+- [x] Select mit Suche und UX-Merkmale in example 0.3.0 aktiv übernehmen; alte 50-Datei-Eingabe archivieren und extern reproduzieren.
+- [x] Deklarierte vs. aktuell begrenzt geprüfte Fähigkeiten unterscheiden; falsche Suchbehauptungen, falsche Signaturen und fehlerhafte SCXML-Guards mit Gegenfällen abweisen.
+- [x] Mindestprüfung für Quellen, Zielarten, Identitäten, Zustandsziele, Komposition und Token-Aliase ergänzen; Schema-FAIL vor Zusatzblockierung erhalten.
+- [x] Operativen UX-Einstieg und gezieltes Skill-Nachladen mit kleinem Toolkontext bereitstellen.
+- [x] [Paket 3](docs/research/analyses/WEB-RUNTIME-2026-10-31/README.md): reproduzierbare Runtime, gemeinsamer Test-/CI-Einstieg und aktuelle Browserprüfung der vier unterstützten Profile; begrenzt, kein allgemeiner Generator.
+- [x] Paket 4: gemeinsame Auswahl-/Übergabeformate, schlanke Skill-Einstiege und abschließenden Gesamtabgleich geprüft. Ein gestufter Modellvergleich bleibt gemäß RD-002 optional.
+
+[Umsetzung, neue Belege und Restgrenzen](docs/research/analyses/ACTIVE-UX-2026-10-31/README.md). Die ursprünglichen Studien/Auditbefunde bleiben als datierte Ausgangsstände erhalten.
+
+</details>

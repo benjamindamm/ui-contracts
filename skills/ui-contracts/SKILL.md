@@ -1,48 +1,23 @@
 ---
 name: ui-contracts
-description: Contractartefakte für UI-Komponenten in CEM, DTCG/CSS, SCXML und HTML/ARIA erstellen oder bearbeiten und mit der begrenzten UI-Contracts-Prüfkette prüfen. Verwenden für definitionsbasierte Komponentenarbeit und deren Nachweise, nicht für beliebige App-Implementierung oder allgemeine Konformitätszertifizierung.
+description: UI-Komponenten als CEM-, DTCG/CSS-, SCXML- und HTML/ARIA-Contracts erstellen, bearbeiten und begrenzt prüfen; auch für UX-Eignung und Komponentenwahl anhand einer ausdrücklich gewählten Contractbibliothek. Nicht für beliebige App-Implementierung oder allgemeine Konformitätszertifizierung.
 ---
 
-# UI Contracts
+# UI Contracts · Handlungsregeln
 
-Erstelle nachvollziehbare Originalartefakte und benenne den tatsächlich geprüften Umfang. Die vorhandene Prüfkette unterstützt eine feste Forschungsreferenz, keinen allgemeinen Renderer oder Validator für neue Komponenten.
+1. **Auftrag eingrenzen:** Repository, Bibliotheks-ID (`libraries/<id>`), Komponente und Ziel ausdrücklich bestimmen. Kein implizites example und keine Freigabe aus einer anderen Bibliothek übernehmen.
+2. **Gezielt lesen:** Bei Rollenauftrag nur Task und eigene Rollenkarte unter `references/roles/` zuerst. Sonst unten den passenden Einstieg wählen. Verweise sind Nachlademöglichkeiten; Forschung, andere Rollen und fremde Versuche nicht vorsorglich einlesen. Technisch erreichbares Wissen muss nicht im Startkontext stehen.
+3. **Originalquellen führen:** CEM, DTCG/CSS, SCXML und HTML/ARIA getrennt halten. Quellenregeln, Ableitungen, Annahmen und Beobachtungen unterscheiden. Identitäten, Teile, Zustände, Typen und Einheiten über Grenzen erhalten.
+4. **In prüfbaren Schritten arbeiten:** Nötige Vorgängerartefakte mit Pfad/Hash übergeben, Details auf Datenträger halten. Unabhängige Teilaufgaben erst nach geklärten Abhängigkeiten bearbeiten; abhängige Schritte bei Konflikten blockieren. Kein Auftrag zu zusätzlichen Agenten entsteht allein durch den Skill.
+5. **Zum Schluss integrieren:** Ergebnis gegen betroffene Originalquellen, Fachanforderungen und Verbindungen prüfen; Teil-Pässe nicht zum Gesamt-Pass addieren. Dafür [Gesamtabgleich](references/integration-review.md) gezielt laden. Fehlende Prüfungen sichtbar lassen.
+6. **Begrenzt berichten:** Nur tatsächlich ausgeführte Prüfungen nennen. `HANDOFF_READY` ist keine UI-Freigabe; statisches Design beweist keine Webbedienung. Kein Versprechen guter Modellarbeit oder allgemeiner Konformität. Modellmetadaten sind für normale Aufgaben keine Pflicht.
+7. **Nachweise bewahren:** Historische Quellen/Läufe unverändert halten; neue Revisionen getrennt ablegen. Neue Fehler mit Beleg, Ursache, Reparatur und Regression in `docs/skills/ISSUES.md` dokumentieren. Commit, Push und Veröffentlichung brauchen Nutzerauftrag.
 
-## Projekt und Auftrag bestimmen
+## Nur den benötigten Einstieg laden
 
-Finde das vom Nutzer gemeinte UI-Contracts-Repository anhand von `tools/validation/check.py`, `tools/validation/profile.json` und dem Verzeichnis `libraries/` (alte Checkouts: `components/library.json`); arbeite in dessen tatsächlichem Pfad. Der Skill enthält keine zweite führende Kopie von Definitionen, Schemas, Browserdaten oder Prüfern. Fehlt dieser Projektstand, melde `BLOCKED` und die fehlende Voraussetzung.
-
-Bestimme aus dem Auftrag Bibliotheks-ID, Komponente, Ziel, gewünschte Änderung und Prüfanspruch. Wähle `libraries/<id>/library.json` ausdrücklich; keine implizite aktive Bibliothek. Komponenten liegen unter `components/`, gemeinsame Dateien unter `assets/`; Index, Tokens und optionale Fontbindung bleiben am Bibliotheksroot. `example` ist die erhaltene Forschungsbibliothek, keine automatisch zu lesende Vorlage. Neue Bibliotheken über `tools/libraries/manage.py init ID` leer anlegen; Details nur bei Bedarf in `libraries/README.md`. Nutze vorhandene Entscheidungen; frage nur nach fachlich entscheidenden fehlenden Angaben. Autorenarbeit, editierbares Design und ausgeführte Webkomponente sind unterschiedliche Ziele. Kein Commit, Push, Deployment oder fremder Kontakt wird allein durch diesen Skill autorisiert.
-
-Bei Reproduktionsläufen, Modellvergleichen oder der Analyse solcher Ergebnisse lies [references/reproducibility.md](references/reproducibility.md). Historische Ergebnisse von außen prüfen; identische Designs und identische Kriterienurteile sind getrennte Aussagen.
-
-Bei einem bereits zugewiesenen Rollenauftrag zuerst nur die zugehörige Karte unter `references/roles/` und die Auftragsdatei lesen. Vollständiger Workflow, Übergabeschema, Forschungsgeschichte und andere Rollenkarten gehören nicht automatisch in den Einstieg. Für Planung oder das Verfassen von Aufträgen/Übergaben lies [references/workflow.md](references/workflow.md); weitere Details nach Bedarf. Ein Verweis ist eine Nachlademöglichkeit, kein pauschaler Leseauftrag. Bei Reproduktionsaufträgen die oben genannte Reproduktionsreferenz zusätzlich nur für den eigenen Prüfumfang nutzen. Kleine Änderungen benötigen keinen mehrstufigen Forschungsablauf.
-
-## Contractartefakte erstellen oder ändern
-
-Nur beim Schreiben führender Originalartefakte: Lies [references/authoring.md](references/authoring.md) sowie die betroffene Definition. Bewahre die vier getrennten führenden Domänen und explizite Verbindungen zwischen Definition, Instanz, Teil und Zustand. Erfinde keinen neuen Universalstandard und keine unabhängige Zielimplementierung als zusätzliche Wahrheit.
-
-Historische Forschungs-/Studienartefakte und eingefrorene Definitionen bleiben als Belege erhalten. Nutze für eine neue Revision eine eigene Kandidatenkopie beziehungsweise den vom Nutzer vorgesehenen neuen Bibliothekseintrag. Verändere bei einer eingefrorenen Eingabe weder Definition noch Erwartungen, um ein Zielbild nachträglich passend zu machen.
-
-Fehlende fachliche Regeln werden als offene Entscheidungen ausgewiesen. Ein technisch erzeugbares Dokument ist kein Nachweis seiner Interaktion, Accessibility oder Plattformgleichheit. Erzeuge Zielartefakte nur im angefragten Ziel und mit tatsächlich vorhandenem Adapter/Werkzeug; erfinde keine funktionierende generische Abbildung.
-
-Explizite Regeln nicht aus gestalterischer Plausibilität zu Wahlfreiheiten erklären. Element, Pseudoelement und geerbten Wert getrennt auswerten; ein eigener `::placeholder`-Wert wird nicht durch die Inputfarbe von `:disabled` ersetzt. Bewusste Quellabweichungen als solche melden. Neue belegte Fehler samt Gegenfall, Reparatur und Restgrenze im Projektregister `docs/skills/ISSUES.md` fortschreiben.
-
-Bei Designausgaben: einfache Rechtecke, abgerundete Buttons, Kreise und Ellipsen direkt mit nativen Primitiven erstellen. Für datenabhängige Sektoren, Bögen oder zusammengesetzte Kurven – typischerweise Charts – die [Geometriehilfe](references/geometry.md) gezielt laden, statt Pfadkoordinaten zu schätzen.
-
-## Prüfen und gegebenenfalls korrigieren
-
-Lies [references/validation.md](references/validation.md) für die konkrete Prüfreihenfolge und den Browserablauf. Der portable Helper ist `scripts/contracts.py`; übergib `--repo` ausdrücklich, wenn das Arbeitsverzeichnis nicht im Zielrepository liegt.
-
-- **Neue/geänderte Originalartefakte:** `inspect` führt unterstützte Syntax-/Originalschemaprüfungen tatsächlich aus. Auch bei gültigen Dateien lautet das Gesamtergebnis `BLOCKED`, solange kein passendes semantisches Profil und kein erforderlicher Laufzeitnachweis existieren. Bestandene Teilprüfungen separat berichten.
-- **Unterstütztes Referenzpaket:** `validate --scope static` delegiert die vorhandene statische Prüfkette. Nur eine ausdrückliche statische Teilprüfung darf als `PASS_LIMITED`/`release:false` enden.
-- **Gemeinsame Webprüfung:** `validate` verlangt ein explizites aktuelles `--browser-run`. Der Browseradapter akzeptiert ausschließlich die fest gebundene Paket-/Hostrevision. Neue oder auch nur statisch gültig geänderte Pakete dürfen alte Referenzcapturen nicht übernehmen.
-
-Fehlt ein notwendiger Prüfer oder eine erforderliche Abdeckung, stoppe die davon abhängigen Schritte und die Freigabe. Syntax-/Schema-/Bindungsfehler sind keine Warnungen. Kandidatendaten dürfen korrigiert werden; danach müssen betroffene Prüfungen und notwendige abhängige Regressionen erneut bestehen. Ändere dafür weder Originalschemas, Profil/Prüfpolicy, Assertions noch Zeit-/Quellbindungen. Jede relevante Quellen-/Prüferänderung erfordert neue passende Nachweise.
-
-Ein begrenztes erfolgreiches Webresultat ist nur für `releaseScope:exact-pinned-bounded-web-reference-only` zulässig. `productionRelease:false` bleibt sichtbar; fehlende Screenreader-, reale IME- oder Nativeprüfungen niemals als bestanden darstellen.
-
-## Ergebnisvertrag
-
-Liefere Artefaktpfade/Revision und Änderungen, tatsächlich ausgeführte Prüfungen samt Ergebnisdateien, bestandenen Umfang, blockierende Fehler/fehlende Abdeckung, Warnungen und ungeprüfte Teile. Der maschinenlesbare Helperbericht enthält `overall`, `release`, Diagnose und Umfang; prüfe seinen Inhalt zusätzlich zum Exitcode.
-
-Exitcodes: `0` nur für den ausdrücklich begrenzten bestandenen Prüfumfang, `1` für Fehler, `2` für Blockierung. Ein `BLOCKED`-Entwurf kann als Entwurf übergeben werden, aber nicht als freigegebene Komponente. Frühere Gegenbefunde bleiben erhalten; Wiederholungen sind keine neuen Forschungsbedingungen.
+- Originalartefakte erstellen/ändern: [Autorenarbeit](references/authoring.md).
+- Konkrete Prüfung oder Reparatur: [Prüfwege und Grenzen](references/validation.md); Helper `scripts/contracts.py`, `--repo` ausdrücklich.
+- UX-Eignung oder Komponentenwahl: [UX](references/ux.md).
+- Berechnete Kurven/Chartformen: [Geometriehilfe](references/geometry.md); Grundformen nativ.
+- Mehrstufigen Ablauf planen: [Workflow](references/workflow.md). Zugewiesene Worker laden stattdessen nur ihre dort verlinkte Rollenkarte.
+- Expliziter Reproduktions-/Forschungsauftrag: [Reproduktion](references/reproducibility.md). Historische Ergebnisse von außen prüfen.

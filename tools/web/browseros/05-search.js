@@ -1,0 +1,12 @@
+const p=browser.page((await browser.pages.list()).find(x=>x.url==='http://127.0.0.1:8770/').pageId);
+let s=await p.snapshot({mode:'interactive'});await p.fill(s.refs.find(x=>x.role==='searchbox').ref,'Land 30');
+await p.evaluate(async()=>research.capture('search-filter',{}));
+s=await p.snapshot({mode:'interactive'});await p.fill(s.refs.find(x=>x.role==='searchbox').ref,'Land');
+for(let i=0;i<29;i++)await p.press('ArrowDown');
+await p.evaluate(async()=>research.capture('search-navigation',{}));
+await p.press('Enter');await p.waitForSelector('[data-part=trigger][aria-expanded=false]');
+await p.evaluate(async()=>research.capture('search-commit',{}));
+s=await p.snapshot({mode:'interactive'});await p.click(s.refs.find(x=>x.role==='button'&&x.name.includes('Ländervorwahl')).ref);
+s=await p.snapshot({mode:'interactive'});await p.fill(s.refs.find(x=>x.role==='searchbox').ref,'nicht vorhanden');
+await p.press('Escape');await p.evaluate(async()=>research.capture('search-escape',{}));
+return await p.evaluate(()=>research.controls.snapshot());

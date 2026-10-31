@@ -1,0 +1,62 @@
+{
+  "head": "fe44c53876f4f77c3e95222ee5b1ea118eb87d76",
+  "trackedFiles": 2410,
+  "activeMarkdownChecked": 38,
+  "activeLocalLinksChecked": 261,
+  "missingLocalTargets": [],
+  "registeredLibraryComponents": [
+    {
+      "name": "Autocomplete",
+      "path": "components/autocomplete/component.json",
+      "id": "ui-contracts:Autocomplete",
+      "version": "0.1.0",
+      "uxProfile": true,
+      "stories": "stories.json",
+      "status": "cold-context-authoring-proof"
+    },
+    {
+      "name": "Overlay",
+      "path": "components/overlay/component.json",
+      "id": "ui-contracts:Overlay",
+      "version": "0.1.0",
+      "uxProfile": false,
+      "stories": null,
+      "status": "supporting-definition"
+    },
+    {
+      "name": "ScrollArea",
+      "path": "components/scroll-area/component.json",
+      "id": "ui-contracts:ScrollArea",
+      "version": "0.1.0",
+      "uxProfile": false,
+      "stories": null,
+      "status": "supporting-definition"
+    },
+    {
+      "name": "Select",
+      "path": "components/select/component.json",
+      "id": "ui-contracts:Select",
+      "version": "0.1.0",
+      "uxProfile": true,
+      "stories": "stories.json",
+      "status": "new-research-definition-not-runtime-qualified"
+    },
+    {
+      "name": "Input",
+      "path": "components/input/component.json",
+      "id": "ui-contracts:Input",
+      "version": "0.1.0",
+      "uxProfile": true,
+      "stories": "stories.json",
+      "status": "new-research-definition-not-runtime-qualified"
+    }
+  ],
+  "rootFrameworkLicenseExists": false,
+  "ciWorkflowFiles": [],
+  "selection02SharedTaskValidatorResult": "unsupported task format",
+  "contextEntrypointBytes": {
+    "AGENTS.md": 1713,
+    "CLAUDE.md": 323,
+    "GEMINI.md": 323
+  }
+}

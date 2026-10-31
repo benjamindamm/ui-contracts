@@ -1,0 +1,81 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "scope": "Static routing/link/character guard for core skill and one-role-at-a-time entrypoints",
+  "errors": [],
+  "sharedEntrypoints": {
+    "scope": "Static repository entrypoint guard; no host startup/runtime test",
+    "passed": true,
+    "errors": [],
+    "files": {
+      "AGENTS.md": {
+        "characters": 1761,
+        "utf8Bytes": 1787,
+        "sha256": "1cc8cc69b2ef94984bc2b2555295b8ef4073a9a0d3b2c56b9adb4daca5db621e"
+      },
+      "CLAUDE.md": {
+        "characters": 321,
+        "utf8Bytes": 323,
+        "sha256": "4029ef5de3061c333eb4aeb8c29f859a031755634aa82cc1014d3e3ab76c19d9"
+      },
+      "GEMINI.md": {
+        "characters": 321,
+        "utf8Bytes": 323,
+        "sha256": "489a100d7837f9922d50f39123500c74557ec9182f3550de26e7a27df51c66d7"
+      }
+    },
+    "limitsInCharacters": {
+      "AGENTS.md": 1800,
+      "CLAUDE.md": 500,
+      "GEMINI.md": 500
+    },
+    "combinedCharacters": 2403,
+    "actualHostRecognitionVerified": false,
+    "globalMemoryInspected": false
+  },
+  "skillFiles": {
+    "SKILL.md": {
+      "characters": 2928,
+      "utf8Bytes": 2972,
+      "sha256": "3f026b67262ca523522f88c8f67336e3296e6a7f150895c1daf885b6723d0d34",
+      "characterBudget": 3200
+    },
+    "references/roles/builder.md": {
+      "characters": 3167,
+      "utf8Bytes": 3208,
+      "sha256": "ab17dad12064bd1d3273549e17590b5ece25a575779ae36d7077a3c37f5b8d0a",
+      "characterBudget": 3500
+    },
+    "references/roles/coordinator.md": {
+      "characters": 1796,
+      "utf8Bytes": 1832,
+      "sha256": "347b35781066e75b56471d4fe55d590247427795bc751a70248019344606aeeb",
+      "characterBudget": 3500
+    },
+    "references/roles/mapper.md": {
+      "characters": 1404,
+      "utf8Bytes": 1421,
+      "sha256": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5",
+      "characterBudget": 3500
+    },
+    "references/roles/repair.md": {
+      "characters": 1164,
+      "utf8Bytes": 1189,
+      "sha256": "0a443c7d85c92b474995ca2ad497deb5f6c6930fd0b0c6006ee40a28a7775fe7",
+      "characterBudget": 3500
+    },
+    "references/roles/reviewer.md": {
+      "characters": 2023,
+      "utf8Bytes": 2052,
+      "sha256": "19ac4faa7300b8c888e997bde95e881576cf4470d19e1f9f912794ee136e3d29",
+      "characterBudget": 3500
+    }
+  },
+  "notChecked": [
+    "Actual platform/system/tool prompt",
+    "Automatic global memory",
+    "Actual initial request tokens",
+    "Whether an agent follows lazy loading",
+    "Model quality"
+  ]
+}

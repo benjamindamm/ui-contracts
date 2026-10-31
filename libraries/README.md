@@ -2,7 +2,7 @@
 
 Jedes Unterverzeichnis mit `library.json` ist eine eigene Bibliothek. Der Ordnername ist die Bibliotheks-ID. Es gibt keine implizit aktive Bibliothek und keinen automatischen Import aus anderen Bibliotheken.
 
-- [example](example/README.md): bisherige Forschungs-/Beispielbibliothek mit Autocomplete, Overlay und ScrollArea. Als Orientierung gezielt lesbar; keine Vorlage für unabhängige Builds, sofern sie nicht selbst die vereinbarte Eingabe ist.
+- [example](example/README.md): bisherige Forschungs-/Beispielbibliothek mit Autocomplete, Overlay, ScrollArea, Select, Input und Select mit Suche. Als Orientierung gezielt lesbar; keine Vorlage für unabhängige Builds, sofern sie nicht selbst die vereinbarte Eingabe ist.
 - Eigene Bibliotheken beginnen leer. Tokens und Komponenten gehören jeweils zur ausgewählten Bibliothek; generierte Ziele und Studien bleiben außerhalb ihrer Quellen.
 
 ## Nach einem Clone neu anfangen
@@ -61,3 +61,9 @@ Diese Kompatibilität ersetzt keine alte Werkzeugversion: Hashgebundene historis
 ## Schriftdateien
 
 Optional bindet `fonts.json` konkrete lokale Fontdateien an die Family-Tokens der ausgewählten Bibliothek. [Struktur, Inter-Beispiel und ausgeführte Fontprüfung](../docs/fonts/README.md). Die bestehenden 22 Beispieldateien bleiben erhalten; zusätzliche Fontassets bilden eine neue Gesamtbibliotheksrevision.
+
+## Struktur und UX aktuell prüfen
+
+`tools/validation/.venv/bin/python tools/libraries/check.py --library ID` prüft zusätzlich die ausgewählte Bibliothek auf fehlende/falsche Quellen, Identitäten, Zustandsziele, Kompositionszyklen und Token-Aliase. Das ist ein eigener begrenzter Mindestvertrag, keine allgemeine Komponentenfreigabe. [Operative UX-Prüfung und native DMN-Auswahl](../tools/ux/README.md). Eine leere eigene Bibliothek erbt keine UX-Policy aus example.
+
+Vor der aktiven Revision 0.3.0 wurde die komplette 50-Datei-Eingabe von SELECTION-01 bytegleich unter docs/libraries/frozen/example-selection-01 bewahrt. Der [neue externe Replay](../docs/research/analyses/ACTIVE-UX-2026-10-31/replay_selection01.py) verwendet den unveränderten ursprünglichen Helper mit diesem Datenroot; alte Eingaben und Kriterien bleiben unverändert.

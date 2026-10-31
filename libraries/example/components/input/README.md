@@ -1,4 +1,4 @@
-# Input · 0.1.0
+# Input · 0.2.0
 
 Einzeilige freie Texteingabe für z. B. Vorname, Familienname oder lokale Rufnummer. inputType text/email/tel und native autocompleteHint-Tokens sind explizite Hostbindungen. Native Browser-Autovervollständigung ist nicht die Autocomplete-Komponente und keine feste Optionsliste.
 

@@ -1,0 +1,25 @@
+{
+  "format": "ui-contracts-dmn-runtime/1",
+  "engine": "dmn-scala",
+  "engineVersion": "1.12.6",
+  "javaRelease": 17,
+  "bridgeSource": "DmnProbe.java",
+  "jars": {
+    "dmn-engine-1.12.6.jar": "38b551db67451db60628c96c3453f21783ec4929300f8ec2a377f61aa1381ff2",
+    "feel-engine-1.22.1.jar": "27cac300665d723d3930c38b7520f7a9d869555d0e402b67742de6e94e612dc0",
+    "scala-library-2.13.18.jar": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+    "fastparse_2.13-3.1.1.jar": "ff3f37dad0f89c9cff494cb984edc122a3c282f063790949e825ae039dcad9d5",
+    "sourcecode_2.13-0.4.0.jar": "7ce9b8c285a04280374d739d7b799408b2cfa40cc3173960848aec9ee8450fed",
+    "geny_2.13-1.1.0.jar": "bd93f278047bb533da70b42d2b21dc297d946bab86a4fe844c200b4db8d174b5",
+    "java-uuid-generator-5.2.0.jar": "5724d6a0f27db90d45af884f4520bce581f29eebe21840d07cae22b670bb8ebb",
+    "jackson-module-scala_2.13-2.22.1.jar": "8b45753f2233bea70f9d7f8d5406fc007eb264f98366246f36cb98508ed67e75",
+    "paranamer-2.8.3.jar": "a9df136f2e926b37a838a5b4e2227343c3a755d15724b3a8350b4aea4b158945",
+    "camunda-dmn-model-7.24.0.jar": "38f8c7e4889c8fa531d75c67ee0b9439b34d4d607edf0ab6bdbc71241d42ae73",
+    "camunda-xml-model-7.24.0.jar": "5662dfb995780898ccd5ce648768604c5d939aaa1bbf378232fc763d2aac5508",
+    "slf4j-api-2.0.20.jar": "7e1446499b359675d8aabe6af2de86b85e72ae8a2a932c0b40d0e5ba57097439",
+    "jackson-databind-2.22.1.jar": "7dcd7e53bec1f56c7ad278bd1ca0840bebcc595d61ce44d6a8439abb75b965b2",
+    "jackson-annotations-2.22.jar": "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0",
+    "jackson-core-2.22.1.jar": "941ff029bcdb93e83d209ce516c1a7fb8bbac07d0a2fa122f5bf194b2cd7b4f4"
+  },
+  "source": "Same pinned engine inputs as UX-RULES-01; runtime provisioning remains a separate work package."
+}

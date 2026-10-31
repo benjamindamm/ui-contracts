@@ -17,6 +17,9 @@ class FontsTests(unittest.TestCase):
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.repo=Path(self.tmp.name)
         self.lib=self.repo/'libraries/test-fonts';self.lib.mkdir(parents=True)
         for f in ['library.json','tokens.json','fonts.json']:shutil.copyfile(ROOT/'libraries/example'/f,self.lib/f)
+        # This fixture tests fonts only; do not declare copied component paths whose files are absent.
+        index=json.loads((self.lib/'library.json').read_text());index['components']={};index.pop('selection',None)
+        (self.lib/'library.json').write_text(json.dumps(index))
         shutil.copytree(ROOT/'libraries/example/assets',self.lib/'assets')
         self.manifest=json.loads((self.lib/'fonts.json').read_text())
     def write_manifest(self): (self.lib/'fonts.json').write_text(json.dumps(self.manifest))
@@ -92,6 +95,14 @@ class FontsTests(unittest.TestCase):
         code,result=self.inspect_temporary_library(False)
         self.assertEqual(code,2);self.assertEqual(result['overall'],'BLOCKED')
         self.assertEqual(result['fontAssets']['overall'],'PASS_LIMITED');self.assertFalse(result['release'])
+    def test_library_inspection_rejects_dangling_copied_component_index(self):
+        shutil.copyfile(ROOT/'libraries/example/library.json',self.lib/'library.json')
+        code,result=self.inspect_temporary_library(False)
+        self.assertEqual(code,1);self.assertEqual(result['overall'],'FAIL')
+        self.assertEqual(result['diagnostic']['code'],'COMPONENT_BINDING_INVALID')
+        self.assertTrue(any(e['code']=='REFERENCE_MISSING' for e in result['bindings']['errors']))
+        self.assertEqual(result['fontAssets']['overall'],'PASS_LIMITED')
+
     def test_library_inspection_rejects_corrupt_font(self):
         code,result=self.inspect_temporary_library(True)
         self.assertEqual(code,1);self.assertEqual(result['diagnostic']['code'],'FONT_ASSET_CHECK_FAILED')

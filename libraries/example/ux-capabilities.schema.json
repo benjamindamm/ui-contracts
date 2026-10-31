@@ -1,16 +1,17 @@
 {
-  "format": "ui-contracts-ux-capabilities/0.1",
+  "format": "ui-contracts-ux-capabilities/0.3",
   "status": "research-candidate-own-projection-not-an-external-standard",
   "type": "object",
   "required": [
     "format",
     "componentId",
     "capabilities",
-    "sources"
+    "sources",
+    "verification"
   ],
   "properties": {
     "format": {
-      "const": "ui-contracts-ux-capabilities/0.1"
+      "const": "ui-contracts-ux-capabilities/0.3"
     },
     "componentId": {
       "type": "string"
@@ -24,7 +25,10 @@
         "searchMode",
         "selectionCardinality",
         "preservesSuppliedOrder",
-        "completionMode"
+        "completionMode",
+        "interactionIntent",
+        "querySurface",
+        "unknownInputPolicy"
       ],
       "properties": {
         "role": {
@@ -62,6 +66,27 @@
             "none",
             "label-on-confirm"
           ]
+        },
+        "interactionIntent": {
+          "enum": [
+            "fixed-choice",
+            "completion-assistance",
+            "text-entry"
+          ]
+        },
+        "querySurface": {
+          "enum": [
+            "none",
+            "value-editor",
+            "separate-filter"
+          ]
+        },
+        "unknownInputPolicy": {
+          "enum": [
+            "reject-commit",
+            "retain-text",
+            "not-applicable"
+          ]
         }
       },
       "additionalProperties": false
@@ -92,6 +117,19 @@
       "items": {
         "type": "string"
       }
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "profile"
+      ],
+      "properties": {
+        "profile": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false,

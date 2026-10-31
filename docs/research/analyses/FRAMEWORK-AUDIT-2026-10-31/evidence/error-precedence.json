@@ -1,0 +1,90 @@
+{
+  "kind": "ui-contracts-original-artifact-inspection",
+  "overall": "BLOCKED",
+  "release": false,
+  "diagnostic": {
+    "code": "FONT_LIBRARY_ROOT_UNSUPPORTED",
+    "detail": "Inspect registered library roots under libraries/."
+  },
+  "passedScope": [
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/inspection-precedence-audit-58mhl9p5/fonts.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/inspection-precedence-audit-58mhl9p5/library.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "candidate": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/inspection-precedence-audit-58mhl9p5",
+  "artifacts": [
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/inspection-precedence-audit-58mhl9p5/fonts.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    },
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/inspection-precedence-audit-58mhl9p5/interface.json",
+      "sha256": "a63d0891da5e250414cfe3e2395fa8e79be825275edd6fe489f1749dd7590c31",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        },
+        {
+          "checker": "original CEM 2.1.0 schema / Draft 7",
+          "accepted": false,
+          "errors": [
+            "'kind' is a required property",
+            "'path' is a required property"
+          ]
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/inspection-precedence-audit-58mhl9p5/library.json",
+      "sha256": "8ca85f4323d18f614b38a79e6408d0c486d867236ab14d9fdfa7a21031f8b699",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    }
+  ],
+  "warnings": [
+    "Original SCXML schema is loose; HTML parsing is not conformance.",
+    "DTCG/CSS/HTML/ARIA/APG are not fully original-validated."
+  ],
+  "unverified": [
+    "General cross-file references, ownership and composition for this candidate",
+    "Runtime events, focus, scrolling, AX, lifecycle",
+    "Target generation, screenreader, real IME and native platforms"
+  ],
+  "productionRelease": false,
+  "skill": {
+    "name": "ui-contracts",
+    "skillSha256": "7bfc4e54170ae9e23789f609a48b357d4d1130817395406b05a708d6fb26fb66",
+    "helperSha256": "7cb09067057dfae2f940b5cf2a4da00823094c20203b0ea4380882e95741e5dc"
+  }
+}

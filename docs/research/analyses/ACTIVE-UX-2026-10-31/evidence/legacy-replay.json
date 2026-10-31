@@ -1,0 +1,158 @@
+{
+  "scope": "Historical policy replay with relocated byte-identical data only",
+  "release": false,
+  "helperUnchanged": true,
+  "snapshotRoot": "docs/libraries/frozen/example-selection-01",
+  "filesMatched": 50,
+  "locatorNote": "policySource labels in original results keep the historical library locator; effective root is snapshotRoot.",
+  "results": {
+    "a": {
+      "overall": "PASS_LIMITED",
+      "release": false,
+      "scope": "bounded selection research policy",
+      "libraryRevision": "625a1c73524c808a9007461a15b5caced56612125729990b491556347b58c497",
+      "optionCount": 3,
+      "inputs": {
+        "fixedValuesRequired": true,
+        "queryEditingAllowed": true,
+        "filteringProviderAvailable": true,
+        "searchExplicitlyRequired": null,
+        "optionCount": 3,
+        "searchRequiredAbove": 15,
+        "completionAssistancePreferred": false,
+        "selectCapabilities": {
+          "role": "choice",
+          "valueDomain": "listed-keys",
+          "valueDisplayEditable": false,
+          "searchMode": "none",
+          "selectionCardinality": "one",
+          "preservesSuppliedOrder": true,
+          "completionMode": "none"
+        },
+        "autocompleteCapabilities": {
+          "role": "choice",
+          "valueDomain": "listed-keys",
+          "valueDisplayEditable": true,
+          "searchMode": "query-provider",
+          "selectionCardinality": "one",
+          "preservesSuppliedOrder": true,
+          "completionMode": "label-on-confirm"
+        }
+      },
+      "assessment": {
+        "reason": "project-preference-for-simple-fixed-choice",
+        "searchNeed": "not-required",
+        "choice": "Select",
+        "Select": "eligible",
+        "Autocomplete": "eligible"
+      },
+      "capabilitySources": [
+        {
+          "component": "Select",
+          "profile": "docs/libraries/frozen/example-selection-01/components/select/ux.json",
+          "sha256": "f279ceb7feb9dce0fcd34e3f1a9feeaac8a9772ed34aabf63a2b8723db9295a5"
+        },
+        {
+          "component": "Autocomplete",
+          "profile": "docs/libraries/frozen/example-selection-01/components/autocomplete/ux.json",
+          "sha256": "0798db1d49a14617e5611e2cbe900c50a9f6798d25afec4fc9f5d627151c16d7"
+        },
+        {
+          "component": "Input",
+          "profile": "docs/libraries/frozen/example-selection-01/components/input/ux.json",
+          "sha256": "16c01b5b2fb955ea620a00a770eb6a154f9e108a6a1a32522edb7f6fd66a5b91"
+        }
+      ],
+      "policySource": {
+        "path": "libraries/example/selection-policy.json",
+        "sha256": "3fd63e1915e30aa9d8759d13701de0f80d67d6680da660598f4ca08a5f490363"
+      },
+      "logicSha256": "6f5868a1f1a253fa4fdbcc500efc3d10d9c98ba67c182460477f3dd2d8a05d6b",
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "reason": "project-preference-for-simple-fixed-choice",
+          "searchNeed": "not-required",
+          "choice": "Select",
+          "Select": "eligible",
+          "Autocomplete": "eligible"
+        }
+      },
+      "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+    },
+    "b": {
+      "overall": "PASS_LIMITED",
+      "release": false,
+      "scope": "bounded selection research policy",
+      "libraryRevision": "625a1c73524c808a9007461a15b5caced56612125729990b491556347b58c497",
+      "optionCount": 30,
+      "inputs": {
+        "fixedValuesRequired": true,
+        "queryEditingAllowed": true,
+        "filteringProviderAvailable": true,
+        "searchExplicitlyRequired": null,
+        "optionCount": 30,
+        "searchRequiredAbove": 15,
+        "completionAssistancePreferred": false,
+        "selectCapabilities": {
+          "role": "choice",
+          "valueDomain": "listed-keys",
+          "valueDisplayEditable": false,
+          "searchMode": "none",
+          "selectionCardinality": "one",
+          "preservesSuppliedOrder": true,
+          "completionMode": "none"
+        },
+        "autocompleteCapabilities": {
+          "role": "choice",
+          "valueDomain": "listed-keys",
+          "valueDisplayEditable": true,
+          "searchMode": "query-provider",
+          "selectionCardinality": "one",
+          "preservesSuppliedOrder": true,
+          "completionMode": "label-on-confirm"
+        }
+      },
+      "assessment": {
+        "reason": "required-search-with-fixed-commit",
+        "searchNeed": "required",
+        "choice": "Autocomplete",
+        "Select": "incompatible-search",
+        "Autocomplete": "eligible"
+      },
+      "capabilitySources": [
+        {
+          "component": "Select",
+          "profile": "docs/libraries/frozen/example-selection-01/components/select/ux.json",
+          "sha256": "f279ceb7feb9dce0fcd34e3f1a9feeaac8a9772ed34aabf63a2b8723db9295a5"
+        },
+        {
+          "component": "Autocomplete",
+          "profile": "docs/libraries/frozen/example-selection-01/components/autocomplete/ux.json",
+          "sha256": "0798db1d49a14617e5611e2cbe900c50a9f6798d25afec4fc9f5d627151c16d7"
+        },
+        {
+          "component": "Input",
+          "profile": "docs/libraries/frozen/example-selection-01/components/input/ux.json",
+          "sha256": "16c01b5b2fb955ea620a00a770eb6a154f9e108a6a1a32522edb7f6fd66a5b91"
+        }
+      ],
+      "policySource": {
+        "path": "libraries/example/selection-policy.json",
+        "sha256": "3fd63e1915e30aa9d8759d13701de0f80d67d6680da660598f4ca08a5f490363"
+      },
+      "logicSha256": "6f5868a1f1a253fa4fdbcc500efc3d10d9c98ba67c182460477f3dd2d8a05d6b",
+      "native": {
+        "stage": "evaluated",
+        "value": {
+          "reason": "required-search-with-fixed-commit",
+          "searchNeed": "required",
+          "choice": "Autocomplete",
+          "Select": "incompatible-search",
+          "Autocomplete": "eligible"
+        }
+      },
+      "stderr": "SLF4J(W): No SLF4J providers were found.\nSLF4J(W): Defaulting to no-operation (NOP) logger implementation\nSLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.\n"
+    }
+  }
+}

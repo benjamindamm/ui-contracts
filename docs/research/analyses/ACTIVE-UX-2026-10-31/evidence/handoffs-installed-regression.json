@@ -1,0 +1,16 @@
+{
+  "id": "handoffs-installed",
+  "command": [
+    "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/validation/.venv/bin/python",
+    "tools/skill-tests/ui-contracts/test_handoffs.py",
+    "--skill",
+    "/Users/kcnpxcp/.codex/skills/ui-contracts",
+    "--output",
+    "/tmp/ui-contracts-active-ux-20261031/handoffs-installed.json"
+  ],
+  "exitCode": 0,
+  "tests": 37,
+  "elapsedSeconds": 0.37,
+  "stdout": "",
+  "stderr": ".....................................\n----------------------------------------------------------------------\nRan 37 tests in 0.297s\n\nOK\n"
+}

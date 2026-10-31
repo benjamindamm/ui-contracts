@@ -1,0 +1,25 @@
+{
+  "sourceMatchesInstalled": true,
+  "fileHashes": {
+    "SKILL.md": "3f026b67262ca523522f88c8f67336e3296e6a7f150895c1daf885b6723d0d34",
+    "references/geometry.md": "216695de9372542bb178a8103b31c4d013f22534bd26c069341c715f72ef7fbc",
+    "references/authoring.md": "ed7ed2d947a6323ceb79860d3bacbc5104a06a53d96c8938a7bdc82167a05855",
+    "references/ux.md": "36bc8c0ee5ca7f6edc6293f6993eb3e202f329ce42a44f86bb906535add56838",
+    "references/validation.md": "d6cd126feb35ce0a0f67ede12116478d0d1d1eee16f386b13c4e4171dddf9886",
+    "references/handoff-contract.md": "44b5ccfeffee56ad94b2ad404004aae8603aaa17d6fa4d984577307c6164448f",
+    "references/workflow.md": "37e27c812afbcae117b0512be0ef898bf53c725db4a58540dfeea03bbaa3b5d9",
+    "references/reproducibility.md": "217a71ee1df961d188705828756a74ea881aaef61d7f9eb8aadc222aaca4cfb7",
+    "references/integration-review.md": "5867fc2b31df8f2afd5e8527e29ff4344cf4611abf7137a0720be0d5275fe3eb",
+    "references/roles/reviewer.md": "19ac4faa7300b8c888e997bde95e881576cf4470d19e1f9f912794ee136e3d29",
+    "references/roles/builder.md": "ab17dad12064bd1d3273549e17590b5ece25a575779ae36d7077a3c37f5b8d0a",
+    "references/roles/repair.md": "0a443c7d85c92b474995ca2ad497deb5f6c6930fd0b0c6006ee40a28a7775fe7",
+    "references/roles/coordinator.md": "347b35781066e75b56471d4fe55d590247427795bc751a70248019344606aeeb",
+    "references/roles/mapper.md": "802c3ba90246c926e4feb4439d7ce5c4b4fd766d63581802b6f124a61727e3f5",
+    "agents/openai.yaml": "ff8a77f9820d0e53cddf138614c2935b2b7e77dc11c15a764066fb6f579af58d",
+    "scripts/contracts.py": "06552636c4cee503cd54acddd9d8de43fe8b26fed05dd0ffb52f926f9ce5fe9e",
+    "scripts/handoffs.py": "567bc9e943c416a839d5031e047b6a4ac0a8701a1b1db4a05915c728c898fad7",
+    "assets/handoffs/handoff.json": "5a2d8e9904bd6ed04958e80faeaae0143a150364138878869fb7de852d27cd58",
+    "assets/handoffs/task.json": "79e5d0135b3f40f7b7b80e07c30ac8f529c0ae6b14d26fa6a0b7dabb4185931d"
+  },
+  "scope": "Byte comparison, not a model forward-test"
+}

@@ -1,0 +1,11 @@
+const p=browser.page((await browser.pages.list()).find(x=>x.url==='http://127.0.0.1:8770/').pageId);
+for(let i=0;i<11;i++)await p.press('ArrowDown');
+await p.waitForSelector('[data-owner=A] input[aria-activedescendant$="A-12"]');
+const ax=await p.cdp('Accessibility.getFullAXTree','{}');
+await p.evaluate(async ax=>research.capture('ac-scroll',{ax}),ax);
+await p.press('Enter');await p.waitForSelector('[data-owner=A][data-phase=closed]');
+await p.evaluate(async()=>research.capture('ac-commit',{}));
+const s=await p.snapshot({mode:'interactive'});await p.fill(s.refs.find(x=>x.name==='Suche B'&&x.role==='combobox').ref,'B');
+await p.waitForSelector('[data-owner=B][data-phase=loading]');
+await p.evaluate(async()=>{research.deliver(research.requests.at(-1).id,[{key:'B-only',label:'Nur B'}]);await research.capture('ac-isolation',{});});
+return await p.evaluate(()=>({A:research.snapshot().A,errors:research.errors}));

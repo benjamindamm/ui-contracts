@@ -1,0 +1,13 @@
+/* Leading token binding: --select-search-* maps to ../../tokens.json selectWithSearch.*. */
+[data-component="SelectWithSearch"] { width: var(--select-search-width); font-family: var(--select-search-font-family); font-size: var(--select-search-font-size); color: var(--select-search-text); }
+[data-component="SelectWithSearch"] [data-part="label"] { display: block; margin-bottom: var(--select-search-label-gap); }
+[data-component="SelectWithSearch"] [data-part="trigger"] { box-sizing: border-box; width: 100%; height: var(--select-search-input-height); padding: 0 var(--select-search-padding-inline); border: var(--select-search-border-width) solid var(--select-search-border); border-radius: var(--select-search-radius); background: var(--select-search-surface); color: var(--select-search-text); font: inherit; }
+[data-component="SelectWithSearch"] [data-part="trigger"]:focus-visible { outline: 2px solid var(--select-search-focus); outline-offset: 2px; }
+[data-component="SelectWithSearch"] [data-part="trigger"]:disabled { color: var(--select-search-disabled); }
+[data-component="SelectWithSearch"] [data-part="hint"] { color: var(--select-search-muted); }
+[data-component="SelectWithSearch"] [data-part="error"] { color: var(--select-search-error); }
+
+[data-component="SelectWithSearch"] [data-part="dialog"] { background: var(--select-search-surface); border: 1px solid var(--select-search-border); padding: 8px; }
+[data-component="SelectWithSearch"] [data-part="listbox"] { max-height: 160px; overflow-y: auto; }
+[data-component="SelectWithSearch"] [data-part="option"] { padding: 8px; }
+[data-component="SelectWithSearch"] [data-part="option"][aria-selected="true"] { outline: 2px solid var(--select-search-focus); }

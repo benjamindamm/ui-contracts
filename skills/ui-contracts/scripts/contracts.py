@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Delegate the UI-Contracts gate, or inspect original artifacts without claiming full validation."""
-import argparse,hashlib,json,os,subprocess,sys
+import argparse,hashlib,json,os,subprocess,sys,importlib.util,importlib.metadata
 from pathlib import Path
 SKILL=Path(__file__).resolve().parents[1]
 
@@ -13,9 +13,20 @@ def repository(explicit):
 
 def inspect(repo,candidate):
  sys.path.insert(0,str(repo/'tools/validation'));import check
- readiness=check.run(repo/'docs/research/experiments/2026-10-25/ip01-static/reference','static')
- if readiness['overall']!='PASS_LIMITED':
-  r=blocked('REQUIRED_PROJECT_CHECKER_UNAVAILABLE','The existing reference check did not establish tool readiness.');r['toolReadinessNotCandidateValidation']=readiness;return r
+ # Inspectors need working original checkers, not a successful historical research package.
+ readiness={'dependencies':{},'schemas':[]}
+ try:
+  for package,expected in [('lxml','6.0.2'),('jsonschema','4.25.1')]:
+   actual=importlib.metadata.version(package)
+   if actual!=expected:raise ValueError('Unsupported checker version: '+package)
+   readiness['dependencies'][package]=actual
+  provenance=check.strict((repo/'tools/validation/schemas/provenance.json').read_text())
+  for entry in provenance['files']:
+   path=(repo/'tools/validation'/entry['file']).resolve()
+   if not path.is_relative_to((repo/'tools/validation').resolve()) or hashlib.sha256(path.read_bytes()).hexdigest()!=entry['sha256']:raise ValueError('Original schema unavailable or changed: '+entry['file'])
+   readiness['schemas'].append(entry['file'])
+ except (OSError,ValueError,KeyError,importlib.metadata.PackageNotFoundError) as e:
+  r=blocked('REQUIRED_PROJECT_CHECKER_UNAVAILABLE',str(e));r['checkerReadiness']=readiness;return r
  from lxml import etree,html
  import jsonschema
  schemas=repo/'tools/validation/schemas'
@@ -59,16 +70,35 @@ def inspect(repo,candidate):
  errors=[r for r in rows if r['status']=='FAIL'];r=blocked('SEMANTIC_PROFILE_UNSUPPORTED','Only syntax and the available original schemas were inspected. This candidate has no general semantic/profile/runtime acceptance through this helper.')
  if errors:r.update(overall='FAIL',diagnostic={'code':'ARTIFACT_CHECK_FAILED','detail':'Candidate syntax or an available original schema was rejected.'})
  r.update(kind='ui-contracts-original-artifact-inspection',candidate=str(candidate),artifacts=rows,passedScope=[{'file':r['file'],'checks':r['checks']}for r in rows if r['status']=='PASS_LIMITED'],warnings=['Original SCXML schema is loose; HTML parsing is not conformance.','DTCG/CSS/HTML/ARIA/APG are not fully original-validated.'],unverified=['General cross-file references, ownership and composition for this candidate','Runtime events, focus, scrolling, AX, lifecycle','Target generation, screenreader, real IME and native platforms'],productionRelease=False)
+ # Own minimal reference/identity checks complement the original format checks.
+ if candidate.is_dir() and ((candidate/'component.json').is_file() or (candidate/'library.json').is_file()):
+  try:
+   spec=importlib.util.spec_from_file_location('ui_contracts_library_inspection',repo/'tools/libraries/check.py')
+   structural=importlib.util.module_from_spec(spec);spec.loader.exec_module(structural)
+   boundary=next((p for p in [candidate,*candidate.parents] if (p/'library.json').is_file()),candidate)
+   bound_result=structural.inspect(boundary,repo,None if (candidate/'library.json').is_file() else candidate)
+   r['bindings']=bound_result
+   if bound_result['overall']=='FAIL':
+    extra={'code':'COMPONENT_BINDING_INVALID','detail':bound_result['errors']}
+    if r['overall']=='FAIL':r.setdefault('additionalDiagnostics',[]).append(extra)
+    else:r.update(overall='FAIL',diagnostic=extra)
+  except (OSError,ValueError,KeyError,TypeError) as e:
+   r['bindingCheckerUnavailable']=str(e)
+   if r['overall']!='FAIL':r.update(overall='BLOCKED',diagnostic={'code':'COMPONENT_BINDING_CHECKER_UNAVAILABLE','detail':str(e)})
  # Optional font asset manifest is a separate, bounded check for a whole library.
  if candidate.is_dir() and(candidate/'library.json').is_file()and(candidate/'fonts.json').is_file():
   if candidate.parent.resolve()!= (repo/'libraries').resolve():
-   r.update(overall='BLOCKED',diagnostic={'code':'FONT_LIBRARY_ROOT_UNSUPPORTED','detail':'Inspect registered library roots under libraries/.'})
+   extra={'code':'FONT_LIBRARY_ROOT_UNSUPPORTED','detail':'Inspect registered library roots under libraries/.'}
+   r.setdefault('additionalDiagnostics',[]).append(extra)
+   if r['overall']!='FAIL':r.update(overall='BLOCKED',diagnostic=extra)
   else:
    try:
     proc=subprocess.run([sys.executable,str(repo/'tools/fonts/check.py'),'--repo',str(repo),'--library',candidate.name],capture_output=True,text=True,timeout=30)
     fonts=json.loads(proc.stdout);r['fontAssets']=fonts
     if proc.returncode or fonts.get('overall')!='PASS_LIMITED':r.update(overall='FAIL',diagnostic={'code':'FONT_ASSET_CHECK_FAILED','detail':'Declared font assets or token binding were rejected.'})
-   except Exception as e:r.update(overall='BLOCKED',diagnostic={'code':'FONT_CHECKER_UNAVAILABLE','detail':str(e)})
+   except Exception as e:
+    extra={'code':'FONT_CHECKER_UNAVAILABLE','detail':str(e)};r.setdefault('additionalDiagnostics',[]).append(extra)
+    if r['overall']!='FAIL':r.update(overall='BLOCKED',diagnostic=extra)
  return r
 
 def main():

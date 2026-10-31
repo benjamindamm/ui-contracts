@@ -21,3 +21,6 @@ __pycache__/
 
 # Lokales SSH-Tunnel-Skript
 /scripts/openpencil-storage-tunnel.sh
+
+# Reproducibly provisioned local runtime and setup receipts
+.runtime/

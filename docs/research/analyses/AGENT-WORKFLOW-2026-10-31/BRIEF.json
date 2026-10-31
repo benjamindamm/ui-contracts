@@ -1,0 +1,21 @@
+{
+  "goal": "Personendaten und Rufnummer in einem lokalen Formular erfassen.",
+  "fields": [
+    {
+      "key": "givenName",
+      "label": "Vorname"
+    },
+    {
+      "key": "familyName",
+      "label": "Nachname"
+    },
+    {
+      "key": "nationalNumber",
+      "label": "Rufnummer",
+      "valueType": "string"
+    }
+  ],
+  "countryRequirement": "Exactly one supplied country key. Selected label not editable. Optional separate search. Preserve supplied order.",
+  "target": "web",
+  "scope": "Workflow integration probe only; no new model study or generated form."
+}

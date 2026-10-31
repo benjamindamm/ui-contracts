@@ -1,0 +1,97 @@
+{
+  "format": "ui-contracts-package-verification/1",
+  "date": "2026-10-31",
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "scope": "Technical workflow/context/navigation improvements; no target UI or model-performance claim",
+  "regressionExecutions": 262,
+  "suites": [
+    {
+      "suite": "tools/libraries/test_*.py",
+      "executions": 35,
+      "status": "PASS"
+    },
+    {
+      "suite": "tools/ux/test_*.py",
+      "executions": 48,
+      "status": "PASS"
+    },
+    {
+      "suite": "tools/fonts/test_*.py",
+      "executions": 21,
+      "status": "PASS"
+    },
+    {
+      "suite": "tools/design-review/test_*.py",
+      "executions": 19,
+      "status": "PASS"
+    },
+    {
+      "suite": "tools/test_setup.py",
+      "executions": 3,
+      "status": "PASS"
+    },
+    {
+      "suite": "tools/research/test_navigation.py",
+      "executions": 5,
+      "status": "PASS"
+    },
+    {
+      "suite": "static-countercases",
+      "executions": 47,
+      "status": "PASS"
+    },
+    {
+      "suite": "thin-context",
+      "executions": 5,
+      "status": "PASS"
+    },
+    {
+      "suite": "handoffs",
+      "executions": 37,
+      "status": "PASS"
+    },
+    {
+      "suite": "adapter-source-bindings",
+      "executions": 2,
+      "status": "PASS"
+    },
+    {
+      "suite": "tools/charts/test_pie.mjs",
+      "executions": 15,
+      "status": "PASS"
+    },
+    {
+      "suite": "tools/openpencil/test_layout.mjs",
+      "executions": 17,
+      "status": "PASS"
+    },
+    {
+      "suite": "tools/openpencil/test_themes.mjs",
+      "executions": 8,
+      "status": "PASS"
+    }
+  ],
+  "newWorkflowTests": 18,
+  "newContextTests": 5,
+  "newNavigationTests": 5,
+  "coreSkillBeforeCharacters": 7246,
+  "coreSkillAfterCharacters": 2928,
+  "expandedContextBeforeCharacters": 7152,
+  "expandedContextAfterCharacters": 4104,
+  "independentModelStudy": false,
+  "newBrowserExecution": false,
+  "newUiGenerated": false,
+  "metadataRequiredForNormalWork": false,
+  "originalLibraryModifiedByThisPackage": false,
+  "historicalIntegrity": "evidence/historical-integrity.json",
+  "sourceMatchesInstalled": true,
+  "knownDocumentationProvenanceLimit": "before/README-provenance.json",
+  "notChecked": [
+    "Actual initial system/tool/model request tokens",
+    "Actual host lazy-loading behavior",
+    "Semantic completeness of arbitrary UI reviews",
+    "Model reliability improvement",
+    "New UI target runtime"
+  ]
+}

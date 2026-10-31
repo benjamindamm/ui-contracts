@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-31",
+  "userDecision": "../../decisions/RD-002-AGENT-WORKFLOW-SCOPE.md",
+  "originalAudit": "../FRAMEWORK-AUDIT-2026-10-31/findings.json",
+  "release": false,
+  "findings": {
+    "FW-009": {
+      "status": "mitigated-for-future-selection-workflows",
+      "scope": "Adapter produces and checks existing v1 tasks/handoffs; historical special formats unchanged",
+      "remaining": "Arbitrary authoring workflows still use generic v1 tasks directly"
+    },
+    "FW-010": {
+      "status": "optional-research-not-framework-gate",
+      "scope": "Model-comparison proof is not required for normal use or completion of this improvement package",
+      "remaining": "No general model reliability estimate or controlled comparison claimed"
+    },
+    "FW-006": {
+      "status": "open",
+      "scope": "No general impact/migration engine implemented; whole-library pins remain strict"
+    },
+    "FW-008": {
+      "status": "open-beyond-existing-selection-policy"
+    },
+    "FW-011": {
+      "status": "open-beyond-existing-bounded-tools"
+    },
+    "FW-012": {
+      "status": "open-beyond-existing-bounded-target-evidence"
+    }
+  },
+  "newIssues": [
+    "IA-001",
+    "IA-002",
+    "IA-003",
+    "IA-004",
+    "IA-005",
+    "WF-001",
+    "WF-002"
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "overall": "READY",
+  "release": false,
+  "scope": "pinned local dependency provisioning",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "javaVersion": "openjdk version \"25.0.2\" 2026-01-20\nOpenJDK Runtime Environment Homebrew (build 25.0.2)\nOpenJDK 64-Bit Server VM Homebrew (build 25.0.2, mixed mode, sharing)",
+  "engineArtifacts": [
+    {
+      "name": "dmn-engine-1.12.6.jar",
+      "sha256": "38b551db67451db60628c96c3453f21783ec4929300f8ec2a377f61aa1381ff2",
+      "cached": false
+    },
+    {
+      "name": "feel-engine-1.22.1.jar",
+      "sha256": "27cac300665d723d3930c38b7520f7a9d869555d0e402b67742de6e94e612dc0",
+      "cached": false
+    },
+    {
+      "name": "scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+      "cached": false
+    },
+    {
+      "name": "fastparse_2.13-3.1.1.jar",
+      "sha256": "ff3f37dad0f89c9cff494cb984edc122a3c282f063790949e825ae039dcad9d5",
+      "cached": false
+    },
+    {
+      "name": "sourcecode_2.13-0.4.0.jar",
+      "sha256": "7ce9b8c285a04280374d739d7b799408b2cfa40cc3173960848aec9ee8450fed",
+      "cached": false
+    },
+    {
+      "name": "geny_2.13-1.1.0.jar",
+      "sha256": "bd93f278047bb533da70b42d2b21dc297d946bab86a4fe844c200b4db8d174b5",
+      "cached": false
+    },
+    {
+      "name": "java-uuid-generator-5.2.0.jar",
+      "sha256": "5724d6a0f27db90d45af884f4520bce581f29eebe21840d07cae22b670bb8ebb",
+      "cached": false
+    },
+    {
+      "name": "jackson-module-scala_2.13-2.22.1.jar",
+      "sha256": "8b45753f2233bea70f9d7f8d5406fc007eb264f98366246f36cb98508ed67e75",
+      "cached": false
+    },
+    {
+      "name": "paranamer-2.8.3.jar",
+      "sha256": "a9df136f2e926b37a838a5b4e2227343c3a755d15724b3a8350b4aea4b158945",
+      "cached": false
+    },
+    {
+      "name": "camunda-dmn-model-7.24.0.jar",
+      "sha256": "38f8c7e4889c8fa531d75c67ee0b9439b34d4d607edf0ab6bdbc71241d42ae73",
+      "cached": false
+    },
+    {
+      "name": "camunda-xml-model-7.24.0.jar",
+      "sha256": "5662dfb995780898ccd5ce648768604c5d939aaa1bbf378232fc763d2aac5508",
+      "cached": false
+    },
+    {
+      "name": "slf4j-api-2.0.20.jar",
+      "sha256": "7e1446499b359675d8aabe6af2de86b85e72ae8a2a932c0b40d0e5ba57097439",
+      "cached": false
+    },
+    {
+      "name": "jackson-databind-2.22.1.jar",
+      "sha256": "7dcd7e53bec1f56c7ad278bd1ca0840bebcc595d61ce44d6a8439abb75b965b2",
+      "cached": false
+    },
+    {
+      "name": "jackson-annotations-2.22.jar",
+      "sha256": "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0",
+      "cached": false
+    },
+    {
+      "name": "jackson-core-2.22.1.jar",
+      "sha256": "941ff029bcdb93e83d209ce516c1a7fb8bbac07d0a2fa122f5bf194b2cd7b4f4",
+      "cached": false
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-version"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "openjdk version \"25.0.2\" 2026-01-20\nOpenJDK Runtime Environment Homebrew (build 25.0.2)\nOpenJDK 64-Bit Server VM Homebrew (build 25.0.2, mixed mode, sharing)\n"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-m",
+        "venv",
+        "/private/tmp/ui-contracts-clean-package3/tools/validation/.venv"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/private/tmp/ui-contracts-clean-package3/tools/validation/.venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "-r",
+        "/private/tmp/ui-contracts-clean-package3/tools/validation/requirements.lock.txt"
+      ],
+      "exitCode": 0,
+      "stdout": "Collecting attrs==26.1.0\n  Using cached attrs-26.1.0-py3-none-any.whl (67 kB)\nCollecting jsonschema==4.25.1\n  Using cached jsonschema-4.25.1-py3-none-any.whl (90 kB)\nCollecting jsonschema-specifications==2025.9.1\n  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)\nCollecting lxml==6.0.2\n  Using cached lxml-6.0.2-cp39-cp39-macosx_10_9_universal2.whl (8.6 MB)\nCollecting referencing==0.36.2\n  Using cached referencing-0.36.2-py3-none-any.whl (26 kB)\nCollecting rpds-py==0.27.1\n  Using cached rpds_py-0.27.1-cp39-cp39-macosx_11_0_arm64.whl (354 kB)\nCollecting typing_extensions==4.16.0\n  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)\nInstalling collected packages: typing-extensions, rpds-py, attrs, referencing, jsonschema-specifications, lxml, jsonschema\nSuccessfully installed attrs-26.1.0 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 lxml-6.0.2 referencing-0.36.2 rpds-py-0.27.1 typing-extensions-4.16.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/kcnpxcp/.nvm/versions/node/v24.13.1/bin/node",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "v24.13.1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/kcnpxcp/.nvm/versions/node/v24.13.1/bin/npm",
+        "ci",
+        "--prefix",
+        "/private/tmp/ui-contracts-clean-package3/tools/validation",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exitCode": 0,
+      "stdout": "\nadded 4 packages in 368ms\n",
+      "stderr": "npm warn Unknown user config \"email\". This will stop working in the next major version of npm.\n"
+    },
+    {
+      "command": [
+        "/Users/kcnpxcp/.nvm/versions/node/v24.13.1/bin/npm",
+        "ci",
+        "--prefix",
+        "/private/tmp/ui-contracts-clean-package3/tools/openpencil",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exitCode": 0,
+      "stdout": "\nadded 250 packages in 3s\n",
+      "stderr": "npm warn Unknown user config \"email\". This will stop working in the next major version of npm.\nnpm warn EBADENGINE Unsupported engine {\nnpm warn EBADENGINE   package: 'text-to-js-identifier@0.0.4',\nnpm warn EBADENGINE   required: { node: '0.6.x' },\nnpm warn EBADENGINE   current: { node: 'v24.13.1', npm: '11.8.0' }\nnpm warn EBADENGINE }\nnpm warn deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142\nnpm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead\nnpm warn deprecated har-validator@5.1.5: this library is no longer supported\nnpm warn deprecated whatwg-encoding@1.0.5: Use @exodus/bytes instead for a more spec-conformant and faster implementation\nnpm warn deprecated left-pad@1.3.0: use String.prototype.padStart()\nnpm warn deprecated domexception@1.0.1: Use your platform's native DOMException instead\nnpm warn deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.\nnpm warn deprecated uuid@3.4.0: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).\nnpm warn deprecated @babel/polyfill@7.12.1: 🚨 This package has been deprecated in favor of separate inclusion of a polyfill and regenerator-runtime (when needed). See the @babel/polyfill docs (https://babeljs.io/docs/en/babel-polyfill) for more information.\nnpm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142\nnpm warn deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.\n"
+    },
+    {
+      "command": [
+        "/Users/kcnpxcp/.nvm/versions/node/v24.13.1/bin/npm",
+        "ci",
+        "--prefix",
+        "/private/tmp/ui-contracts-clean-package3/tools/charts",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exitCode": 0,
+      "stdout": "\nadded 2 packages in 170ms\n",
+      "stderr": "npm warn Unknown user config \"email\". This will stop working in the next major version of npm.\n"
+    }
+  ],
+  "locks": {
+    "tools/validation/requirements.lock.txt": "3eb3b1463f55275ab481fb70e8acef567babc7629de93e3293be3c3aae31eac2",
+    "tools/validation/package-lock.json": "415149c62f7840de4e6209291dc458b854663b07e74fe29323b4a74b616dfb42",
+    "tools/openpencil/package-lock.json": "ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6",
+    "tools/charts/package-lock.json": "b98c2419e568c3671b95368f88c3233fd8646b281f701d963f450814b565bd59",
+    "tools/ux/runtime.lock.json": "84a61bdd34782ea49c416ff924ef20fb7bbcd2e0fd156bb9f960ac7cf9fba2d4",
+    "tools/ux/runtime-artifacts.json": "9e3e7708383e01e4916158e7c2540ea9836cc948e594ca2aee9a242587483e30"
+  }
+}

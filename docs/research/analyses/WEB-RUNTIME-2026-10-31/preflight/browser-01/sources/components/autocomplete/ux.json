@@ -1,0 +1,64 @@
+{
+  "format": "ui-contracts-ux-capabilities/0.3",
+  "componentId": "ui-contracts:Autocomplete",
+  "capabilities": {
+    "role": "choice",
+    "valueDomain": "listed-keys",
+    "valueDisplayEditable": true,
+    "searchMode": "query-provider",
+    "selectionCardinality": "one",
+    "preservesSuppliedOrder": true,
+    "completionMode": "label-on-confirm",
+    "interactionIntent": "completion-assistance",
+    "querySurface": "value-editor",
+    "unknownInputPolicy": "reject-commit"
+  },
+  "sources": [
+    {
+      "path": "component.json",
+      "sha256": "c232d14283cece6e923a6a4e113327f4eea215a72977c7d4c22cc6ace7462bdd"
+    },
+    {
+      "path": "interface.json",
+      "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+    },
+    {
+      "path": "behavior.scxml",
+      "sha256": "5c740ad9fcb3303f93b174250cb5690ff4badacc99ac486e2522cef560d0fdae"
+    },
+    {
+      "path": "accessibility.html",
+      "sha256": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470"
+    },
+    {
+      "path": "accessibility.rules.json",
+      "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+    },
+    {
+      "path": "../overlay/component.json",
+      "sha256": "8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269"
+    },
+    {
+      "path": "../overlay/behavior.scxml",
+      "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8"
+    },
+    {
+      "path": "../scroll-area/component.json",
+      "sha256": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff"
+    },
+    {
+      "path": "../scroll-area/behavior.scxml",
+      "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8"
+    }
+  ],
+  "notes": [
+    "Editable query is distinct from committed value; this variant rejects arbitrary new committed keys.",
+    "Filtering needs a query-aware results provider. The component does not itself supply every country dataset or filtering implementation.",
+    "Selected label completes the query on confirmation; inline completion during typing is not promised.",
+    "This existing listed-key variant is NOT the free-text address-writing aid described by the user. Do not infer that every autocomplete rejects unknown text.",
+    "For fixed-choice tasks prefer a defined separate-filter selector; use this variant only with an explicit reason and existing membership enforcement."
+  ],
+  "verification": {
+    "profile": "composed-autocomplete/1"
+  }
+}

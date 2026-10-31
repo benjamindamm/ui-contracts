@@ -1,0 +1,21 @@
+{
+  "format": "ui-contracts-runtime-downloads/1",
+  "registry": "Maven Central",
+  "urls": {
+    "dmn-engine-1.12.6.jar": "https://repo.maven.apache.org/maven2/org/camunda/bpm/extension/dmn/scala/dmn-engine/1.12.6/dmn-engine-1.12.6.jar",
+    "feel-engine-1.22.1.jar": "https://repo.maven.apache.org/maven2/org/camunda/feel/feel-engine/1.22.1/feel-engine-1.22.1.jar",
+    "scala-library-2.13.18.jar": "https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+    "fastparse_2.13-3.1.1.jar": "https://repo.maven.apache.org/maven2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar",
+    "sourcecode_2.13-0.4.0.jar": "https://repo.maven.apache.org/maven2/com/lihaoyi/sourcecode_2.13/0.4.0/sourcecode_2.13-0.4.0.jar",
+    "geny_2.13-1.1.0.jar": "https://repo.maven.apache.org/maven2/com/lihaoyi/geny_2.13/1.1.0/geny_2.13-1.1.0.jar",
+    "java-uuid-generator-5.2.0.jar": "https://repo.maven.apache.org/maven2/com/fasterxml/uuid/java-uuid-generator/5.2.0/java-uuid-generator-5.2.0.jar",
+    "jackson-module-scala_2.13-2.22.1.jar": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.22.1/jackson-module-scala_2.13-2.22.1.jar",
+    "paranamer-2.8.3.jar": "https://repo.maven.apache.org/maven2/com/thoughtworks/paranamer/paranamer/2.8.3/paranamer-2.8.3.jar",
+    "camunda-dmn-model-7.24.0.jar": "https://repo.maven.apache.org/maven2/org/camunda/bpm/model/camunda-dmn-model/7.24.0/camunda-dmn-model-7.24.0.jar",
+    "camunda-xml-model-7.24.0.jar": "https://repo.maven.apache.org/maven2/org/camunda/bpm/model/camunda-xml-model/7.24.0/camunda-xml-model-7.24.0.jar",
+    "slf4j-api-2.0.20.jar": "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar",
+    "jackson-databind-2.22.1.jar": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.22.1/jackson-databind-2.22.1.jar",
+    "jackson-annotations-2.22.jar": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22.jar",
+    "jackson-core-2.22.1.jar": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.22.1/jackson-core-2.22.1.jar"
+  }
+}

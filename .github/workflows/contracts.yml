@@ -1,0 +1,30 @@
+name: Contract regressions
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  bounded-unit-and-native:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install locked project dependencies
+        run: python3 tools/setup.py
+      - name: Unit and native contract regressions (no browser claim)
+        run: python3 tools/test.py --unit-only --out .runtime/ci-tests
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bounded-contract-results
+          path: |
+            .runtime/ci-tests/
+            .runtime/setup*.json

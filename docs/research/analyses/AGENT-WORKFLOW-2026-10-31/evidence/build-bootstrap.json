@@ -1,0 +1,21 @@
+{
+  "format": "ui-contracts-bootstrap/1",
+  "taskId": "WF-UX-01-build",
+  "taskRevision": 1,
+  "role": "builder",
+  "phase": "normal",
+  "taskReference": {
+    "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/tasks/build-v1.json",
+    "sha256": "4f379e4f8cf2210d6b9e075e96baa7d64f5bf9d23ee5386f7c20afb6ad76eb54"
+  },
+  "skillRoleReference": {
+    "path": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/skills/ui-contracts/references/roles/builder.md",
+    "sha256": "ab17dad12064bd1d3273549e17590b5ece25a575779ae36d7077a3c37f5b8d0a"
+  },
+  "loadOrder": [
+    "Read the role card and task first.",
+    "Load only task sources/inputs needed for the current step; follow cross-references when necessary.",
+    "Read acceptance and output boundaries before writing. Original sources lead; no component release."
+  ],
+  "release": false
+}

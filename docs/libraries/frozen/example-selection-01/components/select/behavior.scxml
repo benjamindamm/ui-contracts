@@ -1,0 +1,17 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="Select" initial="machine">
+<datamodel><data id="options" expr="[]"/><data id="value" expr="undefined"/><data id="enabled" expr="true"/><data id="required" expr="false"/></datamodel>
+<state id="machine" initial="interactive">
+ <transition event="SET_OPTIONS" cond="_event.data &amp;&amp; Array.isArray(_event.data.options) &amp;&amp; _event.data.options.every(function(o,i,a){return o &amp;&amp; typeof o.key==='string' &amp;&amp; o.key.trim().length&gt;0 &amp;&amp; typeof o.label==='string' &amp;&amp; o.label.trim().length&gt;0 &amp;&amp; (o.disabled===undefined || typeof o.disabled==='boolean') &amp;&amp; a.every(function(p,j){return i===j || p.key!==o.key;});})">
+  <assign location="options" expr="_event.data.options.slice()"/>
+  <if cond="value!==undefined &amp;&amp; !options.some(function(o){return o.key===value &amp;&amp; !o.disabled;})"><assign location="value" expr="undefined"/><send event="value-change" target="#_parent"><param name="value" expr="value"/><param name="reason" expr="'options-change'"/></send></if>
+ </transition>
+ <transition event="SET_VALUE" cond="_event.data &amp;&amp; (_event.data.value===undefined || options.some(function(o){return o.key===_event.data.value &amp;&amp; !o.disabled;}))"><assign location="value" expr="_event.data.value"/></transition>
+ <transition event="SET_REQUIRED" cond="_event.data &amp;&amp; typeof _event.data.required==='boolean'"><assign location="required" expr="_event.data.required"/></transition>
+ <transition event="SET_ENABLED" cond="_event.data &amp;&amp; _event.data.enabled===false" target="disabled"><assign location="enabled" expr="false"/></transition>
+ <transition event="SET_ENABLED" cond="_event.data &amp;&amp; _event.data.enabled===true" target="interactive"><assign location="enabled" expr="true"/></transition>
+ <state id="interactive">
+  <transition event="USER_SELECT" cond="_event.data &amp;&amp; options.some(function(o){return o.key===_event.data.value &amp;&amp; !o.disabled;}) &amp;&amp; value!==_event.data.value"><assign location="value" expr="_event.data.value"/><send event="value-change" target="#_parent"><param name="value" expr="value"/><param name="reason" expr="'user'"/></send></transition>
+  <transition event="USER_CLEAR" cond="!required &amp;&amp; value!==undefined"><assign location="value" expr="undefined"/><send event="value-change" target="#_parent"><param name="value" expr="value"/><param name="reason" expr="'user'"/></send></transition>
+ </state>
+ <state id="disabled"/>
+</state></scxml>

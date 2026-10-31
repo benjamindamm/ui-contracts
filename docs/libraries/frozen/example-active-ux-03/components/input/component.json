@@ -1,0 +1,30 @@
+{
+  "format": "ui-contract-component-draft",
+  "id": "ui-contracts:Input",
+  "version": "0.2.0",
+  "status": "new-research-definition-not-runtime-qualified",
+  "domains": {
+    "interface": "interface.json",
+    "visual": {
+      "tokens": "../../tokens.json",
+      "css": "layout.css"
+    },
+    "behavior": "behavior.scxml",
+    "accessibility": {
+      "html": "accessibility.html",
+      "rules": "accessibility.rules.json"
+    }
+  },
+  "stories": "stories.json",
+  "anatomy": {
+    "label": "Visible and accessible name",
+    "control": "Native single-line input",
+    "hint": "Optional explanatory text",
+    "error": "Optional host-provided validation message"
+  },
+  "targetScope": {
+    "web": "Native semantic HTML, derived target implementation; browser/assistive technology behavior needs separate verification.",
+    "openpencil": "Not produced by this definition addition."
+  },
+  "ux": "ux.json"
+}

@@ -1,0 +1,36 @@
+{
+  "format": "ui-contracts-ux-capabilities/0.1",
+  "componentId": "ui-contracts:Select",
+  "capabilities": {
+    "role": "choice",
+    "valueDomain": "listed-keys",
+    "valueDisplayEditable": false,
+    "searchMode": "none",
+    "selectionCardinality": "one",
+    "preservesSuppliedOrder": true,
+    "completionMode": "none"
+  },
+  "sources": [
+    {
+      "path": "component.json",
+      "sha256": "34a4cd988008cedbfe1900959e98a2013b8a2cbf1e0b90e12c247198d919b330"
+    },
+    {
+      "path": "interface.json",
+      "sha256": "ba6041dc6f2ff398cee7378169de364060275abb1cc81d6a039f68e64d7ed247"
+    },
+    {
+      "path": "behavior.scxml",
+      "sha256": "32e70569a604817d433da99b5498ca4e759452aa4e838503d616d0ae172b3500"
+    },
+    {
+      "path": "accessibility.html",
+      "sha256": "8fac6f8b94646b667f9c95c06de393cd39386e99d878a0585bb682a3e1f7c62f"
+    }
+  ],
+  "notes": [
+    "Simple native single-select; no dedicated search field or filtering contract.",
+    "Browser type-ahead may exist but is not treated as a filtering guarantee.",
+    "Searchable Select is a possible new variant, not an already defined component in this library."
+  ]
+}

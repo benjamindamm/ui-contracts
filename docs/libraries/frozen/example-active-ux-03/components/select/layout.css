@@ -1,0 +1,8 @@
+/* Leading token binding: --select-* maps to ../../tokens.json select.*. */
+[data-component="Select"] { width: var(--select-width); font-family: var(--select-font-family); font-size: var(--select-font-size); color: var(--select-text); }
+[data-component="Select"] [data-part="label"] { display: block; margin-bottom: var(--select-label-gap); }
+[data-component="Select"] [data-part="control"] { box-sizing: border-box; width: 100%; height: var(--select-input-height); padding: 0 var(--select-padding-inline); border: var(--select-border-width) solid var(--select-border); border-radius: var(--select-radius); background: var(--select-surface); color: var(--select-text); font: inherit; }
+[data-component="Select"] [data-part="control"]:focus-visible { outline: 2px solid var(--select-focus); outline-offset: 2px; }
+[data-component="Select"] [data-part="control"]:disabled { color: var(--select-disabled); }
+[data-component="Select"] [data-part="hint"] { color: var(--select-muted); }
+[data-component="Select"] [data-part="error"] { color: var(--select-error); }

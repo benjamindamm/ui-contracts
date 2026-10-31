@@ -1,0 +1,15 @@
+# Reproduktions- und Modellvergleiche
+
+Nur lesen, wenn der Auftrag solche Läufe oder deren Bewertung betrifft. Führende Projektdokumentation: `docs/skills/REPRODUCIBILITY.md`; bekannte Fehler und Regressionen: `docs/skills/ISSUES.md`. Nicht für jede normale Autorenänderung einen Forschungsprozess verlangen.
+
+Der wiederverwendbare operative Kern liegt in [workflow.md](workflow.md): fokussierte Rollen, versionierte Übergaben, gezieltes Nachladen und geschützte Erstbewertung. Die Forschung untersucht die Wirkung dieser Skillverbesserung; nicht jeder Rollenauftrag ist selbst eine neue Studie.
+
+- Vor einem neuen Vergleich dieselbe Definitionsrevision, Werkzeugbindung und einen gemeinsamen Prüfkern samt Toleranzen festlegen. Prüfer, die selbst Kriterien ableiten, liefern eine zusätzliche Versuchsvariable. Unterschiedliche Originalurteile unter unterschiedlichen Kriterien sind keine Modellrangfolge.
+- Modell/Revision/Reasoning, Harnessbudget, Kontextregel, Erstauftrag, geladene Skills und exakte Fortsetzungstexte je Rolle aufzeichnen. Unbekannt bleibt unbekannt; Sessionmodell nicht still auf Builder oder Prüfer übertragen. Nutzte ein alter Lauf den Skill nachweislich nicht, den Fehler nicht als empirisch belegtes Skillversagen darstellen.
+- Bei erlaubter Kontexttrennung ausschließlich die erlaubten Quellen benutzen. Erst ein minimales vollständiges Artefakt liefern, danach ausbauen. Vor einem Limitstopp Checkpoint schreiben; Resume möglichst neutral. Neue fachliche Hinweise als veränderte Bedingung dokumentieren. Erfolgreicher Abschluss ist kein weiterer Abbruch.
+- Bei externer Analyse Originalordner unverändert lassen. Replays in Kopien, neue Bewertungen und Fehlerregister außerhalb. Historische Provenienzlücken lassen sich nicht durch neue Hashes reparieren.
+- Quellregeln vor dem Versiegeln gegen Annahmen und Kriterienwidersprüche prüfen. Keine optisch plausiblere Abweichung zulassen, wenn die Quelle sie bestimmt. Prüflogik braucht echte Assertions und Gegenfälle; manuelle Befunde separat belegen.
+- Für statische Designs nur vereinbarte native Daten/Annotationen prüfen. Kein DOM-/Screenreaderverhalten verlangen und kein pauschales Fehlen von Formatfähigkeiten behaupten. Fehlt ein definierter Annotationskanal, Umfang als ungeprüft kennzeichnen und bei entsprechendem Freigabeanspruch blockieren.
+- `tools/design-review/check.py` ist ein begrenzter nativer Gegenprüfer für die exakt gebundene Autocomplete-Definition, kein allgemeiner Adapter. `check_process.py` prüft Mindestmetadaten und referenzierte Dateihashes für künftige Läufe; Vollständigkeit ist kein Authentizitäts- oder Zugriffsaudit. Aufrufe und Regressionen stehen in `tools/design-review/README.md`.
+
+Bei jedem neuen Fehler Originalbeleg, Ursache (belegt oder Hypothese), isolierten Gegenfall, Reparatur, ausgeführten Regressionstest und Restgrenze im Projektregister ergänzen. Ursprüngliche Regeln oder Belege nicht nachträglich passend machen.

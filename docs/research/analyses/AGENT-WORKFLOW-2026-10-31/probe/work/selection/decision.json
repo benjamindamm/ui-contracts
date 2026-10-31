@@ -1,0 +1,1327 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "library": "example",
+  "libraryRevision": "ee738677b6197821d0278f986fb3efc8a388b29ce3f0aa29b59cddfa5e4fe172",
+  "scope": "fixed-choice-project-policy-with-bounded-contract-evidence",
+  "verification": {
+    "overall": "PASS_LIMITED",
+    "release": false,
+    "scope": "bounded-UX-source-and-native-contract-verification",
+    "library": "example",
+    "structure": {
+      "overall": "PASS_LIMITED",
+      "release": false,
+      "scope": "library-reference-identity-alias-and-selected-original-schema-checks",
+      "root": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example",
+      "componentCount": 6,
+      "errors": [],
+      "checks": [
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/component.json",
+          "sha256": "c232d14283cece6e923a6a4e113327f4eea215a72977c7d4c22cc6ace7462bdd"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/component.json",
+          "sha256": "8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/component.json",
+          "sha256": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/component.json",
+          "sha256": "5ef05663628c74c7276befe465c8f823bb4656c5d1487be672d45b00adfc2b63"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/component.json",
+          "sha256": "cd8b55ba25bd8d5fe8f3a74f2700e2a8585967f31466f6a9e113c7c7940d40ff"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/component.json",
+          "sha256": "56c130f8c581de60b9e1a21f6be1f5d1a97621e69747a12d6b8084246dfde36c"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/selection-policy.json",
+          "sha256": "1d1914862babcbc14f398571e9a2892d4fbe10f1eab8e6d6295f9d9109af61c6"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/ux-capabilities.schema.json",
+          "sha256": "151af1ee9a5bbec71d32df06abf5e7fa26bf57df923025812e6a53bcbe078b3f"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/interface.json",
+          "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/behavior.scxml",
+          "sha256": "5c740ad9fcb3303f93b174250cb5690ff4badacc99ac486e2522cef560d0fdae"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/layout.css",
+          "sha256": "cdad62028b7213f9befa7b562ef1ddc38b5a75d8aa4bec099260c31fd254b15f"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/accessibility.html",
+          "sha256": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/accessibility.rules.json",
+          "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+        },
+        {
+          "kind": "token-alias-closure",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "tokens": 73
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/behavior.scxml",
+          "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/stories.json",
+          "sha256": "eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/autocomplete/ux.json",
+          "sha256": "7f48a2b54b3abc9e3b77940d7ef301063745988a6a42f6e9c1c345f2830f5a2f"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/component.json",
+          "sha256": "8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/component.json",
+          "sha256": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/interface.json",
+          "sha256": "bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/behavior.scxml",
+          "sha256": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/layout.css",
+          "sha256": "3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/overlay/accessibility.html",
+          "sha256": "b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037"
+        },
+        {
+          "kind": "token-alias-closure",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "tokens": 73
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/behavior.scxml",
+          "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/component.json",
+          "sha256": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/interface.json",
+          "sha256": "6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/behavior.scxml",
+          "sha256": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/layout.css",
+          "sha256": "a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/scroll-area/accessibility.html",
+          "sha256": "b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3"
+        },
+        {
+          "kind": "token-alias-closure",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "tokens": 73
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/interface.json",
+          "sha256": "ba6041dc6f2ff398cee7378169de364060275abb1cc81d6a039f68e64d7ed247"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/behavior.scxml",
+          "sha256": "32e70569a604817d433da99b5498ca4e759452aa4e838503d616d0ae172b3500"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/layout.css",
+          "sha256": "aec63397c409691ce4980869fbd19e2cf46eb9ee43f7705e648ea135ebaf1e78"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/accessibility.html",
+          "sha256": "8fac6f8b94646b667f9c95c06de393cd39386e99d878a0585bb682a3e1f7c62f"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/accessibility.rules.json",
+          "sha256": "d073887defcc6fe104b9bfc242d25654b314df3c63ccb1c540e3748be04c7734"
+        },
+        {
+          "kind": "token-alias-closure",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "tokens": 73
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/stories.json",
+          "sha256": "255724a0a3206d318c60840a6228b0c6c2f276e3af9d30855a53e1833ad13be7"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select/ux.json",
+          "sha256": "66b94e1fcd2b5f519d29bd0c577cd8dc2a4e795f1468e377841c0a9794aefef4"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/interface.json",
+          "sha256": "397e7a94050416f0753400b878eb3d720a90c68eb44b40529c1f0712016666d6"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/behavior.scxml",
+          "sha256": "19db620ce2008ff4bc2f4a8285be83e5160a3728edb6c130dc7bcc813649f10c"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/layout.css",
+          "sha256": "fbf5b91eccf63bfa85a311156745e48250e48761c69cbdef08b34d7c653a2a48"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/accessibility.html",
+          "sha256": "9e849d3bedf7b9010d728544b89c3abf4638b6a667a2d95e40bba95e154c4755"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/accessibility.rules.json",
+          "sha256": "4abba5c1eb56e0c27f4adce2d73f8af140f0fb9eba41eda8162b67475bfebc35"
+        },
+        {
+          "kind": "token-alias-closure",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "tokens": 73
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/stories.json",
+          "sha256": "87d251d788fa9d4752b2416fdba56ecb3a7cf6a0cdd0c19446c0d25170ebdf0d"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/input/ux.json",
+          "sha256": "1c11272ed4fd7486259d57439d62cf252cbf391b2085099693f59eb27007cac1"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/interface.json",
+          "sha256": "b6ec24257c4deba283d0caf2bd2eddde3d825a1c2fad708d2080e1f000c6316b"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/behavior.scxml",
+          "sha256": "036d993ca97c0b5d83fce6fbfb11a4f4145af29898d27915670ed3495b65fae4"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "sha256": "27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/layout.css",
+          "sha256": "2dedb22e611823ad91c628ea590841aec0bed60e5f5cef65a90e7ecf26cba1e1"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/accessibility.html",
+          "sha256": "172bfa29a28025066b1a7de9ff76d2aaedb7feadeb4e028f7180559e90ad8ab4"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/accessibility.rules.json",
+          "sha256": "112be14e5556c8b6d705685a8e04f96d838376b17cfc475a606fb63330a64c32"
+        },
+        {
+          "kind": "token-alias-closure",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/tokens.json",
+          "tokens": 73
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/stories.json",
+          "sha256": "c1b6b0ccd41c9b29937db364d8b73c6fb5fc39340270470bac1d9cf94b17bb0d"
+        },
+        {
+          "kind": "reference",
+          "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/libraries/example/components/select-with-search/ux.json",
+          "sha256": "033f301825c777219643b157b313dca04e57fd95b92d8b1112e25e46678e384c"
+        }
+      ],
+      "notChecked": [
+        "Arbitrary TypeScript type semantics",
+        "SCXML guards/actions and runtime equivalence",
+        "CSS-to-token variable mapping and visual rendering",
+        "Accessibility conformance",
+        "Production release"
+      ]
+    },
+    "components": {
+      "Autocomplete": {
+        "status": "verified-limited",
+        "profile": "composed-autocomplete/1",
+        "capabilities": {
+          "role": "choice",
+          "valueDomain": "listed-keys",
+          "valueDisplayEditable": true,
+          "searchMode": "query-provider",
+          "selectionCardinality": "one",
+          "preservesSuppliedOrder": true,
+          "completionMode": "label-on-confirm",
+          "interactionIntent": "completion-assistance",
+          "querySurface": "value-editor",
+          "unknownInputPolicy": "reject-commit"
+        },
+        "sourceHashes": {
+          "components/autocomplete/component.json": "c232d14283cece6e923a6a4e113327f4eea215a72977c7d4c22cc6ace7462bdd",
+          "components/autocomplete/interface.json": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222",
+          "components/autocomplete/behavior.scxml": "5c740ad9fcb3303f93b174250cb5690ff4badacc99ac486e2522cef560d0fdae",
+          "components/autocomplete/accessibility.html": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470",
+          "components/autocomplete/accessibility.rules.json": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2",
+          "components/overlay/component.json": "8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269",
+          "components/overlay/behavior.scxml": "e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8",
+          "components/scroll-area/component.json": "5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff",
+          "components/scroll-area/behavior.scxml": "aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8"
+        },
+        "verifiedProperties": [
+          "role",
+          "valueDomain",
+          "valueDisplayEditable",
+          "searchMode",
+          "selectionCardinality",
+          "preservesSuppliedOrder",
+          "completionMode",
+          "querySurface",
+          "unknownInputPolicy"
+        ],
+        "notChecked": [
+          "Target implementation",
+          "Accessibility conformance",
+          "Production release"
+        ],
+        "types": {
+          "typescript": "5.9.3",
+          "checks": [
+            {
+              "category": "members",
+              "name": "query",
+              "observed": "string",
+              "required": "string",
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "value",
+              "observed": {
+                "union": [
+                  "string",
+                  "undefined"
+                ]
+              },
+              "required": {
+                "union": [
+                  "string",
+                  "undefined"
+                ]
+              },
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "results",
+              "observed": {
+                "array": {
+                  "record": {
+                    "disabled": {
+                      "type": "boolean",
+                      "optional": true
+                    },
+                    "key": {
+                      "type": "string",
+                      "optional": false
+                    },
+                    "label": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "required": {
+                "array": {
+                  "record": {
+                    "disabled": {
+                      "type": "boolean",
+                      "optional": true
+                    },
+                    "key": {
+                      "type": "string",
+                      "optional": false
+                    },
+                    "label": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "enabled",
+              "observed": "boolean",
+              "required": "boolean",
+              "passed": true
+            },
+            {
+              "category": "events",
+              "name": "value-change",
+              "observed": {
+                "event": {
+                  "record": {
+                    "value": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "required": {
+                "event": {
+                  "record": {
+                    "value": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        },
+        "native": {
+          "overall": "PASS_LIMITED",
+          "release": false,
+          "profile": "composed-autocomplete/1",
+          "checks": [
+            {
+              "id": "real-nested-invokes-start",
+              "passed": true
+            },
+            {
+              "id": "provider-query-is-an-actual-parent-event",
+              "passed": true
+            },
+            {
+              "id": "provider-order-kept",
+              "passed": true
+            },
+            {
+              "id": "text-without-active-option-does-not-commit",
+              "passed": true
+            },
+            {
+              "id": "disabled-option-skipped-and-active-not-committed",
+              "passed": true
+            },
+            {
+              "id": "reveal-traverses-child-measure-relay",
+              "passed": true
+            },
+            {
+              "id": "commit-key-label-and-single-event",
+              "passed": true
+            },
+            {
+              "id": "cancelled-child-lifecycle",
+              "passed": true
+            },
+            {
+              "id": "other-instance-isolated",
+              "passed": true
+            },
+            {
+              "id": "unknown-host-key-not-accepted",
+              "passed": true
+            },
+            {
+              "id": "disabled-host-key-not-accepted",
+              "passed": true
+            },
+            {
+              "id": "stale-provider-response-rejected",
+              "passed": true
+            },
+            {
+              "id": "disabled-user-input-does-not-open",
+              "passed": true
+            },
+            {
+              "id": "provider-record-gate-rejects-duplicates",
+              "passed": true
+            },
+            {
+              "id": "separate-invoke-epochs-and-data",
+              "passed": true
+            },
+            {
+              "id": "no-native-runtime-errors",
+              "passed": true
+            }
+          ],
+          "runtime": {
+            "name": "@scion-scxml/scxml",
+            "version": "4.3.28"
+          },
+          "synthetic": [
+            "MEASURED acknowledgement; no DOM geometry in native probe"
+          ],
+          "notChecked": [
+            "Browser adapter",
+            "Screenreader",
+            "Real IME",
+            "Production release"
+          ]
+        },
+        "scope": "declared-profile-source-structure-and-native-SCXML-countercases",
+        "declarationOnlyProperties": [
+          "interactionIntent"
+        ]
+      },
+      "Select": {
+        "status": "verified-limited",
+        "profile": "single-select/1",
+        "capabilities": {
+          "role": "choice",
+          "valueDomain": "listed-keys",
+          "valueDisplayEditable": false,
+          "searchMode": "none",
+          "selectionCardinality": "one",
+          "preservesSuppliedOrder": true,
+          "completionMode": "none",
+          "interactionIntent": "fixed-choice",
+          "querySurface": "none",
+          "unknownInputPolicy": "reject-commit"
+        },
+        "sourceHashes": {
+          "components/select/component.json": "5ef05663628c74c7276befe465c8f823bb4656c5d1487be672d45b00adfc2b63",
+          "components/select/interface.json": "ba6041dc6f2ff398cee7378169de364060275abb1cc81d6a039f68e64d7ed247",
+          "components/select/behavior.scxml": "32e70569a604817d433da99b5498ca4e759452aa4e838503d616d0ae172b3500",
+          "components/select/accessibility.html": "8fac6f8b94646b667f9c95c06de393cd39386e99d878a0585bb682a3e1f7c62f",
+          "components/select/accessibility.rules.json": "d073887defcc6fe104b9bfc242d25654b314df3c63ccb1c540e3748be04c7734"
+        },
+        "verifiedProperties": [
+          "role",
+          "valueDomain",
+          "valueDisplayEditable",
+          "searchMode",
+          "selectionCardinality",
+          "preservesSuppliedOrder",
+          "completionMode",
+          "querySurface",
+          "unknownInputPolicy"
+        ],
+        "notChecked": [
+          "Target implementation",
+          "Accessibility conformance",
+          "Production release"
+        ],
+        "types": {
+          "typescript": "5.9.3",
+          "checks": [
+            {
+              "category": "members",
+              "name": "value",
+              "observed": {
+                "union": [
+                  "string",
+                  "undefined"
+                ]
+              },
+              "required": {
+                "union": [
+                  "string",
+                  "undefined"
+                ]
+              },
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "options",
+              "observed": {
+                "array": {
+                  "record": {
+                    "disabled": {
+                      "type": "boolean",
+                      "optional": true
+                    },
+                    "key": {
+                      "type": "string",
+                      "optional": false
+                    },
+                    "label": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "required": {
+                "array": {
+                  "record": {
+                    "disabled": {
+                      "type": "boolean",
+                      "optional": true
+                    },
+                    "key": {
+                      "type": "string",
+                      "optional": false
+                    },
+                    "label": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "enabled",
+              "observed": "boolean",
+              "required": "boolean",
+              "passed": true
+            },
+            {
+              "category": "events",
+              "name": "value-change",
+              "observed": {
+                "event": {
+                  "record": {
+                    "reason": {
+                      "type": {
+                        "union": [
+                          {
+                            "literal": "options-change"
+                          },
+                          {
+                            "literal": "user"
+                          }
+                        ]
+                      },
+                      "optional": false
+                    },
+                    "value": {
+                      "type": {
+                        "union": [
+                          "string",
+                          "undefined"
+                        ]
+                      },
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "required": {
+                "event": {
+                  "record": {
+                    "reason": {
+                      "type": {
+                        "union": [
+                          {
+                            "literal": "options-change"
+                          },
+                          {
+                            "literal": "user"
+                          }
+                        ]
+                      },
+                      "optional": false
+                    },
+                    "value": {
+                      "type": {
+                        "union": [
+                          "string",
+                          "undefined"
+                        ]
+                      },
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        },
+        "native": {
+          "overall": "PASS_LIMITED",
+          "release": false,
+          "profile": "single-select/1",
+          "checks": [
+            {
+              "id": "supplied-order-and-distinct-keys",
+              "passed": true
+            },
+            {
+              "id": "duplicate-key-update-rejected",
+              "passed": true
+            },
+            {
+              "id": "valid-host-key-accepted",
+              "passed": true
+            },
+            {
+              "id": "unknown-host-key-rejected",
+              "passed": true
+            },
+            {
+              "id": "unknown-user-key-rejected",
+              "passed": true
+            },
+            {
+              "id": "disabled-option-rejected",
+              "passed": true
+            },
+            {
+              "id": "valid-user-key-commits",
+              "passed": true
+            },
+            {
+              "id": "disabled-user-changes-rejected",
+              "passed": true
+            },
+            {
+              "id": "disabled-host-update-accepted",
+              "passed": true
+            },
+            {
+              "id": "removed-selection-invalidated",
+              "passed": true
+            },
+            {
+              "id": "actual-value-and-invalidation-events",
+              "passed": true
+            }
+          ],
+          "modelSha256": "32e70569a604817d433da99b5498ca4e759452aa4e838503d616d0ae172b3500",
+          "runtime": {
+            "name": "@scion-scxml/scxml",
+            "version": "4.3.28"
+          },
+          "notChecked": [
+            "Browser/DOM adapter",
+            "Full SCXML conformance",
+            "Screenreader",
+            "Production release"
+          ]
+        },
+        "scope": "declared-profile-source-structure-and-native-SCXML-countercases",
+        "declarationOnlyProperties": [
+          "interactionIntent"
+        ]
+      },
+      "Input": {
+        "status": "verified-limited",
+        "profile": "text-input/1",
+        "capabilities": {
+          "role": "input",
+          "valueDomain": "free-text",
+          "valueDisplayEditable": true,
+          "searchMode": "none",
+          "selectionCardinality": "not-applicable",
+          "preservesSuppliedOrder": false,
+          "completionMode": "none",
+          "interactionIntent": "text-entry",
+          "querySurface": "none",
+          "unknownInputPolicy": "retain-text"
+        },
+        "sourceHashes": {
+          "components/input/component.json": "cd8b55ba25bd8d5fe8f3a74f2700e2a8585967f31466f6a9e113c7c7940d40ff",
+          "components/input/interface.json": "397e7a94050416f0753400b878eb3d720a90c68eb44b40529c1f0712016666d6",
+          "components/input/behavior.scxml": "19db620ce2008ff4bc2f4a8285be83e5160a3728edb6c130dc7bcc813649f10c",
+          "components/input/accessibility.html": "9e849d3bedf7b9010d728544b89c3abf4638b6a667a2d95e40bba95e154c4755",
+          "components/input/accessibility.rules.json": "4abba5c1eb56e0c27f4adce2d73f8af140f0fb9eba41eda8162b67475bfebc35"
+        },
+        "verifiedProperties": [
+          "role",
+          "valueDomain",
+          "valueDisplayEditable",
+          "searchMode",
+          "selectionCardinality",
+          "preservesSuppliedOrder",
+          "completionMode",
+          "querySurface",
+          "unknownInputPolicy"
+        ],
+        "notChecked": [
+          "Target implementation",
+          "Accessibility conformance",
+          "Production release"
+        ],
+        "types": {
+          "typescript": "5.9.3",
+          "checks": [
+            {
+              "category": "members",
+              "name": "value",
+              "observed": "string",
+              "required": "string",
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "enabled",
+              "observed": "boolean",
+              "required": "boolean",
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "readOnly",
+              "observed": "boolean",
+              "required": "boolean",
+              "passed": true
+            },
+            {
+              "category": "events",
+              "name": "value-change",
+              "observed": {
+                "event": {
+                  "record": {
+                    "value": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "required": {
+                "event": {
+                  "record": {
+                    "value": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        },
+        "native": {
+          "overall": "PASS_LIMITED",
+          "release": false,
+          "profile": "text-input/1",
+          "checks": [
+            {
+              "id": "input-string-roundtrip",
+              "passed": true
+            },
+            {
+              "id": "readonly-rejects-user-input",
+              "passed": true
+            },
+            {
+              "id": "readonly-allows-host-update",
+              "passed": true
+            },
+            {
+              "id": "numeric-host-value-rejected",
+              "passed": true
+            },
+            {
+              "id": "disabled-rejects-user-input",
+              "passed": true
+            },
+            {
+              "id": "input-string-event",
+              "passed": true
+            }
+          ],
+          "modelSha256": "19db620ce2008ff4bc2f4a8285be83e5160a3728edb6c130dc7bcc813649f10c",
+          "runtime": {
+            "name": "@scion-scxml/scxml",
+            "version": "4.3.28"
+          },
+          "notChecked": [
+            "Browser/DOM adapter",
+            "Full SCXML conformance",
+            "Screenreader",
+            "Production release"
+          ]
+        },
+        "scope": "declared-profile-source-structure-and-native-SCXML-countercases",
+        "declarationOnlyProperties": [
+          "interactionIntent"
+        ]
+      },
+      "SelectWithSearch": {
+        "status": "verified-limited",
+        "profile": "separate-search-select/1",
+        "capabilities": {
+          "role": "choice",
+          "valueDomain": "listed-keys",
+          "valueDisplayEditable": false,
+          "searchMode": "query-provider",
+          "selectionCardinality": "one",
+          "preservesSuppliedOrder": true,
+          "completionMode": "none",
+          "interactionIntent": "fixed-choice",
+          "querySurface": "separate-filter",
+          "unknownInputPolicy": "reject-commit"
+        },
+        "sourceHashes": {
+          "components/select-with-search/component.json": "56c130f8c581de60b9e1a21f6be1f5d1a97621e69747a12d6b8084246dfde36c",
+          "components/select-with-search/interface.json": "b6ec24257c4deba283d0caf2bd2eddde3d825a1c2fad708d2080e1f000c6316b",
+          "components/select-with-search/behavior.scxml": "036d993ca97c0b5d83fce6fbfb11a4f4145af29898d27915670ed3495b65fae4",
+          "components/select-with-search/accessibility.html": "172bfa29a28025066b1a7de9ff76d2aaedb7feadeb4e028f7180559e90ad8ab4",
+          "components/select-with-search/accessibility.rules.json": "112be14e5556c8b6d705685a8e04f96d838376b17cfc475a606fb63330a64c32"
+        },
+        "verifiedProperties": [
+          "role",
+          "valueDomain",
+          "valueDisplayEditable",
+          "searchMode",
+          "selectionCardinality",
+          "preservesSuppliedOrder",
+          "completionMode",
+          "querySurface",
+          "unknownInputPolicy"
+        ],
+        "notChecked": [
+          "Target implementation",
+          "Accessibility conformance",
+          "Production release"
+        ],
+        "types": {
+          "typescript": "5.9.3",
+          "checks": [
+            {
+              "category": "members",
+              "name": "value",
+              "observed": {
+                "union": [
+                  "string",
+                  "undefined"
+                ]
+              },
+              "required": {
+                "union": [
+                  "string",
+                  "undefined"
+                ]
+              },
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "options",
+              "observed": {
+                "array": {
+                  "record": {
+                    "disabled": {
+                      "type": "boolean",
+                      "optional": true
+                    },
+                    "key": {
+                      "type": "string",
+                      "optional": false
+                    },
+                    "label": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "required": {
+                "array": {
+                  "record": {
+                    "disabled": {
+                      "type": "boolean",
+                      "optional": true
+                    },
+                    "key": {
+                      "type": "string",
+                      "optional": false
+                    },
+                    "label": {
+                      "type": "string",
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "enabled",
+              "observed": "boolean",
+              "required": "boolean",
+              "passed": true
+            },
+            {
+              "category": "members",
+              "name": "query",
+              "observed": "string",
+              "required": "string",
+              "passed": true
+            },
+            {
+              "category": "events",
+              "name": "value-change",
+              "observed": {
+                "event": {
+                  "record": {
+                    "reason": {
+                      "type": {
+                        "union": [
+                          {
+                            "literal": "options-change"
+                          },
+                          {
+                            "literal": "user"
+                          }
+                        ]
+                      },
+                      "optional": false
+                    },
+                    "value": {
+                      "type": {
+                        "union": [
+                          "string",
+                          "undefined"
+                        ]
+                      },
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "required": {
+                "event": {
+                  "record": {
+                    "reason": {
+                      "type": {
+                        "union": [
+                          {
+                            "literal": "options-change"
+                          },
+                          {
+                            "literal": "user"
+                          }
+                        ]
+                      },
+                      "optional": false
+                    },
+                    "value": {
+                      "type": {
+                        "union": [
+                          "string",
+                          "undefined"
+                        ]
+                      },
+                      "optional": false
+                    }
+                  }
+                }
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        },
+        "native": {
+          "overall": "PASS_LIMITED",
+          "release": false,
+          "profile": "separate-search-select/1",
+          "checks": [
+            {
+              "id": "supplied-order-and-distinct-keys",
+              "passed": true
+            },
+            {
+              "id": "duplicate-key-update-rejected",
+              "passed": true
+            },
+            {
+              "id": "valid-host-key-accepted",
+              "passed": true
+            },
+            {
+              "id": "unknown-host-key-rejected",
+              "passed": true
+            },
+            {
+              "id": "unknown-user-key-rejected",
+              "passed": true
+            },
+            {
+              "id": "disabled-option-rejected",
+              "passed": true
+            },
+            {
+              "id": "case-insensitive-label-match",
+              "passed": true
+            },
+            {
+              "id": "query-independent-of-value",
+              "passed": true
+            },
+            {
+              "id": "existing-filtered-out-option-rejected",
+              "passed": true
+            },
+            {
+              "id": "no-match-cannot-commit-an-existing-other-key",
+              "passed": true
+            },
+            {
+              "id": "key-can-be-searched-independently-of-label",
+              "passed": true
+            },
+            {
+              "id": "matching-does-not-reorder-or-merge-options",
+              "passed": true
+            },
+            {
+              "id": "active-key-is-not-committed",
+              "passed": true
+            },
+            {
+              "id": "valid-user-key-commits",
+              "passed": true
+            },
+            {
+              "id": "commit-closes-and-clears-filter",
+              "passed": true
+            },
+            {
+              "id": "escape-keeps-value-clears-filter",
+              "passed": true
+            },
+            {
+              "id": "disabled-user-changes-rejected",
+              "passed": true
+            },
+            {
+              "id": "disabled-host-update-accepted",
+              "passed": true
+            },
+            {
+              "id": "removed-selection-invalidated",
+              "passed": true
+            },
+            {
+              "id": "actual-value-and-invalidation-events",
+              "passed": true
+            }
+          ],
+          "modelSha256": "036d993ca97c0b5d83fce6fbfb11a4f4145af29898d27915670ed3495b65fae4",
+          "runtime": {
+            "name": "@scion-scxml/scxml",
+            "version": "4.3.28"
+          },
+          "notChecked": [
+            "Browser/DOM adapter",
+            "Full SCXML conformance",
+            "Screenreader",
+            "Production release"
+          ]
+        },
+        "scope": "declared-profile-source-structure-and-native-SCXML-countercases",
+        "declarationOnlyProperties": [
+          "interactionIntent"
+        ]
+      }
+    },
+    "statusCounts": {
+      "declared": 0,
+      "unverified": 0,
+      "invalid": 0,
+      "verified-limited": 4
+    },
+    "checkerHashes": {
+      "python": "05dce574f987289017b531198abd1ef3379902c5e341bd3355d0a116e83c8bc2",
+      "nativeProbe": "1407216dc2191fa72a9ecb6a7c0a37562635a63dffd7555020a875124ad075ff",
+      "composedProbe": "63991c08ad8e41412480ab1e16041b0e2a61c9fa94b43dcc12c06cccbce55399",
+      "invoker": "6646392a1e44662843bd63a123b2c5a99cccaa03fefae6b0ea11589ba00a6323",
+      "providerGate": "39fb4e86ec1511153f32522713810b4e72192461815c3ca6399bc27e68f02e2e",
+      "typeProbe": "b63ba41596c1882cc1680483a49b4e3b1d010e05e6be3b0ef659362f9cc38b19",
+      "toolchainLock": "ebdba8523251984285705a8b03bc15220d41773131b72c66e7a05706837749e6"
+    },
+    "notChecked": [
+      "Browser adapter, focus and scrolling",
+      "Arbitrary capability semantics outside registered profiles",
+      "Production release"
+    ]
+  },
+  "targetValidationRequired": true,
+  "inputs": {
+    "fixedValuesRequired": true,
+    "queryEditingAllowed": true,
+    "selectedLabelEditingAllowed": false,
+    "filteringProviderAvailable": true,
+    "searchExplicitlyRequired": null,
+    "optionCount": 3,
+    "searchRequiredAbove": 15,
+    "selectCapabilities": {
+      "role": "choice",
+      "valueDomain": "listed-keys",
+      "valueDisplayEditable": false,
+      "searchMode": "none",
+      "selectionCardinality": "one",
+      "preservesSuppliedOrder": true,
+      "completionMode": "none",
+      "interactionIntent": "fixed-choice",
+      "querySurface": "none",
+      "unknownInputPolicy": "reject-commit"
+    },
+    "selectVerification": "verified-limited",
+    "searchSelectCapabilities": {
+      "role": "choice",
+      "valueDomain": "listed-keys",
+      "valueDisplayEditable": false,
+      "searchMode": "query-provider",
+      "selectionCardinality": "one",
+      "preservesSuppliedOrder": true,
+      "completionMode": "none",
+      "interactionIntent": "fixed-choice",
+      "querySurface": "separate-filter",
+      "unknownInputPolicy": "reject-commit"
+    },
+    "searchSelectVerification": "verified-limited",
+    "autocompleteCapabilities": {
+      "role": "choice",
+      "valueDomain": "listed-keys",
+      "valueDisplayEditable": true,
+      "searchMode": "query-provider",
+      "selectionCardinality": "one",
+      "preservesSuppliedOrder": true,
+      "completionMode": "label-on-confirm",
+      "interactionIntent": "completion-assistance",
+      "querySurface": "value-editor",
+      "unknownInputPolicy": "reject-commit"
+    },
+    "autocompleteVerification": "verified-limited"
+  },
+  "policySource": {
+    "path": "libraries/example/selection-policy.json",
+    "sha256": "1d1914862babcbc14f398571e9a2892d4fbe10f1eab8e6d6295f9d9109af61c6"
+  },
+  "logicSha256": "cb0522c5192c7b4ab43e21b848da4738cd2bdbdd74f2edf0955f90402b78255d",
+  "contextSha256": "d0da8c0bb5c0edb23c88a0bde199a98205ca9e4e412f2dbea0cf640e003d2103",
+  "assessment": {
+    "reason": "simple-fixed-choice",
+    "searchNeed": "not-required",
+    "choice": "Select",
+    "Select": "eligible",
+    "SelectWithSearch": "eligible",
+    "Autocomplete": "incompatible-editing"
+  },
+  "choice": "Select",
+  "native": {
+    "stage": "evaluated",
+    "value": {
+      "reason": "simple-fixed-choice",
+      "searchNeed": "not-required",
+      "choice": "Select",
+      "Select": "eligible",
+      "SelectWithSearch": "eligible",
+      "Autocomplete": "incompatible-editing"
+    }
+  },
+  "engine": {
+    "lockSha256": "84a61bdd34782ea49c416ff924ef20fb7bbcd2e0fd156bb9f960ac7cf9fba2d4",
+    "bridgeSha256": "77af690df4042407790c3b585481e77cd7790cd2858708a76ab62187dbc6f171",
+    "engine": "dmn-scala",
+    "version": "1.12.6",
+    "java": "/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/bin/java"
+  }
+}

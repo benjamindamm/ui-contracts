@@ -1,0 +1,17 @@
+{
+  "id": "process",
+  "command": [
+    "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/validation/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/design-review",
+    "-p",
+    "test_process.py"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 0.06,
+  "stdout": "",
+  "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.009s\n\nOK\n"
+}

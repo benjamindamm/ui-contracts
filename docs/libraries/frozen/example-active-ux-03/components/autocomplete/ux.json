@@ -1,0 +1,48 @@
+{
+  "format": "ui-contracts-ux-capabilities/0.3",
+  "componentId": "ui-contracts:Autocomplete",
+  "capabilities": {
+    "role": "choice",
+    "valueDomain": "listed-keys",
+    "valueDisplayEditable": true,
+    "searchMode": "query-provider",
+    "selectionCardinality": "one",
+    "preservesSuppliedOrder": true,
+    "completionMode": "label-on-confirm",
+    "interactionIntent": "completion-assistance",
+    "querySurface": "value-editor",
+    "unknownInputPolicy": "reject-commit"
+  },
+  "sources": [
+    {
+      "path": "component.json",
+      "sha256": "cb2dd273df46451979ba8e55b7b5fc26982e4945d0c79f5b2496c9ab7d05cafe"
+    },
+    {
+      "path": "interface.json",
+      "sha256": "d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222"
+    },
+    {
+      "path": "behavior.scxml",
+      "sha256": "a87176827ba56e383e6f1517cc7810fb900b6f6f02eb14c29f8df618cc2fd1ef"
+    },
+    {
+      "path": "accessibility.html",
+      "sha256": "dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470"
+    },
+    {
+      "path": "accessibility.rules.json",
+      "sha256": "f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2"
+    }
+  ],
+  "notes": [
+    "Editable query is distinct from committed value; this variant rejects arbitrary new committed keys.",
+    "Filtering needs a query-aware results provider. The component does not itself supply every country dataset or filtering implementation.",
+    "Selected label completes the query on confirmation; inline completion during typing is not promised.",
+    "This existing listed-key variant is NOT the free-text address-writing aid described by the user. Do not infer that every autocomplete rejects unknown text.",
+    "For fixed-choice tasks prefer a defined separate-filter selector; use this variant only with an explicit reason and existing membership enforcement."
+  ],
+  "verification": {
+    "profile": "declared-only"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "filesInSnapshot": 2574,
+  "changedHistoricalStudyFiles": [],
+  "allowedCurrentNavigationChanges": [
+    "docs/research/decisions/RD-002-AGENT-WORKFLOW-SCOPE.md",
+    "docs/research/DOCUMENT-INDEX.md"
+  ],
+  "note": "RD-002 was authored during this task, then extended with the user clarification; not a pre-existing historical study."
+}

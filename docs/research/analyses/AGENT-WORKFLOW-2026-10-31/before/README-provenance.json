@@ -1,0 +1,7 @@
+{
+  "method": "Restored from retained clean working-tree snapshot plus the exact documented Package-3 seventh-history-paragraph insertion",
+  "baseSha256": "28395741c48528945cf4b940abac643fd6acc8c7bfdea701fe267e7aa2cd7468",
+  "restoredSha256": "3915fcbd68e3dae79756d0e1b4374447ea4fc047cb750093a2692645a0ef655d",
+  "independentOriginalHashAvailable": false,
+  "reason": "Archive index README collided with the newly copied root README during this task; index moved to INDEX.md. No historical studies changed."
+}

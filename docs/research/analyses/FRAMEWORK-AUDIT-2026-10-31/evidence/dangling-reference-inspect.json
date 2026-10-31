@@ -1,0 +1,50 @@
+{
+  "kind": "ui-contracts-original-artifact-inspection",
+  "overall": "BLOCKED",
+  "release": false,
+  "diagnostic": {
+    "code": "SEMANTIC_PROFILE_UNSUPPORTED",
+    "detail": "Only syntax and the available original schemas were inspected. This candidate has no general semantic/profile/runtime acceptance through this helper."
+  },
+  "passedScope": [
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-reference-audit-62en23s8/component.json",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "candidate": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-reference-audit-62en23s8",
+  "artifacts": [
+    {
+      "file": "/private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/ux-reference-audit-62en23s8/component.json",
+      "sha256": "51ac06769cf5bc3edcb9d396ebb5496c328cc3742f58eb54c070315cf80c9048",
+      "checks": [
+        {
+          "checker": "strict JSON syntax",
+          "accepted": true
+        }
+      ],
+      "status": "PASS_LIMITED",
+      "unchecked": "JSON meaning, token types/aliases, own component/projection rules and cross-file semantics"
+    }
+  ],
+  "warnings": [
+    "Original SCXML schema is loose; HTML parsing is not conformance.",
+    "DTCG/CSS/HTML/ARIA/APG are not fully original-validated."
+  ],
+  "unverified": [
+    "General cross-file references, ownership and composition for this candidate",
+    "Runtime events, focus, scrolling, AX, lifecycle",
+    "Target generation, screenreader, real IME and native platforms"
+  ],
+  "productionRelease": false,
+  "skill": {
+    "name": "ui-contracts",
+    "skillSha256": "7bfc4e54170ae9e23789f609a48b357d4d1130817395406b05a708d6fb26fb66",
+    "helperSha256": "7cb09067057dfae2f940b5cf2a4da00823094c20203b0ea4380882e95741e5dc"
+  }
+}

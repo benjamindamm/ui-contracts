@@ -1,0 +1,18 @@
+{
+  "id": "libraries",
+  "command": [
+    "/Users/kcnpxcp/Dev/GitHub/ui-contracts/tools/validation/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/libraries",
+    "-p",
+    "test_libraries.py"
+  ],
+  "exitCode": 0,
+  "tests": 19,
+  "elapsedSeconds": 0.46,
+  "stdout": "",
+  "stderr": "...................\n----------------------------------------------------------------------\nRan 19 tests in 0.402s\n\nOK\n"
+}

@@ -1,0 +1,13 @@
+{
+  "execution": "Actual native source/SCXML verification and original DMN policy evaluation via tools/ux/choose.py",
+  "library": "example",
+  "options": 3,
+  "choice": "Select",
+  "release": false,
+  "independentModelGeneration": false,
+  "notChecked": [
+    "Generated target",
+    "Model performance",
+    "Browser interaction of any new form"
+  ]
+}

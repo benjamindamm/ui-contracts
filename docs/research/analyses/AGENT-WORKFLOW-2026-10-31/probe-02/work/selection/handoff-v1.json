@@ -1,0 +1,74 @@
+{
+  "format": "ui-contracts-handoff/1",
+  "taskId": "WF-UX-01-selection",
+  "taskRevision": 1,
+  "role": "mapper",
+  "revision": 1,
+  "definitionRevision": "ee738677b6197821d0278f986fb3efc8a388b29ce3f0aa29b59cddfa5e4fe172",
+  "status": "ready",
+  "summary": "Three explicit fixed choices select Select under the actual current project policy.",
+  "inputs": [
+    {
+      "id": "context",
+      "sha256": "0cc3957b43948a735826934863d0c0786a895b0f6340683b7a24ace491f6aebe"
+    },
+    {
+      "id": "brief",
+      "sha256": "667fb15e9d68cdb49f1706804d45000d28f1411f1b3e6d97f0a37f1228927d0d"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/work/selection/decision.json",
+      "sha256": "05e4c74c69cef792b2c3851f189cf4507b110785363f34a73380ca932a3cee15",
+      "id": "decision",
+      "kind": "decision"
+    },
+    {
+      "path": "docs/research/analyses/AGENT-WORKFLOW-2026-10-31/probe-02/work/selection/scope.json",
+      "sha256": "69697dd4ca0f150575a4d1e6fbafd71b69a7a906540b1182332fa36c21e26095",
+      "id": "scope",
+      "kind": "evidence"
+    }
+  ],
+  "claims": [
+    {
+      "id": "choice",
+      "classification": "derived",
+      "statement": "Select is the bounded native-policy choice for this supplied three-option context.",
+      "sourceRefs": [
+        {
+          "sourceId": "contract-3",
+          "locator": "DMN decision"
+        }
+      ],
+      "evidenceRefs": [
+        "decision"
+      ]
+    }
+  ],
+  "questions": [],
+  "checks": [
+    {
+      "id": "decision-recorded",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": [
+        "decision"
+      ]
+    },
+    {
+      "id": "scope-recorded",
+      "status": "pass",
+      "method": "automatic",
+      "evidenceRefs": [
+        "scope"
+      ]
+    }
+  ],
+  "limitations": [
+    "No target generated or approved",
+    "No model identity or performance claim"
+  ],
+  "nextAction": "Builder can load decision artifact and necessary original component domains."
+}

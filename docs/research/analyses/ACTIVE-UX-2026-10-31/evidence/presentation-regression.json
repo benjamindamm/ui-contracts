@@ -1,0 +1,14 @@
+{
+  "id": "presentation",
+  "command": [
+    "node",
+    "--test",
+    "tools/openpencil/test_layout.mjs",
+    "tools/openpencil/test_themes.mjs"
+  ],
+  "exitCode": 0,
+  "tests": 25,
+  "elapsedSeconds": 4.11,
+  "stdout": "\u2714 Generic case selection follows definition order, not input arrangement (5.342791ms)\n\u2714 Missing or duplicate source state blocks (6.109375ms)\n\u2714 Rotated source nodes block instead of claiming correct bounds (0.3185ms)\n\u2714 Wide components expand cards without scaling (0.243708ms)\n\u2714 Shadow/overlay overflow and tall states fit inside cards (1.692541ms)\n\u2714 Row cards share height; subsequent rows do not overlap (0.111209ms)\n\u2714 Only root placement is ignored; internal position changes are detected (1.284959ms)\n\u2714 Color, clip, stroke and child order mutations are detected (1.847042ms)\n\u2714 Native composition/export/readback preserves every compared component property (132.344667ms)\n\u2714 Readback containment detects oversized or misplaced content (1.079834ms)\n\u2714 Unexpected root movement and card clipping are rejected (0.532541ms)\n\u2714 Dependencies outside selected component groups block before deletion (0.16075ms)\n\u2714 Both real run-04 outputs have identical presentation geometry and immutable source hashes (3.858542ms)\n\u2714 Existing preview and historical inputs are never overwritten (1966.238459ms)\n\u2714 Existing component output directory works without a presentation subfolder (1314.772083ms)\n\u2714 Central presentation template rejects invalid geometry or color (0.218583ms)\n\u2714 Central template controls card and board appearance (0.37325ms)\n\u2714 Explicit dark/light cases resolve opaque background tokens and aliases (0.779375ms)\n\u2714 Unspecified mode remains the neutral default without claiming a theme (0.083083ms)\n\u2714 A dark case without an explicit valid background is rejected (0.267333ms)\n\u2714 Unknown case names, invalid maps and cyclic aliases are rejected (0.129959ms)\n\u2714 Non-color, transparent and out-of-range tokens never silently fall back (0.174458ms)\n\u2714 Dark caption palette must be valid in the central template (0.09675ms)\n\u2714 Mixed-theme native FIG roundtrip preserves component subtrees and card colors (143.828875ms)\n\u2714 CLI binds theme inputs, renders mixed cards, and blocks missing dark background (1848.533834ms)\n\u2139 tests 25\n\u2139 suites 0\n\u2139 pass 25\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 4069.636041\n",
+  "stderr": ""
+}
