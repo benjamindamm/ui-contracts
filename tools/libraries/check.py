@@ -90,6 +90,17 @@ class Inspector:
                 if not key.startswith('$'):
                     collect(value, (*parts, key), typ)
         collect(data)
+        def nested(value, seen):
+            # Alias closure only: composite member types are not inferred here.
+            if isinstance(value, str) and re.fullmatch(r'\{[^{}]+\}', value):
+                resolve(value[1:-1], seen)
+            elif isinstance(value, dict):
+                for child in value.values():
+                    nested(child, seen)
+            elif isinstance(value, list):
+                for child in value:
+                    nested(child, seen)
+
         def resolve(name, seen):
             if name in seen:
                 raise Invalid('TOKEN_ALIAS_CYCLE', name)
@@ -102,6 +113,7 @@ class Inspector:
                 if typ and target_type and typ != target_type:
                     raise Invalid('TOKEN_ALIAS_TYPE_MISMATCH', name + ' -> ' + target)
                 return value, target_type or typ
+            nested(value, seen | {name})
             return value, typ
         for name in tokens:
             resolve(name, set())
@@ -243,7 +255,8 @@ class Inspector:
                 'scope': 'library-reference-identity-alias-and-selected-original-schema-checks',
                 'root': str(self.root), 'componentCount': len(self.components), 'errors': self.errors,
                 'checks': self.checks, 'notChecked': ['Arbitrary TypeScript type semantics', 'SCXML guards/actions and runtime equivalence',
-                    'CSS-to-token variable mapping and visual rendering', 'Accessibility conformance', 'Production release']}
+                    'CSS-to-token variable mapping and visual rendering', 'Composite token member types, JSON Pointer references and full DTCG conformance',
+                    'Accessibility conformance', 'Production release']}
 
 
 def inspect(root, repo=ROOT, candidate=None):

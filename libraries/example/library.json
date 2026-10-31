@@ -1,7 +1,7 @@
 {
   "kind": "ui-contract-library-draft",
   "name": "UI Contracts",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "status": "active-example-definitions-with-bounded-ux-checks-not-production-qualified",
   "components": {
     "Autocomplete": "components/autocomplete/component.json",
@@ -13,7 +13,7 @@
   },
   "targets": {
     "openpencil": "Editable design states first; interactive preview is outside this proof.",
-    "web": "HTML and TypeScript generated from these same definitions in a later comparison."
+    "web": "Bounded executable Web adapter for text-input/1, single-select/1, separate-search-select/1 and composed-autocomplete/1; setup and checks: ../../tools/web/README.md. General HTML/TypeScript generation remains outside this proof."
   },
   "selection": {
     "policy": "selection-policy.json",

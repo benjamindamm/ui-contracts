@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-31",
+  "assessmentStatus": "analysis-complete-no-adoption",
+  "baseCommit": "d29b65288a5ad35fb8b2a7ab05b23983469b23f4",
+  "release": false,
+  "library": "example",
+  "libraryRevision": "ee738677b6197821d0278f986fb3efc8a388b29ce3f0aa29b59cddfa5e4fe172",
+  "observations": [
+    {
+      "context": "tools/ux/contexts/fixed-three.json",
+      "optionCount": 3,
+      "choice": "Select",
+      "overall": "PASS_LIMITED",
+      "result": "evidence/three.json",
+      "sha256": "05e4c74c69cef792b2c3851f189cf4507b110785363f34a73380ca932a3cee15"
+    },
+    {
+      "context": "tools/ux/contexts/fixed-thirty.json",
+      "optionCount": 30,
+      "choice": "SelectWithSearch",
+      "overall": "PASS_LIMITED",
+      "result": "evidence/thirty.json",
+      "sha256": "a899f13e1b59631e7e286b3a20fe60d480d15109e5da2784de342f2f31849431"
+    }
+  ],
+  "newIndependentResearchConditions": 0,
+  "scope": "Existing selection baseline rerun and documentary fit assessment; no generated composition",
+  "sourceHashes": {
+    "docs/ARCHITECTURE.md": "3dee45b24c3837953ac6bb1e59c9b696c2946c07cef42234dce8423a445deba4",
+    "docs/research/decisions/RD-002-AGENT-WORKFLOW-SCOPE.md": "d2d911ccc4dbd2e01b69ba5a1f729116573085fa3f5697424329f8a83804b95b",
+    "libraries/example/library.json": "dca80818a5d1992f19572489004fe90b34f81cdf742931bb790de03da645d7ff",
+    "libraries/example/selection-policy.json": "1d1914862babcbc14f398571e9a2892d4fbe10f1eab8e6d6295f9d9109af61c6",
+    "libraries/example/selection-policy.dmn": "cb0522c5192c7b4ab43e21b848da4738cd2bdbdd74f2edf0955f90402b78255d",
+    "libraries/example/components/autocomplete/component.json": "c232d14283cece6e923a6a4e113327f4eea215a72977c7d4c22cc6ace7462bdd",
+    "libraries/example/components/input/component.json": "cd8b55ba25bd8d5fe8f3a74f2700e2a8585967f31466f6a9e113c7c7940d40ff",
+    "libraries/example/components/select-with-search/component.json": "56c130f8c581de60b9e1a21f6be1f5d1a97621e69747a12d6b8084246dfde36c",
+    "tools/ux/choose.py": "d28b82e63fd9dd3b084d26f256bfb3ad02cbc3584f41f39da9575a5e96f1129f",
+    "tools/ux/check.py": "05dce574f987289017b531198abd1ef3379902c5e341bd3355d0a116e83c8bc2"
+  },
+  "externalDocumentation": [
+    {
+      "url": "https://ui.shadcn.com/docs/ai-elements",
+      "status": "read via BrowserOS neo; documentation observation, not runtime verified"
+    },
+    {
+      "url": "https://ui.shadcn.com/docs/ai-elements/base/chat",
+      "status": "read via BrowserOS neo; composition/scrolling documentation only"
+    },
+    {
+      "url": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "status": "read via BrowserOS neo; documented approval sequence only"
+    },
+    {
+      "url": "https://ui.shadcn.com/docs/skills",
+      "status": "read via BrowserOS neo; discovery/context documentation only"
+    }
+  ],
+  "attempts": [
+    {
+      "result": "output-path-rejected",
+      "detail": "First choose.py outputs targeted this research directory; existing report-path guard refused them. No guard changed. Successful fresh results were saved to ignored .runtime, then copied byte-for-byte to evidence."
+    }
+  ],
+  "recommendation": {
+    "adoptNow": [],
+    "investigate": "Existing-contract-first telephone-field composition probe",
+    "doNotIntroduce": [
+      "Recipe DSL",
+      "shadcn/React/Tailwind core dependency",
+      "New registry/MCP service",
+      "Mandatory chat/agent UI",
+      "Mandatory model comparison"
+    ]
+  },
+  "notChecked": [
+    "Actual AI Elements implementation/runtime",
+    "A generated telephone field",
+    "Form-level integration semantics",
+    "New browser behavior",
+    "Cross-platform output",
+    "Model performance"
+  ]
+}

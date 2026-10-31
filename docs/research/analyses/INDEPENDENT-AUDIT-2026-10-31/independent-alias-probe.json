@@ -1,0 +1,16 @@
+{
+  "direct": {
+    "outcome": "rejected",
+    "code": "TOKEN_ALIAS_MISSING"
+  },
+  "composite": {
+    "outcome": "accepted",
+    "checks": [
+      {
+        "kind": "token-alias-closure",
+        "file": "/Users/kcnpxcp/Dev/GitHub/ui-contracts/.runtime/independent-audit/alias-probe/tokens.json",
+        "tokens": 1
+      }
+    ]
+  }
+}

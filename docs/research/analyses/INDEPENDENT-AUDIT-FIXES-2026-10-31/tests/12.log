@@ -1,0 +1,25 @@
+✔ Generic case selection follows definition order, not input arrangement (1.365458ms)
+✔ Missing or duplicate source state blocks (0.273667ms)
+✔ Rotated source nodes block instead of claiming correct bounds (0.230958ms)
+✔ Wide components expand cards without scaling (0.195916ms)
+✔ Shadow/overlay overflow and tall states fit inside cards (2.000458ms)
+✔ Row cards share height; subsequent rows do not overlap (0.097375ms)
+✔ Only root placement is ignored; internal position changes are detected (1.121416ms)
+✔ Color, clip, stroke and child order mutations are detected (1.653167ms)
+✔ Native composition/export/readback preserves every compared component property (91.987083ms)
+✔ Readback containment detects oversized or misplaced content (0.397834ms)
+✔ Unexpected root movement and card clipping are rejected (0.442958ms)
+✔ Dependencies outside selected component groups block before deletion (0.138959ms)
+✔ Both real run-04 outputs have identical presentation geometry and immutable source hashes (2.818541ms)
+✔ Existing preview and historical inputs are never overwritten (1302.639958ms)
+✔ Existing component output directory works without a presentation subfolder (1044.215042ms)
+✔ Central presentation template rejects invalid geometry or color (0.178667ms)
+✔ Central template controls card and board appearance (0.271542ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2899.685125

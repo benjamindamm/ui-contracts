@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-31",
+  "findings": {
+    "IA-01": "fixed-within-bounded-alias-profile",
+    "IA-02": "fixed-active-metadata"
+  },
+  "library": {
+    "previousVersion": "0.4.0",
+    "currentVersion": "0.4.1",
+    "previousRevision": "ee738677b6197821d0278f986fb3efc8a388b29ce3f0aa29b59cddfa5e4fe172",
+    "currentRevision": "3611895e3f742bdeb7138c44a493a4b1ac0e39443300ccf95fb5dd2db806b87d",
+    "changedFiles": [
+      "library.json"
+    ]
+  },
+  "sources": {
+    "tools/libraries/check.py": "19c2034905917e48cc379f6b7c41679b49fc6bfa842c035ddc1d2e756b5cea53",
+    "tools/libraries/test_check.py": "6dfb259dc9afeacc447b6c431cf508d42e64a53cb8aa9aff0f0d76a785c9dadb",
+    "libraries/example/library.json": "845a50cf052bfa2f7c9e2110c80c28de91b75e6276282e8ac0f8560c49012f32",
+    "docs/skills/ISSUES.md": "54745c5577aded1a12429a61361b3231309cbc09cd2856ae0028541e2734868b"
+  },
+  "release": false,
+  "notChecked": [
+    "Browser runtime",
+    "OpenPencil rendering",
+    "Full DTCG semantics",
+    "Screenreader",
+    "Model reliability"
+  ],
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 tools/validation/.venv/bin/python tools/test.py --unit-only --out .runtime/independent-audit-fixes-2026-10-31",
+    "overall": "PASS_LIMITED",
+    "suites": 13,
+    "libraryUnitTests": 37,
+    "newAliasSubcases": 7,
+    "browserRun": false
+  }
+}

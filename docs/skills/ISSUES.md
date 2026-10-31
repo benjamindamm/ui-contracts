@@ -171,3 +171,11 @@ Prüfprofilangaben sind Pläne, keine selbst attestierten Pass-Werte. Alte Recei
 [IA-001 bis IA-004, WF-001/002](../research/analyses/AGENT-WORKFLOW-2026-10-31/README.md): zu umfangreicher Skillkern, pauschale historische Validierungslektüre, vermischte aktuelle/historische Navigation, überschreibender Altgenerator und unvereinheitlichte Auswahl-/Reviewübergaben. Essenz und Details sind getrennt; Quellenbindungen und Abdeckungsgruppen werden technisch geprüft. Tests erkennen aufgeblähten Einstieg, kaputte Routen, Eager-Import, unzulässige Fortschritte und fehlenden Gesamtbezug. Der Ablauf garantiert keine Modellleistung.
 
 **IA-005 · behoben mit dokumentierter Beleggrenze:** Beim Erstellen der neuen Archivübersicht kollidierte deren README mit der zuvor kopierten Root-README. Die Übersicht heißt nun INDEX.md; die alte Root-Fassung wurde aus der erhaltenen Arbeitskopie und dem dokumentierten letzten Zusatz wiederhergestellt. [Herkunft](../research/analyses/AGENT-WORKFLOW-2026-10-31/before/README-provenance.json) benennt ausdrücklich, dass kein unabhängiger Originalhash vorliegt. Historische Studien wurden nicht verändert. Künftige Archivübersichten erhalten einen eigenen Namen.
+
+
+## Unabhängige Gegenprüfung · Reparatur IA-01 / IA-02 · 31. Oktober 2026
+
+- **IA-01 · behoben im Aliasprofil:** Verschachtelte Token-Verweise wurden vom Abschlusscheck übergangen. Rekursiver Durchlauf über Objekte/Listen prüft nun fehlende Ziele und Zyklen; direkte Typkonflikte bleiben Fehler. Composite-Feldtypen und vollständige DTCG-Konformität bleiben ungeprüft. Wiedererkennung: ein erfolgreich geprüfter äußerer Wert beweist nicht den Abschluss seiner inneren Verweise. Sieben gezielte Gegenfälle plus vollständiger Kopiencheck sichern die Reparatur.
+- **IA-02 · behoben:** Bibliotheksindex beschrieb den vorhandenen begrenzten Webadapter als Zukunftsvorhaben. Aktive example-Version 0.4.1 benennt Profile und Prüfeinstieg; neue Quellenrevision statt rückwirkend geänderter Receipts.
+
+[Änderungen, Vorzustand und tatsächliche Prüfergebnisse](../research/analyses/INDEPENDENT-AUDIT-FIXES-2026-10-31/README.md). Originalaudit und historische Studien bleiben unverändert.

@@ -1,0 +1,90 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "scope": "explicit-unit-only",
+  "suites": [
+    {
+      "suite": "tools/libraries/test_*.py",
+      "status": "PASS",
+      "log": "01.log",
+      "seconds": 1.79
+    },
+    {
+      "suite": "tools/ux/test_*.py",
+      "status": "PASS",
+      "log": "02.log",
+      "seconds": 104.87
+    },
+    {
+      "suite": "tools/fonts/test_*.py",
+      "status": "PASS",
+      "log": "03.log",
+      "seconds": 1.03
+    },
+    {
+      "suite": "tools/design-review/test_*.py",
+      "status": "PASS",
+      "log": "04.log",
+      "seconds": 0.88
+    },
+    {
+      "suite": "tools/test_setup.py",
+      "status": "PASS",
+      "log": "05.log",
+      "seconds": 0.07
+    },
+    {
+      "suite": "tools/research/test_navigation.py",
+      "status": "PASS",
+      "log": "06.log",
+      "seconds": 0.35
+    },
+    {
+      "suite": "static-countercases",
+      "status": "PASS",
+      "log": "07.log",
+      "seconds": 12.35
+    },
+    {
+      "suite": "thin-context",
+      "status": "PASS",
+      "log": "08.log",
+      "seconds": 0.11
+    },
+    {
+      "suite": "handoffs",
+      "status": "PASS",
+      "log": "09.log",
+      "seconds": 0.28
+    },
+    {
+      "suite": "adapter-source-bindings",
+      "status": "PASS",
+      "log": "10.log",
+      "seconds": 0.09
+    },
+    {
+      "suite": "tools/charts/test_pie.mjs",
+      "status": "PASS",
+      "log": "11.log",
+      "seconds": 0.7
+    },
+    {
+      "suite": "tools/openpencil/test_layout.mjs",
+      "status": "PASS",
+      "log": "12.log",
+      "seconds": 2.93
+    },
+    {
+      "suite": "tools/openpencil/test_themes.mjs",
+      "status": "PASS",
+      "log": "13.log",
+      "seconds": 1.73
+    }
+  ],
+  "notChecked": [
+    "Production release",
+    "Real screenreader output",
+    "Other operating systems/browsers"
+  ]
+}

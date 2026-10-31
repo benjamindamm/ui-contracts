@@ -37,6 +37,8 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 
 | Dokument | Inhalt |
 | --- | --- |
+| [AI Elements · Mission und Nutzen](analyses/AI-ELEMENTS-FIT-2026-10-31/README.md) | Abgegrenzte Inspirationsprüfung: bestehende Contracts zuerst, zwei erneut ausgeführte Auswahlbaselines, keine neue Rezept-Sprache oder Abhängigkeit übernommen |
+| [Unabhängige Gegenprüfung](analyses/INDEPENDENT-AUDIT-2026-10-31/INDEPENDENT-REVIEW.md) · [Reparaturen](analyses/INDEPENDENT-AUDIT-FIXES-2026-10-31/README.md) | Risikoorientierter Projektcheck; Aliasprüflücke und veraltete Webmetadaten mit separater Reparatur und Regressionen |
 | [MATRIX.md](MATRIX.md) | Anforderungsorientierte Abdeckungsmatrix |
 | [CLAIMS.md](CLAIMS.md) | Claim- und Befundregister |
 | [SOURCES.md](SOURCES.md) | Quellenregister |

@@ -90,6 +90,43 @@ class BindingTests(unittest.TestCase):
         self.edit('tokens.json', lambda d: d['base']['gap'].update({'$type': 'color'}))
         self.assertIn('TOKEN_ALIAS_TYPE_MISMATCH', self.codes())
 
+    def test_nested_aliases_in_objects_and_arrays(self):
+        cases = [
+            ({'color': '{missing.color}'}, 'TOKEN_ALIAS_MISSING'),
+            ([{'color': '{missing.color}'}], 'TOKEN_ALIAS_MISSING'),
+            ({'color': '{probe}'}, 'TOKEN_ALIAS_CYCLE'),
+            ([{'color': '{probe}'}], 'TOKEN_ALIAS_CYCLE'),
+            ({'color': '{chain}'}, 'TOKEN_ALIAS_CYCLE'),
+            ([{'color': '{validColor}'}], None),
+            ('{validColor}', 'TOKEN_ALIAS_TYPE_MISMATCH'),
+        ]
+        for value, expected in cases:
+            with self.subTest(value=value):
+                data = {
+                    'validColor': {'$type': 'color', '$value': '#000000'},
+                    'probe': {'$type': 'shadow', '$value': value},
+                    'chain': {'$type': 'shadow', '$value': '{probe}'},
+                }
+                path = self.repo / 'tokens-probe.json'
+                path.write_text(json.dumps(data))
+                inspector = check.Inspector(self.lib, self.repo)
+                if expected:
+                    with self.assertRaises(check.Invalid) as caught:
+                        inspector.tokens(path)
+                    self.assertEqual(caught.exception.code, expected)
+                    self.assertFalse(inspector.checks)
+                else:
+                    inspector.tokens(path)
+                    self.assertEqual(inspector.checks[0]['kind'], 'token-alias-closure')
+
+    def test_nested_missing_alias_fails_full_library_check(self):
+        self.edit('tokens.json', lambda d: d.update(probe={
+            '$type': 'shadow', '$value': [{'color': '{does.not.exist}'}]}))
+        result = self.run_check()
+        self.assertEqual(result['overall'], 'FAIL')
+        self.assertIn('TOKEN_ALIAS_MISSING', {e['code'] for e in result['errors']})
+        self.assertFalse(result['release'])
+
     def test_duplicate_story_identity_rejected(self):
         self.edit('components/input/stories.json', lambda d: d['stories'].append(d['stories'][0]))
         self.assertIn('STORY_DUPLICATE_ID', self.codes())
