@@ -24,6 +24,18 @@ flowchart TB
 >
 > Drei feste Ländervorwahlen: ein Select. Lange Liste: ein Select mit Suche. Der Agent erstellt den Entwurf nach den Komponentenregeln; das Team prüft und präzisiert ihn gemeinsam.
 
+## Verbindet Design und Entwicklung
+
+**UI Contracts ergänzt Figma, andere Designwerkzeuge und eure Codebase – es löst sie nicht ab.** Das Handbuch hält die gemeinsam vereinbarten Regeln fest und verbindet sie mit den Designs und Implementierungen.
+
+```mermaid
+flowchart LR
+    D[Figma & Designwerkzeuge] <-->|Abgleichen| H[UX- & Design-Handbuch]
+    H <-->|Abgleichen| C[Codebase]
+```
+
+Der Austausch geht in beide Richtungen: Vorgaben können in Designs und Code umgesetzt werden. Umgekehrt können bestehende Designs oder eine Codebase als Ausgangspunkt dienen, um Regeln zu erschließen und Änderungen ins Handbuch zurückzuführen. Der Agent unterstützt diesen Abgleich; das Team entscheidet über offene Fragen und Änderungen an den gemeinsamen Vorgaben.
+
 ## So sieht ein Ergebnis aus
 
 Aus einer eingefrorenen Autocomplete-Definition entstand dieses editierbare OpenPencil-Design mit zehn Zuständen. Die Vorschau ist ein gerendertes Ergebnis, kein interaktives Control.
@@ -97,7 +109,7 @@ libraries/meine-app/
 2. **Ergebnis erstellen:** Design oder Code aus den Vorgaben ableiten; unterstützte Zielwerkzeuge nach Bedarf einsetzen.
 3. **Integriert prüfen:** Ergebnis gegen die Quellen und ihre Verbindungen abgleichen. Je nach Ziel gehören Schema-/Referenzprüfungen oder tatsächliche Events, Fokus und Scrollen dazu.
 
-Code, Screenshots, Mockups und Figma-Dateien sind Ergebnisse. Eine Figma-Datei kann auch wieder Eingabe sein: Der Agent gleicht Änderungen mit den Regeln ab und übernimmt vereinbarte Änderungen in eine neue Quellenrevision. Das ist kein automatischer verlustfreier Rückimport. Ergebnisse und Prüfberichte bleiben an ihren jeweiligen Quellenstand gebunden.
+Design-Dateien und Code können sowohl Eingaben als auch Ergebnisse sein. Beim Rückweg gleicht der Agent die erkennbaren Regeln und Änderungen mit den führenden Quellen ab; bestätigte Änderungen bilden eine neue Revision. Nicht im Artefakt enthaltene Absichten oder Verhaltensregeln müssen ergänzt werden. Die Verbindung ist ein agentengestützter Arbeitsweg, keine bereits vorhandene automatische oder verlustfreie Synchronisation beliebiger Codebases und Designwerkzeuge. Ergebnisse und Prüfberichte bleiben an ihren jeweiligen Quellenstand gebunden.
 
 [Architektur und Zusammenspiel](docs/ARCHITECTURE.md) · [Bibliotheksstruktur](libraries/README.md) · [UX-Regeln und Auswahl](tools/ux/README.md).
 
