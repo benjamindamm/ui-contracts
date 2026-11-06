@@ -1,6 +1,24 @@
-# UX-Fähigkeiten prüfen und feste Werte auswählen
+# UX-Fähigkeiten prüfen und Komponenten auswählen
 
-Operativer Einstieg für ausdrücklich ausgewählte Bibliotheken. Originalquellen führen; JSON-Profile und Prüfprofile sind eigene, versionierte Projektkonventionen. Kein neuer universeller UX-Standard.
+**Dieser Prüfweg unterstützt die Frage: Welche vorhandene Komponente passt zu einer festen Wertauswahl?** Er prüft deklarierte Fähigkeiten gegen unterstützte Quellen-/Verhaltensprofile und wertet die Policy der ausdrücklich gewählten Bibliothek aus.
+
+**Ergebnis:** Eine begründete Auswahl oder eine konkrete Rückfrage/Fehlerdiagnose, gebunden an Quellenstand und Prüfumfang. Die Auswahl ist noch keine Abnahme einer erzeugten UI.
+
+## Mit einem Agenten beginnen
+
+Nutze den [UI-Contracts-Skill](../../docs/skills/README.md) mit Bibliothek, Ziel und fachlichen Anforderungen. Der Agent lädt nur die benötigten Regeln. Für den manuellen Werkzeugweg folgen unten die Befehle.
+
+> **Beispiel in der Bibliothek example**
+>
+> Drei feste Vorwahlen führen im vorhandenen Policyprofil zu Select; 30 zu Select mit Suche. Die Grenze von 15 Optionen ist eine gesetzte Beispielpolicy, keine allgemeine UX-Regel.
+
+Originalquellen führen. JSON- und Prüfprofile sind eigene versionierte Projektkonventionen, kein universeller UX-Standard. Freie Texteingabe fällt außerhalb dieser festen Auswahlpolicy.
+
+## Manueller Ablauf
+
+1. **Einrichten:** [Projektlaufzeit](RUNTIME.md) mit Python, Node und bei Policyauswertung Java bereitstellen.
+2. **Fähigkeiten prüfen:** Bibliothek und ihre relevanten Quellen/SCXML-Fälle prüfen, bei Bedarf Fakten vorbereiten.
+3. **Policy auswerten:** Tatsächliche Optionen und Anforderungen übergeben. Fehlende Fakten führen zur Klärung; ein ungültiger Contract stoppt die Auswahl.
 
 ## Bibliotheksquellen
 
@@ -18,9 +36,9 @@ tools/validation/.venv/bin/python tools/ux/choose.py \
   --library example --context tools/ux/contexts/fixed-thirty.json --prepare-only
 ```
 
-Die Python-/Node-Abhängigkeiten sind die vorhandenen gepinnten Bestände aus tools/validation und tools/openpencil. Einrichtung: `python3 tools/setup.py` mit vorhandenem JDK 17+ und Node 22+. Der Setupbefehl installiert die gepinnten Projektabhängigkeiten lokal; bei Bedarf `--java PFAD`. `check.py` führt die ECMAScript-Regeln lokaler SCXML-Dateien tatsächlich aus; nur die zur Prüfung vorgesehenen vertrauenswürdigen Projektartefakte verwenden. Die Profile sind keine Sandbox für fremden Code.
+Einrichtung und ausführbare Quellen: [Runtime und Voraussetzungen](RUNTIME.md).
 
-## Nachweisstatus
+## Ergebnis verstehen
 
 | Status je Komponente | Bedeutung für die Auswahl |
 | --- | --- |
@@ -29,7 +47,7 @@ Die Python-/Node-Abhängigkeiten sind die vorhandenen gepinnten Bestände aus to
 | `invalid` | Quellen/Schema/Profil widersprechen sich oder tatsächliche Contractfälle schlagen fehl. Auswahl stoppt mit FAIL. |
 | `verified-limited` | Aktuelle CEM-/HTML-Struktur und die im Profil unterstützten TypeScript-Signaturen passen; die tatsächlich ausgeführten SCXML-Gegenfälle bestehen. Gilt ausschließlich für diesen Quellenstand und Prüfumfang. |
 
-Unterstützte Profile:
+### Unterstützte Profile
 
 - `single-select/1`: ein fester Schlüssel, native Select-Struktur, Mitgliedschaft, Disabled, kontrollierte Updates und Ereignisse.
 - `separate-search-select/1`: zusätzlich getrennte Query, Filterbezug, aktive Option ohne Commit und Escape. Die native SCXML-Logik wird ausgeführt; ein erzeugter Browserfilter ist damit noch nicht geprüft.
@@ -50,10 +68,6 @@ tools/validation/.venv/bin/python tools/ux/choose.py \
   --library example --context tools/ux/contexts/fixed-three.json
 ```
 
-Die vorbereitete Runtime stellt `classpath.txt` mit vollständigen JAR-Pfaden bereit. Deren Namen und SHA-256 müssen `runtime.lock.json` entsprechen. `DmnProbe.java` wird vor Auswertung aus dieser Repositoryquelle temporär mit einem JDK 17+ kompiliert. Nach `tools/setup.py` werden die lokal eingerichtete Runtime und ihr JDK aus `.runtime/config.json` verwendet. Alternativ wird Java über PATH oder ausdrücklich `--java /pfad/java` bestimmt; `UX_RULE_RUNTIME` ist eine Alternative zu `--runtime`. Es wird weder ein temporärer Standardpfad noch Homebrew vorausgesetzt. `choose.py` lädt nichts aus dem Netz; nur der ausdrücklich gestartete Setupbefehl lädt gepinnte Abhängigkeiten.
-
-Der [Setup-/Browsernachweis](../../docs/research/analyses/WEB-RUNTIME-2026-10-31/README.md) dokumentiert eine saubere Arbeitskopie ohne mitkopierte Laufzeitabhängigkeiten. Ohne eingerichtete Engine endet choose mit `UX_ENGINE_NOT_CONFIGURED` oder einer konkreten Werkzeugdiagnose. Der reine Quellen-/SCXML-Check und `--prepare-only` benötigen keine DMN-Laufzeit.
-
 Die Kontextdatei benennt die Bibliothek, tatsächliche Optionen und vier explizite Fakten: feste Werte gefordert, temporäre Suche erlaubt, direkte Bearbeitung des gewählten Labels erlaubt sowie Filterprovider vorhanden. Fehlende Fakten sind unbekannt und führen zu `needs-clarification`; Freitext-Schreibhilfe fällt außerhalb der festen Auswahlpolicy. Ein Provider-Fakt ist eine deklarierte Kontextvoraussetzung, kein Nachweis einer erzeugten Implementierung.
 
 Im example-Profil ist >15 eine ausdrückliche Produkt-/Studienregel. Der Runner berechnet die Optionsanzahl aus der tatsächlichen Liste. Er erfindet keine allgemeine UX-Grenze und keine geografische Priorität. Gleichlautende Vorwahlen dürfen verschiedene Länderschlüssel behalten.
@@ -73,6 +87,6 @@ Ohne Runtime werden die Integrationsfälle ausdrücklich übersprungen, nicht al
 
 ## Kleiner Toolkontext
 
-Die drei neuen CLI-Einstiege geben standardmäßig eine kurze Zusammenfassung aus. `--output NEUE_DATEI` legt die vollständigen Quellen-/Prüfbelege separat mit SHA-256-Verweis ab; bestehende Dateien und Quell-/Historienverzeichnisse werden nicht überschrieben. `--details` lädt die volle Ausgabe ausdrücklich in den Toolkontext. Ein Agent muss die großen Belege deshalb nicht vorsorglich lesen. Python-Funktionen liefern weiterhin die vollständigen strukturierten Ergebnisse für technische Integration.
+Die drei CLI-Einstiege geben standardmäßig eine kurze Zusammenfassung aus. `--output NEUE_DATEI` legt die vollständigen Quellen-/Prüfbelege separat mit SHA-256-Verweis ab; bestehende Dateien und Quell-/Historienverzeichnisse werden nicht überschrieben. `--details` lädt die volle Ausgabe ausdrücklich in den Toolkontext. Ein Agent muss die großen Belege deshalb nicht vorsorglich lesen. Python-Funktionen liefern weiterhin die vollständigen strukturierten Ergebnisse für technische Integration.
 
 Gemeinsamer Testeinstieg und aktuelle Targetprüfung: [tools/web](../web/README.md).

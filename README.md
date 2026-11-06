@@ -18,55 +18,128 @@ flowchart TB
     O -->|Schnelles Feedback| W
 ```
 
-Alle Beteiligten legen gemeinsam fest, was die Oberfläche leisten und wie sie funktionieren soll. Der Agent ist Teil des Workshops: Er macht Entscheidungen schnell als Code, Screens oder bearbeitbares Design sichtbar. Das Team prüft diese Ergebnisse gemeinsam und präzisiert die Vorgaben. So können Missverständnisse bereits in der Konzeptionsphase auffallen und geklärt werden.
+**Gemeinsam festlegen, sofort sehen, früh klären.** Business, Führung, Design und Entwicklung spezifizieren mit dem Agenten die gewünschte UI. Er erzeugt Code, Screens oder Figma-Designs für direktes Feedback. Entscheidungen fließen ins Handbuch zurück; Missverständnisse werden früh sichtbar.
 
-**Zum Beispiel:** Ein Formular soll eine Telefonnummer erfassen. Bei drei festen Ländervorwahlen kann ein Select genügen; bei einer langen Liste kommt ein Select mit Suche infrage. Das Handbuch beschreibt die Eignung, Gestaltung und Bedienung der Komponenten. Der Agent nutzt diese Vorgaben für einen Entwurf, zu dem das Team direkt Feedback gibt.
+> **Beispiel: Telefonnummer erfassen**
+>
+> Drei feste Ländervorwahlen: ein Select. Lange Liste: ein Select mit Suche. Der Agent erstellt den Entwurf nach den Komponentenregeln; das Team prüft und präzisiert ihn gemeinsam.
 
-Code, Screenshots, Mockups und Figma-Dateien sind mögliche **Ergebnisse** der Vorgaben. Eine Figma-Datei kann auch wieder **Eingabe** sein: Änderungen werden mit den bestehenden Regeln abgeglichen und bewusst ins Handbuch übernommen. So bleibt nachvollziehbar, welche Vorgaben gelten. Ein Screenshot zeigt eine Darstellung, enthält aber allein keinen vollständigen Verhaltensvertrag.
+## So sieht ein Ergebnis aus
 
-**Stand:** Forschungsframework mit konkreten Definitionen, editierbaren Design-Proofs und begrenzten Webprüfern. Der gemeinsame Workshop beschreibt den angestrebten Arbeitsprozess; eine Beschleunigung der Zusammenarbeit ist noch nicht empirisch nachgewiesen. Allgemeine Generierung, Produktionsfreigabe und iOS-/Android-Adapter bleiben offen.
+Aus einer eingefrorenen Autocomplete-Definition entstand dieses editierbare OpenPencil-Design mit zehn Zuständen. Die Vorschau ist ein gerendertes Ergebnis, kein interaktives Control.
 
-## Direkt einsteigen
+<a href="examples/autocomplete/output/openpencil/run-04/builder-a/preview.png"><img src="examples/autocomplete/output/openpencil/run-04/builder-a/preview.png" alt="Autocomplete: zehn aus derselben Definition erzeugte Designzustände" width="440"></a>
 
-| Vorhaben | Nächster Schritt |
-| --- | --- |
-| Mit einem Agenten arbeiten | [Kurze Handlungsregeln](skills/ui-contracts/SKILL.md) |
-| Eigene Komponentenbibliothek aufbauen | [Bibliothek anlegen und ausdrücklich auswählen](libraries/README.md) |
-| Eine passende Komponente auswählen | [UX-Regeln und Policy](tools/ux/README.md) |
-| Ergebnis zusammenführen und prüfen | [Gesamtabgleich](skills/ui-contracts/references/integration-review.md) · [Unterstützte Webprüfung](tools/web/README.md) |
-| Orientierung oder Details suchen | [Dokumentationswege](docs/README.md) · [Aktueller Stand](docs/STATUS.md) |
+[Definition und erster Proof](examples/autocomplete/README.md) · [Herkunft dieser Vorschau](examples/autocomplete/output/openpencil/run-04/README.md).
 
-```sh
-python3 tools/libraries/manage.py init meine-app --name "Meine App"
+## Mit dem Skill einsteigen
+
+**Beschreibe die Aufgabe; der Skill führt den Agenten durch die Arbeit.** Formate, Detailregeln und Werkzeuge lädt er passend zum jeweiligen Schritt nach.
+
+1. **Skill bereitstellen:** Den [UI-Contracts-Skill](skills/ui-contracts/SKILL.md) für deinen Agenten einrichten oder als Projekteinstieg angeben. [Skill und Arbeitswege](docs/skills/README.md).
+2. **Bibliothek wählen:** Eigene Vorgaben nutzen oder [eine leere Bibliothek anlegen](libraries/README.md). `example` dient ausdrücklich als Orientierung oder gewählte Beispieleingabe.
+3. **Aufgabe beschreiben:** Bibliothek, Anforderung und Ziel nennen, etwa: „Nutze die Bibliothek example. Wähle passende Komponenten für ein Telefonnummernformular und erstelle zunächst einen Designentwurf. Halte offene Regeln fest.“
+
+```mermaid
+flowchart TB
+    U[Deine Aufgabe] --> A[Agent mit Skill]
+    A --> X[UX-Eignung]
+    X --> I[Schnittstelle]
+    X --> D[Gestaltung]
+    X --> V[Verhalten]
+    X --> Z[Barrierefreiheit]
+    I --> H[Gemeinsame Spezifikation]
+    D --> H
+    V --> H
+    Z --> H
+    H --> O[Design & Code]
+    O --> P[Prüfen & Feedback]
+    P --> A
 ```
 
-Die neue Bibliothek beginnt leer unter `libraries/meine-app/`: `components/` für Definitionen, `assets/` für gemeinsame Dateien. `example` bleibt eine gezielt nachladbare Forschungsbibliothek.
+**Zuerst die passende Komponente, dann ihre Ausgestaltung:** UX-Regeln helfen bei der Auswahl. Die vier Domänen beschreiben Schnittstelle, Aussehen, Reaktion und Zugänglichkeit. Aktuell bündelt ein Skill diese Arbeitsbereiche mit gezielt nachladbaren Anleitungen.
 
-## Das Prinzip
+## Wie ist es aufgebaut und wie funktioniert es?
 
-Die Vorgaben sind in vier verknüpften Bereichen beschrieben. Jeder Bereich hat eine führende Grundlage:
+Das Handbuch liegt als versionierte Dateien im Repository. Jede Bibliothek hat eigene Komponenten, gemeinsame Design-Tokens und Assets. Eine Komponente besteht aus mehreren verknüpften Quellen; die vier Domänen bleiben getrennt:
 
-| Domäne | Führende Grundlage |
-| --- | --- |
-| Technisches Interface | **CEM**: Properties, Typen und Events |
-| Visuelles Design | **DTCG/CSS**: Tokens und Layoutregeln |
-| UX-Verhalten | **SCXML**: Zustände, Aktionen und Übergänge |
-| Accessibility | **HTML/ARIA**, ergänzt durch APG-Bedienmuster |
+| Domäne | Grundlage | Typische Datei | Beschreibt zum Beispiel |
+| --- | --- | --- | --- |
+| Technisches Interface | **CEM** (Custom Elements Manifest) | `interface.json` | Properties, Typen und Events |
+| Visuelles Design | **DTCG/CSS** | `tokens.json`, `layout.css` | Farben, Abstände, Schrift und Layout |
+| UX-Verhalten | **SCXML** | `behavior.scxml` | Zustände, Aktionen und Übergänge |
+| Accessibility | **HTML/ARIA**, ergänzt durch **APG** | `accessibility.html` | Semantik, zugängliche Namen und Beziehungen |
 
-`component.json` verbindet Quellen, Teile und Unterkomponenten. UX-Eignungsregeln ergänzen, wann ein Control fachlich passt. Jede Information behält ihre führende Quelle. [Architektur und Zusammenspiel](docs/ARCHITECTURE.md).
+`component.json` ist der Einstieg zur Komponente: Es verweist auf diese Quellen und verbindet Teile sowie Unterkomponenten. Die Verknüpfung ist eine eigene Konvention von UI Contracts; CEM, DTCG, SCXML und HTML werden dadurch nicht zu einem neuen gemeinsamen Standard erklärt.
 
-## Wissen nach Bedarf
+Zusätzlich beschreibt `ux.json`, wofür eine Komponente geeignet ist und welche Einschränkungen sie hat. Auswahlregeln können daraus eine begründete Komponentenwahl unterstützen. **Eignung** („Select mit Suche für eine lange feste Liste“) und **Verhalten** („Was passiert bei Escape?“) sind unterschiedliche Informationen.
 
-Die wichtigste Handlung steht im Skill. Detailanleitungen, konkrete Definitionen und Forschungsbelege werden für den jeweiligen Arbeitsschritt nachgeladen. Kleine Teilaufträge halten Ergebnisse mit Quellenverweisen fest; am Ende prüft ein Gesamtabgleich die betroffenen Regeln und Verbindungen. So bleibt das Wissen erreichbar, ohne den gesamten Bestand in jeden Kontext zu laden.
+Eine Bibliothek kann so aussehen; einzelne Zusatzdateien entstehen nach Bedarf:
 
-[Mehrstufiger Ablauf](skills/ui-contracts/references/workflow.md) · [Informationsstruktur](docs/README.md#lesen-nach-der-umgekehrten-pyramide). Modellvergleiche dienen optional der Forschung; sie sind kein hartes Einsatzkriterium.
+```text
+libraries/meine-app/
+├── library.json                 # Komponentenindex
+├── tokens.json                  # Gemeinsame Design-Tokens
+├── assets/                      # Schriften, Icons, Bilder
+└── components/
+    └── select/
+        ├── component.json       # Einstieg und Quellenverweise
+        ├── interface.json       # CEM
+        ├── layout.css           # Gestaltung mit Tokenbezug
+        ├── behavior.scxml       # Zustandsmodell
+        ├── accessibility.html   # Semantische Vorlage
+        └── ux.json              # Eignung und Grenzen
+```
+
+**Der technische Ablauf:**
+
+1. **Quellen laden:** Ausgewählte Bibliothek und betroffene Komponenten lesen; Quellenstand und benötigte Verbindungen festhalten.
+2. **Ergebnis erstellen:** Design oder Code aus den Vorgaben ableiten; unterstützte Zielwerkzeuge nach Bedarf einsetzen.
+3. **Integriert prüfen:** Ergebnis gegen die Quellen und ihre Verbindungen abgleichen. Je nach Ziel gehören Schema-/Referenzprüfungen oder tatsächliche Events, Fokus und Scrollen dazu.
+
+Code, Screenshots, Mockups und Figma-Dateien sind Ergebnisse. Eine Figma-Datei kann auch wieder Eingabe sein: Der Agent gleicht Änderungen mit den Regeln ab und übernimmt vereinbarte Änderungen in eine neue Quellenrevision. Das ist kein automatischer verlustfreier Rückimport. Ergebnisse und Prüfberichte bleiben an ihren jeweiligen Quellenstand gebunden.
+
+[Architektur und Zusammenspiel](docs/ARCHITECTURE.md) · [Bibliotheksstruktur](libraries/README.md) · [UX-Regeln und Auswahl](tools/ux/README.md).
+
+Der Skill hält die Handlungsessenz bereit; Detailwissen und Forschungsbelege bleiben über Verweise erreichbar. Teilaufträge übergeben benötigte Ergebnisse mit Quellenbezug, der Gesamtabgleich prüft ihre Verbindungen. [Workflow](skills/ui-contracts/references/workflow.md) · [Informationsstruktur](docs/README.md#lesen-nach-der-umgekehrten-pyramide).
 
 ## Was bisher nachgewiesen ist
+
+### Reproduzierbare Designausgaben
+
+Die Autocomplete-Läufe zeigen, dass aus derselben eingefrorenen Definition mit mehreren Modellen **vergleichbare, editierbare Designausgaben reproduziert werden konnten**. Je Lauf erzeugten zwei getrennte Builder ihre Ergebnisse; die Prüfung verglich sie mit der Definition und miteinander.
+
+| Getestetes Modell | Dokumentiertes Ergebnis |
+| --- | --- |
+| **GPT-6.1 Sol · Medium** | Alle erfassten normalisierten Komponentenwerte beider Designs gleich; beide mit derselben Platzhalterfarbabweichung. |
+| **DeepSeek V4.1 Flash** | Zwei ähnliche, editierbare Designs; gemeinsame Farbabweichung und Grenzen der ursprünglichen Prüfung dokumentiert. |
+| **Qwen3.8-27B · FP8** | Beide Designs im Lauf als „substanziell erfüllt“ bewertet; eine zusätzliche Farbabweichung bei B sowie gemeinsame Accessibility-Nachweislücken dokumentiert. |
+
+Ein weiterer Lauf mit nicht ermittelter Modellidentität erreichte **572/572 gleiche Paarwerte** im begrenzten statischen Gegencheck. Reproduzierbarkeit wurde damit im untersuchten Designumfang beobachtet; Abweichungen bleiben Teil des Ergebnisses.
+
+<details>
+<summary>Modellangaben und Einordnung der Studien</summary>
+
+Die Modellzuordnungen stammen aus nachträglichen Nutzerangaben; DeepSeek und Qwen wurden dabei als **Open-Weights-Modelle** eingeordnet. Exakte Modellrevisionen und Konfigurationen je Rolle sind nicht vollständig technisch verifiziert.
+
+Die Läufe belegen weder pixelidentische Ergebnisse über alle Modelle hinweg noch vollständige Definitionstreue oder eine Modellrangfolge. Prüfverfahren, Unterbrechungen und Gegenbefunde sind im [Studienregister](docs/research/STUDIES.md) nachvollziehbar. Modellvergleiche sind optionale Forschung, kein hartes Einsatzkriterium.
+
+</details>
+
+### Weitere Nachweise
 
 - **Originalquellen und UX:** aktive Beispielbibliothek mit begrenzten Quellen-/SCXML- und nativen Policyprüfungen. [Operativer Einstieg](tools/ux/README.md).
 - **Web:** aktuelle quellengebundene Fälle prüfen tatsächliche Events, Fokus, Scrollen und Browsersemantik für vier Profile. [Nachweise und Grenzen](docs/research/analyses/WEB-RUNTIME-2026-10-31/README.md).
 - **Design:** editierbare OpenPencil-Ausgaben und unabhängige Reproduktionsstudien zeigen Ergebnisse sowie erhaltene Fehler. [Autocomplete-Proof](examples/autocomplete/README.md) · [Studien](docs/research/STUDIES.md).
 
-Ein begrenzter Nachweis ist keine allgemeine Konformitätsfreigabe. Der [aktuelle Stand](docs/STATUS.md) unterscheidet verfügbare Werkzeuge und offene Punkte.
+## Heute möglich und noch offen
 
-[Entwicklungsschritte](docs/EVOLUTION.md) · [Aufgaben](TASKS.md) · [Forschungsherkunft](docs/research/README.md)
+| Heute belegt | Noch offen |
+| --- | --- |
+| Editierbare Designausgaben für untersuchte Komponenten | Allgemeine Generierung beliebiger UIs |
+| Begrenzte Quellen-, UX- und Webprüfungen | Vollständige Konformitäts- und Produktionsfreigabe |
+| Vergleichbare statische Ergebnisse in mehreren Modellläufen | iOS-/Android-Adapter und automatische Figma-Rücksynchronisation |
+
+Der Workshop beschreibt den angestrebten Arbeitsprozess; seine Beschleunigung ist noch nicht empirisch gemessen. Ein statisches Design belegt keine interaktive Bedienung, ein Teilcheck keine vollständige Regelumsetzung. [Aktueller Stand und Prüfgrenzen](docs/STATUS.md).
+
+[Dokumentationswege](docs/README.md) · [Entwicklungsschritte](docs/EVOLUTION.md) · [Aufgaben](TASKS.md) · [Forschungsherkunft](docs/research/README.md)
