@@ -1,10 +1,30 @@
 # UI Contracts
 
-**Eine prüfbare Bauanleitung für UI-Komponenten — für Menschen und Coding-Agenten.**
+**Ein digitales, formalisiertes UX- und Design-Handbuch für Business, Führung, Design und Entwicklung.**
 
-UI Contracts beschreibt Schnittstelle, Gestaltung, Verhalten und Accessibility in verknüpften Originaldateien. Daraus können Agenten Designs und Implementierungen ableiten und gezielt prüfen.
+UI Contracts hält gemeinsam vereinbarte Vorgaben fest: Wie sehen Komponenten aus, wie funktionieren sie und wann passen sie zu einer fachlichen Aufgabe? „Formalisiert“ bedeutet: Die Regeln sind so präzise und strukturiert beschrieben, dass Agenten damit arbeiten und Werkzeuge Teile davon prüfen können.
 
-**Stand:** Forschungsframework mit konkreten Definitionen, editierbaren Design-Proofs und begrenzten Webprüfern. Allgemeine Generierung, Produktionsfreigabe und iOS-/Android-Adapter bleiben offen.
+## Gemeinsam spezifizieren, schnell Feedback bekommen
+
+```mermaid
+flowchart TB
+    subgraph W[Gemeinsamer Workshop]
+        B[Business & Führung] <--> A[Agent]
+        D[Design & UX] <--> A
+        E[Entwicklung] <--> A
+        A <--> H[UX- & Design-Handbuch]
+    end
+    A --> O[Code · Screens · Figma]
+    O -->|Schnelles Feedback| W
+```
+
+Alle Beteiligten legen gemeinsam fest, was die Oberfläche leisten und wie sie funktionieren soll. Der Agent ist Teil des Workshops: Er macht Entscheidungen schnell als Code, Screens oder bearbeitbares Design sichtbar. Das Team prüft diese Ergebnisse gemeinsam und präzisiert die Vorgaben. So können Missverständnisse bereits in der Konzeptionsphase auffallen und geklärt werden.
+
+**Zum Beispiel:** Ein Formular soll eine Telefonnummer erfassen. Bei drei festen Ländervorwahlen kann ein Select genügen; bei einer langen Liste kommt ein Select mit Suche infrage. Das Handbuch beschreibt die Eignung, Gestaltung und Bedienung der Komponenten. Der Agent nutzt diese Vorgaben für einen Entwurf, zu dem das Team direkt Feedback gibt.
+
+Code, Screenshots, Mockups und Figma-Dateien sind mögliche **Ergebnisse** der Vorgaben. Eine Figma-Datei kann auch wieder **Eingabe** sein: Änderungen werden mit den bestehenden Regeln abgeglichen und bewusst ins Handbuch übernommen. So bleibt nachvollziehbar, welche Vorgaben gelten. Ein Screenshot zeigt eine Darstellung, enthält aber allein keinen vollständigen Verhaltensvertrag.
+
+**Stand:** Forschungsframework mit konkreten Definitionen, editierbaren Design-Proofs und begrenzten Webprüfern. Der gemeinsame Workshop beschreibt den angestrebten Arbeitsprozess; eine Beschleunigung der Zusammenarbeit ist noch nicht empirisch nachgewiesen. Allgemeine Generierung, Produktionsfreigabe und iOS-/Android-Adapter bleiben offen.
 
 ## Direkt einsteigen
 
@@ -24,11 +44,7 @@ Die neue Bibliothek beginnt leer unter `libraries/meine-app/`: `components/` fü
 
 ## Das Prinzip
 
-```mermaid
-flowchart LR
-  D[Beschreiben] --> V[Verknüpfen] --> U[Umsetzen] --> P[Prüfen]
-  P -->|Befund| D
-```
+Die Vorgaben sind in vier verknüpften Bereichen beschrieben. Jeder Bereich hat eine führende Grundlage:
 
 | Domäne | Führende Grundlage |
 | --- | --- |
