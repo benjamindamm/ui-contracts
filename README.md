@@ -20,6 +20,8 @@ flowchart TB
 
 **Gemeinsam festlegen, sofort sehen, früh klären.** Business, Führung, Design und Entwicklung spezifizieren mit dem Agenten die gewünschte UI. Er erzeugt Code, Screens oder Figma-Designs für direktes Feedback. Entscheidungen fließen ins Handbuch zurück; Missverständnisse werden früh sichtbar.
 
+Der Ablauf unterstützt eine **Lean-UX-Arbeitsweise**: gemeinsam entwerfen, früh ausprobieren und aus Feedback lernen. UI Contracts hält die vereinbarten Regeln nachvollziehbar fest. Ob eine Lösung den Nutzern tatsächlich hilft, muss zusätzlich mit ihnen geprüft werden. [Einordnung zu Hypothesen und Experimenten von Jeff Gothelf](https://jeffgothelf.com/blog/process-experiments/).
+
 > **Beispiel: Telefonnummer erfassen**
 >
 > Drei feste Ländervorwahlen: ein Select. Lange Liste: ein Select mit Suche. Der Agent erstellt den Entwurf nach den Komponentenregeln; das Team prüft und präzisiert ihn gemeinsam.
