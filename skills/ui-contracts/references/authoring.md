@@ -11,6 +11,8 @@ Zuerst Bibliotheks-ID aus dem Auftrag auswählen, dann nur deren `libraries/<id>
 
 `component.json`, `accessibility.rules.json` und die vorhandene Bindungssyntax sind eigene Entwürfe. Sie sind weder zusätzliche Originalstandards noch schon allgemein validierte Produktformate.
 
+Für unvollständige Design-/Codeimporte den [Rückweg](reverse.md) und [Draftcheck](completeness.md) nutzen. Fehlende Domänen dürfen dort offen bleiben; die bestehende vollständige Komponentenprüfung wird dadurch nicht gelockert.
+
 Beim neuen Bibliothekseintrag den Pfad-/Indexstil des Projekts übernehmen. Schnittstelle, führende Domänenpfade, Komposition, Anatomie und benötigte Fälle benennen. Nur für den Auftrag nötige Dateien und Zustände anlegen. Einen bestehenden Referenzeintrag nicht blind unter neuem Namen kopieren und dessen Semantik oder Prüffreigabe erben lassen.
 
 Für zusammengesetzte Komponenten besonders festhalten:

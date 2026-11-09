@@ -7,6 +7,8 @@
 | Einen Agenten beauftragen | [Kurze Handlungsregeln im Skill](../skills/ui-contracts/SKILL.md) |
 | Eine eigene Bibliothek anfangen | [Bibliothek auswählen oder anlegen](../libraries/README.md) |
 | Komponenten beschreiben oder ändern | [Autorenarbeit](../skills/ui-contracts/references/authoring.md) |
+| Design/Code als Ausgangspunkt nutzen | [Rückweg-Anleitungen](../skills/ui-contracts/references/reverse.md) |
+| Fehlende Komponentenregeln klären | [Deterministischer Draftcheck](../tools/completeness/README.md) |
 | Eine passende Komponente auswählen | [UX-Regeln und Quellenprüfung](../tools/ux/README.md) |
 | In Teilaufgaben arbeiten | [Rollen und Übergaben](../skills/ui-contracts/references/workflow.md); bei Auswahl-/UI-Aufträgen [konkreter Ablauf](../tools/ux/WORKFLOW.md) |
 | Das zusammengeführte Ergebnis prüfen | [Gesamtabgleich](../skills/ui-contracts/references/integration-review.md), anschließend den dort benötigten Zielprüfer |

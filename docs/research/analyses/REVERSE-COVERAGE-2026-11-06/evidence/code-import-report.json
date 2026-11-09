@@ -1,0 +1,199 @@
+{
+  "overall": "DRAFT_INCOMPLETE",
+  "release": false,
+  "componentStatus": "draft",
+  "scope": "Explicit profile coverage and source-locator integrity; not semantic completeness",
+  "library": "demo",
+  "checks": [
+    {
+      "id": "IF-001",
+      "domain": "interface",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/interface.json",
+          "sha256": "29f89504cf255d01c68d169d774e9409ba5bec8c7ca2a69dc7e5933f0dd2925a",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/modules/0/declarations/0/members/0"
+          },
+          "selectedSha256": "7934c97560c7805f61b787e1f8e96befe583f7d569f586cb347d18d0db2f11ac"
+        }
+      ]
+    },
+    {
+      "id": "IF-002",
+      "domain": "interface",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/interface.json",
+          "sha256": "29f89504cf255d01c68d169d774e9409ba5bec8c7ca2a69dc7e5933f0dd2925a",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/modules/0/declarations/0/events/0"
+          },
+          "selectedSha256": "64a3c5389e17b9956e96037b1d7efc454aa89b0eb32faa98c6b90bc44d72b7ed"
+        }
+      ]
+    },
+    {
+      "id": "VIS-001",
+      "domain": "tokens",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "VIS-002",
+      "domain": "css",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-001",
+      "domain": "behavior",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/behavior.scxml",
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "/s:scxml/@initial"
+          },
+          "selectedSha256": "23d06567909fc29950f57befe8b0a4a9d9ca1f629b2c926957dbae4a45f68f8e"
+        }
+      ]
+    },
+    {
+      "id": "BEH-002",
+      "domain": "behavior",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/behavior.scxml",
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "//s:transition[@event=\"CONFIRM\"]"
+          },
+          "selectedSha256": "56faa194208591aeef11c15dd8863ef4ff26527d50d44139326a33212624905b"
+        }
+      ]
+    },
+    {
+      "id": "BEH-003",
+      "domain": "behavior",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/behavior.scxml",
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "//s:transition[@event=\"ESCAPE\"]"
+          },
+          "selectedSha256": "c31f038d5aa97348938233ff7b7298cf7c531df53efc614c6d02cb2a0a818a2c"
+        }
+      ]
+    },
+    {
+      "id": "A11Y-001",
+      "domain": "html",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-002",
+      "domain": "html",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-003",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "UX-001",
+      "domain": "ux",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    }
+  ],
+  "questions": [
+    {
+      "id": "VIS-001",
+      "domain": "tokens",
+      "question": "Welche Design-Tokens bestimmen die Darstellung?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "VIS-002",
+      "domain": "css",
+      "question": "Welche Layout- und Zustandsregeln gelten?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-001",
+      "domain": "html",
+      "question": "Welche native Semantik oder ARIA-Rolle erhält das Control?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-002",
+      "domain": "html",
+      "question": "Woher stammt der zugängliche Name und wie ist er zugeordnet?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-003",
+      "domain": "behavior",
+      "question": "Wie werden Tastaturbedienung und Fokuswechsel geregelt?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "UX-001",
+      "domain": "ux",
+      "question": "Für welche Aufgaben ist die Komponente geeignet und wo liegen ihre Grenzen?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    }
+  ],
+  "errors": [],
+  "semanticReviewRequired": true,
+  "targetValidationRequired": true,
+  "notChecked": [
+    "Whether evidence actually answers the question",
+    "Suitability or exhaustiveness of selected profile",
+    "CEM/DTCG/SCXML/HTML conformance",
+    "Runtime, rendering and accessibility conformance",
+    "Authenticity of imported evidence or user decisions",
+    "Production release"
+  ],
+  "componentId": "demo:Choice",
+  "profile": "interactive-control/1",
+  "bindings": {
+    "component": "44cd092c0eb62ee09721b255e79d229cdf5ffd26beb5332798c713431b39fa72",
+    "record": "433eca607a4fe29e548fd67daa6595192fe25f6288c9f661081e26367e11f4cf",
+    "profiles": "47a6a09ead0b4f1985c40df7517190bed2eb6f3ae79b029eed0c202326f5f829",
+    "schema": "d54c14be82c851c22d0e503712fd71fa061aca7a4d7e469ef221f09c10e02c24",
+    "checker": "7d26d9bc899ae4fcbdb5fd63d22bf06784ede1e4cbebcfc88bd09aa3c8f2951f"
+  },
+  "statusCounts": {
+    "mapped": 5,
+    "open": 6,
+    "conflict": 0
+  }
+}

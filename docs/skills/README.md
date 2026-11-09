@@ -20,6 +20,8 @@ Der Skill bündelt Schnittstelle, Gestaltung, Verhalten und Barrierefreiheit. UX
 
 | Bedarf | Nur diesen Einstieg laden |
 | --- | --- |
+| Bestehendes Design oder Code zurückführen | [Rückwege und Abgleich](../../skills/ui-contracts/references/reverse.md) |
+| Unvollständige Komponente klären | [Draftlücken und gezielte Fragen](../../skills/ui-contracts/references/completeness.md) |
 | Originaldefinition ändern | [Autorenarbeit](../../skills/ui-contracts/references/authoring.md) |
 | Komponentenwahl | [UX](../../skills/ui-contracts/references/ux.md) |
 | Aufgaben zerlegen und übergeben | [Workflow](../../skills/ui-contracts/references/workflow.md) |

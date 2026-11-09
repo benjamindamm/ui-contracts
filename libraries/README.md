@@ -66,3 +66,7 @@ Optional bindet `fonts.json` konkrete lokale Fontdateien an die Family-Tokens de
 ## Frühere Quellen und Migration
 
 Alte Studien bleiben an ihre eingefrorenen Dateien und Werkzeugversionen gebunden. Aktuelle Bibliotheken und historische Nachweise sind unterschiedliche Quellenstände. Nur für die Arbeit mit alten Läufen [Migration und Kompatibilität](HISTORY.md) nachladen.
+
+## Unvollständige Imports als Draft bearbeiten
+
+Aus Design/Code gewonnene Teildefinitionen können fehlende Domänen zunächst auslassen. Der [Draft-Vollständigkeitscheck](../tools/completeness/README.md) hält offene Entscheidungen mit stabilen IDs sichtbar und liefert gezielte Rückfragen. Das ist ein getrennter Autorenweg; der strengere Komponentencheck erwartet weiterhin vollständige Domänenbindungen. Auch vollständig zugeordnete Belege ergeben keine automatische Freigabe.

@@ -1,0 +1,7 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" initial="idle">
+  <state id="idle">
+    <transition event="CONFIRM" target="idle"><send event="value-change"/></transition>
+    <transition event="ESCAPE" target="idle"/>
+    <transition event="KEY_NEXT" target="idle"><send event="focus-next"/></transition>
+  </state>
+</scxml>

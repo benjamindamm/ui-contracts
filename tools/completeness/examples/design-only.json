@@ -1,0 +1,42 @@
+{
+  "format": "ui-contracts-completeness/1",
+  "componentId": "demo:DesignOnly",
+  "componentSha256": "b696609494f755e7d3af2a9926f08124ed5d17923a69f090bddfc4a00ec08d45",
+  "profile": "interactive-control/1",
+  "requirements": {
+    "IF-001": {
+      "status": "open"
+    },
+    "IF-002": {
+      "status": "open"
+    },
+    "VIS-001": {
+      "status": "open"
+    },
+    "VIS-002": {
+      "status": "open"
+    },
+    "BEH-001": {
+      "status": "open"
+    },
+    "BEH-002": {
+      "status": "open"
+    },
+    "BEH-003": {
+      "status": "open"
+    },
+    "A11Y-001": {
+      "status": "open"
+    },
+    "A11Y-002": {
+      "status": "open"
+    },
+    "A11Y-003": {
+      "status": "open"
+    },
+    "UX-001": {
+      "status": "open"
+    }
+  },
+  "profileSha256": "47a6a09ead0b4f1985c40df7517190bed2eb6f3ae79b029eed0c202326f5f829"
+}

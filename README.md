@@ -36,7 +36,7 @@ flowchart LR
     H <-->|Abgleichen| C[Codebase]
 ```
 
-Der Austausch geht in beide Richtungen: Vorgaben können in Designs und Code umgesetzt werden. Umgekehrt können bestehende Designs oder eine Codebase als Ausgangspunkt dienen, um Regeln zu erschließen und Änderungen ins Handbuch zurückzuführen. Der Agent unterstützt diesen Abgleich; das Team entscheidet über offene Fragen und Änderungen an den gemeinsamen Vorgaben.
+Der Austausch geht in beide Richtungen: Vorgaben können in Designs und Code umgesetzt werden. Umgekehrt können bestehende Designs oder eine Codebase als Ausgangspunkt dienen, um Regeln zu erschließen und Änderungen ins Handbuch zurückzuführen. Der Agent unterstützt diesen Abgleich; das Team entscheidet über offene Fragen und Änderungen an den gemeinsamen Vorgaben. [Rückweg-Anleitungen](skills/ui-contracts/references/reverse.md) · [Draftlücken sichtbar machen](tools/completeness/README.md).
 
 ## So sieht ein Ergebnis aus
 

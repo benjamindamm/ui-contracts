@@ -1,0 +1,141 @@
+{
+  "format": "ui-contracts-completeness/1",
+  "componentId": "demo:Choice",
+  "componentSha256": "44cd092c0eb62ee09721b255e79d229cdf5ffd26beb5332798c713431b39fa72",
+  "profile": "interactive-control/1",
+  "requirements": {
+    "IF-001": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "29f89504cf255d01c68d169d774e9409ba5bec8c7ca2a69dc7e5933f0dd2925a",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/modules/0/declarations/0/members/0"
+          }
+        }
+      ]
+    },
+    "IF-002": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "29f89504cf255d01c68d169d774e9409ba5bec8c7ca2a69dc7e5933f0dd2925a",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/modules/0/declarations/0/events/0"
+          }
+        }
+      ]
+    },
+    "VIS-001": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "e8e16550a5d962f52765eabfba39fce0713e49e2316451ae46c1c0be52acfbe6",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/surface"
+          }
+        }
+      ]
+    },
+    "VIS-002": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "8ef731ee5ffab6fba1784a9ca79c67b2eff19d2162f25b90b291c0e4a6966d0f",
+          "selector": {
+            "kind": "lines",
+            "value": "1:1"
+          }
+        }
+      ]
+    },
+    "BEH-001": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "/s:scxml/@initial"
+          }
+        }
+      ]
+    },
+    "BEH-002": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "//s:transition[@event=\"CONFIRM\"]"
+          }
+        }
+      ]
+    },
+    "BEH-003": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "//s:transition[@event=\"ESCAPE\"]"
+          }
+        }
+      ]
+    },
+    "A11Y-001": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "0339962773d6b14a4cd169ab72a8040f2678d3b2dc2f13f9af197eea14e6ac27",
+          "selector": {
+            "kind": "xpath",
+            "value": "//select"
+          }
+        }
+      ]
+    },
+    "A11Y-002": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "0339962773d6b14a4cd169ab72a8040f2678d3b2dc2f13f9af197eea14e6ac27",
+          "selector": {
+            "kind": "xpath",
+            "value": "//label[@for=\"choice\"]"
+          }
+        }
+      ]
+    },
+    "A11Y-003": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "//s:transition[@event=\"KEY_NEXT\"]"
+          }
+        }
+      ]
+    },
+    "UX-001": {
+      "status": "mapped",
+      "evidence": [
+        {
+          "sha256": "0a2f3db97672ca4facf2c5721f0e827e3f38e6eac463f64b8f2abdaf5b17b13d",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/purpose"
+          }
+        }
+      ]
+    }
+  },
+  "profileSha256": "47a6a09ead0b4f1985c40df7517190bed2eb6f3ae79b029eed0c202326f5f829"
+}

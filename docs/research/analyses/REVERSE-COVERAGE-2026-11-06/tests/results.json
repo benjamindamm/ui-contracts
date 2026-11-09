@@ -1,0 +1,96 @@
+{
+  "overall": "PASS_LIMITED",
+  "release": false,
+  "scope": "explicit-unit-only",
+  "suites": [
+    {
+      "suite": "tools/completeness/test_*.py",
+      "status": "PASS",
+      "log": "01.log",
+      "seconds": 0.94
+    },
+    {
+      "suite": "tools/libraries/test_*.py",
+      "status": "PASS",
+      "log": "02.log",
+      "seconds": 1.99
+    },
+    {
+      "suite": "tools/ux/test_*.py",
+      "status": "PASS",
+      "log": "03.log",
+      "seconds": 108.73
+    },
+    {
+      "suite": "tools/fonts/test_*.py",
+      "status": "PASS",
+      "log": "04.log",
+      "seconds": 0.95
+    },
+    {
+      "suite": "tools/design-review/test_*.py",
+      "status": "PASS",
+      "log": "05.log",
+      "seconds": 0.89
+    },
+    {
+      "suite": "tools/test_setup.py",
+      "status": "PASS",
+      "log": "06.log",
+      "seconds": 0.07
+    },
+    {
+      "suite": "tools/research/test_navigation.py",
+      "status": "PASS",
+      "log": "07.log",
+      "seconds": 0.35
+    },
+    {
+      "suite": "static-countercases",
+      "status": "PASS",
+      "log": "08.log",
+      "seconds": 12.36
+    },
+    {
+      "suite": "thin-context",
+      "status": "PASS",
+      "log": "09.log",
+      "seconds": 0.12
+    },
+    {
+      "suite": "handoffs",
+      "status": "PASS",
+      "log": "10.log",
+      "seconds": 0.28
+    },
+    {
+      "suite": "adapter-source-bindings",
+      "status": "PASS",
+      "log": "11.log",
+      "seconds": 0.1
+    },
+    {
+      "suite": "tools/charts/test_pie.mjs",
+      "status": "PASS",
+      "log": "12.log",
+      "seconds": 0.7
+    },
+    {
+      "suite": "tools/openpencil/test_layout.mjs",
+      "status": "PASS",
+      "log": "13.log",
+      "seconds": 2.91
+    },
+    {
+      "suite": "tools/openpencil/test_themes.mjs",
+      "status": "PASS",
+      "log": "14.log",
+      "seconds": 1.78
+    }
+  ],
+  "notChecked": [
+    "Production release",
+    "Real screenreader output",
+    "Other operating systems/browsers"
+  ]
+}

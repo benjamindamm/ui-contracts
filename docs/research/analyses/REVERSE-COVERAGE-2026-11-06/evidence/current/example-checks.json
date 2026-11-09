@@ -1,0 +1,107 @@
+[
+  {
+    "case": "design-import",
+    "command": [
+      "tools/completeness/check.py",
+      "--repo",
+      "tools/completeness/examples",
+      "--library",
+      "demo",
+      "--component",
+      "components/choice/component.json",
+      "--record",
+      "tools/completeness/examples/design-import.json",
+      "--output",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/.runtime/reverse-workflows-final-v3/design-import-report.json"
+    ],
+    "exit": 1,
+    "overall": "DRAFT_INCOMPLETE",
+    "questions": 9,
+    "report": "design-import-report.json",
+    "sha256": "08dd9fedec9f3f96d3e24e4ba5cfb4c13c6890466e1f049c3afd2d691277f34c"
+  },
+  {
+    "case": "code-import",
+    "command": [
+      "tools/completeness/check.py",
+      "--repo",
+      "tools/completeness/examples",
+      "--library",
+      "demo",
+      "--component",
+      "components/choice/component.json",
+      "--record",
+      "tools/completeness/examples/code-import.json",
+      "--output",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/.runtime/reverse-workflows-final-v3/code-import-report.json"
+    ],
+    "exit": 1,
+    "overall": "DRAFT_INCOMPLETE",
+    "questions": 6,
+    "report": "code-import-report.json",
+    "sha256": "5959b7e98b3ed1669194a0342412b626f2d868bf927d01b5c66a72aa8500936e"
+  },
+  {
+    "case": "conflict",
+    "command": [
+      "tools/completeness/check.py",
+      "--repo",
+      "tools/completeness/examples",
+      "--library",
+      "demo",
+      "--component",
+      "components/choice/component.json",
+      "--record",
+      "tools/completeness/examples/conflict.json",
+      "--output",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/.runtime/reverse-workflows-final-v3/conflict-report.json"
+    ],
+    "exit": 1,
+    "overall": "DRAFT_INCOMPLETE",
+    "questions": 1,
+    "report": "conflict-report.json",
+    "sha256": "9702f91af82e4a3d1e5764455377625e177866fed2f2b6cdedb39868b6ee9ae0"
+  },
+  {
+    "case": "mapped",
+    "command": [
+      "tools/completeness/check.py",
+      "--repo",
+      "tools/completeness/examples",
+      "--library",
+      "demo",
+      "--component",
+      "components/choice/component.json",
+      "--record",
+      "tools/completeness/examples/mapped.json",
+      "--output",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/.runtime/reverse-workflows-final-v3/mapped-report.json"
+    ],
+    "exit": 0,
+    "overall": "COVERAGE_RECORDED",
+    "questions": 0,
+    "report": "mapped-report.json",
+    "sha256": "e5ce04f61de796003adaa3677fa35fe5e063c9ab1c458952f7cc7d136220c19d"
+  },
+  {
+    "case": "design-only",
+    "command": [
+      "tools/completeness/check.py",
+      "--repo",
+      "tools/completeness/examples",
+      "--library",
+      "demo",
+      "--component",
+      "components/design-only/component.json",
+      "--record",
+      "tools/completeness/examples/design-only.json",
+      "--output",
+      "/Users/kcnpxcp/Dev/GitHub/ui-contracts/.runtime/reverse-workflows-final-v3/design-only-report.json"
+    ],
+    "exit": 1,
+    "overall": "DRAFT_INCOMPLETE",
+    "questions": 11,
+    "report": "design-only-report.json",
+    "sha256": "c5a15a5f74a0abc07be5ef77b4b9cc5b93f4cbc44872d2eb44b864f273a21f33"
+  }
+]

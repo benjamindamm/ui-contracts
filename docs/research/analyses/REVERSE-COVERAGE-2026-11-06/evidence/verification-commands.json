@@ -1,0 +1,34 @@
+[
+  {
+    "command": [
+      "tools/validation/.venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/completeness",
+      "-p",
+      "test_*.py"
+    ],
+    "exit": 0,
+    "log": "verification-1.log"
+  },
+  {
+    "command": [
+      "python3",
+      "/Users/kcnpxcp/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "skills/ui-contracts"
+    ],
+    "exit": 0,
+    "log": "verification-2.log"
+  },
+  {
+    "command": [
+      "python3",
+      "/Users/kcnpxcp/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+      "/Users/kcnpxcp/.codex/skills/ui-contracts"
+    ],
+    "exit": 0,
+    "log": "verification-3.log"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "format": "ui-contract-component-draft",
+  "id": "demo:DesignOnly",
+  "status": "draft",
+  "domains": {
+    "visual": {
+      "tokens": "../../tokens.json",
+      "css": "../choice/layout.css"
+    }
+  }
+}

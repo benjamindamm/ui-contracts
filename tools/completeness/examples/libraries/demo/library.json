@@ -1,0 +1,6 @@
+{
+  "kind": "ui-contract-library-draft",
+  "components": {
+    "Choice": "components/choice/component.json"
+  }
+}

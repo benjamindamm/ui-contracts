@@ -1,0 +1,179 @@
+{
+  "overall": "DRAFT_INCOMPLETE",
+  "release": false,
+  "componentStatus": "draft",
+  "scope": "Explicit profile coverage and source-locator integrity; not semantic completeness",
+  "library": "demo",
+  "checks": [
+    {
+      "id": "IF-001",
+      "domain": "interface",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "IF-002",
+      "domain": "interface",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "VIS-001",
+      "domain": "tokens",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "VIS-002",
+      "domain": "css",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-001",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-002",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-003",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-001",
+      "domain": "html",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-002",
+      "domain": "html",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-003",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "UX-001",
+      "domain": "ux",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    }
+  ],
+  "questions": [
+    {
+      "id": "IF-001",
+      "domain": "interface",
+      "question": "Welcher Wert wird angenommen und ausgegeben, mit welchem Typ?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "IF-002",
+      "domain": "interface",
+      "question": "Welche Ereignisse meldet die Komponente mit welchen Nutzdaten?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "VIS-001",
+      "domain": "tokens",
+      "question": "Welche Design-Tokens bestimmen die Darstellung?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "VIS-002",
+      "domain": "css",
+      "question": "Welche Layout- und Zustandsregeln gelten?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-001",
+      "domain": "behavior",
+      "question": "Welche Zustände und Übergänge bestimmen den Lebenszyklus?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-002",
+      "domain": "behavior",
+      "question": "Wann wird eine Eingabe oder Auswahl bestätigt und nach außen gemeldet?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-003",
+      "domain": "behavior",
+      "question": "Was geschieht bei Abbruch oder Escape, auch wenn ausdrücklich keine Änderung vorgesehen ist?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-001",
+      "domain": "html",
+      "question": "Welche native Semantik oder ARIA-Rolle erhält das Control?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-002",
+      "domain": "html",
+      "question": "Woher stammt der zugängliche Name und wie ist er zugeordnet?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-003",
+      "domain": "behavior",
+      "question": "Wie werden Tastaturbedienung und Fokuswechsel geregelt?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "UX-001",
+      "domain": "ux",
+      "question": "Für welche Aufgaben ist die Komponente geeignet und wo liegen ihre Grenzen?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    }
+  ],
+  "errors": [],
+  "semanticReviewRequired": true,
+  "targetValidationRequired": true,
+  "notChecked": [
+    "Whether evidence actually answers the question",
+    "Suitability or exhaustiveness of selected profile",
+    "CEM/DTCG/SCXML/HTML conformance",
+    "Runtime, rendering and accessibility conformance",
+    "Authenticity of imported evidence or user decisions",
+    "Production release"
+  ],
+  "componentId": "demo:DesignOnly",
+  "profile": "interactive-control/1",
+  "bindings": {
+    "component": "b696609494f755e7d3af2a9926f08124ed5d17923a69f090bddfc4a00ec08d45",
+    "record": "11dbb05de4f36185000e0528fa06fc372f38d5b4ade4806c519cc7c1a8330220",
+    "profiles": "47a6a09ead0b4f1985c40df7517190bed2eb6f3ae79b029eed0c202326f5f829",
+    "schema": "d54c14be82c851c22d0e503712fd71fa061aca7a4d7e469ef221f09c10e02c24",
+    "checker": "7d26d9bc899ae4fcbdb5fd63d22bf06784ede1e4cbebcfc88bd09aa3c8f2951f"
+  },
+  "statusCounts": {
+    "mapped": 0,
+    "open": 11,
+    "conflict": 0
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "overall": "DRAFT_INCOMPLETE",
+  "release": false,
+  "componentStatus": "draft",
+  "scope": "Explicit profile coverage and source-locator integrity; not semantic completeness",
+  "library": "demo",
+  "checks": [
+    {
+      "id": "IF-001",
+      "domain": "interface",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "IF-002",
+      "domain": "interface",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "VIS-001",
+      "domain": "tokens",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "tokens.json",
+          "sha256": "e8e16550a5d962f52765eabfba39fce0713e49e2316451ae46c1c0be52acfbe6",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/surface"
+          },
+          "selectedSha256": "3229af5b35f614f4bfa66edb0e802043a38be6722ecb856111d9070481d52ef8"
+        }
+      ]
+    },
+    {
+      "id": "VIS-002",
+      "domain": "css",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/layout.css",
+          "sha256": "8ef731ee5ffab6fba1784a9ca79c67b2eff19d2162f25b90b291c0e4a6966d0f",
+          "selector": {
+            "kind": "lines",
+            "value": "1:1"
+          },
+          "selectedSha256": "90eb8255fc6e7bb580d8084365914302a76cf8bc1b5578e3a66354c3df6b0d0d"
+        }
+      ]
+    },
+    {
+      "id": "BEH-001",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-002",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-003",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-001",
+      "domain": "html",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-002",
+      "domain": "html",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-003",
+      "domain": "behavior",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "UX-001",
+      "domain": "ux",
+      "status": "open",
+      "reason": "DECISION_MISSING"
+    }
+  ],
+  "questions": [
+    {
+      "id": "IF-001",
+      "domain": "interface",
+      "question": "Welcher Wert wird angenommen und ausgegeben, mit welchem Typ?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "IF-002",
+      "domain": "interface",
+      "question": "Welche Ereignisse meldet die Komponente mit welchen Nutzdaten?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-001",
+      "domain": "behavior",
+      "question": "Welche Zustände und Übergänge bestimmen den Lebenszyklus?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-002",
+      "domain": "behavior",
+      "question": "Wann wird eine Eingabe oder Auswahl bestätigt und nach außen gemeldet?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "BEH-003",
+      "domain": "behavior",
+      "question": "Was geschieht bei Abbruch oder Escape, auch wenn ausdrücklich keine Änderung vorgesehen ist?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-001",
+      "domain": "html",
+      "question": "Welche native Semantik oder ARIA-Rolle erhält das Control?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-002",
+      "domain": "html",
+      "question": "Woher stammt der zugängliche Name und wie ist er zugeordnet?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "A11Y-003",
+      "domain": "behavior",
+      "question": "Wie werden Tastaturbedienung und Fokuswechsel geregelt?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    },
+    {
+      "id": "UX-001",
+      "domain": "ux",
+      "question": "Für welche Aufgaben ist die Komponente geeignet und wo liegen ihre Grenzen?",
+      "blocking": true,
+      "reason": "DECISION_MISSING"
+    }
+  ],
+  "errors": [],
+  "semanticReviewRequired": true,
+  "targetValidationRequired": true,
+  "notChecked": [
+    "Whether evidence actually answers the question",
+    "Suitability or exhaustiveness of selected profile",
+    "CEM/DTCG/SCXML/HTML conformance",
+    "Runtime, rendering and accessibility conformance",
+    "Authenticity of imported evidence or user decisions",
+    "Production release"
+  ],
+  "componentId": "demo:Choice",
+  "profile": "interactive-control/1",
+  "bindings": {
+    "component": "44cd092c0eb62ee09721b255e79d229cdf5ffd26beb5332798c713431b39fa72",
+    "record": "d727abbfda948872a1ad4e6834d9569ce7ce009060cd415441be2b82bcc1ec1f",
+    "profiles": "47a6a09ead0b4f1985c40df7517190bed2eb6f3ae79b029eed0c202326f5f829",
+    "schema": "d54c14be82c851c22d0e503712fd71fa061aca7a4d7e469ef221f09c10e02c24",
+    "checker": "7d26d9bc899ae4fcbdb5fd63d22bf06784ede1e4cbebcfc88bd09aa3c8f2951f"
+  },
+  "statusCounts": {
+    "mapped": 2,
+    "open": 9,
+    "conflict": 0
+  }
+}

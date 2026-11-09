@@ -7,7 +7,8 @@ from pathlib import Path
 def emit(result, repo, output=None, details=False):
     text = json.dumps(result, ensure_ascii=False, indent=2) + '\n'
     summary = {key: result[key] for key in ['overall', 'release', 'scope', 'library', 'libraryRevision', 'choice',
-               'decisionStatus', 'componentCount', 'targetValidationRequired', 'statusCounts'] if key in result}
+               'decisionStatus', 'componentCount', 'targetValidationRequired', 'statusCounts',
+               'componentStatus', 'questions', 'semanticReviewRequired'] if key in result}
     if 'components' in result:
         summary['components'] = {name: value['status'] for name, value in result['components'].items()}
     if 'assessment' in result:

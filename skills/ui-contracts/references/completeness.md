@@ -1,0 +1,12 @@
+# Draftlücken deterministisch sichtbar halten
+
+Für unvollständige Imports und Rückfragen, nicht als Ersatz der Originalschema-/Zielprüfung. Im ausgewählten Repository führt `tools/completeness/README.md` den CLI-Weg und seine Anforderungen aus.
+
+- Explizite Bibliothek und Komponente wählen. Profil `interactive-control/1` für einen interaktiven Control-Draft; `decorative-visual/1` nur für ausdrücklich rein dekorative Elemente. Nicht das kleinere Profil wählen, um Lücken zu verstecken. Andere Anforderungsklassen brauchen ein neues begründetes Profil; nicht anhand eines Namens raten.
+- Ein neuer Coverage-Record startet mit allen Profilfragen `open`. Die stabile ID führt durch Erschließung, Rückfrage und Wiederprüfung. Für jede `mapped`-Zuordnung aktuellen Quellenhash und konkreten Locator im führenden Contract nennen. Native Design-/Codebelege zunächst in der Quellenkarte halten; sie schließen keine ungeschriebene Contractentscheidung.
+- `DRAFT_INCOMPLETE`: die `questions` mit ID und Grund nutzen. Fragen fachlich bündeln; eine fehlende Quelle, ein veralteter Hash oder ein falscher Locator ist zunächst vom Agenten zu reparieren, nicht als unnötige Fachfrage an den Nutzer weiterzureichen. Echte unbekannte Entscheidungen fragen, Quellenkonflikte mit ihren Alternativen vorlegen.
+- Antworten nach Herkunft festhalten, in die zugehörigen Originaldateien übertragen und Zuordnungen nach erneuter Prüfung aktualisieren. Ein Text in `note` oder ein bloß vorhandenes Dokument schließt keine Frage. Nicht relevante Interaktion im gewählten Profil braucht eine explizite Regel (etwa Escape ohne Wirkung), keinen pauschalen N/A-Schalter.
+- `COVERAGE_RECORDED` besagt nur: alle Profilfragen sind an aktuelle, nichtleere Quellenstellen gebunden. Der Checker versteht die Bedeutung nicht, erkennt keine beliebigen Widersprüche und beweist keine fachliche Vollständigkeit. Jede Zuordnung inhaltlich prüfen; eine gesetzte offene Frage kann niemals durch eine andere gemappte Frage kompensiert werden.
+- `BLOCKED`: Eingabe/Profil/Record korrigieren; kein stiller Fallback. `componentStatus: draft`, `semanticReviewRequired`, `targetValidationRequired` und `release:false` bleiben auch bei vollständiger Abdeckung bestehen. Die notwendige fachliche und Zielabnahme erfolgt im Gesamtabgleich; das Tool ändert den Komponentenstatus nicht.
+
+Große Reports in Dateien belassen. Kurze Standardausgabe enthält alle offenen Profilfragen; `--details` nur nach Bedarf. Für Handoffs die offenen Fragen mit `blocking:true` übernehmen, nicht `ready` erklären.

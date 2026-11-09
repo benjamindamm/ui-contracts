@@ -179,3 +179,12 @@ Prüfprofilangaben sind Pläne, keine selbst attestierten Pass-Werte. Alte Recei
 - **IA-02 · behoben:** Bibliotheksindex beschrieb den vorhandenen begrenzten Webadapter als Zukunftsvorhaben. Aktive example-Version 0.4.1 benennt Profile und Prüfeinstieg; neue Quellenrevision statt rückwirkend geänderter Receipts.
 
 [Änderungen, Vorzustand und tatsächliche Prüfergebnisse](../research/analyses/INDEPENDENT-AUDIT-FIXES-2026-10-31/README.md). Originalaudit und historische Studien bleiben unverändert.
+
+
+## Rückwege und Draftcheck · 6. November 2026
+
+- **RC-001 · behoben:** Erstentwurf gab Status und Fragen als getrennte JSON-Dokumente aus. Gemeinsamer Formatter liefert eine einzelne parsebare Ausgabe einschließlich vollständiger Fragenliste. CLI-Regressionsfall parst sie als Ganzes.
+- **RC-002 · begrenzt mitigiert:** Nichtleere Locators können den falschen Inhalt belegen. Profilgebundene Formprüfungen erkennen falsche CEM-Typ-/SCXML-/Label-/Dekorativbezüge. Inhaltliche Passung bleibt ungeprüft und verlangt Gesamtabgleich; kein semantischer Vollständigkeitsanspruch.
+- **RC-003 · behoben:** Ein SCXML-Metadatum als Übergangsbeleg erzeugte zunächst eine generische Parserdiagnose. Formprüfung meldet jetzt gezielt EVIDENCE_SHAPE_MISMATCH; Frage bleibt offen.
+
+[Ursachen, neue Gegenfälle, synthetische Beispiele und Prüfgrenzen](../research/analyses/REVERSE-COVERAGE-2026-11-06/README.md). Bei wiederkehrenden Importlücken zuerst Profil, Quelle, Locator, Aktualität und Bedeutungszuordnung getrennt prüfen. Keine Dummydateien erzeugen oder alte Freigaben übernehmen.

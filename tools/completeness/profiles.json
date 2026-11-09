@@ -1,0 +1,105 @@
+{
+  "format": "ui-contracts-completeness-profiles/1",
+  "profiles": {
+    "interactive-control/1": {
+      "description": "Bounded authoring coverage for an interactive control, not a conformance standard.",
+      "requirements": [
+        {
+          "id": "IF-001",
+          "domain": "interface",
+          "question": "Welcher Wert wird angenommen und ausgegeben, mit welchem Typ?",
+          "shape": "cem-member"
+        },
+        {
+          "id": "IF-002",
+          "domain": "interface",
+          "question": "Welche Ereignisse meldet die Komponente mit welchen Nutzdaten?",
+          "shape": "cem-event"
+        },
+        {
+          "id": "VIS-001",
+          "domain": "tokens",
+          "question": "Welche Design-Tokens bestimmen die Darstellung?",
+          "shape": "dtcg-token"
+        },
+        {
+          "id": "VIS-002",
+          "domain": "css",
+          "question": "Welche Layout- und Zustandsregeln gelten?",
+          "shape": "css-rule"
+        },
+        {
+          "id": "BEH-001",
+          "domain": "behavior",
+          "question": "Welche Zustände und Übergänge bestimmen den Lebenszyklus?",
+          "shape": "state-reference"
+        },
+        {
+          "id": "BEH-002",
+          "domain": "behavior",
+          "question": "Wann wird eine Eingabe oder Auswahl bestätigt und nach außen gemeldet?",
+          "shape": "event-transition"
+        },
+        {
+          "id": "BEH-003",
+          "domain": "behavior",
+          "question": "Was geschieht bei Abbruch oder Escape, auch wenn ausdrücklich keine Änderung vorgesehen ist?",
+          "shape": "event-transition"
+        },
+        {
+          "id": "A11Y-001",
+          "domain": "html",
+          "question": "Welche native Semantik oder ARIA-Rolle erhält das Control?",
+          "shape": "semantic-element"
+        },
+        {
+          "id": "A11Y-002",
+          "domain": "html",
+          "question": "Woher stammt der zugängliche Name und wie ist er zugeordnet?",
+          "shape": "name-association"
+        },
+        {
+          "id": "A11Y-003",
+          "domain": "behavior",
+          "question": "Wie werden Tastaturbedienung und Fokuswechsel geregelt?",
+          "shape": "event-transition"
+        },
+        {
+          "id": "UX-001",
+          "domain": "ux",
+          "question": "Für welche Aufgaben ist die Komponente geeignet und wo liegen ihre Grenzen?",
+          "shape": "text"
+        }
+      ]
+    },
+    "decorative-visual/1": {
+      "description": "Explicitly chosen non-interactive decorative element; not suitable for controls or meaningful information graphics.",
+      "requirements": [
+        {
+          "id": "VIS-001",
+          "domain": "tokens",
+          "question": "Welche Design-Tokens bestimmen die Darstellung?",
+          "shape": "dtcg-token"
+        },
+        {
+          "id": "VIS-002",
+          "domain": "css",
+          "question": "Welche Layout- und Zustandsregeln gelten?",
+          "shape": "css-rule"
+        },
+        {
+          "id": "A11Y-004",
+          "domain": "html",
+          "question": "Wie wird das rein dekorative Element für assistive Technik ausgeblendet?",
+          "shape": "decorative-hidden"
+        },
+        {
+          "id": "UX-001",
+          "domain": "ux",
+          "question": "Wo ist die rein dekorative Verwendung vorgesehen und begrenzt?",
+          "shape": "text"
+        }
+      ]
+    }
+  }
+}

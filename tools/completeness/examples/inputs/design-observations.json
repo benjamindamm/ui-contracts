@@ -1,0 +1,7 @@
+{
+  "kind": "synthetic-observation-not-a-native-fig-export",
+  "part": "control",
+  "background": "#FFFFFF",
+  "minHeightPx": 40,
+  "unknown": ["value-contract", "events", "commit", "escape", "focus", "accessible-name"]
+}

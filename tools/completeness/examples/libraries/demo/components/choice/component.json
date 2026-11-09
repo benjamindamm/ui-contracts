@@ -1,0 +1,15 @@
+{
+  "format": "ui-contract-component-draft",
+  "id": "demo:Choice",
+  "status": "draft",
+  "domains": {
+    "interface": "interface.json",
+    "visual": {
+      "tokens": "../../tokens.json",
+      "css": "layout.css"
+    },
+    "behavior": "behavior.scxml",
+    "accessibility": "accessibility.html"
+  },
+  "ux": "ux.json"
+}

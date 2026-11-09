@@ -14,7 +14,7 @@ def main():
  py=ROOT/'tools/validation/.venv'/('Scripts/python.exe' if os.name=='nt' else 'bin/python')
  if not py.is_file():p.error('Run python3 tools/setup.py first')
  suites=[]
- for directory,pattern in [('tools/libraries','test_*.py'),('tools/ux','test_*.py'),('tools/fonts','test_*.py'),('tools/design-review','test_*.py'),('tools','test_setup.py'),('tools/research','test_navigation.py')]:
+ for directory,pattern in [('tools/completeness','test_*.py'),('tools/libraries','test_*.py'),('tools/ux','test_*.py'),('tools/fonts','test_*.py'),('tools/design-review','test_*.py'),('tools','test_setup.py'),('tools/research','test_navigation.py')]:
   suites.append((directory+'/'+pattern,[str(py),'-m','unittest','discover','-s',directory,'-p',pattern]))
  suites.append(('static-countercases',[str(py),'tools/validation/run_countercases.py','--output',str(a.out.resolve()/'static-countercases.json')]))
  suites.append(('thin-context',[str(py),'-m','unittest','discover','-s','tools/skill-tests/ui-contracts','-p','test_context.py']))

@@ -1,0 +1,220 @@
+{
+  "overall": "DRAFT_INCOMPLETE",
+  "release": false,
+  "componentStatus": "draft",
+  "scope": "Explicit profile coverage and source-locator integrity; not semantic completeness",
+  "library": "demo",
+  "checks": [
+    {
+      "id": "IF-001",
+      "domain": "interface",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/interface.json",
+          "sha256": "29f89504cf255d01c68d169d774e9409ba5bec8c7ca2a69dc7e5933f0dd2925a",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/modules/0/declarations/0/members/0"
+          },
+          "selectedSha256": "7934c97560c7805f61b787e1f8e96befe583f7d569f586cb347d18d0db2f11ac"
+        }
+      ]
+    },
+    {
+      "id": "IF-002",
+      "domain": "interface",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/interface.json",
+          "sha256": "29f89504cf255d01c68d169d774e9409ba5bec8c7ca2a69dc7e5933f0dd2925a",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/modules/0/declarations/0/events/0"
+          },
+          "selectedSha256": "64a3c5389e17b9956e96037b1d7efc454aa89b0eb32faa98c6b90bc44d72b7ed"
+        }
+      ]
+    },
+    {
+      "id": "VIS-001",
+      "domain": "tokens",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "tokens.json",
+          "sha256": "e8e16550a5d962f52765eabfba39fce0713e49e2316451ae46c1c0be52acfbe6",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/surface"
+          },
+          "selectedSha256": "3229af5b35f614f4bfa66edb0e802043a38be6722ecb856111d9070481d52ef8"
+        }
+      ]
+    },
+    {
+      "id": "VIS-002",
+      "domain": "css",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/layout.css",
+          "sha256": "8ef731ee5ffab6fba1784a9ca79c67b2eff19d2162f25b90b291c0e4a6966d0f",
+          "selector": {
+            "kind": "lines",
+            "value": "1:1"
+          },
+          "selectedSha256": "90eb8255fc6e7bb580d8084365914302a76cf8bc1b5578e3a66354c3df6b0d0d"
+        }
+      ]
+    },
+    {
+      "id": "BEH-001",
+      "domain": "behavior",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/behavior.scxml",
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "/s:scxml/@initial"
+          },
+          "selectedSha256": "23d06567909fc29950f57befe8b0a4a9d9ca1f629b2c926957dbae4a45f68f8e"
+        }
+      ]
+    },
+    {
+      "id": "BEH-002",
+      "domain": "behavior",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/behavior.scxml",
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "//s:transition[@event=\"CONFIRM\"]"
+          },
+          "selectedSha256": "56faa194208591aeef11c15dd8863ef4ff26527d50d44139326a33212624905b"
+        }
+      ]
+    },
+    {
+      "id": "BEH-003",
+      "domain": "behavior",
+      "status": "conflict",
+      "reason": "SOURCE_CONFLICT",
+      "note": "Code bestätigt bei Escape, Designanmerkung fordert Verwerfen. Entscheidung offen."
+    },
+    {
+      "id": "A11Y-001",
+      "domain": "html",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/accessibility.html",
+          "sha256": "0339962773d6b14a4cd169ab72a8040f2678d3b2dc2f13f9af197eea14e6ac27",
+          "selector": {
+            "kind": "xpath",
+            "value": "//select"
+          },
+          "selectedSha256": "d3a0641fadded1a541d5f55b4e34b187b3c81ec68dca5f950c09fc551e6603f9"
+        }
+      ]
+    },
+    {
+      "id": "A11Y-002",
+      "domain": "html",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/accessibility.html",
+          "sha256": "0339962773d6b14a4cd169ab72a8040f2678d3b2dc2f13f9af197eea14e6ac27",
+          "selector": {
+            "kind": "xpath",
+            "value": "//label[@for=\"choice\"]"
+          },
+          "selectedSha256": "14d4ad2195077b990ddca7f2f1a541938e5fe599ed0f8c371a0ae00665691724"
+        }
+      ]
+    },
+    {
+      "id": "A11Y-003",
+      "domain": "behavior",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/behavior.scxml",
+          "sha256": "cc1738a9d09cf9fbfc6e8daf8715cdeea1ab9ad7252c656ea26d160076612a96",
+          "selector": {
+            "kind": "xpath",
+            "value": "//s:transition[@event=\"KEY_NEXT\"]"
+          },
+          "selectedSha256": "5c19d3012ccdebfe49f33a955802d73b96edf57d03eeb9bd4fd719b047378ec7"
+        }
+      ]
+    },
+    {
+      "id": "UX-001",
+      "domain": "ux",
+      "status": "mapped",
+      "reason": "SOURCE_LOCATOR_CHECKED",
+      "evidence": [
+        {
+          "source": "components/choice/ux.json",
+          "sha256": "0a2f3db97672ca4facf2c5721f0e827e3f38e6eac463f64b8f2abdaf5b17b13d",
+          "selector": {
+            "kind": "json-pointer",
+            "value": "/purpose"
+          },
+          "selectedSha256": "51eed362f1586fd4ddbf8afa8b17b5b716252a5f741e05dff1927fbd94b88fd3"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "BEH-003",
+      "domain": "behavior",
+      "question": "Was geschieht bei Abbruch oder Escape, auch wenn ausdrücklich keine Änderung vorgesehen ist?",
+      "blocking": true,
+      "reason": "SOURCE_CONFLICT"
+    }
+  ],
+  "errors": [],
+  "semanticReviewRequired": true,
+  "targetValidationRequired": true,
+  "notChecked": [
+    "Whether evidence actually answers the question",
+    "Suitability or exhaustiveness of selected profile",
+    "CEM/DTCG/SCXML/HTML conformance",
+    "Runtime, rendering and accessibility conformance",
+    "Authenticity of imported evidence or user decisions",
+    "Production release"
+  ],
+  "componentId": "demo:Choice",
+  "profile": "interactive-control/1",
+  "bindings": {
+    "component": "44cd092c0eb62ee09721b255e79d229cdf5ffd26beb5332798c713431b39fa72",
+    "record": "0a46b717bd6b1f3b804d8d66b3853f8cf1f651e4f7440cf815488f7e71830923",
+    "profiles": "47a6a09ead0b4f1985c40df7517190bed2eb6f3ae79b029eed0c202326f5f829",
+    "schema": "d54c14be82c851c22d0e503712fd71fa061aca7a4d7e469ef221f09c10e02c24",
+    "checker": "7d26d9bc899ae4fcbdb5fd63d22bf06784ede1e4cbebcfc88bd09aa3c8f2951f"
+  },
+  "statusCounts": {
+    "mapped": 10,
+    "open": 0,
+    "conflict": 1
+  }
+}

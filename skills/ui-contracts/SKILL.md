@@ -1,6 +1,6 @@
 ---
 name: ui-contracts
-description: UI-Komponenten als CEM-, DTCG/CSS-, SCXML- und HTML/ARIA-Contracts erstellen, bearbeiten und begrenzt prüfen; auch für UX-Eignung und Komponentenwahl anhand einer ausdrücklich gewählten Contractbibliothek. Nicht für beliebige App-Implementierung oder allgemeine Konformitätszertifizierung.
+description: UI-Komponenten als CEM-, DTCG/CSS-, SCXML- und HTML/ARIA-Contracts erstellen, bearbeiten, aus Design/Code ableiten und begrenzt prüfen; auch für UX-Eignung und Komponentenwahl anhand einer ausdrücklich gewählten Contractbibliothek. Nicht für beliebige App-Implementierung oder allgemeine Konformitätszertifizierung.
 ---
 
 # UI Contracts · Handlungsregeln
@@ -18,6 +18,7 @@ description: UI-Komponenten als CEM-, DTCG/CSS-, SCXML- und HTML/ARIA-Contracts 
 - Originalartefakte erstellen/ändern: [Autorenarbeit](references/authoring.md).
 - Konkrete Prüfung oder Reparatur: [Prüfwege und Grenzen](references/validation.md); Helper `scripts/contracts.py`, `--repo` ausdrücklich.
 - UX-Eignung oder Komponentenwahl: [UX](references/ux.md).
+- Design/Code zurückführen, Draftlücken klären: [Rückwege](references/reverse.md).
 - Berechnete Kurven/Chartformen: [Geometriehilfe](references/geometry.md); Grundformen nativ.
 - Mehrstufigen Ablauf planen: [Workflow](references/workflow.md). Zugewiesene Worker laden stattdessen nur ihre dort verlinkte Rollenkarte.
 - Expliziter Reproduktions-/Forschungsauftrag: [Reproduktion](references/reproducibility.md). Historische Ergebnisse von außen prüfen.
