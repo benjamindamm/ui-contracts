@@ -7,5 +7,6 @@ Nur den konkreten Auftrag bearbeiten. Führende Domänen: CEM, DTCG/CSS, SCXML u
 - Originalquellen führen. Annahmen, Beobachtungen und belegte Regeln trennen. Historische Läufe und eingefrorene Definitionen bewahren; Änderungen in vorgesehenen neuen Revisionen ablegen.
 - Große Ergebnisse in Dateien halten; nur benötigte Aussagen mit Pfad/Hash übergeben. Neue unabhängige Worker ohne Elternhistorie starten, sofern Delegation autorisiert ist. Keine zusätzlichen Agenten allein aufgrund dieser Datei starten.
 - Nur tatsächlich ausgeführte Prüfungen berichten; begrenzte Nachweise nicht als allgemeine Freigabe ausgeben. Commit, Push oder Veröffentlichung benötigen einen entsprechenden Nutzerauftrag.
+- Für ausführbare Anwendungen die [Anwendungswerkstatt](apps/AGENTS.md) verwenden.
 
 Host-/modellübergreifende Einstiegsprüfung: [Kontextaudit](docs/research/analyses/INITIAL-CONTEXT/ENTRYPOINTS.md), nur bei Setup-/Studienvorbereitung lesen.

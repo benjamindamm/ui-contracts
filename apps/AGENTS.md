@@ -1,0 +1,6 @@
+# Anwendungen erstellen
+
+- Lege eine angefragte Anwendung unter `apps/<name>/` an. Wähle HTML/CSS/JS, React oder Angular passend zum Auftrag. Halte Framework-Abhängigkeiten im jeweiligen App-Ordner.
+- Wähle bei einer konkreten App die Contractbibliothek ausdrücklich aus dem Auftrag. Kläre eine fehlende Auswahl vor der Ableitung von Contractregeln. Der HTML-Starter dient als bibliotheksfreie Infrastrukturprobe. [Bibliotheksauswahl](../libraries/README.md)
+- Nutze für Contractarbeit den [UI-Contracts-Skill](../skills/ui-contracts/SKILL.md). Lies die betroffenen `component.json`-Dateien und folge ihren Quellenverweisen. Halte in der App-README Bibliotheks-ID, Quellenpfade und Quellenstand fest. Ordne die verwendeten Vorgaben für Schnittstelle, Gestaltung, Verhalten und Semantik den betroffenen App-Teilen zu. Kennzeichne Annahmen und Abweichungen.
+- Dokumentiere in der App-README Voraussetzungen, Startbefehl und Vorschau-URL. Binde den lokalen Server an Loopback und serviere bei statischen Apps nur den App-Ordner. Starte die App und prüfe, sofern verfügbar und erlaubt, Darstellung und Kerninteraktionen im Browser. Gib die lokale URL und die tatsächlich durchgeführten Prüfungen weiter. [Lokaler Start](README.md#lokale-vorschau)

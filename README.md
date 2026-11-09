@@ -54,6 +54,9 @@ Aus einer eingefrorenen Autocomplete-Definition entstand dieses editierbare Open
 2. **Bibliothek wählen:** Eigene Vorgaben nutzen oder [eine leere Bibliothek anlegen](libraries/README.md). `example` dient ausdrücklich als Orientierung oder gewählte Beispieleingabe.
 3. **Aufgabe beschreiben:** Bibliothek, Anforderung und Ziel nennen, etwa: „Nutze die Bibliothek example. Wähle passende Komponenten für ein Telefonnummernformular und erstelle zunächst einen Designentwurf. Halte offene Regeln fest.“
 
+
+Ausführbare Anwendungen für lokales Browserfeedback entstehen in der [Anwendungswerkstatt](apps/README.md).
+
 ```mermaid
 flowchart TB
     U[Deine Aufgabe] --> A[Agent mit Skill]
