@@ -1,8 +1,8 @@
 # UI Contracts
 
-**Ein digitales, formalisiertes UX- und Design-Handbuch für Business, Führung, Design und Entwicklung.**
-
-UI Contracts hält gemeinsam vereinbarte Vorgaben fest: Wie sehen Komponenten aus, wie funktionieren sie und wann passen sie zu einer fachlichen Aufgabe? „Formalisiert“ bedeutet: Die Regeln sind so präzise und strukturiert beschrieben, dass Agenten damit arbeiten und Werkzeuge Teile davon prüfen können.
+> **UI Contracts ist ein maschinenlesbares UX-Handbuch.** Es hält gemeinsame Regeln so fest, dass Menschen sie nachschlagen, Agenten sie anwenden und Werkzeuge sie prüfen können.
+>
+> **Beispiel für Web und Mobile.** Wenn ein Formular wegen fehlender Angaben nicht abgeschickt werden kann, bleiben die Eingaben erhalten und die betroffenen Felder werden benannt. Im Web kann das eine Fehlerübersicht sein, in der App ein Hinweis direkt am Feld. Die gemeinsame Regel steht einmal im Handbuch.
 
 ## Gemeinsam spezifizieren, schnell Feedback bekommen
 
