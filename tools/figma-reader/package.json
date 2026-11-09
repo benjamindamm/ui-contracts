@@ -1,0 +1,10 @@
+{
+  "name": "ui-contracts-figma-reader",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@leogcode/figma-reader": "0.4.2"
+  }
+}
