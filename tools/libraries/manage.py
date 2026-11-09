@@ -49,6 +49,7 @@ def create(repo, name, title=None):
         (root/'tokens.json').write_text('{}\n')
         (root/'components').mkdir()
         (root/'assets').mkdir()
+        (root/'patterns').mkdir()
     except Exception:
         shutil.rmtree(root)
         raise

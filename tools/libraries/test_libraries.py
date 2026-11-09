@@ -23,13 +23,15 @@ class LibrariesTests(unittest.TestCase):
         manage.create(self.repo,'example'); manage.create(self.repo,'my-app','My App')
         self.assertEqual(json.loads((self.repo/'libraries/my-app/library.json').read_text())['components'],{})
         self.assertEqual(json.loads((self.repo/'libraries/my-app/tokens.json').read_text()),{})
-    def test_new_library_separates_components_and_assets(self):
+    def test_new_library_separates_components_assets_and_patterns(self):
         manage.create(self.repo,'first')
         root=self.repo/'libraries/first'
         self.assertTrue((root/'components').is_dir())
         self.assertTrue((root/'assets').is_dir())
+        self.assertTrue((root/'patterns').is_dir())
         self.assertEqual(list((root/'components').iterdir()),[])
         self.assertEqual(list((root/'assets').iterdir()),[])
+        self.assertEqual(list((root/'patterns').iterdir()),[])
     def test_current_component_references_resolve_inside_library(self):
         root=ROOT/'libraries/example'
         index=json.loads((root/'library.json').read_text())

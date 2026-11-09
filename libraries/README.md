@@ -1,6 +1,6 @@
 # Unabhängige Komponentenbibliotheken
 
-**Eine Bibliothek bündelt die Vorgaben für dein Projekt: Komponenten, Design-Tokens und Assets.** Hier wählst du eine bestehende Bibliothek oder beginnst unabhängig von unseren Beispielen.
+**Eine Bibliothek bündelt Komponenten, Patterns, Design-Tokens und Assets für dein Projekt.** Hier wählst du eine bestehende Bibliothek oder beginnst unabhängig von unseren Beispielen.
 
 ## 1. Bibliothek wählen
 
@@ -19,7 +19,7 @@ python3 tools/libraries/manage.py list
 python3 tools/libraries/manage.py show meine-app
 ```
 
-`init` legt `libraries/meine-app/library.json` mit leerem Komponentenindex und eine leere `tokens.json` sowie die leeren Ordner `components/` und `assets/` an. Es kopiert weder Beispiele noch Tokens. Bestehende Verzeichnisse werden niemals überschrieben. Ein Agentenauftrag benennt danach ausdrücklich `library: meine-app` und das gewünschte Ziel. Diese Angabe ist ein Arbeitsauftrag, keine neue Definition fachlicher Komponentenwerte.
+`init` legt `libraries/meine-app/library.json` mit leerem Komponentenindex und eine leere `tokens.json` sowie die leeren Ordner `components/`, `patterns/` und `assets/` an. Es kopiert weder Beispiele noch Tokens. Bestehende Verzeichnisse werden niemals überschrieben. Ein Agentenauftrag benennt danach ausdrücklich `library: meine-app` und das gewünschte Ziel. Diese Angabe ist ein Arbeitsauftrag, keine neue Definition fachlicher Komponentenwerte.
 
 **Danach mit dem Agenten weiterarbeiten:** „Nutze die Bibliothek `meine-app`. Beschreibe eine Input-Komponente für ein Telefonnummernformular; kläre fehlende Gestaltungs- und Verhaltensregeln zuerst.“ Die neue Bibliothek enthält noch keine Komponenten und erbt keine Beispieldesigns.
 
@@ -46,13 +46,25 @@ libraries/<id>/
 ├── components/
 │   └── <component>/
 │       └── component.json
+├── patterns/
+│   └── <pattern>/
+│       └── README.md
 └── assets/
     ├── fonts/
     ├── icons/
     └── images/
 ```
 
-`init` erstellt nur die beiden leeren Hauptordner; Asset-Unterordner und `fonts.json` entstehen nach Bedarf. Der Komponentenindex verwendet beispielsweise `components/button/component.json`. Tokens werden aus einer Komponente über `../../tokens.json` referenziert; Verweise auf benachbarte Komponenten bleiben `../<name>/component.json`. Assets werden relativ zu der Datei referenziert, die sie bindet (etwa `assets/fonts/...` in fonts.json am Root).
+Asset-Unterordner und `fonts.json` entstehen nach Bedarf. Der Komponentenindex verwendet beispielsweise `components/button/component.json`. Tokens werden aus einer Komponente über `../../tokens.json` referenziert; Verweise auf benachbarte Komponenten bleiben `../<name>/component.json`. Assets werden relativ zu der Datei referenziert, die sie bindet (etwa `assets/fonts/...` in fonts.json am Root).
+
+## Patterns
+
+Ein Pattern beschreibt einen wiederverwendbaren Aufbau, etwa ein Formular mit Aktionsleiste. Lege es in der ausgewählten Bibliothek unter `patterns/<name>/` ab. Bei bestehenden Bibliotheken kann der Ordner beim ersten Pattern hinzukommen.
+
+- Halte in der `README.md` fest, für welche Nutzeraufgabe das Pattern geeignet ist, wann es vermieden werden soll und welche Usability-Regeln für Anordnung, Reihenfolge und Bedienung gelten. Verlinke die verwendeten Komponenten relativ innerhalb derselben Bibliothek.
+- Lege ein konkretes Layout bei Bedarf daneben ab, etwa als `layout.html` und `layout.css`. Verlinke es in der Pattern-README und beschreibe dort relevante Varianten, etwa den Aufbau bei schmalem Bildschirm.
+
+Das Bibliotheksmanifest erfasst die Pattern-Dateien. Der Komponentenindex und die bestehenden Komponentenprüfungen decken weiterhin Komponenten ab. Die Usability-Regeln eines Patterns werden beim jeweiligen Einsatz geprüft.
 
 ## Schriftdateien
 

@@ -9,6 +9,8 @@ Zuerst Bibliotheks-ID aus dem Auftrag auswählen, dann nur deren `libraries/<id>
 | Behavior | SCXML: Zustände, Übergänge, Guards, Aktionen und Commit-/Lifecycleentscheidungen. Der vorhandene Ausdrucksumfang verwendet ECMAScript. |
 | Accessibility | HTML-/WAI-ARIA-Semantik; APG für Bedienmuster. Ergänzende Projektions-/Meldungsregeln ausdrücklich als eigene Bindungen kennzeichnen. |
 
+Wiederverwendbare Layouts mit gemeinsamen Usability-Regeln gehören in `patterns/<name>/` der ausgewählten Bibliothek. Nutze die [Pattern-Konvention](../../../libraries/README.md#patterns) und verlinke die verwendeten Komponentenquellen.
+
 `component.json`, `accessibility.rules.json` und die vorhandene Bindungssyntax sind eigene Entwürfe. Sie sind weder zusätzliche Originalstandards noch schon allgemein validierte Produktformate.
 
 Für unvollständige Design-/Codeimporte den [Rückweg](reverse.md) und [Draftcheck](completeness.md) nutzen. Fehlende Domänen dürfen dort offen bleiben; die bestehende vollständige Komponentenprüfung wird dadurch nicht gelockert.
