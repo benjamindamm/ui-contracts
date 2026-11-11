@@ -6,7 +6,7 @@
 
 ## Aktiver Aufbau
 
-- `libraries/example/library.json` führt sechs Komponenten einschließlich **SelectWithSearch**, die eigene Bibliotheksrevision **0.3.0** und die explizite `selection`-Bindung zu Policy und Fähigkeitsschema.
+- `libraries/example/library.json` führt sechs Komponenten einschliesslich **SelectWithSearch**, die eigene Bibliotheksrevision **0.3.0** und die explizite `selection`-Bindung zu Policy und Fähigkeitsschema.
 - Die vier beteiligten `component.json`-Einträge verlinken ihre `ux.json`. Deren eigene Projektion ist auf Version **0.3** erweitert: Wertevertrag, Editierbarkeit, Suchmodus, Zweck und Verhalten unbekannter Eingaben bleiben getrennt. CEM, DTCG/CSS, SCXML und HTML/ARIA behalten ihre Originalsyntax.
 - `verification.profile` wählt ein implementiertes Prüfprofil, behauptet aber keinen Erfolg. Der Checker führt aktuelle Prüfungen aus; ein selbst gesetztes Pass-Feld oder ein altes Receipt sind keine akzeptierten Nachweise.
 - **Select, Input und SelectWithSearch:** aktuelle, begrenzte CEM-/HTML-Struktur-, TypeScript-Signatur- und native SCXML-Contractprüfungen. **Autocomplete:** derzeit `declared`. Der komplexe Invoke-/Hostpfad erhält keine pauschale aktuelle Abnahme aus einer anderen Referenz.
@@ -16,9 +16,9 @@ Der zugelassene Wertebereich bleibt entscheidend. Eine freie Adress-Schreibhilfe
 
 ## Behauptung, Nachweis und Zielabnahme
 
-`verified-limited` heißt: die für das Profil unterstützten Signaturen und die statische Quellstruktur stimmen; die definierten positiven und negativen SCXML-Fälle wurden tatsächlich ausgeführt. Die Profile sind nicht an den Bibliotheksnamen example gebunden. Die Regressionen führen sie auch in einer separaten consumer-Bibliothek aus.
+`verified-limited` heisst: die für das Profil unterstützten Signaturen und die statische Quellstruktur stimmen; die definierten positiven und negativen SCXML-Fälle wurden tatsächlich ausgeführt. Die Profile sind nicht an den Bibliotheksnamen example gebunden. Die Regressionen führen sie auch in einer separaten consumer-Bibliothek aus.
 
-Für die Auswahl kritische Eigenschaften werden nur mit diesem Status als erfüllt an DMN übergeben. Ein unbekanntes Profil bleibt `unverified`. Ein bloßes `declared-only` wird nicht als eligible durchgereicht. Widersprüchliche Behauptungen oder fehlgeschlagene Contractfälle stoppen die Wahl mit FAIL. Fehlende fachliche Fakten bleiben unbekannt und führen zu `needs-clarification`; keine Konvertierung von „nicht bekannt“ zu false.
+Für die Auswahl kritische Eigenschaften werden nur mit diesem Status als erfüllt an DMN übergeben. Ein unbekanntes Profil bleibt `unverified`. Ein blosses `declared-only` wird nicht als eligible durchgereicht. Widersprüchliche Behauptungen oder fehlgeschlagene Contractfälle stoppen die Wahl mit FAIL. Fehlende fachliche Fakten bleiben unbekannt und führen zu `needs-clarification`; keine Konvertierung von „nicht bekannt“ zu false.
 
 `interactionIntent` ist eine fachlich gesetzte Zweckzuordnung und wird ausdrücklich nicht als runtimebewiesene Eigenschaft geführt. Ebenso bleibt etwa ein vorhandener Filterprovider eine deklarierte Kontextvoraussetzung; der Runner beweist nicht die Wahrheit beliebiger mitgelieferter Fakten.
 
@@ -38,7 +38,7 @@ Die Ausgangsbefunde bleiben im früheren Audit erhalten. Aktuelle, begrenzte Zus
 
 ## Kontext klein halten
 
-Die neuen CLIs geben standardmäßig kurze Zusammenfassungen aus. `--output NEUE_DATEI` hält den vollständigen Nachweis separat und liefert nur Pfad/Hash mit. `--details` lädt ihn ausdrücklich. Ein CLI-Gegenfall prüft die kleine Ausgabe und den vorhandenen vollständigen Beleg sowie den Schutz vor Überschreiben. Die neue Skillreferenz wird nur bei UX-/Auswahlaufträgen nachgeladen; AGENTS-/Claude-/Gemini-Einstiege wurden nicht vergrößert.
+Die neuen CLIs geben standardmässig kurze Zusammenfassungen aus. `--output NEUE_DATEI` hält den vollständigen Nachweis separat und liefert nur Pfad/Hash mit. `--details` lädt ihn ausdrücklich. Ein CLI-Gegenfall prüft die kleine Ausgabe und den vorhandenen vollständigen Beleg sowie den Schutz vor Überschreiben. Die neue Skillreferenz wird nur bei UX-/Auswahlaufträgen nachgeladen; AGENTS-/Claude-/Gemini-Einstiege wurden nicht vergrössert.
 
 Die Repository-Skillquelle und die bereits identische lokale Installation wurden gemeinsam aktualisiert. Die Anweisungen erhalten keine zweite Policy-/Schemadatenkopie. Es wurden keine globalen Agenteneinstellungen verändert und keine neuen Worker oder Modellvergleichsläufe gestartet.
 
@@ -46,7 +46,7 @@ Die Repository-Skillquelle und die bereits identische lokale Installation wurden
 
 Vor der Übernahme wurde die vollständige **50-Datei-Eingabe von SELECTION-01 bytegleich** unter `docs/libraries/frozen/example-selection-01/` bewahrt. Metadaten und Originalmanifest liegen daneben unter `example-selection-01.json`. Das ist ein Archiv, keine zweite editierbare Bibliothek.
 
-Der [externe Replay](replay_selection01.py) lädt den unveränderten ursprünglichen Helper und verlagert ausschließlich dessen Datenroot auf dieses Archiv. Er prüft zuerst Helper- und Eingabehashes und bestätigt dann die damalige Policy: **drei → Select, 30 → Autocomplete**. Das sind die damaligen Erwartungen, keine neue UX-Empfehlung. Im ursprünglichen inneren Resultat behalten Labels wie policySource ihren damaligen Locator; der effektive Datenroot ist im äußeren Replaybeleg ausdrücklich ausgewiesen. Die alte Enginevoraussetzung des historischen Helpers bleibt bestehen.
+Der [externe Replay](replay_selection01.py) lädt den unveränderten ursprünglichen Helper und verlagert ausschliesslich dessen Datenroot auf dieses Archiv. Er prüft zuerst Helper- und Eingabehashes und bestätigt dann die damalige Policy: **drei → Select, 30 → Autocomplete**. Das sind die damaligen Erwartungen, keine neue UX-Empfehlung. Im ursprünglichen inneren Resultat behalten Labels wie policySource ihren damaligen Locator; der effektive Datenroot ist im äusseren Replaybeleg ausdrücklich ausgewiesen. Die alte Enginevoraussetzung des historischen Helpers bleibt bestehen.
 
 SELECTION-01/02, Originalprompts, Kriterien, Erstlieferungen, Reparaturen, frühere Captures und das 22-Datei-Archiv bleiben unverändert. Neue aktive Auswertungen übernehmen keine historischen Browserfreigaben. Die Tests vergleichen die vorhandenen alten getrackten Forschungs-/Belegbytes erneut gegen den Ausgangsstand.
 

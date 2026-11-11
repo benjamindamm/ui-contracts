@@ -42,8 +42,8 @@ Keine früheren Laufergebnisse (run-01..03, `examples/autocomplete/output|review
 | Prüfer | `ses_e780199c8ffeJrMeoPzs58w2Qj` | `review/task-blind.json` (`68faf096…`), dann `review/task-report.json` (`66397f4c…`) | `prompts/reviewer-blind.txt` `ebb7ab9d…`; Fortsetzung `prompts/reviewer-report.txt` `b14df1eb…` |
 
 - Alle Subagent-Sessionen wurden ohne `sessionID` gestartet (frischer Kontext, keine Elternhistorie); der Model-Parameter wurde nie gesetzt.
-- Modellidentität wurde gemäß Laufanweisung **bewusst nicht recherchiert**; in `run-process.json` als nicht-identifizierende Werte dokumentiert (`configured-default (identity not researched per run instruction)`, Revision/Reasoning `not-researched`).
-- Prüfer: zwei formale Tasks in einer Session (Blindphase, dann Report-Check) als dokumentierte Fortsetzung gemäß `task-report.spec.md` (Kontextregel); keine semantische Nachsteuerung; keine Stop/Resume-Events (keine Unterbrechung aufgetreten).
+- Modellidentität wurde gemäss Laufanweisung **bewusst nicht recherchiert**; in `run-process.json` als nicht-identifizierende Werte dokumentiert (`configured-default (identity not researched per run instruction)`, Revision/Reasoning `not-researched`).
+- Prüfer: zwei formale Tasks in einer Session (Blindphase, dann Report-Check) als dokumentierte Fortsetzung gemäss `task-report.spec.md` (Kontextregel); keine semantische Nachsteuerung; keine Stop/Resume-Events (keine Unterbrechung aufgetreten).
 - Skill-Bindung pro Rolle (Rollenkarten, hashgebunden): builder.md `8497e284…`, reviewer.md `50aee08a…`.
 - Harness: opencode v2.2.1 (Subagent-Kind-Sessionen), keine erzwungene Schrittgrenze.
 

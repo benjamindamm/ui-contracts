@@ -4,7 +4,7 @@ Stand: 25. Oktober 2026. **Zehn neue Bedingungen P58, zehn Beobachtungserwartung
 
 ## Tatsächlich ausgeführter Gegenstand
 
-Revision `1e25e9b8bc2e694689ba0489594f38807a341f14`, vollständige ursprüngliche Module component-contract.ts, cache-validation.ts und target-identity.ts. TypeScript5.9.3 transpiliert sie mit CommonJS/ES2022 und esModuleInterop; keine Funktion ersetzt, kein Validator gestubbt. Tatsächliche buildCanonicalComponentContract und loadCanonicalComponentContract, ursprüngliche Cache-/Zielprüfung und Ajv8.17.1 laufen mit eigenen isolierten Dateien. Native Node-Dateizugriffe lesen und schreiben ausschließlich die Forschungsfixtures. Die komplette Figma-/LLM-/Renderpipeline wurde nicht ausgeführt.
+Revision `1e25e9b8bc2e694689ba0489594f38807a341f14`, vollständige ursprüngliche Module component-contract.ts, cache-validation.ts und target-identity.ts. TypeScript5.9.3 transpiliert sie mit CommonJS/ES2022 und esModuleInterop; keine Funktion ersetzt, kein Validator gestubbt. Tatsächliche buildCanonicalComponentContract und loadCanonicalComponentContract, ursprüngliche Cache-/Zielprüfung und Ajv8.17.1 laufen mit eigenen isolierten Dateien. Native Node-Dateizugriffe lesen und schreiben ausschliesslich die Forschungsfixtures. Die komplette Figma-/LLM-/Renderpipeline wurde nicht ausgeführt.
 
 Die eigenen minimalen API-/Dictionary-/Structure-/Color-/Voice-/Reconciliation-Caches, Rendererbelege, Manifest und Plan sind synthetische Forschungsdaten. Die zusätzlichen domain-obligation-Evidence-Dateien fehlen ausdrücklich. Im Originalcode überspringt validateEvidenceObligations diese Teilprüfung bei ENOENT. Daher keine Aussage über einen vollständigen nachweisgestützten Figmaexport oder semantische Gesamtvalidierung. Die sechs vorhandenen Cacheprüfungen werden tatsächlich aufgerufen.
 
@@ -35,7 +35,7 @@ Diese Originalzuordnung ist konkret. Die internen Kategorien sind dennoch nicht 
 | specialist-hash-drift | Abweichender baseSourceHash allein im Color-Cache wird im geprüften Pfad akzeptiert. Der Contract trägt weiterhin den Manifesthash. |
 | measured-value-conflict | SourceModel-Inputhöhe20 und gemessene Structure-Zeile80 bleiben beide im akzeptierten Contract erhalten. Kein automatischer Vorrang oder Zahlenvergleich daraus ableitbar. |
 | cache-source-preserved | Bei normalizeCaches:false bleiben alle eingegebenen Dateien bytegleich; Ausgabe ist eine separate Datei. |
-| canonical-load-after-cache-change | Anschließend ungültiges Color-Cache-JSON hindert das Laden des vorher gebauten gültigen Canonical-JSON nicht; cacheValidations ist dabei leer. |
+| canonical-load-after-cache-change | Anschliessend ungültiges Color-Cache-JSON hindert das Laden des vorher gebauten gültigen Canonical-JSON nicht; cacheValidations ist dabei leer. |
 
 Der Zahlenkonflikt betrifft die eigene explizit benannte Height-Zeile und dieselbe input-1-Zielidentität. Er beweist keine globale Untauglichkeit: zusätzliche Evidence-/Orchestratorprüfungen sind nicht ausgeführt. Ebenso ist Laden einer eingefrorenen Canonicaldatei eine andere Operation als ihr erneutes Bauen aus geänderten Caches.
 
@@ -49,4 +49,4 @@ Keine identischen Required-/Hash-Leseschleifen: Dieser vollständige Builderpfad
 
 ## Reproduktion
 
-prepare.cjs transpiliert die drei vollständigen Originalmodule aus sources/; run.cjs legt die zehn Eingabesätze an und führt die Fälle aus. Quellen werden über die exakten Manifest-URLs bereitgestellt und gegen die gespeicherten Lesekopie-Hashes geprüft. Der isolierte tool/package-lock.json pinnt Ajv8.17.1 einschließlich Abhängigkeiten; TypeScript5.9.3 wird aus der vorhandenen isolierten ts-tool-Installation verwendet. Originalmodule, generierter Originalcode und node_modules werden nicht als eigene Bibliothek mitgeliefert. Eigene Eingaben, Programme, Resultate, Locks und Inventar sind gespeichert. METHODS.md und REQUIREMENTS.md bleiben unverändert.
+prepare.cjs transpiliert die drei vollständigen Originalmodule aus sources/; run.cjs legt die zehn Eingabesätze an und führt die Fälle aus. Quellen werden über die exakten Manifest-URLs bereitgestellt und gegen die gespeicherten Lesekopie-Hashes geprüft. Der isolierte tool/package-lock.json pinnt Ajv8.17.1 einschliesslich Abhängigkeiten; TypeScript5.9.3 wird aus der vorhandenen isolierten ts-tool-Installation verwendet. Originalmodule, generierter Originalcode und node_modules werden nicht als eigene Bibliothek mitgeliefert. Eigene Eingaben, Programme, Resultate, Locks und Inventar sind gespeichert. METHODS.md und REQUIREMENTS.md bleiben unverändert.

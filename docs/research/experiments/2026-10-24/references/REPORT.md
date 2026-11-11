@@ -6,7 +6,7 @@ Stand: 24. Oktober 2026. **14 explorative Fälle mit den Originalfunktionen des 
 
 Sechs Originaldateien wurden über BrowserOS neo neu gelesen; source-manifest.json nennt URLs und Text-Hashes. TypeScript 5.9.3 transpiliert sie für den isolierten Versuch nach CommonJS/ES2022 mit esModuleInterop. Der Quellinhalt blieb unverändert; die Modulform wurde durch den Compiler übertragen. Dies ist keine TypeScript-Gesamttypprüfung des Kandidatenprojekts. Node 24.22.1 führt die resultierenden Funktionen aus.
 
-Alle Eingaben, Diagnosen und beobachteten Ergebnisse stehen in results.json. Absolute Fixturepfade werden dort als `<probe-root>` notiert. Die Ausführung war explorativ. Die Akzeptanzkriterien wurden anschließend explizit gegen die gespeicherten Ergebnisse ausgewertet; es wird weder eine Präregistrierung noch eine unabhängige Replikation behauptet. Frühere E2-Befunde C390/C391/C395 enthielten bereits Hypothesen für Teilfälle.
+Alle Eingaben, Diagnosen und beobachteten Ergebnisse stehen in results.json. Absolute Fixturepfade werden dort als `<probe-root>` notiert. Die Ausführung war explorativ. Die Akzeptanzkriterien wurden anschliessend explizit gegen die gespeicherten Ergebnisse ausgewertet; es wird weder eine Präregistrierung noch eine unabhängige Replikation behauptet. Frühere E2-Befunde C390/C391/C395 enthielten bereits Hypothesen für Teilfälle.
 
 ## Zuerst die Originalschema-Voraussetzungen beachten
 
@@ -31,7 +31,7 @@ Normale `$ref`-Objekte ohne type passen im Originalschema gleichzeitig zu mehrer
 | Drei unterschiedliche Maschinen-IDs | root, child-a und child-b im Bundle | Schema-konformer positiver Bündelkontrollfall |
 | Zwei Kinder mit gleicher Maschinen-ID | Bundle ok=true, nur root/shared; Wert B bleibt | Alle drei Eingaben schema-konform. Definition A wird ohne Diagnose durch B ersetzt |
 | Eintritts-ID gleich Kind-ID | Bundle ok=true; Eintrittsmodul enthält Kindwert A statt ROOT | Beide Eingaben schema-konform. Auch der Einstieg wird ohne Diagnose ersetzt |
-| Kind verwendet Großkind | Bundle ok=true, Module nur parent/child; Kindabhängigkeit zeigt weiter auf grand-Datei | Kein vollständiger transitiver Modulabschluss in diesem Pfad. Invoke-Eingabe scheitert separat am Originalschema; kein garantierter schema-konformer Runtimegegenfall |
+| Kind verwendet Grosskind | Bundle ok=true, Module nur parent/child; Kindabhängigkeit zeigt weiter auf grand-Datei | Kein vollständiger transitiver Modulabschluss in diesem Pfad. Invoke-Eingabe scheitert separat am Originalschema; kein garantierter schema-konformer Runtimegegenfall |
 | Element-Selbstreferenz | RangeError, Maximum call stack size exceeded | Keine strukturierte Resolverdiagnose für diese explorative Rekursion; Ref-Datei scheitert separat am Originalschema |
 | Direkter Datei-Selbstimport | IMPORT_CYCLE | Positiver Importzyklus-Kontrollfall; keine Aussage über jede transitive Zyklusform |
 
@@ -55,4 +55,4 @@ python schema_preflight.py
 python assess.py
 ```
 
-Der Runner transpiliert ausschließlich die sechs erfassten Quellen und arbeitet in fixtures/. Die tatsächlichen originalen Ergebnisse werden unabhängig von den gewünschten Akzeptanzregeln gespeichert. Keine UI wird gestartet. Das Feld PROBE_TYPESCRIPT kann einen anderen ausdrücklich gebundenen lokalen Compilerpfad setzen; für die gespeicherte Runde gelten die protokollierten Versionen.
+Der Runner transpiliert ausschliesslich die sechs erfassten Quellen und arbeitet in fixtures/. Die tatsächlichen originalen Ergebnisse werden unabhängig von den gewünschten Akzeptanzregeln gespeichert. Keine UI wird gestartet. Das Feld PROBE_TYPESCRIPT kann einen anderen ausdrücklich gebundenen lokalen Compilerpfad setzen; für die gespeicherte Runde gelten die protokollierten Versionen.

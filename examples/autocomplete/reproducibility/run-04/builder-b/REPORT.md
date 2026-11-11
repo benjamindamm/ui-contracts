@@ -15,7 +15,7 @@ Alle Dateien liegen in diesem Ausgabeordner. Verwendet wurde nur die gepinnte To
 node generate-fig.mjs     # → autocomplete.fig (31.501 B, 1 Seite, 163 Nodes)
 
 # 2) Readback: parseFigFile(bytes, {populate:"all"}) → native Observations
-#    (Typ, Name, Maße, Fills/Strokes, Texte, Editierbarkeit) + 5 eigenständige Checks
+#    (Typ, Name, Masse, Fills/Strokes, Texte, Editierbarkeit) + 5 eigenständige Checks
 node readback.mjs         # → readback.json; exit 0 (readback/cases/parts/fidelity/scrollend = pass)
 
 # 3) Unabhängige CLI-Inspektion des Exports
@@ -74,7 +74,7 @@ Zielwerte der `--ac-*`-CSS-Variablen kommen aus `tokens.json` `autocomplete.*` (
 | Status: unter sichtbarem Popup, sonst unter Input (statusGap 8); Farbe muted; in error: Farbe error | `accessibility.rules.json` → `statusPlacement` + `autocomplete/layout.css` `[data-part="status"]` (inkl. `[data-state="error"]`-Regel) |
 | Meldetexte (de): opening „Suche wird geöffnet.", loading „Städte werden geladen.", empty „Keine Städte gefunden.", error „Städte konnten nicht geladen werden.", selected „Ausgewählt: {label}.", closed/disabled leer | `accessibility.rules.json` → `messages` |
 | Status in ready/active/scroll-end: „7 Städte verfügbar." (Template `results` mit `count = 7` Ergebnisrecords) | `accessibility.rules.json` → `messages.results` + `stories.json` (7 Ergebnisrecords in diesen Fällen) |
-| Popup sichtbar/verborgen je Phase (loading/ready/empty/error sichtbar; closed/opening/selected/disabled verborgen) | `accessibility.rules.json` → `projections[].popupVisible` (active/scroll-end = ready, selected/disabled = closed gemäß `stories.json` `phase`) |
+| Popup sichtbar/verborgen je Phase (loading/ready/empty/error sichtbar; closed/opening/selected/disabled verborgen) | `accessibility.rules.json` → `projections[].popupVisible` (active/scroll-end = ready, selected/disabled = closed gemäss `stories.json` `phase`) |
 | Aktive Option: `active` → `hamburg` (2. Option), `scroll-end` → `zuerich` (7. Option); Highlight nur bei aktiver Option | `stories.json` → `activeKey` + `accessibility.rules.json` → `selection.ariaSelected` + CSS-Regel `[aria-selected="true"]` |
 | `selected`: Label des `value` („Berlin") im Input, Status aus `selected`-Vorlage, Popup verborgen | `stories.json` → `value: "berlin"` + `autocomplete/README.md` „Sichtbare Geometrie" („Bei selected steht das zu value gehörige Label im Input …") |
 | `disabled`: keine Popupteile sichtbar | `autocomplete/README.md` („Bei disabled sind keine Popupteile sichtbar.") + `stories.json` → `enabled: false` |
@@ -82,7 +82,7 @@ Zielwerte der `--ac-*`-CSS-Variablen kommen aus `tokens.json` `autocomplete.*` (
 | Viewporthöhe bei Ergebnislisten: `min(Anzahl × rowHeight, maxHeight)` = `min(7×32, 160)` = 160; bei Meldungszeilen 32; verborgener Popup belegt keinen Platz | `autocomplete/README.md` „Sichtbare Geometrie" + Tokens `autocomplete.rowHeight/maxHeight` |
 | `scroll-end`: Content in geclipptem Viewport um −64 px versetzt (224 px Content − 160 px Viewport), sodass die aktive letzte Option sichtbar ist; alle 7 Ergebnislayer bleiben erhalten; statische Darstellung | `autocomplete/README.md` „Sichtbare Geometrie" (scroll-end-Absatz) + `stories.json` → `activeKey: "zuerich"` |
 | Anordnung: Autocomplete = label + input + overlay(Overlay-Komponente, anchorPart `input`) mit scroll(ScrollArea-Komponente, contentPart `list`) | `component.json` → `composition`/`anatomy` |
-| Äußere Anordnung (2×5-Raster, Seitentitel, Abstand 40 px) frei; Fall als benannte Frame-Gruppe | `autocomplete/README.md` „Exportrahmen" |
+| Äussere Anordnung (2×5-Raster, Seitentitel, Abstand 40 px) frei; Fall als benannte Frame-Gruppe | `autocomplete/README.md` „Exportrahmen" |
 
 Farbwerte (srgb-Komponenten aus `tokens.json`, im Export als Hex): surface `#ffffff`, text `#172b4d`, muted `#64748b`, border `#cbd5e1`, focus `#2563eb`, highlight `#eaf2ff`, disabled `#94a3b8`, error `#b91c1c`. Schatten-Effekt: `0 2px 8px #0003` → Drop-Shadow (0, 2), Radius 8, `#00000033` 1:1.
 
@@ -100,18 +100,18 @@ Farbwerte (srgb-Komponenten aus `tokens.json`, im Export als Hex): surface `#fff
 
 - **Kein Runtime, keine Interaktion.** Der Export stellt die benannten Designzustände dar; Tastatursteuerung, Fokusfluss, Live-Regionen und SCXML-Verhalten werden nicht ausgeführt. Die Quellen sagen dies selbst voraus: `component.json` → `targetScope.openpencil` („No interactive combobox behaviour or ARIA execution claimed"), `accessibility.rules.json` → `designTarget` (semantische Annotationen), `README.md` („interaktive Canvas-Preview wird nicht gefordert").
 - **Statisches Scroll-Bild.** `scroll-end` ist der Endzustand mit festem Content-Offset; dynamisches Scrollen ist nicht versprochen (README scroll-end-Absatz).
-- **Font-Metriken viewer-abhängig.** „Inter" wird als Schriftname referenziert; exakte Glyphen-/Breitenmetriken hängen vom viewerseitigen Font-Fallback ab. Namen, Größen, Gewichte und Zeilenhöhen sind im Readback verifiziert.
+- **Font-Metriken viewer-abhängig.** „Inter" wird als Schriftname referenziert; exakte Glyphen-/Breitenmetriken hängen vom viewerseitigen Font-Fallback ab. Namen, Grössen, Gewichte und Zeilenhöhen sind im Readback verifiziert.
 - **Exporter-Kopplung.** Die Node-IDs in `readback.json` gehören zur Serialisierung von `@open-pencil/core` 0.16.0; andere Exporter/Versionen erzeugen andere IDs. Werte, Namen, Typen und Hierarchie sind checkbar identisch (5 Checks).
 - **Kein Komponenten-Release.** Die Fälle sind editierbare `FRAME`-Gruppen (von der Abnahme ausdrücklich erlaubt); es wird keine Bibliotheksfreigabe erklärt (durchgehend `release: false`).
 
 ## 6. Hilfsausgaben
 
-- **Handoff-Prüfung:** `handoffs.py check` (Skill-Hilfswerkzeug) wurde auf `handoff-v1.json` ausgeführt und liefert `HANDOFF_READY`. Der Tool-Output lag im Temp-Verzeichnis außerhalb des Repositories; die empfangene JSON-Ausgabe wurde als `handoff-check-receipt.json` in diesen Ausgabeordner kopiert. Dort sind u. a. `overall: "HANDOFF_READY"`, `handoffSha256` und `taskSha256` hashgebunden.
+- **Handoff-Prüfung:** `handoffs.py check` (Skill-Hilfswerkzeug) wurde auf `handoff-v1.json` ausgeführt und liefert `HANDOFF_READY`. Der Tool-Output lag im Temp-Verzeichnis ausserhalb des Repositories; die empfangene JSON-Ausgabe wurde als `handoff-check-receipt.json` in diesen Ausgabeordner kopiert. Dort sind u. a. `overall: "HANDOFF_READY"`, `handoffSha256` und `taskSha256` hashgebunden.
 - **Bootstrap/Übriges:** Das Bootstrap-Receipt (`bootstrap.json`) wurde vor Arbeitsbeginn vorgefunden und nicht verändert. Weitere Helfer-Outputs wurden nicht erzeugt.
 
 ## 7. Verifizierte Artefakte
 
-| Datei | Größe | SHA-256 |
+| Datei | Grösse | SHA-256 |
 |---|---|---|
 | `autocomplete.fig` | 31.501 B | `4972198fe30b878f6e16733450c45acd9fbe4362235c590fce8016b40e6e47df` |
 | `readback.json` | (siehe Datei) | in `handoff-v1.json` hashgebunden |

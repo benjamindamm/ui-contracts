@@ -12,7 +12,7 @@ Ein ähnliches Bild allein beantwortet Frage 2 nicht. Beide Ausgaben müssen zue
 
 ## Untersuchungsgegenstand und Eingabe
 
-Eine Komponentenbeschreibung: Autocomplete mit den referenzierten Overlay- und ScrollArea-Definitionen. Der erlaubte semantische Input ist ausschließlich die 22 Dateien unter components/. Der eingefrorene Stand besitzt die Revision `1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727`. [Dateiliste, Einzelhashes und Ausgangscommit](../../../../examples/autocomplete/reproducibility/run-01/run.json).
+Eine Komponentenbeschreibung: Autocomplete mit den referenzierten Overlay- und ScrollArea-Definitionen. Der erlaubte semantische Input ist ausschliesslich die 22 Dateien unter components/. Der eingefrorene Stand besitzt die Revision `1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727`. [Dateiliste, Einzelhashes und Ausgangscommit](../../../../examples/autocomplete/reproducibility/run-01/run.json).
 
 Die Definition umfasst Interface/CEM, Visual/DTCG und CSS, Behavior/SCXML, Accessibility/HTML und ergänzende eigene Projektionsregeln sowie konkrete Darstellungsfälle. Es ist ein Autoren-/Erzeugungsexperiment mit diesen vorhandenen Formaten, kein Vergleich sämtlicher UI-Standards.
 
@@ -47,14 +47,14 @@ Technische Zwischenschritte und Code dürfen die Builder eigenständig wählen. 
 3. Den Prüfer mit reinem Definitionszugriff starten; er leitet seine Kriterien eigenständig ab und beendet die Vorbereitungsphase.
 4. Prüfkriterien hashen und versiegeln, bevor der Prüfer Zugriff auf Builderausgaben erhält. Die Builder dürfen währenddessen bereits arbeiten; dies ist keine Behauptung einer vor jedem Generierungsbeginn abgeschlossenen Kriterienregistrierung.
 5. Beide Builder liefern echte Dateien, Vorschau, Generierungsschritt und Bericht.
-6. Prüfer ausdrücklich zur Vergleichsphase freigeben. Er liest die gespeicherten Dateien selbst mit Originalwerkzeugen und ordnet anschließend Angaben der Builder ein.
-7. Quellen-, Kriterien- und Ergebnisintegrität prüfen und Ergebnisse einschließlich Widersprüchen und Grenzen festhalten.
+6. Prüfer ausdrücklich zur Vergleichsphase freigeben. Er liest die gespeicherten Dateien selbst mit Originalwerkzeugen und ordnet anschliessend Angaben der Builder ein.
+7. Quellen-, Kriterien- und Ergebnisintegrität prüfen und Ergebnisse einschliesslich Widersprüchen und Grenzen festhalten.
 
 [Versiegelte Vorabkriterien](../../../../examples/autocomplete/reproducibility/run-01/review/preregistered.json) · [Lesbare Kriterien](../../../../examples/autocomplete/reproducibility/run-01/review/preregistered.md) · [Siegel](../../../../examples/autocomplete/reproducibility/run-01/review/preregistration-seal.json).
 
 ## Auswertung
 
-Der Prüfer verwendet vorab abgeleitete Kategorien wie erfüllt, verletzt, unbestimmt und außerhalb des Umfangs. Er prüft die ausdrücklich bestimmten Zustände, Anatomie, Texte, Maße, Farb-/Typografieregeln, Clipping und Editierbarkeit. Anschließend vergleicht er beide Ergebnisse auf Komponentenebene.
+Der Prüfer verwendet vorab abgeleitete Kategorien wie erfüllt, verletzt, unbestimmt und ausserhalb des Umfangs. Er prüft die ausdrücklich bestimmten Zustände, Anatomie, Texte, Masse, Farb-/Typografieregeln, Clipping und Editierbarkeit. Anschliessend vergleicht er beide Ergebnisse auf Komponentenebene.
 
 Die freie Seitenanordnung, technische IDs und bytegleiche Dateien sind keine Erfolgsbedingungen. Eine unterschiedliche Knotenanzahl kann auf unterschiedliche zulässige Struktur oder einen Fehler hinweisen; die Anzahl allein ist kein Konformitätsurteil. Bilder unterstützen die Auswertung, ersetzen aber die tatsächlichen Knoten-/Wertbeobachtungen nicht.
 

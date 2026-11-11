@@ -1,6 +1,6 @@
 # IP-01: Entwurf der minimalen Bindungsbeschreibung
 
-Stand: 25. Oktober 2026. **Vorschlag zur späteren Umsetzung**, keine verabschiedete Formatsyntax, kein Validator und kein ausführbares Paket. Dieser Entwurf konkretisiert [IP-01](INTEGRATION-PROFILE.md); er ergänzt ausschließlich Beziehungen zwischen den vier Domänen. Bestehende Schemas werden nicht erweitert. Neue Norm- oder Laufzeitnachweise entstehen dadurch nicht.
+Stand: 25. Oktober 2026. **Vorschlag zur späteren Umsetzung**, keine verabschiedete Formatsyntax, kein Validator und kein ausführbares Paket. Dieser Entwurf konkretisiert [IP-01](INTEGRATION-PROFILE.md); er ergänzt ausschliesslich Beziehungen zwischen den vier Domänen. Bestehende Schemas werden nicht erweitert. Neue Norm- oder Laufzeitnachweise entstehen dadurch nicht.
 
 ## 1. Drei getrennte Ebenen
 
@@ -75,10 +75,10 @@ Die spätere Beschreibung muss mindestens folgende Beziehungen auflösen. Diese 
 | Eingabe → Overlayanker | Visual: relative Geometrie | Input derselben Suche → eigene Overlayfläche; keine zugängliche Beziehung aus dem Anker ableiten. |
 | Input → Listbox | Accessibility: Relationsregel | Tatsächliche semantische Listbox derselben Suche; nicht Overlayfläche oder Scrollviewport. |
 | Aktiver Key → zugängliches Ziel | Behavior liefert Key; A11y definiert Projektion | Existierende aktuelle Option verwenden; stale oder entfernte Option darf kein aktives Nachfahrenziel bleiben. |
-| Aktiver Key → Reveal | Behavior fordert Sichtbarkeit; ScrollArea misst | Option im eigenen Inhalt und aktueller Request; gemessene Sichtbarkeit statt bloß übernommener Wunschoffset. |
+| Aktiver Key → Reveal | Behavior fordert Sichtbarkeit; ScrollArea misst | Option im eigenen Inhalt und aktueller Request; gemessene Sichtbarkeit statt bloss übernommener Wunschoffset. |
 | Token → Hostlayout | Visual: typisierter Wert und Einheit | Ausdrücklich unterstützte DTCG-Alias-/Wertteilmenge übersetzen; Einheit erhalten. |
 | Zustand → Visual/A11y | Behavior: Zustand; Ziel-Domäne: Darstellungs-/Semantikregel | Beide Verbraucher lesen denselben Instanzzustand; kein zweiter separat editierter expanded-/selected-Zustand. |
-| Zustandsänderung → Meldung | Behavior: Auslöser; A11y: Text-/Locale-Regel | Nur aktuelle Instanz/Generation; keine Ansage aus bloßer Themeänderung. |
+| Zustandsänderung → Meldung | Behavior: Auslöser; A11y: Text-/Locale-Regel | Nur aktuelle Instanz/Generation; keine Ansage aus blosser Themeänderung. |
 | Führende Änderung → Ableitungen | Je Information festgelegte Quelldomäne | Quellenabschluss und betroffene Ausgaben aktualisieren; Ableitungsänderung ohne führende Änderung als Konflikt melden. |
 
 ## 5. Auflösungsprotokoll

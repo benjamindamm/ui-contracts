@@ -39,7 +39,7 @@ Node v24.22.1; fünf Fälle jeweils in einem eigenen Prozess mit NODE_ENV=develo
 
 Alle zehn Erwartungen erfüllt; Originalfehlertexte erhalten. createMachine ruft ensureStateIndex auf und gibt das Maschinenobjekt selbst zurück. Das ist eine echte begrenzte interne Prüfung, **kein vollständiger Shape-/Fachvalidator**. Dass ein Objekt ohne erforderliche Rootfunktion den Aufbau passiert, sagt ausdrücklich nicht, dass ein später gestarteter Service korrekt funktioniert. Kein solcher Service-, UI-, Tastatur- oder Assistenztest wurde ausgeführt.
 
-Die Typdeklaration MachineSchema ist ein generischer SDK-Typ; Machine.initialState ist eine Funktion, weitere Kontext-/Aktions-/Effektteile sind ebenfalls ausführbare SDK-Definitionen. Ein bloßer Exportname MachineSchema wird nicht als neutrales Datendateischema ausgegeben. Der zuvor nur aus Quellcode belegte Modusunterschied C406 ist jetzt tatsächlich ausgeführt.
+Die Typdeklaration MachineSchema ist ein generischer SDK-Typ; Machine.initialState ist eine Funktion, weitere Kontext-/Aktions-/Effektteile sind ebenfalls ausführbare SDK-Definitionen. Ein blosser Exportname MachineSchema wird nicht als neutrales Datendateischema ausgegeben. Der zuvor nur aus Quellcode belegte Modusunterschied C406 ist jetzt tatsächlich ausgeführt.
 
 ## Ark: Originalmetadaten und drei SDK-Typbedingungen
 
@@ -60,11 +60,11 @@ Aus der **tatsächlich installierten Distribution** wurde UseComboboxProps über
 | open als String | TS2322, String nicht boolean/undefined |
 | collection als einfaches Array | TS2740, erforderliche ListCollection-Struktur/-Methoden fehlen |
 
-Alle drei Erwartungen erfüllt. Der SDK-Typpfad ist real; ein neutraler JSON-Contract mit bloßem Array wird dadurch nicht automatisch zum SDK-Collectionobjekt. Es wurde kein zusätzlicher Ark-Laufzeitvalidator oder Reactservice ausgeführt.
+Alle drei Erwartungen erfüllt. Der SDK-Typpfad ist real; ein neutraler JSON-Contract mit blossem Array wird dadurch nicht automatisch zum SDK-Collectionobjekt. Es wurde kein zusätzlicher Ark-Laufzeitvalidator oder Reactservice ausgeführt.
 
 ## Einordnung der weiterhin offenen Fragen
 
-**Zag X06 bleibt U/C466.** Der getestete Core besitzt keine durch diese Untersuchung belegte neutrale Artefaktprüfung; seine konkreten internen Regeln sind nun genau bekannt. Die Zag-Spalte umfasst gemäß S33–S38 ausdrücklich das Toolkit mit benannten Hilfs-/Komponentenbeiträgen und nicht nur diesen Core. Die begrenzten Aufbauprüfungen oder die Inventur des Core reichen weder zum D für einen neutralen Originalartefaktvalidator noch zum N über den gesamten bereits definierten Toolkitumfang. Noch fehlend: ein eindeutig identifiziertes neutrales Originalartefakt-/Schema-/Validatorpaar im Kandidatenumfang oder ein separat belegter abschließender Modellgrenzenbefund für diesen gesamten Gegenstand.
+**Zag X06 bleibt U/C466.** Der getestete Core besitzt keine durch diese Untersuchung belegte neutrale Artefaktprüfung; seine konkreten internen Regeln sind nun genau bekannt. Die Zag-Spalte umfasst gemäss S33–S38 ausdrücklich das Toolkit mit benannten Hilfs-/Komponentenbeiträgen und nicht nur diesen Core. Die begrenzten Aufbauprüfungen oder die Inventur des Core reichen weder zum D für einen neutralen Originalartefaktvalidator noch zum N über den gesamten bereits definierten Toolkitumfang. Noch fehlend: ein eindeutig identifiziertes neutrales Originalartefakt-/Schema-/Validatorpaar im Kandidatenumfang oder ein separat belegter abschliessender Modellgrenzenbefund für diesen gesamten Gegenstand.
 
 **Ark UI X06 bleibt U/C467.** Die ausgewählte React-Combobox-Deklaration und die separate API-Metadatendatei sind keine Originalschema-/Dateivalidatorkette. Der Kandidat umfasst mehr als diese drei Props beziehungsweise nur das Reactpaket. Die Untersuchung belegt keinen neutralen Validator und widerlegt nicht sämtliche übrigen Artefaktbeiträge/Frameworks. Noch fehlend: ein konkretes Original-Contractartefakt samt eigener Schemaversion und nachgewiesenem Aufruf/Regelumfang; mögliche Generatoren und eigene Ableitungen getrennt halten.
 

@@ -16,7 +16,7 @@ Dieser Restzugriff prüft genau den bereits vorhandenen öffentlichen createLexe
 | Derselbe Draft: Typalias anchor-name | dashed-ident |
 | Overflow 3, WD 07.10.2025: overflow-y | visible, hidden, clip, scroll, auto |
 
-Die **exakten** Originalsyntaxstrings einschließlich Operatoren/Wiederholung stehen in anchor-source.json, overflow-source.json und profile.json. Die Tabelle oben erläutert sie, ersetzt ihre Grammatik nicht. Keine neu erfundenen Keywords oder Defaultwerte und kein ungepinnter aktueller Editor-Draft.
+Die **exakten** Originalsyntaxstrings einschliesslich Operatoren/Wiederholung stehen in anchor-source.json, overflow-source.json und profile.json. Die Tabelle oben erläutert sie, ersetzt ihre Grammatik nicht. Keine neu erfundenen Keywords oder Defaultwerte und kein ungepinnter aktueller Editor-Draft.
 
 css-tree **3.2.1** und die bestehende Installation/Lock aus css-grammar/tool-current werden unverändert wiederverwendet. Seine originalen createLexer-/matchProperty-Implementierungen und generischen Typen sind lokal gelesen. Der zusätzliche Lexer erhält nur diese Originaltypen/-properties als explizite Konfiguration; generische Token-/Identifierprüfung stammt aus dem gebundenen Backend. Die globale originale css.lexer-Instanz und ihre Propertydefinitionen werden nicht überschrieben.
 
@@ -24,7 +24,7 @@ css-tree **3.2.1** und die bestehende Installation/Lock aus css-grammar/tool-cur
 
 Eigener Zusatzcode liest tatsächliche CSS-Stylesheets mit dem ursprünglichen Parser und führt deren Deklarationswerte gegen die vier gebundenen Originalgrammatiken. Die Formatdefinitionen bleiben Original-CSS; der zusätzliche Teil ist Zuordnung/Versionierung und der explizite Checkeraufbau. Das ist **kein nativer unveränderter Wörterbuchbeitrag des css-tree-Pakets**.
 
-Nur die vier genannten Properties sind als geprüft klassifizierbar. Eine unbekannte oder andere Property führt für den Gesamtfall zu unsupported_scope, auch wenn eine benachbarte bekannte Deklaration gültig ist. Fehlende Variablensubstitution wird als unsupported_value bewahrt, nicht als Nachweis ungültigen CSS ausgegeben. Beobachtungen der einzelnen Deklarationen einschließlich ursprünglicher Matcherfehler bleiben gespeichert.
+Nur die vier genannten Properties sind als geprüft klassifizierbar. Eine unbekannte oder andere Property führt für den Gesamtfall zu unsupported_scope, auch wenn eine benachbarte bekannte Deklaration gültig ist. Fehlende Variablensubstitution wird als unsupported_value bewahrt, nicht als Nachweis ungültigen CSS ausgegeben. Beobachtungen der einzelnen Deklarationen einschliesslich ursprünglicher Matcherfehler bleiben gespeichert.
 
 Das Profil ist ein enger Forschungsprüfumfang. Keine Behauptung, sämtliche Stylesheetregeln, CSS-Escapes, At-Rules, Funktionen, Draftproperties, globalen Kaskadenfragen oder semantischen Modulbedingungen vollständig abzudecken. Generische Backendtypen werden nicht zur Vollkonformität aller referenzierten CSS-Spezifikationen aufgewertet.
 
@@ -35,7 +35,7 @@ Das Profil ist ein enger Forschungsprüfumfang. Keine Behauptung, sämtliche Sty
 | position-anchor normal | Originalwörterbuch weist ab; Originalgrammatikbindung akzeptiert |
 | position-anchor match-parent | Ebenso |
 | Vier-Property-Kontrolle mit zwei Selektoren | Zusätzliche Bindung akzeptiert |
-| anchor-name als Kommaliste | Akzeptiert gemäß ursprünglichem #-Operator |
+| anchor-name als Kommaliste | Akzeptiert gemäss ursprünglichem #-Operator |
 | Ankername ohne erforderliche Form | invalid |
 | overflow-y banana | invalid |
 | Zusätzlicher fremder Wert nach normal | invalid |
@@ -57,4 +57,4 @@ Aktuell **49 U: 29 Integration und 20 weitere**. X06 **8 D, 2 A, 2 begrenzte N, 
 
 ## Reproduktion
 
-Originales css-tree3.2.1 gemäß dem bisherigen tool-current-Lock bereitstellen. prepare.py übernimmt ausschließlich die gespeicherten Originalsyntaxstrings in das ausdrückliche Zusatzprofil und speichert die zwölf Erwartungen. run.cjs verwendet den ursprünglichen Parser und createLexer/matchProperty, protokolliert native und zusätzlich gebundene Resultate. Source-/Profil-/Toolhashes im Manifest. Kein Browser, UI-/Assistenztest oder Beweis sämtlicher CSS-Conformance-Regeln.
+Originales css-tree3.2.1 gemäss dem bisherigen tool-current-Lock bereitstellen. prepare.py übernimmt ausschliesslich die gespeicherten Originalsyntaxstrings in das ausdrückliche Zusatzprofil und speichert die zwölf Erwartungen. run.cjs verwendet den ursprünglichen Parser und createLexer/matchProperty, protokolliert native und zusätzlich gebundene Resultate. Source-/Profil-/Toolhashes im Manifest. Kein Browser, UI-/Assistenztest oder Beweis sämtlicher CSS-Conformance-Regeln.

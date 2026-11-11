@@ -18,12 +18,12 @@ Die Wegweiser verwenden normale Markdownverweise, keine automatischen Dateiimpor
 1. Agentenprogramm und Version **getrennt von Modell/Provider** notieren; Startverzeichnis und Konfigurationsprofil festhalten.
 2. Tatsächlich geladene Projekt-, Eltern-, globale und verwaltete Instruktionsdateien sowie automatische Erinnerungen auflisten. Relevante lokale Dateien mit Revision/Hash binden; keine geheimen Konfigurationswerte in Studien kopieren.
 3. Dateiimporte, breite Instruktionsglobs, globale Regeln, zusätzliche Workspaces, vorab eingefügte Verzeichnisbäume und aktivierte Skills prüfen. Kein pauschales Ausschalten bestehender Nutzervorgaben und keine globale Konfiguration ohne Auftrag ändern.
-4. Vorhandene Speicher-/Kontextanzeige oder Debugdaten der jeweiligen Laufzeit nutzen. Gemini CLI dokumentiert beispielsweise `/memory show`; bei anderen Hosts deren aktuelle Möglichkeit prüfen. Falls Rohrequestdaten nicht verfügbar sind, bleibt die Gesamtgröße ausdrücklich unbekannt.
+4. Vorhandene Speicher-/Kontextanzeige oder Debugdaten der jeweiligen Laufzeit nutzen. Gemini CLI dokumentiert beispielsweise `/memory show`; bei anderen Hosts deren aktuelle Möglichkeit prüfen. Falls Rohrequestdaten nicht verfügbar sind, bleibt die Gesamtgrösse ausdrücklich unbekannt.
 5. Frische Worker ohne Elternhistorie starten; Memory-Inhalte und Fortsetzungen als Versuchsbedingungen behandeln. Repozugriff ist keine automatische Kontextladung, und ein frischer Gesprächsverlauf ist kein vollständig leerer Systemkontext.
-6. Das geladene Initialset und später nachgeladene Dateien getrennt protokollieren. Technische Probe und reale Studiengeneration getrennt ausweisen. Bei einer Blindprüfung dürfen frühere Builds/Reports nicht über Erinnerungen oder globale Anweisungen einfließen.
+6. Das geladene Initialset und später nachgeladene Dateien getrennt protokollieren. Technische Probe und reale Studiengeneration getrennt ausweisen. Bei einer Blindprüfung dürfen frühere Builds/Reports nicht über Erinnerungen oder globale Anweisungen einfliessen.
 
 ## Nachweisstatus
 
-Die drei Repositoryeinstiege wurden ergänzt und statisch auf Größe, vorhandene Verweisziele und fehlende automatische Imports geprüft. [Maschinenlesbare Prüfung](../../../../tools/skill-tests/ui-contracts/entrypoints-verification.json).
+Die drei Repositoryeinstiege wurden ergänzt und statisch auf Grösse, vorhandene Verweisziele und fehlende automatische Imports geprüft. [Maschinenlesbare Prüfung](../../../../tools/skill-tests/ui-contracts/entrypoints-verification.json).
 
 Es wurden **keine Claude-, Gemini- oder OpenCode-Sessions gestartet**. Deren globale Konfiguration und automatische Erinnerungen wurden weder gelesen noch verändert. Tatsächliche Erkennung, zusätzliche Tool-/Systemtexte und Requesttokens müssen deshalb für jeden konkreten Host vor dem nächsten Pilot noch gemessen werden. Dokumentierte Ladewege ersetzen diesen Laufzeitnachweis nicht.

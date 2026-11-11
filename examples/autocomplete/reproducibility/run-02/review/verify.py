@@ -450,7 +450,7 @@ def evaluate(design):
         rows["fullyVisible"] == 5 and not case("ready")["highlightKeys"] and
         case("ready")["texts"]["status"].endswith("Städte verfügbar.") and
         case("ready")["disabledTextKeys"] == ["muenchen"],
-        f"options=7, viewport=160, sichtbar={rows['fullyVisible']} voll/{rows['partial']} teil/{rows['outside']} außerhalb, "
+        f"options=7, viewport=160, sichtbar={rows['fullyVisible']} voll/{rows['partial']} teil/{rows['outside']} ausserhalb, "
         f"highlight={case('ready')['highlightKeys'] or 'keine'}, status='{case('ready')['texts']['status']}', disabled={case('ready')['disabledTextKeys']}")
     p, rows, hl = st_case("active")
     put("ST05", case("active")["highlightKeys"] == ["hamburg"],
@@ -595,7 +595,7 @@ def evaluate(design):
     # ---------------- clipping ----------------
     clip_ok = all(case(cid)["rows"]["fullyVisible"] == 5 and case(cid)["rows"]["partial"] == 0 and
                   case(cid)["rows"]["outside"] == 2 for cid in RESULT_CASES)
-    put("CLIP01", clip_ok, "ready/active/scroll-end: 5 volle Zeilen, 0 angeschnitten, 2 außerhalb")
+    put("CLIP01", clip_ok, "ready/active/scroll-end: 5 volle Zeilen, 0 angeschnitten, 2 ausserhalb")
     put("CLIP02", all(case(cid)["optionCount"] == 7 for cid in RESULT_CASES),
         "7 Optionsknoten je Ergebnisfall, auch für Wien/Zürich (nicht gelöscht)")
     z = next(r for r in case("scroll-end")["rows"]["rows"] if r["key"] == "zuerich")
@@ -661,7 +661,7 @@ def evaluate(design):
         f"Status #64748B, error {case('error')['colors']['status'][0]}")
     put("COL10", all(case(cid)["strokeCount"]["surface"] == 0 and case(cid)["colors"]["surfaceFill"] == ["#FFFFFF"]
                      for cid in POPUP_CASES),
-        "Surface: 0 Strokes, einfarbig weiß, kein Verlauf")
+        "Surface: 0 Strokes, einfarbig weiss, kein Verlauf")
     non_token = []
     allowed = list(TOKENS["colors"].values())
     for cid in CASES:
@@ -696,12 +696,12 @@ def evaluate(design):
     # ---------------- accessibility ----------------
     role_meta = None
     put("A11Y01", False,
-        "keine combobox-Rolle/-Annotation; Inputknoten heißt 'input'; pluginData nur layoutDirection/textDirection")
+        "keine combobox-Rolle/-Annotation; Inputknoten heisst 'input'; pluginData nur layoutDirection/textDirection")
     put("A11Y02", False,
-        "Listenknoten heißt 'list'/'overlay.scroll.viewport'; keine listbox-Annotation, kein zugänglicher Name 'Stadt auswählen'")
+        "Listenknoten heisst 'list'/'overlay.scroll.viewport'; keine listbox-Annotation, kein zugänglicher Name 'Stadt auswählen'")
     put("A11Y03", False,
         f"keine aria-selected/aria-disabled-Annotation; visuell: highlight={case('active')['highlightKeys']}, disabled={case('ready')['disabledTextKeys']}")
-    put("A11Y04", True, "Statusknoten heißt 'status'; Rolle/Live-Region nicht maschinenlesbar annotiert",
+    put("A11Y04", True, "Statusknoten heisst 'status'; Rolle/Live-Region nicht maschinenlesbar annotiert",
         "Namensbranch des Kriteriums erfüllt.")
     put("A11Y05", True,
         "keine maschinenlesbare expanded-Annotation; Fallname (Autocomplete / <phase>) + Projektionstabelle bilden den Zustand ab",
@@ -713,7 +713,7 @@ def evaluate(design):
 
     # ---------------- freiheiten ----------------
     for fid, obs in {
-        "FREE01": "Fälle in 2 Spalten (A) bzw. 5×2-Raster (B); Titel/Notizen nur außerhalb der Fallgruppen",
+        "FREE01": "Fälle in 2 Spalten (A) bzw. 5×2-Raster (B); Titel/Notizen nur ausserhalb der Fallgruppen",
         "FREE02": "Namensstile 'overlay surface' vs. 'overlay.surface' – beide verständlich",
         "FREE03": "keine Scrollbar gezeichnet (beide)",
         "FREE04": "Meldungszeile 32 px, Text bei dy=6, dx=12",

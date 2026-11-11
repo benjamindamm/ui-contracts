@@ -18,7 +18,7 @@ Agenten werden per fork_turns=none gestartet, ohne Modelloverride und ohne weite
 
 1. Komponente für den Ländervorwahlbereich wird vor Erstellung der UI in decision.json festgehalten, mit Kontextfakten, Quellen und Begründung.
 2. Harte Eignung und Einhaltung der Projektpräferenz werden getrennt geprüft. Vorregistrierte Erwartung: A bevorzugt Select, B benötigt die definierte suchfähige Autocomplete-Variante. Ein nicht definierter SelectWithSearch zählt nicht als vorhandener Bibliotheksbaustein.
-3. Tatsächliche Ausgabe muss dieser Auswahl entsprechen; ein data-component-Label allein genügt nicht. B muss wirklich filtern, ausschließlich vorhandene Country-Keys bestätigen und unbekannte Eingaben beim Abschicken ablehnen.
+3. Tatsächliche Ausgabe muss dieser Auswahl entsprechen; ein data-component-Label allein genügt nicht. B muss wirklich filtern, ausschliesslich vorhandene Country-Keys bestätigen und unbekannte Eingaben beim Abschicken ablehnen.
 4. Beide Formulare verwenden den Input-Contract für Vorname, Nachname, E-Mail und lokale Rufnummer. Rufnummer bleibt String mit führenden Nullen. Kein Backend, Versand oder externe Datenübermittlung.
 
 ## Weitere Prüfungen

@@ -24,7 +24,7 @@
 
 **Neue Laufzeitgrenze:** [Original-Defaultinvoke](experiments/2026-10-25/scxml-invoke/REPORT.md) koppelt bei gleichem Child-src die Daten zweier Instanzen trotz separater Elternvorbereitung: drei von sechs Erwartungen verletzt. Cancel/Neustart als Lebenszyklus sind begrenzt ausgeführt; ein Diagnosefall mit unterschiedlichen URIs besteht. Keine gewählte Lösung. Zum damaligen Teilabschluss 56 U-Zellen; in jenem Lauf keine Neubewertung. Sechs zusätzliche Fälle mit eigenem instanzgetrenntem Invokeradapter bestehen; die Originalverletzungen bleiben erhalten (C458).
 
-**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschliesslich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
 
 # Werkzeugvergleich: Originalschema, Code und Reifegrad
 
@@ -33,9 +33,9 @@
 
 Stand: 24. Oktober 2026. **Dokumentarischer Vergleich aller 16 Kandidaten am jeweils gespeicherten Quellenstand.** Zusammengeführt werden die bereits belegten Einzelbefunde; neu sind gezielte X06-Folgeprüfungen zu XState, Zag und Ark UI. Keine neue Vollrecherche sämtlicher Releases, keine Installation und keine ausgeführten Compiler-, Validator-, Browser- oder Assistenztechniktests.
 
-## 1. Was dieser Vergleich abschließt
+## 1. Was dieser Vergleich abschliesst
 
-Die drei vorgemerkten Vergleichsdimensionen sind für alle Kandidaten in einer gemeinsamen Sicht erfasst: Originalschema gegenüber tatsächlichem Werkzeug, Beschreibungsformat gegenüber zusätzlich nötigem Code sowie Versions-/Reifegegenstand gegenüber Kompatibilitätsnachweis. Unbekannte Antworten bleiben benannt. Das schließt die dokumentarische Zusammenführung ab, nicht alle technischen Nachweislücken oder eine Produktionsfreigabe.
+Die drei vorgemerkten Vergleichsdimensionen sind für alle Kandidaten in einer gemeinsamen Sicht erfasst: Originalschema gegenüber tatsächlichem Werkzeug, Beschreibungsformat gegenüber zusätzlich nötigem Code sowie Versions-/Reifegegenstand gegenüber Kompatibilitätsnachweis. Unbekannte Antworten bleiben benannt. Das schliesst die dokumentarische Zusammenführung ab, nicht alle technischen Nachweislücken oder eine Produktionsfreigabe.
 
 Quellenbasis: [Register](SOURCES.md), [Claims](CLAIMS.md), [Methoden](METHODS.md). Bereits geprüfte Quellen werden hier erneut ausgewertet; sie gelten nicht als in dieser Runde frisch abgerufen. Neu gelesene Primärpfade sind unter [S62](SOURCES.md#s62) abgegrenzt. Aktuelle X06-Bewertungen: **8 D, 2 A, 4 begrenzte N, 2 U**. D belegt den begrenzten Originalschema-Beitrag, keine vollständig ausgeführte Validierungskette.
 
@@ -88,7 +88,7 @@ Die Tabelle beschreibt Rollen. Sie ist keine Rangfolge nach Codefreiheit: Ein In
 | Kandidat | Gesicherter Gegenstand des gespeicherten Stands | Offene produktive Zusage |
 | --- | --- | --- |
 | CEM | Gepinntes Schema; Format-README nennt 2.1.0 | Kompatibilität mit konkretem Analyzer, Typsystem und Integrationsprofil praktisch offen |
-| OpenUI | draft-01; Websitepaket private 0.1.0 ist andere Versionsachse | Maßgebliche Schemafassung, Toolverfügbarkeit und Migration nicht ausreichend belegt |
+| OpenUI | draft-01; Websitepaket private 0.1.0 ist andere Versionsachse | Massgebliche Schemafassung, Toolverfügbarkeit und Migration nicht ausreichend belegt |
 | Google DESIGN.md | Alpha-Format; Repo-Werkzeug 0.4.0 | Änderungen ausdrücklich möglich; langfristiger neutraler Vertrag nicht zugesagt |
 | AgentsORG | design.v1 / dokumentierter Vertrag 1.3 | Verlustfreier Import und produktive Änderungs-/Integrationsgarantien unabhängig ungeprüft |
 | DTCG | Format/Resolver 2025.10, Final Community Group Reports; keine W3C Recommendations | Vollständige konkrete Toolkonformität und plattformgerechte Übersetzung ungetestet |
@@ -104,7 +104,7 @@ Die Tabelle beschreibt Rollen. Sie ist keine Rangfolge nach Codefreiheit: Ein In
 | APG | Informativer Guide; gepinnte Beispielquellen | Keine eigene normative Contract-Konformität; Beispielpaket 0.0.0 ist keine Spezifikationsversion |
 | CSS Layout | Anchor Positioning 1 und Overflow 3, ergänzend Media Queries 5 für V03, jeweils getrennte Working-Draft-Stände | Modul-/Checker-/Browserunterstützung genau dieser Kombination ungeprüft |
 
-Es gibt noch keinen vereinbarten produktiven Mindest-Reifegrad. Versionsnummer, Herstellergröße und vorhandene Tests sind keine Produktionsfreigabe. Die Tabelle ist eine datierte Bestandsaufnahme; sie behauptet keinen frisch recherchierten Marktanteil oder umfassenden Supportvertrag.
+Es gibt noch keinen vereinbarten produktiven Mindest-Reifegrad. Versionsnummer, Herstellergrösse und vorhandene Tests sind keine Produktionsfreigabe. Die Tabelle ist eine datierte Bestandsaufnahme; sie behauptet keinen frisch recherchierten Marktanteil oder umfassenden Supportvertrag.
 
 ## 5. Neue präzise Prüflücken
 

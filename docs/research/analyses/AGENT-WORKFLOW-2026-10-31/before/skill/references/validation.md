@@ -14,7 +14,7 @@ python3 "$SKILL/scripts/contracts.py" validate --repo "$REPO" --scope static --o
 python3 "$SKILL/scripts/contracts.py" validate --repo "$REPO" --browser-run /tmp/current-ui-run --output /tmp/contract-web.json
 ```
 
-`inspect` nutzt die Projektlaufzeit und Originalschemas aus dem vorhandenen Werkzeugbestand. Es prüft striktes JSON, CEM 2.1.0 beziehungsweise SCXML 1.0, CSS-Syntax und HTML-Parsebarkeit soweit passend. Für component.json/library.json ergänzen eigene Mindestschemas die begrenzte Referenz-/Identitäts-/Aliasprüfung. Andere JSON-Dokumente bleiben Syntaxprüfungen. HTML-Parsebarkeit bedeutet keine HTML-/ARIA-Konformität. Fehlende Quellziele, falsche Zielarten, doppelte Identitäten und Kompositionszyklen werden zusätzlich konkret geprüft. Guards, beliebige Typsemantik, CSS-Tokenabbildung und vollständige Ownership bleiben außerhalb dieser Teilprüfung. Daher endet eine sonst gültige neue Komponente weiterhin mit `BLOCKED`/`SEMANTIC_PROFILE_UNSUPPORTED` und separat bestandenen Teilprüfungen.
+`inspect` nutzt die Projektlaufzeit und Originalschemas aus dem vorhandenen Werkzeugbestand. Es prüft striktes JSON, CEM 2.1.0 beziehungsweise SCXML 1.0, CSS-Syntax und HTML-Parsebarkeit soweit passend. Für component.json/library.json ergänzen eigene Mindestschemas die begrenzte Referenz-/Identitäts-/Aliasprüfung. Andere JSON-Dokumente bleiben Syntaxprüfungen. HTML-Parsebarkeit bedeutet keine HTML-/ARIA-Konformität. Fehlende Quellziele, falsche Zielarten, doppelte Identitäten und Kompositionszyklen werden zusätzlich konkret geprüft. Guards, beliebige Typsemantik, CSS-Tokenabbildung und vollständige Ownership bleiben ausserhalb dieser Teilprüfung. Daher endet eine sonst gültige neue Komponente weiterhin mit `BLOCKED`/`SEMANTIC_PROFILE_UNSUPPORTED` und separat bestandenen Teilprüfungen.
 
 `validate` ruft unverändert `tools/validation/check.py` mit dem gewählten Paket/Umfang auf und übernimmt dessen Ergebnis. Die unterstützte Referenz liegt unter `docs/research/experiments/2026-10-25/ip01-static/reference/`; `--candidate` bedeutet hier eine Kopie dieses vollständigen Pakets. Eine Bibliothek unter `libraries/<id>/` ist ein anderes Autorenartefakt und darf nicht allein durch passende Ordnernamen zu diesem Profil erklärt werden.
 
@@ -29,7 +29,7 @@ Fehlende Projektlaufzeit oder fehlende notwendige Prüfer blockieren. Abhängigk
 5. Gemeinsame Verhaltensfälle mit tatsächlichen Events, Fokus, Scrollmessung und AX.
 6. Strukturiert berichten; fehlende notwendige Schritte verhindern die entsprechende Freigabe.
 
-Nur ausdrücklich angeforderte Teilprüfungen dürfen ohne vollständige Kette begrenzt erfolgreich heißen. Fehlende notwendige Prüfung niemals als bestandene Prüfung behandeln.
+Nur ausdrücklich angeforderte Teilprüfungen dürfen ohne vollständige Kette begrenzt erfolgreich heissen. Fehlende notwendige Prüfung niemals als bestandene Prüfung behandeln.
 
 ## Aktuellen Browsernachweis erzeugen
 
@@ -40,7 +40,7 @@ Mit der Projektlaufzeit `tools/validation/.venv/bin/python`:
 - `tools/validation/browser_gate.py prepare --run-dir NEUER_ORDNER` bindet exakte Paket-/Hostrevision und aktuelle Prüfer. Für eine andere Kandidatenkopie deren `--package` explizit übergeben; die feste Hostzuordnung ist dadurch nicht erweitert.
 - `serve --run-dir NEUER_ORDNER` startet den eigenen lokalen Collector und erzeugt vier Browser-SDK-Skripte.
 - Eigene Seite an der ausgegebenen URL öffnen, auf `body[data-ready="true"]` warten und die vier `browser-01.js` bis `browser-04.js` nacheinander als BrowserOS-`run` ausführen. Nicht mit Node starten und keine erforderlichen Assertions auslassen.
-- Nach erfolgreichen Operationsreceipts `finalize --run-dir NEUER_ORDNER`; anschließend Helper `validate --browser-run NEUER_ORDNER`. Den eigenen Server danach beenden.
+- Nach erfolgreichen Operationsreceipts `finalize --run-dir NEUER_ORDNER`; anschliessend Helper `validate --browser-run NEUER_ORDNER`. Den eigenen Server danach beenden.
 
 Die Prüfkette akzeptiert nur den explizit übergebenen, frischen, vollständigen und quellen-/prüfergleichen Lauf. Die aktuelle maximale Gültigkeit steht im Browserprofil (derzeit zwei Stunden ab Vorbereitung). Keine alten Captures umbenennen, keinen Zeitstempel zurücksetzen und keinen fehlgeschlagenen Lauf teilweise weiterführen. Nach relevanter Reparatur einen neuen Lauf beginnen.
 
@@ -52,4 +52,4 @@ Für UX-Eignung bzw. Auswahl: [UX-Referenz](ux.md) gezielt laden. Die neuen Tool
 
 ## Aktuelle Bibliotheksprofile
 
-Für die vier aktuell unterstützten Profile gibt es zusätzlich den gezielt ladbaren Repository-Einstieg `tools/web/README.md`: `tools/web/prepare.py --library ID --out NEUER_ORDNER`, `serve.py`, fünf BrowserOS-Skripte und `tools/test.py --browser-run LAUF --out NEUER_ORDNER`. Er erzeugt eigene aktuelle Quellenbindungen und prüft reale Events, Fokus und Scrollgeometrie. Er erweitert **nicht** das historische IP01-Referenzprofil oder `validate --library`; beliebige neue Komponenten bleiben außerhalb seiner Abdeckung. Neue native Profile und Browseradapter benötigen eigene konkrete Gegenfälle.
+Für die vier aktuell unterstützten Profile gibt es zusätzlich den gezielt ladbaren Repository-Einstieg `tools/web/README.md`: `tools/web/prepare.py --library ID --out NEUER_ORDNER`, `serve.py`, fünf BrowserOS-Skripte und `tools/test.py --browser-run LAUF --out NEUER_ORDNER`. Er erzeugt eigene aktuelle Quellenbindungen und prüft reale Events, Fokus und Scrollgeometrie. Er erweitert **nicht** das historische IP01-Referenzprofil oder `validate --library`; beliebige neue Komponenten bleiben ausserhalb seiner Abdeckung. Neue native Profile und Browseradapter benötigen eigene konkrete Gegenfälle.

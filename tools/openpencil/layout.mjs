@@ -68,7 +68,7 @@ export function apply(graph,cases,ids,layout,{title,subtitle,fontFamily,caseThem
   text(card.id,'presentation/caption',STYLE.padding,STYLE.padding,c.width-STYLE.padding*2,STYLE.captionHeight,`${String(i+1).padStart(2,'0')}  ${ids[i]}`,STYLE.typography.captionSize,400,theme.caption);
   graph.reparentNode(node.id,card.id);graph.updateNode(node.id,{x:c.componentX,y:c.componentY});
  });
- text(board.id,'presentation/footer',STYLE.margin,layout.height-STYLE.margin-24,layout.width-STYLE.margin*2,24,`Statisches Design · Originalgröße 1:1 · ${STYLE.version}`,STYLE.typography.footerSize,400,STYLE.colors.muted);
+ text(board.id,'presentation/footer',STYLE.margin,layout.height-STYLE.margin-24,layout.width-STYLE.margin*2,24,`Statisches Design · Originalgrösse 1:1 · ${STYLE.version}`,STYLE.typography.footerSize,400,STYLE.colors.muted);
  for(const id of oldChildren)if(!keep.has(id))graph.deleteNode(id);
  graph.updateNode(page.id,{name:title+' · Übersicht'});return board;
 }

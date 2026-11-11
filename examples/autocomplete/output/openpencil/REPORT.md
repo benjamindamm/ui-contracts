@@ -6,7 +6,7 @@
 
 ## Quellen und Zuordnung
 
-Eingaben ausschließlich aus `components/`; vollständige Dateiliste und konkrete Node-IDs stehen in `verification.json`.
+Eingaben ausschliesslich aus `components/`; vollständige Dateiliste und konkrete Node-IDs stehen in `verification.json`.
 
 - `README.md`, `library.json`, `autocomplete/README.md`, die drei `component.json`: Zielumfang, Komposition, Layerstruktur und benannte Fälle.
 - `autocomplete/interface.json`, `overlay/interface.json`, `scroll-area/interface.json`: Daten, Teile, Eigentümerschaft.
@@ -32,19 +32,19 @@ Jeder Fall besitzt `label`, `input`, `overlay.surface`, `overlay.scroll.viewport
 
 ## Tatsächliche Prüfungen
 
-1. `node examples/autocomplete/output/openpencil/generate.mjs` erfolgreich: binäre Datei gespeichert, anschließend von OpenPencils IORegistry gelesen und alle Seiten materialisiert. Zehn Fallframes und 28 Optionsframes sind nach dem Reimport vorhanden. Die 28 sind je sieben Optionen in ready, active, scroll-end und selected.
+1. `node examples/autocomplete/output/openpencil/generate.mjs` erfolgreich: binäre Datei gespeichert, anschliessend von OpenPencils IORegistry gelesen und alle Seiten materialisiert. Zehn Fallframes und 28 Optionsframes sind nach dem Reimport vorhanden. Die 28 sind je sieben Optionen in ready, active, scroll-end und selected.
 2. CLI-PNG-Export aus der gespeicherten Datei erfolgreich, nicht aus einem allein im Speicher gehaltenen Graphen. Visuell geprüft: Texte vollständig, zehn Fälle getrennt, Hamburg/Zürich aktiv, München deaktiviert, Scroll-Ende korrekt sichtbar, Meldungen unter dem tatsächlich sichtbaren Popup.
-3. Struktur und Maße beim erneuten Einlesen in `verify.mjs` geprüft, einschließlich Editieren eines Textnodes und erneutem FIG-Writer-/Reader-Roundtrip im Speicher.
-4. Öffnen in der installierten Desktop-App versucht. `open -a OpenPencil` wurde angenommen; CLI `documents open ... --json` scheiterte mit „Could not read MCP discovery file“. Anschließende native Fensterprüfung über CUA scheiterte, weil der Mac gesperrt ist und automatische Entsperrung fehlschlug. Ein tatsächlich sichtbares Öffnen in der Desktop-App ist daher **nicht bestätigt**. Der erfolgreiche Original-Reader-Import und PNG-Export ersetzen diesen noch offenen Desktopnachweis nicht.
+3. Struktur und Masse beim erneuten Einlesen in `verify.mjs` geprüft, einschliesslich Editieren eines Textnodes und erneutem FIG-Writer-/Reader-Roundtrip im Speicher.
+4. Öffnen in der installierten Desktop-App versucht. `open -a OpenPencil` wurde angenommen; CLI `documents open ... --json` scheiterte mit „Could not read MCP discovery file“. Anschliessende native Fensterprüfung über CUA scheiterte, weil der Mac gesperrt ist und automatische Entsperrung fehlschlug. Ein tatsächlich sichtbares Öffnen in der Desktop-App ist daher **nicht bestätigt**. Der erfolgreiche Original-Reader-Import und PNG-Export ersetzen diesen noch offenen Desktopnachweis nicht.
 
 ## Lücken, Spannungen und offengelegte Adapterentscheidungen
 
 - Die Definition legt für die einzeiligen Popupmeldungen keinen eigenen CSS-Selektor, keinen Innenabstand und keine vertikale Textposition fest. Dieser Export richtet sie ausdrücklich wie Optionszeilen aus (12px links, 6px oben). Das ist eine offengelegte Adapterentscheidung, keine zusätzlich gefundene Regel. Inputtext steht vertikal mittig; Fontgewicht ist CSS `normal` (400).
 - `:disabled` setzt die Textfarbe des Inputs auf disabled, `::placeholder` aber ausdrücklich auf muted. Der disabled-Fixture hat nur Platzhalter, keinen Querytext; der Export zeigt deshalb muted. Eine gesonderte disabled-Platzhalterfarbe ist nicht definiert.
-- Der README-Satz „die drei unsichtbaren Daten“ stimmt rechnerisch nicht mit den Fixtures und Maßen überein: sieben Zeilen bei fünf sichtbaren ergeben zwei vollständig unsichtbare Zeilen. Der Export folgt den verbindlichen 7 × 32px und 160px und erhält alle sieben.
+- Der README-Satz „die drei unsichtbaren Daten“ stimmt rechnerisch nicht mit den Fixtures und Massen überein: sieben Zeilen bei fünf sichtbaren ergeben zwei vollständig unsichtbare Zeilen. Der Export folgt den verbindlichen 7 × 32px und 160px und erhält alle sieben.
 - Eine plattformspezifische Scrollbar ist weder visuell definiert noch ergänzt. Clipping und statischer Versatz sind vorhanden; dynamisches Scrollen ist nicht Teil des Ziels.
 - Komponentenframes und Teile sind editierbar; es wird kein Variantenset, keine interaktive Combobox und kein laufendes ARIA-/SCXML-Verhalten behauptet.
-- Freie Außenanordnung: drei Spalten, Falltitel, Seitentitel und Hinweis. Innerhalb der Komponente sind keine neuen Icons oder Bedienelemente ergänzt.
+- Freie Aussenanordnung: drei Spalten, Falltitel, Seitentitel und Hinweis. Innerhalb der Komponente sind keine neuen Icons oder Bedienelemente ergänzt.
 
 ## Reproduktion
 
@@ -56,4 +56,4 @@ node examples/autocomplete/output/openpencil/verify.mjs
 node tools/openpencil/node_modules/@open-pencil/cli/bin/openpencil.js export examples/autocomplete/output/openpencil/autocomplete.fig -f png -o examples/autocomplete/output/openpencil/preview.png
 ```
 
-Keine Definition geändert; keine Recherchedateien, Beispiele, frühere Renderings oder Webharnesses als Eingaben gelesen. Alle erzeugten Dateien liegen ausschließlich in diesem Ausgabeordner.
+Keine Definition geändert; keine Recherchedateien, Beispiele, frühere Renderings oder Webharnesses als Eingaben gelesen. Alle erzeugten Dateien liegen ausschliesslich in diesem Ausgabeordner.

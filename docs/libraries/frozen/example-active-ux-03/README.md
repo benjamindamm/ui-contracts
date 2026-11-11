@@ -27,6 +27,6 @@ Ziel dieses Schritts ist ein editierbares Design mit allen benannten Zuständen.
 
 ## Aktiver UX-Stand · 0.3.0
 
-Die in SELECTION-02 untersuchte Suchvariante ist jetzt regulär indexiert. `component.json` verlinkt pro Komponente ihr `ux.json`; `library.json` führt Policy und Schema. Maßgeblich für die neue Auswahl ist der [operative UX-Prüfeinstieg](../../tools/ux/README.md), nicht ein historischer Studienpfad. Profile deklarieren einen Prüfplan; nur aktuelle tatsächlich ausgeführte Quellen-/SCXML-Prüfungen ergeben `verified-limited`. Autocomplete bleibt mit komplexem Invoke-/Hostverhalten zunächst `declared`; vorhandene alte Nachweise werden nicht pauschal übernommen.
+Die in SELECTION-02 untersuchte Suchvariante ist jetzt regulär indexiert. `component.json` verlinkt pro Komponente ihr `ux.json`; `library.json` führt Policy und Schema. Massgeblich für die neue Auswahl ist der [operative UX-Prüfeinstieg](../../tools/ux/README.md), nicht ein historischer Studienpfad. Profile deklarieren einen Prüfplan; nur aktuelle tatsächlich ausgeführte Quellen-/SCXML-Prüfungen ergeben `verified-limited`. Autocomplete bleibt mit komplexem Invoke-/Hostverhalten zunächst `declared`; vorhandene alte Nachweise werden nicht pauschal übernommen.
 
 [UX-Leitlinie mit Adresse und Vorwahl](../../docs/ux/AUTOCOMPLETE.md) · [Übernahme und Grenzen](../../docs/research/analyses/ACTIVE-UX-2026-10-31/README.md). Die freie Adress-Schreibhilfe ist weiterhin eine andere, noch nicht implementierte Variante.

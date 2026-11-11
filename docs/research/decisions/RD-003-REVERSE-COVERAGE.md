@@ -6,7 +6,7 @@
 
 Ein UI-Contracts-Skill routet bedarfsabhängig zu Design-Rückweg, Code-Rückweg und gemeinsamem Draftcheck. Die führenden vier Domänen bleiben unverändert. Ein eigener Coverage-Record ist eine Arbeits-/Nachweiskonvention, keine neue Quelle für Designwerte oder Verhalten und kein fünfter UI-Standard.
 
-Der deterministische Prüfer arbeitet gegen ein ausdrücklich gewähltes, versioniertes Anforderungsprofil. Stabile Kriterien-IDs werden an aktuelle Quellen und konkrete Locators gebunden. Offene oder konfliktbehaftete Entscheidungen, fehlende/alte Belege und erkannte Platzhalter erzeugen blockierende Fragen. Weder Dateivorhandensein noch Autorennotizen schließen eine Frage.
+Der deterministische Prüfer arbeitet gegen ein ausdrücklich gewähltes, versioniertes Anforderungsprofil. Stabile Kriterien-IDs werden an aktuelle Quellen und konkrete Locators gebunden. Offene oder konfliktbehaftete Entscheidungen, fehlende/alte Belege und erkannte Platzhalter erzeugen blockierende Fragen. Weder Dateivorhandensein noch Autorennotizen schliessen eine Frage.
 
 Teil-Drafts dürfen in diesem Arbeitsweg fehlende Domänenbindungen auslassen. Der bestehende strengere Komponenten-/Originalschemaweg wird nicht gelockert. Die Ausgaben unterscheiden `DRAFT_INCOMPLETE`, `COVERAGE_RECORDED` und `BLOCKED`. Auch vollständige Zuordnung bleibt Draft mit notwendigem Bedeutungs- und Zielabgleich; kein automatisches Lifecycle-/Release-Upgrade.
 

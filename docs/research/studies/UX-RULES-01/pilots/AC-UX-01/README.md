@@ -40,7 +40,7 @@ Die dritte Regel ist eine dokumentierte Empfehlung, keine automatisch bewiesene 
 | Erklärte Ausnahme nur für die Empfehlung, mit passender Bindung | compatible; Empfehlung bleibt als excepted sichtbar |
 | Ausnahme soll eine fehlende Fähigkeit erlauben | BLOCKED vor Engineaufruf |
 
-`compatible` bedeutet ausschließlich: kein Widerspruch zu diesen geprüften Fähigkeitsgrenzen; es ist weder „beste Komponente“ noch eine UX-/Accessibility-/Produktfreigabe. Alle drei Einzelergebnisse bleiben erhalten. Die Aggregation gibt invalid-input Vorrang; bekannte Unvereinbarkeit folgt vor unbestimmter Pflicht. Unbekannte Empfehlung wird nicht wie eine unbekannte Fähigkeitsvoraussetzung behandelt.
+`compatible` bedeutet ausschliesslich: kein Widerspruch zu diesen geprüften Fähigkeitsgrenzen; es ist weder „beste Komponente“ noch eine UX-/Accessibility-/Produktfreigabe. Alle drei Einzelergebnisse bleiben erhalten. Die Aggregation gibt invalid-input Vorrang; bekannte Unvereinbarkeit folgt vor unbestimmter Pflicht. Unbekannte Empfehlung wird nicht wie eine unbekannte Fähigkeitsvoraussetzung behandelt.
 
 ## Native Nachverfolgung und Integrität
 

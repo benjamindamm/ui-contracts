@@ -19,7 +19,7 @@ Die angezeigten Zahlen ergeben 100,01 %. Für die Geometrie werden sie durch ihr
 - Drei von D3 berechnete, zusammenhängende Sektoren ohne zusätzliche Achsen-/Legendenvorgaben aus einer Chartoberfläche.
 - Nach SVG-Import und FIG-Roundtrip: **3 getrennte native Sektor-Vektoren**, 3 Vektor-Legendenpunkte und 7 native Textnodes.
 - Mittelpunkt und beide radialen Begrenzungspunkte jedes Sektors passen zur berechneten D3-Geometrie, Toleranz 0,005 px. Ein übereinandergelegter Vollkreis erfüllt dieses Sektorkriterium nicht.
-- Native Vektorflächen unabhängig numerisch vermessen: kubische Konturen mit 1.000 Stützpunkten pro Segment, anschließend Shoelace-Fläche. Maximale relative Abweichung zur analytischen Kreissektorfläche **0,022863 %**, Prüftoleranz 0,1 %. Die Abweichung berücksichtigt die Bézierapproximation der importierten Bögen.
+- Native Vektorflächen unabhängig numerisch vermessen: kubische Konturen mit 1.000 Stützpunkten pro Segment, anschliessend Shoelace-Fläche. Maximale relative Abweichung zur analytischen Kreissektorfläche **0,022863 %**, Prüftoleranz 0,1 %. Die Abweichung berücksichtigt die Bézierapproximation der importierten Bögen.
 - Beschriftungen und Segmentfarben nach erneutem Einlesen geprüft; tatsächliche lokale Inter-TTF gehasht und registriert. Kein Netzwerkzugriff beim Rendern.
 - PNG direkt aus dem erneut eingelesenen FIG gerendert und visuell mit der Zielvorlage verglichen.
 - **15 Regressionstests bestanden.**

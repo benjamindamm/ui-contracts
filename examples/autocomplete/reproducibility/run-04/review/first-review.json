@@ -5455,7 +5455,7 @@
   "limitations": [
     "Statisches Canvas: keine ARIA-/Runtime-/Screenreader-Claims (policy.json#scope, accessibility.rules.json#designTarget)",
     "UEbereinstimmung der beiden FIGs ist kein Korrektheitsnachweis; Korrektheit beruht auf den Soll-/Ist-Vergleichen gegen die Originalquellen",
-    "Stichprobencharakter bei freien Seitenbereichen (Außenanordnung, Titel) - keine Bewertung"
+    "Stichprobencharakter bei freien Seitenbereichen (Aussenanordnung, Titel) - keine Bewertung"
   ],
   "conclusion": "Beide gelieferten FIG-Dateien bestehen die gemeinsame Countercheck-Pipeline (PASS_LIMITED, Exit 0, keine Blocker) und 449 eigenstaendige Reviewer-Readback-Pruefungen je FIG ohne Failures oder Warnings. Erstbewertung: pass (begrenzt, statisch). release: false."
 }

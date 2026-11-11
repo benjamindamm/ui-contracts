@@ -49,7 +49,7 @@ tools/validation/.venv/bin/python tools/validation/browser_gate.py finalize --ru
 tools/validation/.venv/bin/python tools/validation/check.py --browser-run /tmp/ui-contracts-web-new --output /tmp/ip01-web.json
 ```
 
-Anschließend den eigenen lokalen Server beenden. Die Auswertung benötigt keinen weiterlaufenden Server. Sie liest die Rohdaten erneut und wendet die aktuellen Originalschemas, Kriterien und zusätzlichen Rohbeobachtungsprüfungen an. Ein vorher vorhandenes `results.json` wird nicht als Erfolgseingabe vertraut.
+Anschliessend den eigenen lokalen Server beenden. Die Auswertung benötigt keinen weiterlaufenden Server. Sie liest die Rohdaten erneut und wendet die aktuellen Originalschemas, Kriterien und zusätzlichen Rohbeobachtungsprüfungen an. Ein vorher vorhandenes `results.json` wird nicht als Erfolgseingabe vertraut.
 
 ## Sechs Schritte und Freigabe
 
@@ -59,12 +59,12 @@ Anschließend den eigenen lokalen Server beenden. Die Auswertung benötigt keine
 | 2 · Syntax/Originalschemas | Striktes JSON, XML-Wohlgeformtheit, Paketabschluss; Original-CEM-JSON-Schema und loses SCXML-1.0-XSD | Kein vollständiger Originalvalidator für CSS/DTCG/HTML/ARIA/APG. |
 | 3 · Bindungen | Hashes/Revisionen, Zielarten, Invoke-/Zustandsziele, IDs, begrenzte Typen/Defaults/Events, Instanzbezüge, Dimensionen/Aliase und Token-CSS-Beziehungen | Nicht jede TypeScript-/SCXML-Ausdrucksform oder alle Standardsyntax. |
 | 4 · Ownership/Komposition | Quellführung gegen festes Profil, deklarierte Instanzhierarchie, Verbot rekursiver Expansion | Keine allgemeine Ownershipsprache oder generische Runtimeauflösung. |
-| 5 · Aktuelles gemeinsames Verhalten | 20 erhaltene Browserfälle einschließlich öffentlicher Events, Fokus, tatsächlicher Scrollsichtbarkeit, originaler AX-Bäume, Stale-/Fremdinstanz-/Lifecycle-/Fehlerfälle | Ausschließlich der explizit gepinnte Host und dokumentierte Testkontext. |
+| 5 · Aktuelles gemeinsames Verhalten | 20 erhaltene Browserfälle einschliesslich öffentlicher Events, Fokus, tatsächlicher Scrollsichtbarkeit, originaler AX-Bäume, Stale-/Fremdinstanz-/Lifecycle-/Fehlerfälle | Ausschliesslich der explizit gepinnte Host und dokumentierte Testkontext. |
 | 6 · Ergebnis | Stufen, Diagnosen, bestandener Umfang, Warnungen, ungeprüfte Bereiche und eng begrenzte Freigabe | Kein allgemeines Produkt-/Plattform-/AT-Zertifikat. |
 
-Exitcodes: **0** = `PASS_LIMITED` für den gewählten begrenzten Umfang, **1** = `FAIL`, **2** = `BLOCKED`. Fehler stoppen abhängige Fachschritte (`NOT_RUN`); die Berichterstellung läuft auch bei Fehlern. `PASS` an Schritt 6 heißt nur „Bericht erstellt“.
+Exitcodes: **0** = `PASS_LIMITED` für den gewählten begrenzten Umfang, **1** = `FAIL`, **2** = `BLOCKED`. Fehler stoppen abhängige Fachschritte (`NOT_RUN`); die Berichterstellung läuft auch bei Fehlern. `PASS` an Schritt 6 heisst nur „Bericht erstellt“.
 
-**Statisch:** `release:false`. **Erfolgreiche aktuelle Webkette:** `release:true`, aber ausschließlich `releaseScope:exact-pinned-bounded-web-reference-only` und `productionRelease:false`. Dies bestätigt die notwendigen Prüfungen dieses eng definierten Forschungsfalls; die Grenzen des Profils bleiben bestehen.
+**Statisch:** `release:false`. **Erfolgreiche aktuelle Webkette:** `release:true`, aber ausschliesslich `releaseScope:exact-pinned-bounded-web-reference-only` und `productionRelease:false`. Dies bestätigt die notwendigen Prüfungen dieses eng definierten Forschungsfalls; die Grenzen des Profils bleiben bestehen.
 
 Ohne `--browser-run` wird kein automatisch gefundenes oder historisches Resultat verwendet. Die maximale Laufgültigkeit beträgt zwei Stunden ab Vorbereitung; neue Paket-/Hostbytes, Prüfer oder Kriterien machen einen alten Lauf unbrauchbar. Eine Veröffentlichung des damals erfolgreichen Ergebnisberichts verleiht ihm keine zeitlich unbegrenzte aktuelle Gültigkeit.
 
@@ -72,7 +72,7 @@ Ohne `--browser-run` wird kein automatisch gefundenes oder historisches Resultat
 
 [profile.json](profile.json) bestimmt den unterstützten statischen Umfang unabhängig vom Kandidaten. [browser-profile.json](browser-profile.json) bindet die exakte statische Baseline an die festgelegten Host- und Runtimebytes. Ein geändertes, sonst statisch gültiges Paket kann diese Webfreigabe nicht übernehmen. Es fehlt weiterhin ein allgemeiner Generator/Resolver für beliebige Definitionen und Hosts.
 
-Für den aktuellen Lauf wird ausschließlich die Capture-Hülle um Laufkennung und zufällige Challenge ergänzt. Diese Quelländerung wird sichtbar gehasht; die fachlichen Hostregeln bleiben unverändert. [browser_gate.py](browser_gate.py) bindet Request, Host, Checkerfingerprint, erfolgreiche Operationsreceipts, zeitlich geordnete Captures und Kriterien. Falsche Challenge und doppelte Captures werden zurückgewiesen.
+Für den aktuellen Lauf wird ausschliesslich die Capture-Hülle um Laufkennung und zufällige Challenge ergänzt. Diese Quelländerung wird sichtbar gehasht; die fachlichen Hostregeln bleiben unverändert. [browser_gate.py](browser_gate.py) bindet Request, Host, Checkerfingerprint, erfolgreiche Operationsreceipts, zeitlich geordnete Captures und Kriterien. Falsche Challenge und doppelte Captures werden zurückgewiesen.
 
 Die lokale Hash-/Challengekette ist keine unabhängige kryptografische Attestation gegen einen böswilligen lokalen Betreiber. Bibliotheksversionen und übernommene Originalschemahashes werden geprüft; kein unabhängiges Audit jedes installierten Bibliotheksbytes wird behauptet.
 
@@ -97,7 +97,7 @@ tools/validation/.venv/bin/python tools/validation/test_chain.py
 tools/validation/.venv/bin/python tools/validation/test_browser_gate.py --run-dir /tmp/ui-contracts-web-new
 ```
 
-[47 bisherige Gegenfälle](evidence/countercases.json) bleiben Regressionen. [31 Browser-Gegenfälle](evidence/browser-countercases.json) prüfen fehlende/alte/fremde/veränderte Laufdaten, fehlende Prüfer, fehlgeschlagene Operationen, ausgelassene Assertions, fehlerhafte AX-/Fokus-/Scroll-/Event-/Lifecyclewerte und eine abweichende statische Kandidatenkopie. Die Browser-Gegenfälle mutieren ausschließlich temporäre Kopien der aktuellen Belege; sie behaupten keine zusätzlichen Browsererzeugungen. Ein gefälschtes Erfolgs-`results.json` wird ignoriert und aus Rohdaten neu ausgewertet.
+[47 bisherige Gegenfälle](evidence/countercases.json) bleiben Regressionen. [31 Browser-Gegenfälle](evidence/browser-countercases.json) prüfen fehlende/alte/fremde/veränderte Laufdaten, fehlende Prüfer, fehlgeschlagene Operationen, ausgelassene Assertions, fehlerhafte AX-/Fokus-/Scroll-/Event-/Lifecyclewerte und eine abweichende statische Kandidatenkopie. Die Browser-Gegenfälle mutieren ausschliesslich temporäre Kopien der aktuellen Belege; sie behaupten keine zusätzlichen Browsererzeugungen. Ein gefälschtes Erfolgs-`results.json` wird ignoriert und aus Rohdaten neu ausgewertet.
 
 Der bewusst erhaltene Fall `runtime-guard-unchecked` kann weiterhin die statische Teilprüfung bestehen. Die Webfreigabe lässt sich daraus nicht ableiten: Die geänderte Paketrevision besitzt keine freigegebene Hostzuordnung. Dies ist eine ausdrücklich getestete Grenze statt eines vorgetäuschten allgemeinen Behaviorvalidators.
 

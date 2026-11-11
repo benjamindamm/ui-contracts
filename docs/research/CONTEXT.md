@@ -14,10 +14,10 @@ Die visuelle Anforderung wurde präzisiert: verständliche Skalen wie im aktuell
 
 1. CEM und DTCG als vorhandene Teilbeiträge; OpenPencil Behaviour Contracts als weitere Vorarbeit.
 2. OpenUI Specification unter `openuispec.org` und AgentsORG DESIGN als frühe Vergleichskandidaten.
-3. Panda CSS und Google DESIGN.md für Tokens/Varianten; der Nutzer wollte Googles Projekt priorisiert untersuchen. Unternehmensgröße wurde als Präferenz genannt, nicht als Eignungsnachweis bestätigt.
+3. Panda CSS und Google DESIGN.md für Tokens/Varianten; der Nutzer wollte Googles Projekt priorisiert untersuchen. Unternehmensgrösse wurde als Präferenz genannt, nicht als Eignungsnachweis bestätigt.
 4. SCXML, Zag und Ark als Verhaltens-/Interaktionsvorarbeiten; später UXSpec und uSpec im agentischen Umfeld.
 5. Kombination bestehender Substandards, strikte Ownership und Prüfung problematischer Überschneidungen.
-6. Vier einzeln prüfbare Beschreibungen, anschließend Referenz- und Konfliktprüfung. Manifest/Resolver erst nach Nachweis der Teilmodelle.
+6. Vier einzeln prüfbare Beschreibungen, anschliessend Referenz- und Konfliktprüfung. Manifest/Resolver erst nach Nachweis der Teilmodelle.
 
 Das ist eine Entwicklung von Untersuchungshypothesen, keine endgültige Standardauswahl. Insbesondere die zwischenzeitliche Empfehlung von UXSpec als zentralem Gesamtformat wurde später wegen der Überschneidungen wieder eingeschränkt.
 

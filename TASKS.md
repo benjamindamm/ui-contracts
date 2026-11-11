@@ -29,7 +29,7 @@ Stand:25. Oktober2026. **2 offene Nachweise:Google DESIGN.md X06 und OpenUI X06.
 
 ## Offene Kandidatenmatrixnachweise
 
-- [ ] **Google DESIGN.md X06/C483:** Neue belastbare Original-Dokumentdatenmodell-/Schema-/Ergebniszuordnung einschließlich Root/Optionalität. Erschöpfte Config-/Parserproben nicht wiederholen.
+- [ ] **Google DESIGN.md X06/C483:** Neue belastbare Original-Dokumentdatenmodell-/Schema-/Ergebniszuordnung einschliesslich Root/Optionalität. Erschöpfte Config-/Parserproben nicht wiederholen.
 - [ ] **OpenUI X06/C484:** Offizielle kanonische Vorrang-/Synchronisationsregel der widersprüchlichen Originalformen samt gebundenem Prüfpaar. Keinen Typstand selbst zur technischen Wahrheit erklären.
 
 [Genau fehlende Originalinformation und bereits ausgeschöpfte Pfade](docs/research/OPEN-QUESTIONS.md). Keine Autorenanfrage wurde versandt.0 weitere autonom offene Matrixzellen ist kein Nachweis einer fertigen universellen Produktsprache, jeder Kandidatenkombination, vollständiger Produktions-/Lifecycle- oder Crossplattform-/AT-Konformität.
@@ -50,7 +50,7 @@ Die angehakten Punkte sind abgeschlossene Forschungsbeiträge. Die nicht angehak
 - [ ] Allgemeinen deklarativen Runtime-Resolver, vollständige IP-Gates und sämtliche öffentlichen API-/Theme-/Änderungsvarianten abnehmen; der konkrete Hostcode ersetzt diese Nachweise nicht.
 - [ ] Spätere Produktvalidierung und ausführbare Agenten-/Skillübergabe planen.
 
-## Zukunftsperspektive außerhalb dieser Recherche
+## Zukunftsperspektive ausserhalb dieser Recherche
 
 iOS, Android und weitere native Ziele sind nach Nutzerfestlegung Zukunftsmusik. Sie sind keine offene Testpflicht und keine Abschlussbedingung der aktuellen Recherche. Echte Assistenztechnik-/IME- und weitergehende Produktnachweise sind bei späteren entsprechenden Zusagen getrennt einzuplanen.
 
@@ -77,23 +77,23 @@ Die abgeschlossene Recherche wird nicht umgeschrieben. Komponentenbeschreibungen
 - [x] Autocomplete mit getrennten Interface-/Visual-/Behavior-/Accessibilityquellen und wiederverwendbaren Overlay-/ScrollArea-Definitionen anlegen.
 - [x] Den Definitionsstand vor dem unabhängigen Export einfrieren und Originalschema-Vorläufe dokumentieren.
 - [x] Ein Agent ohne übernommenen Gesprächskontext erzeugt nur aus der Definition ein editierbares OpenPencil-Design.
-- [x] Originaldatei, Zustände und Maße unabhängig gegen den eingefrorenen Stand prüfen; Lücken erhalten. [Ergebnis](examples/autocomplete/review/REPORT.md): zehn Fälle, 164 Originalreader-Knoten; strukturelle Prüfungen erfüllt.
+- [x] Originaldatei, Zustände und Masse unabhängig gegen den eingefrorenen Stand prüfen; Lücken erhalten. [Ergebnis](examples/autocomplete/review/REPORT.md): zehn Fälle, 164 Originalreader-Knoten; strukturelle Prüfungen erfüllt.
 - [ ] Popup-Meldungspadding und den Zeilenzählfehler ausdrücklich in einer neuen Definitionsrevision klären. Erste Version unverändert erhalten.
 - [ ] Sichtbare Desktop-GUI-Öffnung bei verfügbarem entsperrtem Gerät nachholen; Originalparser-Reimport und PNG-Export bereits erfolgt.
-- [ ] Anschließend HTML-/TypeScript-Ausgabe aus demselben Definitionsstand erstellen und gemeinsame Änderungen vergleichen.
+- [ ] Anschliessend HTML-/TypeScript-Ausgabe aus demselben Definitionsstand erstellen und gemeinsame Änderungen vergleichen.
 
 Erster OpenPencil-Umfang: editierbares Design, ausdrücklich keine interaktive Combobox-Preview.
 
 ## Studie AC-R01
 
-- [x] Zwei Builds mit leerem Gesprächskontext und unabhängige Prüfung gegen vorab gespeicherte Kriterien abschließen.
+- [x] Zwei Builds mit leerem Gesprächskontext und unabhängige Prüfung gegen vorab gespeicherte Kriterien abschliessen.
 - [x] [Studie, Originalartefakte und Rohmessungen](docs/research/studies/AC-R01/README.md) sichern: gemessene Paarübereinstimmung, beide FAIL wegen Platzhalterfarbe.
-- [ ] Eine mögliche neue Definitionsversion und Folgestudie separat beschließen; eingefrorene Eingabe und Ausgaben bleiben unverändert.
+- [ ] Eine mögliche neue Definitionsversion und Folgestudie separat beschliessen; eingefrorene Eingabe und Ausgaben bleiben unverändert.
 
 ## Gemeinsame Prüfkette und lokaler Agent-Skill
 
 - [x] Vorhandene Original- und Zusatzprüfer für das ausgewählte IP-01-Profil [inventarisieren](tools/validation/inventory.json).
-- [x] Reproduzierbaren statischen Prüfeinstieg mit Originalschema-, Typ-/Referenz-/Einheiten-/Event-/Instanz- und statischer Kompositionsprüfung bereitstellen; positive und negative Fälle einschließlich fehlender Prüfer ausführen.
+- [x] Reproduzierbaren statischen Prüfeinstieg mit Originalschema-, Typ-/Referenz-/Einheiten-/Event-/Instanz- und statischer Kompositionsprüfung bereitstellen; positive und negative Fälle einschliesslich fehlender Prüfer ausführen.
 - [x] Freigabegrenze erhalten: statisch `PASS_LIMITED`/`release:false`; Web ohne aktuellen Lauf `BLOCKED`; mit aktuellem bestandenem Lauf nur begrenzte Freigabe für die exakte Forschungsreferenz, keine Produktionsfreigabe.
 - [x] Aktuellen Browserprüfer mit fester Quellen-/Hostbindung integrieren und alle 20 bestehenden Events-/Fokus-/Scroll-/AX-/Lifecyclefälle neu ausführen; 31 zusätzliche Browser-Gegenfälle und 47 Regressionen bestehen. Alte/fremde/fehlende Ergebnisse blockieren.
 - [x] [Agent-Skill `$ui-contracts`](docs/skills/README.md) mit Projektquelle und lokaler Installation erstellen; Strukturprüfung und 18 echte Funktionsfälle bestanden. Neue/geänderte Komponenten können keine feste Webreferenzfreigabe übernehmen. Keine Veröffentlichung.
@@ -102,7 +102,7 @@ Erster OpenPencil-Umfang: editierbares Design, ausdrücklich keine interaktive C
 
 ## RD-001 · Gestufte Erzeugung und Skalierung · 29. Oktober 2026
 
-- [x] Bisherigen Stand einschließlich run-02/03 und externer Prüfverbesserungen lokal sichern: Commit `58e4c88`.
+- [x] Bisherigen Stand einschliesslich run-02/03 und externer Prüfverbesserungen lokal sichern: Commit `58e4c88`.
 - [x] [Forschungsentscheid](docs/research/decisions/RD-001-STAGED-GENERATION.md) festhalten: Teilverträge, explizite Komposition, persistierte Übergaben und unabhängige Reparaturrunden.
 - [x] [Operatives Pilotvorgehen](docs/research/protocols/STAGED-GENERATION-PILOT.md) ausarbeiten: Kontroll-/Stufenarm, vier Erstlieferungen, maximal zwei Reparaturrunden, gleiche Hilfsmittel/Prüfpolicy, Kontext-/Abbruchprotokoll und getrennte Erst-/Endbewertung.
 - [x] Wiederverwendbare Skillverbesserung umsetzen: fokussierte Rollen-Karten, versionierte Übergaben, gezieltes Quellen-Nachladen, geschützte Erstbewertung und getesteter Kontext-/Integritätshelper. [Einstieg](skills/ui-contracts/references/workflow.md).
@@ -127,7 +127,7 @@ UX-RULES-01-Folgeblock: Native DMN-XML-Ausführung und Pflicht-/Empfehlungs-/Aus
 
 - [x] SELECTION-01: Select/Input definieren, zwei frische Builder prüfen, Erstfehler und separate Reparatur erhalten; begrenzter [Prüfbericht](docs/research/studies/UX-RULES-01/studies/SELECTION-01/review/REVIEW.md).
 - [x] Nutzeranforderungen zu freier Schreibhilfe vs. festen Werten in [UX-Dokumentation](docs/ux/AUTOCOMPLETE.md) aufnehmen.
-- [x] [SELECTION-02](docs/research/studies/UX-RULES-01/studies/SELECTION-02/README.md) abschließen: erwartete Wahl, 36/37 Erstchecks, Fokusfehler erhalten und separat repariert (10/10); keine rückwirkende Umwertung der ersten Studie.
+- [x] [SELECTION-02](docs/research/studies/UX-RULES-01/studies/SELECTION-02/README.md) abschliessen: erwartete Wahl, 36/37 Erstchecks, Fokusfehler erhalten und separat repariert (10/10); keine rückwirkende Umwertung der ersten Studie.
 
 ## Aktive UX-Revision und Absicherung · 31. Oktober 2026
 
@@ -136,7 +136,7 @@ UX-RULES-01-Folgeblock: Native DMN-XML-Ausführung und Pflicht-/Empfehlungs-/Aus
 - [x] Mindestprüfung für Quellen, Zielarten, Identitäten, Zustandsziele, Komposition und Token-Aliase ergänzen; Schema-FAIL vor Zusatzblockierung erhalten.
 - [x] Operativen UX-Einstieg und gezieltes Skill-Nachladen mit kleinem Toolkontext bereitstellen.
 - [x] [Paket 3](docs/research/analyses/WEB-RUNTIME-2026-10-31/README.md): reproduzierbare Runtime, gemeinsamer Test-/CI-Einstieg und aktuelle Browserprüfung der vier unterstützten Profile; begrenzt, kein allgemeiner Generator.
-- [x] Paket 4: gemeinsame Auswahl-/Übergabeformate, schlanke Skill-Einstiege und abschließenden Gesamtabgleich geprüft. Ein gestufter Modellvergleich bleibt gemäß RD-002 optional.
+- [x] Paket 4: gemeinsame Auswahl-/Übergabeformate, schlanke Skill-Einstiege und abschliessenden Gesamtabgleich geprüft. Ein gestufter Modellvergleich bleibt gemäss RD-002 optional.
 
 [Umsetzung, neue Belege und Restgrenzen](docs/research/analyses/ACTIVE-UX-2026-10-31/README.md). Die ursprünglichen Studien/Auditbefunde bleiben als datierte Ausgangsstände erhalten.
 

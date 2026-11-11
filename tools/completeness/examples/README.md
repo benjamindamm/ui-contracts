@@ -1,10 +1,10 @@
 # Nachvollziehbare Coveragefälle
 
-Eigene synthetische Bibliothek unter `libraries/demo/`, ausschließlich für den Vollständigkeitscheck. Die Quellen sind absichtlich klein und kein ausgereifter Select: Beispielsweise fehlt eine vollständige Membership-/Fokuslogik. Auch `mapped.json` ist nur ein durchgehend belegter Record, kein korrekter vollständiger Vertrag.
+Eigene synthetische Bibliothek unter `libraries/demo/`, ausschliesslich für den Vollständigkeitscheck. Die Quellen sind absichtlich klein und kein ausgereifter Select: Beispielsweise fehlt eine vollständige Membership-/Fokuslogik. Auch `mapped.json` ist nur ein durchgehend belegter Record, kein korrekter vollständiger Vertrag.
 
 Die Rohbeispiele unter `inputs/` sind ein künstlicher Designbeobachtungsauszug und eine kleine TypeScript-Quelle. Ihre Übertragung in Contracts ist manuell vorbereitete Testeingabe, kein bewiesener automatischer Import. Auch die abgeleiteten Contracts vereinfachen und ergänzen Aspekte; die Coverage kann deren semantische Gleichwertigkeit nicht bestätigen.
 
-1. **Designimport:** `design-import.json` ordnet nur die beiden visuellen Fragen zu. Ergebnis: neun offene Fragen, darunter BEH-002 (Bestätigung), BEH-003 (Escape) und A11Y-002 (zugänglicher Name). Vorhandene andere Quelldateien schließen die ausdrücklich offenen Fragen nicht automatisch.
+1. **Designimport:** `design-import.json` ordnet nur die beiden visuellen Fragen zu. Ergebnis: neun offene Fragen, darunter BEH-002 (Bestätigung), BEH-003 (Escape) und A11Y-002 (zugänglicher Name). Vorhandene andere Quelldateien schliessen die ausdrücklich offenen Fragen nicht automatisch.
 2. **Konflikt:** `conflict.json` weist Escape als widersprüchlich aus. Ergebnis: eine blockierende Frage BEH-003, keine automatische Wahl zwischen Aussagen.
 3. **Durchgehend zugeordnet:** `mapped.json` bindet alle elf Kriterien. Ergebnis: `COVERAGE_RECORDED`; Komponente bleibt Draft, fachliche und Zielprüfung bleiben erforderlich.
 4. **Echter Teil-Draft:** `components/design-only/component.json` hat keine Interface-/Verhaltens-/Semantikdateien. `design-only.json` ist strukturell ein gültiger all-open Coverage-Record mit elf offenen Fragen. Keine Dummy-SCXML wurde angelegt.

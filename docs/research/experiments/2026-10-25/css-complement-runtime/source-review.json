@@ -6,7 +6,7 @@
     "bounded_review": [
       "Editable Combobox mit Listboxpopup als ausdrücklicher endlicher Forschungsfall.",
       "ArrowDown kann das Popup öffnen; nachfolgende Navigation bewegt die aktive Option.",
-      "Escape schließt das Popup, Enter übernimmt die aktive vorgeschlagene Auswahl.",
+      "Escape schliesst das Popup, Enter übernimmt die aktive vorgeschlagene Auswahl.",
       "Bei dieser Listboxvariante bleibt der DOM-Fokus im Input; aria-activedescendant adressiert die aktive Option.",
       "Inputrolle, kontrolliertes Popup, getrennt wahrnehmbarer Name und Wert sind eigene semantische Aussagen."
     ],

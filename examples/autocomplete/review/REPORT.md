@@ -1,10 +1,10 @@
 # Unabhängige Prüfung des ersten Definitions-Proofs
 
-Stand: 25. Oktober 2026. Der Bibliothekseintrag ist angelegt. Ein neuer Agent erhielt **keinen übernommenen Gesprächsverlauf** (`fork_turns: none`) und ausschließlich den Auftrag, aus components/ ein editierbares OpenPencil-Dokument zu bauen. Das Ergebnis ist ein erster Cold-Context-Autorenproof, kein bereits allgemeiner Compiler und noch kein Zwei-Ziel-Vergleich.
+Stand: 25. Oktober 2026. Der Bibliothekseintrag ist angelegt. Ein neuer Agent erhielt **keinen übernommenen Gesprächsverlauf** (`fork_turns: none`) und ausschliesslich den Auftrag, aus components/ ein editierbares OpenPencil-Dokument zu bauen. Das Ergebnis ist ein erster Cold-Context-Autorenproof, kein bereits allgemeiner Compiler und noch kein Zwei-Ziel-Vergleich.
 
 ## Eingabegrenze
 
-Der erlaubte fachliche Input war ausschließlich components/. Normale Original-OpenPencil-Dokumentation und die gepinnten Originalwerkzeuge unter tools/openpencil/ waren technische Hilfsmittel. Rechercheordner, frühere Bilder, Webharnesses, andere Beispiele und diese Reviewdateien waren im Auftrag ausdrücklich ausgeschlossen. Der Kontext wurde beim Agentenstart nicht übernommen. Die Dateizugriffsgrenze war eine Auftragsvorgabe, keine zusätzlich eingerichtete Dateisystemsandbox.
+Der erlaubte fachliche Input war ausschliesslich components/. Normale Original-OpenPencil-Dokumentation und die gepinnten Originalwerkzeuge unter tools/openpencil/ waren technische Hilfsmittel. Rechercheordner, frühere Bilder, Webharnesses, andere Beispiele und diese Reviewdateien waren im Auftrag ausdrücklich ausgeschlossen. Der Kontext wurde beim Agentenstart nicht übernommen. Die Dateizugriffsgrenze war eine Auftragsvorgabe, keine zusätzlich eingerichtete Dateisystemsandbox.
 
 [definition-baseline.json](definition-baseline.json) enthält den vor Agentenstart eingefrorenen Hash aller 22 Definitionsdateien und sieben erfolgreiche Original-CEM-/SCXML-Schema-Vorläufe. Nach Abschluss sind sämtliche Dateien bytegleich geblieben. Der Ausgangsstand ist deshalb nicht nachträglich passend zum Ergebnis verändert worden.
 
@@ -12,9 +12,9 @@ Der erlaubte fachliche Input war ausschließlich components/. Normale Original-O
 
 Der Elternagent hat die erzeugte binäre [autocomplete.fig](../output/openpencil/autocomplete.fig) erneut mit dem Original-OpenPencil-Reader eingelesen, ohne die Aussagen des Generierungsskripts als Beweis zu übernehmen. [actual-graph.json](actual-graph.json) enthält die daraus gelesenen Knoten. [independent-results.json](independent-results.json) enthält die Prüfung gegen die eingefrorenen Tokens, Regeln und Stories.
 
-Alle zehn Fälle sind vorhanden. Geprüft wurden unter anderem 320px Breite, 44px Inputhöhe, 8px Ankerabstand, Zeilen-/Viewportmaße, Statusposition und genaue Texte, erhaltene editierbare Optionen, deaktivierte/aktive Zuordnungen sowie die tatsächlich innerhalb des geclippten Viewports liegende aktive Option. Der scroll-end-Fall enthält alle sieben Optionen und zeigt Zürich durch einen Versatz von 64px. Aktive Füllfarbe stammt aus dem Token. Alle strukturellen Prüfaussagen sind erfüllt; 164 Knoten wurden aus der Originaldatei gelesen. Die gespeicherte PNG-Vorschau wurde zusätzlich visuell geprüft.
+Alle zehn Fälle sind vorhanden. Geprüft wurden unter anderem 320px Breite, 44px Inputhöhe, 8px Ankerabstand, Zeilen-/Viewportmasse, Statusposition und genaue Texte, erhaltene editierbare Optionen, deaktivierte/aktive Zuordnungen sowie die tatsächlich innerhalb des geclippten Viewports liegende aktive Option. Der scroll-end-Fall enthält alle sieben Optionen und zeigt Zürich durch einen Versatz von 64px. Aktive Füllfarbe stammt aus dem Token. Alle strukturellen Prüfaussagen sind erfüllt; 164 Knoten wurden aus der Originaldatei gelesen. Die gespeicherte PNG-Vorschau wurde zusätzlich visuell geprüft.
 
-Der Exportagent hat außerdem eine Textänderung mit erneutem Original-Writer-/Reader-Roundtrip geprüft. Das ist von der unabhängigen strukturellen Nachprüfung getrennt im [Exportbericht](../output/openpencil/REPORT.md) dokumentiert.
+Der Exportagent hat ausserdem eine Textänderung mit erneutem Original-Writer-/Reader-Roundtrip geprüft. Das ist von der unabhängigen strukturellen Nachprüfung getrennt im [Exportbericht](../output/openpencil/REPORT.md) dokumentiert.
 
 ## Was dieser Versuch aufgedeckt hat
 

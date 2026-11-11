@@ -19,7 +19,7 @@
  *   7. Selbstprüfungen (erwartet vs. tatsächlich) in checks.json schreiben.
  *   8. source-sha256.json mit SHA-256 aller Definitionsdateien schreiben.
  *
- * Es werden ausschließlich Dateien in diesem Ordner geschrieben.
+ * Es werden ausschliesslich Dateien in diesem Ordner geschrieben.
  */
 
 import { createHash } from 'node:crypto'
@@ -567,7 +567,7 @@ for (const spec of specs) {
   const expPos = { x: MARGIN + (specs.indexOf(spec) % COLS) * (spec.w + GAP), y: CASE_START_Y + Math.floor(specs.indexOf(spec) / COLS) * (ROW_H + GAP) }
   check(
     `${prefix}.frame`,
-    'Fall-Frame: Größe und Position',
+    'Fall-Frame: Grösse und Position',
     { w: spec.w, h: spec.caseH, x: expPos.x, y: expPos.y },
     { w: root.width, h: root.height, x: root.x, y: root.y },
     root.width === spec.w && root.height === spec.caseH && root.x === expPos.x && root.y === expPos.y
@@ -619,7 +619,7 @@ for (const spec of specs) {
     const shadow = surface?.effects?.find((e) => e.type === 'DROP_SHADOW')
     check(
       `${prefix}.surface`,
-      'Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten',
+      'Overlayfläche: Position (Inputende + gap), Grösse, Radius, Füllung, Schatten',
       { x: 0, y: spec.popupY, w: spec.w, h: spec.viewportH, radius: V.surface.radius, fill: colorJson(V.surface.bg), shadow: { x: V.surface.shadow.offset.x, y: V.surface.shadow.offset.y, radius: V.surface.shadow.radius, color: colorJson(V.surface.shadow.color) } },
       surface && { x: surface.x, y: surface.y, w: surface.width, h: surface.height, radius: surface.cornerRadius, fill: surface.fills[0] ? colorJson(surface.fills[0].color) : null, shadow: shadow ? { x: shadow.offset?.x, y: shadow.offset?.y, radius: shadow.radius, color: colorJson(shadow.color) } : null },
       surface &&
@@ -639,7 +639,7 @@ for (const spec of specs) {
     const viewport = surface ? childByName(surface, AN.viewport) : null
     check(
       `${prefix}.viewport`,
-      'Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile',
+      'Scrollviewport: Clipping aktiv, Grösse min(n × rowHeight, maxHeight) bzw. eine Zeile',
       { clips: true, w: spec.w, h: spec.viewportH },
       viewport && { clips: viewport.clipsContent, w: viewport.width, h: viewport.height },
       viewport && viewport.clipsContent === true && viewport.width === spec.w && viewport.height === spec.viewportH
@@ -648,7 +648,7 @@ for (const spec of specs) {
     const content = viewport ? childByName(viewport, AN.content) : null
     check(
       `${prefix}.content`,
-      'Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe',
+      'Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Grösse',
       { x: 0, y: -spec.offset, w: spec.w, h: spec.contentH },
       content && { x: content.x, y: content.y, w: content.width, h: content.height },
       content && content.x === 0 && content.y === -spec.offset && content.width === spec.w && content.height === spec.contentH

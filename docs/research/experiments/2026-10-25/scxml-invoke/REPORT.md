@@ -43,7 +43,7 @@ Originalpaket und Lock aus dem benachbarten scxml-runtime/tool verwenden. run.cj
 
 ## Ergänzung: eigener begrenzter Invokeradapter
 
-Nach Erhalt des Originalfehlers wurden sechs eigene Adapterbedingungen vor Ausführung in adapter-cases.json gespeichert. Die ursprünglichen Erwartungen bleiben gleich; ein anderer Ausführungspfad ist jeweils ausdrücklich benannt. isolated-invoker.cjs nutzt die dokumentierte invokers-Option, liest ausschließlich dieselbe kontrollierte child.scxml und ruft je Kind die originalen documentStringToModel-/prepare-/Statechart-APIs auf. Kein gemeinsamer Modellcache, kein geerbter Ausführungskontext; Eingaben werden über die ursprüngliche params-Option übertragen. Native send-/Parent-/Cancel-Pfade bleiben erhalten.
+Nach Erhalt des Originalfehlers wurden sechs eigene Adapterbedingungen vor Ausführung in adapter-cases.json gespeichert. Die ursprünglichen Erwartungen bleiben gleich; ein anderer Ausführungspfad ist jeweils ausdrücklich benannt. isolated-invoker.cjs nutzt die dokumentierte invokers-Option, liest ausschliesslich dieselbe kontrollierte child.scxml und ruft je Kind die originalen documentStringToModel-/prepare-/Statechart-APIs auf. Kein gemeinsamer Modellcache, kein geerbter Ausführungskontext; Eingaben werden über die ursprüngliche params-Option übertragen. Native send-/Parent-/Cancel-Pfade bleiben erhalten.
 
 **Alle sechs Adaptererwartungen erfüllt:** owner A/B unabhängig, SCROLL A verändert nur A, CLOSE beendet nur A, erneutes OPEN erzeugt unabhängige Anfangsdaten, Parentcancel beendet B. Gleiche Child-URI und bytegleiche Eltern-/Kindquellen wie im ursprünglichen Lauf. run-adapter.cjs endet mit Status 0. Die ursprünglichen drei Verletzungen werden dadurch weder geändert noch nachträglich als Erfolg gezählt.
 

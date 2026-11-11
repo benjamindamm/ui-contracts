@@ -2,8 +2,8 @@
 
 Die Skripte sind zusätzliche Forschungswerkzeuge, keine Originalvalidatoren der Kandidaten und keine Produktimplementierung. Quellen werden unverändert als Eingabe verwendet. Die vollständigen Originaldateien und installierten Pakete sind nicht Bestandteil dieser Dokumentationskopie.
 
-1. Die drei exakten Adressen in `source-manifest.json` im Browser öffnen und die Quelltexte als UTF-8 unter den dort genannten `sources/`-Namen sichern. Die aufgezeichneten Hashes beziehen sich auf den aus dem gespeicherten vollständigen Browserauszug extrahierten Codeblock; zusätzliche abschließende Zeilenumbrüche können den Text-Hash ändern. Inhaltliche Abweichungen zuerst klären. `style-map.mts` ist eine Umbenennung des originalen style-map.ts für Nodes Modulmodus; der Inhalt ist unverändert.
-2. Python 3.12.14, Node 24.22.1 und die festgehaltenen Pakete ausschließlich in einem isolierten Arbeitsordner verwenden. Vollständige Paketstände stehen in den Ergebnissen; `typescript-package-lock.json` bindet das TypeScript-Paket.
+1. Die drei exakten Adressen in `source-manifest.json` im Browser öffnen und die Quelltexte als UTF-8 unter den dort genannten `sources/`-Namen sichern. Die aufgezeichneten Hashes beziehen sich auf den aus dem gespeicherten vollständigen Browserauszug extrahierten Codeblock; zusätzliche abschliessende Zeilenumbrüche können den Text-Hash ändern. Inhaltliche Abweichungen zuerst klären. `style-map.mts` ist eine Umbenennung des originalen style-map.ts für Nodes Modulmodus; der Inhalt ist unverändert.
+2. Python 3.12.14, Node 24.22.1 und die festgehaltenen Pakete ausschliesslich in einem isolierten Arbeitsordner verwenden. Vollständige Paketstände stehen in den Ergebnissen; `typescript-package-lock.json` bindet das TypeScript-Paket.
 3. Aus diesem Ordner ausführen:
 
 ```sh

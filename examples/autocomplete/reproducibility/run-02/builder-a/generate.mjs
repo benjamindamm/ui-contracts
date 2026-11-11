@@ -7,7 +7,7 @@
  *   node examples/autocomplete/reproducibility/run-02/builder-a/generate.mjs
  *
  * Erzeugt in diesem Ordner: autocomplete.fig, preview.png, checks.json, source-sha256.json
- * Keine Netzwerkzugriffe. Schreibt ausschließlich in den eigenen Ausgabeordner.
+ * Keine Netzwerkzugriffe. Schreibt ausschliesslich in den eigenen Ausgabeordner.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -308,7 +308,7 @@ const figBytes = stabilizeFig(exported)
 fs.writeFileSync(path.join(OUT, 'autocomplete.fig'), figBytes)
 
 /* ------------------------------------------------------- Rücklesen + Prüfen */
-// Rückleseprüfung ausschließlich über die geschriebene Datei (Originalreader).
+// Rückleseprüfung ausschliesslich über die geschriebene Datei (Originalreader).
 const figOnDisk = fs.readFileSync(path.join(OUT, 'autocomplete.fig'))
 const parsed = await parseFigFile(
   figOnDisk.buffer.slice(figOnDisk.byteOffset, figOnDisk.byteOffset + figOnDisk.byteLength),

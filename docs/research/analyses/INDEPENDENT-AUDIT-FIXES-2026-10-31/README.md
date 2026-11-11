@@ -12,7 +12,7 @@ Regression: `tools/libraries/test_check.py` prüft fehlende Ziele in Objekten un
 
 ## IA-02 · aktive Metadaten korrigiert
 
-`libraries/example/library.json` ist jetzt Version **0.4.1**. Der Webeintrag benennt die vier vorhandenen begrenzten Profile und verweist auf `tools/web/README.md`; allgemeine HTML-/TypeScript-Generierung bleibt ausdrücklich außerhalb des Nachweises. Komponenten und ihre Definitionen wurden nicht verändert. Die vorherigen Indexbytes sind als [library-0.4.0.json](library-0.4.0.json) erhalten; bestehende eingefrorene Bibliotheken/Studien bleiben unverändert. Durch den geänderten Index entsteht absichtlich eine neue Bibliotheksrevision; frühere Receipts gelten weiterhin ausschließlich für ihre alten Quellenbindungen und wurden nicht neu gebunden.
+`libraries/example/library.json` ist jetzt Version **0.4.1**. Der Webeintrag benennt die vier vorhandenen begrenzten Profile und verweist auf `tools/web/README.md`; allgemeine HTML-/TypeScript-Generierung bleibt ausdrücklich ausserhalb des Nachweises. Komponenten und ihre Definitionen wurden nicht verändert. Die vorherigen Indexbytes sind als [library-0.4.0.json](library-0.4.0.json) erhalten; bestehende eingefrorene Bibliotheken/Studien bleiben unverändert. Durch den geänderten Index entsteht absichtlich eine neue Bibliotheksrevision; frühere Receipts gelten weiterhin ausschliesslich für ihre alten Quellenbindungen und wurden nicht neu gebunden.
 
 ## Prüfungen und Grenzen
 

@@ -1,6 +1,6 @@
 # Archiv der ausführlichen README
 
-**Historische Momentaufnahme vom 25. Oktober 2026, vor der redaktionellen Neuordnung.** Der folgende Text ist inhaltlich vollständig erhalten; relative Verweise wurden an dieses Verzeichnis angepasst. Frühere Zwischenzahlen und Aussagen über damals noch nicht ausgeführte Prüfungen beschreiben ihre jeweilige Forschungsphase. Maßgeblich sind die [heutige README](../../../README.md), der [Rechercheabschluss](../RESEARCH-CLOSEOUT.md) und der [aktuelle Status](../CURRENT-STATUS.md).
+**Historische Momentaufnahme vom 25. Oktober 2026, vor der redaktionellen Neuordnung.** Der folgende Text ist inhaltlich vollständig erhalten; relative Verweise wurden an dieses Verzeichnis angepasst. Frühere Zwischenzahlen und Aussagen über damals noch nicht ausgeführte Prüfungen beschreiben ihre jeweilige Forschungsphase. Massgeblich sind die [heutige README](../../../README.md), der [Rechercheabschluss](../RESEARCH-CLOSEOUT.md) und der [aktuelle Status](../CURRENT-STATUS.md).
 
 ---
 
@@ -72,16 +72,16 @@ flowchart TB
 
 Eine Beschreibung soll präzise genug sein, dass Agenten die fachlichen Regeln nicht aus Screenshots, Quellcode oder schwammigem Freitext erraten müssen. Dazu gehören typisierte Properties und Ereignisse, formale visuelle Regeln, Tokens, Varianten, Themes, Zustände, Bedingungen, Aktionen, Fokus und zugängliche Rückmeldungen.
 
-Bestehende Fachmodelle sollen nach Möglichkeit erhalten und mit ihren eigenen Schemata beziehungsweise Werkzeugen geprüft werden. Ein neuer Integrationsvertrag ist zulässig, wenn er nachgewiesene Lücken schließt; er soll vorhandene Modelle nicht unnötig nachbauen. Damit wollen wir zusätzliche Pflege und spätere Umbauten beim Fortschritt der Substandards begrenzen.
+Bestehende Fachmodelle sollen nach Möglichkeit erhalten und mit ihren eigenen Schemata beziehungsweise Werkzeugen geprüft werden. Ein neuer Integrationsvertrag ist zulässig, wenn er nachgewiesene Lücken schliesst; er soll vorhandene Modelle nicht unnötig nachbauen. Damit wollen wir zusätzliche Pflege und spätere Umbauten beim Fortschritt der Substandards begrenzen.
 
-Eine Beispielkomponente veranschaulicht die Anforderungen. Sie ist weder das Produkt dieses Projekts noch der Maßstab, auf den alle anderen Komponenten reduziert werden. Im ursprünglichen Gespräch diente ein Autocomplete dazu, relative Geometrie, begrenzte Listen, Navigation und dynamische Rückmeldungen zu erklären. Acht Pixel Abstand oder fünf sichtbare Einträge sind **Beispielwerte**, keine allgemeinen Produktpflichten.
+Eine Beispielkomponente veranschaulicht die Anforderungen. Sie ist weder das Produkt dieses Projekts noch der Massstab, auf den alle anderen Komponenten reduziert werden. Im ursprünglichen Gespräch diente ein Autocomplete dazu, relative Geometrie, begrenzte Listen, Navigation und dynamische Rückmeldungen zu erklären. Acht Pixel Abstand oder fünf sichtbare Einträge sind **Beispielwerte**, keine allgemeinen Produktpflichten.
 
 ## Vier getrennte Domänen
 
 | Domäne | Führende Informationen | Verbindung zu den anderen Domänen |
 | --- | --- | --- |
 | Technische Schnittstelle | Öffentliche Inputs/Properties, Typen, Outputs, Ereignisse und Payloads; benannte Teile | Verhalten löst fachliche Aktionen aus; die öffentliche Signatur wird hier festgelegt |
-| Visuelles Design | Typisierte Werte, Tokens, Layoutbeziehungen, Größen, Overflow, Varianten, Themes | Visualisiert referenzierte Zustände; definiert deren Eintritt nicht unabhängig neu |
+| Visuelles Design | Typisierte Werte, Tokens, Layoutbeziehungen, Grössen, Overflow, Varianten, Themes | Visualisiert referenzierte Zustände; definiert deren Eintritt nicht unabhängig neu |
 | UX-Verhalten | Zustände, Ereignisse, Übergänge, Guards, Aktionen und Interaktionsregeln | Bindet Eingaben und Zustandsänderungen an referenzierte Teile und öffentliche Ereignisse |
 | Accessibility | Semantik, zugängliche Namen/Beziehungen, Fokus-/Bedienanforderungen und Rückmeldungen | Stellt Anforderungen an Verhalten und Darstellung; Produktvarianten bleiben ausdrücklich gewählt |
 
@@ -136,7 +136,7 @@ Ein gemeinsames Manifest, Resolver und Validator wurden als mögliche Integratio
 
 ## Langfristiges Nutzungsziel und spezialisierte Skills
 
-**Festgehalten am 24. Oktober 2026:** UI Contracts soll später produktiv genutzt werden. Darauf sollen spezialisierte Skills für technische Schnittstelle, visuelles Design, UX-Verhalten und Accessibility aufbauen. Jeder Skill soll einen klaren Verantwortungsbereich erhalten und die vereinbarten Referenzen sowie Ownership-Regeln respektieren. Ob diese Einheiten „Domänen“ oder „Bereiche“ heißen, bleibt offen.
+**Festgehalten am 24. Oktober 2026:** UI Contracts soll später produktiv genutzt werden. Darauf sollen spezialisierte Skills für technische Schnittstelle, visuelles Design, UX-Verhalten und Accessibility aufbauen. Jeder Skill soll einen klaren Verantwortungsbereich erhalten und die vereinbarten Referenzen sowie Ownership-Regeln respektieren. Ob diese Einheiten „Domänen“ oder „Bereiche“ heissen, bleibt offen.
 
 Für die spätere Auswahl sind Stabilität und Marktreife notwendig; die konkrete Mindestanforderung ist noch zu operationalisieren. Weder die Benennung eines Kandidaten noch ein vorhandenes Schema belegt produktive Eignung. Spezifikation und Werkzeuge müssen jeweils nach Version, Reifegrad und Kompatibilitätszusagen beurteilt werden.
 
@@ -144,7 +144,7 @@ Für die spätere Auswahl sind Stabilität und Marktreife notwendig; die konkret
 
 ## Weiterarbeit mit einem Coding-Agenten
 
-Zuerst Anforderungen, Methode und offene Zellen lesen; historische Chatbehauptungen nicht als technische Fakten übernehmen. Anschließend konkrete Quellenstände pinnen und kleine positive sowie negative Contract-Prüffälle erstellen. Gemeinsame Referenzen und die Wiederverwendung einer Unterkomponente ausdrücklich prüfen.
+Zuerst Anforderungen, Methode und offene Zellen lesen; historische Chatbehauptungen nicht als technische Fakten übernehmen. Anschliessend konkrete Quellenstände pinnen und kleine positive sowie negative Contract-Prüffälle erstellen. Gemeinsame Referenzen und die Wiederverwendung einer Unterkomponente ausdrücklich prüfen.
 
 Die im Original bestätigten Detailvergleiche sind dokumentarisch ausgearbeitet, mit eigenen ungetesteten Prüffällen und offengelegten Grenzen:
 

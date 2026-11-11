@@ -29,7 +29,7 @@
       "review_state": "named original clarification required; no repeat of exhausted parser/schema scope",
       "next_missing_assertion": "Originales ConfigSchema validiert Redaktionskonfiguration, nicht eindeutig den eingereichten DESIGN.md-Dokumentgegenstand. Eigenes Colorbinding beantwortet diese Originalschemafrage nicht.",
       "reviewed_current_claim": "C483",
-      "next_named_path": "Neue belastbare Originalfestlegung des Dokumentdatenmodell-/Schema-/Ergebnisbindings einschließlich Root-/Optionalitätsbedeutung. Bisherige Config-/Parserproben oder eigene zusätzliche Prosaabbildung entscheiden das nicht.",
+      "next_named_path": "Neue belastbare Originalfestlegung des Dokumentdatenmodell-/Schema-/Ergebnisbindings einschliesslich Root-/Optionalitätsbedeutung. Bisherige Config-/Parserproben oder eigene zusätzliche Prosaabbildung entscheiden das nicht.",
       "reopen_condition": "Neue konkret benannte Originalinformation erforderlich; keine Autorenanfrage versandt."
     },
     {
@@ -96,7 +96,7 @@
       "group": "REFERENCES",
       "priority": 4,
       "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
-      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder blosse DOM-ID reicht nicht.",
       "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
       "current_claim": "C99"
     },
@@ -226,7 +226,7 @@
       "group": "REFERENCES",
       "priority": 4,
       "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
-      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder blosse DOM-ID reicht nicht.",
       "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
       "current_claim": "C426"
     },
@@ -252,7 +252,7 @@
       "group": "REFERENCES",
       "priority": 4,
       "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
-      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder blosse DOM-ID reicht nicht.",
       "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
       "current_claim": "C228"
     },
@@ -330,7 +330,7 @@
       "group": "REFERENCES",
       "priority": 4,
       "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
-      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder blosse DOM-ID reicht nicht.",
       "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
       "current_claim": "C280"
     },
@@ -421,7 +421,7 @@
       "group": "REFERENCES",
       "priority": 4,
       "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
-      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder blosse DOM-ID reicht nicht.",
       "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
       "current_claim": "C306"
     },
@@ -447,7 +447,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C316"
     },
@@ -460,7 +460,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C322"
     },
@@ -499,7 +499,7 @@
       "group": "REFERENCES",
       "priority": 4,
       "question": "Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.",
-      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.",
+      "stop_criterion": "Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder blosse DOM-ID reicht nicht.",
       "source_scope": "Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.",
       "current_claim": "C358"
     },
@@ -538,7 +538,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C366"
     },
@@ -551,7 +551,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C367"
     },
@@ -564,7 +564,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C368"
     },
@@ -577,7 +577,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C375"
     },
@@ -590,7 +590,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C376"
     },
@@ -603,7 +603,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C377"
     },
@@ -616,7 +616,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C378"
     },
@@ -629,7 +629,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C379"
     },
@@ -642,7 +642,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C380"
     },
@@ -655,7 +655,7 @@
       "group": "COMPLEMENT",
       "priority": 3,
       "question": "Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.",
-      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.",
+      "stop_criterion": "Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.",
       "source_scope": "Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.",
       "current_claim": "C381"
     }

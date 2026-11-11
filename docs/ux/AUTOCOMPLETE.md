@@ -17,11 +17,11 @@ Die Länge allein entscheidet nicht. Wertevertrag, Editierbarkeit, Suchbedarf, t
 
 ## Beispiel Adresse: Vorschläge sind keine vollständige Wahrheit
 
-Nach fachlicher Vorgabe des Nutzers dient die Vervollständigung durch einen Kartendienst vor allem als Schreibhilfe. Nutzer sollen beispielsweise „Strasse“ oder „Str.“ schreiben bzw. einen übernommenen Vorschlag anpassen dürfen. Dass ein Dienst eine Straße nicht kennt, darf **allein** keine Ablehnung auslösen: Der Dienst kann unvollständig sein.
+Nach fachlicher Vorgabe des Nutzers dient die Vervollständigung durch einen Kartendienst vor allem als Schreibhilfe. Nutzer sollen beispielsweise „Strasse“ oder „Str.“ schreiben bzw. einen übernommenen Vorschlag anpassen dürfen. Dass ein Dienst eine Strasse nicht kennt, darf **allein** keine Ablehnung auslösen: Der Dienst kann unvollständig sein.
 
 Das Beispiel illustriert den gewünschten Produktvertrag, keine Garantie der postalischen Zustellbarkeit jeder Abkürzung. Eine tatsächlich benötigte postalische Prüfung wäre ein gesonderter, begründeter Anwendungsfall mit eigenen Datenquellen und Fehlerregeln. Vorschlagsabgleich und fachliche Gültigkeit sind zu trennen.
 
-Für diesen Schreibhilfe-Modus wären festzulegen: freier Text als führender Wert, optionale Vorschlagsübernahme, anschließende Editierbarkeit und Verhalten bei fehlendem/unerreichbarem Anbieter. Eine solche freie Variante ist im bisherigen example-Autocomplete **nicht** definiert. Ein Agent darf sie nicht allein aus dem Namen ableiten.
+Für diesen Schreibhilfe-Modus wären festzulegen: freier Text als führender Wert, optionale Vorschlagsübernahme, anschliessende Editierbarkeit und Verhalten bei fehlendem/unerreichbarem Anbieter. Eine solche freie Variante ist im bisherigen example-Autocomplete **nicht** definiert. Ein Agent darf sie nicht allein aus dem Namen ableiten.
 
 ## Beispiel Ländervorwahl: feste Werte, separate Suche
 
@@ -29,7 +29,7 @@ Die Vorwahl wird aus den bereitgestellten Ländern ausgewählt. Bei drei Einträ
 
 Die Suchabfrage ist nur ein Hilfsmittel. Formularwert ist der vorhandene Länderschlüssel; gleiche Vorwahlen wie +1 dürfen unterschiedliche Länder nicht zusammenführen. Die im Beispiel gesetzte Reihenfolge priorisiert CH/DE/FR und ordnet den Rest numerisch nach Vorwahl. Das ist eine explizite Projektvorgabe und keine automatisch ermittelte geografische Plausibilität.
 
-Die Zugehörigkeit zur Liste beweist weder die Gültigkeit noch die Erreichbarkeit der anschließend eingegebenen Telefonnummer. Diese Prüfung gehört, falls gefordert, zu einem separaten fachlichen Vertrag.
+Die Zugehörigkeit zur Liste beweist weder die Gültigkeit noch die Erreichbarkeit der anschliessend eingegebenen Telefonnummer. Diese Prüfung gehört, falls gefordert, zu einem separaten fachlichen Vertrag.
 
 ## Konsequenz für Agenten
 

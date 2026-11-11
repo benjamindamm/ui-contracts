@@ -4,7 +4,7 @@ Stand: 25. Oktober 2026. Dokumentarische E1/E2-Folgeprüfung; keine Komponenteni
 
 ## Ergebnis und Umfang
 
-A02 wird für den ausdrücklich begrenzten **Switch-Webpreviewbeitrag** von U zu R eingeordnet. Es ist nun eine konkrete, bestehende Referenzkette belegt: OpenPencil-Kind switch → Reka SwitchRoot → dokumentiertes Switch-Muster einschließlich Tastaturbedienung. Keine neue fachliche Bedeutung muss für diese Verbindung erfunden werden. Andere Kinds, Autocomplete/Combobox, ScrollArea, neutrale Paketkomposition und native Zielplattformen sind damit nicht mitbewertet. A01 und A03 bleiben U für ihre noch fehlenden vollständigen Nachweise.
+A02 wird für den ausdrücklich begrenzten **Switch-Webpreviewbeitrag** von U zu R eingeordnet. Es ist nun eine konkrete, bestehende Referenzkette belegt: OpenPencil-Kind switch → Reka SwitchRoot → dokumentiertes Switch-Muster einschliesslich Tastaturbedienung. Keine neue fachliche Bedeutung muss für diese Verbindung erfunden werden. Andere Kinds, Autocomplete/Combobox, ScrollArea, neutrale Paketkomposition und native Zielplattformen sind damit nicht mitbewertet. A01 und A03 bleiben U für ihre noch fehlenden vollständigen Nachweise.
 
 ## Nachvollziehbare Kette
 
@@ -33,4 +33,4 @@ Switchzustände und Progresswerte werden an Komponenten weitergegeben. Daraus fo
 
 Eine Bibliotheksreferenz muss mindestens den tatsächlich verwendeten Control-/Partpfad und die übergebenen Werte/Attribute benennen. Modus-/Stilzustand, Behaviourwert, zugänglicher Zustand und dynamische Rückmeldung sind verschiedene Bindungen. Der vorhandene Webpfad ist ein positiver Referenzbeitrag, aber weder ein neues neutrales Contractschema noch ein Nachweis externer Domänen-/Versions-/Ownershipregeln.
 
-Originalquellen und UTF-8-Hashmanifest sind getrennt protokolliert; keine Originalquelltexte im Ergebnisordner mitverteilt. Die APG-Webseite ist ein datierter veränderlicher Abruf, die OpenPencil-/Reka-Quellen sind gepinnt. Keine zusätzlichen E3-Fälle aus bloßem Lesen gezählt. Kein Commit oder Push.
+Originalquellen und UTF-8-Hashmanifest sind getrennt protokolliert; keine Originalquelltexte im Ergebnisordner mitverteilt. Die APG-Webseite ist ein datierter veränderlicher Abruf, die OpenPencil-/Reka-Quellen sind gepinnt. Keine zusätzlichen E3-Fälle aus blossem Lesen gezählt. Kein Commit oder Push.

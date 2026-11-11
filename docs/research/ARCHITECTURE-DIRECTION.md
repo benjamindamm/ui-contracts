@@ -24,7 +24,7 @@ HTML/CSS bilden das Webziel ab; APG liefert ergänzende Bedienmuster. „Vier Ke
 
 ## Was Zusammenführen bedeuten soll
 
-Ein gemeinsames Paket referenziert die Originaldateien, statt sie in eine neue große Sprache umzuschreiben. Die zusätzliche Bindungsbeschreibung benennt Definitionen, Verwendungen, Teile, Ports, Zustände, führende Quellen und konkrete Zielbeziehungen. Eigene Resolver und Plattformadapter transportieren die Beziehungen und prüfen Konflikte; Originalprüfer bleiben erhalten.
+Ein gemeinsames Paket referenziert die Originaldateien, statt sie in eine neue grosse Sprache umzuschreiben. Die zusätzliche Bindungsbeschreibung benennt Definitionen, Verwendungen, Teile, Ports, Zustände, führende Quellen und konkrete Zielbeziehungen. Eigene Resolver und Plattformadapter transportieren die Beziehungen und prüfen Konflikte; Originalprüfer bleiben erhalten.
 
 [IP-01](INTEGRATION-PROFILE.md) beschreibt dieses Modell. Das [statische Referenzpaket](experiments/2026-10-25/ip01-static/REPORT.md) und der [abgeschlossene Browserlauf](experiments/2026-10-25/ip01-browser/REPORT.md) zeigen begrenzte statische und tatsächliche Webbindungen. Der Browseradapter verwendet noch konkrete Codekonventionen. Eine vollständig generische deklarative Bindung und native Adapter sind nicht fertig.
 

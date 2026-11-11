@@ -10,11 +10,11 @@ Vom Repo-Root (`/Users/kcnpxcp/Dev/GitHub/ui-contracts`):
 node examples/autocomplete/reproducibility/run-02/builder-a/generate.mjs
 ```
 
-Das Skript schreibt ausschließlich in `examples/autocomplete/reproducibility/run-02/builder-a/` und benötigt kein Netzwerk. Es liest `components/**` und die gepinnten Pakete unter `tools/openpencil/node_modules/` (absolute Modulpfade über `pathToFileURL`, damit die Ausführung nicht von einer lokalen `node_modules` im Ausgabeordner abhängt).
+Das Skript schreibt ausschliesslich in `examples/autocomplete/reproducibility/run-02/builder-a/` und benötigt kein Netzwerk. Es liest `components/**` und die gepinnten Pakete unter `tools/openpencil/node_modules/` (absolute Modulpfade über `pathToFileURL`, damit die Ausführung nicht von einer lokalen `node_modules` im Ausgabeordner abhängt).
 
 ## Informationsgrenze
 
-Gelesen wurden ausschließlich die 22 Dateien unter `components/` (Autocomplete, Overlay, ScrollArea, `library.json`, `tokens.json`) sowie technische Dateien in `tools/openpencil/` (README, `package.json`, Typdefinitionen von `@open-pencil/core`, `scene-graph`, `cli`). Nicht gelesen: `examples/autocomplete/reproducibility/run-01/**`, `examples/autocomplete/output/**`, `examples/autocomplete/review/**`, `examples/autocomplete/reference.json`, `docs/**`, `scripts/**`, Root-`README.md`/`TASKS.md`, Git-Historie, `builder-b/`. Die GUI der OpenPencil-App wurde nicht geöffnet; es lief kein `openpencil eval` gegen die App, nur Node/headless über Dateien.
+Gelesen wurden ausschliesslich die 22 Dateien unter `components/` (Autocomplete, Overlay, ScrollArea, `library.json`, `tokens.json`) sowie technische Dateien in `tools/openpencil/` (README, `package.json`, Typdefinitionen von `@open-pencil/core`, `scene-graph`, `cli`). Nicht gelesen: `examples/autocomplete/reproducibility/run-01/**`, `examples/autocomplete/output/**`, `examples/autocomplete/review/**`, `examples/autocomplete/reference.json`, `docs/**`, `scripts/**`, Root-`README.md`/`TASKS.md`, Git-Historie, `builder-b/`. Die GUI der OpenPencil-App wurde nicht geöffnet; es lief kein `openpencil eval` gegen die App, nur Node/headless über Dateien.
 
 ## Vorgehen
 
@@ -27,9 +27,9 @@ Gelesen wurden ausschließlich die 22 Dateien unter `components/` (Autocomplete,
 
 ### Aufbau pro Fall
 
-Jeder Fall ist ein Frame `Autocomplete / <id>` mit den Kindknoten `label`, `input` (mit `input text`), optional `overlay surface` → `scroll viewport` → `list` → `option <key>` (mit `option label`) bzw. `message row` (mit `message text`), und `status`. Zusätzlich liegt außerhalb der Fallframes eine Seitenüberschrift und je eine Fallbeschriftung (`closed`, `opening`, …) auf der Seite.
+Jeder Fall ist ein Frame `Autocomplete / <id>` mit den Kindknoten `label`, `input` (mit `input text`), optional `overlay surface` → `scroll viewport` → `list` → `option <key>` (mit `option label`) bzw. `message row` (mit `message text`), und `status`. Zusätzlich liegt ausserhalb der Fallframes eine Seitenüberschrift und je eine Fallbeschriftung (`closed`, `opening`, …) auf der Seite.
 
-Geometrie aus den Tokens: Breite 320, Labelhöhe 20 mit `labelGap` 8, Input 44 hoch bei y=28, Popup-Oberkante bei y=80 (`inputHeight + gap`), gleiche Breite und linke Kante wie der Input, Viewport `min(Zeilen × 32, 160)`, Zeilen 32 hoch mit Text bei y=6 und `paddingInline` 12, Status `statusGap` 8 unter Popup bzw. unter Input, Statuszeile 20 hoch mit Schriftgröße 12. Radius 8, Rahmen 1 px innen, Schatten `0 2px 8px #0003` als Drop Shadow (Offset 0/2, Radius 8, Deckkraft 0,2), Schrift Inter 14/20.
+Geometrie aus den Tokens: Breite 320, Labelhöhe 20 mit `labelGap` 8, Input 44 hoch bei y=28, Popup-Oberkante bei y=80 (`inputHeight + gap`), gleiche Breite und linke Kante wie der Input, Viewport `min(Zeilen × 32, 160)`, Zeilen 32 hoch mit Text bei y=6 und `paddingInline` 12, Status `statusGap` 8 unter Popup bzw. unter Input, Statuszeile 20 hoch mit Schriftgrösse 12. Radius 8, Rahmen 1 px innen, Schatten `0 2px 8px #0003` als Drop Shadow (Offset 0/2, Radius 8, Deckkraft 0,2), Schrift Inter 14/20.
 
 ## Dargestellte Fälle
 
@@ -51,7 +51,7 @@ Aktive Option: Hintergrund `highlight` (#EAF2FF). Deaktivierte Option (`muenchen
 ## Annahmen bei Mehrdeutigkeiten
 
 1. **opening zeigt kein Popup.** `stories.json` nennt `phase: opening`, `accessibility.rules.json` projiziert `popupVisible:false`, `expanded:false`. Die Meldung „Suche wird geöffnet." steht daher als Status unter dem Input, obwohl der Popupinhalt selbst nicht sichtbar ist.
-2. **loading/empty/error: eine Meldungszeile.** Aus „Bei loading, empty und error zeigt der Popupinhalt eine Zeile mit der entsprechenden Meldung" folgt genau eine Zeile à `rowHeight` 32 als Popupinhalt; die Viewporthöhe ist damit 32. Die Zeile heißt `message row` und ist bewusst keine `option`, weil keine Ergebnisrecords existieren. Die `list` bleibt als Teil mit Höhe 0 erhalten.
+2. **loading/empty/error: eine Meldungszeile.** Aus „Bei loading, empty und error zeigt der Popupinhalt eine Zeile mit der entsprechenden Meldung" folgt genau eine Zeile à `rowHeight` 32 als Popupinhalt; die Viewporthöhe ist damit 32. Die Zeile heisst `message row` und ist bewusst keine `option`, weil keine Ergebnisrecords existieren. Die `list` bleibt als Teil mit Höhe 0 erhalten.
 3. **loading/empty/error: Meldungstext = Statusmeldung.** `accessibility.rules.json` liefert nur eine Meldungsvorlage je Zustand; Popupzeile und Statusregion verwenden denselben Text („die Statusregion wiederholt den Text").
 4. **Statusfarbe bei error.** `layout.css` setzt `[data-state="error"] [data-part="status"]` auf `error`; die Popupzeile bleibt `muted`.
 5. **active und scroll-end sind ready.** `layout.css` adressiert `[data-state="ready"]`; die beiden Fälle erben damit den Fokusrahmen und die ready-Statusvorlage. `active` hat `activeKey: hamburg` (Index 1) und benötigt kein Scrollen.
@@ -59,7 +59,7 @@ Aktive Option: Hintergrund `highlight` (#EAF2FF). Deaktivierte Option (`muenchen
 7. **selected.** `phase: closed` mit `value: berlin`; im Input steht das Label des bestätigten Werts („Berlin") in normaler Textfarbe, kein Popup, Status aus der `selected`-Vorlage mit `{label}` = „Berlin".
 8. **Leerer Status bleibt als Knoten.** „Ohne Meldung ist sein Text leer" — der Textknoten `status` bleibt mit leerem `characters` und Höhe 20 erhalten (closed, disabled), statt entfernt zu werden.
 9. **Keine Scrollbalken-Darstellung.** Die Definition nennt keine Scrollbar-Regel; gezeichnet wird nur der geclippte Viewport.
-10. **Seitliche Anordnung.** Zwei Spalten, Fallreihenfolge wie in `stories.json`, Fallbeschriftungen und Seitenüberschrift als freie Hinweise gemäß Exportrahmen.
+10. **Seitliche Anordnung.** Zwei Spalten, Fallreihenfolge wie in `stories.json`, Fallbeschriftungen und Seitenüberschrift als freie Hinweise gemäss Exportrahmen.
 
 ## Grenzen
 
@@ -67,7 +67,7 @@ Aktive Option: Hintergrund `highlight` (#EAF2FF). Deaktivierte Option (`muenchen
 - `scroll-end` ist eine statische Momentaufnahme des Versatzes, kein lauffähiges Scrollen.
 - Die Statusregionen sind sichtbare Textknoten; ARIA-Rollen/-Zustände (`expanded`, `busy`, `aria-selected`, `aria-disabled`) werden nur visuell und über die Knotennamen/Benennung abgebildet, nicht als Semantik ausgeführt.
 - Reproduzierbarkeit: Designinhalte (`canvas.fig`, `thumbnail.png`) sind zwischen Läufen byte-identisch (gleiche CRC). `exportFigFile` schreibt jedoch einen `createdAt`-Zeitstempel in `meta.json` und aktuelle ZIP-mtimes; beides normalisiert `generate.mjs` auf einen festen Wert (`2026-01-01T00:00:00.000Z`), damit die gelieferte `.fig` byte-stabil ist. Die Designinhalte werden dabei nicht verändert.
-- Für die Darstellung wird ausschließlich die mitgelieferte Inter-Schrift aus `@open-pencil/core/assets` verwendet.
+- Für die Darstellung wird ausschliesslich die mitgelieferte Inter-Schrift aus `@open-pencil/core/assets` verwendet.
 - Die OpenPencil-Desktop-App war nicht verbunden; es wurde keine GUI geöffnet.
 
 ## Gemessene Kennzahlen (aus `checks.json`, zurückgelesene Datei)

@@ -10,11 +10,11 @@ python3 tools/design-review/test_review.py
 python3 tools/design-review/test_process.py
 ```
 
-Ausgaben nur außerhalb des untersuchten Laufordners und aller `libraries/`-Quellen. Der erste Befehl endet für die gelieferten Originale erwartungsgemäß mit Exitcode **1**, da ihre gemeinsame Platzhalterfarbe von der Quelle abweicht. Das ist kein Fehler der Ausführung. `0` bedeutet ausschließlich `PASS_LIMITED`, `2` bedeutet `BLOCKED`; `release:false` gilt immer.
+Ausgaben nur ausserhalb des untersuchten Laufordners und aller `libraries/`-Quellen. Der erste Befehl endet für die gelieferten Originale erwartungsgemäss mit Exitcode **1**, da ihre gemeinsame Platzhalterfarbe von der Quelle abweicht. Das ist kein Fehler der Ausführung. `0` bedeutet ausschliesslich `PASS_LIMITED`, `2` bedeutet `BLOCKED`; `release:false` gilt immer.
 
 ## Abdeckung und Grenzen
 
-Gemessen: Fall-/Teilevorhandensein, native Locks, Sichtbarkeit der wesentlichen Teile, Inputgröße/-radius/-kontur inklusive Stärke, Farben nach Einsatz, alle Textgrößen/Familien/Zeilenhöhen, Optionsdaten und Viewport-Clipflag/-höhe. Explizite Tokens werden verglichen; Kanalabweichungen bis 3 bleiben als Warnungen sichtbar. Eine Toleranz ist keine nachträgliche Quellfreiheit.
+Gemessen: Fall-/Teilevorhandensein, native Locks, Sichtbarkeit der wesentlichen Teile, Inputgrösse/-radius/-kontur inklusive Stärke, Farben nach Einsatz, alle Textgrössen/Familien/Zeilenhöhen, Optionsdaten und Viewport-Clipflag/-höhe. Explizite Tokens werden verglichen; Kanalabweichungen bis 3 bleiben als Warnungen sichtbar. Eine Toleranz ist keine nachträgliche Quellfreiheit.
 
 Nicht gemessen: vollständige Geometrie/Scroll-Offets, Schatten, echte Glyphmetriken, statische Semantikannotation, GUI-Editier-/Speicherrunde, Interaktion und Accessibility zur Laufzeit. Diese Felder stehen explizit in `notChecked`; sie werden weder pauschal als pass noch pauschal als Artefaktfehler gezählt.
 
@@ -24,7 +24,7 @@ Die zwölf Regressionstests verwenden frisch gelesene Originalknoten und veränd
 
 ## Künftige Prozessprotokolle
 
-[Protokollvertrag und Beispiel](../../docs/skills/REPRODUCIBILITY.md). Der separate Metadatenprüfer bewertet ausschließlich die Vergleichbarkeit der **aufgezeichneten** Angaben:
+[Protokollvertrag und Beispiel](../../docs/skills/REPRODUCIBILITY.md). Der separate Metadatenprüfer bewertet ausschliesslich die Vergleichbarkeit der **aufgezeichneten** Angaben:
 
 ```sh
 python3 tools/design-review/check_process.py --metadata PFAD/run-process.json --output /tmp/process-check.json

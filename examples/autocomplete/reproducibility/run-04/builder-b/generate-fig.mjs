@@ -48,7 +48,7 @@ if (revision !== EXPECTED_REVISION) throw new Error(`Revisionslabel weicht ab: $
 console.log(`revision OK: ${revision} (${Object.keys(fileHashes).length} Dateien verifiziert)`);
 
 // ---------------------------------------------------------------------------
-// 2) Designwerte auflösen — ausschließlich components/tokens.json
+// 2) Designwerte auflösen — ausschliesslich components/tokens.json
 //    (autocomplete.*; {base.*}-Referenzen rekursiv aufgelöst).
 // ---------------------------------------------------------------------------
 const TOKENS = JSON.parse(readFileSync(`${REPO}/components/tokens.json`, 'utf8'));

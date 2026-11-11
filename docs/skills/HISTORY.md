@@ -19,7 +19,7 @@ Der Agent erstellt oder bearbeitet Originalartefakte in CEM-JSON, DTCG/CSS, SCXM
 - Geänderte oder neue Komponenten: keine Übernahme alter Captures oder der festen Referenzfreigabe. Keine Behauptung eines allgemeinen Renderers/Validators.
 - Reparaturen: Kandidatendaten dürfen korrigiert werden; notwendige Prüfungen danach erneut ausführen. Kriterien, Originalschemas, Profil und Quellen-/Zeitbindungen dafür nicht abschwächen.
 
-Ein fehlender notwendiger Prüfer oder fehlende erforderliche Abdeckung blockiert die entsprechende Freigabe. Reale IME, Screenreader und Nativeziele bleiben außerhalb des nachgewiesenen Umfangs.
+Ein fehlender notwendiger Prüfer oder fehlende erforderliche Abdeckung blockiert die entsprechende Freigabe. Reale IME, Screenreader und Nativeziele bleiben ausserhalb des nachgewiesenen Umfangs.
 
 ## Quelle und lokaler Bestand
 
@@ -54,13 +54,13 @@ Diese Tests prüfen den installierten Helper und seine realen Prüfeinstiege. Si
 
 ## Aus AC-R02 abgeleitete Reparaturen
 
-Die [externe Analyse](../research/analyses/AC-R02/README.md) zeigt eine falsche Quellauslegung und Prüflücken. [Fehlerregister](ISSUES.md) und [Laufprotokollvertrag](REPRODUCIBILITY.md) halten jede Ursache, aktuelle Gegenmaßnahme, Regression und offene Grenze fest. Die neue Skillreferenz wird nur für diese Arbeitsart geladen. Eine tatsächliche Nutzung des bisherigen Skills durch die historischen Builder ist nicht belegt.
+Die [externe Analyse](../research/analyses/AC-R02/README.md) zeigt eine falsche Quellauslegung und Prüflücken. [Fehlerregister](ISSUES.md) und [Laufprotokollvertrag](REPRODUCIBILITY.md) halten jede Ursache, aktuelle Gegenmassnahme, Regression und offene Grenze fest. Die neue Skillreferenz wird nur für diese Arbeitsart geladen. Eine tatsächliche Nutzung des bisherigen Skills durch die historischen Builder ist nicht belegt.
 
 Der [begrenzte native Gegenprüfer](../../tools/design-review/README.md) und der Metadatenprüfer haben eigene Regressionen; sie verändern weder den historischen run-02 noch die feste Webvalidierung. Die ursprünglichen 18 Helper-Testfälle und ihr damaliges Manifest bleiben historische Belege der damaligen Fassung; sie sind kein vollständiger Nachweis für die neuen Reviewfunktionen. Aktuelle Nachweise stehen separat unter [AC-R02 setup-verification.json](../research/analyses/AC-R02/setup-verification.json).
 
 ## Fokussierte Rollen und Kontextmanagement
 
-Das eigentliche Entwicklungsziel aus [RD-001](../research/decisions/RD-001-STAGED-GENERATION.md) sind bessere Skills, nicht bloß weitere Wiederholungsläufe. Neue Rollen-Karten begrenzen fachlichen Auftrag und Kontext; ein gemeinsamer [Übergabevertrag](../../skills/ui-contracts/references/handoff-contract.md) hält die benötigten Ergebnisse separat und quellengebunden fest. Unabhängige Aufgaben dürfen parallel laufen, Verbraucher warten auf gültige benötigte Lieferungen. Prüfer sehen Buildererklärungen erst nach ihrer eingefrorenen Erstbewertung.
+Das eigentliche Entwicklungsziel aus [RD-001](../research/decisions/RD-001-STAGED-GENERATION.md) sind bessere Skills, nicht bloss weitere Wiederholungsläufe. Neue Rollen-Karten begrenzen fachlichen Auftrag und Kontext; ein gemeinsamer [Übergabevertrag](../../skills/ui-contracts/references/handoff-contract.md) hält die benötigten Ergebnisse separat und quellengebunden fest. Unabhängige Aufgaben dürfen parallel laufen, Verbraucher warten auf gültige benötigte Lieferungen. Prüfer sehen Buildererklärungen erst nach ihrer eingefrorenen Erstbewertung.
 
 Der neue Helper erzeugt nur Kontextdateien und Prüfberichte. Er startet keine Agenten, kontrolliert keinen Browser und erweitert keine Berechtigungen. Struktur-/Hashprüfungen verhindern versehentliche falsche Übergaben; sie beweisen keine sachliche Richtigkeit oder technische Abschottung.
 
@@ -68,13 +68,13 @@ Der neue Helper erzeugt nur Kontextdateien und Prüfberichte. Er startet keine A
 
 ## Schlanker Einstieg und Kontexthygiene
 
-[Separater Kontextaudit](../research/analyses/INITIAL-CONTEXT/README.md): neue Rollen starten mit `bootstrap` (nur hashgebundene Auftrags-/Rollenverweise); das erweiterte `context` wird erst bei Bedarf geladen. Originale und Nachweise bleiben erreichbar. Kein pauschales Einlesen aller verlinkten Dateien. Die Anfangsgröße des gesamten Modellrequests ist damit noch nicht gemessen.
+[Separater Kontextaudit](../research/analyses/INITIAL-CONTEXT/README.md): neue Rollen starten mit `bootstrap` (nur hashgebundene Auftrags-/Rollenverweise); das erweiterte `context` wird erst bei Bedarf geladen. Originale und Nachweise bleiben erreichbar. Kein pauschales Einlesen aller verlinkten Dateien. Die Anfangsgrösse des gesamten Modellrequests ist damit noch nicht gemessen.
 
 Aktueller zusätzlicher Nachweis: [37 Funktionstests Quelle](../../tools/skill-tests/ui-contracts/results-bootstrap-source.json) und [Installation](../../tools/skill-tests/ui-contracts/results-bootstrap-installed.json). Frühere 32-Test-Receipts und Workflow-Verifikation dokumentieren den Stand vor diesem Kontextaudit.
 
 ## Mehrere Bibliotheken
 
-Bibliotheken liegen unter `libraries/<id>/`; die frühere Draftbibliothek heißt jetzt `example`. Jeder Autorenauftrag wählt seine Bibliothek explizit. [Leere Bibliothek anlegen, auswählen und historische Pfade einordnen](../../libraries/README.md). `inspect --library ID` unterstützt die begrenzte Originalformatprüfung; keine allgemeine semantische Bibliotheksfreigabe.
+Bibliotheken liegen unter `libraries/<id>/`; die frühere Draftbibliothek heisst jetzt `example`. Jeder Autorenauftrag wählt seine Bibliothek explizit. [Leere Bibliothek anlegen, auswählen und historische Pfade einordnen](../../libraries/README.md). `inspect --library ID` unterstützt die begrenzte Originalformatprüfung; keine allgemeine semantische Bibliotheksfreigabe.
 
 ## Einheitliches Vorschau-Layout
 

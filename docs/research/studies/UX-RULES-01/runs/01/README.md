@@ -10,7 +10,7 @@ python3 -m venv /tmp/ux-rule-probe-env
 /tmp/ux-rule-probe-env/bin/pip install -r docs/research/studies/UX-RULES-01/runs/01/requirements-lock.txt
 ```
 
-OPA 1.21.2 darwin/arm64 wurde aus dem offiziellen Release geladen; URL, Hash, Plattform und Version stehen im Werkzeugnachweis. Binärdatei außerhalb Git. Ein erneuter Messlauf braucht eine neue Ergebniskopie: `probe.py` erstellt results exklusiv und überschreibt diese Beobachtungen nicht. `OPA=/pfad/opa` setzt den lokalen Binärpfad. Auf einem anderen System passende OPA-Binärdatei und deren Hash separat erfassen. Das Python-Lock bindet Versionen, ist aber kein plattformunabhängiges, vollständig hashgepinntes Wheelarchiv.
+OPA 1.21.2 darwin/arm64 wurde aus dem offiziellen Release geladen; URL, Hash, Plattform und Version stehen im Werkzeugnachweis. Binärdatei ausserhalb Git. Ein erneuter Messlauf braucht eine neue Ergebniskopie: `probe.py` erstellt results exklusiv und überschreibt diese Beobachtungen nicht. `OPA=/pfad/opa` setzt den lokalen Binärpfad. Auf einem anderen System passende OPA-Binärdatei und deren Hash separat erfassen. Das Python-Lock bindet Versionen, ist aber kein plattformunabhängiges, vollständig hashgepinntes Wheelarchiv.
 
 ## Tatsächlich ausgeführt
 

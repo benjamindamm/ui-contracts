@@ -4,8 +4,8 @@
 - **Phase:** Phase 1 — Preregistration (Kriterienableitung aus der Definition; **kein** Vergleich)
 - **Datum:** 2026-10-29
 - **Erlaubte Eingaben:** `components/**` (vollständig gelesen), eigener Ausgabeordner `examples/autocomplete/reproducibility/run-03/review/`
-- **Verbotene Eingaben (nicht geöffnet):** `examples/**` außer eigenem Ordner (inkl. `run-03/builder-a/`, `run-03/builder-b/`), `docs/**`, `scripts/**`, `skills/**`, `tools/**`, `.git`, Root-`README.md`, Root-`TASKS.md`, jegliche Git-Befehle
-- **Erklärung:** Es wurde keinerlei Builder-Ausgabe gesehen. Die Kriterien wurden ausschließlich aus der eingefrorenen Definition abgeleitet, bevor irgendeine Builder-Ausgabe vorlag. Keine Prognosen über künftige Outputs.
+- **Verbotene Eingaben (nicht geöffnet):** `examples/**` ausser eigenem Ordner (inkl. `run-03/builder-a/`, `run-03/builder-b/`), `docs/**`, `scripts/**`, `skills/**`, `tools/**`, `.git`, Root-`README.md`, Root-`TASKS.md`, jegliche Git-Befehle
+- **Erklärung:** Es wurde keinerlei Builder-Ausgabe gesehen. Die Kriterien wurden ausschliesslich aus der eingefrorenen Definition abgeleitet, bevor irgendeine Builder-Ausgabe vorlag. Keine Prognosen über künftige Outputs.
 
 ## Methode
 
@@ -56,7 +56,7 @@ Kurzel: **E** = explicit, **D** = derived, **U** = underdetermined. „Verl.“ 
 | --- | --- | --- | --- | --- | --- |
 | E-001 | E | Die Datei muss sich tatsächlich als OpenPencil-Dokument öffnen lassen; ein Bild, eine umbenannte JSON-Datei oder ein nur im Speicher existierender Graph genügt nicht. | `autocomplete/README.md` „Exportrahmen“, letzter Absatz | Builder-Datei ist ein gültiges, editierbares OpenPencil-Dokument | Verl. |
 | E-002 | E | Das Dokument enthält eine übersichtliche Seite mit den zehn benannten Fällen. | `autocomplete/README.md` „Exportrahmen“ | Alle zehn Fälle in einem Dokument auf einer Seite | Verl. |
-| E-003 | E | Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind **frei**. | `autocomplete/README.md` „Exportrahmen“ | Anordnung/Titel/Hinweise werden nicht beanstandet | Frei |
+| E-003 | E | Aussenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind **frei**. | `autocomplete/README.md` „Exportrahmen“ | Anordnung/Titel/Hinweise werden nicht beanstandet | Frei |
 | E-004 | E | Definitionsdateien dürfen nicht geändert werden; Lücken sind zu dokumentieren, nicht still zu ergänzen. | `autocomplete/README.md` „Exportrahmen“; `components/README.md` „Unabhängiger erster Proof“ | Design konsistent mit unveränderter Definition; identifizierte Lücken dokumentiert | Verl. |
 
 ## Domain: cases (6)
@@ -98,7 +98,7 @@ Kurzel: **E** = explicit, **D** = derived, **U** = underdetermined. „Verl.“ 
 | E-020 | E | Status-Text pro Fall: closed=''; opening='Suche wird geöffnet.'; loading='Städte werden geladen.'; ready/active/scroll-end='7 Städte verfügbar.' (Vorlage results, count=7); selected='Ausgewählt: Berlin.'; empty='Keine Städte gefunden.'; error='Städte konnten nicht geladen werden.'; disabled=''. | `accessibility.rules.json` messages; `autocomplete/README.md`; `stories.json` | Status-Text exakt je Fall (siehe Erwartung) | Verl. |
 | E-021 | E | Query-Text pro Fall: closed=''; opening=''; loading='Be'; ready=''; active=''; scroll-end=''; selected='Berlin'; empty='Atlantis'; error='Be'; disabled=''. | `stories.json` inputs.query | Exakte Query-Texte je Fall | Verl. |
 | E-022 | E | Bei selected steht das zu value gehörige Label („Berlin“) im Input. | `autocomplete/README.md`; `stories.json` (selected: query „Berlin“, value berlin) | Input zeigt „Berlin“ (kein Platzhalter) | Verl. |
-| E-023 | E | Sichtbare Texte kommen ausschließlich aus Inputs, Ergebnislabels und accessibility.rules.json — nichts frei erfundenes. | `autocomplete/README.md` („In allen Fällen …“; „dürfen nicht still neu erfunden werden“) | Jeder sichtbare Text ist einer Quelle zuordenbar | Verl. |
+| E-023 | E | Sichtbare Texte kommen ausschliesslich aus Inputs, Ergebnislabels und accessibility.rules.json — nichts frei erfundenes. | `autocomplete/README.md` („In allen Fällen …“; „dürfen nicht still neu erfunden werden“) | Jeder sichtbare Text ist einer Quelle zuordenbar | Verl. |
 | D-002 | D | Leerer Query → Platzhalter sichtbar; nicht leerer Query → Query-Text. | Ableitung aus `interface.json` (query/placeholder) + `layout.css` ::placeholder + `stories.json` | Platzhalter in closed/opening/ready/active/scroll-end/disabled; Query-Text in loading/selected/empty/error | Verl. |
 
 ## Domain: dimensions (11)
@@ -138,16 +138,16 @@ Kurzel: **E** = explicit, **D** = derived, **U** = underdetermined. „Verl.“ 
 | E-042 | E | Optionstext text #172B4D (erbt); Option aria-disabled=true → disabled #94A3B8. | `layout.css` [data-part=option][aria-disabled=true] + Vererbung; `tokens.json` | Normale Optionen #172B4D; „München“ #94A3B8 in allen Sichtbarkeitsfällen | Verl. |
 | E-043 | E | Aktive Option (aria-selected=true): Hintergrund highlight #EAF2FF, Textfarbe unverändert. | `layout.css` [data-part=option][aria-selected=true]; `tokens.json` | Nur die aktive Option (active: „Hamburg“, scroll-end: „Zürich“) mit #EAF2FF | Verl. |
 | E-044 | E | Status-Text muted #64748B; im error-Zustand error #B91C1C. | `layout.css` [data-part=status] + [data-state=error]; `tokens.json` | Status #64748B, nur im Fall error #B91C1C | Verl. |
-| E-045 | E | Overlayfläche: Hintergrund surface #FFFFFF, border 0, box-shadow 0 2px 8px #0003 (= rgba(0,0,0,0.2)), z-index 10. | `overlay/layout.css` [data-part=surface] | Weiße, rahmenlose Fläche mit 8px Radius und dezentem Schlagschatten | Verl. |
+| E-045 | E | Overlayfläche: Hintergrund surface #FFFFFF, border 0, box-shadow 0 2px 8px #0003 (= rgba(0,0,0,0.2)), z-index 10. | `overlay/layout.css` [data-part=surface] | Weisse, rahmenlose Fläche mit 8px Radius und dezentem Schlagschatten | Verl. |
 
 ## Domain: typography (7)
 
 | ID | Kat. | Anforderung | Quelle | Erwartung | Abweichung |
 | --- | --- | --- | --- | --- | --- |
 | E-046 | E | Schriftart Inter (fontFamily). | `tokens.json` fontFamily; `layout.css` [data-component] | Alle Komponententexte in Inter | Verl. |
-| E-047 | E | Basisgröße 14px (fontSize) für Komponente/Input/Optionen/Label. | `tokens.json` fontSize; `layout.css` [data-component], [data-part=input] font:inherit | Label/Input/Optionen 14px | Verl. |
+| E-047 | E | Basisgrösse 14px (fontSize) für Komponente/Input/Optionen/Label. | `tokens.json` fontSize; `layout.css` [data-component], [data-part=input] font:inherit | Label/Input/Optionen 14px | Verl. |
 | E-048 | E | Line-height 20px. | `tokens.json` lineHeight; `layout.css` [data-component] | 20px (auch Grundlage für Label-/Status-Höhe) | Verl. |
-| E-049 | E | Status-Größe 12px (statusFontSize). | `tokens.json` statusFontSize; `layout.css` [data-part=status] | Status in 12px | Verl. |
+| E-049 | E | Status-Grösse 12px (statusFontSize). | `tokens.json` statusFontSize; `layout.css` [data-part=status] | Status in 12px | Verl. |
 | D-005 | D | Label, Input, Optionen erben Inter 14px, line-height 20px, Farbe text #172B4D (keine eigenen Overrides). | Ableitung aus `layout.css` (Vererbung) + fehlende font-/color-Regeln für label/option + `tokens.json` | Einheitliche Inter-14px-Typo mit #172B4D | Verl. |
 | D-006 | D | Optionstext vertikal zentriert: 6px + 20px + 6px = 32px = Zeilenhöhe. | Ableitung aus `layout.css` [data-part=option] + `tokens.json` lineHeight | Text sitzt mittig in der Zeile | Verl. |
 | U-001 | U | Schriftstärke (font-weight) — und letter-spacing/Transformation — ist nirgends festgelegt. | Fehlen in `tokens.json`, allen `layout.css` | Jede gewählte Stärke zulässig; nicht als Verletzung | Unter |
@@ -209,7 +209,7 @@ Kurzel: **E** = explicit, **D** = derived, **U** = underdetermined. „Verl.“ 
 | E-073 | E | Fokus: Input behält während Navigation den DOM-Fokus; Popup/Viewport erhalten keine zusätzliche Rolle oder Tabstop. | `accessibility.rules.json` focus | Keine zusätzlichen Fokus-/Tabstop-Annotationen für Popup/Viewport | Verl. |
 | E-074 | E | ARIA-Werte sind semantische Annotationen (benannte Teile, Label, Status-Text, active- und disabled-Stile) — keine Behauptung von Screenreader-Verhalten. | `accessibility.rules.json` designTarget | Werte als semantische Annotationen abgebildet; kein funktionales SR-Testen erwartet | Verl. |
 | U-004 | U | Die genaue Darstellungsform der ARIA-Attribute (Layer-Label, Notiz, Property, Kommentar) ist nicht spezifiziert — „semantic annotations“. | `accessibility.rules.json` designTarget | Jede Darstellungsform zulässig, wenn die Werte korrekt und nachvollziehbar ablesbar sind | Unter |
-| U-005 | U | Ob die Status-Region bei leerem Text (closed, disabled) als (leerer) Layer vorhanden sein muss oder weggelassen werden darf, ist nicht abschließend festgelegt („Ohne Meldung ist sein Text leer“). | `autocomplete/README.md`; `component.json` anatomy.status; keine explizite Pflicht | Leerer Status-Text korrekt; Pflicht eines leeren Layers wird nicht geprüft | Unter |
+| U-005 | U | Ob die Status-Region bei leerem Text (closed, disabled) als (leerer) Layer vorhanden sein muss oder weggelassen werden darf, ist nicht abschliessend festgelegt („Ohne Meldung ist sein Text leer“). | `autocomplete/README.md`; `component.json` anatomy.status; keine explizite Pflicht | Leerer Status-Text korrekt; Pflicht eines leeren Layers wird nicht geprüft | Unter |
 
 ---
 

@@ -4,7 +4,7 @@ Stand:25. Oktober2026. **Zag X03 A/C510 und Ark UI X03 A/C511**, begrenzt auf di
 
 ## Endbedingung
 
-Nicht allein DOM-ID-Gleichheit feststellen: Originalparts müssen auf konkrete separat beschriebene CEM-Zielknoten sowie Rollen und Beziehungen eines unabhängigen HTML/ARIA-Artefakts gebunden sein. Tatsächliche zwei Instanzkontexte und deren zulässige Root-ID-Änderung prüfen; je Kandidat seine eigenen Originalpfade und konkreten Gegenfälle ausführen. Keine bloße Umbenennung eines allgemeinen Booleanbinders.
+Nicht allein DOM-ID-Gleichheit feststellen: Originalparts müssen auf konkrete separat beschriebene CEM-Zielknoten sowie Rollen und Beziehungen eines unabhängigen HTML/ARIA-Artefakts gebunden sein. Tatsächliche zwei Instanzkontexte und deren zulässige Root-ID-Änderung prüfen; je Kandidat seine eigenen Originalpfade und konkreten Gegenfälle ausführen. Keine blosse Umbenennung eines allgemeinen Booleanbinders.
 
 ## Exakte ursprüngliche Ausführung
 
@@ -12,9 +12,9 @@ Neue isolierte, unveränderte Installation: @zag-js/combobox/@zag-js/react/@zag-
 
 **Zagpfad:** tatsächliches originales useMachine(combobox.machine, props), combobox.connect(service, normalizeProps) und deren getRootProps/getLabelProps/getInputProps/getContentProps/getListProps/getItemProps. Der eigene React-SSR-Prüfhost setzt diese ursprünglichen Props auf native Elemente. Kein falscher Service, keine nachgebaute Maschine oder geänderte Originalfunktion.
 
-**Arkpfad:** tatsächliche originale Combobox.Root/Label/Control/Input/Content/List/Item/ItemText-Komponenten einschließlich ihrer ursprünglichen useCombobox-, Context-, Presence- und Zagdelegation. Die Root-ids gehen durch den echten Komponentenpfad. Kein Direkt-Connect-Output als Arkoutput ausgegeben.
+**Arkpfad:** tatsächliche originale Combobox.Root/Label/Control/Input/Content/List/Item/ItemText-Komponenten einschliesslich ihrer ursprünglichen useCombobox-, Context-, Presence- und Zagdelegation. Die Root-ids gehen durch den echten Komponentenpfad. Kein Direkt-Connect-Output als Arkoutput ausgegeben.
 
-ReactDOMServer erzeugt tatsächlich HTML. Effekte werden nicht im DOM gemountet; keine Eventfolge, Fokus-/Tastaturfunktion, native Browserdarstellung, Hydration oder AT geprüft. Die einfachen eigenen Reactfunktionen sind ausschließlich Forschungs-SSR-Hosts, keine Produktionskomponente oder fertige Komponentenumsetzung. open:true ist ein kontrollierter Initialbeobachtungspunkt.
+ReactDOMServer erzeugt tatsächlich HTML. Effekte werden nicht im DOM gemountet; keine Eventfolge, Fokus-/Tastaturfunktion, native Browserdarstellung, Hydration oder AT geprüft. Die einfachen eigenen Reactfunktionen sind ausschliesslich Forschungs-SSR-Hosts, keine Produktionskomponente oder fertige Komponentenumsetzung. open:true ist ein kontrollierter Initialbeobachtungspunkt.
 
 ## Separat beschriebene Ziele und zusätzliche Semantik
 

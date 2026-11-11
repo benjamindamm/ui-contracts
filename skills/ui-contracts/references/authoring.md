@@ -4,8 +4,8 @@ Zuerst Bibliotheks-ID aus dem Auftrag auswählen, dann nur deren `libraries/<id>
 
 | Führende Domäne | Originalformat und Aufgabe |
 | --- | --- |
-| Interface | CEM-JSON: öffentliche Properties, Typen, Events/Payloads und benannte Teile. Kein Verhalten aus bloßer Namensgleichheit ableiten. |
-| Visual | DTCG-Tokens plus ausgewiesenes CSS für Maße, Layout, Farben und Zustandsdarstellung. Typen/Einheiten/Aliase erhalten; CSS-Geometrie ist keine native Plattformabbildung. |
+| Interface | CEM-JSON: öffentliche Properties, Typen, Events/Payloads und benannte Teile. Kein Verhalten aus blosser Namensgleichheit ableiten. |
+| Visual | DTCG-Tokens plus ausgewiesenes CSS für Masse, Layout, Farben und Zustandsdarstellung. Typen/Einheiten/Aliase erhalten; CSS-Geometrie ist keine native Plattformabbildung. |
 | Behavior | SCXML: Zustände, Übergänge, Guards, Aktionen und Commit-/Lifecycleentscheidungen. Der vorhandene Ausdrucksumfang verwendet ECMAScript. |
 | Accessibility | HTML-/WAI-ARIA-Semantik; APG für Bedienmuster. Ergänzende Projektions-/Meldungsregeln ausdrücklich als eigene Bindungen kennzeichnen. |
 

@@ -12,7 +12,7 @@ Kann eine gemeinsame Definition getrennte Agenten zu konformen und vergleichbare
 
 Die Kontextübernahme war bei beiden Buildern und dem Prüfer deaktiviert. Frühere Designs und die jeweils andere Ausgabe waren keine erlaubten Eingaben. Diese Trennung beruhte auf Auftragsvorgaben; eine physische Dateisystemsandbox bestand nicht. Als Modellkonfiguration für diesen Lauf ist **GPT-6.1 Sol · Reasoning: Medium** dokumentiert (nachträgliche Nutzerangabe vom 29. Oktober 2026). Diese Angabe wurde nicht aus damaligen Laufzeitprotokollen verifiziert; eine gesonderte Modellzuordnung pro Builder beziehungsweise Prüfer ist nicht belegt. Die genaue Modellrevision und Seeds wurden nicht erfasst. Unterschiedliche Modelle oder statistische Unabhängigkeit werden nicht behauptet.
 
-Der Prüfer leitete Kriterien ausschließlich aus der Definition ab. Ihre Hashes wurden vor seiner Einsicht in Builder-Ausgaben versiegelt. Dies ist eine lokale Vorabfestlegung, keine öffentliche Präregistrierung. Die Entscheidung, den Versuch als Studie zu dokumentieren, fiel nach Beginn der Builds; Eingaben und Kriterien wurden deswegen nicht geändert. Anschließend las und renderte der Prüfer zunächst die tatsächlichen FIG-Dateien mit den Originalwerkzeugen; erst danach las er die Builderberichte. Das [Studienprotokoll](PROTOCOL.md) beschreibt Ablauf, Forschungsfragen und Grenzen ausführlich.
+Der Prüfer leitete Kriterien ausschliesslich aus der Definition ab. Ihre Hashes wurden vor seiner Einsicht in Builder-Ausgaben versiegelt. Dies ist eine lokale Vorabfestlegung, keine öffentliche Präregistrierung. Die Entscheidung, den Versuch als Studie zu dokumentieren, fiel nach Beginn der Builds; Eingaben und Kriterien wurden deswegen nicht geändert. Anschliessend las und renderte der Prüfer zunächst die tatsächlichen FIG-Dateien mit den Originalwerkzeugen; erst danach las er die Builderberichte. Das [Studienprotokoll](PROTOCOL.md) beschreibt Ablauf, Forschungsfragen und Grenzen ausführlich.
 
 ## Ergebnisse
 
@@ -24,7 +24,7 @@ Der Prüfer leitete Kriterien ausschließlich aus der Definition ab. Ihre Hashes
 | Geometrie, Texte, Daten, Sichtbarkeit und Clipping im registrierten Umfang | erfüllt | erfüllt |
 | Visuelle Regeln vollständig erfüllt | **nein** | **nein** |
 | Gesamturteil gegen eingefrorene Definition | **FAIL** | **FAIL** |
-| Native Knoten, rein beschreibende Größe | 127 | 136 |
+| Native Knoten, rein beschreibende Grösse | 127 | 136 |
 
 Die Auswertung enthält 396 Einzelbeobachtungen je Artefakt. Diese sind voneinander abhängig und keine zusätzlichen Stichproben. Es werden keine Erfolgswahrscheinlichkeit, Signifikanz oder allgemeine Agentenleistung daraus berechnet.
 
@@ -36,17 +36,17 @@ Eine **nach der Auswertung ergänzte Browserkontrolle** mit dem Originalstyleshe
 
 ### Übereinstimmung und erlaubte Unterschiede
 
-Nach Zuordnung der Fälle und Normalisierung der äußeren Positionen sind sämtliche erfassten Komponentenwerte gleich, einschließlich der gemeinsamen falschen Farbe. Das bedeutet weder Bytegleichheit noch Gleichheit aller nativen Eigenschaften. Unterschiedliche Seitenanordnung, Fallrahmenhöhen, technische IDs und zusätzliche Wrapper sind erlaubt. A verschiebt für das Scroll-Ende die Liste, B deren Container; beide ergeben dieselbe geprüfte sichtbare Projektion.
+Nach Zuordnung der Fälle und Normalisierung der äusseren Positionen sind sämtliche erfassten Komponentenwerte gleich, einschliesslich der gemeinsamen falschen Farbe. Das bedeutet weder Bytegleichheit noch Gleichheit aller nativen Eigenschaften. Unterschiedliche Seitenanordnung, Fallrahmenhöhen, technische IDs und zusätzliche Wrapper sind erlaubt. A verschiebt für das Scroll-Ende die Liste, B deren Container; beide ergeben dieselbe geprüfte sichtbare Projektion.
 
 ### Offene Definitionseigenschaften
 
 Schriftgewicht, genaue native Textbaseline, Gestaltung von Popupmeldungen, Scrollbarstil, native Metadaten, exakte Schattenrasterung und zusätzliche Rundclipregeln sind nicht vollständig bestimmt. Übereinstimmende Entscheidungen beider Builder machen diese Eigenschaften nicht nachträglich verbindlich.
 
-Ein Textwiderspruch bleibt erhalten: Die Beschreibung nennt drei unsichtbare Datenzeilen; sieben Ergebnisse mit Zeilenhöhe 32 und Viewporthöhe 160 ergeben fünf sichtbare und zwei außerhalb liegende Zeilen. Für die Prüfung waren die eindeutigen Zahlen und das Erhalten aller sieben editierbaren Zeilen maßgeblich. Weder Definition noch Ergebnisse wurden für diese Studie korrigiert.
+Ein Textwiderspruch bleibt erhalten: Die Beschreibung nennt drei unsichtbare Datenzeilen; sieben Ergebnisse mit Zeilenhöhe 32 und Viewporthöhe 160 ergeben fünf sichtbare und zwei ausserhalb liegende Zeilen. Für die Prüfung waren die eindeutigen Zahlen und das Erhalten aller sieben editierbaren Zeilen massgeblich. Weder Definition noch Ergebnisse wurden für diese Studie korrigiert.
 
 ## Aussagekraft und Grenzen
 
-Der Versuch liefert konkrete Evidenz für eine übereinstimmende statische Umsetzung im gemessenen Umfang. **Übereinstimmung allein ist kein Korrektheitsnachweis:** Beide Erzeugungen reproduzieren denselben Regelverstoß. Der unabhängige Abgleich mit den Quellen bleibt erforderlich.
+Der Versuch liefert konkrete Evidenz für eine übereinstimmende statische Umsetzung im gemessenen Umfang. **Übereinstimmung allein ist kein Korrektheitsnachweis:** Beide Erzeugungen reproduzieren denselben Regelverstoss. Der unabhängige Abgleich mit den Quellen bleibt erforderlich.
 
 Die Editierbarkeit ist durch native, getrennte und ungesperrte Text-/Frame-Strukturen, Originalimport und Originalrender gestützt. Eine GUI-Öffnung mit manueller Änderung und erneutem Speichern wurde nicht durchgeführt. Interaktives Verhalten, Tastatur, IME, Provider, SCXML-Ausführung, dynamisches Scrollen, tatsächliche ARIA-/Screenreaderzustände und HTML-/TypeScript-Ausgaben wurden in dieser Studie nicht geprüft. iOS und Android bleiben Zukunftsperspektiven.
 

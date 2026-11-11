@@ -48,13 +48,13 @@ Das Beispielprofil verlangt zusätzlich gleiche Komponenten-/Maschinennamen für
 | Vorhandenes Listziel mit Rolle button | host-role |
 | Doppelte Host-ID | host-unique-target |
 | HTML-expanded widerspricht open-Projektion | state-projection |
-| Maschine außerhalb des festgelegten Namenspaars | machine-component-binding |
+| Maschine ausserhalb des festgelegten Namenspaars | machine-component-binding |
 | Ungebundene Namenssuche statt Locator | locator-kind |
 | use verweist auf fehlende Definition | undefined-definition |
 
 Alle 16 Erwartungen erfüllt. **Alle 16 CEM-/SCXML-Schema-Kombinationen akzeptiert**: Viele Fehler liegen im zusätzlichen Profil oder HTML; einzelne Originalschemas sind nicht für diese domänenübergreifende Bedeutung zuständig. Daraus folgt weder ein Fehler ihrer Schemas noch, dass sämtliche HTML-Fälle native ARIA-/HTML-Regeln bestehen würden. Diese stärkere Aussage wurde nicht geprüft.
 
-results.json speichert pro Fall Originalschemaergebnisse, Quellhashes, das verwendete Profil und tatsächliche Auflösungszeugen für Definition/Instanzen. Die eigenen Varianten werden durch die gespeicherten Mutationseingaben und den Runner reproduzierbar erzeugt. Intentional geänderte Fixturequellen erhalten neue Hashpins, außer im ausdrücklich veralteten Revisionsfall. Kein stilles Überschreiben der vorigen Basispakete.
+results.json speichert pro Fall Originalschemaergebnisse, Quellhashes, das verwendete Profil und tatsächliche Auflösungszeugen für Definition/Instanzen. Die eigenen Varianten werden durch die gespeicherten Mutationseingaben und den Runner reproduzierbar erzeugt. Intentional geänderte Fixturequellen erhalten neue Hashpins, ausser im ausdrücklich veralteten Revisionsfall. Kein stilles Überschreiben der vorigen Basispakete.
 
 ## Bewertung und verbleibende Lücke
 

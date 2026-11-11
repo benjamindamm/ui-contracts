@@ -15,7 +15,7 @@
   "E-003": {
    "status": "erfüllt",
    "obs": [
-    "Außenanordnung frei (keine Beanstandung); beobachtet: 22 Top-Knoten der Seite"
+    "Aussenanordnung frei (keine Beanstandung); beobachtet: 22 Top-Knoten der Seite"
    ]
   },
   "E-004": {
@@ -70,7 +70,7 @@
    "status": "erfüllt",
    "obs": [
     [
-     "alle Teilarten (input, listbox/list, option, status, overlay.surface, overlay.scroll.viewport) als unterscheidbare benannte Knoten (Liste in den Listenfällen, Meldung in loading/empty/error); Meldungsfälle: Listbox-Rahmen vorhanden (A: 'Listbox' umschließt die Message Row)"
+     "alle Teilarten (input, listbox/list, option, status, overlay.surface, overlay.scroll.viewport) als unterscheidbare benannte Knoten (Liste in den Listenfällen, Meldung in loading/empty/error); Meldungsfälle: Listbox-Rahmen vorhanden (A: 'Listbox' umschliesst die Message Row)"
     ]
    ]
   },
@@ -368,7 +368,7 @@
    "status": "erfüllt",
    "obs": [
     [
-     "Overlayfläche weiß, border 0, Radius 8, Schatten 0 2px 8px #00000033: ['loading: #00000033 offset(0,2) r=8', 'ready: #00000033 offset(0,2) r=8', 'active: #00000033 offset(0,2) r=8', 'scroll-end: #00000033 offset(0,2) r=8', 'empty: #00000033 offset(0,2) r=8', 'error: #00000033 offset(0,2) r=8']; z-Ordung: Surface-Knoten nach Input (später = darüber), z-Index als Property nicht darstellbar"
+     "Overlayfläche weiss, border 0, Radius 8, Schatten 0 2px 8px #00000033: ['loading: #00000033 offset(0,2) r=8', 'ready: #00000033 offset(0,2) r=8', 'active: #00000033 offset(0,2) r=8', 'scroll-end: #00000033 offset(0,2) r=8', 'empty: #00000033 offset(0,2) r=8', 'error: #00000033 offset(0,2) r=8']; z-Ordung: Surface-Knoten nach Input (später = darüber), z-Index als Property nicht darstellbar"
     ]
    ]
   },
@@ -723,7 +723,7 @@
   "E-003": {
    "status": "erfüllt",
    "obs": [
-    "Außenanordnung frei (keine Beanstandung); beobachtet: 11 Top-Knoten der Seite"
+    "Aussenanordnung frei (keine Beanstandung); beobachtet: 11 Top-Knoten der Seite"
    ]
   },
   "E-004": {
@@ -1076,7 +1076,7 @@
    "status": "erfüllt",
    "obs": [
     [
-     "Overlayfläche weiß, border 0, Radius 8, Schatten 0 2px 8px #00000033: ['loading: #00000033 offset(0,2) r=8', 'ready: #00000033 offset(0,2) r=8', 'active: #00000033 offset(0,2) r=8', 'scroll-end: #00000033 offset(0,2) r=8', 'empty: #00000033 offset(0,2) r=8', 'error: #00000033 offset(0,2) r=8']; z-Ordung: Surface-Knoten nach Input (später = darüber), z-Index als Property nicht darstellbar"
+     "Overlayfläche weiss, border 0, Radius 8, Schatten 0 2px 8px #00000033: ['loading: #00000033 offset(0,2) r=8', 'ready: #00000033 offset(0,2) r=8', 'active: #00000033 offset(0,2) r=8', 'scroll-end: #00000033 offset(0,2) r=8', 'empty: #00000033 offset(0,2) r=8', 'error: #00000033 offset(0,2) r=8']; z-Ordung: Surface-Knoten nach Input (später = darüber), z-Index als Property nicht darstellbar"
     ]
    ]
   },

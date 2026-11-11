@@ -11,15 +11,15 @@ Neun vorhandene Regeln wurden ausdrücklich ausgewählt: aria-allowed-attr, aria
 | Fall | Tatsächliches Originalprüfergebnis |
 | --- | --- |
 | Zwei richtig benannte und zugeordnete Instanzen | Keine violation oder incomplete unter den gewählten Regeln |
-| Offene Combobox mit fehlendem Popupziel | aria-valid-attr-value-Verstoß |
+| Offene Combobox mit fehlendem Popupziel | aria-valid-attr-value-Verstoss |
 | Geschlossene Combobox mit fehlendem Popupziel und ohne aktive Option | Keine Diagnose unter den gewählten Regeln; offene/geschlossene Fälle nicht gleichsetzen |
 | Aktive Option stammt aus Instanz B | Keine Diagnose unter den gewählten Regeln |
 | Kontrollierte Liste stammt aus Instanz B | Keine Diagnose unter den gewählten Regeln |
 | Liste und aktive Option gemeinsam auf B vertauscht | Keine Diagnose unter den gewählten Regeln |
-| Nicht existierende aktive Option | aria-valid-attr-value-Verstoß |
+| Nicht existierende aktive Option | aria-valid-attr-value-Verstoss |
 | Doppelte referenzierte Option-ID | incomplete bei duplicate-id-aria; manuelle Klärung, keine als sicher bestätigte violation ausgeben |
-| Ungültiges aria-expanded | aria-valid-attr-value-Verstoß |
-| Fehlender Name der Eingabe | label-Verstoß |
+| Ungültiges aria-expanded | aria-valid-attr-value-Verstoss |
+| Fehlender Name der Eingabe | label-Verstoss |
 
 Alle zehn vorher gespeicherten Erwartungen wurden erfüllt. „Keine Diagnose“ ist kein vollständiger Accessibility-Nachweis. Der kohärente Bezug auf B kann auf Hostebene gültige ARIA-Ziele besitzen und trotzdem die getrennte Produktinstanzregel des Forschungsfalls verletzen. Das ist kein pauschaler Fehler des Originalprüfers: Ihm fehlt die externe fachliche Zuordnung.
 

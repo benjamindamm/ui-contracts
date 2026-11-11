@@ -20,7 +20,7 @@ Vorgabe vor Einsicht in die Builder-Ausgaben. Die formale `task-report.json` wir
   - `report-a` (required): Handoff/Report von Builder A gegen die Erstbewertung geprüft; Widersprüche mit Verweisen auf konkrete Stellen und gemessene Werte.
   - `report-b` (required): dito für Builder B.
   - `no-override` (required): `first-review.json` unverändert; Korrekturen nur als Nachtrag mit Begründung.
-  - `handoff` (required): `handoff-report-v1.json` gemäß Übergabevertrag.
+  - `handoff` (required): `handoff-report-v1.json` gemäss Übergabevertrag.
 - `context`: Standardbudgets.
 
 ## Kontextregel

@@ -195,7 +195,7 @@
     {
       "id": "A07",
       "classification": "explicit",
-      "statement": "Ein Bild oder eine bloße Bitmap genügt nicht.",
+      "statement": "Ein Bild oder eine blosse Bitmap genügt nicht.",
       "a": {
         "status": "pass",
         "observed": "Bitmap-Fills 0, Vektornetze 0",
@@ -342,12 +342,12 @@
       "statement": "ready: Popup mit 7 Ergebnissen, Viewport 160, keine aktive Option, Statusmeldung.",
       "a": {
         "status": "pass",
-        "observed": "options=7, viewport=160, sichtbar=5 voll/0 teil/2 außerhalb, highlight=keine, status='7 Städte verfügbar.', disabled=['muenchen']",
+        "observed": "options=7, viewport=160, sichtbar=5 voll/0 teil/2 ausserhalb, highlight=keine, status='7 Städte verfügbar.', disabled=['muenchen']",
         "note": ""
       },
       "b": {
         "status": "pass",
-        "observed": "options=7, viewport=160, sichtbar=5 voll/0 teil/2 außerhalb, highlight=keine, status='7 Städte verfügbar.', disabled=['muenchen']",
+        "observed": "options=7, viewport=160, sichtbar=5 voll/0 teil/2 ausserhalb, highlight=keine, status='7 Städte verfügbar.', disabled=['muenchen']",
         "note": ""
       },
       "pair": "beide pass"
@@ -547,7 +547,7 @@
     {
       "id": "AN05",
       "classification": "explicit",
-      "statement": "Der Status steht außerhalb des Popups.",
+      "statement": "Der Status steht ausserhalb des Popups.",
       "a": {
         "status": "pass",
         "observed": "status ist direkter Kindknoten des Fallcontainers, nicht der Surface",
@@ -947,7 +947,7 @@
     {
       "id": "GEO11",
       "classification": "derived",
-      "statement": "Die Gesamthöhen folgen aus den Einzelmaßen.",
+      "statement": "Die Gesamthöhen folgen aus den Einzelmassen.",
       "a": {
         "status": "pass",
         "observed": "Fallhöhen: 100 / 140 / 268 px (Soll 100/124–144/268, ±4)",
@@ -998,12 +998,12 @@
       "statement": "Ergebnis-Viewports clippen bei 160 px.",
       "a": {
         "status": "pass",
-        "observed": "ready/active/scroll-end: 5 volle Zeilen, 0 angeschnitten, 2 außerhalb",
+        "observed": "ready/active/scroll-end: 5 volle Zeilen, 0 angeschnitten, 2 ausserhalb",
         "note": ""
       },
       "b": {
         "status": "pass",
-        "observed": "ready/active/scroll-end: 5 volle Zeilen, 0 angeschnitten, 2 außerhalb",
+        "observed": "ready/active/scroll-end: 5 volle Zeilen, 0 angeschnitten, 2 ausserhalb",
         "note": ""
       },
       "pair": "beide pass"
@@ -1123,7 +1123,7 @@
     {
       "id": "COL01",
       "classification": "explicit",
-      "statement": "Input- und Popupfläche sind weiß.",
+      "statement": "Input- und Popupfläche sind weiss.",
       "a": {
         "status": "pass",
         "observed": "Input und Surface #FFFFFF (10/10 bzw. 6/6)",
@@ -1270,12 +1270,12 @@
       "statement": "Die Popupfläche hat keine zusätzliche Kontur und keine abweichende Füllung.",
       "a": {
         "status": "pass",
-        "observed": "Surface: 0 Strokes, einfarbig weiß, kein Verlauf",
+        "observed": "Surface: 0 Strokes, einfarbig weiss, kein Verlauf",
         "note": ""
       },
       "b": {
         "status": "pass",
-        "observed": "Surface: 0 Strokes, einfarbig weiß, kein Verlauf",
+        "observed": "Surface: 0 Strokes, einfarbig weiss, kein Verlauf",
         "note": ""
       },
       "pair": "beide pass"
@@ -1315,7 +1315,7 @@
     {
       "id": "TY02",
       "classification": "explicit",
-      "statement": "Label, Input und Optionen sind 14 px groß.",
+      "statement": "Label, Input und Optionen sind 14 px gross.",
       "a": {
         "status": "pass",
         "observed": "Label/Input/Option 14 px",
@@ -1331,7 +1331,7 @@
     {
       "id": "TY03",
       "classification": "explicit",
-      "statement": "Der Status ist 12 px groß.",
+      "statement": "Der Status ist 12 px gross.",
       "a": {
         "status": "pass",
         "observed": "Status 12 px",
@@ -1363,7 +1363,7 @@
     {
       "id": "TY05",
       "classification": "derived",
-      "statement": "Kein Text wird durch zu große Schrift abgeschnitten oder umgebrochen.",
+      "statement": "Kein Text wird durch zu grosse Schrift abgeschnitten oder umgebrochen.",
       "a": {
         "status": "pass",
         "observed": "einseilige Texte, keine Truncation im Render; Textboxen 296 px bei 14 px Inter",
@@ -1382,12 +1382,12 @@
       "statement": "Der Input ist als Combobox ausgezeichnet.",
       "a": {
         "status": "fail",
-        "observed": "keine combobox-Rolle/-Annotation; Inputknoten heißt 'input'; pluginData nur layoutDirection/textDirection",
+        "observed": "keine combobox-Rolle/-Annotation; Inputknoten heisst 'input'; pluginData nur layoutDirection/textDirection",
         "note": ""
       },
       "b": {
         "status": "fail",
-        "observed": "keine combobox-Rolle/-Annotation; Inputknoten heißt 'input'; pluginData nur layoutDirection/textDirection",
+        "observed": "keine combobox-Rolle/-Annotation; Inputknoten heisst 'input'; pluginData nur layoutDirection/textDirection",
         "note": ""
       },
       "pair": "beide fail"
@@ -1398,12 +1398,12 @@
       "statement": "Die Listbox ist als solche benannt und trägt den Labelnamen.",
       "a": {
         "status": "fail",
-        "observed": "Listenknoten heißt 'list'/'overlay.scroll.viewport'; keine listbox-Annotation, kein zugänglicher Name 'Stadt auswählen'",
+        "observed": "Listenknoten heisst 'list'/'overlay.scroll.viewport'; keine listbox-Annotation, kein zugänglicher Name 'Stadt auswählen'",
         "note": ""
       },
       "b": {
         "status": "fail",
-        "observed": "Listenknoten heißt 'list'/'overlay.scroll.viewport'; keine listbox-Annotation, kein zugänglicher Name 'Stadt auswählen'",
+        "observed": "Listenknoten heisst 'list'/'overlay.scroll.viewport'; keine listbox-Annotation, kein zugänglicher Name 'Stadt auswählen'",
         "note": ""
       },
       "pair": "beide fail"
@@ -1430,12 +1430,12 @@
       "statement": "Der Status ist eine benannte Live-Region.",
       "a": {
         "status": "pass",
-        "observed": "Statusknoten heißt 'status'; Rolle/Live-Region nicht maschinenlesbar annotiert",
+        "observed": "Statusknoten heisst 'status'; Rolle/Live-Region nicht maschinenlesbar annotiert",
         "note": "Namensbranch des Kriteriums erfüllt."
       },
       "b": {
         "status": "pass",
-        "observed": "Statusknoten heißt 'status'; Rolle/Live-Region nicht maschinenlesbar annotiert",
+        "observed": "Statusknoten heisst 'status'; Rolle/Live-Region nicht maschinenlesbar annotiert",
         "note": "Namensbranch des Kriteriums erfüllt."
       },
       "pair": "beide pass"
@@ -1523,15 +1523,15 @@
     {
       "id": "FREE01",
       "classification": "underdetermined",
-      "statement": "Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei.",
+      "statement": "Aussenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei.",
       "a": {
         "status": "pass",
-        "observed": "Fälle in 2 Spalten (A) bzw. 5×2-Raster (B); Titel/Notizen nur außerhalb der Fallgruppen",
+        "observed": "Fälle in 2 Spalten (A) bzw. 5×2-Raster (B); Titel/Notizen nur ausserhalb der Fallgruppen",
         "note": ""
       },
       "b": {
         "status": "pass",
-        "observed": "Fälle in 2 Spalten (A) bzw. 5×2-Raster (B); Titel/Notizen nur außerhalb der Fallgruppen",
+        "observed": "Fälle in 2 Spalten (A) bzw. 5×2-Raster (B); Titel/Notizen nur ausserhalb der Fallgruppen",
         "note": ""
       },
       "pair": "beide pass"

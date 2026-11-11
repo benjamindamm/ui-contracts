@@ -16,7 +16,7 @@ Nur technische Bindungen für Rollen dieses Laufs. Keine fachlichen Regeln, kein
 - CLI: `npm run openpencil -- --help` (Befehle u. a. `tree`, `info`, `find`, `query`, `export`).
 - Core-API für Generierung und Readback: `tools/openpencil/node_modules/@open-pencil/core/dist/index.js` (u. a. `SceneGraph` aus `@open-pencil/scene-graph`, `exportFigFile(graph)`, `parseFigFile(buffer, {populate:'all'})`).
 - Neues FIG erzeugen: eigenen Node-Skript erstellen, `SceneGraph` befüllen, mit `exportFigFile` als Bytes schreiben, Ergebnisdatei im eigenen Ausgabeordner ablegen.
-- Readback: exportierte Datei erneut mit `parseFigFile` lesen und native Beobachtungen (Typ, Name, Maße, Fills/Strokes, Texte) als JSON-Receipt im eigenen Ausgabeordner speichern.
+- Readback: exportierte Datei erneut mit `parseFigFile` lesen und native Beobachtungen (Typ, Name, Masse, Fills/Strokes, Texte) als JSON-Receipt im eigenen Ausgabeordner speichern.
 
 ## Erlaubte Lesegrenzen je Rolle
 
@@ -26,4 +26,4 @@ Nur technische Bindungen für Rollen dieses Laufs. Keine fachlichen Regeln, kein
 
 ## Hilfsausgaben
 
-- Helfer- und Prüfausgaben (`bootstrap`, `check`, `check_process`, `check.py`) schreibt das jeweilige Werkzeug nur in ein Temp-Verzeichnis außerhalb des Repositories (Pflicht der Tools). Die empfangene JSON-Ausgabe wird anschließend als Receipt in den eigenen Ausgabeordner kopiert; der ursprüngliche Temp-Pfad wird in den Dokumenten genannt.
+- Helfer- und Prüfausgaben (`bootstrap`, `check`, `check_process`, `check.py`) schreibt das jeweilige Werkzeug nur in ein Temp-Verzeichnis ausserhalb des Repositories (Pflicht der Tools). Die empfangene JSON-Ausgabe wird anschliessend als Receipt in den eigenen Ausgabeordner kopiert; der ursprüngliche Temp-Pfad wird in den Dokumenten genannt.

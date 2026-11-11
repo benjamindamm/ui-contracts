@@ -8,7 +8,7 @@
       "examples/autocomplete/reproducibility/run-03/review/ (eigener Ausgabeordner)"
     ],
     "forbiddenPaths": [
-      "examples/** außer examples/autocomplete/reproducibility/run-03/review/",
+      "examples/** ausser examples/autocomplete/reproducibility/run-03/review/",
       "examples/autocomplete/reproducibility/run-03/builder-a/",
       "examples/autocomplete/reproducibility/run-03/builder-b/",
       "docs/**",
@@ -20,7 +20,7 @@
       "TASKS.md (Repository-Root)",
       "jegliche Git-Befehle (log, show, diff, blame, status, Historie)"
     ],
-    "note": "Kriterien wurden ausschließlich aus der eingefrorenen Definition unter components/ abgeleitet, bevor irgendeine Builder-Ausgabe gesehen wurde. Keine Prognosen oder Annahmen über künftige Builder-Outputs. Farben sind als HEX aus den sRGB-Komponenten in tokens.json berechnet (Komponente × 255)."
+    "note": "Kriterien wurden ausschliesslich aus der eingefrorenen Definition unter components/ abgeleitet, bevor irgendeine Builder-Ausgabe gesehen wurde. Keine Prognosen oder Annahmen über künftige Builder-Outputs. Farben sind als HEX aus den sRGB-Komponenten in tokens.json berechnet (Komponente × 255)."
   },
   "criteria": [
     {
@@ -45,8 +45,8 @@
       "id": "E-003",
       "category": "explicit",
       "domain": "document",
-      "requirement": "Die Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei (keine Vorgabe, keine Pflicht).",
-      "source": "components/autocomplete/README.md, 'Exportrahmen': 'Die Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei; die Komponente selbst folgt den Quellen.'",
+      "requirement": "Die Aussenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei (keine Vorgabe, keine Pflicht).",
+      "source": "components/autocomplete/README.md, 'Exportrahmen': 'Die Aussenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei; die Komponente selbst folgt den Quellen.'",
       "expectation": "Abweichungen in Seitenanordnung, Seitentiteln oder Hinweistexten werden nicht beanstandet; sie sind erlaubte Freiheit.",
       "deviationClass": "erlaubte Freiheit"
     },
@@ -64,7 +64,7 @@
       "category": "explicit",
       "domain": "cases",
       "requirement": "Es gibt genau die zehn benannten Fälle: closed, opening, loading, ready, active, scroll-end, selected, empty, error, disabled.",
-      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Die zehn Fälle heißen closed, opening, loading, ready, active, scroll-end, selected, empty, error und disabled.'; components/autocomplete/stories.json, stories[].id (10 Einträge mit diesen ids)",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Die zehn Fälle heissen closed, opening, loading, ready, active, scroll-end, selected, empty, error und disabled.'; components/autocomplete/stories.json, stories[].id (10 Einträge mit diesen ids)",
       "expectation": "Alle zehn Fälle sind vorhanden und tragen diese Namen (bzw. klar darauf bezogene Namen).",
       "deviationClass": "Verletzung klarer Regel"
     },
@@ -155,7 +155,7 @@
       "domain": "anatomy",
       "requirement": "Ein Overlay besitzt keine zweite Auswahlmaschine (keine eigenständige Such-/Auswahlstate).",
       "source": "components/autocomplete/README.md, 'Fachliche Regeln': 'Ein Overlay besitzt keine zweite Auswahlmaschine.'; components/overlay/component.json 'responsibility': 'Popup surface and its own ScrollArea lifecycle; no independent search/selection state.'",
-      "expectation": "Die Overlay-/ScrollArea-Teile führen keine eigene Auswahl-, Wert- oder Suchlogik; die Auswahl gehört ausschließlich zur Autocomplete.",
+      "expectation": "Die Overlay-/ScrollArea-Teile führen keine eigene Auswahl-, Wert- oder Suchlogik; die Auswahl gehört ausschliesslich zur Autocomplete.",
       "deviationClass": "Verletzung klarer Regel"
     },
     {
@@ -235,7 +235,7 @@
       "category": "explicit",
       "domain": "text",
       "requirement": "In allen Fällen kommen sichtbare Texte aus den Inputs, Ergebnislabels und accessibility.rules.json — keine frei erfundenen Texte.",
-      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'In allen Fällen kommen sichtbare Texte aus den Inputs, Ergebnislabels und accessibility.rules.json.'; 'Exportrahmen': 'Farbe, Typografie, Maße und Meldungen dürfen nicht still neu erfunden werden.'",
+      "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'In allen Fällen kommen sichtbare Texte aus den Inputs, Ergebnislabels und accessibility.rules.json.'; 'Exportrahmen': 'Farbe, Typografie, Masse und Meldungen dürfen nicht still neu erfunden werden.'",
       "expectation": "Jeder sichtbare Text im Design ist einem definierten Input-Wert, Ergebnislabel oder Meldetext zuordenbar.",
       "deviationClass": "Verletzung klarer Regel"
     },
@@ -317,7 +317,7 @@
       "domain": "dimensions",
       "requirement": "Die Input-Rahmenbreite beträgt 1px (borderWidth), solid.",
       "source": "components/tokens.json autocomplete.borderWidth (1px); components/autocomplete/layout.css [data-part=\"input\"] { border: var(--ac-border-width) solid var(--ac-border) }",
-      "expectation": "Der Input-Rahmen ist 1px breit in allen Fällen (außer wo explizit anders, z. B. surface hat border: 0).",
+      "expectation": "Der Input-Rahmen ist 1px breit in allen Fällen (ausser wo explizit anders, z. B. surface hat border: 0).",
       "deviationClass": "Verletzung klarer Regel"
     },
     {
@@ -407,7 +407,7 @@
       "domain": "color",
       "requirement": "Input: Hintergrund = surface (#FFFFFF); Textfarbe = text (#172B4D); im disabled-Zustand Textfarbe = disabled (#94A3B8).",
       "source": "components/autocomplete/layout.css [data-part=\"input\"] { background: var(--ac-surface); color: var(--ac-text) }; [data-part=\"input\"]:disabled { color: var(--ac-disabled) }; components/tokens.json",
-      "expectation": "Input-Hintergrund weiß; Input-Text #172B4D; im Fall disabled Input-Text #94A3B8.",
+      "expectation": "Input-Hintergrund weiss; Input-Text #172B4D; im Fall disabled Input-Text #94A3B8.",
       "deviationClass": "Verletzung klarer Regel"
     },
     {
@@ -452,7 +452,7 @@
       "domain": "color",
       "requirement": "Status: Textfarbe = muted (#64748B); im error-Zustand = error (#B91C1C).",
       "source": "components/autocomplete/layout.css [data-part=\"status\"] { color: var(--ac-muted) }; [data-state=\"error\"] [data-part=\"status\"] { color: var(--ac-error) }; components/tokens.json",
-      "expectation": "Status-Text in #64748B, außer im Fall error: #B91C1C.",
+      "expectation": "Status-Text in #64748B, ausser im Fall error: #B91C1C.",
       "deviationClass": "Verletzung klarer Regel"
     },
     {
@@ -461,7 +461,7 @@
       "domain": "color",
       "requirement": "Overlayfläche (surface): Hintergrund = surface (#FFFFFF); border 0 (kein Rahmen); box-shadow 0 2px 8px #0003 (= rgba(0,0,0,0.2)); z-index 10.",
       "source": "components/overlay/layout.css [data-part=\"surface\"] { background: var(--ac-surface); border: 0; border-radius: var(--ac-radius); box-shadow: 0 2px 8px #0003; z-index: 10 }",
-      "expectation": "Die Popupfläche ist weiß, rahmenlos, mit 8px Radius und einem dezenten Schlagschatten (0, 2px, 8px, 20% Schwarz).",
+      "expectation": "Die Popupfläche ist weiss, rahmenlos, mit 8px Radius und einem dezenten Schlagschatten (0, 2px, 8px, 20% Schwarz).",
       "deviationClass": "Verletzung klarer Regel"
     },
     {
@@ -477,9 +477,9 @@
       "id": "E-047",
       "category": "explicit",
       "domain": "typography",
-      "requirement": "Die Basis-Größe ist 14px (fontSize) für Komponente/Input/Optionen/Label (per Vererbung).",
+      "requirement": "Die Basis-Grösse ist 14px (fontSize) für Komponente/Input/Optionen/Label (per Vererbung).",
       "source": "components/tokens.json autocomplete.fontSize (14px); components/autocomplete/layout.css [data-component=\"Autocomplete\"] { font-size: var(--ac-font-size) }; [data-part=\"input\"] { font: inherit }",
-      "expectation": "Label, Input, Optionen haben 14px Schriftgröße.",
+      "expectation": "Label, Input, Optionen haben 14px Schriftgrösse.",
       "deviationClass": "Verletzung klarer Regel"
     },
     {
@@ -495,7 +495,7 @@
       "id": "E-049",
       "category": "explicit",
       "domain": "typography",
-      "requirement": "Der Status hat eine eigene Größe von 12px (statusFontSize).",
+      "requirement": "Der Status hat eine eigene Grösse von 12px (statusFontSize).",
       "source": "components/tokens.json autocomplete.statusFontSize (12px); components/autocomplete/layout.css [data-part=\"status\"] { font-size: var(--ac-status-font-size) }",
       "expectation": "Status-Text in 12px (nicht 14px).",
       "deviationClass": "Verletzung klarer Regel"
@@ -506,7 +506,7 @@
       "domain": "typography",
       "requirement": "Label, Input und Optionen erben Inter 14px, line-height 20px, Farbe text (#172B4D), da keine eigenen font/color-Overrides gesetzt sind.",
       "source": "Ableitung aus: components/autocomplete/layout.css [data-component] (font-family/size/line-height/color) + [data-part=\"input\"] { font: inherit } + fehlende font-/color-Regeln für label/option + components/tokens.json",
-      "expectation": "Label, Inputtext und Optionstext: Inter, 14px, line-height 20px, #172B4D (außer disabled/hinweislich anders definiert).",
+      "expectation": "Label, Inputtext und Optionstext: Inter, 14px, line-height 20px, #172B4D (ausser disabled/hinweislich anders definiert).",
       "deviationClass": "Verletzung klarer Regel"
     },
     {
@@ -524,7 +524,7 @@
       "domain": "typography",
       "requirement": "Die Schriftstärke (font-weight) ist in der Definition nirgends festgelegt (ebenso letter-spacing, Texttransformation, Gewichte für Label/Option/Status).",
       "source": "Fehlen in: components/tokens.json (kein weight-Token), components/autocomplete/layout.css (kein font-weight), components/overlay/layout.css, components/scroll-area/layout.css",
-      "expectation": "Jegliche gewählte Schriftstärke (z. B. 400, 500, 600) ist zulässig und wird nicht als Verletzung gewertet; Abweichungen zwischen den beiden Builds nur dann relevant, wenn sie gegen eine explizite Regel verstoßen (keine vorhanden).",
+      "expectation": "Jegliche gewählte Schriftstärke (z. B. 400, 500, 600) ist zulässig und wird nicht als Verletzung gewertet; Abweichungen zwischen den beiden Builds nur dann relevant, wenn sie gegen eine explizite Regel verstossen (keine vorhanden).",
       "deviationClass": "unzureichend bestimmte Regel"
     },
     {
@@ -623,7 +623,7 @@
       "domain": "clipping-scroll",
       "requirement": "In ready und active (7 Zeilen à 32px, Viewport 160px) sind 5 Zeilen sichtbar und 2 geclippt; die sichtbaren Zeilen sind Berlin, Hamburg, München, Dresden, Köln (Zeilen 1–5); geclippt sind Wien, Zürich (Zeilen 6–7) bei Scroll-Position oben.",
       "source": "Ableitung aus: D-003 (Viewport 160px) + E-029 (32px/Zeile) + components/autocomplete/stories.json (7 Ergebnisse in Reihenfolge Berlin…Zürich)",
-      "expectation": "ready/active: Sichtbereich umfasst die ersten fünf Zeilen (bei obiger Scroll-Position); Wien und Zürich sind außerhalb des Viewports (geclippt, aber vorhanden).",
+      "expectation": "ready/active: Sichtbereich umfasst die ersten fünf Zeilen (bei obiger Scroll-Position); Wien und Zürich sind ausserhalb des Viewports (geclippt, aber vorhanden).",
       "deviationClass": "Verletzung klarer Regel"
     },
     {
@@ -632,7 +632,7 @@
       "domain": "clipping-scroll",
       "requirement": "Die exakte Scroll-Position (Offset) in scroll-end und damit die exakte Anzahl sichtbarer/geclippter Zeilen ist nicht festgelegt. Die Definition verlangt nur, dass die aktive letzte Option (Zürich) sichtbar ist und alle Zeilen erhalten bleiben. Hinzu kommt eine Inkonsistenz: Die README spricht von 'den drei unsichtbaren Daten', während die Arithmetik (7 Zeilen, 5-zeiliger Viewport) bei maximalem Scroll maximal 2 geclippte Zeilen ergibt.",
       "source": "Fehlen einer Offset-Vorgabe in: components/autocomplete/README.md (nur 'entsprechend versetzt'), components/scroll-area/behavior.scxml (REVEAL ohne Ziel-Offset), components/scroll-area/layout.css; Inkonsistenz: components/autocomplete/README.md 'Sichtbare Geometrie' ('die drei unsichtbaren Daten') vs. tokens/stories-Arithmetik",
-      "expectation": "Jede Scroll-Position ist zulässig, bei der 'Zürich' vollständig sichtbar ist und alle 7 Zeilen als Layers existieren; die genaue Offset-Größe und die Zahl 'drei' vs. 'zwei' wird nicht als Verletzung gewertet, ist aber als dokumentierte Definitionslücke zu benennen.",
+      "expectation": "Jede Scroll-Position ist zulässig, bei der 'Zürich' vollständig sichtbar ist und alle 7 Zeilen als Layers existieren; die genaue Offset-Grösse und die Zahl 'drei' vs. 'zwei' wird nicht als Verletzung gewertet, ist aber als dokumentierte Definitionslücke zu benennen.",
       "deviationClass": "unzureichend bestimmte Regel"
     },
     {
@@ -819,7 +819,7 @@
       "id": "U-005",
       "category": "underdetermined",
       "domain": "accessibility",
-      "requirement": "Ob die Status-Region in Fällen mit leerem Text (closed, disabled) als (leerer) Layer vorhanden sein muss oder weggelassen werden darf, ist nicht abschließend festgelegt. Die README sagt 'Ohne Meldung ist sein Text leer' (impliziert Vorhandensein mit leerem Text), aber ob ein leerer Layer Pflicht ist, bleibt offen.",
+      "requirement": "Ob die Status-Region in Fällen mit leerem Text (closed, disabled) als (leerer) Layer vorhanden sein muss oder weggelassen werden darf, ist nicht abschliessend festgelegt. Die README sagt 'Ohne Meldung ist sein Text leer' (impliziert Vorhandensein mit leerem Text), aber ob ein leerer Layer Pflicht ist, bleibt offen.",
       "source": "components/autocomplete/README.md, 'Sichtbare Geometrie': 'Ohne Meldung ist sein Text leer.'; components/autocomplete/component.json anatomy.status; Fehlen einer expliziten Pflicht zur Anzeige eines leeren Status-Layers",
       "expectation": "Ein leerer Status-Text in closed/disabled ist korrekt; ob zusätzlich ein (leerer) Status-Layer vorhanden ist, wird nicht als Verletzung gewertet.",
       "deviationClass": "unzureichend bestimmte Regel"

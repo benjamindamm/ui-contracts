@@ -12,14 +12,14 @@ Unverändert offen: Google DESIGN.md X06/C483 und OpenUI X06/C484. Die genau feh
 
 ## 2. Ausgangslücken des ursprünglichen Abgleichs
 
-Die folgende Tabelle bewahrt den damaligen Arbeitsbedarf. Inzwischen sind konkreter Vorschlag, statisches Referenzpaket und begrenzter Browserlauf vorhanden; maßgeblich für den Abschlussstand sind [CURRENT-STATUS](CURRENT-STATUS.md) und [TASKS](../../TASKS.md). Allgemeiner deklarativer Runtime-Resolver und stärkere Plattform-/AT-/Produktnachweise bleiben offen.
+Die folgende Tabelle bewahrt den damaligen Arbeitsbedarf. Inzwischen sind konkreter Vorschlag, statisches Referenzpaket und begrenzter Browserlauf vorhanden; massgeblich für den Abschlussstand sind [CURRENT-STATUS](CURRENT-STATUS.md) und [TASKS](../../TASKS.md). Allgemeiner deklarativer Runtime-Resolver und stärkere Plattform-/AT-/Produktnachweise bleiben offen.
 
 | Arbeitsblock | Was vorhanden ist | Was tatsächlich noch fehlt |
 | --- | --- | --- |
 | Konkrete Zusammenstellung | Kandidatenvergleich und viele begrenzte Original-/Adapterversuche | Eine begründete konkrete Kombination mit gebundenen Versionen und klarer Rollenverteilung je Domäne. Kein beliebiger Mix aller Kandidaten und kein beschlossener Formatstapel. |
 | Gemeinsame Bindungsregeln | Ausgeführte einzelne Referenz-, Typ-, Instanz-, Ownership- und Layoutbindungen | Ein zusammenhängender Satz für dieselben Definitionen, Instanzen und Teile: erlaubte Zielarten, Geltungsbereiche, Quellenstände und per-information Zuständigkeit. Die einzelnen Forschungsprofile sind noch kein einheitlicher Integrationsvertrag. |
 | Unterkomposition | Originale Wiederverwendung und einzelne Child-/Invoke-/Scrollbeiträge | Eine vollständige Kette Autocomplete A/B → jeweiliges Overlay → eigene referenzierte ScrollArea, mit Parametern, Ereignissen, Fokus-/Scrollverantwortung und Lebenszyklus. Vorhandene Teilnachweise nicht als diese komplette Kette ausgeben. |
-| Typen und Daten | Ausgeführte begrenzte primitive Typ-/Payload- und Einheitenbindungen | Festgelegter benötigter Typumfang einschließlich Optionalität, Defaults, Objekten, Arrays und Fehlerfällen; dokumentierte Grenzen zwischen den gewählten Originalmodellen. Keine Verpflichtung zu beliebigen Typen, solange der Zielumfang offen ist. |
+| Typen und Daten | Ausgeführte begrenzte primitive Typ-/Payload- und Einheitenbindungen | Festgelegter benötigter Typumfang einschliesslich Optionalität, Defaults, Objekten, Arrays und Fehlerfällen; dokumentierte Grenzen zwischen den gewählten Originalmodellen. Keine Verpflichtung zu beliebigen Typen, solange der Zielumfang offen ist. |
 | Versionen und Änderungen | Gepinnte Quellen, Hashbindungen und konkrete Konfliktfälle | Einheitliche Regeln für Paket-/Formatversion, kompatible Aktualisierung, Migration, Namespaces, erlaubte Rekursion/Zyklen und reproduzierbare Auflösung. Einzelne Pins ergeben noch keine gemeinsame Updatepolitik. |
 | Durchgängiger Akzeptanzfall | Zahlreiche echte Originalruntime-/Browser-/AX-Versuche mit erhaltenen Gegenbefunden | Ein zusammenhängendes Paket derselben gewählten Originalartefakte, das den vollständigen ausgewählten Ablauf samt beschädigten Verbindungen gemeinsam prüft. Die641 Bedingungen stammen aus102 unterschiedlichen Gruppen und bilden keinen einzigen vollständigen Produkttest. |
 
@@ -27,13 +27,13 @@ Ein zusätzliches Integrationsartefakt, seine Serialisierung und ein Resolver bl
 
 ## 3. Für den Akzeptanzfall noch festzulegende Regeln
 
-Die Dokumentation nennt noch offene Varianten für freie Eingabe gegenüber ausschließlicher Listenauswahl, Öffnung bei Fokus/Eingabe, Lade-/Leer-/Fehlerzustände, asynchrone und veraltete Ergebnisse, Abbruch sowie Fokusverlust. Wiederholte Optionen benötigen eine ausdrücklich bestimmte Identität bei Sortierung/Ergebnisaktualisierung.
+Die Dokumentation nennt noch offene Varianten für freie Eingabe gegenüber ausschliesslicher Listenauswahl, Öffnung bei Fokus/Eingabe, Lade-/Leer-/Fehlerzustände, asynchrone und veraltete Ergebnisse, Abbruch sowie Fokusverlust. Wiederholte Optionen benötigen eine ausdrücklich bestimmte Identität bei Sortierung/Ergebnisaktualisierung.
 
 Aktive Option, zugänglich gemeldete Auswahl und bestätigter Produktwert bleiben drei Bedeutungen. Im ausgewählten Fall muss feststehen, wann sie zusammenfallen und welches öffentliche Event beziehungsweise welche Rückmeldung ausgelöst wird. Autocomplete bleibt ein Referenzfall, kein beschlossenes Produkt.
 
 ## 4. Spätere Zielplattformen und Agentenübergabe
 
-iOS/Android und weitere native Ziele sind ausdrücklich Zukunftsperspektive außerhalb der abgeschlossenen Recherche, keine fehlende Abnahme dieser Phase.
+iOS/Android und weitere native Ziele sind ausdrücklich Zukunftsperspektive ausserhalb der abgeschlossenen Recherche, keine fehlende Abnahme dieser Phase.
 
 - Webbezüge und native Browserbeobachtung sind belegt. Eine zugesagte Swift/SwiftUI-/sonstige native Supportmatrix, konkrete Typ-/Layout-/Fokusabbildungen und echte Assistenztechnikprüfungen fehlen. Diese stärkeren Nachweise sind nicht still in die Kandidatenmatrix eingerechnet.
 - Der Agentenablauf ist konzeptionell beschrieben. Ausführbare spezialisierte Skills, ein gemeinsamer Prüfaufruf und eine abgesicherte Änderungs-/Übergabeprozedur sind nicht fertiggestellt. Implementierung bleibt spätere Arbeit.
@@ -41,7 +41,7 @@ iOS/Android und weitere native Ziele sind ausdrücklich Zukunftsperspektive auß
 
 ## 5. Dokumentationslücke dieses Abgleichs
 
-TASKS führte zuletzt nur die zwei Matrix-U-Zellen als offen. Die oben stehenden projektweiten Integrationsarbeiten waren zwar in den Entwürfen erwähnt, aber nicht als eigene aktuelle Aufgaben sichtbar. Die Integrationsdateien enthielten außerdem historische Zahlen unter der Überschrift „Aktueller Stand“. Diese Angaben sind nun als historische Zwischenstände markiert; maßgeblich für Matrixzahlen bleibt [CURRENT-STATUS](CURRENT-STATUS.md).
+TASKS führte zuletzt nur die zwei Matrix-U-Zellen als offen. Die oben stehenden projektweiten Integrationsarbeiten waren zwar in den Entwürfen erwähnt, aber nicht als eigene aktuelle Aufgaben sichtbar. Die Integrationsdateien enthielten ausserdem historische Zahlen unter der Überschrift „Aktueller Stand“. Diese Angaben sind nun als historische Zwischenstände markiert; massgeblich für Matrixzahlen bleibt [CURRENT-STATUS](CURRENT-STATUS.md).
 
 ## Abschluss und spätere Arbeit
 

@@ -6,7 +6,7 @@ Stand: 25. Oktober 2026. **Reviewbarer Vorschlag für einen ersten Webreferenzla
 
 ## 1. Arbeitsvorschlag und Ergebnis des Abgleichs
 
-**V:** Für denselben Referenzfall CEM als Interface, DTCG plus CSS als Visual, SCXML als Behavior sowie HTML/WAI-ARIA mit referenziertem APG-Muster als Accessibility verwenden. Eine kleine zusätzliche Verbindungsbeschreibung führt ausschließlich Identität, konkrete Quellziele, Instanzzuordnungen, Ableitungen und Konfliktregeln zusammen. Fachdefinitionen verbleiben in ihren Domänen.
+**V:** Für denselben Referenzfall CEM als Interface, DTCG plus CSS als Visual, SCXML als Behavior sowie HTML/WAI-ARIA mit referenziertem APG-Muster als Accessibility verwenden. Eine kleine zusätzliche Verbindungsbeschreibung führt ausschliesslich Identität, konkrete Quellziele, Instanzzuordnungen, Ableitungen und Konfliktregeln zusammen. Fachdefinitionen verbleiben in ihren Domänen.
 
 **B:** Genau diese Rollen sind in mehreren tatsächlichen Original-/Adapterversuchen verwertbar; vier getrennte Quellen, Typ-/Eventbindungen, native Geometrie, Fokus, Scrollen und AX-Rückmeldung sind jeweils begrenzt ausgeführt. **O:** Ein ausgewählter Hostablauf mit zweistufiger Komposition, Ergebnisdaten, Events/Fokus/Scroll-/AX-Folge ist inzwischen ausgeführt; vollständige Änderungs-/Theme-/AT-/Nativevarianten bleiben offen. Ein [gemeinsames statisches Paket](experiments/2026-10-25/ip01-static/REPORT.md) liegt inzwischen mit 27 erfüllten Erwartungen vor; dessen tatsächliche Dateien, T0/T1-Prüfung und Bindungen ersetzen die vollständige Laufzeitfolge nicht.
 
@@ -112,10 +112,10 @@ flowchart TD
 - `query:string` ist der aktuelle Eingabeentwurf; er darf leer sein. Nutzereingabe und externe Queryänderung werden als Befehle an dieselbe Behaviorinstanz behandelt.
 - `value?:string` bezeichnet den zuletzt bestätigten Datensatzkey. Fehlend bedeutet keine Bestätigung; `null` wird im ersten Typumfang nicht still gleichgesetzt. Keys sind in einer Ergebnismenge eindeutig und nicht leer.
 - `results` folgt T1. Ein Ergebnis mit demselben Key behält bei Umordnung seine fachliche Identität; doppelte Keys werden abgewiesen.
-- `value-change` trägt ausschließlich `{value:string}` und wird im Vorschlag einmal bei ausdrücklicher Nutzerbestätigung emittiert. Das entspricht dem einfachen bisherigen Payloadpfad; die neue vollständige Maschine muss den Zeitpunkt gemeinsam nachweisen.
+- `value-change` trägt ausschliesslich `{value:string}` und wird im Vorschlag einmal bei ausdrücklicher Nutzerbestätigung emittiert. Das entspricht dem einfachen bisherigen Payloadpfad; die neue vollständige Maschine muss den Zeitpunkt gemeinsam nachweisen.
 - Programmatische Wertsetzung wird als eigener Befehl nur für einen bekannten aktuellen Ergebniskey akzeptiert, aktualisiert Wert/angezeigtes Label und erzeugt kein zweites Nutzerbestätigungsereignis. Unbekannter Key führt zu einer Parameterdiagnose.
 
-**V:** Queryentwurf und bestätigter Wert sind getrennt. Während neuer Eingabe bleibt der letzte bestätigte Key erhalten; bloßes Tippen emittiert keine Bestätigung. Alternativ wäre automatische Rücknahme der Auswahl möglich, würde aber eine ausdrücklich definierte Clear-/Eventsemantik benötigen. Diese Produktvariante wird nicht still mit IP-01 vermischt.
+**V:** Queryentwurf und bestätigter Wert sind getrennt. Während neuer Eingabe bleibt der letzte bestätigte Key erhalten; blosses Tippen emittiert keine Bestätigung. Alternativ wäre automatische Rücknahme der Auswahl möglich, würde aber eine ausdrücklich definierte Clear-/Eventsemantik benötigen. Diese Produktvariante wird nicht still mit IP-01 vermischt.
 
 **V:** Interne Requestnummern sind nichtnegative exakt darstellbare Ganzzahlen im festgelegten Bereich. Kombination aus Instanzpfad, Lifecycle-Epoche und laufender Nummer identifiziert eine Anfrage; Erschöpfung darf nicht durch kollidierendes stilles Zurücksetzen behandelt werden. Providerdaten sind Anwendungsdaten, keine fünfte Contractdomäne: Interface beschreibt ihre Form, Behavior bestimmt, welche Antwort aktuell ist.
 
@@ -134,7 +134,7 @@ flowchart TD
 
 **V:** Öffnen durch ArrowDown startet die eigene Verwendung. Nach aktueller Antwort aktiviert dieser Navigationseinstieg die erste aktivierbare Option. Öffnen durch Tippen startet eine Anfrage, übernimmt aber nicht automatisch eine Option. Reiner Fokus öffnet im vorgeschlagenen Fall nicht; ein abweichender Focus-open-Vertrag wäre ausdrücklich eine andere Variante.
 
-**V:** ArrowDown/ArrowUp in `ready` bewegen unter Beachtung deaktivierter Optionen, zunächst ohne zyklisches Umspringen. DOM-Fokus verbleibt im Input. Enter mit aktiver aktueller Option übernimmt deren Key und Label, emittiert genau einmal `value-change` und schließt. Enter ohne aktivierbare Option bestätigt nichts. Escape schließt ohne neue Bestätigung; native Texteingabetasten bleiben erhalten. Eingabekomposition darf nicht durch vorzeitige Navigation/Bestätigung unterbrochen werden.
+**V:** ArrowDown/ArrowUp in `ready` bewegen unter Beachtung deaktivierter Optionen, zunächst ohne zyklisches Umspringen. DOM-Fokus verbleibt im Input. Enter mit aktiver aktueller Option übernimmt deren Key und Label, emittiert genau einmal `value-change` und schliesst. Enter ohne aktivierbare Option bestätigt nichts. Escape schliesst ohne neue Bestätigung; native Texteingabetasten bleiben erhalten. Eingabekomposition darf nicht durch vorzeitige Navigation/Bestätigung unterbrochen werden.
 
 **V:** Fachliche Navigationsaktionen gehören in Behavior. Beispielsweise ist „nächste Option“ konkret: aktuellen Key in der aktuellen geordneten Keyliste finden, in gewählter Richtung bis zur nächsten nicht deaktivierten Option suchen, an der Grenze stehenbleiben; ohne bisherigen Key erste beziehungsweise letzte aktivierbare Option wählen; bei leerer Menge activeKey löschen. Keine unbestimmten Guard-/Actionnamen als fertige Semantik akzeptieren. Die spätere SCXML/ECMAScript-Implementierung dieser Regel gehört zum Behaviorartefakt, nicht zu einer heimlich entscheidenden Integrationsschicht.
 
@@ -148,7 +148,7 @@ flowchart TD
 | --- | --- | --- |
 | `activeKey` | Behavior: aktuell navigierter Key, gegebenenfalls fehlend | Visuelle Hervorhebung; Reveal-Auftrag; aktives zugängliches Ziel |
 | Gemeldete Popupauswahl | Accessibilityregel des gewählten Listboxmusters: folgt hier activeKey | `aria-activedescendant` am Input; `aria-selected` an genau der aktiven Option |
-| `value` | Behavior: zuletzt ausdrücklich bestätigter Key | Öffentliches Event erst beim Commit; bleibt bei bloßer Navigation unverändert |
+| `value` | Behavior: zuletzt ausdrücklich bestätigter Key | Öffentliches Event erst beim Commit; bleibt bei blosser Navigation unverändert |
 
 **V:** Diese Zuordnungsregel steht in Accessibility beziehungsweise in der zusätzlichen Verbindung zu Behavior; eine zweite manuell gepflegte Auswahlvariable für ARIA ist nicht vorgesehen. Die Wörter active/selected/value allein begründen keine Gleichheit.
 
@@ -156,7 +156,7 @@ flowchart TD
 
 **V:** Autocomplete verwendet Overlay; Overlay verwendet ScrollArea. Jede neue Verwendung bereitet die originale Modellfunktion frisch vor und erhält eigene Daten/Parameter. Gleiche Definitionsbytes und dieselbe lokale Invoke-ID dürfen keine gemeinsamen Laufzeitdaten erzeugen.
 
-**B:** Beim Defaultinvoker 4.3.28 wurden trotz getrennter Eltern bei gleicher Childquelle gekoppelte Kinddaten beobachtet. Ein enger eigener Invoker mit frischer Vorbereitung besteht sechs kontrollierte Bedingungen. **O:** Er akzeptiert bisher nur eine bestimmte lokale Childdatei; zweistufige Auflösung, Initialisierungsrennen, Fehlerpropagation und Wiederherstellung sind nicht damit erledigt. Der [anschließende Zweiebenenversuch](experiments/2026-10-25/ip01-lifecycle/REPORT.md) erfüllt sechs von acht Erwartungen; sofortiges Reopen verliert den neuen Invoke-Sendpfad und Initialisierungsfehler erreichen den vorgesehenen Parentübergang nicht. Diese beiden Blocker bleiben im ersten Pfad erhalten. [Gezielte Folgevarianten](experiments/2026-10-25/ip01-followup/REPORT.md) bestehen sechs neue Bedingungen und acht nicht erneut gezählte Regressionen: Native idlocation und ein expliziter Fehlerrelay umgehen die beiden Grenzen im ausgewiesenen lokalen Forschungsadapter. Die vollständigen IP-Gates bleiben offen. Die URI-Dateikopie-Diagnose ist keine empfohlene Produktlösung.
+**B:** Beim Defaultinvoker 4.3.28 wurden trotz getrennter Eltern bei gleicher Childquelle gekoppelte Kinddaten beobachtet. Ein enger eigener Invoker mit frischer Vorbereitung besteht sechs kontrollierte Bedingungen. **O:** Er akzeptiert bisher nur eine bestimmte lokale Childdatei; zweistufige Auflösung, Initialisierungsrennen, Fehlerpropagation und Wiederherstellung sind nicht damit erledigt. Der [anschliessende Zweiebenenversuch](experiments/2026-10-25/ip01-lifecycle/REPORT.md) erfüllt sechs von acht Erwartungen; sofortiges Reopen verliert den neuen Invoke-Sendpfad und Initialisierungsfehler erreichen den vorgesehenen Parentübergang nicht. Diese beiden Blocker bleiben im ersten Pfad erhalten. [Gezielte Folgevarianten](experiments/2026-10-25/ip01-followup/REPORT.md) bestehen sechs neue Bedingungen und acht nicht erneut gezählte Regressionen: Native idlocation und ein expliziter Fehlerrelay umgehen die beiden Grenzen im ausgewiesenen lokalen Forschungsadapter. Die vollständigen IP-Gates bleiben offen. Die URI-Dateikopie-Diagnose ist keine empfohlene Produktlösung.
 
 **V – Referenzruntime-Vorschlag:** Den vorhandenen isolierenden Adapter für einen exakt aufgelösten lokalen Definitionsbestand erweitern; jeden Parent und jedes Kind frisch vorbereiten, Inputs explizit übergeben und ursprüngliche send-/Parent-/Cancel-Mechanismen erhalten. Kein gemeinsamer vorbereiteter Funktionscache als Ausführungskontext. Alternative: eine andere Runtime oder explizite Hostkomposition mit neuem Nachweis; kein automatischer Transfer der bisherigen Ergebnisse.
 
@@ -168,7 +168,7 @@ flowchart TD
 4. ScrollArea löst `REVEAL(key, requestId)` nur innerhalb ihres eigenen Inhalts auf. Sie verwendet die tatsächliche Scrollfunktion, liest tatsächlichen Offset/Sichtbarkeit zurück und meldet REVEALED. Ein übergebener Wunschoffset wird nicht als gemessener Offset ausgegeben.
 5. CLOSE invalidiert Provider- und Reveal-Aufträge, beendet ScrollArea und Overlay und entfernt alle zugehörigen Views/Bezüge. Der Input bleibt bestehen; aktives Nachfahrenziel wird vorher bereinigt.
 6. Ein verspätet fertig erzeugtes Kind einer geschlossenen Epoche wird beendet und nicht nachträglich gestartet/eingehängt. Wiederöffnen erzeugt frische Daten; B bleibt unverändert.
-7. Fehler bei Childinitialisierung schließen den nicht nutzbaren Overlaykontext und melden über die weiterhin vorhandene Statusregion. Providerfehler bei funktionsfähigem Overlay nutzen dagegen active.error.
+7. Fehler bei Childinitialisierung schliessen den nicht nutzbaren Overlaykontext und melden über die weiterhin vorhandene Statusregion. Providerfehler bei funktionsfähigem Overlay nutzen dagegen active.error.
 
 **V:** ScrollArea verarbeitet dieselben Arrow-Tasten nicht zusätzlich als Auswahl. Autocomplete entscheidet über Navigation; der Child erfüllt nur den daraus gebundenen Reveal-Auftrag. Cancel und erneutes Öffnen sind Teil des Vertrags, nicht reine Aufräumdetails.
 
@@ -177,10 +177,10 @@ flowchart TD
 **V:** Alle Zahlen und Einheiten führen die Visualquellen. Beziehungen referenzieren diese Werte, sie duplizieren keinen zweiten führenden Abstand oder eine zweite Maximalhöhe.
 
 - Referenzwerte: Abstand 8px, Viewport-Maximalhöhe 160px, sieben gleich hohe Zeilen zu je 32px. Feste Zeilen erfordern eine ausdrückliche Nichtschrumpf-Regel; der tatsächliche Flex-Gegenbefund bleibt relevant.
-- Die Overlayfläche bezieht sich auf die eigene Inputkante; das Webprofil bindet Unterkante und gleiche linke Kante bei horizontalem LTR-Layout. Größenänderungen müssen die Relation erhalten.
+- Die Overlayfläche bezieht sich auf die eigene Inputkante; das Webprofil bindet Unterkante und gleiche linke Kante bei horizontalem LTR-Layout. Grössenänderungen müssen die Relation erhalten.
 - ScrollArea verwendet im Referenzfall auto. Clip wäre gültiges CSS, verletzt aber den hier geforderten Reveal-Fähigkeitsvertrag und wird als Konflikt zwischen Politik und Anforderung gemeldet.
-- Bei gleich hohen Zeilen entspricht 160px fünf Zeilen. Bei variablen Zeilen bleibt die geometrische Grenze maßgeblich; „immer fünf vollständige Optionen“ ist keine abgeleitete Garantie.
-- DTCG-Zahl und Einheit bleiben erhalten. rem wird durch die tatsächliche Rootschriftgröße bestimmt, nicht pauschal in einen scheinbar identischen px-Skalar verwandelt.
+- Bei gleich hohen Zeilen entspricht 160px fünf Zeilen. Bei variablen Zeilen bleibt die geometrische Grenze massgeblich; „immer fünf vollständige Optionen“ ist keine abgeleitete Garantie.
+- DTCG-Zahl und Einheit bleiben erhalten. rem wird durch die tatsächliche Rootschriftgrösse bestimmt, nicht pauschal in einen scheinbar identischen px-Skalar verwandelt.
 
 **V:** Light/Dark zunächst durch explizite Auswahl vollständiger Visual-Tokenquellen mit gleichen semantischen Tokenpfaden führen; Auswahlregel gehört zu Visual/Hostkontext. Das ist eine zusätzliche klare Themenbindung, keine erfundene native DTCG-Dark-Mode-Syntax. Interface, Behavior und A11y werden durch Themewechsel nicht neu definiert.
 
@@ -188,7 +188,7 @@ flowchart TD
 
 ## 11. Accessibility und Datenrückmeldung
 
-**V:** Inputname aus dem instanzbezogenen Labelparameter; Listboxname aus einer in A11y festgelegten Benennungsregel. Optionsname stammt gemäß A11y-Regel aus `result.label`. Datenquelle liefert den Text, A11y definiert dessen zugängliche Verwendung; keine duplizierte Liste manuell gepflegter Optionsnamen.
+**V:** Inputname aus dem instanzbezogenen Labelparameter; Listboxname aus einer in A11y festgelegten Benennungsregel. Optionsname stammt gemäss A11y-Regel aus `result.label`. Datenquelle liefert den Text, A11y definiert dessen zugängliche Verwendung; keine duplizierte Liste manuell gepflegter Optionsnamen.
 
 **V:** Zustandsprojektion liefert expanded, busy und active-descendant aus tatsächlicher passender Behavior-/Hostlage. Vor dem Entfernen einer aktiven Option wird ihr Bezug bereinigt. Ziel muss existieren, die verlangte Rolle besitzen und im unterstützten Beziehungsbereich derselben Suche liegen.
 
@@ -202,7 +202,7 @@ flowchart TD
 | --- | --- | --- |
 | Öffentlicher Name, Typ, Optionalität, deklarierter Default | Interface/CEM | Typsicht und Bridge-Signaturen daraus ableiten; kein eigener inkompatibler Payload in Behavior. |
 | Aktuelle Query, gültige Ergebnisgeneration, activeKey, Bestätigungszeitpunkt | Behaviorinstanz auf validierten Eingaben | Visual/A11y lesen projizierten Zustand; Integrator entscheidet nicht zusätzlich über Auswahl. |
-| Ergebnislabels/-keys | Validierter Providerdatensatz nach Interfaceform und Behavior-Annahme | A11y verwendet Labels gemäß ihrer Regel; falsche oder veraltete Generation ablehnen/verwerfen. |
+| Ergebnislabels/-keys | Validierter Providerdatensatz nach Interfaceform und Behavior-Annahme | A11y verwendet Labels gemäss ihrer Regel; falsche oder veraltete Generation ablehnen/verwerfen. |
 | Tokenwerte, Geometrie, Theme und Overflowpolitik | Visual | CSS-/Hostwerte daraus ableiten; Quelle ändern statt generierte Variablen eigenständig pflegen. |
 | Namen-/Rollen-/Relations-/Meldungsregeln und Patternanforderung | Accessibility | Hostattribute und Meldungen ableiten; widersprechende Keyboard-/Fokusbindung ist ein gemeinsamer Konflikt. |
 | Tatsächlicher Scrolloffset, Sichtbarkeit und DOM-Lage | Zielhostmessung | ScrollArea meldet beobachteten Zustand; Wunschwert ist kein Messwert. |
@@ -214,9 +214,9 @@ flowchart TD
 
 ## 13. Auflösung, Versionen und Änderungsprotokoll
 
-**V:** Im ersten Referenzlauf ausschließlich den exakt aufgelösten lokalen Paketabschluss verwenden. Zu jeder Quelle tatsächliche Datei-/Modellversion, Inhaltsfingerprint, Adapterstand und ihre fachliche Rolle aufzeichnen. Keine implizite Aktualisierung über latest oder einen neu aufgelösten Versionsbereich. Originalnorm, Paketversion und eigene Komponentendefinitionsrevision bleiben getrennt.
+**V:** Im ersten Referenzlauf ausschliesslich den exakt aufgelösten lokalen Paketabschluss verwenden. Zu jeder Quelle tatsächliche Datei-/Modellversion, Inhaltsfingerprint, Adapterstand und ihre fachliche Rolle aufzeichnen. Keine implizite Aktualisierung über latest oder einen neu aufgelösten Versionsbereich. Originalnorm, Paketversion und eigene Komponentendefinitionsrevision bleiben getrennt.
 
-**V:** Erst Originalartefakte laden/prüfen, dann typisierte Ziele/Definitionen, danach Verwendungen/Beziehungen und schließlich tatsächliche Runtime. Fehlende Originalvalidatoren werden als solche ausgewiesen. ARIA/APG erhalten kein erfundenes neutrales Dateischema; der DTCG-Teilprüfer wird nicht zum umfassenden Originalvalidator erklärt.
+**V:** Erst Originalartefakte laden/prüfen, dann typisierte Ziele/Definitionen, danach Verwendungen/Beziehungen und schliesslich tatsächliche Runtime. Fehlende Originalvalidatoren werden als solche ausgewiesen. ARIA/APG erhalten kein erfundenes neutrales Dateischema; der DTCG-Teilprüfer wird nicht zum umfassenden Originalvalidator erklärt.
 
 **V:** Hashpins müssen sowohl nach semantisch absichtlichen Testmutationen als auch nach abgeleiteten Änderungen nachvollziehbar aktualisiert werden. Referenzvorschlag für die Bündelrevision ist der bereits konsistent geprüfte eigene Algorithmus aus [Ownership](experiments/2026-10-25/ownership-conflicts/run.py): deterministisch serialisierte Dateihashmap plus Policyhash. Derselbe Algorithmus gilt für Ausgangs- und Folgerevision. Seine genaue Paketfeldzuordnung ist noch kein publizierter Standard.
 
@@ -230,7 +230,7 @@ Der [Abnahmeplan IP-01](INTEGRATION-ACCEPTANCE.md) definiert neue geplante Erwar
 
 **V:** Positive A/B-Folge: Start geschlossen → A öffnet/Children bereit → aktuelle Ergebnisse → aktive Navigation/Reveal → expliziter Commit → öffentliches Event/Status/Cancel → unabhängiges B → erneutes A mit frischer Epoche. Zusätzlich Queryrevisionen, vertauschte Antworten, Umordnung, entfernte aktive Option, leere/fehlerhafte Daten und Theme-/Geometrieänderung.
 
-**V:** Negative Varianten beschädigen jeweils genau eine Beziehung. Bei semantischen Gegenfällen Integritätspins bewusst korrekt aktualisieren, damit ein bloßer Hashfehler nicht alle Ziel-/Typ-/Instanzfehler verdeckt. Original- und Zusatzdiagnosen bleiben getrennt. Gemeinsame Bedingungen nicht mehrfach zählen, wenn sie mehrere Kriterien stützen.
+**V:** Negative Varianten beschädigen jeweils genau eine Beziehung. Bei semantischen Gegenfällen Integritätspins bewusst korrekt aktualisieren, damit ein blosser Hashfehler nicht alle Ziel-/Typ-/Instanzfehler verdeckt. Original- und Zusatzdiagnosen bleiben getrennt. Gemeinsame Bedingungen nicht mehrfach zählen, wenn sie mehrere Kriterien stützen.
 
 **O – Abnahmetore:** T1-Daten-/Defaultprüfung; vollständige Zweiebenen-Childisolation inklusive Cancel während Initialisierung; gemeinsamer Token-/Theme-/Layoutpfad; vollständige Zustands-/Event-/Fokus-/Meldungsfolge. Erst wenn diese Tore tatsächlich ausgeführt sind, ist der gewählte Referenzlauf abgenommen. Produkt-/Browser-/AT-Support erfordert zusätzliche ausdrücklich benannte Umgebung.
 
@@ -238,9 +238,9 @@ Der [Abnahmeplan IP-01](INTEGRATION-ACCEPTANCE.md) definiert neue geplante Erwar
 
 **V:** Vier fachliche Bearbeitungsrollen plus Koordination: Interface ändert Signaturen; Visual Tokens/Layout; Behavior Zustands-/Daten-/Ereignislogik; A11y Pattern/Namen/Relations-/Meldungsregeln. Koordination pflegt Referenzen/Quellenabschluss und weist fachliche Konflikte zu. Das sind Arbeitsrollen, keine bereits erstellten Skills oder authentifizierten Berechtigungen.
 
-Ein Änderungspaket liest zuerst Pins und Zuständigkeiten, beschreibt die führende Information, ändert deren Quelle und aktualisiert ausgewiesene Ableitungen. Danach eigene Domänenprüfung, betroffene Beziehungen, Runtime-Abnahmetore und manuelle Zielprüfungen ausführen. Übergabe enthält Eingaben, Erwartungen, tatsächliche Ausgaben, Diagnosen, alte/neue Revision und verbliebene Grenzen. Forschungsergebnis, übernommene Änderung und produktive Freigabe sind getrennte Stati. Lokale Commits erfolgen nach Nutzerauftrag beziehungsweise vereinbartem großen Arbeitspaket; kein automatischer Push.
+Ein Änderungspaket liest zuerst Pins und Zuständigkeiten, beschreibt die führende Information, ändert deren Quelle und aktualisiert ausgewiesene Ableitungen. Danach eigene Domänenprüfung, betroffene Beziehungen, Runtime-Abnahmetore und manuelle Zielprüfungen ausführen. Übergabe enthält Eingaben, Erwartungen, tatsächliche Ausgaben, Diagnosen, alte/neue Revision und verbliebene Grenzen. Forschungsergebnis, übernommene Änderung und produktive Freigabe sind getrennte Stati. Lokale Commits erfolgen nach Nutzerauftrag beziehungsweise vereinbartem grossen Arbeitspaket; kein automatischer Push.
 
-**O:** Ausführbare Skills und ein gemeinsamer Prüfaufruf bleiben späterer Implementierungsauftrag. Die [konkrete Übergabe](IMPLEMENTATION-HANDOFF.md) priorisiert den unabhängigen zweistufigen Lifecyclekern, anschließend statische Auflösung und vollständige Hostabnahme. Sie enthält auch noch zu reviewende Randfallregeln für Fokusverlust, IME, Eingaben während Initialisierung und fehlerhafte Daten. Ein Coding-Agent soll mit diesem Profil und dem Abnahmeplan beginnen können, ohne die 16 Kandidaten erneut durchzuzählen. Er darf offene Nachweise nicht durch eine neue allgemeine Daten-/Produktsprache verdecken.
+**O:** Ausführbare Skills und ein gemeinsamer Prüfaufruf bleiben späterer Implementierungsauftrag. Die [konkrete Übergabe](IMPLEMENTATION-HANDOFF.md) priorisiert den unabhängigen zweistufigen Lifecyclekern, anschliessend statische Auflösung und vollständige Hostabnahme. Sie enthält auch noch zu reviewende Randfallregeln für Fokusverlust, IME, Eingaben während Initialisierung und fehlerhafte Daten. Ein Coding-Agent soll mit diesem Profil und dem Abnahmeplan beginnen können, ohne die 16 Kandidaten erneut durchzuzählen. Er darf offene Nachweise nicht durch eine neue allgemeine Daten-/Produktsprache verdecken.
 
 ## 16. Plattformumfang und tatsächlich noch zu treffende Entscheidungen
 
@@ -249,7 +249,7 @@ Ein Änderungspaket liest zuerst Pins und Zuständigkeiten, beschreibt die führ
 | Entscheidung zur Review | Konkreter Vorschlag | Offene Alternative / Grenze |
 | --- | --- | --- |
 | D1: Referenzkombination | Der oben gepinnte CEM/DTCG+CSS/SCXML/HTML-ARIA-Stack für einen vollständigen ersten Fall | Andere nachgewiesene Kandidaten als eigene Profilvarianten, keine automatische Beweisübertragung. Produktwahl weiterhin gesondert. |
-| D2: Träger der Beziehungen | Kleine versionierte JSON-Beschreibung außerhalb der Domänen | YAML mit festgelegter Normalisierung oder Ableitung aus vorhandenen Metadaten; genaue Syntax/Schema erst im Umsetzungsentwurf. |
+| D2: Träger der Beziehungen | Kleine versionierte JSON-Beschreibung ausserhalb der Domänen | YAML mit festgelegter Normalisierung oder Ableitung aus vorhandenen Metadaten; genaue Syntax/Schema erst im Umsetzungsentwurf. |
 | D3: Runtimebindung | Frische ursprüngliche Vorbereitung und erweiterter isolierender lokaler Invoker | Andere Runtime/Hostkomposition nur mit neuer Semantik-/Lifecycleprüfung. Bestehenden Defaultinvoke-Gegenbefund nicht ignorieren. |
 | D4: Fachlicher Referenzumfang | Manuelle Listenauswahl, getrennte Query/Bestätigung, nichtzyklische Navigation, versionierte asynchrone Ergebnisse, T1-Resultrecords | Freitextbestätigung, automatische Auswahlrücknahme und andere Fokus-/Popupvarianten ändern den Vertrag und seine Tests. |
 

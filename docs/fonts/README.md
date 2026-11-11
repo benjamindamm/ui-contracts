@@ -50,7 +50,7 @@ Der Ausgabeordner der Vorschau muss neu oder leer sein; Libraries und historisch
 
 Der Validator prüft Dateihashes, Bibliotheksgrenzen, eine ausdrücklich referenzierte Lizenzdatei, Tokenbindung, TTF-Metadaten (Familie/PostScriptname/Gewicht/statisch) und WOFF2-Header. Das ist keine vollständige OpenType-Konformitätsprüfung oder vollständige WOFF2-Decodierung.
 
-Die Vorschau lädt die hashgeprüften TTF-Bytes explizit über `fontManager.markLoaded` der gepinnten OpenPencil-Core-Version 0.16.0. CanvasKit muss die Familie erkennen und für den Probetext ausschließlich vorhandene Glyphen melden. Der Adapter exportiert ein FIG, liest die Text-/Familien-/Gewichtswerte zurück und rendert ein PNG. Netzwerk-Fetch ist dabei gesperrt; geladene Quellen werden nach dem Rendern erneut geprüft. CSS und HTML referenzieren ausschließlich die lokalen WOFF2-Dateien, ohne `local()`-Abkürzung.
+Die Vorschau lädt die hashgeprüften TTF-Bytes explizit über `fontManager.markLoaded` der gepinnten OpenPencil-Core-Version 0.16.0. CanvasKit muss die Familie erkennen und für den Probetext ausschliesslich vorhandene Glyphen melden. Der Adapter exportiert ein FIG, liest die Text-/Familien-/Gewichtswerte zurück und rendert ein PNG. Netzwerk-Fetch ist dabei gesperrt; geladene Quellen werden nach dem Rendern erneut geprüft. CSS und HTML referenzieren ausschliesslich die lokalen WOFF2-Dateien, ohne `local()`-Abkürzung.
 
 Für die **im Repository abgelegte** Webprobe:
 
@@ -59,7 +59,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 # Browser: http://127.0.0.1:8765/examples/fonts/example/
 ```
 
-Bei frei gewählten Vorschauordnern außerhalb des Repositories muss ein gemeinsamer HTTP-Root die erzeugten relativen Assetpfade erreichbar machen. Die Vorschau kopiert keine zweite Fontbibliothek in ihren Ausgabeordner.
+Bei frei gewählten Vorschauordnern ausserhalb des Repositories muss ein gemeinsamer HTTP-Root die erzeugten relativen Assetpfade erreichbar machen. Die Vorschau kopiert keine zweite Fontbibliothek in ihren Ausgabeordner.
 
 ## Ausgeführter Nachweis
 
@@ -67,7 +67,7 @@ Bei frei gewählten Vorschauordnern außerhalb des Repositories muss ein gemeins
 
 - Dateiprüfung: zwei statische Schnitte, vier passende Fontdateien, Lizenzhash und vorhandener Inter-Token.
 - OpenPencil/CanvasKit: beide Familien erkannt, alle 49 Zeichen des Probetexts je Schnitt abgedeckt; vier Textnodes mit je drei zurückgelesenen Sollwerten. PNG visuell kontrolliert, keine Netzwerk-Fetchversuche.
-- BrowserOS neo / Chromium: beide lokalen WOFF2-Dateien geladen; SHA-256 der Browserantworten stimmt mit dem Manifest überein. FontFace-Status `loaded` für 400 und 700. Die gemessenen Probetextbreiten unterscheiden sich: 613,88671875 bzw. 631,1015625 px bei 24 px Schriftgröße.
+- BrowserOS neo / Chromium: beide lokalen WOFF2-Dateien geladen; SHA-256 der Browserantworten stimmt mit dem Manifest überein. FontFace-Status `loaded` für 400 und 700. Die gemessenen Probetextbreiten unterscheiden sich: 613,88671875 bzw. 631,1015625 px bei 24 px Schriftgrösse.
 - Im ursprünglichen Inter-Nachweis: fünfzehn positive/negative Prüferregressionen, unter anderem falscher Hash, fehlende Datei/Lizenz, falsches Gewicht/Familie, unlesbares TTF, falsche WOFF2-Länge, falscher Token und unsicherer Pfad.
 
 Alle Ergebnisse sind `PASS_LIMITED`, `release:false`. Nicht nachgewiesen: vollständige Unicode-Abdeckung, identische Pixel auf allen Plattformen, automatische Bereitstellung im laufenden OpenPencil-Editor auf dem Server, Native-App-Einbettung oder allgemeine Accessibility-Konformität. Ein FIG-Familienname allein garantiert keine auf jedem Ziel vorhandenen identischen Fontbytes. Die Schriftdateien bleiben ausdrücklich bereitzustellende Assets.

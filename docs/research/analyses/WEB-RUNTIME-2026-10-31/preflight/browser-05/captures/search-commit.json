@@ -231,7 +231,7 @@
       "Input": [
         {
           "detail": {
-            "value": "0123 Straße"
+            "value": "0123 Strasse"
           },
           "focus": "Input-instance-control"
         }
@@ -260,12 +260,12 @@
       "Input": {
         "phase": "interactive",
         "data": {
-          "value": "0123 Straße",
+          "value": "0123 Strasse",
           "enabled": true,
           "readOnly": true
         },
         "focus": "SelectWithSearch-trigger",
-        "value": "0123 Straße",
+        "value": "0123 Strasse",
         "readOnly": true,
         "disabled": false,
         "options": []

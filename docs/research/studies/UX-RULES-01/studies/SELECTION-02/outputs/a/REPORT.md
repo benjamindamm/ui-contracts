@@ -1,6 +1,6 @@
 # SELECTION-02-a · Builderbericht
 
-Bereit zur unabhängigen Prüfung. Ausschließlich eigene Aufgabe/Eingabe und relevante Kandidatenbibliotheksdateien verwendet.
+Bereit zur unabhängigen Prüfung. Ausschliesslich eigene Aufgabe/Eingabe und relevante Kandidatenbibliotheksdateien verwendet.
 
 ## Entscheidung
 
@@ -8,7 +8,7 @@ Bereit zur unabhängigen Prüfung. Ausschließlich eigene Aufgabe/Eingabe und re
 
 ## Lieferung
 
-index.html direkt lokal öffnen. Vier native Input-Felder und ein natives required Select mit gelieferten Labels/Reihenfolge. Keine Vorbelegung oder geografische Vermutung. Adapter implementieren value-change und die relevanten Hostupdates aus SCXML einschließlich Optionsvalidierung, unbekannter/disabled Keys, options-change, enabled/readOnly und stiller SET_VALUE-Semantik. Browser übernimmt Select-Popup, Fokus und Tastatur. Nichtleere Fehler werden über aria-describedby gebunden; aria-invalid erscheint erst bei tatsächlicher lokaler Prüfung. Fehler fokussiert das erste Feld. Änderungen entfernen veralteten Erfolg. Telefonnummer bleibt String. Kein Versand, Speicher oder Backend; tel ist keine Rufnummernformatprüfung.
+index.html direkt lokal öffnen. Vier native Input-Felder und ein natives required Select mit gelieferten Labels/Reihenfolge. Keine Vorbelegung oder geografische Vermutung. Adapter implementieren value-change und die relevanten Hostupdates aus SCXML einschliesslich Optionsvalidierung, unbekannter/disabled Keys, options-change, enabled/readOnly und stiller SET_VALUE-Semantik. Browser übernimmt Select-Popup, Fokus und Tastatur. Nichtleere Fehler werden über aria-describedby gebunden; aria-invalid erscheint erst bei tatsächlicher lokaler Prüfung. Fehler fokussiert das erste Feld. Änderungen entfernen veralteten Erfolg. Telefonnummer bleibt String. Kein Versand, Speicher oder Backend; tel ist keine Rufnummernformatprüfung.
 
 CSS übernimmt Input/Select layout.css und aufgelöste DTCG-Tokens. Inter-Schriften und Lizenz lokal kopiert. Formularrahmen, Button und responsive Begrenzung sind Hostgestaltung.
 

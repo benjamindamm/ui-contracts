@@ -6,7 +6,7 @@ Stand: 24. Oktober 2026. **Sechs Original-XSD-Proben und vier zusätzliche stati
 
 Acht offizielle XML-Dateien wurden über BrowserOS neo aus W3C-Quellen als XML-Quelltext gelesen. Die Browserdarstellung einzelner XML-Dateien wird durch XSL verändert; deshalb wurde für die tatsächlich zu validierenden Daten die Originalantwort im Browserkontext gelesen. Adressen und SHA-256 der UTF-8-Texte stehen in source-manifest.json. Kein Schema wurde geändert.
 
-Die lokale Prüfung verwendet lxml 6.1.1.0 / libxml2 2.14.6 / Python 3.12.14. Ein ausschließlich lokaler Resolver bindet alle Includes/Imports; Netzwerk und Entitätsauflösung sind während der Prüfung deaktiviert. Der permissive offizielle SCXML-XSD-1.0-Driver wurde erfolgreich kompiliert. Das strengere XSD-1.1-Set wurde nicht ausgeführt.
+Die lokale Prüfung verwendet lxml 6.1.1.0 / libxml2 2.14.6 / Python 3.12.14. Ein ausschliesslich lokaler Resolver bindet alle Includes/Imports; Netzwerk und Entitätsauflösung sind während der Prüfung deaktiviert. Der permissive offizielle SCXML-XSD-1.0-Driver wurde erfolgreich kompiliert. Das strengere XSD-1.1-Set wurde nicht ausgeführt.
 
 | Fall | Vorab erwartete Prüfung | Tatsächliches Ergebnis |
 | --- | --- | --- |
@@ -65,4 +65,4 @@ node check_binding.cjs
 python check_binding_schemas.py
 ```
 
-Der erste Aufruf endet bei dem aufgezeichneten unerwarteten Zielakzeptanzfall mit Status 1. Die Bindungsprüfung erwartet TypeScript standardmäßig unter ../ts-tool/node_modules/typescript; ein anderer lokaler Werkzeugpfad kann durch PROBE_TYPESCRIPT explizit angegeben werden. Kein Interpreter wird installiert oder gestartet. Die gespeicherte lxml-Versionsausgabe 6.1.1.0 ist die interne Vierer-Versionsdarstellung des Pakets 6.1.1.
+Der erste Aufruf endet bei dem aufgezeichneten unerwarteten Zielakzeptanzfall mit Status 1. Die Bindungsprüfung erwartet TypeScript standardmässig unter ../ts-tool/node_modules/typescript; ein anderer lokaler Werkzeugpfad kann durch PROBE_TYPESCRIPT explizit angegeben werden. Kein Interpreter wird installiert oder gestartet. Die gespeicherte lxml-Versionsausgabe 6.1.1.0 ist die interne Vierer-Versionsdarstellung des Pakets 6.1.1.

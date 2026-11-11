@@ -15,13 +15,13 @@
 | abgeleitet verletzt | 4 | 4 |
 | **Paarübereinstimmung** | **1,000 (Band „hoch“)** | |
 
-Die vier Abweichungen je Design haben **eine gemeinsame Ursache**: fehlende maschinenlesbare ARIA-Annotationen (A11Y01, A11Y02, A11Y03, A11Y07). Alle expliziten Kriterien – einschließlich aller zehn Zustände, Texte, Maße, Farben, Typografie und Clipping-Regeln – sind erfüllt.
+Die vier Abweichungen je Design haben **eine gemeinsame Ursache**: fehlende maschinenlesbare ARIA-Annotationen (A11Y01, A11Y02, A11Y03, A11Y07). Alle expliziten Kriterien – einschliesslich aller zehn Zustände, Texte, Masse, Farben, Typografie und Clipping-Regeln – sind erfüllt.
 
 ---
 
 ## 1. Auftrag, Informationsgrenze, Unabhängigkeit
 
-Geprüft wurden ausschließlich:
+Geprüft wurden ausschliesslich:
 
 - die 22 Dateien unter `components/**` (unverändert, siehe 4.1),
 - `tools/openpencil/README.md`, `tools/openpencil/package.json` (gepinnte Toolchain 0.16.0),
@@ -40,10 +40,10 @@ Beide Builder wurden während run-02 mehrfach vom **Step-Limit des Agenten-Harne
 
 | Builder | Stopp 1 | Stopp 2 | Stopp 3 |
 | --- | --- | --- | --- |
-| **A** | nach reiner Analyse; nur `_probe.mjs`, keine Lieferung | alle Artefakte außer `REPORT.md` | `REPORT.md` geschrieben, `_probe.mjs` entfernt |
+| **A** | nach reiner Analyse; nur `_probe.mjs`, keine Lieferung | alle Artefakte ausser `REPORT.md` | `REPORT.md` geschrieben, `_probe.mjs` entfernt |
 | **B** | nach reiner Analyse; keine Dateien | 6 von 7 Lieferungen plus Zwischenartefakt `render-report.json` | `REPORT.md` geschrieben, Zwischenartefakt entfernt, `generate.mjs` erneut ausgeführt |
 
-**Ursache:** ausschließlich Step-Limit, kein Zugriff auf verbotene Eingaben. Jede Fortsetzung nutzte den eigenen vorherigen Kontext derselben Session; kein Builder sah den anderen, run-01 oder frühere Ergebnisse. Der Prüfer (Phase 1) war nicht betroffen.
+**Ursache:** ausschliesslich Step-Limit, kein Zugriff auf verbotene Eingaben. Jede Fortsetzung nutzte den eigenen vorherigen Kontext derselben Session; kein Builder sah den anderen, run-01 oder frühere Ergebnisse. Der Prüfer (Phase 1) war nicht betroffen.
 
 ### Was daraus gilt und was nicht
 
@@ -76,7 +76,7 @@ Beide Builder wurden während run-02 mehrfach vom **Step-Limit des Agenten-Harne
 | Bewerten | `verify.py` | `results.json`, `hashes.json` |
 | Gegenprüfung | `shasum`, eigene Hashrechnung über `components/**` | 22/22 Dateien unverändert |
 
-Absolute Seitenkoordinaten der Fallgruppen wurden **nicht** bewertet. Gemessen wurden Werte **relativ zur Fallgruppe** (Label, Input, Surface, Viewport, Liste, Optionen, Status) sowie Farben, Fonts, Clipping und Texte. Toleranzen wie in `preregistered.json` 4.2: Maße ±1 px pro Kante, kumulierte Offsets ±2 px, Gesamthöhen ±4 px, Farben ≤3/255 pro Kanal, Schriftgröße ±0.5 px.
+Absolute Seitenkoordinaten der Fallgruppen wurden **nicht** bewertet. Gemessen wurden Werte **relativ zur Fallgruppe** (Label, Input, Surface, Viewport, Liste, Optionen, Status) sowie Farben, Fonts, Clipping und Texte. Toleranzen wie in `preregistered.json` 4.2: Masse ±1 px pro Kante, kumulierte Offsets ±2 px, Gesamthöhen ±4 px, Farben ≤3/255 pro Kanal, Schriftgrösse ±0.5 px.
 
 **Render-Evidenz:** `render-b.png` ist **byte-identisch** mit `builder-b/preview.png` (`b6d935ee…`), obwohl unabhängig aus der `.fig` erzeugt. `render-a.png` (`d26be652…`) unterscheidet sich von `builder-a/preview.png` (`36a216a4…`), weil A laut REPORT mit `scale:1` gerendert hat, der Prüfer mit `scale:2`; die Inhalte sind visuell deckungsgleich.
 
@@ -91,7 +91,7 @@ Alle 22 Dateien unter `components/**` wurden mit `sha256` gehasht. Die Werte sti
 - `components/tokens.json` `828c8296…`, `components/autocomplete/stories.json` `eb69c4a1…`, `components/autocomplete/README.md` `1f3e8de5…` usw. (vollständig in `hashes.json` bzw. den Manifesten).
 - Beide Manifeste enthalten exakt dieselben 22 Pfade und Hashes.
 
-**Grenze:** Das in der Aufgabe genannte Revisionskürzel `1d83935f…` ließ sich mit den erlaubten Quellen nicht rekonstruieren (kein dokumentiertes Hash-Schema auffindbar). Geprüft ist damit die **Unverändertheit der Dateien** zwischen Build und Prüfung, nicht die formale Übereinstimmung mit einem Revisionslabel.
+**Grenze:** Das in der Aufgabe genannte Revisionskürzel `1d83935f…` liess sich mit den erlaubten Quellen nicht rekonstruieren (kein dokumentiertes Hash-Schema auffindbar). Geprüft ist damit die **Unverändertheit der Dateien** zwischen Build und Prüfung, nicht die formale Übereinstimmung mit einem Revisionslabel.
 
 ### 4.2 Dokumentkennzahlen
 
@@ -106,10 +106,10 @@ Alle 22 Dateien unter `components/**` wurden mit `sha256` gehasht. Die Werte sti
 | Textknoten | 65, davon 2 leere Status | 56, davon 2 leere Status |
 | Bitmap-Fills / Vektornetze | 0 / 0 | 0 / 0 |
 | Fonts | Inter (400) | Inter (400) |
-| Schriftgrößen | 12, 14 (24 nur Seitentitel) | 12, 14 (20 nur Sheet-Titel) |
+| Schriftgrössen | 12, 14 (24 nur Seitentitel) | 12, 14 (20 nur Sheet-Titel) |
 | Optionen | 21 (7 × 3 Listenfälle) | 21 (7 × 3 Listenfälle) |
 
-Beide Dokumente öffnen mit der gepinnten Toolchain fehlerfrei (A01). Beide enthalten ausschließlich echte TEXT-Knoten, keine Bitmaps, keine Outlines (A06/A07).
+Beide Dokumente öffnen mit der gepinnten Toolchain fehlerfrei (A01). Beide enthalten ausschliesslich echte TEXT-Knoten, keine Bitmaps, keine Outlines (A06/A07).
 
 ### 4.3 Anatomie und Zustände (Beispiele mit Knotenwerten)
 
@@ -134,7 +134,7 @@ Beide Dokumente öffnen mit der gepinnten Toolchain fehlerfrei (A01). Beide enth
 | closed | nein | – | – | – | `""` |
 | opening | nein | – | – | – | `Suche wird geöffnet.` |
 | loading | ja, 1 Meldungszeile | 32 | 1 Meldung | – | `Städte werden geladen.` |
-| ready | ja | 160 | 5 voll, 0 angeschnitten, 2 außerhalb | – | `7 Städte verfügbar.` |
+| ready | ja | 160 | 5 voll, 0 angeschnitten, 2 ausserhalb | – | `7 Städte verfügbar.` |
 | active | ja | 160 | 5 / 0 / 2 | `hamburg` | `7 Städte verfügbar.` |
 | scroll-end | ja | 160 | 5 / 0 / 2 | `zuerich` | `7 Städte verfügbar.` |
 | selected | nein | – | – | – | `Ausgewählt: Berlin.` |
@@ -142,7 +142,7 @@ Beide Dokumente öffnen mit der gepinnten Toolchain fehlerfrei (A01). Beide enth
 | error | ja, 1 Meldungszeile | 32 | 1 Meldung | – | `Städte konnten nicht geladen werden.` (Status #B91C1C) |
 | disabled | nein | – | – | – | `""` |
 
-**`scroll-end` im Detail (beide):** Liste um **64 px** nach oben versetzt (`list y = −64` relativ zum Viewport). Sichtbar sind `muenchen … zuerich`; `berlin`/`hamburg` liegen vollständig außerhalb. `zuerich` endet exakt bei 160 px (Viewport-Unterkante). Alle **7 Optionsknoten bleiben erhalten** – die zwei geclippten wurden nicht gelöscht (CLIP02/CLIP03). Das ist konsistent mit der Rechnung 7 × 32 = 224, Viewport 160 → 2 geclippte Zeilen; die Formulierung „drei unsichtbare Daten“ in `components/autocomplete/README.md` Z. 26 ist ein Redaktionsfehler (in der Prüfrichtlinie als Annahme AS1 festgehalten).
+**`scroll-end` im Detail (beide):** Liste um **64 px** nach oben versetzt (`list y = −64` relativ zum Viewport). Sichtbar sind `muenchen … zuerich`; `berlin`/`hamburg` liegen vollständig ausserhalb. `zuerich` endet exakt bei 160 px (Viewport-Unterkante). Alle **7 Optionsknoten bleiben erhalten** – die zwei geclippten wurden nicht gelöscht (CLIP02/CLIP03). Das ist konsistent mit der Rechnung 7 × 32 = 224, Viewport 160 → 2 geclippte Zeilen; die Formulierung „drei unsichtbare Daten“ in `components/autocomplete/README.md` Z. 26 ist ein Redaktionsfehler (in der Prüfrichtlinie als Annahme AS1 festgehalten).
 
 **Texte:** Label `Stadt auswählen` in 10/10 Fällen; Placeholder `Stadt suchen …` mit **U+2026** (Codepoints geprüft), nicht `...`; `München`, `Köln`, `Zürich` mit korrekten Umlauten; Query `Be` in `loading`/`error`, `Berlin` in `selected`, `Atlantis` in `empty`. Keine Zusatztexte innerhalb der Fallgruppen (TX07).
 
@@ -150,8 +150,8 @@ Beide Dokumente öffnen mit der gepinnten Toolchain fehlerfrei (A01). Beide enth
 
 - Komponentenbreite 320, Input 320 × 44 @ y=28, Labelhöhe 20 + 8 px Gap, Popup-Oberkante = Input-Unterkante + 8, gleiche linke Kante, gleiche Breite (6/6 Popup-Fälle).
 - Optionszeilen 32 px, Text bei dx=12/dy=6; Statushöhe 20, Statusabstand 8; Fallhöhen 100 / 140 / 268 px.
-- Input-Radius 8, 1 px Stroke; Surface-Radius 8, 0 Strokes, weiße Füllung; Schatten `0 2 8`, α 0,2.
-- Farben ausschließlich aus den acht Tokens (±3). B weicht beim Input-Rahmen um **1/255** ab (`#CBD5E2`), innerhalb der Toleranz.
+- Input-Radius 8, 1 px Stroke; Surface-Radius 8, 0 Strokes, weisse Füllung; Schatten `0 2 8`, α 0,2.
+- Farben ausschliesslich aus den acht Tokens (±3). B weicht beim Input-Rahmen um **1/255** ab (`#CBD5E2`), innerhalb der Toleranz.
 - Fokusrahmen `#2563EB` in opening/loading/ready/active/scroll-end/empty/error; `#CBD5E1`(A)/`#CBD5E2`(B) in closed/selected/disabled.
 - Genau eine Highlight-Fläche je `active`/`scroll-end`, keine in `ready`; München `#94A3B8`.
 - Viewport clippt in allen sechs Popup-Fällen; keine sichtbare Überlappung von Status und Surface; kein angeschnittener Zeilentext.
@@ -183,7 +183,7 @@ Beide Berichte legen offen, dass ARIA-Rollen/-Zustände „nur visuell und über
 | ST Zustände | 12 | 12 | 0 | 12 | 0 |
 | AN Anatomie | 10 | 10 | 0 | 10 | 0 |
 | TX Texte | 9 | 9 | 0 | 9 | 0 |
-| GEO Maße | 13 | 13 | 0 | 13 | 0 |
+| GEO Masse | 13 | 13 | 0 | 13 | 0 |
 | CLIP Clipping | 8 | 8 | 0 | 8 | 0 |
 | COL Farben | 11 | 11 | 0 | 11 | 0 |
 | TY Typografie | 5 | 5 | 0 | 5 | 0 |
@@ -196,8 +196,8 @@ Beide Berichte legen offen, dass ARIA-Rollen/-Zustände „nur visuell und über
 
 | ID | Klasse | Befund |
 | --- | --- | --- |
-| A11Y01 | derived | Input heißt `input`, keine `combobox`-Annotation; `pluginData` enthält nur `layoutDirection`/`textDirection`. |
-| A11Y02 | derived | Liste heißt `list` bzw. `overlay.scroll.viewport`, keine `listbox`-Annotation und kein zugänglicher Name `Stadt auswählen`. |
+| A11Y01 | derived | Input heisst `input`, keine `combobox`-Annotation; `pluginData` enthält nur `layoutDirection`/`textDirection`. |
+| A11Y02 | derived | Liste heisst `list` bzw. `overlay.scroll.viewport`, keine `listbox`-Annotation und kein zugänglicher Name `Stadt auswählen`. |
 | A11Y03 | derived | `aria-selected`/`aria-disabled` nicht annotiert; die Semantik existiert nur als Füllfarbe `#EAF2FF` bzw. Textfarbe `#94A3B8`. |
 | A11Y07 | derived | Label ist Geschwistertext; keine Namensannotation/-verknüpfung am Input. |
 
@@ -217,11 +217,11 @@ Angewandt wurde die versiegelte Regel (`preregistered.json` › `overallJudgemen
 
 | Bedingung | Ergebnis |
 | --- | --- |
-| Gate-Verstoß oder `E ≥ 1` oder `D ≥ 5` | nicht erfüllt |
+| Gate-Verstoss oder `E ≥ 1` oder `D ≥ 5` | nicht erfüllt |
 | `E = 0` und `2 ≤ D ≤ 4` | **PASS_MIT_ABWEICHUNGEN** (A und B) |
 | `E = 0` und `D ≤ 1` | nicht erfüllt |
 
-**Design A: PASS_MIT_ABWEICHUNGEN** — alle zehn Zustände, Anatomie, Texte, Maße, Farben, Typografie und Clipping-Regeln entsprechen der Definition. Abweichungen ausschließlich bei maschinenlesbaren ARIA-Annotationen.
+**Design A: PASS_MIT_ABWEICHUNGEN** — alle zehn Zustände, Anatomie, Texte, Masse, Farben, Typografie und Clipping-Regeln entsprechen der Definition. Abweichungen ausschliesslich bei maschinenlesbaren ARIA-Annotationen.
 
 **Design B: PASS_MIT_ABWEICHUNGEN** — gleiches Bild. Zusätzlich: Input-Rahmen `#CBD5E2` statt `#CBD5E1` (Δ1, innerhalb Toleranz, im REPORT offengelegt), leere Seite `Page 1` (kosmetisch), Sheet 750 px hoch, während der `scroll-end`-Fall 24 px darüber hinausreicht (Seitenlayout, frei).
 
@@ -231,7 +231,7 @@ Angewandt wurde die versiegelte Regel (`preregistered.json` › `overallJudgemen
 
 Berechnet nach dem versiegelten Protokoll (Gewichte 0,30 / 0,30 / 0,40; Seitenlayout, technische IDs und Byte-Gleichheit ausgeschlossen):
 
-| Maß | Wert |
+| Mass | Wert |
 | --- | --- |
 | `A_struct` (Fall-/Teilemengen, Optionslabels) | **1,000** |
 | `A_state` (Popup, activeKey, Inputanzeige, Statustext) | **1,000** |
@@ -251,7 +251,7 @@ Berechnet nach dem versiegelten Protokoll (Gewichte 0,30 / 0,30 / 0,40; Seitenla
 - Input-Text-Einsatz: A 12 px, B 13 px (1-px-Rahmen; GEO10 regelt nur Optionen).
 - Vertikale Textausrichtung: A `TOP`, B `CENTER` – Bounding-Boxen identisch (FREE09).
 
-**Interpretation:** Paarwert 1,000 heißt **gleiche Lesart der Definition**, nicht Korrektheit. Zwei identisch falsche Designs würden ebenfalls 1,000 erreichen; hier sind beide jedoch auch gegen die Definition geprüft und bestehen alle expliziten Kriterien. Die vier gemeinsam verletzten A11Y-Kriterien zeigen eine **systematische**, nicht zufällige Lücke: Beide Builder interpretierten „Semantik“ als sichtbare Namen und Styles, nicht als Metadaten. Genau dort liegt der einzige belastbare Unterschied zwischen „definitionskonform“ und „zugänglich annotiert“.
+**Interpretation:** Paarwert 1,000 heisst **gleiche Lesart der Definition**, nicht Korrektheit. Zwei identisch falsche Designs würden ebenfalls 1,000 erreichen; hier sind beide jedoch auch gegen die Definition geprüft und bestehen alle expliziten Kriterien. Die vier gemeinsam verletzten A11Y-Kriterien zeigen eine **systematische**, nicht zufällige Lücke: Beide Builder interpretierten „Semantik“ als sichtbare Namen und Styles, nicht als Metadaten. Genau dort liegt der einzige belastbare Unterschied zwischen „definitionskonform“ und „zugänglich annotiert“.
 
 ---
 
@@ -276,7 +276,7 @@ Die Berichte ersetzen keine Messung; sie erklären die gewählten Freiheiten (op
 
 ## 9. Grenzen der Prüfung
 
-1. **Revisionslabel nicht rekonstruierbar.** `1d83935f…` ließ sich mit den erlaubten Quellen nicht nachrechnen; geprüft ist die Unverändertheit der 22 Dateien gegen beide Manifeste und den aktuellen Stand.
+1. **Revisionslabel nicht rekonstruierbar.** `1d83935f…` liess sich mit den erlaubten Quellen nicht nachrechnen; geprüft ist die Unverändertheit der 22 Dateien gegen beide Manifeste und den aktuellen Stand.
 2. **ARIA im Canvas-Format.** Rollen/Zustände haben im `.fig` dieser Toolchain kein eigenes Feld. Die Bewertung stützt sich auf Namen, Texte, `pluginData` und visuelle Zustände. Fehlende Annotationen sind als Abweichung ausgewiesen, nicht als Formatfehler.
 3. **A11Y05 weich ausgelegt** (dokumentierte Namenskonvention statt Annotation). Bei strenger Lesart wären beide Designs FAIL; die Alternative ist im Bericht transparent.
 4. **Schriftmetriken** (Glyphbreiten) wurden nicht nachgerechnet; TY05 stützt sich auf den Render. B weist selbst auf einen Renderer-Font-Fallback hin; die Dokumentwerte tragen `Inter`.

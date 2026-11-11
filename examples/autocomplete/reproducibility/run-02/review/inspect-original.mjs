@@ -241,7 +241,7 @@ async function inspect(label, file) {
       .map((o) => {
         const t = pick((n) => n.type === 'TEXT' && n.parentId === o.id)[0]
           ?? optionTexts.find((x) => x.parentId === o.id) ?? null;
-        const keyMatch = o.name.match(/option[\/\s_-]+([a-zäöüß]+)/i);
+        const keyMatch = o.name.match(/option[\/\s_-]+([a-zäöüss]+)/i);
         return {
           nodeId: o.id,
           name: o.name,

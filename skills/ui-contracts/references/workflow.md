@@ -37,7 +37,7 @@ python3 SKILL/scripts/handoffs.py context --repo REPO --task PFAD/task.json --ou
 python3 SKILL/scripts/handoffs.py check --repo REPO --task PFAD/task.json --handoff PFAD/handoff-v1.json --output /tmp/handoff-check.json
 ```
 
-`SKILL`, `REPO`, `PFAD` durch tatsächliche Pfade ersetzen. Die Vorlagen nicht im Skillordner ausfüllen; die Arbeitsdateien gehören in den neuen vorgesehenen Arbeitsbereich. Ausgabeordner außerhalb eingefrorener Läufe wählen. Bootstrap: höchstens 2.000 Zeichen für die vollständige JSON-Ausgabedatei inklusive Wrapper/Einrückung, mit `context.maxBootstrapChars` ausdrücklich änderbar. Das ist nur der von uns erzeugte Starteintrag, kein Budget für den gesamten Modellrequest. Die lokale Hashprüfung darf Dateien lesen, ohne deren Inhalte dem Modell zu übergeben.
+`SKILL`, `REPO`, `PFAD` durch tatsächliche Pfade ersetzen. Die Vorlagen nicht im Skillordner ausfüllen; die Arbeitsdateien gehören in den neuen vorgesehenen Arbeitsbereich. Ausgabeordner ausserhalb eingefrorener Läufe wählen. Bootstrap: höchstens 2.000 Zeichen für die vollständige JSON-Ausgabedatei inklusive Wrapper/Einrückung, mit `context.maxBootstrapChars` ausdrücklich änderbar. Das ist nur der von uns erzeugte Starteintrag, kein Budget für den gesamten Modellrequest. Die lokale Hashprüfung darf Dateien lesen, ohne deren Inhalte dem Modell zu übergeben.
 
 Erweitertes Paket klein halten: Standard höchstens 16.000 Zeichen je Übergabe und 8.000 Zeichen je Kontextpaket; nötige Details über explizite Dateiverweise nachladen. Bei Überschreitung wird blockiert statt unbemerkt abgeschnitten. Diese Werte sind lokale Arbeitskonventionen, keine Modell- oder Providergrenzen.
 
@@ -47,7 +47,7 @@ Eine Übergabe nennt Aussagen als `explicit`, `derived`, `assumption` oder `obse
 
 Das Tool validiert Struktur, aktuelle Dateien/Hashes, Quellenbindung und deklarierte Zugriffsgrenzen. Es bestätigt keine fachliche Richtigkeit, tatsächliche Zugriffssperre oder Ausführung der berichteten Prüfungen. Der Koordinator muss Aussagen und Messbelege weiterhin sachlich prüfen. `HANDOFF_READY` bedeutet verwertbare Übergabe, keine Komponentenfreigabe.
 
-## Abschließende Integration und optionale Forschung
+## Abschliessende Integration und optionale Forschung
 
 Die kurze Handlungsessenz steht in SKILL.md. Beim Abschluss den [Gesamtabgleich](integration-review.md) laden: betroffene Regeln/Quellen und ihre Verbindungen schrittweise prüfen; offene Bereiche bleiben explizit im Abdeckungsplan. Das Gesamtwissen bleibt über Quellen und Verweise erreichbar, ohne pro Rolle vollständig in den Kontext zu wandern.
 

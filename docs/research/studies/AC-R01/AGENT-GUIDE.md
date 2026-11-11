@@ -5,7 +5,7 @@
 1. [Studienbericht](README.md): Ergebnis, Aussagekraft und Grenzen. Beide Designs erhalten FAIL; gemessene Paarübereinstimmung ist kein Konformitätsnachweis.
 2. [Protokoll](PROTOCOL.md): Rollen, zulässige Eingaben, Zeitordnung und Kontexttrennung.
 3. [Laufmetadaten](../../../../examples/autocomplete/reproducibility/run-01/run.json): eingefrorene Definition, Einzelhashes, Werkzeugbindung und Lieferungen.
-4. [Vorabkriterien](../../../../examples/autocomplete/reproducibility/run-01/review/preregistered.md) und ihr Siegel: maßgebliche Erwartungen vor Einsicht des Prüfers in die Ausgaben.
+4. [Vorabkriterien](../../../../examples/autocomplete/reproducibility/run-01/review/preregistered.md) und ihr Siegel: massgebliche Erwartungen vor Einsicht des Prüfers in die Ausgaben.
 5. [Unabhängiges Review](../../../../examples/autocomplete/reproducibility/run-01/review/REVIEW.md), danach Ergebnisdaten und Originalreader-Auszüge. Builderberichte sind Selbstauskünfte und ersetzen die unabhängige Prüfung nicht.
 
 Die führende semantische Eingabe liegt in [components/](../../../../components/README.md). `run.json` bindet alle 22 Dateiversionen; vor Weiterarbeit deren Hashes prüfen. Die Revision ist eingefroren. Kriterien, Builderausgaben und Review sind historische Belege und bleiben unverändert. Neue Definitionen oder Erzeugungen erhalten eine neue Version beziehungsweise einen neuen Lauf. Die ältere Kandidatenrecherche hat eigene Zählungen und wird nicht um die Einzelbeobachtungen dieser Studie erweitert.
@@ -17,13 +17,13 @@ Die führende semantische Eingabe liegt in [components/](../../../../components/
 - `original-*.json`: mit dem Originalreader aus den gespeicherten FIG-Dateien gelesene Knoten.
 - `render-*.png`: separat durch den Prüfer erzeugte Originalrenders.
 - `native-checks.json`: einzelne tatsächliche Soll-/Ist-Vergleiche; `normalized-*.json`: erfasste Komponentenwerte für den Paarvergleich.
-- `results.json`: ausgearbeitete Urteile einschließlich manueller Einordnung und Grenzen. Das Prüfskript allein ersetzt diesen Bericht nicht.
-- `hashes.json`: versiegelte Review-Belege; `evidence-manifest.json`: abschließendes Gesamtinventar der Studie, ohne sich selbst.
+- `results.json`: ausgearbeitete Urteile einschliesslich manueller Einordnung und Grenzen. Das Prüfskript allein ersetzt diesen Bericht nicht.
+- `hashes.json`: versiegelte Review-Belege; `evidence-manifest.json`: abschliessendes Gesamtinventar der Studie, ohne sich selbst.
 - `native-css-control.json`: zusätzliche Kontrolle nach dem Review, ausdrücklich kein vorab registrierter Bestandteil.
 
 ## Nachvollziehen und erneut ausführen
 
-Lesen und Hashvergleich benötigen Python 3. Für die Originalreader-/Render-Skripte wurde Node.js 24 mit der gepinnten [Werkzeugkonfiguration](../../../../tools/openpencil/package.json) und dem [Lockfile](../../../../tools/openpencil/package-lock.json) verwendet. Abhängigkeiten lassen sich im Werkzeugordner mit `npm ci` installieren. Native Renderer benötigen außerdem ihre Laufzeitabhängigkeiten und Fonts; gleiche Hashes der Eingabe garantieren keine pixelidentische Rasterung auf jeder Umgebung.
+Lesen und Hashvergleich benötigen Python 3. Für die Originalreader-/Render-Skripte wurde Node.js 24 mit der gepinnten [Werkzeugkonfiguration](../../../../tools/openpencil/package.json) und dem [Lockfile](../../../../tools/openpencil/package-lock.json) verwendet. Abhängigkeiten lassen sich im Werkzeugordner mit `npm ci` installieren. Native Renderer benötigen ausserdem ihre Laufzeitabhängigkeiten und Fonts; gleiche Hashes der Eingabe garantieren keine pixelidentische Rasterung auf jeder Umgebung.
 
 **Erneute Skriptläufe nur in einer separaten Kopie des Repositorys:** `generate.mjs` überschreibt Builderdateien; `inspect-original.mjs`, `render-original.mjs` und `verify.py` überschreiben Review-Belege. Die ursprüngliche Evidenz und deren Hashes nicht durch einen Nachlauf ersetzen. Vom Stamm der Kopie aus ist die Reihenfolge für den technischen Review:
 

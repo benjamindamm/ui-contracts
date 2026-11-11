@@ -15,7 +15,7 @@ Endbedingung dieses Pakets: zwei konkrete Informationen im bestehenden CEM-/SCXM
 | Popup-Maximalhöhe | tokens.json: /base/maxHeight/$value; Visualrolle | Zusätzliche Übersetzung in generated-vars.css: --autocomplete-max-height, Verwendung durch unveränderte layout.css an A/B | Verhalten, Auswahlzustand, Anzahl sichtbarer Zeilen, ARIA-Regeln |
 | Öffentlicher Eventname | interface.json: /modules/0/declarations/0/events/0/name; Interfacerolle | Genau das SCXML-send/@event und profile.json:/publicEvent dürfen als deklarierte Ableitungen gemeinsam geändert werden | Zeitpunkt/Transition/Aktion der Emission, Payloaddaten, andere SCXML-Struktur |
 
-Bytegleiche Ausgangsquellen stammen aus dem vorherigen DTCG-Paket. baseline.json hält ihre tatsächlichen Bytes einschließlich des zusätzlichen generierten CSS fest. policy.json führt Feldpfade, ableitbare Zielorte, deklarierte synthetische Agentenrollen und Quellhashes. revision.json bindet Quellhashmanifest und Policyhash. Die vorhandene Accessibility-Datei ist eine eigene, unverändert gepinnte Quelle; deren inhaltliche Änderungs-/Ownershipregeln werden hier nicht zusätzlich erfunden.
+Bytegleiche Ausgangsquellen stammen aus dem vorherigen DTCG-Paket. baseline.json hält ihre tatsächlichen Bytes einschliesslich des zusätzlichen generierten CSS fest. policy.json führt Feldpfade, ableitbare Zielorte, deklarierte synthetische Agentenrollen und Quellhashes. revision.json bindet Quellhashmanifest und Policyhash. Die vorhandene Accessibility-Datei ist eine eigene, unverändert gepinnte Quelle; deren inhaltliche Änderungs-/Ownershipregeln werden hier nicht zusätzlich erfunden.
 
 Eigene Rollenbezeichnungen sind **keine authentifizierten Identitäten**. Ein policykonformer Actorstring ist kein Berechtigungs- oder Sicherheitsbeweis. Das Journal ist eine lokal nachvollziehbare Forschungsaufzeichnung, kein manipulationssicherer Auditdienst.
 
@@ -45,7 +45,7 @@ Das Journal nennt Transaktion, Information, führenden Feldpfad, deklarierten Ac
 
 ## Erhaltene verletzte Erwartung und Korrektur
 
-Ein anschließender, vorab gespeicherter Konsistenzfall kontrolliert, ob neue Revisionen exakt denselben kanonischen Algorithmus wie die Ausgangsrevision benutzen: Hash des Dateihashmanifests plus Policyhash. **Die Erstversion des eigenen Prüfers verletzt diese Erwartung:** Sie berechnete die neue Revision nur aus Dateihashes mit anderer Serialisierung; sogar der unveränderte Kontrollfall erhielt eine andere Revision.
+Ein anschliessender, vorab gespeicherter Konsistenzfall kontrolliert, ob neue Revisionen exakt denselben kanonischen Algorithmus wie die Ausgangsrevision benutzen: Hash des Dateihashmanifests plus Policyhash. **Die Erstversion des eigenen Prüfers verletzt diese Erwartung:** Sie berechnete die neue Revision nur aus Dateihashes mit anderer Serialisierung; sogar der unveränderte Kontrollfall erhielt eine andere Revision.
 
 run-initial.py, initial-results.json und revision-initial-results.json erhalten diesen Befund. run.py wurde auf denselben kanonischen Algorithmus korrigiert; revision-results.json belegt die nun übereinstimmenden Werte für den Kontrollfall und beide angenommenen Änderungen. Die 15 ursprünglichen Bedingungen wurden als Regression erneut ausgeführt und bestehen; diese Wiederholung wird nicht als 15 neue Nachweise gezählt. Kein Fehler eines Originalstandards wird daraus abgeleitet.
 
@@ -57,7 +57,7 @@ run-initial.py, initial-results.json und revision-initial-results.json erhalten 
 
 ## Einordnung
 
-**CSS Layout X08 wird U → A/C459** für diese begrenzte zusätzliche Ownership-/Ableitungskette: Der relevante Visualwert führt außerhalb des CSS, seine CSS-Ableitung und Änderungen sind explizit gebunden; widersprüchliche oder veraltete Vorschläge werden nicht durch die Kaskade aufgelöst. A ist der erforderliche Zusatzprüfer, keine native CSS-Provenienzfunktion. Die weitere Eventnamenskette zeigt eine zweite konkrete domänenübergreifende Bindung desselben Pakets, ohne weitere Kandidatenzellen automatisch umzuwerten.
+**CSS Layout X08 wird U → A/C459** für diese begrenzte zusätzliche Ownership-/Ableitungskette: Der relevante Visualwert führt ausserhalb des CSS, seine CSS-Ableitung und Änderungen sind explizit gebunden; widersprüchliche oder veraltete Vorschläge werden nicht durch die Kaskade aufgelöst. A ist der erforderliche Zusatzprüfer, keine native CSS-Provenienzfunktion. Die weitere Eventnamenskette zeigt eine zweite konkrete domänenübergreifende Bindung desselben Pakets, ohne weitere Kandidatenzellen automatisch umzuwerten.
 
 Damit **55 U-Zellen: 35 Integration und 20 weitere**. Nicht abgeschlossen sind die übrigen Informationen/Kandidaten, vollständige A11y-Ownership, allgemeine Typabbildung, Schemaänderungen/Migration, Identitätsauthentifizierung, Signaturen, Mehrprozessrennen, persistente Transaktionen und plattformübergreifende Integration. Die zwei geprüften Ownershipketten werden nicht als Abdeckung aller Felder ausgegeben. Keine neue Produktentscheidung, Produktionskomponente, Commits oder Pushes.
 

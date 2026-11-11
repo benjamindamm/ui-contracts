@@ -7,7 +7,7 @@
 - **Eigene Vorgaben:** Eine eigene Bibliothek anlegen oder eine vorhandene ausdrücklich auswählen.
 - **Beispiel ausprobieren:** [example](example/README.md) enthält Autocomplete, Overlay, ScrollArea, Select, Input und Select mit Suche. Nur als ausdrücklich gewählte Eingabe oder Orientierung verwenden.
 
-Der Ordnername unter `libraries/` ist die Bibliotheks-ID. Jeder Ordner mit `library.json` ist eine eigene Bibliothek; es gibt weder eine implizite Auswahl noch automatische Importe. Generierte Ergebnisse und Studien bleiben außerhalb der führenden Bibliotheksquellen.
+Der Ordnername unter `libraries/` ist die Bibliotheks-ID. Jeder Ordner mit `library.json` ist eine eigene Bibliothek; es gibt weder eine implizite Auswahl noch automatische Importe. Generierte Ergebnisse und Studien bleiben ausserhalb der führenden Bibliotheksquellen.
 
 ## 2. Neue Bibliothek anlegen
 

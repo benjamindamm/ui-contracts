@@ -28,7 +28,7 @@ Der zuvor unveränderte 28-Datei-Bibliotheksstand wird unter prior-library bewah
 
 1. **Eignung ist relativ zum Angebot.** Die Wahl des einzigen suchfähigen Kandidaten rechtfertigt kein Urteil „bestes Control“. Die neue UX-Dokumentation trennt [Schreibhilfe und feste Auswahl](../../../../../../ux/AUTOCOMPLETE.md).
 2. **Autocomplete ist kein eindeutiger Wertevertrag.** Die vorhandene Variante erlaubt eine freie Query, aber keine neuen bestätigten Ergebniskeys. Ein freier Adressmodus, der unbekannten Text akzeptiert, ist damit nicht definiert.
-3. **Feste Werte und Suche getrennt modellieren.** Der neue Kandidat SelectWithSearch führt Suchtext separat vom nicht editierbaren Auswahlwert. Mitgliedschaft wird bei der Übernahme durchgesetzt, nicht ausschließlich durch Formularvalidierung.
+3. **Feste Werte und Suche getrennt modellieren.** Der neue Kandidat SelectWithSearch führt Suchtext separat vom nicht editierbaren Auswahlwert. Mitgliedschaft wird bei der Übernahme durchgesetzt, nicht ausschliesslich durch Formularvalidierung.
 4. **Hostanforderungen festhalten.** Pflichtfelder und die gemeinsame Anordnung von Vorwahl/Rufnummer waren nicht vollständig spezifiziert. A machte alle Felder erforderlich, B nur die Länderwahl; diese Unterschiede werden nicht nachträglich zu eingefrorenen Fehlerkriterien erklärt. Der Folgelauf präzisiert die Pflichtfelder.
 5. **Tatsächliche Ereignisse und veraltete Meldungen prüfen.** Sichtbar ähnliche Formulare können diese Vertragsdetails unterschiedlich implementieren. Bericht und Erscheinungsbild allein reichen nicht.
 

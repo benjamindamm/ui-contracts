@@ -12,7 +12,7 @@ Die spätere Auswahl und Zusammenstellung ganzer UIs aus Nutzerzielen bleibt Per
 
 ## Lesereihenfolge
 
-1. [Protokoll und Anforderungen](PROTOCOL.md): Vergleichsmaßstab, Grenzen und Nachweisstufen.
+1. [Protokoll und Anforderungen](PROTOCOL.md): Vergleichsmassstab, Grenzen und Nachweisstufen.
 2. [Erster Vergleich](COMPARISON.md): belegte Fähigkeiten, eigene Einordnung und offene Prüfungen getrennt.
 3. [Gemeinsame Prüffälle](cases.json): identische Aufgaben für spätere Kandidatenproben; keine normativen Regeln der example-Bibliothek.
 4. [Bindungsprobe](BINDING.md): vorhandene Komponentenrevision und zu prüfende Referenzanforderungen; kein beschlossenes neues Komponentenformat.
@@ -31,7 +31,7 @@ Sechs Ansätze sind anhand offizieller Quellen eingeordnet. DMN, SBVR, SHACL und
 - [Lauf 02](runs/02/README.md): separate Korrektur, 6/6 Erwartungen erfüllt. Keine unabhängige Reproduktion und keine nachträgliche Änderung des Erstlaufs.
 - Die zwölf gemeinsamen Fälle sind nur teilweise abgedeckt. Pflicht-/Empfehlungslogik, vollständige Ausnahmebehandlung, gemeinsame/lokale Regeln und Agentennachladen bleiben offen. Kein vollständiger DMN- oder SBVR-Engine-Nachweis.
 
-[Prüfumfang und Integrität](measurement-consistency.json). Der frühere consistency-check.json beschreibt ausschließlich den ersten dokumentarischen Stand vor diesen Proben; seine alten Dateihashes sind keine aktuellen Dokumenthashes.
+[Prüfumfang und Integrität](measurement-consistency.json). Der frühere consistency-check.json beschreibt ausschliesslich den ersten dokumentarischen Stand vor diesen Proben; seine alten Dateihashes sind keine aktuellen Dokumenthashes.
 
 ## Praxisbezug
 
@@ -43,7 +43,7 @@ Die Forschungs-JSONs beschreiben nur Quellen, Fälle, Baseline und Aufgaben dies
 
 [Lauf 03](runs/03/README.md) ergänzt native DMN-XML-Ausführung, Pflicht-/Empfehlungs-/Ausnahmefälle und gemeinsame/lokale Regeln in DMN und Rego: 33/33 Erwartungen erfüllt. [Lauf 04](runs/04/README.md) grenzt ODRL anhand von Quellen und drei Kodierungsproben ab; keine ODRL-Policy wurde ausgewertet.
 
-[Werkzeuge, gemessene Größen und Integrationsaufwand](TOOLING-AND-COST.md) · [Empfehlung für eine erste echte Komponentenprobe](RECOMMENDATION.md) · [Integritätsprüfung dieses Folgeblocks](followup-consistency.json).
+[Werkzeuge, gemessene Grössen und Integrationsaufwand](TOOLING-AND-COST.md) · [Empfehlung für eine erste echte Komponentenprobe](RECOMMENDATION.md) · [Integritätsprüfung dieses Folgeblocks](followup-consistency.json).
 
 Arbeitsvorschlag: DMN/FEEL zuerst mit einem schmalen eigenen Komponenten-/Evidenzprofil erproben; Rego als getestete Alternative behalten. Kein neuer Standard beschlossen und keine Änderung der Bibliotheken/Skills. Die weiterführende SBVR-Semantikprobe und ein umfassender Vergleich aller Fälle in allen Kandidaten bleiben offen. Technisch gezieltes Laden ist kein Agentenverständnisnachweis. Aufgabenstatus: sechs Arbeitspakete im dokumentierten Umfang erledigt, zwei noch begonnen/offen.
 

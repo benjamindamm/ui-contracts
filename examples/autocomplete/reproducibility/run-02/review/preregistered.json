@@ -214,7 +214,7 @@
       "group": "artefakt",
       "source": "components/autocomplete/README.md › Exportrahmen (Z.32-34)",
       "statement": "Das Ergebnis ist ein tatsächlich öffnbares OpenPencil-Dokument, keine umbenannte JSON-Datei und kein reiner Speichergraph.",
-      "expected": "Datei lädt mit @open-pencil/core 0.16.0; Szenengraph mit mindestens 10 Frames auslesbar; Loader-Fehler = Verstoß.",
+      "expected": "Datei lädt mit @open-pencil/core 0.16.0; Szenengraph mit mindestens 10 Frames auslesbar; Loader-Fehler = Verstoss.",
       "classification": "explicit",
       "severity": "critical",
       "check": "Dokument mit gepinnter Toolchain öffnen, Szenengraph traversieren, Fehler protokollieren."
@@ -234,7 +234,7 @@
       "group": "artefakt",
       "source": "components/autocomplete/README.md › Z.28",
       "statement": "active, scroll-end, selected und disabled sind keine zusätzlich unabhängig geführten SCXML-Zustände.",
-      "expected": "Keine Fallgruppe trägt einen erfundenen Zustandsnamen außerhalb der zehn IDs; Zusatzgruppen nur als frei dekorative Seitenelemente.",
+      "expected": "Keine Fallgruppe trägt einen erfundenen Zustandsnamen ausserhalb der zehn IDs; Zusatzgruppen nur als frei dekorative Seitenelemente.",
       "classification": "explicit",
       "severity": "major",
       "check": "Gruppennamen und Metadaten gegen die zehn IDs und die SCXML-Zustandsliste prüfen."
@@ -273,7 +273,7 @@
       "id": "A07",
       "group": "artefakt",
       "source": "components/autocomplete/README.md › Z.34",
-      "statement": "Ein Bild oder eine bloße Bitmap genügt nicht.",
+      "statement": "Ein Bild oder eine blosse Bitmap genügt nicht.",
       "expected": "Kein Fall als Rasterbild/Screenshot; Bitmap-Anteil der Komponente 0 (Seitenhintergrund/Notizen ausgenommen).",
       "classification": "explicit",
       "severity": "critical",
@@ -284,7 +284,7 @@
       "group": "artefakt",
       "source": "components/autocomplete/README.md › Z.34; components/README.md › Z.20",
       "statement": "Der Exporteur darf die Definitionsdateien nicht passend zum Ergebnis ändern.",
-      "expected": "SHA-256 über components/** entspricht der Revision 1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727; Abweichung = Verstoß.",
+      "expected": "SHA-256 über components/** entspricht der Revision 1d83935fda4e2d98dc131758e90bd508d30b1ecd51a845b81dca44e02fcec727; Abweichung = Verstoss.",
       "classification": "explicit",
       "severity": "critical",
       "check": "Dateihashes über components/** bilden und mit der eingefrorenen Revision vergleichen."
@@ -294,7 +294,7 @@
       "group": "artefakt",
       "source": "components/autocomplete/README.md › Z.34; components/README.md › Z.20",
       "statement": "Fehlende Angaben werden als Lücke dokumentiert, nicht still ergänzt.",
-      "expected": "Für jede einschlägige Unterbestimmtheit aus Abschnitt 6 existiert eine kurze schriftliche Offenlegung; stilles Erfinden = Verstoß.",
+      "expected": "Für jede einschlägige Unterbestimmtheit aus Abschnitt 6 existiert eine kurze schriftliche Offenlegung; stilles Erfinden = Verstoss.",
       "classification": "explicit",
       "severity": "major",
       "check": "Exportnotizen/README des Laufs gegen die Liste der Unterbestimmtheiten abgleichen."
@@ -324,7 +324,7 @@
       "group": "artefakt",
       "source": "components/autocomplete/README.md › Z.32",
       "statement": "Die Fallgruppe enthält die Komponente des Falls, keine fremden Komponentenkopien.",
-      "expected": "Innerhalb einer Fallgruppe höchstens ein Label, ein Input, eine Popupfläche, eine Listbox, ein Status; freie Hinweise außerhalb.",
+      "expected": "Innerhalb einer Fallgruppe höchstens ein Label, ein Input, eine Popupfläche, eine Listbox, ein Status; freie Hinweise ausserhalb.",
       "classification": "derived",
       "severity": "major",
       "check": "Kindknoten der Fallgruppe zählen und duplizierte Pflichtteile finden."
@@ -444,7 +444,7 @@
       "group": "zustand",
       "source": "components/autocomplete/accessibility.rules.json › projections",
       "statement": "Sichtbarkeit von Popup und Expanded-Zustand folgt der Projektionstabelle.",
-      "expected": "closed/opening: popupVisible=false; loading/ready/empty/error: popupVisible=true; Abweichung = Verstoß.",
+      "expected": "closed/opening: popupVisible=false; loading/ready/empty/error: popupVisible=true; Abweichung = Verstoss.",
       "classification": "explicit",
       "severity": "critical",
       "check": "Sichtbarkeit der Surface je Fall mit der Tabelle vergleichen."
@@ -493,7 +493,7 @@
       "id": "AN05",
       "group": "anatomie",
       "source": "components/autocomplete/component.json › anatomy.status; accessibility.rules.json › statusPlacement",
-      "statement": "Der Status steht außerhalb des Popups.",
+      "statement": "Der Status steht ausserhalb des Popups.",
       "expected": "Statusknoten ist kein Nachfahre von surface/viewport.",
       "classification": "explicit",
       "severity": "major",
@@ -614,7 +614,7 @@
       "group": "text",
       "source": "components/autocomplete/README.md › Z.28",
       "statement": "Sichtbare Texte stammen nur aus Inputs, Ergebnislabels und accessibility.rules.json.",
-      "expected": "Innerhalb der Fallgruppe kein zusätzlicher erfundener Text (z. B. „Ergebnisse“, „Tippen Sie…“, Zähler); Seitenhinweise außerhalb sind frei.",
+      "expected": "Innerhalb der Fallgruppe kein zusätzlicher erfundener Text (z. B. „Ergebnisse“, „Tippen Sie…“, Zähler); Seitenhinweise ausserhalb sind frei.",
       "classification": "derived",
       "severity": "major",
       "check": "Alle Textknoten je Fall gegen die Solltextmenge abgleichen."
@@ -743,7 +743,7 @@
       "id": "GEO11",
       "group": "geometrie",
       "source": "frisch abgeleitet aus 2.4 der Preregistrierung",
-      "statement": "Die Gesamthöhen folgen aus den Einzelmaßen.",
+      "statement": "Die Gesamthöhen folgen aus den Einzelmassen.",
       "expected": "Popup-lose Fälle ≈100 px; Ergebnisfälle ≈268 px; Meldungsfälle 124–144 px; Toleranz ±4 px.",
       "classification": "derived",
       "severity": "minor",
@@ -774,7 +774,7 @@
       "group": "clipping",
       "source": "components/tokens.json › maxHeight,rowHeight; components/scroll-area/layout.css",
       "statement": "Ergebnis-Viewports clippen bei 160 px.",
-      "expected": "In ready/active/scroll-end: genau 5 volle Optionszeilen innerhalb der Viewportgrenzen, 0 angeschnittene, 2 vollständig außerhalb.",
+      "expected": "In ready/active/scroll-end: genau 5 volle Optionszeilen innerhalb der Viewportgrenzen, 0 angeschnittene, 2 vollständig ausserhalb.",
       "classification": "derived",
       "severity": "critical",
       "check": "Schnittmengen der Options-BBoxen mit der Viewport-BBox je Fall zählen."
@@ -784,10 +784,10 @@
       "group": "clipping",
       "source": "components/autocomplete/README.md › Z.26",
       "statement": "Geclippte Ergebnislayer bleiben erhalten.",
-      "expected": "Alle 7 Optionen als Knoten vorhanden; Berlin und Hamburg dürfen außerhalb des Clips liegen, dürfen aber nicht gelöscht sein.",
+      "expected": "Alle 7 Optionen als Knoten vorhanden; Berlin und Hamburg dürfen ausserhalb des Clips liegen, dürfen aber nicht gelöscht sein.",
       "classification": "explicit",
       "severity": "critical",
-      "check": "Optionsknoten vollständig zählen, auch außerhalb des Viewports."
+      "check": "Optionsknoten vollständig zählen, auch ausserhalb des Viewports."
     },
     {
       "id": "CLIP03",
@@ -814,10 +814,10 @@
       "group": "clipping",
       "source": "components/scroll-area/layout.css › overflow-y; components/overlay/layout.css",
       "statement": "Optionsinhalt ragt nicht sichtbar über Surface/Viewport hinaus.",
-      "expected": "Kein Optionsknoten bzw. dessen Füllung/Text außerhalb der Surface-Grenzen sichtbar; Überstand nur innerhalb des Clips.",
+      "expected": "Kein Optionsknoten bzw. dessen Füllung/Text ausserhalb der Surface-Grenzen sichtbar; Überstand nur innerhalb des Clips.",
       "classification": "explicit",
       "severity": "critical",
-      "check": "Sichtbare Pixel/BBoxen außerhalb der Surface prüfen."
+      "check": "Sichtbare Pixel/BBoxen ausserhalb der Surface prüfen."
     },
     {
       "id": "CLIP06",
@@ -853,7 +853,7 @@
       "id": "COL01",
       "group": "farbe",
       "source": "components/autocomplete/layout.css › input; components/overlay/layout.css › surface",
-      "statement": "Input- und Popupfläche sind weiß.",
+      "statement": "Input- und Popupfläche sind weiss.",
       "expected": "Füllung #FFFFFF (±3/Kanal) in allen Fällen.",
       "classification": "explicit",
       "severity": "major",
@@ -934,7 +934,7 @@
       "group": "farbe",
       "source": "components/autocomplete/layout.css › status; tokens muted,error",
       "statement": "Statusfarbe ist gedämpft, im Fehlerfall rot.",
-      "expected": "#64748B in allen Statusfällen außer error; #B91C1C (±3) in error.",
+      "expected": "#64748B in allen Statusfällen ausser error; #B91C1C (±3) in error.",
       "classification": "explicit",
       "severity": "major",
       "check": "Statusfarbe je Fall prüfen."
@@ -944,7 +944,7 @@
       "group": "farbe",
       "source": "components/overlay/layout.css",
       "statement": "Die Popupfläche hat keine zusätzliche Kontur und keine abweichende Füllung.",
-      "expected": "Kein sichtbarer Rand/Stroke an der Surface; Füllung weiß; kein Farbverlauf.",
+      "expected": "Kein sichtbarer Rand/Stroke an der Surface; Füllung weiss; kein Farbverlauf.",
       "classification": "explicit",
       "severity": "major",
       "check": "Stroke und Fill-Typ der Surface prüfen."
@@ -952,9 +952,9 @@
     {
       "id": "COL11",
       "group": "farbe",
-      "source": "components/tokens.json (abschließende Tokenliste)",
+      "source": "components/tokens.json (abschliessende Tokenliste)",
       "statement": "Es werden keine weiteren Farben still erfunden.",
-      "expected": "Alle sichtbaren Füllungen/Konturen der Komponententeile stammen aus den acht Tokens; zusätzliche Farben = Verstoß (Schatten, Seitenhintergrund ausgenommen).",
+      "expected": "Alle sichtbaren Füllungen/Konturen der Komponententeile stammen aus den acht Tokens; zusätzliche Farben = Verstoss (Schatten, Seitenhintergrund ausgenommen).",
       "classification": "derived",
       "severity": "major",
       "check": "Alle Fill/Stroke-Farben einsammeln und gegen die Tokenmenge prüfen."
@@ -964,7 +964,7 @@
       "group": "typografie",
       "source": "components/tokens.json › autocomplete.fontFamily",
       "statement": "Die Komponente nutzt Inter.",
-      "expected": "Font-Familie der Textknoten == Inter (case-insensitiv); dokumentierte Ersatzschrift = Abweichung, stillschweigende = Verstoß.",
+      "expected": "Font-Familie der Textknoten == Inter (case-insensitiv); dokumentierte Ersatzschrift = Abweichung, stillschweigende = Verstoss.",
       "classification": "explicit",
       "severity": "major",
       "check": "Font-Familie aller Pflichttexte auslesen."
@@ -973,8 +973,8 @@
       "id": "TY02",
       "group": "typografie",
       "source": "components/tokens.json › fontSize; layout.css",
-      "statement": "Label, Input und Optionen sind 14 px groß.",
-      "expected": "Schriftgröße 14 px (±0.5) für diese Textknoten.",
+      "statement": "Label, Input und Optionen sind 14 px gross.",
+      "expected": "Schriftgrösse 14 px (±0.5) für diese Textknoten.",
       "classification": "explicit",
       "severity": "major",
       "check": "Font-Size je Textknoten prüfen."
@@ -983,8 +983,8 @@
       "id": "TY03",
       "group": "typografie",
       "source": "components/tokens.json › statusFontSize",
-      "statement": "Der Status ist 12 px groß.",
-      "expected": "Schriftgröße 12 px (±0.5).",
+      "statement": "Der Status ist 12 px gross.",
+      "expected": "Schriftgrösse 12 px (±0.5).",
       "classification": "explicit",
       "severity": "major",
       "check": "Font-Size des Status prüfen."
@@ -1003,7 +1003,7 @@
       "id": "TY05",
       "group": "typografie",
       "source": "frisch abgeleitet aus fester Breite/Höhe",
-      "statement": "Kein Text wird durch zu große Schrift abgeschnitten oder umgebrochen.",
+      "statement": "Kein Text wird durch zu grosse Schrift abgeschnitten oder umgebrochen.",
       "expected": "Jeder geforderte Text einzeilig; Stadt auswählen, Stadt suchen …, Städte konnten nicht geladen werden. passen ohne Truncation in 320 px bei 14/12 px Inter.",
       "classification": "derived",
       "severity": "major",
@@ -1094,7 +1094,7 @@
       "group": "accessibility",
       "source": "components/autocomplete/accessibility.rules.json › focus",
       "statement": "Der Input behält den DOM-Fokus während der Tastaturnavigation.",
-      "expected": "Statisch nicht prüfbar; wird als n/a geführt und fließt nicht in Quoten ein; nur der Fokusrahmen (COL05) wird geprüft.",
+      "expected": "Statisch nicht prüfbar; wird als n/a geführt und fliesst nicht in Quoten ein; nur der Fokusrahmen (COL05) wird geprüft.",
       "classification": "explicit",
       "severity": "none",
       "check": "n/a – nicht statisch prüfbar; dokumentiert."
@@ -1103,11 +1103,11 @@
       "id": "FREE01",
       "group": "freiheit",
       "source": "components/autocomplete/README.md › Z.32",
-      "statement": "Außenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei.",
-      "expected": "Zulässig: beliebige Position/Reihenfolge/Raster auf einer oder mehreren Seiten; Titel/Notizen außerhalb der Fallgruppen; Hintergrund frei.",
+      "statement": "Aussenanordnung der Fälle, Seitentitel und beschreibende Hinweise sind frei.",
+      "expected": "Zulässig: beliebige Position/Reihenfolge/Raster auf einer oder mehreren Seiten; Titel/Notizen ausserhalb der Fallgruppen; Hintergrund frei.",
       "classification": "underdetermined",
       "severity": "none",
-      "check": "Nur prüfen, dass Fallgruppen nicht überlappen und Notizen außerhalb liegen; keine Anordnungswertung."
+      "check": "Nur prüfen, dass Fallgruppen nicht überlappen und Notizen ausserhalb liegen; keine Anordnungswertung."
     },
     {
       "id": "FREE02",
@@ -1144,7 +1144,7 @@
       "group": "freiheit",
       "source": "components/autocomplete/accessibility.rules.json › messages.results",
       "statement": "{count} ist nicht definiert (Ergebnisanzahl vs. auswählbare Anzahl).",
-      "expected": "Zulässig: 7 Städte verfügbar. oder 6 Städte verfügbar.; jede andere Zahl = Verstoß. Bevorzugt 7 (= results.length).",
+      "expected": "Zulässig: 7 Städte verfügbar. oder 6 Städte verfügbar.; jede andere Zahl = Verstoss. Bevorzugt 7 (= results.length).",
       "classification": "underdetermined",
       "severity": "none",
       "check": "Statustext der ready-Fälle gegen {6,7} prüfen; andere Zahl als V-TEXT werten."
@@ -1217,7 +1217,7 @@
       "expected": "Zulässig: Abstand zwischen Fallgruppen beliebig; innerhalb einer Fallgruppe nur die definierten 8/20/32/44/160-Werte.",
       "classification": "underdetermined",
       "severity": "none",
-      "check": "Nur fallinterne Maße gegen GEO prüfen."
+      "check": "Nur fallinterne Masse gegen GEO prüfen."
     }
   ],
   "comparisonProtocol": {
@@ -1240,8 +1240,8 @@
     "normalization": {
       "units": "px; pro Kante ±1 px; kumulierte Offsets ±2 px; Gesamthöhen ±4 px; Radius ±1 px; Rahmenstärke ±0.5 px",
       "colors": "sRGB 8 Bit; max. absoluter Kanalunterschied <= 3; Alpha ±0.02",
-      "typography": "Familie case-insensitiv; Größe ±0.5 px; Zeilenhöhe ±1 px; Schriftschnitt normal",
-      "text": "Unicode NFC; führende/abschließende Whitespaces entfernt; innere Leerzeichen, Satzzeichen und U+2026 signifikant; case-sensitiv",
+      "typography": "Familie case-insensitiv; Grösse ±0.5 px; Zeilenhöhe ±1 px; Schriftschnitt normal",
+      "text": "Unicode NFC; führende/abschliessende Whitespaces entfernt; innere Leerzeichen, Satzzeichen und U+2026 signifikant; case-sensitiv",
       "names": "lowercase; Nicht-Alphanumerisches zu Leerzeichen; Mehrfach-Leerzeichen kollabiert; Treffer über Token-Enthaltensein mit Synonymliste (label, input, surface/popup, viewport/scroll, list/listbox, option, status)",
       "nodeKinds": "text muss editierbaren String tragen; frame/group/rect/ellipse = Container/Fläche; image/bitmap = Raster",
       "ignored": "absolute Position der Fallgruppen, Seitenanzahl/-format, Titel, Notizen, Ebenen-IDs, Fallreihenfolge, Dateibytes, unsichtbare Hilfsknoten ohne Sichtwirkung"
@@ -1251,9 +1251,9 @@
       "V-STRUCT": "fehlender, duplizierter oder falsch verschachtelter Pflichtteil; fehlender Fall",
       "V-STATE": "falsche Zustandsprojektion",
       "V-TEXT": "Text fehlt oder weicht ab",
-      "V-GEO": "Maß/Abstand/Ausrichtung außerhalb Toleranz",
-      "V-COLOR": "Farbe außerhalb Toleranz oder erfunden",
-      "V-TYPE": "Familie/Größe/Zeilenhöhe falsch",
+      "V-GEO": "Mass/Abstand/Ausrichtung ausserhalb Toleranz",
+      "V-COLOR": "Farbe ausserhalb Toleranz oder erfunden",
+      "V-TYPE": "Familie/Grösse/Zeilenhöhe falsch",
       "V-CLIP": "Clipping/Overflow falsch",
       "V-EDIT": "nicht editierbar (Pfad, Bitmap, alles in einer Gruppe)",
       "V-A11Y": "statische Semantik fehlt oder falsch",
@@ -1276,7 +1276,7 @@
       "naRule": "nur wenn der Fall nicht anwendbar ist oder das Kriterium als nicht statisch prüfbar markiert wurde (A11Y09); n/a zählt nicht in Quoten"
     },
     "pairAgreement": {
-      "separationFromCorrectness": "Die Paarübereinstimmung ist kein Korrektheitsmaß und wird getrennt vom Urteil berichtet.",
+      "separationFromCorrectness": "Die Paarübereinstimmung ist kein Korrektheitsmass und wird getrennt vom Urteil berichtet.",
       "featuresPerCase": [
         "popupVisible",
         "optionCount",
@@ -1333,11 +1333,11 @@
     "counts": {
       "E": "Anzahl fail unter allen Kriterien der Klasse explicit (ohne n/a)",
       "D": "Anzahl fail unter allen Kriterien der Klasse derived (ohne n/a)",
-      "U": "Anzahl der Freiheitskriterien, deren Raum verlassen wurde; jeweils zusätzlich als explicit-Verstoß der Oberkategorie gezählt"
+      "U": "Anzahl der Freiheitskriterien, deren Raum verlassen wurde; jeweils zusätzlich als explicit-Verstoss der Oberkategorie gezählt"
     },
     "table": [
       {
-        "condition": "Gate-Verstoß oder E >= 1 oder D >= 5",
+        "condition": "Gate-Verstoss oder E >= 1 oder D >= 5",
         "verdict": "FAIL"
       },
       {
@@ -1410,7 +1410,7 @@
       "id": "AS9",
       "source": "components/tokens.json › fontFamily",
       "observation": "Verfügbarkeit von Inter im Export-/Prüfsystem ist nicht garantiert.",
-      "assumption": "Inter ist Soll; dokumentierte Ersatzschrift = major-Abweichung (TY01), kein Gate-Fail; stillschweigender Ersatz = Verstoß."
+      "assumption": "Inter ist Soll; dokumentierte Ersatzschrift = major-Abweichung (TY01), kein Gate-Fail; stillschweigender Ersatz = Verstoss."
     },
     {
       "id": "AS10",
@@ -1440,7 +1440,7 @@
       "id": "AS14",
       "source": "components/autocomplete/layout.css › [data-part=option]",
       "observation": "Keine explizite Textfarbe für Optionen.",
-      "assumption": "Optionstext erbt --ac-text (#172B4D), außer bei disabled (#94A3B8)."
+      "assumption": "Optionstext erbt --ac-text (#172B4D), ausser bei disabled (#94A3B8)."
     },
     {
       "id": "AS15",

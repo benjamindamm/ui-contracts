@@ -43,11 +43,11 @@ Der erste Harnischstart scheiterte vor jeder Fallausführung: Der eigene Selekto
 | Keine Overflowangabe | false | keine |
 | Bereits true, danach visible im isolierten Setter | true | hidden |
 
-Der letzte Fall zeigt ausschließlich, dass dieser Setter false nicht zurückschreibt. Der normale createElementNode-Pfad startet laut Quelle mit false; daraus wird **kein** behaupteter fehlerhafter In-place-Updatepfad abgeleitet. Achsen- und Zweiwertfälle betreffen die dokumentierten Roh-Styleobjekte dieses Helferpfads; ein vollständiger CSS-Parser oder Browser-Computed-Style-Normalisierer wurde davor nicht ausgeführt. „Keine Angabe“ bedeutet die leere Ausgabe dieses Feldfragments, keine gemessene endgültige Browserpolitik.
+Der letzte Fall zeigt ausschliesslich, dass dieser Setter false nicht zurückschreibt. Der normale createElementNode-Pfad startet laut Quelle mit false; daraus wird **kein** behaupteter fehlerhafter In-place-Updatepfad abgeleitet. Achsen- und Zweiwertfälle betreffen die dokumentierten Roh-Styleobjekte dieses Helferpfads; ein vollständiger CSS-Parser oder Browser-Computed-Style-Normalisierer wurde davor nicht ausgeführt. „Keine Angabe“ bedeutet die leere Ausgabe dieses Feldfragments, keine gemessene endgültige Browserpolitik.
 
 ## Warum hidden und clip fachlich verschieden sind
 
-CSS Overflow WD vom 07.10.2025, Wertdefinitionen hidden/clip/scroll/auto über BrowserOS gelesen: hidden unterbindet die direkte Scrollbedienung, erlaubt aber programmgesteuertes Scrollen und bildet einen Scrollcontainer. clip verbietet auch programmgesteuertes Scrollen und bildet keinen Scrollcontainer. Die Zusammenführung ist deshalb keine bloße Umbenennung gleichwertiger Werte.
+CSS Overflow WD vom 07.10.2025, Wertdefinitionen hidden/clip/scroll/auto über BrowserOS gelesen: hidden unterbindet die direkte Scrollbedienung, erlaubt aber programmgesteuertes Scrollen und bildet einen Scrollcontainer. clip verbietet auch programmgesteuertes Scrollen und bildet keinen Scrollcontainer. Die Zusammenführung ist deshalb keine blosse Umbenennung gleichwertiger Werte.
 
 In einem eigenen festen Browserfixture wurden drei Boxen mit jeweils 60 Pixel Inhaltsfenster und 300 Pixel Inhalt gerendert. Der dritte Overflowwert wurde aus dem tatsächlich gespeicherten clip-Projektionsergebnis übernommen. Danach wurde scrollTop auf 80 gesetzt:
 

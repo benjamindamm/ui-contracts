@@ -119,7 +119,7 @@
     {
       "id": "BEH-002",
       "domain": "behavior",
-      "question": "Wann wird eine Eingabe oder Auswahl bestätigt und nach außen gemeldet?",
+      "question": "Wann wird eine Eingabe oder Auswahl bestätigt und nach aussen gemeldet?",
       "blocking": true,
       "reason": "DECISION_MISSING"
     },

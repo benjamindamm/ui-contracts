@@ -9,7 +9,7 @@
 | SHACL 2017 | RDF-Graphbedingungen und Validierungsberichte; Info/Warning/Violation sind Ergebnis-Severities (S03). | Kandidat für Constraints und Beziehungen in einer projizierten Komponenten-/Kontextbeschreibung. | RDF-Projektion unserer Originaldateien, fehlende Fakten und Konflikte getrennt testen. Warning bedeutet nicht automatisch „UX-Empfehlung erfüllt“. |
 | OPA / Rego | Deklarative Policyauswertung strukturierter Daten wie JSON; eigene Regosyntax (S04). | Kandidat für direkt ausführbare Prüfregeln über bereitgestellte Contract-/Kontextdaten. | UX-Begriffe, Verbindlichkeit und Referenzprüfung wären zu modellieren. undefined nicht ungeprüft als fachlich negativ auslegen. Toolversion noch ungepinnt. |
 | ODRL 2.2 | Modell für Nutzung von Inhalten/Diensten mit Permission, Prohibition, Duty, Constraints und Konfliktstrategien; u. a. JSON-LD-Beispiele (S05). | Gezielter Gegenvergleich für normative Regeln, nicht voreilig als UX-Sprache übernehmen. | Nutzungserlaubnis passt nicht automatisch zu gestalterischer Eignung oder Empfehlung. Profilbedarf und Evaluatorverhalten offen. |
-| MBUI / CTT-Taskmodelle | UML-Metamodell und XML-Schema für Ziele/Aktivitäten und zeitliche Beziehungen; W3C Working Group Note (S06). | Relevanter Kontext für spätere Use-Case-Komposition; kein belegter Ersatz für die gesuchten komponentenbezogenen UX-Regeln. | Wartung/Tools und direkte Regelabdeckung offen; vollständige Taskmodellierung derzeit außerhalb der Abnahme. |
+| MBUI / CTT-Taskmodelle | UML-Metamodell und XML-Schema für Ziele/Aktivitäten und zeitliche Beziehungen; W3C Working Group Note (S06). | Relevanter Kontext für spätere Use-Case-Komposition; kein belegter Ersatz für die gesuchten komponentenbezogenen UX-Regeln. | Wartung/Tools und direkte Regelabdeckung offen; vollständige Taskmodellierung derzeit ausserhalb der Abnahme. |
 
 ## Konkrete erste Befunde
 
@@ -19,13 +19,13 @@
 
 **B03 · Fehlende Fakten brauchen einen eigenen Test.** Rego kann für fehlende Werte undefined liefern (S04). Unsere geforderte fachliche Einordnung „noch unbestimmt“ entsteht nicht automatisch durch ein Default-False. Welche Ergebnisse andere Kandidaten liefern, wird erst in den gemeinsamen Fällen geprüft.
 
-**B04 · Konfliktmodelle sind domänenspezifisch.** ODRL hat die Strategien perm, prohibit und invalid, standardmäßig invalid bei nicht gesetzter Strategie (S05, Abschnitt 2.10). Daraus folgt nicht automatisch eine geeignete Rangfolge unserer Pflichten und Empfehlungen. Keine Übernahme ohne UX-Profilprüfung.
+**B04 · Konfliktmodelle sind domänenspezifisch.** ODRL hat die Strategien perm, prohibit und invalid, standardmässig invalid bei nicht gesetzter Strategie (S05, Abschnitt 2.10). Daraus folgt nicht automatisch eine geeignete Rangfolge unserer Pflichten und Empfehlungen. Keine Übernahme ohne UX-Profilprüfung.
 
 **B05 · Es fehlt bisher der praktische Verbindungsnachweis.** Keiner der hier ausgeführten Schritte hat eine referenzgebundene UX-Regel über unsere konkrete Library ausgewertet. Text-/IRI-Felder im Modell wären nur Anknüpfungspunkte. Der eigentliche Nachweis erfordert die Bindungsfälle in BINDING.md und cases.json. Das ist eine Aussage über unseren Prüfstand, kein Negativbeweis über alle Frameworks.
 
 ## Arbeitsreihenfolge, keine Auswahlentscheidung
 
-DMN, SBVR, SHACL und Rego zunächst vertiefen. Sie untersuchen unterschiedliche Funktionen; weder „DMN gewinnt“ noch „wir benötigen alle vier“ ist beschlossen. ODRL anhand der normativen Grenzfälle mitführen. MBUI vorerst für Kontext-/Taskbegriffe berücksichtigen. Zusätzliche UX-spezifische Kandidaten vor einer abschließenden Auswahl gezielt suchen.
+DMN, SBVR, SHACL und Rego zunächst vertiefen. Sie untersuchen unterschiedliche Funktionen; weder „DMN gewinnt“ noch „wir benötigen alle vier“ ist beschlossen. ODRL anhand der normativen Grenzfälle mitführen. MBUI vorerst für Kontext-/Taskbegriffe berücksichtigen. Zusätzliche UX-spezifische Kandidaten vor einer abschliessenden Auswahl gezielt suchen.
 
 Der wichtigste Vergleich ist nicht Anzahl verfügbarer Features, sondern wie wenig eigene Semantik wir ergänzen müssen, um dieselbe UX-Regel präzise, quellengebunden und wartbar pro Komponente festzuhalten.
 

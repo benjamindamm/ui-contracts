@@ -1,6 +1,6 @@
 # Reproduzierbarkeitsversuch 02
 
-Zwei neue Agenten bauen unabhängig voneinander ein editierbares OpenPencil-Design aus derselben eingefrorenen Autocomplete-Definition. Ein dritter Agent ohne übernommenen Gesprächskontext leitet vorab Prüfkriterien aus der Definition ab und vergleicht anschließend beide Originaldateien mit der Definition und miteinander.
+Zwei neue Agenten bauen unabhängig voneinander ein editierbares OpenPencil-Design aus derselben eingefrorenen Autocomplete-Definition. Ein dritter Agent ohne übernommenen Gesprächskontext leitet vorab Prüfkriterien aus der Definition ab und vergleicht anschliessend beide Originaldateien mit der Definition und miteinander.
 
 Dieser Lauf wurde bewusst ohne Kenntnis der Ergebnisse aus [run-01](../run-01/README.md) durchgeführt. Eingabe, Kriterien und Annahmen wurden frisch gebildet; run-01, frühere Designs und Research-Dokumente waren für Builder und Prüfer gesperrt.
 
@@ -25,12 +25,12 @@ Beide Builder wurden während des Laufs mehrfach vom Step-Limit des Agenten-Harn
 
 | Akteur | Stopp | Stand beim Stopp | Fortsetzung |
 | --- | --- | --- | --- |
-| Builder A | 1 | nur `_probe.mjs`, keine Lieferung | alle Artefakte außer `REPORT.md` |
-| Builder A | 2 | alle Artefakte außer `REPORT.md` | `REPORT.md` geschrieben, Probe entfernt |
+| Builder A | 1 | nur `_probe.mjs`, keine Lieferung | alle Artefakte ausser `REPORT.md` |
+| Builder A | 2 | alle Artefakte ausser `REPORT.md` | `REPORT.md` geschrieben, Probe entfernt |
 | Builder B | 1 | nur Analyse, keine Dateien | 6 von 7 Lieferungen plus Zwischenartefakt |
 | Builder B | 2 | 6 von 7 Lieferungen plus `render-report.json` | `REPORT.md`, Zwischenartefakt entfernt, Generator erneut ausgeführt |
 
-Ursache war ausschließlich das Step-Limit, kein Zugriff auf verbotene Eingaben. Jede Fortsetzung nutzte den eigenen vorherigen Kontext derselben Session; kein Builder sah den anderen, run-01 oder frühere Ergebnisse. Der Prüfer war nicht betroffen.
+Ursache war ausschliesslich das Step-Limit, kein Zugriff auf verbotene Eingaben. Jede Fortsetzung nutzte den eigenen vorherigen Kontext derselben Session; kein Builder sah den anderen, run-01 oder frühere Ergebnisse. Der Prüfer war nicht betroffen.
 
 **Auswirkung:** Die Unterbrechungen mindern die Aussagekraft für Prozess-Reproduzierbarkeit (Single-Shot, Anzahl der Schritte). Sie mindern nicht die Bewertung der gelieferten Artefakte und nicht die Kontexttrennung beider Builder. Der Lauf belegt keinen ununterbrochenen Ein-Schuss-Durchlauf; die Zwischenartefakte `_probe.mjs` und `render-report.json` sind nicht mehr vorhanden und daher nicht prüfbar.
 
@@ -43,7 +43,7 @@ Ursache war ausschließlich das Step-Limit, kein Zugriff auf verbotene Eingaben.
 | explizit verletzt | 0 | 0 |
 | abgeleitet verletzt | 4 | 4 |
 
-Alle expliziten Kriterien sind in beiden Designs erfüllt: die zehn Zustände, Texte, Maße, Farben, Typografie und Clipping-Regeln. Beide Designs verletzen dieselben vier abgeleiteten Accessibility-Kriterien (A11Y01, A11Y02, A11Y03, A11Y07: keine maschinenlesbaren ARIA-Annotationen im `.fig`-Format dieser Toolchain). Die gemessene Paarübereinstimmung beträgt **1,000 (Band „hoch“)** über 199 Merkmale; hohe Übereinstimmung bedeutet gleiche Lesart der Definition, nicht automatisch Korrektheit.
+Alle expliziten Kriterien sind in beiden Designs erfüllt: die zehn Zustände, Texte, Masse, Farben, Typografie und Clipping-Regeln. Beide Designs verletzen dieselben vier abgeleiteten Accessibility-Kriterien (A11Y01, A11Y02, A11Y03, A11Y07: keine maschinenlesbaren ARIA-Annotationen im `.fig`-Format dieser Toolchain). Die gemessene Paarübereinstimmung beträgt **1,000 (Band „hoch“)** über 199 Merkmale; hohe Übereinstimmung bedeutet gleiche Lesart der Definition, nicht automatisch Korrektheit.
 
 Vollständige Befunde, Messwerte und Grenzen: [Prüfbericht](review/REVIEW.md) · [Ergebnisdaten](review/results.json) · [Einzelbeobachtungen](review/native-checks.json) · [Hashes](review/hashes.json).
 

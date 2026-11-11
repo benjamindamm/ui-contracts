@@ -1,6 +1,6 @@
 # Historische Aufgaben- und Fortschrittsstände
 
-Archiviert am25. Oktober2026. Alte Statuszahlen und Checklisten sind historische Zwischenstände. Die [aktuelle Aufgabenliste](../../../TASKS.md) und [aktive Restqueue](../REMAINDER-PLAN.md) sind maßgeblich.
+Archiviert am25. Oktober2026. Alte Statuszahlen und Checklisten sind historische Zwischenstände. Die [aktuelle Aufgabenliste](../../../TASKS.md) und [aktive Restqueue](../REMAINDER-PLAN.md) sind massgeblich.
 
 **Aktueller zusammenhängender Arbeitsblock:** [Alle29 Ausgangszellen einzeln abgeglichen](../REMAINING-29-REVIEW.md). Neun begrenzte Neubewertungen,26 neue Bedingungen;20 konkrete Nachweise weiterhin offen. Keine vollständige Integration behauptet, kein Commit/Push.
 
@@ -64,11 +64,11 @@ Archiviert am25. Oktober2026. Alte Statuszahlen und Checklisten sind historische
 
 **DTCG-Folgeprüfung:** [Getrennte Visualquelle mit zusätzlichem Webadapter](../experiments/2026-10-25/dtcg-binding/REPORT.md), zwölf Bindungs-/Übersetzungsfälle und vier Browserbedingungen erfüllt. X01 DTCG A/C454 im begrenzten Referenzfall; zum damaligen Teilabschluss 56 U-Zellen. Kein vollständiger DTCG-Validator.
 
-**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](../experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](../experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschliesslich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
 
 # Aufgaben und Fortschritt
 
-Stand: 25. Oktober 2026. Diese Liste ist die zentrale Übergabe für die weitere Arbeit. Sie unterscheidet Forschungsfortschritt von der Übernahme ins Projekt. Maßgeblich für „erledigt“ sind gespeicherte Ergebnisse in [Matrix](../MATRIX.md), [Begründungen](../CLAIMS.md), [Quellen](../SOURCES.md) und [Prüfregister](../study.json).
+Stand: 25. Oktober 2026. Diese Liste ist die zentrale Übergabe für die weitere Arbeit. Sie unterscheidet Forschungsfortschritt von der Übernahme ins Projekt. Massgeblich für „erledigt“ sind gespeicherte Ergebnisse in [Matrix](../MATRIX.md), [Begründungen](../CLAIMS.md), [Quellen](../SOURCES.md) und [Prüfregister](../study.json).
 
 ## Aktueller Stand
 
@@ -82,7 +82,7 @@ Stand: 25. Oktober 2026. Diese Liste ist die zentrale Übergabe für die weitere
 | Offen, noch nicht begonnen | 0 | Alle Kandidaten-Durchgänge übernommen |
 | **Gesamt** | **16** | **Kandidatenphase abgeschlossen; Folgeaufgaben unten bleiben offen** |
 
-Die folgenden Rundentabellen dokumentieren die damaligen Erstrundenstände. Maßgeblich für aktuelle U-Zahlen ist der Abschnitt „Aktueller Stand der offenen Felder“ und das daraus abgeleitete Register.
+Die folgenden Rundentabellen dokumentieren die damaligen Erstrundenstände. Massgeblich für aktuelle U-Zahlen ist der Abschnitt „Aktueller Stand der offenen Felder“ und das daraus abgeleitete Register.
 
 ## Abgeschlossene Drei-Agenten-Runde
 
@@ -116,7 +116,7 @@ Alle Ergebnisse sind tatsächlich in Matrix, Begründungen, Quellen und Prüfreg
 
 ## Kandidaten zum Abhaken
 
-Die Reihenfolge entspricht der bestehenden Kandidatenliste. Ein Häkchen bedeutet ausschließlich „übernommen“.
+Die Reihenfolge entspricht der bestehenden Kandidatenliste. Ein Häkchen bedeutet ausschliesslich „übernommen“.
 
 | Erledigt | Kandidat | Status | Nächste konkrete Aktion |
 | --- | --- | --- | --- |
@@ -147,9 +147,9 @@ Bei UXSpec gilt der aktuelle 26-Zeilen-Katalog mit neun vorher bewerteten und si
 
 **41 U-Zellen: 26 Integrationsfelder und 15 weitere Felder.** Ausgangsstand dieser Gesamtprüfung: 72. Alle 72 wurden gegen Kriterium, gespeicherte Originalbefunde und gezielte neue Quellen erneut dokumentarisch ausgewertet. In der damaligen Gesamtprüfung wurden fünf Neubewertungen übernommen: SCXML/XState/Zag X04 U→A, OpenPencil X05 U→A, CSS V03 U→D mit explizitem Zusatzmodul. [Einzelprotokoll](../ALL-FIELDS-REVIEW.md), [offenes Register](../OPEN-FIELDS.md).
 
-Ein erledigter Prüfdurchgang ist kein geschlossener technischer Nachweis. Die aktuell 41 U bleiben sichtbar; sachfremde Zellen erhalten gemäß Methode keine erfundenen negativen oder positiven Werte.
+Ein erledigter Prüfdurchgang ist kein geschlossener technischer Nachweis. Die aktuell 41 U bleiben sichtbar; sachfremde Zellen erhalten gemäss Methode keine erfundenen negativen oder positiven Werte.
 
-## Großes Arbeitspaket: Gesamtprüfung und Vergleiche
+## Grosses Arbeitspaket: Gesamtprüfung und Vergleiche
 
 - [x] Alle 16 Kandidaten-Erstprüfungen zentral übernehmen; ihre historischen Tabellen oben bleiben Erstrundenstände.
 - [x] Ursprünglich 73 U einzeln erfassen; UXSpec V05 mit C398 begründet einordnen.
@@ -168,7 +168,7 @@ Ein erledigter Prüfdurchgang ist kein geschlossener technischer Nachweis. Die a
 - [ ] Semantische externe Referenzen, öffentliche Event-/Payloadprojektion und erhaltene Einheiten sowie Definition/Instanz/Teil/Element gemeinsam nachweisen.
 - [ ] Paketweite Ownership, Vorrang, Provenienz und Konfliktdiagnostik konkret festlegen; bestehende Bibliotheks-/Kaskadenregeln lösen dies nicht automatisch.
 - [ ] Offene Originalschema-/Werkzeugidentitäten und genaue Regelabdeckung klären; neun X06-U-Zellen bleiben bestehen.
-- [ ] Verbleibende Layout-/Scroll-/Patternfragen mit fachlich zuständigen Beiträgen und konkret gebundenem Zielprofil schließen; genaue 65 Zellen stehen im Register.
+- [ ] Verbleibende Layout-/Scroll-/Patternfragen mit fachlich zuständigen Beiträgen und konkret gebundenem Zielprofil schliessen; genaue 65 Zellen stehen im Register.
 - [ ] Die noch fehlenden Originalvalidator-, Ablauf-, Mehrfachinstanz-, Export-/Roundtrip-, Browser-/AT- und nativen Nachweise ausführen, wenn ein entsprechender Coding-/Prüfauftrag vorliegt. Die vorliegende Arbeit bleibt Informationssammlung.
 - [ ] Produktiven Mindest-Reifegrad und konkrete Kompatibilitätsanforderungen vereinbaren; keine Technologieauswahl aus einer Vergleichstabelle ableiten.
 
@@ -178,7 +178,7 @@ Keine offenen Felder wurden allein wegen eines Abschlussberichts erledigt markie
 
 - [x] 15 Originalschemaproben, drei CEM-Gegenprüfungen, sechs Aufrufe des Original-Webmappers, sechs TypeScript-Payloadfälle und fünf Nu-HTML-/ARIA-Proben tatsächlich ausführen und mit Eingabe, Erwartung und Ergebnis speichern.
 - [x] Unerwarteten CEM-Root-Durchlass, UXSpec-invoke-Widerspruch und fehlende Nu-Referenzdiagnosen dokumentieren; keine Erwartungen zum Verdecken umschreiben.
-- [x] CEM I02 für den begrenzten TypeScript-/CustomEvent-Fall U→A einordnen. Diese Teilprüfung ließ zunächst 66 U zurück; nach der folgenden SCXML-Bindungsprüfung verbleiben aktuell 65. Die historische Gesamtprüfung hatte 67 hinterlassen.
+- [x] CEM I02 für den begrenzten TypeScript-/CustomEvent-Fall U→A einordnen. Diese Teilprüfung liess zunächst 66 U zurück; nach der folgenden SCXML-Bindungsprüfung verbleiben aktuell 65. Die historische Gesamtprüfung hatte 67 hinterlassen.
 - [ ] Verbleibende Integrations-/Fachnachweise weiter bearbeiten; 49 Proben sind keine 49 geschlossenen Matrixfelder.
 
 [Ausführlicher E3-Bericht und Reproduktion](../experiments/2026-10-24/REPORT.md). Die früheren Formulierungen „keine Versuche“ gelten für die jeweiligen damaligen Runden. Jetzt liegen begrenzte Schema-/Funktions-/Compiler-/Hostprüfungen vor; keine UI-/AT- oder vollständige Integration. Keine Komponente implementiert, kein Commit/Push.
@@ -189,12 +189,12 @@ Keine offenen Felder wurden allein wegen eines Abschlussberichts erledigt markie
 2. Bei tatsächlichem Beginn den Kandidaten von „Offen“ auf „Begonnen“ setzen und die überprüfbare Arbeitsreferenz ergänzen.
 3. Erst nach Vorliegen eines vollständigen Berichts auf „Bericht vorhanden“ setzen. Eine laufende Recherche oder mündliche Zwischenmeldung genügt nicht.
 4. Erst nach zentraler Gegenprüfung und tatsächlichem Speichern in Matrix, Begründungen, Quellen und Prüfregister auf „Übernommen“ setzen und abhaken.
-5. Gleichzeitig die Statuszahlen oben und diese Arbeitsschritte aktualisieren. Nicht aus einer geplanten Übernahme auf eine erledigte Aufgabe schließen.
+5. Gleichzeitig die Statuszahlen oben und diese Arbeitsschritte aktualisieren. Nicht aus einer geplanten Übernahme auf eine erledigte Aufgabe schliessen.
 6. Commit und Push sind getrennte Aktionen; ein neuer Arbeitsfortschritt wird durch diese Liste nicht automatisch dafür freigegeben.
 
 ## Arbeitsweise bei Fortsetzungen
 
-Auf Nutzerwunsch werden Änderungen in größeren Arbeitspaketen gebündelt. Keine Commit-Rückfrage nach jeder kleinen Änderung; der aktuelle Fortsetzungsauftrag beinhaltet keinen weiteren Commit. Nur tatsächlich abgeschlossene Prüfungen als Fortschritt melden. Zwischen beendeten Arbeitsschritten keine fortlaufende Hintergrundarbeit behaupten.
+Auf Nutzerwunsch werden Änderungen in grösseren Arbeitspaketen gebündelt. Keine Commit-Rückfrage nach jeder kleinen Änderung; der aktuelle Fortsetzungsauftrag beinhaltet keinen weiteren Commit. Nur tatsächlich abgeschlossene Prüfungen als Fortschritt melden. Zwischen beendeten Arbeitsschritten keine fortlaufende Hintergrundarbeit behaupten.
 
 **Weitere E3-Folgearbeit:** Sechs SCXML-XSD-Fälle und vier zusätzliche statische CEM-/SCXML-Bindungen sind übernommen. I02 ist nun auch bei SCXML A; insgesamt 49 begrenzte Prüffälle und 65 verbleibende U. Die acht Prüfgruppen sind im JSON mit tatsächlichem kind und Ausgabe erfasst. Keine UI-Laufzeit oder AT-Prüfung.
 
@@ -229,7 +229,7 @@ Auf Nutzerwunsch werden Änderungen in größeren Arbeitspaketen gebündelt. Kei
 - [x] Vier X01-Neubewertungen begründet übernehmen; Matrix, Register und aktuellen Stand abgleichen.
 - [ ] Tatsächliche SCXML-/Hostinteraktion, öffentliche Ereignisroute, Tastatur/Fokus, dynamische Meldungen, Unterkomponente und native Profile nachweisen.
 
-Die ersten fünf Häkchen schließen dieses statische Forschungsarbeitspaket ab. Das letzte Häkchen bleibt offen und verhindert eine irrtümliche Gesamtabschlussmeldung.
+Die ersten fünf Häkchen schliessen dieses statische Forschungsarbeitspaket ab. Das letzte Häkchen bleibt offen und verhindert eine irrtümliche Gesamtabschlussmeldung.
 
 ## Abgeschlossener Laufzeitblock – 25.10.2026
 
@@ -291,17 +291,17 @@ Aktuell 53 U, 308 Bedingungen/38 Gruppen; keine Produktentscheidung, Commits ode
 - [x] Zehn Original-Core-Aufbaubedingungen in getrennten Modi ausführen; invariant-/ensure-Grenzen konkretisieren.
 - [x] Original-API-Metadaten und drei echte Ark-SDK-Typfälle getrennt prüfen.
 - [x] Repository-/NPM-Abweichung bei Ark 5.39.3 (Zag 1.46.0 gegenüber 1.45.0) speichern; keine gegenseitige Evidenzübertragung.
-- [ ] Zag X06: neutrales Originalartefakt-/Schema-/Validatorpaar oder abschließende Modellgrenze im tatsächlich definierten breiteren Toolkitumfang nachweisen.
+- [ ] Zag X06: neutrales Originalartefakt-/Schema-/Validatorpaar oder abschliessende Modellgrenze im tatsächlich definierten breiteren Toolkitumfang nachweisen.
 - [ ] Ark X06: eigenes Original-Contractartefakt/Schema samt geprüftem Aufruf über ausgewählte SDK-Props hinaus identifizieren.
 
-53 U bleiben erhalten; 321 Bedingungen/41 Gruppen. Ein abgeschlossenes Werkzeuggrenzenpaket schließt die stärkere Artefaktfrage nicht. Kein Commit oder Push.
+53 U bleiben erhalten; 321 Bedingungen/41 Gruppen. Ein abgeschlossenes Werkzeuggrenzenpaket schliesst die stärkere Artefaktfrage nicht. Kein Commit oder Push.
 
 ## Panda-Originalexporttyp – 25.10.2026
 
 - [x] Originalread-/types-Quellen wiederverwenden; neun vorab festgelegte identische Eingaben vergleichen.
 - [x] Originale Shapeinformation über klar gekennzeichnete statische Zusatzbindung tatsächlich prüfen.
 - [x] Gemeinsame Grenzen für Referenzziele/Bereiche/Versionszahl speichern; keine neuen Originalregeln erfinden.
-- [ ] Eigenständige Originalschema-/Validatoridentität im gesamten definierten Panda-Umfang oder abschließende Modellgrenze belegen; X06 bleibt U/C469.
+- [ ] Eigenständige Originalschema-/Validatoridentität im gesamten definierten Panda-Umfang oder abschliessende Modellgrenze belegen; X06 bleibt U/C469.
 
 Weiterhin 53 U; 330 Bedingungen/42 Gruppen. Keine Produktionskomponente, Commits oder Pushes.
 
@@ -345,8 +345,8 @@ Aktuell 41 U (26 Integration, 15 weitere), 348 Bedingungen/44 Gruppen. Kein Comm
 
 ## Letzte vier endliche X06-Originalzugriffe – 25.10.2026
 
-- [x] Zag-Autoren-/Core-/Combobox-/ScrollArea-Modell abschließend abgleichen; begründete eigene Modellgrenze N/C481.
-- [x] APG-Guide-/Pattern-/Beispieltest-Einstieg abschließend abgleichen; begründete eigene Modellgrenze N/C482.
+- [x] Zag-Autoren-/Core-/Combobox-/ScrollArea-Modell abschliessend abgleichen; begründete eigene Modellgrenze N/C481.
+- [x] APG-Guide-/Pattern-/Beispieltest-Einstieg abschliessend abgleichen; begründete eigene Modellgrenze N/C482.
 - [x] Google-Spec/Config/Output unterscheiden; originales ConfigSchema mit sechs vorab gesetzten Gegenfällen ausführen.
 - [x] OpenUI-Originalwidersprüche feldgenau und ohne eigene Reparatur festhalten.
 - [ ] Google-Dokument-Schemabindung offiziell klären (U/C483).
@@ -368,7 +368,7 @@ Aktuell 41 U (26 Integration, 15 weitere), 348 Bedingungen/44 Gruppen. Kein Comm
 
 ## OpenPencil-Overflowimport nachgeprüft – 25.10.2026
 
-- [x] Konkrete Originalimportstelle und Initialisierung/Aufruf statt bloßer Exportvermutung prüfen.
+- [x] Konkrete Originalimportstelle und Initialisierung/Aufruf statt blosser Exportvermutung prüfen.
 - [x] Zwölf vorab gespeicherte Bedingungen an unveränderten Originalfeldanweisungen ausführen; eigene Harnischkorrektur festhalten.
 - [x] Original-CSS-Bedeutung von hidden/clip abgleichen und drei echte native Boxen prüfen.
 - [x] Verluststelle mit E3 belegen und V06 weiter U/C487 führen; keine Zahl künstlich senken.
@@ -377,7 +377,7 @@ Aktuell 41 U (26 Integration, 15 weitere), 348 Bedingungen/44 Gruppen. Kein Comm
 
 41 U (26 Integration, 15 weitere), 383 Bedingungen/48 Gruppen. Kein Commit/Push.
 
-**Endlicher Restplan:** [41 U-Zellen in priorisierten Paketen](../REMAINDER-PLAN.md): 39 unabhängig untersuchbare Fragen, 2 konkrete Originalklärungen, 0 ausschließlich produkt-/umgebungsbedingt blockierte aktuelle Matrixzellen. Native/AT-/Produktabnahme bleibt separat offen. Planung ist keine Umbewertung.
+**Endlicher Restplan:** [41 U-Zellen in priorisierten Paketen](../REMAINDER-PLAN.md): 39 unabhängig untersuchbare Fragen, 2 konkrete Originalklärungen, 0 ausschliesslich produkt-/umgebungsbedingt blockierte aktuelle Matrixzellen. Native/AT-/Produktabnahme bleibt separat offen. Planung ist keine Umbewertung.
 
 ## Restplan und Radio-Rendernachweis – 25.10.2026
 
@@ -419,8 +419,8 @@ Aktuell 41 U (26 Integration, 15 weitere), 348 Bedingungen/44 Gruppen. Kein Comm
 - [x] Sechs Originalgraphen mit vollständiger öffentlicher Projektion/HTML-Serialisierung ausführen, keine Fragmentkörper ersetzen.
 - [x] Sechs native Scroll-/Geometriemessungen mit vorher gespeicherten numerischen Erwartungen sichern.
 - [x] Eigene feste hidden-/visible-Politik im vorhandenen Webadapter belegen; V06 begrenzt A/C498.
-- [x] Größenänderungsgegenfall explizit unerfüllt halten: Abstand8→-12, V04 U/C499.
+- [x] Grössenänderungsgegenfall explizit unerfüllt halten: Abstand8→-12, V04 U/C499.
 - [x] Ältere Importverluste unverändert erhalten und nicht auf alle Originalpolitiken verallgemeinern.
-- [ ] Fünf weitere ursprüngliche Layoutfragen einschließlich gesondertem vorhandenen Slider-Part-Geometriepfad prüfen.
+- [ ] Fünf weitere ursprüngliche Layoutfragen einschliesslich gesondertem vorhandenen Slider-Part-Geometriepfad prüfen.
 
 41 U (26 Integration, 15 weitere), 435 Bedingungen/56 Gruppen. Kein Commit/Push.

@@ -297,7 +297,7 @@
     {
       "id": "handoff",
       "required": true,
-      "description": "handoff-report-v1.json gemäß Uebergabevertrag (ui-contracts-handoff/1) mit Input-Receipts, Artefaktliste, Claims und Checks zu allen Abnahmekriterien; ready nur mit Belegen und ohne blockierende Fragen."
+      "description": "handoff-report-v1.json gemäss Uebergabevertrag (ui-contracts-handoff/1) mit Input-Receipts, Artefaktliste, Claims und Checks zu allen Abnahmekriterien; ready nur mit Belegen und ohne blockierende Fragen."
     }
   ],
   "context": {

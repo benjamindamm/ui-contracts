@@ -20,7 +20,7 @@ const headless=await import(pathToFileURL(join(repo,'tools/openpencil/node_modul
 const sha=b=>createHash('sha256').update(b).digest('hex');
 let networkAttempts=0;globalThis.fetch=async()=>{networkAttempts++;throw Error('Network disabled for local font proof');};
 const ck=await headless.initCanvasKit();
-const sample='Stadt auswählen – ÄÖÜ äöü ß € … 0123456789 Zürich';
+const sample='Stadt auswählen – ÄÖÜ äöü ss € … 0123456789 Zürich';
 const fonts=[];
 for(const face of assets.faces){
  if(core.weightToStyle(face.weight)!==face.openpencilStyle)throw Error('Runtime style differs from verified weight');

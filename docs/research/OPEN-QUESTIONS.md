@@ -1,12 +1,12 @@
 # Offene Forschungsfragen aus der Kandidatenrecherche
 
-Stand: 25. Oktober 2026. **Zwei externe Originalklärungen bleiben offen, beide im Matrixfeld X06.** Die Recherchephase ist abgeschlossen. Maßgeblich für die Gesamtzahlen ist der [aktuelle Nachweisstand](CURRENT-STATUS.md). Die zuletzt8 autonom untersuchbaren Nachweise wurden tatsächlich im jeweils dokumentierten Adapterumfang erbracht; keine weitere identische Originalprobe ist dafür offen. Das bedeutet weiterhin keine vollständige universelle Integration oder fertige Produktionsbibliothek.
+Stand: 25. Oktober 2026. **Zwei externe Originalklärungen bleiben offen, beide im Matrixfeld X06.** Die Recherchephase ist abgeschlossen. Massgeblich für die Gesamtzahlen ist der [aktuelle Nachweisstand](CURRENT-STATUS.md). Die zuletzt8 autonom untersuchbaren Nachweise wurden tatsächlich im jeweils dokumentierten Adapterumfang erbracht; keine weitere identische Originalprobe ist dafür offen. Das bedeutet weiterhin keine vollständige universelle Integration oder fertige Produktionsbibliothek.
 
 ## Google DESIGN.md: C483
 
 **Gesicherter Stand:** @google/design.md0.4.0 besitzt echten Parser, Linter, Modell-/Ergebnisdefinitionen und ein tatsächliches Zod-ConfigSchema. Letzteres prüft die Spezifikations-/Redaktionskonfiguration. ParserInputSchema beschreibt den Text-Transportwrapper. Der tatsächliche Coloroutput kann separat gebunden werden; sein erfolgreicher X01-Versuch entscheidet X06 nicht.
 
-**Genau fehlende Originalinformation:** Eine belastbare veröffentlichte Bindung zwischen dem eingereichten DESIGN.md-Dokumentdatenmodell, dem dafür maßgeblichen Originalschema beziehungsweise deklarativen Prüfgegenstand und der Bedeutung des zugehörigen Prüfergebnisses. Dabei müssen Rootform, erlaubte/erforderliche Felder und Optionalität eindeutig demselben Originalgegenstand zugeordnet sein.
+**Genau fehlende Originalinformation:** Eine belastbare veröffentlichte Bindung zwischen dem eingereichten DESIGN.md-Dokumentdatenmodell, dem dafür massgeblichen Originalschema beziehungsweise deklarativen Prüfgegenstand und der Bedeutung des zugehörigen Prüfergebnisses. Dabei müssen Rootform, erlaubte/erforderliche Felder und Optionalität eindeutig demselben Originalgegenstand zugeordnet sein.
 
 **Bereits ausgeschöpft:** Tatsächliches ConfigSchema mit Original-/Gegenfällen, tatsächlicher Linter-/Parserpfad, mitgelieferte Spec/Config und Outputdeklarationen. Noch ein identischer Configtest oder ein selbst geschriebener strengerer Dokumentchecker liefert diese Originalentscheidung nicht. Kein globaler Beweis der Abwesenheit jedes künftigen Werkzeugs behauptet.
 
@@ -16,7 +16,7 @@ Stand: 25. Oktober 2026. **Zwei externe Originalklärungen bleiben offen, beide 
 
 **Gesicherter Stand:** README/draft-01, lib/schema.ts, tatsächliches interfaces/Spec.ts und Tabellenrenderer am Pin09d39b211dcaa2e227ed38e312c8822e193cfea9 sind abgeglichen. Bei Root-/group-/enum-/required-/Defaultformen liegen konkrete widersprüchliche Originaldefinitionen vor. Ein einfacher statischer String-Property-Teilbeitrag ist ausdrücklich begrenzt bindbar, ohne diese kanonische Frage zu lösen.
 
-**Genau fehlende Originalinformation:** Eine offizielle Vorrang-/Synchronisationsregel, welche der widersprüchlichen Originalformen maßgeblich ist, und ein an dieselbe Form gebundenes ursprüngliches Prüfpaar. Ein bloßer Renderer oder ein zusätzlicher Compilercheck gegen einen selbst gewählten Typstand ist dafür kein Ersatz.
+**Genau fehlende Originalinformation:** Eine offizielle Vorrang-/Synchronisationsregel, welche der widersprüchlichen Originalformen massgeblich ist, und ein an dieselbe Form gebundenes ursprüngliches Prüfpaar. Ein blosser Renderer oder ein zusätzlicher Compilercheck gegen einen selbst gewählten Typstand ist dafür kein Ersatz.
 
 **Bereits ausgeschöpft:** Tatsächliche ursprüngliche Definitionsdateien und Renderer am Pin; fehlgeschlagener Zugriff auf den früher falschen Pfad ist erhalten, tatsächlicher Spec-Pfad gefunden. Die Typunterschiede erneut vorzuführen entscheidet keinen Herausgebervorrang. Kein pauschaler negativer Suchbeweis gegen das gesamte Projekt.
 

@@ -11,7 +11,7 @@ Eigenes Arbeitsformat für Quellen-/Kontextmanagement, kein UI-Standard. Alle Pf
 - `inputs`: genau benötigte Vorgängerdateien `{id,path,sha256,kind}`. `kind`: `artifact`, `handoff`, `builder-report`, `first-review`. Ein Handoff-Input benötigt zusätzlich `taskId`, `revision`, `producerRole` und `producerTask: {path,sha256}`. Dessen Auftrag/Lieferung werden entlang der Abhängigkeiten geprüft. Auswahl seiner Aussagen über `claimIds`; die dafür referenzierten Quellen werden als `claimSources` mitgegeben. Freie Dateitextinhalte werden nicht automatisch inline gelesen.
 - `acceptance`: prüfbare Lieferkriterien `{id, required, description}`. Sie sind Anforderungen an diese Teilaufgabe, keine verdeckte Komponentenfreigabe.
 - `phase`: `normal`, `blind` oder `report-check`. Reviewer benötigt explizit `blind` oder `report-check`. `report-check` muss eine hashgebundene `first-review`-Datei enthalten.
-- `context`: `maxInlineChars` (Standard 8000), `maxHandoffChars` (Standard 16000). Keine stillen Inhaltsverluste bei Größenüberschreitung.
+- `context`: `maxInlineChars` (Standard 8000), `maxHandoffChars` (Standard 16000). Keine stillen Inhaltsverluste bei Grössenüberschreitung.
 
 Inputs sind keine zusätzlichen Originalquellen. In der Blindphase nimmt der Helper weder `handoff` noch `builder-report` an. Der Koordinator muss die ehrliche Klassifikation von Artefakten beachten; absichtliches Umetikettieren oder versteckte Erläuterungen erkennt der Helper nicht.
 

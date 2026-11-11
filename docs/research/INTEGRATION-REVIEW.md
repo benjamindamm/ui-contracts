@@ -3,13 +3,13 @@
 **Konsolidierter Vorschlag vom 25. Oktober 2026:** [IP-01](INTEGRATION-PROFILE.md) mit [geplanter Gesamt-Abnahme](INTEGRATION-ACCEPTANCE.md). Der folgende Text bewahrt den historischen Arbeitsstand.
 
 
-**Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
+**Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Massgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
 
-**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschliesslich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
 
 # Integrationsabgleich und dokumentarischer Referenzfall
 
-Stand: 24. Oktober 2026. **Dokumentarische Prüfung, keine Implementierung, keine ausgeführten Contract- oder Laufzeittests.** Dieser Abgleich bearbeitet die Referenz- und Kompositionsfragen aus dem [Integrationsentwurf](INTEGRATION.md). Er schließt weder sämtliche U-Felder noch die beiden vorgemerkten Detailvergleiche ab.
+Stand: 24. Oktober 2026. **Dokumentarische Prüfung, keine Implementierung, keine ausgeführten Contract- oder Laufzeittests.** Dieser Abgleich bearbeitet die Referenz- und Kompositionsfragen aus dem [Integrationsentwurf](INTEGRATION.md). Er schliesst weder sämtliche U-Felder noch die beiden vorgemerkten Detailvergleiche ab.
 
 ## 1. Ergebnis und Nachweisgrenze
 
@@ -75,14 +75,14 @@ Jede Suche besitzt eigene fachliche Teile für Eingabe, Overlay, Liste und wiede
 | Nr. | Beziehung | Führende Information | Status |
 | --- | --- | --- | --- |
 | R1 | Jede Domäne meint dieselbe Definition, Instanz und denselben Teil | Fachliche Teildeklaration plus nachvollziehbares Mapping | Als Anforderung bestätigt; konkrete Syntax offen |
-| R2 | Fokus auf Eingabe öffnet gemäß gewählter Produktregel das zugehörige Overlay | Behavior; Visual und Accessibility konsumieren denselben Zustand | Grundfall dokumentiert; Ablauf nicht ausgeführt |
+| R2 | Fokus auf Eingabe öffnet gemäss gewählter Produktregel das zugehörige Overlay | Behavior; Visual und Accessibility konsumieren denselben Zustand | Grundfall dokumentiert; Ablauf nicht ausgeführt |
 | R3 | Aktive Option bindet Darstellung und zugängliche Vermittlung | Behaviorzustand, visuelle Variante, Accessibility-Regel | Mapping offen; nicht mit bestätigter Auswahl gleichsetzen |
 | R4 | Auswahlbestätigung löst öffentliches Ereignis mit passendem Payload aus | Signatur im Interface, Auslöser im Behavior | Typabbildung und konkretes Ereignis noch zu bestimmen |
 | R5 | Eingabe und Liste derselben Suche stehen in der gewählten Accessibility-Beziehung | Accessibility mit Instanzbezug | Webprofil zu konkretisieren; native Abbildung offen |
 | R6 | Overlay verwendet eigene ScrollArea, ohne deren Definition zu kopieren | Komposition mit expliziter Parameter-/Ereignisbindung | Begrifflich ausgearbeitet; Originalformatkette unbewiesen |
 | R7 | Navigation scrollt erforderlichenfalls die aktive Option sichtbar | Behavioranforderung und ScrollArea-Fähigkeit | Zuständigkeit und Aufrufbindung offen |
 | R8 | Neue Ergebnisse aktualisieren Anzeige und zugängliche Rückmeldung derselben Suche | Behaviorauslöser; Accessibility-Inhalt und Vermittlung | Asynchronität, veraltete Antworten und Fokusverlust offen |
-| R9 | Anker, Abstand, Größenbegrenzung und Theme beziehen sich auf korrekte Teile | Visual mit referenzierten Tokens und Geometriezielen | Formales Layoutmodell noch zu vergleichen |
+| R9 | Anker, Abstand, Grössenbegrenzung und Theme beziehen sich auf korrekte Teile | Visual mit referenzierten Tokens und Geometriezielen | Formales Layoutmodell noch zu vergleichen |
 
 ### Vorschlag für Fokus- und Scrollzuständigkeit
 
@@ -112,11 +112,11 @@ Dies sind erwartete Prüfergebnisse auf Papier. Keine Tabellenzeile bedeutet, da
 | --- | --- | --- | --- |
 | 1 | Gemeinsame Definition-/Instanz-/Teilidentität | Erforderliche Zielarten und Instanzfälle konkretisiert | Für geeignete Originalartefakte genaue Fundstellen und Mappings zeigen |
 | 1 | Verlustfreie Erhaltung der Originaldateien | Eigeninterne Referenzen reichen als Nachweis nicht aus | Je Domäne Originalartefakt, Validator und zusätzliche Bindung benennen |
-| 1 | Typen, Ereignisse, Zustände und Ownership | R1–R9 trennen Signatur, Auslöser und Darstellung | Eine vollständige Bindungskette einschließlich Payload ausarbeiten |
+| 1 | Typen, Ereignisse, Zustände und Ownership | R1–R9 trennen Signatur, Auslöser und Darstellung | Eine vollständige Bindungskette einschliesslich Payload ausarbeiten |
 | 1 | Unterkomponente und Fokus-/Scrollkonflikte | Getrennte Instanzen und Zuständigkeitsvorschlag dokumentiert | Gewähltes Pattern und echte Anatomie festlegen; später praktisch prüfen |
 | 2 | Versionen, Kollisionen und Zyklen | Konkrete Grenzen der geprüften UXSpec-Pfade benannt | Snapshotstrategie und Graphprüfung an positiven/negativen Fällen prüfen |
 | 2 | Native Zielprofile | Kein neuer Nachweis | Primärquellen für native Accessibility und Layout gezielt recherchieren |
-| 2 | Formate und Reifegrad | Kandidatenbefunde bleiben getrennt | Vorgemerkten Gesamtvergleich abschließen |
+| 2 | Formate und Reifegrad | Kandidatenbefunde bleiben getrennt | Vorgemerkten Gesamtvergleich abschliessen |
 | 3 | Eigenes Integrationsformat | Weiterhin keine Auswahl | Erst nach konkreter Originalformatkette über notwendigen Zusatz entscheiden |
 
 **Zählweise:** Die acht Zeilen sind Arbeitsfragen, keine acht neuen Kandidaten und keine Zahl der verbleibenden U-Zellen. Alle sechzehn Kandidaten-Durchgänge bleiben abgeschlossen. Ihre Bewertungen werden durch diesen dokumentarischen Abgleich nicht automatisch geändert.

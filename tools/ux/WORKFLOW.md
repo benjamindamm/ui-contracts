@@ -47,7 +47,7 @@ Es entsteht `workflow-v2.json` plus `tasks/build-v1.json`. Beim nächsten Schrit
 | Erstprüfung · Reviewer/blind | Fachanforderungen, Originalquellen und ausdrücklich als `target` gelieferte Dateien | Builderbericht und Mapper-/Builderhandoffs |
 | Reportabgleich · Reviewer/report-check | Zusätzlich separat eingefrorene Erstprüfung und Builderbericht | Schreibzugriff auf Erstprüfung und Vorgängerartefakte |
 
-Der Auswahlfortschritt wird gegen eine frisch ausgeführte native Policyentscheidung geprüft. Veränderte Schlüssel, Fakten oder Quellrevisionen blockieren die abhängige Aufgabe. Eine partielle Lieferung ist kein freigegebener Vorgänger. Die Bibliotheksbindungen bleiben streng; eine bloße README-Änderung wird hier nicht still aus dem Ganzbibliotheksmanifest herausgefiltert.
+Der Auswahlfortschritt wird gegen eine frisch ausgeführte native Policyentscheidung geprüft. Veränderte Schlüssel, Fakten oder Quellrevisionen blockieren die abhängige Aufgabe. Eine partielle Lieferung ist kein freigegebener Vorgänger. Die Bibliotheksbindungen bleiben streng; eine blosse README-Änderung wird hier nicht still aus dem Ganzbibliotheksmanifest herausgefiltert.
 
 Ein Build benötigt Artefakt-ID `target` mit Art `target` und eine separat klassifizierte ID `report` mit Art `builder-report`; weitere benötigte Zieldateien ebenfalls als Art `target` liefern. Der Koordinator muss ehrliche Klassifizierung prüfen: Der Helper erkennt keine absichtlich versteckten Berichte oder Erläuterungen in einem Zielartefakt.
 

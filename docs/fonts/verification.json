@@ -79,7 +79,7 @@
     "release": false,
     "library": "example",
     "scope": "local-TTF-registration-and-static-font-specimen",
-    "sample": "Stadt auswählen – ÄÖÜ äöü ß € … 0123456789 Zürich",
+    "sample": "Stadt auswählen – ÄÖÜ äöü ss € … 0123456789 Zürich",
     "fonts": [
       {
         "family": "Inter",

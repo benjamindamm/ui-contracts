@@ -10,7 +10,7 @@ Eine UX-Aussage benötigt mindestens die gewählte Bibliotheksidentität, Kompon
 | --- | --- | --- |
 | Komponente | library.json → components["Autocomplete"] → components/autocomplete/component.json mit id ui-contracts:Autocomplete | Index-/Komponenten-ID stimmen überein; Bibliothek und Revision sind eindeutig. |
 | Interface | components/autocomplete/interface.json | Original-CEM-Ziel mit Typ und Existenz prüfen, keine zusätzliche Property erfinden. |
-| Visual | tokens.json und components/autocomplete/layout.css | Token oder Regelziel einschließlich Einheit/Typ erhalten; UX-Empfehlung ist keine alternative Farbdefinition. |
+| Visual | tokens.json und components/autocomplete/layout.css | Token oder Regelziel einschliesslich Einheit/Typ erhalten; UX-Empfehlung ist keine alternative Farbdefinition. |
 | Behavior | components/autocomplete/behavior.scxml | Zustands-/Übergangsbezug aus derselben Version; Verhalten bleibt hier führend. |
 | Accessibility | components/autocomplete/accessibility.html und accessibility.rules.json | HTML-/Projektionsregel gezielt referenzieren; keine neue ARIA-Norm behaupten. |
 

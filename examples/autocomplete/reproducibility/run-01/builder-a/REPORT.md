@@ -10,7 +10,7 @@ Ausführen, vom Projektverzeichnis:
 node examples/autocomplete/reproducibility/run-01/builder-a/generate.mjs
 ```
 
-Die gepinnte installierte Werkzeugumgebung unter `tools/openpencil/node_modules` wird verwendet. Der Generierungsschritt liest die führenden Tokens, Stories und Meldungsregeln direkt. Geometrie und Zustandsübertragung entsprechen dem expliziten Adapter im Skript. Er überschreibt ausschließlich seine eigenen Ausgaben in diesem Ordner. Kein Browser, keine Fremdergebnisse, keine Recherchedateien, keine Änderungen an Definitionen und kein Commit.
+Die gepinnte installierte Werkzeugumgebung unter `tools/openpencil/node_modules` wird verwendet. Der Generierungsschritt liest die führenden Tokens, Stories und Meldungsregeln direkt. Geometrie und Zustandsübertragung entsprechen dem expliziten Adapter im Skript. Er überschreibt ausschliesslich seine eigenen Ausgaben in diesem Ordner. Kein Browser, keine Fremdergebnisse, keine Recherchedateien, keine Änderungen an Definitionen und kein Commit.
 
 ## Tatsächliche Prüfung
 
@@ -40,7 +40,7 @@ Einzelwerte und Prüfergebnisse stehen in `checks.json`. Keine Behauptung einer 
 | Interface, Anatomie, Rollen und Zielgrenzen | autocomplete/interface.json, autocomplete/accessibility.html; overlay/{component.json,interface.json,accessibility.html}; scroll-area/{component.json,interface.json,accessibility.html} |
 | Phasen, bestätigter Wert vs. Navigation, Unterkomponenten | autocomplete/behavior.scxml, autocomplete/error-relay.scxml, overlay/behavior.scxml, scroll-area/behavior.scxml |
 
-Alle genannten Definitionen wurden gelesen. Verhalten wird als statische Fallauswahl wiedergegeben, nicht in OpenPencil ausgeführt. Ergebniszeilen heißen nach stabilen fachlichen Keys; Reihenindizes dienen nur der Geometrie.
+Alle genannten Definitionen wurden gelesen. Verhalten wird als statische Fallauswahl wiedergegeben, nicht in OpenPencil ausgeführt. Ergebniszeilen heissen nach stabilen fachlichen Keys; Reihenindizes dienen nur der Geometrie.
 
 ## Fehlende oder mehrdeutige Angaben / Adaptergrenzen
 
@@ -50,5 +50,5 @@ Alle genannten Definitionen wurden gelesen. Verhalten wird als statische Fallaus
 - CSS-Schattendaten werden auf OpenPencil DROP_SHADOW mit Radius 8 übertragen. CSS-Blur und Skia-Schatten können rastertechnisch differieren.
 - Die Scrollbar hat keine definierte Geometrie oder Farbe; es wurde keine frei gestaltete Scrollbar hinzugefügt. Clipping und statischer Scrollversatz werden dargestellt.
 - Separate Overlay-content- und ScrollArea-content-Wrapper sind in den HTML-Vorlagen enthalten, haben hier jedoch keine zusätzliche sichtbare Geometrie. Listbox liegt direkt im benannten Scrollviewport. Die fachlich explizit verlangten editierbaren Teile Input, Overlayfläche, Viewport, Listbox, Optionen und Status sind vorhanden.
-- Die freie Außenanordnung verwendet drei Spalten mit Fallüberschriften und einen Seitentitel. Sie gehört nicht zur Komponentenabmessung.
+- Die freie Aussenanordnung verwendet drei Spalten mit Fallüberschriften und einen Seitentitel. Sie gehört nicht zur Komponentenabmessung.
 - layerbasierte statische Semantik wird über verständliche Namen transportiert; keine ausführbare Combobox, Tastatursteuerung oder Screenreader-Anbindung.

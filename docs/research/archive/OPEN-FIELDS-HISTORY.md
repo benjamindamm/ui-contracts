@@ -4,7 +4,7 @@ Frühere Arbeitsstände, keine aktuelle Queue. [Aktuelle Forschungsfragen](../OP
 
 
 
-Die folgenden Notizen enthalten frühere Zwischenstände und sind keine aktuelle Queue. Die2 aktuellen Tabellenzeilen oben sind maßgeblich.
+Die folgenden Notizen enthalten frühere Zwischenstände und sind keine aktuelle Queue. Die2 aktuellen Tabellenzeilen oben sind massgeblich.
 
 Die damals41 offenen Einträge waren keine41 unabhängigen Produktfehler. Gemeinsame Paketfragen treten bei mehreren Kandidaten auf. Originalschema, tatsächliches Tooling, praktische Integration und Produktionsreife bleiben getrennte Nachweisgegenstände.
 
@@ -34,11 +34,11 @@ Die damals41 offenen Einträge waren keine41 unabhängigen Produktfehler. Gemein
 
 **CSS X03 zusätzlicher statischer Referenzbeleg:** [14 Bedingungen](../experiments/2026-10-25/css-semantic-anchors/REPORT.md), A/C485. Original-CSS-Ankerdeklaration an CEM-Teil und richtige A/B-Hostinstanz gebunden; native Zielwahl/Kaskade/Layout und Accessibility bleiben getrennt. 46 U, davon 26 Integration und 20 weitere.
 
-**OpenPencil V06 nachgeprüft, weiter offen:** [Zwölf Originalfragment- und drei native CSS-Bedingungen](../experiments/2026-10-25/openpencil-overflow-import/REPORT.md). Konkrete semantische Verluststelle belegt, keine künstliche Schließung der U-Zelle. Weiter 41 U (26 Integration, 15 weitere), 383 Bedingungen/48 Gruppen.
+**OpenPencil V06 nachgeprüft, weiter offen:** [Zwölf Originalfragment- und drei native CSS-Bedingungen](../experiments/2026-10-25/openpencil-overflow-import/REPORT.md). Konkrete semantische Verluststelle belegt, keine künstliche Schliessung der U-Zelle. Weiter 41 U (26 Integration, 15 weitere), 383 Bedingungen/48 Gruppen.
 
-**Endlicher Restplan:** [41 U-Zellen in priorisierten Paketen](../REMAINDER-PLAN.md): 39 unabhängig untersuchbare Fragen, 2 konkrete Originalklärungen, 0 ausschließlich produkt-/umgebungsbedingt blockierte aktuelle Matrixzellen. Native/AT-/Produktabnahme bleibt separat offen. Planung ist keine Umbewertung.
+**Endlicher Restplan:** [41 U-Zellen in priorisierten Paketen](../REMAINDER-PLAN.md): 39 unabhängig untersuchbare Fragen, 2 konkrete Originalklärungen, 0 ausschliesslich produkt-/umgebungsbedingt blockierte aktuelle Matrixzellen. Native/AT-/Produktabnahme bleibt separat offen. Planung ist keine Umbewertung.
 
-**I03 getrennt nachgewiesen:** [Vorhandene Teilbinder kriteriumsbezogen bewertet](../experiments/2026-10-25/named-parts-review/REPORT.md). CSS Layout A/C492 und WAI-ARIA A/C493 ausschließlich mit zusätzlicher CEM-/Hostbindung; keine native Anatomiesprache und keine neuen Bedingungen. Aktuell 44 U: 26 Integration, 18 weitere.
+**I03 getrennt nachgewiesen:** [Vorhandene Teilbinder kriteriumsbezogen bewertet](../experiments/2026-10-25/named-parts-review/REPORT.md). CSS Layout A/C492 und WAI-ARIA A/C493 ausschliesslich mit zusätzlicher CEM-/Hostbindung; keine native Anatomiesprache und keine neuen Bedingungen. Aktuell 44 U: 26 Integration, 18 weitere.
 
 **Originaler Switch-Namens-/Updatepfad nachgewiesen:** [Publizierter Graph bis Vue/Reka/Host](../experiments/2026-10-25/openpencil-projection-origin/REPORT.md), A01 R/C494 und A03 R/C495 im begrenzten Switch-Webprofil. Allgemeine Meldungen, fremde Widgetbeziehungen, Neutralität und Gesamtintegration nicht mitbehauptet. Aktuell 42 U: 26 Integration, 16 weitere; 423 Bedingungen/54 Gruppen, zwei anfängliche Namensprüferwartungen erhalten.
 

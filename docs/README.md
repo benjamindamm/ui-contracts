@@ -11,7 +11,7 @@
 | Fehlende Komponentenregeln klären | [Deterministischer Draftcheck](../tools/completeness/README.md) |
 | Eine passende Komponente auswählen | [UX-Regeln und Quellenprüfung](../tools/ux/README.md) |
 | In Teilaufgaben arbeiten | [Rollen und Übergaben](../skills/ui-contracts/references/workflow.md); bei Auswahl-/UI-Aufträgen [konkreter Ablauf](../tools/ux/WORKFLOW.md) |
-| Das zusammengeführte Ergebnis prüfen | [Gesamtabgleich](../skills/ui-contracts/references/integration-review.md), anschließend den dort benötigten Zielprüfer |
+| Das zusammengeführte Ergebnis prüfen | [Gesamtabgleich](../skills/ui-contracts/references/integration-review.md), anschliessend den dort benötigten Zielprüfer |
 | Ein editierbares Design erzeugen | [OpenPencil-Werkzeuge](../tools/openpencil/README.md) · [Vorschau](skills/OPENPENCIL-PREVIEW.md) |
 | Einrichtung und unterstützte Webfälle ausführen | [Aktueller Web-Prüfweg](../tools/web/README.md) |
 | Aufbau und Grenzen verstehen | [Architektur](ARCHITECTURE.md) · [Aktueller Stand](STATUS.md) |
@@ -26,6 +26,6 @@
 
 Die Lesereihenfolge ändert den Quellvorrang nicht: Bei Widersprüchen führt die Originalregel. Eine Zusammenfassung und ein Handoff werden keine zusätzliche Wahrheit.
 
-Zum Abschluss werden die betroffenen Regeln und Verbindungen über einen Abdeckungsplan zusammengeführt. Dafür muss weder jeder Worker alles lesen noch ein einzelner Abschlussrequest sämtliche Rohdaten enthalten. Größere Prüfungen können Bereich für Bereich mit gespeicherten Befunden erfolgen.
+Zum Abschluss werden die betroffenen Regeln und Verbindungen über einen Abdeckungsplan zusammengeführt. Dafür muss weder jeder Worker alles lesen noch ein einzelner Abschlussrequest sämtliche Rohdaten enthalten. Grössere Prüfungen können Bereich für Bereich mit gespeicherten Befunden erfolgen.
 
 [Entwicklungsschritte](EVOLUTION.md) · [Aufgaben](../TASKS.md). iOS/Android und allgemeine Generierung bleiben Zukunftsumfang; die konkreten Prüfer haben jeweils einen benannten begrenzten Umfang.

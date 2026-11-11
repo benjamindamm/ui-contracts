@@ -21,4 +21,4 @@ description: UI-Komponenten als CEM-, DTCG/CSS-, SCXML- und HTML/ARIA-Contracts 
 - Design/Code zurückführen, Draftlücken klären: [Rückwege](references/reverse.md).
 - Berechnete Kurven/Chartformen: [Geometriehilfe](references/geometry.md); Grundformen nativ.
 - Mehrstufigen Ablauf planen: [Workflow](references/workflow.md). Zugewiesene Worker laden stattdessen nur ihre dort verlinkte Rollenkarte.
-- Expliziter Reproduktions-/Forschungsauftrag: [Reproduktion](references/reproducibility.md). Historische Ergebnisse von außen prüfen.
+- Expliziter Reproduktions-/Forschungsauftrag: [Reproduktion](references/reproducibility.md). Historische Ergebnisse von aussen prüfen.

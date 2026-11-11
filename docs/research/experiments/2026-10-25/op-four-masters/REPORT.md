@@ -1,12 +1,12 @@
 # OpenPencil: vier führende Quellen, Graph ausdrücklich als Ableitung
 
-Stand:25. Oktober2026. **X01 A/C539**, ausschließlich für die konkret ausgeführte Vier-Master→Graph-/Control-/SSR-Kette. Fünf Bedingungen P98 erfüllt.
+Stand:25. Oktober2026. **X01 A/C539**, ausschliesslich für die konkret ausgeführte Vier-Master→Graph-/Control-/SSR-Kette. Fünf Bedingungen P98 erfüllt.
 
 ## Führende Artefakte und originale Ableitung
 
 Interface: ursprüngliches CEM mit Selected:boolean und seinem ausdrücklichen Default. Behavior: ursprüngliche OPS-Spec mit kind und value-Propertybindung. Visual: separate CSS-Regel für Rootbreite/-höhe in px. Accessibility: eigenes HTML mit Rollen und sichtbaren Namen für A/B. Der zusätzliche enge Konverter liest tatsächliche Dateien und erzeugt daraus einen Scenegraph als **abgeleitete Zwischenrepräsentation**; es gibt keine zweite manuell gepflegte führende Graphdatei.
 
-Properties/Defaults stammen aus CEM, ursprüngliches behaviourFromSpec liest die OPS-Bindung auf den generierten tatsächlichen Propertynamen. Rootmaße stammen ausschließlich aus der begrenzten CSS-Projektion, gezeichnete Label-TEXT-Inhalte aus den jeweiligen A11y-HTML-Quellen. Statische A/B-Platzierung des Forschungshosts ist keine weitere Komponentenmasterquelle. Die CSS-Auswertung ist auf die gezeigten flachen positiven px-Dimensionen begrenzt; kein generischer CSS→Figma-Konverter.
+Properties/Defaults stammen aus CEM, ursprüngliches behaviourFromSpec liest die OPS-Bindung auf den generierten tatsächlichen Propertynamen. Rootmasse stammen ausschliesslich aus der begrenzten CSS-Projektion, gezeichnete Label-TEXT-Inhalte aus den jeweiligen A11y-HTML-Quellen. Statische A/B-Platzierung des Forschungshosts ist keine weitere Komponentenmasterquelle. Die CSS-Auswertung ist auf die gezeigten flachen positiven px-Dimensionen begrenzt; kein generischer CSS→Figma-Konverter.
 
 Vollständige unveränderte veröffentlichte SceneGraph-/Komponenteninstanziierungs-/OPS-/Projektions-/ControlRoles-APIs0.16.0 laufen. Die bereits benannte unveränderte Original-Vue-Render-/State-Kette wird mittels TypeScript-AST isoliert ausgeführt, mit tatsächlichem Vue und tatsächlichem Reka-SSR. Keine nachgebaute Rolle oder Checkboxstate, keine Stubimplementierungen gelieferter Abhängigkeiten. Unbenutzte andere Renderbranches und gesamte Modulinitialisierung/Editor werden nicht behauptet. Quell- und Deklarationshashes in extraction.json.
 

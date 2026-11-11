@@ -4,11 +4,11 @@ Stand:25. Oktober2026. **Panda CSS X08 A/C506**, nur für die beschriebene Token
 
 ## Endbedingung und Originalgegenstand
 
-Für einen konkreten Wert feststellen, welche Konfiguration führt, wie dessen Herkunft im ursprünglichen Specindex erscheint und wie eine zusätzliche Integrationsableitung samt Änderung an diese Quelle gebunden wird. Kein bloßes neues Frameworklabel im bisherigen Booleanbinder.
+Für einen konkreten Wert feststellen, welche Konfiguration führt, wie dessen Herkunft im ursprünglichen Specindex erscheint und wie eine zusätzliche Integrationsableitung samt Änderung an diese Quelle gebunden wird. Kein blosses neues Frameworklabel im bisherigen Booleanbinder.
 
-Originalrevision `86f78a228204d63baa0b8bca2676d9f26190e449`. Vollständige Module packages/config/src/merge.ts, sources.ts, shared.ts und error.ts sowie packages/compiler-shared/src/design-system-spec/sources.ts mit TypeScript5.9.3 transpiliert und ausgeführt; keine Funktionen ersetzt. mergeConfigsWithSources, SourceTracker einschließlich ursprünglicher Pfad-/Token-Normalisierung und applySpecSources sind tatsächlich ausgeführt. Eigene geordnete Preset-/Configobjekte sind Eingaben in ursprünglicher Panda-Konfigurationsform.
+Originalrevision `86f78a228204d63baa0b8bca2676d9f26190e449`. Vollständige Module packages/config/src/merge.ts, sources.ts, shared.ts und error.ts sowie packages/compiler-shared/src/design-system-spec/sources.ts mit TypeScript5.9.3 transpiliert und ausgeführt; keine Funktionen ersetzt. mergeConfigsWithSources, SourceTracker einschliesslich ursprünglicher Pfad-/Token-Normalisierung und applySpecSources sind tatsächlich ausgeführt. Eigene geordnete Preset-/Configobjekte sind Eingaben in ursprünglicher Panda-Konfigurationsform.
 
-Rust specs.rs erzeugt im gelesenen Originalpfad den Basisindex ohne die hier anschließend gesetzten Sourcefelder. Die TypeScriptfunktion applySpecSources ist die konkrete zusätzliche ursprüngliche Annotationsfunktion. **Die Rustengine, komplette Konfigurationsauflösung und Compileraufrufkette wurden nicht ausgeführt.** Der verwendete DesignSystemSpec-Grunddatensatz ist eine eigene passende Fixture mit einem Token und einem Wert aus dem tatsächlich gemergten Objekt, kein als Originalcompileroutput ausgegebener eigener Generator.
+Rust specs.rs erzeugt im gelesenen Originalpfad den Basisindex ohne die hier anschliessend gesetzten Sourcefelder. Die TypeScriptfunktion applySpecSources ist die konkrete zusätzliche ursprüngliche Annotationsfunktion. **Die Rustengine, komplette Konfigurationsauflösung und Compileraufrufkette wurden nicht ausgeführt.** Der verwendete DesignSystemSpec-Grunddatensatz ist eine eigene passende Fixture mit einem Token und einem Wert aus dem tatsächlich gemergten Objekt, kein als Originalcompileroutput ausgegebener eigener Generator.
 
 ## Tatsächliche per-information Herkunft
 
@@ -44,7 +44,7 @@ Neun Beobachtungserwartungen erfüllt. Eine rein redaktionelle Korrektur des eig
 
 X08 U→A/C506 für die konkrete originale Wertquellenführung mit zusätzlicher hashgebundener Änderung/Ableitung. Native Panda-Merge-/Source-Annotation ist vorhanden; Sourcehashes und Integrationsjournal ergänzt der Forschungsbinder. Kein allgemeines Vier-Domänen-Vorrangmodell, keine vollständige Compiler-/Rust-/CSS-Renderingprüfung, keine Token-DTCG-Konformität oder Browser-/AT-Zusage. Eingabereihenfolge wird bewusst presets-first/config-last vorgegeben; ein beliebiger Loader wird hier nicht geprüft.
 
-Die anderen Panda-Zellen, besonders X01, werden nicht automatisch übertragen. Andere Informationstypen, ursprüngliche Aliasauflösung und semantische Themen-/Bedingungskontexte bleiben gesondert zu prüfen. Der benannte ursprüngliche Quellenpfad ist für diesen Wert ausgewertet; keine identischen Trackerproben zur bloßen Steigerung der Fallzahl.
+Die anderen Panda-Zellen, besonders X01, werden nicht automatisch übertragen. Andere Informationstypen, ursprüngliche Aliasauflösung und semantische Themen-/Bedingungskontexte bleiben gesondert zu prüfen. Der benannte ursprüngliche Quellenpfad ist für diesen Wert ausgewertet; keine identischen Trackerproben zur blossen Steigerung der Fallzahl.
 
 ## Reproduktion
 

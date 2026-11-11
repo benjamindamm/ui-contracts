@@ -14,7 +14,7 @@
       "coverage": "U",
       "plan_class": "b",
       "missing_assertion": "Originales ConfigSchema validiert Redaktionskonfiguration, nicht eindeutig den eingereichten DESIGN.md-Dokumentgegenstand. Eigenes Colorbinding beantwortet diese Originalschemafrage nicht.",
-      "actual_next_possible_step": "Neue belastbare Originalfestlegung des Dokumentdatenmodell-/Schema-/Ergebnisbindings einschließlich Root-/Optionalitätsbedeutung. Bisherige Config-/Parserproben oder eigene zusätzliche Prosaabbildung entscheiden das nicht.",
+      "actual_next_possible_step": "Neue belastbare Originalfestlegung des Dokumentdatenmodell-/Schema-/Ergebnisbindings einschliesslich Root-/Optionalitätsbedeutung. Bisherige Config-/Parserproben oder eigene zusätzliche Prosaabbildung entscheiden das nicht.",
       "no_repeat_boundary": "Neue konkret benannte Originalinformation erforderlich; keine Autorenanfrage versandt.",
       "evidence_report": "experiments/2026-10-25/final-x06-scope/REPORT.md",
       "evidence_report_sha256": "7cda825fe28928d0305ee1f48a6c33909ffc0db64d52e0f78890eb97db2558f5"
@@ -38,7 +38,7 @@
       "coverage": "U",
       "plan_class": "a",
       "missing_assertion": "Zusätzliche Bindung an tatsächlich erzeugte Runtime-Ziele fehlt. Original-Layerparent/absolute Kindwrapper werden nicht in fremde Inputanker umgedeutet.",
-      "actual_next_possible_step": "Original kompilierten Visual-Slotnamen an ausdrücklich zusätzlichen CEM-/DOM-Wrapperkontext binden; dessen CSS-Anker auf das tatsächliche Inputziel setzen. Danach Inputhöhe ändern und die Zielkante/Abstandsrelation nativ messen, einschließlich fehlendem/fremdem Ziel.",
+      "actual_next_possible_step": "Original kompilierten Visual-Slotnamen an ausdrücklich zusätzlichen CEM-/DOM-Wrapperkontext binden; dessen CSS-Anker auf das tatsächliche Inputziel setzen. Danach Inputhöhe ändern und die Zielkante/Abstandsrelation nativ messen, einschliesslich fehlendem/fremdem Ziel.",
       "no_repeat_boundary": "Neue konkrete Slot→Runtime-Ziel-/Ankerbindung. Der alte Stylemapperlauf ohne diese Beziehung wird nicht wiederholt.",
       "evidence_report": "experiments/2026-10-25/uxspec-layout-scope/REPORT.md",
       "evidence_report_sha256": "f8636bd587660832f222f423538100aad0ddf19084a282149989e0970d331009"
@@ -51,7 +51,7 @@
       "plan_class": "a",
       "missing_assertion": "Offene JSON-Felder sind keine ausgeführte Overflowpolitik; ursprünglicher Mapper reicht sie nicht beliebig durch.",
       "actual_next_possible_step": "Am selben tatsächlich gebundenen Originalslot eine ausdrücklich zusätzliche CSS-Scrollpolitik aus eigener Quelle auswerten; tatsächlichen Überlauf, Clip/Scrollunterschied und zuständige Originalquelle prüfen. Kein neues frei benanntes UXSpec-Originalfeld erfinden.",
-      "no_repeat_boundary": "Neue konkrete Slot→Scrollport-/Politikbindung, getrennt von ursprünglichem V05-Maximalgrößenbeitrag.",
+      "no_repeat_boundary": "Neue konkrete Slot→Scrollport-/Politikbindung, getrennt von ursprünglichem V05-Maximalgrössenbeitrag.",
       "evidence_report": "experiments/2026-10-25/uxspec-layout-scope/REPORT.md",
       "evidence_report_sha256": "f8636bd587660832f222f423538100aad0ddf19084a282149989e0970d331009"
     },
@@ -62,7 +62,7 @@
       "coverage": "U",
       "plan_class": "a",
       "missing_assertion": "Section._anchor bleibt Figma-Messknotenidentität statt Runtime-Zielkante; aktuelle Normalisierung liefert diese fehlende Bedeutung nicht.",
-      "actual_next_possible_step": "Den tatsächlich normalisierten _anchor-Layer explizit einem separaten CEM-/DOM-Part und richtiger Instanz zuordnen. Zusatzlayout muss Richtung/Abstand zur benannten Inputkante sowie Neuauswertung unter Größenänderung ausführen.",
+      "actual_next_possible_step": "Den tatsächlich normalisierten _anchor-Layer explizit einem separaten CEM-/DOM-Part und richtiger Instanz zuordnen. Zusatzlayout muss Richtung/Abstand zur benannten Inputkante sowie Neuauswertung unter Grössenänderung ausführen.",
       "no_repeat_boundary": "Neuer Messknoten→Runtime-Ziel-Binder mit eigener geometrischer Semantik, kein erneuter Namens-/Variant-Fallbacktest.",
       "evidence_report": "experiments/2026-10-25/uspec-layout-scope/REPORT.md",
       "evidence_report_sha256": "b05c6185309125f9c3941a9cee81cd2b228df1496ec502b6dbbd2583a891cf16"
@@ -98,7 +98,7 @@
       "coverage": "U",
       "plan_class": "a",
       "missing_assertion": "Originale lokale Obligation-Outputpointer erkennen nicht die Revision einer tatsächlich fremden CEM-Quelle.",
-      "actual_next_possible_step": "Zusätzlichen eng begrenzten CEM-Datei/Pointer/Typ-/Revisionsbinder an einen konkret vorhandenen Evidence-Fact/sourcePaths-Eintrag und ursprünglichen lokalen Outputpointer anschließen. Tatsächliche Fremdquellenänderung, falscher Knoten/Typ und falscher Definitionskontext müssen scheitern; Instanzkontext nur dort behaupten, wo tatsächlich gebunden.",
+      "actual_next_possible_step": "Zusätzlichen eng begrenzten CEM-Datei/Pointer/Typ-/Revisionsbinder an einen konkret vorhandenen Evidence-Fact/sourcePaths-Eintrag und ursprünglichen lokalen Outputpointer anschliessen. Tatsächliche Fremdquellenänderung, falscher Knoten/Typ und falscher Definitionskontext müssen scheitern; Instanzkontext nur dort behaupten, wo tatsächlich gebunden.",
       "no_repeat_boundary": "Neuer Fremdquellenresolver/-binder auf vorhandenen Originalfact, kein erneuter lokaler Evidencepointerlauf ohne tatsächliche Fremdquelle.",
       "evidence_report": "experiments/2026-10-25/uspec-external-reference/REPORT.md",
       "evidence_report_sha256": "01572a739e28e412e731fcb227f36c68dc95b0513e8c410c6e66dcb34b630a6e"
@@ -122,7 +122,7 @@
       "coverage": "U",
       "plan_class": "a",
       "missing_assertion": "Graph/Slots/Properties/Controls sind ursprünglich ausgeführt. Ein gemeinsamer Graph kann abgeleitete IR sein; bisher fehlt die konkrete Vier-Master→Graphbindung, nicht ein Beweis prinzipieller Untrennbarkeit.",
-      "actual_next_possible_step": "CEM-Boolean-/Defaultmetadaten, OPS-Behavior-Spec, eigenständige CSS-Geometrie und HTML-A11y-Namen getrennt führen. Den Graph ausdrücklich daraus erzeugte Ableitung behandeln: Properties aus CEM, Behavior aus tatsächlichem behaviourFromSpec, Maße aus Visual, Labeltext aus A11y. Tatsächliche Originalinstanziierung/Controls/Reka und unabhängige Einzelquellrevision prüfen; keine zweite führende Graphdefinition.",
+      "actual_next_possible_step": "CEM-Boolean-/Defaultmetadaten, OPS-Behavior-Spec, eigenständige CSS-Geometrie und HTML-A11y-Namen getrennt führen. Den Graph ausdrücklich daraus erzeugte Ableitung behandeln: Properties aus CEM, Behavior aus tatsächlichem behaviourFromSpec, Masse aus Visual, Labeltext aus A11y. Tatsächliche Originalinstanziierung/Controls/Reka und unabhängige Einzelquellrevision prüfen; keine zweite führende Graphdefinition.",
       "no_repeat_boundary": "Neuer expliziter Vier-Master→ursprüngliche-Graph-/Control-Kette. Vorhandene Switch-/Slider-/Ownerfälle ohne diese Herkunftsbindung nicht erneut zählen.",
       "evidence_report": "experiments/2026-10-25/op-owner-precedence/REPORT.md",
       "evidence_report_sha256": "ce90a9113191a1c4b6cfc76bc6125816d36e6a79c63257d5b070cff380847381"

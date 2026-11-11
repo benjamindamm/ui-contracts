@@ -4,7 +4,7 @@ Stand: 23. Oktober 2026. Die Kriterien sind vor der nachfolgenden Zellenbewertun
 
 ## Herkunft
 
-**O** bezeichnet die Nachrichtenposition im vollständig als Text gelesenen [Originalgespräch](https://chatgpt.com/share/6adba3c9-accc-83ed-adbf-a78f5a880760): 71 Nachrichten, 36 Nutzerbeiträge. Die Nummerierung entspricht `conversation-turn-N` der öffentlichen Seite zum Abrufzeitpunkt. Nutzeräußerungen und Assistentenvorschläge bleiben unterscheidbar.
+**O** bezeichnet die Nachrichtenposition im vollständig als Text gelesenen [Originalgespräch](https://chatgpt.com/share/6adba3c9-accc-83ed-adbf-a78f5a880760): 71 Nachrichten, 36 Nutzerbeiträge. Die Nummerierung entspricht `conversation-turn-N` der öffentlichen Seite zum Abrufzeitpunkt. Nutzeräusserungen und Assistentenvorschläge bleiben unterscheidbar.
 
 - O11: Agentenlesbarer Contract mit verschiedenen Ausgaben; OpenPencil als gegenwärtiges Werkzeug.
 - O13: Nutzer bestätigt die vier Domänen; O15 verlangt vorhandene Standards statt sofort eigenem Format.
@@ -14,7 +14,7 @@ Stand: 23. Oktober 2026. Die Kriterien sind vor der nachfolgenden Zellenbewertun
 - O34: Präferenz, Googles Kandidaten genauer zu untersuchen; keine Eignungsgarantie.
 - O36/O38: Konkretes UX-Beispiel mit relativer Position, Begrenzung, Scrollen, Navigation, Aktualisierung und Ergebnisrückmeldung.
 - O40/O42: Weitere Vorarbeiten recherchieren, besonders agentische Formate; Requirements as Code als Analogie.
-- O44/O46: UXSpec-Versuch angefragt; bloße visuelle Freitextbeschreibung ausdrücklich als unzureichend kritisiert.
+- O44/O46: UXSpec-Versuch angefragt; blosse visuelle Freitextbeschreibung ausdrücklich als unzureichend kritisiert.
 - O48: Kombination von Substandards erlaubt; bestehende Entwicklungen nutzen und eigenes langfristiges Umbau-/Pflegerisiko reduzieren.
 - O50: Strikte Abgrenzung wegen Agentenwidersprüchen; abstrakte Schnittstellen über Swift, TypeScript, Angular und React hinweg.
 - O51/O53/O55/O57/O59: Vom Assistenten konkretisierte Ownership-, Referenz- und Prüfmodelle; Nutzerbestätigungen in O52/O54/O56/O58/O60. Konkrete Syntax und behauptete Fähigkeiten sind dadurch nicht technisch verifiziert.
@@ -22,7 +22,7 @@ Stand: 23. Oktober 2026. Die Kriterien sind vor der nachfolgenden Zellenbewertun
 
 **P01:** Spätere Nutzerpräzisierung im Voice-Chat: Allgemeines Projektziel; Anforderungen als Matrixzeilen und Kandidaten als Spalten; Beispielkomponente nur Illustration.
 
-**P02:** Anschließende Präzisierung, über denselben koordinierenden Chat übermittelt: gemeinsames Contract-Paket zunächst vor Rendererwahl; vier getrennte Dateien bevorzugt; JSON/YAML mögliche Serialisierungen; stabile element- und domänenübergreifende Referenzen, wiederverwendbare Komponenten, externe/versionierte Referenzen und Validierung. URN ist eine Idee, keine Technikentscheidung. P02 wird als übermittelte Präzisierung dokumentiert; ihre Nachricht ist nicht Teil des öffentlichen Originals.
+**P02:** Anschliessende Präzisierung, über denselben koordinierenden Chat übermittelt: gemeinsames Contract-Paket zunächst vor Rendererwahl; vier getrennte Dateien bevorzugt; JSON/YAML mögliche Serialisierungen; stabile element- und domänenübergreifende Referenzen, wiederverwendbare Komponenten, externe/versionierte Referenzen und Validierung. URN ist eine Idee, keine Technikentscheidung. P02 wird als übermittelte Präzisierung dokumentiert; ihre Nachricht ist nicht Teil des öffentlichen Originals.
 
 ## Operationalisierte Kriterien
 

@@ -5,7 +5,7 @@
 | Domäne | Führende Grundlage | Zweck |
 | --- | --- | --- |
 | Technisches Interface | CEM (Interface) | Properties, Typen, Events und Payloads |
-| Visuelles Design | DTCG/CSS (Visual) | Tokens, Maße, Layout und visuelle Zustände |
+| Visuelles Design | DTCG/CSS (Visual) | Tokens, Masse, Layout und visuelle Zustände |
 | UX-Verhalten | SCXML (Behavior) | Übergänge, Guards, Aktionen und Lebenszyklus |
 | Accessibility | HTML/ARIA, ergänzt durch APG (Accessibility) | Semantik und zugängliche Bedienmuster |
 

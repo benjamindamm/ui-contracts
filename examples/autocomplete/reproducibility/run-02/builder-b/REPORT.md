@@ -1,6 +1,6 @@
 # Builder B — Reproduzierbarkeit Autocomplete
 
-Erzeugung eines editierbaren OpenPencil-Dokuments ausschließlich aus der eingefrorenen
+Erzeugung eines editierbaren OpenPencil-Dokuments ausschliesslich aus der eingefrorenen
 Komponentendefinition unter `components/`. Kopf des Berichts ist eine Selbstauskunft, keine
 Bewertung.
 
@@ -12,7 +12,7 @@ Vom Repo-Root (`/Users/kcnpxcp/Dev/GitHub/ui-contracts`):
 node examples/autocomplete/reproducibility/run-02/builder-b/generate.mjs
 ```
 
-Das Skript ist eigenständig, benötigt kein Netzwerk und verwendet ausschließlich die gepinnten
+Das Skript ist eigenständig, benötigt kein Netzwerk und verwendet ausschliesslich die gepinnten
 Pakete unter `tools/openpencil/node_modules` (`@open-pencil/core` 0.16.0). Es schreibt alle
 Artefakte in seinen eigenen Ordner.
 
@@ -32,7 +32,7 @@ node tools/openpencil/node_modules/@open-pencil/cli/bin/openpencil.js diff files
 2. **Fälle ermittelt** aus `components/autocomplete/stories.json` (zehn Einträge) und der
    Zuordnung in `components/autocomplete/README.md` (active/scroll-end = ready mit `activeKey`;
    selected = closed mit `value`; disabled = closed mit `enabled=false`).
-3. **Regeln übertragen**: Maße/Farben/Typografie aus `tokens.json`; Geometrie- und
+3. **Regeln übertragen**: Masse/Farben/Typografie aus `tokens.json`; Geometrie- und
    Zustandsregeln aus den drei `layout.css`; Meldungstexte aus
    `accessibility.rules.json`; Anatomie und Teilebenen aus `component.json`,
    `interface.json` und den `accessibility.html`-Vorlagen.
@@ -47,7 +47,7 @@ Aufbau des Dokuments: eine Seite `Autocomplete` mit dem Rahmen `Autocomplete · 
 (1968 × 750). Darin liegen die zehn Fälle als **Komponenten** `Autocomplete / <id>`; jede
 enthält die separat benannten und editierbaren Teile `label`, `input` (mit
 `input/placeholder` bzw. `input/value`), `overlay.surface`, `overlay.scroll.viewport`, `list`,
-`option/<key>` inkl. `option/<key>/label` und `status`. Die Außenanordnung (Raster,
+`option/<key>` inkl. `option/<key>/label` und `status`. Die Aussenanordnung (Raster,
 Seitentitel, Hinweiszeile) ist frei gewählt und nicht Teil der Komponente.
 
 ## Dargestellte Fälle
@@ -96,7 +96,7 @@ Alle Werte aus `checks.json`, gemessen am zurückgelesenen `autocomplete.fig`.
    setzt `color: --ac-disabled`. Wörtlich gewinnt der Platzhalter (muted); zur
    unterscheidbaren Darstellung des Falls wurde `--ac-disabled` (#94A3B8) verwendet.
 4. **Leerer Status.** In closed/disabled ist die Meldung laut Regeln `""`; der Statusknoten
-   existiert mit leerem Text und den definierten Maßen (Höhe 20, Abstand 8).
+   existiert mit leerem Text und den definierten Massen (Höhe 20, Abstand 8).
 5. **Label-/Statusfarbe.** Für `label` ist keine Farbe gesetzt (erbt `--ac-text`), für
    `status` gilt `--ac-muted` bzw. im Fehlerfall `--ac-error`. So umgesetzt.
 6. **Textboxen in Input und Option.** `box-sizing: border-box` und Padding 12 px bedeutet
@@ -105,7 +105,7 @@ Alle Werte aus `checks.json`, gemessen am zurückgelesenen `autocomplete.fig`.
 7. **Status mit fontSize 12 und lineHeight 20.** Die Zeilenbox bleibt 20 px hoch; der Text
    wurde vertikal zentriert.
 8. **Clipping-Radius.** Der Radius 8 liegt laut CSS auf `overlay.surface`; Viewport und
-   Surface sind schließend (`clipsContent`), sodass die Rundung das Scrollen beschneidet.
+   Surface sind schliessend (`clipsContent`), sodass die Rundung das Scrollen beschneidet.
 9. **`scroll-end`-Versatz.** Inhalt 7 × 32 = 224, Viewport 160 → Versatz 64 px, damit die
    aktive letzte Option vollständig sichtbar ist. Kein dynamisches Scrollen, nur statische
    Darstellung.
@@ -116,7 +116,7 @@ Alle Werte aus `checks.json`, gemessen am zurückgelesenen `autocomplete.fig`.
   Tastatursteuerung und ARIA-Ausführung werden nicht behauptet. Die ARIA-Semantik ist nur
   über Teilenamen und Texte abgebildet.
 - **Renderer-Font.** Die Definition verlangt `Inter`; die Schrift ist lokal nicht installiert.
-  Die Textknoten tragen `fontFamily: "Inter"` und die Token-Maße, der Headless-Renderer nutzt
+  Die Textknoten tragen `fontFamily: "Inter"` und die Token-Masse, der Headless-Renderer nutzt
   jedoch einen Fallback. Dadurch können Glyphenbreiten/Höhen in den Vorschauen minimal von
   einer Inter-Darstellung abweichen; die Dokumentwerte sind davon unberührt.
 - **Byte-Determinismus.** Der Aufbau ist deterministisch: zwei Läufe ergeben laut
@@ -124,7 +124,7 @@ Alle Werte aus `checks.json`, gemessen am zurückgelesenen `autocomplete.fig`.
   19 Bytes der ZIP-Zeitstempel (z. B. Offset 11 und Einträge `thumbnail`/`meta.json`), sodass
   der SHA-256 pro Lauf variiert. Der in `checks.json` genannte Hash gilt für die ausgelieferte
   Datei.
-- **Keine GUI geöffnet.** Gearbeitet wurde ausschließlich headless über Dateien/Node; die
+- **Keine GUI geöffnet.** Gearbeitet wurde ausschliesslich headless über Dateien/Node; die
   OpenPencil-Desktop-App war nicht verbunden.
 - **Keine Änderung der Definition.** `components/` und `tools/` blieben unangetastet; die
   Definition wurde nicht nachträglich angepasst.

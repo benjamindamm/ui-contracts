@@ -1,4 +1,4 @@
-**Aktueller Stand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
+**Aktueller Stand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Massgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
 
 # Detailvergleich: DESIGN.md und deklarative Layoutmodelle
 
@@ -11,7 +11,7 @@ Stand: 24. Oktober 2026. **Dokumentarischer Vergleich, keine gerenderte Oberflä
 
 DESIGN.md liefert strukturierte Designwerte und menschenlesbaren Gestaltungskontext. Die erneut gelesene Spezifikation beschreibt bei Layout vor allem Abstände und bei Komponenten bekannte Stylefelder. Das belegt noch keinen gemeinsamen formalen Vertrag für „dieses Popup relativ zu jenem Input, mit begrenzter Höhe und eigenem Scrollport“.
 
-CSS Anchor Positioning und Overflow beschreiben konkrete Geometrie und Überlauf. DTCG liefert Werte und Auflösung, Panda einen CSS-orientierten Erzeugungs-/Bindungspfad, UXSpec eigene Layoutprimitiven mit einem vorhandenen Web-Größenmapper. Die Beiträge ergänzen sich, besitzen aber unterschiedliche Zielobjekte und Prüfgrenzen. Eine Datei oder Sprache wird hier nicht ausgewählt.
+CSS Anchor Positioning und Overflow beschreiben konkrete Geometrie und Überlauf. DTCG liefert Werte und Auflösung, Panda einen CSS-orientierten Erzeugungs-/Bindungspfad, UXSpec eigene Layoutprimitiven mit einem vorhandenen Web-Grössenmapper. Die Beiträge ergänzen sich, besitzen aber unterschiedliche Zielobjekte und Prüfgrenzen. Eine Datei oder Sprache wird hier nicht ausgewählt.
 
 Quellen: [S42](SOURCES.md), [S51](SOURCES.md#s51), [S56](SOURCES.md#s56), [S59](SOURCES.md#s59), [S60](SOURCES.md#s60); gezielt erneut gelesen [S63](SOURCES.md#s63), neues CSS-Zusatzmodul [S65](SOURCES.md#s65). [C417](CLAIMS.md#c417) hält die eng begrenzte Schlussfolgerung fest.
 
@@ -19,13 +19,13 @@ Quellen: [S42](SOURCES.md), [S51](SOURCES.md#s51), [S56](SOURCES.md#s56), [S59](
 
 Zwei Autocomplete-Instanzen A und B verwenden dieselbe Definition. Jedes Popup gehört zu seinem eigenen Input. Vorgeschlagene Produktparameter: 8 px Abstand, maximal fünf vollständig sichtbare gleich hohe Zeilen, vertikales Scrollen bei weiteren Treffern, Light-/Dark-Auswahl. Eine ScrollArea kann als eigene Unterkomponente auftreten. Die Zahlen und das konkrete Muster sind Prüfparameter, keine universellen Standardpflichten.
 
-Für variable Zeilenhöhen wird die Höhe der ersten fünf Zeilen einschließlich relevanter Abstände benötigt. Fünfmal Textzeilenhöhe ist dafür kein allgemeiner Ersatz. Auf verfügbarem Bildschirmraum kann zusätzlich eine kleinere Maximalhöhe erforderlich sein; die Priorität zwischen fünf Zeilen, Platz und Mindestnutzbarkeit ist eine Produktregel.
+Für variable Zeilenhöhen wird die Höhe der ersten fünf Zeilen einschliesslich relevanter Abstände benötigt. Fünfmal Textzeilenhöhe ist dafür kein allgemeiner Ersatz. Auf verfügbarem Bildschirmraum kann zusätzlich eine kleinere Maximalhöhe erforderlich sein; die Priorität zwischen fünf Zeilen, Platz und Mindestnutzbarkeit ist eine Produktregel.
 
 ## Feldweiser Vergleich
 
 | Information | DESIGN.md | DTCG / Panda | UXSpec / uSpec | CSS-Beitrag |
 | --- | --- | --- | --- | --- |
-| Abstand als Wert | Strukturierter spacing-Wert möglich | DTCG dimension mit Einheit; Panda Token-/Styleverwendung | UXSpec Größen-/Stylewerte; uSpec extrahierte Maße | Längenwert im Layout verwendbar |
+| Abstand als Wert | Strukturierter spacing-Wert möglich | DTCG dimension mit Einheit; Panda Token-/Styleverwendung | UXSpec Grössen-/Stylewerte; uSpec extrahierte Masse | Längenwert im Layout verwendbar |
 | Ziel der Relation | Kein hinreichender Originalnachweis für benannten Inputanker in der erneut gelesenen Spezifikation | Token allein kennt kein UI-Ziel; Panda braucht konkrete CSS-/Patternbindung | UXSpec layer überlagert lokal; uSpec `_anchor` bezeichnet Figma-Quell-/Messziel | anchor-name / position-anchor verbinden konkrete Boxen |
 | Richtung und Position | Prosa oder bekannte Stylefelder ergeben noch keine festgelegte relative Ankersprache | Ausgabe-/Layoutprofil erforderlich | Lokaler Layerwrapper ist kein allgemeines Input→Popup-Modell | position-area bzw. anchor()-bezogene Insets |
 | Maximale Höhe | height/size-Felder sind nicht automatisch eine formale dynamische Flächenregel | Dimension liefert Wert; erzeugtes CSS liefert Zielbedeutung | UXSpec-Webmapper setzt maxHeight/maxWidth; uSpec-Messdaten sind keine Laufzeitregel | max-height/max-block-size; verfügbare Fläche gesondert |
@@ -39,7 +39,7 @@ Für variable Zeilenhöhen wird die Höhe der ersten fünf Zeilen einschließlic
 
 ## Illustrativer CSS-Entwurf für den begrenzten Webfall
 
-Eigener Prüfvorschlag, **nicht ausgeführt**. Er setzt zwei Elementteilbäume voraus, in denen Input und Popup jeweils innerhalb derselben `.autocomplete` liegen; das Popup ist ein nachfolgendes Geschwister des Inputs. Ein Portal außerhalb dieses Teilbaums wäre eine andere Bindung und ist hier nicht abgedeckt. Schreibmodus, physische Unterkante und einheitliche Zeilenhöhe sind bewusst eingeschränkte Annahmen.
+Eigener Prüfvorschlag, **nicht ausgeführt**. Er setzt zwei Elementteilbäume voraus, in denen Input und Popup jeweils innerhalb derselben `.autocomplete` liegen; das Popup ist ein nachfolgendes Geschwister des Inputs. Ein Portal ausserhalb dieses Teilbaums wäre eine andere Bindung und ist hier nicht abgedeckt. Schreibmodus, physische Unterkante und einheitliche Zeilenhöhe sind bewusst eingeschränkte Annahmen.
 
 ```css
 .autocomplete {
@@ -72,7 +72,7 @@ Dieser Ausschnitt beschreibt weder vollständiges Boxmodell noch Border/Padding/
 
 Das geprüfte Anchor-Modul lässt gleiche Ankernamen zu. Ohne passende Sichtbarkeit/Scoping kann eine andere Box zum Ziel werden; der Parser muss einen solchen fachlichen Fehler nicht zurückweisen. `anchor-scope` besitzt eine konkrete Teilbaumsemantik und wirkt nicht auf implizite Anker. Ein Portal oder Shadow-Tree-Wechsel muss daher eigens untersucht werden. [S56](SOURCES.md#s56), erneute Abschnitte 2.1/2.2 in [S63](SOURCES.md#s63).
 
-Für Modusauswahl wird der Umfang ausdrücklich um **Media Queries Level 5, Working Draft vom 19. Februar 2026, §12.5** erweitert. `light` umfasst dort auch fehlende aktive Präferenz; `dark` bezeichnet die dunkle Präferenz. Das definiert einen Auswahlmechanismus für bedingte Werte, keine Produktregel für einen manuellen Theme-Schalter und keine native Themeabbildung. CSS V03 wird ausschließlich für diesen Zusatzbeitrag D. [C412](CLAIMS.md#c412)
+Für Modusauswahl wird der Umfang ausdrücklich um **Media Queries Level 5, Working Draft vom 19. Februar 2026, §12.5** erweitert. `light` umfasst dort auch fehlende aktive Präferenz; `dark` bezeichnet die dunkle Präferenz. Das definiert einen Auswahlmechanismus für bedingte Werte, keine Produktregel für einen manuellen Theme-Schalter und keine native Themeabbildung. CSS V03 wird ausschliesslich für diesen Zusatzbeitrag D. [C412](CLAIMS.md#c412)
 
 ## Was DESIGN.md im selben Fall festhalten kann
 
@@ -89,7 +89,7 @@ Die erneut gelesenen bekannten Komponentenfelder umfassen etwa background, text,
 | Relative Geometrie | CSS oder anderes ausdrücklich gewähltes Layoutmodell | Fachlichen Input/Popupteil auf reale Boxen derselben Instanz abbilden |
 | Sichtbare Höhe | Layout-/Produktprofil | Zeilenmessung, Boxanteile und verfügbare Fläche bestimmen |
 | Scrollfunktion | Layout-/ScrollArea-Modell | Achse, Scrollport, Childkontext und „aktive Option sichtbar machen“ zuordnen |
-| Öffnen/Schließen und Bestätigung | Behavior | Sichtbarkeit/Varianten und öffentliche Ausgaben binden |
+| Öffnen/Schliessen und Bestätigung | Behavior | Sichtbarkeit/Varianten und öffentliche Ausgaben binden |
 | Zugängliche Beziehung | ARIA-/Plattformprofil | Tatsächliche Input-/Listbox-/Optionselemente, Fokus und Ansagen zuordnen |
 
 Die Tabelle ist ein Vorschlag. Sie wählt keinen Stapel und erzeugt keine vermeintlich originale Integrationssprache. Aus DTCG nach UXSpec ist zudem ein gelesener Pfad bekannt, der value/unit auf eine Zahl reduziert. Jede neue Bindung muss den Einheitenverlust ausdrücklich verhindern. [C395](CLAIMS.md#c395)
@@ -104,7 +104,7 @@ Die Tabelle ist ein Vorschlag. Sie wählt keinen Stapel und erzeugt keine vermei
 | Sechs gleich hohe Treffer | Fünf vollständige Zeilen, restlicher Inhalt scrollbar | max-height allein erzwingt weder Zeilenzahl noch passendes Scrollverhalten |
 | Unterschiedliche Zeilenhöhen | Vereinbarte Höhen-/Messregel wird angewandt | Fünfmal Standardhöhe reicht nicht |
 | Viewport zu klein | Vereinbarte Ausweich-/Höhenpriorität | Ein erfolgreicher normaler Screenshot reicht nicht |
-| Popup im Portal | Explizite Ziel-/Scopebindung | Lokales anchor-scope kann das externe Popup ausschließen |
+| Popup im Portal | Explizite Ziel-/Scopebindung | Lokales anchor-scope kann das externe Popup ausschliessen |
 | Tastaturnavigation | Aktive Option wird sichtbar, Fokus-/ARIA-Regeln bleiben konsistent | Scrollbarkeit bedeutet keine vollständige Tastatursteuerung |
 | Dark / Light / keine aktive Präferenz | Dokumentierte Auswahl; Produktüberschreibung separat | Eine Farbe namens dark definiert keine Auflösung |
 | Natives Ziel | Eigener Renderer-/Layoutbeleg | Erfolgreiches Web-CSS beweist keine native Semantik |

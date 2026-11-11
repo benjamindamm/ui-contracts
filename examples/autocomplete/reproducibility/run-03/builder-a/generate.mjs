@@ -7,7 +7,7 @@
  * benannten Fällen aus stories.json, verifiziert es durch Wiedereinlesen
  * und rendert preview.png (und preview.svg) aus dem Wiedereingelesenen Graphen.
  *
- * Verwendet ausschließlich die gepinnte Werkzeugumgebung
+ * Verwendet ausschliesslich die gepinnte Werkzeugumgebung
  * ../../../../../tools/openpencil/node_modules (OpenPencil 0.16.0):
  *   - @open-pencil/scene-graph   (Graph)
  *   - @open-pencil/core/figma-api (Graphaufbau per Figma-Plugin-API-Kompatibilität)
@@ -19,7 +19,7 @@
  * Fälle (stories.json), Teile (component.json / accessibility.html) werden zur
  * Laufzeit gelesen.
  *
- * Schreibt ausschließlich in den eigenen Ausgabeordner.
+ * Schreibt ausschliesslich in den eigenen Ausgabeordner.
  *
  * Aufruf vom Repositorystamm:
  *   node examples/autocomplete/reproducibility/run-03/builder-a/generate.mjs
@@ -275,7 +275,7 @@ const spec = {
   // components/autocomplete/layout.css → var(--ac-…) → components/tokens.json
   width: dimOf(compRule.body.width, 'Komponentenbreite'),
   fontFamily: TAC[tokenRefOf(compRule.body['font-family'], 'Schriftfamilie')],
-  fontSize: dimOf(compRule.body['font-size'], 'Schriftgröße'),
+  fontSize: dimOf(compRule.body['font-size'], 'Schriftgrösse'),
   lineHeight: dimOf(compRule.body['line-height'], 'Zeilenhöhe'),
   colorText: colorOf(compRule.body.color, 'Basisfarbe'),
   labelHeight: dimOf(labelRule.body.height, 'Labelhöhe'),
@@ -294,7 +294,7 @@ const spec = {
   highlightColor: colorOf(activeOptionRule.body.background, 'Aktiv-Farbe'),
   disabledOptionColor: colorOf(disabledOptionRule.body.color, 'Deaktivierte-Option-Farbe'),
   statusGap: dimOf(statusRule.body['margin-top'], 'Statusabstand'),
-  statusFontSize: dimOf(statusRule.body['font-size'], 'Statusschriftgröße'),
+  statusFontSize: dimOf(statusRule.body['font-size'], 'Statusschriftgrösse'),
   statusColor: colorOf(statusRule.body.color, 'Statusfarbe'),
   errorColor: colorOf(errorStatusRule.body.color, 'Fehlerfarbe'),
   focusColor: colorOf(focusInputRule.body['border-color'], 'Fokusfarbe'),
@@ -647,7 +647,7 @@ const normColor = (c) => ({ r: c.r, g: c.g, b: c.b, a: c.a })
 
 // Datei- und Dokumentebene
 check('d01', 'autocomplete.fig existiert und ist nicht leer', figBytes.length > 0, figBytes.length > 0)
-check('d02', 'fig-Dateigröße in Bytes', figBytes.length, figBytes.length)
+check('d02', 'fig-Dateigrösse in Bytes', figBytes.length, figBytes.length)
 check('d03', 'genau eine sichtbare Seite', pages.length, pages.length)
 check('d04', 'Seitenname', PAGE_NAME, page.name)
 check('d05', 'Knotenanzahl im wiedereingelesenen Graphen', [...reloaded.nodes].length, [...reloaded.nodes].length)
@@ -657,8 +657,8 @@ const caseFrames = topNodes.filter((n) => stories.some((s) => s.id === n.name))
 check('c01', 'alle zehn Fälle als benannte Frames vorhanden', stories.map((s) => s.id).sort(), caseFrames.map((f) => f.name).sort())
 check('c02', 'Fallanzahl', stories.length, caseFrames.length)
 // Die README zählt die Fälle auf; stories.json muss dazu passen
-const readmeLine = acReadme.split('\n').find((l) => l.includes('Die zehn Fälle heißen'))
-const readmeIds = readmeLine.match(/heißen ([^.]+)/)[1].replace(' und ', ', ').split(', ').map((s) => s.trim())
+const readmeLine = acReadme.split('\n').find((l) => l.includes('Die zehn Fälle heissen'))
+const readmeIds = readmeLine.match(/heissen ([^.]+)/)[1].replace(' und ', ', ').split(', ').map((s) => s.trim())
 check('c03', 'Fall-IDs entsprechen der README-Zählung', stories.map((s) => s.id), readmeIds)
 
 // Token- und Regelfeststellungen (aus den Quellen abgeleitet)
@@ -681,7 +681,7 @@ function caseCheck(story, idx) {
 
   // Input
   const input = byName(names.input)
-  check(`${tag}d`, `${story.id}: Input-Maße`, { w: spec.width, h: spec.inputHeight, y: g.inputY, radius: spec.radius, clips: true }, input ? { w: input.width, h: input.height, y: input.y, radius: input.cornerRadius, clips: input.clipsContent } : null)
+  check(`${tag}d`, `${story.id}: Input-Masse`, { w: spec.width, h: spec.inputHeight, y: g.inputY, radius: spec.radius, clips: true }, input ? { w: input.width, h: input.height, y: input.y, radius: input.cornerRadius, clips: input.clipsContent } : null)
   check(`${tag}e`, `${story.id}: Input-Füllung (surface)`, [normColor(spec.surfaceColor)], input?.fills?.map((f) => normColor(f.color)) ?? null)
   const expectBorder = story.inputs.enabled !== false && focusStates.has(story.phase) ? spec.focusColor : spec.borderColor
   check(`${tag}f`, `${story.id}: Input-Randfarbe (${story.inputs.enabled !== false && focusStates.has(story.phase) ? 'focus' : 'border'})`, { color: normColor(expectBorder), weight: spec.borderWidth, align: 'INSIDE' }, input ? { color: normColor(input.strokes[0].color), weight: input.strokes[0].weight, align: input.strokes[0].align } : null)
@@ -696,7 +696,7 @@ function caseCheck(story, idx) {
   const surface = byName(names.overlaySurface)
   check(`${tag}h`, `${story.id}: Overlayfläche sichtbar`, g.show, surface !== undefined)
   if (g.show) {
-    check(`${tag}i`, `${story.id}: Popup-Maße`, { w: spec.width, h: g.viewportH, y: g.popupY, radius: spec.surfaceRadius, clips: true }, { w: surface.width, h: surface.height, y: surface.y, radius: surface.cornerRadius, clips: surface.clipsContent })
+    check(`${tag}i`, `${story.id}: Popup-Masse`, { w: spec.width, h: g.viewportH, y: g.popupY, radius: spec.surfaceRadius, clips: true }, { w: surface.width, h: surface.height, y: surface.y, radius: surface.cornerRadius, clips: surface.clipsContent })
     check(`${tag}j`, `${story.id}: Popup-Füllung (surface)`, [normColor(spec.surfaceFill)], surface.fills.map((f) => normColor(f.color)))
     check(`${tag}k`, `${story.id}: Popup-Schatten (0 2px 8px #0003)`, { offset: { x: spec.shadow.x, y: spec.shadow.y }, radius: spec.shadow.blur, color: normColor(spec.shadow.color) }, surface.effects[0] ? { offset: surface.effects[0].offset, radius: surface.effects[0].radius, color: normColor(surface.effects[0].color) } : null)
     const surfaceKids = reloaded.getChildren(surface.id)
@@ -708,7 +708,7 @@ function caseCheck(story, idx) {
     if (story.results.length > 0) {
       const opts = reloaded.getChildren(list.id)
       check(`${tag}n`, `${story.id}: Optionen (Namen in Reihenfolge)`, story.results.map((r) => names.option(r.key)), opts.map((o) => o.name))
-      check(`${tag}o`, `${story.id}: Optionszeilen (Maße)`, story.results.map((r, k) => ({ y: k * spec.rowHeight, h: spec.rowHeight, w: spec.width })), opts.map((o) => ({ y: o.y, h: o.height, w: o.width })))
+      check(`${tag}o`, `${story.id}: Optionszeilen (Masse)`, story.results.map((r, k) => ({ y: k * spec.rowHeight, h: spec.rowHeight, w: spec.width })), opts.map((o) => ({ y: o.y, h: o.height, w: o.width })))
       check(`${tag}p`, `${story.id}: Optionstexte`, story.results.map((r) => r.label), opts.map((o) => reloaded.getChildren(o.id)[0]?.text))
       check(`${tag}q`, `${story.id}: aktive Option hervorgehoben`, story.results.map((r) => story.activeKey === r.key), opts.map((o) => o.fills.length === 1 && o.fills[0].color && Math.abs(o.fills[0].color.r - spec.highlightColor.r) < COLOR_EPS))
       check(`${tag}r`, `${story.id}: deaktivierte Option farblich gedimmt`, story.results.map((r) => r.disabled === true), opts.map((o) => Math.abs(reloaded.getChildren(o.id)[0].fills[0].color.r - spec.disabledOptionColor.r) < COLOR_EPS))
@@ -729,8 +729,8 @@ function caseCheck(story, idx) {
   check(`${tag}t`, `${story.id}: Status-Text`, statusMessage(story), status?.text)
   check(`${tag}v`, `${story.id}: Status-Position und Farbe`, { y: g.statusY, size: spec.statusFontSize, color: normColor(expectStatusColor) }, status ? { y: status.y, size: status.fontSize, color: normColor(status.fills[0].color) } : null)
 
-  // Rahmengröße des Falls
-  check(`${tag}w`, `${story.id}: Fallrahmen-Maße`, { w: spec.width, h: g.caseH }, { w: frame.width, h: frame.height })
+  // Rahmengrösse des Falls
+  check(`${tag}w`, `${story.id}: Fallrahmen-Masse`, { w: spec.width, h: g.caseH }, { w: frame.width, h: frame.height })
 }
 stories.forEach(caseCheck)
 

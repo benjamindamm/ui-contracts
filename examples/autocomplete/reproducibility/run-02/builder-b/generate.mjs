@@ -146,7 +146,7 @@ function textNode(parentId, name, props) {
 }
 
 /* ------------------------------------------------------------------ */
-/* Sheetrahmen (freie Außenanordnung)                                 */
+/* Sheetrahmen (freie Aussenanordnung)                                 */
 /* ------------------------------------------------------------------ */
 
 const COL_W = T.width;

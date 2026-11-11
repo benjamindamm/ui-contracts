@@ -4,7 +4,7 @@
 
 **XState-Originalprüfgegenstand geklärt:** [Core 5.33.3, SDK-Typen und Snapshot getrennt](experiments/2026-10-25/xstate-validator/REPORT.md); sechs API- und drei SDK-Bedingungen erfüllt. X06 begrenzt N/C464 für den neutralen Originalartefaktschema-Pfad im veröffentlichten Core, keine pauschale Validatorabwesenheit. Aktuell 53 U, 308 Bedingungen/38 Gruppen.
 
-**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschliesslich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
 
 Stand: 23. Oktober 2026. Erste dokumentenbasierte Untersuchung, keine abgeschlossene Eignungsprüfung.
 
@@ -16,7 +16,7 @@ Das Zielartefakt ist zunächst ein gemeinsames Contract-Paket. Vier getrennte Be
 
 ## Reihenfolge und Operationalisierung
 
-1. Anforderungen aus Nutzeräußerungen, bestätigten Arbeitsvorschlägen und späteren Präzisierungen unterscheiden.
+1. Anforderungen aus Nutzeräusserungen, bestätigten Arbeitsvorschlägen und späteren Präzisierungen unterscheiden.
 2. Vor der Bewertung den [Anforderungskatalog](REQUIREMENTS.md) mit beobachtbaren Teilkriterien festlegen. Kombinierte Anforderungen werden aufgeteilt, damit ein Tokenwert nicht irrtümlich als vollständiges Layout gilt.
 3. Identität und Rolle jedes Kandidaten feststellen. Dokumentationsformat, Spezifikation, Bibliothek und Leitfaden sind unterschiedliche Beiträge.
 4. Primärquelle und Stand erfassen. Marketingziele getrennt von konkreten Feldern und Ausführungssemantik behandeln.
@@ -28,7 +28,7 @@ Das Zielartefakt ist zunächst ein gemeinsames Contract-Paket. Vier getrennte Be
 | Zeichen | Bedeutung | Vergaberegel |
 | --- | --- | --- |
 | D | Direkt unterstützt | Das operationalisierte Teilkriterium besitzt im eigenen Modell eine dokumentierte Darstellung oder Semantik. Gilt nur in der Kandidatenrolle, nicht automatisch für das Gesamtpaket. |
-| R | Über Referenz unterstützt | Ein dokumentierter Referenzmechanismus erschließt ein bereits definiertes Zielmodell; keine neue fachliche Bedeutung erforderlich. Ziel, Namensraum und Grenze müssen genannt sein. |
+| R | Über Referenz unterstützt | Ein dokumentierter Referenzmechanismus erschliesst ein bereits definiertes Zielmodell; keine neue fachliche Bedeutung erforderlich. Ziel, Namensraum und Grenze müssen genannt sein. |
 | A | Adapter erforderlich | Ein konkreter vorhandener Mechanismus ist belegt, aber zur geforderten neutralen Form ist zusätzliche Übersetzung oder Bindung erforderlich. Das ist eine begründete Integrationsfolgerung, kein implementierter Adapter. |
 | N | Nicht abgedeckt | Die konkret untersuchte Anforderung fehlt im ausdrücklich begrenzten Modell oder ist als zukünftige Arbeit ausgewiesen. Die Aussage wird auf den geprüften Stand und Umfang beschränkt. |
 | U | Ungeprüft | Kein ausreichender Nachweis für eine Bewertung. Kann trotz gelesener Übersichtsseite gelten. Bedeutet weder ungeeignet noch nicht vorhanden. |
@@ -49,7 +49,7 @@ Die ursprüngliche dokumentarische Lieferung enthielt E1/E2 und keine E3-Versuch
 
 Je Versuch speichern: Anforderungs-ID, Kandidat und exakten Stand, Eingabe, Aufruf, Laufzeitumgebung, erwartetes Ergebnis, tatsächliches Ergebnis, Exitstatus, Fehler und Interpretation. Mindestens ein gültiger und ein gezielt ungültiger Fall sind nötig: etwa existierendes und fehlendes Referenzziel, gültige und falsche Einheit, eindeutige und kollidierende Instanz-ID. Für Laufzeitverhalten sind Ereignisfolgen und beobachtete Zustände nötig.
 
-Eigene Schemas validieren ihre Domäne. Eine zusätzliche Paketprüfung müsste domänenübergreifende Identität, Typkompatibilität, Referenzen und Ownership prüfen. Das bloße Bestehen von vier Einzelvalidatoren belegt diese Beziehungen nicht.
+Eigene Schemas validieren ihre Domäne. Eine zusätzliche Paketprüfung müsste domänenübergreifende Identität, Typkompatibilität, Referenzen und Ownership prüfen. Das blosse Bestehen von vier Einzelvalidatoren belegt diese Beziehungen nicht.
 
 ## Umgang mit Quellenständen und Reproduzierbarkeit
 
@@ -59,7 +59,7 @@ Die Recherche ist gezielt und anforderungsorientiert, keine systematische Voller
 
 ## Wissenschaftliche Nachvollziehbarkeit
 
-Anforderung → operationalisiertes Kriterium → Quelle/Stand → Claim → Matrixzelle → offener Versuch bildet die Prüfkette. Die erste Matrix enthält eine qualitative Abdeckung, keine statistische Aussage und keinen Wirksamkeitsnachweis für Agenten. Herstellergröße, Sternezahl und Selbstaussagen wie „verlustfrei“ sind keine Nachweise von Eignung. Eine spätere Gewichtung muss aus erklärten Projektprioritäten entstehen und Sensitivität gegenüber diesen Gewichten zeigen.
+Anforderung → operationalisiertes Kriterium → Quelle/Stand → Claim → Matrixzelle → offener Versuch bildet die Prüfkette. Die erste Matrix enthält eine qualitative Abdeckung, keine statistische Aussage und keinen Wirksamkeitsnachweis für Agenten. Herstellergrösse, Sternezahl und Selbstaussagen wie „verlustfrei“ sind keine Nachweise von Eignung. Eine spätere Gewichtung muss aus erklärten Projektprioritäten entstehen und Sensitivität gegenüber diesen Gewichten zeigen.
 
 ## Fortschreibung nach der Gesamtprüfung
 
@@ -67,7 +67,7 @@ Ein U kann trotz abgeschlossener dokumentarischer Prüfung bestehen bleiben: Die
 
 Für E3 ist zwischen Schema-, Funktions-, Typauflösungs-, Hostchecker- und gerenderter UI-/AT-Prüfung zu unterscheiden. Die Bezeichnung runtime_trials im JSON ist eine historische Sammelrubrik; kind und ui_rendered weisen den tatsächlich ausgeführten Gegenstand aus. Eine Erwartungsabweichung bleibt gespeichert. Korrigierte Harness-Erwartungen erhalten ihren ursprünglichen Stand, statt den Kandidatenbefund umzudeuten.
 
-**Begrenzte Scopeerweiterungen:** OpenPencil V01/V03 beziehen zusätzliche originale Variablen-/Tokenexportquellen ein; V05 den vorhandenen CSS-Projektionsadapter und A02 den konkreten Switch→Reka→APG-Webbezug. Die Neubewertungen gelten ausschließlich für diese Beiträge, nicht pauschal für alle Editor-/Bibliotheksfunktionen. Keine Gleichsetzung mit dem Autocomplete-Akzeptanzfall oder nativer Unterstützung.
+**Begrenzte Scopeerweiterungen:** OpenPencil V01/V03 beziehen zusätzliche originale Variablen-/Tokenexportquellen ein; V05 den vorhandenen CSS-Projektionsadapter und A02 den konkreten Switch→Reka→APG-Webbezug. Die Neubewertungen gelten ausschliesslich für diese Beiträge, nicht pauschal für alle Editor-/Bibliotheksfunktionen. Keine Gleichsetzung mit dem Autocomplete-Akzeptanzfall oder nativer Unterstützung.
 
 **25.10.2026 – statische Host-Fixtures:** P18/P19 rendern synthetische HTML-Fixtures im isolierten Browser. ui_rendered=true bezeichnet hier ausdrücklich nur diese Host-Fixtures; static_host_fixture_only=true, component_implemented=false und at_tested=false grenzen sie von Produkt-/Assistenztests ab. Ein zusätzlicher eigener Mappingcheck ist getrennt von den Originalregeln protokolliert.
 

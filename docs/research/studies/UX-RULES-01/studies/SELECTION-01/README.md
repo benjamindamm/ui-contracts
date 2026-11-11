@@ -2,7 +2,7 @@
 
 Neue, getrennt dokumentierte Agentenstudie. [Vorabprotokoll](PROTOCOL.md) · [Studienregister](study.json) · [eingefrorene Bibliothek](library-manifest.json) · [Prüfkriterien](review/criteria.json).
 
-Zwei frische Builder erstellen dasselbe lokale Personenformular mit unterschiedlich großen festen Länderlisten. Die Prompts geben keine Komponentenwahl vor. Fähigkeitsprofile und die deklarierte Studien-/Projektpolicy sind Teil des Frameworks. Die 15er-Suchgrenze ist eine kontrollierte Annahme, kein universelles UX-Gesetz. Die Erstentscheidung, tatsächliche Implementierung, Eignung und Policypräferenz werden getrennt bewertet.
+Zwei frische Builder erstellen dasselbe lokale Personenformular mit unterschiedlich grossen festen Länderlisten. Die Prompts geben keine Komponentenwahl vor. Fähigkeitsprofile und die deklarierte Studien-/Projektpolicy sind Teil des Frameworks. Die 15er-Suchgrenze ist eine kontrollierte Annahme, kein universelles UX-Gesetz. Die Erstentscheidung, tatsächliche Implementierung, Eignung und Policypräferenz werden getrennt bewertet.
 
 Vorherige Komponenten und Studien bleiben erhalten; Select und Input sind neue Definitionen. Der alte 28-Datei-Bibliotheksstand liegt unter prior-library, damit ältere UX-Pilotbindungen reproduzierbar bleiben. [Originalformat- und Verhaltensvorläufe](preflight/). Kein früheres Design wird in die Aufgaben übernommen.
 

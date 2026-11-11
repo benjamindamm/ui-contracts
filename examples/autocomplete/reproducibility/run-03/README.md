@@ -1,6 +1,6 @@
 # Reproduzierbarkeitsversuch 03
 
-Zwei neue Agenten bauen unabhängig voneinander ein editierbares OpenPencil-Design aus derselben eingefrorenen Autocomplete-Definition. Ein dritter Agent ohne übernommenen Gesprächskontext leitet vorab Prüfkriterien aus der Definition ab und vergleicht anschließend beide Originaldateien mit der Definition und miteinander.
+Zwei neue Agenten bauen unabhängig voneinander ein editierbares OpenPencil-Design aus derselben eingefrorenen Autocomplete-Definition. Ein dritter Agent ohne übernommenen Gesprächskontext leitet vorab Prüfkriterien aus der Definition ab und vergleicht anschliessend beide Originaldateien mit der Definition und miteinander.
 
 Dieser Lauf wurde bewusst ohne Kenntnis der Ergebnisse früherer Läufe durchgeführt. Eingabe, Kriterien und Annahmen wurden frisch gebildet; frühere Läufe, frühere Designs und Research-Dokumente waren für beide Builder und den Prüfer gesperrt. Alle Rollen liefen als getrennte, frische Subagent-Sessions.
 
@@ -25,7 +25,7 @@ Alle Rollen erben die Modell-/Reasoning-Konfiguration des aufrufenden Systems (O
 
 ## Unterbrechungen und Provenienz
 
-Während des Laufs fiel der Modellanbieter mehrfach mit HTTP 413 (Anfrage zu groß) aus. Die Auswirkungen sind vollständig in [run.json](run.json) (`interruptions`, `interruptionImpact`) sowie im [Prüfbericht](review/REVIEW.md) und in [results.json](review/results.json) dokumentiert.
+Während des Laufs fiel der Modellanbieter mehrfach mit HTTP 413 (Anfrage zu gross) aus. Die Auswirkungen sind vollständig in [run.json](run.json) (`interruptions`, `interruptionImpact`) sowie im [Prüfbericht](review/REVIEW.md) und in [results.json](review/results.json) dokumentiert.
 
 | Akteur | Stopp | Stand beim Stopp | Fortsetzung |
 | --- | --- | --- | --- |
@@ -34,10 +34,10 @@ Während des Laufs fiel der Modellanbieter mehrfach mit HTTP 413 (Anfrage zu gro
 | Prüfer | 3 | kurzer Vorlauf (Berichte gelesen, Skripte erneut ausgeführt) | nächste Session |
 | Prüfer | 4 | komplette Messkette ausgeführt (`verify.py`-Vorlauf, Kriterienergebnisse), Bericht nicht fertig | finale Session: Vorlauf-`verify.py` gegen das versiegelte Kriterienset auditiert (3 dokumentierte, judgments-neutrale Anpassungen, Altfassung als `verify.py.prev-1216` erhalten), gesamte Messkette neu ausgeführt (Status identisch, 182/182), Bericht geschrieben |
 
-Ursache war ausschließlich der Providerfehler, kein Zugriff auf verbotene Eingaben. Keine Rolle sah frühere Läufe, fremde Ausgaben oder Research-Dokumente; die Sessionprotokolle wurden auf Pfadebene geprüft (siehe `accessAudit` in [run.json](run.json)).
+Ursache war ausschliesslich der Providerfehler, kein Zugriff auf verbotene Eingaben. Keine Rolle sah frühere Läufe, fremde Ausgaben oder Research-Dokumente; die Sessionprotokolle wurden auf Pfadebene geprüft (siehe `accessAudit` in [run.json](run.json)).
 
 **Provenienz-Limitationen (ausgewiesen im Prüfbericht):**
-- Prüfer-Phase 1 (Kriterien) und Phase 2 (Vergleich) liefen in getrennten technischen Sessions; die finale Phase-2-Session arbeitete ausschließlich vom versiegelten Kriterienset. Die Kriterienableitung selbst ist dadurch nicht gegenprüfbar.
+- Prüfer-Phase 1 (Kriterien) und Phase 2 (Vergleich) liefen in getrennten technischen Sessions; die finale Phase-2-Session arbeitete ausschliesslich vom versiegelten Kriterienset. Die Kriterienableitung selbst ist dadurch nicht gegenprüfbar.
 - `REPORT.md` von Builder A stammt aus einer zweiten Session (Rekonstruktion aus den Artefakten); alle Aussagen des Berichts wurden vom Prüfer eigenständig gegen die Artefakte verifiziert.
 - Der Lauf belegt keinen ununterbrochenen Ein-Schuss-Durchlauf; die Aussagekraft für Prozess-Reproduzierbarkeit (Single-Shot, Schrittanzahl) ist dadurch begrenzt. Die Bewertung der gelieferten Artefakte und die Kontexttrennung sind davon nicht berührt.
 
@@ -50,7 +50,7 @@ Ursache war ausschließlich der Providerfehler, kein Zugriff auf verbotene Einga
 | explizit verletzt | 5 | 6 |
 | abgeleitet verletzt | 0 | 0 |
 
-Beide Designs erfüllen alle geometrischen, typografischen, textlichen, farb- und strukturell relevanten Kriterien; die zehn Fälle, Maße, Texte, Clipping- und Editierbarkeitswerte stimmen in beiden Originaldateien überein.
+Beide Designs erfüllen alle geometrischen, typografischen, textlichen, farb- und strukturell relevanten Kriterien; die zehn Fälle, Masse, Texte, Clipping- und Editierbarkeitswerte stimmen in beiden Originaldateien überein.
 
 Gemeinsame Verletzungen (beide): E-063, E-064, E-065, E-070, E-071 — die ARIA-Werte der Definition liegen in keinem Artefakt als lesbare Annotation vor (keine maschinenlesbare Annotation im `.fig`-Format dieser Toolchain; A führt 3/4 Rollenwerte als Layer-Namen, B 2/4).
 

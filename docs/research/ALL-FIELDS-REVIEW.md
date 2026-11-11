@@ -7,9 +7,9 @@ Stand: 24. Oktober 2026. **72/72 Zellen dokumentarisch erneut ausgewertet; fünf
 
 ## Was tatsächlich geprüft wurde
 
-Für jede Ausgangszelle wurden Kriterium, bestehender Claim, Quellenrolle und die zum Schließen erforderliche Evidenz abgeglichen. Neue Primärlesungen sind in [S63](SOURCES.md#s63), [S64](SOURCES.md#s64) und [S65](SOURCES.md#s65) abgegrenzt. Die übrigen Einträge werten die bereits gespeicherten Originalbefunde erneut aus; sie behaupten keinen frischen Vollabruf aller Projekte. Das maschinenlesbare Protokoll steht unter followup_reviews in [study.json](study.json).
+Für jede Ausgangszelle wurden Kriterium, bestehender Claim, Quellenrolle und die zum Schliessen erforderliche Evidenz abgeglichen. Neue Primärlesungen sind in [S63](SOURCES.md#s63), [S64](SOURCES.md#s64) und [S65](SOURCES.md#s65) abgegrenzt. Die übrigen Einträge werten die bereits gespeicherten Originalbefunde erneut aus; sie behaupten keinen frischen Vollabruf aller Projekte. Das maschinenlesbare Protokoll steht unter followup_reviews in [study.json](study.json).
 
-U bleibt gemäß Methode auch bei sachfremden Zellen bestehen. Nach gründlicherer Lektüre kann ein externer Beleg weiterhin fehlen. Ein geklärter Adapterbedarf ist A; eine bloß vorstellbare Adapteridee genügt nicht. X01/X03/X08 werden nicht durch eine selbst erfundene Paketstruktur als original unterstützt ausgegeben.
+U bleibt gemäss Methode auch bei sachfremden Zellen bestehen. Nach gründlicherer Lektüre kann ein externer Beleg weiterhin fehlen. Ein geklärter Adapterbedarf ist A; eine bloss vorstellbare Adapteridee genügt nicht. X01/X03/X08 werden nicht durch eine selbst erfundene Paketstruktur als original unterstützt ausgegeben.
 
 ## Fünf Neubewertungen
 
@@ -47,7 +47,7 @@ Diese Gruppen sind eine Arbeitsordnung, keine neuen Standards oder automatischen
 
 | Feld | Alt → aktuell | Ergebnis | Prüfung / Grenze | Abhängigkeit |
 | --- | --- | --- | --- | --- |
-| I02 | [C37](CLAIMS.md#c37) → [C413](CLAIMS.md#c413) | U | Type.references adressiert Typdeklarationen; der fehlende Schritt ist die öffentliche Eventobjekt→Payload-Projektion. Das offizielle Event-Beispiel schließt diese Lücke nicht. | Q |
+| I02 | [C37](CLAIMS.md#c37) → [C413](CLAIMS.md#c413) | U | Type.references adressiert Typdeklarationen; der fehlende Schritt ist die öffentliche Eventobjekt→Payload-Projektion. Das offizielle Event-Beispiel schliesst diese Lücke nicht. | Q |
 | X01 | [C43](CLAIMS.md#c43) | U | Eigenständiges Manifest verlangt keine Visual-/Behavior-/A11y-Daten; gemeinsame fachliche Ziele sind nicht Bestandteil dieses Nachweises. | P |
 
 ### OpenUI

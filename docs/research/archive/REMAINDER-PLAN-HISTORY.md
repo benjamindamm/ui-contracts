@@ -1,6 +1,6 @@
 # Historischer Restplanverlauf
 
-Dieser archivierte Text enthält ältere Tabellen und Zwischenzahlen. Er ist keine aktuelle Arbeitsqueue. Maßgeblich sind [aktueller Restplan](../REMAINDER-PLAN.md), study.json und OPEN-FIELDS.md.
+Dieser archivierte Text enthält ältere Tabellen und Zwischenzahlen. Er ist keine aktuelle Arbeitsqueue. Massgeblich sind [aktueller Restplan](../REMAINDER-PLAN.md), study.json und OPEN-FIELDS.md.
 
 # Endlicher Restplan der 32 U-Zellen
 
@@ -10,9 +10,9 @@ Stand: 25. Oktober 2026. Aktuell 511 Claims, 519 Bedingungen/70 Gruppen. 32 aktu
 
 | Klasse | Aktuelle Zellen | Bedeutung |
 | --- | ---: | --- |
-| a |30| Mit benannten Originalquellen und endlichen Prüfungen unabhängig untersuchbar; keine Zusage positiver Schließung. |
+| a |30| Mit benannten Originalquellen und endlichen Prüfungen unabhängig untersuchbar; keine Zusage positiver Schliessung. |
 | b |2| Konkret fehlende Google-/OpenUI-Originalinformation. Ohne neue Information keine gleichen Prüfschleifen. |
-| c |0| Keine aktuelle semantische Zelle ausschließlich durch eine neue Produkt-/Plattform-/AT-Entscheidung blockiert. |
+| c |0| Keine aktuelle semantische Zelle ausschliesslich durch eine neue Produkt-/Plattform-/AT-Entscheidung blockiert. |
 
 Vollständiger Editor, Graphpersistenz, Native-/AT-Abnahme und endgültige Produktpolitik bleiben stärkere getrennte Ziele. Sachfremde Zellen bleiben nach Methode U, bis ein eigener konkreter Beitrag belegt ist. Eine Referenzfähigkeit des Switches wird nicht auf beliebige Widgets und Meldungen übertragen.
 
@@ -38,7 +38,7 @@ Vollständiger Editor, Graphpersistenz, Native-/AT-Abnahme und endgültige Produ
 
 **Fehlende Aussage:** Die fehlende fachliche Aussage anhand des unveränderten Kriteriums mit ihrem zuständigen Originalbeitrag verbinden oder eine positiv belegte Modellgrenze des ursprünglichen Beitrags feststellen.
 
-**Endbedingung:** Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein bloßer negativer Suchbefund.
+**Endbedingung:** Vorhandenes CEM/SCXML/CSS/HTML-Beispiel darf nur als zusätzliches begrenztes Binding dienen; pro umbewerteter Zelle ihren eigenen Bezug und fehlenden Beleg nachweisen. Keine automatische Übernahme einer fremden Fähigkeit und kein blosser negativer Suchbefund.
 
 **Originalumfang:** Bestehende Vier-Domänen-Artefakte, Originalnormen, typed-references und css-semantic-anchors; keine neue universelle Daten-/Produktsprache.
 
@@ -59,7 +59,7 @@ Vollständiger Editor, Graphpersistenz, Native-/AT-Abnahme und endgültige Produ
 
 **Fehlende Aussage:** Pro benanntem Originalresolver den tatsächlichen Zieltyp, Artefaktrevision, Definitions- und Instanzzugehörigkeit prüfen.
 
-**Endbedingung:** Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder bloße DOM-ID reicht nicht.
+**Endbedingung:** Ein gespeicherter Positivfall und gezielte falsche Zielart/Instanz/Revision müssen an genau diesem Resolver oder einem ausgewiesenen Zusatzbinder entschieden werden. Gleichnamigkeit oder blosse DOM-ID reicht nicht.
 
 **Originalumfang:** Vorhandene Originalschema-/Resolverquellen und referenzierte Zwei-Instanz-Fixtures; frühere UXSpec-Kollisionen bleiben erhalten.
 
@@ -138,11 +138,11 @@ Vollständiger Editor, Graphpersistenz, Native-/AT-Abnahme und endgültige Produ
 
 ## Erledigte Beiträge und Stopregel
 
-[Original-Graph/Role/State bis zum lebenden Switchhost](../experiments/2026-10-25/openpencil-projection-origin/REPORT.md) schließt das bisher erste Paket im konkreten Switchumfang. Der Radio-Namensprüferfehlwahl und den eigenen API-/Buildkorrekturen bleiben ihre ursprünglichen Daten zugeordnet. Native Eingabeautomation, statische SSR, echte DOM-Updates und AT werden getrennt dargestellt.
+[Original-Graph/Role/State bis zum lebenden Switchhost](../experiments/2026-10-25/openpencil-projection-origin/REPORT.md) schliesst das bisher erste Paket im konkreten Switchumfang. Der Radio-Namensprüferfehlwahl und den eigenen API-/Buildkorrekturen bleiben ihre ursprünglichen Daten zugeordnet. Native Eingabeautomation, statische SSR, echte DOM-Updates und AT werden getrennt dargestellt.
 
 Als Nächstes die fünf verbleibenden Layout-/Scrollfragen: vorhandene Verluste nicht identisch wiederholen; nur neue vollständige Originalpfade oder konkret neue Modellbindung prüfen. Kein unbegrenzter Vorbehalt gegenüber allen hypothetischen Tools. Endet ein benannter Originalumfang ohne ausreichenden Beleg, die konkrete noch fehlende Information/Umgebung/Entscheidung dokumentieren.
 
-Die [I03-Auswertung](../experiments/2026-10-25/named-parts-review/REPORT.md) nutzte bestehende Zeugen ohne neue Fälle. Alle aktiven Schlüssel, Baseline und abgeschlossenen Beiträge stehen im [maschinenlesbaren Plan](../REMAINDER-PLAN.json); maßgeblich bleibt das [Register](../OPEN-FIELDS.md).
+Die [I03-Auswertung](../experiments/2026-10-25/named-parts-review/REPORT.md) nutzte bestehende Zeugen ohne neue Fälle. Alle aktiven Schlüssel, Baseline und abgeschlossenen Beiträge stehen im [maschinenlesbaren Plan](../REMAINDER-PLAN.json); massgeblich bleibt das [Register](../OPEN-FIELDS.md).
 
 **Layoutfortschreibung:** [Vollständige Originalexporte](../experiments/2026-10-25/openpencil-layout-runtime/REPORT.md) belegen die eigene feste Web-Overflowpolitik A/C498; die Input-Unterkantenrelation bleibt U/C499. Alternativer ursprünglicher Slider-Part-/Reka-Geometriebeitrag darf nur gesondert gegen V04 geprüft werden. Keine automatische Ableitung aus Parentkoordinaten, keine beliebige neue fremde Layoutfähigkeit. Baseline 46 und fünf abgeschlossene Beiträge bleiben maschinenlesbar erhalten.
 

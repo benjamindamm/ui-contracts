@@ -4,7 +4,7 @@ Bezug: SEL2-B01 aus dem vom Koordinator gemeldeten Browserlauf. Die Erstlieferun
 
 ## Minimale Änderung
 
-Der focusout-Handler am Picker prüft jetzt `relatedTarget`. Liegt das Fokusziel innerhalb des Pickers, bleibt er offen. Dadurch wird der interne Wechsel vom Suchfeld zum Schließen-Button nicht wegen eines vorübergehenden `document.activeElement === BODY` als Verlassen behandelt. Bei einem externen oder fehlenden Fokusziel schließt er ohne Auswahländerung. Escape-, Commit- und explizite Schließen-Handler bleiben unverändert und stellen Triggerfokus her.
+Der focusout-Handler am Picker prüft jetzt `relatedTarget`. Liegt das Fokusziel innerhalb des Pickers, bleibt er offen. Dadurch wird der interne Wechsel vom Suchfeld zum Schliessen-Button nicht wegen eines vorübergehenden `document.activeElement === BODY` als Verlassen behandelt. Bei einem externen oder fehlenden Fokusziel schliesst er ohne Auswahländerung. Escape-, Commit- und explizite Schliessen-Handler bleiben unverändert und stellen Triggerfokus her.
 
 `index.html`, `styles.css`, `decision.json` und `FONT-LICENSE.txt` wurden bytegleich übernommen. Nur der relevante Handler in `form.ts` wurde geändert; `form.js` wurde neu kompiliert. Definitions- und Policydateien wurden nicht geändert.
 

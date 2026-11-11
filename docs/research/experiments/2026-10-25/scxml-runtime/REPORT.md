@@ -25,7 +25,7 @@ Der Browser nutzt das mitgelieferte unveränderte dist/scxml.min.js derselben Pa
 | Falsch gebundene Parentinstanz | Ereignis kommt bei B an; zusätzliche invokeid-/Instanzregel verhindert falsche öffentliche Zuordnung |
 | #_parent ohne Parent | Originalruntime meldet Kommunikationsfehler; keine erfundene öffentliche Zustellung |
 
-**9/10 ursprüngliche Erwartungen erfüllt, Gesamtlauf Exitstatus 1.** Die fehlerhafte Isolationserwartung wurde nicht verändert, gelöscht oder nachträglich als erwartetes Verhalten ausgegeben. Die negativen Varianten ändern ausschließlich den im Fall benannten Originalinput; sie sind als Varianten protokolliert.
+**9/10 ursprüngliche Erwartungen erfüllt, Gesamtlauf Exitstatus 1.** Die fehlerhafte Isolationserwartung wurde nicht verändert, gelöscht oder nachträglich als erwartetes Verhalten ausgegeben. Die negativen Varianten ändern ausschliesslich den im Fall benannten Originalinput; sie sind als Varianten protokolliert.
 
 Die Parentzustellung verwendet die ursprüngliche send-Implementierung und echte Statechart-Parentinstanzen. customSend/doSend wurden nicht ersetzt. Die Zuordnung parentSession/invokeid wird über die dokumentierten Original-Interpreteroptionen vom Forschungshost gesetzt; dies ist **kein bereits ausgeführter SCXML-invoke-Lebenszyklusnachweis**.
 
@@ -38,13 +38,13 @@ Zwei zusätzliche, separat vor ihrer Ausführung festgelegte Diagnosefälle prü
 1. Dieselbe kompilierte Originalquelle, aber **prepare separat für A und B**: alpha-A und beta-B bleiben getrennt.
 2. Zusätzlich separate Quellkompilierung je Instanz als Kontrolle: ebenfalls alpha-A und beta-B.
 
-**2/2 Diagnoseerwartungen erfüllt, Exitstatus 0.** Der Browserhost verwendet deshalb den belegten dokumentierten Vorbereitungsschritt je Instanz. Die Ausgangsgrenze bleibt ausdrücklich bestehen; es ist keine allgemeine Garantie aus bloß zwei Statechart-Objekten abgeleitet.
+**2/2 Diagnoseerwartungen erfüllt, Exitstatus 0.** Der Browserhost verwendet deshalb den belegten dokumentierten Vorbereitungsschritt je Instanz. Die Ausgangsgrenze bleibt ausdrücklich bestehen; es ist keine allgemeine Garantie aus bloss zwei Statechart-Objekten abgeleitet.
 
 ## 4. Tatsächliche Browser-/DOM-Projektion
 
 Die ursprünglichen HTML-/CSS-Dateien und das vorhandene Forschungsprofil aus dem Vier-Domänen-Paket werden wiederverwendet. Zusätzlicher Hostcode bindet native Fokusereignisse an OPEN und synthetische keydown-Ereignisse mit Escape/Enter an CLOSE/COMMIT. Originale onEntry-Meldungen steuern aria-expanded, hidden und den aktiven Optionsverweis. Das sind offen ausgewiesene Forschungsbindungen, keine in SCXML oder CEM bereits standardisierte DOM-Abbildung.
 
-Die native #_parent-Sendung wird zuerst in der echten Original-Parentruntime empfangen. Erst danach prüft der Zusatzhost Ereignisname, erwartete Instanz und den begrenzten öffentlichen Payloadtyp. Der Stringtyp wird aus dem tatsächlichen CEM-TypeScript-Ausdruck abgeleitet; unterstützt ist hier ausdrücklich nur dieser primitive Detailfall. Der Host erzeugt anschließend ein echtes, bubbelndes DOM-CustomEvent. Ziel ist ein **expliziter Forschungs-Sectioncontainer**, kein implementiertes CEM-Custom-Element. Der Host schreibt außerdem den bestätigten Testwert in das Eingabefeld. Es wird keine allgemeine Verbindung von Querytext, aktiver Option und Produktwert erfunden.
+Die native #_parent-Sendung wird zuerst in der echten Original-Parentruntime empfangen. Erst danach prüft der Zusatzhost Ereignisname, erwartete Instanz und den begrenzten öffentlichen Payloadtyp. Der Stringtyp wird aus dem tatsächlichen CEM-TypeScript-Ausdruck abgeleitet; unterstützt ist hier ausdrücklich nur dieser primitive Detailfall. Der Host erzeugt anschliessend ein echtes, bubbelndes DOM-CustomEvent. Ziel ist ein **expliziter Forschungs-Sectioncontainer**, kein implementiertes CEM-Custom-Element. Der Host schreibt ausserdem den bestätigten Testwert in das Eingabefeld. Es wird keine allgemeine Verbindung von Querytext, aktiver Option und Produktwert erfunden.
 
 | Vorab definierter Browserfall | Beobachtung |
 | --- | --- |
@@ -58,7 +58,7 @@ Die native #_parent-Sendung wird zuerst in der echten Original-Parentruntime emp
 
 ## 5. Browserabhängigkeit und Zwischenfehler erhalten
 
-Der erste Browserbootstrap ließ den im Original-README vorgesehenen Polyfill aus. Die unveränderte Distribution meldete deshalb regeneratorRuntime fehlt. Dieser Fehler ist gespeichert; kein Originalbundle wurde gepatcht. Anschließend wurde das Originalpaket @babel/polyfill 7.12.1 exakt gebunden und ebenfalls mit browserseitig erzwungenem SRI geladen. Damit werden die ursprünglichen SCXML-APIs verfügbar und die fünf Hostfälle ausgeführt.
+Der erste Browserbootstrap liess den im Original-README vorgesehenen Polyfill aus. Die unveränderte Distribution meldete deshalb regeneratorRuntime fehlt. Dieser Fehler ist gespeichert; kein Originalbundle wurde gepatcht. Anschliessend wurde das Originalpaket @babel/polyfill 7.12.1 exakt gebunden und ebenfalls mit browserseitig erzwungenem SRI geladen. Damit werden die ursprünglichen SCXML-APIs verfügbar und die fünf Hostfälle ausgeführt.
 
 Der Browserkontext wurde während der Arbeit geschlossen. Ein neuer eigener about:blank-Prüftab wurde eingerichtet; bereits gespeicherte Nodefälle wurden deswegen nicht neu gezählt. Die lokale explorative smoke-Probe und Bootstrapdiagnosen bleiben Kontextbelege, keine zusätzlichen benannten Abnahmebedingungen.
 
@@ -66,7 +66,7 @@ Die Originalpakete sind ältere Werkzeuge; Installation meldet unter anderem ein
 
 ## 6. Nachweisgrenze und offene Arbeit
 
-Dieses Paket ergänzt **17 benannte Bedingungen in drei Gruppen**: 10 ursprüngliche Runtimefälle (einschließlich einer widerlegten Erwartung), zwei separate Vorbereitungsdiagnosen und fünf Browserhostfälle. Keine neue Matrixzelle wird allein wegen der Zahl ausgeführter Bedingungen geschlossen. Die weitergehenden 57 U-Zellen betreffen andere beziehungsweise stärkere Original-/Integrationsanforderungen.
+Dieses Paket ergänzt **17 benannte Bedingungen in drei Gruppen**: 10 ursprüngliche Runtimefälle (einschliesslich einer widerlegten Erwartung), zwei separate Vorbereitungsdiagnosen und fünf Browserhostfälle. Keine neue Matrixzelle wird allein wegen der Zahl ausgeführter Bedingungen geschlossen. Die weitergehenden 57 U-Zellen betreffen andere beziehungsweise stärkere Original-/Integrationsanforderungen.
 
 Tatsächlicher SCXML-Interpreter, Parent-send, instanzgetrennte Vorbereitung und begrenzte DOM-Ereignisprojektion sind nun belegt. Weiterhin offen: Navigation und Scroll-to-active, realer invoke-/Unterkomponentenlebenszyklus, asynchrone Ergebnisdaten, dynamische zugängliche Ansagen, native Ziele, vollständige Typabbildung, Roundtrip/Migration und Vertrauens-/Sicherheitsmodell fremder ausführbarer SCXML-Daten. Es wurden nur eigene kontrollierte Testdateien ausgeführt.
 

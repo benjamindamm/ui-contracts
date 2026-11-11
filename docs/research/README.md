@@ -8,7 +8,7 @@
 | Warum vier Domänen und diese Verbindungen? | [Integrationsprofil](INTEGRATION-PROFILE.md), bei konkreten Details [Bindungsentwurf](INTEGRATION-BINDING-DRAFT.md) |
 | Warum kleine Übergaben und gezielter Kontext? | [RD-001](decisions/RD-001-STAGED-GENERATION.md) und die aktuelle [Präzisierung RD-002](decisions/RD-002-AGENT-WORKFLOW-SCOPE.md) |
 | Wie wurde der Agentenablauf weiterentwickelt? | [Paket 4: Workflow und Informationsarchitektur](analyses/AGENT-WORKFLOW-2026-10-31/README.md) |
-| Welche konkreten Fehler und Reparaturen gibt es? | [Fehlerregister](../skills/ISSUES.md), anschließend nur den zugehörigen Beleg |
+| Welche konkreten Fehler und Reparaturen gibt es? | [Fehlerregister](../skills/ISSUES.md), anschliessend nur den zugehörigen Beleg |
 | Welche Nachweise liegen vor? | [Dokumentenindex](DOCUMENT-INDEX.md) oder [Studienübersicht](STUDIES.md) |
 | Wie verlief die Entwicklung? | [Entwicklungsschritte](../EVOLUTION.md) |
 

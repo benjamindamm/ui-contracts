@@ -36,7 +36,7 @@
     "bOnlyDetail": "E-041: Im disabled-Fall zeigt B den Platzhalter 'Stadt suchen …' in #94a3b8 (Token 'disabled'); die versiegelte Regel verlangt muted #64748b in allen Fällen mit leerem Query. A zeigt #64748b. B-REPORT Punkt 4 dokumentiert die gegenteilige Entscheidung ('Platzhalter bleibt muted') — Widerspruch zwischen Report und Artefakt. Hintergrund: Die Definition enthält das spannungsbehaftete CSS-Paar '::placeholder { color: muted }' vs. ':disabled { color: disabled }' (beide Builder haben den Konflikt dokumentiert; er ist in der Preregistrierung nicht als U-Kriterium erfasst)."
   },
   "pairAgreement": {
-    "measure": "Wert-für-Wert-Vergleich der normalisierten Komponentenwerte beider Designs (beide Read-back-Dumps, gleiche Extraktion): alle Teil-Attribute (Positionen, Maße, Radien, Clips, Fills/Strokes/Schatten-Token, Texte, Typografie, Keys, Labels, Scroll-Versatz, Sichtbarkeits-/Clipping-Fakten) pro Fall; Namen und generierte IDs sowie freie Seitenmöbel ausgeschlossen. Details: pair-comparison.json.",
+    "measure": "Wert-für-Wert-Vergleich der normalisierten Komponentenwerte beider Designs (beide Read-back-Dumps, gleiche Extraktion): alle Teil-Attribute (Positionen, Masse, Radien, Clips, Fills/Strokes/Schatten-Token, Texte, Typografie, Keys, Labels, Scroll-Versatz, Sichtbarkeits-/Clipping-Fakten) pro Fall; Namen und generierte IDs sowie freie Seitenmöbel ausgeschlossen. Details: pair-comparison.json.",
     "totalComparableValuePairs": 1208,
     "identicalPairs": 1145,
     "agreement": "1145/1208 = 94.78 %",
@@ -48,7 +48,7 @@
         "Textbreiten (Label/Input/Status): A schmaler als B (30×) — unterschiedliche Textmetriken-Quellen (A: echte Inter-Metriken per CanvasKit; B: System-Fallback beim Messrender, B-REPORT Punkt 18); Textbreiten sind in der Definition nicht festgelegt",
         "input.clipsContent: A=true, B=false (10×) — Input-Clipping nicht durch Kriterium festgelegt",
         "popup surface.clipsContent: A=true, B=false (6×) — Surface-Clipping nicht festgelegt (das normative Viewport-Clipping ist bei beiden true)",
-        "Meldungsfälle: A umschließt die Message Row in einem Listbox-Frame, B hängt message direkt unter Content (3×)",
+        "Meldungsfälle: A umschliesst die Message Row in einem Listbox-Frame, B hängt message direkt unter Content (3×)",
         "leerer Status-Layer: A Breite 0, B Breite 100 (closed/disabled) — U-005, beide Layer vorhanden mit leerem Text"
       ],
       "unzureichendBestimmteRegel": [
@@ -65,12 +65,12 @@
   "provenanceAndLimitations": [
     {
       "id": "L1",
-      "limitation": "Prüfer-Phase 1 (Ableitung und Versiegelung der Kriterien) und Phase 2 (Vergleich) liefen in getrennten technischen Sessions; die Phase-1-Session ging durch einen Providerfehler (HTTP 413) verloren. Phase 2 arbeitet ausschließlich von den versiegelten Kriterien auf Datenträger.",
+      "limitation": "Prüfer-Phase 1 (Ableitung und Versiegelung der Kriterien) und Phase 2 (Vergleich) liefen in getrennten technischen Sessions; die Phase-1-Session ging durch einen Providerfehler (HTTP 413) verloren. Phase 2 arbeitet ausschliesslich von den versiegelten Kriterien auf Datenträger.",
       "effect": "Phase 2 kann die Kriterienableitung nicht aus der Definition nachvollziehen oder gegenprüfen; die Bindungswirkung des versiegelten Kriteriensets ist Prämissen-Limitation des Laufs. Abweichungen zwischen versiegeltem Set und Definition (z. B. die E-039/E-041-Platzhalter-Spannung ist nicht als U-Kriterium erfasst) können nicht rückwirkend korrigiert werden; sie wurden nur ausgewiesen."
     },
     {
       "id": "L2",
-      "limitation": "Builder A: Die Erzeugungssession wurde nach dem Schreiben aller sechs Artefakte (11:07) durch denselben Providerfehler (HTTP 413) beendet, bevor REPORT.md existierte; Fortsetzung war unmöglich. REPORT.md stammt aus einer zweiten Session, die ausschließlich vorhandene Artefakte, components/ und die gepinnte Werkzeugumgebung las (kein Zugriff auf verbotene Eingaben durch beide Sessions).",
+      "limitation": "Builder A: Die Erzeugungssession wurde nach dem Schreiben aller sechs Artefakte (11:07) durch denselben Providerfehler (HTTP 413) beendet, bevor REPORT.md existierte; Fortsetzung war unmöglich. REPORT.md stammt aus einer zweiten Session, die ausschliesslich vorhandene Artefakte, components/ und die gepinnte Werkzeugumgebung las (kein Zugriff auf verbotene Eingaben durch beide Sessions).",
       "effect": "REPORT.md (A) ist eine nachträgliche Rekonstruktion; ihre Aussagen wurden vom Prüfer eigenständig an den Originaldateien verifiziert (Read-back) — keine Aussage des Reports wurde ungeprüft übernommen. Auf die Artefakte selbst hat die Unterbrechung keine nachweisbare Auswirkung (Vollständigkeit und Konsistenz durch Read-back bestätigt)."
     },
     {

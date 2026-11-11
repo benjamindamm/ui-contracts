@@ -4438,7 +4438,7 @@
       ],
       "finding": "§7 definiert YAML/JSON, components und props mit type/default/enum/required.",
       "interpretation": "Direkt für einfache Property-Metadaten; keine durchgeführte Schemaprüfung.",
-      "next_check": "Maßgebliches Schema und Typregeln lokalisieren."
+      "next_check": "Massgebliches Schema und Typregeln lokalisieren."
     },
     {
       "id": "C05",
@@ -4460,7 +4460,7 @@
         "B01"
       ],
       "finding": "§11 führt State/Lifecycle und komplexes State-Management als zukünftige Erweiterung.",
-      "interpretation": "N ausschließlich für ein spezifiziertes Zustandsübergangsmodell in draft-01; keine allgemeine Aussage über spätere Versionen.",
+      "interpretation": "N ausschliesslich für ein spezifiziertes Zustandsübergangsmodell in draft-01; keine allgemeine Aussage über spätere Versionen.",
       "next_check": "Neueren Entwurf und Repositorystand vergleichen."
     },
     {
@@ -4542,7 +4542,7 @@
       ],
       "finding": "§11.3/§19 fordern Fehler bei gebrochenen oder zyklischen Tokenreferenzen und Alias-Kollisionen.",
       "interpretation": "U für Paketkonflikte: interne Regeln sind vorhanden, prüfen aber nicht automatisch Interface/Behavior/APG-Verknüpfungen.",
-      "next_check": "Interne Negativtests und anschließend domänenübergreifenden Konfliktfall prüfen.",
+      "next_check": "Interne Negativtests und anschliessend domänenübergreifenden Konfliktfall prüfen.",
       "superseded_by": "C180"
     },
     {
@@ -4592,7 +4592,7 @@
       ],
       "finding": "stateNode hat keine required-Liste für $visual; machine verlangt id/initial/states, nicht $visual; oberste Pflichtfelder sind $schema/$description/$machine.",
       "interpretation": "Positiver Teilbefund für die eng begrenzte Frage eines Verhaltensdokuments ohne Visual auf Schemaebene. X01 bleibt insgesamt U, weil alle vier getrennten Teilmodelle verlangt sind. Vierformatige Integration, Compiler und Runtime bleiben ungeprüft.",
-      "next_check": "Visualfreies Minimaldokument gegen Schema und anschließend Compiler testen."
+      "next_check": "Visualfreies Minimaldokument gegen Schema und anschliessend Compiler testen."
     },
     {
       "id": "C18",
@@ -4707,7 +4707,7 @@
         "X02",
         "X04"
       ],
-      "finding": "Ark dokumentiert ids sowie asChild-Komposition eigener Komponenten, einschließlich gemeinsamen IDs für Interaktion.",
+      "finding": "Ark dokumentiert ids sowie asChild-Komposition eigener Komponenten, einschliesslich gemeinsamen IDs für Interaktion.",
       "interpretation": "Direkt in der Ark-Laufzeitrolle; kein sprachneutraler Paketverweis und keine Versionsauflösung.",
       "next_check": "Overlay/ScrollArea-Komposition mit zwei Instanzen und Fokus prüfen."
     },
@@ -4764,7 +4764,7 @@
       "rows": [
         "A02"
       ],
-      "finding": "APG Combobox beschreibt Varianten, Tastatur und Fokus, einschließlich aria-activedescendant im Listbox-Fall.",
+      "finding": "APG Combobox beschreibt Varianten, Tastatur und Fokus, einschliesslich aria-activedescendant im Listbox-Fall.",
       "interpretation": "Direkt als Interaktionsleitfaden; nicht als universell verpflichtende konkrete Produktvariante und nicht als maschinenlesbarer Automat.",
       "next_check": "Gewählte Variante in Assertions übersetzen und manuell prüfen."
     },
@@ -4775,7 +4775,7 @@
       "rows": [
         "V04"
       ],
-      "finding": "CSS Anchor Positioning beschreibt Beziehung zu Ankerelementen und relative Größen/Positionen.",
+      "finding": "CSS Anchor Positioning beschreibt Beziehung zu Ankerelementen und relative Grössen/Positionen.",
       "interpretation": "Direkt im CSS-Webmodell; kein neutraler Cross-Platform-Standard und kein Nachweis von Browserunterstützung.",
       "next_check": "Abstand, Ankerbreite, Fallback und Namensräume in konkreten Umgebungen testen."
     },
@@ -4902,7 +4902,7 @@
         "A02",
         "A03"
       ],
-      "finding": "Keine Kerndefinition enthält Accessibility-Rollen-/Namensregeln, semantische IDREF-Beziehungen, Patternanforderungen, Tastatur-/Fokusregeln oder eine Ankündigungssemantik. Attribute und Properties sind allgemein beschreibbar, einschließlich möglicher ARIA-bezogener Namen.",
+      "finding": "Keine Kerndefinition enthält Accessibility-Rollen-/Namensregeln, semantische IDREF-Beziehungen, Patternanforderungen, Tastatur-/Fokusregeln oder eine Ankündigungssemantik. Attribute und Properties sind allgemein beschreibbar, einschliesslich möglicher ARIA-bezogener Namen.",
       "interpretation": "N im CEM-Kern für die drei Accessibility-Anforderungen. Ein Attribut namens aria-label oder ein Textverweis auf ein Pattern ist noch kein Accessibility-Fachmodell. Dies sagt nichts über die tatsächliche Barrierefreiheit einer mit CEM dokumentierten Komponente aus.",
       "next_check": "Für diesen Formatbefund ist kein Screenreadertest nötig. Zusätzliche Accessibility-Metadaten eines Plugins wären als eigenes Modell zu prüfen und nicht ungeprüft dem Standard zuzuschreiben."
     },
@@ -4951,7 +4951,7 @@
       ],
       "finding": "Reference hat name/package/module, aber keine Version-/Integritätsbindung. schemaVersion bezeichnet die Version des CEM-Schemas. Die README beschreibt Manifest-Discovery über package.json.customElements. Der Analyzer kann mit --dependencies Metadaten vorhandener Abhängigkeiten einbeziehen; das ist eine Werkzeugfunktion.",
       "interpretation": "N für eigenständige reproduzierbare Versionsbindung externer Referenzen im CEM-Kern. Ein vorhandenes npm-Lockfile könnte den umgebenden Installationsstand fixieren, ist aber kein normierter Versionsresolver des CEM-Dokuments. Externe Symbole sind beschreibbar; ein standardisierter referenzlokaler Versions-/Integritätsvertrag ist damit nicht gegeben. C35 wird dadurch auf Grundlage der vertieften Prüfung präzisiert.",
-      "next_check": "Keine Paketinstallation nötig, um die Felder und ihre dokumentierte Bedeutung festzustellen. Ob ein zukünftiges Contract-Paket externes Locking übernimmt, bleibt außerhalb dieses Schritts offen."
+      "next_check": "Keine Paketinstallation nötig, um die Felder und ihre dokumentierte Bedeutung festzustellen. Ob ein zukünftiges Contract-Paket externes Locking übernimmt, bleibt ausserhalb dieses Schritts offen."
     },
     {
       "id": "C46",
@@ -5116,7 +5116,7 @@
         "X04"
       ],
       "finding": "Format §6/7 definiert Token-/Gruppenpfade, Aliase, $extends und JSON-Pointer-Wertzugriff. Resolver §4.2 erlaubt Verweise auf Tokenquellen und Resolverstrukturen. Weder UI-Element-/Instanzidentität noch Zustands-/Event-/Accessibility-Zielarten oder wiederverwendbare Komponenteninstanzen sind standardisiert.",
-      "interpretation": "N im Kern für die drei UI-Integrationsanforderungen. Tokenidentität und Wiederverwendung von Gruppen sind echte Beiträge, aber keine Identität einer Inputinstanz oder Komposition einer ScrollArea. Die JSON-Pointer-Syntax macht das adressierte Objekt nicht automatisch zu einem UI-Element. $extensions kann fremde Metadaten tragen, deren Bedeutung bleibt außerhalb des Kerns.",
+      "interpretation": "N im Kern für die drei UI-Integrationsanforderungen. Tokenidentität und Wiederverwendung von Gruppen sind echte Beiträge, aber keine Identität einer Inputinstanz oder Komposition einer ScrollArea. Die JSON-Pointer-Syntax macht das adressierte Objekt nicht automatisch zu einem UI-Element. $extensions kann fremde Metadaten tragen, deren Bedeutung bleibt ausserhalb des Kerns.",
       "next_check": "Für diesen begrenzten Befund keine neue Referenzsyntax und keinen Adapter entwerfen. Eine spätere domänenübergreifende Abbildung muss den Unterschied zwischen Wert, Definition und UI-Instanz ausdrücklich behandeln."
     },
     {
@@ -5130,7 +5130,7 @@
         "X05"
       ],
       "finding": "Resolver §4.2 beschreibt lokale und externe URI-/Pointerreferenzen. Unterstützung von Referenzen im selben Dokument ist verpflichtend; Dateisystem- und Netzwerk-URIarten können Werkzeuge unterschiedlich unterstützen. version=2025.10 bezeichnet die Resolver-Spezifikation.",
-      "interpretation": "N im Kern für reproduzierbar versionierte externe Komponenten-/Teilmodellabhängigkeiten: Eine externe Tokenquelle ist beschreibbar, aber ein Versions-/Integritäts- oder Lockvertrag für deren Inhalt ist nicht definiert. Eine unveränderliche URL kann außerhalb des Formats gewählt werden; daraus folgt weder verpflichtende Remoteauflösung noch eigenes Versionsmanagement des Resolvers.",
+      "interpretation": "N im Kern für reproduzierbar versionierte externe Komponenten-/Teilmodellabhängigkeiten: Eine externe Tokenquelle ist beschreibbar, aber ein Versions-/Integritäts- oder Lockvertrag für deren Inhalt ist nicht definiert. Eine unveränderliche URL kann ausserhalb des Formats gewählt werden; daraus folgt weder verpflichtende Remoteauflösung noch eigenes Versionsmanagement des Resolvers.",
       "next_check": "Die konkrete externe URI-Unterstützung eines später ausgewählten Werkzeugs wäre bei Bedarf zu prüfen. Hier wird nicht behauptet, dass externe Referenzen generell unmöglich sind."
     },
     {
@@ -5191,7 +5191,7 @@
       "rows": [
         "I02"
       ],
-      "finding": "§5.7 und §6.2 definieren <send event> mit benannten <param>-Werten, namelist oder <content>. §5.10.1 definiert _event.data; §6.2.5 und Anhang C unterscheiden I/O-Prozessoren. Damit können Ereignisse einschließlich strukturierter Daten gesendet werden.",
+      "finding": "§5.7 und §6.2 definieren <send event> mit benannten <param>-Werten, namelist oder <content>. §5.10.1 definiert _event.data; §6.2.5 und Anhang C unterscheiden I/O-Prozessoren. Damit können Ereignisse einschliesslich strukturierter Daten gesendet werden.",
       "interpretation": "Positiver Teilbefund, aber U für einen vom Auslösezeitpunkt getrennten öffentlichen Event-/Payloadvertrag. <send> beschreibt ausführbare Kommunikation und kann Eventnamen/Werte dynamisch berechnen. Die genannte öffentliche Signatur als separat überprüfbare Beschreibung folgt daraus noch nicht. Das Versenden strukturierter Daten wird ausdrücklich nicht als fehlend bewertet.",
       "next_check": "Offene Frage: Reicht eine klar abgegrenzte, dokumentierte SCXML-Teilmenge mit statischen Events und benannten Parametern aus, um die öffentlichen Payloadfelder eindeutig und unabhängig vom Sendepunkt zu bestimmen, oder ist eine separate Eventdeklaration nötig? In diesem Durchgang keine Praxisversuche.",
       "superseded_by": "C414"
@@ -5253,7 +5253,7 @@
       "rows": [
         "X01"
       ],
-      "finding": "Ein SCXML-Dokument kann gemäß §3/A.1 ohne visuelle Beschreibung, öffentliches UI-Interface oder Accessibility-Definition geführt werden. Ein eigenständiges Behavior-Artefakt ist damit möglich.",
+      "finding": "Ein SCXML-Dokument kann gemäss §3/A.1 ohne visuelle Beschreibung, öffentliches UI-Interface oder Accessibility-Definition geführt werden. Ein eigenständiges Behavior-Artefakt ist damit möglich.",
       "interpretation": "Positiver Teilbefund; U für das vollständige Vier-Domänen-Paket. Die Spezifikation allein bestimmt nicht, wie die separat gewählten Originalformate und dieselben UI-Elemente ohne widersprüchliche Definitionen verbunden werden. Erweiterungsnamespaces lösen diese Ownershipfrage nicht von selbst.",
       "next_check": "Offene Frage: Welche Referenz-/Ereignisbindungen verbinden ein unverändertes SCXML-Verhaltensdokument mit den drei anderen Domänen, und bleiben dabei deren eigenen Validatoren und führenden Quellen erhalten? Keine Architekturentscheidung in diesem Schritt.",
       "superseded_by": "C447"
@@ -5370,7 +5370,7 @@
       "rows": [
         "I02"
       ],
-      "finding": "setup.types.emitted deklariert eine öffentliche Eventunion einschließlich Payloadfeldern. emit erzeugt diese Ereignisse; actor.on hört darauf.",
+      "finding": "setup.types.emitted deklariert eine öffentliche Eventunion einschliesslich Payloadfeldern. emit erzeugt diese Ereignisse; actor.on hört darauf.",
       "interpretation": "D für getrennt typisierte ausgegebene Actor-Events. Interne events und öffentliche emitted sind unterscheidbar; Auslösepunkt und Typdeklaration sind getrennt. TypeScript-Typen sind keine Runtime-Payloadprüfung.",
       "next_check": "Eventreihenfolge und fachlicher Auslösezeitpunkt weiterhin ausdrücklich festlegen."
     },
@@ -5502,7 +5502,7 @@
         "X04"
       ],
       "finding": "createActor erzeugt unabhängige Instanzen; invoke und spawn verwenden wiederverwendbare Actor-Logik mit eigenem Context und definierten Lebenszyklen. invoke folgt der Lebensdauer des aufrufenden Zustands.",
-      "interpretation": "Starker Teilbeitrag für wiederverwendbare Verhaltensinstanzen. Vollständige UI-Komposition wie Overlay verwendet ScrollArea einschließlich Interface, Darstellung und Elementidentität ist noch nicht belegt.",
+      "interpretation": "Starker Teilbeitrag für wiederverwendbare Verhaltensinstanzen. Vollständige UI-Komposition wie Overlay verwendet ScrollArea einschliesslich Interface, Darstellung und Elementidentität ist noch nicht belegt.",
       "next_check": "Offen: Reicht Actor-Komposition als Behavior-Beitrag, wenn die übrigen Komponentenbindungen unabhängig beschrieben werden?",
       "superseded_by": "C409"
     },
@@ -5602,7 +5602,7 @@
       "rows": [
         "V01"
       ],
-      "finding": "PositioningOptions typisiert gutter, shift und Achsenoffsets als Zahlen mit dokumentierter Abstandssemantik. Die Positionierung schreibt berechnete Dimensionen als CSS-Pixelwerte; ScrollArea liefert benannte Breiten-/Höhengrößen für Corner und Thumb.",
+      "finding": "PositioningOptions typisiert gutter, shift und Achsenoffsets als Zahlen mit dokumentierter Abstandssemantik. Die Positionierung schreibt berechnete Dimensionen als CSS-Pixelwerte; ScrollArea liefert benannte Breiten-/Höhengrössen für Corner und Thumb.",
       "interpretation": "D als eng begrenzter Dimensionsbeitrag des mitgelieferten Web-Positionierungs-/Scrollmodells. Kein allgemeines Design-Tokenformat, kein Typografie-/Farbsystem und keine DTCG-Konformität werden behauptet. Die vorhandene Farb-CSS-Variable allein wäre kein umfassender Typnachweis.",
       "next_check": "Die Übertragung von Designsystem-Tokens in solche Dimensionsparameter ist nicht geprüft; Layoutsemantik bleibt webgebunden."
     },
@@ -5646,7 +5646,7 @@
       ],
       "finding": "ComboboxProps.positioning referenziert PositioningOptions. placement, gutter/offset und getAnchorElement bestimmen Platzierung, Abstand und Anker. Die Combobox bindet Control beziehungsweise Trigger als Anker und Positioner als Floating-Ziel an getPlacement.",
       "interpretation": "D für definierte relative Web-Geometrie im gebündelten @zag-js/popper-Beitrag, der Floating UI nutzt. Die Bindung ist konkreter JS/DOM-Code, kein neutraler deklarativer Layoutstandard.",
-      "next_check": "Kollisionen, Umplatzierung, variable Größen und Zielplattformübertragung bleiben praktisch ungeprüft; acht Pixel sind weiterhin nur Beispielwert."
+      "next_check": "Kollisionen, Umplatzierung, variable Grössen und Zielplattformübertragung bleiben praktisch ungeprüft; acht Pixel sind weiterhin nur Beispielwert."
     },
     {
       "id": "C92",
@@ -5659,7 +5659,7 @@
         "V05"
       ],
       "finding": "fitViewport und sizeMiddleware berechnen verfügbare Abmessungen anhand der definierten Boundary und overflowPadding. getPlacementStyles setzt bei fitViewport maxWidth auf --available-width und maxHeight auf --available-height; die Combobox verwendet die Floating-Styles am Positioner.",
-      "interpretation": "D für eine formal bestimmte maximale verfügbare Fläche des Popups im Positionierungsmodell. Keine automatische Begrenzung auf fünf sichtbare Zeilen und kein vollständiges frei parametrierbares Größenregelwerk nachgewiesen.",
+      "interpretation": "D für eine formal bestimmte maximale verfügbare Fläche des Popups im Positionierungsmodell. Keine automatische Begrenzung auf fünf sichtbare Zeilen und kein vollständiges frei parametrierbares Grössenregelwerk nachgewiesen.",
       "next_check": "Eine zusätzliche produktspezifische Zeilen-/Höhenbegrenzung und deren Zusammenspiel mit Content und Overflow müssten separat festgelegt werden."
     },
     {
@@ -5688,7 +5688,7 @@
         "B03"
       ],
       "finding": "Machine/Transition definieren Zustände, Initialisierung, Ereignisziele, Guards, Actions und Effects; BindableContext sowie Params stellen Ereignis-/Kontextdaten bereit. Die gelesene React-Ausführung wählt die erste erfüllte Transition, führt benannte Implementierungen aus und behandelt Cleanup beim Verlassen. Konkrete Combobox-Guards und Aktionen sind vorhanden.",
-      "interpretation": "D im ausführbaren JS/TS-Maschinenmodell einschließlich seiner Framework-Laufzeitbindung. Semantik ist durch Code definiert, nicht durch freie Namen allein. Die im React-Adapter gelesene Scheduling-/Effektreihenfolge wird nicht ohne Prüfung auf jeden Adapter verallgemeinert.",
+      "interpretation": "D im ausführbaren JS/TS-Maschinenmodell einschliesslich seiner Framework-Laufzeitbindung. Semantik ist durch Code definiert, nicht durch freie Namen allein. Die im React-Adapter gelesene Scheduling-/Effektreihenfolge wird nicht ohne Prüfung auf jeden Adapter verallgemeinert.",
       "next_check": "Kein SCXML-Anspruch: Die Einleitung grenzt sich ausdrücklich von SCXML ab. Die Erwähnung von XState in Paketmetadaten ist kein Kompatibilitätsnachweis. Keine Maschine ausgeführt."
     },
     {
@@ -6159,7 +6159,7 @@
         "X06"
       ],
       "finding": "Offizieller Original-Linter kann das eigenständige DESIGN.md-Artefakt verarbeiten. Ein unabhängig veröffentlichtes vollständiges Originalschema ist durch gelesene Pseudostruktur, TS-Interfaces und Zod-Eingabeschema jedoch nicht nachgewiesen.",
-      "interpretation": "U im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; offen: vollständiger Originalschema-Vertrag/Export und Umfang der Schema- gegenüber programmatischer Validierung. Kein N aus bloß fehlendem Schemafund.",
+      "interpretation": "U im ausdrücklich begrenzten Modell (Google DESIGN.md alpha am Commit 6e5da5382f41edbba9d73b2c62f33f32e9971f15). E1/E2; offen: vollständiger Originalschema-Vertrag/Export und Umfang der Schema- gegenüber programmatischer Validierung. Kein N aus bloss fehlendem Schemafund.",
       "next_check": "Welcher vollständige eigenständige Originalschema-Vertrag/Export besteht, und welche Regeln prüfen Schema und programmatischer Linter jeweils?",
       "superseded_by": "C403"
     },
@@ -6421,7 +6421,7 @@
         "A02"
       ],
       "finding": "Kein referenzierbares Fokus-/Tastaturmuster im spezifizierten Datenmodell.",
-      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Prosa-Guidelines bleiben möglich, aber kein formal adressierbares Bedienmuster gemäß Kriterium. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
+      "interpretation": "N im ausdrücklich begrenzten Modell (OpenUI draft-01 am Commit 09d39b211dcaa2e227ed38e312c8822e193cfea9). Prosa-Guidelines bleiben möglich, aber kein formal adressierbares Bedienmuster gemäss Kriterium. Unbekannte Felder oder frei ergänzte Prosa erhalten dadurch keine definierte Fachsemantik. Fehlende Recherche allein wäre kein N.",
       "next_check": "Im definierten draft-01-Kern abgegrenzt; keine Aussage über künftige Versionen oder eigene Erweiterungen."
     },
     {
@@ -6937,9 +6937,9 @@
       "rows": [
         "V05"
       ],
-      "finding": "Dimensionen und Elementgrößen sind strukturiert möglich; kein ausreichender Originalnachweis für formale maximale Höhe/Fläche. S/F; J offene Visualfelder; W mapSize.",
-      "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.",
-      "next_check": "Welche originale Regel definiert maxHeight/max-area einschließlich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.",
+      "finding": "Dimensionen und Elementgrössen sind strukturiert möglich; kein ausreichender Originalnachweis für formale maximale Höhe/Fläche. S/F; J offene Visualfelder; W mapSize.",
+      "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Welche originale Regel definiert maxHeight/max-area einschliesslich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.",
+      "next_check": "Welche originale Regel definiert maxHeight/max-area einschliesslich Einheit/Bezug? Beliebiges zulässiges JSON-Feld ist keine bestätigte Semantik; fünf Zeilen/variable Zeilenhöhe nicht bewiesen.",
       "superseded_by": "C398"
     },
     {
@@ -7006,7 +7006,7 @@
         "A01"
       ],
       "finding": "`aria` hat ausdrücklich auf ARIA-Attribute abgebildete Schlüssel, z.B. label. S Element Runtime Properties; U; J elementBase.",
-      "interpretation": "R im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Referenz auf **externe ARIA-Websemantik**, kein eigenes Rollen-/Relationsschema und kein Nachweis gültiger Kombinationen oder Native-A11y-Abbildung. Für konkrete Rollen/Relationen muss die WAI-ARIA-Quelle separat maßgeblich bleiben; generisches object allein wäre ungenügend, hier ist die Attributzuordnung ausdrücklich dokumentiert.",
+      "interpretation": "R im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Referenz auf **externe ARIA-Websemantik**, kein eigenes Rollen-/Relationsschema und kein Nachweis gültiger Kombinationen oder Native-A11y-Abbildung. Für konkrete Rollen/Relationen muss die WAI-ARIA-Quelle separat massgeblich bleiben; generisches object allein wäre ungenügend, hier ist die Attributzuordnung ausdrücklich dokumentiert.",
       "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
     },
     {
@@ -7060,7 +7060,7 @@
       "rows": [
         "X03"
       ],
-      "finding": "Aliasqualifizierte Imports erschließen getrennte Token-/Element-/Maschinenquellen; konkrete Namensauflösung in I/R. S/F Referenzen, M Composability, J imports.",
+      "finding": "Aliasqualifizierte Imports erschliessen getrennte Token-/Element-/Maschinenquellen; konkrete Namensauflösung in I/R. S/F Referenzen, M Composability, J imports.",
       "interpretation": "U im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). Starker Teilbefund, aber bisher UXSpec-eigene Teile: kein ausreichender Nachweis, dass Ziele in **separaten originalen Interface-/Visual-/Behavior-/A11y-Domänen** semantisch adressiert werden. Welche Originalartefakte/Bindungen bleiben unverändert? Tokenreferenz allein erfüllt X03 nicht.",
       "next_check": "Starker Teilbefund, aber bisher UXSpec-eigene Teile: kein ausreichender Nachweis, dass Ziele in **separaten originalen Interface-/Visual-/Behavior-/A11y-Domänen** semantisch adressiert werden. Welche Originalartefakte/Bindungen bleiben unverändert? Tokenreferenz allein erfüllt X03 nicht.",
       "superseded_by": "C426"
@@ -7085,7 +7085,7 @@
         "X05"
       ],
       "finding": "Definierte Importfelder sind from + boolesche Teilimporte; I löst from über lokalen node:path relativ zur Dokumentdatei auf und liest JSON. Kein Versions-/Hash-/Lockfeld und keine solche Auflösung im geprüften Importkern J/T/I.",
-      "interpretation": "N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N eng auf reproduzierbare externe Abhängigkeitsbindung im Originalkern. Ein Git-gepinntes Gesamtverzeichnis kann außerhalb des Formats Reproduzierbarkeit liefern, wäre eine zusätzliche Paketkonvention. `$version:0.2` der Ausgabe ist Formatversion. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
+      "interpretation": "N im begrenzten untersuchten Modell (UXSpec am gepinnten Commit 20dfae0e7224d952e198afdf4ffed26d6fd67180). N eng auf reproduzierbare externe Abhängigkeitsbindung im Originalkern. Ein Git-gepinntes Gesamtverzeichnis kann ausserhalb des Formats Reproduzierbarkeit liefern, wäre eine zusätzliche Paketkonvention. `$version:0.2` der Ausgabe ist Formatversion. Freie zusätzliche Felder oder Prosa sind kein Nachweis standardisierter Fachsemantik; fremde Erweiterungen werden nicht pauschal ausgeschlossen.",
       "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
     },
     {
@@ -7228,7 +7228,7 @@
       "rows": [
         "V05"
       ],
-      "finding": "AR02/AR08, E1/E2: dokumentierte --available-height/--available-width und max-height:calc(...) in separatem CSS, außerdem referenziertes fitViewport. Formale Web-Flächenbegrenzung per CSS/Popper; exakt fünf variable Zeilen dadurch nicht automatisch definiert.",
+      "finding": "AR02/AR08, E1/E2: dokumentierte --available-height/--available-width und max-height:calc(...) in separatem CSS, ausserdem referenziertes fitViewport. Formale Web-Flächenbegrenzung per CSS/Popper; exakt fünf variable Zeilen dadurch nicht automatisch definiert.",
       "interpretation": "R im begrenzten untersuchten Modell (Ark UI am gepinnten Commit c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc). Rollenbegrenzung und offene Punkte sind im Befund ausdrücklich angegeben. Referenzbeiträge R beruhen auf konkret belegten Zag-Imports/-Delegationen oder dokumentierter CSS-Bindung; keine eigene neutrale Ark-Maschinensprache.",
       "next_check": "Keine praktische Ausführung. Vor späteren Versuchen konkrete Produkt-/Plattformbindung, Werkzeugstand und positive/negative Prüffälle getrennt festlegen."
     },
@@ -7417,7 +7417,7 @@
         "G01"
       ],
       "finding": "P01/P02/P05 E1/E2: strukturierte Konfigurationsobjekte, TS-Typen und generiertes Designsystem-JSON sind maschinenlesbar. JSON-Export ist kein vollständiger Contract-Input.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7428,7 +7428,7 @@
         "G02"
       ],
       "finding": "P01/P04/P05/P06 E1/E2: statische Token-/Stylewerte sind extrahierbar; CSS-Selektoren/-Werte und JS-transform/Frameworkwrapper benötigen Übersetzung für sprachneutrale Semantik. Kein Swift-/Angular-/Native-Nachweis.",
-      "interpretation": "A ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "A ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7439,7 +7439,7 @@
         "I01"
       ],
       "finding": "P02/P05 E2: benannte Recipe-Variantprops mit Auswahltypen; Patternproperties besitzen enum/token/property/primitive-Typmetadaten. Direkt im Visual-API-Umfang, keine generische Interfacebeschreibung aller fachlichen Props.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7450,7 +7450,7 @@
         "I02"
       ],
       "finding": "P02/P05 E2: untersuchte Recipe-/Exporttypen modellieren keine öffentlichen UI-Ereignisse samt strukturierten Payloads. Callback-Props externer Headless-Komponenten sind nicht Panda-Contractfelder.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7461,7 +7461,7 @@
         "I03"
       ],
       "finding": "P02/P05 E1/E2: slots:string[] und per-slot Styles benennen Teile. Weder anatomische DOM-Pflicht noch instanzstabile Identität folgt daraus.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7472,7 +7472,7 @@
         "V01"
       ],
       "finding": "P01 E2: TokenDataTypes ordnet Kategorien Wertformen zu; Border/Shadow/Gradient strukturiert. Kategorie- und TS-Typen sind enger Nachweis; Stringfarbe keine vollständige formale Farbvalidierung.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7483,7 +7483,7 @@
         "V02"
       ],
       "finding": "P02/P03 E1/E2: base, variants, defaultVariants, compoundVariants und Bedingungen. Visuelle Auswahl ist kein Zustandsautomat. Vorhandenes C28 bestätigt.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7494,7 +7494,7 @@
         "V03"
       ],
       "finding": "P01/P03 E1: semanticTokens value base/_dark; Modus per dark-Klasse, Themes per data-panda-theme, explizite CSS-Ausgabeauswahl. Ohne base preset gibt es keine automatische dark-Bedingung.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7505,7 +7505,7 @@
         "V04"
       ],
       "finding": "P04 E1: dokumentierte Weitergabe an CSS Anchor Positioning über positionAnchor/anchor() und benannte positionTry-Fallbacks; CSS-Namensraum --trigger, Richtung/Insets/Spacing. Panda verwaltet anchor-name/position-anchor je Element ausdrücklich nicht selbst. Native CSS-Zielsemantik; keine rendererneutrale Ankerreferenz.",
-      "interpretation": "R ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "R ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7515,8 +7515,8 @@
       "rows": [
         "V05"
       ],
-      "finding": "P04 E1: maxHeight/maxH und maxWidth/maxW haben dokumentierte CSS-Geometriebedeutung. Token '5' ist eine Größenreferenz, nicht fünf Zeilen. Variable Zeilenhöhen benötigen zusätzliche Berechnung/Regel.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "finding": "P04 E1: maxHeight/maxH und maxWidth/maxW haben dokumentierte CSS-Geometriebedeutung. Token '5' ist eine Grössenreferenz, nicht fünf Zeilen. Variable Zeilenhöhen benötigen zusätzliche Berechnung/Regel.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7527,7 +7527,7 @@
         "V06"
       ],
       "finding": "P04 E1: Styleobjekte und ScrollArea-Pattern setzen overflowX/overflowY auf auto/hidden. Browser-CSS-Scrollsemantik; keine daraus abgeleitete Zahl sichtbarer Einträge oder Fokusnavigation.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7538,7 +7538,7 @@
         "B01"
       ],
       "finding": "P02/P05 E2: begrenzter Style-/Rezeptkern besitzt keinen Initialzustand und keine Ereignis-Übergangsziele. data-state-Selektor beobachtet Zustand, definiert ihn nicht.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7549,7 +7549,7 @@
         "B02"
       ],
       "finding": "P02/P05 E2: compoundVariants und CSS-Bedingungen wählen Styles; keine UX-Guard-/Action-Ausführungssemantik im untersuchten Kern. Pattern-transform ist Code für Styles.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7560,7 +7560,7 @@
         "B03"
       ],
       "finding": "P02/P05 E2: kein UX-Kontext und keine Ereignispayload-Verarbeitung im begrenzten Datenmodell. Variantparameter sind kein Ersatz.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7571,7 +7571,7 @@
         "B04"
       ],
       "finding": "P02/P03/P05 E1/E2: focus/hover/active selektieren Styles, binden jedoch keine Taste/Eingabe auf UX-Aktion. P06 delegiert Verhalten an Headless-Code.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7582,7 +7582,7 @@
         "A01"
       ],
       "finding": "P02/P05/P06 E1/E2: kein Rollen-/Accessible-name-/Beziehungsmodell im gelesenen visuellen Kern. Styling vorhandener ARIA-Attribute verleiht ihnen keine eigene Panda-Semantik.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7593,7 +7593,7 @@
         "A02"
       ],
       "finding": "P02/P03/P05/P06 E1/E2: Fokusstyles sind keine Fokusführung/Tastaturpattern. Headless-Wrapper demonstriert externe Zuständigkeit, keine hier verifizierte ARIA/APG-Referenzkonformität.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7604,7 +7604,7 @@
         "A03"
       ],
       "finding": "P02/P05 E2: kein Live-Region-/Announcement-Modell im begrenzten Kern. Animation/Transition ist keine zugängliche Rückmeldung.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7615,7 +7615,7 @@
         "X01"
       ],
       "finding": "P05/P06: Visual-Konfiguration lässt sich ablegen; vier unabhängige Originaldomänen samt gemeinsamen Bindungen nicht belegt. Frage: welche dokumentierte Paketgrenze erlaubt alle vier unveränderten Domänen mit separaten Validatoren?",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X01: P05/P06: Visual-Konfiguration lässt sich ablegen; vier unabhängige Originaldomänen samt gemeinsamen Bindungen nicht belegt. Frage: welche dokumentierte Paketgrenze erlaubt alle vier unveränderten Domänen mit separaten Validatoren?"
     },
     {
@@ -7626,7 +7626,7 @@
         "X02"
       ],
       "finding": "P02/P05 E2: Slot-/Recipe-/Token-/Theme-Namen und Klassen sind Definitionen/Werte; kein Elementinstanz-ID-Modell im begrenzten Kern. CSS-anchor-name bleibt Autorverantwortung.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7637,7 +7637,7 @@
         "X03"
       ],
       "finding": "P01/P02/P05 E2: Tokenpfade und Quellenindex sind interne Visualreferenzen; keine fremden Interface-/Behavior-/A11y-Artefaktziele mit semantischer Zuordnung im gelesenen Kern. data-state-Bindung per Code müsste zusätzlich beschrieben werden.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7648,7 +7648,7 @@
         "X04"
       ],
       "finding": "P06 E1: wiederverwendbare Frameworkkomponenten und Headless-Teile mit eigenem Providerkontext/Props sind konkret; neutrale Definition/Instanzreferenz mit eigenem ID-/Eventkontext benötigt Adapter. Recipewiederverwendung allein wäre kein ausreichender Nachweis.",
-      "interpretation": "A ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "A ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7659,7 +7659,7 @@
         "X05"
       ],
       "finding": "P06/P07 E1: externes Designsystempaket wird installiert und über designSystem aufgelöst, Kompatibilitätsdiagnosen existieren. Reproduzierbare exakte Bindung benötigt Paketmanagerstand/Lock und Übersetzung in neutrale Paketabhängigkeit; ^1.0.0-Beispiel ist kein Pin. Kein D für versionierte Contractreferenzen.",
-      "interpretation": "A ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "A ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7670,7 +7670,7 @@
         "X06"
       ],
       "finding": "P05/P07 E1/E2: TS-Eingabetypen, CLI-Flagschema, Configdiagnosen und flacher Exportreader vorhanden; vollständiges Originalschema/Originalvalidator für separates deklaratives Visualartefakt nicht nachgewiesen. Frage: welches vollständige offizielle Schema prüft das unveränderte Visualartefakt unabhängig vom Compiler?",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X06: P05/P07 E1/E2: TS-Eingabetypen, CLI-Flagschema, Configdiagnosen und flacher Exportreader vorhanden; vollständiges Originalschema/Originalvalidator für separates deklaratives Visualartefakt nicht nachgewiesen. Frage: welches vollständige offizielle Schema prüft das unveränderte Visualartefakt unabhängig vom Compiler?",
       "superseded_by": "C404"
     },
@@ -7682,7 +7682,7 @@
         "X07"
       ],
       "finding": "P05/P07 E1/E2: gelesener Exportreader/CLI-Diagnoseumfang prüft keine vierdomänigen Instanzkollisionen oder fachlichen Widersprüche. Tokenzyklen/fehlende Referenzen und Paketdiagnosen sind enger.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7693,7 +7693,7 @@
         "X08"
       ],
       "finding": "P05/P06/P07: Panda-intern config-last-Vorrang und optionale sources-Provenienz belegt; Gesamtpaket-Ownership über vier Originalformate offen. Frage: welche führende Domäne entscheidet bei Konflikten zwischen Visual, Behavior und A11y, und wie bleiben Änderungen nachvollziehbar?",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Visual-Token-/Recipe-/DesignSystemSpec-Kern samt ausdrücklich dokumentierter CSS- und Paketbindung, Commit 86f78a228204d63baa0b8bca2676d9f26190e449. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X08: P05/P06/P07: Panda-intern config-last-Vorrang und optionale sources-Provenienz belegt; Gesamtpaket-Ownership über vier Originalformate offen. Frage: welche führende Domäne entscheidet bei Konflikten zwischen Visual, Behavior und A11y, und wie bleiben Änderungen nachvollziehbar?"
     },
     {
@@ -7704,7 +7704,7 @@
         "G01"
       ],
       "finding": "CON/TYP/DOC: kanonisches JSON-Komponentenartefakt; Markdown daraus abgeleitet. E2.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7715,7 +7715,7 @@
         "G02"
       ],
       "finding": "CON/TYP/BASE: fachliche Daten benötigen keine eingebetteten JS-/Reactfunktionen. Strings und Figma-Konzepte sind beschreibend; keine portable ausführbare Verhaltenssprache. Generierung ist separat JS/TS-/Figma-/LLM-gebunden.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7726,7 +7726,7 @@
         "I01"
       ],
       "finding": "BASE rawDefs.type und instance componentProperties type/value; SAFE bewahrt BOOLEAN/INSTANCE_SWAP/TEXT/VARIANT/SLOT explizit. API dokumentiert property/values/required/default sowie Dictionary. Typnachweis im extrahierten Quellmodell, keine vollständige Prüfung komplexer Laufzeittypen.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7737,7 +7737,7 @@
         "I02"
       ],
       "finding": "CON/TYP/API-Output/Dictionary: Property-/State-/Slotdaten, keine definierte öffentliche Eventdeklaration mit strukturiertem Payloadschema im geprüften Kern. Freitextnotizen sind kein Eventmodell.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7748,7 +7748,7 @@
         "I03"
       ],
       "finding": "anatomy.defaultTree/composition/subcomponents, TreeNode.name/id, childComposition und benannte API-Subcomponenttabellen. CON/TYP/BASE.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7759,7 +7759,7 @@
         "V01"
       ],
       "finding": "BASE/TYP/STR: strukturierte Dimensionswerte {value,token,display}, Farbhex/-property, resolvedType und kind-bezogene Variablenwerte, Typografie; fachliche Werte sind vorhanden. Schemafelder sind teils offen und garantieren keine gültigen Einheiten/Farben.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7770,7 +7770,7 @@
         "V02"
       ],
       "finding": "COL: Varianten/State-Spalten mit tokensByState; BASE variantProperties/colorWalk/stateComparison. Strukturierte visuelle Zustandswerte, keine UX-Transitionsbindung.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7781,7 +7781,7 @@
         "V03"
       ],
       "finding": "COL Variable Mode Colors: modeId, Type×Mode-Abschnitte, modeTokenMap-Auflösung generischer zu semantischen Tokens, explizite Figma-Modeauswahl. BASE valuesByMode/collection modes. Direkt in Figma-/Dokumentationsrolle; keine bewiesene neutrale Theme-Laufzeit.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7792,7 +7792,7 @@
         "V04"
       ],
       "finding": "STR besitzt section._anchor mit layerId/variantId sowie Abstand/Layoutfelder. Das ist ein Mess-/Renderziel, kein ausreichender Beleg Overlay→Input mit definierter Richtung/Abstand und unabhängiger Layoutsemantik. Frage: Welche originale Felddefinition bindet Referenzziel + placement/side + offset als relative Geometrie?",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für V04: STR besitzt section._anchor mit layerId/variantId sowie Abstand/Layoutfelder. Das ist ein Mess-/Renderziel, kein ausreichender Beleg Overlay→Input mit definierter Richtung/Abstand und unabhängiger Layoutsemantik. Frage: Welche originale Felddefinition bindet Referenzziel + placement/side + offset als relative Geometrie?",
       "superseded_by": "C400"
     },
@@ -7804,7 +7804,7 @@
         "V05"
       ],
       "finding": "STR dokumentiert minHeight/maxHeight/minWidth/maxWidth mit Figma Frame Min/Max und begrenzt feste Messwerte auf FIXED-Container; BASE dimensions erhält Messdaten. Direkt als Figma-basierte maximale Abmessung, keine Ableitung fünf variabler Zeilen und kein neutraler Constraintsolver.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7815,7 +7815,7 @@
         "V06"
       ],
       "finding": "STR dokumentiert clipsContent true/false ausdrücklich als Clip content (overflow); BASE erwähnt Scrollwrapper. Clipping beweist kein formal beschriebenes Scrollverhalten/Achse. Frage: Wird overflowDirection/scrolling im Originalartefakt mit Semantik gespeichert oder braucht es neue Modellierung?",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für V06: STR dokumentiert clipsContent true/false ausdrücklich als Clip content (overflow); BASE erwähnt Scrollwrapper. Clipping beweist kein formal beschriebenes Scrollverhalten/Achse. Frage: Wird overflowDirection/scrolling im Originalartefakt mit Semantik gespeichert oder braucht es neue Modellierung?",
       "superseded_by": "C401"
     },
@@ -7827,7 +7827,7 @@
         "B01"
       ],
       "finding": "CON/TYP/API-Dictionary states speichern Zuordnung zu API-Werten/runtimeCondition als Prosa. Kein initial + event→target-Transitionsmodell im definierten Kern.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7838,7 +7838,7 @@
         "B02"
       ],
       "finding": "API kennt priorityOrder und textuelle Resolver-/runtimeCondition-Notizen; keine definierte Guardauswertung oder Actionausführung im Kern. CON/TYP/API.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7849,7 +7849,7 @@
         "B03"
       ],
       "finding": "CON/TYP/BASE/API: Daten-Snapshots und Propertywerte, kein Kontext-/Ereignisdatenmodell für eine ausführbar definierte Behaviorlogik.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7860,7 +7860,7 @@
         "B04"
       ],
       "finding": "VOI beschreibt Tastatur/Fokus, aber keine strukturierte Input→UX-Aktion/Maschinenereignis-Bindung im geprüften Contractkern.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7871,7 +7871,7 @@
         "A01"
       ],
       "finding": "VOI benennt Plattformen und konkrete ARIA/VoiceOver/TalkBack-Eigenschaften, label-for/ID-/describedby-Zuordnung; PropertyItem.property/value/notes verweisen auf Plattformsemantik. Keine Konformitätsprüfung der Stringwerte oder Zielbeziehungen durch CON/CAC.",
-      "interpretation": "R ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "R ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7882,7 +7882,7 @@
         "A02"
       ],
       "finding": "VOI: Mergeanalyse, referenzierbare Fokusreihenfolge, conditional focus stops und konkretes Tabpattern mit roving tabindex/Arrow keys. Direkt als dokumentiertes Interaktionsmuster, kein ausführbarer Keyboardprüfer.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7893,7 +7893,7 @@
         "A03"
       ],
       "finding": "VOI: live region von Fokusstopps getrennt, Fehlerbeispiele mit liveRegion:polite und iOS Notification; Semantik stammt aus den benannten Plattformen. Produkttrigger/Inhalt werden interpretiert; kein automatischer Nachweis tatsächlicher AT-Ansage.",
-      "interpretation": "R ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "R ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7904,7 +7904,7 @@
         "X01"
       ],
       "finding": "Separate api/structure/color/voice Evidence-/Cachedateien tatsächlich vorhanden; CON erzwingt alle Bereiche plus SourceModel und kein separates Behavior. Frage: Können vier gewählte Fachartefakte unabhängig mit Originalschämata geführt werden, ohne uSpecs Pflichtcontainer neu zu modellieren? Vier Spezialisten sind nicht die gewünschten vier Domänen.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X01: Separate api/structure/color/voice Evidence-/Cachedateien tatsächlich vorhanden; CON erzwingt alle Bereiche plus SourceModel und kein separates Behavior. Frage: Können vier gewählte Fachartefakte unabhängig mit Originalschämata geführt werden, ohne uSpecs Pflichtcontainer neu zu modellieren? Vier Spezialisten sind nicht die gewünschten vier Domänen."
     },
     {
@@ -7915,7 +7915,7 @@
         "X02"
       ],
       "finding": "BASE/TYP: Figma node IDs, fileKey, topLevelInstanceId, placementsByVariant.nodeIds und section anchor IDs. Direkt für Quell-/Placementidentität. Deduplizierung nach set/name und bool-Fingerprint limitiert Unterscheidung; Stabilität nach Designänderung/Export oder universelle URNs nicht bewiesen.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7926,7 +7926,7 @@
         "X03"
       ],
       "finding": "CAC besitzt interne Evidence→Output-JSON-Pointer und gemeinsame Dictionaryvokabeln; STR `_anchor`/source IDs adressieren Figmaquellen. Nicht ausreichend für externe Interface/Behavior/Visual/A11y-Ziele. Frage: Welcher Resolver adressiert ein Originalartefakt anderer Domäne und definiert die semantische Bindung?",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X03: CAC besitzt interne Evidence→Output-JSON-Pointer und gemeinsame Dictionaryvokabeln; STR `_anchor`/source IDs adressieren Figmaquellen. Nicht ausreichend für externe Interface/Behavior/Visual/A11y-Ziele. Frage: Welcher Resolver adressiert ein Originalartefakt anderer Domäne und definiert die semantische Bindung?"
     },
     {
@@ -7937,7 +7937,7 @@
         "X04"
       ],
       "finding": "BASE: instanceConfig mit mainComponentId und variantProperties/booleanOverrides/instanceSwapOverrides/textOverrides; defaultChildren.contextualOverrides, Slots preferredInstances, genaue Placements. Direkt für dokumentierte Figma-Komponenteninstanzen/Parameter, keine runtimefähige Contractkomposition behauptet.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7948,7 +7948,7 @@
         "X05"
       ],
       "finding": "CON/TYP/BASE: Figma IDs, componentKey, remote collections, hashes und schemaVersion, aber keine reproduzierbare externe Komponenten-/Teilmodellversion mit definierter Versionsauflösung im geprüften Kern. Hash der Extraktion ist keine Dependencyversion.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7959,7 +7959,7 @@
         "X06"
       ],
       "finding": "CON validateCanonicalContract/Ajv prüft eigenes Canonicalartefakt unverändert; BVAL eigenes Baseartefakt separat. CAC prüft Spezialistencaches manuell, nicht gegen publizierte Fach-JSON-Schemas. D nur für eigene Originalformate; Erhalt vier fremder Validatoren nicht belegt.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7970,7 +7970,7 @@
         "X07"
       ],
       "finding": "CAC vollständige Funktion: Evidence-Ziele, Ledger, Achsen und Sourceidentität werden geprüft. Keine allgemeine Paketprüfung für fremde Domänen, Instanzkollisionen und widersprechende fachliche Anforderungen; CON nur Struktur/Hash/Slug. Kein pauschales „uSpec prüft keine Referenzen“.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -7981,7 +7981,7 @@
         "X08"
       ],
       "finding": "BASE Plugin sole writer of base, Interpretation read-only; DOC canonical JSON→Markdown und domain retries; reale interne Ownershipregeln. Frage: Gibt es eine normative per-information Vorrang-/Rückschreibregel zwischen unabhängigen Originalformaten und Integrationsschicht des gewünschten Pakets? Interne Pipelineownership allein klärt das nicht.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Canonicalcontract, dokumentiertes Figma-Quellmodell und gelesene Spezialisten-/Cachedefinitionen, Commit 1e25e9b8bc2e694689ba0489594f38807a341f14. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X08: BASE Plugin sole writer of base, Interpretation read-only; DOC canonical JSON→Markdown und domain retries; reale interne Ownershipregeln. Frage: Gibt es eine normative per-information Vorrang-/Rückschreibregel zwischen unabhängigen Originalformaten und Integrationsschicht des gewünschten Pakets? Interne Pipelineownership allein klärt das nicht."
     },
     {
@@ -7991,8 +7991,8 @@
       "rows": [
         "G01"
       ],
-      "finding": "OPS/OPF: strukturierte JSON-Objekte im Pluginfeld; benannte Spec mit dokumentiertem Schema. Kein bloßer Freitext.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "finding": "OPS/OPF: strukturierte JSON-Objekte im Pluginfeld; benannte Spec mit dokumentiertem Schema. Kein blosser Freitext.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8003,7 +8003,7 @@
         "G02"
       ],
       "finding": "OPS enthält datenförmige Bindungen ohne nutzereigene Funktionen; Kindsemantik und Interaktion werden aber durch Reka/Vue/DOM realisiert (OPD/OPV). Für neutralen fachlichen Kern müssen deren fest eingebaute Regeln explizit übertragen werden; kein Swift-/Angular-Nachweis.",
-      "interpretation": "A ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "A ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8014,7 +8014,7 @@
         "I01"
       ],
       "finding": "OPK typisiert benannte Controlwerte value/disabled/open/text als boolean/text/number/choice; OPS/OPR binden die vorhandenen Komponentenproperties nach Typ. Enger fester Controlvertrag, kein allgemeines öffentliches Prop-Typsystem.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8025,7 +8025,7 @@
         "I02"
       ],
       "finding": "Vollständiger OPS/OPK-Kern enthält keine Deklaration öffentlicher Eventnamen mit Payloadfeldern. OPV modelValue/open-Callbacks sind Adapterimplementierung; OPT sind Agenttools, keine UI-Events.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8036,7 +8036,7 @@
         "I03"
       ],
       "finding": "OPK parts mit IDs, required/items/children, OPS parts zu Slotproperty-ID; reale strukturierte Anatomie.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8047,7 +8047,7 @@
         "V01"
       ],
       "finding": "Eigene numbers sind Controlwerte/-ranges, keine typisierten Designfarben/Dimensionen. Gesamter Editor-/Tokenkern nicht diesem Behaviour-Beitrag zugerechnet; gesondertes Visualmodell prüfen.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für V01: Eigene numbers sind Controlwerte/-ranges, keine typisierten Designfarben/Dimensionen. Gesamter Editor-/Tokenkern nicht diesem Behaviour-Beitrag zugerechnet; gesondertes Visualmodell prüfen.",
       "superseded_by": "C432"
     },
@@ -8059,7 +8059,7 @@
         "V02"
       ],
       "finding": "OPS states ordnet rest/hover/pressed/focus/disabled einer VARIANT-Property zu; OPD beschreibt Styles aus graphischen Varianten. Das Behaviour enthält keine Styles/Tokenreferenzen selbst. Scenegraph-/Variantbindung ist belegter Mechanismus, benötigt für externes Visualartefakt Übersetzung.",
-      "interpretation": "A ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "A ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8070,7 +8070,7 @@
         "V03"
       ],
       "finding": "Keine belastbare Themeauflösung für diesen Beitrag untersucht. Dokumentvariablen im Preview sind kein eigener Themevertrag. Separates Visualmodell prüfen.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für V03: Keine belastbare Themeauflösung für diesen Beitrag untersucht. Dokumentvariablen im Preview sind kein eigener Themevertrag. Separates Visualmodell prüfen.",
       "superseded_by": "C433"
     },
@@ -8082,7 +8082,7 @@
         "V04"
       ],
       "finding": "Keine neutrale Anker-/Abstandssemantik des Behaviourbeitrags belegt; Slider-Thumb-Laufzeitposition ist kein allgemeiner Overlayvertrag. Renderer-/Layoutmodell separat prüfen.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für V04: Keine neutrale Anker-/Abstandssemantik des Behaviourbeitrags belegt; Slider-Thumb-Laufzeitposition ist kein allgemeiner Overlayvertrag. Renderer-/Layoutmodell separat prüfen.",
       "superseded_by": "C437"
     },
@@ -8094,7 +8094,7 @@
         "V05"
       ],
       "finding": "Control min/max sind Wertebereiche, keine Flächenbegrenzung. Eigenes Layoutmodell und dynamische Zeilenhöhen separat prüfen.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für V05: Control min/max sind Wertebereiche, keine Flächenbegrenzung. Eigenes Layoutmodell und dynamische Zeilenhöhen separat prüfen.",
       "superseded_by": "C436"
     },
@@ -8106,7 +8106,7 @@
         "V06"
       ],
       "finding": "Preview-Wheelweitergabe zum Canvas (OPD) ist kein formales Overflow-/ScrollArea-Modell des Contracts. Separates Modell prüfen.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für V06: Preview-Wheelweitergabe zum Canvas (OPD) ist kein formales Overflow-/ScrollArea-Modell des Contracts. Separates Modell prüfen.",
       "superseded_by": "C438"
     },
@@ -8118,7 +8118,7 @@
         "B01"
       ],
       "finding": "OPS/OPK nennen Interaktionszustandszeichnungen, aber keine deklarierte Initialzustands-/Event-/Transitiontarget-Tabelle. OPV enthält festen Code für Priorität disabled→pressed→hover→focus→rest; das ist kein vom Autor beschreibbares Maschinenmodell.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8129,7 +8129,7 @@
         "B02"
       ],
       "finding": "OPS/OPK-Kern besitzt keine Guard-/Action-Ausdruckssyntax oder Ausführungsreihenfolge für fachliche Aktionen. Feste OPV-Funktionen sind Implementierung, kein Contractfeld.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8140,7 +8140,7 @@
         "B03"
       ],
       "finding": "OPS/OPK enthalten Wertebindungen, aber keine Ereignispayload-/Contextreferenzen oder datenverarbeitende Logiksprache. OPV hält konkrete Werte und verarbeitet Callbacks in TS; das erweitert nicht die Originalsyntax.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8151,7 +8151,7 @@
         "B04"
       ],
       "finding": "OPV interaction bindet Pointer-/FocusEvents, Reka-Komponenten übernehmen Tastatur und Eingaben (OPD). Ein neutraler expliziter Input→UX-Action-Vertrag benötigt Extraktion/Hostbindung dieser vorhandenen Mechanismen.",
-      "interpretation": "A ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "A ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8162,7 +8162,7 @@
         "A01"
       ],
       "finding": "OPV zeigt role=radio/aria-checked und Reka-Wrapper. Vollständige Rollen-/Namen-/Beziehungssemantik je Kind und benennbare externe Ziele nicht geprüft; keine automatische R-Zurechnung aller Reka-Fähigkeiten.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für A01: OPV zeigt role=radio/aria-checked und Reka-Wrapper. Vollständige Rollen-/Namen-/Beziehungssemantik je Kind und benennbare externe Ziele nicht geprüft; keine automatische R-Zurechnung aller Reka-Fähigkeiten.",
       "superseded_by": "C440"
     },
@@ -8174,7 +8174,7 @@
         "A02"
       ],
       "finding": "OPD delegiert Tastatur/Fokus an Browser/Reka; referenzierte einzelne Reka-Muster und ihr vollständiges Mapping wurden nicht auditiert. Kindname allein ist noch kein nachgewiesener neutraler Patternvertrag.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für A02: OPD delegiert Tastatur/Fokus an Browser/Reka; referenzierte einzelne Reka-Muster und ihr vollständiges Mapping wurden nicht auditiert. Kindname allein ist noch kein nachgewiesener neutraler Patternvertrag.",
       "superseded_by": "C439"
     },
@@ -8186,7 +8186,7 @@
         "A03"
       ],
       "finding": "Kein Nachweis einer dynamischen zugänglichen Ergebnis-/Statusmeldung im Behaviourvertrag. Vollständige Reka-/Exportpfade wären gezielt zu untersuchen.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für A03: Kein Nachweis einer dynamischen zugänglichen Ergebnis-/Statusmeldung im Behaviourvertrag. Vollständige Reka-/Exportpfade wären gezielt zu untersuchen.",
       "superseded_by": "C441"
     },
@@ -8198,7 +8198,7 @@
         "X01"
       ],
       "finding": "OPS ist als Submodell exportiert, wird aber auf Scenegraph-Properties/Slots aufgelöst. Vier unabhängig beschriebene Domänen mit getrennten Originalformaten nicht nachgewiesen. Paketkompositionsnachweis fehlt.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X01: OPS ist als Submodell exportiert, wird aber auf Scenegraph-Properties/Slots aufgelöst. Vier unabhängig beschriebene Domänen mit getrennten Originalformaten nicht nachgewiesen. Paketkompositionsnachweis fehlt."
     },
     {
@@ -8209,7 +8209,7 @@
         "X02"
       ],
       "finding": "OPS propertyId/part bindings, OPM ownerbezogene Auflösung und renameBehaviourProperties sind explizit. Begrenzte D wie C30: kein Nachweis universeller Identität über Änderungen/Mehrfachinstanzen. OPD/OPV nutzen für Preview Layerpfade, weil Varianten neue Node-IDs erzeugen.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8220,7 +8220,7 @@
         "X03"
       ],
       "finding": "OPR verbindet Behavior mit Properties/Slots desselben Scenegraphs. Das ist reale interne Bindung, jedoch kein Nachweis auf ein separat beschriebenes externes Interface-/Visual-/A11y-Artefakt mit Namensraum und semantischer Zuordnung. Genau diesen externen Bezug als Folgeprüfung spezifizieren.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X03: OPR verbindet Behavior mit Properties/Slots desselben Scenegraphs. Das ist reale interne Bindung, jedoch kein Nachweis auf ein separat beschriebenes externes Interface-/Visual-/A11y-Artefakt mit Namensraum und semantischer Zuordnung. Genau diesen externen Bezug als Folgeprüfung spezifizieren."
     },
     {
@@ -8231,7 +8231,7 @@
         "X04"
       ],
       "finding": "OPK items erlaubt Instanzen mit eigenem Verhalten; OPT create_slot erklärt instanzeigenen Slotinhalt, OPV State pro control.path/chooseItem. Konkrete Komposition ist belegt, Übersetzung in neutrales Komponentenpaket mit Parametern/Ereignisbindungen/Ownership fehlt. Kein pauschales D aus Editorinstanzen.",
-      "interpretation": "A ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "A ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8242,7 +8242,7 @@
         "X05"
       ],
       "finding": "OPS hat kein externes Dependency-/Versionsfeld. OPF zeigt separate libraryId/assetKey/revisionId-Buchhaltung; OPD sagt Behaviour reist mit Assets. Resolver, reproducible binding und Import-/Updatepfade für externes Fachmodell nicht geprüft; Versionsstrings allein reichen nicht für D/R/N.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X05: OPS hat kein externes Dependency-/Versionsfeld. OPF zeigt separate libraryId/assetKey/revisionId-Buchhaltung; OPD sagt Behaviour reist mit Assets. Resolver, reproducible binding und Import-/Updatepfade für externes Fachmodell nicht geprüft; Versionsstrings allein reichen nicht für D/R/N.",
       "superseded_by": "C411"
     },
@@ -8254,7 +8254,7 @@
         "X06"
       ],
       "finding": "OPS ist originales separat exportiertes Valibot-Schema (OPP); OPF zeigt seine tatsächliche Verwendung bei JSON-decode. Dieses Subartefakt kann gegen Originalschema geprüft werden. Keine Behauptung eines Vier-Domänen-Paketvalidators oder erfolgreicher Probe.",
-      "interpretation": "D ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "D ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8265,7 +8265,7 @@
         "X07"
       ],
       "finding": "Im begrenzten Behaviourkern OPS/OPM/OPR werden Propertytypen, bestimmte fehlende Bindungen und ein doppelt für Parts belegter Slot geprüft; keine Referenz-/Instanz-/Widerspruchsprüfung zwischen vier separaten Domänen. Dies ist die Grenze dieser konkreten Prüffunktionen, kein Audit sämtlicher Editortools.",
-      "interpretation": "N ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
+      "interpretation": "N ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund. Frei ergänzbare Felder oder fremde Bibliotheken liefern keine eigene definierte Kernsemantik; fehlende Recherche allein wäre U.",
       "next_check": "Spätere Produkt-/Plattformbindung und gezielte positive/negative Prüffälle getrennt festlegen; keine praktische Funktionsfähigkeit oder vollständige Integration aus Dokumentation ableiten."
     },
     {
@@ -8276,7 +8276,7 @@
         "X08"
       ],
       "finding": "OPM definiert lokalen behaviourOwner; OPF unterscheidet content/format/bookkeeping und OPD nennt ein Modell für alle Authoringsurfaces. Vorrang/Änderungsnachvollziehbarkeit zwischen vier Originalformaten und Integrationsschicht bleibt unbelegt.",
-      "interpretation": "U ausschließlich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
+      "interpretation": "U ausschliesslich für den bezeichneten Beitrag: Behaviour-/Spec-Modell von @open-pencil/scene-graph; nicht der gesamte Editor oder sämtliche Reka-Funktionen, Commit ab2875cc761ee6cff17d389ff1c85fedae50aeab. Die konkrete Rollenbegrenzung steht im Befund.",
       "next_check": "Konkrete Nachweislücke für X08: OPM definiert lokalen behaviourOwner; OPF unterscheidet content/format/bookkeeping und OPD nennt ein Modell für alle Authoringsurfaces. Vorrang/Änderungsnachvollziehbarkeit zwischen vier Originalformaten und Integrationsschicht bleibt unbelegt."
     },
     {
@@ -8286,7 +8286,7 @@
       "rows": [
         "G01"
       ],
-      "finding": "AR12 §§5–6/8 definiert Rollen sowie maschinenlesbare Zustands-/Propertyattribute in Host-Markup, einschließlich Werttypen und Verarbeitung. Das ist A11y-Datensyntax, kein vollständiges JSON-Komponentenformat.",
+      "finding": "AR12 §§5–6/8 definiert Rollen sowie maschinenlesbare Zustands-/Propertyattribute in Host-Markup, einschliesslich Werttypen und Verarbeitung. Das ist A11y-Datensyntax, kein vollständiges JSON-Komponentenformat.",
       "interpretation": "D im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund.",
       "next_check": "Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis."
     },
@@ -8341,7 +8341,7 @@
       "rows": [
         "V01"
       ],
-      "finding": "AR12 definiert semantische Werte, keine Designfarben, Typografie oder typisierten Geometriedimensionen. aria-valuenow bezeichnet Controlwerte, keine visuelle Größensprache.",
+      "finding": "AR12 definiert semantische Werte, keine Designfarben, Typografie oder typisierten Geometriedimensionen. aria-valuenow bezeichnet Controlwerte, keine visuelle Grössensprache.",
       "interpretation": "N im begrenzten Beitrag WAI-ARIA 1.2 REC plus ausdrücklich getrennte Host-/AAM-/Accnamebezüge. Die genaue Rollen-/Nachweisgrenze steht im Befund. Keine pauschale Aussage über andere Host-/Frameworkmodelle oder eine neue Integrationsschicht; fehlender Fund allein wäre U.",
       "next_check": "Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis."
     },
@@ -8751,7 +8751,7 @@
       "rows": [
         "A02"
       ],
-      "finding": "AP1/AP2 liefern referenzierbare Combobox- und Tastatur-/Fokusmuster. Bestehendes D bleibt; keine tatsächliche Konformitäts-/AT-Prüfung durch bloßen Verweis.",
+      "finding": "AP1/AP2 liefern referenzierbare Combobox- und Tastatur-/Fokusmuster. Bestehendes D bleibt; keine tatsächliche Konformitäts-/AT-Prüfung durch blossen Verweis.",
       "interpretation": "D im begrenzten Beitrag informativer Patternguide und ausdrücklich bezeichnete Web-Referenzbeispiele, kein normativer Gesamtcontract. Die genaue Rollen-/Nachweisgrenze steht im Befund.",
       "next_check": "Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis."
     },
@@ -8938,9 +8938,9 @@
       "rows": [
         "V03"
       ],
-      "finding": "Theme-/Dark-Mode-Auswahl liegt außerhalb der geprüften Kernmodule. Frage: Soll ein separat zu prüfendes CSS-Modul für Modusauswahl eingebunden werden, und wie wäre dessen Bindung an Contract-Modi?",
+      "finding": "Theme-/Dark-Mode-Auswahl liegt ausserhalb der geprüften Kernmodule. Frage: Soll ein separat zu prüfendes CSS-Modul für Modusauswahl eingebunden werden, und wie wäre dessen Bindung an Contract-Modi?",
       "interpretation": "U im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.",
-      "next_check": "Theme-/Dark-Mode-Auswahl liegt außerhalb der geprüften Kernmodule. Frage: Soll ein separat zu prüfendes CSS-Modul für Modusauswahl eingebunden werden, und wie wäre dessen Bindung an Contract-Modi?",
+      "next_check": "Theme-/Dark-Mode-Auswahl liegt ausserhalb der geprüften Kernmodule. Frage: Soll ein separat zu prüfendes CSS-Modul für Modusauswahl eingebunden werden, und wie wäre dessen Bindung an Contract-Modi?",
       "superseded_by": "C412"
     },
     {
@@ -8950,7 +8950,7 @@
       "rows": [
         "V04"
       ],
-      "finding": "ANCHOR §§2.1–2.4: anchor-name, anchor-scope, position-anchor und Zielauflösung; §3.1 position-area; §3.2 anchor() mit Seite/Richtung und Länge; VALUES calc() erlaubt zusätzlichen Abstand. §5 anchor-size() liefert relative Größe. D innerhalb CSS-Boxmodell.",
+      "finding": "ANCHOR §§2.1–2.4: anchor-name, anchor-scope, position-anchor und Zielauflösung; §3.1 position-area; §3.2 anchor() mit Seite/Richtung und Länge; VALUES calc() erlaubt zusätzlichen Abstand. §5 anchor-size() liefert relative Grösse. D innerhalb CSS-Boxmodell.",
       "interpretation": "D im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.",
       "next_check": "Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis."
     },
@@ -8961,7 +8961,7 @@
       "rows": [
         "V05"
       ],
-      "finding": "OVERFLOW referenziert max-height nach SIZING §3.1.3; SIZING §§3.2–3.3 definiert nichtnegative Größen und Content-/Border-Boxbezug. Maximalhöhe ist formal; fünf sichtbare Einträge bei variablen Zeilenhöhen folgen daraus nicht. Minimum/Maximum, Padding, Border, Schreibmodus und Prozentbasis gehören zur konkreten Bindung.",
+      "finding": "OVERFLOW referenziert max-height nach SIZING §3.1.3; SIZING §§3.2–3.3 definiert nichtnegative Grössen und Content-/Border-Boxbezug. Maximalhöhe ist formal; fünf sichtbare Einträge bei variablen Zeilenhöhen folgen daraus nicht. Minimum/Maximum, Padding, Border, Schreibmodus und Prozentbasis gehören zur konkreten Bindung.",
       "interpretation": "R im begrenzten Beitrag CSS Anchor Positioning 1 und Overflow 3 mit normativ referenzierten Syntax-/Values-/Sizing-Beiträgen. Die genaue Rollen-/Nachweisgrenze steht im Befund.",
       "next_check": "Spätere Produkt-/Host-/Plattformbindung und Originalprüfwerkzeuge gezielt bestimmen; Spezifikations- oder Beispielcodebefund ist kein ausgeführter Konformitätsnachweis."
     },
@@ -9178,7 +9178,7 @@
         "X04",
         "X08"
       ],
-      "finding": "use-combobox.ts und use-scroll-area.ts erzeugen jeweils useId und einen eigenen useMachine-Kontext. Abschließendes ...props überschreibt vorherige Vorgaben. In use-combobox.ts ersetzt ein übergebenes ids-Objekt die vorher gesetzten Field-label/input-IDs ohne tiefe Zusammenführung in dieser Funktion.",
+      "finding": "use-combobox.ts und use-scroll-area.ts erzeugen jeweils useId und einen eigenen useMachine-Kontext. Abschliessendes ...props überschreibt vorherige Vorgaben. In use-combobox.ts ersetzt ein übergebenes ids-Objekt die vorher gesetzten Field-label/input-IDs ohne tiefe Zusammenführung in dieser Funktion.",
       "interpretation": "E2 im React-Adapter am gepinnten Stand. Getrennte Kontexte und explizite IDs sind vorhanden; keine Garantie stabiler neutraler Contract-Identität oder konfliktfreier Overlay-/ScrollArea-Komposition. Bestehende Matrixbewertungen bleiben unverändert.",
       "next_check": "Explizite IDs für zwei Instanzen, Field-Verknüpfung, Umordnung und Overlay-/Viewport-Bindung bei gesondertem praktischem Auftrag prüfen."
     },
@@ -9255,7 +9255,7 @@
         "V05"
       ],
       "finding": "style-map.ts mapSize liest size.maxWidth und size.maxHeight und übersetzt sie über normalizeDimension in CSS maxWidth/maxHeight. mapContainerStyle und mapElementStyle verwenden mapSize; containers.tsx ruft beide auf und setzt das Ergebnis als style am gerenderten div. normalizeDimension verarbeitet Zahlen, Strings und value/unit-Objekte; Zahlen werden in diesem Pfad als px behandelt.",
-      "interpretation": "Gezielt erweiterter E2-Nachweis des Aufrufpfads, keine Ausführung. U wird zu A gemäß Methodenregel: vorhandener konkreter Mechanismus, zusätzliche Bindung für den neutralen Visualvertrag nötig. Kein D für eine vollständig typisierte normative Layoutsprache; beliebige Strings/any bleiben unzureichend validiert. Fünf variable Zeilen und native Geometrie sind nicht bewiesen.",
+      "interpretation": "Gezielt erweiterter E2-Nachweis des Aufrufpfads, keine Ausführung. U wird zu A gemäss Methodenregel: vorhandener konkreter Mechanismus, zusätzliche Bindung für den neutralen Visualvertrag nötig. Kein D für eine vollständig typisierte normative Layoutsprache; beliebige Strings/any bleiben unzureichend validiert. Fünf variable Zeilen und native Geometrie sind nicht bewiesen.",
       "next_check": "Bei späterem praktischem Auftrag eine gültige/falsche Dimension und variable Zeilenhöhen prüfen; neutrales Visualfeld, Einheit, Containerziel und Adapter ausdrücklich binden."
     },
     {
@@ -9277,7 +9277,7 @@
       "rows": [
         "V04"
       ],
-      "finding": "STR beschreibt section._anchor durch layerName/layerId/variantId/variantName/variantProperties und ordnet es je Abschnitt einem Figma-Quellknoten zu. phaseE.ts extrahiert Layout-/Maßdaten; treeFlat bildet absolute Koordinaten relativ zur Variantenwurzel als bbox ab. Das ist keine belegte dynamische Overlay→Input-Bindung mit Richtung und Abstand.",
+      "finding": "STR beschreibt section._anchor durch layerName/layerId/variantId/variantName/variantProperties und ordnet es je Abschnitt einem Figma-Quellknoten zu. phaseE.ts extrahiert Layout-/Massdaten; treeFlat bildet absolute Koordinaten relativ zur Variantenwurzel als bbox ab. Das ist keine belegte dynamische Overlay→Input-Bindung mit Richtung und Abstand.",
       "interpretation": "Gezielte E1/E2-Folgeprüfung. U bleibt bestehen: Quellknotenidentität, statische Messkoordinaten und relative Laufzeitgeometrie sind unterschiedliche Bedeutungen. Keine Ausführung oder pauschale Aussage über alle anderen uSpec-Pfade.",
       "next_check": "Welcher weitere originale Ausgabe-/Auswertungspfad bindet ein benanntes anderes UI-Ziel mit Richtung/Abstand? Vorhandene _anchor-Felder nicht dafür umdeuten; nötiges zusätzliches Layoutmodell explizit ausweisen."
     },
@@ -9300,8 +9300,8 @@
         "X06"
       ],
       "finding": "lib/schema.ts definiert eine Map von Feldbeschreibungen. schema-table.tsx erwartet Record<string,SchemaProperty> und rendert diese rekursiv als HTML-Tabelle; es validiert dort kein Contractdokument. Spec.ts verlangt license und component.group, die im Katalog nicht entsprechend geführt werden; enum/required aus dem Katalog fehlen im Typ. Das Paket stellt Next-dev/build/start/lint bereit, keinen in dieser Paketdatei ausgewiesenen Contract-Validator.",
-      "interpretation": "Gezielte E2-Prüfung der Originaldateien, kein globaler Beweis fehlender externer Werkzeuge. Ein Feldkatalog ist nicht automatisch ein kanonisches ausführbares JSON Schema. Die frühere Fundstellenangabe §12 Validate wird nicht weitergeführt: Im erneut gelesenen draft-01 heißt §12 Contributing. X06 bleibt U.",
-      "next_check": "Zuerst die maßgebliche übereinstimmende Originaldefinition und einen offiziellen Validator identifizieren. Ein selbst repariertes Schema wäre eine neue Ergänzung mit offengelegter Abweichung, kein unverändertes Originalschema."
+      "interpretation": "Gezielte E2-Prüfung der Originaldateien, kein globaler Beweis fehlender externer Werkzeuge. Ein Feldkatalog ist nicht automatisch ein kanonisches ausführbares JSON Schema. Die frühere Fundstellenangabe §12 Validate wird nicht weitergeführt: Im erneut gelesenen draft-01 heisst §12 Contributing. X06 bleibt U.",
+      "next_check": "Zuerst die massgebliche übereinstimmende Originaldefinition und einen offiziellen Validator identifizieren. Ein selbst repariertes Schema wäre eine neue Ergänzung mit offengelegter Abweichung, kein unverändertes Originalschema."
     },
     {
       "id": "C403",
@@ -9335,7 +9335,7 @@
         "X06"
       ],
       "finding": "Der gelesene StateMachine-Konstruktor nimmt schemas?:unknown entgegen und weist config.schemas unverändert this.schemas zu. toJSON liefert this.definition. restoreSnapshot greift für Child-Actors auf vorhandene oder referenzierte Actorlogik der Maschine zu.",
-      "interpretation": "E2 gezielt im gepinnten Konstruktor-/Serialisierungs-/Restorepfad. Das Schemafeld belegt keine eigene Runtime-Validierung und ein exportierter Gegenstand keine vollständige unabhängige neutrale Logik. Andere Validatoren außerhalb dieser Pfade nicht ausgeschlossen; X06 bleibt U.",
+      "interpretation": "E2 gezielt im gepinnten Konstruktor-/Serialisierungs-/Restorepfad. Das Schemafeld belegt keine eigene Runtime-Validierung und ein exportierter Gegenstand keine vollständige unabhängige neutrale Logik. Andere Validatoren ausserhalb dieser Pfade nicht ausgeschlossen; X06 bleibt U.",
       "next_check": "Offiziellen separaten Artefakt-/Schemaeinstieg mit tatsächlicher Prüfsemantik identifizieren; Snapshot, Definition, Implementierungen und Maschineninput für spätere Versuche getrennt festhalten."
     },
     {
@@ -9411,8 +9411,8 @@
       "rows": [
         "V03"
       ],
-      "finding": "Media Queries Level 5 WD 19.02.2026 §12.5 definiert prefers-color-scheme mit light/dark, einschließlich light bei fehlender aktiver Präferenz, und bedingter Styleauswahl.",
-      "interpretation": "V03 U→D ausschließlich nach ausdrücklich dokumentierter Ergänzung des CSS-Untersuchungsumfangs um dieses Modul. Anchor/Overflow allein liefern diesen Nachweis nicht. Keine Aussage über manuellen Produktoverride, native Themes oder getesteten Browsersupport.",
+      "finding": "Media Queries Level 5 WD 19.02.2026 §12.5 definiert prefers-color-scheme mit light/dark, einschliesslich light bei fehlender aktiver Präferenz, und bedingter Styleauswahl.",
+      "interpretation": "V03 U→D ausschliesslich nach ausdrücklich dokumentierter Ergänzung des CSS-Untersuchungsumfangs um dieses Modul. Anchor/Overflow allein liefern diesen Nachweis nicht. Keine Aussage über manuellen Produktoverride, native Themes oder getesteten Browsersupport.",
       "next_check": "Modul-/Browserstand und eigenes Overrideprofil vor praktischer Nutzung festhalten; Light/Dark ohne aktive Präferenz gesondert prüfen."
     },
     {
@@ -9524,8 +9524,8 @@
       "rows": [
         "I02"
       ],
-      "finding": "TypeScript 5.9.3 löst den tatsächlichen CEM-Eventtyptext CustomEvent<{value:string}> auf und erschließt detail als Payload mit value:string. Ein zweiter Fall erhält optionale verschachtelte Typmetadaten. Ungültiger Typtext, fehlende Typdefinition, Event ohne detail sowie falscher Eventname werden im begrenzten Versuch jeweils unterschieden.",
-      "interpretation": "CEM I02 U→A ausschließlich für ausdrücklich als TypeScript interpretierte Web-Typtexte plus explizite CustomEvent.detail-Projektion. Compiler und Projektion sind zusätzliche Bindung, keine automatische CEM-Originalvalidierung und keine generelle Auflösung aller Typnotationen/externer Pakete. Kein öffentlicher Auslösezeitpunkt muss in diesem Typmodell enthalten sein.",
+      "finding": "TypeScript 5.9.3 löst den tatsächlichen CEM-Eventtyptext CustomEvent<{value:string}> auf und erschliesst detail als Payload mit value:string. Ein zweiter Fall erhält optionale verschachtelte Typmetadaten. Ungültiger Typtext, fehlende Typdefinition, Event ohne detail sowie falscher Eventname werden im begrenzten Versuch jeweils unterschieden.",
+      "interpretation": "CEM I02 U→A ausschliesslich für ausdrücklich als TypeScript interpretierte Web-Typtexte plus explizite CustomEvent.detail-Projektion. Compiler und Projektion sind zusätzliche Bindung, keine automatische CEM-Originalvalidierung und keine generelle Auflösung aller Typnotationen/externer Pakete. Kein öffentlicher Auslösezeitpunkt muss in diesem Typmodell enthalten sein.",
       "next_check": "Weitere konkrete Typnotationen und Paket-/Modulauflösung separat prüfen; Adapterregel für Eventobjekt/Payload und Eingangsprüfung sichtbar halten."
     },
     {
@@ -9538,7 +9538,7 @@
         "A01"
       ],
       "finding": "Fünf synthetische HTML-Fälle wurden im W3C Nu Html Checker geprüft, Ergebnisansicht vnu 26.10.18. Ungültiges aria-expanded und doppelte ID erzeugen Fehler. Fehlendes aria-controls-Ziel und falsche aktive Option aus zweiter Listbox erzeugen gegenüber der bestehenden descendant/aria-owns-Warnung des Kontrollfalls keine weitere Diagnose.",
-      "interpretation": "Reales Webtool mit begrenzter nachgewiesener Reichweite. Kein vollständiger neutraler ARIA-Artefaktvalidator, kein lokaler Versionspin und keine assistive Prüfung. WAI-ARIA X06 bleibt U; bloßes Bestehen einer Hostprüfung belegt keine Instanz-/Referenzkonsistenz.",
+      "interpretation": "Reales Webtool mit begrenzter nachgewiesener Reichweite. Kein vollständiger neutraler ARIA-Artefaktvalidator, kein lokaler Versionspin und keine assistive Prüfung. WAI-ARIA X06 bleibt U; blosses Bestehen einer Hostprüfung belegt keine Instanz-/Referenzkonsistenz.",
       "next_check": "Norm-/Hostprofil und vollständige konkrete Referenzprüfung bestimmen; Kontrollwarnung fachlich gegen ARIA/APG prüfen, nicht durch Zusatzattribute nur unterdrücken.",
       "superseded_by": "C445"
     },
@@ -9549,7 +9549,7 @@
       "rows": [
         "X06"
       ],
-      "finding": "Vier CSS-Proben im Nu-Dienst vnu 26.10.18: Basis-CSS mit Größenbegrenzung, overflow-y und prefers-color-scheme passiert; ungültiger Overflowwert und unbekannte Längeneinheit werden beanstandet. Anchor-scope/name, position-anchor und Anchorfunktionen werden hingegen als unbekannt oder unzulässig abgewiesen.",
+      "finding": "Vier CSS-Proben im Nu-Dienst vnu 26.10.18: Basis-CSS mit Grössenbegrenzung, overflow-y und prefers-color-scheme passiert; ungültiger Overflowwert und unbekannte Längeneinheit werden beanstandet. Anchor-scope/name, position-anchor und Anchorfunktionen werden hingegen als unbekannt oder unzulässig abgewiesen.",
       "interpretation": "CSS X06 bleibt U für einen geeigneten Checker der gespeicherten Modulstände. Der konkrete Dienst unterstützt diese Kombination nicht ausreichend; das ist kein Beweis fehlender CSS- oder Browserfähigkeit. Keine Layoutausführung.",
       "next_check": "Checker mit nachgewiesener Grammatikunterstützung der relevanten Anchor-/Overflow-/Media-Queries-Stände identifizieren; nicht den erfolgreichen Basis-CSS-Fall verallgemeinern.",
       "superseded_by": "C431"
@@ -9632,7 +9632,7 @@
       "rows": [
         "X04"
       ],
-      "finding": "Zwei statische Elementexpansionen werden mit getrennten Parameterwerten kopiert; Änderung der ersten Kopie lässt die zweite unverändert. In einem explorativen Kind/Großkindfall enthält das Bundle dagegen nur Eltern- und Kindmodul, obwohl die Kindabhängigkeit auf die Großkinddatei zeigt. Elementrekursion führt zu RangeError statt strukturierter Resolverdiagnose.",
+      "finding": "Zwei statische Elementexpansionen werden mit getrennten Parameterwerten kopiert; Änderung der ersten Kopie lässt die zweite unverändert. In einem explorativen Kind/Grosskindfall enthält das Bundle dagegen nur Eltern- und Kindmodul, obwohl die Kindabhängigkeit auf die Grosskinddatei zeigt. Elementrekursion führt zu RangeError statt strukturierter Resolverdiagnose.",
       "interpretation": "Positiver statischer Kopiernachweis ist keine Actor-/UI-Kontextisolierung. Referenz- und Invoke-Dateien dieser explorativen Fälle bestehen das Originalschema nicht; Transitivitäts-/Rekursionsbefunde werden daher nicht als garantierte schema-konforme UI-Gegenfälle verallgemeinert. X04 bleibt D im beschriebenen Teilbeitrag, keine vollständige Kompositionsfreigabe.",
       "next_check": "Gültige Originalartefaktkette, vollständigen Modulabschluss und tatsächliche getrennte Laufzeitkontexte gemeinsam nachweisen."
     },
@@ -9655,7 +9655,7 @@
         "V01"
       ],
       "finding": "Zusätzlich zum Behaviour-Beitrag sind originale Scenegraph-Variablen mit COLOR/FLOAT/STRING/BOOLEAN, Einheiten, Aliaswerten und CSS-Ausgabe belegt. Keine vollständige Composite-Typografie oder DTCG-Konformität.",
-      "interpretation": "D ausschließlich für den ausdrücklich erweiterten Visualbeitrag. Keine vollständige Behaviour-/Visual-/Interface-/A11y-Bindung oder ausgeführte Export-/Browserintegration. Loose-Originalschema und Einzel-Featureparser ersetzen keine vollständige semantische Validierung.",
+      "interpretation": "D ausschliesslich für den ausdrücklich erweiterten Visualbeitrag. Keine vollständige Behaviour-/Visual-/Interface-/A11y-Bindung oder ausgeführte Export-/Browserintegration. Loose-Originalschema und Einzel-Featureparser ersetzen keine vollständige semantische Validierung.",
       "next_check": "Konkrete getrennte Originalartefakte und ihre Instanz-/Versionsbindung prüfen; Visualsyntax und gerenderte Wirkung getrennt validieren."
     },
     {
@@ -9666,7 +9666,7 @@
         "V03"
       ],
       "finding": "Zusätzlich untersuchte Variablenauflösung besitzt aktive/Standard- und geerbte Knotenmodi; der originale Tokenexport schreibt Standardwerte und Modusbedingungen per Selektor oder CSS-Bedingung.",
-      "interpretation": "D ausschließlich für den ausdrücklich erweiterten Visualbeitrag. Keine vollständige Behaviour-/Visual-/Interface-/A11y-Bindung oder ausgeführte Export-/Browserintegration. Loose-Originalschema und Einzel-Featureparser ersetzen keine vollständige semantische Validierung.",
+      "interpretation": "D ausschliesslich für den ausdrücklich erweiterten Visualbeitrag. Keine vollständige Behaviour-/Visual-/Interface-/A11y-Bindung oder ausgeführte Export-/Browserintegration. Loose-Originalschema und Einzel-Featureparser ersetzen keine vollständige semantische Validierung.",
       "next_check": "Konkrete getrennte Originalartefakte und ihre Instanz-/Versionsbindung prüfen; Visualsyntax und gerenderte Wirkung getrennt validieren."
     },
     {
@@ -9689,7 +9689,7 @@
         "V03",
         "X06"
       ],
-      "finding": "16 Fälle gegen originalen CSSOM-Tokenvalidator ausgeführt: Werte einschließlich var() und komplexere Bedingungen werden angenommen, zusätzliche Deklarationen/Regeln und unzulässige Namen/At-Rules abgewiesen. Custom-Property-Texte banana/16bananas und unbekannter Mediafeaturewert werden ebenfalls angenommen.",
+      "finding": "16 Fälle gegen originalen CSSOM-Tokenvalidator ausgeführt: Werte einschliesslich var() und komplexere Bedingungen werden angenommen, zusätzliche Deklarationen/Regeln und unzulässige Namen/At-Rules abgewiesen. Custom-Property-Texte banana/16bananas und unbekannter Mediafeaturewert werden ebenfalls angenommen.",
       "interpretation": "Sichere CSS-Ausgabeform ist ein anderer Prüfumfang als fachliche Typ-/Eigenschafts-/Featurekonformität. Keine belegte generelle Unfähigkeit, Werte oder Variablen zu übernehmen; keine behauptete neu gefundene vollständige Alternative. V03 bleibt D für Modusmodell und Exportabbildung.",
       "next_check": "Anwendungsziel und aufgelöste Werte getrennt validieren, bevor ein Tokenstrom als gültiger Farb-/Dimensionswert gilt."
     },
@@ -9767,7 +9767,7 @@
         "X06"
       ],
       "finding": "14 Eingabe- und vier Indexabfragefälle am originalen Panda-read.ts ausgeführt. Root-/Array-/Versionsobergrenzen prüfen ausgewählte Formen. Falsche categories/tokens, null-Zeile, negative/gebrochene Version und fehlende conditions/themes werden angenommen. Doppelte Basiswerte liefern den ersten Treffer, fehlende Referenzziele werden indiziert, null-Zeile scheitert erst beim Indexaufbau.",
-      "interpretation": "18/18 vorher gespeicherte Erwartungen bestätigt; kein vollständiger fachlicher Originalvalidator daraus ableitbar. Reader vertraut laut Originalkommentar erzeugten Zeilen. X06 bleibt U, ohne andere Panda-Prüfungen oder Generatorgarantien auszuschließen.",
+      "interpretation": "18/18 vorher gespeicherte Erwartungen bestätigt; kein vollständiger fachlicher Originalvalidator daraus ableitbar. Reader vertraut laut Originalkommentar erzeugten Zeilen. X06 bleibt U, ohne andere Panda-Prüfungen oder Generatorgarantien auszuschliessen.",
       "next_check": "Gewählten Originalgegenstand und Validatorumfang vollständig binden; externen Export vor Abfragen unabhängig auf Tabellen-, Zeilen-, Versions- und Referenzkonsistenz prüfen, eigene Ergänzungen offen kennzeichnen."
     },
     {
@@ -9828,7 +9828,7 @@
         "X01"
       ],
       "finding": "Vier eigene Prüfarbeitsdateien in unveränderten Originalsprachen CEM/SCXML/CSS/HTML getrennt erstellt und geprüft; zusätzliche externe Forschungstabelle verbindet dieselben Teile zweier Instanzen. Originaldateien erzwingen keine fremden API-/UX-/Visual-/A11y-Fachdefinitionen. CEM/SCXML-Schemata, CSS-Eigenschaftsgrammatiken und ausgewählte HTML-Hostregeln sind ausgeführt.",
-      "interpretation": "X01 bei CEM, SCXML, CSS Layout und WAI-ARIA nun A, ausschließlich für diesen begrenzten Webreferenzfall mit expliziter zusätzlicher Bindung. Keine Produktformatwahl, neutrale A11y-Sprache, Actor-/Hostlaufzeit, native oder vollständige interaktive Gesamtintegration daraus ableiten.",
+      "interpretation": "X01 bei CEM, SCXML, CSS Layout und WAI-ARIA nun A, ausschliesslich für diesen begrenzten Webreferenzfall mit expliziter zusätzlicher Bindung. Keine Produktformatwahl, neutrale A11y-Sprache, Actor-/Hostlaufzeit, native oder vollständige interaktive Gesamtintegration daraus ableiten.",
       "next_check": "Verhalten tatsächlich mit Hostupdates verbinden, Unterkomponenten-/Instanzlebenszyklus und vollständige Typ-/Melde-/Plattformabbildung separat nachweisen."
     },
     {
@@ -9905,7 +9905,7 @@
         "I02",
         "A02"
       ],
-      "finding": "Fünf Browser-Hostfälle erfüllen die gespeicherten Erwartungen: zwei anfangs geschlossene Instanzen, programmgesteuerter Fokus öffnet nur A, synthetisches Escape schließt A, Enter führt native SCXML-Sendung und echtes bubbling DOM-CustomEvent am Forschungscontainer aus, anschließend öffnet Fokus nur B. Originalquelle unverändert, prepare pro Instanz.",
+      "finding": "Fünf Browser-Hostfälle erfüllen die gespeicherten Erwartungen: zwei anfangs geschlossene Instanzen, programmgesteuerter Fokus öffnet nur A, synthetisches Escape schliesst A, Enter führt native SCXML-Sendung und echtes bubbling DOM-CustomEvent am Forschungscontainer aus, anschliessend öffnet Fokus nur B. Originalquelle unverändert, prepare pro Instanz.",
       "interpretation": "Interaktive Forschungs-Hostfixture mit explizitem Zusatzcode, keine CEM-Produktionskomponente. Programmatischer DOM-Fokus und synthetische KeyboardEvents sind keine physische Tastatur-/AT-Prüfung. Vollständige Navigation, Async-Daten und dynamische Ansagen fehlen.",
       "next_check": "Navigation, Scroll-to-active, Ansagen und native Zielprofile separat nachweisen."
     },
@@ -9918,7 +9918,7 @@
       ],
       "finding": "Eigenständige DTCG-dimension-/Alias-Tokendatei und separate CSS-Layoutdatei mit bytegleichen CEM-, SCXML- und HTML/ARIA-Artefakten verbunden. Zusätzliches Profil benennt Quelle, Hash, Instanzen A/B, Tokenpfad, Selektor, Eigenschaft und Visualzuständigkeit. Zwölf vorher definierte Übersetzungs-/Bindungsbedingungen erfüllen ihre Erwartungen.",
       "interpretation": "X01 nun A im begrenzten Webreferenzfall: zusätzlicher Adapter erforderlich. Eigener Übersetzer prüft nur explizit typisierte dimension-/Curly-Alias-Teilmenge, kein Original- oder vollständiger DTCG-Validator. Keine fremde Domäne in Tokens definiert.",
-      "next_check": "Weitere Tokenarten, Resolverkontexte, Schriftgrößenänderungen und Versions-/Ownershipkonflikte separat prüfen."
+      "next_check": "Weitere Tokenarten, Resolverkontexte, Schriftgrössenänderungen und Versions-/Ownershipkonflikte separat prüfen."
     },
     {
       "id": "C455",
@@ -9929,7 +9929,7 @@
         "V05",
         "V06"
       ],
-      "finding": "Vier Browserbedingungen: Instanzen A/B jeweils mit px- und rem-Tokens bei 16px Rootschriftgröße. Alle ergeben 8px Abstand, 160px Popuphöhe, sieben 32px-Zeilen, 224px Scrollinhalt und Overflow auto.",
+      "finding": "Vier Browserbedingungen: Instanzen A/B jeweils mit px- und rem-Tokens bei 16px Rootschriftgrösse. Alle ergeben 8px Abstand, 160px Popuphöhe, sieben 32px-Zeilen, 224px Scrollinhalt und Overflow auto.",
       "interpretation": "Zusätzliche Übersetzung in CSS-Variablen und tatsächliches Browserlayout nachgewiesen. Keine generelle Gleichheit von rem und px, keine DTCG-Scrollsemantik, keine Navigation oder Assistenzprüfung.",
       "next_check": "Rootschriftänderung und zusätzliche Token-/Layoutvarianten mit expliziten Erwartungen prüfen."
     },
@@ -9964,7 +9964,7 @@
         "X04"
       ],
       "finding": "Zusätzlicher eigener Invokeradapter führt dieselbe kontrollierte Childdatei je Instanz über originale documentStringToModel/prepare/Statechart-APIs mit frischem Ausführungskontext aus. Alle sechs separat gespeicherten Adaptererwartungen erfüllt: owner/offset und Parentereignisse getrennt, Close/Reopen/Cancel wie erwartet.",
-      "interpretation": "Begrenzter tatsächlicher Adapterpfad für unabhängige Kindkontexte. Kein Original-Defaultinvoker-Erfolg, keine gewählte Produktlösung oder generische Runtimeabsicherung. Unterstützt ausschließlich die kontrollierte lokale Datei; Initialisierungsrennen, Fehlerpropagation, weitere Invokertypen und tiefere Hierarchien ungeprüft. Die drei Originalverletzungen bleiben erhalten.",
+      "interpretation": "Begrenzter tatsächlicher Adapterpfad für unabhängige Kindkontexte. Kein Original-Defaultinvoker-Erfolg, keine gewählte Produktlösung oder generische Runtimeabsicherung. Unterstützt ausschliesslich die kontrollierte lokale Datei; Initialisierungsrennen, Fehlerpropagation, weitere Invokertypen und tiefere Hierarchien ungeprüft. Die drei Originalverletzungen bleiben erhalten.",
       "next_check": "Cancel-während-Initialisierung, Fehlerpfade und vollständigen UI-Scrollvertrag gesondert prüfen."
     },
     {
@@ -10062,7 +10062,7 @@
       ],
       "finding": "Original @zag-js/core 1.46.0 mit tatsächlichen utils/dom-query 1.46.0 in getrennten development-/production-Prozessen geprüft. Doppelte Zustands-IDs und ungültige Compound-initial-Kinder werden nur in development abgewiesen; fehlendes Compound-initial in beiden Modi. createMachine akzeptiert auch ein Objekt ohne obligatorische Root-initialState-Funktion und gibt das Objekt zurück. Zehn Voraberwartungen erfüllt.",
       "interpretation": "Begrenzte interne Aufbauprüfung, kein vollständiger Shape-/neutraler Originalartefaktvalidator. X06 bleibt U für die ausdrücklich breitere Zag-Toolkit-Spalte; Corebefund nicht ohne Nachweis auf alle Komponenten/Hilfsartefakte oder Arks andere ausgelieferte Coreversion übertragen. Kein Service/UI-Lauf.",
-      "next_check": "Konkretes neutrales Originalartefakt-/Schema-/Validatorpaar im definierten Toolkitumfang oder eine abschließend belegte Modellgrenze dieses gesamten Gegenstands identifizieren."
+      "next_check": "Konkretes neutrales Originalartefakt-/Schema-/Validatorpaar im definierten Toolkitumfang oder eine abschliessend belegte Modellgrenze dieses gesamten Gegenstands identifizieren."
     },
     {
       "id": "C467",
@@ -10096,7 +10096,7 @@
       ],
       "finding": "Original-Panda-Exporttyp DesignSystemSpec und unveränderter JSON-Reader am Commit 86f78a… mit neun identischen kontrollierten Eingaben gegengeprüft. Zusätzliche Literal-/Originaltypzuweisung erkennt categories-Zahl, tokens-Boolean, null-Wertzeile, fehlende conditions/themes und numerisches value; derselbe Originalreader akzeptiert diese Fälle. Alle Voraberwartungen erfüllt.",
       "interpretation": "Reale Originalartefakt-Shapeinformation ist vorhanden; Leser prüft sie nicht vollständig. Zusätzliche statische Typanbindung ist kein originales neutrales Runtime-JSON-Schema/Validatorpaar. X06 bleibt U im definierten Panda-Umfang; keine negative Aussage über alle Pakete/Plugins aus diesem begrenzten Befund.",
-      "next_check": "Konkrete Originalschema-/Validatoridentität mit tatsächlichem Aufruf und Regelumfang oder abschließend belegte Modellgrenze des gesamten Kandidatengegenstands identifizieren."
+      "next_check": "Konkrete Originalschema-/Validatoridentität mit tatsächlichem Aufruf und Regelumfang oder abschliessend belegte Modellgrenze des gesamten Kandidatengegenstands identifizieren."
     },
     {
       "id": "C470",
@@ -10130,7 +10130,7 @@
       ],
       "finding": "Die acht bisherigen X06-U-Fragen sind in einem endlichen offiziellen Umfangsregister nach Originalpin, öffentlicher Werkzeugoberfläche, bereits geprüftem Beitrag und konkretem nächsten Originalzugriff abgegrenzt. Zukünftige Releases oder beliebige externe Plugins sind keine Abschlussvoraussetzung. Nach WAI-ARIA-Modellgrenze sieben X06-U-Fragen.",
       "interpretation": "Kein Kriteriumswechsel und keine Suche über einen unendlichen hypothetischen Markt. Für einen begrenzten Originalschema-Beitrag wird kein vollständiger semantischer Allvalidator verlangt; SDK-/Transport-/Dokumentationsschemas bleiben eigene Gegenstände. Keine neue Produktentscheidung des Nutzers nötig, um die dokumentierten Originalzugriffe auszuführen.",
-      "next_check": "Die benannten offiziellen Restzugriffe gezielt abschließen, ohne erneute illustrative Tests desselben bereits geklärten Teilpfads."
+      "next_check": "Die benannten offiziellen Restzugriffe gezielt abschliessen, ohne erneute illustrative Tests desselben bereits geklärten Teilpfads."
     },
     {
       "id": "C473",
@@ -10230,7 +10230,7 @@
       "rows": [
         "X06"
       ],
-      "finding": "Originalanleitung, Introduction, öffentliche Core-/Combobox-/ScrollArea-Exports, Machine-/MachineSchema-Typen und Factory am cafda74-Pin abschließend gelesen. Originalmodell verlangt initialState-Funktion und weitere Service-/Hostfunktionen; Autorenpfad erzeugt und konsumiert ein SDK-Maschinenprogramm. Introduction grenzt SCXML ausdrücklich ab.",
+      "finding": "Originalanleitung, Introduction, öffentliche Core-/Combobox-/ScrollArea-Exports, Machine-/MachineSchema-Typen und Factory am cafda74-Pin abschliessend gelesen. Originalmodell verlangt initialState-Funktion und weitere Service-/Hostfunktionen; Autorenpfad erzeugt und konsumiert ein SDK-Maschinenprogramm. Introduction grenzt SCXML ausdrücklich ab.",
       "interpretation": "N im endlichen benannten offiziellen Modellumfang für den eigenen unabhängigen neutralen Contractdatenschema-Beitrag. SDK-Typen, echte interne Prüfungen und gespeicherte Development-/Production-Gegenfälle bleiben positive Beiträge. Kein globaler Ausschluss späterer anderer Werkzeuge.",
       "next_check": "Neue Original-Datendateisprache nur als neuen Gegenstand prüfen; vorhandene SDK-/Host-/Referenzfragen unabhängig bearbeiten."
     },
@@ -10252,7 +10252,7 @@
       "rows": [
         "X06"
       ],
-      "finding": "Mitgelieferte Spec/Config und öffentliche Linter-/Outputdefinitionen von @google/design.md0.4.0 abschließend abgeglichen. Originales ConfigSchema mit sechs vorab gesetzten Gegenfällen ausgeführt: Originalconfig angenommen, drei Shapeverletzungen und Dokumentdaten abgewiesen, erfundener Typname als String angenommen.",
+      "finding": "Mitgelieferte Spec/Config und öffentliche Linter-/Outputdefinitionen von @google/design.md0.4.0 abschliessend abgeglichen. Originales ConfigSchema mit sechs vorab gesetzten Gegenfällen ausgeführt: Originalconfig angenommen, drei Shapeverletzungen und Dokumentdaten abgewiesen, erfundener Typname als String angenommen.",
       "interpretation": "Echtes Zod-Schema für Redaktions-/Spezifikationskonfiguration belegt, kein Inhaltsschema für eingereichte DESIGN.md-Dateien. Keine Forderung eines vollständigen semantischen Allzweckvalidators. X06 U bleibt wegen fehlender eindeutiger Originalbindung zwischen Dokumentdatenmodell und Schemaentscheidung; vorhandene Prosa und selektive Lintregeln bleiben positive Beiträge.",
       "next_check": "Externe Originalklärung des benannten Dokument-Schemaeinstiegs und seiner Ergebnisbedeutung, Roottypen und Optionalität. Eigene ausführbare Prosaabbildung nur als zusätzliches Profil; keine Autorenanfrage versandt."
     },
@@ -10380,8 +10380,8 @@
       "rows": [
         "A01"
       ],
-      "finding": "Öffentliche Original-Szene/Komponenteninstanziierung, Projektion, Behaviour-/Roleklassifizierung und ursprüngliche Vue-Statefactory bis Reka SwitchRoot/Host ausgeführt. TEXT-Inhalt erzeugt den tatsächlichen benannten Switch; bloßer Knotenname tut dies nicht. Passende Original-Namensregel und Browser-Accessibility-Snapshots bestätigen die benannten Instanzen und zeigen die negativen Namensfälle.",
-      "interpretation": "OpenPencil A01 R ausschließlich für diesen gebundenen Switch-Webpreview-/Namensinhaltbeitrag. Vorhandene ReKa/HTML/ARIA-Referenzsemantik, keine neue neutrale Anatomie-/Accessibility-Dateisprache und keine Behauptung beliebiger externer Widgetbeziehungen. Graphtext/Name bleibt gekoppelt; X01/X08 nicht dadurch erledigt.",
+      "finding": "Öffentliche Original-Szene/Komponenteninstanziierung, Projektion, Behaviour-/Roleklassifizierung und ursprüngliche Vue-Statefactory bis Reka SwitchRoot/Host ausgeführt. TEXT-Inhalt erzeugt den tatsächlichen benannten Switch; blosser Knotenname tut dies nicht. Passende Original-Namensregel und Browser-Accessibility-Snapshots bestätigen die benannten Instanzen und zeigen die negativen Namensfälle.",
+      "interpretation": "OpenPencil A01 R ausschliesslich für diesen gebundenen Switch-Webpreview-/Namensinhaltbeitrag. Vorhandene ReKa/HTML/ARIA-Referenzsemantik, keine neue neutrale Anatomie-/Accessibility-Dateisprache und keine Behauptung beliebiger externer Widgetbeziehungen. Graphtext/Name bleibt gekoppelt; X01/X08 nicht dadurch erledigt.",
       "next_check": "Andere Kinds, externe Label-/Fehler-/Controlziele, unabhängige Namensownership und native/AT-Zielabnahmen getrennt behandeln."
     },
     {
@@ -10404,7 +10404,7 @@
       ],
       "finding": "Erste drei axe-Bedingungen mit aria-toggle-field-name auf nativen Buttons ergeben keine anwendbaren Prüfknoten; zwei Diagnoseerwartungen widerlegt, alle Ausgangsergebnisse erhalten. Originalmatcher überspringt native Benennungsmethoden. Danach passende button-name-Regel: drei Radio- und vier Switchbedingungen mit tatsächlichen Pass-/Violationknoten erfüllen sämtliche gezielten Erwartungen.",
       "interpretation": "Leeres Originalcheckergebnis ist kein positiver Namensnachweis. Unterschiedliche Regelsubjekte/Anwendbarkeit und vollständige Conformance getrennt; ursprüngliche Fehlwahl nicht verborgen und nicht als Produktfehler erklärt.",
-      "next_check": "Vor Namens-/Semantikabnahme immer tatsächliche Regelanwendbarkeit und Zielknoten prüfen; nicht aus null Violations auf universelle Konformität schließen."
+      "next_check": "Vor Namens-/Semantikabnahme immer tatsächliche Regelanwendbarkeit und Zielknoten prüfen; nicht aus null Violations auf universelle Konformität schliessen."
     },
     {
       "id": "C497",
@@ -10438,7 +10438,7 @@
       ],
       "finding": "Drei vollständige Original-Koordinatenexporte im Browser gemessen: Input20/Popup-y28 ergibt Abstand8; Inputwachstum auf40 bei unverändertem Popup-y28 ergibt Abstand-12 und verletzt die gewünschte8px-Ankerrelation. Bewegung des gemeinsamen Parents50/50 bewegt beide gemeinsam und erhält Abstand8.",
       "interpretation": "OpenPencil V04 bleibt U. Definierter Parentkoordinatenbezug ist positiv belegt, aber keine Relation zur Unterkante des anderen Inputs. Gewünschte Beziehung im Gegenfall ausdrücklich false; erfüllte Beobachtungserwartungen nicht zu erfüllten Produktanforderungen umgedeutet. Kein pauschaler Editor-/Constraint-Fehlerbefund.",
-      "next_check": "Benannten Originalziel-/Abstandspfad oder ausdrücklich zusätzlichen Ankerbinder mit Größen-/Änderungssemantik nachweisen; statische Koordinaten allein nicht erneut als Ankerprobe zählen."
+      "next_check": "Benannten Originalziel-/Abstandspfad oder ausdrücklich zusätzlichen Ankerbinder mit Grössen-/Änderungssemantik nachweisen; statische Koordinaten allein nicht erneut als Ankerprobe zählen."
     },
     {
       "id": "C500",
@@ -10448,7 +10448,7 @@
         "V04",
         "V06"
       ],
-      "finding": "Sechs vollständige Originalexporte plus sechs native Messbedingungen mit allen Beobachtungserwartungen erfüllt; ursprüngliche Größen-/Clippingfelder unverändert genutzt, keine neue Layoutbibliothek oder Policygrammatik eingeführt. Dynamische Input-Ankerakzeptanz bleibt im Wachstumsfall unerfüllt.",
+      "finding": "Sechs vollständige Originalexporte plus sechs native Messbedingungen mit allen Beobachtungserwartungen erfüllt; ursprüngliche Grössen-/Clippingfelder unverändert genutzt, keine neue Layoutbibliothek oder Policygrammatik eingeführt. Dynamische Input-Ankerakzeptanz bleibt im Wachstumsfall unerfüllt.",
       "interpretation": "Neuer positiver Beleg der eigenen festen Overflow-Outputpolitik hebt den früheren clip/auto/scroll-Importverlust nicht auf. Vollständiger öffentlicher Export, isolierte frühere Fragmente, fester Webhost und nicht ausgeführter Editor-/Resize-/AT-Pfad bleiben getrennt. Kriterien/Methodik unverändert.",
       "next_check": "UXSpec/uSpec und alternative Originalmodelle nur mit ihren eigenen tatsächlichen Einstiegen prüfen; kein pauschaler Fähigkeitsübertrag aus diesem Originaladapter."
     },
@@ -10464,8 +10464,8 @@
       "rows": [
         "X01"
       ],
-      "finding": "Eigenständige XState-5.33.3-SDK-Konfiguration mit bytegleichen CEM-/CSS-/HTML-Artefakten und explizitem zusätzlichem Quellen-/Instanzbinder ausgeführt. Acht Bedingungen erfüllt, einschließlich unabhängiger Actors, echter CSS-Revision und drei falsch gebundener Profile.",
-      "interpretation": "X01 A ausschließlich für diesen SDK-Webbeitrag; keine neutralen Originalartefaktschemata, vollständige Autocomplete-Semantik, Hostupdates oder AT daraus ableiten. Fachliche Beschreibungen bleiben getrennt; Zusatzbinder ist eigener Forschungscode.",
+      "finding": "Eigenständige XState-5.33.3-SDK-Konfiguration mit bytegleichen CEM-/CSS-/HTML-Artefakten und explizitem zusätzlichem Quellen-/Instanzbinder ausgeführt. Acht Bedingungen erfüllt, einschliesslich unabhängiger Actors, echter CSS-Revision und drei falsch gebundener Profile.",
+      "interpretation": "X01 A ausschliesslich für diesen SDK-Webbeitrag; keine neutralen Originalartefaktschemata, vollständige Autocomplete-Semantik, Hostupdates oder AT daraus ableiten. Fachliche Beschreibungen bleiben getrennt; Zusatzbinder ist eigener Forschungscode.",
       "next_check": "Übrige Kandidaten anhand ihrer tatsächlichen Pflichtcontainer prüfen; Emissions-/Typ-/Hostbindungen separat, X06 N/C464 unverändert."
     },
     {
@@ -10581,7 +10581,7 @@
       "rows": [
         "X03"
       ],
-      "finding": "Separater Original-DTCG-duration-Wert über ausdrücklich zusätzliche ms-Projektion an tatsächlichen ursprünglichen UXSpec-Import/Compiler und ursprüngliche extractMs-Funktion gebunden:1s und1000ms ergeben1000. Zehn Referenz- und zwei Originalschemabedingungen erfüllt. Bloß umhüllter unveränderter Originalwert wird akzeptiert, aber als1 statt1000 interpretiert; Gegenbefund erhalten.",
+      "finding": "Separater Original-DTCG-duration-Wert über ausdrücklich zusätzliche ms-Projektion an tatsächlichen ursprünglichen UXSpec-Import/Compiler und ursprüngliche extractMs-Funktion gebunden:1s und1000ms ergeben1000. Zehn Referenz- und zwei Originalschemabedingungen erfüllt. Bloss umhüllter unveränderter Originalwert wird akzeptiert, aber als1 statt1000 interpretiert; Gegenbefund erhalten.",
       "interpretation": "UXSpec X03 A nur für gewählte Forschungsbeziehung Visualzeit→UX-Timereingang. Keine native DTCG-Direktimportfähigkeit oder Produktkopplung; erzeugte schemafähige Bibliothek enthält explizites nicht ausgeführtes Maschinenpflichtgerüst. Kein Hook-/Timeout-/Interpreter-/UI-/AT-Nachweis oder X01-Übertragung.",
       "next_check": "Andere unabhängige Referenz-/X01-/Ownershipfragen; diesen Zeitpfad nur mit neuer konkreter Originalbindung erneut bearbeiten."
     },
@@ -10870,7 +10870,7 @@
       "rows": [
         "A02"
       ],
-      "finding": "Gepinnter APG-Combobox-Listboxbezug bestimmt zusätzlichen endlichen Keypfad: Escape schließt bei erhaltenem Inputfokus, Enter übernimmt aktive Option und schließt. Abweichende abgeleitete Keyroute wird abgewiesen.",
+      "finding": "Gepinnter APG-Combobox-Listboxbezug bestimmt zusätzlichen endlichen Keypfad: Escape schliesst bei erhaltenem Inputfokus, Enter übernimmt aktive Option und schliesst. Abweichende abgeleitete Keyroute wird abgewiesen.",
       "interpretation": "ArrowDown-/Instanzfolge separat P91; nicht doppelt gezählt. Keine vollständige APG-Optionaltasten-/Popup-/Plattform-/AT-Konformität.",
       "next_check": "Nur diesen ausgeführten zusätzlichen Forschungsbinder bewerten; stärkere Gesamtintegration/andere Kandidaten/Plattformen bleiben separat."
     },
@@ -11275,7 +11275,7 @@
           "coverage": "U",
           "review_kind": "documentary",
           "dependency": "Q",
-          "assessment": "Type.references adressiert Typdeklarationen; der fehlende Schritt ist die öffentliche Eventobjekt→Payload-Projektion. Das offizielle Event-Beispiel schließt diese Lücke nicht.",
+          "assessment": "Type.references adressiert Typdeklarationen; der fehlende Schritt ist die öffentliche Eventobjekt→Payload-Projektion. Das offizielle Event-Beispiel schliesst diese Lücke nicht.",
           "next_evidence": "Öffentliche Signaturquelle und Eventobjekt/Payloadprojektion festlegen; komplexe Typen und falsche Ziele gesondert prüfen.",
           "additional_claim": "C413"
         },

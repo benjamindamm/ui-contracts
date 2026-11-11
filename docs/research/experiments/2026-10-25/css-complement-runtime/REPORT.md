@@ -1,6 +1,6 @@
 # CSS, Interface, Behavior und Accessibility: zehn getrennte Ergänzungsnachweise
 
-Stand:25. Oktober2026. **Neun CSS-Zellen und WAI-ARIA V06 jeweils A/C526–C535**, ausschließlich mit den hier ausgeführten zusätzlichen Bindungen. **27 unterschiedliche Bedingungen in10 Gruppen erfüllt.** Insgesamt603 Bedingungen/95 Gruppen;10 offene Nachweise verbleiben (6 Integration,4 Layout). Die vollständige Integration bleibt unbelegt.
+Stand:25. Oktober2026. **Neun CSS-Zellen und WAI-ARIA V06 jeweils A/C526–C535**, ausschliesslich mit den hier ausgeführten zusätzlichen Bindungen. **27 unterschiedliche Bedingungen in10 Gruppen erfüllt.** Insgesamt603 Bedingungen/95 Gruppen;10 offene Nachweise verbleiben (6 Integration,4 Layout). Die vollständige Integration bleibt unbelegt.
 
 ## Endlicher Gegenstand und führende Quellen
 
@@ -37,11 +37,11 @@ CEM und SCXML der exakten neuen Fixtures bestehen ihre unveränderten Originalsc
 | CSS B03 | QUERY-Daten werden durch tatsächliches ursprüngliches assign im Kontext gespeichert und mit getrenntem ausgewähltem value per ursprünglichem send ausgegeben. | Falscher query-Inputtyp wird zusätzlich abgewiesen; query=42-Bypass im I02-Gegenfall bleibt als Originalgrenze sichtbar, nicht erneut gezählt. | A/C530, P90:2 |
 | CSS B04 | Synthetische native ArrowDown-Events am Input passieren den zusätzlichen Keyrouter, öffnen tatsächliche Originalmaschine und CSS und bewegen aktive Option bei erhaltenem Inputfokus. Eigener B-Input öffnet nur B. | Router ist ausdrücklich eigene Verbindung, kein CSS- oder SCXML-eigener Keyboardstandard. Kein vertrauenswürdiger physischer Tastendruck. | A/C531, P91:2 |
 | CSS A01 | Layoutpopup → richtiger kontrollierter HTML-listbox-Kontext; führende Namen/Rollen/Beziehungen werden geprüft. Tatsächlicher Browser-AX-Baum enthält Search A/Search B und Results A als passende Rollen. | Falscher führender Labeltext und fremdes aria-controls-Ziel abgewiesen. Kein automatischer Nachweis beliebiger Accname-Ausdrücke oder aller semantischen Beziehungen. | A/C532, P92:4 |
-| CSS A02 | Eigener endlicher Combobox-Listbox-Keybezug nach gepinntem APG: Escape schließt und behält DOM-Fokus am Input; Enter übernimmt aktive zweite Option und schließt; aktive Option via aria-activedescendant. | Abweichende abgeleitete Enterroute wird gegenüber dem führenden Profil abgewiesen. Nicht alle optionalen APG-Tasten, Popuptypen oder AT-Pfade geprüft. | A/C533, P93:3 |
+| CSS A02 | Eigener endlicher Combobox-Listbox-Keybezug nach gepinntem APG: Escape schliesst und behält DOM-Fokus am Input; Enter übernimmt aktive zweite Option und schliesst; aktive Option via aria-activedescendant. | Abweichende abgeleitete Enterroute wird gegenüber dem führenden Profil abgewiesen. Nicht alle optionalen APG-Tasten, Popuptypen oder AT-Pfade geprüft. | A/C533, P93:3 |
 | CSS A03 | Tatsächliches bestätigtes öffentliches Event aktualisiert getrennte status/polite/atomic-Region mit Präfix aus der A11yquelle; B bleibt leer. Native AX-Region enthält Live-/Atomic-Eigenschaften und Text. | Reine CSS-Maximalhöhenänderung erzeugt keine Meldung; abweichendes aria-live abgewiesen. Native AX-Daten sind keine bestätigte Sprachausgabe. | A/C534, P94:4 |
-| WAI-ARIA V06 | Der tatsächliche aria-controls-listbox-Kontext ist an genau seinen äußeren CSS-Scrollport gebunden;7×32px in160px, aktive7. Option sichtbar nach scrollTop64. Native AX-Relation adressiert dieselbe Option/Liste. | Fremde Liste wird abgewiesen. Bewusster clip-Override bleibt gültiges CSS, macht in diesem verlangten Sichtbarkeitsprofil die aktive Option unsichtbar: scrollTop0, erwarteter Bindungskonflikt. | A/C535, P95:3 |
+| WAI-ARIA V06 | Der tatsächliche aria-controls-listbox-Kontext ist an genau seinen äusseren CSS-Scrollport gebunden;7×32px in160px, aktive7. Option sichtbar nach scrollTop64. Native AX-Relation adressiert dieselbe Option/Liste. | Fremde Liste wird abgewiesen. Bewusster clip-Override bleibt gültiges CSS, macht in diesem verlangten Sichtbarkeitsprofil die aktive Option unsichtbar: scrollTop0, erwarteter Bindungskonflikt. | A/C535, P95:3 |
 
-Dies sind zehn einzeln begründete Adapterbeiträge, keine pauschale Übernahme der Fähigkeiten von CEM/SCXML/HTML in CSS oder einer CSS-Overflowpolitik in ARIA. CSS führt weiterhin ausschließlich Layout/Styles. ARIA definiert weiterhin zugängliche Semantik. Die zusätzlichen Laufzeitbezüge sind gerade der dokumentierte A-Bedarf.
+Dies sind zehn einzeln begründete Adapterbeiträge, keine pauschale Übernahme der Fähigkeiten von CEM/SCXML/HTML in CSS oder einer CSS-Overflowpolitik in ARIA. CSS führt weiterhin ausschliesslich Layout/Styles. ARIA definiert weiterhin zugängliche Semantik. Die zusätzlichen Laufzeitbezüge sind gerade der dokumentierte A-Bedarf.
 
 ## Originalfähigkeiten und Zusatzprüfer auseinanderhalten
 
@@ -59,7 +59,7 @@ Die kompakte BrowserOS-AX-Snapshotdarstellung zeigte status ohne seinen statisch
 
 ## Ergebnis und genau verbleibender Rest
 
-**10 U:6 Integration und4 ursprüngliche Layoutfragen.** Die zehn fachfremden Ergänzungszellen sind ausschließlich im hier begrenzten Adapterumfang geschlossen. Offen bleiben UXSpec/uSpec V04/V06, uSpec X01/X03/X08, OpenPencil X01 sowie Google/OpenUI X06. Acht davon erlauben noch konkret benannte zusätzliche Bindungen beziehungsweise neue entscheidende Originalpfade; zwei sind ausdrückliche Originalklärungen. Dieser Block beweist weder das neutrale gemeinsame Contractpaket noch sämtliche Kandidaten-/Plattformkombinationen.
+**10 U:6 Integration und4 ursprüngliche Layoutfragen.** Die zehn fachfremden Ergänzungszellen sind ausschliesslich im hier begrenzten Adapterumfang geschlossen. Offen bleiben UXSpec/uSpec V04/V06, uSpec X01/X03/X08, OpenPencil X01 sowie Google/OpenUI X06. Acht davon erlauben noch konkret benannte zusätzliche Bindungen beziehungsweise neue entscheidende Originalpfade; zwei sind ausdrückliche Originalklärungen. Dieser Block beweist weder das neutrale gemeinsame Contractpaket noch sämtliche Kandidaten-/Plattformkombinationen.
 
 ## Reproduktion
 

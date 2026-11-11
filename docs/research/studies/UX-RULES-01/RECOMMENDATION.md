@@ -28,4 +28,4 @@ Offene Vorbehalte: vollständiger Trace der tatsächlich zutreffenden Regel-/Tab
 
 ## Nachfolgender Pilotstand
 
-Auf Nutzerauftrag wurde [AC-UX-01](pilots/AC-UX-01/README.md) separat ausgeführt. Die drei Regeln haben nun komponentengebundene Faktenbedingungen und einen echten nativen Tabellenzeilentrace mit Quellenzuordnung; 43/43 Checks erfüllt. Das schließt den zuvor offenen Tracepunkt für diesen begrenzten Kandidaten, nicht für alle künftigen Regeln. Bibliotheksintegration, produktive Übernahme und unabhängige Agenten-Leseprobe sind nicht erfolgt.
+Auf Nutzerauftrag wurde [AC-UX-01](pilots/AC-UX-01/README.md) separat ausgeführt. Die drei Regeln haben nun komponentengebundene Faktenbedingungen und einen echten nativen Tabellenzeilentrace mit Quellenzuordnung; 43/43 Checks erfüllt. Das schliesst den zuvor offenen Tracepunkt für diesen begrenzten Kandidaten, nicht für alle künftigen Regeln. Bibliotheksintegration, produktive Übernahme und unabhängige Agenten-Leseprobe sind nicht erfolgt.

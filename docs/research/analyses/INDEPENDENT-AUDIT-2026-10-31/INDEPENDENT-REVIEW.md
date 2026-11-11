@@ -31,7 +31,7 @@ Gezielt gelesen: AGENTS.md, docs/README.md, README.md, docs/ARCHITECTURE.md, doc
 ## Tatsächlich ausgeführte Prüfungen
 
 1. Gitstatus nur lesend erfasst; Dateiinventare und relevante Dateien mit rg/Lesebefehlen untersucht.
-2. Eigenständige lokale Markdown-Dateizielprüfung über getrackte Markdown-Dateien außerhalb `examples/`, historischer Analyse-/Studien-/Experimentordner und `docs/libraries/frozen/`: 0 fehlende Dateiziele. Gesamtinventar des Suchbefehls 285 Markdown-Dateien; dies ist keine Behauptung, alle 285 Inhalte gelesen zu haben. Anker, externe Links und bloße Textpfade wurden nicht geprüft.
+2. Eigenständige lokale Markdown-Dateizielprüfung über getrackte Markdown-Dateien ausserhalb `examples/`, historischer Analyse-/Studien-/Experimentordner und `docs/libraries/frozen/`: 0 fehlende Dateiziele. Gesamtinventar des Suchbefehls 285 Markdown-Dateien; dies ist keine Behauptung, alle 285 Inhalte gelesen zu haben. Anker, externe Links und blosse Textpfade wurden nicht geprüft.
 3. `python3 tools/research/navigation.py --output .runtime/independent-audit/navigation.json`: `PASS_LIMITED`, keine Fehler der aktiven Einstiegsrouten. Tool weist seinen engen Umfang selbst aus.
 4. Direkter Alias-Gegenfall verworfen; verschachtelter Gegenfall akzeptiert. Vollständiger Bibliothekschecker auf isolierter Kopie: `PASS_LIMITED`, 6 Komponenten. Nur `.runtime/independent-audit/` und die neuen Berichtsdateien beschrieben.
 

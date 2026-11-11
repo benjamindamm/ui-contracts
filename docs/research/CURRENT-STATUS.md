@@ -33,7 +33,7 @@ Stand: 25. Oktober 2026. Mit study.json und dem offenen Register abgeglichen. Hi
 
 [APG-Originalklasse und tatsächliche Kontexte](experiments/2026-10-25/apg-original-reference/REPORT.md): X03 A/C513 für zusätzliches CEM-Klassenfeld-/Native-Typ-/Instanzbinding, X04 A/C514 für dieselbe echte Definition mit zwei tatsächlichen Originalinstanzen und eigenen Parametern/Daten. Acht native und zwei Originalschemabedingungen erfüllt; keine stabile normative APG-API, generelle Kompositionssprache oder Keyboard-/AT-/Lifecyclezusage.
 
-[uSpec mit tatsächlicher Obligation-Evidence](experiments/2026-10-25/uspec-external-reference/REPORT.md): X03 weiter U/C512. Acht Originalvalidatorfälle belegen lokale Outputpointer-/Typprüfung, aber keine Auflösung beliebiger fremder sourcePaths oder Erkennung der geänderten tatsächlichen Fremdquelle. Keine neue Adaptersemantik zum bloßen Abhaken erfunden.
+[uSpec mit tatsächlicher Obligation-Evidence](experiments/2026-10-25/uspec-external-reference/REPORT.md): X03 weiter U/C512. Acht Originalvalidatorfälle belegen lokale Outputpointer-/Typprüfung, aber keine Auflösung beliebiger fremder sourcePaths oder Erkennung der geänderten tatsächlichen Fremdquelle. Keine neue Adaptersemantik zum blossen Abhaken erfunden.
 
 [Zag-/Ark-spezifische Referenzpfade](experiments/2026-10-25/zag-ark-references/REPORT.md): X03 A/C510 beziehungsweise A/C511. Acht eigene Beobachtungserwartungen erfüllt; tatsächliche ursprüngliche Machine/Connect- und Ark-Komponenten-/Context-SSR-Pfade an separate CEM-/HTML-Rollen-/Relationsziele gebunden. Vier vom Originalrenderer akzeptierte Konfliktfälle durch Zusatzbinder erkannt, keine DOM-/Interaktions-/AT- oder X01-Zusage.
 
@@ -55,9 +55,9 @@ Stand: 25. Oktober 2026. Mit study.json und dem offenen Register abgeglichen. Hi
 
 [uSpec-Messanker und Strukturbelege](experiments/2026-10-25/uspec-layout-scope/REPORT.md): Originalanker identifizieren Design-Messziele; Clipping und Wrapperdimensionen bleiben erhalten. Eine Runtime-Zielrelation beziehungsweise Scrollpolitik ist damit nicht definiert. V04/V06 unverändert U, null neue Fälle. Der begrenzte Quellenpfad ist ausgewertet; als nächste unabhängige Gruppe folgt X01.
 
-[UXSpec-Layoutpfad einschließlich Formatspezifikation und Aufrufern](experiments/2026-10-25/uxspec-layout-scope/REPORT.md): offene Schemafelder werden nicht automatisch als CSS weitergegeben; Schichtung und dynamische Eigenschaften belegen noch keinen benannten Inputanker. V04/V06 unverändert U, keine neuen Laufzeitbedingungen. Die konkret fehlenden Bindungen sind dokumentiert.
+[UXSpec-Layoutpfad einschliesslich Formatspezifikation und Aufrufern](experiments/2026-10-25/uxspec-layout-scope/REPORT.md): offene Schemafelder werden nicht automatisch als CSS weitergegeben; Schichtung und dynamische Eigenschaften belegen noch keinen benannten Inputanker. V04/V06 unverändert U, keine neuen Laufzeitbedingungen. Die konkret fehlenden Bindungen sind dokumentiert.
 
-[Vollständiger Originalframeexport](experiments/2026-10-25/openpencil-layout-runtime/REPORT.md): vorhandener Webadapter erzeugt für clipsContent:true eine feste hidden-Politik beider Achsen; der native begrenzte Host scrollt programmgesteuert. V06 A/C498 im genauen Policyumfang. Parentkoordinaten sind belegt, Input-Unterkantenanker unter Größenänderung bleibt U/C499: Abstand8→-12. Zwölf numerische Beobachtungserwartungen erfüllt, die gewünschte Ankerrelation im Gegenfall ausdrücklich nicht.
+[Vollständiger Originalframeexport](experiments/2026-10-25/openpencil-layout-runtime/REPORT.md): vorhandener Webadapter erzeugt für clipsContent:true eine feste hidden-Politik beider Achsen; der native begrenzte Host scrollt programmgesteuert. V06 A/C498 im genauen Policyumfang. Parentkoordinaten sind belegt, Input-Unterkantenanker unter Grössenänderung bleibt U/C499: Abstand8→-12. Zwölf numerische Beobachtungserwartungen erfüllt, die gewünschte Ankerrelation im Gegenfall ausdrücklich nicht.
 
 
 [Originaler Scenegraph bis zum zugänglichen Switch-Update](experiments/2026-10-25/openpencil-projection-origin/REPORT.md): Original-Graph-/Instanz-/Projektions-/Role-APIs, ursprüngliche Vue-Statefunktionen und tatsächliches Reka bis zum Host ausgeführt. A01 R/C494 für den konkret benannten Switchbeitrag, A03 R/C495 für seine on/off-Zustandsrückmeldung. Namensinhalt kommt aus gezeichnetem TEXT; keine unabhängige Accessibility-Masterdatei oder universelle Meldungssprache daraus abgeleitet.
@@ -89,7 +89,7 @@ Die Liveschritte zeigen getrennte A/B-Werte, stabile Namen und passende aria-che
 
 ## Endliche nächste Schritte
 
-Der [aktive Restplan](REMAINDER-PLAN.md) enthält genau2 U-Schlüssel, beide X06-Originalklärungen bei Google DESIGN.md und OpenUI. Keine der zuvor konkret benannten8 autonomen Restzellen bleibt U; ihre jeweils begrenzten Zusatzbindungen sind tatsächlich ausgeführt. Die46er Baseline und44 begrenzten Schließungen bleiben separat erhalten.
+Der [aktive Restplan](REMAINDER-PLAN.md) enthält genau2 U-Schlüssel, beide X06-Originalklärungen bei Google DESIGN.md und OpenUI. Keine der zuvor konkret benannten8 autonomen Restzellen bleibt U; ihre jeweils begrenzten Zusatzbindungen sind tatsächlich ausgeführt. Die46er Baseline und44 begrenzten Schliessungen bleiben separat erhalten.
 
 [Genau fehlende Originalinformation](OPEN-QUESTIONS.md): Dokument-Schema-/Ergebnisbinding bei Google und kanonische Vorrang-/Validierungsregel bei OpenUI. Bekannte Config-/Parser-/widersprüchliche Typstände entscheiden diese Herausgeberfragen nicht; keine identischen Proben ohne neue Originalinformation und keine Autorenanfrage. Das ist kein Beweis, dass künftig nie neue Information verfügbar wird.
 
@@ -106,4 +106,4 @@ Alle Bedingungen, Grenzen und historischen Gegenfälle im [Experimentindex](expe
 
 ## Nachfolgende Studie AC-R01
 
-[AC-R01](studies/AC-R01/README.md) ist abgeschlossen: zwei getrennte Erzeugungen, unabhängige Kriterienprüfung, gleiche erfasste Komponentenwerte und derselbe Farbverstoß in beiden Designs. Beide Gesamturteile sind FAIL. Diese Studie hat eigene Artefakte und verändert weder die Kandidatenmatrix noch deren 702 Bedingungen/106 Gruppen. Keine interaktive oder native Plattformabnahme.
+[AC-R01](studies/AC-R01/README.md) ist abgeschlossen: zwei getrennte Erzeugungen, unabhängige Kriterienprüfung, gleiche erfasste Komponentenwerte und derselbe Farbverstoss in beiden Designs. Beide Gesamturteile sind FAIL. Diese Studie hat eigene Artefakte und verändert weder die Kandidatenmatrix noch deren 702 Bedingungen/106 Gruppen. Keine interaktive oder native Plattformabnahme.

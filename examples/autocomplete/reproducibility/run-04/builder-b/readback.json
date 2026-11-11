@@ -60,7 +60,7 @@
     },
     {
       "id": "fidelity",
-      "description": "Farben, Typografie, Maße und Meldungen stimmen mit den aus tokens.json/layout.css/stories.json/accessibility.rules.json berechneten Werten überein.",
+      "description": "Farben, Typografie, Masse und Meldungen stimmen mit den aus tokens.json/layout.css/stories.json/accessibility.rules.json berechneten Werten überein.",
       "status": "pass",
       "evidence": "Alle Geometrie-/Farb-/Text-/Meldungswerte identisch (Farben: surface #ffffff, text #172b4d, muted #64748b, border #cbd5e1, focus #2563eb, highlight #eaf2ff, disabled #94a3b8, error #b91c1c; Inter 14/12, lineHeight 20; Radius 8; Shadow 0 2 8 #00000033)."
     },

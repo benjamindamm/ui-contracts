@@ -1,6 +1,6 @@
 # Framework-Audit · 31. Oktober 2026
 
-**Urteil:** UI Contracts ist eine brauchbare, in Teilumfängen erprobte Grundlage für agentengestützte Komponentenarbeit. Für ein belastbares allgemeines UX-/Designhandbuch fehlen vor allem die durchgängige Verbindung der Bausteine und komponentenunabhängige Nachweise. Der größte aktuelle Fehlerpfad: Eine formal gültige UX-Fähigkeitsbehauptung kann zu einer fachlich falschen Auswahl führen, obwohl ihre verlinkten Originaldateien unverändert sind.
+**Urteil:** UI Contracts ist eine brauchbare, in Teilumfängen erprobte Grundlage für agentengestützte Komponentenarbeit. Für ein belastbares allgemeines UX-/Designhandbuch fehlen vor allem die durchgängige Verbindung der Bausteine und komponentenunabhängige Nachweise. Der grösste aktuelle Fehlerpfad: Eine formal gültige UX-Fähigkeitsbehauptung kann zu einer fachlich falschen Auswahl führen, obwohl ihre verlinkten Originaldateien unverändert sind.
 
 [13 priorisierte Befunde und Abnahmekriterien](findings.json) · [Ausgeführte Prüfungen](evidence/suite-counts.json) · [Inventar](evidence/inventory.json) · [Quell-/Belegbindung](receipt.json)
 
@@ -10,7 +10,7 @@ Ausgangsstand: Commit `fe44c53876f4f77c3e95222ee5b1ea118eb87d76`. Frameworkweit 
 
 Das Inventar umfasst **2.410 getrackte Dateien**. Das bedeutet nicht, dass jede Zeile aller historischen Experimente neu gelesen oder jeder Versuch wiederholt wurde. Führende aktuelle Dateien, zentrale Implementierungen und relevante historische Gegenbefunde wurden gezielt untersucht. **38 aktive Markdown-Dateien mit 261 lokalen Links:** keine fehlenden Linkziele. Anker innerhalb von Markdown und externe Links wurden nicht neu geprüft. Eingeschränktes Musterinventar statt pauschaler Behauptung vollständiger Dokumentkonformität.
 
-Es gab keinen neuen unabhängigen Agenten-/Modellvergleich und keinen neuen Browser-/Screenreaderlauf. Vorhandene Browserstudien wurden anhand ihrer Berichte und Rohdaten eingeordnet. Die neuen Gegenfälle liefen ausschließlich in temporären Kopien. Historische Quellen und Ausgaben wurden nicht umgeschrieben; Produktcode wurde in diesem Audit nicht repariert.
+Es gab keinen neuen unabhängigen Agenten-/Modellvergleich und keinen neuen Browser-/Screenreaderlauf. Vorhandene Browserstudien wurden anhand ihrer Berichte und Rohdaten eingeordnet. Die neuen Gegenfälle liefen ausschliesslich in temporären Kopien. Historische Quellen und Ausgaben wurden nicht umgeschrieben; Produktcode wurde in diesem Audit nicht repariert.
 
 ## Was stabil funktioniert
 
@@ -34,7 +34,7 @@ Es gab keinen neuen unabhängigen Agenten-/Modellvergleich und keinen neuen Brow
 | Statische Prüfkette: positive/negative Gegenfälle | 47/47 |
 | **Summe** | **182/182** |
 
-Das sind **135 Tests aus sieben Suiten plus 47 Gegenfälle**, keine 182 unabhängig repräsentativen Komponenten. Die neuen Audit-Gegenbeispiele zeigen ausdrücklich, welche Probleme diese bestehenden Suiten noch nicht abdecken. Erfolgreiche Regressionen sind kein Beweis allgemeiner Richtigkeit. Die abschließende Ausgabe des statischen Regressionstreibers wurde in den Auditordner umgeleitet; seine Prüfungen/Mutationen liefen unverändert in ihren temporären Kopien. Alte Belegdateien wurden dadurch nicht ersetzt.
+Das sind **135 Tests aus sieben Suiten plus 47 Gegenfälle**, keine 182 unabhängig repräsentativen Komponenten. Die neuen Audit-Gegenbeispiele zeigen ausdrücklich, welche Probleme diese bestehenden Suiten noch nicht abdecken. Erfolgreiche Regressionen sind kein Beweis allgemeiner Richtigkeit. Die abschliessende Ausgabe des statischen Regressionstreibers wurde in den Auditordner umgeleitet; seine Prüfungen/Mutationen liefen unverändert in ihren temporären Kopien. Alte Belegdateien wurden dadurch nicht ersetzt.
 
 ## Fünf Punkte zuerst
 
@@ -42,7 +42,7 @@ Das sind **135 Tests aus sieben Suiten plus 47 Gegenfälle**, keine 182 unabhän
 
 **Belegt durch einen ausgeführten Gegenfall.** In einer temporären Kopie erhielt das einfache Select in `ux.json` statt `searchMode: none` den schemaerlaubten Wert `query-provider`. Ein neues Manifest band diese neue Revision ehrlich. Interface, Verhalten und Accessibility-Dateien blieben bytegleich, ihre Quellenhashes stimmten weiterhin.
 
-Der unveränderte Auswahlhelper empfahl anschließend für 30 Optionen **Select statt Autocomplete**. Er wusste nicht, dass das tatsächliche Select weiterhin kein Suchfeld und keinen Filtervertrag hat. Beide Auswertungen bleiben ausdrücklich `release:false`; es wurde keine vollständige Komponentenfreigabe umgangen. Trotzdem kann der Empfehlungswert einen Agenten fehlleiten.
+Der unveränderte Auswahlhelper empfahl anschliessend für 30 Optionen **Select statt Autocomplete**. Er wusste nicht, dass das tatsächliche Select weiterhin kein Suchfeld und keinen Filtervertrag hat. Beide Auswertungen bleiben ausdrücklich `release:false`; es wurde keine vollständige Komponentenfreigabe umgangen. Trotzdem kann der Empfehlungswert einen Agenten fehlleiten.
 
 **Ursache:** Schema und Hashes prüfen die Form bzw. die Identität der Behauptung und ihrer Referenzen, nicht die Bedeutung der behaupteten Fähigkeit. `sources` enthält noch keinen hinreichenden fachlichen Nachweis jeder Eigenschaft.
 
@@ -52,7 +52,7 @@ Der unveränderte Auswahlhelper empfahl anschließend für 30 Optionen **Select 
 
 ### FW-002 · P1 · Neueste Forschung ist noch nicht das aktive Framework
 
-Die neue UX-Leitlinie bevorzugt im festen Vorwahlfall Select mit separater Suche. `libraries/example/library.json` und die aktive `selection-policy.json` enthalten jedoch weiterhin nur die frühere Auswahl zwischen Select und Autocomplete. **SelectWithSearch und die neueren UX-Merkmale liegen ausschließlich in der SELECTION-02-Kandidatenbibliothek.**
+Die neue UX-Leitlinie bevorzugt im festen Vorwahlfall Select mit separater Suche. `libraries/example/library.json` und die aktive `selection-policy.json` enthalten jedoch weiterhin nur die frühere Auswahl zwischen Select und Autocomplete. **SelectWithSearch und die neueren UX-Merkmale liegen ausschliesslich in der SELECTION-02-Kandidatenbibliothek.**
 
 Ein Konsument, der regulär die aktive Bibliothek verwendet, kann deshalb zur inzwischen fachlich weniger passenden alten Empfehlung kommen. Das ist keine Unredlichkeit der Studie – deren Grenzen sind dokumentiert –, aber eine reale Integrationslücke im Framework. Eine veraltete Existenznotiz in der Studienkopie wurde bereits als SEL2-D01 erkannt und ist bislang nur durch externe Errata eingeordnet.
 
@@ -74,7 +74,7 @@ Die umfassendere Referenzkette prüft eine andere, festgelegte Paketstruktur. Se
 
 Die ausführbaren UX-Proben verweisen auf `/tmp/ui-contracts-ux-rules-runtime`, dort vorbereitete Java-Klassen/JARs und `/opt/homebrew/opt/openjdk/bin/java`. Auf diesem Rechner laufen sie, weil die vorbereitete Laufzeit vorhanden ist. Die Links und Quelltexte allein bieten jedoch noch keinen einheitlichen operativen Einstieg für einen neuen Konsumenten.
 
-Dies ist durch Quellprüfung belegt; ein neuer leerer Rechner wurde **nicht** getestet. Auch die große Zahl vorgehaltener historischer Werkzeug-Locks ersetzt keinen gemeinsamen Setupweg.
+Dies ist durch Quellprüfung belegt; ein neuer leerer Rechner wurde **nicht** getestet. Auch die grosse Zahl vorgehaltener historischer Werkzeug-Locks ersetzt keinen gemeinsamen Setupweg.
 
 **Nächste Verbesserung:** Einen konfigurierbaren, gepinnten UX-Runner mit dokumentierter Bereitstellung und strukturierten Fehlern bei fehlenden Voraussetzungen ergänzen. Nicht die alten Proben passend zum neuen Werkzeug umschreiben. Ein frischer Clone-Test gehört zur Abnahme dieses neuen operativen Wegs.
 
@@ -94,9 +94,9 @@ Die bestehenden starken Laufzeitnachweise betreffen die fest gebundene Webrefere
 
 | ID | Priorität | Schwäche und praktische Folge | Sinnvoller nächster Schritt |
 | --- | --- | --- | --- |
-| FW-005 | P2 | Kein gemeinsamer Regressionseinstieg und kein getrackter CI-Workflow. Prüfungen können beim Weiterentwickeln leicht vergessen werden; einzelne Standardbefehle ersetzen aktuelle Belegdateien. | Ein gemeinsamer Testbefehl mit explizitem frischem Ausgabeziel; anschließend dieselbe Auswahl automatisieren. |
+| FW-005 | P2 | Kein gemeinsamer Regressionseinstieg und kein getrackter CI-Workflow. Prüfungen können beim Weiterentwickeln leicht vergessen werden; einzelne Standardbefehle ersetzen aktuelle Belegdateien. | Ein gemeinsamer Testbefehl mit explizitem frischem Ausgabeziel; anschliessend dieselbe Auswahl automatisieren. |
 | FW-006 | P2 | Gesamtmanifeste sind sicher, aber grob: Auch Dokumentations-/Assetänderungen machen eine neue Bibliotheksrevision. Ein genereller Abhängigkeits-/Impactplan fehlt. | Komponentenabschluss, Bibliotheksrelease und betroffene Verbraucher/Nachweise getrennt darstellen. Pins nicht lockern. |
-| FW-008 | P2 | Das UX-Auswahlmodell ist noch auf wenige konkrete Controls zugeschnitten. Noch kein allgemeines Vokabular für konkurrierende Regeln, unvollständige Fakten und komplexere fachliche Komposition. | Vorhandene Profile konsolidieren; einen zweiten fachlichen Fall außerhalb der Vorwahl prüfen. Nicht sofort eine universelle UX-Sprache erfinden. |
+| FW-008 | P2 | Das UX-Auswahlmodell ist noch auf wenige konkrete Controls zugeschnitten. Noch kein allgemeines Vokabular für konkurrierende Regeln, unvollständige Fakten und komplexere fachliche Komposition. | Vorhandene Profile konsolidieren; einen zweiten fachlichen Fall ausserhalb der Vorwahl prüfen. Nicht sofort eine universelle UX-Sprache erfinden. |
 | FW-009 | P2 | Die neuen Auswahlstudien verwenden ein anderes Aufgabenformat als der vorhandene Übergabehelper. Der reale SELECTION-02-Auftrag wird dort mit `unsupported task format` abgewiesen. | Neue Studien an das Rollen-/Übergabeprofil anbinden oder einen expliziten kompatiblen Adapter bauen. Kein rückwirkender Fehler des damaligen Studienkriteriums. |
 | FW-010 | P2 | Bessere Ergebnisse schwächerer Modelle sind plausibel und teilweise beobachtet, aber nicht als allgemeine Wirkung unseres Setups nachgewiesen. Gesamter Startkontext, Rollenmetadaten und wiederholte Bedingungen fehlen übergreifend. | Den beschlossenen Stufenvergleich mit gemeinsamem Prüfkern, Budget-/Quellenmessung und Wiederholungen durchführen. Keine Modellidentitätsrecherche durch Worker. |
 | FW-011 | P2 | Die Designwerkzeuge sind enger als ein universeller Designbaukasten: eine Seite, Fallgruppen direkt am Seitenroot, keine Rotation/Spiegelung im Boundsadapter, lokale 400/700-Fonts, keine allgemeinen Stylespans, begrenzte Chart-/SVG-Familien. Theme-Karten erzeugen keinen Darkmode der Komponente. | Unterstützte Fähigkeiten vor Auftragsstart maschinenlesbar sichtbar machen; Erweiterungen einzeln mit echten Zielartefakten prüfen. Diese Grenzen sind überwiegend bereits ehrlich dokumentiert. |
@@ -120,11 +120,11 @@ Ein temporärer Kandidat enthielt `library.json`, `fonts.json` und ein absichtli
 3. **Wiederholbar ausführen und gegen das Ziel prüfen (FW-004, FW-005, FW-007).** Gepinnte Laufzeit, gemeinsamer Testeinstieg und wiederverwendbare tatsächliche Adaptertests. Zunächst die vorhandenen drei bis vier Controlfamilien stabilisieren.
 4. **Erst danach breiter skalieren (FW-006, FW-009–FW-012).** Aufgabenformat vereinheitlichen, Änderungsfolgen sichtbar machen und den gestuften Modellvergleich ausführen; neue Charts/Themes/AT-Fälle gezielt ergänzen.
 
-Mein nächster Schwerpunkt wäre damit **kein weiterer großer Standardsurvey**, sondern ein kleiner durchgängiger Weg: aktive Definition → begründete UX-Eignung → erzeugtes Webziel → gemeinsamer tatsächlicher Nachweis. Dafür sind die vorhandenen Teile weit genug; ihre Übergänge benötigen jetzt die meiste Arbeit. Diese Reihenfolge ist eine Empfehlung dieses Audits, noch kein beauftragtes Reparaturpaket.
+Mein nächster Schwerpunkt wäre damit **kein weiterer grosser Standardsurvey**, sondern ein kleiner durchgängiger Weg: aktive Definition → begründete UX-Eignung → erzeugtes Webziel → gemeinsamer tatsächlicher Nachweis. Dafür sind die vorhandenen Teile weit genug; ihre Übergänge benötigen jetzt die meiste Arbeit. Diese Reihenfolge ist eine Empfehlung dieses Audits, noch kein beauftragtes Reparaturpaket.
 
 ## Nachvollziehbarkeit
 
 - [Quellen- und Belegreceipt](receipt.json) bindet den gelesenen Ausgangsstand und die abgelegten Ergebnisse.
-- [Maschinenlesbare Befunde](findings.json) führen ID, Priorität, Status `open`, Maßnahme und Abnahmekriterium.
+- [Maschinenlesbare Befunde](findings.json) führen ID, Priorität, Status `open`, Massnahme und Abnahmekriterium.
 - Unter `execution/` liegen die tatsächlich ausgeführten einmaligen Auditwrapper mit ihren damaligen lokalen Pfaden. Sie sind keine neue portable Produkt-CLI. Belegdateien enthalten synthetische Testdaten und lokale Werkzeugpfade.
 - Es wurden keine laufenden OpenPencil-/S3-Installationen verändert, keine neuen Browser-/Modellversuche behauptet und kein Commit/Push durch den Auditauftrag ausgelöst.

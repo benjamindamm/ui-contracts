@@ -42,8 +42,8 @@ Keine addierte Gesamtpunktzahl vor gleichen Proben. Kriterien werden pro Kandida
 3. Dokumentieren, was der Kandidat selbst ausdrückt und was Kontextvokabular, Wrapper oder Evaluatorpolicy ergänzt. Auch manuell zu beurteilende Regeln als solche erhalten.
 4. Dieselben vollständigen, unvollständigen, widersprüchlichen, fremden und veralteten Eingaben prüfen. Ergebnis mit zutreffender Regel-ID und Quellbezug verlangen.
 5. Alle vier Contractdomänen mit passenden Zielstellen referenzieren. Datei-URI genügt nicht als Nachweis für Existenz, Typ, Revision oder Geltung eines Zieles.
-6. Aufwand, Lesbarkeit, Größe und offene Grenzen vergleichen; erst danach Auswahlvorschlag und nötige schmale Integrationskonvention erarbeiten. Keine Komponentenmigration in dieser Runde.
+6. Aufwand, Lesbarkeit, Grösse und offene Grenzen vergleichen; erst danach Auswahlvorschlag und nötige schmale Integrationskonvention erarbeiten. Keine Komponentenmigration in dieser Runde.
 
 ## Weitere Kandidaten finden
 
-Die sechs Startkandidaten sind keine erschöpfende Marktübersicht. Vor endgültiger Auswahl gezielt UX-spezifische Guideline-/Design-Rationale-Modelle und weitere maschinenlesbare Regelsprachen sichten. Aufnahme braucht Primärquelle, definiertes Modell/Format und eine klare Lücke gegenüber vorhandenen Kandidaten; bloße Dokumentationswerkzeuge genügen nicht. Aussortierte Ansätze mit Grund erhalten. Autorennotation, Austauschformat und Ausführung getrennt betrachten.
+Die sechs Startkandidaten sind keine erschöpfende Marktübersicht. Vor endgültiger Auswahl gezielt UX-spezifische Guideline-/Design-Rationale-Modelle und weitere maschinenlesbare Regelsprachen sichten. Aufnahme braucht Primärquelle, definiertes Modell/Format und eine klare Lücke gegenüber vorhandenen Kandidaten; blosse Dokumentationswerkzeuge genügen nicht. Aussortierte Ansätze mit Grund erhalten. Autorennotation, Austauschformat und Ausführung getrennt betrachten.

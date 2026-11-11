@@ -15,19 +15,19 @@ Ziel ist, auch mit weniger leistungsfähigen Modellen brauchbare und nachvollzie
 | Grundlage | Einordnung |
 | --- | --- |
 | [AC-R01](../studies/AC-R01/README.md) | Zwei ähnliche native Designs, gemeinsame explizite Platzhalterfarbabweichung. |
-| [Externe Analyse AC-R02](../analyses/AC-R02/README.md) | Ähnliche Designs; falsche Quellauslegung und nachgewiesene Lücken des damaligen Prüfers. Aktuelle Gegenmaßnahmen und Regressionen liegen vor. |
+| [Externe Analyse AC-R02](../analyses/AC-R02/README.md) | Ähnliche Designs; falsche Quellauslegung und nachgewiesene Lücken des damaligen Prüfers. Aktuelle Gegenmassnahmen und Regressionen liegen vor. |
 | [run-03](../../../examples/autocomplete/reproducibility/run-03/README.md) | Laut laufinternem Review brauchbare statische Designs; A trifft die Platzhalterfarbe, B nicht und widerspricht dazu seinem Bericht. Vier HTTP-413-Abbrüche sind dokumentiert. Noch keine vollständige externe Gegenprüfung dieses Laufs. |
 | Modell- und Prozessvergleiche | Unterschiedliche Kriterien, unvollständige Rollenmetadaten und Fortsetzungen verhindern eine belastbare Rangfolge aus den bisherigen Originalurteilen. |
 
-Ein HTTP-413-Eintrag belegt hier keine genaue Kontext- oder Proxygrenze. Fehlerantworten und tatsächliche Anfragegrößen fehlen als Rohbelege. Kontextumfang, Modellfähigkeit, API-Anfragegröße und Harness-Schrittlimit sind verschiedene Größen; sie werden künftig getrennt erfasst. Die Behauptung, alle Abbrüche seien allein durch zu lange Kontexte verursacht, ist nicht belegt.
+Ein HTTP-413-Eintrag belegt hier keine genaue Kontext- oder Proxygrenze. Fehlerantworten und tatsächliche Anfragegrössen fehlen als Rohbelege. Kontextumfang, Modellfähigkeit, API-Anfragegrösse und Harness-Schrittlimit sind verschiedene Grössen; sie werden künftig getrennt erfasst. Die Behauptung, alle Abbrüche seien allein durch zu lange Kontexte verursacht, ist nicht belegt.
 
 ## Festgelegte Prinzipien
 
 1. **Vier führende Domänen bleiben bestehen:** technisches Interface, Visual, Behavior, Accessibility. Keine neue universelle Zwischensprache ersetzt diese Originalquellen.
-2. **Teilkomponenten plus Zusammenspiel:** Autocomplete bleibt Eigentümer von Query, aktivem Ergebnis und bestätigtem Wert gemäß Definition. Overlay verantwortet seine definierten Darstellungs-/Lebenszyklusaufgaben, ScrollArea ihren Viewport. Verbindungen werden an Instanz, Teil, Ereignis und Zustand gebunden; Namensgleichheit reicht nicht.
+2. **Teilkomponenten plus Zusammenspiel:** Autocomplete bleibt Eigentümer von Query, aktivem Ergebnis und bestätigtem Wert gemäss Definition. Overlay verantwortet seine definierten Darstellungs-/Lebenszyklusaufgaben, ScrollArea ihren Viewport. Verbindungen werden an Instanz, Teil, Ereignis und Zustand gebunden; Namensgleichheit reicht nicht.
 3. **Übergaben sind abgeleitete Arbeitsmittel:** Sie enthalten Quellenpfade, Hashes, Auszüge/Verweise, Entscheidungen und offene Fragen. Bei Widerspruch gilt die führende Quelle; eine Zusammenfassung wird nicht zur fünften Wahrheit.
 4. **Technische Mechanik wiederverwenden:** Tokenauflösung, Export, Readback und Messungen möglichst über geprüfte Hilfsfunktionen statt ständig neu erfundener Skripte erledigen. Fachliche Regeln bleiben in der Definition und ihrer ausdrücklich begrenzten Prüfpolicy.
-5. **Prüfen und Erzeugen trennen:** Gegen Originalartefakte messen, Berichte anschließend abgleichen. Gemeinsamer Prüfkern für Modellvergleiche; modellspezifisch abgeleitete Kriterien separat untersuchen.
+5. **Prüfen und Erzeugen trennen:** Gegen Originalartefakte messen, Berichte anschliessend abgleichen. Gemeinsamer Prüfkern für Modellvergleiche; modellspezifisch abgeleitete Kriterien separat untersuchen.
 6. **Reparaturen begrenzen und sichtbar halten:** Erstlieferung unverändert behalten; jede Korrektur als eigene Revision mit Fehlerdiagnose und Nachprüfung. Stärkere Modellhilfe wird ausdrücklich als zusätzliche Unterstützung ausgewiesen.
 7. **Kontext aktiv begrenzen:** Rohdaten auf Datenträger, gezielte Ausschnitte in Anfragen, Wiederaufnahme über Checkpoints. Originalquellen bleiben zugänglich; Kompaktheit darf Regeln nicht unterschlagen.
 
@@ -52,13 +52,13 @@ Statisches OpenPencil bleibt zunächst das Erzeugungsziel. Dynamische Übergäng
 
 ## Nächster beschlossener Entwicklungsschritt
 
-Zuerst das [Versuchsvorgehen für Autocomplete](../protocols/STAGED-GENERATION-PILOT.md) vorbereiten und an der **unveränderten eingefrorenen Definition** untersuchen. Dabei erhält auch die Kontrollbedingung dieselben technischen Hilfsmittel und denselben Prüfkern. Erst anschließend die Übertragbarkeit an einer separat gewählten komplexeren Komponente untersuchen.
+Zuerst das [Versuchsvorgehen für Autocomplete](../protocols/STAGED-GENERATION-PILOT.md) vorbereiten und an der **unveränderten eingefrorenen Definition** untersuchen. Dabei erhält auch die Kontrollbedingung dieselben technischen Hilfsmittel und denselben Prüfkern. Erst anschliessend die Übertragbarkeit an einer separat gewählten komplexeren Komponente untersuchen.
 
 Beschlossen sind Richtung und Vorgehen; die ersten Skill-/Übergabeverbesserungen sind implementiert und funktional geprüft. **Noch nicht ausgeführt oder freigegeben:** neuer Generierungslauf, universeller Resolver, neue Definitionsrevision, neue native Plattformprüfung oder externe Veröffentlichung. Modellnamen und konkrete Laufbudgets werden vor dem Pilot separat als überprüfbare Konfiguration festgelegt. Für run-03 hat der Nutzer nachträglich **qwen3.8-27B in FP8** angegeben; die [separate Herkunftsergänzung](../studies/AC-R03/MODEL-PROVENANCE.json) bewahrt diese Angabe, ohne daraus eine technische Verifikation jeder Rolle abzuleiten.
 
 ## Erfolg, Grenzen und Konsequenzen
 
-Erwartet werden weniger verlorene Arbeit, klarere Fehlerdiagnosen und bessere Endergebnisse bei kontrolliertem Unterstützungsaufwand. Mehr Dateien oder mehr Agenten sind kein Erfolgskriterium. Gemessen werden Regelverletzungen der Erstlieferung, verbleibende Fehler nach Reparatur, vollständige Lieferungen, Anfragegrößen, Abbrüche, Aufwand und Eskalationen.
+Erwartet werden weniger verlorene Arbeit, klarere Fehlerdiagnosen und bessere Endergebnisse bei kontrolliertem Unterstützungsaufwand. Mehr Dateien oder mehr Agenten sind kein Erfolgskriterium. Gemessen werden Regelverletzungen der Erstlieferung, verbleibende Fehler nach Reparatur, vollständige Lieferungen, Anfragegrössen, Abbrüche, Aufwand und Eskalationen.
 
 Die zusätzlichen Übergaben können ihrerseits Regeln verlieren oder verfälschen. Sie brauchen deshalb Herkunft und Rückverweise. Ein Prüfer kann systematisch falsch urteilen; Gegenfälle und gemeinsame Policy bleiben notwendig. Ein repariertes Endergebnis ist keine ununterstützte Modellleistung. Ein kleiner Autocomplete-Pilot beweist keine allgemeine Skalierbarkeit.
 

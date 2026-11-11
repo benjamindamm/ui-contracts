@@ -18,7 +18,7 @@ Das gemeinsame statische Paket und der begrenzte gemeinsame Webreferenzlauf sind
 
 ## Wo welche Daten liegen
 
-| Inhalt | Maßgeblicher Einstieg |
+| Inhalt | Massgeblicher Einstieg |
 | --- | --- |
 | Gesamtes Dokumentenverzeichnis | [Dokumentenindex](DOCUMENT-INDEX.md) |
 | Alle 16 Kandidaten / 416 Bewertungen | [Matrix](MATRIX.md), maschinenlesbar [study.json](study.json) |
@@ -41,8 +41,8 @@ Die Zähler sind keine Behauptung, dass alle Erwartungen in allen historischen V
 
 **Spätere Validierung:** echte Assistenztechnik und IME, weitere Browser/Widgets und gegebenenfalls Produktreife. Diese stärkeren Zusagen wurden nicht erteilt und werden nicht aus AX-/Forschungsfixtures abgeleitet.
 
-**Zukunftsperspektive:** iOS, Android und weitere native Ziele. Sie bleiben ausdrücklich außerhalb der abgeschlossenen aktuellen Recherche. [Ziel und Einschätzung](ARCHITECTURE-DIRECTION.md).
+**Zukunftsperspektive:** iOS, Android und weitere native Ziele. Sie bleiben ausdrücklich ausserhalb der abgeschlossenen aktuellen Recherche. [Ziel und Einschätzung](ARCHITECTURE-DIRECTION.md).
 
 ## Dokumentationsabschluss
 
-Aktuelle Einstiege, Dokumenten- und Experimentindex, Matrix-/Claim-/Quellenbezüge, lokale Verweise und Belegdateihashes sind abgeglichen. Historische Berichte und Erstfehler bleiben erhalten. Das Dokumentationspaket enthält den abschließenden Stand. Commit und Push dieses Abschlussstands sind auf ausdrücklichen Nutzerauftrag freigegeben; der konkrete Gitstand ist im Repositoryprotokoll nachvollziehbar.
+Aktuelle Einstiege, Dokumenten- und Experimentindex, Matrix-/Claim-/Quellenbezüge, lokale Verweise und Belegdateihashes sind abgeglichen. Historische Berichte und Erstfehler bleiben erhalten. Das Dokumentationspaket enthält den abschliessenden Stand. Commit und Push dieses Abschlussstands sind auf ausdrücklichen Nutzerauftrag freigegeben; der konkrete Gitstand ist im Repositoryprotokoll nachvollziehbar.

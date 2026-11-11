@@ -2,7 +2,7 @@
 
 Stand: 26. Oktober 2026. Hauptzugang: [Bedienung und Grenzen](../README.md).
 
-## Aktueller maßgeblicher Stand
+## Aktueller massgeblicher Stand
 
 - [web-current.json](web-current.json): gemeinsamer aktueller Bericht für run03; alle sechs Stufen im festgelegten begrenzten Webumfang bestanden.
 - [run03/request.json](browser-2026-10-26-run03/request.json): Paket-/Hostrevision, Prüferfingerprint, neue Laufkennung und Challenge.
@@ -20,7 +20,7 @@ Der gespeicherte erfolgreiche Bericht bleibt ein datierter Nachweis. Ein später
 - [static-v1/](static-v1/): ursprünglicher statischer Prüfeinstieg, bei dem noch kein Browseradapter vorhanden war; damalige Ergebnisse bleiben erhalten.
 - [countercases-initial.json](countercases-initial.json), [Laufprotokoll](countercases-initial.log): Im ersten erweiterten statischen Test war der zuerst erwartete Diagnosecode für doppelte Zustands-IDs falsch; das Original-XSD wies schon vorher zurück. Die geforderte Ablehnung wurde nicht abgeschwächt.
 - [run01](browser-2026-10-26-run01/request.json), [web-initial.json](web-initial.json), [damaliger Adapter](browser-gate-initial.py): erster neuer Browserlauf vor verpflichtenden Operationsreceipts. Kein aktueller Freigabebeleg.
-- [run02](browser-2026-10-26-run02/request.json), [damaliger Adapter](browser-gate-before-final-hardening.py): Wiederholung nach Ergänzung der Operationsreceipts, vor abschließender Prüfer-/Berichts-/Ausgabepfadhärtung. Der aktuelle Checkerfingerprint ist verschieden.
-- run03: abschließender vollständiger neuer Lauf unter aktuellem Prüfer. Die vier Browseroperationen haben jeweils erfolgreich abgeschlossen. Wiederholungen derselben 20 Fälle werden nicht künstlich als neue Forschungsbedingungen gezählt.
+- [run02](browser-2026-10-26-run02/request.json), [damaliger Adapter](browser-gate-before-final-hardening.py): Wiederholung nach Ergänzung der Operationsreceipts, vor abschliessender Prüfer-/Berichts-/Ausgabepfadhärtung. Der aktuelle Checkerfingerprint ist verschieden.
+- run03: abschliessender vollständiger neuer Lauf unter aktuellem Prüfer. Die vier Browseroperationen haben jeweils erfolgreich abgeschlossen. Wiederholungen derselben 20 Fälle werden nicht künstlich als neue Forschungsbedingungen gezählt.
 
 Die ursprünglichen 702 Bedingungen/106 Gruppen und die AC-R01-Studie bleiben separat und unverändert. Hash-/Challengezuordnung ist lokale Run-Provenienz, keine unabhängige Attestation gegen einen Betreiber, der die Dateien absichtlich fälschen kann.

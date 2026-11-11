@@ -364,7 +364,7 @@ addCheck('parts',
   partFailures.length ? 'fail' : 'pass',
   partFailures.length ? partFailures : 'Alle 10 Fälle enthalten alle Teil-Layer; keine gesperrten Layer; message-row nur in loading/empty/error; option-Zeilen mit Text-Kind.');
 addCheck('fidelity',
-  'Farben, Typografie, Maße und Meldungen stimmen mit den aus tokens.json/layout.css/stories.json/accessibility.rules.json berechneten Werten überein.',
+  'Farben, Typografie, Masse und Meldungen stimmen mit den aus tokens.json/layout.css/stories.json/accessibility.rules.json berechneten Werten überein.',
   fidelityFailures.length ? 'fail' : 'pass',
   fidelityFailures.length ? fidelityFailures : `Alle Geometrie-/Farb-/Text-/Meldungswerte identisch (Farben: surface ${HX.surface}, text ${HX.text}, muted ${HX.muted}, border ${HX.border}, focus ${HX.focus}, highlight ${HX.highlight}, disabled ${HX.disabled}, error ${HX.error}; Inter 14/12, lineHeight 20; Radius 8; Shadow 0 2 8 #00000033).`);
 

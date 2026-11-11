@@ -87,7 +87,7 @@
     },
     {
       "id": "case.closed.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 100,
@@ -197,7 +197,7 @@
     },
     {
       "id": "case.opening.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 100,
@@ -307,7 +307,7 @@
     },
     {
       "id": "case.loading.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 140,
@@ -389,7 +389,7 @@
     },
     {
       "id": "case.loading.surface",
-      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "description": "Overlayfläche: Position (Inputende + gap), Grösse, Radius, Füllung, Schatten",
       "expected": {
         "x": 0,
         "y": 80,
@@ -422,7 +422,7 @@
     },
     {
       "id": "case.loading.viewport",
-      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "description": "Scrollviewport: Clipping aktiv, Grösse min(n × rowHeight, maxHeight) bzw. eine Zeile",
       "expected": {
         "clips": true,
         "w": 320,
@@ -437,7 +437,7 @@
     },
     {
       "id": "case.loading.content",
-      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Grösse",
       "expected": {
         "x": 0,
         "y": 0,
@@ -488,7 +488,7 @@
     },
     {
       "id": "case.ready.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 268,
@@ -570,7 +570,7 @@
     },
     {
       "id": "case.ready.surface",
-      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "description": "Overlayfläche: Position (Inputende + gap), Grösse, Radius, Füllung, Schatten",
       "expected": {
         "x": 0,
         "y": 80,
@@ -603,7 +603,7 @@
     },
     {
       "id": "case.ready.viewport",
-      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "description": "Scrollviewport: Clipping aktiv, Grösse min(n × rowHeight, maxHeight) bzw. eine Zeile",
       "expected": {
         "clips": true,
         "w": 320,
@@ -618,7 +618,7 @@
     },
     {
       "id": "case.ready.content",
-      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Grösse",
       "expected": {
         "x": 0,
         "y": 0,
@@ -804,7 +804,7 @@
     },
     {
       "id": "case.active.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 268,
@@ -886,7 +886,7 @@
     },
     {
       "id": "case.active.surface",
-      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "description": "Overlayfläche: Position (Inputende + gap), Grösse, Radius, Füllung, Schatten",
       "expected": {
         "x": 0,
         "y": 80,
@@ -919,7 +919,7 @@
     },
     {
       "id": "case.active.viewport",
-      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "description": "Scrollviewport: Clipping aktiv, Grösse min(n × rowHeight, maxHeight) bzw. eine Zeile",
       "expected": {
         "clips": true,
         "w": 320,
@@ -934,7 +934,7 @@
     },
     {
       "id": "case.active.content",
-      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Grösse",
       "expected": {
         "x": 0,
         "y": 0,
@@ -1120,7 +1120,7 @@
     },
     {
       "id": "case.scroll-end.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 268,
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "case.scroll-end.surface",
-      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "description": "Overlayfläche: Position (Inputende + gap), Grösse, Radius, Füllung, Schatten",
       "expected": {
         "x": 0,
         "y": 80,
@@ -1235,7 +1235,7 @@
     },
     {
       "id": "case.scroll-end.viewport",
-      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "description": "Scrollviewport: Clipping aktiv, Grösse min(n × rowHeight, maxHeight) bzw. eine Zeile",
       "expected": {
         "clips": true,
         "w": 320,
@@ -1250,7 +1250,7 @@
     },
     {
       "id": "case.scroll-end.content",
-      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Grösse",
       "expected": {
         "x": 0,
         "y": -64,
@@ -1436,7 +1436,7 @@
     },
     {
       "id": "case.selected.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 100,
@@ -1546,7 +1546,7 @@
     },
     {
       "id": "case.empty.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 140,
@@ -1628,7 +1628,7 @@
     },
     {
       "id": "case.empty.surface",
-      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "description": "Overlayfläche: Position (Inputende + gap), Grösse, Radius, Füllung, Schatten",
       "expected": {
         "x": 0,
         "y": 80,
@@ -1661,7 +1661,7 @@
     },
     {
       "id": "case.empty.viewport",
-      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "description": "Scrollviewport: Clipping aktiv, Grösse min(n × rowHeight, maxHeight) bzw. eine Zeile",
       "expected": {
         "clips": true,
         "w": 320,
@@ -1676,7 +1676,7 @@
     },
     {
       "id": "case.empty.content",
-      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Grösse",
       "expected": {
         "x": 0,
         "y": 0,
@@ -1727,7 +1727,7 @@
     },
     {
       "id": "case.error.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 140,
@@ -1809,7 +1809,7 @@
     },
     {
       "id": "case.error.surface",
-      "description": "Overlayfläche: Position (Inputende + gap), Größe, Radius, Füllung, Schatten",
+      "description": "Overlayfläche: Position (Inputende + gap), Grösse, Radius, Füllung, Schatten",
       "expected": {
         "x": 0,
         "y": 80,
@@ -1842,7 +1842,7 @@
     },
     {
       "id": "case.error.viewport",
-      "description": "Scrollviewport: Clipping aktiv, Größe min(n × rowHeight, maxHeight) bzw. eine Zeile",
+      "description": "Scrollviewport: Clipping aktiv, Grösse min(n × rowHeight, maxHeight) bzw. eine Zeile",
       "expected": {
         "clips": true,
         "w": 320,
@@ -1857,7 +1857,7 @@
     },
     {
       "id": "case.error.content",
-      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Größe",
+      "description": "Scrollinhalt: Versatz (scroll-end zeigt die letzte Option), Grösse",
       "expected": {
         "x": 0,
         "y": 0,
@@ -1908,7 +1908,7 @@
     },
     {
       "id": "case.disabled.frame",
-      "description": "Fall-Frame: Größe und Position",
+      "description": "Fall-Frame: Grösse und Position",
       "expected": {
         "w": 320,
         "h": 100,

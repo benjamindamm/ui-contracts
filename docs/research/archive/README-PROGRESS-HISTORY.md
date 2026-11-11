@@ -1,6 +1,6 @@
 # Historische Fortschrittsnotizen
 
-Diese Notizen bewahren Zwischenstände und widerlegte beziehungsweise später erweiterte Einschätzungen. Sie sind keine aktuelle Queue. Maßgeblich sind [aktueller Status](../CURRENT-STATUS.md) und [aktueller zellenweiser Restplan](../REMAINDER-PLAN.md).
+Diese Notizen bewahren Zwischenstände und widerlegte beziehungsweise später erweiterte Einschätzungen. Sie sind keine aktuelle Queue. Massgeblich sind [aktueller Status](../CURRENT-STATUS.md) und [aktueller zellenweiser Restplan](../REMAINDER-PLAN.md).
 
 **Aktueller zusammenhängender Arbeitsblock:** [Alle29 Ausgangszellen einzeln abgeglichen](../REMAINING-29-REVIEW.md). Neun begrenzte Neubewertungen,26 neue Bedingungen;20 konkrete Nachweise weiterhin offen. Keine vollständige Integration behauptet, kein Commit/Push.
 
@@ -64,4 +64,4 @@ Diese Notizen bewahren Zwischenstände und widerlegte beziehungsweise später er
 
 **DTCG-Folgeprüfung:** [Getrennte Visualquelle mit zusätzlichem Webadapter](../experiments/2026-10-25/dtcg-binding/REPORT.md), zwölf Bindungs-/Übersetzungsfälle und vier Browserbedingungen erfüllt. X01 DTCG A/C454 im begrenzten Referenzfall; zum damaligen Teilabschluss 56 U-Zellen. Kein vollständiger DTCG-Validator.
 
-**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](../experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](../experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschliesslich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.

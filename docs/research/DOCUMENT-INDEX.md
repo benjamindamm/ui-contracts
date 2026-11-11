@@ -2,7 +2,7 @@
 
 Stand: 31. Oktober 2026. Die Stammübersicht der abgeschlossenen Kandidatenrecherche stammt vom 25. Oktober (31 Markdown-Dokumente); neue Anwendungsstudien und Forschungsentscheide sind separat verlinkt. Versuchsordner werden im [Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).
 
-Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; maßgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.
+Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; massgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.
 
 ## Aktueller Einstieg und Übergabe
 
@@ -166,7 +166,7 @@ Die einzelnen Berichte sind hier zusätzlich vollständig nach Pfad auffindbar; 
 | --- | --- |
 | [INTEGRATION-PROFILE-EVIDENCE.json](INTEGRATION-PROFILE-EVIDENCE.json) | Belegpfade und Hashes des Integrationsvorschlags; kein ausführbares Produktmanifest. |
 | [REMAINDER-PLAN.json](REMAINDER-PLAN.json) | Exakt verbleibende Matrix-U-Zellen; keine offene native Testpflicht. |
-| [study.json](study.json) | Maßgebliche Bewertungen, Claims, Quellenzuordnungen und ausgeführte Prüfgruppen. |
+| [study.json](study.json) | Massgebliche Bewertungen, Claims, Quellenzuordnungen und ausgeführte Prüfgruppen. |
 
 ## Experimentordner
 

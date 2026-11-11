@@ -16,7 +16,7 @@ Stand:25. Oktober2026. **10 offene technische Nachweise:6 Integration und4 weite
 
 ## Technisch weiterhin offen
 
-Jede Zeile ist ein fehlender Nachweis, kein bloß ungeschriebener Bericht. Die genaue nächste falsifizierbare Aussage steht im [aktuellen10er-Abgleich](REMAINING-10.md) und maschinenlesbaren Restplan. Keine automatische Übertragung fremder Fähigkeiten.
+Jede Zeile ist ein fehlender Nachweis, kein bloss ungeschriebener Bericht. Die genaue nächste falsifizierbare Aussage steht im [aktuellen10er-Abgleich](REMAINING-10.md) und maschinenlesbaren Restplan. Keine automatische Übertragung fremder Fähigkeiten.
 
 | Status | Kandidat | Feld | Aktueller Befund |
 | --- | --- | --- | --- |
@@ -33,7 +33,7 @@ Jede Zeile ist ein fehlender Nachweis, kein bloß ungeschriebener Bericht. Die g
 
 ## Abgeschlossener CSS-Block und nächste technische Schritte
 
-- [x] [Zehn fachfremde CSS-/ARIA-Zellen getrennt tatsächlich nachgewiesen](../experiments/2026-10-25/css-complement-runtime/REPORT.md):27 Bedingungen mit Original-SCXML, nativer Geometrie/Fokus und Browser-AX. Ausschließlich begrenzte zusätzliche Bindungen, keine native Fremdfähigkeitszuschreibung.
+- [x] [Zehn fachfremde CSS-/ARIA-Zellen getrennt tatsächlich nachgewiesen](../experiments/2026-10-25/css-complement-runtime/REPORT.md):27 Bedingungen mit Original-SCXML, nativer Geometrie/Fokus und Browser-AX. Ausschliesslich begrenzte zusätzliche Bindungen, keine native Fremdfähigkeitszuschreibung.
 - [ ] Den konkreten uSpec-Fremdquellen-/Änderungsbinder für X03/X08 zuerst untersuchen; eine tatsächliche Originalfact-/Outputkette, getrennte Kriterienbegründungen, keine doppelte Bedingungszählung.
 - [ ] Die vier UXSpec/uSpec-Layoutfragen nur durch einen neuen entscheidenden Originalauswertungspfad oder eine ausdrücklich begründete zusätzliche Layoutbindung erweitern.
 - [ ] uSpec X01/X03/X08 und OpenPencil X01 mit konkreten führenden Fachartefakten, Zielsemantik und Änderungen verbinden. Bekannte Normalisierer-/Hash-/Messankerfälle nicht wiederholen.

@@ -17,7 +17,7 @@
     },
     {
       "id": "d02",
-      "description": "fig-Dateigröße in Bytes",
+      "description": "fig-Dateigrösse in Bytes",
       "expected": 42176,
       "actual": 42176,
       "pass": true
@@ -200,7 +200,7 @@
     },
     {
       "id": "f01d",
-      "description": "closed: Input-Maße",
+      "description": "closed: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -331,7 +331,7 @@
     },
     {
       "id": "f01w",
-      "description": "closed: Fallrahmen-Maße",
+      "description": "closed: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 100
@@ -393,7 +393,7 @@
     },
     {
       "id": "f02d",
-      "description": "opening: Input-Maße",
+      "description": "opening: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -524,7 +524,7 @@
     },
     {
       "id": "f02w",
-      "description": "opening: Fallrahmen-Maße",
+      "description": "opening: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 100
@@ -586,7 +586,7 @@
     },
     {
       "id": "f03d",
-      "description": "loading: Input-Maße",
+      "description": "loading: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -685,7 +685,7 @@
     },
     {
       "id": "f03i",
-      "description": "loading: Popup-Maße",
+      "description": "loading: Popup-Masse",
       "expected": {
         "w": 320,
         "h": 32,
@@ -829,7 +829,7 @@
     },
     {
       "id": "f03w",
-      "description": "loading: Fallrahmen-Maße",
+      "description": "loading: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 140
@@ -891,7 +891,7 @@
     },
     {
       "id": "f04d",
-      "description": "ready: Input-Maße",
+      "description": "ready: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -990,7 +990,7 @@
     },
     {
       "id": "f04i",
-      "description": "ready: Popup-Maße",
+      "description": "ready: Popup-Masse",
       "expected": {
         "w": 320,
         "h": 160,
@@ -1110,7 +1110,7 @@
     },
     {
       "id": "f04o",
-      "description": "ready: Optionszeilen (Maße)",
+      "description": "ready: Optionszeilen (Masse)",
       "expected": [
         {
           "y": 0,
@@ -1290,7 +1290,7 @@
     },
     {
       "id": "f04w",
-      "description": "ready: Fallrahmen-Maße",
+      "description": "ready: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 268
@@ -1352,7 +1352,7 @@
     },
     {
       "id": "f05d",
-      "description": "active: Input-Maße",
+      "description": "active: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -1451,7 +1451,7 @@
     },
     {
       "id": "f05i",
-      "description": "active: Popup-Maße",
+      "description": "active: Popup-Masse",
       "expected": {
         "w": 320,
         "h": 160,
@@ -1571,7 +1571,7 @@
     },
     {
       "id": "f05o",
-      "description": "active: Optionszeilen (Maße)",
+      "description": "active: Optionszeilen (Masse)",
       "expected": [
         {
           "y": 0,
@@ -1758,7 +1758,7 @@
     },
     {
       "id": "f05w",
-      "description": "active: Fallrahmen-Maße",
+      "description": "active: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 268
@@ -1820,7 +1820,7 @@
     },
     {
       "id": "f06d",
-      "description": "scroll-end: Input-Maße",
+      "description": "scroll-end: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -1919,7 +1919,7 @@
     },
     {
       "id": "f06i",
-      "description": "scroll-end: Popup-Maße",
+      "description": "scroll-end: Popup-Masse",
       "expected": {
         "w": 320,
         "h": 160,
@@ -2039,7 +2039,7 @@
     },
     {
       "id": "f06o",
-      "description": "scroll-end: Optionszeilen (Maße)",
+      "description": "scroll-end: Optionszeilen (Masse)",
       "expected": [
         {
           "y": 0,
@@ -2226,7 +2226,7 @@
     },
     {
       "id": "f06w",
-      "description": "scroll-end: Fallrahmen-Maße",
+      "description": "scroll-end: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 268
@@ -2288,7 +2288,7 @@
     },
     {
       "id": "f07d",
-      "description": "selected: Input-Maße",
+      "description": "selected: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -2419,7 +2419,7 @@
     },
     {
       "id": "f07w",
-      "description": "selected: Fallrahmen-Maße",
+      "description": "selected: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 100
@@ -2481,7 +2481,7 @@
     },
     {
       "id": "f08d",
-      "description": "empty: Input-Maße",
+      "description": "empty: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -2580,7 +2580,7 @@
     },
     {
       "id": "f08i",
-      "description": "empty: Popup-Maße",
+      "description": "empty: Popup-Masse",
       "expected": {
         "w": 320,
         "h": 32,
@@ -2724,7 +2724,7 @@
     },
     {
       "id": "f08w",
-      "description": "empty: Fallrahmen-Maße",
+      "description": "empty: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 140
@@ -2786,7 +2786,7 @@
     },
     {
       "id": "f09d",
-      "description": "error: Input-Maße",
+      "description": "error: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -2885,7 +2885,7 @@
     },
     {
       "id": "f09i",
-      "description": "error: Popup-Maße",
+      "description": "error: Popup-Masse",
       "expected": {
         "w": 320,
         "h": 32,
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "f09w",
-      "description": "error: Fallrahmen-Maße",
+      "description": "error: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 140
@@ -3091,7 +3091,7 @@
     },
     {
       "id": "f10d",
-      "description": "disabled: Input-Maße",
+      "description": "disabled: Input-Masse",
       "expected": {
         "w": 320,
         "h": 44,
@@ -3222,7 +3222,7 @@
     },
     {
       "id": "f10w",
-      "description": "disabled: Fallrahmen-Maße",
+      "description": "disabled: Fallrahmen-Masse",
       "expected": {
         "w": 320,
         "h": 100

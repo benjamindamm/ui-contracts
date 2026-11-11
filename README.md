@@ -16,7 +16,7 @@ flowchart TB
     O -->|Schnelles Feedback| W
 ```
 
-**Gemeinsam festlegen, sofort sehen, früh klären.** Business, Führung, Design und Entwicklung spezifizieren mit dem Agenten die gewünschte UI. Er erzeugt Code, Screens oder Figma-Designs für direktes Feedback. Entscheidungen fließen ins Handbuch zurück; Missverständnisse werden früh sichtbar.
+**Gemeinsam festlegen, sofort sehen, früh klären.** Business, Führung, Design und Entwicklung spezifizieren mit dem Agenten die gewünschte UI. Er erzeugt Code, Screens oder Figma-Designs für direktes Feedback. Entscheidungen fliessen ins Handbuch zurück; Missverständnisse werden früh sichtbar.
 
 Der Ablauf unterstützt eine **Lean-UX-Arbeitsweise**: gemeinsam entwerfen, früh ausprobieren und aus Feedback lernen. UI Contracts hält die vereinbarten Regeln nachvollziehbar fest. Ob eine Lösung den Nutzern tatsächlich hilft, muss zusätzlich mit ihnen geprüft werden. [Einordnung zu Hypothesen und Experimenten von Jeff Gothelf](https://jeffgothelf.com/blog/process-experiments/).
 
@@ -34,7 +34,18 @@ flowchart LR
     H <-->|Abgleichen| C[Codebase]
 ```
 
-Der Austausch geht in beide Richtungen: Vorgaben können in Designs und Code umgesetzt werden. Umgekehrt können bestehende Designs oder eine Codebase als Ausgangspunkt dienen, um Regeln zu erschließen und Änderungen ins Handbuch zurückzuführen. Der Agent unterstützt diesen Abgleich; das Team entscheidet über offene Fragen und Änderungen an den gemeinsamen Vorgaben. [Rückweg-Anleitungen](skills/ui-contracts/references/reverse.md) · [Draftlücken sichtbar machen](tools/completeness/README.md).
+Der Austausch geht in beide Richtungen: Vorgaben können in Designs und Code umgesetzt werden. Umgekehrt können bestehende Designs oder eine Codebase als Ausgangspunkt dienen, um Regeln zu erschliessen und Änderungen ins Handbuch zurückzuführen. Der Agent unterstützt diesen Abgleich; das Team entscheidet über offene Fragen und Änderungen an den gemeinsamen Vorgaben. [Rückweg-Anleitungen](skills/ui-contracts/references/reverse.md) · [Draftlücken sichtbar machen](tools/completeness/README.md).
+
+### Claude Design und UI Contracts
+
+| Aufgabe | Claude Design | UI Contracts |
+| --- | --- | --- |
+| **Code lesen** | Liest Komponenten und Styles aus der Codebasis. | Erschliesst Schnittstellen, Gestaltung und beobachtbares Verhalten aus bestehendem Code. |
+| **Designs lesen und umsetzen** | Nutzt Figma-Dateien und Screenshots als Vorlage für neue Entwürfe und interaktive Prototypen. | Erschliesst Regeln aus bestehenden Designs und leitet daraus Entwürfe ab, etwa für OpenPencil. |
+| **Verhalten verbindlich dokumentieren** | Zeigt Verhalten im Prototyp. Eine eigenständige, prüfbare Verhaltensspezifikation ist in der Produktdoku nicht beschrieben. | Hält Zustände, Ereignisse und Übergänge in SCXML fest. Ein Prüffall kann etwa zeigen, ob die Suche verspätete Antworten korrekt behandelt. |
+| **Barrierefreiheit verbindlich dokumentieren** | Kann Barrierefreiheit im Entwurf berücksichtigen. Eine eigenständige, prüfbare A11y-Spezifikation ist in der Produktdoku nicht beschrieben. | Hält etwa zugängliche Namen, Rollen und Beziehungen in HTML/ARIA fest. Ausgewählte Regeln lassen sich an der Umsetzung prüfen. |
+
+[Claude Design bei Anthropic](https://support.claude.com/en/articles/14604397-set-up-your-design-system-in-claude-design) · [UI Contracts aus Code und Design ableiten](skills/ui-contracts/references/reverse.md)
 
 ## So sieht ein Ergebnis aus
 

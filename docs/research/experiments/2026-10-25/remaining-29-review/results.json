@@ -54,7 +54,7 @@
       "current_claim": "C483",
       "disposition": "Originalentscheidung fehlt",
       "finding": "Das echte ConfigSchema prüft Redaktionskonfiguration, nicht eingereichte DESIGN.md-Inhalte. Der neu ausgeführte Coloroutput beantwortet diese andere Frage nicht.",
-      "missing_assertion": "Neue originale Bindung Dokumentdatenmodell↔Originalschema/Ergebnisbedeutung einschließlich Optionalität; keine erneute Config-/Parserprobe.",
+      "missing_assertion": "Neue originale Bindung Dokumentdatenmodell↔Originalschema/Ergebnisbedeutung einschliesslich Optionalität; keine erneute Config-/Parserprobe.",
       "evidence_report": "experiments/2026-10-25/final-x06-scope/REPORT.md",
       "report_sha256": "7cda825fe28928d0305ee1f48a6c33909ffc0db64d52e0f78890eb97db2558f5",
       "runtime_conditions_added_for_this_reassessment": 0
@@ -95,7 +95,7 @@
       "current_claim": "C420",
       "disposition": "Benannter Originalpfad ausgewertet",
       "finding": "Layerparent und gestreckte absolute Kindwrapper sind belegt; kein benanntes fremdes Runtime-Ziel mit Kante/Richtung/Abstand. Compiler-X01 prüft Zustände, nicht Zielgeometrie.",
-      "missing_assertion": "Neuer tatsächlich benannter Target-/Mess-/Rendererpfad oder ausdrücklich zusätzliche Beziehung mit Größenänderungsgegenfall; kein freies anchor-Feld ohne Interpreter.",
+      "missing_assertion": "Neuer tatsächlich benannter Target-/Mess-/Rendererpfad oder ausdrücklich zusätzliche Beziehung mit Grössenänderungsgegenfall; kein freies anchor-Feld ohne Interpreter.",
       "evidence_report": "experiments/2026-10-25/uxspec-layout-scope/REPORT.md",
       "report_sha256": "f8636bd587660832f222f423538100aad0ddf19084a282149989e0970d331009",
       "runtime_conditions_added_for_this_reassessment": 0
@@ -354,7 +354,7 @@
       "coverage_after": "U",
       "current_claim": "C377",
       "disposition": "Fachlicher Zusatzbeitrag fehlt",
-      "finding": "Berechnete Boxgrößen sind keine typisierten Such-/Kontext-/Bestätigungsdaten. Alte Alpha-Payloadprobe belegt keine allgemeine datengesteuerte Layoutbindung.",
+      "finding": "Berechnete Boxgrössen sind keine typisierten Such-/Kontext-/Bestätigungsdaten. Alte Alpha-Payloadprobe belegt keine allgemeine datengesteuerte Layoutbindung.",
       "missing_assertion": "Eigenständige Event-/Kontextdaten konkret durch ursprüngliche Auswertung bis zur benannten Layoutausgabe verfolgen; fremde Instanz und falscher Datentyp abweisen.",
       "evidence_report": "experiments/2026-10-25/scxml-runtime/REPORT.md",
       "report_sha256": "48a144be3fd204b1d60864b68d71d5e441dcded1b93b1b935d3025246f97df10",

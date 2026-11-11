@@ -16,7 +16,7 @@ pro Story aus `components/autocomplete/stories.json`: `Autocomplete/closed`,
 `Autocomplete/disabled`. Innerhalb jedes Falls sind die Teile getrennt und verständlich benannt
 (`label`, `input` mit `input.query`, `overlay.surface`, `overlay.scroll.viewport`,
 `overlay.scroll.content`, `list`, `option/<key>`, `status`; in loading/empty/error zusätzlich
-`message`). Sämtliche Gestaltung (Fills, Strokes, Radien, Schatten, Texte, Maße) stammt als
+`message`). Sämtliche Gestaltung (Fills, Strokes, Radien, Schatten, Texte, Masse) stammt als
 strukturierte, editierbare Knoteneigenschaften aus den Definitionsdateien — keine eingebetteten
 Bilder (Prüfung `reimport.no-images`: 0 `IMAGE`-Knoten).
 
@@ -35,9 +35,9 @@ Bilder (Prüfung `reimport.no-images`: 0 `IMAGE`-Knoten).
 6. 109 Selbstprüfungen (erwartet vs. tatsächlich, konkrete Werte) laufen gegen den
    wiedereingelesenen Graphen → `checks.json`: **109 bestanden, 0 fehlgeschlagen**.
 
-**Größen und Knoten (letzter Lauf):**
+**Grössen und Knoten (letzter Lauf):**
 
-| Artefakt | Größe |
+| Artefakt | Grösse |
 | --- | --- |
 | `autocomplete.fig` | 31.065 Bytes |
 | `preview.png` | 193.917 Bytes (3744 × 1408 px, Scale 2) |
@@ -54,11 +54,11 @@ Exakter Befehl vom Repositorystamm aus:
 node examples/autocomplete/reproducibility/run-03/builder-b/generate.mjs
 ```
 
-Das Skript löst seine Pfade relativ zu seiner eigenen Position auf und verwendet ausschließlich
+Das Skript löst seine Pfade relativ zu seiner eigenen Position auf und verwendet ausschliesslich
 die gepinnte Umgebung `tools/openpencil/node_modules` (via `createRequire`-Anker an
 `tools/openpencil/package.json`). Ein erneuter Lauf überschreibt exakt die fünf Ausgaben
 `autocomplete.fig`, `preview.png`, `preview.svg`, `checks.json`, `source-sha256.json` im selben
-Ordner und ändert nichts außerhalb (zweimal ausgeführt und verglichen, siehe „Tatsächliche
+Ordner und ändert nichts ausserhalb (zweimal ausgeführt und verglichen, siehe „Tatsächliche
 Prüfung“).
 
 ## Tatsächliche Prüfung
@@ -117,7 +117,7 @@ Dateiinhaltsebene, nicht am Speichergraphen:
 
 | Ergebnis in der Datei | Definitionsdatei (Quelle) |
 | --- | --- |
-| Maße: Breite 320, Input 44, Zeile 32, Max 160, Lücken 8, Radius 8, Padding 12, Zeilenhöhe 20, Schriften 14/12; Farben surface/text/muted/border/focus/highlight/disabled/error; Schriftfamilie Inter | `components/tokens.json` (inkl. `base.*`-Referenzen) |
+| Masse: Breite 320, Input 44, Zeile 32, Max 160, Lücken 8, Radius 8, Padding 12, Zeilenhöhe 20, Schriften 14/12; Farben surface/text/muted/border/focus/highlight/disabled/error; Schriftfamilie Inter | `components/tokens.json` (inkl. `base.*`-Referenzen) |
 | Grundgeometrie: Label → Input (labelGap), Popup am Inputende + gap mit gleicher Breite/Kante, Viewport `min(n × rowHeight, maxHeight)`, Status nach statusGap unter sichtbarem Popup sonst unter Input, verborgenes Popup belegt keinen Platz | `components/autocomplete/layout.css` + `components/autocomplete/README.md` („Sichtbare Geometrie“) |
 | Zustandsregeln: Fokusrand in opening/loading/ready/empty/error; `:disabled` (Textfarbe, Randfarbe); Placeholder-Farbe; aktive Option mit highlight-Hintergrund; deaktivierte Option mit disabled-Farbe; Status-Farbe in error | `components/autocomplete/layout.css` |
 | Overlayfläche: margin-top = gap, Hintergrund surface, kein Rand, Radius, `box-shadow: 0 2px 8px #0003` (roher Wert an die JSX-Prop `shadow`, Original-Parser `parseCSSShadows`) | `components/overlay/layout.css` |
@@ -160,11 +160,11 @@ nicht eindeutig fest oder der Canvas-Adapter kann sie nicht abbilden:
 6. **Namen abgeleiteter Teile.** Die Anatomie liefert nur sieben Teilnamen. Die zusätzlichen,
    frei vergebenen Namen: `overlay.scroll.content` (aus dem ScrollArea-Teil `content`),
    `input.query` (Text im Input), `message` (Meldungszeile), `option/<key>` (Option nach
-   fachlichem Key, gemäß „wird über den fachlichen Key identifiziert“), Textkinder der Optionen
-   und der Meldung heißen `label` (Namensquelle `result.label`).
+   fachlichem Key, gemäss „wird über den fachlichen Key identifiziert“), Textkinder der Optionen
+   und der Meldung heissen `label` (Namensquelle `result.label`).
 7. **Seitenlayout.** Explizit frei laut Exportrahmen: Titel-Text („Autocomplete — 10 benannte
    Zustände …“, Inter 16, Gewicht 600, Textfarbe aus den Tokens), Raster 5 × 2, Rand 48 px,
-   Spalten-/Zeilenabstand 64 px, Zeilenhöhe = größte Fallhöhe (268 px).
+   Spalten-/Zeilenabstand 64 px, Zeilenhöhe = grösste Fallhöhe (268 px).
 8. **Scroll-Offset in `scroll-end`.** „entsprechend versetzt“ ist nicht numerisch fixiert.
    Entscheidung: Volles Scroll-Ende, Offset = Listenhöhe − Viewporthöhe = 224 − 160 = **64 px**;
    damit ist Zürich (letzte aktive Option) vollständig im Viewport (Prüfung dokumentiert).

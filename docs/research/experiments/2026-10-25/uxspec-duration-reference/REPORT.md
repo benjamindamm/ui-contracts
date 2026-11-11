@@ -16,13 +16,13 @@ UXSpec-Revision `20dfae0e7224d952e198afdf4ffed26d6fd67180`: unveränderte vollst
 
 ## Warum eine zusätzliche Übersetzung nötig ist
 
-Der Originalimporter liest $tokens eines UXSpec-Dokuments. Die direkte DTCG-Datei besitzt diesen Wrapper nicht; die nachfolgende ursprüngliche Auflösung meldet UNKNOWN_IMPORTED_TOKEN_REFERENCE. Bloßes Umschließen des unveränderten duration-Werts löst das Problem nicht: Der ursprüngliche Resolver reduziert value/unit auf die Zahl, und extractMs erhält1 für die ursprüngliche1s-Dauer. Der Compiler meldet dabei keinen Fehler. Die gewünschte Zeit1000ms ist in diesem akzeptierten Originalgegenfall **nicht** erhalten.
+Der Originalimporter liest $tokens eines UXSpec-Dokuments. Die direkte DTCG-Datei besitzt diesen Wrapper nicht; die nachfolgende ursprüngliche Auflösung meldet UNKNOWN_IMPORTED_TOKEN_REFERENCE. Blosses Umschliessen des unveränderten duration-Werts löst das Problem nicht: Der ursprüngliche Resolver reduziert value/unit auf die Zahl, und extractMs erhält1 für die ursprüngliche1s-Dauer. Der Compiler meldet dabei keinen Fehler. Die gewünschte Zeit1000ms ist in diesem akzeptierten Originalgegenfall **nicht** erhalten.
 
 ## Explizite zusätzliche Projektion und Zielbindung
 
 Quellort: tokens.json, /motion/animationDuration, $type=duration, expliziter Dateihash. Der eigene Zusatzschritt prüft Zielknoten, positive endliche Zahl und ms/s. Er rechnet1s→1000ms beziehungsweise lässt1000ms unverändert. Diese begrenzte Übersetzung ist eigener Forschungscode, kein vollständiger DTCG-Resolver oder Originalvalidator.
 
-Die erzeugte projektionelle UXSpec-Bibliothek besitzt einen number-Token delay mit dem Millisekundenwert. Sie ist ein vollständiges originalschemafähiges UXSpec-Rootdokument. Der dafür notwendige minimale namespace-Maschinenroot ist ausschließlich generiertes Pflichtgerüst; er wird nicht über imports.machine angefordert oder ausgeführt. Dieses Gerüst wird nicht verschwiegen und löst UXSpecs offene X01-Frage nicht. Der ursprüngliche DTCG-Quellvertrag bleibt unverändert und erhält keine fremde primäre Maschinenbeschreibung.
+Die erzeugte projektionelle UXSpec-Bibliothek besitzt einen number-Token delay mit dem Millisekundenwert. Sie ist ein vollständiges originalschemafähiges UXSpec-Rootdokument. Der dafür notwendige minimale namespace-Maschinenroot ist ausschliesslich generiertes Pflichtgerüst; er wird nicht über imports.machine angefordert oder ausgeführt. Dieses Gerüst wird nicht verschwiegen und löst UXSpecs offene X01-Frage nicht. Der ursprüngliche DTCG-Quellvertrag bleibt unverändert und erhält keine fremde primäre Maschinenbeschreibung.
 
 Der ebenfalls originalschemafähige Consumer importiert clock mit tokens:true und referenziert {clock:delay} genau in $machine.states.active.$visual.autoDismiss. Der ursprüngliche Compiler liefert die tatsächliche Zustandsvisualisierung mit1000; die tatsächliche ursprüngliche extractMs-Funktion erhält1000. AUTO_DISMISS und der Zielzustand done sind im Consumer ausdrücklich beschrieben; tatsächliches zeitgesteuertes Ausführen dieses Übergangs wird nicht behauptet.
 

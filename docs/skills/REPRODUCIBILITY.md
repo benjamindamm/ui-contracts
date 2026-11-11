@@ -2,7 +2,7 @@
 
 Gilt für künftige explizit beauftragte Reproduktions-/Modellvergleiche. Normale Komponentenarbeit muss nicht dieses vollständige Forschungsprotokoll führen. Herkunft: [AC-R02-Analyse](../research/analyses/AC-R02/README.md) und [Fehlerregister](ISSUES.md).
 
-Für die eigentliche Aufgabenzerlegung und Wissensübergabe gilt der [operative Skill-Workflow](../../skills/ui-contracts/references/workflow.md) mit [Auftrags-/Übergabevertrag](../../skills/ui-contracts/references/handoff-contract.md). Dieser funktioniert auch außerhalb einer Studie; das vorliegende Dokument ergänzt die Forschungsprovenienz. Übergaben sind kleine versionierte Ergebnisse mit Originalquellen und benötigten Artefakten, keine vollständigen fremden Gesprächsverläufe.
+Für die eigentliche Aufgabenzerlegung und Wissensübergabe gilt der [operative Skill-Workflow](../../skills/ui-contracts/references/workflow.md) mit [Auftrags-/Übergabevertrag](../../skills/ui-contracts/references/handoff-contract.md). Dieser funktioniert auch ausserhalb einer Studie; das vorliegende Dokument ergänzt die Forschungsprovenienz. Übergaben sind kleine versionierte Ergebnisse mit Originalquellen und benötigten Artefakten, keine vollständigen fremden Gesprächsverläufe.
 
 ## Vor dem Lauf
 
@@ -14,7 +14,7 @@ Für die eigentliche Aufgabenzerlegung und Wissensübergabe gilt der [operative 
 
 ## Während der Erzeugung
 
-Eine kurze technische Probe darf technische Unsicherheit klären. Anschließend zuerst eine minimale vollständige Lieferung aller geforderten Fälle exportieren und zurücklesen; danach verfeinern und Bericht schreiben. Keine vollständige generische Toolanalyse betreiben, bevor irgendein prüfbares Artefakt existiert. Der genaue Lieferplan hängt vom Auftrag ab.
+Eine kurze technische Probe darf technische Unsicherheit klären. Anschliessend zuerst eine minimale vollständige Lieferung aller geforderten Fälle exportieren und zurücklesen; danach verfeinern und Bericht schreiben. Keine vollständige generische Toolanalyse betreiben, bevor irgendein prüfbares Artefakt existiert. Der genaue Lieferplan hängt vom Auftrag ab.
 
 Vor dem absehbaren Budgetende Checkpoint mit Lieferstatus, verbleibenden Aufgaben, Annahmen und Dateihashes schreiben. Bei einem tatsächlichen Stopp einen eigenen Event aufzeichnen. Fortsetzung in derselben Session mit neutraler Nachricht, z. B. „Setze den unveränderten Auftrag aus deinem eigenen Checkpoint fort.“ Den exakten Fortsetzungstext speichern. Neue fachliche Hinweise oder eine geänderte Priorisierung gesondert kennzeichnen; sie dürfen nicht als unveränderte Versuchsbedingung verschwinden.
 
@@ -26,7 +26,7 @@ Ein erfolgreicher Abschluss ist ein `complete`-Event, kein weiterer `stop`. Zwis
 - Automatische Prüfungen müssen messen und assertieren. Manuelle Urteile separat mit Beleg dokumentieren; ein konstantes `True` ist keine neu ausgeführte Prüfung. Jeder neue Prüfmechanismus bekommt einen gültigen und einen fehlerhaften Gegenfall. Stichproben als Stichproben kennzeichnen, nicht auf alle Optionen/Zustände hochrechnen.
 - Benötigte Eigenschaften, für die ein Format keinen vereinbarten Kanal hat, sind `notChecked` beziehungsweise für die Freigabe dieses Umfangs `BLOCKED`; keine pauschalen A11Y-Fails oder -Passes erfinden. Ein statischer Semantikvertrag muss erst Format, Node-/Instanz-/Statebindung und Roundtrip-Nachweis festlegen. Bis dahin keine vollständige Semantikabnahme behaupten.
 - Schriftfamilien-Strings sind kein Fontdatei-Nachweis. Renderer, tatsächliche Fonts, Hashes und Fallbacks festhalten, wenn Bildgleichheit bewertet werden soll. Native Werte und gerenderte Pixel getrennt berichten.
-- Nach einem Fund: ID, Originalbeleg, Quellregel, Gegenfall, Ursache, aktuelle Reparatur, Regressionstest und Restgrenze in [ISSUES.md](ISSUES.md) ergänzen. Bei Wiederauftreten denselben Ursachenbezug verwenden, statt den früheren Befund zu überschreiben. Historische Ergebnisse bleiben unverändert, Korrekturen als datierter Nachtrag außerhalb des Laufs.
+- Nach einem Fund: ID, Originalbeleg, Quellregel, Gegenfall, Ursache, aktuelle Reparatur, Regressionstest und Restgrenze in [ISSUES.md](ISSUES.md) ergänzen. Bei Wiederauftreten denselben Ursachenbezug verwenden, statt den früheren Befund zu überschreiben. Historische Ergebnisse bleiben unverändert, Korrekturen als datierter Nachtrag ausserhalb des Laufs.
 
 ## Prozessdaten für den Metadatenprüfer
 

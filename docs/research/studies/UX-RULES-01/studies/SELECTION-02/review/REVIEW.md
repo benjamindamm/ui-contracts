@@ -21,11 +21,11 @@ Der Koordinator bediente die echten lokalen Seiten über BrowserOS neo mit synth
 
 Bei B öffnet der Trigger den Picker und fokussiert die Suche. „Indien“ liefert IN. Pfeilnavigation bewegt den Fokus auf die Option, ohne den Wert bereits zu ändern; Enter bestätigt IN und stellt Triggerfokus wieder her. Danach filtert „+1“ Kanada und USA, während bestätigter Schlüssel und angezeigtes Label Indien unverändert bleiben. Escape verwirft nur die Suchabfrage. Die beiden +1-Länder sind getrennt auswählbar. End-Navigation erreicht SK und scrollt die Zeile tatsächlich in den sichtbaren Bereich. Unbekannte Suche erzeugt weder Option noch neuen Schlüssel.
 
-### SEL2-B01: Fokusverlust beim Schließen
+### SEL2-B01: Fokusverlust beim Schliessen
 
-In der Erstlieferung B schloss ein focusout-Microtask das Popup zu früh: Während der internen Fokusübertragung von Suchfeld zu „Schließen“ war document.activeElement vorübergehend BODY. Die dadurch verborgene Schaltfläche konnte keinen Klick mehr empfangen; der Fokus blieb auf BODY. Zweimal reproduziert und mit tatsächlicher pointer-/focus-Ereignisfolge erfasst. [Erstbewertung vor Reparatur](first-assessment.json).
+In der Erstlieferung B schloss ein focusout-Microtask das Popup zu früh: Während der internen Fokusübertragung von Suchfeld zu „Schliessen“ war document.activeElement vorübergehend BODY. Die dadurch verborgene Schaltfläche konnte keinen Klick mehr empfangen; der Fokus blieb auf BODY. Zweimal reproduziert und mit tatsächlicher pointer-/focus-Ereignisfolge erfasst. [Erstbewertung vor Reparatur](first-assessment.json).
 
-Derselbe Builder erstellte b-repair-01 und berücksichtigt nun relatedTarget für interne Fokuswechsel. HTML, CSS und Entscheidung sind bytegleich übernommen; Erstdateien bleiben unverändert. Schließen, interner Fokuswechsel, Commit, Escape und echtes Verlassen per Tab wurden im Browser erneut geprüft. Im Rohbeleg bezeichnet tabOutside zunächst den noch internen Schließen-Button; erst der separat protokollierte dritte Tab verlässt das Popup. Diese Prüfschrittbezeichnung wird ausdrücklich klargestellt, nicht als bestandener externer Übergang ausgegeben.
+Derselbe Builder erstellte b-repair-01 und berücksichtigt nun relatedTarget für interne Fokuswechsel. HTML, CSS und Entscheidung sind bytegleich übernommen; Erstdateien bleiben unverändert. Schliessen, interner Fokuswechsel, Commit, Escape und echtes Verlassen per Tab wurden im Browser erneut geprüft. Im Rohbeleg bezeichnet tabOutside zunächst den noch internen Schliessen-Button; erst der separat protokollierte dritte Tab verlässt das Popup. Diese Prüfschrittbezeichnung wird ausdrücklich klargestellt, nicht als bestandener externer Übergang ausgegeben.
 
 ## Herkunft, Grenzen und Lernpunkte
 

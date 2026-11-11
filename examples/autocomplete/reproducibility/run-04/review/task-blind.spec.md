@@ -15,11 +15,11 @@ Vorgabe vor Einsicht in die Builder-Ausgaben. Die formale `task-blind.json` wird
 - `acceptance`:
   - `blind-basis` (required): Erstbewertung basiert nur auf Originalquellen, Policy, technischen Werkzeugen und den zwei gelieferten FIGs; kein Builder-Handoff/-Report in der Blindphase gelesen.
   - `countercheck` (required): `tools/design-review/check.py --run …/run-04` wurde tatsächlich ausgeführt; Exitcode, Blockerliste und Receipt (Pfad + SHA-256) sind dokumentiert.
-  - `soll-ist` (required): Pro FIG konkrete Soll-/Ist-Aussagen zu Fällen, Teilen, Maßen, Farben, Texten mit Quellenlocatoren; Wiederverwendung der gemessenen Werte statt Neubehauptung.
+  - `soll-ist` (required): Pro FIG konkrete Soll-/Ist-Aussagen zu Fällen, Teilen, Massen, Farben, Texten mit Quellenlocatoren; Wiederverwendung der gemessenen Werte statt Neubehauptung.
   - `freeze` (required): `first-review.json` enthält Artefakt-, Quell- und Policyhashes und ist vor jeglichem Reportabgleich geschrieben (eingefroren).
-  - `handoff` (required): `handoff-blind-v1.json` mit Receipts, Artefaktlisten, Claims und Checks gemäß Übergabevertrag.
+  - `handoff` (required): `handoff-blind-v1.json` mit Receipts, Artefaktlisten, Claims und Checks gemäss Übergabevertrag.
 - `context`: Standardbudgets (Bootstrap 2000, Inline 8000, Handoff 16000).
 
 ## Kontextregel
 
-Frische Kind-Session ohne übernahmene Elternhistorie (OpenCode-Subagenten-Start). Die Reportabgleichsphase läuft anschließend in derselben Prüfer-Session mit einer eigenen Aufgabe in Phase `report-check`; die Blindbewertung bleibt dabei unverändert.
+Frische Kind-Session ohne übernahmene Elternhistorie (OpenCode-Subagenten-Start). Die Reportabgleichsphase läuft anschliessend in derselben Prüfer-Session mit einer eigenen Aufgabe in Phase `report-check`; die Blindbewertung bleibt dabei unverändert.

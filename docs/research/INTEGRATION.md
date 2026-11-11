@@ -3,7 +3,7 @@
 **Konsolidierter Vorschlag vom 25. Oktober 2026:** [IP-01](INTEGRATION-PROFILE.md) mit [geplanter Gesamt-Abnahme](INTEGRATION-ACCEPTANCE.md). Der folgende Text bewahrt den historischen Arbeitsstand.
 
 
-**Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
+**Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Massgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
 
 **Typisierte Referenzbindung geprüft:** [ARIA-Host → externe CEM-/SCXML-Knoten](experiments/2026-10-25/typed-references/REPORT.md), 16 Erwartungen erfüllt, Original-CEM/SCXML-Schemas separat akzeptiert. WAI-ARIA X03 begrenzt A/C462 durch Zusatzresolver; keine native ARIA-Modellreferenz. Aktuell 54 U, 299 Bedingungen/36 Gruppen.
 
@@ -13,7 +13,7 @@
 
 **DTCG-Folgeprüfung:** [Getrennte Visualquelle mit zusätzlichem Webadapter](experiments/2026-10-25/dtcg-binding/REPORT.md), zwölf Bindungs-/Übersetzungsfälle und vier Browserbedingungen erfüllt. X01 DTCG A/C454 im begrenzten Referenzfall; zum damaligen Teilabschluss 56 U-Zellen. Kein vollständiger DTCG-Validator.
 
-**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschliesslich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
 
 # Integrationskonzept: getrennte Verträge, gemeinsame Bezüge
 
@@ -25,7 +25,7 @@ Stand: 24. Oktober 2026. **Diskussions- und Arbeitsentwurf, keine ausgewählte T
 
 **Belegter Forschungsstand im begrenzten Prüfumfang:** Die Kandidaten liefern unterschiedliche Teilbeiträge. Eine vollständige gemeinsame Verbindung aller vier Domänen wurde nicht nachgewiesen. Eine offene Matrixzelle bedeutet fehlenden Nachweis, nicht bewiesene Unmöglichkeit. Die Einzelbefunde stehen in [Matrix](MATRIX.md), [Begründungen](CLAIMS.md) und [Quellen](SOURCES.md); besonders relevant sind X01–X08.
 
-**Vorschlag dieses Dokuments:** Eine kleine Integrationsschicht beschreibt ausschließlich die Beziehungen, die die Fachmodelle nicht bereits eindeutig abdecken. Sie soll keine zweite Sprache für Properties, Tokens, Zustandsmaschinen oder Accessibility werden. Ob dazu ein eigenes Artefakt nötig ist oder vorhandene Referenzmechanismen genügen, bleibt zu prüfen.
+**Vorschlag dieses Dokuments:** Eine kleine Integrationsschicht beschreibt ausschliesslich die Beziehungen, die die Fachmodelle nicht bereits eindeutig abdecken. Sie soll keine zweite Sprache für Properties, Tokens, Zustandsmaschinen oder Accessibility werden. Ob dazu ein eigenes Artefakt nötig ist oder vorhandene Referenzmechanismen genügen, bleibt zu prüfen.
 
 ## 2. Drei verschiedene Fragen
 
@@ -35,7 +35,7 @@ Stand: 24. Oktober 2026. **Diskussions- und Arbeitsentwurf, keine ausgewählte T
 | Bedeutung der Beziehung | Wie wird ein Zustand, Ereignis oder Teil auf das andere Modell bezogen? | Gleich geschriebene Zustände können unterschiedliche Bedeutung haben |
 | Zuständigkeit | Welche Quelle definiert eine Information und wer konsumiert sie? | Zwei widersprüchliche Definitionen werden durch einen Verweis nicht konsistent |
 
-Ein gemeinsames ID-Format allein löst die letzten beiden Fragen nicht. Ein Verweis auf eine Schemadefinition ist außerdem keine Komponenteninstanz. Das ist bereits als Prüfgrenze in der [Forschungsplanung](archive/RESEARCH-PLAN.md#1-gemeinsame-referenzen-und-komposition) festgehalten.
+Ein gemeinsames ID-Format allein löst die letzten beiden Fragen nicht. Ein Verweis auf eine Schemadefinition ist ausserdem keine Komponenteninstanz. Das ist bereits als Prüfgrenze in der [Forschungsplanung](archive/RESEARCH-PLAN.md#1-gemeinsame-referenzen-und-komposition) festgehalten.
 
 ## 3. Identität und Komposition – vorgeschlagenes Begriffsmodell
 
@@ -116,7 +116,7 @@ Vier Nachweise sind auseinanderzuhalten: Originalschema/Originalwerkzeug je Dom�
 
 1. Quellenstände, Zuständigkeiten und vorhandene Teilbindungen lesen.
 2. Änderung in der führenden Domäne beschreiben; betroffene Beziehungen auflisten.
-3. Eigene Domänenprüfung und anschließend die betroffenen gemeinsamen Bindungen prüfen.
+3. Eigene Domänenprüfung und anschliessend die betroffenen gemeinsamen Bindungen prüfen.
 4. Unaufgelöste Ziele, Informationsverluste und Konflikte ausdrücklich melden.
 5. Änderungen und Nachweise gemeinsam zur Übernahme bereitstellen; erst nach tatsächlicher Übernahme Aufgaben abhaken.
 

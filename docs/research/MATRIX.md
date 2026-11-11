@@ -48,7 +48,7 @@ Grundlage ist **SCXML 1.0, W3C Recommendation vom 1. September 2015**, mit abgeg
 
 ## XState auf einen Blick – vertieft geprüft
 
-**Erstrunde: 21 von 24 geklärt. Nach Gesamtprüfung: 22 von 24; 2 U bleiben.** Zusammen mit den 2 bisherigen Bewertungen sind 24 von 26 eingeordnet. Geprüft wurde ausschließlich XState.
+**Erstrunde: 21 von 24 geklärt. Nach Gesamtprüfung: 22 von 24; 2 U bleiben.** Zusammen mit den 2 bisherigen Bewertungen sind 24 von 26 eingeordnet. Geprüft wurde ausschliesslich XState.
 
 - **Kann:** Zustände und Übergänge, typisierte Actor-Eingaben und öffentliche ausgegebene Events, Guards/Actions und Context-Verarbeitung beschreiben. Actor-Komposition bietet eigene Instanzen und Lebenszyklen.
 - **Braucht Bindungen:** Konkrete UI-Tastatur-/Fokusereignisse und UI-Effekte benötigen Hostcode. Benutzerdefinierte Implementierungen bleiben JS/TS; serialisierte Namen oder persistierte Snapshots ersetzen diese Semantik nicht.
@@ -114,7 +114,7 @@ Vier unabhängige Domänenquellen, neutrale fachliche Referenzen und ein Origina
 
 **22 der 25 zuvor offenen Felder geklärt; X01/X06/X08 bleiben offen.** Verteilung D8/R1/A3/N11/U3. Vorhandenes V02/D bestätigt.
 
-Starker Visualbeitrag: typisierte Tokens, Slot-Rezepte, Varianten, Themes, Größen- und Overflowregeln. CSS Anchor Positioning ist als Referenzbeitrag R dokumentiert; Panda verwaltet Ankernamen nicht selbst. Frameworkwrapper und Designsystem-Paketauflösung bieten konkrete Adapteransätze, keine neutrale Komponenten-/Abhängigkeitssemantik. Kein UX-Automat oder eigenes Accessibility-Fachmodell im begrenzten Kern.
+Starker Visualbeitrag: typisierte Tokens, Slot-Rezepte, Varianten, Themes, Grössen- und Overflowregeln. CSS Anchor Positioning ist als Referenzbeitrag R dokumentiert; Panda verwaltet Ankernamen nicht selbst. Frameworkwrapper und Designsystem-Paketauflösung bieten konkrete Adapteransätze, keine neutrale Komponenten-/Abhängigkeitssemantik. Kein UX-Automat oder eigenes Accessibility-Fachmodell im begrenzten Kern.
 
 **Neu belegter JSON-Spec-Export:** normalisierter Metadatenindex, kein verlustloses vollständiges Style-Original. Reader prüft flach und vertraut Zeilen; CLI-Flagschema ist kein fachliches Contractschema. Vollständiger unabhängiger Visualvalidator und vierdomänige Ownership bleiben ungeklärt. Quellenstand 24. Oktober 2026, Defaultbranch v2, Commit `86f78a228204d63baa0b8bca2676d9f26190e449`, @pandacss/dev 2.4.0 / Node >=22 laut Paketdatei. Keine Installation oder Ausführung.
 
@@ -150,10 +150,10 @@ ARIA erzeugt nicht automatisch richtige Interaktion. §9 begrenzt Browserprüfun
 
 ## CSS Layout auf einen Blick – vertieft geprüft
 
-**Neue begrenzte Ergänzung:** Neun fachfremde Zellen sind A/C526–C534 ausschließlich durch [jeweils eigene tatsächliche Zusatzbindungen](experiments/2026-10-25/css-complement-runtime/REPORT.md). CSS selbst definiert weiterhin keine öffentlichen Komponentenpayloads, UX-Maschine oder zugängliche Semantik. Native Originalfähigkeit und zusätzliche gemeinsame Ausführung bleiben getrennt.
+**Neue begrenzte Ergänzung:** Neun fachfremde Zellen sind A/C526–C534 ausschliesslich durch [jeweils eigene tatsächliche Zusatzbindungen](experiments/2026-10-25/css-complement-runtime/REPORT.md). CSS selbst definiert weiterhin keine öffentlichen Komponentenpayloads, UX-Maschine oder zugängliche Semantik. Native Originalfähigkeit und zusätzliche gemeinsame Ausführung bleiben getrennt.
 
 
-**Erstrunde: 9 von 24 geklärt. Nach Gesamtprüfung: 10 von 24; 14 konkrete Teilfragen bleiben U.** Aktuelle Verteilung D5/R2/A1/N4/U14. G02 wird gemäß festgelegtem Sprachkriterium als D eingeordnet: keine JS-Funktionen für deklarative CSS-Semantik erforderlich. Das ist kein Nachweis neutraler/native Rendererbindung; der Bericht hatte diese Grenze vorsichtiger als A formuliert.
+**Erstrunde: 9 von 24 geklärt. Nach Gesamtprüfung: 10 von 24; 14 konkrete Teilfragen bleiben U.** Aktuelle Verteilung D5/R2/A1/N4/U14. G02 wird gemäss festgelegtem Sprachkriterium als D eingeordnet: keine JS-Funktionen für deklarative CSS-Semantik erforderlich. Das ist kein Nachweis neutraler/native Rendererbindung; der Bericht hatte diese Grenze vorsichtiger als A formuliert.
 
 Anchor Positioning definiert Anker-/Ziel-/Seiten-/Abstandsauflösung, Overflow definiert Scrollport und Overflowwerte. Dimensionen kommen über Values, maximale Höhe über ausdrücklich referenziertes Sizing (R). Mehrfachankernamen sind legal und benötigen für stabile Instanzen zusätzliches Mapping (A). Kein Komponenteninstanziierungs-, Versionsresolver- oder Vier-Domänen-Konfliktmodell im begrenzten Kern.
 
@@ -303,7 +303,7 @@ Die vorgeschlagene Eigenleistung ist daher **noch keine implementierte Architekt
 
 ## Aktuelle E3-Fortschreibung
 
-Die obigen Kandidatenporträts enthalten historische Erstrundenbeschreibungen ohne Versuche. Maßgeblich sind jetzt zusätzlich [49 gespeicherte Proben](experiments/2026-10-24/REPORT.md): drei Originalschema-Pfade, Gegenprüfungen, Original-Webmapper, TypeScript-Payloadauflösung, statische CEM-/SCXML-Bindung sowie Nu-Hostchecker. CEM und SCXML I02 sind A; andere betroffene Abdeckungswerte bleiben erhalten. Keine UI-/AT- oder vollständige Vier-Domänen-Prüfung.
+Die obigen Kandidatenporträts enthalten historische Erstrundenbeschreibungen ohne Versuche. Massgeblich sind jetzt zusätzlich [49 gespeicherte Proben](experiments/2026-10-24/REPORT.md): drei Originalschema-Pfade, Gegenprüfungen, Original-Webmapper, TypeScript-Payloadauflösung, statische CEM-/SCXML-Bindung sowie Nu-Hostchecker. CEM und SCXML I02 sind A; andere betroffene Abdeckungswerte bleiben erhalten. Keine UI-/AT- oder vollständige Vier-Domänen-Prüfung.
 
 **Ausgeführte Visualvalidatoren:** [31 weitere Fälle](experiments/2026-10-24/openpencil-validation/REPORT.md) trennen Datenhülle, Referenzintegrität und sichere CSS-Ausgabeform. Keine zusätzliche U-Neubewertung.
 

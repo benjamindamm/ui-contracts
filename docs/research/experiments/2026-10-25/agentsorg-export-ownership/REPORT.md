@@ -4,11 +4,11 @@ Stand:25. Oktober2026. **AgentsORG X08 A/C507** für genau die eigene normative 
 
 ## Endbedingung und ursprünglicher Gegenstand
 
-Die Spezifikation erklärt .design zur führenden Repositoryquelle, Ausgaben zu Ableitungen und Tokenwerte gegenüber zugeordneten shadcn-CSS-Werten zum Vorrang. Zu prüfen war ein tatsächlicher Originalexport mit einer konkret führenden Information, nachvollziehbarer Änderung und Gegenfällen statt bloßer Wiederholung dieses Anspruchs.
+Die Spezifikation erklärt .design zur führenden Repositoryquelle, Ausgaben zu Ableitungen und Tokenwerte gegenüber zugeordneten shadcn-CSS-Werten zum Vorrang. Zu prüfen war ein tatsächlicher Originalexport mit einer konkret führenden Information, nachvollziehbarer Änderung und Gegenfällen statt blosser Wiederholung dieses Anspruchs.
 
 Revision `014a1864c641f8e9792ed76de93c95493489dd8c`. Vollständige unveränderte export_design.py- und diff_design.py-Programme als echte CLIs mit Python3.12 und isoliertem PyYAML6.0.3 ausgeführt. Keine Originalfunktion ersetzt. Alle eigenen .design-Eingaben werden zusätzlich gegen das unveränderte ursprüngliche Draft202012-Schema mit jsonschema4.25.1 geprüft und akzeptiert. Das ist strukturelle Originalschemaakzeptanz, kein vollständiger Norm-/Linter-/Semantiknachweis. Der Original-Linter und Figma-Sync wurden in diesem Block nicht ausgeführt.
 
-Die .design-Dateien sind synthetische Forschungsfixtures. Ihr agent.instructions-Feld ist ausschließlich erforderliche Schemametadaten, keine ausgeführte Agentenanweisung. Auch locked-Fälle betreffen nur diese eigenen Fixtures; keine tatsächlichen gesperrten Projektverträge bearbeitet und keine Benutzerfreigabe/Authentifizierung simuliert.
+Die .design-Dateien sind synthetische Forschungsfixtures. Ihr agent.instructions-Feld ist ausschliesslich erforderliche Schemametadaten, keine ausgeführte Agentenanweisung. Auch locked-Fälle betreffen nur diese eigenen Fixtures; keine tatsächlichen gesperrten Projektverträge bearbeitet und keine Benutzerfreigabe/Authentifizierung simuliert.
 
 ## Führende Information und tatsächliche Ableitung
 
@@ -20,7 +20,7 @@ Der Themefall besitzt eine andere führende Stelle: Ein ausdrücklich ausgewähl
 
 ## Acht vorab benannte Bedingungen P64
 
-[Erwartungen](cases.json), [Resultate einschließlich vollständiger CLI-Argumente, Status und Ausgaben](results.json).
+[Erwartungen](cases.json), [Resultate einschliesslich vollständiger CLI-Argumente, Status und Ausgaben](results.json).
 
 | Fall | Beobachtung |
 | --- | --- |

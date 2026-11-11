@@ -6,7 +6,7 @@ Stand: 25. Oktober 2026. **Endlicher offizieller Restzugriff abgeschlossen, kein
 
 Unveränderter Panda-Repo-Pin **86f78a228204d63baa0b8bca2676d9f26190e449**. Der benannte Rustpfad crates/pandacss_codegen/src/artifacts/specs.rs schreibt specs/design-system.json mit einer festen SchemaVersion 1 und den Tabellen categories, paths, tokens, conditions, themes, values sowie bedingt weiteren Tabellen. Gezielt betrachtet: generate, build_design_system, Versionskonstante und token_refs. Kein kompletter Rust-Codeaudit oder Generatorbuild.
 
-Die öffentliche JSON-Spec-Seite beschreibt dieses ausdrücklich generierte Datenartefakt für Werkzeuge außerhalb des Compilers, zeigt seinen öffentlichen parseDesignSystem-/indexDesignSystem-Zugriff und die opt-in-Ausgabe über --spec. Diese Website ist eine separat datierte Dokumentationsquelle, keine ungeprüft mit dem Repo-Pin bytegleiche Fassung.
+Die öffentliche JSON-Spec-Seite beschreibt dieses ausdrücklich generierte Datenartefakt für Werkzeuge ausserhalb des Compilers, zeigt seinen öffentlichen parseDesignSystem-/indexDesignSystem-Zugriff und die opt-in-Ausgabe über --spec. Diese Website ist eine separat datierte Dokumentationsquelle, keine ungeprüft mit dem Repo-Pin bytegleiche Fassung.
 
 Die Originaltypes.ts beschreibt konkret genau diesen JSON-Datendateigegenstand. Das unterscheidet ihn von einer beliebigen SDK-Maschinenkonfiguration, deren Funktionen/Actorimplementierungen erst eine neue neutrale Dateisprache erfordern würden. Die Datenform ist hier bereits vom Originalprojekt festgelegt; keine neue Produktsprache wurde gewählt.
 
@@ -19,7 +19,7 @@ Die Originaltypes.ts beschreibt konkret genau diesen JSON-Datendateigegenstand. 
 | parseDesignSystem | Öffentlich vorgesehener, bewusst flacher Reader mit eigenen Root-/Versionsprüfungen | Nicht sämtliche deklarierten Feld-/Zeilentypen durchgeprüft |
 | Zusätzliche statische Literalzuweisung gegen Originaltyp | In P42 an neun identischen Originalreader-/Typbedingungen ausgeführt | Keine originale Runtime-API und keine vollständige Referenz-/Wertsemantik |
 
-Der im Originalcode referenzierte Design-Note-Pfad beschreibt die Migration vom früheren Studio-Zod-Schema auf den gemeinsamen Parse-/Indexzugriff. Das ist eine konkrete historische Rollenklärung; **das Löschen dieses alten Schemas ist allein kein Beweis gegen jedes denkbare andere Schema**. Ebenso enthält die Notiz Aussagen zu Rezept-/Patternzukunft, während der am selben Pin gelesene aktuelle Exporter schon entsprechende Tabellen erzeugt. Deshalb wird die Notiz nicht über den tatsächlichen aktuellen Code gestellt und nicht als vollständige normative Formatdefinition behandelt. Die maßgeblichen konkreten aktuellen Shapeinformationen stammen aus Originaltypes/Reader/Exporter.
+Der im Originalcode referenzierte Design-Note-Pfad beschreibt die Migration vom früheren Studio-Zod-Schema auf den gemeinsamen Parse-/Indexzugriff. Das ist eine konkrete historische Rollenklärung; **das Löschen dieses alten Schemas ist allein kein Beweis gegen jedes denkbare andere Schema**. Ebenso enthält die Notiz Aussagen zu Rezept-/Patternzukunft, während der am selben Pin gelesene aktuelle Exporter schon entsprechende Tabellen erzeugt. Deshalb wird die Notiz nicht über den tatsächlichen aktuellen Code gestellt und nicht als vollständige normative Formatdefinition behandelt. Die massgeblichen konkreten aktuellen Shapeinformationen stammen aus Originaltypes/Reader/Exporter.
 
 ## Begründete Adaptereinordnung statt D oder endloses U
 

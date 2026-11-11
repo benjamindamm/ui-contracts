@@ -1,10 +1,10 @@
 # APG: tatsächliche Originalklasse, externe Feldtypen und Instanzkontexte
 
-Stand:25. Oktober2026. **APG X03 A/C513 und X04 A/C514**, ausschließlich für das folgende ursprüngliche Referenzbeispiel mit ausdrücklicher zusätzlicher Bindung. **30 U:15 Integration,15 weitere.537 Bedingungen/73 Gruppen.** Acht native Beobachtungsbedingungen und zwei CEM-Schemabedingungen erfüllt; uSpec X03 bleibt gesondert U/C512.
+Stand:25. Oktober2026. **APG X03 A/C513 und X04 A/C514**, ausschliesslich für das folgende ursprüngliche Referenzbeispiel mit ausdrücklicher zusätzlicher Bindung. **30 U:15 Integration,15 weitere.537 Bedingungen/73 Gruppen.** Acht native Beobachtungsbedingungen und zwei CEM-Schemabedingungen erfüllt; uSpec X03 bleibt gesondert U/C512.
 
 ## Endbedingungen und Rollen
 
-X03: Ein sichtbares tatsächliches Feld der ursprünglichen Behavior-Beispielklasse auf einen separat beschriebenen Interfaceknoten mit explizitem Typ und Instanzkontext beziehen; falsche Zielart/Typ/Instanz abweisen. Nicht bloß Links auf die Patternwebseite oder gleichnamige DOM-IDs zählen.
+X03: Ein sichtbares tatsächliches Feld der ursprünglichen Behavior-Beispielklasse auf einen separat beschriebenen Interfaceknoten mit explizitem Typ und Instanzkontext beziehen; falsche Zielart/Typ/Instanz abweisen. Nicht bloss Links auf die Patternwebseite oder gleichnamige DOM-IDs zählen.
 
 X04: Die ursprüngliche Definition mit zwei tatsächlichen Konstruktorverwendungen, unterschiedlichen vorhandenen Parametern und eigenem Zustand wiederverwenden. Das Kriterium verlangt hier keine neue neutrale APG-Kompositionsdateisprache; allgemeine Neutralität, Versionierung und Lifecycle sind separate stärkere Fragen.
 
@@ -12,7 +12,7 @@ APG bleibt informativer Patternguide mit illustrativem Beispielcode, kein normat
 
 ## Unveränderte ursprüngliche Ausführung
 
-Vollständiges ursprüngliches combobox-autocomplete.js am Pin `0f765e4dc33e966026114ac12a8380db1de3b787` über BrowserOS gelesen, unverändert in einem eigenen lokalen Host geladen. Vollständige Klasse samt Methoden und ursprünglichem load-Bootstrap vorhanden. Die eigenen Wrapper heißen bewusst nicht .combobox-list; daher findet der ursprüngliche Seitenscan null Wrapper. Der eigene Initialisierer erzeugt ausdrücklich genau zwei echte new ComboboxAutocomplete(input,button,listbox)-Objekte. Kein Proxy, keine nachgebaute Klasse, keine veränderte Originalmethode oder fingierter Callback.
+Vollständiges ursprüngliches combobox-autocomplete.js am Pin `0f765e4dc33e966026114ac12a8380db1de3b787` über BrowserOS gelesen, unverändert in einem eigenen lokalen Host geladen. Vollständige Klasse samt Methoden und ursprünglichem load-Bootstrap vorhanden. Die eigenen Wrapper heissen bewusst nicht .combobox-list; daher findet der ursprüngliche Seitenscan null Wrapper. Der eigene Initialisierer erzeugt ausdrücklich genau zwei echte new ComboboxAutocomplete(input,button,listbox)-Objekte. Kein Proxy, keine nachgebaute Klasse, keine veränderte Originalmethode oder fingierter Callback.
 
 Beide Objekte teilen tatsächlich dieselbe ursprüngliche Konstruktordefinition und sind verschiedene Instanzen. Ihre allOptions-Arrays und DOM-Optionen sind verschieden. A erhält per ursprünglichem aria-autocomplete-Parameter list mit Alabama/Alaska; B none mit Berlin/Bremen. Das sind eigene illustrative Parameterfälle, keine Produktwahl. Der Originalkonstruktor liest diese Attribute selbst.
 
@@ -20,7 +20,7 @@ Beide Objekte teilen tatsächlich dieselbe ursprüngliche Konstruktordefinition 
 
 interface.json ist eine eigene CEM-Beschreibung der tatsächlichen Klasse ComboboxAutocomplete im benannten JS-Modul. Der konkrete Zielknoten /modules/0/declarations/0/members/0 beschreibt das tatsächlich gespeicherte Klassenfeld comboboxNode als HTMLInputElement. CEM-Root und Feldtyptext verwenden unveränderte Originalsyntax.
 
-Der eigene begrenzte Binder löst den CEM-Pointer, prüft class/field/Name, tatsächlichen Originalkonstruktornamen und den echten Native-DOM-Typ mittels instanceof. Er bindet außerdem den konkreten A/B-Kontext: Die ursprüngliche Feldreferenz muss auf input-a beziehungsweise input-b zeigen; deren aria-controls muss die tatsächlich im ursprünglichen Objekt gespeicherte listboxNode adressieren. Native Objektidentität/-typ, Originalfeld und fremder Interfacezielknoten werden so semantisch zugeordnet. Das ist mehr als ein bloßer gleicher DOM-ID-String, aber keine native CEM-Fähigkeit von APG.
+Der eigene begrenzte Binder löst den CEM-Pointer, prüft class/field/Name, tatsächlichen Originalkonstruktornamen und den echten Native-DOM-Typ mittels instanceof. Er bindet ausserdem den konkreten A/B-Kontext: Die ursprüngliche Feldreferenz muss auf input-a beziehungsweise input-b zeigen; deren aria-controls muss die tatsächlich im ursprünglichen Objekt gespeicherte listboxNode adressieren. Native Objektidentität/-typ, Originalfeld und fremder Interfacezielknoten werden so semantisch zugeordnet. Das ist mehr als ein blosser gleicher DOM-ID-String, aber keine native CEM-Fähigkeit von APG.
 
 Quell-CEM-/Variantenhash, ursprünglicher Klassenquellhash und Reporevision sind gespeichert. Die zusätzlich beschriebenen buttonNode/listboxNode-Feldtypen werden nicht als durch diese eine Bindung vollständig geprüft ausgegeben. Andere TypeScript-Typausdrücke, Realmwechsel, Modellmigrationen und andere Klassenfelder sind nicht unterstützt oder geprüft.
 

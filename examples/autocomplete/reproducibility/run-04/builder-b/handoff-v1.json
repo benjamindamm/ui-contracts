@@ -53,7 +53,7 @@
     {
       "id": "c-geometry",
       "classification": "explicit",
-      "statement": "Maße, Radien, Abstände und Farben sind die Token-Werte aus autocomplete.*: Input 320×44, Radius 8, borderWidth 1 inside, paddingInline 12, labelGap/statusGap/gap 8, rowHeight 32, maxHeight 160; Farben surface #ffffff, text #172b4d, muted #64748b, border #cbd5e1, focus #2563eb, highlight #eaf2ff, disabled #94a3b8, error #b91c1c; Inter 14/12 px, lineHeight 20.",
+      "statement": "Masse, Radien, Abstände und Farben sind die Token-Werte aus autocomplete.*: Input 320×44, Radius 8, borderWidth 1 inside, paddingInline 12, labelGap/statusGap/gap 8, rowHeight 32, maxHeight 160; Farben surface #ffffff, text #172b4d, muted #64748b, border #cbd5e1, focus #2563eb, highlight #eaf2ff, disabled #94a3b8, error #b91c1c; Inter 14/12 px, lineHeight 20.",
       "sourceRefs": [
         { "sourceId": "src-tokens", "locator": "autocomplete.* (Dimensionen und Colors)" },
         { "sourceId": "src-layout-ac", "locator": "[data-part=input], [data-part=option], [data-part=label], [data-part=status]" }
@@ -219,7 +219,7 @@
   ],
   "limitations": [
     "Statisches Design ohne Runtime: keine Interaktion, kein ARIA-Verhalten, kein SCXML-Ausführung; scroll-end ist ein statischer Endzustand (Quellen: targetScope/designTarget, README).",
-    "Font-Metriken sind viewer-abhängig: „Inter“ wird als Schriftname referenziert; Name, Größe, Gewicht und Zeilenhöhe sind im Readback verifiziert.",
+    "Font-Metriken sind viewer-abhängig: „Inter“ wird als Schriftname referenziert; Name, Grösse, Gewicht und Zeilenhöhe sind im Readback verifiziert.",
     "Node-IDs in readback.json sind an die Serialisierung von @open-pencil/core 0.16.0 gekoppelt; andere Exporter oder Versionen erzeugen andere IDs (Werte und Struktur sind checkbar identisch).",
     "Der Page-Node exportiert 100×100 (OpenPencil-Page-Platzhalter); die Blatt-Ausdehnung ergibt sich aus den Frame-Positionen (Beobachtung, Report Gap 7).",
     "Kein Komponenten-Release: die Fälle sind editierbare FRAME-Gruppen; release bleibt durchgehend false."

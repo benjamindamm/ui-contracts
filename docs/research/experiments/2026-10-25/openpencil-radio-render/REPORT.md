@@ -16,7 +16,7 @@ Die folgenden acht vollständigen Originaldeklarationen wurden anhand des TypeSc
 
 ## Beobachtete Originalmechanismen
 
-stateOf liest ausschließlich den zum übergebenen island gehörenden Mapkontext und wirft bei fehlendem Pfad. Der Radiozweig setzt role=radio und aria-checked aus seinem Booleanwert; der Originalcallback setzt diesen Wert auf true. disabled stammt aus dem State oder designedDisabled. renderElement übernimmt Attribute und anschließend override.props. Dadurch haben in diesem Pfad die steuerungsseitige Rolle und der checked-Wert Vorrang vor widersprechenden Designerattributen. Das interne data-open-pencil-node-id wird entfernt, die öffentliche id bleibt erhalten.
+stateOf liest ausschliesslich den zum übergebenen island gehörenden Mapkontext und wirft bei fehlendem Pfad. Der Radiozweig setzt role=radio und aria-checked aus seinem Booleanwert; der Originalcallback setzt diesen Wert auf true. disabled stammt aus dem State oder designedDisabled. renderElement übernimmt Attribute und anschliessend override.props. Dadurch haben in diesem Pfad die steuerungsseitige Rolle und der checked-Wert Vorrang vor widersprechenden Designerattributen. Das interne data-open-pencil-node-id wird entfernt, die öffentliche id bleibt erhalten.
 
 ## Zwölf Bedingungen
 
@@ -43,7 +43,7 @@ Alle zwölf Erwartungen erfüllt. Der Callbackaufruf ist keine physische Tasten-
 
 **A03 bleibt U/C491.** Originaler Modellcallback und danach gerenderter aria-checked-Wert sind verbunden. Zustandssemantik und eine neue Ergebnis-/Fehler-/Lademeldung sind jedoch verschiedene Vorgänge. Das unveränderte Kriterium verlangt definierte zugängliche Aktualisierung; es wird nicht nachträglich um eine allgemeine Pflicht zu eigenen Live-Regions oder Assistenztests für jede reine Schemaeinordnung verschärft. Die hier tatsächlich ausgeführte SSR-Neuausgabe allein belegt noch keinen lebenden Host-/Accessibility-Updatepfad und keine ursprüngliche Meldungsbindung. Ein nächster eigenständiger Nachweis muss genau diesen neuen Zusammenhang prüfen, statt dieselben Attributfälle erneut zu zählen.
 
-Der Restplan ist eine Arbeitsklassifikation: 44 unabhängig untersuchbare Zellen, zwei konkrete Originalklärungen. Daraus folgt keine Zusage, dass jede Frage nach einem einzelnen Lauf positiv abgeschlossen werden kann. Neue tatsächliche Grenzen werden spezifisch nachgeführt. Native Plattformen, tatsächliche AT-Umgebungen und abschließende Produktregeln bleiben getrennte spätere Abnahmen.
+Der Restplan ist eine Arbeitsklassifikation: 44 unabhängig untersuchbare Zellen, zwei konkrete Originalklärungen. Daraus folgt keine Zusage, dass jede Frage nach einem einzelnen Lauf positiv abgeschlossen werden kann. Neue tatsächliche Grenzen werden spezifisch nachgeführt. Native Plattformen, tatsächliche AT-Umgebungen und abschliessende Produktregeln bleiben getrennte spätere Abnahmen.
 
 Aktuell weiterhin **46 U: 26 Integration und 20 weitere**, jetzt **395 Bedingungen in 49 Gruppen**. Keine Deckungszelle durch diesen begrenzten Rendernachweis geschlossen. Keine neue Produktionskomponente, Autorenanfrage, Agenten, Commits oder Pushes.
 

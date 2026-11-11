@@ -31,13 +31,13 @@ Alle zwölf Erwartungen erfüllt. run.py ist bewusst eigener Zusatzcode mit enge
 
 ## Vier Browserbedingungen
 
-Die ursprüngliche Zwei-Instanzen-HTML-Fixture wurde in einem eigenen leeren Prüftab mit layout.css dargestellt. Zusätzlicher Übersetzer löst Tokens und setzt CSS-Variablen, der Browser führt das CSS aus. Für jede Instanz wurde die px- und rem-Variante gemessen; Rootschriftgröße explizit 16px. Alle vier Erwartungen erfüllt:
+Die ursprüngliche Zwei-Instanzen-HTML-Fixture wurde in einem eigenen leeren Prüftab mit layout.css dargestellt. Zusätzlicher Übersetzer löst Tokens und setzt CSS-Variablen, der Browser führt das CSS aus. Für jede Instanz wurde die px- und rem-Variante gemessen; Rootschriftgrösse explizit 16px. Alle vier Erwartungen erfüllt:
 
 - Abstand Input → Popup: 8px.
 - Popuphöhe: 160px, Overflow auto.
 - Sieben Zeilen à 32px; Scrollinhalt 224px.
 
-Damit sind für diesen Snapshot gleiche geometrische Ergebnisse aus erhaltenen Einheiten belegt. rem ist an die Rootschriftgröße gebunden; keine allgemeine px/rem-Identität behauptet. Kein dynamischer Wechseltest mit veränderter Schriftgröße. Keine Zeilennavigation, kein Screenreader, keine native Zielplattform. Dieser Browserlauf führt nicht zusätzlich den SCXML-Interpreter aus; dessen begrenzter Nachweis liegt im separaten Laufzeitblock.
+Damit sind für diesen Snapshot gleiche geometrische Ergebnisse aus erhaltenen Einheiten belegt. rem ist an die Rootschriftgrösse gebunden; keine allgemeine px/rem-Identität behauptet. Kein dynamischer Wechseltest mit veränderter Schriftgrösse. Keine Zeilennavigation, kein Screenreader, keine native Zielplattform. Dieser Browserlauf führt nicht zusätzlich den SCXML-Interpreter aus; dessen begrenzter Nachweis liegt im separaten Laufzeitblock.
 
 ## Bewertung und Restgrenzen
 

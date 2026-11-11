@@ -14,4 +14,4 @@ Stand: 24. Oktober 2026. Gepinnter Quellenstand und Fundstellen: [S59](SOURCES.m
 
 **Auswirkung auf den Gesamtstand:** 72 U-Zellen verbleiben, davon unverändert 45 Integrationsfelder und jetzt 27 weitere Felder. Ein Feld wurde U→A eingeordnet; es wurde kein fehlender Mechanismus implementiert. Alle 16 Kandidaten-Durchgänge bleiben abgeschlossen. Die historische Ausgangszahl 73 ist weiterhin nachvollziehbar, aber keine aktuelle Restzahl.
 
-uSpec V04/V06 wurden anschließend ebenfalls gezielt geprüft; siehe [uSpec-Folgeprüfung](FOLLOWUP-USPEC-LAYOUT.md). Die separat vorgemerkte Gegenüberstellung von DESIGN.md und deklarativen Layoutmodellen bleibt offen. Der UXSpec-/SCXML-Detailvergleich bleibt ein eigener Arbeitsblock.
+uSpec V04/V06 wurden anschliessend ebenfalls gezielt geprüft; siehe [uSpec-Folgeprüfung](FOLLOWUP-USPEC-LAYOUT.md). Die separat vorgemerkte Gegenüberstellung von DESIGN.md und deklarativen Layoutmodellen bleibt offen. Der UXSpec-/SCXML-Detailvergleich bleibt ein eigener Arbeitsblock.

@@ -6,6 +6,6 @@ Separater visueller Vorschlag auf Basis der example-Bibliothek und des unveränd
 
 [Editierbare FIG](autocomplete.fig) · [Readback und Hashes](preview-check.json) · [Generator](../../../../../tools/openpencil/theme-example.mjs).
 
-Der Generator klont die beiden vorhandenen Zustandsgruppen. Die Darkmode-Kandidaten erhalten die separat protokollierten Farbänderungen. Anschließend platziert das gemeinsame Layout beide Modi auf ihrem angegebenen Kartenhintergrund. Die Präsentation darf die so vorbereiteten Kandidaten nicht verändern; dies wird vor Export sowie nach erneutem FIG-Einlesen und PNG-Rendering geprüft. Die äußere Übersichtsseite bleibt neutral.
+Der Generator klont die beiden vorhandenen Zustandsgruppen. Die Darkmode-Kandidaten erhalten die separat protokollierten Farbänderungen. Anschliessend platziert das gemeinsame Layout beide Modi auf ihrem angegebenen Kartenhintergrund. Die Präsentation darf die so vorbereiteten Kandidaten nicht verändern; dies wird vor Export sowie nach erneutem FIG-Einlesen und PNG-Rendering geprüft. Die äussere Übersichtsseite bleibt neutral.
 
 Zum Nachvollziehen den Generator lesen; eine erneute Ausführung benötigt einen neuen Ergebnisstand. Er überschreibt weder diese Ausgaben noch die ursprüngliche FIG oder die example-Definition. Die gespeicherte PNG ist ein Rendering der nativen FIG, kein Screenshot eines geöffneten Editors. Keine neue Runtime-/ARIA-, Kontrast- oder Live-GUI-Abnahme.

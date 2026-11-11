@@ -1,6 +1,6 @@
 # Historische Fortschrittsnotizen
 
-Diese Notizen bewahren Zwischenstände und widerlegte beziehungsweise später erweiterte Einschätzungen. Sie sind keine aktuelle Queue. Maßgeblich sind [aktueller Status](../CURRENT-STATUS.md) und [aktueller zellenweiser Restplan](../REMAINDER-PLAN.md).
+Diese Notizen bewahren Zwischenstände und widerlegte beziehungsweise später erweiterte Einschätzungen. Sie sind keine aktuelle Queue. Massgeblich sind [aktueller Status](../CURRENT-STATUS.md) und [aktueller zellenweiser Restplan](../REMAINDER-PLAN.md).
 
 **Aktuelle Fortschreibung:** 20 U (6 Integration, 14 weitere); OpenPencil V01/V03 sind nach ausdrücklicher Erweiterung um originale Variablen und Tokenexport D. 576 benannte Prüfbedingungen, kein vollständiger Integrationsnachweis.
 
@@ -34,4 +34,4 @@ Diese Notizen bewahren Zwischenstände und widerlegte beziehungsweise später er
 
 **Neu: informationsbezogene Ownership geprüft.** [Originalpaket, Quelländerung und Konflikte](../experiments/2026-10-25/ownership-conflicts/REPORT.md): zwei führende Informationen mit Ableitungen, 15 Änderungsfälle, eine erhaltene und korrigierte Revisionsverletzung sowie vier praktische Gegenbedingungen. CSS Layout X08 begrenzt A/C459; aktuell 41 U (26 Integration, 15 weitere), 283 Bedingungen in 35 Gruppen. Keine generische Ownership-/Transaktions-/Identitätsgarantie.
 
-**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](../experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](../experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschliesslich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.

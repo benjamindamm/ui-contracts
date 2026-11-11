@@ -403,7 +403,7 @@ def evaluate(doc, builder):
     set_('E-002', 'erfüllt', f"1 Seite '{doc['page']}' mit 10 benannten Fall-Frames: "
          + ', '.join(names))
     set_('E-003', 'erfüllt',  # erlaubte Freiheit: keine Beanstandung
-         "Außenanordnung frei (keine Beanstandung); beobachtet: "
+         "Aussenanordnung frei (keine Beanstandung); beobachtet: "
          + f"{len(g['pageTopLevel'])} Top-Knoten der Seite")
     # E-004 wird im Hauptprogramm nach dem Hash-Abgleich finalisiert (siehe main)
     res['E-004'] = {'status': 'offen', 'obs': []}
@@ -491,7 +491,7 @@ def evaluate(doc, builder):
             anat_ok = False
             anat_obs.append(f"{c}: fehlende Teile { [k for k, v in have.items() if not v]}")
     a_note = [f"Meldungsfälle: Listbox-Rahmen "
-              + ("vorhanden (A: 'Listbox' umschließt die Message Row)" if builder == 'a'
+              + ("vorhanden (A: 'Listbox' umschliesst die Message Row)" if builder == 'a'
                  else "nicht erzeugt (B: Content → message direkt)")]
     set_('E-010', 'erfüllt' if anat_ok else 'verletzt',
          anat_obs or [f"alle Teilarten (input, listbox/list, option, status, overlay.surface, "
@@ -763,7 +763,7 @@ def evaluate(doc, builder):
     effc = {'#' + e.lstrip('#')[:6] for e in g['allEffectColors']}
     extra = (allc | effc) - allowed_all
     set_('E-038', 'erfüllt' if not extra else 'verletzt',
-         (["außerhalb der Token-Palette: " + str(sorted(extra))] if extra else
+         (["ausserhalb der Token-Palette: " + str(sorted(extra))] if extra else
           [f"alle verwendeten Farben ⊆ {sorted(allowed_all)} + Schlagschatten #000000@α0.2; "
            f"Fills={dict(g['allNodeColors'])} Strokes={dict(g['allStrokeColors'])} "
            f"Effekte={dict(g['allEffectColors'])}"]))
@@ -841,7 +841,7 @@ def evaluate(doc, builder):
         else:
             c45_obs.append(f"{c}: {sh.get('color')} offset(0,2) r=8")
     set_('E-045', 'erfüllt' if not c45_bad else 'verletzt',
-         c45_bad or [f"Overlayfläche weiß, border 0, Radius 8, Schatten 0 2px 8px "
+         c45_bad or [f"Overlayfläche weiss, border 0, Radius 8, Schatten 0 2px 8px "
                      f"#00000033: {c45_obs}; z-Ordung: Surface-Knoten nach Input "
                      f"(später = darüber), z-Index als Property nicht darstellbar"])
 
@@ -861,7 +861,7 @@ def evaluate(doc, builder):
                     or t['name'].lower() == 'label' and c in LIST_CASES:
                 continue
     # Label/Input/Option-Label = 14; Status = 12 (E-049);
-    # Meldungszeile (U-003) nicht im E-047-Scope → ausschließen
+    # Meldungszeile (U-003) nicht im E-047-Scope → ausschliessen
     for c in CASES:
         for t in cs(c).get('allTexts', []):
             is_status = t['name'].lower() == 'status'

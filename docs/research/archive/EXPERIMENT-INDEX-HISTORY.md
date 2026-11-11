@@ -102,7 +102,7 @@ Die Bedingungen zählen keine unabhängigen Wiederholungen, keine Komponenten un
 
 | Gruppe | Bedingungen | Gegenstand | Ergebnis |
 | --- | ---: | --- | --- |
-| P43 | 6 | Unverändertes Original-Types-Collection-Schema mit tatsächlichem Velite0.4.0, einschließlich Metadatentransformation; alle Erwartungen erfüllt | [Output](../experiments/2026-10-25/ark-mcp-scope/results.json) |
+| P43 | 6 | Unverändertes Original-Types-Collection-Schema mit tatsächlichem Velite0.4.0, einschliesslich Metadatentransformation; alle Erwartungen erfüllt | [Output](../experiments/2026-10-25/ark-mcp-scope/results.json) |
 
 [Ergänzende Panda-Originalgegenstands-/Adaptereinordnung](../experiments/2026-10-25/panda-original-scope/REPORT.md): vorhandene P42-E3-Evidenz plus gezielte Originalquellen, keine neue Gruppe oder Bedingung gezählt.
 
@@ -245,7 +245,7 @@ Aktuell576 Bedingungen/85 Gruppen,20 U (6 Integration/14 weitere). [Zellenweiser
 
 ## P86–P95 – zehn tatsächliche ergänzende CSS-/ARIA-Bindungen
 
-[Kriteriumsbezogener Originalruntime-/Native-CSS-/HTML-/AX-Block](../experiments/2026-10-25/css-complement-runtime/REPORT.md):27 Bedingungen erfüllt, neun CSS-Zellen und WAI-ARIA V06 jeweils A/C526–C535 ausschließlich mit konkreter Zusatzbindung. Ursprungspayload query42 wird tatsächlich geliefert und erst zusätzlich abgewiesen; clip bleibt gültiges CSS, verletzt nur den konkreten aktiven Sichtbarkeitsbezug. Kompakter AX-Text ersetzt nicht den tatsächlich separat gelesenen vollständigen AX-Baum. Keine physischen Tasten, AT-Sprachausgabe oder Produktkomponente.
+[Kriteriumsbezogener Originalruntime-/Native-CSS-/HTML-/AX-Block](../experiments/2026-10-25/css-complement-runtime/REPORT.md):27 Bedingungen erfüllt, neun CSS-Zellen und WAI-ARIA V06 jeweils A/C526–C535 ausschliesslich mit konkreter Zusatzbindung. Ursprungspayload query42 wird tatsächlich geliefert und erst zusätzlich abgewiesen; clip bleibt gültiges CSS, verletzt nur den konkreten aktiven Sichtbarkeitsbezug. Kompakter AX-Text ersetzt nicht den tatsächlich separat gelesenen vollständigen AX-Baum. Keine physischen Tasten, AT-Sprachausgabe oder Produktkomponente.
 
 Aktuell603 Bedingungen/95 Gruppen,10 U (6 Integration/4 Layout). [Genau verbleibender Rest](REMAINING-10.md).
 

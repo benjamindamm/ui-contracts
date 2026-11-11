@@ -25,7 +25,7 @@ Der Skill bündelt Schnittstelle, Gestaltung, Verhalten und Barrierefreiheit. UX
 | Originaldefinition ändern | [Autorenarbeit](../../skills/ui-contracts/references/authoring.md) |
 | Komponentenwahl | [UX](../../skills/ui-contracts/references/ux.md) |
 | Aufgaben zerlegen und übergeben | [Workflow](../../skills/ui-contracts/references/workflow.md) |
-| Abschließend zusammenführen | [Gesamtabgleich](../../skills/ui-contracts/references/integration-review.md) |
+| Abschliessend zusammenführen | [Gesamtabgleich](../../skills/ui-contracts/references/integration-review.md) |
 | Passenden Zielprüfer wählen | [Validierung](../../skills/ui-contracts/references/validation.md) |
 | Fehler wiedererkennen | [Fehlerregister](ISSUES.md), dann gezielt dessen Beleg |
 | Explizite Forschungs-/Reproduktionsfrage | [Forschungsvertrag](REPRODUCIBILITY.md) und [datierte Nachweise](../research/DOCUMENT-INDEX.md) |

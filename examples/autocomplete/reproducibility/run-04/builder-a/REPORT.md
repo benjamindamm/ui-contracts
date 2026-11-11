@@ -12,7 +12,7 @@ Auftrag `ac-run04-builder-a` (Revision 1, Rolle builder) · Definitionsrevision 
 | `readback.mjs` | 14632 | `cc770f5fd8e49873421da10a80af645efa83687b863820e86f98a073377a27be` |
 | `check-receipt.json` | — | entsteht erst durch den Integritätslauf in Abschnitt 8 (referenziert das Handoff und ist daher kein deklarierbares Artefakt) |
 
-Alle Werte des Designs stammen ausschließlich aus den hashgebundenen Originalquellen des Auftrags; es wurden keine Definitionen, Profile oder Werkzeuge geändert, keine früheren Läufe/`output`/`review`/`docs-research` gelesen, keine Webrecherche betrieben, kein Commit/Push ausgeführt.
+Alle Werte des Designs stammen ausschliesslich aus den hashgebundenen Originalquellen des Auftrags; es wurden keine Definitionen, Profile oder Werkzeuge geändert, keine früheren Läufe/`output`/`review`/`docs-research` gelesen, keine Webrecherche betrieben, kein Commit/Push ausgeführt.
 
 ## 2. Erzeugungspfad
 
@@ -49,11 +49,11 @@ Abgeleitete Geometrie-Konstanten (im Build-Skript-Kopf mit Zeilenbezug dokumenti
 4. **scroll-end-Versatz:** `listbox.y = −(7 × 32 − 160) = −64` px, abgeleitet aus tokens (rowHeight, maxHeight) und den 7 Ergebnissen. Die aktive letzte Option `zuerich` liegt damit bei Viewport-y 128 (Zeilenband 128–160) im sichtbaren 160-px-Viewport; alle sieben `option/*`-Frames bleiben erhalten.
 5. **Meldungsfälle loading/empty/error:** Popups = eine Zeile (rowHeight 32) mit `message`/`message.text` („Städte werden geladen.“ / „Keine Städte gefunden.“ / „Städte konnten nicht geladen werden.“); die Listbox bleibt als leerer Rahmen vorhanden.
 6. **Status-Texte** folgen `accessibility.rules.json`: closed/disabled leer („“ / keine Meldung im closed-Zustand), ready „7 Städte verfügbar.“, selected „Ausgewählt: Berlin.“ (Template `{label}`), opening „Suche wird geöffnet.“; Status bei error in #b91c1c (layout.css:49).
-7. **Seitenausstattung** (zwei Spalten, Kaptionen, Titel/Untertitel) ist freies Layout und verwendet ausschließlich Token-Farben/-Typografie.
+7. **Seitenausstattung** (zwei Spalten, Kaptionen, Titel/Untertitel) ist freies Layout und verwendet ausschliesslich Token-Farben/-Typografie.
 
 ## 5. Toolchain-Befund: nicht bytestabiler Export
 
-- `exportFigFile` ist **nicht bytestabil**: aufeinanderfolgende Läufe von `build-fig.mjs` erzeugten Bytefolge und Größe verändernde Dateien (beobachtet 31632 → 31633 → 31635 Bytes).
+- `exportFigFile` ist **nicht bytestabil**: aufeinanderfolgende Läufe von `build-fig.mjs` erzeugten Bytefolge und Grösse verändernde Dateien (beobachtet 31632 → 31633 → 31635 Bytes).
 - Geprüft: Die `.fig` ist ein ZIP-Archiv (`canvas.fig`, `thumbnail.png`, `meta.json`). Unterschiede zwischen zwei Läufen: ZIP-Eintragszeitstempel und ein **pro Lauf erzeugtes Dokument-IDs-Präfix** in der eingebetteten `source`-Record-Struktur jedes Nodes (beobachtet `992180101:3` bzw. `1777195598:3`).
 - Nach Normalisierung genau dieses Dokument-Ids sind die beiden geparschten Graphen bei allen 156 Nodes in **allen** Node-Eigenschaften identisch.
 - **Konsequenz:** Der SHA-256-Wert in Abschnitt 1 bindet die gelieferte Datei; ein erneuter Build erzeugt eine strukturell identische, aber nicht bytegleiche Datei. Zuverlässiger Reproduktionsnachweis ist der Readback (Abschnitt 6), nicht Bytegleichheit.
@@ -66,7 +66,7 @@ Abgeleitete Geometrie-Konstanten (im Build-Skript-Kopf mit Zeilenbezug dokumenti
 |---|---|
 | cases | genau zehn Top-level-Frames mit den Quellnamen; alle FRAME |
 | parts | in jedem Fall label, input, overlay.surface, overlay.scroll.viewport, listbox, option/*, status als eigene benannte Nodes; Option-Anzahl = stories.json; Popupsichtbarkeit = `accessibility.rules.json` projections |
-| fidelity | 197 Stichproben (Farben, Ränder, Größen, Texte, Fonts, Clipping, Listbox-Versatz), 0 Fehler |
+| fidelity | 197 Stichproben (Farben, Ränder, Grössen, Texte, Fonts, Clipping, Listbox-Versatz), 0 Fehler |
 | scrollend | Viewport 160, Listbox-Versatz −64, `option/zuerich` bei Viewport-y 128 sichtbar, `allSevenEditable: true`, `activeHighlight: true` |
 | readback | `parseFigFile` erfolgreich, Seite „Autocomplete“, 156 Nodes |
 | editability | nur native Nodes (CANVAS/FRAME/TEXT), kein Flattening/Bild |
@@ -84,5 +84,5 @@ CLI-Kreuzprüfung: `1 pages, 154 nodes` (73 TEXT + 81 FRAME), Font Inter (Abschn
 ## 8. Integritätsprüfung (`handoffs.py check`)
 
 - Befehl: `python3 skills/ui-contracts/scripts/handoffs.py check --repo /Users/kcnpxcp/Dev/GitHub/ui-contracts --task /Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/builder-a/task.json --handoff /Users/kcnpxcp/Dev/GitHub/ui-contracts/examples/autocomplete/reproducibility/run-04/builder-a/handoff-v1.json --output /private/var/folders/9x/61c_c41s5rvbz4bqchv5m8v40000gn/T/opencode/ac-run04-builder-a/handoff-check.json`
-- Der Helfer schreibt nur in ein Temp-Verzeichnis außerhalb des Repositories (Laufblatt „Hilfsausgaben“); der für den finalen Lauf festgelegte Temp-Pfad ist oben angegeben. Eventuelle Fehlläufe nutzen abweichende Pfade im selben Verzeichnis und werden nicht als Receipt übernommen.
-- Die vom Helfer empfangene JSON-Ausgabe wird anschließend als `check-receipt.json` in diesen Ausgabeordner kopiert. Der Receipt referenziert das Handoff (`handoffSha256`) und die Aufgabe (`taskSha256`) und ist daher kein Artefakt des eigenen Handoffs.
+- Der Helfer schreibt nur in ein Temp-Verzeichnis ausserhalb des Repositories (Laufblatt „Hilfsausgaben“); der für den finalen Lauf festgelegte Temp-Pfad ist oben angegeben. Eventuelle Fehlläufe nutzen abweichende Pfade im selben Verzeichnis und werden nicht als Receipt übernommen.
+- Die vom Helfer empfangene JSON-Ausgabe wird anschliessend als `check-receipt.json` in diesen Ausgabeordner kopiert. Der Receipt referenziert das Handoff (`handoffSha256`) und die Aufgabe (`taskSha256`) und ist daher kein Artefakt des eigenen Handoffs.

@@ -10,7 +10,7 @@ Stand: 25. Oktober 2026. Originalrevision `1e25e9b8bc2e694689ba0489594f38807a341
 
 Die ursprüngliche Section-anchor-Definition bindet eine Sektion mittels layerName/layerId/variantId/variantName/variantProperties an genau einen Design-Variantenbaum. Die Regeln unterscheiden Variantenroot, konkrete Child-Instanz, Slothost und zustandsabhängige Anatomie. Ein ungelöster Layer darf ausdrücklich layerId:null tragen. Das sind konkrete Dokumentations- und Messzielbindungen, keine Definition einer Popup-Zielkante zur Laufzeit.
 
-flatWalk zieht die Translation der Variante von der Translation des Elements ab und rundet x/y/w/h. Das bewahrt eine gemessene, variantenrelative Boundingbox. Es definiert weder eine Zielrichtung noch einen Abstand zu einem benannten anderen Element unter Größenänderung. Die öffentliche Structure-Dokumentation beschreibt zusätzlich Messplatzierung über render-meta-Layer-ID mit Namens-/Live-Bbox-Fallback. Auch dort ist das Ziel eine Messung in der gerenderten Designinstanz.
+flatWalk zieht die Translation der Variante von der Translation des Elements ab und rundet x/y/w/h. Das bewahrt eine gemessene, variantenrelative Boundingbox. Es definiert weder eine Zielrichtung noch einen Abstand zu einem benannten anderen Element unter Grössenänderung. Die öffentliche Structure-Dokumentation beschreibt zusätzlich Messplatzierung über render-meta-Layer-ID mit Namens-/Live-Bbox-Fallback. Auch dort ist das Ziel eine Messung in der gerenderten Designinstanz.
 
 **Fehlender Beitrag:** eine ausdrücklich definierte und ausführbare Beziehung zwischen Runtime-Ziel und Overlay mit Richtung und Abstand. Die untersuchten Messanker allein erfüllen V04 nicht. Eine zusätzliche solche Bindung wäre ein eigener Beitrag; sie wurde hier nicht erfunden.
 
@@ -20,7 +20,7 @@ extractDims bewahrt clipsContent als value/token/display sowie Maximalabmessunge
 
 safe.ts beschreibt die Auswahl des effektiven Childcontainers: Bei genau einem Auto-Layout-FRAME-Kind wird durch Wrapper abgestiegen. Die Base-JSON-Dokumentation hält ausdrücklich fest, dass treeHierarchical die echten Wrapper mitsamt Dimensionen und clipsContent behält. Der CLI-Strukturevidenzbuilder übernimmt Variantendimensionen, Subkomponenten-Dimensionen und weitere Originalbelege in einen EvidenceEnvelope mit baseSourceHash und Defaultvarianten-Identität. Daraus folgt kein zusätzlicher Runtime-Scroller; es ist die Weitergabe von Designbelegen.
 
-**Fehlender Beitrag:** eine konkret gebundene ursprüngliche Laufzeitinterpretation der Overflow-/Scrollpolitik oder eine ausdrücklich zusätzliche Politikbindung. Clipping und Maximalgröße werden anerkannt, ohne sie still zu einem vollständigen Scrollvertrag zu erweitern.
+**Fehlender Beitrag:** eine konkret gebundene ursprüngliche Laufzeitinterpretation der Overflow-/Scrollpolitik oder eine ausdrücklich zusätzliche Politikbindung. Clipping und Maximalgrösse werden anerkannt, ohne sie still zu einem vollständigen Scrollvertrag zu erweitern.
 
 ## Ergebnis und Stopregel
 

@@ -12,7 +12,7 @@ Unveränderter Repo-Pin **c7af88a51b9dc32e5903a75b3d49b4deaa36e8dc**. An den ber
 4. Der am selben Commit vollständig gelistete Originalbaum führt zum tatsächlichen Website-Routehandler und zu **website/velite.config.ts**. Der Handler liefert parts aus der originalen Types-Collection.
 5. **Diese Collection besitzt ein reales Originalschema für types/**/*.json.** Der zuvor gelesene Generator erzeugt genau solche frameworkbezogenen API-JSON-Dateien. Damit ist ein konkretes Originalartefakt-/Schema-/Prüferpaar vorhanden.
 
-Der Befund ist nicht aus dem bloßen Auftreten einer Zod-/Velite-Abhängigkeit abgeleitet. Die Dateiquelle, der verwendete Collection-Schemakörper, die Originalbibliothek und ihr tatsächlicher Prüferaufruf sind konkret gebunden. Die übrigen SDK-Props, Dokumentationsextraktion und MCP-Anfragevalidierung bleiben getrennte Gegenstände.
+Der Befund ist nicht aus dem blossen Auftreten einer Zod-/Velite-Abhängigkeit abgeleitet. Die Dateiquelle, der verwendete Collection-Schemakörper, die Originalbibliothek und ihr tatsächlicher Prüferaufruf sind konkret gebunden. Die übrigen SDK-Props, Dokumentationsextraktion und MCP-Anfragevalidierung bleiben getrennte Gegenstände.
 
 ## Welches Originalschema hier geprüft wird
 
@@ -30,7 +30,7 @@ Die Types-Collection ist ein Record aus Teilen. Jeder Teil hat einen props-Recor
 
 Die offizielle Website-Paketdefinition bindet **velite 0.4.0**. Genau diese Originaldistribution wurde ohne Installationsskripte isoliert installiert, mit Lock/Registryintegrity und Dateihashes gebunden. TypeScript 5.9.3 isoliert per AST die drei unveränderten Originaldeklarationen normalizePath, PropDefintion und types aus der vollständigen gelesenen Quelle. Ihre Quellenpositionen und Hashes sind in extraction.json gespeichert.
 
-Die Originaldeklarationen werden mit den echten velite.s-/defineCollection-Exporten ausgewertet; keine ersetzten Schemas/Validatorfunktionen, keine zusätzlichen Fachregeln. Aufgerufen wird das vollständige originale **types.schema.safeParse**, einschließlich seiner originalen Metadatentransformation. Dateimetadaten path/basename werden kontrolliert für die gepinnte React-Combobox-Datei bereitgestellt. Das ist Prüfharness-Kontext, kein nachgebauter Validator. Die originale Velite-Parserimplementierung unterstützt diesen meta-Kontext ausdrücklich.
+Die Originaldeklarationen werden mit den echten velite.s-/defineCollection-Exporten ausgewertet; keine ersetzten Schemas/Validatorfunktionen, keine zusätzlichen Fachregeln. Aufgerufen wird das vollständige originale **types.schema.safeParse**, einschliesslich seiner originalen Metadatentransformation. Dateimetadaten path/basename werden kontrolliert für die gepinnte React-Combobox-Datei bereitgestellt. Das ist Prüfharness-Kontext, kein nachgebauter Validator. Die originale Velite-Parserimplementierung unterstützt diesen meta-Kontext ausdrücklich.
 
 Kein kompletter Next-/Website-/Velite-Dateiladebuild, keine MCP-Serverinitialisierung und kein Abruf der Live-Dokumentations-API ausgeführt. Die NPM-Transitivauflösung ist im eigenen Lock reproduzierbar gebunden, aber nicht pauschal mit dem ursprünglichen Bun-Website-Lock gleichgesetzt. Node v24.22.1.
 

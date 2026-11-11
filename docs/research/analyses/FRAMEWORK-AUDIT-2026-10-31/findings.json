@@ -70,7 +70,7 @@
       "evidence": "evidence/suite-counts.json",
       "state": "open",
       "recommendedAction": "Einen gemeinsamen, selektierbaren Regressionseinstieg mit explizitem frischem Ausgabeordner und optionaler CI bereitstellen; Historie nicht aktualisieren.",
-      "acceptance": "Ein Befehl prüft die stabilen Kernmodule, meldet Gesamtfehler und schreibt ausschließlich neue Belege. CI setzt dieselbe dokumentierte Auswahl um.",
+      "acceptance": "Ein Befehl prüft die stabilen Kernmodule, meldet Gesamtfehler und schreibt ausschliesslich neue Belege. CI setzt dieselbe dokumentierte Auswahl um.",
       "historicalFilesToChange": false
     },
     {
@@ -109,7 +109,7 @@
       "evidence": "evidence/inventory.json",
       "state": "open",
       "recommendedAction": "Das vorhandene Kontextvokabular und Regelprofil konsolidieren: Pflicht, Präferenz, Unbekannt, Ausnahme, fehlender Kandidat und nachvollziehbare Begründung. Freie Adress-Schreibhilfe separat definieren.",
-      "acceptance": "Mindestens ein weiterer fachlicher Fall außerhalb der Vorwahl erklärt geeignete, ungeeignete und unbestimmte Kandidaten; unbelegte Fakten werden nicht geraten. Keine willkürliche universelle 15er-Grenze.",
+      "acceptance": "Mindestens ein weiterer fachlicher Fall ausserhalb der Vorwahl erklärt geeignete, ungeeignete und unbestimmte Kandidaten; unbelegte Fakten werden nicht geraten. Keine willkürliche universelle 15er-Grenze.",
       "historicalFilesToChange": false
     },
     {
@@ -122,7 +122,7 @@
       "evidence": "evidence/inventory.json",
       "state": "open",
       "recommendedAction": "Für künftige Auswahlstudien einen kompatiblen Aufgabenadapter bzw. ein ausdrücklich versioniertes Rollenprofil definieren und die vorhandenen technischen Gates anwenden.",
-      "acceptance": "Ein neuer UX-Auftrag kann bootstrap/check ohne Sonderformat durchlaufen; verletzte Quellbindungen und übergroße Übergaben scheitern. Historische Aufgaben bleiben erhalten.",
+      "acceptance": "Ein neuer UX-Auftrag kann bootstrap/check ohne Sonderformat durchlaufen; verletzte Quellbindungen und übergrosse Übergaben scheitern. Historische Aufgaben bleiben erhalten.",
       "historicalFilesToChange": false
     },
     {
@@ -143,7 +143,7 @@
       "priority": "P2",
       "basis": "source-inspection-and-tested-bounds",
       "title": "Designwerkzeuge haben enge, teils überraschende Unterstützungsgrenzen",
-      "impact": "Die Präsentation akzeptiert eine Seite, direkte benannte Fallgruppen, keine rotierten/gespiegelten Unterknoten, lokale 400/700-Schriften und begrenzte Bildgröße. Stylespans und mehrere SVG-/Chartfamilien sind nicht allgemein abgenommen. Theme-Karten schalten die Komponente nicht selbst um.",
+      "impact": "Die Präsentation akzeptiert eine Seite, direkte benannte Fallgruppen, keine rotierten/gespiegelten Unterknoten, lokale 400/700-Schriften und begrenzte Bildgrösse. Stylespans und mehrere SVG-/Chartfamilien sind nicht allgemein abgenommen. Theme-Karten schalten die Komponente nicht selbst um.",
       "source": "tools/openpencil/layout.mjs:23",
       "evidence": "evidence/presentation.json",
       "state": "open",
@@ -169,7 +169,7 @@
       "priority": "P2",
       "basis": "reproduced",
       "title": "Ein späterer Blockiergrund verdeckt einen bereits gefundenen Schemafehler",
-      "impact": "Ein Kandidat außerhalb des registrierten Libraryroots mit fonts.json und ungültigem CEM endet insgesamt mit BLOCKED/FONT_LIBRARY_ROOT_UNSUPPORTED, obwohl ein Artefakt FAIL hat. release bleibt false; die Hauptdiagnose ist jedoch irreführend.",
+      "impact": "Ein Kandidat ausserhalb des registrierten Libraryroots mit fonts.json und ungültigem CEM endet insgesamt mit BLOCKED/FONT_LIBRARY_ROOT_UNSUPPORTED, obwohl ein Artefakt FAIL hat. release bleibt false; die Hauptdiagnose ist jedoch irreführend.",
       "source": "skills/ui-contracts/scripts/contracts.py:60",
       "evidence": "evidence/error-precedence.json",
       "state": "open",

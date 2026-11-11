@@ -6,9 +6,9 @@ Stand: 29. Oktober 2026. Ein gemeinsames Layout-Werkzeug setzt bereits erzeugte 
 
 - Standardvorlage: zweispaltiges Raster, Reihenfolge aus der `stories`-Datei der ausgewählten Komponente.
 - Gleiche Kopfzeile, nummerierte Zustandsbeschriftungen und neutraler Hintergrund. Karten ohne Theme-Zuordnung bleiben hell; explizit zugeordnete Karten verwenden ihren Bibliotheks-Hintergrundtoken und passende helle/dunkle Beschriftungen.
-- Komponentengruppen bleiben in Originalgröße. Die Spaltenbreite wächst für breite Komponenten; Karten einer Reihe erhalten dieselbe ausreichende Höhe.
+- Komponentengruppen bleiben in Originalgrösse. Die Spaltenbreite wächst für breite Komponenten; Karten einer Reihe erhalten dieselbe ausreichende Höhe.
 - Sichtbare Überstände und Schatten werden über die vorhandene native Geometrie berücksichtigt. Das Werkzeug setzt kein zusätzliches Clipping. Bereits im Original definierte Viewport-Clips und unsichtbare Ebenen bleiben erhalten.
-- Alte Seitentitel und freie Beschriftungen außerhalb der ausgewählten Gruppen werden nur in der **neuen Ausgabe** durch die gemeinsame Präsentation ersetzt.
+- Alte Seitentitel und freie Beschriftungen ausserhalb der ausgewählten Gruppen werden nur in der **neuen Ausgabe** durch die gemeinsame Präsentation ersetzt.
 
 ## Aufruf
 
@@ -26,7 +26,7 @@ node tools/openpencil/preview.mjs \
 
 Optional übergibt `--definition-revision LABEL` eine bekannte Quellrevision für Kopfzeile/Receipt. Der Wert wird vom Aufrufer angegeben und nicht aus der FIG-Datei bewiesen. Ohne Angabe zeigt die Ausgabe ausdrücklich „nicht mitgeliefert“; keine aktuelle Libraryrevision still auf ein älteres FIG übertragen.
 
-Die Bibliothek benötigt für diesen initialen PNG-Adapter ein prüfbares lokales `fonts.json`, einschließlich normaler 400-/700-Schnitte der Präsentationsschrift. Auch alle tatsächlich genutzten Komponentenschriften müssen exakt lokal vorliegen und den Text abdecken. Keine stillen Fontfallbacks oder Netzwerkauflösung. Eine separate Lizenzdatei ist entsprechend der [Fontpolicy](../fonts/README.md) keine technische Voraussetzung.
+Die Bibliothek benötigt für diesen initialen PNG-Adapter ein prüfbares lokales `fonts.json`, einschliesslich normaler 400-/700-Schnitte der Präsentationsschrift. Auch alle tatsächlich genutzten Komponentenschriften müssen exakt lokal vorliegen und den Text abdecken. Keine stillen Fontfallbacks oder Netzwerkauflösung. Eine separate Lizenzdatei ist entsprechend der [Fontpolicy](../fonts/README.md) keine technische Voraussetzung.
 
 ## Themeabhängige Karten
 
@@ -43,7 +43,7 @@ Die Tokenpfade im Beispiel sind Platzhalter für die tatsächlichen Tokens in `l
 
 Unterstützt: sechsstellige HEX-Farben, deckende DTCG-sRGB-Farbwerte und Token-Aliase. Nicht unterstützt: transparente Hintergründe, andere Farbräume, automatische Modus-/Resolverauswahl und pauschales Durchsuchen von CSS nach möglichen Farben. Für solche Fälle einen passenden Adapter ergänzen; keine stille Näherung. Unbekannte Fall-IDs, fehlende Tokens, zyklische Aliase oder ein Themeeintrag ohne `mode` und `backgroundToken` blockieren den Aufruf.
 
-Die zentrale `presentation.json` legt für dunkle Karten nur Rahmen- und Beschriftungsfarben fest (`darkCard`). Sie enthält absichtlich keinen universellen dunklen Hintergrund. Die äußere Übersichtsfläche bleibt neutral. Komponentengruppen und ihre eigenen Flächen werden unverändert übernommen. Der Renderer schaltet Komponenten nicht selbst in Darkmode; die Eingabe-FIG muss bereits die angeforderten Varianten enthalten.
+Die zentrale `presentation.json` legt für dunkle Karten nur Rahmen- und Beschriftungsfarben fest (`darkCard`). Sie enthält absichtlich keinen universellen dunklen Hintergrund. Die äussere Übersichtsfläche bleibt neutral. Komponentengruppen und ihre eigenen Flächen werden unverändert übernommen. Der Renderer schaltet Komponenten nicht selbst in Darkmode; die Eingabe-FIG muss bereits die angeforderten Varianten enthalten.
 
 Ohne Zuordnung bleibt die bisherige neutrale helle Karte erhalten und im Receipt steht `mode: unspecified`; das gilt nicht als Darkmode-Nachweis. Bei zugeordneten Fällen hält `preview-check.json` Mode, aufgelösten Hintergrundtoken und Farbwerte sowie Hashes der Zuordnungs- und Token-Datei fest. Kartengrund, Rahmen und Beschriftung werden nach FIG-Readback und Rendering zusätzlich geprüft. Ein korrekter Hintergrund ist kein Kontrast- oder Accessibility-Zertifikat.
 
@@ -57,7 +57,7 @@ Das Layout gehört zur normalen OpenPencil-Ausgabe: `<komponente>.fig` und `prev
 - `preview.png`: Rendering dieser erneut eingelesenen FIG;
 - `preview-check.json`: Eingabe-/Ausgabehashes, Vorlagenhash, Quellverweise, Layout und Invarianten pro Fall.
 
-Vor der Layoutänderung wird jeder Komponentenbaum rekursiv erfasst; nach Zusammensetzung, FIG-Readback und PNG-Rendering wird verglichen. Verglichen werden die eigenen nativen Eigenschaften einschließlich Texte, Styles, Maße, Farben, Effekte, Clips, Variablenbindungen, Layerreihenfolge und aller relativen Kindpositionen. Nur die äußere x/y-Position der Fallgruppe darf wechseln. Eltern-/Kind-IDs werden durch die rekursive Baumstruktur ersetzt; IDs, rohe Importmetadaten sowie die im Receipt explizit genannten Renderer-Caches werden nicht als unveränderte Wire-/Metadatenserialisierung ausgegeben.
+Vor der Layoutänderung wird jeder Komponentenbaum rekursiv erfasst; nach Zusammensetzung, FIG-Readback und PNG-Rendering wird verglichen. Verglichen werden die eigenen nativen Eigenschaften einschliesslich Texte, Styles, Masse, Farben, Effekte, Clips, Variablenbindungen, Layerreihenfolge und aller relativen Kindpositionen. Nur die äussere x/y-Position der Fallgruppe darf wechseln. Eltern-/Kind-IDs werden durch die rekursive Baumstruktur ersetzt; IDs, rohe Importmetadaten sowie die im Receipt explizit genannten Renderer-Caches werden nicht als unveränderte Wire-/Metadatenserialisierung ausgegeben.
 
 Die tatsächliche Gruppenposition und Kartengeometrie werden zusätzlich gegen den Layoutplan geprüft. Der Eingabehash muss nach dem Vorgang identisch sein. Eine Abweichung blockiert den erfolgreichen Abschluss. Bereits erzeugte Teil-Ausgaben eines fehlgeschlagenen Aufrufs sind kein bestandener Nachweis und werden nicht über eine Wiederholung überschrieben.
 
@@ -71,7 +71,7 @@ Beide Original-FIGs und sämtliche historischen run-04-Dateien sind unverändert
 
 Das Werkzeug korrigiert keine Komponentenfehler und erzwingt keine Pixelgleichheit. Bereits vorhandene Unterschiede, etwa in nicht normierten Clip-/Eckenentscheidungen, bleiben erhalten. Neue Bibliotheks-Fontassets können anders rendern als frühere nicht gebundene Fonts; das ist kein nachträglicher Pixelnachweis für alte Studien.
 
-Initial blockiert: mehrseitige Eingaben, gedrehte/gespiegelte Nodes, formatierte Text-Runs und Komponentenreferenzen außerhalb der ausgewählten Fallgruppen. Komplexere Kompositionen/Masken und beliebige Figma-Funktionen sind nicht allgemein qualifiziert. Runtime, Accessibility und Metadatenverlustfreiheit werden nicht aus der Präsentation abgeleitet. `PASS_LIMITED`, `release:false` bleibt sichtbar.
+Initial blockiert: mehrseitige Eingaben, gedrehte/gespiegelte Nodes, formatierte Text-Runs und Komponentenreferenzen ausserhalb der ausgewählten Fallgruppen. Komplexere Kompositionen/Masken und beliebige Figma-Funktionen sind nicht allgemein qualifiziert. Runtime, Accessibility und Metadatenverlustfreiheit werden nicht aus der Präsentation abgeleitet. `PASS_LIMITED`, `release:false` bleibt sichtbar.
 
 ## Regressionen
 
@@ -83,7 +83,7 @@ Die Tests prüfen zusätzlich eine synthetische Disclosure-Komponente mit andere
 
 ## Zentrale Vorlage, gewöhnliche Ergebnisdateien
 
-Die Vorlage liegt beim Werkzeug, nicht in jedem Ergebnisordner. Bestehende Ausgangsdateien werden nicht neu als presentation.fig dupliziert. Neue Endausgaben heißen beispielsweise `autocomplete.fig` und `preview.png`. Die beiden nachträglichen run-04-Proben liegen nun innerhalb des vorhandenen Autocomplete-Ausgabebereichs; ihre FIG-/PNG-Bytes und die Forschungsoriginale wurden bei der Umordnung nicht verändert.
+Die Vorlage liegt beim Werkzeug, nicht in jedem Ergebnisordner. Bestehende Ausgangsdateien werden nicht neu als presentation.fig dupliziert. Neue Endausgaben heissen beispielsweise `autocomplete.fig` und `preview.png`. Die beiden nachträglichen run-04-Proben liegen nun innerhalb des vorhandenen Autocomplete-Ausgabebereichs; ihre FIG-/PNG-Bytes und die Forschungsoriginale wurden bei der Umordnung nicht verändert.
 
 Qualifiziert ist die mitgelieferte Standardvorlage. Änderungen an Raster oder Typografie benötigen neue passende Vorschaunachweise; eine gültige JSON-Datei allein belegt keine überlappungsfreie Darstellung beliebiger Einstellungen.
 

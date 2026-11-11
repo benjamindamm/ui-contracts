@@ -27,10 +27,10 @@ async function main() {
   const send = (name, data) => machine.gen({name, data});
   const check = (id, test) => { test(); checks.push({id, passed: true}); };
   if (request.profile === 'text-input/1') {
-    send('USER_INPUT', {value: '0123 Straße'});
-    check('input-string-roundtrip', () => assert.equal(data().value, '0123 Straße'));
+    send('USER_INPUT', {value: '0123 Strasse'});
+    check('input-string-roundtrip', () => assert.equal(data().value, '0123 Strasse'));
     send('SET_READ_ONLY', {readOnly: true}); send('USER_INPUT', {value: 'unexpected'});
-    check('readonly-rejects-user-input', () => assert.equal(data().value, '0123 Straße'));
+    check('readonly-rejects-user-input', () => assert.equal(data().value, '0123 Strasse'));
     send('SET_VALUE', {value: 'host'});
     check('readonly-allows-host-update', () => assert.equal(data().value, 'host'));
     send('SET_VALUE', {value: 123});
@@ -38,8 +38,8 @@ async function main() {
     send('SET_READ_ONLY', {readOnly: false}); send('SET_ENABLED', {enabled: false});
     send('USER_INPUT', {value: 'unexpected'});
     check('disabled-rejects-user-input', () => assert.equal(data().value, 'host'));
-    await wait(e => e.name === 'value-change' && e.data.value === '0123 Straße');
-    check('input-string-event', () => assert.ok(events.some(e => e.name === 'value-change' && e.data.value === '0123 Straße')));
+    await wait(e => e.name === 'value-change' && e.data.value === '0123 Strasse');
+    check('input-string-event', () => assert.ok(events.some(e => e.name === 'value-change' && e.data.value === '0123 Strasse')));
   } else if (['single-select/1', 'separate-search-select/1'].includes(request.profile)) {
     const search = request.profile === 'separate-search-select/1';
     const options = [{key: 'B-KEY', label: 'Bravo (+1)'}, {key: 'A-KEY', label: 'Alpha (+1)'}, {key: 'OFF', label: 'Disabled', disabled: true}];

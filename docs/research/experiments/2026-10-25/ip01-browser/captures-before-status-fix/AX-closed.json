@@ -275,7 +275,7 @@
                 "type": "contents",
                 "value": {
                   "type": "computedString",
-                  "value": "Außerhalb der Suche"
+                  "value": "Ausserhalb der Suche"
                 }
               },
               {
@@ -285,7 +285,7 @@
               }
             ],
             "type": "computedString",
-            "value": "Außerhalb der Suche"
+            "value": "Ausserhalb der Suche"
           },
           "nodeId": "181",
           "parentId": "177",
@@ -525,12 +525,12 @@
                 "type": "contents",
                 "value": {
                   "type": "computedString",
-                  "value": "Außerhalb der Suche"
+                  "value": "Ausserhalb der Suche"
                 }
               }
             ],
             "type": "computedString",
-            "value": "Außerhalb der Suche"
+            "value": "Ausserhalb der Suche"
           },
           "nodeId": "143",
           "parentId": "181",
@@ -1252,7 +1252,7 @@
           "ignored": false,
           "name": {
             "type": "computedString",
-            "value": "Außerhalb der Suche"
+            "value": "Ausserhalb der Suche"
           },
           "nodeId": "-1000000056",
           "parentId": "143",

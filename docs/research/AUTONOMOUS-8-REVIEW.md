@@ -17,7 +17,7 @@ Stand:25. Oktober2026. **Acht von acht benannten autonomen Fragen im jeweiligen 
 
 ## Tatsächlich durchgeführte neue Bedingungen
 
-- uSpec CEM→Fact→Output:14 Bedingungen teilen sich zwei getrennte Kriterienbegründungen X03/X08; einmal gezählt. Tatsächliche Quellenänderung, Dateineulesen und abgeleitete Fakten/Outputs einschließlich Primärquellkonflikt.
+- uSpec CEM→Fact→Output:14 Bedingungen teilen sich zwei getrennte Kriterienbegründungen X03/X08; einmal gezählt. Tatsächliche Quellenänderung, Dateineulesen und abgeleitete Fakten/Outputs einschliesslich Primärquellkonflikt.
 - uSpec-APIcache:3 Fälle mit tatsächlichem unabhängigen Originalcachevalidator, Evidence und ursprünglicher SCXML-Parentlieferung. Der ganze Canonical-Root wird nicht als partiell ladbar ausgegeben.
 - OpenPencil:5 Vier-Master→Originalgraph-/Control-/SSR-Fälle mit tatsächlichen gerenderten A/B-Namen/aria-checked. Kein führender manuell gepflegter Graph neben den vier Fachquellen.
 - Layout:16 native Bedingungen mit tatsächlichen ursprünglichen Compiler-/Mapper-/Builder-/Clippingfunktionsausgaben und ausdrücklich zusätzlichen CSS-Ziel-/Politikbindungen. Keine erfundenen ursprünglichen Geometrie-/Scrollfelder.

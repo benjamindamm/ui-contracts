@@ -1,10 +1,10 @@
 # OpenPencil: tatsächliche Propertyauflösung mit externem CEM-Ziel
 
-Stand: 25. Oktober 2026. **OpenPencil X03 A/C505** ausschließlich für den expliziten Booleanbeitrag. **38 U:23 Integration,15 weitere. 478 Bedingungen/62 Gruppen.**
+Stand: 25. Oktober 2026. **OpenPencil X03 A/C505** ausschliesslich für den expliziten Booleanbeitrag. **38 U:23 Integration,15 weitere. 478 Bedingungen/62 Gruppen.**
 
 ## Fehlende Aussage und Endbedingung
 
-Der vorherige Befund C306 belegte nur interne Properties/Slots desselben Scenegraphs. X03 verlangt ein eindeutig adressiertes, semantisch zugeordnetes Ziel einer separat beschriebenen Domäne. Die Endbedingung hier lautet: tatsächliche ursprüngliche Switch-Booleanbindung an ein eigenständiges CEM-Interfacefeld binden; falsche Zielart, Typ, Owner und Quellenrevision abweisen; ID-Erhalt beim ursprünglichen Propertyrename und getrennte Instanzwerte prüfen. Kein bloßer Austausch des Frameworknamens im bisherigen Prüfer.
+Der vorherige Befund C306 belegte nur interne Properties/Slots desselben Scenegraphs. X03 verlangt ein eindeutig adressiertes, semantisch zugeordnetes Ziel einer separat beschriebenen Domäne. Die Endbedingung hier lautet: tatsächliche ursprüngliche Switch-Booleanbindung an ein eigenständiges CEM-Interfacefeld binden; falsche Zielart, Typ, Owner und Quellenrevision abweisen; ID-Erhalt beim ursprünglichen Propertyrename und getrennte Instanzwerte prüfen. Kein blosser Austausch des Frameworknamens im bisherigen Prüfer.
 
 ## Kandidatenspezifischer Originalpfad
 

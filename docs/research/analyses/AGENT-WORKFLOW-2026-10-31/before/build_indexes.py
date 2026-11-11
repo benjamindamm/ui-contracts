@@ -13,7 +13,7 @@ primary=['RESEARCH-CLOSEOUT.md','INTEGRATION-PROFILE.md','INTEGRATION-BINDING-DR
 evidence=['MATRIX.md','CLAIMS.md','SOURCES.md','METHODS.md','REQUIREMENTS.md','CONTEXT.md','TOOLING-COMPARISON.md','COMPARE-UXSPEC-SCXML.md','COMPARE-DESIGN-LAYOUT.md']
 limits=['OPEN-FIELDS.md','OPEN-QUESTIONS.md','REMAINDER-PLAN.md']
 files=sorted(p.name for p in r.glob('*.md'));groups=[('Aktueller Einstieg und Übergabe',primary),('Methodik, Befunde und Vergleiche',evidence),('Dokumentierte externe Restklärungen',limits)];used=set(primary+evidence+limits);groups.append(('Vertiefungen und historische Arbeitsstände',[n for n in files if n not in used]))
-lines=['# Dokumentenindex','','Stand: 25. Oktober 2026. Vollständiges Verzeichnis der '+str(len(files))+' Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).','','Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; maßgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.']
+lines=['# Dokumentenindex','','Stand: 25. Oktober 2026. Vollständiges Verzeichnis der '+str(len(files))+' Markdown-Dokumente im Forschungsstamm. Versuchsordner werden separat im [vollständigen Experimentindex](experiments/INDEX.md) erschlossen. [Abschluss und Lesereihenfolge](RESEARCH-CLOSEOUT.md).','','Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahlen; massgeblich für den Abschlussstand sind CURRENT-STATUS und study.json. iOS/Android sind Zukunftsperspektive, keine offene Testpflicht dieser Recherche.']
 for heading,names in groups:
  lines+=['','## '+heading,'','| Dokument | Inhalt |','| --- | --- |']
  for n in names:
@@ -27,7 +27,7 @@ for p in nested:
  lines.append(f'| [{rel}]({rel}) | {title} |')
 lines+=['','## Maschinenlesbare Daten und Prüfarbeitsstände','','| Datei | Bedeutung |','| --- | --- |']
 for p in sorted(r.glob('*.json')):
- desc={'study.json':'Maßgebliche Bewertungen, Claims, Quellenzuordnungen und ausgeführte Prüfgruppen.','REMAINDER-PLAN.json':'Exakt verbleibende Matrix-U-Zellen; keine offene native Testpflicht.','INTEGRATION-PROFILE-EVIDENCE.json':'Belegpfade und Hashes des Integrationsvorschlags; kein ausführbares Produktmanifest.'}.get(p.name,'Maschinenlesbarer ergänzender Forschungsstand; Einordnung im zugehörigen Bericht.')
+ desc={'study.json':'Massgebliche Bewertungen, Claims, Quellenzuordnungen und ausgeführte Prüfgruppen.','REMAINDER-PLAN.json':'Exakt verbleibende Matrix-U-Zellen; keine offene native Testpflicht.','INTEGRATION-PROFILE-EVIDENCE.json':'Belegpfade und Hashes des Integrationsvorschlags; kein ausführbares Produktmanifest.'}.get(p.name,'Maschinenlesbarer ergänzender Forschungsstand; Einordnung im zugehörigen Bericht.')
  lines.append(f'| [{p.name}]({p.name}) | {desc} |')
 lines+=['','## Experimentordner','','[106 Gruppen mit direkten Links zu Berichten und Rohresultaten](experiments/INDEX.md). In den Ordnern stehen je nach Versuch Vorregistrierung, Original-/Eigenartefaktmanifest, ausführbarer Forschungszusatz und erhaltene Erst-/Korrekturläufe. Rohresultate und Code sind keine zusätzlich beschlossenen Produktformate.',''];idx.write_text('\n'.join(lines))
 assert set(files).issubset({n for _,names in groups for n in names})

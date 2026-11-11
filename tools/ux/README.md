@@ -12,7 +12,7 @@ Nutze den [UI-Contracts-Skill](../../docs/skills/README.md) mit Bibliothek, Ziel
 >
 > Drei feste Vorwahlen führen im vorhandenen Policyprofil zu Select; 30 zu Select mit Suche. Die Grenze von 15 Optionen ist eine gesetzte Beispielpolicy, keine allgemeine UX-Regel.
 
-Originalquellen führen. JSON- und Prüfprofile sind eigene versionierte Projektkonventionen, kein universeller UX-Standard. Freie Texteingabe fällt außerhalb dieser festen Auswahlpolicy.
+Originalquellen führen. JSON- und Prüfprofile sind eigene versionierte Projektkonventionen, kein universeller UX-Standard. Freie Texteingabe fällt ausserhalb dieser festen Auswahlpolicy.
 
 ## Manueller Ablauf
 
@@ -45,7 +45,7 @@ Einrichtung und ausführbare Quellen: [Runtime und Voraussetzungen](RUNTIME.md).
 | `declared` | Fachliche Behauptung vorhanden; kein passendes ausgeführtes Profil. Nicht als nachgewiesen eligible verwenden. |
 | `unverified` | Profil unbekannt oder notwendiges Werkzeug fehlt. Keine harte Erfüllung ableiten. |
 | `invalid` | Quellen/Schema/Profil widersprechen sich oder tatsächliche Contractfälle schlagen fehl. Auswahl stoppt mit FAIL. |
-| `verified-limited` | Aktuelle CEM-/HTML-Struktur und die im Profil unterstützten TypeScript-Signaturen passen; die tatsächlich ausgeführten SCXML-Gegenfälle bestehen. Gilt ausschließlich für diesen Quellenstand und Prüfumfang. |
+| `verified-limited` | Aktuelle CEM-/HTML-Struktur und die im Profil unterstützten TypeScript-Signaturen passen; die tatsächlich ausgeführten SCXML-Gegenfälle bestehen. Gilt ausschliesslich für diesen Quellenstand und Prüfumfang. |
 
 ### Unterstützte Profile
 
@@ -68,7 +68,7 @@ tools/validation/.venv/bin/python tools/ux/choose.py \
   --library example --context tools/ux/contexts/fixed-three.json
 ```
 
-Die Kontextdatei benennt die Bibliothek, tatsächliche Optionen und vier explizite Fakten: feste Werte gefordert, temporäre Suche erlaubt, direkte Bearbeitung des gewählten Labels erlaubt sowie Filterprovider vorhanden. Fehlende Fakten sind unbekannt und führen zu `needs-clarification`; Freitext-Schreibhilfe fällt außerhalb der festen Auswahlpolicy. Ein Provider-Fakt ist eine deklarierte Kontextvoraussetzung, kein Nachweis einer erzeugten Implementierung.
+Die Kontextdatei benennt die Bibliothek, tatsächliche Optionen und vier explizite Fakten: feste Werte gefordert, temporäre Suche erlaubt, direkte Bearbeitung des gewählten Labels erlaubt sowie Filterprovider vorhanden. Fehlende Fakten sind unbekannt und führen zu `needs-clarification`; Freitext-Schreibhilfe fällt ausserhalb der festen Auswahlpolicy. Ein Provider-Fakt ist eine deklarierte Kontextvoraussetzung, kein Nachweis einer erzeugten Implementierung.
 
 Im example-Profil ist >15 eine ausdrückliche Produkt-/Studienregel. Der Runner berechnet die Optionsanzahl aus der tatsächlichen Liste. Er erfindet keine allgemeine UX-Grenze und keine geografische Priorität. Gleichlautende Vorwahlen dürfen verschiedene Länderschlüssel behalten.
 
@@ -87,6 +87,6 @@ Ohne Runtime werden die Integrationsfälle ausdrücklich übersprungen, nicht al
 
 ## Kleiner Toolkontext
 
-Die drei CLI-Einstiege geben standardmäßig eine kurze Zusammenfassung aus. `--output NEUE_DATEI` legt die vollständigen Quellen-/Prüfbelege separat mit SHA-256-Verweis ab; bestehende Dateien und Quell-/Historienverzeichnisse werden nicht überschrieben. `--details` lädt die volle Ausgabe ausdrücklich in den Toolkontext. Ein Agent muss die großen Belege deshalb nicht vorsorglich lesen. Python-Funktionen liefern weiterhin die vollständigen strukturierten Ergebnisse für technische Integration.
+Die drei CLI-Einstiege geben standardmässig eine kurze Zusammenfassung aus. `--output NEUE_DATEI` legt die vollständigen Quellen-/Prüfbelege separat mit SHA-256-Verweis ab; bestehende Dateien und Quell-/Historienverzeichnisse werden nicht überschrieben. `--details` lädt die volle Ausgabe ausdrücklich in den Toolkontext. Ein Agent muss die grossen Belege deshalb nicht vorsorglich lesen. Python-Funktionen liefern weiterhin die vollständigen strukturierten Ergebnisse für technische Integration.
 
 Gemeinsamer Testeinstieg und aktuelle Targetprüfung: [tools/web](../web/README.md).

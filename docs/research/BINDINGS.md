@@ -3,7 +3,7 @@
 **Konsolidierter Vorschlag vom 25. Oktober 2026:** [IP-01](INTEGRATION-PROFILE.md) mit [geplanter Gesamt-Abnahme](INTEGRATION-ACCEPTANCE.md). Der folgende Text bewahrt den historischen Arbeitsstand.
 
 
-**Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
+**Historischer Zwischenstand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Massgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
 
 **Typisierte Referenzbindung geprüft:** [ARIA-Host → externe CEM-/SCXML-Knoten](experiments/2026-10-25/typed-references/REPORT.md), 16 Erwartungen erfüllt, Original-CEM/SCXML-Schemas separat akzeptiert. WAI-ARIA X03 begrenzt A/C462 durch Zusatzresolver; keine native ARIA-Modellreferenz. Aktuell 54 U, 299 Bedingungen/36 Gruppen.
 
@@ -13,7 +13,7 @@
 
 **DTCG-Folgeprüfung:** [Getrennte Visualquelle mit zusätzlichem Webadapter](experiments/2026-10-25/dtcg-binding/REPORT.md), zwölf Bindungs-/Übersetzungsfälle und vier Browserbedingungen erfüllt. X01 DTCG A/C454 im begrenzten Referenzfall; zum damaligen Teilabschluss 56 U-Zellen. Kein vollständiger DTCG-Validator.
 
-**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschließlich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
+**Ergänzung 25.10.2026 – SCXML-Laufzeit:** [Gespeicherter Prüfblock](experiments/2026-10-25/scxml-runtime/REPORT.md) mit 17 Bedingungen: 9/10 im Ausgangslauf, 2/2 Diagnosefälle und 5/5 Browserfälle. Getrennte Vorbereitung verhindert die beobachtete Datenkopplung. Native Parent-Sendung und ein zusätzlicher interaktiver Forschungs-Host sind ausgeführt; keine Produktionskomponente, physische Tastatur- oder AT-Prüfung. Ältere Aussagen zu ausschliesslich statischer Prüfung gelten für die damaligen Teilversuche. Historischer Zwischenstand nach DTCG: 56 U-Zellen.
 
 # Konkrete Feldbindungen und verbleibende Integrationsfragen
 
@@ -54,13 +54,13 @@ Die Feldpfade sind beschreibende Suchpfade mit Platzhaltern, keine allgemeine Re
 4. Die Produktinstanz bestimmt, zu welcher Suche die Auswahl gehört. Der gleiche Definitionseventname kann in A und B vorkommen, ohne dass die Instanzen identisch sind.
 5. Accessibility vermittelt den relevanten Zustand innerhalb desselben Instanzkontexts. Sie bestimmt nicht unabhängig einen zweiten Bestätigungszeitpunkt.
 
-**Offener Typfall:** UXSpecs `contextField` führt primitive Typnamen einschließlich `object/array`, aber in dieser Definition keinen rekursiven Property-/Itemvertrag. Beliebige komplexe CEM-Typtexte lassen sich daher nicht ohne zusätzlich definierte Typabbildung als vollständig kompatibel ausgeben. Der einfache Stringfall begrenzt die spätere Prüfung; er löst die allgemeine Typfrage nicht. [C394](CLAIMS.md#c394)
+**Offener Typfall:** UXSpecs `contextField` führt primitive Typnamen einschliesslich `object/array`, aber in dieser Definition keinen rekursiven Property-/Itemvertrag. Beliebige komplexe CEM-Typtexte lassen sich daher nicht ohne zusätzlich definierte Typabbildung als vollständig kompatibel ausgeben. Der einfache Stringfall begrenzt die spätere Prüfung; er löst die allgemeine Typfrage nicht. [C394](CLAIMS.md#c394)
 
 ## 4. Konkrete Kette für Werte und Einheiten
 
-DTCG beschreibt eine Dimension durch Zahl und Einheit. Im erneut gelesenen UXSpec-Resolver reduziert ein bestimmter Auflösungspfad ein Objekt, das ausschließlich numerisches `value` und String-`unit` enthält, auf die Zahl. Das ist ein konkretes Informationsverlustrisiko bei einer entsprechenden Tokenintegration. Es wurde weder eine fertige Importkette noch ein Runtimefehler ausgeführt. Ein eigenständiges DTCG-Dokument wird außerdem nicht schon deshalb zu einem UXSpec-Import, weil beide `$value` verwenden. [C395](CLAIMS.md#c395)
+DTCG beschreibt eine Dimension durch Zahl und Einheit. Im erneut gelesenen UXSpec-Resolver reduziert ein bestimmter Auflösungspfad ein Objekt, das ausschliesslich numerisches `value` und String-`unit` enthält, auf die Zahl. Das ist ein konkretes Informationsverlustrisiko bei einer entsprechenden Tokenintegration. Es wurde weder eine fertige Importkette noch ein Runtimefehler ausgeführt. Ein eigenständiges DTCG-Dokument wird ausserdem nicht schon deshalb zu einem UXSpec-Import, weil beide `$value` verwenden. [C395](CLAIMS.md#c395)
 
-**Vorgeschlagene Konsequenz:** Visuelle Originalwerte verbleiben in ihrer führenden Quelle. Eine Bindung muss Quelle, Zielproperty und Einheit beziehungsweise eine explizite Umrechnung erkennen lassen. Ein Adapter darf aus `rem` keinen einheitenlosen Wert machen und anschließend Gleichwertigkeit behaupten. DTCGs Hinweise für Plattformübersetzung ersetzen keinen Nachweis unseres nativen Zielprofils.
+**Vorgeschlagene Konsequenz:** Visuelle Originalwerte verbleiben in ihrer führenden Quelle. Eine Bindung muss Quelle, Zielproperty und Einheit beziehungsweise eine explizite Umrechnung erkennen lassen. Ein Adapter darf aus `rem` keinen einheitenlosen Wert machen und anschliessend Gleichwertigkeit behaupten. DTCGs Hinweise für Plattformübersetzung ersetzen keinen Nachweis unseres nativen Zielprofils.
 
 Der Abstand zwischen Eingabe und Popup benötigt zusätzlich ein relatives Ziel und Geometriesemantik. Ein gültiger Dimensionstoken allein definiert weder Anker noch Richtung, verfügbare Höhe oder Scrollport. Diese Felder bleiben Teil des bestätigten Layoutvergleichs.
 
@@ -71,19 +71,19 @@ Für den vorgeschlagenen editierbaren Webfall mit Listbox-Popup gilt als zu prü
 | Bedeutung | Bindung im vorgeschlagenen Profil | Prüfbedarf |
 | --- | --- | --- |
 | Eingabe | Das Element mit passender Combobox-Semantik und tatsächlichem DOM-Fokus | Fachlicher Input und gerendertes Element stimmen überein |
-| Popupziel | `aria-controls` verweist auf das semantisch passende Popup, hier die Listbox | Nicht versehentlich auf einen bloßen Overlay-/Scrollwrapper zeigen |
+| Popupziel | `aria-controls` verweist auf das semantisch passende Popup, hier die Listbox | Nicht versehentlich auf einen blossen Overlay-/Scrollwrapper zeigen |
 | Aktive Option | `aria-activedescendant` verweist auf die tatsächlich aktive Option im zulässigen Beziehungsbereich | Existenz, Instanz, Rolle und Eigentums-/Kontrollbedingungen prüfen |
 | Zugänglich gemeldete Auswahl | Das gewählte APG-Muster berücksichtigt `aria-selected` und Auswahlfolge im Popup | Nicht pauschal behaupten, jede Navigation sei ohne Auswahlsemantik |
 | Bestätigter Produktwert | Behavior legt Übernahme und öffentlichen Eventzeitpunkt fest | Von aktueller Popupauswahl getrennt beschreiben |
 | Sichtbare aktive Option | Gewählte Scrollfunktion macht das aktive Element sichtbar | Zuständigkeit zwischen Combobox und ScrollArea prüfen |
 
-WAI-ARIA definiert die zulässigen Beziehungen für aktive Nachfahren; die bloße Existenz einer Ziel-ID genügt nicht. Das APG-Muster beschreibt Fokus und Popupauswahl. **Aktive Option, zugänglich gemeldete Auswahl und endgültig bestätigter Produktwert sind deshalb als drei Bedeutungen zu behandeln.** Je Produktvariante können sie zusammenfallen; das muss ausdrücklich festgelegt werden. [C396](CLAIMS.md#c396)
+WAI-ARIA definiert die zulässigen Beziehungen für aktive Nachfahren; die blosse Existenz einer Ziel-ID genügt nicht. Das APG-Muster beschreibt Fokus und Popupauswahl. **Aktive Option, zugänglich gemeldete Auswahl und endgültig bestätigter Produktwert sind deshalb als drei Bedeutungen zu behandeln.** Je Produktvariante können sie zusammenfallen; das muss ausdrücklich festgelegt werden. [C396](CLAIMS.md#c396)
 
 Für Suche A ist eine formal existente Option in Suche B weiterhin das falsche fachliche Ziel. Ein zusätzlicher Instanzbezug ist daher als Integrationsregel vorgeschlagen. DOM-/Portalstruktur und die Gleichheit oder Trennung von Listbox und ScrollArea-Viewport bleiben konkret zu entscheiden.
 
 ## 6. Alle Integrationsfelder im Abgleich
 
-| Feld | Noch offene U-Zellen | Befundstand | Was die Frage tatsächlich schließen würde |
+| Feld | Noch offene U-Zellen | Befundstand | Was die Frage tatsächlich schliessen würde |
 | --- | ---: | --- | --- |
 | X01 – Vier unabhängige Domänen | 11 | CEM/SCXML/CSS/WAI-ARIA und DTCG sind im begrenzten zusätzlichen Webprofil A; andere Kandidatenbindungen bleiben unbewiesen | Weitere Originalbeiträge getrennt prüfen; dynamische Gesamtintegration nicht aus dem statischen Profil ableiten |
 | X02 – Identität | 0 | Alle Kandidaten bereits eingeordnet; positive Teilbeiträge sind nicht gleichbedeutend mit Paketidentität | Definition/Instanz/Teil/DOM-ID für den Referenzfall nachvollziehbar zuordnen |
@@ -117,7 +117,7 @@ Das [statische Referenzprofil](experiments/2026-10-24/scxml/REPORT.md) bindet nu
 
 ## Originalresolver tatsächlich geprüft
 
-Die [Referenz-Folgeprüfung](experiments/2026-10-24/references/REPORT.md) belegt jetzt konkrete Grenzen statt bloßer Hypothesen: importierter Namenskontext, stille globale Modul-ID-Überschreibungen und Token-Einheitenverlust. Die Import-/Rekursionsfälle sind gemeinsam mit ihrer Originalschema-Vorprüfung zu lesen; valide Kollisionsfälle und separat abgewiesene Referenzformen werden nicht gleichgesetzt. Keine gemeinsame Vier-Domänen-Identität daraus abgeleitet.
+Die [Referenz-Folgeprüfung](experiments/2026-10-24/references/REPORT.md) belegt jetzt konkrete Grenzen statt blosser Hypothesen: importierter Namenskontext, stille globale Modul-ID-Überschreibungen und Token-Einheitenverlust. Die Import-/Rekursionsfälle sind gemeinsam mit ihrer Originalschema-Vorprüfung zu lesen; valide Kollisionsfälle und separat abgewiesene Referenzformen werden nicht gleichgesetzt. Keine gemeinsame Vier-Domänen-Identität daraus abgeleitet.
 
 ## Ausgeführte Ziel-/Instanzgegenfälle
 

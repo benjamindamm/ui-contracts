@@ -1,4 +1,4 @@
-**Aktueller Stand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
+**Aktueller Stand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Massgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
 
 # Originalschema und Werkzeug: drei gezielte Folgeprüfungen
 
@@ -12,7 +12,7 @@ Stand: 24. Oktober 2026. [Quellen S61](SOURCES.md#s61), [Befunde C402–C404](CL
 
 ## Nachvollziehbare Negativfälle für später
 
-**OpenUI:** Ein künftiger offizieller Prüfer muss klären, welche Definition für license/group und enum/required maßgeblich ist. Ein selbst angeglichener Typ wäre bereits eine neue Projektentscheidung.
+**OpenUI:** Ein künftiger offizieller Prüfer muss klären, welche Definition für license/group und enum/required massgeblich ist. Ein selbst angeglichener Typ wäre bereits eine neue Projektentscheidung.
 
 **Google:** Ein recoverable Parsefehler liefert im gelesenen Librarypfad einen Warnungsbericht mit leerem Modell. Die spätere Abnahme muss Findings und erwartete Inhalte auswerten. Daraus wird kein CLI-Exitcode abgeleitet.
 

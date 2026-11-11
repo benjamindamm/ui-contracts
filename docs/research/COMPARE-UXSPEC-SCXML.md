@@ -1,4 +1,4 @@
-**Aktueller Stand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Maßgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
+**Aktueller Stand – 25. Oktober 2026:** 41 offene Nachweise (26 Integration, 15 weitere), 435 benannte Prüfbedingungen in 56 Gruppen. Vollständige Integration, Produkt-UI und Assistenztechnik sind weiterhin nicht nachgewiesen; statische HTML-Host-Fixtures wurden inzwischen im Browser geprüft. Historische Zahlen und „nicht ausgeführt“-Aussagen unten beziehen sich auf die jeweils benannte frühere Runde. Massgeblich ist das [aktuelle Register](OPEN-FIELDS.md).
 
 # Detailvergleich: UXSpec und SCXML
 
@@ -32,8 +32,8 @@ Für einen späteren Coding-Agenten ist daher zuerst eine enge gemeinsame Teilme
 
 | Frage | Gesicherter Befund | Konsequenz für eine spätere Prüfung |
 | --- | --- | --- |
-| Reihenfolge bei einfachem Zustandswechsel | UXSpec-App: exit, Übergangsaktionen, Ziel setzen, entry, always, Benachrichtigung, anschließend rekursiv emittierte Events. SCXML: Austrittsmenge, Übergangsinhalte, Eintrittsmenge innerhalb des normierten Algorithmus | Nur für den einfachen Fall eine plausible Zuordnung; Hierarchien und Nebenwirkungen gesondert protokollieren |
-| Eventauswahl | UXSpec-App sucht den ersten passenden exakten Eventnamen mit erfülltem Guard | SCXML-Ereignisdeskriptoren und Konfliktauswahl nicht durch bloß gleiche Strings ersetzen |
+| Reihenfolge bei einfachem Zustandswechsel | UXSpec-App: exit, Übergangsaktionen, Ziel setzen, entry, always, Benachrichtigung, anschliessend rekursiv emittierte Events. SCXML: Austrittsmenge, Übergangsinhalte, Eintrittsmenge innerhalb des normierten Algorithmus | Nur für den einfachen Fall eine plausible Zuordnung; Hierarchien und Nebenwirkungen gesondert protokollieren |
+| Eventauswahl | UXSpec-App sucht den ersten passenden exakten Eventnamen mit erfülltem Guard | SCXML-Ereignisdeskriptoren und Konfliktauswahl nicht durch bloss gleiche Strings ersetzen |
 | Ereignislose Übergänge | UXSpec-App begrenzt die lokale always-Schleife auf zehn Iterationen | Begrenzung ist kein Nachweis des SCXML-Makroschrittmodells; Zyklen/Fehlerzustände separat definieren |
 | Interne Ereignisse | UXSpec-App sammelt emittierte Namen und ruft nach notify rekursiv send auf | SCXML-Warteschlangen-/Run-to-completion-Semantik und Beobachtungszeitpunkt nicht automatisch gleich |
 | Ohne Ziel / Selbstübergang | SCXML unterscheidet zielos, intern und extern; externe Selbstübergänge können exit/entry auslösen | Nur explizite Zielwechsel in die erste gemeinsame Teilmenge aufnehmen |
@@ -122,7 +122,7 @@ Die Erwartung setzt genau diese Typen, keine Zusatzereignisse und eine kontrolli
 | Unbekannter Operator | Originalschema, CLI und Engine getrennt aufrufen | Gleichheit ihrer akzeptierten Sprachen |
 | Zielzustand fehlt | Struktur-/Semantikdiagnose mit Zeile/Pfad speichern | Einheitliche Originalvalidator-Diagnose |
 | always-Zyklus | Makroschritte und Abbruch/Fehler protokollieren | Gleiche Terminierungsstrategie |
-| Emit während entry | Ereignisfolge einschließlich Beobachterzeitpunkt speichern | Gleiche Warteschlangenordnung |
+| Emit während entry | Ereignisfolge einschliesslich Beobachterzeitpunkt speichern | Gleiche Warteschlangenordnung |
 | Invoke mit spätem Ergebnis nach exit | Child-ID, Abbruch und ignorierte/empfangene Folgeereignisse protokollieren | Vollständige Umsetzung im gelesenen UXSpec-Apppfad |
 | Zwei gleiche Definitionen | Verschiedene Instanzen, Eingaben und Kontexte vergleichen | Gemeinsame UI-/DOM-Identität oder native Abbildung |
 | Schema-machineInvoke | Konkreten gültigen machineInvoke gegen Originalschema prüfen | In stateNode.invoke überlappen `$ref:machineInvoke` und `{type:object}` innerhalb oneOf; manuell folgt ein Mehrfachtreffer für passende machine-Objekte, aber kein Validator wurde ausgeführt |

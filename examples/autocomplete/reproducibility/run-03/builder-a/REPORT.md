@@ -2,7 +2,7 @@
 
 Dieser Bericht wurde nachträglich von einer frischen Session geschrieben, nachdem die
 Erzeugungssession durch einen Providerfehler abgebrochen wurde, bevor ein Bericht entstand.
-Er stützt sich ausschließlich auf: (1) die Definitionen unter `components/`, (2) die gepinnte
+Er stützt sich ausschliesslich auf: (1) die Definitionen unter `components/`, (2) die gepinnte
 Werkzeugumgebung `tools/openpencil/` (nur Lesezugriff), (3) die sechs vorhandenen Artefakte in
 diesem Ordner (nur Lesezugriff, inklusive Wiedereinlesen von `autocomplete.fig` mit dem
 Original-Reader der gepinnten Umgebung). `generate.mjs` wurde **nicht** neu ausgeführt; kein
@@ -43,11 +43,11 @@ ergab **keine Abweichung** von den aus `components/` abgeleiteten erwarteten Wer
   - 10 Fall-Frames: `closed`, `opening`, `loading`, `ready`, `active`, `scroll-end`, `selected`, `empty`, `error`, `disabled`
   - 10 Captions `Hinweis <id>` mit Phase, SCXML-Pfad und Zusatzdaten (z. B. „active — Phase ready · SCXML active/ready · aktiv: hamburg · 7 Ergebnisse“)
 - 112 Fall-Knoten, pro Fall einheitlich:
-  - `Label` (Text „Stadt auswählen“, Inter 14/20), `Input` (Frame 320×44, y=28, Radius 8, geclippt, weiße Füllung, 1 px INSIDE-Rand) mit Kind `Query` oder `Placeholder` (x=12),
-  - bei Popup-Fällen zusätzlich `Overlay Surface` (y=80, geclippt, weiße Füllung, Radius 8, DROP_SHADOW offset (0,2), blur 8, schwarz, Alpha 0.2) → `Overlay Scroll Viewport` (geclippt) → `Overlay Scroll Content` → `Listbox` → entweder 7× `Option: <key>` (jeweils mit `Label`) oder `Message Row` → `Message`,
+  - `Label` (Text „Stadt auswählen“, Inter 14/20), `Input` (Frame 320×44, y=28, Radius 8, geclippt, weisse Füllung, 1 px INSIDE-Rand) mit Kind `Query` oder `Placeholder` (x=12),
+  - bei Popup-Fällen zusätzlich `Overlay Surface` (y=80, geclippt, weisse Füllung, Radius 8, DROP_SHADOW offset (0,2), blur 8, schwarz, Alpha 0.2) → `Overlay Scroll Viewport` (geclippt) → `Overlay Scroll Content` → `Listbox` → entweder 7× `Option: <key>` (jeweils mit `Label`) oder `Message Row` → `Message`,
   - `Status` (Text, Inter 12/20).
 
-**Bytegrößen der Artefakte** (auf Disk): `autocomplete.fig` 42.176 · `preview.png` 327.145 ·
+**Bytegrössen der Artefakte** (auf Disk): `autocomplete.fig` 42.176 · `preview.png` 327.145 ·
 `preview.svg` 18.398 (18.309 Zeichen, UTF-8) · `checks.json` 189.686 · `source-sha256.json` 2.210 ·
 `generate.mjs` 43.461.
 
@@ -70,7 +70,7 @@ node examples/autocomplete/reproducibility/run-03/builder-a/generate.mjs
 ```
 
 Voraussetzung: die gepinnte Umgebung `tools/openpencil/node_modules`
-(OpenPencil 0.16.0; hier geprüft mit Node v24.13.1). Der Skript schreibt ausschließlich in den
+(OpenPencil 0.16.0; hier geprüft mit Node v24.13.1). Der Skript schreibt ausschliesslich in den
 eigenen Ausgabeordner `run-03/builder-a/` und **überschreibt dabei** (bei erneutem Lauf):
 
 - `autocomplete.fig` (byte-identisch garantiert **nicht** — `meta.json` erhält ein neues `createdAt`,
@@ -98,10 +98,10 @@ Kopf: `component: "ui-contracts:Autocomplete v0.1.0"`, `run: "autocomplete/repro
 
 | Gruppe | IDs | Inhalt (konkret) |
 |---|---|---|
-| Dokument | d01–d05 | fig nicht leer; Größe 42.176 B; genau eine Seite; Seitenname `Autocomplete`; 136 Knoten im wiedereingelesenen Graphen |
-| Fälle | c01–c03 | alle zehn Fall-Frames benannt vorhanden (c01, c02); Fall-IDs decken sich mit der README-Zeile „Die zehn Fälle heißen …“ (c03) |
+| Dokument | d01–d05 | fig nicht leer; Grösse 42.176 B; genau eine Seite; Seitenname `Autocomplete`; 136 Knoten im wiedereingelesenen Graphen |
+| Fälle | c01–c03 | alle zehn Fall-Frames benannt vorhanden (c01, c02); Fall-IDs decken sich mit der README-Zeile „Die zehn Fälle heissen …“ (c03) |
 | Regelfeststellungen | r01–r03 | Fokusborder-States = {opening, loading, ready, empty, error} (aus `autocomplete/layout.css`); Overlay-Anker = `anchor(bottom)`/`anchor(left)`/`anchor-size(width)` (r02, echte Abgleichprüfung gegen `overlay/layout.css`); Viewport `overflow-y: auto` (r03) |
-| Fälle (11–22 Prüfungen je nach Fall, gesamt 160) | f01a–f10w | je Fall: Label-Text/-Typografie (14/20, Inter, 400)/Position (0,0)/Farbe; Input 320×44 @ y=28, Radius 8, `clips=true`, Füllung weiß, Rand 1 px INSIDE mit korrekter Farbe (focus oder border); Input-Text Name/Inhalt/Farbe/x=12 (Query vs. Placeholder); Overlayfläche anwesend bzw. abwesend gemäß Zustandsprojektion; Popup 320×h @ y=80, Radius 8, geclippt, weiß, Schatten (0,2)/blur 8/schwarz/0.2; Viewport geclippt, korrekte Höhe; Scrollinhalt-Versatz y=−scrollOffset und Inhaltshöhe; Optionen Namen in Reihenfolge, Geometrie (y=k×32, 320×32), Texte, Hervorhebung nur bei aktiver Option, gedimmte Farbe bei `muenchen`; aktive Zeile im sichtbaren Viewport; Status-Text/-Position/-Größe/-Farbe; Fallrahmen 320×caseH |
+| Fälle (11–22 Prüfungen je nach Fall, gesamt 160) | f01a–f10w | je Fall: Label-Text/-Typografie (14/20, Inter, 400)/Position (0,0)/Farbe; Input 320×44 @ y=28, Radius 8, `clips=true`, Füllung weiss, Rand 1 px INSIDE mit korrekter Farbe (focus oder border); Input-Text Name/Inhalt/Farbe/x=12 (Query vs. Placeholder); Overlayfläche anwesend bzw. abwesend gemäss Zustandsprojektion; Popup 320×h @ y=80, Radius 8, geclippt, weiss, Schatten (0,2)/blur 8/schwarz/0.2; Viewport geclippt, korrekte Höhe; Scrollinhalt-Versatz y=−scrollOffset und Inhaltshöhe; Optionen Namen in Reihenfolge, Geometrie (y=k×32, 320×32), Texte, Hervorhebung nur bei aktiver Option, gedimmte Farbe bei `muenchen`; aktive Zeile im sichtbaren Viewport; Status-Text/-Position/-Grösse/-Farbe; Fallrahmen 320×caseH |
 | Previews | p01–p03 | PNG existiert; PNG-Abmessungen 3816×1528 = Inhaltsbereich × 2 (p02, echte Prüfung gegen PNG-Header); SVG beginnt mit `<?xml … <svg` |
 | Determinismus | x01–x02 | zweiter, kompletter Lauf in temporäre Artefakte: identischer Struktur-Dump des wiedereingelesenen Graphen (x01, echt — Node-for-Node-Vergleich inkl. Geometrie, Füllungen, Texten); byteidentisches `preview.png` (x02 = true) |
 | Quellen | s01–s02 | `source-sha256.json` deckt alle 21 gelesenen Definitionsdateien ab; `library.json` verlinkt exakt `autocomplete/`, `overlay/`, `scroll-area/component.json` |
@@ -147,7 +147,7 @@ Konkrete, aus `checks.json` entnommene Kernwerte (Auswahl):
 Methode: `autocomplete.fig` wurde mit dem Original-Reader der gepinnten Umgebung
 (`tools/openpencil/node_modules/@open-pencil/core` 0.16.0, `parseFigFile`, `populate: 'all'`)
 eingelesen; alle Werte wurden unabhängig aus `components/` neu abgeleitet und verglichen.
-Außerdem: ZIP-Inhaltsverzeichnis, `meta.json`, PNG-Signatur/-Header, SVG-Kopf, SHA-256-Abgleich.
+Ausserdem: ZIP-Inhaltsverzeichnis, `meta.json`, PNG-Signatur/-Header, SVG-Kopf, SHA-256-Abgleich.
 
 Ergebnis: **keine Abweichung**. Verifiziert wurde u. a.:
 
@@ -155,7 +155,7 @@ Ergebnis: **keine Abweichung**. Verifiziert wurde u. a.:
   Fall-Knoten), Top-Ebene wie oben beschrieben.
 - Alle zehn Fall-Frames; Rahmenhöhen: closed/opening/selected/disabled 100 ·
   loading/empty/error 140 · ready/active/scroll-end 268 (alle Breite 320).
-- Input in jedem Fall: 320×44 @ y=28, Radius 8, geclippt, Füllung weiß, 1 px INSIDE;
+- Input in jedem Fall: 320×44 @ y=28, Radius 8, geclippt, Füllung weiss, 1 px INSIDE;
   Randfarbe focus (0.1451, 0.3882, 0.9216) in opening/loading/ready/active/scroll-end/empty/error,
   sonst border (0.7961, 0.8353, 0.8824).
 - Input-Texte: `closed`/`opening`/`ready`/`active`/`scroll-end` → `Placeholder` „Stadt suchen …“
@@ -164,7 +164,7 @@ Ergebnis: **keine Abweichung**. Verifiziert wurde u. a.:
   `Placeholder` in muted; alle bei x=12.
 - Popup nur in loading/ready/active/scroll-end/empty/error (opening laut Projektion
   `popupVisible=false` → kein Popup); Oberfläche 320×160 bzw. 320×32 @ y=80, Radius 8, geclippt,
-  weiß, Schatten (0,2)/blur 8/schwarz/Alpha 0.2; Viewport geclippt in gleicher Höhe;
+  weiss, Schatten (0,2)/blur 8/schwarz/Alpha 0.2; Viewport geclippt in gleicher Höhe;
   Listbox-Inhaltshöhe 224 (7×32) bzw. 32.
 - scroll-end: `Overlay Scroll Content` bei y=−64 (statistischer Scroll-Versatz), sichtbare
   Zeilen München/Dresden/Köln/Wien/Zürich; aktive Zeile `zuerich` mit absoluter y=128,
@@ -188,7 +188,7 @@ Ergebnis: **keine Abweichung**. Verifiziert wurde u. a.:
 - **Befund:** `components/autocomplete/error-relay.scxml` existiert, ist aber in
   `component.json` keiner Domäne zugeordnet, wird von `generate.mjs` nicht gelesen und fehlt in
   `source-sha256.json`. Er wurde in diesem Lauf damit nicht verwendet; ob er Teil der
-  Definition sein soll, bleibt offen (außerhalb des erlaubten Zugriffs zu klären).
+  Definition sein soll, bleibt offen (ausserhalb des erlaubten Zugriffs zu klären).
 - Farbwerte liegen im Kiwi-Format als float32 vor (z. B. 0.39215686274509803 →
   0.3921568691730499); die Checks tolerieren deshalb ε=2·10⁻³.
 
@@ -205,7 +205,7 @@ Welches Ergebnis aus dem Dokument aus welcher Definitionsdatei unter `components
 | Ergebnisreihenfolge, Labels, `muenchen` deaktivierte, `activeKey` (hamburg/zuerich), `value` (berlin) | `autocomplete/stories.json` | `stories[].results`, `activeKey`, `value` |
 | Komponentenbreite 320, Schrift Inter 14/20, Textfarbe, Status 12 px, Gaps 8 | `tokens.json` (+ `autocomplete/layout.css`) | `autocomplete.*`-Tokens, referenziert über `var(--ac-…)` in `layout.css` |
 | Label-Geometrie (Höhe = Zeilenhöhe 20, Abstand 8) | `autocomplete/layout.css` | `[data-part="label"]` → `var(--ac-line-height)`, `var(--ac-label-gap)` |
-| Input (44 hoch, Padding 0/12, Rand 1 solid, Radius 8, weiße Fläche) | `autocomplete/layout.css` + `tokens.json` | `[data-part="input"]` → `inputHeight`, `paddingInline`, `borderWidth`, `radius`, `surface` |
+| Input (44 hoch, Padding 0/12, Rand 1 solid, Radius 8, weisse Fläche) | `autocomplete/layout.css` + `tokens.json` | `[data-part="input"]` → `inputHeight`, `paddingInline`, `borderWidth`, `radius`, `surface` |
 | Fokusborder in opening/loading/ready/empty/error | `autocomplete/layout.css` | `[data-state="…"] [data-part="input"]` → `var(--ac-focus)` |
 | Platzhalterfarbe, deaktivierte Input-Farben | `autocomplete/layout.css` + `tokens.json` | `::placeholder` → `muted`, `:disabled` → `disabled`/`border` |
 | Zeilenhöhe 32, Option-Padding 6/12 | `autocomplete/layout.css` + `tokens.json` | `[data-part="option"]` → `rowHeight` (`base.row`), `padding: 6px var(--ac-padding-inline)` |
@@ -224,7 +224,7 @@ Welches Ergebnis aus dem Dokument aus welcher Definitionsdatei unter `components
 | Overlay- und ScrollArea-Teile als eigene Frames (Surface/Viewport/Content) | `overlay/component.json`, `scroll-area/component.json` | `cssParts` `surface`/`content`, `viewport`/`content`; „Listbox, Overlayfläche und Scrollviewport sind unterschiedliche Teile“ (`autocomplete/README.md`) |
 | Kopfzeile/Komponentenidentität in `checks.json` (`ui-contracts:Autocomplete v0.1.0`) | `autocomplete/component.json` | `id`, `version` |
 | Verlinkung der drei Komponenten (Check s02) | `library.json` | `components.*` |
-| Seitenrahmen (Titel „Autocomplete · 10 Zustände“, Quellenzeile, Raster, Captions `Hinweis …`) | — (frei nach `autocomplete/README.md`, „Exportrahmen“) | Die Außenanordnung ist laut README frei; Textbausteine des Adapters (inkl. hartkodiertem Laufpfad „run-03/builder-a“) |
+| Seitenrahmen (Titel „Autocomplete · 10 Zustände“, Quellenzeile, Raster, Captions `Hinweis …`) | — (frei nach `autocomplete/README.md`, „Exportrahmen“) | Die Aussenanordnung ist laut README frei; Textbausteine des Adapters (inkl. hartkodiertem Laufpfad „run-03/builder-a“) |
 | Statistischer Scroll-Versatz in scroll-end (Content y=−64) | `autocomplete/README.md` | ausdrücklich erlaubt: „Für das Design darf dazu der Inhalt des geclippten Viewports entsprechend versetzt werden.“ |
 
 ---
@@ -288,7 +288,7 @@ Definition hart abbrechen.
 14. **`opening` ohne Popup.** Laut `projections.opening.popupVisible=false` ist im
     „opening“-Fall kein Popup sichtbar — trotz des Namens. Das README nennt für die
     Ein-Zeilen-Meldung nur „loading, empty und error“ und sagt, ein verborgenes Popup belege
-    keinen Platz; die Sichtbarkeit in `opening` folgt ausschließlich der Projektion.
+    keinen Platz; die Sichtbarkeit in `opening` folgt ausschliesslich der Projektion.
 15. **Leerer, deaktivierter Input.** Das CSS hat sowohl `::placeholder { color: muted }` als
     auch `:disabled { color: disabled }`. Im `disabled`-Fall ist der Input leer (nur
     Placeholder sichtbar); der Adapter wendet die Platzhalter-Regel an (muted), die
@@ -306,7 +306,7 @@ Definition hart abbrechen.
     README leitet `selectedView` ab. Im Design ist `selected` der einzige Fall mit `value`;
     die Ableitungsregel wird nicht weiter ausgeführt (z. B. kein Fall, in dem `value` gesetzt
     ist, aber die Phase aktiv ist) — die Definition bietet dafür keine Story.
-19. **`ariaActivedescendant`/`ariaSelected`-Semantik** wird ausschließlich visuell
+19. **`ariaActivedescendant`/`ariaSelected`-Semantik** wird ausschliesslich visuell
     (Highlight-Füllung) und textuell (Caption „aktiv: …“) abgebildet; es gibt kein
     maschinenlesbares „selected“-Attribut im Dokument (s. Punkt 11).
 

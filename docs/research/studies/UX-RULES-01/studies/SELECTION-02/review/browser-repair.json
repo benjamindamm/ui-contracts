@@ -59,7 +59,7 @@
         "settled": false,
         "value": {
           "expanded": "true",
-          "focus": "Schließen",
+          "focus": "Schliessen",
           "key": "IN"
         }
       }
@@ -79,5 +79,5 @@
       }
     }
   },
-  "note": "The key tabOutside in the first operation actually reached the internal Schließen button; the separate third Tab is the real external focus transition."
+  "note": "The key tabOutside in the first operation actually reached the internal Schliessen button; the separate third Tab is the real external focus transition."
 }
