@@ -2,6 +2,15 @@
 
 > **UI Contracts ist ein maschinenlesbares UX-Handbuch.** Es hält gemeinsame Regeln so fest, dass Menschen sie nachschlagen, Agenten sie anwenden und Werkzeuge sie prüfen können.
 
+**Auf diesen Plattformen geprüft**
+
+- ✅ **Web** · [Browserprüfung](docs/research/analyses/WEB-RUNTIME-2026-10-31/README.md)
+- ✅ **iOS** · [Simulatorprüfung](docs/research/analyses/AUTOCOMPLETE-NATIVE-2026-11-11/README.md)
+- ✅ **Android** · [Emulatorprüfung](docs/research/analyses/AUTOCOMPLETE-NATIVE-2026-11-11/README.md)
+
+> [!NOTE]
+> **Was bedeutet konform?** Eine Umsetzung ist im geprüften Umfang konform, wenn ihre Darstellung und Bedienung den vereinbarten Regeln entsprechen. Masse werden innerhalb der festgelegten Toleranz verglichen, Farben an definierten Messpunkten exakt. Bedienverhalten und Barrierefreiheit werden anhand konkreter Fälle geprüft. Die verlinkten Nachweise zeigen den Umfang je Plattform.
+
 ## Gemeinsam spezifizieren, schnell Feedback bekommen
 
 ```mermaid
