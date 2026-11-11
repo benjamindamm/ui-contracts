@@ -1,6 +1,6 @@
 # Aktueller Frameworkstand
 
-**6. November 2026.** UI Contracts ist ein Forschungsframework mit nutzbaren Originaldefinitionen, fokussierten Agentenabläufen und begrenzten Zielprüfern. Ein allgemeiner Generator oder eine Produktionsfreigabe ist damit nicht erreicht.
+**11. November 2026.** UI Contracts ist ein Forschungsframework mit nutzbaren Originaldefinitionen, fokussierten Agentenabläufen und begrenzten Zielprüfern. Ein allgemeiner Generator oder eine Produktionsfreigabe ist damit nicht erreicht.
 
 | Bereich | Verfügbar | Nachweis / verbleibende Grenze |
 | --- | --- | --- |
@@ -10,6 +10,7 @@
 | Agentenablauf | Kurzer Skillkern, gezieltes Nachladen, v1-Aufträge/Handoffs und Abschlussabdeckung | [Paket 4](research/analyses/AGENT-WORKFLOW-2026-10-31/README.md); technische Ablaufprüfung, keine Garantie guter Modellarbeit |
 | Rückwege und Drafts | Anleitungen für Design-/Code-Abgleich, deterministischer Quellen-/Coveragecheck mit Fragenliste | [Werkzeug und Beispiele](../tools/completeness/README.md); synthetische Werkzeugtests, keine allgemeine semantische Vollständigkeit oder automatische Synchronisation |
 | Statische Designs | Editierbare OpenPencil-Proofs und begrenzte Gegenprüfer | [Studienübersicht](research/STUDIES.md); keine automatische interaktive Abnahme |
+| Native Ziele | Autocomplete auf iOS und Android im geprüften Umfang bestanden | [Unabhängiger Pilot](research/analyses/AUTOCOMPLETE-NATIVE-2026-11-11/README.md). Geprüfte Masse und Farbstichproben auf beiden Plattformen, Bedienfälle auf Android. Allgemeine Adapter, iOS-Bedienprüfung und Screenreader-Nachweise offen. |
 
 Offen bleiben insbesondere Änderungsfolgen über Abhängigkeiten (FW-006), breitere fachliche UX-Regeln (FW-008), eine vollständiger erschlossene Werkzeugunterstützung (FW-011) sowie weitergehende Accessibility-/IME-Nachweise (FW-012). Die [datierte Auditbasis](research/analyses/FRAMEWORK-AUDIT-2026-10-31/README.md) und nachfolgende Statusdateien unterscheiden ursprüngliche Befunde und begrenzte Reparaturen.
 

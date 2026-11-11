@@ -112,6 +112,11 @@ Erster OpenPencil-Umfang: editierbares Design, ausdrücklich keine interaktive C
 - [ ] Erst-/Endqualität, Aufwand, Abbrüche und Eskalationen auswerten; Befunde mit Regressionen im [Fehlerregister](docs/skills/ISSUES.md) weiterführen.
 - [ ] Danach eine komplexere zusammengesetzte Komponente auswählen und die Übertragbarkeit getrennt prüfen. iOS/Android bleiben Zukunftsperspektive.
 
+## Nativer Autocomplete-Pilot · 11. November 2026
+
+- [x] Den eingefrorenen Autocomplete-Contract unabhängig auf iOS und Android umsetzen und den gemeinsamen Zustand `active` vermessen. [Ergebnis und Nachweise](docs/research/analyses/AUTOCOMPLETE-NATIVE-2026-11-11/README.md)
+- [ ] iOS-Bedienung, verspätete Antworten und Ereignisanzahl sowie VoiceOver und TalkBack nachprüfen. [Offene Prüfungen](docs/research/analyses/AUTOCOMPLETE-NATIVE-2026-11-11/README.md#noch-offene-prüfungen)
+
 ## UX-RULES-01 · Formale UX-Regeln · 30. Oktober 2026
 
 Eigener Forschungsstrang; bestehende Kandidaten-/Studienzähler bleiben unverändert. [Einstieg](docs/research/studies/UX-RULES-01/README.md) · [führender Aufgabenstatus: 7 erledigt, 2 begonnen/offen](docs/research/studies/UX-RULES-01/tasks.json).

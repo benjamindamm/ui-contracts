@@ -38,14 +38,16 @@ Der Austausch geht in beide Richtungen: Vorgaben können in Designs und Code umg
 
 ### Claude Design und UI Contracts
 
-| Aufgabe | Claude Design | UI Contracts |
-| --- | --- | --- |
-| **Code lesen** | Liest Komponenten und Styles aus der Codebasis. | Erschliesst Schnittstellen, Gestaltung und beobachtbares Verhalten aus bestehendem Code. |
-| **Designs lesen und umsetzen** | Nutzt Figma-Dateien und Screenshots als Vorlage für neue Entwürfe und interaktive Prototypen. | Erschliesst Regeln aus bestehenden Designs und leitet daraus Entwürfe ab, etwa für OpenPencil. |
-| **Verhalten verbindlich dokumentieren** | Zeigt Verhalten im Prototyp. Eine eigenständige, prüfbare Verhaltensspezifikation ist in der Produktdoku nicht beschrieben. | Hält Zustände, Ereignisse und Übergänge in SCXML fest. Ein Prüffall kann etwa zeigen, ob die Suche verspätete Antworten korrekt behandelt. |
-| **Barrierefreiheit verbindlich dokumentieren** | Kann Barrierefreiheit im Entwurf berücksichtigen. Eine eigenständige, prüfbare A11y-Spezifikation ist in der Produktdoku nicht beschrieben. | Hält etwa zugängliche Namen, Rollen und Beziehungen in HTML/ARIA fest. Ausgewählte Regeln lassen sich an der Umsetzung prüfen. |
+Mit Claude Design und UI Contracts können Teams **bestehenden Code und Designs auswerten, daraus neue Entwürfe ableiten und Interaktionen ausprobieren**. Bei UI Contracts kann das Team die ermittelten Regeln einmal bestätigen und als versionierte Vorgaben wiederverwenden. **Drei untersuchte Modelle erzeugten aus derselben festgeschriebenen Definition vergleichbare, editierbare Designs.** Die Prüfberichte zeigen, welche Eigenschaften erhalten blieben und wo Ergebnisse abwichen. [Claude Design](https://support.claude.com/en/articles/14604416-get-started-with-claude-design) · [Designsysteme in Claude](https://support.claude.com/en/articles/14604397-set-up-your-design-system-in-claude-design) · [Modellvergleiche](#reproduzierbare-designausgaben)
 
-[Claude Design bei Anthropic](https://support.claude.com/en/articles/14604397-set-up-your-design-system-in-claude-design) · [UI Contracts aus Code und Design ableiten](skills/ui-contracts/references/reverse.md)
+| Domäne | Was Claude Design liefert | Was UI Contracts zusätzlich festhält |
+| --- | --- | --- |
+| **Technische Schnittstelle** | Liest vorhandene Komponenten und nutzt sie als Grundlage für Entwürfe und die Übergabe an die Entwicklung. | **Welche Eingaben eine Komponente akzeptiert und welche Ereignisse und Daten sie ausgibt.** Das Team bestätigt diese Schnittstelle einmal. Agenten können sie gezielt lesen, auch wenn die Implementierung über Wrapper, Templates und Ereignislogik verteilt ist. Angular und Swift können dieselbe Schnittstelle mit ihren jeweiligen Mitteln umsetzen. |
+| **Visuelles Design** | Verwendet ein hinterlegtes Designsystem mit Farben, Typografie und Komponenten. Es kann dafür auch Tokens und Komponenten aus Code übernehmen. | **Welche Werte in welchem Zustand gelten.** Farbwerte, Radien, Schatten, Abstände und Regeln für Hover oder schmale Ansichten stehen explizit in Tokens und Layoutregeln. Der Agent lädt die relevanten Vorgaben direkt. Web und Android können dieselben Sollwerte verwenden und die Ausgabe auf ihrer Plattform prüfen. |
+| **UX-Verhalten** | Macht Interaktionen und Grenzfälle im Prototyp erlebbar und kann Designentscheidungen bei der Übergabe mitgeben. | **Wann ein Bedienmuster passt und was bei einer Aktion passieren soll.** Das Team beschreibt Auslöser, Bedingungen und Zustandswechsel, auch bei Abbruch oder Fehler. Ein Agent kann diese projektspezifischen Regeln in mehreren Implementierungen anwenden. Ausgewählte Abläufe lassen sich gegen dieselbe Vorgabe testen. |
+| **Barrierefreiheit** | Kann den Entwurf auf Barrierefreiheit prüfen und etwa Hinweise zum Kontrast geben. | **Was Nutzende über die Accessibility-Schnittstelle erfahren sollen.** Dazu gehören Name, Rolle, Zustand, Fokus und die Frage, welche Änderung wann angekündigt wird. Das Team kann die Erwartung plattformübergreifend festlegen. Für ausgewählte Webfälle lässt sich die Browsersemantik prüfen. Ob eine Ansage tatsächlich hörbar ist, zeigt ein Test mit dem jeweiligen Screenreader. |
+
+OpenPencil ist als Ausgabe erprobt, weitere Werkzeuge lassen sich über Adapter anbinden. Für Kreisdiagramme berechnet ein Werkzeug Winkel und Pfade direkt aus den Daten. Ein unabhängiger Autocomplete-Pilot hat auf iOS und Android gezeigt, dass die gemessenen Masse und Farbstichproben eines gemeinsamen Zustands mit dem Contract übereinstimmen. [Berechnete Geometrie](tools/charts/README.md) · [Nativer Pilot](docs/research/analyses/AUTOCOMPLETE-NATIVE-2026-11-11/README.md)
 
 ## So sieht ein Ergebnis aus
 
@@ -164,7 +166,8 @@ Die Läufe belegen weder pixelidentische Ergebnisse über alle Modelle hinweg no
 | --- | --- |
 | Editierbare Designausgaben für untersuchte Komponenten | Allgemeine Generierung beliebiger UIs |
 | Begrenzte Quellen-, UX- und Webprüfungen | Vollständige Konformitäts- und Produktionsfreigabe |
-| Vergleichbare statische Ergebnisse in mehreren Modellläufen | iOS-/Android-Adapter und automatische Figma-Rücksynchronisation |
+| Vergleichbare statische Ergebnisse in mehreren Modellläufen | Automatische Figma-Rücksynchronisation |
+| Nativer Autocomplete-Pilot auf iOS und Android mit gemeinsamer visueller Stichprobe und Android-Bedienprüfung | Allgemeine iOS-/Android-Adapter, iOS-Bedienprüfung und Screenreader-Nachweise |
 
 Der Workshop beschreibt den angestrebten Arbeitsprozess; seine Beschleunigung ist noch nicht empirisch gemessen. Ein statisches Design belegt keine interaktive Bedienung, ein Teilcheck keine vollständige Regelumsetzung. [Aktueller Stand und Prüfgrenzen](docs/STATUS.md).
 

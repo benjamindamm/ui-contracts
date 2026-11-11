@@ -8,6 +8,7 @@ Aktuelle Einstiege stehen zuerst. Ältere Berichte behalten ihre damaligen Zahle
 
 | Dokument | Inhalt |
 | --- | --- |
+| [Nativer Autocomplete-Pilot · 11. November 2026](analyses/AUTOCOMPLETE-NATIVE-2026-11-11/README.md) | Unabhängige Simulatorprüfung auf iOS und Android mit gemeinsamen Testdaten, visuellen Messwerten und Android-Bedienbelegen |
 | [Agentenablauf und Informationsarchitektur · Paket 4](analyses/AGENT-WORKFLOW-2026-10-31/README.md) | Kurze Handlungsessenz, gezieltes Nachladen, gemeinsame v1-Übergaben, Abschlussabdeckung und optionale Modellforschung ([RD-002](decisions/RD-002-AGENT-WORKFLOW-SCOPE.md)) |
 | [Aktuelle Webprüfung · Paket 3](analyses/WEB-RUNTIME-2026-10-31/README.md) | Saubere Runtimeeinrichtung, gemeinsamer Testeinstieg, vier native Profile und tatsächliche Events/Fokus/Scroll-/AX-Browserfälle samt Fehlerhistorie |
 | [Aktive UX-Revision · 31. Oktober 2026](analyses/ACTIVE-UX-2026-10-31/README.md) | Übernahme von Select mit Suche, begrenzte Fähigkeitsnachweise, Quellenprüfungen und erhaltene historische Reproduktion |

@@ -1,0 +1,76 @@
+ios px/logical unit 3
+label region (120, 340, 1085, 400) diff bbox vs delivered None
+text ((126, 357, 448, 388), 2018)
+field region (120, 425, 1085, 559) diff bbox vs delivered None
+focus ((123, 426, 1083, 558), 6070)
+surface ((120, 425, 1085, 559), 119394)
+muted ((162, 478, 464, 508), 1597)
+popup region (120, 570, 1085, 1065) diff bbox vs delivered None
+highlight ((123, 678, 1083, 774), 89931)
+text ((163, 615, 338, 1030), 3490)
+disabled ((163, 807, 340, 838), 1158)
+surface ((120, 570, 1085, 1062), 361405)
+status region (120, 1065, 1085, 1135) diff bbox vs delivered None
+muted ((125, 1102, 446, 1135), 1549)
+width, field height, row height 320.0 44.0 32.0
+field top border horizontal inset in px (raster radius proxy) 25 25
+centre pixels near popup top and bottom, run lengths, Y absolute
+[(567, 568, (253, 253, 253)), (568, 570, (252, 252, 252)), (570, 571, (251, 251, 251)), (571, 573, (250, 250, 250)), (573, 574, (249, 249, 249)), (574, 576, (248, 248, 248)), (576, 577, (247, 247, 247)), (577, 578, (245, 245, 245)), (578, 579, (244, 244, 244)), (579, 580, (243, 243, 244)), (580, 581, (241, 241, 241)), (581, 582, (240, 240, 240)), (582, 600, (255, 255, 255))]
+[(1053, 1062, (255, 255, 255)), (1062, 1063, (221, 221, 221)), (1063, 1064, (222, 222, 222)), (1064, 1065, (223, 223, 223)), (1065, 1066, (225, 225, 225)), (1066, 1068, (228, 228, 228)), (1068, 1069, (230, 230, 230)), (1069, 1070, (232, 232, 232)), (1070, 1071, (233, 233, 233)), (1071, 1072, (236, 236, 236)), (1072, 1073, (237, 237, 237)), (1073, 1074, (239, 239, 239)), (1074, 1075, (240, 240, 240)), (1075, 1076, (242, 242, 242)), (1076, 1077, (243, 243, 243)), (1077, 1078, (244, 244, 244)), (1078, 1079, (245, 245, 245)), (1079, 1080, (246, 246, 246)), (1080, 1081, (247, 247, 247)), (1081, 1083, (249, 249, 249)), (1083, 1084, (250, 250, 250)), (1084, 1086, (251, 251, 251)), (1086, 1087, (252, 252, 252)), (1087, 1091, (253, 253, 253)), (1091, 1094, (254, 254, 254)), (1094, 1096, (255, 255, 255)), (1096, 1097, (254, 254, 254)), (1097, 1098, (255, 255, 255))]
+closed ((123, 426, 1083, 558), 6220)
+error ((126, 623, 764, 656), 3036)
+
+android px/logical unit 2.625
+label region (118, 179, 962, 232) diff bbox vs delivered None
+text ((123, 193, 398, 219), 1400)
+field region (118, 252, 962, 370) diff bbox vs delivered None
+focus ((120, 253, 960, 369), 5468)
+surface ((118, 252, 962, 370), 91517)
+muted ((157, 298, 416, 324), 1085)
+popup region (118, 385, 962, 817) diff bbox vs delivered None
+highlight ((120, 474, 960, 558), 68841)
+text ((156, 419, 306, 781), 2571)
+disabled ((156, 587, 308, 613), 834)
+surface ((120, 390, 960, 810), 276579)
+status region (118, 827, 962, 885) diff bbox vs delivered None
+muted ((122, 845, 398, 875), 1125)
+width, field height, row height 320.0 44.19047619047619 32.0
+field top border horizontal inset in px (raster radius proxy) 22 22
+centre pixels near popup top and bottom, run lengths, Y absolute
+[(377, 380, (254, 254, 254)), (380, 382, (253, 253, 253)), (382, 383, (252, 252, 252)), (383, 385, (251, 251, 251)), (385, 386, (250, 250, 250)), (386, 387, (248, 248, 248)), (387, 388, (245, 245, 245)), (388, 389, (240, 240, 240)), (389, 390, (237, 237, 237)), (390, 406, (255, 255, 255))]
+[(802, 810, (255, 255, 255)), (810, 811, (217, 217, 217)), (811, 812, (221, 221, 221)), (812, 813, (226, 226, 226)), (813, 814, (230, 230, 230)), (814, 815, (233, 233, 233)), (815, 816, (235, 235, 235)), (816, 817, (237, 237, 237)), (817, 818, (239, 239, 239)), (818, 819, (241, 241, 241)), (819, 820, (243, 243, 243)), (820, 821, (244, 244, 244)), (821, 822, (246, 246, 246)), (822, 823, (247, 247, 247)), (823, 824, (248, 248, 248)), (824, 825, (249, 249, 249)), (825, 826, (250, 250, 250)), (826, 827, (251, 251, 251)), (827, 829, (252, 252, 252)), (829, 830, (253, 253, 253)), (830, 833, (254, 254, 254)), (833, 841, (255, 255, 255))]
+closed ((120, 253, 960, 369), 5468)
+error ((122, 425, 671, 455), 2191)
+
+f8bdc63e17ccf74a3b1bc51ab9698cb083095d3992e8a28a4fcde8e0328906b5 input/acceptance.md
+638086cf1ff59536b0406189ce944c361cd38bf46d5bb318647e1309226552e9 input/reviewer.md
+68bfa1b25d37adee9f6782e654c281d682ef4def374f676e923f6f58b301263e input/manifest.json
+27173564dcd6a1f3703badb8d40b00a5c723174e463537754d299528a311cd6e input/sources/tokens.json
+dc00e567ffb0d463350451a9a0d938c9e6a068916e40054133613cca4694e470 input/sources/components/autocomplete/accessibility.html
+f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2 input/sources/components/autocomplete/accessibility.rules.json
+5c740ad9fcb3303f93b174250cb5690ff4badacc99ac486e2522cef560d0fdae input/sources/components/autocomplete/behavior.scxml
+c232d14283cece6e923a6a4e113327f4eea215a72977c7d4c22cc6ace7462bdd input/sources/components/autocomplete/component.json
+a9cd35123a7deeed043162145ad1e456600ebda5ffac43a19e61c10f163bb312 input/sources/components/autocomplete/error-relay.scxml
+d5db745ebf8e305093bc7bb11b396943a1bbdbc2790c2cd462e6f4152a113222 input/sources/components/autocomplete/interface.json
+cdad62028b7213f9befa7b562ef1ddc38b5a75d8aa4bec099260c31fd254b15f input/sources/components/autocomplete/layout.css
+eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d input/sources/components/autocomplete/stories.json
+7f48a2b54b3abc9e3b77940d7ef301063745988a6a42f6e9c1c345f2830f5a2f input/sources/components/autocomplete/ux.json
+b0acf5f55f72102a7a70f7128d896fc755d9c400b56b1c3cfd6bd3fb7118b037 input/sources/components/overlay/accessibility.html
+e6de18363938212f25e7cfac2ad7104f20639d37cb5a4d0c2ac332a0e902baa8 input/sources/components/overlay/behavior.scxml
+8a00160b717c3c69b45e9aa23083085b7ec2a0425b050845c6e14e27bda4b269 input/sources/components/overlay/component.json
+bedd0eee49aaeb81c9ff186c4bf3c7f5ae91c394d967eb4b3dbaf6621fc699f0 input/sources/components/overlay/interface.json
+3c64e9cd819ed459bf0a7278eb9f032af378d147f8462bc845b4154e002f31f6 input/sources/components/overlay/layout.css
+b4b29c9d59e8acc5c908dc23fe68d8aec39237547a0f3f06f04b1c14ab800bd3 input/sources/components/scroll-area/accessibility.html
+aa6b7ed43ec3f43e7eccfebf992e82f6d9b66922306ec58c7019123ba90ae8b8 input/sources/components/scroll-area/behavior.scxml
+5040e89bc760d1668c1fd6d31e1f332ffae912008edd7f745d7f78ecf0c5dfff input/sources/components/scroll-area/component.json
+6a6f74bcfecb346b8242c5acadd5badf6aa5b75940b256d608d125c5d164280d input/sources/components/scroll-area/interface.json
+a9b58668e5a4fdb1ce52eeb594102e394a336a87cf8aa01692607ab4312bd4b7 input/sources/components/scroll-area/layout.css
+75a48782cc7db0ca04a1dbc102ee67b48318b986533d3502cba2f3bcd55a711c input/deliveries/ios/Autocomplete.app/Autocomplete
+19bdeef6db30a7b2daa27ea7c5062e13517d5768a0479b264e5006b8f9c1dd15 input/deliveries/ios/Autocomplete.app/Info.plist
+40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82 input/deliveries/ios/Autocomplete.app/Inter-Regular.ttf
+3eac798141015f61ccf69688a0eabe052b32ce0414c91d4e5414b7fdbda59f1b input/deliveries/ios/Autocomplete.app/_CodeSignature/CodeResources
+f018316c156e3525a9f66cde07bc987bb68ee88fd698a11a469a799e89cb6ae2 input/deliveries/ios/Autocomplete.app/accessibility.rules.json
+eb69c4a1ce65098612d82849d1dd62e22986e88ba65a4d3374991a9fe8d79f3d input/deliveries/ios/Autocomplete.app/stories.json
+ab7d592b1d6e82b5c8a27c6456bc48eee19e6c832600fd81a948869242de7beb input/deliveries/android/Autocomplete.apk
+39d67a29f264470b382ec8992e1501bd0080682a62c5757a8168321f0f41039b input/deliveries/android/screenshots/active.png
+186e7e2d7a407c227b41210c1c5c3c60098b3350ead397ac20f151f7aca1b27b input/deliveries/ios/screenshots/active.png
