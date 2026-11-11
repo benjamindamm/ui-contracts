@@ -1,8 +1,6 @@
 # UI Contracts
 
 > **UI Contracts ist ein maschinenlesbares UX-Handbuch.** Es hält gemeinsame Regeln so fest, dass Menschen sie nachschlagen, Agenten sie anwenden und Werkzeuge sie prüfen können.
->
-> **Beispiel für Web und Mobile.** Wenn ein Formular wegen fehlender Angaben nicht abgeschickt werden kann, bleiben die Eingaben erhalten und die betroffenen Felder werden benannt. Im Web kann das eine Fehlerübersicht sein, in der App ein Hinweis direkt am Feld. Die gemeinsame Regel steht einmal im Handbuch.
 
 ## Gemeinsam spezifizieren, schnell Feedback bekommen
 
